@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Bosses$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l) (5%)$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l) (5%, only from orange Agents)$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l) (5%, only from pink Agents)"
+			"text": "Bosses$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l) (5%)$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l) (5%, from blue and white Agents)$(li)$(l:gavv/mobs/shiita_stomach)Shiita Stomach$(/l) (5%, from white Agents)$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l) (5%, from orange Agents)$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l) (5%, from pink Agents)$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l) (5%, from red Agents)"
 		}
 	]
 }

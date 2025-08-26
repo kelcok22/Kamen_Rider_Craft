@@ -247,7 +247,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:umaibo_gochizo",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -520,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:popburn_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -1068,6 +1068,110 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "teriyaki_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Teriyaki Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:teriyaki_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "salad_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Salad Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:salad_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "tonkatsu_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Tonkatsu Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:tonkatsu_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "potage umaibo_gochizo",
+        "title": "Umaibo Gochizo (Potage Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:potage_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "natto_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Natto Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:natto_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "salami_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Salami Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:salami_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "takoyaki_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Takoyaki Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:takoyaki_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "mentaiko_umaibo_gochizo",
+        "title": "Umaibo Gochizo (Mentaiko Flavour)",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:mentaiko_umaibo_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "charapaki_gochizo",

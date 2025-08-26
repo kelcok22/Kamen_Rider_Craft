@@ -2,7 +2,7 @@
 	"name": "Shield Snack Shield (Choco T Assist)",
 	"icon": "kamenridercraft:shield_snack_shield_choco",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 14,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

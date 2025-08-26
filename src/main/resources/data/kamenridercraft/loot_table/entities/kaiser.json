@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gear_remocon_blue"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_taka_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_kuwagata_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_lion_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_sai_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_shachi_medal"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:fourze_full_bottle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gaim_full_bottle"
+        }
+      ]
+    },
+
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:full_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

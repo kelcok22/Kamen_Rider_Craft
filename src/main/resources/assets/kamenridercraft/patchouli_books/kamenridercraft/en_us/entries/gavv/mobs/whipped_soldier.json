@@ -2,7 +2,7 @@
 	"name": "Whipped Soldier",
 	"icon": "kamenridercraft:gavv_logo",
 	"category": "kamenridercraft:gavv/mobs",
-	"sortnum": 3,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:entity",

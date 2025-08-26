@@ -2,7 +2,7 @@
 	"name": "Shield Snack Shield",
 	"icon": "kamenridercraft:shield_snack_shield",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 13,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

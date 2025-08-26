@@ -1,0 +1,17 @@
+{
+	"name": "Jeeb Stomach",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:jeeb_stomach",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a blue or white $(l:gavv/mobs/agent)Agent$(/l)$(br2)Special moves:$(li)Transforms into $(l:gavv/riders/bitter_gavv#bakibaki_stick)Kamen Rider Bitter Gavv Bakibaki Stick Form$(/l) at under 100 health if you have $(l:gavv/items/mimic_keys#shiita_mimic_key)Shiita's Mimic Key$(/l) in your inventory$(br2)Drops$(li)1 $(l:gavv/items/mimic_keys#jeeb_mimic_key)Jeeb's Mimic Key$(/l)$(li)1-3 $(l:gavv/items/heatpress)Hitpresses$(/l) (50%)$(li)1-2 $(l:gavv/items/granute_tooth)Granute Teeth$(/l) (50%)"
+		}
+	]
+}

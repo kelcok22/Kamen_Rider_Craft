@@ -2,7 +2,7 @@
 	"name": "Silver Defencer",
 	"icon": "kamenridercraft:silver_defenser",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 9,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

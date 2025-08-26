@@ -1,0 +1,17 @@
+{
+	"name": "Shiita Stomach",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shiita_stomach",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a white $(l:gavv/mobs/agent)Agent$(/l)$(br2)Special moves:$(li)Always spawns alongside $(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)$(br2)Drops$(li)1 $(l:gavv/items/mimic_keys#shiita_mimic_key)Shiita's Mimic Key$(/l)$(li)1-3 $(l:gavv/items/heatpress)Hitpresses$(/l) (50%)$(li)1-2 $(l:gavv/items/granute_tooth)Granute Teeth$(/l) (50%)"
+		}
+	]
+}

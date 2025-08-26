@@ -181,6 +181,19 @@
 			"title": " ",
 			"text": "Traded by a novice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "corn_snack",
+        "title": "Corn Snack",
+        "text": "Restores 2 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into corn snack Gochizos when eaten"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:corn_snack",
+        "title": " ",
+        "text": "Traded by an apprentice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "candy",

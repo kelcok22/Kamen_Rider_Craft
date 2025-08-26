@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#hell_bros_boss_block)Hell Bros. Boss Block$(/l)$(br2)Special moves:$(li)Transforms into $(l:build/riders/bros#hell)Hell Bros$(/l) if you have the $(l:build/items/gears#gear_remocon)Gear Remocon$(/l) in your inventory$(br2)Drops$(li)2-3 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/gears#gear_engine)Gear Engine$(/l)$(li)1 $(l:build/items/full_bottle)Empty Bottle$(/l) (75%)$(li)1 $(l:build/items/gears#gear_engine_red)Gear Engine (Red)$(/l) (25%)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#hell_bros_boss_block)Hell Bros. Boss Block$(/l)$(br2)Special moves:$(li)Transforms into $(l:build/riders/bros#hell)Hell Bros$(/l) if you have the $(l:build/items/gears#gear_remocon)Gear Remocon$(/l) in your inventory$(br2)Drops$(li)2-3 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/gears#gear_engine)Gear Engine$(/l)"
 		}
 	]
 }

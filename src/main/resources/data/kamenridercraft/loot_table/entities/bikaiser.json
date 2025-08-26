@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:gear_engine_red"
+			  },
+            {
+              "type": "minecraft:item",
+              "name": "kamenridercraft:ghost_full_bottle"
+            }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:gear_remocon_blue"
+			  },
+            {
+              "type": "minecraft:item",
+              "name": "kamenridercraft:ex_aid_full_bottle"
+            }
+		  ]
+	  },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_kujaku_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_kamakiri_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_tora_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_gorilla_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_unagi_medal"
+        }
+      ]
+    },
+
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 3
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

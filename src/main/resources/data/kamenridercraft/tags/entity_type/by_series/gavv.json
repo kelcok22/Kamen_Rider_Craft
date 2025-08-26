@@ -2,8 +2,11 @@
   "values": [
 	"kamenridercraft:agent",
   "kamenridercraft:bitter_gavv",
-  "kamenridercraft:nyelv_stomach",
+  "kamenridercraft:jeeb_stomach",
+    "kamenridercraft:shiita_stomach",
+    "kamenridercraft:nyelv_stomach",
   "kamenridercraft:glotta_stomach",
+    "kamenridercraft:lango_stomach",
 	"kamenridercraft:whipped_soldier"
   ]
 }

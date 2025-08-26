@@ -1380,7 +1380,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kamen_rider_full_bottle",
-			"title": "kamen_rider Fullbottle",
+			"title": "Kamen Rider Fullbottle",
 			"text": "Appears in:$(li)Televi-Kun (August 2018, magazine)"
 		},
 		{
@@ -1393,7 +1393,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "super_sentai_full_bottle",
-			"title": "super_sentai Fullbottle",
+			"title": "Super Sentai Fullbottle",
 			"text": "Appears in:$(li)Televi-Kun (September 2018, magazine)"
 		},
 		{
@@ -1414,7 +1414,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ex_aid_full_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1427,7 +1427,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ghost_full_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1440,7 +1440,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drive_full_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1453,7 +1453,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gaim_full_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1466,7 +1466,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wizard_full_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1479,7 +1479,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fourze_full_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		}
 	]
 }

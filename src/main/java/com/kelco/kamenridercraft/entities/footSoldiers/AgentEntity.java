@@ -85,7 +85,6 @@ public class AgentEntity extends BaseHenchmenEntity {
     }
 
     public void remove(Entity.RemovalReason p_149847_) {
-
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
                 int bossChoice = this.random.nextInt(2);
@@ -97,64 +96,40 @@ public class AgentEntity extends BaseHenchmenEntity {
                         }
                         break;
                     case 1:
-                        if (getVariant() == ORANGE_A) {
+                        if (getVariant() == ORANGE_A || getVariant() == ORANGE_B) {
                             boss = MobsCore.NYELV_STOMACH.get().create(this.level());
                             if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nyelv"));
                             }
-                        } else if (getVariant() == PINK_B) {
+                        } else if (getVariant() == PINK_A || getVariant() == PINK_B) {
                             boss = MobsCore.GLOTTA_STOMACH.get().create(this.level());
                             if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.glotta"));
                             }
-                        }else if (getVariant() == BLUE_A) {
+                        } else if (getVariant() == BLUE_A || getVariant() == BLUE_B) {
                             boss = MobsCore.JEEB_STOMACH.get().create(this.level());
                             if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.jeeb"));
                             }
-                        }else if (getVariant() == WHITE_B) {
+                        } else if (getVariant() == WHITE_A || getVariant() == WHITE_B) {
                             boss = MobsCore.SHIITA_STOMACH.get().create(this.level());
                             if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shiita"));
                             }
-                        }else if (getVariant() == RED_A) {
+                        } else if (getVariant() == RED_A || getVariant() == RED_B) {
                             boss = MobsCore.LANGO_STOMACH.get().create(this.level());
                             if (boss != null && this.getLastAttacker() instanceof Player playerIn) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.lango"));
                             }
-                        }else if (getVariant() == ORANGE_B) {
-                                boss = MobsCore.NYELV_STOMACH.get().create(this.level());
-                                if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-                                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nyelv"));
-                                }
-                            } else if (getVariant() == PINK_A) {
-                                boss = MobsCore.GLOTTA_STOMACH.get().create(this.level());
-                                if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-                                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.glotta"));
-                                }
-                            }else if (getVariant() == BLUE_B) {
-                                boss = MobsCore.JEEB_STOMACH.get().create(this.level());
-                                if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-                                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.jeeb"));
-                                }
-                            }else if (getVariant() == WHITE_A) {
-                                boss = MobsCore.SHIITA_STOMACH.get().create(this.level());
-                                if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-                                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shiita"));
-                                }
-                            }else if (getVariant() == RED_B) {
-                                boss = MobsCore.LANGO_STOMACH.get().create(this.level());
-                                if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-                                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.lango"));
-                                }
                         }
-
+                        break;
                     default:
                 }
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-                }
+
+            }
+            if (boss != null) {
+                boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                this.level().addFreshEntity(boss);
             }
         }
         super.remove(p_149847_);

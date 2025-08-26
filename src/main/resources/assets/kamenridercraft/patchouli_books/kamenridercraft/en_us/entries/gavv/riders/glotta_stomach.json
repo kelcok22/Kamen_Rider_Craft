@@ -2,7 +2,7 @@
 	"name": "Glotta Stomach",
 	"icon": "kamenridercraft:glotta_mimic_key",
 	"category": "kamenridercraft:gavv/riders",
-	"sortnum": 7,
+	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -2,7 +2,7 @@
 	"name": "Nyelv Stomach",
 	"icon": "kamenridercraft:gavv_logo",
 	"category": "kamenridercraft:gavv/mobs",
-	"sortnum": 2,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:entity",
