@@ -4,16 +4,42 @@
 	"category": "kamenridercraft:gavv/items",
 	"sortnum": 6,
 	"pages": [
+      {
+        "type": "patchouli:text",
+        "anchor": "jeeb_mimic_key",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:jeeb_mimic_key",
+        "title": "Jeeb's Mimic Key",
+        "text": "Drops from:$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shiita_mimic_key",
+        "title": "Shiita's Mimic Key",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shiita_mimic_key",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gavv/mobs/shiita_stomach)Shiita Stomach$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "nyelv_mimic_key",
+          "title": "Nyelv's Mimic Key",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:nyelv_mimic_key",
-			"title": "Nyelv's Mimic Key",
+          "title": " ",
 			"text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)"
 		},
 		{
@@ -28,6 +54,19 @@
 			"item": "kamenridercraft:glotta_mimic_key",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)"
-		}
-	]
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "lango_mimic_key",
+        "title": "Lango's Mimic Key",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lango_mimic_key",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)"
+      }
+    ]
 }

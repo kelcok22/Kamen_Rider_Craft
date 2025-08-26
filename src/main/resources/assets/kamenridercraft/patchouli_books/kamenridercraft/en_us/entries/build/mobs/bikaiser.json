@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#bikaiser_boss_block)Bikaiser Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#bikaiser_boss_block)Bikaiser Boss Block$(/l)$(br2)Drops$(li)2-3 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/gears#gear_engine_red)Gear Engine (Red)$(/l) (50%)$(li)1 $(l:build/items/fullbottles#ghost_full_bottle)Ghost Fullbottle$(/l) (50%)$(li)1 $(l:build/items/gears#gear_remocon_blue)Gear Remocon (Blue)$(/l) (50%)$(li)1 $(l:build/items/fullbottles#ex_aid_full_bottle)Ex-Aid Fullbottle$(/l) (50%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_kujaku_medal)Foundation X Kujaku Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_kamakiri_medal)Foundation X Kamakiri Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_tora_medal)Foundation X Tora Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_gorilla_medal)Foundation X Gorilla Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_unagi_medal)Foundation X Unagi Core Medal$(/l) (20%)"
 		}
 	]
 }

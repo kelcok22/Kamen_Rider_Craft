@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:gear_engine_red",
-			"text": "Drops from:$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gear_remocon_blue",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",

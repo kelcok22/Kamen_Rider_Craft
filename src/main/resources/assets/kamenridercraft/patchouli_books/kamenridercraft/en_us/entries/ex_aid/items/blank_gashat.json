@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:exaid/blank_gashat",
-			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l)"
 		}
 	]
 }

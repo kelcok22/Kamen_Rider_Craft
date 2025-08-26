@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:full_bottle",
 			"title": " ",
-			"text": "$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)$(li)$(l:build/mobs/downfall_guardian)Downfall Guardians$(/l)$(li)$(l:build/mobs/phantom_crusher)Phantom Crushers$(/l)$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+			"text": "$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)$(li)$(l:build/mobs/downfall_guardian)Downfall Guardians$(/l)$(li)$(l:build/mobs/phantom_crusher)Phantom Crushers$(/l)$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l)$(li)$(l:build/mobs/kaiser)Kaiser$(/l)$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		}
 	]
 }

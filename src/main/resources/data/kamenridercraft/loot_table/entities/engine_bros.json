@@ -10,20 +10,6 @@
 			  }
 		  ]
 	  },
-	  {
-		  "rolls": 1,
-		  "entries": [
-			  {
-				  "type": "minecraft:item",
-				  "name": "kamenridercraft:gear_engine_red"
-			  },
-			  {
-				  "type": "minecraft:item",
-				  "name": "kamenridercraft:full_bottle",
-				  "weight": 3
-			  }
-		  ]
-	  },
 
 	{
 	  "rolls": 1,

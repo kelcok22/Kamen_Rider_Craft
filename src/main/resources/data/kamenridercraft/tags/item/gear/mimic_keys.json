@@ -1,6 +1,9 @@
 {
   "values": [
+    "kamenridercraft:jeeb_mimic_key",
+    "kamenridercraft:shiita_mimic_key",
     "kamenridercraft:nyelv_mimic_key",
-    "kamenridercraft:glotta_mimic_key"
+    "kamenridercraft:glotta_mimic_key",
+    "kamenridercraft:lango_mimic_key"
   ]
 }

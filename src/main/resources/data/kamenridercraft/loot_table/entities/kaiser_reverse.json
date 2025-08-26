@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gear_engine_red"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_condor_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_batta_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_cheetah_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_zou_medal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:foundation_x_tako_medal"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:wizard_full_bottle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drive_full_bottle"
+        }
+      ]
+    },
+
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:full_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

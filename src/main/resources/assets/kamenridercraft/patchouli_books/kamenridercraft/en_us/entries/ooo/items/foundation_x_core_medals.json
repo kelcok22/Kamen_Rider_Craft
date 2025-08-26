@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_taka_medal",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_kujaku_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_condor_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_lion_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_tora_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_cheetah_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_kuwagata_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_kamakiri_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_batta_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_sai_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_gorilla_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_zou_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_shachi_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser)Kaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_unagi_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:foundation_x_tako_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)"
 		}
 	]
 }

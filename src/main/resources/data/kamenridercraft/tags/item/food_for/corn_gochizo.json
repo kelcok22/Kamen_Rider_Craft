@@ -1,5 +1,21 @@
 {
   "values": [
-    "kamenridercraft:corn_snack"
+    "kamenridercraft:corn_snack",
+    {
+      "id": "pamhc2foodextended:popcornitem",
+      "required": false
+    },
+    {
+      "id": "croptopia:popcorn",
+      "required": false
+    },
+    {
+      "id": "corn_delight:popcorn",
+      "required": false
+    },
+    {
+      "id": "corn_delight:caramel_popcorn",
+      "required": false
+    }
   ]
 }

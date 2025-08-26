@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 10% chance to spawn from a $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l) outside of the City dimension"
+			"text": "Has a 10% chance to spawn from a $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l) outside of the City dimension$(br2)Drops$(li)2-3 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/gears#gear_remocon_blue)Gear Remocon (Blue)$(/l)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_taka_medal)Foundation X Taka Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_kuwagata_medal)Foundation X Kuwagata Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_lion_medal)Foundation X Lion Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_sai_medal)Foundation X Sai Core Medal$(/l) (20%)$(li)1 $(l:ooo/items/foundation_x_core_medals#foundation_x_shachi_medal)Foundation X Shachi Core Medal$(/l) (20%)$(li)1 $(l:build/items/fullbottles#fourze_full_bottle)Fourze Fullbottle$(/l) (50%)$(li)1 $(l:build/items/fullbottles#gaim_full_bottle)Gaim Fullbottle$(/l) (50%)"
 		}
 	]
 }
