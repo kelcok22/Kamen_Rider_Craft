@@ -247,7 +247,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -520,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:popburn_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -1079,7 +1079,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:teriyaki_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1092,7 +1092,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:salad_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1105,7 +1105,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:tonkatsu_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1118,7 +1118,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:potage_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1131,7 +1131,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:natto_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1144,7 +1144,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:salami_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1157,7 +1157,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:takoyaki_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -1170,7 +1170,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:mentaiko_umaibo_gochizo",
         "title": " ",
-        "text": "Obtained by eating $(l:misc/items/foods#corn_snacks)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
