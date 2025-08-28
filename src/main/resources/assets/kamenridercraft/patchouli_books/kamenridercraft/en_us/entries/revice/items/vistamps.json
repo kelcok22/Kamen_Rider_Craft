@@ -74,7 +74,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:thunder_gale_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#rolling_vistamp)Rolling Vistamp$(/l) in your inventory$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
+			"text": "Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
 		},
 		{
 			"type": "patchouli:text",
