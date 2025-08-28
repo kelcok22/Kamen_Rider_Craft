@@ -103,6 +103,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
                     else if (formItem==Saber_Rider_Items.SABER_BLANK_1.get()&&formItem3==Saber_Rider_Items.PETER_FANTASISTA_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_peter"));
                     else if (formItem==Saber_Rider_Items.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_pegasus"));
                     else if (formItem==Saber_Rider_Items.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.PETER_FANTASISTA_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_combo"));
+                    else if (formItem==Saber_Rider_Items.KING_LION_DAISENKI_WONDER_RIDE_BOOK.get()||formItem==Saber_Rider_Items.TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
                     else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
                     + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
                     + Component.translatable(formItem2.toString() + ".form").getString()
@@ -114,6 +115,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
                     else if (formItem==Saber_Rider_Items.SABER_BLANK_1.get()&&formItem2==Saber_Rider_Items.NEEDLE_HEDGEHOG_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_hedgehog"));
                     else if (formItem==Saber_Rider_Items.TRI_CERBERUS_WONDER_RIDE_BOOK.get()&&formItem2==Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_cerberus"));
                     else if (formItem==Saber_Rider_Items.TRI_CERBERUS_WONDER_RIDE_BOOK.get()&&formItem2==Saber_Rider_Items.NEEDLE_HEDGEHOG_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_combo"));
+                    else if (formItem==Saber_Rider_Items.ARABIANA_NIGHT_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
                     else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
                     + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
                     + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? Component.translatable(formItem2.toString() + ".form").getString() + " " : "")
