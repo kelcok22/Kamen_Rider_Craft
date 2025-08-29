@@ -313,6 +313,175 @@
 			"item": "kamenridercraft:copy_ring",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_ring",
+        "title": "Kuuga Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:kuuga/riders/kuuga)Kamen Rider Kuuga$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kuuga_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "agito_ring",
+        "title": "Agito Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:agito/riders/agito)Kamen Rider Agito$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:agito_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ryuki_ring",
+        "title": "Ryuki Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:ryuki/riders/ryuki)Kamen Rider Ryuki$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ryuki_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "faiz_ring",
+        "title": "Faiz Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:faiz/riders/faiz)Kamen Rider Faiz$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:faiz_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blade_ring",
+        "title": "Blade Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:blade/riders/blade)Kamen Rider Blade$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blade_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "hibiki_ring",
+        "title": "Hibiki Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:hibiki/riders/hibiki)Kamen Rider Hibiki$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hibiki_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kabuto_ring",
+        "title": "Kabuto Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:kabuto/riders/kabuto)Kamen Rider Kabuto$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kabuto_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "den_o_ring",
+        "title": "Den-O Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:den_o/riders/den_o)Kamen Rider Den-O$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:den_o_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_ring",
+        "title": "Kiva Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:kiva/riders/kiva)Kamen Rider Kiva$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "decade_ring",
+        "title": "Decade Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:decade/riders/decade)Kamen Rider Decade$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:decade_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "double_ring",
+        "title": "Double Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:w/riders/double)Kamen Rider Double$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:double_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ooo_ring",
+        "title": "OOO Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:ooo/riders/ooo)Kamen Rider OOO$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ooo_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fourze_ring",
+        "title": "Fourze Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fourze_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
 	]
 }

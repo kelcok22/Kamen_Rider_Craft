@@ -41,7 +41,7 @@
 				"kamenridercraft:seiken_swordriver_blades"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\"}"
               }
 			}
 		  }
