@@ -555,7 +555,47 @@ public class Wizard_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
-	public static final DeferredItem<Item> FOURZE_ENGAGE_WIZARD_RING = ITEMS.register("fourze_engage_ring",
+    public static final DeferredItem<Item> KUUGA_WIZARD_RING = ITEMS.register("kuuga_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> Agito_WIZARD_RING = ITEMS.register("agito_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Agito_Rider_Items.ALTERING.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> RYUKI_WIZARD_RING = ITEMS.register("ryuki_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> FAIZ_WIZARD_RING = ITEMS.register("faiz_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> BLADE_WIZARD_RING = ITEMS.register("blade_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> HIBIKI_WIZARD_RING = ITEMS.register("hibiki_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> KABUTO_WIZARD_RING = ITEMS.register("kabuto_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> DEN_O_WIZARD_RING = ITEMS.register("den_o_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> KIVA_WIZARD_RING = ITEMS.register("kiva_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> DECADE_WIZARD_RING = ITEMS.register("decade_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Decade_Rider_Items.DECADRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> DOUBLE_WIZARD_RING = ITEMS.register("double_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)W_Rider_Items.WDRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> OOO_WIZARD_RING = ITEMS.register("ooo_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)OOO_Rider_Items.OOODRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> FOURZE_WIZARD_RING = ITEMS.register("fourze_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Fourze_Rider_Items.FOURZE_DRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> FOURZE_ENGAGE_WIZARD_RING = ITEMS.register("fourze_engage_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_SENTAI_WIZARD_RING = ITEMS.register("super_sentai_ring",
