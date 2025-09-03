@@ -532,6 +532,16 @@
 			"item": "kamenridercraft:sword_of_logos_arch",
 			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
 		},
+      {
+        "type": "patchouli:smelting",
+        "anchor": "granute_glass",
+        "recipe": "kamenridercraft:misc/block/granute_glass_smelt"
+      },
+      {
+        "type": "patchouli:crafting",
+        "anchor": "granute_glass_pane",
+        "recipe": "kamenridercraft:misc/block/granute_glass_pane"
+      },
 		{
 			"type": "patchouli:crafting",
 			"anchor": "wallplate",

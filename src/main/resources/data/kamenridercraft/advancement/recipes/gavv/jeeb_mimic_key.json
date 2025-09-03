@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:granute_tooth"
+			  "kamenridercraft:jeeb_mimic_key"
 			]
 		  }
 		]
@@ -21,8 +21,9 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:gavv/prototype_cup_gochizo",
-      "kamenridercraft:gavv/granute_glass"
+	  "kamenridercraft:gavv/jeeb_mimicdeviser",
+      "kamenridercraft:gavv/jeeb_dagger",
+      "kamenridercraft:gavv/jeeb_sword"
 	]
   },
   "sends_telemetry_event": false

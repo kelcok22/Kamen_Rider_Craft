@@ -9,11 +9,8 @@
       "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by $(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)"
     },
     {
-      "type": "patchouli:spotlight",
-      "link_recipe": true,
-      "item": "kamenridercraft:glotta_scythe",
-      "title": " ",
-      "text": "Item is currently unobtainable"
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gavv/glotta_scythe"
     }
   ]
 }
