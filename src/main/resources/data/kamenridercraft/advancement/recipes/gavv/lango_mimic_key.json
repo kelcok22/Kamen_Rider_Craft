@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:granute_tooth"
+			  "kamenridercraft:lango_mimic_key"
 			]
 		  }
 		]
@@ -21,8 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:gavv/prototype_cup_gochizo",
-      "kamenridercraft:gavv/granute_glass"
+	  "kamenridercraft:gavv/lango_mimicdeviser",
+      "kamenridercraft:gavv/lango_sword"
 	]
   },
   "sends_telemetry_event": false
