@@ -122,6 +122,10 @@
   "item.kamenridercraft.amazon_rider_koko_ni_ari.desc": "HosephHoestar - Amazon Rider Koko ni Ari",
   "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc.desc": "HosephHoestar - Amazon Rider Koko ni Ari",
 
+  "item.kamenridercraft.kamen_rider_stronger_no_uta_music_disc": "Kamen Rider Stronger no Uta Music Disc",
+  "item.kamenridercraft.kamen_rider_stronger_no_uta.desc": "HosephHoestar - Kamen Rider Stronger no Uta",
+  "item.kamenridercraft.kamen_rider_stronger_no_uta_music_disc.desc": "HosephHoestar - Kamen Rider Stronger no Uta",
+
   "item.kamenridercraft.moero_kamen_rider_music_disc": "Moero! Kamen Rider Music Disc",
   "item.kamenridercraft.moero_kamen_rider.desc": "HosephHoestar - Moero! Kamen Rider",
   "item.kamenridercraft.moero_kamen_rider_music_disc.desc": "HosephHoestar - Moero! Kamen Rider",
@@ -169,6 +173,10 @@
   "item.kamenridercraft.rebirth_music_disc": "rebirth Music Disc",
   "item.kamenridercraft.rebirth.desc": "HosephHoestar - rebirth",
   "item.kamenridercraft.rebirth_music_disc.desc": "HosephHoestar - rebirth",
+
+  "item.kamenridercraft.kagayaki_music_disc": "Kagayaki Music Disc",
+  "item.kamenridercraft.kagayaki.desc": "HosephHoestar - Kagayaki",
+  "item.kamenridercraft.kagayaki_music_disc.desc": "HosephHoestar - Kagayaki",
 
   "item.kamenridercraft.next_level_music_disc": "NEXT LEVEL Music Disc",
   "item.kamenridercraft.next_level.desc": "HosephHoestar - NEXT LEVEL",
@@ -226,6 +234,10 @@
   "item.kamenridercraft.over_quartzer.desc": "HosephHoestar - Over \"Quartzer\"",
   "item.kamenridercraft.over_quartzer_music_disc.desc": "HosephHoestar - Over \"Quartzer\"",
 
+  "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc": "P. A. R. T. Y. ~Universe Festival~ Music Disc",
+  "item.kamenridercraft.p_a_r_t_y_universe_festival.desc": "HosephHoestar - P. A. R. T. Y. ~Universe Festival~",
+  "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc.desc": "HosephHoestar - P. A. R. T. Y. ~Universe Festival~",
+
   "item.kamenridercraft.realxeyez_music_disc": "REAL×EYEZ Music Disc",
   "item.kamenridercraft.realxeyez.desc": "HosephHoestar - REAL×EYEZ",
   "item.kamenridercraft.realxeyez_music_disc.desc": "HosephHoestar - REAL×EYEZ",
@@ -257,6 +269,10 @@
   "item.kamenridercraft.got_boost_music_disc": "Got Boost? Music Disc",
   "item.kamenridercraft.got_boost.desc": "HosephHoestar - Got Boost?",
   "item.kamenridercraft.got_boost_music_disc.desc": "HosephHoestar - Got Boost?",
+
+  "item.kamenridercraft.visions_music_disc": "VISIONS Music Disc",
+  "item.kamenridercraft.visions.desc": "HosephHoestar - VISIONS",
+  "item.kamenridercraft.visions_music_disc.desc": "HosephHoestar - VISIONS",
 
   "effect.kamenridercraft.boost":"Boost",
 "effect.kamenridercraft.anti_poison":"Anti Poison",

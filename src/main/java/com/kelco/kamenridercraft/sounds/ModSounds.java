@@ -29,6 +29,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> AMAZON_RIDER_KOKO_NI_ARI= registerSoundEvent("amazon_rider_koko_ni_ari");
     public static final ResourceKey<JukeboxSong> AMAZON_RIDER_KOKO_NI_ARI_KEY = createSong("amazon_rider_koko_ni_ari");
 
+    public static final Supplier<SoundEvent> KAMEN_RIDER_STRONGER_NO_UTA= registerSoundEvent("kamen_rider_stronger_no_uta");
+    public static final ResourceKey<JukeboxSong> KAMEN_RIDER_STRONGER_NO_UTA_KEY = createSong("kamen_rider_stronger_no_uta");
+
     public static final Supplier<SoundEvent> MOERO_KAMEN_RIDER= registerSoundEvent("moero_kamen_rider");
     public static final ResourceKey<JukeboxSong> MOERO_KAMEN_RIDER_KEY = createSong("moero_kamen_rider");
 
@@ -61,6 +64,9 @@ public class ModSounds {
 
     public static final Supplier<SoundEvent> REBIRTH= registerSoundEvent("rebirth");
     public static final ResourceKey<JukeboxSong> REBIRTH_KEY = createSong("rebirth");
+
+    public static final Supplier<SoundEvent> KAGAYAKI= registerSoundEvent("kagayaki");
+    public static final ResourceKey<JukeboxSong> KAGAYAKI_KEY = createSong("kagayaki");
 
     public static final Supplier<SoundEvent> NEXT_LEVEL= registerSoundEvent("next_level");
     public static final ResourceKey<JukeboxSong> NEXT_LEVEL_KEY = createSong("next_level");
@@ -104,6 +110,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> OVER_QUARTZER= registerSoundEvent("over_quartzer");
     public static final ResourceKey<JukeboxSong> OVER_QUARTZER_KEY = createSong("over_quartzer");
 
+    public static final Supplier<SoundEvent> P_A_R_T_Y_UNIVERSE_FESTIVAL= registerSoundEvent("p_a_r_t_y_universe_festival");
+    public static final ResourceKey<JukeboxSong> P_A_R_T_Y_UNIVERSE_FESTIVAL_KEY = createSong("p_a_r_t_y_universe_festival");
+
     public static final Supplier<SoundEvent> REAL_X_EYEZ= registerSoundEvent("realxeyez");
     public static final ResourceKey<JukeboxSong> REAL_X_EYEZ_KEY = createSong("realxeyez");
 
@@ -127,6 +136,9 @@ public class ModSounds {
 
     public static final Supplier<SoundEvent> GOT_BOOST= registerSoundEvent("got_boost");
     public static final ResourceKey<JukeboxSong> GOT_BOOST_KEY = createSong("got_boost");
+
+    public static final Supplier<SoundEvent> VISIONS= registerSoundEvent("visions");
+    public static final ResourceKey<JukeboxSong> VISIONS_KEY = createSong("visions");
 
     public static final Supplier<SoundEvent> MASKED_RIDER= registerSoundEvent("masked_rider");
     public static final ResourceKey<JukeboxSong> MASKED_RIDER_KEY = createSong("masked_rider");
