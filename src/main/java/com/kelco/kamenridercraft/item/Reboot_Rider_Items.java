@@ -247,7 +247,15 @@ public class Reboot_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
+    public static final DeferredItem<Item> ULIMATE_HALF_TYPHOON_CORE = ITEMS.register("ulimate_half_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_no_0","ulimate_half_typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+                    .ChangeModel("default_cape.geo.json","default_cape.animation.json").has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1))
 					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
@@ -272,7 +280,11 @@ public class Reboot_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_2_1", SHIN_TYPHOON_CORE_2_1,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
+    public static final DeferredItem<Item> ULIMATE_HALF_TYPHOON = ITEMS.register("ulimate_half_typhoon",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_no_0", ULIMATE_HALF_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
-	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
+
+    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 
 	}

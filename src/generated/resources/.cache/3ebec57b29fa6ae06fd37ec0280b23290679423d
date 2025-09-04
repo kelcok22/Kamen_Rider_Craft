@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-28T00:21:04.283982	Item Models: kamenridercraft
+// 1.21.1	2025-09-03T21:03:09.2229651	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 6d5634426eeb42c0d0b168f6237855cc5b6d9aee assets/kamenridercraft/models/item/agito_shining_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
@@ -405,6 +405,8 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/trid
 15de1a14d31fe7f1f079b53ec696d175ab766da2 assets/kamenridercraft/models/item/tridoron_key.json
 19d7ac204ade8508ab6f0c2ebb34a09a6477cb94 assets/kamenridercraft/models/item/tsupparihebi_ride_chemy_card.json
 473e54a55d9729ee2d218164b5267afca7ffefdb assets/kamenridercraft/models/item/tsurigummy_gochizo.json
+f11dd057eda1f89e798a4ad8423ee0023c6ac27a assets/kamenridercraft/models/item/ulimate_half_typhoon.json
+674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/ulimate_half_typhoon_core.json
 340bedc2ef36256a06b956e78bc69935ea5796ac assets/kamenridercraft/models/item/ultimate_revi_ride_chemy_card.json
 0f5840b6727aa625baad6e0f1c3485c263aa6383 assets/kamenridercraft/models/item/ultimate_vice_ride_chemy_card.json
 d854c86053b53d41e71f2d5b20307d42940d1c62 assets/kamenridercraft/models/item/umaibo_gochizo.json
