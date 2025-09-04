@@ -33,6 +33,17 @@
 			"item": "kamenridercraft:tatakae_kamen_rider_v3_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "set_up_kamen_rider_x_music_disc",
+        "text": "Song:$(li)HosephHoestar - Set Up! Kamen Rider X$(br2)Based on:$(li)Ichiro Mizuki - Set Up! Kamen Rider X$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider X (1974, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:set_up_kamen_rider_x_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "amazon_rider_koko_ni_ari_music_disc",
@@ -44,17 +55,17 @@
 			"item": "kamenridercraft:amazon_rider_koko_ni_ari_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "set_up_kamen_rider_x_music_disc",
-			"text": "Song:$(li)HosephHoestar - Set Up! Kamen Rider X$(br2)Based on:$(li)Ichiro Mizuki - Set Up! Kamen Rider X$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider X (1974, TV show)"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:set_up_kamen_rider_x_music_disc",
-			"text": "Disc is currently unobtainable"
-		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kamen_rider_stronger_no_uta_music_disc",
+        "text": "Song:$(li)HosephHoestar - Kamen Rider Stronger no Uta$(br2)Based on:$(li)Ichiro Mizuki - Kamen Rider Stronger no Uta$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Stronger (1975, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kamen_rider_stronger_no_uta_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "moero_kamen_rider_music_disc",
@@ -176,6 +187,17 @@
 			"item": "kamenridercraft:rebirth_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kagayaki_music_disc",
+        "text": "Song:$(li)HosephHoestar - Kagayaki$(br2)Based on:$(li)Toshihiko Sahashi - Kagayaki$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Hibiki (2005, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kagayaki_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "next_level_music_disc",
@@ -328,6 +350,17 @@
 			"item": "kamenridercraft:over_quartzer_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "p_a_r_t_y_universe_festival_music_disc",
+        "text": "Song:$(li)HosephHoestar - P. A. R. T. Y. ~Universe Festival~$(br2)Based on:$(li)DA PUMP - P. A. R. T. Y. ~Universe Festival~$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:p_a_r_t_y_universe_festival_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "realxeyez_music_disc",
@@ -414,6 +447,17 @@
 			"item": "kamenridercraft:got_boost_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "visions_music_disc",
+        "text": "Song:$(li)HosephHoestar - VISIONS$(br2)Based on:$(li)NAQT VANE - VISIONS$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zeztz (2025, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:visions_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "masked_rider_music_disc",

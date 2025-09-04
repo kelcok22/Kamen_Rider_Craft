@@ -31,6 +31,14 @@
       }
     ]
   },
+  "kamen_rider_stronger_no_uta": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kamen_rider_stronger_no_uta",
+        "stream": true
+      }
+    ]
+  },
   "moero_kamen_rider": {
     "sounds": [
       {
@@ -115,6 +123,14 @@
     "sounds": [
       {
         "name": "kamenridercraft:rebirth",
+        "stream": true
+      }
+    ]
+  },
+  "kagayaki": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kagayaki",
         "stream": true
       }
     ]
@@ -231,6 +247,14 @@
       }
     ]
   },
+  "p_a_r_t_y_universe_festival": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:p_a_r_t_y_universe_festival",
+        "stream": true
+      }
+    ]
+  },
   "realxeyez": {
     "sounds": [
       {
@@ -291,6 +315,14 @@
     "sounds": [
       {
         "name": "kamenridercraft:got_boost",
+        "stream": true
+      }
+    ]
+  },  
+  "visions": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:visions",
         "stream": true
       }
     ]
