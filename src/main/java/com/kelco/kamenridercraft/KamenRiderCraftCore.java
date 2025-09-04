@@ -775,6 +775,11 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES2.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES3.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.SNACK_PARTICLES.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CHOCO_PARTICLES.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CANDY_PARTICLES.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CANDY_PARTICLES2.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CANDY_PARTICLES3.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CANDY_PARTICLES4.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), realizingParticles.Provider::new);
             event.registerSpriteSet(ModParticles.WIZARD_PARTICLES.get(), WizardParticles.Provider::new);
         }
