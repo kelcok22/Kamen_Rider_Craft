@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside an Ex-Aid Rider's transformation device to transform into that Rider"
+			"text": "Used alongside an Ex-Aid Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)' equipment$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)'s equipment$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)'s equipment$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)'s equipment$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

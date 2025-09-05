@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a W Rider's transformation device to transform into that Rider"
+			"text": "Used alongside a W Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:w/mobs/eternal_mob)Kamen Rider Eternal$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

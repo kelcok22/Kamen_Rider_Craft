@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:saber/jaken_caliburdriver"
+			"recipe": "kamenridercraft:saber/jaken_caliburdriver",
+          "text": "Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)'s equipment"
 		}
 	]
 }

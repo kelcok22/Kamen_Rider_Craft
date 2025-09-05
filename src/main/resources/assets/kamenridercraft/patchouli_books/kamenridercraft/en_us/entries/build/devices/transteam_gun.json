@@ -14,7 +14,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:transteam_gun_night_rogue",
 			"title": " ",
-			"text": "Obtained by firing the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) without any foot armor"
+			"text": "Obtained by firing the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) without any foot armor$(br2)Drops from:$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -27,7 +27,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:transteam_gun_blood_stalk",
 			"title": " ",
-			"text": "Obtained by firing the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) without any foot armor and with the $(l:build/items/fullbottles#lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l) in your off-hand"
+			"text": "Obtained by firing the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) without any foot armor and with the $(l:build/items/fullbottles#lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l) in your off-hand$(br2)Drops from:$(li)$(l:build/mobs/blood_stalk)Blood Stalk$(/l)'s equipment"
 		}
 	]
 }

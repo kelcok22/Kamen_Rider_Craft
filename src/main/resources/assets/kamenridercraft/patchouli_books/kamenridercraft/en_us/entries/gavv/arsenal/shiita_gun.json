@@ -10,7 +10,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gavv/shiita_gun"
+      "recipe": "kamenridercraft:gavv/shiita_gun",
+      "text": "Drops from:$(li)$(l:gavv/mobs/shiita_stomach)Shiita Stomach$(/l)'s equipment"
     }
   ]
 }

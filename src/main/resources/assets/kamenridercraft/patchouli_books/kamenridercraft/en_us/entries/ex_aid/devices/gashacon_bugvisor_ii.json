@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_chronos"
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_chronos",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_poppy"
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_poppy",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

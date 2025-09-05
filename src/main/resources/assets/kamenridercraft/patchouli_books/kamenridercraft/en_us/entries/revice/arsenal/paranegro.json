@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:paranegro",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)"
+			"text": "Drops from:$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
 		}
 	]
 }

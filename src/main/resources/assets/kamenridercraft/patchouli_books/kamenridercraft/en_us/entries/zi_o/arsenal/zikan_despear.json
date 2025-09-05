@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zi_o/zikan_despear"
+			"recipe": "kamenridercraft:zi_o/zikan_despear",
+          "text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

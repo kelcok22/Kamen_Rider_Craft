@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:black/satansaber"
+			"recipe": "kamenridercraft:black/satansaber",
+          "text": "Drops from:$(li)$(l:black/mobs/shadow_moon)Shadow Moon$(/l)'s equipment"
 		}
 	]
 }

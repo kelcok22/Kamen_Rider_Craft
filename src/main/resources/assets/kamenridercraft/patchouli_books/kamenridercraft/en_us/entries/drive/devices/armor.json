@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Drive Rider's transformation device to transform into that Rider"
+			"text": "Used alongside a Drive Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)'s equipment$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)'s equipment$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

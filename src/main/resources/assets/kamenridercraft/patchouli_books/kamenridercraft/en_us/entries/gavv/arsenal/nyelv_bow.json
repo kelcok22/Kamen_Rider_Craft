@@ -10,7 +10,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gavv/nyelv_bow"
+      "recipe": "kamenridercraft:gavv/nyelv_bow",
+      "text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)'s equipment"
     }
   ]
 }

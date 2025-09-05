@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:break_gunner_belt",
 			"title": " ",
-			"text": "Obtained by firing the $(l:drive/arsenal/break_gunner)Break Gunner$(/l) without any foot armor"
+			"text": "Obtained by firing the $(l:drive/arsenal/break_gunner)Break Gunner$(/l) without any foot armor$(br2)Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)'s equipment"
 		}
 	]
 }

@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_berotha"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_berotha",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_kuehne"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_kuehne",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +36,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_ekal"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_ekal",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -45,7 +48,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_neohi"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_neohi",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -56,7 +60,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_onycho"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_onycho",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +72,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_vicarya"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_vicarya",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +84,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_gaeru"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_gaeru",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -89,7 +96,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_mammoth"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_mammoth",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -100,7 +108,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -111,7 +120,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -122,7 +132,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom_two"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom_two",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,7 +144,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/zetsumeriser_arsino"
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_arsino",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment"
 		}
 	]
 }

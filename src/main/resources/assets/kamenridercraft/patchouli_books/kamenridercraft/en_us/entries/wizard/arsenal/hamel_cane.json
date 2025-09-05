@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:wizard/hammelcane"
+			"recipe": "kamenridercraft:wizard/hammelcane",
+          "text": "Drops from:$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)'s equipment"
 		}
 	]
 }

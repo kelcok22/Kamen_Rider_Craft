@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:saber/haken_bladriver_falchion"
+			"recipe": "kamenridercraft:saber/haken_bladriver_falchion",
+          "text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

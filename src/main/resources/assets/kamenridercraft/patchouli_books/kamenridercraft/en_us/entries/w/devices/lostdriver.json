@@ -45,7 +45,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:w/lostdriver_eternal"
+			"recipe": "kamenridercraft:w/lostdriver_eternal",
+          "text": "Drops from:$(li)$(l:w/mobs/eternal_mob)Kamen Rider Eternal$(/l)'s equipment"
         }
 	]
 }

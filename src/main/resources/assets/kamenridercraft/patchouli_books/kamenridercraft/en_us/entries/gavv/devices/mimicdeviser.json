@@ -11,7 +11,8 @@
 		},
       {
         "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:gavv/jeeb_mimicdeviser"
+        "recipe": "kamenridercraft:gavv/jeeb_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)'s equipment"
       },
       {
         "type": "patchouli:text",
@@ -21,7 +22,8 @@
       },
       {
         "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:gavv/shiita_mimicdeviser"
+        "recipe": "kamenridercraft:gavv/shiita_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/shiita_stomach)Shiita Stomach$(/l)'s equipment"
       },
       {
         "type": "patchouli:text",
@@ -31,7 +33,8 @@
       },
       {
         "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:gavv/nyelv_mimicdeviser"
+        "recipe": "kamenridercraft:gavv/nyelv_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)'s equipment"
       },
 		{
 			"type": "patchouli:text",
@@ -41,7 +44,8 @@
 		},
       {
         "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:gavv/glotta_mimicdeviser"
+        "recipe": "kamenridercraft:gavv/glotta_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)'s equipment"
       },
       {
         "type": "patchouli:text",
@@ -51,7 +55,8 @@
       },
       {
         "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:gavv/lango_mimicdeviser"
+        "recipe": "kamenridercraft:gavv/lango_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)'s equipment"
       }
     ]
 }

@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gavv/bakemagnum"
+			"recipe": "kamenridercraft:gavv/bakemagnum",
+          "text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)'s equipment (in Marble Breacookie Form)$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)'s equipment (as Kamen Rider Bitter Gavv Bakibaki Stick Form)"
 		}
 	]
 }

@@ -10,7 +10,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gavv/jeeb_sword"
+      "recipe": "kamenridercraft:gavv/jeeb_sword",
+      "text": "Drops from:$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)'s equipment"
     }
   ]
 }

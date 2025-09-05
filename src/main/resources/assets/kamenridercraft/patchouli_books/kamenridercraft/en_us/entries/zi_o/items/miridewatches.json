@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:woz_miridewatch",
-			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shinobi_miridewatch",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:quiz_miridewatch",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kikai_miridewatch",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

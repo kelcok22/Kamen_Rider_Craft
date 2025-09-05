@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Bosses$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l) (5%)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l) (5%)"
+			"text": "Bosses$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l) (5%)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l) (5%)"
 		}
 	]
 }

@@ -56,7 +56,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:exaid/gamer_driver_genmu"
+			"recipe": "kamenridercraft:exaid/gamer_driver_genmu",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

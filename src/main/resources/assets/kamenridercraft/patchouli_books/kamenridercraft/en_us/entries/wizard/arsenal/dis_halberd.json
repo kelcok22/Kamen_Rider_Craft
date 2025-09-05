@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:wizard/dis_halberd"
+			"recipe": "kamenridercraft:wizard/dis_halberd",
+          "text": "Drops from:$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)'s equipment"
 		}
 	]
 }

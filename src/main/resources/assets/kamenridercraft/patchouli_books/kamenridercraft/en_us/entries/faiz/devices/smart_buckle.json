@@ -14,7 +14,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:smartbuckle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)' equipment"
 		},
 		{
 			"type": "patchouli:text",

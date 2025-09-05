@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_battle"
+			"recipe": "kamenridercraft:zero_one/raidriser_battle",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/battle_raider)Battle Raider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_buffalo"
+			"recipe": "kamenridercraft:zero_one/raidriser_buffalo",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +36,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_whale"
+			"recipe": "kamenridercraft:zero_one/raidriser_whale",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -45,7 +48,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_lion"
+			"recipe": "kamenridercraft:zero_one/raidriser_lion",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -56,7 +60,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_penguin"
+			"recipe": "kamenridercraft:zero_one/raidriser_penguin",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +72,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_panda"
+			"recipe": "kamenridercraft:zero_one/raidriser_panda",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +84,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/raidriser_jackal"
+			"recipe": "kamenridercraft:zero_one/raidriser_jackal",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment"
 		}
 	]
 }
