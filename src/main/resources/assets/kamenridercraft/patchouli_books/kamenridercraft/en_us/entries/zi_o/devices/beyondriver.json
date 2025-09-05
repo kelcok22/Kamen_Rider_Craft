@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zi_o/beyondriver"
+			"recipe": "kamenridercraft:zi_o/beyondriver",
+          "text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)'s equipment"
 		}
 	]
 }

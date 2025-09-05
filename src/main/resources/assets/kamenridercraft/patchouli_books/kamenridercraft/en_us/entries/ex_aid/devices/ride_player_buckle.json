@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:exaid/rideplayerbelt"
+			"recipe": "kamenridercraft:exaid/rideplayerbelt",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)' equipment"
 		},
 		{
 			"type": "patchouli:text",

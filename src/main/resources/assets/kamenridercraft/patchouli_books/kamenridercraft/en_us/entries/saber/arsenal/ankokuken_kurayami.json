@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:saber/ankokuken_kurayami"
+			"recipe": "kamenridercraft:saber/ankokuken_kurayami",
+          "text": "Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)'s equipment"
 		}
 	]
 }

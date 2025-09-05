@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:drive/zenrin_shooter"
+			"recipe": "kamenridercraft:drive/zenrin_shooter",
+          "text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)'s equipment"
 		}
 	]
 }

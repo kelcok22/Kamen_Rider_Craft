@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ninja_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:comic_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -854,7 +854,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:unfinished_genius_full_bottle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

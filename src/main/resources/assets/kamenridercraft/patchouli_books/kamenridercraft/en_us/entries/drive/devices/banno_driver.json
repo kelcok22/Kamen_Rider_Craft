@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:drive/banno_driver_gord_drive"
+			"recipe": "kamenridercraft:drive/banno_driver_gord_drive",
+          "text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

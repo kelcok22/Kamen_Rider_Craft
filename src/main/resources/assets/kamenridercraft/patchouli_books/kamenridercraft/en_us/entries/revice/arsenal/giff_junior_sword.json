@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giff_junior_sword",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Juniors$(/l)"
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Juniors$(/l)' equipment"
 		}
 	]
 }

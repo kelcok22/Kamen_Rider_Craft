@@ -14,7 +14,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:woz_time_majin_ridewatch",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		}
 	]
 }

@@ -254,7 +254,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/desire_driver_jyamato"
+			"recipe": "kamenridercraft:geats/desire_driver_jyamato",
+          "text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -265,7 +266,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/desire_driver_gm"
+			"recipe": "kamenridercraft:geats/desire_driver_gm",
+          "text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -276,7 +278,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/desire_driver_gm_chirami"
+			"recipe": "kamenridercraft:geats/desire_driver_gm_chirami",
+          "text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",

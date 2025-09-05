@@ -23,7 +23,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:build/sclash_driver_grease"
+			"recipe": "kamenridercraft:build/sclash_driver_grease",
+          "text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

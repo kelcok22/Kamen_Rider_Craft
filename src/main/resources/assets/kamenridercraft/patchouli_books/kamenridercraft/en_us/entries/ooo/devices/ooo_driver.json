@@ -23,7 +23,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ooo/ancient_ooodriver"
+			"recipe": "kamenridercraft:ooo/ancient_ooodriver",
+          "text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +35,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ooo/goda_ooodriver"
+			"recipe": "kamenridercraft:ooo/goda_ooodriver",
+          "text": "Drops from:$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

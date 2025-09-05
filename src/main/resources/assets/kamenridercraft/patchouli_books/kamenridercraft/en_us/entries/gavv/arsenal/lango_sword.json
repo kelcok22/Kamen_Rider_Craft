@@ -10,7 +10,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gavv/lango_sword"
+      "recipe": "kamenridercraft:gavv/lango_sword",
+      "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)'s equipment"
     }
   ]
 }

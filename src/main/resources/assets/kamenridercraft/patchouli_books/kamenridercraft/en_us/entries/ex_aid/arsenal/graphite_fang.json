@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:graphite_fang",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)'s equipment"
 		}
 	]
 }

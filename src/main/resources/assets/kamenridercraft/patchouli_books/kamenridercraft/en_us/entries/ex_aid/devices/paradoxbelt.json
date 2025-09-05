@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:exaid/paradoxbelt"
+			"recipe": "kamenridercraft:exaid/paradoxbelt",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)'s equipment"
 		}
 	]
 }

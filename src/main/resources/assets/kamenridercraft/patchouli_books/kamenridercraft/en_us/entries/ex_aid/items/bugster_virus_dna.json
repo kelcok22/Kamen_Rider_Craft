@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bugster_virus_dna",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l)"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l)"
 		}
 	]
 }

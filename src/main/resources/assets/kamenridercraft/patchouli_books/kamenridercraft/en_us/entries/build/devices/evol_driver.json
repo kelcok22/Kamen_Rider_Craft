@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:build/evol_driver"
+			"recipe": "kamenridercraft:build/evol_driver",
+          "text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:build/evol_driver_mad_rogue"
+			"recipe": "kamenridercraft:build/evol_driver_mad_rogue",
+          "text": "Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)'s equipment"
 		}
 	]
 }

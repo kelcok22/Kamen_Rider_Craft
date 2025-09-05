@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:agito/ank_point"
+			"recipe": "kamenridercraft:agito/ank_point",
+          "text": "Drops from:$(li)$(l:agito/mobs/another_agito)Kamen Rider Another Agito$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

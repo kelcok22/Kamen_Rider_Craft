@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pandora_panel_seito",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l)"
 		}
 	]
 }

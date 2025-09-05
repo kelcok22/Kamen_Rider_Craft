@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:wizard/whitewizardriver"
+			"recipe": "kamenridercraft:wizard/whitewizardriver",
+          "text": "Drops from:$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

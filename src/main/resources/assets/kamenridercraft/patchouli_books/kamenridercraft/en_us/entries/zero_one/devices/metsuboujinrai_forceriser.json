@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/forceriser_horobi"
+			"recipe": "kamenridercraft:zero_one/forceriser_horobi",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/forceriser_naki"
+			"recipe": "kamenridercraft:zero_one/forceriser_naki",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +36,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/forceriser_jin"
+			"recipe": "kamenridercraft:zero_one/forceriser_jin",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -45,7 +48,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/forceriser_ikazuchi"
+			"recipe": "kamenridercraft:zero_one/forceriser_ikazuchi",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

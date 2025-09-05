@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/vision_driver_glare"
+			"recipe": "kamenridercraft:geats/vision_driver_glare",
+          "text": "Drops from:$(li)$(l:geats/mobs/glare)Kamen Rider Glare$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/vision_driver_glare2"
+			"recipe": "kamenridercraft:geats/vision_driver_glare2",
+          "text": "Drops from:$(li)$(l:geats/mobs/glare2)Kamen Rider Glare2$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +36,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/vision_driver_gazer"
+			"recipe": "kamenridercraft:geats/vision_driver_gazer",
+          "text": "Drops from:$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

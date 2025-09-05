@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zectrooper_belt",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:kabuto/mobs/zectrooper)ZECTroopers$(/l)' equipment"
 		}
 	]
 }

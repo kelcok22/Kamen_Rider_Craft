@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shadow_trooper_belt",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:kabuto/mobs/shadow_trooper)Shadow Troopers$(/l)' equipment"
 		}
 	]
 }

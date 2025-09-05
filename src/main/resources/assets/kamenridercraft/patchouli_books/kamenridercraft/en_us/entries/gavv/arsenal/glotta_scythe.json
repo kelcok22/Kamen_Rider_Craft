@@ -10,7 +10,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gavv/glotta_scythe"
+      "recipe": "kamenridercraft:gavv/glotta_scythe",
+      "text": "Drops from:$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)'s equipment"
     }
   ]
 }

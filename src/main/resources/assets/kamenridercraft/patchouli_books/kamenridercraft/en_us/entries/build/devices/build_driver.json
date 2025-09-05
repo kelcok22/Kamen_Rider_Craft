@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:build/build_driver"
+			"recipe": "kamenridercraft:build/build_driver",
+          "text": "Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +68,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:build/build_driver_killbus"
+			"recipe": "kamenridercraft:build/build_driver_killbus",
+          "text": "Drops from:$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
