@@ -89,7 +89,7 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT = ITEMS.register("bakusou_bike_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv2_bike","lazer","blank",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)).addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
-			.ChangeModel("lazer_lv2.geo.json","lazer_lv2.animation.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+			.ChangeModel("lazer_lv2.geo.json").ChangeAnimation("lazer_lv2.animation.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.SetPalyerModelInvisible().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
 
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_TURBO = ITEMS.register("bakusou_bike_gashat_turbo",
