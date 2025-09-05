@@ -98,7 +98,7 @@ public class W_Rider_Items {
 
 	public static final DeferredItem<Item> JOKER_JOKER_MEMORY = ITEMS.register("joker_joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker_joker","w","wdriver_belt_jj",
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -111,7 +111,7 @@ public class W_Rider_Items {
 
 	public static final DeferredItem<Item> JOKER_MEMORY = ITEMS.register("joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker","w","wdriver_belt",
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -429,7 +429,8 @@ public class W_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","joker","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),

@@ -13,6 +13,7 @@ import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -98,8 +99,14 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> HOPPER1_RIDE_CHEMY_CARD = ITEMS.register("hopper1_ride_chemy_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gotchard","gotchardriver_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-            		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-					.AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SteamHopper).AddToList(NEED_ITEM_SteamHopper)
+            		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SteamHopper).AddToList(NEED_ITEM_SteamHopper)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PIKAHOTARU_RIDE_CHEMY_CARD = ITEMS.register("pikahotaru_ride_chemy_card",

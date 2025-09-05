@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -173,7 +174,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .IsGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
@@ -201,7 +202,6 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
     public static final DeferredItem<Item> ICHIGOLEGGINGS = ITEMS.register("ichigolegs",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
-
 
 
     public static final DeferredItem<Item> TYPHOON_ICHIGO = ITEMS.register("typhoon_ichigo",
@@ -371,15 +371,37 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> RIDOL_CORE = ITEMS.register("ridol_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","x","ridol_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToList(RiderTabs.X_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> PREFECTER = ITEMS.register("perfecter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_perfector","riderman","tackle_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .SetShowUnder().AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                }
+            }.IsGlowing().SetShowUnder().AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
@@ -410,9 +432,17 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> CONDORER_WHEEL = ITEMS.register("condorer_wheel",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon","condorer_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToList(RiderTabs.AMAZON_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
@@ -442,21 +472,48 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> ELECTRER_CORE = ITEMS.register("electrer_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","stronger","electrer_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToList(RiderTabs.STRONGER_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FIREWORK,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_charge_up","stronger","electrer_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToList(RiderTabs.STRONGER_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
+
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FIREWORK,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_CORE = ITEMS.register("tackle_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+                    .IsGlowing().SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
 
@@ -491,16 +548,40 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
-                    ,new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false))
-                    .AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
+                    ,new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> ORIGINAL_TORNADO_CORE = ITEMS.register("original_tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_original","skyrider","tornado_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
-                    ,new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false))
-                    .AddToList(RiderTabs.SKYRIDER_TAB_ITEM).has_basic_model());
+                    ,new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gangan_g","gangan_g_belt_belt")
