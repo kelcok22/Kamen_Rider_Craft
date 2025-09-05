@@ -758,10 +758,13 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
         @SubscribeEvent
         public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
             event.registerSpriteSet(ModParticles.WHITE_SPARK_PARTICLES.get(), WhiteSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GREY_SPARK_PARTICLES.get(), GreySparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.RED_SPARK_PARTICLES.get(), RedSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.DARK_RED_SPARK_PARTICLES.get(), DarkRedSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.ORANGE_SPARK_PARTICLES.get(), OrangeSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.BLUE_SPARK_PARTICLES.get(), BlueSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(), DarkBlueSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CYAN_SPARK_PARTICLES.get(), CyanSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GREEN_SPARK_PARTICLES.get(), GreenSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(), DarkGreenSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.PURPLE_SPARK_PARTICLES.get(), PurpleSparkParticles.Provider::new);
