@@ -16,6 +16,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> WHITE_SPARK_PARTICLES =
             PARTICLE_TYPES.register("white_spark_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> GREY_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("grey_spark_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> RED_SPARK_PARTICLES =
             PARTICLE_TYPES.register("red_spark_particles", () -> new SimpleParticleType(true));
 
@@ -27,6 +30,13 @@ public class ModParticles {
 
     public static final Supplier<SimpleParticleType> BLUE_SPARK_PARTICLES =
             PARTICLE_TYPES.register("blue_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> DARK_BLUE_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("dark_blue_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> CYAN_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("cyan_spark_particles", () -> new SimpleParticleType(true));
+
 
     public static final Supplier<SimpleParticleType> GREEN_SPARK_PARTICLES =
             PARTICLE_TYPES.register("green_spark_particles", () -> new SimpleParticleType(true));
