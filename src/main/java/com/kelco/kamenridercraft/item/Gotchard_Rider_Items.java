@@ -1303,7 +1303,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(Effect_core.BOOST,40,4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE,40,0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,2,true,false))
-					.ChangeModel("default_cape.geo.json","default_cape.animation.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					.ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_EM = ITEMS.register("gotchar_igniter_em",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed_mighty_fire","gotchard","gotchardriver_belt_fire",

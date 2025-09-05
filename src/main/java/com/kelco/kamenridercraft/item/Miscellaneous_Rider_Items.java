@@ -212,7 +212,7 @@ public class Miscellaneous_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kamui","chaos_driver_kamui_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-					.SetShowFace().IsGlowing().ChangeModel("kamui.geo.json").AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					.SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_AGATA = ITEMS.register("chaos_ring_agata",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","agata","chaos_driver_agata_belt",

@@ -405,7 +405,7 @@ public class Gavv_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
 				}
-			}.ChangeModel("gavv_shot_snack.geo.json","default_cape.animation.json").has_basic_model().AddToList(CORN,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
+			}.ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(CORN,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_caking","gavv","henshin_belt_gavv_belt_caking",

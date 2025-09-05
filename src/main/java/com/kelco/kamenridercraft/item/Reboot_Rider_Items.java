@@ -252,7 +252,7 @@ public class Reboot_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .ChangeModel("default_cape.geo.json","default_cape.animation.json").has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
