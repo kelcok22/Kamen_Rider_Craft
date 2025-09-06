@@ -617,7 +617,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
-					.AddNeedItemList(NEED_ITEM_Rainbow).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+                    .IsGlowing().AddNeedItemList(NEED_ITEM_Rainbow).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> NIJIGON_RIDE_CHEMY_CARD_SPECIAL = ITEMS.register("nijigon_ride_chemy_card_special",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.RARE), NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
