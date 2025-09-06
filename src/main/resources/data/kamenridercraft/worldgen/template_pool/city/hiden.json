@@ -1,0 +1,23 @@
+{
+
+	"name": "kamenridercraft:city/hiden",
+	
+	// The template pool to refer to if the entries in 'elements' fails to generate.
+  "fallback": "minecraft:empty",
+
+	// Here you can list as many nbt files or placed features to spawn.
+	// Do note that placed features needs a special element entry stuff.
+  "elements": [
+
+	  {
+		  "weight": 3,
+		  "element": {
+			  "location": "kamenridercraft:city/origin/hiden_intelligence",
+			  "processors": "minecraft:empty",
+			  "projection": "rigid",
+			  "element_type": "minecraft:single_pool_element"
+		  }
+	  }
+
+  ]
+}
