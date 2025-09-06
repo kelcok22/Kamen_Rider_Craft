@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:lango_mimic_key"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gavv/lango_mimicdeviser",
+      "kamenridercraft:gavv/lango_sword"
+	]
+  },
+  "sends_telemetry_event": false
+}

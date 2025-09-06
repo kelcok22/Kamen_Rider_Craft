@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:saber/mumeiken_kyomu"
+			"recipe": "kamenridercraft:saber/mumeiken_kyomu",
+          "text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)'s equipment"
 		}
 	]
 }

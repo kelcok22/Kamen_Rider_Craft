@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:exaid/ride_weapon"
+			"recipe": "kamenridercraft:exaid/ride_weapon",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)' equipment"
 		}
 	]
 }

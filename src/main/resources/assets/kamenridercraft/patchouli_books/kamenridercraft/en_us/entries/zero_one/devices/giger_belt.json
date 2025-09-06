@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zero_one/giger_belt"
+			"recipe": "kamenridercraft:zero_one/giger_belt",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/giger)Giger$(/l)'s equipment"
 		}
 	]
 }

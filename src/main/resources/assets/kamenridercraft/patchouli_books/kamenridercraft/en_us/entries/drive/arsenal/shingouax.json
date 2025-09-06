@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:drive/shingouax"
+			"recipe": "kamenridercraft:drive/shingouax",
+          "text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)'s equipment"
 		}
 	]
 }

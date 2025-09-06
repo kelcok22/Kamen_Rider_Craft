@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gavv/henshin_belt_bitter_gavv"
+			"recipe": "kamenridercraft:gavv/henshin_belt_bitter_gavv",
+          "text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)'s equipment$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)'s equipment (as Kamen Rider Bitter Gavv Bakibaki Stick Form)"
 		}
 	]
 }

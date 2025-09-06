@@ -49,7 +49,7 @@ public class Reboot_Rider_Items {
 						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> CONDORER_CORE_ALPHA_BLIND = ITEMS.register("condorer_core_alpha_blind",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_blind","amazon_alpha","amazons_driver_alpha_belt",
@@ -58,7 +58,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.BLINDNESS, 40, 0,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	
 	    public static final DeferredItem<Item> CONDORER_CORE_OMEGA = ITEMS.register("condorer_core_omega",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_omega","amazons_driver_omega_belt",
@@ -66,7 +66,7 @@ public class Reboot_Rider_Items {
 						,new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> CONDORER_CORE_SIGMA = ITEMS.register("condorer_core_sigma",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_sigma","amazons_driver_sigma_belt",
@@ -74,7 +74,7 @@ public class Reboot_Rider_Items {
 						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO = ITEMS.register("amazon_injector_neo",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_neo","neo_amazons_driver_neo_belt",
@@ -83,7 +83,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
 	            		,new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEW_OMEGA = ITEMS.register("amazon_injector_new_omega",
 	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_alpha","neo_amazons_driver_omega_belt",
@@ -92,7 +92,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.REGENERATION,200, 2,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO_ALPHA = ITEMS.register("amazon_injector_neo_alpha",
 	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_neo_alpha","neo_amazons_driver_neo_belt",
@@ -101,7 +101,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.REGENERATION,200, 2,true,false))
-	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    
 	    public static final DeferredItem<Item> AMAZONSHELMET = ITEMS.register("amazonshead",
@@ -231,23 +231,31 @@ public class Reboot_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .IsGlowing().has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2 = ITEMS.register("shin_typhoon_core2",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_nigo","shin_typhoon_belt2",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .IsGlowing().has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2_1 = ITEMS.register("shin_typhoon_core_2_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_2_1","shin_typhoon_belt2",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .IsGlowing().has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
+    public static final DeferredItem<Item> ULIMATE_HALF_TYPHOON_CORE = ITEMS.register("ulimate_half_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_no_0","ulimate_half_typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+                    .IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1))
 					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
@@ -272,7 +280,11 @@ public class Reboot_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_2_1", SHIN_TYPHOON_CORE_2_1,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
+    public static final DeferredItem<Item> ULIMATE_HALF_TYPHOON = ITEMS.register("ulimate_half_typhoon",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_no_0", ULIMATE_HALF_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
-	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
+
+    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 
 	}

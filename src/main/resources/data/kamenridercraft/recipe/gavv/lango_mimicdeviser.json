@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stomach",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_gochizo"
+	},
+	"M": {
+	  "item": "kamenridercraft:lango_mimic_key"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:lango_mimicdeviser"
+  }	
+}

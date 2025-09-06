@@ -51,7 +51,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("chaser.geo.json","chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get())
+					.ChangeModel("chaser.geo.json").ChangeAnimation("chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get())
 					.model_has_different_name("proto_speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED = ITEMS.register("proto_speedshift",
@@ -117,8 +117,7 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_formula","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.ChangeModel("drive_formula.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)).alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_CORE = ITEMS.register("tridoronshift_core",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).has_basic_model()

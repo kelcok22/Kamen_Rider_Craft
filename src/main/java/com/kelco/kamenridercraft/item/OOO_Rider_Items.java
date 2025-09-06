@@ -1039,7 +1039,7 @@ public class OOO_Rider_Items {
 					player.level().addFreshEntity(thunder);
 
 				}
-			}.ChangeModel("oooooo.geo.json","oooooo.animation.json").ChangeBeltModel("geo/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
+			}.ChangeBeltModel("geo/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
 
 	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","birth_driver_belt",

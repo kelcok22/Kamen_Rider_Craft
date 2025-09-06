@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gaim/kagematsu"
+			"recipe": "kamenridercraft:gaim/kagematsu",
+          "text": "Drops from:$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)' equipment"
 		}
 	]
 }

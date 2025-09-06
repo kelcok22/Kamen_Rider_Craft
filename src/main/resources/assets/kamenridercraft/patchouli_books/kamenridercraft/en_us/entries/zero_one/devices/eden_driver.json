@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zero_one/eden_driver"
+			"recipe": "kamenridercraft:zero_one/eden_driver",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/eden)Kamen Rider Eden$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

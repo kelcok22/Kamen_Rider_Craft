@@ -33,7 +33,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-			.AddToList(RiderTabs.RYUKI_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> DARKWING_ADVENT = ITEMS.register("darkwing_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","knight","v_buckle_belt_knight",

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:agent_blaster",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)' equipment"
 		}
 	]
 }

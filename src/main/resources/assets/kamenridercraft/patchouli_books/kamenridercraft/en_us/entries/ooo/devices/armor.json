@@ -6,11 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside an OOO Rider's transformation device to transform into that Rider"
+			"text": "Used alongside an OOO Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)'s equipment$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)'s equipment$(li)$(l:ooo/mobs/uva)Uva$(/l)'s equipment$(li)$(l:ooo/mobs/kazari)Kazari$(/l)'s equipment$(li)$(l:ooo/mobs/mezool)Mezool$(/l)'s equipment$(li)$(l:ooo/mobs/gamel)Gamel$(/l)'s equipment$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)'s equipment$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ooo/ooohead"
+			"recipe": "kamenridercraft:ooo/ooohead",
+          "text": "$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)'s equipment$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)'s equipment$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)'s equipment$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

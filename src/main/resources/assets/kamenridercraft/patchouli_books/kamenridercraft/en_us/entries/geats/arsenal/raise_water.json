@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:geats/raise_water"
+			"recipe": "kamenridercraft:geats/raise_water",
+          "text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)'s equipment$(li)$(l:geats/mobs/the_end_rider)The End Rider$(/l)'s equipment"
 		}
 	]
 }

@@ -214,8 +214,7 @@ public class Revice_Rider_Items {
 	public static final DeferredItem<Item> JACKAL_VISTAMP_VICE = ITEMS.register("jackal_vistamp_vice",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","vice","blank",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).addAlternative(JACKAL_VISTAMP_LIVE.get())
-				.ChangeModel("vice_jackal.geo.json").SetPalyerModelInvisible());
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).addAlternative(JACKAL_VISTAMP_LIVE.get()).SetPalyerModelInvisible());
 
 	public static final DeferredItem<Item> JACKAL_VISTAMP = ITEMS.register("jackal_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","revi","revice_driver_belt_j",
@@ -312,7 +311,6 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","vice","buddy_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-					.ChangeModel("vice_funkorogashi.geo.json","vice_funkorogashi.animation.json")
 					.SetPalyerModelInvisible().model_has_different_name("niwatori_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP = ITEMS.register("funkorogashi_vistamp",

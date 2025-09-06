@@ -9,11 +9,9 @@
       "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by $(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)"
     },
     {
-      "type": "patchouli:spotlight",
-      "link_recipe": true,
-      "item": "kamenridercraft:nyelv_bow",
-      "title": " ",
-      "text": "Item is currently unobtainable"
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gavv/nyelv_bow",
+      "text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)'s equipment"
     }
   ]
 }

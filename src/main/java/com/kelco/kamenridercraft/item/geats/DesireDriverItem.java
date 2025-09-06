@@ -369,7 +369,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 	public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
 		if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_cape.animation.json");
 
-		else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation());
+		else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation(this.Rider));
 
 	}
 	

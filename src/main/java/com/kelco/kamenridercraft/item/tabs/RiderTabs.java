@@ -864,6 +864,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.TATAKAE_KAMEN_RIDER_V3_MUSIC_DISC);
             event.accept(Modded_item_core.AMAZON_RIDER_KOKO_NI_ARI_MUSIC_DISC);
             event.accept(Modded_item_core.SET_UP_KAMEN_RIDER_X_MUSIC_DISC);
+            event.accept(Modded_item_core.KAMEN_RIDER_STRONGER_NO_UTA_MUSIC_DISC);
             event.accept(Modded_item_core.MOERO_KAMEN_RIDER_MUSIC_DISC);
             event.accept(Modded_item_core.DRAGON_ROAD_MUSIC_DISC);
             event.accept(Modded_item_core.KAMEN_RIDER_SUPER_1_MUSIC_DISC);
@@ -875,6 +876,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.JUSTIFAIZ_MUSIC_DISC);
             event.accept(Modded_item_core.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
             event.accept(Modded_item_core.REBIRTH_MUSIC_DISC);
+            event.accept(Modded_item_core.KAGAYAKI_MUSIC_DISC);
             event.accept(Modded_item_core.NEXT_LEVEL_MUSIC_DISC);
             event.accept(Modded_item_core.CLIMAX_JUMP_MUSIC_DISC);
             event.accept(Modded_item_core.BREAK_THE_CHAIN_MUSIC_DISC);
@@ -889,6 +891,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.EXCITE_KEY_MUSIC_DISC);
             event.accept(Modded_item_core.BE_THE_ONE_MUSIC_DISC);
             event.accept(Modded_item_core.OVER_QUARTZER_MUSIC_DISC);
+            event.accept(Modded_item_core.P_A_R_T_Y_UNIVERSE_FESTIVAL_MUSIC_DISC);
             event.accept(Modded_item_core.REAL_X_EYEZ_MUSIC_DISC);
             event.accept(Modded_item_core.ALMIGHTY_MUSIC_DISC);
             event.accept(Modded_item_core.LIVEDEVIL_MUSIC_DISC);
@@ -897,6 +900,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.CHEMY_X_STORY_MUSIC_DISC);
             event.accept(Modded_item_core.CHEMY_X_STORY_FLOW_MUSIC_DISC);
             event.accept(Modded_item_core.GOT_BOOST_MUSIC_DISC);
+            event.accept(Modded_item_core.VISIONS_MUSIC_DISC);
 
             event.accept(Modded_item_core.MASKED_RIDER_MUSIC_DISC);
         }

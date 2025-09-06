@@ -143,7 +143,7 @@
 			"type": "patchouli:crafting",
 			"anchor": "woz_boss_block",
 			"recipe": "kamenridercraft:zi_o/woz_boss_block",
-			"text": "Mine this block to summon $(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+			"text": "Mine this block to summon $(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

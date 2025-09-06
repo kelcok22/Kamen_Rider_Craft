@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii"
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii",
+          "text": "Drops from:$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)'s equipment"
 		}
 	]
 }

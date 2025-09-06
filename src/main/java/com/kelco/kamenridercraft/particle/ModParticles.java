@@ -16,6 +16,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> WHITE_SPARK_PARTICLES =
             PARTICLE_TYPES.register("white_spark_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> GREY_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("grey_spark_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> RED_SPARK_PARTICLES =
             PARTICLE_TYPES.register("red_spark_particles", () -> new SimpleParticleType(true));
 
@@ -27,6 +30,13 @@ public class ModParticles {
 
     public static final Supplier<SimpleParticleType> BLUE_SPARK_PARTICLES =
             PARTICLE_TYPES.register("blue_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> DARK_BLUE_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("dark_blue_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> CYAN_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("cyan_spark_particles", () -> new SimpleParticleType(true));
+
 
     public static final Supplier<SimpleParticleType> GREEN_SPARK_PARTICLES =
             PARTICLE_TYPES.register("green_spark_particles", () -> new SimpleParticleType(true));
@@ -66,6 +76,23 @@ public class ModParticles {
 
     public static final Supplier<SimpleParticleType> SNACK_PARTICLES =
             PARTICLE_TYPES.register("snack_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> CHOCO_PARTICLES =
+            PARTICLE_TYPES.register("choco_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> CANDY_PARTICLES =
+            PARTICLE_TYPES.register("candy_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> CANDY_PARTICLES2 =
+            PARTICLE_TYPES.register("candy_2_particles", () -> new SimpleParticleType(true));
+
+
+    public static final Supplier<SimpleParticleType> CANDY_PARTICLES3 =
+            PARTICLE_TYPES.register("candy_3_particles", () -> new SimpleParticleType(true));
+
+
+    public static final Supplier<SimpleParticleType> CANDY_PARTICLES4 =
+            PARTICLE_TYPES.register("candy_4_particles", () -> new SimpleParticleType(true));
 
 
 

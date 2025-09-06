@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:gavv/prototype_cup_gochizo"
+	  "kamenridercraft:gavv/prototype_cup_gochizo",
+      "kamenridercraft:gavv/granute_glass"
 	]
   },
   "sends_telemetry_event": false

@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zero_one/shot_abaddo_gun"
+			"recipe": "kamenridercraft:zero_one/shot_abaddo_gun",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/abaddon)Kamen Rider Abaddon$(/l)'s equipment$(li)$(l:zero_one/mobs/abaddon_commander)Kamen Rider Abaddon (Commander's Type)$(/l)'s equipment"
 		}
 	]
 }

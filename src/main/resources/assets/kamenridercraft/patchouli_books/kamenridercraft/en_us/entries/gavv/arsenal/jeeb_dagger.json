@@ -9,11 +9,9 @@
       "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by $(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)"
     },
     {
-      "type": "patchouli:spotlight",
-      "link_recipe": true,
-      "item": "kamenridercraft:jeeb_dagger",
-      "title": " ",
-      "text": "Item is currently unobtainable"
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gavv/jeeb_dagger",
+      "text": "Drops from:$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)'s equipment"
     }
   ]
 }

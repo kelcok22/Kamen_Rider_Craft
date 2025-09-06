@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:judgment_staff",
 			"title": " ",
-			"text": ""
+          "text": "Drops from:$(li)$(l:agito/mobs/anguis_masculus)Anguis Masculus$(/l)'s equipment"
 		}
 	]
 }
