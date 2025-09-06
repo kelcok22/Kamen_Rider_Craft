@@ -123,7 +123,7 @@ public class OOODriverItem extends RiderDriverItem {
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
 				case HEAD ->{ 
-					return false;
+					return true;
 				}
 				case CHEST -> {
 					return get_Form_Item(itemstack, 2).get_Is_Glowing();
