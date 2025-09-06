@@ -54,35 +54,36 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-            		new MobEffectInstance(MobEffects.WITHER, 40, 0,true,false)).AddNeedItemList(NEED_ITEM_DOGABAKI));
-    
+            		new MobEffectInstance(MobEffects.WITHER, 40, 0,true,false))
+                    .IsGlowing().AddNeedItemList(NEED_ITEM_DOGABAKI));
+
     public static final DeferredItem<Item> WAKE_UP_FUESTLE = ITEMS.register("wakeupfuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kiva","kivat_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).addShiftForm(DOGABAKI.get())
-            .AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> GARULU_FUESTLE = ITEMS.register("garulufuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_garulu","kiva","kivat_belt_g",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addShiftForm(DOGABAKI.get())
-            .AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> BASSHAA_FUESTLE = ITEMS.register("basshaafuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_basshaa","kiva","kivat_belt_b",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).addShiftForm(DOGABAKI.get())
-            .AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> DOGGA_FUESTLE = ITEMS.register("doggafuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dogga","kiva","kivat_belt_d",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)).addShiftForm(DOGABAKI.get())
-            .AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> DOGABAKI_EMPEROR = ITEMS.register("dogabaki_emperor",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dogabaki_emperor","kiva","kivat_belt_e",
@@ -93,7 +94,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.WITHER, 40, 1,true,false))
-            .addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
+                    .IsGlowing().addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
     
     public static final DeferredItem<Item> TATSULOT = ITEMS.register("tatsulot",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_emperor","kiva","kivat_belt_e",
@@ -103,7 +104,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-            .addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> KIVATTE_FUESTLE = ITEMS.register("kiva_says_fuestle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_red_emperor","kiva","kivat_belt_e",
@@ -113,7 +114,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-					.addNeedItem(TATSULOT.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().addNeedItem(TATSULOT.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> KNUCKLE_FUESTLE_BURST = ITEMS.register("knucklefuestle_burst",
@@ -121,7 +122,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing()
             );
 	
     public static final DeferredItem<Item> KNUCKLE_FUESTLE = ITEMS.register("knucklefuestle",
@@ -141,7 +142,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-            .AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_SAGA = ITEMS.register("sagafuestle",
@@ -150,7 +151,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-            .AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_DARK_KIVA = ITEMS.register("darkwakeupfuestle",
@@ -160,7 +161,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false))
-            .AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_NEW_KIVA = ITEMS.register("newwakeupfuestle",
@@ -168,7 +169,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("kiva").AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
@@ -198,7 +199,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-            .addAlternative(WAKE_UP_FUESTLE_ARC.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().addAlternative(WAKE_UP_FUESTLE_ARC.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_KIVALA = ITEMS.register("kivalafuestle",
@@ -206,7 +207,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-            .AddToList(RiderTabs.KIVA_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> KIVAHELMET = ITEMS.register("kivahead",

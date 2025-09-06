@@ -654,7 +654,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.MUTEKI, 40, 0,true,false))
-			.addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(GameCreator.BLANK_HYPER_GASHAT, 20));
+                    .IsGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(GameCreator.BLANK_HYPER_GASHAT, 20));
 
 	public static final DeferredItem<Item> GEMEDEUS_HYPER_MUTEKI_GASHAT = ITEMS.register("gamedeus_hyper_muteki_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","gamedeus_muteki","gamer_driver_gamedeus_hyper_muteki",

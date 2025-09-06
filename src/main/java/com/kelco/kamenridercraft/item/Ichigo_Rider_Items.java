@@ -614,8 +614,26 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToList(RiderTabs.SUPER1_TAB_ITEM));
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUPER1HELMET = ITEMS.register("super_1head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
@@ -639,7 +657,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zx","zx_belt_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToList(RiderTabs.ZX_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZXHELMET = ITEMS.register("zxhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
@@ -682,7 +700,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            } .AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BATTA_MAN_KING_STONE = ITEMS.register("batta_man_king_stone",
@@ -699,7 +717,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            } .AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  GREEN_KING_STONE = ITEMS.register("green_king_stone",
@@ -716,7 +734,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  CREATION_KING_STONE = ITEMS.register("creation_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_red","shadow_moon","shadow_charger_belt",
@@ -731,7 +749,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            } .AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_hajime_sorayama","shadow_moon","shadow_charger_belt",
@@ -747,7 +765,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BLACKHELMET = ITEMS.register("blackhead",
@@ -790,7 +808,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BIO_CORE = ITEMS.register("bio_core",
@@ -808,8 +826,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }
-                    .IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  ROBO_CORE = ITEMS.register("robo_core",
@@ -827,8 +844,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }
-                    .IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  MOON_RX_CORE = ITEMS.register("moon_rx_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","white_rx","moon_riser",
@@ -845,8 +861,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }
-                    .AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RXHELMET = ITEMS.register("rxhead",
@@ -858,8 +873,6 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item>  SUN_RISER = ITEMS.register("sun_riser",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_rx",RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties(){
-
-
             }).IsA1().AddToTabList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  MOON_RISER = ITEMS.register("moon_riser",
@@ -889,7 +902,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
+                    .IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
@@ -912,7 +925,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
+                    .IsGlowing().AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",
@@ -936,7 +949,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
-                    .model_has_different_name("j_stone").has_basic_model());
+                    .IsGlowing().model_has_different_name("j_stone").has_basic_model());
 
     public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",
@@ -944,7 +957,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
+                    .IsGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
