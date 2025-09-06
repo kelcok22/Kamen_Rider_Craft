@@ -976,8 +976,8 @@ public class Gaim_Rider_Items {
 	public static final DeferredItem<Item> PINE_IRON = ITEMS.register("pine_iron",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
-	public static final DeferredItem<Item> ICHIGO_KUNAI = ITEMS.register("ichigo_kunai",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+	public static final DeferredItem<SwordItem> ICHIGO_KUNAI = ITEMS.register("ichigo_kunai",
+			() -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DAIDAIMARU = ITEMS.register("daidaimaru",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
