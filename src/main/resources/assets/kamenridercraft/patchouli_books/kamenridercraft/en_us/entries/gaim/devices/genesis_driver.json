@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:gaim/genesis_driver_zangetsu_shin"
+			"recipe": "kamenridercraft:gaim/genesis_driver_zangetsu_shin",
+          "text": "Drops from:$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:gaim/genesis_driver_duke"
+			"recipe": "kamenridercraft:gaim/genesis_driver_duke",
+          "text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +36,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:gaim/genesis_driver_sigurd"
+			"recipe": "kamenridercraft:gaim/genesis_driver_sigurd",
+          "text": "Drops from:$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -45,7 +48,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:gaim/genesis_driver_marika"
+			"recipe": "kamenridercraft:gaim/genesis_driver_marika",
+          "text": "Drops from:$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

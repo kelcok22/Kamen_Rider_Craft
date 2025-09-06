@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:neotrooper_belt",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:kabuto/mobs/neotrooper)Neotroopers$(/l)' equipment"
 		}
 	]
 }

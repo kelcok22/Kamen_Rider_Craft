@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:build/smash",
-			"text": "Drops from:$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/stag_lost_smash)Kuwagata Lost Smash$(/l)$(li)$(l:build/mobs/owl_lost_smash)Fukuro Lost Smash$(/l)$(li)$(l:build/mobs/castle_lost_smash)Castle Lost Smash$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/stag_lost_smash)Kuwagata Lost Smash$(/l)$(li)$(l:build/mobs/owl_lost_smash)Fukuro Lost Smash$(/l)$(li)$(l:build/mobs/castle_lost_smash)Castle Lost Smash$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l)"
 		}
 	]
 }

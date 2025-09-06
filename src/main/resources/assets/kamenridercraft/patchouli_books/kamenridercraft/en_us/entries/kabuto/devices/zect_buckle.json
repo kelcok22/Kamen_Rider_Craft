@@ -70,7 +70,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:kabuto/caucasus_rider_belt"
+			"recipe": "kamenridercraft:kabuto/caucasus_rider_belt",
+          "text": "Drops from:$(li)$(l:kabuto/mobs/caucasus)Kamen Rider Caucasus$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nebulasteam_gun",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)'s equipment$(li)$(l:build/mobs/kaiser)Kaiser$(/l)'s equipment$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)'s equipment$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)'s equipment"
 		}
 	]
 }

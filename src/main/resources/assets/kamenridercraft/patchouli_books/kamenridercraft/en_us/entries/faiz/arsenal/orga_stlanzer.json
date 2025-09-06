@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:faiz/orga_stlanzer"
+			"recipe": "kamenridercraft:faiz/orga_stlanzer",
+          "text": "Drops from:$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l)'s equipment"
 		}
 	]
 }

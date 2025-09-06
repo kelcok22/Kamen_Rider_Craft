@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zi_o/ginga_driver"
+			"recipe": "kamenridercraft:zi_o/ginga_driver",
+          "text": "Drops from:$(li)$(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)'s equipment"
 		}
 	]
 }

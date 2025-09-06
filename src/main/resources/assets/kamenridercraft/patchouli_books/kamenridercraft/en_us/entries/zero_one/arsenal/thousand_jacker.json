@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zero_one/thousand_jacker"
+			"recipe": "kamenridercraft:zero_one/thousand_jacker",
+          "text": "Drops from:$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)'s equipment"
 		}
 	]
 }

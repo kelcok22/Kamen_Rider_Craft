@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:el_of_the_water_staff",
 			"title": " ",
-			"text": ""
+          "text": "Drops from:$(li)$(l:agito/mobs/el_of_the_water)El of the Water$(/l)'s equipment"
 		}
 	]
 }

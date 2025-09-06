@@ -41,7 +41,7 @@
 				"kamenridercraft:seiken_swordriver_espada"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:arabiana_night_wonder_ride_book\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:arabiana_night_wonder_ride_book\"}"
               }
 			}
 		  }

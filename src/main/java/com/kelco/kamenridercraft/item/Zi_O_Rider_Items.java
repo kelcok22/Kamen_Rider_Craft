@@ -84,7 +84,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon("kamenridercraft:rabbittank_sparkling_full_bottle", "kamenridercraft:drill_crusher_crusher", "kamenridercraft:ride_heisaber")
 					.addAltWeapon("kamenridercraft:zi_o_ii_ridewatch", "kamenridercraft:saikyo_girade")
 					.addAltWeapon("kamenridercraft:zi_o_trinity_ridewatch", "kamenridercraft:zikan_zax", "kamenridercraft:zikan_despear")
-					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_decade","zi_o","ziku_driver_zi_o_belt_decade",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside an Ichigo Rider's transformation device to transform into that Rider"
+			"text": "Used alongside an Ichigo Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

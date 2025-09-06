@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:axel_ray_gun",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)' equipment"
 		}
 	]
 }

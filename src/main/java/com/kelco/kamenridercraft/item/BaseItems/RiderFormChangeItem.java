@@ -148,8 +148,10 @@ public class RiderFormChangeItem extends BaseItem {
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? getRiderName(riderName)+FORM_NAME+".geo.json" : (get_Has_Static_Wings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
-    public String get_Animation() {
-        return (UPDATED_MODEL_ANIMATION!=null ? "animations/"+UPDATED_MODEL_ANIMATION : "animations/ichigo.animation.json");
+    public String get_Animation(String riderName) {
+        if (UPDATED_MODEL_ANIMATION!=null) return "animations/"+UPDATED_MODEL_ANIMATION;
+        ResourceLocation FORM_ANIM = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/"+getRiderName(riderName)+FORM_NAME+".animation.json");
+        return (GeckoLibCache.getBakedAnimations().get(FORM_ANIM)!=null ? "animations/"+getRiderName(riderName)+FORM_NAME+".animation.json" : "animations/ichigo.animation.json");
     }
 
     public Boolean get_Show_Face() {
@@ -220,20 +222,16 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem ChangeRiderName(String name) {
+        OVERRIDE_RIDER_NAME=name;
+        return this;
+    }
+
     public RiderFormChangeItem ChangeModel(String model) {
         UPDATED_MODEL=model;
         return this;
     }
 
-    public RiderFormChangeItem ChangeRiderName(String name) {
-        OVERRIDE_RIDER_NAME=name;
-        return this;
-    }
-    public RiderFormChangeItem ChangeModel(String model,String animation) {
-        UPDATED_MODEL=model;
-        UPDATED_MODEL_ANIMATION=animation;
-        return this;
-    }
     public RiderFormChangeItem ChangeAnimation(String animation) {
         UPDATED_MODEL_ANIMATION=animation;
         return this;

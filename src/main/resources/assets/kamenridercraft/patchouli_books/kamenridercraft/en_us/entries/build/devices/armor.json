@@ -6,11 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Build Rider's transformation device to transform into that Rider"
+			"text": "Used alongside a Build Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:build/mobs/blood_stalk)Blood Stalk$(/l)'s equipment$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)'s equipment$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)'s equipment$(li)$(l:build/mobs/build)Kamen Rider Build (Katsuragi Shinobu)$(/l)'s equipment$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)'s equipment$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:build/buildhead"
+			"recipe": "kamenridercraft:build/buildhead",
+          "text": "$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)'s equipment$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)'s equipment$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)'s equipment$(li)$(l:build/mobs/kaiser)Kaiser$(/l)'s equipment$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l)'s equipment$(li)$(l:build/mobs/bikaiser)Bikaiser$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

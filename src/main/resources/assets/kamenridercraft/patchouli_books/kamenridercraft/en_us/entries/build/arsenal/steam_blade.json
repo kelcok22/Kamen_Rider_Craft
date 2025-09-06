@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:build/steam_blade"
+			"recipe": "kamenridercraft:build/steam_blade",
+          "text": "Drops from:$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)'s equipment$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)'s equipment$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)'s equipment"
 		}
 	]
 }

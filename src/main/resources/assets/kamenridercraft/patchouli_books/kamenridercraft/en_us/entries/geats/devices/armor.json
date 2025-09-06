@@ -6,11 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Geats Rider's transformation device to transform into that Rider"
+			"text": "Used alongside a Geats Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)'s equipment$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)'s equipment$(li)$(l:geats/mobs/glare)Kamen Rider Glare$(/l)'s equipment$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)'s equipment$(li)$(l:geats/mobs/glare2)Kamen Rider Glare2$(/l)'s equipment$(li)$(l:geats/mobs/the_end_rider)The End Rider$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:geats/geatshead"
+			"recipe": "kamenridercraft:geats/geatshead",
+          "text": "$(li)$(l:geats/mobs/premium_kekera)Premium Kekera$(/l)'s equipment$(li)$(l:geats/mobs/premium_beroba)Premium Beroba$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

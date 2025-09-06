@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:faiz/muez_edge"
+			"recipe": "kamenridercraft:faiz/muez_edge",
+          "text": "Drops from:$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l)'s equipment"
 		}
 	]
 }

@@ -6,11 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Zero-One Rider's transformation device to transform into that Rider"
+			"text": "Used alongside a Zero-One Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:zero_one/mobs/battle_raider)Battle Raider$(/l)'s equipment$(li)$(l:zero_one/mobs/abaddon)Kamen Rider Abaddon$(/l)'s equipment$(li)$(l:zero_one/mobs/magia)Magia$(/l)'s equipment$(li)$(l:zero_one/mobs/giger)Giger$(/l)'s equipment$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)'s equipment$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)'s equipment$(li)$(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)'s equipment$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zero_one/zero_onehead"
+			"recipe": "kamenridercraft:zero_one/zero_onehead",
+          "text": "$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)'s equipment$(li)$(l:zero_one/mobs/raider)Raider$(/l)'s equipment$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)'s equipment$(li)$(l:zero_one/mobs/abaddon_commander)Kamen Rider Abaddon (Commander's Type)$(/l)'s equipment$(li)$(l:zero_one/mobs/eden)Kamen Rider Eden$(/l)'s equipment$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

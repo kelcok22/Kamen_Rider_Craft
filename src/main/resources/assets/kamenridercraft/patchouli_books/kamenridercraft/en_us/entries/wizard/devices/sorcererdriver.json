@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:wizard/sorcererdriver"
+			"recipe": "kamenridercraft:wizard/sorcererdriver",
+          "text": "Drops from:$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)'s equipment"
 		}
 	]
 }

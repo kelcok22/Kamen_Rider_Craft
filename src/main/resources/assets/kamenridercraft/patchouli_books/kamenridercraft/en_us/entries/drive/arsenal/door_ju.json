@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:drive/door_ju"
+			"recipe": "kamenridercraft:drive/door_ju",
+          "text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)'s equipment"
 		}
 	]
 }

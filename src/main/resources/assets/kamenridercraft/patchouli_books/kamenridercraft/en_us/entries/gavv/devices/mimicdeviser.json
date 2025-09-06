@@ -9,13 +9,11 @@
 			"anchor": "jeeb_mimicdeviser",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/jeeb_stomach)Jeeb Stomach"
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:jeeb_mimicdeviser",
-			"title": " ",
-			"text": "Item is currently unobtainable"
-		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/jeeb_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)'s equipment"
+      },
       {
         "type": "patchouli:text",
         "anchor": "shiita_mimicdeviser",
@@ -23,11 +21,9 @@
         "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/shiita_stomach)Shiita Stomach"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:shiita_mimicdeviser",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/shiita_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/shiita_stomach)Shiita Stomach$(/l)'s equipment"
       },
       {
         "type": "patchouli:text",
@@ -36,11 +32,9 @@
         "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/nyelv_stomach)Nyelv Stomach"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:nyelv_mimicdeviser",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/nyelv_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)'s equipment"
       },
 		{
 			"type": "patchouli:text",
@@ -48,13 +42,11 @@
 			"title": "Mimicdeviser",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/glotta_stomach)Glotta Stomach"
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:glotta_mimicdeviser",
-			"title": " ",
-			"text": "Item is currently unobtainable"
-		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/glotta_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)'s equipment"
+      },
       {
         "type": "patchouli:text",
         "anchor": "lango_mimicdeviser",
@@ -62,11 +54,9 @@
         "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/lango_stomach)Lango Stomach"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:lango_mimicdeviser",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/lango_mimicdeviser",
+          "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)'s equipment"
       }
-	]
+    ]
 }
