@@ -29,32 +29,38 @@ public class Den_O_Rider_Items {
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEW_DEN_O = ITEMS.register("rider_ticket_new_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","new_den_o","new_den_o_belt_p",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
+                    .IsBeltGlowing());
 
 	public static final DeferredItem<Item> RIDER_TICKET = ITEMS.register("rider_ticket",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","den_o","den_o_belt_p",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).addAlternative(RIDER_TICKET_NEW_DEN_O.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
+                    .IsBeltGlowing().addAlternative(RIDER_TICKET_NEW_DEN_O.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_SWORD = ITEMS.register("rider_ticket_sword",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","den_o","den_o_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_ROD = ITEMS.register("rider_ticket_rod",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rod","den_o","den_o_belt_r",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_AX = ITEMS.register("rider_ticket_ax",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axe","den_o","den_o_belt_a",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+                    .IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_GUN = ITEMS.register("rider_ticket_gun",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gun","den_o","den_o_belt_g",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KTAROS = ITEMS.register("ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_climax","den_o","den_o_belt_c",
@@ -62,7 +68,8 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_KTAROS = ITEMS.register("super_ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_climax","den_o","den_o_belt_c",
@@ -71,14 +78,16 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).addNeedItem(KTAROS.get()).hasStaticWings());
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
+                    .IsGlowing().IsBeltGlowing().addNeedItem(KTAROS.get()).hasStaticWings());
 
 	public static final DeferredItem<Item> RIDER_TICKET_WING = ITEMS.register("rider_ticket_wing",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_wing","den_o","den_o_belt_w",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)).addShiftForm(SUPER_KTAROS.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
+                    .IsGlowing().IsBeltGlowing().addShiftForm(SUPER_KTAROS.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_LINER_FORM = ITEMS.register("den_o_liner_form",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_liner","den_o","den_o_belt_c",
@@ -87,32 +96,37 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).addNeedItem(KTAROS.get()));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
+                    .IsGlowing().IsBeltGlowing().addNeedItem(KTAROS.get()));
 
     public static final DeferredItem<Item> ZERONOS_PLAT_CARD = ITEMS.register("zeronos_plat_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","zeronos","zeronos_belt_p",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
+                    .AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ALTAIR_CARD = ITEMS.register("zeronos_altair_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zeronos","zeronos_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+                    .IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEW_DEN_O_VEGA_CARD = ITEMS.register("new_den_o_vega_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_vega","new_den_o","new_den_o_belt_v",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)));
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+                    .IsBeltGlowing());
 
 	public static final DeferredItem<Item> ZERONOS_VEGA_CARD = ITEMS.register("zeronos_vega_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_vega","zeronos","zeronos_belt_v",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).addAlternative(NEW_DEN_O_VEGA_CARD.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+                    .IsGlowing().addAlternative(NEW_DEN_O_VEGA_CARD.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ZERO_CARD = ITEMS.register("zeronos_zero_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_zero","zeronos","zeronos_belt_z",
@@ -121,14 +135,16 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
+                    .IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_NEGA = ITEMS.register("rider_ticket_nega",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","nega_den_o","den_o_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_YUUKI_HIJACK = ITEMS.register("rider_ticket_yuuki_hijack",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hijack","yuuki","yuuki_belt",
@@ -136,7 +152,8 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)));
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+                    .IsBeltGlowing().IsGlowing());
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI = ITEMS.register("rider_ticket_yuuki",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_skull","yuuki","yuuki_belt",
@@ -144,7 +161,8 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+                    .IsBeltGlowing().IsGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_G = ITEMS.register("rider_ticket_g",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","g_den_o","g_den_o_belt",
@@ -152,7 +170,8 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_GAOH = ITEMS.register("rider_ticket_gaoh",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gaoh","gaoh_belt",
@@ -160,7 +179,8 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_STRIKE = ITEMS.register("rider_ticket_strike",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","new_den_o","new_den_o_belt",
@@ -168,17 +188,20 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_PRETTY_DEN_O = ITEMS.register("rider_ticket_pretty_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","pretty_den_o","den_o_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .IsBeltGlowing().IsGlowing());
 
     public static final DeferredItem<Item> RIDER_TICKET_PUDDING = ITEMS.register("rider_ticket_pudding",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_pudding","den_o","den_o_belt_pu",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_SHIN_O = ITEMS.register("rider_ticket_shin_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_o","shin_o_belt",
@@ -186,7 +209,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.SMALL, 40, 4,true,false))
-					.ChangeBeltModel("geo/lv_1_belt.geo.json"));
+                    .ChangeBeltModel("geo/lv_1_belt.geo.json"));
 
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
