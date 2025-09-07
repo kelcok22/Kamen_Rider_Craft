@@ -153,7 +153,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-                    .IsBeltGlowing().IsGlowing());
+                    .IsBeltGlowing());
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI = ITEMS.register("rider_ticket_yuuki",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_skull","yuuki","yuuki_belt",
@@ -162,7 +162,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-                    .IsBeltGlowing().IsGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+                    .IsBeltGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_G = ITEMS.register("rider_ticket_g",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","g_den_o","g_den_o_belt",
@@ -180,7 +180,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
+                    .IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_TICKET_STRIKE = ITEMS.register("rider_ticket_strike",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","new_den_o","new_den_o_belt",
