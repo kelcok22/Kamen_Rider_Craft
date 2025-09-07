@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Redyue's Ruins",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/blocks/boss_blocks#redyue_boss_block)Redyue Boss Block$(/l)$(br2)Suspicious gravel drops:$(li)1 $(l:gaim/arsenal/gaim_horse_armor)Gaim Horse Armor$(/l) (14.3%)$(li)1 $(l:gaim/items/lockseeds#kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (14.3%)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/blocks/boss_blocks#redyue_boss_block)Redyue Boss Block$(/l)$(br2)Includes 3 $(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l) spawners"
 		},
 		{
 			"type": "patchouli:image",
@@ -16,7 +16,11 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/redyue_helheim_city.png"
 			],
 			"title": " ",
-			"text": "$(li)1 $(l:misc/items/foods#helheim_fruit)Helheim Fruit$(/l) (28.6%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (28.6%)$(li)1 $(l:misc/items/music_discs#just_live_more_music_disc)JUST LIVE MORE Music Disc$(/l) (14.3%)"
-		}
+          "text": "Suspicious gravel drops on next page"
+        },
+      {
+        "type": "patchouli:text",
+        "text": "Suspicious gravel drops:$(li)1 $(l:gaim/arsenal/gaim_horse_armor)Gaim Horse Armor$(/l) (14.3%)$(li)1 $(l:gaim/items/lockseeds#kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (14.3%)$(li)1 $(l:misc/items/foods#helheim_fruit)Helheim Fruit$(/l) (28.6%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (28.6%)$(li)1 $(l:misc/items/music_discs#just_live_more_music_disc)JUST LIVE MORE Music Disc$(/l) (14.3%)"
+      }
 	]
 }

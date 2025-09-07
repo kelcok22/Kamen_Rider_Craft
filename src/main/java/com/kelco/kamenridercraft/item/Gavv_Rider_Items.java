@@ -441,7 +441,7 @@ public class Gavv_Rider_Items {
                 }
             }.IsGlowing().AddToList(ICE_CREAM,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
-	public static final DeferredItem<Item> GOCHIPOD_MASTER = ITEMS.register("gochipod_master", /// TODO: Effects not copy-pasted from Over
+	public static final DeferredItem<Item> GOCHIPOD_MASTER = ITEMS.register("gochipod_master",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_master","gavv","henshin_belt_gavv_belt_master",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false),

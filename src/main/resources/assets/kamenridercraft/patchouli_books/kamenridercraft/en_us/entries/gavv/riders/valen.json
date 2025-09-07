@@ -63,17 +63,73 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "frappe",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:frappeis_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Frappe Custom",
-			"text": ""
+			"text": "Accessed with the $(l:gavv/items/gochizo#frappeis_gochizo)Frappeis Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Valen",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Speed III$(li)Blizzard$(li)Resistance III$(li)Strength III"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "frappe_punchingummy",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:punchingummy_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Frappe Custom w/ Shuwa Punching",
+        "text": "Accessed with the $(l:gavv/items/gochizo#punchingummy_gochizo)Punchingummy Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Valen",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Strength III (with weapon)$(li)Speed III$(li)Blizzard$(li)Resistance III$(li)Jump Boost II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "frappe_kickingummy",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:kickingummy_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Frappe Custom w/ Range Kicking",
+        "text": "Accessed with the $(l:gavv/items/gochizo#kickingummy_gochizo)Kickingummy Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Valen",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Strength VII (with empty hand)$(li)Strength III (with weapon)$(li)Speed III$(li)Blizzard$(li)Resistance III$(li)Strength III$(li)Jump Boost II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "frappe_kickingummy_punchingummy",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:kickingummy_punchingummy_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Frappe Custom w/ Range Kicking and Shuwa Punching",
+        "text": "Accessed by shift-clicking the $(l:gavv/items/gochizo#kickingummy_gochizo)Kickingummy$(/l) or $(l:gavv/items/gochizo#punchingummy_gochizo)Punchingummy Gochizo$(/l) with the other Gochizo in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Valen",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Strength III (with weapon)$(li)Speed III$(li)Blizzard$(li)Resistance III$(li)Jump Boost II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "frappe_gurucan",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:gurucan_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Frappe Custom w/ Gurucan Legs",
+        "text": "Accessed with the $(l:gavv/items/gochizo#gurucan_gochizo)Gurucan Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Valen",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Gravity$(li)Speed III$(li)Blizzard$(li)Slowness II$(li)Resistance III$(li)Strength III"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "tirol",

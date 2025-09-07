@@ -34,14 +34,14 @@ public class Hibiki_Rider_Items {
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","hibiki","hibikidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KURENAI = ITEMS.register("henshin_onsa_kurenai",
         () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_kurenai","hibiki","hibikidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_armed","hibiki","hibikidriver_belt",
@@ -49,12 +49,12 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)));
+                new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)).IsGlowing());
 
         public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","danki","dankidriver_belt",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_EIKI = ITEMS.register("henshin_onsa_eiki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","eiki","eikidriver_belt",
@@ -66,13 +66,13 @@ public class Hibiki_Rider_Items {
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","gouki","goukidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KYOKI = ITEMS.register("henshin_onsa_kyoki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","kyoki","kyosukedriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KABUKI = ITEMS.register("henshin_onsa_kabuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","kabuki","kabukidriver_belt",
@@ -81,7 +81,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_TOUKI = ITEMS.register("henshin_onsa_touki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","touki_m","toukidriver_belt",
@@ -89,7 +89,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_HABATAKI = ITEMS.register("henshin_onsa_habataki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","habataki","habatakidriver_belt",
@@ -98,7 +98,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KIRAMEKI = ITEMS.register("henshin_onsa_kirameki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","kirameki","kiramekidriver_belt",
@@ -106,7 +106,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_NISHIKI = ITEMS.register("henshin_onsa_nishiki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","nishiki","nishikidriver_belt",
@@ -115,34 +115,34 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_IBUKI = ITEMS.register("henshin_onibue_ibuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","ibuki","ibukidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_TOKI = ITEMS.register("henshin_onibue_toki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","touki","tokidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_SHOUKI = ITEMS.register("henshin_onibue_shouki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","shouki","shoukidriver_belt",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_AMAKI = ITEMS.register("henshin_onibue_amaki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","amaki","amakidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_FUBUKI = ITEMS.register("henshin_onibue_fubuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","fubuki","fubukidriver_belt",
@@ -151,19 +151,19 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
         
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_TODOROKI = ITEMS.register("henshin_kigen_todoroki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","todoroki","todorokidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_ZANKI = ITEMS.register("henshin_kigen_zanki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","zanki","zankidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_SHUKI = ITEMS.register("henshin_kigen_shuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","shuki","shukidriver_belt",
@@ -171,7 +171,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_BANKI = ITEMS.register("henshin_kigen_banki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","banki","bankidriver_belt",
@@ -180,13 +180,13 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_SABAKI = ITEMS.register("henshin_kigen_sabaki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","sabaki","sabakidriver_belt",
                 new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
         
         public static final DeferredItem<Item> HIBIKIHELMET = ITEMS.register("hibikihead",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM));

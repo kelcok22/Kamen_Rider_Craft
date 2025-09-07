@@ -168,21 +168,15 @@ public class GamerDriverItem extends RiderDriverItem {
 
 		if (currentSlot== EquipmentSlot.FEET) {
 			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-		}
-		if (isTransformed(livingEntity)){
+		} else if (isTransformed(livingEntity)){
 			switch (currentSlot) {
-				case HEAD ->{ 
-					return get_Form_Item(itemstack, 1).get_Is_Glowing();
-				}
 				case CHEST -> {
 					return get_Form_Item(itemstack, 2).get_Is_Glowing();
 				}
-				case LEGS -> {
-					return get_Form_Item(itemstack, 1).get_Is_Glowing();
-				}
-				default -> {}
+				default -> {
+                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
+                }
 			}
-			return false;
 		}
 		return false;
 	}

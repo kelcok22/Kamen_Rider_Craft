@@ -339,25 +339,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-        if (currentSlot== EquipmentSlot.FEET) {
-            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        }
-        if (isTransformed(livingEntity)){
-            switch (currentSlot) {
-                case HEAD ->{
-                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                }
-                case CHEST -> {
-                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                }
-                case LEGS -> {
-                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                }
-                default -> {}
-            }
-            return false;
-        }
+        if (currentSlot== EquipmentSlot.FEET) return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        else if (isTransformed(livingEntity)) return get_Form_Item(itemstack, 1).get_Is_Glowing();
         return false;
     }
     public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
