@@ -688,7 +688,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<LadderBlock> RABBIT_HUTCH_LADDER = registerBlock("rabbit_hutch_ladder",
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
-
+	public static final DeferredBlock<Block> MEGAHEX_LIGHT = registerBlock("megahex_light",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> STONE_FLOORING = registerBlock("stone_flooring",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
