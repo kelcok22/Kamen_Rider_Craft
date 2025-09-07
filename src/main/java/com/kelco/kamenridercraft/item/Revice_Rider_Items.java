@@ -42,12 +42,14 @@ public class Revice_Rider_Items {
 	public static final DeferredItem<Item> REX_VISTAMP_VICE = ITEMS.register("rex_vistamp_vice",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","vice","buddy_buckle_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)));
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+                    .IsGlowing());
 
 	public static final DeferredItem<Item> REX_VISTAMP = ITEMS.register("rex_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","revi","revice_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).addAlternative(REX_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 12).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+                    .IsGlowing().addAlternative(REX_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 12).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_BARID_REX_VISTAMP = ITEMS.register("barid_rex_vistamp_closed",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));

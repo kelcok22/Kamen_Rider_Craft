@@ -338,9 +338,29 @@ public class DesireDriverItem  extends RiderDriverItem {
 	}
 
 
-	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-		return false;
-	}
+    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+        if (currentSlot== EquipmentSlot.FEET) {
+            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        }
+        if (isTransformed(livingEntity)){
+            switch (currentSlot) {
+                case HEAD ->{
+
+                    return isGoldenFever(itemstack,Rider);
+                }
+                case CHEST -> {
+                    return (get_Form_Item(itemstack, 2)!=Geats_Rider_Items.OUJA_V_BUCKLE_RAISE_BUCKLE.asItem());
+                }
+                case LEGS -> {
+                    return false;
+                }
+                default -> {}
+            }
+            return false;
+        }
+        return false;
+    }
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		int num = 1;
@@ -355,15 +375,12 @@ public class DesireDriverItem  extends RiderDriverItem {
 			 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_geats_rider_plusbelt.geo.json");
 			 else return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_"+get_Form_Item(itemstack, num).get_Model("geats_rider"));
 
-			 }else 
-				 
+			 }else
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_wings_armor.geo.json");
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_cape.geo.json");
 				
 				 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats.geo.json");
 				 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
-				
-
 	}
 
 	public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
