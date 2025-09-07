@@ -65,7 +65,7 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+                    .IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_WILD = ITEMS.register("wildshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wild","drive","drivedriver_belt",

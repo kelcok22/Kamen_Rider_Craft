@@ -221,7 +221,7 @@ public class Zero_One_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","raider_buffalo","raid_riser_belt_buffalo",
             		new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-            .addAlternative(CRUSHING_BUFFALO_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+            .addAlternative(CRUSHING_BUFFALO_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> EXCITING_STAG_PROGRISEKEY = ITEMS.register("exciting_stag_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_stag","zero_one","hiden_zero_one_driver_belt",
@@ -251,7 +251,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-                    .IsGlowing().addAlternative(STORMING_PENGUIN_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .addAlternative(STORMING_PENGUIN_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> HOPPING_KANGAROO_PROGRISEKEY = ITEMS.register("hopping_kangaroo_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo","zero_one","hiden_zero_one_driver_belt",
@@ -272,7 +272,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().addAlternative(SPLASHING_WHALE_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .addAlternative(SPLASHING_WHALE_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE = ITEMS.register("dynamaiting_lion_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_lion","zero_one","hiden_zero_one_driver_belt",
@@ -285,7 +285,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-                    .IsGlowing().addAlternative(DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .addAlternative(DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE = ITEMS.register("scouting_panda_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_panda","zero_one","hiden_zero_one_driver_belt",
@@ -296,18 +296,18 @@ public class Zero_One_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","raider_panda","raid_riser_belt_panda",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsGlowing().addAlternative(SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                   .addAlternative(SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE = ITEMS.register("invading_horseshoe_crab_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_horseshoe_crab","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
-            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)));
+            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).IsGlowing());
 	
 	public static final DeferredItem<Item> INVADING_HORSESHOE_CRAB_PROGRISEKEY = ITEMS.register("invading_horseshoe_crab_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","raider_horseshoe_crab","raid_riser_belt_battle",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().addAlternative(INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .addAlternative(INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOOTING_WOLF_PROGRISEKEY_ZERO_ONE = ITEMS.register("shooting_wolf_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_wolf","zero_one","hiden_zero_one_driver_belt",
@@ -398,7 +398,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-                    .IsGlowing().addAlternative(FIGHTING_JACKAL_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .addAlternative(FIGHTING_JACKAL_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> SERVAL_TIGER_ZETSUMERISEKEY = ITEMS.register("serval_tiger_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_serval","valkyrie","aims_shot_riser_belt",
@@ -529,8 +529,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-            		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-                    .IsGlowing());
+            		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)));
 	
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY_G = ITEMS.register("crowding_hopper_progrisekey_g",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","abaddon_g","shot_abaddo_riser_belt",
@@ -606,61 +605,58 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> BEROTHA_ZETSUMERISEKEY = ITEMS.register("berotha_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","berotha_magia","zetsume_riser_belt_berotha",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> KUEHNE_ZETSUMERISEKEY = ITEMS.register("kuehne_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kuehne_magia","zetsume_riser_belt_kuehne",
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> EKAL_ZETSUMERISEKEY = ITEMS.register("ekal_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ekal_magia","zetsume_riser_belt_ekal",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> NEOHI_ZETSUMERISEKEY = ITEMS.register("neohi_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","neohi_magia","zetsume_riser_belt_neohi",
             		new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> ONYCHO_ZETSUMERISEKEY = ITEMS.register("onycho_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","onycho_magia","zetsume_riser_belt_onycho",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> VICARYA_ZETSUMERISEKEY = ITEMS.register("vicarya_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","vicarya_magia","zetsume_riser_belt_vicarya",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> GAERU_ZETSUMERISEKEY = ITEMS.register("gaeru_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gaeru_magia","zetsume_riser_belt_gaeru",
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> MAMMOTH_ZETSUMERISEKEY = ITEMS.register("mammoth_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","mammoth_magia","zetsume_riser_belt_mammoth",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> DODO_ZETSUMERISEKEY_MAGIA = ITEMS.register("dodo_zetsumerisekey_magia",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dodo_magia","zetsume_riser_belt_dodo",
-            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)	)
-                    .IsGlowing());
+            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)	));
 
 	public static final DeferredItem<Item> DODO_CUSTOM_ZETSUMERISEKEY = ITEMS.register("dodo_custom_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dodo_magia_custom","zetsume_riser_belt_dodo",
-            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)	)
-                    .IsGlowing());
+            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)	));
 
 	public static final DeferredItem<Item> DODO_CUSTOM_TWO_ZETSUMERISEKEY = ITEMS.register("dodo_custom_two_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dodo_magia_custom_two","zetsume_riser_belt_dodo",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
-            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing());
+            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)));
 
 	public static final DeferredItem<Item> DODO_ZETSUMERISEKEY = ITEMS.register("dodo_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ikazuchi","metsuboujinrai_force_riser_belt_ikazuchi",
@@ -674,7 +670,7 @@ public class Zero_One_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","arsino_magia","zetsume_riser_belt_arsino",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+                    .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> UNKNOWN_ZETSUMERISEKEY = ITEMS.register("unknown_zetsumerisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));

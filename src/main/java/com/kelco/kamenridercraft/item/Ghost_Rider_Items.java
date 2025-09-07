@@ -32,7 +32,7 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeModel("damashii.geo.json").ChangeSlot(2));
+                    .ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> ORE_GHOST_EYECON = ITEMS.register("ore_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ghost","ghostdriver_belt",

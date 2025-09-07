@@ -90,6 +90,25 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		}
 	}
 
+    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+        if (currentSlot== EquipmentSlot.FEET) {
+            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        }
+        if (isTransformed(livingEntity)){
+            switch (currentSlot) {
+                case HEAD ->{
+                    return true;
+                }
+                case CHEST, LEGS -> {
+                    return false;
+                }
+                default -> {}
+            }
+            return false;
+        }
+        return false;
+    }
 
 	public String Get_Wisp_Horn(RiderFormChangeItem item,ItemStack itemstack)
 	{

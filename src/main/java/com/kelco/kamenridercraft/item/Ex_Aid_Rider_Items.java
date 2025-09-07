@@ -44,53 +44,53 @@ public class Ex_Aid_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","ex_aid","gamer_driver_mighty_action_x_lv_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json")
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> MIGHTY_ACTION_X_GASHAT = ITEMS.register("mighty_action_x_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).addSwitchForm(MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS).AddToList(GameCreator.BLANK_GASHAT, 20));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS).AddToList(GameCreator.BLANK_GASHAT, 20));
 
 	public static final DeferredItem<Item> TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("taddle_quest_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","brave","gamer_driver_taddle_quest_lv_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)).ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json")
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> TADDLE_QUEST_X_GASHAT = ITEMS.register("taddle_quest_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brave","gamer_driver_taddle_quest",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)).addSwitchForm(TADDLE_QUEST_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS).AddToList(GameCreator.BLANK_GASHAT, 15));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS).AddToList(GameCreator.BLANK_GASHAT, 15));
 
 	public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("bang_bang_shooting_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","snipe","gamer_driver_bang_bang_shooting_lv_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json")
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT = ITEMS.register("bang_bang_shooting_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","snipe","gamer_driver_bang_bang_shooting",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).addSwitchForm(BANG_BANG_SHOOTING_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
 
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_LV_1 = ITEMS.register("bakusou_bike_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","lazer","gamer_driver_bakusou_bike_lv_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json")
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_UNDER = ITEMS.register("bakusou_bike_gashat_under",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","lazer","gamer_driver_bakusou_bike",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).IsGlowing());
 
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT = ITEMS.register("bakusou_bike_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv2_bike","lazer","blank",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)).addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
 			.ChangeModel("lazer_lv2.geo.json").ChangeAnimation("lazer_lv2.animation.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.SetPalyerModelInvisible().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
+                    .IsGlowing().SetPalyerModelInvisible().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
 
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_TURBO = ITEMS.register("bakusou_bike_gashat_turbo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_turbo","lazer","gamer_driver_bakusou_bike",
@@ -99,7 +99,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)).addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static String[] BaseGamerDriverUsers = new String[] {"ex_aid","genm","brave","snipe"};
 
@@ -167,42 +167,42 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT = ITEMS.register("proto_mighty_action_x_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","genm","gamer_driver_proto_mighty_action_x",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 0,true,false))
-			.addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("proto_taddle_quest_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_proto_brave_lv1","brave","gamer_driver_proto_bang_bang_shooting_lv_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 0,true,false))
-			.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> PROTO_TADDLE_QUEST_X_GASHAT = ITEMS.register("proto_taddle_quest_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_proto_brave","brave","gamer_driver_proto_taddle_quest",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 0,true,false))
-			.addSwitchForm(PROTO_TADDLE_QUEST_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().addSwitchForm(PROTO_TADDLE_QUEST_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("proto_bang_bang_shooting_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_proto_snipe_lv1","snipe","gamer_driver_proto_bang_bang_shooting_lv_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 0,true,false))
-			.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> PROTO_BANG_BANG_SHOOTING_GASHAT = ITEMS.register("proto_bang_bang_shooting_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_proto_snipe","snipe","gamer_driver_proto_bang_bang_shooting",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 0,true,false))
-			.addSwitchForm(PROTO_BANG_BANG_SHOOTING_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .IsGlowing().addSwitchForm(PROTO_BANG_BANG_SHOOTING_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
@@ -211,7 +211,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 0,true,false))
-			.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json")
+                    .IsGlowing().ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json")
 			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
@@ -332,7 +332,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT= ITEMS.register("dangerous_zombie_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_lvx","genm","gamer_driver_dangerous_zombie",
@@ -343,13 +343,13 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false))
 			.addAlternative(DANGEROUS_ZOBIE_GASHAT_BD.get()).addNeedForm(PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN.get(),1)
 					.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.AddToList(GameCreator.BLANK_GASHAT, 2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().AddToList(GameCreator.BLANK_GASHAT, 2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT = ITEMS.register("unfinished_kamen_rider_chronicle_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ride_player","ride_player_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS= ITEMS.register("kamen_rider_chronicle_gashat_gamedeus",
@@ -359,7 +359,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT= ITEMS.register("kamen_rider_chronicle_gashat",
@@ -369,14 +369,15 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-			.addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHAT_RED_EYES= ITEMS.register("toki_meki_crisis_gashat_red_eyes",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_red","poppy","gashacon_bugvisor_ii_poppy",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-			);
+                    .IsGlowing());
 
 	public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHAT= ITEMS.register("toki_meki_crisis_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","poppy","gashacon_bugvisor_ii_poppy",
@@ -385,7 +386,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-			.addSwitchForm(TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().addSwitchForm(TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> MIGHTY_CREATOR_VRX_GASHAT = ITEMS.register("mighty_creator_vrx_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_creator","ex_aid","gamer_driver_mighty_creator_vrx",
@@ -394,7 +395,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 2,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 1));
 
 	public static final DeferredItem<Item> MIGHTY_NOVEL_GASHAT = ITEMS.register("mighty_novel_x_gashat",
@@ -404,7 +405,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 1));
 
 	public static final DeferredItem<Item> JU_JU_BURGER_GASHAT = ITEMS.register("ju_ju_burger_gashat",
@@ -422,7 +423,7 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> BANG_BANG_TANK_GASHAT = ITEMS.register("bang_bang_tank_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"tank_gamer","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor().ChangeSlot(2)
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
 
 	
 	public static final DeferredItem<Item> TADDLE_LEGACY_GASHAT_TRUE = ITEMS.register("taddle_legacy_gashat_true",
@@ -431,14 +432,15 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-			.SetFormToArmor().ChangeSlot(2));
+                    .IsGlowing().SetFormToArmor().ChangeSlot(2));
 
 	public static final DeferredItem<Item> TADDLE_LEGACY_GASHAT = ITEMS.register("taddle_legacy_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"legacy_gamer","brave","gamer_driver_taddle_legacy",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)).SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
+                    .SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
 
 	public static final DeferredItem<Item> HURRICANE_NINJA_GASHAT = ITEMS.register("hurricane_ninja_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fuma","gamer_driver_hurricane_ninja",
@@ -446,7 +448,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
 
 	public static final DeferredItem<Item> PAC_ADVENTURE_GASHAT = ITEMS.register("pac_adventure_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"pac_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -493,7 +495,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item>  MIGHTY_BROTHERS_XX_GASHAT_R = ITEMS.register("mighty_brothers_xx_gashat_r",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lvxxr","ex_aid","gamer_driver_mighty_brothers_xx",
@@ -502,7 +504,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.addSwitchForm(MIGHTY_BROTHERS_XX_GASHAT_L.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().addSwitchForm(MIGHTY_BROTHERS_XX_GASHAT_L.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> MIGHTY_BROTHERS_XX_GASHAT = ITEMS.register("mighty_brothers_xx_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_lvx","ex_aid","gamer_driver_mighty_brothers_x",
@@ -511,7 +513,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").addShiftForm(MIGHTY_BROTHERS_XX_GASHAT_R.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 20));
+                    .IsGlowing().ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").addShiftForm(MIGHTY_BROTHERS_XX_GASHAT_R.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 20));
 
 	public static final DeferredItem<Item> DOCTOR_MIGHTY_XX_GASHAT = ITEMS.register("doctor_mighty_xx_gashat",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
@@ -523,7 +525,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
 
 	public static final DeferredItem<Item> TADDLE_FANTASY_GASHAT = ITEMS.register("taddle_fantasy_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"fantasy_gamer","brave","gamer_driver_taddle_fantasy",
@@ -531,7 +533,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-			.SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .IsGlowing().SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
 	public static final DeferredItem<Item> BANG_BANG_SIMULATION_GASHAT = ITEMS.register("bang_bang_simulation_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"simulation_gamer","snipe","gamer_driver_taddle_fantasy",
@@ -539,7 +541,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-			.SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .IsGlowing().SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
 	public static final DeferredItem<Item> GASHAT_GEAR_DUAL = ITEMS.register("gashat_gear_dual",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","para_dx_lv99","gamer_driver_gashat_gear_dual",
@@ -548,7 +550,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> PERFECT_PUZZLE_GASHAT = ITEMS.register("perfect_puzzle_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","para_dx","paradoxbelt",
@@ -557,7 +559,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
+                    .IsGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
 
 	public static final DeferredItem<Item> KNOCK_OUT_FIGHTER_GASHAT = ITEMS.register("knock_out_fighter_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fighter","para_dx","paradoxbelt",
@@ -565,7 +567,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-			.addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
+                    .IsGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
 
 	public static final DeferredItem<Item> GASHAT_GEAR_DUAL_ANOTHER = ITEMS.register("gashat_gear_dual_another",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_para_dx","gamer_driver_gashat_gear_dual_another",
@@ -574,7 +576,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
 
 	public static final DeferredItem<Item> GENM_MUSOU_GASHAT = ITEMS.register("genm_musou_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_musou","genm","gamer_driver_genm_musou",
@@ -587,7 +589,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.MUTEKI, 40, 0,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("unfinished_maximum_mighty_x_gashat",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
@@ -598,7 +600,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 
 	public static final DeferredItem<Item> MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("maximum_mighty_x_gashat",
@@ -607,7 +609,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)).addSwitchForm(MAXIMUM_MIGHTY_X_GASHAT_lv2.get())
-			.ChangeModel("lv_max.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
+                    .IsGlowing().ChangeModel("lv_max.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
 
 
 	public static final DeferredItem<Item> GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0 = ITEMS.register("god_maximum_mighty_x_gashat_lv0",
@@ -620,7 +622,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false))
-			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 
 	public static final DeferredItem<Item> GOD_MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("god_maximum_mighty_x_gashat",
@@ -633,7 +635,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false))
-			.addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
+                    .IsGlowing().addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
 			.ChangeModel("lv_max.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
 
 	public static final DeferredItem<Item> MAXIMUM_ZOMBIE_GASHAT = ITEMS.register("maximum_zombie_gashat",
@@ -667,7 +669,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.MUTEKI, 40, 0,true,false))
-			.addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .IsGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_HYPER_GASHAT, 5));
 
 
@@ -682,7 +684,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.MUTEKI, 40, 0,true,false))
-			.addNeedItem(MAXIMUM_ZOMBIE_GASHAT.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .IsGlowing().addNeedItem(MAXIMUM_ZOMBIE_GASHAT.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
@@ -693,7 +695,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false))
-			.hasStaticWings().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+                    .IsGlowing().hasStaticWings().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 

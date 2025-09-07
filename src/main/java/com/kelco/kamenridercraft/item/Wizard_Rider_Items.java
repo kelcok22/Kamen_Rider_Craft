@@ -447,7 +447,7 @@ public class Wizard_Rider_Items {
                        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
                        ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
                        .addNeedForm(FLAME_WIZARD_RING.get(),1)
-					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
+                       .IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FLOWER_WIZARD_RING = ITEMS.register("flower_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.FLOWER, 500,0,true,true))
@@ -531,7 +531,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.hasStaticWings().addNeedForm(FLAME_WIZARD_RING.get(),1)
+                    .IsGlowing().hasStaticWings().addNeedForm(FLAME_WIZARD_RING.get(),1)
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KRAKEN_WIZARD_RING_COLOR_VER = ITEMS.register("kraken_ring_color_ver",
@@ -539,7 +539,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false))
-					.hasStaticWings().addNeedForm(WATER_WIZARD_RING.get(),1)
+                    .IsGlowing().hasStaticWings().addNeedForm(WATER_WIZARD_RING.get(),1)
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
