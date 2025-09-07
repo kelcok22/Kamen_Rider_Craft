@@ -23,6 +23,10 @@
 	  {
 		  "structure": "kamenridercraft:seito_city",
 		  "weight": 2
+	  },
+	  {
+		  "structure": "kamenridercraft:hiden",
+		  "weight": 2
 	  }
   ],
   "placement": {
