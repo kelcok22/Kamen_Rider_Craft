@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "punchingummy_gochizo",
 			"title": "Punchingummy Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#punchingummy)Punchingummy Assist$(/l)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#kickingummy_punchingummy)Kickingummy&Punchingummy Assist$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#punchingummy)Punchingummy Assist$(/l) and $(l:gavv/riders/gavv#kickingummy_punchingummy)Kickingummy&Punchingummy Assist$(/l)$(br2)Used to equip Valen Frappe Custom with the $(l:gavv/riders/valen#frappe_punchingummy)Shuwa Punching$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 			"type": "patchouli:text",
 			"anchor": "kickingummy_gochizo",
 			"title": "Kickingummy Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#kickingummy)Kickingummy Assist$(/l)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#kickingummy_punchingummy)Kickingummy&Punchingummy Assist$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#kickingummy)Kickingummy Assist$(/l) and $(l:gavv/riders/gavv#kickingummy_punchingummy)Kickingummy&Punchingummy Assist$(/l)$(br2)Used to equip Valen Frappe Custom with the $(l:gavv/riders/valen#frappe_kickingummy)Range Kicking$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -149,7 +149,7 @@
 			"type": "patchouli:text",
 			"anchor": "gurucan_gochizo",
 			"title": "Gurucan Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#gurucan)Gurucan Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#gurucan)Gurucan Form$(/l)$(br2)Used to equip Valen Frappe Custom with the $(l:gavv/riders/valen#frappe_gurucan)Gurucan Legs$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -159,6 +159,26 @@
       {
         "type": "patchouli:text",
         "text": "$(li)1 $(l:build/arsenal/nanba_walking_stick)Nanba's Walking Stick$(/l) (15.4%)$(br2)Lost Fullbottle drops:$(li)1 $(l:build/items/fullbottles#black_lost_cd_full_bottle)Lost CD Fullbottle$(/l) (25%)$(li)1 $(l:build/items/fullbottles#black_lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l) (25%)$(li)1 $(l:build/items/fullbottles#black_lost_shimauma_full_bottle)Lost Shimauma Fullbottle$(/l) (25%)$(li)1 $(l:build/items/fullbottles#black_lost_hasami_full_bottle)Lost Hasami Fullbottle$(/l) (25%)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "hiden_intelligence",
+        "title": "Hiden Intelligence",
+        "text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Mobs:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)$(br2)Cityscape: Urban$(br2)Chest loot:$(li)1 $(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)Rising Hopper Progrisekey$(/l)$(br)$(li)3-7 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l) (52.6% x2-3)$(li)4-6 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) (15.8% x2-3)$(li)1 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l) (31.6% x2-3)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_3.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_4.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_5.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_6.png"
+        ],
+        "title": " ",
+        "text": "Other loot: 1 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l), 1 $(l:zero_one/items/progrisekeys#shesta_progrisekey)Shesta Progrisekey$(/l) (on display at the entrance)"
       }
-	]
+    ]
 }

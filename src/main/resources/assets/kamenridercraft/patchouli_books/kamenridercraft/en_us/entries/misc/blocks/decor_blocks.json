@@ -422,6 +422,13 @@
 			"item": "kamenridercraft:rabbit_hutch_computer_stairs",
 			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
 		},
+      {
+        "type": "patchouli:spotlight",
+        "anchor": "megahex_light",
+        "link_recipe": true,
+        "item": "kamenridercraft:megahex_light",
+        "text": "Found inside $(l:gaim/structures/megahex_planet)Planet Megahex$(/l)"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "stone_flooring",
@@ -666,16 +673,14 @@
           "anchor": "megahex_matel",
           "link_recipe": true,
           "item": "kamenridercraft:megahex_matel",
-          "text": "Block is currently unobtainable",
-          "future_text": "Found on Planet Megahex"
+          "text": "Found inside $(l:gaim/structures/megahex_planet)Planet Megahex$(/l)"
         },
         {
           "type": "patchouli:spotlight",
           "anchor": "megahex_matel_lines",
           "link_recipe": true,
           "item": "kamenridercraft:megahex_matel_lines",
-          "text": "Block is currently unobtainable",
-          "future_text": "Found on Planet Megahex"
+          "text": "Found inside $(l:gaim/structures/megahex_planet)Planet Megahex$(/l)"
         },
 		{
 			"type": "patchouli:spotlight",

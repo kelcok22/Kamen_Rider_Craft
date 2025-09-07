@@ -1,0 +1,24 @@
+{
+  "name": "Planet Megahex",
+  "icon": "kamenridercraft:gaim_logo",
+  "category": "kamenridercraft:gaim/structures",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Planet Megahex",
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Spawns throughout Helheim$(br2)Includes an $(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l) spawner$(br)Includes a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l) spawner$(br)Includes a $(l:drive/mobs/roidmude)Roidmude$(/l) spawner"
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "kamenridercraft:patchouli_books/kamenridercraft/images/megahex_planet.png",
+        "kamenridercraft:patchouli_books/kamenridercraft/images/megahex_planet_2.png",
+        "kamenridercraft:patchouli_books/kamenridercraft/images/megahex_planet_3.png"
+      ],
+      "title": " ",
+      "text": " "
+    }
+  ]
+}
