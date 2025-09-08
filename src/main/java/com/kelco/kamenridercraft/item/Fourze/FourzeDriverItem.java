@@ -201,11 +201,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
                     case HEAD ->{
                         return true;
                     }
-                    case CHEST -> {
+                    case CHEST, LEGS -> {
                       return false;
-                    }
-                    case LEGS -> {
-                        return false;
                     }
                     default -> {}
                 }

@@ -6,9 +6,9 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 
-public class RedSparkParticles extends TextureSheetParticle {
-    protected RedSparkParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet,
-                                double xSpeed, double ySpeed, double zSpeed) {
+public class Red2SparkParticles extends TextureSheetParticle {
+    protected Red2SparkParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet,
+                                 double xSpeed, double ySpeed, double zSpeed) {
         super(level, x, y, z, xSpeed, ySpeed, zSpeed);
 
         this.friction = 1.1f;
@@ -52,7 +52,7 @@ this.scale(1);
         @Override
         public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel,
                                        double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed) {
-            return new RedSparkParticles(clientLevel, pX, pY, pZ, this.spriteSet, pXSpeed, pYSpeed, pZSpeed);
+            return new Red2SparkParticles(clientLevel, pX, pY, pZ, this.spriteSet, pXSpeed, pYSpeed, pZSpeed);
         }
     }
 }
