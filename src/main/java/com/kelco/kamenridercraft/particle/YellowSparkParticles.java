@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 
 public class YellowSparkParticles extends TextureSheetParticle {
@@ -24,7 +25,20 @@ this.scale(1);
     public ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
+    @Override
+    public int getLightColor(float partialTick) {
+        float f = ((float)this.age + partialTick) / (float)this.lifetime;
+        f = Mth.clamp(f, 0.0F, 1.0F);
+        int i = super.getLightColor(partialTick);
+        int j = i & 0xFF;
+        int k = i >> 16 & 0xFF;
+        j += (int)(f * 15.0F * 16.0F);
+        if (j > 240) {
+            j = 240;
+        }
 
+        return j | k << 16;
+    }
     public static class Provider implements ParticleProvider<SimpleParticleType> {
         private final SpriteSet spriteSet;
 

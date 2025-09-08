@@ -40,7 +40,7 @@ public class Faiz_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+                    .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 	    
 	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axel","next_kaixa","next_kaixa_driver_belt_a",
