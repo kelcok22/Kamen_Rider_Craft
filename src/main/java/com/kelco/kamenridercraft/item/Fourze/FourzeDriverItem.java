@@ -8,6 +8,7 @@ import java.util.List;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 
+import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -190,6 +191,28 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 			return super.getModelResource(itemstack, animatable, slot,rider);
 		}
+        public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+            if (currentSlot== EquipmentSlot.FEET) {
+                return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+            }
+            if (isTransformed(livingEntity)){
+                switch (currentSlot) {
+                    case HEAD ->{
+                        return true;
+                    }
+                    case CHEST -> {
+                      return false;
+                    }
+                    case LEGS -> {
+                        return false;
+                    }
+                    default -> {}
+                }
+                return false;
+            }
+            return false;
+        }
 
 		@Override
 		public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {

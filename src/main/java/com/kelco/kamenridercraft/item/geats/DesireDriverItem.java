@@ -347,7 +347,7 @@ public class DesireDriverItem  extends RiderDriverItem {
             switch (currentSlot) {
                 case HEAD ->{
 
-                    return isGoldenFever(itemstack,Rider);
+                    return true;
                 }
                 case CHEST -> {
                     return (get_Form_Item(itemstack, 2)!=Geats_Rider_Items.OUJA_V_BUCKLE_RAISE_BUCKLE.asItem());

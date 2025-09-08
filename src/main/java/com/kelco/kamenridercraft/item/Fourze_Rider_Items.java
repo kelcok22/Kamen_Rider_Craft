@@ -37,7 +37,7 @@ public class Fourze_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+                    .ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_ELEK_STATES = ITEMS.register("fourze_elekstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_elek","fourze","fourze_driver_belt",
