@@ -61,7 +61,25 @@ public class SengokuDriverItem extends RiderDriverItem {
 		else return get_Form_Item(itemstack,1).getFormName(fly);
 	}
 
+    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
+        if (currentSlot== EquipmentSlot.FEET) {
+            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        }
+        if (isTransformed(livingEntity)){
+            switch (currentSlot) {
+                case HEAD, CHEST ->{
+                    return false;
+                }
+                case LEGS -> {
+                    return true;
+                }
+                default -> {}
+            }
+            return false;
+        }
+        return false;
+    }
 
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
