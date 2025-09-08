@@ -2425,7 +2425,7 @@
 "kamenridercraft.name.seeda": "Rider: Kamen Rider Seeda (Silver Mint)",
 "kamenridercraft.name.seeda_gb": "Rider: Kamen Rider Seeda (Guardian Blue)",
 "kamenridercraft.name.seeda_ro": "Rider: Kamen Rider Seeda (Rescue Orange)",
-"kamenridercraft.name.seeda_uw": "Rider: Kamen Rider Seeda (Urban White)", 
+"kamenridercraft.name.seeda_uw": "Rider: Kamen Rider Seeda (Urban White)",
 
 "item.kamenridercraft.faiz_edge": "Faiz Edge",
 "item.kamenridercraft.faiz_phone": "Faiz Phone",
@@ -4095,7 +4095,7 @@
 
   "item.kamenridercraft.wizard_ring_holder": "Wizard Ring Holder",
   "item.kamenridercraft.beast_ring_holder": "Beast Ring Holder",
-    
+
   "item.kamenridercraft.wizarswordgun": "WizarSwordGun",
   "item.kamenridercraft.axcalibur": "AxCalibur",
   "item.kamenridercraft.wizarswordgun_mage": "WizarSwordGun (Mage Ver)",
@@ -4259,18 +4259,18 @@
   "item.kamenridercraft.gaimlegs": "Gaim Leggings",
 
   "item.kamenridercraft.musou_saber": "Musou Saber",
-  
+
   "item.kamenridercraft.musou_saber_naginata": "Musou Saber (Naginata Mode)",
   "item.kamenridercraft.blood_musou_saber_naginata": "Musou Saber (Naginata Mode)",
   "item.kamenridercraft.musou_saber_kusarigama": "Musou Saber (Kusarigama Mode)",
   "item.kamenridercraft.dj_gun": "DJ Gun",
   "item.kamenridercraft.dj_gun_taiken_mode": "DJ Gun (Taiken Mode)",
   "item.kamenridercraft.kachidoki_bata": "Kachidoki Bata",
-  
+
   "item.kamenridercraft.zangetsu_dj_gun": "DJ Gun (Zangetsu)",
   "item.kamenridercraft.zangetsu_dj_gun_taiken_mode": "DJ Gun (Zangetsu) (Taiken Mode)",
   "item.kamenridercraft.zangetsu_kachidoki_bata": "Kachidoki Bata (Zangetsu)",
-  
+
   "item.kamenridercraft.kagematsu": "Kagematsu",
   "item.kamenridercraft.donkachi": "Donkachi",
   "item.kamenridercraft.melon_defender": "Melon Defender",
@@ -4279,7 +4279,7 @@
   "item.kamenridercraft.daidaimaru": "Daidaimaru",
   "item.kamenridercraft.blood_daidaimaru": "Daidaimaru (Blood Orange Ver)",
   "item.kamenridercraft.banana_spear": "Banana Spear",
-  
+
   "item.kamenridercraft.joeshuimu": "Joeshuimu",
   "item.kamenridercraft.sheimu": "Sheimu",
   "item.kamenridercraft.dau": "Dau",
@@ -4295,17 +4295,17 @@
   "item.kamenridercraft.hells_cane": "Hells Cane",
   "item.kamenridercraft.shine_lychee_sword": "Shine Lychee Sword",
   "item.kamenridercraft.king_duri_noko": "Giga Duri Noko",
-  
+
   "item.kamenridercraft.kabi_daidaimaru": "Kabi Daidaimaru",
   "item.kamenridercraft.maja_yomimaru": "Maja's Sword",
-  
+
   "item.kamenridercraft.sonic_arrow": "Sonic Arrow",
   "item.kamenridercraft.kagematsu_shin": "Kagematsu Shin",
-  
+
   "item.kamenridercraft.suika_sojinto": "Suika Sojinto",
   "item.kamenridercraft.suika_sojinto_baron_ver": "Suika Sojinto (Baron ver.)",
   "item.kamenridercraft.suika_sojinto_knuckle_ver": "Suika Sojinto (Knuckle ver.)",
-  
+
   "item.kamenridercraft.yomimaru": "Yomimaru",
   "item.kamenridercraft.sword_bringer": "Sword Bringer",
   "item.kamenridercraft.apple_reflecter": "Apple Reflecter",
@@ -4829,7 +4829,7 @@
   "item.kamenridercraft.dark_necrom_blue_ghost_eyecon": "Dark Necrom Ghost Eyecon (Blue)",
   "item.kamenridercraft.dark_necrom_yellow_ghost_eyecon": "Dark Necrom Ghost Eyecon (Yellow)",
   "item.kamenridercraft.dark_ghost_eyecon": "Dark Ghost Eyecon",
-  "item.kamenridercraft.zero_specter_ghost_eyecon": "Zero Specter Ghost Eyecon", 
+  "item.kamenridercraft.zero_specter_ghost_eyecon": "Zero Specter Ghost Eyecon",
   "item.kamenridercraft.new_ore_ghost_eyecon": "New Ore Ghost Eyecon",
   "item.kamenridercraft.kanon_specter_ghost_eyecon": "Kanon Specter Ghost Eyecon",
   "item.kamenridercraft.proto_ore_ghost_eyecon": "Prototype Ore Ghost Eyecon",
@@ -5330,7 +5330,7 @@
 "item.kamenridercraft.end_energy_item": "End Energy Item",
 "item.kamenridercraft.bug_energy_item": "Bug Energy Item",
 "item.kamenridercraft.christmas_energy_item": "Christmas Energy Item",
-        
+
 "item.kamenridercraft.build_logo": "Build Logo",
 "item.kamenridercraft.buildhead": "Build Helmet",
 "item.kamenridercraft.buildtroso": "Build Chestplate",
@@ -5384,7 +5384,7 @@
 "item.kamenridercraft.transteam_gun_rifle": "Transteam Gun Rifle Mode",
 "item.kamenridercraft.nebulasteam_gun_rifle": "Nebulasteam Gun Rifle Mode",
 "item.kamenridercraft.fullbottle_buster": "Fullbottle Buster",
-"item.kamenridercraft.magma_knuckle": "Magma Knuckle",  
+"item.kamenridercraft.magma_knuckle": "Magma Knuckle",
 "item.kamenridercraft.blizzard_knuckle": "Blizzard Knuckle",
   "item.kamenridercraft.nanba_walking_stick": "Nanba's Walking Stick",
 
@@ -5436,13 +5436,13 @@
 "item.kamenridercraft.genius_full_bottle": "Genius Fullbottle",
   "item.kamenridercraft.unfinished_genius_full_bottle": "Unfinished Genius Fullbottle",
 "item.kamenridercraft.cross_z_build_can": "Cross-Z Build Can",
-        
+
 "item.kamenridercraft.dog_full_bottle": "Dog Fullbottle",
 "item.kamenridercraft.santa_claus_full_bottle": "Santa Claus Fullbottle",
 "item.kamenridercraft.kuma_full_bottle": "Kuma Fullbottle",
 "item.kamenridercraft.wolf_full_bottle": "Wolf Fullbottle",
 "item.kamenridercraft.kabutomushi_full_bottle": "Kabutomushi Fullbottle",
-        
+
 "item.kamenridercraft.doctor_full_bottle": "Doctor Fullbottle",
 "item.kamenridercraft.orange_full_bottle": "Orange Fullbottle",
 "item.kamenridercraft.mahoutsukai_full_bottle": "Mahoutsukai Fullbottle",
@@ -5451,7 +5451,7 @@
 "item.kamenridercraft.yuujou_full_bottle": "Yuujou Fullbottle",
 "item.kamenridercraft.obake_full_bottle": "Obake Fullbottle",
 "item.kamenridercraft.rider_card_full_bottle": "Rider Card Fullbottle",
-        
+
 "item.kamenridercraft.gatling_full_bottle": "Gatling Fullbottle",
 "item.kamenridercraft.soujiki_full_bottle": "Soujiki Fullbottle",
 "item.kamenridercraft.comic_full_bottle": "Comic Fullbottle",
@@ -5477,7 +5477,7 @@
 "item.kamenridercraft.sensuikan_full_bottle": "Sensuikan Fullbottle",
 "item.kamenridercraft.dryer_full_bottle": "Dryer Fullbottle",
 "item.kamenridercraft.gold_full_bottle": "Gold Fullbottle",
-        
+
 "item.kamenridercraft.mic_full_bottle": "Mic Fullbottle",
 "item.kamenridercraft.cake_full_bottle": "Cake Fullbottle",
 "item.kamenridercraft.televi_full_bottle": "Televi Fullbottle",
@@ -5487,7 +5487,7 @@
 "item.kamenridercraft.pandora_bottle": "Pandora Bottle",
 "item.kamenridercraft.golden_bangle": "Golden Bangle",
 "item.kamenridercraft.low_rabbit_full_bottle": "Low Rabbit Fullbottle",
-        
+
 "item.kamenridercraft.game_full_bottle": "Game Fullbottle",
 "item.kamenridercraft.medal_full_bottle": "Medal Fullbottle",
 "item.kamenridercraft.usb_memory_full_bottle": "USB Memory Fullbottle",
@@ -6030,7 +6030,7 @@
 "kamenridercraft.name.zero_zero_one": "Rider: Kamen Rider ZeroZero-One",
 
 "item.kamenridercraft.zaia_slashriser": "ZAIA Slashriser",
-"kamenridercraft.name.jin_burning": "Rider: Kamen Rider Jin Burning Falcon",
+"kamenridercraft.name.jin_burning": "Rider: Kamen Rider Jin",
 
 "item.kamenridercraft.zetsumetsu_driver": "Zetsumetsu Driver",
 "kamenridercraft.name.horobi_ark_scorpion": "Rider: Kamen Rider Horobi",
@@ -6071,7 +6071,7 @@
 "kamenridercraft.name.abaddon_o": "Rider: Kamen Rider Abaddon Buga",
 
 "item.kamenridercraft.hiden_zero_one_driver_vulcan": "Hiden Zero-One Driver",
-"kamenridercraft.name.vulcan_lone": "Rider: Kamen Rider Vulcan Lone Wolf",
+"kamenridercraft.name.vulcan_lone": "Rider: Kamen Rider Vulcan",
 
 "item.kamenridercraft.zein_driver": "Zein Driver",
 "kamenridercraft.name.zein": "Rider: Kamen Rider Zein",
@@ -6209,7 +6209,7 @@
   "kamenridercraft:rampage_gatling_progrisekey.form": "Form: Rampage",
   "kamenridercraft:punching_kong_progrisekey.form": "Form: Punching Kong",
   "kamenridercraft:punching_kong_progrisekey_zero_one.form": "Form: Punching Kong",
-  "kamenridercraft:dire_wolf_progrisekey.form": "Form: Lone Wolf",
+  "kamenridercraft:dire_wolf_zetsumerisekey.form": "Form: Lone Wolf",
 
 "item.kamenridercraft.rushing_cheetah_progrisekey": "Rushing Cheetah Progrisekey",
 "item.kamenridercraft.lightning_hornet_progrisekey": "Lightning Hornet Progrisekey",
@@ -6233,6 +6233,7 @@
 
   "kamenridercraft:flying_falcon_progrisekey_zero_one.form": "Form: Flying Falcon",
   "kamenridercraft:burning_falcon_progrisekey_zero_one.form": "Form: Burning Falcon",
+  "kamenridercraft:burning_falcon_progrisekey.form": "Form: Burning Falcon",
 
 "item.kamenridercraft.amazing_caucasus_progrisekey": "Amazing Caucasus Progrisekey",
 "item.kamenridercraft.awaking_arsino_zetsumerisekey": "Awaking Arsino Zetsumerisekey",
@@ -6994,10 +6995,20 @@
 "item.kamenridercraft.zombie_raise_buckle": "Zombie Buckle",
 "item.kamenridercraft.jyamato_buckle": "Jyamato Buckle",
 "item.kamenridercraft.jyamashin_wish_card": "Jyamashin Desire Card",
+  "lore.kamenridercraft.jyamashin_wish_card.1": "\"The power to crush all Kamen Riders.\"",
+  "lore.kamenridercraft.jyamashin_wish_card.2": "~Michinaga Azuma",
   "item.kamenridercraft.bujin_wish_card": "Bujin Sword Desire Card",
+  "lore.kamenridercraft.bujin_wish_card.1": "\"Power that no one can defeat.\"",
+  "lore.kamenridercraft.bujin_wish_card.2": "~Keiwa Sakurai",
   "item.kamenridercraft.fantasy_wish_card": "Fantasy Desire Card",
+  "lore.kamenridercraft.fantasy_wish_card.1": "\"Neon's... happiness...\"",
+  "lore.kamenridercraft.fantasy_wish_card.2": "~Kousei Kurama",
   "item.kamenridercraft.boost_mkii_wish_card": "Boost MKII Desire Card",
+  "lore.kamenridercraft.boost_mkii_wish_card.1": "\"Someday, when a reincarnation of mine steels his resolve to protect the world, he will have the power to make it reality.\"",
+  "lore.kamenridercraft.boost_mkii_wish_card.2": "~A, Ace Garfield, Eisu Yakumo, Ace Lee",
   "item.kamenridercraft.kuroto_dan_card": "Dan Kuroto Desire Card",
+  "lore.kamenridercraft.kuroto_dan_card.1": "\"May I be blessed with children.\"",
+  "lore.kamenridercraft.kuroto_dan_card.2": "~Kuroto Dan",
 "item.kamenridercraft.plosion_rage_raise_buckle": "Plosion Rage Buckle",
   "item.kamenridercraft.dgp_winners_coin": "DGP Prize Coin",
 
