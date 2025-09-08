@@ -10,12 +10,15 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.geats.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -1256,10 +1259,10 @@ public class 	Geats_Rider_Items {
 			.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_MKII_WISH_CARD = ITEMS.register("boost_mkii_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.boost_mkii_wish_card.1"), Component.translatable("lore.kamenridercraft.boost_mkii_wish_card.2"))))).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> JYAMASHIN_WISH_CARD = ITEMS.register("jyamashin_wish_card",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jyamashin","buffa","desire_driver_belt_buffa",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.jyamashin_wish_card.1"), Component.translatable("lore.kamenridercraft.jyamashin_wish_card.2")))),0,"_jyamashin","buffa","desire_driver_belt_buffa",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1267,13 +1270,13 @@ public class 	Geats_Rider_Items {
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_WISH_CARD = ITEMS.register("bujin_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.bujin_wish_card.1"), Component.translatable("lore.kamenridercraft.bujin_wish_card.2"))))).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FANTASY_WISH_CARD = ITEMS.register("fantasy_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.fantasy_wish_card.1"), Component.translatable("lore.kamenridercraft.fantasy_wish_card.2"))))).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUROTO_DAN_CARD = ITEMS.register("kuroto_dan_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.kuroto_dan_card.1"), Component.translatable("lore.kamenridercraft.kuroto_dan_card.2"))))).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DGP_WINNERS_COIN = ITEMS.register("dgp_winners_coin",
