@@ -1,24 +1,25 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
+import java.util.List;
+
 import com.kelco.kamenridercraft.entities.projectile.ShurikenProjectileEntity;
 import com.kelco.kamenridercraft.entities.projectile.WeaponProjectileEntity;
+import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
+import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.Level;
-
-import java.util.List;
 
 public class BaseThrowableItem extends SwordItem {
 
 	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
-	private Item Changer = null;
 	private boolean Shuriken = false;
 
 	public BaseThrowableItem(Tier toolTier, int Atk, float Spd, Properties prop) {
@@ -32,11 +33,7 @@ public class BaseThrowableItem extends SwordItem {
 				SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
 
 		if (!pLevel.isClientSide) {
-			if (Changer != null && pPlayer.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
-				pPlayer.setItemSlot(EquipmentSlot.FEET, new ItemStack(Changer));
-				if (pPlayer.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem formItem) formItem.use(pLevel, pPlayer, InteractionHand.OFF_HAND);
-			}
-			else if (Shuriken)
+			if (Shuriken)
 			{
 				ShurikenProjectileEntity shuriken = new ShurikenProjectileEntity(pLevel, pPlayer);
 				shuriken.setItem(itemstack);
@@ -53,9 +50,6 @@ public class BaseThrowableItem extends SwordItem {
 		}
 
 		pPlayer.awardStat(Stats.ITEM_USED.get(this));
-		if (!pPlayer.getAbilities().instabuild) {
-			itemstack.shrink(1);
-		}
 
 		return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
 	}
@@ -76,11 +70,6 @@ public class BaseThrowableItem extends SwordItem {
 
 	public BaseThrowableItem IsShuriken() {
 		Shuriken=true;
-		return this;
-	}
-
-	public BaseThrowableItem isChanger(Item item) {
-		Changer=item;
 		return this;
 	}
 }
