@@ -219,6 +219,11 @@
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:gavv/gavv_logo",
 			"text": "Banner patterns:$(li)Gavv Logo"
-		}
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:zeztz/zeztz_logo",
+        "text": "Banner patterns:$(li)Zeztz Logo"
+      }
 	]
 }
