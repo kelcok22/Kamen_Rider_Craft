@@ -917,7 +917,7 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
-					.has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
+                    .IsGlowing().has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SIRIUS_CARD_OMEGA = ITEMS.register("sirius_card_omega",
