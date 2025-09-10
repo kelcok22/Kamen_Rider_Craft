@@ -1277,7 +1277,7 @@ public class Zi_O_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_agito_zio","another_altering_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_RYUKI_WATCH = ITEMS.register("another_ryuki_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1290,7 +1290,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_BLADE_WATCH = ITEMS.register("another_blade_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1319,32 +1319,32 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_OOO_WATCH = ITEMS.register("another_ooo_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_ooo","another_ooo_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_FOURZE_WATCH = ITEMS.register("another_fourze_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_fourze","another_fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_WIZARD_WATCH = ITEMS.register("another_wizard_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_wizard","another_wizard_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_GAIM_WATCH = ITEMS.register("another_gaim_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_gaim","another_gaim_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_DRIVE_WATCH = ITEMS.register("another_drive_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1353,13 +1353,13 @@ public class Zi_O_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_ghost","another_ghost_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_EX_AID_WATCH = ITEMS.register("another_ex_aid_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_ex_aid","another_ex_aid_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_BUILD_WATCH = ITEMS.register("another_build_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_build","another_build_driver_belt",
@@ -1367,14 +1367,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_ZI_O_WATCH = ITEMS.register("another_zi_o_watch",
 			() -> new Zi_ORidewatchItem(new Item.Properties(),0,"","another_zi_o","another_ziku_driver_zi_o_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_ZI_O_II_WATCH = ITEMS.register("another_zi_o_ii_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1390,7 +1390,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_QUIZ_WATCH = ITEMS.register("another_quiz_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));

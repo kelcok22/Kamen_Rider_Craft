@@ -179,9 +179,29 @@ public class SeikenSwordriverItem extends RiderDriverItem {
             return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
         }
         if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack, 1).get_Stored_num()==2) return get_Form_Item(itemstack,1).getFormName(fly);
-        else return "blank";
+        else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+"_face";
+           else return "blank";
     }
 
+    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+        if (currentSlot== EquipmentSlot.FEET) {
+            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        }
+        if (isTransformed(livingEntity)){
+            switch (currentSlot) {
+                case LEGS, CHEST ->{
+                    return false;
+                }
+                case  HEAD-> {
+                    return true;
+                }
+                default -> {}
+            }
+            return false;
+        }
+        return false;
+    }
 
     @Override
     public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
