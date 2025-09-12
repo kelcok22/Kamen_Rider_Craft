@@ -179,25 +179,31 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "merry_christmas",
+			"anchor": "christmas",
 			"title": "Merry Christmas",
 			"text": "This effect causes you to receive a $(l:misc/items/gift)Gift$(/l) every 4 minutes and 20 seconds.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/energy_items#christmas_energy_item)Christmas Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "fire_fist",
+			"anchor": "fire_punch",
 			"title": "Fire Fist",
 			"text": "With this effect, you will ignite any entities you hit with an empty hand. Entities will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Transform into $(l:build/riders/kaiser#bikaiser)Bikaiser$(/l)$(li)Use the $(l:revice/items/vistamps#komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l)$(li)Use the $(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "fire_slash",
+        "title": "Flame Slash",
+        "text": "With this effect, you will ignite any entities you hit with a sword. Entities will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:gavv/items/gochizo#hirihirichips_gochizo)Hirihirichips Gochizo$(/l)"
+      },
 		{
 			"type": "patchouli:text",
-			"anchor": "explosive_punch",
+			"anchor": "explosion_punch",
 			"title": "Explosive Punch",
 			"text": "With this effect, you will cause any entities you hit with an empty hand to explode. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Wait for a future update"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "explosive_slash",
+			"anchor": "explosion_slash",
 			"title": "Explosive Slash",
 			"text": "With this effect, you will cause any entities you hit with a sword to explode. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Wait for a future update"
 		},
@@ -209,7 +215,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "explosive_shot",
+			"anchor": "explosion_shot",
 			"title": "Explosive Shot",
 			"text": "With this effect, you will cause any entities you hit with an arrow to explode. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Use the $(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l)"
 		},
@@ -333,6 +339,12 @@
 			"title": "Cosmic Energy",
 			"text": "This effect boosts the strength of $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)'s Astroswitches by one.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#cosmic_switch)Cosmic Switch$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "happy_mode",
+        "title": "Happy Mode",
+        "text": "This effect makes the game a bit less violent. Mobs now spawn confetti when hit and go to sleep instead of being, er... \"unalived\".$(br2)Examples for how to get this effect:$(li)???"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "flower",
