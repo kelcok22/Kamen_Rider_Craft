@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -20,9 +21,12 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
@@ -131,12 +135,23 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void giveEffects(LivingEntity player) {
-            if (isTransformed(player)) {
+
+        if (isTransformed(player)) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
                     List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
                     for (MobEffectInstance effect : potionEffectList) {
-                        player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
+                        if (effect.getEffect() != MobEffects.DAMAGE_BOOST&
+                                effect.getEffect() != MobEffects.DIG_SPEED&
+                                effect.getEffect() != MobEffects.REGENERATION&
+                                effect.getEffect() != MobEffects.DAMAGE_RESISTANCE&
+                                effect.getEffect() != MobEffects.MOVEMENT_SPEED&
+                                effect.getEffect() != Effect_core.NOTE&
+                                effect.getEffect() != Effect_core.SLASH&
+                                effect.getEffect() != Effect_core.PUNCH
+                                ||player instanceof Player) {
+                            player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
+                        }
                     }
                 }
         }

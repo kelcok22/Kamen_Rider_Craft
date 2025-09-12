@@ -115,6 +115,9 @@ public class Effect_core {
     public static final Holder<MobEffect>  FIRE_PUNCH= EFFECT.register("fire_punch",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
+    public static final Holder<MobEffect>  FIRE_SLASH= EFFECT.register("fire_slash",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+
     public static final Holder<MobEffect>  EXPLOSION_PUNCH= EFFECT.register("explosion_punch",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
@@ -191,6 +194,9 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  COSMIC_ENERGY= EFFECT.register("cosmic_energy",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x55FFFF));
+
+    public static final Holder<MobEffect>  HAPPY_MODE= EFFECT.register("happy_mode",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
 
     public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));

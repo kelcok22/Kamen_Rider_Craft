@@ -28,6 +28,7 @@ import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -60,6 +61,7 @@ import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
@@ -251,7 +253,17 @@ public class ModCommonEvents {
 			}
 		}
 */
-		@SubscribeEvent
+        @SubscribeEvent
+        public void addLivingDamageEvent(LivingDeathEvent event) {
+            if (event.getSource().getEntity()instanceof Player player){
+                if (player.hasEffect(Effect_core.HAPPY_MODE)) {
+                    player.sendSystemMessage(Component.literal(Component.translatable("happy_mode.kamenridercraft.sleep").getString()));
+                }
+            }
+
+        }
+
+            @SubscribeEvent
 		public void addLivingDamageEvent(LivingDamageEvent.Post event) {
 
 
@@ -271,6 +283,24 @@ public class ModCommonEvents {
 									event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
 						}
 
+                        if (_livEnt.hasEffect(Effect_core.HAPPY_MODE)) {
+                            ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+                                    event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+                            ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                    event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+                                    event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+                            ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                    event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+                                    event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+                            ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+                                    event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+                            ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                    event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+                                    event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+                        }
+
 						if (_livEnt.hasEffect(Effect_core.RIDER_POISON_HAND)) {
 							if (_livEnt.getMainHandItem().isEmpty()) {
 								event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, _livEnt.getEffect(Effect_core.RIDER_POISON_HAND).getAmplifier(),true,true));
@@ -281,6 +311,12 @@ public class ModCommonEvents {
 							 event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_PUNCH).getAmplifier()+1);
 						}
 					}
+                        if (_livEnt.hasEffect(Effect_core.FIRE_SLASH)) {
+                            if (_livEnt.getMainHandItem().getItem()instanceof SwordItem||_livEnt.getMainHandItem().getItem()instanceof BaseBlasterItem) {
+                                event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_SLASH).getAmplifier()+1);
+                            }
+
+                        }
 					if (_livEnt.hasEffect(Effect_core.THUNDER_PUNCH)) {
 						if (_livEnt.getMainHandItem().isEmpty()) {
 							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());

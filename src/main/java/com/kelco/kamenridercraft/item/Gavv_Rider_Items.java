@@ -204,7 +204,7 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> HIRIHIRICHIPS_GOCHIZO = ITEMS.register("hirihirichips_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_hirihiri",
-					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 1,true,false)
+					new MobEffectInstance(Effect_core.FIRE_SLASH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
