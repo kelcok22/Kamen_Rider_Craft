@@ -597,7 +597,8 @@ public class W_Rider_Items {
 	public static final DeferredItem<Item> COMMANDER_MEMORY_ENHANCING_ADAPTER = ITEMS.register("commander_memory_enhancing_adapter",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM).KeepDifItem(COMMANDER_MEMORY.get()));
 
-	public static final DeferredItem<Item> MEMORY_MEMORY = ITEMS.register("memory_memory",
+
+    public static final DeferredItem<Item> MEMORY_MEMORY = ITEMS.register("memory_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {

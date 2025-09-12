@@ -6,7 +6,10 @@ import javax.annotation.Nullable;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -60,9 +63,10 @@ public class CoreEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOO_Rider_Items.OOOHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOO_Rider_Items.OOOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.CORE_DRIVER.get()));
 
-
+        ItemStack belt = new ItemStack(OOO_Rider_Items.CORE_DRIVER.get());
+        RiderDriverItem.set_Form_Item(belt, W_Rider_Items.MEMORY_MEMORY.asItem(), 4);
+        this.setItemSlot(EquipmentSlot.FEET,belt);
     }
 
 
@@ -133,8 +137,7 @@ public class CoreEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 9.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 180.0D)
-                .add(Attributes.SCALE, 4.0D);
+        		.add(Attributes.MAX_HEALTH, 180.0D);
        
      }
     

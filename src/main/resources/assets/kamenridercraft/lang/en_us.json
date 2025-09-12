@@ -291,6 +291,7 @@
 "effect.kamenridercraft.fire_punch":"Fire Fist",
 "effect.kamenridercraft.explosion_punch":"Explosive Punch",
 "effect.kamenridercraft.fire_shot":"Flame Shot",
+  "effect.kamenridercraft.fire_slash":"Flame Slash",
 "effect.kamenridercraft.explosion_shot":"Explosive Shot",
   "effect.kamenridercraft.thunder_shot":"Thunder Shot",
   "effect.kamenridercraft.thunder_punch":"Thunder Punch",
@@ -338,6 +339,7 @@
   "effect.kamenridercraft.rider_kick":"Rider Kick!",
   "effect.kamenridercraft.rider_poison_hand":"§aRider Dokushu!",
   "effect.kamenridercraft.hazard_level":"Hazard Level",
+  "effect.kamenridercraft.happy_mode":"§dHappy Mode",
 
   "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
   "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",
@@ -465,6 +467,8 @@
   "effect.kamenridercraft.rider_kick.description": "Lets you perform a Rider Kick by pressing your sneak key.",
   "effect.kamenridercraft.rider_poison_hand.desc": "Poisons any mob you hit with an empty hand.",
   "effect.kamenridercraft.rider_poison_hand.description": "Poisons any mob you hit with an empty hand.",
+
+  "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 
   "owner.kamenridercraft.decade":"Decade's %s",
   "owner.kamenridercraft.zi_o":"Zi-O's %s",
