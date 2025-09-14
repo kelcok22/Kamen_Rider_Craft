@@ -657,7 +657,14 @@ public class Ichigo_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zx","zx_belt_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZX_TAB_ITEM));
+            {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZXHELMET = ITEMS.register("zxhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
@@ -902,7 +909,14 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
+            {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
@@ -925,7 +939,14 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
+            {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",
@@ -957,7 +978,14 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .IsGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
+            {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
