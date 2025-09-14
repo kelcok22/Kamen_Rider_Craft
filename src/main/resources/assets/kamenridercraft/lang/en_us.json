@@ -106,6 +106,9 @@
 "painting.kamenridercraft.bloody_rose.title":"Bloody Rose",
 "painting.kamenridercraft.bloody_rose.author":"Toei Company",
 
+  "painting.kamenridercraft.mckuugas.title":"McKuuga's",
+  "painting.kamenridercraft.mckuugas.author":"Toei Company",
+
   "item.kamenridercraft.lets_go_rider_kick_music_disc": "Let's Go!! Rider Kick Music Disc",
   "item.kamenridercraft.lets_go_rider_kick.desc": "HosephHoestar - Let's Go!! Rider Kick",
   "item.kamenridercraft.lets_go_rider_kick_music_disc.desc": "HosephHoestar - Let's Go!! Rider Kick",
@@ -8949,6 +8952,10 @@
   "tag.item.kamenridercraft.gear.candroids": "Candroids",
   "tag.item.kamenridercraft.gear.card_warrior_cards": "Card Warrior Cards",
   "tag.item.kamenridercraft.gear.capsems": "Capsems",
+  "tag.item.kamenridercraft.gear.capsems.physicam": "Physicam Capsems",
+  "tag.item.kamenridercraft.gear.capsems.technolom": "Technolom Capsems",
+  "tag.item.kamenridercraft.gear.capsems.esprim": "Esprim Capsems",
+  "tag.item.kamenridercraft.gear.capsems.paradigm": "Paradigm Capsems",
   "tag.item.kamenridercraft.gear.chaos_rings": "Chaos Rings",
   "tag.item.kamenridercraft.gear.christmas_items": "Christmas Rider Items",
   "tag.item.kamenridercraft.gear.condorer_cores": "Condorer Cores",
@@ -9163,6 +9170,7 @@
   "tag.item.kamenridercraft.gear.legend_rider.rider_cards": "Legend Rider Cards",
   "tag.item.kamenridercraft.gear.legend_rider.ridewatches": "Legend Rider Ridewatches",
   "tag.item.kamenridercraft.gear.legend_rider.vistamps": "Legend Rider Vistamps",
+  "tag.item.kamenridercraft.gear.legend_rider.wizard_rings": "Legend Rider Wizard Rings",
   "tag.item.kamenridercraft.gear.legend_rider.wonder_ride_books": "Legend Rider Wonder Ride Books",
   "tag.item.kamenridercraft.gear.lockseeds": "Lockseeds",
   "tag.item.kamenridercraft.gear.lockseeds.energy": "Energy Lockseeds",

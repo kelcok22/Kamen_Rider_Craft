@@ -1,8 +1,8 @@
 {
   "values": [
-	"kamenridercraft:impact_capsem",
-	"kamenridercraft:stream_capsem",
-	"kamenridercraft:recovery_capsem",
-	"kamenridercraft:wonder_capsem"
+	"#kamenridercraft:gear/capsems/physicam",
+    "#kamenridercraft:gear/capsems/technolom",
+    "#kamenridercraft:gear/capsems/esprim",
+    "#kamenridercraft:gear/capsems/paradigm"
   ]
 }
