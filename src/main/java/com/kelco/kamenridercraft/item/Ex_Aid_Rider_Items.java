@@ -533,7 +533,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-                    .IsGlowing().SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
 	public static final DeferredItem<Item> BANG_BANG_SIMULATION_GASHAT = ITEMS.register("bang_bang_simulation_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"simulation_gamer","snipe","gamer_driver_taddle_fantasy",
@@ -541,7 +541,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-                    .IsGlowing().SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
 	public static final DeferredItem<Item> GASHAT_GEAR_DUAL = ITEMS.register("gashat_gear_dual",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","para_dx_lv99","gamer_driver_gashat_gear_dual",
