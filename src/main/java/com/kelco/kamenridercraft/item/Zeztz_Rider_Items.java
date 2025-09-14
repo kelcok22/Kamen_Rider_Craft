@@ -38,7 +38,22 @@ public class Zeztz_Rider_Items {
                 }
         } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-        public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
+
+    public static final DeferredItem<Item> TRANSFORM_CAPSEM = ITEMS.register("transform_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_physicam_transform","zeztz","zeztz_driver_belt_physicam_transform",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
