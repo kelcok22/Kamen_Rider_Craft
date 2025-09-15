@@ -268,7 +268,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).IsGlowing().hasStaticWings());
+                    ).hasStaticWings());
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI_RYUGA = ITEMS.register("bakuen_no_senshi_ryuga",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_bakuen_no_senshi","ryuga","v_buckle_belt_ryuga",
@@ -279,7 +279,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).IsGlowing().hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
+                    ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI = ITEMS.register("bakuen_no_senshi",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_bakuen_no_senshi","faiz","faiz_driver_belt_b",
@@ -290,7 +290,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).IsGlowing().hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
+                    ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI_DARK_KABUTO = ITEMS.register("jinrai_no_senshi_dark_kabuto",
@@ -329,7 +329,7 @@ public class Modded_item_core {
                         }
                     }
                 }
-            }.IsGlowing().hasStaticWings());
+            }.hasStaticWings());
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI_BLADE = ITEMS.register("jinrai_no_senshi_blade",
@@ -367,7 +367,7 @@ public class Modded_item_core {
                                 }
                             }
                         }
-                    }.IsGlowing().hasStaticWings().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
+                    }.hasStaticWings().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI = ITEMS.register("jinrai_no_senshi",

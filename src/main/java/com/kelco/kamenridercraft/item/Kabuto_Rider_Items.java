@@ -52,7 +52,7 @@ public class Kabuto_Rider_Items {
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","thebee","zect_buckle_belt",
                         new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false))
-                        .IsGlowing());
+                        );
         
         public static final DeferredItem<Item> THEBEE_ZECTER = ITEMS.register("thebee_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","thebee","zect_buckle_belt",
