@@ -178,7 +178,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
-					.addAlternative(DRAGON_FULL_BOTTLE_BUILD.get()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+					.IsGlowing().addAlternative(DRAGON_FULL_BOTTLE_BUILD.get()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> LOCK_FULL_BOTTLE = ITEMS.register("lock_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_lock","build","build_driver_belt")
@@ -604,7 +604,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_MAGMA_FULL_BOTTLE = ITEMS.register("dragon_magma_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_magma","cross_z","build_driver_belt_magma",
@@ -614,7 +614,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREAT_DRAGON_EVOL_BOTTLE = ITEMS.register("great_dragon_evol_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_great","cross_z","build_driver_belt_great",
@@ -623,7 +623,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUSCLE_GALAXY_FULL_BOTTLE = ITEMS.register("muscle_galaxy_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_evol","cross_z","build_driver_belt_evol",
@@ -634,7 +634,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROBOT_SCLASH_JELLY = ITEMS.register("robot_sclash_jelly",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","grease","sclash_driver_belt_grease",
@@ -643,7 +643,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NORTH_BLIZZARD_FULL_BOTTLE = ITEMS.register("north_blizzard_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","grease_blizzard","build_driver_belt_blizzard",
@@ -654,7 +654,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREASE_FULL_BOTTLE = ITEMS.register("grease_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_perfect_kingdom","grease_blizzard","build_driver_belt_perfect_kingdom",
@@ -666,7 +666,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROCODILE_CRACK_FULL_BOTTLE = ITEMS.register("crocodile_crack_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","rogue","sclash_driver_belt_rogue",
@@ -675,7 +675,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PRIME_ROGUE_FULL_BOTTLE = ITEMS.register("prime_rogue_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","prime_rogue","build_driver_belt_prime",
@@ -685,7 +685,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> COBRA_EVOL_BOTTLE = ITEMS.register("cobra_evol_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","evol","evol_driver_belt",
@@ -693,7 +693,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_SYSTEM_EVOL_BOTTLE = ITEMS.register("rider_system_evol_bottle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
@@ -704,7 +704,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RABBIT_EVOL_BOTTLE = ITEMS.register("rabbit_evol_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rabbit","evol","evol_driver_belt_r",
@@ -712,7 +712,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOL_TRIGGER_KAIJIN = ITEMS.register("evol_trigger_kaijin",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kaijin","evol","evol_driver_belt_b",
@@ -734,7 +734,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.addShiftForm(EVOL_TRIGGER_KAIJIN.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().addShiftForm(EVOL_TRIGGER_KAIJIN.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOL_X_FULL_BOTTLE = ITEMS.register("evol_x_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_x","evol","evol_driver_belt_evol_x",
@@ -745,7 +745,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAD_ROGUE_BOTTLES = ITEMS.register("mad_rogue_bottles",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mad_rogue","evol_driver_belt_mad_rogue",
@@ -755,7 +755,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.hasFlyingWings(null));
+					.IsGlowing().hasFlyingWings(null));
 
 	public static final DeferredItem<Item> KILLBUS_SPIDER_FULL_BOTTLE = ITEMS.register("killbus_spider_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","killbus","build_driver_belt_killbus",
@@ -765,7 +765,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_TANK_TANK_FULL_BOTTLE = ITEMS.register("metal_tank_tank_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","metal_build","build_driver_belt_metal",
@@ -773,7 +773,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_FULL_BOTTLE = ITEMS.register("metal_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","phantom_build","build_driver_belt_metal",
@@ -782,7 +782,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOST_BAT_FULL_BOTTLE = ITEMS.register("lost_bat_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"","night_rogue","blank",
@@ -792,7 +792,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.hasFlyingWings(null).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().hasFlyingWings(null).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOST_COBRA_FULL_BOTTLE = ITEMS.register("lost_cobra_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"","blood_stalk","blank",
@@ -800,7 +800,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_LOST_COBRA_FULL_BOTTLE = ITEMS.register("black_lost_cobra_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","blood","build_driver_belt_blood",
@@ -811,7 +811,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
+					.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_BAT_FULL_BOTTLE= ITEMS.register("black_lost_bat_full_bottle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
@@ -858,7 +858,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 4,true,false))
-					.AddNeedItemList(NEED_ITEM_BI_KAISER).model_has_different_name("gear_engine_red").has_basic_model());
+					.IsGlowing().AddNeedItemList(NEED_ITEM_BI_KAISER).model_has_different_name("gear_engine_red").has_basic_model());
 
 	public static final DeferredItem<Item> GEAR_ENGINE_RED = ITEMS.register("gear_engine_red",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_reverse","kaiser","blank",
@@ -867,7 +867,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_REMOCON_BLUE = ITEMS.register("gear_remocon_blue",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kaiser","blank",
@@ -876,7 +876,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-					.addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_HELL_BROS = ITEMS.register("gear_hell_bros",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","hell_bros","blank",
@@ -885,7 +885,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-					.AddNeedItemList(NEED_ITEM_HELL_BROS).model_has_different_name("gear_engine").has_basic_model());
+					.IsGlowing().AddNeedItemList(NEED_ITEM_HELL_BROS).model_has_different_name("gear_engine").has_basic_model());
 
 	public static final DeferredItem<Item> GEAR_ENGINE = ITEMS.register("gear_engine",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_engine","hell_bros","blank",
@@ -893,7 +893,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_REMOCON = ITEMS.register("gear_remocon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_remocon","hell_bros","blank",
@@ -901,7 +901,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-					.addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.IsGlowing().addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUTTOBASOUL_FULL_BOTTLE= ITEMS.register("buttobasoul_full_bottle",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
