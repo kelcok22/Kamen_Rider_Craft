@@ -546,7 +546,8 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.HAPPY_MODE, 40, 4,true,false))
 					.ChangeSlot(5).alsoChange4thSlot(BLANK_SQUARE_ASTROSWITCH.get())
 					.ResetFormToBase().addSwitchForm(FOURZE_BASE_STATES.get())
 					.AddToList(RiderTabs.FOURZE_TAB_ITEM));

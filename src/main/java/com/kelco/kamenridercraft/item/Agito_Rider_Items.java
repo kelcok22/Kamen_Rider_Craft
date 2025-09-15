@@ -246,7 +246,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_X_CHIP = ITEMS.register("g3x",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","g3_x","g_buckle_belt",
@@ -262,7 +262,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_MILD_CHIP = ITEMS.register("g3mild",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_mild","g_buckle_belt",
@@ -276,7 +276,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G4_CHIP = ITEMS.register("g4",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","g4","g_buckle_belt",
@@ -292,7 +292,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
   
     public static final DeferredItem<Item> G4_X_CHIP = ITEMS.register("g4x",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","g4_x","g_buckle_belt",
@@ -308,7 +308,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
     
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g1","g_buckle_belt_1",
@@ -322,7 +322,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
    
     public static final DeferredItem<Item> V1_CHIP = ITEMS.register("v1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","v1","blank",
