@@ -184,7 +184,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 300, 0, 0, 0, 0.1);
 					}
-				}.AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 5));
+				}.IsBeltGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 5));
 	
 	    public static final DeferredItem<Item> GLOWING_KING_STONE_MOON = ITEMS.register("glowing_king_stone_moon",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_revived","shadowmoon","century_king_moon_driver_belt",
@@ -200,7 +200,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 300, 0, 0, 0, 0.1);
 					}
-				} .IsGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
+				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
 
 	    
 	    public static final DeferredItem<Item> BLACKSUNHELMET = ITEMS.register("blacksunhead",

@@ -208,7 +208,8 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.SMALL, 40, 4,true,false))
+					new MobEffectInstance(Effect_core.SMALL, 40, 4,true,false),
+                    new MobEffectInstance(Effect_core.HAPPY_MODE, 40, 4,true,false))
                     .ChangeBeltModel("geo/lv_1_belt.geo.json"));
 
 
