@@ -49,7 +49,7 @@ public class Reboot_Rider_Items {
 						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> CONDORER_CORE_ALPHA_BLIND = ITEMS.register("condorer_core_alpha_blind",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_blind","amazon_alpha","amazons_driver_alpha_belt",
@@ -58,7 +58,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.BLINDNESS, 40, 0,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	
 	    public static final DeferredItem<Item> CONDORER_CORE_OMEGA = ITEMS.register("condorer_core_omega",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_omega","amazons_driver_omega_belt",
@@ -66,7 +66,7 @@ public class Reboot_Rider_Items {
 						,new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> CONDORER_CORE_SIGMA = ITEMS.register("condorer_core_sigma",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_sigma","amazons_driver_sigma_belt",
@@ -74,7 +74,7 @@ public class Reboot_Rider_Items {
 						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO = ITEMS.register("amazon_injector_neo",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_neo","neo_amazons_driver_neo_belt",
@@ -83,7 +83,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
 	            		,new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEW_OMEGA = ITEMS.register("amazon_injector_new_omega",
 	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_alpha","neo_amazons_driver_omega_belt",
@@ -92,7 +92,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.REGENERATION,200, 2,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO_ALPHA = ITEMS.register("amazon_injector_neo_alpha",
 	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_neo_alpha","neo_amazons_driver_neo_belt",
@@ -101,7 +101,7 @@ public class Reboot_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.REGENERATION,200, 2,true,false))
-                        .IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+                        .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    
 	    public static final DeferredItem<Item> AMAZONSHELMET = ITEMS.register("amazonshead",

@@ -383,7 +383,7 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","super_gingaoh","blank",
