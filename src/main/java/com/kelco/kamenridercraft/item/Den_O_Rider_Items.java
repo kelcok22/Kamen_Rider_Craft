@@ -69,7 +69,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_KTAROS = ITEMS.register("super_ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_climax","den_o","den_o_belt_c",
@@ -79,7 +79,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
-                    .IsGlowing().IsBeltGlowing().addNeedItem(KTAROS.get()).hasStaticWings());
+                    .IsGlowing().addNeedItem(KTAROS.get()).hasStaticWings());
 
 	public static final DeferredItem<Item> RIDER_TICKET_WING = ITEMS.register("rider_ticket_wing",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_wing","den_o","den_o_belt_w",
@@ -97,7 +97,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
-                    .IsGlowing().IsBeltGlowing().addNeedItem(KTAROS.get()));
+                    .IsGlowing().addNeedItem(KTAROS.get()));
 
     public static final DeferredItem<Item> ZERONOS_PLAT_CARD = ITEMS.register("zeronos_plat_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","zeronos","zeronos_belt_p",

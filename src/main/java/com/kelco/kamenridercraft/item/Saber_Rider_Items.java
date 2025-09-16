@@ -164,7 +164,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-					.model_has_different_name("genbu_shinwa_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("genbu_shinwa_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> GENBU_SHINWA_WONDER_RIDE_BOOK = ITEMS.register("genbu_shinwa_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"genbu_shinwa","blades","seiken_swordriver_belt"
@@ -179,7 +179,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.model_has_different_name("jackun_to_domamenoki_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("jackun_to_domamenoki_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK_BUSTER = ITEMS.register("jackun_to_domamenoki_wonder_ride_book_buster",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jackun","buster","sword_of_logos_buckle_belt"
@@ -187,7 +187,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
 					.addAlternative(JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK_KENZAN.get())
-					.model_has_different_name("jackun_to_domamenoki_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("jackun_to_domamenoki_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK = ITEMS.register("jackun_to_domamenoki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"jackun_to_domamenoki","saber","seiken_swordriver_belt"
@@ -200,7 +200,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-					.model_has_different_name("sarutobi_ninjaden_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("sarutobi_ninjaden_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> SARUTOBI_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("sarutobi_ninjaden_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"sarutobi_ninjaden","saber","seiken_swordriver_belt"
@@ -215,7 +215,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.model_has_different_name("kobuta_3_kyoudai_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("kobuta_3_kyoudai_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK_KENZAN = ITEMS.register("kobuta_3_kyoudai_wonder_ride_book_kenzan",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kobuta_3_kyoudai","kenzan","sword_of_logos_buckle_belt"
@@ -224,7 +224,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
 					.addAlternative(KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK_SLASH.get())
-					.model_has_different_name("kobuta_3_kyoudai_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("kobuta_3_kyoudai_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK = ITEMS.register("kobuta_3_kyoudai_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kobuta_3_kyoudai","saber","seiken_swordriver_belt"
@@ -237,7 +237,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.model_has_different_name("hanselnuts_to_gretel_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("hanselnuts_to_gretel_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> HANSELNUTS_TO_GRETEL_WONDER_RIDE_BOOK = ITEMS.register("hanselnuts_to_gretel_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"hanselnuts_to_gretel","saber","seiken_swordriver_belt"
@@ -254,7 +254,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false))
-					.model_has_different_name("bremen_no_rock_band_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("bremen_no_rock_band_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> BREMEN_NO_ROCK_BAND_WONDER_RIDE_BOOK_SLASH = ITEMS.register("bremen_no_rock_band_wonder_ride_book_slash",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bremen_no_rock_band","slash","sword_of_logos_buckle_belt"
@@ -263,7 +263,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
 					.addAlternative(BREMEN_NO_ROCK_BAND_WONDER_RIDE_BOOK_BUSTER.get())
-					.model_has_different_name("bremen_no_rock_band_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("bremen_no_rock_band_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> BREMEN_NO_ROCK_BAND_WONDER_RIDE_BOOK = ITEMS.register("bremen_no_rock_band_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"bremen_no_rock_band","saber","seiken_swordriver_belt"
@@ -276,7 +276,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-					.model_has_different_name("jaaku_dragon_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("jaaku_dragon_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> JAAKU_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("jaaku_dragon_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"jaaku_dragon","blades","seiken_swordriver_belt"
@@ -292,7 +292,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book_shadow",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saikou","seiken_saikou_driver_belt_saikou"
@@ -319,7 +320,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-					.model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL = ITEMS.register("x_swordman_wonder_ride_book_powerful",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_swordman_powerful","saikou","seiken_saikou_driver_belt_p"
@@ -331,7 +332,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 					.addNeedForm(X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL.get(), 1).addAlternative(X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL.get())
-					.model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK = ITEMS.register("x_swordman_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_x_swordman_wonderful","saikou","seiken_saikou_driver_belt_w"
@@ -342,7 +343,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-					.addNeedForm(X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL.get(), 1).addAlternative(X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL.get()).AddToList(RiderTabs.SABER_TAB_ITEM));
+                    .IsGlowing().addNeedForm(X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL.get(), 1).addAlternative(X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL.get()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KONCHUU_DAIHYAKKA_WONDER_RIDE_BOOK = ITEMS.register("konchuu_daihyakka_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","sabela","royal_sword_of_logos_buckle_belt"
@@ -350,7 +351,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> OCEAN_HISTORY_WONDER_RIDE_BOOK = ITEMS.register("ocean_history_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","durendal","royal_sword_of_logos_buckle_belt"
@@ -359,7 +361,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> OMNI_FORCE_WONDER_RIDE_BOOK = ITEMS.register("omni_force_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","solomon","dooms_driver_buckle_belt"
@@ -368,7 +371,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRIMOIRE_WONDER_RIDE_BOOK = ITEMS.register("grimoire_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","storious","dooms_driver_buckle_belt_storious"
@@ -377,7 +381,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> TASSEL_DARK_WONDER_RIDE_BOOK = ITEMS.register("tassel_dark_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","tassel","haken_bladriver_belt_tassel"
@@ -386,7 +391,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ETERNAL_PHOENIX_WONDER_RIDE_BOOK_FALCHION = ITEMS.register("eternal_phoenix_wonder_ride_book_falchion",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","falchion","haken_bladriver_belt"
@@ -394,7 +400,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.model_has_different_name("eternal_phoenix_wonder_ride_book").has_basic_model());
+                    .IsGlowing().model_has_different_name("eternal_phoenix_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> ETERNAL_PHOENIX_WONDER_RIDE_BOOK = ITEMS.register("eternal_phoenix_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"eternal_phoenix","blades","seiken_swordriver_belt"
@@ -413,7 +419,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIRIN_NO_ONGAESHI_WONDER_RIDE_BOOK = ITEMS.register("kirin_no_ongaeshi_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kirin_no_ongaeshi","saber","seiken_swordriver_belt"
@@ -588,7 +595,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
+                    .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> TELEVI_KUN_WONDER_RIDE_BOOK = ITEMS.register("televi_kun_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"televi_kun","saber","seiken_swordriver_belt"
