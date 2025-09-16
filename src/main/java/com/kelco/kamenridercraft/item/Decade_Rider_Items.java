@@ -527,7 +527,7 @@ public class Decade_Rider_Items {
                 	new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                 	new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 	new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KABUTO_MASKED_CARD = ITEMS.register("kabuto_masked_card",
