@@ -218,7 +218,21 @@ public class W_Rider_Items {
             }.IsGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM));
 
 
-	public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
+    public static final DeferredItem<Item> ACCEL_MEMORY_BIKE = ITEMS.register("accel_memory_bike",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_bike_form","accel","blank",
+                    new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 50,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 9,true,false),
+                    new MobEffectInstance(Effect_core.STEP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.1);
+                }
+            }.ChangeModel("accel_bike.geo.json").ChangeAnimation("lazer_lv2.animation.json").IsGlowing().has_basic_model().model_has_different_name("accel_memory"));
+
+    public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","accel","acceldriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -231,7 +245,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
+            }.addSwitchForm(ACCEL_MEMORY_BIKE.get()).IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trial","accel","acceldriver_belt_t",
