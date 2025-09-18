@@ -84,7 +84,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon("kamenridercraft:rabbittank_sparkling_full_bottle", "kamenridercraft:drill_crusher_crusher", "kamenridercraft:ride_heisaber")
 					.addAltWeapon("kamenridercraft:zi_o_ii_ridewatch", "kamenridercraft:saikyo_girade")
 					.addAltWeapon("kamenridercraft:zi_o_trinity_ridewatch", "kamenridercraft:zikan_zax", "kamenridercraft:zikan_despear")
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_decade","zi_o","ziku_driver_zi_o_belt_decade",
@@ -117,7 +117,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Decade_Rider_Items.G4_GIGANT_CARD.get(), Agito_Rider_Items.G4_GIGANT.get())
 					.addAltWeapon(Decade_Rider_Items.RYUKI_STRIKE_VENT_CARD.get(), Ryuki_Rider_Items.DRAG_CLAW.get())
 					.addAltWeapon(Decade_Rider_Items.HIBIKI_ONGEKIBOU_REKKA_CARD.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_II_RIDEWATCH = ITEMS.register("zi_o_ii_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_ii","zi_o","ziku_driver_zi_o_belt_zi_o_ii",
@@ -125,7 +125,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_TRINITY_RIDEWATCH = ITEMS.register("zi_o_trinity_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trinity","zi_o","ziku_driver_zi_o_belt_trinity",
@@ -134,7 +134,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRAND_ZI_O_RIDEWATCH = ITEMS.register("grand_zi_o_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_grand","zi_o","ziku_driver_zi_o_belt_grand",
@@ -147,7 +147,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> OHMA_ZI_O_RIDEWATCH = ITEMS.register("ohma_zi_o_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_ohma","zi_o","ziku_driver_zi_o_belt_ohma",
@@ -162,14 +162,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_RIDEWATCH = ITEMS.register("geiz_ridewatch",
 			() -> new GeizRidewatchItem(new Item.Properties(),0,"","geiz","ziku_driver_geiz_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_SHIPPU_RIDEWATCH = ITEMS.register("geiz_revive_shippu_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_shippu","geiz","ziku_driver_geiz_belt_revive",
@@ -177,7 +177,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().model_has_different_name("geiz_revive_ridewatch").has_basic_model());
+                    .IsGlowing().IsBeltGlowing().model_has_different_name("geiz_revive_ridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_RIDEWATCH = ITEMS.register("geiz_revive_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_revive_goretsu","geiz","ziku_driver_geiz_belt_revive",
@@ -185,7 +185,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_MAJESTY_RIDEWATCH = ITEMS.register("geiz_majesty_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_majesty","geiz","ziku_driver_geiz_belt_majesty",
@@ -198,49 +198,49 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> TSUKUYOMI_RIDEWATCH = ITEMS.register("tsukuyomi_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","tsukuyomi","ziku_driver_tsukuyomi_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_MIRIDEWATCH = ITEMS.register("woz_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_MIRROR_RIDEWATCH = ITEMS.register("zi_o_mirror_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zi_o_mirror","ziku_driver_zi_o_mirror_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BARLCKXS_RIDEWATCH = ITEMS.register("barlckxs_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","barlckxs","ziku_driver_barlckxs_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZONJIS_RIDEWATCH = ITEMS.register("zonjis_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zonjis","ziku_driver_zonjis_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZAMONAS_RIDEWATCH = ITEMS.register("zamonas_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zamonas","ziku_driver_zamonas_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KUUGA_RIDEWATCH = ITEMS.register("kuuga_ridewatch",
@@ -258,7 +258,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_TITAN.get(), Kuuga_Rider_Items.TITAN_SWORD.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_TITAN.get(), Kuuga_Rider_Items.TITAN_SWORD.get())
 					.addAltWeapon(Modded_item_core.GRANDGOURAM.get(), Modded_item_core.GRANDGOURAM_ROD.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_RIDEWATCH = ITEMS.register("agito_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_agito","zi_o","ziku_driver_zi_o_belt_agito",
@@ -273,7 +273,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Agito_Rider_Items.AGITO_TRINITY.get(), Agito_Rider_Items.FLAME_SABER.get(), Agito_Rider_Items.STORM_HALBERD.get())
 					.addAltWeapon(Agito_Rider_Items.AGITO_BURNING.get(), Agito_Rider_Items.SHINING_CALIBER.get())
 					.addAltWeapon(Agito_Rider_Items.AGITO_SHINING.get(), Agito_Rider_Items.SHINING_CALIBER_TWIN.get(), Agito_Rider_Items.SHINING_CALIBER_TWIN.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_RYUKI_RIDEWATCH = ITEMS.register("decade_ryuki_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ryuki","zi_o","ziku_driver_zi_o_belt_decade_ryuki",
@@ -281,7 +281,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> RYUKI_RIDEWATCH = ITEMS.register("ryuki_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_ryuki","zi_o","ziku_driver_zi_o_belt_ryuki",
@@ -300,7 +300,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Ryuki_Rider_Items.DRAG_SHIELD_VENT.get(), Ryuki_Rider_Items.DRAG_SHIELD.get(), Ryuki_Rider_Items.DRAG_SHIELD.get())
 					.addAltWeapon(Ryuki_Rider_Items.DRAG_VISOR_ZWEI_VENT.get(), Ryuki_Rider_Items.DRAG_VISOR_ZWEI.get())
 					.addAltWeapon(Ryuki_Rider_Items.DRAG_BLADE_VENT.get(), Ryuki_Rider_Items.DRAG_BLADE.get())
-                    .IsGlowing().AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_RYUKI_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_RYUKI_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_FAIZ_RIDEWATCH = ITEMS.register("decade_faiz_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_faiz","zi_o","ziku_driver_zi_o_belt_decade_faiz",
@@ -308,7 +308,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> FAIZ_RIDEWATCH = ITEMS.register("faiz_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_faiz","geiz","ziku_driver_geiz_belt_faiz",
@@ -325,7 +325,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
 					.addAltWeapon(Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
 					.addAltWeapon(Modded_item_core.BAKUEN_NO_SENSHI.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
-                    .IsGlowing().AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_FAIZ_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_FAIZ_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_RIDEWATCH = ITEMS.register("blade_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_blade","zi_o","ziku_driver_zi_o_belt_blade",
@@ -340,7 +340,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Blade_Rider_Items.EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
 					.addAltWeapon(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
 					.addAltWeapon(Modded_item_core.HERCULESPADER.get(), Modded_item_core.HERCULESPADER_SWORD.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_RIDEWATCH = ITEMS.register("hibiki_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_hibiki","zi_o","ziku_driver_zi_o_belt_hibiki",
@@ -353,7 +353,7 @@ public class Zi_O_Rider_Items {
 					.addAltForm(Modded_item_core.BAKUEN_NO_SENSHI.get(), (RiderFormChangeItem)Modded_item_core.BAKUEN_NO_SENSHI_HIBIKI.get())
 					.addAltForm(Hibiki_Rider_Items.ARMED_SABER.get(), (RiderFormChangeItem)Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get())
 					.addAltWeapon(Hibiki_Rider_Items.ARMED_SABER.get(), Hibiki_Rider_Items.ARMED_SABER.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_RIDEWATCH = ITEMS.register("kabuto_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_kabuto","zi_o","ziku_driver_zi_o_belt_kabuto",
@@ -366,7 +366,7 @@ public class Zi_O_Rider_Items {
 					.addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get())
 					.addAltForm(Kabuto_Rider_Items.KABUTO_ZECTER.get(), (RiderFormChangeItem)Kabuto_Rider_Items.KABUTO_ZECTER_MASK.get())
 					.addAltWeapon(Kabuto_Rider_Items.HYPER_ZECTER.get(), Kabuto_Rider_Items.PERFECT_ZECTER.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_RIDEWATCH = ITEMS.register("den_o_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_den_o","zi_o","ziku_driver_zi_o_belt_den_o",
@@ -385,7 +385,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_WING.get(), Den_O_Rider_Items.DEN_GASHER_HANDAX.get(), Den_O_Rider_Items.DEN_GASHER_BOOMERANG.get())
 					.addAltWeapon(Den_O_Rider_Items.DENKAMEN_SWORD.get(), Den_O_Rider_Items.DENKAMEN_SWORD.get())
 					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_PUDDING.get(), Den_O_Rider_Items.DEN_GASHER_PUDDING.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVA_RIDEWATCH = ITEMS.register("kiva_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_kiva","zi_o","ziku_driver_zi_o_belt_kiva",
@@ -403,7 +403,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Kiva_Rider_Items.TATSULOT.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
 					.addAltWeapon(Kiva_Rider_Items.KIVATTE_FUESTLE.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
 					.addAltWeapon(Kiva_Rider_Items.ZANVAT_SWORD.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get(), Kiva_Rider_Items.GARULU_SABER.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> W_RIDEWATCH = ITEMS.register("w_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_w","zi_o","ziku_driver_zi_o_belt_w",
@@ -424,7 +424,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(W_Rider_Items.XTREME_MEMORY.get(), W_Rider_Items.PRISM_BICKER.get(), W_Rider_Items.SHIELD_PRISM_BICKER.get())
 					.addAltWeapon(W_Rider_Items.XTREME_GOLD_MEMORY.get(), W_Rider_Items.PRISM_BICKER.get(), W_Rider_Items.SHIELD_PRISM_BICKER.get())
 					.addAltWeapon(W_Rider_Items.XTREME_ACCEL_MEMORY.get(), W_Rider_Items.PRISM_BICKER.get(), W_Rider_Items.SHIELD_PRISM_BICKER.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_OOO_RIDEWATCH = ITEMS.register("decade_ooo_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ooo","zi_o","ziku_driver_zi_o_belt_decade_ooo",
@@ -432,7 +432,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> OOO_RIDEWATCH = ITEMS.register("ooo_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_ooo","zi_o","ziku_driver_zi_o_belt_ooo",
@@ -549,7 +549,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get(), OOO_Rider_Items.TAJASPINNER_ETERNITY.get())
 					.addAltWeapon(OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get(), OOO_Rider_Items.TAJASPINNER_ETERNITY.get())
 					.addAltWeapon(OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get(), OOO_Rider_Items.TAJASPINNER_ETERNITY.get())
-                            .IsGlowing().AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_OOO_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_OOO_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_RIDEWATCH = ITEMS.register("fourze_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_fourze","zi_o","ziku_driver_zi_o_belt_fourze",
@@ -573,7 +573,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Fourze_Rider_Items.SHIELD_ASTROSWITCH.get(), Fourze_Rider_Items.SHIELD_MODULE.get())
 					.addAltWeapon(Fourze_Rider_Items.FIRE_ASTROSWITCH.get(), Fourze_Rider_Items.HEE_HACKGUN.get())
 					.addAltWeapon(Fourze_Rider_Items.COSMIC_ASTROSWITCH.get(), Fourze_Rider_Items.BARIZUN_SWORD.get())
-                            .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_RIDEWATCH = ITEMS.register("wizard_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_wizard","geiz","ziku_driver_geiz_belt_wizard",
@@ -588,7 +588,7 @@ public class Zi_O_Rider_Items {
 							.addAltForm(Wizard_Rider_Items.FALCO_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.FALCO_RING_WIZARD.get())
 							.addAltForm(Wizard_Rider_Items.BUFFA_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.BUFFA_RING_WIZARD.get())
 							.addAltWeapon(Wizard_Rider_Items.INFINITY_WIZARD_RING.get(), Wizard_Rider_Items.AXCALIBUR.get())
-                            .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 			public static final DeferredItem<Item> GAIM_RIDEWATCH = ITEMS.register("gaim_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_gaim","zi_o","ziku_driver_zi_o_belt_gaim",
@@ -665,7 +665,7 @@ public class Zi_O_Rider_Items {
 							.addAltWeapon(Gaim_Rider_Items.RIDER_ICHIGO_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
 							.addAltWeapon(Gaim_Rider_Items.SHOWA_RIDER_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
 							.addAltWeapon(Gaim_Rider_Items.HEISEI_RIDER_LOCKSEED.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
-                            .IsGlowing().ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 			public static final DeferredItem<Item> DRIVE_RIDEWATCH = ITEMS.register("drive_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_drive","geiz","ziku_driver_geiz_belt_drive",
@@ -706,7 +706,7 @@ public class Zi_O_Rider_Items {
 							.addAltWeapon(Drive_Rider_Items.SHIFT_SPARNER_F03.get(), Drive_Rider_Items.TRAILER_HOU.get())
 							.addAltForm(Drive_Rider_Items.SHIFT_MEGA_MAX_FLARE.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_HIGH_SPEED.get())
 							.addAltBelt(Drive_Rider_Items.TRIDORON_KEY.get(), (RiderDriverItem)Drive_Rider_Items.MACH_DRIVER_HONOH_DRIVE.get())
-                            .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_GHOST_RIDEWATCH = ITEMS.register("decade_ghost_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ghost","zi_o","ziku_driver_zi_o_belt_decade_ghost",
@@ -714,7 +714,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH_ZI_O = ITEMS.register("ghost_ridewatch_zi_o",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","zi_o","ziku_driver_zi_o_belt_ghost",
@@ -723,7 +723,7 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_GHOST_RIDEWATCH.get())
-                            .IsGlowing().model_has_different_name("ghost_ridewatch").has_basic_model());
+                            .IsGlowing().IsBeltGlowing().model_has_different_name("ghost_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH = ITEMS.register("ghost_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_ghost","geiz","ziku_driver_geiz_belt_ghost",
@@ -772,7 +772,7 @@ public class Zi_O_Rider_Items {
 							.addAltWeapon(Ghost_Rider_Items.GAIM_GHOST_EYECON.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
 							.addAltWeapon(Ghost_Rider_Items.DRIVE_GHOST_EYECON.get(), Drive_Rider_Items.HANDLE_KEN.get(), Drive_Rider_Items.DOOR_JU.get())
 							.addAltForm(Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.FOURTYFIVE_HEISEI_DAMASHII.get(), (RiderFormChangeItem)Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get())
-                            .IsGlowing().addAlternative(GHOST_RIDEWATCH_ZI_O.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().addAlternative(GHOST_RIDEWATCH_ZI_O.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_R = ITEMS.register("decade_ex_aid_ridewatch_r",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ex_aid_r","zi_o","ziku_driver_zi_o_belt_decade_ex_aid",
@@ -780,7 +780,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_L = ITEMS.register("decade_ex_aid_ridewatch_l",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ex_aid_l","zi_o","ziku_driver_zi_o_belt_decade_ex_aid",
@@ -788,7 +788,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().addSwitchForm(DECADE_EX_AID_RIDEWATCH_R.get()).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().addSwitchForm(DECADE_EX_AID_RIDEWATCH_R.get()).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 			public static final DeferredItem<Item> EX_AID_RIDEWATCH_GEIZ = ITEMS.register("ex_aid_ridewatch_geiz",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ex_aid","geiz","ziku_driver_geiz_belt_ex_aid",
@@ -796,7 +796,7 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-                            .IsGlowing().model_has_different_name("ex_aid_ridewatch").has_basic_model());
+                            .IsGlowing().IsBeltGlowing().model_has_different_name("ex_aid_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> EX_AID_RIDEWATCH = ITEMS.register("ex_aid_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_ex_aid","zi_o","ziku_driver_zi_o_belt_ex_aid",
@@ -822,7 +822,7 @@ public class Zi_O_Rider_Items {
 							.addAltWeapon(Ex_Aid_Rider_Items.INSECT_WARS_KABUTO_GASHAT.get(), Kabuto_Rider_Items.KABUTO_KUNAI.get())
 							.addAltWeapon(Ex_Aid_Rider_Items.MIRROR_LABRYINTH_RYUKI_GASHAT.get(), Ryuki_Rider_Items.DRAG_SABER.get())
 							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).AddIncompatibleForm(DECADE_EX_AID_RIDEWATCH_L.asItem()).AddIncompatibleForm(DECADE_EX_AID_RIDEWATCH_R.asItem())
-                            .IsGlowing().addAlternative(DECADE_EX_AID_RIDEWATCH_L.get()).addAlternative(EX_AID_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().addAlternative(DECADE_EX_AID_RIDEWATCH_L.get()).addAlternative(EX_AID_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_BUILD_RIDEWATCH = ITEMS.register("decade_build_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_build","zi_o","ziku_driver_zi_o_belt_decade_build",
@@ -830,7 +830,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> BUILD_RIDEWATCH_GEIZ = ITEMS.register("build_ridewatch_geiz",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","geiz","ziku_driver_geiz_belt_build",
@@ -839,7 +839,7 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 							.addAlternative(DECADE_BUILD_RIDEWATCH.get())
-                            .IsGlowing().model_has_different_name("build_ridewatch").has_basic_model());
+                            .IsGlowing().IsBeltGlowing().model_has_different_name("build_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> BUILD_RIDEWATCH = ITEMS.register("build_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_build","zi_o","ziku_driver_zi_o_belt_build",
@@ -941,7 +941,7 @@ public class Zi_O_Rider_Items {
 							.addAltWeapon(Build_Rider_Items.DOCTOR_FULL_BOTTLE.get(), Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
 							.addAltWeapon(Build_Rider_Items.GAME_FULL_BOTTLE.get(), Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
 							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).AddIncompatibleForm(DECADE_BUILD_RIDEWATCH.asItem())
-                            .IsGlowing().addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                            .IsGlowing().IsBeltGlowing().addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_RIDEWATCH = ITEMS.register("zero_one_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -952,7 +952,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> REVI_RIDEWATCH = ITEMS.register("revi_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -999,7 +999,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Ex_Aid_Rider_Items.TAIKO_MASTER_HIBIKI_GASHAT.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
 					.addAltWeapon(Ex_Aid_Rider_Items.KING_OF_POKER_BLADE_GASHAT.get(), Blade_Rider_Items.BLAYROUZER.get())
 					.addAltWeapon(Ex_Aid_Rider_Items.MOSHI_MOSHI_FAIZ_GASHAT.get(), Faiz_Rider_Items.FAIZ_EDGE.get())
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_RIDEWATCH = ITEMS.register("woz_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_woz","zi_o","ziku_driver_zi_o_belt_woz",
@@ -1008,14 +1008,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIBIRU_GEIZ_RIDEWATCH = ITEMS.register("bibiru_geiz_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bibiru","geiz","ziku_driver_geiz_belt_bibiru",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDEWATCH = ITEMS.register("kuuga_ultimate_ridewatch",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1110,7 +1110,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
 					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.BIO_CORE.get()).addSummonWeapon(Ichigo_Rider_Items.BIOBLADE.get())
-					.SetPalyerModelInvisible().IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					.SetPalyerModelInvisible().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_RIDEWATCH = ITEMS.register("shin_ridewatch",
 			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
