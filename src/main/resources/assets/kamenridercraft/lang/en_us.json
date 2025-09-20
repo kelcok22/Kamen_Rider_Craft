@@ -3469,6 +3469,7 @@
   "kamenridercraft:eternal_memory.form": "Form: Eternal Red Flare",
 
   "kamenridercraft:accel_memory.form": "Form: Accel",
+  "kamenridercraft:accel_memory_bike.form": "Form: Accel BikeForm",
   "kamenridercraft:trial_memory.form": "Form: Trial",
   "kamenridercraft:accel_booster_memory.form": "Form: Accel Booster",
 
@@ -4258,7 +4259,9 @@
   "item.kamenridercraft.kiva_ring": "Kiva Wizard Ring",
   "item.kamenridercraft.decade_ring": "Decade Wizard Ring",
   "item.kamenridercraft.double_ring": "Double Wizard Ring",
+  "item.kamenridercraft.accel_ring": "Accel Wizard Ring",
   "item.kamenridercraft.ooo_ring": "OOO Wizard Ring",
+  "item.kamenridercraft.birth_ring": "Birth Wizard Ring",
   "item.kamenridercraft.fourze_ring": "Fourze Wizard Ring",
   "item.kamenridercraft.fourze_engage_ring": "Fourze Engage Wizard Ring",
   "item.kamenridercraft.super_sentai_ring": "Super Sentai Wizard Ring",
@@ -9595,7 +9598,7 @@
   "advancements.kamenridercraft.extras.no_2.description": "Transform into Kamen Rider No. 2",
   "advancements.kamenridercraft.extras.no_2.title": "Two is Greater Than One",
   "advancements.kamenridercraft.extras.norider.description": "Transform into Kamen Norider",
-  "advancements.kamenridercraft.extras.norider.title": "You’re no rider…",
+  "advancements.kamenridercraft.extras.norider.title": "You're no Rider…",
   "advancements.kamenridercraft.extras.shadowmoon.description": "Transform into Kamen Rider Shadowmoon",
   "advancements.kamenridercraft.extras.shadowmoon.title": "A Shade of Lunar",
   "advancements.kamenridercraft.fourze.billy_the_rod.description": "Obtain the Billy the Rod",
