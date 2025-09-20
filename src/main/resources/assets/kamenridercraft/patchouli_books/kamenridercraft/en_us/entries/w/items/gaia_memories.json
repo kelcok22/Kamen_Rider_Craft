@@ -158,7 +158,7 @@
 			"type": "patchouli:text",
 			"anchor": "accel_memory",
 			"title": "Accel Memory",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to craft Accel's $(l:w/devices/acceldriver)Acceldriver$(/l)$(br2)Used to access Accel's $(l:w/riders/accel#accel)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to craft Accel's $(l:w/devices/acceldriver)Acceldriver$(/l)$(br2)Used to access Accel's $(l:w/riders/accel#accel)base$(/l) form and $(l:w/riders/accel#bikeform)BikeForm$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

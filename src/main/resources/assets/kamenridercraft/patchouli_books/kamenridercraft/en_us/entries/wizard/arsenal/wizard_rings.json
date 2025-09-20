@@ -459,6 +459,19 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "accel_ring",
+        "title": "Accel Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)$(br2)Summons $(l:w/riders/accel)Kamen Rider Accel$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:accel_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "ooo_ring",
         "title": "OOO Wizard Ring",
         "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Summons $(l:ooo/riders/ooo)Kamen Rider OOO$(/l)"
@@ -467,6 +480,19 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:ooo_ring",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "birth_ring",
+        "title": "Birth Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)$(br2)Summons $(l:w/riders/birth)Kamen Rider Birth$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:birth_ring",
         "title": " ",
         "text": "Item is currently unobtainable"
       },

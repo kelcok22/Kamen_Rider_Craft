@@ -559,7 +559,7 @@ public class Wizard_Rider_Items {
     public static final DeferredItem<Item> KUUGA_WIZARD_RING = ITEMS.register("kuuga_ring",
             () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
-    public static final DeferredItem<Item> Agito_WIZARD_RING = ITEMS.register("agito_ring",
+    public static final DeferredItem<Item> AGITO_WIZARD_RING = ITEMS.register("agito_ring",
             () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Agito_Rider_Items.ALTERING.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_WIZARD_RING = ITEMS.register("ryuki_ring",
@@ -589,8 +589,14 @@ public class Wizard_Rider_Items {
     public static final DeferredItem<Item> DOUBLE_WIZARD_RING = ITEMS.register("double_ring",
             () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)W_Rider_Items.WDRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
+    public static final DeferredItem<Item> ACCEL_WIZARD_RING = ITEMS.register("accel_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)W_Rider_Items.ACCELDRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
     public static final DeferredItem<Item> OOO_WIZARD_RING = ITEMS.register("ooo_ring",
             () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)OOO_Rider_Items.OOODRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> BIRTH_WIZARD_RING = ITEMS.register("birth_ring",
+            () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)OOO_Rider_Items.BIRTH_DRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_WIZARD_RING = ITEMS.register("fourze_ring",
             () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Fourze_Rider_Items.FOURZE_DRIVER.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));

@@ -312,7 +312,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:frappeis_gochizo",
 			"title": " ",
-			"text": "Obtained by drinking $(l:misc/items/foods#coffee)Coffee$(/l) with a $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizo$(/l) in your inventory"
+			"text": "Obtained by drinking $(l:misc/items/foods#coffee)Coffee$(/l) or eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
