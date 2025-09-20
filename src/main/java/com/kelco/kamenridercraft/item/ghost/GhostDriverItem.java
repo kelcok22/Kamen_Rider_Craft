@@ -97,11 +97,8 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
         }
         if (isTransformed(livingEntity)){
             switch (currentSlot) {
-                case HEAD ->{
+                case HEAD,CHEST, LEGS ->{
                     return true;
-                }
-                case CHEST, LEGS -> {
-                    return false;
                 }
                 default -> {}
             }
