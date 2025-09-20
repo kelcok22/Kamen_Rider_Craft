@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.entities.summons;
 
 
-import java.util.Iterator;
 import java.util.UUID;
 
 import javax.annotation.Nullable;
@@ -117,7 +116,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	}
    
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
    
 	protected void defineSynchedData(SynchedEntityData.Builder builder) {
@@ -210,7 +209,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	   }
 
     public void reassessWeaponGoal() {
-        if (this.level() != null && !this.level().isClientSide) {
+        if (!this.level().isClientSide) {
             this.swordgunGoal.setMinAttackInterval(this.BOW_COOLDOWN);
             this.bowGoal.setMinAttackInterval(this.BOW_COOLDOWN);
             this.goalSelector.removeGoal(this.meleeGoal);
@@ -232,16 +231,14 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		super.addAdditionalSaveData(p_30418_);
 		this.addPersistentAngerSaveData(p_30418_);
 		ListTag armor = new ListTag();
-		Iterator<ItemStack> armorCount = this.REQUIRED_ARMOR.iterator();
-   
-		while(armorCount.hasNext()) {
-		ItemStack itemstack = (ItemStack)armorCount.next();
-		if (!itemstack.isEmpty()) {
-		   armor.add(itemstack.save(this.registryAccess()));
-		} else {
-		   armor.add(new CompoundTag());
-		}
-		}
+
+          for (ItemStack itemstack : this.REQUIRED_ARMOR) {
+              if (!itemstack.isEmpty()) {
+                  armor.add(itemstack.save(this.registryAccess()));
+              } else {
+                  armor.add(new CompoundTag());
+              }
+          }
    
 		p_30418_.put("RequiredArmorItems", armor);
 		p_30418_.put("RequiredForms", this.REQUIRED_FORMS);
@@ -324,7 +321,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	
     public void setItemSlot(EquipmentSlot p_32138_, ItemStack p_32139_) {
        super.setItemSlot(p_32138_, p_32139_);
-       if (this.level() != null && !this.level().isClientSide) this.reassessWeaponGoal();
+       if (!this.level().isClientSide) this.reassessWeaponGoal();
     }
 
     public void performRangedAttack(LivingEntity target, float distanceFactor) {
@@ -413,12 +410,14 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
         } else if (target instanceof Wolf wolf) {
             return !wolf.isTame() || wolf.getOwner() != owner;
         } else {
-            if (target instanceof ArmorStand) return false;
-            if (target instanceof Player player && owner instanceof Player player1 && !player1.canHarmPlayer(player)) return false;
-            if (target instanceof AbstractHorse abstracthorse && abstracthorse.isTamed()) return false;
-            if (target instanceof TamableAnimal tamableanimal && tamableanimal.isTame()) return false;
+            return switch (target) {
+                case ArmorStand armorStand -> false;
+                case Player player when owner instanceof Player player1 && !player1.canHarmPlayer(player) -> false;
+                case AbstractHorse abstracthorse when abstracthorse.isTamed() -> false;
+                case TamableAnimal tamableanimal when tamableanimal.isTame() -> false;
+                default -> true;
+            };
 
-            return true;
         }
     }
 }

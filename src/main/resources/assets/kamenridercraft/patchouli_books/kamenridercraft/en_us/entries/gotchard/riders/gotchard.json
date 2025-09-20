@@ -338,7 +338,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Gotchard",
-        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Strength VII (with weapon)$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Regeneration$(li)Haste V$(li)Saturation$(li)Jump Boost VI$(li)Boost III$(li)Fire Resistance"
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Can summon $(l:gotchard/riders/gotcharbrothers)Gotcharbrothers$(/l) by shift-clicking $(l:gotchard/items/ride_chemy_cards)Ride Chemy Cards$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Strength VII (with weapon)$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Regeneration$(li)Haste V$(li)Saturation$(li)Jump Boost VI$(li)Boost III$(li)Fire Resistance"
       },
       {
         "type": "patchouli:entity",
