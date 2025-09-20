@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "hopper1_ride_chemy_card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard's $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#steamhopper)Steamhopper$(/l)$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#steamhopper)Gotcharbrothers Steamhopper$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard's $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#steamhopper)Steamhopper$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#steamhopper)Gotcharbrothers Steamhopper$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "pikahotaru_ride_chemy_card",
 			"title": "Pikahotaru Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#smahotaru)Smahotaru$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#smahotaru)Gotcharbrothers Smahotaru$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#smahotaru)Smahotaru$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#smahotaru)Gotcharbrothers Smahotaru$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -33,7 +33,7 @@
 			"type": "patchouli:text",
 			"anchor": "gengenchoucho_ride_chemy_card",
 			"title": "Gengenchoucho Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bulletchoucho)Bulletchoucho$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#bulletchoucho)Gotcharbrothers Bulletchoucho$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bulletchoucho)Bulletchoucho$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#bulletchoucho)Gotcharbrothers Bulletchoucho$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -59,7 +59,7 @@
 			"type": "patchouli:text",
 			"anchor": "antrooper_ride_chemy_card",
 			"title": "Antrooper Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#antwrestler)Gotcharbrothers Antwrestler$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#antwrestler)Gotcharbrothers Antwrestler$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -111,7 +111,7 @@
 			"type": "patchouli:text",
 			"anchor": "kamantis_ride_chemy_card",
 			"title": "Kamantis Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#odorimantis)Odorimantis$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#odorimantis)Gotcharbrothers Odorimantis$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#odorimantis)Odorimantis$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#odorimantis)Gotcharbrothers Odorimantis$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -135,7 +135,7 @@
 			"type": "patchouli:text",
 			"anchor": "odorippa_ride_chemy_card",
 			"title": "Odorippa Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#odorimantis)Odorimantis$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#odorimantis)Gotcharbrothers Odorimantis$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#odorimantis)Odorimantis$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#odorimantis)Gotcharbrothers Odorimantis$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -148,7 +148,7 @@
 			"type": "patchouli:text",
 			"anchor": "dokkirimajin_ride_chemy_card",
 			"title": "Dokkirimajin Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#dokkirishovel)Dokkirishovel$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#dokkirishovel)Gotcharbrothers Dokkirishovel$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#dokkirishovel)Dokkirishovel$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#dokkirishovel)Gotcharbrothers Dokkirishovel$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -174,7 +174,7 @@
 			"type": "patchouli:text",
 			"anchor": "pilets_ride_chemy_card",
 			"title": "Pilets Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#madpirates)Madpirates$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#madpirates)Gotcharbrothers Madpirates$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#madpirates)Madpirates$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#madpirates)Gotcharbrothers Madpirates$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -187,7 +187,7 @@
 			"type": "patchouli:text",
 			"anchor": "wrestler_g_ride_chemy_card",
 			"title": "Wrestler G Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#antwrestler)Gotcharbrothers Antwrestler$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#antwrestler)Gotcharbrothers Antwrestler$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -200,7 +200,7 @@
 			"type": "patchouli:text",
 			"anchor": "sasukemaru_ride_chemy_card",
 			"title": "Sasukemaru Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#energymaru)Energymaru$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#energymaru)Gotcharbrothers Energymaru$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#energymaru)Energymaru$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#energymaru)Gotcharbrothers Energymaru$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -213,7 +213,7 @@
 			"type": "patchouli:text",
 			"anchor": "bulletbaang_ride_chemy_card",
 			"title": "Bulletbaang Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bulletchoucho)Bulletchoucho$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#bulletchoucho)Gotcharbrothers Bulletchoucho$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bulletchoucho)Bulletchoucho$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#bulletchoucho)Gotcharbrothers Bulletchoucho$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -226,7 +226,7 @@
 			"type": "patchouli:text",
 			"anchor": "apparebushido_ride_chemy_card",
 			"title": "Apparebushido Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#appareskebow)Appareskebow$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#appareskebow)Gotcharbrothers Appareskebow$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#appareskebow)Appareskebow$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#appareskebow)Gotcharbrothers Appareskebow$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -276,7 +276,7 @@
 			"type": "patchouli:text",
 			"anchor": "skebows_ride_chemy_card",
 			"title": "Skebows Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#appareskebow)Appareskebow$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#appareskebow)Gotcharbrothers Appareskebow$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#appareskebow)Appareskebow$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#appareskebow)Gotcharbrothers Appareskebow$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -289,7 +289,7 @@
 			"type": "patchouli:text",
 			"anchor": "hiikescue_ride_chemy_card",
 			"title": "Hiikescue Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#hiikesurose)Hiikesurose$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#hiikesurose)Gotcharbrothers Hiikesurose$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#hiikesurose)Hiikesurose$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#hiikesurose)Gotcharbrothers Hiikesurose$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -315,7 +315,7 @@
 			"type": "patchouli:text",
 			"anchor": "deepmariner_ride_chemy_card",
 			"title": "Deepmariner Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#venommariner)Venommariner$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#venommariner)Gotcharbrothers Venommariner$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#venommariner)Venommariner$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#venommariner)Gotcharbrothers Venommariner$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -328,7 +328,7 @@
 			"type": "patchouli:text",
 			"anchor": "madwheel_ride_chemy_card",
 			"title": "Madwheel Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Valvarad's $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#madpirates)Madpirates$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#madpirates)Gotcharbrothers Madpirates$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Valvarad's $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#madpirates)Madpirates$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#madpirates)Gotcharbrothers Madpirates$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -352,7 +352,7 @@
 			"type": "patchouli:text",
 			"anchor": "golddash_ride_chemy_card",
 			"title": "Golddash Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#goldmechanichor)Goldmechanichor$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#goldmechanichor)Gotcharbrothers Goldmechanichor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#goldmechanichor)Goldmechanichor$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#goldmechanichor)Gotcharbrothers Goldmechanichor$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -365,7 +365,7 @@
 			"type": "patchouli:text",
 			"anchor": "gutsshovel_ride_chemy_card",
 			"title": "Gutsshovel Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#dokkirishovel)Dokkirishovel$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#dokkirishovel)Gotcharbrothers Dokkirishovel$(/l)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad#gutsshovel)Gutsshovel$(/l) or $(l:gotchard/riders/valvarad_rider#orochishovel)Orochishovel$(/l) Custom"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#dokkirishovel)Dokkirishovel$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#dokkirishovel)Gotcharbrothers Dokkirishovel$(/l)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad#gutsshovel)Gutsshovel$(/l) or $(l:gotchard/riders/valvarad_rider#orochishovel)Orochishovel$(/l) Custom"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -378,7 +378,7 @@
 			"type": "patchouli:text",
 			"anchor": "steamliner_ride_chemy_card",
 			"title": "Steamliner Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard's $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#steamhopper)Steamhopper$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#steamhopper)Gotcharbrothers Steamhopper$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard's $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#steamhopper)Steamhopper$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#steamhopper)Gotcharbrothers Steamhopper$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -428,7 +428,7 @@
 			"type": "patchouli:text",
 			"anchor": "mechanichani_ride_chemy_card",
 			"title": "Mechanichani Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#goldmechanichor)Goldmechanichor$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#goldmechanichor)Gotcharbrothers Goldmechanichor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#goldmechanichor)Goldmechanichor$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#goldmechanichor)Gotcharbrothers Goldmechanichor$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -467,7 +467,7 @@
 			"type": "patchouli:text",
 			"anchor": "hawkstar_ride_chemy_card",
 			"title": "Hawkstar Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#needlehawk)Needlehawk$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#needlehawk)Gotcharbrothers Needlehawk$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#needlehawk)Needlehawk$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#needlehawk)Gotcharbrothers Needlehawk$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -493,7 +493,7 @@
 			"type": "patchouli:text",
 			"anchor": "gorillasensei_ride_chemy_card",
 			"title": "Gorillasensei Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#burninggorilla)Burninggorilla$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#burninggorilla)Gotcharbrothers Burninggorilla$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#burninggorilla)Burninggorilla$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#burninggorilla)Gotcharbrothers Burninggorilla$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -530,7 +530,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidenji_ride_chemy_card",
 			"title": "Raidenji Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#lightningjungle)Lightningjungle$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#lightningjungle)Gotcharbrothers Lightningjungle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#lightningjungle)Lightningjungle$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#lightningjungle)Gotcharbrothers Lightningjungle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -569,7 +569,7 @@
 			"type": "patchouli:text",
 			"anchor": "energyl_ride_chemy_card",
 			"title": "Energyl Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#energymaru)Energymaru$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#energymaru)Gotcharbrothers Energymaru$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#energymaru)Energymaru$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#energymaru)Gotcharbrothers Energymaru$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -621,7 +621,7 @@
 			"type": "patchouli:text",
 			"anchor": "smaphone_ride_chemy_card",
 			"title": "Smaphone Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#smahotaru)Smahotaru$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#smahotaru)Gotcharbrothers Smahotaru$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#smahotaru)Smahotaru$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#smahotaru)Gotcharbrothers Smahotaru$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -671,7 +671,7 @@
 			"type": "patchouli:text",
 			"anchor": "burningnero_ride_chemy_card",
 			"title": "Burningnero Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#burninggorilla)Burninggorilla$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#burninggorilla)Gotcharbrothers Burninggorilla$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#burninggorilla)Burninggorilla$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#burninggorilla)Gotcharbrothers Burninggorilla$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -697,7 +697,7 @@
 			"type": "patchouli:text",
 			"anchor": "saboneedle_ride_chemy_card",
 			"title": "Saboneedle Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#needlehawk)Needlehawk$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#needlehawk)Gotcharbrothers Needlehawk$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#needlehawk)Needlehawk$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#needlehawk)Gotcharbrothers Needlehawk$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -710,7 +710,7 @@
 			"type": "patchouli:text",
 			"anchor": "venomdake_ride_chemy_card",
 			"title": "Venomdake Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#venommariner)Venommariner$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#venommariner)Gotcharbrothers Venommariner$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#venommariner)Venommariner$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#venommariner)Gotcharbrothers Venommariner$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -736,7 +736,7 @@
 			"type": "patchouli:text",
 			"anchor": "flayrose_ride_chemy_card",
 			"title": "Flayrose Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#hiikesurose)Hiikesurose$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#hiikesurose)Gotcharbrothers Hiikesurose$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#hiikesurose)Hiikesurose$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#hiikesurose)Gotcharbrothers Hiikesurose$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -762,7 +762,7 @@
 			"type": "patchouli:text",
 			"anchor": "junglejan_ride_chemy_card",
 			"title": "Junglejan Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#lightningjungle)Lightningjungle$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#lightningjungle)Gotcharbrothers Lightningjungle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#lightningjungle)Lightningjungle$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#lightningjungle)Gotcharbrothers Lightningjungle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -903,7 +903,7 @@
 			"type": "patchouli:text",
 			"anchor": "ufo_x_ride_chemy_card",
 			"title": "UFO-X Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_ufo_x)Super Gotchard Cross UFO-X$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#cross_ufo_x)Gotcharbrothers Super Cross UFO-X$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_ufo_x)Super Gotchard Cross UFO-X$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cross_ufo_x)Gotcharbrothers Super Cross UFO-X$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1031,7 +1031,7 @@
 			"type": "patchouli:text",
 			"anchor": "x_rex_ride_chemy_card",
 			"title": "X-Rex Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_x_rex)Super Gotchard Cross X-Rex$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#cross_x_rex)Gotcharbrothers Super Cross X-Rex$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_x_rex)Super Gotchard Cross X-Rex$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cross_x_rex)Gotcharbrothers Super Cross X-Rex$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1094,7 +1094,7 @@
 			"type": "patchouli:text",
 			"anchor": "firemars_ride_chemy_card",
 			"title": "Firemars Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1222,7 +1222,7 @@
 			"type": "patchouli:text",
 			"anchor": "inphoenix_ride_chemy_card",
 			"title": "Inphoenix Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1337,7 +1337,7 @@
         "type": "patchouli:text",
         "anchor": "tenliner_ride_chemy_card",
         "title": "Tenliner Ride Chemy Card",
-        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#iron_gotchard)Iron Gotchard$(/l) and $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) forms$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#platina)Platina Gotcharbrothers$(/l)"
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#iron_gotchard)Iron Gotchard$(/l) and $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) forms$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#platina)Platina Gotcharbrothers$(/l)"
       },
       {
         "type": "patchouli:spotlight",
@@ -1350,7 +1350,7 @@
         "type": "patchouli:text",
         "anchor": "crosshopper_ride_chemy_card",
         "title": "Crosshopper Ride Chemy Card",
-        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#platina)Platina Gotcharbrothers$(/l)"
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#platina)Platina Gotcharbrothers$(/l)"
       },
       {
         "type": "patchouli:spotlight",
@@ -1402,7 +1402,7 @@
 			"type": "patchouli:text",
 			"anchor": "firemars_ride_chemy_card_televikun",
 			"title": "Firemars Ride Chemy Card (Televi-Kun ver.)",
-			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1412,7 +1412,7 @@
 			"type": "patchouli:text",
 			"anchor": "inphoenix_ride_chemy_card_televikun",
 			"title": "Inphoenix Ride Chemy Card (Televi-Kun ver.)",
-			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#marsphoenix)Gotcharbrothers Marsphoenix$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1500,7 +1500,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuuga_ride_chemy_card",
 			"title": "Kuuga Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kuuga)Gorgeous Kuuga$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kuuga)Gorgeous Kuuga$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1539,7 +1539,7 @@
 			"type": "patchouli:text",
 			"anchor": "faiz_ride_chemy_card",
 			"title": "Faiz Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz)Gorgeous Faiz$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz)Gorgeous Faiz$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1630,7 +1630,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_ride_chemy_card",
 			"title": "Double Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#double)Gorgeous Double$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#double)Gorgeous Double$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1643,7 +1643,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_ride_chemy_card",
 			"title": "OOO Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ooo)Gorgeous OOO$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ooo)Gorgeous OOO$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1656,7 +1656,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_ride_chemy_card",
 			"title": "Fourze Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#fourze)Gorgeous Fourze$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#fourze)Gorgeous Fourze$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1734,7 +1734,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_ride_chemy_card",
 			"title": "Build Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#build)Gorgeous Build$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#build)Gorgeous Build$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
