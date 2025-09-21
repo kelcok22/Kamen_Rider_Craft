@@ -14,14 +14,14 @@ public class KeyBindings {
     public final KeyMapping BeltKey = new KeyMapping(
             "key."+ KamenRiderCraftCore.MOD_ID +".belt",
             KeyConflictContext.IN_GAME,
-            InputConstants.getKey(InputConstants.KEY_V, -1),
+            InputConstants.getKey(InputConstants.KEY_B, -1),
             CATEGORY
     );
 
     public final KeyMapping AbilityKey = new KeyMapping(
             "key."+ KamenRiderCraftCore.MOD_ID +".ability",
             KeyConflictContext.IN_GAME,
-            InputConstants.getKey(InputConstants.KEY_B, -1),
+            InputConstants.getKey(InputConstants.KEY_V, -1),
             CATEGORY
     );
 }
