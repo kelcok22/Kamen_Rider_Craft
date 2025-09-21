@@ -1367,8 +1367,11 @@ public class MobsCore {
           
     public static final DeferredHolder<EntityType<?>, EntityType<GrandSummonEntity>> GRAND_SUMMON = MOBLIST.register("grand_summon",
                   () -> EntityType.Builder.of(GrandSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":grand_summon"));
-          
-          public static final DeferredHolder<EntityType<?>, EntityType<ParaDXSummonEntity>> PARADX_SUMMON = MOBLIST.register("paradx_summon",
+
+    public static final DeferredHolder<EntityType<?>, EntityType<LegendarySummonEntity>> LEGENDARY_SUMMON = MOBLIST.register("legendary_summon",
+            () -> EntityType.Builder.of(LegendarySummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":legendary_summon"));
+    
+    public static final DeferredHolder<EntityType<?>, EntityType<ParaDXSummonEntity>> PARADX_SUMMON = MOBLIST.register("paradx_summon",
                   () -> EntityType.Builder.of(ParaDXSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":paradx_summon"));
           
           public static final DeferredHolder<EntityType<?>, EntityType<DecadeArmorExAidEntity>> DECADE_ARMOR_EX_AID = MOBLIST.register("decade_armor_ex_aid",

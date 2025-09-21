@@ -132,11 +132,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "barid_rex",
+			"anchor": "barid_rex_incomplete",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:barid_rex_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Barid Rex Genome",
+			"name": "Barid Rex Genome (Incomplete)",
 			"text": "Accessed with the $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l)"
 		},
 		{
@@ -146,11 +146,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "volcano_rex",
+			"anchor": "barid_rex",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:volcano_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Volcano Rex Genome",
+			"name": "Barid Rex Genome",
 			"text": "Accessed with the $(l:revice/items/vistamps#volcano_vistamp)Volcano Vistamp$(/l)"
 		},
 		{

@@ -1,13 +1,9 @@
 package com.kelco.kamenridercraft.entities.summons;
 
-import java.util.EnumSet;
-
-import javax.annotation.Nullable;
-
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
+import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-
+import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -17,12 +13,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.Goal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.monster.Creeper;
@@ -36,12 +30,14 @@ import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.pathfinder.PathType;
 
-public class CompleteSummonEntity extends BaseSummonEntity {
+import javax.annotation.Nullable;
+import java.util.EnumSet;
 
-	public CompleteSummonEntity(EntityType<? extends CompleteSummonEntity> type, Level level) {
+public class LegendarySummonEntity extends BaseSummonEntity {
+
+	public LegendarySummonEntity(EntityType<? extends LegendarySummonEntity> type, Level level) {
 		super(type, level);
 		NAME="rider_summon";
-        this.addRequiredForm((RiderFormChangeItem)Decade_Rider_Items.K_TOUCH_21.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -49,7 +45,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
 	}
 
     public class MimicPlayerGoal extends Goal {
-        private final CompleteSummonEntity tamable;
+        private final LegendarySummonEntity tamable;
         @Nullable
         private LivingEntity owner;
         private final double speedModifier;
@@ -57,11 +53,11 @@ public class CompleteSummonEntity extends BaseSummonEntity {
         private int timeToRecalcPath;
         private float oldWaterCost;
 
-        public MimicPlayerGoal(CompleteSummonEntity tamable, double speedModifier) {
+        public MimicPlayerGoal(LegendarySummonEntity tamable, double speedModifier) {
             this.tamable = tamable;
             this.speedModifier = speedModifier;
             this.navigation = tamable.getNavigation();
-            this.setFlags(EnumSet.of(Goal.Flag.MOVE, Goal.Flag.LOOK));
+            this.setFlags(EnumSet.of(Flag.MOVE, Flag.LOOK));
         }
 
         @Override
@@ -69,7 +65,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
             LivingEntity livingentity = this.tamable.getOwner();
             if (livingentity == null) {
                 return false;
-            } else if (this.tamable.unableToMoveToOwner()) {
+            } else if (this.tamable.unableToMoveToOwner() || this.tamable.getTarget() != null) {
                 return false;
             } else {
                 this.owner = livingentity;
@@ -79,7 +75,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
 
         @Override
         public boolean canContinueToUse() {
-            return this.owner != null && !this.tamable.unableToMoveToOwner() && !(this.tamable.distanceToSqr(this.owner) <= 4);
+            return this.owner != null && this.tamable.getTarget() == null && !this.tamable.unableToMoveToOwner() && !(this.tamable.distanceToSqr(this.owner) <= 4);
         }
 
         @Override
@@ -110,13 +106,14 @@ public class CompleteSummonEntity extends BaseSummonEntity {
                     if (this.tamable.useItem.getItem() instanceof BowItem) this.tamable.performRangedAttack(20);
                     this.tamable.stopUsingItem();
                 }
+                if (player.getLastHurtMob() != null && !(player.getLastHurtMob() instanceof LegendarySummonEntity)) this.tamable.setTarget(player.getLastHurtMob());
             }
         }
     }
 
     public void mimicSwing(Player player, InteractionHand hand) {
         final TargetingConditions targeting = TargetingConditions.forCombat().range(16).selector(entity ->
-        entity != this.getOwner() && !(entity instanceof CompleteSummonEntity) && (!(entity instanceof Player) || entity == this.getOwner().getLastHurtMob()));
+        entity != this.getOwner() && !(entity instanceof LegendarySummonEntity) && (!(entity instanceof Player) || entity == this.getOwner().getLastHurtMob()));
         LivingEntity target = this.level().getNearestEntity(LivingEntity.class, targeting, this, this.getX(), this.getY(), this.getZ(), this.getBoundingBox().inflate(1.0));
 
         this.swing(hand);
@@ -152,17 +149,18 @@ public class CompleteSummonEntity extends BaseSummonEntity {
     @Override
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));
-		this.goalSelector.addGoal(2, new CompleteSummonEntity.MimicPlayerGoal(this, 1.0D));
+		this.goalSelector.addGoal(2, new LegendarySummonEntity.MimicPlayerGoal(this, 1.0D));
 		this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, Creeper.class, 24.0F, 1.5D, 1.5D));
 		this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
 		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
 		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+        this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, BaseAllyEntity.class, BaseSummonEntity.class)).setAlertOthers());
 	}
 
     @Override
 	public void tick() {
 		super.tick();
-        if (this.getOwner()!=null && this.distanceToSqr(this.getOwner()) <= 4 && !this.getNavigation().isInProgress()) {
+        if (this.getOwner()!=null && this.getTarget()==null && this.distanceToSqr(this.getOwner()) <= 4 && !this.getNavigation().isInProgress()) {
             this.setXRot(this.getOwner().getXRot());
             this.setYRot(this.getOwner().getYRot());
             this.setYHeadRot(this.getOwner().getYRot());

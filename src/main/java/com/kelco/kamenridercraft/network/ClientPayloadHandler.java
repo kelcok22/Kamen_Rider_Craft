@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.network;
 
 import com.kelco.kamenridercraft.entities.summons.CompleteSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.gotchard.ValvaradItem;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
@@ -35,6 +36,10 @@ public class ClientPayloadHandler {
         for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10), 
                                             entity -> (entity.getOwner() == player))) {
             complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
+        }
+        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
+                entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
+            legend.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
         }
     }
 }
