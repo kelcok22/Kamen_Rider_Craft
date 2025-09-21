@@ -160,7 +160,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
                     new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
-                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_CORE = ITEMS.register("gaia_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","gaia","gaia_belt_belt",

@@ -7,8 +7,10 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -50,73 +52,77 @@ public class RiderKickEffect extends MobEffect {
 		ItemStack stack =pLivingEntity.getItemBySlot(EquipmentSlot.FEET);
 		if (stack!=null){
 		if (stack.getItem() instanceof RiderDriverItem belt){
-			if (belt.isTransformed(pLivingEntity)){
+			if (belt.isTransformed(pLivingEntity)) {
 
-				boolean fly = pLivingEntity instanceof Player player && player.getAbilities().flying;
+                boolean fly = pLivingEntity instanceof Player player && player.getAbilities().flying;
 
-				if (pAmplifier ==0&pLivingEntity.isShiftKeyDown()&!fly){
+                if (stack.has(DataComponents.CUSTOM_DATA)) {
+                    CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 
-					pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 5, 1,false,false));
-				}
-				else if (pAmplifier ==1){
+                    if (pAmplifier == 0 & tag.getDouble("use_ability") != 0 & !fly) {
 
-					pLivingEntity.push(0, 0.5, 0);
-					pLivingEntity.hurtMarked = true;
-					if(!pLivingEntity.level().isClientSide()) {
-						((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.GUST,
-								pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-								pLivingEntity.getZ(), 1, 0, 0, 0, 1);
-					}
-						if (pLivingEntity.getEffect(Effect_core.RIDER_KICK).getDuration()==1){
-							pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 2,false,false));
-						}
-				}else if (pAmplifier ==4){
-					pLivingEntity.level().addParticle(ParticleTypes.EXPLOSION,pLivingEntity.getX(), pLivingEntity.getY()+0.5,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
-					pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 5,false,false));
+                        pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 5, 1, false, false));
+                    } else if (pAmplifier == 1) {
 
-				}else if (pAmplifier ==5){
-					if (pLivingEntity.hasEffect(Effect_core.RIDER_KICK)){
-						if (pLivingEntity.getEffect(Effect_core.RIDER_KICK).getDuration() < 2) {
-							pLivingEntity.removeEffect(Effect_core.RIDER_KICK);
-							pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 1, 0,false,false));
-						}
-					}
-				}else if (pAmplifier ==2){
-					pLivingEntity.setDeltaMovement(0,0,0);
-						pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 3,false,false));
+                        pLivingEntity.push(0, 0.5, 0);
+                        pLivingEntity.hurtMarked = true;
+                        if (!pLivingEntity.level().isClientSide()) {
+                            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.GUST,
+                                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
+                                    pLivingEntity.getZ(), 1, 0, 0, 0, 1);
+                        }
+                        if (pLivingEntity.getEffect(Effect_core.RIDER_KICK).getDuration() == 1) {
+                            pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 2, false, false));
+                        }
+                    } else if (pAmplifier == 4) {
+                        pLivingEntity.level().addParticle(ParticleTypes.EXPLOSION, pLivingEntity.getX(), pLivingEntity.getY() + 0.5, pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
+                        pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 20, 5, false, false));
 
-				}else if (pAmplifier ==3){
-					pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY(),pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
-					pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+1,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
-					pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+0.5,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
+                    } else if (pAmplifier == 5) {
+                        if (pLivingEntity.hasEffect(Effect_core.RIDER_KICK)) {
+                            if (pLivingEntity.getEffect(Effect_core.RIDER_KICK).getDuration() < 2) {
+                                pLivingEntity.removeEffect(Effect_core.RIDER_KICK);
+                                pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 1, 0, false, false));
+                            }
+                        }
+                    } else if (pAmplifier == 2) {
+                        pLivingEntity.setDeltaMovement(0, 0, 0);
+                        pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 3, false, false));
 
-
-					Vec3 look = new Vec3(pLivingEntity.getLookAngle().x*0.1, pLivingEntity.getLookAngle().y*0.04, pLivingEntity.getLookAngle().z*0.1).scale(2);
-							double y= look.y+pLivingEntity.getGravity();
-							if (y>0.0)y=0.0;
-					pLivingEntity.push(look.x, y, look.z);
-					pLivingEntity.hurtMarked=true;
-
-							if (pLivingEntity.onGround()||pLivingEntity.isInWater()) {pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 4,false,false));}
+                    } else if (pAmplifier == 3) {
+                        pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, pLivingEntity.getX(), pLivingEntity.getY(), pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
+                        pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, pLivingEntity.getX(), pLivingEntity.getY() + 1, pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
+                        pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, pLivingEntity.getX(), pLivingEntity.getY() + 0.5, pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
 
 
-							List<LivingEntity> nearbyEnemies = pLivingEntity.level().getEntitiesOfClass(LivingEntity.class, pLivingEntity.getBoundingBox().inflate(1), sentity ->
-									(sentity instanceof Player && sentity != pLivingEntity)
-											|| (sentity instanceof Mob));
-							for (LivingEntity enemy : nearbyEnemies) {
-								belt.OnRiderKickHit(stack,pLivingEntity,enemy);
-								if (enemy.isDeadOrDying()&enemy instanceof ShockerCombatmanEntity){
-									if (pLivingEntity instanceof Player player) {
-										if (belt.Rider=="ichigo" && !player.level().isClientSide()) {
-											player.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get(), 1), false);
-										}
-									}
-								}
-								pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 100, 4,false,true));
-							}
-						}
-					}
+                        Vec3 look = new Vec3(pLivingEntity.getLookAngle().x * 0.1, pLivingEntity.getLookAngle().y * 0.04, pLivingEntity.getLookAngle().z * 0.1).scale(2);
+                        double y = look.y + pLivingEntity.getGravity();
+                        if (y > 0.0) y = 0.0;
+                        pLivingEntity.push(look.x, y, look.z);
+                        pLivingEntity.hurtMarked = true;
 
+                        if (pLivingEntity.onGround() || pLivingEntity.isInWater()) {
+                            pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 200, 4, false, false));
+                        }
+
+
+                        List<LivingEntity> nearbyEnemies = pLivingEntity.level().getEntitiesOfClass(LivingEntity.class, pLivingEntity.getBoundingBox().inflate(1), sentity ->
+                                (sentity instanceof Player && sentity != pLivingEntity)
+                                        || (sentity instanceof Mob));
+                        for (LivingEntity enemy : nearbyEnemies) {
+                            belt.OnRiderKickHit(stack, pLivingEntity, enemy);
+                            if (enemy.isDeadOrDying() & enemy instanceof ShockerCombatmanEntity) {
+                                if (pLivingEntity instanceof Player player) {
+                                    if (belt.Rider == "ichigo" && !player.level().isClientSide()) {
+                                        player.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get(), 1), false);
+                                    }
+                                }
+                            }
+                            pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 100, 4, false, true));
+                        }
+                    }
+                }
+            }
 				}
 			}
 		return true;

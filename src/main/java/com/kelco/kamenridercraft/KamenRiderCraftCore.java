@@ -793,6 +793,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
+            event.register(KeyBindings.INSTANCE.AbilityKey);
         }
 
 
@@ -847,6 +848,12 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
 		        BeltKeyPayload.STREAM_CODEC,
 		        ServerPayloadHandler::handleBeltKeyPress
 		    );
+
+            registrar.playToServer(
+                    AbilityKeyPayload.TYPE,
+                    AbilityKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleAbilityKeyPress
+            );
 		}
     }
 }

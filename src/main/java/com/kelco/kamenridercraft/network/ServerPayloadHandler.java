@@ -1,8 +1,10 @@
 package com.kelco.kamenridercraft.network;
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.gotchard.ValvaradItem;
+import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
@@ -43,11 +45,21 @@ public class ServerPayloadHandler {
         //    return null;
         //});
     }
+    public static void handleAbilityKeyPress(final AbilityKeyPayload data, final IPayloadContext context) {
+        handleAbilityKeyPress((ServerPlayer)context.player());
+    }
 
     private static void handleCompleteSwing(int hand, Player player) {
         for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10), 
                                             entity -> (entity.getOwner() == player))) {
             complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
+        }
+    }
+
+    private static void handleAbilityKeyPress(ServerPlayer player) {
+
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            if (player.getItemBySlot(EquipmentSlot.FEET).getDamageValue()!=player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage()-1) belt.setUseAbility(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
         }
     }
 
