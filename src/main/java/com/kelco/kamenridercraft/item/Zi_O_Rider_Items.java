@@ -5,21 +5,25 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.MiridewatchHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RidewatchHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -54,7 +58,14 @@ public class Zi_O_Rider_Items {
             () -> new Zi_ORidewatchItem(new Item.Properties(),0,"","zi_o","ziku_driver_zi_o_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
+            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.addSummonWeapon("kamenridercraft:zikan_girade")
 					.addAltWeapon("kamenridercraft:build_ridewatch", "kamenridercraft:drill_crusher_crusher")
 					.addAltWeapon("kamenridercraft:decade_ridewatch", "kamenridercraft:ride_heisaber")
@@ -91,7 +102,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Decade_Rider_Items.DECADRIVER.get())
 					.addSummonWeapon(Decade_Rider_Items.RIDE_BOOKER.get())
 					.addAltBelt(Decade_Rider_Items.NEO_DECADRIVER.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
@@ -124,7 +142,17 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_TRINITY_RIDEWATCH = ITEMS.register("zi_o_trinity_ridewatch",
@@ -133,7 +161,20 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRAND_ZI_O_RIDEWATCH = ITEMS.register("grand_zi_o_ridewatch",
@@ -146,7 +187,17 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
                     .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> OHMA_ZI_O_RIDEWATCH = ITEMS.register("ohma_zi_o_ridewatch",
@@ -161,31 +212,65 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_RIDEWATCH = ITEMS.register("geiz_ridewatch",
 			() -> new GeizRidewatchItem(new Item.Properties(),0,"","geiz","ziku_driver_geiz_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_SHIPPU_RIDEWATCH = ITEMS.register("geiz_revive_shippu_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_shippu","geiz","ziku_driver_geiz_belt_revive",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().model_has_different_name("geiz_revive_ridewatch").has_basic_model());
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().model_has_different_name("geiz_revive_ridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_RIDEWATCH = ITEMS.register("geiz_revive_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_revive_goretsu","geiz","ziku_driver_geiz_belt_revive",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_MAJESTY_RIDEWATCH = ITEMS.register("geiz_majesty_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_majesty","geiz","ziku_driver_geiz_belt_majesty",
@@ -198,49 +283,95 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			{
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> TSUKUYOMI_RIDEWATCH = ITEMS.register("tsukuyomi_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","tsukuyomi","ziku_driver_tsukuyomi_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_MIRIDEWATCH = ITEMS.register("woz_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_MIRROR_RIDEWATCH = ITEMS.register("zi_o_mirror_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zi_o_mirror","ziku_driver_zi_o_mirror_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BARLCKXS_RIDEWATCH = ITEMS.register("barlckxs_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","barlckxs","ziku_driver_barlckxs_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)) {
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZONJIS_RIDEWATCH = ITEMS.register("zonjis_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zonjis","ziku_driver_zonjis_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZAMONAS_RIDEWATCH = ITEMS.register("zamonas_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zamonas","ziku_driver_zamonas_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KUUGA_RIDEWATCH = ITEMS.register("kuuga_ridewatch",
@@ -248,7 +379,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get())
 					.addAltForm(Decade_Rider_Items.KUUGA_GROWING_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.KUUGA_GROWING_AR.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
@@ -266,7 +404,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get())
 					.addAltWeapon(Agito_Rider_Items.AGITO_FLAME.get(), Agito_Rider_Items.FLAME_SABER.get())
 					.addAltWeapon(Agito_Rider_Items.AGITO_STORM.get(), Agito_Rider_Items.STORM_HALBERD.get())
@@ -280,7 +425,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
                     .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> RYUKI_RIDEWATCH = ITEMS.register("ryuki_ridewatch",
@@ -289,7 +441,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get())
 					.addAltForm(Ryuki_Rider_Items.RIDE_SABER_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.ADVENT_CARD.get())
 					.addAltForm(Ryuki_Rider_Items.DRAG_VISOR_ZWEI_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_REKKA.get())
@@ -307,7 +466,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
                     .IsGlowing().IsBeltGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> FAIZ_RIDEWATCH = ITEMS.register("faiz_ridewatch",
@@ -315,7 +481,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get())
 					.addSummonWeapon(Faiz_Rider_Items.FAIZ_EDGE.get())
 					.addAltWeapon(Faiz_Rider_Items.FAIZ_PHONE.get(), Faiz_Rider_Items.FAIZ_PHONE.get())
@@ -333,7 +506,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get())
 					.addSummonWeapon(Blade_Rider_Items.BLAYROUZER.get())
 					.addAltForm(Modded_item_core.JINRAI_NO_SENSHI.get(), (RiderFormChangeItem)Modded_item_core.JINRAI_NO_SENSHI_BLADE.get())
@@ -346,7 +526,14 @@ public class Zi_O_Rider_Items {
 			() -> new RidewatchItem(new Item.Properties(),0,"_hibiki","zi_o","ziku_driver_zi_o_belt_hibiki",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get())
 					.addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
 					.addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
@@ -360,7 +547,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get())
 					.setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.KABUTO_ZECTER.get())
 					.addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get())
@@ -373,7 +567,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get())
 					.addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get())
 					.addAltForm(Den_O_Rider_Items.DENKAMEN_SWORD.get(), (RiderFormChangeItem)Den_O_Rider_Items.DEN_O_LINER_FORM.get())
@@ -392,7 +593,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get())
 					.addAltForm(Decade_Rider_Items.KIVA_DOGABAKI_CARD.get(), (RiderFormChangeItem)Kiva_Rider_Items.DOGABAKI.get())
 					.addAltForm(Kiva_Rider_Items.ZANVAT_SWORD.get(), (RiderFormChangeItem)Kiva_Rider_Items.DOGABAKI_EMPEROR.get())
@@ -410,7 +618,17 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)W_Rider_Items.WDRIVER.get())
 					.addAltForm(W_Rider_Items.HEAT_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.METAL_MEMORY.get())
 					.addAltForm(W_Rider_Items.METAL_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.HEAT_MEMORY.get())
@@ -431,8 +649,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> OOO_RIDEWATCH = ITEMS.register("ooo_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_ooo","zi_o","ziku_driver_zi_o_belt_ooo",
@@ -440,7 +664,20 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 30, 0, 0, 0, 1);
+							((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 30, 0, 0, 0, 1);
+							((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 30, 0, 0, 0, 1);
+						}
+					}
 					.setSummonBelt((RiderDriverItem)OOO_Rider_Items.OOODRIVER.get())
 					.addSummonWeapon(OOO_Rider_Items.MEDAJALIBUR.get())
 					.addAltForm(OOO_Rider_Items.TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
@@ -557,7 +794,14 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
-							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}
 					.setSummonBelt((RiderDriverItem)Fourze_Rider_Items.FOURZE_DRIVER.get())
 					.addAltForm(Fourze_Rider_Items.ELEK_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_ELEK_STATES.get())
 					.addAltForm(Fourze_Rider_Items.FIRE_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_FIRE_STATES.get())
@@ -580,7 +824,14 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.WIZARD_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}
 							.setSummonBelt((RiderDriverItem)Wizard_Rider_Items.WIZARDRIVER.get())
 							.addSummonWeapon(Wizard_Rider_Items.WIZARSWORDSGUN.get())
 							.addAltForm(Wizard_Rider_Items.FINISH_STRIKE_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.FINISH_STRIKE_RING_NO_HOPE.get())
@@ -596,7 +847,14 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.SATURATION, 40, 5,true,false),
-							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}
 							.setSummonBelt((RiderDriverItem)Gaim_Rider_Items.SENGOKU_DRIVER_GAIM.get())
 							.addSummonWeapon(Gaim_Rider_Items.DAIDAIMARU.get())
 							.addSummonWeapon(Gaim_Rider_Items.MUSOU_SABER.get())
@@ -671,7 +929,14 @@ public class Zi_O_Rider_Items {
 					() -> new RidewatchItem(new Item.Properties(),0,"_drive","geiz","ziku_driver_geiz_belt_drive",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}
 							.setSummonBelt((RiderDriverItem)Drive_Rider_Items.DRIVE_DRIVER.get())
 							.addSummonWeapon(Drive_Rider_Items.HANDLE_KEN.get())
 							.addAltWeapon(Drive_Rider_Items.SHIFT_PROTO_SPEED.get(), Items.AIR)
@@ -713,16 +978,28 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH_ZI_O = ITEMS.register("ghost_ridewatch_zi_o",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","zi_o","ziku_driver_zi_o_belt_ghost",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_GHOST_RIDEWATCH.get())
+							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_GHOST_RIDEWATCH.get())
                             .IsGlowing().IsBeltGlowing().model_has_different_name("ghost_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH = ITEMS.register("ghost_ridewatch",
@@ -730,7 +1007,14 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}
 							.setSummonBelt((RiderDriverItem)Ghost_Rider_Items.GHOST_DRIVER.get())
 							.addSummonWeapon(Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
 							.addAltForm(Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_DAMASHII.get())
@@ -779,31 +1063,56 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_L = ITEMS.register("decade_ex_aid_ridewatch_l",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ex_aid_l","zi_o","ziku_driver_zi_o_belt_decade_ex_aid",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().addSwitchForm(DECADE_EX_AID_RIDEWATCH_R.get()).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().addSwitchForm(DECADE_EX_AID_RIDEWATCH_R.get()).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 			public static final DeferredItem<Item> EX_AID_RIDEWATCH_GEIZ = ITEMS.register("ex_aid_ridewatch_geiz",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ex_aid","geiz","ziku_driver_geiz_belt_ex_aid",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-                            .IsGlowing().IsBeltGlowing().model_has_different_name("ex_aid_ridewatch").has_basic_model());
+							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}.IsGlowing().IsBeltGlowing().model_has_different_name("ex_aid_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> EX_AID_RIDEWATCH = ITEMS.register("ex_aid_ridewatch",
 					() -> new RidewatchItem(new Item.Properties(),0,"_ex_aid","zi_o","ziku_driver_zi_o_belt_ex_aid",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 100, 0, 0, 0, 1);
+						}
+					}
 							.setSummonBelt((RiderDriverItem)Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get())
 							.setSummonForm((RiderFormChangeItem)Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get())
 							.addSummonWeapon(Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
@@ -829,15 +1138,34 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> BUILD_RIDEWATCH_GEIZ = ITEMS.register("build_ridewatch_geiz",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","geiz","ziku_driver_geiz_belt_build",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 50, 0, 0, 0, 1);
+							((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 50, 0, 0, 0, 1);
+						}
+					}
 							.addAlternative(DECADE_BUILD_RIDEWATCH.get())
                             .IsGlowing().IsBeltGlowing().model_has_different_name("build_ridewatch").has_basic_model());
 
@@ -846,7 +1174,17 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+						public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+							super.OnTransformation(itemstack, player);
+							((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 50, 0, 0, 0, 1);
+							((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+									player.getX(), player.getY()+1,
+									player.getZ(), 50, 0, 0, 0, 1);
+						}
+					}
 							.setSummonBelt((RiderDriverItem)Build_Rider_Items.BUILD_DRIVER.get()).addSummonWeapon(Build_Rider_Items.DRILL_CRUSHER.get())
 							.addAltForm(Build_Rider_Items.GORILLA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DIAMOND_FULL_BOTTLE.get())
 							.addAltForm(Build_Rider_Items.DIAMOND_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GORILLA_FULL_BOTTLE.get())
@@ -951,8 +1289,14 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> REVI_RIDEWATCH = ITEMS.register("revi_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -980,7 +1324,14 @@ public class Zi_O_Rider_Items {
 			() -> new RidewatchItem(new Item.Properties(),0,"_genm","geiz","ziku_driver_geiz_belt_genm",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Ex_Aid_Rider_Items.GAMER_DRIVER_GENM.get())
 					.setSummonForm((RiderFormChangeItem)Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT.get())
 					.addSummonWeapon(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get())
@@ -1007,15 +1358,27 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIBIRU_GEIZ_RIDEWATCH = ITEMS.register("bibiru_geiz_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bibiru","geiz","ziku_driver_geiz_belt_bibiru",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDEWATCH = ITEMS.register("kuuga_ultimate_ridewatch",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1108,7 +1471,14 @@ public class Zi_O_Rider_Items {
 			() -> new RidewatchItem(new Item.Properties(),0,"_biorider","barlckxs","ziku_driver_barlckxs_belt_biorider",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 200, 0, 0, 0, 1);
+				}
+			}
 					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.BIO_CORE.get()).addSummonWeapon(Ichigo_Rider_Items.BIOBLADE.get())
 					.SetPalyerModelInvisible().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
@@ -1195,38 +1565,74 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> QUIZ_MIRIDEWATCH = ITEMS.register("quiz_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_quiz","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIKAI_MIRIDEWATCH = ITEMS.register("kikai_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kikai","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINGA_FINALY_MIRIDEWATCH = ITEMS.register("ginga_finaly_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_finaly","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GINGA_TAIYO_MIRIDEWATCH = ITEMS.register("ginga_taiyo_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_taiyo","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-					.addNeedForm(GINGA_FINALY_MIRIDEWATCH.get(), 1).addAlternative(GINGA_FINALY_MIRIDEWATCH.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addNeedForm(GINGA_FINALY_MIRIDEWATCH.get(), 1).addAlternative(GINGA_FINALY_MIRIDEWATCH.get())
                     .IsGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
 	
 	public static final DeferredItem<Item> GINGA_MIRIDEWATCH = ITEMS.register("ginga_miridewatch",
@@ -1234,8 +1640,17 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().IsBeltGlowing().addNeedForm(GINGA_TAIYO_MIRIDEWATCH.get(), 1).addAlternative(GINGA_TAIYO_MIRIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().addNeedForm(GINGA_TAIYO_MIRIDEWATCH.get(), 1).addAlternative(GINGA_TAIYO_MIRIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1264,8 +1679,17 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-                    .IsGlowing().IsBeltGlowing().hasStaticWings().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.IsGlowing().IsBeltGlowing().hasStaticWings().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_R = ITEMS.register("unfinished_ohma_zi_o_driver_r",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1276,8 +1700,14 @@ public class Zi_O_Rider_Items {
 	public static final DeferredItem<Item> ANOTHER_AGITO_WATCH = ITEMS.register("another_agito_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_agito_zio","another_altering_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_RYUKI_WATCH = ITEMS.register("another_ryuki_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1289,8 +1719,14 @@ public class Zi_O_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_faiz","another_faiz_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_BLADE_WATCH = ITEMS.register("another_blade_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1318,33 +1754,63 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_OOO_WATCH = ITEMS.register("another_ooo_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_ooo","another_ooo_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_FOURZE_WATCH = ITEMS.register("another_fourze_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_fourze","another_fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_WIZARD_WATCH = ITEMS.register("another_wizard_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_wizard","another_wizard_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_GAIM_WATCH = ITEMS.register("another_gaim_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_gaim","another_gaim_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)) {
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_DRIVE_WATCH = ITEMS.register("another_drive_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1352,14 +1818,26 @@ public class Zi_O_Rider_Items {
 	public static final DeferredItem<Item> ANOTHER_GHOST_WATCH = ITEMS.register("another_ghost_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_ghost","another_ghost_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_EX_AID_WATCH = ITEMS.register("another_ex_aid_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_ex_aid","another_ex_aid_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FALLING_SPORE_BLOSSOM,
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_BUILD_WATCH = ITEMS.register("another_build_watch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_build","another_build_driver_belt",
@@ -1389,8 +1867,14 @@ public class Zi_O_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_shinobi","another_shinobi_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_QUIZ_WATCH = ITEMS.register("another_quiz_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1402,36 +1886,66 @@ public class Zi_O_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shinobi","shinobi_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHURIKEN_STARTER_HATTARI = ITEMS.register("shuriken_starter_hattari",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","hattari","hattari_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> QUIZ_TOPPER = ITEMS.register("quiz_topper",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","quiz","quiz_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPANNERDER_SCREWDER = ITEMS.register("spannerder_screwder",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kikai","kikai_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINGA_SCOPE = ITEMS.register("ginga_scope",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ginga","ginga_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_TIME_MAJIN_RIDEWATCH = ITEMS.register("woz_time_majin_ridewatch",
 			() -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
