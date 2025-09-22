@@ -1196,21 +1196,21 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> QUIZ_MIRIDEWATCH = ITEMS.register("quiz_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_quiz","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIKAI_MIRIDEWATCH = ITEMS.register("kikai_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kikai","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINGA_FINALY_MIRIDEWATCH = ITEMS.register("ginga_finaly_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_finaly","woz","beyondriver_belt",
@@ -1218,7 +1218,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
+                    .IsGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GINGA_TAIYO_MIRIDEWATCH = ITEMS.register("ginga_taiyo_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_taiyo","woz","beyondriver_belt",
@@ -1227,7 +1227,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
 					.addNeedForm(GINGA_FINALY_MIRIDEWATCH.get(), 1).addAlternative(GINGA_FINALY_MIRIDEWATCH.get())
-                    .IsGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
+                    .IsGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
 	
 	public static final DeferredItem<Item> GINGA_MIRIDEWATCH = ITEMS.register("ginga_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_ginga_wakusei","woz","beyondriver_belt",
@@ -1235,7 +1235,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-                    .IsGlowing().addNeedForm(GINGA_TAIYO_MIRIDEWATCH.get(), 1).addAlternative(GINGA_TAIYO_MIRIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().addNeedForm(GINGA_TAIYO_MIRIDEWATCH.get(), 1).addAlternative(GINGA_TAIYO_MIRIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1265,7 +1265,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().hasStaticWings().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_R = ITEMS.register("unfinished_ohma_zi_o_driver_r",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
