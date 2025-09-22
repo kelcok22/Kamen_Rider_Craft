@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.taboo.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"bone": {
+					"position": {
+						"0.0": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"vector": [0, 0.25, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"bipedRightArm": {
+					"rotation": {
+						"vector": [-7.40024, -37.51422, -15.03239]
+					}
+				},
+				"legs": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [-6, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.taboo.shoot": {
+			"animation_length": 2,
+			"bones": {
+				"bipedRightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [50.54316, -29.00325, 14.13963]
+						},
+						"1.0": {
+							"vector": [50.13074, 18.21856, 19.44266]
+						}
+					}
+				},
+				"bipedLeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-88.01415, 20.01476, -1.29393]
+						},
+						"1.0": {
+							"vector": [-88.4462, -19.83325, -4.9281]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -788,7 +788,6 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> SHADOW_CHARGER = ITEMS.register("shadow_charger",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_moon",GREEN_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.BLACK_TAB_ITEM));
 
-
     public static final DeferredItem<Item> SATANSABER = ITEMS.register("satansaber",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_TAB_ITEM));
 
