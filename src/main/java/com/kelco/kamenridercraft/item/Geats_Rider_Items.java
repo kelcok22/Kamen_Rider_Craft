@@ -932,7 +932,6 @@ public class 	Geats_Rider_Items {
 
 	public static final DeferredItem<Item> JYAMATO_BUCKLE_BUFFA = ITEMS.register("jyamato_buckle_buffa",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jyamato","buffa","desire_driver_belt_geats",
-					new MobEffectInstance(MobEffects.WITHER, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {

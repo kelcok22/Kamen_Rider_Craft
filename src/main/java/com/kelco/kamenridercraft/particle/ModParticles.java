@@ -59,6 +59,10 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> BLACK_SPARK_PARTICLES =
             PARTICLE_TYPES.register("black_spark_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> RANDOM_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("random_spark_particles", () -> new SimpleParticleType(true));
+
+
     public static final Supplier<SimpleParticleType> HIT_PARTICLES =
             PARTICLE_TYPES.register("hit_particles", () -> new SimpleParticleType(true));
 

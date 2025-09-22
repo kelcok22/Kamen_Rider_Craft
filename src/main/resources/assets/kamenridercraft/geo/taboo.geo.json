@@ -1,0 +1,87 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "bipedHeadwear",
+					"parent": "bone",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "bipedBody",
+					"parent": "bone",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [16, 16]}
+					]
+				},
+				{
+					"name": "bipedRightArm",
+					"parent": "bipedBody",
+					"pivot": [-5, 22, 0],
+					"rotation": [-133.75798, 1.30881, -9.96517],
+					"cubes": [
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [40, 16]}
+					]
+				},
+				{
+					"name": "bipedLeftArm",
+					"parent": "bipedBody",
+					"pivot": [5, 22, 0],
+					"rotation": [3.5194, 6.3818, -13.06498],
+
+					"cubes": [
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "pivot": [0, 0, 0],"mirror": true, "rotation": [2.5, 0, 0], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "bipedBody",
+					"pivot": [0, 13, 0]
+				},
+				{
+					"name": "bipedRightLeg",
+					"parent": "legs",
+					"pivot": [-1.9, 13, 0.4],
+					"rotation": [-22, 0, 0],
+					"cubes": [
+						{"origin": [-3.9, 1, -1.6], "size": [4, 12, 4], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "bipedLeftLeg",
+					"parent": "legs",
+					"pivot": [1.9, 13, 0.4],
+					"rotation": [-22, 0, 0],
+					"cubes": [
+						{"origin": [-0.1, 1, -1.6], "size": [4, 12, 4],"mirror": true, "uv": [16, 32]}
+					]
+				},
+				{
+					"name": "bipedHead",
+					"parent": "bone",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
