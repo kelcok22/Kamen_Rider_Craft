@@ -27,6 +27,10 @@
 	  {
 		  "structure": "kamenridercraft:hiden",
 		  "weight": 2
+	  },
+	  {
+		  "structure": "kamenridercraft:toriizaka",
+		  "weight": 1
 	  }
   ],
   "placement": {
