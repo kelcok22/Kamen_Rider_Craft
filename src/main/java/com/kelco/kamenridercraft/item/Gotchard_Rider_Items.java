@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gotchard.*;
@@ -12,7 +11,6 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import io.netty.buffer.Unpooled;
-import net.minecraft.advancements.critereon.CollectionCountsPredicate;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -27,7 +25,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -772,75 +769,88 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_ExceedMighty).model_has_different_name("kuuga_ride_chemy_card"));
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("kuuga").ChangeModel("kuuga.geo.json").addAlternative(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_ExceedMighty).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_RIDE_CHEMY_CARD = ITEMS.register("agito_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("agito").ChangeModel("agito.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> RYUKI_RIDE_CHEMY_CARD = ITEMS.register("ryuki_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get())
+                    .addSummonWeapon(Ryuki_Rider_Items.DRAG_CLAW.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("ryuki").AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FAIZ_RIDE_CHEMY_CARD = ITEMS.register("faiz_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get())
+                    .addSummonWeapon(Faiz_Rider_Items.FAIZ_EDGE.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("faiz").addAlternative(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_ExceedMighty).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_RIDE_CHEMY_CARD = ITEMS.register("blade_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
+                    .setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get()).addSummonWeapon(Blade_Rider_Items.BLAYROUZER.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("blade").AddToList(ChemyRiserItem.Legend_CHEMY)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> HIBIKI_RIDE_CHEMY_CARD = ITEMS.register("hibiki_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("hibiki").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> KABUTO_RIDE_CHEMY_CARD = ITEMS.register("kabuto_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+                    .setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get())
+                    .setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.KABUTO_ZECTER.get()).addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("kabuto").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> DEN_O_RIDE_CHEMY_CARD = ITEMS.register("den_o_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("den_o").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> KIVA_RIDE_CHEMY_CARD = ITEMS.register("kiva_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("kiva").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> DECADE_RIDE_CHEMY_CARD = ITEMS.register("decade_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+                    .setSummonBelt((RiderDriverItem)Decade_Rider_Items.DECADRIVER.get()).addSummonWeapon(Decade_Rider_Items.RIDE_BOOKER.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
@@ -855,19 +865,21 @@ public class Gotchard_Rider_Items {
 					.AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_CycloneTaToBa).model_has_different_name("w_ride_chemy_card"));
 
 	public static final DeferredItem<Item> W_RIDE_CHEMY_CARD = ITEMS.register("w_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)W_Rider_Items.WDRIVER.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade_w").addAlternative(W_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_CycloneTaToBa).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_RIDE_CHEMY_CARD = ITEMS.register("ooo_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+                    .setSummonBelt((RiderDriverItem)OOO_Rider_Items.OOODRIVER.get()).addSummonWeapon(OOO_Rider_Items.MEDAJALIBUR.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade_ooo").addAlternative(W_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_CycloneTaToBa).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -879,96 +891,110 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_FullFullRocket).model_has_different_name("fourze_ride_chemy_card"));
 
 	public static final DeferredItem<Item> FOURZE_RIDE_CHEMY_CARD = ITEMS.register("fourze_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+                    .setSummonBelt((RiderDriverItem)Fourze_Rider_Items.FOURZE_DRIVER.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("fourze").addAlternative(FOURZE_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_FullFullRocket).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_RIDE_CHEMY_CARD = ITEMS.register("wizard_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Wizard_Rider_Items.WIZARDRIVER.get()).addSummonWeapon(Wizard_Rider_Items.WIZARSWORDSGUN.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("wizard").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GAIM_RIDE_CHEMY_CARD = ITEMS.register("gaim_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Gaim_Rider_Items.SENGOKU_DRIVER_GAIM.get()).addSummonWeapon(Gaim_Rider_Items.MUSOU_SABER.get()).addSummonWeapon(Gaim_Rider_Items.DAIDAIMARU.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade_gaim").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> DRIVE_RIDE_CHEMY_CARD = ITEMS.register("drive_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+                    .setSummonBelt((RiderDriverItem)Drive_Rider_Items.DRIVE_DRIVER.get()).addSummonWeapon(Drive_Rider_Items.HANDLE_KEN.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade_drive").ChangeModel("drive.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GHOST_RIDE_CHEMY_CARD = ITEMS.register("ghost_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Ghost_Rider_Items.GHOST_DRIVER.get()).addSummonWeapon(Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade_ghost").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> EX_AID_RIDE_CHEMY_CARD = ITEMS.register("ex_aid_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get())
+                    .setSummonForm((RiderFormChangeItem)Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get()).addSummonWeapon(Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("ex_aid").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> BUILD_RIDE_CHEMY_CARD = ITEMS.register("build_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Build_Rider_Items.BUILD_DRIVER.get()).addSummonWeapon(Build_Rider_Items.DRILL_CRUSHER.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("decade_build").addAlternative(FOURZE_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_FullFullRocket).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_RIDE_CHEMY_CARD = ITEMS.register("zi_o_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()).addSummonWeapon(Zi_O_Rider_Items.ZIKAN_GIRADE.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("zi_o").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> ZERO_ONE_RIDE_CHEMY_CARD = ITEMS.register("zero_one_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
+                    .setSummonBelt((RiderDriverItem)Zero_One_Rider_Items.HIDEN_ZERO_ONE_DRIVER.get()).addSummonWeapon(Zero_One_Rider_Items.ATTACHE_CALIBUR.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("zero_one").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> SABER_RIDE_CHEMY_CARD = ITEMS.register("saber_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_saber","legend","legendriver_belt"
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"_saber","legend","legendriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get()).addSummonWeapon(Saber_Rider_Items.KAENKEN_REKKA.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> REVI_RIDE_CHEMY_CARD = ITEMS.register("revi_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Revice_Rider_Items.REVICE_DRIVER.get()).addSummonWeapon(Revice_Rider_Items.OHINBUSTER_50.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("revi").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> VICE_RIDE_CHEMY_CARD = ITEMS.register("vice_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Revice_Rider_Items.BUDDY_BUCKLE.get()).addSummonWeapon(Revice_Rider_Items.OSUTODERUHAMMER_50.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeRiderName("vice").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GEATS_RIDE_CHEMY_CARD = ITEMS.register("geats_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_geats","legend","legendriver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"_geats","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_SHOT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Geats_Rider_Items.DESIRE_DRIVER_GEATS.get()).addSummonWeapon(Geats_Rider_Items.MAGNUM_SHOOTER_40X.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHARD_RIDE_CHEMY_CARD = ITEMS.register("gotchard_ride_chemy_card",
@@ -980,7 +1006,7 @@ public class Gotchard_Rider_Items {
 
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ultimate_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
@@ -994,7 +1020,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("kuuga_ultimate").ChangeModel("kuuga_ultimate.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> AGITO_SHINING_RIDE_CHEMY_CARD = ITEMS.register("agito_shining_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1006,7 +1032,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("agito_shining").ChangeModel("agito_shining.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> RYUKI_SURVIVE_RIDE_CHEMY_CARD = ITEMS.register("ryuki_survive_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -1018,7 +1044,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("ryuki_survive").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_RIDE_CHEMY_CARD = ITEMS.register("faiz_blaster_ride_chemy_card",
-            () -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+            () -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -1032,7 +1058,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("faiz_blaster").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BLADE_KING_RIDE_CHEMY_CARD = ITEMS.register("blade_king_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
@@ -1043,7 +1069,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("blade_king").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ARMED_HIBIKI_RIDE_CHEMY_CARD = ITEMS.register("armed_hibiki_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1055,7 +1081,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("hibiki_armed").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> KABUTO_HYPER_RIDE_CHEMY_CARD = ITEMS.register("kabuto_hyper_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1068,7 +1094,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("kabuto_hyper").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> DEN_O_LINER_RIDE_CHEMY_CARD = ITEMS.register("den_o_liner_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -1081,7 +1107,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("den_o_liner").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> KIVA_EMPEROR_RIDE_CHEMY_CARD = ITEMS.register("kiva_emperor_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -1094,7 +1120,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("kiva_emperor").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> DECADE_COMPLETE_RIDE_CHEMY_CARD = ITEMS.register("decade_complete_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -1108,7 +1134,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("decade_complete").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> W_CYCLONE_JOKER_XTREME_RIDE_CHEMY_CARD = ITEMS.register("w_cyclone_joker_xtreme_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_w_cyclone_joker_xtreme","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_w_cyclone_joker_xtreme","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -1122,7 +1148,7 @@ public class Gotchard_Rider_Items {
 			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> OOO_PUTOTYRA_RIDE_CHEMY_CARD = ITEMS.register("ooo_putotyra_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_ooo_putotyra","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_ooo_putotyra","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40	, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -1133,7 +1159,7 @@ public class Gotchard_Rider_Items {
 			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_RIDE_CHEMY_CARD = ITEMS.register("fourze_cosmic_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
@@ -1143,7 +1169,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("fourze_cosmic").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> WIZARD_INFINITY_RIDE_CHEMY_CARD = ITEMS.register("wizard_infinity_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
@@ -1156,7 +1182,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("wizard_infinity").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GAIM_KIWAMI_RIDE_CHEMY_CARD = ITEMS.register("gaim_kiwami_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_gaim_kiwami","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_gaim_kiwami","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -1171,7 +1197,7 @@ public class Gotchard_Rider_Items {
 			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> DRIVE_TRIDORON_RIDE_CHEMY_CARD = ITEMS.register("drive_tridoron_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1183,7 +1209,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("drive_tridoron").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GHOST_MUGEN_RIDE_CHEMY_CARD = ITEMS.register("ghost_mugen_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_ghost_mugen","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_ghost_mugen","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -1194,7 +1220,7 @@ public class Gotchard_Rider_Items {
 			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> EX_AID_MUTEKI_RIDE_CHEMY_CARD = ITEMS.register("ex_aid_muteki_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1210,7 +1236,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("ex_aid_muteki").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BUILD_GENIUS_RIDE_CHEMY_CARD = ITEMS.register("build_genius_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_build_genius","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_build_genius","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -1228,7 +1254,7 @@ public class Gotchard_Rider_Items {
 			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GRAND_ZI_O_RIDE_CHEMY_CARD = ITEMS.register("grand_zi_o_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -1244,7 +1270,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("zi_o_grand").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ZERO_TWO_RIDE_CHEMY_CARD = ITEMS.register("zero_two_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1259,7 +1285,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("zero_two").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> XROSS_SABER_RIDE_CHEMY_CARD = ITEMS.register("xross_saber_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_xross_saber","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_xross_saber","legend","legendriver_belt_l",
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
@@ -1274,7 +1300,7 @@ public class Gotchard_Rider_Items {
 			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ULTIMATE_REVI_RIDE_CHEMY_CARD = ITEMS.register("ultimate_revi_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1289,7 +1315,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("revi_ultimate").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ULTIMATE_VICE_RIDE_CHEMY_CARD = ITEMS.register("ultimate_vice_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -1304,7 +1330,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("vice_ultimate").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GEATS_IX_RIDE_CHEMY_CARD = ITEMS.register("geats_ix_ride_chemy_card",
-			() -> new LegendChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_geats_ix","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_geats_ix","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -1321,27 +1347,30 @@ public class Gotchard_Rider_Items {
 
 
 	public static final DeferredItem<Item> ARK_ZERO_RIDE_CHEMY_CARD = ITEMS.register("ark_zero_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_outsiders","ark_zero","ark_driver_belt",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"_outsiders","ark_zero","ark_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+                    .setSummonBelt((RiderDriverItem)Zero_One_Rider_Items.ARK_DRIVER_ZERO.get())
                     .IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ARK_ONE_RIDE_CHEMY_CARD = ITEMS.register("ark_one_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_saigetsu","ark_zero","ark_driver_belt_1",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"_saigetsu","ark_zero","ark_driver_belt_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+                    .setSummonBelt((RiderDriverItem)Zero_One_Rider_Items.ARK_DRIVER_ZERO.get())
+                    .setSummonForm((RiderFormChangeItem)Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())
                     .IsGlowing().ChangeRiderName("ark_one").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ETERNAL_RIDE_CHEMY_CARD = ITEMS.register("eternal_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yellowed","eternal","lostdriver_belt_e",
+			() -> new LegendChemyCardItem(new Item.Properties(),0,"_yellowed","eternal","lostdriver_belt_e",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -1353,7 +1382,8 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+            }.setSummonBelt((RiderDriverItem)W_Rider_Items.LOSTDRIVER_ETERNAL.get()).addSummonWeapon(W_Rider_Items.ETERNAL_EDGE.get())
+            .AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",
@@ -1556,8 +1586,8 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> VALVARUSHER = ITEMS.register("valvarusher",
 			() -> new ValvarusherItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
-	public static final DeferredItem<Item> LEGEND_RIDE_MAGNUM = ITEMS.register("legend_ride_magnum", // TODO: Diend-style summoning
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+	public static final DeferredItem<Item> LEGEND_RIDE_MAGNUM = ITEMS.register("legend_ride_magnum", // TODO: GUI texture + Patchouli info
+			() -> new LegendRideMagnumItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> LEGEND_KAMEN_RISER = ITEMS.register("legend_kamen_riser",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));

@@ -828,6 +828,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.register(ModMenus.GOTCHANDRAW_HOLDER_GUI.get(), GotchandrawHolderGuiScreen::new);
             event.register(ModMenus.GOTCHANCOLLECTION_PANEL_GUI.get(), GotchancollectionPanelGuiScreen::new);
             event.register(ModMenus.CHEMY_RISER_GUI.get(), ChemyRiserGuiScreen::new);
+            event.register(ModMenus.LEGEND_RIDE_MAGNUM_GUI.get(), LegendRideMagnumGuiScreen::new);
            // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }
     }
