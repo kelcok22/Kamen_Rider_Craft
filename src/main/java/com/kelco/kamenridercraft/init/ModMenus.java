@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.world.inventory.*;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.network.IContainerFactory;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
@@ -47,6 +46,7 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchandrawHolderGuiMenu>> GOTCHANDRAW_HOLDER_GUI = REGISTRY.register("gotchandraw_holder_gui", () -> IMenuTypeExtension.create(GotchandrawHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchancollectionPanelGuiMenu>> GOTCHANCOLLECTION_PANEL_GUI = REGISTRY.register("gotchancollection_panel_gui", () -> IMenuTypeExtension.create(GotchancollectionPanelGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ChemyRiserGuiMenu>> CHEMY_RISER_GUI = REGISTRY.register("chemy_riser_gui", () -> IMenuTypeExtension.create(ChemyRiserGuiMenu::new));
+    public static final DeferredHolder<MenuType<?>, MenuType<LegendRideMagnumGuiMenu>> LEGEND_RIDE_MAGNUM_GUI = REGISTRY.register("legend_ride_magnum_gui", () -> IMenuTypeExtension.create(LegendRideMagnumGuiMenu::new));
 
 //	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchRackGuiMenu>> ASTROSWITCH_RACK_GUI = REGISTRY.register("astroswitch_rack_gui", () -> IMenuTypeExtension.create(AstroswitchRackGuiMenu::new));
 
