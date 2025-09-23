@@ -779,6 +779,10 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerSpriteSet(ModParticles.BLACK_SPARK_PARTICLES.get(), BlackSparkParticles.Provider::new);
             event.registerSpriteSet(ModParticles.RANDOM_SPARK_PARTICLES.get(), RandomSparkParticles.Provider::new);
 
+            event.registerSpriteSet(ModParticles.GLASS_PARTICLES.get(), GlassParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.CHAIN_PARTICLES.get(), ChainParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GOLD_BAT_PARTICLES.get(), GoldBatParticles.Provider::new);
+
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES2.get(), GummiParticles.Provider::new);
