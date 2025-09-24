@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gaim.*;
+import com.kelco.kamenridercraft.item.ryuki.AdventCardItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.LockseedHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
@@ -610,7 +611,31 @@ public class Gaim_Rider_Items {
 	dandeliner
 	tulip_hopper
 **/
-	public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",
+
+    public static final DeferredItem<Item> MEGAHEX_CORE = ITEMS.register("megahex_core",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","megahex","blank",
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+                    .has_basic_model());
+
+
+    public static final DeferredItem<Item> MEGAHEX_KIWAMI = ITEMS.register("megahex_kiwami",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_kiwami","megahex","blank",
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+                    .addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).has_basic_model().model_has_different_name("megahex_core").AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 	public static final DeferredItem<Item> GAIM_CHESTPLATE = ITEMS.register("gaimtroso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
@@ -906,8 +931,12 @@ public class Gaim_Rider_Items {
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"ryugen_shin",MELON_ENERGY_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Add_Extra_Base_Form_Items(GENESIS_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
+    public static final DeferredItem<Item> MEGAHEX = ITEMS.register("megahex",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"megahex",MEGAHEX_CORE ,GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
-	public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",
+
+    public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> MUSOU_SABER_NAGINATA = ITEMS.register("musou_saber_naginata",

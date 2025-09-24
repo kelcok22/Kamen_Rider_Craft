@@ -512,6 +512,18 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 					.addAlternative(SHIFT_VIRAL_CORE.get()).IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
+    public static final DeferredItem<Item> MEGAHEX_VIRAL_CORE  = ITEMS.register("megahex_viral_core",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_zzz","megahex","blank",
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+                    .has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> TOKUJOKA_KEY = ITEMS.register("tokujoka_key",
