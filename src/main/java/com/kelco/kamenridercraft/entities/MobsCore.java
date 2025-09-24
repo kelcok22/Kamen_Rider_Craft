@@ -276,7 +276,7 @@ public class MobsCore {
                () -> EntityType.Builder.of(TabooDopantEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":taboo_dopant"));
 
         public static final DeferredItem<DeferredSpawnEggItem> TABOO_DOPANT_SPAWN_EGG = ITEMS.register("taboo_dopant_spawn_egg",
-                () -> new DeferredSpawnEggItem(TABOO_DOPANT, 0x161616,0x0092BB, new Item.Properties()));
+                () -> new DeferredSpawnEggItem(TABOO_DOPANT, 0xbe53a3,0x77251e, new Item.Properties()));
 
 
         public static final DeferredHolder<EntityType<?>, EntityType<WeatherDopantEntity>> WEATHER_DOPANT = MOBLIST.register("weather_dopant",
