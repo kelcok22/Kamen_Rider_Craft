@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-21T01:01:40.7125041	Item Models: kamenridercraft
+// 1.21.1	2025-09-25T00:28:25.97261	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 530e5ba778dd4e7d9f6fa47d8a7a0d2de245dbb1 assets/kamenridercraft/models/item/agito_ring.json
@@ -283,6 +283,9 @@ c55aa15043fed2a7068f8e5d0c8bfbd5bf483054 assets/kamenridercraft/models/item/mack
 223d1aaf4667d69193f4b4d66d48b551d712ddc8 assets/kamenridercraft/models/item/mad_doctor_mach.json
 0363ca10f0ca6fa48178bd6b1ae9954341423f34 assets/kamenridercraft/models/item/marble_breacookie_gochizo.json
 10887a18e292a1655cfc78f5da70d31cccf56cee assets/kamenridercraft/models/item/mayo_donut.json
+9ed5082179bc9f14c114fb6287cc51888255408c assets/kamenridercraft/models/item/megahex_core.json
+9ed5082179bc9f14c114fb6287cc51888255408c assets/kamenridercraft/models/item/megahex_kiwami.json
+4e60e74194c721a2e32f2836ef4992fd47989b09 assets/kamenridercraft/models/item/megahex_viral_core.json
 79cf7a9e4c9ba8f0e7b73e772f046bcd94d31d9b assets/kamenridercraft/models/item/meitoalphabet_gochizo.json
 7162cfae611d5bca6aa8dc1afecfbe3cbd593051 assets/kamenridercraft/models/item/mentaiko_umaibo_gochizo.json
 09904f645c3f84b51172120ba8f82ba7e72102fe assets/kamenridercraft/models/item/mercurin_ride_chemy_card.json
