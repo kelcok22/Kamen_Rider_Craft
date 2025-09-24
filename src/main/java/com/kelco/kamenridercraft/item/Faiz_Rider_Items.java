@@ -38,7 +38,7 @@ public class Faiz_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
