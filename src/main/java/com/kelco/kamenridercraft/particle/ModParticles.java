@@ -37,6 +37,8 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> CYAN_SPARK_PARTICLES =
             PARTICLE_TYPES.register("cyan_spark_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> BROWN_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("brown_spark_particles", () -> new SimpleParticleType(true));
 
     public static final Supplier<SimpleParticleType> GREEN_SPARK_PARTICLES =
             PARTICLE_TYPES.register("green_spark_particles", () -> new SimpleParticleType(true));
