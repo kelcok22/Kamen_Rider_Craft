@@ -56,6 +56,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_Platina= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_Rainbow= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_Ultima= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_Miracle= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_OdoriMantis= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_MadPilets= new ArrayList<Item>();
@@ -668,6 +669,24 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false),
 					new MobEffectInstance(Effect_core.THUNDER_PUNCH, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> HOPPER101_RIDE_CHEMY_CARD = ITEMS.register("hopper101_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_miracle","gotchard","gotchardriver_belt_r",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
+					.IsGlowing().addNeedForm(NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).AddNeedItemList(NEED_ITEM_Miracle).AddToList(NEED_ITEM_Miracle).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> GIGANTLINER_RIDE_CHEMY_CARD = ITEMS.register("gigantliner_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.RARE), HOPPER101_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Miracle).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FIREMARS_RIDE_CHEMY_CARD_TELEVIKUN = ITEMS.register("firemars_ride_chemy_card_televikun",
 			() -> new RideChemyCardItem(new Item.Properties(),0,"_mars_phoenix","gotchard","gotchardriver_belt",
