@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-25T00:28:25.97261	Item Models: kamenridercraft
+// 1.21.1	2025-09-25T22:02:17.7842153	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 530e5ba778dd4e7d9f6fa47d8a7a0d2de245dbb1 assets/kamenridercraft/models/item/agito_ring.json
@@ -183,6 +183,7 @@ d7452d3de40593f7296a027e99f636686dd58b41 assets/kamenridercraft/models/item/ghos
 a4618b9078e96307eb190d1a536610f911254d33 assets/kamenridercraft/models/item/ghost_ride_chemy_card.json
 56c82da9fb89d82416cc6ab75e32d80531029e1a assets/kamenridercraft/models/item/gigabaham_ride_chemy_card.json
 e5a0ce6d0c6a0dcf6006133bb4626fc326111298 assets/kamenridercraft/models/item/gigalodon_ride_chemy_card.json
+fefb6fb34a159414c057a631fa9596ce0af27e66 assets/kamenridercraft/models/item/gigantliner_ride_chemy_card.json
 b9a5d6921eaa4b61c9ca888e3036ebfe7e063e81 assets/kamenridercraft/models/item/ginga_finaly_miridewatch.json
 b9a5d6921eaa4b61c9ca888e3036ebfe7e063e81 assets/kamenridercraft/models/item/ginga_taiyo_miridewatch.json
 afb254913756a409fb3fb0d22fe0e85541214827 assets/kamenridercraft/models/item/gingriffon_ride_chemy_card.json
@@ -221,6 +222,7 @@ a07acae377b6df0de55a2064bcc6ffcd24bb6c3a assets/kamenridercraft/models/item/helh
 85d7bf7624a9d9a3682635a77771f3c1ce8a554d assets/kamenridercraft/models/item/hibiki_ride_chemy_card.json
 bfcd33b4ac53a3edef57b2ea9090e0ae0578bc0f assets/kamenridercraft/models/item/hibiki_ring.json
 455ecf868613e5ca2ef1b19650abc8fede7d0d84 assets/kamenridercraft/models/item/hichew_gochizo.json
+e030d2f96a9e46d68e7e7b4e2abfbd9b2c584b5d assets/kamenridercraft/models/item/hopper101_ride_chemy_card.json
 b978aebb5ea0e62bb75c1908421d77b6ca1094bb assets/kamenridercraft/models/item/hopper1_ride_chemy_card_ultima.json
 70d6c79243e4068dd15cbb49476aece8d2dd9f44 assets/kamenridercraft/models/item/hotcaken_gochizo.json
 0cc52e10e76ad344a52028e033ec9f37efb680b5 assets/kamenridercraft/models/item/impact_capsem.json
