@@ -1398,6 +1398,32 @@
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "hopper101_ride_chemy_card",
+        "title": "Hopper101 Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#miracle_gotchard)Miracle Gotchard$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hopper101_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gigantliner_ride_chemy_card",
+        "title": "Gigantliner Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#miracle_gotchard)Miracle Gotchard$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gigantliner_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "firemars_ride_chemy_card_televikun",
@@ -1500,7 +1526,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuuga_ride_chemy_card",
 			"title": "Kuuga Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kuuga)Gorgeous Kuuga$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kuuga)Gorgeous Kuuga$(/l) form$(br2)Can be used to summon $(l:kuuga/riders/kuuga)Kamen Rider Kuuga$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1513,7 +1539,7 @@
 			"type": "patchouli:text",
 			"anchor": "agito_ride_chemy_card",
 			"title": "Agito Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#agito)Gorgeous Agito$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#agito)Gorgeous Agito$(/l) form$(br2)Can be used to summon $(l:agito/riders/agito)Kamen Rider Agito$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1526,7 +1552,7 @@
 			"type": "patchouli:text",
 			"anchor": "ryuki_ride_chemy_card",
 			"title": "Ryuki Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ryuki)Gorgeous Ryuki$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ryuki)Gorgeous Ryuki$(/l) form$(br2)Can be used to summon $(l:ryuki/riders/ryuki)Kamen Rider Ryuki$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1539,7 +1565,7 @@
 			"type": "patchouli:text",
 			"anchor": "faiz_ride_chemy_card",
 			"title": "Faiz Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz)Gorgeous Faiz$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#exceed_mighty)Gotcharbrothers Exceed Mighty$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz)Gorgeous Faiz$(/l) form$(br2)Can be used to summon $(l:faiz/riders/faiz)Kamen Rider Faiz$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1552,7 +1578,7 @@
 			"type": "patchouli:text",
 			"anchor": "blade_ride_chemy_card",
 			"title": "Blade Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#blade)Gorgeous Blade$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#blade)Gorgeous Blade$(/l) form$(br2)Can be used to summon $(l:blade/riders/blade)Kamen Rider Blade$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1565,7 +1591,7 @@
 			"type": "patchouli:text",
 			"anchor": "hibiki_ride_chemy_card",
 			"title": "Hibiki Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#hibiki)Gorgeous Hibiki$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#hibiki)Gorgeous Hibiki$(/l) form$(br2)Can be used to summon $(l:hibiki/riders/hibiki)Kamen Rider Hibiki$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1578,7 +1604,7 @@
 			"type": "patchouli:text",
 			"anchor": "kabuto_ride_chemy_card",
 			"title": "Kabuto Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kabuto)Gorgeous Kabuto$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kabuto)Gorgeous Kabuto$(/l) form$(br2)Can be used to summon $(l:kabuto/riders/kabuto)Kamen Rider Kabuto$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1591,7 +1617,7 @@
 			"type": "patchouli:text",
 			"anchor": "den_o_ride_chemy_card",
 			"title": "Den-O Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#den-o)Gorgeous Den-O$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#den-o)Gorgeous Den-O$(/l) form$(br2)Can be used to summon $(l:den_o/riders/den_o)Kamen Rider Den-O$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1604,7 +1630,7 @@
 			"type": "patchouli:text",
 			"anchor": "kiva_ride_chemy_card",
 			"title": "Kiva Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kiva)Gorgeous Kiva$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kiva)Gorgeous Kiva$(/l) form$(br2)Can be used to summon $(l:kiva/riders/kiva)Kamen Rider Kiva$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1617,7 +1643,7 @@
 			"type": "patchouli:text",
 			"anchor": "decade_ride_chemy_card",
 			"title": "Decade Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#decade)Gorgeous Decade$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#decade)Gorgeous Decade$(/l) form$(br2)Can be used to summon $(l:decade/riders/decade)Kamen Rider Decade$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1630,7 +1656,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_ride_chemy_card",
 			"title": "Double Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#double)Gorgeous Double$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#double)Gorgeous Double$(/l) form$(br2)Can be used to summon $(l:w/riders/double)Kamen Rider Double$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1643,7 +1669,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_ride_chemy_card",
 			"title": "OOO Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ooo)Gorgeous OOO$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)Gotcharbrothers Cyclone Tatoba$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ooo)Gorgeous OOO$(/l) form$(br2)Can be used to summon $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1656,7 +1682,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_ride_chemy_card",
 			"title": "Fourze Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#fourze)Gorgeous Fourze$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#fourze)Gorgeous Fourze$(/l) form$(br2)Can be used to summon $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1669,7 +1695,7 @@
 			"type": "patchouli:text",
 			"anchor": "wizard_ride_chemy_card",
 			"title": "Wizard Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#wizard)Gorgeous Wizard$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#wizard)Gorgeous Wizard$(/l) form$(br2)Can be used to summon $(l:wizard/riders/wizard)Kamen Rider Wizard$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1682,7 +1708,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaim_ride_chemy_card",
 			"title": "Gaim Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#gaim)Gorgeous Gaim$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#gaim)Gorgeous Gaim$(/l) form$(br2)Can be used to summon $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1695,7 +1721,7 @@
 			"type": "patchouli:text",
 			"anchor": "drive_ride_chemy_card",
 			"title": "Drive Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#drive)Gorgeous Drive$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#drive)Gorgeous Drive$(/l) form$(br2)Can be used to summon $(l:drive/riders/drive)Kamen Rider Drive$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1708,7 +1734,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_ride_chemy_card",
 			"title": "Ghost Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ghost)Gorgeous Ghost$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ghost)Gorgeous Ghost$(/l) form$(br2)Can be used to summon $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1721,7 +1747,7 @@
 			"type": "patchouli:text",
 			"anchor": "ex_aid_ride_chemy_card",
 			"title": "Ex-Aid Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ex_aid)Gorgeous Ex-Aid$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ex_aid)Gorgeous Ex-Aid$(/l) form$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid)Kamen Rider Ex-Aid$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1734,7 +1760,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_ride_chemy_card",
 			"title": "Build Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#build)Gorgeous Build$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#fullfull_rocket)Gotcharbrothers FullFull Rocket$(/l)$(br2)Used to access Legend's $(l:gotchard/riders/legend#build)Gorgeous Build$(/l) form$(br2)Can be used to summon $(l:build/riders/build)Kamen Rider Build$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1747,7 +1773,7 @@
 			"type": "patchouli:text",
 			"anchor": "zi_o_ride_chemy_card",
 			"title": "Zi-O Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zi_o)Gorgeous Zi-O$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zi_o)Gorgeous Zi-O$(/l) form$(br2)Can be used to summon $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1760,7 +1786,7 @@
 			"type": "patchouli:text",
 			"anchor": "zero_one_ride_chemy_card",
 			"title": "Zero-One Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zero_one)Gorgeous Zero-One$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zero_one)Gorgeous Zero-One$(/l) form$(br2)Can be used to summon $(l:zero_one/riders/zero_one)Kamen Rider Zero-One$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1773,7 +1799,7 @@
 			"type": "patchouli:text",
 			"anchor": "saber_ride_chemy_card",
 			"title": "Saber Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#saber)Gorgeous Saber$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#saber)Gorgeous Saber$(/l) form$(br2)Can be used to summon $(l:saber/riders/saber)Kamen Rider Saber$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1786,7 +1812,7 @@
 			"type": "patchouli:text",
 			"anchor": "revi_ride_chemy_card",
 			"title": "Revi Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#revi)Gorgeous Revi$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#revi)Gorgeous Revi$(/l) form$(br2)Can be used to summon $(l:revi/riders/revi)Kamen Rider Revi$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1799,7 +1825,7 @@
 			"type": "patchouli:text",
 			"anchor": "vice_ride_chemy_card",
 			"title": "Vice Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#vice)Gorgeous Vice$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#vice)Gorgeous Vice$(/l) form$(br2)Can be used to summon $(l:vice/riders/vice)Kamen Rider Vice$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1812,7 +1838,7 @@
 			"type": "patchouli:text",
 			"anchor": "geats_ride_chemy_card",
 			"title": "Geats Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#geats)Gorgeous Geats$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#geats)Gorgeous Geats$(/l) form$(br2)Can be used to summon $(l:geats/riders/geats)Kamen Rider Geats$(/l) when inserted into a $(l:gotchard/arsenal/legend_ride_magnum)Legend Ride Magnum$(/l) and fired as $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

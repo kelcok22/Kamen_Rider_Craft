@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used by $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used by $(l:gotchard/riders/legend)Kamen Rider Legend$(/l)$(br2)Can store up to 4 $(l:gotchard/items/ride_chemy_cards#kuuga_ride_chemy_card)Legend Rider Chemy Cards$(/l) for Rider summoning"
 		},
 		{
 			"type": "patchouli:crafting",

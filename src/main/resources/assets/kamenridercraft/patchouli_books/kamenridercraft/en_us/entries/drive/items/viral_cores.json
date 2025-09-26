@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "rhino_super_viral_core",
 			"title": "Rhino Super Viral Core",
-			"text": "Appears in:$(li)Drive Saga: Kamen Rider Chaser (2016, V-Cinema film)$(br2)Used to access Mashin Chaser's $(l:drive/riders/mashin_chaser#super)Super Mashin Chaser$(/l) form$(br2)Used to access Mach's $(l:drive/riders/mach#chou_dead_heat)Super Dead Heat$(/l) form"
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Chaser (2016, V-Cinema film)$(br2)Used to access Mashin Chaser's $(l:drive/riders/mashin_chaser#super)Super Mashin Chaser$(/l) form$(br2)Used to access Mach's $(l:drive/riders/mach#super_deadheat)Super Dead Heat$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -131,6 +131,19 @@
 			"item": "kamenridercraft:rhino_super_viral_core",
 			"title": " ",
 			"text": "Item is currently unobtainable"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "megahex_viral_core",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to access Megahex's $(l:gaim/riders/megahex#zzz)ZZZ Megahex$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:megahex_viral_core",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
 	]
 }

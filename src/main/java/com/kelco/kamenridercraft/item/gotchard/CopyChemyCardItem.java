@@ -75,7 +75,7 @@ public class CopyChemyCardItem extends CopyFormChangeItem {
                 summon.addRequiredForm((RiderFormChangeItem)Gotchard_Rider_Items.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(), 1);
                 if (!player.isCreative()) {
                     summon.takeSummonItem(itemstack);
-                    player.getCooldowns().addCooldown(this, 750);
+                    for (Item item : FORM_ITEM.needItemList) player.getCooldowns().addCooldown(item, 750);
                 }
                 player.awardStat(Stats.ITEM_USED.get(this));
             }

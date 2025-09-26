@@ -2,7 +2,7 @@
 	"name": "Lord Baron Fragments",
 	"icon": "kamenridercraft:lord_baron_fragment",
 	"category": "kamenridercraft:gaim/items",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

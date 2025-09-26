@@ -1,0 +1,19 @@
+{
+  "name": "???",
+  "icon": "kamenridercraft:megahex",
+  "category": "kamenridercraft:gaim/devices",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/megahex)Megahex"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:megahex",
+      "title": " ",
+      "text": "Item is currently unobtainable"
+    }
+  ]
+}

@@ -58,7 +58,7 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
 				serverPlayer.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("Ride Magnum");
+						return Component.translatable("container.kamenridercraft.legend_ride_magnum");
 					}
 
 					@Override

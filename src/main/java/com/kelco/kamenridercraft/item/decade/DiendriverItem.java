@@ -71,7 +71,7 @@ public class DiendriverItem extends BaseBlasterItem {
 				serverPlayer.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("Diendriver");
+                        return Component.translatable("container.kamenridercraft.diendriver");
 					}
 
 					@Override

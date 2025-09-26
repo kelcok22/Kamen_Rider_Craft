@@ -127,7 +127,7 @@ public InteractionResult place(BlockPlaceContext context) {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Pandora Panel");
+                    return Component.translatable("container.kamenridercraft.pandora_panel");
 				}
 
 				@Override
