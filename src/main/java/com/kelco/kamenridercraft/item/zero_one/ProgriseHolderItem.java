@@ -39,7 +39,7 @@ public class ProgriseHolderItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Progrise Holder");
+                    return Component.translatable("container.kamenridercraft.progrise_holder");
                 }
 
                 @Override

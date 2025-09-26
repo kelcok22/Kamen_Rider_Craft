@@ -210,7 +210,7 @@
 			"type": "patchouli:text",
 			"anchor": "kiwami_lockseed",
 			"title": "Kiwami Lockseed",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access Gaim's $(l:gaim/riders/gaim#kiwami)Kiwami Arms$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access Gaim's $(l:gaim/riders/gaim#kiwami)Kiwami Arms$(/l)$(br2)Used to access Megahex's $(l:gaim/riders/megahex#kiwami)base form w/ Kiwami Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

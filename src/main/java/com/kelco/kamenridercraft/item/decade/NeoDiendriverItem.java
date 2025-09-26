@@ -33,7 +33,7 @@ public class NeoDiendriverItem extends DiendriverItem {
 				serverPlayer.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("NeoDiendriver");
+                        return Component.translatable("container.kamenridercraft.neo_diendriver");
 					}
 
 					@Override

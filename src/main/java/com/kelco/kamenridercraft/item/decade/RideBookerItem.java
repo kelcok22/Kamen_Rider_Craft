@@ -62,7 +62,7 @@ public class RideBookerItem extends BaseBlasterItem {
 				serverPlayer.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("Ride Booker");
+                        return Component.translatable("container.kamenridercraft.ride_booker");
 					}
 
 					@Override

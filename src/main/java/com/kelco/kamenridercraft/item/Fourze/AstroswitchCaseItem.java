@@ -40,7 +40,7 @@ public class AstroswitchCaseItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Astroswitch Case");
+                    return Component.translatable("container.kamenridercraft.astroswitch_case");
                 }
 
                 @Override

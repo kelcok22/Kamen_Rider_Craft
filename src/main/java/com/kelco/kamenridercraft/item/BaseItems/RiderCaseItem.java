@@ -37,7 +37,7 @@ public class RiderCaseItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Rider Case");
+                    return Component.translatable("container.kamenridercraft.rider_case");
                 }
 
                 @Override

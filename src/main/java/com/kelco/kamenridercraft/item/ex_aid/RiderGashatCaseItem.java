@@ -39,7 +39,7 @@ public class RiderGashatCaseItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Rider Gashat Case");
+                    return Component.translatable("container.kamenridercraft.rider_gashat_case");
                 }
 
                 @Override
