@@ -179,6 +179,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
             return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
         }
         if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack, 1).get_Stored_num()==2) return get_Form_Item(itemstack,1).getFormName(fly);
+        else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack, 1).get_Stored_num()==3) return riderName+"_face_xross";
         else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+"_face";
            else return "blank";
     }
