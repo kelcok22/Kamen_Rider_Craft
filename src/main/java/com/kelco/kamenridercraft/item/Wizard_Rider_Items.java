@@ -739,7 +739,11 @@ public class Wizard_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
-	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
+    public static final DeferredItem<Item> UZAI_BELT = ITEMS.register("uzai_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"uzai", FLAME_WIZARD_RING, WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
+                    .Override_belt_text("uzai_belt_belt").Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).has_basic_model().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
 			() -> new BaseItem(new Item.Properties()).KeepItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN = ITEMS.register("wizarswordgun",

@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-25T22:02:17.7842153	Item Models: kamenridercraft
+// 1.21.1	2025-09-26T23:49:51.7425725	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 530e5ba778dd4e7d9f6fa47d8a7a0d2de245dbb1 assets/kamenridercraft/models/item/agito_ring.json
@@ -437,6 +437,7 @@ f11dd057eda1f89e798a4ad8423ee0023c6ac27a assets/kamenridercraft/models/item/ulim
 d854c86053b53d41e71f2d5b20307d42940d1c62 assets/kamenridercraft/models/item/umaibo_gochizo.json
 8fa117bf2975e2934fde29137997a6688bb828c1 assets/kamenridercraft/models/item/unicon_repli_chemy_card.json
 8d83a17a078e587b2659b175f4b2659188abbac9 assets/kamenridercraft/models/item/utsubocchama_ride_chemy_card.json
+56682ea032b686bebcbcac5d0d671a55598a2133 assets/kamenridercraft/models/item/uzai_belt.json
 c19a0f725e304e48d94731f7601028278a872c68 assets/kamenridercraft/models/item/valvaradriver.json
 81077fc8124e784b6122aee503daa9549ba843a7 assets/kamenridercraft/models/item/vanfenrir_ride_chemy_card.json
 6b72ee2f1823cdd564b181f590d21f3c0f87f95c assets/kamenridercraft/models/item/vice_ride_chemy_card.json
