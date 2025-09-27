@@ -1,0 +1,18 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:uzai_belt",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard stageshow$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/uzai)Kamen Rider Uzai"
+		},
+        {
+          "type": "patchouli:spotlight",
+          "link_recipe": true,
+          "item": "kamenridercraft:uzai_belt",
+          "text": "Item is currently unobtainable"
+		}
+	]
+}
