@@ -150,7 +150,9 @@ public class RiderDriverItem extends RiderArmorItem {
                                 effect.getEffect() != MobEffects.MOVEMENT_SPEED&
                                 effect.getEffect() != Effect_core.NOTE&
                                 effect.getEffect() != Effect_core.SLASH&
-                                effect.getEffect() != Effect_core.PUNCH
+                                effect.getEffect() != Effect_core.PUNCH&
+                                effect.getEffect() != Effect_core.GREEED&
+                                effect.getEffect() != Effect_core.BUGSTER
                                 ||player instanceof Player) {
                             player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
                         }

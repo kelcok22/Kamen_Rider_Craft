@@ -65,7 +65,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			} .IsGlowing().IsBeltGlowing().addAlternative(RISING_HOPPER_PROGRISEKEY_VULCAN.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 10));
+			} .IsGlowing().addAlternative(RISING_HOPPER_PROGRISEKEY_VULCAN.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 10));
 	
 	public static final DeferredItem<Item> SHINING_HOPPER_PROGRISEKEY = ITEMS.register("shining_hopper_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_shining","zero_one","hiden_zero_one_driver_belt",
@@ -98,7 +98,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> METALCLUSTER_HOPPER_PROGRISEKEY = ITEMS.register("metalcluster_hopper_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_metalcluster","zero_one","hiden_zero_one_driver_belt",
@@ -449,7 +449,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(SPLASHING_WHALE_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().addAlternative(SPLASHING_WHALE_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE = ITEMS.register("dynamaiting_lion_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_lion","zero_one","hiden_zero_one_driver_belt",
@@ -475,7 +475,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().addAlternative(DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE = ITEMS.register("scouting_panda_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_panda","zero_one","hiden_zero_one_driver_belt",
@@ -499,7 +499,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().addAlternative(SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE = ITEMS.register("invading_horseshoe_crab_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_horseshoe_crab","zero_one","hiden_zero_one_driver_belt",
@@ -584,8 +584,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}
-                    .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> PUNCHING_KONG_PROGRISEKEY_ZERO_ONE = ITEMS.register("punching_kong_progrisekey_zero_one",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_kong","zero_one","hiden_zero_one_driver_belt",
@@ -1099,7 +1098,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> EKAL_ZETSUMERISEKEY = ITEMS.register("ekal_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ekal_magia","zetsume_riser_belt_ekal",
@@ -1110,7 +1109,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> NEOHI_ZETSUMERISEKEY = ITEMS.register("neohi_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","neohi_magia","zetsume_riser_belt_neohi",
@@ -1121,7 +1120,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> ONYCHO_ZETSUMERISEKEY = ITEMS.register("onycho_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","onycho_magia","zetsume_riser_belt_onycho",
@@ -1144,7 +1143,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> GAERU_ZETSUMERISEKEY = ITEMS.register("gaeru_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gaeru_magia","zetsume_riser_belt_gaeru",
@@ -1156,7 +1155,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> MAMMOTH_ZETSUMERISEKEY = ITEMS.register("mammoth_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","mammoth_magia","zetsume_riser_belt_mammoth",
@@ -1168,7 +1167,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> DODO_ZETSUMERISEKEY_MAGIA = ITEMS.register("dodo_zetsumerisekey_magia",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dodo_magia","zetsume_riser_belt_dodo",
@@ -1179,7 +1178,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			});
+			}.IsGlowing());
 
 	public static final DeferredItem<Item> DODO_CUSTOM_ZETSUMERISEKEY = ITEMS.register("dodo_custom_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dodo_magia_custom","zetsume_riser_belt_dodo",
@@ -1190,7 +1189,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			});
+			}.IsGlowing());
 
 	public static final DeferredItem<Item> DODO_CUSTOM_TWO_ZETSUMERISEKEY = ITEMS.register("dodo_custom_two_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dodo_magia_custom_two","zetsume_riser_belt_dodo",
@@ -1202,7 +1201,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			});
+			}.IsGlowing());
 
 	public static final DeferredItem<Item> DODO_ZETSUMERISEKEY = ITEMS.register("dodo_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ikazuchi","metsuboujinrai_force_riser_belt_ikazuchi",
@@ -1228,7 +1227,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> UNKNOWN_ZETSUMERISEKEY = ITEMS.register("unknown_zetsumerisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
