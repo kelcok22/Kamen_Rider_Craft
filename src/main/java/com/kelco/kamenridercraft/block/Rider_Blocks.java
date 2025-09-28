@@ -1111,7 +1111,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-					,MobsCore.ARK_ZERO).addLine(Component.translatable("henshin.kamenridercraft.ark_zero")).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,MobsCore.ARK_ZERO).addLine(Component.translatable("henshin.kamenridercraft.ark_zero_msg")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> SABELA_BOSS_BLOCK = registerBlock("sabela_boss_block",
