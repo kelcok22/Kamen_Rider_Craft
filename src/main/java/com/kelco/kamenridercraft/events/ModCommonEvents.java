@@ -636,6 +636,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.REDYUE.get(), RedyueEntity.setAttributes().build());
 		event.put(MobsCore.DEMUSHU.get(), DemushuEntity.setAttributes().build());
 		event.put(MobsCore.LORD_BARON.get(), LordBaronEntity.setAttributes().build());
+        event.put(MobsCore.MEGAHEX.get(), MegahexEntity.setAttributes().build());
 
 		event.put(MobsCore.ROIDMUDE.get(), RoidmudeEntity.setAttributes().build());
 		event.put(MobsCore.REAPER_LEGION.get(), ReaperlegionEntity.setAttributes().build());

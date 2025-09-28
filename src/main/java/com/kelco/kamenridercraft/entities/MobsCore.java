@@ -581,6 +581,12 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> LORD_BARON_SPAWN_EGG = ITEMS.register("lord_baron_spawn_egg",
                   () -> new DeferredSpawnEggItem(LORD_BARON, 0x970000, 0xb3a500, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<MegahexEntity>> MEGAHEX = MOBLIST.register("megahex",
+            () -> EntityType.Builder.of(MegahexEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":marika"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MEGAHEX_SPAWN_EGG = ITEMS.register("megahex_spawn_egg",
+            () -> new DeferredSpawnEggItem(MEGAHEX, 0xe2e2e2, 0x37deff, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<RoidmudeEntity>> ROIDMUDE = MOBLIST.register("roidmude",
             () -> EntityType.Builder.of(RoidmudeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":roidmude"));

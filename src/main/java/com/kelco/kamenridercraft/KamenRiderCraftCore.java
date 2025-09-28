@@ -600,6 +600,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.REDYUE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DEMUSHU.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LORD_BARON.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MEGAHEX.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ROIDMUDE.get(), RoidmudeRenderer::new);
             event.registerEntityRenderer(MobsCore.REAPER_LEGION.get(), ReaperRenderer::new);

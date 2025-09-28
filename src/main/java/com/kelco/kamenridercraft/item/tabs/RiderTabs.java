@@ -679,6 +679,7 @@ public class RiderTabs {
             event.accept(MobsCore.MASQUERADE_SPAWN_EGG);
             event.accept(MobsCore.CLAYDOLL_DOPANT_SPAWN_EGG);
             event.accept(MobsCore.TERROR_DOPANT_SPAWN_EGG);
+            event.accept(MobsCore.TABOO_DOPANT_SPAWN_EGG);
             event.accept(MobsCore.NASCA_DOPANT_SPAWN_EGG);
             //event.accept(MobsCore.RED_NASCA_DOPANT_SPAWN_EGG);
             event.accept(MobsCore.SMILODON_DOPANT_SPAWN_EGG);
@@ -725,6 +726,8 @@ public class RiderTabs {
 		    event.accept(MobsCore.REDYUE_SPAWN_EGG);
 		    event.accept(MobsCore.DEMUSHU_SPAWN_EGG);
 		    event.accept(MobsCore.LORD_BARON_SPAWN_EGG);
+            event.accept(MobsCore.MEGAHEX_SPAWN_EGG);
+
 
             event.accept(MobsCore.ROIDMUDE_SPAWN_EGG);
             event.accept(MobsCore.MASHIN_CHASER_SPAWN_EGG);
