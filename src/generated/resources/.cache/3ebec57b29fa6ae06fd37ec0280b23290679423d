@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-27T21:18:56.105128	Item Models: kamenridercraft
+// 1.21.1	2025-09-28T03:30:33.4229999	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -484,6 +484,7 @@ f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vras
 6099f93392eac510c6032fa239a9f9d8d4043844 assets/kamenridercraft/models/item/white_fence.json
 b3fc962f39e8630c37821887d50de498e1f93a66 assets/kamenridercraft/models/item/white_wallplate_wall.json
 3796122ebf9a7cd7c862fbf81aee8172ad447d57 assets/kamenridercraft/models/item/wildshift_gold.json
+1667b76f1e25800616f0dc9e832a7c901f7dfd8f assets/kamenridercraft/models/item/wing_capsem.json
 330c0fe93ef2298f767e41f55f0561177ffb9765 assets/kamenridercraft/models/item/wizard_full_bottle.json
 cb7805abcab74b1dd79ca63a25312820dc31ed6d assets/kamenridercraft/models/item/wizard_gochizo.json
 d275ccc4ddb1834d5370c02b44d244d69d1a36ec assets/kamenridercraft/models/item/wizard_infinity_ride_chemy_card.json

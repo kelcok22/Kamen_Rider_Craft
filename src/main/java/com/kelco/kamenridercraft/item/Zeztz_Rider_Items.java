@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -28,8 +29,7 @@ public class Zeztz_Rider_Items {
         public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","zeztz","zeztz_driver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                         super.OnTransformation(itemstack, player);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -42,8 +42,8 @@ public class Zeztz_Rider_Items {
     public static final DeferredItem<Item> TRANSFORM_CAPSEM = ITEMS.register("transform_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_physicam_transform","zeztz","zeztz_driver_belt_physicam_transform",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -51,6 +51,19 @@ public class Zeztz_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> WING_CAPSEM = ITEMS.register("wing_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_physicam_wing","zeztz","zeztz_driver_belt_wing",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").hasStaticWings().IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",

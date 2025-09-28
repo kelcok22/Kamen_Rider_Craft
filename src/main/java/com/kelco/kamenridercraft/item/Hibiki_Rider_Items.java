@@ -60,7 +60,7 @@ public class Hibiki_Rider_Items {
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","eiki","eikidriver_belt",
                 new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_GOUKI = ITEMS.register("henshin_onsa_gouki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","gouki","goukidriver_belt",
