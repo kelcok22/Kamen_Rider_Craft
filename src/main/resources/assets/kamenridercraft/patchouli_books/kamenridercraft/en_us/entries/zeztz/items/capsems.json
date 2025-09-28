@@ -28,6 +28,19 @@
         "title": " ",
         "text": "Item is currently unobtainable"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "wing_capsem",
+        "title": "Wing Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#wing)Physicam Wing$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wing_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "stream_capsem",

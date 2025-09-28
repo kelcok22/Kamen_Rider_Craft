@@ -1237,6 +1237,604 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "zeztz_gochizo",
+        "title": "Zeztz Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zeztz_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gavv_gochizo",
+        "title": "Gavv Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gavv_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "valen_gochizo",
+        "title": "Valen Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:valen_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "vram_gochizo",
+        "title": "Vram Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:vram_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gotchard_gochizo",
+        "title": "Gotchard Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gotchard_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "geats_gochizo",
+        "title": "Geats Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:geats_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "revi_gochizo",
+        "title": "Revi Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:revi_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "vice_gochizo",
+        "title": "Vice Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:vice_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "saber_gochizo",
+        "title": "Saber Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:saber_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zero_one_gochizo",
+        "title": "Zero-One Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zero_one_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zi_o_gochizo",
+        "title": "Zi-O Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zi_o_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "build_gochizo",
+        "title": "Build Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:build_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ex_aid_gochizo",
+        "title": "Ex-Aid Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 03 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ex_aid_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ghost_gochizo",
+        "title": "Ghost Gochizo",
+        "text": "Appears in:$(li)GP Rider Gochizo 03 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ghost_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "drive_gochizo",
+        "title": "Drive Gochizo",
+        "text": "Appears in:$(li)Drive Gochizo (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:drive_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gaim_gochizo",
+        "title": "Gaim Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 03 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gaim_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wizard_gochizo",
+        "title": "Wizard Gochizo",
+        "text": "Appears in:$(li)SG Rider Gochizo 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wizard_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fourze_gochizo",
+        "title": "Fourze Gochizo",
+        "text": "Appears in:$(li)GP Rider Gochizo 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fourze_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ooo_gochizo",
+        "title": "OOO Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 03 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ooo_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "w_gochizo",
+        "title": "W Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 01 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:w_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "decade_gochizo",
+        "title": "Decade Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:decade_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_gochizo",
+        "title": "Kiva Gochizo",
+        "text": "Appears in:$(li)GP Rider Gochizo 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "den_o_gochizo",
+        "title": "Den-O Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Set 01 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:den_o_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kabuto_gochizo",
+        "title": "Kabuto Gochizo",
+        "text": "Appears in:$(li)SG Rider Gochizo 01 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kabuto_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "hibiki_gochizo",
+        "title": "Hibiki Gochizo",
+        "text": "Appears in:$(li)GP Rider Gochizo 03 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hibiki_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blade_gochizo",
+        "title": "Blade Gochizo",
+        "text": "Appears in:$(li)GP Rider Gochizo 01 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blade_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "faiz_gochizo",
+        "title": "Faiz Gochizo",
+        "text": "Appears in:$(li)DX Gavvphone (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:faiz_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ryuki_gochizo",
+        "title": "Ryuki Gochizo",
+        "text": "Appears in:$(li)SG Rider Gochizo 02 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ryuki_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "agito_gochizo",
+        "title": "Agito Gochizo",
+        "text": "Appears in:$(li)SG Rider Gochizo 01 (2024, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:agito_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_gochizo",
+        "title": "Kuuga Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Transformation Lessons (2024, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kuuga_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "j_gochizo",
+        "title": "J Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 02- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:j_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zo_gochizo",
+        "title": "ZO Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 02- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zo_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shin_gochizo",
+        "title": "Shin Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 02- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shin_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "black_rx_gochizo",
+        "title": "Black RX Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 02- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:black_rx_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shadowmoon_gochizo",
+        "title": "Shadow Moon Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 02- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shadowmoon_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "black_gochizo",
+        "title": "Black Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 02- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:black_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zx_gochizo",
+        "title": "ZX Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zx_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "super_1_gochizo",
+        "title": "Super-1 Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:super_1_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "skyrider_gochizo",
+        "title": "Skyrider Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:skyrider_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "stronger_gochizo",
+        "title": "Stronger Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:stronger_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "amazon_gochizo",
+        "title": "Amazon Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:amazon_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "x_gochizo",
+        "title": "X Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:x_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "riderman_gochizo",
+        "title": "Riderman Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:riderman_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "v3_gochizo",
+        "title": "V3 Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:v3_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "nigo_gochizo",
+        "title": "Nigo Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:nigo_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ichigo_gochizo",
+        "title": "Ichigo Gochizo",
+        "text": "Appears in:$(li)DX Legend Rider Gochizo Special Set -Showa Rider 01- (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ichigo_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "boonboomger_gochizo",

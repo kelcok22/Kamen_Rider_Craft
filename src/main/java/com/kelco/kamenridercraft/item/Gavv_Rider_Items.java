@@ -479,7 +479,7 @@ public class Gavv_Rider_Items {
 
 
 
-	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo", // TODO: Effects not copy-pasted from Over
+	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo", // TODO: Update effects
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_amazingummy","gavv","henshin_belt_gavv_belt_amazingummy",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),
