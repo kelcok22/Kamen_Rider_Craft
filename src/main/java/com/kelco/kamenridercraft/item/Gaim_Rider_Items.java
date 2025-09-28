@@ -933,7 +933,7 @@ public class Gaim_Rider_Items {
 
     public static final DeferredItem<Item> MEGAHEX = ITEMS.register("megahex",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"megahex",MEGAHEX_CORE ,GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
-                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.GAIM_TAB_ITEM).has_basic_model().ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
     public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",

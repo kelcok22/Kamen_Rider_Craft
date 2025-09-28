@@ -178,6 +178,23 @@ public class RiderFormChangeItem extends BaseItem {
         return HAS_STATIC_WINGS;
     }
 
+    public Boolean get_Is_Reset_Form() {
+        return RESET_FORM;
+    }
+    public Boolean get_Is_Reset_Form_Main() {
+        return RESET_FORM_MAIN;
+    }
+
+    public Item get_Stift_item() {
+        return STIFT_ITEM;
+    }
+
+
+    public List<RiderFormChangeItem> Get_Alternative() {
+        return alternative;
+    }
+
+
     public int get_Stored_num() {
         return Store_num;
     }
