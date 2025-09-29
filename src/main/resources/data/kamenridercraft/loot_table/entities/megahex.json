@@ -58,13 +58,23 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:megahex_viral_core"
-        }
-      ],
-      "conditions": [
+          "name": "kamenridercraft:megahex_viral_core",
+          "weight": 1
+        },
         {
-          "condition": "minecraft:random_chance",
-          "chance": 0.25
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dragon_fruits_energy_lockseed",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drive_lockseed",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:fruitsshift",
+          "weight": 1
         }
       ]
     }
