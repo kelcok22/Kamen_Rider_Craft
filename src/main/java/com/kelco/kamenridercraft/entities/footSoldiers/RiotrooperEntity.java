@@ -1,12 +1,10 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
-import net.minecraft.ChatFormatting;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -16,7 +14,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 
 public class RiotrooperEntity extends BaseHenchmenEntity{
 	
@@ -44,18 +41,18 @@ public class RiotrooperEntity extends BaseHenchmenEntity{
 				serverlevel.sendParticles(sand, this.getX(), this.getY(), this.getZ(), 30, 0, 0, 0, 0.05);
 				serverlevel.sendParticles(sand, this.getX(), this.getY()+1, this.getZ(), 30, 0, 0, 0, 0.05);
 			}
-			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:
 						boss = MobsCore.ORGA.get().create(this.level());
-						if (boss != null && this.getLastAttacker() instanceof Player playerIn){
+						if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)){
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.horse_orphnoch"));
 						}
 						break;
 					case 1:
 						boss = MobsCore.MUEZ.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.muez"));
 						}
 						break;

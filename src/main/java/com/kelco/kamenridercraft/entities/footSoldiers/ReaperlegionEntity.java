@@ -1,9 +1,8 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.variants.ReaperVariant;
-import com.kelco.kamenridercraft.entities.variants.RoidmudeVariant;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -35,19 +34,19 @@ public class ReaperlegionEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
 
         if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
                 int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.MEDIC_ROIDMUDE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.medic_roidmude"));
                         }
                         break;
 
                     case 1:
                         boss = MobsCore.DARK_DRIVE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_drive"));
                         }
                         break;
@@ -92,11 +91,6 @@ public class ReaperlegionEntity extends BaseHenchmenEntity {
     public void readAdditionalSaveData(CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         this.entityData.set(VARIANT, compound.getInt("Variant"));
-    }
-
-
-    protected void defineSynchedData() {
-
     }
 
     @Override

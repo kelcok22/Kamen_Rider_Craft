@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.item.Gaim_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
@@ -34,14 +35,14 @@ public class MegahexEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<80
                 && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Gaim_Rider_Items.MEGAHEX.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)==Gaim_Rider_Items.MEGAHEX_CORE.get()) {
-            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.megahex_kiwami"));
+            if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.megahex_kiwami"));
             this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.3);
             this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
             this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
             RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gaim_Rider_Items.MEGAHEX_KIWAMI.get(), 1);
         }else if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<30
                 && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Gaim_Rider_Items.MEGAHEX.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)==Gaim_Rider_Items.MEGAHEX_KIWAMI.get()) {
-            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.megahex_kiwami"));
+            if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.megahex_kiwami"));
             this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
             this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
             this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
@@ -54,7 +55,7 @@ public class MegahexEntity extends BaseHenchmenEntity {
                 playerIn.level().addFreshEntity(key);
                 key2.setPickUpDelay(0);
                 playerIn.level().addFreshEntity(key2);
-                playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.gaim_drive_megahex"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.gaim_drive_megahex"));
             }
         }
     }

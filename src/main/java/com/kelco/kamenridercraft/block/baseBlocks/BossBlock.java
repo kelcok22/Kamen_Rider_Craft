@@ -7,6 +7,7 @@ import java.util.function.Supplier;
 import javax.annotation.Nullable;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
@@ -69,7 +70,7 @@ public class BossBlock extends BaseBlock {
 		if (boss != null) {
 			boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
 			wolrd.addFreshEntity(boss);
-			if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
+			if (!TEXT.isEmpty() && wolrd.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) for (Component text : TEXT) player.sendSystemMessage(text);
 		}
 		super.playerDestroy(wolrd, player, pos, state, p_49831_, stack);
 	}

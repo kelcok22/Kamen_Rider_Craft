@@ -1281,10 +1281,10 @@ public class Zi_O_Rider_Items {
                             .IsGlowing().IsBeltGlowing().addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_RIDEWATCH = ITEMS.register("zero_one_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:hiden_zero_one_driver", "kamenridercraft:rising_hopper_progrisekey").addSummonWeapon("kamenridercraft:attache_calibur").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SABER_RIDEWATCH = ITEMS.register("saber_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_saber","zi_o","ziku_driver_zi_o_belt_decade_saber",
+			() -> new SaberRidewatchItem(new Item.Properties(), "kamenridercraft:seiken_swordriver_saber", "kamenridercraft:brave_dragon_wonder_ride_book",0,"_decade_saber","zi_o","ziku_driver_zi_o_belt_decade_saber",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -1295,19 +1295,19 @@ public class Zi_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			}.addSummonWeapon("kamenridercraft:kaenken_rekka").IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> REVI_RIDEWATCH = ITEMS.register("revi_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:revice_driver", "kamenridercraft:rex_vistamp").addSummonWeapon("kamenridercraft:ohin_buster_50").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> VICE_RIDEWATCH = ITEMS.register("vice_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:vice_belt", "kamenridercraft:rex_vistamp_vice").addSummonWeapon("kamenridercraft:osutoderu_hammer_50").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_RIDEWATCH = ITEMS.register("geats_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:desire_driver_geats", "kamenridercraft:magnum_raise_buckle").addSummonWeapon("kamenridercraft:magnum_shooter_40x").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOTCHARD_RIDEWATCH = ITEMS.register("gotchard_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:gotchardriver", "kamenridercraft:hopper1_ride_chemy_card").addSummonWeapon("kamenridercraft:gotcharge_gun").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
 			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Reboot_Rider_Items.AMAZONS_DRIVER_ALPHA.get())

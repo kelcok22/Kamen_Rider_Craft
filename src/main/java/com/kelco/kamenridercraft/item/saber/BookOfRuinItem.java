@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.saber;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.bosses.FalchionEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
@@ -29,7 +30,7 @@ public class BookOfRuinItem extends BaseItem {
 
 			FalchionEntity falchion = MobsCore.FALCHION.get().create(level);
 			if (falchion != null) {
-				p_41129_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion"));
+				if (p_41128_.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) p_41129_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion"));
 				falchion.moveTo((p_41129_.getX()+ look.x * 3), p_41129_.getY(), (p_41129_.getZ() + look.z * 3), p_41129_.getYRot(), 0.0F);
 				level.addFreshEntity(falchion);
 				itemstack.shrink(1);	

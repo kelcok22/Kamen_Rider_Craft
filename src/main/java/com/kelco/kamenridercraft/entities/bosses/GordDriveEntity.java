@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -85,16 +86,16 @@ public class GordDriveEntity extends BaseHenchmenEntity {
 	}
     
     public void tick() {
-        if (ServerConfig.goldDriveWeaponSteal && this.getHealth()<75 && this.getLastAttacker() != null) {
+        if (this.level().getGameRules().getBoolean(ModGameRules.RULE_GOLD_DRIVE_WEAPON_STEAL) && this.getHealth()<75 && this.getTarget() != null) {
             if (this.getMainHandItem().isEmpty()) {
-                this.STOLEN_MAINHAND_WEAPON = this.getLastAttacker().getMainHandItem();
-                this.setItemSlot(EquipmentSlot.MAINHAND, this.getLastAttacker().getMainHandItem());
-                this.getLastAttacker().setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
+                this.STOLEN_MAINHAND_WEAPON = this.getTarget().getMainHandItem();
+                this.setItemSlot(EquipmentSlot.MAINHAND, this.getTarget().getMainHandItem());
+                this.getTarget().setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
             }
             if (this.getOffhandItem().isEmpty()) {
-                this.STOLEN_OFFHAND_WEAPON = this.getLastAttacker().getOffhandItem();
-                this.setItemSlot(EquipmentSlot.OFFHAND, this.getLastAttacker().getOffhandItem());
-                this.getLastAttacker().setItemSlot(EquipmentSlot.OFFHAND, ItemStack.EMPTY);
+                this.STOLEN_OFFHAND_WEAPON = this.getTarget().getOffhandItem();
+                this.setItemSlot(EquipmentSlot.OFFHAND, this.getTarget().getOffhandItem());
+                this.getTarget().setItemSlot(EquipmentSlot.OFFHAND, ItemStack.EMPTY);
             }
         } else if (this.getHealth()<130) {
             if(getItemBySlot(EquipmentSlot.FEET).getItem()==Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()){

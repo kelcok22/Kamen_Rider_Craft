@@ -51,7 +51,7 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
         return this;
     }
 
-    public void summon(ItemStack stack, Level level, Player player) {
+    public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
@@ -112,7 +112,7 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
         && (RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()
         || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
         || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())) {
-            summon(itemstack, level, player);
+            summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
         return super.use(level, player, usedHand);

@@ -1,10 +1,9 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.level.Level;
 
 public class PantherasLuteusEntity extends BaseHenchmenEntity {
@@ -18,7 +17,7 @@ public class PantherasLuteusEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				BaseHenchmenEntity boss = MobsCore.EL_OF_THE_WATER.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

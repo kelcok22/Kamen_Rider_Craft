@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
@@ -38,7 +39,7 @@ public class EngineBrosEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
             if (playerIn.getInventory().countItem(Build_Rider_Items.GEAR_REMOCON.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.GEAR_HELL_BROS.get()) {
-                playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.hell_bros2"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.hell_bros2"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

@@ -1,9 +1,9 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -25,36 +25,36 @@ public class ShimiEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
 					case 0:
 						boss = MobsCore.CALIBUR.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.calibur"));
 						}
 						break;
 					case 1:
 						boss = MobsCore.LEGEIEL.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.legeiel"));
 						}
 						break;
 					case 2:
 						boss = MobsCore.ZOOOUS.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zooous"));
 						}
 						break;
 					case 3:
 						boss = MobsCore.STORIOUS.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.storious"));
 						}
 						break;
 					case 4:
 						boss = MobsCore.DESAST.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.desast"));
 						}
 						break;

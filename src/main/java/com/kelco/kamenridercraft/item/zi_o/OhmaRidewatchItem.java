@@ -7,11 +7,13 @@ import java.util.Map;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
+import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -68,7 +70,7 @@ public class OhmaRidewatchItem extends BaseItem {
         return this;
     }
 
-    public void summon(ItemStack stack, Level level, Player player) {
+    public void summon(Level level, Player player) {
         if (!level.isClientSide() && this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get() && !ModList.get().isLoaded("supersentaicraft")) {
             player.sendSystemMessage(Component.translatable("message.kamenridercraft.ryusoul_red_fail"));
 	    player.awardStat(Stats.ITEM_USED.get(this));
@@ -100,7 +102,9 @@ public class OhmaRidewatchItem extends BaseItem {
                         if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1)));
                     }
 
-                    if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, 1);
+                    for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
+
+                    if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
                     if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
                         RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
                     }
@@ -127,7 +131,7 @@ public class OhmaRidewatchItem extends BaseItem {
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
         && (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
         || RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())) {
-            summon(itemstack, level, player);
+            summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
         return super.use(level, player, usedHand);

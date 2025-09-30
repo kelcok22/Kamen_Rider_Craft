@@ -1,10 +1,8 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
 import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
-import net.minecraft.ChatFormatting;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -29,12 +27,12 @@ public class MageFootsoldierEntity extends BaseHenchmenEntity{
     
 	public void remove(RemovalReason p_149847_) {
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				BaseHenchmenEntity boss = MobsCore.SORCERER.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
+					if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.sorcerer"));
 					}
 				}

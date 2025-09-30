@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.BossEvent;
@@ -48,16 +49,16 @@ public class WozEntity extends BaseHenchmenEntity {
                     case 1:
                         RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.QUIZ_MIRIDEWATCH.get(), 1);
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_DESPEAR_TSUE.get()));
-                        playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_quiz"));
+                        if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_quiz"));
                         break;
                     case 2:
                         RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.SHINOBI_MIRIDEWATCH.get(), 1);
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_DESPEAR_KAMA.get()));
-                        playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_shinobi"));
+                        if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_shinobi"));
                         break;
                     default:
                         RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.KIKAI_MIRIDEWATCH.get(), 1);
-                        playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_kikai"));
+                        if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_kikai"));
                         break;
                 }
             }

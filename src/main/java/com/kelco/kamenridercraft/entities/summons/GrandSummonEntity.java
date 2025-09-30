@@ -1,12 +1,11 @@
 package com.kelco.kamenridercraft.entities.summons;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -30,12 +29,12 @@ public class GrandSummonEntity extends RiderSummonEntity {
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.35F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.35F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
 	}
 	
     @Override
     public void setItemSlot(EquipmentSlot hand, ItemStack stack) {
-        if (!hand.isArmor() && stack.isDamageableItem() && ServerConfig.summonedItemDurability != 0) stack.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
+        if (!hand.isArmor() && stack.isDamageableItem() && this.level().getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, this.level().getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
         super.setItemSlot(hand, stack);
     }
 

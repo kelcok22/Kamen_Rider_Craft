@@ -1,20 +1,14 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
 public class YummyEntity extends BaseHenchmenEntity {
@@ -32,7 +26,7 @@ public class YummyEntity extends BaseHenchmenEntity {
 		if ( this.isDeadOrDying()) {
 
 
-			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA))boss = MobsCore.KAZARI.get().create(this.level());
 				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST))boss = MobsCore.UVA.get().create(this.level());
 				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_MOUNTAIN))boss = MobsCore.ANKH_LOST.get().create(this.level());
@@ -75,7 +69,7 @@ public class YummyEntity extends BaseHenchmenEntity {
     
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 4.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 30.0D);
