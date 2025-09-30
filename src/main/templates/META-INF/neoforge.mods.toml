@@ -23,7 +23,7 @@ issueTrackerURL="https://github.com/kelcok22/Kamen_Rider_Craft/issues/" #optiona
 modId="kamenridercraft" #mandatory
 
 # The version number of the mod
-version="0.13 Neoforge Beta" #mandatory
+version="1.0 test 2" #mandatory
 
 # A display name for the mod
 displayName="Kamen Rider Craft" #mandatory

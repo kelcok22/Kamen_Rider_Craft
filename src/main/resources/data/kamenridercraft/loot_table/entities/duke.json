@@ -34,10 +34,6 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:lemon_lockseed"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:dragon_fruits_energy_lockseed"
         }
       ],
       "conditions": [

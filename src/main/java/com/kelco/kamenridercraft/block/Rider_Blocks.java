@@ -1012,6 +1012,13 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> TABOO_BOSS_BLOCK = registerBlock("taboo_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.TABOO_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.taboo")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+    public static final DeferredBlock<Block> TERROR_BOSS_BLOCK = registerBlock("terror_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.TERROR_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.terror")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> POSEIDON_BOSS_BLOCK = registerBlock("poseidon_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
@@ -1060,7 +1067,12 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.LORD_BARON).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final DeferredBlock<Block> GORD_DRIVE_BOSS_BLOCK = registerBlock("gord_drive_boss_block",
+    public static final DeferredBlock<Block> MEGAHEX_BOSS_BLOCK = registerBlock("megahex_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.MEGAHEX).addLine(Component.translatable("henshin.kamenridercraft.megahex")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
+    public static final DeferredBlock<Block> GORD_DRIVE_BOSS_BLOCK = registerBlock("gord_drive_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GORD_DRIVE).addLine(Component.translatable("henshin.kamenridercraft.gord_drive")).AddToTabList(RiderTabs.RIDER_BLOCK));
 

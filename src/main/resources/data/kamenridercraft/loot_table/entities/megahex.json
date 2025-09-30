@@ -6,7 +6,23 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:himawari_lockseed",
+          "name": "kamenridercraft:megahex_core"
+        }
+      ]
+    },  {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:cyberoid_zzz_core"
+        }
+      ]
+    },    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:viral_core_bat",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -42,17 +58,23 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:lemon_lockseed"
+          "name": "kamenridercraft:megahex_viral_core",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:dragon_fruits_energy_lockseed"
-        }
-      ],
-      "conditions": [
+          "name": "kamenridercraft:dragon_fruits_energy_lockseed",
+          "weight": 1
+        },
         {
-          "condition": "minecraft:random_chance",
-          "chance": 0.25
+          "type": "minecraft:item",
+          "name": "kamenridercraft:himawari_lockseed",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:viral_core_bat",
+          "weight": 1
         }
       ]
     }

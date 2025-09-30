@@ -8,11 +8,15 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -42,42 +46,78 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> BASIC_TIRE = ITEMS.register("basic_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"no_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2).model_has_different_name("speedshift").has_basic_model());
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.ChangeSlot(2).model_has_different_name("speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED_CHASER = ITEMS.register("proto_speedshift_chaser",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt_chaser",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 8,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("chaser.geo.json").ChangeAnimation("chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.ChangeModel("chaser.geo.json").ChangeAnimation("chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("proto_speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED = ITEMS.register("proto_speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zero","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json")
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json")
 					.alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASER.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED = ITEMS.register("speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_WILD = ITEMS.register("wildshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wild","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TECHNIC = ITEMS.register("technicshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_technic","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_CAR = ITEMS.register("deadheat_car",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(ShiftChassisAssembler.DRIVE_CAR,3).AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -90,8 +130,17 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.CONFUSION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().model_has_different_name("dead_heat").has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().model_has_different_name("dead_heat").has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_MACH = ITEMS.register("deadheatshift_mach",
@@ -99,8 +148,17 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.CONFUSION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("dead_heat").has_basic_model());
 
 
@@ -109,15 +167,31 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.CONFUSION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addAlternative(SHIFT_DEAD_HEAT_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addAlternative(SHIFT_DEAD_HEAT_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_FORMULA= ITEMS.register("formulashift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_formula","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)).alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_CORE = ITEMS.register("tridoronshift_core",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).has_basic_model()
@@ -137,8 +211,14 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
-					.addAlternative(BASIC_TIRE.get()).AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2)
+					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addAlternative(BASIC_TIRE.get()).AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2)
 					.model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_NOT_ALL = ITEMS.register("tridoronshift_not_all",
@@ -147,8 +227,14 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().model_has_different_name("tridoronshift").has_basic_model().AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().model_has_different_name("tridoronshift").has_basic_model().AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON = ITEMS.register("tridoronshift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_tridoron","drive","drivedriver_belt",
@@ -156,8 +242,14 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).AddNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).AddNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_HEARTRON = ITEMS.register("heartronshift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","heart","drivedriver_belt",
@@ -166,43 +258,91 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
-					,new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false))
-					.ChangeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_HIGH_SPEED = ITEMS.register("high_speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_high_speed","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_NEXT = ITEMS.register("nextshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.NEXT_CAR).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.REALIZING_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 3, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.NEXT_CAR).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_SPECIAL = ITEMS.register("specialshift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_special","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.NEXT_CAR)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.REALIZING_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 3, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.NEXT_CAR)
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_FRUITS = ITEMS.register("fruitsshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fruits","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED_WILD_TECHNIC = ITEMS.register("speedwildtechnicshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_speed_wild_technic","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static List<Item> NEED_ITEM_ATTACK_123= new ArrayList<Item>();
@@ -210,8 +350,20 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> ATTACK_123 = ITEMS.register("attack123_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"attack123_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123)
+					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+				}
+			}.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static List<Item> NEED_ITEM_PEOPLE_SAVER= new ArrayList<Item>();
@@ -222,8 +374,20 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER)
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 10, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 40, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 40, 0, 0, 0, 1);
+				}
+			}.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static List<Item> NEED_ITEM_KOUJI_GENBAR= new ArrayList<Item>();
@@ -233,61 +397,124 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 5, 5,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 5, 2,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 4,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 4,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+				}
+			}.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MAX_FLARE = ITEMS.register("maxflare",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"max_flare_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(ATTACK_123.get()).ChangeSlot(2).AddToList(NEED_ITEM_ATTACK_123).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,7).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_FUNKY_SPIKE = ITEMS.register("funkyspike",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"funky_spike_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(ATTACK_123.get()).ChangeSlot(2).AddToList(NEED_ITEM_ATTACK_123).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,7).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_MIDNIGHT_SHADOW = ITEMS.register("midnightshadow",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"midnight_shadow_tire","drive","drivedriver_belt",
-					new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(ATTACK_123.get()).ChangeSlot(2).AddToList(NEED_ITEM_ATTACK_123).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,7).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_JUSTICE_HUNTER = ITEMS.register("justice_hunter",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"justice_hunter_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(PEOPLE_SAVER.get()).ChangeSlot(2).AddToList(NEED_ITEM_PEOPLE_SAVER).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_DREAM_VAGAS = ITEMS.register("dream_vegas",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"dream_vegas_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.LUCK, 40, 0,true,false)).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.LUCK, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_DIMENSION_CAB = ITEMS.register("dimension_cab",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"dimension_cab_tire","drive","drivedriver_belt",
-					new MobEffectInstance(Effect_core.WARP, 40, 0,true,false)).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(Effect_core.WARP, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_MASSIVE_MONSTER = ITEMS.register("massive_monster",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"massive_monster_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPIN_MIXER = ITEMS.register("spin_mixer",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"spin_mixer_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem())
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem())
 					.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).addAlternative(KOUJI_GENBAR.get()).ChangeSlot(2)
 					.AddToList(NEED_ITEM_KOUJI_GENBAR).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -295,27 +522,52 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> SHIFT_RUMBLE_DUMP = ITEMS.register("rumble_dump",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"rumble_dump_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem())
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem())
 					.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).addAlternative(KOUJI_GENBAR.get()).ChangeSlot(2).AddToList(NEED_ITEM_KOUJI_GENBAR)
 					.AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_MAD_DOCTOR_MACH = ITEMS.register("mad_doctor_mach",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mad_doctor_tire","mach","drivedriver_belt",
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-					.addAlternative(PEOPLE_SAVER.get()).addNeedForm(SHIFT_DEAD_HEAT_MACH.get(),1).ChangeSlot(2)
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addAlternative(PEOPLE_SAVER.get()).addNeedForm(SHIFT_DEAD_HEAT_MACH.get(),1).ChangeSlot(2)
 					.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("mad_doctor").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MAD_DOCTOR = ITEMS.register("mad_doctor",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mad_doctor_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem())
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem())
 					.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).addAlternative(SHIFT_MAD_DOCTOR_MACH.get()).ChangeSlot(2).AddToList(NEED_ITEM_PEOPLE_SAVER).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_HOOKING_WRECKER = ITEMS.register("hooking_wrecker",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"hooking_wrecker_tire","drive","drivedriver_belt",
-					new MobEffectInstance(Effect_core.LONG_ARM, 40, 1,true,false)).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(Effect_core.LONG_ARM, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
@@ -331,8 +583,14 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> SHIFT_FIRE_BRAVER = ITEMS.register("fire_braver",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"fire_braver_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(PEOPLE_SAVER.get()).ChangeSlot(2).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddToList(NEED_ITEM_PEOPLE_SAVER)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,4).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
@@ -340,8 +598,14 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"rolling_gravity_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(KOUJI_GENBAR.get()).ChangeSlot(2).AddToList(NEED_ITEM_KOUJI_GENBAR).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,4).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
@@ -352,8 +616,14 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> SHIFT_ROAD_WINTER = ITEMS.register("road_winter",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"road_winter_tire","drive","drivedriver_belt",
-					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
+					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,3).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_AMAZING_CIRCUS= ITEMS.register("amazing_circus",
@@ -362,27 +632,51 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> SHIFT_MANTARN_F01 = ITEMS.register("mantarn_f01",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"f01_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 39,true,false))
-					.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 39,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,1).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_JACKY_F02 = ITEMS.register("jacky_f02",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"f02_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-					.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,1).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPARNER_F03 = ITEMS.register("sparner_f03",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"f03_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
-					.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,1).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_MEGA_MAX_FLARE = ITEMS.register("mega_maxflare",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mega_maxflare_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
@@ -410,35 +704,75 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,10).has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,10).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_MAGARL = ITEMS.register("signal_magarl",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_magarl_tire","mach","mach_driver_honoh_belt",
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeSlot(2).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.ChangeSlot(2).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_KAKSARN = ITEMS.register("signal_kaksarn",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_kaksarn_tire","mach","mach_driver_honoh_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-					.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_TOMARLE = ITEMS.register("signal_tomarle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_tomarle_tire","mach","mach_driver_honoh_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 9,true,false))
-					.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 9,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_KIKERN= ITEMS.register("signal_kikern",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_kikern_tire","mach","mach_driver_honoh_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-					.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 20, 0, 0, 0, 1);
+				}
+			}.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_CHASER_MACH= ITEMS.register("signal_chaser_mach",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chaser","mach","mach_driver_honoh_belt_chaser",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}
 					.ChangeModel("mach.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("signal_chaser").has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_CHASER= ITEMS.register("signal_chaser",
@@ -446,8 +780,17 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.addAlternative(SIGNAL_CHASER_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.addAlternative(SIGNAL_CHASER_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM)
 					.AddToList(ShiftChassisAssembler.NEXT_BIKE,3).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_RIDE_CROSSER= ITEMS.register("shift_ride_crosser",
@@ -456,15 +799,33 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeModel("mach.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.ChangeModel("mach.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TRIDORON_KEY= ITEMS.register("tridoron_key",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_super","drive_dead_heat","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeModel("default.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.ChangeModel("default.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 
@@ -501,15 +862,34 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("rhino_super_viral_core").has_basic_model());
 
 	public static final DeferredItem<Item> RHINO_SUPER_VIRAL_CORE = ITEMS.register("rhino_super_viral_core",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_chou","mashin_chaser","blank",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}
 					.addAlternative(SHIFT_VIRAL_CORE.get()).IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MEGAHEX_VIRAL_CORE  = ITEMS.register("megahex_viral_core",
@@ -522,15 +902,30 @@ public class Drive_Rider_Items {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-                    .has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> TOKUJOKA_KEY = ITEMS.register("tokujoka_key",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mach_metro_pd","metro_pd_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BANNO_TABLET = ITEMS.register("banno_tablet",
@@ -538,8 +933,17 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROIDMUDE_CORE_002 = ITEMS.register("roidmude_core_002",
@@ -549,8 +953,17 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brain","banno_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.RIDER_POISON_HAND, 40, 0,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+					,new MobEffectInstance(Effect_core.RIDER_POISON_HAND, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROIDMUDE_CORE_009 = ITEMS.register("roidmude_core_009",
@@ -558,15 +971,34 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> PROTOZERO_CORE = ITEMS.register("protozero_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mashin_chaser","blank",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)).IsGlowing()
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.IsGlowing()
                     .IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CYBEROID_ZZZ_CORE = ITEMS.register("cyberoid_zzz_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","lupin","lupin_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROIDMUDE_CORE_108 = ITEMS.register("roidmude_core_108",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
