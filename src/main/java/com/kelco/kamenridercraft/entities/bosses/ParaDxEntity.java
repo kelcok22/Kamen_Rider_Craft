@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -39,9 +40,8 @@ public class ParaDxEntity extends BaseHenchmenEntity {
 				ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 				if (RiderDriverItem.get_Form_Item(belt,1)!=Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get()) {
 					RiderDriverItem.set_Form_Item(belt, Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get(), 1);
-					if (this.getTarget() instanceof Player playerIn){
+					if (this.getTarget() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)){
 						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_2"));
-						
 					}
 				}
 			}

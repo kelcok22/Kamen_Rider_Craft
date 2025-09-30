@@ -2,22 +2,17 @@ package com.kelco.kamenridercraft.entities.allies;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
@@ -46,8 +41,8 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 
 
@@ -61,7 +56,7 @@ public class KintarosEntity extends BaseAllyEntity {
 		}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
 
 
@@ -82,7 +77,7 @@ public class KintarosEntity extends BaseAllyEntity {
         		if (p_28879_ instanceof Creeper || p_28879_ instanceof Ghast) {
 					return this.getMainHandItem().getItem() instanceof BowItem;
 				}
-				return p_28879_ instanceof Enemy && !(p_28879_ instanceof Creeper) && !(p_28879_ instanceof NeutralMob neutral && !neutral.isAngry());
+				return p_28879_ instanceof Enemy && !(p_28879_ instanceof NeutralMob neutral && !neutral.isAngry());
 			}else return false;
 		}));
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, false, this::isAngryAt));
@@ -124,11 +119,11 @@ public class KintarosEntity extends BaseAllyEntity {
 						if (!player.getAbilities().instabuild) {
 						   itemstack.shrink(1);
 						}
-						if (ServerConfig.kintarosTissueDrop) {
+						if (this.level().getGameRules().getBoolean(GameRules.RULE_MOBGRIEFING)) {
 							for (int i = 0; i < 10; i++) {
 								ItemEntity tissue = new ItemEntity(player.level(), this.getRandomX(7.0), this.getY()+8, this.getRandomZ(7.0), new ItemStack(Items.PAPER), 0, 0, 0);
 								tissue.setPickUpDelay(40);
-								player.level().addFreshEntity(tissue);
+								this.level().addFreshEntity(tissue);
 							}
 						}
 						return InteractionResult.SUCCESS;
@@ -169,27 +164,7 @@ public class KintarosEntity extends BaseAllyEntity {
         }
     }
 
-	   protected SoundEvent getAmbientSound() {
-		         return SoundEvents.VILLAGER_AMBIENT;
-		   }
-	
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-		
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	   public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 	   

@@ -5,10 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
@@ -45,7 +44,7 @@ public class MajestyRidewatchItem extends OhmaRidewatchItem {
             for (Item item : this.summonAltMajestyWeapons.get(player.getOffhandItem().getItem())) {
                 ItemStack stack = new ItemStack(item);
 			    stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
-			    if (stack.isDamageableItem() && ServerConfig.summonedItemDurability != 0) stack.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
+			    if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
 
 				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 				entity.setPickUpDelay(0);
@@ -55,7 +54,7 @@ public class MajestyRidewatchItem extends OhmaRidewatchItem {
             for (Item item : this.summonMajestyWeapons) {
                 ItemStack stack = new ItemStack(item);
 			    stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
-			    if (stack.isDamageableItem() && ServerConfig.summonedItemDurability != 0) stack.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
+			    if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
                 
 				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 				entity.setPickUpDelay(0);

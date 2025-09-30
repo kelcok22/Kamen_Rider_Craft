@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entities.bosses;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -39,7 +40,7 @@ public class FalchionEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
 			if (playerIn.getInventory().countItem(Saber_Rider_Items.WONDER_WORLD_STORY_OF_RAIMEIKEN_IKAZUCHI_WONDER_RIDE_BOOK.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get()) {
-				playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion_siren"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion_siren"));
     			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
     			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
     			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

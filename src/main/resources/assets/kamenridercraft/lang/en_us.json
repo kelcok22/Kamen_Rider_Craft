@@ -3,6 +3,16 @@
   "key.kamenridercraft.belt": "Open Belt Inventory",
   "key.kamenridercraft.ability": "Use an Ability",
 
+  "gamerule.reiwaRidewatches": "Enable Reiwa Ridewatches",
+  "gamerule.reiwaRidewatches.description": "If enabled, Ohma Zi-O and Zi-O OhmaForm will be able to summon Riders and weapons from the Reiwa Era.",
+  "gamerule.summonedItemDurability": "Summoned item durability",
+  "gamerule.summonedItemDurability.description": "The amount of durability an item should have when summoned by a Rider. Set to 0 for the tool's normal durability.",
+  "gamerule.gordDriveWeaponYoink": "Gold Drive can steal weapons",
+  "gamerule.gordDriveWeaponYoink.description": "The Gold Drive boss can steal weapons from its target after reaching half health.",
+  "gamerule.bossSpawnPercentage": "Boss spawn chance percentage",
+  "gamerule.bossSpawnPercentage.description": "The chance for a Rider mob to spawn a boss when killed.",
+  "gamerule.bossHenshinAnnouncements": "Announce boss henshin",
+
   "kamenridercraft.container.enderchest": "Connected to your Ender Chest",
 
 "tab.kamenridercraft.egg_items": "Rider Spawn Eggs",

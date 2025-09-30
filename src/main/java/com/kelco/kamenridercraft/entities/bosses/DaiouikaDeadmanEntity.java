@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -35,7 +36,7 @@ public class DaiouikaDeadmanEntity extends BaseHenchmenEntity {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
 
-                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.anomalocaris_deadman"));
+                    if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.anomalocaris_deadman"));
                 }
             }
 

@@ -1,24 +1,17 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.ServerConfig;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
-import net.minecraft.core.BlockPos;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-
-import java.util.Random;
 
 public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
 
@@ -34,7 +27,7 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 				int bossChoice = 0;
 				if (this.level().dimension() == MOON)bossChoice=1;
@@ -42,14 +35,14 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
 					case 0:
 						boss = MobsCore.KAISER.get().create(this.level());
 						if (boss != null) {
-							if (this.getLastAttacker()instanceof Player playerIn) {
+							if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 								playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.kaiser"));
 							}
 						}
 						break;
 					case 1:
 						boss = MobsCore.KAISER_REVERSE.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.kaiser_reverse"));
 						}
 						break;

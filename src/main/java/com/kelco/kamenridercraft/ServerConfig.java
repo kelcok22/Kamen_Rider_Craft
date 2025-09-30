@@ -1,12 +1,5 @@
 package com.kelco.kamenridercraft;
 
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
@@ -18,22 +11,6 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public class ServerConfig
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
-
-    private static final ModConfigSpec.IntValue SUMMONED_ITEM_DAMAGE = BUILDER.push("General Settings")
-            .comment(" (default: 100) How much durability should a weapon/tool have when summoned rather than obtained normally? Set to 0 for the tool's normal durability.")
-            .defineInRange("summonedItemDurability", 100, 0, Integer.MAX_VALUE);
-
-    private static final ModConfigSpec.DoubleValue BOSS_SPAWN_RATE = BUILDER
-            .comment(" (default: 10.0%) How often should the mobs spawn bosses when killed?")
-            .defineInRange("bossSpawnRate", 10.0, 0.0, 100.0);
-
-    private static final ModConfigSpec.BooleanValue KINTAROS_TISSUE_DROP = BUILDER.pop().push("Series-Specific Settings")
-            .comment(" (default: true) Should Kintaros drop paper (tissues) when transformed into his Den-O form?")
-            .define("kintarosTissueDrop", true);
-
-    private static final ModConfigSpec.BooleanValue GOLD_DRIVE_WEAPON_STEAL = BUILDER
-            .comment(" (default: false) Rather than summoning random weapons, should Gold Drive steal the player's held items like in the show?")
-            .define("gordDriveYoink", false);
 
     private static final ModConfigSpec.BooleanValue MIGHTY_BROTHER_SPAWNING = BUILDER
             .comment(" (default: true) Should Parado spawn when using the Mighty Brothers XX and Knock Out Fighter 2 Gashats?")
@@ -62,10 +39,6 @@ public class ServerConfig
 
     static final ModConfigSpec SPEC = BUILDER.build();
 
-    public static int summonedItemDurability;
-    public static double bossSpawnRate;
-    public static boolean kintarosTissueDrop;
-    public static boolean goldDriveWeaponSteal;
     public static boolean mightyBrotherSpawning;
     public static boolean decadeExAidSpawning;
     public static boolean viceSpawning;
@@ -81,10 +54,6 @@ public class ServerConfig
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
-        summonedItemDurability = SUMMONED_ITEM_DAMAGE.get();
-        bossSpawnRate = BOSS_SPAWN_RATE.get();
-        kintarosTissueDrop = KINTAROS_TISSUE_DROP.get();
-        goldDriveWeaponSteal = GOLD_DRIVE_WEAPON_STEAL.get();
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
         decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
         viceSpawning = VICE_SPAWNING.get();

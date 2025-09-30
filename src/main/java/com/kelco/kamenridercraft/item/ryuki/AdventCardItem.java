@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+import net.minecraft.client.Minecraft;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -95,6 +96,10 @@ public class AdventCardItem extends BaseItem {
 
 											p_41128_.addFreshEntity(trick);
 											trick.bindToPlayer(p_41129_);
+                                            if (!Minecraft.getInstance().isSingleplayer()){
+                                                trick.setCustomName(p_41129_.getDisplayName());
+                                                trick.setCustomNameVisible(true);
+                                            }
 										}
 									}
 						 			break;
@@ -123,6 +128,10 @@ public class AdventCardItem extends BaseItem {
 
 											p_41128_.addFreshEntity(trick);
 											trick.bindToPlayer(p_41129_);
+                                            if (!Minecraft.getInstance().isSingleplayer()){
+                                                trick.setCustomName(p_41129_.getDisplayName());
+                                                trick.setCustomNameVisible(true);
+                                            }
 										}
 									}
 						 			break;

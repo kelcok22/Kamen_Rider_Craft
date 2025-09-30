@@ -22,6 +22,7 @@ import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
@@ -36,14 +37,12 @@ import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.client.event.*;
@@ -69,6 +68,7 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 @Mod(KamenRiderCraftCore.MOD_ID)
@@ -80,20 +80,20 @@ public class KamenRiderCraftCore
 
     private static final ResourceLocation BLOCKING_PROPERTY_RESLOC =  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
 
-    public static List<Item> CHANGE_SWORD_ITEM= new ArrayList<Item>();
+    public static List<Item> CHANGE_SWORD_ITEM= new ArrayList<>();
 
-    public static List<Item> SWORD_GUN_ITEM= new ArrayList<Item>();
+    public static List<Item> SWORD_GUN_ITEM= new ArrayList<>();
 
-    public static List<Item> KUUGA_CHANGING_ITEM= new ArrayList<Item>();
-    public static List<Item> KUUGA_PHONE= new ArrayList<Item>();
+    public static List<Item> KUUGA_CHANGING_ITEM= new ArrayList<>();
+    public static List<Item> KUUGA_PHONE= new ArrayList<>();
 
-    public static List<Item> RAISE_RISER_ITEM= new ArrayList<Item>();
+    public static List<Item> RAISE_RISER_ITEM= new ArrayList<>();
 
-    public static List<Item> SHIELD_ITEM= new ArrayList<Item>();
+    public static List<Item> SHIELD_ITEM= new ArrayList<>();
 
-    public static List<Item> DARK_SHIELD_ITEM= new ArrayList<Item>();
+    public static List<Item> DARK_SHIELD_ITEM= new ArrayList<>();
 
-    public static List<Item> CHEMY_CARD= new ArrayList<Item>();
+    public static List<Item> CHEMY_CARD= new ArrayList<>();
 
     public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer)
     {
@@ -151,6 +151,7 @@ public class KamenRiderCraftCore
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
+        ModGameRules.register(modEventBus);
         /*ModBlockEntities.REGISTRY.register(modEventBus);*/
 
         LootModifierCore.register(modEventBus);
@@ -186,131 +187,22 @@ public class KamenRiderCraftCore
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
-if (event.getRenderer().getModel()instanceof PlayerModel model) {
-
-    if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ArmorItem belt) {
-     if (belt instanceof RiderDriverItem driver && driver.isTransformed(event.getEntity())) {
-        double tag = RiderDriverItem.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET));
+    if (event.getRenderer().getModel()instanceof PlayerModel model && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
+        && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+        double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
         if (tag != 0) {
-            if (tag != 2) {
-                model.head.visible = false;
-            } else {
-                model.head.visible = true;
-            }
+            model.setAllVisible(false);
+            if (tag != 1) model.head.visible = true;
 
-            if (tag != 3) {
-                model.leftLeg.visible = false;
-                model.rightLeg.visible = false;
-                model.leftArm.visible = false;
-                model.rightArm.visible = false;
-                model.body.visible = false;
-            } else {
-                model.head.visible = true;
+            if (tag == 3) {
                 model.leftLeg.visible = true;
                 model.rightLeg.visible = true;
                 model.leftArm.visible = true;
                 model.rightArm.visible = true;
                 model.body.visible = true;
             }
-
-            model.hat.visible = false;
-            model.leftSleeve.visible = false;
-            model.rightSleeve.visible = false;
-            model.leftPants.visible = false;
-            model.rightPants.visible = false;
-            model.jacket.visible = false;
-        } else {
-            model.head.visible = true;
-            model.hat.visible = true;
-            model.leftLeg.visible = true;
-            model.rightLeg.visible = true;
-            model.leftArm.visible = true;
-            model.rightArm.visible = true;
-            model.body.visible = true;
-            model.leftSleeve.visible = true;
-            model.rightSleeve.visible = true;
-            model.leftPants.visible = true;
-            model.rightPants.visible = true;
-            model.jacket.visible = true;
         }
-    } else if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-        CompoundTag tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
-        if (tag.getDouble("render_type") != 0) {
-            if (tag.getDouble("render_type") != 2) {
-                model.head.visible = false;
-            } else {
-                model.head.visible = true;
-            }
-
-            if (tag.getDouble("render_type") != 3) {
-                model.leftLeg.visible = false;
-                model.rightLeg.visible = false;
-                model.leftArm.visible = false;
-                model.rightArm.visible = false;
-                model.body.visible = false;
-            } else {
-                model.head.visible = true;
-                model.leftLeg.visible = true;
-                model.rightLeg.visible = true;
-                model.leftArm.visible = true;
-                model.rightArm.visible = true;
-                model.body.visible = true;
-            }
-
-            model.hat.visible = false;
-            model.leftSleeve.visible = false;
-            model.rightSleeve.visible = false;
-            model.leftPants.visible = false;
-            model.rightPants.visible = false;
-            model.jacket.visible = false;
-        } else {
-            model.head.visible = true;
-            model.hat.visible = true;
-            model.leftLeg.visible = true;
-            model.rightLeg.visible = true;
-            model.leftArm.visible = true;
-            model.rightArm.visible = true;
-            model.body.visible = true;
-            model.leftSleeve.visible = true;
-            model.rightSleeve.visible = true;
-            model.leftPants.visible = true;
-            model.rightPants.visible = true;
-            model.jacket.visible = true;
-        }
-
-
-    }else {
-         {
-             model.head.visible = true;
-             model.hat.visible = true;
-             model.leftLeg.visible = true;
-             model.rightLeg.visible = true;
-             model.leftArm.visible = true;
-             model.rightArm.visible = true;
-             model.body.visible = true;
-             model.leftSleeve.visible = true;
-             model.rightSleeve.visible = true;
-             model.leftPants.visible = true;
-             model.rightPants.visible = true;
-             model.jacket.visible = true;
-         }}}
-     else {
-            {
-                model.head.visible = true;
-                model.hat.visible = true;
-                model.leftLeg.visible = true;
-                model.rightLeg.visible = true;
-                model.leftArm.visible = true;
-                model.rightArm.visible = true;
-                model.body.visible = true;
-                model.leftSleeve.visible = true;
-                model.rightSleeve.visible = true;
-                model.leftPants.visible = true;
-                model.rightPants.visible = true;
-                model.jacket.visible = true;
-            }
     }
-}
 
         float size = 1;
 
@@ -325,16 +217,10 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
         }
         float size3 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
         if (event.getEntity().hasEffect(Effect_core.WIDE)) {
-            size2 = (float) (size2 * 3);
-            size3 = (float) (size3 * 3);
+            size2 = size2 * 3;
+            size3 = size3 * 3;
         }
         event.getPoseStack().scale(size3, size, size2);
-    }
-
-
-    @SubscribeEvent
-    public void addRenderPlayerEvent(RenderPlayerEvent.Pre event) {
-
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -354,31 +240,28 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
         {
 
 
-                for (int i = 0; i < SHIELD_ITEM.size(); i++)
-                {
+            for (Item value : SHIELD_ITEM) {
 
-                    ItemProperties.register(SHIELD_ITEM.get(i), BLOCKING_PROPERTY_RESLOC, ($itemStack, $level, $entity, $seed) -> {
-                        return $entity != null && $entity.isUsingItem() && $entity.getUseItem() == $itemStack ? 1.0F : 0.0F;
-                    });
-                }
+                ItemProperties.register(value, BLOCKING_PROPERTY_RESLOC, ($itemStack, $level, $entity, $seed) -> $entity != null && $entity.isUsingItem() && $entity.getUseItem() == $itemStack ? 1.0F : 0.0F);
+            }
 
             for (Item item : KUUGA_CHANGING_ITEM) {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
-                            } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET) != null) {
-
+                            } else {
+                                p_174637_.getItemBySlot(EquipmentSlot.FEET);
                                 if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Kuuga_Rider_Items.ARCLE.get()) {
                                     ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                                    if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_r") return 1;
-                                    if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_u") return 2;
-                                    if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_ru") return 2;
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_r")) return 1;
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_u")) return 2;
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_ru"))
+                                        return 2;
                                 } else {
                                     return 0;
                                 }
                                 return 0;
                             }
-                            return 0;
                             //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
                         }
                 );
@@ -387,14 +270,13 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
-                            } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET) != null) {
-
+                            } else {
                                 if (p_174637_ instanceof Player player) {
 
                                     List<LivingEntity> nearbyEnemies = player.level().getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(15), entity ->
                                             (entity instanceof ZuGumunBaEntity));
                                     for (LivingEntity enemy : nearbyEnemies) {
-                                        if (enemy!=null) {
+                                        if (enemy != null) {
                                             return 1;
                                         } else {
                                             return 0;
@@ -405,7 +287,6 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
                                 }
                                 return 0;
                             }
-                            return 0;
                             //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
                         }
                 );
@@ -429,67 +310,54 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             }
 
 
- for (int i = 0; i < RAISE_RISER_ITEM.size(); i++)
- {
- ItemProperties.register(RAISE_RISER_ITEM.get(i), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
- if (p_174637_ == null) {
- return 0.0F;
- }
- else if (p_174637_.getItemBySlot(EquipmentSlot.FEET)!= null){
- if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get()||p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.LASER_RISE_DRIVER_GAZER_ZERO.get()) {
- return 1;
- } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KEKERA.get()) {
- return 2;
- } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KYUUN.get()) {
- return 3;
- } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_BEROBA.get()) {
- return 4;
- }
- return 0;
- }
- return 0;
- }
- );
- }
-
-
-
-                for (int i = 0; i < SWORD_GUN_ITEM.size(); i++)
-                {
-                    ItemProperties.register(SWORD_GUN_ITEM.get(i),  ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
-                        if (p_174637_ == null) {
-                            return 0.0F;
-                        } else {
-                            return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration(p_174637_) - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+            for (Item value : RAISE_RISER_ITEM) {
+                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else {
+                                if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get() || p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.LASER_RISE_DRIVER_GAZER_ZERO.get()) {
+                                    return 1;
+                                } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KEKERA.get()) {
+                                    return 2;
+                                } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KYUUN.get()) {
+                                    return 3;
+                                } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_BEROBA.get()) {
+                                    return 4;
+                                }
+                                return 0;
+                            }
                         }
-                    });
-                }
+                );
+            }
 
-                for (int i = 0; i < CHANGE_SWORD_ITEM.size(); i++)
-                {
-                    ItemProperties.register(CHANGE_SWORD_ITEM.get(i), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
-                        return BaseSwordItem.Get_Mode(p_174635_);
 
-                    });
-                }
+            for (Item item : SWORD_GUN_ITEM) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174637_ == null) {
+                        return 0.0F;
+                    } else {
+                        return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float) (p_174635_.getUseDuration(p_174637_) - p_174637_.getUseItemRemainingTicks());
+                    }
+                });
+            }
 
-                 for (int i = 0; i < DARK_SHIELD_ITEM.size(); i++)
-                 {
-                 ItemProperties.register(DARK_SHIELD_ITEM.get(i), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
-                 if (p_174637_ == null) {
-                 return 0.0F;
-                 }
-                 else if (p_174637_.getItemBySlot(EquipmentSlot.FEET)!= null){
-                 if (p_174637_.getMainHandItem().getItem() == Ryuki_Rider_Items.DARK_BLADE.get()){
-                 return 1;
-                 }else {
-                 return 0;
-                 }
-                 }
-                 return 0;
+            for (Item item : CHANGE_SWORD_ITEM) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> BaseSwordItem.Get_Mode(p_174635_));
+            }
 
-                 });
-                 }
+            for (Item item : DARK_SHIELD_ITEM) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174637_ == null) {
+                        return 0.0F;
+                    } else {
+                        if (p_174637_.getMainHandItem().getItem() == Ryuki_Rider_Items.DARK_BLADE.get()) {
+                            return 1;
+                        } else {
+                            return 0;
+                        }
+                    }
+                });
+            }
 
             if (ModList.get().isLoaded("bettercombat")) BetterCombatAttackListener.register();
         }

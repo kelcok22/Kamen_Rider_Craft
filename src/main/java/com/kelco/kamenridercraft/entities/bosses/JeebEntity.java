@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
@@ -39,7 +40,7 @@ public class JeebEntity extends BaseHenchmenEntity {
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn  && this.getHealth()<100
                 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= Gavv_Rider_Items.HENSHIN_BELT_BITTER_GAVV.get()
         && playerIn.getInventory().countItem(Gavv_Rider_Items.SHIITA_MIMIC_KEY.asItem())!=0) {
-            if(source.getEntity() instanceof Player)playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_jeeb"));
+            if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_jeeb"));
             this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
             this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
             this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

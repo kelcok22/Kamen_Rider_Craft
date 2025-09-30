@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
 
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -50,7 +51,7 @@ public class OrgaEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide()  && this.getHealth()<50
 		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()!=Faiz_Rider_Items.ORGA_DRIVER.get()) {
-			if(source.getEntity() instanceof Player playerIn)playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga"));
+			if(source.getEntity() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga"));
 			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
 			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
 			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

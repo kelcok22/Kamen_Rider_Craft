@@ -68,7 +68,7 @@ public class RidewatchItem extends RiderFormChangeItem {
         return this;
     }
 
-    public void summon(ItemStack stack, Level level, Player player) {
+    public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
@@ -94,7 +94,7 @@ public class RidewatchItem extends RiderFormChangeItem {
                 else weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
             }
 
-            if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, 1);
+            if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
             if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
                 RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
             }
@@ -121,7 +121,7 @@ public class RidewatchItem extends RiderFormChangeItem {
         || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
         || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get()
         || RiderDriverItem.get_Form_Item(BELT, 1) == Gotchard_Rider_Items.GRAND_ZI_O_RIDE_CHEMY_CARD.get())) {
-                summon(itemstack, level, player);
+                summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
         return super.use(level, player, usedHand);
