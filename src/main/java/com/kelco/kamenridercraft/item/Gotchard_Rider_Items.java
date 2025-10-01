@@ -74,6 +74,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_TypeThree= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_SteamHopper_daybreak= new ArrayList<Item>();
+    public static List<Item> NEED_ITEM_Shining_DB= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_ExceedMighty= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_CycloneTaToBa= new ArrayList<Item>();
@@ -714,6 +715,20 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> STEAMLINER_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("daybreak_steamliner_ride_chemy_card",
 			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER1_RIDE_CHEMY_CARD_DAYBREAK.get()).AddToList(NEED_ITEM_SteamHopper_daybreak)
 					.AddToList(ChemyRiserItem.Daybreak_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> SHINING_HOPPER1_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("shining_hopper1_ride_chemy_card",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_shining","gotchard_daybreak","gotchardriver_belt_daybreak",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.BOOST,40,5,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE,40,0,true,false),
+                    new MobEffectInstance(Effect_core.FIRE_PUNCH,40,3,true,false)).AddNeedItemList(NEED_ITEM_Shining_DB)
+            .IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").AddToList(NEED_ITEM_Shining_DB).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> SHINING_STEAMLINER_RIDE_CHEMY_CARD = ITEMS.register("shining_steamliner_ride_chemy_card",
+            () -> new CopyFormChangeItem(new Item.Properties(),SHINING_HOPPER1_RIDE_CHEMY_CARD_DAYBREAK.get()).AddToList(NEED_ITEM_Shining_DB)
+                    .AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
     /**
 	public static final DeferredItem<Item> TIMELORD_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("daybreak_timelord_ride_chemy_card",
