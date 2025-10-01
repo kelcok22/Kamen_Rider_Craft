@@ -32,7 +32,7 @@ import java.util.List;
 public class OOO_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
-	public static List<Item> SPECIAL_NAME_MEDALS = new ArrayList<Item>();
+	public static List<Item> SPECIAL_NAME_MEDALS = new ArrayList<>();
 
 	public static final DeferredItem<Item> OOO_LOGO = ITEMS.register("ooo_logo",
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ooo")), new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
@@ -916,10 +916,10 @@ public class OOO_Rider_Items {
 			() -> new CopyFormChangeItem(new Item.Properties(),HACHI_MEDAL.get()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZEUS_ARI_MEDAL = ITEMS.register("zeus_ari_medal",
-			() -> new CopyFormChangeItem(new Item.Properties(),ARI_MEDAL.get()).AddToList(RiderTabs.OOO_TAB_ITEM));;
+			() -> new CopyFormChangeItem(new Item.Properties(),ARI_MEDAL.get()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
-			public static final DeferredItem<Item> X_MEDAL = ITEMS.register("x_medal",
+    public static final DeferredItem<Item> X_MEDAL = ITEMS.register("x_medal",
 					() -> new ShowaMedalItem(new Item.Properties(), (RiderDriverItem)Ichigo_Rider_Items.RIDOL.get(), Ichigo_Rider_Items.RIDOL_STICK.get()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> AMAZON_MEDAL = ITEMS.register("amazon_medal",

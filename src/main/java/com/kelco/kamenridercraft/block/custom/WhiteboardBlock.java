@@ -1,33 +1,17 @@
 package com.kelco.kamenridercraft.block.custom;
 
 
-import com.kelco.kamenridercraft.block.entity.PlinthBlockEntity;
-import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
@@ -36,7 +20,7 @@ public class WhiteboardBlock extends BaseEntityBlock {
 
 	public static VoxelShape SHAPE = Block.box(-16, 0, 7, 32,16, 9);
 	public static final MapCodec<WhiteboardBlock> CODEC = simpleCodec(WhiteboardBlock::new);
-	public static DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+	public static DirectionProperty FACING;
 	protected static final float AABB_OFFSET = 3.0F;
 	protected static final VoxelShape EAST_AABB;
 	protected static final VoxelShape WEST_AABB;
@@ -50,17 +34,12 @@ public class WhiteboardBlock extends BaseEntityBlock {
 	}
 
 	protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-		switch ((Direction)state.getValue(FACING)) {
-			case NORTH:
-				return NORTH_AABB;
-			case SOUTH:
-				return SOUTH_AABB;
-			case WEST:
-				return WEST_AABB;
-			case EAST:
-			default:
-				return EAST_AABB;
-		}
+        return switch (state.getValue(FACING)) {
+            case NORTH -> NORTH_AABB;
+            case SOUTH -> SOUTH_AABB;
+            case WEST -> WEST_AABB;
+            default -> EAST_AABB;
+        };
 	}
 
 

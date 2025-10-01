@@ -24,7 +24,7 @@ public class MetalShaftItem extends BaseSwordItem {
 	   public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		  	ItemStack belt = attacker.getItemBySlot(EquipmentSlot.FEET);
 			if (belt.getItem() instanceof RiderDriverItem) {
-				if (((RiderDriverItem)belt.getItem())== W_Rider_Items.WDRIVER.get()) {
+				if (belt.getItem() == W_Rider_Items.WDRIVER.get()) {
 					if (RiderDriverItem.get_Form_Item(belt, 1)==W_Rider_Items.HEAT_MEMORY.get()) {
 						target.setSharedFlagOnFire(true);
 						target.setRemainingFireTicks(200);

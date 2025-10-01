@@ -1,18 +1,11 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
-import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
-import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
@@ -22,7 +15,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -33,9 +25,9 @@ import java.util.List;
 import java.util.Random;
 
 public class GordDriveEntity extends BaseHenchmenEntity {
-    private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS));
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
 
-    public static List<Item> THINGS_AND_STUFF= new ArrayList<Item>();
+    public static List<Item> THINGS_AND_STUFF= new ArrayList<>();
     private ItemStack STOLEN_MAINHAND_WEAPON = ItemStack.EMPTY;
     private ItemStack STOLEN_OFFHAND_WEAPON = ItemStack.EMPTY;
 
@@ -50,7 +42,7 @@ public class GordDriveEntity extends BaseHenchmenEntity {
     }
     protected void customServerAiStep() {
         super.customServerAiStep();
-        this.bossEvent.setName(Component.translatable("entity.kamenridercraft.gord_drive").withStyle(ChatFormatting.GOLD));;
+        this.bossEvent.setName(Component.translatable("entity.kamenridercraft.gord_drive").withStyle(ChatFormatting.GOLD));
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
     }
 
@@ -113,7 +105,7 @@ public class GordDriveEntity extends BaseHenchmenEntity {
 	public static AttributeSupplier.Builder setAttributes() {
 		return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.30F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
         		.add(Attributes.ATTACK_DAMAGE, 7.0D)
         		.add(Attributes.MAX_HEALTH, 150.0D);
      }

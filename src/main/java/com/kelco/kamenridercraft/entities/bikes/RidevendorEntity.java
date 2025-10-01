@@ -1,11 +1,9 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -14,12 +12,8 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RidevendorEntity extends baseBikeEntity {
 
@@ -84,6 +78,6 @@ public class RidevendorEntity extends baseBikeEntity {
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
 }

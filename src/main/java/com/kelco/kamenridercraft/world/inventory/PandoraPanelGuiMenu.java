@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.build.PandoraPanelItem;
-import com.kelco.kamenridercraft.item.ooo.OMedalHolderItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -52,8 +51,7 @@ public class PandoraPanelGuiMenu extends AbstractContainerMenu {
 				this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18){
 					@Override
 					public boolean mayPickup(Player player) {
-						if (this.getItem().getItem() instanceof PandoraPanelItem)return false;
-						else return true;
+                        return !(this.getItem().getItem() instanceof PandoraPanelItem);
 					}
 				});
 			}
@@ -63,8 +61,7 @@ public class PandoraPanelGuiMenu extends AbstractContainerMenu {
 			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142){
 				@Override
 				public boolean mayPickup(Player player) {
-					if (this.getItem().getItem() instanceof PandoraPanelItem)return false;
-					else return true;
+                    return !(this.getItem().getItem() instanceof PandoraPanelItem);
 				}
 			});
 		}

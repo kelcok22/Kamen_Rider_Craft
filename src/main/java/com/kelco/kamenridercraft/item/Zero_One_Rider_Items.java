@@ -35,7 +35,7 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> ZERO_ONE_LOGO = ITEMS.register("zero_one_logo",
     		() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zero_one")), new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
-	public static List<Item> NEED_ITEM_RAGNAROK = new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_RAGNAROK = new ArrayList<>();
 
 	public static final DeferredItem<Item> HIDEN_METAL = ITEMS.register("hiden_metal",
     		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
@@ -1336,7 +1336,7 @@ public class Zero_One_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> PROGRISE_HOLDER = ITEMS.register("progrise_holder",
-			() -> new ProgriseHolderItem());
+            ProgriseHolderItem::new);
 
     public static final DeferredItem<Item> HIDEN_ZERO_ONE_DRIVER = ITEMS.register("hiden_zero_one_driver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));

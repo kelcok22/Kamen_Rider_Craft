@@ -1,17 +1,11 @@
 package com.kelco.kamenridercraft.dimension;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
-import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
-import net.minecraft.Util;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 import javax.annotation.Nullable;
 

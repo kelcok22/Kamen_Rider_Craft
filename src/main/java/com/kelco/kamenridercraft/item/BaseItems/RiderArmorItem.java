@@ -8,7 +8,6 @@ import net.minecraft.core.Holder;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
@@ -68,28 +67,28 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
         RawAnimation POSE = RawAnimation.begin().thenLoop("henshin_pose");
 
-        controllerRegistrar.add(new AnimationController<RiderArmorItem>(this, "Walk/Idle", 20, state -> {
+        controllerRegistrar.add(new AnimationController<>(this, "Walk/Idle", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
-            Boolean IsWaking = false;
-            Boolean IsKicking = false;
-            Boolean isTransforming = false;
+            boolean IsWaking = false;
+            boolean IsKicking = false;
+            boolean isTransforming = false;
             if (entity instanceof LivingEntity player) {
-                if(player.getDeltaMovement().x!=0||player.getDeltaMovement().z!=0)IsWaking=true;
-                if(player.hasEffect(Effect_core.RIDER_KICK)){
-                    if(player.getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&player.getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5)IsKicking =true;
+                if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) IsWaking = true;
+                if (player.hasEffect(Effect_core.RIDER_KICK)) {
+                    if (player.getEffect(Effect_core.RIDER_KICK).getAmplifier() != 0 & player.getEffect(Effect_core.RIDER_KICK).getAmplifier() != 5)
+                        IsKicking = true;
                 }
-                if (RiderDriverItem.isTransforming(player)){
-                   // isTransforming = true;
+                if (RiderDriverItem.isTransforming(player)) {
+                    // isTransforming = true;
                 }
             }
 
 
-            if (isTransforming){
+            if (isTransforming) {
                 state.setAndContinue(POSE);
-            }
-            else if (IsKicking){
+            } else if (IsKicking) {
                 state.setAndContinue(KICK);
-            }else state.setAndContinue(IsWaking ? WALK:IDLE);
+            } else state.setAndContinue(IsWaking ? WALK : IDLE);
             return PlayState.CONTINUE;
         }));
 

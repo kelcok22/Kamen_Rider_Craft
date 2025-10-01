@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.gotchard.GotchancollectionPanelItem;
 import com.kelco.kamenridercraft.item.ooo.OMedalHolderItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -67,8 +66,7 @@ public class OMedalHolderGuiMenu extends AbstractContainerMenu {
                 this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 102 + i1 * 18){
                     @Override
                     public boolean mayPickup(Player player) {
-                        if (this.getItem().getItem() instanceof OMedalHolderItem)return false;
-                        else return true;
+                        return !(this.getItem().getItem() instanceof OMedalHolderItem);
                     }
                 });
             }
@@ -78,8 +76,7 @@ public class OMedalHolderGuiMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 160){
                 @Override
                 public boolean mayPickup(Player player) {
-                    if (this.getItem().getItem() instanceof OMedalHolderItem)return false;
-                    else return true;
+                    return !(this.getItem().getItem() instanceof OMedalHolderItem);
                 }
             });
         }

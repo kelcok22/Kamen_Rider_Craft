@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
+import java.util.Objects;
+
 public class GotcharDriverBrothersItem extends RiderDriverItem {
 
 	public GotcharDriverBrothersItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
@@ -31,7 +33,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
 				belt = get_Form_Item(itemstack,1).getBeltTex();
 			}
-			if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/gotchard_belt_big.geo.json") {
+			if(Objects.equals(get_Form_Item(itemstack, 1).get_Belt_Model(), "geo/gotchard_belt_big.geo.json")) {
 				if (!isTransformed(rider)) belt = "gotchardriver_belt";
 			}
 			return "belts/"+belt;
@@ -46,7 +48,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 	}
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/gotchard_belt_big.geo.json") {
+		if(Objects.equals(get_Form_Item(itemstack, 1).get_Belt_Model(), "geo/gotchard_belt_big.geo.json")) {
 			if (!isTransformed(rider)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/gotchard_belt.geo.json");
 			else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/gotchard_belt_big.geo.json");
 		}
@@ -55,21 +57,17 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		switch (slot) {
-			case CHEST -> {
-				if (get_Form_Item(itemstack, 1)==Gotchard_Rider_Items.GOLDDASH_RIDE_CHEMY_CARD.get() || get_Form_Item(itemstack, 1)==Gotchard_Rider_Items.RAIDENJI_RIDE_CHEMY_CARD.get()){
-					return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers_big.geo.json");
-				}
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers.geo.json");
-			}
-			default -> {
-				if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
-					return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_FlyingModel("gotchard"));
-				}
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model("gotchard"));
-			}
-		}
-	}
+        if (Objects.requireNonNull(slot) == EquipmentSlot.CHEST) {
+            if (get_Form_Item(itemstack, 1) == Gotchard_Rider_Items.GOLDDASH_RIDE_CHEMY_CARD.get() || get_Form_Item(itemstack, 1) == Gotchard_Rider_Items.RAIDENJI_RIDE_CHEMY_CARD.get()) {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers_big.geo.json");
+            }
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers.geo.json");
+        }
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel("gotchard"));
+        }
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model("gotchard"));
+    }
 
 
 	@Override

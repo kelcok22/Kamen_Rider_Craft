@@ -4,7 +4,6 @@ package com.kelco.kamenridercraft.client.models;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
-import net.minecraft.client.model.AnimationUtils;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;

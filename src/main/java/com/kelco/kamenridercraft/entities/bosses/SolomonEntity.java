@@ -29,7 +29,7 @@ public class SolomonEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.3F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 200.0D);

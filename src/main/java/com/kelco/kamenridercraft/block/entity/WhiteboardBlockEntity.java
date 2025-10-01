@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.block.entity;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.custom.PlinthBlock;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -42,17 +41,12 @@ public class WhiteboardBlockEntity extends BlockEntity {
         if (pBlockEntity.level.getBlockState(pBlockEntity.getBlockPos()).getBlock()== Rider_Blocks.PLINTH.get()){
             BlockState state = pBlockEntity.level.getBlockState(pBlockEntity.getBlockPos());
 
-            switch ((Direction)state.getValue(PlinthBlock.FACING)) {
-                case NORTH:
-                    return 0;
-                case EAST:
-                    return 90;
-                case SOUTH:
-                    return 180;
-                case WEST:
-                default:
-                    return 270;
-            }
+            return switch (state.getValue(PlinthBlock.FACING)) {
+                case NORTH -> 0;
+                case EAST -> 90;
+                case SOUTH -> 180;
+                default -> 270;
+            };
         }
 
 

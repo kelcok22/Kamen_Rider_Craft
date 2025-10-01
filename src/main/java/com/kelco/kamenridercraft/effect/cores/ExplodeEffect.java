@@ -6,10 +6,8 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.common.NeoForgeEventHandler;
 
 
 public class ExplodeEffect extends MobEffect {

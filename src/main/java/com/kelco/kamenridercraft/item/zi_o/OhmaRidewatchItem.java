@@ -7,7 +7,6 @@ import java.util.Map;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
-import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;

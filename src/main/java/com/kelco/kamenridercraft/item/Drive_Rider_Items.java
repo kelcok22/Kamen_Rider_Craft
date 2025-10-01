@@ -198,7 +198,7 @@ public class Drive_Rider_Items {
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
-	public static List<Item> NEED_ITEM_TRIDORON_ALL_TIRE= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_TRIDORON_ALL_TIRE= new ArrayList<>();
 
 	public static final DeferredItem<Item> TRIDORON_ALL_TIRE = ITEMS.register("tridoron_all_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"tridoron_all_tire","drive","drivedriver_belt",
@@ -345,7 +345,7 @@ public class Drive_Rider_Items {
 			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static List<Item> NEED_ITEM_ATTACK_123= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_ATTACK_123= new ArrayList<>();
 
 	public static final DeferredItem<Item> ATTACK_123 = ITEMS.register("attack123_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"attack123_tire","drive","drivedriver_belt",
@@ -366,7 +366,7 @@ public class Drive_Rider_Items {
 			}.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
-	public static List<Item> NEED_ITEM_PEOPLE_SAVER= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_PEOPLE_SAVER= new ArrayList<>();
 
 	public static final DeferredItem<Item> PEOPLE_SAVER = ITEMS.register("people_saver_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"people_saver_tire","drive","drivedriver_belt",
@@ -390,7 +390,7 @@ public class Drive_Rider_Items {
 			}.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
-	public static List<Item> NEED_ITEM_KOUJI_GENBAR= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_KOUJI_GENBAR= new ArrayList<>();
 
 	public static final DeferredItem<Item> KOUJI_GENBAR = ITEMS.register("kouji_genbar_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kouji_genbar_tire","drive","drivedriver_belt",

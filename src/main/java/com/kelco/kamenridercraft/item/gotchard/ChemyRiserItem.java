@@ -1,17 +1,10 @@
 package com.kelco.kamenridercraft.item.gotchard;
 
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
-import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
-import com.kelco.kamenridercraft.item.decade.RiderCardItem;
-import com.kelco.kamenridercraft.item.decade.RiderSummonCardItem;
 import com.kelco.kamenridercraft.world.inventory.ChemyRiserGuiMenu;
-import com.kelco.kamenridercraft.world.inventory.ProgriseHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.gui.font.providers.UnihexProvider;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
@@ -19,15 +12,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -39,27 +28,26 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
 public class ChemyRiserItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-    public static List<Item> ALL_CHEMY= new ArrayList<Item>();
-    public static List<Item> Insect_CHEMY= new ArrayList<Item>();
-    public static List<Item> Job_CHEMY= new ArrayList<Item>();
-    public static List<Item> Vehicle_CHEMY= new ArrayList<Item>();
-    public static List<Item> Animal_CHEMY= new ArrayList<Item>();
-    public static List<Item> Artifact_CHEMY= new ArrayList<Item>();
-    public static List<Item> Plant_CHEMY= new ArrayList<Item>();
-    public static List<Item> Occult_CHEMY= new ArrayList<Item>();
-    public static List<Item> Ancient_CHEMY= new ArrayList<Item>();
-    public static List<Item> Cosmic_CHEMY= new ArrayList<Item>();
-    public static List<Item> Fantastic_CHEMY= new ArrayList<Item>();
-    public static List<Item> Repli_CHEMY= new ArrayList<Item>();
-    public static List<Item> Legend_CHEMY= new ArrayList<Item>();
-    public static List<Item> Daybreak_CHEMY= new ArrayList<Item>();
+    public static List<Item> ALL_CHEMY= new ArrayList<>();
+    public static List<Item> Insect_CHEMY= new ArrayList<>();
+    public static List<Item> Job_CHEMY= new ArrayList<>();
+    public static List<Item> Vehicle_CHEMY= new ArrayList<>();
+    public static List<Item> Animal_CHEMY= new ArrayList<>();
+    public static List<Item> Artifact_CHEMY= new ArrayList<>();
+    public static List<Item> Plant_CHEMY= new ArrayList<>();
+    public static List<Item> Occult_CHEMY= new ArrayList<>();
+    public static List<Item> Ancient_CHEMY= new ArrayList<>();
+    public static List<Item> Cosmic_CHEMY= new ArrayList<>();
+    public static List<Item> Fantastic_CHEMY= new ArrayList<>();
+    public static List<Item> Repli_CHEMY= new ArrayList<>();
+    public static List<Item> Legend_CHEMY= new ArrayList<>();
+    public static List<Item> Daybreak_CHEMY= new ArrayList<>();
 
 
     public ChemyRiserItem() {
@@ -170,19 +158,17 @@ public class ChemyRiserItem extends BaseItem {
 
         int i = 0;
         int j = 0;
-        Iterator var7 = ((ItemContainerContents)stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
 
-        while(var7.hasNext()) {
-            ItemStack itemstack = (ItemStack)var7.next();
+        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
             ++j;
             if (i <= 4) {
                 ++i;
-                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", new Object[]{itemstack.getHoverName(), itemstack.getCount()}));
+                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
             }
         }
 
         if (j - i > 0) {
-            tooltipComponents.add(Component.translatable("container.shulkerBox.more", new Object[]{j - i}).withStyle(ChatFormatting.ITALIC));
+            tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
         }
 
     }

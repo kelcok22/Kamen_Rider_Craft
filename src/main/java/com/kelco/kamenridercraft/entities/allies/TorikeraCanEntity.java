@@ -10,7 +10,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.*;
@@ -86,7 +85,7 @@ public class TorikeraCanEntity extends BaseAllyEntity implements GeoEntity {
 								this.setOrderedToSit(!this.isOrderedToSit());
 								this.jumping = false;
 								this.navigation.stop();
-								this.setTarget((LivingEntity)null);
+								this.setTarget(null);
 								return InteractionResult.SUCCESS_NO_ITEM_USED;
 							} else {
 								return interactionresult;
@@ -117,14 +116,12 @@ public class TorikeraCanEntity extends BaseAllyEntity implements GeoEntity {
 	private void tryToTame(Player player) {
 			this.tame(player);
 			this.navigation.stop();
-			this.setTarget((LivingEntity)null);
+			this.setTarget(null);
 			this.setOrderedToSit(true);
 			this.level().broadcastEntityEvent(this, (byte)7);
 	}
 
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-	}
-	/**
+    /**
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
 		   }
@@ -168,6 +165,6 @@ public class TorikeraCanEntity extends BaseAllyEntity implements GeoEntity {
 			RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.tricera_can.summon");
 			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.tricera_can.death");
 
-			controllers.add(new AnimationController<TorikeraCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK:IDLE:SIT:RIP)));
+			controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK : IDLE : SIT : RIP)));
 		}
 }

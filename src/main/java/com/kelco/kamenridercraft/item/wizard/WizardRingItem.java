@@ -47,10 +47,9 @@ public class WizardRingItem extends BaseItem {
 		&&belt.isTransformed(player)){
 			if (ArrayUtils.contains(FORMS, belt.Rider)) {
 				if (EFFECTS != null) {
-					for (int i = 0; i < EFFECTS.size(); i++)
-					{
-						player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,true));
-					}
+                    for (MobEffectInstance effect : EFFECTS) {
+                        player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, true));
+                    }
 				} else {
 					switch (SPECIAL) {
 						case "copy":

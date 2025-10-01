@@ -1,8 +1,5 @@
 package com.kelco.kamenridercraft.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;

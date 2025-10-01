@@ -2,12 +2,9 @@ package com.kelco.kamenridercraft.client.models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entities.bikes.HardboilderEntity;
 import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
-import software.bernie.geckolib.animatable.GeoReplacedEntity;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.constant.DataTickets;
@@ -41,7 +38,7 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
         GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
         GeoBone b_wheel= this.getAnimationProcessor().getBone("b_wheel");
         GeoBone f_wheel = this.getAnimationProcessor().getBone("f_wheel");
-        EntityModelData entityData = (EntityModelData) state.getData(DataTickets.ENTITY_MODEL_DATA);
+        EntityModelData entityData = state.getData(DataTickets.ENTITY_MODEL_DATA);
         baseBikeEntity entityData2 = (baseBikeEntity) state.getData(DataTickets.ENTITY);
 
 

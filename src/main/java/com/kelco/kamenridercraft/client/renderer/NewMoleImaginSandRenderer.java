@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.client.renderer;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.NewMoleImaginSandModel;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
-import com.mojang.blaze3d.vertex.PoseStack;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;

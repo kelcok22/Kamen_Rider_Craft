@@ -10,12 +10,8 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
-import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -28,7 +24,7 @@ public class RiderSummonCardItem extends BaseItem {
     private Integer summonNeoBelt = null;
     private Integer summonNeoForm = null;
     private List<Object> summonWeapons = new ArrayList<>(2);
-    private int summonAmount = 1;
+    private int summonAmount;
 
     public RiderSummonCardItem( Properties properties, int amount) {
         super(properties);

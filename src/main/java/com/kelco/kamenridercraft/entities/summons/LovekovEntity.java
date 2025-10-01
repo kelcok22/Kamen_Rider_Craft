@@ -5,11 +5,7 @@ import org.joml.Vector3f;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.DustParticleOptions;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,7 +23,6 @@ import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 
 public class LovekovEntity extends BaseSummonEntity {
 
@@ -41,7 +36,7 @@ public class LovekovEntity extends BaseSummonEntity {
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
 	}
 
 
@@ -82,19 +77,4 @@ public class LovekovEntity extends BaseSummonEntity {
 		this.setHealth(20.0F);
 	}
 
-	protected SoundEvent getAmbientSound() {
-		return SoundEvents.VILLAGER_AMBIENT;
-	}
-
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
 }

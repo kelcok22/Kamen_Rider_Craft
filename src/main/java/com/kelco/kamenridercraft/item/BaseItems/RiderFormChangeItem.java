@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import javax.annotation.Nullable;
 
@@ -14,7 +15,6 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.ItemTags;
@@ -40,7 +40,7 @@ public class RiderFormChangeItem extends BaseItem {
 
     private List<MobEffectInstance> potionEffectList;
     private int BELT;
-    private List<Item> NEEDITEM = new ArrayList<Item>();
+    private List<Item> NEEDITEM = new ArrayList<>();
     protected String RIDER_NAME;
     protected String OVERRIDE_RIDER_NAME;
 
@@ -66,7 +66,7 @@ public class RiderFormChangeItem extends BaseItem {
 
     private Boolean SET_TO_ARMOR_FORM = false;
 
-    private List<RiderFormChangeItem> alternative = new ArrayList<RiderFormChangeItem>();
+    private List<RiderFormChangeItem> alternative = new ArrayList<>();
     private RiderFormChangeItem alsoChange1stSlot;
     private RiderFormChangeItem alsoChange2ndSlot;
     private RiderFormChangeItem alsoChange3rdSlot;
@@ -74,10 +74,10 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem alsoChange5thSlot;
 
     private Boolean hasIncompatibleForms = false;
-    private List<RiderFormChangeItem> incompatibleForms= new ArrayList<RiderFormChangeItem>();
+    private List<RiderFormChangeItem> incompatibleForms= new ArrayList<>();
 
     public String[] compatibilityList= new String[] {""};
-    public List<Item> needItemList = new ArrayList<Item>();
+    public List<Item> needItemList = new ArrayList<>();
 
     private Boolean NEED_BASE_FORM = false;
     private RiderFormChangeItem NEED_FORM_SLOT_1;
@@ -400,9 +400,9 @@ public class RiderFormChangeItem extends BaseItem {
 
 
     public Boolean iscompatible(RiderDriverItem belt) {
-        if (belt.Rider==RIDER_NAME) return true;
+        if (Objects.equals(belt.Rider, RIDER_NAME)) return true;
         for (String str : compatibilityList) {
-            if (str==belt.Rider) return true;
+            if (Objects.equals(str, belt.Rider)) return true;
         }
         ItemStack itemstack=new ItemStack(belt);
         return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" +RIDER_NAME+FORM_NAME)));
@@ -415,12 +415,14 @@ public class RiderFormChangeItem extends BaseItem {
 		inv.add(player.getInventory().offhand.getFirst());
 
 		if (player.getInventory().countItem(item)!=0) return true;
-		else for (int i = 0; i < inv.size(); i++) {
-			if (inv.get(i).has(DataComponents.CONTAINER)) {
-				for (ItemStack stack : inv.get(i).getComponents().get(DataComponents.CONTAINER).nonEmptyItems()) if (stack.getItem() == item) return true;
-			} else if (inv.get(i).has(DataComponents.BUNDLE_CONTENTS))
-				for (ItemStack stack : inv.get(i).getComponents().get(DataComponents.BUNDLE_CONTENTS).items()) if (stack.getItem() == item) return true;
-		}
+		else for (ItemStack itemStack : inv) {
+            if (itemStack.has(DataComponents.CONTAINER)) {
+                for (ItemStack stack : itemStack.getComponents().get(DataComponents.CONTAINER).nonEmptyItems())
+                    if (stack.getItem() == item) return true;
+            } else if (itemStack.has(DataComponents.BUNDLE_CONTENTS))
+                for (ItemStack stack : itemStack.getComponents().get(DataComponents.BUNDLE_CONTENTS).items())
+                    if (stack.getItem() == item) return true;
+        }
 		return false;
 	}
 
@@ -430,9 +432,8 @@ public class RiderFormChangeItem extends BaseItem {
             return true;
         }
         if(hasIncompatibleForms) {
-            for (int i = 0; i < incompatibleForms.size(); i++)
-            {
-                if (incompatibleForms.get(i)==RiderDriverItem.get_Form_Item(stack, 1)){
+            for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
+                if (incompatibleForm == RiderDriverItem.get_Form_Item(stack, 1)) {
                     return false;
                 }
             }
@@ -473,11 +474,11 @@ public class RiderFormChangeItem extends BaseItem {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
 
                 if (STIFT_ITEM instanceof RiderFormChangeItem& player.isShiftKeyDown()) {
-                    ((RiderFormChangeItem)STIFT_ITEM).use(level, player, usedHand);
+                    STIFT_ITEM.use(level, player, usedHand);
                 }
                 else if (CanChange(player,belt,BELT)) {
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (RESET_FORM_MAIN&belt.Rider==RIDER_NAME)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
+                    if (RESET_FORM_MAIN& Objects.equals(belt.Rider, RIDER_NAME))RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
                     if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
                     if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);
@@ -494,9 +495,7 @@ public class RiderFormChangeItem extends BaseItem {
 
                 }else if(!alternative.isEmpty()){
 
-                    for (int i = 0; i < alternative.size(); i++)
-                    {
-                        RiderFormChangeItem alternativeItem_form_change = alternative.get(i);
+                    for (RiderFormChangeItem alternativeItem_form_change : alternative) {
                         alternativeItem_form_change.use(level, player, usedHand);
                     }
                 }

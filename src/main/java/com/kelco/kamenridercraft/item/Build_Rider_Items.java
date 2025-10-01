@@ -3,29 +3,24 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottlePurifier;
-import com.kelco.kamenridercraft.block.machineBlocks.FullbottleSolidifier;
 import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.FullBottleHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
@@ -43,9 +38,9 @@ public class Build_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
-	public static List<Item> NEED_ITEM_BI_KAISER= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_HELL_BROS= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_EVOLTO= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_BI_KAISER= new ArrayList<>();
+	public static List<Item> NEED_ITEM_HELL_BROS= new ArrayList<>();
+	public static List<Item> NEED_ITEM_EVOLTO= new ArrayList<>();
 
 	public static final DeferredItem<Item> BUILD_LOGO = ITEMS.register("build_logo",
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/build")), new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
@@ -965,9 +960,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.BUILD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS)
 					.ChangeRepairItem(FULL_BOTTLE.get()));
@@ -990,9 +983,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
@@ -1014,9 +1005,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
@@ -1038,9 +1027,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
@@ -1062,9 +1049,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
@@ -1086,9 +1071,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
@@ -1110,9 +1093,7 @@ public class Build_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 

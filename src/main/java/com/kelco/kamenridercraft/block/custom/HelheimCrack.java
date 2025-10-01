@@ -83,7 +83,7 @@ public class HelheimCrack extends BaseBlock {
 			otherDim.setBlockAndUpdate(pos,Rider_Blocks.HELHEIM_CRACK.get().defaultBlockState());
 		}
 
-		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), (double)otherDim.getMinBuildHeight(), (double)(otherDim.getMinBuildHeight() + ((ServerLevel)otherDim).getLogicalHeight() - 1)), entity.getZ(), new HashSet<>(), 0, 0);
+		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
 		while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
 
 		entity.addEffect(new MobEffectInstance(Effect_core.PORTAL_COOLDOWN, 200, 0, true, true));

@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.ViceEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
@@ -33,7 +32,7 @@ public class ReviceDriverItem extends RiderDriverItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         Has_basic_belt_info = false;
-        Item formItem = this.get_Form_Item(stack, 1);
+        Item formItem = get_Form_Item(stack, 1);
 
         if (formItem == Revice_Rider_Items.ROLLING_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.jack_revice"));
         else if (formItem == Revice_Rider_Items.THUNDER_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.revice"));

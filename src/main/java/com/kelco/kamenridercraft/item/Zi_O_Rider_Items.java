@@ -1981,9 +1981,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2005,9 +2003,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2029,9 +2025,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2053,9 +2047,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2077,9 +2069,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new MiridewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2101,9 +2091,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2125,9 +2113,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2149,9 +2135,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
@@ -2173,9 +2157,7 @@ public class Zi_O_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new RidewatchHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-					});
+					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 

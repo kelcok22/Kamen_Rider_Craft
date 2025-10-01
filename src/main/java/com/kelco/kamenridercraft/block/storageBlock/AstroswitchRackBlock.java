@@ -1,8 +1,6 @@
 package com.kelco.kamenridercraft.block.storageBlock;
 
 import com.kelco.kamenridercraft.block.entity.AstroswitchRackBlockEntity;
-import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -62,14 +60,12 @@ public class AstroswitchRackBlock extends ChestBlock {
 
     @Nullable
     public static Container getContainer(AstroswitchRackBlock chest, BlockState state, Level level, BlockPos pos, boolean override) {
-        return (Container)((Optional)chest.combine(state, level, pos, override).apply(CHEST_COMBINER)).orElse((Object)null);
+        return (Container)((Optional)chest.combine(state, level, pos, override).apply(CHEST_COMBINER)).orElse(null);
     }
     public DoubleBlockCombiner.NeighborCombineResult<? extends AstroswitchRackBlockEntity> combine(BlockState state, Level level, BlockPos pos, boolean override) {
         BiPredicate bipredicate = null;
         if (override) {
-            bipredicate = (p_51578_, p_51579_) -> {
-                return false;
-            };
+            bipredicate = (p_51578_, p_51579_) -> false;
         }
 
         return DoubleBlockCombiner.combineWithNeigbour((BlockEntityType)this.blockEntityType.get(), AstroswitchRackBlock::getBlockType, AstroswitchRackBlock::getConnectedDirection, FACING, state, level, pos, bipredicate);
@@ -85,7 +81,7 @@ public class AstroswitchRackBlock extends ChestBlock {
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{FACING, TYPE, WATERLOGGED});
+        builder.add(FACING, TYPE, WATERLOGGED);
     }
 
     protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
@@ -105,7 +101,7 @@ public class AstroswitchRackBlock extends ChestBlock {
         WEST_AABB = Block.box(0.0, 0.0, 1.0, 15.0, 14.0, 15.0);
         EAST_AABB = Block.box(1.0, 0.0, 1.0, 16.0, 14.0, 15.0);
         AABB = Block.box(1.0, 0.0, 1.0, 15.0, 14.0, 15.0);
-        CHEST_COMBINER = new DoubleBlockCombiner.Combiner<ChestBlockEntity, Optional<Container>>() {
+        CHEST_COMBINER = new DoubleBlockCombiner.Combiner<>() {
             public Optional<Container> acceptDouble(ChestBlockEntity p_51591_, ChestBlockEntity p_51592_) {
                 return Optional.of(new CompoundContainer(p_51591_, p_51592_));
             }
@@ -118,7 +114,7 @@ public class AstroswitchRackBlock extends ChestBlock {
                 return Optional.empty();
             }
         };
-        MENU_PROVIDER_COMBINER = new DoubleBlockCombiner.Combiner<ChestBlockEntity, Optional<MenuProvider>>() {
+        MENU_PROVIDER_COMBINER = new DoubleBlockCombiner.Combiner<>() {
             public Optional<MenuProvider> acceptDouble(final ChestBlockEntity p_51604_, final ChestBlockEntity p_51605_) {
                 final Container container = new CompoundContainer(p_51604_, p_51605_);
                 return Optional.of(new MenuProvider() {
@@ -137,7 +133,7 @@ public class AstroswitchRackBlock extends ChestBlock {
                         if (p_51604_.hasCustomName()) {
                             return p_51604_.getDisplayName();
                         } else {
-                            return (Component)(p_51605_.hasCustomName() ? p_51605_.getDisplayName() : Component.translatable("container.chestDouble"));
+                            return p_51605_.hasCustomName() ? p_51605_.getDisplayName() : Component.translatable("container.chestDouble");
                         }
                     }
                 });

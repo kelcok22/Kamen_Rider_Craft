@@ -31,6 +31,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gotchard Daybreak",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Fire Fist III$(li)Jump Boost II$(li)Boost V$(li)Fire Resistance$(li)Strength III"
-		}
-	]
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "shining",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_daybreak\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_hopper1_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Shining Daybreak",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#shining_hopper1_ride_chemy_card)Shining Hopper1$(/l) or $(l:gotchard/items/ride_chemy_cards#shining_steamliner_ride_chemy_card)Shining Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gotchard Daybreak",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Jump Boost IV$(li)Boost VI$(li)Fire Resistance$(li)Strength IV$(li)Fire Fist IV"
+      }
+    ]
 }

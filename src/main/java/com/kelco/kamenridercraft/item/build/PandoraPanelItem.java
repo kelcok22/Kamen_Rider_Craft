@@ -2,18 +2,14 @@
 package com.kelco.kamenridercraft.item.build;
 
 import com.kelco.kamenridercraft.block.entity.PandoraPanelBlockEntity;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.world.inventory.PandoraPanelGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -25,19 +21,15 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.BlockItemStateProperties;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 
-import javax.annotation.Nullable;
-import java.util.Iterator;
 import java.util.List;
 
 public class PandoraPanelItem extends BlockItem {
@@ -105,7 +97,7 @@ public InteractionResult place(BlockPlaceContext context) {
 	}
 
 	private BlockState updateBlockStateFromTag(BlockPos pos, Level level, ItemStack stack, BlockState state) {
-		BlockItemStateProperties blockitemstateproperties = (BlockItemStateProperties)stack.getOrDefault(DataComponents.BLOCK_STATE, BlockItemStateProperties.EMPTY);
+		BlockItemStateProperties blockitemstateproperties = stack.getOrDefault(DataComponents.BLOCK_STATE, BlockItemStateProperties.EMPTY);
 		if (blockitemstateproperties.isEmpty()) {
 			return state;
 		} else {
@@ -153,19 +145,17 @@ public InteractionResult place(BlockPlaceContext context) {
 
 		int i = 0;
 		int j = 0;
-		Iterator var7 = ((ItemContainerContents)stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
 
-		while(var7.hasNext()) {
-			ItemStack itemstack = (ItemStack)var7.next();
-			++j;
-			if (i <= 4) {
-				++i;
-				tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", new Object[]{itemstack.getHoverName(), itemstack.getCount()}));
-			}
-		}
+        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
+            ++j;
+            if (i <= 4) {
+                ++i;
+                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
+            }
+        }
 
 		if (j - i > 0) {
-			tooltipComponents.add(Component.translatable("container.shulkerBox.more", new Object[]{j - i}).withStyle(ChatFormatting.ITALIC));
+			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
 		}
 
 	}

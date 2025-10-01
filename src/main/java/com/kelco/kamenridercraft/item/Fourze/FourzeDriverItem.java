@@ -5,14 +5,12 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import java.util.List;
+import java.util.Objects;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 
-import com.kelco.kamenridercraft.item.Geats_Rider_Items;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -44,11 +42,11 @@ import net.neoforged.neoforge.registries.DeferredItem;
 			tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 			this.Has_basic_belt_info=false;
 
-			Item formItem = this.get_Form_Item(stack, 1);
-			Item formItem2 = this.get_Form_Item(stack, 2);
-			Item formItem3 = this.get_Form_Item(stack, 3);
-			Item formItem4 = this.get_Form_Item(stack, 4);
-			Item formItem5 = this.get_Form_Item(stack, 5);
+			Item formItem = get_Form_Item(stack, 1);
+			Item formItem2 = get_Form_Item(stack, 2);
+			Item formItem3 = get_Form_Item(stack, 3);
+			Item formItem4 = get_Form_Item(stack, 4);
+			Item formItem5 = get_Form_Item(stack, 5);
 
 			tooltipComponents.add(Component.translatable(formItem5.toString() + ".form"));
 
@@ -227,10 +225,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 				}
 				case HEAD -> {
-					if (part =="rightLeg") return true;
-					if (part =="leftLeg") return true;
-					if (part =="rightArm") return true;
-					if (part =="leftArm") return true;
+					if (Objects.equals(part, "rightLeg")) return true;
+					if (Objects.equals(part, "leftLeg")) return true;
+					if (Objects.equals(part, "rightArm")) return true;
+					if (Objects.equals(part, "leftArm")) return true;
 				}
 
 				default -> {}

@@ -11,8 +11,6 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public class BetterCombatAttackListener {
     @SubscribeEvent
     public static void register() {
-        BetterCombatClientEvents.ATTACK_START.register((LocalPlayer player, AttackHand hand) -> {
-            PacketDistributor.sendToServer(new CompleteSwingPayload(hand.isOffHand() ? 1 : 0));
-        });
+        BetterCombatClientEvents.ATTACK_START.register((LocalPlayer player, AttackHand hand) -> PacketDistributor.sendToServer(new CompleteSwingPayload(hand.isOffHand() ? 1 : 0)));
     }
 }

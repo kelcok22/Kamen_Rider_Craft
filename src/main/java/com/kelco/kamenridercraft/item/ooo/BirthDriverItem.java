@@ -20,6 +20,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
 
 public class BirthDriverItem extends RiderDriverItem {
 
@@ -113,24 +114,24 @@ else {
 
 		switch (currentSlot) {
 		case HEAD ->{ 
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "rightArm")) return true;
+			if (Objects.equals(part, "leftArm")) return true;
+			if (Objects.equals(part, "leftLeg")) return true;
+			if (Objects.equals(part, "rightLeg")) return true;
 			
 		}
 		case CHEST -> {
-			if (part =="body") return get_Form_Item(itemstack, 2)== OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get();
-			if (part =="rightArm") return get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get();
-			if (part =="leftArm") return get_Form_Item(itemstack, 4)==OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get();
-			if (part =="leftLeg"||part =="rightLeg") return get_Form_Item(itemstack, 5)==OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get();
+			if (Objects.equals(part, "body")) return get_Form_Item(itemstack, 2)== OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get();
+			if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get();
+			if (Objects.equals(part, "leftArm")) return get_Form_Item(itemstack, 4)==OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get();
+			if (Objects.equals(part, "leftLeg") || Objects.equals(part, "rightLeg")) return get_Form_Item(itemstack, 5)==OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get();
 		
 		}
 		case LEGS -> {
-			if (part =="rightArm") return get_Form_Item(itemstack, 6)==OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get();
-			if (part =="body") return get_Form_Item(itemstack, 7)==OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get();
+			if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 6)==OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get();
+			if (Objects.equals(part, "body")) return get_Form_Item(itemstack, 7)==OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get();
 		}
 		default -> {}
 		}

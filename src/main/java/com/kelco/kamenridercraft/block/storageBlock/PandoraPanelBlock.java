@@ -15,13 +15,9 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RenderShape;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -43,21 +39,16 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 
 	public PandoraPanelBlock(Properties prop) {
 		super(prop);
-		this.registerDefaultState((BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH)));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-		switch ((Direction)state.getValue(FACING)) {
-			case NORTH:
-				return NORTH_AABB;
-			case SOUTH:
-				return SOUTH_AABB;
-			case WEST:
-				return WEST_AABB;
-			case EAST:
-			default:
-				return EAST_AABB;
-		}
+        return switch (state.getValue(FACING)) {
+            case NORTH -> NORTH_AABB;
+            case SOUTH -> SOUTH_AABB;
+            case WEST -> WEST_AABB;
+            default -> EAST_AABB;
+        };
 	}
 
 	private boolean canAttachTo(BlockGetter blockReader, BlockPos pos, Direction direction) {
@@ -66,7 +57,7 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 	}
 
 	protected boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
-		Direction direction = (Direction)state.getValue(FACING);
+		Direction direction = state.getValue(FACING);
 		return this.canAttachTo(level, pos.relative(direction.getOpposite()), direction);
 	}
 
@@ -95,29 +86,28 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 		Direction[] var6 = context.getNearestLookingDirections();
 		int var7 = var6.length;
 
-		for(int var8 = 0; var8 < var7; ++var8) {
-			Direction direction = var6[var8];
-			if (direction.getAxis().isHorizontal()) {
-				blockstate1 = (BlockState)blockstate1.setValue(FACING, direction.getOpposite());
-				if (blockstate1.canSurvive(levelreader, blockpos)) {
-					return (BlockState)blockstate1;
-				}
-			}
-		}
+        for (Direction direction : var6) {
+            if (direction.getAxis().isHorizontal()) {
+                blockstate1 = blockstate1.setValue(FACING, direction.getOpposite());
+                if (blockstate1.canSurvive(levelreader, blockpos)) {
+                    return blockstate1;
+                }
+            }
+        }
 
 		return null;
 	}
 
 	protected BlockState rotate(BlockState state, Rotation rotation) {
-		return (BlockState)state.setValue(FACING, rotation.rotate((Direction)state.getValue(FACING)));
+		return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
 	}
 
 	protected BlockState mirror(BlockState state, Mirror mirror) {
-		return state.rotate(mirror.getRotation((Direction)state.getValue(FACING)));
+		return state.rotate(mirror.getRotation(state.getValue(FACING)));
 	}
 
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(new Property[]{FACING});
+		builder.add(FACING);
 	}
 
 	static {

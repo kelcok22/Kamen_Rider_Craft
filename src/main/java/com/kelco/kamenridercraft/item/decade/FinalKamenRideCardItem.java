@@ -107,7 +107,7 @@ public class FinalKamenRideCardItem extends BaseItem {
             
 				level.addFreshEntity(summon);
 				summon.bindToPlayer(player);
-				player.displayClientMessage(Component.translatable(this.toString() + ".name"), true);
+				player.displayClientMessage(Component.translatable(this + ".name"), true);
 				if (!player.isCreative()) player.getCooldowns().addCooldown(this, 1000);
                 player.awardStat(Stats.ITEM_USED.get(this));
 			}

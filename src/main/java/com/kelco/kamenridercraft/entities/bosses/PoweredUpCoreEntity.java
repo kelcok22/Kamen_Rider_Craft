@@ -47,7 +47,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class  PoweredUpCoreEntity extends BaseHenchmenEntity {
 
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.LIGHT_PURPLE), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.LIGHT_PURPLE), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS);
 
 
 	  private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId( PoweredUpCoreEntity.class, EntityDataSerializers.BYTE);
@@ -133,7 +133,7 @@ public class  PoweredUpCoreEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 15.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 300.0D);
@@ -234,7 +234,7 @@ public class  PoweredUpCoreEntity extends BaseHenchmenEntity {
                     if (this.attackStep > 1) {
                        double d4 = Math.sqrt(Math.sqrt(d0)) * 0.5D;
                        if (!this. PoweredUpCoreEntity.isSilent()) {
-                          this. PoweredUpCoreEntity.level().levelEvent((Player)null, 1018, this. PoweredUpCoreEntity.blockPosition(), 0);
+                          this. PoweredUpCoreEntity.level().levelEvent(null, 1018, this. PoweredUpCoreEntity.blockPosition(), 0);
                        }
 
                        for(int i = 0; i < 1; ++i) {

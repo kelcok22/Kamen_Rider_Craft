@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -18,7 +17,7 @@ import net.minecraft.world.level.Level;
 
 public class PremiumBerobaEntity extends BaseHenchmenEntity {
 
-    private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS));
+    private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
 
 
     public PremiumBerobaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -37,7 +36,7 @@ public class PremiumBerobaEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 200.0D);

@@ -20,7 +20,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class T2MemoryCaseItem extends BaseItem {
@@ -65,19 +64,17 @@ public class T2MemoryCaseItem extends BaseItem {
 
         int i = 0;
         int j = 0;
-        Iterator var7 = ((ItemContainerContents)stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
 
-        while(var7.hasNext()) {
-            ItemStack itemstack = (ItemStack)var7.next();
+        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
             ++j;
             if (i <= 4) {
                 ++i;
-                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", new Object[]{itemstack.getHoverName(), itemstack.getCount()}));
+                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
             }
         }
 
         if (j - i > 0) {
-            tooltipComponents.add(Component.translatable("container.shulkerBox.more", new Object[]{j - i}).withStyle(ChatFormatting.ITALIC));
+            tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
         }
 
     }

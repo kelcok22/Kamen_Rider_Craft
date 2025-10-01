@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.block.entity.renderer;
 
 
 import com.kelco.kamenridercraft.block.entity.PandoraPanelBlockEntity;
-import com.kelco.kamenridercraft.item.build.PandoraPanelItem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.Minecraft;
@@ -13,16 +12,10 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
-import net.minecraft.world.level.block.Blocks;
-
-import java.util.Iterator;
 
 public class PandoraPanelBlockEntityRenderer implements BlockEntityRenderer<PandoraPanelBlockEntity> {
     public PandoraPanelBlockEntityRenderer(BlockEntityRendererProvider.Context context) {

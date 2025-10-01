@@ -28,22 +28,22 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
-	public static List<Item> GUMMY= new ArrayList<Item>();
-	public static List<Item> SNACK= new ArrayList<Item>();
-	public static List<Item> MARSHMALLOW= new ArrayList<Item>();
-	public static List<Item> CHOCO= new ArrayList<Item>();
-	public static List<Item> CANDY= new ArrayList<Item>();
-	public static List<Item> CAKE= new ArrayList<Item>();
-	public static List<Item> COOKIE= new ArrayList<Item>();
-	public static List<Item> PANCAKE= new ArrayList<Item>();
-	public static List<Item> MOCHI= new ArrayList<Item>();
-	public static List<Item> PUDDING= new ArrayList<Item>();
-	public static List<Item> CORN= new ArrayList<Item>();
-	public static List<Item> COFFEE= new ArrayList<Item>();
-	public static List<Item> ALA_MODE= new ArrayList<Item>();
-	public static List<Item> ICE_CREAM= new ArrayList<Item>();
+	public static List<Item> GUMMY= new ArrayList<>();
+	public static List<Item> SNACK= new ArrayList<>();
+	public static List<Item> MARSHMALLOW= new ArrayList<>();
+	public static List<Item> CHOCO= new ArrayList<>();
+	public static List<Item> CANDY= new ArrayList<>();
+	public static List<Item> CAKE= new ArrayList<>();
+	public static List<Item> COOKIE= new ArrayList<>();
+	public static List<Item> PANCAKE= new ArrayList<>();
+	public static List<Item> MOCHI= new ArrayList<>();
+	public static List<Item> PUDDING= new ArrayList<>();
+	public static List<Item> CORN= new ArrayList<>();
+	public static List<Item> COFFEE= new ArrayList<>();
+	public static List<Item> ALA_MODE= new ArrayList<>();
+	public static List<Item> ICE_CREAM= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<>();
 
 	public static final DeferredItem<Item> GAVV_LOGO = ITEMS.register("gavv_logo",
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/gavv")), new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM));

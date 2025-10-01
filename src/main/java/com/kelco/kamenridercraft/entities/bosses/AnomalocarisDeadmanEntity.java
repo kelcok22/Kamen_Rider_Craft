@@ -27,7 +27,7 @@ public class AnomalocarisDeadmanEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.4F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.4F)
         		.add(Attributes.ATTACK_DAMAGE, 12.0D)
         		.add(Attributes.ARMOR, 4.0D)
         		.add(Attributes.MAX_HEALTH, 120.0D);

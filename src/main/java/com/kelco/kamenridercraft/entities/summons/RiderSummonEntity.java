@@ -4,13 +4,9 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.NeutralMob;
@@ -34,7 +30,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 
 public class RiderSummonEntity extends BaseSummonEntity {
 	public RiderSummonEntity(EntityType<? extends RiderSummonEntity> type, Level level) {
@@ -44,7 +39,7 @@ public class RiderSummonEntity extends BaseSummonEntity {
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, -10.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, -10.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
 	}
 
 
@@ -79,19 +74,4 @@ public class RiderSummonEntity extends BaseSummonEntity {
       super.bindToPlayer(player);
     }
 
-	protected SoundEvent getAmbientSound() {
-		return SoundEvents.VILLAGER_AMBIENT;
-	}
-
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
 }

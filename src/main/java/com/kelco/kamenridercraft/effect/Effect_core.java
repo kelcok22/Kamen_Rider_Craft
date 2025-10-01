@@ -1,7 +1,5 @@
 package com.kelco.kamenridercraft.effect;
 
-import java.util.Set;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.cores.*;
@@ -225,8 +223,8 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  PAUSE= EFFECT.register("pause",
             () -> new BasicEffect(MobEffectCategory.HARMFUL, 0x4eff00)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), (double)-100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
-                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), (double)100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), -100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), 100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
     public static final Holder<MobEffect>  PORTAL_COOLDOWN= EFFECT.register("portal_cooldown",

@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.ryuki;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -54,17 +55,17 @@ public class AdventCardItem extends BaseItem {
 		if (p_41129_.getInventory().countItem(VISOR)!=0) {
 			if (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
 			&& belt.isTransformed(p_41129_)){
-				if (RIDER == ((RiderDriverItem)p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider | (p_41129_.getInventory().countItem(Ryuki_Rider_Items.SLASH_VISOR.get())!=0 && ((RiderDriverItem)p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider == "alternative_zero")) {
+				if (Objects.equals(RIDER, ((RiderDriverItem) p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider) | (p_41129_.getInventory().countItem(Ryuki_Rider_Items.SLASH_VISOR.get())!=0 && Objects.equals(((RiderDriverItem) p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider, "alternative_zero"))) {
 					if (!p_41128_.isClientSide()) {
 						if (WEAPONS != null) {
-							for (int i = 0; i < WEAPONS.size(); i++) {
-								ItemStack item = new ItemStack(WEAPONS.get(i), 1);
-								if (item != null) {
-									ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
-									entity.setPickUpDelay(0);
-									p_41128_.addFreshEntity(entity);
-								}
-							}
+                            for (Item weapon : WEAPONS) {
+                                ItemStack item = new ItemStack(weapon, 1);
+                                if (item != null) {
+                                    ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
+                                    entity.setPickUpDelay(0);
+                                    p_41128_.addFreshEntity(entity);
+                                }
+                            }
 						} else {
 						 	switch (SPECIAL) {
 						 		case "trick_vent":

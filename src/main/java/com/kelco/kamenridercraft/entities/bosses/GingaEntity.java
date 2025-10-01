@@ -12,7 +12,6 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
@@ -27,17 +26,14 @@ import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.WitherSkull;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;
-import java.util.EnumSet;
 
 public class GingaEntity extends BaseHenchmenEntity {
 
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
 
 	private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(GingaEntity.class, EntityDataSerializers.BYTE);
 
@@ -121,7 +117,7 @@ public class GingaEntity extends BaseHenchmenEntity {
 
 		return Monster.createMonsterAttributes()
 				.add(Attributes.FOLLOW_RANGE, 135.0D)
-				.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+				.add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.ATTACK_DAMAGE, 10.0D)
 				.add(Attributes.ARMOR, 0.0D)
 				.add(Attributes.MAX_HEALTH, 100.0D);

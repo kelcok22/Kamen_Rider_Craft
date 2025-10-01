@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.kabuto;
 
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
 import org.apache.commons.lang3.ArrayUtils;
 
 import net.minecraft.stats.Stats;
@@ -14,6 +13,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import java.util.Objects;
 
 
 public class ClockUpPadItem extends BaseItem {
@@ -31,7 +32,7 @@ public class ClockUpPadItem extends BaseItem {
 		String[] ClockUpUsers = new String[] {"kabuto","thebee","drake","sasword","gatack","dark_kabuto","kickhopper","punchhopper","ketaros","hercus","caucasus","lady"};
 		
 		if (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(p_41129_)){
-			if (RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),1).getFormName(false)!="_masked"){
+			if (!Objects.equals(RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
                 if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !p_41128_.isClientSide()) {
                 	p_41129_.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
                 	p_41129_.getCooldowns().addCooldown(this, 500);

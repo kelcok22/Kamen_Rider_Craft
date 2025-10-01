@@ -10,7 +10,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -76,7 +75,7 @@ public class TakoCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.MAX_HEALTH, 40.0D)
 				.add(Attributes.ATTACK_DAMAGE, 2.0D)
 				.add(Attributes.FLYING_SPEED, 0.1F);
@@ -110,7 +109,7 @@ public class TakoCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 								this.setOrderedToSit(!this.isOrderedToSit());
 								this.jumping = false;
 								this.navigation.stop();
-								this.setTarget((LivingEntity)null);
+								this.setTarget(null);
 								return InteractionResult.SUCCESS_NO_ITEM_USED;
 							} else {
 								return interactionresult;
@@ -160,14 +159,12 @@ public class TakoCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 	private void tryToTame(Player player) {
 			this.tame(player);
 			this.navigation.stop();
-			this.setTarget((LivingEntity)null);
+			this.setTarget(null);
 			this.setOrderedToSit(true);
 			this.level().broadcastEntityEvent(this, (byte)7);
 	}
 
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-	}
-	/**
+    /**
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
 		   }
@@ -211,7 +208,7 @@ public class TakoCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 			RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.tako_can.summon");
 			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.tako_can.death");
 
-			controllers.add(new AnimationController<TakoCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK:IDLE:SIT:RIP)));
+			controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK : IDLE : SIT : RIP)));
 		}
 
 	@Override

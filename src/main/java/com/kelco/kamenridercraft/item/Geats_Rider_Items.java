@@ -11,8 +11,6 @@ import com.kelco.kamenridercraft.item.geats.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -713,7 +711,7 @@ public class 	Geats_Rider_Items {
 			() -> new FeverSlotItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	
-	  public static List<Item> NEED_ITEM_COMMAND_TWIN= new ArrayList<Item>();
+	  public static List<Item> NEED_ITEM_COMMAND_TWIN= new ArrayList<>();
 	  
 	public static final DeferredItem<Item> COMMAND_TWIN_BUCKLE_JET = ITEMS.register("command_twin_buckle_jet",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_raising","geats","desire_driver_belt_geats",

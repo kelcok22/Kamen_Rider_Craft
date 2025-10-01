@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -19,6 +18,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
 
 public class OOODriverItem extends RiderDriverItem {
 
@@ -35,11 +35,11 @@ public class OOODriverItem extends RiderDriverItem {
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
 
-		Item formItem = this.get_Form_Item(stack, 1);
-		Item formItem2 = this.get_Form_Item(stack, 2);
-		Item formItem3 = this.get_Form_Item(stack, 3);
+		Item formItem = get_Form_Item(stack, 1);
+		Item formItem2 = get_Form_Item(stack, 2);
+		Item formItem3 = get_Form_Item(stack, 3);
 
-	if (getCombo(formItem,formItem2,formItem3)!="false")tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
+	if (!Objects.equals(getCombo(formItem, formItem2, formItem3), "false"))tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
 		else if (!OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem2) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem3)) {
 			tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
@@ -99,8 +99,8 @@ public class OOODriverItem extends RiderDriverItem {
 			
 		}
 	
-		else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack,1).getFormName(false)=="_taka"&get_Form_Item(itemstack,2).getFormName(false)=="_kujaku"&get_Form_Item(itemstack,3).getFormName(false)=="_condor") return riderName+ "_taka_tajado";
-		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOO_Rider_Items.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()==OOO_Rider_Items.OOODRIVER.get()&get_Form_Item(itemstack,1).getFormName(false)=="_taka"&get_Form_Item(itemstack,2).getFormName(false)=="_tora"&get_Form_Item(itemstack,3).getFormName(false)=="_batta") return riderName+ "_taka_purple";
+		else if (equipmentSlot == EquipmentSlot.HEAD& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka") & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_kujaku") & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_condor")) return riderName+ "_taka_tajado";
+		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOO_Rider_Items.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()==OOO_Rider_Items.OOODRIVER.get()& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka") & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_tora") & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_batta")) return riderName+ "_taka_purple";
 		
 		else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) return riderName+ get_Form_Item(itemstack,1).getFormName(fly)+ "_greeed_absorption";
 		else if (equipmentSlot == EquipmentSlot.LEGS&get_Form_Item(itemstack,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) return riderName+ get_Form_Item(itemstack,3).getFormName(fly)+ "_greeed_absorption";
@@ -143,9 +143,9 @@ public class OOODriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST)num=2; 
 		if (slot == EquipmentSlot.LEGS)num=3;
 		
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
-	 }else if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json") {
+	 }else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo.geo.json");
 		 }else   
 			 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
@@ -157,20 +157,20 @@ public class OOODriverItem extends RiderDriverItem {
 
 		switch (currentSlot) {
 		case HEAD ->{ 
-			if (part =="head") return true;
-			if (part =="body") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "body")) return true;
 			
 		}
 		case CHEST -> {
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "rightArm")) return true;
+			if (Objects.equals(part, "leftArm")) return true;
 			
 		}
 		case LEGS -> {
-			if (part =="body") return true;
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "leftLeg")) return true;
+			if (Objects.equals(part, "rightLeg")) return true;
 			
 		
 		}

@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.client.models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entities.allies.BattaCanEntity;
 import com.kelco.kamenridercraft.entities.allies.ToraCanEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;

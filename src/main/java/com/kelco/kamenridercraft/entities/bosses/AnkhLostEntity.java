@@ -32,7 +32,7 @@ public class AnkhLostEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.2F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 4.0D)
         		.add(Attributes.MAX_HEALTH, 60.0D);

@@ -4,15 +4,12 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -21,10 +18,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class GhostDriverItem extends RiderDriverItem {
@@ -45,12 +42,12 @@ public class GhostDriverItem extends RiderDriverItem {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 			this.Has_basic_belt_info = false;
-			Item formItem = this.get_Form_Item(stack, 1);
-			Item formItem2 = this.get_Form_Item(stack, 2);
+			Item formItem = get_Form_Item(stack, 1);
+			Item formItem2 = get_Form_Item(stack, 2);
 			String rider=Rider;
 if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		tooltipComponents.add(Component.translatable("kamenridercraft.name." + rider));
-		if (Rider=="ghost"||Rider=="specter"||Rider=="necrom") {
+		if (Objects.equals(Rider, "ghost") || Objects.equals(Rider, "specter") || Objects.equals(Rider, "necrom")) {
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 		}
 
@@ -67,9 +64,7 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		||get_Form_Item(belt, 1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.MUGEN_DAMASHII.get()
 				||get_Form_Item(belt, 1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.SIN_SPECTER_DAMASHII.get()
 		) {
-            Consumer<CompoundTag> data = form -> {
-				form.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
-            };
+            Consumer<CompoundTag> data = form -> form.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
 
             CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 		}
@@ -113,12 +108,12 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 
 		if (Wisp_Horn==item.get_Stored_num()){
 			return "_base";
-		}else if (rider=="ghost"&get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2||
-				rider=="ghost"&get_Form_Item(itemstack,1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()
-		||rider=="specter"&get_Form_Item(itemstack,1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()
-				||rider=="necrom"&get_Form_Item(itemstack,1)==Ghost_Rider_Items.YUJOU_BURST_GHOST_EYECON.get()
-		||rider=="specter"&item.get_Stored_num()!=0||rider=="zero_specter"&item.get_Stored_num()!=0
-				||rider=="kanon_specter"&item.get_Stored_num()!=0){
+		}else if (Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2||
+                Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()
+		|| Objects.equals(rider, "specter") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()
+				|| Objects.equals(rider, "necrom") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.YUJOU_BURST_GHOST_EYECON.get()
+		|| Objects.equals(rider, "specter") &item.get_Stored_num()!=0|| Objects.equals(rider, "zero_specter") &item.get_Stored_num()!=0
+				|| Objects.equals(rider, "kanon_specter") &item.get_Stored_num()!=0){
 			return "_base";
 		}
 

@@ -6,13 +6,11 @@ import java.util.List;
 import java.util.Random;
 
 
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Reboot_Rider_Items;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -22,13 +20,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 
 public class KaijinStoneGenerator extends MachineBlock {
 	
-	  public static List<Item> KING_STONE= new ArrayList<Item>();
+	  public static List<Item> KING_STONE= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -46,11 +43,7 @@ public class KaijinStoneGenerator extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getvialDrop(int num) {
+    private Item getvialDrop() {
  		Random generator = new Random();
  			int rand = generator.nextInt(KING_STONE.size());
  			return KING_STONE.get(rand);
@@ -61,7 +54,7 @@ public class KaijinStoneGenerator extends MachineBlock {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Reboot_Rider_Items.CREATION_KING_EXTRACT_VIAL.get()) {
-                process(player, level, pos, hand,  getvialDrop(0));
+                process(player, level, pos, hand,  getvialDrop());
                 return ItemInteractionResult.SUCCESS;
             }
         }

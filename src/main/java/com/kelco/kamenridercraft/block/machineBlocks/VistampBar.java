@@ -23,7 +23,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -31,7 +30,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class VistampBar extends MachineBlock {
 	
-	  public static List<Item> PROTO_VISTAMP= new ArrayList<Item>();
+	  public static List<Item> PROTO_VISTAMP= new ArrayList<>();
     public static VoxelShape SHAPE = Block.box(1, 0, 1, 14,15, 14);
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -61,16 +60,10 @@ public class VistampBar extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getgashatDrop(Player player) {
+    private Item getgashatDrop(Player player) {
  		Random generator = new Random();
 
-         List<Item> PROTO_VISTAMP_PLUS= new ArrayList<Item>();
-         PROTO_VISTAMP_PLUS.clear();
-         PROTO_VISTAMP_PLUS.addAll (PROTO_VISTAMP);
+        List<Item> PROTO_VISTAMP_PLUS = new ArrayList<>(PROTO_VISTAMP);
 
          if (player.getInventory().countItem(Revice_Rider_Items.BARID_REX_VISTAMP.get())!=0){
              for (int i = 0; i < 20; i++) {

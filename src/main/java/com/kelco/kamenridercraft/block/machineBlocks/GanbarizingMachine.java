@@ -7,14 +7,12 @@ import java.util.Random;
 
 
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
-import com.kelco.kamenridercraft.item.Reboot_Rider_Items;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -22,10 +20,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -33,7 +29,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class GanbarizingMachine extends MachineBlock {
 	
-	  public static List<Item> BLANK_GASHAT= new ArrayList<Item>();
+	  public static List<Item> BLANK_GASHAT= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -69,11 +65,7 @@ public class GanbarizingMachine extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getgashatDrop(int num) {
+    private Item getgashatDrop() {
  		Random generator = new Random();
  			int rand = generator.nextInt(BLANK_GASHAT.size());
  			return BLANK_GASHAT.get(rand);
@@ -85,7 +77,7 @@ public class GanbarizingMachine extends MachineBlock {
 
 		if (!level.isClientSide()) {
 			if (player.getItemInHand(hand).getItem() == Ex_Aid_Rider_Items.BLANK_GASHAT.get()) {
-				process(player, level, pos, hand,  getgashatDrop(0));
+				process(player, level, pos, hand,  getgashatDrop());
 				return ItemInteractionResult.SUCCESS;
 			}
 		}

@@ -21,7 +21,7 @@ import net.minecraft.world.level.Level;
 
 public class AnkhCompleteEntity extends BaseHenchmenEntity {
 
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.RED), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.RED), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
 
 
  
@@ -69,7 +69,7 @@ public class AnkhCompleteEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.2F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 15.0D)
         		.add(Attributes.ARMOR, 4.0D)
         		.add(Attributes.MAX_HEALTH, 250.0D);

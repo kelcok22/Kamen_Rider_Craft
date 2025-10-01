@@ -41,7 +41,7 @@ public class MuezEntity extends BaseHenchmenEntity {
 	public static AttributeSupplier.Builder setAttributes() {
 		return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.30F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
         		.add(Attributes.ATTACK_DAMAGE, 5.0D)
         		.add(Attributes.MAX_HEALTH, 100.0D);
      }

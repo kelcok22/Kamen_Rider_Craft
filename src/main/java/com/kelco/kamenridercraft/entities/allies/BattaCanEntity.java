@@ -10,18 +10,10 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MoverType;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.*;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.FlyingAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
@@ -30,7 +22,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -94,7 +85,7 @@ public class BattaCanEntity extends BaseAllyEntity implements GeoEntity {
 								this.setOrderedToSit(!this.isOrderedToSit());
 								this.jumping = false;
 								this.navigation.stop();
-								this.setTarget((LivingEntity)null);
+								this.setTarget(null);
 								return InteractionResult.SUCCESS_NO_ITEM_USED;
 							} else {
 								return interactionresult;
@@ -125,14 +116,12 @@ public class BattaCanEntity extends BaseAllyEntity implements GeoEntity {
 	private void tryToTame(Player player) {
 			this.tame(player);
 			this.navigation.stop();
-			this.setTarget((LivingEntity)null);
+			this.setTarget(null);
 			this.setOrderedToSit(true);
 			this.level().broadcastEntityEvent(this, (byte)7);
 	}
 
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-	}
-	/**
+    /**
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
 		   }
@@ -176,6 +165,6 @@ public class BattaCanEntity extends BaseAllyEntity implements GeoEntity {
 			RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.batta_can.summon");
 			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.batta_can.death");
 
-			controllers.add(new AnimationController<BattaCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK:IDLE:SIT:RIP)));
+			controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK : IDLE : SIT : RIP)));
 		}
 }

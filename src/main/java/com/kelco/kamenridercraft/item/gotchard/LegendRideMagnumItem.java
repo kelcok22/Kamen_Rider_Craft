@@ -28,7 +28,6 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -81,7 +80,7 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
 
 	@Override
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
-		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().count() != 0
+		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().findAny().isPresent()
 		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof LegenDriverItem legend && legend.isTransformed(player)) {
 			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
@@ -109,7 +108,7 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
 			}
 
 			stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
-			level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+			level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
 			player.awardStat(Stats.ITEM_USED.get(this));
 		} else super.releaseUsing(stack, level, entityLiving, timeLeft);
 	}
@@ -122,19 +121,17 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
 
 		int i = 0;
 		int j = 0;
-		Iterator var7 = ((ItemContainerContents)stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
 
-		while(var7.hasNext()) {
-			ItemStack itemstack = (ItemStack)var7.next();
-			++j;
-			if (i <= 4) {
-				++i;
-				tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", new Object[]{itemstack.getHoverName(), itemstack.getCount()}));
-			}
-		}
+        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
+            ++j;
+            if (i <= 4) {
+                ++i;
+                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
+            }
+        }
 
 		if (j - i > 0) {
-			tooltipComponents.add(Component.translatable("container.shulkerBox.more", new Object[]{j - i}).withStyle(ChatFormatting.ITALIC));
+			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
 		}
 
 	}

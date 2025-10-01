@@ -8,15 +8,11 @@ import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
@@ -44,7 +40,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 
 
@@ -58,7 +53,7 @@ public class UratarosEntity extends BaseAllyEntity {
 		}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
 
 
@@ -159,27 +154,7 @@ public class UratarosEntity extends BaseAllyEntity {
         }
     }
 
-	   protected SoundEvent getAmbientSound() {
-		         return SoundEvents.VILLAGER_AMBIENT;
-		   }
-	
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-		
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	   public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 	   

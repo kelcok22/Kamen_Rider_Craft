@@ -2,15 +2,9 @@ package com.kelco.kamenridercraft.network;
 
 import com.kelco.kamenridercraft.entities.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entities.summons.LegendarySummonEntity;
-import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
-import com.kelco.kamenridercraft.item.gotchard.ValvaradItem;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 

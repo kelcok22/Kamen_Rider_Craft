@@ -4,10 +4,8 @@ import java.util.EnumSet;
 
 import javax.annotation.Nullable;
 
-import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.particles.ParticleTypes;
@@ -20,7 +18,6 @@ import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.BossEvent;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -49,7 +46,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class CoreEntity extends BaseHenchmenEntity {
 
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
 	  private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(CoreEntity.class, EntityDataSerializers.BYTE);
 
     public CoreEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -134,7 +131,7 @@ public class CoreEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 9.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 180.0D);
@@ -237,7 +234,7 @@ public class CoreEntity extends BaseHenchmenEntity {
                     if (this.attackStep > 1) {
                        double d4 = Math.sqrt(Math.sqrt(d0)) * 0.5D;
                        if (!this.CoreEntity.isSilent()) {
-                          this.CoreEntity.level().levelEvent((Player)null, 1018, this.CoreEntity.blockPosition(), 0);
+                          this.CoreEntity.level().levelEvent(null, 1018, this.CoreEntity.blockPosition(), 0);
                        }
 
                        for(int i = 0; i < 1; ++i) {

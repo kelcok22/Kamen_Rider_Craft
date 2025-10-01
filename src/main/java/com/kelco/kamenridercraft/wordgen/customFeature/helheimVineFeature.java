@@ -10,9 +10,7 @@ import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.WorldGenLevel;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.VineBlock;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
@@ -32,10 +30,9 @@ public class helheimVineFeature extends Feature<NoneFeatureConfiguration> {
             Direction[] var4 = Direction.values();
             int var5 = var4.length;
 
-            for(int var6 = 0; var6 < var5; ++var6) {
-                Direction direction = var4[var6];
+            for (Direction direction : var4) {
                 if (direction != Direction.DOWN && VineBlock.isAcceptableNeighbour(worldgenlevel, blockpos.relative(direction), direction)) {
-                    worldgenlevel.setBlock(blockpos, (BlockState) Rider_Blocks.HELHEIM_VINE.get().defaultBlockState().setValue(VineBlock.getPropertyForFace(direction), true), 2);
+                    worldgenlevel.setBlock(blockpos, Rider_Blocks.HELHEIM_VINE.get().defaultBlockState().setValue(VineBlock.getPropertyForFace(direction), true), 2);
                     return true;
                 }
             }

@@ -5,9 +5,7 @@ import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.CaseArmorSlot;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -19,7 +17,6 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
-import javax.annotation.Nullable;
 import java.util.Map;
 
 public class RiderCaseGuiMenu extends AbstractContainerMenu {
@@ -104,8 +101,7 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
                 this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18){
                     @Override
                     public boolean mayPickup(Player player) {
-                        if (this.getItem().getItem()==Modded_item_core.GENERIC_RIDER_CASE.get())return false;
-                        return true;
+                        return this.getItem().getItem() != Modded_item_core.GENERIC_RIDER_CASE.get();
                     }
                 });
             }
@@ -115,8 +111,7 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142){
                 @Override
                 public boolean mayPickup(Player player) {
-                    if (this.getItem().getItem()==Modded_item_core.GENERIC_RIDER_CASE.get())return false;
-                    return true;
+                    return this.getItem().getItem() != Modded_item_core.GENERIC_RIDER_CASE.get();
                 }
             });
         }

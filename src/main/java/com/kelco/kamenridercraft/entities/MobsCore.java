@@ -21,9 +21,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MobsCore {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -34,7 +31,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(ShockerCombatmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shocker_combatman"));
     
     public static final DeferredItem<DeferredSpawnEggItem> SHOCKER_COMBATMAN_SPAWN_EGG = ITEMS.register("shocker_combatman_spawn_egg",
-            () -> new DeferredSpawnEggItem(SHOCKER_COMBATMAN, 000000,0xFFFFFF, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(SHOCKER_COMBATMAN, 0x000000,0xFFFFFF, new Item.Properties()));
  
     public static final DeferredHolder<EntityType<?>, EntityType<ShockerRidersEntity>> SHOCKER_RIDER = MOBLIST.register("shocker_riders",
             () -> EntityType.Builder.of(ShockerRidersEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shocker_riders"));
@@ -48,7 +45,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(DestronCombatmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":destron_combatman"));
     
     public static final DeferredItem<DeferredSpawnEggItem> DESTRON_COMBATMAN_SPAWN_EGG = ITEMS.register("destron_combatman_spawn_egg",
-            () -> new DeferredSpawnEggItem(DESTRON_COMBATMAN, 000000,0xFFFFFF, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(DESTRON_COMBATMAN, 0x000000,0xFFFFFF, new Item.Properties()));
  
     
 
@@ -56,7 +53,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(GODWarfareAgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":god_warfare_agent"));
     
     public static final DeferredItem<DeferredSpawnEggItem> GOD_WARFARE_AGENT_SPAWN_EGG = ITEMS.register("god_warfare_agent_spawn_egg",
-            () -> new DeferredSpawnEggItem(GOD_WARFARE_AGENT, 000000,0x7e0000, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(GOD_WARFARE_AGENT, 0x000000,0x7e0000, new Item.Properties()));
  
     
     
@@ -72,7 +69,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(BlackSatanSoldierEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":black_satan_soldier"));
     
     public static final DeferredItem<DeferredSpawnEggItem> BLACK_SATAN_SOLDIER_SPAWN_EGG = ITEMS.register("black_satan_soldier_spawn_egg",
-            () -> new DeferredSpawnEggItem(BLACK_SATAN_SOLDIER, 000000,0x7e0000, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(BLACK_SATAN_SOLDIER, 0x000000,0x7e0000, new Item.Properties()));
 
     
     
@@ -80,7 +77,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(AriCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ari_commando"));
     
     public static final DeferredItem<DeferredSpawnEggItem> ARI_COMMANDO_SPAWN_EGG = ITEMS.register("ari_commando_spawn_egg",
-            () -> new DeferredSpawnEggItem(ARI_COMMANDO, 000000,0x121212, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(ARI_COMMANDO, 0x000000,0x121212, new Item.Properties()));
 
     
     
@@ -104,7 +101,7 @@ public class MobsCore {
            () -> EntityType.Builder.of(ChapEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":chap"));
     
     public static final DeferredItem<DeferredSpawnEggItem> CHAP_SPAWN_EGG = ITEMS.register("chap_spawn_egg",
-           () -> new DeferredSpawnEggItem(CHAP,  000000,0xFFFFFF, new Item.Properties()));
+           () -> new DeferredSpawnEggItem(CHAP,  0x000000,0xFFFFFF, new Item.Properties()));
  
     public static final DeferredHolder<EntityType<?>, EntityType<ShadowmoonEntity>> SHADOWMOON = MOBLIST.register("shadowmoon",
             () -> EntityType.Builder.of(ShadowmoonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shadowmoon"));
@@ -243,13 +240,13 @@ public class MobsCore {
              () -> EntityType.Builder.of(MasqueradeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));
 
      public static final DeferredItem<DeferredSpawnEggItem> MASQUERADE_SPAWN_EGG = ITEMS.register("masquerade_spawn_egg",
-             () -> new DeferredSpawnEggItem(MASQUERADE,  000000,0xFFFFFF, new Item.Properties()));
+             () -> new DeferredSpawnEggItem(MASQUERADE,  0x000000,0xFFFFFF, new Item.Properties()));
       
      public static final DeferredHolder<EntityType<?>, EntityType<FoundationXMasqueradeEntity>> FOUNDATION_X_MASQUERADE = MOBLIST.register("foundation_x_masquerade",
              () -> EntityType.Builder.of(FoundationXMasqueradeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":foundation_x_masquerade"));
 
      public static final DeferredItem<DeferredSpawnEggItem> FOUNDATION_X_MASQUERADE_SPAWN_EGG = ITEMS.register("foundation_x_masquerade_spawn_egg",
-             () -> new DeferredSpawnEggItem(FOUNDATION_X_MASQUERADE,  000000,0xFFFFFF, new Item.Properties()));
+             () -> new DeferredSpawnEggItem(FOUNDATION_X_MASQUERADE,  0x000000,0xFFFFFF, new Item.Properties()));
 
    
      public static final DeferredHolder<EntityType<?>, EntityType<ClayDollDopantEntity>> CLAYDOLL_DOPANT = MOBLIST.register("claydoll_dopant",
