@@ -29,20 +29,16 @@ public class GhostEffect extends MobEffect {
 	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
 
-		if(pLivingEntity instanceof Player player){
-			player.getFoodData().setFoodLevel(20);
-		pLivingEntity.fallDistance = 0.0f;
+		if(pLivingEntity instanceof Player player) {
+            player.getFoodData().setFoodLevel(20);
+            pLivingEntity.fallDistance = 0.0f;
 
             ItemStack stack = pLivingEntity.getItemBySlot(EquipmentSlot.FEET);
-            if (stack.getItem() instanceof RiderDriverItem belt) {
-                if ( stack.has(DataComponents.CUSTOM_DATA)) {
-                    CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                    if (tag.getDouble("use_ability") != 0 ) {
-			if (!pLivingEntity.level().isClientSide()) {
+            if (!pLivingEntity.level().isClientSide()) {
+                if (pLivingEntity.isShiftKeyDown()) {
                 pLivingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 5, pAmplifier, false, false));
-            }}
-			}
-				}
+            }
+        }
 		}
 		return true;
 	}

@@ -534,6 +534,9 @@ public class Kiva_Rider_Items {
 	public static final DeferredItem<Item> FANGIRE_BUSTER = ITEMS.register("fangire_buster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
+    public static final DeferredItem<Item> BLOODY_ROSE = ITEMS.register("bloody_rose",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.KIVA_TAB_ITEM));
 
-	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
+
+    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
