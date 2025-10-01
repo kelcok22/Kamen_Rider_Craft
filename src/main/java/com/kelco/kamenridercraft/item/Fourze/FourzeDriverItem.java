@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.Fourze;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
@@ -180,17 +181,23 @@ import net.neoforged.neoforge.registries.DeferredItem;
 			if (equipmentSlot == EquipmentSlot.FEET) {
 				return "belts/"+get_Form_Item(itemstack,5).getBeltTex();
 			}
-			if (equipmentSlot != EquipmentSlot.HEAD) return"blank";
+			if (equipmentSlot != EquipmentSlot.CHEST) return"blank";
 
 			else return riderName + get_Form_Item(itemstack,5).getFormName(fly);
 		}
 
 
-
-
 		public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-			return super.getModelResource(itemstack, animatable, slot,rider);
+
+            if (slot==EquipmentSlot.CHEST){
+                if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
+                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 5).get_FlyingModel(this.Rider));
+                }
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 5).get_Model(this.Rider));
+            }
+            return super.getModelResource(itemstack, animatable, slot,rider);
 		}
+
         public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
             if (currentSlot== EquipmentSlot.FEET) {
@@ -198,10 +205,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
             }
             if (isTransformed(livingEntity)){
                 switch (currentSlot) {
-                    case HEAD ->{
+                    case HEAD,CHEST ->{
                         return true;
                     }
-                    case CHEST, LEGS -> {
+                    case LEGS -> {
                       return false;
                     }
                     default -> {}
@@ -215,11 +222,11 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
 			switch (currentSlot) {
-				case HEAD ->{
+				case CHEST ->{
 					return true;
 
 				}
-				case CHEST -> {
+				case HEAD -> {
 					if (part =="rightLeg") return true;
 					if (part =="leftLeg") return true;
 					if (part =="rightArm") return true;

@@ -10,11 +10,17 @@ import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
 import com.kelco.kamenridercraft.item.Fourze.ShowaSwitchItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -36,70 +42,175 @@ public class Fourze_Rider_Items {
 	public static final DeferredItem<Item> FOURZE_BASE_STATES = ITEMS.register("fourze_basestates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+0.5,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 7, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 7, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 7, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 7, 0, 0, 0, 0.05);
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_ELEK_STATES = ITEMS.register("fourze_elekstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_elek","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.1);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
+
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_FIRE_STATES = ITEMS.register("fourze_firestates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fire","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.1);
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_MAGNET_STATES = ITEMS.register("fourze_magnetstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magnet","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(Effect_core.CANNON, 40, 2,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(Effect_core.CANNON, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 0.1);
+
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+0.5,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_LAUNCHER_STATES = ITEMS.register("fourze_launcherstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_launcher","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+0.5,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_FUSION_STATES = ITEMS.register("fourze_meteor_fusionstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_meteor_fusion","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 150, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 150, 0, 0, 0, 0.05);
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_METEOR_NADESHIKO_FUSION_STATES = ITEMS.register("fourze_meteor_nadeshiko_fusionstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_meteor_nadeshiko_fusion","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 150, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 150, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            }
 					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_ROCKET_DRILL_STATES = ITEMS.register("fourze_rocketdrillstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_drill","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            }.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> BLANK_CIRCLE_ASTROSWITCH = ITEMS.register("circle_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
@@ -356,8 +467,14 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
-                    .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.SOUL_FIRE_FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 200, 0, 0, 0, 0.1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
@@ -365,8 +482,18 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
-                    .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            } .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
@@ -374,16 +501,35 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+0.5,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 30, 0, 0, 0, 0.05);
+                }
+            } .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ikaros","ikaros_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            } .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","super_gingaoh","blank",
@@ -547,8 +693,15 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(Effect_core.HAPPY_MODE, 40, 4,true,false))
-					.ChangeSlot(5).alsoChange4thSlot(BLANK_SQUARE_ASTROSWITCH.get())
+                    new MobEffectInstance(Effect_core.HAPPY_MODE, 40, 4,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+
+                }
+            }.ChangeSlot(5).alsoChange4thSlot(BLANK_SQUARE_ASTROSWITCH.get())
 					.ResetFormToBase().addSwitchForm(FOURZE_BASE_STATES.get())
 					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
