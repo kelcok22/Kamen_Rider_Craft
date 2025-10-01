@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-28T21:37:45.518523	Item Models: kamenridercraft
+// 1.21.1	2025-10-01T18:59:10.8711513	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -405,6 +405,8 @@ b7883d55c89e817ab54db8175f2c2048ab7b14e2 assets/kamenridercraft/models/item/shif
 77e30b37d15a6413b5deebf4dc9491f62f4e731b assets/kamenridercraft/models/item/shift_ride_crosser.json
 b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/shift_viral_core.json
 3c2c238b9e5b6626a1284cafd1547b139bf2c14d assets/kamenridercraft/models/item/shiita_mimic_key.json
+0511c43edcfb29ba7fa654011f6c4881a60bc22d assets/kamenridercraft/models/item/shining_hopper1_ride_chemy_card.json
+6d33fc38bcd25c2c6be188f590372ea4916795aa assets/kamenridercraft/models/item/shining_steamliner_ride_chemy_card.json
 bb657dc2e26782603f5be2cabff9340e378f38b7 assets/kamenridercraft/models/item/shin_gochizo.json
 2135ee3580824c0697060d3bf97c2c1e67d09e92 assets/kamenridercraft/models/item/shin_ichigohead.json
 d3071505948eb09483e6f6cfedec4ce17ead052d assets/kamenridercraft/models/item/shin_ichigolegs.json
