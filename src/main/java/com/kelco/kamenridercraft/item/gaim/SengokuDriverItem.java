@@ -63,10 +63,10 @@ public class SengokuDriverItem extends RiderDriverItem {
         }
         if (isTransformed(livingEntity)){
             switch (currentSlot) {
-                case HEAD, CHEST ->{
+                case HEAD->{
                     return false;
                 }
-                case LEGS -> {
+                case LEGS, CHEST -> {
                     return true;
                 }
                 default -> {}
