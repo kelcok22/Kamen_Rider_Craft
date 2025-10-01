@@ -97,7 +97,7 @@ public class BaseItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         if (hasHoverText) {
-            tooltipComponents.add(Component.translatable("tooltip."+stack.getItem().toString()));
+            tooltipComponents.add(Component.translatable("tooltip."+ stack.getItem()));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

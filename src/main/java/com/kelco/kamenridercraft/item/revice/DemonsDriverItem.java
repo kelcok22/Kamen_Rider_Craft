@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -24,6 +23,7 @@ import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class DemonsDriverItem extends RiderDriverItem {
@@ -117,7 +117,7 @@ public class DemonsDriverItem extends RiderDriverItem {
 		int num = 1;
 		if (slot == EquipmentSlot.CHEST||slot == EquipmentSlot.LEGS) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/default_wings_armor.geo.json");
 		
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
@@ -128,31 +128,31 @@ public class DemonsDriverItem extends RiderDriverItem {
 
 		switch (currentSlot) {
 			case HEAD ->{
-				if (part =="head") return true;
-				if (part =="body") return true;
-				if (part =="rightArm") return true;
-				if (part =="leftArm") return true;
-				if (part =="rightLeg") return true;
-				if (part =="leftLeg") return true;
+				if (Objects.equals(part, "head")) return true;
+				if (Objects.equals(part, "body")) return true;
+				if (Objects.equals(part, "rightArm")) return true;
+				if (Objects.equals(part, "leftArm")) return true;
+				if (Objects.equals(part, "rightLeg")) return true;
+				if (Objects.equals(part, "leftLeg")) return true;
 			}
 			case CHEST -> {
-				if (part =="body") return get_Form_Item(itemstack, 4)== Revice_Rider_Items.SCORPION_VISTAMP.get();
+				if (Objects.equals(part, "body")) return get_Form_Item(itemstack, 4)== Revice_Rider_Items.SCORPION_VISTAMP.get();
 
 				if (get_Form_Item(itemstack, 1)== Revice_Rider_Items.GIANT_SPIDER_VISTAMP.get()){
-					if (part == "rightArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.KOMODO_DRAGON_VISTAMP_DEMONS.get();
-					if (part == "leftArm") return get_Form_Item(itemstack, 3) == Revice_Rider_Items.CROCODILE_VISTAMP_DEMONS.get();
+					if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 2) == Revice_Rider_Items.KOMODO_DRAGON_VISTAMP_DEMONS.get();
+					if (Objects.equals(part, "leftArm")) return get_Form_Item(itemstack, 3) == Revice_Rider_Items.CROCODILE_VISTAMP_DEMONS.get();
 
 				}else {
-					if (part == "rightArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
-					if (part == "leftArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
+					if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
+					if (Objects.equals(part, "leftArm")) return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
 				}
-				if (part =="rightLeg") return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
-				if (part =="leftLeg") return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
+				if (Objects.equals(part, "rightLeg")) return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
+				if (Objects.equals(part, "leftLeg")) return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
 			}
 			case LEGS -> {
-				if (part =="body") return get_Form_Item(itemstack, 3)== Revice_Rider_Items.CONDOR_VISTAMP_DEMONS.get();
+				if (Objects.equals(part, "body")) return get_Form_Item(itemstack, 3)== Revice_Rider_Items.CONDOR_VISTAMP_DEMONS.get();
 
-				if (part =="rightArm") return get_Form_Item(itemstack, 2)== Revice_Rider_Items.MOGURA_VISTAMP.get();
+				if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 2)== Revice_Rider_Items.MOGURA_VISTAMP.get();
 
 
 			}

@@ -58,10 +58,6 @@ public class ElementaryInvesRedEntity extends BaseHenchmenEntity {
     }
 
 
-    protected void defineSynchedData() {
-
-    }
-
     @Override
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty,
                                         MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {

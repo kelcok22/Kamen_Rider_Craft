@@ -33,7 +33,6 @@ import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.entity.projectile.WitherSkull;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -42,7 +41,7 @@ import net.minecraft.world.phys.Vec3;
 public class GodaEntity extends BaseHenchmenEntity {
 
 	private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(GodaEntity.class, EntityDataSerializers.BYTE);
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS);
 
 
     public GodaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -106,7 +105,7 @@ public class GodaEntity extends BaseHenchmenEntity {
 
 		return Monster.createMonsterAttributes()
 				.add(Attributes.FOLLOW_RANGE, 135.0D)
-				.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+				.add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.ATTACK_DAMAGE, 14.0D)
 				.add(Attributes.ARMOR, 3.0D)
 				.add(Attributes.MAX_HEALTH, 350.0D);
@@ -203,7 +202,7 @@ public class GodaEntity extends BaseHenchmenEntity {
 						if (this.attackStep > 1) {
 							double d4 = Math.sqrt(Math.sqrt(d0)) * 0.5D;
 							if (!this.CoreEntity.isSilent()) {
-								this.CoreEntity.level().levelEvent((Player)null, 1018, this.CoreEntity.blockPosition(), 0);
+								this.CoreEntity.level().levelEvent(null, 1018, this.CoreEntity.blockPosition(), 0);
 							}
 
 							for(int i = 0; i < 1; ++i) {

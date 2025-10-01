@@ -35,7 +35,6 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -43,7 +42,7 @@ import net.minecraft.world.level.Level;
 
 public class CronusEntity extends BaseHenchmenEntity {
 
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
 	private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(CronusEntity.class, EntityDataSerializers.BYTE);
 
 
@@ -97,8 +96,8 @@ public class CronusEntity extends BaseHenchmenEntity {
 			ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 			if (RiderDriverItem.get_Form_Item(belt,1)==Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.RED);
-				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.cronus_gamedeus").withStyle(ChatFormatting.GOLD));;
-			}
+				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.cronus_gamedeus").withStyle(ChatFormatting.GOLD));
+            }
 		}
 		this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
 	}
@@ -130,7 +129,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 
 		return Monster.createMonsterAttributes()
 				.add(Attributes.FOLLOW_RANGE, 135.0D)
-				.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+				.add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.ATTACK_DAMAGE, 12.0D)
 				.add(Attributes.ARMOR, 3.0D)
 				.add(Attributes.KNOCKBACK_RESISTANCE, 4.0D)
@@ -223,7 +222,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 
 						if (this.attackStep > 1) {
 								if (!this.Cronus.isSilent()) {
-									this.Cronus.level().levelEvent((Player)null, 1018, this.Cronus.blockPosition(), 0);
+									this.Cronus.level().levelEvent(null, 1018, this.Cronus.blockPosition(), 0);
 								}
 									if (this.Cronus.getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()) {
 

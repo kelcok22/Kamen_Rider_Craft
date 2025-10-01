@@ -3,17 +3,13 @@ package com.kelco.kamenridercraft.data;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,17 +20,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         super(output, KamenRiderCraftCore.MOD_ID, exFileHelper);
     }
 
-    public static List<Block> SIMPLE_BLOCK= new ArrayList<Block>();
+    public static List<Block> SIMPLE_BLOCK= new ArrayList<>();
 
 
     @Override
     protected void registerStatesAndModels() {
 
 
-        for (int i = 0; i < SIMPLE_BLOCK.size(); i++)
-        {
-            simpleBlock(SIMPLE_BLOCK.get(i));
-            blockItem(SIMPLE_BLOCK.get(i));
+        for (Block block : SIMPLE_BLOCK) {
+            simpleBlock(block);
+            blockItem(block);
 
         }
 
@@ -163,16 +158,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     }
 
-    private void paneBlock(Block block, ResourceLocation resourceLocation) {
-    }
-
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 
     private void blockItem(Block block) {
-        ResourceLocation BLOCK = (ResourceLocation) Objects.requireNonNull(BuiltInRegistries.BLOCK.getKey(block));
+        ResourceLocation BLOCK = Objects.requireNonNull(BuiltInRegistries.BLOCK.getKey(block));
         simpleBlockItem(block, new ModelFile.UncheckedModelFile("kamenridercraft:block/"+BLOCK.getPath()));
     }
 

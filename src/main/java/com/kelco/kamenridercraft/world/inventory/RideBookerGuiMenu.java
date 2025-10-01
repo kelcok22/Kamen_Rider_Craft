@@ -5,8 +5,6 @@ import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
-import com.kelco.kamenridercraft.item.build.PandoraPanelItem;
 import com.kelco.kamenridercraft.item.decade.RideBookerItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -53,8 +51,7 @@ public class RideBookerGuiMenu extends AbstractContainerMenu {
 				this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18){
 					@Override
 					public boolean mayPickup(Player player) {
-						if (this.getItem().getItem() instanceof RideBookerItem)return false;
-						else return true;
+                        return !(this.getItem().getItem() instanceof RideBookerItem);
 					}
 				});
 			}
@@ -64,8 +61,7 @@ public class RideBookerGuiMenu extends AbstractContainerMenu {
 			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142){
 				@Override
 				public boolean mayPickup(Player player) {
-					if (this.getItem().getItem() instanceof RideBookerItem)return false;
-					else return true;
+                    return !(this.getItem().getItem() instanceof RideBookerItem);
 				}
 			});
 		}

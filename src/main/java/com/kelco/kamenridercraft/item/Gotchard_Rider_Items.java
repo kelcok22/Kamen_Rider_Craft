@@ -40,45 +40,45 @@ public class Gotchard_Rider_Items {
 
 	public static String[] Gotchards = new String[] {"gotchard","gotchar_brother"};
 
-	public static List<Item> NEED_ITEM_SteamHopper= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_AppareSkebow= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_VenomMariner= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_AntWrestler= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_BurningGorilla= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_NeedleHawk= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_DokkiriShovel= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_GoldMechanichor= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_HiikesuRose= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_LightningJungle= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_MarsPhoenix= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_MarsPhoenix2= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_SteamHopper= new ArrayList<>();
+	public static List<Item> NEED_ITEM_AppareSkebow= new ArrayList<>();
+	public static List<Item> NEED_ITEM_VenomMariner= new ArrayList<>();
+	public static List<Item> NEED_ITEM_AntWrestler= new ArrayList<>();
+	public static List<Item> NEED_ITEM_BurningGorilla= new ArrayList<>();
+	public static List<Item> NEED_ITEM_NeedleHawk= new ArrayList<>();
+	public static List<Item> NEED_ITEM_DokkiriShovel= new ArrayList<>();
+	public static List<Item> NEED_ITEM_GoldMechanichor= new ArrayList<>();
+	public static List<Item> NEED_ITEM_HiikesuRose= new ArrayList<>();
+	public static List<Item> NEED_ITEM_LightningJungle= new ArrayList<>();
+	public static List<Item> NEED_ITEM_MarsPhoenix= new ArrayList<>();
+	public static List<Item> NEED_ITEM_MarsPhoenix2= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_Platina= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_Rainbow= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_Ultima= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_Miracle= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_Platina= new ArrayList<>();
+	public static List<Item> NEED_ITEM_Rainbow= new ArrayList<>();
+	public static List<Item> NEED_ITEM_Ultima= new ArrayList<>();
+	public static List<Item> NEED_ITEM_Miracle= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_OdoriMantis= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_MadPilets= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_EnergyMaru= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_BulletChoucho= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_SmaHotaru= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_OdoriMantis= new ArrayList<>();
+	public static List<Item> NEED_ITEM_MadPilets= new ArrayList<>();
+	public static List<Item> NEED_ITEM_EnergyMaru= new ArrayList<>();
+	public static List<Item> NEED_ITEM_BulletChoucho= new ArrayList<>();
+	public static List<Item> NEED_ITEM_SmaHotaru= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<>();
+	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_Valvarad= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_AngeCopter= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_Valvarad= new ArrayList<>();
+	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<>();
+	public static List<Item> NEED_ITEM_AngeCopter= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_TypeThree= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_TypeThree= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_SteamHopper_daybreak= new ArrayList<Item>();
-    public static List<Item> NEED_ITEM_Shining_DB= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_SteamHopper_daybreak= new ArrayList<>();
+    public static List<Item> NEED_ITEM_Shining_DB= new ArrayList<>();
 
-	public static List<Item> NEED_ITEM_ExceedMighty= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_CycloneTaToBa= new ArrayList<Item>();
-	public static List<Item> NEED_ITEM_FullFullRocket= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_ExceedMighty= new ArrayList<>();
+	public static List<Item> NEED_ITEM_CycloneTaToBa= new ArrayList<>();
+	public static List<Item> NEED_ITEM_FullFullRocket= new ArrayList<>();
 
 	public static final DeferredItem<Item> ARK_ONE_MALGAM = ITEMS.register("ark_one_malgam",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_malgam","ark_zero","ark_driver_belt_1",

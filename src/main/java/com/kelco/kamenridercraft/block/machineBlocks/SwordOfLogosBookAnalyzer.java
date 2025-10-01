@@ -5,15 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -22,17 +19,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
-import org.jetbrains.annotations.NotNull;
-
-import javax.annotation.Nullable;
 
 
 public class SwordOfLogosBookAnalyzer extends MachineBlock {
 	
-	  public static List<Item> BLANK_BOOK= new ArrayList<Item>();
-	  public static List<Item> WONDER_WORLD_BOOK= new ArrayList<Item>();
+	  public static List<Item> BLANK_BOOK= new ArrayList<>();
+	  public static List<Item> WONDER_WORLD_BOOK= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -50,16 +43,10 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getBookDrop(int num, Player player) {
+    private Item getBookDrop(int num, Player player) {
  		Random generator = new Random();
 
-         List<Item> BLANK_BOOK_PLUS= new ArrayList<Item>();
-         BLANK_BOOK_PLUS.clear();
-         BLANK_BOOK_PLUS.addAll(BLANK_BOOK);
+        List<Item> BLANK_BOOK_PLUS = new ArrayList<>(BLANK_BOOK);
          if (player.getInventory().countItem(Saber_Rider_Items.TASSEL_DARK_WONDER_RIDE_BOOK.get())!=0){
              for (int i = 0; i < 2; i++) {
                  BLANK_BOOK_PLUS.add(Saber_Rider_Items.ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK.get());

@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft.block.entity.renderer;
 
-import com.kelco.kamenridercraft.block.custom.PlinthBlock;
 import com.kelco.kamenridercraft.block.entity.PlinthBlockEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;

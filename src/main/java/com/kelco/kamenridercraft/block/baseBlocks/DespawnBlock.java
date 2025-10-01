@@ -23,7 +23,7 @@ public class DespawnBlock extends BaseBlock {
 
 	public DespawnBlock(Properties prop) {
 		super(prop);
-		this.registerDefaultState(this.stateDefinition.any().setValue(DISTANCE, Integer.valueOf(7)).setValue(PERSISTENT, Boolean.valueOf(false)));
+		this.registerDefaultState(this.stateDefinition.any().setValue(DISTANCE, 7).setValue(PERSISTENT, Boolean.FALSE));
 
 
 	}
@@ -63,7 +63,7 @@ public class DespawnBlock extends BaseBlock {
 			}
 		}
 
-		return p_54436_.setValue(DISTANCE, Integer.valueOf(i));
+		return p_54436_.setValue(DISTANCE, i);
 	}
 
 	private static int getDistanceAt(BlockState p_54464_) {
@@ -79,7 +79,7 @@ public class DespawnBlock extends BaseBlock {
 	}
 
 	public BlockState getStateForPlacement(BlockPlaceContext p_54424_) {
-		BlockState blockstate = this.defaultBlockState().setValue(PERSISTENT, Boolean.valueOf(true));
+		BlockState blockstate = this.defaultBlockState().setValue(PERSISTENT, Boolean.TRUE);
 		return updateDistance(blockstate, p_54424_.getLevel(), p_54424_.getClickedPos());
 	}
 }

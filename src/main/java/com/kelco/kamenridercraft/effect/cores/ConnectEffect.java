@@ -14,8 +14,6 @@ import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.PlayerEnderChestContainer;
 
-import java.util.HashSet;
-
 
 public class ConnectEffect extends InstantenousMobEffect {
 
@@ -36,9 +34,7 @@ public class ConnectEffect extends InstantenousMobEffect {
 					if (playerenderchestcontainer != null) {
 							Component CONTAINER_TITLE = Component.translatable(KamenRiderCraftCore.MOD_ID+".container.enderchest");
 
-							player.openMenu(new SimpleMenuProvider((p_53124_, p_53125_, p_53126_) -> {
-								return ChestMenu.threeRows(p_53124_, p_53125_, playerenderchestcontainer);
-							}, CONTAINER_TITLE));
+							player.openMenu(new SimpleMenuProvider((p_53124_, p_53125_, p_53126_) -> ChestMenu.threeRows(p_53124_, p_53125_, playerenderchestcontainer), CONTAINER_TITLE));
 							player.awardStat(Stats.OPEN_ENDERCHEST);
 							PiglinAi.angerNearbyPiglins(player, true);
 

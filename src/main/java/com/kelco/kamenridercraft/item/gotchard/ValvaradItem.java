@@ -1,9 +1,7 @@
 package com.kelco.kamenridercraft.item.gotchard;
 
 import java.util.List;
-import java.util.function.Consumer;
-
-import org.jetbrains.annotations.Nullable;
+import java.util.Objects;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -11,7 +9,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
@@ -27,7 +24,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -54,15 +50,15 @@ public class ValvaradItem extends RiderDriverItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		Item formItem = this.get_Form_Item(stack, 1);
-		Item formItem2 = this.get_Form_Item(stack, 2);
-		Item formItem3 = this.get_Form_Item(stack, 3);
+		Item formItem = get_Form_Item(stack, 1);
+		Item formItem2 = get_Form_Item(stack, 2);
+		Item formItem3 = get_Form_Item(stack, 3);
 
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
 		if (formItem2!=Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!=Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-		else if (formItem2==Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!=Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
-		else if (formItem2!=Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3==Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+		else if (formItem2==Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!=Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem2 + ".form"));
+		else if (formItem2!=Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3==Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem3 + ".form"));
 		else tooltipComponents.add(Component.translatable("kamenridercraft:tri_custom.form"));
 	}
 
@@ -114,37 +110,33 @@ public class ValvaradItem extends RiderDriverItem {
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		switch (slot) {
-			case CHEST -> {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_custom.geo.json");
-			}
-        	default -> {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
-			}
-		}			
-	}
+        if (Objects.requireNonNull(slot) == EquipmentSlot.CHEST) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_custom.geo.json");
+        }
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));
+    }
 
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
 		switch (currentSlot) {
 		case HEAD ->{ 
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "rightArm")) return true;
+			if (Objects.equals(part, "leftArm")) return true;
+			if (Objects.equals(part, "leftLeg")) return true;
+			if (Objects.equals(part, "rightLeg")) return true;
 			
 		}
 		case CHEST -> {
-			if (part =="rightArm") return get_Form_Item(itemstack, 2) == Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get();
-			if (part =="leftArm") return get_Form_Item(itemstack, 3) == Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get();
+			if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 2) == Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get();
+			if (Objects.equals(part, "leftArm")) return get_Form_Item(itemstack, 3) == Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get();
 		
 		}
 		case LEGS -> {
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
+			if (Objects.equals(part, "leftLeg")) return true;
+			if (Objects.equals(part, "rightLeg")) return true;
 		}
 		default -> {}
 		}

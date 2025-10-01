@@ -52,7 +52,7 @@ public class EvilEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.3F)
         		.add(Attributes.ATTACK_DAMAGE, 5.0D)
         		.add(Attributes.ARMOR, 0.0D)
         		.add(Attributes.MAX_HEALTH, 60.0D);

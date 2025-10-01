@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
@@ -14,7 +13,6 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -77,7 +75,7 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
             }
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
-                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), (RiderFormChangeItem)BuiltInRegistries.ITEM.get(ResourceLocation.parse(str)), 1);
+                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), BuiltInRegistries.ITEM.get(ResourceLocation.parse(str)), 1);
                 }
             }
         

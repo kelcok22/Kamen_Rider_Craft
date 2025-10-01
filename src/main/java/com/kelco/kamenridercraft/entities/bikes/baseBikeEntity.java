@@ -7,9 +7,6 @@ import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -27,11 +24,8 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
-import net.minecraft.world.entity.vehicle.VehicleEntity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -64,7 +58,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.MAX_HEALTH, 20.0D)
 				.add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
@@ -132,7 +126,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 			if (this.isVehicle()) {
 
 
-				LivingEntity passenger = (LivingEntity)getControllingPassenger();
+				LivingEntity passenger = getControllingPassenger();
 				if (passenger!=null){
 				this.yRotO = getYRot();
 				this.xRotO = getXRot();
@@ -249,8 +243,8 @@ protected SoundEvent getDeathSound() {
 
 		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
 
-			EntityModelData entityData = (EntityModelData) state.getData(DataTickets.ENTITY_MODEL_DATA);
-			Entity entityData2 = (Entity) state.getData(DataTickets.ENTITY);
+			EntityModelData entityData = state.getData(DataTickets.ENTITY_MODEL_DATA);
+			Entity entityData2 = state.getData(DataTickets.ENTITY);
 
 			float front_fork=0;
 			float wheel=0;
@@ -259,7 +253,7 @@ protected SoundEvent getDeathSound() {
 				if (this.getControllingPassenger().xxa < 0) front_fork = -0.25f;
 				if (this.getControllingPassenger().xxa > 0) front_fork = 0.25f;
 				if (this.getControllingPassenger().zza > 0) wheel=- 0.1f;
-				if (this.getControllingPassenger().zza < 0) wheel=+ 0.05f;
+				if (this.getControllingPassenger().zza < 0) wheel= 0.05f;
 
 			}
 

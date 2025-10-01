@@ -1,6 +1,8 @@
 {
   "values": [
 	"kamenridercraft:daybreak_hopper1_ride_chemy_card",
-	"kamenridercraft:daybreak_steamliner_ride_chemy_card"
+	"kamenridercraft:daybreak_steamliner_ride_chemy_card",
+    "kamenridercraft:shining_hopper1_ride_chemy_card",
+    "kamenridercraft:shining_steamliner_ride_chemy_card"
   ]
 }

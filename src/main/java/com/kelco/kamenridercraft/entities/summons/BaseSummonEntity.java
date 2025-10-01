@@ -325,9 +325,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
     }
 
     public void performRangedAttack(LivingEntity target, float distanceFactor) {
-       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> {
-          return item instanceof BowItem;
-       }));
+       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
        ItemStack itemstack1 = this.getProjectile(weapon);
 	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW)
 	   	blaster.getProjectile().fire(this, this.getLookAngle());

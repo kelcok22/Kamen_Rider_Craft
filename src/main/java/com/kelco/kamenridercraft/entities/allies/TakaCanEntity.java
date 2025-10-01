@@ -1,17 +1,11 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.YummyEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.DamageTypeTags;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
@@ -24,7 +18,6 @@ import net.minecraft.world.entity.ai.goal.target.*;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.Bee;
 import net.minecraft.world.entity.animal.FlyingAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
@@ -32,12 +25,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.event.EventHooks;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -83,7 +73,7 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.MAX_HEALTH, 40.0D)
 				.add(Attributes.ATTACK_DAMAGE, 2.0D)
 				.add(Attributes.FLYING_SPEED, 0.1F);
@@ -116,7 +106,7 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 								this.setOrderedToSit(!this.isOrderedToSit());
 								this.jumping = false;
 								this.navigation.stop();
-								this.setTarget((LivingEntity)null);
+								this.setTarget(null);
 								return InteractionResult.SUCCESS_NO_ITEM_USED;
 							} else {
 								return interactionresult;
@@ -166,14 +156,12 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 	private void tryToTame(Player player) {
 			this.tame(player);
 			this.navigation.stop();
-			this.setTarget((LivingEntity)null);
+			this.setTarget(null);
 			this.setOrderedToSit(true);
 			this.level().broadcastEntityEvent(this, (byte)7);
 	}
 
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-	}
-	/**
+    /**
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
 		   }
@@ -232,7 +220,7 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 			RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.taka_can.summon");
 			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.taka_can.death");
 
-			controllers.add(new AnimationController<TakaCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK:IDLE:SIT:RIP)));
+			controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK : IDLE : SIT : RIP)));
 		}
 
 	@Override

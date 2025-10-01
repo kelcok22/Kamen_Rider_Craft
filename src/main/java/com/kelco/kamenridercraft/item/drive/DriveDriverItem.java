@@ -2,8 +2,6 @@ package com.kelco.kamenridercraft.item.drive;
 
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
-import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.ShiftCarHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -27,7 +25,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.jar.Attributes;
 
 public class DriveDriverItem extends RiderDriverItem {
 
@@ -68,19 +65,19 @@ public class DriveDriverItem extends RiderDriverItem {
 				belt!=Drive_Rider_Items.BRAIN_DRIVER.get()) {
 
 			this.Has_basic_belt_info = false;
-			Item formItem = this.get_Form_Item(stack, 1);
-			Item formItem2 = this.get_Form_Item(stack, 2);
+			Item formItem = get_Form_Item(stack, 1);
+			Item formItem2 = get_Form_Item(stack, 2);
 
-			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Rider == "drive")
+			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
 				tooltipComponents.add(Component.translatable("kamenridercraft.name.zero_drive"));
 			else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
-			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Rider == "drive")
-				tooltipComponents.add(Component.translatable(formItem.toString() + ".zero_drive.form"));
+			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
+				tooltipComponents.add(Component.translatable(formItem + ".zero_drive.form"));
 			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 
 			if (formItem2 == Drive_Rider_Items.BASIC_TIRE.get())
-				tooltipComponents.add(Component.translatable(formItem.toString() + ".tire.form"));
+				tooltipComponents.add(Component.translatable(formItem + ".tire.form"));
 			else tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
@@ -90,16 +87,16 @@ public class DriveDriverItem extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 
-		if (riderName=="mach"&get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()
-		||riderName=="drive"&get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT.get()){
+		if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()
+		|| Objects.equals(riderName, "drive") &get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT.get()){
 			if(rider.getHealth()<7) {
 				return "tire/dead_heat_burst_tire";
 			}
-		}else if (riderName=="mach"&get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_MAX_FLARE.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
+		}else if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_MAX_FLARE.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
 			return "tire/kourin_moerl_tire";
-		}else if (riderName=="mach"&get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
+		}else if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
 			return "tire/kourin_arabull_tire";
-		}else if (riderName=="mach"&get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_SPIN_MIXER.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
+		}else if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_SPIN_MIXER.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
 			return "tire/kourin_mazerl_tire";
 		}
 		return "tire/"+get_Form_Item(itemstack,2).getFormName(fly);

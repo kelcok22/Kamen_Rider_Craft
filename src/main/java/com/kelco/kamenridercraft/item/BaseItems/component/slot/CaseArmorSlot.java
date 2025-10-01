@@ -54,9 +54,7 @@ public class CaseArmorSlot extends Slot {
     @Override
     public boolean mayPickup(Player player) {
         ItemStack itemstack = this.getItem();
-        return !itemstack.isEmpty() && !player.isCreative() && EnchantmentHelper.has(itemstack, EnchantmentEffectComponents.PREVENT_ARMOR_CHANGE)
-                ? false
-                : super.mayPickup(player);
+        return (itemstack.isEmpty() || player.isCreative() || !EnchantmentHelper.has(itemstack, EnchantmentEffectComponents.PREVENT_ARMOR_CHANGE)) && super.mayPickup(player);
     }
 
     @Override

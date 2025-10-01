@@ -4,7 +4,6 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import com.kelco.kamenridercraft.item.ryuki.AdventDeckItem;
 import net.minecraft.network.FriendlyByteBuf;
@@ -48,8 +47,7 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 				this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18){
 					@Override
 					public boolean mayPickup(Player player) {
-						if (this.getItem().getItem() instanceof AdventDeckItem)return false;
-						else return true;
+                        return !(this.getItem().getItem() instanceof AdventDeckItem);
 					}
 				});
 			}
@@ -59,8 +57,7 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142){
 				@Override
 				public boolean mayPickup(Player player) {
-					if (this.getItem().getItem() instanceof AdventDeckItem)return false;
-					else return true;
+                    return !(this.getItem().getItem() instanceof AdventDeckItem);
 				}
 			});
 		}

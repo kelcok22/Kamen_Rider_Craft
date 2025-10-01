@@ -25,7 +25,7 @@ import java.util.function.Consumer;
 
 public class GateSwitchItem extends BaseItem {
 
-	private int TIME = 500;
+	private int TIME;
 
 	public GateSwitchItem(Properties properties, int time)
 	{
@@ -41,7 +41,7 @@ public class GateSwitchItem extends BaseItem {
 	 if (dim==1) {
 
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		 BlockPos blockpos= new BlockPos(40, 60, 40);
+		 BlockPos blockpos;
 
 		 if (get_has_moon(itemstack)){
 			 int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());

@@ -17,7 +17,7 @@ public class GammaCommandoEntity extends BaseHenchmenEntity {
     
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 4.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 30.0D)

@@ -25,7 +25,7 @@ import java.util.function.Consumer;
 
 public class BookGateItem extends BaseItem {
 
-	private int TIME = 500;
+	private int TIME;
 
 	public BookGateItem(Properties properties, int time)
 	{
@@ -41,7 +41,7 @@ public class BookGateItem extends BaseItem {
 	 if (dim==1) {
 
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		 BlockPos blockpos= new BlockPos(40, 64, 40);
+		 BlockPos blockpos;
 
 		 if (get_has_base(itemstack)){
 			 int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());

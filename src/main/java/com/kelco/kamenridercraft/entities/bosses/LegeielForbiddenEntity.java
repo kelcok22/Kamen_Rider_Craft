@@ -1,19 +1,10 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
-import com.kelco.kamenridercraft.ServerConfig;
-import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
-import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.commands.DamageCommand;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -47,7 +38,7 @@ public class LegeielForbiddenEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.4F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.4F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 10.0D)
         		.add(Attributes.MAX_HEALTH, 200.0D);

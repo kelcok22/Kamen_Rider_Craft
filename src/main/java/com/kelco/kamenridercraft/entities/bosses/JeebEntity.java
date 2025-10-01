@@ -1,12 +1,9 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 
-import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
-import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
@@ -56,7 +53,7 @@ public class JeebEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
                 .add(Attributes.FOLLOW_RANGE, 135.0D)
-                .add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+                .add(Attributes.MOVEMENT_SPEED, 0.3F)
                 .add(Attributes.ATTACK_DAMAGE, 10.0D)
                 .add(Attributes.ARMOR, 3.0D)
                 .add(Attributes.MAX_HEALTH, 200.0D);

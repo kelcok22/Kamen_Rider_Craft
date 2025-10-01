@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoField;
 import javax.annotation.Nullable;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -99,7 +98,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 4.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 45.0D);
@@ -118,9 +117,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
             spawnGroupData =  super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
     if (this.getOffhandItem().isEmpty()) {
        LocalDate localdate = LocalDate.now();
-       int i = localdate.get(ChronoField.DAY_OF_MONTH);
-       int j = localdate.get(ChronoField.MONTH_OF_YEAR);
-       if (j == 6 && i == 22 && randomsource.nextFloat() < 0.25F) {
+       if (localdate.getMonthValue() == 6 && localdate.getDayOfMonth() == 22 && randomsource.nextFloat() < 0.25F) {
           this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack( Items.APPLE));
           this.armorDropChances[EquipmentSlot.HEAD.getIndex()] = 0.0F;
        }
@@ -201,9 +198,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     }
 
     public void performRangedAttack(LivingEntity target, float distanceFactor) {
-       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> {
-          return item instanceof BowItem;
-       }));
+       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
        ItemStack itemstack1 = this.getProjectile(weapon);
 	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
 	   	blaster.getProjectile().fire(this, this.getLookAngle());

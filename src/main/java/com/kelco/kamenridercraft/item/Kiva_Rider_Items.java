@@ -47,7 +47,7 @@ public class Kiva_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     	  
-	   public static List<Item> NEED_ITEM_DOGABAKI= new ArrayList<Item>();
+	   public static List<Item> NEED_ITEM_DOGABAKI= new ArrayList<>();
 	   
 	
 	public static final DeferredItem<Item> DOGABAKI = ITEMS.register("dogabaki",

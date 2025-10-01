@@ -4,8 +4,6 @@ import java.util.List;
 
 import com.kelco.kamenridercraft.entities.projectile.ShurikenProjectileEntity;
 import com.kelco.kamenridercraft.entities.projectile.WeaponProjectileEntity;
-import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -14,7 +12,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.Level;
 
 public class BaseThrowableItem extends SwordItem {
@@ -29,7 +26,7 @@ public class BaseThrowableItem extends SwordItem {
 
 	public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
 		ItemStack itemstack = pPlayer.getItemInHand(pUsedHand);
-		pLevel.playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
+		pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
 				SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
 
 		if (!pLevel.isClientSide) {

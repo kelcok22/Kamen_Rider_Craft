@@ -31,7 +31,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import io.netty.buffer.Unpooled;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -86,13 +85,13 @@ public class DiendriverItem extends BaseBlasterItem {
 
 	@Override
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
-		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().count() != 0
+		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().findAny().isPresent()
 		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem)player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
 			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
 			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))) {
 				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)).count());
-				List<String> cardNames = new ArrayList<String>();
+				List<String> cardNames = new ArrayList<>();
 
 				contents.nonEmptyItems().forEach(card -> {
 					if (card.getItem() instanceof RiderCardItem summonCard) {
@@ -106,7 +105,7 @@ public class DiendriverItem extends BaseBlasterItem {
 
 				switch (cardNames.size()) {
 					case 1: 
-						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride", cardNames.get(0)), true);
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride", cardNames.getFirst()), true);
 						break;
 					case 2: 
 						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_2", cardNames.get(0), cardNames.get(1)), true);
@@ -139,16 +138,14 @@ public class DiendriverItem extends BaseBlasterItem {
 
 		int i = 0;
 		int j = 0;
-		Iterator var7 = stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems().iterator();
 
-		while(var7.hasNext()) {
-			ItemStack itemstack = (ItemStack)var7.next();
-			++j;
-			if (i <= 4) {
-				++i;
-				tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
-			}
-		}
+        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
+            ++j;
+            if (i <= 4) {
+                ++i;
+                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
+            }
+        }
 
 		if (j - i > 0) {
 			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));

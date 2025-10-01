@@ -41,7 +41,7 @@ import net.minecraft.world.phys.Vec3;
 public class AncientOOOEntity extends BaseHenchmenEntity {
 
 	private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(AncientOOOEntity.class, EntityDataSerializers.BYTE);
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS));
+	private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
 
 
 	public AncientOOOEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -61,8 +61,8 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 			ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 			if (RiderDriverItem.get_Form_Item(belt,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.RED);
-				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.ancient_ooo_greeed_absorption").withStyle(ChatFormatting.GOLD));;
-			}
+				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.ancient_ooo_greeed_absorption").withStyle(ChatFormatting.GOLD));
+            }
 		}
 		this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
 	}
@@ -127,7 +127,7 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 
 		return Monster.createMonsterAttributes()
 				.add(Attributes.FOLLOW_RANGE, 135.0D)
-				.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+				.add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.ATTACK_DAMAGE, 10.0D)
 				.add(Attributes.ARMOR, 3.0D)
 				.add(Attributes.MAX_HEALTH, 300.0D);
@@ -224,7 +224,7 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 						if (this.attackStep > 1) {
 							double d4 = Math.sqrt(Math.sqrt(d0)) * 0.5D;
 							if (!this.CoreEntity.isSilent()) {
-								this.CoreEntity.level().levelEvent((Player)null, 1018, this.CoreEntity.blockPosition(), 0);
+								this.CoreEntity.level().levelEvent(null, 1018, this.CoreEntity.blockPosition(), 0);
 							}
 
 							for(int i = 0; i < 1; ++i) {

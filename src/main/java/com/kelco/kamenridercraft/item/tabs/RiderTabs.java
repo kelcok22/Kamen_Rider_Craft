@@ -8,10 +8,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.bosses.DemushuEntity;
-import com.kelco.kamenridercraft.entities.bosses.LordBaronEntity;
-import com.kelco.kamenridercraft.entities.bosses.RedyueEntity;
-import com.kelco.kamenridercraft.entities.bosses.RosyuoEntity;
 import com.kelco.kamenridercraft.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -222,62 +218,62 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.BLACKSUNHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_black_sun_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.black_sun_items")).build());
 
-    public static List<Item> ICHIGO_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> ICHIGO_TAB_ITEM= new ArrayList<>();
 
-    public static List<Item> V3_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> X_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> AMAZON_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> STRONGER_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> SKYRIDER_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> SUPER1_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> ZX_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> BLACK_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> RX_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> SHIN_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> ZO_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> J_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> V3_TAB_ITEM= new ArrayList<>();
+    public static List<Item> X_TAB_ITEM= new ArrayList<>();
+    public static List<Item> AMAZON_TAB_ITEM= new ArrayList<>();
+    public static List<Item> STRONGER_TAB_ITEM= new ArrayList<>();
+    public static List<Item> SKYRIDER_TAB_ITEM= new ArrayList<>();
+    public static List<Item> SUPER1_TAB_ITEM= new ArrayList<>();
+    public static List<Item> ZX_TAB_ITEM= new ArrayList<>();
+    public static List<Item> BLACK_TAB_ITEM= new ArrayList<>();
+    public static List<Item> RX_TAB_ITEM= new ArrayList<>();
+    public static List<Item> SHIN_TAB_ITEM= new ArrayList<>();
+    public static List<Item> ZO_TAB_ITEM= new ArrayList<>();
+    public static List<Item> J_TAB_ITEM= new ArrayList<>();
 
-    public static List<Item> KUUGA_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> AGITO_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> RYUKI_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> FAIZ_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> BLADE_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> HIBIKI_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> KABUTO_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> DEN_O_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> KIVA_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> DECADE_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> KUUGA_TAB_ITEM= new ArrayList<>();
+    public static List<Item> AGITO_TAB_ITEM= new ArrayList<>();
+    public static List<Item> RYUKI_TAB_ITEM= new ArrayList<>();
+    public static List<Item> FAIZ_TAB_ITEM= new ArrayList<>();
+    public static List<Item> BLADE_TAB_ITEM= new ArrayList<>();
+    public static List<Item> HIBIKI_TAB_ITEM= new ArrayList<>();
+    public static List<Item> KABUTO_TAB_ITEM= new ArrayList<>();
+    public static List<Item> DEN_O_TAB_ITEM= new ArrayList<>();
+    public static List<Item> KIVA_TAB_ITEM= new ArrayList<>();
+    public static List<Item> DECADE_TAB_ITEM= new ArrayList<>();
 
-     public static List<Item> W_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> OOO_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> FOURZE_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> WIZARD_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GAIM_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> DRIVE_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> EX_AID_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GHOST_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> BUILD_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> ZI_O_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> ZERO_ONE_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> SABER_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> REVICE_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GEATS_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GOTCHARD_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GAVV_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> ZEZTZ_TAB_ITEM= new ArrayList<Item>();
+     public static List<Item> W_TAB_ITEM= new ArrayList<>();
+    public static List<Item> OOO_TAB_ITEM= new ArrayList<>();
+    public static List<Item> FOURZE_TAB_ITEM= new ArrayList<>();
+    public static List<Item> WIZARD_TAB_ITEM= new ArrayList<>();
+    public static List<Item> GAIM_TAB_ITEM= new ArrayList<>();
+    public static List<Item> DRIVE_TAB_ITEM= new ArrayList<>();
+    public static List<Item> EX_AID_TAB_ITEM= new ArrayList<>();
+    public static List<Item> GHOST_TAB_ITEM= new ArrayList<>();
+    public static List<Item> BUILD_TAB_ITEM= new ArrayList<>();
+    public static List<Item> ZI_O_TAB_ITEM= new ArrayList<>();
+    public static List<Item> ZERO_ONE_TAB_ITEM= new ArrayList<>();
+    public static List<Item> SABER_TAB_ITEM= new ArrayList<>();
+    public static List<Item> REVICE_TAB_ITEM= new ArrayList<>();
+    public static List<Item> GEATS_TAB_ITEM= new ArrayList<>();
+    public static List<Item> GOTCHARD_TAB_ITEM= new ArrayList<>();
+    public static List<Item> GAVV_TAB_ITEM= new ArrayList<>();
+    public static List<Item> ZEZTZ_TAB_ITEM= new ArrayList<>();
 
-    public static List<Item> G_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GORIDER_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> RIDE_KAMENS_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> AMAZONS_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> BLACK_SUN_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> SHIN_ICHIGO_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> G_TAB_ITEM= new ArrayList<>();
+    public static List<Item> GORIDER_TAB_ITEM= new ArrayList<>();
+    public static List<Item> RIDE_KAMENS_TAB_ITEM= new ArrayList<>();
+    public static List<Item> AMAZONS_TAB_ITEM= new ArrayList<>();
+    public static List<Item> BLACK_SUN_TAB_ITEM= new ArrayList<>();
+    public static List<Item> SHIN_ICHIGO_TAB_ITEM= new ArrayList<>();
 
-    public static List<Block> RIDER_BLOCK= new ArrayList<Block>();
-    public static List<Block> RIDER_DECOR= new ArrayList<Block>();
+    public static List<Block> RIDER_BLOCK= new ArrayList<>();
+    public static List<Block> RIDER_DECOR= new ArrayList<>();
 
 
-    public static List<Item> Misc_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> Misc_TAB_ITEM= new ArrayList<>();
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

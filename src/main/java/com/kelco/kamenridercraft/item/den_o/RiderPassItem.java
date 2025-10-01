@@ -22,7 +22,7 @@ import net.minecraft.world.level.Level;
 
 public class RiderPassItem extends BaseItem {
 
-	private int TIME = 500;
+	private int TIME;
 
 	public RiderPassItem (Properties properties, int time)
 	{
@@ -32,7 +32,7 @@ public class RiderPassItem extends BaseItem {
 
 	public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity) {
 		if (entity.isPassenger()) entity.stopRiding();
-		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), (double)otherDim.getMinBuildHeight(), (double)(otherDim.getMinBuildHeight() + ((ServerLevel)otherDim).getLogicalHeight() - 1)), entity.getZ(), new HashSet<>(), 0, 0);
+		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
 		while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
 		entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
 	}

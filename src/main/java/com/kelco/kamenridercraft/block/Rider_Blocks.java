@@ -1,18 +1,14 @@
 package com.kelco.kamenridercraft.block;
 
 
-import java.awt.*;
 import java.util.function.Supplier;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.*;
-import com.kelco.kamenridercraft.block.entity.AstroswitchRackBlockEntity;
-import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
-import com.kelco.kamenridercraft.block.storageBlock.AstroswitchRackBlock;
 import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -25,14 +21,11 @@ import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -40,7 +33,6 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -51,12 +43,10 @@ public class Rider_Blocks {
 	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(KamenRiderCraftCore.MOD_ID);
 	
 	public static final DeferredBlock<Block> ICHIGO_CHAIR = registerBlock("ichigo_chair",
-			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).lightLevel((p_152632_) -> {
-			      return 1;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
+			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> RED_ICHIGO_CHAIR = registerBlock("red_ichigo_chair",
-			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> {
-				return 1;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
+			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> SHOCKER_MONITOR = registerBlock("shocker_monitor",
@@ -132,11 +122,11 @@ public class Rider_Blocks {
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block>  FANGIRE_GLASS = registerBlock("fangire_glass",
-			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel((glow) -> { return 15; }), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_BLOCK));
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel((glow) -> 15), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	
 	public static final DeferredBlock<Block>  PURE_GAIA_MEMORY_BLOCK = registerBlock("pure_gaia_memory_block",
-			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> { return 15; })
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> 15)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	
@@ -217,8 +207,7 @@ public class Rider_Blocks {
 	
 	public static final DeferredBlock<Block> GANBERIZING_MACHINE = registerBlock("ganbarizing_machine",
 			() -> new GanbarizingMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape().lightLevel((p_152632_) -> {
-					      return 10;}),Block.box(1, 0, 1, 14,32, 14)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape().lightLevel((p_152632_) -> 10),Block.box(1, 0, 1, 14,32, 14)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> PANDORA_BOX = registerBlock("pandora_box",
 			() -> new PandoraBox(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -233,8 +222,7 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<WhiteboardBlock> WHITEBOARD = registerBlock("whiteboard",
-			() -> new WhiteboardBlock(BlockBehaviour.Properties.of().noOcclusion().lightLevel((p_152632_) -> {
-				return 2;})));
+			() -> new WhiteboardBlock(BlockBehaviour.Properties.of().noOcclusion().lightLevel((p_152632_) -> 2)));
 
 	public static final DeferredBlock<Block> COUNTER_95DO = registerBlock("counter_95do",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
@@ -280,7 +268,7 @@ public class Rider_Blocks {
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
 	public static final DeferredBlock<LadderBlock> DRIVE_PIT_LOGO = registerBlock("drive_pit_logo",
-			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).lightLevel((p_152632_) -> {return 100;})));
+			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).lightLevel((p_152632_) -> 100)));
 
 
 	public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
@@ -399,13 +387,12 @@ public class Rider_Blocks {
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_4.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
 	public static final DeferredBlock<Block> HELHEIM_CRACK = registerBlock("helheim_crack",
-			() -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> {
-				return 10;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,30, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
+			() -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> 10).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,30, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> PANDORA_FIRE = registerBlock("pandora_fire",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)
 					.strength(2.0F, 6.0F).sound(SoundType.AMETHYST).noCollission().noOcclusion()
-					.noLootTable().lightLevel((p_152632_) -> {return 10;})));
+					.noLootTable().lightLevel((p_152632_) -> 10)));
 
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
@@ -742,7 +729,7 @@ public class Rider_Blocks {
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_TABEL_TOP = registerBlock("sword_of_logos_tabel_top",
-			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).lightLevel((glow) -> { return 15; })
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).lightLevel((glow) -> 15)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD_TRIM = registerBlock("sword_of_logos_wood_trim",

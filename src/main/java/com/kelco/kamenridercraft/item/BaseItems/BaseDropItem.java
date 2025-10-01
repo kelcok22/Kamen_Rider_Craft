@@ -26,7 +26,7 @@ public class BaseDropItem extends BaseItem {
     public void dropItem(ServerLevel world, Player player) {
 		ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, LOOT_TABLE_PATH);
         LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);
-        LootParams.Builder lootparams$builder = new LootParams.Builder((ServerLevel)world)
+        LootParams.Builder lootparams$builder = new LootParams.Builder(world)
         	.withParameter(LootContextParams.THIS_ENTITY, player)
         	.withParameter(LootContextParams.ORIGIN, player.position());
 

@@ -2,11 +2,8 @@ package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
-import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByItem;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
-import com.kelco.kamenridercraft.item.ex_aid.RiderGashatCaseItem;
 import com.kelco.kamenridercraft.item.w.T2MemoryCaseItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -70,8 +67,7 @@ public class T2MemoryCaseGuiMenu extends AbstractContainerMenu {
                 this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 97 + i1 * 18){
                     @Override
                     public boolean mayPickup(Player player) {
-                        if (this.getItem().getItem() instanceof T2MemoryCaseItem)return false;
-                        else return true;
+                        return !(this.getItem().getItem() instanceof T2MemoryCaseItem);
                     }
                 });
             }
@@ -81,8 +77,7 @@ public class T2MemoryCaseGuiMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 155){
                 @Override
                 public boolean mayPickup(Player player) {
-                    if (this.getItem().getItem() instanceof T2MemoryCaseItem)return false;
-                    else return true;
+                    return !(this.getItem().getItem() instanceof T2MemoryCaseItem);
                 }
             });
         }

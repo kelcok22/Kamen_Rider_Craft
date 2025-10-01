@@ -1,36 +1,25 @@
 package com.kelco.kamenridercraft.effect.cores;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Stack;
 
 
 public class RiderKickEffect extends MobEffect {
@@ -113,7 +102,7 @@ public class RiderKickEffect extends MobEffect {
                             belt.OnRiderKickHit(stack, pLivingEntity, enemy);
                             if (enemy.isDeadOrDying() & enemy instanceof ShockerCombatmanEntity) {
                                 if (pLivingEntity instanceof Player player) {
-                                    if (belt.Rider == "ichigo" && !player.level().isClientSide()) {
+                                    if (Objects.equals(belt.Rider, "ichigo") && !player.level().isClientSide()) {
                                         player.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get(), 1), false);
                                     }
                                 }

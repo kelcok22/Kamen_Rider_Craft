@@ -20,7 +20,7 @@ import net.minecraft.world.level.Level;
 public class ShowaMedalItem extends BaseItem {
 
     private RiderDriverItem summonBelt;
-    private Item summonWeapon = null;
+    private Item summonWeapon;
 
 	public ShowaMedalItem (Properties properties, RiderDriverItem belt, @Nullable Item weapon)
 	{

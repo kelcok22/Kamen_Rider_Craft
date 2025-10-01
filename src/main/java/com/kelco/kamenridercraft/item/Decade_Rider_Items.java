@@ -26,11 +26,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class Decade_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
-	public static List<Item> NEO_DIEND_SUMMON_BELTS = new ArrayList<Item>();
-	public static List<Item> NEO_DIEND_SUMMON_FORMS = new ArrayList<Item>();
-	public static List<Item> NEO_DIEND_SUMMON_WEAPONS = new ArrayList<Item>();
-	public static List<Item> COMPLETE_21_FORMS = new ArrayList<Item>();
-	public static List<Item> COMPLETE_21_WEAPONS = new ArrayList<Item>();
+	public static List<Item> NEO_DIEND_SUMMON_BELTS = new ArrayList<>();
+	public static List<Item> NEO_DIEND_SUMMON_FORMS = new ArrayList<>();
+	public static List<Item> NEO_DIEND_SUMMON_WEAPONS = new ArrayList<>();
+	public static List<Item> COMPLETE_21_FORMS = new ArrayList<>();
+	public static List<Item> COMPLETE_21_WEAPONS = new ArrayList<>();
 
 	public static final DeferredItem<Item> DECADE_LOGO = ITEMS.register("decade_logo",
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/decade")), new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));

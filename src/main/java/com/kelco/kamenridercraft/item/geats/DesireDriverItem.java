@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.geats;
 
 import java.util.List;
+import java.util.Objects;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
@@ -60,17 +61,15 @@ public class DesireDriverItem  extends RiderDriverItem {
 				packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 				return new RaiseBuckleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
 			}
-		}, buf -> {
-			buf.writeBlockPos(player.blockPosition());
-		});
+		}, buf -> buf.writeBlockPos(player.blockPosition()));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         Has_basic_belt_info=false;
-		Item formItem = this.get_Form_Item(stack, 1);
-		Item formItem2 = this.get_Form_Item(stack, 2);
-		Item formItem3 = this.get_Form_Item(stack, 3);
+		Item formItem = get_Form_Item(stack, 1);
+		Item formItem2 = get_Form_Item(stack, 2);
+		Item formItem3 = get_Form_Item(stack, 3);
 
 		if(formItem2==Geats_Rider_Items.ONENESS_RAISE_BUCKLE.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.geats_oneness"));
 		else if(formItem==Geats_Rider_Items.GEATS_CORE_ID_OSAKA.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.osaka_"+Rider));
@@ -110,7 +109,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 			else if (formItem3==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()){
     	        tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 					+ (formItem2!=Modded_item_core.BLANK_FORM.get() ? (Component.translatable("kamenridercraft:bujin_sword_raise_buckle.form_r").getString()+" "+Component.translatable(formItem2.toString() + ".form").getString())
-					: Component.translatable(formItem3.toString() + ".form").getString())
+					: Component.translatable(formItem3 + ".form").getString())
 					+ " " + Component.translatable("kamenridercraft:form.form").getString()));
     	    } else {
     	        tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
@@ -131,10 +130,9 @@ public class DesireDriverItem  extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		
-		Boolean isBujin= false;
-		if (get_Form_Item(itemstack,2)== Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get()||get_Form_Item(itemstack,2)== Geats_Rider_Items.BOOST_RAISE_BUCKLE.get()||get_Form_Item(itemstack,2)== Modded_item_core.BLANK_FORM.get())  isBujin = true;
-		
-		if (equipmentSlot == EquipmentSlot.FEET) {
+		boolean isBujin= get_Form_Item(itemstack, 2) == Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get() || get_Form_Item(itemstack, 2) == Geats_Rider_Items.BOOST_RAISE_BUCKLE.get() || get_Form_Item(itemstack, 2) == Modded_item_core.BLANK_FORM.get();
+
+        if (equipmentSlot == EquipmentSlot.FEET) {
 			
 			
 				String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
@@ -160,7 +158,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 		
 		else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack,2)==Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) return riderName+"_base_over_boost_mkii";
 		else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack,2)==Geats_Rider_Items.UNITE_GRIP.get()) return "geats_base_over_laser_boost";
-		else if (equipmentSlot == EquipmentSlot.CHEST&get_Form_Item(itemstack,2)==Modded_item_core.BLANK_FORM.get()&&get_Form_Item(itemstack,3).getFormName(fly)=="_jyamato") return "geats_rider_jyamato_no_belt";
+		else if (equipmentSlot == EquipmentSlot.CHEST&get_Form_Item(itemstack,2)==Modded_item_core.BLANK_FORM.get()&& Objects.equals(get_Form_Item(itemstack, 3).getFormName(fly), "_jyamato")) return "geats_rider_jyamato_no_belt";
 		
 		else if (equipmentSlot == EquipmentSlot.CHEST&get_Form_Item(itemstack,2)==Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,1)==Geats_Rider_Items.GEATS_CORE_ID_OSAKA.get()) return "geats_rider_magnum_osaka";
 		else if (equipmentSlot == EquipmentSlot.CHEST&get_Form_Item(itemstack,2)==Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,1)==Geats_Rider_Items.GEATS_CORE_ID_FUKUOKA.get()) return "geats_rider_magnum_fukuoka";
@@ -232,7 +230,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE_FEVER.get()) return true;
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.CLAW_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.CLAW_RAISE_BUCKLE_FEVER.get()) return true;
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.DRILL_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.DRILL_RAISE_BUCKLE_FEVER.get()) return true;
-			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE_FEVER.get()) return true;
+            return get_Form_Item(itemstack, 2) == Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get() & get_Form_Item(itemstack, 3) == Geats_Rider_Items.PROPELLER_RAISE_BUCKLE_FEVER.get();
 
 		}
 		return false;
@@ -253,25 +251,23 @@ public class DesireDriverItem  extends RiderDriverItem {
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.ZOMBIE_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.ZOMBIE_RAISE_BUCKLE_FEVER.get()) return true;
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.NINJA_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.NINJA_RAISE_BUCKLE_FEVER.get()) return true;
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.BEAT_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.BEAT_RAISE_BUCKLE_FEVER.get()) return true;
-			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.MONSTER_RAISE_BUCKLE_FEVER.get()) return true;
+            return get_Form_Item(itemstack, 2) == Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get() & get_Form_Item(itemstack, 3) == Geats_Rider_Items.MONSTER_RAISE_BUCKLE_FEVER.get();
 		}
 		return false;
 	}
 	
 	public  boolean isRaising(ItemStack itemstack,String riderName) {
-			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get()||get_Form_Item(itemstack,3)==Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get()) return true;
-		return false;
-	}
+        return get_Form_Item(itemstack, 2) == Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get() || get_Form_Item(itemstack, 3) == Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get();
+    }
 	
 	
 	public Boolean CanFever(String rider) {
 		String[] feverRiderList = Geats_Rider_Items.FeverUsers;
-		for (int i = 0; i < feverRiderList.length; i++)
-		{
-			if (feverRiderList[i]==rider){
-				return true;
-			}
-		}
+        for (String s : feverRiderList) {
+            if (Objects.equals(s, rider)) {
+                return true;
+            }
+        }
 
 		return false;
 	}
@@ -302,7 +298,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_NAGOYA.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
 		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_TOKYO.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
 
-		Boolean isBujin= true;
+		boolean isBujin= true;
 		if (get_Form_Item(belt,2)==Geats_Rider_Items.BOOST_RAISE_BUCKLE.get()) isBujin = false;
 		else if (get_Form_Item(belt,2)==Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get())  isBujin = false;
 		else if (get_Form_Item(belt,2)==Modded_item_core.BLANK_FORM.get())  isBujin = false;
@@ -323,7 +319,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 
 		if (entity instanceof LivingEntity player) {
 			if (isTransformed(player)) {
-				if (this.get_Form_Item(stack, 2) == Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false));
+				if (get_Form_Item(stack, 2) == Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false));
 				boolean Fever=  isFever(stack,this.Rider);
 				if (get_Form_Item(stack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&get_Form_Item(stack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get())  Fever= true;
 
@@ -368,18 +364,18 @@ public class DesireDriverItem  extends RiderDriverItem {
 		if (slot == EquipmentSlot.LEGS)num=3;
 		
 		 if (slot == EquipmentSlot.CHEST) {
-			 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats_rider_plusbelt.geo.json");
+			 if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json"))return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats_rider_plusbelt.geo.json");
 			 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model("geats_rider"));
 			
 		 }else if (slot == EquipmentSlot.LEGS) {
-			 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_geats_rider_plusbelt.geo.json");
+			 if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json"))return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_geats_rider_plusbelt.geo.json");
 			 else return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_"+get_Form_Item(itemstack, num).get_Model("geats_rider"));
 
 			 }else
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_wings_armor.geo.json");
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_cape.geo.json");
 				
-				 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats.geo.json");
+				 if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json"))return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats.geo.json");
 				 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 	}
 
@@ -395,19 +391,19 @@ public class DesireDriverItem  extends RiderDriverItem {
 
 		switch (currentSlot) {
 		case HEAD, LEGS ->{
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "rightArm")) return true;
+			if (Objects.equals(part, "leftArm")) return true;
+			if (Objects.equals(part, "leftLeg")) return true;
+			if (Objects.equals(part, "rightLeg")) return true;
 			
 		}
 		case CHEST -> {
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "rightArm")) return true;
+			if (Objects.equals(part, "leftArm")) return true;
 			
 		}
             default -> {}

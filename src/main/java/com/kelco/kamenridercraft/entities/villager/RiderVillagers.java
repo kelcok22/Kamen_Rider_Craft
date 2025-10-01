@@ -27,8 +27,8 @@ public class RiderVillagers {
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> SHOCKER_VILLAGER = VILLAGER_PROFESSIONS.register("shocker_villager",
-            () -> new VillagerProfession("shocker_villager",(X) -> {return X.is(SHOCKER_MONITOR_POI);},
-                    (X) -> {return X.is(SHOCKER_MONITOR_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("shocker_villager",(X) -> X.is(SHOCKER_MONITOR_POI),
+                    (X) -> X.is(SHOCKER_MONITOR_POI), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> HIDEN_3D_PRINTER_POI = POI_TYPES.register("hiden_3d_printer_poi",
@@ -36,8 +36,8 @@ public class RiderVillagers {
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> HUMAGEAR_VILLAGER = VILLAGER_PROFESSIONS.register("humagear_villager",
-            () -> new VillagerProfession("humagear_villager", (X) -> {return X.is(HIDEN_3D_PRINTER_POI);},
-                    (X) -> {return X.is(HIDEN_3D_PRINTER_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("humagear_villager", (X) -> X.is(HIDEN_3D_PRINTER_POI),
+                    (X) -> X.is(HIDEN_3D_PRINTER_POI), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> KAMEN_CAFE_COUNTER_POI = POI_TYPES.register("kamen_cafe_counter_poi",
@@ -45,8 +45,8 @@ public class RiderVillagers {
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> KAMEN_CAFE_BUTLER = VILLAGER_PROFESSIONS.register("kamen_cafe_butler",
-            () -> new VillagerProfession("kamen_cafe_butler",(X) -> {return X.is(KAMEN_CAFE_COUNTER_POI);},
-                    (X) -> {return X.is(KAMEN_CAFE_COUNTER_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("kamen_cafe_butler",(X) -> X.is(KAMEN_CAFE_COUNTER_POI),
+                    (X) -> X.is(KAMEN_CAFE_COUNTER_POI), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> HEATPRESS_EXTRACTOR_POI = POI_TYPES.register("heatpress_extractor_poi",
@@ -54,8 +54,8 @@ public class RiderVillagers {
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> AGENT_VILLAGER = VILLAGER_PROFESSIONS.register("agent_villager",
-            () -> new VillagerProfession("agent_villager",(X) -> {return X.is(HEATPRESS_EXTRACTOR_POI);},
-                    (X) -> {return X.is(HEATPRESS_EXTRACTOR_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("agent_villager",(X) -> X.is(HEATPRESS_EXTRACTOR_POI),
+                    (X) -> X.is(HEATPRESS_EXTRACTOR_POI), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> CANDY_SHOP_POI = POI_TYPES.register("candy_shop_poi",
@@ -63,8 +63,8 @@ public class RiderVillagers {
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> CANDYSHOP_VILLAGER = VILLAGER_PROFESSIONS.register("candyshop_villager",
-            () -> new VillagerProfession("candyshop_villager",(X) -> {return X.is(CANDY_SHOP_POI);},
-                    (X) -> {return X.is(CANDY_SHOP_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("candyshop_villager",(X) -> X.is(CANDY_SHOP_POI),
+                    (X) -> X.is(CANDY_SHOP_POI), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_FARMER));
 
     

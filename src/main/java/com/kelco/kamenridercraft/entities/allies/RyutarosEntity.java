@@ -11,16 +11,13 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -55,7 +52,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 
 
@@ -84,7 +80,7 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
 		}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
 
 
@@ -185,22 +181,6 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
         }
     }
 
-	   protected SoundEvent getAmbientSound() {
-		         return SoundEvents.VILLAGER_AMBIENT;
-		   }
-	
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-		
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
     public void reassessWeaponGoal() {
        if (this.level() != null && !this.level().isClientSide) {
           this.goalSelector.removeGoal(this.meleeGoal);
@@ -227,9 +207,7 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
     }
 
     public void performRangedAttack(LivingEntity target, float distanceFactor) {
-       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> {
-          return item instanceof BowItem;
-       }));
+       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
        ItemStack itemstack1 = this.getProjectile(weapon);
 	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW)
 	   	blaster.getProjectile().fire(this, this.getLookAngle());
@@ -258,11 +236,7 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
       return p_32144_ instanceof BowItem;
    }
 
-	   public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 	   

@@ -1,10 +1,10 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoField;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 
@@ -21,17 +21,12 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.decoration.ArmorStand;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import com.google.common.collect.Lists;
@@ -338,9 +333,7 @@ public class RiderDriverItem extends RiderArmorItem {
             itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> {
-                form.putDouble("use_ability", 5);
-            };
+            Consumer<CompoundTag> data = form -> form.putDouble("use_ability", 5);
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
     }
@@ -396,17 +389,17 @@ public class RiderDriverItem extends RiderArmorItem {
 
         switch (currentSlot) {
             case HEAD ->{
-                if (part =="head") return true;
+                if (Objects.equals(part, "head")) return true;
             }
             case CHEST -> {
-                if (part =="body") return true;
-                if (part =="rightArm") return true;
-                if (part =="leftArm") return true;
+                if (Objects.equals(part, "body")) return true;
+                if (Objects.equals(part, "rightArm")) return true;
+                if (Objects.equals(part, "leftArm")) return true;
             }
             case LEGS -> {
 
-                if (part =="rightLeg") return true;
-                if (part =="leftLeg") return true;
+                if (Objects.equals(part, "rightLeg")) return true;
+                if (Objects.equals(part, "leftLeg")) return true;
             }
             default -> {}
         }
@@ -415,42 +408,38 @@ public class RiderDriverItem extends RiderArmorItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-
-
-        Boolean isDateA1 = false;
         LocalDate localdate = LocalDate.now();
-        if (localdate.get(ChronoField.MONTH_OF_YEAR) == 4 && localdate.get(ChronoField.DAY_OF_MONTH) == 1) {
-            isDateA1=true;
-        }
-            if (Has_basic_belt_info) {
-                if (A1&isDateA1) tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider+".a1"));
-                else tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
-                if (Show_belt_form_info) {
-                    {
-                        RiderFormChangeItem formItem = this.get_Form_Item(stack, 1);
-                        if (formItem.get_a1()&isDateA1)tooltipComponents.add(Component.translatable(formItem.toString() + ".form.a1"));
-                        else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-                    }
+        boolean isDateA1 = localdate.getMonthValue() == 4 && localdate.getDayOfMonth() == 1;
+
+        if (Has_basic_belt_info) {
+            if (A1&isDateA1) tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider+".a1"));
+            else tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+            if (Show_belt_form_info) {
+                {
+                    RiderFormChangeItem formItem = get_Form_Item(stack, 1);
+                    if (formItem.get_a1()&isDateA1)tooltipComponents.add(Component.translatable(formItem + ".form.a1"));
+                    else tooltipComponents.add(Component.translatable(formItem + ".form"));
                 }
             }
+        }
             
 
 		int i = 0;
 		int j = 0;
-		Iterator var7 = ((ItemContainerContents)stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
+		Iterator<ItemStack> var7 = stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems().iterator();
         if (var7.hasNext()) tooltipComponents.add(Component.translatable("container.rider_belt"));
 
 		while(var7.hasNext()) {
-			ItemStack itemstack = (ItemStack)var7.next();
+			ItemStack itemstack = var7.next();
 			++j;
 			if (i <= 2) {
 				++i;
-				tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", new Object[]{itemstack.getHoverName(), itemstack.getCount()}));
+				tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
 			}
 		}
 
 		if (j - i > 0) {
-			tooltipComponents.add(Component.translatable("container.shulkerBox.more", new Object[]{j - i}).withStyle(ChatFormatting.ITALIC));
+			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
 		}
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

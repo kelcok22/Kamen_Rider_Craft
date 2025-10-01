@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
-import com.kelco.kamenridercraft.item.Gaim_Rider_Items;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -27,7 +26,7 @@ public class DarkDriveEntity extends BaseHenchmenEntity {
 	public static AttributeSupplier.Builder setAttributes() {
 		return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.30F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
         		.add(Attributes.ATTACK_DAMAGE, 7.0D)
         		.add(Attributes.MAX_HEALTH, 130.0D);
      }

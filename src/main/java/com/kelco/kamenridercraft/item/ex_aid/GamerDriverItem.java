@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.ex_aid;
 
 import java.util.List;
+import java.util.Objects;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.ServerConfig;
@@ -11,7 +12,6 @@ import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.Holder;
@@ -118,7 +118,7 @@ public class GamerDriverItem extends RiderDriverItem {
 				||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_POPPY.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_LAZER.get())
 				&& rider.isHolding(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get())) belt="bugster_buckle";
 			
-			if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/lv_1_belt.geo.json") {
+			if(Objects.equals(get_Form_Item(itemstack, 1).get_Belt_Model(), "geo/lv_1_belt.geo.json")) {
 				if (!isTransformed(rider)) belt = get_Form_Item(itemstack,1).getBeltTex()+"_un";
 			}
 			
@@ -157,7 +157,7 @@ public class GamerDriverItem extends RiderDriverItem {
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		
-		if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/lv_1_belt.geo.json" && !isTransformed(rider)) {
+		if(Objects.equals(get_Form_Item(itemstack, 1).get_Belt_Model(), "geo/lv_1_belt.geo.json") && !isTransformed(rider)) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/riderbelt.geo.json");
 		}
 		
@@ -169,24 +169,20 @@ public class GamerDriverItem extends RiderDriverItem {
 		if (currentSlot== EquipmentSlot.FEET) {
 			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
 		} else if (isTransformed(livingEntity)){
-			switch (currentSlot) {
-				case CHEST -> {
-					return get_Form_Item(itemstack, 2).get_Is_Glowing();
-				}
-				default -> {
-                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                }
-			}
-		}
+            if (Objects.requireNonNull(currentSlot) == EquipmentSlot.CHEST) {
+                return get_Form_Item(itemstack, 2).get_Is_Glowing();
+            }
+            return get_Form_Item(itemstack, 1).get_Is_Glowing();
+        }
 		return false;
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot == EquipmentSlot.CHEST) {
-			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
+			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_FlyingModel(this.Rider));
-			} else if (get_Form_Item(itemstack, 2).get_Model(this.Rider)=="default.geo.json") {
+			} else if (Objects.equals(get_Form_Item(itemstack, 2).get_Model(this.Rider), "default.geo.json")) {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/bigger_rider_plusbelt.geo.json");
 			}
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model(this.Rider));

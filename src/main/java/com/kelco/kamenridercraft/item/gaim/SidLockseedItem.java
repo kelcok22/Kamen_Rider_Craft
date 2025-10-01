@@ -17,7 +17,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class SidLockseedItem extends BaseItem {
 
-	private int TIME = 900;
+	private int TIME;
 
 	public SidLockseedItem (Properties properties, int time)
 	{

@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoField;
 import java.util.Random;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
@@ -47,11 +46,7 @@ public class ShadowmoonEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason reason) {
         if (reason == RemovalReason.KILLED) {
             LocalDate localdate = LocalDate.now();
-            int i = localdate.get(ChronoField.DAY_OF_MONTH);
-            int j = localdate.get(ChronoField.MONTH_OF_YEAR);
-            if (j == 4 && i == 1) {
-               if (this.lastHurtByPlayer!=null) this.lastHurtByPlayer.drop(new ItemStack(Modded_item_core.MASKED_RIDER_MUSIC_DISC.get(), 1), false);
-            }
+            if (localdate.getMonthValue() == 4 && localdate.getDayOfMonth() == 1 && this.lastHurtByPlayer!=null) this.lastHurtByPlayer.drop(new ItemStack(Modded_item_core.MASKED_RIDER_MUSIC_DISC.get(), 1), false);
         }
         super.remove(reason);
     }

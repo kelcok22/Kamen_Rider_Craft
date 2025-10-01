@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 import java.util.ArrayList;
@@ -25,9 +24,9 @@ import java.util.Random;
 
 public class ShiftChassisAssembler extends MachineBlock {
 
-	  public static List<Item> DRIVE_CAR= new ArrayList<Item>();
-	  public static List<Item> NEXT_BIKE= new ArrayList<Item>();
-	  public static List<Item> NEXT_CAR = new ArrayList<Item>();
+	  public static List<Item> DRIVE_CAR= new ArrayList<>();
+	  public static List<Item> NEXT_BIKE= new ArrayList<>();
+	  public static List<Item> NEXT_CAR = new ArrayList<>();
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -45,11 +44,7 @@ public class ShiftChassisAssembler extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getCarDrop(int num) {
+    private Item getCarDrop(int num) {
  		Random generator = new Random();
  		if (num==1){
  			int rand = generator.nextInt(DRIVE_CAR.size());

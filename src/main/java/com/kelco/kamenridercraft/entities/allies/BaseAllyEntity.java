@@ -33,7 +33,6 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.SitWhenOrderedToGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
@@ -72,7 +71,7 @@ public class BaseAllyEntity extends TamableAnimal implements NeutralMob {
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.MAX_HEALTH, 40.0D)
 				.add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
@@ -117,11 +116,8 @@ public class BaseAllyEntity extends TamableAnimal implements NeutralMob {
 	public void aiStep() {
 		super.aiStep();
 	   this.updateSwingTime();
-	   Level level = this.level();
-	   
-	   if (!level.isClientSide) {
-		  this.updatePersistentAnger((ServerLevel)this.level(), true);
-	   }
+
+	   if (this.level() instanceof ServerLevel server) this.updatePersistentAnger(server, true);
 	}
 
    public void addAdditionalSaveData(CompoundTag p_30418_) {
@@ -186,12 +182,12 @@ public class BaseAllyEntity extends TamableAnimal implements NeutralMob {
         } else if (target instanceof Wolf wolf) {
             return !wolf.isTame() || wolf.getOwner() != owner;
         } else {
-            if (target instanceof ArmorStand) return false;
-            if (target instanceof Player player && owner instanceof Player player1 && !player1.canHarmPlayer(player)) return false;
-            if (target instanceof AbstractHorse abstracthorse && abstracthorse.isTamed()) return false;
-            if (target instanceof TamableAnimal tamableanimal && tamableanimal.isTame()) return false;
-
-            return true;
+            return switch (target) {
+                case ArmorStand armorStand -> false;
+                case Player player when owner instanceof Player player1 && !player1.canHarmPlayer(player) -> false;
+                case AbstractHorse abstracthorse when abstracthorse.isTamed() -> false;
+                default -> !(target instanceof TamableAnimal tamableanimal) || !tamableanimal.isTame();
+            };
         }
     }
 

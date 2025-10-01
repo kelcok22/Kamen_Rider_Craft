@@ -7,12 +7,10 @@ import java.util.Random;
 
 import com.kelco.kamenridercraft.item.Agito_Rider_Items;
 import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -21,16 +19,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
-import org.jetbrains.annotations.NotNull;
-
-import javax.annotation.Nullable;
 
 
 public class GSystemChipProgrammer extends MachineBlock {
 	
-	  public static List<Item> G_CHIP= new ArrayList<Item>();
+	  public static List<Item> G_CHIP= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -48,11 +42,7 @@ public class GSystemChipProgrammer extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getChipDrop(int num) {
+    private Item getChipDrop() {
  		Random generator = new Random();
  			int rand = generator.nextInt(G_CHIP.size());
  			return G_CHIP.get(rand);
@@ -64,7 +54,7 @@ public class GSystemChipProgrammer extends MachineBlock {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Agito_Rider_Items.BLANK_G_SYSTEM_CHIP.get()) {
-                process(player, level, pos, hand, getChipDrop(0));
+                process(player, level, pos, hand, getChipDrop());
                 return ItemInteractionResult.SUCCESS;
             }
         }

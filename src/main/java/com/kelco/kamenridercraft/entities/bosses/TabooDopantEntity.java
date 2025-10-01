@@ -11,7 +11,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.goal.*;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
@@ -21,7 +20,6 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.SmallFireball;
-import net.minecraft.world.entity.projectile.WitherSkull;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
@@ -53,8 +51,8 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
     @Override
     protected void addBehaviourGoals() {
         this.goalSelector.addGoal(3, new TabooEntityAttackGoal(this, 1.0D, false));
-        this.goalSelector.addGoal(5, new MoveTowardsRestrictionGoal(this, (double)1.0F));
-        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, (double)1.0F, 0.0F));
+        this.goalSelector.addGoal(5, new MoveTowardsRestrictionGoal(this, 1.0F));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0F, 0.0F));
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
@@ -66,7 +64,7 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.2F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 4.0D)
         		.add(Attributes.MAX_HEALTH, 110.0D)
@@ -85,7 +83,7 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
         RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.taboo.idle");
         RawAnimation SHOOT = RawAnimation.begin().thenLoop("animation.taboo.shoot");
 
-        controllers.add(new AnimationController<TabooDopantEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(isCharged()?SHOOT:IDLE)));
+        controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(isCharged() ? SHOOT : IDLE)));
     }
 
 
@@ -115,7 +113,7 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
 
     public void aiStep() {
         if (!this.onGround() && this.getDeltaMovement().y < (double)0.0F) {
-            this.setDeltaMovement(this.getDeltaMovement().multiply((double)1.0F, 0.6, (double)1.0F));
+            this.setDeltaMovement(this.getDeltaMovement().multiply(1.0F, 0.6, 1.0F));
         }
         super.aiStep();
     }
@@ -152,7 +150,7 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
         builder.define(DATA_FLAGS_ID, (byte)0);
     }
     private boolean isCharged() {
-        return ((Byte)this.entityData.get(DATA_FLAGS_ID) & 1) != 0;
+        return (this.entityData.get(DATA_FLAGS_ID) & 1) != 0;
     }
 
 
@@ -241,7 +239,7 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
                         if (this.attackStep > 1) {
                             double d4 = Math.sqrt(Math.sqrt(d0)) * 0.5D;
                             if (!this.CoreEntity.isSilent()) {
-                                this.CoreEntity.level().levelEvent((Player)null, 1018, this.CoreEntity.blockPosition(), 0);
+                                this.CoreEntity.level().levelEvent(null, 1018, this.CoreEntity.blockPosition(), 0);
                             }
 
                             for(int i = 0; i < 1; ++i) {

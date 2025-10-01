@@ -10,7 +10,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
@@ -124,12 +123,8 @@ public class BaseSwordItem extends SwordItem {
 				Set_Mode(itemstack);
 			}
 
-			if (Get_Mode(itemstack)==0) {
-				
-			
-				
-			}
-		}	
+            Get_Mode(itemstack);
+        }
 		   return InteractionResultHolder.pass(player.getItemInHand( p_41130_));
 	}
 

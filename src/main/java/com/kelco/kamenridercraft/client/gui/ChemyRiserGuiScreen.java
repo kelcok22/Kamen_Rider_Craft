@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.world.inventory.ChemyRiserGuiMenu;
-import com.kelco.kamenridercraft.world.inventory.VistampHolderGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;

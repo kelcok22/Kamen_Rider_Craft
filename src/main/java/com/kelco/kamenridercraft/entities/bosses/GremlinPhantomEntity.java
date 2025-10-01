@@ -22,7 +22,7 @@ public class GremlinPhantomEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 40.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.45F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.45F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 90.0D);

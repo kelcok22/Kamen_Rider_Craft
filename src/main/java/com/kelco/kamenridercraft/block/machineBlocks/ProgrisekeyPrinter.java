@@ -13,7 +13,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -22,15 +21,14 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 
 public class ProgrisekeyPrinter extends MachineBlock {
 	
-	  public static List<Item> HIDEN_PROGRISEKEY= new ArrayList<Item>();
-	  public static List<Item> HUMAGEAR_PROGRISEKEY= new ArrayList<Item>();
-	  public static List<Item> ZAIA_PROGRISEKEY= new ArrayList<Item>();
+	  public static List<Item> HIDEN_PROGRISEKEY= new ArrayList<>();
+	  public static List<Item> HUMAGEAR_PROGRISEKEY= new ArrayList<>();
+	  public static List<Item> ZAIA_PROGRISEKEY= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -48,11 +46,7 @@ public class ProgrisekeyPrinter extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getProgrisekeyDrop(int num) {
+    private Item getProgrisekeyDrop(int num) {
  		Random generator = new Random();
  		if (num==1){
  			int rand = generator.nextInt(HIDEN_PROGRISEKEY.size());

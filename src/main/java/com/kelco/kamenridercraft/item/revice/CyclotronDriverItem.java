@@ -24,7 +24,7 @@ public class CyclotronDriverItem  extends RiderDriverItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         Has_basic_belt_info=false;
-        Item formItem = this.get_Form_Item(stack, 1);
+        Item formItem = get_Form_Item(stack, 1);
 
         if(formItem==Revice_Rider_Items.CYCLOTRON_DRIVER_CORE.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.century"));
         else tooltipComponents.add(Component.translatable("kamenridercraft.name.century_break"));

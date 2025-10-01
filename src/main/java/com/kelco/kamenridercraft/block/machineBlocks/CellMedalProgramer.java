@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -21,14 +20,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 
 public class CellMedalProgramer extends MachineBlock {
 	
-    public static List<Item> CELL_MEDAL= new ArrayList<Item>();
-    public static List<Item> SEISHIROGIN= new ArrayList<Item>();
+    public static List<Item> CELL_MEDAL= new ArrayList<>();
+    public static List<Item> SEISHIROGIN= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -46,17 +44,13 @@ public class CellMedalProgramer extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getCellMedalDrop(int num) {
+    private Item getCellMedalDrop() {
  		Random generator = new Random();
  			int rand = generator.nextInt(CELL_MEDAL.size());
  			return CELL_MEDAL.get(rand);
  		}
 
-     private Item getSeishiroginDrop(int num) {
+     private Item getSeishiroginDrop() {
          Random generator = new Random();
              int rand = generator.nextInt(SEISHIROGIN.size());
              return SEISHIROGIN.get(rand);
@@ -67,10 +61,10 @@ public class CellMedalProgramer extends MachineBlock {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == OOO_Rider_Items.CELL_MEDAL.get()) {
-                process(player, level, pos, hand, getCellMedalDrop(0));
+                process(player, level, pos, hand, getCellMedalDrop());
                 return ItemInteractionResult.SUCCESS;
             } else if (player.getItemInHand(hand).getItem() == Items.PACKED_ICE) {
-                process(player, level, pos, hand, getSeishiroginDrop(0));
+                process(player, level, pos, hand, getSeishiroginDrop());
                 return ItemInteractionResult.SUCCESS;
             }
 

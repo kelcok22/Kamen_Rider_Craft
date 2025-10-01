@@ -8,15 +8,11 @@ import com.kelco.kamenridercraft.entities.footSoldiers.GiffJuniorEntity;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
@@ -46,9 +42,10 @@ import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.Objects;
 
 public class ViceEntity extends BaseSummonEntity {
 
@@ -62,7 +59,7 @@ public class ViceEntity extends BaseSummonEntity {
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 4.0D);
 	}
 
 
@@ -97,7 +94,7 @@ public class ViceEntity extends BaseSummonEntity {
 		super.aiStep();
 
 		if ( this.getOwner() instanceof Player owner && owner.getItemBySlot(EquipmentSlot.FEET).getItem()==Revice_Rider_Items.REVICE_DRIVER.get()) {
-			if (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false) != RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)
+			if (!Objects.equals(RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false))
 			|| (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.BARID_REX_VISTAMP.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get())
 			|| (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.VOLCANO_VISTAMP.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get())) {
 	        	switch (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)) {
@@ -217,7 +214,7 @@ public class ViceEntity extends BaseSummonEntity {
             f1 *= 0.25F;
         }
 
-        return new Vec3((double)f, 0.0, (double)f1);
+        return new Vec3(f, 0.0, f1);
     }
 
     @Override
@@ -258,19 +255,4 @@ public class ViceEntity extends BaseSummonEntity {
 		this.setHealth(20.0F);
 	}
 
-	protected SoundEvent getAmbientSound() {
-		return SoundEvents.VILLAGER_AMBIENT;
-	}
-
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
 }

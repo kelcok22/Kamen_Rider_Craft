@@ -7,19 +7,12 @@ import com.kelco.kamenridercraft.entities.footSoldiers.YummyEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -27,21 +20,13 @@ import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.monster.Enemy;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.EventHooks;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -121,7 +106,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 								this.setOrderedToSit(!this.isOrderedToSit());
 								this.jumping = false;
 								this.navigation.stop();
-								this.setTarget((LivingEntity)null);
+								this.setTarget(null);
 								return InteractionResult.SUCCESS_NO_ITEM_USED;
 							} else {
 								return interactionresult;
@@ -147,7 +132,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 		if (this.random.nextInt(3) == 0 && !EventHooks.onAnimalTame(this, player)) {
 			this.tame(player);
 			this.navigation.stop();
-			this.setTarget((LivingEntity)null);
+			this.setTarget(null);
 			this.setOrderedToSit(true);
 			this.level().broadcastEntityEvent(this, (byte)7);
 		} else {
@@ -156,27 +141,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 
 	}
 
-	   protected SoundEvent getAmbientSound() {
-		         return SoundEvents.VILLAGER_AMBIENT;
-		   }
-	
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-		
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	   public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 
@@ -205,6 +170,6 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 			RawAnimation WALK = RawAnimation.begin().thenLoop("animation.ankh.walk");
 			RawAnimation SIT = RawAnimation.begin().thenPlay("animation.ankh.sit");
 			
-			controllers.add(new AnimationController<AnkhEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isInSittingPose()? state.isMoving() ? WALK : IDLE :SIT)));
+			controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isInSittingPose() ? state.isMoving() ? WALK : IDLE : SIT)));
 		}
 }

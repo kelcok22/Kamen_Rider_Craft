@@ -5,9 +5,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.Geats_Rider_Items;
-import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -28,6 +25,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class WDriverItem extends RiderDriverItem {
@@ -45,9 +43,9 @@ public class WDriverItem extends RiderDriverItem {
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
 
-		Item formItem = this.get_Form_Item(stack, 1);
-		Item formItem2 = this.get_Form_Item(stack, 2);
-		if(formItem==W_Rider_Items.XTREME_MEMORY.get()||formItem==W_Rider_Items.XTREME_GOLD_MEMORY.get()||formItem==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+		Item formItem = get_Form_Item(stack, 1);
+		Item formItem2 = get_Form_Item(stack, 2);
+		if(formItem==W_Rider_Items.XTREME_MEMORY.get()||formItem==W_Rider_Items.XTREME_GOLD_MEMORY.get()||formItem==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem + ".form"));
 		else{
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 			+ Component.translatable(formItem.toString() + ".form").getString()
@@ -73,9 +71,7 @@ public class WDriverItem extends RiderDriverItem {
     {
 		if (get_Form_Item(belt, 1)==W_Rider_Items.XTREME_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_GOLD_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) {
 			if (get_Form_Item(belt, 2)!=W_Rider_Items.JOKER_MEMORY.get()) {
-            	Consumer<CompoundTag> data = form -> {
-					form.putString("slot_tex1", (W_Rider_Items.CYCLONE_MEMORY.get()).toString());
-            	};
+            	Consumer<CompoundTag> data = form -> form.putString("slot_tex1", (W_Rider_Items.CYCLONE_MEMORY.get()).toString());
 
             	CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 			}
@@ -100,16 +96,16 @@ public class WDriverItem extends RiderDriverItem {
 			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD){
-			if (get_Form_Item(itemstack,2).getFormName(fly)=="_skull") return riderName+get_Form_Item(itemstack,1).getFormName(fly)+"_skull";
+			if (Objects.equals(get_Form_Item(itemstack, 2).getFormName(fly), "_skull")) return riderName+get_Form_Item(itemstack,1).getFormName(fly)+"_skull";
 			else return riderName+get_Form_Item(itemstack,1).getFormName(fly);
 		}
 			
 		
 		else {
-			if (get_Form_Item(itemstack,1).getFormName(fly)=="_fang") return riderName+"_fang"+get_Form_Item(itemstack,2).getFormName(fly);
-			else if (get_Form_Item(itemstack,1).getFormName(fly)=="_cyclone_xtreme") return riderName+get_Form_Item(itemstack,2).getFormName(fly)+"_xtreme";
-			else if (get_Form_Item(itemstack,1).getFormName(fly)=="_cyclone_xtreme_gold") return riderName+get_Form_Item(itemstack,2).getFormName(fly)+"_xtreme_gold";
-			else if (get_Form_Item(itemstack,1).getFormName(fly)=="_cyclone_xtreme_accel") return riderName+"_accel_xtreme";
+			if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_fang")) return riderName+"_fang"+get_Form_Item(itemstack,2).getFormName(fly);
+			else if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_cyclone_xtreme")) return riderName+get_Form_Item(itemstack,2).getFormName(fly)+"_xtreme";
+			else if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_cyclone_xtreme_gold")) return riderName+get_Form_Item(itemstack,2).getFormName(fly)+"_xtreme_gold";
+			else if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_cyclone_xtreme_accel")) return riderName+"_accel_xtreme";
 			else return riderName+get_Form_Item(itemstack,2).getFormName(fly);
 		}
 	}
@@ -127,20 +123,20 @@ public class WDriverItem extends RiderDriverItem {
 
 		switch (currentSlot) {
 		case HEAD ->{ 
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="rightLeg") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "body")) return true;
+			if (Objects.equals(part, "rightArm")) return true;
+			if (Objects.equals(part, "rightLeg")) return true;
 			
 		}
 		case CHEST -> {
-			if (part =="body") return true;
+			if (Objects.equals(part, "body")) return true;
 
 		}
 		case LEGS -> {
-			if (part =="head") return true;
-			if (part =="leftLeg") return true;
-			if (part =="leftArm") return true;
+			if (Objects.equals(part, "head")) return true;
+			if (Objects.equals(part, "leftLeg")) return true;
+			if (Objects.equals(part, "leftArm")) return true;
 		
 		}
 		default -> {}

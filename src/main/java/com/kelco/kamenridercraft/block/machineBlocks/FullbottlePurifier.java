@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.block.machineBlocks;
 
 
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -16,7 +15,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 import java.util.ArrayList;
@@ -26,8 +24,8 @@ import java.util.Random;
 
 public class FullbottlePurifier extends MachineBlock {
 
-	  public static List<Item> FULLBOTTLE_PURIFIER= new ArrayList<Item>();
-	  public static List<Item> BANGLE_REFINED= new ArrayList<Item>();
+	  public static List<Item> FULLBOTTLE_PURIFIER= new ArrayList<>();
+	  public static List<Item> BANGLE_REFINED= new ArrayList<>();
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -45,11 +43,7 @@ public class FullbottlePurifier extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getBottleDrop(int num) {
+    private Item getBottleDrop(int num) {
  		Random generator = new Random();
  		if (num==1){
  			int rand = generator.nextInt(FULLBOTTLE_PURIFIER.size());

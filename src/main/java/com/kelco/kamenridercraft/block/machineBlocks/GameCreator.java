@@ -20,16 +20,15 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 
 public class GameCreator extends MachineBlock {
 	
-	  public static List<Item> BLANK_GASHAT= new ArrayList<Item>();
-	  public static List<Item> BLANK_DOUBLE_GASHAT= new ArrayList<Item>();
-	  public static List<Item> BLANK_MAXIMUM_GASHAT= new ArrayList<Item>();
-	  public static List<Item> BLANK_HYPER_GASHAT= new ArrayList<Item>();
+	  public static List<Item> BLANK_GASHAT= new ArrayList<>();
+	  public static List<Item> BLANK_DOUBLE_GASHAT= new ArrayList<>();
+	  public static List<Item> BLANK_MAXIMUM_GASHAT= new ArrayList<>();
+	  public static List<Item> BLANK_HYPER_GASHAT= new ArrayList<>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -47,16 +46,10 @@ public class GameCreator extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
-        return PushReaction.PUSH_ONLY;
-     }
-
-     private Item getgashatDrop(int num, Player player) {
+    private Item getgashatDrop(int num, Player player) {
  		Random generator = new Random();
 
-		 List<Item> BLANK_GASHAT_PLUS= new ArrayList<Item>();
-		 BLANK_GASHAT_PLUS.clear();
-		 BLANK_GASHAT_PLUS.addAll (BLANK_GASHAT);
+        List<Item> BLANK_GASHAT_PLUS = new ArrayList<>(BLANK_GASHAT);
 
 		 if (player.getInventory().countItem(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get())!=0){
 			 for (int i = 0; i < 20; i++) {

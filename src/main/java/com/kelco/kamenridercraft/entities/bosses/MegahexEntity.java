@@ -4,9 +4,6 @@ import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.item.Gaim_Rider_Items;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.Saber_Rider_Items;
-import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -33,7 +30,7 @@ import javax.annotation.Nullable;
 public class MegahexEntity extends BaseHenchmenEntity {
 
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(MegahexEntity.class, EntityDataSerializers.BYTE);
-    private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.PROGRESS));
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.PROGRESS);
 
 
 
@@ -53,11 +50,11 @@ public class MegahexEntity extends BaseHenchmenEntity {
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
             if (RiderDriverItem.get_Form_Item(belt,1)==Gaim_Rider_Items.MEGAHEX_KIWAMI.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.YELLOW) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.BLUE);
-                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.megahex_kiwami").withStyle(ChatFormatting.GOLD));;
+                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.megahex_kiwami").withStyle(ChatFormatting.GOLD));
             }
             if (RiderDriverItem.get_Form_Item(belt,1)==Drive_Rider_Items.MEGAHEX_VIRAL_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.YELLOW) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.YELLOW);
-                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.megahex_zzz").withStyle(ChatFormatting.GOLD));;
+                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.megahex_zzz").withStyle(ChatFormatting.GOLD));
             }
         }
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
@@ -138,7 +135,7 @@ public class MegahexEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 100.0D);
