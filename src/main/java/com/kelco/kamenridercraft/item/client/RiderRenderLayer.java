@@ -45,7 +45,7 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
 
         if (renderType != null) {
             getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderType,
-                    bufferSource.getBuffer(renderType), partialTick, 15728640, packedOverlay,
+                    bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
         }
     }
