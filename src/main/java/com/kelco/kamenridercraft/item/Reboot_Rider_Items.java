@@ -321,7 +321,7 @@ public class Reboot_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+			}.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
