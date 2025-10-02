@@ -1767,6 +1767,7 @@
   "item.kamenridercraft.dango": "Dango",
   "item.kamenridercraft.corn_snack": "Corn Snack",
   "item.kamenridercraft.gift": "Gift",
+  "item.kamenridercraft.gashapon_capsule": "Gashapon Capsule",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
 
@@ -8907,6 +8908,8 @@
   "block.kamenridercraft.dark_treat": "Dark Treat Block",
   "block.kamenridercraft.candy_shop": "Candy Shop Counter",
   "block.kamenridercraft.sword_plinth": "Sword Plinth",
+  "block.kamenridercraft.gashapon_machine": "Gashapon Machine",
+  "block.kamenridercraft.capsem_dropper": "Capsem Dropper",
 
 "block.kamenridercraft.taboo_boss_block": "Taboo Dopant Boss Block",
 "block.kamenridercraft.terror_boss_block": "Terror Dopant Boss Block",
