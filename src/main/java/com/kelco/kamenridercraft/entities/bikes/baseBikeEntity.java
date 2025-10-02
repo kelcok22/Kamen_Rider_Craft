@@ -242,21 +242,16 @@ protected SoundEvent getDeathSound() {
 	public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
 
 		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
-
 			EntityModelData entityData = state.getData(DataTickets.ENTITY_MODEL_DATA);
 			Entity entityData2 = state.getData(DataTickets.ENTITY);
-
 			float front_fork=0;
 			float wheel=0;
-
 			if (this.getControllingPassenger() != null) {
 				if (this.getControllingPassenger().xxa < 0) front_fork = -0.25f;
 				if (this.getControllingPassenger().xxa > 0) front_fork = 0.25f;
 				if (this.getControllingPassenger().zza > 0) wheel=- 0.1f;
 				if (this.getControllingPassenger().zza < 0) wheel= 0.05f;
-
 			}
-
 			EntityModelData newEntityData = new EntityModelData(false,false,entityData.netHeadYaw()+wheel,front_fork);
 			state.setData(DataTickets.ENTITY_MODEL_DATA,newEntityData);
 

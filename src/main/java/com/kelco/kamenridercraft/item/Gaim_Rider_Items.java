@@ -1332,8 +1332,7 @@ public class Gaim_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }
-                    .has_basic_model());
+            }.has_basic_model());
 
 
     public static final DeferredItem<Item> MEGAHEX_KIWAMI = ITEMS.register("megahex_kiwami",
@@ -1356,8 +1355,7 @@ public class Gaim_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }
-                    .addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).has_basic_model().model_has_different_name("megahex_core").AddToList(RiderTabs.GAIM_TAB_ITEM));
+            }.addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).has_basic_model().model_has_different_name("megahex_core").AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",

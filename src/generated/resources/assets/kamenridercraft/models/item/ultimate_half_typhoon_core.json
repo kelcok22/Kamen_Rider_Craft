@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/ultimate_half_typhoon_core"
+  }
+}

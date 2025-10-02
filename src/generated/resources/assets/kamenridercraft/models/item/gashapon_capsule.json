@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/ulimate_half_typhoon_core"
+    "layer0": "kamenridercraft:item/gashapon_capsule"
   }
 }

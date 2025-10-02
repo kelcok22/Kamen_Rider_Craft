@@ -388,7 +388,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.ChangeBeltModel("geo/lv_1_belt.geo.json"));
+			}.ChangeBeltModel("geo/lv_1_belt.geo.json").has_basic_model().model_has_different_name("rider_ticket_sword"));
 
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",

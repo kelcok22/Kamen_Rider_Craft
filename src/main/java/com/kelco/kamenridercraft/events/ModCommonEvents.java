@@ -399,6 +399,9 @@ public class ModCommonEvents {
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
 					new ItemStack(Rider_Blocks.HELHEIM_SAPLING.get(), 1), 10, 8, 0.02F));
+            trades.add((trader, rand) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 5),
+                    new ItemStack(Rider_Blocks.GASHAPON_MACHINE.get(), 1), 10, 8, 0.02F));
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
 					new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
