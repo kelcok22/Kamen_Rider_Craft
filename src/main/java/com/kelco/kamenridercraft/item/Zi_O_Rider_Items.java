@@ -1281,7 +1281,28 @@ public class Zi_O_Rider_Items {
                             .IsGlowing().IsBeltGlowing().addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_RIDEWATCH = ITEMS.register("zero_one_ridewatch",
-			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:hiden_zero_one_driver", "kamenridercraft:rising_hopper_progrisekey").addSummonWeapon("kamenridercraft:attache_calibur").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:hiden_zero_one_driver", "kamenridercraft:rising_hopper_progrisekey")
+                    .addSummonWeapon("kamenridercraft:attache_calibur")
+                    .addAltWeapon("kamenridercraft:breaking_mammoth_progrisekey", "minecraft:air")
+                    .addAltWeapon("kamenridercraft:shining_assault_hopper_progrisekey", "kamenridercraft:authorise_buster")
+                    .addAltWeapon("kamenridercraft:metalcluster_hopper_progrisekey", "kamenridercraft:progrise_hopper_blade")
+                    .addAltBelt("kamenridercraft:zero_two_progrisekey", "kamenridercraft:hiden_zero_two_driver")
+                    .addAltWeapon("kamenridercraft:zero_two_progrisekey", "kamenridercraft:progrise_hopper_blade_naginata")
+                    .addAltForm("kamenridercraft:crushing_buffalo_progrisekey","kamenridercraft:crushing_buffalo_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:storming_penguin_progrisekey","kamenridercraft:storming_penguin_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:splashing_whale_progrisekey","kamenridercraft:splashing_whale_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:dynamaiting_lion_progrisekey","kamenridercraft:dynamaiting_lion_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:scouting_panda_progrisekey","kamenridercraft:scouting_panda_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:invading_horseshoe_crab_progrisekey","kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:shooting_wolf_progrisekey","kamenridercraft:shooting_wolf_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:punching_kong_progrisekey","kamenridercraft:punching_kong_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:rushing_cheetah_progrisekey","kamenridercraft:rushing_cheetah_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:lightning_hornet_progrisekey","kamenridercraft:lightning_hornet_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:fighting_jackal_progrisekey","kamenridercraft:fighting_jackal_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:sting_scorpion_progrisekey","kamenridercraft:sting_scorpion_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:flying_falcon_progrisekey","kamenridercraft:flying_falcon_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:burning_falcon_progrisekey","kamenridercraft:burning_falcon_progrisekey_zero_one")
+                    .addAltForm("kamenridercraft:amazing_caucasus_progrisekey","kamenridercraft:amazing_caucasus_progrisekey_zero_one").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SABER_RIDEWATCH = ITEMS.register("saber_ridewatch",
 			() -> new SaberRidewatchItem(new Item.Properties(), "kamenridercraft:seiken_swordriver_saber", "kamenridercraft:brave_dragon_wonder_ride_book",0,"_decade_saber","zi_o","ziku_driver_zi_o_belt_decade_saber",
