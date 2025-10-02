@@ -1,0 +1,110 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+  "render_type": "minecraft:cutout",
+	"textures": {
+      "particle": "kamenridercraft:block/gashapon_machine_3",
+		"0": "kamenridercraft:block/gashapon_machine",
+		"1": "kamenridercraft:block/gashapon_machine_2",
+		"2": "kamenridercraft:block/gashapon_machine_3",
+		"3": "kamenridercraft:block/gashapon_machine_4"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 1],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#2"},
+				"east": {"uv": [0, 0, 15, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#1"},
+				"west": {"uv": [1, 0, 16, 8], "texture": "#1"},
+				"up": {"uv": [0, 1, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 15], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 0, 2],
+			"to": [16, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 8, 14, 16], "texture": "#1"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#1"},
+				"west": {"uv": [2, 8, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 14], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 14], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 2, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 14, 16, 16], "texture": "#1"},
+				"east": {"uv": [14, 14, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"west": {"uv": [0, 14, 2, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"down": {"uv": [0, 14, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [1, 8, 0],
+			"to": [15, 16, 1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [1, 0, 15, 8], "texture": "#3"},
+				"east": {"uv": [0, 0, 1, 8], "texture": "#1"},
+				"south": {"uv": [1, 8, 15, 16], "texture": "#3"},
+				"west": {"uv": [0, 0, 1, 8], "texture": "#1"},
+				"up": {"uv": [0, 0, 14, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 14, 1], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.5, 4.5, 1],
+			"to": [9.5, 5.5, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, -6, 8]},
+			"faces": {
+				"north": {"uv": [11, 15, 14, 16], "texture": "#2"},
+				"east": {"uv": [10, 15, 11, 16], "texture": "#2"},
+				"south": {"uv": [11, 15, 14, 16], "texture": "#2"},
+				"west": {"uv": [14, 15, 15, 16], "texture": "#2"},
+				"up": {"uv": [11, 15, 14, 16], "texture": "#2"},
+				"down": {"uv": [11, 15, 14, 16], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

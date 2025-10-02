@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "capsem_dropper",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:code_capsem"
+    }, "C": {
+      "item": "kamenridercraft:gashapon_machine"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:capsem_dropper"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/capsem_dropper" },
+    "facing=south": { "model": "kamenridercraft:block/capsem_dropper", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/capsem_dropper", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/capsem_dropper", "y": 90 }
+  }
+ }

@@ -48,8 +48,12 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> RED_ICHIGO_CHAIR = registerBlock("red_ichigo_chair",
 			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> GASHAPON_MACHINE = registerBlock("gashapon_machine",
+            () -> new GashaponMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final DeferredBlock<Block> SHOCKER_MONITOR = registerBlock("shocker_monitor",
+
+    public static final DeferredBlock<Block> SHOCKER_MONITOR = registerBlock("shocker_monitor",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
@@ -259,8 +263,12 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block>  DARK_TREAT_GLASS = registerBlock("dark_treat",
 			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0,0),DyeColor.BROWN).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> CAPSEM_DROPPER = registerBlock("capsem_dropper",
+            () -> new CapsemDropper(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",
+
+    public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 

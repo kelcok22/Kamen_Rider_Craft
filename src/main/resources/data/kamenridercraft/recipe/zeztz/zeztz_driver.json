@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zeztz",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:code_capsem"
+	},
+	"M": {
+	  "item": "kamenridercraft:impact_capsem"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:zeztz_driver"
+  }	
+}

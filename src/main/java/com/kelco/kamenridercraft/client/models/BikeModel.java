@@ -41,7 +41,6 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
         EntityModelData entityData = state.getData(DataTickets.ENTITY_MODEL_DATA);
         baseBikeEntity entityData2 = (baseBikeEntity) state.getData(DataTickets.ENTITY);
 
-
         baseBikeEntity  animatable= state.getAnimatable();
         if (front_fork != null) {
             front_fork.setRotY(entityData.headPitch());
