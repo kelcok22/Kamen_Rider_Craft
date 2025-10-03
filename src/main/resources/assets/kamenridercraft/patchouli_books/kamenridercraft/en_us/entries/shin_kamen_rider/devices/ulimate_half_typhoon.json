@@ -1,6 +1,6 @@
 {
   "name": "Ultimate Half Typhoon",
-  "icon": "kamenridercraft:ulimate_half_typhoon",
+  "icon": "kamenridercraft:ultimate_half_typhoon",
   "category": "kamenridercraft:shin_kamen_rider/devices",
   "sortnum": 2,
   "pages": [
@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "title": " ",
-      "recipe": "kamenridercraft:shin_kamen_rider/ulimate_half_typhoon"
+      "recipe": "kamenridercraft:shin_kamen_rider/ultimate_half_typhoon"
     }
   ]
 }

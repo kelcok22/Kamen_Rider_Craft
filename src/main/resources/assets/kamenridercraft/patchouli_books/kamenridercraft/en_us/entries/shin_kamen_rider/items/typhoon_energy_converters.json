@@ -43,14 +43,14 @@
 		},
       {
         "type": "patchouli:text",
-        "anchor": "ulimate_half_typhoon_core",
-        "title": "Typhoon Energy Converter (No. 0)",
-        "text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 0's $(l:shin_kamen_rider/devices/ulimate_half_typhoon)Ultimate Half Typhoon$(/l)"
+        "anchor": "ultimate_half_typhoon_core",
+        "title": "Ultimate Half Typhoon Energy Converter",
+        "text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 0's $(l:shin_kamen_rider/devices/ultimate_half_typhoon)Ultimate Half Typhoon$(/l)"
       },
       {
         "type": "patchouli:spotlight",
         "link_recipe": true,
-        "item": "kamenridercraft:ulimate_half_typhoon_core",
+        "item": "kamenridercraft:ultimate_half_typhoon_core",
         "title": " ",
         "text": "Item is currently unobtainable"
       }

@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zeztz/main",
     "name": "Zeztz Transformation Devices",
-    "description": "The transformation devices used by the Zeztz Riders. These can be repaired in an anvil using a mythical substance known as \"kuzu\"",
+    "description": "The transformation devices used by the Zeztz Riders. These can be repaired in an anvil using $(l:zeztz/items/code_capsem)CODE Capsems$(/l).",
     "icon": "kamenridercraft:zeztz_driver",
     "sortnum": 1
 }

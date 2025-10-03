@@ -1,0 +1,17 @@
+{
+  "name": "Taboo Dopant",
+  "icon": "kamenridercraft:w_logo",
+  "category": "kamenridercraft:w/mobs",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:taboo_dopant",
+      "text": "Appears in:$(li)Kamen Rider W (2009, TV show)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Health: 110$(br2)Summoned from a $(l:misc/blocks/boss_blocks#taboo_boss_block)Taboo Dopant Boss Block$(/l)$(br2)Special moves:$(li)Flies and shoots fireballs$(br2)Drops$(li)1 $(l:w/items/dopant_memories#taboo_memory)Taboo Memory$(/l)$(li)2-4 $(l:w/items/unrefined_memory_g)Unrefined Memories (Gold)$(/l) (33.3%)$(li)2-4 $(l:w/items/unrefined_memory_s)Unrefined Memories (Silver)$(/l) (33.3%)$(li)1 $(l:w/items/gaiamemory)Gaia Memory Shard$(/l) (33.3%)$(li)3-6 $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)"
+    }
+  ]
+}

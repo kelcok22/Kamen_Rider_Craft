@@ -2,7 +2,7 @@
 	"name": "Weather Dopant",
 	"icon": "kamenridercraft:w_logo",
 	"category": "kamenridercraft:w/mobs",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:entity",

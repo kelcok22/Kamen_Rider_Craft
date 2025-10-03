@@ -1,6 +1,8 @@
 {
     "values": [
       "kamenridercraft:gaoh_boss_block",
+      "kamenridercraft:taboo_boss_block",
+      "kamenridercraft:terror_boss_block",
       "kamenridercraft:poseidon_boss_block",
       "kamenridercraft:core_boss_block",
       "kamenridercraft:powered_up_core_boss_block",
@@ -12,6 +14,7 @@
       "kamenridercraft:redyue_boss_block",
       "kamenridercraft:demushu_boss_block",
       "kamenridercraft:lord_baron_boss_block",
+      "kamenridercraft:megahex_boss_block",
       "kamenridercraft:cronus_boss_block",
       "kamenridercraft:night_rogue_boss_block",
       "kamenridercraft:hokuto_trio_boss_block",

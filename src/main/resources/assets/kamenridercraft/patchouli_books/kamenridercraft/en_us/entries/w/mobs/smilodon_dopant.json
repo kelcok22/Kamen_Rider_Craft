@@ -2,7 +2,7 @@
 	"name": "Smilodon Dopant",
 	"icon": "kamenridercraft:w_logo",
 	"category": "kamenridercraft:w/mobs",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:entity",

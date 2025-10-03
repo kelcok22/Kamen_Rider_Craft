@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:w/gaiamemory",
-			"text": "$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l)$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l)$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+			"text": "$(li)$(l:w/mobs/taboo_dopant)Taboo Dopant$(/l)$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l)$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l)$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
 		}
 	]
 }

@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:viral_core_bat",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:gaim/mobs/megahex)Megahex$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -135,7 +135,7 @@
       {
         "type": "patchouli:text",
         "anchor": "megahex_viral_core",
-        "title": "???",
+        "title": "Megahex Viral Core",
         "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to access Megahex's $(l:gaim/riders/megahex#zzz)ZZZ Megahex$(/l) form"
       },
       {
@@ -143,7 +143,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:megahex_viral_core",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gaim/mobs/megahex)Megahex$(/l)"
       }
 	]
 }

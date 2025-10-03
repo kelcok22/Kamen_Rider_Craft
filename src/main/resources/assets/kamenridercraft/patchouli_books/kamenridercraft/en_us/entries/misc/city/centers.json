@@ -70,6 +70,20 @@
 			],
 			"title": " "
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "sabbath",
+        "title": "Sabbath Grounds",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Mobs:$(li)$(l:wizard/mobs/ghouls)Ghouls$(/l)$(br2)Cityscape: Urban"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/sabbath.png"
+        ],
+        "title": " "
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "yggdrasil_tower",

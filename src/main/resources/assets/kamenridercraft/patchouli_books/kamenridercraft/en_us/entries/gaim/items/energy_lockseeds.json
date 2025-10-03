@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dragon_fruits_energy_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)"
+			"text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)$(li)$(l:gaim/mobs/megahex)Megahex$(/l)"
 		},
 		{
 			"type": "patchouli:text",

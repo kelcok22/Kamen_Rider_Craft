@@ -1,0 +1,21 @@
+{
+  "name": "Megahex",
+  "icon": "kamenridercraft:gaim_logo",
+  "category": "kamenridercraft:gaim/mobs",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:megahex",
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Health: 100$(br2)Summoned from a $(l:misc/blocks/boss_blocks#megahex_boss_block)Megahex Boss Block$(/l)$(br2)Special moves:$(li)Uses his $(l:gaim/riders/megahex#kiwami)Kiwami Lockseed$(/l) form at under 80 health$(li)Uses his $(l:gaim/riders/megahex#zzz)ZZZ Megahex$(/l) form at under 30 health$(br2)Drops on next page"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Drops$(li)1 $(l:gaim/items/megahex_kiwami)Megahex Core$(/l)$(li)1 $(l:drive/items/roidmude_cores#cyberoid_zzz_core)Cyberoid Core ZZZ$(/l)$(li)4-6 $(l:drive/items/viral_cores#viral_core_bat)Bat Viral Cores$(/l)$(li)4-6 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:drive/items/viral_cores#megahex_viral_core)Megahex Viral Core$(/l) (25%)$(li)1 $(l:gaim/items/energy_lockseeds#dragon_fruits_energy_lockseed)Dragon Fruits Energy Lockseed$(/l) (25%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (25%)$(li)1 $(l:drive/items/viral_cores#viral_core_bat)Bat Viral Core$(/l) (25%)$(li)1 $(l:gaim/items/lockseeds#drive_lockseed)Drive Lockseed$(/l), 1 $(l:drive/items/shift_cars#fruitsshift)Shift Fruits$(/l) (if fought as $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) or $(l:drive/riders/drive)Kamen Rider Drive$(/l))"
+    }
+  ]
+}

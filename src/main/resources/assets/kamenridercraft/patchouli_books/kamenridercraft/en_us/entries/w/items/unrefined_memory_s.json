@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:w/unrefined_memory_s",
-			"text": "Drops from:$(li)$(l:w/mobs/commander_dopant)Commander Dopant$(/l)$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l)$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l)$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l)"
+			"text": "Drops from:$(li)$(l:w/mobs/commander_dopant)Commander Dopant$(/l)$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l)$(li)$(l:w/mobs/taboo_dopant)Taboo Dopant$(/l)$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l)$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l)"
 		}
 	]
 }

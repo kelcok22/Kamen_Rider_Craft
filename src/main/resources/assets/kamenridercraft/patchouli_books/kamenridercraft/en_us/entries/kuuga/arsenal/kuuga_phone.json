@@ -1,8 +1,8 @@
 {
 	"name": "Kuuga's Phone",
 	"icon": "kamenridercraft:kuuga_phone",
-	"category": "kamenridercraft:kuuga/items",
-	"sortnum": 3,
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_phone",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
 		}
 	]
 }

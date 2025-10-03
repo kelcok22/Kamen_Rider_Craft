@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Uzai",
-			"text": "Appears in:$(li)Kamen Rider Wizard stageshow$(br2)Transforms with the $(l:wizard/devices/uzai_belt)???$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard stageshow$(br2)Transforms with the $(l:wizard/devices/uzai_belt)Uzai Belt$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		}
 	]
 }

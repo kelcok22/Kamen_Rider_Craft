@@ -11,12 +11,12 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:gaim/items/megahex_kiwami)???$(/l)"
+			"text": "Accessed with the $(l:gaim/items/megahex_kiwami)Megahex Core$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Megahex",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:gaim/devices/megahex)???$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Water Breathing$(li)Haste II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:gaim/devices/megahex)Megahex$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Water Breathing$(li)Haste II$(li)Strength III"
 		},
       {
         "type": "patchouli:entity",
@@ -25,12 +25,12 @@
         "scale": -1,
         "offset": 0.1,
         "name": "Megahex w/ Kiwami Lockseed",
-        "text": "Accessed with the $(l:gaim/items/megahex_kiwami)???$(/l) while having the $(l:gaim/items/lockseeds#kiwami_lockseed)Kiwami Lockseed$(/l) in your inventory"
+        "text": "Accessed with the $(l:gaim/items/megahex_kiwami)Megahex Core$(/l) while having the $(l:gaim/items/lockseeds#kiwami_lockseed)Kiwami Lockseed$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
         "title": "Megahex",
-        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:gaim/devices/megahex)???$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Fire Resistance$(li)Strength III"
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:gaim/devices/megahex)Megahex$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Fire Resistance$(li)Strength III"
       },
       {
         "type": "patchouli:entity",
@@ -39,12 +39,12 @@
         "scale": -1,
         "offset": 0.1,
         "name": "ZZZ Megahex",
-        "text": "Accessed with the $(l:drive/items/viral_cores#megahex_viral_core)???$(/l)"
+        "text": "Accessed with the $(l:drive/items/viral_cores#megahex_viral_core)Megahex Viral Core$(/l)"
       },
       {
         "type": "patchouli:text",
         "title": "Megahex",
-        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:gaim/devices/megahex)???$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Fire Resistance$(li)Strength III$(li)Flying"
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:gaim/devices/megahex)Megahex$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Fire Resistance$(li)Strength III$(li)Flying"
       }
 	]
 }

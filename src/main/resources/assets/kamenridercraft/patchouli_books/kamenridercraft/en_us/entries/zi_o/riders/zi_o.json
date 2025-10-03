@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(li)Flying III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Can summon the main Heisei Riders by shift-clicking Ridewatches (forms can be chosen through your off-hand)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Can summon the main Heisei Riders by shift-clicking Ridewatches (forms can be chosen through your off-hand)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Can summon Showa and Heisei Riders by shift-clicking Ridewatches (forms can be chosen through your off-hand)$(br2)Status Effects:$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Regeneration IV$(li)Haste VII$(li)Saturation$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Can summon Showa and Heisei Riders by shift-clicking Ridewatches (forms can be chosen through your off-hand)$(br2)Status Effects:$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Haste VII$(li)Saturation$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",

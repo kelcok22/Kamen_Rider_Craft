@@ -1,0 +1,19 @@
+{
+	"name": "Bloody Rose",
+	"icon": "kamenridercraft:bloody_rose",
+	"category": "kamenridercraft:kiva/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bloody_rose",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+		}
+	]
+}
