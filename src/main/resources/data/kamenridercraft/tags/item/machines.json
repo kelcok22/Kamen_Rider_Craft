@@ -1,6 +1,7 @@
 {
   "values": [
-	"kamenridercraft:amazon_cell_extractor",
+	"kamenridercraft:gashapon_machine",
+    "kamenridercraft:amazon_cell_extractor",
 	"kamenridercraft:amazon_cell_mutator",
 	"kamenridercraft:kaijin_stone_generator",
 	"kamenridercraft:g_chip_programer",
@@ -16,6 +17,7 @@
 	"kamenridercraft:hiden_3d_printer",
 	"kamenridercraft:zaia_3d_printer",
 	"kamenridercraft:sword_of_logos_book_analyzer",
-	"kamenridercraft:vistamp_bar"
+	"kamenridercraft:vistamp_bar",
+    "kamenridercraft:capsem_dropper"
   ]
 }

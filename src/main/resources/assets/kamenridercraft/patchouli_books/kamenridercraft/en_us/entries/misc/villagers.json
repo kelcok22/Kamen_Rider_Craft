@@ -99,7 +99,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Trades:$(li)$(l:misc/blocks/decor_blocks#ginga_meteor)Ginga Meteor Rock$(/l) for 3 emeralds$(li)$(l:misc/blocks/helheim_sapling)Helheim Sapling$(/l) for 2 emeralds$(li)$(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l) for 2 emeralds"
+			"text": "Trades:$(li)$(l:misc/blocks/decor_blocks#ginga_meteor)Ginga Meteor Rock$(/l) for 3 emeralds$(li)$(l:misc/blocks/helheim_sapling)Helheim Sapling$(/l) for 2 emeralds$(li)$(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l) for 2 emeralds$(li)$(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l) for 5 emeralds"
 		}
 	]
 }

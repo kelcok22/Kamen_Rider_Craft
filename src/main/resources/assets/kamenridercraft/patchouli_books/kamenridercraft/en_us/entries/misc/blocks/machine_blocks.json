@@ -8,10 +8,27 @@
 			"type": "patchouli:text",
 			"text": "Machine blocks can be right-clicked with various materials to obtain different Rider items. These blocks play a key part in obtaining certain items used to craft transformation devices and/or access forms."
 		},
-		{
-			"type": "patchouli:text",
-			"text": "Table of contents:$(li)$(l:misc/blocks/machine_blocks#amazon_cell_extractor)Amazon Cell Extractor$(/l)$(li)$(l:misc/blocks/machine_blocks#amazon_cell_mutator)Amazon Cell Mutator$(/l)$(li)$(l:misc/blocks/machine_blocks#kaijin_stone_generator)Kaijin Stone Generator$(/l)$(li)$(l:misc/blocks/machine_blocks#g_chip_programer)G-Chip Programmer$(/l)$(li)$(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)$(li)$(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)$(li)$(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)$(li)$(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)$(li)$(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(li)$(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)$(li)$(l:misc/blocks/machine_blocks#pandora_box)Pandora Box$(/l)$(li)$(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(li)$(l:misc/blocks/machine_blocks#fullbottle_solidifier)Fullbottle Solidifier$(/l)$(li)$(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)$(li)$(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)$(li)$(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(li)$(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
-		},
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/machine_blocks.png"
+        ],
+        "title": " "
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gashapon_machine",
+        "title": "Gashapon Machine",
+        "text": "Use emeralds on this block to obtain $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gashapon_machine",
+        "title": " ",
+        "text": "Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "amazon_cell_extractor",
@@ -325,6 +342,20 @@
 		{
 			"type": "patchouli:text",
 			"text": "Drops with a $(l:revice/items/vistamps#proto_chameleon_vistamp)Chameleon Proto Vistamp$(/l):$(li)$(l:revice/items/vistamps#chameleon_vistamp)Chameleon Vistamp$(/l)$(br2)Drops with a $(l:revice/items/vistamps#daiouika_vistamp)Daiouika Proto Vistamp$(/l):$(li)$(l:revice/items/vistamps#kraken_vistamp)Kraken Vistamp$(/l)"
-		}
-	]
+		},
+      {
+        "type": "patchouli:empty"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "capsem_dropper",
+        "title": "Capsem Dropper",
+        "text": "Use $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on this block to obtain $(l:zeztz/items/capsems)Capsems$(/l)$(br2)Drops:$(li)$(l:zeztz/items/capsems#impact_capsem)Impact Capsem$(/l) (22.2%)$(li)$(l:zeztz/items/capsems#transform_capsem)Transform Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#wing_capsem)Wing Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#stream_capsem)Stream Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#recovery_capsem)Recovery Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#wonder_capsem)Wonder Capsem$(/l) (15.6%)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zeztz/capsem_dropper"
+      }
+    ]
 }

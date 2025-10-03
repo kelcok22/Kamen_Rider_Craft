@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:yurusen_gamma_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sister_gamma_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		}
 	]
 }

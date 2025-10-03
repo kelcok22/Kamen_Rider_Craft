@@ -6,14 +6,18 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Gives random Christmas items when opened"
+			"text": "Gives random Christmas items when opened$(br2)Drops:$(li)Coal (14.3%)$(li)Cake (4.8%)$(li)$(l:fourze/items/astroswitches#rocket_switch_christmas_ver)Rocket Switch (Christmas Ver.)$(/l) (4.8%)$(li)$(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l) (4.8%)$(li)$(l:gaim/items/lockseeds#christmas_lockseed)Christmas Lockseed$(/l) (4.8%)$(li)$(l:drive/items/shift_cars#holy_christmas)Shift Holy Christmas$(/l) (4.8%)$(li)$(l:ghost/items/ghost_eyecons#santa_ghost_eyecon)Santa Ghost Eyecon$(/l) (4.8%)$(li)$(l:ex_aid/arsenal/energy_items#christmas_energy_item)Christmas Energy Item$(/l) (4.8%)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:gift",
 			"title": " ",
-			"text": "Obtained every 4.3 minutes with the Merry Christmas effect"
-		}
+			"text": "$(li)$(l:build/items/fullbottles#santa_claus_full_bottle)Santa Claus Fullbottle$(/l) (4.8%)$(li)$(l:build/items/fullbottles#cake_full_bottle)Cake Fullbottle$(/l) (4.8%)$(li)$(l:zi_o/items/ridewatches#christmas_ridewatch)Zi-O Ridewatch (Christmas ver.)$(/l) (4.8%)$(li)$(l:zero_one/items/progrisekeys#merry_hopper_progrisekey)Christmas Rising Hopper Progrisekey$(/l) (4.8%)$(li)$(l:saber/items/wonder_ride_books#happy_brave_dragon_wonder_ride_book)Happy Brave Dragon Wonder Ride Book$(/l) (4.8%)$(li)$(l:revice/items/vistamps#rex_vistamp_christmas)Rex Vistamp (Christmas)$(/l) (4.8%)"
+		},
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:geats/items/raise_buckles#christmas_raise_buckle)Christmas Buckle$(/l) (4.8%)$(li)$(l:gotchard/items/ride_chemy_cards#santaclaus_ride_chemy_card)Santaclaus Ride Chemy Card$(/l) (4.8%)$(li)$(l:gotchard/items/ride_chemy_cards#tonakailiner_ride_chemy_card)Tonakailiner Ride Chemy Card$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#poppingummy_gochizo_charadeco_ver)Poppingummy Gochizo (Charadeco ver.)$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#merrychristmas_gochizo)Merry Christmas Gochizo$(/l) (4.8%)$(br2)Obtained every 4.3 minutes with the Merry Christmas effect"
+      }
 	]
 }

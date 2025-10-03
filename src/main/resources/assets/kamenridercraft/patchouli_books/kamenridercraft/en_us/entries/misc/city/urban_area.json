@@ -48,6 +48,22 @@
 		},
       {
         "type": "patchouli:text",
+        "anchor": "omokagedo",
+        "title": "Antique Shop Omokagedo",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Loot:$(li)4 iron ingots, 12 iron nuggets, 4 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l), and 1 $(l:wizard/items/wizard_gem_crafting_chisel)Gem Chisel$(/l) (in a chest)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/omokagedo.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/omokagedo_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/omokagedo_3.png"
+        ],
+        "title": " "
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "donut_shop_hungry",
         "title": "Donut Shop Hungry",
         "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Loot:$(li)12 $(l:misc/items/foods#donut)Donuts$(/l), 2 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l), and 1 $(l:misc/items/foods#mayo)Mayo$(/l) (in a chest)$(li)2 $(l:misc/items/foods#donut)Donuts$(/l) and 1 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l) (on display)"

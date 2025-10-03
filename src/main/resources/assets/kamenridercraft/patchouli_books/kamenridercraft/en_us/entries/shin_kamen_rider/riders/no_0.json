@@ -1,12 +1,12 @@
 {
   "name": "Kamen Rider No. 0",
-  "icon": "kamenridercraft:ulimate_half_typhoon",
+  "icon": "kamenridercraft:ultimate_half_typhoon",
   "category": "kamenridercraft:shin_kamen_rider/riders",
   "sortnum": 3,
   "pages": [
     {
       "type": "patchouli:entity",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ulimate_half_typhoon\",Count:1b},{id:\"kamenridercraft:shin_ichigolegs\",Count:1b},{id:\"kamenridercraft:shin_ichigotroso\",Count:1b},{id:\"kamenridercraft:shin_ichigohead\",Count:1b}]}",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ultimate_half_typhoon\",Count:1b},{id:\"kamenridercraft:shin_ichigolegs\",Count:1b},{id:\"kamenridercraft:shin_ichigotroso\",Count:1b},{id:\"kamenridercraft:shin_ichigohead\",Count:1b}]}",
       "scale": -1,
       "offset": 0.1,
       "name": " ",
@@ -15,7 +15,7 @@
     {
       "type": "patchouli:text",
       "title": "Kamen Rider No. 0",
-      "text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Transforms with the $(l:shin_kamen_rider/devices/ulimate_half_typhoon)Ultimate Half Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+      "text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Transforms with the $(l:shin_kamen_rider/devices/ultimate_half_typhoon)Ultimate Half Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
     }
   ]
 }

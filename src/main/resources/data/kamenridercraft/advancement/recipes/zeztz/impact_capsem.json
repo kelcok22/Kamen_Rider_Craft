@@ -21,7 +21,8 @@
   ],
   "rewards": {
     "recipes": [
-      "kamenridercraft:zeztz/zeztz_logo"
+      "kamenridercraft:zeztz/zeztz_logo",
+      "kamenridercraft:zeztz/zeztz_driver"
     ]
   },
   "sends_telemetry_event": false

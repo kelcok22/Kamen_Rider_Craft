@@ -2,7 +2,7 @@
 	"name": "Foundation X Masquerade",
 	"icon": "kamenridercraft:w_logo",
 	"category": "kamenridercraft:w/mobs",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cyberoid_zzz_core",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gaim/mobs/megahex)Megahex$(/l)"
 		},
 		{
 			"type": "patchouli:text",

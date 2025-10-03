@@ -15,6 +15,20 @@
 			"item": "kamenridercraft:gaoh_boss_block",
 			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)$(br2)Mine this block to summon $(l:den_o/mobs/gaoh)Kamen Rider Gaoh$(/l)"
 		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "taboo_boss_block",
+        "item": "kamenridercraft:taboo_boss_block",
+        "text": "Drops from:$(li)$(l:w/mobs/masquerade)Masquerades$(/l)$(br2)Mine this block to summon $(l:w/mobs/taboo_dopant)Taboo Dopant$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "terror_boss_block",
+        "item": "kamenridercraft:terror_boss_block",
+        "text": "Block is currently unobtainable$(br2)Mine this block to summon $(l:w/mobs/terror_dopant)Terror Dopant$(/l)"
+      },
 		{
 			"type": "patchouli:crafting",
 			"anchor": "poseidon_boss_block",
@@ -85,6 +99,13 @@
 			"recipe": "kamenridercraft:gaim/lord_baron_boss_block",
 			"text": "Mine this block to summon $(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
 		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "megahex_boss_block",
+        "item": "kamenridercraft:megahex_boss_block",
+        "text": "Found inside $(l:gaim/structures/megahex_planet)Planet Megahex$(/l)$(br2)Mine this block to summon $(l:gaim/mobs/megahex)Megahex$(/l)"
+      },
 		{
 			"type": "patchouli:crafting",
 			"anchor": "gord_drive_boss_block",

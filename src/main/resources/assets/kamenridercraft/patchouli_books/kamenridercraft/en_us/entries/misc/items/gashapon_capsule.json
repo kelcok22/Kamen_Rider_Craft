@@ -1,0 +1,19 @@
+{
+	"name": "Gashapon Capsule",
+	"icon": "kamenridercraft:gashapon_capsule",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Gives random items when opened$(br2)Drops:$(li)$(l:w/items/akiko_no_slipper)Akiko no Slipper$(/l) (6.7%)$(li)$(l:kiva/items/bloody_rose)Bloody Rose$(/l) (6.7%)$(li)$(l:kuuga/arsenal/kuuga_phone)Kuuga's Phone$(/l) (6.7%)$(li)$(l:misc/blocks/ichigo_chair)Ichigo Chair$(/l) (6.7%)$(li)$(l:misc/blocks/red_ichigo_chair)Aka-Rider Chair$(/l) (6.7%)$(li)$(l:den_o/devices/shin_o_belt)Shin-O Belt$(/l) (6.7%)$(li)$(l:geats/items/raise_buckles#shark_raise_buckle)Shark Raise Buckle$(/l) (6.7%)$(li)$(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l) (6.7%)$(li)$(l:ghost/items/gamma_eyecons#yurusen_gamma_eyecon)Yurusen Gamma Eyecon$(/l) (6.7%)$(li)$(l:ghost/items/gamma_eyecons#sister_gamma_eyecon)Sister Gamma Eyecon$(/l) (6.7%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gashapon_capsule",
+			"title": " ",
+			"text": "$(li)$(l:decade/items/kuuga_ball)Final FormRide Kuuga Ball$(/l) (6.7%)$(li)$(l:revice/items/vistamps#kirin_vistamp)Kirin Vistamp$(/l) (6.7%)$(li)$(l:revice/items/vistamps#niwatori_vistamp)Niwatori Vistamp$(/l) (6.7%)$(li)$(l:revice/items/vistamps#funkorogashi_vistamp)Funkorogashi Vistamp$(/l) (6.7%)$(li)$(l:skyrider/items/gg_core)GanGan G Emblem$(/l) (6.7%)$(br2)Obtained by using emeralds on the $(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l)"
+		}
+	]
+}

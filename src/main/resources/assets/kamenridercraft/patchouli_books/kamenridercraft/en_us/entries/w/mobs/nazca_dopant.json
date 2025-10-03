@@ -2,7 +2,7 @@
 	"name": "Nazca Dopant",
 	"icon": "kamenridercraft:w_logo",
 	"category": "kamenridercraft:w/mobs",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:entity",

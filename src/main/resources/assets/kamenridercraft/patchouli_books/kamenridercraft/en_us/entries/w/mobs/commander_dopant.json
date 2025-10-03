@@ -2,7 +2,7 @@
 	"name": "Commander Dopant",
 	"icon": "kamenridercraft:w_logo",
 	"category": "kamenridercraft:w/mobs",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -7,7 +7,7 @@
     {
       "type": "patchouli:text",
       "title": "Planet Megahex",
-      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Spawns throughout Helheim$(br2)Includes an $(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l) spawner$(br)Includes a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l) spawner$(br)Includes a $(l:drive/mobs/roidmude)Roidmude$(/l) spawner"
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Spawns throughout Helheim$(br2)Includes an $(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l) spawner$(br)Includes a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l) spawner$(br)Includes a $(l:drive/mobs/roidmude)Roidmude$(/l) spawner$(br)Includes a $(l:misc/blocks/boss_blocks#megahex_boss_block)Megahex Boss Block$(/l)"
     },
     {
       "type": "patchouli:image",
