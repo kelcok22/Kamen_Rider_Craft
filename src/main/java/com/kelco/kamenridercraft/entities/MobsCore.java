@@ -31,7 +31,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(ShockerCombatmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shocker_combatman"));
     
     public static final DeferredItem<DeferredSpawnEggItem> SHOCKER_COMBATMAN_SPAWN_EGG = ITEMS.register("shocker_combatman_spawn_egg",
-            () -> new DeferredSpawnEggItem(SHOCKER_COMBATMAN, 0xFFFFFF,0x151515, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(SHOCKER_COMBATMAN, 0x000000,0xFFFFFF, new Item.Properties()));
  
     public static final DeferredHolder<EntityType<?>, EntityType<ShockerRidersEntity>> SHOCKER_RIDER = MOBLIST.register("shocker_riders",
             () -> EntityType.Builder.of(ShockerRidersEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shocker_riders"));
