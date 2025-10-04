@@ -527,7 +527,10 @@ public class Kiva_Rider_Items {
     
 	public static final DeferredItem<Item> ARC_TRIDENT = ITEMS.register("arc_trident",
          	() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
-    
+
+    public static final DeferredItem<Item> KIVALA_SABER = ITEMS.register("kivala_saber",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+
 	public static final DeferredItem<Item> FANGIRE_SLAYER = ITEMS.register("fangire_slayer",
          	() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
