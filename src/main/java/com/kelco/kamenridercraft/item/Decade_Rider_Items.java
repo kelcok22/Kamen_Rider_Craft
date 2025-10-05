@@ -834,7 +834,20 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> DIMENSION_CARD = ITEMS.register("dimension_card",
 			() -> new ZeinCardItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	*/
-	public static final DeferredItem<Item> KUUGA_BALL = ITEMS.register("kuuga_ball",
+
+
+    public static final DeferredItem<Item> DECADE_OOO_CARD = ITEMS.register("decade_ooo_armor_card",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_ooo_armor","decade","decadriver_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 2,true,false))
+                    .hasStaticWings().IsGlowing().AddCompatibilityList(new String[] {"neo_decade"}).ChangeRiderName("decade")
+                    .IsBeltGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> KUUGA_BALL = ITEMS.register("kuuga_ball",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ball","kuuga","blank",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {

@@ -203,9 +203,13 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> BAKUSOU_TROPHY = registerBlock("bakusou_trophy",
 			() -> new DespawnBlockNotCube(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE).dynamicShape(),Block.box(4, 0, 6, 12,16, 10)).AddToTabList(RiderTabs.RIDER_BLOCK));
-	
 
-	public static final DeferredBlock<Block> GAME_CREATOR = registerBlock("gamecreator",
+    public static final DeferredBlock<Block> GENM_CONTINUE = registerBlock("genm_continue",
+            () -> new BaseFacingBlockNotCube(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape(),Block.box(1, 0, 1, 16,4, 16)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
+    public static final DeferredBlock<Block> GAME_CREATOR = registerBlock("gamecreator",
 			() -> new GameCreator(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
