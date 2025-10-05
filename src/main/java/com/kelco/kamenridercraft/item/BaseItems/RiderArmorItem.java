@@ -46,7 +46,8 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
             private RiderArmorRenderer renderer;
             @Override
             public <T extends LivingEntity> HumanoidModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack, @Nullable EquipmentSlot equipmentSlot, @Nullable HumanoidModel<T> original) {
-               this.renderer = new RiderArmorRenderer(livingEntity, equipmentSlot);
+                //if(this.renderer == null)
+                    this.renderer = new RiderArmorRenderer(livingEntity, equipmentSlot);
 
                 return this.renderer;
             }
