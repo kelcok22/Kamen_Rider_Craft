@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-04T23:07:19.8412917	Item Models: kamenridercraft
+// 1.21.1	2025-10-02T18:21:59.8249413	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -112,6 +112,7 @@ e04b1507db659e1de377184dede795670d27afc2 assets/kamenridercraft/models/item/dang
 077705301f8af97fc456048af95349cd456b0c97 assets/kamenridercraft/models/item/deadheat_car.json
 9c8bcd6196aa78ea9e6505efe23b37422e555dc8 assets/kamenridercraft/models/item/decade_complete_ride_chemy_card.json
 c4100e745a88aa0615c9d384fc23d750ccef8753 assets/kamenridercraft/models/item/decade_gochizo.json
+9302745053392b1415625aa77a4bdf6918f1a71c assets/kamenridercraft/models/item/decade_ooo_armor_card.json
 de492f2d4f38868b18222c83f4f619ef7a9db4c4 assets/kamenridercraft/models/item/decade_ride_chemy_card.json
 512a7ec7b25bc3379d8324734105e2494ac87767 assets/kamenridercraft/models/item/decade_ring.json
 352b7ba3793a7a69f55ff6ec3cc843e1f7a39d56 assets/kamenridercraft/models/item/deco_traveller.json
@@ -223,7 +224,6 @@ b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotc
 bc58ef73a50485581df0a6721eaaadef22d0c275 assets/kamenridercraft/models/item/granute_glass_pane.json
 e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/granute_tooth.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
-922c1b4222deb2d2689c79f5c70c8bcdbbc7c477 assets/kamenridercraft/models/item/greeed_blet_kyoryu.json
 8a396385d4deb31252aab8c80a1d675557b50818 assets/kamenridercraft/models/item/gurucan_gochizo_valen.json
 7c52a21d11943073184164edea967c821c3dfb34 assets/kamenridercraft/models/item/gutsshovel_ride_chemy_card_v.json
 c37b9eecbd3298147f22917de0e36e4b5c581c4a assets/kamenridercraft/models/item/hagigoro_gochizo.json
