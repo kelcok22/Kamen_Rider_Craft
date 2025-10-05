@@ -35,6 +35,7 @@ public class YummyEntity extends BaseHenchmenEntity {
 						||this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_DEEP_OCEAN))boss = MobsCore.MEZOOL.get().create(this.level());
 				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS))boss = MobsCore.GAMEL.get().create(this.level());
 				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER))boss = MobsCore.MUCHIRI.get().create(this.level());
+                else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_END))boss = MobsCore.KYORYU_GREEED.get().create(this.level());
 				else {
 				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
