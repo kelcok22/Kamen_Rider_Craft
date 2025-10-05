@@ -1240,7 +1240,9 @@ public class OOO_Rider_Items {
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"muchiri_complete",MUKADE_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(HACHI_MEDAL,ARI_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
-
+    public static final DeferredItem<Item> GREEED_BLET_KYORYU = ITEMS.register("greeed_blet_kyoryu",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyoryu_complete",PTERA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().Add_Extra_Base_Form_Items(TRICERA_MEDAL,TYRANNO_MEDAL).Override_belt_text("kyoryu_belt").ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
 					() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
