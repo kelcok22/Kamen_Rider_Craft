@@ -1990,6 +1990,8 @@
 "item.kamenridercraft.batta_man_belt": "Batta Man Belt",
 "item.kamenridercraft.creation_king_stone": "Creation King Stone",
   "kamenridercraft:creation_king_stone.form": "Form: Creation King",
+  "item.kamenridercraft.another_king_stone": "Another King Stone",
+  "kamenridercraft:another_king_stone.form": "Form: Another Shadow Moon",
 "item.kamenridercraft.satansaber": "Satansaber",
 "item.kamenridercraft.batta_man_king_stone": "Batta Man Kingstone",
   "kamenridercraft:batta_man_king_stone.form": "Form: Batta Man",
@@ -2991,7 +2993,7 @@
   "kamenridercraft:keyfuestle_arc.form": "Form: Arc Form",
   "kamenridercraft:keyfuestle_arc_legend.form": "Form: Legend Form",
 
-  "item.kamenridercraft.bloddy_rose": "Bloody Rose",
+  "item.kamenridercraft.bloody_rose": "Bloody Rose",
 
 "item.kamenridercraft.decade_logo": "Decade Logo",
 "item.kamenridercraft.decade_camera": "Blackbird Fly",
@@ -3036,6 +3038,7 @@
   "kamenridercraft:decade_card.form": "Form: Base Form",
   "kamenridercraft:decade_violent_emotion_card.form": "Form: Violent Emotion",
   "kamenridercraft:decade_cyan_card.form": "Form: Net Movie Form",
+  "kamenridercraft:decade_ooo_armor_card.form": "Form: Final FormRide OOO Armor",
   "kamenridercraft:diend_card.form": "Form: Base Form",
   "kamenridercraft:diend_green_card.form": "Form: Net Movie Form",
   "kamenridercraft:k_touch.form": "Form: Complete Form",
@@ -3271,6 +3274,7 @@
 "item.kamenridercraft.black_rx_roborider_card": "FormRide Black RX Robo Rider",
 "item.kamenridercraft.black_rx_biorider_card": "FormRide Black RX Bio Rider",
 "item.kamenridercraft.kuuga_ball": "Final FormRide Kuuga Ball",
+  "item.kamenridercraft.decade_ooo_armor_card": "Final FormRide OOO Armor",
 
   "kamenridercraft:kuuga_growing_card.form": "Form: Kuuga Growing Form",
   "kamenridercraft:kuuga_dragon_card.form": "Form: Kuuga Dragon Form",
@@ -3580,6 +3584,8 @@
 "kamenridercraft.name.gamel_complete": "Kaijin: Gamel",
 "item.kamenridercraft.greeed_blet_muchiri": "Greeed Belt",
 "kamenridercraft.name.muchiri_complete": "Kaijin: Muchiri",
+  "item.kamenridercraft.greeed_blet_kyoryu": "Greeed Belt",
+  "kamenridercraft.name.kyoryu_complete": "Kaijin: Kyoryu Greeed",
 
 "item.kamenridercraft.medajalibur": "Medajalibur",
 "item.kamenridercraft.tajaspinner": "Tajaspinner",
@@ -8147,7 +8153,7 @@
   "item.kamenridercraft.shin_typhoon_2_1": "Shin Typhoon",
   "item.kamenridercraft.ultimate_half_typhoon": "Ultimate Half Typhoon",
 
-
+  "item.kamenridercraft.ichigo_mask": "Ichigo Mask",
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
 
   "kamenridercraft:kuuga_amazing_mighty_artist.form": "Form: Amazing Mighty Form (SIC Artist Series)",
@@ -8257,6 +8263,7 @@
 "entity.kamenridercraft.kazari_mob": "Kazari",
 "entity.kamenridercraft.mezool_mob": "Mezool",
 "entity.kamenridercraft.gamel_mob": "Gamel",
+  "entity.kamenridercraft.gamel_mob": "Kyoryu Greeed",
 "entity.kamenridercraft.muchiri_mob": "Muchiri",
 "entity.kamenridercraft.poseidon": "Poseidon",
 "entity.kamenridercraft.core": "Kamen Rider Core",
@@ -8484,6 +8491,7 @@
 "item.kamenridercraft.kazari_spawn_egg": "Kazari Spawn Egg",
 "item.kamenridercraft.mezool_spawn_egg": "Mezool Spawn Egg",
 "item.kamenridercraft.gamel_spawn_egg": "Gamel Spawn Egg",
+  "item.kamenridercraft.kyoryu_greeed_spawn_egg": "Kyoryu Greeed Spawn Egg",
 "item.kamenridercraft.muchiri_spawn_egg": "Muchiri Spawn Egg",
 "item.kamenridercraft.poseidon_spawn_egg": "Kamen Rider Poseidon Spawn Egg",
 "item.kamenridercraft.core_spawn_egg": "Kamen Rider Core Spawn Egg",

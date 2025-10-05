@@ -121,8 +121,8 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public void travel(Vec3 pos) {
 
 		if (this.isAlive()) {
+            float z = 0;
 			this.fallDistance=0;
-
 			if (this.isVehicle()) {
 
 
@@ -131,7 +131,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 				this.yRotO = getYRot();
 				this.xRotO = getXRot();
 
-				float z = passenger.zza;
+				 z = passenger.zza;
 
 				if (z <= 0) z *= 0.25f;
 if (this.onGround()){
@@ -177,10 +177,10 @@ if (this.onGround()){
 					}
 				}
 }
-				super.travel(new Vec3(0, pos.y, z));
-			}
 
 			}
+			}
+            super.travel(new Vec3(0, pos.y, z));
 		}
 	}
 
@@ -211,7 +211,6 @@ if (this.onGround()){
 			this.xRotO = passenger.xRotO;
 		}
 	}
-
 
 
 protected SoundEvent getHurtSound(DamageSource p_30424_) {

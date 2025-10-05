@@ -598,6 +598,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.KAZARI.get(), KazariEntity.setAttributes().build());
 		event.put(MobsCore.MEZOOL.get(), MezoolEntity.setAttributes().build());
 		event.put(MobsCore.GAMEL.get(), GamelEntity.setAttributes().build());
+        event.put(MobsCore.KYORYU_GREEED.get(), KyoryuGreeedEntity.setAttributes().build());
 		event.put(MobsCore.POSEIDON.get(), PoseidonEntity.setAttributes().build());
 		event.put(MobsCore.CORE.get(), CoreEntity.setAttributes().build());
 		event.put(MobsCore.POWERED_UP_CORE.get(), PoweredUpCoreEntity.setAttributes().build());

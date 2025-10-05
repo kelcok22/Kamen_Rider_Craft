@@ -367,14 +367,20 @@ public class MobsCore {
 
           public static final DeferredItem<DeferredSpawnEggItem> GAMEL_SPAWN_EGG = ITEMS.register("gamel_spawn_egg",
                    () -> new DeferredSpawnEggItem(GAMEL, 0x000000, 0xBFBFBF, new Item.Properties()));
-          
-          
+
+    public static final DeferredHolder<EntityType<?>, EntityType<KyoryuGreeedEntity>> KYORYU_GREEED = MOBLIST.register("kyoryu_greeed_mob",
+            () -> EntityType.Builder.of(KyoryuGreeedEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kyoryu_greeed_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KYORYU_GREEED_SPAWN_EGG = ITEMS.register("kyoryu_greeed_spawn_egg",
+            () -> new DeferredSpawnEggItem(KYORYU_GREEED, 0x000000, 0x5E63A5, new Item.Properties()));
+
           public static final DeferredHolder<EntityType<?>, EntityType<MuchiriEntity>> MUCHIRI = MOBLIST.register("muchiri_mob",
                   () -> EntityType.Builder.of(MuchiriEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":muchiri_mob"));
 
           public static final DeferredItem<DeferredSpawnEggItem> MUCHIRI_SPAWN_EGG = ITEMS.register("muchiri_spawn_egg",
                    () -> new DeferredSpawnEggItem(MUCHIRI, 0x000000, 0xFF9E00, new Item.Properties()));
-          
+
+
           public static final DeferredHolder<EntityType<?>, EntityType<PoseidonEntity>> POSEIDON = MOBLIST.register("poseidon",
                   () -> EntityType.Builder.of(PoseidonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":poseidon"));
 

@@ -274,7 +274,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> PARACHUTE_ASTROSWITCH = ITEMS.register("parachute_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_parachute_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.LOW_GRAVITY, 40, 6,true,false))
+					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 6,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
 	public static final DeferredItem<Item> CHAINSAW_ASTROSWITCH = ITEMS.register("chainsaw_switch",
