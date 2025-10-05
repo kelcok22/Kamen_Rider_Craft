@@ -13,7 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 
-public class BaseItem extends Item {
+public class BaseItem extends Item  {
 
     public UseAnim Animation;
     private Item craftingRemainingItem = null;

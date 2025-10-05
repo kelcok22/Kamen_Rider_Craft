@@ -758,6 +758,22 @@ public class Ichigo_Rider_Items {
                 }
             }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
+    public static final DeferredItem<Item>  ANOTHER_KING_STONE = ITEMS.register("another_king_stone",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_another","shadow_moon","shadow_charger_another_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.IsGlowing().has_basic_model().AddToList(RiderTabs.BLACK_TAB_ITEM));
+
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_hajime_sorayama","shadow_moon","shadow_charger_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)

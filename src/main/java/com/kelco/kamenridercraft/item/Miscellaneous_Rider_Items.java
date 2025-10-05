@@ -3,12 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.BaseItems.BaseBannerPatternItem;
-import com.kelco.kamenridercraft.item.BaseItems.BaseDropItem;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -29,7 +24,13 @@ public class Miscellaneous_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
-	//G
+
+    //tojima wants to be a kamen rider
+    public static final DeferredItem<Item> ICHIGO_MASK = ITEMS.register("ichigo_mask",
+            () -> new MaskItem(new Item.Properties().stacksTo(1)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+
+    //G
 	    public static final DeferredItem<Item> G_LOGO = ITEMS.register("g_logo",
 	    		() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/g")), new Item.Properties()).AddToList(RiderTabs.G_TAB_ITEM));
 
