@@ -694,6 +694,7 @@ public class RiderTabs {
             event.accept(MobsCore.KAZARI_SPAWN_EGG);
             event.accept(MobsCore.MEZOOL_SPAWN_EGG);
             event.accept(MobsCore.GAMEL_SPAWN_EGG);
+            event.accept(MobsCore.KYORYU_GREEED_SPAWN_EGG);
             event.accept(MobsCore.MUCHIRI_SPAWN_EGG);
             event.accept(MobsCore.POSEIDON_SPAWN_EGG);
             event.accept(MobsCore.CORE_SPAWN_EGG);
