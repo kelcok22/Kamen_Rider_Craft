@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-01T23:14:02.0387965	Item Models: kamenridercraft
+// 1.21.1	2025-10-04T23:07:19.8412917	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -223,6 +223,7 @@ b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotc
 bc58ef73a50485581df0a6721eaaadef22d0c275 assets/kamenridercraft/models/item/granute_glass_pane.json
 e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/granute_tooth.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
+922c1b4222deb2d2689c79f5c70c8bcdbbc7c477 assets/kamenridercraft/models/item/greeed_blet_kyoryu.json
 8a396385d4deb31252aab8c80a1d675557b50818 assets/kamenridercraft/models/item/gurucan_gochizo_valen.json
 7c52a21d11943073184164edea967c821c3dfb34 assets/kamenridercraft/models/item/gutsshovel_ride_chemy_card_v.json
 c37b9eecbd3298147f22917de0e36e4b5c581c4a assets/kamenridercraft/models/item/hagigoro_gochizo.json
@@ -382,6 +383,7 @@ b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhin
 1f1e0658a7c7e162219798477ca1764da00677bd assets/kamenridercraft/models/item/riderman_gochizo.json
 8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/rider_case.json
 744f2caf73151f7129329cac6b7ecb32cacf553d assets/kamenridercraft/models/item/rider_gashat_case.json
+148898e65206158bc092068b1a853fdc9bc464b3 assets/kamenridercraft/models/item/rider_ticket_shin_o.json
 e4e1930700e61ef1158f1323ba920596aa3b3421 assets/kamenridercraft/models/item/rocket_nadeshiko_switch.json
 b4e3235dcf4fb2c995ade90d5e9b86774b94e231 assets/kamenridercraft/models/item/roidmude_core_002.json
 d92d46060722aa296f05c34c90633b1df9dd4bfc assets/kamenridercraft/models/item/roidmude_core_003.json
