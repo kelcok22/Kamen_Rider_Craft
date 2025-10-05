@@ -7,6 +7,10 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:genm_continue",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
           "name": "kamenridercraft:ichigo_mask",
           "weight": 1
         },

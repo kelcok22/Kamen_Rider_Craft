@@ -4,8 +4,8 @@
 	"parent": "item/generated",
 	"textures": {
 		"1": "kamenridercraft:item/ichigohead",
-		"layer0": "kamenridercraft:item/ichigo_mask",
-		"particle": "kamenridercraft:item/ichigohead"
+		"particle": "kamenridercraft:item/ichigohead",
+		"layer0": "kamenridercraft:item/ichigo_mask"
 	},
 	"display": {
 		"thirdperson_righthand": {
@@ -36,7 +36,7 @@
 		},
 		"fixed": {
 			"translation": [0, 0, -2],
-			"scale": [2, 2, 4]
+			"scale": [1.5, 1.5, 4]
 		}
 	}
 }
