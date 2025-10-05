@@ -181,7 +181,8 @@ public class Kiva_Rider_Items {
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
 			}.IsBeltGlowing().IsGlowing().addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
-    
+
+
     public static final DeferredItem<Item> KIVATTE_FUESTLE = ITEMS.register("kiva_says_fuestle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_red_emperor","kiva","kivat_belt_e",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -289,8 +290,24 @@ public class Kiva_Rider_Items {
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
 			}.IsBeltGlowing().IsGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.KIVA_TAB_ITEM));
-    
-    
+
+    public static final DeferredItem<Item> FLIGHT_STYLE_FUESTLE = ITEMS.register("flight_style_fuestle",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_flight_style","kiva","kivat_belt_e",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_BAT_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 200, 0, 0, 0, 1);
+                }
+            }.IsGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).has_basic_model().model_has_different_name("keyfuestle"));
+
+
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","arc","arc_kivat_belt",
 					new MobEffectInstance(Effect_core.BIG, 40, 1,true,false),
@@ -304,7 +321,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing()
+			}.addAlternative(FLIGHT_STYLE_FUESTLE.get()).IsBeltGlowing().IsGlowing()
 			);
     
     

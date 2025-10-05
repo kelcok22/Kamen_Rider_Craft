@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/genm_continue" },
+    "facing=south": { "model": "kamenridercraft:block/genm_continue", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/genm_continue", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/genm_continue", "y": 90 }
+  }
+ }
