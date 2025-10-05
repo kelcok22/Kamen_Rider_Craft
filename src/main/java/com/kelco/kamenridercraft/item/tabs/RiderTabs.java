@@ -194,7 +194,7 @@ public class RiderTabs {
                     .title(Component.translatable("tab.kamenridercraft.gavv_items")).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZeztzTab = CREATIVE_MODE_TABS.register("krc_470_zeztz_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
+            CreativeModeTab.builder().icon(() -> new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_zeztz_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.zeztz_items")).build());
 
 
@@ -694,6 +694,7 @@ public class RiderTabs {
             event.accept(MobsCore.KAZARI_SPAWN_EGG);
             event.accept(MobsCore.MEZOOL_SPAWN_EGG);
             event.accept(MobsCore.GAMEL_SPAWN_EGG);
+            event.accept(MobsCore.KYORYU_GREEED_SPAWN_EGG);
             event.accept(MobsCore.MUCHIRI_SPAWN_EGG);
             event.accept(MobsCore.POSEIDON_SPAWN_EGG);
             event.accept(MobsCore.CORE_SPAWN_EGG);

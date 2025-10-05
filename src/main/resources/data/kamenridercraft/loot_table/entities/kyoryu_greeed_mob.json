@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:ptera_medal"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:tricera_medal"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:tyranno_medal"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:greeed_blet_kyoryu"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 9,
+		  "name": "kamenridercraft:cellmedal"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:cellmedal",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
