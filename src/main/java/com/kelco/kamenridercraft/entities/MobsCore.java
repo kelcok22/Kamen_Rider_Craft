@@ -915,6 +915,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> WOZ_SPAWN_EGG = ITEMS.register("woz_spawn_egg",
             () -> new DeferredSpawnEggItem(WOZ, 0xffffff, 0x05ff09, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<KodamaSuikaArmsEntity>> KODAMA_SUIKA_ARMS = MOBLIST.register("kodama_suika_arms",
+            () -> EntityType.Builder.of(KodamaSuikaArmsEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kodama_suika_arms"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KODAMA_SUIKA_ARMS_SPAWN_EGG = ITEMS.register("kodama_suika_arms_spawn_egg",
+            () -> new DeferredSpawnEggItem(KODAMA_SUIKA_ARMS, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<TrilobiteMagiaEntity>> TRILOBITE_MAGIA = MOBLIST.register("trilobite_magia",
                   () -> EntityType.Builder.of(TrilobiteMagiaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":trilobite_magia"));
