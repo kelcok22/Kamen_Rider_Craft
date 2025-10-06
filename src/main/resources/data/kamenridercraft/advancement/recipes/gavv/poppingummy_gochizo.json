@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:gavv/gavv_logo",
 	  "kamenridercraft:gavv/henshin_belt_gavv",
-	  "kamenridercraft:gavv/gavvgablade"
+	  "kamenridercraft:gavv/gavvgablade",
+      "kamenridercraft:zi_o/gavv_ridewatch"
 	]
   },
   "sends_telemetry_event": false

@@ -27,7 +27,8 @@
 	  "kamenridercraft:skyrider/tornado",
 	  "kamenridercraft:skyrider/skyrider_logo",
 	  "kamenridercraft:decade/skyrider_card",
-	  "kamenridercraft:fourze/skyrider_switch"
+	  "kamenridercraft:fourze/skyrider_switch",
+      "kamenridercraft:zi_o/skyrider_ridewatch"
 	]
   },
   "sends_telemetry_event": false

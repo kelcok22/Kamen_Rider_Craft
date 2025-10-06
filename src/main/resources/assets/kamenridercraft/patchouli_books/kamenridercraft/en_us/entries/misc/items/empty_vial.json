@@ -2,7 +2,7 @@
 	"name": "Empty Vial",
 	"icon": "kamenridercraft:empty_vial",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 22,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

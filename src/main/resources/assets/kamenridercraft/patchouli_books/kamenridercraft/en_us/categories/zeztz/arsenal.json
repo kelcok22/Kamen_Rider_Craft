@@ -2,6 +2,6 @@
 	"parent": "kamenridercraft:zeztz/main",
     "name": "Zeztz Arsenal",
     "description": "Every weapon and tool used by the Zeztz Riders. These can be repaired in an anvil using $(l:zeztz/items/code_capsem)CODE Capsems$(/l).",
-    "icon": "kamenridercraft:base_sword",
+    "icon": "kamenridercraft:breakam_zeztzer_sword",
     "sortnum": 3
 }

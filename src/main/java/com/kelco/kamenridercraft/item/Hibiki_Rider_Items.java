@@ -60,6 +60,7 @@ public class Hibiki_Rider_Items {
                         player.getZ(), 100, 0, 0, 0, 1);
             }
         }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
+                                                            //:cryingummy:
 
         public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_armed","hibiki","hibikidriver_belt",

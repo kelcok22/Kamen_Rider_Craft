@@ -1,0 +1,19 @@
+{
+	"name": "Another King Stone",
+	"icon": "kamenridercraft:another_king_stone",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)After 0 (2002, S.I.C. Hero Saga)$(br2)Used to access Shadow Moon's $(l:black/riders/shadow_moon#another_shadow_moon)Another Shadow Moon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_king_stone",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

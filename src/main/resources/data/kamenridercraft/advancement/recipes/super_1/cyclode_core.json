@@ -27,7 +27,8 @@
 	  "kamenridercraft:super_1/cyclode",
 	  "kamenridercraft:super_1/super1_logo",
 	  "kamenridercraft:decade/super_1_card",
-	  "kamenridercraft:fourze/super_1_switch"
+	  "kamenridercraft:fourze/super_1_switch",
+      "kamenridercraft:zi_o/super_1_ridewatch"
 	]
   },
   "sends_telemetry_event": false

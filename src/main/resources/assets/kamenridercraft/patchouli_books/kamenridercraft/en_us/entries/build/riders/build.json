@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RabbitRabbit",
-            "text": "Accessed with the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l) while having the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) in your inventory"
         },
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "TankTank",
-            "text": "Accessed with the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l) while having the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) in your inventory"
         },
 		{
 			"type": "patchouli:text",

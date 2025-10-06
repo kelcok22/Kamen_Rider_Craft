@@ -1,0 +1,17 @@
+{
+	"name": "Kyoryu Greeed",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kyoryu_greeed_mob",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br)Health: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 10% chance to spawn from a $(l:ooo/mobs/yummy_mob)Yummy$(/l)$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_kyoryu)Greeed Belt (Kyoryu Greeed)$(/l) (10%)$(li)1 $(l:ooo/items/core_medals#ptera_medal)Ptera Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#tricera_medal)Tricera Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#tyranno_medal)Tyranno Medal$(/l) (33.3%)"
+		}
+	]
+}

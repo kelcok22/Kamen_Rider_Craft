@@ -32,6 +32,20 @@
 			"title": "Shadow Moon",
 			"text": "Appears in:$(li)Kamen Rider 3D Battle from Ganbaride (2014, 3D film)$(br2)Transforms with the $(l:black/devices/shadow_charger)Shadow Charger$(/l)$(br2)Status Effects:$(li)Haste$(li)Jump Boost II$(li)Strength II"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "another_shadow_moon",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shadow_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Another Shadow Moon",
+        "text": "Accessed with the $(l:black/items/another_king_stone)Another King Stone$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Shadow Moon",
+        "text": "Appears in:$(li)After 0 (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:black/devices/shadow_charger)Shadow Charger$(/l)$(br2)Status Effects:$(li)Haste II$(li)Jump Boost V$(li)Strength IV"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "hajime_sorayama",

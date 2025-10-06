@@ -2,7 +2,7 @@
 	"name": "Powered Up Kamen Rider Core",
 	"icon": "kamenridercraft:ooo_logo",
 	"category": "kamenridercraft:ooo/mobs",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -70,6 +70,13 @@
 			"item": "kamenridercraft:counter_95do",
 			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
+      {
+        "type": "patchouli:spotlight",
+        "anchor": "genm_continue",
+        "link_recipe": true,
+        "item": "kamenridercraft:genm_continue",
+        "text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "dark_treat",
