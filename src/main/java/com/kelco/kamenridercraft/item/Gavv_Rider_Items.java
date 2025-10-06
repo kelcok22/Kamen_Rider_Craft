@@ -472,6 +472,7 @@ public class Gavv_Rider_Items {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
+
 				}
 			}.IsGlowing().addSwitchForm(GOCHIPOD_MASTER.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
