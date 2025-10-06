@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.saber.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -701,8 +702,12 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> BOOK_GATE_WONDER_RIDE_BOOK = ITEMS.register("book_gate_wonder_ride_book",
 			() -> new BookGateItem(new Item.Properties(),10).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+    public static final DeferredItem<Item> DIAGOSPEEDY_WONDER_RIDE_BOOK = ITEMS.register("diago_speedy_wonder_ride_book",
+            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.diago_speedy"), MobsCore.DIAGOSPEEDY)
+                    .has_basic_model().AddToList(RiderTabs.SABER_TAB_ITEM));
 
-	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
+
+    public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 	public static final DeferredItem<Item> SABER_CHESTPLATE = ITEMS.register("sabertroso",

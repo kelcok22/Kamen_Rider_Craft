@@ -1315,9 +1315,17 @@ public class Gaim_Rider_Items {
             () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.sakura_hurricane"), MobsCore.SAKURA_HURRICANE)
                     .has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
+    public static final DeferredItem<Item> ROSE_ATTACKER = ITEMS.register("rose_attacker",
+            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.rose_attacker"), MobsCore.ROSE_ATTACKER)
+                    .has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+    public static final DeferredItem<Item> DANDELINER = ITEMS.register("dandeliner",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+    public static final DeferredItem<Item> TULIP_HOPPER = ITEMS.register("tulip_hopper",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
     /**
-	sakura_hurricane
-	rose_attacker
 	dandeliner
 	tulip_hopper
 **/

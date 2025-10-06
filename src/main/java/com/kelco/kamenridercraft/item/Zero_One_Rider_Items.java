@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.machineBlocks.ProgrisekeyPrinter;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.bosses.ArkZeroEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -17,6 +18,7 @@ import com.kelco.kamenridercraft.item.zero_one.ThousandriverItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
@@ -1327,6 +1329,11 @@ public class Zero_One_Rider_Items {
 
 	public static final DeferredItem<Item> MERRY_HOPPER_PROGRISEKEY = ITEMS.register("merry_hopper_progrisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+
+    public static final DeferredItem<Item> HIDEN_RISEPHONE = ITEMS.register("hiden_risephone",
+            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.risehopper"), MobsCore.RISEHOPPER)
+                    .has_basic_model().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+
 
     public static final DeferredItem<Item> ZERO_ONE_HELMET = ITEMS.register("zero_onehead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
