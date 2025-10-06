@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -1967,7 +1968,12 @@ public class Zi_O_Rider_Items {
 				}
 			}.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
-	public static final DeferredItem<Item> WOZ_TIME_MAJIN_RIDEWATCH = ITEMS.register("woz_time_majin_ridewatch",
+    public static final DeferredItem<Item> RIDESTRIKER_RIDEWATCH  = ITEMS.register("ridestriker_ridewatch",
+            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.machine_builder"), MobsCore.RIDESTRIKER)
+                    .has_basic_model().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> WOZ_TIME_MAJIN_RIDEWATCH = ITEMS.register("woz_time_majin_ridewatch",
 			() -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> OHMA_ADVENT_CALENDAR = ITEMS.register("ohma_advent_calendar",

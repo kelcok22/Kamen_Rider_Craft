@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottlePurifier;
 import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -927,6 +928,10 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> FOURZE_FULL_BOTTLE= ITEMS.register("fourze_full_bottle",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+    public static final DeferredItem<Item> BUILD_PHONE = ITEMS.register("build_phone",
+            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.risehopper"), MobsCore.MACEHINE_BUILDER)
+                    .has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BUILD_HELMET = ITEMS.register("buildhead",
