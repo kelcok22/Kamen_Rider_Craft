@@ -1,0 +1,19 @@
+{
+	"name": "Ichigo Mask",
+	"icon": "kamenridercraft:ichigo_mask",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Tojima Tanzaburo Wants to Be a Masked Rider (2018/2025, manga/anime)$(br2)Can be equipped on the head armor slot"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_mask",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+		}
+	]
+}

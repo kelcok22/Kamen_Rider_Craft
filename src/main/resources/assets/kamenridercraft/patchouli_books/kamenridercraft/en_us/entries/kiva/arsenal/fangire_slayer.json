@@ -2,7 +2,7 @@
 	"name": "Fangire Slayer",
 	"icon": "kamenridercraft:fangire_slayer",
 	"category": "kamenridercraft:kiva/arsenal",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.component.DataComponents;
@@ -16,27 +17,25 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class SaberRidewatchItem extends RiderFormChangeItem {
-    private String summonBelt;
-    private String summonForm;
-    //private Map<String, String[]> summonAltForms = new HashMap<>();
-    //private Map<String, String[]> summonAltWeapons = new HashMap<>();
-    private List<String> summonWeapons = new ArrayList<>(2);
+    private Map<String, String[]> summonAltForms = new HashMap<>();
+    private Map<String, String[]> summonAltWeapons = new HashMap<>();
 
-    public SaberRidewatchItem(Properties properties, String saberBelt, String form, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+    public SaberRidewatchItem(Properties properties, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
         super(properties, belt, formName, ridername, beltTex, effects);
-        summonBelt = saberBelt;
-        summonForm = form;
     }
 
-    /*public SaberRidewatchItem addAltForm(String item, String... forms) {
+    public SaberRidewatchItem addAltForm(String item, String... forms) {
         this.summonAltForms.put(item, forms);
         return this;
     }
@@ -44,41 +43,34 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
     public SaberRidewatchItem addAltWeapon(String item, String... weapons) {
         this.summonAltWeapons.put(item, weapons);
         return this;
-    }*/
-
-    public SaberRidewatchItem addSummonWeapon(String weapon) {
-        this.summonWeapons.add(weapon);
-        return this;
     }
 
     public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
-            RiderDriverItem belt = (RiderDriverItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelt));
+            RiderDriverItem belt = (RiderDriverItem) Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get();
             summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
             summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));
             summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.TORSO));
             summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.LEGS));
             summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(belt));
-            //Item key = player.getOffhandItem().getItem();
-            
-            /*if (this.summonAltWeapons.containsKey(key.toString())) {
+            Item key = player.getOffhandItem().getItem();
+
+            if (this.summonAltWeapons.containsKey(key.toString())) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[0]))));
                 if (this.summonAltWeapons.get(key.toString()).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[1]))));
-            } else*/ if (!this.summonWeapons.isEmpty()) {
-                summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(0)))));
-                if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
-            }
+            } else summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.KAENKEN_REKKA.get()));
             for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
-            /*if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
+            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
                 RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
             }
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
-                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), (RiderFormChangeItem)BuiltInRegistries.ITEM.get(ResourceLocation.parse(str)), 1);
+                    RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(str));
+                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
                 }
-            }*/
+            }
         
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);

@@ -22,7 +22,9 @@
   "rewards": {
     "recipes": [
       "kamenridercraft:zeztz/zeztz_logo",
-      "kamenridercraft:zeztz/zeztz_driver"
+      "kamenridercraft:zeztz/zeztz_driver",
+      "kamenridercraft:zeztz/breakam_zeztzer_sword",
+      "kamenridercraft:zi_o/zeztz_ridewatch"
     ]
   },
   "sends_telemetry_event": false

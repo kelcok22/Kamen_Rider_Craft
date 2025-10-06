@@ -79,6 +79,17 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:ride_kamens/chaos_driver_agata"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "chaos_driver_loq",
+        "title": "Chaos Driver (LOQ)",
+        "text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/loq)Kamen Rider LOQ"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ride_kamens/chaos_driver_loq"
+      }
 	]
 }

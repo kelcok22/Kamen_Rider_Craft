@@ -2,7 +2,7 @@
 	"name": "Ancient OOO",
 	"icon": "kamenridercraft:ooo_logo",
 	"category": "kamenridercraft:ooo/mobs",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:entity",

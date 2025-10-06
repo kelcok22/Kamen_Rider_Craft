@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:black/shadow_charger",
-	  "kamenridercraft:black/satansaber"
+	  "kamenridercraft:black/satansaber",
+      "kamenridercraft:zi_o/shadow_moon_ridewatch"
 	]
   },
   "sends_telemetry_event": false

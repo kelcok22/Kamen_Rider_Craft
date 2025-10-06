@@ -2,7 +2,7 @@
 	"name": "Green Kingstone (Hajime Sorayama Ver.)",
 	"icon": "kamenridercraft:green_king_stone_hajime_sorayama",
 	"category": "kamenridercraft:black/items",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

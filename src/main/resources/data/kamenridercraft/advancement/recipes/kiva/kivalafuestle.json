@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kiva/kivaladriver"
+	  "kamenridercraft:kiva/kivaladriver",
+      "kamenridercraft:kiva/kivala_saber"
 	]
   },
   "sends_telemetry_event": false

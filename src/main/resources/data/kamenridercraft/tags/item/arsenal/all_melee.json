@@ -125,6 +125,7 @@
 	"kamenridercraft:ixa_knuckle",
 	"kamenridercraft:jacorder",
 	"kamenridercraft:arc_trident",
+    "kamenridercraft:kivala_saber",
 	"kamenridercraft:fangire_slayer",
 	"kamenridercraft:ongekibo_rekka_decade",
 	"kamenridercraft:ongekibo_rekka_diend",
@@ -286,6 +287,9 @@
     "kamenridercraft:jeeb_dagger",
     "kamenridercraft:jeeb_sword",
     "kamenridercraft:glotta_scythe",
-    "kamenridercraft:lango_sword"
+    "kamenridercraft:lango_sword",
+    "kamenridercraft:breakam_zeztzer_sword",
+    "kamenridercraft:breakam_zeztzer_axe",
+    "kamenridercraft:breakam_zeztzer_scythe"
   ]
 }
