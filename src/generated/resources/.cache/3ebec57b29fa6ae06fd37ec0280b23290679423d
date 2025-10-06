@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-06T01:58:00.0899451	Item Models: kamenridercraft
+// 1.21.1	2025-10-06T14:38:13.9962475	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -90,6 +90,7 @@ cd428ab5446f04fd981d9798c4650748e862686c assets/kamenridercraft/models/item/care
 fd6378e7aa4fe861bc5392d1559b991512c63532 assets/kamenridercraft/models/item/chocoball_gochizo.json
 6104219c05b5b7e9cb75021d1cd98f15361bdf46 assets/kamenridercraft/models/item/chocold_gochizo.json
 758915c703a4e1fdec17eb50ce05b992e12ca965 assets/kamenridercraft/models/item/chocopie_gochizo.json
+9cbaec234c094f88837763aa90ab4c018d93c3d3 assets/kamenridercraft/models/item/chocozon_gochizo.json
 ad99ea7902362c5a0b6e6e1df29e456894e87498 assets/kamenridercraft/models/item/choco_treasure_gochizo.json
 9b14d9ce129403d0e2f2dfd83650c0e480cc2e63 assets/kamenridercraft/models/item/chophopper_rider_belt.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/circle_astroswitch.json
@@ -128,6 +129,7 @@ acbd6cd0b978bd2f1f7b206d3f7045f4bc2e7ce0 assets/kamenridercraft/models/item/den_
 9ecb9d242932c4f7b9e9c367a849b3f3927d9758 assets/kamenridercraft/models/item/doctorkozo_ride_chemy_card.json
 0d62d9e64ea663764b69df47964b4a5100f6ded8 assets/kamenridercraft/models/item/donposeidon_ride_chemy_card.json
 7664325c7fcad7a2b5686972d3b784641e3bc458 assets/kamenridercraft/models/item/doppudding_gochizo.json
+bc9de616b8caf16f95d5668405b5512eb8d9ab7b assets/kamenridercraft/models/item/doracan_gochizo.json
 1665d23a3c6bf60a2a78112f79c83eefb583fd54 assets/kamenridercraft/models/item/doranosuke_gochizo.json
 c182251515d3e693a8f39a981d7263f0cbb22436 assets/kamenridercraft/models/item/double_ring.json
 2161007941c0905ff87befc537f7576e2e08e67e assets/kamenridercraft/models/item/dragonalos_ride_chemy_card.json
@@ -371,6 +373,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/peop
 43bd408a10b1669203e4e7e6a47c8415e52ac4df assets/kamenridercraft/models/item/pikahotaru_ride_chemy_card.json
 5e14182024b9f643c8f583e8267b82fe26792e4e assets/kamenridercraft/models/item/pilets_ride_chemy_card.json
 a2dbf137300b6a2829e5e8addd43111119d17912 assets/kamenridercraft/models/item/popburn_gochizo.json
+47eeb2cd297e6a132aa2bc90ea12a983ad3b86e0 assets/kamenridercraft/models/item/poppingummy_gochizo_halloween.json
 668c0a9b585e40f242864d2c65a2fbb8534890e7 assets/kamenridercraft/models/item/potage_umaibo_gochizo.json
 cf5d6cd7d04c073d011ef32a1776093054ce4955 assets/kamenridercraft/models/item/prototype_cup_gochizo.json
 43bda8c5bf518c60593a57b61622246185ad2d39 assets/kamenridercraft/models/item/protozero_core.json
