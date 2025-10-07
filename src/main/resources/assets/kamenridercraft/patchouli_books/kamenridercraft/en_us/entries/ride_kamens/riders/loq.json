@@ -6,16 +6,31 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chaos_driver_loq\",Count:1b},{id:\"kamenridercraft:ride_kamens_legs\",Count:1b},{id:\"kamenridercraft:ride_kamens_troso\",Count:1b},{id:\"kamenridercraft:ride_kamens_head\",Count:1b}]}",
+          "anchor": "lance",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chaos_driver_loq\",components:{custom_data:{slot_tex1:\"kamenridercraft:chaos_ring_loq\"}},Count:1b},{id:\"kamenridercraft:ride_kamens_legs\",Count:1b},{id:\"kamenridercraft:ride_kamens_troso\",Count:1b},{id:\"kamenridercraft:ride_kamens_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": " ",
-			"text": ""
+			"name": "LOQ (Lance Tendo)",
+			"text": "Accessed with the $(l:ride_kamens/items/chaos_rings#chaos_ring_loq)Chaos Ring (LOQ)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider LOQ",
 			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Transforms with the $(l:ride_kamens/devices/chaos_driver#chaos_driver_loq)Chaos Driver$(/l)$(br2)Status Effects:$(li)Punch II$(li)Haste$(li)Jump Boost II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)"
-		}
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "q",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chaos_driver_loq\",components:{custom_data:{slot_tex1:\"kamenridercraft:chaos_ring_loq_q\"}},Count:1b},{id:\"kamenridercraft:ride_kamens_legs\",Count:1b},{id:\"kamenridercraft:ride_kamens_troso\",Count:1b},{id:\"kamenridercraft:ride_kamens_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "LOQ (Q)",
+        "text": "Accessed with the $(l:ride_kamens/items/chaos_rings#chaos_ring_loq)Chaos Ring (LOQ)$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider LOQ",
+        "text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Transforms with the $(l:ride_kamens/devices/chaos_driver#chaos_driver_loq)Chaos Driver$(/l)$(br2)Status Effects:$(li)Punch II$(li)Haste$(li)Jump Boost II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)"
+      }
 	]
 }

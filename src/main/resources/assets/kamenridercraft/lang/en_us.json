@@ -350,7 +350,6 @@
   "effect.kamenridercraft.cosmic_energy":"§bCosmic Energy",
   "effect.kamenridercraft.thunder_slash":"Thunder Slash",
   "effect.kamenridercraft.portal_cooldown":"§5Portal Cooldown",
-  "effect.kamenridercraft.rider_kick":"Rider Kick!",
   "effect.kamenridercraft.rider_poison_hand":"§aRider Dokushu!",
   "effect.kamenridercraft.hazard_level":"Hazard Level",
   "effect.kamenridercraft.happy_mode":"§dHappy Mode",
@@ -477,8 +476,6 @@
   "effect.kamenridercraft.thunder_slash.description": "Causes any entities you hit with a sword to be struck by lightning.",
   "effect.kamenridercraft.portal_cooldown.desc": "Prevents you from using a portal.",
   "effect.kamenridercraft.portal_cooldown.description": "Prevents you from using a portal.",
-  "effect.kamenridercraft.rider_kick.desc": "Lets you perform a Rider Kick by pressing your sneak key.",
-  "effect.kamenridercraft.rider_kick.description": "Lets you perform a Rider Kick by pressing your sneak key.",
   "effect.kamenridercraft.rider_poison_hand.desc": "Poisons any mob you hit with an empty hand.",
   "effect.kamenridercraft.rider_poison_hand.description": "Poisons any mob you hit with an empty hand.",
 
@@ -725,6 +722,8 @@
 
   "message.kamenridercraft.fake":"§2NINCOMPOOP! Shame on you! §6Never Give Up!",
 
+  "message.kamenridercraft.rider_kick": "Rider Kick ready",
+
   "kamenridercraft.name.form":"Form:",
   "kamenridercraft:base.form": "Form: Base Form",
 
@@ -745,6 +744,7 @@
   "vistamp_holder.text": "Vistamp Holder",
   "raise_buckle_holder.text": "Raise Buckle Holder",
   "gotchandraw_holder.text": "Gotchandraw Holder",
+  "gotchancollection_panel.text": "Gotchancollection Panel",
   "valvaradraw_buckle.text": "Valvaradraw Buckle",
   "chemyriser_gui.text": "Chemy Riser",
   "chemyriser_supana_gui.text": "Chemy Riser (Supana ver.)",
@@ -6540,7 +6540,7 @@
   "item.kamenridercraft.forbidden_tome": "Forbidden Tome",
   "item.kamenridercraft.great_book_fragment": "Great Book Fragment",
   "item.kamenridercraft.book_gate_wonder_ride_book": "Book Gate Wonder Ride Book",
-  "item.kamenridercraft.diagospeedy_wonder_ride_book": "Diagospeedy Wonder Ride Book",
+  "item.kamenridercraft.diago_speedy_wonder_ride_book": "Diagospeedy Wonder Ride Book",
 
   "item.kamenridercraft.hissatsuholder": "Hissatsuholder",
 
@@ -7911,7 +7911,7 @@
   "item.kamenridercraft.poppingummy_gochizo_charadeco_ver": "Poppingummy Gochizo (Charadeco ver.)",
   "item.kamenridercraft.merrychristmas_gochizo": "Merry Christmas Gochizo",
   "item.kamenridercraft.kamenridergummy_gochizo": "Kamen Rider Gummy Gochizo",
-  "item.kamenridercraft.poppingummy_gochizo_halloween": "Mischevious Poppingummy Gochizo",
+  "item.kamenridercraft.poppingummy_gochizo_halloween": "Mischievous Poppingummy Gochizo",
   "item.kamenridercraft.chocozon_gochizo": "Chocozon Gochizo",
   "item.kamenridercraft.doracan_gochizo": "Doracan Gochizo",
 
@@ -8103,6 +8103,8 @@
 "kamenridercraft.name.agata": "Rider: Kamen Rider Agata",
 "item.kamenridercraft.chaos_driver_loq": "Chaos Driver",
 "kamenridercraft.name.loq": "Rider: Kamen Rider LOQ",
+"kamenridercraft:chaos_ring_loq.form": "Form: LOQ (Lance Tendo)",
+"kamenridercraft:chaos_ring_loq_q.form": "Form: LOQ (Q)",
 "item.kamenridercraft.chaos_driver_rui": "Chaos Driver",
 "kamenridercraft.name.rui": "Rider: Kamen Rider RUI",
 "item.kamenridercraft.chaos_driver_siz": "Chaos Driver",

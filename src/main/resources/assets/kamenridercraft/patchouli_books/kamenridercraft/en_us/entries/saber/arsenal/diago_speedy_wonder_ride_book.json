@@ -1,0 +1,16 @@
+{
+  "name": "Diagospeedy Wonder Ride Book",
+  "icon": "kamenridercraft:diago_speedy_wonder_ride_book",
+  "category": "kamenridercraft:saber/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to summon the Diagospeedy"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:saber/diago_speedy_wonder_ride_book"
+    }
+  ]
+}

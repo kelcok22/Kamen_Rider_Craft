@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "group": "bugvisor_g",
   "pattern": [
 	"XMX",

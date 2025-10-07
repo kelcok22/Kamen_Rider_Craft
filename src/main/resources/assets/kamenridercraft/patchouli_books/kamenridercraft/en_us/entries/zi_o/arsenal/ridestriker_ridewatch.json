@@ -1,0 +1,16 @@
+{
+  "name": "Bike Ridewatch",
+  "icon": "kamenridercraft:ridestriker_ridewatch",
+  "category": "kamenridercraft:zi_o/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to summon the Ridestriker"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zi_o/ridestriker_ridewatch"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
   "group": "zi_o_ii",
   "ingredients": [
 {

@@ -5,15 +5,17 @@
 	"sortnum": 5,
 	"pages": [
 		{
-			"type": "patchouli:text",
+        	"type": "patchouli:spotlight",
+        	"anchor": "gochipod",
+        	"link_recipe": true,
+        	"item": "kamenridercraft:gochipod",
+        	"title": " ",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#over)Over Mode$(/l) and $(l:gavv/riders/gavv#master)Master Mode$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:gochipod",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gochipod",
+        	"text": "Can be filled with $(l:gavv/items/gochizo)Gochizo$(/l) by clicking similarly to a bundle"
 		}
 	]
 }

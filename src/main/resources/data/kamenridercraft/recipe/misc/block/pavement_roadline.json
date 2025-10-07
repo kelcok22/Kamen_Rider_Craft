@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "pavement",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone_slab"
+    },
+    {
+      "item": "minecraft:white_dye"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kamenridercraft:pavement_roadline"
+  }
+}

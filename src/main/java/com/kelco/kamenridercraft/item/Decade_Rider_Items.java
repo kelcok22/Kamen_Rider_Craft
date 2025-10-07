@@ -200,8 +200,7 @@ public class Decade_Rider_Items {
 
     public static final DeferredItem<Item> KUUGA_MIGHTY_CARD = ITEMS.register("kuuga_mighty_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -209,7 +208,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .allowRiderKick().IsBeltGlowing().IsGlowing().ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_GROUND_CARD = ITEMS.register("agito_ground_card",
 	        () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -661,15 +660,14 @@ public class Decade_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_mighty","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_DRAGON_CARD = ITEMS.register("kuuga_rising_dragon_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_dragon","decade","decadriver_belt",
@@ -718,8 +716,7 @@ public class Decade_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
@@ -729,7 +726,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
   
     public static final DeferredItem<Item> AGITO_STORM_CARD = ITEMS.register("agito_storm_card",
@@ -1029,29 +1026,27 @@ public class Decade_Rider_Items {
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("ichigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).allowRiderKick().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("ichigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> NIGO_CARD = ITEMS.register("nigo_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("nigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).allowRiderKick().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("nigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> V3_CARD = ITEMS.register("v3_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1424,7 +1419,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY(),
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetPalyerModelInvisible().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));

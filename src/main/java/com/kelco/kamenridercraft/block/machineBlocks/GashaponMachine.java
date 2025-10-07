@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.block.machineBlocks;
 
 
 import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
-import com.kelco.kamenridercraft.item.Zeztz_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -25,7 +24,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 
 public class GashaponMachine extends MachineBlock {

@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
-import com.kelco.kamenridercraft.effect.Effect_core;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.Entity;
@@ -33,11 +32,9 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
 
-
     public RiderArmorItem(Holder<ArmorMaterial> armorMaterial, Type type, Properties properties) {
         super(armorMaterial, type, properties.stacksTo(1).durability(type ==Type.BOOTS?600:500));
        // ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
-
     }
 
     @Override
@@ -68,31 +65,25 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
         RawAnimation POSE = RawAnimation.begin().thenLoop("henshin_pose");
 
-        controllerRegistrar.add(new AnimationController<>(this, "Walk/Idle", 20, state -> {
+        controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
             boolean IsWaking = false;
             boolean IsKicking = false;
             boolean isTransforming = false;
             if (entity instanceof LivingEntity player) {
                 if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) IsWaking = true;
-                if (player.hasEffect(Effect_core.RIDER_KICK)) {
-                    if (player.getEffect(Effect_core.RIDER_KICK).getAmplifier() != 0 & player.getEffect(Effect_core.RIDER_KICK).getAmplifier() != 5)
-                        IsKicking = true;
-                }
                 if (RiderDriverItem.isTransforming(player)) {
                     // isTransforming = true;
                 }
             }
 
-
             if (isTransforming) {
                 state.setAndContinue(POSE);
-            } else if (IsKicking) {
+            } else if (entity instanceof LivingEntity player && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.riderKicking) {
                 state.setAndContinue(KICK);
             } else state.setAndContinue(IsWaking ? WALK : IDLE);
             return PlayState.CONTINUE;
         }));
-
     }
 
     public RiderArmorItem ChangeRepairItem(Item item) {

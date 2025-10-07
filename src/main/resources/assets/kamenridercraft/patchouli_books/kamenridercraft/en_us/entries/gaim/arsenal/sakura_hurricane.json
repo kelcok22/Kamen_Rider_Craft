@@ -1,0 +1,16 @@
+{
+  "name": "Sakura Hurricane Lockseed",
+  "icon": "kamenridercraft:sakura_hurricane",
+  "category": "kamenridercraft:gaim/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to summon the Sakura Hurricane"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gaim/sakura_hurricane"
+    }
+  ]
+}

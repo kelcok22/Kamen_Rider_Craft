@@ -1198,6 +1198,45 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "poppingummy_gochizo_halloween",
+        "title": "Mischievous Poppingummy Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:poppingummy_gochizo_halloween",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "chocozon_gochizo",
+        "title": "Chocozon Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:chocozon_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "doracan_gochizo",
+        "title": "Doracan Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:doracan_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "poppingummy_gochizo_charadeco",
