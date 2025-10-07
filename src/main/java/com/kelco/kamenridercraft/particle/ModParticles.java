@@ -73,6 +73,31 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> GOLD_BAT_PARTICLES =
             PARTICLE_TYPES.register("gold_bat_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> RED_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> BLUE_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("blue_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GREEN_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("green_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> YELLOW_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("yellow_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> WHITE_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("white_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> BLACK_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("black_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> PURPLE_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("purple_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> ORANGE_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("orange_wizard_particles", () -> new SimpleParticleType(true));
+
+
     public static final Supplier<SimpleParticleType> HIT_PARTICLES =
             PARTICLE_TYPES.register("hit_particles", () -> new SimpleParticleType(true));
 
@@ -107,11 +132,6 @@ public class ModParticles {
 
     public static final Supplier<SimpleParticleType> CANDY_PARTICLES4 =
             PARTICLE_TYPES.register("candy_4_particles", () -> new SimpleParticleType(true));
-
-
-
-    public static final Supplier<SimpleParticleType> WIZARD_PARTICLES =
-            PARTICLE_TYPES.register("wizard_particles", () -> new SimpleParticleType(true));
 
 
     public static void register(IEventBus eventBus) {

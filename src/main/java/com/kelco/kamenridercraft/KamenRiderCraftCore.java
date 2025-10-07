@@ -655,6 +655,15 @@ public class KamenRiderCraftCore
             event.registerSpriteSet(ModParticles.CHAIN_PARTICLES.get(), ChainParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GOLD_BAT_PARTICLES.get(), GoldBatParticles.Provider::new);
 
+            event.registerSpriteSet(ModParticles.RED_WIZARD_PARTICLES.get(), WizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.BLUE_WIZARD_PARTICLES.get(), BlueWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GREEN_WIZARD_PARTICLES.get(), GreenWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.YELLOW_WIZARD_PARTICLES.get(), YellowWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.WHITE_WIZARD_PARTICLES.get(), WhiteWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.ORANGE_WIZARD_PARTICLES.get(), OrangeWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.BLACK_WIZARD_PARTICLES.get(), BlackWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.PURPLE_WIZARD_PARTICLES.get(), PurpleWizardParticles.Provider::new);
+
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES2.get(), GummiParticles.Provider::new);
@@ -666,7 +675,7 @@ public class KamenRiderCraftCore
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES3.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES4.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), realizingParticles.Provider::new);
-            event.registerSpriteSet(ModParticles.WIZARD_PARTICLES.get(), WizardParticles.Provider::new);
+
         }
         
         @SubscribeEvent
