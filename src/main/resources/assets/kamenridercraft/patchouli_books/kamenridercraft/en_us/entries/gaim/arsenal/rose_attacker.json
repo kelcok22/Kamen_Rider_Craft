@@ -1,0 +1,16 @@
+{
+  "name": "Rose Attacker Lockseed",
+  "icon": "kamenridercraft:rose_attacker",
+  "category": "kamenridercraft:gaim/arsenal",
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to summon the Rose Attacker"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gaim/rose_attacker"
+    }
+  ]
+}

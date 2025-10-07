@@ -116,7 +116,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	}
    
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.2F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ATTACK_DAMAGE, 1.0D);
 	}
    
 	protected void defineSynchedData(SynchedEntityData.Builder builder) {

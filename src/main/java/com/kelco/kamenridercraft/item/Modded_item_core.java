@@ -160,15 +160,14 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,false),
-                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
+            }.allowRiderKick().IsBeltGlowing().IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> EXBEETER = ITEMS.register("exbeeter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_exbeeter","kabuto","kabuto_rider_belt",
@@ -249,9 +248,8 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false),
-                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)
-                    ).IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
+                    ).allowRiderKick().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     //Bakuen no senshi
 
@@ -375,8 +373,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
-                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
             ){
 
                     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -405,7 +402,7 @@ public class Modded_item_core {
                         }
                     }
                 }
-            }.IsBeltGlowing().IsGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
+            }.allowRiderKick().IsBeltGlowing().IsGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",

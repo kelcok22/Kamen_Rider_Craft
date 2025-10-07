@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "black_rx",
+
+  "category": "equipment",  "group": "black_rx",
   "pattern": [
     "XAX",
     "XBX",

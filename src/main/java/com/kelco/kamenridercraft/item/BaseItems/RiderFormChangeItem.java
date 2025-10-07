@@ -27,7 +27,6 @@ import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib.cache.GeckoLibCache;
 
@@ -52,14 +51,13 @@ public class RiderFormChangeItem extends BaseItem {
     private String UPDATED_MODEL;
     private String FLYING_MODEL;
     private String UPDATED_MODEL_ANIMATION;
-    private Boolean SET_PLAYER_MODEL_INVISIBLE = false;
     private Boolean SET_SHOW_FACE = false;
     private Boolean SET_SHOW_UNDER = false;
 
     private Boolean A1 = false;
 
     private Boolean FLYING_TEXT = false;
-    private Item STIFT_ITEM = Items.APPLE;
+    private Item STIFT_ITEM;
     private Item SWITCH_ITEM;
     private Boolean RESET_FORM = false;
     private Boolean RESET_FORM_MAIN = false;
@@ -90,6 +88,8 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem REVERT_FORM;
 
     private Boolean IGNORE_BELT_TEXT = false;
+
+    private boolean allowsRiderKick = false;
 
     private int Store_num =1;
 
@@ -253,10 +253,6 @@ public class RiderFormChangeItem extends BaseItem {
         UPDATED_MODEL_ANIMATION=animation;
         return this;
     }
-    public RiderFormChangeItem SetPalyerModelInvisible() {
-        SET_PLAYER_MODEL_INVISIBLE = true;
-        return this;
-    }
 
     public RiderFormChangeItem SetShowFace() {
         SET_SHOW_FACE = true;
@@ -357,6 +353,15 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem  ignoreOverrideBeltText() {
         IGNORE_BELT_TEXT =true;
+        return this;
+    }
+
+    public boolean allowsRiderKick() {
+        return allowsRiderKick;
+    }
+
+    public RiderFormChangeItem allowRiderKick() {
+        this.allowsRiderKick = true;
         return this;
     }
 

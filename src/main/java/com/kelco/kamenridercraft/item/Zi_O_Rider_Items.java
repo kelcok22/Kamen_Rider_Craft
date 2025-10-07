@@ -1666,7 +1666,7 @@ public class Zi_O_Rider_Items {
                 }
             }
                     .setSummonBelt((RiderDriverItem) Ichigo_Rider_Items.SUN_RISER.get()).setSummonForm((RiderFormChangeItem) Ichigo_Rider_Items.BIO_CORE.get()).addSummonWeapon(Ichigo_Rider_Items.BIOBLADE.get())
-                    .SetPalyerModelInvisible().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_RIDEWATCH = ITEMS.register("shin_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
