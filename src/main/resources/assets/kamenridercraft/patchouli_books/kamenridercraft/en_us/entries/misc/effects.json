@@ -395,12 +395,6 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "rider_kick",
-			"title": "Rider Kick!",
-			"text": "This effect lets you perform a Rider Kick by pressing your sneak key.$(br2)Examples for how to get this effect:$(li)Transform into $(l:kuuga/riders/kuuga)Kamen Rider Kuuga$(/l)'s Mighty/Ultimate forms$(li)Transform into $(l:kuuga/riders/manga_kuuga)Manga Kuuga$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#kick_strike_ring)Kick Strike Wizard Ring$(/l)"
-		},
-		{
-			"type": "patchouli:text",
 			"anchor": "rider_poison_hand",
 			"title": "Rider Dokushu!",
 			"text": "This effect poisons any mob you hit with an empty hand.$(br2)Examples for how to get this effect:$(li)Transform into $(l:drive/riders/brain)Kamen Rider Brain$(/l)"

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "group": "mirror_zi_o",
   "pattern": [
     "XXX",

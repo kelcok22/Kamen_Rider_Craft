@@ -331,7 +331,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.IsGlowing().ChangeSlot(1).SetPalyerModelInvisible().AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
+			}.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> MUKADE_MEDAL = ITEMS.register("mukade_medal",

@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class ReiwaRidewatchItem extends BaseItem {
     private String summonBelt;
-    private String summonForm = null;
+    private String summonForm;
     private Map<String, String[]> summonAltForms = new HashMap<>();
     private Map<String, String> summonAltBelts = new HashMap<>();
     private Map<String, String[]> summonAltWeapons = new HashMap<>();

@@ -97,7 +97,6 @@ public class W_Rider_Items {
 
 	public static final DeferredItem<Item> JOKER_JOKER_MEMORY = ITEMS.register("joker_joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker_joker","w","wdriver_belt_jj",
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -105,12 +104,11 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> JOKER_MEMORY = ITEMS.register("joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker","w","wdriver_belt",
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -118,7 +116,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
+            }.allowRiderKick().IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
 
 	public static final DeferredItem<Item> METAL_MEMORY = ITEMS.register("metal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_metal","w","wdriver_belt",
@@ -312,7 +310,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.SetPalyerModelInvisible().IsGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).model_has_different_name("skull_memory"));
+            }.IsGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).model_has_different_name("skull_memory"));
 
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
@@ -441,15 +439,14 @@ public class W_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","joker","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 	public static final DeferredItem<Item> KEY_T2_MEMORY = ITEMS.register("key_t2_memory",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM)
