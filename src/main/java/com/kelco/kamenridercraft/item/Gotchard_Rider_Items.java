@@ -810,11 +810,10 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
                     .setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get())
                     .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("kuuga").ChangeModel("kuuga.geo.json").addAlternative(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get())
-					.AddToList(NEED_ITEM_ExceedMighty).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+                    .allowRiderKick().AddToList(NEED_ITEM_ExceedMighty).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_RIDE_CHEMY_CARD = ITEMS.register("agito_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -1053,11 +1052,10 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false))
                     .setBaseSummon((RiderDriverItem) Kuuga_Rider_Items.ARCLE.get())
                     .setSuperSummon((RiderDriverItem) Kuuga_Rider_Items.ARCLE.get(), (RiderFormChangeItem) Kuuga_Rider_Items.KUUGA_AMAZING_MIGHTY.get())
-			.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2).IsGlowing()
+                    .allowRiderKick().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2).IsGlowing()
 			.ChangeRiderName("kuuga_ultimate").ChangeModel("kuuga_ultimate.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> AGITO_SHINING_RIDE_CHEMY_CARD = ITEMS.register("agito_shining_ride_chemy_card",

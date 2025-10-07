@@ -7,7 +7,9 @@ import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
@@ -61,9 +63,8 @@ public class ServerPayloadHandler {
 
     private static void handleAbilityKeyPress(ServerPlayer player) {
 
-        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (player.getItemBySlot(EquipmentSlot.FEET).getDamageValue()!=player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage()-1) belt.setUseAbility(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
-        }
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+        && !player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.parse("kamenridercraft:belts/wizard_armor")))) RiderDriverItem.setUseAbility(player.getItemBySlot(EquipmentSlot.FEET));
     }
 
     private static void handleBeltKeyPress(ServerPlayer player) {

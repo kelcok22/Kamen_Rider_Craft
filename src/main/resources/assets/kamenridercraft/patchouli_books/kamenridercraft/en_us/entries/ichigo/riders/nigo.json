@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Nigo",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_nigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_nigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Nigo",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_nigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_nigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

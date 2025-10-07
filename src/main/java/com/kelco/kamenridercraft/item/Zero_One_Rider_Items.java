@@ -301,7 +301,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().SetPalyerModelInvisible().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 5));
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 5));
 	
 	public static final DeferredItem<Item> SPARKING_GIRAFFE_PROGRISEKEY = ITEMS.register("sparking_giraffe_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_giraffe","zero_one","hiden_zero_one_driver_belt",

@@ -38,7 +38,7 @@ public class GotchancollectionPanelItem extends BaseItem {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.translatable("Gotchancollection Panel");
+					return Component.translatable("gotchancollection_panel.text");
 				}
 
 				@Override

@@ -1541,7 +1541,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_BLACK_RAISE_RISER_CARD = ITEMS.register("beroba_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_premium","beroba","raise_riser_belt_premium",
@@ -1570,7 +1570,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
     public static final DeferredItem<Item> KEKERA_BLACK_RAISE_RISER_CARD = ITEMS.register("kekera_black_raise_riser_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_premium","kekera","raise_riser_belt_premium_kekera",
@@ -1599,7 +1599,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GLARE = ITEMS.register("providence_card_glare",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","glare","vision_driver_belt",

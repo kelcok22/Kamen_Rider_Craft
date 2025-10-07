@@ -669,10 +669,9 @@
 			"recipe": "kamenridercraft:misc/block/lime_checkered_tile"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "pavement_roadline",
-			"link_recipe": true,
-			"item": "kamenridercraft:pavement_roadline",
+          "type": "patchouli:crafting",
+          "anchor": "pavement_roadline",
+          "recipe": "kamenridercraft:misc/block/pavement_roadline",
 			"text": "Found throughout the City dimension"
 		},
         {

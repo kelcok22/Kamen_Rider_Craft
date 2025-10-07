@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_1)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_1)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -28,7 +28,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_2)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_2)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -41,7 +41,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_3)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_3)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -54,7 +54,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_4)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_4)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -67,7 +67,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_5)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_5)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -80,7 +80,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_6)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_6)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -93,7 +93,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_7)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_7)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -106,7 +106,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_8)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_8)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_9)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_9)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -132,7 +132,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_10)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_10)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -145,7 +145,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_11)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_11)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -158,7 +158,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_12)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_12)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

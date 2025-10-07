@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Legend",
-        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)$(li)Flame Body VI$(li)Rider Kick!"
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)$(li)Flame Body VI"
       },
       {
         "type": "patchouli:entity",

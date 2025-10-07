@@ -258,7 +258,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetPalyerModelInvisible());
+			}.IsGlowing());
 
 
 	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP = ITEMS.register("gold_spino_vistamp",
@@ -437,7 +437,7 @@ public class Revice_Rider_Items {
 						player.getX(), player.getY()+1,
 						player.getZ(), 100, 0, 0, 0, 1);
 			}
-		}.IsGlowing().addAlternative(JACKAL_VISTAMP_LIVE.get()).SetPalyerModelInvisible());
+		}.IsGlowing().addAlternative(JACKAL_VISTAMP_LIVE.get()));
 
 	public static final DeferredItem<Item> JACKAL_VISTAMP = ITEMS.register("jackal_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","revi","revice_driver_belt_j",
@@ -621,7 +621,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetPalyerModelInvisible().model_has_different_name("niwatori_vistamp").has_basic_model());
+			}.IsGlowing().model_has_different_name("niwatori_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> NIWATORI_VISTAMP = ITEMS.register("niwatori_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_niwatori","revi","revice_driver_belt_ni",
@@ -645,7 +645,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetPalyerModelInvisible().model_has_different_name("niwatori_vistamp").has_basic_model());
+			}.IsGlowing().model_has_different_name("niwatori_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP = ITEMS.register("funkorogashi_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","revi","revice_driver_belt_fu",
@@ -1264,7 +1264,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetPalyerModelInvisible().has_basic_model().model_has_different_name("jackal_vistamp").AddToList(RiderTabs.REVICE_TAB_ITEM));
+			}.IsGlowing().has_basic_model().model_has_different_name("jackal_vistamp").AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> OBLIVION_STAMP = ITEMS.register("oblivion_stamp",

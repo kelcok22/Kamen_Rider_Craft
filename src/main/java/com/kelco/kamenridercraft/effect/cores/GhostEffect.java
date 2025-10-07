@@ -1,8 +1,5 @@
 package com.kelco.kamenridercraft.effect.cores;
 
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
