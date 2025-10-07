@@ -2,7 +2,7 @@
 	"name": "Rider Storage Case",
 	"icon": "kamenridercraft:rider_case",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 18,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.component.DataComponents;
@@ -28,11 +29,16 @@ import java.util.Map;
 
 public class ReiwaRidewatchItem extends BaseItem {
     private String summonBelt;
-    private String summonForm;
+    private String summonForm = null;
     private Map<String, String[]> summonAltForms = new HashMap<>();
     private Map<String, String> summonAltBelts = new HashMap<>();
     private Map<String, String[]> summonAltWeapons = new HashMap<>();
     private List<String> summonWeapons = new ArrayList<>(2);
+
+    public ReiwaRidewatchItem(Properties properties, String belt) {
+        super(properties);
+        summonBelt = belt;
+    }
 
     public ReiwaRidewatchItem(Properties properties, String belt, String form) {
         super(properties);
@@ -64,7 +70,6 @@ public class ReiwaRidewatchItem extends BaseItem {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
             RiderDriverItem belt = (RiderDriverItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelt));
-            RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonForm));
 
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
 			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));
@@ -84,16 +89,30 @@ public class ReiwaRidewatchItem extends BaseItem {
                 if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
             }
 
-            if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
-            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
-                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
+            if (this.summonForm != null) {
+                RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonForm));
+                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
             }
-            if (this == Zi_O_Rider_Items.GEATS_RIDEWATCH.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_RAISE_BUCKLE.get(), 3);
+            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
+                if (this == Zi_O_Rider_Items.GEATS_RIDEWATCH.get()) {
+                    if (key == Geats_Rider_Items.GEATS_CORE_ID.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Modded_item_core.BLANK_FORM.get(), 2);
+                    else if (key == Geats_Rider_Items.COMMAND_TWIN_BUCKLE_CANNON.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get(), 3);
+                    else if (key == Geats_Rider_Items.UNITE_GRIP.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get(), 3);
+                    else if (key == Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()||key == Geats_Rider_Items.ONENESS_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get(), 3);
+                }
+                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
+            } else if (this == Zi_O_Rider_Items.GEATS_RIDEWATCH.get()) {
+                if (key == Geats_Rider_Items.POWERED_BUILDER_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get(), 3);
+                else if (key == Geats_Rider_Items.FEVER_SLOT_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get(), 3);
+                else if (key == Geats_Rider_Items.FANTASY_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Modded_item_core.BLANK_FORM.get(), 3);
+                else RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_RAISE_BUCKLE.get(), 3);
+            }
             for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
-                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), (RiderFormChangeItem)BuiltInRegistries.ITEM.get(ResourceLocation.parse(str)), 1);
+                    RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(str));
+                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
                 }
             }
         

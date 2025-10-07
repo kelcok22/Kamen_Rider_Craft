@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Bosses:$(li)$(l:ooo/mobs/kazari)Kazari$(/l) (in savanna biomes)$(li)$(l:ooo/mobs/uva)Uva$(/l) (in forest biomes)$(li)$(l:ooo/mobs/gamel)Gamel$(/l) (in badland biomes)$(li)$(l:ooo/mobs/mezool)Mezool$(/l) (in river/ocean biomes)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l) (in mountain biomes)$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l) (in the Nether)$(br2)Bosses in other biomes:$(li)$(l:ooo/mobs/kazari)Kazari$(/l) (2%)$(li)$(l:ooo/mobs/uva)Uva$(/l) (2%)$(li)$(l:ooo/mobs/gamel)Gamel$(/l) (2%)$(li)$(l:ooo/mobs/mezool)Mezool$(/l) (2%)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l) (2%)"
+			"text": "Bosses:$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l) (in savanna biomes)$(li)$(l:ooo/mobs/uva_mob)Uva$(/l) (in forest biomes)$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l) (in badland biomes)$(li)$(l:ooo/mobs/mezooi_mob)Mezool$(/l) (in river/ocean biomes)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l) (in mountain biomes)$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l) (in the Nether)$(li)$(l:ooo/mobs/kyoryu_greeed_mob)Kyoryu Greeed$(/l) (in the End)$(br2)Bosses in other biomes:$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l) (2%)$(li)$(l:ooo/mobs/uva_mob)Uva$(/l) (2%)$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l) (2%)$(li)$(l:ooo/mobs/mezooi_mob)Mezool$(/l) (2%)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l) (2%)"
 		}
 	]
 }

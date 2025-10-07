@@ -1,0 +1,16 @@
+{
+	"name": "Breakam Zeztzer (Gun Mode)",
+	"icon": "kamenridercraft:breakam_zeztzer_gun",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used by Zeztz's $(l:zeztz/riders/zeztz#stream)Technolom forms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_zeztzer_gun"
+		}
+	]
+}

@@ -983,6 +983,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Decade",
 			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
-		}
-	]
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "ooo_armor",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ooo_armor_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "OOO Armor",
+        "text": "Accessed with the $(l:decade/items/final_formride_cards#decade_ooo_armor_card)Final FormRide OOO Armor$(/l) card"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Decade",
+        "text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Transforms with the $(l:decade/devices/decadriver)Decadriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(li)Flying III"
+      }
+    ]
 }

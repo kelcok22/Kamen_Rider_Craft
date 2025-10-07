@@ -27,7 +27,8 @@
 	  "kamenridercraft:zx/zx_belt",
 	  "kamenridercraft:zx/zx_logo",
 	  "kamenridercraft:decade/zx_card",
-	  "kamenridercraft:fourze/zx_switch"
+	  "kamenridercraft:fourze/zx_switch",
+      "kamenridercraft:zi_o/zx_ridewatch"
 	]
   },
   "sends_telemetry_event": false
