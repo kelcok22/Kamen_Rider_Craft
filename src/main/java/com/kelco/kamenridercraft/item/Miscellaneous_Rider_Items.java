@@ -263,8 +263,8 @@ public class Miscellaneous_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","loq","chaos_driver_loq_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .SetShowFace().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
-//.IsGlowing().IsBeltGlowing()
+                    .SetShowFace().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+
 
     public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
 		            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
@@ -305,9 +305,6 @@ public class Miscellaneous_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"loq",CHAOS_RING_LOQ ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
                     .Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
-
-    // TODO: Add Catboy Double, and also WeHn PaLyEr AnIaMtOnS
-    // TODO: you do 2, I'll make 1!
 
 		    public static final DeferredItem<Item> GASHA_TICKET = ITEMS.register("gasha_ticket",
 		    		() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gasha_ticket")).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
