@@ -13,6 +13,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -136,10 +138,14 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
             public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                 super.OnTransformation(itemstack, player);
-                ((ServerLevel) player.level()).sendParticles(ParticleTypes.CHERRY_LEAVES,
-                        player.getX(), player.getY()+3,
-                        player.getZ(), 400, 0, 0, 0, 3);}
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 100, 0, 0, 0, 1);
+                ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 100, 0, 0, 0, 1);
+            }
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN cuStOm chErRy peTal pARtIcLe
 
         public static final DeferredItem<Item> HENSHIN_ONSA_TOUKI = ITEMS.register("henshin_onsa_touki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","touki_m","toukidriver_belt",
@@ -210,7 +216,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
             public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                 super.OnTransformation(itemstack, player);
-                ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_LARGE,
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                         player.getX(), player.getY()+1,
                         player.getZ(), 25, 0, 0, 0, 0.1);}
         }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
@@ -219,21 +225,39 @@ public class Hibiki_Rider_Items {
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","touki","tokidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 25, 0, 0, 0, 0.1);}
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_SHOUKI = ITEMS.register("henshin_onibue_shouki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","shouki","shoukidriver_belt",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 25, 0, 0, 0, 0.1);}
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_AMAKI = ITEMS.register("henshin_onibue_amaki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","amaki","amakidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 25, 0, 0, 0, 0.1);}
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_FUBUKI = ITEMS.register("henshin_onibue_fubuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","fubuki","fubukidriver_belt",
@@ -242,19 +266,51 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 25, 0, 0, 0, 0.1);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.SNOWFLAKE,
+                        player.getX(), player.getY()+1,
+                        player.getZ(), 100, 0, 0, 0, 1);}
+
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
         
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_TODOROKI = ITEMS.register("henshin_kigen_todoroki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","todoroki","todorokidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                        player.getX(), player.getY() + 1,
+                        player.getZ(), 300, 0, 0, 0, 0.1);
+                LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                thunder.setVisualOnly(true);
+                thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                player.level().addFreshEntity(thunder);
+            }
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_ZANKI = ITEMS.register("henshin_kigen_zanki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","zanki","zankidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                        player.getX(), player.getY() + 1,
+                        player.getZ(), 300, 0, 0, 0, 0.1);
+                LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                thunder.setVisualOnly(true);
+                thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                player.level().addFreshEntity(thunder);
+            }
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_SHUKI = ITEMS.register("henshin_kigen_shuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","shuki","shukidriver_belt",
@@ -262,7 +318,18 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                        player.getX(), player.getY() + 1,
+                        player.getZ(), 300, 0, 0, 0, 0.1);
+                LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                thunder.setVisualOnly(true);
+                thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                player.level().addFreshEntity(thunder);
+            }
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_BANKI = ITEMS.register("henshin_kigen_banki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","banki","bankidriver_belt",
@@ -271,13 +338,35 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                        player.getX(), player.getY() + 1,
+                        player.getZ(), 300, 0, 0, 0, 0.1);
+                LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                thunder.setVisualOnly(true);
+                thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                player.level().addFreshEntity(thunder);
+            }
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_SABAKI = ITEMS.register("henshin_kigen_sabaki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","sabaki","sabakidriver_belt",
                 new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+            public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                super.OnTransformation(itemstack, player);
+                ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                        player.getX(), player.getY() + 1,
+                        player.getZ(), 300, 0, 0, 0, 0.1);
+                LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                thunder.setVisualOnly(true);
+                thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                player.level().addFreshEntity(thunder);
+            }
+        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
         
         public static final DeferredItem<Item> HIBIKIHELMET = ITEMS.register("hibikihead",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM));
