@@ -372,7 +372,7 @@
 			"type": "patchouli:text",
 			"anchor": "zero_one_ridewatch",
 			"title": "Zero-One Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can summon $(l:zero_one/riders/zero_one)Kamen Rider Zero-One$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -383,7 +383,7 @@
 			"type": "patchouli:text",
 			"anchor": "saber_ridewatch",
 			"title": "Saber Ridewatch",
-			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!-$(br2)Used to access $(l:zi_o/riders/zi_o#decade_saber)DecadeArmor Saber Form$(/l)"
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!-$(br2)Used to access $(l:zi_o/riders/zi_o#decade_saber)DecadeArmor Saber Form$(/l)$(br2)Can summon $(l:saber/riders/saber)Kamen Rider Saber$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -394,7 +394,7 @@
 			"type": "patchouli:text",
 			"anchor": "revi_ridewatch",
 			"title": "Revi Ridewatch",
-			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)$(br2)Can summon $(l:revi/riders/revi)Kamen Rider Revi$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -405,7 +405,7 @@
 			"type": "patchouli:text",
 			"anchor": "vice_ridewatch",
 			"title": "Vice Ridewatch",
-			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)$(br2)Can summon $(l:vice/riders/vice)Kamen Rider Vice$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -416,7 +416,7 @@
 			"type": "patchouli:text",
 			"anchor": "geats_ridewatch",
 			"title": "Geats Ridewatch",
-			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)$(br2)Can summon $(l:geats/riders/geats)Kamen Rider Geats$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -427,13 +427,35 @@
 			"type": "patchouli:text",
 			"anchor": "gotchard_ridewatch",
 			"title": "Gotchard Ridewatch",
-			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)$(br2)Can summon $(l:gotchard/riders/gotchard)Kamen Rider Gotchard$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:zi_o/gotchard_ridewatch"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "gavv_ridewatch",
+        "title": "Gavv Ridewatch",
+        "text": "Appears in:$(li)DX Zeztz & Gavv & Zero-One Ridewatch (2025, toyline)$(br2)Can summon $(l:gavv/riders/gavv)Kamen Rider Gavv$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/gavv_ridewatch"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zeztz_ridewatch",
+        "title": "Zeztz Ridewatch",
+        "text": "Appears in:$(li)DX Zeztz & Gavv & Zero-One Ridewatch (2025, toyline)$(br2)Can summon $(l:zeztz/riders/zeztz)Kamen Rider Zeztz$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l) with the reiwaRidewatches gamerule enabled"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/zeztz_ridewatch"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "amazon_alpha_ridewatch",
@@ -801,6 +823,61 @@
 			"title": " ",
 			"recipe": "kamenridercraft:zi_o/stronger_ridewatch"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "skyrider_ridewatch",
+        "title": "Skyrider Ridewatch",
+        "text": "Appears in:$(li)DX Showa Rider Ridewatch Set 2 (2025, toyline)$(br2)Can summon $(l:skyrider/riders/skyrider)Skyrider$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/skyrider_ridewatch"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "super_1_ridewatch",
+        "title": "Super-1 Ridewatch",
+        "text": "Appears in:$(li)DX Showa Rider Ridewatch Set 2 (2025, toyline)$(br2)Can summon $(l:super_1/riders/super_1)Kamen Rider Super-1$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/super_1_ridewatch"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zx_ridewatch",
+        "title": "ZX Ridewatch",
+        "text": "Appears in:$(li)DX Showa Rider Ridewatch Set 2 (2025, toyline)$(br2)Can summon $(l:zx/riders/zx)Kamen Rider ZX$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/zx_ridewatch"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "black_ridewatch",
+        "title": "Black Ridewatch",
+        "text": "Appears in:$(li)DX Showa Rider Ridewatch Set 2 (2025, toyline)$(br2)Can summon $(l:black/riders/black)Kamen Rider Black$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/black_ridewatch"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shadow_moon_ridewatch",
+        "title": "Shadow Moon Ridewatch",
+        "text": "Appears in:$(li)DX Showa Rider Ridewatch Set 2 (2025, toyline)$(br2)Can summon $(l:black/riders/shadow_moon)Shadow Moon$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) or $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:zi_o/shadow_moon_ridewatch"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "black_rx_ridewatch",

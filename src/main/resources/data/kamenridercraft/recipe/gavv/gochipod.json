@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gavv",
+  "pattern": [
+	"XYX",
+	"XMX",
+	"XCX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:granute_glass"
+	},
+	"M": {
+	  "item": "kamenridercraft:blizzardsorbei_gochizo"
+	},
+	  "Y": {
+		  "item": "minecraft:hopper"
+	  },
+	  "C": {
+		  "item": "kamenridercraft:caking_gochizo"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:gochipod_empty"
+  }	
+}

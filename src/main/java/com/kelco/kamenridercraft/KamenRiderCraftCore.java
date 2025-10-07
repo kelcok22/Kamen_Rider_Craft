@@ -530,6 +530,7 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.KODAMA_SUIKA_ARMS.get(), KodamaSuikaArmsRenderer::new);
 
             event.registerEntityRenderer(MobsCore.TRILOBITE_MAGIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DODO_MAGIA_CHICK.get(), BasicEntityRenderer::new);

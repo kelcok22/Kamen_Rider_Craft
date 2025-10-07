@@ -2,8 +2,11 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.bikes.RidevendorVendingModeEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gaim.*;
+import com.kelco.kamenridercraft.item.ooo.CandroidItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.LockseedHolderGuiMenu;
@@ -1308,9 +1311,21 @@ public class Gaim_Rider_Items {
             }
 					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
-	/**
-	sakura_hurricane
-	rose_attacker
+    public static final DeferredItem<Item> SAKURA_HURRICANE = ITEMS.register("sakura_hurricane",
+            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.sakura_hurricane"), MobsCore.SAKURA_HURRICANE)
+                    .has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+    public static final DeferredItem<Item> ROSE_ATTACKER = ITEMS.register("rose_attacker",
+            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.rose_attacker"), MobsCore.ROSE_ATTACKER)
+                    .has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+    public static final DeferredItem<Item> DANDELINER = ITEMS.register("dandeliner",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+    public static final DeferredItem<Item> TULIP_HOPPER = ITEMS.register("tulip_hopper",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+    /**
 	dandeliner
 	tulip_hopper
 **/

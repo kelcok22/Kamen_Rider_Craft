@@ -92,6 +92,19 @@
 			"item": "kamenridercraft:greeed_blet_muchiri",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "greeed_blet_kyoryu",
+        "title": "Greeed Belt (Kyoryu Greeed)",
+        "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/kyoryu_greeed)Kyoryu Greeed"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:greeed_blet_kyoryu",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:ooo/mobs/kyoryu_greeed_mob)Kyoryu Greeed$(/l)"
+      }
 	]
 }

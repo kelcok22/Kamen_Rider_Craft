@@ -2,7 +2,7 @@
 	"name": "Fangire Buster",
 	"icon": "kamenridercraft:fangire_buster",
 	"category": "kamenridercraft:kiva/arsenal",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

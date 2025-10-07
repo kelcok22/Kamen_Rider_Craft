@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Fourze",
-			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Transforms with the $(l:fourze/devices/fourze_driver)Fourze Driver$(/l)$(br2)Status Effects:$(li)States effects + see below$(li)Low Gravity VII"
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Transforms with the $(l:fourze/devices/fourze_driver)Fourze Driver$(/l)$(br2)Status Effects:$(li)States effects + see below$(li)Slow Falling VII"
 		},
 		{
 			"type": "patchouli:entity",

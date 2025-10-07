@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Goda",
 	"icon": "kamenridercraft:ooo_logo",
 	"category": "kamenridercraft:ooo/mobs",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:entity",

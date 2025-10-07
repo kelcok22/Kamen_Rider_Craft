@@ -695,7 +695,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.BIKAISER.get(), KaiserEntity.setAttributes().build());
 
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
-		event.put(MobsCore.WOZ.get(), GingaEntity.setAttributes().build());
+		event.put(MobsCore.WOZ.get(), WozEntity.setAttributes().build());
+        event.put(MobsCore.KODAMA_SUIKA_ARMS.get(), KodamaSuikaArmsEntity.setAttributes().build());
 
 		event.put(MobsCore.TRILOBITE_MAGIA.get(), TrilobiteMagiaEntity.setAttributes().build());
 		event.put(MobsCore.DODO_MAGIA_CHICK.get(), DodoMagiaChickEntity.setAttributes().build());

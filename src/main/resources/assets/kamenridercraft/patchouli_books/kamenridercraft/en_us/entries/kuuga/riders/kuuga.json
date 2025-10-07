@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kuuga Ball",
-			"text": "Accessed with the $(l:decade/items/kuuga_ball)Final FormRide Kuuga Ball$(/l) card"
+			"text": "Accessed with the $(l:decade/items/final_formride_cards#kuuga_ball)Final FormRide Kuuga Ball$(/l) card"
 		},
 		{
 			"type": "patchouli:text",

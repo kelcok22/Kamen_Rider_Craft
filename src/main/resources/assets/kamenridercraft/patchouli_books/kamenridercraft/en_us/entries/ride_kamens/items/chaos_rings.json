@@ -92,6 +92,19 @@
 			"item": "kamenridercraft:chaos_ring_agata",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:ride_kamens/items/gasha_ticket)Gasha Tickets$(/l)"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "chaos_ring_loq",
+        "title": "Chaos Ring (LOQ)",
+        "text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used to craft LOQ's $(l:ride_kamens/devices/chaos_driver#chaos_driver_loq)Chaos Driver (LOQ)$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:chaos_ring_loq",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:ride_kamens/items/gasha_ticket)Gasha Tickets$(/l)"
+      }
 	]
 }

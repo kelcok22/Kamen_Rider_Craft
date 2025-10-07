@@ -840,6 +840,32 @@
 			"item": "kamenridercraft:heisei_rider_lockseed",
 			"title": " ",
 			"text": "Item is currently unobtainable"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "tulip_hopper",
+        "title": "Tulip Hopper Lockseed",
+        "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:tulip_hopper",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "dandeliner",
+        "title": "Dandeliner Lockseed",
+        "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dandeliner",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
 	]
 }

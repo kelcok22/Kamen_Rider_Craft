@@ -1,0 +1,16 @@
+{
+	"name": "Breakam Zeztzer (Sword Mode)",
+	"icon": "kamenridercraft:breakam_zeztzer_sword",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used by Zeztz's $(l:zeztz/riders/zeztz#impact)Physicam forms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_zeztzer_sword"
+		}
+	]
+}

@@ -472,6 +472,7 @@ public class Gavv_Rider_Items {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
+
 				}
 			}.IsGlowing().addSwitchForm(GOCHIPOD_MASTER.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
@@ -847,6 +848,18 @@ public class Gavv_Rider_Items {
                             player.getZ(), 40, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddToList(CHOCO,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_HALLOWEEN = ITEMS.register("poppingummy_gochizo_halloween",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> CHOCOZON_GOCHIZO = ITEMS.register("chocozon_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> DORACAN_GOCHIZO = ITEMS.register("doracan_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_CHARADECO = ITEMS.register("poppingummy_gochizo_charadeco_ver",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")

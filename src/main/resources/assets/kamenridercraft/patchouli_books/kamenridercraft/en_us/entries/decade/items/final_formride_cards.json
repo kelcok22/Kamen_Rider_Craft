@@ -1,0 +1,33 @@
+{
+	"name": "Final FormRide Cards",
+	"icon": "kamenridercraft:kuuga_ball",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 9,
+	"pages": [
+      {
+        "type": "patchouli:text",
+		"anchor": "decade_ooo_armor_card",
+        "text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access Decade's $(l:decade/riders/decade#ooo_armor)OOO Armor$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:decade_ooo_armor_card",
+        "title": "Final FormRide OOO Armor",
+        "text": "Item is currently unobtainable"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_ball",
+          "title": "Final FormRide Kuuga Ball",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#kuuga_ball)Kuuga Ball$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_ball",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+		}
+	]
+}

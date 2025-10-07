@@ -9,6 +9,7 @@ import java.util.function.Consumer;
 
 
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -138,16 +139,20 @@ public class RiderDriverItem extends RiderArmorItem {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
                     List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
                     for (MobEffectInstance effect : potionEffectList) {
-                        if (effect.getEffect() != MobEffects.DAMAGE_BOOST&
-                                effect.getEffect() != MobEffects.DIG_SPEED&
-                                effect.getEffect() != MobEffects.REGENERATION&
-                                effect.getEffect() != MobEffects.DAMAGE_RESISTANCE&
-                                effect.getEffect() != MobEffects.MOVEMENT_SPEED&
-                                effect.getEffect() != Effect_core.NOTE&
-                                effect.getEffect() != Effect_core.SLASH&
-                                effect.getEffect() != Effect_core.PUNCH&
-                                effect.getEffect() != Effect_core.GREEED&
-                                effect.getEffect() != Effect_core.BUGSTER
+                        if ((effect.getEffect() != MobEffects.DAMAGE_BOOST&&
+                                effect.getEffect() != MobEffects.DIG_SPEED&&
+                                effect.getEffect() != MobEffects.REGENERATION&&
+                                effect.getEffect() != MobEffects.DAMAGE_RESISTANCE&&
+                                effect.getEffect() != MobEffects.MOVEMENT_SPEED&&
+                                effect.getEffect() != Effect_core.NOTE&&
+                                effect.getEffect() != Effect_core.SLASH&&
+                                effect.getEffect() != Effect_core.PUNCH&&
+                                effect.getEffect() != Effect_core.GREEED&&
+                                effect.getEffect() != Effect_core.BUGSTER)
+                                ||(player instanceof BaseSummonEntity
+                                &&(effect.getEffect() != MobEffects.DAMAGE_RESISTANCE || effect.getAmplifier() < 3)
+                                &&effect.getEffect() != Effect_core.GREEED&&
+                                effect.getEffect() != Effect_core.BUGSTER)
                                 ||player instanceof Player) {
                             player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
                         }

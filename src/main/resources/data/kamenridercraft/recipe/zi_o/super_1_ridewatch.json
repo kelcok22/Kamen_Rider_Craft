@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:cyclode_core"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:super_1_ridewatch"
+  }
+}
