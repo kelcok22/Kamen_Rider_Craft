@@ -6,8 +6,9 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.Nullable;
 
-public class WizardParticles extends TextureSheetParticle {
-    protected WizardParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet) {
+public class YellowWizardParticles extends TextureSheetParticle {
+    protected YellowWizardParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet,
+                                    double xSpeed, double ySpeed, double zSpeed) {
         super(level, x-0.25, y, z,1,-0.5,0);
 
         this.friction = 0.8f;
@@ -17,7 +18,7 @@ public class WizardParticles extends TextureSheetParticle {
 this.scale(10);
 
         this.rCol = 1f;
-        this.gCol = 0f;
+        this.gCol = 1f;
         this.bCol = 0f;
 
     }
@@ -56,7 +57,7 @@ this.scale(10);
         @Override
         public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel,
                                        double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed) {
-            return new WizardParticles(clientLevel, pX, pY, pZ, this.spriteSet);
+            return new YellowWizardParticles(clientLevel, pX, pY, pZ, this.spriteSet, pXSpeed, pYSpeed, pZSpeed);
         }
     }
 }
