@@ -133,6 +133,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> CANDY_PARTICLES4 =
             PARTICLE_TYPES.register("candy_4_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> PUDDING_PARTICLES =
+            PARTICLE_TYPES.register("pudding_particles", () -> new SimpleParticleType(true));
+
 
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
