@@ -664,6 +664,13 @@ public class KamenRiderCraftCore
             event.registerSpriteSet(ModParticles.ORANGE_WIZARD_PARTICLES.get(), OrangeWizardParticles.Provider::new);
             event.registerSpriteSet(ModParticles.BLACK_WIZARD_PARTICLES.get(), BlackWizardParticles.Provider::new);
             event.registerSpriteSet(ModParticles.PURPLE_WIZARD_PARTICLES.get(), PurpleWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GOLD_WIZARD_PARTICLES.get(), GoldWizardParticles.Provider::new);
+
+            event.registerSpriteSet(ModParticles.BEAST_PARTICLES.get(), GoldWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.RED_BEAST_PARTICLES.get(), WizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GREEN_BEAST_PARTICLES.get(), GreenWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.ORANGE_BEAST_PARTICLES.get(), OrangeWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.PURPLE_BEAST_PARTICLES.get(), PurpleWizardParticles.Provider::new);
 
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES.get(), GummiParticles.Provider::new);
