@@ -438,8 +438,11 @@ public class RiderFormChangeItem extends BaseItem {
         }
         if(hasIncompatibleForms) {
             for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
-                if (incompatibleForm == RiderDriverItem.get_Form_Item(stack, 1)) {
-                    return false;
+                int num_forms = belt.Num_Base_Form_Item;
+                    for (int n = 0; n < num_forms; n++) {
+                    if (incompatibleForm == RiderDriverItem.get_Form_Item(stack, n)) {
+                        return false;
+                    }
                 }
             }
         }
