@@ -530,6 +530,7 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidRenderer::new);
             event.registerEntityRenderer(MobsCore.KODAMA_SUIKA_ARMS.get(), KodamaSuikaArmsRenderer::new);
 
             event.registerEntityRenderer(MobsCore.TRILOBITE_MAGIA.get(), BasicEntityRenderer::new);
@@ -663,17 +664,26 @@ public class KamenRiderCraftCore
             event.registerSpriteSet(ModParticles.ORANGE_WIZARD_PARTICLES.get(), OrangeWizardParticles.Provider::new);
             event.registerSpriteSet(ModParticles.BLACK_WIZARD_PARTICLES.get(), BlackWizardParticles.Provider::new);
             event.registerSpriteSet(ModParticles.PURPLE_WIZARD_PARTICLES.get(), PurpleWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GOLD_WIZARD_PARTICLES.get(), GoldWizardParticles.Provider::new);
+
+            event.registerSpriteSet(ModParticles.BEAST_PARTICLES.get(), GoldWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.RED_BEAST_PARTICLES.get(), WizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GREEN_BEAST_PARTICLES.get(), GreenWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.ORANGE_BEAST_PARTICLES.get(), OrangeWizardParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.PURPLE_BEAST_PARTICLES.get(), PurpleWizardParticles.Provider::new);
 
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES2.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES3.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.SNACK_PARTICLES.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MARSHMALLOW_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.CHOCO_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES2.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES3.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES4.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.PUDDING_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), realizingParticles.Provider::new);
 
         }

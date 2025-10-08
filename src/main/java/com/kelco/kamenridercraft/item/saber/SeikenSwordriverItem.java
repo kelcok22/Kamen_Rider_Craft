@@ -187,10 +187,10 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         }
         if (isTransformed(livingEntity)){
             switch (currentSlot) {
-                case LEGS, CHEST ->{
+                case LEGS ->{
                     return false;
                 }
-                case  HEAD-> {
+                case  CHEST,HEAD-> {
                     return true;
                 }
                 default -> {}
@@ -206,7 +206,6 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         switch (currentSlot) {
             case HEAD,LEGS,CHEST ->{
                 return true;
-
             }
 
             default -> {}

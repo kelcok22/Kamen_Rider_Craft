@@ -94,8 +94,26 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> PURPLE_WIZARD_PARTICLES =
             PARTICLE_TYPES.register("purple_wizard_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> GOLD_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("gold_wizard_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> ORANGE_WIZARD_PARTICLES =
             PARTICLE_TYPES.register("orange_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> BEAST_PARTICLES =
+            PARTICLE_TYPES.register("beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> ORANGE_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("orange_beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> RED_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("red_beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> PURPLE_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("purple_beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GREEN_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("green_beast_particles", () -> new SimpleParticleType(true));
 
 
     public static final Supplier<SimpleParticleType> HIT_PARTICLES =
@@ -116,6 +134,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> SNACK_PARTICLES =
             PARTICLE_TYPES.register("snack_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> MARSHMALLOW_PARTICLES =
+            PARTICLE_TYPES.register("marshmallow_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> CHOCO_PARTICLES =
             PARTICLE_TYPES.register("choco_particles", () -> new SimpleParticleType(true));
 
@@ -125,13 +146,14 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> CANDY_PARTICLES2 =
             PARTICLE_TYPES.register("candy_2_particles", () -> new SimpleParticleType(true));
 
-
     public static final Supplier<SimpleParticleType> CANDY_PARTICLES3 =
             PARTICLE_TYPES.register("candy_3_particles", () -> new SimpleParticleType(true));
 
-
     public static final Supplier<SimpleParticleType> CANDY_PARTICLES4 =
             PARTICLE_TYPES.register("candy_4_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> PUDDING_PARTICLES =
+            PARTICLE_TYPES.register("pudding_particles", () -> new SimpleParticleType(true));
 
 
     public static void register(IEventBus eventBus) {

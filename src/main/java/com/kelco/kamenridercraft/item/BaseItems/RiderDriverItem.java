@@ -25,6 +25,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
@@ -221,6 +222,13 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+    @Override
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        if (entity instanceof LivingEntity player) {
+            beltTick(stack,level,player,slotId);
+        }
+    }
+
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         if(isTransformed(player)) {
             OnTransformation(itemstack,player);
@@ -232,11 +240,7 @@ public class RiderDriverItem extends RiderArmorItem {
         }
 
     }
-    /*
-    public void OnTransform(ItemStack itemstack, LivingEntity player) {
-        if (player.getItemBySlot(EquipmentSlot.FEET)==itemstack) OnTransformation(itemstack, player);
-    }
-    */
+
     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
         if(isTransformed(player) && !player.level().isClientSide()) {
             for (int n = 0; n < Num_Base_Form_Item; n++) {
