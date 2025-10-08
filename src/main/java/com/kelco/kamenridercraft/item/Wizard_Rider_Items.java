@@ -419,8 +419,17 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FALCO_RING_WIZARD = ITEMS.register("falco_ring_wizard",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_falco","wizard","wizardriver_belt",
@@ -428,8 +437,17 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-                    .allowRiderKick().IsGlowing().addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1));
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().IsGlowing().addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1));
 
 	public static final DeferredItem<Item> FALCO_RING = ITEMS.register("falco_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_falco","beast","beast_driver_belt",
@@ -437,8 +455,17 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-                    .IsGlowing().addAlternative(FALCO_RING_WIZARD.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().addAlternative(FALCO_RING_WIZARD.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					);
 
 	public static final DeferredItem<Item> CHAMELEO_RING = ITEMS.register("chameleo_ring",
@@ -447,8 +474,17 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-                    ,new MobEffectInstance(Effect_core.STEALTH, 40, 4,true,false))
-                    .IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+                    ,new MobEffectInstance(Effect_core.STEALTH, 40, 4,true,false)) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BUFFA_RING_WIZARD = ITEMS.register("buffa_ring_wizard",
@@ -458,16 +494,34 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .allowRiderKick().IsGlowing().addNeedForm(FALCO_RING_WIZARD.get(),1));
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().IsGlowing().addNeedForm(FALCO_RING_WIZARD.get(),1));
 
 	public static final DeferredItem<Item> BUFFA_RING = ITEMS.register("buffa_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_buffa","beast","beast_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().addAlternative(BUFFA_RING_WIZARD.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().addAlternative(BUFFA_RING_WIZARD.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					);
 
 	public static final DeferredItem<Item> DOLPHI_RING = ITEMS.register("dolphi_ring",
@@ -476,8 +530,17 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
-					,new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HYPER_RING = ITEMS.register("hyper_ring",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_hyper","beast","beast_driver_belt",
@@ -485,8 +548,20 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-                    .IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BEAST_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 1, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WISEMAN_RING = ITEMS.register("wiseman_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","wiseman","wise_driver_belt",
@@ -563,10 +638,10 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_WIZARD_PARTICLES.get(),
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_WIZARD_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 1, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }

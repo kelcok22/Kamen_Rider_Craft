@@ -94,8 +94,26 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> PURPLE_WIZARD_PARTICLES =
             PARTICLE_TYPES.register("purple_wizard_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> GOLD_WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("gold_wizard_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> ORANGE_WIZARD_PARTICLES =
             PARTICLE_TYPES.register("orange_wizard_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> BEAST_PARTICLES =
+            PARTICLE_TYPES.register("beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> ORANGE_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("orange_beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> RED_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("red_beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> PURPLE_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("purple_beast_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GREEN_BEAST_PARTICLES =
+            PARTICLE_TYPES.register("green_beast_particles", () -> new SimpleParticleType(true));
 
 
     public static final Supplier<SimpleParticleType> HIT_PARTICLES =
