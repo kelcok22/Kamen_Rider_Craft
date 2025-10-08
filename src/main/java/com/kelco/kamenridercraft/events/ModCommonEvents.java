@@ -110,46 +110,49 @@ public class ModCommonEvents {
 		}
 
 
-		private Item getGochizoDrop(ItemStack itemstack) {
+		private Item getGochizoDrop(ItemStack itemstack,Level level) {
 			Random generator = new Random();
 
+            ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
+
+            int legend_rand = generator.nextInt(Gavv_Rider_Items.LEGEND.size());
 			if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/gummy_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.GUMMY.size());
-				return Gavv_Rider_Items.GUMMY.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.GUMMY.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/marshmallow_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.MARSHMALLOW.size());
-				return Gavv_Rider_Items.MARSHMALLOW.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.MARSHMALLOW.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/snack_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.SNACK.size());
-				return Gavv_Rider_Items.SNACK.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.SNACK.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/chocolate_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CHOCO.size());
-				return Gavv_Rider_Items.CHOCO.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.CHOCO.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cookie_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.COOKIE.size());
-				return Gavv_Rider_Items.COOKIE.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.COOKIE.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/doughnut_gochizo")))){
-				return Gavv_Rider_Items.DOUMARU_GOCHIZO.get();
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.DOUMARU_GOCHIZO.get();
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/tarakomentaiko_gochizo")))){
-				return Gavv_Rider_Items.TARAKOMENTAIKO_GOCHIZO.get();
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.TARAKOMENTAIKO_GOCHIZO.get();
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/candy_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CANDY.size());
-				return Gavv_Rider_Items.CANDY.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.CANDY.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CAKE.size());
-				return Gavv_Rider_Items.CAKE.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.CAKE.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pancake_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.PANCAKE.size());
-				return Gavv_Rider_Items.PANCAKE.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.PANCAKE.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/mochi_gochizo")))) {
 				int rand = generator.nextInt(Gavv_Rider_Items.MOCHI.size());
-				return Gavv_Rider_Items.MOCHI.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.MOCHI.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pudding_gochizo")))) {
 				int rand = generator.nextInt(Gavv_Rider_Items.PUDDING.size());
-				return Gavv_Rider_Items.PUDDING.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.PUDDING.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/corn_gochizo")))) {
 				int rand = generator.nextInt(Gavv_Rider_Items.CORN.size());
-				return Gavv_Rider_Items.CORN.get(rand);
+				return level.dimension() == CITY? Gavv_Rider_Items.LEGEND.get(legend_rand):Gavv_Rider_Items.CORN.get(rand);
 			}
 			return Items.APPLE;
 		}
@@ -172,7 +175,7 @@ public class ModCommonEvents {
 		@SubscribeEvent
 		public void Give_Gochizo(LivingEntityUseItemEvent.Finish event) {
 
-			Item GOCHIZO = getGochizoDrop(event.getItem());
+			Item GOCHIZO = getGochizoDrop(event.getItem(),event.getEntity().level());
 			Item CUP_GOCHIZO = getCupGochizoDrop(event.getItem());
 
 				 if (event.getEntity() instanceof Player player) {
