@@ -120,6 +120,18 @@
   "painting.kamenridercraft.mckuugas.title":"McKuuga's",
   "painting.kamenridercraft.mckuugas.author":"Toei Company",
 
+  "painting.kamenridercraft.zeztz_impact.title":"Impact",
+  "painting.kamenridercraft.zeztz_impact.author":"LiasDan",
+
+  "painting.kamenridercraft.zeztz_stream.title":"Stream",
+  "painting.kamenridercraft.zeztz_stream.author":"LiasDan",
+
+  "painting.kamenridercraft.zeztz_recovery.title":"Recovery",
+  "painting.kamenridercraft.zeztz_recovery.author":"LiasDan",
+
+  "painting.kamenridercraft.zeztz_wonder.title":"Wonder",
+  "painting.kamenridercraft.zeztz_wonder.author":"LiasDan",
+
   "item.kamenridercraft.lets_go_rider_kick_music_disc": "Let's Go!! Rider Kick Music Disc",
   "item.kamenridercraft.lets_go_rider_kick.desc": "HosephHoestar - Let's Go!! Rider Kick",
   "item.kamenridercraft.lets_go_rider_kick_music_disc.desc": "HosephHoestar - Let's Go!! Rider Kick",
@@ -8191,6 +8203,7 @@
   "item.kamenridercraft.shin_ichigolegs": "Shin Kamen Rider Leggings",
   "item.kamenridercraft.ultimate_half_typhoon_core": "Ultimate Half Typhoon Energy Converter",
   "kamenridercraft.ultimate_half_typhoon_core": "Rider: Kamen Rider No. 0",
+  "kamenridercraft.name.shin_no_0": "Rider: Kamen Rider No. 0",
   "item.kamenridercraft.shin_typhoon_core": "Typhoon Energy Converter (No. 1)",
   "kamenridercraft.name.shin_ichigo": "Rider: Kamen Rider No. 1",
   "item.kamenridercraft.shin_typhoon_core2": "Typhoon Energy Converter (No. 2)",
@@ -8201,6 +8214,7 @@
   "item.kamenridercraft.shin_typhoon_nigo": "Shin Typhoon",
   "item.kamenridercraft.shin_typhoon_2_1": "Shin Typhoon",
   "item.kamenridercraft.ultimate_half_typhoon": "Ultimate Half Typhoon",
+
 
   "item.kamenridercraft.ichigo_mask": "Ichigo Mask",
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
@@ -8907,6 +8921,7 @@
 "block.kamenridercraft.mighty_block": "Mighty Block",
 "block.kamenridercraft.bang_bang_drum": "Bang Bang Drum",
 "block.kamenridercraft.bakusou_trophy": "Bakusou Trophy",
+  "block.kamenridercraft.genm_continue": "Continue Pipe",
 
 "block.kamenridercraft.planks_big_oak_golden_trim": "Golden Trim Oak Planks",
 "block.kamenridercraft.planks_brown": "Brown Planks",
