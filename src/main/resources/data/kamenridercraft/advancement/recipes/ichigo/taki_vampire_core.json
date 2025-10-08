@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:astroswitch"
+			  "kamenridercraft:taki_vampire_core"
 			]
 		  }
 		]
@@ -21,12 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:fourze/fourze_head",
-	  "kamenridercraft:fourze/fourze_troso",
-	  "kamenridercraft:fourze/fourze_legs",
-      "kamenridercraft:fourze/astroswitch_case",
-      "kamenridercraft:fourze/astroswitch_panel",
-	  "kamenridercraft:fourze/gate_switch"
+	  "kamenridercraft:ichigo/taki_belt"
 	]
   },
   "sends_telemetry_event": false

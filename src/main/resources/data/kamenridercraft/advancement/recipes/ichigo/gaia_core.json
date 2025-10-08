@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:astroswitch"
+			  "kamenridercraft:gaia_core"
 			]
 		  }
 		]
@@ -21,12 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:fourze/fourze_head",
-	  "kamenridercraft:fourze/fourze_troso",
-	  "kamenridercraft:fourze/fourze_legs",
-      "kamenridercraft:fourze/astroswitch_case",
-      "kamenridercraft:fourze/astroswitch_panel",
-	  "kamenridercraft:fourze/gate_switch"
+	  "kamenridercraft:ichigo/gaia_belt"
 	]
   },
   "sends_telemetry_event": false
