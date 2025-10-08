@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-06T14:38:13.9962475	Item Models: kamenridercraft
+// 1.21.1	2025-10-08T19:06:42.2173083	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -298,6 +298,7 @@ ec097597f19034fda2cf26973944fdba5484a9fd assets/kamenridercraft/models/item/kiva
 19346465fd8c8e36b2ecdc9773e044a17a1d0afe assets/kamenridercraft/models/item/koalamarch_gochizo.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_kenzan.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_slash.json
+29a4eac5bcebcd5188b445868ab9f9f9a526d611 assets/kamenridercraft/models/item/kodama_ridewatch.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/kouji_genbar_tire.json
 f3937568a33b125ad13280b091d57916097a4128 assets/kamenridercraft/models/item/kungfu_ramen_gochizo.json
 6dbc35f99e106344927b32b905896a82b6a2d310 assets/kamenridercraft/models/item/kuroana_ride_chemy_card.json
@@ -461,6 +462,7 @@ b82bc8fba746cf7c633221051774ac611662ff4b assets/kamenridercraft/models/item/stro
 197544477f86874d1495dd28d8938a7147e22fc4 assets/kamenridercraft/models/item/super_sentai_full_bottle.json
 8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/t2_memory_case.json
 07409adfa9eca2b8c7754d5ec3858baf569c0189 assets/kamenridercraft/models/item/taka_full_bottle_cross_z.json
+c9587a99e2b758e900e1c7da079e801a3efcf4a4 assets/kamenridercraft/models/item/taka_ridewatch.json
 363e94f1ff42c46977b7df4e6a8008efd507e987 assets/kamenridercraft/models/item/taki_belt.json
 e8caf0b5617f99931cf5f663eba9befeffdd737b assets/kamenridercraft/models/item/taki_vampire_core.json
 2ac99bf701fd78e182d761ffd869174ad7a91c8c assets/kamenridercraft/models/item/takoyaki_umaibo_gochizo.json

@@ -638,6 +638,19 @@
   "attack.kamenridercraft.zaku_decoration":"§eDecoration!",
   "attack.kamenridercraft.atari":"§bAtari!",
 
+  "candroid.kamenridercraft.taka": "§cTaka Can!",
+  "candroid.kamenridercraft.tako": "§9Tako Can!",
+  "candroid.kamenridercraft.batta": "§aBatta Can!",
+  "candroid.kamenridercraft.tora": "§eTora Can!",
+  "candroid.kamenridercraft.denkiunagi": "§1Denkiunagi Can!",
+  "candroid.kamenridercraft.gorilla": "§8Gorilla Can!",
+  "candroid.kamenridercraft.kujaku": "§6Kujaku Can!",
+  "candroid.kamenridercraft.ptera": "§5Ptera Can!",
+  "candroid.kamenridercraft.torikera": "§2Torikera Can!",
+
+  "ridegadget.kamenridercraft.taka": "§cTaka Watchroid! Taka!",
+  "ridegadget.kamenridercraft.kodama": "§2Suika Arms! The Kodama?",
+
 "kamenridercraft:decade_blast_card.name": "§cBlast",
 "kamenridercraft:decade_slash_card.name": "§cSlash",
 "kamenridercraft:decade_illusion_card.name": "§cIllusion",
@@ -8416,6 +8429,8 @@
 
   "entity.kamenridercraft.ginga": "Kamen Rider Ginga",
   "entity.kamenridercraft.woz": "Kamen Rider Woz (White Woz)",
+  "entity.kamenridercraft.taka_watchroid": "Taka Watchroid",
+  "entity.kamenridercraft.kodama_suika_arms": "Kodama Suika Arms",
 
 "entity.kamenridercraft.trilobite_magia": "Trilobite Magia",
 "entity.kamenridercraft.dodo_magia_chick": "Dodo Magia Chick",

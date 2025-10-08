@@ -3,7 +3,9 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.bikes.RidevendorVendingModeEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.ooo.CandroidItem;
 import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -2463,6 +2465,12 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> BARLCKXS_SWORD = ITEMS.register("barlckxs_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> TAKA_RIDEWATCH = ITEMS.register("taka_ridewatch",
+            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.taka"), MobsCore.TAKA_WATCHROID).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> KODAMA_RIDEWATCH = ITEMS.register("kodama_ridewatch",
+            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.kodama"), MobsCore.KODAMA_SUIKA_ARMS).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
