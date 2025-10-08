@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ziingazer",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_rider_core_id"
+    }, "C": {
+      "item": "kamenridercraft:providence_card_ziingazer"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:laser_raise_driver"
+  }
+}

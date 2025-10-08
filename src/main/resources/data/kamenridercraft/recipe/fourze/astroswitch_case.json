@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "fourze",
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:astroswitch"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:astroswitch_case"
+  }
+}

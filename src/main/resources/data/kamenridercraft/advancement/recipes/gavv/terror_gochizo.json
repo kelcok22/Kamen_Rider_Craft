@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:astroswitch"
+			  "kamenridercraft:terror_gochizo"
 			]
 		  }
 		]
@@ -21,12 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:fourze/fourze_head",
-	  "kamenridercraft:fourze/fourze_troso",
-	  "kamenridercraft:fourze/fourze_legs",
-      "kamenridercraft:fourze/astroswitch_case",
-      "kamenridercraft:fourze/astroswitch_panel",
-	  "kamenridercraft:fourze/gate_switch"
+	  "kamenridercraft:gavv/henshin_belt_caries_gavv"
 	]
   },
   "sends_telemetry_event": false
