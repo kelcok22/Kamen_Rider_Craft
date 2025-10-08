@@ -605,7 +605,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing());
+            }.IsBeltGlowing().IsGlowing().has_basic_model().model_has_different_name("kuuga_growing_card"));
 
 	public static final DeferredItem<Item> KUUGA_GROWING_CARD = ITEMS.register("kuuga_growing_card",
 	        () -> new RiderFormChangeItem(new Item.Properties(),0,"_growing","decade","decadriver_belt",

@@ -88,7 +88,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                    .IsBeltGlowing().ChangeRiderName("ark_one"));
+                    .IsBeltGlowing().ChangeRiderName("ark_one").has_basic_model().model_has_different_name("ark_one_ride_chemy_card"));
 
 
 	public static final DeferredItem<Item> GOTCHARD_LOGO = ITEMS.register("gotchard_logo",
@@ -741,7 +741,8 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-                    .IsGlowing().ChangeModel("dread_type_one.geo.json").AddNeedItemList(NEED_ITEM_TypeThree));
+                    .IsGlowing().ChangeModel("dread_type_one.geo.json").AddNeedItemList(NEED_ITEM_TypeThree)
+                    .has_basic_model().model_has_different_name("steamliner_repli_chemy_card"));
 
 	public static final DeferredItem<Item> STEAMLINER_REPLI_CHEMY_CARD = ITEMS.register("steamliner_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dread","dreadriver_belt",
@@ -785,7 +786,7 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> LEGENDARY_LEGEND = ITEMS.register("legendary_legend",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_legendary","legend","legendriver_belt_l")
-                    .IsGlowing().ChangeSlot(2).model_has_different_name("legendary_legend_ride_chemy_card"));
+                    .IsGlowing().ChangeSlot(2).has_basic_model().model_has_different_name("legendary_legend_ride_chemy_card"));
 
 	public static final DeferredItem<Item> LEGENDARY_LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legendary_legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_legendary","legend","legendriver_belt_l",
@@ -806,7 +807,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_ExceedMighty).model_has_different_name("kuuga_ride_chemy_card"));
+                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_ExceedMighty).has_basic_model().model_has_different_name("kuuga_ride_chemy_card"));
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -901,7 +902,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_CycloneTaToBa).model_has_different_name("w_ride_chemy_card"));
+                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_CycloneTaToBa).has_basic_model().model_has_different_name("w_ride_chemy_card"));
 
 	public static final DeferredItem<Item> W_RIDE_CHEMY_CARD = ITEMS.register("w_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -928,7 +929,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_FullFullRocket).model_has_different_name("fourze_ride_chemy_card"));
+                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_FullFullRocket).has_basic_model().model_has_different_name("fourze_ride_chemy_card"));
 
 	public static final DeferredItem<Item> FOURZE_RIDE_CHEMY_CARD = ITEMS.register("fourze_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
