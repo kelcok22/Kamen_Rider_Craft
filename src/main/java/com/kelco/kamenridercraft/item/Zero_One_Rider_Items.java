@@ -972,7 +972,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey"));
 	
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY_R = ITEMS.register("crowding_hopper_progrisekey_r",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","abaddon_r","slash_abaddo_riser_belt",
@@ -985,7 +985,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey"));
 	
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY_SHOT = ITEMS.register("crowding_hopper_progrisekey_shot",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","abaddon_shot","shot_abaddo_riser_belt",
@@ -998,7 +998,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey"));
 	
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY = ITEMS.register("crowding_hopper_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","abaddon","slash_abaddo_riser_belt",
@@ -1011,7 +1011,7 @@ public class Zero_One_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			}.IsGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRICERATOPS_ZETSUMERISEKEY = ITEMS.register("triceratops_zetsumerisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zaia","zaia_thousandriver_belt",
