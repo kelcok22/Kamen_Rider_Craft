@@ -218,56 +218,128 @@ public class Miscellaneous_Rider_Items {
 		  public static final DeferredItem<Item> CHAOS_RING_SAIGO = ITEMS.register("chaos_ring_saigo",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","saigo","chaos_driver_saigo_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                            .IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                        public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                            super.OnTransformation(itemstack, player);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY()+1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_HARUMA = ITEMS.register("chaos_ring_haruma",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","haruma","chaos_driver_haruma_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                            .IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                        public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                            super.OnTransformation(itemstack, player);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY()+1,
+                                    player.getZ(), 50, 0, 0, 0, 1);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY()+1,
+                                    player.getZ(), 50, 0, 0, 0, 1);
+                        }
+                    }.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_SHION = ITEMS.register("chaos_ring_shion",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shion","chaos_driver_shion_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                            .IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                        public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                            super.OnTransformation(itemstack, player);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY()+1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_JIGEN = ITEMS.register("chaos_ring_jigen",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","jigen","chaos_driver_jigen_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                            .IsBeltGlowing().SetShowFace().ChangeModel("haruma.geo.json").IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                        public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                            super.OnTransformation(itemstack, player);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY()+1,
+                                    player.getZ(), 50, 0, 0, 0, 1);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY()+1,
+                                    player.getZ(), 50, 0, 0, 0, 1);
+                        }
+                    }.IsBeltGlowing().SetShowFace().ChangeModel("haruma.geo.json").IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_ARAKI = ITEMS.register("chaos_ring_araki",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","araki","chaos_driver_araki_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 75, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 25, 0, 0, 0, 1);
+                }
+            }.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_KAMUI = ITEMS.register("chaos_ring_kamui",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kamui","chaos_driver_kamui_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_AGATA = ITEMS.register("chaos_ring_agata",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","agata","chaos_driver_agata_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_LOQ_Q = ITEMS.register("chaos_ring_loq_q",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_q","loq","chaos_driver_loq_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .SetShowFace().IsGlowing().IsBeltGlowing());
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.SetShowFace().IsGlowing().IsBeltGlowing());
 
     public static final DeferredItem<Item> CHAOS_RING_LOQ = ITEMS.register("chaos_ring_loq",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","loq","chaos_driver_loq_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .addSwitchForm(Miscellaneous_Rider_Items.CHAOS_RING_LOQ_Q.get()).SetShowFace().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(Miscellaneous_Rider_Items.CHAOS_RING_LOQ_Q.get()).SetShowFace().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
