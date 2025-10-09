@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
@@ -24,7 +25,13 @@ public class DownfallGuardianEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+            double num = 100.0;
+            if (this.getLastAttacker()instanceof Player playerIn){
+                if(playerIn.hasEffect(Effect_core.HAZARD_LEVEL)){
+                    num=100-((playerIn.getEffect(Effect_core.HAZARD_LEVEL).getAmplifier()+1)*10);
+                }
+            }
+            if (this.random.nextDouble() * num  <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:
