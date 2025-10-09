@@ -310,7 +310,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).model_has_different_name("skull_memory"));
+            }.IsGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
 
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",

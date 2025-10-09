@@ -415,56 +415,56 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<TakaCanEntity>> TAKA_CAN = MOBLIST.register("taka_can",
             () -> EntityType.Builder.of(TakaCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":taka_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> TAKA_CAN_SPAWN_EGG = ITEMS.register("taka_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(TAKA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> TAKA_CAN_SPAWN_EGG = ITEMS.register("taka_can_spawn_egg",
+    //        () -> new DeferredSpawnEggItem(TAKA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<TakoCanEntity>> TAKO_CAN = MOBLIST.register("tako_can",
             () -> EntityType.Builder.of(TakoCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":tako_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> TAKO_CAN_SPAWN_EGG = ITEMS.register("tako_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(TAKO_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> TAKO_CAN_SPAWN_EGG = ITEMS.register("tako_can_spawn_egg",
+    //        () -> new DeferredSpawnEggItem(TAKO_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<BattaCanEntity>> BATTA_CAN = MOBLIST.register("batta_can",
             () -> EntityType.Builder.of(BattaCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":batta_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> BATTA_CAN_SPAWN_EGG = ITEMS.register("batta_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(BATTA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> BATTA_CAN_SPAWN_EGG = ITEMS.register("batta_can_spawn_egg",
+    //        () -> new DeferredSpawnEggItem(BATTA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<ToraCanEntity>> TORA_CAN = MOBLIST.register("tora_can",
             () -> EntityType.Builder.of(ToraCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":tora_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> TORA_CAN_SPAWN_EGG = ITEMS.register("tora_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(TORA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+   //public static final DeferredItem<DeferredSpawnEggItem> TORA_CAN_SPAWN_EGG = ITEMS.register("tora_can_spawn_egg",
+   //         () -> new DeferredSpawnEggItem(TORA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<DenkiunagiCanEntity>> DENKIUNAGI_CAN = MOBLIST.register("denkiunagi_can",
             () -> EntityType.Builder.of(DenkiunagiCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":denkiunagi_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> DENKIUNAGI_CAN_SPAWN_EGG = ITEMS.register("denkiunagi_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(DENKIUNAGI_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> DENKIUNAGI_CAN_SPAWN_EGG = ITEMS.register("denkiunagi_can_spawn_egg",
+    //        () -> new DeferredSpawnEggItem(DENKIUNAGI_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<GorillaCanEntity>> GORILLA_CAN = MOBLIST.register("gorilla_can",
             () -> EntityType.Builder.of(GorillaCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gorilla_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> GORILLA_CAN_SPAWN_EGG = ITEMS.register("gorilla_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(GORILLA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> GORILLA_CAN_SPAWN_EGG = ITEMS.register("gorilla_can_spawn_egg",
+    //       () -> new DeferredSpawnEggItem(GORILLA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<KujakuCanEntity>> KUJAKU_CAN = MOBLIST.register("kujaku_can",
             () -> EntityType.Builder.of(KujakuCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kujaku_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> KUJAKU_CAN_SPAWN_EGG = ITEMS.register("kujaku_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(KUJAKU_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> KUJAKU_CAN_SPAWN_EGG = ITEMS.register("kujaku_can_spawn_egg",
+    //        () -> new DeferredSpawnEggItem(KUJAKU_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<PteraCanEntity>> PTERA_CAN = MOBLIST.register("ptera_can",
             () -> EntityType.Builder.of(PteraCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ptera_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> PTERA_CAN_SPAWN_EGG = ITEMS.register("ptera_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(PTERA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> PTERA_CAN_SPAWN_EGG = ITEMS.register("ptera_can_spawn_egg",
+    //        () -> new DeferredSpawnEggItem(PTERA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<TorikeraCanEntity>> TORIKERA_CAN = MOBLIST.register("torikera_can",
             () -> EntityType.Builder.of(TorikeraCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":torikera_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> TORIKERA_CAN_SPAWN_EGG = ITEMS.register("torikera_can_spawn_egg",
-            () -> new DeferredSpawnEggItem(PTERA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> TORIKERA_CAN_SPAWN_EGG = ITEMS.register("torikera_can_spawn_egg",
+    //       () -> new DeferredSpawnEggItem(PTERA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<SuperGingaOhEntity>> SUPER_GINGAOH = MOBLIST.register("super_gingaoh",
@@ -918,14 +918,14 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<TakaWatchroidEntity>> TAKA_WATCHROID = MOBLIST.register("taka_watchroid",
             () -> EntityType.Builder.of(TakaWatchroidEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":taka_watchroid"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> TAKA_WATCHROID_SPAWN_EGG = ITEMS.register("taka_watchroid_spawn_egg",
-            () -> new DeferredSpawnEggItem(TAKA_WATCHROID, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> TAKA_WATCHROID_SPAWN_EGG = ITEMS.register("taka_watchroid_spawn_egg",
+    //       () -> new DeferredSpawnEggItem(TAKA_WATCHROID, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<KodamaSuikaArmsEntity>> KODAMA_SUIKA_ARMS = MOBLIST.register("kodama_suika_arms",
             () -> EntityType.Builder.of(KodamaSuikaArmsEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kodama_suika_arms"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> KODAMA_SUIKA_ARMS_SPAWN_EGG = ITEMS.register("kodama_suika_arms_spawn_egg",
-            () -> new DeferredSpawnEggItem(KODAMA_SUIKA_ARMS, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+    //public static final DeferredItem<DeferredSpawnEggItem> KODAMA_SUIKA_ARMS_SPAWN_EGG = ITEMS.register("kodama_suika_arms_spawn_egg",
+    //       () -> new DeferredSpawnEggItem(KODAMA_SUIKA_ARMS, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<TrilobiteMagiaEntity>> TRILOBITE_MAGIA = MOBLIST.register("trilobite_magia",

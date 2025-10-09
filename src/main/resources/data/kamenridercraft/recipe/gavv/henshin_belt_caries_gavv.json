@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "caries",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_gochizo"
+	},
+	"M": {
+	  "item": "kamenridercraft:terror_gochizo"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:henshin_belt_caries_gavv"
+  }	
+}

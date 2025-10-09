@@ -324,7 +324,7 @@ public class Miscellaneous_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.SetShowFace().IsGlowing().IsBeltGlowing());
+            }.SetShowFace().IsGlowing().IsBeltGlowing().has_basic_model().model_has_different_name("chaos_ring_loq"));
 
     public static final DeferredItem<Item> CHAOS_RING_LOQ = ITEMS.register("chaos_ring_loq",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","loq","chaos_driver_loq_belt",

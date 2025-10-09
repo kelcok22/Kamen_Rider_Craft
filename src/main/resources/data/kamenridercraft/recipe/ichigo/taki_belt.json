@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "taki_rider",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:rider_circuit"
+	},
+	"M": {
+	  "item": "kamenridercraft:taki_vampire_core"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:taki_belt"
+  }	
+}

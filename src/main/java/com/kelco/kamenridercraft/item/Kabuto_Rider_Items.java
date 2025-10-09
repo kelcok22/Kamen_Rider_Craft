@@ -450,7 +450,8 @@ public class Kabuto_Rider_Items {
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","chophopper","chophopper_zect_buckle_belt",
                         new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
                         new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-                        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
+                        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                        .has_basic_model().model_has_different_name("kickhopper_zecter"));
 
                     
         public static final DeferredItem<Item> KABUTOHELMET = ITEMS.register("kabutohead",
