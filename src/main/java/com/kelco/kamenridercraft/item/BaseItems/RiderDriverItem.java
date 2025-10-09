@@ -226,6 +226,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player) {
             beltTick(stack,level,player,slotId);
+            giveEffects(player);
         }
     }
 

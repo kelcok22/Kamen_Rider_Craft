@@ -11,7 +11,6 @@ import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.HissatsuHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -23,8 +22,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -750,153 +747,70 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> KIRIN_NO_ONGAESHI_WONDER_RIDE_BOOK = ITEMS.register("kirin_no_ongaeshi_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kirin_no_ongaeshi","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> SARUKANI_WARS_WONDER_RIDE_BOOK = ITEMS.register("sarukani_wars_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"sarukani_wars","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 17, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 17, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> BAKUSOU_USAGI_TO_KAME_WONDER_RIDE_BOOK = ITEMS.register("bakusou_usagi_to_kame_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"bakusou_usagi_to_kame","saber","seiken_swordriver_belt"
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 17, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 17, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> HOUSHIN_KAMEN_ENGI_WONDER_RIDE_BOOK = ITEMS.register("houshin_kamen_engi_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"houshin_kamen_engi","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> TSUKI_NO_HIME_KAGUYAN_WONDER_RIDE_BOOK = ITEMS.register("tsuki_no_hime_kaguyan_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"tsuki_no_hime_kaguyan","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> OSHA_JIZOU_SAN_WONDER_RIDE_BOOK = ITEMS.register("osha_jizou_san_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"osha_jizou_san","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.LUCK, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.LUCK, 40, 2,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> ISSUN_BUSHI_WONDER_RIDE_BOOK = ITEMS.register("issun_bushi_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"issun_bushi","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> DAISHOUGUN_MOMOICHIROU_WONDER_RIDE_BOOK = ITEMS.register("daishougun_momoichirou_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"daishougun_momoichirou","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> DAIKENGOU_URASHIMAJIROU_WONDER_RIDE_BOOK = ITEMS.register("daikengou_urashimajirou_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"daikengou_urashimajirou","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> DAIYOKOZUNA_KINZABUROU_WONDER_RIDE_BOOK = ITEMS.register("daiyokozuna_kinzaburou_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"daiyokozuna_kinzaburou","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> KING_OF_ARTHUR_WONDER_RIDE_BOOK = ITEMS.register("king_of_arthur_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"king_of_arthur","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 3));
 
 	public static final DeferredItem<Item> DRAGONIC_KNIGHT_WONDER_RIDE_BOOK = ITEMS.register("dragonic_knight_wonder_ride_book",
@@ -906,17 +820,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 0.2);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.CHAIN_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> EMOTIONAL_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("emotional_dragon_wonder_ride_book",
@@ -925,17 +829,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 0.2);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> PRIMITIVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("primitive_dragon_wonder_ride_book",
@@ -945,17 +839,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ELEMENTAL_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("elemental_dragon_wonder_ride_book",
@@ -967,20 +851,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 0.2);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
 					.addNeedForm(PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get(), 1).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> WONDER_ALMIGHTY_WONDER_RIDE_BOOK = ITEMS.register("wonder_almighty_wonder_ride_book",
@@ -993,14 +864,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false)
-					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
-                }
-            }
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_HERO_SENKI_WONDER_RIDE_BOOK = ITEMS.register("super_hero_senki_wonder_ride_book",
@@ -1012,26 +876,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 20, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 20, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 20, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 20, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 20, 0, 0, 0, 0.1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_LION_DAISENKI_WONDER_RIDE_BOOK = ITEMS.register("king_lion_daisenki_wonder_ride_book",
@@ -1041,14 +886,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 100, 0, 0, 0, 0.1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK = ITEMS.register("tategami_hyoujuu_senki_wonder_ride_book",
@@ -1060,14 +898,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.SNOWFLAKE,
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARABIANA_NIGHT_WONDER_RIDE_BOOK = ITEMS.register("arabiana_night_wonder_ride_book",
@@ -1078,18 +909,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
-                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
-                    thunder.setVisualOnly(true);
-                    thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
-                    player.level().addFreshEntity(thunder);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("gaikotsu_ninjaden_wonder_ride_book",
@@ -1097,20 +917,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 0.1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
                     .IsGlowing().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> TELEVI_KUN_WONDER_RIDE_BOOK = ITEMS.register("televi_kun_wonder_ride_book",
@@ -1118,14 +925,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)) {
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 33, 0, 0, 0, 0.1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK));
 
 	public static final DeferredItem<Item> ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK = ITEMS.register("ultimate_bahamut_wonder_ride_book",
@@ -1135,17 +935,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 250, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_KAENKEN_REKKA_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_kaenken_rekka_wonder_ride_book",
@@ -1219,14 +1009,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
 					,new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECTER_GEKIKOU_SENKI_WONDER_RIDE_BOOK = ITEMS.register("specter_gekikou_senki_wonder_ride_book",
@@ -1234,14 +1017,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 33, 0, 0, 0, 1);
-                }
-            }
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 					.AddNum(2).ChangeSlot(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOK_GATE_WONDER_RIDE_BOOK = ITEMS.register("book_gate_wonder_ride_book",

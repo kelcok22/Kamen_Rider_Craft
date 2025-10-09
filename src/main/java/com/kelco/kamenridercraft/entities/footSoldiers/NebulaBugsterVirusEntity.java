@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -27,7 +28,13 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+            double num = 100.0;
+            if (this.getLastAttacker()instanceof Player playerIn){
+                if(playerIn.hasEffect(Effect_core.HAZARD_LEVEL)){
+                    num=100-((playerIn.getEffect(Effect_core.HAZARD_LEVEL).getAmplifier()+1)*10);
+                }
+            }
+            if (this.random.nextDouble() * num  <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 				int bossChoice = 0;
 				if (this.level().dimension() == MOON)bossChoice=1;

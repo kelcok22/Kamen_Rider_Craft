@@ -499,7 +499,7 @@ public class Gavv_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("gochipod"));
 
 
 	public static final DeferredItem<Item> GOCHIPOD = ITEMS.register("gochipod",
