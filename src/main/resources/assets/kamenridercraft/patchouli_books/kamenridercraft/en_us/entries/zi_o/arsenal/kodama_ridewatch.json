@@ -1,6 +1,6 @@
 {
   "name": "Kodama Ridewatch",
-  "icon": "kamenridercraft:blank_watch",
+  "icon": "kamenridercraft:kodama_ridewatch",
   "category": "kamenridercraft:zi_o/arsenal",
   "sortnum": 14,
   "pages": [
@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:zi_o/blank_watch"
+      "recipe": "kamenridercraft:zi_o/kodama_ridewatch"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "Taka Ridewatch",
-  "icon": "kamenridercraft:blank_watch",
+  "icon": "kamenridercraft:taka_ridewatch",
   "category": "kamenridercraft:zi_o/arsenal",
   "sortnum": 15,
   "pages": [
@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:zi_o/blank_watch"
+      "recipe": "kamenridercraft:zi_o/taka_ridewatch"
     }
   ]
 }
