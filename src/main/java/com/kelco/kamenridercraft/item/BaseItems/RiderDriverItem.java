@@ -9,9 +9,7 @@ import java.util.function.Consumer;
 
 
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -175,9 +173,6 @@ public class RiderDriverItem extends RiderArmorItem {
                                 || (sentity instanceof Mob));
                 for (LivingEntity enemy : nearbyEnemies) {
                     this.OnRiderKickHit(stack, player, enemy);
-                    if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && player instanceof Player play
-                            && Objects.equals(this.Rider, "ichigo") && !level.isClientSide())
-                        play.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()), false);
                     level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
                     if (enemy.getHealth() < enemy.getMaxHealth()/3) enemy.addEffect(new MobEffectInstance(Effect_core.EXPLODE, 40, 3, false, true));
                 }
@@ -224,9 +219,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        if (entity instanceof LivingEntity player) {
-            beltTick(stack,level,player,slotId);
-            giveEffects(player);
+        if (entity instanceof LivingEntity player && stack == player.getItemBySlot(EquipmentSlot.FEET)) {
+            this.beltTick(stack,level,player,slotId);
+            this.giveEffects(player);
         }
     }
 
@@ -254,9 +249,6 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
-        RiderFormChangeItem formitem = get_Form_Item(itemstack,1);
-        formitem.OnRiderKickHit(itemstack,pLivingEntity,enemy);
-
         DamageSource damageSource = new DamageSource(
                 pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
         float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
@@ -271,6 +263,12 @@ public class RiderDriverItem extends RiderArmorItem {
                     pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
                     pLivingEntity.getZ(), 500, 0, 0, 0, 1);
         }
+
+        for (int n = 0; n < Num_Base_Form_Item; n++) {
+            RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
+            form.OnRiderKickHit(itemstack,pLivingEntity,enemy);
+        }
+        this.riderKickTick = 41;
     }
 
 

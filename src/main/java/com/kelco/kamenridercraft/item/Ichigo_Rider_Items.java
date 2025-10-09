@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
@@ -43,6 +44,11 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
+
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
+                        enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
+                }
             }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
@@ -80,6 +86,11 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
+
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
+                        enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
+                }
             }.allowRiderKick().IsGlowing().addAlternative(ORIGINAL_TYPHOON_CORE_NIGO.get()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
@@ -92,6 +103,11 @@ public class Ichigo_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
+                }
+
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
+                        enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
                 }}.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_SANGO = ITEMS.register("typhoon_core_sango",
@@ -143,6 +159,11 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 150, 0, 0, 0, 1);
                 }
+
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
+                        enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
+                }
             }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TAKI_VAMPIRE_CORE = ITEMS.register("taki_vampire_core",
@@ -179,7 +200,7 @@ public class Ichigo_Rider_Items {
             }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NOPHOON_CORE = ITEMS.register("nophoon_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","ichigo","nophoon_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","kamen_norider","nophoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).SetShowFace().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
