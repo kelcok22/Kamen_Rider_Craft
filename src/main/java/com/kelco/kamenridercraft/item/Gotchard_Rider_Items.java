@@ -106,22 +106,55 @@ public class Gotchard_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SteamHopper).AddToList(NEED_ITEM_SteamHopper)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PIKAHOTARU_RIDE_CHEMY_CARD = ITEMS.register("pikahotaru_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),0,"_sma_hotaru","gotchard","gotchardriver_belt",
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SmaHotaru).AddToList(NEED_ITEM_SmaHotaru)
-					.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SmaHotaru).AddToList(NEED_ITEM_SmaHotaru)
+			.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GENGENCHOUCHO_RIDE_CHEMY_CARD = ITEMS.register("gengenchoucho_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),0,"_bullet_choucho","gotchard","gotchardriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BulletChoucho).AddToList(NEED_ITEM_BulletChoucho)
-					.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BulletChoucho).AddToList(NEED_ITEM_BulletChoucho)
+			.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BAKUONZEMI_RIDE_CHEMY_CARD = ITEMS.register("bakuonzemi_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
@@ -130,8 +163,20 @@ public class Gotchard_Rider_Items {
     public static final DeferredItem<Item> ANTROOPER_RIDE_CHEMY_CARD = ITEMS.register("antrooper_ride_chemy_card",
             () -> new RideChemyCardItem(new Item.Properties(),0,"_ant_wrestler","gotchard","gotchardriver_belt",
             		new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_AntWrestler).AddToList(NEED_ITEM_AntWrestler)
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_AntWrestler).AddToList(NEED_ITEM_AntWrestler)
 					.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREATONBO_RIDE_CHEMY_CARD = ITEMS.register("greatonbo_ride_chemy_card",
@@ -151,8 +196,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_OdoriMantis).AddToList(NEED_ITEM_OdoriMantis)
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_OdoriMantis).AddToList(NEED_ITEM_OdoriMantis)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> BEETLX_RIDE_CHEMY_CARD = ITEMS.register("beetlx_ride_chemy_card",
@@ -165,8 +222,20 @@ public class Gotchard_Rider_Items {
     public static final DeferredItem<Item> DOKKIRIMAJIN_RIDE_CHEMY_CARD = ITEMS.register("dokkirimajin_ride_chemy_card",
             () -> new RideChemyCardItem(new Item.Properties(),0,"_dokkiri_shovel","gotchard","gotchardriver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
-            		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_DokkiriShovel).AddToList(NEED_ITEM_DokkiriShovel).AddToList(ChemyRiserItem.Job_CHEMY)
+            		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_DokkiriShovel).AddToList(NEED_ITEM_DokkiriShovel).AddToList(ChemyRiserItem.Job_CHEMY)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOCTORKOZO_RIDE_CHEMY_CARD = ITEMS.register("doctorkozo_ride_chemy_card",
@@ -176,8 +245,20 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> PILETS_RIDE_CHEMY_CARD = ITEMS.register("pilets_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),0,"_mad_pilets","gotchard","gotchardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-					new MobEffectInstance(Effect_core.CANNON,40,1,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_MadPilets).AddToList(NEED_ITEM_MadPilets).AddToList(ChemyRiserItem.Job_CHEMY)
+					new MobEffectInstance(Effect_core.CANNON,40,1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_MadPilets).AddToList(NEED_ITEM_MadPilets).AddToList(ChemyRiserItem.Job_CHEMY)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
     
     public static final DeferredItem<Item> WRESTLER_G_RIDE_CHEMY_CARD = ITEMS.register("wrestler_g_ride_chemy_card",
@@ -188,8 +269,20 @@ public class Gotchard_Rider_Items {
 			() -> new RideChemyCardItem(new Item.Properties(),0,"_energy_maru","gotchard","gotchardriver_belt",
 					new MobEffectInstance(Effect_core.STEALTH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40,3,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST,40,1,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_EnergyMaru).AddToList(NEED_ITEM_EnergyMaru).AddToList(ChemyRiserItem.Job_CHEMY)
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST,40,1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_EnergyMaru).AddToList(NEED_ITEM_EnergyMaru).AddToList(ChemyRiserItem.Job_CHEMY)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> BULLETBAANG_RIDE_CHEMY_CARD = ITEMS.register("bulletbaang_ride_chemy_card",
@@ -200,8 +293,23 @@ public class Gotchard_Rider_Items {
             () -> new RideChemyCardItem(new Item.Properties(),0,"_appare_skebow","gotchard","gotchardriver_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-            		new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_AppareSkebow).AddToList(ChemyRiserItem.Job_CHEMY).AddToList(NEED_ITEM_AppareSkebow)
+            		new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CHERRY_LEAVES,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_AppareSkebow).AddToList(ChemyRiserItem.Job_CHEMY).AddToList(NEED_ITEM_AppareSkebow)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KARYUDOS_RIDE_CHEMY_CARD = ITEMS.register("karyudos_ride_chemy_card",
@@ -223,66 +331,156 @@ public class Gotchard_Rider_Items {
             () -> new RideChemyCardItem(new Item.Properties(),0,"_hiikesu_rose","gotchard","gotchardriver_belt",
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-            		new MobEffectInstance(Effect_core.REFLECT, 40, 1,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_HiikesuRose).AddToList(NEED_ITEM_HiikesuRose).AddToList(ChemyRiserItem.ALL_CHEMY)
+            		new MobEffectInstance(Effect_core.REFLECT, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_HiikesuRose).AddToList(NEED_ITEM_HiikesuRose).AddToList(ChemyRiserItem.ALL_CHEMY)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEKIOCOPTER_RIDE_CHEMY_CARD_V = ITEMS.register("gekiocopter_ride_chemy_card_v",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ange_copter","valvarad_rider","valvaradriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .IsGlowing().AddNeedItemList(NEED_ITEM_AngeCopter).has_basic_model().model_has_different_name("gekiocopter_ride_chemy_card"));
+					new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_AngeCopter).has_basic_model().model_has_different_name("gekiocopter_ride_chemy_card"));
 
 	public static final DeferredItem<Item> GEKIOCOPTER_RIDE_CHEMY_CARD = ITEMS.register("gekiocopter_ride_chemy_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","valvarad","",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-            		new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .IsGlowing().ChangeSlot(2).addAlternative(GEKIOCOPTER_RIDE_CHEMY_CARD_V.get()).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddToList(NEED_ITEM_AngeCopter)
+            		new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeSlot(2).addAlternative(GEKIOCOPTER_RIDE_CHEMY_CARD_V.get()).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddToList(NEED_ITEM_AngeCopter)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
     
     public static final DeferredItem<Item> DEEPMARINER_RIDE_CHEMY_CARD = ITEMS.register("deepmariner_ride_chemy_card",
             () -> new RideChemyCardItem(new Item.Properties(),0,"_venom_mariner","gotchard","gotchardriver_belt",
             		new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 1,true,false),
-            		new MobEffectInstance(Effect_core.ANTIPOISON, 40, 1,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_VenomMariner).AddToList(NEED_ITEM_VenomMariner).AddToList(ChemyRiserItem.ALL_CHEMY)
+            		new MobEffectInstance(Effect_core.ANTIPOISON, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_VenomMariner).AddToList(NEED_ITEM_VenomMariner).AddToList(ChemyRiserItem.ALL_CHEMY)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
     
     public static final DeferredItem<Item> MADWHEEL_RIDE_CHEMY_CARD = ITEMS.register("madwheel_ride_chemy_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","valvarad","valvaradraw_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().addAlternative(PILETS_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_MadPilets).AddToList(ChemyRiserItem.ALL_CHEMY)
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().addAlternative(PILETS_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_MadPilets).AddToList(ChemyRiserItem.ALL_CHEMY)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MACHWHEEL_RIDE_CHEMY_CARD = ITEMS.register("machwheel_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valvarad_rider","valvaradriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().AddNeedItemList(NEED_ITEM_Valvarad).AddToList(NEED_ITEM_Valvarad).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_Valvarad).AddToList(NEED_ITEM_Valvarad).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
     
     public static final DeferredItem<Item> GOLDDASH_RIDE_CHEMY_CARD = ITEMS.register("golddash_ride_chemy_card",
             () -> new RideChemyCardItem(new Item.Properties(),0,"_gold_mechanichor","gotchard","gotchardriver_belt_big",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
+            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
 					.AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_GoldMechanichor).AddToList(NEED_ITEM_GoldMechanichor)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
     
     public static final DeferredItem<Item> GUTSSHOVEL_RIDE_CHEMY_CARD_V = ITEMS.register("gutsshovel_ride_chemy_card_v",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_orochi_shovel","valvarad_rider","valvaradriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
-					.addAlternative(DOKKIRIMAJIN_RIDE_CHEMY_CARD.get()).AddNeedItemList(NEED_ITEM_OrochiShovel)
+					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.addAlternative(DOKKIRIMAJIN_RIDE_CHEMY_CARD.get()).AddNeedItemList(NEED_ITEM_OrochiShovel)
                     .IsGlowing().has_basic_model().model_has_different_name("gutsshovel_ride_chemy_card"));
 
 	public static final DeferredItem<Item> GUTSSHOVEL_RIDE_CHEMY_CARD = ITEMS.register("gutsshovel_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valvarad","",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
-                    .IsGlowing().ChangeSlot(3).addAlternative(GUTSSHOVEL_RIDE_CHEMY_CARD_V.get()).addSwitchForm(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeSlot(3).addAlternative(GUTSSHOVEL_RIDE_CHEMY_CARD_V.get()).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddToList(NEED_ITEM_DokkiriShovel).AddToList(NEED_ITEM_OrochiShovel)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -317,8 +515,20 @@ public class Gotchard_Rider_Items {
          	() -> new RideChemyCardItem(new Item.Properties(),0,"_needle_hawk","gotchard","gotchardriver_belt",
          		new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false),
          		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
-				new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).hasFlyingWings(null).AddNeedItemList(NEED_ITEM_NeedleHawk).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(NEED_ITEM_NeedleHawk)
+				new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).hasFlyingWings(null).AddNeedItemList(NEED_ITEM_NeedleHawk).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(NEED_ITEM_NeedleHawk)
 					.AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TSUPPARIHEBI_RIDE_CHEMY_CARD = ITEMS.register("tsupparihebi_ride_chemy_card",
@@ -330,8 +540,20 @@ public class Gotchard_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
             		new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
-            		new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BurningGorilla).AddToList(NEED_ITEM_BurningGorilla)
+            		new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BurningGorilla).AddToList(NEED_ITEM_BurningGorilla)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GANVHALE_RIDE_CHEMY_CARD = ITEMS.register("ganvhale_ride_chemy_card",
@@ -343,8 +565,20 @@ public class Gotchard_Rider_Items {
     
    	public static final DeferredItem<Item> RAIDENJI_RIDE_CHEMY_CARD = ITEMS.register("raidenji_ride_chemy_card",
            	() -> new RideChemyCardItem(new Item.Properties(),0,"_lightning_jungle","gotchard","gotchardriver_belt_big",
-           			new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false))
-                    .IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
+           			new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
 					.AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_LightningJungle).AddToList(NEED_ITEM_LightningJungle)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Artifact_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -464,8 +698,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NAMMONITE_RIDE_CHEMY_CARD = ITEMS.register("nammonite_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
@@ -507,8 +753,20 @@ public class Gotchard_Rider_Items {
 			() -> new RideChemyCardItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_super_cross_x_rex","gotchard","gotchardriver_belt_s",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MERCURIN_RIDE_CHEMY_CARD = ITEMS.register("mercurin_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
@@ -524,8 +782,20 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> NEMINEMOON_RIDE_CHEMY_CARD = ITEMS.register("neminemoon_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_moon_cerberus","majade","alchemisdriver_belt",
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().AddNeedItemList(NEED_ITEM_MoonCerberus).AddToList(NEED_ITEM_MoonCerberus).AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_MoonCerberus).AddToList(NEED_ITEM_MoonCerberus).AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> FIREMARS_RIDE_CHEMY_CARD = ITEMS.register("firemars_ride_chemy_card",
@@ -533,7 +803,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false)).AddNeedItemList(NEED_ITEM_MarsPhoenix)
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.AddNeedItemList(NEED_ITEM_MarsPhoenix)
                     .IsGlowing().AddCompatibilityList(Gotchards).AddToList(NEED_ITEM_MarsPhoenix).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Cosmic_CHEMY)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
 
@@ -543,8 +826,20 @@ public class Gotchard_Rider_Items {
 
 	 public static final DeferredItem<Item> THE_SUN_RIDE_CHEMY_CARD = ITEMS.register("the_sun_ride_chemy_card",
 			 () -> new RiderFormChangeItem(new Item.Properties(),0,"","majade","alchemisdriver_belt",
-					 new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                     .IsGlowing().AddNeedItemList(NEED_ITEM_SunUnicorn).AddToList(NEED_ITEM_SunUnicorn).AddToList(ChemyRiserItem.ALL_CHEMY)
+					 new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                     super.OnTransformation(itemstack, player);
+                     ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                             player.getX(), player.getY()+1,
+                             player.getZ(), 50, 0, 0, 0, 1);
+                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                             player.getX(), player.getY()+1,
+                             player.getZ(), 50, 0, 0, 0, 1);
+                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                             player.getX(), player.getY()+1,
+                             player.getZ(), 300, 0, 0, 0, 1);
+                 }
+             }.IsGlowing().AddNeedItemList(NEED_ITEM_SunUnicorn).AddToList(NEED_ITEM_SunUnicorn).AddToList(ChemyRiserItem.ALL_CHEMY)
 					 .AddToList(ChemyRiserItem.Cosmic_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> JUPITTA_RIDE_CHEMY_CARD = ITEMS.register("jupitta_ride_chemy_card",
@@ -556,8 +851,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-                    .IsGlowing().ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GAIARD_RIDE_CHEMY_CARD = ITEMS.register("gaiard_ride_chemy_card",
@@ -620,8 +927,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
-                    .IsGlowing().AddNeedItemList(NEED_ITEM_Rainbow).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_Rainbow).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> NIJIGON_RIDE_CHEMY_CARD_SPECIAL = ITEMS.register("nijigon_ride_chemy_card_special",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.RARE), NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -633,8 +952,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
-					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false))
-                    .IsGlowing().AddToList(NEED_ITEM_Platina).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(NEED_ITEM_Platina).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> CROSSHOPPER_RIDE_CHEMY_CARD = ITEMS.register("crosshopper_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_platina","gotchard","gotchardriver_belt_p",
@@ -644,8 +975,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_Platina).AddToList(NEED_ITEM_Platina).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_Platina).AddToList(NEED_ITEM_Platina).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> HOPPER1_RIDE_CHEMY_CARD_ULTIMA = ITEMS.register("hopper1_ride_chemy_card_ultima",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"","gotchard","gotchardriver_belt_daybreak",
@@ -659,8 +1002,23 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 9,true,false))
-                    .IsGlowing().AddNeedItemList(NEED_ITEM_Ultima).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.PUNCH, 40, 9,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_Ultima).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> STEAMLINER_RIDE_CHEMY_CARD_ULTIMA = ITEMS.register("steamliner_ride_chemy_card_ultima",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), HOPPER1_RIDE_CHEMY_CARD_ULTIMA.get()).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -672,8 +1030,29 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false),
 					new MobEffectInstance(Effect_core.THUNDER_PUNCH, 40, 0, true, false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOPPER101_RIDE_CHEMY_CARD = ITEMS.register("hopper101_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_miracle","gotchard","gotchardriver_belt_r",
@@ -687,8 +1066,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
-					.IsGlowing().addNeedForm(NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).AddNeedItemList(NEED_ITEM_Miracle).AddToList(NEED_ITEM_Miracle).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().addNeedForm(NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).AddNeedItemList(NEED_ITEM_Miracle).AddToList(NEED_ITEM_Miracle).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GIGANTLINER_RIDE_CHEMY_CARD = ITEMS.register("gigantliner_ride_chemy_card",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.RARE), HOPPER101_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Miracle).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -698,7 +1089,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false)).AddNeedItemList(NEED_ITEM_MarsPhoenix2)
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.AddNeedItemList(NEED_ITEM_MarsPhoenix2)
                     .IsGlowing().AddCompatibilityList(Gotchards).AddToList(NEED_ITEM_MarsPhoenix2).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> INPHOENIX_RIDE_CHEMY_CARD_TELEVIKUN = ITEMS.register("inphoenix_ride_chemy_card_televikun",
@@ -709,7 +1113,23 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).AddNeedItemList(NEED_ITEM_SteamHopper_daybreak)
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.AddNeedItemList(NEED_ITEM_SteamHopper_daybreak)
                     .IsGlowing().AddToList(ChemyRiserItem.Daybreak_CHEMY).AddToList(NEED_ITEM_SteamHopper_daybreak).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> STEAMLINER_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("daybreak_steamliner_ride_chemy_card",
@@ -723,7 +1143,20 @@ public class Gotchard_Rider_Items {
                     new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.BOOST,40,5,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE,40,0,true,false),
-                    new MobEffectInstance(Effect_core.FIRE_PUNCH,40,3,true,false)).AddNeedItemList(NEED_ITEM_Shining_DB)
+                    new MobEffectInstance(Effect_core.FIRE_PUNCH,40,3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.AddNeedItemList(NEED_ITEM_Shining_DB)
             .IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").AddToList(NEED_ITEM_Shining_DB).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> SHINING_STEAMLINER_RIDE_CHEMY_CARD = ITEMS.register("shining_steamliner_ride_chemy_card",
@@ -740,22 +1173,69 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-                    .IsGlowing().ChangeModel("dread_type_one.geo.json").AddNeedItemList(NEED_ITEM_TypeThree)
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeModel("dread_type_one.geo.json").AddNeedItemList(NEED_ITEM_TypeThree)
                     .has_basic_model().model_has_different_name("steamliner_repli_chemy_card"));
 
 	public static final DeferredItem<Item> STEAMLINER_REPLI_CHEMY_CARD = ITEMS.register("steamliner_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dread","dreadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.addShiftForm(DREAD_TYPE_THREE_CARDS.get())
                     .IsGlowing().AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNICON_REPLI_CHEMY_CARD = ITEMS.register("unicon_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_type_one","dread","dreadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.addShiftForm(DREAD_TYPE_THREE_CARDS.get())
                     .IsGlowing().AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> DAIOHNI_REPLI_CHEMY_CARD = ITEMS.register("daiohni_repli_chemy_card",
@@ -763,26 +1243,75 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.addShiftForm(DREAD_TYPE_THREE_CARDS.get())
                     .IsGlowing().AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> MADWHEEL_REPLI_CHEMY_CARD = ITEMS.register("madwheel_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valvarad_lachesis","valvaradraw_buckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ANTROOPER_REPLI_CHEMY_CARD = ITEMS.register("antrooper_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dreatrooper","dreadriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-                    .IsGlowing().AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .IsGlowing().ResetFormToBase().AddToList(ChemyRiserItem.Legend_CHEMY,10).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ResetFormToBase().AddToList(ChemyRiserItem.Legend_CHEMY,10).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LEGENDARY_LEGEND = ITEMS.register("legendary_legend",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_legendary","legend","legendriver_belt_l")
@@ -792,8 +1321,23 @@ public class Gotchard_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_legendary","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SANTACLAUS_RIDE_CHEMY_CARD = ITEMS.register("santaclaus_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -806,8 +1350,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_ExceedMighty).has_basic_model().model_has_different_name("kuuga_ride_chemy_card"));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_ExceedMighty).has_basic_model().model_has_different_name("kuuga_ride_chemy_card"));
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -901,8 +1457,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_CycloneTaToBa).has_basic_model().model_has_different_name("w_ride_chemy_card"));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_CycloneTaToBa).has_basic_model().model_has_different_name("w_ride_chemy_card"));
 
 	public static final DeferredItem<Item> W_RIDE_CHEMY_CARD = ITEMS.register("w_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -928,8 +1496,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-                    .IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_FullFullRocket).has_basic_model().model_has_different_name("fourze_ride_chemy_card"));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_FullFullRocket).has_basic_model().model_has_different_name("fourze_ride_chemy_card"));
 
 	public static final DeferredItem<Item> FOURZE_RIDE_CHEMY_CARD = ITEMS.register("fourze_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -1433,8 +2013,26 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE,40,0,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,2,true,false))
-					.ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").IsGlowing().model_has_different_name("gotchar_igniter").has_basic_model());
+					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").IsGlowing().model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_EM = ITEMS.register("gotchar_igniter_em",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed_mighty_fire","gotchard","gotchardriver_belt_fire",
@@ -1442,8 +2040,26 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,2,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,0,true,false))
-					.addAlternative(GOTCHAR_IGNITER_DB.get()).addNeedForm(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.addAlternative(GOTCHAR_IGNITER_DB.get()).addNeedForm(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_AW = ITEMS.register("gotchar_igniter_aw",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ant_wrestler_fire","gotchard","gotchardriver_belt_fire",
@@ -1451,8 +2067,26 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,2,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,1,true,false))
-					.addAlternative(GOTCHAR_IGNITER_EM.get()).addNeedForm(ANTROOPER_RIDE_CHEMY_CARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.addAlternative(GOTCHAR_IGNITER_EM.get()).addNeedForm(ANTROOPER_RIDE_CHEMY_CARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_AS = ITEMS.register("gotchar_igniter_as",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_appare_skebow_fire","gotchard","gotchardriver_belt_fire",
@@ -1460,8 +2094,26 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,4,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,1,true,false))
-					.addAlternative(GOTCHAR_IGNITER_AW.get()).addNeedForm(APPAREBUSHIDO_RIDE_CHEMY_CARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.addAlternative(GOTCHAR_IGNITER_AW.get()).addNeedForm(APPAREBUSHIDO_RIDE_CHEMY_CARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER = ITEMS.register("gotchar_igniter",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_fire","gotchard","gotchardriver_belt_fire",
@@ -1469,8 +2121,26 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,3,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,1,true,false))
-					.addAlternative(GOTCHAR_IGNITER_AS.get()).addNeedForm(HOPPER1_RIDE_CHEMY_CARD.get(),1).IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.addAlternative(GOTCHAR_IGNITER_AS.get()).addNeedForm(HOPPER1_RIDE_CHEMY_CARD.get(),1).IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHARD_HELMET = ITEMS.register("gotchard_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
