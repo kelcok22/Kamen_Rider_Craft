@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderCaseItem;
@@ -248,8 +249,12 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).allowRiderKick().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)){
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
+                        enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
+                }
+            }.allowRiderKick().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     //Bakuen no senshi
 
