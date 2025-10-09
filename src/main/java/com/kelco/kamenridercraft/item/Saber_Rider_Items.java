@@ -36,7 +36,7 @@ public class Saber_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
-
+//onore Hoseph
 
 	public static final DeferredItem<Item> SABER_LOGO = ITEMS.register("saber_logo",
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/saber")), new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
