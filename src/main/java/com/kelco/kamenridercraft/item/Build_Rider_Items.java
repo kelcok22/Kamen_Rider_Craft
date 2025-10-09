@@ -259,7 +259,7 @@ public class Build_Rider_Items {
 			() -> new FullBottleItem(new Item.Properties(),0,"_dragon","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.WITHER, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
