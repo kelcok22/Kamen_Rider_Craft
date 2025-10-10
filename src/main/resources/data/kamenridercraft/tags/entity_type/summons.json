@@ -3,9 +3,13 @@
 	"kamenridercraft:rider_summon",
 	"kamenridercraft:complete_summon",
 	"kamenridercraft:grand_summon",
+    "kamenridercraft:legendary_summon",
 	"kamenridercraft:paradx_summon",
 	"kamenridercraft:decade_armor_ex_aid",
-	"kamenridercraft:vice",
-	"kamenridercraft:whipped_soldier"
+    "kamenridercraft:vice",
+    "kamenridercraft:lovekov",
+	"kamenridercraft:whipped_soldier",
+    "kamenridercraft:apollo",
+    "kamenridercraft:libra"
   ]
 }
