@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:saber/saber_logo",
 	  "kamenridercraft:saber/seiken_swordriver_saber",
-	  "kamenridercraft:saber/kaenken_rekka",
+      "kamenridercraft:saber/kaenken_rekka",
+      "kamenridercraft:saber/diago_speedy_wonder_ride_book",
 	  "kamenridercraft:zi_o/saber_ridewatch",
 	  "kamenridercraft:geats/seiken_swordriver_raise_buckle"
 	]
