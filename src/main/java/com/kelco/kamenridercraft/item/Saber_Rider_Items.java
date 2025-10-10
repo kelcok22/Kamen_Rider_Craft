@@ -991,7 +991,7 @@ public class Saber_Rider_Items {
 			() -> new BookGateItem(new Item.Properties(),10).AddToList(RiderTabs.SABER_TAB_ITEM));
 
     public static final DeferredItem<Item> DIAGOSPEEDY_WONDER_RIDE_BOOK = ITEMS.register("diago_speedy_wonder_ride_book",
-            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.diago_speedy"), MobsCore.DIAGOSPEEDY)
+            () -> new SummonBikeItem(new Item.Properties(), MobsCore.DIAGOSPEEDY)
                     .has_basic_model().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 

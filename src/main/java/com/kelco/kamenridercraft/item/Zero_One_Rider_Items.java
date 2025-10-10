@@ -1331,7 +1331,7 @@ public class Zero_One_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
     public static final DeferredItem<Item> HIDEN_RISEPHONE = ITEMS.register("hiden_risephone",
-            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.risehopper"), MobsCore.RISEHOPPER)
+            () -> new SummonBikeItem(new Item.Properties(), MobsCore.RISEHOPPER)
                     .has_basic_model().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 

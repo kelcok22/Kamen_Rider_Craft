@@ -2137,7 +2137,7 @@ public class Zi_O_Rider_Items {
             }.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDESTRIKER_RIDEWATCH = ITEMS.register("ridestriker_ridewatch",
-            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.ridestriker"), MobsCore.RIDESTRIKER)
+            () -> new SummonBikeItem(new Item.Properties(), MobsCore.RIDESTRIKER)
                     .has_basic_model().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 

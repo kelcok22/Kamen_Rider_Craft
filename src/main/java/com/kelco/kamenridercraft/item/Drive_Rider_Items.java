@@ -908,9 +908,13 @@ public class Drive_Rider_Items {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
-					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+
 				}
 			}.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
