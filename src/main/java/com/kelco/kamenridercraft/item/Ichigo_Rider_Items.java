@@ -205,6 +205,11 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
                     .SetShowFace().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
+    public static final DeferredItem<Item> SHOCKER_SPIRIT = ITEMS.register("shocker_spirit",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_combatman","shocker_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+                    .SetShowFace().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> ICHIGOHELMET = ITEMS.register("ichigohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
@@ -292,6 +297,9 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> GAIA_BELT = ITEMS.register("gaia_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> SHOCKER_BELT = ITEMS.register("shocker_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_SPIRIT ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().IsA1().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     //V3
 
