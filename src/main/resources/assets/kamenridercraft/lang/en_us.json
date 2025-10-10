@@ -300,6 +300,9 @@
   "item.kamenridercraft.visions.desc": "HosephHoestar - VISIONS",
   "item.kamenridercraft.visions_music_disc.desc": "HosephHoestar - VISIONS",
 
+
+
+
   "effect.kamenridercraft.boost":"Boost",
 "effect.kamenridercraft.anti_poison":"Anti Poison",
 "effect.kamenridercraft.slash":"Slash",
@@ -648,8 +651,8 @@
   "candroid.kamenridercraft.ptera": "§5Ptera Can!",
   "candroid.kamenridercraft.torikera": "§2Torikera Can!",
 
-  "ridegadget.kamenridercraft.taka": "§cTaka Watchroid! Taka!",
   "ridegadget.kamenridercraft.kodama": "§2Suika Arms! The Kodama?",
+  "ridegadget.kamenridercraft.taka": "§cTaka Watchroid! Taka!",
 
 "kamenridercraft:decade_blast_card.name": "§cBlast",
 "kamenridercraft:decade_slash_card.name": "§cSlash",

@@ -23,10 +23,10 @@ public class SummonBikeItem extends BaseItem {
 	private List<Component> TEXT = Lists.newArrayList();
 	private Supplier<? extends EntityType<? extends baseBikeEntity>> BOSS;
 
-	public SummonBikeItem(Properties properties , Component text, Supplier<? extends EntityType<? extends baseBikeEntity>> boss)
+	public SummonBikeItem(Properties properties, Supplier<? extends EntityType<? extends baseBikeEntity>> boss)
 	{super(properties);
 		BOSS =boss;
-		TEXT.add(text);
+		//TEXT.add(text);
 	}
 
 	public InteractionResult useOn(UseOnContext context) {

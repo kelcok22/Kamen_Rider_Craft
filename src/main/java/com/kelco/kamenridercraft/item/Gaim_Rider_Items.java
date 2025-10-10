@@ -1310,11 +1310,11 @@ public class Gaim_Rider_Items {
 					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SAKURA_HURRICANE = ITEMS.register("sakura_hurricane",
-            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.sakura_hurricane"), MobsCore.SAKURA_HURRICANE)
+            () -> new SummonBikeItem(new Item.Properties(), MobsCore.SAKURA_HURRICANE)
                     .has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ROSE_ATTACKER = ITEMS.register("rose_attacker",
-            () -> new SummonBikeItem(new Item.Properties(),Component.translatable("bike.rose_attacker"), MobsCore.ROSE_ATTACKER)
+            () -> new SummonBikeItem(new Item.Properties(), MobsCore.ROSE_ATTACKER)
                     .has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DANDELINER = ITEMS.register("dandeliner",
