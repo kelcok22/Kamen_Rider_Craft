@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Gives random items when opened$(br2)Drops:$(li)$(l:misc/blocks/decor_blocks#genm_continue)???$(/l) (5.9%)$(li)$(l:misc/items/ichigo_mask)Ichigo Mask$(/l) (5.9%)$(li)$(l:w/items/akiko_no_slipper)Akiko no Slipper$(/l) (5.9%)$(li)$(l:kiva/items/bloody_rose)Bloody Rose$(/l) (5.9%)$(li)$(l:kuuga/arsenal/kuuga_phone)Kuuga's Phone$(/l) (5.9%)$(li)$(l:misc/blocks/ichigo_chair)Ichigo Chair$(/l) (5.9%)$(li)$(l:misc/blocks/red_ichigo_chair)Aka-Rider Chair$(/l) (5.9%)$(li)$(l:den_o/devices/shin_o_belt)Shin-O Belt$(/l) (5.9%)$(li)$(l:geats/items/raise_buckles#shark_raise_buckle)Shark Raise Buckle$(/l) (5.9%)$(li)$(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l) (5.9%)"
+			"text": "Gives random items when opened$(br2)Drops:$(li)$(l:misc/blocks/decor_blocks#genm_continue)Continue Pipe$(/l) (5.6%)$(li)$(l:misc/items/ichigo_mask)Ichigo Mask$(/l) (5.6%)$(li)$(l:misc/items/v3_mask)V3 Mask$(/l) (5.6%)$(li)$(l:w/items/akiko_no_slipper)Akiko no Slipper$(/l) (5.6%)$(li)$(l:kiva/items/bloody_rose)Bloody Rose$(/l) (5.6%)$(li)$(l:kuuga/arsenal/kuuga_phone)Kuuga's Phone$(/l) (5.6%)$(li)$(l:misc/blocks/ichigo_chair)Ichigo Chair$(/l) (5.6%)$(li)$(l:misc/blocks/red_ichigo_chair)Aka-Rider Chair$(/l) (5.6%)$(li)$(l:den_o/devices/shin_o_belt)Shin-O Belt$(/l) (5.6%)$(li)$(l:geats/items/raise_buckles#shark_raise_buckle)Shark Raise Buckle$(/l) (5.6%)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:gashapon_capsule",
 			"title": " ",
-			"text": "$(li)$(l:ghost/items/gamma_eyecons#yurusen_gamma_eyecon)Yurusen Gamma Eyecon$(/l) (5.9%)$(li)$(l:ghost/items/gamma_eyecons#sister_gamma_eyecon)Sister Gamma Eyecon$(/l) (5.9%)$(li)$(l:decade/items/final_formride_cards#kuuga_ball)Final FormRide Kuuga Ball$(/l) (5.9%)$(li)$(l:revice/items/vistamps#kirin_vistamp)Kirin Vistamp$(/l) (5.9%)$(li)$(l:revice/items/vistamps#niwatori_vistamp)Niwatori Vistamp$(/l) (5.9%)$(li)$(l:revice/items/vistamps#funkorogashi_vistamp)Funkorogashi Vistamp$(/l) (5.9%)$(li)$(l:skyrider/items/gg_core)GanGan G Emblem$(/l) (5.9%)$(br2)Obtained by using emeralds on the $(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l)"
+			"text": "$(li)$(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l) (5.6%)$(li)$(l:ghost/items/gamma_eyecons#yurusen_gamma_eyecon)Yurusen Gamma Eyecon$(/l) (5.6%)$(li)$(l:ghost/items/gamma_eyecons#sister_gamma_eyecon)Sister Gamma Eyecon$(/l) (5.6%)$(li)$(l:decade/items/final_formride_cards#kuuga_ball)Final FormRide Kuuga Ball$(/l) (5.6%)$(li)$(l:revice/items/vistamps#kirin_vistamp)Kirin Vistamp$(/l) (5.6%)$(li)$(l:revice/items/vistamps#niwatori_vistamp)Niwatori Vistamp$(/l) (5.6%)$(li)$(l:revice/items/vistamps#funkorogashi_vistamp)Funkorogashi Vistamp$(/l) (5.6%)$(li)$(l:skyrider/items/gg_core)GanGan G Emblem$(/l) (5.6%)$(br2)Obtained by using emeralds on the $(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l)"
 		}
 	]
 }
