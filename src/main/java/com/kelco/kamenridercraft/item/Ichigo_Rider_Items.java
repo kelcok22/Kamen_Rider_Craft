@@ -202,7 +202,8 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> NOPHOON_CORE = ITEMS.register("nophoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kamen_norider","nophoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).SetShowFace().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+                    .SetShowFace().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ICHIGOHELMET = ITEMS.register("ichigohead",
