@@ -124,6 +124,7 @@ public class RiderDriverItem extends RiderArmorItem {
             this.riderKickCooldown--;
             if (this.riderKickCooldown == 0 && player instanceof Player play) play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
         }
+       // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
         if (stack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
             if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
@@ -222,11 +223,19 @@ public class RiderDriverItem extends RiderArmorItem {
         if (entity instanceof LivingEntity player && stack == player.getItemBySlot(EquipmentSlot.FEET)) {
             this.beltTick(stack,level,player,slotId);
             this.giveEffects(player);
+        }else if (entity instanceof LivingEntity player) {
+            if (stack.has(DataComponents.CUSTOM_DATA)) {
+                CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+                if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
+            }
         }
     }
 
+
+
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         if(isTransformed(player)) {
+            //if (player.level().isClientSide)player.sendSystemMessage(Component.literal("OnformChange"));
             OnTransformation(itemstack,player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
@@ -239,6 +248,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
         if(isTransformed(player) && !player.level().isClientSide()) {
+            //if (player.level().isClientSide)player.sendSystemMessage(Component.literal("OnTransformation"));
             for (int n = 0; n < Num_Base_Form_Item; n++) {
                 RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
                 form.OnTransformation(itemstack, player);
@@ -253,7 +263,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
         float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
         enemy.hurt(damageSource, at);
-        //pLivingEntity.sendSystemMessage(Component.literal("power="+at));
+        pLivingEntity.sendSystemMessage(Component.literal("power="+at));
         pLivingEntity.fallDistance = 0.0f;
         if(!pLivingEntity.level().isClientSide()) {
             ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,

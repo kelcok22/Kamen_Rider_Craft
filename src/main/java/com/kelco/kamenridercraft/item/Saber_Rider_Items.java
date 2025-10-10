@@ -78,8 +78,7 @@ public class Saber_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }
-					.AddNum(3).ResetFormToBase());
+            }.AddNum(3).ResetFormToBase().has_basic_model().model_has_different_name("brave_dragon_wonder_ride_book"));
 
 	public static final DeferredItem<Item> BRAVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("brave_dragon_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"brave_dragon","saber","seiken_swordriver_belt"
@@ -105,7 +104,7 @@ public class Saber_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeSlot(2));
+            }.ChangeSlot(2).has_basic_model().model_has_different_name("storm_eagle_wonder_ride_book"));
 
 	public static final DeferredItem<Item> STORM_EAGLE_WONDER_RIDE_BOOK = ITEMS.register("storm_eagle_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"storm_eagle","saber","seiken_swordriver_belt"
@@ -133,7 +132,7 @@ public class Saber_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeSlot(3));
+            }.ChangeSlot(3).has_basic_model().model_has_different_name("saiyuu_journey_wonder_ride_book"));
 
 	public static final DeferredItem<Item> SAIYUU_JOURNEY_WONDER_RIDE_BOOK = ITEMS.register("saiyuu_journey_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"saiyuu_journey","saber","seiken_swordriver_belt"
@@ -172,7 +171,7 @@ public class Saber_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeSlot(2));
+            }.ChangeSlot(2).has_basic_model().model_has_different_name("lion_senki_wonder_ride_book"));
 
 	public static final DeferredItem<Item> LION_SENKI_WONDER_RIDE_BOOK = ITEMS.register("lion_senki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"lion_senki","blades","seiken_swordriver_belt"
@@ -237,7 +236,7 @@ public class Saber_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeSlot(3));
+            }.ChangeSlot(3).has_basic_model().model_has_different_name("lamp_do_alngina_wonder_ride_book"));
 
 	public static final DeferredItem<Item> LAMP_DO_ALNGINA_WONDER_RIDE_BOOK = ITEMS.register("lamp_do_alngina_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"lamp_do_alngina","espada","seiken_swordriver_belt"
