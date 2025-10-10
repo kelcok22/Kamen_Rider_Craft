@@ -1684,7 +1684,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
     public static final DeferredItem<Item> BUILD_PHONE = ITEMS.register("build_phone",
-            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.risehopper"), MobsCore.MACEHINE_BUILDER)
+            () -> new SummonBikeItem(new Item.Properties(), Component.translatable("bike.machine_builder"), MobsCore.MACEHINE_BUILDER)
                     .has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 

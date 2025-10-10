@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zero_one",
+  "pattern": [
+    "XAX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "A": {
+      "item": "kamenridercraft:uchuyaro_subaru_progrisekey"
+    }, "B": {
+      "item": "kamenridercraft:base_bike"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hiden_risephone"
+  }
+}

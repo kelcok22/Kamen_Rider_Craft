@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:suika_lockseed"
+			  "kamenridercraft:uchuyaro_subaru_progrisekey"
 			]
 		  }
 		]
@@ -21,10 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:gaim/suika_sojinto",
-	  "kamenridercraft:gaim/suika_sojinto_baron_ver",
-      "kamenridercraft:gaim/suika_sojinto_knuckle_ver",
-      "kamenridercraft:zi_o/kodama_ridewatch"
+	  "kamenridercraft:zero_one/hiden_risephone"
 	]
   },
   "sends_telemetry_event": false
