@@ -31,6 +31,9 @@ public class Miscellaneous_Rider_Items {
     public static final DeferredItem<Item> ICHIGO_MASK = ITEMS.register("ichigo_mask",
             () -> new MaskItem(new Item.Properties().stacksTo(1)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> V3_MASK = ITEMS.register("v3_mask",
+            () -> new MaskItem(new Item.Properties().stacksTo(1)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
 
     //G
 	    public static final DeferredItem<Item> G_LOGO = ITEMS.register("g_logo",

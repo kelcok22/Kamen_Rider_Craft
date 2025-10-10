@@ -1,0 +1,19 @@
+{
+	"name": "V3 Mask",
+	"icon": "kamenridercraft:v3_mask",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Tojima Tanzaburo Wants to Be a Masked Rider (2018/2025, manga/anime)$(br2)Can be equipped on the head armor slot"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:v3_mask",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+		}
+	]
+}
