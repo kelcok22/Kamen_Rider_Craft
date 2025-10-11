@@ -134,6 +134,10 @@ public class GorillaCanEntity extends BaseAllyEntity implements GeoEntity {
 		return SoundEvents.IRON_GOLEM_DEATH;
 	}
 **/
+    public boolean shouldDropExperience() {
+        return false;
+    }
+
 	   public boolean isBaby() {
 		      return false;
 		   }

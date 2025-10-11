@@ -177,7 +177,11 @@ public class KujakuCanEntity extends BaseAllyEntity implements GeoEntity , Flyin
 		return SoundEvents.IRON_GOLEM_DEATH;
 	}
 **/
-	   public boolean isBaby() {
+    public boolean shouldDropExperience() {
+        return false;
+    }
+
+    public boolean isBaby() {
 		      return false;
 		   }
 	   
