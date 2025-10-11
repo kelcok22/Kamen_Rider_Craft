@@ -50,6 +50,7 @@ public class RideGadgetItem extends BaseItem {
 					level.addFreshEntity(boss);
 					if (!TEXT.isEmpty()) for (Component text : TEXT) player.displayClientMessage(text, true);
 					itemstack.consume(1,player);
+					player.awardStat(Stats.ITEM_USED.get(this));
 				}
 			}
 		}
