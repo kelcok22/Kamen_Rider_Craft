@@ -177,7 +177,11 @@ public class PteraCanEntity extends BaseAllyEntity implements GeoEntity , Flying
 		return SoundEvents.IRON_GOLEM_DEATH;
 	}
 **/
-	   public boolean isBaby() {
+    public boolean shouldDropExperience() {
+        return false;
+    }
+
+    public boolean isBaby() {
 		      return false;
 		   }
 	   

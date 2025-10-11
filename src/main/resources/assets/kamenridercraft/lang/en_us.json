@@ -8514,6 +8514,16 @@
 	"entity.kamenridercraft.risehopper": "Risehopper",
 	"entity.kamenridercraft.diagospeedy": "Diagospeedy",
 
+  "entity.kamenridercraft.taka_can": "Taka Candroid",
+  "entity.kamenridercraft.tako_can": "Tako Candroid",
+  "entity.kamenridercraft.batta_can": "Batta Candroid",
+  "entity.kamenridercraft.tora_can": "Tora Candroid",
+  "entity.kamenridercraft.denkiunagi_can": "Denkiunagi Candroid",
+  "entity.kamenridercraft.gorilla_can": "Gorilla Candroid",
+  "entity.kamenridercraft.kujaku_can": "Kujaku Candroid",
+  "entity.kamenridercraft.ptera_can": "Ptera Candroid",
+  "entity.kamenridercraft.torikera_can": "Torikera Candroid",
+
 "entity.kamenridercraft.rider_summon": "Rider Summon",
 "entity.kamenridercraft.complete_summon": "Complete Summon",
 "entity.kamenridercraft.grand_summon": "Grand Summon",

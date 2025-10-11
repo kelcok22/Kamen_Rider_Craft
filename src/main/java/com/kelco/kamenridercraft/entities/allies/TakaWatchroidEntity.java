@@ -178,7 +178,11 @@ public class TakaWatchroidEntity extends BaseAllyEntity implements GeoEntity , F
 		return SoundEvents.IRON_GOLEM_DEATH;
 	}
 **/
-	   public boolean isBaby() {
+    public boolean shouldDropExperience() {
+        return false;
+    }
+
+    public boolean isBaby() {
 		      return false;
 		   }
 	   
