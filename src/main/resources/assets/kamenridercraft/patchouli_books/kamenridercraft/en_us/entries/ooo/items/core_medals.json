@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:taka_medal",
-			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/ankh)Ankh$(/l)$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy_mob)Yummy$(/l)$(li)$(l:ooo/mobs/ankh_mob)Ankh$(/l)$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kujaku_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:condor_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taka_ankh_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lion_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tora_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/kazari)Kazari$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy_mob)Yummy$(/l)$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cheetah_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuwagata_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/uva)Uva$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kamakiri_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/uva)Uva$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:batta_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/uva)Uva$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy_mob)Yummy$(/l)$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sai_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gorilla_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zou_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shachi_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:unagi_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -208,7 +208,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tako_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -338,7 +338,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mukade_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -351,7 +351,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hachi_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -364,7 +364,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ari_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -533,7 +533,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:panda_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier_mob)Knight Soldier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -546,7 +546,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kangaroo_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier_mob)Knight Soldier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -559,7 +559,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:yadokari_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier_mob)Knight Soldier$(/l)"
 		},
 		{
 			"type": "patchouli:text",

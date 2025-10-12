@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_ankh_lost",
-			"text": "Drops from:$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_ankh",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_uva",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/uva)Uva$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_kazari",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_mezool",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_gamel",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_muchiri",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)"
 		},
       {
         "type": "patchouli:text",

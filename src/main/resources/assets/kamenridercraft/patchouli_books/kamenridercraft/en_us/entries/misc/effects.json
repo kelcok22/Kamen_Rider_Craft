@@ -331,7 +331,7 @@
 			"type": "patchouli:text",
 			"anchor": "greeed",
 			"title": "Greeed",
-			"text": "This effect causes $(l:ooo/mobs/yummy)Yummies$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn.$(br2)Examples for how to get this effect:$(li)Carry a stack of $(l:ooo/items/cellmedal)Cell Medals$(/l) in your inventory"
+			"text": "This effect causes $(l:ooo/mobs/yummy_mob)Yummies$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn.$(br2)Examples for how to get this effect:$(li)Carry a stack of $(l:ooo/items/cellmedal)Cell Medals$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

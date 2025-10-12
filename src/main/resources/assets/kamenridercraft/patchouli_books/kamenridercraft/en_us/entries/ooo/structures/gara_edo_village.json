@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Gara's Edo Village",
-			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Spawn locations: Forest, Plains$(br2)Includes 4 $(l:ooo/mobs/knight_soldier)Knight Soldier$(/l) spawners$(br2)Chest loot:$(li)18 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#cobra_medal)Cobra Medal$(/l)$(li)1 $(l:ooo/items/core_medals#kame_medal)Kame Medal$(/l)$(li)1 $(l:ooo/items/core_medals#wani_medal)Wani Medal$(/l)$(li)1 Iron Sword"
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Spawn locations: Forest, Plains$(br2)Includes 4 $(l:ooo/mobs/knight_soldier_mob)Knight Soldier$(/l) spawners$(br2)Chest loot:$(li)18 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#cobra_medal)Cobra Medal$(/l)$(li)1 $(l:ooo/items/core_medals#kame_medal)Kame Medal$(/l)$(li)1 $(l:ooo/items/core_medals#wani_medal)Wani Medal$(/l)$(li)1 Iron Sword"
 		},
 		{
 			"type": "patchouli:image",

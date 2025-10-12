@@ -13,11 +13,11 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cellmedal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)$(li)$(l:ooo/mobs/ankh)Ankh$(/l)$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)$(li)$(l:ooo/mobs/uva)Uva$(/l)$(li)$(l:ooo/mobs/kazari)Kazari$(/l)$(li)$(l:ooo/mobs/mezool)Mezool$(/l)$(li)$(l:ooo/mobs/gamel)Gamel$(/l)$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy_mob)Yummy$(/l)$(li)$(l:ooo/mobs/knight_soldier_mob)Knight Soldier$(/l)$(li)$(l:ooo/mobs/ankh_mob)Ankh$(/l)$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)$(li)$(l:ooo/mobs/kyoryu_greeed_mob)Kyoryu Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
+			"text": "$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
 		}
 	]
 }
