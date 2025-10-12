@@ -350,7 +350,7 @@
         "type": "patchouli:text",
         "anchor": "capsem_dropper",
         "title": "Capsem Dropper",
-        "text": "Use $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on this block to obtain $(l:zeztz/items/capsems)Capsems$(/l)$(br2)Drops:$(li)$(l:zeztz/items/capsems#impact_capsem)Impact Capsem$(/l) (22.2%)$(li)$(l:zeztz/items/capsems#transform_capsem)Transform Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#wing_capsem)Wing Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#stream_capsem)Stream Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#recovery_capsem)Recovery Capsem$(/l) (15.6%)$(li)$(l:zeztz/items/capsems#wonder_capsem)Wonder Capsem$(/l) (15.6%)"
+        "text": "Use $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on this block to obtain $(l:zeztz/items/capsems)Capsems$(/l)$(br2)Drops:$(li)$(l:zeztz/items/capsems#impact_capsem)Impact Capsem$(/l) (19.6%)$(li)$(l:zeztz/items/capsems#transform_capsem)Transform Capsem$(/l) (9.8%)$(li)$(l:zeztz/items/capsems#wing_capsem)Wing Capsem$(/l) (9.8%)$(li)$(l:zeztz/items/capsems#stream_capsem)Stream Capsem$(/l) (13.7%)$(li)$(l:zeztz/items/capsems#machinery_capsem)Machinery Capsem$(/l) (9.8%)$(li)$(l:zeztz/items/capsems#projection_capsem)Projection Capsem$(/l) (9.8%)$(li)$(l:zeztz/items/capsems#recovery_capsem)Recovery Capsem$(/l) (13.7%)$(li)$(l:zeztz/items/capsems#wonder_capsem)Wonder Capsem$(/l) (13.7%)"
       },
       {
         "type": "patchouli:crafting",

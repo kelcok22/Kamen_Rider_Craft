@@ -3,9 +3,11 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
+import com.kelco.kamenridercraft.entities.summons.ApolloEntity;
+import com.kelco.kamenridercraft.entities.summons.LibraEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.rideKamens.ChaosDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -16,6 +18,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -346,6 +349,23 @@ public class Miscellaneous_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
+
+                    if (player instanceof Player play) {
+                        ApolloEntity apollo = MobsCore.APOLLO.get().create(player.level());
+                        if (apollo != null) {
+                            apollo.moveTo(player.getX()-1, player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+                            player.level().addFreshEntity(apollo);
+                            apollo.bindToPlayer(play);
+                            apollo.addRequiredForm(this, 1);
+                        }
+                        LibraEntity libra = MobsCore.LIBRA.get().create(player.level());
+                        if (libra != null) {
+                            libra.moveTo(player.getX()+1, player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+                            player.level().addFreshEntity(libra);
+                            libra.bindToPlayer(play);
+                            libra.addRequiredForm(this, 1);
+                        }
+                    }
                 }
             }.addSwitchForm(Miscellaneous_Rider_Items.CHAOS_RING_LOQ_Q.get()).SetShowFace().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
@@ -386,7 +406,7 @@ public class Miscellaneous_Rider_Items {
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_LOQ = ITEMS.register("chaos_driver_loq",
-            () -> new ChaosDriverItem(ArmorMaterials.DIAMOND,"loq",CHAOS_RING_LOQ ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"loq",CHAOS_RING_LOQ ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
                     .AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 

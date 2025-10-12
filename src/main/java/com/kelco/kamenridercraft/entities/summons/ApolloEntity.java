@@ -2,9 +2,7 @@ package com.kelco.kamenridercraft.entities.summons;
 
 
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
-import com.kelco.kamenridercraft.entities.footSoldiers.YummyEntity;
 import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;
@@ -179,13 +177,9 @@ public class ApolloEntity extends BaseSummonEntity implements GeoEntity , Flying
 	   public boolean isBaby() {
 		      return false;
 		   }
-	   
-	public boolean canMate(Animal p_30392_) {
-	            return false;
-	   }
 
-	   
-	   public boolean isFood(ItemStack p_30440_) {
+
+    public boolean isFood(ItemStack p_30440_) {
 		      Item item = p_30440_.getItem();
            return item == Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get();
 		   }

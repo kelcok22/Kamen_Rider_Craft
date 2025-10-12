@@ -54,6 +54,32 @@
 			"title": " ",
 			"text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "machinery_capsem",
+        "title": "Machinery Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#machinery)Technolom Machinery$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:machinery_capsem",
+        "title": " ",
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "projection_capsem",
+        "title": "Projection Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#projection)Technolom Projection$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:projection_capsem",
+        "title": " ",
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "recovery_capsem",

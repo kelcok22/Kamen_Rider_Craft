@@ -790,7 +790,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.DECADE_ARMOR_EX_AID.get(), DecadeArmorExAidEntity.setAttributes().build());
 		event.put(MobsCore.VICE.get(), ViceEntity.setAttributes().build());
 		event.put(MobsCore.LOVEKOV.get(), LovekovEntity.setAttributes().build());
-		event.put(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierEntity.setAttributes().build());
+        event.put(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierEntity.setAttributes().build());
+        event.put(MobsCore.TECHNOLOM_PROJECTION.get(), TechnolomProjectionEntity.setAttributes().build());
         event.put(MobsCore.APOLLO.get(), ApolloEntity.setAttributes().build());
         event.put(MobsCore.LIBRA.get(), LibraEntity.setAttributes().build());
 

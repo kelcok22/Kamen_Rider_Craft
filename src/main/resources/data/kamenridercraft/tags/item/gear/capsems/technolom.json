@@ -1,5 +1,7 @@
 {
   "values": [
-    "kamenridercraft:stream_capsem"
+    "kamenridercraft:stream_capsem",
+    "kamenridercraft:machinery_capsem",
+    "kamenridercraft:projection_capsem"
   ]
 }
