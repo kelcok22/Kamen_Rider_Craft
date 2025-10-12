@@ -4,6 +4,9 @@
 	"kamenridercraft:urataros",
 	"kamenridercraft:kintaros",
 	"kamenridercraft:ryutaros",
-	"kamenridercraft:ankh_mob"
+	"kamenridercraft:ankh_mob",
+    "#kamenridercraft:by_type/candroids",
+    "kamenridercraft:kodama_suika_arms",
+    "kamenridercraft:taka_watchroid"
   ]
 }

@@ -1,4 +1,3 @@
-
 Installation information
 =======
 
@@ -23,3 +22,5 @@ Additional Resources:
 ==========
 Community Documentation: https://docs.neoforged.net/  
 NeoForged Discord: https://discord.neoforged.net/
+
+![KELCO BUCKET RELEASE](https://i.imgur.com/3EdmXcl.png "KELCO BUCKET RELEASE‼️🌊")
