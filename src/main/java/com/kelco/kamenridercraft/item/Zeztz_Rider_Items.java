@@ -53,7 +53,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().AddToList(CapsemDropper.CAPSEM,7).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().AddToList(CapsemDropper.CAPSEM,5).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WING_CAPSEM = ITEMS.register("wing_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_physicam_wing","zeztz","zeztz_driver_belt_wing",
@@ -66,7 +66,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").hasStaticWings().IsGlowing().IsBeltGlowing().AddToList(CapsemDropper.CAPSEM,7).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").hasStaticWings().IsGlowing().IsBeltGlowing().AddToList(CapsemDropper.CAPSEM,5).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
@@ -82,7 +82,21 @@ public class Zeztz_Rider_Items {
                         }
                 } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-        public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
+    public static final DeferredItem<Item> MACHINERYCAPSEM = ITEMS.register("machinery_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_machinery","zeztz","zeztz_driver_belt_technolom_machinery",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_esprim_recovery","zeztz","zeztz_driver_belt_esprim_recovery",
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
