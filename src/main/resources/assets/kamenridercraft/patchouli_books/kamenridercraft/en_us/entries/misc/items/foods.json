@@ -45,7 +45,7 @@
 			"type": "patchouli:text",
 			"anchor": "icepop",
 			"title": "Ice Pops",
-			"text": "Restores 3 hunger points when eaten$(br2)Can be used to tame $(l:ooo/mobs/ankh)Ankh$(/l)$(br2)Converts $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizos$(/l) into $(l:gavv/items/gochizo#blizzardsorbei_gochizo)Blizzardsorbei Gochizos$(/l) when eaten"
+			"text": "Restores 3 hunger points when eaten$(br2)Can be used to tame $(l:ooo/mobs/ankh_mob)Ankh$(/l)$(br2)Converts $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizos$(/l) into $(l:gavv/items/gochizo#blizzardsorbei_gochizo)Blizzardsorbei Gochizos$(/l) when eaten"
 		},
 		{
 			"type": "patchouli:crafting",
