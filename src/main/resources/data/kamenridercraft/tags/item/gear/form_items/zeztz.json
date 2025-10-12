@@ -6,7 +6,9 @@
     "kamenridercraft:stream_capsem",
     "kamenridercraft:machinery_capsem",
     "kamenridercraft:projection_capsem",
-	"kamenridercraft:recovery_capsem",
-	"kamenridercraft:wonder_capsem"
+    "kamenridercraft:recovery_capsem",
+    "kamenridercraft:barrier_capsem",
+	"kamenridercraft:wonder_capsem",
+    "kamenridercraft:gravity_capsem"
   ]
 }
