@@ -60,6 +60,34 @@
 			"title": "Kamen Rider Zeztz",
 			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "machinery",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:machinery_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Technolom Machinery",
+        "text": "Accessed with the $(l:zeztz/items/capsems#machinery_capsem)Machinery Capsem$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Zeztz",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "projection",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:projection_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Technolom Projection",
+        "text": "Accessed with the $(l:zeztz/items/capsems#projection_capsem)Projection Capsem$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Zeztz",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "recovery",

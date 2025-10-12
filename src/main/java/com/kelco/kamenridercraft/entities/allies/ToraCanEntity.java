@@ -138,11 +138,7 @@ public class ToraCanEntity extends BaseAllyEntity implements GeoEntity {
         return false;
     }
 
-    public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 

@@ -3,7 +3,9 @@
 	"kamenridercraft:impact_capsem",
     "kamenridercraft:transform_capsem",
     "kamenridercraft:wing_capsem",
-	"kamenridercraft:stream_capsem",
+    "kamenridercraft:stream_capsem",
+    "kamenridercraft:machinery_capsem",
+    "kamenridercraft:projection_capsem",
 	"kamenridercraft:recovery_capsem",
 	"kamenridercraft:wonder_capsem"
   ]

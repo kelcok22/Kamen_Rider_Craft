@@ -622,6 +622,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LOVEKOV.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierRenderer::new);
+            event.registerEntityRenderer(MobsCore.TECHNOLOM_PROJECTION.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.APOLLO.get(), ApolloRenderer::new);
             event.registerEntityRenderer(MobsCore.LIBRA.get(), LibraRenderer::new);
             

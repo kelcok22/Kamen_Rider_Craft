@@ -181,11 +181,7 @@ public class PteraCanEntity extends BaseAllyEntity implements GeoEntity , Flying
         return false;
     }
 
-    public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 

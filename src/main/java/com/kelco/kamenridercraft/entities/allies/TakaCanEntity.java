@@ -178,11 +178,7 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
         return false;
     }
 
-    public boolean isBaby() {
-		      return false;
-		   }
-	   
-	public boolean canMate(Animal p_30392_) {
+    public boolean canMate(Animal p_30392_) {
 	            return false;
 	   }
 
