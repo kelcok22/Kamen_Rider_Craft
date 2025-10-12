@@ -135,7 +135,20 @@ public class Zeztz_Rider_Items {
                         }
                 }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-        public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
+    public static final DeferredItem<Item> BARRIER_CAPSEM = ITEMS.register("barrier_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -148,7 +161,20 @@ public class Zeztz_Rider_Items {
                         }
                 }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-        public static final DeferredItem<Item> ZEZTZ_HELMET = ITEMS.register("zeztz_head",
+    public static final DeferredItem<Item> GRAVITY_CAPSEM = ITEMS.register("gravity_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> ZEZTZ_HELMET = ITEMS.register("zeztz_head",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
         public static final DeferredItem<Item> ZEZTZ_CHESTPLATE = ITEMS.register("zeztz_troso",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
