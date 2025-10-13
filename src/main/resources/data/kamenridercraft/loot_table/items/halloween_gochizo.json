@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:poppingummy_gochizo_halloween",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:chocozon_gochizo",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:doracan_gochizo",
+          "weight": 20
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:halloween_gochizo"
+}

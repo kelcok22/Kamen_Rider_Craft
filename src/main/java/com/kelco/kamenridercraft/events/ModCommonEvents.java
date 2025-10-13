@@ -19,6 +19,7 @@ import com.kelco.kamenridercraft.entities.summons.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.gavv.GochipodItem;
@@ -34,6 +35,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -52,6 +54,10 @@ import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
@@ -75,6 +81,9 @@ public class ModCommonEvents {
 
 
 	public static class EventHandler {
+
+		private static ResourceLocation lootTable;
+		private static final ResourceLocation LOOT_TABLE_PATH = lootTable;
 
 		@SubscribeEvent
 		public void clientTick(ClientTickEvent.Post event) {
@@ -156,7 +165,22 @@ public class ModCommonEvents {
 			}
 			return Items.APPLE;
 		}
+		public ResourceLocation dropItem(ServerLevel world, Player player, Player playerIn, InteractionHand p_41434_) {
+			ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, LOOT_TABLE_PATH);
+			LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);
+			LootParams.Builder lootparams$builder = new LootParams.Builder(world)
+					.withParameter(LootContextParams.THIS_ENTITY, player)
+					.withParameter(LootContextParams.ORIGIN, player.position());
 
+			LootParams lootparams = lootparams$builder.create(LootContextParamSets.GIFT);
+			loottable.getRandomItems(lootparams, 0L, player::spawnAtLocation);
+			ItemStack itemstack = playerIn.getItemInHand(p_41434_);
+			if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/halloween_gochizo")))) {
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift");
+			}
+			return null;
+		}
+		
 		private Item getCupGochizoDrop(ItemStack itemstack) {
 			Random generator = new Random();
 			if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/frappeis_gochizo")))) {

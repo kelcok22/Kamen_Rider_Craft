@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:frappeis_gochizo",
+          "weight": 30
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:food_for/frappeis_gochizo"
+}
