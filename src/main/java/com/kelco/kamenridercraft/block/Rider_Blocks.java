@@ -1141,6 +1141,10 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> BOCCA_BOSS_BLOCK = registerBlock("bocca_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.BOCCA_JALDAK).addLine(Component.translatable("henshin.kamenridercraft.bocca_jaldak")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<PandoraPanelBlock> PANDORA_PANEL_BLOCK = registerBlock("pandora_panel_block", // TODO: Make this openable while placed
 			() -> new PandoraPanelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));

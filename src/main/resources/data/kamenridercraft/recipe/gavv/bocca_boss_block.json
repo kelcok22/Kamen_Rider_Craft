@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jaldak",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:nyelv_mimic_key"
+    }, 
+    {
+      "item": "kamenridercraft:lango_mimic_key"
+    }, 
+    {
+      "item": "kamenridercraft:glotta_mimic_key"
+    }, 
+    {
+      "item": "kamenridercraft:jeeb_mimic_key"
+    } ,
+    {
+      "item": "kamenridercraft:shiita_mimic_key"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:bocca_boss_block"
+  }
+}

@@ -1268,6 +1268,11 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> LANGO_STOMACH_SPAWN_EGG = ITEMS.register("lango_stomach_spawn_egg",
             () -> new DeferredSpawnEggItem(LANGO_STOMACH, 0x6c7075, 0xe60510, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BoccaEntity>> BOCCA_JALDAK = MOBLIST.register("bocca_jaldak",
+            () -> EntityType.Builder.of(BoccaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bocca_jaldak"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BOCCA_JALDAK_SPAWN_EGG = ITEMS.register("bocca_jaldak_spawn_egg",
+            () -> new DeferredSpawnEggItem(BOCCA_JALDAK, 0xEDE7DA, 0x42E4ED, new Item.Properties()));
     
     public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
             () -> EntityType.Builder.of(AcrobatterEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":acrobatter"));

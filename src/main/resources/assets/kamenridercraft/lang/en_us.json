@@ -613,6 +613,7 @@
   "henshin.kamenridercraft.jeeb":"<Jeeb Stomach> §1I'm looking forward to this",
   "henshin.kamenridercraft.shiita":"<Shiita Stomach> Jeeb, will you stay with me?\n<Jeeb Stomach>§1 I won't ever leave you, Shiita",
   "henshin.kamenridercraft.lango":"<Lango Stomach> §4Don't get in my way",
+  "henshin.kamenridercraft.bocca_jaldak":"<Bocca Jaldak> §bSo you are the remaining Granute Hunter?",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
   "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up!",
@@ -7799,6 +7800,8 @@
   "kamenridercraft.name.shiita": "Granute: Shiita Stomach",
   "item.kamenridercraft.lango_mimicdeviser": "Mimicdeviser",
   "kamenridercraft.name.lango": "Granute: Lango Stomach",
+  "item.kamenridercraft.bocca_mimicdeviser": "Mimicdeviser",
+  "kamenridercraft.name.bocca": "Granute: Bocca Jaldak",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.prototype_cup_gochizo": "Prototype Cup Gochizo",
@@ -7897,6 +7900,9 @@
 "kamenridercraft:tsurigummy_gochizo.form": "Form: Fishingummy Assist",
 "kamenridercraft:umaibo_gochizo.form": "Form: Shot Snack Form",
 "kamenridercraft:partea_gochizo.form": "Form: Partea Scone Form",
+
+  "item.kamenridercraft.ope_dummy_gochizo": "OPE Dummy Gochizo",
+  "item.kamenridercraft.ple_dummy_gochizo": "PLE Dummy Gochizo",
 
   "item.kamenridercraft.hichew_gochizo": "Hi-Chew Gummy Gochizo",
   "item.kamenridercraft.ottotto_gochizo": "Ottotto Gochizo",
@@ -8000,6 +8006,7 @@
   "item.kamenridercraft.jeeb_mimic_key": "Jeeb's Mimic Key",
   "item.kamenridercraft.shiita_mimic_key": "Shiita's Mimic Key",
   "item.kamenridercraft.lango_mimic_key": "Lango's Mimic Key",
+  "item.kamenridercraft.bocca_mimic_key": "Bocca's Mimic Key",
 
 "item.kamenridercraft.gavvgablade": "Gavvgablade",
 "item.kamenridercraft.zakuzakuchipslasher": "Zakuzakuchipslasher",
@@ -8737,6 +8744,7 @@
   "item.kamenridercraft.jeeb_stomach_spawn_egg": "Jeeb Stomach Spawn Egg",
   "item.kamenridercraft.shiita_stomach_spawn_egg": "Shiita Stomach Spawn Egg",
   "item.kamenridercraft.lango_stomach_spawn_egg": "Lango Stomach Spawn Egg",
+  "item.kamenridercraft.bocca_jaldak_spawn_egg": "Bocca Jaldak Spawn Egg",
 
 	"item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",
 	"item.kamenridercraft.ridoron_spawn_egg": "Ridoron",
@@ -9049,6 +9057,7 @@
 "block.kamenridercraft.durendal_boss_block": "Durendal Boss Block",
 "block.kamenridercraft.solomon_boss_block": "Solomon Boss Block",
 "block.kamenridercraft.storious_boss_block": "Storious Boss Block",
+  "block.kamenridercraft.bocca_boss_block": "Bocca Jaldak Boss Block",
   "container.astroswitchPanel": "Astroswitch Rack",
 
   "tag.item.kamenridercraft.arsenal.all_melee": "Rider Melee Weapons",
