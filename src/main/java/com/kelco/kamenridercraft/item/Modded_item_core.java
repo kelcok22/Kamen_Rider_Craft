@@ -153,7 +153,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsBeltGlowing().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> GRANDGOURAM = ITEMS.register("grandgouram",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_grand_gouram","kuuga","arcle_belt_r",
@@ -291,7 +291,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
+                    ).IsBeltGlowing().IsGlowing().hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI_DARK_KABUTO = ITEMS.register("jinrai_no_senshi_dark_kabuto",
