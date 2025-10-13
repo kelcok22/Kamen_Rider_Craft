@@ -593,6 +593,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.JEEB_STOMACH.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHIITA_STOMACH.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LANGO_STOMACH.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.BOCCA_JALDAK.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.RIDORON.get(), BikeRenderer::new);

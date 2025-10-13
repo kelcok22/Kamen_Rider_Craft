@@ -762,6 +762,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.JEEB_STOMACH.get(), JeebEntity.setAttributes().build());
 		event.put(MobsCore.SHIITA_STOMACH.get(), ShiitaEntity.setAttributes().build());
 		event.put(MobsCore.LANGO_STOMACH.get(), LangoEntity.setAttributes().build());
+		event.put(MobsCore.BOCCA_JALDAK.get(), BoccaEntity.setAttributes().build());
 
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.RIDORON.get(), RidoronEntity.setAttributes().build());

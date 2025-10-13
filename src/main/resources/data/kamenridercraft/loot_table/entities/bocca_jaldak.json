@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:bocca_mimic_key"
+		}
+	  ]
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:ope_dummy_gochizo"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:ple_dummy_gochizo"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:heatpress",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 3
+			  }
+			}
+		  ]
+		},
+		  {
+			  "type": "minecraft:item",
+			  "name": "kamenridercraft:granute_tooth",
+			  "functions": [
+				  {
+					  "function": "minecraft:set_count",
+					  "count": {
+						  "min": 3,
+						  "max": 5
+					  }
+				  }
+			  ]
+		  }
+		  ]
+		  },
+		  {
+			  "rolls": 1,
+			  "entries": [
+				  {
+					  "type": "minecraft:item",
+					  "name": "kamenridercraft:amazingummy_gochizo"
+				  }
+			  ],
+			  "conditions": [
+				  {
+					  "condition": "minecraft:entity_properties",
+					  "entity": "attacking_player",
+					  "predicate": {
+						  "slots": {
+							  "container.*": {
+								  "items": "kamenridercraft:gochipod"
+							  }
+						  }
+					  }
+				  }
+			  ]
+		  }
+
+
+  ]
+}

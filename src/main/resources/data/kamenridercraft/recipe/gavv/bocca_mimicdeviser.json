@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "jaldak",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_gochizo"
+	},
+	"M": {
+	  "item": "kamenridercraft:bocca_mimic_key"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:bocca_mimicdeviser"
+  }	
+}
