@@ -56,7 +56,18 @@
       {
         "type": "patchouli:crafting",
         "recipe": "kamenridercraft:gavv/lango_mimicdeviser",
-          "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)'s equipment"
+        "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)'s equipment"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bocca_mimicdeviser",
+        "title": "Mimicdeviser",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/bocca_jaldak)Bocca Jaldak"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/bocca_mimicdeviser",
+        "text": "Drops from:$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)'s equipment"
       }
     ]
 }

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 2% chance to spawn from a $(l:revice/mobs/giff_junior)Giff Junior$(/l)$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#proto_queen_bee_vistamp)Queen Bee Proto Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (57.1%)$(li)1 $(l:revice/items/vistamps#rex_vistamp_christmas)Rex Vistamp (Christmas)$(/l) (14.3%)$(li)1 $(l:revice/items/vistamps#koala_vistamp)Koala Proto Vistamp$(/l) (14.3%)$(li)1 $(l:revice/items/vistamps#rafflesia_vistamp)Rafflesia Proto Vistamp$(/l) (14.3%)"
+			"text": "Has a 2% chance to spawn from a $(l:revice/mobs/giff_junior)Giff Junior$(/l)$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#proto_queen_bee_vistamp)Queen Bee Proto Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (66.7%)$(li)1 $(l:revice/items/vistamps#koala_vistamp)Koala Proto Vistamp$(/l) (16.7%)$(li)1 $(l:revice/items/vistamps#rafflesia_vistamp)Rafflesia Proto Vistamp$(/l) (16.7%)"
 		}
 	]
 }

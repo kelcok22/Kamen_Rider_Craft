@@ -286,7 +286,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:amazingummy_gochizo",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l) (with a full $(l:gavv/items/gochipod)Gochipod$(/l) in your inventory)"
       },
 		{
 			"type": "patchouli:text",
@@ -1198,6 +1198,32 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "ope_dummy_gochizo",
+        "title": "OPE Dummy Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ope_dummy_gochizo",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ple_dummy_gochizo",
+        "title": "PLE Dummy Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ple_dummy_gochizo",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"
+      },
       {
         "type": "patchouli:text",
         "anchor": "poppingummy_gochizo_halloween",
