@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:heatpress",
 			"title": " ",
-			"text": "$(li)$(l:gavv/arsenal/bitter_gavvgablade)Bitter Gavvgablade$(/l)$(li)$(l:gavv/arsenal/bakemagnum)Bakemagnum$(/l)$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)$(li)$(l:gavv/mobs/shitta_stomach)Shiita Stomach$(/l)$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)"
+			"text": "$(li)$(l:gavv/arsenal/bitter_gavvgablade)Bitter Gavvgablade$(/l)$(li)$(l:gavv/arsenal/bakemagnum)Bakemagnum$(/l)$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)$(li)$(l:gavv/mobs/jeeb_stomach)Jeeb Stomach$(/l)$(li)$(l:gavv/mobs/shitta_stomach)Shiita Stomach$(/l)$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"
 		}
 	]
 }

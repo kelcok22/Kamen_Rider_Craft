@@ -1,0 +1,17 @@
+{
+	"name": "Bocca Jaldak",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bocca_jaldak",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#bocca_boss_block)Bocca Jaldak Boss Block$(/l)$(br2)Drops$(li)1 $(l:gavv/items/mimic_keys#bocca_mimic_key)Bocca's Mimic Key$(/l)$(li)1 $(l:gavv/items/gochizo#ope_dummy_gochizo)OPE Dummy Gochizo$(/l) (50%)$(li)1 $(l:gavv/items/gochizo#ple_dummy_gochizo)PLE Dummy Gochizo$(/l) (50%)$(li)1-3 $(l:gavv/items/heatpress)Hitpresses$(/l) (50%)$(li)3-5 $(l:gavv/items/granute_tooth)Granute Teeth$(/l) (50%)$(li)1 $(l:gavv/items/gochizo#amazingummy_gochizo)Amazingummy Gochizo$(/l) (with a full $(l:gavv/items/gochipod)Gochipod$(/l) in your inventory)"
+		}
+	]
+}

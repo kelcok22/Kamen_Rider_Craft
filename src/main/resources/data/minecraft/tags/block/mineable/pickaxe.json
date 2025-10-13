@@ -143,6 +143,9 @@
 	  "kamenridercraft:blue_wallplate_wall",
 	  "kamenridercraft:light_blue_wallplate_wall",
 	  "kamenridercraft:candy_shop",
-	  "kamenridercraft:pavement_roadline"
+    "kamenridercraft:pavement_roadline",
+    "kamenridercraft:megahex_matel",
+    "kamenridercraft:megahex_matel_lines",
+    "kamenridercraft:megahex_light"
   ]
 }

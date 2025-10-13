@@ -67,6 +67,19 @@
         "item": "kamenridercraft:lango_mimic_key",
         "title": " ",
         "text": "Drops from:$(li)$(l:gavv/mobs/lango_stomach)Lango Stomach$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bocca_mimic_key",
+        "title": "Bocca's Mimic Key",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:bocca_mimic_key",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"
       }
     ]
 }

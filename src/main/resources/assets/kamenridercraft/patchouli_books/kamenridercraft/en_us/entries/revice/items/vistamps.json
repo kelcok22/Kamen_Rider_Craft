@@ -1181,7 +1181,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rex_vistamp_christmas",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
 		},
 		{
 			"type": "patchouli:text",

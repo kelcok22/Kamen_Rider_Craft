@@ -211,11 +211,17 @@
 			"recipe": "kamenridercraft:saber/solomon_boss_block",
 			"text": "Mine this block to summon $(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
 		},
-		{
-			"type": "patchouli:crafting",
-			"anchor": "storious_boss_block",
-			"recipe": "kamenridercraft:saber/storious_boss_block",
-			"text": "Mine this block to summon $(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)"
-		}
+      {
+        "type": "patchouli:crafting",
+        "anchor": "storious_boss_block",
+        "recipe": "kamenridercraft:saber/storious_boss_block",
+        "text": "Mine this block to summon $(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "anchor": "bocca_boss_block",
+        "recipe": "kamenridercraft:gavv/bocca_boss_block",
+        "text": "Mine this block to summon $(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"
+      }
 	]
 }
