@@ -108,7 +108,9 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 
 		if (Wisp_Horn==item.get_Stored_num()){
 			return "_base";
-		}else if (Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2||
+		}else if (Objects.equals(rider, "gamma_superior")){
+            return "_base";
+        }else if (Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2||
                 Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()
 		|| Objects.equals(rider, "specter") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()
 				|| Objects.equals(rider, "necrom") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.YUJOU_BURST_GHOST_EYECON.get()

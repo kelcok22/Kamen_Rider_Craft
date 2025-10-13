@@ -31,7 +31,7 @@ public class Ghost_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 
-	public static String[] Can_use_Eyecons = new String[] {"ghost","specter","necrom","zero_specter","dark_necrom","dark_ghost","kanon_specter","zero_ghost"};
+	public static String[] Can_use_Eyecons = new String[] {"ghost","specter","necrom","zero_specter","dark_necrom","dark_ghost","kanon_specter","zero_ghost","gamma_superior"};
 
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
@@ -1039,8 +1039,29 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> ROYALTY_GAMMA_EYECON = ITEMS.register("royalty_gamma_eyecon",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
+    public static final DeferredItem<Item> GAMMA_SUPERIOR_DAMASHII = ITEMS.register("gamma_superior_damashii",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_superior_damashii","gamma_superior","gamma_superior_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 30, 0, 0, 0, 1);
+                }
+            }.ChangeModel("damashii.geo.json").ChangeSlot(2));
+
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","gamma_superior","gamma_superior_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 70, 0, 0, 0, 1);
+                }
+            }.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
@@ -1160,8 +1181,12 @@ public class Ghost_Rider_Items {
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"zero_ghost",PROTO_ORE_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(PROTO_ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
+    public static final DeferredItem<Item> PROTO_MEGA_ULORDER_igor = ITEMS.register("proto_mega_ulorder_gamma_superior",
+            () -> new GhostDriverItem(ArmorMaterials.DIAMOND,"gamma_superior",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+                    .Add_Extra_Base_Form_Items(GAMMA_SUPERIOR_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
-	public static final DeferredItem<Item> GAN_GUN_SABER_BLADE = ITEMS.register("gan_gun_saber_blade",
+
+    public static final DeferredItem<Item> GAN_GUN_SABER_BLADE = ITEMS.register("gan_gun_saber_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_NITOURYU = ITEMS.register("gan_gun_saber_nitouryu",
