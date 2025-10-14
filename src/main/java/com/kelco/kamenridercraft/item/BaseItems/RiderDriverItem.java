@@ -263,7 +263,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
         float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
         enemy.hurt(damageSource, at);
-        pLivingEntity.sendSystemMessage(Component.literal("power="+at));
+        //pLivingEntity.sendSystemMessage(Component.literal("power="+at));
         pLivingEntity.fallDistance = 0.0f;
         if(!pLivingEntity.level().isClientSide()) {
             ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
