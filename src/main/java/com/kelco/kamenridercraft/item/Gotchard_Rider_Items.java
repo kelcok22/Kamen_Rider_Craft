@@ -1354,7 +1354,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().has_basic_model());
+            }.IsGlowing().has_basic_model().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
     public static final DeferredItem<Item> SANTACLAUS_RIDE_CHEMY_CARD = ITEMS.register("santaclaus_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
