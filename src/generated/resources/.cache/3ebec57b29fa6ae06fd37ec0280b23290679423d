@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-13T19:08:04.1776244	Item Models: kamenridercraft
+// 1.21.1	2025-10-14T13:36:32.753329	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -28,7 +28,6 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/atta
 3eb9e09e2cbb11e833a3bda80951245efe043f1c assets/kamenridercraft/models/item/bakuonzemi_ride_chemy_card.json
 e96c9876c94195f97eec16ceb095b68ddea02e80 assets/kamenridercraft/models/item/bambamboo_ride_chemy_card.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
-9f8e1893b09b05781cf36e9008c4d618a322afdb assets/kamenridercraft/models/item/barrier_capsem.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_baron_core.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_black_baron_core.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_bravo_core.json
@@ -119,6 +118,7 @@ ac90fbcf3d2f4e18755e2edd0907dc3792f5f66d assets/kamenridercraft/models/item/cyan
 d550ff0edafc122c552b0a54ef88ced7083debf2 assets/kamenridercraft/models/item/daiohni_ride_chemy_card.json
 d98587fd3d27a942cc5b2f6100b3d1a48b87d9bd assets/kamenridercraft/models/item/dandeliner.json
 e04b1507db659e1de377184dede795670d27afc2 assets/kamenridercraft/models/item/dango.json
+60e221263b134875ff9d9cab18255f3a307dba4f assets/kamenridercraft/models/item/dark_ether_chemy_card.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_drive_mach.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_mach.json
 7d163395d25fb9622ac7cdb5dceb6da1fb0a9bd4 assets/kamenridercraft/models/item/deadheat_bike.json
@@ -149,6 +149,7 @@ dfd3d930ccdc038fdb5bd1893a7181932ffe6468 assets/kamenridercraft/models/item/driv
 2f18e6dd28a6a855060ae0c7c02f4b96c4b1ad92 assets/kamenridercraft/models/item/drive_ride_chemy_card.json
 426b4fcdb718ca395876918bfef9c122203c5e71 assets/kamenridercraft/models/item/drive_system_car.json
 abb6e2b1747cc1e8b83b123b134e5200f3bf0b82 assets/kamenridercraft/models/item/drive_tridoron_ride_chemy_card.json
+b3d8611ef8a7262b6462b15ec0fa086b1b59d68c assets/kamenridercraft/models/item/eldoradriver.json
 1bc3a084a3852772609fe65bbc83fb1ccedeb95c assets/kamenridercraft/models/item/eleganmacaron_gochizo.json
 849142d9efe8d14a845a98017c44d4592d92720d assets/kamenridercraft/models/item/energyl_ride_chemy_card.json
 8fdf52fcec78fca71b9db51c09b59570944c6e99 assets/kamenridercraft/models/item/eternal_phoenix_wonder_ride_book_falchion.json
