@@ -2289,7 +2289,7 @@ public class Gotchard_Rider_Items {
 			.Add_Extra_Base_Form_Items(Modded_item_core.BLANK_FORM).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
     public static final DeferredItem<Item>  ELDORADRIVER = ITEMS.register("eldoradriver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dorado", DARK_ETHER_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dorado", DARK_ETHER_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
     public static final DeferredItem<Item> VALVARADRAW_BUCKLE = ITEMS.register("valvaradraw_buckle",
 			() -> new ValvaradItem(ArmorMaterials.DIAMOND,"valvarad", MADWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())

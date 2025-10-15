@@ -1,0 +1,17 @@
+{
+  "name": "Eldoradriver",
+  "icon": "kamenridercraft:eldoradriver",
+  "category": "kamenridercraft:gotchard/devices",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "eldoradriver",
+      "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/dorado)Kamen Rider Dorado$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gotchard/eldoradriver"
+    }
+  ]
+}

@@ -728,6 +728,7 @@ public class KamenRiderCraftCore
             event.register(ModMenus.GOTCHANCOLLECTION_PANEL_GUI.get(), GotchancollectionPanelGuiScreen::new);
             event.register(ModMenus.CHEMY_RISER_GUI.get(), ChemyRiserGuiScreen::new);
             event.register(ModMenus.LEGEND_RIDE_MAGNUM_GUI.get(), LegendRideMagnumGuiScreen::new);
+            event.register(ModMenus.CAPSEM_CYLINDER_GUI.get(), CapsemCylinderGuiScreen::new);
            // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }
     }
