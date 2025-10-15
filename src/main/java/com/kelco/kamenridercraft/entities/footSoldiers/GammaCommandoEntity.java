@@ -1,18 +1,55 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
 public class GammaCommandoEntity extends BaseHenchmenEntity {
-	
+
+    private BaseHenchmenEntity boss;
+
     public GammaCommandoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="gamma_commandos";
     }
-    
+
+
+    public void remove(Entity.RemovalReason p_149847_) {
+
+        if ( this.isDeadOrDying()) {
+            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+                int bossChoice = this.random.nextInt(2);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.NECROM.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.necrom"));
+                        }
+                        break;
+                    case 1:
+                        boss = MobsCore.IGOR.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.igor"));
+                        }
+                        break;
+                    default:
+                }
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                }
+            }
+        }
+        super.remove(p_149847_);
+    }
+
     public static AttributeSupplier.Builder setAttributes() {
     
         return Monster.createMonsterAttributes()

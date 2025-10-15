@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "eyecons",
+	"ingredients": [
+		{
+          "item": "kamenridercraft:rider_circuit"
+		},
+		{
+	  "item": "minecraft:soul_lantern"
+  }
+	],
+  "result": {
+	"id": "kamenridercraft:blank_ghost_eyecon"
+  }	
+}
