@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:deep_specter_ghost_eyecon",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:boost_ghost_eyecon",
+          "weight": 10
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:blank_ghost_eyecon"
+}
