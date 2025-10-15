@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "monolith",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XSX"
+  ],
+  "key": {
+	"M": {
+	  "item": "kamenridercraft:blank_ghost_eyecon"
+	},
+	"X": {
+	  "item": "minecraft:basalt"
+	},
+    "S": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:monolith"
+  }	
+}
