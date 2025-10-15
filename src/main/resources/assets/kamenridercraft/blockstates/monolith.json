@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/monolith" },
+    "facing=south": { "model": "kamenridercraft:block/monolith", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/monolith", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/monolith", "y": 90 }
+  }
+ }
