@@ -2,7 +2,7 @@
 	"name": "Valvarad (Lachesis)",
 	"icon": "kamenridercraft:valvaradraw_buckle_lachesis",
 	"category": "kamenridercraft:gotchard/riders",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:entity",

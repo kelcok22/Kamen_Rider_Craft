@@ -1,0 +1,16 @@
+{
+	"name": "Capsem Cylinder",
+	"icon": "kamenridercraft:capsem_cylinder",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Can store up to 5 stacks of Capsems"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/capsem_cylinder"
+		}
+	]
+}
