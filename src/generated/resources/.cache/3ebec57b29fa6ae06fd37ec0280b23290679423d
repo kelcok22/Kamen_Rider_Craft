@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-15T03:43:40.543602	Item Models: kamenridercraft
+// 1.21.1	2025-10-15T01:10:38.7974747	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -88,6 +88,7 @@ ccb1e9ded555771c36aa115a9f8e211cf9a89014 assets/kamenridercraft/models/item/buji
 866d473d9fcdbeda2d7a2e1c631d470339c18136 assets/kamenridercraft/models/item/bussasorry_ride_chemy_card.json
 18cde50cce20edfc5f9c6d952c89259ed400539d assets/kamenridercraft/models/item/buttobasoul_full_bottle.json
 84115d377e782ab7c5e633e842b6b3349d431e71 assets/kamenridercraft/models/item/byunbei_gochizo.json
+35ab2b90adbe15dcaa569cd3960238da97435c14 assets/kamenridercraft/models/item/capsem_cylinder.json
 e48191714a4f848569cb9bf274097d08d12e96bf assets/kamenridercraft/models/item/caramelmel_gochizo.json
 cd428ab5446f04fd981d9798c4650748e862686c assets/kamenridercraft/models/item/carery_ride_chemy_card.json
 2d7f3737f0a68a22544e3ddfb2d3c6ae76a9f4f3 assets/kamenridercraft/models/item/catchula_ride_chemy_card.json

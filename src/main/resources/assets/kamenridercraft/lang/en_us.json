@@ -787,6 +787,7 @@
   "container.kamenridercraft.pandora_panel": "Pandora Panel",
   "container.kamenridercraft.progrise_holder": "Progrise Holder",
   "container.kamenridercraft.legend_ride_magnum": "Ride Magnum",
+  "container.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
 
   "item.kamenridercraft.kamen_rider_logo.desc": "Banner Pattern: Kamen Rider Logo",
   "banner.kamenridercraft.ichigo.black": "Black Kamen Rider Logo",
@@ -7592,8 +7593,8 @@
   "item.kamenridercraft.daybreak_timelord_ride_chemy_card": "Daybreak Timelord Ride Chemy Card",
 "item.kamenridercraft.shining_hopper1_ride_chemy_card": "Shining Hopper1 Ride Chemy Card",
 "item.kamenridercraft.shining_steamliner_ride_chemy_card": "Shining Steamliner Ride Chemy Card",
-"item.kamenridercraft.dark_ether_ride_chemy_card": "Dark Ether Ride Chemy Card",
-"item.kamenridercraft.el_dragon_ride_chemy_card": "El Dragon Ride Chemy Card",
+"item.kamenridercraft.dark_ether_chemy_card": "Dark Ether Chemy Card",
+"item.kamenridercraft.eldragon_chemy_card": "Eldragon Chemy Card",
 "item.kamenridercraft.kuuga_ride_chemy_card": "Kuuga Ride Chemy Card",
 "item.kamenridercraft.agito_ride_chemy_card": "Agito Ride Chemy Card",
 "item.kamenridercraft.ryuki_ride_chemy_card": "Ryuki Ride Chemy Card",
@@ -8069,6 +8070,8 @@
   "kamenridercraft:wonder_capsem.form": "Form: Paradigm Wonder",
   "item.kamenridercraft.gravity_capsem": "Gravity Capsem",
   "kamenridercraft:gravity_capsem.form": "Form: Paradigm Gravity",
+
+  "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
 
   "item.kamenridercraft.breakam_zeztzer_sword": "Breakam Zeztzer (Sword Mode)",
   "item.kamenridercraft.breakam_zeztzer_gun": "Breakam Zeztzer (Gun Mode)",

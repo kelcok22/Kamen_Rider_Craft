@@ -6,14 +6,22 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items$(br2)Drops different Ghost Eyecons when right-clicked on a block"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:blank_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
-		}
+			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "text": "Drops:$(li)$(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ore Ghost Eyecon$(/l) (42.1%)$(li)$(l:ghost/items/ghost_eyecons#specter_ghost_eyecon)Specter Ghost Eyecon$(/l) (31.6%)$(li)$(l:ghost/items/ghost_eyecons#zero_specter_ghost_eyecon)Zero Specter Ghost Eyecon$(/l) (10.5%)$(li)$(l:ghost/items/ghost_eyecons#proto_ore_ghost_eyecon)Prototype Ore Ghost Eyecon$(/l) (5.3%)$(li)$(l:ghost/items/ghost_eyecons#kanon_specter_ghost_eyecon)Kanon Specter Ghost Eyecon$(/l) (5.3%)$(li)$(l:ghost/items/ghost_eyecons#new_ore_ghost_eyecon)New Ore Ghost Eyecon$(/l) (5.3%)$(br2)Drops with the 15 Hero Eyecons in your inventory:$(li)$(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l) (71.4%)$(li)$(l:ghost/items/ghost_eyecons#deep_specter_ghost_eyecon)Deep Specter Ghost Eyecon$(/l) (21.4%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:ghost/items/ghost_eyecons#tousan_ghost_eyecon)Tousan Ghost Eyecon$(/l) (7.1%)"
+      }
 	]
 }

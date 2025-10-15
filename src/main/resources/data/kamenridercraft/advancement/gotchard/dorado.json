@@ -1,0 +1,49 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:eldoradriver"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.dorado.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.dorado.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/legend",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gotchard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gotchard_torso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gotchard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:eldoradriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

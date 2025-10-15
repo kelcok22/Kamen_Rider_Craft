@@ -23,7 +23,8 @@
     "recipes": [
       "kamenridercraft:zeztz/zeztz_head",
       "kamenridercraft:zeztz/zeztz_troso",
-      "kamenridercraft:zeztz/zeztz_legs"
+      "kamenridercraft:zeztz/zeztz_legs",
+      "kamenridercraft:zeztz/capsem_cylinder"
     ]
   },
   "sends_telemetry_event": false
