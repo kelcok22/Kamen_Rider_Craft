@@ -1181,8 +1181,8 @@ public class Ghost_Rider_Items {
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"zero_ghost",PROTO_ORE_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(PROTO_ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
-    public static final DeferredItem<Item> PROTO_MEGA_ULORDER_igor = ITEMS.register("proto_mega_ulorder_gamma_superior",
-            () -> new GhostDriverItem(ArmorMaterials.DIAMOND,"gamma_superior",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+    public static final DeferredItem<Item> PROTO_MEGA_ULORDER_IGOR = ITEMS.register("proto_mega_ulorder_gamma_superior",
+            () -> new GhostDriverItem(ArmorMaterials.DIAMOND,"gamma_superior",TRANSFORM_GAMMA_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
                     .Add_Extra_Base_Form_Items(GAMMA_SUPERIOR_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 

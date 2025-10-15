@@ -481,6 +481,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.DARK_DRIVE.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.IGOR.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.NECROM.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEBULA_BUGSTERVIRUS.get(), BasicEntityRenderer::new);
