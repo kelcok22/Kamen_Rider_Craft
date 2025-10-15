@@ -47,6 +47,7 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchancollectionPanelGuiMenu>> GOTCHANCOLLECTION_PANEL_GUI = REGISTRY.register("gotchancollection_panel_gui", () -> IMenuTypeExtension.create(GotchancollectionPanelGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ChemyRiserGuiMenu>> CHEMY_RISER_GUI = REGISTRY.register("chemy_riser_gui", () -> IMenuTypeExtension.create(ChemyRiserGuiMenu::new));
     public static final DeferredHolder<MenuType<?>, MenuType<LegendRideMagnumGuiMenu>> LEGEND_RIDE_MAGNUM_GUI = REGISTRY.register("legend_ride_magnum_gui", () -> IMenuTypeExtension.create(LegendRideMagnumGuiMenu::new));
+    public static final DeferredHolder<MenuType<?>, MenuType<CapsemCylinderGuiMenu>> CAPSEM_CYLINDER_GUI = REGISTRY.register("capsem_cylinder_gui", () -> IMenuTypeExtension.create(CapsemCylinderGuiMenu::new));
 
 //	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchRackGuiMenu>> ASTROSWITCH_RACK_GUI = REGISTRY.register("astroswitch_rack_gui", () -> IMenuTypeExtension.create(AstroswitchRackGuiMenu::new));
 

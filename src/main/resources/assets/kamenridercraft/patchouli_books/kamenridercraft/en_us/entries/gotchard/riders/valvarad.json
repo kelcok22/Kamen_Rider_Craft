@@ -2,7 +2,7 @@
 	"name": "Valvarad",
 	"icon": "kamenridercraft:valvaradraw_buckle",
 	"category": "kamenridercraft:gotchard/riders",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:entity",

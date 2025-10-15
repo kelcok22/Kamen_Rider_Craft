@@ -1509,19 +1509,32 @@
 			"title": " ",
 			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "legendary_legend_ride_chemy_card",
-			"title": "Legendary Legend Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l) form"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:legendary_legend_ride_chemy_card",
-			"title": " ",
-			"text": "Item is currently unobtainable"
-		},
+      {
+        "type": "patchouli:text",
+        "anchor": "legendary_legend_ride_chemy_card",
+        "title": "Legendary Legend Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:legendary_legend_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "dark_ether_chemy_card",
+        "title": "Dark Ether Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to craft Dorado's $(l:gotchard/devices/eldoradriver)Eldoradriver$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dark_ether_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "santaclaus_ride_chemy_card",
