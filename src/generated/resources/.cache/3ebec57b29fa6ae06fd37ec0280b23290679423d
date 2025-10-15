@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-14T13:36:32.753329	Item Models: kamenridercraft
+// 1.21.1	2025-10-15T03:43:40.543602	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -28,6 +28,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/atta
 3eb9e09e2cbb11e833a3bda80951245efe043f1c assets/kamenridercraft/models/item/bakuonzemi_ride_chemy_card.json
 e96c9876c94195f97eec16ceb095b68ddea02e80 assets/kamenridercraft/models/item/bambamboo_ride_chemy_card.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
+9f8e1893b09b05781cf36e9008c4d618a322afdb assets/kamenridercraft/models/item/barrier_capsem.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_baron_core.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_black_baron_core.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_bravo_core.json
@@ -64,6 +65,7 @@ a4cbd006b424c759d6a9a8351824581b86ff98d8 assets/kamenridercraft/models/item/blac
 99831d76868e235d8405c62d77c62718442dfd4f assets/kamenridercraft/models/item/blade_king_ride_chemy_card.json
 fdfd292485854a1fbaa784d75485dd434ead6c1d assets/kamenridercraft/models/item/blade_ride_chemy_card.json
 0cf268f0746ff8c33c6cb809dd7375d68f746c01 assets/kamenridercraft/models/item/blade_ring.json
+38315c4302aca47854d0258f3133063fd63aedd8 assets/kamenridercraft/models/item/blank_ghost_eyecon.json
 eccc65bfed3fb9e819258e280698de88faba2c5a assets/kamenridercraft/models/item/blizzammoth_ride_chemy_card.json
 ebf6333c8b37363949d690914dc7873bf74b4a83 assets/kamenridercraft/models/item/bloody_rose.json
 b2ac10fb3e6fe05f3176807fb95ebbfa19fecfb5 assets/kamenridercraft/models/item/blue_wallplate_wall.json
