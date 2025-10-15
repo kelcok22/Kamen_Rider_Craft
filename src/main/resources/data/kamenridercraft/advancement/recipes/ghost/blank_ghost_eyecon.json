@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:ghost/ghost_head",
 	  "kamenridercraft:ghost/ghost_troso",
-	  "kamenridercraft:ghost/ghost_legs"
+	  "kamenridercraft:ghost/ghost_legs",
+	  "kamenridercraft:ghost/monolith"
 	]
   },
   "sends_telemetry_event": false
