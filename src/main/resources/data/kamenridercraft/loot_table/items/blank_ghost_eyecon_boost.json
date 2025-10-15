@@ -7,8 +7,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:deep_specter_ghost_eyecon",
+          "name": "kamenridercraft:tousan_ghost_eyecon",
           "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:yujou_burst_ghost_eyecon",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:deep_specter_ghost_eyecon",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
