@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "music_disc",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:special_ore_ghost_eyecon"
+	}, 
+	{
+		"tag": "c:music_discs"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:warera_omou_yue_ni_warera_ari_music_disc"
+  }
+}

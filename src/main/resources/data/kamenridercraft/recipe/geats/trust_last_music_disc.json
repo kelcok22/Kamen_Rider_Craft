@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "music_disc",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:beat_raise_buckle_theme"
+	}, 
+	{
+		"tag": "c:music_discs"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:trust_last_music_disc"
+  }
+}
