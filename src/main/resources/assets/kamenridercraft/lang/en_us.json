@@ -544,6 +544,10 @@
   "henshin.kamenridercraft.medic_roidmude":"<Medic> §cGood morning, Master Heart!",
   "henshin.kamenridercraft.gord_drive": "<Banno> §eHenshin!",
   "henshin.kamenridercraft.dark_drive": "Start Our Mission!\nOK!\n§bDrive! Type: NEXT!",
+  "henshin.kamenridercraft.igor": "<Igor> §3Director...! What a fine title. My time has finally come!",
+  "henshin.kamenridercraft.necrom": "<Kamen Rider Necrom> §aHenshin!\n§aTengan! Necrom! Mega Ulord! Crush invader!",
+  "henshin.kamenridercraft.necrom_grimm": "§aTengan! §2Grimm! §aMega Ulord! §2Fighting pen!",
+  "henshin.kamenridercraft.necrom_sanzo": "§aTengan! §eSanzo! §aMega Ulord! §eSaiyuu road!",
   "henshin.kamenridercraft.genm":"§5Gachan! Level Up! Mighty jump! Mighty kick! Mighty Action X!",
   "henshin.kamenridercraft.graphite":"§2Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!",
   "henshin.kamenridercraft.poppy":"§bBuggle Up! §eDreaming girl! Koi no simulation! §6Otome wa itsumo Toki Meki Crisis!",
@@ -4905,6 +4909,8 @@
   "item.kamenridercraft.proto_mega_ulorder_blue": "Proto Mega Ulorder",
   "item.kamenridercraft.proto_mega_ulorder_yellow": "Proto Mega Ulorder",
   "kamenridercraft.name.dark_necrom": "Rider: Kamen Rider Dark Necrom",
+  "item.kamenridercraft.proto_mega_ulorder_gamma_superior": "Proto Mega Ulorder",
+  "kamenridercraft.name.gamma_superior": "Kaijin: Gamma Superior",
   "item.kamenridercraft.dark_ghost_driver": "Ghost Driver",
   "kamenridercraft.name.dark_ghost": "Rider: Kamen Rider Dark Ghost",
   "item.kamenridercraft.zero_specter_driver": "Ghost Driver",
@@ -5041,6 +5047,7 @@
   "kamenridercraft:new_ore_ghost_damashii.form": "Damashii: New Ore",
   "kamenridercraft:kanon_specter_damashii.form": "Damashii: Kanon Specter",
   "kamenridercraft:proto_ore_damashii.form": "Damashii: Prototype Ore",
+  "kamenridercraft:gamma_superior_damashii.form": "Damashii: Perfect",
 
   "kamenridercraft:boost_damashii.form": "Damashii: Toucon Boost",
   "kamenridercraft:mugen_damashii.form": "Damashii: Mugen",
@@ -8384,7 +8391,6 @@
   "entity.kamenridercraft.megahex": "Megahex",
   "entity.kamenridercraft.megahex_kiwami": "Megahex (Kiwami)",
   "entity.kamenridercraft.megahex_zzz": "ZZZ Megahex",
-"entity.kamenridercraft.gamma_commandos": "Gamma Commando",
 
   "entity.kamenridercraft.roidmude": "Roidmude",
   "entity.kamenridercraft.reaper_legion": "Reaper Legion",
@@ -8394,6 +8400,10 @@
   "entity.kamenridercraft.brain_roidmude": "Brain Roidmude",
   "entity.kamenridercraft.gord_drive": "Gold Drive",
   "entity.kamenridercraft.dark_drive": "Kamen Rider Dark Drive",
+
+  "entity.kamenridercraft.gamma_commandos": "Gamma Commando",
+  "entity.kamenridercraft.igor": "Igor",
+  "entity.kamenridercraft.necrom": "Kamen Rider Necrom",
 
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -8640,6 +8650,8 @@
   "item.kamenridercraft.dark_drive_spawn_egg": "Kamen Rider Dark Drive Spawn Egg",
 
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
+  "item.kamenridercraft.igor_spawn_egg": "Igor Spawn Egg",
+  "item.kamenridercraft.necrom_spawn_egg": "Kamen Rider Necrom Spawn Egg",
 
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",

@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ghost/mega_ulorder"
+			"recipe": "kamenridercraft:ghost/mega_ulorder",
+          "text": "Drops from:$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)'s equipment"
 		}
 	]
 }

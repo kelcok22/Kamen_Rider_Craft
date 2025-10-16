@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: Plains, Sunflower Plains, Stony Shore, Snowy Beach$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l) (40%)$(li)1 $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ore Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/ghost_eyecons#specter_ghost_eyecon)Specter Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)Edison Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)Robin Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)Newton Ghost Eyecon$(/l) (5%)"
+			"text": "Spawn locations: Plains, Sunflower Plains, Stony Shore, Snowy Beach$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l) (40%)$(li)1 $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ore Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/ghost_eyecons#specter_ghost_eyecon)Specter Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)Edison Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)Robin Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)Newton Ghost Eyecon$(/l) (5%)$(br2)Bosses$(li)$(l:ghost/mobs/igor)Igor$(/l) (5%)$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l) (5%)"
 		}
 	]
 }

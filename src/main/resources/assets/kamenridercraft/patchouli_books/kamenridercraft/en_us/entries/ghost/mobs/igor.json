@@ -1,0 +1,17 @@
+{
+	"name": "Igor",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:igor",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br)Health: 50"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a $(l:ghost/mobs/gamma_commandos)Gamma Commando$(/l)$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l)$(li)1 $(l:ghost/items/gamma_eyecons#transform_gamma_eyecon)Transform Gamma Eyecon$(/l)$(li)1 $(l:ghost/items/gamma_eyecons#royalty_gamma_eyecon)Royalty Gamma Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/gamma_eyecons#knife_gamma_eyecon)Knife Gamma Eyecon$(/l) (80%)"
+		}
+	]
+}

@@ -36,16 +36,28 @@
 			"title": " ",
 			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_yellow"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "proto_mega_ulorder_pink",
-			"title": "Proto Mega Ulorder (Dark Necrom Pink)",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_pink)Kamen Rider Dark Necrom Pink"
-		},
-		{
-			"type": "patchouli:crafting",
-			"title": " ",
-			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_pink"
-		}
+      {
+        "type": "patchouli:text",
+        "anchor": "proto_mega_ulorder_pink",
+        "title": "Proto Mega Ulorder (Dark Necrom Pink)",
+        "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_pink)Kamen Rider Dark Necrom Pink"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ghost/proto_mega_ulorder_pink"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "proto_mega_ulorder_gamma_superior",
+        "title": "Proto Mega Ulorder (Gamma Superior)",
+        "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/gamma_superior)Gamma Superior"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ghost/proto_mega_ulorder_gamma_superior",
+        "text": "Drops from:$(li)$(l:ghost/mobs/igor)Igor$(/l)'s equipment"
+      }
 	]
 }

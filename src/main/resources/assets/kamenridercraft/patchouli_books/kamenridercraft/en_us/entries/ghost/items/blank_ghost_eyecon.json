@@ -9,10 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items$(br2)Drops different Ghost Eyecons when right-clicked on a block"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:blank_ghost_eyecon",
-			"title": " ",
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/blank_ghost_eyecon",
 			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
       {

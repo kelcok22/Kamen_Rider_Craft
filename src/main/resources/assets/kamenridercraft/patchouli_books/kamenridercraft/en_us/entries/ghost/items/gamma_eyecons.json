@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "transform_gamma_eyecon",
 			"title": "Transform Gamma Eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to access Gamma Superior's $(l:ghost/riders/gamma_superior#perfect)Perfect$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

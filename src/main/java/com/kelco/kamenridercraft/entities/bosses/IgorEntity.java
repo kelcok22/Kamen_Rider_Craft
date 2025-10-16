@@ -1,20 +1,14 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-
-import java.util.Random;
 
 public class IgorEntity extends BaseHenchmenEntity {
 
