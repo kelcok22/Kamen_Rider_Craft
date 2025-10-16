@@ -312,10 +312,8 @@
 			"text": "Song:$(li)HosephHoestar - Warera Omou, Yue Ni Warera Ari$(br2)Based on:$(li)Kishidan - Warera Omou, Yue Ni Warera Ari$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Ghost (2015, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:warera_omou_yue_ni_warera_ari_music_disc",
-			"text": "Disc is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:ghost/warera_omou_yue_ni_warera_ari_music_disc"
 		},
 		{
 			"type": "patchouli:text",
@@ -409,10 +407,8 @@
 			"text": "Song:$(li)HosephHoestar - Trust・Last$(br2)Based on:$(li)Koda Kumi x Shonan no Kaze - Trust・Last$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Geats (2022, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:trust_last_music_disc",
-			"text": "Disc is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:geats/trust_last_music_disc"
 		},
 		{
 			"type": "patchouli:text",

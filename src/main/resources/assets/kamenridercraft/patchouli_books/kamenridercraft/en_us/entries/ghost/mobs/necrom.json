@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Necrom",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:necrom",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br)Health: 50"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a $(l:ghost/mobs/gamma_commandos)Gamma Commando$(/l)$(br2)Special moves:$(li)Uses his $(l:ghost/riders/necrom#grimm)Grimm$(/l) or $(l:ghost/riders/necrom#sanzo)Sanzo$(/l) Damashii at under 30 health$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l)$(li)1 $(l:ghost/items/ghost_eyecons#necrom_ghost_eyecon)Necrom Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/ghost_eyecons#grimm_ghost_eyecon)Grimm Ghost Eyecon$(/l) (40%)$(li)1 $(l:ghost/items/ghost_eyecons#sanzo_ghost_eyecon)Sanzo Ghost Eyecon$(/l) (40%)$(li)1 $(l:ghost/items/ghost_eyecons#nightingale_ghost_eyecon)Nightingale Ghost Eyecon$(/l) (10%)$(li)1 $(l:ghost/items/ghost_eyecons#da_vinci_ghost_eyecon)Da Vinci Ghost Eyecon$(/l) (10%)"
+		}
+	]
+}
