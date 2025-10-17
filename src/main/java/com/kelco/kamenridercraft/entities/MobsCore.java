@@ -657,6 +657,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> IGOR_SPAWN_EGG = ITEMS.register("igor_spawn_egg",
             () -> new DeferredSpawnEggItem(IGOR , 0xd8d8d8, 0x89d2d3, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<DarkNecromEntity>> DARK_NECROM = MOBLIST.register("dark_necrom",
+            () -> EntityType.Builder.of(DarkNecromEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dark_necrom"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DARK_NECROM_SPAWN_EGG = ITEMS.register("dark_necrom_spawn_egg",
+            () -> new DeferredSpawnEggItem(DARK_NECROM, 0x000000, 0xFF0000, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<BugsterVirusEntity>> BUGSTERVIRUS = MOBLIST.register("bugstervirus_mob",
                   () -> EntityType.Builder.of(BugsterVirusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bugster_mob"));

@@ -1,0 +1,61 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_red_ghost_eyecon"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_blue_ghost_eyecon"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_yellow_ghost_eyecon"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:galileo_ghost_eyecon"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:shakespeare_ghost_eyecon"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:kamehameha_ghost_eyecon"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:columbus_ghost_eyecon"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_ghost_eyecon",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

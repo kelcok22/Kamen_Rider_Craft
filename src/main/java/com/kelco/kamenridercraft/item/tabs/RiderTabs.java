@@ -738,6 +738,7 @@ public class RiderTabs {
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
             event.accept(MobsCore.NECROM_SPAWN_EGG);
             event.accept(MobsCore.IGOR_SPAWN_EGG);
+            event.accept(MobsCore.DARK_NECROM_SPAWN_EGG);
 
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
