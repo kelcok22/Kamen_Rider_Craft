@@ -2,6 +2,6 @@
     "parent": "kamenridercraft:main/reiwa",
     "name": "Kamen Rider Zeztz",
     "description": "Everything related to the show, Kamen Rider Zeztz.",
-    "icon": "kamenridercraft:zeztz_head",
+    "icon": "kamenridercraft:zeztz_logo",
     "sortnum": 6
 }
