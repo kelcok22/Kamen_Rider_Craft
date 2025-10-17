@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Ghost Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ghost/mobs/igor)Igor$(/l)'s equipment$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)'s equipment"
+			"text": "Used alongside a Ghost Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ghost/mobs/igor)Igor$(/l)'s equipment$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)'s equipment$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

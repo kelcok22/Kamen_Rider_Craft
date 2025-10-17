@@ -72,7 +72,7 @@ public class Zeztz_Rider_Items {
                 }
             } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").hasStaticWings().IsGlowing().IsBeltGlowing().AddToList(CapsemDropper.CAPSEM,5).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-
+    //TODO: Effects for all non-Physicam forms are the same
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),

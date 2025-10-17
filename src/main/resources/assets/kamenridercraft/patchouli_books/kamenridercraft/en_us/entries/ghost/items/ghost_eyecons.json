@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mugen_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (with the 15 Hero Eyecons, the $(li)$(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(li)$(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (with the 15 Hero Eyecons, the $(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sin_specter_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (with the 15 Hero Eyecons, the $(li)$(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(li)$(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (with the 15 Hero Eyecons, the $(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_necrom_red_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_necrom_blue_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_necrom_yellow_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -546,7 +546,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:columbus_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -559,7 +559,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shakespeare_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -572,7 +572,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kamehameha_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -585,7 +585,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:galileo_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",

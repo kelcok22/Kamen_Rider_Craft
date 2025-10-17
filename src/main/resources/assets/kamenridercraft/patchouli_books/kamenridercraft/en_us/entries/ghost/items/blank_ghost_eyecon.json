@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:ghost/blank_ghost_eyecon",
-			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)$(li)$(l:ghost/mobs/igor)Igor$(/l)$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)"
+			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)$(li)$(l:ghost/mobs/igor)Igor$(/l)$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)"
 		},
       {
         "type": "patchouli:text",

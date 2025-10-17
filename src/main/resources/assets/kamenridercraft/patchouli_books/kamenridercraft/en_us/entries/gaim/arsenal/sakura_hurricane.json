@@ -9,8 +9,11 @@
       "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to summon the Sakura Hurricane"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gaim/sakura_hurricane"
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:sakura_hurricane",
+      "title": " ",
+      "text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
     }
   ]
 }
