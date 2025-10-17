@@ -676,6 +676,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
         event.put(MobsCore.IGOR.get(), IgorEntity.setAttributes().build());
         event.put(MobsCore.NECROM.get(), NecromEntity.setAttributes().build());
+		event.put(MobsCore.DARK_NECROM.get(), DarkNecromEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		event.put(MobsCore.NEBULA_BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());

@@ -8404,6 +8404,7 @@
   "entity.kamenridercraft.gamma_commandos": "Gamma Commando",
   "entity.kamenridercraft.igor": "Igor",
   "entity.kamenridercraft.necrom": "Kamen Rider Necrom",
+  "entity.kamenridercraft.dark_necrom": "Kamen Rider Dark Necrom",
 
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -8652,6 +8653,7 @@
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
   "item.kamenridercraft.igor_spawn_egg": "Igor Spawn Egg",
   "item.kamenridercraft.necrom_spawn_egg": "Kamen Rider Necrom Spawn Egg",
+  "item.kamenridercraft.dark_necrom_spawn_egg": "Kamen Rider Dark Necrom Spawn Egg",
 
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",
