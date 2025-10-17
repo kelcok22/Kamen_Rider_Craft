@@ -12,7 +12,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_red"
+			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_red",
+            "text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_blue"
+			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_blue",
+            "text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,7 +36,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_yellow"
+			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_yellow",
+            "text": "Drops from:$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)'s equipment"
 		},
       {
         "type": "patchouli:text",

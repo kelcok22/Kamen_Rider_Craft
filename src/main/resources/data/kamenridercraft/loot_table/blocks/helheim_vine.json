@@ -156,6 +156,20 @@
           "conditions": [],
           "functions": [],
           "name": "kamenridercraft:kiwi_lockseed"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "conditions": [],
+          "functions": [],
+          "name": "kamenridercraft:sakura_hurricane"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "conditions": [],
+          "functions": [],
+          "name": "kamenridercraft:rose_attacker"
         }
       ]
     }

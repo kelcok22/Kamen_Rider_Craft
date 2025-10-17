@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Dark Necrom",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dark_necrom",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br)Health: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Spawns in Red, Blue, and Yellow variants$(br2)Drops$(li)1-3 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/ghost_eyecons#dark_necrom_red_ghost_eyecon)Dark Necrom Ghost Eyecon (Red)$(/l) (33.3%)$(li)1 $(l:ghost/items/ghost_eyecons#dark_necrom_blue_ghost_eyecon)Dark Necrom Ghost Eyecon (Blue)$(/l) (33.3%)$(li)1 $(l:ghost/items/ghost_eyecons#dark_necrom_yellow_ghost_eyecon)Dark Necrom Ghost Eyecon (Yellow)$(/l) (33.3%)$(li)1 $(l:ghost/items/ghost_eyecons#galileo_ghost_eyecon)Galileo Ghost Eyecon$(/l) (25%)$(li)1 $(l:ghost/items/ghost_eyecons#shakespeare_ghost_eyecon)Shakespeare Ghost Eyecon$(/l) (25%)$(li)1 $(l:ghost/items/ghost_eyecons#kamehameha_ghost_eyecon)Kamehameha Ghost Eyecon$(/l) (25%)$(li)1 $(l:ghost/items/ghost_eyecons#columbus_ghost_eyecon)Columbus Ghost Eyecon$(/l) (25%)"
+		}
+	]
+}

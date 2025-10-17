@@ -9,8 +9,11 @@
       "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to summon the Rose Attacker"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:gaim/rose_attacker"
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:rose_attacker",
+      "title": " ",
+      "text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
     }
   ]
 }
