@@ -25,6 +25,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 public class BlankGhostEyeconItem extends BaseItem {
     public ResourceLocation LOOT_TABLE_PATH = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_ghost_eyecon");
     public ResourceLocation LOOT_TABLE_PATH2 = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_ghost_eyecon_boost");
+    public ResourceLocation LOOT_TABLE_PATH3 = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_ghost_eyecon_mugen");
 
     public BlankGhostEyeconItem(Properties properties) {
         super(properties);
@@ -49,7 +50,25 @@ public class BlankGhostEyeconItem extends BaseItem {
                 & Inventory.countItem(Ghost_Rider_Items.SANZO_GHOST_EYECON.get()) != 0
                 & Inventory.countItem(Ghost_Rider_Items.NOBUNAGA_GHOST_EYECON.get()) != 0;
 
-        ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, hasEyecons ? LOOT_TABLE_PATH2 : LOOT_TABLE_PATH);
+        boolean hasAllEyecons = Inventory.countItem(Ghost_Rider_Items.MUSASHI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.EDISON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.ROBIN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.NEWTON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.BILLY_THE_KID_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.BENKEI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.TUTANKHAMUN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.HOUDINI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.RYOMA_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.GOEMON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.HIMIKO_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.GRIMM_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.BEETHOVEN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.SANZO_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.NOBUNAGA_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.BOOST_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(Ghost_Rider_Items.EYECON_DRIVER_G.get()) != 0;
+
+        ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE,hasAllEyecons ? LOOT_TABLE_PATH3 : hasEyecons ? LOOT_TABLE_PATH2 : LOOT_TABLE_PATH);
         LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);
         LootParams.Builder lootparams$builder = new LootParams.Builder(world)
                 .withParameter(LootContextParams.THIS_ENTITY, player)
