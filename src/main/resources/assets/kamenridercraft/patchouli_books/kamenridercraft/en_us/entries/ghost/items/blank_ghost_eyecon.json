@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:ghost/blank_ghost_eyecon",
-			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
+			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)$(li)$(l:ghost/mobs/igor)Igor$(/l)$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)"
 		},
       {
         "type": "patchouli:text",
@@ -19,7 +19,7 @@
       },
       {
         "type": "patchouli:text",
-        "text": "$(li)$(l:ghost/items/ghost_eyecons#tousan_ghost_eyecon)Tousan Ghost Eyecon$(/l) (7.1%)"
+        "text": "$(li)$(l:ghost/items/ghost_eyecons#tousan_ghost_eyecon)Tousan Ghost Eyecon$(/l) (7.1%)$(br2)Drops with the 15 Hero Eyecons, the $(li)$(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(li)$(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory:$(li)$(l:ghost/items/ghost_eyecons#mugen_ghost_eyecon)Mugen Ghost Eyecon$(/l) (91%)$(li)$(l:ghost/items/ghost_eyecons#sin_specter_ghost_eyecon)Sin Specter Ghost Eyecon$(/l) (9%)"
       }
 	]
 }
