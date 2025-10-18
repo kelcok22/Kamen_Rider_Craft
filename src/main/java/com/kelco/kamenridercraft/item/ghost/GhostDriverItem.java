@@ -78,6 +78,7 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 
 			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
 		}
+        else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()==Ghost_Rider_Items.PROTO_MEGA_ULORDER_IGOR.asItem()) return get_Form_Item(itemstack,2).getFormName(fly)+"_igor";
 		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,2).getFormName(fly);
 
 		else {

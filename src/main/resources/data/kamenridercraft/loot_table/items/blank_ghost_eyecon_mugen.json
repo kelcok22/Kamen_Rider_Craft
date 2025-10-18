@@ -8,6 +8,15 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:sin_specter_ghost_eyecon",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:tenkatoitsu_ghost_eyecon",
+          "weight": 1
+        },   {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:shinsengumi_ghost_eyecon",
           "weight": 1
         },
         {
