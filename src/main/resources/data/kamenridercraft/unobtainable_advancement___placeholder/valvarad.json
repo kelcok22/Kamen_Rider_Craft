@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:rider_ticket_sword"
+	  "id": "kamenridercraft:valvarusher"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.den-o.pretty_den-o.title"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.den-o.pretty_den-o.description"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:den-o/yuuki",
+  "parent": "kamenridercraft:gotchard/majade",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:den_ohead"
+				"kamenridercraft:gotchard_head"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:den_otroso"
+				"kamenridercraft:gotchard_torso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:den_olegs"
+				"kamenridercraft:gotchard_legs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:pretty_den_o_belt"
+				"kamenridercraft:valvaradraw_buckle"
 			  ]
 			}
 		  }
