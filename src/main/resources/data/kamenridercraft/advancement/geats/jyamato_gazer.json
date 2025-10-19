@@ -14,7 +14,7 @@
 	  "announce_to_chat": true,
 	  "hidden": false
 	},
-	"parent": "kamenridercraft:geats/regad",
+	"parent": "kamenridercraft:geats/suel_gazer",
 	"criteria": {
 	  "requirement": {
 		"trigger": "minecraft:inventory_changed",

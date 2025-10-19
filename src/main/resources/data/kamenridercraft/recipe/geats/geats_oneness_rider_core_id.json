@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkiii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:geats_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:tycoon_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:na_go_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:buffa_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:punkjack_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:keirou_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:lopo_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:bikkuri_mission_box"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:geats_oneness_rider_core_id"
+  }
+}

@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/another_agito_kouji_majima",
+  "parent": "kamenridercraft:agito/another_agito",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

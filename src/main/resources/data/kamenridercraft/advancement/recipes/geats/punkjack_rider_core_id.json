@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:geats/desire_driver_punkjack"
+	  "kamenridercraft:geats/desire_driver_punkjack",
+      "kamenridercraft:geats/geats_oneness_rider_core_id"
 	]
   },
   "sends_telemetry_event": false
