@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-15T01:10:38.7974747	Item Models: kamenridercraft
+// 1.21.1	2025-10-20T00:01:33.9042983	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -252,6 +252,7 @@ e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/gran
 8a396385d4deb31252aab8c80a1d675557b50818 assets/kamenridercraft/models/item/gurucan_gochizo_valen.json
 7c52a21d11943073184164edea967c821c3dfb34 assets/kamenridercraft/models/item/gutsshovel_ride_chemy_card_v.json
 c37b9eecbd3298147f22917de0e36e4b5c581c4a assets/kamenridercraft/models/item/hagigoro_gochizo.json
+40ee8ad0ade0e6a5ac032dcc24c8d628fcb338df assets/kamenridercraft/models/item/halloween_gashapon_capsule.json
 32655110d30c5057f5a117cfd6224a47fedd3e31 assets/kamenridercraft/models/item/hanselnuts_to_gretel_wonder_ride_book_slash.json
 82ede73080fce321d87d148932b6c26ddbd1c692 assets/kamenridercraft/models/item/haodin_ride_chemy_card.json
 e7c91f36746fe717606b030c645d387d513cad01 assets/kamenridercraft/models/item/happyclover_ride_chemy_card.json

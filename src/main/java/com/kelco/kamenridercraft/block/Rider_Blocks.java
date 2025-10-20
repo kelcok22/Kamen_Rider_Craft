@@ -1010,6 +1010,10 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
 
+    public static final DeferredBlock<Block> PUNKJACKOLANTERN = registerBlock("punkjackolantern",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+                    .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1),Block.box(3, 0, 3, 13,7, 13)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 
 	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
