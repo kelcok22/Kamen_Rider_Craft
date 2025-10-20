@@ -1022,6 +1022,10 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> ARC_BOSS_BLOCK = registerBlock("arc_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.ARC).addLine(Component.translatable("henshin.kamenridercraft.arc")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
     public static final DeferredBlock<Block> TABOO_BOSS_BLOCK = registerBlock("taboo_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     ,MobsCore.TABOO_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.taboo")).AddToTabList(RiderTabs.RIDER_BLOCK));
