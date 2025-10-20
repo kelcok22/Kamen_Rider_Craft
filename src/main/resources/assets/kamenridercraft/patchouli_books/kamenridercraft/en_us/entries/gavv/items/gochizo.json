@@ -1235,7 +1235,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:poppingummy_gochizo_halloween",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -1248,7 +1248,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:chocozon_gochizo",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -1261,7 +1261,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:doracan_gochizo",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
       },
 		{
 			"type": "patchouli:text",
