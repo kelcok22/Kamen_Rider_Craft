@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:rider_ticket_sword"
+	  "id": "kamenridercraft:alter_ring_reiko"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.den-o.pretty_den-o.title"
+      "translate": "advancements.kamenridercraft.agito.agito_reiko_takano.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.den-o.pretty_den-o.description"
+      "translate": "advancements.kamenridercraft.agito.agito_reiko_takano.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:den-o/yuuki",
+  "parent": "kamenridercraft:agito/another_agito_kouji_majima",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:den_ohead"
+				"kamenridercraft:agitohead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:den_otroso"
+				"kamenridercraft:agitotroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:den_olegs"
+				"kamenridercraft:agitolegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:pretty_den_o_belt"
+				"kamenridercraft:alter_ring_reiko"
 			  ]
 			}
 		  }

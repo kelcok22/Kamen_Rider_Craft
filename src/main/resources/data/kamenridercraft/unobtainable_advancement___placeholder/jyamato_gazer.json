@@ -1,20 +1,20 @@
 {
 	"display": {
 	  "icon": {
-		"id": "kamenridercraft:zillion_driver_gazer_zero"
+		"id": "kamenridercraft:vision_driver_jyamato_glare"
 	  },
 	"title": {
-      "translate": "advancements.kamenridercraft.geats.gazer_zero.title"
+      "translate": "advancements.kamenridercraft.geats.jyamato_gazer.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.geats.gazer_zero.description"
+      "translate": "advancements.kamenridercraft.geats.jyamato_gazer.description"
     },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,
 	  "hidden": false
 	},
-	"parent": "kamenridercraft:geats/butchi",
+	"parent": "kamenridercraft:geats/regad",
 	"criteria": {
 	  "requirement": {
 		"trigger": "minecraft:inventory_changed",
@@ -38,7 +38,7 @@
 			  },
 			  "feet": {
 				"items": [
-				  "kamenridercraft:zillion_driver_gazer_zero"
+				  "kamenridercraft:vision_driver_jyamato_glare"
 				]
 			  }
 			}

@@ -396,7 +396,7 @@
 			"type": "patchouli:text",
 			"anchor": "grimm_ghost_eyecon",
 			"title": "Grimm Ghost Eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/necrom#grimm)Grimm Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/necrom#grimm)Grimm Damashii$(/l)$(br2)Used to access Gamma Superior's $(l:ghost/riders/gamma_superior#grimm)Grimm$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -611,7 +611,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tenkatoitsu_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (with the 15 Hero Eyecons, the $(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -624,7 +624,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shinsengumi_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (with the 15 Hero Eyecons, the $(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost Ghost Eyecon$(/l), and the $(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l) in your inventory)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
