@@ -7832,6 +7832,7 @@
 "item.kamenridercraft.gochipod": "Gochipod",
   "item.kamenridercraft.gochipod_empty": "Unfilled Gochipod",
   "item.kamenridercraft.amazingummy_gochizo": "Amazingummy Gochizo",
+  "item.kamenridercraft.hexenheim_gochizo": "Hexenheim Gochizo",
 "item.kamenridercraft.chocold_gochizo": "Chocold Gochizo",
 "item.kamenridercraft.frappeis_gochizo": "Frappeis Gochizo",
   "item.kamenridercraft.chocorappa_gochizo": "Chocorappa Gochizo",
@@ -7870,6 +7871,11 @@
   "item.kamenridercraft.mitaramotti_gochizo": "Mitaramotti Gochizo",
   "item.kamenridercraft.mogimaru_gochizo": "Mogimaru Gochizo",
   "item.kamenridercraft.partea_gochizo": "Partea Scone Gochizo",
+  "item.kamenridercraft.kin_choco_gochizo": "Kin Choco Gochizo",
+  "item.kamenridercraft.tako_sen_gochizo": "Tako Sen Gochizo",
+  "item.kamenridercraft.men_sen_gochizo": "Men Sen Gochizo",
+  "item.kamenridercraft.uirou_gochizo": "Uirou Gochizo",
+  "item.kamenridercraft.ningyo_gochizo": "Ningyo Gochizo",
 
 "kamenridercraft:poppingummy_gochizo.form": "Form: Poppingummy Form",
 "kamenridercraft:punchingummy_gochizo.form": "Form: Punchingummy Assist",
@@ -7891,6 +7897,7 @@
 "kamenridercraft:gochipod_master.form": "Form: Master Mode",
   "kamenridercraft.name.gochipod.stored": "Gochizo Inserted",
   "kamenridercraft:amazingummy_gochizo.form": "Form: Amazingummy Form",
+  "kamenridercraft:hexenheim_gochizo.form": "Form: Hexenheim Form",
 "kamenridercraft:chocold_gochizo.form": "Form: Chocold Form",
 "kamenridercraft:frappeis_gochizo.form": "Form: Frappe Custom",
   "kamenridercraft:chocorappa_gochizo.form": "Form: Parfait Mode",
@@ -7908,6 +7915,11 @@
 "kamenridercraft:tsurigummy_gochizo.form": "Form: Fishingummy Assist",
 "kamenridercraft:umaibo_gochizo.form": "Form: Shot Snack Form",
 "kamenridercraft:partea_gochizo.form": "Form: Partea Scone Form",
+  "kamenridercraft:kin_choco_gochizo.form": "Form: Kin Choco Form",
+  "kamenridercraft:tako_sen_gochizo.form": "Form: Tako Sen Form",
+  "kamenridercraft:men_sen_gochizo.form": "Form: Men Sen Form",
+  "kamenridercraft:uirou_gochizo.form": "Form: Uirou Form",
+  "kamenridercraft:ningyo_gochizo.form": "Form: Ningyo Form",
 
   "item.kamenridercraft.ope_dummy_gochizo": "OPE Dummy Gochizo",
   "item.kamenridercraft.ple_dummy_gochizo": "PLE Dummy Gochizo",
@@ -8038,6 +8050,7 @@
   "item.kamenridercraft.xmax_gavv": "X-Max",
   "item.kamenridercraft.xmax_valen": "X-Max",
   "item.kamenridercraft.silver_defenser": "Silver Defenser",
+  "item.kamenridercraft.hexen_blade": "Hexen Blade",
 
   "item.kamenridercraft.shield_snack_shield": "Shield Snack Shield",
   "item.kamenridercraft.shield_snack_shield_choco": "Shield Snack Shield (Choco T Assist)",
@@ -8077,6 +8090,7 @@
   "kamenridercraft:wonder_capsem.form": "Form: Paradigm Wonder",
   "item.kamenridercraft.gravity_capsem": "Gravity Capsem",
   "kamenridercraft:gravity_capsem.form": "Form: Paradigm Gravity",
+  "item.kamenridercraft.plasma_capsem": "Plasma Capsem",
 
   "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
 
@@ -8795,8 +8809,8 @@
 "block.kamenridercraft.pure_gaia_memory_block": "Gaia Memory Block",
 "block.kamenridercraft.gaiamemoryblock": "Gaia Memory Ore",
 "block.kamenridercraft.deepslate_gaiamemoryblock": "Deepslate Gaia Memory Ore",
-  "block.kamenridercraft.wizardgemblock": "Wizard Gem Stone Ore",
-  "block.kamenridercraft.deepslate_wizardgemblock": "Deepslate Wizard Gem Stone Ore",
+  "block.kamenridercraft.wizardgemblock": "Magic Stone Ore",
+  "block.kamenridercraft.deepslate_wizardgemblock": "Deepslate Magic Stone Ore",
   "block.kamenridercraft.ghost_eyecon_stone": "Ghost Eyecon Ore",
   "block.kamenridercraft.deepslate_ghost_eyecon_stone": "Deepslate Ghost Eyecon Stone Ore",
 

@@ -14,7 +14,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kamenridercraft:revice/destream",
+    "parent": "kamenridercraft:revice/juuga",
     "criteria": {
       "1": {
         "trigger": "minecraft:inventory_changed",

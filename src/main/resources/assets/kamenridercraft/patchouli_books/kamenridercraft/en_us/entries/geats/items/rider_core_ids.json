@@ -22,11 +22,8 @@
 			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used to access Geats's $(l:geats/riders/geats#oneness)Oneness$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:geats_oneness_rider_core_id",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/geats_oneness_rider_core_id"
 		},
 		{
 			"type": "patchouli:text",
