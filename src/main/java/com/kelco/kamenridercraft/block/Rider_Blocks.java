@@ -974,6 +974,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<DoorBlock> GLASS_DOOR = registerBlock("glass_door",
 			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
+	public static final DeferredBlock<DoorBlock> GOLD_DOOR = registerBlock("gold_door",
+			() -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
 	public static final DeferredBlock<Block> CORNERSTORE_SIGN = registerBlock("cornerstore_sign",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));

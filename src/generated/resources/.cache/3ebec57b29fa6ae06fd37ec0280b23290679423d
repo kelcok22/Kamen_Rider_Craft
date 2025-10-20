@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-20T00:01:33.9042983	Item Models: kamenridercraft
+// 1.21.1	2025-10-20T19:21:39.9475847	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -234,6 +234,7 @@ afb254913756a409fb3fb0d22fe0e85541214827 assets/kamenridercraft/models/item/ging
 cdfd614932182db513038571dfb590a866a7a7ef assets/kamenridercraft/models/item/gochipod_empty.json
 b8d949d116611ad97f369d64a4d838ae786bca5f assets/kamenridercraft/models/item/gochipod_master.json
 4e76e2f2d24558a9156e20686a5f35dd955ec0b2 assets/kamenridercraft/models/item/gokigenmeteon_ride_chemy_card.json
+e0e14ffea5fa38435db20022031af93a01b7c8ae assets/kamenridercraft/models/item/gold_door.json
 bfedf19b3676885ca5ec0820b22abb5a2884aec8 assets/kamenridercraft/models/item/gotchancollection_panel.json
 aa7541afb51563c2b11b7863393cd68f1fb98b74 assets/kamenridercraft/models/item/gotchard_gochizo.json
 c0b4ca701d5a70ad0ff23467da471e44596570e5 assets/kamenridercraft/models/item/gotchard_ride_chemy_card.json
