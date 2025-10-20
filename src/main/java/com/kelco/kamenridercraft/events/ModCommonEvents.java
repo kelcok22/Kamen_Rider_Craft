@@ -600,6 +600,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.KINTAROS.get(), KintarosEntity.setAttributes().build());
 		event.put(MobsCore.RYUTAROS.get(), RyutarosEntity.setAttributes().build());
 
+		event.put(MobsCore.ARC.get(), ArcEntity.setAttributes().build());
+
 		event.put(MobsCore.MASQUERADE.get(), MasqueradeEntity.setAttributes().build());
 		event.put(MobsCore.CLAYDOLL_DOPANT.get(), ClayDollDopantEntity.setAttributes().build());
 		event.put(MobsCore.TERROR_DOPANT.get(), TerrorDopantEntity.setAttributes().build());
