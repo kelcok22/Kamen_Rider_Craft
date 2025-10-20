@@ -428,6 +428,8 @@ public class Miscellaneous_Rider_Items {
     public static final DeferredItem<Item> GASHAPON_CAPSULE = ITEMS.register("gashapon_capsule",
             () -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gashapon_capsule")).has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> HALLOWEEN_GASHAPON_CAPSULE = ITEMS.register("halloween_gashapon_capsule",
+            () -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/halloween_gashapon_capsule")).has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    

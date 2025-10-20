@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:punkjackolantern",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:doracan_gochizo",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:chocozon_gochizo",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:poppingummy_gochizo_halloween",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:gashapon_capsule"
+}
