@@ -1,0 +1,19 @@
+{
+	"name": "Halloween Gashapon Capsule",
+	"icon": "kamenridercraft:halloween_gashapon_capsule",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Gives random items when opened$(br2)Drops:$(li)$(l:misc/blocks/punkjackolantern)???$(/l) (25%)$(li)$(l:gavv/items/gochizo#poppingummy_gochizo_halloween)Mischievous Poppingummy Gochizo$(/l) (25%)$(li)$(l:gavv/items/gochizo#chocozon_gochizo)Chocozon Gochizo$(/l) (25%)$(li)$(l:gavv/items/gochizo#doracan_gochizo)Doracan Gochizo$(/l) (25%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:halloween_gashapon_capsule",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:punkjackolantern",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Can be worn on the head armor slot"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:punkjackolantern",
+        "title": " ",
+        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
+      }
+    ]
+}
