@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ichigo",
+  "pattern": [
+    "XXX",
+    "XMX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:rider_circuit"
+    },
+    "M": {
+      "item": "kamenridercraft:shocker_emblem"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:shocker_belt"
+  }
+}
