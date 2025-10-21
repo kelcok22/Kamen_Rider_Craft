@@ -588,6 +588,7 @@ public class RiderTabs {
             event.accept(Rider_Blocks.RABBIT_HUTCH_LADDER);
 
             event.accept(Rider_Blocks.JAIL_DOOR);
+            event.accept(Rider_Blocks.GOLD_DOOR);
 
             event.accept(Rider_Blocks.DRIVE_PIT_LOGO);
             event.accept(Rider_Blocks.DRIVE_PIT_LADDER);

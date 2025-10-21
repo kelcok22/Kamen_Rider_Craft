@@ -106,7 +106,9 @@ public class Modded_item_core {
             () -> new RiderCaseItem().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_combatman","shocker_belt",
+                                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+                                    .SetShowFace().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));

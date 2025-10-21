@@ -155,6 +155,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),modLoc("block/rabbit_hutch_door_bottom"),modLoc("block/rabbit_hutch_door_top"), "cutout");
         doorBlockWithRenderType(Rider_Blocks.GLASS_DOOR.get(),modLoc("block/glass_door_bottom"),modLoc("block/glass_door_top"), "cutout");
         doorBlockWithRenderType(Rider_Blocks.JAIL_DOOR.get(),modLoc("block/jail_door_bottom"),modLoc("block/jail_door_top"), "cutout");
+        doorBlockWithRenderType(Rider_Blocks.GOLD_DOOR.get(),modLoc("block/gold_door_bottom"),modLoc("block/gold_door_top"), "cutout");
 
     }
 
