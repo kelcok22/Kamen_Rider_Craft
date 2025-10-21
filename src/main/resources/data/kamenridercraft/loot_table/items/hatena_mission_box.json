@@ -87,11 +87,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:clear_arrow_raise_buckle",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
           "name": "kamenridercraft:beat_raise_buckle_theme",
           "weight": 1
         }

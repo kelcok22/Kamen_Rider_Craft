@@ -550,6 +550,11 @@
   "henshin.kamenridercraft.necrom": "<Kamen Rider Necrom> §aHenshin!\n§aTengan! Necrom! Mega Ulord! Crush invader!",
   "henshin.kamenridercraft.necrom_grimm": "§aTengan! §2Grimm! §aMega Ulord! §2Fighting pen!",
   "henshin.kamenridercraft.necrom_sanzo": "§aTengan! §eSanzo! §aMega Ulord! §eSaiyuu road!",
+  "henshin.kamenridercraft.dark_ghost": "<Kamen Rider Dark Ghost> Henshin!\nKaigan! Dark Rider! Yami no chikara! Warui yatsura!",
+  "henshin.kamenridercraft.dark_ghost_napoleon": "§6Kaigan! Napoleon! Okose kakumei! Sore ga shukumei!",
+  "henshin.kamenridercraft.dark_ghost_ikkyu": "§bKaigan! Ikkyu! Semaru pinch! Saeru tonchi!",
+  "henshin.kamenridercraft.dark_ghost_pythagoras": "§6Kaigan! Pythagoras! Sankaku no teiri! Ore no iu tōri!",
+
   "henshin.kamenridercraft.genm":"§5Gachan! Level Up! Mighty jump! Mighty kick! Mighty Action X!",
   "henshin.kamenridercraft.graphite":"§2Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!",
   "henshin.kamenridercraft.poppy":"§bBuggle Up! §eDreaming girl! Koi no simulation! §6Otome wa itsumo Toki Meki Crisis!",
@@ -1804,6 +1809,7 @@
   "item.kamenridercraft.corn_snack": "Corn Snack",
   "item.kamenridercraft.gift": "Gift",
   "item.kamenridercraft.gashapon_capsule": "Gashapon Capsule",
+  "item.kamenridercraft.halloween_gashapon_capsule": "Gashapon Capsule",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
 
@@ -7976,6 +7982,7 @@
   "item.kamenridercraft.poppingummy_gochizo_halloween": "Mischievous Poppingummy Gochizo",
   "item.kamenridercraft.chocozon_gochizo": "Chocozon Gochizo",
   "item.kamenridercraft.doracan_gochizo": "Doracan Gochizo",
+  "item.kamenridercraft.pumpkin_gochizo": "Pumpkin Gochizo",
 
   "item.kamenridercraft.zeztz_gochizo": "Zeztz Gochizo",
   "item.kamenridercraft.gavv_gochizo": "Gavv Gochizo",
@@ -8430,6 +8437,7 @@
   "entity.kamenridercraft.igor": "Igor",
   "entity.kamenridercraft.necrom": "Kamen Rider Necrom",
   "entity.kamenridercraft.dark_necrom": "Kamen Rider Dark Necrom",
+  "entity.kamenridercraft.dark_ghost": "Kamen Rider Dark Ghost",
 
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -8684,6 +8692,7 @@
   "item.kamenridercraft.igor_spawn_egg": "Igor Spawn Egg",
   "item.kamenridercraft.necrom_spawn_egg": "Kamen Rider Necrom Spawn Egg",
   "item.kamenridercraft.dark_necrom_spawn_egg": "Kamen Rider Dark Necrom Spawn Egg",
+  "item.kamenridercraft.dark_ghost_spawn_egg": "Kamen Rider Dark Ghost Spawn Egg",
 
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",
@@ -8809,6 +8818,7 @@
 "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
 
   "block.kamenridercraft.drive_pit_logo": "Drive Pit Logo",
+  "block.kamenridercraft.punkjackolantern": "PunkJack O'Lantern",
 
 "block.kamenridercraft.monitor": "Monitor",
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",

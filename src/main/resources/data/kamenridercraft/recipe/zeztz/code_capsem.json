@@ -6,7 +6,7 @@
 	  "item": "kamenridercraft:rider_circuit"
 	}, 
 	{
-	  "item": "kamenridercraft:gashapon_capsule"
+      "tag": "kamenridercraft:gear/gashapon_capsule"
 	} 
 	],
   "result": {
