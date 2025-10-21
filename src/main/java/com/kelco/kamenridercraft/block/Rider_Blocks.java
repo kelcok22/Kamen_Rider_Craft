@@ -974,6 +974,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<DoorBlock> GLASS_DOOR = registerBlock("glass_door",
 			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
+	public static final DeferredBlock<DoorBlock> GOLD_DOOR = registerBlock("gold_door",
+			() -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
 	public static final DeferredBlock<Block> CORNERSTORE_SIGN = registerBlock("cornerstore_sign",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
@@ -1018,6 +1021,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> ARC_BOSS_BLOCK = registerBlock("arc_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.ARC).addLine(Component.translatable("henshin.kamenridercraft.arc")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
     public static final DeferredBlock<Block> TABOO_BOSS_BLOCK = registerBlock("taboo_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)

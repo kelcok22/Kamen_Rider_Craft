@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:keyfuestle",
+			"functions": [
+				{
+					"function": "minecraft:set_count",
+					"count": {
+						"min": 1,
+						"max": 2
+					}
+				}
+			]
+		}
+	  ]
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:kivalafuestle"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "attacking_player",
+				  "predicate": {
+					  "slots": {
+						  "container.*": {
+							  "items": "kamenridercraft:decade_camera"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:fuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

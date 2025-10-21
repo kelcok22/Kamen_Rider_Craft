@@ -260,6 +260,11 @@ public class MobsCore {
      public static final DeferredItem<DeferredSpawnEggItem> RYUTAROS_SPAWN_EGG = ITEMS.register("ryutaros_spawn_egg",
              () -> new DeferredSpawnEggItem(RYUTAROS,  0x3b114e,0x2a0b38, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<ArcEntity>> ARC = MOBLIST.register("arc",
+            () -> EntityType.Builder.of(ArcEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":arc"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ARC_SPAWN_EGG = ITEMS.register("arc_spawn_egg",
+            () -> new DeferredSpawnEggItem(ARC,  0x000000,0xE6F20A, new Item.Properties()));
 
      public static final DeferredHolder<EntityType<?>, EntityType<MasqueradeEntity>> MASQUERADE = MOBLIST.register("masquerade",
              () -> EntityType.Builder.of(MasqueradeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));

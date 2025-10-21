@@ -981,6 +981,10 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
+	public static final DeferredItem<Item> PUMPKIN_GOCHIZO = ITEMS.register("pumpkin_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
 	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_CHARADECO = ITEMS.register("poppingummy_gochizo_charadeco_ver",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));

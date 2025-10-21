@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-20T00:01:33.9042983	Item Models: kamenridercraft
+// 1.21.1	2025-10-20T23:17:00.0687205	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -234,6 +234,7 @@ afb254913756a409fb3fb0d22fe0e85541214827 assets/kamenridercraft/models/item/ging
 cdfd614932182db513038571dfb590a866a7a7ef assets/kamenridercraft/models/item/gochipod_empty.json
 b8d949d116611ad97f369d64a4d838ae786bca5f assets/kamenridercraft/models/item/gochipod_master.json
 4e76e2f2d24558a9156e20686a5f35dd955ec0b2 assets/kamenridercraft/models/item/gokigenmeteon_ride_chemy_card.json
+e0e14ffea5fa38435db20022031af93a01b7c8ae assets/kamenridercraft/models/item/gold_door.json
 bfedf19b3676885ca5ec0820b22abb5a2884aec8 assets/kamenridercraft/models/item/gotchancollection_panel.json
 aa7541afb51563c2b11b7863393cd68f1fb98b74 assets/kamenridercraft/models/item/gotchard_gochizo.json
 c0b4ca701d5a70ad0ff23467da471e44596570e5 assets/kamenridercraft/models/item/gotchard_ride_chemy_card.json
@@ -413,6 +414,7 @@ ec5fd7d93fc06a2708b266545e140c5aefaac96d assets/kamenridercraft/models/item/prot
 693adc57e039e4592470fe01e01af9c0459c3c59 assets/kamenridercraft/models/item/prujelly_gochizo.json
 a0b2ad303869724616966c8436e6fc28a600a8e1 assets/kamenridercraft/models/item/puddinte_gochizo.json
 129f007fb3ce3d4aaa9f4aea3ea2a289fafcb20f assets/kamenridercraft/models/item/pukupukutai_gochizo.json
+09b56e5df59c658151af40946c2dde56aa3ab47d assets/kamenridercraft/models/item/pumpkin_gochizo.json
 d21cf7b33a992cfdacaf779a6c24dc87bdd803e5 assets/kamenridercraft/models/item/punchingummy_gochizo_valen.json
 5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
@@ -467,6 +469,8 @@ c4270e728e581fa7f4123e4aee54287afc7bcce3 assets/kamenridercraft/models/item/shin
 674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/shin_typhoon_core_2_1.json
 6bf8dd85dfec5afb45d259939b9bf7fbaffa9974 assets/kamenridercraft/models/item/shin_typhoon_ichigo.json
 27cfbf8eaa819232a58a4f780ffa210a011f07c9 assets/kamenridercraft/models/item/shin_typhoon_nigo.json
+cd18dc0679a53c6c3703f367c21564f289fa7643 assets/kamenridercraft/models/item/shocker_belt.json
+1e5ed959aa9d07b1adde62cda97ccc27580e919b assets/kamenridercraft/models/item/shocker_emblem.json
 123b2e043739f1cc4d1ddcacec6dd865a0f1a0de assets/kamenridercraft/models/item/shouma_doppudding_gochizo.json
 24f2ffcf76355d111bef77bd6024537b383963db assets/kamenridercraft/models/item/signal_chaser.json
 24f2ffcf76355d111bef77bd6024537b383963db assets/kamenridercraft/models/item/signal_chaser_mach.json

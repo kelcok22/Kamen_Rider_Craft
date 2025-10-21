@@ -414,6 +414,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.KINTAROS.get(), AllyEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.RYUTAROS.get(), AllyEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.ARC.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.MASQUERADE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WEATHER_DOPANT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CLAYDOLL_DOPANT.get(), BasicEntityRenderer::new);
