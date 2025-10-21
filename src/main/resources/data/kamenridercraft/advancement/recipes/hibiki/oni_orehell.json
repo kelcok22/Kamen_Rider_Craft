@@ -24,7 +24,8 @@
       "kamenridercraft:hibiki/henshin_onsa_touki",
       "kamenridercraft:hibiki/henshin_onsa_kirameki",
       "kamenridercraft:hibiki/henshin_onsa_nishiki",
-      "kamenridercraft:hibiki/henshin_onsa_habataki"
+      "kamenridercraft:hibiki/henshin_onsa_habataki",
+	  "kamenridercraft:hibiki/henshin_onibue_fubuki"
     ]
   },
   "sends_telemetry_event": false
