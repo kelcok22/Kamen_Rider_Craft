@@ -23,7 +23,21 @@
 	"recipes": [
 	  "kamenridercraft:hibiki/hibikihead",
 	  "kamenridercraft:hibiki/hibikitroso",
-	  "kamenridercraft:hibiki/hibikilegs",
+      "kamenridercraft:hibiki/hibikilegs",
+      "kamenridercraft:hibiki/henshin_onsa",
+      "kamenridercraft:hibiki/henshin_onsa_danki",
+      "kamenridercraft:hibiki/henshin_onsa_eiki",
+      "kamenridercraft:hibiki/henshin_onsa_gouki",
+      "kamenridercraft:hibiki/henshin_onsa_kyoki",
+      "kamenridercraft:hibiki/henshin_onibue_ibuki",
+      "kamenridercraft:hibiki/henshin_onibue_toki",
+      "kamenridercraft:hibiki/henshin_onibue_shouki",
+      "kamenridercraft:hibiki/henshin_onibue_fubuki",
+      "kamenridercraft:hibiki/henshin_kigen_todoroki",
+      "kamenridercraft:hibiki/henshin_kigen_zanki",
+      "kamenridercraft:hibiki/henshin_kigen_shuki",
+      "kamenridercraft:hibiki/henshin_kigen_banki",
+      "kamenridercraft:hibiki/henshin_kigen_sabaki",
 	  "kamenridercraft:decade/decade_camera"
 	]
   },

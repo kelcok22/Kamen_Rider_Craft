@@ -1,0 +1,17 @@
+{
+	"name": "Midaredouji",
+	"icon": "kamenridercraft:hibiki_logo",
+	"category": "kamenridercraft:hibiki/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:midaredouji",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br)Health: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 10% chance to spawn from a $(l:hibiki/mobs/bakeneko)Bakeneko$(/l)$(br2)Special moves:$(li)Takes out $(l:hibiki/arsenal/midaredouji_blade)Midaredouji no Hamono$(/l) at under 40 health if you have $(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)Henshin Onsa Onkaku (Kurenai)$(/l) in your inventory$(br2)Drops$(li)2-4 $(l:hibiki/items/oni_ore)Akane Taka Disk Animals$(/l)$(li)0-2 blaze powder$(li)1 $(l:hibiki/arsenal/midaredouji_blade)Midaredouji no Hamono$(/l) (if you have a $(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)Henshin Onsa Onkaku (Kurenai)$(/l) in your inventory)"
+		}
+	]
+}

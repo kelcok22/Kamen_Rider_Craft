@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:bakeneko",
+  "spawners": {
+	"type": "kamenridercraft:bakeneko",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

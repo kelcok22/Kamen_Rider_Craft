@@ -1,0 +1,7 @@
+{
+  "parent": "kamenridercraft:hibiki/main",
+  "name": "Hibiki Mobs",
+  "description": "Every mob from or relating to the show, Kamen Rider Hibiki.",
+  "icon": "kamenridercraft:hibiki_logo",
+  "sortnum": 4
+}

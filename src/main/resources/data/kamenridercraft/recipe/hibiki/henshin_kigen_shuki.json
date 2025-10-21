@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shuki",
+  "pattern": [
+    " G ",
+    "IXI",
+    " H "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "kamenridercraft:oni_ore"
+    },
+    "H": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:henshin_kigen_shuki"
+  }
+}

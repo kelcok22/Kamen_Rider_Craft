@@ -10,10 +10,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Ibuki's $(l:hibiki/devices/ongekimei#ibukidriver)Ongekimei Narukaze$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onibue_ibuki",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_ibuki"
 		},
 		{
 			"type": "patchouli:text",
@@ -22,11 +20,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Touki's $(l:hibiki/devices/ongekimei#tokidriver)Ongekimei (Toki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onibue_toki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_toki"
 		},
 		{
 			"type": "patchouli:text",
@@ -35,11 +30,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Shouki's $(l:hibiki/devices/ongekimei#shoukidriver)Ongekimei Fusoku$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onibue_shouki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_shouki"
 		},
 		{
 			"type": "patchouli:text",
@@ -48,11 +40,8 @@
 			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Amaki's $(l:hibiki/devices/ongekimei#amakidriver)Ongekimei (Amaki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onibue_amaki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_amaki"
 		},
 		{
 			"type": "patchouli:text",
@@ -61,11 +50,8 @@
 			"text": "Appears in:$(li)Super Imaginative Chogokin (2005, toyline)$(br2)Used to craft Fubuki's $(l:hibiki/devices/ongekimei#fubukidriver)Ongekimei (Fubuki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onibue_fubuki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_fubuki"
 		}
 	]
 }

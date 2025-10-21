@@ -396,6 +396,11 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.ORGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MUEZ.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.BAKENEKO.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MIDAREDOUJI.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MAKAMOU_NINJA_GROUP.get(), MakamouNinjaGroupRenderer::new);
+            event.registerEntityRenderer(MobsCore.KABUKI.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.ZECTROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHADOW_TROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEOTROOPER.get(), BasicEntityRenderer::new);

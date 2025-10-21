@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zanki",
+  "pattern": [
+    " G ",
+    "IXI",
+    " H "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "kamenridercraft:oni_ore"
+    },
+    "H": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:henshin_kigen_zanki"
+  }
+}

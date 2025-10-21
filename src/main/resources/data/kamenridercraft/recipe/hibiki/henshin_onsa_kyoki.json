@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyoki",
+  "pattern": [
+	"I I",
+	"IXI",
+	" H "
+  ],
+  "key": {
+	"I": {
+	  "item": "minecraft:iron_ingot"
+	},
+    "X": {
+      "item": "kamenridercraft:oni_ore"
+    },
+    "H": {
+      "item": "minecraft:cracked_stone_bricks"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:henshin_onsa_kyoki"
+  }	
+}
