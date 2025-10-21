@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hibiki_kurenai",
+  "pattern": [
+	"XBX",
+	"BHB",
+	"XLX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:oni_ore"
+	},
+	"B": {
+	  "item": "minecraft:blaze_powder"
+	},
+    "L": {
+      "item": "minecraft:lava_bucket"
+    },
+    "H": {
+      "item": "kamenridercraft:henshin_onsa"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:henshin_onsa_kurenai"
+  }	
+}

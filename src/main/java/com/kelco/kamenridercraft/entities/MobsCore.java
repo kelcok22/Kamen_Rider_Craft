@@ -168,7 +168,32 @@ public class MobsCore {
              () -> new DeferredSpawnEggItem(MUEZ,  0x0a4de5,0xe8e8e8, new Item.Properties()));
 
 
-     public static final DeferredHolder<EntityType<?>, EntityType<ZectrooperEntity>> ZECTROOPER = MOBLIST.register("zectrooper",
+    public static final DeferredHolder<EntityType<?>, EntityType<BakenekoEntity>> BAKENEKO = MOBLIST.register("bakeneko",
+            () -> EntityType.Builder.of(BakenekoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bakeneko"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BAKENEKO_SPAWN_EGG = ITEMS.register("bakeneko_spawn_egg",
+            () -> new DeferredSpawnEggItem(BAKENEKO,  0xf0efe4,0xd9d6c2, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MidaredoujiEntity>> MIDAREDOUJI = MOBLIST.register("midaredouji",
+            () -> EntityType.Builder.of(MidaredoujiEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":midaredouji"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MIDAREDOUJI_SPAWN_EGG = ITEMS.register("midaredouji_spawn_egg",
+            () -> new DeferredSpawnEggItem(MIDAREDOUJI,  0xe2382f,0xeb9981, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MakamouNinjaGroupEntity>> MAKAMOU_NINJA_GROUP = MOBLIST.register("makamou_ninja_group",
+            () -> EntityType.Builder.of(MakamouNinjaGroupEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":makamou_ninja_group"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MAKAMOU_NINJA_GROUP_SPAWN_EGG = ITEMS.register("makamou_ninja_group_spawn_egg",
+            () -> new DeferredSpawnEggItem(MAKAMOU_NINJA_GROUP,  0x0b0b0b,0xbbbbbb, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<KabukiEntity>> KABUKI = MOBLIST.register("kabuki",
+            () -> EntityType.Builder.of(KabukiEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kabuki"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KABUKI_SPAWN_EGG = ITEMS.register("kabuki_spawn_egg",
+            () -> new DeferredSpawnEggItem(KABUKI,  0x046d10,0xd31b1c, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ZectrooperEntity>> ZECTROOPER = MOBLIST.register("zectrooper",
              () -> EntityType.Builder.of(ZectrooperEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zectrooper"));
 
      public static final DeferredItem<DeferredSpawnEggItem> ZECTROOPER_SPAWN_EGG = ITEMS.register("zectrooper_spawn_egg",

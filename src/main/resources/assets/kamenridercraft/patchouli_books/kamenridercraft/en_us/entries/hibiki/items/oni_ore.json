@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:oni_ore",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"text": "Drops from:$(li)$(l:hibiki/mobs/bakeneko)Bakeneko$(/l)$(li)$(l:hibiki/mobs/midaredouji)Midaredouji$(/l)"
 		}
 	]
 }

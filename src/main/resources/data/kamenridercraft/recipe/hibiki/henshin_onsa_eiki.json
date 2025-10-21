@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "eiki",
+  "pattern": [
+	"I I",
+	"GXG",
+	" H "
+  ],
+  "key": {
+	"I": {
+	  "item": "minecraft:iron_ingot"
+	},
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "kamenridercraft:oni_ore"
+    },
+    "H": {
+      "item": "minecraft:pointed_dripstone"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:henshin_onsa_eiki"
+  }	
+}

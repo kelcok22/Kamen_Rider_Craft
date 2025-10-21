@@ -587,6 +587,11 @@ public class ModCommonEvents {
 		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
 		event.put(MobsCore.MUEZ.get(), MuezEntity.setAttributes().build());
 
+        event.put(MobsCore.BAKENEKO.get(), BakenekoEntity.setAttributes().build());
+        event.put(MobsCore.MIDAREDOUJI.get(), MidaredoujiEntity.setAttributes().build());
+        event.put(MobsCore.MAKAMOU_NINJA_GROUP.get(), MakamouNinjaGroupEntity.setAttributes().build());
+        event.put(MobsCore.KABUKI.get(), KabukiEntity.setAttributes().build());
+
 		event.put(MobsCore.ZECTROOPER.get(), ZectrooperEntity.setAttributes().build());
 		event.put(MobsCore.SHADOW_TROOPER.get(), ShadowTrooperEntity.setAttributes().build());
 		event.put(MobsCore.NEOTROOPER.get(), NeotrooperEntity.setAttributes().build());
@@ -847,7 +852,10 @@ public class ModCommonEvents {
 
 		event.register(MobsCore.RIOTROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
-		event.register(MobsCore.ZECTROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(MobsCore.BAKENEKO.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(MobsCore.MAKAMOU_NINJA_GROUP.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+        event.register(MobsCore.ZECTROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.SHADOW_TROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.NEOTROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

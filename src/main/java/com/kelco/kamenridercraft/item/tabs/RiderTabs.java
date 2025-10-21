@@ -659,6 +659,11 @@ public class RiderTabs {
             event.accept(MobsCore.ORGA_SPAWN_EGG);
             event.accept(MobsCore.MUEZ_SPAWN_EGG);
 
+            event.accept(MobsCore.BAKENEKO_SPAWN_EGG);
+            event.accept(MobsCore.MIDAREDOUJI_SPAWN_EGG);
+            event.accept(MobsCore.MAKAMOU_NINJA_GROUP_SPAWN_EGG);
+            event.accept(MobsCore.KABUKI_SPAWN_EGG);
+
             event.accept(MobsCore.ZECTROOPER_SPAWN_EGG);
             event.accept(MobsCore.SHADOW_TROOPER_SPAWN_EGG);
             event.accept(MobsCore.NEOTROOPER_SPAWN_EGG);

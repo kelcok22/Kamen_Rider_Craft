@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:hibiki/echo_sword_onsaken"
+			"recipe": "kamenridercraft:hibiki/echo_sword_onsaken",
+            "text": "Drops from:$(li)$(l:hibiki/mobs/kabuki)Kamen Rider Kabuki$(/l)'s equipment"
 		}
 	]
 }

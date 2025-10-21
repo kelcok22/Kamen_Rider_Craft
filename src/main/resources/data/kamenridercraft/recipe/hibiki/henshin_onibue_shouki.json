@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shouki",
+  "pattern": [
+    "GXG",
+    " H ",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "kamenridercraft:oni_ore"
+    },
+    "H": {
+      "item": "minecraft:firework_rocket"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:henshin_onibue_shouki"
+  }
+}

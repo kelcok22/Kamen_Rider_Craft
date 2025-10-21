@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:oni_orehell",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"text": "Drops from:$(li)$(l:hibiki/mobs/makamou_ninja_group)Makamou Ninja Group$(/l)$(li)$(l:hibiki/mobs/kabuki)Kamen Rider Kabuki$(/l)"
 		}
 	]
 }

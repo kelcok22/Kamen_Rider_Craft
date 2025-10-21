@@ -458,6 +458,11 @@ public class Hibiki_Rider_Items {
         public static final DeferredItem<Item> ONGEKI_SHINCHO_RETSUBAN = ITEMS.register("ongeki_shincho_retsuban",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
 
+    public static final DeferredItem<Item> MIDAREDOUJI_BLADE = ITEMS.register("midaredouji_blade",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+    public static final DeferredItem<Item> MAKAMOU_NINJA_SICKLE = ITEMS.register("makamou_ninja_sickle",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+
 
         public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    

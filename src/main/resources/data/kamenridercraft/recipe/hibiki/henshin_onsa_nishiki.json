@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nishiki",
+  "pattern": [
+	"I I",
+	"GXG",
+	" H "
+  ],
+  "key": {
+	"I": {
+	  "item": "minecraft:iron_ingot"
+	},
+    "G": {
+      "item": "minecraft:nether_brick"
+    },
+    "X": {
+      "item": "kamenridercraft:oni_orehell"
+    },
+    "H": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:henshin_onsa_nishiki"
+  }	
+}

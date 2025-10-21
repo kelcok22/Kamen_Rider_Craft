@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "armed_hibiki",
+  "pattern": [
+	" K ",
+	"XMX",
+	" X "
+  ],
+  "key": {
+	"X": {
+	  "item": "minecraft:iron_ingot"
+	},
+	"K": {
+	  "item": "kamenridercraft:henshin_onsa_kurenai"
+	},
+    "M": {
+      "item": "kamenridercraft:midaredouji_blade"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:unfinished_armed_saber"
+  }	
+}

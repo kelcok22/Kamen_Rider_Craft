@@ -1,0 +1,19 @@
+{
+	"name": "Midaredouji no Hamono",
+	"icon": "kamenridercraft:midaredouji_blade",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used by $(l:hibiki/mobs/midaredouji)Midaredouji$(/l)"
+		},
+		{
+          "type": "patchouli:spotlight",
+          "link_recipe": true,
+          "item": "kamenridercraft:midaredouji_blade",
+          "title": " ",
+          "text": "Drops from:$(li)$(l:hibiki/mobs/midaredouji)Midaredouji$(/l) (if you have a $(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)Henshin Onsa Onkaku (Kurenai)$(/l) in your inventory)"
+		}
+	]
+}

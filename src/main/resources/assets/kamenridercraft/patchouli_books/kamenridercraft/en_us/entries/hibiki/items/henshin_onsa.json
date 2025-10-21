@@ -10,10 +10,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Hibiki's $(l:hibiki/devices/ongekiko#hibikidriver)Ongekiko Kaentsuzumi$(/l)$(br2)Used to access Hibiki's $(l:hibiki/riders/hibiki#hibiki)base$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa"
 		},
 		{
 			"type": "patchouli:text",
@@ -22,10 +20,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to access $(l:hibiki/riders/hibiki#kurenai)Hibiki Kurenai$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_kurenai",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_kurenai"
 		},
 		{
 			"type": "patchouli:text",
@@ -34,11 +30,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Danki's $(l:hibiki/devices/ongekiko#dankidriver)Ongekiko Mikageban$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_danki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_danki"
 		},
 		{
 			"type": "patchouli:text",
@@ -47,11 +40,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Eiki's $(l:hibiki/devices/ongekiko#eikidriver)Ongekiko Hakuryoku$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_eiki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_eiki"
 		},
 		{
 			"type": "patchouli:text",
@@ -60,11 +50,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Gouki's $(l:hibiki/devices/ongekiko#goukidriver)Ongekiko Kongou$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_gouki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_gouki"
 		},
 		{
 			"type": "patchouli:text",
@@ -73,11 +60,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Kyoki's $(l:hibiki/devices/ongekiko#kyosukedriver)Ongekiko (Kyoki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_kyoki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_kyoki"
 		},
 		{
 			"type": "patchouli:text",
@@ -90,7 +74,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:henshin_onsa_kabuki",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"text": "Drops from:$(li)$(l:hibiki/mobs/kabuki)Kamen Rider Kabuki$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -99,11 +83,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Touki's $(l:hibiki/devices/ongekiko#toukidriver)Ongekiko (Touki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_touki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_touki"
 		},
 		{
 			"type": "patchouli:text",
@@ -112,11 +93,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Habataki's $(l:hibiki/devices/ongekimei#habatakidriver)Ongekimei (Habataki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_habataki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_habataki"
 		},
 		{
 			"type": "patchouli:text",
@@ -125,11 +103,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Kirameki's $(l:hibiki/devices/ongekimei#kiramekidriver)Ongekimei (Kirameki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_kirameki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_kirameki"
 		},
 		{
 			"type": "patchouli:text",
@@ -138,11 +113,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Nishiki's $(l:hibiki/devices/ongekiko#nishikidriver)Ongekiko (Nishiki)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_onsa_nishiki",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_nishiki"
 		}
 	]
 }

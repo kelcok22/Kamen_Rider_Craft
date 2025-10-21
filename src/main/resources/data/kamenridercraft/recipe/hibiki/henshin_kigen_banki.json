@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "banki",
+  "pattern": [
+    " G ",
+    "IXI",
+    " H "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "kamenridercraft:oni_ore"
+    },
+    "H": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:henshin_kigen_banki"
+  }
+}

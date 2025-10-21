@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:oni_orehell"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+      "kamenridercraft:hibiki/henshin_onsa_touki",
+      "kamenridercraft:hibiki/henshin_onsa_kirameki",
+      "kamenridercraft:hibiki/henshin_onsa_nishiki",
+      "kamenridercraft:hibiki/henshin_onsa_habataki"
+    ]
+  },
+  "sends_telemetry_event": false
+}

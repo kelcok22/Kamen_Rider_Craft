@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:hibiki/hibikidriver",
-	  "kamenridercraft:hibiki/ongekibo_rekka",
+      "kamenridercraft:hibiki/ongekibo_rekka",
+      "kamenridercraft:hibiki/henshin_onsa_kurenai",
 	  "kamenridercraft:hibiki/hibiki_logo",
 	  "kamenridercraft:fourze/hibiki_switch",
 	  "kamenridercraft:gaim/hibiki_lockseed",

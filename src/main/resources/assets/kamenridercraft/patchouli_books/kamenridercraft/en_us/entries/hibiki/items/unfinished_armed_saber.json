@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft the $(l:hibiki/arsenal/armed_saber)Armed Saber$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:unfinished_armed_saber",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/unfinished_armed_saber"
 		}
 	]
 }
