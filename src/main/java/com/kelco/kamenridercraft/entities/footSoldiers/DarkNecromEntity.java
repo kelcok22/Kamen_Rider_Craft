@@ -34,26 +34,16 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
     }
 
 
- /**   public void remove(RemovalReason p_149847_) {
+ public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-				int bossChoice = this.random.nextInt(2);
-				switch (bossChoice) {
-					case 0:
-						boss = MobsCore.ABADDON_COMMANDER.get().create(this.level());
+
+						boss = MobsCore.DARK_GHOST.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.abaddon"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_ghost"));
 						}
-						break;
-					case 1:
-						boss = MobsCore.EDEN.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eden"));
-						}
-						break;
-					default:
-				}
+
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
@@ -62,7 +52,7 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
 		}
 		super.remove(p_149847_);
 	}
-**/
+
 
 
 

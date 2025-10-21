@@ -21,6 +21,18 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:poppingummy_gochizo_halloween",
           "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:pumpkin_gochizo",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:bibiru_geiz_ridewatch",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:clear_arrow_raise_buckle",
+          "weight": 1
         }
       ]
     }
