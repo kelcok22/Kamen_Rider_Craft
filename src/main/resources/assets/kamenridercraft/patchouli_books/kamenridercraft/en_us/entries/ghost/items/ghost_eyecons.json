@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_ghost)Kamen Rider Dark Ghost$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -429,7 +429,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:napoleon_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_ghost)Kamen Rider Dark Ghost$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -442,33 +442,33 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:darwin_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_ghost)Kamen Rider Dark Ghost$(/l) (when fought as $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l))$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "ikkyu_ghost_eyecon",
 			"title": "Ikkyu Ghost Eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/ghost#ikkyu)Ikkyu Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Ikkyu Eyecon Contention! Quick Wit Battle!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/ghost#ikkyu)Ikkyu Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:ikkyu_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_ghost)Kamen Rider Dark Ghost$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "pythagoras_ghost_eyecon",
 			"title": "Pythagoras Ghost Eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/specter#pythagoras)Pythagoras Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Ikkyu Eyecon Contention! Quick Wit Battle!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/specter#pythagoras)Pythagoras Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:pythagoras_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/dark_ghost)Kamen Rider Dark Ghost$(/l)$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",

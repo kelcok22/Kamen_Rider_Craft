@@ -5,10 +5,27 @@
 {
 	
 	  "item": "kamenridercraft:diend_card"
-	}, 
-	{
-	  "tag": "minecraft:swords"
-	}
+	},
+    [
+      {
+        "item": "minecraft:wooden_sword"
+      },
+      {
+        "item": "minecraft:stone_sword"
+      },
+      {
+        "item": "minecraft:iron_sword"
+      },
+      {
+        "item": "minecraft:golden_sword"
+      },
+      {
+        "item": "minecraft:diamond_sword"
+      },
+      {
+        "item": "minecraft:netherite_sword"
+      }
+    ]
 	],
   "result": {
 	"id": "kamenridercraft:diend_crossattack_card"

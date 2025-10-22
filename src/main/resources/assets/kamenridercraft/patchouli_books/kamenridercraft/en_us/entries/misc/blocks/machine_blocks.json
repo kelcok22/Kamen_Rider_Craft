@@ -20,7 +20,7 @@
         "type": "patchouli:text",
         "anchor": "gashapon_machine",
         "title": "Gashapon Machine",
-        "text": "Use emeralds on this block to obtain $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+        "text": "Use emeralds on this block to obtain $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
       },
       {
         "type": "patchouli:spotlight",
