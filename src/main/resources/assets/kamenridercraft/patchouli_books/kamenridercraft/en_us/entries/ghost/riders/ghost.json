@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste II$(li)Ghost$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Ikkyu Eyecon Contention! Quick Wit Battle!! (2015, Hyper Battle Video)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste II$(li)Ghost$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",

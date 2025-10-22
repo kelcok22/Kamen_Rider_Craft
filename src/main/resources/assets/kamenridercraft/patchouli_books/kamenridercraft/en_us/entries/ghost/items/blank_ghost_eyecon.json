@@ -6,12 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items$(br2)Drops different Ghost Eyecons when right-clicked on a block"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items$(br2)Drops different Ghost Eyecons when right-clicked on a block$(br2)Drops on next page"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:ghost/blank_ghost_eyecon",
-			"text": "Drops on next page$(br2)Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)$(li)$(l:ghost/mobs/igor)Igor$(/l)$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)$(li)$(l:ghost/mobs/igor)Igor$(/l)$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l)$(li)$(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(li)$(l:ghost/mobs/dark_ghost)Kamen Rider Dark Ghost$(/l)"
 		},
       {
         "type": "patchouli:text",

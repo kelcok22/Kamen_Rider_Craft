@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kiva/main",
+    "name": "Kiva Structures",
+    "description": "All structures related to the show, Kamen Rider Kiva.",
+    "icon": "kamenridercraft:fangire_glass",
+    "sortnum": 5
+}
