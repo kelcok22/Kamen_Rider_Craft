@@ -6,8 +6,11 @@ import java.util.List;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.kiva.ArmMonsterStatueItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.item.zi_o.RideGadgetItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import io.netty.buffer.Unpooled;
@@ -572,6 +575,14 @@ public class Kiva_Rider_Items {
     public static final DeferredItem<Item> BLOODY_ROSE = ITEMS.register("bloody_rose",
             () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.KIVA_TAB_ITEM));
 
+    public static final DeferredItem<Item> GARULU_STATUE = ITEMS.register("garulu_statue",
+            () -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.GARULU).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> BASSHAA_STATUE = ITEMS.register("basshaa_statue",
+            () -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.BASSHAA).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> DOGGA_STATUE = ITEMS.register("dogga_statue",
+            () -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.DOGGA).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
