@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-20T23:17:00.0687205	Item Models: kamenridercraft
+// 1.21.1	2025-10-22T21:22:51.3183975	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -55,6 +55,7 @@ e96c9876c94195f97eec16ceb095b68ddea02e80 assets/kamenridercraft/models/item/bamb
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_sylphi_core.json
 6dbcde785c088c3275d59387f5b22bb85dc11b1f assets/kamenridercraft/models/item/basic_tire.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_zangetsu_core.json
+537c305f0cab3f3f5d769c29bb9dec218ac88312 assets/kamenridercraft/models/item/basshaa_statue.json
 aa0655e897bd302a9594da5e9d8cc8aeee75f422 assets/kamenridercraft/models/item/berosol_ride_chemy_card.json
 a8480ea5f3ac68d95383b199474b97add1ec8edd assets/kamenridercraft/models/item/bisbluetirol_gochizo.json
 1debe66a518a53e3fcc9980a4466370a8ddc71a2 assets/kamenridercraft/models/item/bispinktirol_gochizo.json
@@ -139,6 +140,7 @@ acbd6cd0b978bd2f1f7b206d3f7045f4bc2e7ce0 assets/kamenridercraft/models/item/den_
 456d7dc45041c6250af4b4c9b05b19e762d46276 assets/kamenridercraft/models/item/dgp_winners_coin.json
 46523954e3d918fee97eb53bbb4d15c2e224e0e4 assets/kamenridercraft/models/item/diago_speedy_wonder_ride_book.json
 9ecb9d242932c4f7b9e9c367a849b3f3927d9758 assets/kamenridercraft/models/item/doctorkozo_ride_chemy_card.json
+f5466565218457baa39efe0ff47674a44f92fda6 assets/kamenridercraft/models/item/dogga_statue.json
 0d62d9e64ea663764b69df47964b4a5100f6ded8 assets/kamenridercraft/models/item/donposeidon_ride_chemy_card.json
 7664325c7fcad7a2b5686972d3b784641e3bc458 assets/kamenridercraft/models/item/doppudding_gochizo.json
 bc9de616b8caf16f95d5668405b5512eb8d9ab7b assets/kamenridercraft/models/item/doracan_gochizo.json
@@ -204,6 +206,7 @@ fd7533820b275b5082d41bcf045d7f6416a318a7 assets/kamenridercraft/models/item/gaia
 ee625e82bdc5b0ec77a1eb9dab68940a43b3d192 assets/kamenridercraft/models/item/ganbarizing_full_bottle.json
 bbcdfd72ea49b3879e4c7e91a8c141a1bc5894f3 assets/kamenridercraft/models/item/gangan_g_belt.json
 092f09a4d9a35bf6c15e6cc139924b8e17ec4aa3 assets/kamenridercraft/models/item/ganvhale_ride_chemy_card.json
+b013ca28370053181f981d844aad239fc7681e08 assets/kamenridercraft/models/item/garulu_statue.json
 00e3a1b1319158427e2afac5eb33a43213f90b29 assets/kamenridercraft/models/item/gashapon_capsule.json
 e3735b7c45033e4ad89130059358d6dca0ea8307 assets/kamenridercraft/models/item/gavv_gochizo.json
 23d279ba3628582a41358d477db824b901995501 assets/kamenridercraft/models/item/gear_bi_kaiser.json
