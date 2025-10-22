@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -36,7 +36,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tycoon_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -49,7 +49,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:na_go_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -62,7 +62,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:buffa_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -88,7 +88,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:punkjack_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -101,7 +101,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nudge_sparrow_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -114,7 +114,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shirowe_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -127,7 +127,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ginpen_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -140,7 +140,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mary_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -153,7 +153,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:da_paan_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -166,7 +166,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:keirou_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:letter_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -192,7 +192,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lopo_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -205,7 +205,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:groovy_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -218,7 +218,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hakubi_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -231,7 +231,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:turbon_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -244,7 +244,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:brali_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -257,7 +257,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gya_go_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -270,7 +270,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:seeker_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -283,7 +283,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:butchi_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -296,7 +296,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:revi_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -309,7 +309,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:vice_rider_core_id",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -491,7 +491,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_osaka",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -504,7 +504,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_fukuoka",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -517,7 +517,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_nagoya",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -530,7 +530,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_tokyo",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		}
 	]
 }

@@ -1235,7 +1235,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:poppingummy_gochizo_halloween",
         "title": " ",
-        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
+        "text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -1248,7 +1248,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:chocozon_gochizo",
         "title": " ",
-        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
+        "text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -1261,7 +1261,20 @@
         "link_recipe": true,
         "item": "kamenridercraft:doracan_gochizo",
         "title": " ",
-        "text": "Obtained by opening $(l:misc/items/halloween_gashapon_capsule)Halloween Gashapon Capsules$(/l)"
+        "text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "pumpkin_gochizo",
+        "title": "Pumpkin Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:pumpkin_gochizo",
+        "title": " ",
+        "text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
       },
 		{
 			"type": "patchouli:text",

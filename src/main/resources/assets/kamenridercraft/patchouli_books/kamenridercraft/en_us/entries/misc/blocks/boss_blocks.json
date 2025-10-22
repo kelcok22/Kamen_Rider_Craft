@@ -8,13 +8,20 @@
 			"type": "patchouli:text",
 			"text": "These blocks will spawn a boss when mined by a player. Using a silk touch pickaxe will allow you to keep the blocks after breaking."
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"anchor": "gaoh_boss_block",
-			"item": "kamenridercraft:gaoh_boss_block",
-			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)$(br2)Mine this block to summon $(l:den_o/mobs/gaoh)Kamen Rider Gaoh$(/l)"
-		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "gaoh_boss_block",
+        "item": "kamenridercraft:gaoh_boss_block",
+        "text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)$(br2)Mine this block to summon $(l:den_o/mobs/gaoh)Kamen Rider Gaoh$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "arc_boss_block",
+        "item": "kamenridercraft:arc_boss_block",
+        "text": "Found inside a $(l:kiva/structures/kiva_crater)Kiva Crater$(/l)$(br2)Mine this block to summon $(l:kiva/mobs/arc)Kamen Rider Arc$(/l)"
+      },
       {
         "type": "patchouli:spotlight",
         "link_recipe": true,

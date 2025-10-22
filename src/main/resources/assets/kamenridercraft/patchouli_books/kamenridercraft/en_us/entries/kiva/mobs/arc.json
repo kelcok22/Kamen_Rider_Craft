@@ -1,0 +1,17 @@
+{
+  "name": "Kamen Rider Arc",
+  "icon": "kamenridercraft:kiva_logo",
+  "category": "kamenridercraft:kiva/mobs",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:arc",
+      "text": "Appears in:$(li)Kamen Rider Kiva: King of the Castle in the Demon World (2008, movie)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Health: 80$(br2)Summoned from an $(l:misc/blocks/boss_blocks#arc_boss_block)Arc Boss Block$(/l)$(br2)Drops$(li)3-6 $(l:kiva/items/fuestle)Fuestles$(/l)$(li)1-2 $(l:kiva/items/fuestles#keyfuestle)Wake Up Fuestle (Rey/Arc)$(/l)$(li)1 $(l:kiva/items/fuestles#kivalafuestle)Wake Up Fuestle (Kiva-la)$(/l) (if you have the $(l:decade/items/decade_camera)Blackbird Fly$(/l) in your inventory)"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+	"name": "Shoodoran",
+	"icon": "kamenridercraft:kiva_logo",
+	"category": "kamenridercraft:kiva/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Shoodoran",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Spawn locations: Birch Forest, Dark Forest, Flower Forest, Forest, Grove, Old Growth Birch Forest, Mushroom Fields$(br2)Chest loot on next page"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shoodoran.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shoodoran_2.png"
+			],
+			"title": " "
+		},
+      {
+        "type": "patchouli:text",
+        "text": "Chest loot:$(li)3-6 $(l:kiva/items/fuestle)Fuestles$(/l) (24.4%)$(li)4-6 bones, strings, or spider eyes (12.2%)$(li)1 $(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestle (Kiva)$(/l) (9.8%)$(li)1 $(l:kiva/items/fuestles#garulufuestle)Garulu Fuestle$(/l) (7.3%)$(li)1 $(l:kiva/items/fuestles#basshaafuestle)Basshaa Fuestle$(/l) (7.3%)$(li)1 $(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) (7.3%)$(li)1 $(l:kiva/items/fuestles#sagafuestle)Wake Up Fuestle (Saga)$(/l) (2.4%)$(li)1 $(l:kiva/items/fuestles#darkwakeupfuestle)Wake Up Fuestle (Dark Kiva)$(/l) (2.4%)$(li)1 $(l:kiva/items/fuestles#newwakeupfuestle)Wake Up Fuestle (New Kiva)$(/l) (2.4%)"
+      }
+    ]
+}
