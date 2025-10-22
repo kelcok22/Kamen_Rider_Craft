@@ -175,6 +175,22 @@ public class Zeztz_Rider_Items {
                 }
             }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> SONG_CAPSEM = ITEMS.register("song_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
+                    .has_basic_model().AddToList(CapsemDropper.CAPSEM).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> SWEETS_CAPSEM = ITEMS.register("sweets_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
+                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> CHARADECO_CAPSEM = ITEMS.register("charadeco_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
+                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GOCHIZO_CAPSEM = ITEMS.register("gochizo_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
+                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
             () -> new CapsemCylinderItem().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
