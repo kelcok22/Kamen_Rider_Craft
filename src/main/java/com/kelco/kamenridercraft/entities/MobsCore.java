@@ -266,7 +266,25 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> ARC_SPAWN_EGG = ITEMS.register("arc_spawn_egg",
             () -> new DeferredSpawnEggItem(ARC,  0x000000,0xE6F20A, new Item.Properties()));
 
-     public static final DeferredHolder<EntityType<?>, EntityType<MasqueradeEntity>> MASQUERADE = MOBLIST.register("masquerade",
+    public static final DeferredHolder<EntityType<?>, EntityType<GaruluEntity>> GARULU = MOBLIST.register("garulu",
+            () -> EntityType.Builder.of(GaruluEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":garulu"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> GARULU_SPAWN_EGG = ITEMS.register("garulu_spawn_egg",
+            () -> new DeferredSpawnEggItem(GARULU,  0x0047cb,0xcec666, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BasshaaEntity>> BASSHAA = MOBLIST.register("basshaa",
+            () -> EntityType.Builder.of(BasshaaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":basshaa"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BASSHAA_SPAWN_EGG = ITEMS.register("basshaa_spawn_egg",
+            () -> new DeferredSpawnEggItem(BASSHAA,  0x08a000,0xe4cb41, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<DoggaEntity>> DOGGA = MOBLIST.register("dogga",
+            () -> EntityType.Builder.of(DoggaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dogga"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DOGGA_SPAWN_EGG = ITEMS.register("dogga_spawn_egg",
+            () -> new DeferredSpawnEggItem(DOGGA,  0x410058,0x121212, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MasqueradeEntity>> MASQUERADE = MOBLIST.register("masquerade",
              () -> EntityType.Builder.of(MasqueradeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));
 
      public static final DeferredItem<DeferredSpawnEggItem> MASQUERADE_SPAWN_EGG = ITEMS.register("masquerade_spawn_egg",

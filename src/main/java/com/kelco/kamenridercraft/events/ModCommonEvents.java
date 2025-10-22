@@ -6,6 +6,7 @@ import java.util.*;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.KeyBindings;
+import com.kelco.kamenridercraft.client.models.DoggaModel;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.effect.Effect_core;
@@ -559,6 +560,7 @@ public class ModCommonEvents {
 	public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ElementaryInvesModel.LAYER_LOCATION, ElementaryInvesModel::createBodyLayer);
 		event.registerLayerDefinition(HeartRoidmudeModel.LAYER_LOCATION, HeartRoidmudeModel::createBodyLayer);
+        event.registerLayerDefinition(DoggaModel.LAYER_LOCATION, DoggaModel::createBodyLayer);
 	}
 
 	@SubscribeEvent
@@ -606,6 +608,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.RYUTAROS.get(), RyutarosEntity.setAttributes().build());
 
 		event.put(MobsCore.ARC.get(), ArcEntity.setAttributes().build());
+        event.put(MobsCore.GARULU.get(), GaruluEntity.setAttributes().build());
+        event.put(MobsCore.BASSHAA.get(), BasshaaEntity.setAttributes().build());
+        event.put(MobsCore.DOGGA.get(), DoggaEntity.setAttributes().build());
 
 		event.put(MobsCore.MASQUERADE.get(), MasqueradeEntity.setAttributes().build());
 		event.put(MobsCore.CLAYDOLL_DOPANT.get(), ClayDollDopantEntity.setAttributes().build());
