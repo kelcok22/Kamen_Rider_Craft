@@ -1014,8 +1014,11 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
 
     public static final DeferredBlock<Block> PUNKJACKOLANTERN = registerBlock("punkjackolantern",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
                     .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1),Block.box(3, 0, 3, 13,7, 13)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+    public static final DeferredBlock<Block> FERBUS = registerBlock("ferbus",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL),Block.box(4, 0, 4, 12,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",

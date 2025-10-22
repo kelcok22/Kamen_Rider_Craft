@@ -1,21 +1,36 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
+import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+
+import java.time.LocalDate;
 
 public class PawnJyamatoEntity extends BaseHenchmenEntity {
 
 	public PawnJyamatoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
 		NAME="pawnjyamato_mob";
+
+        LocalDate localdate = LocalDate.now();
+        int day = localdate.getDayOfMonth();
+            if (localdate.getMonthValue() == 10 && day >= 24) {
+                this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Rider_Blocks.PUNKJACKOLANTERN.get()));
+            }
 	}
 
 

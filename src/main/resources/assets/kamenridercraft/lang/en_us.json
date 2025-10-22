@@ -3041,6 +3041,9 @@
   "kamenridercraft:flight_style_fuestle.form": "Form: Flight Style",
 
   "item.kamenridercraft.bloody_rose": "Bloody Rose",
+  "item.kamenridercraft.garulu_statue": "Garulu Statue",
+  "item.kamenridercraft.basshaa_statue": "Basshaa Statue",
+  "item.kamenridercraft.dogga_statue": "Dogga Statue",
 
 "item.kamenridercraft.decade_logo": "Decade Logo",
 "item.kamenridercraft.decade_camera": "Blackbird Fly",
@@ -8824,6 +8827,7 @@
 
   "block.kamenridercraft.drive_pit_logo": "Drive Pit Logo",
   "block.kamenridercraft.punkjackolantern": "PunkJack O'Lantern",
+  "block.kamenridercraft.ferbus": "Ferbus",
 
 "block.kamenridercraft.monitor": "Monitor",
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",
@@ -8857,7 +8861,7 @@
   "block.kamenridercraft.kuuga_tomb": "Gurongi Stone",
   "block.kamenridercraft.cafe_counter": "Café Counter",
   "block.kamenridercraft.whiteboard": "Whiteboard",
-
+  "block.kamenridercraft.monolith": "Monolith",
 
 "block.kamenridercraft.denliner_interior": "DenLiner Interior",
 "block.kamenridercraft.denliner_interior_darker": "DenLiner Interior (Dark)",
