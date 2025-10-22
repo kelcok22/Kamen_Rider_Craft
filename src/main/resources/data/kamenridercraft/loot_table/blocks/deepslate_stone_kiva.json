@@ -143,21 +143,6 @@
 		},
 		{
 		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:darkwakeupfuestle",
-		  "functions": [
-			{
-			  "function": "minecraft:apply_bonus",
-			  "enchantment": "minecraft:fortune",
-			  "formula": "minecraft:ore_drops"
-			},
-			{
-			  "function": "minecraft:explosion_decay"
-			}
-		  ]
-		},
-		{
-		  "type": "minecraft:item",
 		  "weight": 5,
 		  "name": "kamenridercraft:fuestlefake",
 		  "functions": [
@@ -205,66 +190,6 @@
 		  "type": "minecraft:item",
 		  "weight": 1,
 		  "name": "kamenridercraft:risingfuestle",
-		  "functions": [
-			{
-			  "function": "minecraft:apply_bonus",
-			  "enchantment": "minecraft:fortune",
-			  "formula": "minecraft:ore_drops"
-			},
-			{
-			  "function": "minecraft:explosion_decay"
-			}
-		  ]
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 2,
-		  "name": "kamenridercraft:sagafuestle",
-		  "functions": [
-			{
-			  "function": "minecraft:apply_bonus",
-			  "enchantment": "minecraft:fortune",
-			  "formula": "minecraft:ore_drops"
-			},
-			{
-			  "function": "minecraft:explosion_decay"
-			}
-		  ]
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:newwakeupfuestle",
-		  "functions": [
-			{
-			  "function": "minecraft:apply_bonus",
-			  "enchantment": "minecraft:fortune",
-			  "formula": "minecraft:ore_drops"
-			},
-			{
-			  "function": "minecraft:explosion_decay"
-			}
-		  ]
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:keyfuestle",
-		  "functions": [
-			{
-			  "function": "minecraft:apply_bonus",
-			  "enchantment": "minecraft:fortune",
-			  "formula": "minecraft:ore_drops"
-			},
-			{
-			  "function": "minecraft:explosion_decay"
-			}
-		  ]
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:kivalafuestle",
 		  "functions": [
 			{
 			  "function": "minecraft:apply_bonus",
