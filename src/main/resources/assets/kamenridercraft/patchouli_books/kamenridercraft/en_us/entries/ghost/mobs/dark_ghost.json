@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Dark Ghost",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dark_ghost",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br)Health: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 10% chance to spawn from $(l:ghost/mobs/dark_necrom)Kamen Rider Dark Necrom$(/l)$(br2)Special moves:$(li)Uses his $(l:ghost/riders/dark_ghost#napoleon)Napoleon$(/l), $(l:ghost/riders/dark_ghost#ikkyu)Ikkyu$(/l), or $(l:ghost/riders/dark_ghost#pythagoras)Pythagoras$(/l) Damashii at under 60 health$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l)$(li)1 $(l:ghost/items/ghost_eyecons#dark_ghost_eyecon)Dark Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/ghost_eyecons#napoleon_ghost_eyecon)Napoleon Ghost Eyecon$(/l) (50%)$(li)1 $(l:ghost/items/ghost_eyecons#ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l) (25%)$(li)1 $(l:ghost/items/ghost_eyecons#pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l) (25%)$(li)1 $(l:ghost/items/ghost_eyecons#darwin_ghost_eyecon)Darwin Ghost Eyecon$(/l) (when fought as $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l))"
+		}
+	]
+}

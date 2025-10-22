@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.Kiva_Rider_Items;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;

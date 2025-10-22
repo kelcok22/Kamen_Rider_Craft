@@ -95,7 +95,7 @@
         "scale": -1,
         "offset": 0.1,
         "name": "Flight Style",
-        "text": " "
+        "text": "Accessed with the $(l:kiva/items/fuestles#keyfuestle)Wake Up Fuestle (Rey/Arc)$(/l) as $(l:kiva/riders/kiva#emperor)Emperor Form$(/l)"
       },
       {
         "type": "patchouli:text",

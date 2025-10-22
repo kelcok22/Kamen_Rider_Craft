@@ -22,8 +22,6 @@ import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
 
-import static com.kelco.kamenridercraft.entities.variants.MakamouNinjaGroupVariant.*;
-
 public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
 
     private BaseHenchmenEntity boss;

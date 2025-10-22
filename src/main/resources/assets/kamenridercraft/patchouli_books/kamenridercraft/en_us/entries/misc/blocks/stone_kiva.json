@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:stone_kiva",
 			"title": " ",
-			"text": "Drops:$(li)$(l:kiva/items/fuestle)Fuestle$(/l) (65%)$(li)$(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestle (Kiva)$(/l) (9%)$(li)$(l:kiva/items/fuestles#garulufuestle)Garulu Fuestle$(/l) (7%)$(li)$(l:kiva/items/fuestles#basshaafuestle)Basshaa Fuestle$(/l) (7%)$(li)$(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) (7%)$(li)$(l:kiva/items/fuestles#tatsulot)Tatsulot$(/l) (2%)$(li)$(l:kiva/items/fuestles#kiva_says_fuestle)Kivatte Fuestle$(/l) (2%)$(li)$(l:kiva/items/fuestles#darkwakeupfuestle)Wake Up Fuestle (Dark Kiva)$(/l) (2%)"
+			"text": "Drops:$(li)$(l:kiva/items/fuestle)Fuestle$(/l) (66.7%)$(li)$(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestle (Kiva)$(/l) (8.9%)$(li)$(l:kiva/items/fuestles#garulufuestle)Garulu Fuestle$(/l) (6.7%)$(li)$(l:kiva/items/fuestles#basshaafuestle)Basshaa Fuestle$(/l) (6.7%)$(li)$(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) (6.7%)$(li)$(l:kiva/items/fuestles#tatsulot)Tatsulot$(/l) (2.2%)$(li)$(l:kiva/items/fuestles#kiva_says_fuestle)Kivatte Fuestle$(/l) (2.2%)"
 		}
 	]
 }

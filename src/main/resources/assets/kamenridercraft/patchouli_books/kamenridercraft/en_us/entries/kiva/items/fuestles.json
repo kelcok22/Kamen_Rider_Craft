@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:wakeupfuestle",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:garulufuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:basshaafuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:doggafuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sagafuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:darkwakeupfuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,20 +156,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:newwakeupfuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "keyfuestle",
 			"title": "Wake Up Fuestle (Rey/Arc)",
-			"text": "Appears in:$(li)Kamen Rider Kiva: King of the Castle in the Demon World (2008, movie)$(br2)Used to craft Rey's $(l:kiva/devices/reydriver)Rey Kivat Belt$(/l)$(br2)Used to craft Arc's $(l:kiva/devices/arcdriver)Arc Kivat Belt$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kiva: King of the Castle in the Demon World (2008, movie)$(br2)Used to craft Rey's $(l:kiva/devices/reydriver)Rey Kivat Belt$(/l)$(br2)Used to craft Arc's $(l:kiva/devices/arcdriver)Arc Kivat Belt$(/l)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#flight_style)Flight Style$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:keyfuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Drops from:$(li)$(l:kiva/mobs/arc)Kamen Rider Arc$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kivalafuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Drops from:$(li)$(l:kiva/mobs/arc)Kamen Rider Arc$(/l) (with the $(l:decade/items/decade_camera)Blackbird Fly$(/l) in your inventory)"
 		}
 	]
 }

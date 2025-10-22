@@ -75,7 +75,7 @@
         "anchor": "genm_continue",
         "link_recipe": true,
         "item": "kamenridercraft:genm_continue",
-        "text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+        "text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
       },
 		{
 			"type": "patchouli:spotlight",
@@ -756,6 +756,13 @@
 			"anchor": "jail_door",
 			"recipe": "kamenridercraft:misc/block/jail_door"
 		},
+      {
+        "type": "patchouli:spotlight",
+        "anchor": "gold_door",
+        "link_recipe": true,
+        "item": "kamenridercraft:gold_door",
+        "text": "Found outside $(l:kiva/structures/shoodoran)Shoodoran$(/l)"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "drive_pit_logo",
