@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_phone",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
 		}
 	]
 }

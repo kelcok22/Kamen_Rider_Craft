@@ -274,7 +274,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kirin_vistamp",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -287,7 +287,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:niwatori_vistamp",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -300,7 +300,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:funkorogashi_vistamp",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
