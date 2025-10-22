@@ -1064,7 +1064,17 @@ public class Ghost_Rider_Items {
             }.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_knife_damashii","gamma_superior","gamma_superior_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 70, 0, 0, 0, 1);
+                }
+            }.ChangeModel("gamma_knife_damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> YURUSEN_GAMMA_EYECON = ITEMS.register("yurusen_gamma_eyecon",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
