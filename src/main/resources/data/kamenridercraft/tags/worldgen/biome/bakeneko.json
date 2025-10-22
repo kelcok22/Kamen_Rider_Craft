@@ -1,10 +1,6 @@
 {
   "values": [
 	"minecraft:cherry_grove",
-    "minecraft:forest",
-    "minecraft:snowy_slopes",
-    "minecraft:dark_forest",
-    "minecraft:old_growth_pine_taiga",
-    "minecraft:windswept_forest"
+    "#c:is_forest"
   ]
 }

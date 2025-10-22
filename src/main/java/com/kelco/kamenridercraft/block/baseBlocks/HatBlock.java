@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.block.baseBlocks;
 
 
-import com.kelco.kamenridercraft.data.ModBlockStateProvider;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Equipable;
@@ -11,8 +10,6 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-
-import java.util.List;
 
 public class HatBlock extends BaseFacingBlock implements Equipable {
 

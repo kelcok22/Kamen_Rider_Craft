@@ -1,0 +1,21 @@
+{
+	"name": "Kiva Crater",
+	"icon": "kamenridercraft:kiva_logo",
+	"category": "kamenridercraft:kiva/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Kiva Crater",
+			"text": "Appears in:$(li)Kamen Rider Kiva: King of the Castle in the Demon World (2008, movie)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/boss_blocks#arc_boss_block)Arc Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/kiva_crater.png"
+			],
+			"title": " "
+		}
+	]
+}

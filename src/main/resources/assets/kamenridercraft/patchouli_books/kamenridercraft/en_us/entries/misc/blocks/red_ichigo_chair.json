@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:red_ichigo_chair",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)$(br2)Fun fact: The real-life version of this chair was made long before Aka-Rider existed"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)$(br2)Fun fact: The real-life version of this chair was made long before Aka-Rider existed"
 		}
 	]
 }

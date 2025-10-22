@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ichigo_chair",
 			"title": " ",
-			"text": "Obtained by opening $(l:misc/items/gashapon_capsule)Gashapon Capsules$(/l)$(br2)Traded by a journeyman $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)$(br2)Traded by a journeyman $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
 		}
 	]
 }
