@@ -18,6 +18,11 @@
             "type": "minecraft:item",
             "name": "kamenridercraft:ikkyu_ghost_eyecon",
             "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:dark_necrom_pink_ghost_eyecon",
+            "weight": 1
           }
         ]
       },
