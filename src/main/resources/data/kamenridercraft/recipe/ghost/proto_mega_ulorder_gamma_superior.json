@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "dark_necrom",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ghost_eyecon"
+	},
+	"M": {
+	  "item": "kamenridercraft:transform_gamma_eyecon"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:proto_mega_ulorder_gamma_superior"
+  }	
+}
