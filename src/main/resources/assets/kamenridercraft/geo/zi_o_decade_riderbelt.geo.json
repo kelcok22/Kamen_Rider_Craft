@@ -29,10 +29,9 @@
 					"parent": "bipedBody",
 					"pivot": [0, 24, 0],
 					"cubes": [
-						{"origin": [-3.5, 5.5, -8.09], "size": [16, 16, 10], "inflate": -5, "uv": [12, 6], "mirror": true},
-						{"origin": [-8, 5.5, -8.1], "size": [16, 16, 10], "inflate": -5, "uv": [0, 6], "mirror": true},
+						{"origin": [-5, 5.5, -7.9], "size": [16, 16, 10], "inflate": -5, "pivot": [3.5, 0, -3], "rotation": [0, 180, 0], "uv": [12, 6]},
+						{"origin": [-7.5, 5.5, -8.1], "size": [16, 16, 10], "inflate": -5, "pivot": [0, 0, -3], "rotation": [0, 180, 0], "uv": [0, 6]},
 						{"origin": [-5, 12, -3], "size": [10, 3, 6], "inflate": -0.4, "uv": [0, 0]}
-
 					]
 				},
 				{
