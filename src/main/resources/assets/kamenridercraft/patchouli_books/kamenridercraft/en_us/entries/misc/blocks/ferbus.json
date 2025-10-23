@@ -1,0 +1,19 @@
+{
+	"name": "Ferbus",
+	"icon": "kamenridercraft:ferbus",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Can be worn on the head armor slot"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ferbus",
+        "title": " ",
+        "text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
+      }
+    ]
+}

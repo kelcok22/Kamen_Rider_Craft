@@ -3,6 +3,10 @@
 	"#kamenridercraft:gear/capsems/physicam",
     "#kamenridercraft:gear/capsems/technolom",
     "#kamenridercraft:gear/capsems/esprim",
-    "#kamenridercraft:gear/capsems/paradigm"
+    "#kamenridercraft:gear/capsems/paradigm",
+    "kamenridercraft:song_capsem",
+    "kamenridercraft:sweets_capsem",
+    "kamenridercraft:charadeco_capsem",
+    "kamenridercraft:gochizo_capsem"
   ]
 }

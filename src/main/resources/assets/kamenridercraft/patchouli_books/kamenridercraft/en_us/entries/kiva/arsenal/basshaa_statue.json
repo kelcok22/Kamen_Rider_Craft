@@ -1,0 +1,19 @@
+{
+	"name": "Basshaa Statue",
+	"icon": "kamenridercraft:basshaa_statue",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to summon $(l:kiva/mobs/basshaa)Basshaa$(/l)"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:basshaa_statue",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+	]
+}

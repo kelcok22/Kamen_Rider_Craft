@@ -1,0 +1,19 @@
+{
+	"name": "Dogga Statue",
+	"icon": "kamenridercraft:dogga_statue",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to summon $(l:kiva/mobs/dogga)Dogga$(/l)"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dogga_statue",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+	]
+}

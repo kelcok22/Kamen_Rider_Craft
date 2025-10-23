@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "music_disc",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:ongekibo_rekka"
+    },
+    {
+      "item": "kamenridercraft:ongekibo_rekka"
+    },
+    {
+      "item": "kamenridercraft:ongekikan_reppuu"
+    },
+    {
+      "item": "kamenridercraft:ongekigen_retsurai"
+    },
+    {
+		"tag": "c:music_discs"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kagayaki_music_disc"
+  }
+}

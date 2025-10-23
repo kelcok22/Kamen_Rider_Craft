@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to obtain Disk Animals$(br2)Requires an iron pickaxe or better$(br2)$(b)No longer spawns naturally as of the 2025 Halloween update"
+			"text": "Mine this block to obtain Disk Animals$(br2)Requires an iron pickaxe or better$(br2)$(l)No longer spawns naturally as of the 2025 Halloween update"
 		},
 		{
 			"type": "patchouli:spotlight",
