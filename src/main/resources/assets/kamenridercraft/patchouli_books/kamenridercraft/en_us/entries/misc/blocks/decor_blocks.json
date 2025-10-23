@@ -537,7 +537,7 @@
 			"anchor": "sword_of_logos_wood2",
 			"link_recipe": true,
 			"item": "kamenridercraft:sword_of_logos_wood2",
-			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+			"text": "Block is currently unobtainable"
 		},
 		{
 			"type": "patchouli:spotlight",
