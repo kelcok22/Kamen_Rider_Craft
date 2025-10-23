@@ -137,7 +137,7 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getDouble("use_ability")!=0) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                    if (isTransformed(player) && form.allowsRiderKick() && !this.riderKicking && this.riderKickCooldown == 0) {
+                    if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !this.riderKicking && this.riderKickCooldown == 0) {
                         this.riderKicking = true;
                         break;
                     }
