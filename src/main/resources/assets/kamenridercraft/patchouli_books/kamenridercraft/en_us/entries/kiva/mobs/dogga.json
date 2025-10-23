@@ -1,0 +1,17 @@
+{
+  "name": "Dogga",
+  "icon": "kamenridercraft:kiva_logo",
+  "category": "kamenridercraft:kiva/mobs",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:dogga",
+      "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br)Health: 40"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Summoned with the $(l:kiva/arsenal/dogga_statue)Dogga Statue$(/l)$(br2)Follows the player and aids in combat"
+    }
+  ]
+}

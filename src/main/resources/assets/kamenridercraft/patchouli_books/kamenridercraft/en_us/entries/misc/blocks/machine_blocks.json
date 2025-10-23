@@ -27,7 +27,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gashapon_machine",
         "title": " ",
-        "text": "Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
+        "text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)$(br2)Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
       },
 		{
 			"type": "patchouli:text",
@@ -149,7 +149,7 @@
       {
         "type": "patchouli:text",
         "anchor": "monolith",
-        "title": "???",
+        "title": "Monolith",
         "text": "Use $(l:ghost/items/blank_ghost_eyecon)blank Ghost Eyecons$(/l) on this block to obtain Ghost Eyecons$(br2)Drops:$(li)$(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l) (13.5%)$(li)$(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)Edison Ghost Eyecon$(/l) (13.5%)$(li)$(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)Robin Ghost Eyecon$(/l) (10.8%)$(li)$(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)Newton Ghost Eyecon$(/l) (10.8%)$(li)$(l:ghost/items/ghost_eyecons#billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l) (8.1%)$(li)$(l:ghost/items/ghost_eyecons#beethoven_ghost_eyecon)Beethoven Ghost Eyecon$(/l) (8.1%)$(li)$(l:ghost/items/ghost_eyecons#benkei_ghost_eyecon)Benkei Ghost Eyecon$(/l) (8.1%)$(li)$(l:ghost/items/ghost_eyecons#goemon_ghost_eyecon)Goemon Ghost Eyecon$(/l) (5.4%)"
       },
       {
@@ -362,7 +362,7 @@
         "type": "patchouli:text",
         "anchor": "capsem_dropper",
         "title": "Capsem Dropper",
-        "text": "Use $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on this block to obtain $(l:zeztz/items/capsems)Capsems$(/l)$(br2)Drops:$(li)$(l:zeztz/items/capsems#impact_capsem)Impact Capsem$(/l) (16.4%)$(li)$(l:zeztz/items/capsems#transform_capsem)Transform Capsem$(/l) (8.2%)$(li)$(l:zeztz/items/capsems#wing_capsem)Wing Capsem$(/l) (8.2%)$(li)$(l:zeztz/items/capsems#stream_capsem)Stream Capsem$(/l) (11.5%)$(li)$(l:zeztz/items/capsems#machinery_capsem)Machinery Capsem$(/l) (8.2%)$(li)$(l:zeztz/items/capsems#projection_capsem)Projection Capsem$(/l) (8.2%)$(li)$(l:zeztz/items/capsems#recovery_capsem)Recovery Capsem$(/l) (11.5%)$(li)$(l:zeztz/items/capsems#barrier_capsem)Barrier Capsem$(/l) (8.2%)$(li)$(l:zeztz/items/capsems#wonder_capsem)Wonder Capsem$(/l) (11.5%)$(li)$(l:zeztz/items/capsems#gravity_capsem)Gravity Capsem$(/l) (8.2%)"
+        "text": "Use $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on this block to obtain $(l:zeztz/items/capsems)Capsems$(/l)$(br2)Drops:$(li)$(l:zeztz/items/capsems#impact_capsem)Impact Capsem$(/l) (16.1%)$(li)$(l:zeztz/items/capsems#transform_capsem)Transform Capsem$(/l) (8.1%)$(li)$(l:zeztz/items/capsems#wing_capsem)Wing Capsem$(/l) (8.1%)$(li)$(l:zeztz/items/capsems#stream_capsem)Stream Capsem$(/l) (11.3%)$(li)$(l:zeztz/items/capsems#machinery_capsem)Machinery Capsem$(/l) (8.1%)$(li)$(l:zeztz/items/capsems#projection_capsem)Projection Capsem$(/l) (8.1%)$(li)$(l:zeztz/items/capsems#recovery_capsem)Recovery Capsem$(/l) (11.3%)$(li)$(l:zeztz/items/capsems#barrier_capsem)Barrier Capsem$(/l) (8.1%)$(li)$(l:zeztz/items/capsems#wonder_capsem)Wonder Capsem$(/l) (11.3%)$(li)$(l:zeztz/items/capsems#gravity_capsem)Gravity Capsem$(/l) (8.1%)$(li)$(l:zeztz/items/capsems#song_capsem)Song Capsem$(/l) (1.6%)"
       },
       {
         "type": "patchouli:crafting",

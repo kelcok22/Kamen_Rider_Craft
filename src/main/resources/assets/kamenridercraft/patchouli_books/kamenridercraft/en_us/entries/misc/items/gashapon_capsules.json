@@ -20,14 +20,14 @@
         "type": "patchouli:text",
         "anchor": "halloween_gashapon_capsule",
         "title": "Halloween Gashapon Capsule",
-        "text": "Gives random items when opened$(br2)Drops:$(li)$(l:misc/blocks/punkjackolantern)PunkJack O'Lantern$(/l) (14.3%)$(li)$(l:gavv/items/gochizo#poppingummy_gochizo_halloween)Mischievous Poppingummy Gochizo$(/l) (14.3%)$(li)$(l:gavv/items/gochizo#chocozon_gochizo)Chocozon Gochizo$(/l) (14.3%)$(li)$(l:gavv/items/gochizo#doracan_gochizo)Doracan Gochizo$(/l) (14.3%)$(li)$(l:gavv/items/gochizo#pumpkin_gochizo)Pumpkin Gochizo$(/l) (14.3%)$(li)$(l:zi_o/items/ridewatches#bibiru_geiz_ridewatch)Bibiru Geiz Ridewatch$(/l) (14.3%)$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)Arrow Buckle (Clear ver)$(/l) (14.3%)"
+        "text": "Gives random items when opened$(br2)Drops:$(li)$(l:misc/blocks/punkjackolantern)PunkJack O'Lantern$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#poppingummy_gochizo_halloween)Mischievous Poppingummy Gochizo$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#chocozon_gochizo)Chocozon Gochizo$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#doracan_gochizo)Doracan Gochizo$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#pumpkin_gochizo)Pumpkin Gochizo$(/l) (11.1%)$(li)$(l:zi_o/items/ridewatches#bibiru_geiz_ridewatch)Bibiru Geiz Ridewatch$(/l) (11.1%)$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)Arrow Buckle (Clear ver)$(/l) (11.1%)$(li)$(l:misc/blocks/ferbus)Ferbus$(/l) (11.1%)$(li)$(l:zeztz/items/capsems#sweets_capsem)Zeztz Capsem (Sweets ver.)$(/l) (11.1%)"
       },
       {
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:halloween_gashapon_capsule",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using emeralds on the $(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l) during the week of October 24-31"
       }
 	]
 }

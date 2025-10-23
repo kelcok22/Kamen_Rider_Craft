@@ -193,10 +193,8 @@
         "text": "Song:$(li)HosephHoestar - Kagayaki$(br2)Based on:$(li)Toshihiko Sahashi - Kagayaki$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Hibiki (2005, TV show)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:kagayaki_music_disc",
-        "text": "Disc is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:hibiki/kagayaki_music_disc"
       },
 		{
 			"type": "patchouli:text",
@@ -449,10 +447,8 @@
         "text": "Song:$(li)HosephHoestar - VISIONS$(br2)Based on:$(li)NAQT VANE - VISIONS$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zeztz (2025, TV show)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:visions_music_disc",
-        "text": "Disc is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:zeztz/visions_music_disc"
       },
 		{
 			"type": "patchouli:text",

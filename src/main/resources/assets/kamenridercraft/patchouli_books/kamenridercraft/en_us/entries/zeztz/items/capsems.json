@@ -131,6 +131,58 @@
         "item": "kamenridercraft:gravity_capsem",
         "title": " ",
         "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "song_capsem",
+        "title": "Song Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz Theme CD & Zeztz Capsem (Singing Ver) (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:song_capsem",
+        "title": " ",
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "sweets_capsem",
+        "title": "Zeztz Capsem (Sweets ver.)",
+        "text": "Appears in:$(li)Kamen Rider Zeztz Boot (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:sweets_capsem",
+        "title": " ",
+        "text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "charadeco_capsem",
+        "title": "Zeztz Capsem (Charadeco ver.)",
+        "text": "Appears in:$(li)Kamen Rider Zeztz Charadeco Cake (2024, pastry line),"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:charadeco_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gochizo_capsem",
+        "title": "Gochizo Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz Zeztz Gochizo & Gochizo Capsem GET Campaign (2025, promo contest)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gochizo_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
       }
     ]
 }
