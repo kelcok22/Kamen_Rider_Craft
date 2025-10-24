@@ -2,7 +2,7 @@
 	"name": "Another Ex-Aid",
 	"icon": "kamenridercraft:another_ex_aid_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 22,
+	"sortnum": 23,
 	"pages": [
 		{
 			"type": "patchouli:entity",

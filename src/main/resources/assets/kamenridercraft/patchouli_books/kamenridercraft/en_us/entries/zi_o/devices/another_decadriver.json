@@ -1,0 +1,19 @@
+{
+	"name": "Another Decadriver",
+	"icon": "kamenridercraft:another_decadriver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_decade)Another Decade"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_decadriver",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Another Wizard Driver",
 	"icon": "kamenridercraft:another_wizard_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1933,7 +1933,19 @@ public class Zi_O_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DECADE_WATCH = ITEMS.register("another_decade_watch",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(), 0, "", "another_decade", "another_decadriver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DIEND_WATCH = ITEMS.register("another_diend_watch",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -2382,6 +2394,10 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> ANOTHER_FAIZ_DRIVER = ITEMS.register("another_faiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_faiz", ANOTHER_FAIZ_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> ANOTHER_DECADRIVER = ITEMS.register("another_decadriver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_decade", ANOTHER_DECADE_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_W_DRIVER = ITEMS.register("another_w_driver",

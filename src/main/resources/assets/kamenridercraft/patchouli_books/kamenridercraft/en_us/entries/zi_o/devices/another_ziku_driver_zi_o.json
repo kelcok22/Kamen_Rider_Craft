@@ -2,7 +2,7 @@
 	"name": "Another Zi-O Driver",
 	"icon": "kamenridercraft:another_ziku_driver_zi_o",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",
