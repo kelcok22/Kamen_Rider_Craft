@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "kamenridercraft:city",
+  "spawners": {
+	"type": "kamenridercraft:kasshine",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

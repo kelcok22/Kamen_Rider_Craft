@@ -736,6 +736,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.KAISER_REVERSE.get(), KaiserReverseEntity.setAttributes().build());
 		event.put(MobsCore.BIKAISER.get(), KaiserEntity.setAttributes().build());
 
+        event.put(MobsCore.KASSHINE.get(), KasshineEntity.setAttributes().build());
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
 		event.put(MobsCore.WOZ.get(), WozEntity.setAttributes().build());
         event.put(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidEntity.setAttributes().build());
@@ -893,6 +894,8 @@ public class ModCommonEvents {
 
 		//	event.register(MobsCore.LOVELY_BUGSTER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.RIDEPLAYER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+        event.register(MobsCore.KASSHINE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.TOUTOGUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.SEITOGUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);

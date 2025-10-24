@@ -975,6 +975,12 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<GingaEntity>> GINGA = MOBLIST.register("ginga",
             () -> EntityType.Builder.of(GingaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ginga_mob"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<KasshineEntity>> KASSHINE = MOBLIST.register("kasshine",
+            () -> EntityType.Builder.of(KasshineEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kasshine"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KASSHINE_SPAWN_EGG = ITEMS.register("kasshine_spawn_egg",
+            () -> new DeferredSpawnEggItem(KASSHINE, 0x573625,0x9f7b48, new Item.Properties()));
+
     public static final DeferredItem<DeferredSpawnEggItem> GINGA_SPAWN_EGG = ITEMS.register("ginga_spawn_egg",
             () -> new DeferredSpawnEggItem(GINGA, 0x5e36a3, 0x969696, new Item.Properties()));
 
