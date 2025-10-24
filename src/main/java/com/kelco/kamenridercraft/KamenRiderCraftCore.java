@@ -542,6 +542,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.KAISER_REVERSE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.BIKAISER.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.KASSHINE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidRenderer::new);

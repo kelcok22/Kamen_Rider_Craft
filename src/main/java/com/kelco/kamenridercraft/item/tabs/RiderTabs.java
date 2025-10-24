@@ -783,6 +783,7 @@ public class RiderTabs {
             event.accept(MobsCore.KAISER_REVERSE_SPAWN_EGG);
             event.accept(MobsCore.BIKAISER_SPAWN_EGG);
 
+            event.accept(MobsCore.KASSHINE_SPAWN_EGG);
             event.accept(MobsCore.GINGA_SPAWN_EGG);
             event.accept(MobsCore.WOZ_SPAWN_EGG);
 
