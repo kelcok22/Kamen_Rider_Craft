@@ -2,7 +2,7 @@
 	"name": "Another Shinobi",
 	"icon": "kamenridercraft:another_shinobi_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 25,
+	"sortnum": 26,
 	"pages": [
 		{
 			"type": "patchouli:entity",
