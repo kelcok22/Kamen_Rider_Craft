@@ -2056,7 +2056,11 @@ public class Zi_O_Rider_Items {
                     .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZI_O_II_WATCH = ITEMS.register("another_zi_o_ii_watch",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            () -> new Zi_ORidewatchItem(new Item.Properties(), 0, "_ii", "another_zi_o", "another_ziku_driver_zi_o_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
+                    .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZERO_ONE_WATCH = ITEMS.register("another_zero_one_watch",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -2434,7 +2438,7 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> ANOTHER_ZIKU_DRIVER_ZI_O = ITEMS.register("another_ziku_driver_zi_o",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_zi_o", ANOTHER_ZI_O_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model().ChangeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model().ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_SHINOBI_DRIVER = ITEMS.register("another_shinobi_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_shinobi", ANOTHER_SHINOBI_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
