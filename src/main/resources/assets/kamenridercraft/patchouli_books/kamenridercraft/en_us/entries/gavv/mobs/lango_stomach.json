@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 5% chance to spawn from a red $(l:gavv/mobs/agent)Agent$(/l)$(br2)Drops$(li)1 $(l:gavv/items/mimic_keys#lango_mimic_key)Lango's Mimic Key$(/l)$(li)1-3 $(l:gavv/items/heatpress)Hitpresses$(/l) (50%)$(li)1-2 $(l:gavv/items/granute_tooth)Granute Teeth$(/l) (50%)"
+			"text": "Has a 5% chance to spawn from a red $(l:gavv/mobs/agent)Agent$(/l)$(br2)Special moves:$(li)Capable of flight$(br2)Drops$(li)1 $(l:gavv/items/mimic_keys#lango_mimic_key)Lango's Mimic Key$(/l)$(li)1-3 $(l:gavv/items/heatpress)Hitpresses$(/l) (50%)$(li)1-2 $(l:gavv/items/granute_tooth)Granute Teeth$(/l) (50%)"
 		}
 	]
 }

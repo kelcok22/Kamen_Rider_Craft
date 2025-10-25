@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import net.minecraft.world.entity.EntityType;
@@ -19,6 +20,7 @@ public class SuperGingaOhEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Fourze_Rider_Items.FOURZE_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Fourze_Rider_Items.FOURZE_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Fourze_Rider_Items.GINGA_OH_DRIVER.get()));
+        this.moveControl = new FlyingBossControl(this, 20);
     }
     
 
@@ -26,7 +28,8 @@ public class SuperGingaOhEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.35F)
+                .add(Attributes.MOVEMENT_SPEED, 0.35F)
+                .add(Attributes.FLYING_SPEED, 0.35F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 300.0D);

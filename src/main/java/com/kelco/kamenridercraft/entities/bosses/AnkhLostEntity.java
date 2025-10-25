@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.world.entity.EntityType;
@@ -22,6 +23,7 @@ public class AnkhLostEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOO_Rider_Items.OOOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get()));
+        this.moveControl = new FlyingBossControl(this, 20);
     }
 
     
@@ -32,7 +34,8 @@ public class AnkhLostEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.2F)
+                .add(Attributes.MOVEMENT_SPEED, 0.2F)
+                .add(Attributes.FLYING_SPEED, 0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 4.0D)
         		.add(Attributes.MAX_HEALTH, 60.0D);

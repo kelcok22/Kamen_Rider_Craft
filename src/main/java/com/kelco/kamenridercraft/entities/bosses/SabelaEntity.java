@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import net.minecraft.core.particles.ParticleTypes;
@@ -42,9 +43,11 @@ public class SabelaEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && this.getHealth()<100 && source.getEntity() instanceof Player playerIn && this.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() != 0.5) {
 			playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.noroshi_muchuu"));
-    		this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
-    		this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
+            this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
+            this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.5);
+            this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
     		this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
+            this.moveControl = new FlyingBossControl(this, 20);
     	}
     }    
 
@@ -52,7 +55,8 @@ public class SabelaEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.3F)
+                .add(Attributes.MOVEMENT_SPEED, 0.3F)
+                .add(Attributes.FLYING_SPEED, 0.3F)
         		.add(Attributes.ATTACK_DAMAGE, 9.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 180.0D);

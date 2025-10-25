@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import net.minecraft.world.entity.EntityType;
@@ -20,13 +21,15 @@ public class MadRogueEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Build_Rider_Items.BUILD_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Build_Rider_Items.STEAM_BLADE.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.EVOL_DRIVER_MAD_ROGUE.get()));
+        this.moveControl = new FlyingBossControl(this, 20);
     }
 
 
 	public static AttributeSupplier.Builder setAttributes() {
 		return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
+                .add(Attributes.MOVEMENT_SPEED, 0.30F)
+                .add(Attributes.FLYING_SPEED, 0.30F)
         		.add(Attributes.ATTACK_DAMAGE, 5.0D)
         		.add(Attributes.MAX_HEALTH, 100.0D);
      }

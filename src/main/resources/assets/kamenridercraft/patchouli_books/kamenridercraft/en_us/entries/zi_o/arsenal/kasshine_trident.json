@@ -1,0 +1,19 @@
+{
+	"name": "Kasshine Trident",
+	"icon": "kamenridercraft:kasshine_trident",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used by the $(l:zi_o/mobs/kasshine)Kasshine$(/l)"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kasshine_trident",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:zi_o/mobs/kasshine)Kasshine$(/l)'s equipment"
+      }
+	]
+}

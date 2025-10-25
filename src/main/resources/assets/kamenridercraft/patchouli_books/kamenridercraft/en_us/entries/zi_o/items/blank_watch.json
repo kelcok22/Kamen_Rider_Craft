@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:zi_o/blank_watch",
-			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/kasshine)Kasshine$(/l)$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		}
 	]
 }

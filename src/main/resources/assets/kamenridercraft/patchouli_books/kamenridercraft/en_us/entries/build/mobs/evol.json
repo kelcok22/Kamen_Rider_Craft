@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Summoned from an $(l:misc/blocks/boss_blocks#evol_boss_block)Evol Boss Block$(/l)$(br2)Special moves:$(li)Uses his $(l:build/riders/evol#black_hole)Black Hole$(/l) form at under 100 health if you have the $(l:misc/blocks/machine_blocks#pandora_box)Pandora Box$(/l) in your inventory$(li)Transforms into $(l:build/riders/evol#phantom_state)Evolto Phantom State$(/l) at under 50 health if you have the $(l:misc/blocks/last_pandora_panel_black)Last Pandora Panel (Black)$(/l) in your inventory$(br2)Drops on next page"
+			"text": "Summoned from an $(l:misc/blocks/boss_blocks#evol_boss_block)Evol Boss Block$(/l)$(br2)Special moves:$(li)Uses his $(l:build/riders/evol#black_hole)Black Hole$(/l) form at under 100 health if you have the $(l:misc/blocks/machine_blocks#pandora_box)Pandora Box$(/l) in your inventory$(li)Transforms into $(l:build/riders/evol#phantom_state)Evolto Phantom State$(/l) at under 50 health if you have the $(l:misc/blocks/last_pandora_panel_black)Last Pandora Panel (Black)$(/l) in your inventory$(li)Capable of flight while in Black Hole or Phantom State form$(br2)Drops on next page"
 		},
 		{
 			"type": "patchouli:text",
