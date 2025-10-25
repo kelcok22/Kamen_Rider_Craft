@@ -9,7 +9,6 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
 
 public class BakenekoEntity extends BaseHenchmenEntity {
-	private BaseHenchmenEntity boss;
 
     public BakenekoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -19,7 +18,7 @@ public class BakenekoEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
 		if (this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-                boss = MobsCore.MIDAREDOUJI.get().create(this.level());
+                BaseHenchmenEntity boss = MobsCore.MIDAREDOUJI.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);

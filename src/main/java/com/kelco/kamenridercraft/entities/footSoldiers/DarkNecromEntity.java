@@ -21,9 +21,7 @@ import javax.annotation.Nullable;
 
 public class DarkNecromEntity extends BaseHenchmenEntity {
 
-	private BaseHenchmenEntity boss;
-
-	public DarkNecromEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+    public DarkNecromEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
 		NAME="dark_necrom";
 	    this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get()));
@@ -38,7 +36,7 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 
-						boss = MobsCore.DARK_GHOST.get().create(this.level());
+                BaseHenchmenEntity boss = MobsCore.DARK_GHOST.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_ghost"));
 						}

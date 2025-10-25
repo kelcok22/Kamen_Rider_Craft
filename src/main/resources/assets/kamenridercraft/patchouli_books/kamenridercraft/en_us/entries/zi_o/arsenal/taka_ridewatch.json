@@ -2,7 +2,7 @@
   "name": "Taka Ridewatch",
   "icon": "kamenridercraft:taka_ridewatch",
   "category": "kamenridercraft:zi_o/arsenal",
-  "sortnum": 15,
+  "sortnum": 16,
   "pages": [
     {
       "type": "patchouli:text",

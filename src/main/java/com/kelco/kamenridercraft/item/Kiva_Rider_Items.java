@@ -10,7 +10,6 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.kiva.ArmMonsterStatueItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.item.zi_o.RideGadgetItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import io.netty.buffer.Unpooled;

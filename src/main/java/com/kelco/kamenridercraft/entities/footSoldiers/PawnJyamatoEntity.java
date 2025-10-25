@@ -2,11 +2,8 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -15,7 +12,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
 import java.time.LocalDate;

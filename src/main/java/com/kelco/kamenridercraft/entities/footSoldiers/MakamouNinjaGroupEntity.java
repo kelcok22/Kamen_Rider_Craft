@@ -24,8 +24,6 @@ import javax.annotation.Nullable;
 
 public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
 
-    private BaseHenchmenEntity boss;
-
     private static final EntityDataAccessor<Integer> VARIANT =
         SynchedEntityData.defineId(MakamouNinjaGroupEntity.class, EntityDataSerializers.INT);
 
@@ -76,7 +74,7 @@ public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
 
     public void remove(RemovalReason p_149847_) {
         if (this.isDeadOrDying() && this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-            boss = MobsCore.KABUKI.get().create(this.level());
+            BaseHenchmenEntity boss = MobsCore.KABUKI.get().create(this.level());
             if (boss != null) {
                 if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                     playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.kabuki"));

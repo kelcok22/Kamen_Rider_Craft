@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Health: 70$(br2)Summoned with the $(l:saber/items/book_of_ruin)Book of Ruin$(/l)$(br2)Special moves:$(li)Gains Resistance IV unless you have the $(l:saber/items/wonder_ride_books#emotional_dragon_wonder_ride_book)Emotional Dragon Wonder Ride Book$(/l) in your inventory$(li)Uses his $(l:saber/riders/falchion#amazing_siren)Amazing Siren$(/l) form if you have the $(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)Wonder World Story of Raimeiken Ikazuchi Wonder Ride Book$(/l) in your inventory$(br2)Drops on next page"
+			"text": "Health: 70$(br2)Summoned with the $(l:saber/items/book_of_ruin)Book of Ruin$(/l)$(br2)Special moves:$(li)Gains Resistance IV unless you have the $(l:saber/items/wonder_ride_books#emotional_dragon_wonder_ride_book)Emotional Dragon Wonder Ride Book$(/l) in your inventory$(li)Uses his $(l:saber/riders/falchion#amazing_siren)Amazing Siren$(/l) form if you have the $(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)Wonder World Story of Raimeiken Ikazuchi Wonder Ride Book$(/l) in your inventory$(li)Capable of flight while in Eternal Phoenix form$(br2)Drops on next page"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#hokuto_trio_boss_block)Hokuto Trio Boss Block$(/l)$(br2)Drops$(li)2-3 $(l:build/items/smash_bottle)Smash Bottles$(/l)$(li)1 $(l:build/items/fullbottles#lost_kuwagata_full_bottle)Lost Fukuro Fullbottle$(/l) (50%)$(li)1 $(l:build/items/fullbottles#black_lost_kuwagata_full_bottle)Lost Fukuro Fullbottle$(/l) (50%)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#hokuto_trio_boss_block)Hokuto Trio Boss Block$(/l)$(br2)Special moves:$(li)Capable of flight$(br2)Drops$(li)2-3 $(l:build/items/smash_bottle)Smash Bottles$(/l)$(li)1 $(l:build/items/fullbottles#lost_kuwagata_full_bottle)Lost Fukuro Fullbottle$(/l) (50%)$(li)1 $(l:build/items/fullbottles#black_lost_kuwagata_full_bottle)Lost Fukuro Fullbottle$(/l) (50%)"
 		}
 	]
 }

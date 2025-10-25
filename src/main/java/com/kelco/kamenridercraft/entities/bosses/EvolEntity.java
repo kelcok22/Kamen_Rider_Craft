@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
@@ -37,15 +38,19 @@ public class EvolEntity extends BaseHenchmenEntity {
             && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
 		    	this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
+		    	this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.5);
 		    	this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
 		    	this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
 		    	RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER.get(), 1);
+                this.moveControl = new FlyingBossControl(this, 20);
     	    } else if(this.getHealth()<50 && playerIn.getInventory().countItem(Build_Rider_Items.LAST_PANDORA_PANEL_BLACK.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evolto"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
+                this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(1);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(15.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
                 RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get(), 1);
+                this.moveControl = new FlyingBossControl(this, 20);
             }
         }
     }
@@ -55,7 +60,8 @@ public class EvolEntity extends BaseHenchmenEntity {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.3F)
+                .add(Attributes.MOVEMENT_SPEED, 0.3F)
+                .add(Attributes.FLYING_SPEED, 0.3F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 200.0D);

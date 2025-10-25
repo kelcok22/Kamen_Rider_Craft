@@ -2,7 +2,7 @@
   "name": "Kodama Ridewatch",
   "icon": "kamenridercraft:kodama_ridewatch",
   "category": "kamenridercraft:zi_o/arsenal",
-  "sortnum": 14,
+  "sortnum": 15,
   "pages": [
     {
       "type": "patchouli:text",

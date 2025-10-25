@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawns when $(l:ooo/mobs/ankh_mob)Ankh$(/l) is right-clicked with a $(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l)$(br2)Drops$(li)5-7 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_ankh)Greeed Belt (Ankh)$(/l)$(li)1 $(l:ooo/items/core_medals#taka_ankh_medal)Cracked Taka Core Medal$(/l)$(li)1 $(l:ooo/items/core_medals#taka_medal)Taka Medal$(/l) (20%)$(li)1 $(l:ooo/items/core_medals#kujaku_medal)Kujaku Medal$(/l) (40%)$(li)1 $(l:ooo/items/core_medals#condor_medal)Condor Medal$(/l) (40%)"
+			"text": "Spawns when $(l:ooo/mobs/ankh_mob)Ankh$(/l) is right-clicked with a $(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l)$(br2)Special moves:$(li)Capable of flight$(br2)Drops$(li)5-7 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_ankh)Greeed Belt (Ankh)$(/l)$(li)1 $(l:ooo/items/core_medals#taka_ankh_medal)Cracked Taka Core Medal$(/l)$(li)1 $(l:ooo/items/core_medals#taka_medal)Taka Medal$(/l) (20%)$(li)1 $(l:ooo/items/core_medals#kujaku_medal)Kujaku Medal$(/l) (40%)$(li)1 $(l:ooo/items/core_medals#condor_medal)Condor Medal$(/l) (40%)"
 		}
 	]
 }

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 3.3% chance to spawn from a $(l:wizard/mobs/ghouls)Ghoul$(/l)$(br2)Drops$(li)4-5 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)1-2 $(l:wizard/items/magic_stones#wizardgem_red)Red Magic Stones$(/l) (50%)$(li)1-2 $(l:wizard/items/magic_stones#wizardgem_blue)Blue Magic Stones$(/l) (50%)$(li)1 $(l:wizard/items/wizard_rings#dance_ring)Dance Wizard Ring$(/l) (20%)"
+			"text": "Has a 3.3% chance to spawn from a $(l:wizard/mobs/ghouls)Ghoul$(/l)$(br2)Special moves:$(li)Capable of flight$(br2)Drops$(li)4-5 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)1-2 $(l:wizard/items/magic_stones#wizardgem_red)Red Magic Stones$(/l) (50%)$(li)1-2 $(l:wizard/items/magic_stones#wizardgem_blue)Blue Magic Stones$(/l) (50%)$(li)1 $(l:wizard/items/wizard_rings#dance_ring)Dance Wizard Ring$(/l) (20%)"
 		}
 	]
 }

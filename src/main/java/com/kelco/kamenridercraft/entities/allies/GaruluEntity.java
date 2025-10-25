@@ -1,18 +1,12 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.NeutralMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
