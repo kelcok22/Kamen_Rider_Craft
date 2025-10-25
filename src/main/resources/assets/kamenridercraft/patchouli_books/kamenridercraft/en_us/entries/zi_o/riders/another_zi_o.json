@@ -6,16 +6,31 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_ziku_driver_zi_o\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+          "anchor": "zi_o",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_zi_o_watch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": ""
+			"text": "Accessed with the $(l:zi_o/items/anotherwatches#another_zi_o_watch)Another Zi-O Watch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Another Zi-O",
 			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/another_ziku_driver_zi_o)Another Zi-O Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength"
-		}
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "zi_o_ii",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_zi_o_ii_watch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": " ",
+        "text": "Accessed with the $(l:zi_o/items/anotherwatches#another_zi_o_ii_watch)Another Zi-O II Watch$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Another Zi-O II",
+        "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/another_ziku_driver_zi_o)Another Zi-O Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II$(li)Strength II"
+      }
 	]
 }

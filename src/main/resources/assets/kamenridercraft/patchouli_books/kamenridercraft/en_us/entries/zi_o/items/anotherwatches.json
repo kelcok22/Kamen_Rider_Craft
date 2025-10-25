@@ -279,7 +279,7 @@
 			"type": "patchouli:text",
 			"anchor": "another_zi_o_watch",
 			"title": "Another Zi-O Watch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Another Zi-O's $(l:zi_o/riders/another_zi_o#zi_o)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -292,7 +292,7 @@
 			"type": "patchouli:text",
 			"anchor": "another_zi_o_ii_watch",
 			"title": "Another Zi-O II Watch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Another Zi-O's $(l:zi_o/riders/another_zi_o#zi_o_ii)Another Zi-O II$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
