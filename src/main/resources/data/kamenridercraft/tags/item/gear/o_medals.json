@@ -2,6 +2,7 @@
   "values": [
 	"kamenridercraft:cellmedal",
 	"#kamenridercraft:gear/birth_cell_medals",
-	"#kamenridercraft:gear/core_medals"
+	"#kamenridercraft:gear/core_medals",
+    "kamenridercraft:cellmedal"
   ]
 }
