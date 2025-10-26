@@ -1054,7 +1054,7 @@ public class Gotchard_Rider_Items {
             () -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), TWILIGHT_THE_SUN_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Twilight).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> METAL_MACHWHEEL_RIDE_CHEMY_CARD = ITEMS.register("metal_machwheel_ride_chemy_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_kurogane","valvarad_rider","valvaradriver_belt_k",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_kurogane","valvarad_rider","valvaradriver_belt_k",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
