@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-22T10:07:20.6407454	Item Models: kamenridercraft
+// 1.21.1	2025-10-27T01:33:03.825873	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -531,6 +531,8 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/trid
 19d7ac204ade8508ab6f0c2ebb34a09a6477cb94 assets/kamenridercraft/models/item/tsupparihebi_ride_chemy_card.json
 473e54a55d9729ee2d218164b5267afca7ffefdb assets/kamenridercraft/models/item/tsurigummy_gochizo.json
 1bada45d21a5e95bb6dbaaa7bd34961fbea212ce assets/kamenridercraft/models/item/tulip_hopper.json
+4538de5996766bb40a1c11fbfc0f319ed719dce3 assets/kamenridercraft/models/item/twilight_the_sun_ride_chemy_card.json
+1301a169652af9e0f700a7fd61927d60b814925c assets/kamenridercraft/models/item/twilight_unicon_ride_chemy_card.json
 9d048d1ad2865a84eccdba82dc71bce074c7ece6 assets/kamenridercraft/models/item/ultimate_half_typhoon.json
 a909920125a282d03b532cebbfb875be7ebcaafe assets/kamenridercraft/models/item/ultimate_half_typhoon_core.json
 340bedc2ef36256a06b956e78bc69935ea5796ac assets/kamenridercraft/models/item/ultimate_revi_ride_chemy_card.json

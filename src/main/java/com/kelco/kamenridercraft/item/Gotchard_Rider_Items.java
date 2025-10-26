@@ -66,6 +66,7 @@ public class Gotchard_Rider_Items {
 
 	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<>();
 	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<>();
+    public static List<Item> NEED_ITEM_Twilight= new ArrayList<>();
 
 	public static List<Item> NEED_ITEM_Valvarad= new ArrayList<>();
 	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<>();
@@ -105,7 +106,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -114,7 +115,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SteamHopper).AddToList(NEED_ITEM_SteamHopper)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -132,7 +133,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SmaHotaru).AddToList(NEED_ITEM_SmaHotaru)
 			.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -151,7 +152,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BulletChoucho).AddToList(NEED_ITEM_BulletChoucho)
 			.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -174,7 +175,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_AntWrestler).AddToList(NEED_ITEM_AntWrestler)
 					.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -207,7 +208,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_OdoriMantis).AddToList(NEED_ITEM_OdoriMantis)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
@@ -233,7 +234,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_DokkiriShovel).AddToList(NEED_ITEM_DokkiriShovel).AddToList(ChemyRiserItem.Job_CHEMY)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -256,7 +257,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_MadPilets).AddToList(NEED_ITEM_MadPilets).AddToList(ChemyRiserItem.Job_CHEMY)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
@@ -280,7 +281,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_EnergyMaru).AddToList(NEED_ITEM_EnergyMaru).AddToList(ChemyRiserItem.Job_CHEMY)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.ALL_CHEMY).has_basic_model());
@@ -304,10 +305,10 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CHERRY_LEAVES,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_AppareSkebow).AddToList(ChemyRiserItem.Job_CHEMY).AddToList(NEED_ITEM_AppareSkebow)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -342,7 +343,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_HiikesuRose).AddToList(NEED_ITEM_HiikesuRose).AddToList(ChemyRiserItem.ALL_CHEMY)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -362,7 +363,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddNeedItemList(NEED_ITEM_AngeCopter).has_basic_model().model_has_different_name("gekiocopter_ride_chemy_card"));
 
@@ -393,7 +394,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_VenomMariner).AddToList(NEED_ITEM_VenomMariner).AddToList(ChemyRiserItem.ALL_CHEMY)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -426,7 +427,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddNeedItemList(NEED_ITEM_Valvarad).AddToList(NEED_ITEM_Valvarad).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
     
@@ -445,7 +446,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
 					.AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_GoldMechanichor).AddToList(NEED_ITEM_GoldMechanichor)
@@ -465,7 +466,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addAlternative(DOKKIRIMAJIN_RIDE_CHEMY_CARD.get()).AddNeedItemList(NEED_ITEM_OrochiShovel)
                     .IsGlowing().has_basic_model().model_has_different_name("gutsshovel_ride_chemy_card"));
@@ -526,7 +527,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).hasFlyingWings(null).AddNeedItemList(NEED_ITEM_NeedleHawk).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(NEED_ITEM_NeedleHawk)
 					.AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -551,7 +552,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BurningGorilla).AddToList(NEED_ITEM_BurningGorilla)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -576,7 +577,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
 					.AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_LightningJungle).AddToList(NEED_ITEM_LightningJungle)
@@ -709,7 +710,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -764,7 +765,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -793,7 +794,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddNeedItemList(NEED_ITEM_MoonCerberus).AddToList(NEED_ITEM_MoonCerberus).AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
@@ -814,7 +815,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.AddNeedItemList(NEED_ITEM_MarsPhoenix)
                     .IsGlowing().AddCompatibilityList(Gotchards).AddToList(NEED_ITEM_MarsPhoenix).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Cosmic_CHEMY)
@@ -837,7 +838,7 @@ public class Gotchard_Rider_Items {
                              player.getZ(), 50, 0, 0, 0, 1);
                      ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                              player.getX(), player.getY()+1,
-                             player.getZ(), 300, 0, 0, 0, 1);
+                             player.getZ(), 100, 0, 0, 0, 1);
                  }
              }.IsGlowing().AddNeedItemList(NEED_ITEM_SunUnicorn).AddToList(NEED_ITEM_SunUnicorn).AddToList(ChemyRiserItem.ALL_CHEMY)
 					 .AddToList(ChemyRiserItem.Cosmic_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -862,7 +863,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
@@ -938,7 +939,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddNeedItemList(NEED_ITEM_Rainbow).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
@@ -963,7 +964,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddToList(NEED_ITEM_Platina).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
@@ -986,7 +987,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_Platina).AddToList(NEED_ITEM_Platina).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
@@ -1007,7 +1008,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1016,14 +1017,42 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddNeedItemList(NEED_ITEM_Ultima).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> STEAMLINER_RIDE_CHEMY_CARD_ULTIMA = ITEMS.register("steamliner_ride_chemy_card_ultima",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), HOPPER1_RIDE_CHEMY_CARD_ULTIMA.get()).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
-	public static final DeferredItem<Item> X_ASSEMBLE_RIDE_CHEMY_CARD = ITEMS.register("x_assemble_ride_chemy_card",
+    public static final DeferredItem<Item> TWILIGHT_THE_SUN_RIDE_CHEMY_CARD = ITEMS.register("twilight_the_sun_ride_chemy_card",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_twilight","majade","alchemisdriver_belt_t",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 400, 2,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_Twilight).AddToList(NEED_ITEM_Twilight).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> TWILIGHT_UNICON_RIDE_CHEMY_CARD = ITEMS.register("twilight_unicon_ride_chemy_card",
+            () -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), TWILIGHT_THE_SUN_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Twilight).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> X_ASSEMBLE_RIDE_CHEMY_CARD = ITEMS.register("x_assemble_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_star","gotchard","gotchardriver_belt_star",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -1050,7 +1079,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -1077,7 +1106,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().addNeedForm(NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).AddNeedItemList(NEED_ITEM_Miracle).AddToList(NEED_ITEM_Miracle).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
@@ -1100,7 +1129,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.AddNeedItemList(NEED_ITEM_MarsPhoenix2)
                     .IsGlowing().AddCompatibilityList(Gotchards).AddToList(NEED_ITEM_MarsPhoenix2).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -1118,7 +1147,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1127,7 +1156,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.AddNeedItemList(NEED_ITEM_SteamHopper_daybreak)
                     .IsGlowing().AddToList(ChemyRiserItem.Daybreak_CHEMY).AddToList(NEED_ITEM_SteamHopper_daybreak).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -1154,7 +1183,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.AddNeedItemList(NEED_ITEM_Shining_DB)
             .IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").AddToList(NEED_ITEM_Shining_DB).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -1178,7 +1207,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1204,7 +1233,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1224,7 +1253,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1248,7 +1277,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1281,7 +1310,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -1309,7 +1338,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().ResetFormToBase().AddToList(ChemyRiserItem.Legend_CHEMY,10).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
@@ -1335,7 +1364,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
@@ -1378,7 +1407,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_ExceedMighty).has_basic_model().model_has_different_name("kuuga_ride_chemy_card"));
 
@@ -1485,7 +1514,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_CycloneTaToBa).has_basic_model().model_has_different_name("w_ride_chemy_card"));
 
@@ -1524,7 +1553,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_FullFullRocket).has_basic_model().model_has_different_name("fourze_ride_chemy_card"));
 
@@ -2035,7 +2064,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -2044,10 +2073,10 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").IsGlowing().model_has_different_name("gotchar_igniter").has_basic_model());
 
@@ -2062,7 +2091,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -2071,10 +2100,10 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addAlternative(GOTCHAR_IGNITER_DB.get()).addNeedForm(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
@@ -2089,7 +2118,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -2098,10 +2127,10 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addAlternative(GOTCHAR_IGNITER_EM.get()).addNeedForm(ANTROOPER_RIDE_CHEMY_CARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
@@ -2116,7 +2145,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -2125,10 +2154,10 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addAlternative(GOTCHAR_IGNITER_AW.get()).addNeedForm(APPAREBUSHIDO_RIDE_CHEMY_CARD.get(),1).IsGlowing().ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
@@ -2143,7 +2172,7 @@ public class Gotchard_Rider_Items {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -2152,10 +2181,10 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
-                            player.getZ(), 300, 0, 0, 0, 1);
+                            player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addAlternative(GOTCHAR_IGNITER_AS.get()).addNeedForm(HOPPER1_RIDE_CHEMY_CARD.get(),1).IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
