@@ -354,7 +354,8 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> RIDER_TICKET_PRETTY_DEN_O = ITEMS.register("rider_ticket_pretty_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","pretty_den_o","den_o_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.SMALL, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
