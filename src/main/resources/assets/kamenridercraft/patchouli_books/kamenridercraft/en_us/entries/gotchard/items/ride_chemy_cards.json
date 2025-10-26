@@ -1411,6 +1411,32 @@
         "title": " ",
         "text": "Item is currently unobtainable"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "metal_machwheel_ride_chemy_card",
+        "title": "Metal Machwheel Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#kurogane)Valvarad Kurogane$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:metal_machwheel_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "metal_daiohni_ride_chemy_card",
+        "title": "Metal Daiohni Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#kurogane)Valvarad Kurogane$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:metal_daiohni_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "x_assemble_ride_chemy_card",
