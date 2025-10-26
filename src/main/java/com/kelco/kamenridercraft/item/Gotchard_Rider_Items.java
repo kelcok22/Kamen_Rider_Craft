@@ -1029,7 +1029,7 @@ public class Gotchard_Rider_Items {
                     new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.REGENERATION, 400, 2,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
