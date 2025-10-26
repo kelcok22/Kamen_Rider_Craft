@@ -1050,7 +1050,7 @@ public class Ghost_Rider_Items {
                 }
             }.ChangeModel("damashii.geo.json").ChangeSlot(2));
 
-	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
+    public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gamma_superior","gamma_superior_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
@@ -1063,7 +1063,18 @@ public class Ghost_Rider_Items {
                 }
             }.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
-	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
+    public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON_CAMILLE = ITEMS.register("transform_gamma_eyecon_camille",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_superior_damashii_gold","gamma_superior","gamma_superior_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 30, 0, 0, 0, 1);
+                }
+            }.ChangeModel("damashii.geo.json").ChangeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon").AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+    public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_knife_damashii","gamma_superior","gamma_superior_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)

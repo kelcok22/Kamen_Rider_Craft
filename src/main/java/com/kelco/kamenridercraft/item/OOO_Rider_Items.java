@@ -1159,7 +1159,8 @@ public class OOO_Rider_Items {
 
 
 			public static final DeferredItem<Item> OOODRIVER = ITEMS.register("ooodriver",
-					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS ,
+                            new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
 					{
 						@Override
 						public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
@@ -1178,8 +1179,7 @@ public class OOO_Rider_Items {
 								}
 							});
 						}
-					}
-					.Add_Extra_Base_Form_Items(TORA_MEDAL,BATTA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
+					}.Has_Inventory_Gui().Add_Extra_Base_Form_Items(TORA_MEDAL,BATTA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
 
 
 			public static final DeferredItem<Item> BIRTH_DRIVER = ITEMS.register("birth_driver",
