@@ -434,7 +434,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.ChangeSlot(2).SetOffhandSlot(3).ChangeModel("geats_rider_zombie.geo.json").AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NINJA_RAISE_BUCKLE = ITEMS.register("ninja_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ninja","geats","desire_driver_belt_geats",
@@ -575,7 +575,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers).AddToList(FeverSlotItem.FEVER_SLOT));
+			}.ChangeSlot(2).SetOffhandSlot(3).ChangeModel("geats_rider_zombie.geo.json").AddCompatibilityList(BaseDesireDriverUsers).AddToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> NINJA_RAISE_BUCKLE_FEVER = ITEMS.register("ninja_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ninja_slot","geats","desire_driver_belt_geats",

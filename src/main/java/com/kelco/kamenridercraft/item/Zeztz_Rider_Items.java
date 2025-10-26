@@ -88,8 +88,8 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> MACHINERY_CAPSEM = ITEMS.register("machinery_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_machinery","zeztz","zeztz_driver_belt_technolom_machinery",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.DRILL, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -101,8 +101,7 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> PROJECTION_CAPSEM = ITEMS.register("projection_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_projection","zeztz","zeztz_driver_belt_technolom_projection",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -125,8 +124,7 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_esprim_recovery","zeztz","zeztz_driver_belt_esprim_recovery",
-                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                        new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                        new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
                         public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                                 super.OnTransformation(itemstack, player);
@@ -138,8 +136,7 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> BARRIER_CAPSEM = ITEMS.register("barrier_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -164,8 +161,7 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> GRAVITY_CAPSEM = ITEMS.register("gravity_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.LOW_GRAVITY, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
