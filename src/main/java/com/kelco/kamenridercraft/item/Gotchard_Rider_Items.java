@@ -71,6 +71,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_Valvarad= new ArrayList<>();
 	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<>();
 	public static List<Item> NEED_ITEM_AngeCopter= new ArrayList<>();
+    public static List<Item> NEED_ITEM_Kurogane= new ArrayList<>();
 
 	public static List<Item> NEED_ITEM_TypeThree= new ArrayList<>();
 
@@ -1051,6 +1052,29 @@ public class Gotchard_Rider_Items {
 
     public static final DeferredItem<Item> TWILIGHT_UNICON_RIDE_CHEMY_CARD = ITEMS.register("twilight_unicon_ride_chemy_card",
             () -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), TWILIGHT_THE_SUN_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Twilight).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> METAL_MACHWHEEL_RIDE_CHEMY_CARD = ITEMS.register("metal_machwheel_ride_chemy_card",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_kurogane","valvarad_rider","valvaradriver_belt_k",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_Kurogane).AddToList(NEED_ITEM_Kurogane).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> METAL_DAIOHNI_RIDE_CHEMY_CARD = ITEMS.register("metal_daiohni_ride_chemy_card",
+            () -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), METAL_MACHWHEEL_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Kurogane).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> X_ASSEMBLE_RIDE_CHEMY_CARD = ITEMS.register("x_assemble_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_star","gotchard","gotchardriver_belt_star",
