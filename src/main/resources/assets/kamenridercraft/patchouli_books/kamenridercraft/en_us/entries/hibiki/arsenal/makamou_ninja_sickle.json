@@ -2,7 +2,7 @@
 	"name": "Makamou Ningun no Kama",
 	"icon": "kamenridercraft:makamou_ninja_sickle",
 	"category": "kamenridercraft:hibiki/arsenal",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

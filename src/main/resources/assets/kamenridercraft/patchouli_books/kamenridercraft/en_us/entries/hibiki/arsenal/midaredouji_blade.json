@@ -2,7 +2,7 @@
 	"name": "Midaredouji no Hamono",
 	"icon": "kamenridercraft:midaredouji_blade",
 	"category": "kamenridercraft:hibiki/arsenal",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:hibiki/habatakidriver"
+      "kamenridercraft:hibiki/habatakidriver",
+      "kamenridercraft:hibiki/ongekiflute_rekku"
 	]
   },
   "sends_telemetry_event": false

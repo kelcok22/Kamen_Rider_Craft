@@ -5,15 +5,18 @@
   "pattern": [
 	"XMX",
 	"XOX",
-	"XXX"
+	"XDX"
   ],
   "key": {
 	"X": {
 	  "item": "kamenridercraft:blank_gochizo"
 	},
-	"M": {
-	  "item": "kamenridercraft:chocodon_gochizo"
-	},
+    "M": {
+      "item": "kamenridercraft:chocodon_gochizo"
+    },
+    "D": {
+      "item": "kamenridercraft:chocodan_gochizo"
+    },
 	  "O": {
 		  "item": "kamenridercraft:base_sword"
 	  }

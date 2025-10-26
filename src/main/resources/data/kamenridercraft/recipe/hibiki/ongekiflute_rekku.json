@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "habataki",
+  "pattern": [
+	"XRX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:oni_ore"
+	},
+	"M": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"R": {
+	  "item": "kamenridercraft:henshin_onsa_habataki"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:ongekiflute_rekku"
+  }	
+}

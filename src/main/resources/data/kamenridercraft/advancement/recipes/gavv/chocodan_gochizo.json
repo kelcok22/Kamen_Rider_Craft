@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:gavv/chocodangun"
+      "kamenridercraft:gavv/chocodangun",
+      "kamenridercraft:gavv/valenbuster"
 	]
   },
   "sends_telemetry_event": false

@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "chocodan_gochizo",
 			"title": "Chocodan Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocodan)Chocodan Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Valen's $(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocodan)Chocodan Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
