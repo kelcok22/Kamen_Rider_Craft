@@ -1218,20 +1218,96 @@ public class OOO_Rider_Items {
 							.ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> ANCIENT_OOODRIVER = ITEMS.register("ancient_ooodriver",
-					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo_ancient",ANCIENT_TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.Add_Extra_Base_Form_Items(ANCIENT_TORA_MEDAL,ANCIENT_BATTA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo_ancient",ANCIENT_TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+					{
+						@Override
+						public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+							player.openMenu(new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.translatable("o_medal_nest_gui.text");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+									packetBuffer.writeBlockPos(player.blockPosition());
+									packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+									return new OMedalNestGuiMenu(id, inventory, packetBuffer,itemstack);
+								}
+							});
+						}
+					}
+					.Has_Inventory_Gui().Add_Extra_Base_Form_Items(ANCIENT_TORA_MEDAL,ANCIENT_BATTA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GODA_OOODRIVER = ITEMS.register("goda_ooodriver",
-					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"goda",MUKADE_GODA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.Add_Extra_Base_Form_Items(HACHI_GODA_MEDAL,ARI_GODA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"goda",MUKADE_GODA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+					{
+						@Override
+						public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+							player.openMenu(new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.translatable("o_medal_nest_gui.text");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+									packetBuffer.writeBlockPos(player.blockPosition());
+									packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+									return new OMedalNestGuiMenu(id, inventory, packetBuffer,itemstack);
+								}
+							});
+						}
+					}
+					.Has_Inventory_Gui().Add_Extra_Base_Form_Items(HACHI_GODA_MEDAL,ARI_GODA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> SHOCKER_OOODRIVER = ITEMS.register("shocker_ooodriver",
-					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"shocker_ooo",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"shocker_ooo",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+					{
+						@Override
+						public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+							player.openMenu(new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.translatable("o_medal_nest_gui.text");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+									packetBuffer.writeBlockPos(player.blockPosition());
+									packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+									return new OMedalNestGuiMenu(id, inventory, packetBuffer,itemstack);
+								}
+							});
+						}
+					}
+					.Has_Inventory_Gui().Add_Extra_Base_Form_Items(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOOOOODRIVER = ITEMS.register("oooooodriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oooooo",HEXA_OOOOOO ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oooooo",HEXA_OOOOOO ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+			{
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("o_medal_nest_gui.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new OMedalNestGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					});
+				}
+			}
+			.Has_Inventory_Gui().Dont_show_belt_form_info().ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
