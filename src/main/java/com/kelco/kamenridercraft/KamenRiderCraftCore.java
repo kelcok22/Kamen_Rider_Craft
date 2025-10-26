@@ -724,6 +724,7 @@ public class KamenRiderCraftCore
             event.register(ModMenus.NEO_DIENDRIVER_GUI.get(), NeoDiendriverGuiScreen::new);
             event.register(ModMenus.T2_MEMORY_CASE_GUI.get(), T2MemoryCaseGuiScreen::new);
             event.register(ModMenus.O_MEDAL_HOLDER_GUI.get(), OMedalHolderGuiScreen::new);
+            event.register(ModMenus.O_MEDAL_NEST_GUI.get(), OMedalNestGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_CASE_GUI.get(), AstroswitchCaseGuiScreen::new);
             event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
             event.register(ModMenus.RING_HOLDER_GUI_BEAST.get(), RingHolderGuiScreenBeast::new);

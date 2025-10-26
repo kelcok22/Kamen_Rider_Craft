@@ -10,18 +10,30 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ooo.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.OMedalNestGuiMenu;
+import io.netty.buffer.Unpooled;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -1147,7 +1159,26 @@ public class OOO_Rider_Items {
 
 
 			public static final DeferredItem<Item> OOODRIVER = ITEMS.register("ooodriver",
-					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
+					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+					{
+						@Override
+						public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+							player.openMenu(new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.translatable("o_medal_nest_gui.text");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+									packetBuffer.writeBlockPos(player.blockPosition());
+									packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+									return new OMedalNestGuiMenu(id, inventory, packetBuffer,itemstack);
+								}
+							});
+						}
+					}
 					.Add_Extra_Base_Form_Items(TORA_MEDAL,BATTA_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
 
 
