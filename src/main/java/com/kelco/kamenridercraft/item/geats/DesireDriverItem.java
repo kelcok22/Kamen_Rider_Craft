@@ -373,6 +373,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 
 			 }else
          if (itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_PUNKJACK.asItem()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_SHIROWE.asItem()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_DA_PAAN.asItem()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/punkjack_base_over.geo.json");
+        if (itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_BUFFA.asItem()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/buffa.geo.json");
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_wings_armor.geo.json");
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_cape.geo.json");
 				
@@ -381,7 +382,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 	}
 
 	public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
-		if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_PUNKJACK.asItem()&slot == EquipmentSlot.HEAD) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_cape.animation.json");
+		if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_BUFFA.asItem()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_PUNKJACK.asItem()&slot == EquipmentSlot.HEAD) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_cape.animation.json");
 
 		else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation(this.Rider));
 
