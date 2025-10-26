@@ -45,6 +45,20 @@
         "type": "patchouli:text",
         "title": "Gamma Superior",
         "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_gamma_superior)Proto Mega Ulorder$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Regeneration III$(li)Strength II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "perfect_camille",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:transform_gamma_eyecon_camille\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gamma Superior Perfect (Camille)",
+        "text": "Accessed with the $(l:ghost/items/gamma_eyecons#transform_gamma_eyecon_camille)Transform Gamma Eyecon (Camille)$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Gamma Superior",
+        "text": "Appears in:$(li)Kamen Rider Specter × Blades (2022, TTFC special)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_gamma_superior)Proto Mega Ulorder$(/l)$(br2)Status Effects:$(li)Speed"
       }
-	]
+    ]
 }

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ooodriver",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ooo)Kamen Rider OOO"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ooo)Kamen Rider OOO$(/l)$(br2)Can store up to 6 stacks of O Medals"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "ancient_ooodriver",
 			"title": "OOO Driver (Ancient OOO)",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ancient_ooo)Ancient OOO"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ancient_ooo)Ancient OOO$(/l)$(br2)Can store up to 6 stacks of O Medals"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -30,7 +30,7 @@
 			"type": "patchouli:text",
 			"anchor": "goda_ooodriver",
 			"title": "OOO Driver (Goda)",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/goda)Kamen Rider Goda"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/goda)Kamen Rider Goda$(/l)$(br2)Can store up to 6 stacks of O Medals"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -42,7 +42,7 @@
 			"type": "patchouli:text",
 			"anchor": "shocker_ooodriver",
 			"title": "OOO Driver (Shocker OOO)",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/shocker_ooo)Shocker OOO"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/shocker_ooo)Shocker OOO$(/l)$(br2)Can store up to 6 stacks of O Medals"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -53,7 +53,7 @@
 			"type": "patchouli:text",
 			"anchor": "oooooodriver",
 			"title": "Six Group OOO Driver",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/oooooo)OOOOOO"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/oooooo)OOOOOO$(/l)$(br2)Can store up to 6 stacks of O Medals"
 		},
 		{
 			"type": "patchouli:spotlight",
