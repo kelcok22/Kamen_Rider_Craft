@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-27T01:33:03.825873	Item Models: kamenridercraft
+// 1.21.1	2025-10-27T05:38:42.7369267	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -360,6 +360,8 @@ a93c64550965f0035c9d6bdd1a0cd9dd467d642f assets/kamenridercraft/models/item/mega
 7162cfae611d5bca6aa8dc1afecfbe3cbd593051 assets/kamenridercraft/models/item/mentaiko_umaibo_gochizo.json
 09904f645c3f84b51172120ba8f82ba7e72102fe assets/kamenridercraft/models/item/mercurin_ride_chemy_card.json
 fe2633c3aca22effa19dc2b35d3200aeae7a1d12 assets/kamenridercraft/models/item/merrychristmas_gochizo.json
+81fa44f23f2941a5f2f622c9892fb60f1304f596 assets/kamenridercraft/models/item/metal_daiohni_ride_chemy_card.json
+33b5e6c5f1bf045f9aaacae2f02c2b335debe8f4 assets/kamenridercraft/models/item/metal_machwheel_ride_chemy_card.json
 61f64ad4b25fbab114c6ccfbbc37172050ff5dfc assets/kamenridercraft/models/item/milktirol_gochizo.json
 559c16ab7c8226862aeb63ffc33f08fbe67fa3ee assets/kamenridercraft/models/item/mitaramotti_gochizo.json
 451a8e1447b65cba95c8f988bc34af31a8c08735 assets/kamenridercraft/models/item/mitemirror_ride_chemy_card.json
