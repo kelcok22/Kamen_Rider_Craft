@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-27T05:38:42.7369267	Item Models: kamenridercraft
+// 1.21.1	2025-10-27T19:36:09.3108426	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -255,6 +255,7 @@ e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/gran
 7608288f708c160f223651069e7a3fe0483eedd5 assets/kamenridercraft/models/item/gravity_capsem.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
 922c1b4222deb2d2689c79f5c70c8bcdbbc7c477 assets/kamenridercraft/models/item/greeed_blet_kyoryu.json
+68a5c05aa01c0cd00ba0b6868e6f336cede6703c assets/kamenridercraft/models/item/gumgumgum_gochizo.json
 8a396385d4deb31252aab8c80a1d675557b50818 assets/kamenridercraft/models/item/gurucan_gochizo_valen.json
 7c52a21d11943073184164edea967c821c3dfb34 assets/kamenridercraft/models/item/gutsshovel_ride_chemy_card_v.json
 c37b9eecbd3298147f22917de0e36e4b5c581c4a assets/kamenridercraft/models/item/hagigoro_gochizo.json
@@ -495,6 +496,7 @@ dcf9bddf405e71a3399687707cd404db5a29b750 assets/kamenridercraft/models/item/spar
 25c8b1a3f42e4225db92660b862e0ec7fe1c0a2a assets/kamenridercraft/models/item/specialshift.json
 333b59fab71fcbb2e9216d15d0046280c600ae6e assets/kamenridercraft/models/item/speedshift_gold.json
 9d4c5953e3da2f28bdfb87e5d095be16a3d1aad4 assets/kamenridercraft/models/item/spicle_ride_chemy_card.json
+9f5a499a6110a5ffc05ef795057da8db80d2aa28 assets/kamenridercraft/models/item/sporki_gochizo.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/square_astroswitch.json
 ac6fa777dd48ab88a74eba52b76dfc7832820d44 assets/kamenridercraft/models/item/stagvine_ride_chemy_card.json
 8e27e2b8f45a37c589d5af32949bbf79b984086a assets/kamenridercraft/models/item/steamliner_ride_chemy_card_ultima.json
@@ -524,6 +526,7 @@ f9b7fe4f92272fdcf7821733b8d7adc20957cc21 assets/kamenridercraft/models/item/toku
 2d4949f59d82fa26fd985e732379b9280287d9d2 assets/kamenridercraft/models/item/tonkatsu_umaibo_gochizo.json
 a1e01a0e7d648c43f8a8bfd6242c4a23428037c7 assets/kamenridercraft/models/item/toppo_gochizo.json
 57ff1f0b85fe61857f88ddfc2fab8d171518a149 assets/kamenridercraft/models/item/transform_capsem.json
+ca66443fb1aad8f485c50c5a8551796f8b6ba0b1 assets/kamenridercraft/models/item/transform_gamma_eyecon_camille.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/triangle_astroswitch.json
 936c400061af6efcbc20c3f222dd6449acd87998 assets/kamenridercraft/models/item/tricera_ride_chemy_card.json
 0d406ca45c988584e03baa112550de5559042fba assets/kamenridercraft/models/item/tridoronshift_core.json
