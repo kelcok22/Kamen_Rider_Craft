@@ -777,6 +777,14 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mogimaru","do_not_work","valenbuckle_belt")
 					.AddToList(MOCHI,2).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
+	public static final DeferredItem<Item> SPORKI_GOCHIZO = ITEMS.register("sporki_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_sporki","do_not_work","valenbuckle_belt")
+					.AddToList(CAKE,2).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> GUMGUMGUM_GOCHIZO = ITEMS.register("gumgumgum_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gumgumgum","do_not_work","valenbuckle_belt")
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
 	public static final DeferredItem<Item> MORIAGARAMUNE_GOCHIZO = ITEMS.register("morinagaramune_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_morinagaramune","do_not_work","valenbuckle_belt")
 					.AddToList(CANDY,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
