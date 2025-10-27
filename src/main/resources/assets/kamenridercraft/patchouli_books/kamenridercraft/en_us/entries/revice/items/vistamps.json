@@ -339,7 +339,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:holy_wing_vistamp",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)"
+			"text": "Drops from:$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (consumes a $(l:revice/items/vistamps#crow_vistamp)Crow Vistamp$(/l) from your inventory)"
 		},
 		{
 			"type": "patchouli:text",

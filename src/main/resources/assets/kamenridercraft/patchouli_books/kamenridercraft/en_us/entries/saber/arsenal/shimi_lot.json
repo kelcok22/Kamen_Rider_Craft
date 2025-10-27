@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shimi_lot",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)'s equipment"
 		}
 	]
 }

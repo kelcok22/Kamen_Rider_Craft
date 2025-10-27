@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
@@ -16,12 +17,14 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -51,6 +54,18 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new DoNothingGoal());
         super.registerGoals();
+    }
+
+    public void remove(Entity.RemovalReason p_149847_) {
+        if (this.isDeadOrDying() && this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(Saber_Rider_Items.DESAST_ALTER_RIDE_BOOK.get()) > 0) {
+            if (playerIn.getInventory().getItem(40).getItem() == Saber_Rider_Items.DESAST_ALTER_RIDE_BOOK.get()) playerIn.getInventory().removeItem(40, 1);
+            else playerIn.getInventory().removeItem(playerIn.getInventory().findSlotMatchingItem(new ItemStack(Saber_Rider_Items.DESAST_ALTER_RIDE_BOOK.get())), 1);
+            ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+            key.setPickUpDelay(0);
+            playerIn.level().addFreshEntity(key);
+            playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.gaikotsu_ninjaden"));
+        }
+        super.remove(p_149847_);
     }
 
     @Override

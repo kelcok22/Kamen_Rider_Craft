@@ -1262,7 +1262,9 @@ public class Saber_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
-	// kokuranken_shikkoku
+    public static final DeferredItem<Item> GRUDGE_DENT = ITEMS.register("grudge_dent",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
