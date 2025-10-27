@@ -10,7 +10,6 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ooo.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.OMedalNestGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;

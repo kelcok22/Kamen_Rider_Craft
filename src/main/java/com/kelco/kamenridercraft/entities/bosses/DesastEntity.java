@@ -2,10 +2,13 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 
+import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class DesastEntity extends BaseHenchmenEntity {
@@ -13,6 +16,7 @@ public class DesastEntity extends BaseHenchmenEntity {
     public DesastEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="desast";
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.GRUDGE_DENT.get()));
     }
     
 

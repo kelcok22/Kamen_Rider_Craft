@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.OMedalNestGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;

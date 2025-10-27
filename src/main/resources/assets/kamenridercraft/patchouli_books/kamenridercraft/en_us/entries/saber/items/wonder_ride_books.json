@@ -592,7 +592,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:arabiana_night_wonder_ride_book",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l) (consumes a $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)Lamp do Alangina$(/l) and $(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)Wonder World Story of Raimeiken Ikazuchi$(/l) Wonder Ride Book from your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -605,7 +605,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gaikotsu_ninjaden_wonder_ride_book",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l) (consumes a $(l:saber/items/alter_ride_books#desast_alter_ride_book)Desast Alter Ride Book$(/l) from your inventory)"
 		},
 		{
 			"type": "patchouli:text",

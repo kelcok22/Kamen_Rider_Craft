@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bugster_trident",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)' equipment"
 		}
 	]
 }
