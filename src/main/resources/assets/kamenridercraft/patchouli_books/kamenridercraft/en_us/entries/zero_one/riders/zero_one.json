@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flying_falcon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flying_falcon_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flying_falcon_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flying Falcon",
