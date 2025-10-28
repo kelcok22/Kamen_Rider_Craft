@@ -12,6 +12,7 @@ import com.kelco.kamenridercraft.compat.BetterCombatAttackListener;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.ZuGumunBaEntity;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
@@ -187,22 +188,29 @@ public class KamenRiderCraftCore
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
-        if (event.getRenderer().getModel()instanceof PlayerModel model && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
-                && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-            double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
-            if (tag != 0) {
-                model.setAllVisible(false);
-                if (tag != 1) model.head.visible = true;
-
-                if (tag == 3) {
-                    model.leftLeg.visible = true;
-                    model.rightLeg.visible = true;
-                    model.leftArm.visible = true;
-                    model.rightArm.visible = true;
-                    model.body.visible = true;
-                }
-            }
-            if (event.getEntity().isDeadOrDying()) model.setAllVisible(true);
+        if (event.getRenderer().getModel()instanceof PlayerModel model) {
+            if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
+                    && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+                double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
+                if (tag != 0) {
+                    model.setAllVisible(false);
+                    if (tag != 1) model.head.visible = true;
+                    else if (event.getEntity() instanceof BaseHenchmenEntity) model.head.visible = false;
+                    if (tag == 3) {
+                        model.leftLeg.visible = true;
+                        model.rightLeg.visible = true;
+                        model.leftArm.visible = true;
+                        model.rightArm.visible = true;
+                        model.body.visible = true;
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity) {
+                        model.leftLeg.visible = false;
+                        model.rightLeg.visible = false;
+                        model.leftArm.visible = false;
+                        model.rightArm.visible = false;
+                        model.body.visible = false;
+                    }
+                } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
+            } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 
         float size = 1;
