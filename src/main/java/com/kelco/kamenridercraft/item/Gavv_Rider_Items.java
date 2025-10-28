@@ -386,7 +386,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY() + 2,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(CANDY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().AddToList(CANDY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PARTEA_GOCHIZO = ITEMS.register("partea_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_partea","gavv","henshin_belt_gavv_belt_partea",
