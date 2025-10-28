@@ -678,6 +678,32 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "sporki_gochizo",
+        "title": "Sporki Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:sporki_gochizo",
+        "title": " ",
+        "text": "Obtained by eating cake with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gumgumgum_gochizo",
+        "title": "Gum Gum Gum Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gumgumgum_gochizo",
+        "title": " ",
+        "text": "Obtained by opening $(l:misc/items/gashapon_capsules#gashapon_capsule)Gashapon Capsules$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "morinagaramune_gochizo",
@@ -1266,7 +1292,7 @@
       {
         "type": "patchouli:text",
         "anchor": "pumpkin_gochizo",
-        "title": "Pumpkin Gochizo",
+        "title": "Pumpky Macaron Gochizo",
         "text": "Appears in:$(li)Gochizo Party (2025, web series)"
       },
       {
