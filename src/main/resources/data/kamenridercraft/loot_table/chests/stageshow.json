@@ -1,0 +1,123 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "max": 7.0,
+                          "min": 3.0
+                        },
+                        "function": "minecraft:set_count"
+                      }
+                    ],
+                    "name": "kamenridercraft:himawari_lockseed",
+                    "weight": 10
+                  }
+                ],
+                "rolls": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:maja_lockseed",
+                    "weight": 5
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:kabi_orange_lockseed",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "max": 7.0,
+                          "min": 3.0
+                        },
+                        "function": "minecraft:set_count"
+                      }
+                    ],
+                    "name": "kamenridercraft:blank_rider_core_id",
+                    "weight": 10
+                  }
+                ],
+                "rolls": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:geats_rider_core_id_osaka",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:geats_rider_core_id_fukuoka",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:geats_rider_core_id_nagoya",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:geats_rider_core_id_tokyo",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 1.0
+      }
+    }
+  ]
+}
