@@ -202,6 +202,7 @@ public class KamenRiderCraftCore
                     model.body.visible = true;
                 }
             }
+            if (event.getEntity().isDeadOrDying()) model.setAllVisible(true);
         }
 
         float size = 1;

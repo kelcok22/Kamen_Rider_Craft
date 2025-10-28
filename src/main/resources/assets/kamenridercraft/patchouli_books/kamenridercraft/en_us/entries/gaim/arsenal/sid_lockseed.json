@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/mobs/sigurd)Sid$(/l)$(br2)Opens a $(l:misc/blocks/helheim_crack)Helheim Crack$(/l) when right clicked"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/mobs/sigurd)Sid$(/l)$(br2)Opens a $(l:misc/blocks/helheim_crack)Helheim Crack$(/l) when right clicked with a $(l:gaim/devices/sengoku_driver)Agents$(/l) equipped"
 		},
 		{
 			"type": "patchouli:spotlight",
