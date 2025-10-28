@@ -45,9 +45,8 @@ public class GateSwitchItem extends BaseItem {
 
 		 if (get_has_moon(itemstack)){
 			 int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());
-			 double Y = get_XYZ(itemstack, "y1", respawn.pos().y());
 			 int Z = (int) get_XYZ(itemstack, "z1", respawn.pos().z());
-			 blockpos= new BlockPos( X, 60, Z);
+			 blockpos= new BlockPos( X, 65, Z);
 		 }
 		 else{
 			 TagKey<Structure>tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft","rabbit_hutch"));
@@ -60,7 +59,7 @@ public class GateSwitchItem extends BaseItem {
 			 }
 
 
-		 entity.teleportTo(otherDim, blockpos.getX(),60, blockpos.getZ(), new HashSet<>(), 0, 0);
+		 entity.teleportTo(otherDim, blockpos.getX(),65, blockpos.getZ(), new HashSet<>(), 0, 0);
 
 
 		 }else {
