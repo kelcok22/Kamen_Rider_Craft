@@ -1067,7 +1067,7 @@ public class Gotchard_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
@@ -1408,6 +1408,33 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsGlowing().has_basic_model().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> ELDRAGON_CHEMY_CARD = ITEMS.register("eldragon_chemy_card",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","eld","eldoradriver_belt_e",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> SANTACLAUS_RIDE_CHEMY_CARD = ITEMS.register("santaclaus_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -2343,6 +2370,9 @@ public class Gotchard_Rider_Items {
 
     public static final DeferredItem<Item>  ELDORADRIVER = ITEMS.register("eldoradriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dorado", DARK_ETHER_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
+
+    public static final DeferredItem<Item>  ELDORADRIVER_ELD = ITEMS.register("eldoradriver_eld",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eld", ELDRAGON_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
     public static final DeferredItem<Item> VALVARADRAW_BUCKLE = ITEMS.register("valvaradraw_buckle",
 			() -> new ValvaradItem(ArmorMaterials.DIAMOND,"valvarad", MADWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
