@@ -2,11 +2,11 @@
 	"name": "Rider 3 vs. The Demon of General Black Manga",
 	"icon": "kamenridercraft:rider3_vs_the_demon_of_general_black",
 	"category": "kamenridercraft:ichigo/items",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Super Hero Taisen GP: Kamen Rider 3 (2015, movie)$(br2)Used to access Sango's $(l:ichigo/riders/sango#manga_sango)manga$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider: Rider 3 vs. The Demon of General Black (1972, manga)$(br2)Used to access Sango's $(l:ichigo/riders/sango#manga_sango)manga$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -60,6 +60,20 @@
 			"title": "Kamen Rider Ichigo",
 			"text": "Appears in:$(li)Kamen Rider 1 (2016, movie)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_ichigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "manga_ichigo",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_manga\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Manga Ichigo",
+        "text": "Accessed with the $(l:ichigo/items/ichigo_manga)???$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Ichigo",
+        "text": "Appears in:$(li)Kamen Rider (1971, manga)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_ichigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Flatten"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "cyclonehopper_ichigo",

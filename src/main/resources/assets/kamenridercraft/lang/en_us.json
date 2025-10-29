@@ -6881,6 +6881,8 @@
   "kamenridercraft:giant_spider_vistamp.form": "Form: Imperial Demons",
   "kamenridercraft:cobra_vistamp.form": "Form: Cobra Genome",
   "kamenridercraft:king_cobra_vistamp.form": "Form: Muteki Jeanne",
+  "kamenridercraft:cobra_vistamp_lovekov.form": "Form: Normal",
+  "kamenridercraft:lovekov_snake_woman.form": "Form: Snake Woman",
 
   "kamenridercraft:genomix.form": "Genomix:",
   "kamenridercraft:full_genomix.form": "Full Genomix",
@@ -8295,10 +8297,12 @@
   "kamenridercraft.name.shin_nigo": "Rider: Kamen Rider No. 2",
   "item.kamenridercraft.shin_typhoon_core_2_1": "Typhoon Energy Converter (No. 2+1)",
   "kamenridercraft.name.shin_2_1": "Rider: Kamen Rider No. 2+1",
+  "kamenridercraft.name.phase_variation_batta_augments": "Debatable Rider: Phase Variation Batta Augment",
   "item.kamenridercraft.shin_typhoon_ichigo": "Shin Typhoon",
   "item.kamenridercraft.shin_typhoon_nigo": "Shin Typhoon",
   "item.kamenridercraft.shin_typhoon_2_1": "Shin Typhoon",
   "item.kamenridercraft.ultimate_half_typhoon": "Ultimate Half Typhoon",
+  "item.kamenridercraft.simplified_typhoon": "Simplified Typhoon",
 
 
   "item.kamenridercraft.ichigo_mask": "Ichigo Mask",

@@ -2,7 +2,7 @@
 	"name": "Nophoon Core",
 	"icon": "kamenridercraft:nophoon_core",
 	"category": "kamenridercraft:ichigo/items",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

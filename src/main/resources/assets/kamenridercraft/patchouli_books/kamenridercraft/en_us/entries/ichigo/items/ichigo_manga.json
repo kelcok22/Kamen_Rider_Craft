@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:ichigo_manga",
+	"category": "kamenridercraft:ichigo/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(br2)Used to access Ichigo's $(l:ichigo/riders/ichigo#manga_ichigo)manga$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_manga",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

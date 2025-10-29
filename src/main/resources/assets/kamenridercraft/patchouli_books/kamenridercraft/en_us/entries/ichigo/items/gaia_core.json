@@ -2,7 +2,7 @@
 	"name": "Gaia Typhoon Core",
 	"icon": "kamenridercraft:gaia_core",
 	"category": "kamenridercraft:ichigo/items",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",
