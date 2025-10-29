@@ -355,7 +355,7 @@ public class Reboot_Rider_Items {
 
     public static final DeferredItem<Item> SIMPLIFIED_TYPHOON = ITEMS.register("simplified_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"phase_variation_batta_augments", SHIN_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
