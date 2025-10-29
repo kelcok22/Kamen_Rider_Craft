@@ -434,19 +434,18 @@ public class RiderFormChangeItem extends BaseItem {
         public Boolean CanChange(Player player,RiderDriverItem belt, ItemStack stack) {
 
         if (this == Modded_item_core.BLANK_FORM.get()) {
-            return true;
+            //return true;
         }
         if(hasIncompatibleForms) {
             for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
                 int num_forms = belt.Num_Base_Form_Item;
                     for (int n = 0; n < num_forms; n++) {
-                    if (incompatibleForm == RiderDriverItem.get_Form_Item(stack, n)) {
+                    if (incompatibleForm == RiderDriverItem.get_Form_Item(stack, n+1)) {
                         return false;
                     }
                 }
             }
         }
-
             if(!iscompatible(belt)) {
             return false;
         }
