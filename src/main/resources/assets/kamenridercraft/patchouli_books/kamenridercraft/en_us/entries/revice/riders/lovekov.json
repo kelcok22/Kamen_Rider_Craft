@@ -6,16 +6,31 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lovekov_belt\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+          "anchor": "lovekov",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lovekov_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_vistamp_lovekov\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": ""
+			"text": "Accessed with the $(l:revice/items/vistamps#cobra_vistamp)Cobra Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Lovekov",
 			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/lovekov_belt)Lovekov Belt$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Speed II$(li)Anti Poison$(li)Haste II"
-		}
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "snake_woman",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lovekov_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:lovekov_snake_woman\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Snake Woman",
+        "text": "Accessed with the $(l:revice/items/vistamps#tri_chimera_vistamp)Tri Chimera Vistamp$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Lovekov",
+        "text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Transforms with the $(l:revice/devices/lovekov_belt)Lovekov Belt$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Speed II$(li)Anti Poison$(li)Haste II"
+      }
 	]
 }

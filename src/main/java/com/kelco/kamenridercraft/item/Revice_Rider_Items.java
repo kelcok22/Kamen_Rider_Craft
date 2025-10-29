@@ -246,7 +246,7 @@ public class Revice_Rider_Items {
 			}
 		}.IsGlowing().AddToList(RiderTabs.REVICE_TAB_ITEM));
 
-	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP_VICE = ITEMS.register("gold_spino_vice",
+	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP_VICE = ITEMS.register("gold_spino_vistamp_vice",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gold_spino","vice","blank",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 6,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -851,6 +851,20 @@ public class Revice_Rider_Items {
 			}.IsGlowing().ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
 					.AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+    public static final DeferredItem<Item> COBRA_VISTAMP_LOVEKOV = ITEMS.register("cobra_vistamp_lovekov",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","lovekov","lovekov_belt_belt",
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing());
+
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","jeanne","libera_driver_belt",
                     new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
@@ -863,7 +877,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
+			}.IsGlowing().addAlternative(COBRA_VISTAMP_LOVEKOV.get()).AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURTLE_VISTAMP = ITEMS.register("turtle_vistamp",
             () -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
@@ -1067,6 +1081,20 @@ public class Revice_Rider_Items {
 				}
 			}.IsGlowing().AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+    public static final DeferredItem<Item> LOVEKOV_SNAKE_WOMAN = ITEMS.register("lovekov_snake_woman",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_snake_woman","lovekov","blank",
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing());
+
 	public static final DeferredItem<Item> TRI_CHIMERA_VISTAMP = ITEMS.register("tri_chimera_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","daimon","chimera_driver_daimon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -1079,7 +1107,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.REVICE_TAB_ITEM));
+			}.IsGlowing().addAlternative(LOVEKOV_SNAKE_WOMAN.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> JUUGA_VISTAMP = ITEMS.register("juuga_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","juuga","juuga_driver_belt",
@@ -1473,8 +1501,8 @@ public class Revice_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LOVEKOV_BELT = ITEMS.register("lovekov_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lovekov",COBRA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().Override_belt_text("lovekov_belt_belt").AddToTabList(RiderTabs.REVICE_TAB_ITEM).has_basic_model().ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lovekov",COBRA_VISTAMP_LOVEKOV ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.REVICE_TAB_ITEM).has_basic_model().ChangeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> DEMONS_DRIVER = ITEMS.register("demons_driver",

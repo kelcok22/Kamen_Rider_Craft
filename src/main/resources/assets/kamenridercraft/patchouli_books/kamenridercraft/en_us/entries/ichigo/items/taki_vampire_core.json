@@ -2,7 +2,7 @@
 	"name": "Taki Vampire Core",
 	"icon": "kamenridercraft:taki_vampire_core",
 	"category": "kamenridercraft:ichigo/items",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",
