@@ -330,36 +330,36 @@ public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.regis
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1))
-					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 	public static final DeferredItem<Item> SHIN_ICHIGO_CHESTPLATE = ITEMS.register("shin_ichigotroso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1))
-					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 	public static final DeferredItem<Item> SHIN_ICHIGO_LEGGINGS = ITEMS.register("shin_ichigolegs",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1))
-					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 
 	public static final DeferredItem<Item> TYPHOON_1 = ITEMS.register("shin_typhoon_ichigo",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_ichigo", SHIN_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 	public static final DeferredItem<Item> TYPHOON_2 = ITEMS.register("shin_typhoon_nigo",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_nigo", SHIN_TYPHOON_CORE_2,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 	public static final DeferredItem<Item> TYPHOON_2_1 = ITEMS.register("shin_typhoon_2_1",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_2_1", SHIN_TYPHOON_CORE_2_1,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> ULTIMATE_HALF_TYPHOON = ITEMS.register("ultimate_half_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_no_0", ULTIMATE_HALF_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> SIMPLIFIED_TYPHOON = ITEMS.register("simplified_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"phase_variation_batta_augments", SHIN_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .Override_belt_text("simplified_typhoon_belt").Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+                    .Override_belt_text("simplified_typhoon_belt").Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM).ChangeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
