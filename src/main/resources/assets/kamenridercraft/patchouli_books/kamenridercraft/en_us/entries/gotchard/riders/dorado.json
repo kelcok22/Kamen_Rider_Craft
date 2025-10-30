@@ -6,7 +6,6 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"anchor": "dorado",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:eldoradriver\",Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,

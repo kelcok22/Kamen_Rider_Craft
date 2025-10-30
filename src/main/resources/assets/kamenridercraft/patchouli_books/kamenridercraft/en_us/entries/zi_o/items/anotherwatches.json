@@ -221,7 +221,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:another_gaim_watch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -247,7 +247,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:another_ghost_watch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -260,7 +260,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:another_ex_aid_watch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -273,7 +273,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:another_build_watch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -286,7 +286,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:another_zi_o_watch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -299,7 +299,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:another_zi_o_ii_watch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l) (if transformed into Another Zi-O II)"
 		},
 		{
 			"type": "patchouli:text",

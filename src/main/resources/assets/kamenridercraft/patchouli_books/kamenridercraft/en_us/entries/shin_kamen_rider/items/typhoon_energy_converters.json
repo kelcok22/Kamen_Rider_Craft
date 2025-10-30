@@ -2,7 +2,7 @@
 	"name": "Typhoon Energy Converters",
 	"icon": "kamenridercraft:shin_typhoon_core",
 	"category": "kamenridercraft:shin_kamen_rider/items",
-	"sortnum": 0,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",
