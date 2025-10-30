@@ -85,26 +85,75 @@
                 }
               },
               {
-                "rolls": 1,
+                "rolls": 2,
                 "entries": [
                   {
                     "type": "minecraft:item",
                     "name": "kamenridercraft:geats_rider_core_id_osaka",
-                    "weight": 1
+                    "weight": 2
                   },
                   {
                     "type": "minecraft:item",
                     "name": "kamenridercraft:geats_rider_core_id_fukuoka",
-                    "weight": 1
+                    "weight": 2
                   },
                   {
                     "type": "minecraft:item",
                     "name": "kamenridercraft:geats_rider_core_id_nagoya",
-                    "weight": 1
+                    "weight": 2
                   },
                   {
                     "type": "minecraft:item",
                     "name": "kamenridercraft:geats_rider_core_id_tokyo",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:laser_raise_bazooka",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "max": 7.0,
+                          "min": 3.0
+                        },
+                        "function": "minecraft:set_count"
+                      }
+                    ],
+                    "name": "kamenridercraft:wizardgem",
+                    "weight": 10
+                  }
+                ],
+                "rolls": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:dark_ring",
                     "weight": 1
                   }
                 ]
