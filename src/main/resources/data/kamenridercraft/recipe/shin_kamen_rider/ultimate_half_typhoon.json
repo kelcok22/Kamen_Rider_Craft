@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "shin_ichigo",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:prana_infused_rider_circuits"
+	},
+	"M": {
+	  "item": "kamenridercraft:ultimate_half_typhoon_core"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:ultimate_half_typhoon"
+  }	
+}
