@@ -270,8 +270,12 @@ public class Reboot_Rider_Items {
 	            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_SUN_TAB_ITEM));
 
 
+//Shin Kamen Rider
 
-	public static final DeferredItem<Item> SHIN_TYPHOON_CORE = ITEMS.register("shin_typhoon_core",
+public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.register("prana_infused_rider_circuits",
+        () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> SHIN_TYPHOON_CORE = ITEMS.register("shin_typhoon_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_ichigo","shin_typhoon_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)

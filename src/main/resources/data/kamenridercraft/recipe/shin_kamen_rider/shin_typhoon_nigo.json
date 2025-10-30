@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "shin_ichigo",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:prana_infused_rider_circuits"
+	},
+	"M": {
+	  "item": "kamenridercraft:shin_typhoon_core2"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:shin_typhoon_nigo"
+  }	
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "kr_shin_ichigo",
+  "pattern": [
+	"X X",
+	"XXX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:prana_infused_rider_circuits"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:shin_ichigotroso"
+  }
+}
