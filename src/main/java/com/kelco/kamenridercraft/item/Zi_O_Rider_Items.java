@@ -2064,14 +2064,31 @@ public class Zi_O_Rider_Items {
             () -> new Zi_ORidewatchItem(new Item.Properties(), 0, "", "another_zi_o", "another_ziku_driver_zi_o_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false))
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }
                     .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZI_O_II_WATCH = ITEMS.register("another_zi_o_ii_watch",
             () -> new Zi_ORidewatchItem(new Item.Properties(), 0, "_ii", "another_zi_o", "another_ziku_driver_zi_o_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }
                     .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZERO_ONE_WATCH = ITEMS.register("another_zero_one_watch",
