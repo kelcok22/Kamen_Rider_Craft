@@ -400,6 +400,66 @@ public class Gavv_Rider_Items {
                 }
             }.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> KINCHOCO_GOCHIZO = ITEMS.register("kinchoco_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kinchoco","gavv","henshin_belt_gavv_belt_partea",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> UIROU_GOCHIZO = ITEMS.register("uirou_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_uirou","gavv","henshin_belt_gavv_belt_partea",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> MENSEN_GOCHIZO = ITEMS.register("mensen_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mensen","gavv","henshin_belt_gavv_belt_partea",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> TAKOSEN_GOCHIZO = ITEMS.register("takosen_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_takosen","gavv","henshin_belt_gavv_belt_partea",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> NINGYO_GOCHIZO = ITEMS.register("ningyo_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ningyo","gavv","henshin_belt_gavv_belt_partea",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> BUSHEL_GOCHIZO = ITEMS.register("bushel_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bushel","valen","henshin_belt_gavv_belt_bushel",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
