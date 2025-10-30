@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:shin_typhoon_core2"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+      "kamenridercraft:shin_kamen_rider/shin_typhoon_nigo"
+	]
+  },
+  "sends_telemetry_event": false
+}

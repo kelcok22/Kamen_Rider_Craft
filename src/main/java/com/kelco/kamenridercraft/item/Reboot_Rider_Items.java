@@ -272,7 +272,7 @@ public class Reboot_Rider_Items {
 
 //Shin Kamen Rider
 
-public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.register("prana_infused_rider_circuits",
+public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.register("prana_infused_rider_circuit",
         () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE = ITEMS.register("shin_typhoon_core",

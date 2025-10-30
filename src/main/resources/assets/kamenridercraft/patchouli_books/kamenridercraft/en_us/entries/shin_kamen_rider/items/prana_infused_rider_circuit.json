@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:prana_infused_rider_circuit",
+	"category": "kamenridercraft:shin_kamen_rider/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used as the base item and repair material for Shin Kamen Rider items"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:prana_infused_rider_circuit",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+    ]
+}

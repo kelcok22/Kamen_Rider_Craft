@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:prana_infused_rider_circuit"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+      "kamenridercraft:shin_kamen_rider/shin_ichigohead",
+      "kamenridercraft:shin_kamen_rider/shin_ichigotroso",
+      "kamenridercraft:shin_kamen_rider/shin_ichigolegs"
+	]
+  },
+  "sends_telemetry_event": false
+}

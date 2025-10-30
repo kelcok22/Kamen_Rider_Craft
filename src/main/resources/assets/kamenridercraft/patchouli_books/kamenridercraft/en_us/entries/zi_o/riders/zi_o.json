@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations Forever (2018, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Forever (2018, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)DX Agito Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength"
+			"text": "Appears in:$(li)DX Agito Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)DX Ryuki Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste$(li)Boost"
+			"text": "Appears in:$(li)DX Ryuki Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)DX Blade Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste$(li)Saturation VI$(li)Strength III"
+			"text": "Appears in:$(li)DX Blade Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)DX Hibiki Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+			"text": "Appears in:$(li)DX Hibiki Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)DX Kabuto Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)DX Kabuto Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste IV$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)DX Kiva Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)DX Kiva Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste$(li)Slow Falling"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste$(li)Boost"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Strength II$(li)Speed II$(li)Haste$(li)Jump Boost II$(li)Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste$(li)Saturation VI$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Jump Boost III$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed VIII$(li)Resistance III$(li)Night Vision$(li)Haste VII$(li)Jump Boost III$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(li)Flying III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision II$(li)Haste$(li)Jump Boost III$(li)Fire Resistance$(li)Strength III$(li)Flying III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Water Breathing$(li)Night Vision II$(li)Haste$(li)Ghost$(li)Jump Boost III$(li)Fire Resistance$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(br2)Spawns a $(l:zi_o/mobs/decade_armor_ex_aid)DecadeArmor Ex-Aid Form summon$(/l) when used"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste II$(li)Jump Boost III$(li)Strength IV$(br2)Spawns a $(l:zi_o/mobs/decade_armor_ex_aid)DecadeArmor Ex-Aid Form summon$(/l) when used"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(br2)Spawns a $(l:zi_o/mobs/decade_armor_ex_aid)DecadeArmor Ex-Aid Form summon$(/l) when used"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste II$(li)Jump Boost III$(li)Strength IV$(br2)Spawns a $(l:zi_o/mobs/decade_armor_ex_aid)DecadeArmor Ex-Aid Form summon$(/l) when used"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!- (2021, web series)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!- (2021, web series)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Fire Resistance$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",

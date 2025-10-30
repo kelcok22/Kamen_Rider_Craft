@@ -1,0 +1,21 @@
+{
+	"name": "Another Zi-O",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:another_zi_o",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 10% chance to spawn from a $(l:zi_o/mobs/kasshine)Kasshine$(/l)$(br2)Special moves:$(li)Transforms into $(l:zi_o/riders/another_zi_o#zi_o_ii)Another Zi-O II$(/l) at under 100 health if you have the $(l:zi_o/items/ridewatches#zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l) in your inventory$(br2)Drops on next page"
+		},
+      {
+        "type": "patchouli:text",
+        "text": "Drops$(li)1 $(l:zi_o/items/anotherwatches#another_zi_o_watch)Another Zi-O Watch$(/l)$(li)1 $(l:zi_o/items/anotherwatches#another_build_watch)Another Build Watch$(/l), $(l:zi_o/items/anotherwatches#another_gaim_watch)Another Gaim Watch$(/l), $(l:zi_o/items/anotherwatches#another_ex_aid_watch)Another Ex-Aid Watch$(/l), or $(l:zi_o/items/anotherwatches#another_ghost_watch)Another Ghost Watch$(/l) (25%)$(li)3-5 $(l:zi_o/items/blank_watch)Blank Ridewatches$(/l)$(li)1 $(l:zi_o/items/anotherwatches#another_zi_o_ii_watch)Another Zi-O II Watch$(/l) (if transformed into Another Zi-O II)"
+      }
+	]
+}

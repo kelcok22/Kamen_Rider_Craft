@@ -1587,6 +1587,19 @@
         "title": " ",
         "text": "Item is currently unobtainable"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "eldragon_chemy_card",
+        "title": "Eldragon Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Eld's $(l:gotchard/devices/eldoradriver#eldoradriver_eld)Eldoradriver$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:eldragon_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "santaclaus_ride_chemy_card",

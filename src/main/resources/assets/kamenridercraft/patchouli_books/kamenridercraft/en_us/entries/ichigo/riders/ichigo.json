@@ -67,7 +67,7 @@
         "scale": -1,
         "offset": 0.1,
         "name": "Manga Ichigo",
-        "text": "Accessed with the $(l:ichigo/items/ichigo_manga)???$(/l)"
+        "text": "Accessed with the $(l:ichigo/items/ichigo_manga)Kamen Rider Manga$(/l)"
       },
       {
         "type": "patchouli:text",
