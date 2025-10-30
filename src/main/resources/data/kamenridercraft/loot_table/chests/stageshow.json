@@ -138,6 +138,75 @@
                         "function": "minecraft:set_count"
                       }
                     ],
+                    "name": "kamenridercraft:blank_gochizo",
+                    "weight": 10
+                  }
+                ],
+                "rolls": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                }
+              },
+              {
+                "rolls": 2,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:partea_gochizo",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:kinchoco_gochizo",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:uirou_gochizo",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:mensen_gochizo",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:takosen_gochizo",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:ningyo_gochizo",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "max": 7.0,
+                          "min": 3.0
+                        },
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "kamenridercraft:wizardgem",
                     "weight": 10
                   }
