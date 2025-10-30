@@ -376,7 +376,8 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_kuuga", "zi_o", "ziku_driver_zi_o_belt_kuuga",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -418,9 +419,11 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> DECADE_RYUKI_RIDEWATCH = ITEMS.register("decade_ryuki_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_decade_ryuki", "zi_o", "ziku_driver_zi_o_belt_decade_ryuki",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -434,7 +437,8 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_ryuki", "zi_o", "ziku_driver_zi_o_belt_ryuki",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -498,7 +502,7 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> BLADE_RIDEWATCH = ITEMS.register("blade_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), 0, "_blade", "zi_o", "ziku_driver_zi_o_belt_blade",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -518,8 +522,8 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> HIBIKI_RIDEWATCH = ITEMS.register("hibiki_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), 0, "_hibiki", "zi_o", "ziku_driver_zi_o_belt_hibiki",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -537,9 +541,9 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> KABUTO_RIDEWATCH = ITEMS.register("kabuto_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), 0, "_kabuto", "zi_o", "ziku_driver_zi_o_belt_kabuto",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -557,7 +561,7 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> DEN_O_RIDEWATCH = ITEMS.register("den_o_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), 0, "_den_o", "zi_o", "ziku_driver_zi_o_belt_den_o",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -583,7 +587,8 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_kiva", "zi_o", "ziku_driver_zi_o_belt_kiva",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
@@ -607,7 +612,10 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_w", "zi_o", "ziku_driver_zi_o_belt_w",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -639,7 +647,9 @@ public class Zi_O_Rider_Items {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 2, true, false)) {
+                    new MobEffectInstance(Effect_core.FLYING, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -651,8 +661,10 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> OOO_RIDEWATCH = ITEMS.register("ooo_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), 0, "_ooo", "zi_o", "ziku_driver_zi_o_belt_ooo",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -781,6 +793,7 @@ public class Zi_O_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(Effect_core.BOOST, 40, 0, true, false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -810,7 +823,8 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_wizard", "geiz", "ziku_driver_geiz_belt_wizard",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_WIZARD_PARTICLES.get(),
@@ -916,7 +930,8 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_drive", "geiz", "ziku_driver_geiz_belt_drive",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -965,7 +980,12 @@ public class Zi_O_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+                    new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
@@ -978,7 +998,8 @@ public class Zi_O_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_ghost", "zi_o", "ziku_driver_zi_o_belt_ghost",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -992,7 +1013,8 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_ghost", "geiz", "ziku_driver_geiz_belt_ghost",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -1046,9 +1068,11 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_R = ITEMS.register("decade_ex_aid_ridewatch_r",
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_decade_ex_aid_r", "zi_o", "ziku_driver_zi_o_belt_decade_ex_aid",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
@@ -1060,9 +1084,10 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_L = ITEMS.register("decade_ex_aid_ridewatch_l",
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_decade_ex_aid_l", "zi_o", "ziku_driver_zi_o_belt_decade_ex_aid",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -1075,6 +1100,7 @@ public class Zi_O_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_ex_aid", "geiz", "ziku_driver_geiz_belt_ex_aid",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -1088,6 +1114,7 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_ex_aid", "zi_o", "ziku_driver_zi_o_belt_ex_aid",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -1119,7 +1146,7 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> DECADE_BUILD_RIDEWATCH = ITEMS.register("decade_build_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_decade_build", "zi_o", "ziku_driver_zi_o_belt_decade_build",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1137,7 +1164,9 @@ public class Zi_O_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "_build", "geiz", "ziku_driver_geiz_belt_build",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -1155,7 +1184,9 @@ public class Zi_O_Rider_Items {
             () -> new RidewatchItem(new Item.Properties(), 0, "_build", "zi_o", "ziku_driver_zi_o_belt_build",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -1291,7 +1322,9 @@ public class Zi_O_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
+                    ,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
