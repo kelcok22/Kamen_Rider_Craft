@@ -738,6 +738,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.BIKAISER.get(), KaiserEntity.setAttributes().build());
 
         event.put(MobsCore.KASSHINE.get(), KasshineEntity.setAttributes().build());
+        event.put(MobsCore.ANOTHER_ZI_O.get(), KasshineEntity.setAttributes().build());
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
 		event.put(MobsCore.WOZ.get(), WozEntity.setAttributes().build());
         event.put(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidEntity.setAttributes().build());

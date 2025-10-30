@@ -575,6 +575,7 @@
   "henshin.kamenridercraft.evol_black_hole":"§0Over the Evolution!\n§4Cobra! §8Rider System! §0Revolution! Are You Ready?\nBlack Hole! Black Hole! Black Hole! Revolution! Muhahahahahahaa!",
   "henshin.kamenridercraft.evolto":"Ready, go! Feverflow! Fuhahahahahaha! Fuhahahahahahahaha!",
   "henshin.kamenridercraft.killbus":"§cKillbus Spider! Are You Ready?\n§cSpider! Spider! Killbus Spider!",
+  "henshin.kamenridercraft.another_zi_o_ii": "Zi-O II!",
   "henshin.kamenridercraft.woz": "Woz! Action! Toei Future Time!",
   "henshin.kamenridercraft.ginga": "<§5Kamen Rider Ginga§f> I have come to destroy everything you hold dear.",
   "henshin.kamenridercraft.magia":"§4Zetsumerise!",
@@ -8523,6 +8524,7 @@
   "entity.kamenridercraft.ginga": "Kamen Rider Ginga",
   "entity.kamenridercraft.woz": "Kamen Rider Woz (White Woz)",
   "entity.kamenridercraft.kasshine": "Kasshine",
+  "entity.kamenridercraft.another_zi_o": "Another Zi-O",
   "entity.kamenridercraft.taka_watchroid": "Taka Watchroid",
   "entity.kamenridercraft.kodama_suika_arms": "Kodama Suika Arms",
 
@@ -8775,6 +8777,7 @@
   "item.kamenridercraft.ginga_spawn_egg": "Kamen Rider Ginga Spawn Egg",
   "item.kamenridercraft.woz_spawn_egg": "Kamen Rider Woz Spawn Egg",
   "item.kamenridercraft.kasshine_spawn_egg": "Kasshine Spawn Egg",
+  "item.kamenridercraft.another_zi_o_spawn_egg": "Another Zi-O Spawn Egg",
 
 "item.kamenridercraft.trilobite_magia_spawn_egg": "Trilobite Magia Spawn Egg",
 "item.kamenridercraft.dodo_magia_chick_spawn_egg": "Dodo Magia Chick Spawn Egg",

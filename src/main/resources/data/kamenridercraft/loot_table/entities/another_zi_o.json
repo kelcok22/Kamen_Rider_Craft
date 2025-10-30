@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:another_zi_o_watch"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:another_build_watch"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:another_gaim_watch"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:another_ex_aid_watch"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:another_ghost_watch"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_watch",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 5
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
