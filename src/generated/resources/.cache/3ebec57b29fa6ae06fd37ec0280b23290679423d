@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-30T03:26:59.6536206	Item Models: kamenridercraft
+// 1.21.1	2025-10-30T04:05:04.4081317	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -416,7 +416,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/peop
 a2dbf137300b6a2829e5e8addd43111119d17912 assets/kamenridercraft/models/item/popburn_gochizo.json
 47eeb2cd297e6a132aa2bc90ea12a983ad3b86e0 assets/kamenridercraft/models/item/poppingummy_gochizo_halloween.json
 668c0a9b585e40f242864d2c65a2fbb8534890e7 assets/kamenridercraft/models/item/potage_umaibo_gochizo.json
-f22a8eedb142ef2147d1a1a2b911bd6b9305204b assets/kamenridercraft/models/item/prana_infused_rider_circuit.json
+a1fdb7cf78a895809082b4a947b4dbe371212a40 assets/kamenridercraft/models/item/prana_infused_rider_circuit.json
 bc2544e1cdab6b06bbd61c500dbf38928a343fa1 assets/kamenridercraft/models/item/projection_capsem.json
 cf5d6cd7d04c073d011ef32a1776093054ce4955 assets/kamenridercraft/models/item/prototype_cup_gochizo.json
 43bda8c5bf518c60593a57b61622246185ad2d39 assets/kamenridercraft/models/item/protozero_core.json
