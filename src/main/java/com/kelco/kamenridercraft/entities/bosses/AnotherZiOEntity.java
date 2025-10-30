@@ -14,9 +14,12 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import java.util.Random;
 
 public class AnotherZiOEntity extends BaseHenchmenEntity {
 
@@ -31,24 +34,32 @@ public class AnotherZiOEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ANOTHER_ZIKU_DRIVER_ZI_O.get()));
     }
 
+
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn  && this.getHealth()<100
-        && playerIn.getInventory().countItem(Zi_O_Rider_Items.ZI_O_TRINITY_RIDEWATCH.asItem())!=0) {
-            if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_zi_o_ii"));
-            this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
-            this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
-            this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
+        if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<100
+                && this.getItemBySlot(EquipmentSlot.FEET).getItem()==Zi_O_Rider_Items.ANOTHER_ZIKU_DRIVER_ZI_O.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)==Zi_O_Rider_Items.ANOTHER_ZI_O_WATCH.get()) {
 
-            RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.ANOTHER_ZI_O_II_WATCH.get(), 1);
+            Inventory Inventory = playerIn.getInventory();
+            boolean hasWatch = Inventory.countItem(Zi_O_Rider_Items.ZI_O_II_RIDEWATCH.get()) != 0;
+            Random generator = new Random();
+            int rand = generator.nextInt(2);
+            if (hasWatch) {
+                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.ANOTHER_ZI_O_II_WATCH.get(), 1);
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_zi_o_ii"));
+                this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
+                this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
+                this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
+                this.heal(40);
+            }
         }
     }
 
     public void remove(RemovalReason p_149847_) {
 
         if ( this.isDeadOrDying()) {
-            if(!this.level().isClientSide() && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Zi_O_Rider_Items.ANOTHER_ZIKU_DRIVER_ZI_O.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),2)==Zi_O_Rider_Items.ANOTHER_ZI_O_II_WATCH.get()) {
+            if(!this.level().isClientSide() && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Zi_O_Rider_Items.ANOTHER_ZIKU_DRIVER_ZI_O.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)==Zi_O_Rider_Items.ANOTHER_ZI_O_II_WATCH.get()) {
                 ItemEntity key = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(Zi_O_Rider_Items.ANOTHER_ZI_O_II_WATCH.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 level().addFreshEntity(key);

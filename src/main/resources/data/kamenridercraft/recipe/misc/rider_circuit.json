@@ -2,16 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "group": "kamen_rider",
   "pattern": [
-	"ZXZ",
-	"XZX",
-	"ZXZ"
+	"ZX",
+	"RZ"
   ],
   "key": {
 	"X": {
 	  "tag": "c:ingots/gold"
 	}, "Z": {
-	  "tag": "c:ingots/iron"
-	}
+	  "tag": "c:ingots/copper"
+	}, "R": {
+      "item": "minecraft:redstone"
+    }
   },
   "result": {
 	"id": "kamenridercraft:rider_circuit"
