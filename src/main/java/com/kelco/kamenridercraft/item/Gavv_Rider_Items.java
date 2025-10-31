@@ -402,7 +402,7 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> KINCHOCO_GOCHIZO = ITEMS.register("kinchoco_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kinchoco","gavv","henshin_belt_gavv_belt_kinchoco",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -414,8 +414,8 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> UIROU_GOCHIZO = ITEMS.register("uirou_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_uirou","gavv","henshin_belt_gavv_belt_uirou",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -426,8 +426,8 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> MENSEN_GOCHIZO = ITEMS.register("mensen_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mensen","gavv","henshin_belt_gavv_belt_mensen",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
@@ -438,8 +438,8 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> TAKOSEN_GOCHIZO = ITEMS.register("takosen_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_takosen","gavv","henshin_belt_gavv_belt_takosen",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+					new MobEffectInstance(Effect_core.LONG_ARM, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -450,8 +450,8 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> NINGYO_GOCHIZO = ITEMS.register("ningyo_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ningyo","gavv","henshin_belt_gavv_belt_ningyo",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
