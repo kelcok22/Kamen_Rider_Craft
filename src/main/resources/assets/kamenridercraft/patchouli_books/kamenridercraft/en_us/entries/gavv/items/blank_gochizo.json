@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:gavv/blank_gochizo",
-			"text": "Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
+			"text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		},
       {
         "type": "patchouli:text",

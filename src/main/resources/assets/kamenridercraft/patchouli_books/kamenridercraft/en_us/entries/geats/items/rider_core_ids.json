@@ -491,7 +491,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_osaka",
 			"title": " ",
-			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Found inside a Geats $(l:misc/stageshow)Stageshow$(/l)$(br2)Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -504,7 +504,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_fukuoka",
 			"title": " ",
-			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Found inside a Geats $(l:misc/stageshow)Stageshow$(/l)$(br2)Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -517,7 +517,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_nagoya",
 			"title": " ",
-			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Found inside a Geats $(l:misc/stageshow)Stageshow$(/l)$(br2)Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -530,7 +530,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_rider_core_id_tokyo",
 			"title": " ",
-			"text": "Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+			"text": "Found inside a Geats $(l:misc/stageshow)Stageshow$(/l)$(br2)Obtained by opening $(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
 		}
 	]
 }

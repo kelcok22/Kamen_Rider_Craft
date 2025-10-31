@@ -195,8 +195,73 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:partea_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kinchoco_gochizo",
+        "title": "Kin Choco Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#kin_choco)Kin Choco Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kinchoco_gochizo",
+        "title": " ",
+        "text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "uirou_gochizo",
+        "title": "Uirou Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#uirou)Uirou Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:uirou_gochizo",
+        "title": " ",
+        "text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "mensen_gochizo",
+        "title": "Men Sen Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#men_sen)Men Sen Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:mensen_gochizo",
+        "title": " ",
+        "text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "takosen_gochizo",
+        "title": "Tako Sen Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#tako_sen)Tako Sen Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:takosen_gochizo",
+        "title": " ",
+        "text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ningyo_gochizo",
+        "title": "Ningyo Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#ningyo)Ningyo Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ningyo_gochizo",
+        "title": " ",
+        "text": "Found inside a Gavv $(l:misc/stageshow)Stageshow$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "bushel_gochizo",

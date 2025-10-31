@@ -360,7 +360,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:maja_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+			"text": "Found inside a Gaim $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -372,7 +372,7 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:gaim/kabi_orange_lockseed",
-			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l) $(l:gaim/structures/demushu_helheim_city)structures$(/l)"
+			"text": "Found inside a Gaim $(l:misc/stageshow)Stageshow$(/l) or in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l)$(l:gaim/structures/demushu_helheim_city)structures$(/l)"
 		},
 		{
 			"type": "patchouli:text",

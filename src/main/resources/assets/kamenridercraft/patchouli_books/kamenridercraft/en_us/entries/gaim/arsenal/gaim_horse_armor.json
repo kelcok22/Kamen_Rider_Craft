@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gaim_horse_armor",
 			"title": " ",
-			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l) $(l:gaim/structures/demushu_helheim_city)structures$(/l)"
+			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l)$(l:gaim/structures/demushu_helheim_city)structures$(/l)"
 		}
 	]
 }
