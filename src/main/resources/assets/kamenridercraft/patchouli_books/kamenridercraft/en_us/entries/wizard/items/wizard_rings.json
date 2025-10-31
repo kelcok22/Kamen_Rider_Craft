@@ -332,7 +332,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_ring",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
+			"text": "Found inside a Wizard $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
 		},
 		{
 			"type": "patchouli:text",

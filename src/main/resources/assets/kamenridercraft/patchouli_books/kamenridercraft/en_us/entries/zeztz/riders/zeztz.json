@@ -72,7 +72,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Zeztz",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Speed$(li)Drill"
       },
       {
         "type": "patchouli:entity",
@@ -86,7 +86,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Zeztz",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
       },
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zeztz",
-			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Anti Poison"
 		},
       {
         "type": "patchouli:entity",
@@ -114,7 +114,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Zeztz",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
       },
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Zeztz",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Low Gravity VI"
       }
 	]
 }

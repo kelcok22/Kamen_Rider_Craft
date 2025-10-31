@@ -229,31 +229,31 @@
 			"type": "patchouli:text",
 			"anchor": "gatling",
 			"title": "Gatling",
-			"text": "This effect allows you to fire a stream of arrows by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#gatling_switch)Gatling Switch$(/l)$(li)Use the $(l:drive/items/shift_cars#midnightshadow)Midnight Shadow$(/l) Shift Car"
+			"text": "This effect allows you to fire a stream of arrows by pressing the ability key.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#gatling_switch)Gatling Switch$(/l)$(li)Use the $(l:drive/items/shift_cars#midnightshadow)Midnight Shadow$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cannon",
 			"title": "Cannon",
-			"text": "This effect allows you to shoot a small fireball every 6 seconds by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#launcher_switch)Launcher Switch$(/l)"
+			"text": "This effect allows you to shoot a small fireball every 6 seconds by pressing the ability key.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#launcher_switch)Launcher Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warp",
 			"title": "Warp",
-			"text": "This effect allows you to shoot an ender pearl every 6 seconds by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:drive/items/shift_cars#dimension_cab)Dimension Cab$(/l) Shift Car"
+			"text": "This effect allows you to shoot an ender pearl every 6 seconds by pressing the ability key.$(br2)Examples for how to get this effect:$(li)Use the $(l:drive/items/shift_cars#dimension_cab)Dimension Cab$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "stealth",
 			"title": "Stealth",
-			"text": "This effect allows you to turn invisible when sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l)$(li)Use the $(l:build/items/fullbottles#ninja_full_bottle)Ninja Fullbottle$(/l)"
+			"text": "This effect allows you to turn invisible by pressing the ability key.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l)$(li)Use the $(l:build/items/fullbottles#ninja_full_bottle)Ninja Fullbottle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "fish",
 			"title": "Fish!",
-			"text": "This effect causes you to drop a salmon every 6 seconds when sneaking. Higher amplifiers increase the amount of salmon, and being on fire will cause the salmon to come out cooked.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#net_switch)Net Switch$(/l)$(li)Use the $(l:geats/items/raise_buckles#shark_raise_buckle)Shark Buckle$(/l)"
+			"text": "This effect causes you to drop a salmon by pressing the ability key, with a 9 second cooldown. Higher amplifiers increase the amount of salmon, and being on fire will cause the salmon to come out cooked.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#net_switch)Net Switch$(/l)$(li)Use the $(l:geats/items/raise_buckles#shark_raise_buckle)Shark Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -298,6 +298,76 @@
 			"title": "Kamen Rider Gavv",
 			"text": "Appears in:$(li)Kamen Rider Gavv: Funny Sweets Tea Party (2025, stage show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Resistance"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "kin_choco",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:kinchoco_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Kin Choco Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#kinchoco_gochizo)Kin Choco Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "uirou",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:uirou_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Uirou Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#uirou_gochizo)Uirou Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "men_sen",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:mensen_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Men Sen Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#mensen_gochizo)Men Sen Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "tako_sen",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:takosen_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Tako Sen Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#takosen_gochizo)Tako Sen Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ningyo",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:ningyo_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Ningyo Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#ningyo_gochizo)Ningyo Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Resistance"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "chocohone",
