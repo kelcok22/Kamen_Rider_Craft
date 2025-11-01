@@ -1077,7 +1077,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("riderman").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().SetShowFace().ChangeRiderName("riderman").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> X_CARD = ITEMS.register("x_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
