@@ -295,6 +295,7 @@ public class Kuuga_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
 					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
+                    new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);

@@ -619,7 +619,13 @@ public class W_Rider_Items {
                 }
             }.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.W_TAB_ITEM));
 
-	//public static final DeferredItem<Item> ROAD_MEMORY = ITEMS.register("road_memory",
+    public static final DeferredItem<Item> JOKER_DOPANT_MEMORY_BROKEN = ITEMS.register("joker_dopant_memory_broken",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.W_TAB_ITEM));
+
+    public static final DeferredItem<Item> JOKER_DOPANT_MEMORY = ITEMS.register("joker_dopant_memory",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.W_TAB_ITEM));
+
+    //public static final DeferredItem<Item> ROAD_MEMORY = ITEMS.register("road_memory",
 	//		() -> new BaseCityItem(new Item.Properties(),10).AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> EGG_CHICKEN_MEMORY = ITEMS.register("egg_chicken_memory",

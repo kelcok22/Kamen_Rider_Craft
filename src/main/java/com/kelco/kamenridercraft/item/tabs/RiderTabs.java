@@ -650,6 +650,7 @@ public class RiderTabs {
             event.accept(MobsCore.SHADOWMOON_SPAWN_EGG);
 
             event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
+            event.accept(MobsCore.N_DAGUVA_ZEBA_SPAWN_EGG);
 
             event.accept(MobsCore.PANTHERAS_LUTEUS_SPAWN_EGG);
             event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
