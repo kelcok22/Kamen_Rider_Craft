@@ -254,9 +254,15 @@ public class Faiz_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.FAIZ_TAB_ITEM));
-	
-	
-	public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",
+
+    public static final DeferredItem<Item> FAIZ_MISSION_MEMORY_TOY = ITEMS.register("faiz_mission_memory_toy",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> KAIXA_MISSION_MEMORY_TOY = ITEMS.register("kaixa_mission_memory_toy",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZCHESTPLATE = ITEMS.register("faiztroso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));

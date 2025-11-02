@@ -971,7 +971,10 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> GREAT_BOOK_FRAGMENT = ITEMS.register("great_book_fragment",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
-	public static final DeferredItem<Item> GHOST_IJINROKU_WONDER_RIDE_BOOK = ITEMS.register("ghost_ijinroku_wonder_ride_book",
+    public static final DeferredItem<Item> WONDER_STORY = ITEMS.register("wonder_story",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.SABER_TAB_ITEM));
+
+    public static final DeferredItem<Item> GHOST_IJINROKU_WONDER_RIDE_BOOK = ITEMS.register("ghost_ijinroku_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_ghost_ijinroku","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)

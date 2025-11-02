@@ -395,6 +395,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SHADOWMOON.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ZU_GUMUN_BA.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.N_DAGUVA_ZEBA.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.PANTHERAS_LUTEUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EL_OF_THE_WATER.get(), BasicEntityRenderer::new);

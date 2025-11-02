@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 2,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_rising_mighty"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_rising_dragon"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_rising_pegasus"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_rising_titan"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_black_rising_mighty"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:n_daguva_zeba_ultimate"
+		}
+	  ]
+	}, {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kuuga_growing",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

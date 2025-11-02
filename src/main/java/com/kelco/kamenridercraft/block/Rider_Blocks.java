@@ -1013,6 +1013,13 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
 
+    public static final DeferredBlock<Block> HAYABUSA_KUN = registerBlock("hayabusa_kun",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL),Block.box(4, 0, 4, 18,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
+    public static final DeferredBlock<Block> UTAN = registerBlock("utan",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL),Block.box(4, 0, 4, 18,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
+
     public static final DeferredBlock<Block> PUNKJACKOLANTERN = registerBlock("punkjackolantern",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
                     .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1),Block.box(3, 0, 3, 13,7, 13)).AddToTabList(RiderTabs.RIDER_DECOR));
