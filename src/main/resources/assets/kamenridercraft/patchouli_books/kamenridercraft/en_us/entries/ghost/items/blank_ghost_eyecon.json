@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items$(br2)Drops different Ghost Eyecons when right-clicked on a block$(br2)Drops on next page"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item and repair material for most Ghost items$(br2)Drops personal Ghost Eyecons when used on any block other than the $(l:misc/blocks/machine_blocks#monolith)Monolith$(/l)$(br2)Drops on next page"
 		},
 		{
 			"type": "patchouli:crafting",

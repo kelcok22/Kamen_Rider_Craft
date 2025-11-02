@@ -17,33 +17,29 @@ public class RaiderEntity extends BaseHenchmenEntity {
 	
     public RaiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="raider_horseshoe_crab";
+        NAME="raider_buffalo";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_BATTLE.get()));
-		switch (this.getRandom().nextInt(7)) {
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_BUFFALO.get()));
+		switch (this.getRandom().nextInt(5)) {
 			case 0:
-				NAME="raider_buffalo";
-				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_BUFFALO.get()));
-				break;
-			case 1:
 				NAME="raider_whale";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_WHALE.get()));
 				break;
-			case 2:
+			case 1:
 				NAME="raider_lion";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_LION.get()));
 				break;
-			case 3:
+			case 2:
 				NAME="raider_penguin";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_PENGUIN.get()));
 				break;
-			case 4:
+			case 3:
 				NAME="raider_panda";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_PANDA.get()));
 				break;
-			case 5:
+			case 4:
 				NAME="raider_jackal";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_JACKAL.get()));
 				break;

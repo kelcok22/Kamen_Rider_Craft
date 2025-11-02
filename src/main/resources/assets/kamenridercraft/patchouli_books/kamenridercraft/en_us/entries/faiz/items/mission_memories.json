@@ -177,6 +177,32 @@
 			"item": "kamenridercraft:seeda_mission_memory",
 			"title": " ",
 			"text": "Item is currently unobtainable"
-		}
-	]
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "faiz_mission_memory_toy",
+        "title": "???",
+        "text": "Appears in:$(li)DX Faiz Edge (2003, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:faiz_mission_memory_toy",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kaixa_mission_memory_toy",
+        "title": "???",
+        "text": "Appears in:$(li)DX Kaixa Blaygun (2003, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kaixa_mission_memory_toy",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+    ]
 }

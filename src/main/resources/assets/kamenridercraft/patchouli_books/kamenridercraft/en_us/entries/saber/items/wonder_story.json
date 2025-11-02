@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:wonder_story",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_story",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

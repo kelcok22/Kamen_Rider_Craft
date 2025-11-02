@@ -1,0 +1,17 @@
+{
+	"name": "N.Daguva.Zeba",
+	"icon": "kamenridercraft:kuuga_logo",
+	"category": "kamenridercraft:kuuga/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:n_daguva_zeba",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br)Health: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Spawn locations: ???$(br2)Drops$(li)2-4 $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadams$(/l)$(li)1 $(l:kuuga/items/amadam_stones#n_daguva_zeba_ultimate)M.Daguva.Zeba Ultimate Amadam$(/l)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Rising Mighty Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Rising Dragon Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Rising Pegasus Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Rising Titan Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_black_rising_mighty)Kuuga Black Rising Mighty Amadam$(/l) (20%)"
+		}
+	]
+}

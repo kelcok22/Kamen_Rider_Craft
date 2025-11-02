@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Heisei Generations Forever (2018, movie)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_w)Another W"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:another_w_driver",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_w_driver"
 		}
 	]
 }

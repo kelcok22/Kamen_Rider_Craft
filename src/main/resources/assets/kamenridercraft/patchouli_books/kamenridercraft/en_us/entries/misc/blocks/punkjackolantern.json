@@ -2,7 +2,7 @@
 	"name": "PunkJack O'Lantern",
 	"icon": "kamenridercraft:punkjackolantern",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 49,
+	"sortnum": 51,
 	"pages": [
 		{
 			"type": "patchouli:text",

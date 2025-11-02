@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_growing",
 			"title": " ",
-			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu.Gumun.Ba$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		}
 	]
 }

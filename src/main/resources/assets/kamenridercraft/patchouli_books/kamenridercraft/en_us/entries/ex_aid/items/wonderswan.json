@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:wonderswan",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": " "
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wonderswan",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+	]
+}

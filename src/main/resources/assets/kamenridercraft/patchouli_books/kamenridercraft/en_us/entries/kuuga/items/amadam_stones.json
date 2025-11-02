@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_mighty",
-			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu.Gumun.Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_dragon",
 			"title": " ",
-			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu.Gumun.Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_pegasus",
 			"title": " ",
-			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu.Gumun.Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_titan",
 			"title": " ",
-			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu_gumun_ba)Zu.Gumun.Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -63,7 +63,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:kuuga/kuuga_rising_mighty"
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_mighty",
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -74,7 +75,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:kuuga/kuuga_rising_dragon"
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_dragon",
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -85,7 +87,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:kuuga/kuuga_rising_pegasus"
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_pegasus",
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -96,7 +99,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:kuuga/kuuga_rising_titan"
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_titan",
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -175,7 +179,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_black_rising_mighty",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -201,7 +205,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:n_daguva_zeba_ultimate",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
 		}
 	]
 }
