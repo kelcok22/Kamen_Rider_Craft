@@ -15,7 +15,9 @@
 	"kamenridercraft:commander_memory",
 	"kamenridercraft:commander_memory_enhancing_adapter",
 	"kamenridercraft:memory_memory",
-	"kamenridercraft:egg_chicken_memory",
+    "kamenridercraft:joker_dopant_memory_broken",
+    "kamenridercraft:joker_dopant_memory",
+    "kamenridercraft:egg_chicken_memory",
 	"kamenridercraft:masquerade_memory"
   ]
 }

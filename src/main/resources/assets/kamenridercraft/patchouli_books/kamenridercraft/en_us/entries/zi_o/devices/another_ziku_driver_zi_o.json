@@ -9,11 +9,9 @@
 			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_zi_o)Another Zi-O"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:another_ziku_driver_zi_o",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_ziku_driver_zi_o",
+          "text": "Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)'s equipment"
 		}
 	]
 }

@@ -1,7 +1,7 @@
 {
-	"parent": "kamenridercraft:kuuga/main",
-    "name": "Zu-Gumun-Ba",
-    "description": "",
-    "icon": "kamenridercraft:kuuga_logo",
-    "sortnum": 4
+  "parent": "kamenridercraft:kuuga/main",
+  "name": "Kuuga Mobs",
+  "description": "Every mob from or relating to the show, Kamen Rider Kuuga.",
+  "icon": "kamenridercraft:kuuga_logo",
+  "sortnum": 4
 }

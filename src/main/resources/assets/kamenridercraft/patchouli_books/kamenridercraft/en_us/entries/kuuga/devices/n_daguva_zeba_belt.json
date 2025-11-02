@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:n_daguva_zeba_belt",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)'s equipment"
 		}
 	]
 }

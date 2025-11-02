@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:hayabusa_kun",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Can be worn on the head armor slot"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hayabusa_kun",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+    ]
+}

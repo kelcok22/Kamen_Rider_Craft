@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_ghost)Another Ghost"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:another_ghost_driver",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_ghost_driver"
 		}
 	]
 }
