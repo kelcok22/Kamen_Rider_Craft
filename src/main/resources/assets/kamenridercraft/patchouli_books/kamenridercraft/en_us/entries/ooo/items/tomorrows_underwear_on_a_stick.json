@@ -1,0 +1,16 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:tomorrows_underwear_on_a_stick",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Prevents you from getting the Greeed effect"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/tomorrows_underwear_on_a_stick"
+		}
+	]
+}
