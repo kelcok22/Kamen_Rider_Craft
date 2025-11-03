@@ -1476,6 +1476,32 @@
         "title": " ",
         "text": "Item is currently unobtainable"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "gigantliner_ride_chemy_card_fs",
+        "title": "Gigantliner Ride Chemy Card (Final Stage ver.)",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#legendliner)Legendliner$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gigantliner_ride_chemy_card_fs",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "legendary_legend_ride_chemy_card_fs",
+        "title": "Legendary Legend Ride Chemy Card (Final Stage ver.)",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#legendliner)Legendliner$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:legendary_legend_ride_chemy_card_fs",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "firemars_ride_chemy_card_televikun",

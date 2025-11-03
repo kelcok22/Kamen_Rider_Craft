@@ -46,6 +46,20 @@
 			"title": "Kamen Rider Diend",
 			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Transforms with the $(l:decade/arsenal/diendriver)Diendriver$(/l) and $(l:decade/devices/diend_belt)Diend Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Night Vision$(li)Haste III$(li)Strength IV"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "chinomanako",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_chinomanako_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Diend Formation",
+        "text": "Accessed with the $(l:decade/items/kamenride_cards#diend_chinomanako_card)???$(/l) card"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Chinomanako",
+        "text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:decade/arsenal/diendriver)Diendriver$(/l) and $(l:decade/devices/diend_belt)Diend Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Strength"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "green",
