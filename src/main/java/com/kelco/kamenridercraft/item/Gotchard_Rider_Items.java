@@ -2382,7 +2382,12 @@ public class Gotchard_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valvarad_lachesis", MADWHEEL_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
-	public static final DeferredItem<Item> GOTCHANCOLLECTION_PANEL = ITEMS.register("gotchancollection_panel",
+    public static final DeferredItem<Item>  DREADRIVER_MEIKOKU_NO_ANSHIMAI = ITEMS.register("dreadriver_meikoku_no_anshimai",
+            () -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"meikoku_no_anshimai", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS ,
+                    new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+
+    public static final DeferredItem<Item> GOTCHANCOLLECTION_PANEL = ITEMS.register("gotchancollection_panel",
 			() -> new GotchancollectionPanelItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 
