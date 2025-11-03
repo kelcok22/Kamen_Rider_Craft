@@ -7,6 +7,10 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:tomorrows_underwear",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
           "name": "kamenridercraft:genm_continue",
           "weight": 1
         },{

@@ -1,0 +1,47 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "builtin/generated",
+	"textures": {
+		"layer0": "kamenridercraft:item/tomorrows_underwear_on_a_stick"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 55],
+			"translation": [0, 10.5, 0],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, -55],
+			"translation": [0, 10.5, 0],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 85, 0],
+			"translation": [0, 3, 1],
+			"scale": [1.25, 1.25, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -85, 0],
+			"translation": [0, 3, 1],
+			"scale": [1.25, 1.25, 0.75]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"translation": [0, -1, 0]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 13, -19.75],
+			"scale": [2, 2, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [0.75, -0.25, 0],
+			"scale": [1, 1, 0.5]
+		}
+	}
+}
