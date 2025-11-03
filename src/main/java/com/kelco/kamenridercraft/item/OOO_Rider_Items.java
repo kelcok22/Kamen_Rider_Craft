@@ -1424,7 +1424,14 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> FURIFURI_CANDROID = ITEMS.register("furifuri_candroid",
 			() -> new BaseItem(new Item.Properties()).AddToList(RidevendorVendingModeEntity.CANDROID,1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
-	public static void register(IEventBus eventBus) {
+    public static final DeferredItem<Item> TOMORROWS_UNDERWEAR = ITEMS.register("tomorrows_underwear",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.OOO_TAB_ITEM));
+
+    public static final DeferredItem<Item> TOMORROWS_UNDERWEAR_ON_A_STICK = ITEMS.register("tomorrows_underwear_on_a_stick",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+
+
+    public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
 }

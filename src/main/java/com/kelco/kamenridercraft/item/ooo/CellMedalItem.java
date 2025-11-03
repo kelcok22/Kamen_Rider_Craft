@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.ooo;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
+import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -24,10 +25,11 @@ public class CellMedalItem extends BaseItem {
 
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int num, boolean flag) {
+
 		if (entity instanceof Player playerIn) {
 					int num1 = playerIn.getInventory().countItem(OOO_Rider_Items.CELL_MEDAL.get());
 					int num2 = (num1/64)-1;
-					if (num1>63) playerIn.addEffect(new MobEffectInstance(Effect_core.GREEED,300,num2));
+					if (num1>63&playerIn.getInventory().countItem(OOO_Rider_Items.TOMORROWS_UNDERWEAR_ON_A_STICK.get()) == 0) playerIn.addEffect(new MobEffectInstance(Effect_core.GREEED,300,num2));
 			}
 		}
 

@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-03T13:32:54.7845922	Item Models: kamenridercraft
+// 1.21.1	2025-11-03T16:53:54.9570753	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -541,6 +541,7 @@ ee7bd024ed57eac5cfa9d77e8f70f8a288e6f66d assets/kamenridercraft/models/item/tenl
 829dfe043f82d3ad35e83d6f12efc53fb3680625 assets/kamenridercraft/models/item/tirolchocolate_gochizo.json
 cedaeb5dbcdaa19dc2ade38e64a8bf357fd5ed1e assets/kamenridercraft/models/item/tirolchocolate_gochizo_variety.json
 f9b7fe4f92272fdcf7821733b8d7adc20957cc21 assets/kamenridercraft/models/item/tokujoka_key.json
+3f250bde6e1e860f62ac8e6bcb491cf78966534e assets/kamenridercraft/models/item/tomorrows_underwear.json
 2d4949f59d82fa26fd985e732379b9280287d9d2 assets/kamenridercraft/models/item/tonkatsu_umaibo_gochizo.json
 a1e01a0e7d648c43f8a8bfd6242c4a23428037c7 assets/kamenridercraft/models/item/toppo_gochizo.json
 57ff1f0b85fe61857f88ddfc2fab8d171518a149 assets/kamenridercraft/models/item/transform_capsem.json
