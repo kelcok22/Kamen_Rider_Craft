@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-02T00:22:49.1299117	Item Models: kamenridercraft
+// 1.21.1	2025-11-02T23:03:14.6111939	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -140,6 +140,7 @@ acbd6cd0b978bd2f1f7b206d3f7045f4bc2e7ce0 assets/kamenridercraft/models/item/den_
 8959f81cba17f5eebfbf6a115e050e9818332475 assets/kamenridercraft/models/item/den_o_ring.json
 456d7dc45041c6250af4b4c9b05b19e762d46276 assets/kamenridercraft/models/item/dgp_winners_coin.json
 46523954e3d918fee97eb53bbb4d15c2e224e0e4 assets/kamenridercraft/models/item/diago_speedy_wonder_ride_book.json
+4c1b6b03b0e5d2e6a7d7ecca4221274399e23d61 assets/kamenridercraft/models/item/diend_chinomanako_card.json
 9ecb9d242932c4f7b9e9c367a849b3f3927d9758 assets/kamenridercraft/models/item/doctorkozo_ride_chemy_card.json
 f5466565218457baa39efe0ff47674a44f92fda6 assets/kamenridercraft/models/item/dogga_statue.json
 0d62d9e64ea663764b69df47964b4a5100f6ded8 assets/kamenridercraft/models/item/donposeidon_ride_chemy_card.json
