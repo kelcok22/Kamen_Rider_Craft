@@ -2422,8 +2422,8 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item>  DREADRIVER_TROOPER = ITEMS.register("dreadriver_trooper",
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dreatrooper", ANTROOPER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
-    public static final DeferredItem<Item>  DREADRIVER_MEIKOKU_NO_ANSHIMAI = ITEMS.register("dreadriver_meikoku_no_anshimai",
-            () -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"meikoku_no_anshimai", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS ,
+    public static final DeferredItem<Item>  DREADRIVER_MEIKOKU_NO_SANSHIMAI = ITEMS.register("dreadriver_meikoku_no_sanshimai",
+            () -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"meikoku_no_sanshimai", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS ,
                     new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
     public static final DeferredItem<Item> LEGENDRIVER = ITEMS.register("legendriver",

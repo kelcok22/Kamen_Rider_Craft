@@ -66,6 +66,18 @@
         "item": "kamenridercraft:antrooper_repli_chemy_card",
         "title": " ",
         "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gigantliner_repli_chemy_card",
+        "title": "Gigantliner Replichemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Dread's $(l:gotchard/riders/dread#type_final)Type Final$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gigantliner_repli_chemy_card",
+        "text": "Item is currently unobtainable"
       }
-	]
+    ]
 }

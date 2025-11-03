@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Dorado",
 	"icon": "kamenridercraft:eldoradriver",
 	"category": "kamenridercraft:gotchard/riders",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -25,6 +25,19 @@
         "item": "kamenridercraft:dreadriver_trooper",
         "title": " ",
         "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "dreadriver_meikoku_no_sanshimai",
+        "title": "Dreadriver",
+        "text": "Appears in:$(li)Three Dark Sisters Presents: Kamen Rider Gotchard Unfinished Plan (2024, audio drama)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/meikoku_no_sanshimai)Kamen Rider Meikoku no Sanshimai"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dreadriver_meikoku_no_sanshimai",
+        "title": " ",
+        "text": "Item is currently unobtainable"
       }
     ]
 }

@@ -59,6 +59,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dread",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/dreadriver)Dreadriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Jump Boost II$(li)Strength III"
-		}
-	]
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "type_final",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gigantliner_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Type Final",
+        "text": "Accessed with the $(l:gotchard/items/replichemy_cards#gigantliner_repli_chemy_card)Gigantliner Replichemy Card$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Dread",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Transforms with the $(l:gotchard/devices/dreadriver)Dreadriver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)$(li)Speed VI$(li)Resistance VI$(li)Water Breathing$(li)Night Vision$(li)Regeneration$(li)Haste V$(li)Saturation$(li)Jump Boost VI$(li)Fire Resistance"
+      }
+    ]
 }
