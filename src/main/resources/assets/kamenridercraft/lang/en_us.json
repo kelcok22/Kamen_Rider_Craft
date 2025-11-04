@@ -2558,6 +2558,9 @@
 "item.kamenridercraft.neo_alpa_mission_memory": "Neo-Alpa Mission Memory",
 "item.kamenridercraft.pyron_mission_memory": "Pyron Mission Memory",
 "item.kamenridercraft.seeda_mission_memory": "Seeda Mission Memory",
+  "item.kamenridercraft.faiz_mission_memory_toy": "Faiz Mission Memory (Toy)",
+  "item.kamenridercraft.kaixa_mission_memory_toy": "Kaixa Mission Memory (Toy)",
+
 
   "kamenridercraft:blank_mission_memory.form": "Form: Base Form",
   "kamenridercraft:faiz_mission_memory.form": "Form: Base Form",
@@ -3102,6 +3105,7 @@
   "kamenridercraft:k_touch.form": "Form: Complete Form",
   "kamenridercraft:k_touch_21.form": "Form: Complete Form 21",
   "kamenridercraft:diend_power_up_card.form": "Form: Power Up Form",
+  "kamenridercraft:diend_chinomanako_card.form": "Form: Chinomanako Diend Formation",
   "kamenridercraft:dark_decade_card.form": "Form: Base Form",
   "kamenridercraft:k_touch_diend.form": "Form: Complete Form",
 
@@ -3298,6 +3302,7 @@
   "kamenridercraft:geiz_card.name": "§cGeiz",
 
 "item.kamenridercraft.diend_card": "KamenRide Diend",
+  "item.kamenridercraft.diend_chinomanako_card": "KamenRide Diend (Chinomanako Diend Formation)",
 "item.kamenridercraft.diend_power_up_card": "KamenRide Diend (Power Up)",
 "item.kamenridercraft.dark_decade_card": "KamenRide Dark Decade",
 
@@ -3584,6 +3589,8 @@
 "item.kamenridercraft.commander_memory_enhancing_adapter": "Commander Memory (Enhancing Adapter)",
 "item.kamenridercraft.magma_memory": "Magma Memory",
 "item.kamenridercraft.memory_memory": "Memory Memory",
+  "item.kamenridercraft.joker_dopant_memory": "Joker Dopant Memory",
+  "item.kamenridercraft.joker_dopant_memory_broken": "Joker Dopant Memory (Damaged)",
 "item.kamenridercraft.road_memory": "Road Memory",
 "item.kamenridercraft.egg_chicken_memory": "Egg Chicken Memory",
 
@@ -3797,6 +3804,8 @@
 "item.kamenridercraft.birth_core_cutter_wing": "Birth Cell Medal (Cutter Wing)",
 
   "item.kamenridercraft.o_medal_holder": "O Medal Holder",
+  "item.kamenridercraft.tomorrows_underwear": "Tomorrow's Underwear",
+  "item.kamenridercraft.tomorrows_underwear_on_a_stick": "Tomorrow's Underwear on a Stick",
 
   "kamenridercraft:false.form": "Form: Subspecies Form",
   "kamenridercraft:false.form_special": "Form: ",
@@ -4082,6 +4091,7 @@
   "item.kamenridercraft.shin_chan_switch": "Shin-chan Switch",
 
   "item.kamenridercraft.zodiarts_switch": "Zodiarts Switch",
+  "block.kamenridercraft.hayabusa_kun": "Hayabusa-kun",
 
   "kamenridercraft:fourze_basestates.form": "Form: Basestates",
   "kamenridercraft:fourze_elekstates.form": "Form: Elekstates",
@@ -4795,6 +4805,7 @@
   "item.kamenridercraft.signal_kaksarn": "Signal Kaksarn",
   "item.kamenridercraft.signal_tomarle": "Signal Tomarle",
   "item.kamenridercraft.signal_kikern": "Signal Kikern",
+  "item.kamenridercraft.signal_legend_faiz": "Signal Legend Faiz",
 
   "item.kamenridercraft.maxflare": "Max Flare",
   "item.kamenridercraft.funkyspike": "Funky Spike",
@@ -5436,6 +5447,8 @@
   "item.kamenridercraft.energy_item_holder": "Energy Item Holder",
   "item.kamenridercraft.rider_gashat_case": "Rider Gashat Case",
 
+  "item.kamenridercraft.wonderswan": "Wonderswan",
+
 "item.kamenridercraft.speed_energy_item": "Speed Energy Item",
 "item.kamenridercraft.iron_energy_item": "Iron Energy Item",
 "item.kamenridercraft.instigate_energy_item": "Instigate Energy Item",
@@ -5696,6 +5709,8 @@
   "item.kamenridercraft.pandora_panel_seito": "Pandora Panel (Seito)",
   "item.kamenridercraft.last_pandora_panel_black": "Last Pandora Panel (Black)",
   "item.kamenridercraft.last_pandora_panel_white": "Last Pandora Panel (White)",
+
+  "block.kamenridercraft.utan": "Utan",
 
   "kamenridercraft.name.best_match": "Best Match!",
   "kamenridercraft.name.best_match_hazard": "Super Best Match!",
@@ -6611,6 +6626,7 @@
   "item.kamenridercraft.book_of_ruin": "Book of Ruin",
   "item.kamenridercraft.forbidden_tome": "Forbidden Tome",
   "item.kamenridercraft.great_book_fragment": "Great Book Fragment",
+  "item.kamenridercraft.wonder_story": "Wonder Story",
   "item.kamenridercraft.book_gate_wonder_ride_book": "Book Gate Wonder Ride Book",
   "item.kamenridercraft.diago_speedy_wonder_ride_book": "Diagospeedy Wonder Ride Book",
 
@@ -8655,6 +8671,7 @@
 "item.kamenridercraft.shadowmoon_spawn_egg": "Shadow Moon Spawn Egg",
 "item.kamenridercraft.chap_grey_spawn_egg": "Grey Chap Spawn Egg",
 "item.kamenridercraft.zu_gumun_ba_spawn_egg": "Zu.Gumun.Ba Spawn Egg",
+  "item.kamenridercraft.n_daguva_zeba_spawn_egg": "N.Daguva.Zeba Spawn Egg",
 "item.kamenridercraft.pantheras_luteus_spawn_egg": "Pantheras Luteus Spawn Egg",
 "item.kamenridercraft.el_of_the_water_spawn_egg": "El of the Water Spawn Egg",
 "item.kamenridercraft.anguis_masculus_spawn_egg": "Anguis Masculus Spawn Egg",
