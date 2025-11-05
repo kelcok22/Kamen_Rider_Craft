@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:ultimate_half_typhoon_core",
+		  "weight": 3
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shin_typhoon_core_2_1",
+		  "weight": 1
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:prana_infused_rider_circuit",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 4,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
