@@ -807,6 +807,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.LANGO_STOMACH.get(), LangoEntity.setAttributes().build());
 		event.put(MobsCore.BOCCA_JALDAK.get(), BoccaEntity.setAttributes().build());
 
+        event.put(MobsCore.BATTA_AUGMENT.get(), BattaAugmentEntity.setAttributes().build());
+        event.put(MobsCore.SHIN_NO_0.get(), ShinNo0Entity.setAttributes().build());
+
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.RIDORON.get(), RidoronEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
@@ -924,6 +927,8 @@ public class ModCommonEvents {
 		event.register(MobsCore.KUROKAGE_TROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.AGENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+        event.register(MobsCore.BATTA_AUGMENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 
 		event.register(MobsCore.ANKH.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, AnkhEntity::checkAnkhSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);

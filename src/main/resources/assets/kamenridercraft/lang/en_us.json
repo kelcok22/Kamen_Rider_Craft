@@ -504,6 +504,7 @@
 
   "henshin.kamenridercraft.henshin":"Henshin!",
   "henshin.kamenridercraft.shocker_rider":"<Shocker Rider> §eHenshin!",
+  "henshin.kamenridercraft.shin_no_0":"<No. 0> §1Henshin!",
   "henshin.kamenridercraft.shadow_moon":"<High Priest> §eArise, Shadow Moon!",
   "henshin.kamenridercraft.shadow_moon.a1":"<Robo Rider> §aRobo Rider Force!",
   "henshin.kamenridercraft.another_agito":"<Another Agito> §2Henshin!",
@@ -8657,9 +8658,13 @@
   "entity.kamenridercraft.technolom_projection": "Technolom Projection",
   "entity.kamenridercraft.apollo": "Apollo",
   "entity.kamenridercraft.libra": "Libra",
+  "entity.kamenridercraft.batta_augment":"Phase Variation Batta Augment",
+  "entity.kamenridercraft.shin_no_0":"Kamen Rider No.0",
 
 "item.kamenridercraft.shocker_combatman_spawn_egg": "Shocker Combatman Spawn Egg",
 "item.kamenridercraft.shocker_riders_spawn_egg": "Shocker Rider Spawn Egg",
+  "item.kamenridercraft.batta_augment_spawn_egg": "Phase Variation Batta Augment Spawn Egg",
+  "item.kamenridercraft.shin_no_0_spawn_egg": "Kamen Rider No.0 Spawn Egg",
 "item.kamenridercraft.destron_combatman_spawn_egg": "Destron Combatman Spawn Egg",
 "item.kamenridercraft.god_warfare_agent_spawn_egg": "G.O.D. Warfare Agent Spawn Egg",
 "item.kamenridercraft.red_follower_spawn_egg": "Red Follower Spawn Egg",

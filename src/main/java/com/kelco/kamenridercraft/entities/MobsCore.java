@@ -1360,6 +1360,18 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> BOCCA_JALDAK_SPAWN_EGG = ITEMS.register("bocca_jaldak_spawn_egg",
             () -> new DeferredSpawnEggItem(BOCCA_JALDAK, 0xEDE7DA, 0x42E4ED, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BattaAugmentEntity>> BATTA_AUGMENT = MOBLIST.register("batta_augment",
+            () -> EntityType.Builder.of(BattaAugmentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":batta_augment"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BATTA_AUGMENT_SPAWN_EGG = ITEMS.register("batta_augment_spawn_egg",
+            () -> new DeferredSpawnEggItem(BATTA_AUGMENT, 0x121212, 0x1A7053, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ShinNo0Entity>> SHIN_NO_0 = MOBLIST.register("shin_no_0",
+            () -> EntityType.Builder.of(ShinNo0Entity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shin_no_0"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> SHIN_NO_0_SPAWN_EGG = ITEMS.register("shin_no_0_spawn_egg",
+            () -> new DeferredSpawnEggItem(SHIN_NO_0, 0x131524, 0x00118E, new Item.Properties()));
     
     public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
             () -> EntityType.Builder.of(AcrobatterEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":acrobatter"));
