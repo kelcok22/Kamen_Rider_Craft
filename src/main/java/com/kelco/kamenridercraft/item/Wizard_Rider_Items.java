@@ -744,9 +744,13 @@ public class Wizard_Rider_Items {
                        , new MobEffectInstance(MobEffects.DIG_SPEED, 800,3,true,true))
 					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
-       public static final DeferredItem<Item> BIG_WIZARD_RING = ITEMS.register("big_ring",
-               () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIG, 500,2,true,true))
-					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
+    public static final DeferredItem<Item> BIG_WIZARD_RING = ITEMS.register("big_ring",
+            () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIG, 500,2,true,true))
+                    .AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> BIG_WIZARD_RING_COLOR_VER = ITEMS.register("big_ring_color_ver",
+            () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIG, 500,4,true,true))
+                    .has_basic_model().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
        public static final DeferredItem<Item> SMALL_WIZARD_RING = ITEMS.register("small_ring",
                () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMALL, 500,20,true,true))

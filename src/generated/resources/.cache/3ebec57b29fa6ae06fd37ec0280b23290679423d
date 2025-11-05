@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-03T16:53:54.9570753	Item Models: kamenridercraft
+// 1.21.1	2025-11-04T17:58:31.7409361	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -57,6 +57,7 @@ e96c9876c94195f97eec16ceb095b68ddea02e80 assets/kamenridercraft/models/item/bamb
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_zangetsu_core.json
 537c305f0cab3f3f5d769c29bb9dec218ac88312 assets/kamenridercraft/models/item/basshaa_statue.json
 aa0655e897bd302a9594da5e9d8cc8aeee75f422 assets/kamenridercraft/models/item/berosol_ride_chemy_card.json
+fea44e5f09334263b368064b9ecd348d76032297 assets/kamenridercraft/models/item/big_ring_color_ver.json
 a8480ea5f3ac68d95383b199474b97add1ec8edd assets/kamenridercraft/models/item/bisbluetirol_gochizo.json
 1debe66a518a53e3fcc9980a4466370a8ddc71a2 assets/kamenridercraft/models/item/bispinktirol_gochizo.json
 a4cbd006b424c759d6a9a8351824581b86ff98d8 assets/kamenridercraft/models/item/black_gochizo.json

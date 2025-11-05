@@ -116,7 +116,7 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		|| Objects.equals(rider, "specter") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()
 				|| Objects.equals(rider, "necrom") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.YUJOU_BURST_GHOST_EYECON.get()
 		|| Objects.equals(rider, "specter") &item.get_Stored_num()!=0|| Objects.equals(rider, "zero_specter") &item.get_Stored_num()!=0
-				|| Objects.equals(rider, "kanon_specter") &item.get_Stored_num()!=0){
+				|| Objects.equals(rider, "kanon_specter") &item.get_Stored_num()!=0||Objects.equals(rider, "zero_ghost") &item.get_Stored_num()!=0){
 			return "_base";
 		}
 
