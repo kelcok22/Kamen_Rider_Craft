@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-04T17:58:31.7409361	Item Models: kamenridercraft
+// 1.21.1	2025-11-06T02:52:47.2533749	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -179,6 +179,7 @@ a14c95391c809d2b9c8295605cf00d92c7b0a3d1 assets/kamenridercraft/models/item/fake
 3774060ae4a752684b486148143783bd26689b9b assets/kamenridercraft/models/item/fake_tornado.json
 b03c37f222b4e4051a21ca0b92e3d7bc952fcb9c assets/kamenridercraft/models/item/firemars_ride_chemy_card.json
 61f7f4b4dd3c6acc743be297edd5f33f82cee957 assets/kamenridercraft/models/item/firemars_ride_chemy_card_televikun.json
+481ea9f56b6038a64ad1d9006e93a2e578435776 assets/kamenridercraft/models/item/flame_ring_color_ver.json
 1485efac48dfe2ce2732ee37c9d2419006a7486e assets/kamenridercraft/models/item/flight_style_fuestle.json
 df2a77f8c9bc3497de942096c17fcfc7673ac4c3 assets/kamenridercraft/models/item/forbidden_ringo_lockseed_base.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/fourze_basestates.json
@@ -588,6 +589,7 @@ f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vras
 45535ed1c0f49b5c82341945fca67098cbae1c6b assets/kamenridercraft/models/item/vrocanspicy_gochizo.json
 2a4cceaf08cd78ab99b736e623de8234f8ecc90e assets/kamenridercraft/models/item/wafusaku_gochizo.json
 6d803df8f3ea9dc9ad6c14cef595c7ffcc791ef5 assets/kamenridercraft/models/item/warptera_ride_chemy_card.json
+52579eec2c4bcc28ba60c2e7ee65cbde22aef341 assets/kamenridercraft/models/item/water_ring_color_ver.json
 932ad803be78c3de72bd7ac706c2f7379879a4f7 assets/kamenridercraft/models/item/whiteandcookiestirol_gochizo.json
 6099f93392eac510c6032fa239a9f9d8d4043844 assets/kamenridercraft/models/item/white_fence.json
 b3fc962f39e8630c37821887d50de498e1f93a66 assets/kamenridercraft/models/item/white_wallplate_wall.json

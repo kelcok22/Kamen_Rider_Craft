@@ -898,6 +898,13 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> GRIFFIN_WIZARD_RING = ITEMS.register("griffin_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
+    public static final DeferredItem<Item> FLAME_WIZARD_RING_COLOR_VER = ITEMS.register("flame_ring_color_ver",
+            () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 500,0,true,true))
+                    .has_basic_model().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> WATER_WIZARD_RING_COLOR_VER = ITEMS.register("water_ring_color_ver",
+            () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.WATER_BREATHING, 500,0,true,true))
+                    .has_basic_model().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_WIZARD_RING = ITEMS.register("kuuga_ring",
             () -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).has_basic_model().AddToList(RiderTabs.WIZARD_TAB_ITEM));
