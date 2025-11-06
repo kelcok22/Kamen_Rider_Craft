@@ -1,0 +1,17 @@
+{
+	"name": "Phase Variation Batta Augment",
+	"icon": "kamenridercraft:prana_infused_rider_circuit",
+	"category": "kamenridercraft:shin_kamen_rider/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:batta_augment",
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br)Health: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Spawn locations: ???$(br2)Drops$(li)4-6 $(l:shin_kamen_rider/items/prana_infused_rider_circuit)Prana Infused Rider Circuits$(/l)$(li)1 $(l:shin_kamen_rider/items/typhoon_energy_converters#shin_typhoon_core)Typhoon Energy Converter (No. 1)$(/l) (20%)$(li)1 $(l:shin_kamen_rider/items/typhoon_energy_converters#shin_typhoon_core2)Typhoon Energy Converter (No. 2)$(/l) (20%)$(li)1 $(l:shin_kamen_rider/items/prana_infused_rider_circuit)Prana Infused Rider Circuit$(/l) (60%)$(br2)Bosses$(li)$(l:shin_kamen_rider/mobs/shin_no_0)Kamen Rider No. 0$(/l) (10%)"
+		}
+	]
+}

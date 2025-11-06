@@ -210,19 +210,32 @@
 			"title": " ",
 			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "big_ring",
-			"title": "Big Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives Giant III"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:big_ring",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
-		},
+      {
+        "type": "patchouli:text",
+        "anchor": "big_ring",
+        "title": "Big Wizard Ring",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives Giant III"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:big_ring",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "big_ring_color_ver",
+        "title": "???",
+        "text": "Appears in:$(li)Big Wizard Ring Original Color Ver. (2012, toyline)$(br2)Gives Giant V"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:big_ring_color_ver",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "small_ring",
@@ -314,6 +327,32 @@
 			"title": " ",
 			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "flame_ring_color_ver",
+        "title": "???",
+        "text": "Appears in:$(li)Flame Wizard Ring Original Color Ver. (2012, toyline)$(br2)Gives Fire Resistance"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:flame_ring_color_ver",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "water_ring_color_ver",
+        "title": "???",
+        "text": "Appears in:$(li)Water Wizard Ring Original Color Ver. (2012, toyline)$(br2)Gives Water Breathing"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:water_ring_color_ver",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
       {
         "type": "patchouli:text",
         "anchor": "kuuga_ring",

@@ -1,0 +1,45 @@
+{
+	"name": "Chair Blocks",
+	"icon": "kamenridercraft:ichigo_chair",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+          "anchor": "ichigo_chair",
+			"text": "Based on:$(li)Takatoku Kamen Rider Children's Chair \"Transformation\" (Green)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_chair",
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)$(br2)Traded by a journeyman $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "red_ichigo_chair",
+        "title": "Aka-Rider Chair",
+        "text": "Based on:$(li)Takatoku Kamen Rider Children's Chair \"Transformation\" (Red)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:red_ichigo_chair",
+        "title": " ",
+        "text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)$(br2)Fun fact: The real-life version of this chair was made long before Aka-Rider existed"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_throne",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_throne",
+        "title": " ",
+        "text": "Block is currently unobtainable"
+      }
+	]
+}

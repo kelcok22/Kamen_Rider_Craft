@@ -1522,19 +1522,45 @@
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:gotchard/inphoenix_ride_chemy_card_televikun"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "daybreak_hopper1_ride_chemy_card",
-			"title": "Daybreak Hopper1 Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard Daybreak's $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Used to access Gotchard Daybreak's $(l:gotchard/riders/gotchard_daybreak#steamhopper)Steamhopper$(/l) form"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:daybreak_hopper1_ride_chemy_card",
-			"title": " ",
-			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
-		},
+      {
+        "type": "patchouli:text",
+        "anchor": "daiohni_gt_ride_chemy_card",
+        "title": "Daiohni GT Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Graduations (2025, V-Cinema film)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#gt)Valvarad GT$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:daiohni_gt_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gigantliner_gt_ride_chemy_card",
+        "title": "Gigantliner GT Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Graduations (2025, V-Cinema film)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#gt)Valvarad GT$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gigantliner_gt_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "daybreak_hopper1_ride_chemy_card",
+        "title": "Daybreak Hopper1 Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard Daybreak's $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Used to access Gotchard Daybreak's $(l:gotchard/riders/gotchard_daybreak#steamhopper)Steamhopper$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:daybreak_hopper1_ride_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "daybreak_steamliner_ride_chemy_card",

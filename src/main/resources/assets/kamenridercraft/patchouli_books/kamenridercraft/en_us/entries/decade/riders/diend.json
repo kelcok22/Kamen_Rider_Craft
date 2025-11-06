@@ -53,7 +53,7 @@
         "scale": -1,
         "offset": 0.1,
         "name": "Diend Formation",
-        "text": "Accessed with the $(l:decade/items/kamenride_cards#diend_chinomanako_card)???$(/l) card"
+        "text": "Accessed with the $(l:decade/items/kamenride_cards#diend_chinomanako_card)KamenRide Diend (Chinomanako Diend Formation)$(/l) card"
       },
       {
         "type": "patchouli:text",

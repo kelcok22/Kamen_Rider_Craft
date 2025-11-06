@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider No. 0",
+	"icon": "kamenridercraft:prana_infused_rider_circuit",
+	"category": "kamenridercraft:shin_kamen_rider/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shin_no_0",
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br)Health: 70"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 10% chance to spawn from a $(l:shin_kamen_rider/mobs/batta_augment)Phase Variation Batta Augment$(/l)$(br2)Drops$(li)4-6 $(l:shin_kamen_rider/items/prana_infused_rider_circuit)Prana Infused Rider Circuits$(/l)$(li)1 $(l:shin_kamen_rider/items/typhoon_energy_converters#ultimate_half_typhoon_core)Ultimate Half Typhoon Energy Converter$(/l) (75%)$(li)1 $(l:shin_kamen_rider/items/typhoon_energy_converters#shin_typhoon_core_2_1)Typhoon Energy Converter (No. 2+1)$(/l) (25%)"
+		}
+	]
+}
