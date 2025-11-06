@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin_kamen_rider/main",
+    "name": "Shin Kamen Rider Mobs",
+    "description": "Every mob from or relating to the movie, Shin Kamen Rider.",
+    "icon": "kamenridercraft:prana_infused_rider_circuit",
+    "sortnum": 3
+}

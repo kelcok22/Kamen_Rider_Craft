@@ -397,7 +397,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:driver_on_ring",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:wizard/mobs/gremlin_phantom)Gremlin$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -415,7 +415,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "common_wizard_ring",
-			"title": "common Wizard Ring",
+			"title": "Common Wizard Ring",
 			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)"
 		},
 		{
@@ -475,7 +475,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dance_ring",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:wizard/mobs/phoenix_phantom)Phoenix$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -488,7 +488,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:holy_ring",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:wizard/mobs/medusa_phantom)Medusa$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,19 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:jyamato_rider_scythe",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used by a $(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamato_rider_scythe",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)'s equipment"
+		}
+	]
+}

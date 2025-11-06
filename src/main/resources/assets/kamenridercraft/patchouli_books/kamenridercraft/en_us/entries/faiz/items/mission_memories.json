@@ -181,7 +181,7 @@
       {
         "type": "patchouli:text",
         "anchor": "faiz_mission_memory_toy",
-        "title": "???",
+        "title": "Faiz Mission Memory (Toy)",
         "text": "Appears in:$(li)DX Faiz Edge (2003, toyline)"
       },
       {
@@ -194,7 +194,7 @@
       {
         "type": "patchouli:text",
         "anchor": "kaixa_mission_memory_toy",
-        "title": "???",
+        "title": "Kaixa Mission Memory (Toy)",
         "text": "Appears in:$(li)DX Kaixa Blaygun (2003, toyline)"
       },
       {

@@ -15,6 +15,7 @@
 	"kamenridercraft:liquid_ring",
 	"kamenridercraft:drill_ring",
 	"kamenridercraft:big_ring",
+    "kamenridercraft:big_ring_color_ver",
 	"kamenridercraft:small_ring",
 	"kamenridercraft:copy_ring",
 	"kamenridercraft:smell_ring",
@@ -45,6 +46,8 @@
     "kamenridercraft:chimarise_ring",
     "kamenridercraft:beast_driver_on_ring",
     "kamenridercraft:griffin_ring",
+    "kamenridercraft:flame_ring_color_ver",
+    "kamenridercraft:water_ring_color_ver",
     "kamenridercraft:fourze_engage_ring",
     "kamenridercraft:super_sentai_ring"
   ]

@@ -200,7 +200,7 @@
       {
         "type": "patchouli:text",
         "anchor": "joker_dopant_memory_broken",
-        "title": "???",
+        "title": "Joker Dopant Memory (Damaged)",
         "text": "Appears in:$(li)Fuuto PI (2017/2022, manga/anime)$(br2)Used by the Joker Dopant"
       },
       {
@@ -213,7 +213,7 @@
       {
         "type": "patchouli:text",
         "anchor": "joker_dopant_memory",
-        "title": "???",
+        "title": "Joker Dopant Memory",
         "text": "Appears in:$(li)Fuuto PI (2017/2022, manga/anime)$(br2)Used by the Joker Dopant"
       },
       {

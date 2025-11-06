@@ -59,6 +59,20 @@
         "type": "patchouli:text",
         "title": "Kamen Rider Valvarad",
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/valvaradriver)Valvaradriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Strength III$(li)Jump Boost$(li)Night Vision"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "gt",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:daiohni_gt_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Valvarad GT",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#daiohni_gt_ride_chemy_card)Daiohni GT$(/l) or $(l:gotchard/items/ride_chemy_cards#gigantliner_gt_ride_chemy_card)Gigantliner GT$(/l) Ride Chemy Card (both cards must be in your inventory)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Valvarad",
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Graduations (2025, V-Cinema film)$(br2)Transforms with the $(l:gotchard/devices/valvaradriver)Valvaradriver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Strength IV (with weapon)$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VI$(li)Fire Resistance"
       }
 	]
 }
