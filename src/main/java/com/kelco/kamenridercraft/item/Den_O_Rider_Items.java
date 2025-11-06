@@ -502,6 +502,9 @@ public class Den_O_Rider_Items {
     public static final DeferredItem<Item> ZEROGASHER = ITEMS.register("zerogasher",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
+    public static final DeferredItem<Item> DENEBIC_BUSTER = ITEMS.register("denebic_buster",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
