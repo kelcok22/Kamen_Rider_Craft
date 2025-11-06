@@ -73,6 +73,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<>();
 	public static List<Item> NEED_ITEM_AngeCopter= new ArrayList<>();
     public static List<Item> NEED_ITEM_Kurogane= new ArrayList<>();
+    public static List<Item> NEED_ITEM_GT= new ArrayList<>();
 
 	public static List<Item> NEED_ITEM_TypeThree= new ArrayList<>();
 
@@ -1190,9 +1191,35 @@ public class Gotchard_Rider_Items {
                     .IsGlowing().AddCompatibilityList(Gotchards).AddToList(NEED_ITEM_MarsPhoenix2).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> INPHOENIX_RIDE_CHEMY_CARD_TELEVIKUN = ITEMS.register("inphoenix_ride_chemy_card_televikun",
-			() -> new CopyChemyCardItem(new Item.Properties(),FIREMARS_RIDE_CHEMY_CARD_TELEVIKUN.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+			() -> new CopyChemyCardItem(new Item.Properties(),FIREMARS_RIDE_CHEMY_CARD_TELEVIKUN.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(NEED_ITEM_MarsPhoenix2).has_basic_model());
 
-	public static final DeferredItem<Item> HOPPER1_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("daybreak_hopper1_ride_chemy_card",
+    public static final DeferredItem<Item> DAIOHNI_GT_RIDE_CHEMY_CARD = ITEMS.register("daiohni_gt_ride_chemy_card",
+            () -> new RideChemyCardItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_gt","valvarad_rider","valvaradriver_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_GT).AddToList(NEED_ITEM_GT).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> GIGANTLINER_GT_RIDE_CHEMY_CARD = ITEMS.register("gigantliner_gt_ride_chemy_card",
+            () -> new CopyChemyCardItem(new Item.Properties(),DAIOHNI_GT_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(NEED_ITEM_GT).has_basic_model());
+
+    public static final DeferredItem<Item> HOPPER1_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("daybreak_hopper1_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gotchard_daybreak","gotchardriver_belt_daybreak",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -2413,7 +2440,7 @@ public class Gotchard_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item> VALVARADRIVER = ITEMS.register("valvaradriver",
-			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"valvarad_rider", MACHWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
+			() -> new ValvaraDriverItem(ArmorMaterials.DIAMOND,"valvarad_rider", MACHWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item>  DREADRIVER = ITEMS.register("dreadriver",
