@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-06T02:52:47.2533749	Item Models: kamenridercraft
+// 1.21.1	2025-11-06T19:04:36.055758	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -120,6 +120,7 @@ f9602690ab879bf615e127f0604f6e58d3afc429 assets/kamenridercraft/models/item/crun
 ecb0710124f2c082834f6bf155dfe61a115a5242 assets/kamenridercraft/models/item/custardcake_gochizo.json
 ac90fbcf3d2f4e18755e2edd0907dc3792f5f66d assets/kamenridercraft/models/item/cyan_wallplate_wall.json
 77b7d7489941a9987268709e464fc2b21fe90a2f assets/kamenridercraft/models/item/cyberoid_zzz_core.json
+2ccf2a965ac9603fe4e6e73cbe94720cfcdd0c44 assets/kamenridercraft/models/item/daiohni_gt_ride_chemy_card.json
 7f6c4d2402a78b4a0c8938c7d81d34d2194271c8 assets/kamenridercraft/models/item/daiohni_repli_chemy_card.json
 d550ff0edafc122c552b0a54ef88ced7083debf2 assets/kamenridercraft/models/item/daiohni_ride_chemy_card.json
 d98587fd3d27a942cc5b2f6100b3d1a48b87d9bd assets/kamenridercraft/models/item/dandeliner.json
@@ -235,6 +236,7 @@ d7452d3de40593f7296a027e99f636686dd58b41 assets/kamenridercraft/models/item/ghos
 a4618b9078e96307eb190d1a536610f911254d33 assets/kamenridercraft/models/item/ghost_ride_chemy_card.json
 56c82da9fb89d82416cc6ab75e32d80531029e1a assets/kamenridercraft/models/item/gigabaham_ride_chemy_card.json
 e5a0ce6d0c6a0dcf6006133bb4626fc326111298 assets/kamenridercraft/models/item/gigalodon_ride_chemy_card.json
+bd1e7cc6826793666cac1fa2fc12597ff2f878eb assets/kamenridercraft/models/item/gigantliner_gt_ride_chemy_card.json
 876d5e6eeeac81ee0f24945e69a6bfaaab020d5c assets/kamenridercraft/models/item/gigantliner_repli_chemy_card.json
 fefb6fb34a159414c057a631fa9596ce0af27e66 assets/kamenridercraft/models/item/gigantliner_ride_chemy_card.json
 8dbba21dfab4431d043edf466bdc968209bb1eaa assets/kamenridercraft/models/item/gigantliner_ride_chemy_card_fs.json
