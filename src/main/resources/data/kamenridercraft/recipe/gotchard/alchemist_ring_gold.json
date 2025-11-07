@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "alchemist_rings",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:alchemist_ring_red"
+    },
+    {
+      "item": "kamenridercraft:glion_gold_cube"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:alchemist_ring_gold"
+  }
+}

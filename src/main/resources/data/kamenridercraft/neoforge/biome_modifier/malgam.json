@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:agents",
+  "spawners": {
+	"type": "kamenridercraft:malgam",
+	"weight": 15,
+	"minCount": 2,
+	"maxCount": 4
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:steamliner_repli_chemy_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:unicon_repli_chemy_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:daiohni_repli_chemy_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:glion_gold_cube"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:blank_ride_chemy_card",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
