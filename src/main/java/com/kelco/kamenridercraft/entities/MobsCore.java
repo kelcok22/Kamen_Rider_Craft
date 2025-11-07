@@ -1313,6 +1313,18 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(PREMIUM_KEKERA, 0x32f032, 0xe9f2e9, new Item.Properties()));
 
 
+    public static final DeferredHolder<EntityType<?>, EntityType<MalgamEntity>> MALGAM = MOBLIST.register("malgam",
+            () -> EntityType.Builder.of(MalgamEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":malgam"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MALGAM_SPAWN_EGG = ITEMS.register("malgam_spawn_egg",
+            () -> new DeferredSpawnEggItem(MALGAM, 0xc2c2c2, 0x9d9c9c, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<DreadEntity>> DREAD = MOBLIST.register("dread",
+            () -> EntityType.Builder.of(DreadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dread"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DREAD_SPAWN_EGG = ITEMS.register("dread_spawn_egg",
+            () -> new DeferredSpawnEggItem(DREAD, 0x131321, 0xa88700, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
             () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));
 

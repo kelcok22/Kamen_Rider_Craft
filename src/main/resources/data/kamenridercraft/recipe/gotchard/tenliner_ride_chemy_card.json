@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gotchard",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:steamliner_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:alchemist_ring_gold"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:tenliner_ride_chemy_card"
+  }
+}

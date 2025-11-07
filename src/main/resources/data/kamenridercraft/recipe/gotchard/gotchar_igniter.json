@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gotchard",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:young_ichinose_treasure"
+    },
+    {
+      "item": "kamenridercraft:alchemist_ring_blue"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:gotchar_igniter"
+  }
+}

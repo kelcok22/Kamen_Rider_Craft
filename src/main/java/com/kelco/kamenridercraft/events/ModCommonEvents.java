@@ -798,6 +798,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.PREMIUM_BEROBA.get(), PremiumBerobaEntity.setAttributes().build());
 		event.put(MobsCore.PREMIUM_KEKERA.get(), PremiumKekeraEntity.setAttributes().build());
 
+        event.put(MobsCore.MALGAM.get(), MalgamEntity.setAttributes().build());
+        event.put(MobsCore.DREAD.get(), DreadEntity.setAttributes().build());
+
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
 		event.put(MobsCore.NYELV_STOMACH.get(), NyelvEntity.setAttributes().build());
@@ -926,7 +929,9 @@ public class ModCommonEvents {
 		event.register(MobsCore.END_RIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.KUROKAGE_TROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
-		event.register(MobsCore.AGENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(MobsCore.MALGAM.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+        event.register(MobsCore.AGENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
         event.register(MobsCore.BATTA_AUGMENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

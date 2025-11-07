@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gotchard",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:hopper1_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:steamliner_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:timelord_daybreak_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:young_ichinose_treasure"
+  }
+}

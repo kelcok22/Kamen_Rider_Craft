@@ -1247,6 +1247,9 @@ public class Gotchard_Rider_Items {
 			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER1_RIDE_CHEMY_CARD_DAYBREAK.get()).AddToList(NEED_ITEM_SteamHopper_daybreak)
 					.AddToList(ChemyRiserItem.Daybreak_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
+    public static final DeferredItem<Item> TIMELORD_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("timelord_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
     public static final DeferredItem<Item> SHINING_HOPPER1_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("shining_hopper1_ride_chemy_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_shining","gotchard_daybreak","gotchardriver_belt_daybreak",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -1273,11 +1276,6 @@ public class Gotchard_Rider_Items {
     public static final DeferredItem<Item> SHINING_STEAMLINER_RIDE_CHEMY_CARD = ITEMS.register("shining_steamliner_ride_chemy_card",
             () -> new CopyFormChangeItem(new Item.Properties(),SHINING_HOPPER1_RIDE_CHEMY_CARD_DAYBREAK.get()).AddToList(NEED_ITEM_Shining_DB)
                     .AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
-
-    /**
-	public static final DeferredItem<Item> TIMELORD_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("daybreak_timelord_ride_chemy_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
-**/
 
 	public static final DeferredItem<Item> DREAD_TYPE_THREE_CARDS = ITEMS.register("dread_type_three_cards",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_type_three","dread","dreadriver_belt",
@@ -2524,6 +2522,12 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> ALCHEMIST_RING_NO_GEM = ITEMS.register("alchemist_ring_no_gem",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> GLION_GOLD_CUBE = ITEMS.register("glion_gold_cube",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> YOUNG_ICHINOSE_TREASURE = ITEMS.register("young_ichinose_treasure",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
