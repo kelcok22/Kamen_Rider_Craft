@@ -53,6 +53,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_MarsPhoenix= new ArrayList<>();
 	public static List<Item> NEED_ITEM_MarsPhoenix2= new ArrayList<>();
 
+    public static List<Item> NEED_ITEM_Super= new ArrayList<>();
 	public static List<Item> NEED_ITEM_Platina= new ArrayList<>();
 	public static List<Item> NEED_ITEM_Rainbow= new ArrayList<>();
 	public static List<Item> NEED_ITEM_Ultima= new ArrayList<>();
@@ -715,7 +716,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_Super).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NAMMONITE_RIDE_CHEMY_CARD = ITEMS.register("nammonite_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
@@ -770,7 +771,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(Gotchards).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+            }.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_Super).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MERCURIN_RIDE_CHEMY_CARD = ITEMS.register("mercurin_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
@@ -1107,7 +1108,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+            }.IsGlowing().AddNeedItemList(NEED_ITEM_Super).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOPPER101_RIDE_CHEMY_CARD = ITEMS.register("hopper101_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_miracle","gotchard","gotchardriver_belt_r",
@@ -2482,7 +2483,7 @@ public class Gotchard_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> EXGOTCHALIBUR = ITEMS.register("exgotchalibur",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(NEED_ITEM_Super).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> VALVARUSHER = ITEMS.register("valvarusher",
 			() -> new ValvarusherItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
@@ -2528,6 +2529,9 @@ public class Gotchard_Rider_Items {
 
     public static final DeferredItem<Item> YOUNG_ICHINOSE_TREASURE = ITEMS.register("young_ichinose_treasure",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> UNFINISHED_EXGOTCHALIBUR = ITEMS.register("unfinished_exgotchalibur",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

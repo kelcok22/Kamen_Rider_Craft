@@ -1,25 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
   "group": "gotchard",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:hopper1_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:alchemist_ring_gold"
+    }
+  ],
   "pattern": [
-	"XTX",
-	"XSX",
-	"XXX"
+    "bub",
+    "bwb",
+    "bbb"
   ],
   "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ride_chemy_card"
-	},
-	"T": {
-	  "tag": "kamenridercraft:gear/ride_chemy_cards/level_10"
-	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
-	}
+    "b": {
+      "item": "kamenridercraft:blank_ride_chemy_card"
+    },
+    "u": {
+      "item": "kamenridercraft:unfinished_exgotchalibur"
+    },
+    "w": {
+      "item": "kamenridercraft:base_sword"
+    }
   },
   "result": {
-	"id": "kamenridercraft:exgotchalibur"
-  }	
+    "id": "kamenridercraft:exgotchalibur"
+  }
 }
-

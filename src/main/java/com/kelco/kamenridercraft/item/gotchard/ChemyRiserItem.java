@@ -119,6 +119,13 @@ public class ChemyRiserItem extends BaseItem {
                                 serverPlayer.getCooldowns().addCooldown(this, 10);
                             }
                         }
+                        else if(card.getItem() == Gotchard_Rider_Items.UFO_X_RIDE_CHEMY_CARD.get()) {
+                            serverPlayer.drop(new ItemStack(Gotchard_Rider_Items.UNFINISHED_EXGOTCHALIBUR.get(),1), false);
+                            card.shrink(1);
+                            if (!serverPlayer.isCreative()) {
+                                serverPlayer.getCooldowns().addCooldown(this, 10);
+                            }
+                        }
 
 
                 } else {
