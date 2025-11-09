@@ -614,6 +614,8 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.MALGAM.get(), MalgamRenderer::new);
             event.registerEntityRenderer(MobsCore.DREAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GOLEM.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GIGIST.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.AGENT.get(), AgentRenderer::new);
             event.registerEntityRenderer(MobsCore.BITTER_GAVV.get(), BasicEntityRenderer::new);
