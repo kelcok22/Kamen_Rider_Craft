@@ -11,7 +11,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Health: 80$(br2)Summoned from an $(l:misc/blocks/boss_blocks#arc_boss_block)Arc Boss Block$(/l)$(br2)Drops$(li)3-6 $(l:kiva/items/fuestle)Fuestles$(/l)$(li)1-2 $(l:kiva/items/fuestles#keyfuestle)Wake Up Fuestle (Rey/Arc)$(/l)$(li)1 $(l:kiva/items/fuestles#kivalafuestle)Wake Up Fuestle (Kiva-la)$(/l) (if you have the $(l:decade/items/decade_camera)Blackbird Fly$(/l) in your inventory)"
+      "text": "Health: 80$(br2)Summoned from an $(l:misc/blocks/boss_blocks#arc_boss_block)Arc Boss Block$(/l)$(br2)Drops$(li)3-6 $(l:kiva/items/fuestle)Fuestles$(/l)$(li)1-2 $(l:kiva/items/fuestles#keyfuestle)Wake Up Fuestle (Rey/Arc)$(/l)$(li)1 $(l:kiva/items/fuestles#kivalafuestle)Wake Up Fuestle (Kiva-la)$(/l) (if you have a $(l:decade/items/decade_camera)Blackbird Fly$(/l) in your inventory)"
     }
   ]
 }

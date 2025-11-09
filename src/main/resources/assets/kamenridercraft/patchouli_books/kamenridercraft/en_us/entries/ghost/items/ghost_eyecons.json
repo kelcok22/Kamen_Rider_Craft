@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:yujou_burst_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l) (with the $(l:ghost/items/ghost_eyecons#deep_specter_ghost_eyecon)Deep Specter Ghost Eyecon$(/l) in your inventory)"
+			"text": "Drops from:$(li)$(l:ghost/mobs/necrom)Kamen Rider Necrom$(/l) (with a $(l:ghost/items/ghost_eyecons#deep_specter_ghost_eyecon)Deep Specter Ghost Eyecon$(/l) in your inventory)"
 		},
 		{
 			"type": "patchouli:text",

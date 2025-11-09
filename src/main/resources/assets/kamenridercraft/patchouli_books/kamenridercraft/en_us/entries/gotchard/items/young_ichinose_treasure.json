@@ -1,0 +1,16 @@
+{
+	"name": "Young Ichinose's Treasure",
+	"icon": "kamenridercraft:young_ichinose_treasure",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/young_ichinose_treasure"
+		}
+	]
+}

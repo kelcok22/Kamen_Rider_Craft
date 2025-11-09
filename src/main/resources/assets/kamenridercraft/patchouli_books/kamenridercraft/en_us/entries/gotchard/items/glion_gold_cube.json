@@ -1,0 +1,19 @@
+{
+	"name": "Glion's Golden Cube",
+	"icon": "kamenridercraft:glion_gold_cube",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:glion_gold_cube",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread"
+      }
+    ]
+}

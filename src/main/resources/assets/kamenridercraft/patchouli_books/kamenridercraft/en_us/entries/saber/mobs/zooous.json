@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:saber/items/wonder_ride_books#king_lion_daisenki_wonder_ride_book)King Lion Daisenki Wonder Ride Book$(/l) (with the $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus$(/l), $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki$(/l), and $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)Peter Fantasista$(/l) Wonder Ride Books in your inventory)"
+			"text": "$(li)1 $(l:saber/items/wonder_ride_books#king_lion_daisenki_wonder_ride_book)King Lion Daisenki Wonder Ride Book$(/l) (with a $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus$(/l), $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki$(/l), and $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)Peter Fantasista$(/l) Wonder Ride Book in your inventory)"
 		}
 	]
 }

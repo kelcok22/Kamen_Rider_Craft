@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:saber/items/wonder_ride_books#dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book$(/l) (with the $(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book$(/l) in your inventory)"
+			"text": "$(li)1 $(l:saber/items/wonder_ride_books#dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book$(/l) (with a $(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book$(/l) in your inventory)"
 		}
 	]
 }
