@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gotchard/blank_ride_chemy_card"
+			"recipe": "kamenridercraft:gotchard/blank_ride_chemy_card",
+          "text": "Drops from:$(li)$(l:gotchard/mobs/malgam)Malgam$(/l)$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l)"
 		}
 	]
 }

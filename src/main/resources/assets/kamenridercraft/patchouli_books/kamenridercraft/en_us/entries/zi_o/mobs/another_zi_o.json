@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 10% chance to spawn from a $(l:zi_o/mobs/kasshine)Kasshine$(/l)$(br2)Special moves:$(li)Transforms into $(l:zi_o/riders/another_zi_o#zi_o_ii)Another Zi-O II$(/l) at under 100 health if you have the $(l:zi_o/items/ridewatches#zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l) in your inventory$(br2)Drops on next page"
+			"text": "Has a 10% chance to spawn from a $(l:zi_o/mobs/kasshine)Kasshine$(/l)$(br2)Special moves:$(li)Transforms into $(l:zi_o/riders/another_zi_o#zi_o_ii)Another Zi-O II$(/l) at under 100 health if you have a $(l:zi_o/items/ridewatches#zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l) in your inventory$(br2)Drops on next page"
 		},
       {
         "type": "patchouli:text",

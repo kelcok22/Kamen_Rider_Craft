@@ -14,7 +14,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hopper1_ride_chemy_card",
 			"title": " ",
-			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)$(br2)Drops from:$(li)$(l:gotchard/mobs/malgam)Malgam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -385,7 +385,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:steamliner_ride_chemy_card",
 			"title": " ",
-			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)$(br2)Drops from:$(li)$(l:gotchard/mobs/malgam)Malgam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1340,11 +1340,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#iron_gotchard)Iron Gotchard$(/l) and $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) forms$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#platina)Platina Gotcharbrothers$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:tenliner_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/tenliner_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1357,7 +1354,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:crosshopper_ride_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) (if you have a $(l:gotchard/items/ride_chemy_cards#tenliner_ride_chemy_card)Tenliner Ride Chemy Card$(/l) in your inventory)"
       },
       {
         "type": "patchouli:text",
@@ -1422,7 +1419,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:metal_machwheel_ride_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Gigist$(/l) (if you have a $(l:gotchard/mobs/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/mobs/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
       },
       {
         "type": "patchouli:text",
@@ -1435,7 +1432,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:metal_daiohni_ride_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Gigist$(/l) (if you have a $(l:gotchard/mobs/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/mobs/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
       },
 		{
 			"type": "patchouli:text",
@@ -1443,13 +1440,10 @@
 			"title": "X Assemble Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider The Winter Movie: Gotchard & Geats Strongest Chemy★Great Gotcha Operation (2023, movie)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#star_gotchard)Star Gotchard$(/l) form"
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:x_assemble_ride_chemy_card",
-			"title": " ",
-			"text": "Item is currently unobtainable"
-		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/x_assemble_ride_chemy_card"
+      },
       {
         "type": "patchouli:text",
         "anchor": "hopper101_ride_chemy_card",
@@ -1574,6 +1568,19 @@
 			"title": " ",
 			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "timelord_daybreak_chemy_card",
+        "title": "Daybreak Timelord Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:timelord_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
       {
         "type": "patchouli:text",
         "anchor": "shining_hopper1_ride_chemy_card",

@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:wizardgem",
-			"text": "Found inside a Wizard $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/wizardgemblock)Magic Stone Ore$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)Deepslate Magic Stone Ore$(/l)$(li)$(l:wizard/mobs/ghouls)Ghouls$(/l)$(li)$(l:wizard/mobs/medusa_phantom)Medusa$(/l)$(li)$(l:wizard/mobs/phoenix_phantom)Phoenix$(/l)$(li)$(l:wizard/mobs/gremlin_phantom)Gremlin$(/l)$(li)$(l:wizard/mobs/mage_footsoldier)Imperial Guard$(/l)$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+			"text": "Found inside a Wizard $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/wizardgemblock)Magic Stone Ore$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)Deepslate Magic Stone Ore$(/l)$(li)$(l:wizard/mobs/ghouls)Ghouls$(/l)$(li)$(l:wizard/mobs/medusa_phantom)Medusa$(/l)$(li)$(l:wizard/mobs/phoenix_phantom)Phoenix$(/l)$(li)$(l:wizard/mobs/gremlin_phantom)Gremlin$(/l)$(li)$(l:wizard/mobs/mage_footsoldier)Imperial Guard$(/l)$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)$(li)$(l:gotchard/mobs/malgam)Malgam$(/l)"
 		},
 		{
 			"type": "patchouli:text",

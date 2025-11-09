@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Valvarad's $(l:gotchard/devices/valvaradriver)Valvaradriver$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fire_steamhopper)Fire Gotchard$(/l) forms$(br2)Used to access Gotchard Daybreak's $(l:gotchard/riders/gotchard_daybreak#fire)Fire Gotchard Daybreak$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:gotchar_igniter",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchar_igniter"
 		}
 	]
 }

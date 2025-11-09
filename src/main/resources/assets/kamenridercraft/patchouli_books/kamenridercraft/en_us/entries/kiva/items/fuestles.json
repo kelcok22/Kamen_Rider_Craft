@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kivalafuestle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:kiva/mobs/arc)Kamen Rider Arc$(/l) (with the $(l:decade/items/decade_camera)Blackbird Fly$(/l) in your inventory)"
+			"text": "Drops from:$(li)$(l:kiva/mobs/arc)Kamen Rider Arc$(/l) (with a $(l:decade/items/decade_camera)Blackbird Fly$(/l) in your inventory)"
 		}
 	]
 }
