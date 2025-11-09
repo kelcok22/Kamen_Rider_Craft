@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gotchard",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:beetlx_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:lixion_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:xeggdrasil_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:x_fortress_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:exceedfighter_ride_chemy_card"
+    }
+  ],
+  "pattern": [
+    "bub",
+    "bwb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "kamenridercraft:blank_ride_chemy_card"
+    },
+    "u": {
+      "item": "kamenridercraft:unfinished_exgotchalibur"
+    },
+    "w": {
+      "item": "kamenridercraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:x_assemble_ride_chemy_card"
+  }
+}
