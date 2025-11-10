@@ -70,11 +70,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:alchemist_ring_black",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:gotchard/alchemist_ring_black"
 		},
 		{
 			"type": "patchouli:text",

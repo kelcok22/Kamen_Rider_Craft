@@ -1,0 +1,17 @@
+{
+	"name": "Germain",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:germain",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br)Health: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 3.3% chance to spawn from a $(l:gotchard/mobs/golem)Golem$(/l)$(br2)Drops$(li)5-10 $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l)$(li)1 $(l:gotchard/items/philosophers_stone_fragment)Philosophers' Stone Fragment$(/l)"
+		}
+	]
+}

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: ???$(br2)Drops$(li)???$(br2)Bosses$(li)$(l:gotchard/mobs/gigist)Gigist$(/l) (10%)"
+			"text": "Spawn locations: End Highlands$(br2)Drops$(li)2-4 $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l)$(br2)Bosses$(li)$(l:gotchard/mobs/gigist)Gigist$(/l) (3.3%)$(li)$(l:gotchard/mobs/germain)Germain$(/l) (3.3%)$(li)$(l:gotchard/mobs/gaelijah)Gaelijah$(/l) (3.3%)"
 		}
 	]
 }
