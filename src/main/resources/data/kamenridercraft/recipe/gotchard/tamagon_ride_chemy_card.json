@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gotchard_rainbow",
+  "pattern": [
+    "uxr",
+    "cpt",
+    "gwd"
+  ],
+  "key": {
+    "x": {
+      "item": "kamenridercraft:x_assemble_ride_chemy_card"
+    },
+    "w": {
+      "item": "kamenridercraft:x_wizard_ride_chemy_card"
+    },
+    "u": {
+      "item": "kamenridercraft:ufo_x_ride_chemy_card"
+    },
+    "r": {
+      "item": "kamenridercraft:x_rex_ride_chemy_card"
+    },
+    "g": {
+      "item": "kamenridercraft:gaiard_ride_chemy_card"
+    },
+    "d": {
+      "item": "kamenridercraft:dragonalos_ride_chemy_card"
+    },
+    "c": {
+      "item": "kamenridercraft:crosshopper_ride_chemy_card"
+    },
+    "t": {
+      "item": "kamenridercraft:tenliner_ride_chemy_card"
+    },
+    "p": {
+      "item": "kamenridercraft:philosophers_stone_fragment"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:tamagon_ride_chemy_card"
+  }
+}

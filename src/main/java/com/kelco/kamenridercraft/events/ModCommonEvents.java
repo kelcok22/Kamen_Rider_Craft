@@ -802,6 +802,8 @@ public class ModCommonEvents {
         event.put(MobsCore.DREAD.get(), DreadEntity.setAttributes().build());
         event.put(MobsCore.GOLEM.get(), GolemEntity.setAttributes().build());
         event.put(MobsCore.GIGIST.get(), GigistEntity.setAttributes().build());
+        event.put(MobsCore.GERMAIN.get(), GermainEntity.setAttributes().build());
+        event.put(MobsCore.GAELIJAH.get(), GaelijahEntity.setAttributes().build());
 
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());

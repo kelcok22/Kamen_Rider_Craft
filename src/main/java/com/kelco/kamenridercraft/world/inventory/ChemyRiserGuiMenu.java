@@ -37,7 +37,9 @@ public class ChemyRiserGuiMenu extends AbstractContainerMenu {
 		this.addSlot(new Slot(container,0,116,35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (stack.getItem()==Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get()|stack.getItem()==Gotchard_Rider_Items.UFO_X_RIDE_CHEMY_CARD.get());
+				return (stack.getItem()==Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get()|
+                        stack.getItem()==Gotchard_Rider_Items.UFO_X_RIDE_CHEMY_CARD.get()|
+                        stack.getItem()==Gotchard_Rider_Items.TAMAGON_RIDE_CHEMY_CARD.get());
 			}
 		});
 		this.addSlot(new SlotByTag(container,1,44,35,"gear/alchemist_rings"));

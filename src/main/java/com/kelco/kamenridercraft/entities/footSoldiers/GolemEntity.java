@@ -9,6 +9,8 @@ import net.minecraft.world.level.Level;
 
 public class GolemEntity extends BaseHenchmenEntity {
 
+    private BaseHenchmenEntity boss;
+
     public GolemEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="golem";
@@ -19,12 +21,23 @@ public class GolemEntity extends BaseHenchmenEntity {
 
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-                BaseHenchmenEntity boss = MobsCore.GIGIST.get().create(this.level());
-				if (boss != null) {
-                    if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.charybdis"));
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-				}
+                int bossChoice = this.random.nextInt(3);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.GIGIST.get().create(this.level());
+                        break;
+                    case 1:
+                        boss = MobsCore.GERMAIN.get().create(this.level());
+                        break;
+                    case 2:
+                        boss = MobsCore.GAELIJAH.get().create(this.level());
+                        break;
+                    default:
+                }
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                }
 			}
 		}
 		super.remove(p_149847_);

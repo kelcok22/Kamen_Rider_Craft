@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "majade",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:atropos_origami"
+    },
+    {
+      "item": "kamenridercraft:alchemist_ring_orange"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:alchemist_ring_black"
+  }
+}

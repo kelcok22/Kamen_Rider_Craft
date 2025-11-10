@@ -18,22 +18,6 @@
       "item": "kamenridercraft:exceedfighter_ride_chemy_card"
     }
   ],
-  "pattern": [
-    "bub",
-    "bwb",
-    "bbb"
-  ],
-  "key": {
-    "b": {
-      "item": "kamenridercraft:blank_ride_chemy_card"
-    },
-    "u": {
-      "item": "kamenridercraft:unfinished_exgotchalibur"
-    },
-    "w": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
   "result": {
     "id": "kamenridercraft:x_assemble_ride_chemy_card"
   }
