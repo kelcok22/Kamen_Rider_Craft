@@ -932,6 +932,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -2532,6 +2533,12 @@ public class Gotchard_Rider_Items {
 
     public static final DeferredItem<Item> UNFINISHED_EXGOTCHALIBUR = ITEMS.register("unfinished_exgotchalibur",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+    public static final DeferredItem<Item> ATROPOS_ORIGAMI = ITEMS.register("atropos_origami",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> PHILOSOPHERS_STONE_FRAGMENT = ITEMS.register("philosophers_stone_fragment",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

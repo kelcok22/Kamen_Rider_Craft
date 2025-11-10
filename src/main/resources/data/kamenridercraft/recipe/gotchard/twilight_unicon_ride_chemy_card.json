@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "majade",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:alchemist_ring_black"
+    },
+    {
+      "item": "kamenridercraft:unicon_ride_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:twilight_unicon_ride_chemy_card"
+  }
+}

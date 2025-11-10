@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-07T13:49:56.6332332	Item Models: kamenridercraft
+// 1.21.1	2025-11-10T13:14:29.1635998	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -23,6 +23,7 @@ b3efabd800267bed852ee6a17baaecace4f5fcc4 assets/kamenridercraft/models/item/ark_
 1902cea79a0c7f17ed395b163f1cd18162827b19 assets/kamenridercraft/models/item/armed_hibiki_ride_chemy_card.json
 c2060c54ff2b161a00ad568bbe4fbb460484766f assets/kamenridercraft/models/item/artcandy_gochizo.json
 de1cee1fbf117971ec212a6326bb0ade279a1ecf assets/kamenridercraft/models/item/astroswitch_case.json
+fac1a058ff13c14abbc2dd8460fb7dca4b935d98 assets/kamenridercraft/models/item/atropos_origami.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
 8b472876e3c9f27df35d2175be48f77e086a037e assets/kamenridercraft/models/item/bakibakistick_gochizo.json
 3eb9e09e2cbb11e833a3bda80951245efe043f1c assets/kamenridercraft/models/item/bakuonzemi_ride_chemy_card.json
@@ -424,6 +425,7 @@ b18d4c0aa1f671277fd05e9f3f0f52c3fd56c7e8 assets/kamenridercraft/models/item/otto
 4afbb74a5f5946d740c46f2056a92b592c7f6ae3 assets/kamenridercraft/models/item/partea_gochizo.json
 e0abffd8bede40f8963277cae2716846b110b4c9 assets/kamenridercraft/models/item/peanutage_gochizo.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/people_saver_tire.json
+81d8e8b69e8f17f88e9e8b5d415e61f153c5c974 assets/kamenridercraft/models/item/philosophers_stone_fragment.json
 67ced0bd7bc6615d46432fdaad242711e1812e61 assets/kamenridercraft/models/item/pienomi_gochizo.json
 43bd408a10b1669203e4e7e6a47c8415e52ac4df assets/kamenridercraft/models/item/pikahotaru_ride_chemy_card.json
 5e14182024b9f643c8f583e8267b82fe26792e4e assets/kamenridercraft/models/item/pilets_ride_chemy_card.json

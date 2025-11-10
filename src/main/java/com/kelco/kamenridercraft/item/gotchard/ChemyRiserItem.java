@@ -126,6 +126,14 @@ public class ChemyRiserItem extends BaseItem {
                                 serverPlayer.getCooldowns().addCooldown(this, 10);
                             }
                         }
+                        else if(card.getItem() == Gotchard_Rider_Items.TAMAGON_RIDE_CHEMY_CARD.get()) {
+                            serverPlayer.drop(new ItemStack(Gotchard_Rider_Items.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(),1), false);
+                            serverPlayer.drop(new ItemStack(Gotchard_Rider_Items.NIJIGON_RIDE_CHEMY_CARD_SPECIAL.get(),1), false);
+                            card.shrink(1);
+                            if (!serverPlayer.isCreative()) {
+                                serverPlayer.getCooldowns().addCooldown(this, 10);
+                            }
+                        }
 
 
                 } else {

@@ -845,6 +845,13 @@ public class RiderTabs {
             event.accept(MobsCore.PREMIUM_BEROBA_SPAWN_EGG);
             event.accept(MobsCore.PREMIUM_KEKERA_SPAWN_EGG);
 
+            event.accept(MobsCore.MALGAM_SPAWN_EGG);
+            event.accept(MobsCore.DREAD_SPAWN_EGG);
+            event.accept(MobsCore.GOLEM_SPAWN_EGG);
+            event.accept(MobsCore.GIGIST_SPAWN_EGG);
+            event.accept(MobsCore.GERMAIN_SPAWN_EGG);
+            event.accept(MobsCore.GAELIJAH_SPAWN_EGG);
+
             event.accept(MobsCore.AGENT_SPAWN_EGG);
             event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);
             event.accept(MobsCore.JEEB_STOMACH_SPAWN_EGG);
