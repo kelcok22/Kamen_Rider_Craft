@@ -226,7 +226,7 @@
       {
         "type": "patchouli:text",
         "anchor": "big_ring_color_ver",
-        "title": "???",
+        "title": "Big Wizard Ring (Color ver.)",
         "text": "Appears in:$(li)Big Wizard Ring Original Color Ver. (2012, toyline)$(br2)Gives Giant V"
       },
       {
@@ -330,7 +330,7 @@
       {
         "type": "patchouli:text",
         "anchor": "flame_ring_color_ver",
-        "title": "???",
+        "title": "Flame Wizard Ring (Color ver.)",
         "text": "Appears in:$(li)Flame Wizard Ring Original Color Ver. (2012, toyline)$(br2)Gives Fire Resistance"
       },
       {
@@ -343,7 +343,7 @@
       {
         "type": "patchouli:text",
         "anchor": "water_ring_color_ver",
-        "title": "???",
+        "title": "Water Wizard Ring (Color ver.)",
         "text": "Appears in:$(li)Water Wizard Ring Original Color Ver. (2012, toyline)$(br2)Gives Water Breathing"
       },
       {
