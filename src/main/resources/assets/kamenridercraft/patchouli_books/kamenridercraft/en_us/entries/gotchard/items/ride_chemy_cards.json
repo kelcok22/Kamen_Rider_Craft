@@ -1301,11 +1301,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:tamagon_ride_chemy_card",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:gotchard/tamagon_ride_chemy_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -1318,7 +1315,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nijigon_ride_chemy_card_extra",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using the $(l:gotchard/items/ride_chemy_cards#tamagon_ride_chemy_card)Tamagon Ride Chemy Card$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1331,7 +1328,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nijigon_ride_chemy_card_special",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using the $(l:gotchard/items/ride_chemy_cards#tamagon_ride_chemy_card)Tamagon Ride Chemy Card$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
       {
         "type": "patchouli:text",
@@ -1389,11 +1386,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Majade's $(l:gotchard/riders/majade#twilight)Twilight Majade$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:twilight_the_sun_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/twilight_the_sun_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1402,11 +1396,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Majade's $(l:gotchard/riders/majade#twilight)Twilight Majade$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:twilight_unicon_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/twilight_unicon_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
