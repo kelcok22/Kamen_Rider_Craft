@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:fourze_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:cosmic_switch"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:fourze_cosmic_ride_chemy_card"
+  }
+}

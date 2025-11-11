@@ -162,7 +162,7 @@
         "type": "patchouli:text",
         "anchor": "charadeco_capsem",
         "title": "Zeztz Capsem (Charadeco ver.)",
-        "text": "Appears in:$(li)Kamen Rider Zeztz Charadeco Cake (2024, pastry line),"
+        "text": "Appears in:$(li)Kamen Rider Zeztz Charadeco Cake (2024, pastry line)"
       },
       {
         "type": "patchouli:spotlight",
@@ -175,7 +175,7 @@
         "type": "patchouli:text",
         "anchor": "gochizo_capsem",
         "title": "Gochizo Capsem",
-        "text": "Appears in:$(li)Kamen Rider Zeztz Zeztz Gochizo & Gochizo Capsem GET Campaign (2025, promo contest)"
+        "text": "Appears in:$(li)Kamen Rider Zeztz Zeztz Gochizo & Gochizo Capsem Set (2025, toyline)"
       },
       {
         "type": "patchouli:spotlight",

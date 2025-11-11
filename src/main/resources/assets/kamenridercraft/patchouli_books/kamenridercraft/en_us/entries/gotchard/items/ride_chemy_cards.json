@@ -1410,7 +1410,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:metal_machwheel_ride_chemy_card",
         "title": " ",
-        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Gigist$(/l) (if you have a $(l:gotchard/mobs/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/mobs/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Dark King Gigist$(/l) (if you have a $(l:gotchard/mobs/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/mobs/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
       },
       {
         "type": "patchouli:text",
@@ -1423,7 +1423,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:metal_daiohni_ride_chemy_card",
         "title": " ",
-        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Gigist$(/l) (if you have a $(l:gotchard/mobs/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/mobs/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Dark King Gigist$(/l) (if you have a $(l:gotchard/mobs/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/mobs/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
       },
 		{
 			"type": "patchouli:text",

@@ -483,7 +483,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 40, 0, 0, 0, 1);
                 }
-            }.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().has_basic_model().AddToList(SNACK,2).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHOCO_TREASURE_GOCHIZO = ITEMS.register("choco_treasure_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shieldsnack","gavv","henshin_belt_gavv_belt_choco_treasure",
@@ -499,7 +499,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 40, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).has_basic_model().AddToList(CHOCO,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> UMAIBO_GOCHIZO = ITEMS.register("umaibo_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shot_snack","gavv","henshin_belt_gavv_belt_shot_snack",

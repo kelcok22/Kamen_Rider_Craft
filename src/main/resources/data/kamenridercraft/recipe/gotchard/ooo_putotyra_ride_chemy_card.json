@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ooo_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:ptera_medal"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ooo_putotyra_ride_chemy_card"
+  }
+}

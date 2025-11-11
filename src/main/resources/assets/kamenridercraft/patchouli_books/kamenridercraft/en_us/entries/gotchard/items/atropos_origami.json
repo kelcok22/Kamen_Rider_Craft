@@ -13,7 +13,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:atropos_origami",
         "title": " ",
-        "text": "Drops from:$(li)$(l:gotchard/mobs/gaelijah)Gaelijah$(/l)"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/gaelijah)Dark King Gaelijah$(/l)"
       }
     ]
 }

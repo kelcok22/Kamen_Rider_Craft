@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:den_o_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:denkamen_sword"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:den_o_liner_ride_chemy_card"
+  }
+}

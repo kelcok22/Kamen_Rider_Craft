@@ -13,7 +13,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:philosophers_stone_fragment",
         "title": " ",
-        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Gigist$(/l)$(li)$(l:gotchard/mobs/germain)Germain$(/l)$(li)$(l:gotchard/mobs/gaelijah)Gaelijah$(/l)"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/gigist)Dark King Gigist$(/l)$(li)$(l:gotchard/mobs/germain)Dark King Germain$(/l)$(li)$(l:gotchard/mobs/gaelijah)Dark King Gaelijah$(/l)"
       }
     ]
 }

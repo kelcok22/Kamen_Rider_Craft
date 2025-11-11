@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:revi_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:giffard_rex_vistamp"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ultimate_revi_ride_chemy_card"
+  }
+}

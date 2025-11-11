@@ -1,6 +1,6 @@
 {
 	"parent": "kamenridercraft:gotchard/main",
-    "name": "Gavv Mobs",
+    "name": "Gotchard Mobs",
     "description": "Every mob from or relating to the show, Kamen Rider Gotchard.",
     "icon": "kamenridercraft:gotchard_logo",
     "sortnum": 4
