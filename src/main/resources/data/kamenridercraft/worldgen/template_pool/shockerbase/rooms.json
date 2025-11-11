@@ -1,0 +1,17 @@
+{
+	"name": "kamenridercraft:shockerbase/rooms",
+  "fallback": "minecraft:empty",
+
+  "elements": [
+	{
+	  "weight": 1,
+	  "element": {
+		"location": "kamenridercraft:shockerbase/rooms/room_empty",
+
+		"processors": "minecraft:empty",
+		"projection": "rigid",
+		"element_type": "minecraft:single_pool_element"
+	  }
+	}
+  ]
+}
