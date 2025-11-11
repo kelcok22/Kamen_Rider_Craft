@@ -1506,6 +1506,7 @@ public class Gotchard_Rider_Items {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);

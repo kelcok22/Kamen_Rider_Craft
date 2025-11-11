@@ -1170,6 +1170,10 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> ELD_BOSS_BLOCK = registerBlock("eld_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.ELD).addLine(Component.translatable("henshin.kamenridercraft.eld")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 	public static final DeferredBlock<Block> BOCCA_BOSS_BLOCK = registerBlock("bocca_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.BOCCA_JALDAK).addLine(Component.translatable("henshin.kamenridercraft.bocca_jaldak")).AddToTabList(RiderTabs.RIDER_BLOCK));

@@ -1349,6 +1349,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GAELIJAH_SPAWN_EGG = ITEMS.register("gaelijah_spawn_egg",
             () -> new DeferredSpawnEggItem(GAELIJAH, 0xc2c2c2, 0x9d9c9c, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<EldEntity>> ELD = MOBLIST.register("eld",
+            () -> EntityType.Builder.of(EldEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":eld"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ELD_SPAWN_EGG = ITEMS.register("eld_spawn_egg",
+            () -> new DeferredSpawnEggItem(ELD, 0xffcc00, 0xc20020, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
             () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));
 
