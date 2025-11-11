@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Apocalypse Reboot",
-			"text": "Accessed with the $(l:zero_one/items/progrisekeys#red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l) while having the $(l:zero_one/items/progrisekeys#thousand_key)Thousand Key$(/l) in your inventory"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l) while having a $(l:zero_one/items/progrisekeys#thousand_key)Thousand Key$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

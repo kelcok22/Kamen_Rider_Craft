@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Liner Form",
-			"text": "Accessed with the $(l:den_o/items/denkamen_sword)DenKamen Sword$(/l) while having the $(l:den_o/items/ktaros)K-Taros$(/l) in your inventory"
+			"text": "Accessed with the $(l:den_o/items/denkamen_sword)DenKamen Sword$(/l) while having a $(l:den_o/items/ktaros)K-Taros$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Climax Form",
-			"text": "Accessed by shift-clicking the $(l:den_o/items/rider_tickets#rider_ticket_wing)Rider Ticket Sieg$(/l) while having the $(l:den_o/items/ktaros)K-Taros$(/l) in your inventory"
+			"text": "Accessed by shift-clicking the $(l:den_o/items/rider_tickets#rider_ticket_wing)Rider Ticket Sieg$(/l) while having a $(l:den_o/items/ktaros)K-Taros$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

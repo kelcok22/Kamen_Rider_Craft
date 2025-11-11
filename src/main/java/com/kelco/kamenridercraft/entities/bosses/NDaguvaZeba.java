@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Gaim_Rider_Items;
 import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -24,7 +23,7 @@ import javax.annotation.Nullable;
 public class NDaguvaZeba extends BaseHenchmenEntity {
 
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
-    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(CoreEntity.class, EntityDataSerializers.BYTE);
+    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(NDaguvaZeba.class, EntityDataSerializers.BYTE);
 
     public NDaguvaZeba(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);

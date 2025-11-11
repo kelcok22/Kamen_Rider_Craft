@@ -31,16 +31,13 @@ public class ConnectEffect extends InstantenousMobEffect {
 				if (pLivingEntity instanceof ServerPlayer player) {
 
 					PlayerEnderChestContainer playerenderchestcontainer = player.getEnderChestInventory();
-					if (playerenderchestcontainer != null) {
-							Component CONTAINER_TITLE = Component.translatable(KamenRiderCraftCore.MOD_ID+".container.enderchest");
+                    Component CONTAINER_TITLE = Component.translatable(KamenRiderCraftCore.MOD_ID + ".container.enderchest");
 
-							player.openMenu(new SimpleMenuProvider((p_53124_, p_53125_, p_53126_) -> ChestMenu.threeRows(p_53124_, p_53125_, playerenderchestcontainer), CONTAINER_TITLE));
-							player.awardStat(Stats.OPEN_ENDERCHEST);
-							PiglinAi.angerNearbyPiglins(player, true);
+                    player.openMenu(new SimpleMenuProvider((p_53124_, p_53125_, p_53126_) -> ChestMenu.threeRows(p_53124_, p_53125_, playerenderchestcontainer), CONTAINER_TITLE));
+                    player.awardStat(Stats.OPEN_ENDERCHEST);
+                    PiglinAi.angerNearbyPiglins(player, true);
 
-					}
-
-				}
+                }
 			}
 		}
 		return false;

@@ -25,7 +25,7 @@
         "scale": -1,
         "offset": 0.1,
         "name": "Megahex w/ Kiwami Lockseed",
-        "text": "Accessed with the $(l:gaim/items/megahex_kiwami)Megahex Core$(/l) while having the $(l:gaim/items/lockseeds#kiwami_lockseed)Kiwami Lockseed$(/l) in your inventory"
+        "text": "Accessed with the $(l:gaim/items/megahex_kiwami)Megahex Core$(/l) while having a $(l:gaim/items/lockseeds#kiwami_lockseed)Kiwami Lockseed$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",

@@ -831,7 +831,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:president_dan_kuroto_progrisekey",
 			"title": " ",
-			"text": "Converted from a $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l) by getting the Bugster Virus as $(l:zero_one/riders/thouser)Kamen Rider Thouser$(/l) while having the $(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One Progrisekey$(/l) in your inventory"
+			"text": "Converted from a $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l) by getting the Bugster Virus as $(l:zero_one/riders/thouser)Kamen Rider Thouser$(/l) while having an $(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One Progrisekey$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

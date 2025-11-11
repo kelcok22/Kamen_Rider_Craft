@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#wiseman_boss_block)Wiseman Boss Block$(/l)$(br2)Drops$(li)4-10 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)2-5 $(l:wizard/items/magic_stones#wizardgem_violet)Violet Magic Stones$(/l)$(li)1-3 $(l:wizard/items/magic_stones#wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/philosophers_stone)Philosopher's Stone$(/l)$(li)1 $(l:wizard/items/wizard_rings#wiseman_ring)Wiseman Wizard Ring$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#wiseman_boss_block)Wiseman Boss Block$(/l)$(br2)Drops$(li)4-10 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)2-5 $(l:wizard/items/magic_stones#wizardgem_violet)Violet Magic Stones$(/l)$(li)1-3 $(l:wizard/items/magic_stones#wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/philosophers_stone)Philosopher's Stone$(/l)$(li)1 $(l:wizard/items/wizard_rings#wiseman_ring)Wiseman Wizard Ring$(/l) (50%)$(li)1 $(l:wizard/items/wizard_rings#driver_on_ring_white_wizard)Driver On Wizard Ring (Wiseman)$(/l) (50%)"
 		}
 	]
 }

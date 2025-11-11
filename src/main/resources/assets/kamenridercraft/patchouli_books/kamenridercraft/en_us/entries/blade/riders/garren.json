@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jack Form",
-			"text": "Accessed with the $(l:blade/items/rouze_cards#fusion_peacock)Fusion Peacock Rouze Card$(/l) while having the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and the $(l:blade/items/rouze_cards#absorb_serpent)Absorb Serpent Rouze Card$(/l) in your inventory"
+			"text": "Accessed with the $(l:blade/items/rouze_cards#fusion_peacock)Fusion Peacock Rouze Card$(/l) while having a $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and $(l:blade/items/rouze_cards#absorb_serpent)Absorb Serpent Rouze Card$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "King Form",
-			"text": "Accessed with the $(l:blade/items/rouze_cards#evolution_giraffa)Evolution Giraffa Rouze Card$(/l) while having the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and the $(l:blade/items/rouze_cards#absorb_serpent)Absorb Serpent Rouze Card$(/l) in your inventory"
+			"text": "Accessed with the $(l:blade/items/rouze_cards#evolution_giraffa)Evolution Giraffa Rouze Card$(/l) while having a $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and $(l:blade/items/rouze_cards#absorb_serpent)Absorb Serpent Rouze Card$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

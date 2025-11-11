@@ -74,7 +74,7 @@ public class UratarosEntity extends BaseAllyEntity {
         		if (p_28879_ instanceof Creeper || p_28879_ instanceof Ghast) {
 					return this.getMainHandItem().getItem() instanceof BowItem;
 				}
-				return p_28879_ instanceof Enemy && !(p_28879_ instanceof Creeper) && !(p_28879_ instanceof NeutralMob neutral && !neutral.isAngry());
+				return p_28879_ instanceof Enemy && !(p_28879_ instanceof NeutralMob neutral && !neutral.isAngry());
 			}else return false;
 		}));
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, false, this::isAngryAt));

@@ -65,9 +65,15 @@ public class GameCreator extends MachineBlock {
  			int rand = generator.nextInt(BLANK_DOUBLE_GASHAT.size());
  			return BLANK_DOUBLE_GASHAT.get(rand);
  		} else if (num==3){
+            if (player.getInventory().countItem(Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get())!=0){
+                return Ex_Aid_Rider_Items.HYPER_FUMESTU_GASHAT.get();
+            }
  			int rand = generator.nextInt(BLANK_HYPER_GASHAT.size());
  			return BLANK_HYPER_GASHAT.get(rand);
  		}  else{
+            if (player.getInventory().countItem(Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get())!=0){
+                return Ex_Aid_Rider_Items.MAXIMUM_ZOMBIE_GASHAT.get();
+            }
  			int rand = generator.nextInt(BLANK_MAXIMUM_GASHAT.size());
  			return BLANK_MAXIMUM_GASHAT.get(rand);
  		}

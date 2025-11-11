@@ -410,7 +410,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:driver_on_ring_white_wizard",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Drops from:$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.variants.MalgamVariant;
-import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
@@ -12,17 +11,13 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
-
-import static com.kelco.kamenridercraft.entities.variants.AgentVariant.*;
 
 public class MalgamEntity extends BaseHenchmenEntity {
 
@@ -82,21 +77,13 @@ public class MalgamEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-                int bossChoice = this.random.nextInt(2);
-                switch (bossChoice) {
-                    case 0:
-                        boss = MobsCore.DREAD.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dread"));
-                        }
-                        break;
-                    default:
+                boss = MobsCore.DREAD.get().create(this.level());
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                    if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
+                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dread"));
                 }
-
-            }
-            if (boss != null) {
-                boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                this.level().addFreshEntity(boss);
             }
         }
         super.remove(p_149847_);
