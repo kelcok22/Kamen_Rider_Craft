@@ -10,10 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
+              "count": 10
             }
           ]
         }
@@ -24,21 +21,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:philosophers_stone_fragment",
+          "name": "kamenridercraft:eldragon_chemy_card",
           "weight": 1
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 4
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:atropos_origami"
         }
       ]
     }
