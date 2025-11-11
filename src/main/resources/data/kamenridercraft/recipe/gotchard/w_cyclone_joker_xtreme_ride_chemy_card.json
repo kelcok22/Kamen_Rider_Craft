@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:w_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:xtreme_memory"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:w_cyclone_joker_xtreme_ride_chemy_card"
+  }
+}

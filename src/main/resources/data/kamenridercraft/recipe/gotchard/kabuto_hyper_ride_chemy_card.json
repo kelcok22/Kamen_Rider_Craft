@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kabuto_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:hyper_zecter"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kabuto_hyper_ride_chemy_card"
+  }
+}

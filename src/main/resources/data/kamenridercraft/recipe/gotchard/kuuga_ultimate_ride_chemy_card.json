@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kuuga_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kuuga_ultimate"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kuuga_ultimate_ride_chemy_card"
+  }
+}

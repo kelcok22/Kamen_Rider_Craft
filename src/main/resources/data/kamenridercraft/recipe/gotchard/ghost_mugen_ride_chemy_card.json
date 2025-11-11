@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ghost_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:mugen_ghost_eyecon"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ghost_mugen_ride_chemy_card"
+  }
+}

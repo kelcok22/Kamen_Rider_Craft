@@ -286,7 +286,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kungfu_ramen_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -299,7 +299,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:choco_treasure_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+          "text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
       {
         "type": "patchouli:text",
@@ -2011,11 +2011,10 @@
 			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#boonboomger)Boonboomger Assist$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:boonboomger_gochizo",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "title": " ",
+          "recipe": "kamenridercraft:gavv/boonboomger_gochizo",
+          "text": "If you do not see a recipe here, you need to install the Super Sentai Craft mod"
 		}
 	]
 }

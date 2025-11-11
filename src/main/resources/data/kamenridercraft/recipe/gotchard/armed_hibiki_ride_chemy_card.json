@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:hibiki_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:armed_saber"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:armed_hibiki_ride_chemy_card"
+  }
+}

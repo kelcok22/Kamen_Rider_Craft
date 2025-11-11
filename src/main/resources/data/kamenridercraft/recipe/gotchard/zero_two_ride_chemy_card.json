@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:zero_one_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:zero_two_progrisekey"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:zero_two_ride_chemy_card"
+  }
+}

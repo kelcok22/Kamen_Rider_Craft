@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legendary_legend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:wizard_ride_chemy_card"
+	}, 
+	{
+	  "item": "kamenridercraft:infinity_ring"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:wizard_infinity_ride_chemy_card"
+  }
+}

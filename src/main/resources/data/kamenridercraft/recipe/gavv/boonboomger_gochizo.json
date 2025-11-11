@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gavv",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_gochizo"
+	}, 
+	{
+	  "item": "supersentaicraft:boonboom_super_car"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:boonboomger_gochizo"
+  }
+}

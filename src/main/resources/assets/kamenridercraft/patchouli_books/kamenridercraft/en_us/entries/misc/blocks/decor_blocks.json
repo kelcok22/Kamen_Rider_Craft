@@ -537,7 +537,7 @@
 			"anchor": "sword_of_logos_wood2",
 			"link_recipe": true,
 			"item": "kamenridercraft:sword_of_logos_wood2",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside the $(l:misc/city/urban_area#narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -938,8 +938,7 @@
 			"anchor": "light_green_wallplate_grate_slab",
 			"link_recipe": true,
 			"item": "kamenridercraft:light_green_wallplate_grate_slab",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside idk kuzu"
+			"text": "Found inside $(l:misc/city/centers#fuuto_tower)Fuuto Tower$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
