@@ -748,7 +748,7 @@
 			"type": "patchouli:text",
 			"anchor": "x_medal",
 			"title": "X Core Medal",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:x/riders/x)Kamen Rider X$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:x/riders/x)Kamen Rider X$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having an $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -759,7 +759,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_medal",
 			"title": "Amazon Core Medal",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having an $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -770,7 +770,7 @@
 			"type": "patchouli:text",
 			"anchor": "stronger_medal",
 			"title": "Stronger Core Medal",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having an $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",

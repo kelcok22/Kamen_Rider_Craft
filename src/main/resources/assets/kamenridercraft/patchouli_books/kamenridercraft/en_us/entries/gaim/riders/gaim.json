@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Black Jimber Arms",
-			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#dark_lemon_energy_lockseed)Black Lemon Energy Lockseed$(/l) while having the $(l:gaim/items/lockseeds#dark_orange_lockseed)Black Orange Lockseed$(/l) in your inventory"
+			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#dark_lemon_energy_lockseed)Black Lemon Energy Lockseed$(/l) while having a $(l:gaim/items/lockseeds#dark_orange_lockseed)Black Orange Lockseed$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

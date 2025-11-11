@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocket Drill States",
-			"text": "Accessed with the $(l:fourze/items/astroswitches#clear_drill_switch)Clear Drill Switch$(/l) while having the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l) in your inventory"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#clear_drill_switch)Clear Drill Switch$(/l) while having a $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Nadeshiko Fusionstates",
-			"text": "Accessed with the $(l:fourze/items/astroswitches#fusion_switch)Fusion Switch$(/l) while having the $(l:fourze/items/astroswitches#meteor_switch)Meteor$(/l) and $(l:fourze/items/astroswitches#nadeshiko_switch)Nadeshiko Switches$(/l) in your inventory"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#fusion_switch)Fusion Switch$(/l) while having a $(l:fourze/items/astroswitches#meteor_switch)Meteor$(/l) and $(l:fourze/items/astroswitches#nadeshiko_switch)Nadeshiko$(/l) Switch in your inventory"
 		},
 		{
 			"type": "patchouli:text",

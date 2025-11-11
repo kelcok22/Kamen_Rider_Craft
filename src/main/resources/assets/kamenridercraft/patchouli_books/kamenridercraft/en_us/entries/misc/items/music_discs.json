@@ -277,10 +277,8 @@
 			"text": "Song:$(li)HosephHoestar - Life is SHOW TIME$(br2)Based on:$(li)Sho Kiryuin from Golden Bomber - Life is SHOW TIME$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:life_is_showtime_music_disc",
-			"text": "Disc is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:wizard/life_is_showtime_music_disc"
 		},
 		{
 			"type": "patchouli:text",
@@ -366,7 +364,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:realxeyez_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Traded by a master $(l:misc/villagers#humagear_villager)Humagear Villager$(/l)"
 		},
 		{
 			"type": "patchouli:text",

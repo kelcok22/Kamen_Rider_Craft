@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)$(l:zero_one/items/blank_progrisekey)Blank Progrisekey$(/l) for 1 emerald$(li)1 emerald for 3 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(br2)Apprentice Trades:$(li)3 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) for 2 emeralds$(br2)Journeyman Trades:$(li)$(l:zero_one/items/progrisekeys#thousand_key)Thousand Key$(/l) for 12 emeralds"
+			"text": "Novice Trades:$(li)$(l:zero_one/items/blank_progrisekey)Blank Progrisekey$(/l) for 1 emerald$(li)1 emerald for 3 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(br2)Apprentice Trades:$(li)3 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) for 2 emeralds$(br2)Journeyman Trades:$(li)$(l:zero_one/items/progrisekeys#thousand_key)Thousand Key$(/l) for 12 emeralds$(br2)Master Trades:$(li)$(l:misc/items/music_discs#realxeyez_music_disc)REALxEYEZ Music Disc$(/l) for 4 emeralds"
 		},
 		{
 			"type": "patchouli:entity",

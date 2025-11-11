@@ -48,7 +48,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:volcano_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l) while having a $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

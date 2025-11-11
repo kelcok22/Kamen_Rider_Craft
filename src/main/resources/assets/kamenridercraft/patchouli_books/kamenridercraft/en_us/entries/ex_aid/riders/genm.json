@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hyper Fumetsu Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper Fumetsu Gashat$(/l) while having the $(l:ex_aid/items/rider_gashats#maximum_zombie_gashat)Maximum Zombie Gashat$(/l) in your inventory"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper Fumetsu Gashat$(/l) while having a $(l:ex_aid/items/rider_gashats#maximum_zombie_gashat)Maximum Zombie Gashat$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

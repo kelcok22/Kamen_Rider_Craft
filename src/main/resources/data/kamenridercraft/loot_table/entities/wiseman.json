@@ -7,7 +7,11 @@
 				{
 					"type": "minecraft:item",
 					"name": "kamenridercraft:wiseman_ring"
-				}
+				},
+              {
+                "type": "minecraft:item",
+                "name": "kamenridercraft:driver_on_ring_white_wizard"
+              }
 			]
 		},
 		{

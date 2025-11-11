@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "music_disc",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:dance_ring"
+	}, 
+	{
+		"tag": "c:music_discs"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:life_is_showtime_music_disc"
+  }
+}
