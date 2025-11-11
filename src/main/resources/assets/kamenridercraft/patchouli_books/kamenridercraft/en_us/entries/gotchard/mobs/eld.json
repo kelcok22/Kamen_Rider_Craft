@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Eld",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:eld",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#eld_boss_block)Eld Boss Block$(/l)$(br2)Drops$(li)10 $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l)$(li)1 $(l:gotchard/items/ride_chemy_cards#eldragon_chemy_card)Eldragon Chemy Card$(/l)$(li)1 $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card_ultima)Ultima Hopper1 Ride Chemy Card$(/l) (consumes a $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)Hopper1 Ride Chemy Card$(/l) from your inventory)$(li)1 $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card_ultima)Ultima Steamliner Ride Chemy Card$(/l) (consumes a $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)Steamliner Ride Chemy Card$(/l) from your inventory)"
+		}
+	]
+}

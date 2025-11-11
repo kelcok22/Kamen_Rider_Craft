@@ -226,6 +226,12 @@
       },
       {
         "type": "patchouli:crafting",
+        "anchor": "eld_boss_block",
+        "recipe": "kamenridercraft:gotchard/eld_boss_block",
+        "text": "Mine this block to summon $(l:gotchard/mobs/eld)Kamen Rider Eld$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
         "anchor": "bocca_boss_block",
         "recipe": "kamenridercraft:gavv/bocca_boss_block",
         "text": "Mine this block to summon $(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"

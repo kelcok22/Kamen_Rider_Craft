@@ -1364,7 +1364,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:hopper1_ride_chemy_card_ultima",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/eld)Kamen Rider Eld$(/l) (if you have a $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)Hopper1 Ride Chemy Card$(/l) in your inventory)"
       },
       {
         "type": "patchouli:text",
@@ -1377,7 +1377,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:steamliner_ride_chemy_card_ultima",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/eld)Kamen Rider Eld$(/l) (if you have a $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)Steamliner Ride Chemy Card$(/l) in your inventory)"
       },
       {
         "type": "patchouli:text",
@@ -1648,7 +1648,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:eldragon_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/eld)Kamen Rider Eld$(/l)"
       },
 		{
 			"type": "patchouli:text",
@@ -2021,11 +2021,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kuuga_ultimate)Gorgeous Kuuga Ultimate Form$(/l)$(br2)Can summon Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) and $(l:kuuga/riders/kuuga#amazing_mighty)Amazing Mighty$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#kuuga_ultimate)Gorgeous Kuuga Ultimate Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:kuuga_ultimate_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/kuuga_ultimate_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2034,11 +2032,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#agito_shining)Gorgeous Agito Shining Form$(/l)$(br2)Can summon Agito's $(l:agito/riders/agito#ground)Ground$(/l) and $(l:agito/riders/agito#burning)Burning$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#agito_shining)Gorgeous Agito Shining Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:agito_shining_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/agito_shining_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2047,11 +2043,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ryuki_survive)Gorgeous Ryuki Survive$(/l) form$(br2)Can summon Ryuki's $(l:ryuki/riders/ryuki#ryuki)base form$(/l) and $(l:ryuki/riders/ryuki#dragshield)base form w/ Dragshields$(/l) when shift-clicked as $(l:gotchard/riders/legend#ryuki_survive)Gorgeous Ryuki Survive$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:ryuki_survive_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/ryuki_survive_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2060,11 +2054,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz_blaster)Gorgeous Faiz Blaster Form$(/l)$(br2)Can summon Faiz's $(l:faiz/riders/faiz#faiz)base$(/l) and $(l:faiz/riders/faiz#axel)Axel$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#faiz_blaster)Gorgeous Faiz Blaster Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:faiz_blaster_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/faiz_blaster_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2073,11 +2065,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#blade_king)Gorgeous Blade King Form$(/l)$(br2)Can summon Blade's $(l:blade/riders/blade#blade)base$(/l) and $(l:blade/riders/blade#jack)Jack$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#blade_king)Gorgeous Blade King Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:blade_king_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/blade_king_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2086,11 +2076,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#armed_hibiki)Gorgeous Armed Hibiki$(/l) form$(br2)Can summon Hibiki's $(l:hibiki/riders/hibiki#hibiki)base$(/l) and $(l:hibiki/riders/hibiki#kurenai)Kurenai$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#armed_hibiki)Gorgeous Armed Hibiki$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:armed_hibiki_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/armed_hibiki_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2099,11 +2087,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kabuto_hyper)Gorgeous Kabuto Hyper Form$(/l)$(br2)Can summon Kabuto's $(l:kabuto/riders/kabuto#masked)Masked$(/l) and $(l:kabuto/riders/kabuto#rider)Rider$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#kabuto_hyper)Gorgeous Kabuto Hyper Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:kabuto_hyper_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/kabuto_hyper_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2112,11 +2098,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#den_o_liner)Gorgeous Den-O Liner Form$(/l)$(br2)Can summon Den-O's $(l:den_o/riders/den_o#sword)Sword$(/l) and $(l:den_o/riders/den_o#climax)Climax$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#den_o_liner)Gorgeous Den-O Liner Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:den_o_liner_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/den_o_liner_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2125,11 +2109,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kiva_emperor)Gorgeous Kiva Emperor Form$(/l)$(br2)Can summon Kiva's $(l:kiva/riders/kiva#kiva)Kiva$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#kiva_emperor)Gorgeous Kiva Emperor Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:kiva_emperor_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/kiva_emperor_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2138,11 +2120,9 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#decade_complete)Gorgeous Decade Complete Form$(/l)$(br2)Can summon Decade's $(l:decade/riders/decade#decade)base form$(/l) and $(l:decade/riders/decade#neo_decade)NeoDecadriver form$(/l) when shift-clicked as $(l:gotchard/riders/legend#decade_complete)Gorgeous Decade Complete Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:decade_complete_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/decade_complete_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2151,11 +2131,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#double_cyclonejokerxtreme)Gorgeous Double CycloneJokerXtreme$(/l) form$(br2)Can summon Double's $(l:w/riders/double#cyclonejoker)CycloneJoker$(/l) and $(l:w/riders/double#fangjoker)FangJoker$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#double_cyclonejokerxtreme)Gorgeous Double CycloneJokerXtreme$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:w_cyclone_joker_xtreme_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/w_cyclone_joker_xtreme_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2164,11 +2142,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ooo_putotyra)Gorgeous OOO Putotyra Combo$(/l)$(br2)Can summon OOO's $(l:ooo/riders/ooo#tatoba)Tatoba$(/l) and $(l:ooo/riders/ooo#tajadol)Tajadol$(/l) Combos when shift-clicked as $(l:gotchard/riders/legend#ooo_putotyra)Gorgeous OOO Putotyra Combo$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:ooo_putotyra_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/ooo_putotyra_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2177,11 +2153,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#fourze_cosmic)Gorgeous Fourze Cosmicstates$(/l)$(br2)Can summon Fourze's $(l:fourze/riders/fourze#basestates)Basestates$(/l) and $(l:fourze/riders/fourze#magnetstates)Magnetstates$(/l) when shift-clicked as $(l:gotchard/riders/legend#fourze_cosmic)Gorgeous Fourze Cosmicstates$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:fourze_cosmic_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/fourze_cosmic_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2190,11 +2164,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#wizard_infinity)Gorgeous Wizard Infinity Style$(/l)$(br2)Can summon Wizard's $(l:wizard/riders/wizard#flame)Flame Style$(/l) and $(l:wizard/riders/wizard#all_dragon)All Dragon form$(/l) when shift-clicked as $(l:gotchard/riders/legend#wizard_infinity)Gorgeous Wizard Infinity Style$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:wizard_infinity_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/wizard_infinity_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2203,11 +2175,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#gaim_kiwami)Gorgeous Gaim Kiwami Arms$(/l)$(br2)Can summon Gaim's $(l:gaim/riders/gaim#orange)Orange$(/l) and $(l:gaim/riders/gaim#kachidoki)Kachidoki$(/l) Arms when shift-clicked as $(l:gotchard/riders/legend#gaim_kiwami)Gorgeous Gaim Kiwami Arms$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:gaim_kiwami_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/gaim_kiwami_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2216,11 +2186,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#drive_tridoron)Gorgeous Drive type Tridoron$(/l)$(br2)Can summon Drive's $(l:drive/riders/drive#speed)type Speed$(/l) and $(l:drive/riders/drive#formula)type Formula$(/l) when shift-clicked as $(l:gotchard/riders/legend#drive_tridoron)Gorgeous Drive type Tridoron$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:drive_tridoron_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/drive_tridoron_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2229,11 +2197,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ghost_mugen)Gorgeous Ghost Mugen Damashii$(/l)$(br2)Can summon Ghost's $(l:ghost/riders/ghost#ore)Ore$(/l) and $(l:ghost/riders/ghost#grateful)Grateful$(/l) Damashii when shift-clicked as $(l:gotchard/riders/legend#ghost_mugen)Gorgeous Ghost Mugen Damashii$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:ghost_mugen_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/ghost_mugen_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2242,11 +2208,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ex_aid_muteki)Gorgeous Ex-Aid Muteki Gamer$(/l)$(br2)Can summon Ex-Aid's $(l:ex_aid/riders/ex_aid#action_2)Action Gamer Level 2$(/l) and $(l:ex_aid/riders/ex_aid#maximum)Maximum Gamer Level 99$(/l) when shift-clicked as $(l:gotchard/riders/legend#ex_aid_muteki)Gorgeous Ex-Aid Muteki Gamer$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:ex_aid_muteki_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/ex_aid_muteki_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2255,11 +2219,9 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#build_genius)Gorgeous Build Genius Form$(/l)$(br2)Can summon Build's $(l:build/riders/build#rabbittank)RabbitTank$(/l) and $(l:build/riders/build#rabbitrabbit)RabbitRabbit$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#build_genius)Gorgeous Build Genius Form$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:build_genius_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/build_genius_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2268,11 +2230,9 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#grandzi_o)Gorgeous GrandZi-O$(/l) form$(br2)Can summon Zi-O's $(l:zi_o/riders/zi_o#zi_o)base$(/l) and $(l:zi_o/riders/zi_o#ii)Zi-O II$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#grandzi_o)Gorgeous GrandZi-O$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:grand_zi_o_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/grand_zi_o_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2281,11 +2241,9 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zero_two)Gorgeous Zero-Two$(/l) form$(br2)Can summon Zero-One's $(l:zero_one/riders/zero_one#rising_hopper)Rising Hopper$(/l) and $(l:zero_one/riders/zero_one#metalcluster_hopper)MetalCluster Hopper$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#zero_two)Gorgeous Zero-Two$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:zero_two_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/zero_two_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2294,11 +2252,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#xross_saber)Gorgeous Xross Saber$(/l) form$(br2)Can summon Saber's $(l:saber/riders/saber#brave_dragon)Brave Dragon$(/l) and $(l:saber/riders/saber#elemental_primitive_dragon)Elemental Primitive Dragon$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#xross_saber)Gorgeous Xross Saber$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:xross_saber_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/xross_saber_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2307,11 +2263,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ultimate_revi)Gorgeous Ultimate Revi$(/l) form$(br2)Can summon Revi's $(l:revice/riders/revi#rex)Rex Genome$(/l) and $(l:revice/riders/revi#thunder_gale)Revice$(/l) form when shift-clicked as $(l:gotchard/riders/legend#ultimate_revi)Gorgeous Ultimate Revi$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:ultimate_revi_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/ultimate_revi_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2320,11 +2274,9 @@
         "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ultimate_vice)Gorgeous Ultimate Vice$(/l) form$(br2)Can summon Vice's $(l:revice/riders/vice#rex)Rex$(/l) and $(l:revice/riders/vice#barid_rex)Barid Rex$(/l) Genomes when shift-clicked as $(l:gotchard/riders/legend#ultimate_vice)Gorgeous Ultimate Vice$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:ultimate_vice_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/ultimate_vice_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -2333,11 +2285,9 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#geatsix)Gorgeous GeatsIX$(/l) form$(br2)Can summon Geats's $(l:geats/riders/geats#magnumboost)MagnumBoost$(/l) and $(l:geats/riders/geats#laserboost)LaserBoost$(/l) forms when shift-clicked as $(l:gotchard/riders/legend#geatsix)Gorgeous GeatsIX$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:geats_ix_ride_chemy_card",
+        "type": "patchouli:crafting",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "recipe": "kamenridercraft:gotchard/geats_ix_ride_chemy_card"
       },
 		{
 			"type": "patchouli:text",
