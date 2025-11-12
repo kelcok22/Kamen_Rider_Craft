@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/mashin_chaser",
+  "parent": "kamenridercraft:drive/lupin",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/valvarad",
+  "parent": "kamenridercraft:gotchard/wind",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
