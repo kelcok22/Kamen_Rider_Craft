@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/gotchard",
+  "parent": "kamenridercraft:gotchard/majade",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

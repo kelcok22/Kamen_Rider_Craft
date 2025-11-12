@@ -12,6 +12,9 @@
 	"kamenridercraft:unknown_black_ring",
 	"kamenridercraft:unknown_cyan_ring",
 	"kamenridercraft:unknown_beast_ring",
+    "kamenridercraft:lord_baron_fragment",
+    "kamenridercraft:lord_baron_fragment_2",
+    "kamenridercraft:lord_baron_fragment_3",
 	"kamenridercraft:tridoronshift_core",
 	"kamenridercraft:unfinished_fourtyfive_heisei_ghost_eyecon",
 	"kamenridercraft:unfinished_eyecon_driver_g",
@@ -30,6 +33,9 @@
 	"kamenridercraft:omni_force_wonder_ride_book_part",
 	"kamenridercraft:omni_force_wonder_ride_book_part_2",
     "kamenridercraft:barid_rex_vistamp_closed",
-    "kamenridercraft:unfinished_exgotchalibur"
+    "kamenridercraft:unfinished_exgotchalibur",
+    "kamenridercraft:kuuga_kiva_legend",
+    "kamenridercraft:decade_ex_aid_legend",
+    "kamenridercraft:build_gotchard_legend"
   ]
 }
