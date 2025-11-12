@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Gotchard Cross UFO-X",
-			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ufo_x_ride_chemy_card)UFO-X Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ufo_x_ride_chemy_card)UFO-X Ride Chemy Card$(/l) while having an $(l:gotchard/arsenal/exgotchalibur)Exgotchalibur$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Gotchard Cross X-Rex",
-			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_rex_ride_chemy_card)X-Rex Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_rex_ride_chemy_card)X-Rex Ride Chemy Card$(/l) while having an $(l:gotchard/arsenal/exgotchalibur)Exgotchalibur$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Star Gotchard",
-			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_assemble_ride_chemy_card)X Assemble Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_assemble_ride_chemy_card)X Assemble Ride Chemy Card$(/l) while having an $(l:gotchard/arsenal/exgotchalibur)Exgotchalibur$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
