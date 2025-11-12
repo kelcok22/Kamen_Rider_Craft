@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dorado",
+  "category": "equipment",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "kamenridercraft:blank_ride_chemy_card"
+    },
+    "B": {
+      "item": "kamenridercraft:dark_ether_chemy_card"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:eldoradriver"
+  }
+}

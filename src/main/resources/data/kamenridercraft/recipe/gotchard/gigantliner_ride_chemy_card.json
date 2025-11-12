@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gotchard",
+  "category": "equipment",
+  "pattern": [
+    "rnr",
+    "rsr",
+    "trw"
+  ],
+  "key": {
+    "r": {
+      "tag": "kamenridercraft:gear/alchemist_rings"
+    },
+    "n": {
+      "item": "kamenridercraft:ninetail_ride_chemy_card"
+    },
+    "s": {
+      "item": "kamenridercraft:steamliner_ride_chemy_card"
+    },
+    "t": {
+      "item": "kamenridercraft:timelord_ride_chemy_card"
+    },
+    "w": {
+      "item": "kamenridercraft:warptera_ride_chemy_card"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:gigantliner_ride_chemy_card"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gotchard_daybreak",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:daybreak_steamliner_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:golddash_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:apparebushido_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:bulletbaang_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:skebows_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:mechanichani_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:junglejan_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:raidenji_daybreak_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:the_sun_daybreak_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:shining_steamliner_ride_chemy_card"
+  }
+}

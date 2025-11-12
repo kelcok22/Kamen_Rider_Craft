@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gotchard",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:gigantliner_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:hopper1_ride_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:hopper101_ride_chemy_card"
+  }
+}

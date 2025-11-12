@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:basalt_deltas",
+  "spawners": {
+	"type": "kamenridercraft:dreatrooper",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

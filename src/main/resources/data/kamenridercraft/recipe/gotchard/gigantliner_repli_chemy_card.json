@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dread",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:gigantliner_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:glion_gold_cube"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:gigantliner_repli_chemy_card"
+  }
+}

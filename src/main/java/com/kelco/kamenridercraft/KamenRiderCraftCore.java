@@ -619,6 +619,9 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.GERMAIN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GAELIJAH.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ELD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DREATROOPER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DREATROOPER_COMMANDER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DORADO.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.AGENT.get(), AgentRenderer::new);
             event.registerEntityRenderer(MobsCore.BITTER_GAVV.get(), BasicEntityRenderer::new);

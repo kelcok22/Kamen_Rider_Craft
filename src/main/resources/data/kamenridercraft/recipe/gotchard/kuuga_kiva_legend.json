@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:kuuga_ultimate_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:agito_shining_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:ryuki_survive_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:faiz_blaster_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:blade_king_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:armed_hibiki_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:kabuto_hyper_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:den_o_liner_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:kiva_emperor_ride_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:kuuga_kiva_legend"
+  }
+}
