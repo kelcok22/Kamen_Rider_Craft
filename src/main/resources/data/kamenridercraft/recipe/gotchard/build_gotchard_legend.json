@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:build_genius_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:grand_zi_o_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:zero_two_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:xross_saber_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:ultimate_revi_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:ultimate_vice_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:geats_ix_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:gotchard_ride_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:build_gotchard_legend"
+  }
+}

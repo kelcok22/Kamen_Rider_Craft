@@ -1355,6 +1355,24 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> ELD_SPAWN_EGG = ITEMS.register("eld_spawn_egg",
             () -> new DeferredSpawnEggItem(ELD, 0xffcc00, 0xc20020, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<DreaTrooperEntity>> DREATROOPER = MOBLIST.register("dreatrooper",
+            () -> EntityType.Builder.of(DreaTrooperEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dreatrooper"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DREATROOPER_SPAWN_EGG = ITEMS.register("dreatrooper_spawn_egg",
+            () -> new DeferredSpawnEggItem(DREATROOPER, 0x1a1a1a, 0xda0000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<DreaTrooperCommanderEntity>> DREATROOPER_COMMANDER = MOBLIST.register("dreatrooper_commander",
+            () -> EntityType.Builder.of(DreaTrooperCommanderEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dreatrooper_commander"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DREATROOPER_COMMANDER_SPAWN_EGG = ITEMS.register("dreatrooper_commander_spawn_egg",
+            () -> new DeferredSpawnEggItem(DREATROOPER_COMMANDER, 0x131321, 0xa88700, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<DoradoEntity>> DORADO = MOBLIST.register("dorado",
+            () -> EntityType.Builder.of(DoradoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dorado"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DORADO_SPAWN_EGG = ITEMS.register("dorado_spawn_egg",
+            () -> new DeferredSpawnEggItem(DORADO, 0x720000, 0x242424, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
             () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));
 

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "valvarad",
+  "pattern": [
+    "c ",
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "kamenridercraft:machwheel_ride_chemy_card"
+    },
+    "b": {
+      "item": "kamenridercraft:daiohni_ride_chemy_card"
+    },
+    "c": {
+      "item": "kamenridercraft:gigantliner_ride_chemy_card"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:gigantliner_gt_ride_chemy_card"
+  }
+}

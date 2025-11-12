@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:kuuga_kiva_legend"
+    },
+    {
+      "item": "kamenridercraft:decade_ex_aid_legend"
+    },
+    {
+      "item": "kamenridercraft:build_gotchard_legend"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:legendary_legend_ride_chemy_card"
+  }
+}

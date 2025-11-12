@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dread",
+  "category": "equipment",
+  "pattern": [
+    "AAA",
+    "BCD",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "kamenridercraft:blank_ride_chemy_card"
+    },
+    "B": {
+      "item": "kamenridercraft:buglesia_ride_chemy_card"
+    },
+    "C": {
+      "item": "kamenridercraft:kamantis_repli_chemy_card"
+    },
+    "D": {
+      "item": "kamenridercraft:carery_ride_chemy_card"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:dreadriver_meikoku_no_sanshimai"
+  }
+}

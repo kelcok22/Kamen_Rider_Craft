@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:decade_complete_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:w_cyclone_joker_xtreme_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:ooo_putotyra_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:fourze_cosmic_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:wizard_infinity_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:gaim_kiwami_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:drive_tridoron_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:ghost_mugen_ride_chemy_card"
+    },
+    {
+      "item": "kamenridercraft:ex_aid_muteki_ride_chemy_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:decade_ex_aid_legend"
+  }
+}

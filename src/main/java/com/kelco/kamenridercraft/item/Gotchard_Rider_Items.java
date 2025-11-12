@@ -1252,6 +1252,30 @@ public class Gotchard_Rider_Items {
     public static final DeferredItem<Item> TIMELORD_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("timelord_daybreak_chemy_card",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
 
+    public static final DeferredItem<Item> GOLDDASH_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("golddash_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> APPAREBUSHIDO_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("apparebushido_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> BULLETBAANG_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("bulletbaang_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> SKEBOWS_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("skebows_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> MECHANICHANI_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("mechanichani_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> JUNGLEJAN_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("junglejan_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> RAIDENJI_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("raidenji_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
+    public static final DeferredItem<Item> THE_SUN_RIDE_CHEMY_CARD_DAYBREAK  = ITEMS.register("the_sun_daybreak_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.Daybreak_CHEMY).has_basic_model());
+
     public static final DeferredItem<Item> SHINING_HOPPER1_RIDE_CHEMY_CARD_DAYBREAK = ITEMS.register("shining_hopper1_ride_chemy_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_shining","gotchard_daybreak","gotchardriver_belt_daybreak",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -1429,7 +1453,16 @@ public class Gotchard_Rider_Items {
                 }
             }.IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
-	public static final DeferredItem<Item> LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legend_ride_chemy_card",
+    public static final DeferredItem<Item> APPAREBUSHIDO_REPLI_CHEMY_CARD = ITEMS.register("apparebushido_repli_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CHEMY_CARD).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> BULLETBAANG_REPLI_CHEMY_CARD = ITEMS.register("bulletbaang_repli_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CHEMY_CARD).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> KAMANTIS_REPLI_CHEMY_CARD = ITEMS.register("kamantis_repli_chemy_card",
+            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CHEMY_CARD).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -1475,7 +1508,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+            }.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).KeepItem().has_basic_model());
 
     public static final DeferredItem<Item> DARK_ETHER_CHEMY_CARD = ITEMS.register("dark_ether_chemy_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","dorado","eldoradriver_belt",
@@ -2490,13 +2523,34 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> VALVARUSHER = ITEMS.register("valvarusher",
 			() -> new ValvarusherItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
-	public static final DeferredItem<Item> LEGEND_RIDE_MAGNUM = ITEMS.register("legend_ride_magnum",
+    public static final DeferredItem<Item> BLOODY_AB = ITEMS.register("bloody_ab",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> BLOODY_BB = ITEMS.register("bloody_bb",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> BLOODY_UC = ITEMS.register("bloody_uc",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> BLOODY_DO = ITEMS.register("bloody_do",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> TROOP_GOLDENT = ITEMS.register("troop_goldent",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> TROOP_AUTHIFY = ITEMS.register("troop_authify",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> LEGEND_RIDE_MAGNUM = ITEMS.register("legend_ride_magnum",
 			() -> new LegendRideMagnumItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> LEGEND_KAMEN_RISER = ITEMS.register("legend_kamen_riser",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
-	public static final DeferredItem<Item> CHEMY_RISER = ITEMS.register("chemy_riser",
+    public static final DeferredItem<Item> DORADO_SCYTHE = ITEMS.register("dorado_scythe",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+    public static final DeferredItem<Item> CHEMY_RISER = ITEMS.register("chemy_riser",
 			() -> new ChemyRiserItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 	
 	public static final DeferredItem<Item> CHEMY_RISER_SUPANA = ITEMS.register("chemy_riser_supana",
@@ -2541,7 +2595,15 @@ public class Gotchard_Rider_Items {
     public static final DeferredItem<Item> PHILOSOPHERS_STONE_FRAGMENT = ITEMS.register("philosophers_stone_fragment",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
-	public static void register(IEventBus eventBus) {
+    public static final DeferredItem<Item> KUUGA_KIVA_LEGEND = ITEMS.register("kuuga_kiva_legend",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+    public static final DeferredItem<Item> DECADE_EX_AID_LEGEND = ITEMS.register("decade_ex_aid_legend",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+    public static final DeferredItem<Item> BUILD_GOTCHARD_LEGEND = ITEMS.register("build_gotchard_legend",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+
+    public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
 

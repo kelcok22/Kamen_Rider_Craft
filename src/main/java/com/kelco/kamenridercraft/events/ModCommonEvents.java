@@ -808,6 +808,9 @@ public class ModCommonEvents {
         event.put(MobsCore.GERMAIN.get(), GermainEntity.setAttributes().build());
         event.put(MobsCore.GAELIJAH.get(), GaelijahEntity.setAttributes().build());
         event.put(MobsCore.ELD.get(), EldEntity.setAttributes().build());
+        event.put(MobsCore.DREATROOPER.get(), DreaTrooperEntity.setAttributes().build());
+        event.put(MobsCore.DREATROOPER_COMMANDER.get(), DreaTrooperCommanderEntity.setAttributes().build());
+        event.put(MobsCore.DORADO.get(), DoradoEntity.setAttributes().build());
 
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
@@ -939,6 +942,7 @@ public class ModCommonEvents {
 
         event.register(MobsCore.MALGAM.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(MobsCore.GOLEM.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(MobsCore.DREATROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
         event.register(MobsCore.AGENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

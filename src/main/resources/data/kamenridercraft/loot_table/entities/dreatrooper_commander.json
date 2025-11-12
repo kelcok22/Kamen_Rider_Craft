@@ -34,11 +34,8 @@
           "name": "kamenridercraft:apparebushido_repli_chemy_card"
         },
         {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:glion_gold_cube"
-        },
-        {
-          "type": "minecraft:empty"
+          "type": "minecraft:empty",
+          "weight": 2
         }
       ]
     },
