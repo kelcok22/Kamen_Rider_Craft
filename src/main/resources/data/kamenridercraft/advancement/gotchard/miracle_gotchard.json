@@ -1,22 +1,22 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:alchemisdriver_wind"
+	  "id": "kamenridercraft:gigantliner_ride_chemy_card"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.title"
+      "translate": "advancements.kamenridercraft.gotchard.miracle_gotchard.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.description"
+      "translate": "advancements.kamenridercraft.gotchard.miracle_gotchard.description"
     },
-    "frame": "task",
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/gotchard_daybreak",
+  "parent": "kamenridercraft:gotchard/rainbow_gotchard",
   "criteria": {
-	"requirement": {
+	"1": {
 	  "trigger": "minecraft:inventory_changed",
 	  "conditions": {
 		"player": {
@@ -38,8 +38,11 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:alchemisdriver_wind"
-			  ]
+				"kamenridercraft:gotchardriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:hopper101_ride_chemy_card\"}"
+              }
 			}
 		  }
 		}

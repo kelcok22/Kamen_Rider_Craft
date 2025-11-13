@@ -9,12 +9,12 @@
     "description": {
       "translate": "advancements.kamenridercraft.gotchard.ultima_steamhopper.description"
     },
-    "frame": "task",
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/rainbow_gotchard",
+  "parent": "kamenridercraft:gotchard/miracle_gotchard",
   "criteria": {
 	"1": {
 	  "trigger": "minecraft:inventory_changed",

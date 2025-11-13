@@ -1,22 +1,22 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:alchemisdriver_wind"
+	  "id": "kamenridercraft:metal_machwheel_ride_chemy_card"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.title"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_kurogane.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.description"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_kurogane.description"
     },
-    "frame": "task",
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/gotchard_daybreak",
+  "parent": "kamenridercraft:gotchard/valvarad_rider",
   "criteria": {
-	"requirement": {
+	"1": {
 	  "trigger": "minecraft:inventory_changed",
 	  "conditions": {
 		"player": {
@@ -38,8 +38,11 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:alchemisdriver_wind"
-			  ]
+				"kamenridercraft:valvaradriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:metal_machwheel_ride_chemy_card\"}"
+              }
 			}
 		  }
 		}
