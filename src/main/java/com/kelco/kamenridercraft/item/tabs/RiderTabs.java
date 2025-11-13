@@ -560,6 +560,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.RIDER_DECOR.get(i));
             }
+            event.accept(Rider_Blocks.SHOCKER_LOGO);
             event.accept(Rider_Blocks.BLUE_ROSE);
 
             event.accept(Rider_Blocks.HELHEIM_PLANT);

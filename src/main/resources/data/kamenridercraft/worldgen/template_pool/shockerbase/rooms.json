@@ -6,12 +6,39 @@
 	{
 	  "weight": 1,
 	  "element": {
-		"location": "kamenridercraft:shockerbase/rooms/room_empty",
+		"location": "kamenridercraft:shockerbase/rooms/room_1",
 
 		"processors": "minecraft:empty",
 		"projection": "rigid",
 		"element_type": "minecraft:single_pool_element"
 	  }
-	}
+	},{
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_megabloks",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_diner",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_shin_kamen_rider",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
   ]
 }
