@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:alchemisdriver_wind"
+	  "id": "kamenridercraft:valvarusher"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.title"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_lachesis.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.description"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_lachesis.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/gotchard_daybreak",
+  "parent": "kamenridercraft:gotchard/valvarad_rider",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -38,7 +38,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:alchemisdriver_wind"
+				"kamenridercraft:valvaradraw_buckle_lachesis"
 			  ]
 			}
 		  }

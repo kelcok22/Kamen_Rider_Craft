@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "id": "kamenridercraft:legendary_legend_ride_chemy_card"
+      "id": "kamenridercraft:gigantliner_repli_chemy_card"
     },
     "title": {
-      "translate": "advancements.kamenridercraft.gotchard.legendary_legend.title"
+      "translate": "advancements.kamenridercraft.gotchard.type_final.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gotchard.legendary_legend.description"
+      "translate": "advancements.kamenridercraft.gotchard.type_final.description"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "kamenridercraft:gotchard/legend",
+  "parent": "kamenridercraft:gotchard/dread",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -38,10 +38,10 @@
             },
             "feet": {
               "items": [
-                "kamenridercraft:legendriver"
+                "kamenridercraft:dreadriver"
               ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:legendary_legend\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:gigantliner_repli_chemy_card\"}"
               }
             }
           }

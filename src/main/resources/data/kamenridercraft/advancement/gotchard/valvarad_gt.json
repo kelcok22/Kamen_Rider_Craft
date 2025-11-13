@@ -1,22 +1,22 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:alchemisdriver_wind"
+	  "id": "kamenridercraft:gigantliner_gt_ride_chemy_card"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.title"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_gt.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gotchard.wind.description"
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_gt.description"
     },
-    "frame": "task",
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/gotchard_daybreak",
+  "parent": "kamenridercraft:gotchard/valvarad_kurogane",
   "criteria": {
-	"requirement": {
+	"1": {
 	  "trigger": "minecraft:inventory_changed",
 	  "conditions": {
 		"player": {
@@ -38,8 +38,11 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:alchemisdriver_wind"
-			  ]
+				"kamenridercraft:valvaradriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:daiohni_gt_ride_chemy_card\"}"
+              }
 			}
 		  }
 		}
