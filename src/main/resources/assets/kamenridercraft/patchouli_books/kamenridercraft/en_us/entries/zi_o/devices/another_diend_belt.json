@@ -1,0 +1,16 @@
+{
+	"name": "Another Diend Belt",
+	"icon": "kamenridercraft:another_diendriver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_deiend)Another Diend"
+		},
+		{
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_diend_belt"
+		}
+	]
+}

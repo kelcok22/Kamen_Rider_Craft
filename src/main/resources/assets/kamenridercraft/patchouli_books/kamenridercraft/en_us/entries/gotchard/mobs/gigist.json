@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 10% chance to spawn from a $(l:gotchard/mobs/golem)Golem$(/l)$(br2)Drops$(li)5-10 $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l)$(li)1 $(l:gotchard/items/philosophers_stone_fragment)Philosophers' Stone Fragment$(/l) (20%)$(li)1 $(l:gotchard/items/ride_chemy_cards#metal_machwheel_ride_chemy_card)Metal Machwheel$(/l) and $(l:gotchard/items/ride_chemy_cards#metal_daiohni_ride_chemy_card)Metal Daiohni$(/l) Ride Chemy Card (if you have a $(l:gotchard/items/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/items/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
+			"text": "Has a 3.3% chance to spawn from a $(l:gotchard/mobs/golem)Golem$(/l)$(br2)Drops$(li)5-10 $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l)$(li)1 $(l:gotchard/items/philosophers_stone_fragment)Philosophers' Stone Fragment$(/l) (20%)$(li)1 $(l:gotchard/items/ride_chemy_cards#metal_machwheel_ride_chemy_card)Metal Machwheel$(/l) and $(l:gotchard/items/ride_chemy_cards#metal_daiohni_ride_chemy_card)Metal Daiohni$(/l) Ride Chemy Card (if you have a $(l:gotchard/items/ride_chemy_cards#machwheel_ride_chemy_card)Machwheel$(/l) and $(l:gotchard/items/ride_chemy_cards#daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card in your inventory)"
 		}
 	]
 }

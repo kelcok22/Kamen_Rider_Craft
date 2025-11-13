@@ -2,7 +2,7 @@
 	"name": "Another Build Driver",
 	"icon": "kamenridercraft:another_build_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

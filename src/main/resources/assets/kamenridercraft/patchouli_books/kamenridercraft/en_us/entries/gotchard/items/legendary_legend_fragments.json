@@ -1,0 +1,38 @@
+{
+	"name": "Legendary Legend Fragments",
+	"icon": "kamenridercraft:kuuga_kiva_legend",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 10,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_kiva_legend",
+        "title": "Legendary Legend Fragment (Kuuga - Kiva)",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/kuuga_kiva_legend"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "decade_ex_aid_legend",
+        "title": "Legendary Legend Fragment (Decade - Ex-Aid)",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/decade_ex_aid_legend"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "build_gotchard_legend",
+        "title": "Legendary Legend Fragment (Build - Gotchard)",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/build_gotchard_legend"
+      }
+    ]
+}

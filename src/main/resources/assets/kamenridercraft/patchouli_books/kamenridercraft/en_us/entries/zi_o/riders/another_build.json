@@ -2,7 +2,7 @@
 	"name": "Another Build",
 	"icon": "kamenridercraft:another_build_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 24,
+	"sortnum": 25,
 	"pages": [
 		{
 			"type": "patchouli:entity",
