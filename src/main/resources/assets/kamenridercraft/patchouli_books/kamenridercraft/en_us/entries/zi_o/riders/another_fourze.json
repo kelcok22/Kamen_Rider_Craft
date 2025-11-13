@@ -2,7 +2,7 @@
 	"name": "Another Fourze",
 	"icon": "kamenridercraft:another_fourze_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:entity",

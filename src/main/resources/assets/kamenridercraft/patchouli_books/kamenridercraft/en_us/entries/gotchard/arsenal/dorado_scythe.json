@@ -1,0 +1,16 @@
+{
+	"name": "Dorado Scythe",
+	"icon": "kamenridercraft:dorado_scythe",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, Movie)$(br2)Used by $(l:gotchard/riders/dorado)Kamen Rider Dorado$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/dorado_scythe"
+		}
+	]
+}

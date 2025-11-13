@@ -2,7 +2,7 @@
 	"name": "Another W",
 	"icon": "kamenridercraft:another_w_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:entity",

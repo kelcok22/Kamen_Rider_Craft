@@ -1442,11 +1442,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#miracle_gotchard)Miracle Gotchard$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:hopper101_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/hopper101_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1455,11 +1452,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#miracle_gotchard)Miracle Gotchard$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:gigantliner_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/gigantliner_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1468,11 +1462,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#legendliner)Legendliner$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:gigantliner_ride_chemy_card_fs",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/gigantliner_ride_chemy_card_fs"
       },
       {
         "type": "patchouli:text",
@@ -1481,11 +1472,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#legendliner)Legendliner$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:legendary_legend_ride_chemy_card_fs",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/legendary_legend_ride_chemy_card_fs"
       },
 		{
 			"type": "patchouli:text",
@@ -1514,11 +1502,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: Graduations (2025, V-Cinema film)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#gt)Valvarad GT$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:daiohni_gt_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/daiohni_gt_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1527,11 +1512,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: Graduations (2025, V-Cinema film)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#gt)Valvarad GT$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:gigantliner_gt_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/gigantliner_gt_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1574,16 +1556,117 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "golddash_daybreak_chemy_card",
+        "title": "Daybreak Golddash Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:golddash_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "apparebushido_daybreak_chemy_card",
+        "title": "Daybreak Apparebushido Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:apparebushido_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bulletbaang_daybreak_chemy_card",
+        "title": "Daybreak Bulletbaang Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:bulletbaang_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "skebows_daybreak_chemy_card",
+        "title": "Daybreak Skebows Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:skebows_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "mechanichani_daybreak_chemy_card",
+        "title": "Daybreak Mechanichani Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:mechanichani_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "junglejan_daybreak_chemy_card",
+        "title": "Daybreak Junglejan Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:junglejan_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "raidenji_daybreak_chemy_card",
+        "title": "Daybreak Raidenji Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:raidenji_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "the_sun_daybreak_chemy_card",
+        "title": "Daybreak The Sun Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:the_sun_daybreak_chemy_card",
+        "title": " ",
+        "text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "shining_hopper1_ride_chemy_card",
         "title": "Shining Hopper1 Ride Chemy Card",
         "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to access Gotchard Daybreak's $(l:gotchard/riders/gotchard_daybreak#shining)Shining Daybreak$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:shining_hopper1_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/shining_hopper1_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1592,11 +1675,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used to access Gotchard Daybreak's $(l:gotchard/riders/gotchard_daybreak#shining)Shining Daybreak$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:shining_steamliner_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/shining_steamliner_ride_chemy_card"
       },
 		{
 			"type": "patchouli:text",
@@ -1618,11 +1698,8 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:legendary_legend_ride_chemy_card",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/legendary_legend_ride_chemy_card"
       },
       {
         "type": "patchouli:text",
@@ -1635,7 +1712,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:dark_ether_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dorado)Kamen Rider Dorado$(/l)"
       },
       {
         "type": "patchouli:text",

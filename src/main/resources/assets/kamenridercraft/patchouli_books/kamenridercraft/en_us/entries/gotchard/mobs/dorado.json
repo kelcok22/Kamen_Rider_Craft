@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Dorado",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dorado",
+			"text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, Movie)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a $(l:gotchard/mobs/dreatrooper)Dreatrooper$(/l)$(br2)Drops$(li)5-7 $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l)$(li)1 $(l:gotchard/items/ride_chemy_cards#dark_ether_chemy_card)Dark Ether Chemy Card$(/l)"
+		}
+	]
+}

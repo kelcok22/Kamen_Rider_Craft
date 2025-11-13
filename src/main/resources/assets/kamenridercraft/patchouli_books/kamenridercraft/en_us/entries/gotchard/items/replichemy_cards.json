@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:steamliner_repli_chemy_card",
-			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l)"
+			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:unicon_repli_chemy_card",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l)"
+			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daiohni_repli_chemy_card",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l)"
+			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:madwheel_repli_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
 		},
       {
         "type": "patchouli:text",
@@ -65,7 +65,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:antrooper_repli_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dreatrooper)Dreatroopers"
       },
       {
         "type": "patchouli:text",
@@ -74,9 +74,46 @@
         "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Dread's $(l:gotchard/riders/dread#type_final)Type Final$(/l)"
       },
       {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gotchard/gigantliner_repli_chemy_card"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "apparebushido_repli_chemy_card",
+        "title": "Apparebushido Replichemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
         "type": "patchouli:spotlight",
         "link_recipe": true,
-        "item": "kamenridercraft:gigantliner_repli_chemy_card",
+        "item": "kamenridercraft:apparebushido_repli_chemy_card",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bulletbaang_repli_chemy_card",
+        "title": "Bulletbaang Replichemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:bulletbaang_repli_chemy_card",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kamantis_repli_chemy_card",
+        "title": "Kamantis Replichemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kamantis_repli_chemy_card",
+        "title": " ",
         "text": "Item is currently unobtainable"
       }
     ]

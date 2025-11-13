@@ -1,0 +1,16 @@
+{
+	"name": "Bloody DO",
+	"icon": "kamenridercraft:bloody_do",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by $(l:gotchard/riders/dread)Kamen Rider Dread$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/bloody_do"
+		}
+	]
+}
