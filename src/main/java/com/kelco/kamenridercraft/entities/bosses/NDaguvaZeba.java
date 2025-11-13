@@ -41,6 +41,11 @@ public class NDaguvaZeba extends BaseHenchmenEntity {
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
     }
 
+    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(DATA_FLAGS_ID, (byte)0);
+    }
+
     public void readAdditionalSaveData(CompoundTag p_31474_) {
         super.readAdditionalSaveData(p_31474_);
         if (this.hasCustomName()) {
