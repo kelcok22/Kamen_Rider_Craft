@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kamenridercraft:block/shocker_logo",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kamenridercraft:block/shocker_logo"
+    },
+    "facing=south": {
+      "model": "kamenridercraft:block/shocker_logo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kamenridercraft:block/shocker_logo",
+      "y": 270
+    }
+  }
+}
