@@ -35,10 +35,11 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:glion_gold_cube"
+          "name": "kamenridercraft:kamantis_repli_chemy_card"
         },
         {
-          "type": "minecraft:empty"
+          "type": "minecraft:item",
+          "name": "kamenridercraft:glion_gold_cube"
         }
       ]
     },
