@@ -38,11 +38,17 @@ public class DreaTrooperEntity extends BaseHenchmenEntity {
 
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-				int bossChoice = this.random.nextInt(1);
+				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:
 						boss = MobsCore.DREATROOPER_COMMANDER.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+						}
+						break;
+					case 1:
+						boss = MobsCore.DORADO.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dorado"));
 						}
 						break;
 					default:
