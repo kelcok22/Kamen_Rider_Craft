@@ -34,8 +34,11 @@
           "name": "kamenridercraft:apparebushido_repli_chemy_card"
         },
         {
-          "type": "minecraft:empty",
-          "weight": 2
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kamantis_repli_chemy_card"
+        },
+        {
+          "type": "minecraft:empty"
         }
       ]
     },
