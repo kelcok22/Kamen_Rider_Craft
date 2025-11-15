@@ -2154,6 +2154,20 @@ public class Zi_O_Rider_Items {
                 }
             }.IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
+    public static final DeferredItem<Item> SHURIKEN_STARTER_YAMININ = ITEMS.register("shuriken_starter_yaminin",
+            () -> new RiderFormChangeItem(new Item.Properties(), 0, "", "yaminin", "yaminin_belt_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+
     public static final DeferredItem<Item> QUIZ_TOPPER = ITEMS.register("quiz_topper",
             () -> new RiderFormChangeItem(new Item.Properties(), 0, "", "quiz", "quiz_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
@@ -2420,6 +2434,10 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> HATTARIDRIVER = ITEMS.register("hattari_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "hattari", SHURIKEN_STARTER_HATTARI, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> YAMININ_BELT = ITEMS.register("yaminin_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "yaminin", SHURIKEN_STARTER_YAMININ, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> QUIZDRIVER = ITEMS.register("quiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "quiz", QUIZ_TOPPER, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,

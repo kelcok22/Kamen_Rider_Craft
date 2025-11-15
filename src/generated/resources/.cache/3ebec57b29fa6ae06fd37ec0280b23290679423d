@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-12T19:31:47.1528704	Item Models: kamenridercraft
+// 1.21.1	2025-11-14T18:04:20.7835348	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -631,6 +631,7 @@ f2d8038fa5b96af5d91059956b9a0875b902ae50 assets/kamenridercraft/models/item/xros
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_colorful.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_powerful.json
 874aebe207822ea795e279a43461356db49a3ada assets/kamenridercraft/models/item/yamibat_ride_chemy_card.json
+1c7dcdf78efafd1fe0e3fea861d84165cc27c13f assets/kamenridercraft/models/item/yaminin_belt.json
 c7b0b3309fa13f4ee162280da4f5578344d567b9 assets/kamenridercraft/models/item/yellow_wallplate_wall.json
 b48590b84c67fd15e919d7a10d34f7e67e6db147 assets/kamenridercraft/models/item/yoacerberus_ride_chemy_card.json
 5c26bae1953ef27c95d01cc5a39bbc8a75f00f9b assets/kamenridercraft/models/item/young_ichinose_treasure.json
