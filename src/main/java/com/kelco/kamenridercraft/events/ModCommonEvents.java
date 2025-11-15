@@ -204,6 +204,12 @@ public class ModCommonEvents {
 			Item CUP_GOCHIZO = getCupGochizoDrop(event.getItem());
 
 				 if (event.getEntity() instanceof Player player) {
+
+                     if (event.getItem().getItem()==Gaim_Rider_Items.HELHEIM_FRUIT.asItem()&player.getInventory().countItem(Gaim_Rider_Items.GURONBARYAMU.get()) > 0&player.getItemBySlot(EquipmentSlot.FEET).getItem()==Gaim_Rider_Items.SENGOKU_DRIVER_BARON.asItem()) {
+                         RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem)Gaim_Rider_Items.LORD_BARON.get();
+                         alternativeItem_form_change.use(event.getEntity().level(), player, InteractionHand.MAIN_HAND);
+                     }
+
 					 if (GOCHIZO!=Items.APPLE&player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
 
 						 if ( player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()){
