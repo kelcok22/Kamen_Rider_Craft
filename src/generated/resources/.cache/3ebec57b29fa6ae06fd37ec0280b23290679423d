@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-14T18:04:20.7835348	Item Models: kamenridercraft
+// 1.21.1	2025-11-15T22:13:10.1575845	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -371,6 +371,7 @@ df3cab92f918c11d717031b7abce4b2ddcf02cd5 assets/kamenridercraft/models/item/lang
 7ad88d296ed53993be4467a7aebb1427d96ddd17 assets/kamenridercraft/models/item/legendary_legend_ride_chemy_card_fs.json
 3fcf0340b09025e6cd3d3fb496e5668e1e9274c7 assets/kamenridercraft/models/item/light_blue_wallplate_wall.json
 8dae7fdc8aaa0760a698d1938256a136826cd641 assets/kamenridercraft/models/item/lion_senki_wonder_ride_book_xross.json
+c1a9772272e509ab06aff9def156d2bd5f2407b5 assets/kamenridercraft/models/item/lord_baron.json
 0394f6bbfd94c70a04bd1cd1bf29b55070291d23 assets/kamenridercraft/models/item/lovekov_belt.json
 28f699ea644de835bdc85cd37acd76cf60beeeaf assets/kamenridercraft/models/item/macentaurus_ride_chemy_card.json
 7d53422120ef4efac76686342778c888a25907fd assets/kamenridercraft/models/item/machinery_capsem.json
