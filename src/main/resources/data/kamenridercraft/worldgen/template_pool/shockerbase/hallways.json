@@ -2,7 +2,55 @@
   "name": "kamenridercraft:shockerbase/hallways",
   
   "fallback": "minecraft:empty",
-  "elements": [
+  "elements": [{
+    "weight": 1,
+    "element": {
+      "location": "kamenridercraft:shockerbase/hallways/hallway_to_steps",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "kamenridercraft:shockerbase/hallways/hallway_to_steps_2nd",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "kamenridercraft:shockerbase/hallways/hallway_end_with_steps",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "kamenridercraft:shockerbase/hallways/outer_corner_extra_path",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "kamenridercraft:shockerbase/hallways/hallway_extra_path",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "kamenridercraft:shockerbase/hallways/start_room_2nd_floor",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },
     {
       "weight": 1,
       "element": {

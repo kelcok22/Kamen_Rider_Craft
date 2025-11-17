@@ -551,9 +551,15 @@ public class Gaim_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.ResetFormToBase());
+            }.ResetFormToBase().has_basic_model().model_has_different_name("helheim_fruit"));
 
     public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"yomotsu_heguri_arms","ryugen","sengoku_driver_belt",
