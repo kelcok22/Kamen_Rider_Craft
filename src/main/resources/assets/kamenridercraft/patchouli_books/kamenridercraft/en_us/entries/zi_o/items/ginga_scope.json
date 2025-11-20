@@ -2,7 +2,7 @@
 	"name": "Ginga Scope",
 	"icon": "kamenridercraft:ginga_scope",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

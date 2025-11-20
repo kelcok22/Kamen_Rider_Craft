@@ -2,7 +2,7 @@
 	"name": "Kikai Driver",
 	"icon": "kamenridercraft:kikai_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

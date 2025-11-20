@@ -7,9 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "banana",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Banana Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#banana_lockseed)Banana Lockseed$(/l)"
 		},
@@ -21,9 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "mango",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:mango_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:mango_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Mango Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#mango_lockseed)Mango Lockseed$(/l)"
 		},
@@ -35,9 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "suika",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Suika Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#suika_lockseed)Suika Lockseed$(/l)"
 		},
@@ -49,9 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ringo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Ringo Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#forbidden_ringo_lockseed)Forbidden Ringo Lockseed$(/l)"
 		},
@@ -63,9 +55,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ichigo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Ichigo Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#ichigo_lockseed)Ichigo Lockseed$(/l)"
 		},
@@ -77,9 +67,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "melon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Melon Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#melon_lockseed)Melon Lockseed$(/l)"
 		},
@@ -91,9 +79,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiwi",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiwi_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiwi_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Kiwi Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#kiwi_lockseed)Kiwi Lockseed$(/l)"
 		},
@@ -105,9 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lemon_energy",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_baron_shin\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:genesis_driver_baron_shin\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Lemon Energy Arms",
 			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#lemon_energy_lockseed)Lemon Energy Lockseed$(/l)"
 		},
@@ -116,12 +100,22 @@
 			"title": "Kamen Rider Baron",
 			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_baron_shin)Genesis Driver$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength II"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "lord_baron",
+        "entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:lord_baron\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+        "name": "Lord Baron",
+        "text": "Accessed by eating a $(l:misc/items/foods#helheim_fruit)Helheim Fruit$(/l) with a $(l:gaim/arsenal/guronbaryamu)Guronbaryamu$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Baron",
+        "text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Anti Poison$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation$(li)Strength III"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "den_o",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Den-O Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#den_o_lockseed)Den-O Lockseed$(/l)"
 		},
@@ -133,9 +127,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "OOO Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#ooo_lockseed)OOO Lockseed$(/l)"
 		},
@@ -147,9 +139,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Wizard Arms",
 			"text": "Accessed with the $(l:gaim/items/lockseeds#wizard_lockseed)Wizard Lockseed$(/l)"
 		},

@@ -2,7 +2,7 @@
 	"name": "Another Fourze Driver",
 	"icon": "kamenridercraft:another_fourze_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 15,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",

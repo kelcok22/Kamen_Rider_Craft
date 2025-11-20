@@ -2,7 +2,7 @@
 	"name": "Another Ghost Driver",
 	"icon": "kamenridercraft:another_ghost_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -114,7 +114,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:kamantis_repli_chemy_card",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gotchard/mobs/dread)Kamen Rider Dread$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)Dreatrooper Commander$(/l)"
       }
     ]
 }
