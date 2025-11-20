@@ -2,7 +2,7 @@
 	"name": "Another Decadriver",
 	"icon": "kamenridercraft:another_decadriver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

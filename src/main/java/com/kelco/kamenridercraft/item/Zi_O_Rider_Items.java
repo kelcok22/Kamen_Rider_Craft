@@ -2165,7 +2165,7 @@ public class Zi_O_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            }.has_basic_model().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> QUIZ_TOPPER = ITEMS.register("quiz_topper",

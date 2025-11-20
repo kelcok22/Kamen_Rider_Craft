@@ -658,8 +658,7 @@ public class Ex_Aid_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }
-			.addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+            }.IsGlowing().addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_BAKUSOU_BIKE_COMBI_FUKKATSU_GASHAT = ITEMS.register("proto_bakusou_bike_combi_fukkatsu_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv0","ex_aid","gamer_driver_proto_bakusou_bike_combi_fukkatsu",
