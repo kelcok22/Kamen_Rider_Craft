@@ -534,10 +534,34 @@ public class Gaim_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }
-					.ResetFormToBase().addNeedForm(KACHIDOKI_LOCKSEED.get(),1).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
+            }.ResetFormToBase().addNeedForm(KACHIDOKI_LOCKSEED.get(),1).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
-	public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
+    public static final DeferredItem<Item> LORD_BARON = ITEMS.register("lord_baron",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"lord_baron_arms","baron","blank",
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+
+                }
+            }.ResetFormToBase().has_basic_model().model_has_different_name("helheim_fruit"));
+
+    public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"yomotsu_heguri_arms","ryugen","sengoku_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),

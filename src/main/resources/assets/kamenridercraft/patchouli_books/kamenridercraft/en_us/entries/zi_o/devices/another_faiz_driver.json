@@ -2,7 +2,7 @@
 	"name": "Another Faiz Driver",
 	"icon": "kamenridercraft:another_faiz_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

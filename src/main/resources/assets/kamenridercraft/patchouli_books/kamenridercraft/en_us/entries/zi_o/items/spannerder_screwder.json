@@ -2,7 +2,7 @@
 	"name": "Spannerder and Screwder",
 	"icon": "kamenridercraft:spannerder_screwder",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

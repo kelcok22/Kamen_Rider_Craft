@@ -616,7 +616,15 @@ public class Ryuki_Rider_Items {
 
     public static final DeferredItem<Item> RYUKI_TRICK_VENT = ITEMS.register("ryuki_trick_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), "trick_vent").AddToList(RiderTabs.RYUKI_TAB_ITEM));
-    
+
+    public static final DeferredItem<Item> FIREWALL_VENT = ITEMS.register("fire_wall_vent",
+            () -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), "firewall_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
+    public static final DeferredItem<Item> METEORBULLET_VENT = ITEMS.register("meteor_bullet_vent",
+            () -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), "meteorbullet_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
     public static final DeferredItem<Item> WING_LANCER_VENT = ITEMS.register("wing_lancer_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), WING_LANCER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
@@ -630,7 +638,15 @@ public class Ryuki_Rider_Items {
 
     public static final DeferredItem<Item> KNIGHT_TRICK_VENT = ITEMS.register("knight_trick_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "trick_vent_knight").AddToList(RiderTabs.RYUKI_TAB_ITEM));
-	  
+
+    public static final DeferredItem<Item> NASTY_VENT = ITEMS.register("nasty_vent",
+            () -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "nasty_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
+    public static final DeferredItem<Item> BLUST_VENT = ITEMS.register("blust_vent",
+            () -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "blust_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
     public static final DeferredItem<Item> DARK_BLADE_VENT = ITEMS.register("dark_blade_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), DARK_BLADE.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
@@ -689,10 +705,18 @@ public class Ryuki_Rider_Items {
     
     public static final DeferredItem<Item> GOLD_SHIELD_VENT = ITEMS.register("gold_shield_vent",
 			() -> new AdventCardItem(new Item.Properties(), "odin", GOLD_VISOR.get(), GOLD_SHIELD.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
-    
+
+    public static final DeferredItem<Item> TIME_VENT = ITEMS.register("time_vent",
+            () -> new AdventCardItem(new Item.Properties(), "odin", GOLD_VISOR.get(), "time_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
     public static final DeferredItem<Item> DEST_CLAW_VENT = ITEMS.register("dest_claw_vent",
 			() -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), DEST_CLAW.get(), DEST_CLAW1.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
-    
+
+    public static final DeferredItem<Item> FREEZE_VENT = ITEMS.register("freeze_vent",
+            () -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), "freeze_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
     public static final DeferredItem<Item> GAZELLE_STAB_VENT = ITEMS.register("gazelle_stab_vent",
 			() -> new AdventCardItem(new Item.Properties(), "imperer", GAZELLE_VISOR.get(), GAZELLE_STAB.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
@@ -724,7 +748,11 @@ public class Ryuki_Rider_Items {
     
     public static final DeferredItem<Item> BIO_WINDER_VENT = ITEMS.register("bio_winder_vent",
 			() -> new AdventCardItem(new Item.Properties(), "verde", BIO_VISOR.get(), BIO_WINDER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
-    
+
+    public static final DeferredItem<Item> CLEAR_VENT = ITEMS.register("clear_vent",
+            () -> new AdventCardItem(new Item.Properties(), "verde", BIO_VISOR.get(), "clear_vent")
+                    .has_basic_model().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
     public static final DeferredItem<Item> SLASH_DAGGER_VENT = ITEMS.register("slash_dagger_vent",
 			() -> new AdventCardItem(new Item.Properties(), "alternative", SLASH_VISOR.get(), SLASH_DAGGER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
     

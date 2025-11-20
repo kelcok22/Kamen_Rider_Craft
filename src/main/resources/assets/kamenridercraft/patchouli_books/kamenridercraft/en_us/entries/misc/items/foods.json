@@ -235,7 +235,7 @@
 			"type": "patchouli:text",
 			"anchor": "helheim_fruit",
 			"title": "Helheim Fruit",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Gives Poison III when eaten"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Gives Poison III when eaten$(br2)Used to access Baron's $(l:gaim/riders/baron#lord_baron)Lord Baron$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

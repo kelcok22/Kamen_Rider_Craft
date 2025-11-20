@@ -183,6 +183,45 @@
         "item": "kamenridercraft:gochizo_capsem",
         "title": " ",
         "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "impact_capsem_gold",
+        "title": "Impact Capsem (Gold Ver.)",
+        "text": "Appears in:$(li)DX Rider Capsem Set EX Physicam Gold Ver. (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:impact_capsem_gold",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "transform_capsem_gold",
+        "title": "Transform Capsem (Gold Ver.)",
+        "text": "Appears in:$(li)DX Rider Capsem Set EX Physicam Gold Ver. (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:transform_capsem_gold",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wing_capsem_gold",
+        "title": "Wing Capsem (Gold Ver.)",
+        "text": "Appears in:$(li)DX Rider Capsem Set EX Physicam Gold Ver. (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wing_capsem_gold",
+        "title": " ",
+        "text": "Item is currently unobtainable"
       }
     ]
 }

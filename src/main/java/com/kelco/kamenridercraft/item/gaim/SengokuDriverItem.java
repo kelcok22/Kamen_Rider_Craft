@@ -30,12 +30,14 @@ public class SengokuDriverItem extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "belts/sengoku_driver_belt_zangetsu_w";
+            if (Objects.equals(riderName, "baron") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.LORD_BARON.get()) return "belts/blank";
+            if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "belts/sengoku_driver_belt_zangetsu_w";
 			if (Objects.equals(riderName, "ryugen") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "belts/sengoku_driver_belt_ryugen_y";
 			return "belts/"+get_Form_Item(itemstack,2).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD) {
-			if (Objects.equals(riderName, "ryugen") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "ryugen_yomi";
+			if (Objects.equals(riderName, "baron") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.LORD_BARON.get()) return "baron_lord_baron";
+           else if (Objects.equals(riderName, "ryugen") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "ryugen_yomi";
 			else if (Objects.equals(riderName, "duke") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get()) return "duke_hex";
 			else if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "zangetsu_watermelon";
 			else if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.ZANGETSU_KACHIDOKI_LOCKSEED.get()) return "zangetsu_kachidoki";

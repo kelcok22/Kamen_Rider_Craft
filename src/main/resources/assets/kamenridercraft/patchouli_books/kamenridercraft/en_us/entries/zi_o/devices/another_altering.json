@@ -2,7 +2,7 @@
 	"name": "Another Altering",
 	"icon": "kamenridercraft:another_altering",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",
