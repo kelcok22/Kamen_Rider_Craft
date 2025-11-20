@@ -81,8 +81,11 @@
   "painting.kamenridercraft.gummy_angel.title":"Rest In Peace",
   "painting.kamenridercraft.gummy_angel.author":"Kelco",
 
-"painting.kamenridercraft.mighty.title":"Mighty",
-"painting.kamenridercraft.mighty.author":"Kelco",
+"painting.kamenridercraft.agito_painting.title":"Kamen Rider Agito Art Archives Icon",
+"painting.kamenridercraft.agito_painting.author":"Tama Art University",
+
+  "painting.kamenridercraft.mighty.title":"Mighty",
+  "painting.kamenridercraft.mighty.author":"Kelco",
 
   "painting.kamenridercraft.demo_face.title":"Deep. Drop. Danger!",
   "painting.kamenridercraft.demo_face.author":"Kelco",
@@ -2467,6 +2470,14 @@
 "item.kamenridercraft.abyss_saber_vent": "Abysssaber Sword Vent Card",
 "item.kamenridercraft.abyss_claw_vent": "Abyssclaw Strike Vent Card",
 
+  "item.kamenridercraft.fire_wall_vent": "Firewall Guard Vent Card",
+  "item.kamenridercraft.meteor_bullet_vent": "Meteorbullet Shoot Vent Card",
+  "item.kamenridercraft.nasty_vent": "Nasty Vent Card",
+  "item.kamenridercraft.blust_vent": "Blust Vent Card",
+  "item.kamenridercraft.freeze_vent": "Freeze Vent Card",
+  "item.kamenridercraft.clear_vent": "Clear Vent Card",
+  "item.kamenridercraft.time_vent": "Time Vent Card",
+
 
   "kamenridercraft:dragreder_advent.form": "Form: Base Form",
   "kamenridercraft:darkwing_advent.form": "Form: Base Form",
@@ -4584,7 +4595,7 @@
   "kamenridercraft:dragon_fruits_energy_lockseed.form": "Form: Dragon Fruit Energy Arms",
   "kamenridercraft:jimber_dragon_fruits_energy.form": "Form: Jimber Dragon Fruit Energy Arms",
   "kamenridercraft:proto_dragon_fruits_energy_lockseed.form": "Form: Proto Dragon Fruit Energy Arms",
-
+  "kamenridercraft:lord_baron.form": "Form: Lord Baron",
 
   "item.kamenridercraft.kachidoki_lockseed": "Kachidoki Lockseed",
   "item.kamenridercraft.zangetsu_kachidoki_lockseed": "Shin Kachidoki Lockseed",
@@ -5905,6 +5916,8 @@
   "kamenridercraft.name.zamonas": "Rider: Kamen Rider Zamonas",
   "item.kamenridercraft.shinobi_driver": "Shinobi Driver",
   "kamenridercraft.name.shinobi": "Rider: Kamen Rider Shinobi",
+  "item.kamenridercraft.yaminin_belt": "Yaminin Belt",
+  "kamenridercraft.name.yaminin": "Kaijin: Yaminin",
   "item.kamenridercraft.hattari_driver": "Hattari Driver",
   "kamenridercraft.name.hattari": "Rider: Kamen Rider Hattari",
   "item.kamenridercraft.quiz_driver": "Quiz Driver",
@@ -6171,6 +6184,7 @@
 
   "item.kamenridercraft.shuriken_starter": "Shuriken Starter (Shinobi)",
   "item.kamenridercraft.shuriken_starter_hattari": "Shuriken Starter (Hattari)",
+  "item.kamenridercraft.shuriken_starter_yaminin": "Shuriken Starter (Yaminin)",
   "item.kamenridercraft.quiz_topper": "Quiz Topper",
   "item.kamenridercraft.spannerder_screwder": "Spannerder and Screwder",
   "item.kamenridercraft.ginga_scope": "Ginga Scope",
@@ -6323,7 +6337,8 @@
 "item.kamenridercraft.shot_abaddo_gun": "ShotAbaddoriser",
 "item.kamenridercraft.slash_abaddo_sword": "SlashAbaddoriser",
 
-"item.kamenridercraft.hiden_metal": "Hiden Metal",
+"item.kamenridercraft.zaia_spec": "ZAIA Spec",
+  "item.kamenridercraft.hiden_metal": "Hiden Metal",
 "item.kamenridercraft.blank_progrisekey": "Blank Progrisekey",
 "item.kamenridercraft.humagear_progrisekey": "Humagear Progrisekey",
 
@@ -8208,6 +8223,10 @@
   "item.kamenridercraft.charadeco_capsem": "Zeztz Capsem (Charadeco ver.)",
   "item.kamenridercraft.gochizo_capsem": "Gochizo Capsem",
 
+  "item.kamenridercraft.impact_capsem_gold": "Impact Capsem (Gold Ver.)",
+  "item.kamenridercraft.transform_capsem_gold": "Transform Capsem (Gold Ver.)",
+  "item.kamenridercraft.wing_capsem_gold": "Wing Capsem (Gold Ver.)",
+
   "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
 
   "item.kamenridercraft.breakam_zeztzer_sword": "Breakam Zeztzer (Sword Mode)",
@@ -8958,7 +8977,7 @@
 	"item.kamenridercraft.bike_gamer_spawn_egg": "Bike Gamer",
 
 "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
-
+  "block.kamenridercraft.shocker_logo": "Shocker Base Logo",
   "block.kamenridercraft.drive_pit_logo": "Drive Pit Logo",
   "block.kamenridercraft.punkjackolantern": "PunkJack O'Lantern",
   "block.kamenridercraft.ferbus": "Ferbus",

@@ -16,15 +16,20 @@ import com.kelco.kamenridercraft.item.zero_one.ShotriserItem;
 import com.kelco.kamenridercraft.item.zero_one.ThousandriverItem;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -1492,6 +1497,17 @@ public class Zero_One_Rider_Items {
     public static final DeferredItem<Item> SLASHABADDORISER_SWORD = ITEMS.register("slash_abaddo_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
-	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
+    public static final DeferredItem<Item> ZAIA_SPEC = ITEMS.register("zaia_spec",
+            () -> new MaskItem(new Item.Properties().stacksTo(1)){
+                @Override
+                public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+                    if (entity instanceof LivingEntity player && stack == player.getItemBySlot(EquipmentSlot.HEAD)) {
+                        player.addEffect(new MobEffectInstance(Effect_core.RADAR, 2, 0, true, false));
+                    }
+                }
+            }.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+
+
+    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 
 }
