@@ -7,8 +7,13 @@
 	"#kamenridercraft:gear/advent_cards/shoot_vent",
 	"#kamenridercraft:gear/advent_cards/trick_vent",
 	"#kamenridercraft:gear/advent_cards/survive",
-	"kamenridercraft:evil_whip_vent",
+    "kamenridercraft:nasty_vent",
+    "kamenridercraft:blust_vent",
+    "kamenridercraft:evil_whip_vent",
+    "kamenridercraft:time_vent",
+    "kamenridercraft:freeze_vent",
 	"kamenridercraft:gazelle_stab_vent",
-	"kamenridercraft:bio_winder_vent"
+	"kamenridercraft:bio_winder_vent",
+    "kamenridercraft:clear_vent"
   ]
 }
