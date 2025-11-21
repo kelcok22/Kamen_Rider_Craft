@@ -2,7 +2,7 @@
 	"name": "Advent Decks",
 	"icon": "kamenridercraft:advent_deck_blank",
 	"category": "kamenridercraft:ryuki/arsenal",
-	"sortnum": 59,
+	"sortnum": 64,
 	"pages": [
 		{
 			"type": "patchouli:text",
