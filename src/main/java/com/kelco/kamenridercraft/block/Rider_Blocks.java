@@ -1035,7 +1035,12 @@ public class Rider_Blocks {
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL),Block.box(4, 0, 4, 12,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
-	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
+    public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.N_DAGUVA_ZEBA,Blocks.SNOW).addLine(Component.translatable("henshin.kamenridercraft.n_daguva_zeba")).is_basic_cube().AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
+    public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
 

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "n_daguva_zeba_boss_block",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:kuuga_tomb"
+	},
+	"M": {
+	  "item": "kamenridercraft:kuuga_ultimate"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:n_daguva_zeba_boss_block"
+  }	
+}

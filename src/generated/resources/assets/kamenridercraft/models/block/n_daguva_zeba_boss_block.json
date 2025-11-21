@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kamenridercraft:block/n_daguva_zeba_boss_block"
+  }
+}
