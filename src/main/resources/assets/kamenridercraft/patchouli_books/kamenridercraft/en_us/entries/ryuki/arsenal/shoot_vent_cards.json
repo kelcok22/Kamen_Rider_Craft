@@ -15,6 +15,19 @@
 			"item": "kamenridercraft:drag_visor_zwei_vent",
 			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "meteor_bullet_vent",
+        "title": "Meteorbullet Shoot Vent Card",
+        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ryuki#survive)Ryuki Survive Form$(/l) with the $(l:ryuki/arsenal/drag_visor)Dragvisor$(/l) to gain Cannon III for 10 seconds"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:meteor_bullet_vent",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "dark_arrow_vent",
