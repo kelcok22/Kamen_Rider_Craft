@@ -2,7 +2,7 @@
 	"name": "Gazellestab Spin Vent Card",
 	"icon": "kamenridercraft:gazelle_stab_vent",
 	"category": "kamenridercraft:ryuki/arsenal",
-	"sortnum": 56,
+	"sortnum": 60,
 	"pages": [
 		{
 			"type": "patchouli:text",

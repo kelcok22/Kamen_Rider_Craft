@@ -1,0 +1,19 @@
+{
+	"name": "Freeze Vent Card",
+	"icon": "kamenridercraft:freeze_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 59,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/tiger)Kamen Rider Tiger$(/l) with the $(l:ryuki/arsenal/dest_visor)Destvisor$(/l) to give nearby mobs Slow Falling VI, Mining Fatigue VI, and Slowness VI for 10 seconds"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:freeze_vent",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

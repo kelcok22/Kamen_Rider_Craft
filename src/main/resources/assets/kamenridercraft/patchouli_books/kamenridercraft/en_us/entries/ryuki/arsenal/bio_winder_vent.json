@@ -2,7 +2,7 @@
 	"name": "Biowinder Hold Vent Card",
 	"icon": "kamenridercraft:bio_winder_vent",
 	"category": "kamenridercraft:ryuki/arsenal",
-	"sortnum": 57,
+	"sortnum": 61,
 	"pages": [
 		{
 			"type": "patchouli:text",

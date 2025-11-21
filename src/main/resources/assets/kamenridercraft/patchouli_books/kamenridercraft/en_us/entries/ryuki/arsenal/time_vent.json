@@ -1,0 +1,19 @@
+{
+	"name": "Time Vent Card",
+	"icon": "kamenridercraft:time_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 58,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/odin)Kamen Rider Odin$(/l) with the $(l:ryuki/arsenal/gold_visor)Goldvisor$(/l) to gain Time III for 10 seconds"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:time_vent",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
