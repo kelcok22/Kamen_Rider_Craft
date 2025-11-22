@@ -20,12 +20,12 @@ import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 
-public class NDaguvaZeba extends BaseHenchmenEntity {
+public class YamininEntity extends BaseHenchmenEntity {
 
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
-    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(NDaguvaZeba.class, EntityDataSerializers.BYTE);
+    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(YamininEntity.class, EntityDataSerializers.BYTE);
 
-    public NDaguvaZeba(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+    public YamininEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="n_daguva_zeba";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kuuga_Rider_Items.KUUGAHELMET.get()));
