@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:shuriken_starter_yaminin"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:shuriken_starter_hattari"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:shuriken_starter"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_watch",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

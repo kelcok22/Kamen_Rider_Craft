@@ -1008,6 +1008,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> WOZ_SPAWN_EGG = ITEMS.register("woz_spawn_egg",
             () -> new DeferredSpawnEggItem(WOZ, 0xffffff, 0x05ff09, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<YamininEntity>> YAMININ = MOBLIST.register("yaminin",
+            () -> EntityType.Builder.of(YamininEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":yaminin_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> YAMININ_SPAWN_EGG = ITEMS.register("yaminin_spawn_egg",
+            () -> new DeferredSpawnEggItem(YAMININ, 0x282828, 0xb7b7b6, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<TakaWatchroidEntity>> TAKA_WATCHROID = MOBLIST.register("taka_watchroid",
             () -> EntityType.Builder.of(TakaWatchroidEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":taka_watchroid"));
 

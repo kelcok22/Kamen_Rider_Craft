@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mirider",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:toy_robot"
+    },
+    {
+      "item": "kamenridercraft:rider_circuit"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:spannerder_screwder"
+  }
+}

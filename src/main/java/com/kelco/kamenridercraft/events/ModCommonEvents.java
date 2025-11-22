@@ -752,6 +752,7 @@ public class ModCommonEvents {
         event.put(MobsCore.ANOTHER_ZI_O.get(), KasshineEntity.setAttributes().build());
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
 		event.put(MobsCore.WOZ.get(), WozEntity.setAttributes().build());
+        event.put(MobsCore.YAMININ.get(), YamininEntity.setAttributes().build());
         event.put(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidEntity.setAttributes().build());
         event.put(MobsCore.KODAMA_SUIKA_ARMS.get(), KodamaSuikaArmsEntity.setAttributes().build());
 
