@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-20T01:26:02.908934	Item Models: kamenridercraft
+// 1.21.1	2025-11-22T20:10:29.8678418	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -465,6 +465,7 @@ a0b2ad303869724616966c8436e6fc28a600a8e1 assets/kamenridercraft/models/item/pudd
 09b56e5df59c658151af40946c2dde56aa3ab47d assets/kamenridercraft/models/item/pumpkin_gochizo.json
 d21cf7b33a992cfdacaf779a6c24dc87bdd803e5 assets/kamenridercraft/models/item/punchingummy_gochizo_valen.json
 5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
+f9bbb117aac8002ac40679e3b07c438817c506e9 assets/kamenridercraft/models/item/questionable_watch.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
 2c0f26c13203650b687041a87c120b4b39921017 assets/kamenridercraft/models/item/raidenji_daybreak_chemy_card.json
 da9d2ade2a47312b354bcbbdc787e5f067027d6d assets/kamenridercraft/models/item/recovery_capsem.json
@@ -575,6 +576,7 @@ f9b7fe4f92272fdcf7821733b8d7adc20957cc21 assets/kamenridercraft/models/item/toku
 3f250bde6e1e860f62ac8e6bcb491cf78966534e assets/kamenridercraft/models/item/tomorrows_underwear.json
 2d4949f59d82fa26fd985e732379b9280287d9d2 assets/kamenridercraft/models/item/tonkatsu_umaibo_gochizo.json
 a1e01a0e7d648c43f8a8bfd6242c4a23428037c7 assets/kamenridercraft/models/item/toppo_gochizo.json
+5c0a2415441b91ff698a2e0620596c2a048a0b8d assets/kamenridercraft/models/item/toy_robot.json
 57ff1f0b85fe61857f88ddfc2fab8d171518a149 assets/kamenridercraft/models/item/transform_capsem.json
 b667839f3605bf118e2e1505e39deb60e7d7c194 assets/kamenridercraft/models/item/transform_capsem_gold.json
 ca66443fb1aad8f485c50c5a8551796f8b6ba0b1 assets/kamenridercraft/models/item/transform_gamma_eyecon_camille.json

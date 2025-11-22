@@ -2557,6 +2557,13 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> KODAMA_RIDEWATCH = ITEMS.register("kodama_ridewatch",
             () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.kodama"), MobsCore.KODAMA_SUIKA_ARMS).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
 
+    public static final DeferredItem<Item> QUESTIOABLE_WATCH = ITEMS.register("questionable_watch",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+    public static final DeferredItem<Item> TOY_ROBOT = ITEMS.register("toy_robot",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -1045,8 +1045,7 @@ public class Rider_Blocks {
 
     public static final DeferredBlock<Block> FAIZ_BOSS_BLOCK = registerBlock("faiz_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    ,MobsCore.FAIZ).addLine(Component.translatable("henshin.kamenridercraft.faiz")).is_basic_cube().AddToTabList(RiderTabs.RIDER_BLOCK));
-
+                    ,MobsCore.FAIZ).addLine(Component.translatable("henshin.kamenridercraft.faiz")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
@@ -1084,16 +1083,13 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GODA).addLine(Component.translatable("henshin.kamenridercraft.goda")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-
 	public static final DeferredBlock<Block> SUPER_GINGAOH_BOSS_BLOCK = registerBlock("super_gingaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.SUPER_GINGAOH).addLine(Component.translatable("henshin.kamenridercraft.super_gingaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-
 	public static final DeferredBlock<Block> WISEMAN_BOSS_BLOCK = registerBlock("wiseman_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WISEMAN).addLine(Component.translatable("henshin.kamenridercraft.wiseman")).AddToTabList(RiderTabs.RIDER_BLOCK));
-
 
 	public static final DeferredBlock<Block> ROSYUO_BOSS_BLOCK = registerBlock("rosyuo_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
@@ -1115,7 +1111,6 @@ public class Rider_Blocks {
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     ,MobsCore.MEGAHEX).addLine(Component.translatable("henshin.kamenridercraft.megahex")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-
     public static final DeferredBlock<Block> GORD_DRIVE_BOSS_BLOCK = registerBlock("gord_drive_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GORD_DRIVE).addLine(Component.translatable("henshin.kamenridercraft.gord_drive")).AddToTabList(RiderTabs.RIDER_BLOCK));
@@ -1123,7 +1118,6 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.CRONUS,MIGHTY_BLOCK.get(),BANG_BANG_DRUM.get(),BAKUSOU_TROPHY.get()).addLine(Component.translatable("henshin.kamenridercraft.cronus")).AddToTabList(RiderTabs.RIDER_BLOCK));
-
 
 	public static final DeferredBlock<Block> NIGHT_ROGUE_BOSS_BLOCK = registerBlock("night_rogue_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
@@ -1152,7 +1146,11 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WOZ).addLine(Component.translatable("henshin.kamenridercraft.woz")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final DeferredBlock<Block> GINGA_BOSS_BLOCK = registerBlock("ginga_boss_block",
+    public static final DeferredBlock<Block> YAMININ_BOSS_BLOCK = registerBlock("yaminin_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.YAMININ).addLine(Component.translatable("henshin.kamenridercraft.yaminin")).is_basic_cube().AddToTabList(RiderTabs.RIDER_BLOCK));
+
+    public static final DeferredBlock<Block> GINGA_BOSS_BLOCK = registerBlock("ginga_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GINGA).addLine(Component.translatable("henshin.kamenridercraft.ginga")).AddToTabList(RiderTabs.RIDER_BLOCK));
 

@@ -791,8 +791,9 @@ public class RiderTabs {
 
             event.accept(MobsCore.KASSHINE_SPAWN_EGG);
             event.accept(MobsCore.ANOTHER_ZI_O_SPAWN_EGG);
-            event.accept(MobsCore.GINGA_SPAWN_EGG);
             event.accept(MobsCore.WOZ_SPAWN_EGG);
+            event.accept(MobsCore.GINGA_SPAWN_EGG);
+            event.accept(MobsCore.YAMININ_SPAWN_EGG);
 
             event.accept(MobsCore.TRILOBITE_MAGIA_SPAWN_EGG);
             event.accept(MobsCore.DODO_MAGIA_CHICK_SPAWN_EGG);

@@ -1,7 +1,9 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
+import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -22,16 +24,16 @@ import javax.annotation.Nullable;
 
 public class YamininEntity extends BaseHenchmenEntity {
 
-    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(YamininEntity.class, EntityDataSerializers.BYTE);
 
     public YamininEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="n_daguva_zeba";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kuuga_Rider_Items.KUUGAHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kuuga_Rider_Items.KUUGACHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kuuga_Rider_Items.KUUGALEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kuuga_Rider_Items.N_DAGUVA_ZEBA_BELT.get()));
+        NAME="yaminin";
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.YAMININ_BELT.get()));
     }
 
 
@@ -74,8 +76,8 @@ public class YamininEntity extends BaseHenchmenEntity {
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
         		.add(Attributes.MOVEMENT_SPEED, 0.23F)
-        		.add(Attributes.ATTACK_DAMAGE, 12.0D)
-        		.add(Attributes.ARMOR, 4.0D)
+        		.add(Attributes.ATTACK_DAMAGE, 6.0D)
+        		.add(Attributes.ARMOR, 2.0D)
         		.add(Attributes.MAX_HEALTH, 60.0D);
      }
 }
