@@ -124,6 +124,11 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:copy_ring",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:big_ring_color_ver",
+          "weight": 1
         }
       ]
     }

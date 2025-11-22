@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "bikaiser_boss_block",
+  "pattern": [
+	"XBX",
+	"RBT",
+	"XBX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:full_bottle"
+	},
+	"R": {
+	  "item": "kamenridercraft:gear_engine_red"
+	},
+	"T": {
+	  "item": "kamenridercraft:gear_remocon_blue"
+	},
+    "B": {
+      "item": "kamenridercraft:bugster_virus_dna"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:bikaiser_boss_block"
+  }	
+}
