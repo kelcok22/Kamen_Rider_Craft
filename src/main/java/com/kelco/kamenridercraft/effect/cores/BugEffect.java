@@ -5,6 +5,8 @@ import java.util.Random;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -30,29 +32,30 @@ public class BugEffect extends MobEffect {
 	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
 
+        if (pLivingEntity instanceof Player player) {
+            int num1 = player.getInventory().countItem(Ex_Aid_Rider_Items.WONDERSWAN.get());
+
+                if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Zero_One_Rider_Items.ZAIA_THOUSANDRIVER.get()) {
+                    if (player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) > 0) {
+                        player.getInventory().removeItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()));
+                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
+                        player.removeEffect(Effect_core.BUGSTER);
+                        player.drop(new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()), false);
+                    }
+                }
 
 
-			if (pLivingEntity instanceof Player player) {
-				if (player.getItemBySlot(EquipmentSlot.FEET).getItem()==Zero_One_Rider_Items.ZAIA_THOUSANDRIVER.get()) {
-					if (player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) > 0) {
-						player.getInventory().removeItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()));
-						player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
-						player.removeEffect(Effect_core.BUGSTER);
-						player.drop(new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()), false);
-					}
-				}
-			}
 
-
-		BaseHenchmenEntity boss  =   MobsCore.BUGSTERVIRUS.get().create(pLivingEntity.level());
-			if (pLivingEntity.hasEffect(Effect_core.HAZARD_LEVEL)){
-				boss = MobsCore.NEBULA_BUGSTERVIRUS.get().create(pLivingEntity.level());
-			}
-		Random rand = new Random();
-        if ((pAmplifier < 50 ? rand.nextInt(500 - (pAmplifier * 10)) : 0) == 0) {
-            if (boss != null) {
-                boss.moveTo(pLivingEntity.getX() + (rand.nextInt(8) - 4), pLivingEntity.getY(), pLivingEntity.getZ() + (rand.nextInt(8) - 4), 0.0f, 0.0F);
-                pLivingEntity.level().addFreshEntity(boss);
+            BaseHenchmenEntity boss = MobsCore.BUGSTERVIRUS.get().create(pLivingEntity.level());
+            if (pLivingEntity.hasEffect(Effect_core.HAZARD_LEVEL)) {
+                boss = MobsCore.NEBULA_BUGSTERVIRUS.get().create(pLivingEntity.level());
+            }
+            Random rand = new Random();
+            if ((pAmplifier < 50 ? rand.nextInt(500 - (pAmplifier * 10)) : 0) == 0) {
+                if (boss != null&num1==0) {
+                    boss.moveTo(pLivingEntity.getX() + (rand.nextInt(8) - 4), pLivingEntity.getY(), pLivingEntity.getZ() + (rand.nextInt(8) - 4), 0.0f, 0.0F);
+                    pLivingEntity.level().addFreshEntity(boss);
+                }
             }
         }
 		return true;
