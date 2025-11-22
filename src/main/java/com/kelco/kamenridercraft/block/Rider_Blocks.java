@@ -19,6 +19,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -1030,6 +1031,9 @@ public class Rider_Blocks {
     public static final DeferredBlock<Block> PUNKJACKOLANTERN = registerBlock("punkjackolantern",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
                     .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1),Block.box(3, 0, 3, 13,7, 13)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+    public static final DeferredBlock<Block> VICE_DUCKY = registerBlock("vice_ducky",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).sound(new SoundType(1.0F, 1.0F, SoundEvents.BAT_DEATH, SoundEvents.BAT_AMBIENT, SoundEvents.BAT_HURT, SoundEvents.BAT_HURT, SoundEvents.BAT_DEATH)),Block.box(4, 0, 4, 18,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
 
     public static final DeferredBlock<Block> FERBUS = registerBlock("ferbus",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL),Block.box(4, 0, 4, 12,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));

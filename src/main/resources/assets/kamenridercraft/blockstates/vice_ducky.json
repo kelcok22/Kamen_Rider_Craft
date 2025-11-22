@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/vice_ducky" },
+    "facing=south": { "model": "kamenridercraft:block/vice_ducky", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/vice_ducky", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/vice_ducky", "y": 90 }
+  }
+ }

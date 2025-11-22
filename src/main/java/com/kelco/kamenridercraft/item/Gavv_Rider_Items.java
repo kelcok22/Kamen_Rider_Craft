@@ -1387,7 +1387,12 @@ public class Gavv_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
-	public static final DeferredItem<Item> CHOCODANGUN = ITEMS.register("chocodangun",
+    public static final DeferredItem<Item> ZAKUZAKUCHIPSLASHER_CHOCO = ITEMS.register("zakuzakuchipslasher_choco",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+
+    public static final DeferredItem<Item> CHOCODANGUN = ITEMS.register("chocodangun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
