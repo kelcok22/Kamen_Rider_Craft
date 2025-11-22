@@ -599,6 +599,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.RIOTROOPER.get(), RiotrooperEntity.setAttributes().build());
 		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
 		event.put(MobsCore.MUEZ.get(), MuezEntity.setAttributes().build());
+        event.put(MobsCore.FAIZ.get(), FaizEntity.setAttributes().build());
 
         event.put(MobsCore.BAKENEKO.get(), BakenekoEntity.setAttributes().build());
         event.put(MobsCore.MIDAREDOUJI.get(), MidaredoujiEntity.setAttributes().build());
