@@ -29,6 +29,11 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:unicorn_ring",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:water_ring_color_ver",
+          "weight": 1
         }
       ]
     }

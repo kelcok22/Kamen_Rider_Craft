@@ -502,6 +502,9 @@ public class ModCommonEvents {
 				trades.get(3).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 12),
 						new ItemStack(Zero_One_Rider_Items.THOUSAND_KEY.get(), 1), 10, 8, 0.02F));
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 30),
+                        new ItemStack(Zero_One_Rider_Items.ZAIA_SPEC.get(), 1), 10, 8, 0.02F));
                 trades.get(5).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
                         new ItemStack(Modded_item_core.REAL_X_EYEZ_MUSIC_DISC.get(), 1), 10, 8, 0.02F));
