@@ -173,6 +173,12 @@ public class MobsCore {
      public static final DeferredItem<DeferredSpawnEggItem> MUEZ_SPAWN_EGG = ITEMS.register("muez_spawn_egg",
              () -> new DeferredSpawnEggItem(MUEZ,  0x0a4de5,0xe8e8e8, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<FaizEntity>> FAIZ = MOBLIST.register("faiz",
+            () -> EntityType.Builder.of(FaizEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":faiz"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> FAIZ_SPAWN_EGG = ITEMS.register("faiz_spawn_egg",
+            () -> new DeferredSpawnEggItem(FAIZ,  0x0d0d0d,0xe00000, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<BakenekoEntity>> BAKENEKO = MOBLIST.register("bakeneko",
             () -> EntityType.Builder.of(BakenekoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bakeneko"));
