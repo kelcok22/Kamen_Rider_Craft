@@ -589,7 +589,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.SHADOWMOON.get(), ShadowmoonEntity.setAttributes().build());
 
 		event.put(MobsCore.ZU_GUMUN_BA.get(), ZuGumunBaEntity.setAttributes().build());
-        event.put(MobsCore.N_DAGUVA_ZEBA.get(), NDaguvaZeba.setAttributes().build());
+        event.put(MobsCore.N_DAGUVA_ZEBA.get(), NDaguvaZebaEntity.setAttributes().build());
 
 		event.put(MobsCore.PANTHERAS_LUTEUS.get(), PantherasLuteusEntity.setAttributes().build());
 		event.put(MobsCore.EL_OF_THE_WATER.get(), ElOfTheWaterEntity.setAttributes().build());

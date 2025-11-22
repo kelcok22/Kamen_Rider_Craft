@@ -123,8 +123,8 @@ public class MobsCore {
      public static final DeferredItem<DeferredSpawnEggItem> ZU_GUMUN_BA_SPAWN_EGG = ITEMS.register("zu_gumun_ba_spawn_egg",
              () -> new DeferredSpawnEggItem(ZU_GUMUN_BA,  0xf8ba57,0xaf8e59, new Item.Properties()));
 
-    public static final DeferredHolder<EntityType<?>, EntityType<NDaguvaZeba>> N_DAGUVA_ZEBA = MOBLIST.register("n_daguva_zeba",
-            () -> EntityType.Builder.of(NDaguvaZeba::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":n_daguva_zeba"));
+    public static final DeferredHolder<EntityType<?>, EntityType<NDaguvaZebaEntity>> N_DAGUVA_ZEBA = MOBLIST.register("n_daguva_zeba",
+            () -> EntityType.Builder.of(NDaguvaZebaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":n_daguva_zeba"));
 
     public static final DeferredItem<DeferredSpawnEggItem> N_DAGUVA_ZEBA_SPAWN_EGG = ITEMS.register("n_daguva_zeba_spawn_egg",
             () -> new DeferredSpawnEggItem(N_DAGUVA_ZEBA,  0xffffff,0x9f7f14, new Item.Properties()));
