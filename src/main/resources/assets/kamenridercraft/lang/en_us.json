@@ -2623,6 +2623,8 @@
 "kamenridercraft.name.lance": "Rider: Kamen Rider Lance",
 "item.kamenridercraft.chalice_rouzer": "Chalice Rouzer",
 "kamenridercraft.name.chalice": "Rider: Kamen Rider Chalice",
+  "item.kamenridercraft.blay_buckle_fake": "Blay Buckle",
+  "kamenridercraft.name.fake_blade": "Rider: Kamen Rider Fake Blade",
 
 "item.kamenridercraft.rouze_absorber": "Rouze Absorber",
 
@@ -6201,6 +6203,8 @@
   "item.kamenridercraft.taka_ridewatch": "Taka Ridewatch",
   "item.kamenridercraft.ridestriker_ridewatch": "Bike Ridewatch",
   "item.kamenridercraft.woz_time_majin_ridewatch": "White Woz Time Mazine Ridewatch",
+  "item.kamenridercraft.questionable_watch": "Questionable Watch",
+  "item.kamenridercraft.toy_robot": "Toy Robot",
 
   "item.kamenridercraft.ridestriker_spawn_egg": "Ridestriker",
 
@@ -7810,6 +7814,7 @@
   "kamenridercraft:nijigon_ride_chemy_card_extra.form": "Form: Rainbow Gotchard",
   "kamenridercraft:hopper101_ride_chemy_card.form": "Form: Miracle Gotchard",
   "kamenridercraft:hopper1_ride_chemy_card_ultima.form": "Form: Ultima Steamhopper",
+  "kamenridercraft:gigantliner_ride_chemy_card_fs.form": "Form: Legendliner",
   "kamenridercraft:firemars_ride_chemy_card_televikun.form": "Form: Marsphoenix Special",
   "kamenridercraft:daybreak_hopper1_ride_chemy_card.form": "Form: Daybreak Steamhopper",
   "kamenridercraft:twilight_the_sun_ride_chemy_card.form": "Form: Twilight Majade",
@@ -8153,6 +8158,7 @@
 
 "item.kamenridercraft.gavvgablade": "Gavvgablade",
 "item.kamenridercraft.zakuzakuchipslasher": "Zakuzakuchipslasher",
+  "item.kamenridercraft.zakuzakuchipslasher_choco": "Zakuzakuchipslasher (Choco)",
 "item.kamenridercraft.vrocangatling": "Vrocangatling",
 "item.kamenridercraft.chocodongun": "Chocodongun",
 "item.kamenridercraft.chocodangun": "Chocodangun",
@@ -8763,6 +8769,7 @@
 "item.kamenridercraft.riotrooper_spawn_egg": "Riotrooper Spawn Egg",
 "item.kamenridercraft.orga_spawn_egg": "Kamen Rider Orga Spawn Egg",
 "item.kamenridercraft.muez_spawn_egg": "Kamen Rider Muez Spawn Egg",
+  "item.kamenridercraft.faiz_spawn_egg": "Kamen Rider Faiz Spawn Egg",
 "item.kamenridercraft.bakeneko_spawn_egg": "Bakeneko Spawn Egg",
 "item.kamenridercraft.midaredouji_spawn_egg": "Midaredouji Spawn Egg",
 "item.kamenridercraft.makamou_ninja_group_spawn_egg": "Makamou Ninja Group Spawn Egg",
@@ -8893,6 +8900,7 @@
   "item.kamenridercraft.woz_spawn_egg": "Kamen Rider Woz Spawn Egg",
   "item.kamenridercraft.kasshine_spawn_egg": "Kasshine Spawn Egg",
   "item.kamenridercraft.another_zi_o_spawn_egg": "Another Zi-O Spawn Egg",
+  "item.kamenridercraft.yaminin_spawn_egg": "Yaminin Spawn Egg",
 
 "item.kamenridercraft.trilobite_magia_spawn_egg": "Trilobite Magia Spawn Egg",
 "item.kamenridercraft.dodo_magia_chick_spawn_egg": "Dodo Magia Chick Spawn Egg",
@@ -8984,6 +8992,7 @@
   "block.kamenridercraft.shocker_logo": "Shocker Base Logo",
   "block.kamenridercraft.drive_pit_logo": "Drive Pit Logo",
   "block.kamenridercraft.punkjackolantern": "PunkJack O'Lantern",
+  "block.kamenridercraft.vice_ducky": "Vice Rubber Ducky",
   "block.kamenridercraft.ferbus": "Ferbus",
 
 "block.kamenridercraft.monitor": "Monitor",
@@ -9278,6 +9287,7 @@
   "block.kamenridercraft.evol_boss_block": "Evol Boss Block",
   "block.kamenridercraft.bikaiser_boss_block": "Bikaiser Boss Block",
   "block.kamenridercraft.woz_boss_block": "White Woz Boss Block",
+  "block.kamenridercraft.yaminin_boss_block": "Yaminin Boss Block",
   "block.kamenridercraft.ginga_boss_block": "Ginga Boss Block",
 "block.kamenridercraft.horobi_boss_block": "Horobi Boss Block",
 "block.kamenridercraft.ikazuchi_boss_block": "Ikazuchi Boss Block",
