@@ -128,7 +128,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:special_ring",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
 		},
 		{
 			"type": "patchouli:text",
