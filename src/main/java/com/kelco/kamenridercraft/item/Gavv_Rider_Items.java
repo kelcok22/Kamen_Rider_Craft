@@ -1468,5 +1468,21 @@ public class Gavv_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+    public static final DeferredItem<Item> NINGYO_SWORD = ITEMS.register("ningyo_sword",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+    public static final DeferredItem<Item> MENSEN_KANABO = ITEMS.register("mensen_kanabo",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+    public static final DeferredItem<Item> UIROU_TONFA_1 = ITEMS.register("uirou_tonfa_1",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+    public static final DeferredItem<Item> UIROU_TONFA_2 = ITEMS.register("uirou_tonfa_2",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_GOCHIZO.get()));
+
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
