@@ -1,5 +1,6 @@
 {
   "values": [
+    "kamenridercraft:n_daguva_zeba_boss_block",
     "kamenridercraft:faiz_boss_block",
     "kamenridercraft:gaoh_boss_block",
     "kamenridercraft:arc_boss_block",
@@ -26,6 +27,7 @@
     "kamenridercraft:mad_rogue_boss_block",
     "kamenridercraft:evol_boss_block",
     "kamenridercraft:woz_boss_block",
+    "kamenridercraft:yaminin_boss_block",
     "kamenridercraft:ginga_boss_block",
     "kamenridercraft:horobi_boss_block",
     "kamenridercraft:ikazuchi_boss_block",

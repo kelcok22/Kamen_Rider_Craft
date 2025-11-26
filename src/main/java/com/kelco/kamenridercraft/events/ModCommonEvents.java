@@ -439,6 +439,15 @@ public class ModCommonEvents {
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
 					new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
+            trades.add((trader, rand) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 3),
+                    new ItemStack(Zi_O_Rider_Items.TOY_ROBOT.get(), 1), 10, 8, 0.02F));
+            trades.add((trader, rand) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 3),
+                    new ItemStack(Zi_O_Rider_Items.QUESTIOABLE_WATCH.get(), 1), 10, 8, 0.02F));
+            trades.add((trader, rand) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 5),
+                    new ItemStack(Rider_Blocks.YAMININ_BOSS_BLOCK.get(), 1), 10, 8, 0.02F));
 		}
 
 

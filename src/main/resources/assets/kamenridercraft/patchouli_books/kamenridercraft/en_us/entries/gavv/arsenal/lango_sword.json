@@ -2,7 +2,7 @@
   "name": "Lango's Sword",
   "icon": "kamenridercraft:lango_sword",
   "category": "kamenridercraft:gavv/arsenal",
-  "sortnum": 19,
+  "sortnum": 20,
   "pages": [
     {
       "type": "patchouli:text",
