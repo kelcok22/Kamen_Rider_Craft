@@ -9,6 +9,18 @@
 			"text": "These blocks will spawn a boss when mined by a player. Using a silk touch pickaxe will allow you to keep the blocks after breaking."
 		},
       {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:kuuga/n_daguva_zeba_boss_block",
+        "text": "Mine this block to summon $(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "faiz_boss_block",
+        "item": "kamenridercraft:faiz_boss_block",
+        "text": "Block is currently unobtainable$(br2)Mine this block to summon $(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
+      },
+      {
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "anchor": "gaoh_boss_block",
@@ -161,11 +173,10 @@
 			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Mine this block to summon $(l:build/mobs/evol)Kamen Rider Evol$(/l)"
 		},
         {
-          "type": "patchouli:spotlight",
-          "link_recipe": true,
+          "type": "patchouli:crafting",
           "anchor": "bikaiser_boss_block",
-          "item": "kamenridercraft:bikaiser_boss_block",
-          "text": "Block is currently unobtainable$(br2)Mine this block to summon $(l:build/mobs/bikaiser)Bikaiser$(/l)"
+          "recipe": "kamenridercraft:build/bikaiser_boss_block",
+          "text": "Mine this block to summon $(l:build/mobs/bikaiser)Bikaiser$(/l)"
         },
 		{
 			"type": "patchouli:crafting",
@@ -173,6 +184,13 @@
 			"recipe": "kamenridercraft:zi_o/woz_boss_block",
 			"text": "Mine this block to summon $(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)"
 		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "yaminin_boss_block",
+        "item": "kamenridercraft:yaminin_boss_block",
+        "text": "Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)$(br2)Mine this block to summon $(l:zi_o/mobs/yaminin)Yaminin$(/l)"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,

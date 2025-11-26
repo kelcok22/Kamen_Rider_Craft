@@ -234,7 +234,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:big_ring_color_ver",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
       },
 		{
 			"type": "patchouli:text",
@@ -338,7 +338,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:flame_ring_color_ver",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -351,7 +351,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:water_ring_color_ver",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
       },
       {
         "type": "patchouli:text",

@@ -1,7 +1,8 @@
 {
   "values": [
 	"kamenridercraft:gavvgablade",
-	"kamenridercraft:zakuzakuchipslasher",
+    "kamenridercraft:zakuzakuchipslasher",
+    "kamenridercraft:zakuzakuchipslasher_choco",
 	"kamenridercraft:chocodangun",
 	"kamenridercraft:chocodongun",
 	"kamenridercraft:xmax_gavv",
@@ -21,6 +22,10 @@
     "kamenridercraft:shiita_gun",
     "kamenridercraft:nyelv_bow",
     "kamenridercraft:glotta_scythe",
-    "kamenridercraft:lango_sword"
+    "kamenridercraft:lango_sword",
+    "kamenridercraft:ningyo_sword",
+    "kamenridercraft:mensen_kanabo",
+    "kamenridercraft:uirou_tonfa_1",
+    "kamenridercraft:uirou_tonfa_2"
   ]
 }
