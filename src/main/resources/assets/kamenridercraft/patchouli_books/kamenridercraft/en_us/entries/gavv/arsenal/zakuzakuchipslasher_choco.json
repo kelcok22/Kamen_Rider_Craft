@@ -1,0 +1,16 @@
+{
+	"name": "Zakuzakuchipslasher (Choco)",
+	"icon": "kamenridercraft:zakuzakuchipslasher_choco",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#zakuzakuchips)Zakuzakuchips Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/zakuzakuchipslasher_choco"
+		}
+	]
+}

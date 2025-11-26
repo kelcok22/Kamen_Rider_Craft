@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: ???$(br2)Drops$(li)2-4 $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadams$(/l)$(li)1 $(l:kuuga/items/amadam_stones#n_daguva_zeba_ultimate)M.Daguva.Zeba Ultimate Amadam$(/l)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Rising Mighty Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Rising Dragon Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Rising Pegasus Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Rising Titan Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_black_rising_mighty)Kuuga Black Rising Mighty Amadam$(/l) (20%)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#n_daguva_zeba_boss_block)N.Daguva.Zeba Boss Block$(/l)$(br2)Drops$(li)2-4 $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadams$(/l)$(li)1 $(l:kuuga/items/amadam_stones#n_daguva_zeba_ultimate)M.Daguva.Zeba Ultimate Amadam$(/l)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Rising Mighty Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Rising Dragon Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Rising Pegasus Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Rising Titan Amadam$(/l) (20%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_black_rising_mighty)Kuuga Black Rising Mighty Amadam$(/l) (20%)"
 		}
 	]
 }

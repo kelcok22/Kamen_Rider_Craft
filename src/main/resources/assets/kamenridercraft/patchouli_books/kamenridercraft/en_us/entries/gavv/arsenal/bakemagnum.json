@@ -2,7 +2,7 @@
 	"name": "Bakemagnum",
 	"icon": "kamenridercraft:bakemagnum",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",
