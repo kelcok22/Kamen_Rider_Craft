@@ -1,0 +1,16 @@
+{
+	"name": "Uirou Tonfa",
+	"icon": "kamenridercraft:uirou_tonfa_2",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#uirou)Uirou Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/uirou_tonfa_2"
+		}
+	]
+}

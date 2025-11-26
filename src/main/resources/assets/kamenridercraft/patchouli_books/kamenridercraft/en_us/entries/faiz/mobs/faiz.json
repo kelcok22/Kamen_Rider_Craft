@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Faiz",
+	"icon": "kamenridercraft:faiz_logo",
+	"category": "kamenridercraft:faiz/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:faiz",
+			"text": "Appears in:$(li)D-Video Special: Kamen Rider 4 (2015, web series)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Health: 40$(br2)Summoned from a $(l:misc/blocks/boss_blocks#faiz_boss_block)Faiz Boss Block$(/l)$(br2)Drops$(li)4-6 $(l:misc/items/rider_circuit)Rider Circuits$(/l) or $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/mission_memories#faiz_mission_memory)Faiz Mission Memory$(/l) or $(l:ichigo/items/typhoon_cores#typhoon_core_yongo)Typhoon Core (Yongo)$(/l)$(li)1 $(l:drive/items/signal_bikes#signal_legend_faiz)Signal Legend Faiz$(/l)"
+		}
+	]
+}
