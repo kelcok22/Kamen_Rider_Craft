@@ -2,7 +2,7 @@
   "name": "Nyelv's Bow",
   "icon": "kamenridercraft:nyelv_bow",
   "category": "kamenridercraft:gavv/arsenal",
-  "sortnum": 17,
+  "sortnum": 18,
   "pages": [
     {
       "type": "patchouli:text",

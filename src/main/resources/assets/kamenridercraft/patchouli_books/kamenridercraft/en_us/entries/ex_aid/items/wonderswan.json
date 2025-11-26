@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": " "
+			"text": "Prevents Bugsters from spawning when you have the Bugster Virus effect"
 		},
       {
         "type": "patchouli:spotlight",

@@ -1,0 +1,16 @@
+{
+	"name": "???",
+	"icon": "kamenridercraft:mensen_kanabo",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Final Stage (2025, stage show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#men_sen)Men Sen Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/mensen_kanabo"
+		}
+	]
+}

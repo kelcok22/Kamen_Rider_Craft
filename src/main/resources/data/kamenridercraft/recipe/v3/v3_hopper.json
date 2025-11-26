@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "v3",
+  "category": "equipment",
+  "pattern": [
+    " V ",
+    " C ",
+    " I "
+  ],
+  "key": {
+    "V": {
+      "item": "kamenridercraft:double_typhoon_core"
+    },
+    "C": {
+      "item": "kamenridercraft:rider_circuit"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:v3_hopper"
+  }
+}
