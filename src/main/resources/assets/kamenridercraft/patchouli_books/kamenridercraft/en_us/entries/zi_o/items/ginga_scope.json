@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ginga_scope",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)"
 		}
 	]
 }

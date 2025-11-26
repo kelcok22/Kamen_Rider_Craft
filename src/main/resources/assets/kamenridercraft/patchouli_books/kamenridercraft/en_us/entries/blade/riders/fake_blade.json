@@ -1,0 +1,21 @@
+{
+	"name": "Fake Blade",
+	"icon": "kamenridercraft:change_beetle",
+	"category": "kamenridercraft:blade/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:blay_buckle_fake\",Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Fake Blade",
+			"text": "Appears in:$(li)Kamen Rider Blade: Blade vs. Blade (2004, Hyper Battle Video)$(br2)Transforms with the $(l:blade/devices/blay_buckle#blay_buckle_fake)Blay Buckle$(/l)$(br2)Status Effects:$(li)Haste II$(li)Strength II"
+		}
+	]
+}

@@ -2,7 +2,7 @@
   "name": "Jeeb's Dagger",
   "icon": "kamenridercraft:jeeb_dagger",
   "category": "kamenridercraft:gavv/arsenal",
-  "sortnum": 14,
+  "sortnum": 15,
   "pages": [
     {
       "type": "patchouli:text",

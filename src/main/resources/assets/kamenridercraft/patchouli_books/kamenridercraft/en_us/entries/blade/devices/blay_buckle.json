@@ -4,13 +4,28 @@
 	"category": "kamenridercraft:blade/devices",
 	"sortnum": 1,
 	"pages": [
-		{
-			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used alongside the $(l:blade/devices/armor)Blade armor$(/l) to transform into $(l:blade/riders/blade)Kamen Rider Blade"
-		},
-		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:blade/blay_buckle"
-		}
+      {
+        "type": "patchouli:text",
+        "anchor": "blay_buckle",
+        "text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used alongside the $(l:blade/devices/armor)Blade armor$(/l) to transform into $(l:blade/riders/blade)Kamen Rider Blade"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:blade/blay_buckle"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blay_buckle_fake",
+        "title": "Blay Buckle (Fake Blade)",
+        "text": "Appears in:$(li)Kamen Rider Blade: Blade vs. Blade (2004, Hyper Battle Video)$(br2)Used alongside the $(l:blade/devices/armor)Blade armor$(/l) to transform into $(l:blade/riders/fake_blade)Fake Blade"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blay_buckle_fake",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
 	]
 }

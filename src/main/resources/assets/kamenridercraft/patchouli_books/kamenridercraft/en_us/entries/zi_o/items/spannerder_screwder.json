@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Kikai's $(l:zi_o/devices/kikai_driver)Kikai Driver$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:spannerder_screwder",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/spannerder_screwder"
 		}
 	]
 }
