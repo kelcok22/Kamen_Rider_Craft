@@ -1,0 +1,12 @@
+{
+  "type": "kamenridercraft:ixa_machine_block",
+  "ingredient": {
+    "item": "kamenridercraft:fuestle"
+  },
+  "modifier": {
+    "item": "minecraft:iron_nugget"
+  },
+  "result": {
+    "id": "kamenridercraft:fuestlefake"
+  }
+}

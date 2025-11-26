@@ -50,6 +50,9 @@ public class ModMenus {
     public static final DeferredHolder<MenuType<?>, MenuType<LegendRideMagnumGuiMenu>> LEGEND_RIDE_MAGNUM_GUI = REGISTRY.register("legend_ride_magnum_gui", () -> IMenuTypeExtension.create(LegendRideMagnumGuiMenu::new));
     public static final DeferredHolder<MenuType<?>, MenuType<CapsemCylinderGuiMenu>> CAPSEM_CYLINDER_GUI = REGISTRY.register("capsem_cylinder_gui", () -> IMenuTypeExtension.create(CapsemCylinderGuiMenu::new));
 
+	public static final DeferredHolder<MenuType<?>, MenuType<IxaMachineBlockGuiMenu>> IXA_MACHINE_BLOCK_GUI = REGISTRY.register("ixa_machine_block_gui", () -> IMenuTypeExtension.create(IxaMachineBlockGuiMenu::new));
+
+
 //	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchRackGuiMenu>> ASTROSWITCH_RACK_GUI = REGISTRY.register("astroswitch_rack_gui", () -> IMenuTypeExtension.create(AstroswitchRackGuiMenu::new));
 
 	public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}

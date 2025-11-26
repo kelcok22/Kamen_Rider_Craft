@@ -23,6 +23,9 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             Rider_Blocks.HELHEIM_HANGING_SIGN.get(), Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get()).build(null));
 
+    public static final Supplier<BlockEntityType<IxaMachineBlockEntity>> IXA_MACHINE_BLOCK_BE =
+            BLOCK_ENTITIES.register("ixa_machine_block_be", () -> BlockEntityType.Builder.of(
+                    IxaMachineBlockEntity::new, Rider_Blocks.IXA_MACHINE_BLOCK.get()).build(null));
 
     public static final Supplier<BlockEntityType<PandoraPanelBlockEntity>> PANDORA_PANEL_BE =
             BLOCK_ENTITIES.register("pandora_panel_be", () -> BlockEntityType.Builder.of(
