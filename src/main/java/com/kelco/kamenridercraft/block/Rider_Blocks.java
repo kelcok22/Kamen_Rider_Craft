@@ -124,7 +124,11 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block>  DEEPSLATE_HIBIKI_ORE = registerBlock("deepslate_stone_hibiki",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
-		
+
+	public static final DeferredBlock<Block> IXA_MACHINE_BLOCK = registerBlock("ixa_machine_block",
+			() -> new IxaMachineBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 	public static final DeferredBlock<Block>  KIVA_ORE = registerBlock("stone_kiva",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));

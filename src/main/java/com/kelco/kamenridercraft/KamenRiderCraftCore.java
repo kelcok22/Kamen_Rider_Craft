@@ -29,6 +29,7 @@ import com.kelco.kamenridercraft.network.ClientPayloadHandler;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
 import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.particle.*;
+import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 
@@ -154,6 +155,7 @@ public class KamenRiderCraftCore
         ModParticles.register(modEventBus);
         ModGameRules.register(modEventBus);
         /*ModBlockEntities.REGISTRY.register(modEventBus);*/
+        ModRecipes.register(modEventBus);
 
         LootModifierCore.register(modEventBus);
 
@@ -772,6 +774,7 @@ public class KamenRiderCraftCore
             event.register(ModMenus.CHEMY_RISER_GUI.get(), ChemyRiserGuiScreen::new);
             event.register(ModMenus.LEGEND_RIDE_MAGNUM_GUI.get(), LegendRideMagnumGuiScreen::new);
             event.register(ModMenus.CAPSEM_CYLINDER_GUI.get(), CapsemCylinderGuiScreen::new);
+            event.register(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), IxaMachineBlockGuiScreen::new);
            // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }
     }

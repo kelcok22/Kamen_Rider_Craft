@@ -235,6 +235,9 @@ public class Kiva_Rider_Items {
 	
 	public static final DeferredItem<Item> CALIBUR_FUESTLE = ITEMS.register("caliburfuestle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+
+	public static final DeferredItem<Item> FAKE_GARULU_FUESTLE = ITEMS.register("fakegarulufuestle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
     
     public static final DeferredItem<Item> RISER_FUESTLE = ITEMS.register("risingfuestle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising","ixa","ixa_belt",
