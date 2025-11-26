@@ -2,7 +2,7 @@
 	"name": "Gavvwhipir",
 	"icon": "kamenridercraft:gavvwhipir",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

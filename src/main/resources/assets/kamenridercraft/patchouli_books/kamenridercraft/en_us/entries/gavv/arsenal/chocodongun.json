@@ -2,7 +2,7 @@
 	"name": "Chocodongun",
 	"icon": "kamenridercraft:chocodongun",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",
