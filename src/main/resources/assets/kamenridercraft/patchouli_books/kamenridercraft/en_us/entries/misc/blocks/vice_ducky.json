@@ -1,0 +1,19 @@
+{
+  "name": "Vice Rubber Ducky",
+  "icon": "kamenridercraft:vice_ducky",
+  "category": "kamenridercraft:misc/blocks",
+  "sortnum": 52,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Can be worn on the head armor slot"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:vice_ducky",
+      "title": " ",
+      "text": "Block is currently unobtainable"
+    }
+  ]
+}

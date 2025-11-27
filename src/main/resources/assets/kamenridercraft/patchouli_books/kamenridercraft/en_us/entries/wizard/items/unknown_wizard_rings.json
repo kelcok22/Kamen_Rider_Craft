@@ -7,16 +7,16 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "unknown_amber_ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/wizard_rings#special_rush_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/wizard_rings#special_rush_ring)Special Rush Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#mage_o_ring)Mage Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#light_ring)Light Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#excite_ring)Excite Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#defend_ring)Defend Wizard Ring$(/l) (4.2%)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/wizard_rings#special_rush_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/wizard_rings#special_rush_ring)Special Rush Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#mage_o_ring)Mage Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#light_ring)Light Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#excite_ring)Excite Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#defend_ring)Defend Wizard Ring$(/l) (4%)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:wizard/unknown_amber_ring",
-			"text": "$(li)$(l:wizard/arsenal/wizard_rings#connect_ring)Connect Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#sleep_ring)Sleep Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#kick_strike_ring)Kick Strike Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#bind_ring)Bind Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#liquid_ring)Liquid Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#drill_ring)Drill Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#big_ring)Big Wizard Ring$(/l) (4.2%)"
+			"text": "$(li)$(l:wizard/arsenal/wizard_rings#connect_ring)Connect Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#sleep_ring)Sleep Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#kick_strike_ring)Kick Strike Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#bind_ring)Bind Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#liquid_ring)Liquid Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#drill_ring)Drill Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#big_ring)Big Wizard Ring$(/l) (4%)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#dress_up_ring)Dress Up Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#flower_ring)Flower Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#extend_ring)Extend Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#smell_ring)Smell Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#dragorise_ring)Dragorise Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#engage_ring)Engage Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#please_ring)Please Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#common_wizard_ring)Common Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/items/wizard_rings#chichin_pui_pui_ring)Chichin Pui Pui Wizard Ring$(/l) (4.2%)$(li)$(l:wizard/arsenal/wizard_rings#copy_ring)Copy Wizard Ring$(/l) (4.2%)"
+			"text": "$(li)$(l:wizard/arsenal/wizard_rings#big_ring_color_ver)Big Wizard Ring (Color ver.)$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#dress_up_ring)Dress Up Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#flower_ring)Flower Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#extend_ring)Extend Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#smell_ring)Smell Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#dragorise_ring)Dragorise Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#engage_ring)Engage Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#please_ring)Please Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#common_wizard_ring)Common Wizard Ring$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#chichin_pui_pui_ring)Chichin Pui Pui Wizard Ring$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#copy_ring)Copy Wizard Ring$(/l) (4%)"
 		},
 		{
 			"type": "patchouli:empty"
@@ -25,23 +25,25 @@
 			"type": "patchouli:text",
 			"anchor": "unknown_red_ring",
 			"title": "Unknown Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/wizard_rings#flame_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/wizard_rings#flame_ring)Flame Wizard Ring$(/l) (55.6%)$(li)$(l:wizard/items/wizard_rings#flame_ring_dragon)Flame Dragon Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#special_ring)Special Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#garuda_ring)Garuda Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#garuda_ring_color_ver)Garuda Wizard Ring (Color Ver.)$(/l) (11.1%)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/wizard_rings#flame_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/wizard_rings#flame_ring)Flame Wizard Ring$(/l) (50%)$(li)$(l:wizard/items/wizard_rings#flame_ring_dragon)Flame Dragon Wizard Ring$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#special_ring)Special Wizard Ring$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#garuda_ring)Garuda Wizard Ring$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#garuda_ring_color_ver)Garuda Wizard Ring (Color Ver.)$(/l) (10%)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:wizard/unknown_red_ring"
+			"recipe": "kamenridercraft:wizard/unknown_red_ring",
+          "text": "$(li)$(l:wizard/arsenal/wizard_rings#flame_ring_color_ver)Flame Wizard Ring (Color ver.)$(/l) (10%)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "unknown_blue_ring",
 			"title": "Unknown Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/wizard_rings#water_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/wizard_rings#water_ring)Water Wizard Ring$(/l) (55.6%)$(li)$(l:wizard/items/wizard_rings#water_ring_dragon)Water Dragon Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#mage_b_ring)Mage Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/arsenal/wizard_rings#blizzard_ring)Blizzard Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#unicorn_ring)Unicorn Wizard Ring$(/l) (11.1%)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/wizard_rings#water_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/wizard_rings#water_ring)Water Wizard Ring$(/l) (50%)$(li)$(l:wizard/items/wizard_rings#water_ring_dragon)Water Dragon Wizard Ring$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#mage_b_ring)Mage Wizard Ring$(/l) (10%)$(li)$(l:wizard/arsenal/wizard_rings#blizzard_ring)Blizzard Wizard Ring$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#unicorn_ring)Unicorn Wizard Ring$(/l) (10%)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:wizard/unknown_blue_ring"
+			"recipe": "kamenridercraft:wizard/unknown_blue_ring",
+          "text": "$(li)$(l:wizard/arsenal/wizard_rings#water_ring_color_ver)Water Wizard Ring (Color ver.)$(/l) (10%)"
 		},
 		{
 			"type": "patchouli:text",
