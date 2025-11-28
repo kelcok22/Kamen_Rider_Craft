@@ -227,6 +227,10 @@ public class Effect_core {
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), 100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
+    public static final Holder<MobEffect> WONDER = EFFECT.register("wonder",
+            () -> new 	WonderEffect(MobEffectCategory.BENEFICIAL, 0x9d2cf3));
+
+
     public static final Holder<MobEffect>  PORTAL_COOLDOWN= EFFECT.register("portal_cooldown",
             () -> new UncurableEffect(MobEffectCategory.NEUTRAL, 0x6300e6));
 
