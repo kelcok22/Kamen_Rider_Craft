@@ -1,0 +1,19 @@
+{
+	"name": "Toy Robot",
+	"icon": "kamenridercraft:toy_robot",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 18,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:toy_robot",
+        "title": " ",
+        "text": "Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
+      }
+	]
+}

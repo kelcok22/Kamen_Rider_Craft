@@ -1,0 +1,19 @@
+{
+	"name": "Questionable Watch",
+	"icon": "kamenridercraft:questionable_watch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 17,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:questionable_watch",
+        "title": " ",
+        "text": "Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
+      }
+	]
+}
