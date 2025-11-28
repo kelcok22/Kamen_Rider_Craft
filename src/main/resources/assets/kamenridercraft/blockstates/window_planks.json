@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kamenridercraft:block/window_planks",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kamenridercraft:block/window_planks"
+    },
+    "facing=south": {
+      "model": "kamenridercraft:block/window_planks",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kamenridercraft:block/window_planks",
+      "y": 270
+    }
+  }
+}
