@@ -44,7 +44,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
     private static final int INPUT_SLOT = 0;
     private static final int MODIFIER_SLOT = 1;
-    private static final int[] OUTPUT_SLOT = new int[]{3,4,5,6,7,8,9,10}; //Output
+    private static final int OUTPUT_SLOT = 2; //Output
 
     protected final ContainerData data;
     private int progress = 0;
@@ -120,7 +120,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         maxProgress = pTag.getInt("machine_block.max_progress");
     }
 
-  /**  public void tick(Level level, BlockPos blockPos, BlockState blockState) {
+    public void tick(Level level, BlockPos blockPos, BlockState blockState) {
         if(hasRecipe()) {
             increaseCraftingProgress();
             setChanged(level, blockPos, blockState);
@@ -132,7 +132,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         } else {
             resetProgress();
         }
-    } **/
+    }
 
     private void craftItem() {
         Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
@@ -140,8 +140,8 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.extractItem(MODIFIER_SLOT, 1, false);
-    //    itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
-    //            itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
+        itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
+               itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
     }
 
     private void resetProgress() {
@@ -158,7 +158,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
 
-  /**  private boolean hasRecipe() {
+    private boolean hasRecipe() {
         Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
         if(recipe.isEmpty()) {
             return false;
@@ -166,51 +166,23 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         ItemStack output = recipe.get().value().output();
       return canInsertAmountIntoOutput(output.getCount()) && canInsertItemIntoOutput(output);
     }
-   **/
+
     private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe() {
         return this.level.getRecipeManager()
                 .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), new IxaMachineRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT), itemHandler.getStackInSlot(MODIFIER_SLOT)), level);
     }
 
-    private void canInsertItemIntoOutput(ItemStack output) {
-        for (int slot = 2; slot < 10; slot++) {
-            ItemStack itemStack = items.get(slot);
-            if (itemStack.isEmpty()) {
-                items.set(slot, output);
-                return;
-            }
-        }
+    private boolean canInsertItemIntoOutput(ItemStack output) {
+        return itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
+                itemHandler.getStackInSlot(OUTPUT_SLOT).getItem() == output.getItem();
     }
-/**
-    private void canInsertAmountIntoOutput(int count) {
-        for (int slot = 2; slot < 10; slot++)
-            ItemStack output = getCurrentRecipe(output)
-            ItemStack itemStack = items.get(slot)
+
+    private boolean canInsertAmountIntoOutput(int count) {
+        int maxCount = itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ? 64 : itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
         int currentCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
-        if (currentCount > 0) {
-            for (int slot = 2; slot < 10; slot++) {
-                ItemStack itemStack = items.get(slot);
-                if (itemStack.isStackable(output) && itemStack.getCount() + output.getCount() < 64) {
-                    itemStack.setCount(itemStack.getCount() + output.getCount());
-                    return;
-                }
-            }
-        }
-    }
 
-
-    public void setItem(int slot, @NotNull ItemStack stack) {
-        items.set(slot, stack);
-        if (stack.getCount() > getMaxStackSize()) {
-            stack.setCount(getMaxStackSize());
-        }
-        setChanged();
+        return maxCount >= currentCount + count;
     }
-**/
-    public boolean canPlaceItem(int slot, @NotNull ItemStack stack) {
-        return slot < OUTPUT_SLOT[0];
-    }
-
 
     @Override
     public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
