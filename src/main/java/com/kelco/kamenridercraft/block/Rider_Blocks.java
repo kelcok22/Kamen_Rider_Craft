@@ -52,6 +52,9 @@ public class Rider_Blocks {
     public static final DeferredBlock<Block> KIVA_THRONE = registerBlock("kiva_throne",
             () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<LadderBlock> WINDOW_PLANKS = registerBlock("window_planks",
+            () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
+
 
     public static final DeferredBlock<Block> GASHAPON_MACHINE = registerBlock("gashapon_machine",
             () -> new GashaponMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -295,11 +298,14 @@ public class Rider_Blocks {
 	public static final DeferredBlock<LadderBlock> DRIVE_PIT_LADDER = registerBlock("drive_pit_ladder",
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
-	public static final DeferredBlock<LadderBlock> DRIVE_PIT_LOGO = registerBlock("drive_pit_logo",
+    public static final DeferredBlock<LadderBlock> CASTLE_DORAN_LOGO = registerBlock("castle_doran_logo",
+            () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).lightLevel((p_152632_) -> 100)));
+
+    public static final DeferredBlock<LadderBlock> DRIVE_PIT_LOGO = registerBlock("drive_pit_logo",
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).lightLevel((p_152632_) -> 100)));
 
 
-	public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
+    public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
 			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
