@@ -44,11 +44,12 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
     private static final int INPUT_SLOT = 0;
     private static final int MODIFIER_SLOT = 1;
-    private static final int OUTPUT_SLOT = 2; //Output
+    private static final int[] OUTPUT_SLOT = new int[]{2,3,4,5,6,7,8,9,10}; //Output
 
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 72;
+    private int outputSlot = 2;
 
     protected NonNullList<ItemStack> items = NonNullList.withSize(11, ItemStack.EMPTY);
     private int rawIndex = -1;
@@ -140,8 +141,8 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.extractItem(MODIFIER_SLOT, 1, false);
-        itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
-               itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
+        itemHandler.setStackInSlot(outputSlot, new ItemStack(output.getItem(),
+               itemHandler.getStackInSlot(outputSlot).getCount() + output.getCount()));
     }
 
     private void resetProgress() {
@@ -164,7 +165,15 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
             return false;
         }
         ItemStack output = recipe.get().value().output();
-      return canInsertAmountIntoOutput(output.getCount()) && canInsertItemIntoOutput(output);
+        outputSlot =getOutputSlot(output);
+      return canInsertAmountIntoOutput(output.getCount(),outputSlot) && canInsertItemIntoOutput(output,outputSlot);
+    }
+
+    public int getOutputSlot(ItemStack output) {
+        for (int slot = 2; slot < 11; slot++){
+            if (canInsertAmountIntoOutput(output.getCount(),slot) && canInsertItemIntoOutput(output,slot)) return slot;
+        }
+        return 2;
     }
 
     private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe() {
@@ -172,14 +181,14 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
                 .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), new IxaMachineRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT), itemHandler.getStackInSlot(MODIFIER_SLOT)), level);
     }
 
-    private boolean canInsertItemIntoOutput(ItemStack output) {
-        return itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
-                itemHandler.getStackInSlot(OUTPUT_SLOT).getItem() == output.getItem();
+    private boolean canInsertItemIntoOutput(ItemStack output,int slot) {
+        return itemHandler.getStackInSlot(slot).isEmpty() ||
+                itemHandler.getStackInSlot(slot).getItem() == output.getItem();
     }
 
-    private boolean canInsertAmountIntoOutput(int count) {
-        int maxCount = itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ? 64 : itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
-        int currentCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
+    private boolean canInsertAmountIntoOutput(int count,int slot) {
+        int maxCount = itemHandler.getStackInSlot(slot).isEmpty() ? 64 : itemHandler.getStackInSlot(slot).getMaxStackSize();
+        int currentCount = itemHandler.getStackInSlot(slot).getCount();
 
         return maxCount >= currentCount + count;
     }
