@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-29T00:39:13.1193011	Item Models: kamenridercraft
+// 1.21.1	2025-11-29T18:56:14.526698	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -174,6 +174,7 @@ b3d8611ef8a7262b6462b15ec0fa086b1b59d68c assets/kamenridercraft/models/item/eldo
 d198a9fb1c4edd8ffbdb6d721a1fe1fd02e56bea assets/kamenridercraft/models/item/eldragon_chemy_card.json
 1bc3a084a3852772609fe65bbc83fb1ccedeb95c assets/kamenridercraft/models/item/eleganmacaron_gochizo.json
 849142d9efe8d14a845a98017c44d4592d92720d assets/kamenridercraft/models/item/energyl_ride_chemy_card.json
+3ab6fba702d6c8dae2ddfe370bea8d09711e7417 assets/kamenridercraft/models/item/erase_capsem.json
 8fdf52fcec78fca71b9db51c09b59570944c6e99 assets/kamenridercraft/models/item/eternal_phoenix_wonder_ride_book_falchion.json
 d7980eee4186c04607c7bbedf7c44cfb15d059bd assets/kamenridercraft/models/item/eternal_ride_chemy_card.json
 b1f2db05f3dde80bb56b7108e7ce45b34f9c9e58 assets/kamenridercraft/models/item/evol_trigger_kaijin.json
@@ -355,6 +356,7 @@ d63a709327579cc50f4cd01ff2a3ddbd75c12482 assets/kamenridercraft/models/item/kiva
 6f88e5d04e9c0ed11540dce89db4330354d38632 assets/kamenridercraft/models/item/kiva_gochizo.json
 81b8e9695d5b96531ef5a33b87826bd11ff1dcd5 assets/kamenridercraft/models/item/kiva_ride_chemy_card.json
 ec097597f19034fda2cf26973944fdba5484a9fd assets/kamenridercraft/models/item/kiva_ring.json
+d11bb12c9b55037c062f4db2617ea2f8095571b3 assets/kamenridercraft/models/item/knight_invoker.json
 19346465fd8c8e36b2ecdc9773e044a17a1d0afe assets/kamenridercraft/models/item/koalamarch_gochizo.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_kenzan.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_slash.json
