@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fuestle",
 			"title": " ",
-			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:kiva/mobs/arc)Kamen Rider Arc$(/l)$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l) and $(l:kiva/structures/castle_doran)Castle Doran$(/l)$(br2)Drops from:$(li)$(l:kiva/mobs/arc)Kamen Rider Arc$(/l)$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		}
 	]
 }
