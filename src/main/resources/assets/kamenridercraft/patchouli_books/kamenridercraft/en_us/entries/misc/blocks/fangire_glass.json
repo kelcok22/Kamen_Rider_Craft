@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:smelting",
-			"recipe": "kamenridercraft:kiva/fangire_glass"
+			"recipe": "kamenridercraft:kiva/fangire_glass",
+          "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
 		}
 	]
 }
