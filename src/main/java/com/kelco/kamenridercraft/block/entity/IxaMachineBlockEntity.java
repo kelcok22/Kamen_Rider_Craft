@@ -1,11 +1,15 @@
 package com.kelco.kamenridercraft.block.entity;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.custom.IxaMachineBlock;
+import com.kelco.kamenridercraft.block.custom.PlinthBlock;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipe;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipeInput;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.world.inventory.IxaMachineBlockGuiMenu;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -53,6 +57,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
     protected NonNullList<ItemStack> items = NonNullList.withSize(11, ItemStack.EMPTY);
     private int rawIndex = -1;
+
 
     public IxaMachineBlockEntity( BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(), pos, blockState);

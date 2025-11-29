@@ -68,6 +68,7 @@
 
   "gui.kamneridercraft.ring_holder_gui": "Ring Holder",
   "gui.kamenridercraft.advent_deck_gui": "Advent Deck",
+  "container.kamenridercraft.ixamachine": "Fuestle Replicator",
 
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 "travelerstitles.kamenridercraft.moon": "The Moon",
@@ -3012,6 +3013,9 @@
 "item.kamenridercraft.knucklefuestle": "Knuckle Fuestle",
 "item.kamenridercraft.caliburfuestle": "Calibur Fuestle",
 "item.kamenridercraft.risingfuestle": "Riser Fuestle",
+  "item.kamenridercraft.fakegarulufuestle": "Fake Garulu Fuestle",
+  "item.kamenridercraft.fakebasshaafuestle": "Fake Basshaa Fuestle",
+  "item.kamenridercraft.fakedoggafuestle": "Fake Dogga Fuestle",
 
 "item.kamenridercraft.sagafuestle": "Wake Up Fuestle (Saga)",
 "item.kamenridercraft.darkwakeupfuestle": "Wake Up Fuestle (Dark Kiva)",

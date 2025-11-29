@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.world.inventory.NeoDiendriverGuiMenu;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -14,83 +15,110 @@ import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class IxaMachineBlock extends BaseEntityBlock {
 
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+
     public IxaMachineBlock(Properties properties) {
         super(properties);
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+    }
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_53681_) {
+        p_53681_.add(FACING);
     }
 
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return null;
+    public BlockState getStateForPlacement(BlockPlaceContext p_53679_) {
+        return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
     }
 
-    @Nullable
-    @Override
-    public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new IxaMachineBlockEntity(blockPos, blockState);
+    public PushReaction getPistonPushReaction(BlockState p_53683_) {
+        return PushReaction.PUSH_ONLY;
     }
 
-    @Override
-    protected RenderShape getRenderShape (BlockState state) {
-        return RenderShape.MODEL;
+    public BlockState rotate(BlockState p_48722_, Rotation p_48723_) {
+        return p_48722_.setValue(FACING, p_48723_.rotate(p_48722_.getValue(FACING)));
     }
 
-    @Override
-    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
-        if (pState.getBlock() != pNewState.getBlock()) {
-            BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
-                ixaMachineBlockEntity.drops();
-            }
-        }
-
-        super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
-    }
-
-    @Override
-    protected ItemInteractionResult useItemOn(ItemStack pStack, BlockState pState, Level pLevel, BlockPos pPos,
-                                              Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult) {
-        if (!pLevel.isClientSide()) {
-            BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
-                ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(ixaMachineBlockEntity, Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixamachine")), pPos);
-            } else {
-                throw new IllegalStateException("Our Container provider is missing!");
-            }
-        }
-
-        return ItemInteractionResult.sidedSuccess(pLevel.isClientSide());
-    }
-
-
-    @Nullable
-    @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
-        if(level.isClientSide()) {
+        @Override
+        protected MapCodec<? extends BaseEntityBlock> codec () {
             return null;
         }
 
-        return createTickerHelper(blockEntityType, ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(),
-                (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
-    }
+        @Nullable
+        @Override
+        public BlockEntity newBlockEntity (BlockPos blockPos, BlockState blockState){
+            return new IxaMachineBlockEntity(blockPos, blockState);
+        }
 
-    public IxaMachineBlock AddToTabList(List<Block> TabList) {
-        TabList.add(this);
-        return this;
-    }
+        @Override
+        protected RenderShape getRenderShape (BlockState state){
+            return RenderShape.MODEL;
+        }
+
+        @Override
+        public void onRemove (BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState,boolean pIsMoving){
+            if (pState.getBlock() != pNewState.getBlock()) {
+                BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+                if (blockEntity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
+                    ixaMachineBlockEntity.drops();
+                }
+            }
+
+            super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+        }
+
+        @Override
+        protected ItemInteractionResult useItemOn (ItemStack pStack, BlockState pState, Level pLevel, BlockPos pPos,
+                Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult){
+            if (!pLevel.isClientSide()) {
+                BlockEntity entity = pLevel.getBlockEntity(pPos);
+                if (entity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
+                    ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(ixaMachineBlockEntity, Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixamachine")), pPos);
+                } else {
+                    throw new IllegalStateException("Our Container provider is missing!");
+                }
+            }
+
+            return ItemInteractionResult.sidedSuccess(pLevel.isClientSide());
+        }
+
+
+        @Nullable
+        @Override
+        public <T extends
+        BlockEntity > BlockEntityTicker < T > getTicker(Level level, BlockState state, BlockEntityType < T > blockEntityType)
+        {
+            if (level.isClientSide()) {
+                return null;
+            }
+
+            return createTickerHelper(blockEntityType, ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(),
+                    (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
+        }
+
+        public IxaMachineBlock AddToTabList (List < Block > TabList) {
+            TabList.add(this);
+            return this;
+        }
 
 }

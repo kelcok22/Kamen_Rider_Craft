@@ -170,7 +170,13 @@ public class Kiva_Rider_Items {
 							player.getZ(), 35, 0, 0, 0, 1);
 				}
 			}.IsBeltGlowing().IsGlowing().addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
-    
+
+	public static final DeferredItem<Item> DORAN_FUESTLE = ITEMS.register("doranfuestle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> BUROON_FUESTLE = ITEMS.register("buroonfuestle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
+
     public static final DeferredItem<Item> TATSULOT = ITEMS.register("tatsulot",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_emperor","kiva","kivat_belt_e",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -237,6 +243,12 @@ public class Kiva_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAKE_GARULU_FUESTLE = ITEMS.register("fakegarulufuestle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> FAKE_BASSHAA_FUESTLE = ITEMS.register("fakebasshaafuestle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> FAKE_DOGGA_FUESTLE = ITEMS.register("fakedoggafuestle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
     
     public static final DeferredItem<Item> RISER_FUESTLE = ITEMS.register("risingfuestle",

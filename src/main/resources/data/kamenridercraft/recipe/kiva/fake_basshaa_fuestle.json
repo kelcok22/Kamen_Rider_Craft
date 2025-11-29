@@ -1,0 +1,12 @@
+{
+  "type": "kamenridercraft:ixa_machine_block",
+  "ingredient": {
+    "item": "kamenridercraft:fuestlefake"
+  },
+  "modifier": {
+    "item": "kamenridercraft:basshaafuestle"
+  },
+  "result": {
+    "id": "kamenridercraft:fakebasshaafuestle"
+  }
+}
