@@ -685,6 +685,9 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<Block> DORAN_SCALE = registerBlock("doran_scale",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> RABBIT_HUTCH_LIGHT = registerBlock("rabbit_hutch_light",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)

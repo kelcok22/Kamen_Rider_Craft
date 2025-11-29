@@ -2,9 +2,9 @@
     "parent": "block/orientable",
     "textures": {
         "particle": "kamenridercraft:block/purifyersides",
-        "0": "kamenridercraft:block/bocca_boss_block",
-        "1": "kamenridercraft:block/amazon_cell_extractor",
-        "2": "kamenridercraft:block/amazon_cell_extractor_top"
+        "0": "kamenridercraft:block/ixa_machine_block",
+        "1": "kamenridercraft:block/purifyersides",
+        "2": "kamenridercraft:block/monitorside"
     },
     "elements": [
         {

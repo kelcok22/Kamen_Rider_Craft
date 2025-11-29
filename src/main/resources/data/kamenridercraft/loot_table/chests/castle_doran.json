@@ -11,8 +11,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 3.0
+                "max": 10.0,
+                "min": 4.0
               },
               "function": "minecraft:set_count"
             }
@@ -44,28 +44,12 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 6.0,
-                "min": 4.0
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:string",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 4.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:spider_eye",
+          "name": "kamenridercraft:fangire_glass",
           "weight": 5
         }
       ],
@@ -75,36 +59,76 @@
         "min": 2.0
       }
     },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
         {
-          "bonus_rolls": 0.0,
-          "entries": [
-            {
-
           "type": "minecraft:item",
           "name": "kamenridercraft:wakeupfuestle",
           "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:sagafuestle",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:darkwakeupfuestle",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:newwakeupfuestle",
-          "weight": 1
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 3.0,
-        "min": 2.0
+        "max": 2.0,
+        "min": 1.0
       }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:garulu_statue",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:basshaa_statue",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dogga_statue",
+          "weight": 3
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 1.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:break_the_chain_music_disc",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:doranfuestle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:buroonfuestle",
+          "weight": 3
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 1.0
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
     }
   ]
 }

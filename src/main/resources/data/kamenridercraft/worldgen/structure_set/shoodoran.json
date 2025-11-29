@@ -4,8 +4,12 @@
   "structures": [
 	{
 	  "structure": "kamenridercraft:shoodoran",
-	  "weight": 7
-	}
+	  "weight": 3
+	},
+	  {
+		  "structure": "kamenridercraft:castle_doran",
+		  "weight": 7
+	  }
   ],
   "placement": {
 	// The kind of placement to use. The other kind is ring based like strongholds use.
@@ -15,10 +19,10 @@
 	"salt": 57982,
 
 	  // The average distance apart in chunks for spawn attempts
-	"spacing": 50,
+	"spacing": 40,
 
 	  // Minimum distance apart in chunks for spawn attempts
 	  // MUST ALWAYS BE SMALLER THAN spacing ABOVE
-	"separation": 20
+	"separation": 15
   }
 }
