@@ -227,7 +227,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:break_the_chain_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
 		},
 		{
 			"type": "patchouli:text",

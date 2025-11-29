@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:wakeupfuestle",
-			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l) and $(l:kiva/structures/castle_doran)Castle Doran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -41,19 +41,45 @@
 			"title": " ",
 			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "doggafuestle",
-			"title": "Dogga Fuestle",
-			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#dogga)Dogga$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:doggafuestle",
-			"title": " ",
-			"text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
-		},
+      {
+        "type": "patchouli:text",
+        "anchor": "doggafuestle",
+        "title": "Dogga Fuestle",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#dogga)Dogga$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:doggafuestle",
+        "title": " ",
+        "text": "Found inside $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "doranfuestle",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:doranfuestle",
+        "title": " ",
+        "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "buroonfuestle",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:buroonfuestle",
+        "title": " ",
+        "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "tatsulot",
@@ -106,6 +132,45 @@
 			"title": " ",
 			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "fakegarulufuestle",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fakegarulufuestle",
+        "title": " ",
+        "text": " "
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fakebasshaafuestle",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fakebasshaafuestle",
+        "title": " ",
+        "text": " "
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fakedoggafuestle",
+        "title": "???",
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fakedoggafuestle",
+        "title": " ",
+        "text": " "
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "risingfuestle",
