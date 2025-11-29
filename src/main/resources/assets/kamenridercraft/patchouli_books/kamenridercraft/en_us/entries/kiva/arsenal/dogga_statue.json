@@ -13,7 +13,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:dogga_statue",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
       }
 	]
 }

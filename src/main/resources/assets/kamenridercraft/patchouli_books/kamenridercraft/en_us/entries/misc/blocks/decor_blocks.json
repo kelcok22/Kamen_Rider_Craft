@@ -394,6 +394,20 @@
 			"anchor": "zero_liner_green",
 			"recipe": "kamenridercraft:den_o/zero_liner_green"
         },
+      {
+        "type": "patchouli:spotlight",
+        "anchor": "doran_scale",
+        "link_recipe": true,
+        "item": "kamenridercraft:doran_scale",
+        "text": "Found inside $(l:fkiva/structures/castle_doran)Castle Doran$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "anchor": "castle_doran_logo",
+        "link_recipe": true,
+        "item": "kamenridercraft:castle_doran_logo",
+        "text": "Found inside $(l:fkiva/structures/castle_doran)Castle Doran$(/l)"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "rabbit_hutch_light",
