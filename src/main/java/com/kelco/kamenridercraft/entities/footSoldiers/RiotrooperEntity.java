@@ -4,16 +4,21 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import java.util.List;
 
 public class RiotrooperEntity extends BaseHenchmenEntity{
 	
@@ -28,6 +33,18 @@ public class RiotrooperEntity extends BaseHenchmenEntity{
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.SMARTBUCKLE.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Faiz_Rider_Items.AXEL_RAY_GUN.get()));
 		this.setMeleeOnSpawn(40.0D);
+    }
+
+    @Override
+    public void actuallyHurt(DamageSource source, float amount) {
+        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn
+                && playerIn.getInventory().countItem(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get())>0
+                && !this.getItemBySlot(EquipmentSlot.FEET).is(Faiz_Rider_Items.SMARTBUCKLE_V2.get())) {
+            List<LivingEntity> nearbyAllies = this.level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(8), entity ->
+                    (entity instanceof RiotrooperEntity));
+            for (LivingEntity ally : nearbyAllies) ally.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.SMARTBUCKLE_V2.get()));
+        }
+        super.actuallyHurt(source, amount);
     }
 
 

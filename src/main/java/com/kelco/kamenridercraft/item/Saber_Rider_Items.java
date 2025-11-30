@@ -523,7 +523,7 @@ public class Saber_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 50, 0, 0, 0, 0.1);;
+                            player.getZ(), 50, 0, 0, 0, 0.1);
                 }
             }
 					.addSwitchForm(KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW.get()).AddToList(RiderTabs.SABER_TAB_ITEM)

@@ -3,8 +3,6 @@ package com.kelco.kamenridercraft.block.custom;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.entity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
-import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
-import com.kelco.kamenridercraft.world.inventory.NeoDiendriverGuiMenu;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -16,7 +14,6 @@ import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -26,11 +23,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -93,7 +87,7 @@ public class IxaMachineBlock extends BaseEntityBlock {
             if (!pLevel.isClientSide()) {
                 BlockEntity entity = pLevel.getBlockEntity(pPos);
                 if (entity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
-                    ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(ixaMachineBlockEntity, Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixamachine")), pPos);
+                    pPlayer.openMenu(new SimpleMenuProvider(ixaMachineBlockEntity, Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixamachine")), pPos);
                 } else {
                     throw new IllegalStateException("Our Container provider is missing!");
                 }

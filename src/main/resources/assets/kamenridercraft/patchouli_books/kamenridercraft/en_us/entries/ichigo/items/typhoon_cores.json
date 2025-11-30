@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_core_yongo",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
 		},
 		{
 			"type": "patchouli:text",
