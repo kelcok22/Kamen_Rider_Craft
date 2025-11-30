@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rider_ticket_wing",
 			"title": " ",
-			"text": "Found on $(l:den_o/structures/denliner_gouka#sieg_carriage)Sieg's carriage$(/l) on the DenLiner Gouka"
+			"text": "Found inside $(l:den_o/structures/denliner_gouka#sieg_carriage)Sieg's carriage$(/l) on the DenLiner Gouka"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rider_ticket_g",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside the $(l:den_o/structures/denliner_gouka#g_den_o_carriage)G Den-O Carriage$(/l) on the DenLiner Gouka"
 		},
 		{
 			"type": "patchouli:text",

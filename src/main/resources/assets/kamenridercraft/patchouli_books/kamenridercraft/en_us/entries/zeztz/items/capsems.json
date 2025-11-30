@@ -134,6 +134,19 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "erase_capsem",
+        "title": "Erase Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox Knight's $(l:zeztz/devices/knight_invoker)Knight Invoker$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:erase_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "song_capsem",
         "title": "Song Capsem",
         "text": "Appears in:$(li)Kamen Rider Zeztz Theme CD & Zeztz Capsem (Singing Ver) (2025, toyline)"

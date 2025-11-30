@@ -1,0 +1,16 @@
+{
+	"name": "Knight Invoker",
+	"icon": "kamenridercraft:knight_invoker",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/nox_knight)Nox Knight"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/knight_invoker"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+    "components": [
+      {
+        "type": "patchouli:image",
+        "image": "patchouli:textures/gui/crafting.png",
+        "width": 96,
+        "height": 43,
+        "u": 11,
+        "v": 135,
+        "texture_width": 128,
+        "x": 9,
+        "y": 4
+      },
+      {
+        "type": "patchouli:item",
+        "item": "#base",
+        "x": 13,
+        "y": 8
+      },
+      {
+        "type": "patchouli:item",
+        "item": "#modifier",
+        "x": 13,
+        "y": 27
+      },
+      {
+        "type": "patchouli:item",
+        "item": "kamenridercraft:ixa_machine_block",
+        "x": 49,
+        "y": 17
+      },
+      {
+        "type": "patchouli:item",
+        "item": "#result",
+        "link_recipe": true,
+        "x": 85,
+        "y": 17
+      },
+      {
+        "type": "patchouli:text",
+        "text": "#text",
+        "y": 55
+      }
+    ]
+}

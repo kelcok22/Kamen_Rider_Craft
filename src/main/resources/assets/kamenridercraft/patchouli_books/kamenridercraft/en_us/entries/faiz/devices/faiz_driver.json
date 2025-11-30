@@ -10,11 +10,8 @@
 		},
       {
         "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:faiz/faiz_driver"
-      },
-      {
-        "type": "patchouli:crafting",
-        "recipe": "kamenridercraft:faiz/faiz_driver_drive"
+        "recipe": "kamenridercraft:faiz/faiz_driver",
+        "recipe2": "kamenridercraft:faiz/faiz_driver_drive"
       }
 	]
 }
