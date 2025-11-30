@@ -671,7 +671,7 @@ public class Gavv_Rider_Items {
             }.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> PURUJELLY_NOIR_GOCHIZO = ITEMS.register("purujelly_noir_gochizo",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_jellynoir","vram","vrastumgear_belt_jelly",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_jellynoir","vram","vrastumgear_belt_jelly_noir",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)

@@ -256,7 +256,7 @@ public class Modded_item_core {
                     if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
                         enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
                 }
-            }.allowRiderKick().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     //Bakuen no senshi
 
