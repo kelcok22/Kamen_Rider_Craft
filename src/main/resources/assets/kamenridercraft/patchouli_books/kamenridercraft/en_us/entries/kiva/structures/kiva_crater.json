@@ -2,7 +2,7 @@
 	"name": "Kiva Crater",
 	"icon": "kamenridercraft:kiva_logo",
 	"category": "kamenridercraft:kiva/structures",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",
