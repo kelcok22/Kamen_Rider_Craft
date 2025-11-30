@@ -1,15 +1,11 @@
 package com.kelco.kamenridercraft.block.entity;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.block.custom.IxaMachineBlock;
-import com.kelco.kamenridercraft.block.custom.PlinthBlock;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipe;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipeInput;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.world.inventory.IxaMachineBlockGuiMenu;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -30,7 +26,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;

@@ -103,7 +103,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_faiz",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
       }
     ]
 }

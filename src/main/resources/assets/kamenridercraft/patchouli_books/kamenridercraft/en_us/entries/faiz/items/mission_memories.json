@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:faiz_mission_memory",
-			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -150,7 +150,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:neo_alpa_mission_memory",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -163,7 +163,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pyron_mission_memory",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -176,7 +176,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:seeda_mission_memory",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
 		},
       {
         "type": "patchouli:text",

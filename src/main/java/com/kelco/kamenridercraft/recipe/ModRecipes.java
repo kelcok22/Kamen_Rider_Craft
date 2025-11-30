@@ -17,7 +17,7 @@ public class ModRecipes {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<IxaMachineRecipe>> IXA_MACHINE_BLOCK_SERIALIZER =
             SERIALIZERS.register("ixa_machine_block", IxaMachineRecipe.Serializer::new);
     public static final DeferredHolder<RecipeType<?>, RecipeType<IxaMachineRecipe>> IXA_MACHINE_BLOCK_TYPE =
-            TYPES.register("ixa_machine_block", () -> new RecipeType<IxaMachineRecipe>() {
+            TYPES.register("ixa_machine_block", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
                     return "ixa_machine_block";

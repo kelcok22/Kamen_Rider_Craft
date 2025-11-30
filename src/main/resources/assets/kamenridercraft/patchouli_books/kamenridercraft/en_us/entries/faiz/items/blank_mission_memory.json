@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blank_mission_memory",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l)"
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l)$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l)$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
 		}
 	]
 }

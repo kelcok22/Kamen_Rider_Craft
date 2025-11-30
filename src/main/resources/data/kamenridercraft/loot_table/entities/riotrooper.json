@@ -1,60 +1,124 @@
 {
   "type": "minecraft:entity",
   "pools": [
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:faiz_mission_memory"
-		},
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:kaixa_mission_memory"
-		},
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:delta_mission_memory"
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:faiz_axel_mission_memory"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:psyga_mission_memory"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 8,
-		  "name": "kamenridercraft:blank_mission_memory"
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_mission_memory",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 2,
-				"max": 4
-			  }
-			}
-		  ]
-		}
-	  ]
-	}
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:faiz_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kaixa_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:delta_mission_memory"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "kamenridercraft:smartbuckle"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:faiz_axel_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:psyga_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "kamenridercraft:blank_mission_memory"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "kamenridercraft:smartbuckle"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:neo_alpa_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:pyron_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:seeda_mission_memory"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "kamenridercraft:blank_mission_memory"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "kamenridercraft:smartbuckle_v2"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:blank_mission_memory",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

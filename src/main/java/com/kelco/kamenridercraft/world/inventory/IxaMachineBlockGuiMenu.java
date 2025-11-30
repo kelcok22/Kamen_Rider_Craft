@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.entity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.init.ModMenus;
-import einstein.jmc.init.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
