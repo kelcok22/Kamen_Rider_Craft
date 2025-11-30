@@ -1,0 +1,26 @@
+{
+	"name": "Castle Doran",
+	"icon": "kamenridercraft:kiva_logo",
+	"category": "kamenridercraft:kiva/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Castle Doran",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Spawn locations: Birch Forest, Dark Forest, Flower Forest, Forest, Grove, Old Growth Birch Forest, Mushroom Fields$(br2)Chest loot on next page"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/castle_doran.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/castle_doran_2.png"
+			],
+			"title": " "
+		},
+      {
+        "type": "patchouli:text",
+        "text": "Chest loot:$(li)4-10 $(l:kiva/items/fuestle)Fuestles$(/l) (50% x2-3)$(li)4-6 bones (25% x2-3)$(li)2-6 $(l:misc/blocks/fangire_glass)Fangire Glass$(/l) (25% x2-3)$(li)1-2 $(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestles (Kiva)$(/l)$(li)1-2 $(l:kiva/arsenal/garulu_statue)Garulu$(/l), $(l:kiva/arsenal/basshaa_statue)Basshaa$(/l), or $(l:kiva/arsenal/dogga_statue)Dogga Statues$(/l)$(li)1 $(l:misc/items/music_discs#break_the_chain_music_disc)Break the Chain Music Disc$(/l), $(l:kiva/items/fuestles#doranfuestle)???$(/l), or $(l:kiva/items/fuestles#buroonfuestle)???$(/l) (50%)"
+      }
+    ]
+}

@@ -396,17 +396,24 @@
         },
       {
         "type": "patchouli:spotlight",
+        "anchor": "window_planks",
+        "link_recipe": true,
+        "item": "kamenridercraft:window_planks",
+        "text": "Block is currently unobtainable"
+      },
+      {
+        "type": "patchouli:spotlight",
         "anchor": "doran_scale",
         "link_recipe": true,
         "item": "kamenridercraft:doran_scale",
-        "text": "Found inside $(l:fkiva/structures/castle_doran)Castle Doran$(/l)"
+        "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
       },
       {
         "type": "patchouli:spotlight",
         "anchor": "castle_doran_logo",
         "link_recipe": true,
         "item": "kamenridercraft:castle_doran_logo",
-        "text": "Found inside $(l:fkiva/structures/castle_doran)Castle Doran$(/l)"
+        "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
       },
 		{
 			"type": "patchouli:spotlight",

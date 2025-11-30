@@ -8,12 +8,12 @@
 			"type": "patchouli:text",
 			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used as the base item for Ixa's items"
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:fuestlefake",
-			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+        {
+          "type": "kamenridercraft:fuestle_replicator",
+          "base": "kamenridercraft:fuestle",
+          "modifier": "minecraft:iron_nugget",
+          "result": "kamenridercraft:fuestlefake",
+          "text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
 		}
 	]
 }
