@@ -392,19 +392,32 @@
 			"title": " ",
 			"text": "Traded by a novice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
 		},
-		{
-			"type": "patchouli:text",
-			"anchor": "purujelly_gochizo",
-			"title": "Purujelly Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Vram's $(l:gavv/riders/vram#purujelly)Jelly Custom$(/l)"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:purujelly_gochizo",
-			"title": " ",
-			"text": "Traded by a novice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
-		},
+      {
+        "type": "patchouli:text",
+        "anchor": "purujelly_gochizo",
+        "title": "Purujelly Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Vram's $(l:gavv/riders/vram#purujelly)Jelly Custom$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:purujelly_gochizo",
+        "title": " ",
+        "text": "Traded by a novice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "purujelly_noir_gochizo",
+        "title": "Purujelly Noir Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Vram: Route Stomach (2025, TTFC special)$(br2)Used to access Vram's $(l:gavv/riders/vram#purujelly_noir)Jelly Custom Noir$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:purujelly_noir_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "puddinte_gochizo",

@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:den-o/yuuki",
+  "parent": "kamenridercraft:den-o/g_den-o",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
