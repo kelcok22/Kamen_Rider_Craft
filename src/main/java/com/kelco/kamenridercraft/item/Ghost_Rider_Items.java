@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.Monolith;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.ghost.AkariCannonItem;
 import com.kelco.kamenridercraft.item.ghost.BlankGhostEyeconItem;
 import com.kelco.kamenridercraft.item.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -1245,6 +1246,8 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> GAN_GUN_CATCHER_ROD = ITEMS.register("gan_gun_catcher_rod",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
+    public static final DeferredItem<Item> AKARI_CANNON = ITEMS.register("akari_cannon",
+            () -> new AkariCannonItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
