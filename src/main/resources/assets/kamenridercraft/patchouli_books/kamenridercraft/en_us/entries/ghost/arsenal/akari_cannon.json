@@ -1,0 +1,19 @@
+{
+	"name": "Akari Cannon",
+	"icon": "kamenridercraft:akari_cannon",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used by Akari Tsukimura$(br2)Gives nearby $(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l) the Glowing effect for 10 seconds"
+		},
+		{
+          "type": "patchouli:spotlight",
+          "link_recipe": true,
+          "item": "kamenridercraft:akari_cannon",
+          "title": " ",
+          "text": "Item is currently unobtainable"
+		}
+	]
+}

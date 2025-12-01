@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.zi_o;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
+import com.kelco.kamenridercraft.item.BaseItems.CopyFormChangeItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
@@ -46,6 +47,7 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
     public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
+            summon.allowFormChanges(true);
             RiderDriverItem belt = (RiderDriverItem) Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get();
             summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
             summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));
@@ -60,9 +62,7 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
             } else summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.KAENKEN_REKKA.get()));
             for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
-            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
-                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
-            }
+            if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem) key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
                     RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(str));
@@ -72,7 +72,7 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
         
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);
-
+            summon.allowFormChanges(false);
             if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
             player.awardStat(Stats.ITEM_USED.get(this));
 		}

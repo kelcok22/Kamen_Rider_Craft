@@ -1,8 +1,7 @@
-
 {
   "parent": "kamenridercraft:kiva/main",
-  "name": "Kamen Rider Arc",
-  "description": " ",
+  "name": "Kiva Mobs",
+  "description": "Every mob from or relating to the show, Kamen Rider Kiva.",
   "icon": "kamenridercraft:kiva_logo",
   "sortnum": 4
 }

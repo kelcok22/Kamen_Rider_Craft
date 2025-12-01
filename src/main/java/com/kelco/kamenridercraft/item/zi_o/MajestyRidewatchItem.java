@@ -61,7 +61,7 @@ public class MajestyRidewatchItem extends OhmaRidewatchItem {
 				level.addFreshEntity(entity);
             }
         }
-        if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+        if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
         player.awardStat(Stats.ITEM_USED.get(this));
     }
 
