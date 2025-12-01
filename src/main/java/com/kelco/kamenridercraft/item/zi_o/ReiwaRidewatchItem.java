@@ -69,6 +69,7 @@ public class ReiwaRidewatchItem extends BaseItem {
     public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
+            summon.allowFormChanges(true);
             RiderDriverItem belt = (RiderDriverItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelt));
 
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
@@ -93,14 +94,14 @@ public class ReiwaRidewatchItem extends BaseItem {
                 RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonForm));
                 RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
             }
-            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
+            if (key instanceof RiderFormChangeItem formItem) {
                 if (this == Zi_O_Rider_Items.GEATS_RIDEWATCH.get()) {
                     if (key == Geats_Rider_Items.GEATS_CORE_ID.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Modded_item_core.BLANK_FORM.get(), 2);
                     else if (key == Geats_Rider_Items.COMMAND_TWIN_BUCKLE_CANNON.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get(), 3);
                     else if (key == Geats_Rider_Items.UNITE_GRIP.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get(), 3);
                     else if (key == Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()||key == Geats_Rider_Items.ONENESS_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get(), 3);
-                }
-                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
+                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
+                } else formItem.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
             } else if (this == Zi_O_Rider_Items.GEATS_RIDEWATCH.get()) {
                 if (key == Geats_Rider_Items.POWERED_BUILDER_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get(), 3);
                 else if (key == Geats_Rider_Items.FEVER_SLOT_RAISE_BUCKLE.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get(), 3);
@@ -118,8 +119,8 @@ public class ReiwaRidewatchItem extends BaseItem {
         
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);
-
-            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+            summon.allowFormChanges(false);
+            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
             player.awardStat(Stats.ITEM_USED.get(this));
 		}
     }

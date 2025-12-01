@@ -44,6 +44,7 @@ public class LegendWizardRingItem extends BaseItem {
 
                     level.addFreshEntity(copy);
                     copy.bindToPlayer(player);
+                    copy.allowFormChanges(true);
                 }
 				if (!player.isCreative()) {
 					player.getCooldowns().addCooldown(this, 500);

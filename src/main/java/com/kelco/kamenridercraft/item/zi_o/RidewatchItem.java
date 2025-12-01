@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
+import com.kelco.kamenridercraft.item.BaseItems.CopyFormChangeItem;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -70,6 +71,7 @@ public class RidewatchItem extends RiderFormChangeItem {
     public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
+            summon.allowFormChanges(true);
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
 			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.HEAD));
 			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.TORSO));
@@ -94,9 +96,7 @@ public class RidewatchItem extends RiderFormChangeItem {
             }
 
             if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
-            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
-                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
-            }
+            if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem) { key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND); }
             if (this.summonAltForms.containsKey(key)) {
                 for (RiderFormChangeItem item : this.summonAltForms.get(key)) {
                     RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
@@ -105,7 +105,8 @@ public class RidewatchItem extends RiderFormChangeItem {
         
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);
-            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+            summon.allowFormChanges(false);
+            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
             player.awardStat(Stats.ITEM_USED.get(this));
 		}
     }

@@ -125,7 +125,6 @@ public class Zi_O_Rider_Items {
                     .addAltBelt(Decade_Rider_Items.BUILD_CARD.get(), (RiderDriverItem) Decade_Rider_Items.NEO_DECADRIVER.get())
                     .addAltBelt(Decade_Rider_Items.ZI_O_CARD.get(), (RiderDriverItem) Decade_Rider_Items.NEO_DECADRIVER.get())
                     .addAltBelt(Decade_Rider_Items.K_TOUCH_21.get(), (RiderDriverItem) Decade_Rider_Items.NEO_DECADRIVER.get())
-                    .addAltForm(Decade_Rider_Items.DIEND_CARD.get(), (RiderFormChangeItem) Decade_Rider_Items.DECADE_CYAN_CARD.get())
                     .addAltForm(Decade_Rider_Items.REKKA_DAIZANTOU_CARD.get(), (RiderFormChangeItem) Decade_Rider_Items.K_TOUCH.get())
                     .addAltForm(Decade_Rider_Items.G4_GIGANT_CARD.get(), (RiderFormChangeItem) Decade_Rider_Items.DECADE_VIOLENT_EMOTION_CARD.get())
                     .addAltForm(Decade_Rider_Items.RYUKI_STRIKE_VENT_CARD.get(), (RiderFormChangeItem) Decade_Rider_Items.RYUKI_CARD.get())
@@ -386,7 +385,6 @@ public class Zi_O_Rider_Items {
                 }
             }
                     .setSummonBelt((RiderDriverItem) Kuuga_Rider_Items.ARCLE.get())
-                    .addAltForm(Decade_Rider_Items.KUUGA_GROWING_CARD.get(), (RiderFormChangeItem) Decade_Rider_Items.KUUGA_GROWING_AR.get())
                     .addAltWeapon(Kuuga_Rider_Items.KUUGA_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
                     .addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
                     .addAltWeapon(Kuuga_Rider_Items.KUUGA_PEGASUS.get(), Kuuga_Rider_Items.PEGASUS_BOWGUN.get())
@@ -513,7 +511,6 @@ public class Zi_O_Rider_Items {
             }
                     .setSummonBelt((RiderDriverItem) Blade_Rider_Items.BLAYBUCKLE.get())
                     .addSummonWeapon(Blade_Rider_Items.BLAYROUZER.get())
-                    .addAltForm(Modded_item_core.JINRAI_NO_SENSHI.get(), (RiderFormChangeItem) Modded_item_core.JINRAI_NO_SENSHI_BLADE.get())
                     .addAltWeapon(Blade_Rider_Items.EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
                     .addAltWeapon(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
                     .addAltWeapon(Modded_item_core.HERCULESPADER.get(), Modded_item_core.HERCULESPADER_SWORD.get())
@@ -534,7 +531,6 @@ public class Zi_O_Rider_Items {
                     .setSummonBelt((RiderDriverItem) Hibiki_Rider_Items.HIBIKIDRIVER.get())
                     .addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
                     .addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
-                    .addAltForm(Modded_item_core.BAKUEN_NO_SENSHI.get(), (RiderFormChangeItem) Modded_item_core.BAKUEN_NO_SENSHI_HIBIKI.get())
                     .addAltForm(Hibiki_Rider_Items.ARMED_SABER.get(), (RiderFormChangeItem) Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get())
                     .addAltWeapon(Hibiki_Rider_Items.ARMED_SABER.get(), Hibiki_Rider_Items.ARMED_SABER.get())
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -573,7 +569,6 @@ public class Zi_O_Rider_Items {
                     .setSummonBelt((RiderDriverItem) Den_O_Rider_Items.DEN_O_BELT.get())
                     .addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get())
                     .addAltForm(Den_O_Rider_Items.DENKAMEN_SWORD.get(), (RiderFormChangeItem) Den_O_Rider_Items.DEN_O_LINER_FORM.get())
-                    .addAltForm(Decade_Rider_Items.DEN_O_CLIMAX_CARD.get(), (RiderFormChangeItem) Den_O_Rider_Items.SUPER_KTAROS.get())
                     .addAltWeapon(Den_O_Rider_Items.RIDER_TICKET.get(), Items.AIR)
                     .addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_ROD.get(), Den_O_Rider_Items.DEN_GASHER_ROD.get())
                     .addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_AX.get(), Den_O_Rider_Items.DEN_GASHER_AX.get())
@@ -597,15 +592,11 @@ public class Zi_O_Rider_Items {
                 }
             }
                     .setSummonBelt((RiderDriverItem) Kiva_Rider_Items.KIVAT_BELT.get())
-                    .addAltForm(Decade_Rider_Items.KIVA_DOGABAKI_CARD.get(), (RiderFormChangeItem) Kiva_Rider_Items.DOGABAKI.get())
-                    .addAltForm(Kiva_Rider_Items.ZANVAT_SWORD.get(), (RiderFormChangeItem) Kiva_Rider_Items.DOGABAKI_EMPEROR.get())
                     .addAltWeapon(Kiva_Rider_Items.GARULU_FUESTLE.get(), Kiva_Rider_Items.GARULU_SABER.get())
                     .addAltWeapon(Kiva_Rider_Items.BASSHAA_FUESTLE.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get())
                     .addAltWeapon(Kiva_Rider_Items.DOGGA_FUESTLE.get(), Kiva_Rider_Items.DOGGA_HAMMER.get())
-                    .addAltWeapon(Decade_Rider_Items.KIVA_DOGABAKI_CARD.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get(), Kiva_Rider_Items.GARULU_SABER.get())
                     .addAltWeapon(Kiva_Rider_Items.TATSULOT.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
                     .addAltWeapon(Kiva_Rider_Items.KIVATTE_FUESTLE.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
-                    .addAltWeapon(Kiva_Rider_Items.ZANVAT_SWORD.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get(), Kiva_Rider_Items.GARULU_SABER.get())
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> W_RIDEWATCH = ITEMS.register("w_ridewatch",
@@ -631,7 +622,6 @@ public class Zi_O_Rider_Items {
                     .addAltForm(W_Rider_Items.METAL_MEMORY.get(), (RiderFormChangeItem) W_Rider_Items.HEAT_MEMORY.get())
                     .addAltForm(W_Rider_Items.LUNA_MEMORY.get(), (RiderFormChangeItem) W_Rider_Items.TRIGGER_MEMORY.get())
                     .addAltForm(W_Rider_Items.TRIGGER_MEMORY.get(), (RiderFormChangeItem) W_Rider_Items.LUNA_MEMORY.get())
-                    .addAltForm(W_Rider_Items.SKULL_MEMORY.get(), (RiderFormChangeItem) W_Rider_Items.CYCLONE_SKULL_MEMORY.get())
                     .addAltWeapon(W_Rider_Items.HEAT_MEMORY.get(), W_Rider_Items.METAL_SHAFT.get())
                     .addAltWeapon(W_Rider_Items.METAL_MEMORY.get(), W_Rider_Items.METAL_SHAFT.get())
                     .addAltWeapon(W_Rider_Items.LUNA_MEMORY.get(), W_Rider_Items.TRIGGER_MAGNUM.get())
@@ -803,16 +793,8 @@ public class Zi_O_Rider_Items {
                 }
             }
                     .setSummonBelt((RiderDriverItem) Fourze_Rider_Items.FOURZE_DRIVER.get())
-                    .addAltForm(Fourze_Rider_Items.ELEK_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_ELEK_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.FIRE_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_FIRE_STATES.get())
                     .addAltForm(Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get(), (RiderFormChangeItem) Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_MAGNET_STATES.get())
                     .addAltForm(Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get(), (RiderFormChangeItem) Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_MAGNET_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.COSMIC_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_COSMIC_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.ROCKET_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_ROCKET_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.SUPER_LAUNCHER_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_LAUNCHER_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.CLEAR_DRILL_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_ROCKET_DRILL_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.FUSION_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FUSION_ASTROSWITCH_OG.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_FUSION_STATES.get())
-                    .addAltForm(Fourze_Rider_Items.NADESHIKO_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FUSION_ASTROSWITCH.get(), (RiderFormChangeItem) Fourze_Rider_Items.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get())
                     .addAltWeapon(Fourze_Rider_Items.ELEK_ASTROSWITCH.get(), Fourze_Rider_Items.BILLY_THE_ROD.get())
                     .addAltWeapon(Fourze_Rider_Items.SHIELD_ASTROSWITCH.get(), Fourze_Rider_Items.SHIELD_MODULE.get())
                     .addAltWeapon(Fourze_Rider_Items.FIRE_ASTROSWITCH.get(), Fourze_Rider_Items.HEE_HACKGUN.get())
@@ -842,6 +824,7 @@ public class Zi_O_Rider_Items {
                     .addAltForm(Wizard_Rider_Items.FALCO_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.FALCO_RING_WIZARD.get())
                     .addAltForm(Wizard_Rider_Items.BUFFA_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.BUFFA_RING_WIZARD.get())
                     .addAltWeapon(Wizard_Rider_Items.INFINITY_WIZARD_RING.get(), Wizard_Rider_Items.AXCALIBUR.get())
+                    .addAltWeapon(Wizard_Rider_Items.FINISH_STRIKE_RING.get(), Wizard_Rider_Items.AXCALIBUR.get())
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_RIDEWATCH = ITEMS.register("gaim_ridewatch",
@@ -872,17 +855,11 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Gaim_Rider_Items.DURIAN_LOCKSEED.get(), Gaim_Rider_Items.DURI_NOKO.get(), Gaim_Rider_Items.DURI_NOKO.get())
                     .addAltWeapon(Gaim_Rider_Items.KIWI_LOCKSEED.get(), Gaim_Rider_Items.KIWI_GEKIRIN.get())
                     .addAltWeapon(Gaim_Rider_Items.LEMON_LOCKSEED.get(), Gaim_Rider_Items.LEMON_RAPIER.get())
-                    .addAltForm(Gaim_Rider_Items.LEMON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_LEMON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
                     .addAltWeapon(Gaim_Rider_Items.LEMON_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
-                    .addAltForm(Gaim_Rider_Items.CHERRY_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_CHERRY_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
                     .addAltWeapon(Gaim_Rider_Items.CHERRY_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
-                    .addAltForm(Gaim_Rider_Items.PEACH_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_PEACH_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
                     .addAltWeapon(Gaim_Rider_Items.PEACH_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
-                    .addAltForm(Gaim_Rider_Items.MELON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_MELON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
                     .addAltWeapon(Gaim_Rider_Items.MELON_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
-                    .addAltForm(Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
                     .addAltWeapon(Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
-                    .addAltForm(Gaim_Rider_Items.MARRON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
                     .addAltWeapon(Gaim_Rider_Items.MARRON_ENERGY_LOCKSEED.get(), Items.AIR)
                     .addAltWeapon(Gaim_Rider_Items.KACHIDOKI_LOCKSEED.get(), Gaim_Rider_Items.DJ_GUN.get())
                     .addAltWeapon(Gaim_Rider_Items.KIWAMI_LOCKSEED.get(), Gaim_Rider_Items.DJ_GUN_TAIKEN_MODE.get())
@@ -891,7 +868,6 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Gaim_Rider_Items.GOLDEN_RINGO_LOCKSEED.get(), Gaim_Rider_Items.SWORD_BRINGER.get())
                     .addAltWeapon(Gaim_Rider_Items.SILVER_RINGO_LOCKSEED.get(), Gaim_Rider_Items.SOUGINJOU.get())
                     .addAltWeapon(Gaim_Rider_Items.BLACK_RINGO_LOCKSEED.get(), Gaim_Rider_Items.DARK_DAIDAIMARU.get())
-                    .addAltForm(Gaim_Rider_Items.FORBIBBEN_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.FORBIBBEN_LOCKSEED_BASE.get())
                     .addAltWeapon(Gaim_Rider_Items.FORBIBBEN_LOCKSEED.get(), Gaim_Rider_Items.APPLE_REFLECTER.get())
                     .addAltWeapon(Gaim_Rider_Items.MAJA_LOCKSEED.get(), Gaim_Rider_Items.MAJAS_SWORD.get())
                     .addAltWeapon(Gaim_Rider_Items.KABI_ORANGE_LOCKSEED.get(), Gaim_Rider_Items.KABI_DAIDAIMARU.get())
@@ -1024,18 +1000,10 @@ public class Zi_O_Rider_Items {
             }
                     .setSummonBelt((RiderDriverItem) Ghost_Rider_Items.GHOST_DRIVER.get())
                     .addSummonWeapon(Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
-                    .addAltForm(Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.BOOST_DAMASHII.get())
                     .addAltWeapon(Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
                     .addAltForm(Ghost_Rider_Items.TOUSAN_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.BOOST_DAMASHII.get())
                     .addAltWeapon(Ghost_Rider_Items.TOUSAN_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
                     .addAltBelt(Ghost_Rider_Items.EYECON_DRIVER_G.get(), (RiderDriverItem) Ghost_Rider_Items.EYECON_DRIVER_G.get())
-                    .addAltForm(Ghost_Rider_Items.MUGEN_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.MUGEN_DAMASHII.get(), (RiderFormChangeItem) Ghost_Rider_Items.MUGEN_GHOST_EYECON.get())
-                    .addAltForm(Ghost_Rider_Items.SPECTER_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.SPECTER_DAMASHII.get())
-                    .addAltForm(Ghost_Rider_Items.NECROM_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.NECROM_DAMASHII.get())
-                    .addAltForm(Ghost_Rider_Items.DARK_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.DARK_DAMASHII.get())
-                    .addAltForm(Ghost_Rider_Items.ZERO_SPECTER_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.ZERO_SPECTER_DAMASHII.get())
-                    .addAltForm(Ghost_Rider_Items.PROTO_ORE_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.PROTO_ORE_DAMASHII.get())
-                    .addAltForm(Ghost_Rider_Items.KANON_SPECTER_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.KANON_SPECTER_DAMASHII.get())
                     .addAltWeapon(Ghost_Rider_Items.MUSASHI_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_NITOURYU.get(), Ghost_Rider_Items.GAN_GUN_SABER_NITOURYU_2.get())
                     .addAltWeapon(Ghost_Rider_Items.EDISON_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_GUN.get())
                     .addAltWeapon(Ghost_Rider_Items.ROBIN_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_CONDOR_DENWOR.get())
@@ -1062,7 +1030,6 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Ghost_Rider_Items.WIZARD_GHOST_EYECON.get(), Wizard_Rider_Items.WIZARSWORDSGUN.get())
                     .addAltWeapon(Ghost_Rider_Items.GAIM_GHOST_EYECON.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
                     .addAltWeapon(Ghost_Rider_Items.DRIVE_GHOST_EYECON.get(), Drive_Rider_Items.HANDLE_KEN.get(), Drive_Rider_Items.DOOR_JU.get())
-                    .addAltForm(Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get(), (RiderFormChangeItem) Ghost_Rider_Items.FOURTYFIVE_HEISEI_DAMASHII.get(), (RiderFormChangeItem) Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get())
                     .IsGlowing().IsBeltGlowing().addAlternative(GHOST_RIDEWATCH_ZI_O.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_R = ITEMS.register("decade_ex_aid_ridewatch_r",
@@ -1129,9 +1096,10 @@ public class Zi_O_Rider_Items {
                     .addAltForm(Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT_LV_1.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get(), Items.AIR)
                     .addAltWeapon(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), Items.AIR)
-                    .addAltForm(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHA_TROPHY.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get())
+                    .addAltForm(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHA_TROPHY.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT.get())
                     .addAltForm(Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
+                    .addAltForm(Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.MAXIMUM_MIGHTY_X_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.HYPER_MUTEKI_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.KAIGEN_GHOST_GASHAT.get(), Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
@@ -1300,22 +1268,7 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon("kamenridercraft:shining_assault_hopper_progrisekey", "kamenridercraft:authorise_buster")
                     .addAltWeapon("kamenridercraft:metalcluster_hopper_progrisekey", "kamenridercraft:progrise_hopper_blade")
                     .addAltBelt("kamenridercraft:zero_two_progrisekey", "kamenridercraft:hiden_zero_two_driver")
-                    .addAltWeapon("kamenridercraft:zero_two_progrisekey", "kamenridercraft:progrise_hopper_blade_naginata")
-                    .addAltForm("kamenridercraft:crushing_buffalo_progrisekey", "kamenridercraft:crushing_buffalo_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:storming_penguin_progrisekey", "kamenridercraft:storming_penguin_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:splashing_whale_progrisekey", "kamenridercraft:splashing_whale_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:dynamaiting_lion_progrisekey", "kamenridercraft:dynamaiting_lion_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:scouting_panda_progrisekey", "kamenridercraft:scouting_panda_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:invading_horseshoe_crab_progrisekey", "kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:shooting_wolf_progrisekey", "kamenridercraft:shooting_wolf_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:punching_kong_progrisekey", "kamenridercraft:punching_kong_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:rushing_cheetah_progrisekey", "kamenridercraft:rushing_cheetah_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:lightning_hornet_progrisekey", "kamenridercraft:lightning_hornet_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:fighting_jackal_progrisekey", "kamenridercraft:fighting_jackal_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:sting_scorpion_progrisekey", "kamenridercraft:sting_scorpion_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:flying_falcon_progrisekey", "kamenridercraft:flying_falcon_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:burning_falcon_progrisekey", "kamenridercraft:burning_falcon_progrisekey_zero_one")
-                    .addAltForm("kamenridercraft:amazing_caucasus_progrisekey", "kamenridercraft:amazing_caucasus_progrisekey_zero_one").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:zero_two_progrisekey", "kamenridercraft:progrise_hopper_blade_naginata").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SABER_RIDEWATCH = ITEMS.register("saber_ridewatch",
             () -> new SaberRidewatchItem(new Item.Properties(), 0, "_decade_saber", "zi_o", "ziku_driver_zi_o_belt_decade_saber",
@@ -1351,28 +1304,9 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> VICE_RIDEWATCH = ITEMS.register("vice_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:vice_belt").addSummonWeapon("kamenridercraft:osutoderu_hammer_50")
-                    .addAltForm("kamenridercraft:barid_rex_vistamp", "kamenridercraft:barid_rex_vistamp_vice")
                     .addAltWeapon("kamenridercraft:barid_rex_vistamp", "kamenridercraft:barid_shield")
-                    .addAltForm("kamenridercraft:volcano_vistamp", "kamenridercraft:volcano_vistamp_vice")
                     .addAltWeapon("kamenridercraft:volcano_vistamp", "kamenridercraft:barid_shield")
-                    .addAltForm("kamenridercraft:giffard_rex_vistamp", "kamenridercraft:giffard_rex_vistamp_vice")
                     .addAltWeapon("kamenridercraft:giffard_rex_vistamp", "kamenridercraft:revice_lasher")
-                    .addAltForm("kamenridercraft:gold_spino_vistamp", "kamenridercraft:gold_spino_vistamp_vice")
-                    .addAltForm("kamenridercraft:eagle_vistamp", "kamenridercraft:eagle_vistamp_vice")
-                    .addAltForm("kamenridercraft:mammoth_vistamp", "kamenridercraft:mammoth_vistamp_vice")
-                    .addAltForm("kamenridercraft:megalodon_vistamp", "kamenridercraft:megalodon_vistamp_vice")
-                    .addAltForm("kamenridercraft:lion_vistamp", "kamenridercraft:lion_vistamp_vice")
-                    .addAltForm("kamenridercraft:jackal_vistamp", "kamenridercraft:jackal_vistamp_vice")
-                    .addAltForm("kamenridercraft:kong_vistamp", "kamenridercraft:kong_vistamp_vice")
-                    .addAltForm("kamenridercraft:kamakiri_vistamp", "kamenridercraft:kamakiri_vistamp_vice")
-                    .addAltForm("kamenridercraft:brachio_vistamp", "kamenridercraft:brachio_vistamp_vice")
-                    .addAltForm("kamenridercraft:neo_batta_vistamp", "kamenridercraft:neo_batta_vistamp_vice")
-                    .addAltForm("kamenridercraft:kangaroo_vistamp", "kamenridercraft:kangaroo_vistamp_vice")
-                    .addAltForm("kamenridercraft:kirin_vistamp", "kamenridercraft:kirin_vistamp_vice")
-                    .addAltForm("kamenridercraft:niwatori_vistamp", "kamenridercraft:niwatori_vistamp_vice")
-                    .addAltForm("kamenridercraft:funkorogashi_vistamp", "kamenridercraft:funkorogashi_vistamp_vice")
-                    .addAltForm("kamenridercraft:condor_vistamp", "kamenridercraft:condor_vistamp_vice")
-                    .addAltForm("kamenridercraft:white_leo_vistamp", "kamenridercraft:white_leo_vistamp_vice")
                     .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GEATS_RIDEWATCH = ITEMS.register("geats_ridewatch",
@@ -1382,7 +1316,6 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon("kamenridercraft:ninja_raise_buckle", "kamenridercraft:ninja_dueler")
                     .addAltWeapon("kamenridercraft:beat_raise_buckle", "kamenridercraft:beat_axe")
                     .addAltWeapon("kamenridercraft:zombie_raise_buckle", "kamenridercraft:zombie_breaker")
-                    .addAltForm("kamenridercraft:fantasy_raise_buckle", "kamenridercraft:fantasy_raise_buckle_gya_go")
                     .addAltWeapon("kamenridercraft:fantasy_raise_buckle", "minecraft:air")
                     .addAltWeapon("kamenridercraft:arrow_raise_buckle", "kamenridercraft:raise_arrow")
                     .addAltWeapon("kamenridercraft:water_raise_buckle", "kamenridercraft:raise_water")
@@ -1395,7 +1328,6 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon("kamenridercraft:fever_slot_raise_buckle", "kamenridercraft:magnum_shooter_40x_rifle")
                     .addAltForm("kamenridercraft:fever_slot_raise_buckle", "kamenridercraft:magnum_raise_buckle_fever")
                     .addAltWeapon("kamenridercraft:powered_builder_raise_buckle", "kamenridercraft:gigant_blaster")
-                    .addAltForm("kamenridercraft:powered_builder_raise_buckle", "kamenridercraft:powered_builder_raise_buckle_geats")
                     .addAltWeapon("kamenridercraft:command_twin_buckle_jet", "kamenridercraft:raising_sword")
                     .addAltWeapon("kamenridercraft:command_twin_buckle_cannon", "kamenridercraft:raising_sword")
                     .addAltWeapon("kamenridercraft:boost_mkii_raise_buckle", "minecraft:air")
@@ -1493,8 +1425,12 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> ZEZTZ_RIDEWATCH = ITEMS.register("zeztz_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:zeztz_driver").addSummonWeapon("kamenridercraft:breakam_zeztzer_sword")
                     .addAltWeapon("kamenridercraft:stream_capsem", "kamenridercraft:breakam_zeztzer_gun")
+                    .addAltWeapon("kamenridercraft:machinery_capsem", "kamenridercraft:breakam_zeztzer_gun")
+                    .addAltWeapon("kamenridercraft:projection_capsem", "kamenridercraft:breakam_zeztzer_gun")
                     .addAltWeapon("kamenridercraft:recovery_capsem", "kamenridercraft:breakam_zeztzer_axe")
-                    .addAltWeapon("kamenridercraft:wonder_capsem", "kamenridercraft:breakam_zeztzer_scythe").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:barrier_capsem", "kamenridercraft:breakam_zeztzer_axe")
+                    .addAltWeapon("kamenridercraft:wonder_capsem", "kamenridercraft:breakam_zeztzer_scythe")
+                    .addAltWeapon("kamenridercraft:gravity_capsem", "kamenridercraft:breakam_zeztzer_scythe").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) Reboot_Rider_Items.AMAZONS_DRIVER_ALPHA.get())
@@ -1521,7 +1457,6 @@ public class Zi_O_Rider_Items {
                     .setSummonBelt((RiderDriverItem) Ex_Aid_Rider_Items.GAMER_DRIVER_GENM.get())
                     .setSummonForm((RiderFormChangeItem) Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT.get())
                     .addSummonWeapon(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get())
-                    .addAltForm(Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), Items.AIR)
                     .addAltWeapon(Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), Items.AIR)
                     .addAltBelt(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get(), (RiderDriverItem) Ex_Aid_Rider_Items.GASHACON_BUGVISOR_GENM.get())
@@ -1728,7 +1663,6 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> BEAST_RIDEWATCH = ITEMS.register("beast_ridewatch",
             () -> ((MajestyRidewatchItem) new MajestyRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) Wizard_Rider_Items.BEAST_DRIVER.get()).addSummonWeapon(Wizard_Rider_Items.DICE_SABER.get())
-                    .addAltForm(Wizard_Rider_Items.LAND_DRAGON_WIZARD_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.LAND_DRAGON_WIZARD_RING_BEAST.get())
                     .addAltWeapon(Wizard_Rider_Items.HYPER_RING.get(), Wizard_Rider_Items.MIRAGE_MAGNUM.get()))
                     .addMajestyWeapon(Wizard_Rider_Items.DICE_SABER.get())
                     .addAltMajestyWeapon(Wizard_Rider_Items.HYPER_RING.get(), Wizard_Rider_Items.MIRAGE_MAGNUM.get())
@@ -1739,9 +1673,7 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get(), Drive_Rider_Items.RUMBLE_SMASHER.get())
                     .addAltForm(Drive_Rider_Items.SHIFT_DEAD_HEAT.get(), (RiderFormChangeItem) Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get())
                     .addAltForm(Drive_Rider_Items.SHIFT_MAD_DOCTOR.get(), (RiderFormChangeItem) Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get())
-                    .addAltForm(Drive_Rider_Items.SIGNAL_CHASER.get(), (RiderFormChangeItem) Drive_Rider_Items.SIGNAL_CHASER_MACH.get())
-                    .addAltWeapon(Drive_Rider_Items.SIGNAL_CHASER.get(), Drive_Rider_Items.SHINGOU_AX.get())
-                    .addAltForm(Drive_Rider_Items.RHINO_SUPER_VIRAL_CORE.get(), (RiderFormChangeItem) Drive_Rider_Items.SHIFT_VIRAL_CORE.get()))
+                    .addAltWeapon(Drive_Rider_Items.SIGNAL_CHASER.get(), Drive_Rider_Items.SHINGOU_AX.get()))
                     .addMajestyWeapon(Drive_Rider_Items.ZENRIN_SHOOTER.get())
                     .addAltMajestyWeapon(Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get(), Drive_Rider_Items.RUMBLE_SMASHER.get())
                     .addAltMajestyWeapon(Drive_Rider_Items.SIGNAL_CHASER.get(), Drive_Rider_Items.SHINGOU_AX.get())
@@ -1752,7 +1684,6 @@ public class Zi_O_Rider_Items {
                     .addAltBelt(Build_Rider_Items.DRAGON_SCLASH_JELLY.get(), (RiderDriverItem) Build_Rider_Items.SCLASH_DRIVER.get())
                     .addAltWeapon(Build_Rider_Items.DRAGON_SCLASH_JELLY.get(), Build_Rider_Items.TWIN_BREAKER.get())
                     .addAltBelt(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), (RiderDriverItem) Build_Rider_Items.SCLASH_DRIVER.get())
-                    .addAltForm(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), (RiderFormChangeItem) Build_Rider_Items.TAKA_FULL_BOTTLE_CROSS_Z.get())
                     .addAltWeapon(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), Build_Rider_Items.TWIN_BREAKER.get())
                     .addAltWeapon(Build_Rider_Items.DRAGON_MAGMA_FULL_BOTTLE.get(), Build_Rider_Items.MAGMA_KNUCKLE.get()))
                     .addMajestyWeapon(Build_Rider_Items.BEAT_CROSSER.get())

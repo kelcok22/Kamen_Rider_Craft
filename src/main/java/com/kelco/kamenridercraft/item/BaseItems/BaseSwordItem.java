@@ -8,8 +8,10 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
@@ -107,7 +109,11 @@ public class BaseSwordItem extends SwordItem {
         return ((BaseSwordItem)stack.getItem()).craftingRemainingItem!=null;
     }
 
-
+    @Override
+    public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand) {
+        if (Form_item) FormChangeItem.interactLivingEntity(stack, player, interactionTarget, usedHand);
+        return InteractionResult.PASS;
+    }
 
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand p_41130_) {
 		ItemStack itemstack = player.getItemInHand(p_41130_);

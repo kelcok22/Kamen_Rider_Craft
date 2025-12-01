@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
@@ -32,6 +33,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
 
 public class RiderSummonEntity extends BaseSummonEntity {
+    private boolean canChangeForms = false;
 	public RiderSummonEntity(EntityType<? extends RiderSummonEntity> type, Level level) {
 		super(type, level);
 		NAME="rider_summon";
@@ -42,6 +44,23 @@ public class RiderSummonEntity extends BaseSummonEntity {
 		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.2F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, -10.0D).add(Attributes.ATTACK_DAMAGE, 1.0D);
 	}
 
+    public void addAdditionalSaveData(CompoundTag p_30418_) {
+        super.addAdditionalSaveData(p_30418_);
+        p_30418_.putBoolean("CanChangeForms", this.canChangeForms);
+    }
+
+    public void readAdditionalSaveData(CompoundTag p_30402_) {
+        super.readAdditionalSaveData(p_30402_);
+        this.canChangeForms = p_30402_.getBoolean("CanChangeForms");
+    }
+
+    public boolean canChangeForms() {
+        return this.canChangeForms;
+    }
+
+    public void allowFormChanges(boolean setting) {
+        this.canChangeForms = setting;
+    }
 
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));

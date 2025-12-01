@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
+import com.kelco.kamenridercraft.item.BaseItems.CopyFormChangeItem;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -76,6 +77,7 @@ public class OhmaRidewatchItem extends BaseItem {
         } else {
 		    GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		    if (summon != null) {
+                summon.allowFormChanges(true);
 		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
                 if (this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get()) {
 		    	    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_head"))));
@@ -104,9 +106,7 @@ public class OhmaRidewatchItem extends BaseItem {
                     for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
                     if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
-                    if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
-                        RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
-                    }
+                    if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem) key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
                     if (this.summonAltForms.containsKey(key)) {
                         for (RiderFormChangeItem item : this.summonAltForms.get(key)) {
                             RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
@@ -116,7 +116,8 @@ public class OhmaRidewatchItem extends BaseItem {
             
 		    	level.addFreshEntity(summon);
 		    	summon.bindToPlayer(player);
-                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                summon.allowFormChanges(false);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 		    }
         }

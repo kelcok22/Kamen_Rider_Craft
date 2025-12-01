@@ -109,9 +109,9 @@ public class oScannerItem extends BaseItem {
 		&& belt == OOO_Rider_Items.OOODRIVER.get() && belt.isTransformed(p_41129_)){
 			ItemStack Belt = p_41129_.getItemBySlot(EquipmentSlot.FEET);
 			
-			if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_kuwagata") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_kamakiri") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_batta")) {
+			if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.KUWAGATA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.KAMAKIRI_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.BATTA_MEDAL.get()) {
 				if (!p_41129_.isShiftKeyDown()) {
 					RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(p_41128_);
 					if (summon != null) {
@@ -176,9 +176,9 @@ public class oScannerItem extends BaseItem {
 						p_41129_.awardStat(Stats.ITEM_USED.get(this));
 					}
 				}
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_lion") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_tora") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_cheetah")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.LION_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.TORA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.CHEETAH_MEDAL.get()) {
         		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 				List<LivingEntity> toIgnite = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(3), entity ->
 																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
@@ -194,9 +194,9 @@ public class oScannerItem extends BaseItem {
 				p_41129_.playSound(SoundEvents.FIRECHARGE_USE, 1.0F, (p_41128_.getRandom().nextFloat() - p_41128_.getRandom().nextFloat()) * 0.2F + 1.0F);
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_sai") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_gorilla") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_zou")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.SAI_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.GORILLA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.ZOU_MEDAL.get()) {
         		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 				List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(5), entity ->
 																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
@@ -208,9 +208,9 @@ public class oScannerItem extends BaseItem {
 				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.GUST_EMITTER_LARGE, playerPos.x, playerPos.y, playerPos.z, 2, 1.5, 0.5, 1.5, 0.01);
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_shachi") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_unagi") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_tako")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.SHACHI_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.UNAGI_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.TAKO_MEDAL.get()) {
         		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 				List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(5), entity ->
 																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
@@ -222,9 +222,9 @@ public class oScannerItem extends BaseItem {
 				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.ELECTRIC_SPARK, playerPos.x, playerPos.y, playerPos.z, 200, 1.5, 1.5, 1.5, 0.01);
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_taka") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_kujaku") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_condor")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.TAKA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.KUJAKU_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.CONDOR_MEDAL.get()) {
 
 				LargeFireball largefireball = new LargeFireball(p_41129_.level(), p_41129_, p_41129_.getLookAngle().normalize(), 1);
 				largefireball.setPos(largefireball.getX(), p_41129_.getY(0.5) + 0.5, largefireball.getZ());
@@ -232,9 +232,9 @@ public class oScannerItem extends BaseItem {
 
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_ptera") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_tricera") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_tyranno")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.PTERA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.TRICERA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.TYRANNO_MEDAL.get()) {
         		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 				List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(5), entity ->
 																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
@@ -247,9 +247,9 @@ public class oScannerItem extends BaseItem {
 				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.SNOWFLAKE, playerPos.x, playerPos.y, playerPos.z, 50, 1.5, 0.5, 1.5, 0.01);
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_cobra") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_kame") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_wani")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.COBRA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.KAME_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.WANI_MEDAL.get()) {
         		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 
 				p_41129_.removeEffect(MobEffects.POISON);
@@ -257,9 +257,9 @@ public class oScannerItem extends BaseItem {
 				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ColorParticleOption.create(ParticleTypes.ENTITY_EFFECT, 1.0F, 0.8F, 0.5F), playerPos.x, playerPos.y, playerPos.z, 25, 0.5, 0.5, 0.5, 0.01);
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_super_taka") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_super_tora") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_super_batta")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.SUPER_TAKA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.SUPER_TORA_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.SUPER_BATTA_MEDAL.get()) {
         		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 
 				p_41129_.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
@@ -268,9 +268,9 @@ public class oScannerItem extends BaseItem {
 				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.ELECTRIC_SPARK, playerPos.x, playerPos.y, playerPos.z, 25, 0.5, 0.5, 0.5, 0.01);
 				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
 				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_taka_eternity") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_kujaku_eternity") &
-                    Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_condor_eternity")) {
+			} else if (RiderDriverItem.get_Form_Item(Belt, 1) == OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 2) == OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get() &&
+                    RiderDriverItem.get_Form_Item(Belt, 3) == OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get()) {
 
 				LargeFireball largefireball = new LargeFireball(p_41129_.level(), p_41129_, p_41129_.getLookAngle().normalize(), 3);
 				largefireball.setPos(largefireball.getX(), p_41129_.getY(0.5) + 0.5, largefireball.getZ());

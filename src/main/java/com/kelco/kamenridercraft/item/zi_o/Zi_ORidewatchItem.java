@@ -52,6 +52,7 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
     public void summon(Level level, Player player) {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
+            summon.allowFormChanges(true);
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
 			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get()));
 			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
@@ -67,10 +68,9 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
                 if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
             }
 
-            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get())
-            && formItem != Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get() && formItem != Zi_O_Rider_Items.WOZ_RIDEWATCH.get() && formItem != Zi_O_Rider_Items.SABER_RIDEWATCH.get()
-            && (formItem != Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get() || player.getItemBySlot(EquipmentSlot.FEET).getItem() == Zi_O_Rider_Items.OHMA_ZI_O_DRIVER.get())) {
-                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, 1);
+            if (key instanceof RiderFormChangeItem formItem && formItem != Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get() && formItem != Zi_O_Rider_Items.WOZ_RIDEWATCH.get()
+            && formItem != Zi_O_Rider_Items.SABER_RIDEWATCH.get() && (formItem != Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get() || player.getItemBySlot(EquipmentSlot.FEET).getItem() == Zi_O_Rider_Items.OHMA_ZI_O_DRIVER.get())) {
+                formItem.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
                 if (formItem == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.SAIKYO_ZIKAN_GIRADE.get()));
             }
             if (this.summonAltForms.containsKey(key.toString())) {
@@ -81,7 +81,6 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
         
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);
-
             if (key == Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get()) {
 		        GrandSummonEntity summon2 = MobsCore.GRAND_SUMMON.get().create(level);
 		        if (summon2 != null) {
@@ -96,7 +95,8 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
 		        	summon2.bindToPlayer(player);
 		        }
             }
-            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+            summon.allowFormChanges(false);
+            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
             player.awardStat(Stats.ITEM_USED.get(this));
 		}
     }

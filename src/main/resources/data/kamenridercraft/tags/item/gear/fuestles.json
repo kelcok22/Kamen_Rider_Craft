@@ -1,12 +1,22 @@
 {
   "values": [
-	"#kamenridercraft:gear/form_items/kiva",
+    "kamenridercraft:wakeupfuestle",
+    "kamenridercraft:garulufuestle",
+    "kamenridercraft:basshaafuestle",
+    "kamenridercraft:doggafuestle",
+    "kamenridercraft:kiva_says_fuestle",
+    "kamenridercraft:keyfuestle",
 	"#kamenridercraft:gear/form_items/ixa",
 	"kamenridercraft:sagafuestle",
 	"kamenridercraft:darkwakeupfuestle",
 	"kamenridercraft:newwakeupfuestle",
 	"kamenridercraft:keyfuestle",
 	"kamenridercraft:kivalafuestle",
-	"kamenridercraft:caliburfuestle"
+    "kamenridercraft:caliburfuestle",
+    "kamenridercraft:doranfuestle",
+    "kamenridercraft:buroonfuestle",
+    "kamenridercraft:fakegarulufuestle",
+    "kamenridercraft:fakebasshaafuestle",
+    "kamenridercraft:fakedoggafuestle"
   ]
 }
