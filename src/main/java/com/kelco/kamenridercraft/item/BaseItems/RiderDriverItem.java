@@ -160,7 +160,7 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getBoolean("rider_kicking")) {
                 tag.putInt("rider_kick_tick",tag.getInt("rider_kick_tick")+1);
                 if (tag.getInt("rider_kick_tick") == 1) {
-                    player.push(0, 1, 0);
+                    player.push(0, 1.25, 0);
                     player.hurtMarked = true;
                     level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
                 } else if (tag.getInt("rider_kick_tick") == 21) {
@@ -181,6 +181,7 @@ public class RiderDriverItem extends RiderArmorItem {
                         this.OnRiderKickHit(stack, player, enemy);
                         level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
                         if (enemy.getHealth() < enemy.getMaxHealth()/3) enemy.addEffect(new MobEffectInstance(Effect_core.EXPLODE, 40, 3, false, true));
+                        tag.putInt("rider_kick_tick",41);
                     }
 
                     if (player.onGround() || player.isInWater() || tag.getInt("rider_kick_tick")>=41) {
