@@ -65,9 +65,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public Boolean Has_basic_belt_info = true;
     public Boolean Show_belt_form_info = true;
 
-    protected boolean riderKicking = false;
-    private int riderKickCooldown = 0;
-    private int riderKickTick = 0;
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
@@ -110,6 +107,14 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         return false;
     }
+    public static boolean isKicking(LivingEntity player) {
+        if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem))return false;
+        else if (player.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = player.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
+            return tag.getBoolean("rider_kicking");
+        }
+        return false;
+    }
 
     public static double getRenderType(ItemStack stack) {
         double form_double = 1;
@@ -120,72 +125,78 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-        if (this.riderKickCooldown >= 1) {
-            this.riderKickCooldown--;
-            if (this.riderKickCooldown == 0 && player instanceof Player play) play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
-        }
-       // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
+
+        // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
         if (stack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
-            if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
+
+            if (tag.getInt("rider_kick_cooldown") >= 1) {
+                //this.riderKickCooldown--;
+                tag.putInt("rider_kick_cooldown",tag.getInt("rider_kick_cooldown")-1);
+                if (tag.getInt("rider_kick_cooldown") == 0 && player instanceof Player play)
+                    play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
+            }
+
+            if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
+            if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
             if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
             if (!isTransformed(player)) tag.putDouble("render_type", 0);
-            if (tag.getDouble("is_transforming")!=0) tag.putDouble("is_transforming", tag.getDouble("is_transforming")-1);
-            if (tag.getDouble("is_transforming")<0) tag.putDouble("is_transforming", 0);
+            if (tag.getDouble("is_transforming") != 0)
+                tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
+            if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
 
-            if (tag.getDouble("use_ability")!=0) {
+            if (tag.getDouble("use_ability") != 0) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                    if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !this.riderKicking && this.riderKickCooldown == 0) {
-                        this.riderKicking = true;
+                    if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getInt("rider_kick_cooldown") == 0) {
+                        tag.putBoolean("rider_kicking", true);
                         break;
                     }
                 }
-                tag.putDouble("use_ability", tag.getDouble("use_ability")-1);
+                tag.putDouble("use_ability", tag.getDouble("use_ability") - 1);
             }
-            if (tag.getDouble("use_ability")<0) tag.putDouble("use_ability", 0);
+            if (tag.getDouble("use_ability") < 0) tag.putDouble("use_ability", 0);
 
-            //if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
+            if (tag.getBoolean("rider_kicking")) {
+                tag.putInt("rider_kick_tick",tag.getInt("rider_kick_tick")+1);
+                if (tag.getInt("rider_kick_tick") == 1) {
+                    player.push(0, 1, 0);
+                    player.hurtMarked = true;
+                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
+                } else if (tag.getInt("rider_kick_tick") == 21) {
+                    level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
+                    level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
+                    level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
 
-        }else{
+                    player.setDeltaMovement(0, 0, 0);
+                    Vec3 look = new Vec3(player.getLookAngle().x * 0.1, player.getLookAngle().y * 0.04, player.getLookAngle().z * 0.1).scale(20);
+                    player.push(look);
+                    player.hurtMarked = true;
+                }
+                if (tag.getInt("rider_kick_tick") >= 21) {
+                    List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
+                            (sentity instanceof Player && sentity != player)
+                                    || (sentity instanceof Mob));
+                    for (LivingEntity enemy : nearbyEnemies) {
+                        this.OnRiderKickHit(stack, player, enemy);
+                        level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
+                        if (enemy.getHealth() < enemy.getMaxHealth()/3) enemy.addEffect(new MobEffectInstance(Effect_core.EXPLODE, 40, 3, false, true));
+                    }
+
+                    if (player.onGround() || player.isInWater() || tag.getInt("rider_kick_tick")>=41) {
+                        level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
+                        tag.putBoolean("rider_kicking", false);
+                        tag.putInt("rider_kick_cooldown",200);
+                        tag.putInt("rider_kick_tick", 0);
+                    }
+                }
+            }
+
+        } else {
             set_Upadete_Form(stack);
         }
 
-        if (this.riderKicking) {
-            this.riderKickTick++;
-            if (this.riderKickTick == 1) {
-                player.push(0, 1, 0);
-                player.hurtMarked = true;
-                level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
-            } else if (this.riderKickTick == 21) {
-                level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
-                level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
-                level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
 
-                player.setDeltaMovement(0, 0, 0);
-                Vec3 look = new Vec3(player.getLookAngle().x * 0.1, player.getLookAngle().y * 0.04, player.getLookAngle().z * 0.1).scale(20);
-                player.push(look);
-                player.hurtMarked = true;
-            }
-            if (this.riderKickTick >= 21) {
-                List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
-                        (sentity instanceof Player && sentity != player)
-                                || (sentity instanceof Mob));
-                for (LivingEntity enemy : nearbyEnemies) {
-                    this.OnRiderKickHit(stack, player, enemy);
-                    level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                    if (enemy.getHealth() < enemy.getMaxHealth()/3) enemy.addEffect(new MobEffectInstance(Effect_core.EXPLODE, 40, 3, false, true));
-                }
-
-                if (player.onGround() || player.isInWater() || this.riderKickTick>=41) {
-                    level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                    this.riderKicking = false;
-                    this.riderKickCooldown = 200;
-                    this.riderKickTick = 0;
-                }
-            }
-        }
     }
 
 
@@ -278,7 +289,13 @@ public class RiderDriverItem extends RiderArmorItem {
             RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
             form.OnRiderKickHit(itemstack,pLivingEntity,enemy);
         }
-        this.riderKickTick = 41;
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> form.putInt("rider_kick_tick", 41);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
     }
 
 
@@ -396,6 +413,7 @@ public class RiderDriverItem extends RiderArmorItem {
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
     }
+
 
     public static void setUseAbility(ItemStack itemstack)
     {
