@@ -181,7 +181,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,10).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SONG_CAPSEM = ITEMS.register("song_capsem",
