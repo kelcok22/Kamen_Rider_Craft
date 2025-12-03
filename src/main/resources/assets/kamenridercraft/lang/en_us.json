@@ -12,6 +12,9 @@
   "gamerule.bossSpawnPercentage": "Boss spawn chance percentage",
   "gamerule.bossSpawnPercentage.description": "The chance for a Rider mob to spawn a boss when killed.",
   "gamerule.bossHenshinAnnouncements": "Announce boss henshin",
+  "gamerule.doMoonGravity": "Moon gravity",
+  "gamerule.doMoonGravity.description": "Controls the Low Gravity effect on the Moon.",
+  "gamerule.youtubeFriendly": "\"YouTube Friendly\"",
 
   "kamenridercraft.container.enderchest": "Connected to your Ender Chest",
 
