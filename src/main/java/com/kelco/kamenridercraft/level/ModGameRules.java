@@ -9,6 +9,8 @@ public class ModGameRules {
     public static GameRules.Key<GameRules.BooleanValue> RULE_GOLD_DRIVE_WEAPON_STEAL;
     public static GameRules.Key<GameRules.IntegerValue> RULE_BOSS_SPAWN_PERCENTAGE;
     public static GameRules.Key<GameRules.BooleanValue> RULE_BOSS_HENSHIN_ANNOUCEMENTS;
+    public static GameRules.Key<GameRules.BooleanValue> RULE_MOON_GRAVITY;
+    public static GameRules.Key<GameRules.BooleanValue> RULE_HAPPY_MODE;
 
     public static void register(IEventBus eventBus) {
         RULE_REIWA_RIDEWATCHES = GameRules.register(
@@ -24,7 +26,12 @@ public class ModGameRules {
                 "bossSpawnPercentage", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(10));
 
         RULE_BOSS_HENSHIN_ANNOUCEMENTS = GameRules.register(
-                "bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true)
-        );
+                "bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true));
+
+        RULE_MOON_GRAVITY = GameRules.register(
+                "doMoonGravity", GameRules.Category.UPDATES, GameRules.BooleanValue.create(true));
+
+        RULE_HAPPY_MODE = GameRules.register(
+                "youtubeFriendly", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
     }
 }

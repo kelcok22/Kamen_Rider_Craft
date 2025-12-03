@@ -23,6 +23,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.gavv.GochipodItem;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -97,7 +98,7 @@ public class ModCommonEvents {
 		public void onPlayerTick(PlayerTickEvent.Post event) {
 
 			ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
-			if (event.getEntity().level().dimension() == MOON) {
+			if (event.getEntity().level().dimension() == MOON && event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_MOON_GRAVITY)) {
 				event.getEntity().addEffect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 30, 7, false, false));
 			}
 
@@ -106,6 +107,10 @@ public class ModCommonEvents {
 			if (localdate.getMonthValue() == 12 && day >= 22 && day <= 28 ) {
 				event.getEntity().addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 30, 0, false, false));
 			}
+
+            if (event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_HAPPY_MODE)) {
+                event.getEntity().addEffect(new MobEffectInstance(Effect_core.HAPPY_MODE, 30, 0, false, false));
+            }
 		}
 
 		@SubscribeEvent
