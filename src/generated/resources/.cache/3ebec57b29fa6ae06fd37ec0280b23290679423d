@@ -1,10 +1,9 @@
-// 1.21.1	2025-12-01T02:03:21.9452358	Item Models: kamenridercraft
+// 1.21.1	2025-12-03T20:44:51.6929422	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 530e5ba778dd4e7d9f6fa47d8a7a0d2de245dbb1 assets/kamenridercraft/models/item/agito_ring.json
 6d5634426eeb42c0d0b168f6237855cc5b6d9aee assets/kamenridercraft/models/item/agito_shining_ride_chemy_card.json
-41bfc2d023df21ca435bdd1ad5b03cd5809a0995 assets/kamenridercraft/models/item/akari_cannon.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 75ef97f1060512905e49fdd6b9bb40c48c9c57d4 assets/kamenridercraft/models/item/alchemisdriver_wind.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -473,6 +472,7 @@ a0b2ad303869724616966c8436e6fc28a600a8e1 assets/kamenridercraft/models/item/pudd
 09b56e5df59c658151af40946c2dde56aa3ab47d assets/kamenridercraft/models/item/pumpkin_gochizo.json
 d21cf7b33a992cfdacaf779a6c24dc87bdd803e5 assets/kamenridercraft/models/item/punchingummy_gochizo_valen.json
 5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
+8ea5e60ae0d19c359f84cc51cc2c0260e5db0b56 assets/kamenridercraft/models/item/purujelly_noir_gochizo.json
 f9bbb117aac8002ac40679e3b07c438817c506e9 assets/kamenridercraft/models/item/questionable_watch.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
 2c0f26c13203650b687041a87c120b4b39921017 assets/kamenridercraft/models/item/raidenji_daybreak_chemy_card.json

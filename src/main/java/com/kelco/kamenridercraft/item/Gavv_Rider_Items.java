@@ -682,7 +682,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PUDDINTE_GOCHIZO = ITEMS.register("puddinte_gochizo",
