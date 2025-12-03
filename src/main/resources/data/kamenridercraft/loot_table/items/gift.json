@@ -17,6 +17,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:charadeco_capsem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "kamenridercraft:rocket_switch_christmas_ver",
           "weight": 1
         },

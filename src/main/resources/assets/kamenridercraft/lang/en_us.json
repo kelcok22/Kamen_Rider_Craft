@@ -3027,7 +3027,10 @@
 "item.kamenridercraft.keyfuestle": "Wake Up Fuestle (Rey/Arc)",
 "item.kamenridercraft.kivalafuestle": "Wake Up Fuestle (Kiva-la)",
 
-"item.kamenridercraft.kivahead": "Kiva Helmet",
+  "item.kamenridercraft.doranfuestle": "Doran Fuestle",
+  "item.kamenridercraft.buroonfuestle": "Buroon Fuestle",
+
+  "item.kamenridercraft.kivahead": "Kiva Helmet",
 "item.kamenridercraft.kivatroso": "Kiva Chestplate",
 "item.kamenridercraft.kivalegs": "Kiva Leggings",
 
@@ -9013,6 +9016,7 @@
   "block.kamenridercraft.vice_ducky": "Vice Rubber Ducky",
   "block.kamenridercraft.ferbus": "Ferbus",
 
+  "block.kamenridercraft.doran_scale": "Doran Scales",
 "block.kamenridercraft.monitor": "Monitor",
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",
 "block.kamenridercraft.deepslate_stone_kuuga": "Deepslate Kuuga Ore",

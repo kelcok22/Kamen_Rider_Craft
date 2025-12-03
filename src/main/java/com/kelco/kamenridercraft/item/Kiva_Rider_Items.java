@@ -318,7 +318,7 @@ public class Kiva_Rider_Items {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_BAT_PARTICLES.get(),
@@ -329,7 +329,7 @@ public class Kiva_Rider_Items {
 
 
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","arc","arc_kivat_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","arc","arc_kivat_belt",
 					new MobEffectInstance(Effect_core.BIG, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
