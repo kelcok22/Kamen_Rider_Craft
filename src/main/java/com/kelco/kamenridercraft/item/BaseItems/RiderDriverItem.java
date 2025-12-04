@@ -124,7 +124,7 @@ public class RiderDriverItem extends RiderArmorItem {
         return form_double ;
     }
 
-    public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId,Boolean event) {
+    public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
 
         // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
         if (stack.has(DataComponents.CUSTOM_DATA)) {
@@ -170,22 +170,21 @@ public class RiderDriverItem extends RiderArmorItem {
                     level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
                     level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
                     level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-
                     player.setDeltaMovement(0, 0, 0);
                     Vec3 look = new Vec3(player.getLookAngle().x * 0.1, player.getLookAngle().y * 0.04, player.getLookAngle().z * 0.1).scale(20);
                     player.push(look);
                     player.hurtMarked = true;
                 }
-                if (tag.getInt("rider_kick_tick") >= 21&tag.getInt("rider_kick_tick") != 41) {
+                if (tag.getInt("rider_kick_tick") >= 21) {
                     List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
                             (sentity instanceof Player && sentity != player)
                                     || (sentity instanceof Mob));
                     for (LivingEntity enemy : nearbyEnemies) {
-                           if (!event) this.OnRiderKickHit(stack, player, enemy);
                         level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
                         if (enemy.getHealth() < enemy.getMaxHealth() / 3)
                             enemy.addEffect(new MobEffectInstance(Effect_core.EXPLODE, 40, 3, false, true));
                         if (stack.getItem() instanceof RiderDriverItem) {
+                            this.OnRiderKickHit(stack, player, enemy);
                             Consumer<CompoundTag> data = form -> form.putInt("rider_kick_tick", 41);
                             CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                         }
@@ -245,12 +244,12 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player && stack == player.getItemBySlot(EquipmentSlot.FEET)) {
-            this.beltTick(stack,level,player,slotId,false);
+            this.beltTick(stack,level,player,slotId);
             this.giveEffects(player);
         }else if (entity instanceof LivingEntity player) {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
+                if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", false);
             }
         }
     }
@@ -283,32 +282,29 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
-        DamageSource damageSource = new DamageSource(
-                pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
-        float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
-        enemy.hurt(damageSource, at);
-
-        pLivingEntity.fallDistance = 0.0f;
-        if(!pLivingEntity.level().isClientSide()) {
-            for (int n = 0; n < Num_Base_Form_Item; n++) {
-                RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
-                form.OnRiderKickHit(itemstack,pLivingEntity,enemy);
+        if (!pLivingEntity.level().isClientSide()) {
+            DamageSource damageSource = new DamageSource(
+                    pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK), pLivingEntity, pLivingEntity, pLivingEntity.position());
+            float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE) + pLivingEntity.fallDistance);
+            enemy.hurt(damageSource, at);
+            pLivingEntity.fallDistance = 0.0f;
+                for (int n = 0; n < Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
+                    form.OnRiderKickHit(itemstack, pLivingEntity, enemy);
+                }
+                //pLivingEntity.sendSystemMessage(Component.literal("power=" + at));
+                ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
+                        pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
+                        pLivingEntity.getZ(), 1, 0, 0, 0, 1);
+                ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.FLAME,
+                        pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
+                        pLivingEntity.getZ(), 500, 0, 0, 0, 1);
             }
-            pLivingEntity.sendSystemMessage(Component.literal("power="+at));
-            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
-                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-                    pLivingEntity.getZ(), 1, 0, 0, 0, 1);
-            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.FLAME,
-                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-                    pLivingEntity.getZ(), 500, 0, 0, 0, 1);
-        }
-
-        if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> form.putInt("rider_kick_tick", 41);
-            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-        }
+            if (itemstack.getItem() instanceof RiderDriverItem) {
+                Consumer<CompoundTag> data = form -> form.putInt("rider_kick_tick", 41);
+                CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+            }
     }
-
 
 
     public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item) {
