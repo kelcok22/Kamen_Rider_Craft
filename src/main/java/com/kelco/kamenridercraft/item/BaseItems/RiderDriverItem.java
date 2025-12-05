@@ -10,6 +10,7 @@ import java.util.function.Consumer;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
+import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -130,10 +131,10 @@ public class RiderDriverItem extends RiderArmorItem {
         if (stack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 
-            if (tag.getInt("rider_kick_cooldown") >= 1) {
+            if (tag.getDouble("rider_kick_cooldown") >= 1) {
                 //this.riderKickCooldown--;
-                tag.putInt("rider_kick_cooldown",tag.getInt("rider_kick_cooldown")-1);
-                if (tag.getInt("rider_kick_cooldown") == 0 && player instanceof Player play)
+                tag.putDouble("rider_kick_cooldown",tag.getDouble("rider_kick_cooldown")-1);
+                if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
                     play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
             }
 
@@ -148,7 +149,7 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getDouble("use_ability") != 0) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                    if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getInt("rider_kick_cooldown") == 0) {
+                    if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getDouble("rider_kick_cooldown") == 0) {
                         Consumer<CompoundTag> data = form2 -> {
                             form2.putBoolean("rider_kicking", true);
                         };
@@ -161,12 +162,12 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getDouble("use_ability") < 0) tag.putDouble("use_ability", 0);
 
             if (tag.getBoolean("rider_kicking")) {
-                tag.putInt("rider_kick_tick",tag.getInt("rider_kick_tick")+1);
-                if (tag.getInt("rider_kick_tick") == 1) {
+                tag.putDouble("rider_kick_tick",tag.getDouble("rider_kick_tick")+1);
+                if (tag.getDouble("rider_kick_tick") == 1) {
                     player.push(0, 1.25, 0);
                     player.hurtMarked = true;
                     level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
-                } else if (tag.getInt("rider_kick_tick") == 21) {
+                } else if (tag.getDouble("rider_kick_tick") == 21) {
                     level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
                     level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
                     level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
@@ -175,7 +176,7 @@ public class RiderDriverItem extends RiderArmorItem {
                     player.push(look);
                     player.hurtMarked = true;
                 }
-                if (tag.getInt("rider_kick_tick") >= 21) {
+                if (tag.getDouble("rider_kick_tick") >= 21) {
                     List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
                             (sentity instanceof Player && sentity != player)
                                     || (sentity instanceof Mob));
@@ -185,17 +186,17 @@ public class RiderDriverItem extends RiderArmorItem {
                             enemy.addEffect(new MobEffectInstance(Effect_core.EXPLODE, 40, 3, false, true));
                         if (stack.getItem() instanceof RiderDriverItem) {
                             this.OnRiderKickHit(stack, player, enemy);
-                            Consumer<CompoundTag> data = form -> form.putInt("rider_kick_tick", 41);
+                            Consumer<CompoundTag> data = form -> form.putDouble("rider_kick_tick", 41);
                             CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                         }
                     }
-                    if (player.onGround() || player.isInWater() || tag.getInt("rider_kick_tick")>=41) {
+                    if (player.onGround() || player.isInWater() || tag.getDouble("rider_kick_tick")>=41) {
                         level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
                         if (stack.getItem() instanceof RiderDriverItem) {
                             Consumer<CompoundTag> data = form -> {
                                 form.putBoolean("rider_kicking", false);
-                                form.putInt("rider_kick_cooldown",200);
-                                form.putInt("rider_kick_tick", 0);
+                                form.putDouble("rider_kick_cooldown",200);
+                                form.putDouble("rider_kick_tick", 0);
                             };
                             CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                         }
@@ -248,8 +249,15 @@ public class RiderDriverItem extends RiderArmorItem {
             this.giveEffects(player);
         }else if (entity instanceof LivingEntity player) {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
-                CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", false);
+                if (!isTransformed(player)||slotId!=36) {
+                    Consumer<CompoundTag> data = form -> {
+                        form.putBoolean("rider_kicking", false);
+                        form.putDouble("rider_kick_cooldown", 200);
+                        form.putDouble("rider_kick_tick", 0);
+                        form.putBoolean("Update_form", true);
+                    };
+                    CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
+                }
             }
         }
     }
@@ -284,7 +292,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
         if (!pLivingEntity.level().isClientSide()) {
             DamageSource damageSource = new DamageSource(
-                    pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK), pLivingEntity, pLivingEntity, pLivingEntity.position());
+                    pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), pLivingEntity, pLivingEntity, pLivingEntity.position());
             float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE) + pLivingEntity.fallDistance);
             enemy.hurt(damageSource, at);
             pLivingEntity.fallDistance = 0.0f;
@@ -301,7 +309,7 @@ public class RiderDriverItem extends RiderArmorItem {
                         pLivingEntity.getZ(), 500, 0, 0, 0, 1);
             }
             if (itemstack.getItem() instanceof RiderDriverItem) {
-                Consumer<CompoundTag> data = form -> form.putInt("rider_kick_tick", 41);
+                Consumer<CompoundTag> data = form -> form.putDouble("rider_kick_tick", 41);
                 CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
             }
     }
