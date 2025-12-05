@@ -168,15 +168,16 @@ public class RiderDriverItem extends RiderArmorItem {
                     player.hurtMarked = true;
                     level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
                 } else if (tag.getDouble("rider_kick_tick") == 21) {
-                    level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
-                    level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
-                    level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                    player.setDeltaMovement(0, 0, 0);
+                 player.setDeltaMovement(0, 0, 0);
                     Vec3 look = new Vec3(player.getLookAngle().x * 0.1, player.getLookAngle().y * 0.04, player.getLookAngle().z * 0.1).scale(20);
                     player.push(look);
                     player.hurtMarked = true;
                 }
                 if (tag.getDouble("rider_kick_tick") >= 21) {
+                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
+                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
+                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
+
                     List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
                             (sentity instanceof Player && sentity != player)
                                     || (sentity instanceof Mob));

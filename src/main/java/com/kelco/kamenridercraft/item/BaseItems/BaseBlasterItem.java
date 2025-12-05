@@ -24,6 +24,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.*;
+import net.minecraft.world.entity.projectile.windcharge.WindCharge;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.level.Level;
@@ -86,7 +87,13 @@ public class BaseBlasterItem extends BowItem {
 				dragonfireball.setPos(dragonfireball.getX(), user.getY(0.5D) + 0.5D, dragonfireball.getZ());
 				user.level().addFreshEntity(dragonfireball);
 			}
-		};
+		},
+        WIND_CHARGE {
+            public void fire(LivingEntity user, Vec3 movement) {
+                WindCharge windcharge = new WindCharge(user.level(), user.getX(), user.getY(0.5D) + 0.5D, user.getZ(),user.getLookAngle());
+                user.level().addFreshEntity(windcharge);
+            }
+        };;
 
 		public void fire(LivingEntity player, Vec3 vec3) {}
 	}
