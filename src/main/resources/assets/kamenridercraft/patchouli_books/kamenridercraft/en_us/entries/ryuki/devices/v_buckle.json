@@ -156,6 +156,17 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:ryuki/v_buckle_abyss"
-		}
-	]
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "v_buckle_fatale",
+        "title": "V Buckle (Fatale)",
+        "text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/fatale)Kamen Rider Fatale"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ryuki/v_buckle_fatale"
+      }
+    ]
 }

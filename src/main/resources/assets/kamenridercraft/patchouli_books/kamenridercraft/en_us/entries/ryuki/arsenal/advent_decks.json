@@ -167,6 +167,17 @@
 			"title": " ",
 			"recipe": "kamenridercraft:ryuki/advent_deck_abyss"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "advent_deck_fatale",
+        "title": "Advent Deck (Fatale)",
+        "text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Can store up to 6 stacks of Advent Cards"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ryuki/advent_deck_fatale"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "advent_deck_alternative",

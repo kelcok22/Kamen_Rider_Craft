@@ -13,7 +13,7 @@
           "link_recipe": true,
           "item": "kamenridercraft:zaia_spec",
           "title": " ",
-          "text": "Item is currently unobtainable"
+          "text": "Traded by a journeyman $(l:misc/villagers#humagear_villager)Humagear Villager$(/l)"
         }
 	]
 }

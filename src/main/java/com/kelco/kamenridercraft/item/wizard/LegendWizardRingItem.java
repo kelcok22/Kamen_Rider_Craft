@@ -23,7 +23,7 @@ public class LegendWizardRingItem extends BaseItem {
 	{
 		super(properties);
         summonBelt = belt;
-	} // TODO: forms
+	}
 
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
 		

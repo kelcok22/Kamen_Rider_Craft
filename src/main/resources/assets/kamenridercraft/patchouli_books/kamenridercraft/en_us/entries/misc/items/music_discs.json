@@ -331,7 +331,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:be_the_one_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside $(l:misc/city/urban_area#nascita)Nascita$(/l)"
 		},
 		{
 			"type": "patchouli:text",

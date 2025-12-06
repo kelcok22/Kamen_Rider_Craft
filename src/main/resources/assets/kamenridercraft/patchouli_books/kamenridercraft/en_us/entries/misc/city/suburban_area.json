@@ -41,7 +41,7 @@
         "type": "patchouli:text",
         "anchor": "fantastic_bookstore_kamiyama",
         "title": "Fantastic Bookstore Kamiyama",
-        "text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Loot:$(li)1 $(l:misc/items/music_discs#almighty_music_disc)ALMIGHTY ~ Kamen no Yakusoku Music Disc$(/l) (on display)$(li)1 $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l) (in a \"hidden\" doorway)"
+        "text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Loot:$(li)1 $(l:misc/items/music_discs#almighty_music_disc)ALMIGHTY ~ Kamen no Yakusoku Music Disc$(/l), 1 $(l:saber/items/wonder_story)Wonder Story$(/l) (on display)$(li)1 $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l) (in a \"hidden\" doorway)"
       },
       {
         "type": "patchouli:image",

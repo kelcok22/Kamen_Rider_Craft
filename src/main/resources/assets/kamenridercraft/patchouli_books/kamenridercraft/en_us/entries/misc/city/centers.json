@@ -134,7 +134,7 @@
         "type": "patchouli:text",
         "anchor": "seito_u_hospital",
         "title": "Seito University Hospital",
-        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Mobs:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugster$(/l)$(br2)Cityscape: Suburban$(br2)Loot: 1 $(l:misc/items/music_discs#excite_music_disc)EXCITE Music Disc$(/l) (in a barrel at the CR meeting room)"
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Mobs:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugster$(/l)$(br2)Cityscape: Suburban$(br2)Loot: 1 $(l:misc/items/music_discs#excite_music_disc)EXCITE Music Disc$(/l), 1 $(l:ex_aid/items/wonderswan)Wonderswan$(/l) (in a barrel at the CR meeting room)"
       },
       {
         "type": "patchouli:image",

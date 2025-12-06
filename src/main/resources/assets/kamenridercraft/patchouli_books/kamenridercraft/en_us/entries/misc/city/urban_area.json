@@ -81,7 +81,7 @@
         "type": "patchouli:text",
         "anchor": "nascita",
         "title": "Nascita",
-        "text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Loot:$(li)4 $(l:misc/items/foods#coffee)Coffee$(/l) (on display)$(li)5 $(l:build/items/full_bottle)Empty Bottles$(/l) and 5 $(l:build/items/smash_bottle)Smash Bottles$(/l) (in a barrel in Sento's lab)"
+        "text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Loot:$(li)4 $(l:misc/items/foods#coffee)Coffee$(/l) (on display)$(li)5 $(l:build/items/full_bottle)Empty Bottles$(/l) and 5 $(l:build/items/smash_bottle)Smash Bottles$(/l) (in a barrel in Sento's lab)$(li)1 $(l:misc/items/music_discs#be_the_one_music_disc)Be The One Music Disc$(/l) (in a barrel under the hidden staircase)"
       },
       {
         "type": "patchouli:image",

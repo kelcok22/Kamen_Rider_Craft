@@ -2,7 +2,7 @@
 	"name": "Alternative",
 	"icon": "kamenridercraft:psycorogue_advent",
 	"category": "kamenridercraft:ryuki/riders",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:entity",
