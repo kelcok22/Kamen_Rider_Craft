@@ -39,7 +39,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:kiva_throne",
         "title": " ",
-        "text": "Block is currently unobtainable"
+        "text": "Found inside $(l:kiva/structures/castle_doran)Castle Doran$(/l)"
       }
 	]
 }
