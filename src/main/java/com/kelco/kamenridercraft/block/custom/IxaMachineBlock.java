@@ -86,7 +86,7 @@ public class IxaMachineBlock extends BaseEntityBlock {
             if (!pLevel.isClientSide()) {
                 BlockEntity entity = pLevel.getBlockEntity(pPos);
                 if (entity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
-                    pPlayer.openMenu(new SimpleMenuProvider(ixaMachineBlockEntity, Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixamachine")), pPos);
+                    pPlayer.openMenu(new SimpleMenuProvider(ixaMachineBlockEntity, Component.translatable("ixamachine.text")), pPos);
                 } else {
                     throw new IllegalStateException("Our Container provider is missing!");
                 }

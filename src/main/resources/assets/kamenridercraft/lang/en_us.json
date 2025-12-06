@@ -71,7 +71,6 @@
 
   "gui.kamneridercraft.ring_holder_gui": "Ring Holder",
   "gui.kamenridercraft.advent_deck_gui": "Advent Deck",
-  "container.kamenridercraft.ixamachine": "Fuestle Replicator",
 
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 "travelerstitles.kamenridercraft.moon": "The Moon",
@@ -814,6 +813,7 @@
   "valvaradraw_buckle.text": "Valvaradraw Buckle",
   "chemyriser_gui.text": "Chemy Riser",
   "chemyriser_supana_gui.text": "Chemy Riser (Supana ver.)",
+  "ixamachine.text":"Fuestle Replicator",
 
   "container.kamenridercraft.rider_case": "Rider Case",
   "container.kamenridercraft.ride_booker": "Ride Booker",
@@ -9011,10 +9011,13 @@
 
 "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
   "block.kamenridercraft.shocker_logo": "Shocker Base Logo",
+  "block.kamenridercraft.castle_doran_logo": "Castle Doran Logo",
   "block.kamenridercraft.drive_pit_logo": "Drive Pit Logo",
   "block.kamenridercraft.punkjackolantern": "PunkJack O'Lantern",
   "block.kamenridercraft.vice_ducky": "Vice Rubber Ducky",
   "block.kamenridercraft.ferbus": "Ferbus",
+
+  "block.kamenridercraft.window_planks": "Wooden Planks Barricade",
 
   "block.kamenridercraft.doran_scale": "Doran Scales",
 "block.kamenridercraft.monitor": "Monitor",
@@ -11016,5 +11019,8 @@
   "advancements.kamenridercraft.zi-o.zi-o.description": "Transform into Kamen Rider Zi-O",
   "advancements.kamenridercraft.zi-o.zi-o.title": "I've got a feeling this will work!",
   "advancements.kamenridercraft.zi-o.zonjis.description": "Transform into Kamen Rider Zonjis",
-  "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe"
+  "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe",
+
+  "death.attack.rider_kick": "%1$s received a Rider Kick to the face",
+  "death.attack.rider_kick.player": "%1$s was defeated by %2$ using a Rider Kick"
 }
