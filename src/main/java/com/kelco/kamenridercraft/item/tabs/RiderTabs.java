@@ -591,6 +591,8 @@ public class RiderTabs {
             event.accept(Rider_Blocks.JAIL_DOOR);
             event.accept(Rider_Blocks.GOLD_DOOR);
 
+            event.accept(Rider_Blocks.WINDOW_PLANKS);
+            event.accept(Rider_Blocks.CASTLE_DORAN_LOGO);
             event.accept(Rider_Blocks.DRIVE_PIT_LOGO);
             event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
 

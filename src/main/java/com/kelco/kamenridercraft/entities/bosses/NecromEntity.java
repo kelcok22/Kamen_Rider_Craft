@@ -68,10 +68,13 @@ public class NecromEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
 
         if ( this.isDeadOrDying()) {
-            if(!this.level().isClientSide() && this.getItemBySlot(EquipmentSlot.FEET).getItem()==Ghost_Rider_Items.MEGA_ULORDER.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),2)==Ghost_Rider_Items.YUJOU_BURST_DAMASHII.get()) {
+            if(!this.level().isClientSide() && this.getItemBySlot(EquipmentSlot.FEET).getItem()==Ghost_Rider_Items.MEGA_ULORDER.get()){
+                if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),2)==Ghost_Rider_Items.YUJOU_BURST_DAMASHII.get()
+            ) {
                 ItemEntity key = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(Ghost_Rider_Items.YUJOU_BURST_GHOST_EYECON.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 level().addFreshEntity(key);
+            }
             }
             }
         super.remove(p_149847_);
