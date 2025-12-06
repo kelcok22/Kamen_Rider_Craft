@@ -13,7 +13,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:hayabusa_kun",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
       }
     ]
 }
