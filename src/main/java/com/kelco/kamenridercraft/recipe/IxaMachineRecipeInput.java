@@ -3,34 +3,29 @@ package com.kelco.kamenridercraft.recipe;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeInput;
 
-public record IxaMachineRecipeInput(ItemStack input, ItemStack modifier) implements RecipeInput {
-    public IxaMachineRecipeInput(ItemStack input, ItemStack modifier) {
-        this.input = input;
-        this.modifier = modifier;
+import java.util.List;
+import java.util.Objects;
+
+public record IxaMachineRecipeInput(List<ItemStack> inputs) implements RecipeInput {
+
+    public IxaMachineRecipeInput {
+        Objects.requireNonNull(inputs, "inputItem");
+        ItemStack first = Objects.requireNonNullElse(inputs.get(0), ItemStack.EMPTY);
+        ItemStack second = Objects.requireNonNullElse(inputs.get(1), ItemStack.EMPTY);
+        inputs = List.of(first, second);
+    }
+
+    public IxaMachineRecipeInput(ItemStack first, ItemStack second) {
+        this(List.of(first, second));
     }
 
     @Override
-    public ItemStack getItem(int p_346205_) {
-        ItemStack var10000;
-        switch (p_346205_) {
-            case 0 -> var10000 = this.input;
-            case 1 -> var10000 = this.modifier;
-            default -> throw new IllegalArgumentException("Recipe does not contain slot " + p_346205_);
-        }
-
-        return var10000;
+    public ItemStack getItem(int i) {
+        return inputs.get(i);
     }
+
     @Override
     public int size() {
-        return 2;
+        return inputs.size();
     }
-    public boolean isEmpty() {
-        return this.input.isEmpty() && this.modifier.isEmpty();
-    }
-
-    public ItemStack input() {
-        return this.input;
-    }
-
-    public ItemStack modifier () {return this.modifier; }
 }
