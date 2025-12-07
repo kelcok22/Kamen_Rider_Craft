@@ -96,22 +96,20 @@ public class IxaMachineBlock extends BaseEntityBlock {
         }
 
 
-        @Nullable
-        @Override
-        public <T extends
-        BlockEntity > BlockEntityTicker < T > getTicker(Level level, BlockState state, BlockEntityType < T > blockEntityType)
-        {
-            if (level.isClientSide()) {
-                return null;
-            }
+    @Override
+    public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
+        if (blockEntityType != ModBlockEntities.IXA_MACHINE_BLOCK_BE.get()) return null;
 
+        if (level.isClientSide) {
+            return (lvl, pos, st, be) -> {
+                if (be instanceof IxaMachineBlockEntity extractor) {
+                    IxaMachineBlockEntity.clientTick(lvl, pos, st, extractor);
+                }
+            };
+        } else {
             return createTickerHelper(blockEntityType, ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(),
-                    (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
+                    (level1, blockPos, blockState, ixaMachineBlockEntity) -> ixaMachineBlockEntity.tick(level1, blockPos, blockState));
         }
-
-        public IxaMachineBlock AddToTabList (List < Block > TabList) {
-            TabList.add(this);
-            return this;
-        }
+    }
 
 }
