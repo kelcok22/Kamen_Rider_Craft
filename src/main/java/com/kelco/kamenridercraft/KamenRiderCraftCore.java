@@ -211,7 +211,7 @@ public class KamenRiderCraftCore
                         model.rightArm.visible = false;
                         model.body.visible = false;
                     }
-                } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
+                } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(false);
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 
