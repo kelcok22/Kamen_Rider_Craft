@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.entities.summons.ApolloEntity;
 import com.kelco.kamenridercraft.entities.summons.LibraEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;

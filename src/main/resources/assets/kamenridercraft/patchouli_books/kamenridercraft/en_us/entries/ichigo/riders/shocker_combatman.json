@@ -2,7 +2,7 @@
 	"name": "Shocker Combatman",
 	"icon": "kamenridercraft:shocker_emblem",
 	"category": "kamenridercraft:ichigo/riders",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:entity",

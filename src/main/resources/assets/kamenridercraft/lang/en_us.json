@@ -1868,6 +1868,7 @@
 "item.kamenridercraft.nophoon_core": "Nophoon Core",
   "item.kamenridercraft.taki_vampire_core": "Taki Vampire Core",
 "item.kamenridercraft.gaia_core": "Gaia Typhoon Core",
+  "item.kamenridercraft.cyborg_super_energy_converter_core": "Cyborg Super Energy Converter Core",
 "kamenridercraft:gaia_core.form": "Form: Base Form",
 
 "item.kamenridercraft.typhoon_ichigo": "Typhoon",
@@ -8766,7 +8767,7 @@
 "entity.kamenridercraft.decade_armor_ex_aid": "DecadeArmor Ex-Aid Form",
 "entity.kamenridercraft.vice": "Vice",
   "entity.kamenridercraft.whipped_soldier": "Whipped Soldier",
-  "entity.kamenridercraft.technolom_projection": "Technolom Projection",
+  "entity.kamenridercraft.technolom_projection": "Metamateriam",
   "entity.kamenridercraft.apollo": "Apollo",
   "entity.kamenridercraft.libra": "Libra",
   "entity.kamenridercraft.batta_augment":"Phase Variation Batta Augment",

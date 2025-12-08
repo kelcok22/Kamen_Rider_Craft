@@ -47,8 +47,7 @@ public record IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output,
 
     @Override
     public @NotNull NonNullList<Ingredient> getIngredients() {
-        NonNullList<Ingredient> ingredients = NonNullList.copyOf(inputs);
-        return ingredients;
+        return NonNullList.copyOf(inputs);
     }
 
 
@@ -125,24 +124,24 @@ public record IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output,
             // encode
             (buf, recipe) -> {
                 ByteBufCodecs.collection(NonNullList::createWithCapacity, Ingredient.CONTENTS_STREAM_CODEC)
-                        .encode((RegistryFriendlyByteBuf) buf, recipe.inputs);
-                ItemStack.STREAM_CODEC.encode((RegistryFriendlyByteBuf) buf, recipe.output());
+                        .encode(buf, recipe.inputs);
+                ItemStack.STREAM_CODEC.encode(buf, recipe.output());
                 var weights = recipe.weights();
-                ((RegistryFriendlyByteBuf) buf).writeVarInt(weights.size());
+                buf.writeVarInt(weights.size());
                 for (var e : weights.entrySet()) {
-                    ((RegistryFriendlyByteBuf) buf).writeResourceLocation(e.getKey());
-                    ((RegistryFriendlyByteBuf) buf).writeVarInt(e.getValue());
+                    buf.writeResourceLocation(e.getKey());
+                    buf.writeVarInt(e.getValue());
                 }
             },
             buf -> {
                 NonNullList<Ingredient> decodedInputs =
-                        ByteBufCodecs.collection(NonNullList::createWithCapacity, Ingredient.CONTENTS_STREAM_CODEC).decode((RegistryFriendlyByteBuf) buf);
-                ItemStack result = ItemStack.STREAM_CODEC.decode((RegistryFriendlyByteBuf) buf);
-                int size = ((RegistryFriendlyByteBuf) buf).readVarInt();
+                        ByteBufCodecs.collection(NonNullList::createWithCapacity, Ingredient.CONTENTS_STREAM_CODEC).decode(buf);
+                ItemStack result = ItemStack.STREAM_CODEC.decode(buf);
+                int size = buf.readVarInt();
                 java.util.Map<ResourceLocation, Integer> weights = new java.util.HashMap<>();
                 for (int i = 0; i < size; i++) {
-                    ResourceLocation id = ((RegistryFriendlyByteBuf) buf).readResourceLocation();
-                    int w = ((RegistryFriendlyByteBuf) buf).readVarInt();
+                    ResourceLocation id = buf.readResourceLocation();
+                    int w = buf.readVarInt();
                     weights.put(id, w);
                 }
                 return new IxaMachineRecipe(decodedInputs, result, weights);

@@ -1,0 +1,16 @@
+{
+	"name": "Cyborg Super Energy Converter",
+	"icon": "kamenridercraft:cyborg_super_energy_converter",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/eins)Kamen Rider Eins"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/cyborg_super_energy_converter"
+		}
+	]
+}

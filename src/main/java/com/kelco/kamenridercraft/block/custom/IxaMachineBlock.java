@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft.block.custom;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.entity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.mojang.serialization.MapCodec;
@@ -26,7 +25,6 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
 import javax.annotation.Nullable;
-import java.util.List;
 
 public class IxaMachineBlock extends BaseEntityBlock {
 

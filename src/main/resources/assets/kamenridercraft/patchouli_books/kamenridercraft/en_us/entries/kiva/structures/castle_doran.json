@@ -13,7 +13,6 @@
 			"type": "patchouli:image",
 			"border": true,
 			"images": [
-              "kamenridercraft:patchouli_books/kamenridercraft/images/castle_doran.png",
               "kamenridercraft:patchouli_books/kamenridercraft/images/castle_doran_2.png"
 			],
 			"title": " "
