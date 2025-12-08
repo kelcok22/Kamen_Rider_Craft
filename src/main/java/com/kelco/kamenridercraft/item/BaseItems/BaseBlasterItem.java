@@ -6,6 +6,7 @@ import java.util.List;
 import com.google.common.collect.ImmutableMultimap;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
@@ -151,7 +152,13 @@ public class BaseBlasterItem extends BowItem {
 			if (projectile != BlasterProjectile.ARROW) {
 				projectile.fire(player, player.getLookAngle());
 				stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
-			} else {
+			}
+            else if (entityLiving.hasEffect(Effect_core.SHOT_BOOST)) {
+                ItemStack arrow = new ItemStack(Items.ARROW, 1);
+                arrow.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
+                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 2 * (entityLiving.getEffect(Effect_core.SHOT_BOOST).getAmplifier()+1), 1.0F, true, (LivingEntity)null);
+            }
+            else {
 				ItemStack arrow = new ItemStack(Items.ARROW, 1);
 				arrow.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
 				this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 3, 1.0F, true, null);
