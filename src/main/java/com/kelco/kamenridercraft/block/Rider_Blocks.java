@@ -130,7 +130,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> IXA_MACHINE_BLOCK = registerBlock("ixa_machine_block",
 			() -> new IxaMachineBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
 	public static final DeferredBlock<Block>  KIVA_ORE = registerBlock("stone_kiva",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)

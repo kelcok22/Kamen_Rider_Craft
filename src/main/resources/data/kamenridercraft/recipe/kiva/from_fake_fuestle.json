@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:ixa_machine_block",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:fuestlefake"
+		},
+		{
+			"item": "kamenridercraft:rider_circuit"
+		}
+	],
+	"result": {
+		"count": 1,
+		"id": "kamenridercraft:knucklefuestle"
+	},
+	"weights": {
+		"kamenridercraft:caliburfuestle": 0
+	}
+}
