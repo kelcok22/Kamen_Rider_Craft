@@ -9,6 +9,8 @@
     "kamenridercraft:recovery_capsem",
     "kamenridercraft:barrier_capsem",
 	"kamenridercraft:wonder_capsem",
-    "kamenridercraft:gravity_capsem"
+    "kamenridercraft:gravity_capsem",
+    "kamenridercraft:plasma_capsem",
+    "kamenridercraft:booster_capsem"
   ]
 }
