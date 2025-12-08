@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-07T22:31:38.6381492	Item Models: kamenridercraft
+// 1.21.1	2025-12-08T14:56:28.7553868	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -76,6 +76,7 @@ ebf6333c8b37363949d690914dc7873bf74b4a83 assets/kamenridercraft/models/item/bloo
 b2ac10fb3e6fe05f3176807fb95ebbfa19fecfb5 assets/kamenridercraft/models/item/blue_wallplate_wall.json
 749afe2758fc6a4b5b895cdabbd8484140153625 assets/kamenridercraft/models/item/blust_vent.json
 22b89755d4560e0cf2b2eb8a5d7617cb38cb4cd5 assets/kamenridercraft/models/item/bonchiage_gochizo.json
+5546e0ac96c75d815c133e24a575b30720ea11f6 assets/kamenridercraft/models/item/booster_capsem.json
 18a7f92fde30ac6f288bdf359c92f361d73cd89a assets/kamenridercraft/models/item/bountybunny_ride_chemy_card.json
 190ef9ecda38fb8dc9a7a77656118ceb3cbe972d assets/kamenridercraft/models/item/brave_dragon_wonder_ride_book_xross.json
 150123fc052142a04768c6c73b2faa84075f9cc4 assets/kamenridercraft/models/item/breacookie_gochizo.json
@@ -457,6 +458,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/peop
 67ced0bd7bc6615d46432fdaad242711e1812e61 assets/kamenridercraft/models/item/pienomi_gochizo.json
 43bd408a10b1669203e4e7e6a47c8415e52ac4df assets/kamenridercraft/models/item/pikahotaru_ride_chemy_card.json
 5e14182024b9f643c8f583e8267b82fe26792e4e assets/kamenridercraft/models/item/pilets_ride_chemy_card.json
+0063a92d0024aaf19bfa2145b59e9df75cd0328b assets/kamenridercraft/models/item/plasma_capsem.json
 256863d6920be110cc98fc41a4989ac7b89172c2 assets/kamenridercraft/models/item/ple_dummy_gochizo.json
 a2dbf137300b6a2829e5e8addd43111119d17912 assets/kamenridercraft/models/item/popburn_gochizo.json
 47eeb2cd297e6a132aa2bc90ea12a983ad3b86e0 assets/kamenridercraft/models/item/poppingummy_gochizo_halloween.json
