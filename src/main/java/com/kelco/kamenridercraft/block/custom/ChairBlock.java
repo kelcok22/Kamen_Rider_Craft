@@ -53,7 +53,7 @@ public class ChairBlock extends Block {
 	
 	@Override
 	public BlockState playerWillDestroy(Level world, BlockPos pos, BlockState state, Player player) {
-		if (!world.isClientSide()) CHAIR_ENTITY.discard();
+		if (!world.isClientSide() && CHAIR_ENTITY != null) CHAIR_ENTITY.discard();
 		return super.playerWillDestroy(world, pos, state, player);
 	}
 

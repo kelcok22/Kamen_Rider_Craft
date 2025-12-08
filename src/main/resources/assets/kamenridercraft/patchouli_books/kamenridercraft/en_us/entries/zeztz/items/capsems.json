@@ -182,7 +182,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:charadeco_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
       },
       {
         "type": "patchouli:text",

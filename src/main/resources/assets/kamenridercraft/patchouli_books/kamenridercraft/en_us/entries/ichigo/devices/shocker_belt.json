@@ -2,7 +2,7 @@
 	"name": "Shocker Belt",
 	"icon": "kamenridercraft:shocker_belt",
 	"category": "kamenridercraft:ichigo/devices",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

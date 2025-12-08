@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "nox_knight",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:code_capsem"
+	},
+	"M": {
+	  "item": "kamenridercraft:erase_capsem"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:knight_invoker"
+  }	
+}
