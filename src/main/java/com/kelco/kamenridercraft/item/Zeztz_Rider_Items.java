@@ -70,7 +70,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").hasStaticWings().IsGlowing().IsBeltGlowing().AddToList(CapsemDropper.CAPSEM,5).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().IsBeltGlowing().AddToList(CapsemDropper.CAPSEM,5).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
