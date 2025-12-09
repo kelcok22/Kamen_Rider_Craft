@@ -765,6 +765,25 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_bitter_gavv_belt")
                     .IsGlowing().AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
+    public static final DeferredItem<Item> TERROR_GOCHIZO_C3 = ITEMS.register("terror_gochizo_c3",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_c3","caries","henshin_belt_caries_gavv_belt_c3",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 200, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 50, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 50, 0, 0, 0, 0.1);
+                }
+            }.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").model_has_different_name("terror_gochizo"));
+
 	public static final DeferredItem<Item> TERROR_GOCHIZO = ITEMS.register("terror_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_caries_gavv_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
@@ -781,8 +800,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
-
+            }.IsGlowing().addSwitchForm(TERROR_GOCHIZO_C3.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookiekie","do_not_work","valenbuckle_belt")
@@ -1368,7 +1386,7 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> HENSHIN_BELT_CARIES_GAVV = ITEMS.register("henshin_belt_caries_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"caries",TERROR_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> JEEB_MIMICDEVISER = ITEMS.register("jeeb_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jeeb",JEEB_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
