@@ -121,7 +121,7 @@ public class Zeztz_Rider_Items {
                         }
                     }
                 }
-            } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
