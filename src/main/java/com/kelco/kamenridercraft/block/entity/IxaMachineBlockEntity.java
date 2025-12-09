@@ -11,6 +11,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.protocol.Packet;
@@ -182,16 +183,6 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         }
     }
 
-    private static String signatureOf(ItemStack test_tube, ItemStack material) {
-        return stackSig(test_tube) + "#" + stackSig(material);
-    }
-
-    private static String stackSig(ItemStack s) {
-        if (s.isEmpty()) return "empty";
-        String id = s.getItem().builtInRegistryHolder().key().location().toString();
-        return id + "x" + s.getCount();
-    }
-
     private void craftItem() {
         Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
         if (recipe.isEmpty()) return;
@@ -268,6 +259,29 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
                 .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), new IxaMachineRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT), itemHandler.getStackInSlot(MODIFIER_SLOT)), level);
     }
 
+
+    private boolean canInsertAmountIntoOutput(ItemStack output) {
+        int toInsert = output.getCount();
+        int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
+
+        for (int slot : slots) {
+            ItemStack stack = itemHandler.getStackInSlot(slot);
+
+            if (stack.isEmpty()) {
+                // Respect special cap for empty slots
+                if (toInsert <= 8) {
+                    return true;
+                }
+            } else if (stack.getItem() == output.getItem()) {
+                int space = stack.getMaxStackSize() - stack.getCount();
+                if (space >= toInsert) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     private ItemStack determineOutputForCurrentInputs() {
         Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
         if (recipe.isEmpty()) return ItemStack.EMPTY;
@@ -320,6 +334,16 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         return ItemStack.EMPTY;
     }
 
+    private static String signatureOf(ItemStack test_tube, ItemStack material) {
+        return stackSig(test_tube) + "#" + stackSig(material);
+    }
+
+    private static String stackSig(ItemStack s) {
+        if (s.isEmpty()) return "empty";
+        String id = s.getItem().builtInRegistryHolder().key().location().toString();
+        return id + "x" + s.getCount();
+    }
+
     private boolean canInsertItemIntoOutput(ItemStack output) {
         int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
 
@@ -332,27 +356,6 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         return false;
     }
 
-    private boolean canInsertAmountIntoOutput(ItemStack output) {
-        int toInsert = output.getCount();
-        int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
-
-        for (int slot : slots) {
-            ItemStack stack = itemHandler.getStackInSlot(slot);
-
-            if (stack.isEmpty()) {
-                // Respect special cap for empty slots
-                if (toInsert <= 8) {
-                    return true;
-                }
-            } else if (stack.getItem() == output.getItem()) {
-                int space = stack.getMaxStackSize() - stack.getCount();
-                if (space >= toInsert) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
 
     @Override
     public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
@@ -363,5 +366,10 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     public Packet<ClientGamePacketListener> getUpdatePacket() {
         return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt, HolderLookup.Provider lookupProvider) {
+        super.onDataPacket(net, pkt, lookupProvider);
     }
 }

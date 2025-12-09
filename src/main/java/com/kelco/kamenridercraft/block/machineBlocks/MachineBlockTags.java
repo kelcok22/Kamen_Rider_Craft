@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class MachineBlockTags {
     public static class Items {
-        public static final TagKey<Item> REPLICATOR_FROM_BLANK_FAKE = createTag("gear.fuestels.replicator_from_blank_fake");
+        public static final TagKey<Item> REPLICATOR_FROM_BLANK_FAKE = createTag("replicator_from_blank_fake");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
