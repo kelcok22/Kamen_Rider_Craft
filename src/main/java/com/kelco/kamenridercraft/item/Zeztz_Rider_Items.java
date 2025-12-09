@@ -134,7 +134,7 @@ public class Zeztz_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 100, 0, 0, 0, 1);
                         }
-                }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+                }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BARRIER_CAPSEM = ITEMS.register("barrier_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
@@ -159,7 +159,7 @@ public class Zeztz_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 100, 0, 0, 0, 1);
                         }
-                }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+                }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,7).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GRAVITY_CAPSEM = ITEMS.register("gravity_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
