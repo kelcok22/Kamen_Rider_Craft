@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.block.entity.renderer.PandoraPanelBlockEntityRenderer;
 import com.kelco.kamenridercraft.block.entity.renderer.PlinthBlockEntityRenderer;
+import com.kelco.kamenridercraft.block.machineBlocks.MachineBlockTags;
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
