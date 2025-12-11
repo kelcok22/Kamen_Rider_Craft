@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "zeztz",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:inazuma_blaster"
+    }, 
+    {
+      "item": "kamenridercraft:breakam_zeztzer_sword"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:inazuma_blaster_greatsword"
+  }
+}
