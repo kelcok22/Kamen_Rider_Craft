@@ -2,7 +2,7 @@
 	"name": "X-Max",
 	"icon": "kamenridercraft:xmax_valen",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

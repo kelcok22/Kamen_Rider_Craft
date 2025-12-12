@@ -2,7 +2,7 @@
 	"name": "Uirou Tonfa",
 	"icon": "kamenridercraft:uirou_tonfa_2",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 26,
+	"sortnum": 27,
 	"pages": [
 		{
 			"type": "patchouli:text",

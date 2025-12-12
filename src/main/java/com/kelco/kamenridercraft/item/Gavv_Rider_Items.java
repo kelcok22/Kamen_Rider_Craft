@@ -602,6 +602,27 @@ public class Gavv_Rider_Items {
 				}
 			}.IsGlowing().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+    public static final DeferredItem<Item> HEXENHEIM_GOCHIZO = ITEMS.register("hexenheim_gochizo",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hexenheim","gavv","henshin_belt_gavv_belt_hexenheim",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(Effect_core.SLASH, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 40, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 40, 0, 0, 0, 1);
+                }
+            }.IsGlowing().AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+    public static final DeferredItem<Item> UEHOUSE_GOCHIZO = ITEMS.register("uehouse_gochizo",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","vrastumgear_belt")
+                    .IsGlowing().AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
 
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_doumaru","valen","valenbuckle_belt",
@@ -782,7 +803,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").model_has_different_name("terror_gochizo"));
+            }.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json"));
 
 	public static final DeferredItem<Item> TERROR_GOCHIZO = ITEMS.register("terror_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_caries_gavv_belt",
@@ -800,7 +821,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().addSwitchForm(TERROR_GOCHIZO_C3.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().addSwitchForm(TERROR_GOCHIZO_C3.get()).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookiekie","do_not_work","valenbuckle_belt")
@@ -1445,6 +1466,10 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> GAVVWHIPIR = ITEMS.register("gavvwhipir",
 			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+    public static final DeferredItem<Item> HEXEN_BLADE = ITEMS.register("hexen_blade",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+                    .ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VALENBUSTER = ITEMS.register("valenbuster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(VALENBUCKLE.get()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)

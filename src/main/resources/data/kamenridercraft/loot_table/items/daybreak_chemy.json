@@ -12,37 +12,37 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_skebows_ride_chemy_card",
+          "name": "kamenridercraft:skebows_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_raidenji_ride_chemy_card",
+          "name": "kamenridercraft:raidenji_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_mechanichani_ride_chemy_card",
+          "name": "kamenridercraft:mechanichani_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_bulletbaang_ride_chemy_card",
+          "name": "kamenridercraft:bulletbaang_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_apparebushido_ride_chemy_card",
+          "name": "kamenridercraft:apparebushido_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_golddash_ride_chemy_card",
+          "name": "kamenridercraft:golddash_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_junglejan_ride_chemy_card",
+          "name": "kamenridercraft:junglejan_daybreak_ride_chemy_card",
           "weight": 1
         },
         {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:daybreak_timelord_ride_chemy_card",
+          "name": "kamenridercraft:timelord_daybreak_ride_chemy_card",
           "weight": 2
         }
       ]

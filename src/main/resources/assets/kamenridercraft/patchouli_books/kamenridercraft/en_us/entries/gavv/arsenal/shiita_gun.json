@@ -2,7 +2,7 @@
   "name": "Shiita's Gun",
   "icon": "kamenridercraft:shiita_gun",
   "category": "kamenridercraft:gavv/arsenal",
-  "sortnum": 17,
+  "sortnum": 18,
   "pages": [
     {
       "type": "patchouli:text",

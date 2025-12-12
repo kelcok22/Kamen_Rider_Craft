@@ -1,53 +1,91 @@
 {
   "type": "minecraft:entity",
   "pools": [
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "weight": 5,
-		  "name": "kamenridercraft:typhoon_core"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 4,
-		  "name": "kamenridercraft:typhoon_core_nigo"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:original_typhoon_core"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:sakurajima_typhoon_core"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 5,
-		  "name": "kamenridercraft:rider_circuit"
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:rider_circuit",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 2,
-				"max": 4
-			  }
-			}
-		  ]
-		}
-	  ]
-	}
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "kamenridercraft:typhoon_core"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "kamenridercraft:typhoon_core_nigo"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:original_typhoon_core"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:sakurajima_typhoon_core"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "kamenridercraft:rider_circuit"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:rider_circuit",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:lets_go_rider_kick_music_disc"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "kamenridercraft:rider_kick",
+                "expected": true
+              }
+            ],
+            "source_entity": {
+              "slots": {
+                "armor.head": {
+                  "items": "kamenridercraft:ichigohead"
+                },
+                "armor.chest": {
+                  "items": "kamenridercraft:ichigotroso"
+                },
+                "armor.legs": {
+                  "items": "kamenridercraft:ichigolegs"
+                },
+                "armor.feet": {
+                  "items": "kamenridercraft:typhoon_ichigo"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   ]
 }

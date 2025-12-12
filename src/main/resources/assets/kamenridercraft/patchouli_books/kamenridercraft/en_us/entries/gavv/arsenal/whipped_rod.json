@@ -2,7 +2,7 @@
 	"name": "Whipped Rod",
 	"icon": "kamenridercraft:whipped_rod",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 22,
+	"sortnum": 23,
 	"pages": [
 		{
 			"type": "patchouli:text",

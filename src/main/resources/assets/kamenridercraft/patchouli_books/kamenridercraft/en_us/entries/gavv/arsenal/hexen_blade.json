@@ -1,0 +1,17 @@
+{
+	"name": "Hexen Blade",
+	"icon": "kamenridercraft:hexen_blade",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Used by Gavv's $(l:gavv/riders/gavv#hexenheim)Hexenheim Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/hexen_blade",
+			"text": "Can free villagers from $(l:gavv/items/heatpress)Hitpresses$(/l) when held in your off-hand"
+		}
+	]
+}

@@ -52,7 +52,7 @@ public class ServerConfig
     }*/
 
     @SubscribeEvent
-    static void onLoad(final ModConfigEvent event)
+    static void onLoad(final ModConfigEvent.Loading event)
     {
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
         decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
