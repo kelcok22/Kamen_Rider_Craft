@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.block.entity.renderer.PandoraPanelBlockEntityRenderer;
 import com.kelco.kamenridercraft.block.entity.renderer.PlinthBlockEntityRenderer;
-import com.kelco.kamenridercraft.block.machineBlocks.MachineBlockTags;
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
@@ -61,6 +60,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -168,6 +169,7 @@ public class KamenRiderCraftCore
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
+        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

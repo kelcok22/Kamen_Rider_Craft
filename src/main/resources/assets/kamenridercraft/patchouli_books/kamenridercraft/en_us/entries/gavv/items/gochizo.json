@@ -353,6 +353,32 @@
         "title": " ",
         "text": "Drops from:$(li)$(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l) (with a full $(l:gavv/items/gochipod)Gochipod$(/l) in your inventory)"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "hexenheim_gochizo",
+        "title": "Hexenheim Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#hexenheim)Hexenheim Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hexenheim_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "uehouse_gochizo",
+        "title": "Uehouse Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:uehouse_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "doumaru_gochizo",
@@ -526,7 +552,7 @@
 			"type": "patchouli:text",
 			"anchor": "terror_gochizo",
 			"title": "Terror Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)"
+			"text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Used to craft Caries's $(l:gavv/devices/henshin_belt_caries_gavv)Henshin Belt Breed Gavv$(/l)$(br2)Used to access Caries's $(l:gavv/riders/caries#c1)C1$(/l) and $(l:gavv/riders/caries#c3)C3$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",

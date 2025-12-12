@@ -94,9 +94,9 @@ public class BaseBlasterItem extends BowItem {
                 WindCharge windcharge = new WindCharge(user.level(), user.getX(), user.getY(0.5D) + 0.5D, user.getZ(),user.getLookAngle());
                 user.level().addFreshEntity(windcharge);
             }
-        };;
+        };
 
-		public void fire(LivingEntity player, Vec3 vec3) {}
+        public void fire(LivingEntity player, Vec3 vec3) {}
 	}
 	private BlasterProjectile projectile = BlasterProjectile.ARROW;
 	
@@ -156,7 +156,7 @@ public class BaseBlasterItem extends BowItem {
             else if (entityLiving.hasEffect(Effect_core.SHOT_BOOST)) {
                 ItemStack arrow = new ItemStack(Items.ARROW, 1);
                 arrow.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
-                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 2 * (entityLiving.getEffect(Effect_core.SHOT_BOOST).getAmplifier()+1), 1.0F, true, (LivingEntity)null);
+                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 2 * (entityLiving.getEffect(Effect_core.SHOT_BOOST).getAmplifier()+1), 1.0F, true, null);
             }
             else {
 				ItemStack arrow = new ItemStack(Items.ARROW, 1);

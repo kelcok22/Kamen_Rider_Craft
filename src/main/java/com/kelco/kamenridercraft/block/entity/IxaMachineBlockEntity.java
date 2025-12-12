@@ -46,7 +46,8 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     };
 
     public static void clientTick(Level level, BlockPos pos, BlockState state, IxaMachineBlockEntity be) {
-        if (!level.isClientSide) return;
+        if (!level.isClientSide) {
+        }
     }
 
     private static final int INPUT_SLOT = 0;

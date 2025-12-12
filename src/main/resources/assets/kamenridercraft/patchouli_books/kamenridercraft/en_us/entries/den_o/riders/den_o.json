@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Liner Form",
-			"text": "Accessed with the $(l:den_o/items/denkamen_sword)DenKamen Sword$(/l) while having a $(l:den_o/items/ktaros)K-Taros$(/l) in your inventory"
+			"text": "Accessed with the $(l:den_o/arsenal/denkamen_sword)DenKamen Sword$(/l) while having a $(l:den_o/items/ktaros)K-Taros$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

@@ -235,12 +235,26 @@
         "scale": -1,
         "offset": 0.1,
         "name": "Amazingummy Form",
-        "text": "Accessed with the $(l:gavv/items/amazingummy_gochizo)Amazingummy Gochizo$(/l)"
+        "text": "Accessed with the $(l:gavv/items/gochizo#amazingummy_gochizo)Amazingummy Gochizo$(/l)"
       },
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Gavv",
         "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Radar$(li)Speed II$(li)Resistance III$(li)Flame Slash$(li)Jump Boost III"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "hexenheim",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:hexenheim_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Hexenheim Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#hexenheim_gochizo)Hexenheim Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Slash IV$(li)Strength IV (with sword)$(li)Strength III (with empty hand)$(li)Speed$(li)Resistance III"
       },
 		{
 			"type": "patchouli:entity",

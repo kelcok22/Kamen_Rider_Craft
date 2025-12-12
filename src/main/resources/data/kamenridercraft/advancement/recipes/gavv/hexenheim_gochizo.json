@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:beast_ring"
+			  "kamenridercraft:hexenheim_gochizo"
 			]
 		  }
 		]
@@ -21,9 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:wizard/beastdriver",
-	  "kamenridercraft:wizard/dice_saber",
-	  "kamenridercraft:decade/beast_card"
+	  "kamenridercraft:gavv/hexen_blade"
 	]
   },
   "sends_telemetry_event": false

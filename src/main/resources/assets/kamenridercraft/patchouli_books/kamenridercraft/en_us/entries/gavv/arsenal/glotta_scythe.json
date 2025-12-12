@@ -2,7 +2,7 @@
   "name": "Glotta's Scythe",
   "icon": "kamenridercraft:glotta_scythe",
   "category": "kamenridercraft:gavv/arsenal",
-  "sortnum": 19,
+  "sortnum": 20,
   "pages": [
     {
       "type": "patchouli:text",

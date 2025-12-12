@@ -2,7 +2,7 @@
   "name": "Jeeb's Sword",
   "icon": "kamenridercraft:jeeb_sword",
   "category": "kamenridercraft:gavv/arsenal",
-  "sortnum": 16,
+  "sortnum": 17,
   "pages": [
     {
       "type": "patchouli:text",

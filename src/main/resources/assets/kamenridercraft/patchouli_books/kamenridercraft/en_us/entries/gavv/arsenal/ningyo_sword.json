@@ -2,7 +2,7 @@
 	"name": "Ningyo Sword",
 	"icon": "kamenridercraft:ningyo_sword",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 23,
+	"sortnum": 24,
 	"pages": [
 		{
 			"type": "patchouli:text",

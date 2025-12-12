@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-08T14:56:28.7553868	Item Models: kamenridercraft
+// 1.21.1	2025-12-11T18:46:32.1892656	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -304,6 +304,7 @@ a07acae377b6df0de55a2064bcc6ffcd24bb6c3a assets/kamenridercraft/models/item/helh
 2152c2fc9fadbf113bcdd9602ed109b55ff1f12b assets/kamenridercraft/models/item/henshin_belt_bitter_gavv.json
 6bbe917244b0301647dab998a63daa5c59451e88 assets/kamenridercraft/models/item/henshin_belt_caries_gavv.json
 02c36591229e460d9066cb2f800af08b567e94c7 assets/kamenridercraft/models/item/hexa_oooooo.json
+0cc69bffc6f45bf0f78f1b5524ae0fc3fb4d4368 assets/kamenridercraft/models/item/hexenheim_gochizo.json
 0b3e63b2e4a1e8e075805b09d34bf4ed3c7daadc assets/kamenridercraft/models/item/hibiki_gochizo.json
 85d7bf7624a9d9a3682635a77771f3c1ce8a554d assets/kamenridercraft/models/item/hibiki_ride_chemy_card.json
 bfcd33b4ac53a3edef57b2ea9090e0ae0578bc0f assets/kamenridercraft/models/item/hibiki_ring.json
@@ -603,6 +604,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/trid
 1bada45d21a5e95bb6dbaaa7bd34961fbea212ce assets/kamenridercraft/models/item/tulip_hopper.json
 4538de5996766bb40a1c11fbfc0f319ed719dce3 assets/kamenridercraft/models/item/twilight_the_sun_ride_chemy_card.json
 1301a169652af9e0f700a7fd61927d60b814925c assets/kamenridercraft/models/item/twilight_unicon_ride_chemy_card.json
+bc120008bab93622d29258ccd520141c65abf79a assets/kamenridercraft/models/item/uehouse_gochizo.json
 221a310598f80bf60db9edab4e1252997ccba023 assets/kamenridercraft/models/item/uirou_gochizo.json
 9d048d1ad2865a84eccdba82dc71bce074c7ece6 assets/kamenridercraft/models/item/ultimate_half_typhoon.json
 a909920125a282d03b532cebbfb875be7ebcaafe assets/kamenridercraft/models/item/ultimate_half_typhoon_core.json

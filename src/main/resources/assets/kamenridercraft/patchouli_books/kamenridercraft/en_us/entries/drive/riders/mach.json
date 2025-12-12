@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Mach",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh#mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Tire Effects:$(li)Slowness$(li)Resistance"
+			"text": "Appears in:$(li)Shuriken Sentai Ninninger Vs. Kamen Rider Drive Spring Vacation One-Hour Combining Special (2015, TV special)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh#mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Tire Effects:$(li)Slowness$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
