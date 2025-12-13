@@ -1,0 +1,16 @@
+{
+	"name": "Inazuma Blaster",
+	"icon": "kamenridercraft:inazuma_blaster",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used by Zeztz's $(l:zeztz/riders/zeztz#plasma)Inazuma Plasma$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/inazuma_blaster"
+		}
+	]
+}

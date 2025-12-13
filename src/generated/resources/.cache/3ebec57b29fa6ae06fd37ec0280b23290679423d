@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-11T18:46:32.1892656	Item Models: kamenridercraft
+// 1.21.1	2025-12-13T01:29:01.6921667	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -137,6 +137,7 @@ de2250bfe883e1ed67463df65256c8abd5279194 assets/kamenridercraft/models/item/cybo
 d550ff0edafc122c552b0a54ef88ced7083debf2 assets/kamenridercraft/models/item/daiohni_ride_chemy_card.json
 d98587fd3d27a942cc5b2f6100b3d1a48b87d9bd assets/kamenridercraft/models/item/dandeliner.json
 e04b1507db659e1de377184dede795670d27afc2 assets/kamenridercraft/models/item/dango.json
+bee274a3b67d96fb929fcb52af7fbb444b43131e assets/kamenridercraft/models/item/dan_o_belt.json
 60e221263b134875ff9d9cab18255f3a307dba4f assets/kamenridercraft/models/item/dark_ether_chemy_card.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_drive_mach.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_mach.json
@@ -489,6 +490,7 @@ b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhin
 1f1e0658a7c7e162219798477ca1764da00677bd assets/kamenridercraft/models/item/riderman_gochizo.json
 8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/rider_case.json
 744f2caf73151f7129329cac6b7ecb32cacf553d assets/kamenridercraft/models/item/rider_gashat_case.json
+148898e65206158bc092068b1a853fdc9bc464b3 assets/kamenridercraft/models/item/rider_ticket_dan_o.json
 148898e65206158bc092068b1a853fdc9bc464b3 assets/kamenridercraft/models/item/rider_ticket_shin_o.json
 83601cc67f1d9c217d4cd395b0e7c133c4f2fd2c assets/kamenridercraft/models/item/ridestriker_ridewatch.json
 e4e1930700e61ef1158f1323ba920596aa3b3421 assets/kamenridercraft/models/item/rocket_nadeshiko_switch.json

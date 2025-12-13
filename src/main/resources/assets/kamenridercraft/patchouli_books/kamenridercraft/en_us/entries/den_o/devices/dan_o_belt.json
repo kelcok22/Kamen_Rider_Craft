@@ -1,0 +1,19 @@
+{
+	"name": "Dan-O Belt",
+	"icon": "kamenridercraft:dan_o_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Recycle Zoo: Protect It! Thursday is the Resource Garbage Day (2020, short film)$(br2)Used alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/dan_o)Kamen Rider Dan-O"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dan_o_belt",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

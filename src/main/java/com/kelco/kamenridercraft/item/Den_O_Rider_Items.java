@@ -30,6 +30,19 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> IMAGIN_SAND = ITEMS.register("imagin_sand",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
+	public static final DeferredItem<Item> RIDER_TICKET_DAN_O_PLAT = ITEMS.register("rider_ticket_dan_o_plat",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","dan_o","dan_o_belt",
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.SMALL, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.HAPPY_MODE, 40, 4,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}.ChangeModel("dan_o.geo.json"));
+
 	public static final DeferredItem<Item> RIDER_TICKET_NEW_DEN_O = ITEMS.register("rider_ticket_new_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","new_den_o","new_den_o_belt_p",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
@@ -39,7 +52,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing());
+			}.IsBeltGlowing().addAlternative(RIDER_TICKET_DAN_O_PLAT.get()));
 
 	public static final DeferredItem<Item> RIDER_TICKET = ITEMS.register("rider_ticket",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","den_o","den_o_belt_p",
@@ -391,6 +404,20 @@ public class Den_O_Rider_Items {
 				}
 			}.ChangeBeltModel("geo/lv_1_belt.geo.json").has_basic_model().model_has_different_name("rider_ticket_sword"));
 
+	public static final DeferredItem<Item> RIDER_TICKET_DAN_O = ITEMS.register("rider_ticket_dan_o",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dan_o","dan_o_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.SMALL, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.HAPPY_MODE, 40, 4,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("rider_ticket_sword"));
+
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
@@ -433,6 +460,10 @@ public class Den_O_Rider_Items {
 
 	public static final DeferredItem<Item> SHIN_O_BELT = ITEMS.register("shin_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
+					.AddToTabList(RiderTabs.DEN_O_TAB_ITEM).has_basic_model().ChangeRepairItem(IMAGIN_SAND.get()));
+
+	public static final DeferredItem<Item> DAN_O_BELT = ITEMS.register("dan_o_belt",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dan_o",RIDER_TICKET_DAN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.DEN_O_TAB_ITEM).has_basic_model().ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
