@@ -100,7 +100,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Kiva",
-        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Transforms with the $(l:kiva/devices/kivadriver)Kivat Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Regeneration II$(li)Haste II$(li)Jump Boost II$(li)Strength III"
+        "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Transforms with the $(l:kiva/devices/kivadriver)Kivat Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Regeneration II$(li)Haste II$(li)Jump Boost II$(li)Strength III$(li)Flying"
       },
 		{
 			"type": "patchouli:entity",

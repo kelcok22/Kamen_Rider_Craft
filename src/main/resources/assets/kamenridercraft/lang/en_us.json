@@ -2926,6 +2926,8 @@
 "kamenridercraft.name.pretty_den_o": "Rider: Kamen Rider Pretty Den-O",
 "item.kamenridercraft.shin_o_belt": "Shin-O Belt",
 "kamenridercraft.name.shin_o": "Rider: Kamen Rider Shin-O",
+"item.kamenridercraft.dan_o_belt": "Dan-O Belt",
+"kamenridercraft.name.dan_o": "Rider: Kamen Rider Dan-O",
 
 "item.kamenridercraft.rider_pass": "Rider Pass",
 "item.kamenridercraft.master_pass": "Master Pass",
@@ -2981,8 +2983,10 @@
 
   "kamenridercraft:rider_ticket.form": "Form: Plat Form",
   "kamenridercraft:rider_ticket_new_den_o.form": "Form: Plat Form",
+  "kamenridercraft:rider_ticket_dan_o_plat.form": "Form: Plat Form",
   "kamenridercraft:rider_ticket_sword.form": "Form: Sword Form",
   "kamenridercraft:rider_ticket_pretty_den_o.form": "Form: Pretty Sword Form",
+  "kamenridercraft:rider_ticket_dan_o.form": "Form: Sword Form",
   "kamenridercraft:rider_ticket_rod.form": "Form: Rod Form",
   "kamenridercraft:rider_ticket_ax.form": "Form: Axe Form",
   "kamenridercraft:rider_ticket_gun.form": "Form: Gun Form",

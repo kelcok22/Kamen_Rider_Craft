@@ -343,7 +343,7 @@
         "type": "patchouli:text",
         "anchor": "happy_mode",
         "title": "Happy Mode",
-        "text": "This effect makes the game a bit less violent. Mobs now spawn confetti when hit and go to sleep instead of being, er... \"unalived\".$(br2)Examples for how to get this effect:$(li)???"
+        "text": "This effect makes the game a bit more YouTube-friendly. Mobs now spawn confetti when hit and go to sleep once they've had enough fun.$(br2)Examples for how to get this effect:$(li)Transform into $(l:den_o/riders/shin_o)Kamen Rider Shin-O$(/l)$(li)Transform into $(l:den_o/riders/dan_o)Kamen Rider Dan-O$(/l)$(li)Use the $(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l)"
       },
 		{
 			"type": "patchouli:text",

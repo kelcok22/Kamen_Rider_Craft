@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Fourze",
-			"text": "Appears in:$(li)Kamen Rider Fourze × Crayon Shin-chan (2012, special)$(br2)Transforms with the $(l:fourze/devices/fourze_driver)Fourze Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Flatten$(li)Jump Boost II$(li)Boost II"
+			"text": "Appears in:$(li)Kamen Rider Fourze × Crayon Shin-chan (2012, special)$(br2)Transforms with the $(l:fourze/devices/fourze_driver)Fourze Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Flatten$(li)Jump Boost II$(li)Boost II$(li)Happy Mode V"
 		},
 		{
 			"type": "patchouli:entity",
