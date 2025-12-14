@@ -55,15 +55,6 @@ public class HeartRoidmudeModel<T extends Mob> extends PlayerModel<T> {
 		return LayerDefinition.create(meshdefinition, 128, 64);
 	}
 
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
-		this.leftPants.copyFrom(this.leftLeg);
-		this.rightPants.copyFrom(this.rightLeg);
-		this.leftSleeve.copyFrom(this.leftArm);
-		this.rightSleeve.copyFrom(this.rightArm);
-		this.jacket.copyFrom(this.body);
-	}
 	public static void addHead(MeshDefinition mesh) {
 		PartDefinition partdefinition = mesh.getRoot();
 

@@ -1,7 +1,5 @@
 {
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
-    
-        "textures": {
+    "textures": {
         "0": "kamenridercraft:block/ganbarizing_bottom_front",
         "1": "kamenridercraft:block/ganbarizing_bottom_side",
         "2": "kamenridercraft:block/ganbarizing_bottom_top",
