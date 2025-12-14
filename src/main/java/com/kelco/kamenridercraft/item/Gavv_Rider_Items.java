@@ -610,12 +610,36 @@ public class Gavv_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 40, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
                             player.getX(), player.getY()+1,
-                            player.getZ(), 40, 0, 0, 0, 1);
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.MARSHMALLOW_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES2.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES3.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES4.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PUDDING_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 34, 0, 0, 0, 1);
                 }
             }.IsGlowing().AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 

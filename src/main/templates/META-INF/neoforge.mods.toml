@@ -41,7 +41,7 @@ logoFile="logo.png" #optional
 #credits="" #optional
 
 # A text field displayed in the mod UI
-authors="Kelco_K22, LiasDan, Axos, Chair, Doc, HosephHoestar, AndrewBean, Trainfanz" #optional
+authors="Kelco_K22, LiasDan, Axos, Chair, DocRider, HosephHoestar, AndrewBean, Trainfanz" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''Kamen Rider Craft began as a small project I started in late 2012, and has since evolved into a massive mod with hundreds of items, weapons, and forms with multiple developers on board. Back at the start of 2023 I decided to start to recode this mod from scratch. With the goal to make the mod a lot more friendly to work on, now over a year later there is still a lot of work to do, but I want to share it.'''
