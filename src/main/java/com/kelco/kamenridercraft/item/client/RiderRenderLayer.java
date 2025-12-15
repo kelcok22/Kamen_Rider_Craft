@@ -27,7 +27,7 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
 
     @Nullable
     protected RenderType getRenderType(T animatable, @Nullable MultiBufferSource bufferSource) {
-        return RenderType.armorCutoutNoCull(getTextureResource(animatable));
+        return RenderType.entityTranslucent(getTextureResource(animatable));
     }
 
     /**

@@ -83,7 +83,7 @@ public class Faiz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().addAlternative(NEXT_KAIXA_AXEL_MISSION_MEMORY.get()).has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
+            }.IsBeltGlowing().IsGlowing().ChangeModel("next_faiz.geo.json").addAlternative(NEXT_KAIXA_AXEL_MISSION_MEMORY.get()).has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
 	    
 	public static final DeferredItem<Item> FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("faiz_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_axel","faiz","faiz_driver_belt_a",

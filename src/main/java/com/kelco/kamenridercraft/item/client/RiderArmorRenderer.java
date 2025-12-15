@@ -1,6 +1,8 @@
 package com.kelco.kamenridercraft.item.client;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
@@ -9,6 +11,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
@@ -48,6 +51,10 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
 		return model.getBone("armorBody").orElse(super.getLeftBootBone(model));
 	}
     */
+    @Override
+    public RenderType getRenderType(RiderArmorItem animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
+        return RenderType.entityTranslucent(texture);
+    }
 
     protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
         setAllVisible(false);
