@@ -179,7 +179,7 @@ public class Ryuki_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.RYUKI_TAB_ITEM));
+            }.ChangeModel("femme.geo.json").ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> DRAGBLACKER_ADVENT = ITEMS.register("dragblacker_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ryuga","v_buckle_belt_ryuga",
