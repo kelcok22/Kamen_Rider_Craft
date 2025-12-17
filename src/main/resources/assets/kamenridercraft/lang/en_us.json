@@ -1849,7 +1849,7 @@
 "item.kamenridercraft.original_typhoon_core": "Typhoon Core (Original)",
   "kamenridercraft:original_typhoon_core.form": "Form: Original Edition",
   "kamenridercraft:original_typhoon_core_nigo.form": "Form: Original Edition",
-  "kamenridercraft:typhoon_core_artist.form": "Form: Base Form (SIC Artist Series)",
+  "kamenridercraft:typhoon_core_artist.form": "Form: Base Form (S.I.C. Artist Series)",
   "item.kamenridercraft.ichigo_manga": "Kamen Rider Manga",
   "kamenridercraft:ichigo_manga.form": "Form: Base Form (Manga)",
 "item.kamenridercraft.typhoon_core_nigo": "Typhoon Core (Nigo)",
@@ -1932,10 +1932,10 @@
   "kamenridercraft:double_typhoon_core.form": "Form: Base Form",
 "item.kamenridercraft.blue_double_typhoon_core": "Blue Double Typhoon Core",
   "kamenridercraft:blue_double_typhoon_core.form": "Form: Blue Form",
-  "kamenridercraft:double_typhoon_core_artist.form": "Form: Base Form (SIC Artist Series)",
+  "kamenridercraft:double_typhoon_core_artist.form": "Form: Base Form (S.I.C. Artist Series)",
 "item.kamenridercraft.riderman_belt_core": "Rider Buckle Core",
   "kamenridercraft:riderman_belt_core.form": "Form: Base Form",
-  "kamenridercraft:riderman_belt_core_artist.form": "Form: Base Form (SIC Artist Series)",
+  "kamenridercraft:riderman_belt_core_artist.form": "Form: Base Form (S.I.C. Artist Series)",
 
 "item.kamenridercraft.double_typhoon": "Double Typhoon",
 "kamenridercraft.name.v3": "Rider: Kamen Rider V3",
@@ -1990,7 +1990,7 @@
 "item.kamenridercraft.strongerlegs": "Stronger Leggings",
 "item.kamenridercraft.electrer_core": "Electrer Core",
   "kamenridercraft:electrer_core.form": "Form: Base Form",
-  "kamenridercraft:electrer_core_artist.form": "Form: Base Form (SIC Artist Series)",
+  "kamenridercraft:electrer_core_artist.form": "Form: Base Form (S.I.C. Artist Series)",
 "item.kamenridercraft.charge_up": "Super Electronic Dynamo",
   "kamenridercraft:charge_up.form": "Form: Charge Up Form",
 "item.kamenridercraft.tackle_core": "Tackle Core",
@@ -2004,7 +2004,7 @@
 "kamenridercraft.name.black_tackle": "Debatable Rider: Electronic Wave Humanoid Black Tackle",
 "item.kamenridercraft.dark_electrer": "Electrer",
 "kamenridercraft.name.dark_stronger": "Rider: Dark Stronger",
-  "kamenridercraft:tackle_core_artist.form": "Form: Base Form (SIC Artist Series)",
+  "kamenridercraft:tackle_core_artist.form": "Form: Base Form (S.I.C. Artist Series)",
 
 "item.kamenridercraft.skyrider_logo": "Skyrider Logo",
 "item.kamenridercraft.skyriderhead": "Skyrider Helmet",
@@ -2512,7 +2512,7 @@
   "kamenridercraft:advent_card.form": "Form: Blank Form",
   "kamenridercraft:survive_shippu.form": "Form: Survive",
   "kamenridercraft:survive_shippu_raia.form": "Form: Survive",
-  "kamenridercraft:survive_shippu_ouja.form": "Form: Survive (SIC)",
+  "kamenridercraft:survive_shippu_ouja.form": "Form: Survive (S.I.C.)",
   "kamenridercraft:survive_rekka.form": "Form: Survive",
   "kamenridercraft:survive_rekka_ryuga.form": "Form: Survive",
   "kamenridercraft:survive_mugen.form": "Form: Survive",
@@ -5435,7 +5435,7 @@
   "kamenridercraft:taiko_master_hibiki_gashat.form": "Form: Hibiki Gamer Lv. 2",
   "kamenridercraft:king_of_poker_blade_gashat.form": "Form: Blade Gamer Lv. 2",
   "kamenridercraft:moshi_moshi_faiz_gashat.form": "Form: Faiz Gamer Lv. 2",
-  "kamenridercraft:mirror_labyrinth_ryuki_gashat.form": "Form: Ryuki Gamer Lv. 2",
+  "kamenridercraft:mirror_labryinth_ryuki_gashat.form": "Form: Ryuki Gamer Lv. 2",
   "kamenridercraft:agito_of_the_sun_gashat.form": "Form: Agito Gamer Lv. 2",
   "kamenridercraft:adventure_guy_kuuga_gashat.form": "Form: Kuuga Gamer Lv. 2",
   "kamenridercraft:lets_go_ichigou_gashat.form": "Form: Ichigo Gamer Lv. 2",
@@ -8450,7 +8450,7 @@
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
 
-  "kamenridercraft:kuuga_amazing_mighty_artist.form": "Form: Amazing Mighty Form (SIC Artist Series)",
+  "kamenridercraft:kuuga_amazing_mighty_artist.form": "Form: Amazing Mighty Form (S.I.C. Artist Series)",
 
 "item.kamenridercraft.card_warrior_kamen_rider_manga": "Card Warrior Kamen Rider Manga",
 
