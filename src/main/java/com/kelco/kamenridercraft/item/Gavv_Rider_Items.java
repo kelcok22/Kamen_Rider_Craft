@@ -45,7 +45,7 @@ public class Gavv_Rider_Items {
 	public static List<Item> ICE_CREAM= new ArrayList<>();
     public static List<Item> LEGEND= new ArrayList<>();
 	public static List<Item> HALLOWEEN= new ArrayList<>();
-
+    public static List<Item> SENTAI= new ArrayList<>();
 
     public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<>();
 
@@ -1349,7 +1349,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 10, 0, 0, 0, 1);
                 }
-            } .IsGlowing().AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().AddToList(SENTAI).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> JEEB_MIMIC_KEY = ITEMS.register("jeeb_mimic_key",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","jeeb","blank",

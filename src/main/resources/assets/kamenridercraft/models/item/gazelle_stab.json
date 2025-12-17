@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "kamenridercraft:item/gazelle_stab",
@@ -191,11 +192,11 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 0, -90],
-			"translation": [6.5, -2, 3.25]
+			"translation": [6.51, -2, 3.25]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [0, 0, -90],
-			"translation": [6.5, -2, 3.25]
+			"translation": [6.51, -2, 3.25]
 		},
 		"firstperson_righthand": {
 			"rotation": [60, 0, 60]
@@ -209,7 +210,7 @@
 			"scale": [0.6, 0.6, 0.6]
 		},
 		"fixed": {
-			"rotation": [90, -45, 180],
+			"rotation": [90, -45, -180],
 			"translation": [-4.25, -4.25, -5.5],
 			"scale": [0.75, 0.75, 0.75]
 		}

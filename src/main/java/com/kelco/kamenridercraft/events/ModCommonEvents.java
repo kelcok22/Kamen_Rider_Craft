@@ -128,10 +128,13 @@ public class ModCommonEvents {
 		private Item getGochizoDrop(ItemStack itemstack,Level level) {
 			Random generator = new Random();
 
+            ResourceKey<Level> SUPER_SENTAI_TOPIA = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("supersentaicraft:super_sentai_topia"));
             ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 
             int legend_rand = generator.nextInt(Gavv_Rider_Items.LEGEND.size());
+            int sentai_rand = generator.nextInt(Gavv_Rider_Items.SENTAI.size());
             if (level.dimension() == CITY) return Gavv_Rider_Items.LEGEND.get(legend_rand);
+            else if (level.dimension() == SUPER_SENTAI_TOPIA) return Gavv_Rider_Items.SENTAI.get(sentai_rand);
             else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/gummy_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.GUMMY.size());
 				return Gavv_Rider_Items.GUMMY.get(rand);
