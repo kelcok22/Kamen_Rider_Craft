@@ -8753,6 +8753,8 @@
 	"entity.kamenridercraft.rose_attacker": "Rose Attacker",
 	"entity.kamenridercraft.bike_gamer": "Bike Gamer",
   "entity.kamenridercraft.machine_builder": "Machine Builder",
+  "entity.kamenridercraft.sports_gamer": "Sports Gamer",
+  "entity.kamenridercraft.proto_sports_gamer": "Proto Sports Gamer",
   "entity.kamenridercraft.ridestriker": "Ridestriker",
 	"entity.kamenridercraft.risehopper": "Risehopper",
 	"entity.kamenridercraft.diagospeedy": "Diagospeedy",
@@ -9022,6 +9024,8 @@
 	"item.kamenridercraft.toridevendor_spawn_egg": "ToRidevendor",
   "item.kamenridercraft.machine_massigler_spawn_egg": "Machine Massigler",
 	"item.kamenridercraft.bike_gamer_spawn_egg": "Bike Gamer",
+    "item.kamenridercraft.sports_gamer_spawn_egg": "Sports Gamer",
+    "item.kamenridercraft.proto_sports_gamer_spawn_egg": "Proto Sports Gamer",
 
 "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
   "block.kamenridercraft.shocker_logo": "Shocker Base Logo",

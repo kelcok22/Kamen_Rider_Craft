@@ -1,0 +1,16 @@
+{
+  "name": "Bike Gamer",
+  "icon": "kamenridercraft:proto_sports_gamer_spawn_egg",
+  "category": "kamenridercraft:ex_aid/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by $(l:ex_aid/riders/genm)Kamen Rider GenM$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:exaid/proto_sports_gamer_spawn_egg"
+    }
+  ]
+}

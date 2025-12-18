@@ -866,6 +866,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.MACEHINE_MASSIGLER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.TORIDEVENDOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.BIKE_GAMER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.SPORTS_GAMER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.PROTO_SPORTS_GAMER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SAKURA_HURRICANE.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.ROSE_ATTACKER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_BUILDER.get(), baseBikeEntity.setAttributes().build());

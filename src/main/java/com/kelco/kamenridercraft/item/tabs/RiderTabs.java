@@ -883,6 +883,8 @@ public class RiderTabs {
             event.accept(MobsCore.SAKURA_HURRICANE_SPAWN_EGG);
             event.accept(MobsCore.ROSE_ATTACKER_SPAWN_EGG);
             event.accept(MobsCore.BIKE_GAMER_SPAWN_EGG);
+            event.accept(MobsCore.SPORTS_GAMER_SPAWN_EGG);
+            event.accept(MobsCore.PROTO_SPORTS_GAMER_SPAWN_EGG);
             event.accept(MobsCore.MACEHINE_BUILDER_SPAWN_EGG);
             event.accept(MobsCore.RIDESTRIKER_SPAWN_EGG);
             event.accept(MobsCore.RISEHOPPER_SPAWN_EGG);

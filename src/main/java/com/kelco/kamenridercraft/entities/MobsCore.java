@@ -1530,6 +1530,18 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> BIKE_GAMER_SPAWN_EGG = ITEMS.register("bike_gamer_spawn_egg",
             () -> new DeferredSpawnEggItem(BIKE_GAMER, 0xffffff, 0x151515, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<SportsGamerBikeEntity>> SPORTS_GAMER = MOBLIST.register("sports_gamer",
+            () -> EntityType.Builder.of(SportsGamerBikeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":sports_gamer"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> SPORTS_GAMER_SPAWN_EGG = ITEMS.register("sports_gamer_spawn_egg",
+            () -> new DeferredSpawnEggItem(SPORTS_GAMER, 0xffffff, 0x151515, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ProtoSportsGamerBikeEntity>> PROTO_SPORTS_GAMER = MOBLIST.register("proto_sports_gamer",
+            () -> EntityType.Builder.of(ProtoSportsGamerBikeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":proto_sports_gamer"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PROTO_SPORTS_GAMER_SPAWN_EGG = ITEMS.register("proto_sports_gamer_spawn_egg",
+            () -> new DeferredSpawnEggItem(PROTO_SPORTS_GAMER, 0xffffff, 0x151515, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<MachineBuilderEntity>> MACEHINE_BUILDER = MOBLIST.register("machine_builder",
             () -> EntityType.Builder.of(MachineBuilderEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_builder"));
 
