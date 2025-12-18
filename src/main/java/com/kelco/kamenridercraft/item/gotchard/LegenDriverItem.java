@@ -36,8 +36,8 @@ public class LegenDriverItem extends RiderDriverItem {
 		}
 		else if (equipmentSlot == EquipmentSlot.CHEST) {
 			if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGEND_RIDE_CHEMY_CARD.get()) return "blank";
-			else if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGENDARY_LEGEND_RIDE_CHEMY_CARD.get()) return "blank";
-			else if (Objects.equals(get_Form_Item(itemstack, 1).getBeltTex(), "legendriver_belt_l")&&get_Form_Item(itemstack,1)!=Gotchard_Rider_Items.RYUKI_SURVIVE_RIDE_CHEMY_CARD.get()) return "legend_ride_final";
+			else if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGENDARY_LEGEND_RIDE_CHEMY_CARD.get()||get_Form_Item(itemstack,1)==Gotchard_Rider_Items.RYUKI_SURVIVE_RIDE_CHEMY_CARD.get()) return "blank";
+			else if (Objects.equals(get_Form_Item(itemstack, 1).getBeltTex(), "legendriver_belt_l")) return "legend_ride_final";
 			else return "legend_ride";
 		}
 
