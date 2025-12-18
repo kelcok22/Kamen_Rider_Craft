@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/giant_spider_vistamp"
+		"kamenridercraft:revice/giff_eye",
+		"kamenridercraft:revice/giant_spider_vistamp"
 	]
   },
   "sends_telemetry_event": false

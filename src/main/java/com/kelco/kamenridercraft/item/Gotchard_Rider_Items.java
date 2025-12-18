@@ -1868,7 +1868,7 @@ public class Gotchard_Rider_Items {
 			.ChangeRiderName("agito_shining").ChangeModel("agito_shining.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> RYUKI_SURVIVE_RIDE_CHEMY_CARD = ITEMS.register("ryuki_survive_ride_chemy_card",
-			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"_ryuki_survive","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -1877,7 +1877,7 @@ public class Gotchard_Rider_Items {
                     .setBaseSummon((RiderDriverItem) Ryuki_Rider_Items.RYUKIDRIVER.get())
                     .setSuperSummon((RiderDriverItem) Ryuki_Rider_Items.RYUKIDRIVER.get(), (RiderFormChangeItem) Ryuki_Rider_Items.DRAG_SHIELD_VENT_FORM.get())
 			.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2).IsGlowing()
-			.ChangeRiderName("ryuki_survive").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+			.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_RIDE_CHEMY_CARD = ITEMS.register("faiz_blaster_ride_chemy_card",
             () -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",
