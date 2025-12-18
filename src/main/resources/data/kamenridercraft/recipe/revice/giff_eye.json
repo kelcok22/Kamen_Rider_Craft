@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "giff",
+  "ingredients": [
+{
+      "item": "kamenridercraft:giff_stamp"
+    }, 
+    {
+      "item": "minecraft:ender_eye"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:giff_eye"
+  }
+}

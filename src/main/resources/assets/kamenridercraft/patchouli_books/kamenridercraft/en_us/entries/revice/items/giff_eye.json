@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:giff_eye",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/giff_eye"
 		}
 	]
 }
