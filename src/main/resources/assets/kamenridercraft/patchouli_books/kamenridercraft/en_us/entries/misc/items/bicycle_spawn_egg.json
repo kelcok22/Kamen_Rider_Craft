@@ -1,0 +1,17 @@
+{
+	"name": "Bicycle",
+	"icon": "kamenridercraft:bicycle_spawn_egg",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Perfect for postal demons or people with bad luck"
+		},
+		{
+			"link_recipe": true,
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/bicycle_spawn_egg"
+		}
+	]
+}

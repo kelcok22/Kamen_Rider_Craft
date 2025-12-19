@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:build/blood",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:build_driver_killbus"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:killbus"
+        }
+      }
+    }
   }
 }

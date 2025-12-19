@@ -14,6 +14,7 @@ public class ProtoSportsGamerBikeEntity extends baseBikeEntity {
 		super(entityType, level);
 		NAME ="proto_sports_gamer";
 		NAME_MODEL ="proto_sports_gamer";
+		NAME_ANIMATIONS ="bicycle";
 		}
 
 

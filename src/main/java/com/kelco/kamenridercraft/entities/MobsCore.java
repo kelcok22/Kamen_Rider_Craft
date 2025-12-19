@@ -1445,7 +1445,14 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> SHIN_NO_0_SPAWN_EGG = ITEMS.register("shin_no_0_spawn_egg",
             () -> new DeferredSpawnEggItem(SHIN_NO_0, 0x131524, 0x00118E, new Item.Properties()));
-    
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BicycleEntity>> BICYCLE = MOBLIST.register("bicycle",
+            () -> EntityType.Builder.of(BicycleEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":bicycle"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BICYCLE_SPAWN_EGG = ITEMS.register("bicycle_spawn_egg",
+            () -> new DeferredSpawnEggItem(BICYCLE, 0xffffff, 0x151515, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
             () -> EntityType.Builder.of(AcrobatterEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":acrobatter"));
 
@@ -1568,6 +1575,11 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> DIAGOSPEEDY_SPAWN_EGG = ITEMS.register("diagospeedy_spawn_egg",
             () -> new DeferredSpawnEggItem(DIAGOSPEEDY, 0xffffff, 0x151515, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<ViceBikeEntity>> VICE_BIKE = MOBLIST.register("vice_bike",
+            () -> EntityType.Builder.of(ViceBikeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":sports_gamer"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> VICE_BIKE_SPAWN_EGG = ITEMS.register("vice_bike_spawn_egg",
+            () -> new DeferredSpawnEggItem(VICE_BIKE, 0xffffff, 0x151515, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
                   () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));

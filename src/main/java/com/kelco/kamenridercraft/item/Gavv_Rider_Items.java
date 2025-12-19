@@ -687,6 +687,26 @@ public class Gavv_Rider_Items {
             }
                     .IsGlowing().has_basic_model().AddToList(COFFEE,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+    public static final DeferredItem<Item> CHOCORAPPA_GOCHIZO = ITEMS.register("chocorappa_gochizo",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_parfait_mode","valen_frappe_custom","vrastumgear_belt_parfait",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }
+                    .IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> DOPPUDDING_GOCHIZO = ITEMS.register("doppudding_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","vram","vrastumgear_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)

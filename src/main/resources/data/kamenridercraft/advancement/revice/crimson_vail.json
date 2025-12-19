@@ -16,35 +16,14 @@
     },
     "parent": "kamenridercraft:revice/vail",
     "criteria": {
-      "1": {
-        "trigger": "minecraft:inventory_changed",
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
         "conditions": {
-          "player": {
-            "equipment": {
-              "head": {
-                "items": [
-                  "kamenridercraft:revice_head"
-                ]
-              },
-              "chest": {
-                "items": [
-                  "kamenridercraft:revice_troso"
-                ]
-              },
-              "legs": {
-                "items": [
-                  "kamenridercraft:revice_legs"
-                ]
-              },
-              "feet": {
-                "items": [
-                  "kamenridercraft:vail_belt"
-                ]
-              }
-            }
+          "entity": {
+            "type": "kamenridercraft:vail"
           }
         }
       }
     }
-  }
+}
   

@@ -854,6 +854,7 @@ public class ModCommonEvents {
         event.put(MobsCore.BATTA_AUGMENT.get(), BattaAugmentEntity.setAttributes().build());
         event.put(MobsCore.SHIN_NO_0.get(), ShinNo0Entity.setAttributes().build());
 
+		event.put(MobsCore.BICYCLE.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.RIDORON.get(), RidoronEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());

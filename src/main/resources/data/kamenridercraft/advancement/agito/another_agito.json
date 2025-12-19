@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:agito/gills",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:agitohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:agitotroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:agitolegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:ank_point"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:another_agito"
+        }
+      }
+    }
   }
 }

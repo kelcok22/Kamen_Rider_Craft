@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:hibiki/todoroki",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:hibikihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:hibikitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:hibikilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:kabukidriver"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:kabuki"
+        }
+      }
+    }
   }
 }

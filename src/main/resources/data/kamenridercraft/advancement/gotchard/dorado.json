@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:gotchard/legend",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gotchard_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gotchard_torso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gotchard_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:eldoradriver"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:dorado"
+        }
+      }
+    }
   }
 }

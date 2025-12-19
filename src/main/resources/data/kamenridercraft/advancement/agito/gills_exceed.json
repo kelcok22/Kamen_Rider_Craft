@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:agito_shining"
+	  "id": "kamenridercraft:exceed_gills"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.agito.agito_shining.title"
+      "translate": "advancements.kamenridercraft.agito.gills_exceed.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.agito.agito_shining.description"
+      "translate": "advancements.kamenridercraft.agito.gills_exceed.description"
     },
-    "frame": "goal",
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/agito_burning",
+  "parent": "kamenridercraft:agito/gills",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -38,15 +38,15 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:alter_ring"
-			  ],
+				"kamenridercraft:meta_factor"
+              ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:agito_shining\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:exceed_gills\"}"
               }
-			}
-		  }
-		}
-	  }
-	}
+            }
+          }
+        }
+      }
+    }
   }
 }

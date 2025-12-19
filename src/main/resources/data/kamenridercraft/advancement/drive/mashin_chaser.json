@@ -17,34 +17,13 @@
     "parent": "kamenridercraft:drive/mach",
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:inventory_changed",
+        "trigger": "minecraft:player_killed_entity",
         "conditions": {
-          "player": {
-            "equipment": {
-              "head": {
-                "items": [
-                  "kamenridercraft:drive_head"
-                ]
-              },
-              "chest": {
-                "items": [
-                  "kamenridercraft:drive_troso"
-                ]
-              },
-              "legs": {
-                "items": [
-                  "kamenridercraft:drive_legs"
-                ]
-              },
-              "feet": {
-                "items": [
-                  "kamenridercraft:break_gunner_belt"
-                ]
-              }
-            }
+          "entity": {
+            "type": "kamenridercraft:mashin_chaser"
           }
         }
       }
     }
-  }
+}
   

@@ -6,14 +6,14 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 
-public class SportsGamerBikeEntity extends baseBikeEntity {
+public class ViceBikeEntity extends baseBikeEntity {
 
 
 
-	public SportsGamerBikeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
+	public ViceBikeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
 		super(entityType, level);
-		NAME ="sports_gamer";
-		NAME_MODEL ="sports_gamer";
+		NAME ="vice_bike";
+		NAME_MODEL ="vice_bike";
 		NAME_ANIMATIONS ="bicycle";
 		}
 

@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:saber/saikou",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:saberhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:sabertroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:saberlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:haken_bladriver_falchion"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:falchion"
+        }
+      }
+    }
   }
 }

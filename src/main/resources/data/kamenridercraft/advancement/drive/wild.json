@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:agito_shining"
+	  "id": "kamenridercraft:wildshift"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.agito.agito_shining.title"
+      "translate": "advancements.kamenridercraft.drive.wild.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.agito.agito_shining.description"
+      "translate": "advancements.kamenridercraft.drive.wild.description"
     },
-    "frame": "goal",
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/agito_burning",
+  "parent": "kamenridercraft:drive/zero_drive",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,25 +23,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:agitohead"
+				"kamenridercraft:drive_head"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:agitotroso"
+				"kamenridercraft:drive_troso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:agitolegs"
+				"kamenridercraft:drive_legs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:alter_ring"
+				"kamenridercraft:drivedriver"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:agito_shining\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:wildshift\"}"
               }
 			}
 		  }

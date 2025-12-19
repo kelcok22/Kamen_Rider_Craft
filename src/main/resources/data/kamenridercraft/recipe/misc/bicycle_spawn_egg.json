@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "kamen_rider",
+  "pattern": [
+    "XCX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:bell"
+    },
+    "B": {
+      "item": "kamenridercraft:bicycle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:bicycle_spawn_egg"
+  }
+}

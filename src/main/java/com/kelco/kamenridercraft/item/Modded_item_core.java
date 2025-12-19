@@ -55,6 +55,14 @@ public class Modded_item_core {
     public static final DeferredItem<Item> ICE_POP3 = ITEMS.register("icepop3",
             () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> MILK_BOTTLE = ITEMS.register("milk_bottle",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 500, 4), 1.0F).build()))
+                    .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item> PUZZLE_PIECE = ITEMS.register("puzzle_piece",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(0).fast().saturationModifier(0f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 40, 2), 1.0F).build()))
+                    .HasHoverTex().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
+
 
     public static final DeferredItem<Item>  DONUT = ITEMS.register("donut",
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));

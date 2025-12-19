@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:drive/dark_drive",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:drive_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:drive_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:drive_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:banno_driver_gord_drive"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:gord_drive"
+        }
+      }
+    }
   }
 }

@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:showa/black",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:blackhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:blacktorso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:blacklegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:shadow_charger"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "kamenridercraft:shadowmoon"
+          }
+        }
+      }
+    }
   }
-}

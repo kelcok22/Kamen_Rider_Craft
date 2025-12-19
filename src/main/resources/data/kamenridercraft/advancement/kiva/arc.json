@@ -14,36 +14,15 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:kiva/rey",
+  "parent": "kamenridercraft:kiva/dark_kiva",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kivahead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kivatroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kivalegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:arcdriver"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:arc"
+        }
+      }
+    }
   }
 }

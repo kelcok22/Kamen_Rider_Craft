@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:dragon_evol_bottle"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.build.evol_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.evol_dragon.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/evol",
+  "criteria": {
+	"requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "kamenridercraft:buildhead"
+              ]
+            },
+            "chest": {
+              "items": [
+                "kamenridercraft:buildtroso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "kamenridercraft:buildlegs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "kamenridercraft:evol_driver"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dragon_evol_bottle\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
