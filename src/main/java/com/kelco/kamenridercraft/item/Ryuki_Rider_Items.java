@@ -249,7 +249,7 @@ public class Ryuki_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
             }
-                    .IsGlowing());
+                    .IsGlowing().ChangeModel("ryuki_survive.geo.json"));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA = ITEMS.register("survive_rekka",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive","ryuki","v_buckle_belt_ryuki_s",
@@ -687,7 +687,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).ChangeModel("zolda.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
     public static final DeferredItem<Item> EVIL_WHIP_VENT = ITEMS.register("evil_whip_vent",
 			() -> new AdventCardItem(new Item.Properties(), "raia", EVIL_VISOR.get(), EVIL_WHIP.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));

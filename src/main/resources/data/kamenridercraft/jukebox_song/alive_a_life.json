@@ -3,6 +3,6 @@
   "description": {
     "translate": "item.kamenridercraft.alive_a_life.desc"
   },
-  "length_in_seconds": 77,
+  "length_in_seconds": 68,
   "sound_event": "kamenridercraft:alive_a_life"
 }
