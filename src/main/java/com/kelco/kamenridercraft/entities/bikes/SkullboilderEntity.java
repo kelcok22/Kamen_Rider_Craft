@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -11,7 +12,7 @@ public class SkullboilderEntity extends baseBikeEntity {
 
 	
 	public SkullboilderEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.SKULLBOILER_SPAWN_EGG.get());
 		NAME ="skullboilder";
 		}
 

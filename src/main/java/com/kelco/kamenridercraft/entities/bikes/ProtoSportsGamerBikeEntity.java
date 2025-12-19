@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -11,7 +12,7 @@ public class ProtoSportsGamerBikeEntity extends baseBikeEntity {
 
 
 	public ProtoSportsGamerBikeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.PROTO_SPORTS_GAMER_SPAWN_EGG.get());
 		NAME ="proto_sports_gamer";
 		NAME_MODEL ="proto_sports_gamer";
 		NAME_ANIMATIONS ="bicycle";

@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,7 +14,7 @@ public class RidoronEntity extends baseBikeEntity {
 
 
 	public RidoronEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.RIDORON_SPAWN_EGG.get());
 		NAME ="ridoron";
 		NAME_MODEL ="ridoron";
 		NAME_ANIMATIONS ="ridoron";

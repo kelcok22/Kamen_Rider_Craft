@@ -1,5 +1,7 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -11,7 +13,7 @@ public class RidestrikerEntity extends baseBikeEntity {
 
 
 	public RidestrikerEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, Zi_O_Rider_Items.RIDESTRIKER_RIDEWATCH.get());
 		NAME ="ridestriker";
 		NAME_MODEL ="ridestriker";
 		}

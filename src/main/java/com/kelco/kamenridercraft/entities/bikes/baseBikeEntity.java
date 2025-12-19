@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entities.bikes;
 
 import javax.annotation.Nullable;
 
+import com.kelco.kamenridercraft.item.BaseItems.SummonBikeItem;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -24,6 +25,8 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
@@ -47,10 +50,13 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
 	public RawAnimation DRIVE_BACKWARDS = RawAnimation.begin().thenLoop("animation.model.walk_backwards");
 
+	public Item VEHICLE_DROP = Items.AIR;
 
-	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level) {
+
+	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level, Item drop) {
 		super(entityType, level);
 		this.setPersistenceRequired();
+		this.VEHICLE_DROP = drop;
 	}
 	boolean shouldSourceDestroy(DamageSource source) {
 		return false;
@@ -210,6 +216,13 @@ if (this.onGround()){
 
 			this.xRotO = passenger.xRotO;
 		}
+	}
+
+	@Override
+	public void die(DamageSource p_21809_) {
+		super.die(p_21809_);
+		if (!this.level().isClientSide()) this.spawnAtLocation(this.VEHICLE_DROP);
+
 	}
 
 

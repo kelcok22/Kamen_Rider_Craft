@@ -18,7 +18,7 @@ import net.minecraft.world.level.Level;
 public class BicycleEntity extends baseBikeEntity {
 
 	public BicycleEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.BICYCLE_SPAWN_EGG.get());
 		NAME ="bicycle";
 		NAME_MODEL ="bicycle";
 		NAME_ANIMATIONS ="bicycle";

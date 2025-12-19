@@ -25,7 +25,7 @@ public class RidevendorVendingModeEntity extends baseBikeEntity {
 	public static List<Item> CANDROID= new ArrayList<>();
 
 	public RidevendorVendingModeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.RIDEVENDOR_SPAWN_EGG.get());
 		NAME ="ridevendor_vending";
 		NAME_MODEL ="ridevendor_vending";
 		}

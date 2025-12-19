@@ -7,6 +7,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -20,7 +21,7 @@ public class ToridevendorEntity extends baseBikeEntity {
 
 
 	public ToridevendorEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.RIDEVENDOR_SPAWN_EGG.get());
 		NAME ="toridevendor";
 		NAME_MODEL ="toridevendor";
 		}
@@ -55,6 +56,13 @@ public class ToridevendorEntity extends baseBikeEntity {
 
 		}
 		return InteractionResult.PASS;
+	}
+
+	@Override
+	public void die(DamageSource p_21809_) {
+		super.die(p_21809_);
+		this.spawnAtLocation(OOO_Rider_Items.TORA_CANDROID.get());
+
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {

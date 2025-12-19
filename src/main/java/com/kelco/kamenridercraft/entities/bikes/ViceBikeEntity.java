@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -11,7 +12,7 @@ public class ViceBikeEntity extends baseBikeEntity {
 
 
 	public ViceBikeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.VICE_BIKE_SPAWN_EGG.get());
 		NAME ="vice_bike";
 		NAME_MODEL ="vice_bike";
 		NAME_ANIMATIONS ="bicycle";

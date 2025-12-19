@@ -18,7 +18,7 @@ import net.minecraft.world.level.Level;
 public class RidevendorEntity extends baseBikeEntity {
 
 	public RidevendorEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level);
+		super(entityType, level, MobsCore.RIDEVENDOR_SPAWN_EGG.get());
 		NAME ="ridevendor";
 		NAME_MODEL ="ridevendor";
 		}
