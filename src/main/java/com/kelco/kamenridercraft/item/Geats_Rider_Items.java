@@ -1508,7 +1508,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.ChangeSlot(2).SetOffhandSlot(3).ChangeModel("geats_rider_ouja.geo.json").AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
 	
 	public static final DeferredItem<Item> KING_OHGER_RAISE_BUCKLE = ITEMS.register("king_ohger_raise_buckle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
