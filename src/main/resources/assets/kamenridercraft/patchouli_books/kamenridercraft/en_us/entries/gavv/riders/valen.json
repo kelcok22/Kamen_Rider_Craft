@@ -132,6 +132,20 @@
       },
 		{
 			"type": "patchouli:entity",
+			"anchor": "parfait",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:chocorappa_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Parfait Mode",
+			"text": "Accessed with the $(l:gavv/items/gochizo#chocorappa_gochizo)Chocorappa Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valen",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Guilty Parfait (2025, V-Cinema film)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "tirol",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:tirolchocolate_gochizo_variety\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,

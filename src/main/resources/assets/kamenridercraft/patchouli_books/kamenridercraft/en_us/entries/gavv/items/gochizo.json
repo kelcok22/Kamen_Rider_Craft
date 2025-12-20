@@ -407,6 +407,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "chocorappa_gochizo",
+			"title": "Chocorappa Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Guilty Parfait (2025, V-Cinema film)$(br2)Used to access Valen's $(l:gavv/riders/valen#parfait)Parfait Mode$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chocorappa_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "doppudding_gochizo",
 			"title": "Doppudding Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Vram's $(l:gavv/riders/vram#doppudding)Pudding Custom$(/l)"
