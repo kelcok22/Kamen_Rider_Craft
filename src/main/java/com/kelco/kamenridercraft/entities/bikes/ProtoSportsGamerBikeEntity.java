@@ -16,6 +16,7 @@ public class ProtoSportsGamerBikeEntity extends baseBikeEntity {
 		NAME ="proto_sports_gamer";
 		NAME_MODEL ="proto_sports_gamer";
 		NAME_ANIMATIONS ="bicycle";
+		MAX_SPEED = 0.005f;
 		}
 
 

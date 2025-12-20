@@ -1,0 +1,16 @@
+  {
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_food",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blade_logo"
+	}, 
+	{
+      "item": "minecraft:milk_bucket"
+	} 
+  ],
+  "result":   {
+	"id": "kamenridercraft:milk_bottle"
+  }
+}

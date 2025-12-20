@@ -22,6 +22,7 @@ public class BicycleEntity extends baseBikeEntity {
 		NAME ="bicycle";
 		NAME_MODEL ="bicycle";
 		NAME_ANIMATIONS ="bicycle";
+		MAX_SPEED = 0.005f;
 		}
 
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {

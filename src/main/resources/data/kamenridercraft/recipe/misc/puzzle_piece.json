@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rider_food",
+  "pattern": [
+	"X",
+	"Z",
+	"Y"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:candy_wrapper"
+	}, "Z": {
+	  "item": "minecraft:paper"
+	}, "Y": {
+		  "item": "kamenridercraft:blade_logo"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:puzzle_piece"
+  }
+}

@@ -16,6 +16,7 @@ public class SportsGamerBikeEntity extends baseBikeEntity {
 		NAME ="sports_gamer";
 		NAME_MODEL ="sports_gamer";
 		NAME_ANIMATIONS ="bicycle";
+		MAX_SPEED = 0.005f;
 		}
 
 

@@ -1,18 +1,20 @@
-{
+  {
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "group": "lazer",
+  "group": "kr_ex_aid",
   "pattern": [
-    "XAX",
-    "XBX",
-    "XXX"
+    "GPG",
+    "GBG",
+    "GGG"
   ],
   "key": {
-    "X": {
+    "G": {
       "item": "kamenridercraft:blank_gashat"
-    }, "A": {
+    },
+    "P": {
       "item": "kamenridercraft:proto_shakariki_sports_gashat"
-    }, "B": {
+    },
+    "B": {
       "item": "kamenridercraft:bicycle"
     }
   },

@@ -12,10 +12,11 @@ public class ViceBikeEntity extends baseBikeEntity {
 
 
 	public ViceBikeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, MobsCore.VICE_BIKE_SPAWN_EGG.get());
-		NAME ="vice_bike";
-		NAME_MODEL ="vice_bike";
-		NAME_ANIMATIONS ="bicycle";
+		super(entityType, level, MobsCore.BICYCLE_SPAWN_EGG.get());
+		NAME = "vice_bike";
+		NAME_MODEL = "vice_bike";
+		NAME_ANIMATIONS = "bicycle";
+		MAX_SPEED = 0.015f;
 		}
 
 

@@ -45,6 +45,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public String NAME ="skullboilder";
 	public String NAME_MODEL ="hardboilder";
 	public String NAME_ANIMATIONS ="hardboilder";
+	public float MAX_SPEED = 0.01f;
 
 	public RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
@@ -153,7 +154,7 @@ if (this.onGround()){
 						//this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
 					}
 
-					if (this.getSpeed()<0.6) this.setSpeed(this.getSpeed()+0.01f);
+					if (this.getSpeed()<0.6) this.setSpeed(this.getSpeed()+MAX_SPEED);
 					setYRot(yRotO - passenger.xxa * 5F);
 					setXRot(passenger.getXRot() * 3f);
 
@@ -164,7 +165,7 @@ if (this.onGround()){
 				}else if (z<0) {
 					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
 
-					if (this.getSpeed()<1) this.setSpeed(this.getSpeed()+0.01f);
+					if (this.getSpeed()<1) this.setSpeed(this.getSpeed()+MAX_SPEED);
 					setYRot(yRotO + passenger.xxa * 5F);
 					setXRot(-passenger.getXRot() * 3f);
 

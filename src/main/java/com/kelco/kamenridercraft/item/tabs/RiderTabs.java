@@ -890,6 +890,7 @@ public class RiderTabs {
             event.accept(MobsCore.RIDESTRIKER_SPAWN_EGG);
             event.accept(MobsCore.RISEHOPPER_SPAWN_EGG);
             event.accept(MobsCore.DIAGOSPEEDY_SPAWN_EGG);
+            event.accept(MobsCore.VICE_BIKE_SPAWN_EGG);
 
             for (int i = 0; i < RiderTabs.Misc_TAB_ITEM.size(); i++)
             {

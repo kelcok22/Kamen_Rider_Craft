@@ -64,6 +64,28 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "milk_bottle",
+			"title": "Milk Bottle",
+			"text": "Gives Haste 5 when drank"
+		},
+		{
+			"title": " ",
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/milk_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "puzzle_piece",
+			"title": "Puzzle Piece",
+			"text": "Prevents someone from finishing a puzzle when eaten, found in the stomach of $(l:blade/riders/garren)Kamen Rider Garren$(/l)"
+		},
+		{
+			"title": " ",
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/puzzle_piece"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "donut",
 			"title": "Donut",
 			"text": "Restores 5 hunger points when eaten$(br2)Plain sugar flavor (probably)$(br2)Converts a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) into the $(l:gavv/items/gochizo#doumaru_gochizo)Doumaru Gochizo$(/l) when eaten"
