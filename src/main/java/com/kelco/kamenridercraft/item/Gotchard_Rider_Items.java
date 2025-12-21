@@ -65,6 +65,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_EnergyMaru= new ArrayList<>();
 	public static List<Item> NEED_ITEM_BulletChoucho= new ArrayList<>();
 	public static List<Item> NEED_ITEM_SmaHotaru= new ArrayList<>();
+    public static List<Item> NEED_ITEM_SpicleWhale= new ArrayList<>();
 
 	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<>();
 	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<>();
@@ -325,8 +326,26 @@ public class Gotchard_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPICLE_RIDE_CHEMY_CARD = ITEMS.register("spicle_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
-					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Vehicle_CHEMY).has_basic_model());
+            () -> new RideChemyCardItem(new Item.Properties(),0,"_spicle_whale","gotchard","gotchardriver_belt_big1",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
+                    .AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SpicleWhale).AddToList(NEED_ITEM_SpicleWhale)
+                    .AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
     
     public static final DeferredItem<Item> SKEBOWS_RIDE_CHEMY_CARD = ITEMS.register("skebows_ride_chemy_card",
             () -> new CopyChemyCardItem(new Item.Properties(),APPAREBUSHIDO_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_AppareSkebow)
@@ -562,8 +581,8 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GANVHALE_RIDE_CHEMY_CARD = ITEMS.register("ganvhale_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
-					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).has_basic_model());
+            () -> new CopyChemyCardItem(new Item.Properties(),SPICLE_RIDE_CHEMY_CARD.get())
+                    .AddToList(NEED_ITEM_SpicleWhale).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIXION_RIDE_CHEMY_CARD = ITEMS.register("lixion_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));

@@ -185,7 +185,7 @@ public class Effect_core {
             () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
-            () -> new BasicEffect(MobEffectCategory.HARMFUL, 0xffffff));
+            () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
     public static final Holder<MobEffect>  GREEED= EFFECT.register("greeed",
             () -> new 	GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
