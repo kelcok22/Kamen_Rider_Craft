@@ -179,7 +179,7 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:exaid/gamecreator",
-			"text": "$(li)$(l:ex_aid/items/rider_gashats#giri_giri_chambara_gashat)Giri Giri Chambara Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#shakariki_sports_gashat)Shakariki Sports Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) (1.6%)$(li)$(l:ex_aid/items/rider_gashats#mighty_creator_vrx_gashat)Mighty Creator VRX Gashat$(/l) (0.8%)"
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#giri_giri_chambara_gashat)Giri Giri Chambara Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#shakariki_sports_gashat)Shakariki Sports Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#mighty_creator_vrx_gashat)Mighty Creator VRX Gashat$(/l) (0.8%)"
 		},
 		{
 			"type": "patchouli:text",

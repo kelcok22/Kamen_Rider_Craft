@@ -308,7 +308,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dangerous_zombie_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm)Genm$(/l) with the $(li)$(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

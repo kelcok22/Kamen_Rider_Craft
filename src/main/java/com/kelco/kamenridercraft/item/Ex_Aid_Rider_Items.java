@@ -717,7 +717,7 @@ public class Ex_Aid_Rider_Items {
             }
 			.addAlternative(DANGEROUS_ZOBIE_GASHAT_BD.get()).addNeedForm(PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN.get(),1)
 					.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-                    .IsGlowing().AddToList(GameCreator.BLANK_GASHAT, 2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT = ITEMS.register("unfinished_kamen_rider_chronicle_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ride_player","ride_player_belt",
