@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 
@@ -20,6 +21,7 @@ public class NazcaDopantEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME="nazca_dopant";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(W_Rider_Items.NASCA_BLADE.get()));
+        this.moveControl = new FlyingBossControl(this, 20);
     }
 
 
