@@ -17,34 +17,14 @@
 	"parent": "kamenridercraft:geats/gazer",
 	"criteria": {
 	  "requirement": {
-		"trigger": "minecraft:inventory_changed",
-		"conditions": {
-		  "player": {
-			"equipment": {
-			  "head": {
-				"items": [
-				  "kamenridercraft:geatshead"
-				]
-			  },
-			  "chest": {
-				"items": [
-				  "kamenridercraft:geatstroso"
-				]
-			  },
-			  "legs": {
-				"items": [
-				  "kamenridercraft:geatslegs"
-				]
-			  },
-			  "feet": {
-				"items": [
-				  "kamenridercraft:vision_driver_glare2"
-				]
-			  }
-			}
-		  }
-		}
-	  }
-	}
-  }
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "kamenridercraft:glare2"
+          }
+        }
+      }
+    }
+}
+
   

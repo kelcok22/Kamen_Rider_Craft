@@ -17,37 +17,12 @@
 	"parent": "kamenridercraft:geats/kekera",
 	"criteria": {
 	  "requirement": {
-		"trigger": "minecraft:inventory_changed",
-		"conditions": {
-		  "player": {
-			"equipment": {
-			  "head": {
-				"items": [
-				  "kamenridercraft:geatshead"
-				]
-			  },
-			  "chest": {
-				"items": [
-				  "kamenridercraft:geatstroso"
-				]
-			  },
-			  "legs": {
-				"items": [
-				  "kamenridercraft:geatslegs"
-				]
-			  },
-			  "feet": {
-				"items": [
-				  "kamenridercraft:raise_riser_belt_kekera"
-				],
-  		  		"predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kekera_black_raise_riser_card\"}"
-              }
-			  }
-			}
-		  }
-		}
-	  }
-	}
-  }
-  
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "kamenridercraft:premium_kekera"
+          }
+        }
+      }
+    }
+}
