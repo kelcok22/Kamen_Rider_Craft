@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:ex-aid/poppy",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ex_aidhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ex_aidtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ex_aidlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:paradoxbelt"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:para-dx"
+        }
+      }
+    }
   }
 }

@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:gaim/zangetsu_shin",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gaimhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gaimtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gaimlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:genesis_driver_marika"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:marika"
+        }
+      }
+    }
   }
 }

@@ -17,33 +17,13 @@
   "parent": "kamenridercraft:w/joker",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:whead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:lostdriver_eternal"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:eternal"
+        }
+      }
+    }
   }
 }
+
