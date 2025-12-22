@@ -7,9 +7,14 @@
 	
 	  "item": "kamenridercraft:ichigotroso"
 	}, 
-	{
-	  "item": "kamenridercraft:double_typhoon_core"
-	} 
+	[
+		{
+			"item": "kamenridercraft:double_typhoon_core"
+		},
+		{
+			"item": "kamenridercraft:riderman_belt_core"
+		}
+	]
 	],
   "result": {
 	"id": "kamenridercraft:v3troso"

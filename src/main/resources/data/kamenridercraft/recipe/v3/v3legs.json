@@ -3,13 +3,17 @@
   "category": "equipment",
   "group": "kr_v3",
   "ingredients": [
-{
-	
+	{
 	  "item": "kamenridercraft:ichigolegs"
 	}, 
-	{
-	  "item": "kamenridercraft:double_typhoon_core"
-	} 
+	[
+		{
+	  		"item": "kamenridercraft:double_typhoon_core"
+		},
+		{
+			"item": "kamenridercraft:riderman_belt_core"
+		}
+	]
 	],
   "result": {
 	"id": "kamenridercraft:v3legs"
