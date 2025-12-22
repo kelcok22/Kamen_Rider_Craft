@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:w/wdriver",
 	  "kamenridercraft:w/shippu_memory",
+	  "kamenridercraft:w/cyclone_cyclone_memory",
 	  "kamenridercraft:w/w_logo",
       "kamenridercraft:w/hardboilder_spawn_egg"
     ]

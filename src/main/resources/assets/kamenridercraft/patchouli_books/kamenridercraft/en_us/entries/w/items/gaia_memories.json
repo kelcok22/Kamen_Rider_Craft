@@ -59,11 +59,9 @@
 			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to access Double's $(l:w/riders/double#jokerjoker)JokerJoker$(/l) form, though can be paired with any other right-hand sided Gaia Memory"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:joker_joker_memory",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:w/joker_joker_memory"
 		},
 		{
 			"type": "patchouli:text",
@@ -111,11 +109,9 @@
 			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to access Double's $(l:w/riders/double#cyclonecyclone)CycloneCyclone$(/l) form, though can be paired with any other right-hand sided Gaia Memory"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:cyclone_cyclone_memory",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:w/cyclone_cyclone_memory"
 		},
 		{
 			"type": "patchouli:text",

@@ -2066,7 +2066,7 @@
           "type": "patchouli:crafting",
           "title": " ",
           "recipe": "kamenridercraft:gavv/boonboomger_gochizo",
-          "text": "If you do not see a recipe here, you need to install the Super Sentai Craft mod"
+          "text": "Obtained by eating snacks in Super Sentai Topia while having a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory$(br2)If you do not see a crafting recipe, you need to install the Super Sentai Craft mod"
 		}
 	]
 }
