@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:zero_one/jin",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zero_onehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zero_onetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zero_onelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:forceriser_ikazuchi"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:ikazuchi"
+        }
+      }
+    }
   }
 }

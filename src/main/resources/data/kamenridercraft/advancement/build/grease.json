@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:build/cross-z",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:sclash_driver_grease"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:grease"
+        }
+      }
+    }
   }
 }

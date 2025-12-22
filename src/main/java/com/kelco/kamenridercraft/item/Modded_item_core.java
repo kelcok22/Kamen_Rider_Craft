@@ -63,11 +63,15 @@ public class Modded_item_core {
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(0).fast().saturationModifier(0f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 40, 2), 1.0F).build()))
                     .HasHoverTex().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> TAIYAKI = ITEMS.register("taiyaki",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(3f).alwaysEdible().build()))
+                    .has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
+
 
     public static final DeferredItem<Item>  DONUT = ITEMS.register("donut",
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
-    public static final DeferredItem<Item> MAYO= ITEMS.register("mayo",
+    public static final DeferredItem<Item> MAYO = ITEMS.register("mayo",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
                     .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
 
@@ -155,7 +159,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GREYWOLCH = ITEMS.register("greywolch",

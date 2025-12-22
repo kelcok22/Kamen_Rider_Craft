@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:555/orga",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:faizhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:faiztroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:faizlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:muez_driver"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:muez"
+        }
+      }
+    }
   }
 }

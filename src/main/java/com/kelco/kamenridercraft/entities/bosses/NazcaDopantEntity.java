@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 
+import com.kelco.kamenridercraft.entities.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 
@@ -19,7 +20,12 @@ public class NazcaDopantEntity extends BaseHenchmenEntity {
     public NazcaDopantEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="nazca_dopant";
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(W_Rider_Items.WHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(W_Rider_Items.WCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(W_Rider_Items.WLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(W_Rider_Items.GAIA_DRIVER_NASCA.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(W_Rider_Items.NASCA_BLADE.get()));
+        this.moveControl = new FlyingBossControl(this, 20);
     }
 
 
@@ -30,6 +36,7 @@ public class NazcaDopantEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED, 0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 4.0D)
-        		.add(Attributes.MAX_HEALTH, 110.0D);
+        		.add(Attributes.MAX_HEALTH, 110.0D)
+                .add(Attributes.FLYING_SPEED, 0.2F);
      }
 }

@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
@@ -9,7 +8,6 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.w.MetalShaftItem;
 import com.kelco.kamenridercraft.item.w.T2MemoryCaseItem;
 import com.kelco.kamenridercraft.item.w.WDriverItem;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -566,19 +564,73 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","terror_dopant","gaia_driver_belt_terror",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+				}
+			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> TABOO_MEMORY = ITEMS.register("taboo_memory",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","terror_dopant","gaia_driver_belt_taboo",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+				}
+			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> CLAYDOLL_MEMORY = ITEMS.register("claydoll_memory",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","claydoll_dopant","gaia_driver_belt_taboo",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+				}
+			}.ChangeBeltModel("geo/claydoll_riderbelt.geo.json").AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> NASCA_MEMORY = ITEMS.register("nasca_memory",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","nazca_dopant","gaia_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+				}
+			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMILODON_MEMORY = ITEMS.register("smilodon_memory",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","smilodon_dopant","gaia_driver_belt_smilodon",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.PUNCH,40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+				}
+			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> WEATHER_MEMORY = ITEMS.register("weather_memory",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
@@ -688,6 +740,26 @@ public class W_Rider_Items {
 
 	public static final DeferredItem<Item> LOSTDRIVER_ETERNAL = ITEMS.register("lostdriver_eternal",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eternal",ETERNAL_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM)
+					.ChangeRepairItem(GAIA_MEMORY.get()).ChangeRepairItem( GAIA_MEMORY.get()));
+
+	public static final DeferredItem<Item> GAIA_DRIVER_TERROR = ITEMS.register("gaia_driver_terror",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"terror_dopant",TERROR_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.W_TAB_ITEM)
+					.ChangeRepairItem(GAIA_MEMORY.get()).ChangeRepairItem( GAIA_MEMORY.get()));
+
+	public static final DeferredItem<Item> GAIA_DRIVER_TABOO = ITEMS.register("gaia_driver_taboo",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taboo_dopant",TABOO_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.W_TAB_ITEM)
+					.ChangeRepairItem(GAIA_MEMORY.get()).ChangeRepairItem( GAIA_MEMORY.get()));
+
+	public static final DeferredItem<Item> GAIA_DRIVER_CLAYDOLL = ITEMS.register("gaia_driver_claydoll",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"claydoll_dopant",CLAYDOLL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.W_TAB_ITEM)
+					.ChangeRepairItem(GAIA_MEMORY.get()).ChangeRepairItem( GAIA_MEMORY.get()));
+
+	public static final DeferredItem<Item> GAIA_DRIVER_SMILODON = ITEMS.register("gaia_driver_smilodon",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"smilodon_dopant",SMILODON_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.W_TAB_ITEM)
+					.ChangeRepairItem(GAIA_MEMORY.get()).ChangeRepairItem( GAIA_MEMORY.get()));
+
+	public static final DeferredItem<Item> GAIA_DRIVER_NASCA = ITEMS.register("gaia_driver_nasca",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nazca_dopant",NASCA_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.W_TAB_ITEM)
 					.ChangeRepairItem(GAIA_MEMORY.get()).ChangeRepairItem( GAIA_MEMORY.get()));
 
 

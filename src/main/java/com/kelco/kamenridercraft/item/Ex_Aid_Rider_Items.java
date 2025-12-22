@@ -679,6 +679,21 @@ public class Ex_Aid_Rider_Items {
             }.SetFormToArmor()
 			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
+    public static final DeferredItem<Item> DANGEROUS_ZOBIE_LAZER = ITEMS.register("dangerous_zombie_gashat_lazer",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"chambara_gamer","lazer","gamer_driver_bakusou_bike",
+                    new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.CONFUSION, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.WITHER, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.FORM_LOCK, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.BUGSTER, 40, 10,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeSlot(2).addNeedForm(GIRI_GIRI_CHAMBARA_GASHAT.get(),2).has_basic_model().model_has_different_name("dangerous_zombie_gashat"));
+
 	public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT_BD= ITEMS.register("dangerous_zombie_gashat_bd",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lvx","genm_bugvisor","gamer_driver_dangerous_zombie",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -696,7 +711,7 @@ public class Ex_Aid_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+                    .IsGlowing().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).addAlternative(DANGEROUS_ZOBIE_LAZER.get()));
 
 	public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT= ITEMS.register("dangerous_zombie_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_lvx","genm","gamer_driver_dangerous_zombie",
@@ -717,7 +732,7 @@ public class Ex_Aid_Rider_Items {
             }
 			.addAlternative(DANGEROUS_ZOBIE_GASHAT_BD.get()).addNeedForm(PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN.get(),1)
 					.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-                    .IsGlowing().AddToList(GameCreator.BLANK_GASHAT, 2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT = ITEMS.register("unfinished_kamen_rider_chronicle_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ride_player","ride_player_belt",

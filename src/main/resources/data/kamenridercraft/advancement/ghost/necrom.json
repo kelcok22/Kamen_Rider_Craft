@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:ghost/specter",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ghost_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ghost_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ghost_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:mega_ulorder"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:necrom"
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,16 @@
+{
+	"name": "Taiyaki Mold",
+	"icon": "kamenridercraft:taiyaki_mold",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to make $(l:misc/items/foods#taiyaki)Taiyaki$(/l)$(br2)Used to craft Taiyaki Master Ultimate Form's $(l:blade/devices/taiyaki_secret_weapon)Taiyaki Secret Weapon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/taiyaki_mold"
+		}
+	]
+}

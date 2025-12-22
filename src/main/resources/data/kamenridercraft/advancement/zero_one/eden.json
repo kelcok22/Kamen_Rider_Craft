@@ -17,33 +17,13 @@
   "parent": "kamenridercraft:zero_one/abaddon",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zero_onehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zero_onetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zero_onelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:eden_driver"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:eden"
+        }
+      }
+    }
   }
 }
+

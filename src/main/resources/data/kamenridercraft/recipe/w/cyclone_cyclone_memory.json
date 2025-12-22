@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "w",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:decade_card"
+    },
+    {
+	  "item": "kamenridercraft:cyclone_memory"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:cyclone_cyclone_memory"
+  }
+}

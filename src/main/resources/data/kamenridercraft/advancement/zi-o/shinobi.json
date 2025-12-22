@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:zi-o/woz",
+  "parent": "kamenridercraft:zi-o/yaminin",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

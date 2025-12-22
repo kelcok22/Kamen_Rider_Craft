@@ -17,33 +17,12 @@
   "parent": "kamenridercraft:drive/chaser",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:drive_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:drive_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:drive_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:drivedriver_darkdrive"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:dark_drive"
+        }
+      }
+    }
   }
 }

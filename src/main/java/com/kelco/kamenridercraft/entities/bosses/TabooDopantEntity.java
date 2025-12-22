@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -20,6 +21,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.SmallFireball;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
@@ -42,6 +44,7 @@ public class TabooDopantEntity extends BaseHenchmenEntity implements GeoEntity ,
     public TabooDopantEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="taboo_dopant";
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(W_Rider_Items.GAIA_DRIVER_TABOO.get()));
         this.moveControl = new FlyingMoveControl(this, 20, true);
         if (level != null && !level.isClientSide) {
             this.registerGoals();

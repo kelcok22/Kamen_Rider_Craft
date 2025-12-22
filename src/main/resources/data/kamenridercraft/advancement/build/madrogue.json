@@ -17,33 +17,13 @@
   "parent": "kamenridercraft:build/evol",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:evol_driver_mad_rogue"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:mad_rogue"
+        }
+      }
+    }
   }
 }
+

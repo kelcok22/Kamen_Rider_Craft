@@ -3,10 +3,13 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 
+import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class ClayDollDopantEntity extends BaseHenchmenEntity {
@@ -16,6 +19,10 @@ public class ClayDollDopantEntity extends BaseHenchmenEntity {
     public ClayDollDopantEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="clay_doll_dopant";
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(W_Rider_Items.WHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(W_Rider_Items.WCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(W_Rider_Items.WLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(W_Rider_Items.GAIA_DRIVER_CLAYDOLL.get()));
     }
 
 

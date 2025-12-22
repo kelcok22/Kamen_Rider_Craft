@@ -17,33 +17,13 @@
   "parent": "kamenridercraft:zero_one/valkyrie",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zero_onehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zero_onetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zero_onelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:forceriser_horobi"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:horobi"
+        }
+      }
+    }
   }
 }
+

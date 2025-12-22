@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Knight",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_knight)V Buckle$(/l)$(br2)Status Effects:$(li)Weakness"
+			"text": "Appears in:$(li)Kamen Rider Art Collection Hero Hen (2003, art book)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_knight)V Buckle$(/l)$(br2)Status Effects:$(li)Weakness"
 		},
 		{
 			"type": "patchouli:entity",
