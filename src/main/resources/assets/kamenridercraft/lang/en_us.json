@@ -1820,6 +1820,7 @@
   "item.kamenridercraft.milk_bottle": "Milk Bottle",
   "item.kamenridercraft.puzzle_piece": "Puzzle Piece",
   "tooltip.kamenridercraft:puzzle_piece": "§4DO NOT EAT",
+  "item.kamenridercraft.taiyaki": "Taiyaki",
 "item.kamenridercraft.donut": "Donut",
   "item.kamenridercraft.mayo": "Mayo",
   "item.kamenridercraft.mayo_donut": "Mayo Donut",
@@ -2641,6 +2642,8 @@
 "kamenridercraft.name.chalice": "Rider: Kamen Rider Chalice",
   "item.kamenridercraft.blay_buckle_fake": "Blay Buckle",
   "kamenridercraft.name.fake_blade": "Rider: Kamen Rider Fake Blade",
+  "item.kamenridercraft.taiyaki_secret_weapon": "Taiyaki Secret Weapon",
+  "kamenridercraft.name.taiyaki_master": "Rider: Kamen Rider Taiyaki Master",
 
 "item.kamenridercraft.rouze_absorber": "Rouze Absorber",
 
@@ -2659,6 +2662,7 @@
 "item.kamenridercraft.chalice_arrow": "Chalice Arrow",
 "item.kamenridercraft.wild_slasher": "Wild Slasher",
 "item.kamenridercraft.wild_chalice_arrow": "Wild Chalice Arrow",
+  "item.kamenridercraft.taiyaki_mold": "Taiyaki Mold",
 
 "item.kamenridercraft.bladecard": "Common Blank Rouze Card",
 "item.kamenridercraft.change_beetle": "Change Beetle Rouze Card",
@@ -2693,6 +2697,7 @@
   "kamenridercraft:evolution_giraffa.form": "Form: King Form",
   "kamenridercraft:evolution_paradoxa.form": "Form: Wild Form",
   "kamenridercraft:evolution_tarantula.form": "Form: King Form",
+  "kamenridercraft:taiyaki_masterform": "Form: Ultimate Form",
 
 "item.kamenridercraft.hibiki_logo": "Hibiki Logo",
 "item.kamenridercraft.hibikihead": "Hibiki Helmet",

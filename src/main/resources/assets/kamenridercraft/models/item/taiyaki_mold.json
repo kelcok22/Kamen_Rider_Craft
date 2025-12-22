@@ -1,0 +1,41 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/taiyaki_mold"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, -48],
+			"translation": [0, 9.5, 0.75],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 48],
+			"translation": [0, 9.5, 0.75],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [36, -93, 0],
+			"translation": [0, 8.75, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [36, 93, 0],
+			"translation": [0, 9, 0]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0]
+		},
+		"gui": {
+			"translation": [0, 1.5, 0]
+		},
+		"head": {
+			"rotation": [0, 0, -134],
+			"translation": [0, -11.75, -3.75]
+		},
+		"fixed": {
+			"translation": [0, 1.5, 0]
+		}
+	}
+}

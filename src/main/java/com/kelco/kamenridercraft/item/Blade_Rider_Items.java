@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -147,6 +148,21 @@ public class Blade_Rider_Items {
                     .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate_form","taiyaki_master","blank",
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.FIRE_SLASH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.RAIN,
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().SetShowUnder().allowRiderKick().has_basic_model());
+
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "chalice", "chalice_rouzer_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
@@ -159,7 +175,8 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addAlternative(TAIYAKI_MASTER.get()).IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> EVOLUTION_PARADOXA = ITEMS.register("evolution_paradoxa",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_wild", "chalice", "chalice_rouzer_belt",
@@ -292,6 +309,10 @@ public class Blade_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "fake_blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
                     .AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
+	public static final DeferredItem<Item> TAIYAKI_SECRET_WEAPON = ITEMS.register("taiyaki_secret_weapon",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "taiyaki_master" ,TAIYAKI_MASTER, CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
 
     public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
@@ -314,7 +335,10 @@ public class Blade_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	
+
+	public static final DeferredItem<Item> TAIYAKI_MOLD = ITEMS.register("taiyaki_mold",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).KeepItem().ChangeRepairItem(BLADECARD.get()));
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
