@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawns throughout the Overworld at light levels below 8$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (31%)$(li)1 $(l:ichigo/items/typhoon_cores#typhoon_core)Typhoon Core$(/l) (31%)$(li)1 $(l:ichigo/items/typhoon_cores#typhoon_core_nigo)Typhoon Core (Nigo)$(/l) (25%)$(li)1 $(l:ichigo/items/typhoon_cores#original_typhoon_core)Typhoon Core (Original)$(/l) (6.3%)$(li)1 $(l:ichigo/items/typhoon_cores#sakurajima_typhoon_core)Typhoon Core (Sakurajima)$(/l) (6.3%)$(li)1 $(l:misc/items/music_discs#lets_go_rider_kick_music_disc)Let's Go!! Rider Kick Music Disc$(/l) (if Rider Kicked by $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l))$(br2)Bosses$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l) (10%)"
+			"text": "Spawns throughout the Overworld at light levels below 8$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (31%)$(li)1 $(l:ichigo/items/typhoon_cores#typhoon_core)Typhoon Core$(/l) (31%)$(li)1 $(l:ichigo/items/typhoon_cores#typhoon_core_nigo)Typhoon Core (Nigo)$(/l) (25%)$(li)1 $(l:ichigo/items/typhoon_cores#original_typhoon_core)Typhoon Core (Original)$(/l) (6.3%)$(li)1 $(l:ichigo/items/typhoon_cores#sakurajima_typhoon_core)Typhoon Core (Sakurajima)$(/l) (6.3%)$(li)1 $(l:misc/items/music_discs#lets_go_rider_kick_music_disc)Let's Go!! Rider Kick Music Disc$(/l) (if Rider Kicked by $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l))$(li)1 $(l:misc/items/gift)Gift$(/l) (from December 22nd through December 28th)$(br2)Bosses$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l) (10%)"
 		}
 	]
 }

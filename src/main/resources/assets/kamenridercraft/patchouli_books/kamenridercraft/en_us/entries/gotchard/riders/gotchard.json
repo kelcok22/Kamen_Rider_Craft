@@ -451,6 +451,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gotchard",
 			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Jump Boost III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "spiclewhale",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spicle_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Spiclewhale",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#spicle_ride_chemy_card)Spicle$(/l) or $(l:gotchard/items/ride_chemy_cards#ganvhale_ride_chemy_card)Ganvhale$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength IV$(li)Resistance IV$(li)Water Breathing IV"
 		}
 	]
 }

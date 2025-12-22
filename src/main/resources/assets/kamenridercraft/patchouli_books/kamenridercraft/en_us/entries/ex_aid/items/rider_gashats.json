@@ -301,14 +301,14 @@
 			"type": "patchouli:text",
 			"anchor": "dangerous_zombie_gashat",
 			"title": "Dangerous Zombie Gashat",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#zombie_x)Zombie Gamer Level X$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#zombie_x)Zombie Gamer Level X$(/l)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#chambara_zombie)Chambara Bike Gamer Level 3 (Zombie)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:dangerous_zombie_gashat",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm)Genm$(/l) with the $(li)$(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l) (with the $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory)"
 		},
 		{
 			"type": "patchouli:text",

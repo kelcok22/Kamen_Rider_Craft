@@ -2,7 +2,7 @@
 	"name": "Herculespader Sword",
 	"icon": "kamenridercraft:herculespader_sword",
 	"category": "kamenridercraft:blade/arsenal",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

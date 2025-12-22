@@ -2,7 +2,7 @@
 	"name": "Fake Blade",
 	"icon": "kamenridercraft:change_beetle",
 	"category": "kamenridercraft:blade/riders",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:entity",

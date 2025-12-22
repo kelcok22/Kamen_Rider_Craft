@@ -11,15 +11,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 5% chance to spawn from a $(l:ex_aid/mobs/bugstervirus_mob)Bugster$(/l)Transforms into his $(l:ex_aid/riders/genm#dangerous_zombie_gashat_bd)Dangerous Zombie$(/l) form at under 30 health if you have a $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory$(li)$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_taddle_quest_gashat)Proto Taddle Quest Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_gekitotsu_robots_gashat)Proto Gekitotsu Robots Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l) (10%)"
+			"text": "Has a 5% chance to spawn from a $(l:ex_aid/mobs/bugstervirus_mob)Bugster$(/l)$(br2)Special moves:$(li)Transforms into his $(l:ex_aid/riders/genm#zombie_x)Zombie Gamer Level X$(/l) at under 30 health if you have a $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_taddle_quest_gashat)Proto Taddle Quest Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_gekitotsu_robots_gashat)Proto Gekitotsu Robots Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l) (10%)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)Shakariki Sports Gasha Trophy$(/l) (10%)"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(li)1 $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) (100%) (with a $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory)"
+			"text": "$(li)1 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)Shakariki Sports Gasha Trophy$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) (with a $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory)"
 		}
 	]
 }

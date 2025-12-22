@@ -1,0 +1,21 @@
+{
+	"name": "Taiyaki Master Ultimate Form",
+	"icon": "kamenridercraft:taiyaki",
+	"category": "kamenridercraft:blade/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:taiyaki_secret_weapon\",Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Taiyaki Master Ultimate Form",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Transforms with the $(l:blade/devices/taiyaki_secret_weapon)Taiyaki Secret Weapon$(/l)$(br2)Status Effects:$(li)Slowness$(li)Fire Resistance$(li)Resistance$(li)Flame Slash II$(li)Strength II"
+		}
+	]
+}
