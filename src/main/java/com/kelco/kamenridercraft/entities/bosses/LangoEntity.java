@@ -36,7 +36,7 @@ public class LangoEntity extends BaseHenchmenEntity {
                 .add(Attributes.FLYING_SPEED, 0.3F)
                 .add(Attributes.ATTACK_DAMAGE, 10.0D)
                 .add(Attributes.ARMOR, 3.0D)
-                .add(Attributes.MAX_HEALTH, 200.0D);
+                .add(Attributes.MAX_HEALTH, 100.0D);
     }
 
 

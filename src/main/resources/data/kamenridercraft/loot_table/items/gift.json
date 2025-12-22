@@ -67,6 +67,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:p_a_r_t_y_universe_festival_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "kamenridercraft:merry_hopper_progrisekey",
           "weight": 1
         },

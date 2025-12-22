@@ -34,7 +34,7 @@ public class JeebEntity extends BaseHenchmenEntity {
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn  && this.getHealth()<100
+        if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn  && this.getHealth()<30
                 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= Gavv_Rider_Items.HENSHIN_BELT_BITTER_GAVV.get()
         && playerIn.getInventory().countItem(Gavv_Rider_Items.SHIITA_MIMIC_KEY.asItem())!=0) {
             if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_jeeb"));
@@ -56,7 +56,7 @@ public class JeebEntity extends BaseHenchmenEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.3F)
                 .add(Attributes.ATTACK_DAMAGE, 10.0D)
                 .add(Attributes.ARMOR, 3.0D)
-                .add(Attributes.MAX_HEALTH, 200.0D);
+                .add(Attributes.MAX_HEALTH, 60.0D);
     }
 
 

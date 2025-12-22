@@ -49,7 +49,7 @@ public class ShiitaEntity extends BaseHenchmenEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.3F)
                 .add(Attributes.ATTACK_DAMAGE, 10.0D)
                 .add(Attributes.ARMOR, 3.0D)
-                .add(Attributes.MAX_HEALTH, 200.0D);
+                .add(Attributes.MAX_HEALTH, 60.0D);
     }
 
 

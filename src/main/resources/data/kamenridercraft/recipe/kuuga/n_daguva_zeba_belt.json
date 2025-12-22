@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "kuuga",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:kuuga_growing"
+	},
+	"M": {
+	  "item": "kamenridercraft:n_daguva_zeba_ultimate"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:arcle"
+  }	
+}
