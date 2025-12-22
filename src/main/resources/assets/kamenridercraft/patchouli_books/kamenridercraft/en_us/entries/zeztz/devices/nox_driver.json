@@ -1,0 +1,16 @@
+{
+	"name": "Nox Driver",
+	"icon": "kamenridercraft:nox_driver",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/nox)Kamen Rider Nox"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/nox_driver"
+		}
+	]
+}

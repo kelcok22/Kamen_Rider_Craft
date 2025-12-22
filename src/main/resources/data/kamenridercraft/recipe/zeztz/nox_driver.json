@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "nox",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:code_capsem"
+	},
+	"M": {
+	  "item": "kamenridercraft:shadow_capsem"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:nox_driver"
+  }	
+}

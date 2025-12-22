@@ -236,6 +236,30 @@ public class Zeztz_Rider_Items {
             } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
+    public static final DeferredItem<Item> SHADOW_CAPSEM = ITEMS.register("shadow_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","nox","nox_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    /*public static final DeferredItem<Item> GUN_CAPSEM = ITEMS.register("gun_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","nox_driver_belt_gun")
+             .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> WOLF_CAPSEM = ITEMS.register("wolf_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","nox_driver_belt_wolf")
+             .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));*/
+
+
     public static final DeferredItem<Item> SONG_CAPSEM = ITEMS.register("song_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
                     .has_basic_model().AddToList(CapsemDropper.CAPSEM).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
@@ -278,6 +302,10 @@ public class Zeztz_Rider_Items {
         public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                         .has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KIGHT_INVOKER = ITEMS.register("knight_invoker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())

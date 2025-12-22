@@ -69,6 +69,7 @@
 	"kamenridercraft:chalice_arrow",
 	"kamenridercraft:wild_slasher",
 	"kamenridercraft:wild_chalice_arrow",
+	"kamenridercraft:taiyaki_mold",
 	"kamenridercraft:ongekibo_rekka",
 	"kamenridercraft:armed_saber",
 	"kamenridercraft:ongekibo_yamase",
@@ -306,6 +307,7 @@
     "kamenridercraft:uirou_tonfa_2",
     "kamenridercraft:breakam_zeztzer_sword",
     "kamenridercraft:breakam_zeztzer_axe",
-    "kamenridercraft:breakam_zeztzer_scythe"
+    "kamenridercraft:breakam_zeztzer_scythe",
+	"kamenridercraft:inazuma_blaster_greatsword"
   ]
 }

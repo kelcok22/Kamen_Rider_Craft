@@ -173,6 +173,19 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "shadow_capsem",
+        "title": "Shadow Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox's $(l:zeztz/devices/nox_driver)Nox Driver$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shadow_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "song_capsem",
         "title": "Song Capsem",
         "text": "Appears in:$(li)Kamen Rider Zeztz Theme CD & Zeztz Capsem (Singing Ver) (2025, toyline)"

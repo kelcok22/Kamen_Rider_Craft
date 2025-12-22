@@ -161,7 +161,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetShowUnder().has_basic_model());
+			}.IsGlowing().SetShowUnder());
 
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "chalice", "chalice_rouzer_belt",
