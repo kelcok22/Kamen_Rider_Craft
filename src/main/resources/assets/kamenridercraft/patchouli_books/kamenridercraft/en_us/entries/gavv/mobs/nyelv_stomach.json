@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:nyelv_stomach",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 200"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 60"
 		},
 		{
 			"type": "patchouli:text",

@@ -198,7 +198,7 @@
 			"type": "patchouli:text",
 			"anchor": "n_daguva_zeba_ultimate",
 			"title": "N.Daguva.Zeba Ultimate Amadam",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to craft N.Daguva.Zeba's $(l:kuuga/devices/n_daguva_zeba_belt)Gedorudo$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -353,7 +353,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:p_a_r_t_y_universe_festival_music_disc",
-        "text": "Disc is currently unobtainable"
+        "text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
       },
 		{
 			"type": "patchouli:text",
