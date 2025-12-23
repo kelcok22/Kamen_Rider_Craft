@@ -1,5 +1,7 @@
 {
   "values": [
-	  "kamenridercraft:shadow_capsem"
+	  "kamenridercraft:shadow_capsem",
+    "kamenridercraft:gun_capsem",
+    "kamenridercraft:wolf_capsem"
   ]
 }

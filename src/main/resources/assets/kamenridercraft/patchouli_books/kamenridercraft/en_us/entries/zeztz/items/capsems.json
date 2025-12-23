@@ -186,6 +186,32 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "gun_capsem",
+        "title": "Gun Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Nox's $(l:zeztz/riders/nox#gun)Gun Shadow$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gun_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wolf_capsem",
+        "title": "Wolf Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Nox's $(l:zeztz/riders/nox#wolf)Wolf Shadow$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wolf_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "song_capsem",
         "title": "Song Capsem",
         "text": "Appears in:$(li)Kamen Rider Zeztz Theme CD & Zeztz Capsem (Singing Ver) (2025, toyline)"

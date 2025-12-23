@@ -16,6 +16,11 @@
   "gamerule.doMoonGravity.description": "Controls the Low Gravity effect on the Moon.",
   "gamerule.youtubeFriendly": "\"YouTube Friendly\"",
 
+  "kamenridercraft.configuration.mightyBrotherSpawning": "Mighty Brother spawning",
+  "kamenridercraft.configuration.decadeExAidSpawning": "DecadeArmor Ex-Aid Form spawning",
+  "kamenridercraft.configuration.viceSpawning": "Vice spawning",
+  "kamenridercraft.configuration.lovekovSpawning": "Lovekov spawning",
+
   "kamenridercraft.container.enderchest": "Connected to your Ender Chest",
 
 "tab.kamenridercraft.egg_items": "Rider Spawn Eggs",

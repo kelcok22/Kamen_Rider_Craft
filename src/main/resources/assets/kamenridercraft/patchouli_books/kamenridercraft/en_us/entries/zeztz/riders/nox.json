@@ -16,7 +16,35 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Nox",
-			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Status Effects:$(li)Strength$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gun",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nox_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gun_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gun Shadow",
+			"text": "Accessed with the $(l:zeztz/items/capsems#gun_capsem)Gun Capsem$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Nox",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Status Effects:$(li)Strength$(li)Speed II$(li)Gatling"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wolf",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nox_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Wolf Shadow",
+			"text": "Accessed with the $(l:zeztz/items/capsems#wolf_capsem)Wolf Capsem$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Nox",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)"
 		}
     ]
 }
