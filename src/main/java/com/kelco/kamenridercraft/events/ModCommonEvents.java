@@ -294,19 +294,49 @@ public class ModCommonEvents {
 			}
 		}
 */
+
         @SubscribeEvent
         public void addLivingDamageEvent(LivingDeathEvent event) {
-            if (event.getSource().getEntity()instanceof Player player){
+            if (event.getSource().getEntity() instanceof Player player){
                 if (player.hasEffect(Effect_core.HAPPY_MODE)) {
                     player.sendSystemMessage(Component.literal(Component.translatable("happy_mode.kamenridercraft.sleep").getString()));
                 }
             }
-
         }
+
+//        ⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜
+//        ⬜⬜⬜⬜⬜⬜⬜⬛🟪⬛⬜⬜⬜⬜⬜⬜⬜⬜⬛🟪⬛⬜⬜⬜⬜⬜⬜⬜
+//        ⬜⬜⬜⬜⬜⬜⬛⬛🟪⬛⬜⬛⬛⬛⬛⬛⬛⬜⬛🟪⬛⬛⬜⬜⬜⬜⬜⬜
+//        ⬜⬜⬜⬜⬜⬛🟦⬛🟪⬛⬛🟦🟦🟦🟦🟦🟦⬛⬛🟪⬛🟦⬛⬜⬜⬜⬜⬜
+//        ⬜⬜⬜⬜⬜⬛🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦⬛⬜⬜⬜⬜⬜
+//        ⬜⬜⬜⬜⬛🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦⬛⬜⬜⬜⬜
+//        ⬜⬜⬜⬜⬛🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦⬛⬜⬜⬜⬜
+//        ⬜⬜⬜⬛🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦⬛⬜⬜⬜
+//        ⬜⬜⬜⬛🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦⬛⬜⬜⬜
+//        ⬜⬜⬛🟦🟦🟦⬛🟦🟦🟦🟦🟦🏻🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦🟦⬛⬜⬜
+//        ⬜⬜⬛🟦🟦🟦⬛🟦🟦🟦🟦🏻🏻🟦🟦🟦🏻🟦🟦🟦🟦⬛🟦🟦🟦⬛⬜⬜
+//        ⬜⬛🟦🟦🟦⬛⬜⬛🟦🟦🏻⬛🏻🏻🟦🏻⬛🏻🟦🟦⬛⬜⬛🟦🟦🟦⬛⬜
+//        ⬜⬛🟦🟦🟦⬛⬜⬛🟦🟦🏻⬛🏻🏻🏻🏻⬛🏻🟦🟦⬛⬜⬛🟦🟦🟦⬛⬜
+//        ⬜⬛🟦🟦🟦⬛⬜⬛🟦🟦🏻🏻🏻🏻🏻🏻🏻🏻🟦🟦⬛⬜⬛🟦🟦🟦⬛⬜
+//        ⬛🟦🟦🟦🟦⬛⬜⬜⬛🟦⬛🏻🏻🏻🏻🏻🏻⬛🟦⬛⬜⬜⬛🟦🟦🟦🟦⬛
+//        ⬛🟦🟦🟦🟦⬛⬜⬜⬜⬛⬜⬛⬛🌫️🌫️⬛⬛⬜⬛⬜⬜⬜⬛🟦🟦🟦🟦⬛
+//        ⬛🟦🟦🟦🟦⬛⬜⬜⬜⬜⬜⬛🌫️🟦🟦🌫️⬛⬜⬜⬜⬜⬜⬛🟦🟦🟦🟦⬛
+//        ⬛🟦🟦🟦🟦⬛⬜⬜⬜⬜⬛⬛🌫️🟦🟦🌫️⬛⬛⬜⬜⬜⬜⬛🟦🟦🟦🟦⬛
+//        ⬛🟦🟦🟦🟦🟦⬛⬜⬜⬛🏻⬛⬛🟦🟦⬛⬛🏻⬛⬜⬜⬛🟦🟦🟦🟦🟦⬛
+//        ⬜⬛🟦🟦🟦🟦⬛⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬛🟦🟦🟦🟦⬛⬜
+//        ⬜⬜⬛🟦🟦🟦🟦⬛⬜⬜⬜⬛🏻⬛⬛🏻⬛⬜⬜⬜⬛🟦🟦🟦🟦⬛⬜⬜
+//        ⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜
+//        ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬜⬜⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 
             @SubscribeEvent
 		public void addLivingDamageEvent(LivingDamageEvent.Post event) {
 
+            if (event.getEntity() instanceof Player player && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)){
+                if (player.getInventory().countItem(Zeztz_Rider_Items.CODE_CAPSEM.get())!=0) {
+                    player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zeztz_Rider_Items.CODE_CAPSEM.get())), 1);
+                    player.getInventory().add(new ItemStack(Zeztz_Rider_Items.PLASMA_CAPSEM.get()));
+                }
+            }
 
 			if (event.getSource().getEntity() instanceof LivingEntity _livEnt) {
 
@@ -412,6 +442,9 @@ public class ModCommonEvents {
 							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
 							event.getEntity().level().addFreshEntity(thunder);
 					}
+
+
+
 				}
 			}
 		}

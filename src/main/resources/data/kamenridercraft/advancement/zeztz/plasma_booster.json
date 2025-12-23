@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:booster_capsem"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.zeztz.plasma_booster.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zeztz.plasma_booster.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zeztz/inazuma_plasma",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zeztz_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zeztz_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zeztz_legs"
+			  ]
+			},
+            "feet": {
+              "items": [
+                "kamenridercraft:zeztz_driver"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:booster_capsem\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

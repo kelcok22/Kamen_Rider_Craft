@@ -143,7 +143,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:plasma_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by getting struck by lightning while having a $(l:zeztz/items/code_capsem)CODE Capsem$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -156,7 +156,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:booster_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) while having a $(l:zeztz/items/capsems#plasma_capsem)Plasma Capsem$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",

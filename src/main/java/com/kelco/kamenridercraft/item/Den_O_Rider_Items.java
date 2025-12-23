@@ -14,6 +14,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -206,10 +208,14 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
-				}
+                }
 			}.AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ALTAIR_CARD = ITEMS.register("zeronos_altair_card",

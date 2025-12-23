@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
+import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.item.Zeztz_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -58,18 +59,27 @@ public class CapsemDropper extends MachineBlock {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
      }
 
-    private Item getCapsemDrop() {
+    private Item getCapsemDrop(Player player) {
  		Random generator = new Random();
- 			int rand = generator.nextInt(CAPSEM.size());
- 			return CAPSEM.get(rand);
+
+        List<Item> CAPSEM_PLUS = new ArrayList<>(CAPSEM);
+
+        if (player.getInventory().countItem(Zeztz_Rider_Items.PLASMA_CAPSEM.get())!=0){
+            for (int i = 0; i < 20; i++) {
+                CAPSEM_PLUS.add(Zeztz_Rider_Items.BOOSTER_CAPSEM.get());
+            }
+        }
+        int rand = generator.nextInt(CAPSEM_PLUS.size());
+        return CAPSEM_PLUS.get(rand);
  	}
+
 
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Zeztz_Rider_Items.CODE_CAPSEM.get()){
-                process(player, level, pos, hand, getCapsemDrop());
+                process(player, level, pos, hand, getCapsemDrop(player));
                 return ItemInteractionResult.SUCCESS;
             }
         }
