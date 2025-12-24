@@ -465,6 +465,34 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gotchard",
 			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength IV$(li)Resistance IV$(li)Water Breathing IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "batkingrobo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:yamibat_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Batkingrobo",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#yamibat_ride_chemy_card)Yamibat$(/l) or $(l:gotchard/items/ride_chemy_cards#renkingrobo_ride_chemy_card)Renkingrobo$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Cannon$(li)Slowness$(li)Resistance IV$(li)Strength V$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "stagmirror",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stagvine_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Stagmirror",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#stagvine_ride_chemy_card)Stagvine$(/l) or $(l:gotchard/items/ride_chemy_cards#mitemirror_ride_chemy_card)Mitemirror$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Mirror$(li)Haste III$(li)Jump Boost III"
 		}
 	]
 }

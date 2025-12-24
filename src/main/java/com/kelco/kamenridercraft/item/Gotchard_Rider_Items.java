@@ -193,7 +193,7 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Insect_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> STAGVINE_RIDE_CHEMY_CARD = ITEMS.register("stagvine_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_stag_mirror","gotchard","gotchardriver_belt",
+			() -> new RideChemyCardItem(new Item.Properties(),0,"_stag_mirror","gotchard","gotchardriver_belt",
 					new MobEffectInstance(Effect_core.REFLECT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
@@ -535,7 +535,7 @@ public class Gotchard_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> YAMIBAT_RIDE_CHEMY_CARD = ITEMS.register("yamibat_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bat_king_robo","_gotchard","gotchardriver_belt_big1",
+			() -> new RideChemyCardItem(new Item.Properties(),0,"_bat_king_robo","_gotchard","gotchardriver_belt_big1",
 				new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
