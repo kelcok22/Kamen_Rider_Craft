@@ -379,6 +379,7 @@
   "effect.kamenridercraft.rider_poison_hand":"§aRider Dokushu!",
   "effect.kamenridercraft.hazard_level":"Hazard Level",
   "effect.kamenridercraft.happy_mode":"§dHappy Mode",
+  "effect.kamenridercraft.wonder":"Wonder",
 
   "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
   "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",
@@ -8304,6 +8305,7 @@
   "item.kamenridercraft.sweets_capsem": "Zeztz Capsem (Sweets ver.)",
   "item.kamenridercraft.charadeco_capsem": "Zeztz Capsem (Charadeco ver.)",
   "item.kamenridercraft.gochizo_capsem": "Gochizo Capsem",
+  "item.kamenridercraft.void_capsem": "Void Capsem",
 
   "item.kamenridercraft.impact_capsem_gold": "Impact Capsem (Gold Ver.)",
   "item.kamenridercraft.transform_capsem_gold": "Transform Capsem (Gold Ver.)",

@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-22T12:55:28.0785941	Item Models: kamenridercraft
+// 1.21.1	2025-12-24T01:16:33.2605904	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -108,6 +108,7 @@ e0e58137aa23426a3b8595ddf99e9c7e8517b289 assets/kamenridercraft/models/item/char
 fd6378e7aa4fe861bc5392d1559b991512c63532 assets/kamenridercraft/models/item/chocoball_gochizo.json
 6104219c05b5b7e9cb75021d1cd98f15361bdf46 assets/kamenridercraft/models/item/chocold_gochizo.json
 758915c703a4e1fdec17eb50ce05b992e12ca965 assets/kamenridercraft/models/item/chocopie_gochizo.json
+305053b5c643fb05d64f1c73919f50d826000183 assets/kamenridercraft/models/item/chocorappa_gochizo.json
 9cbaec234c094f88837763aa90ab4c018d93c3d3 assets/kamenridercraft/models/item/chocozon_gochizo.json
 ad99ea7902362c5a0b6e6e1df29e456894e87498 assets/kamenridercraft/models/item/choco_treasure_gochizo.json
 9b14d9ce129403d0e2f2dfd83650c0e480cc2e63 assets/kamenridercraft/models/item/chophopper_rider_belt.json
@@ -235,6 +236,7 @@ fd7533820b275b5082d41bcf045d7f6416a318a7 assets/kamenridercraft/models/item/gaia
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/gaim_yami.json
 ee625e82bdc5b0ec77a1eb9dab68940a43b3d192 assets/kamenridercraft/models/item/ganbarizing_full_bottle.json
 bbcdfd72ea49b3879e4c7e91a8c141a1bc5894f3 assets/kamenridercraft/models/item/gangan_g_belt.json
+092f09a4d9a35bf6c15e6cc139924b8e17ec4aa3 assets/kamenridercraft/models/item/ganvhale_ride_chemy_card.json
 b013ca28370053181f981d844aad239fc7681e08 assets/kamenridercraft/models/item/garulu_statue.json
 00e3a1b1319158427e2afac5eb33a43213f90b29 assets/kamenridercraft/models/item/gashapon_capsule.json
 e3735b7c45033e4ad89130059358d6dca0ea8307 assets/kamenridercraft/models/item/gavv_gochizo.json
@@ -560,6 +562,7 @@ e4d8c8aebe830b1e91ce61b729cdae8c533ec686 assets/kamenridercraft/models/item/sign
 dcf9bddf405e71a3399687707cd404db5a29b750 assets/kamenridercraft/models/item/sparkingummy_gochizo.json
 25c8b1a3f42e4225db92660b862e0ec7fe1c0a2a assets/kamenridercraft/models/item/specialshift.json
 333b59fab71fcbb2e9216d15d0046280c600ae6e assets/kamenridercraft/models/item/speedshift_gold.json
+9d4c5953e3da2f28bdfb87e5d095be16a3d1aad4 assets/kamenridercraft/models/item/spicle_ride_chemy_card.json
 9f5a499a6110a5ffc05ef795057da8db80d2aa28 assets/kamenridercraft/models/item/sporki_gochizo.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/square_astroswitch.json
 ac6fa777dd48ab88a74eba52b76dfc7832820d44 assets/kamenridercraft/models/item/stagvine_ride_chemy_card.json
@@ -635,6 +638,7 @@ a21efa2aac8261aecd4150cb3befa96f022e939e assets/kamenridercraft/models/item/vira
 b143b4600fb84607bff98f9aa6dafb11f1eed4d6 assets/kamenridercraft/models/item/viral_core_neo_cobara.json
 a78acedfa584d69342653cd220801a5a8855a885 assets/kamenridercraft/models/item/viral_core_neo_spider.json
 34adffabf84514bc51f5e6f1380e79cdebae1f3e assets/kamenridercraft/models/item/viral_core_spider.json
+03549f412915582c56d5ddf98657f29e606156ea assets/kamenridercraft/models/item/void_capsem.json
 d96e062f9af01b1f42f92b5a2d1012ccbaa839b8 assets/kamenridercraft/models/item/vram_gochizo.json
 f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vrastumgear.json
 93f85f568640ffacb1ea8cc19dee1fb7fc1b6921 assets/kamenridercraft/models/item/vrastumgear_valen.json

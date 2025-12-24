@@ -345,7 +345,7 @@ public class Gotchard_Rider_Items {
                 }
             }.IsGlowing().ChangeBeltModel("geo/gotchard_belt_big.geo.json")
                     .AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SpicleWhale).AddToList(NEED_ITEM_SpicleWhale)
-                    .AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+                    .has_basic_model().AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
     
     public static final DeferredItem<Item> SKEBOWS_RIDE_CHEMY_CARD = ITEMS.register("skebows_ride_chemy_card",
             () -> new CopyChemyCardItem(new Item.Properties(),APPAREBUSHIDO_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_AppareSkebow)
@@ -582,7 +582,7 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> GANVHALE_RIDE_CHEMY_CARD = ITEMS.register("ganvhale_ride_chemy_card",
             () -> new CopyChemyCardItem(new Item.Properties(),SPICLE_RIDE_CHEMY_CARD.get())
-                    .AddToList(NEED_ITEM_SpicleWhale).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+                    .has_basic_model().AddToList(NEED_ITEM_SpicleWhale).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIXION_RIDE_CHEMY_CARD = ITEMS.register("lixion_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));

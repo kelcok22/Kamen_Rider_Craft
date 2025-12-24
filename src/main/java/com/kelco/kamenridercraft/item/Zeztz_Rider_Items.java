@@ -150,7 +150,7 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
-                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                        new MobEffectInstance(Effect_core.WONDER, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                         public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -277,6 +277,10 @@ public class Zeztz_Rider_Items {
                 }
             }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+
+    public static final DeferredItem<Item> VOID_CAPSEM = ITEMS.register("void_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
+                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SONG_CAPSEM = ITEMS.register("song_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
