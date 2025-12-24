@@ -10,7 +10,8 @@
 		},
         {
           "type": "patchouli:crafting",
-          "recipe": "kamenridercraft:zeztz/code_capsem"
+          "recipe": "kamenridercraft:zeztz/code_capsem",
+		  "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
         }
 	]
 }

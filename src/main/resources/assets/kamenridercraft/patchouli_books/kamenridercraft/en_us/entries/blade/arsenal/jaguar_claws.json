@@ -1,0 +1,19 @@
+{
+	"name": "Claws",
+	"icon": "kamenridercraft:jaguar_claws",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used by the Jaguar Undead"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jaguar_claws",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

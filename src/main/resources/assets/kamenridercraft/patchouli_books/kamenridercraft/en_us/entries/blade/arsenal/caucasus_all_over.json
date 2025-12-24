@@ -1,0 +1,19 @@
+{
+	"name": "All Over",
+	"icon": "kamenridercraft:caucasus_all_over",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used by the Caucasus Undead"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:caucasus_all_over",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

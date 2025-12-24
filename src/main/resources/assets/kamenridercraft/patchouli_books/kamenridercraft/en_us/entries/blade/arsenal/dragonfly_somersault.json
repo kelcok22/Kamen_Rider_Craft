@@ -1,0 +1,19 @@
+{
+	"name": "Somersault",
+	"icon": "kamenridercraft:dragonfly_somersault",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used by the Dragonfly Undead"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragonfly_somersault",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

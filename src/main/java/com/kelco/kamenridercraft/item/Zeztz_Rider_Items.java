@@ -32,8 +32,7 @@ public class Zeztz_Rider_Items {
         public static final DeferredItem<Item> ZEZTZ_LOGO = ITEMS.register("zeztz_logo",() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zeztz")), new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_CAPSEM = ITEMS.register("code_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
@@ -279,36 +278,28 @@ public class Zeztz_Rider_Items {
 
 
     public static final DeferredItem<Item> VOID_CAPSEM = ITEMS.register("void_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SONG_CAPSEM = ITEMS.register("song_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(CapsemDropper.CAPSEM).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(CapsemDropper.CAPSEM).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SWEETS_CAPSEM = ITEMS.register("sweets_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARADECO_CAPSEM = ITEMS.register("charadeco_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GOCHIZO_CAPSEM = ITEMS.register("gochizo_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> IMPACT_CAPSEM_GOLD = ITEMS.register("impact_capsem_gold",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> TRANSFORM_CAPSEM_GOLD = ITEMS.register("transform_capsem_gold",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WING_CAPSEM_GOLD = ITEMS.register("wing_capsem_gold",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","none","zeztz_driver_belt")
-                    .has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
             () -> new CapsemCylinderItem().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));

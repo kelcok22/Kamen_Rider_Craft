@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zeztz",
-			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Wonder$(li)Speed$(li)Haste II"
 		},
       {
         "type": "patchouli:entity",

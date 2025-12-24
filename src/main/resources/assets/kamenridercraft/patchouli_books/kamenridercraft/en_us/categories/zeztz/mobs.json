@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zeztz/main",
+    "name": "Zeztz Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Zeztz.",
+    "icon": "kamenridercraft:zeztz_logo",
+    "sortnum": 5
+}

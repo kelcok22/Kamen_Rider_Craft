@@ -1,0 +1,19 @@
+{
+	"name": "Mantis",
+	"icon": "kamenridercraft:joker_mantis",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used by the Joker Undead"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:joker_mantis",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

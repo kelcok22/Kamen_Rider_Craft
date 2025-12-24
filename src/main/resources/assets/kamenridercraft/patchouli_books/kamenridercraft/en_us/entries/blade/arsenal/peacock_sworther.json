@@ -1,0 +1,19 @@
+{
+	"name": "Sworther",
+	"icon": "kamenridercraft:peacock_sworther",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used by the Peacock Undead"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:peacock_sworther",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

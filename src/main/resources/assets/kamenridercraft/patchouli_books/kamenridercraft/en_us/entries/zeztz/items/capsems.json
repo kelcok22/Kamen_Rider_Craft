@@ -143,7 +143,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:plasma_capsem",
         "title": " ",
-        "text": "Obtained by getting struck by lightning while having a $(l:zeztz/items/code_capsem)CODE Capsem$(/l) in your inventory"
+        "text": "Obtained by getting struck by lightning while having a $(l:zeztz/items/capsems#void_capsem)Void Capsem$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -169,13 +169,13 @@
         "link_recipe": true,
         "item": "kamenridercraft:erase_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
       },
       {
         "type": "patchouli:text",
         "anchor": "shadow_capsem",
         "title": "Shadow Capsem",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox's $(l:zeztz/devices/nox_driver)Nox Driver$(/l)"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox's $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Used to access Nox's $(l:zeztz/riders/nox#shadow)base$(/l) form"
       },
       {
         "type": "patchouli:spotlight",
@@ -209,6 +209,19 @@
         "item": "kamenridercraft:wolf_capsem",
         "title": " ",
         "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "void_capsem",
+        "title": "Void Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:void_capsem",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
       },
       {
         "type": "patchouli:text",

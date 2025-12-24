@@ -404,6 +404,12 @@
           "anchor": "hazard_level",
           "title": "Hazard Level",
           "text": "This effect causes the Bugster Virus effect to spawn $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l) instead of normal $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l).$(br2)Examples for how to get this effect:$(li)Consume a $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l)"
-        }
-    ]
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder",
+			"title": "Wonder",
+			"text": "This effect allows you to alter your size by pressing the ability key. You can grow while standing and shrink while sneaking.$(br2)Examples for how to get this effect:$(li)Transform into $(l:zeztz/riders/zeztz#wonder)Kamen Rider Zeztz Paradigm Wonder$(/l)"
+		}
+	]
 }

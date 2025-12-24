@@ -1,0 +1,17 @@
+{
+	"name": "Nox Knight",
+	"icon": "kamenridercraft:zeztz_logo",
+	"category": "kamenridercraft:zeztz/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:nox_mob",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br)Health: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops:$(li)1 $(l:zeztz/items/code_capsem)CODE Capsem$(/l) (50%)$(li)1 $(l:zeztz/items/capsems#void_capsem)Void Capsem$(/l) (50%)$(li)1 $(l:zeztz/items/capsems#erase_capsem)Erase Capsem$(/l)"
+      }
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Taiyaki Mold",
 	"icon": "kamenridercraft:taiyaki_mold",
 	"category": "kamenridercraft:blade/arsenal",
-	"sortnum": 10,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

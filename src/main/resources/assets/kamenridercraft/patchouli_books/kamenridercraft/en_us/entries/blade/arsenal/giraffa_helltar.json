@@ -1,0 +1,19 @@
+{
+	"name": "Helltar",
+	"icon": "kamenridercraft:giraffa_helltar",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used by the Giraffa Undead"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giraffa_helltar",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
