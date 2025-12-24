@@ -1,0 +1,37 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/dragonfly_somersault"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-35, -90, 107],
+			"translation": [0, -2.25, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-35, 90, 83],
+			"translation": [0, -2.25, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [-35, -90, -90],
+			"translation": [0, 4.75, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-35, 90, 90],
+			"translation": [0, 4.75, 0]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"head": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 5, -5],
+			"scale": [1.36, 1.36, 1.36]
+		}
+	}
+}

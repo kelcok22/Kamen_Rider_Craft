@@ -1,0 +1,33 @@
+{
+	"format_version": "1.21.11",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/giraffa_skeltar"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [50, 100, 0],
+			"translation": [0, 6, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [50, -100, 0],
+			"translation": [0, 6, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [-35, -90, 0],
+			"translation": [0, 4.75, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-35, 90, 0],
+			"translation": [0, 4.75, 0]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 7, -7]
+		}
+	}
+}

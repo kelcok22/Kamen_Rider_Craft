@@ -336,6 +336,27 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
+	public static final DeferredItem<Item> DRAGONFLY_SOMERSAULT = ITEMS.register("dragonfly_somersault",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
+	public static final DeferredItem<Item> JAGUAR_CLAWS = ITEMS.register("jaguar_claws",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -1.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
+	public static final DeferredItem<Item> PEACOCK_SWORTHER = ITEMS.register("peacock_sworther",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
+	public static final DeferredItem<Item> CAUCASUS_ALL_OVER = ITEMS.register("caucasus_all_over",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
+	public static final DeferredItem<Item> GIRAFFA_HELLTAR = ITEMS.register("giraffa_helltar",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
+	public static final DeferredItem<Item> GIRAFFA_SKELTAR = ITEMS.register("giraffa_skeltar",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
+	public static final DeferredItem<Item> JOKER_MANTIS = ITEMS.register("joker_mantis",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
 	public static final DeferredItem<Item> TAIYAKI_MOLD = ITEMS.register("taiyaki_mold",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).KeepItem().ChangeRepairItem(BLADECARD.get()));
 
