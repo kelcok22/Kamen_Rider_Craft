@@ -1434,6 +1434,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> BOCCA_JALDAK_SPAWN_EGG = ITEMS.register("bocca_jaldak_spawn_egg",
             () -> new DeferredSpawnEggItem(BOCCA_JALDAK, 0xEDE7DA, 0x42E4ED, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<NoxEntity>> NOX = MOBLIST.register("nox_mob",
+            () -> EntityType.Builder.of(NoxEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":nox_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> NOX_SPAWN_EGG = ITEMS.register("nox_spawn_egg",
+            () -> new DeferredSpawnEggItem(NOX, 0xDDEAEF, 0xF55C25, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<BattaAugmentEntity>> BATTA_AUGMENT = MOBLIST.register("batta_augment",
             () -> EntityType.Builder.of(BattaAugmentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":batta_augment"));
 
@@ -1446,12 +1453,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> SHIN_NO_0_SPAWN_EGG = ITEMS.register("shin_no_0_spawn_egg",
             () -> new DeferredSpawnEggItem(SHIN_NO_0, 0x131524, 0x00118E, new Item.Properties()));
 
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<BicycleEntity>> BICYCLE = MOBLIST.register("bicycle",
             () -> EntityType.Builder.of(BicycleEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":bicycle"));
 
     public static final DeferredItem<DeferredSpawnEggItem> BICYCLE_SPAWN_EGG = ITEMS.register("bicycle_spawn_egg",
             () -> new DeferredSpawnEggItem(BICYCLE, 0xffffff, 0x151515, new Item.Properties()));
-
 
     public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
             () -> EntityType.Builder.of(AcrobatterEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":acrobatter"));

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 50,
+		  "name": "kamenridercraft:code_capsem"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 50,
+		  "name": "kamenridercraft:void_capsem"
+		}
+	  ]
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 100,
+				  "name": "kamenridercraft:erase_capsem"
+			  }
+		  ]
+	  }
+  ]
+}

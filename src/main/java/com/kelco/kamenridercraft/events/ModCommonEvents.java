@@ -923,6 +923,8 @@ public class ModCommonEvents {
         event.put(MobsCore.APOLLO.get(), ApolloEntity.setAttributes().build());
         event.put(MobsCore.LIBRA.get(), LibraEntity.setAttributes().build());
 
+		event.put(MobsCore.NOX.get(),NoxEntity.setAttributes().build());
+
 	}
 
 	@SubscribeEvent

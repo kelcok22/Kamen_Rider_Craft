@@ -867,6 +867,8 @@ public class RiderTabs {
             event.accept(MobsCore.LANGO_STOMACH_SPAWN_EGG);
             event.accept(MobsCore.BOCCA_JALDAK_SPAWN_EGG);
 
+            event.accept(MobsCore.NOX_SPAWN_EGG);
+
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 

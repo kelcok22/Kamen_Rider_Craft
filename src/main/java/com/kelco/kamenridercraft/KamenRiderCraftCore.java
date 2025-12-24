@@ -638,6 +638,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.LANGO_STOMACH.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.BOCCA_JALDAK.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.NOX.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHIN_NO_0.get(), BasicEntityRenderer::new);
 
