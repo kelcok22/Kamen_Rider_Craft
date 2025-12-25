@@ -160,6 +160,19 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "zeztz_and_code_zeroider_capsem",
+        "title": "Zeztz & CODE Zeroider Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz: Knock 'Em Down! Giant Robot CODE Zeroider!! (2026, Hyper Battle Video)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#zeroider)Impact Zeroider$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zeztz_and_code_zeroider_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "erase_capsem",
         "title": "Erase Capsem",
         "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox Knight's $(l:zeztz/devices/knight_invoker)Knight Invoker$(/l)"
