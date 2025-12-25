@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "armor_of_the_ogre",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:oni_orehell"
+	}, "C": {
+	  "item": "kamenridercraft:henshin_kigen_shuki"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:armor_of_the_ogre_belt"
+  }
+}

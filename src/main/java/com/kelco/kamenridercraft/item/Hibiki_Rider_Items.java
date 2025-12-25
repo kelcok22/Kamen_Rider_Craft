@@ -368,6 +368,19 @@ public class Hibiki_Rider_Items {
                 player.level().addFreshEntity(thunder);
             }
         }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+
+    public static final DeferredItem<Item> ARMOR_OF_THE_OGRE = ITEMS.register("armor_of_the_ogre",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","armor_of_the_ogre","armor_of_the_ogre_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            });
         
         public static final DeferredItem<Item> HIBIKIHELMET = ITEMS.register("hibikihead",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM));
@@ -417,7 +430,9 @@ public class Hibiki_Rider_Items {
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"habataki",HENSHIN_ONSA_HABATAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> FUBUKIDRIVER = ITEMS.register("fubukidriver",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fubuki",HENSHIN_ONIBUE_FUBUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
-        
+        public static final DeferredItem<Item> ARMOR_OF_THE_OGRE_BELT = ITEMS.register("armor_of_the_ogre_belt",
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"armor_of_the_ogre",ARMOR_OF_THE_OGRE ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+
         public static final DeferredItem<Item> ONGEKIBO_REKKA = ITEMS.register("ongekibo_rekka",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ARMED_SABER = ITEMS.register("armed_saber",
