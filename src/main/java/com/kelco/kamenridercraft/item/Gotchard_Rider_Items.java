@@ -190,7 +190,7 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREATONBO_RIDE_CHEMY_CARD = ITEMS.register("greatonbo_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_great_sasorry","gotchard","gotchardriver_belt",
+			() -> new RideChemyCardItem(new Item.Properties(),0,"_great_sasorry","gotchard","gotchardriver_belt",
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.RIDER_POISON_HAND, 40, 0,true,false),

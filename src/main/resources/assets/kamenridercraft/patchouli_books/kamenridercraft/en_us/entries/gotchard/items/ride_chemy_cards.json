@@ -72,7 +72,7 @@
 			"type": "patchouli:text",
 			"anchor": "greatonbo_ride_chemy_card",
 			"title": "Greatonbo Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#greatsasorry)Greatsasorry$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#greatsasorry)Gotcharbrothers Greatsasorry$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -441,7 +441,7 @@
 			"type": "patchouli:text",
 			"anchor": "bussasorry_ride_chemy_card",
 			"title": "Bussasorry Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#greatsasorry)Greatsasorry$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#greatsasorry)Gotcharbrothers Greatsasorry$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

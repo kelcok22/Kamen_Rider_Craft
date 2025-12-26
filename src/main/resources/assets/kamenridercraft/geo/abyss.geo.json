@@ -22,7 +22,7 @@
 					"cubes": [
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.1, "uv": [0, 0]},
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [32, 0]},
-						{"origin": [-0.5, 31, 0], "size": [1, 4, 2], "inflate": 0.1, "pivot": [0.5, 31, 1], "rotation": [-22.5, 0, 0], "uv": [32, 1]},
+						{"origin": [-0.5, 31, -2], "size": [1, 4, 2], "inflate": 0.1, "pivot": [0.5, 31, -1], "rotation": [-67.5, 0, 0], "uv": [32, 1]},
 						{"origin": [-6.2, 26, -4], "size": [2, 6, 1], "inflate": 0.1, "pivot": [-5.2, 26, -4], "rotation": [-45, 0, 0], "uv": [1, 1]},
 						{"origin": [4.2, 26, -4], "size": [2, 6, 1], "inflate": 0.1, "pivot": [5.2, 26, -4], "rotation": [-45, 0, 0], "uv": [25, 1], "mirror": true}
 					]

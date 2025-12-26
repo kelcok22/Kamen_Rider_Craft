@@ -493,6 +493,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gotchard",
 			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Mirror$(li)Haste III$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "greatsasorry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:greatonbo_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Greatsasorry",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#greatonbo_ride_chemy_card)Greatonbo$(/l) or $(l:gotchard/items/ride_chemy_cards#bussasorry_ride_chemy_card)Bussasorry$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Rider Dokushu!$(li)Anti Poison$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Flying"
 		}
 	]
 }
