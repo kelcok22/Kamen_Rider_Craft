@@ -58,7 +58,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         if (Objects.requireNonNull(slot) == EquipmentSlot.CHEST) {
-            if (get_Form_Item(itemstack, 1) == Gotchard_Rider_Items.GOLDDASH_RIDE_CHEMY_CARD.get() || get_Form_Item(itemstack, 1) == Gotchard_Rider_Items.RAIDENJI_RIDE_CHEMY_CARD.get()) {
+            if (Objects.equals(get_Form_Item(itemstack,1).get_Belt_Model(), "geo/gotchard_belt_big.geo.json")) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers_big.geo.json");
             }
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers.geo.json");
