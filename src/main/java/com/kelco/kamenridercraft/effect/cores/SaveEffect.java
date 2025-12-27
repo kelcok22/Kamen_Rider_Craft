@@ -16,8 +16,13 @@ public class SaveEffect extends MobEffect {
 	}
 
 	@Override
+	public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
+		return true;
+	}
+
+	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-	 if (!pLivingEntity.level().isClientSide()) {
+		if (!pLivingEntity.level().isClientSide()) {
 
 			pLivingEntity.removeEffect(MobEffects.POISON);
 			pLivingEntity.removeEffect(MobEffects.BLINDNESS);
@@ -25,11 +30,14 @@ public class SaveEffect extends MobEffect {
 			pLivingEntity.removeEffect(MobEffects.DIG_SLOWDOWN);
 			pLivingEntity.removeEffect(MobEffects.HARM);
 			pLivingEntity.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
-			pLivingEntity.removeEffect(MobEffects.WEAKNESS); 
+			pLivingEntity.removeEffect(MobEffects.WEAKNESS);
 			pLivingEntity.removeEffect(MobEffects.WITHER);
 			pLivingEntity.removeEffect(Effect_core.EXPLODE);
 			pLivingEntity.removeEffect(Effect_core.RESET);
-	}
+			pLivingEntity.removeEffect(Effect_core.PAUSE);
+			pLivingEntity.removeEffect(Effect_core.FORM_LOCK);
+
+		}
 		return true;
 	}
 }
