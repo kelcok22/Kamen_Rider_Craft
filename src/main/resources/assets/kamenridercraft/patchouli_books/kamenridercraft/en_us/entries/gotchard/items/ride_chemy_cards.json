@@ -454,7 +454,7 @@
 			"type": "patchouli:text",
 			"anchor": "bountybunny_ride_chemy_card",
 			"title": "Bountybunny Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bunnyparka)Bunnyparka$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#bunnyparka)Gotcharbrothers Bunnyparka$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -582,7 +582,7 @@
 			"type": "patchouli:text",
 			"anchor": "panpakaparka_ride_chemy_card",
 			"title": "Panpakaparka Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bunnyparka)Bunnyparka$(/l) form$(br2)Used to access or summon $(l:gotchard/riders/gotcharbrothers#bunnyparka)Gotcharbrothers Bunnyparka$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -591,7 +591,7 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOUNTYBUNNY_RIDE_CHEMY_CARD = ITEMS.register("bountybunny_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bunny_parka","gotchard","gotchardriver_belt",
+			() -> new RideChemyCardItem(new Item.Properties(),0,"_bunny_parka","gotchard","gotchardriver_belt",
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {

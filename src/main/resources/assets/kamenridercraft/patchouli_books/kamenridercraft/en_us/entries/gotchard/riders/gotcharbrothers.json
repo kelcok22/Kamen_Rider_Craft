@@ -367,6 +367,20 @@
 			"type": "patchouli:text",
 			"title": "Gotcharbrothers",
 			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Rider Dokushu!$(li)Anti Poison$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bunnyparka",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:bountybunny_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Bunnyparka",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#bountybunny_ride_chemy_card)Bountybunny$(/l) or $(l:gotchard/items/ride_chemy_cards#panpakaparka_ride_chemy_card)Panpakaparka$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Ghost$(li)Jump Boost IV"
 		}
 	]
 }
