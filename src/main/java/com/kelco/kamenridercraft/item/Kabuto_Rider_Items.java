@@ -473,9 +473,9 @@ public class Kabuto_Rider_Items {
         public static final DeferredItem<Item> SASWORD_RIDER_BELT = ITEMS.register("sasword_rider_belt",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sasword",SASWORD_ZECTER_MASK ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> KICKHOPPER_RIDER_BELT = ITEMS.register("kickhopper_rider_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kickhopper",KICKHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kickhopper",KICKHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> PUNCHHOPPER_RIDER_BELT = ITEMS.register("puchhopper_rider_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"punchhopper",PUNCHHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"punchhopper",PUNCHHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> DARK_KABUTO_RIDER_BELT = ITEMS.register("dark_kabuto_rider_belt",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_kabuto",DARK_KABUTO_ZECTER_MASK ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> CAUCASUS_RIDER_BELT = ITEMS.register("caucasus_rider_belt",
