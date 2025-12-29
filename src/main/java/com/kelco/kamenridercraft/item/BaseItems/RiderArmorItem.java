@@ -73,13 +73,13 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
             if (entity instanceof LivingEntity player) {
                 if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) IsWaking = true;
                 if (RiderDriverItem.isTransforming(player)) {
-                    // isTransforming = true;
+                   //  isTransforming = true;
                 }
                 if (RiderDriverItem.isKicking(player)) IsKicking = true;
             }
 
             if (isTransforming) {
-                state.setAndContinue(POSE);
+                state.setAnimation(POSE);
             } else if (entity instanceof LivingEntity player && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
                 state.setAndContinue(KICK);
             } else state.setAndContinue(IsWaking ? WALK : IDLE);

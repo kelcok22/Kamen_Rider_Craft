@@ -47,7 +47,11 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(Ichigo_Rider_Items.ICHIGOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.ichigo_items")).build());
 
-    public static DeferredHolder<CreativeModeTab, CreativeModeTab> ShinIchigoTab = CREATIVE_MODE_TABS.register("krc_011_shin_ichigo_tab", () ->
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> TheIchigoTab = CREATIVE_MODE_TABS.register("krc_011_the_ichigo_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.THE_ICHIGO_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
+                    .title(Component.translatable("tab.kamenridercraft.the_ichigo_items")).build());
+
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> ShinIchigoTab = CREATIVE_MODE_TABS.register("krc_012_shin_ichigo_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.shin_ichigo_items")).build());
 
@@ -219,6 +223,7 @@ public class RiderTabs {
                     .title(Component.translatable("tab.kamenridercraft.black_sun_items")).build());
 
     public static List<Item> ICHIGO_TAB_ITEM= new ArrayList<>();
+    public static List<Item> THE_TAB_ITEM= new ArrayList<>();
 
     public static List<Item> V3_TAB_ITEM= new ArrayList<>();
     public static List<Item> X_TAB_ITEM= new ArrayList<>();
@@ -287,7 +292,13 @@ public class RiderTabs {
                 event.accept( RiderTabs.ICHIGO_TAB_ITEM.get(i));
             }
 
-        }else   if(event.getTab() == RiderTabs.ShinIchigoTab.get()) {
+        }else  if(event.getTab() == RiderTabs.TheIchigoTab.get()) {
+            for (int i = 0; i < RiderTabs.THE_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.THE_TAB_ITEM.get(i));
+            }
+
+        }else  if(event.getTab() == RiderTabs.ShinIchigoTab.get()) {
             for (int i = 0; i < RiderTabs.SHIN_ICHIGO_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.SHIN_ICHIGO_TAB_ITEM.get(i));

@@ -270,7 +270,7 @@ public class RiderDriverItem extends RiderArmorItem {
             OnTransformation(itemstack,player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
-                form.putDouble("is_transforming",120);
+                form.putDouble("is_transforming",60);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }

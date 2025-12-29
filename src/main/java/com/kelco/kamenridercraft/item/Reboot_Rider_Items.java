@@ -270,6 +270,45 @@ public class Reboot_Rider_Items {
 	            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_SUN_TAB_ITEM));
 
 
+        //Kamen Rider the First
+
+    public static final DeferredItem<Item> THE_TYPHOON_CORE = ITEMS.register("the_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_first","ichigo_the","typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.THE_TAB_ITEM));
+
+    public static final DeferredItem<Item> THE_TYPHOON_CORE_NEXT = ITEMS.register("the_next_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_next","ichigo_the","typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.THE_TAB_ITEM));
+
+    public static final DeferredItem<Item> THE_ICHIGO_HELMET = ITEMS.register("the_ichigo_head",
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.THE_TAB_ITEM));
+    public static final DeferredItem<Item> THE_ICHIGO_CHESTPLATE = ITEMS.register("the_ichigo_troso",
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.THE_TAB_ITEM));
+    public static final DeferredItem<Item> THE_ICHIGO_LEGGINGS = ITEMS.register("the_ichigo_legs",
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.THE_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> THE_TYPHOON_ICHIGO = ITEMS.register("the_typhoon_ichigo",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo_the",THE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.THE_TAB_ITEM));
+
 //Shin Kamen Rider
 
 public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.register("prana_infused_rider_circuit",
