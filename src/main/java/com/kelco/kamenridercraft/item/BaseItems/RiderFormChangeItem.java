@@ -478,7 +478,7 @@ public class RiderFormChangeItem extends BaseItem {
             ItemStack BELT = interactionTarget.getItemBySlot(EquipmentSlot.FEET);
 
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-                if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.CanChange(player,belt,BELT)) STIFT_ITEM.interactLivingEntity(stack, player, summon, usedHand);
+                if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.CanChange(player,belt,BELT)) STIFT_ITEM.interactLivingEntity(new ItemStack(form), player, summon, usedHand);
                 else if (CanChange(player,belt,BELT)) {
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET));
                     if (RESET_FORM_MAIN& Objects.equals(belt.Rider, RIDER_NAME))RiderDriverItem.reset_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET));
@@ -516,7 +516,7 @@ public class RiderFormChangeItem extends BaseItem {
 
         if(!player.hasEffect(Effect_core.FORM_LOCK)) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-                if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.CanChange(player,belt,BELT)) STIFT_ITEM.use(level, player, usedHand);
+                if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown()) STIFT_ITEM.use(level, player, usedHand);
                 else if (CanChange(player,belt,BELT)) {
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (RESET_FORM_MAIN& Objects.equals(belt.Rider, RIDER_NAME))RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));

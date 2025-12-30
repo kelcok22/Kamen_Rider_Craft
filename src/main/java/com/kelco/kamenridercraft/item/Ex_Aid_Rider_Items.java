@@ -308,8 +308,7 @@ public class Ex_Aid_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.SetFormToArmor()
-					.addShiftForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+            }.SetFormToArmor().addShiftForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_LV_1 = ITEMS.register("proto_mighty_action_x_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","genm","gamer_driver_proto_mighty_action_x_lv_1",
