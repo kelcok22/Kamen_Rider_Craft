@@ -48,6 +48,20 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "hunter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_genmu\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_fang\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Hunter Action Gamer Level 5",
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Genm",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) $(l:ex_aid/riders/lazer)Lazer,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "zombie_x",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_genmu\",components:{custom_data:{slot_tex1:\"kamenridercraft:dangerous_zombie_gashat_bd\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"scale": -1,

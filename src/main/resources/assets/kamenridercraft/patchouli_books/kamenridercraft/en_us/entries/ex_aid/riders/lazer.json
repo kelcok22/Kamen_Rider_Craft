@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Lazer",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_lazer)Gamer Driver$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_lazer)Gamer Driver$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) $(l:ex_aid/riders/lazer)Lazer,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
