@@ -273,7 +273,7 @@ public class Reboot_Rider_Items {
         //Kamen Rider the First
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE = ITEMS.register("the_typhoon_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_first","ichigo_the","typhoon_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_first","ichigo_the","typhoon_belt_the_first",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
@@ -286,7 +286,7 @@ public class Reboot_Rider_Items {
             }.allowRiderKick().IsGlowing().AddToList(RiderTabs.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE_NEXT = ITEMS.register("the_next_typhoon_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_next","ichigo_the","typhoon_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_next","ichigo_the","typhoon_belt_the_first",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
@@ -307,7 +307,7 @@ public class Reboot_Rider_Items {
 
 
     public static final DeferredItem<Item> THE_TYPHOON_ICHIGO = ITEMS.register("the_typhoon_ichigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo_the",THE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.THE_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo_the",THE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.THE_TAB_ITEM));
 
 //Shin Kamen Rider
 

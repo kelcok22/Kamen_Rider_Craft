@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-24T17:33:13.7285398	Item Models: kamenridercraft
+// 1.21.1	2026-01-01T00:40:36.2443398	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -319,6 +319,7 @@ b978aebb5ea0e62bb75c1908421d77b6ca1094bb assets/kamenridercraft/models/item/hopp
 70d6c79243e4068dd15cbb49476aece8d2dd9f44 assets/kamenridercraft/models/item/hotcaken_gochizo.json
 dfa8577f88507a6ba75212dbe25bf54cc4b5bfc4 assets/kamenridercraft/models/item/ichigo_gochizo.json
 e0156cd444772933aeaa35073d49d687f5591d97 assets/kamenridercraft/models/item/ichigo_manga.json
+58561a2e8057d53ffdaca03b935ecd59747d7eaa assets/kamenridercraft/models/item/iconga_no_akai_agito.json
 0cc52e10e76ad344a52028e033ec9f37efb680b5 assets/kamenridercraft/models/item/impact_capsem.json
 4d1cbe9721b141db0217f8682ab6f4a78ed075e4 assets/kamenridercraft/models/item/impact_capsem_gold.json
 8b5d75860f71750d3905a3d57c74a2b704970ef2 assets/kamenridercraft/models/item/inphoenix_ride_chemy_card.json

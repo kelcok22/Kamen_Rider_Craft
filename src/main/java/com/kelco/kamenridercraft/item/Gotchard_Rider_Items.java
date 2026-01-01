@@ -588,7 +588,7 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> BUSSASORRY_RIDE_CHEMY_CARD = ITEMS.register("bussasorry_ride_chemy_card",
 			() -> new CopyChemyCardItem(new Item.Properties(),GREATONBO_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_GreatSasorry)
-					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Animal_CHEMY).has_basic_model().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOUNTYBUNNY_RIDE_CHEMY_CARD = ITEMS.register("bountybunny_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),0,"_bunny_parka","gotchard","gotchardriver_belt",
