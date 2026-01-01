@@ -40,6 +40,7 @@ public class Agito_Rider_Items {
 				}
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
+
     public static final DeferredItem<Item> AGITO_STORM = ITEMS.register("agito_storm",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","agito","alter_ring_belt_s",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -119,6 +120,19 @@ public class Agito_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+
+    public static final DeferredItem<Item> ICONGA_NO_AKAI_AGITO= ITEMS.register("iconga_no_akai_agito",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_iconga_no_akai","agito","alter_ring_belt_f",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().IsBeltGlowing().has_basic_model().model_has_different_name("another_agito").AddToList(RiderTabs.AGITO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gills","meta_factor_belt",
