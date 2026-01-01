@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ziingazer",
+  "pattern": [
+    "IXI",
+    "XMX",
+    "IXI"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:providence_card_gazer"
+    },"I": {
+      "item": "kamenridercraft:rider_circuit"
+    },"M": {
+      "item": "kamenridercraft:ziin_raise_riser_card"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:providence_card_ziingazer"
+  }
+}
