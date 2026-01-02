@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ichigo",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XCX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:rider_circuit"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:riderman_belt_core"
+    },
+    "C": [
+      {
+        "item": "minecraft:wooden_pickaxe"
+      },
+      {
+        "item": "minecraft:stone_pickaxe"
+      },
+      {
+        "item": "minecraft:iron_pickaxe"
+      },
+      {
+        "item": "minecraft:golden_pickaxe"
+      },
+      {
+        "item": "minecraft:diamond_pickaxe"
+      },
+      {
+        "item": "minecraft:netherite_pickaxe"
+      }
+    ]
+  },
+  "result": {
+    "id": "kamenridercraft:drill_arm"
+  }    
+}
+
