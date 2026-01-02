@@ -511,7 +511,7 @@ public class Fourze_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.05);
                 }
-            } .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+            }.ChangeBeltModel("geo/eins_belt.geo.json").IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ikaros","ikaros_driver_belt",

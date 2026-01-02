@@ -173,7 +173,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.ChangeBeltModel("geo/eins_belt.geo.json").IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
