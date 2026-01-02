@@ -370,6 +370,11 @@ public class Zeztz_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
-        public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
+    public static final DeferredItem<Item> ZEZTZ_HORSE_ARMOR = ITEMS.register("zeztz_horse_armor",
+            () -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1),"zeztz_horse_armor").AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+
+    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    
 	}

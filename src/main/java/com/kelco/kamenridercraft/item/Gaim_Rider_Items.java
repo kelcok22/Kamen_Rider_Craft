@@ -1849,7 +1849,7 @@ public class Gaim_Rider_Items {
 
 	public static final DeferredItem<Item> GAIM_HORSE_ARMOR = ITEMS.register("gaim_horse_armor",
 			() -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
-					false, new Item.Properties().stacksTo(1)).AddToList(RiderTabs.GAIM_TAB_ITEM));
+					false, new Item.Properties().stacksTo(1),"horse_armor_gaim").AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item>  HELHEIM_FRUIT = ITEMS.register("helheim_fruit",
 			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 500, 2), 1.0F).build()))
