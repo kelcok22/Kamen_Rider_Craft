@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside the $(l:g/devices/g_belt)G Belt$(/l) to transform into $(l:g/riders/g)Kamen Rider G"
+			"text": "Equipped alongside the $(l:g/devices/g_belt)G Belt$(/l) to transform into $(l:g/riders/g)Kamen Rider G"
 		},
 		{
 			"type": "patchouli:crafting",

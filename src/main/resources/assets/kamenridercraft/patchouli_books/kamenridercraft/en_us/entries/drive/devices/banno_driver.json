@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "banno_driver_gord_drive",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/gold_drive)Gold Drive"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/gold_drive)Gold Drive"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "banno_driver_bronze_drive",
 			"title": "banno Driver (Bronze Drive)",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/bronze_drive)Bronzedrive"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/bronze_drive)Bronzedrive"
 		},
 		{
 			"type": "patchouli:crafting",

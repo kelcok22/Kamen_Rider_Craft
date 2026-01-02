@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "proto_mega_ulorder_red",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_red)Kamen Rider Dark Necrom Red"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Equipped alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_red)Kamen Rider Dark Necrom Red"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "proto_mega_ulorder_blue",
 			"title": "Proto Mega Ulorder (Dark Necrom Blue)",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_blue)Kamen Rider Dark Necrom Blue"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Equipped alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_blue)Kamen Rider Dark Necrom Blue"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -31,7 +31,7 @@
 			"type": "patchouli:text",
 			"anchor": "proto_mega_ulorder_yellow",
 			"title": "Proto Mega Ulorder (Dark Necrom Yellow)",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_yellow)Kamen Rider Dark Necrom Yellow"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Equipped alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_yellow)Kamen Rider Dark Necrom Yellow"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -43,7 +43,7 @@
         "type": "patchouli:text",
         "anchor": "proto_mega_ulorder_pink",
         "title": "Proto Mega Ulorder (Dark Necrom Pink)",
-        "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_pink)Kamen Rider Dark Necrom Pink"
+        "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Equipped alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/dark_necrom_pink)Kamen Rider Dark Necrom Pink"
       },
       {
         "type": "patchouli:crafting",
@@ -54,7 +54,7 @@
         "type": "patchouli:text",
         "anchor": "proto_mega_ulorder_gamma_superior",
         "title": "Proto Mega Ulorder (Gamma Superior)",
-        "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/gamma_superior)Gamma Superior"
+        "text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Equipped alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/gamma_superior)Gamma Superior"
       },
       {
         "type": "patchouli:crafting",

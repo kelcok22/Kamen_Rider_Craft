@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "todorokidriver",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to equip the $(l:hibiki/riders/armor_of_the_ogre)Armor of the Ogre"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Equipped alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to equip the $(l:hibiki/riders/armor_of_the_ogre)Armor of the Ogre"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "build_driver",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/build)Kamen Rider Build$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/build)Kamen Rider Build$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_cross_z",
 			"title": "Build Driver (Cross-Z)",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/cross-z)Kamen Rider Cross-Z$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/cross-z)Kamen Rider Cross-Z$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -30,7 +30,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_grease",
 			"title": "Build Driver (Grease)",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/grease)Kamen Rider Grease$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/grease)Kamen Rider Grease$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -41,7 +41,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_rogue",
 			"title": "Build Driver (Rogue)",
-			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/rogue#prime_rogue)Kamen Rider Rogue$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/rogue#prime_rogue)Kamen Rider Rogue$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -52,7 +52,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_blood",
 			"title": "Build Driver (Blood)",
-			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/blood)Kamen Rider Blood$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/blood)Kamen Rider Blood$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -63,7 +63,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_killbus",
 			"title": "Build Driver (Killbus)",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/killbus)Kamen Rider Killbus$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/killbus)Kamen Rider Killbus$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -75,7 +75,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_metal",
 			"title": "Build Driver (Metal Build)",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/metal_build)Kamen Rider Metal Build$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/metal_build)Kamen Rider Metal Build$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -86,7 +86,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_phantom",
 			"title": "Build Driver (Phantom Build)",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/metal_build#phantom)Kamen Rider Phantom Build$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/metal_build#phantom)Kamen Rider Phantom Build$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",

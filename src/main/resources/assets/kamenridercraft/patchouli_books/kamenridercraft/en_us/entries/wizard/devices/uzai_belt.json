@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard stageshow$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/uzai)Kamen Rider Uzai"
+			"text": "Appears in:$(li)Kamen Rider Wizard stageshow$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/uzai)Kamen Rider Uzai"
 		},
         {
           "type": "patchouli:spotlight",

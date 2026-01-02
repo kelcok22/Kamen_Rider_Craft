@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)King of Vampire (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:kiva/devices/armor)Kiva armor$(/l) to transform into $(l:kiva/riders/proto_ixa_the_first)Kamen Rider Proto Ixa (The First)$(/l)"
+			"text": "Appears in:$(li)King of Vampire (2010, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:kiva/devices/armor)Kiva armor$(/l) to transform into $(l:kiva/riders/proto_ixa_the_first)Kamen Rider Proto Ixa (The First)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

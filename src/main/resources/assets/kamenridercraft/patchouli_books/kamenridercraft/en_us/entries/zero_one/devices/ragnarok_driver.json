@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2022, comic)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ragnarok)Ragnarok"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2022, comic)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ragnarok)Ragnarok"
 		},
 		{
 			"type": "patchouli:crafting",

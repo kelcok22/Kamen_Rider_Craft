@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "core_driver",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/core)Kamen Rider Core"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Equipped alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/core)Kamen Rider Core"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "powered_up_core_driver",
 			"title": "Powered Up Gaia Core Typhoon",
-			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/powered_up_core)Powered Up Core"
+			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Equipped alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/powered_up_core)Powered Up Core"
 		},
 		{
 			"type": "patchouli:spotlight",

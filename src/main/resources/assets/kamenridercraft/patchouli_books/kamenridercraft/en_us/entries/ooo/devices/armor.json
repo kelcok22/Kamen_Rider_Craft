@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside an OOO Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)'s equipment$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)'s equipment$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)'s equipment$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)'s equipment$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)'s equipment$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)'s equipment$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)'s equipment$(li)$(l:ooo/mobs/kyoryu_greeed_mob)Kyoryu Greeed$(/l)'s equipment"
+			"text": "Equipped alongside an OOO Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh (Complete)$(/l)'s equipment$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh (Lost)$(/l)'s equipment$(li)$(l:ooo/mobs/uva_mob)Uva$(/l)'s equipment$(li)$(l:ooo/mobs/kazari_mob)Kazari$(/l)'s equipment$(li)$(l:ooo/mobs/mezool_mob)Mezool$(/l)'s equipment$(li)$(l:ooo/mobs/gamel_mob)Gamel$(/l)'s equipment$(li)$(l:ooo/mobs/muchiri_mob)Muchiri$(/l)'s equipment$(li)$(l:ooo/mobs/kyoryu_greeed_mob)Kyoryu Greeed$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

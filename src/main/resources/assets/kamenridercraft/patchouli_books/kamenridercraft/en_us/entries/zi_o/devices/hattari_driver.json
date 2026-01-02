@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Shinobi $(m)(2022, TV show)/$ (2019, web series)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/hattari)Kamen Rider Hattari"
+			"text": "Appears in:$(li)Kamen Rider Shinobi $(m)(2022, TV show)/$ (2019, web series)$(br2)Equipped alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/hattari)Kamen Rider Hattari"
 		},
 		{
 			"type": "patchouli:crafting",

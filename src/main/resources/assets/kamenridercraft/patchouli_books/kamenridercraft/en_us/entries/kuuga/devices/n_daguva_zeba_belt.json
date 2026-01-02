@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used alongside the $(l:kuuga/devices/armor)Kuuga armor$(/l) to transform into $(l:kuuga/riders/n_daguva_zeba)N·Daguva·Zeba"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Equipped alongside the $(l:kuuga/devices/armor)Kuuga armor$(/l) to transform into $(l:kuuga/riders/n_daguva_zeba)N·Daguva·Zeba"
 		},
 		{
 			"type": "patchouli:crafting",

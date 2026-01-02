@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Wizard Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:wizard/mobs/mage_footsoldier)Imperial Guard$(/l)'s equipment$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)'s equipment$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)'s equipment$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)'s equipment"
+			"text": "Equipped alongside a Wizard Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:wizard/mobs/mage_footsoldier)Imperial Guard$(/l)'s equipment$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)'s equipment$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)'s equipment$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

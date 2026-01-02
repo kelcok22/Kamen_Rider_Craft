@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "transteam_gun_night_rogue",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/night_rogue)Night Rogue"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/night_rogue)Night Rogue"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "transteam_gun_blood_stalk",
 			"title": "Transteam Gun (Blood Stalk)",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/blood_stalk)Blood Stalk"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/blood_stalk)Blood Stalk"
 		},
 		{
 			"type": "patchouli:spotlight",

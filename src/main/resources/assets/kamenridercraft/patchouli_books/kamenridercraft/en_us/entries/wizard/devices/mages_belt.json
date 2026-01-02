@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "magewizardriver",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage#amber)Kamen Rider Mage"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage#amber)Kamen Rider Mage"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_b",
 			"title": "Mage's Belt (Blue Mage)",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage#blue)Kamen Rider Mage"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage#blue)Kamen Rider Mage"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -27,7 +27,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_g",
 			"title": "Mage's Belt (Green Mage)",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage#green)Kamen Rider Mage"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage#green)Kamen Rider Mage"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -37,7 +37,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_foot_soldiers",
 			"title": "Mage's Belt (Imperial Guard)",
-			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage_imperial_guard)Kamen Rider Mage (Imperial Guard)"
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage_imperial_guard)Kamen Rider Mage (Imperial Guard)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -50,7 +50,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_captain",
 			"title": "Mage's Belt (Imperial Captain)",
-			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage_imperial_captain)Kamen Rider Mage (Imperial Captain)"
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/mage_imperial_captain)Kamen Rider Mage (Imperial Captain)"
 		},
 		{
 			"type": "patchouli:spotlight",

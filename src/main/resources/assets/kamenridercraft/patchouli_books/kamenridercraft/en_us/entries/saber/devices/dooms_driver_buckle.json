@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "dooms_driver_buckle_solomon",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/solomon)Kamen Rider Solomon"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/solomon)Kamen Rider Solomon"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "dooms_driver_buckle_storious",
 			"title": "Dooms Driver Buckle (Storious)",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/storious)Kamen Rider Storious"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/storious)Kamen Rider Storious"
 		},
 		{
 			"type": "patchouli:spotlight",

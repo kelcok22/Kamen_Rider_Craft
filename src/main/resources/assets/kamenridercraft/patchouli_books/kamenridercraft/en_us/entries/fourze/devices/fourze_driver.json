@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used alongside the $(l:fourze/devices/armor)Fourze armor$(/l) to transform into $(l:fourze/riders/fourze#basestates)Kamen Rider Fourze"
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Equipped alongside the $(l:fourze/devices/armor)Fourze armor$(/l) to transform into $(l:fourze/riders/fourze#basestates)Kamen Rider Fourze"
 		},
 		{
 			"type": "patchouli:crafting",

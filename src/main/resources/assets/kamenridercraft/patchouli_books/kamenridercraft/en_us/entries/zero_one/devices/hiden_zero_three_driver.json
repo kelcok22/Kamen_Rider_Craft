@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/zero-three)Kamen Rider Zero-Three"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/zero-three)Kamen Rider Zero-Three"
 		},
 		{
 			"type": "patchouli:crafting",

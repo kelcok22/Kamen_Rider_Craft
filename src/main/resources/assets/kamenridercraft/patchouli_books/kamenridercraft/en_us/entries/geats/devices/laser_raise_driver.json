@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ziingazer)Kamen Rider Ziingazer"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ziingazer)Kamen Rider Ziingazer"
 		},
 		{
 			"type": "patchouli:crafting",

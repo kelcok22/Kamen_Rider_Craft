@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "alternative_v_buckle",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/alternative)Alternative"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Equipped alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/alternative)Alternative"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "alternative_zero_v_buckle",
 			"title": "V Buckle Alternative (Alternative Zero)",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/alternative_zero)Alternative Zero"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Equipped alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/alternative_zero)Alternative Zero"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -1,0 +1,24 @@
+{
+	"name": "The Series Armor",
+	"icon": "kamenridercraft:the_ichigo_head",
+	"category": "kamenridercraft:the_series/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Equipped alongside a The Series Rider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:the_series/the_ichigo_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:the_series/the_ichigo_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:the_series/the_ichigo_legs"
+		}
+	]
+}

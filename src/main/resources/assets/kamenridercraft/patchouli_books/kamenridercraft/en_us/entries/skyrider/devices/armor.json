@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside the $(l:skyrider/devices/tornado#tornado)Tornado$(/l) to transform into $(l:skyrider/riders/skyrider)Skyrider"
+			"text": "Equipped alongside the $(l:skyrider/devices/tornado#tornado)Tornado$(/l) to transform into $(l:skyrider/riders/skyrider)Skyrider"
 		},
 		{
 			"type": "patchouli:crafting",

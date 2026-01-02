@@ -7,13 +7,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sirius_card",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to craft Ziingazer's $(l:geats/devices/laser_raise_driver)Laser Raise Driver$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:providence_card_ziingazer",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/providence_card_ziingazer"
 		}
 	]
 }

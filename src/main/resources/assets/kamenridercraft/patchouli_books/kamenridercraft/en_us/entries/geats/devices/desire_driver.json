@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "desire_driver_geats",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/geats)Kamen Rider Geats$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/geats)Kamen Rider Geats$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_tycoon",
 			"title": "Desire Driver (Tycoon)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/tycoon)Kamen Rider Tycoon$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/tycoon)Kamen Rider Tycoon$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_na_go",
 			"title": "Desire Driver (Na-Go)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/na-go)Kamen Rider Na-Go$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/na-go)Kamen Rider Na-Go$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_buffa",
 			"title": "Desire Driver (Buffa)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/buffa)Kamen Rider Buffa$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/buffa)Kamen Rider Buffa$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_punkjack",
 			"title": "Desire Driver (Punkjack)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/punkjack)Kamen Rider Punkjack$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/punkjack)Kamen Rider Punkjack$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -62,7 +62,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_nudge_sparrow",
 			"title": "Desire Driver (Nadge-Sparrow)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/nadge_sparrow)Kamen Rider Nadge-Sparrow$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/nadge_sparrow)Kamen Rider Nadge-Sparrow$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -73,7 +73,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_shirowe",
 			"title": "Desire Driver (Shirowe)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/shirowe)Kamen Rider Shirowe$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/shirowe)Kamen Rider Shirowe$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_ginpen",
 			"title": "Desire Driver (Ginpen)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ginpen)Kamen Rider Ginpen$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ginpen)Kamen Rider Ginpen$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -95,7 +95,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_mary",
 			"title": "Desire Driver (Mary)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/mary)Kamen Rider Mary$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/mary)Kamen Rider Mary$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -106,7 +106,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_da_paan",
 			"title": "Desire Driver (Da·Paan)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/da_paan)Kamen Rider Da·Paan$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/da_paan)Kamen Rider Da·Paan$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -117,7 +117,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_keirou",
 			"title": "Desire Driver (Keilow)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/keilow)Kamen Rider Keilow$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/keilow)Kamen Rider Keilow$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -128,7 +128,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_letter",
 			"title": "Desire Driver (Letter)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/letter)Kamen Rider Letter$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/letter)Kamen Rider Letter$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -139,7 +139,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_lopo",
 			"title": "Desire Driver (Lopo)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/lopo)Kamen Rider Lopo$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/lopo)Kamen Rider Lopo$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -150,7 +150,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_groovy",
 			"title": "Desire Driver (Groovy)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/groovy)Kamen Rider Groovy$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/groovy)Kamen Rider Groovy$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -161,7 +161,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_hakubi",
 			"title": "Desire Driver (Hakubi)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/hakubi)Kamen Rider Hakubi$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/hakubi)Kamen Rider Hakubi$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -172,7 +172,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_turbon",
 			"title": "Desire Driver (Turbon)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/turbon)Kamen Rider Turbon$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/turbon)Kamen Rider Turbon$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -183,7 +183,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_brali",
 			"title": "Desire Driver (Brali)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/brali)Kamen Rider Brali$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/brali)Kamen Rider Brali$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -194,7 +194,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_gya_go",
 			"title": "Desire Driver (Gya-Go)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gya-go)Kamen Rider Gya-Go$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gya-go)Kamen Rider Gya-Go$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -205,7 +205,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_seeker",
 			"title": "Desire Driver (Seeker)",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/seeker)Kamen Rider Seeker$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/seeker)Kamen Rider Seeker$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -216,7 +216,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_butchi",
 			"title": "Desire Driver (Butchi)",
-			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/butchi)Kamen Rider Butchi$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/butchi)Kamen Rider Butchi$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -227,7 +227,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_revi",
 			"title": "Desire Driver (Revi)",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/revi)Kamen Rider Revi$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/revi)Kamen Rider Revi$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -238,7 +238,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_vice",
 			"title": "Desire Driver (Vice)",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/vice)Kamen Rider Vice$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/vice)Kamen Rider Vice$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -249,7 +249,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_jyamato",
 			"title": "Desire Driver (Jyamato)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/jyamato_rider)Jyamato Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/jyamato_rider)Jyamato Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -261,7 +261,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_gm",
 			"title": "Desire Driver (GM)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/gm_rider)GM Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/gm_rider)GM Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -273,7 +273,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_gm_chirami",
 			"title": "Desire Driver (GM)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/gm_rider_chirami)GM Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/gm_rider_chirami)GM Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -285,7 +285,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_keibi_riders",
 			"title": "Desire Driver (Keibi Riders)",
-			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/keibi_rider)Keibi Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/keibi_rider)Keibi Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -296,7 +296,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_the_end_riders",
 			"title": "Desire Driver (The End Riders)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/the_end_rider)The End Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/the_end_rider)The End Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -308,7 +308,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_x_geats",
 			"title": "Desire Driver (XGeats)",
-			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/xgeats)Kamen Rider XGeats$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/xgeats)Kamen Rider XGeats$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -319,7 +319,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_dooms_geats",
 			"title": "Desire Driver (Dooms Geats)",
-			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/dooms_geats)Kamen Rider Dooms Geats$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/dooms_geats)Kamen Rider Dooms Geats$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",

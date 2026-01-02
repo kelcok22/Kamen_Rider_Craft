@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:the_series/main",
+    "name": "The Series Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to Kamen Rider The Series.",
+    "icon": "kamenridercraft:the_ichigo_head",
+    "sortnum": 0
+}

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kaixa_driver",
-			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/kaixa)Kamen Rider Kaixa"
+			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Equipped alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/kaixa)Kamen Rider Kaixa"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "next_kaixa_driver",
 			"title": "Kaixa Driver (Next Kaixa)",
-			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/next_kaixa)Kamen Rider Next Kaixa"
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Equipped alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/next_kaixa)Kamen Rider Next Kaixa"
 		},
 		{
 			"type": "patchouli:crafting",

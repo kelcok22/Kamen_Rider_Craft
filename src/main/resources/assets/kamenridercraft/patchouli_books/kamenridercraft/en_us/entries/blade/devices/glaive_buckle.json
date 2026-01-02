@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Blade: Missing Ace (2004, movie)$(br2)Used alongside the $(l:blade/devices/armor)Blade armor$(/l) to transform into $(l:blade/riders/glaive)Kamen Rider Glaive"
+			"text": "Appears in:$(li)Kamen Rider Blade: Missing Ace (2004, movie)$(br2)Equipped alongside the $(l:blade/devices/armor)Blade armor$(/l) to transform into $(l:blade/riders/glaive)Kamen Rider Glaive"
 		},
 		{
 			"type": "patchouli:crafting",

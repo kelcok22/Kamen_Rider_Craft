@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_ex_aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/ex_aid)Kamen Rider Ex-Aid"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/ex_aid)Kamen Rider Ex-Aid"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_brave",
 			"title": "Gamer Driver (Brave)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/brave)Kamen Rider Brave"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/brave)Kamen Rider Brave"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_snipe",
 			"title": "Gamer Driver (Snipe)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/snipe)Kamen Rider Snipe"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/snipe)Kamen Rider Snipe"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_lazer",
 			"title": "Gamer Driver (Lazer)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/lazer)Kamen Rider Lazer"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/lazer)Kamen Rider Lazer"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_genmu",
 			"title": "Gamer Driver (Genm)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/genm)Kamen Rider Genm"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/genm)Kamen Rider Genm"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -63,7 +63,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_paradx",
 			"title": "Gamer Driver (Para-DX)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/para_dx#perfect_knock_out)Kamen Rider Para-DX"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/para_dx#perfect_knock_out)Kamen Rider Para-DX"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -74,7 +74,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_true_brave",
 			"title": "Gamer Driver (True Brave)",
-			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/true_brave)Kamen Rider True Brave"
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/true_brave)Kamen Rider True Brave"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -85,7 +85,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_fuuma",
 			"title": "Gamer Driver (Fuma)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/fuma)Kamen Rider Fuma"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/fuma)Kamen Rider Fuma"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -96,7 +96,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_anotherparadox",
 			"title": "Gamer Driver (Another Para-DX)",
-			"text": "Appears in:$(li)Kamen Rider Para-DX with Poppy (2018, V-Cinema film)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/another_para_dx)Kamen Rider Another Para-DX"
+			"text": "Appears in:$(li)Kamen Rider Para-DX with Poppy (2018, V-Cinema film)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/another_para_dx)Kamen Rider Another Para-DX"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -107,7 +107,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_nico_snipe",
 			"title": "Gamer Driver (Nico Snipe)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/nico_snipe)Kamen Rider Nico Snipe"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/nico_snipe)Kamen Rider Nico Snipe"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -118,7 +118,7 @@
 			"type": "patchouli:text",
 			"anchor": "gamer_driver_gamedeus_muteki",
 			"title": "Gamer Driver (Gamedeus Muteki)",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/gamedeus_muteki)Gamedeus Muteki"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Equipped alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/gamedeus_muteki)Gamedeus Muteki"
 		},
 		{
 			"type": "patchouli:crafting",

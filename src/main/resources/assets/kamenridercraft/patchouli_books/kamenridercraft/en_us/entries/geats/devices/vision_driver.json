@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "vision_driver_glare",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/glare)Kamen Rider Glare"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/glare)Kamen Rider Glare"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "vision_driver_glare2",
 			"title": "Vision Driver (Glare2)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/glare2)Kamen Rider Glare2"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/glare2)Kamen Rider Glare2"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -31,7 +31,7 @@
 			"type": "patchouli:text",
 			"anchor": "vision_driver_gazer",
 			"title": "Vision Driver (Gazer)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gazer)Kamen Rider Gazer"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gazer)Kamen Rider Gazer"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -43,7 +43,7 @@
 			"type": "patchouli:text",
 			"anchor": "vision_driver_gazer_suel",
 			"title": "Vision Driver (Suel Gazer)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/suel_gazer)Kamen Rider Suel Gazer"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/suel_gazer)Kamen Rider Suel Gazer"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -54,7 +54,7 @@
 			"type": "patchouli:text",
 			"anchor": "vision_driver_jyamato_glare",
 			"title": "Vision Driver (Jyamato Gazer)",
-			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/jyamato_gazer)Kamen Rider Jyamato Gazer"
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/jyamato_gazer)Kamen Rider Jyamato Gazer"
 		},
 		{
 			"type": "patchouli:crafting",

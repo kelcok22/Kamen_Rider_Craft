@@ -1,0 +1,16 @@
+{
+	"name": "Rope Arm",
+	"icon": "kamenridercraft:rope_arm",
+	"category": "kamenridercraft:v3/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Used by $(l:v3/riders/riderman)Riderman$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/rope_arm"
+		}
+	]
+}

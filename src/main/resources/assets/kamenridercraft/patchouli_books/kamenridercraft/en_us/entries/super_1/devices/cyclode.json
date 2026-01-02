@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cyclode",
-			"text": "Appears in:$(li)Kamen Rider Super-1 (1980, TV show)$(br2)Used alongside the $(l:super_1/devices/armor)Super-1 armor$(/l) to transform into $(l:super_1/riders/super_1)Kamen Rider Super-1"
+			"text": "Appears in:$(li)Kamen Rider Super-1 (1980, TV show)$(br2)Equipped alongside the $(l:super_1/devices/armor)Super-1 armor$(/l) to transform into $(l:super_1/riders/super_1)Kamen Rider Super-1"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "robot_cyclode",
 			"title": "Cyclode (Robot Super-1)",
-			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used alongside the $(l:super_1/devices/armor)Super-1 armor$(/l) to transform into $(l:super_1/riders/robot_super_1)Robot Super-1"
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Equipped alongside the $(l:super_1/devices/armor)Super-1 armor$(/l) to transform into $(l:super_1/riders/robot_super_1)Robot Super-1"
 		},
 		{
 			"type": "patchouli:spotlight",

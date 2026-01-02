@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "chimera_driver",
-			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/chimera)Kamen Rider Chimera$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Equipped alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/chimera)Kamen Rider Chimera$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "chimera_driver_daimon",
 			"title": "Chimera Driver (Daimon)",
-			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/daimon)Kamen Rider Daimon$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Equipped alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/daimon)Kamen Rider Daimon$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",

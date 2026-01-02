@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "mach_driver_honoh",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/mach)Kamen Rider Mach"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/mach)Kamen Rider Mach"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "mach_driver_honoh_chaser",
 			"title": "Mach Driver Honoh (Chaser)",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/chaser)Kamen Rider Chaser"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/chaser)Kamen Rider Chaser"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "mach_driver_honoh_drive",
 			"title": "Mach Driver Honoh (Drive)",
-			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/drive#dead_heat_mach)Kamen Rider Drive"
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/drive#dead_heat_mach)Kamen Rider Drive"
 		},
 		{
 			"type": "patchouli:crafting",

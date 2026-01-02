@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)After 0 (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:black_rx/devices/armor)Black armor$(/l) to transform into $(l:black_rx/riders/another_rx)White RX (Another RX)"
+			"text": "Appears in:$(li)After 0 (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:black_rx/devices/armor)Black armor$(/l) to transform into $(l:black_rx/riders/another_rx)White RX (Another RX)"
 		},
 		{
 			"type": "patchouli:crafting",

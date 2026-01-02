@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Kuuga Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)'s equipment"
+			"text": "Equipped alongside a Kuuga Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

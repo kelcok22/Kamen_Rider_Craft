@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ridol",
-			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/x)Kamen Rider X"
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Equipped alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/x)Kamen Rider X"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_ridol",
 			"title": "Ridol (Dark X)",
-			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Used alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/dark_x)Dark X"
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Equipped alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/dark_x)Dark X"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "fake_ridol",
 			"title": "Ridol (Fake X)",
-			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/fake_x)Fake X"
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Equipped alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/fake_x)Fake X"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Black (1987, TV show)$(br2)Used alongside the $(l:black/devices/armor)Black armor$(/l) to transform into $(l:black/riders/shadow_moon)Shadow Moon"
+			"text": "Appears in:$(li)Kamen Rider Black (1987, TV show)$(br2)Equipped alongside the $(l:black/devices/armor)Black armor$(/l) to transform into $(l:black/riders/shadow_moon)Shadow Moon"
 		},
 		{
 			"type": "patchouli:crafting",

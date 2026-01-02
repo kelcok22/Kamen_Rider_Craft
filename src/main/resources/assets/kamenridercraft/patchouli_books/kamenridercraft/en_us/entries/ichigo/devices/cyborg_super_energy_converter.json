@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/eins)Kamen Rider Eins"
+			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/eins)Kamen Rider Eins"
 		},
 		{
 			"type": "patchouli:crafting",

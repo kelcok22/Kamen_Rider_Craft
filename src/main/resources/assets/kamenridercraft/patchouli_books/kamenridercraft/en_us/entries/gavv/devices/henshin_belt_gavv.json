@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/gavv)Kamen Rider Gavv"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/gavv)Kamen Rider Gavv"
 		},
 		{
 			"type": "patchouli:crafting",

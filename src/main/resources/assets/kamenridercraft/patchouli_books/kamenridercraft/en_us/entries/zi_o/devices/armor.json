@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Zi-O Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)'s equipment$(li)$(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)'s equipment$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)'s equipment"
+			"text": "Equipped alongside a Zi-O Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:zi_o/mobs/another_zi_o)Another Zi-O$(/l)'s equipment$(li)$(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)'s equipment$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz (White Woz)$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

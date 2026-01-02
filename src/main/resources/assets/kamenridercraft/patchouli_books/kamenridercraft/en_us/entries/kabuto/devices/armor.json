@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a Kabuto Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:kabuto/mobs/zectrooper)ZECTroopers$(/l)' equipment$(li)$(l:kabuto/mobs/shadow_trooper)Shadow Troopers$(/l)' equipment$(li)$(l:kabuto/mobs/neotrooper)Neotroopers$(/l)' equipment$(li)$(l:kabuto/mobs/caucasus)Kamen Rider Caucasus$(/l)'s equipment"
+			"text": "Equipped alongside a Kabuto Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:kabuto/mobs/zectrooper)ZECTroopers$(/l)' equipment$(li)$(l:kabuto/mobs/shadow_trooper)Shadow Troopers$(/l)' equipment$(li)$(l:kabuto/mobs/neotrooper)Neotroopers$(/l)' equipment$(li)$(l:kabuto/mobs/caucasus)Kamen Rider Caucasus$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

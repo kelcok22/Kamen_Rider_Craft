@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "g3_belt",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g3)Kamen Rider G3$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g3)Kamen Rider G3$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "g3_x_belt",
 			"title": "G-Buckle (G3-X)",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g3-x)Kamen Rider G3-X$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g3-x)Kamen Rider G3-X$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "g3_mild_belt",
 			"title": "G-Buckle (G3 Mild)",
-			"text": "Appears in:$(li)Kamen Rider Agito Special: A New Transformation (2001, TV special)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g3_mild)Kamen Rider G3 Mild$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito Special: A New Transformation (2001, TV special)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g3_mild)Kamen Rider G3 Mild$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "g4_belt",
 			"title": "G-Buckle (G4)",
-			"text": "Appears in:$(li)Kamen Rider Agito: Project G4 (2001, movie)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g4)Kamen Rider G4$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito: Project G4 (2001, movie)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g4)Kamen Rider G4$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "g4_x_belt",
 			"title": "G-Buckle (G4-X)",
-			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g4-x)Kamen Rider G4-X$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g4-x)Kamen Rider G4-X$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -62,7 +62,7 @@
 			"type": "patchouli:text",
 			"anchor": "g1_belt",
 			"title": "G-Buckle (G1)",
-			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g1)Generation 1$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g1)Generation 1$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

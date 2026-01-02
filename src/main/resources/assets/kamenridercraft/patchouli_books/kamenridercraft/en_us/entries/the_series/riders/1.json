@@ -1,0 +1,36 @@
+{
+	"name": "Kamen Rider 1",
+	"icon": "kamenridercraft:the_typhoon_core",
+	"category": "kamenridercraft:the_series/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "the_first",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:the_typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:the_ichigo_legs\",Count:1b},{id:\"kamenridercraft:the_ichigo_troso\",Count:1b},{id:\"kamenridercraft:the_ichigo_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "The First",
+			"text": "Accessed with the $(l:the_series/items/typhoon_cores#the_typhoon_core)Typhoon Core (1)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider 1",
+			"text": "Appears in:$(li)Kamen Rider The First (2005, movie)$(br2)Transforms with the $(l:the_series/devices/typhoon#the_typhoon_ichigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "the_next",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:the_typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_next_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:the_ichigo_legs\",Count:1b},{id:\"kamenridercraft:the_ichigo_troso\",Count:1b},{id:\"kamenridercraft:the_ichigo_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "The Next",
+			"text": "Accessed with the $(l:the_series/items/typhoon_cores#the_next_typhoon_core)Typhoon Core (The Next)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider 1",
+			"text": "Appears in:$(li)Kamen Rider The Next (2007, movie)$(br2)Transforms with the $(l:the_series/devices/typhoon#the_typhoon_ichigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+		}
+	]
+}

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/ghost#grateful)Kamen Rider Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Equipped alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/ghost#grateful)Kamen Rider Ghost"
 		},
 		{
 			"type": "patchouli:crafting",

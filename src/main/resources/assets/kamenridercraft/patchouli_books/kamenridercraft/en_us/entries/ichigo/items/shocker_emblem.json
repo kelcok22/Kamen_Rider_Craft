@@ -8,7 +8,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:shocker_emblem",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		}
 	]
 }

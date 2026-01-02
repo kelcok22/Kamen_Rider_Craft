@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/aqua)Kamen Rider Aqua"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Equipped alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/aqua)Kamen Rider Aqua"
 		},
 		{
 			"type": "patchouli:crafting",

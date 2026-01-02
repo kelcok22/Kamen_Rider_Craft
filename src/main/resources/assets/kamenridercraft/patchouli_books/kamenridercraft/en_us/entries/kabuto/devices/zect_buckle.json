@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/thebee)Kamen Rider TheBee"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/thebee)Kamen Rider TheBee"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "drake_rider_belt",
 			"title": "ZECT Buckle (Drake)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/drake)Kamen Rider Drake"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/drake)Kamen Rider Drake"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -30,7 +30,7 @@
 			"type": "patchouli:text",
 			"anchor": "sasword_rider_belt",
 			"title": "ZECT Buckle (Sasword)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/sasword)Kamen Rider Sasword"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/sasword)Kamen Rider Sasword"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -43,7 +43,7 @@
 			"type": "patchouli:text",
 			"anchor": "kickhopper_rider_belt",
 			"title": "ZECT Buckle (KickHopper)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/kickhopper)Kamen Rider KickHopper"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/kickhopper)Kamen Rider KickHopper"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -54,7 +54,7 @@
 			"type": "patchouli:text",
 			"anchor": "puchhopper_rider_belt",
 			"title": "ZECT Buckle (PunchHopper)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/punchhopper)Kamen Rider PunchHopper"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/punchhopper)Kamen Rider PunchHopper"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -65,7 +65,7 @@
 			"type": "patchouli:text",
 			"anchor": "caucasus_rider_belt",
 			"title": "ZECT Buckle (Caucasus)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/caucasus)Kamen Rider Caucasus"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/caucasus)Kamen Rider Caucasus"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -77,7 +77,7 @@
 			"type": "patchouli:text",
 			"anchor": "hercus_rider_belt",
 			"title": "ZECT Buckle (Hercus)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/hercus)Kamen Rider Hercus"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/hercus)Kamen Rider Hercus"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -88,7 +88,7 @@
 			"type": "patchouli:text",
 			"anchor": "ketaros_rider_belt",
 			"title": "ZECT Buckle (Ketaros)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/ketaros)Kamen Rider Ketaros"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/ketaros)Kamen Rider Ketaros"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -99,7 +99,7 @@
 			"type": "patchouli:text",
 			"anchor": "lady_rider_belt",
 			"title": "ZECT Buckle (Lady)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/lady)Kamen Rider Lady"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/lady)Kamen Rider Lady"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "chophopper_rider_belt",
 			"title": "ZECT Buckle (ChopHopper)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/chophopper)Kamen Rider ChopHopper"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/chophopper)Kamen Rider ChopHopper"
 		},
 		{
 			"type": "patchouli:spotlight",

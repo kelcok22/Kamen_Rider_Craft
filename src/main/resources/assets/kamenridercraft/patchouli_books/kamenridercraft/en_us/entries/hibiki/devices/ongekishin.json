@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "todorokidriver",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/todoroki)Kamen Rider Todoroki"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Equipped alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/todoroki)Kamen Rider Todoroki"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "zankidriver",
 			"title": "Ongekishin Zantetsu",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/zanki)Kamen Rider Zanki"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Equipped alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/zanki)Kamen Rider Zanki"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "sabakidriver",
 			"title": "Ongekishin Gokuraku",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/sabaki)Kamen Rider Sabaki"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Equipped alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/sabaki)Kamen Rider Sabaki"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -39,7 +39,7 @@
 			"type": "patchouli:text",
 			"anchor": "shukidriver",
 			"title": "Ongekishin (Shuki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/shuki)Kamen Rider Shuki"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Equipped alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/shuki)Kamen Rider Shuki"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -50,7 +50,7 @@
 			"type": "patchouli:text",
 			"anchor": "bankidriver",
 			"title": "Ongekishin Jigoku",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/banki)Kamen Rider Banki"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Equipped alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/banki)Kamen Rider Banki"
 		},
 		{
 			"type": "patchouli:crafting",

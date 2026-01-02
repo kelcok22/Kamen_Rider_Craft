@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Norider (1988, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/kamen_norider)Kamen Norider"
+			"text": "Appears in:$(li)Kamen Norider (1988, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/kamen_norider)Kamen Norider"
 		},
 		{
 			"type": "patchouli:crafting",

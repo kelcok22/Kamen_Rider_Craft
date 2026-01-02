@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used alongside the $(l:decade/devices/armor)Decade armor$(/l) to transform into $(l:decade/riders/diend)Kamen Rider Diend"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Equipped alongside the $(l:decade/devices/armor)Decade armor$(/l) to transform into $(l:decade/riders/diend)Kamen Rider Diend"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider SPIRITS (2001, manga)$(br2)Used alongside the $(l:zx/devices/armor)ZX armor$(/l) to transform into $(l:zx/riders/tsukuyomi)Tsukuyomi"
+			"text": "Appears in:$(li)Kamen Rider SPIRITS (2001, manga)$(br2)Equipped alongside the $(l:zx/devices/armor)ZX armor$(/l) to transform into $(l:zx/riders/tsukuyomi)Tsukuyomi"
 		},
 		{
 			"type": "patchouli:spotlight",

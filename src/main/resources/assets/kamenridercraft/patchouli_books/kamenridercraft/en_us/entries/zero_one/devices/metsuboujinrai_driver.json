@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/metsuboujinrai)Kamen Rider MetsubouJinrai"
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/metsuboujinrai)Kamen Rider MetsubouJinrai"
 		},
 		{
 			"type": "patchouli:crafting",

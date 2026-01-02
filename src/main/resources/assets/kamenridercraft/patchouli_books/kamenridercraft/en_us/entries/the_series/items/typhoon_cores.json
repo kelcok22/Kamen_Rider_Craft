@@ -1,0 +1,32 @@
+{
+	"name": "Typhoon Cores",
+	"icon": "kamenridercraft:the_typhoon_core",
+	"category": "kamenridercraft:the_series/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_core",
+			"text": "Appears in:$(li)Kamen Rider The First (2005, movie)$(br2)Used to craft Rider 1's $(l:the_series/devices/typhoon#the_typhoon_ichigo)Typhoon$(/l)$(br2)Used to access Rider 1's $(l:the_series/riders/1)The First$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_typhoon_core",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_next_typhoon_core",
+			"title": "Typhoon Core (The Next)",
+			"text": "Appears in:$(li)Kamen Rider The Next (2007, movie)$(br2)Used to access Rider 1's $(l:the_series/riders/1#the_next)The Next$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_next_typhoon_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

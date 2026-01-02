@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/blood_vade)Blood Vade"
+			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Equipped alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/blood_vade)Blood Vade"
 		},
 		{
 			"type": "patchouli:crafting",

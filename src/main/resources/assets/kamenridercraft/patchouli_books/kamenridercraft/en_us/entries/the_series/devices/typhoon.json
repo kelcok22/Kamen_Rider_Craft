@@ -1,0 +1,18 @@
+{
+	"name": "Typhoon",
+	"icon": "kamenridercraft:the_typhoon_ichigo",
+	"category": "kamenridercraft:the_series/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_ichigo",
+			"text": "Appears in:$(li)Kamen Rider The First (2005, movie)$(br2)Equipped alongside $(l:the_series/devices/armor)The Series armor$(/l) to transform into $(l:the_series/riders/1)Kamen Rider 1"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:the_series/the_typhoon_ichigo"
+		}
+	]
+}

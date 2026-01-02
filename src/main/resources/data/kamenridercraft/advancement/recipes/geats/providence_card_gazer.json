@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:geats/vision_driver_gazer",
 	  "kamenridercraft:geats/vision_driver_gazer_suel",
-	  "kamenridercraft:geats/vision_driver_jyamato_glare"
+	  "kamenridercraft:geats/vision_driver_jyamato_glare",
+	  "kamenridercraft:geats/providence_card_ziingazer"
 	]
   },
   "sends_telemetry_event": false

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Drive Saga: Kamen Rider Brain (2019, web series)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/brain)Kamen Rider Brain"
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Brain (2019, web series)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/brain)Kamen Rider Brain"
 		},
 		{
 			"type": "patchouli:crafting",

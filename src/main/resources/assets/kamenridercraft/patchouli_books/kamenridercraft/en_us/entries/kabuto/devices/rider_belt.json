@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kabuto_rider_belt",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/kabuto)Kamen Rider Kabuto"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/kabuto)Kamen Rider Kabuto"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "gatack_rider_belt",
 			"title": "Rider Belt (Gatack)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/gatack)Kamen Rider Gatack"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/gatack)Kamen Rider Gatack"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_kabuto_rider_belt",
 			"title": "Rider Belt (Dark Kabuto)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/dark_kabuto)Kamen Rider Dark Kabuto"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Equipped alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/dark_kabuto)Kamen Rider Dark Kabuto"
 		},
 		{
 			"type": "patchouli:crafting",

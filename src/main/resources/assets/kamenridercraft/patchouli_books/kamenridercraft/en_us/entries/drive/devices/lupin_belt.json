@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/lupin)Kamen Rider Lupin"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Equipped alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/lupin)Kamen Rider Lupin"
 		},
 		{
 			"type": "patchouli:spotlight",

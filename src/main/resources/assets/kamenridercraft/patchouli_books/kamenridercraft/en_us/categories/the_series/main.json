@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/other",
+    "name": "Kamen Rider The Series",
+    "description": "Everything related to the movies, Kamen Rider The First and Kamen Rider The Next.",
+    "icon": "kamenridercraft:the_ichigo_head",
+    "sortnum": 3
+}

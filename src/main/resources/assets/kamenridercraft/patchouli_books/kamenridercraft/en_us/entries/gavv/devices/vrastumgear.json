@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "vrastumgear",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/vram)Kamen Rider Vram"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/vram)Kamen Rider Vram"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "vrastumgear_valen",
 			"title": "Vrastumgear",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/valen#frappe)Kamen Rider Valen Frappe Custom"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/valen#frappe)Kamen Rider Valen Frappe Custom"
 		},
 		{
 			"type": "patchouli:crafting",

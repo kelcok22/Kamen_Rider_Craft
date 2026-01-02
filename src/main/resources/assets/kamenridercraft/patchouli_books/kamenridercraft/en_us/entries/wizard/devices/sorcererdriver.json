@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/sorcerer)Kamen Rider Sorcerer"
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Equipped alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/sorcerer)Kamen Rider Sorcerer"
 		},
 		{
 			"type": "patchouli:crafting",

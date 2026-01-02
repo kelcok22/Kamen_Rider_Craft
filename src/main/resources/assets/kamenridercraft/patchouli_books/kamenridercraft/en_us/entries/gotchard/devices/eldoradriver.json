@@ -7,7 +7,7 @@
     {
       "type": "patchouli:text",
       "anchor": "eldoradriver",
-      "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/dorado)Kamen Rider Dorado$(/l)"
+      "text": "Appears in:$(li)Kamen Rider Gotchard: The Future Daybreak (2024, movie)$(br2)Equipped alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/dorado)Kamen Rider Dorado$(/l)"
     },
     {
       "type": "patchouli:crafting",
@@ -17,7 +17,7 @@
       "type": "patchouli:text",
       "anchor": "eldoradriver_eld",
       "title": "Eldoradriver",
-      "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/eld)Kamen Rider Eld$(/l)"
+      "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Equipped alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/eld)Kamen Rider Eld$(/l)"
     },
     {
       "type": "patchouli:crafting",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "gaia_driver_terror",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/terror_dopant)Terror Dopant"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Equipped alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/terror_dopant)Terror Dopant"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaia_driver_taboo",
 			"title": "Gaia Driver (Taboo Dopant)",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/taboo_dopant)Taboo Dopant"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Equipped alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/taboo_dopant)Taboo Dopant"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaia_driver_claydoll",
 			"title": "Gaia Driver (Claydoll Dopant)",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/claydoll_dopant)Claydoll Dopant"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Equipped alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/claydoll_dopant)Claydoll Dopant"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaia_driver_smilodon",
 			"title": "Gaia Driver (Smilodon Dopant)",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/smilodon_dopant)Smilodon Dopant"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Equipped alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/smilodon_dopant)Smilodon Dopant"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaia_driver_nasca",
 			"title": "Gaia Driver (Nasca Dopant)",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/nasca_dopant)Nasca Dopant"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Equipped alongside the $(l:w/devices/armor)W armor$(/l) to transform into the $(l:w/riders/nasca_dopant)Nasca Dopant"
 		},
 		{
 			"type": "patchouli:crafting",

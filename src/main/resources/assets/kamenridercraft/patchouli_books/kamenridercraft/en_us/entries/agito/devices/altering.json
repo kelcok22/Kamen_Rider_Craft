@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "alter_ring",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/agito#ground)Kamen Rider Agito"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/agito#ground)Kamen Rider Agito"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "alter_ring_reiko",
 			"title": "Altering (Reiko Takano)",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2015, manga)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/agito_reiko)Kamen Rider Agito (Reiko Takano)"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2015, manga)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/agito_reiko)Kamen Rider Agito (Reiko Takano)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "alter_ring_miracle",
 			"title": "Altering (Mirage Agito)",
-			"text": "Appears in:$(li)Heaven's Door (2003, S.I.C. Hero Saga)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/mirage_agito)Mirage Agito"
+			"text": "Appears in:$(li)Heaven's Door (2003, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/mirage_agito)Mirage Agito"
 		},
 		{
 			"type": "patchouli:crafting",

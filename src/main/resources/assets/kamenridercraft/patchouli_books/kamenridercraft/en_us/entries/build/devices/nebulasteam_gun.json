@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "nebula_steam_gun_kaiser",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into a $(l:build/riders/kaiser)Kaiser"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into a $(l:build/riders/kaiser)Kaiser"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "nebula_steam_gun_hell_bros",
 			"title": "Nebulasteam Gun (Hell Bro's)",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into the $(l:build/riders/bros)Bro's"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Equipped alongside the $(l:build/devices/armor)Build armor$(/l) to transform into the $(l:build/riders/bros)Bro's"
 		},
 		{
 			"type": "patchouli:spotlight",

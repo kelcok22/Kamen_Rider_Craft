@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/nox_knight)Nox Knight"
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/nox_knight)Nox Knight"
 		},
 		{
 			"type": "patchouli:crafting",

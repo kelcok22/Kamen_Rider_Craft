@@ -78,6 +78,18 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "iconga_no_akai_agito",
+			"title": "???",
+			"text": "Appears in:$(li)S.H. Figuarts (Shinkocchou Seihou) Iconga no Akai Agito (2026, toyline)$(br2)Used to access Agito's $(l:agito/riders/agito#iconga_no_akai_agito)???$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:iconga_no_akai_agito",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "gills",
 			"title": "Gills Philosopher's Stone",
 			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Gills's $(l:agito/devices/meta_factor)Meta Factor$(/l)$(br2)Used to access Gills's $(l:agito/riders/gills#gills)base$(/l) form"

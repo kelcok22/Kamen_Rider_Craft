@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_ichigo",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/ichigo#new_ichigo)Kamen Rider Ichigo"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/ichigo#new_ichigo)Kamen Rider Ichigo"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "typhoon_nigo",
 			"title": "Typhoon (Nigo)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/nigo#new_nigo)Kamen Rider Nigo"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/nigo#new_nigo)Kamen Rider Nigo"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "typhoon_sango",
 			"title": "Typhoon (Sango)",
-			"text": "Appears in:$(li)Super Hero Taisen GP: Kamen Rider 3 (2015, movie)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/sango#movie_sango)Kamen Rider Sango"
+			"text": "Appears in:$(li)Super Hero Taisen GP: Kamen Rider 3 (2015, movie)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/sango#movie_sango)Kamen Rider Sango"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "typhoon_yongo",
 			"title": "Typhoon (Yongo)",
-			"text": "Appears in:$(li)D-Video Special: Kamen Rider 4 (2015, web series)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/yongo)Kamen Rider Yongo"
+			"text": "Appears in:$(li)D-Video Special: Kamen Rider 4 (2015, web series)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/yongo)Kamen Rider Yongo"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,163 +51,163 @@
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_1",
 			"title": "Typhoon (Shocker Rider 1)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_1)Shocker Rider No.1"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_1)Shocker Rider No.1"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_1",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_2",
 			"title": "Typhoon (Shocker Rider 2)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_2)Shocker Rider No.2"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_2)Shocker Rider No.2"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_2",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_3",
 			"title": "Typhoon (Shocker Rider 3)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_3)Shocker Rider No.3"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_3)Shocker Rider No.3"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_3",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_4",
 			"title": "Typhoon (Shocker Rider 4)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_4)Shocker Rider No.4"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_4)Shocker Rider No.4"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_4",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_5",
 			"title": "Typhoon (Shocker Rider 5)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_5)Shocker Rider No.5"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_5)Shocker Rider No.5"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_5",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_6",
 			"title": "Typhoon (Shocker Rider 6)",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_6)Shocker Rider No.6"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_6)Shocker Rider No.6"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_6",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_7",
 			"title": "Typhoon (Shocker Rider 7)",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_7)Shocker Rider No.7"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_7)Shocker Rider No.7"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_7",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_8",
 			"title": "Typhoon (Shocker Rider 8)",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_8)Shocker Rider No.8"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_8)Shocker Rider No.8"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_8",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_9",
 			"title": "Typhoon (Shocker Rider 9)",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_9)Shocker Rider No.9"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_9)Shocker Rider No.9"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_9",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_10",
 			"title": "Typhoon (Shocker Rider 10)",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_10)Shocker Rider No.10"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_10)Shocker Rider No.10"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_10",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_11",
 			"title": "Typhoon (Shocker Rider 11)",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_11)Shocker Rider No.11"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_11)Shocker Rider No.11"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_11",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_shocker_rider_12",
 			"title": "Typhoon (Shocker Rider 12)",
-			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_12)Shocker Rider No.12"
+			"text": "Appears in:$(li)Kamen Rider (1971, manga)$(li)Missing Link (2002, S.I.C. Hero Saga)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/shocker_riders#shocker_rider_no_12)Shocker Rider No.12"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_shocker_rider_12",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_dark_ichigo",
 			"title": "Typhoon (Dark Ichigo)",
-			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/dark_ichigo)Dark Ichigo"
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/dark_ichigo)Dark Ichigo"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -218,7 +218,7 @@
 			"type": "patchouli:text",
 			"anchor": "typhoon_dark_nigo",
 			"title": "Typhoon (Dark Nigo)",
-			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/dark_nigo)Dark Nigo"
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/dark_nigo)Dark Nigo"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -229,7 +229,7 @@
 			"type": "patchouli:text",
 			"anchor": "typhoon_fake_ichigo",
 			"title": "Typhoon (Fake Ichigo)",
-			"text": "Appears in:$(li)Kamen Rider Super Live 2017 (2017, stage show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/fake_ichigo)Fake Ichigo"
+			"text": "Appears in:$(li)Kamen Rider Super Live 2017 (2017, stage show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/fake_ichigo)Fake Ichigo"
 		},
 		{
 			"type": "patchouli:spotlight",

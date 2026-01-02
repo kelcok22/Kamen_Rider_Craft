@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_saigo",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/saigo)Kamen Rider Saigo"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/saigo)Kamen Rider Saigo"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_haruma",
 			"title": "Chaos Driver (Haruma)",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/haruma)Kamen Rider Haruma"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/haruma)Kamen Rider Haruma"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_shion",
 			"title": "Chaos Driver (Shion)",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/shion)Kamen Rider Shion"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/shion)Kamen Rider Shion"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_jigen",
 			"title": "Chaos Driver (Jigen)",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/jigen)Kamen Rider Jigen"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/jigen)Kamen Rider Jigen"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_araki",
 			"title": "Chaos Driver (Araki)",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/araki)Kamen Rider Araki"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/araki)Kamen Rider Araki"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -62,7 +62,7 @@
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_kamui",
 			"title": "Chaos Driver (Kamui)",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/kamui)Kamen Rider Kamui"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/kamui)Kamen Rider Kamui"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -73,7 +73,7 @@
 			"type": "patchouli:text",
 			"anchor": "chaos_driver_agata",
 			"title": "Chaos Driver (Agata)",
-			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/agata)Kamen Rider Agata"
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/agata)Kamen Rider Agata"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -84,7 +84,7 @@
         "type": "patchouli:text",
         "anchor": "chaos_driver_loq",
         "title": "Chaos Driver (LOQ)",
-        "text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/loq)Kamen Rider LOQ"
+        "text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Equipped alongside the $(l:ride_kamens/devices/armor)Ride Kamens armor$(/l) to transform into $(l:ride_kamens/riders/loq)Kamen Rider LOQ"
       },
       {
         "type": "patchouli:crafting",

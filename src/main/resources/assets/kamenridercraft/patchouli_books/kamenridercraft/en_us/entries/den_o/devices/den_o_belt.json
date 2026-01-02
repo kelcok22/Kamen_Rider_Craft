@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "den_o_belt",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/den_o)Kamen Rider Den-O"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Equipped alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/den_o)Kamen Rider Den-O"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "nega_den_o_belt",
 			"title": "Den-O Belt (Nega Den-O)",
-			"text": "Appears in:$(li)Kamen Rider Den-O & Kiva: Climax Cop (2008, movie)$(br2)Used alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/nega_den_o)Kamen Rider Nega Den-O"
+			"text": "Appears in:$(li)Kamen Rider Den-O & Kiva: Climax Cop (2008, movie)$(br2)Equipped alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/nega_den_o)Kamen Rider Nega Den-O"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "pretty_den_o_belt",
 			"title": "Den-O Belt (Pretty Den-O)",
-			"text": "Appears in:$(li)Kamen Rider Den-O: Pretty Den-O Appears! (2020, movie)$(br2)Used alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/pretty_den_o)Kamen Rider Pretty Den-O"
+			"text": "Appears in:$(li)Kamen Rider Den-O: Pretty Den-O Appears! (2020, movie)$(br2)Equipped alongside the $(l:den_o/devices/armor)Den-O armor$(/l) to transform into $(l:den_o/riders/pretty_den_o)Kamen Rider Pretty Den-O"
 		},
 		{
 			"type": "patchouli:crafting",

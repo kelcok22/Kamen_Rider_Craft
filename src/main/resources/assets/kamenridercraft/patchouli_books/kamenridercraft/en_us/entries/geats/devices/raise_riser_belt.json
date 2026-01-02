@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_ziin",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ziin)Kamen Rider Ziin"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ziin)Kamen Rider Ziin"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_kekera",
 			"title": "Raise Riser Belt (kekera)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kekera)Kamen Rider Kekera"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kekera)Kamen Rider Kekera"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -33,7 +33,7 @@
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_kyuun",
 			"title": "Raise Riser Belt (kyuun)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kyuun)Kamen Rider Kyuun"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kyuun)Kamen Rider Kyuun"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_beroba",
 			"title": "Raise Riser Belt (Beroba)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/beroba)Kamen Rider Beroba"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/beroba)Kamen Rider Beroba"
 		},
 		{
 			"type": "patchouli:spotlight",

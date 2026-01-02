@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Black (1987, TV show)$(br2)Used alongside the $(l:black/devices/armor)Black armor$(/l) to transform into $(l:black/riders/black)Kamen Rider Black"
+			"text": "Appears in:$(li)Kamen Rider Black (1987, TV show)$(br2)Equipped alongside the $(l:black/devices/armor)Black armor$(/l) to transform into $(l:black/riders/black)Kamen Rider Black"
 		},
 		{
 			"type": "patchouli:crafting",

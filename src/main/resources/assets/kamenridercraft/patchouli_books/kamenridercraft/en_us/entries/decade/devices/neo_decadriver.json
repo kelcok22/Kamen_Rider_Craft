@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2019, TV show)$(br2)Used alongside the $(l:decade/devices/armor)Decade armor$(/l) to transform into $(l:decade/riders/decade#neo_decade)Kamen Rider Decade"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2019, TV show)$(br2)Equipped alongside the $(l:decade/devices/armor)Decade armor$(/l) to transform into $(l:decade/riders/decade#neo_decade)Kamen Rider Decade"
 		},
 		{
 			"type": "patchouli:crafting",

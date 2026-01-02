@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Used alongside the $(l:skyrider/devices/armor)Skyrider armor$(/l) to transform into $(l:skyrider/riders/gangan_g)GanGan G"
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Equipped alongside the $(l:skyrider/devices/armor)Skyrider armor$(/l) to transform into $(l:skyrider/riders/gangan_g)GanGan G"
 		},
 		{
 			"type": "patchouli:crafting",

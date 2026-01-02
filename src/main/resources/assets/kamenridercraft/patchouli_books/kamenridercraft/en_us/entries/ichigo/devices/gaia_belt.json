@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Eve -Masked Rider Gaia- (2004, novel)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/gaia)Kamen Rider Gaia"
+			"text": "Appears in:$(li)Kamen Rider Eve -Masked Rider Gaia- (2004, novel)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/gaia)Kamen Rider Gaia"
 		},
 		{
 			"type": "patchouli:crafting",

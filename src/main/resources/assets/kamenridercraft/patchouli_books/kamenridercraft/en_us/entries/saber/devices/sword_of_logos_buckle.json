@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sword_of_logos_buckle_buster",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/buster)Kamen Rider Buster$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/buster)Kamen Rider Buster$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "sword_of_logos_buckle_kenzan",
 			"title": "Sword of Logos Buckle (Kenzan)",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/kenzan)Kamen Rider Kenzan$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/kenzan)Kamen Rider Kenzan$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "sword_of_logos_buckle_slash",
 			"title": "Sword of Logos Buckle (Slash)",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/slash)Kamen Rider Slash$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/slash)Kamen Rider Slash$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
 		},
 		{
 			"type": "patchouli:crafting",

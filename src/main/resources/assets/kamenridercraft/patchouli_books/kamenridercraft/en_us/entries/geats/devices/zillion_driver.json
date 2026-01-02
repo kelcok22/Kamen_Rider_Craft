@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "zillion_driver",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/regad)Kamen Rider Regad"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/regad)Kamen Rider Regad"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "zillion_driver_gazer_zero",
 			"title": "Zillion Driver (Gazer Zero)",
-			"text": "Appears in:$(li)Geats Extra: Kamen Rider Gazer (2024, TTFC special)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gazer_zero)Kamen Rider Gazer Zero"
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider Gazer (2024, TTFC special)$(br2)Equipped alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gazer_zero)Kamen Rider Gazer Zero"
 		},
 		{
 			"type": "patchouli:crafting",

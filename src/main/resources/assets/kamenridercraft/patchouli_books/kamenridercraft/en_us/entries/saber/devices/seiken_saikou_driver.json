@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/saikou)Kamen Rider Saikou"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/saikou)Kamen Rider Saikou"
 		},
 		{
 			"type": "patchouli:crafting",

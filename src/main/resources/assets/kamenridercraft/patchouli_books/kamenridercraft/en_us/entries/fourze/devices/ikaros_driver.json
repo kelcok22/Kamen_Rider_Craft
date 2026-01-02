@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Fourze: ~Ama High Graduation~ (2014, novel)$(br2)Used alongside the $(l:fourze/devices/armor)Fourze armor$(/l) to transform into $(l:fourze/riders/ikaros)Kamen Rider Ikaros"
+			"text": "Appears in:$(li)Kamen Rider Fourze: ~Ama High Graduation~ (2014, novel)$(br2)Equipped alongside the $(l:fourze/devices/armor)Fourze armor$(/l) to transform into $(l:fourze/riders/ikaros)Kamen Rider Ikaros"
 		},
 		{
 			"type": "patchouli:crafting",

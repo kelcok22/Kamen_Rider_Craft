@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "revice_driver",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/revi)Kamen Rider Revi$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Equipped alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/revi)Kamen Rider Revi$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "revice_driver_live",
 			"title": "Revice Driver (Live)",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/live#marvelous)Kamen Rider Live$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Equipped alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/live#marvelous)Kamen Rider Live$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "revice_driver_evil",
 			"title": "Revice Driver (Evil)",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/evil#marvelous)Kamen Rider Evil$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Equipped alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/evil#marvelous)Kamen Rider Evil$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",

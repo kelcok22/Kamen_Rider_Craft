@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "shotriser_vulcan",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/vulcan)Kamen Rider Vulcan"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/vulcan)Kamen Rider Vulcan"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "shotriser_valkyrie",
 			"title": "AIMS Shotriser (Valkyrie)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/valkyrie)Kamen Rider Valkyrie"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/valkyrie)Kamen Rider Valkyrie"
 		},
 		{
 			"type": "patchouli:crafting",

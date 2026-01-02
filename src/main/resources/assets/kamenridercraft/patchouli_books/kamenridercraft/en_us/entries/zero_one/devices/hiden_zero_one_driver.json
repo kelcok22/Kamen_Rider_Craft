@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "hiden_zero_one_driver",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/zero-one)Kamen Rider Zero-One"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/zero-one)Kamen Rider Zero-One"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "hiden_zero_one_driver_azu",
 			"title": "Hiden Zero-One Driver (Ark Zero-One)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ark_zero_one)Kamen Rider Ark-Zero-One"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ark_zero_one)Kamen Rider Ark-Zero-One"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "hiden_zero_one_driver_vulcan",
 			"title": "Hiden Zero-One Driver (Vulcan)",
-			"text": "Appears in:$(li)Zero-One Others: Kamen Rider Vulcan & Valkyrie (2021, V-Cinema film)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/vulcan#lone_wolf)Kamen Rider Vulcan"
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider Vulcan & Valkyrie (2021, V-Cinema film)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/vulcan#lone_wolf)Kamen Rider Vulcan"
 		},
 		{
 			"type": "patchouli:crafting",

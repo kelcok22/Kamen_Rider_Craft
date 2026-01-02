@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "raidriser_battle",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#battle)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#battle)Raider"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidriser_buffalo",
 			"title": "Raidriser (Crushing Buffalo Raider)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#buffalo)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#buffalo)Raider"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -31,7 +31,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidriser_whale",
 			"title": "Raidriser (Splashing Whale Raider)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#whale)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#whale)Raider"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -43,7 +43,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidriser_lion",
 			"title": "Raidriser (Dynamaiting Lion Raider)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#lion)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#lion)Raider"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -55,7 +55,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidriser_penguin",
 			"title": "Raidriser (Storming Penguin Raider)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#penguin)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#penguin)Raider"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -67,7 +67,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidriser_panda",
 			"title": "Raidriser (Scouting Panda Raider)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#panda)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#panda)Raider"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -79,7 +79,7 @@
 			"type": "patchouli:text",
 			"anchor": "raidriser_jackal",
 			"title": "Raidriser (Fighting Jackal Raider)",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#jackal)Raider"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Equipped alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/raider#jackal)Raider"
 		},
 		{
 			"type": "patchouli:crafting",

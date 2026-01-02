@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used alongside a 555 Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)' equipment$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l)'s equipment$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l)'s equipment"
+			"text": "Equipped alongside a 555 Rider's transformation device to transform into that Rider$(br2)Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)' equipment$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l)'s equipment$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l)'s equipment"
 		},
 		{
 			"type": "patchouli:crafting",

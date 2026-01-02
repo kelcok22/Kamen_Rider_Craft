@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "jeeb_mimicdeviser",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/jeeb_stomach)Jeeb Stomach"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/jeeb_stomach)Jeeb Stomach"
 		},
       {
         "type": "patchouli:crafting",
@@ -18,7 +18,7 @@
         "type": "patchouli:text",
         "anchor": "shiita_mimicdeviser",
         "title": "Mimicdeviser",
-        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/shiita_stomach)Shiita Stomach"
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/shiita_stomach)Shiita Stomach"
       },
       {
         "type": "patchouli:crafting",
@@ -29,7 +29,7 @@
         "type": "patchouli:text",
         "anchor": "nyelv_mimicdeviser",
         "title": "Mimicdeviser",
-        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/nyelv_stomach)Nyelv Stomach"
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/nyelv_stomach)Nyelv Stomach"
       },
       {
         "type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "glotta_mimicdeviser",
 			"title": "Mimicdeviser",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/glotta_stomach)Glotta Stomach"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/glotta_stomach)Glotta Stomach"
 		},
       {
         "type": "patchouli:crafting",
@@ -51,7 +51,7 @@
         "type": "patchouli:text",
         "anchor": "lango_mimicdeviser",
         "title": "Mimicdeviser",
-        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/lango_stomach)Lango Stomach"
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/lango_stomach)Lango Stomach"
       },
       {
         "type": "patchouli:crafting",
@@ -62,7 +62,7 @@
         "type": "patchouli:text",
         "anchor": "bocca_mimicdeviser",
         "title": "Mimicdeviser",
-        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/bocca_jaldak)Bocca Jaldak"
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Equipped alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/bocca_jaldak)Bocca Jaldak"
       },
       {
         "type": "patchouli:crafting",

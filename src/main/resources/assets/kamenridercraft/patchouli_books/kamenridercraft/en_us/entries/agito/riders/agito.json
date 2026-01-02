@@ -101,6 +101,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
 			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "iconga_no_akai_agito",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:iconga_no_akai_agito\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "???",
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#iconga_no_akai_agito)???$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Agito",
+			"text": "Appears in:$(li)S.H. Figuarts (Shinkocchou Seihou) Iconga no Akai Agito (2026, toyline)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
 		}
 	]
 }

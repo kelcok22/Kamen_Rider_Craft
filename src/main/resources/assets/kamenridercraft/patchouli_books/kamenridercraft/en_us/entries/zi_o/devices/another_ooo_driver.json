@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_ooo)Another OOO"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Equipped alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_ooo)Another OOO"
 		},
 		{
           "type": "patchouli:crafting",

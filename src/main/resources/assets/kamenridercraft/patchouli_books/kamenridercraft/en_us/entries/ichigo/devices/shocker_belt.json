@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to become a $(l:ichigo/riders/shocker_combatman)Shocker Combatman"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Equipped alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to become a $(l:ichigo/riders/shocker_combatman)Shocker Combatman"
 		},
 		{
 			"type": "patchouli:crafting",
