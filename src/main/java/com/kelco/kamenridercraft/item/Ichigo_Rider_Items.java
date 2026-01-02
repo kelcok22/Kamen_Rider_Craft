@@ -398,7 +398,10 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.V3_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> ROPE_ARM = ITEMS.register("rope_arm",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.6F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+
+    public static final DeferredItem<Item> POWER_ARM = ITEMS.register("power_arm",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> V3_HOPPER = ITEMS.register("v3_hopper",
             () -> new V3HopperItem(new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
