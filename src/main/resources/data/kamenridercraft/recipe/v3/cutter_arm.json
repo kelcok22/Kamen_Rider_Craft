@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ichigo",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XCX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:rider_circuit"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:riderman_belt_core"
+    },
+    "C": [
+      {
+        "item": "minecraft:wooden_sword"
+      },
+      {
+        "item": "minecraft:stone_sword"
+      },
+      {
+        "item": "minecraft:iron_sword"
+      },
+      {
+        "item": "minecraft:golden_sword"
+      },
+      {
+        "item": "minecraft:diamond_sword"
+      },
+      {
+        "item": "minecraft:netherite_sword"
+      }
+    ]
+  },
+  "result": {
+    "id": "kamenridercraft:cutter_arm"
+  }    
+}
+
