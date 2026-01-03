@@ -2,6 +2,9 @@
   "values": [
 	"kamenridercraft:rope_arm",
 	"kamenridercraft:power_arm",
+	"kamenridercraft:drill_arm",
+	"kamenridercraft:machine_gun_arm",
+	"kamenridercraft:cutter_arm",
 	"kamenridercraft:flaresalamander_sword"
   ]
 }

@@ -1,0 +1,19 @@
+{
+	"name": "Zeztz Horse Armor",
+	"icon": "kamenridercraft:zeztz_horse_armor",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Official Channel NEW YEAR COUNTDOWN 2026 (2025, web video)$(br2)Can be equipped on a horse"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeztz_horse_armor",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

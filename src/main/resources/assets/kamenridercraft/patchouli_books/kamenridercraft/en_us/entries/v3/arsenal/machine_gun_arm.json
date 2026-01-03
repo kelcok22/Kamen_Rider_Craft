@@ -1,0 +1,16 @@
+{
+	"name": "Machine Gun Arm",
+	"icon": "kamenridercraft:machine_gun_arm",
+	"category": "kamenridercraft:v3/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used by $(l:v3/riders/riderman)Riderman$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/machine_gun_arm"
+		}
+	]
+}

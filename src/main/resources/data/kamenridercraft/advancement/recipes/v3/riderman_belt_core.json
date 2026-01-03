@@ -23,6 +23,11 @@
 	"recipes": [
 	  "kamenridercraft:v3/riderman_belt",
 	  "kamenridercraft:v3/riderman_logo",
+	  "kamenridercraft:v3/rope_arm",
+	  "kamenridercraft:v3/power_arm",
+	  "kamenridercraft:v3/drill_arm",
+	  "kamenridercraft:v3/machine_gun_arm",
+	  "kamenridercraft:v3/cutter_arm",
 	  "kamenridercraft:decade/riderman_card",
 	  "kamenridercraft:fourze/riderman_switch",
 	  "kamenridercraft:zi_o/riderman_ridewatch"

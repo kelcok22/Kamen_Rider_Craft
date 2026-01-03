@@ -2,7 +2,7 @@
 	"name": "Flaresalamander Sword",
 	"icon": "kamenridercraft:flaresalamander_sword",
 	"category": "kamenridercraft:v3/arsenal",
-	"sortnum": 2,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",
