@@ -82,7 +82,7 @@
 			"anchor": "dark_treat",
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_treat",
-			"text": "Block is currently unobtainable"
+			"text": "Traded by an apprentice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
