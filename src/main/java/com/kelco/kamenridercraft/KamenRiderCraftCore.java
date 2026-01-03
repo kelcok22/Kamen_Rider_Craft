@@ -406,6 +406,9 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.ANGUIS_MASCULUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANOTHER_AGITO.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.MIRROR_RIDER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ODIN.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.RIOTROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ORGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MUEZ.get(), BasicEntityRenderer::new);

@@ -154,8 +154,21 @@ public class MobsCore {
      public static final DeferredItem<DeferredSpawnEggItem> ANOTHER_AGITO_SPAWN_EGG = ITEMS.register("another_agito_spawn_egg",
              () -> new DeferredSpawnEggItem(ANOTHER_AGITO,  0x273d31, 0x131313, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<MirrorRiderEntity>> MIRROR_RIDER = MOBLIST.register("mirror_rider",
+            () -> EntityType.Builder.of(MirrorRiderEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mirror_rider"));
 
-     public static final DeferredHolder<EntityType<?>, EntityType<RiotrooperEntity>> RIOTROOPER = MOBLIST.register("riotrooper",
+    public static final DeferredItem<DeferredSpawnEggItem> MIRROR_RIDER_SPAWN_EGG = ITEMS.register("mirror_rider_spawn_egg",
+            () -> new DeferredSpawnEggItem(MIRROR_RIDER,  0xff0f16,0x1e1e1e, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<OdinEntity>> ODIN = MOBLIST.register("odin",
+            () -> EntityType.Builder.of(OdinEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":odin"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ODIN_SPAWN_EGG = ITEMS.register("odin_spawn_egg",
+            () -> new DeferredSpawnEggItem(ODIN,  0xdbaf1f,0x9f7f14, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<RiotrooperEntity>> RIOTROOPER = MOBLIST.register("riotrooper",
              () -> EntityType.Builder.of(RiotrooperEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":riotrooper"));
 
      public static final DeferredItem<DeferredSpawnEggItem> RIOTROOPER_SPAWN_EGG = ITEMS.register("riotrooper_spawn_egg",

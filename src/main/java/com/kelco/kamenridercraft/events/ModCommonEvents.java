@@ -628,6 +628,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.ANGUIS_MASCULUS.get(), AnguisMasculusEntity.setAttributes().build());
 		event.put(MobsCore.ANOTHER_AGITO.get(), AnotherAgitoEntity.setAttributes().build());
 
+        event.put(MobsCore.MIRROR_RIDER.get(), MirrorRiderEntity.setAttributes().build());
+        event.put(MobsCore.ODIN.get(), OdinEntity.setAttributes().build());
+
 		event.put(MobsCore.RIOTROOPER.get(), RiotrooperEntity.setAttributes().build());
 		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
 		event.put(MobsCore.MUEZ.get(), MuezEntity.setAttributes().build());

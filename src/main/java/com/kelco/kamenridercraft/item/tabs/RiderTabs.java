@@ -674,6 +674,9 @@ public class RiderTabs {
             event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
             event.accept(MobsCore.ANOTHER_AGITO_SPAWN_EGG);
 
+            event.accept(MobsCore.MIRROR_RIDER_SPAWN_EGG);
+            event.accept(MobsCore.ODIN_SPAWN_EGG);
+
             event.accept(MobsCore.RIOTROOPER_SPAWN_EGG);
             event.accept(MobsCore.ORGA_SPAWN_EGG);
             event.accept(MobsCore.MUEZ_SPAWN_EGG);
