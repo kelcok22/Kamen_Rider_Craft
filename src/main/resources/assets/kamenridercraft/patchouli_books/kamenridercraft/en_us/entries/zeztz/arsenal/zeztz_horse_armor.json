@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zeztz_horse_armor",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
 		}
 	]
 }
