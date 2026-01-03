@@ -1,0 +1,28 @@
+{
+	"parent": "kamenridercraft:item/ongekiflute_rekku",
+	"textures": {
+		"layer0": "kamenridercraft:item/ongekiflute_rekku"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 85, -45],
+			"translation": [-3, 1, -11],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -95, 45],
+			"translation": [-3, 1, -11],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-135.76, 82.87, 102.93],
+			"translation": [-5.5, 1.5, -5.5],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-115.34, 79.81, -8.08],
+			"translation": [-5, 1.5, -5.5],
+			"scale": [1.36, 1.36, 0.68]
+		}
+	}
+}

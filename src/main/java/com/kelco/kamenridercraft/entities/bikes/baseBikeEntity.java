@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.entities.bikes;
 
 import javax.annotation.Nullable;
 
-import com.kelco.kamenridercraft.item.BaseItems.SummonBikeItem;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -51,7 +50,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
 	public RawAnimation DRIVE_BACKWARDS = RawAnimation.begin().thenLoop("animation.model.walk_backwards");
 
-	public Item VEHICLE_DROP = Items.AIR;
+	public Item VEHICLE_DROP;
 
 
 	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level, Item drop) {

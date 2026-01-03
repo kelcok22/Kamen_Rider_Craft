@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;

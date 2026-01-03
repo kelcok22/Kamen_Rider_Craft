@@ -4,6 +4,9 @@
 	"textures": {
 		"layer0": "kamenridercraft:item/ongekiflute_rekku"
 	},
+	"overrides": [
+		{"predicate": {"pull": 1}, "model": "kamenridercraft:item/ongekiflute_rekku_pull"}
+	],
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -90, 55],
