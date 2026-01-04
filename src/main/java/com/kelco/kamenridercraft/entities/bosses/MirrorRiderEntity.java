@@ -65,6 +65,8 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
 
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
         if (p_34297_.getLevel().dimension() == CITY){
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ABYSSDRIVER.get()));
+            /**
             int bossChoice = this.random.nextInt(2);
             switch (bossChoice) {
                 case 0:
@@ -74,7 +76,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                     this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.FATALEDRIVER.get()));
                     break;
                 default:
-            }
+            }**/
         }else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA)){
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.IMPERERDRIVER.get()));
         }

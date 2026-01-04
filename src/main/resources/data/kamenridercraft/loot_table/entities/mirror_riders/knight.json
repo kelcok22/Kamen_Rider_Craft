@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:dragreder_advent",
+          "name": "kamenridercraft:darkwing_advent",
           "weight": 1
         }]}
     ,{
@@ -16,27 +16,27 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:drag_saber_vent",
+          "name": "kamenridercraft:wing_lancer_vent",
           "weight": 1
         },{
           "type": "minecraft:item",
-          "name": "kamenridercraft:ride_saber_vent",
+          "name": "kamenridercraft:knight_trick_vent",
           "weight": 1
         },{
           "type": "minecraft:item",
-          "name": "kamenridercraft:drag_claw_vent",
+          "name": "kamenridercraft:wing_wall_vent",
           "weight": 1
         },{
           "type": "minecraft:item",
-          "name": "kamenridercraft:drag_shield_vent",
+          "name": "kamenridercraft:nasty_vent",
           "weight": 1
         },{
           "type": "minecraft:item",
-          "name": "kamenridercraft:drag_shield_vent_form",
+          "name": "kamenridercraft:blust_vent",
           "weight": 1
         }
       ]
     }
   ],
-  "random_sequence": "kamenridercraft:dragreder"
+  "random_sequence": "kamenridercraft:darkwing"
 }
