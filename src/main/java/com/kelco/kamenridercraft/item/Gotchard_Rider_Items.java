@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.bosses.StagLostSmashEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gotchard.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;

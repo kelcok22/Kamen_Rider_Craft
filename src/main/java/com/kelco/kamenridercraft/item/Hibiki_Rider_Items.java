@@ -473,7 +473,7 @@ public class Hibiki_Rider_Items {
         public static final DeferredItem<Item> ONGEKI_SHINCHO_RETSUBAN = ITEMS.register("ongeki_shincho_retsuban",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ONGEKIFLUTE_REKKU = ITEMS.register("ongekiflute_rekku",
-                () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+                () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()).AddToTabList(KamenRiderCraftCore.ONGEKIFLUTE_ITEM));
 
     public static final DeferredItem<Item> MIDAREDOUJI_BLADE = ITEMS.register("midaredouji_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));

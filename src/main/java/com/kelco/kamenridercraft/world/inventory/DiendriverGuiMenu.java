@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.item.BaseItems.component.SingleItemContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.decade.DiendriverItem;
-import com.kelco.kamenridercraft.item.gotchard.ChemyRiserItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;

@@ -558,6 +558,12 @@ public class ModCommonEvents {
 			trades.get(1).add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Gavv_Rider_Items.HEATPRESS, 2),
 					new ItemStack(Gavv_Rider_Items.PURUJELLY_GOCHIZO.get(), 1), 10, 8, 0.02F));
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Gavv_Rider_Items.HEATPRESS, 3),
+                        new ItemStack(Rider_Blocks.DARK_TREAT_GLASS.get(), 1), 10, 8, 0.02F));
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Gavv_Rider_Items.HEATPRESS, 5),
+                        new ItemStack(Gavv_Rider_Items.PURUJELLY_NOIR_GOCHIZO.get(), 1), 10, 8, 0.02F));
 			}
 			else if (event.getType() == RiderVillagers.CANDYSHOP_VILLAGER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(

@@ -60,8 +60,6 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -98,6 +96,8 @@ public class KamenRiderCraftCore
     public static List<Item> DARK_SHIELD_ITEM= new ArrayList<>();
 
     public static List<Item> CHEMY_CARD= new ArrayList<>();
+
+    public static List<Item> ONGEKIFLUTE_ITEM= new ArrayList<>();
 
     public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer)
     {
@@ -368,6 +368,16 @@ public class KamenRiderCraftCore
                         } else {
                             return 0;
                         }
+                    }
+                });
+            }
+
+            for (Item item : ONGEKIFLUTE_ITEM) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174637_ == null) {
+                        return 0.0F;
+                    } else {
+                        return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float) (p_174635_.getUseDuration(p_174637_) - p_174637_.getUseItemRemainingTicks());
                     }
                 });
             }
