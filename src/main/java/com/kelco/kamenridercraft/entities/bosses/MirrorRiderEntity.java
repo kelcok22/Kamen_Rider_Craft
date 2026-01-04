@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -14,6 +15,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
@@ -30,6 +32,10 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.neoforged.neoforge.common.Tags;
 
 import javax.annotation.Nullable;
@@ -40,6 +46,7 @@ import java.util.List;
 public class MirrorRiderEntity extends BaseHenchmenEntity {
 
 
+    public String RIDER_NAME = "ryuki";
 
     public MirrorRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -120,6 +127,9 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                 }
 
         }else  if (!p_34297_.getLevel().isDay())this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.KNIGHTDRIVER.get()));
+if(this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt){
+    RIDER_NAME = belt.Rider;
+}
 
         return p_34300_;
     }
@@ -127,22 +137,15 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
 
         if ( this.isDeadOrDying()) {
-            if(!this.level().isClientSide() && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Ryuki_Rider_Items.RYUKIDRIVER.get()){
-                ItemStack deck = new ItemStack(Ryuki_Rider_Items.RYUKI_DECK.get(), 1);
-
-                ItemStack card= new ItemStack(Ryuki_Rider_Items.ADVENT_CARD.asItem(),2);
-/**
-                if (deck.has(DataComponents.CONTAINER)) {
-                    ItemContainerContents tag = deck.get(DataComponents.CONTAINER);
-                    NonNullList<ItemStack> list = NonNullList.create() ;
-                    list.add(card);
-                    tag.copyInto(list);
+                if (level() instanceof ServerLevel Slevel) {
+                    ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/"+RIDER_NAME));
+                    LootTable loottable = level().getServer().reloadableRegistries().getLootTable(loot);
+                    LootParams.Builder lootparams$builder = new LootParams.Builder(Slevel)
+                            .withParameter(LootContextParams.THIS_ENTITY, this)
+                            .withParameter(LootContextParams.ORIGIN, this.position());
+                    LootParams lootparams = lootparams$builder.create(LootContextParamSets.EQUIPMENT);
+                    loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
                 }
-**/
-                    ItemEntity key = new ItemEntity(level(), getX(), getY(), getZ(), deck , 0, 0, 0);
-                    key.setPickUpDelay(0);
-                    level().addFreshEntity(key);
-            }
         }
 
         super.remove(p_149847_);
