@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dragblacker_advent",
+          "weight": 1
+        }]}
+    ,{
+      "rolls": 2,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drag_saber_vent_ryuga",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drag_claw_vent_ryuga",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drag_shield_vent_ryuga",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drag_shield_vent_form_ryuga",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:dragblacker"
+}
