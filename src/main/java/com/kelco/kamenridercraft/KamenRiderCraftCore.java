@@ -32,6 +32,7 @@ import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
+import com.kelco.kamenridercraft.world.attributeGenerator;
 
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
@@ -152,6 +153,7 @@ public class KamenRiderCraftCore
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
+        attributeGenerator.ATTRIBUTES.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
