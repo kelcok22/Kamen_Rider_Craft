@@ -30,10 +30,6 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:nasty_vent",
           "weight": 1
-        },{
-          "type": "minecraft:item",
-          "name": "kamenridercraft:blust_vent",
-          "weight": 1
         }
       ]
     }

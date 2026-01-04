@@ -149,7 +149,6 @@ if(this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem b
                     loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
                 }
         }
-
         super.remove(p_149847_);
     }
 
