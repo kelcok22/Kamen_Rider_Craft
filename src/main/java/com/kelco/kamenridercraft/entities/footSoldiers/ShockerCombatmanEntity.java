@@ -1,10 +1,7 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
 import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
-import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.level.ModGameRules;
-import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 

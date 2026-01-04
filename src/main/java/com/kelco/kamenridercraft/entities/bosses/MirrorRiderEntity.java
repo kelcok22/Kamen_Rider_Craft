@@ -1,11 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
-import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
-import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
@@ -18,7 +14,6 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.biome.Biome;
 import net.neoforged.neoforge.common.Tags;
 
 import javax.annotation.Nullable;
