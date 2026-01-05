@@ -1350,7 +1350,7 @@ public class Revice_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIFF_STAMP = ITEMS.register("giff_stamp",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> DIABLO_STAMP = ITEMS.register("diablo_stamp",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));

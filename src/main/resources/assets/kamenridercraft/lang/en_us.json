@@ -381,6 +381,7 @@
   "effect.kamenridercraft.hazard_level":"Hazard Level",
   "effect.kamenridercraft.happy_mode":"§dHappy Mode",
   "effect.kamenridercraft.wonder":"Wonder",
+  "effect.kamenridercraft.mirror_noises":"§7Mirror Noises",
 
   "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
   "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",
@@ -506,6 +507,8 @@
   "effect.kamenridercraft.portal_cooldown.description": "Prevents you from using a portal.",
   "effect.kamenridercraft.rider_poison_hand.desc": "Poisons any mob you hit with an empty hand.",
   "effect.kamenridercraft.rider_poison_hand.description": "Poisons any mob you hit with an empty hand.",
+  "effect.kamenridercraft.mirror_noises.desc": "Causes Mirror Riders to spawn around you.",
+  "effect.kamenridercraft.mirror_noises.description": "Causes Mirror Riders to spawn around you.",
 
   "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 

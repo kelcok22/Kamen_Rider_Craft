@@ -214,12 +214,14 @@ public class Effect_core {
     public static final Holder<MobEffect>  HAZARD_LEVEL= EFFECT.register("hazard_level",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xff0000));
 
-
     public static final Holder<MobEffect>  RESET= EFFECT.register("reset",
             () -> new 	ResetEffect(MobEffectCategory.HARMFUL, 0x4eff00));
 
     public static final Holder<MobEffect>  MUTEKI= EFFECT.register("muteki",
             () -> new 	SaveEffect(MobEffectCategory.BENEFICIAL, 0xffce00));
+
+    public static final Holder<MobEffect>  MIRROR_NOISES= EFFECT.register("mirror_noises",
+            () -> new 	MirrorNoisesEffect(MobEffectCategory.HARMFUL, 0xc4c4c4));
 
     public static final Holder<MobEffect>  PAUSE= EFFECT.register("pause",
             () -> new BasicEffect(MobEffectCategory.HARMFUL, 0x4eff00)
@@ -229,6 +231,7 @@ public class Effect_core {
 
     public static final Holder<MobEffect> WONDER = EFFECT.register("wonder",
             () -> new 	WonderEffect(MobEffectCategory.BENEFICIAL, 0x9d2cf3));
+
 
 
     public static final Holder<MobEffect>  PORTAL_COOLDOWN= EFFECT.register("portal_cooldown",
