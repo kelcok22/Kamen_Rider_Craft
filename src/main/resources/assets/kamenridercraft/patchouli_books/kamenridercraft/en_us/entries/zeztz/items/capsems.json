@@ -188,7 +188,7 @@
         "type": "patchouli:text",
         "anchor": "shadow_capsem",
         "title": "Shadow Capsem",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox's $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Used to access Nox's $(l:zeztz/riders/nox#shadow)base$(/l) form"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Nox's $(l:zeztz/devices/nox_driver)Nox Driver$(/l)$(br2)Used to access Nox's $(l:zeztz/riders/nox#shadow)Normal State$(/l)"
       },
       {
         "type": "patchouli:spotlight",

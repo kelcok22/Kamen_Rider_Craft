@@ -10,7 +10,7 @@
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nox_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shadow_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": " ",
+			"name": "Normal State",
 			"text": "Accessed with the $(l:zeztz/items/capsems#shadow_capsem)Shadow Capsem$(/l)"
 		},
 		{

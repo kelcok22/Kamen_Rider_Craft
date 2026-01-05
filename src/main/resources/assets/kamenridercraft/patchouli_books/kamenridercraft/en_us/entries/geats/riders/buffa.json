@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(li)Resistance III$(li)Jump Boost II$(li)Strength IV$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Resistance V$(li)Jump Boost IV$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(li)Resistance II$(li)Jump Boost II$(li)Strength IV$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Resistance IV$(li)Jump Boost IV$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",

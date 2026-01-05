@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;

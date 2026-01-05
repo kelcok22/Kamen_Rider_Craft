@@ -1,19 +1,11 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.level.ModGameRules;
-import net.minecraft.core.NonNullList;
-import net.minecraft.core.component.DataComponentType;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -35,16 +27,11 @@ import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
@@ -52,10 +39,6 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.neoforged.neoforge.common.Tags;
 
 import javax.annotation.Nullable;
-import javax.smartcardio.Card;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class MirrorRiderEntity extends BaseHenchmenEntity {
 
@@ -245,14 +228,11 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
             }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.SCISSORSDRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                 int rand = this.random.nextInt(2);
-                switch (rand) {
-                    case 1:
+                    if (rand == 1) {
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SHELL_DEFENSE.get()));
-                        break;
-                    default:
+                    } else {
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SCISSORS_PINCH.get()));
-                        break;
-                }
+                    }
 
 
             }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.TIGERDRIVER.get()) {

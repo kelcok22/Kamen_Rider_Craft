@@ -34,7 +34,7 @@ public class GochipodItem extends BaseItem {
 		}
 	}
 
-/**
+/*
 	@Override
 	public boolean overrideOtherStackedOnMe(
 			ItemStack stack, ItemStack other, Slot slot, ClickAction action, Player player, SlotAccess access
@@ -56,7 +56,7 @@ if (other.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCra
 		}
 		return false;
 	}
-**/
+*/
 
 	public static int get_store_Item(ItemStack itemstack)
 	{
