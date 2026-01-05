@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+{
+      "rolls": 2,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drag_visor_zwei_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drag_blade_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:fire_wall_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:meteor_bullet_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:ryuki_trick_vent",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:dragranzer"
+}
