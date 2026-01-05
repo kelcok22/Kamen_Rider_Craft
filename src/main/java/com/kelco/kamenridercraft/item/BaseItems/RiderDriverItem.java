@@ -161,6 +161,12 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getDouble("use_ability") < 0) tag.putDouble("use_ability", 0);
 
             if (tag.getBoolean("rider_kicking")) {
+                if (level.isClientSide && player instanceof Player) {
+                    disableVanillaAnimations(player, tag);
+                    player.xxa = 0.0F;
+                    player.zza = 0.0F;
+                }
+
                 tag.putDouble("rider_kick_tick",tag.getDouble("rider_kick_tick")+1);
                 if (tag.getDouble("rider_kick_tick") == 1) {
                     player.push(0, 1.25, 0);
@@ -208,8 +214,20 @@ public class RiderDriverItem extends RiderArmorItem {
         } else {
             set_Upadete_Form(stack);
         }
+    }
+    private void disableVanillaAnimations(LivingEntity player, CompoundTag tag) {
+        double kickTick = tag.getDouble("rider_kick_tick");
+        if (kickTick >= 1 && kickTick <= 40) {
+            player.xxa = 0.0F;
+            player.zza = 0.0F;
+            player.walkAnimation.setSpeed(0.0F);
+            player.walkAnimation.position(0.0F);
 
-
+            if (player instanceof Player) {
+                ((Player) player).setSprinting(false);
+            }
+            player.setDeltaMovement(player.getDeltaMovement().multiply(0.98, 0.98, 0.98));
+        }
     }
 
 
