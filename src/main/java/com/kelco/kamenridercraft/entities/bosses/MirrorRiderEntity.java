@@ -268,7 +268,25 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                     this.getItemBySlot(EquipmentSlot.OFFHAND).consume(1, this);
                 }
             }
-
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.OUJADRIVER.get()) {
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                int rand = this.random.nextInt(5);
+                    switch (rand) {
+                        case 1:
+                          this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.EVIL_WHIP.get()));
+                            break;
+                        case 2:
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.METAL_HORN.get()));
+                            break;
+                        default:
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.VENO_SABER.get()));
+                            break;
+                    }
+            }
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.IMPERERDRIVER.get()) {
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GAZELLE_STAB.get()));
+            }
         }
     }
 
