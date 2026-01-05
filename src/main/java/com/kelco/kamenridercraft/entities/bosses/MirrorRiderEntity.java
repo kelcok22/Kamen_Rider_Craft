@@ -3,26 +3,39 @@ package com.kelco.kamenridercraft.entities.bosses;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
+import net.minecraft.world.entity.ai.goal.MoveThroughVillageGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.npc.AbstractVillager;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
@@ -39,6 +52,7 @@ import javax.annotation.Nullable;
 import javax.smartcardio.Card;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MirrorRiderEntity extends BaseHenchmenEntity {
 
@@ -47,12 +61,24 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
 
     public MirrorRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="rider_summon";
+        NAME = "rider_summon";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
 
+    }
+
+    protected void addBehaviourGoals() {
+        this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(6, new MoveThroughVillageGoal(this, 1.0D, true, 4, this::canBreakDoors));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, this.getClass())).setAlertOthers(this.getClass()));
+        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, MirrorRiderEntity.class, false));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
     }
 
     @Nullable
@@ -61,7 +87,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
 
 
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-        if (p_34297_.getLevel().dimension() == CITY){
+        if (p_34297_.getLevel().dimension() == CITY) {
 
             int bossChoice = this.random.nextInt(2);
             switch (bossChoice) {
@@ -79,36 +105,29 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                 default:
                     //this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.FATALEDRIVER.get()));
             }
-        }else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.IMPERERDRIVER.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ZOLDADRIVER.get()));
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.MAGNA_VISOR.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_SWAMP)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_SWAMP)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.OUJADRIVER.get()));
             this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.VENO_VISOR.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_OCEAN)||
-        p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_DEEP_OCEAN)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_OCEAN) ||
+                p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_DEEP_OCEAN)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RAIADRIVER.get()));
             this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.EVIL_VISOR.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_BEACH)||
-                p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_MOUNTAIN)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_BEACH) ||
+                p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_MOUNTAIN)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.SCISSORSDRIVER.get()));
             this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.SCISSORS_VISOR.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_TAIGA)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_TAIGA)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.TIGERDRIVER.get()));
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DEST_VISOR.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS)||
-                p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_DESERT)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS) ||
+                p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_DESERT)) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.GAIDRIVER.get()));
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER)){
+        } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER)) {
             int bossChoice = this.random.nextInt(3);
             switch (bossChoice) {
                 case 0:
@@ -124,52 +143,134 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                     break;
                 default:
             }
-        }
-        else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_END)){
-                int bossChoice = this.random.nextInt(2);
-                switch (bossChoice) {
-                    case 0:
-                        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ALTERNATIVEDRIVER.get()));
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SLASH_VISOR.get()));
-                        break;
-                    case 1:
-                        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ALTERNATIVEZERODRIVER.get()));
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SLASH_VISOR.get()));
-                        break;
-                    default:
-                }
+        } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_END)) {
+            int bossChoice = this.random.nextInt(2);
+            switch (bossChoice) {
+                case 0:
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ALTERNATIVEDRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SLASH_VISOR.get()));
+                    break;
+                case 1:
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ALTERNATIVEZERODRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SLASH_VISOR.get()));
+                    break;
+                default:
+            }
 
-        }else  if (!p_34297_.getLevel().isDay()){
+        } else if (!p_34297_.getLevel().isDay()) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.KNIGHTDRIVER.get()));
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
         }
-if(this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt){
-    RIDER_NAME = belt.Rider;
+        if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            RIDER_NAME = belt.Rider;
 
-}
-    if(getItemBySlot(EquipmentSlot.FEET).getItem() ==Ryuki_Rider_Items.RYUKIDRIVER.get()){
-        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
-    }
+        }
+        if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()) {
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
+        }
 
         return p_34300_;
     }
 
     public void remove(RemovalReason p_149847_) {
 
-        if ( this.isDeadOrDying()) {
-                if (level() instanceof ServerLevel Slevel) {
-                    ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/"+RIDER_NAME));
-                    LootTable loottable = level().getServer().reloadableRegistries().getLootTable(loot);
-                    LootParams.Builder lootparams$builder = new LootParams.Builder(Slevel)
-                            .withParameter(LootContextParams.THIS_ENTITY, this)
-                            .withParameter(LootContextParams.ORIGIN, this.position());
-                    LootParams lootparams = lootparams$builder.create(LootContextParamSets.EQUIPMENT);
-                    loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
-                }
+        if (this.isDeadOrDying()) {
+            if (level() instanceof ServerLevel Slevel) {
+                ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/" + RIDER_NAME));
+                LootTable loottable = level().getServer().reloadableRegistries().getLootTable(loot);
+                LootParams.Builder lootparams$builder = new LootParams.Builder(Slevel)
+                        .withParameter(LootContextParams.THIS_ENTITY, this)
+                        .withParameter(LootContextParams.ORIGIN, this.position());
+                LootParams lootparams = lootparams$builder.create(LootContextParamSets.EQUIPMENT);
+                loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
+            }
         }
         super.remove(p_149847_);
     }
 
+    public void actuallyHurt(DamageSource source, float amount) {
+        super.actuallyHurt(source, amount);
+        int rand2 = this.random.nextInt(10);
+        if (rand2 == 2) {
+
+                if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()) {
+                    ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                    int rand = this.random.nextInt(4);
+                    switch (rand) {
+                        case 1:
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SABER.get()));
+                            break;
+                        case 2:
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_CLAW.get()));
+                            break;
+                        default:
+                            RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.DRAGREDER_ADVENT.get(), 1);
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SHIELD.get()));
+                            break;
+                    }
+                }
+
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.KNIGHTDRIVER.get()) {
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                int rand = this.random.nextInt(3);
+                switch (rand) {
+                    case 1:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.WING_LANCER.get()));
+                        break;
+                    case 2:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
+                        break;
+                    default:
+                        RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.WING_WALL_VENT.get(), 1);
+                        break;
+                }
+            }
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.ZOLDADRIVER.get()) {
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                int rand = this.random.nextInt(5);
+                switch (rand) {
+                    case 1:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GIGA_LAUNCHER.get()));
+                        break;
+                    case 2:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GIGA_ARMOR.get()));
+                        break;
+                    case 3:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GIGA_HORN.get()));
+                        break;
+                    default:
+                        RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.GIGA_CANNON_VENT.get(), 1);
+                        break;
+                }
+            }
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.SCISSORSDRIVER.get()) {
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                int rand = this.random.nextInt(2);
+                switch (rand) {
+                    case 1:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SHELL_DEFENSE.get()));
+                        break;
+                    default:
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SCISSORS_PINCH.get()));
+                        break;
+                }
+
+
+            }
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.TIGERDRIVER.get()) {
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+                int rand = this.random.nextInt(3);
+                if (rand == 1) {
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DEST_CLAW.get()));
+                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DEST_CLAW1.get()));
+                } else {
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DEST_VISOR.get()));
+                    this.getItemBySlot(EquipmentSlot.OFFHAND).consume(1, this);
+                }
+            }
+
+        }
+    }
 
     public static AttributeSupplier.Builder setAttributes() {
 
