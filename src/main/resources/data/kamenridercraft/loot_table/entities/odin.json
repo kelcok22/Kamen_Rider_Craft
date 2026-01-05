@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:goldphoenix_advent"
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:gold_saber_vent"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:gold_shield_vent"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:time_vent"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:survive_rekka"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:survive_shippu"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:survive_mugen"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:advent_card",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

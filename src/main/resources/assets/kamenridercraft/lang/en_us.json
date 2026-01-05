@@ -522,6 +522,7 @@
   "henshin.kamenridercraft.shadow_moon.a1":"<Robo Rider> §aRobo Rider Force!",
   "henshin.kamenridercraft.n_daguva_zeba":"<N.Daguva.Zeba> §6I see you have ultimate power now.",
   "henshin.kamenridercraft.another_agito":"<Another Agito> §2Henshin!",
+  "henshin.kamenridercraft.odin":"<Kamen Rider Odin> §6Henshin!",
   "henshin.kamenridercraft.horse_orphnoch":"<Horse Orphnoch> §cDo you know? A dream is the same as a curse. Those who fail are forever cursed. Or so I hear…",
   "henshin.kamenridercraft.orga":"<Kamen Rider Orga> §cHenshin!\n§cStanding by - Complete",
   "henshin.kamenridercraft.muez":"§9Standing by - Complete\n<Kamen Rider Muez> §9Henshin!",
@@ -602,7 +603,7 @@
   "henshin.kamenridercraft.another_zi_o_ii": "§gZi-O II!",
   "henshin.kamenridercraft.woz": "Woz! Action! Toei Future Time!",
   "henshin.kamenridercraft.ginga": "<§5Kamen Rider Ginga§f> I have come to destroy everything you hold dear.",
-  "henshin.kamenridercraft.yaminin": "§4<Yaminin> §cI won't lose to a rookie!",
+  "henshin.kamenridercraft.yaminin": "§4<Yaminin> §cI won't lose to a rookie like you!",
   "henshin.kamenridercraft.magia":"§4Zetsumerise!",
   "henshin.kamenridercraft.horobi":"§5Forcerise! Sting Scorpion! Break down.",
   "henshin.kamenridercraft.jin":"§dForcerise! Flying Falcon! Break down.",
@@ -8342,8 +8343,6 @@
   "item.kamenridercraft.inazuma_blaster_greatsword": "Inazuma Blaster (Greatsword Mode)",
   "item.kamenridercraft.breakam_buster": "Breakam Buster",
 
-  "entity.kamenridercraft.nox_mob": "Nox Knight",
-
   "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
 
 
@@ -8603,6 +8602,8 @@
 "entity.kamenridercraft.el_of_the_water": "El of the Water",
 "entity.kamenridercraft.anguis_masculus": "Anguis Masculus",
 "entity.kamenridercraft.another_agito": "Another Agito",
+  "entity.kamenridercraft.mirror_rider": "Mirror Rider",
+  "entity.kamenridercraft.odin": "Kamen Rider Odin",
 "entity.kamenridercraft.riotrooper": "Riotrooper",
 "entity.kamenridercraft.orga": "Kamen Rider Orga",
 "entity.kamenridercraft.muez": "Kamen Rider Muez",
@@ -8818,6 +8819,8 @@
   "entity.kamenridercraft.lango_stomach": "Lango Stomach",
   "entity.kamenridercraft.bocca_jaldak": "Bocca Jaldak",
 
+  "entity.kamenridercraft.nox_mob": "Nox Knight",
+
   "entity.kamenridercraft.bicycle": "Bicycle",
 	"entity.kamenridercraft.acrobatter": "Acrobatter",
 	"entity.kamenridercraft.ridoron": "Ridoron",
@@ -8885,6 +8888,8 @@
 "item.kamenridercraft.el_of_the_water_spawn_egg": "El of the Water Spawn Egg",
 "item.kamenridercraft.anguis_masculus_spawn_egg": "Anguis Masculus Spawn Egg",
 "item.kamenridercraft.another_agito_spawn_egg": "Another Agito Spawn Egg",
+  "item.kamenridercraft.mirror_rider_spawn_egg": "Mirror Rider Spawn Egg",
+  "item.kamenridercraft.odin_spawn_egg": "Odin Spawn Egg",
 "item.kamenridercraft.riotrooper_spawn_egg": "Riotrooper Spawn Egg",
 "item.kamenridercraft.orga_spawn_egg": "Kamen Rider Orga Spawn Egg",
 "item.kamenridercraft.muez_spawn_egg": "Kamen Rider Muez Spawn Egg",
@@ -9391,6 +9396,7 @@
   "block.kamenridercraft.capsem_dropper": "Capsem Dropper",
 
   "block.kamenridercraft.n_daguva_zeba_boss_block": "N.Daguva.Zeba Boss Block",
+  "block.kamenridercraft.odin_boss_block": "Odin Boss Block",
   "block.kamenridercraft.faiz_boss_block": "Faiz Boss Block",
   "block.kamenridercraft.arc_boss_block": "Arc Boss Block",
 "block.kamenridercraft.taboo_boss_block": "Taboo Dopant Boss Block",
@@ -10845,7 +10851,7 @@
   "advancements.kamenridercraft.ryuki.knight_survive.title": "If you're serious, fight me now",
   "advancements.kamenridercraft.ryuki.knight.description": "Transform into Kamen Rider Knight",
   "advancements.kamenridercraft.ryuki.knight.title": "I have no right to hesitate",
-  "advancements.kamenridercraft.ryuki.odin.description": "Transform into Kamen Rider Odin",
+  "advancements.kamenridercraft.ryuki.odin.description": "Defeat Kamen Rider Odin",
   "advancements.kamenridercraft.ryuki.odin.title": "Wibbly Wobbly Timey Wimey",
   "advancements.kamenridercraft.ryuki.ouja_survive.description": "Transform into Ouja Survive",
   "advancements.kamenridercraft.ryuki.ouja_survive.title": "You irritated me…",

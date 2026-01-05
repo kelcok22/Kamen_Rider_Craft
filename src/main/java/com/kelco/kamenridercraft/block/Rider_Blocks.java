@@ -1056,6 +1056,10 @@ public class Rider_Blocks {
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     ,MobsCore.N_DAGUVA_ZEBA,Blocks.SNOW).addLine(Component.translatable("henshin.kamenridercraft.n_daguva_zeba")).is_basic_cube().AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> ODIN_BOSS_BLOCK = registerBlock("odin_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(1f)
+                    ,MobsCore.ODIN).addLine(Component.translatable("henshin.kamenridercraft.odin")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
     public static final DeferredBlock<Block> FAIZ_BOSS_BLOCK = registerBlock("faiz_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     ,MobsCore.FAIZ).addLine(Component.translatable("henshin.kamenridercraft.faiz")).AddToTabList(RiderTabs.RIDER_BLOCK));

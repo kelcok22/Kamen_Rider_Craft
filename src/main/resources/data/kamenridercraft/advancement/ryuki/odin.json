@@ -17,33 +17,13 @@
   "parent": "kamenridercraft:ryuki/ouja",
   "criteria": {
 	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ryukihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ryukitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ryukilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:v_buckle_odin"
-			  ]
-			}
-		  }
-		}
-	  }
-	}
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:odin"
+        }
+      }
+    }
   }
 }
+

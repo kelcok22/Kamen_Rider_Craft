@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+       "render_type": "minecraft:translucent",
+    "textures": {
+        "all": "kamenridercraft:block/odin_boss_block"
+    }
+}

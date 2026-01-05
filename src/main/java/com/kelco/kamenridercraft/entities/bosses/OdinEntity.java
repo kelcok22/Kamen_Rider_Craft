@@ -32,6 +32,7 @@ public class OdinEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ODINDRIVER.get()));
+        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GOLD_VISOR.get()));
     }
 
 
