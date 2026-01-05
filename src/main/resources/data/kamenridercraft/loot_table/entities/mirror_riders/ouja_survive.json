@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+
+    {
+      "rolls": 2,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:veno_visor_zwei_vent",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:venosnaker_survive"
+}

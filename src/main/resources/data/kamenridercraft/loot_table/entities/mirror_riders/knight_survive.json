@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+{
+      "rolls": 2,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dark_visor_zwei_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dark_blade_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dark_arrow_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:blust_vent",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:darkraider"
+}
