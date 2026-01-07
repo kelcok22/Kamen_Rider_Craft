@@ -11,27 +11,27 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.model.data.EntityModelData;
 
-public class BikeModel extends GeoModel<baseBikeEntity> {
+public class BikeModel<T extends baseBikeEntity> extends GeoModel<T> {
     private long lastRenderedInstance = -1L;
 
     @Override
-    public ResourceLocation getModelResource(baseBikeEntity animatable) {
+    public ResourceLocation getModelResource(T animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+animatable.NAME_MODEL+".geo.json");
     }
 
     @Override
-    public ResourceLocation getTextureResource(baseBikeEntity animatable) {
+    public ResourceLocation getTextureResource(T animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/"+animatable.NAME+".png");
     }
 
     @Override
-    public ResourceLocation getAnimationResource(baseBikeEntity animatable) {
+    public ResourceLocation getAnimationResource(T animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/"+animatable.NAME_ANIMATIONS+".animation.json");
     }
 
 
     @Override
-    public void setCustomAnimations(baseBikeEntity an, long instanceId, AnimationState<baseBikeEntity> state) {
+    public void setCustomAnimations(T an, long instanceId, AnimationState<T> state) {
 
 
         GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");

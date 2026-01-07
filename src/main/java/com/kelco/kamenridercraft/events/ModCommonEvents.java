@@ -895,6 +895,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.RISEHOPPER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.DIAGOSPEEDY.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.VICE_BIKE.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.BOOSTRIKER.get(), baseBikeEntity.setAttributes().build());
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
 		event.put(MobsCore.COMPLETE_SUMMON.get(), CompleteSummonEntity.setAttributes().build());

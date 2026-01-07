@@ -1602,6 +1602,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> VICE_BIKE_SPAWN_EGG = ITEMS.register("vice_bike_spawn_egg",
             () -> new DeferredSpawnEggItem(VICE_BIKE, 0xffffff, 0x151515, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BoostrikerEntity>> BOOSTRIKER = MOBLIST.register("boostriker",
+            () -> EntityType.Builder.of(BoostrikerEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":boostriker"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_SPAWN_EGG = ITEMS.register("boostriker_spawn_egg",
+            () -> new DeferredSpawnEggItem(BOOSTRIKER,  0xffffff, 0x222222, new Item.Properties()));
+    
+
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
                   () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));
 

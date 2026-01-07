@@ -21,8 +21,6 @@ import javax.annotation.Nullable;
 
 public class MalgamEntity extends BaseHenchmenEntity {
 
-    private BaseHenchmenEntity boss;
-
     private static final EntityDataAccessor<Integer> VARIANT =
         SynchedEntityData.defineId(MalgamEntity.class, EntityDataSerializers.INT);
 
@@ -77,7 +75,7 @@ public class MalgamEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
-                boss = MobsCore.DREAD.get().create(this.level());
+                BaseHenchmenEntity boss = MobsCore.DREAD.get().create(this.level());
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);

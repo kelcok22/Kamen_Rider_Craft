@@ -60,7 +60,7 @@ public class 	Geats_Rider_Items {
 			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddCompatibilityList(new String[] {"the_end_riders"}).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID = ITEMS.register("geats_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats","desire_driver_belt_geats",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -68,14 +68,14 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("geats").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_ONENESS_CORE_ID = ITEMS.register("geats_oneness_rider_core_id",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.GEATS_TAB_ITEM));
 	
 
 	public static final DeferredItem<Item> TYCOON_CORE_ID = ITEMS.register("tycoon_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","tycoon","desire_driver_belt_tycoon",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","tycoon","desire_driver_belt_tycoon",
 					new MobEffectInstance(MobEffects.LUCK, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -83,10 +83,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("tycoon").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NA_GO_CORE_ID = ITEMS.register("na_go_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","na_go","desire_driver_belt_na_go",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","na_go","desire_driver_belt_na_go",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -94,10 +94,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("na_go").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID = ITEMS.register("buffa_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","buffa","desire_driver_belt_buffa",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","buffa","desire_driver_belt_buffa",
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -105,10 +105,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID_CRACKED = ITEMS.register("buffa_rider_core_id_cracked",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jyamato","buffa","desire_driver_belt_buffa",
+			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jyamato","buffa","desire_driver_belt_buffa",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
@@ -118,10 +118,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUNKJACK_CORE_ID = ITEMS.register("punkjack_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","punkjack","desire_driver_belt_punkjack",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","punkjack","desire_driver_belt_punkjack",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -130,10 +130,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("punkjack").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NUGE_SPARROW_CORE_ID = ITEMS.register("nudge_sparrow_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","nudge_sparrow","desire_driver_belt_nadge_sparrow",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","nudge_sparrow","desire_driver_belt_nadge_sparrow",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -141,10 +141,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("nadge_sparrow").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIROWE_CORE_ID = ITEMS.register("shirowe_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shirowe","desire_driver_belt_shirowe",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","shirowe","desire_driver_belt_shirowe",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -152,10 +152,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("shirowe").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINPEN_CORE_ID = ITEMS.register("ginpen_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ginpen","desire_driver_belt_ginpen",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","ginpen","desire_driver_belt_ginpen",
 					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -163,10 +163,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("ginpen").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> MARY_CORE_ID = ITEMS.register("mary_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mary","desire_driver_belt_mary",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","mary","desire_driver_belt_mary",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -174,10 +174,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("mary").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DA_PAAN_CORE_ID = ITEMS.register("da_paan_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","da_paan","desire_driver_belt_da_paan",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","da_paan","desire_driver_belt_da_paan",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -185,10 +185,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("da_paan").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEIROU_CORE_ID = ITEMS.register("keirou_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","keirou","desire_driver_belt_keilow",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","keirou","desire_driver_belt_keilow",
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -196,10 +196,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("keilow").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LETTER_CORE_ID = ITEMS.register("letter_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","letter","desire_driver_belt_letter",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","letter","desire_driver_belt_letter",
 					new MobEffectInstance(MobEffects.UNLUCK, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -208,10 +208,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("letter").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOPO_CORE_ID = ITEMS.register("lopo_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","lopo","desire_driver_belt_lopo",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","lopo","desire_driver_belt_lopo",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -219,10 +219,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("lopo").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GROOVY_CORE_ID = ITEMS.register("groovy_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","groovy","desire_driver_belt_groovy",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","groovy","desire_driver_belt_groovy",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -230,10 +230,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("groovy").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAKUBI_CORE_ID = ITEMS.register("hakubi_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","hakubi","desire_driver_belt_ginpen",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","hakubi","desire_driver_belt_ginpen",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -241,10 +241,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("hakubi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURBON_CORE_ID = ITEMS.register("turbon_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","turbon","desire_driver_belt_turbon",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","turbon","desire_driver_belt_turbon",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -252,10 +252,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("turbon").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRALI_CORE_ID = ITEMS.register("brali_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brali","desire_driver_belt_brali",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","brali","desire_driver_belt_brali",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -263,10 +263,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("brali").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GYA_GO_CORE_ID = ITEMS.register("gya_go_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gya_go","desire_driver_belt_gya_go",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","gya_go","desire_driver_belt_gya_go",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -274,10 +274,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("gya_go").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SEEKER_CORE_ID = ITEMS.register("seeker_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","seeker","desire_driver_belt_seeker",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","seeker","desire_driver_belt_seeker",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -285,10 +285,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("seeker").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUTCHI_CORE_ID = ITEMS.register("butchi_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","butchi","desire_driver_belt_da_paan",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","butchi","desire_driver_belt_da_paan",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -296,10 +296,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("butchi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> REVI_CORE_ID = ITEMS.register("revi_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats_revi","desire_driver_belt_revi",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","geats_revi","desire_driver_belt_revi",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -307,10 +307,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("revi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> VICE_CORE_ID = ITEMS.register("vice_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats_vice","desire_driver_belt_vice",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","geats_vice","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -318,10 +318,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("vice").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHUTA_CORE_ID = ITEMS.register("chuta_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gm","desire_driver_belt_keibi",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","gm","desire_driver_belt_keibi",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -329,10 +329,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GESSY_CORE_ID = ITEMS.register("gesshi_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gm_chirami","desire_driver_belt_keibi",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","gm_chirami","desire_driver_belt_keibi",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -340,10 +340,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> X_GEATS_CORE_ID = ITEMS.register("x_geats_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","x_geats","desire_driver_belt_vice",
+			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),0,"","x_geats","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -351,10 +351,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.hasStaticWings().IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_CORE_ID = ITEMS.register("dooms_geats_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","dooms_geats","desire_driver_belt_dooms_geats",
+			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),0,"","dooms_geats","desire_driver_belt_dooms_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -362,10 +362,10 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.hasStaticWings().IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DISCORE_ID = ITEMS.register("discore_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","jyamato","desire_driver_belt_jyamato",
+			() -> new RiderCoreIDItem(new Item.Properties(),0,"","jyamato","desire_driver_belt_jyamato",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -373,7 +373,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOGECHI_CORE_ID = ITEMS.register("togechi_rider_core_id",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));

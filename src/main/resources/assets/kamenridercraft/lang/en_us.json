@@ -7577,6 +7577,8 @@
 
   "item.kamenridercraft.raise_buckle_holder": "Raise Buckle Holder",
 
+  "item.kamenridercraft.boostriker_spawn_egg": "(WIP) Boostriker",
+
 "item.kamenridercraft.gotchard_logo": "Gotchard Logo",
 "item.kamenridercraft.gotchard_head": "Gotchard Helmet",
 "item.kamenridercraft.gotchard_torso": "Gotchard Chestplate",
@@ -8847,6 +8849,11 @@
 	"entity.kamenridercraft.risehopper": "Risehopper",
 	"entity.kamenridercraft.diagospeedy": "Diagospeedy",
   "entity.kamenridercraft.vice_bike": "Vice Bicycle",
+  "entity.kamenridercraft.boostriker": "Boostriker",
+  "entity.kamenridercraft.boostriker_geats": "Boostriker Geats Mode",
+  "entity.kamenridercraft.boostriker_tycoon": "Boostriker Tycoon Mode",
+  "entity.kamenridercraft.boostriker_na_go": "Boostriker Na-Go Mode",
+  "entity.kamenridercraft.boostriker_buffa": "Boostriker Buffa Mode",
 
   "entity.kamenridercraft.taka_can": "Taka Candroid",
   "entity.kamenridercraft.tako_can": "Tako Candroid",
