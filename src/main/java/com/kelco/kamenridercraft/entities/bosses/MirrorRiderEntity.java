@@ -2,10 +2,17 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entities.footSoldiers.RoidmudeEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
+import com.kelco.kamenridercraft.entities.variants.RoidmudeVariant;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -43,8 +50,12 @@ import javax.annotation.Nullable;
 
 public class MirrorRiderEntity extends BaseHenchmenEntity {
 
+    private static final EntityDataAccessor<String> RIDER_NAME =
+            SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.STRING);
+    private static final EntityDataAccessor<Boolean> IS_SURIVE =
+            SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.BOOLEAN);
 
-    public String RIDER_NAME = "ryuki";
+
 
     public MirrorRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -69,10 +80,30 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
     }
 
+    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(RIDER_NAME, "ryuki");
+    }
+
+    private String getTypeVariant() {
+        return this.entityData.get(RIDER_NAME);
+    }
+    private void SetTypeVariant(String Name) {this.entityData.set(RIDER_NAME,Name);}
+
+    @Override
+    public void addAdditionalSaveData(CompoundTag compound) {
+        super.addAdditionalSaveData(compound);
+        compound.putString("rider_name", this.getTypeVariant());
+    }
+    @Override
+    public void readAdditionalSaveData(CompoundTag compound) {
+        super.readAdditionalSaveData(compound);
+        this.entityData.set(RIDER_NAME, compound.getString("rider_name"));
+    }
+
     @Nullable
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34297_, DifficultyInstance p_34298_, MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_) {
         p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
-
 
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
         if (p_34297_.getLevel().dimension() == CITY) {
@@ -150,8 +181,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
         }
         if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            RIDER_NAME = belt.Rider;
-
+            SetTypeVariant(belt.Rider);
         }
         if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()) {
             this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
@@ -161,10 +191,9 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     }
 
     public void remove(RemovalReason p_149847_) {
-
         if (this.isDeadOrDying()) {
             if (level() instanceof ServerLevel Slevel) {
-                ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/" + RIDER_NAME));
+                ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/" +getTypeVariant()));
                 LootTable loottable = level().getServer().reloadableRegistries().getLootTable(loot);
                 LootParams.Builder lootparams$builder = new LootParams.Builder(Slevel)
                         .withParameter(LootContextParams.THIS_ENTITY, this)
@@ -173,6 +202,8 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                 loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
             }
         }
+
+
         super.remove(p_149847_);
     }
 
