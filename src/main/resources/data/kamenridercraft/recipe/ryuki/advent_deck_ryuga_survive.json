@@ -2,21 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "group": "ryuki",
-  "pattern": [
-	"XYX",
-	"XZX",
-	"XXX"
+  "ingredients": [
+    {
+      "item": "kamenridercraft:advent_deck_ryuga"
+    },
+    {
+      "item": "kamenridercraft:survive_rekka"
+    }
   ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
-	}, "Z": {
-	  "item": "kamenridercraft:survive_rekka"
-	}, "Y": {
-	  "item": "kamenridercraft:dragblacker_advent"
-	}
-  },
   "result": {
-	"id": "kamenridercraft:advent_deck_ryuga_survive"
+    "id": "kamenridercraft:advent_deck_ryuga_survive"
   }
 }

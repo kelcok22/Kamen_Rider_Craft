@@ -2,19 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "group": "ryuki",
-  "pattern": [
-	"XXX",
-	"XZX",
-	"XXX"
+  "ingredients": [
+    {
+      "item": "kamenridercraft:advent_deck_blank"
+    },
+    {
+      "item": "kamenridercraft:psycorogue_advent"
+    }
   ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
-	}, "Z": {
-	  "item": "kamenridercraft:psycorogue_advent"
-	}
-  },
   "result": {
-	"id": "kamenridercraft:advent_deck_alternative"
+    "id": "kamenridercraft:advent_deck_alternative"
   }
 }
