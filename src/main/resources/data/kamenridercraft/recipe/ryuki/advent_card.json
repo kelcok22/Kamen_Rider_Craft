@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "advent_card",
+  "ingredients": [
+	{ 
+	  "item": "kamenridercraft:rider_circuit"
+	}, 
+	{
+      "tag": "kamenridercraft:gear/advent_deck"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:advent_card"
+  }
+}
