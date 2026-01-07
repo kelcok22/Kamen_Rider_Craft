@@ -734,7 +734,7 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> SHINSENGUMI_GHOST_EYECON = ITEMS.register("shinsengumi_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"shinsengumi_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);

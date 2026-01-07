@@ -83,6 +83,14 @@ public class attributeGenerator extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> IS_REINFORCEMENT = ATTRIBUTES.register("is_reinforcement",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.is_reinforcement",
+                    false
+
+            ).setSyncable(true)
+    );
+
 //    @SubscribeEvent
 //    public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
 //        eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));

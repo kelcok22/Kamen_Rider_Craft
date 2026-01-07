@@ -956,7 +956,7 @@ public class Build_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_cross_z","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
