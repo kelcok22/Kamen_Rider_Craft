@@ -52,8 +52,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
 
     private static final EntityDataAccessor<String> RIDER_NAME =
             SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.STRING);
-    private static final EntityDataAccessor<Boolean> IS_SURIVE =
-            SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.BOOLEAN);
+   // private static final EntityDataAccessor<Boolean> IS_SURIVE =SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.BOOLEAN);
 
 
 
