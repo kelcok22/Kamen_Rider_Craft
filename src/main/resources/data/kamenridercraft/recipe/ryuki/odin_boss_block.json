@@ -1,33 +1,37 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "type": "minecraft:crafting_shapeless",
+  "category": "boss_blocks",
   "group": "odin",
-  "pattern": [
-    "RKZ",
-    "OSE",
-    "GTI"
-  ],
-  "key": {
-    "R": {
+  "ingredients": [
+    {
+
       "item": "kamenridercraft:dragreder_advent"
-    },"K": {
+    },
+    {
       "item": "kamenridercraft:darkwing_advent"
-    },"Z": {
+    },
+    {
       "item": "kamenridercraft:magnugiga_advent"
-    },"O": {
+    },
+    {
       "item": "kamenridercraft:venosnaker_advent"
-    }, "S": {
+    },
+    {
       "item": "kamenridercraft:volcancer_advent"
-    }, "E": {
+    },
+    {
       "item": "kamenridercraft:evildiver_advent"
-    }, "G": {
+    },
+    {
       "item": "kamenridercraft:metalgelas_advent"
-    }, "T": {
+    },
+    {
       "item": "kamenridercraft:destwilder_advent"
-    }, "I": {
+    },
+    {
       "item": "kamenridercraft:gigazelle_advent"
     }
-  },
+  ],
   "result": {
     "id": "kamenridercraft:odin_boss_block"
   }

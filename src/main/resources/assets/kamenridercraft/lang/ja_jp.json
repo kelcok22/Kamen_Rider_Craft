@@ -1853,7 +1853,7 @@
   "item.kamenridercraft.gift": "プレゼント",
   "item.kamenridercraft.gashapon_capsule": "ガシャポンカプセル",
   "item.kamenridercraft.halloween_gashapon_capsule": "ガシャポンカプセル",
-  "item.kamenridercraft.rider_case": "らいだーケース",
+  "item.kamenridercraft.rider_case": "ライダーケース",
 
 
 "item.kamenridercraft.kamen_rider_logo": "仮面ライダークレスト",
@@ -2071,10 +2071,10 @@
 "item.kamenridercraft.amaterasu_belt": "Amaterasu Belt",
 "kamenridercraft.name.amaterasu_zx": "Debatable Rider: Amaterasu",
 
-"item.kamenridercraft.black_logo": "Blackクレスト",
-"item.kamenridercraft.blackhead": "Black のヘルメット",
-"item.kamenridercraft.blacktorso": "Black の胸当て",
-"item.kamenridercraft.blacklegs": "Black のレギンス",
+"item.kamenridercraft.black_logo": "BLACKクレスト",
+"item.kamenridercraft.blackhead": "BLACKのヘルメット",
+"item.kamenridercraft.blacktorso": "BLACKの胸当て",
+"item.kamenridercraft.blacklegs": "BLACKのレギンス",
 "item.kamenridercraft.red_king_stone": "Red Kingstone",
   "kamenridercraft:red_king_stone.form": "フォーム: 初期フォーム",
 "item.kamenridercraft.vital_charger": "Vital Charger",
@@ -2096,9 +2096,9 @@
   "kamenridercraft:batta_man_king_stone.form": "フォーム: Batta Man",
 
 "item.kamenridercraft.black_rx_logo": "BLACK RXクレスト",
-"item.kamenridercraft.rxhead": "BLACK RX のヘルメット",
-"item.kamenridercraft.rxtroso": "BLACK RX の胸当て",
-"item.kamenridercraft.rxlegs": "BLACK RX のレギンス",
+"item.kamenridercraft.rxhead": "BLACK RXのヘルメット",
+"item.kamenridercraft.rxtroso": "BLACK RXの胸当て",
+"item.kamenridercraft.rxlegs": "BLACK RXのレギンス",
 "item.kamenridercraft.split_king_stone": "Split Kingstone",
   "kamenridercraft:split_king_stone.form": "フォーム: 初期フォーム",
 "item.kamenridercraft.sun_riser": "Sunriser",
