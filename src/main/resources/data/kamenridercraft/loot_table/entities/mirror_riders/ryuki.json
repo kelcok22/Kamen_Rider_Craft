@@ -16,6 +16,10 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:ride_saber_vent",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
           "name": "kamenridercraft:drag_saber_vent",
           "weight": 1
         },{
