@@ -4,9 +4,10 @@
     "kamenridercraft:egg_chicken_memory",
     "kamenridercraft:beast_rings_pyramid",
     "kamenridercraft:beast_rings_jungle",
+    "kamenridercraft:blank_deck_ruined_portal",
     "kamenridercraft:wizard_stone",
     "kamenridercraft:purple_medals_nether",
-    "kamenridercraft:mayo_fishing"
+    "kamenridercraft:blank_deck_simple_dungeon"
   ],
   "replace": false
 }

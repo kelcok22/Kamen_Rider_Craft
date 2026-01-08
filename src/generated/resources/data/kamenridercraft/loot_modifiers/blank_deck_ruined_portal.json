@@ -1,0 +1,14 @@
+{
+  "type": "kamenridercraft:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ruined_portal"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "kamenridercraft:advent_deck_blank"
+}

@@ -143,6 +143,8 @@ public class ModSounds {
     public static final Supplier<SoundEvent> MASKED_RIDER= registerSoundEvent("masked_rider");
     public static final ResourceKey<JukeboxSong> MASKED_RIDER_KEY = createSong("masked_rider");
 
+    public static final Supplier<SoundEvent> MIRROR_NOISES= registerSoundEvent("mirror_noises");
+
     private static ResourceKey<JukeboxSong> createSong(String name) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
     }

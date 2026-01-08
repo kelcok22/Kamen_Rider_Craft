@@ -28,6 +28,7 @@ import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.sounds.ModSounds;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -35,6 +36,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
@@ -45,6 +47,7 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -54,6 +57,8 @@ import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.storage.loot.LootParams;
@@ -72,6 +77,8 @@ import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.level.BlockDropsEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
@@ -86,6 +93,19 @@ public class ModCommonEvents {
 
 		private static ResourceLocation lootTable;
 		private static final ResourceLocation LOOT_TABLE_PATH = lootTable;
+
+        @SubscribeEvent
+        public void DropsEvent(BlockDropsEvent event) {
+            if (event.getState()== Blocks.GLASS.defaultBlockState()){
+          if (event.getBreaker() instanceof Player player) {
+              Inventory inventory = player.getInventory();
+              boolean hasSURVIVE = inventory.countItem(Ryuki_Rider_Items.BLANK_DECK.get()) != 0;
+              if (hasSURVIVE) {
+                    player.addEffect(new MobEffectInstance(Effect_core.MIRROR_NOISES, 300, 0,false,true));
+              }
+          }
+          }
+        }
 
 		@SubscribeEvent
 		public void clientTick(ClientTickEvent.Post event) {
@@ -467,6 +487,9 @@ public class ModCommonEvents {
             trades.add((trader, rand) -> new MerchantOffer(
                     new ItemCost(Items.EMERALD, 5),
                     new ItemStack(Rider_Blocks.YAMININ_BOSS_BLOCK.get(), 1), 10, 8, 0.02F));
+            trades.add((trader, rand) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 3),
+                    new ItemStack(Ryuki_Rider_Items.BLANK_DECK.get(), 1), 10, 8, 0.02F));
 		}
 
 
