@@ -52,7 +52,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
 
     private static final EntityDataAccessor<String> RIDER_NAME =
             SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.STRING);
-   // private static final EntityDataAccessor<Boolean> IS_SURIVE =SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Boolean> IS_SURIVE =SynchedEntityData.defineId(MirrorRiderEntity.class, EntityDataSerializers.BOOLEAN);
 
 
 
@@ -82,6 +82,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
         builder.define(RIDER_NAME, "ryuki");
+        builder.define(IS_SURIVE, false);
     }
 
     private String getTypeVariant() {
@@ -89,15 +90,23 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     }
     private void SetTypeVariant(String Name) {this.entityData.set(RIDER_NAME,Name);}
 
+    private Boolean getIsSurive() {
+        return this.entityData.get(IS_SURIVE);
+    }
+    private void SetIsSurive() {this.entityData.set(IS_SURIVE,true);}
+
+
     @Override
     public void addAdditionalSaveData(CompoundTag compound) {
         super.addAdditionalSaveData(compound);
         compound.putString("rider_name", this.getTypeVariant());
+        compound.putBoolean("is_survive", this.getIsSurive());
     }
     @Override
     public void readAdditionalSaveData(CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         this.entityData.set(RIDER_NAME, compound.getString("rider_name"));
+        this.entityData.set(IS_SURIVE, compound.getBoolean("is_survive"));
     }
 
     @Nullable
@@ -192,6 +201,16 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
         if (this.isDeadOrDying()) {
             if (level() instanceof ServerLevel Slevel) {
+                if (getIsSurive()){
+                    ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/" +getTypeVariant()+"_survive"));
+                    LootTable loottable = level().getServer().reloadableRegistries().getLootTable(loot);
+                    LootParams.Builder lootparams$builder = new LootParams.Builder(Slevel)
+                            .withParameter(LootContextParams.THIS_ENTITY, this)
+                            .withParameter(LootContextParams.ORIGIN, this.position());
+                    LootParams lootparams = lootparams$builder.create(LootContextParamSets.EQUIPMENT);
+                    loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
+                }
+
                 ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "entities/mirror_riders/" +getTypeVariant()));
                 LootTable loottable = level().getServer().reloadableRegistries().getLootTable(loot);
                 LootParams.Builder lootparams$builder = new LootParams.Builder(Slevel)
@@ -220,25 +239,30 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
             if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_REKKA.asItem()) {
                 RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_REKKA.get(), 1);
+                SetIsSurive();
                 this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR_ZWEI.get()));
                 this.getItemBySlot(EquipmentSlot.MAINHAND).consume(1, this);
             }
             if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RAIADRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_SHIPPU_RAIA.asItem()) {
                 RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_SHIPPU_RAIA.get(), 1);
+                SetIsSurive();
                 this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.EVIL_VISOR_ZWEI.get()));
             }
             if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.KNIGHTDRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_SHIPPU.asItem()) {
                 RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_SHIPPU.get(), 1);
+                SetIsSurive();
                 this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DARK_SHIELD.get()));
                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_BLADE.get()));
             }
             if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUGADRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_REKKA_RYUGA.asItem()) {
                 RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_REKKA_RYUGA.get(), 1);
+                SetIsSurive();
                 this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.BLACK_DRAG_VISOR_ZWEI.get()));
                 this.getItemBySlot(EquipmentSlot.MAINHAND).consume(1, this);
             }
             if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.OUJADRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_MUGEN.asItem()) {
                 RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_MUGEN.get(), 1);
+                SetIsSurive();
                 this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.VENO_VISOR_ZWEI.get()));
                 this.getItemBySlot(EquipmentSlot.MAINHAND).consume(1, this);
             }

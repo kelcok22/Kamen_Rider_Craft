@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.loot;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
 import net.minecraft.core.HolderLookup;
@@ -50,6 +51,15 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
         add("beast_rings_pyramid_archeology",new AddSusSandItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("archaeology/desert_pyramid")).build()},
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
-        
+
+        add("blank_deck_ruined_portal",new AddItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("chests/ruined_portal")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Ryuki_Rider_Items.BLANK_DECK.get()));
+
+        add("blank_deck_simple_dungeon",new AddItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("chests/simple_dungeon")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Ryuki_Rider_Items.BLANK_DECK.get()));
     }
 }

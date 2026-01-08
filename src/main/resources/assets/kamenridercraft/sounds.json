@@ -334,5 +334,13 @@
         "stream": true
       }
     ]
+  },
+  "mirror_noises": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:mirror_noises",
+        "stream": true
+      }
+    ]
   }
 }
