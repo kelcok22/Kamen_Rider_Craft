@@ -414,7 +414,7 @@ public class 	Geats_Rider_Items {
 			} 			.IsGlowing().ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_RAISE_BUCKLE = ITEMS.register("boost_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_boost","geats","desire_driver_belt_geats",
+			() -> new BoostBuckleItem(new Item.Properties(),0,"_boost","geats","desire_driver_belt_geats",
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);

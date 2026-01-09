@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.walk": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"LeftFrontLeg": {
+					"rotation": ["math.sin(query.anim_time * 720) * 25", 0, 0]
+				},
+				"RightFrontLeg": {
+					"rotation": ["math.sin(query.anim_time * -720) * 25", 0, 0]
+				},
+				"LeftHindLeg": {
+					"rotation": ["math.sin(query.anim_time * -720) * 25", 0, 0]
+				},
+				"RightHindLeg": {
+					"rotation": ["math.sin(query.anim_time * 720) * 25", 0, 0]
+				}
+			}
+		},
+		"animation.model.walk_backwards": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"LeftFrontLeg": {
+					"rotation": ["math.sin(query.anim_time * -360) * 25", 0, 0]
+				},
+				"RightFrontLeg": {
+					"rotation": ["math.sin(query.anim_time * 360) * 25", 0, 0]
+				},
+				"LeftHindLeg": {
+					"rotation": ["math.sin(query.anim_time * 360) * 25", 0, 0]
+				},
+				"RightHindLeg": {
+					"rotation": ["math.sin(query.anim_time * -360) * 25", 0, 0]
+				}
+			}
+		},
+		"animation.model.idle": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -1,17 +1,28 @@
 {
-  "name": "Ridevendor",
+  "name": "Ridevendor + ToRidevendor",
   "icon": "kamenridercraft:ridevendor_spawn_egg",
   "category": "kamenridercraft:ooo/arsenal",
   "sortnum": 99,
   "pages": [
     {
-      "type": "patchouli:text",
-      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used by $(l:ooo/riders/ooo)Kamen Rider OOO$(/l)$(br2)Can be changed between Machine Vendor Mode and Machine Bike Mode by right-clicking while sneaking$(br2)Gives a $(l:ooo/arsenal/candroids)Candroid$(/l) when right-clicked with a $(l:ooo/items/cellmedal)Cell Medal$(/l) while in Machine Vendor Mode"
-    },
-    {
       "type": "patchouli:crafting",
       "recipe": "kamenridercraft:ooo/ridevendor_spawn_egg",
-      "text": "Right-click with a $(l:ooo/arsenal/candroids#tora_candroid)Tora Candroid$(/l) to convert into the $(l:ooo/arsenal/toridevendor)ToRidevendor$(/l)"
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used by $(l:ooo/riders/ooo)Kamen Rider OOO$(/l)$(br2)Used on a block to summon the Ridevendor"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ridevendor",
+      "text": "Can change between Machine Vendor Mode and Machine Bike Mode by right-clicking while sneaking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ridevendor_vending",
+      "text": "Gives a $(l:ooo/arsenal/candroids)Candroid$(/l) when right-clicked with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:toridevendor",
+      "text": "Converted by right-clicking with a $(l:ooo/arsenal/candroids#tora_candroid)Tora Candroid$(/l)"
     }
   ]
 }

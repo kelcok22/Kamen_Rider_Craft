@@ -5,12 +5,14 @@
   "sortnum": 100,
   "pages": [
     {
-      "type": "patchouli:text",
-      "text": "Appears in:$(li)Kamen Rider Black RX (1988, TV show)$(br2)Used by $(l:black_rx/riders/black_rx)Kamen Rider Black RX$(/l)"
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:rx/ridoron_spawn_egg",
+      "text": "Appears in:$(li)Kamen Rider Black RX (1988, TV show)$(br2)Used on a block to summon the Ridoron"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:rx/ridoron_spawn_egg"
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ridoron",
+      "text": "Used by $(l:black_rx/riders/black_rx)Kamen Rider Black RX$(/l)"
     }
   ]
 }

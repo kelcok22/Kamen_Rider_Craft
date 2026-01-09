@@ -1,17 +1,23 @@
 {
-	"name": "Bicycle",
+	"name": "Bicycle and Vice Bike",
 	"icon": "kamenridercraft:bicycle_spawn_egg",
 	"category": "kamenridercraft:misc/items",
 	"sortnum": 3,
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/bicycle_spawn_egg",
 			"text": "Perfect for postal demons or people with bad luck"
 		},
 		{
-			"link_recipe": true,
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:misc/bicycle_spawn_egg"
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bicycle"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:vice_bike",
+			"anchor": "vice_bike",
+			"text": "Converted by right-clicking the Bicycle with a $(l:revice/items/vistamps#rex_vistamp)Rex Vistamp$(/l)"
 		}
 	]
 }
