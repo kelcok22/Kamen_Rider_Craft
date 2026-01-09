@@ -1,16 +1,18 @@
 {
-  "name": "Hiden Risephone",
+  "name": "Hiden Risephone and Risehopper",
   "icon": "kamenridercraft:hiden_risephone",
   "category": "kamenridercraft:zero_one/arsenal",
   "sortnum": 99,
   "pages": [
     {
-      "type": "patchouli:text",
-      "text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to summon the Risehopper"
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zero_one/hiden_risephone",
+      "text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used on a block to summon the Risehopper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:zero_one/hiden_risephone"
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:risehopper",
+      "text": "Used by $(l:zero_one/riders/zero_one)Kamen Rider Zero-One$(/l)"
     }
   ]
 }

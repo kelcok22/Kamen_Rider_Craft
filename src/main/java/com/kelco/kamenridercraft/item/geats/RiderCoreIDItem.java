@@ -26,6 +26,7 @@ public class RiderCoreIDItem extends RiderFormChangeItem {
     public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand) {
         if (interactionTarget instanceof BoostrikerEntity boost) {
             boost.setRiderLogo(riderLogo);
+            boost.MAX_SPEED = 0.01f;
             return InteractionResult.PASS;
         }
         return super.interactLivingEntity(stack, player, interactionTarget, usedHand);

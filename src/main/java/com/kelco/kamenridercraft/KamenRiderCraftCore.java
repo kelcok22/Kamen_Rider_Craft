@@ -681,6 +681,10 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.DIAGOSPEEDY.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.VICE_BIKE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BOOSTRIKER.get(), BoostrikerRenderer::new);
+            event.registerEntityRenderer(MobsCore.BOOSTRIKER_GEATS_MODE.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.BOOSTRIKER_TYCOON_MODE.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.BOOSTRIKER_NA_GO_MODE.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.BOOSTRIKER_BUFFA_MODE.get(), BikeRenderer::new);
 
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.COMPLETE_SUMMON.get(), SummonedEntityRenderer::new);

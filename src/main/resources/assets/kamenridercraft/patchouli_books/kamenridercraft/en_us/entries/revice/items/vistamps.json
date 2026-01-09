@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rex_vistamp",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+			"text": "Used on a $(l:misc/items/bicycle_spawn_egg)Bicycle$(/l) to convert it into the $(l:misc/items/bicycle_spawn_egg#vice_bike)Vice Bike$(/l)$(br2)Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
 		},
 		{
 			"type": "patchouli:text",

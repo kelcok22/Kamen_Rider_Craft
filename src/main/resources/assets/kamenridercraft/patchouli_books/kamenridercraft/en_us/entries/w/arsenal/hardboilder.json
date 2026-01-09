@@ -5,12 +5,14 @@
   "sortnum": 99,
   "pages": [
     {
-      "type": "patchouli:text",
-      "text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by $(l:w/riders/double)Kamen Rider Double$(/l)"
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:w/hardboilder_spawn_egg",
+      "text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used on a block to summon the Hardboilder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "kamenridercraft:w/hardboilder_spawn_egg"
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:hardboilder",
+      "text": "Used by $(l:w/riders/double)Kamen Rider Double$(/l)"
     }
   ]
 }

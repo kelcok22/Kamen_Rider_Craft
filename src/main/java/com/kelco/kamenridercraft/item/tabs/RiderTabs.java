@@ -908,6 +908,10 @@ public class RiderTabs {
             event.accept(MobsCore.DIAGOSPEEDY_SPAWN_EGG);
             event.accept(MobsCore.VICE_BIKE_SPAWN_EGG);
             event.accept(MobsCore.BOOSTRIKER_SPAWN_EGG);
+            event.accept(MobsCore.BOOSTRIKER_GEATS_MODE_SPAWN_EGG);
+            event.accept(MobsCore.BOOSTRIKER_TYCOON_MODE_SPAWN_EGG);
+            event.accept(MobsCore.BOOSTRIKER_NA_GO_MODE_SPAWN_EGG);
+            event.accept(MobsCore.BOOSTRIKER_BUFFA_MODE_SPAWN_EGG);
 
             for (int i = 0; i < RiderTabs.Misc_TAB_ITEM.size(); i++)
             {

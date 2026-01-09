@@ -688,6 +688,8 @@
   "attack.kamenridercraft.zaku_decoration":"§eDecoration!",
   "attack.kamenridercraft.atari":"§bAtari!",
 
+  "bike.kamenridercraft.boostriker": "§cBoostriker!",
+
   "candroid.kamenridercraft.taka": "§cTaka Can!",
   "candroid.kamenridercraft.tako": "§9Tako Can!",
   "candroid.kamenridercraft.batta": "§aBatta Can!",
@@ -7577,8 +7579,6 @@
 
   "item.kamenridercraft.raise_buckle_holder": "Raise Buckle Holder",
 
-  "item.kamenridercraft.boostriker_spawn_egg": "(WIP) Boostriker",
-
 "item.kamenridercraft.gotchard_logo": "Gotchard Logo",
 "item.kamenridercraft.gotchard_head": "Gotchard Helmet",
 "item.kamenridercraft.gotchard_torso": "Gotchard Chestplate",
@@ -8859,10 +8859,10 @@
 	"entity.kamenridercraft.diagospeedy": "Diagospeedy",
   "entity.kamenridercraft.vice_bike": "Vice Bicycle",
   "entity.kamenridercraft.boostriker": "Boostriker",
-  "entity.kamenridercraft.boostriker_geats": "Boostriker Geats Mode",
-  "entity.kamenridercraft.boostriker_tycoon": "Boostriker Tycoon Mode",
-  "entity.kamenridercraft.boostriker_na_go": "Boostriker Na-Go Mode",
-  "entity.kamenridercraft.boostriker_buffa": "Boostriker Buffa Mode",
+  "entity.kamenridercraft.boostriker_geats_mode": "Boostriker Geats Mode",
+  "entity.kamenridercraft.boostriker_tycoon_mode": "Boostriker Tycoon Mode",
+  "entity.kamenridercraft.boostriker_na_go_mode": "Boostriker Na-Go Mode",
+  "entity.kamenridercraft.boostriker_buffa_mode": "Boostriker Buffa Mode",
 
   "entity.kamenridercraft.taka_can": "Taka Candroid",
   "entity.kamenridercraft.tako_can": "Tako Candroid",
@@ -9135,6 +9135,11 @@
     "item.kamenridercraft.sports_gamer_spawn_egg": "Sports Gamer",
     "item.kamenridercraft.proto_sports_gamer_spawn_egg": "Proto Sports Gamer",
   "item.kamenridercraft.vice_bike_spawn_egg": "Vice Bicycle",
+  "item.kamenridercraft.boostriker_spawn_egg": "Boostriker",
+  "item.kamenridercraft.boostriker_geats_mode_spawn_egg": "Boostriker Geats Mode",
+  "item.kamenridercraft.boostriker_tycoon_mode_spawn_egg": "Boostriker Tycoon Mode",
+  "item.kamenridercraft.boostriker_na_go_mode_spawn_egg": "Boostriker Na-Go Mode",
+  "item.kamenridercraft.boostriker_buffa_mode_spawn_egg": "Boostriker Buffa Mode",
 
 
   "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",

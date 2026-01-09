@@ -1,0 +1,43 @@
+{
+  "name": "Boostriker",
+  "icon": "kamenridercraft:boostriker_spawn_egg",
+  "category": "kamenridercraft:geats/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:boostriker_spawn_egg",
+      "text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used by $(l:geats/riders/geats#magnumboost)Boost Buckle users$(/l)$(br2)Can be set to a specific Rider by using their $(l:geats/items/rider_core_ids)Core ID$(/l)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker",
+      "text": "Summoned by using the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) on a block"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_geats_mode",
+      "text": "Toggled by shift-clicking Geats's Boostriker"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_tycoon_mode",
+      "text": "Toggled by shift-clicking Tycoon's Boostriker"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_na_go_mode",
+      "text": "Toggled by shift-clicking Na-Go's Boostriker"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_buffa_mode",
+      "text": "Toggled by shift-clicking Buffa's Boostriker"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Something might happen if you use the $(l:revice/items/vistamps#rex_vistamp)Rex Vistamp$(/l) on Revi or Vice's Boostriker..."
+    }
+  ]
+}

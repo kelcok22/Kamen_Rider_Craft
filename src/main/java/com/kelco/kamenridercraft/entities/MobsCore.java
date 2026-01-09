@@ -1607,6 +1607,30 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_SPAWN_EGG = ITEMS.register("boostriker_spawn_egg",
             () -> new DeferredSpawnEggItem(BOOSTRIKER,  0xffffff, 0x222222, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BoostrikerGeatsModeEntity>> BOOSTRIKER_GEATS_MODE = MOBLIST.register("boostriker_geats_mode",
+            () -> EntityType.Builder.of(BoostrikerGeatsModeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":boostriker_geats_mode"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_GEATS_MODE_SPAWN_EGG = ITEMS.register("boostriker_geats_mode_spawn_egg",
+            () -> new DeferredSpawnEggItem(BOOSTRIKER_GEATS_MODE,  0xffffff, 0x222222, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BoostrikerTycoonModeEntity>> BOOSTRIKER_TYCOON_MODE = MOBLIST.register("boostriker_tycoon_mode",
+            () -> EntityType.Builder.of(BoostrikerTycoonModeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":boostriker_tycoon_mode"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_TYCOON_MODE_SPAWN_EGG = ITEMS.register("boostriker_tycoon_mode_spawn_egg",
+            () -> new DeferredSpawnEggItem(BOOSTRIKER_TYCOON_MODE,  0xffffff, 0x222222, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BoostrikerNaGoModeEntity>> BOOSTRIKER_NA_GO_MODE = MOBLIST.register("boostriker_na_go_mode",
+            () -> EntityType.Builder.of(BoostrikerNaGoModeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":boostriker_na_go_mode"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_NA_GO_MODE_SPAWN_EGG = ITEMS.register("boostriker_na_go_mode_spawn_egg",
+            () -> new DeferredSpawnEggItem(BOOSTRIKER_NA_GO_MODE,  0xffffff, 0x222222, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BoostrikerBuffaModeEntity>> BOOSTRIKER_BUFFA_MODE = MOBLIST.register("boostriker_buffa_mode",
+            () -> EntityType.Builder.of(BoostrikerBuffaModeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":boostriker_buffa_mode"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_BUFFA_MODE_SPAWN_EGG = ITEMS.register("boostriker_buffa_mode_spawn_egg",
+            () -> new DeferredSpawnEggItem(BOOSTRIKER_BUFFA_MODE,  0xffffff, 0x222222, new Item.Properties()));
     
 
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
