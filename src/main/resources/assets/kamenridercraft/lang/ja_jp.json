@@ -3084,7 +3084,7 @@
   "item.kamenridercraft.proto_ixa_belt": "イクサベルト",
   "kamenridercraft.name.proto_ixa": "ライダー: 仮面ライダープロトイクサ",
 
-  "item.kamenridercraft.proto_ixa_belt_first": "イクサ",
+  "item.kamenridercraft.proto_ixa_belt_first": "イクサバックル",
   "kamenridercraft.name.ixa_first": "ライダー: 仮面ライダープロトイクサ The First",
 
   "item.kamenridercraft.sagarc_belt": "サガークベルト",
@@ -4156,7 +4156,7 @@
   "item.kamenridercraft.astroswitch_case": "Astroswitch Case",
 
   "item.kamenridercraft.rider1_switch": "1号Switch",
-  "item.kamenridercraft.rider2_switch": "Nigo Switch",
+  "item.kamenridercraft.rider2_switch": "2号Switch",
   "item.kamenridercraft.v3_switch": "V3Switch",
   "item.kamenridercraft.riderman_switch": "Riderman Switch",
   "item.kamenridercraft.x_switch": "X Switch",
@@ -4249,7 +4249,7 @@
   "kamenridercraft:fusion_switch.form": "Fusion Module",
   "kamenridercraft:fusion_switch_og.form": "Fusion Module",
   "kamenridercraft:rider1_switch.form": "1号Module",
-  "kamenridercraft:rider2_switch.form": "Nigo Module",
+  "kamenridercraft:rider2_switch.form": "2号Module",
   "kamenridercraft:v3_switch.form": "V3Module",
   "kamenridercraft:riderman_switch.form": "Riderman Module",
   "kamenridercraft:x_switch.form": "X Module",
@@ -6077,7 +6077,7 @@
   "kamenridercraft:another_zi_o_ii_watch.form": "フォーム: Another ジオウII",
 
   "item.kamenridercraft.ichigo_ridewatch": "1号Ridewatch",
-  "item.kamenridercraft.nigo_ridewatch": "Nigo Ridewatch",
+  "item.kamenridercraft.nigo_ridewatch": "2号Ridewatch",
   "item.kamenridercraft.v3_ridewatch": "V3Ridewatch",
   "item.kamenridercraft.riderman_ridewatch": "Riderman Ridewatch",
   "item.kamenridercraft.x_ridewatch": "X Ridewatch",
@@ -8224,10 +8224,10 @@
   "item.kamenridercraft.x_gochizo": "X Gochizo",
   "item.kamenridercraft.riderman_gochizo": "Riderman Gochizo",
   "item.kamenridercraft.v3_gochizo": "V3Gochizo",
-  "item.kamenridercraft.nigo_gochizo": "Nigo Gochizo",
+  "item.kamenridercraft.nigo_gochizo": "2号Gochizo",
   "item.kamenridercraft.ichigo_gochizo": "1号Gochizo",
 
-  "item.kamenridercraft.boonboomger_gochizo": "Boonboomger Gochizo",
+  "item.kamenridercraft.boonboomger_gochizo": "ブンブーンジャーゴチゾウ",
   "kamenridercraft:boonboomger_gochizo.form": "フォーム: Boonboomger Assist",
 
   "item.kamenridercraft.nyelv_mimic_key": "Nyelv's Mimic Key",
