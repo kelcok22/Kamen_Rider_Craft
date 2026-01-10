@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-10T21:13:52.9147916	Item Models: kamenridercraft
+// 1.21.1	2026-01-10T22:51:28.6560656	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -558,6 +558,8 @@ a7967dab6e267f6723b154a2c5440ea39c6e429f assets/kamenridercraft/models/item/shur
 06e20afd7e8b6beb96b9a14a7710c510ce9bba47 assets/kamenridercraft/models/item/signal_kaksarn.json
 81774cf98b125d485ea4a873afafd790b9fe7025 assets/kamenridercraft/models/item/signal_kikern.json
 0f9faaa5645ba5961b4d8e54783b699c8f7da0a1 assets/kamenridercraft/models/item/signal_legend_faiz.json
+9d28ca4e15fb3fb5d3531f0f5f74afdf1b392a09 assets/kamenridercraft/models/item/signal_legend_gaim.json
+8f8924d88c5d250418ebea9450d16010b48bf5c3 assets/kamenridercraft/models/item/signal_legend_wizard.json
 3ffa4bf7ef99e41305c480d62faf1f2cde5cc017 assets/kamenridercraft/models/item/signal_mach.json
 e4d8c8aebe830b1e91ce61b729cdae8c533ec686 assets/kamenridercraft/models/item/signal_magarl.json
 1f9aa6cc1d4b212b7ea117aaa80e69a182bcfd29 assets/kamenridercraft/models/item/signal_tomarle.json

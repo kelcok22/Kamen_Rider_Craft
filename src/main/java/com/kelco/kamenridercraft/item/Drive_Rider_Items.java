@@ -793,7 +793,49 @@ public class Drive_Rider_Items {
 			}.addAlternative(SIGNAL_CHASER_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM)
 					.AddToList(ShiftChassisAssembler.NEXT_BIKE,3).has_basic_model());
 
+    public static final DeferredItem<Item> SIGNAL_LEGEND_1 = ITEMS.register("signal_legend_1",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_KUUGA = ITEMS.register("signal_legend_kuuga",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_AGITO = ITEMS.register("signal_legend_agito",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
     public static final DeferredItem<Item> SIGNAL_LEGEND_FAIZ = ITEMS.register("signal_legend_faiz",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_BLADE = ITEMS.register("signal_legend_blade",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_HIBIKI = ITEMS.register("signal_legend_Hibiki",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_KABUTO = ITEMS.register("signal_legend_kabuto",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_DEN_O = ITEMS.register("signal_legend_den_o",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_KIVA = ITEMS.register("signal_legend_kiva",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_DECADE = ITEMS.register("signal_legend_decade",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_W = ITEMS.register("signal_legend_w",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_OOO = ITEMS.register("signal_legend_ooo",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_FOURZE = ITEMS.register("signal_legend_fourze",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_WIZARD = ITEMS.register("signal_legend_wizard",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SIGNAL_LEGEND_GAIM = ITEMS.register("signal_legend_gaim",
             () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
