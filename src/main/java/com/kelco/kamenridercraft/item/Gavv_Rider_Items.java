@@ -84,15 +84,15 @@ public class Gavv_Rider_Items {
 
     public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_PEACH = ITEMS.register("poppingummy_gochizo_peach",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_peach","do_not_work","valenbuckle_belt")
-                    .AddToList(GUMMY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(GUMMY).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_HONEY = ITEMS.register("poppingummy_gochizo_honey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_honey","do_not_work","valenbuckle_belt")
-                    .AddToList(GUMMY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(GUMMY).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_MUSCAT = ITEMS.register("poppingummy_gochizo_muscat",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_muscat","do_not_work","valenbuckle_belt")
-                    .AddToList(GUMMY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(GUMMY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> KICKINGUMMY_PUNCHINGUMMY_GOCHIZO_VALEN = ITEMS.register("kickingummy_punchingummy_gochizo_valen",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_kickin_punchin","valen_frappe_custom","vrastumgear_belt_frappe",
@@ -238,11 +238,11 @@ public class Gavv_Rider_Items {
 
     public static final DeferredItem<Item> ZAKUZAKUCHIPS_GOCHIZO_GARLIC = ITEMS.register("zakuzakuchips_gochizo_garlic",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_garlic","do_not_work","valenbuckle_belt")
-                    .AddToList(SNACK).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(SNACK).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> ZAKUZAKUCHIPS_GOCHIZO_BARLIC = ITEMS.register("zakuzakuchips_gochizo_barbecue",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_barbecue","do_not_work","valenbuckle_belt")
-                    .AddToList(SNACK).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(SNACK).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 
     public static final DeferredItem<Item> HIRIHIRICHIPS_GOCHIZO = ITEMS.register("hirihirichips_gochizo",
@@ -274,7 +274,7 @@ public class Gavv_Rider_Items {
 
     public static final DeferredItem<Item> FUWAMALLOW_GOCHIZO_LEMON = ITEMS.register("fuwamallow_gochizo_lemon",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_lemon","do_not_work","valenbuckle_belt")
-                    .AddToList(MARSHMALLOW).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(MARSHMALLOW).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> MARUMALLOW_GOCHIZO = ITEMS.register("marumallow_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fuwamallow","gavv","henshin_belt_gavv_belt_marumallow",
@@ -302,11 +302,11 @@ public class Gavv_Rider_Items {
 
     public static final DeferredItem<Item> CHOCODAN_GOCHIZO_STRAWBERRY  = ITEMS.register("chocodan_gochizo_strawberry",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_strawberry","do_not_work","valenbuckle_belt")
-                    .AddToList(CHOCO).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(CHOCO).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> CHOCODAN_GOCHIZO_MATCHA  = ITEMS.register("chocodan_gochizo_matcha",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_matcha","do_not_work","valenbuckle_belt")
-                    .AddToList(CHOCO).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(CHOCO).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> CHOCODON_GOCHIZO = ITEMS.register("chocodon_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valen","valenbuckle_belt",
@@ -394,13 +394,13 @@ public class Gavv_Rider_Items {
                 }
             }.IsGlowing().addAlternative(GURUCAN_GOCHIZO_VALEN.get()).AddToList(CANDY,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
-    public static final DeferredItem<Item> GURUCAN_GOCHIZO_MILK  = ITEMS.register("gurucan_gochizo_milk",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_milk","do_not_work","valenbuckle_belt")
-                    .AddToList(CANDY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+    public static final DeferredItem<Item> GURUCAN_GOCHIZO_MILK  = ITEMS.register("gurucan_gochizo_matcha_milk",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_matcha milk","do_not_work","valenbuckle_belt")
+                    .has_basic_model().AddToList(CANDY).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> GURUCAN_GOCHIZO_ORANGE  = ITEMS.register("gurucan_gochizo_orange",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_orange","do_not_work","valenbuckle_belt")
-                    .AddToList(CANDY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .has_basic_model().AddToList(CANDY).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> VROCAN_GOCHIZO = ITEMS.register("vrocan_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gurucan","do_not_work","henshin_belt_gavv_belt")
@@ -958,11 +958,11 @@ public class Gavv_Rider_Items {
 
     public static final DeferredItem<Item> HAPPIMUFFI_GOCHIZO = ITEMS.register("happimuffi_gochizo",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_happimuffi","do_not_work","valenbuckle_belt")
-                    .AddToList(CAKE).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .AddToList(CAKE).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
     public static final DeferredItem<Item> KONPEITON_GOCHIZO = ITEMS.register("konpeiton_gochizo",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_konpeiton","do_not_work","valenbuckle_belt")
-                    .AddToList(CANDY).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+                    .AddToList(CANDY).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CREPUNA_GOCHIZO = ITEMS.register("crepuna_gochizo",
