@@ -218,7 +218,7 @@ public class ModCommonEvents {
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/sorbei_gochizo")))) {
 				int rand = generator.nextInt(Gavv_Rider_Items.ICE_CREAM.size());
 				return Gavv_Rider_Items.ICE_CREAM.get(rand);
-			}
+            }
 			return Items.APPLE;
 		}
 
