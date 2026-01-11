@@ -928,6 +928,10 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_popburn","do_not_work","valenbuckle_belt")
 					.AddToList(CORN,3).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
+    public static final DeferredItem<Item> POPBURN_GOCHIZO_CARAMEL = ITEMS.register("popburn_gochizo_caramel",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_popburn","do_not_work","valenbuckle_belt")
+                    .AddToList(CORN).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> OSHIRUKO_GOCHIZO = ITEMS.register("oshiruko_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_oshiruko","do_not_work","valenbuckle_belt")
 					.AddToList(MARSHMALLOW,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());

@@ -830,7 +830,7 @@ public class Drive_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_FOURZE = ITEMS.register("signal_legend_fourze",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_WIZARD = ITEMS.register("signal_legend_wizard",
             () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
