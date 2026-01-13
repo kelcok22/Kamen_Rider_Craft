@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:den_o_sword_card"
+	}, 
+	{
+	  "item": "kamenridercraft:rider_ticket_wing"
+	},
+    {
+      "item": "kamenridercraft:ktaros"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:den_o_chou_climax_card"
+  }
+}

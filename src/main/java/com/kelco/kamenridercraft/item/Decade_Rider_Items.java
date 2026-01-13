@@ -1324,7 +1324,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_CARD = ITEMS.register("kuuga_ultimate_card",
 			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).setSummonForm((RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_ULTIMATE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
-	public static final DeferredItem<Item> AGITO_SHINING_CARD = ITEMS.register("agito_shining_card",
+    public static final DeferredItem<Item> AGITO_SHINING_CARD = ITEMS.register("agito_shining_card",
 			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get()).setSummonForm((RiderFormChangeItem)Agito_Rider_Items.AGITO_SHINING.get()).addSummonWeapon(Agito_Rider_Items.SHINING_CALIBER_TWIN.get()).addSummonWeapon(Agito_Rider_Items.SHINING_CALIBER_TWIN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> RYUKI_SURVIVE_CARD = ITEMS.register("ryuki_survive_card",
 			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get()).setSummonForm((RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_REKKA.get()).addSummonWeapon(Ryuki_Rider_Items.DRAG_BLADE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -1370,7 +1370,11 @@ public class Decade_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GEATS_IX_CARD = ITEMS.register("geats_ix_card",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DECADE_TAB_ITEM));
-	/*
+    public static final DeferredItem<Item> KUUGA_RISING_ULTIMATE_CARD = ITEMS.register("kuuga_rising_ultimate_card",
+            () -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).setSummonForm((RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_RISING_ULTIMATE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+    public static final DeferredItem<Item> DEN_O_CHOU_CLIMAX_CARD = ITEMS.register("den_o_chou_climax_card",
+            () -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).setSummonForm((RiderFormChangeItem)Den_O_Rider_Items.SUPER_KTAROS.get()).addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+    /*
 	public static final DeferredItem<Item> RAINBOW_GOTCHARD_CARD = ITEMS.register("rainbow_gotchard_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	*/

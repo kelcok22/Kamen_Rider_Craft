@@ -265,6 +265,28 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:decade/geats_ix_card"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_rising_ultimate_card",
+        "title": "Final KamenRide Kuuga Rising Ultimate",
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Can be used to summon $(l:kuuga/riders/kuuga#rising_ultimate)Kamen Rider Kuuga Rising Ultimate Form$(/l) when right-clicked as $(l:decade/riders/decade#complete)Kamen Rider Decade Complete Form$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:decade/kuuga_rising_ultimate_card"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "den_o_chou_climax_card",
+        "title": "Final KamenRide Den-O Chou Climax Form",
+        "text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Can be used to summon $(l:den_o/riders/den_o#super_climax)Kamen Rider Den_O Super Climax Form$(/l) when right-clicked as $(l:decade/riders/decade#complete)Kamen Rider Decade Complete Form$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:decade/den_o_chou_climax_card"
+      }
 	]
 }
