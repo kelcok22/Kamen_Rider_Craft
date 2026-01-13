@@ -8439,7 +8439,7 @@
 "kamenridercraft.name.agata": "ライダー: 仮面ライダー阿形",
 "item.kamenridercraft.chaos_driver_loq": "カオスドライバー",
 "kamenridercraft.name.loq": "ライダー: 仮面ライダーLOQ",
-"kamenridercraft:chaos_ring_loq.form": "フォーム: LOQ (天堂ランス)",
+"kamenridercraft:chaos_ring_loq.form": "フォーム: LOQ (ランス天堂)",
 "kamenridercraft:chaos_ring_loq_q.form": "フォーム: LOQ (Q)",
 "item.kamenridercraft.chaos_driver_rui": "カオスドライバー",
 "kamenridercraft.name.rui": "ライダー: 仮面ライダーRUI",
@@ -9148,6 +9148,11 @@
     "item.kamenridercraft.sports_gamer_spawn_egg": "Sports Gamer",
     "item.kamenridercraft.proto_sports_gamer_spawn_egg": "Proto Sports Gamer",
   "item.kamenridercraft.vice_bike_spawn_egg": "Vice Bicycle",
+  "item.kamenridercraft.boostriker_spawn_egg": "ブーストライカー",
+  "item.kamenridercraft.boostriker_geats_mode_spawn_egg": "ブーストライカー ギーツモード",
+  "item.kamenridercraft.boostriker_tycoon_mode_spawn_egg": "ブーストライカー タイクーンモード",
+  "item.kamenridercraft.boostriker_na_go_mode_spawn_egg": "ブーストライカー ナーゴモード",
+  "item.kamenridercraft.boostriker_buffa_mode_spawn_egg": "ブーストライカー バッファモード",
 
 
   "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
@@ -11204,5 +11209,14 @@
   "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe",
 
   "death.attack.rider_kick": "%1$s received a Rider Kick to the face",
-  "death.attack.rider_kick.player": "%1$s was defeated by %2$ using a Rider Kick"
+  "death.attack.rider_kick.player": "%1$s was defeated by %2$ using a Rider Kick",
+  "item.kamenridercraft.lord_invoker": "Lord Invoker",
+  "kamenridercraft.name.lord_three": "Debatable Rider: Lord Three",
+  "item.kamenridercraft.lord_invoker_five": "Lord Invoker",
+  "kamenridercraft.name.lord_five": "Debatable Rider: Lord Five",
+  "item.kamenridercraft.lord_invoker_six": "Lord Invoker",
+  "kamenridercraft.name.lord_six": "Debatable Rider: Lord Six",
+  "item.kamenridercraft.extra_capsem": "Extra Capsem",
+  "item.kamenridercraft.shock_capsem": "Shock Capsem",
+  "item.kamenridercraft.panic_capsem": "Panic Capsem"
 }
