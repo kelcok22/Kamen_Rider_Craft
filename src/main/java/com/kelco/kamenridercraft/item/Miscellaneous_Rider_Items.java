@@ -65,7 +65,10 @@ public class Miscellaneous_Rider_Items {
 	    public static final DeferredItem<Item> G_BELT = ITEMS.register("g_belt",
 		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_rider_g",GORO_WINE_BOTTLE ,GHELMET,GCHESTPLATE,GLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.G_TAB_ITEM));
 
-//Gorider
+    public static final DeferredItem<Item> G_SOMMELIER_KNIFE = ITEMS.register("g_sommelier_knife",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.G_TAB_ITEM));
+
+    //Gorider
 		public static final DeferredItem<Item> AKARIDER_CARD = ITEMS.register("akarider_card",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","aka_rider","typhoon_belt_akarider",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),

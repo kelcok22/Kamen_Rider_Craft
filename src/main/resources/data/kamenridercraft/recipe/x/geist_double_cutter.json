@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "x",
+  "pattern": [
+	"RIR",
+	"RGR",
+	"RCR"
+  ],
+  "key": {
+	"R": {
+	   "item": "kamenridercraft:rider_circuit"
+	  }, "I": {
+	  "item": "kamenridercraft:apollogeist_reborn_core"
+	}, "G": {
+	  "item": "kamenridercraft:base_sword"
+	}, "C": {
+	  "item": "minecraft:shield"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:geist_double_cutter"
+  }
+}

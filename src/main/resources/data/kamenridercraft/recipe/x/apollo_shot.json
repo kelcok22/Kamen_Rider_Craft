@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "x",
+  "pattern": [
+	"XCX",
+	"XZX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:rider_circuit"
+	}, "C": {
+	  "item": "kamenridercraft:apollogeist_core"
+	}, "Z": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:apollo_shot"
+  }
+}
