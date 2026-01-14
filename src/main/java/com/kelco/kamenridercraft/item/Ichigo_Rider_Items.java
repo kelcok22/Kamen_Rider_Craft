@@ -33,8 +33,6 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> KAMEN_RIDER_LOGO = ITEMS.register("kamen_rider_logo",
             () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ichigo")), new Item.Properties()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
-
-
     public static final DeferredItem<Item> TYPHOON_CORE = ITEMS.register("typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ichigo","typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
@@ -137,6 +135,22 @@ public class Ichigo_Rider_Items {
                             player.getZ(), 150, 0, 0, 0, 1);
                 }
             }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> ULTRAMAN_TYPHOON_CORE = ITEMS.register("ultraman_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","ichigo","typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
+                    ,new MobEffectInstance(Effect_core.BIG, 40, 2,true,false)
+                    ,new MobEffectInstance(Effect_core.FLYING, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().IsGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> TAKI_VAMPIRE_CORE = ITEMS.register("taki_vampire_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","taki_rider","taki_rider_belt",
@@ -455,6 +469,23 @@ public class Ichigo_Rider_Items {
                 }
             }.IsGlowing().SetShowUnder().AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
 
+    public static final DeferredItem<Item> APOLLOGIST_CORE = ITEMS.register("apollogeist_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","apollogeist","apollogeist_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE,200, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                }
+            }.ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
+
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
     public static final DeferredItem<Item> XCHESTPLATE = ITEMS.register("xtroso",
@@ -471,6 +502,10 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> FAKE_RIDOL = ITEMS.register("fake_ridol",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.X_TAB_ITEM));
+
+    public static final DeferredItem<Item> APOLLOGIST_BELT = ITEMS.register("apollogeist_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.X_TAB_ITEM));
+
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
