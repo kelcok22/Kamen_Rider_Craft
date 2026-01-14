@@ -318,6 +318,84 @@ public class Zeztz_Rider_Items {
     public static final DeferredItem<Item> WING_CAPSEM_GOLD = ITEMS.register("wing_capsem_gold",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> KUUGA_CAPSEM = ITEMS.register("kuuga_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGITO_CAPSEM = ITEMS.register("agito_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> RYUKI_CAPSEM = ITEMS.register("ryuki_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> FAIZ_CAPSEM = ITEMS.register("faiz_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> BLADE_CAPSEM = ITEMS.register("blade_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> HIBIKI_CAPSEM = ITEMS.register("hibiki_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> KABUTO_CAPSEM = ITEMS.register("kabuto_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> DEN_O_CAPSEM = ITEMS.register("den_o_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> KIVA_CAPSEM = ITEMS.register("kiva_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> DECADE_CAPSEM = ITEMS.register("decade_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> W_CAPSEM = ITEMS.register("w_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> OOO_CAPSEM = ITEMS.register("ooo_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> FOURZE_CAPSEM = ITEMS.register("fourze_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> WIZARD_CAPSEM = ITEMS.register("wizard_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GAIM_CAPSEM = ITEMS.register("gaim_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> DRIVE_CAPSEM = ITEMS.register("drive_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GHOST_CAPSEM = ITEMS.register("ghost_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> EX_AID_CAPSEM = ITEMS.register("ex_aid_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> BUILD_CAPSEM = ITEMS.register("build_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> ZI_O_CAPSEM = ITEMS.register("zi_o_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> ZERO_ONE_CAPSEM = ITEMS.register("zero_one_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> SABER_CAPSEM = ITEMS.register("saber_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> REVICE_CAPSEM = ITEMS.register("revice_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GEATS_CAPSEM = ITEMS.register("geats_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GOTCHARD_CAPSEM = ITEMS.register("gotchard_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
             () -> new CapsemCylinderItem().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
