@@ -636,6 +636,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.SHOCKER_RIDER.get(), ShockerRidersEntity.setAttributes().build());
 		event.put(MobsCore.DESTRON_COMBATMAN.get(), DestronCombatmanEntity.setAttributes().build());
 		event.put(MobsCore.GOD_WARFARE_AGENT.get(), GODWarfareAgentEntity.setAttributes().build());
+        event.put(MobsCore.APOLLOGIST.get(), ApollogeistEntity.setAttributes().build());
 		event.put(MobsCore.RED_FOLLWER.get(), RedFollowerEntity.setAttributes().build());
 		event.put(MobsCore.BLACK_SATAN_SOLDIER.get(), BlackSatanSoldierEntity.setAttributes().build());
 		event.put(MobsCore.ARI_COMMANDO.get(), AriCommandoEntity.setAttributes().build());

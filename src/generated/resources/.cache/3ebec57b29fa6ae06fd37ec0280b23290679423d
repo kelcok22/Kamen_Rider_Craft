@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-14T03:54:44.1979468	Item Models: kamenridercraft
+// 1.21.1	2026-01-14T16:48:35.4525521	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
@@ -19,6 +19,7 @@ bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/ange
 8deac3304f1f1a86cb414b1c59b811a3a2371db5 assets/kamenridercraft/models/item/antrooper_repli_chemy_card.json
 d86d5cebc4ed513f488f6f8a6087724618f48e12 assets/kamenridercraft/models/item/apollogeist_belt.json
 6710171ed03885600eed0b521c9db58b5cf7dae8 assets/kamenridercraft/models/item/apollogeist_core.json
+a374926418de34139e7ffa2a3cdb5159fca88a45 assets/kamenridercraft/models/item/apollogeist_reborn_core.json
 fe938de32299fe901f5f9cbbd7b451ab1e8b8638 assets/kamenridercraft/models/item/apparebushido_daybreak_chemy_card.json
 57eca977c14305a0f4b6daaa2036a7b7864d7a13 assets/kamenridercraft/models/item/apparebushido_repli_chemy_card.json
 b3efabd800267bed852ee6a17baaecace4f5fcc4 assets/kamenridercraft/models/item/ark_one_malgam.json

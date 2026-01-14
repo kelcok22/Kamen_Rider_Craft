@@ -54,9 +54,14 @@ public class MobsCore {
     
     public static final DeferredItem<DeferredSpawnEggItem> GOD_WARFARE_AGENT_SPAWN_EGG = ITEMS.register("god_warfare_agent_spawn_egg",
             () -> new DeferredSpawnEggItem(GOD_WARFARE_AGENT, 0x000000,0x7e0000, new Item.Properties()));
- 
-    
-    
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ApollogeistEntity>> APOLLOGIST = MOBLIST.register("apollogeist",
+            () -> EntityType.Builder.of(ApollogeistEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shadowmoon"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> APOLLOGIST_SPAWN_EGG = ITEMS.register("apollogeist_spawn_egg",
+            () -> new DeferredSpawnEggItem(APOLLOGIST,  0x282828,0xf1030a, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<RedFollowerEntity>> RED_FOLLWER = MOBLIST.register("red_follower",
             () -> EntityType.Builder.of(RedFollowerEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":red_follower"));
     

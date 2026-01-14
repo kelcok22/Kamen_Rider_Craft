@@ -20,4 +20,6 @@ public class ChapGreyEntity extends BaseHenchmenEntity {
             this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Rider_Blocks.FERBUS.get()));
         }
     }
+
+
 }

@@ -657,6 +657,7 @@ public class RiderTabs {
 
             event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.GOD_WARFARE_AGENT_SPAWN_EGG);
+            event.accept(MobsCore.APOLLOGIST_SPAWN_EGG);
             event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
             event.accept(MobsCore.BLACK_SATAN_SOLDIER_SPAWN_EGG);
             event.accept(MobsCore.ARI_COMMANDO_SPAWN_EGG);

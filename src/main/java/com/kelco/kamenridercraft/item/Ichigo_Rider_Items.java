@@ -480,11 +480,28 @@ public class Ichigo_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
+
+    public static final DeferredItem<Item> APOLLOGIST_REBORN_CORE = ITEMS.register("apollogeist_reborn_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_reborn","apollogeist","apollogeist_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE,200, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
+                    ,new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.1);
+                }
+            }.ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
+
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
@@ -510,6 +527,14 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
 
+    public static final DeferredItem<Item> APOLLO_SHOT = ITEMS.register("apollo_shot",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
+
+    public static final DeferredItem<Item> GEIST_CUTTER = ITEMS.register("geist_cutter",
+            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
+
+    public static final DeferredItem<Item> GEIST_DOUBLE_CUTTER = ITEMS.register("geist_double_cutter",
+            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
 
     //Amazon
 
