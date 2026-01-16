@@ -1,0 +1,63 @@
+{
+	"name": "Mirror Riders",
+	"icon": "kamenridercraft:ryuki_logo",
+	"category": "kamenridercraft:ryuki/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "scissors",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_scissors\",Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Scissors",
+			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Spawn locations: Cherry Grove, Frozen Peaks, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#volcancer_advent)Volcancer Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/strike_vent_cards#scissors_pinch_vent)Scissorspinch Strike Vent Cards$(/l) or $(l:ryuki/arsenal/guard_vent_cards#shell_defense_vent)Shelldefense Guard Vent Cards$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryuki",
+			"text": "Spawn locations: All other biomes/dimensions during day$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Uses his $(l:ryuki/riders/ryuki#survive)Survive$(/l) form if you have a $(l:ryuki/items/survive_cards#survive_rekka)Survive card$(/l) in your inventory$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#dragreder_advent)Dragreder Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#ride_saber_vent)Ridesaber Sword Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#drag_saber_vent)Dragsaber Sword Vent Cards$(/l), $(l:ryuki/arsenal/strike_vent_cards#drag_claw_vent)Dragclaw Strike Vent Cards$(/l), or $(l:ryuki/arsenal/guard_vent_cards#drag_shield_vent)Dragshield Guard $(/l) $(l:ryuki/items/other_form_advent_cards#drag_shield_vent_form)Vent Cards$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki_survive",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryuki Survive",
+			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1-2 $(l:ryuki/arsenal/shoot_vent_cards#drag_visor_zwei_vent)Dragvisorzwei Shoot Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#drag_blade_vent)Dragblade Sword Vent Cards$(/l), $(l:ryuki/arsenal/guard_vent_cards#fire_wall_vent)Firewall Guard Vent Cards$(/l), $(l:ryuki/arsenal/shoot_vent_cards#meteor_bullet_vent)Meteorbullet Shoot Vent Cards$(/l), or $(l:ryuki/arsenal/trick_vent_cards#ryuki_trick_vent)Ryuki Trick Vent Cards$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "knight",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkwing_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knight",
+			"text": "Spawn locations: All other biomes/dimensions during night$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Uses his $(l:ryuki/riders/knight#survive)Survive$(/l) form if you have a $(l:ryuki/items/survive_cards#survive_rekka)Survive card$(/l) in your inventory$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#darkwing_advent)Darkwing Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#wing_lancer_vent)Winglancer Sword Vent Cards$(/l), $(l:ryuki/arsenal/trick_vent_cards#knight_trick_vent)Trick Vent Cards$(/l), $(l:ryuki/items/other_form_advent_cards#wing_wall_vent)Wingwall Guard Vent Cards$(/l), or $(l:ryuki/arsenal/nasty_vent)Nasty Vent Cards$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "knight_survive",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knight Survive",
+			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1-2 $(l:ryuki/arsenal/guard_vent_cards#dark_visor_zwei_vent)Darkvisorzwei Guard Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#dark_blade_vent)Darkblade Sword Vent Cards$(/l), $(l:ryuki/arsenal/shoot_vent_cards#dark_arrow_vent)Darkarrow Shoot Vent Cards$(/l), or $(l:ryuki/arsenal/blust_vent)Blust Vent Cards$(/l)"
+		}
+	]
+}
