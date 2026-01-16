@@ -12,10 +12,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class ApollogeistEntity extends BaseHenchmenEntity {
-
-	public static final Item[] belt = new Item[] {Ichigo_Rider_Items.SHADOW_CHARGER.get()};
-
-
     public ApollogeistEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="apollogeist";

@@ -6,7 +6,7 @@
 	"#kamenridercraft:gear/legend_rider/wizard_rings",
     "#kamenridercraft:gear/legend_rider/lockseeds",
     "kamenridercraft:fruitsshift",
-    "kamenridercraft:signal_legend_faiz",
+	"#kamenridercraft:gear/legend_rider/signal_bikes",
 	"#kamenridercraft:gear/legend_rider/eyecons",
 	"#kamenridercraft:gear/legend_rider/gashats",
 	"#kamenridercraft:gear/legend_rider/fullbottles",
@@ -15,6 +15,7 @@
 	"#kamenridercraft:gear/legend_rider/vistamps",
 	"#kamenridercraft:gear/legend_rider/raise_buckles",
 	"#kamenridercraft:gear/legend_rider/ride_chemy_cards",
-    "#kamenridercraft:gear/legend_rider/gochizo"
+    "#kamenridercraft:gear/legend_rider/gochizo",
+	"#kamenridercraft:gear/legend_rider/capsems"
   ]
 }
