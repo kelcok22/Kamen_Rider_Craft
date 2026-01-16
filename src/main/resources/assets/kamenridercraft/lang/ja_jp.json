@@ -105,6 +105,9 @@
 "painting.kamenridercraft.shadow_moon.title":"シャドームーン",
 "painting.kamenridercraft.shadow_moon.author":"ケルコ",
 
+  "painting.kamenridercraft.crying_gummy.title":"クライングミ",
+  "painting.kamenridercraft.crying_gummy.author":"ケルコ",
+
 "painting.kamenridercraft.fourze_club.title":"仮面ライダー部",
 "painting.kamenridercraft.fourze_club.author":"仮面ライダー部",
 
@@ -144,59 +147,59 @@
   "painting.kamenridercraft.zeztz_wonder.title":"ワンダー",
   "painting.kamenridercraft.zeztz_wonder.author":"リアスダン",
 
-  "item.kamenridercraft.lets_go_rider_kick_music_disc": "『レッツゴー!! ライダーキック』音楽ディスク",
+  "item.kamenridercraft.lets_go_rider_kick_music_disc": "『レッツゴー!! ライダーキック』レコード",
   "item.kamenridercraft.lets_go_rider_kick.desc": "ホセフホースター - 『レッツゴー!! ライダーキック』",
   "item.kamenridercraft.lets_go_rider_kick_music_disc.desc": "ホセフホースター - 『レッツゴー!! ライダーキック』",
 
-  "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc": "『戦え!仮面ライダーV3』音楽ディスク",
+  "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc": "『戦え!仮面ライダーV3』レコード",
   "item.kamenridercraft.tatakae_kamen_rider_v3.desc": "ホセフホースター - 『戦え!仮面ライダーV3』",
   "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc.desc": "ホセフホースター - 『戦え!仮面ライダーV3』",
 
-  "item.kamenridercraft.set_up_kamen_rider_x_music_disc": "『セタップ!仮面ライダーX』音楽ディスク",
+  "item.kamenridercraft.set_up_kamen_rider_x_music_disc": "『セタップ!仮面ライダーX』レコード",
   "item.kamenridercraft.set_up_kamen_rider_x.desc": "ホセフホースター - 『セタップ!仮面ライダーX』",
   "item.kamenridercraft.set_up_kamen_rider_x_music_disc.desc": "ホセフホースター - 『セタップ!仮面ライダーX』",
 
-  "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc": "『アマゾンライダーここにあり』音楽ディスク",
+  "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc": "『アマゾンライダーここにあり』レコード",
   "item.kamenridercraft.amazon_rider_koko_ni_ari.desc": "ホセフホースター - 『アマゾンライダーここにあり』",
   "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc.desc": "ホセフホースター - 『アマゾンライダーここにあり』",
 
-  "item.kamenridercraft.kamen_rider_stronger_no_uta_music_disc": "『仮面ライダーストロンガーの歌』音楽ディスク",
+  "item.kamenridercraft.kamen_rider_stronger_no_uta_music_disc": "『仮面ライダーストロンガーの歌』レコード",
   "item.kamenridercraft.kamen_rider_stronger_no_uta.desc": "ホセフホースター - 『仮面ライダーストロンガーの歌』",
   "item.kamenridercraft.kamen_rider_stronger_no_uta_music_disc.desc": "ホセフホースター - 『仮面ライダーストロンガーの歌』",
 
-  "item.kamenridercraft.moero_kamen_rider_music_disc": "『燃えろ! 仮面ライダー』音楽ディスク",
+  "item.kamenridercraft.moero_kamen_rider_music_disc": "『燃えろ! 仮面ライダー』レコード",
   "item.kamenridercraft.moero_kamen_rider.desc": "ホセフホースター - 『燃えろ! 仮面ライダー』",
   "item.kamenridercraft.moero_kamen_rider_music_disc.desc": "ホセフホースター - 『燃えろ! 仮面ライダー』",
 
-  "item.kamenridercraft.kamen_rider_super_1_music_disc": "『仮面ライダースーパー1』音楽ディスク",
+  "item.kamenridercraft.kamen_rider_super_1_music_disc": "『仮面ライダースーパー1』レコード",
   "item.kamenridercraft.kamen_rider_super_1.desc": "ホセフホースター - 『仮面ライダースーパー1』",
   "item.kamenridercraft.kamen_rider_super_1_music_disc.desc": "ホセフホースター - 『仮面ライダースーパー1』",
 
-  "item.kamenridercraft.dragon_road_music_disc": "『ドラゴン・ロード』音楽ディスク",
+  "item.kamenridercraft.dragon_road_music_disc": "『ドラゴン・ロード』レコード",
   "item.kamenridercraft.dragon_road.desc": "ホセフホースター - 『ドラゴン・ロード』",
   "item.kamenridercraft.dragon_road_music_disc.desc": "ホセフホースター - 『ドラゴン・ロード』",
 
-  "item.kamenridercraft.kamen_rider_black_music_disc": "『仮面ライダーBLACK』音楽ディスク",
+  "item.kamenridercraft.kamen_rider_black_music_disc": "『仮面ライダーBLACK』レコード",
   "item.kamenridercraft.kamen_rider_black.desc": "ホセフホースター - 『仮面ライダーBLACK』",
   "item.kamenridercraft.kamen_rider_black_music_disc.desc": "ホセフホースター - 『仮面ライダーBLACK』",
 
-  "item.kamenridercraft.kamen_rider_black_rx_music_disc": "『仮面ライダーBLACK RX』音楽ディスク",
+  "item.kamenridercraft.kamen_rider_black_rx_music_disc": "『仮面ライダーBLACK RX』レコード",
   "item.kamenridercraft.kamen_rider_black_rx.desc": "ホセフホースター - 『仮面ライダーBLACK RX』",
   "item.kamenridercraft.kamen_rider_black_rx_music_disc.desc": "ホセフホースター - 『仮面ライダーBLACK RX』",
 
-  "item.kamenridercraft.masked_rider_music_disc": "『Masked Rider』音楽ディスク",
+  "item.kamenridercraft.masked_rider_music_disc": "『Masked Rider』レコード",
   "item.kamenridercraft.masked_rider.desc": "ホセフホースター - 『Masked Rider』",
   "item.kamenridercraft.masked_rider_music_disc.desc": "ホセフホースター - 『Masked Rider』",
 
-  "item.kamenridercraft.kamen_rider_kuuga_music_disc": "『仮面ライダークウガ!』音楽ディスク",
+  "item.kamenridercraft.kamen_rider_kuuga_music_disc": "『仮面ライダークウガ!』レコード",
   "item.kamenridercraft.kamen_rider_kuuga.desc": "ホセフホースター - 『仮面ライダークウガ!』",
   "item.kamenridercraft.kamen_rider_kuuga_music_disc.desc": "ホセフホースター - 『仮面ライダークウガ!』",
 
-  "item.kamenridercraft.kamen_rider_agito_music_disc": "『仮面ライダーアギト』音楽ディスク",
+  "item.kamenridercraft.kamen_rider_agito_music_disc": "『仮面ライダーアギト』レコード",
   "item.kamenridercraft.kamen_rider_agito.desc": "ホセフホースター - 『仮面ライダーアギト』",
   "item.kamenridercraft.kamen_rider_agito_music_disc.desc": "ホセフホースター - 『仮面ライダーアギト』",
 
-  "item.kamenridercraft.alive_a_life_music_disc": "『Alive A life』音楽ディスク",
+  "item.kamenridercraft.alive_a_life_music_disc": "『Alive A life』レコード",
   "item.kamenridercraft.alive_a_life.desc": "ホセフホースター - 『Alive A life』",
   "item.kamenridercraft.alive_a_life_music_disc.desc": "ホセフホースター - 『Alive A life』",
 
@@ -204,111 +207,111 @@
   "item.kamenridercraft.justifaiz.desc": "ホセフホースター - 『Justiφ's』",
   "item.kamenridercraft.justifaiz_music_disc.desc": "ホセフホースター - 『Justiφ's』",
 
-  "item.kamenridercraft.round_zero_blade_brave_music_disc": "『Round ZERO~BLADE BRAVE』音楽ディスク",
+  "item.kamenridercraft.round_zero_blade_brave_music_disc": "『Round ZERO~BLADE BRAVE』レコード",
   "item.kamenridercraft.round_zero_blade_brave.desc": "ホセフホースター - 『Round ZERO~BLADE BRAVE』",
   "item.kamenridercraft.round_zero_blade_brave_music_disc.desc": "ホセフホースター - 『Round ZERO~BLADE BRAVE』",
 
-  "item.kamenridercraft.rebirth_music_disc": "『rebirth』音楽ディスク",
+  "item.kamenridercraft.rebirth_music_disc": "『rebirth』レコード",
   "item.kamenridercraft.rebirth.desc": "ホセフホースター - 『rebirth』",
   "item.kamenridercraft.rebirth_music_disc.desc": "ホセフホースター - 『rebirth』",
 
-  "item.kamenridercraft.kagayaki_music_disc": "『輝』音楽ディスク",
+  "item.kamenridercraft.kagayaki_music_disc": "『輝』レコード",
   "item.kamenridercraft.kagayaki.desc": "ホセフホースター - 『輝』",
   "item.kamenridercraft.kagayaki_music_disc.desc": "ホセフホースター - 『輝』",
 
-  "item.kamenridercraft.next_level_music_disc": "『NEXT LEVEL』音楽ディスク",
+  "item.kamenridercraft.next_level_music_disc": "『NEXT LEVEL』レコード",
   "item.kamenridercraft.next_level.desc": "ホセフホースター - NEXT LEVEL",
   "item.kamenridercraft.next_level_music_disc.desc": "ホセフホースター - NEXT LEVEL",
 
-  "item.kamenridercraft.climax_jump_music_disc": "『Climax Jump』音楽ディスク",
+  "item.kamenridercraft.climax_jump_music_disc": "『Climax Jump』レコード",
   "item.kamenridercraft.climax_jump.desc": "ホセフホースター - 『Climax Jump』",
   "item.kamenridercraft.climax_jump_music_disc.desc": "ホセフホースター - 『Climax Jump』",
 
-  "item.kamenridercraft.break_the_chain_music_disc": "『Break the Chain』音楽ディスク",
+  "item.kamenridercraft.break_the_chain_music_disc": "『Break the Chain』レコード",
   "item.kamenridercraft.break_the_chain.desc": "ホセフホースター - 『Break the Chain』",
   "item.kamenridercraft.break_the_chain_music_disc.desc": "ホセフホースター - 『Break the Chain』",
 
-  "item.kamenridercraft.journey_through_the_decade_music_disc": "『Journey Through the Decade』音楽ディスク",
+  "item.kamenridercraft.journey_through_the_decade_music_disc": "『Journey Through the Decade』レコード",
   "item.kamenridercraft.journey_through_the_decade.desc": "ホセフホースター - 『Journey Through the Decade』",
   "item.kamenridercraft.journey_through_the_decade_music_disc.desc": "ホセフホースター - 『Journey Through the Decade』",
 
-  "item.kamenridercraft.w_b_x_w_boiled_xtreme_music_disc": "『W-B-X ~W-Boiled Extreme~』音楽ディスク",
+  "item.kamenridercraft.w_b_x_w_boiled_xtreme_music_disc": "『W-B-X ~W-Boiled Extreme~』レコード",
   "item.kamenridercraft.w_b_x_w_boiled_xtreme.desc": "ホセフホースター - 『W-B-X ~W-Boiled Extreme~』",
   "item.kamenridercraft.w_b_x_w_boiled_xtreme_music_disc.desc": "ホセフホースター - 『W-B-X ~W-Boiled Extreme~』",
 
-  "item.kamenridercraft.anything_goes_music_disc": "『Anything Goes!』音楽ディスク",
+  "item.kamenridercraft.anything_goes_music_disc": "『Anything Goes!』レコード",
   "item.kamenridercraft.anything_goes.desc": "ホセフホースター - 『Anything Goes!』",
   "item.kamenridercraft.anything_goes_music_disc.desc": "ホセフホースター - 『Anything Goes!』",
 
-  "item.kamenridercraft.switch_on_music_disc": "『Switch On!』音楽ディスク",
+  "item.kamenridercraft.switch_on_music_disc": "『Switch On!』レコード",
   "item.kamenridercraft.switch_on.desc": "ホセフホースター - 『Switch On!』",
   "item.kamenridercraft.switch_on_music_disc.desc": "ホセフホースター - 『Switch On!』",
 
-  "item.kamenridercraft.life_is_showtime_music_disc": "『Life is SHOW TIME』音楽ディスク",
+  "item.kamenridercraft.life_is_showtime_music_disc": "『Life is SHOW TIME』レコード",
   "item.kamenridercraft.life_is_showtime.desc": "ホセフホースター - 『Life is SHOW TIME』",
   "item.kamenridercraft.life_is_showtime_music_disc.desc": "ホセフホースター - 『Life is SHOW TIME』",
 
-  "item.kamenridercraft.just_live_more_music_disc": "『JUST LIVE MORE』音楽ディスク",
+  "item.kamenridercraft.just_live_more_music_disc": "『JUST LIVE MORE』レコード",
   "item.kamenridercraft.just_live_more.desc": "ホセフホースター - 『JUST LIVE MORE』",
   "item.kamenridercraft.just_live_more_music_disc.desc": "ホセフホースター - 『JUST LIVE MORE』",
 
-  "item.kamenridercraft.surprise_drive_music_disc": "『SURPRISE-DRIVE』音楽ディスク",
+  "item.kamenridercraft.surprise_drive_music_disc": "『SURPRISE-DRIVE』レコード",
   "item.kamenridercraft.surprise_drive.desc": "ホセフホースター - 『SURPRISE-DRIVE』",
   "item.kamenridercraft.surprise_drive_music_disc.desc": "ホセフホースター - 『SURPRISE-DRIVE』",
 
-  "item.kamenridercraft.warera_omou_yue_ni_warera_ari_music_disc": "『我ら思う、故に我ら在り』音楽ディスク",
+  "item.kamenridercraft.warera_omou_yue_ni_warera_ari_music_disc": "『我ら思う、故に我ら在り』レコード",
   "item.kamenridercraft.warera_omou_yue_ni_warera_ari.desc": "ホセフホースター - 『我ら思う、故に我ら在り』",
   "item.kamenridercraft.warera_omou_yue_ni_warera_ari_music_disc.desc": "ホセフホースター - 『我ら思う、故に我ら在り』",
 
-  "item.kamenridercraft.excite_music_disc": "『EXCITE』音楽ディスク",
+  "item.kamenridercraft.excite_music_disc": "『EXCITE』レコード",
   "item.kamenridercraft.excite.desc": "ホセフホースター - 『EXCITE』",
   "item.kamenridercraft.excite_music_disc.desc": "ホセフホースター - 『EXCITE』",
 
-  "item.kamenridercraft.be_the_one_music_disc": "『Be The One』音楽ディスク",
+  "item.kamenridercraft.be_the_one_music_disc": "『Be The One』レコード",
   "item.kamenridercraft.be_the_one.desc": "ホセフホースター - 『Be The One』",
   "item.kamenridercraft.be_the_one_music_disc.desc": "ホセフホースター - 『Be The One』",
 
-  "item.kamenridercraft.over_quartzer_music_disc": "『Over \"Quartzer\"』音楽ディスク",
+  "item.kamenridercraft.over_quartzer_music_disc": "『Over \"Quartzer\"』レコード",
   "item.kamenridercraft.over_quartzer.desc": "ホセフホースター - 『Over \"Quartzer\"』",
   "item.kamenridercraft.over_quartzer_music_disc.desc": "ホセフホースター - 『Over \"Quartzer\"』",
 
-  "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc": "『P. A. R. T. Y. ~ユニバースフェスティバル~』音楽ディスク",
+  "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc": "『P. A. R. T. Y. ~ユニバースフェスティバル~』レコード",
   "item.kamenridercraft.p_a_r_t_y_universe_festival.desc": "ホセフホースター - 『P. A. R. T. Y. ~ユニバースフェスティバル~』",
   "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc.desc": "ホセフホースター - 『P. A. R. T. Y. ~ユニバースフェスティバル~』",
 
-  "item.kamenridercraft.realxeyez_music_disc": "『REAL×EYEZ』音楽ディスク",
+  "item.kamenridercraft.realxeyez_music_disc": "『REAL×EYEZ』レコード",
   "item.kamenridercraft.realxeyez.desc": "ホセフホースター - 『REAL×EYEZ』",
   "item.kamenridercraft.realxeyez_music_disc.desc": "ホセフホースター - 『REAL×EYEZ』",
 
-  "item.kamenridercraft.almighty_music_disc": "『ALMIGHTY ~ 仮面の約束』音楽ディスク",
+  "item.kamenridercraft.almighty_music_disc": "『ALMIGHTY ~ 仮面の約束』レコード",
   "item.kamenridercraft.almighty.desc": "ホセフホースター - 『ALMIGHTY ~ 仮面の約束』",
   "item.kamenridercraft.almighty_music_disc.desc": "ホセフホースター - 『ALMIGHTY ~ 仮面の約束』",
 
-  "item.kamenridercraft.livedevil_music_disc": "『liveDevil』音楽ディスク",
+  "item.kamenridercraft.livedevil_music_disc": "『liveDevil』レコード",
   "item.kamenridercraft.livedevil.desc": "ホセフホースター - 『liveDevil』",
   "item.kamenridercraft.livedevil_music_disc.desc": "ホセフホースター - 『liveDevil』",
 
-  "item.kamenridercraft.george_karizakis_rider_system_music_disc": "『ジョージ・狩崎のライダーシステム』音楽ディスク",
+  "item.kamenridercraft.george_karizakis_rider_system_music_disc": "『ジョージ・狩崎のライダーシステム』レコード",
   "item.kamenridercraft.george_karizakis_rider_system.desc": "ホセフホースター - 『ジョージ・狩崎のライダーシステム』",
   "item.kamenridercraft.george_karizakis_rider_system_music_disc.desc": "ホセフホースター - 『ジョージ・狩崎のライダーシステム』",
 
-  "item.kamenridercraft.trust_last_music_disc": "『Trust・Last』音楽ディスク",
+  "item.kamenridercraft.trust_last_music_disc": "『Trust・Last』レコード",
   "item.kamenridercraft.trust_last.desc": "ホセフホースター - 『Trust・Last』",
   "item.kamenridercraft.trust_last_music_disc.desc": "ホセフホースター - 『Trust・Last』",
 
-  "item.kamenridercraft.chemy_x_story_music_disc": "『CHEMY×STORY』音楽ディスク",
+  "item.kamenridercraft.chemy_x_story_music_disc": "『CHEMY×STORY』レコード",
   "item.kamenridercraft.chemy_x_story.desc": "ホセフホースター - 『CHEMY×STORY』",
   "item.kamenridercraft.chemy_x_story_music_disc.desc": "ホセフホースター - 『CHEMY×STORY』",
 
-  "item.kamenridercraft.chemy_x_story_flow_music_disc": "『CHEMY×STORY (BACK-ON × FLOW ver.)』音楽ディスク",
+  "item.kamenridercraft.chemy_x_story_flow_music_disc": "『CHEMY×STORY (BACK-ON × FLOW ver.)』レコード",
   "item.kamenridercraft.chemy_x_story_flow.desc": "ホセフホースター - 『CHEMY×STORY (BACK-ON × FLOW ver.)』",
   "item.kamenridercraft.chemy_x_story_flow_music_disc.desc": "ホセフホースター - 『CHEMY×STORY (BACK-ON × FLOW ver.)』",
 
-  "item.kamenridercraft.got_boost_music_disc": "『Got Boost?』音楽ディスク",
+  "item.kamenridercraft.got_boost_music_disc": "『Got Boost?』レコード",
   "item.kamenridercraft.got_boost.desc": "ホセフホースター - 『Got Boost?』",
   "item.kamenridercraft.got_boost_music_disc.desc": "ホセフホースター - 『Got Boost?』",
 
-  "item.kamenridercraft.visions_music_disc": "『VISIONS』音楽ディスク",
+  "item.kamenridercraft.visions_music_disc": "『VISIONS』レコード",
   "item.kamenridercraft.visions.desc": "ホセフホースター - 『VISIONS』",
   "item.kamenridercraft.visions_music_disc.desc": "ホセフホースター - 『VISIONS』",
 
@@ -8186,7 +8189,7 @@
   "item.kamenridercraft.tirolchocolate_gochizo": "チロルチョコゴチゾウ",
   "item.kamenridercraft.crunky_gochizo": "クランキーゴチゾウ",
   "item.kamenridercraft.meitoalphabet_gochizo": "メイトアルファベットチョコレートゴチゾウ",
-  "item.kamenridercraft.tirolchocolate_gochizo_variety": "チロルチョコゴチゾウ(Variety Pack ver.)",
+  "item.kamenridercraft.tirolchocolate_gochizo_variety": "チロルチョコゴチゾウ(バラエティーパックver.)",
   "kamenridercraft:tirolchocolate_gochizo_variety.form": "フォーム: チロルフォーム",
   "item.kamenridercraft.whiteandcookiestirol_gochizo": "ホワイト&クッキーチロルチョコゴチゾウ",
   "item.kamenridercraft.strawberryjellytirol_gochizo": "いちごゼリーチロルチョコゴチゾウ",
@@ -10958,7 +10961,7 @@
   "advancements.kamenridercraft.ryuki.raia.title": "My predictions are never wrong.",
   "advancements.kamenridercraft.ryuki.ryuga.description": "Transform into 仮面ライダーRyuga",
   "advancements.kamenridercraft.ryuki.ryuga.title": "Man in the Mirror",
-  "advancements.kamenridercraft.ryuki.ryuki_roll.description": "As Ryuki, play a音楽ディスク in a jukebox",
+  "advancements.kamenridercraft.ryuki.ryuki_roll.description": "As Ryuki, play aレコード in a jukebox",
   "advancements.kamenridercraft.ryuki.ryuki_roll.title": "Get Ryukirolled",
   "advancements.kamenridercraft.ryuki.ryuki.description": "Transform into 仮面ライダーRyuki",
   "advancements.kamenridercraft.ryuki.ryuki.title": "Ssha!",
