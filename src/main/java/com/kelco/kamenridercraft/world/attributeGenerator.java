@@ -21,6 +21,15 @@ public class attributeGenerator extends Event implements IModBusEvent {
     public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
 
+    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT = ATTRIBUTES.register("wheel_rotation",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.wheel_rotation",
+                    0,
+                    0,
+                    360
+            ).setSyncable(true)
+    );
+
     public static final DeferredHolder<Attribute, Attribute> ABILITY_ONE_CD = ATTRIBUTES.register("ability_one_cd",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.ability_one_cd",

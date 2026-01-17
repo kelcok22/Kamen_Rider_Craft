@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entities.bikes;
 
 import javax.annotation.Nullable;
 
+import com.kelco.kamenridercraft.world.attributeGenerator;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -65,7 +66,8 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public static AttributeSupplier.Builder setAttributes() {
 		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F)
 				.add(Attributes.MAX_HEALTH, 20.0D)
-				.add(Attributes.ATTACK_DAMAGE, 2.0D);
+				.add(Attributes.ATTACK_DAMAGE, 2.0D)
+        .add(attributeGenerator.WHEEL_ROT, 0.0D);
 	}
 
 	// Let the player ride the entity
@@ -126,7 +128,6 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 			this.fallDistance=0;
 			if (this.isVehicle()) {
 
-
 				LivingEntity passenger = getControllingPassenger();
 				if (passenger!=null){
 				this.yRotO = getYRot();
@@ -174,6 +175,7 @@ if (this.onGround()){
 									this.getX(), this.getY() ,
 									this.getZ(), 10, 0, 0, 0, 0);
 						}
+
 						this.setSpeed(0f);
 					}
 				}
@@ -259,6 +261,9 @@ protected SoundEvent getDeathSound() {
 				if (this.getControllingPassenger().zza > 0) wheel=- 0.1f;
 				if (this.getControllingPassenger().zza < 0) wheel= 0.05f;
 			}
+
+            this.getAttribute(attributeGenerator.WHEEL_ROT).setBaseValue(this.getAttribute(attributeGenerator.WHEEL_ROT).getBaseValue()+wheel);
+
 			EntityModelData newEntityData = new EntityModelData(false,false,entityData.netHeadYaw()+wheel,front_fork);
 			state.setData(DataTickets.ENTITY_MODEL_DATA,newEntityData);
 
@@ -271,6 +276,7 @@ protected SoundEvent getDeathSound() {
 				}
 			}
 			else {
+
 				return state.setAndContinue(IDLE);
 			}
 			// Handle the sound keyframe that is part of our animation json
