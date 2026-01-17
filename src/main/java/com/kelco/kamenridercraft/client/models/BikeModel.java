@@ -50,8 +50,8 @@ public class BikeModel<T extends baseBikeEntity> extends GeoModel<T> {
             front_fork2.setRotY(entityData.headPitch());
         }
         if (b_wheel != null & f_wheel != null) {
-                f_wheel.setRotX((float) entityData2.getAttribute(attributeGenerator.WHEEL_ROT).getBaseValue());
-               b_wheel.setRotX((float) entityData2.getAttribute(attributeGenerator.WHEEL_ROT).getBaseValue());
+                f_wheel.setRotX((float) entityData2.getWheelRotation());
+               b_wheel.setRotX((float) entityData2.getWheelRotation());
             }
     }
 }
