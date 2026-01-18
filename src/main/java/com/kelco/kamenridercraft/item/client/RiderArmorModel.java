@@ -72,6 +72,8 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
         GeoBone cape = this.getAnimationProcessor().getBone("cape");
         if (cape!= null&RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET))<0) cape.setRotX(RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        if (cape!= null&RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET))!=0) cape.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+
         if (front_fork != null) front_fork.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
         if (front_fork2 != null) front_fork2.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
 
