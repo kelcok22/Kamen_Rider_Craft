@@ -153,7 +153,7 @@ public class Ex_Aid_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
-			.ChangeModel("lazer_lv2.geo.json").ChangeAnimation("lazer_lv2.animation.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+			.ChangeModel("lazer_lv2.geo.json").IsBike().alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
                     .IsGlowing().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
 
 	public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_TURBO = ITEMS.register("bakusou_bike_gashat_turbo",

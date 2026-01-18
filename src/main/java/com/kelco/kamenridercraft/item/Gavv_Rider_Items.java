@@ -553,7 +553,7 @@ public class Gavv_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(CORN,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
+			}.IsGlowing().HasCape().has_basic_model().AddToList(CORN,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
@@ -746,7 +746,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+            }.IsGlowing().ChangeModel("default_cape.geo.json").HasCape().has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOPPUDDING_GOCHIZO = ITEMS.register("doppudding_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","vram","vrastumgear_belt",
@@ -888,7 +888,7 @@ public class Gavv_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json"));
+            }.IsGlowing().ChangeModel("default_cape.geo.json").HasCape());
 
 	public static final DeferredItem<Item> TERROR_GOCHIZO = ITEMS.register("terror_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_caries_gavv_belt",

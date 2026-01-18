@@ -93,7 +93,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).ChangeModel("drive.geo.json").ChangeAnimation("drive.animation.json").IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).ChangeModel("drive.geo.json").IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_WILD = ITEMS.register("wildshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wild","drive","drivedriver_belt",

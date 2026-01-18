@@ -1443,7 +1443,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY(),
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+			}.IsBike().IsGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));

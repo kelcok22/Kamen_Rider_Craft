@@ -15,7 +15,6 @@ public class SportsGamerBikeEntity extends baseBikeEntity {
 		super(entityType, level, MobsCore.SPORTS_GAMER_SPAWN_EGG.get());
 		NAME ="sports_gamer";
 		NAME_MODEL ="sports_gamer";
-		NAME_ANIMATIONS ="bicycle";
 		MAX_SPEED = 0.005f;
 		}
 

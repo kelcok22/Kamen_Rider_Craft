@@ -364,7 +364,7 @@ public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.regis
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeModel("shin_no_0.geo.json").ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+			}.IsGlowing().ChangeModel("shin_no_0.geo.json").HasCape().has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",

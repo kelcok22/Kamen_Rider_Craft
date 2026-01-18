@@ -225,7 +225,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeModel("accel_bike.geo.json").ChangeAnimation("lazer_lv2.animation.json").IsGlowing().has_basic_model().model_has_different_name("accel_memory"));
+            }.ChangeModel("accel_bike.geo.json").IsBike().IsGlowing().has_basic_model().model_has_different_name("accel_memory"));
 
     public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","accel","acceldriver_belt",

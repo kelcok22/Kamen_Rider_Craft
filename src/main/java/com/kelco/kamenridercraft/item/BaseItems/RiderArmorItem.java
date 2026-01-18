@@ -4,6 +4,10 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.client.RiderArmorRenderer;
+import net.minecraft.world.item.component.CustomData;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -57,30 +62,118 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         return this;
     }
 
+    public static Float GetWheelRotation(ItemStack itemstack)
+    {
+        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+                return tag.getFloat("wheel_rotation");
+        }
+        return 0f;
+    }
+
+    public static void setWheelRotation(ItemStack itemstack,Float num)
+    {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> form.putFloat("wheel_rotation", num);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
+    }
+
+    public static Float GetBallRotation(ItemStack itemstack)
+    {
+        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            return tag.getFloat("ball_rotation");
+        }
+        return 0f;
+    }
+
+    public static void setBallRotation(ItemStack itemstack,Float num)
+    {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> form.putFloat("ball_rotation", num);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
+    }
+
+    public static Float GetCapeRotation(ItemStack itemstack)
+    {
+        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            return tag.getFloat("cape_rotation");
+        }
+        return 0f;
+    }
+
+    public static void setCapeRotation(ItemStack itemstack,Float num)
+    {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> form.putFloat("cape_rotation", num);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
+    }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
         RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
-        RawAnimation POSE = RawAnimation.begin().thenLoop("henshin_pose");
 
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
             boolean IsWaking = false;
             boolean IsKicking = false;
-            boolean isTransforming = false;
             if (entity instanceof LivingEntity player) {
-                if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) IsWaking = true;
+               if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().x != 0 ||
+                       player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().z != 0)
+                   IsWaking = RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_Walk();
+
+                if (this instanceof RiderDriverItem) {
+
+                    if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_has_cape()) {
+                        float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
+                        if (player.zza > 0 & cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
+                        else if (player.zza < 0&cape <0) cape = cape +0.1f;
+                        else if  (player.zza == 0&cape <0) cape = cape +0.02f;
+                        setCapeRotation(player.getItemBySlot(EquipmentSlot.FEET), cape);
+                    }
+
+                    if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_is_Bike()) {
+                        float wheel = 0;
+                        if (player.zza > 0) wheel = -0.05f;
+                        if (player.zza < 0) wheel = 0.05f;
+                        setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
+                        float ball = 0;
+                        if (player.xxa > 0) {
+                            ball = 0.5f;
+                            if (player.zza == 0) wheel = -0.05f;
+                        }
+                        if (player.xxa < 0) {
+                            ball = -0.5f;
+                            if (player.zza == 0) wheel = -0.05f;
+                        }
+                        setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
+                        setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
+                    }
+                }
                 if (RiderDriverItem.isTransforming(player)) {
                    //  isTransforming = true;
                 }
                 if (RiderDriverItem.isKicking(player)) IsKicking = true;
-            }
 
-            if (isTransforming) {
-                state.setAnimation(POSE);
-            } else if (entity instanceof LivingEntity player && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
+
+
+            }
+            if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
                 state.setAndContinue(KICK);
             } else state.setAndContinue(IsWaking ? WALK : IDLE);
             return PlayState.CONTINUE;

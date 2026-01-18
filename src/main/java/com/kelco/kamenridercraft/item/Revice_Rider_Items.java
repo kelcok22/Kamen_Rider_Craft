@@ -645,7 +645,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().model_has_different_name("niwatori_vistamp").has_basic_model());
+			}.IsBike().IsGlowing().model_has_different_name("niwatori_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP = ITEMS.register("funkorogashi_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","revi","revice_driver_belt_fu",

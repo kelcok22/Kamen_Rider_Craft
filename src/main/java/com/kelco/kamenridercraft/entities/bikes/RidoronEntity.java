@@ -17,7 +17,6 @@ public class RidoronEntity extends baseBikeEntity {
 		super(entityType, level, MobsCore.RIDORON_SPAWN_EGG.get());
 		NAME ="ridoron";
 		NAME_MODEL ="ridoron";
-		NAME_ANIMATIONS ="ridoron";
 		}
 
 	// Adjust the rider's position while riding

@@ -2,14 +2,22 @@ package com.kelco.kamenridercraft.item.client;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
+import com.mojang.math.Axis;
+import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
+import software.bernie.geckolib.model.data.EntityModelData;
 
 public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
@@ -50,4 +58,33 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
         }
         return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/ichigo.animation.json");
     }
+
+    @Override
+    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
+
+        GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
+        GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
+        GeoBone pedals = this.getAnimationProcessor().getBone("pedals");
+        GeoBone b_wheel= this.getAnimationProcessor().getBone("b_wheel");
+        GeoBone f_wheel = this.getAnimationProcessor().getBone("f_wheel");
+        GeoBone f_wheel2 = this.getAnimationProcessor().getBone("f_wheel2");
+        GeoBone poop_ball_vice = this.getAnimationProcessor().getBone("poop_ball_vice");
+
+        GeoBone cape = this.getAnimationProcessor().getBone("cape");
+        if (cape!= null&RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET))<0) cape.setRotX(RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        if (front_fork != null) front_fork.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        if (front_fork2 != null) front_fork2.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+
+        if (f_wheel != null) f_wheel.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        if (f_wheel2 != null) f_wheel2.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        if (b_wheel != null) b_wheel.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        if (poop_ball_vice != null){
+            poop_ball_vice.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+            poop_ball_vice.setRotZ(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        }
+
+        //if (b_wheel != null) b_wheel.setRotX((float) entityData2.getWheelRotation());
+        //if (pedals != null) pedals.setRotX((float) entityData2.getWheelRotation());
+    }
+
 }

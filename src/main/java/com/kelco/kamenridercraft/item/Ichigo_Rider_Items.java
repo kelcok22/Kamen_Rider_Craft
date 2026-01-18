@@ -481,7 +481,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
+            }.HasCape().has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_REBORN_CORE = ITEMS.register("apollogeist_reborn_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_reborn","apollogeist","apollogeist_belt",
@@ -500,7 +500,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
+            }.HasCape().has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
@@ -884,7 +884,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsGlowing().ChangeAnimation("default_cape.animation.json").has_basic_model().AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().HasCape().has_basic_model().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_hajime_sorayama","shadow_moon","shadow_charger_belt",

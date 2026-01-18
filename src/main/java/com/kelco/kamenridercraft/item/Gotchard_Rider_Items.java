@@ -961,7 +961,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
+            }.IsGlowing().HasCape().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GAIARD_RIDE_CHEMY_CARD = ITEMS.register("gaiard_ride_chemy_card",
@@ -1389,7 +1389,7 @@ public class Gotchard_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.AddNeedItemList(NEED_ITEM_Shining_DB)
-            .IsGlowing().ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").AddToList(NEED_ITEM_Shining_DB).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+            .IsGlowing().ChangeModel("default_cape.geo.json").HasCape().AddToList(NEED_ITEM_Shining_DB).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> SHINING_STEAMLINER_RIDE_CHEMY_CARD = ITEMS.register("shining_steamliner_ride_chemy_card",
             () -> new CopyFormChangeItem(new Item.Properties(),SHINING_HOPPER1_RIDE_CHEMY_CARD_DAYBREAK.get()).AddToList(NEED_ITEM_Shining_DB)
@@ -2340,7 +2340,7 @@ public class Gotchard_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("default_cape.geo.json").ChangeAnimation("default_cape.animation.json").IsGlowing().model_has_different_name("gotchar_igniter").has_basic_model());
+            }.ChangeModel("default_cape.geo.json").HasCape().IsGlowing().model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_EM = ITEMS.register("gotchar_igniter_em",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed_mighty_fire","gotchard","gotchardriver_belt_fire",

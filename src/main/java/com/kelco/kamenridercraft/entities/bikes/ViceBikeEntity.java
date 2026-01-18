@@ -15,7 +15,6 @@ public class ViceBikeEntity extends baseBikeEntity {
 		super(entityType, level, MobsCore.BICYCLE_SPAWN_EGG.get());
 		NAME = "vice_bike";
 		NAME_MODEL = "vice_bike";
-		NAME_ANIMATIONS = "bicycle";
 		MAX_SPEED = 0.015f;
 		}
 

@@ -10,8 +10,10 @@ import java.util.function.Consumer;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
+import com.kelco.kamenridercraft.item.client.RiderArmorRenderer;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -43,6 +45,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.constant.DataTickets;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -271,6 +279,9 @@ public class RiderDriverItem extends RiderArmorItem {
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
                 form.putDouble("is_transforming",60);
+                form.putFloat("wheel_rotation", 0f);
+                form.putFloat("ball_rotation", 0f);
+                form.putFloat("cape", 0f);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
