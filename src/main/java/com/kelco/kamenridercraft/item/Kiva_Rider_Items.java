@@ -382,8 +382,19 @@ public class Kiva_Rider_Items {
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
 			}.IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
-    
-    
+
+
+    public static final DeferredItem<Item> MOOSE_FANGIRE_CORE = ITEMS.register("moose_fangire",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","moose_fangire","blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GLASS_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 200, 0, 0, 0, 1);
+                }
+                });
+
     public static final DeferredItem<Item> KIVAHELMET = ITEMS.register("kivahead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     public static final DeferredItem<Item> KIVACHESTPLATE = ITEMS.register("kivatroso",
@@ -536,6 +547,9 @@ public class Kiva_Rider_Items {
 
     public static final DeferredItem<Item> KIVALA_BELT = ITEMS.register("kivaladriver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kivala", WAKE_UP_FUESTLE_KIVALA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    public static final DeferredItem<Item> MOOSE_FANGIRE_BELT = ITEMS.register("moose_fangire_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"moose_fangire", MOOSE_FANGIRE_CORE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+
 
     
     public static final DeferredItem<Item> GARULU_SABER = ITEMS.register("garulu_saber",

@@ -1395,7 +1395,13 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> SKULL_CARD = ITEMS.register("skull_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(2).addSummonWeapon(0).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> COMPLETE_CARD_DECADE_21 = ITEMS.register("complete_card_decade_21",
+    public static final DeferredItem<Item> EAGLE_UNDEAD_CARD = ITEMS.register("eagle_undead_card",
+            () -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE_FAKE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+    public static final DeferredItem<Item> MOOSE_FANGIRE_CARD = ITEMS.register("moose_fangire_card",
+            () -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.MOOSE_FANGIRE_BELT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> COMPLETE_CARD_DECADE_21 = ITEMS.register("complete_card_decade_21",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	/*
 	public static final DeferredItem<Item> RIDE_PLAYER_CARD = ITEMS.register("rideplayer_card",

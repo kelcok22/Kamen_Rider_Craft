@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:wakeupfuestle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:garulufuestle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:basshaafuestle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:doggafuestle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:fuestle"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:fuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

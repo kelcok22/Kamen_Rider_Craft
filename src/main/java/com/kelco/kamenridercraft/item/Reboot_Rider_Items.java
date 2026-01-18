@@ -283,7 +283,7 @@ public class Reboot_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.THE_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().has_basic_model().model_has_different_name("typhoon_core").AddToList(RiderTabs.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE_NEXT = ITEMS.register("the_next_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_next","ichigo_the","typhoon_belt_the_first",
@@ -296,7 +296,7 @@ public class Reboot_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.THE_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().has_basic_model().model_has_different_name("typhoon_core").AddToList(RiderTabs.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_ICHIGO_HELMET = ITEMS.register("the_ichigo_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.THE_TAB_ITEM));

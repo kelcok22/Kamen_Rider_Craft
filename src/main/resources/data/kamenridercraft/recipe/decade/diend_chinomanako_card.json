@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chinomanako",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:diend_card"
+	}, 
+	{
+	  "item": "kamenridercraft:moose_fangire_card"
+	}, 
+	{
+	  "item": "kamenridercraft:eagle_undead_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:diend_chinomanako_card"
+  }
+}

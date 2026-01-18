@@ -684,6 +684,7 @@ public class ModCommonEvents {
         event.put(MobsCore.GARULU.get(), GaruluEntity.setAttributes().build());
         event.put(MobsCore.BASSHAA.get(), BasshaaEntity.setAttributes().build());
         event.put(MobsCore.DOGGA.get(), DoggaEntity.setAttributes().build());
+        event.put(MobsCore.MOOSE_FANGIRE.get(), MooseFangireEntity.setAttributes().build());
 
 		event.put(MobsCore.MASQUERADE.get(), MasqueradeEntity.setAttributes().build());
 		event.put(MobsCore.CLAYDOLL_DOPANT.get(), ClayDollDopantEntity.setAttributes().build());
@@ -969,6 +970,8 @@ public class ModCommonEvents {
 		event.register(MobsCore.NEOTROOPER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+        event.register(MobsCore.MOOSE_FANGIRE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.MASQUERADE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.FOUNDATION_X_MASQUERADE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);

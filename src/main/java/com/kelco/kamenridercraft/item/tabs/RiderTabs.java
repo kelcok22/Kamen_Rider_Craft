@@ -702,6 +702,7 @@ public class RiderTabs {
             event.accept(MobsCore.RYUTAROS_SPAWN_EGG);
 
             event.accept(MobsCore.ARC_SPAWN_EGG);
+            event.accept(MobsCore.MOOSE_FANGIRE_SPAWN_EGG);
 
             event.accept(MobsCore.MASQUERADE_SPAWN_EGG);
             event.accept(MobsCore.CLAYDOLL_DOPANT_SPAWN_EGG);

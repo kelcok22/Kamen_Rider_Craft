@@ -1893,7 +1893,7 @@
 "item.kamenridercraft.nophoon_core": "Nophoon Core",
   "item.kamenridercraft.taki_vampire_core": "Taki Vampire Core",
 "item.kamenridercraft.gaia_core": "Gaia Typhoon Core",
-  "item.kamenridercraft.cyborg_super_energy_converter_core": "Cyborg Super Energy Converter Core",
+  "item.kamenridercraft.cyborg_super_energy_converter_core": "Wirbelwind Core",
 "kamenridercraft:gaia_core.form": "Form: Base Form",
 
 "item.kamenridercraft.typhoon_ichigo": "Typhoon",
@@ -1944,7 +1944,7 @@
 "kamenridercraft.name.gaia": "Rider: Kamen Rider Gaia",
 "item.kamenridercraft.shocker_belt": "Shocker Belt",
 "kamenridercraft.name.shocker_combatman": "Henchman: Shocker Combatman",
-"item.kamenridercraft.cyborg_super_energy_converter": "Cyborg Super Energy Converter",
+"item.kamenridercraft.cyborg_super_energy_converter": "Wirbelwind",
 "kamenridercraft.name.eins": "Rider: Kamen Rider Eins",
 
 "item.kamenridercraft.v3_logo": "V3 Logo",
@@ -2532,7 +2532,7 @@
   "item.kamenridercraft.freeze_vent": "Freeze Vent Card",
   "item.kamenridercraft.clear_vent": "Clear Vent Card",
   "item.kamenridercraft.time_vent": "Time Vent Card",
-
+  "item.kamenridercraft.accele_vent": "Accele Vent Card",
 
   "kamenridercraft:dragreder_advent.form": "Form: Base Form",
   "kamenridercraft:darkwing_advent.form": "Form: Base Form",
@@ -3120,6 +3120,8 @@
 "kamenridercraft.name.kivala": "Rider: Kamen Rider Kiva-la",
 "item.kamenridercraft.newkivadriver": "New Kivat Belt",
 "kamenridercraft.name.new_kiva": "Rider: Kamen Rider Kiva (Future)",
+  "item.kamenridercraft.moose_fangire_belt": "Moose Fangire Belt",
+  "kamenridercraft.name.new_kiva": "Kaijin: Moose Fangire",
 
 "item.kamenridercraft.garulu_saber": "Garulu Saber",
 "item.kamenridercraft.basshaamagnum": "Basshaa Magnum",
@@ -3290,6 +3292,12 @@
 "kamenridercraft:caucasus_card.name": "§eCaucasus",
 "kamenridercraft:arc_card.name": "§eArc",
 "kamenridercraft:skull_card.name": "§fSkull",
+
+  "item.kamenridercraft.eagle_undead_card": "KaijinRide Eagle Undead",
+  "item.kamenridercraft.moose_fangire_card": "KaijinRide Moose Fangire",
+
+  "kamenridercraft:eagle_undead_card.name": "§eイーグルアンデッド",
+  "kamenridercraft:moose_fangire_card.name": "§8ムースファンガイア",
 
 "item.kamenridercraft.w_card": "KamenRide W",
 "item.kamenridercraft.ooo_card": "KamenRide OOO",
@@ -9008,6 +9016,7 @@
 "item.kamenridercraft.urataros_spawn_egg": "Urataros Spawn Egg",
 "item.kamenridercraft.kintaros_spawn_egg": "Kintaros Spawn Egg",
 "item.kamenridercraft.ryutaros_spawn_egg": "Ryutaros Spawn Egg",
+  "item.kamenridercraft.moose_fangire_spawn_egg": "Moose Fangire Spawn Egg",
   "item.kamenridercraft.arc_spawn_egg": "Kamen Rider Arc Spawn Egg",
 "item.kamenridercraft.masquerade_spawn_egg": "Masquerade Spawn Egg",
 "item.kamenridercraft.foundation_x_masquerade_spawn_egg": "Foundation X Masquerade Spawn Egg",

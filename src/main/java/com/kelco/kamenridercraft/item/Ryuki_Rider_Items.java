@@ -759,7 +759,10 @@ public class Ryuki_Rider_Items {
 
     public static final DeferredItem<Item> SLASH_DAGGER_VENT = ITEMS.register("slash_dagger_vent",
 			() -> new AdventCardItem(new Item.Properties(), "alternative", SLASH_VISOR.get(), SLASH_DAGGER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
-    
+
+    public static final DeferredItem<Item> ACCELE_VENT = ITEMS.register("accele_vent",
+            () -> new AdventCardItem(new Item.Properties(), "alternative", SLASH_VISOR.get(), "accele_vent").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
     public static final DeferredItem<Item> ABYSS_SABER_VENT = ITEMS.register("abyss_saber_vent",
 			() -> new AdventCardItem(new Item.Properties(), "abyss", ABYSS_VISOR.get(), ABYSS_SABER.get(), ABYSS_SABER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
     

@@ -40,6 +40,18 @@
 
 	// Keep this false. This is only for vanilla legacy villages to make it spawn properly. We don't need no hacks here!
   "use_expansion_hack": false,
-  
-  "spawn_overrides": {}
+
+  "spawn_overrides": {
+  "monster": {
+    "bounding_box": "piece",
+    "spawns": [
+      {
+        "type": "kamenridercraft:moose_fangire",
+        "maxCount": 5,
+        "minCount": 1,
+        "weight": 10
+      }
+    ]
+  }
+}
 }

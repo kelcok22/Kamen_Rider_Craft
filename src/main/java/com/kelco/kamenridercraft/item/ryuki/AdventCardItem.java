@@ -172,8 +172,12 @@ public class AdventCardItem extends BaseItem {
                                 case "clear_vent":
                                     player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 2, true, true));
                                     break;
+                                case "accele_vent":
+                                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 3, true, true));
+                                    break;
 
-							}
+
+                            }
 						}
 
 						if (!player.isCreative()) {

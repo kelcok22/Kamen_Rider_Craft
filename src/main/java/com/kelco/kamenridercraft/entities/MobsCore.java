@@ -314,6 +314,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> DOGGA_SPAWN_EGG = ITEMS.register("dogga_spawn_egg",
             () -> new DeferredSpawnEggItem(DOGGA,  0x410058,0x121212, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<MooseFangireEntity>> MOOSE_FANGIRE = MOBLIST.register("moose_fangire",
+            () -> EntityType.Builder.of(MooseFangireEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":arc"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MOOSE_FANGIRE_SPAWN_EGG = ITEMS.register("moose_fangire_spawn_egg",
+            () -> new DeferredSpawnEggItem(MOOSE_FANGIRE,  0xAE1414,0xE3C72B, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<MasqueradeEntity>> MASQUERADE = MOBLIST.register("masquerade",
              () -> EntityType.Builder.of(MasqueradeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));
 
