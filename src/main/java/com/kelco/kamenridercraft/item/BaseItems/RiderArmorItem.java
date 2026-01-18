@@ -141,9 +141,19 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
 
                     if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_has_cape()) {
                         float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
+                        float ball = 0;
                         if (player.zza > 0 & cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
                         else if (player.zza < 0&cape <0) cape = cape +0.1f;
-                        else if  (player.zza == 0&cape <0) cape = cape +0.02f;
+                        else if  (player.zza == 0&cape <0&player.xxa == 0) cape = cape +0.02f;
+                        if (player.xxa > 0) {
+                            ball = 0.2f;
+                            if (player.zza == 0& cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
+                        }
+                        if (player.xxa < 0) {
+                            ball = -0.2f;
+                            if (player.zza == 0& cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
+                        }
+                        setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
                         setCapeRotation(player.getItemBySlot(EquipmentSlot.FEET), cape);
                     }
 
