@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.client.models;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
 
+import com.kelco.kamenridercraft.world.attributeGenerator;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -49,8 +50,8 @@ public class BikeModel<T extends baseBikeEntity> extends GeoModel<T> {
             front_fork2.setRotY(entityData.headPitch());
         }
         if (b_wheel != null & f_wheel != null) {
-               // f_wheel.setRotX(entityData2.yHeadRot);
-               // b_wheel.setRotX(entityData2.yHeadRot);
+                f_wheel.setRotX((float) entityData2.getWheelRotation());
+               b_wheel.setRotX((float) entityData2.getWheelRotation());
             }
     }
 }
