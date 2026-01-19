@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "kamenridercraft:item/metal_visor",
@@ -34,7 +35,7 @@
 	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [90, 180, 0],
+			"rotation": [90, -180, 0],
 			"translation": [0.25, -2, 16.75],
 			"scale": [1.15, 1.15, 1.15]
 		},
@@ -56,9 +57,9 @@
 			"scale": [2, 2, 2]
 		},
 		"gui": {
-			"rotation": [0, 180, 0],
-			"translation": [-2, 8, 0],
-			"scale": [2, 2, 2]
+			"rotation": [0, -180, 0],
+			"translation": [-2, 4.5, 0],
+			"scale": [1.51, 1.51, 1.51]
 		},
 		"head": {
 			"translation": [0, 2.25, -0.75],
