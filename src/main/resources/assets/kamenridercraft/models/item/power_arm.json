@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "kamenridercraft:item/power_arm",
-      "particle": "kamenridercraft:item/power_arm"
+		"particle": "kamenridercraft:item/power_arm"
 	},
 	"elements": [
 		{
@@ -124,6 +124,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-90, 90, 0],

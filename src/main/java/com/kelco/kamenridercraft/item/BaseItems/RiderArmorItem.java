@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
+import com.kelco.kamenridercraft.item.Zeztz_Rider_Items;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -11,6 +12,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
@@ -19,6 +22,7 @@ import net.minecraft.world.item.ItemStack;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.client.RiderArmorRenderer;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -133,6 +137,28 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
             boolean IsWaking = false;
             boolean IsKicking = false;
             if (entity instanceof LivingEntity player) {
+
+                float X =0;
+                float Y =0;
+                float Z =0;
+                Boolean isPlayer =false;
+                if (player instanceof Player) {
+                    X =player.xxa;
+                    Y=player.yya;
+                    Z=player.zza;
+                    isPlayer=true;
+                }else if (player instanceof Mob mob) {
+                    if (player.getDeltaMovement().x != 0 ||player.getDeltaMovement().z != 0){
+                        X= mob.getViewXRot(state.getPartialTick());
+                        Vec3 look = player.getLookAngle();
+                        if (look.x>0&player.getDeltaMovement().x>0)Z= 1;
+                        else if (look.z>0&player.getDeltaMovement().z>0)Z= 1;
+                        else  if (look.x<0&player.getDeltaMovement().x<0)Z= 1;
+                        else if (look.z<0&player.getDeltaMovement().z<0)Z= 1;
+                        else Z= -1;
+                    }
+                }
+
                if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().x != 0 ||
                        player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().z != 0)
                    IsWaking = RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_Walk();
@@ -142,34 +168,37 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                     if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_has_cape()) {
                         float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
                         float ball = 0;
-                        if (player.zza > 0 & cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
-                        else if (player.zza < 0&cape <0) cape = cape +0.1f;
-                        else if  (player.zza == 0&cape <0&player.xxa == 0) cape = cape +0.02f;
-                        if (player.xxa > 0) {
+
+                        if (Z > 0 & cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
+                        else if (Z < 0&cape <0) cape = cape +0.1f;
+                        else if  (Z == 0&cape <0&X== 0||cape <-0.7) cape = cape +0.02f;
+                        if (X > 0) {
                             ball = 0.2f;
-                            if (player.zza == 0& cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
+                            if (isPlayer&Z == 0& cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
                         }
-                        if (player.xxa < 0) {
+                        if (X < 0) {
                             ball = -0.2f;
-                            if (player.zza == 0& cape >-1) cape = cape-0.01f-(player.getSpeed()/10);
+                            if (isPlayer&Z == 0& cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
                         }
+                        if (player.fallDistance>0& cape>-2.5)cape =cape -0.05f;
+
                         setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
                         setCapeRotation(player.getItemBySlot(EquipmentSlot.FEET), cape);
                     }
 
                     if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_is_Bike()) {
                         float wheel = 0;
-                        if (player.zza > 0) wheel = -0.05f;
-                        if (player.zza < 0) wheel = 0.05f;
+                        if (Z > 0) wheel = -0.05f;
+                        if (Z < 0) wheel = 0.05f;
                         setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
                         float ball = 0;
-                        if (player.xxa > 0) {
+                        if (X > 0) {
                             ball = 0.5f;
-                            if (player.zza == 0) wheel = -0.05f;
+                            if (Z == 0) wheel = -0.05f;
                         }
                         if (player.xxa < 0) {
                             ball = -0.5f;
-                            if (player.zza == 0) wheel = -0.05f;
+                            if (Z == 0) wheel = -0.05f;
                         }
                         setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
                         setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);

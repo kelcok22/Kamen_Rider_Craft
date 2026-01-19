@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-      "1": "kamenridercraft:item/rope_arm",
-      "particle": "kamenridercraft:item/rope_arm"
+		"1": "kamenridercraft:item/rope_arm",
+		"particle": "kamenridercraft:item/rope_arm"
 	},
 	"elements": [
 		{
@@ -112,6 +112,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-90, -90, 0],
