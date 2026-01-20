@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_claw_vent",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuki)Kamen Rider Ryuki$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scissors_pinch_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#scissors)Kamen Rider Scissors$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giga_horn_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#zolda)Kamen Rider Zolda$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:metal_horn_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#gai)Kamen Rider Gai$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dest_claw_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#tiger)Kamen Rider Tiger$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_claw_vent_ryuga",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuga)Kamen Rider Ryuga$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:abyss_claw_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#abyss)Kamen Rider Abyss$(/l)"
 		}
 	]
 }

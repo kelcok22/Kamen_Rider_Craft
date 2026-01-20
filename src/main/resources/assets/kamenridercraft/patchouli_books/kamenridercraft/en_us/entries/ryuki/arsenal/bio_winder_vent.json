@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bio_winder_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#verde)Kamen Rider Verde$(/l)"
 		}
 	]
 }

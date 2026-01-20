@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giga_cannon_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#zolda)Kamen Rider Zolda$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giga_tector_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#zolda)Kamen Rider Zolda$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_shield_vent_form_ryuga",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuga)Kamen Rider Ryuga$(/l)"
 		}
 	]
 }

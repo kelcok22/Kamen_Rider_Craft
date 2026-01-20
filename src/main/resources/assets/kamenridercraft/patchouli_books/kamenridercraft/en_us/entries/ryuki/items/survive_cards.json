@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:survive_rekka",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:survive_shippu",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:survive_mugen",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
 		},
 		{
 			"type": "patchouli:text",

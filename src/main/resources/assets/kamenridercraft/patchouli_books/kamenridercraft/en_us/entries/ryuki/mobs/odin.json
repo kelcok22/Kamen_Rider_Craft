@@ -1,0 +1,20 @@
+{
+	"name": "Mirror Riders",
+	"icon": "kamenridercraft:ryuki_logo",
+	"category": "kamenridercraft:ryuki/mobs",
+	"sortnum": 1,
+	"pages": [
+      {
+        "type": "patchouli:entity",
+        "anchor": "odin",
+        "entity": "kamenridercraft:odin",
+        "text": "Summoned from a $(l:misc/blocks/boss_blocks#odin_boss_block)Odin Boss Block$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Odin",
+        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#goldphoenix_advent)Goldphoenix Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#gold_saber_vent)Goldsaber Sword Vent Cards$(/l),$(l:ryuki/arsenal/guard_vent_cards#gold_shield_vent)Goldshield Guard Vent Cards$(/l), or $(l:ryuki/arsenal/time_vent)Time Vent Cards$(/l)"
+      }
+
+    ]
+}

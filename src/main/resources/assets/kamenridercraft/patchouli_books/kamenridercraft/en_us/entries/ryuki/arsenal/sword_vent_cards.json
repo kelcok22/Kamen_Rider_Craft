@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:ride_saber_vent",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuki)Kamen Rider Ryuki$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_saber_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuki)Kamen Rider Ryuki$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_blade_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)Kamen Rider Ryuki Survive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wing_lancer_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#knight)Kamen Rider Knight$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_blade_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#knight_survive)Kamen Rider Knight Survive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:veno_saber_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ouja)Kamen Rider Ouja$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:veno_visor_zwei_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ouja_survive)Kamen Rider Ouja Survive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gold_saber_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wing_slasher_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#femme)Kamen Rider Femme$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_saber_vent_ryuga",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuga)Kamen Rider Ryuga$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:black_drag_visor_zwei_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuga_survive)Kamen Rider Ryuga Survive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:slash_dagger_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#alternative)Alternative$(/l) and $(li)$(l:ryuki/mobs/mirror_rider#alternative_zero)Alternative Zero$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:abyss_saber_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#abyss)Kamen Rider Abyss$(/l)"
 		}
 	]
 }

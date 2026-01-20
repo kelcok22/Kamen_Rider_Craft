@@ -14,6 +14,11 @@
         "text": "Mine this block to summon $(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
       },
       {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:ryuki/odin_boss_block",
+        "text": "Mine this block to summon $(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+      },
+      {
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "anchor": "faiz_boss_block",

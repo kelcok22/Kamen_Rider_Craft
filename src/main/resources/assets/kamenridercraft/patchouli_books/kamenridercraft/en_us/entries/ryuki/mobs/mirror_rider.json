@@ -5,61 +5,6 @@
 	"sortnum": 0,
 	"pages": [
 
-		{
-			"type": "patchouli:entity",
-			"anchor": "ryuki",
-			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Ryuki",
-			"text": "Spawn locations: All other biomes/dimensions during day$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Uses his $(l:ryuki/riders/ryuki#survive)Survive$(/l) form if you have a $(l:ryuki/items/survive_cards#survive_rekka)Survive card$(/l) in your inventory$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#dragreder_advent)Dragreder Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#ride_saber_vent)Ridesaber Sword Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#drag_saber_vent)Dragsaber Sword Vent Cards$(/l), $(l:ryuki/arsenal/strike_vent_cards#drag_claw_vent)Dragclaw Strike Vent Cards$(/l), or $(l:ryuki/arsenal/guard_vent_cards#drag_shield_vent)Dragshield Guard $(/l) $(l:ryuki/items/other_form_advent_cards#drag_shield_vent_form)Vent Cards$(/l)"
-		},
-		{
-			"type": "patchouli:entity",
-			"anchor": "ryuki_survive",
-			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Ryuki Survive",
-			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1-2 $(l:ryuki/arsenal/shoot_vent_cards#drag_visor_zwei_vent)Dragvisorzwei Shoot Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#drag_blade_vent)Dragblade Sword Vent Cards$(/l), $(l:ryuki/arsenal/guard_vent_cards#fire_wall_vent)Firewall Guard Vent Cards$(/l), $(l:ryuki/arsenal/shoot_vent_cards#meteor_bullet_vent)Meteorbullet Shoot Vent Cards$(/l), or $(l:ryuki/arsenal/trick_vent_cards#ryuki_trick_vent)Ryuki Trick Vent Cards$(/l)"
-		},
-		{
-			"type": "patchouli:entity",
-			"anchor": "knight",
-			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkwing_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Knight",
-			"text": "Spawn locations: All other biomes/dimensions during night$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Uses his $(l:ryuki/riders/knight#survive)Survive$(/l) form if you have a $(l:ryuki/items/survive_cards#survive_rekka)Survive card$(/l) in your inventory$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#darkwing_advent)Darkwing Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#wing_lancer_vent)Winglancer Sword Vent Cards$(/l), $(l:ryuki/arsenal/trick_vent_cards#knight_trick_vent)Trick Vent Cards$(/l), $(l:ryuki/items/other_form_advent_cards#wing_wall_vent)Wingwall Guard Vent Cards$(/l), or $(l:ryuki/arsenal/nasty_vent)Nasty Vent Cards$(/l)"
-		},
-		{
-			"type": "patchouli:entity",
-			"anchor": "knight_survive",
-			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Knight Survive",
-			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1-2 $(l:ryuki/arsenal/guard_vent_cards#dark_visor_zwei_vent)Darkvisorzwei Guard Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#dark_blade_vent)Darkblade Sword Vent Cards$(/l), $(l:ryuki/arsenal/shoot_vent_cards#dark_arrow_vent)Darkarrow Shoot Vent Cards$(/l), or $(l:ryuki/arsenal/blust_vent)Blust Vent Cards$(/l)"
-		},
-      {
-        "type": "patchouli:entity",
-        "anchor": "zolda",
-        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
-      },
-      {
-        "type": "patchouli:text",
-        "title": "Kamen Rider Zolda",
-        "text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Spawn locations: Birch Forest, Dark Forest, Flower Forest, Forest, Grove, Old Growth Birth Forest, Pale Garden$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#magnugiga_advent)Magnugiga Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/shoot_vent_cards#giga_launcher_vent)Gigalauncher Shoot Vent Cards$(/l), $(l:ryuki/arsenal/other_form_advent_cards#giga_cannon_vent)Gigacannon Shoot Vent Cards$(/l), $(l:ryuki/arsenal/guard_vent_cards#giga_armor_vent)Gigaarmor Guard Vent Cards$(/l), $(l:ryuki/arsenal/other_form_advent_cards#giga_tector_vent)Gigatector Guard Vent Cards$(/l), or $(l:ryuki/arsenal/strike_vent_cards#giga_horn_vent)Gigahorn Strike Vent Cards$(/l)"
-      },
       {
         "type": "patchouli:entity",
         "anchor": "scissors",
@@ -71,6 +16,18 @@
         "title": "Kamen Rider Scissors",
         "text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Spawn locations: Cherry Grove, Frozen Peaks, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#volcancer_advent)Volcancer Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/strike_vent_cards#scissors_pinch_vent)Scissorspinch Strike Vent Cards$(/l) or $(l:ryuki/arsenal/guard_vent_cards#shell_defense_vent)Shelldefense Guard Vent Cards$(/l)"
       },
+      {
+        "type": "patchouli:entity",
+        "anchor": "zolda",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Zolda",
+        "text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Spawn locations: Birch Forest, Dark Forest, Flower Forest, Forest, Grove, Old Growth Birth Forest, Pale Garden$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#magnugiga_advent)Magnugiga Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/shoot_vent_cards#giga_launcher_vent)Gigalauncher Shoot Vent Cards$(/l), $(l:ryuki/arsenal/other_form_advent_cards#giga_cannon_vent)Gigacannon Shoot Vent Cards$(/l), $(l:ryuki/arsenal/guard_vent_cards#giga_armor_vent)Gigaarmor Guard Vent Cards$(/l), $(l:ryuki/arsenal/other_form_advent_cards#giga_tector_vent)Gigatector Guard Vent Cards$(/l), or $(l:ryuki/arsenal/strike_vent_cards#giga_horn_vent)Gigahorn Strike Vent Cards$(/l)"
+      },
+
       {
         "type": "patchouli:entity",
         "anchor": "raia",
@@ -149,6 +106,51 @@
       },
       {
         "type": "patchouli:entity",
+        "anchor": "ryuki",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Ryuki",
+        "text": "Spawn locations: All other biomes/dimensions during day$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Uses his $(l:ryuki/riders/ryuki#survive)Survive$(/l) form if you have a $(l:ryuki/items/survive_cards#survive_rekka)Survive card$(/l) in your inventory$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#dragreder_advent)Dragreder Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#drag_saber_vent)Dragsaber Sword Vent Cards$(/l), $(l:ryuki/arsenal/strike_vent_cards#drag_claw_vent)Dragclaw Strike Vent Cards$(/l), or $(l:ryuki/arsenal/guard_vent_cards#drag_shield_vent)Dragshield Guard $(/l) $(l:ryuki/items/other_form_advent_cards#drag_shield_vent_form)Vent Cards$(/l)"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki_survive",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryuki Survive",
+			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1-2 $(l:ryuki/arsenal/shoot_vent_cards#drag_visor_zwei_vent)Dragvisorzwei Shoot Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#drag_blade_vent)Dragblade Sword Vent Cards$(/l), $(l:ryuki/arsenal/guard_vent_cards#fire_wall_vent)Firewall Guard Vent Cards$(/l), $(l:ryuki/arsenal/shoot_vent_cards#meteor_bullet_vent)Meteorbullet Shoot Vent Cards$(/l), or $(l:ryuki/arsenal/trick_vent_cards#ryuki_trick_vent)Ryuki Trick Vent Cards$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "knight",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkwing_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knight",
+			"text": "Spawn locations: All other biomes/dimensions during night$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Uses his $(l:ryuki/riders/knight#survive)Survive$(/l) form if you have a $(l:ryuki/items/survive_cards#survive_rekka)Survive card$(/l) in your inventory$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#darkwing_advent)Darkwing Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#wing_lancer_vent)Winglancer Sword Vent Cards$(/l), $(l:ryuki/arsenal/trick_vent_cards#knight_trick_vent)Trick Vent Cards$(/l), $(l:ryuki/items/other_form_advent_cards#wing_wall_vent)Wingwall Guard Vent Cards$(/l), or $(l:ryuki/arsenal/nasty_vent)Nasty Vent Cards$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "knight_survive",
+			"entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knight Survive",
+			"text": "Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1-2 $(l:ryuki/arsenal/guard_vent_cards#dark_visor_zwei_vent)Darkvisorzwei Guard Vent Cards$(/l), $(l:ryuki/arsenal/sword_vent_cards#dark_blade_vent)Darkblade Sword Vent Cards$(/l), $(l:ryuki/arsenal/shoot_vent_cards#dark_arrow_vent)Darkarrow Shoot Vent Cards$(/l), or $(l:ryuki/arsenal/blust_vent)Blust Vent Cards$(/l)"
+		},
+
+      {
+        "type": "patchouli:entity",
         "anchor": "ryuga",
         "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragblacker_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
         "text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br)Health: 40"
@@ -161,7 +163,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ryuga_survive",
-        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka_ryuga\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
         "text": "Appears in:$(li)World of If (2005, S.I.C. Hero Saga)$(br)Health: 40"
       },
       {
@@ -190,6 +192,50 @@
         "type": "patchouli:text",
         "title": "Kamen Rider Verde",
         "text": "Spawn locations: Basalt Deltas, Crimson Forest, Nether Wastes, Soul Sand Valley, Warped Forest$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#biogreeza_advent)Biogreeza Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/bio_winder_vent)Biowinder Hold Vent Cards$(/l) or $(l:ryuki/arsenal/clear_vent)Clear Vent Cards$(/l)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "abyss",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_abyss\",components:{custom_data:{slot_tex1:\"kamenridercraft:abysslasher_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "text": "Appears in:$(li)Kamen Rider Ryuki Special: 13 Riders (2002, TV special)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Abyss",
+        "text": "Spawn locations: City Dimension$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#abysslasher_advent)Abysslasher Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#abyss_saber_vent)Abysssaber Sword Vent Cards$(/l) or $(l:ryuki/arsenal/strike_vent_cards)Abyssclaw Strike Vent Cards$(/l)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "mirror_zi_o",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o_mirror\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_mirror_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+        "text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Zi-O (Mirror World version)",
+        "text": "Spawn locations: City Dimension$(br2)$(li)Drops$(li)1 $(l:zi_o/items/ridewatches#zi_o_mirror_ridewatch)Mirror Zi-O Ridewatch$(/l)$(li)2-3 $(l:zi_o/items/blank_watch)Blank Watches$(/l)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "alternative",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:alternative_v_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:psycorogue_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Alternative",
+        "text": "Spawn locations: End Barrens, End Highlands, End Midlands, Small End Islands, The End$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#psycorogue_advent)Psycorogue Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#slash_dagger_vent)Slashdagger Sword Vent Cards$(/l) or $(l:ryuki/arsenal/accele_vent)Accele Vent Cards$(/l)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "alternative_zero",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:alternative_zero_v_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:psycorogue_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Alternative Zero",
+        "text": "Spawn locations: End Barrens, End Highlands, End Midlands, Small End Islands, The End$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#psycorogue_advent)Psycorogue Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#slash_dagger_vent)Slashdagger Sword Vent Cards$(/l) or $(l:ryuki/arsenal/accele_vent)Accele Vent Cards$(/l)"
       }
     ]
 }

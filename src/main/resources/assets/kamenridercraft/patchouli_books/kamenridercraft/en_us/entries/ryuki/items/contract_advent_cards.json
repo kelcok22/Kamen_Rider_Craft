@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:dragreder_advent",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#ryuki)Kamen Rider Ryuki$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:darkwing_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#knight)Kamen Rider Knight$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:volcancer_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#scissors)Kamen Rider Scissors$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magnugiga_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#zolda)Kamen Rider Zolda$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evildiver_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#raia)Kamen Rider Raia$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:metalgelas_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#gai)Kamen Rider Gai$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:venosnaker_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#ouja)Kamen Rider Ouja$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:goldphoenix_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:destwilder_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#tiger)Kamen Rider Tiger$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gigazelle_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#imperer)Kamen Rider Imperer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blancwing_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#femme)Kamen Rider Femme$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dragblacker_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#ryuga)Kamen Rider Ryuga$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:biogreeza_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#verde)Kamen Rider Verde$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:abysslasher_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#abyss)Kamen Rider Abyss$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:psycorogue_advent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#alternative)Alternative$(/l)$(li)$(l:ryuki/mobs/mirror_rider#alternative_zero)Alternative Zero$(/l)"
 		}
 	]
 }

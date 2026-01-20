@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nasty_vent",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#knight)Kamen Rider Knight$(/l)"
 		}
 	]
 }

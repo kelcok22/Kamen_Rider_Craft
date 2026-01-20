@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:advent_card",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from:$(li)$(l:ryuki/mobs/mirror_rider#scissors)Mirror Riders$(/l)$(li)$(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
 		}
 	]
 }

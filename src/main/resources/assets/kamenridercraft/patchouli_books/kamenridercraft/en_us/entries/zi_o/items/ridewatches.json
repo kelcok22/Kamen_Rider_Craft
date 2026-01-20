@@ -127,9 +127,11 @@
 			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Mirror Zi-O's $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o_mirror)Ziku Driver (Mirror Zi-O)$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
-			"title": " ",
-			"recipe": "kamenridercraft:zi_o/zi_o_mirror_ridewatch"
+          "type": "patchouli:spotlight",
+          "link_recipe": true,
+          "item": "kamenridercraft:zi_o_mirror_ridewatch",
+          "title": " ",
+          "text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#mirror_zi_o)Kamen Rider Zi-O (Mirror World version)"
 		},
 		{
 			"type": "patchouli:text",

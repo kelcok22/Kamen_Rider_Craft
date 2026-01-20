@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_visor_zwei_vent",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)Kamen Rider Ryuki Survive$(/l)"
 		},
       {
         "type": "patchouli:text",
@@ -26,7 +26,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:meteor_bullet_vent",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)Kamen Rider Ryuki Survive$(/l)"
       },
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_arrow_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#knight_survive)Kamen Rider Knight Survive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giga_launcher_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#zolda)Kamen Rider Zolda$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evil_visor_zwei_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#raia_survive)Kamen Rider Raia Survive$(/l)"
 		}
 	]
 }

@@ -11,7 +11,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ryuki/advent_deck_blank"
+			"recipe": "kamenridercraft:ryuki/advent_deck_blank",
+          "text": "Found inside Dungeons and Ruined Nether Portals"
 		},
 		{
 			"type": "patchouli:text",

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gazelle_stab_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+			"text": "Drops from$(li)$(l:ryuki/mobs/mirror_rider#imperer)Kamen Rider Imperer$(/l)"
 		}
 	]
 }
