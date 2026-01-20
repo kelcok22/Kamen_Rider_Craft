@@ -38,7 +38,7 @@
 					]
 				},
 				{
-					"name": "Shape2",
+					"name": "tire3",
 					"parent": "armorBody",
 					"pivot": [0, 21, 3],
 					"cubes": [

@@ -38,7 +38,7 @@
 					]
 				},
 				{
-					"name": "Shape1",
+					"name": "tire",
 					"parent": "armorBody",
 					"pivot": [1, 22, -2],
 					"rotation": [45, 0, 90],

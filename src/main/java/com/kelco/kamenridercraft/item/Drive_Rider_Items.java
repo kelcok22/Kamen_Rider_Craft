@@ -67,7 +67,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.ChangeModel("chaser.geo.json").ChangeAnimation("chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
+			}.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("proto_speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED = ITEMS.register("proto_speedshift",

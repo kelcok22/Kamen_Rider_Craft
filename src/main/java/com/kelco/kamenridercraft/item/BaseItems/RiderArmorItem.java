@@ -126,16 +126,19 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         }
     }
 
+
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
         RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
+        RawAnimation HENSHIN = RawAnimation.begin().thenLoop("henshin_pose");
 
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
             boolean IsWaking = false;
             boolean IsKicking = false;
+            boolean isTransforming = false;
             if (entity instanceof LivingEntity player) {
 
                 float X =0;
@@ -205,14 +208,16 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                     }
                 }
                 if (RiderDriverItem.isTransforming(player)) {
-                   //  isTransforming = true;
+                     isTransforming = true;
                 }
                 if (RiderDriverItem.isKicking(player)) IsKicking = true;
 
 
 
             }
-            if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
+            /**if (isTransforming) {
+                state.setAndContinue(HENSHIN);
+            }else**/if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
                 state.setAndContinue(KICK);
             } else state.setAndContinue(IsWaking ? WALK : IDLE);
             return PlayState.CONTINUE;

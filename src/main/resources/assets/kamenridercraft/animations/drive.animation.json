@@ -60,18 +60,6 @@
 				}
 			}
 		},
-		"fly": {
-			"loop": true
-		},
-		"sneak": {
-			"loop": true
-		},
-		"swing_l": {
-			"loop": true
-		},
-		"swing_r": {
-			"loop": true
-		},
 		"henshin_pose": {
 			"animation_length": 2,
 			"bones": {

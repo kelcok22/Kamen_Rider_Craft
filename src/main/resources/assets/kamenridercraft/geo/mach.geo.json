@@ -51,7 +51,7 @@
 					]
 				},
 				{
-					"name": "Shape2",
+					"name": "tire",
 					"parent": "armorRightArm",
 					"pivot": [-5, 22, 0],
 					"rotation": [45, -70, 0],

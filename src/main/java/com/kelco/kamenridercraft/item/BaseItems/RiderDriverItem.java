@@ -107,6 +107,15 @@ public class RiderDriverItem extends RiderArmorItem {
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
+    public static Float GetTransforming(ItemStack itemstack)
+    {
+        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            return tag.getFloat("is_transforming");
+        }
+        return 0f;
+    }
+
     public static boolean isTransforming(LivingEntity player) {
         if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem))return false;
         else if (player.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
@@ -278,7 +287,7 @@ public class RiderDriverItem extends RiderArmorItem {
             OnTransformation(itemstack,player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
-                form.putDouble("is_transforming",60);
+                form.putDouble("is_transforming",30);
                 form.putFloat("wheel_rotation", 0f);
                 form.putFloat("ball_rotation", 0f);
                 form.putFloat("cape", 0f);
