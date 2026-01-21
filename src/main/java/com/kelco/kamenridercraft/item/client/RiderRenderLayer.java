@@ -26,7 +26,7 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
 
 
     @Nullable
-    protected RenderType getRenderType(T animatable, @Nullable MultiBufferSource bufferSource) {
+    protected RenderType getRenderType(T animatable) {
         return RenderType.entityTranslucent(getTextureResource(animatable));
     }
 
@@ -37,7 +37,7 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
      */
     @Override
     public void render(PoseStack poseStack, T animatable, BakedGeoModel bakedModel, @Nullable RenderType renderType, MultiBufferSource bufferSource, @Nullable VertexConsumer buffer, float partialTick, int packedLight, int packedOverlay) {
-        renderType = getRenderType(animatable,null);
+        renderType = getRenderType(animatable);
 
         if (renderType != null) {
             getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderType,

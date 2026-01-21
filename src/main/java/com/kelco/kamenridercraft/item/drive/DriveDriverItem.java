@@ -106,24 +106,4 @@ public class DriveDriverItem extends RiderDriverItem {
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
         return Objects.requireNonNull(currentSlot) == EquipmentSlot.HEAD;
     }
-    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-        if (currentSlot== EquipmentSlot.FEET) {
-            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        }
-        if (isTransformed(livingEntity)){
-            switch (currentSlot) {
-                case HEAD, CHEST ->{
-                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                }
-                case LEGS -> {
-                    return false;
-                }
-                default -> {}
-            }
-            return false;
-        }
-        return false;
-    }
-
 }

@@ -2,12 +2,9 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.entities.footSoldiers.RoidmudeEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.entities.variants.RoidmudeVariant;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;

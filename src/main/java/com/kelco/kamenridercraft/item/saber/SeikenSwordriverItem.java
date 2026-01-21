@@ -180,26 +180,6 @@ public class SeikenSwordriverItem extends RiderDriverItem {
            else return "blank";
     }
 
-    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-        if (currentSlot== EquipmentSlot.FEET) {
-            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        }
-        if (isTransformed(livingEntity)){
-            switch (currentSlot) {
-                case LEGS ->{
-                    return false;
-                }
-                case  CHEST,HEAD-> {
-                    return true;
-                }
-                default -> {}
-            }
-            return false;
-        }
-        return false;
-    }
-
     @Override
     public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 

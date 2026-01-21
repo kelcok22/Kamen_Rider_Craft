@@ -30,7 +30,7 @@ public class Ryuki_Rider_Items {
 
 	public static final DeferredItem<Item> ADVENT_CARD = ITEMS.register("advent_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_blank","ryuki","v_buckle_belt",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGREDER_ADVENT = ITEMS.register("dragreder_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ryuki","v_buckle_belt_ryuki",
@@ -43,7 +43,7 @@ public class Ryuki_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+            }.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> DARKWING_ADVENT = ITEMS.register("darkwing_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","knight","v_buckle_belt_knight",
@@ -193,7 +193,7 @@ public class Ryuki_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+                    .AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> BIOGREEZA_ADVENT = ITEMS.register("biogreeza_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","verde","v_buckle_belt_verde",
@@ -249,7 +249,7 @@ public class Ryuki_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
             }
-                    .IsGlowing().ChangeModel("ryuki_survive.geo.json"));
+                    .ChangeModel("ryuki_survive.geo.json"));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA = ITEMS.register("survive_rekka",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive","ryuki","v_buckle_belt_ryuki_s",
@@ -268,7 +268,7 @@ public class Ryuki_Rider_Items {
                             player.getZ(), 200, 0, 0, 0, 0.1);
                 }
             }.addAlternative(SURVIVE_REKKA_RYUGA.get())
-                    .IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+                    .AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU_RAIA = ITEMS.register("survive_shippu_raia",
@@ -360,7 +360,7 @@ public class Ryuki_Rider_Items {
                             player.getZ(), 200, 0, 0, 0, 0.1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+                    .AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	  
 	public static final DeferredItem<Item> RYUKIHELMET = ITEMS.register("ryukihead",
@@ -610,7 +610,7 @@ public class Ryuki_Rider_Items {
     				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
     				new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
     				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-                    .IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+                    .AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
     public static final DeferredItem<Item> DRAG_VISOR_ZWEI_VENT = ITEMS.register("drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), DRAG_VISOR_ZWEI.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -745,7 +745,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-                    .IsGlowing().ChangeModel("ryuki_drag_shield.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+                    .ChangeModel("ryuki_drag_shield.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
     public static final DeferredItem<Item> BLACK_DRAG_VISOR_ZWEI_VENT = ITEMS.register("black_drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuga", BLACK_DRAG_VISOR.get(), BLACK_DRAG_VISOR_ZWEI.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));

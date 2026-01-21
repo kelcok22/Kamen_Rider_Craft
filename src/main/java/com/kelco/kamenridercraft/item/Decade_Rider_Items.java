@@ -52,7 +52,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing());
+            });
 
     public static final DeferredItem<Item> DIEND_GREEN_CARD = ITEMS.register("diend_green_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_green","diend","diend_belt",
@@ -66,7 +66,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing());
+            });
 
     public static final DeferredItem<Item> DECADE_CARD = ITEMS.register("decade_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -78,8 +78,8 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(new String[] {"neo_decade"}).ChangeRiderName("decade").addAlternative(DIEND_GREEN_CARD.get())
-                    .IsBeltGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(new String[] {"neo_decade"}).ChangeRiderName("decade").addAlternative(DIEND_GREEN_CARD.get())
+                    .AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> K_TOUCH = ITEMS.register("k_touch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_complete","decade","decadriver_belt_k_touch",
@@ -99,7 +99,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> K_TOUCH_21 = ITEMS.register("k_touch_21",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_complete_21","neo_decade","decadriver_belt_k_touch_21",
@@ -120,7 +120,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().ignoreOverrideBeltText().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.ignoreOverrideBeltText().AddToList(RiderTabs.DECADE_TAB_ITEM));
 					
     public static final DeferredItem<Item> DECADE_VIOLENT_EMOTION_CARD = ITEMS.register("decade_violent_emotion_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_violent_emotion","decade","decadriver_belt",
@@ -136,7 +136,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DIEND_CARD = ITEMS.register("diend_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","diend","diend_belt",
@@ -150,7 +150,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addAlternative(DECADE_CYAN_CARD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.addAlternative(DECADE_CYAN_CARD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DIEND_CHINOMANAKO_CARD = ITEMS.register("diend_chinomanako_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_chinomanako","diend","diend_belt",
@@ -178,7 +178,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddToList(RiderTabs.DECADE_TAB_ITEM));
     
     public static final DeferredItem<Item> K_TOUCH_DIEND = ITEMS.register("k_touch_diend",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_complete","diend","diend_belt_k_touch",
@@ -196,7 +196,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_DECADE_CARD = ITEMS.register("dark_decade_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_decade","dark_decadriver_belt",
@@ -208,7 +208,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static String[] BaseDecadeUsers = new String[] {"decade","dark_decade","neo_decade"};
 
@@ -222,7 +222,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .allowRiderKick().IsBeltGlowing().IsGlowing().ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .allowRiderKick().ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_GROUND_CARD = ITEMS.register("agito_ground_card",
 	        () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -235,7 +235,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_CARD = ITEMS.register("ryuki_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -249,7 +249,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.DRAG_CLAW.get())
-                    .IsBeltGlowing().IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_CARD = ITEMS.register("faiz_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -263,7 +263,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.FAIZ_EDGE.get())
-                    .IsBeltGlowing().IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_ACE_CARD = ITEMS.register("blade_ace_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -276,7 +276,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get()).addSummonWeapon(Blade_Rider_Items.BLAYROUZER.get())
-                    .IsBeltGlowing().IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_CARD = ITEMS.register("hibiki_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -290,7 +290,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
-                    .IsBeltGlowing().IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_RIDER_CARD = ITEMS.register("kabuto_rider_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -306,8 +306,8 @@ public class Decade_Rider_Items {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.KABUTO_ZECTER.get())
-                    .addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get()).IsGlowing().AddCompatibilityList(BaseDecadeUsers)
-                    .ChangeRiderName("kabuto").IsBeltGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get()).AddCompatibilityList(BaseDecadeUsers)
+                    .ChangeRiderName("kabuto").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_SWORD_CARD = ITEMS.register("den_o_sword_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -319,8 +319,8 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get()).IsGlowing()
-                    .IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get())
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KIVA_CARD = ITEMS.register("kiva_card",
@@ -334,7 +334,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 200, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get()).IsGlowing().IsBeltGlowing()
+            }.setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get())
                     .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> W_CARD = ITEMS.register("w_card",
@@ -351,7 +351,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.setSummonBelt(0).ChangeRiderName("decade").IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(0).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_CARD = ITEMS.register("ooo_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"_ooo","neo_decade","neo_decadriver_belt",
@@ -370,7 +370,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }
-            }.setSummonBelt(3).addSummonWeapon(2).IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(3).addSummonWeapon(2).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_CARD = ITEMS.register("fourze_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
@@ -395,14 +395,14 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 7, 0, 0, 0, 0.05);
                 }
-            }.setSummonBelt(5).ChangeRiderName("fourze").IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(5).ChangeRiderName("fourze").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_CARD = ITEMS.register("wizard_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-			.setSummonBelt(7).addSummonWeapon(4).IsGlowing().IsBeltGlowing().ChangeRiderName("wizard").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(7).addSummonWeapon(4).ChangeRiderName("wizard").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIM_CARD = ITEMS.register("gaim_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"_gaim","neo_decade","neo_decadriver_belt",
@@ -417,7 +417,7 @@ public class Decade_Rider_Items {
 
                 }
             }.setSummonBelt(9).addSummonWeapon(7).addSummonWeapon(6).ChangeRiderName("decade")
-                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_CARD = ITEMS.register("drive_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
@@ -433,7 +433,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt(11).addSummonWeapon(9).ChangeModel("drive.geo.json").IsGlowing().IsBeltGlowing().ChangeRiderName("drive").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(11).addSummonWeapon(9).ChangeModel("drive.geo.json").ChangeRiderName("drive").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_CARD = ITEMS.register("ghost_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"_ghost","neo_decade","neo_decadriver_belt",
@@ -449,7 +449,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 70, 0, 0, 0, 1);
                 }
-            }.setSummonBelt(13).addSummonWeapon(11).IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(13).addSummonWeapon(11).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EX_AID_CARD = ITEMS.register("ex_aid_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
@@ -462,14 +462,14 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt(15).setSummonForm(0).addSummonWeapon(13).IsGlowing().IsBeltGlowing().ChangeRiderName("ex_aid").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(15).setSummonForm(0).addSummonWeapon(13).ChangeRiderName("ex_aid").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUILD_CARD = ITEMS.register("build_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"_build","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-			.setSummonBelt(17).addSummonWeapon(15).IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(17).addSummonWeapon(15).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_CARD = ITEMS.register("zi_o_card",
 			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
@@ -482,7 +482,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt(19).addSummonWeapon(17).IsGlowing().IsBeltGlowing().ChangeRiderName("zi_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt(19).addSummonWeapon(17).ChangeRiderName("zi_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_CARD = ITEMS.register("zero_one_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -619,7 +619,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().has_basic_model().model_has_different_name("kuuga_growing_card"));
+            }.has_basic_model().model_has_different_name("kuuga_growing_card"));
 
 	public static final DeferredItem<Item> KUUGA_GROWING_CARD = ITEMS.register("kuuga_growing_card",
 	        () -> new RiderFormChangeItem(new Item.Properties(),0,"_growing","decade","decadriver_belt",
@@ -630,7 +630,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addAlternative(KUUGA_GROWING_AR.get()).IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.addAlternative(KUUGA_GROWING_AR.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 		
     public static final DeferredItem<Item> KUUGA_DRAGON_CARD = ITEMS.register("kuuga_dragon_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dragon","decade","decadriver_belt",
@@ -643,7 +643,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_PEGASUS_CARD = ITEMS.register("kuuga_pegasus_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_pegasus","decade","decadriver_belt",
@@ -655,7 +655,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_TITAN_CARD = ITEMS.register("kuuga_titan_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_titan","decade","decadriver_belt",
@@ -668,7 +668,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_MIGHTY_CARD = ITEMS.register("kuuga_rising_mighty_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_mighty","decade","decadriver_belt",
@@ -681,7 +681,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.allowRiderKick().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_DRAGON_CARD = ITEMS.register("kuuga_rising_dragon_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_dragon","decade","decadriver_belt",
@@ -695,7 +695,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_PEGASUS_CARD = ITEMS.register("kuuga_rising_pegasus_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_pegasus","decade","decadriver_belt",
@@ -709,7 +709,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_TITAN_CARD = ITEMS.register("kuuga_rising_titan_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_titan","decade","decadriver_belt",
@@ -722,7 +722,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_CARD = ITEMS.register("kuuga_amazing_mighty_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_amazing_mighty","decade","decadriver_belt",
@@ -740,7 +740,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.allowRiderKick().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
   
     public static final DeferredItem<Item> AGITO_STORM_CARD = ITEMS.register("agito_storm_card",
@@ -753,7 +753,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_FLAME_CARD = ITEMS.register("agito_flame_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_flame","decade","decadriver_belt",
@@ -765,7 +765,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_TRINITY_CARD = ITEMS.register("agito_trinity_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trinity","decade","decadriver_belt",
@@ -785,7 +785,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_BURNING_CARD = ITEMS.register("agito_burning_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_burning","decade","decadriver_belt",
@@ -803,13 +803,13 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RYUKI_BLANK_CARD = ITEMS.register("ryuki_blank_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_blank","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
-                    .IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> FAIZ_AXEL_CARD = ITEMS.register("faiz_axel_card",
@@ -825,7 +825,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLADE_JACK_CARD = ITEMS.register("blade_jack_card",
@@ -841,7 +841,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").hasFlyingWings("rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").hasFlyingWings("rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> HIBIKI_KURENAI_CARD = ITEMS.register("hibiki_kurenai_card",
@@ -856,7 +856,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KABUTO_MASKED_CARD = ITEMS.register("kabuto_masked_card",
@@ -872,7 +872,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kabuto").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kabuto").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DEN_O_PLAT_CARD = ITEMS.register("den_o_plat_card",
@@ -884,7 +884,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_ROD_CARD = ITEMS.register("den_o_rod_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_rod","decade","decadriver_belt",
@@ -896,7 +896,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_AX_CARD = ITEMS.register("den_o_ax_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_axe","decade","decadriver_belt",
@@ -908,7 +908,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_GUN_CARD = ITEMS.register("den_o_gun_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_gun","decade","decadriver_belt",
@@ -921,7 +921,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_WING_CARD = ITEMS.register("den_o_wing_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_wing","decade","decadriver_belt",
@@ -935,7 +935,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_CLIMAX_CARD = ITEMS.register("den_o_climax_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_climax","decade","decadriver_belt",
@@ -959,7 +959,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KIVA_GARULU_CARD = ITEMS.register("kiva_garulu_card",
@@ -976,7 +976,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_BASSHAA_CARD = ITEMS.register("kiva_basshaa_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_basshaa","decade","decadriver_belt",
@@ -992,7 +992,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_DOGGA_CARD = ITEMS.register("kiva_dogga_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dogga","decade","decadriver_belt",
@@ -1008,7 +1008,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_DOGABAKI_CARD = ITEMS.register("kiva_dogabaki_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_dogabaki","decade","decadriver_belt",
@@ -1033,7 +1033,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 35, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ICHIGO_CARD = ITEMS.register("ichigo_card",
@@ -1047,7 +1047,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).allowRiderKick().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("ichigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).allowRiderKick().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ichigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> NIGO_CARD = ITEMS.register("nigo_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1060,7 +1060,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).allowRiderKick().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("nigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).allowRiderKick().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("nigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> V3_CARD = ITEMS.register("v3_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1074,7 +1074,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.DOUBLE_TYPHOON.get()).IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().ChangeRiderName("v3").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.DOUBLE_TYPHOON.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("v3").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_CARD = ITEMS.register("riderman_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1091,7 +1091,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).IsGlowing().SetShowFace().ChangeRiderName("riderman").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).AddCompatibilityList(BaseDecadeUsers).SetShowFace().ChangeRiderName("riderman").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> X_CARD = ITEMS.register("x_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1109,7 +1109,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDOL.get()).addSummonWeapon(Ichigo_Rider_Items.RIDOL_STICK.get())
-                    .IsBeltGlowing().IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("x").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("x").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_CARD = ITEMS.register("amazon_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1124,7 +1124,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CONDORER.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("amazon").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("amazon").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> STRONGER_CARD = ITEMS.register("stronger_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1142,7 +1142,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ELECTRER.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("stronger").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("stronger").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SKYRIDER_CARD = ITEMS.register("skyrider_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1163,7 +1163,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TORNADO.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_1_CARD = ITEMS.register("super_1_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1190,7 +1190,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CYCLODE.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("super_1").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("super_1").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZX_CARD = ITEMS.register("zx_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1205,7 +1205,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ZX_BELT.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("zx").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("zx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_CARD = ITEMS.register("black_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1223,7 +1223,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.VITAL_CHARGER.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("black").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("black").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RX_CARD = ITEMS.register("black_rx_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1241,7 +1241,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_CARD = ITEMS.register("shin_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1256,7 +1256,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("shin").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("shin").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZO_CARD = ITEMS.register("zo_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1271,7 +1271,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ZO_CORE.get()).AddCompatibilityList(BaseDecadeUsers)
-                    .IsBeltGlowing().IsGlowing().ChangeRiderName("zo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .ChangeRiderName("zo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> J_CARD = ITEMS.register("j_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -1286,7 +1286,7 @@ public class Decade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.J_SPIRIT.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.J_STONE_JUMBO_FORMATION.get())
-                    .IsBeltGlowing().IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("j").AddToList(RiderTabs.DECADE_TAB_ITEM));
+                    .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("j").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RX_ROBORIDER_CARD = ITEMS.register("black_rx_roborider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_robo","decade","decadriver_belt",
@@ -1303,7 +1303,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().IsGlowing().ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RX_BIORIDER_CARD = ITEMS.register("black_rx_biorider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_bio","decade","decadriver_belt",
@@ -1320,7 +1320,7 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().IsGlowing().ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_CARD = ITEMS.register("kuuga_ultimate_card",
 			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).setSummonForm((RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_ULTIMATE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -1430,8 +1430,8 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }
-            }.hasStaticWings().IsGlowing().AddCompatibilityList(new String[] {"neo_decade"}).ChangeRiderName("decade")
-                    .IsBeltGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+            }.hasStaticWings().AddCompatibilityList(new String[] {"neo_decade"}).ChangeRiderName("decade")
+                    .has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KUUGA_BALL = ITEMS.register("kuuga_ball",
@@ -1443,7 +1443,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY(),
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBike().IsGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+			}.IsBike().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));

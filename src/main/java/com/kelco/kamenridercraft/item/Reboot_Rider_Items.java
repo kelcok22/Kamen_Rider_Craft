@@ -55,7 +55,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> CONDORER_CORE_ALPHA_BLIND = ITEMS.register("condorer_core_alpha_blind",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_blind","amazon_alpha","amazons_driver_alpha_belt",
@@ -70,7 +70,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	
 	    public static final DeferredItem<Item> CONDORER_CORE_OMEGA = ITEMS.register("condorer_core_omega",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_omega","amazons_driver_omega_belt",
@@ -84,7 +84,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> CONDORER_CORE_SIGMA = ITEMS.register("condorer_core_sigma",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_sigma","amazons_driver_sigma_belt",
@@ -98,7 +98,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO = ITEMS.register("amazon_injector_neo",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_neo","neo_amazons_driver_neo_belt",
@@ -113,7 +113,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEW_OMEGA = ITEMS.register("amazon_injector_new_omega",
 	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_alpha","neo_amazons_driver_omega_belt",
@@ -131,7 +131,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 70, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO_ALPHA = ITEMS.register("amazon_injector_neo_alpha",
 	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_neo_alpha","neo_amazons_driver_neo_belt",
@@ -146,7 +146,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+				}.AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    
 	    public static final DeferredItem<Item> AMAZONSHELMET = ITEMS.register("amazonshead",
@@ -199,7 +199,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 300, 0, 0, 0, 0.1);
 					}
-				}.IsBeltGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 10));
+				}.AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 10));
 
 	    public static final DeferredItem<Item> GLOWING_KING_STONE_SUN = ITEMS.register("glowing_king_stone_sun",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_revived","black_sun","century_king_sun_driver_belt",
@@ -216,7 +216,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 300, 0, 0, 0, 0.1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
+				}.AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
 
 	    public static final DeferredItem<Item> KING_STONE_MOON = ITEMS.register("king_stone_moon",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shadowmoon","century_king_moon_driver_belt",
@@ -229,7 +229,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 300, 0, 0, 0, 0.1);
 					}
-				}.IsBeltGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 5));
+				}.AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 5));
 	
 	    public static final DeferredItem<Item> GLOWING_KING_STONE_MOON = ITEMS.register("glowing_king_stone_moon",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_revived","shadowmoon","century_king_moon_driver_belt",
@@ -245,7 +245,7 @@ public class Reboot_Rider_Items {
 								player.getX(), player.getY()+1,
 								player.getZ(), 300, 0, 0, 0, 0.1);
 					}
-				}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
+				}.AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
 
 	    
 	    public static final DeferredItem<Item> BLACKSUNHELMET = ITEMS.register("blacksunhead",
@@ -283,7 +283,7 @@ public class Reboot_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsGlowing().has_basic_model().model_has_different_name("typhoon_core").AddToList(RiderTabs.THE_TAB_ITEM));
+            }.allowRiderKick().has_basic_model().model_has_different_name("typhoon_core").AddToList(RiderTabs.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE_NEXT = ITEMS.register("the_next_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_next","ichigo_the","typhoon_belt_the_first",
@@ -296,7 +296,7 @@ public class Reboot_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsGlowing().has_basic_model().model_has_different_name("typhoon_core").AddToList(RiderTabs.THE_TAB_ITEM));
+            }.allowRiderKick().has_basic_model().model_has_different_name("typhoon_core").AddToList(RiderTabs.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_ICHIGO_HELMET = ITEMS.register("the_ichigo_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).AddToTabList(RiderTabs.THE_TAB_ITEM));
@@ -325,7 +325,7 @@ public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.regis
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+			}.has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2 = ITEMS.register("shin_typhoon_core2",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_nigo","shin_typhoon_belt2",
@@ -338,7 +338,7 @@ public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.regis
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+			}.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2_1 = ITEMS.register("shin_typhoon_core_2_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_2_1","shin_typhoon_belt2",
@@ -351,7 +351,7 @@ public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.regis
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+			}.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ULTIMATE_HALF_TYPHOON_CORE = ITEMS.register("ultimate_half_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_no_0","ultimate_half_typhoon_belt",
@@ -364,7 +364,7 @@ public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.regis
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeModel("shin_no_0.geo.json").HasCape().has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+			}.ChangeModel("shin_no_0.geo.json").HasCape().has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",

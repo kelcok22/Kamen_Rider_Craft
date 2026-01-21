@@ -41,9 +41,10 @@ public class DreaTrooperEntity extends BaseHenchmenEntity {
 				switch (bossChoice) {
 					case 0:
 						boss = MobsCore.DREATROOPER_COMMANDER.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-						}
-						break;
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn) {
+                            this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS);
+                        }
+                        break;
 					case 1:
 						boss = MobsCore.DORADO.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {

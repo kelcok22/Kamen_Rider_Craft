@@ -3,8 +3,6 @@ package com.kelco.kamenridercraft.entities.bikes;
 
 import javax.annotation.Nullable;
 
-import com.kelco.kamenridercraft.entities.bosses.MirrorRiderEntity;
-import com.kelco.kamenridercraft.world.attributeGenerator;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -22,7 +20,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;

@@ -93,25 +93,6 @@ public class DemonsDriverItem extends RiderDriverItem {
 		}	
 
 	}
-    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-        if (currentSlot== EquipmentSlot.FEET) {
-            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        }
-        if (isTransformed(livingEntity)){
-            switch (currentSlot) {
-                case LEGS, CHEST ->{
-                    return false;
-                }
-                case  HEAD-> {
-                    return true;
-                }
-                default -> {}
-            }
-            return false;
-        }
-        return false;
-    }
 
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		int num = 1;

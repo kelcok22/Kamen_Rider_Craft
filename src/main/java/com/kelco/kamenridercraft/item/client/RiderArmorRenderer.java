@@ -14,30 +14,23 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
-import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.util.RenderUtil;
 
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
-
     private static LivingEntity RIDER;
-
 
     public RiderArmorRenderer(LivingEntity livingEntity, EquipmentSlot equipmentSlot) {
 
         super(new RiderArmorModel(livingEntity, equipmentSlot));
 
         if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (belt.getGlowForSlot(livingEntity.getItemBySlot(EquipmentSlot.FEET), equipmentSlot,livingEntity))addRenderLayer(new AutoGlowingGeoLayer<>(this));
-
+            addRenderLayer(new NonNullGlowingLayer(this));
 
             if (belt.Unlimited_Textures!=0&equipmentSlot==EquipmentSlot.HEAD){
                 for (int n = 0; n < belt.Unlimited_Textures; n++) {
-                    {
-                        addRenderLayer(new RiderRenderLayer<>(this, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/armor/"+
-                                belt.getUnlimitedTextures(livingEntity.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER, belt.Rider, n + 1)+".png")));
-                    }
+                    addRenderLayer(new RiderRenderLayer<>(this, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/armor/"+
+                        belt.getUnlimitedTextures(livingEntity.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER, belt.Rider, n + 1)+".png")));
                 }
             }
 

@@ -1,12 +1,12 @@
 {
-	"name": "Cyborg Super Energy Converter Core",
+	"name": "Wirbelwind Core",
 	"icon": "kamenridercraft:cyborg_super_energy_converter_core",
 	"category": "kamenridercraft:ichigo/items",
 	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Used to craft Eins's $(l:ichigo/devices/cyborg_super_energy_converter)Cyborg Super Energy Converter$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Used to craft Eins's $(l:ichigo/devices/cyborg_super_energy_converter)Wirbelwind$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

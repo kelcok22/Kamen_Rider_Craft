@@ -53,7 +53,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
 
 	public static final DeferredItem<Item> HEAT_MEMORY = ITEMS.register("heat_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_heat","w","wdriver_belt_hj",
@@ -65,7 +65,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> LUNA_MEMORY = ITEMS.register("luna_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_luna","w","wdriver_belt_lj",
@@ -77,7 +77,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> FANG_MEMORY = ITEMS.register("fang_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_fang","w","wdriver_belt_fj",
@@ -91,7 +91,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 150, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
+            }.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> JOKER_JOKER_MEMORY = ITEMS.register("joker_joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker_joker","w","wdriver_belt_jj",
@@ -102,7 +102,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
+            }.allowRiderKick().AddToList(RiderTabs.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> JOKER_MEMORY = ITEMS.register("joker_memory",
@@ -114,7 +114,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.allowRiderKick().IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
+            }.allowRiderKick().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
 
 	public static final DeferredItem<Item> METAL_MEMORY = ITEMS.register("metal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_metal","w","wdriver_belt",
@@ -125,7 +125,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
+            }.ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
 
 	public static final DeferredItem<Item> TRIGGER_MEMORY = ITEMS.register("trigger_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_trigger","w","wdriver_belt",
@@ -136,7 +136,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
+            }.ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
 
 	public static final DeferredItem<Item> CYCLONE_CYCLONE_MEMORY = ITEMS.register("cyclone_cyclone_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyclone_cyclone","w","wdriver_belt",
@@ -148,7 +148,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM));
+            }.ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> XTREME_MEMORY = ITEMS.register("xtreme_memory",
@@ -169,7 +169,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
+            }.alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> XTREME_GOLD_MEMORY = ITEMS.register("xtreme_gold_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_cyclone_xtreme_gold","w","wdriver_belt",
@@ -190,7 +190,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().AddToList(RiderTabs.W_TAB_ITEM));
+            }.alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme_accel","w","wdriver_belt",
@@ -210,7 +210,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM));
+            }.alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ACCEL_MEMORY_BIKE = ITEMS.register("accel_memory_bike",
@@ -225,7 +225,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.ChangeModel("accel_bike.geo.json").IsBike().IsGlowing().has_basic_model().model_has_different_name("accel_memory"));
+            }.ChangeModel("accel_bike.geo.json").IsBike().has_basic_model().model_has_different_name("accel_memory"));
 
     public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","accel","acceldriver_belt",
@@ -240,7 +240,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.addSwitchForm(ACCEL_MEMORY_BIKE.get()).IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
+            }.addSwitchForm(ACCEL_MEMORY_BIKE.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trial","accel","acceldriver_belt_t",
@@ -259,7 +259,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
+            }.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_BOOSTER_MEMORY = ITEMS.register("accel_booster_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_booster","accel","acceldriver_belt_b",
@@ -293,7 +293,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().addNeedForm(CYCLONE_MEMORY.get(),1).ChangeSlot(2)
+            }.addNeedForm(CYCLONE_MEMORY.get(),1).ChangeSlot(2)
 					.model_has_different_name("skull_memory").has_basic_model());
 
 	public static final DeferredItem<Item> SKULL_MEMORY_CRYSTAL = ITEMS.register("skull_memory_crystal",
@@ -308,7 +308,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
+            }.addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
 
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
@@ -337,7 +337,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
 
 
 	public static final DeferredItem<Item> PRISM_MEMORY = ITEMS.register("prism_memory",
@@ -395,7 +395,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
 	public static final DeferredItem<Item> DUMMY_T2_MEMORY = ITEMS.register("dummy_t2_memory",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM)
@@ -414,7 +414,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 
 	public static final DeferredItem<Item> FANG_T2_MEMORY = ITEMS.register("fang_t2_memory",
@@ -444,7 +444,7 @@ public class W_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+            }.allowRiderKick().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 	public static final DeferredItem<Item> KEY_T2_MEMORY = ITEMS.register("key_t2_memory",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM)
@@ -560,7 +560,7 @@ public class W_Rider_Items {
                             player.getZ(), 10, 0, 0, 0, 0.1);
 
                 }
-            }.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1) );
+            }.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1) );
 
 
 	public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",

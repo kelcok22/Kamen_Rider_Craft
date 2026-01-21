@@ -47,7 +47,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN PUrpLE fIrE pARTIcLEs
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN PUrpLE fIrE pARTIcLEs
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KURENAI = ITEMS.register("henshin_onsa_kurenai",
         () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_kurenai","hibiki","hibikidriver_belt",
@@ -61,7 +61,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
                                                             //:cryingummy:
 
         public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
@@ -76,7 +76,7 @@ public class Hibiki_Rider_Items {
             ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                                                          player.getX(), player.getY()+1,
                     player.getZ(), 300, 0, 0, 0, 0.1);}
-        }.IsGlowing());
+        });
 
         public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","danki","dankidriver_belt",
@@ -88,7 +88,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_EIKI = ITEMS.register("henshin_onsa_eiki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","eiki","eikidriver_belt",
@@ -101,7 +101,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_GOUKI = ITEMS.register("henshin_onsa_gouki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","gouki","goukidriver_belt",
@@ -114,7 +114,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KYOKI = ITEMS.register("henshin_onsa_kyoki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","kyoki","kyosukedriver_belt",
@@ -127,7 +127,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WeHn BlUE FiRe PArTiCleS
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WeHn BlUE FiRe PArTiCleS
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KABUKI = ITEMS.register("henshin_onsa_kabuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","kabuki","kabukidriver_belt",
@@ -146,7 +146,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN cuStOm chErRy peTal pARtIcLe
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));//WehN cuStOm chErRy peTal pARtIcLe
 
         public static final DeferredItem<Item> HENSHIN_ONSA_TOUKI = ITEMS.register("henshin_onsa_touki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","touki_m","toukidriver_belt",
@@ -160,7 +160,7 @@ public class Hibiki_Rider_Items {
                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.SNOWFLAKE,
                         player.getX(), player.getY()+1,
                         player.getZ(), 300, 0, 0, 0, 0.1);}
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_HABATAKI = ITEMS.register("henshin_onsa_habataki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","habataki","habatakidriver_belt",
@@ -176,7 +176,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));//wEHN FeAtHER partICles
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));//wEHN FeAtHER partICles
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KIRAMEKI = ITEMS.register("henshin_onsa_kirameki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","kirameki","kiramekidriver_belt",
@@ -191,7 +191,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_NISHIKI = ITEMS.register("henshin_onsa_nishiki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","nishiki","nishikidriver_belt",
@@ -207,7 +207,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_IBUKI = ITEMS.register("henshin_onibue_ibuki",
@@ -220,7 +220,7 @@ public class Hibiki_Rider_Items {
                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                         player.getX(), player.getY()+1,
                         player.getZ(), 25, 0, 0, 0, 0.1);}
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_TOKI = ITEMS.register("henshin_onibue_toki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","touki","tokidriver_belt",
@@ -232,7 +232,7 @@ public class Hibiki_Rider_Items {
                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                         player.getX(), player.getY()+1,
                         player.getZ(), 25, 0, 0, 0, 0.1);}
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_SHOUKI = ITEMS.register("henshin_onibue_shouki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","shouki","shoukidriver_belt",
@@ -245,7 +245,7 @@ public class Hibiki_Rider_Items {
                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                         player.getX(), player.getY()+1,
                         player.getZ(), 25, 0, 0, 0, 0.1);}
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_AMAKI = ITEMS.register("henshin_onibue_amaki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","amaki","amakidriver_belt",
@@ -258,7 +258,7 @@ public class Hibiki_Rider_Items {
                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                         player.getX(), player.getY()+1,
                         player.getZ(), 25, 0, 0, 0, 0.1);}
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONIBUE_FUBUKI = ITEMS.register("henshin_onibue_fubuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","fubuki","fubukidriver_belt",
@@ -277,7 +277,7 @@ public class Hibiki_Rider_Items {
                         player.getX(), player.getY()+1,
                         player.getZ(), 100, 0, 0, 0, 1);}
 
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
         
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_TODOROKI = ITEMS.register("henshin_kigen_todoroki",
@@ -294,7 +294,7 @@ public class Hibiki_Rider_Items {
                 thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                 player.level().addFreshEntity(thunder);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_ZANKI = ITEMS.register("henshin_kigen_zanki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","zanki","zankidriver_belt",
@@ -311,7 +311,7 @@ public class Hibiki_Rider_Items {
                 thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                 player.level().addFreshEntity(thunder);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_SHUKI = ITEMS.register("henshin_kigen_shuki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","shuki","shukidriver_belt",
@@ -330,7 +330,7 @@ public class Hibiki_Rider_Items {
                 thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                 player.level().addFreshEntity(thunder);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_BANKI = ITEMS.register("henshin_kigen_banki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","banki","bankidriver_belt",
@@ -350,7 +350,7 @@ public class Hibiki_Rider_Items {
                 thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                 player.level().addFreshEntity(thunder);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_KIGEN_SABAKI = ITEMS.register("henshin_kigen_sabaki",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","sabaki","sabakidriver_belt",
@@ -367,7 +367,7 @@ public class Hibiki_Rider_Items {
                 thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                 player.level().addFreshEntity(thunder);
             }
-        }.IsGlowing().AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+        }.AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
     public static final DeferredItem<Item> ARMOR_OF_THE_OGRE = ITEMS.register("armor_of_the_ogre",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","armor_of_the_ogre","armor_of_the_ogre_belt",

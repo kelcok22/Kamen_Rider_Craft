@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Eins",
-			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Transforms with the $(l:ichigo/devices/cyborg_super_energy_converter)Cyborg Super Energy Converter$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Eins with Girls Remix (2025, TTFC special)$(br2)Transforms with the $(l:ichigo/devices/cyborg_super_energy_converter)Wirbelwind$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength"
 		}
 	]
 }

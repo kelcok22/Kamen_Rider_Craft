@@ -57,7 +57,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddCompatibilityList(new String[] {"the_end_riders"}).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddCompatibilityList(new String[] {"the_end_riders"}).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID = ITEMS.register("geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","geats","desire_driver_belt_geats",
@@ -68,7 +68,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("geats").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("geats").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_ONENESS_CORE_ID = ITEMS.register("geats_oneness_rider_core_id",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.GEATS_TAB_ITEM));
@@ -83,7 +83,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("tycoon").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("tycoon").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NA_GO_CORE_ID = ITEMS.register("na_go_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","na_go","desire_driver_belt_na_go",
@@ -94,7 +94,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("na_go").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("na_go").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID = ITEMS.register("buffa_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","buffa","desire_driver_belt_buffa",
@@ -105,7 +105,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("buffa").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID_CRACKED = ITEMS.register("buffa_rider_core_id_cracked",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jyamato","buffa","desire_driver_belt_buffa",
@@ -118,7 +118,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("buffa").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUNKJACK_CORE_ID = ITEMS.register("punkjack_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","punkjack","desire_driver_belt_punkjack",
@@ -130,7 +130,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("punkjack").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("punkjack").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NUGE_SPARROW_CORE_ID = ITEMS.register("nudge_sparrow_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","nudge_sparrow","desire_driver_belt_nadge_sparrow",
@@ -141,7 +141,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("nadge_sparrow").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("nadge_sparrow").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIROWE_CORE_ID = ITEMS.register("shirowe_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","shirowe","desire_driver_belt_shirowe",
@@ -152,7 +152,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("shirowe").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("shirowe").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINPEN_CORE_ID = ITEMS.register("ginpen_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","ginpen","desire_driver_belt_ginpen",
@@ -163,7 +163,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("ginpen").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("ginpen").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> MARY_CORE_ID = ITEMS.register("mary_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","mary","desire_driver_belt_mary",
@@ -174,7 +174,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("mary").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("mary").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DA_PAAN_CORE_ID = ITEMS.register("da_paan_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","da_paan","desire_driver_belt_da_paan",
@@ -185,7 +185,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("da_paan").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("da_paan").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEIROU_CORE_ID = ITEMS.register("keirou_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","keirou","desire_driver_belt_keilow",
@@ -196,7 +196,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("keilow").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("keilow").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LETTER_CORE_ID = ITEMS.register("letter_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","letter","desire_driver_belt_letter",
@@ -208,7 +208,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("letter").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("letter").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOPO_CORE_ID = ITEMS.register("lopo_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","lopo","desire_driver_belt_lopo",
@@ -219,7 +219,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("lopo").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("lopo").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GROOVY_CORE_ID = ITEMS.register("groovy_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","groovy","desire_driver_belt_groovy",
@@ -230,7 +230,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("groovy").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("groovy").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAKUBI_CORE_ID = ITEMS.register("hakubi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","hakubi","desire_driver_belt_ginpen",
@@ -241,7 +241,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("hakubi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("hakubi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURBON_CORE_ID = ITEMS.register("turbon_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","turbon","desire_driver_belt_turbon",
@@ -252,7 +252,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("turbon").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("turbon").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRALI_CORE_ID = ITEMS.register("brali_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","brali","desire_driver_belt_brali",
@@ -263,7 +263,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("brali").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("brali").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GYA_GO_CORE_ID = ITEMS.register("gya_go_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","gya_go","desire_driver_belt_gya_go",
@@ -274,7 +274,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("gya_go").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("gya_go").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SEEKER_CORE_ID = ITEMS.register("seeker_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","seeker","desire_driver_belt_seeker",
@@ -285,7 +285,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("seeker").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("seeker").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUTCHI_CORE_ID = ITEMS.register("butchi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","butchi","desire_driver_belt_da_paan",
@@ -296,7 +296,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("butchi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("butchi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> REVI_CORE_ID = ITEMS.register("revi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","geats_revi","desire_driver_belt_revi",
@@ -307,7 +307,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("revi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("revi").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> VICE_CORE_ID = ITEMS.register("vice_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","geats_vice","desire_driver_belt_vice",
@@ -318,7 +318,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("vice").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("vice").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHUTA_CORE_ID = ITEMS.register("chuta_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","gm","desire_driver_belt_keibi",
@@ -329,7 +329,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GESSY_CORE_ID = ITEMS.register("gesshi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","gm_chirami","desire_driver_belt_keibi",
@@ -340,7 +340,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> X_GEATS_CORE_ID = ITEMS.register("x_geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),0,"","x_geats","desire_driver_belt_vice",
@@ -351,7 +351,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").hasStaticWings().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_CORE_ID = ITEMS.register("dooms_geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),0,"","dooms_geats","desire_driver_belt_dooms_geats",
@@ -362,7 +362,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").hasStaticWings().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DISCORE_ID = ITEMS.register("discore_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),0,"","jyamato","desire_driver_belt_jyamato",
@@ -373,7 +373,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOGECHI_CORE_ID = ITEMS.register("togechi_rider_core_id",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
@@ -411,7 +411,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_RAISE_BUCKLE = ITEMS.register("boost_raise_buckle",
 			() -> new BoostBuckleItem(new Item.Properties(),0,"_boost","geats","desire_driver_belt_geats",
@@ -1526,7 +1526,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_RAISE_RISER_CARD = ITEMS.register("beroba_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","beroba","raise_riser_belt",
@@ -1541,7 +1541,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_BLACK_RAISE_RISER_CARD = ITEMS.register("beroba_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_premium","beroba","raise_riser_belt_premium",
@@ -1570,7 +1570,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
     public static final DeferredItem<Item> KEKERA_BLACK_RAISE_RISER_CARD = ITEMS.register("kekera_black_raise_riser_card",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_premium","kekera","raise_riser_belt_premium_kekera",
@@ -1599,7 +1599,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GLARE = ITEMS.register("providence_card_glare",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","glare","vision_driver_belt",
@@ -1615,7 +1615,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GLARE2 = ITEMS.register("providence_card_glare2",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","glare2","vision_driver_belt",
@@ -1631,7 +1631,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GAZER = ITEMS.register("providence_card_gazer",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gazer","vision_driver_belt_gazer",
@@ -1646,7 +1646,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_ZIINGAZER = ITEMS.register("providence_card_ziingazer",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","ziingazer","laser_raise_driver_belt",
@@ -1663,7 +1663,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			} 			.has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SIRIUS_CARD_OMEGA = ITEMS.register("sirius_card_omega",
@@ -1679,7 +1679,7 @@ public class 	Geats_Rider_Items {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
-				}}.IsBeltGlowing());
+				}});
 	
 	public static final DeferredItem<Item> SIRIUS_CARD = ITEMS.register("sirius_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","regad","zillion_driver_belt",
@@ -1695,7 +1695,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(SIRIUS_CARD_OMEGA.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.addSwitchForm(SIRIUS_CARD_OMEGA.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIRIUS_CARD_GAZER_ZERO = ITEMS.register("sirius_card_gazer_zero",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","gazer_zero","zillion_driver_gazer_zero_belt",
@@ -1711,7 +1711,7 @@ public class 	Geats_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			}.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 
 
@@ -2034,7 +2034,7 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
-			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsBeltGlowing().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_WISH_CARD = ITEMS.register("bujin_wish_card",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.bujin_wish_card.1"), Component.translatable("lore.kamenridercraft.bujin_wish_card.2"))))).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));

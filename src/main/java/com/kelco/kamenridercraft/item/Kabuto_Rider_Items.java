@@ -52,7 +52,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> KABUTO_ZECTER = ITEMS.register("kabuto_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","kabuto","kabuto_rider_belt",
@@ -67,7 +67,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> THEBEE_ZECTER_MASK = ITEMS.register("thebee_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","thebee","zect_buckle_belt",
@@ -98,7 +98,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(THEBEE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(THEBEE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> DRAKE_ZECTER_MASK = ITEMS.register("drake_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","drake","zect_buckle_belt",
@@ -113,7 +113,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> DRAKE_ZECTER = ITEMS.register("drake_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","drake","zect_buckle_belt",
@@ -129,7 +129,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(DRAKE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(DRAKE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> SASWORD_ZECTER_MASK = ITEMS.register("sasword_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","sasword","zect_buckle_belt",
@@ -144,7 +144,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> SASWORD_ZECTER = ITEMS.register("sasword_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","sasword","zect_buckle_belt",
@@ -160,7 +160,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(SASWORD_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(SASWORD_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> GATACK_ZECTER_MASK = ITEMS.register("gatack_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","gatack","gatack_rider_belt_m",
@@ -175,7 +175,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> GATACK_ZECTER = ITEMS.register("gatack_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","gatack","gatack_rider_belt",
@@ -191,7 +191,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(GATACK_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(GATACK_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> GATACK_HYPER_ZECTER = ITEMS.register("gatack_hyper_zecter",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","gatack","gatack_rider_belt",
@@ -210,7 +210,7 @@ public class Kabuto_Rider_Items {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 30, 0, 0, 0, 1);
                 }
-        }.IsGlowing());
+        });
 
         public static final DeferredItem<Item> KICKHOPPER_ZECTER = ITEMS.register("kickhopper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","kickhopper","kickhopper_zect_buckle_belt",
@@ -228,7 +228,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> PUNCHHOPPER_ZECTER = ITEMS.register("punchhopper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","punchhopper","punchhopper_zect_buckle_belt",
@@ -246,7 +246,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> DARK_KABUTO_ZECTER_MASK = ITEMS.register("dark_kabuto_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","dark_kabuto","dark_kabuto_rider_belt_m",
@@ -261,7 +261,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> DARK_KABUTO_ZECTER = ITEMS.register("dark_kabuto_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_kabuto","dark_kabuto_rider_belt",
@@ -276,7 +276,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> DARK_HYPER_ZECTER = ITEMS.register("dark_hyper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","dark_kabuto","dark_kabuto_rider_belt",
@@ -295,7 +295,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addAlternative(GATACK_HYPER_ZECTER.get()));
+                }.addAlternative(GATACK_HYPER_ZECTER.get()));
 
         public static final DeferredItem<Item> CAUCASUS_ZECTER_MASK = ITEMS.register("caucasus_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","caucasus","zect_buckle_belt",
@@ -310,7 +310,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> CAUCASUS_ZECTER = ITEMS.register("caucasus_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","caucasus","zect_buckle_belt",
@@ -329,7 +329,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(CAUCASUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(CAUCASUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> HERCUS_ZECTER_MASK = ITEMS.register("hercus_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","hercus","zect_buckle_belt",
@@ -344,7 +344,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> HERCUS_ZECTER = ITEMS.register("hercus_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","hercus","zect_buckle_belt",
@@ -360,7 +360,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(HERCUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(HERCUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> KETAROS_ZECTER_MASK = ITEMS.register("ketaros_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","ketaros","zect_buckle_belt",
@@ -375,7 +375,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 80, 0, 0, 0, 1);
                         }
-                }.IsGlowing());
+                });
         
         public static final DeferredItem<Item> KETAROS_ZECTER = ITEMS.register("ketaros_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","ketaros","zect_buckle_belt",
@@ -391,7 +391,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addSwitchForm(KETAROS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addSwitchForm(KETAROS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> LADY_ZECTER = ITEMS.register("lady_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","lady","zect_buckle_belt",
@@ -407,7 +407,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 50, 0, 0, 0, 1);
                         }
-                }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper","kabuto","kabuto_rider_belt",
@@ -426,7 +426,7 @@ public class Kabuto_Rider_Items {
                                         player.getX(), player.getY()+1,
                                         player.getZ(), 20, 0, 0, 0, 1);
                         }
-                }.IsGlowing().addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                }.addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","zectrooper","zectrooper_belt",

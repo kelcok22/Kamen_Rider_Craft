@@ -164,19 +164,6 @@ public class GamerDriverItem extends RiderDriverItem {
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Belt_Model());
 	}
 
-	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-		} else if (isTransformed(livingEntity)){
-            if (Objects.requireNonNull(currentSlot) == EquipmentSlot.CHEST) {
-                return get_Form_Item(itemstack, 2).get_Is_Glowing();
-            }
-            return get_Form_Item(itemstack, 1).get_Is_Glowing();
-        }
-		return false;
-	}
-
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot == EquipmentSlot.CHEST) {

@@ -342,7 +342,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
+			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> MUKADE_MEDAL = ITEMS.register("mukade_medal",
@@ -391,7 +391,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
+			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_NEW_MEDAL = ITEMS.register("kani_new_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kani","ooo","ooodriver_belt",
@@ -426,7 +426,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
+			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KUJIRA_MEDAL = ITEMS.register("kujira_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujira","ooo","ooodriver_belt",
@@ -1050,7 +1050,7 @@ public class OOO_Rider_Items {
 					player.level().addFreshEntity(thunder);
 
 				}
-			}.IsGlowing().ChangeBeltModel("geo/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
+			}.ChangeBeltModel("geo/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
 
 	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","birth_driver_belt",
@@ -1089,7 +1089,7 @@ public class OOO_Rider_Items {
 						}
 					}
 					.addSwitchForm(OOO_Rider_Items.BIRTH_CORE.get())
-					.IsGlowing().AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
+					.AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> BIRTH_CORE_BREAST_CANNON = ITEMS.register("birth_core_breast_cannon",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
@@ -1139,7 +1139,7 @@ public class OOO_Rider_Items {
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","aqua","aqua_driver_belt",
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 							,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2,true,false))
-                            .IsGlowing().AddToList(RiderTabs.OOO_TAB_ITEM));
+                            .AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
 			public static final DeferredItem<Item> PURPLE_MEDALS_SEALED = ITEMS.register("purple_medals_sealed",

@@ -1,20 +1,12 @@
 package com.kelco.kamenridercraft.events;
 
-import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ServerLevelAccessor;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
-import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-
-import java.util.Random;
 
 
 public class ModServerEvents {

@@ -79,7 +79,7 @@ public class Kiva_Rider_Items {
 							player.getZ(), 35, 0, 0, 0, 1);
 				}
 			}
-                    .IsBeltGlowing().IsGlowing().AddNeedItemList(NEED_ITEM_DOGABAKI));
+                    .AddNeedItemList(NEED_ITEM_DOGABAKI));
 
     public static final DeferredItem<Item> WAKE_UP_FUESTLE = ITEMS.register("wakeupfuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kiva","kivat_belt",
@@ -92,7 +92,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.addShiftForm(DOGABAKI.get()).IsBeltGlowing().IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addShiftForm(DOGABAKI.get()).AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> GARULU_FUESTLE = ITEMS.register("garulufuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_garulu","kiva","kivat_belt_g",
@@ -108,7 +108,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addShiftForm(DOGABAKI.get()).IsBeltGlowing().IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addShiftForm(DOGABAKI.get()).AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> BASSHAA_FUESTLE = ITEMS.register("basshaafuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_basshaa","kiva","kivat_belt_b",
@@ -124,7 +124,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addShiftForm(DOGABAKI.get()).IsBeltGlowing().IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addShiftForm(DOGABAKI.get()).AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> DOGGA_FUESTLE = ITEMS.register("doggafuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dogga","kiva","kivat_belt_d",
@@ -140,7 +140,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addShiftForm(DOGABAKI.get()).IsBeltGlowing().IsGlowing().AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addShiftForm(DOGABAKI.get()).AddToList(NEED_ITEM_DOGABAKI).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> DOGABAKI_EMPEROR = ITEMS.register("dogabaki_emperor",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dogabaki_emperor","kiva","kivat_belt_e",
@@ -169,7 +169,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 35, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
+			}.addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
 
 	public static final DeferredItem<Item> DORAN_FUESTLE = ITEMS.register("doranfuestle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM).has_basic_model());
@@ -191,7 +191,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KIVATTE_FUESTLE = ITEMS.register("kiva_says_fuestle",
@@ -208,7 +208,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addNeedItem(TATSULOT.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addNeedItem(TATSULOT.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> KNUCKLE_FUESTLE_BURST = ITEMS.register("knucklefuestle_burst",
@@ -223,7 +223,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsGlowing()
+			}
             );
 	
     public static final DeferredItem<Item> KNUCKLE_FUESTLE = ITEMS.register("knucklefuestle",
@@ -264,7 +264,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_SAGA = ITEMS.register("sagafuestle",
@@ -279,7 +279,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_DARK_KIVA = ITEMS.register("darkwakeupfuestle",
@@ -295,7 +295,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.AddToList(RiderTabs.KIVA_TAB_ITEM));
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_NEW_KIVA = ITEMS.register("newwakeupfuestle",
@@ -309,7 +309,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().ChangeRiderName("kiva").AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.ChangeRiderName("kiva").AddToList(RiderTabs.KIVA_TAB_ITEM));
 
     public static final DeferredItem<Item> FLIGHT_STYLE_FUESTLE = ITEMS.register("flight_style_fuestle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_flight_style","kiva","kivat_belt_e",
@@ -325,7 +325,7 @@ public class Kiva_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 200, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).has_basic_model().model_has_different_name("keyfuestle"));
+            }.addNeedForm(TATSULOT.get()).has_basic_model().model_has_different_name("keyfuestle"));
 
 
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
@@ -341,7 +341,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.addAlternative(FLIGHT_STYLE_FUESTLE.get()).IsBeltGlowing().IsGlowing()
+			}.addAlternative(FLIGHT_STYLE_FUESTLE.get())
 			);
     
     
@@ -353,7 +353,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-                    .IsBeltGlowing().IsGlowing());
+                    );
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_REY = ITEMS.register("keyfuestle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","rey","rey_kivat_belt",
@@ -367,7 +367,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addAlternative(WAKE_UP_FUESTLE_ARC.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.addAlternative(WAKE_UP_FUESTLE_ARC.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_KIVALA = ITEMS.register("kivalafuestle",
@@ -381,7 +381,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.KIVA_TAB_ITEM));
+			}.AddToList(RiderTabs.KIVA_TAB_ITEM));
 
 
     public static final DeferredItem<Item> MOOSE_FANGIRE_CORE = ITEMS.register("moose_fangire",

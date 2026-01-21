@@ -2,13 +2,10 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
-import com.kelco.kamenridercraft.item.Zeztz_Rider_Items;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -144,7 +141,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                 float X =0;
                 float Y =0;
                 float Z =0;
-                Boolean isPlayer =false;
+                boolean isPlayer =false;
                 if (player instanceof Player) {
                     X =player.xxa;
                     Y=player.yya;
@@ -215,9 +212,9 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
 
 
             }
-            /**if (isTransforming) {
+            /*if (isTransforming) {
                 state.setAndContinue(HENSHIN);
-            }else**/if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
+            }else*/if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
                 state.setAndContinue(KICK);
             } else state.setAndContinue(IsWaking ? WALK : IDLE);
             return PlayState.CONTINUE;

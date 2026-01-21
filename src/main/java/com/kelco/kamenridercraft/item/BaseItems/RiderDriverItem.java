@@ -10,10 +10,8 @@ import java.util.function.Consumer;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.client.RiderArmorRenderer;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -45,12 +43,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
-import software.bernie.geckolib.animatable.client.GeoRenderProvider;
-import software.bernie.geckolib.animation.AnimatableManager;
-import software.bernie.geckolib.animation.AnimationController;
-import software.bernie.geckolib.animation.PlayState;
-import software.bernie.geckolib.animation.RawAnimation;
-import software.bernie.geckolib.constant.DataTickets;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -166,9 +158,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
                     if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getDouble("rider_kick_cooldown") == 0) {
-                        Consumer<CompoundTag> data = form2 -> {
-                            form2.putBoolean("rider_kicking", true);
-                        };
+                        Consumer<CompoundTag> data = form2 -> form2.putBoolean("rider_kicking", true);
                         CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                         break;
                     }
@@ -484,12 +474,6 @@ public class RiderDriverItem extends RiderArmorItem {
     {
     }
 
-
-    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-        if (currentSlot== EquipmentSlot.FEET) return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        else if (isTransformed(livingEntity)) return get_Form_Item(itemstack, 1).get_Is_Glowing();
-        return false;
-    }
     public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
     }
 

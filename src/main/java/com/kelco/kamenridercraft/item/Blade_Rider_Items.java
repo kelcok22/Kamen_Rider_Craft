@@ -46,7 +46,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_EAGLE = ITEMS.register("fusion_eagle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "blade", "blay_buckle_belt",
@@ -62,7 +62,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -80,7 +80,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
+                    .addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
@@ -96,7 +96,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
+                    .addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
@@ -111,7 +111,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_PEACOCK = ITEMS.register("fusion_peacock",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "garren", "garren_buckle_belt",
@@ -127,7 +127,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -145,7 +145,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get())
+                    .addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
@@ -161,7 +161,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetShowUnder());
+			}.SetShowUnder());
 
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "chalice", "chalice_rouzer_belt",
@@ -175,7 +175,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-					.addAlternative(TAIYAKI_MASTER.get()).IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addAlternative(TAIYAKI_MASTER.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> EVOLUTION_PARADOXA = ITEMS.register("evolution_paradoxa",
@@ -191,7 +191,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_SPIDER = ITEMS.register("change_spider",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "leangle", "leangle_buckle_belt",
@@ -204,7 +204,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_ELEPHANT = ITEMS.register("fusion_elephant",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "leangle", "leangle_buckle_belt",
@@ -219,7 +219,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .addNeedItem(ROUZE_ABSORBER.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_TIGER = ITEMS.register("absorb_tiger",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -237,7 +237,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get())
+                    .addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_GLAIVE = ITEMS.register("change_kerberos_glaive",
@@ -251,7 +251,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_LANCE = ITEMS.register("change_kerberos_lance",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "lance", "lance_buckle_belt",
@@ -266,7 +266,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_LARC = ITEMS.register("change_kerberos_larc",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "larc", "larc_buckle_belt",
@@ -280,7 +280,7 @@ public class Blade_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+                    .AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADEHELMET = ITEMS.register("bladehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));

@@ -46,8 +46,6 @@ public class RiderFormChangeItem extends BaseItem {
     protected String OVERRIDE_RIDER_NAME;
 
     private String BELT_TEX;
-    private Boolean IS_GLOWING = false;
-    private Boolean IS_BELT_GLOWING = false;
     private Boolean HAS_STATIC_WINGS = false;
     private String UPDATED_BELT_MODEL;
     private String UPDATED_MODEL;
@@ -169,10 +167,6 @@ public class RiderFormChangeItem extends BaseItem {
         return SET_SHOW_UNDER;
     }
 
-    public Boolean get_Is_Glowing() {
-        return IS_GLOWING;
-    }
-
     public Boolean get_a1() {
         return A1;
     }
@@ -184,10 +178,6 @@ public class RiderFormChangeItem extends BaseItem {
     }
     public Boolean get_is_Bike() {
         return USE_BIKE;
-    }
-
-    public Boolean get_Is_Belt_Glowing() {
-        return IS_BELT_GLOWING;
     }
 
     public Boolean get_Has_Static_Wings() {
@@ -342,11 +332,6 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem IsGlowing() {
-        IS_GLOWING=true;
-        return this;
-    }
-
     public RiderFormChangeItem HasCape() {
         ChangeAnimation("default_cape.animation.json");
         HAS_CAPE=true;
@@ -366,11 +351,6 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem IsA1() {
         A1=true;
-        return this;
-    }
-
-    public RiderFormChangeItem IsBeltGlowing() {
-        IS_BELT_GLOWING=true;
         return this;
     }
 

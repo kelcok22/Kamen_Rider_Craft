@@ -81,25 +81,6 @@ public class BuildDriverItem extends RiderDriverItem {
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
-    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-        if (currentSlot== EquipmentSlot.FEET) {
-            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        }
-        if (isTransformed(livingEntity)){
-            switch (currentSlot) {
-                case HEAD, CHEST, LEGS ->{
-                    return true;
-                }
-                default -> {}
-            }
-            return false;
-        }
-        return false;
-    }
-
-
-
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{

@@ -1127,7 +1127,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.GHOST_TAB_ITEM));
+			}.AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EYECON_DRIVER_G = ITEMS.register("eyecon_driver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ghost_grateful",UNFINISHED_EYECON_DRIVER_G , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
@@ -1164,7 +1164,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			});
 
 	public static final DeferredItem<Item> EXTREMER_DRIVER = ITEMS.register("extremer_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"extremer",UNFINISHED_EXTREMER_DRIVER , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))

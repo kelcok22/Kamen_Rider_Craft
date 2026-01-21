@@ -38,7 +38,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> AGITO_STORM = ITEMS.register("agito_storm",
@@ -51,7 +51,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_FLAME = ITEMS.register("agito_flame",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_flame","agito","alter_ring_belt_f",
@@ -63,7 +63,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_TRINITY = ITEMS.register("agito_trinity",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trinity","agito","alter_ring_belt",
@@ -83,7 +83,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_BURNING = ITEMS.register("agito_burning",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_burning","agito","alter_ring_belt_b",
@@ -101,7 +101,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_SHINING = ITEMS.register("agito_shining",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_shining","agito","alter_ring_belt_b",
@@ -119,7 +119,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICONGA_NO_AKAI_AGITO= ITEMS.register("iconga_no_akai_agito",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_iconga_no_akai","agito","alter_ring_belt_f",
@@ -131,7 +131,7 @@ public class Agito_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().has_basic_model().model_has_different_name("another_agito").AddToList(RiderTabs.AGITO_TAB_ITEM));
+            }.has_basic_model().model_has_different_name("another_agito").AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
@@ -145,7 +145,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> EXCEED_GILLS = ITEMS.register("exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_exceed","gills","meta_factor_belt_e",
@@ -163,7 +163,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLD_EXCEED_GILLS = ITEMS.register("gold_exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_gold_exceed","gills","meta_factor_belt_g",
@@ -181,7 +181,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeModel("gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.ChangeModel("gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> ANOTHER_AGITO = ITEMS.register("another_agito",
@@ -195,7 +195,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
     
     public static final DeferredItem<Item> MIRAGE_AGITO = ITEMS.register("agito_miracle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"","mirage_agito","alter_ring_mirage_belt",
@@ -210,7 +210,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> ANOTHER_AGITO_KOJI = ITEMS.register("another_agito_koji",
@@ -224,7 +224,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
  
     public static final DeferredItem<Item> ANOTHER_AGITO_BURNING = ITEMS.register("another_agito_burning_form",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_burning","another_agito_koji","ank_point_belt_b",
@@ -241,7 +241,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> BLANK_G_SYSTEM_CHIP = ITEMS.register("g3core",
@@ -260,7 +260,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_X_CHIP = ITEMS.register("g3x",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","g3_x","g_buckle_belt",
@@ -276,7 +276,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_MILD_CHIP = ITEMS.register("g3mild",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_mild","g_buckle_belt",
@@ -290,7 +290,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G4_CHIP = ITEMS.register("g4",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","g4","g_buckle_belt",
@@ -306,7 +306,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
   
     public static final DeferredItem<Item> G4_X_CHIP = ITEMS.register("g4x",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","g4_x","g_buckle_belt",
@@ -322,7 +322,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(RiderTabs.AGITO_TAB_ITEM));
     
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g1","g_buckle_belt_1",
@@ -336,7 +336,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
    
     public static final DeferredItem<Item> V1_CHIP = ITEMS.register("v1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","v1","blank",

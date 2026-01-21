@@ -238,7 +238,7 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
 					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
-                    .IsGlowing().model_has_different_name("rocket_switch").has_basic_model());
+                    .model_has_different_name("rocket_switch").has_basic_model());
 
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_module","fourze","fourze_driver_belt"
@@ -474,7 +474,7 @@ public class Fourze_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 200, 0, 0, 0, 0.1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+            }.AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
@@ -493,7 +493,7 @@ public class Fourze_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            } .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+            } .AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
@@ -511,7 +511,7 @@ public class Fourze_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.05);
                 }
-            }.ChangeBeltModel("geo/eins_belt.geo.json").IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+            }.ChangeBeltModel("geo/eins_belt.geo.json").AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ikaros","ikaros_driver_belt",
@@ -529,7 +529,7 @@ public class Fourze_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            } .IsGlowing().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+            } .AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","super_gingaoh","blank",

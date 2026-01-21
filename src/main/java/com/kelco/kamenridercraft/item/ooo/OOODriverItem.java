@@ -115,29 +115,6 @@ public class OOODriverItem extends RiderDriverItem {
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_belt.geo.json");
 	}
 
-	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-		}
-		if (isTransformed(livingEntity)){
-			switch (currentSlot) {
-				case HEAD ->{ 
-					return true;
-				}
-				case CHEST -> {
-					return get_Form_Item(itemstack, 2).get_Is_Glowing();
-				}
-				case LEGS -> {
-					return false;
-				}
-				default -> {}
-			}
-			return false;
-		}
-		return false;
-	}
-
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		int num = 1;
 		if (slot == EquipmentSlot.CHEST)num=2; 

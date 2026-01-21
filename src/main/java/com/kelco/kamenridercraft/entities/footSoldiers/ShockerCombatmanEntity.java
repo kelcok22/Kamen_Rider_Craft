@@ -41,16 +41,14 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
                     this.getX() + 0, this.getY(),
                     this.getZ() + 0, 100, 0, 0, 0, 0.1);
 
-            if (this.getLastAttacker()instanceof Player playerIn){}
-                if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				BaseHenchmenEntity boss = MobsCore.SHOCKER_RIDER.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
 
-                    if (this.getLastAttacker()instanceof Player playerIn){
-                      if ( this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shocker_rider"));
-				}
+                    if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
+                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shocker_rider"));
                 }
 			}
 		}
