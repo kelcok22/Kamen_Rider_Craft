@@ -43,6 +43,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
+import software.bernie.geckolib.animation.AnimationState;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -405,6 +406,10 @@ public class RiderDriverItem extends RiderArmorItem {
     public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
 
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation(this.Rider));
+
+    }
+
+    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
 
     }
 

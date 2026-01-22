@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.drive;
 
+import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.world.inventory.ShiftCarHolderGuiMenu;
@@ -22,6 +23,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.neoforge.registries.DeferredItem;
+import software.bernie.geckolib.animation.AnimationState;
 
 import java.util.List;
 import java.util.Objects;
@@ -105,5 +107,10 @@ public class DriveDriverItem extends RiderDriverItem {
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
         return Objects.requireNonNull(currentSlot) == EquipmentSlot.HEAD;
+    }
+
+    @Override
+    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
+
     }
 }

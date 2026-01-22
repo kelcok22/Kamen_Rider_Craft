@@ -169,9 +169,9 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                         float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
                         float ball = 0;
 
-                        if (Z > 0 & cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
+                        if (Z > 0 & cape >-0.7&!player.isSwimming()) cape = cape-0.01f-(player.getSpeed()/10);
                         else if (Z < 0&cape <0) cape = cape +0.1f;
-                        else if  (Z == 0&cape <0&X== 0||cape <-0.7) cape = cape +0.02f;
+                        else if  (Z == 0&cape <0&X== 0||cape <-0.7||cape <0&player.isSwimming()) cape = cape +0.02f;
                         if (X > 0) {
                             ball = 0.2f;
                             if (isPlayer&Z == 0& cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
@@ -180,7 +180,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                             ball = -0.2f;
                             if (isPlayer&Z == 0& cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
                         }
-                        if (player.fallDistance>0& cape>-2.5)cape =cape -0.05f;
+                        if (player.fallDistance>0&!player.isSwimming()& cape>-2.5)cape =cape -0.05f;
 
                         setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
                         setCapeRotation(player.getItemBySlot(EquipmentSlot.FEET), cape);
