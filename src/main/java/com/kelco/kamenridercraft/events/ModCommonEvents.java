@@ -627,7 +627,6 @@ public class ModCommonEvents {
 		event.registerLayerDefinition(HeartRoidmudeModel.LAYER_LOCATION, HeartRoidmudeModel::createBodyLayer);
 		event.registerLayerDefinition(MetamateriamModel.LAYER_LOCATION, MetamateriamModel::createBodyLayer);
         event.registerLayerDefinition(DoggaModel.LAYER_LOCATION, DoggaModel::createBodyLayer);
-		event.registerLayerDefinition(LaserProjectileModel.LAYER_LOCATION, LaserProjectileModel::createBodyLayer);
 	}
 
 	@SubscribeEvent

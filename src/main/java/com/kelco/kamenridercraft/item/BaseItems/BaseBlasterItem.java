@@ -82,13 +82,11 @@ public class BaseBlasterItem extends BowItem {
 			LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
 			laserProjectile.setDamageModifier(laserStrength);
 			laserProjectile.setColorModifier(laserColor);
-			laserProjectile.setNoGravity(true);
 			float velocity = 3f;
 			if (user.hasEffect(Effect_core.SHOT_BOOST)) {
 				velocity = velocity * (user.getEffect(Effect_core.SHOT_BOOST).getAmplifier()+1);
 				laserProjectile.setDamageModifier(laserStrength + user.getEffect(Effect_core.SHOT_BOOST).getAmplifier());
 			}
-			laserProjectile.setPos(user.getX(), user.getY(), user.getZ());
 			laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, velocity, 0F);
 			user.level().addFreshEntity(laserProjectile);
 			}
