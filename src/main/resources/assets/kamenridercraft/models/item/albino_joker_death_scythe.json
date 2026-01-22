@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/albino_joker_death_scythe"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 46],
+			"translation": [0, 0.75, -0.5],
+			"scale": [1.81, 1.81, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [46, -90, 0],
+			"translation": [0, 0.75, -0.5],
+			"scale": [1.81, 1.81, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [67, 90, 0],
+			"translation": [0, 4.75, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [67, -90, 0],
+			"translation": [0, 4.75, 0]
+		},
+		"ground": {
+			"translation": [0, 2.75, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"head": {
+			"rotation": [0, 90, -5],
+			"translation": [0, 3.75, -2.75]
+		}
+	}
+}
