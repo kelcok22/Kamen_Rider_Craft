@@ -69,10 +69,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
-import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
-import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
-import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
+import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
@@ -85,7 +82,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public class ModCommonEvents {
 
 
-	public static class EventHandler {
+	public static class CommonEvents {
 
 		private static ResourceLocation lootTable;
 		private static final ResourceLocation LOOT_TABLE_PATH = lootTable;
@@ -455,9 +452,14 @@ public class ModCommonEvents {
                 }
 			}
 		}
-	}
 
-	public static class CommonEvents {
+		@SubscribeEvent
+		public void riderVisibility(LivingEvent.LivingVisibilityEvent event) {
+			if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+					&& belt.isTransformed(event.getEntity()) && event.getEntity().hasEffect(MobEffects.INVISIBILITY)) {
+				event.modifyVisibility(event.getVisibilityModifier() * 0.1);
+			}
+		}
 
 		@SubscribeEvent
 		public void addCustomWandererTrades(WandererTradesEvent event) {
