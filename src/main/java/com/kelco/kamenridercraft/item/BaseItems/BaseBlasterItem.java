@@ -42,24 +42,6 @@ public class BaseBlasterItem extends BowItem {
 	private Item HenshinBeltItem = null;
 	private static int LFBB = 1;
 	private Item craftingRemainingItem = null;
-	public static String laserColor = "yellow";
-	public static int laserStrength = 0;
-	public static int cooldownTicks = 5;
-
-	public BaseBlasterItem setLaserColor(String color) {
-		laserColor = color.toLowerCase();
-		return this;
-	}
-
-	public BaseBlasterItem addLaserStrength(int damage) {
-		laserStrength = damage;
-		return this;
-	}
-
-	public BaseBlasterItem changeCooldownTicks(int ticks) {
-		cooldownTicks = ticks;
-		return this;
-	}
 
 	public enum BlasterProjectile {
 		ARROW,
@@ -80,14 +62,7 @@ public class BaseBlasterItem extends BowItem {
 		LASER {
 			public void fire(LivingEntity user, Vec3 movement) {
 			LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
-			laserProjectile.setDamageModifier(laserStrength);
-			laserProjectile.setColorModifier(laserColor);
-			float velocity = 3f;
-			if (user.hasEffect(Effect_core.SHOT_BOOST)) {
-				velocity = velocity * (user.getEffect(Effect_core.SHOT_BOOST).getAmplifier()+1);
-				laserProjectile.setDamageModifier(laserStrength + user.getEffect(Effect_core.SHOT_BOOST).getAmplifier());
-			}
-			laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, velocity, 0F);
+			laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
 			user.level().addFreshEntity(laserProjectile);
 			}
 		},
@@ -197,7 +172,7 @@ public class BaseBlasterItem extends BowItem {
 			}
 			level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
 			player.awardStat(Stats.ITEM_USED.get(this));
-			player.getCooldowns().addCooldown(this, cooldownTicks);
+			player.getCooldowns().addCooldown(this, 5);
 		}
 
 	}
