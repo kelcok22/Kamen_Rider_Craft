@@ -100,14 +100,6 @@ public class RiderDriverItem extends RiderArmorItem {
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
-    public static Float GetTransforming(ItemStack itemstack)
-    {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
-            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            return tag.getFloat("is_transforming");
-        }
-        return 0f;
-    }
 
     public static boolean isTransforming(LivingEntity player) {
         if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem))return false;
@@ -151,9 +143,6 @@ public class RiderDriverItem extends RiderArmorItem {
             if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
             if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
             if (!isTransformed(player)) tag.putDouble("render_type", 0);
-            if (tag.getDouble("is_transforming") != 0)
-                tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
-            if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
 
             if (tag.getDouble("use_ability") != 0) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
