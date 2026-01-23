@@ -33,7 +33,7 @@ public class StealthEffect extends InstantenousMobEffect {
                         if (stack.has(DataComponents.CUSTOM_DATA)) {
                             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                             if (tag.getDouble("use_ability") != 0)
-                                player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 10, 0, false, false));
+                                player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 0, false, false));
                         }
 
                     }
