@@ -386,7 +386,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     }
 
-    public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName ,int num)
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num)
     {
         return "blank";
     }
@@ -479,6 +479,12 @@ public class RiderDriverItem extends RiderArmorItem {
     {
     }
 
+
+    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+        if (currentSlot== EquipmentSlot.FEET) return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        else if (isTransformed(livingEntity)) return get_Form_Item(itemstack, 1).get_Is_Glowing();
+        return false;
+    }
     public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
     }
 

@@ -25,7 +25,7 @@ public class SwordOfLogosBuckleItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName ,int num) {
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
         if (rider.getMainHandItem().getItem()==Saber_Rider_Items.DOGOUKEN_GEKIDO.get()||rider.getOffhandItem().getItem()==Saber_Rider_Items.DOGOUKEN_GEKIDO.get()) return "blank";
         return "dogouken_gekido";
     }

@@ -119,8 +119,8 @@ public class Modded_item_core {
 
     public static final DeferredItem<Item>  SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_combatman","shocker_belt",
-                                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                                    .SetShowFace().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+                    .SetShowFace().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
@@ -137,20 +137,20 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> STAGTORNADOR = ITEMS.register("stagtornador",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_stagtornador","agito","alter_ring_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> HERCULESPADER = ITEMS.register("herculespader",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_herculespader","blade","blay_buckle_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DARKWING = ITEMS.register("darkwing",
@@ -167,7 +167,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsBeltGlowing().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> GRANDGOURAM = ITEMS.register("grandgouram",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_grand_gouram","kuuga","arcle_belt_r",
@@ -182,20 +182,20 @@ public class Modded_item_core {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.Misc_TAB_ITEM));
+            }.allowRiderKick().IsBeltGlowing().IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> EXBEETER = ITEMS.register("exbeeter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_exbeeter","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOSDILE = ITEMS.register("chaosdile",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_chaosdile","kaixa","kaixa_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
-            ).hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+            ).IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> LEATHERAIDER = ITEMS.register("leatheraider",
@@ -203,7 +203,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item>FLARESALAMANDER = ITEMS.register("flaresalamander",
@@ -214,7 +214,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-            ).AddToList(RiderTabs.Misc_TAB_ITEM));
+            ).IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> DRAGRANZER = ITEMS.register("dragranzer",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_dragranzer","ryuki","v_buckle_belt_ryuki_s",
@@ -224,7 +224,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SCISSORBEETER = ITEMS.register("scissorbeeter",
@@ -233,7 +233,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> AKANETAKA = ITEMS.register("akanetaka",
@@ -243,7 +243,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item>SHADOWMANTIS = ITEMS.register("shadowmantis",
@@ -252,7 +252,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
 
@@ -268,7 +268,7 @@ public class Modded_item_core {
                     if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
                         enemy.spawnAtLocation(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get()));
                 }
-            }.allowRiderKick().AddToList(RiderTabs.Misc_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     //Bakuen no senshi
 
@@ -283,7 +283,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).hasStaticWings());
+            ).hasStaticWings());
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI_RYUGA = ITEMS.register("bakuen_no_senshi_ryuga",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_bakuen_no_senshi","ryuga","v_buckle_belt_ryuga",
@@ -294,7 +294,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
+            ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI = ITEMS.register("bakuen_no_senshi",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_bakuen_no_senshi","faiz","faiz_driver_belt_b",
@@ -305,7 +305,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
-                    ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
+            ).IsBeltGlowing().IsGlowing().hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI_DARK_KABUTO = ITEMS.register("jinrai_no_senshi_dark_kabuto",
@@ -316,7 +316,7 @@ public class Modded_item_core {
                     new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
-                    ){
+            ){
 
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack,player);
@@ -356,59 +356,20 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
 
-                        public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                            super.OnTransformation(itemstack,player);
-                            LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
-                            thunder.setVisualOnly(true);
-                            thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
-                            player.level().addFreshEntity(thunder);
-
-                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                    player.getX(), player.getY()+1,
-                                    player.getZ(), 100, 0, 0, 0, 1);
-
-                            ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                                    player.getX(), player.getY()+1,
-                                    player.getZ(), 100, 0, 0, 0, 1);
-
-                        }
-
-                        public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
-                            if (!pLivingEntity.level().isClientSide()) {
-                                if (pLivingEntity.level() instanceof ServerLevel) {
-                                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,pLivingEntity.level());
-                                    thunder.setPos( enemy.getX(),  -1 + enemy.getY(),  enemy.getZ());
-                                    pLivingEntity.level().addFreshEntity(thunder);
-                                }
-                            }
-                        }
-                    }.hasStaticWings().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
-
-
-    public static final DeferredItem<Item> JINRAI_NO_SENSHI = ITEMS.register("jinrai_no_senshi",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jinrai_no_senshi","kuuga","arcle_belt_r",
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
-            ){
-
-                    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack,player);
-                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
-                        thunder.setVisualOnly(true);
-                        thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
-                        player.level().addFreshEntity(thunder);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
 
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
 
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
 
                 }
 
@@ -421,7 +382,46 @@ public class Modded_item_core {
                         }
                     }
                 }
-            }.allowRiderKick().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
+            }.hasStaticWings().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
+
+
+    public static final DeferredItem<Item> JINRAI_NO_SENSHI = ITEMS.register("jinrai_no_senshi",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jinrai_no_senshi","kuuga","arcle_belt_r",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
+            ){
+
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack,player);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
+
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+
+                }
+
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (!pLivingEntity.level().isClientSide()) {
+                        if (pLivingEntity.level() instanceof ServerLevel) {
+                            LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,pLivingEntity.level());
+                            thunder.setPos( enemy.getX(),  -1 + enemy.getY(),  enemy.getZ());
+                            pLivingEntity.level().addFreshEntity(thunder);
+                        }
+                    }
+                }
+            }.allowRiderKick().IsBeltGlowing().IsGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",
@@ -468,7 +468,7 @@ public class Modded_item_core {
 
     public static final DeferredItem<Item> DRAGON_ROAD_MUSIC_DISC = ITEMS.register("dragon_road_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.DRAGON_ROAD_KEY).stacksTo(1)));
-    
+
     public static final DeferredItem<Item> KAMEN_RIDER_BLACK_MUSIC_DISC = ITEMS.register("kamen_rider_black_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.KAMEN_RIDER_BLACK_KEY).stacksTo(1)));
 
@@ -572,13 +572,13 @@ public class Modded_item_core {
     public static final DeferredItem<Item> MASKED_RIDER_MUSIC_DISC = ITEMS.register("masked_rider_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.MASKED_RIDER_KEY).stacksTo(1)));
 
-   // public static final DeferredItem<Item> WARRIOR_POTTERY_SHERD = ITEMS.register("warrior_pottery_sherd",
-      //      () -> new Item(new Item.Properties().stacksTo(1)));
+    // public static final DeferredItem<Item> WARRIOR_POTTERY_SHERD = ITEMS.register("warrior_pottery_sherd",
+    //      () -> new Item(new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
-    ITEMS.register(eventBus);
-}
+        ITEMS.register(eventBus);
+    }
 
 
 }

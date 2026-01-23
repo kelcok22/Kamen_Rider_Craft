@@ -46,6 +46,8 @@ public class RiderFormChangeItem extends BaseItem {
     protected String OVERRIDE_RIDER_NAME;
 
     private String BELT_TEX;
+    private Boolean IS_GLOWING = false;
+    private Boolean IS_BELT_GLOWING = false;
     private Boolean HAS_STATIC_WINGS = false;
     private String UPDATED_BELT_MODEL;
     private String UPDATED_MODEL;
@@ -167,6 +169,10 @@ public class RiderFormChangeItem extends BaseItem {
         return SET_SHOW_UNDER;
     }
 
+    public Boolean get_Is_Glowing() {
+        return IS_GLOWING;
+    }
+
     public Boolean get_a1() {
         return A1;
     }
@@ -178,6 +184,10 @@ public class RiderFormChangeItem extends BaseItem {
     }
     public Boolean get_is_Bike() {
         return USE_BIKE;
+    }
+
+    public Boolean get_Is_Belt_Glowing() {
+        return IS_BELT_GLOWING;
     }
 
     public Boolean get_Has_Static_Wings() {
@@ -216,7 +226,7 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem AddIncompatibleForm(Item item) {
         incompatibleForms.add((RiderFormChangeItem) item);
-       hasIncompatibleForms=true;
+        hasIncompatibleForms=true;
         return this;
     }
 
@@ -332,6 +342,11 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem IsGlowing() {
+        IS_GLOWING=true;
+        return this;
+    }
+
     public RiderFormChangeItem HasCape() {
         ChangeAnimation("default_cape.animation.json");
         HAS_CAPE=true;
@@ -354,13 +369,18 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem IsBeltGlowing() {
+        IS_BELT_GLOWING=true;
+        return this;
+    }
+
     public RiderFormChangeItem hasStaticWings() {
         HAS_STATIC_WINGS=true;
         return this;
     }
 
     public RiderFormChangeItem needBaseForm() {
-     NEED_BASE_FORM=true;
+        NEED_BASE_FORM=true;
         return this;
     }
 
@@ -379,7 +399,7 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem addNeedForm(Item  item) {
-    NEED_FORM_SLOT_1=((RiderFormChangeItem)item);
+        NEED_FORM_SLOT_1=((RiderFormChangeItem)item);
         return this;
     }
     public RiderFormChangeItem addNeedForm(Item  item, int slot) {
@@ -426,14 +446,14 @@ public class RiderFormChangeItem extends BaseItem {
         return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" +RIDER_NAME+FORM_NAME)));
     }
 
-	public boolean inventoryOrHolderContains(Player player, Item item) {
-		NonNullList<ItemStack> inv = NonNullList.create();
-		inv.addAll(player.getInventory().items);
-		inv.addAll(player.getInventory().armor);
-		inv.add(player.getInventory().offhand.getFirst());
+    public boolean inventoryOrHolderContains(Player player, Item item) {
+        NonNullList<ItemStack> inv = NonNullList.create();
+        inv.addAll(player.getInventory().items);
+        inv.addAll(player.getInventory().armor);
+        inv.add(player.getInventory().offhand.getFirst());
 
-		if (player.getInventory().countItem(item)!=0) return true;
-		else for (ItemStack itemStack : inv) {
+        if (player.getInventory().countItem(item)!=0) return true;
+        else for (ItemStack itemStack : inv) {
             if (itemStack.has(DataComponents.CONTAINER)) {
                 for (ItemStack stack : itemStack.getComponents().get(DataComponents.CONTAINER).nonEmptyItems())
                     if (stack.getItem() == item) return true;
@@ -441,10 +461,10 @@ public class RiderFormChangeItem extends BaseItem {
                 for (ItemStack stack : itemStack.getComponents().get(DataComponents.BUNDLE_CONTENTS).items())
                     if (stack.getItem() == item) return true;
         }
-		return false;
-	}
+        return false;
+    }
 
-        public Boolean CanChange(Player player,RiderDriverItem belt, ItemStack stack) {
+    public Boolean CanChange(Player player,RiderDriverItem belt, ItemStack stack) {
 
         if (this == Modded_item_core.BLANK_FORM.get()) {
             //return true;
@@ -452,14 +472,14 @@ public class RiderFormChangeItem extends BaseItem {
         if(hasIncompatibleForms) {
             for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
                 int num_forms = belt.Num_Base_Form_Item;
-                    for (int n = 0; n < num_forms; n++) {
+                for (int n = 0; n < num_forms; n++) {
                     if (incompatibleForm == RiderDriverItem.get_Form_Item(stack, n+1)) {
                         return false;
                     }
                 }
             }
         }
-            if(!iscompatible(belt)) {
+        if(!iscompatible(belt)) {
             return false;
         }
         if ( !NEEDITEM.isEmpty()) {

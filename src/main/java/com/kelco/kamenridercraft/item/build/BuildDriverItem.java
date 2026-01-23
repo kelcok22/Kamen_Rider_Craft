@@ -69,24 +69,43 @@ public class BuildDriverItem extends RiderDriverItem {
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
 		}else if (isBestMatch(stack)) {
 			tooltipComponents.add(Component.literal(
-			(get_Form_Item(stack, 2) == Build_Rider_Items.MEDAL_FULL_BOTTLE.get() || get_Form_Item(stack, 2) == Build_Rider_Items.PARKA_FULL_BOTTLE.get() ? Component.translatable(formItem.toString() + ".form_legend").getString() : Component.translatable(formItem.toString() + ".form_match").getString())
+					(get_Form_Item(stack, 2) == Build_Rider_Items.MEDAL_FULL_BOTTLE.get() || get_Form_Item(stack, 2) == Build_Rider_Items.PARKA_FULL_BOTTLE.get() ? Component.translatable(formItem.toString() + ".form_legend").getString() : Component.translatable(formItem.toString() + ".form_match").getString())
 
-			+ (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
+							+ (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
 			tooltipComponents.add(formItem3== Build_Rider_Items.HAZARD_TRIGGER.get() ? Component.translatable("kamenridercraft.name.best_match_hazard") : Component.translatable("kamenridercraft.name.best_match"));
 		} else {
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
-			+ Component.translatable(formItem.toString() + ".form").getString()
-			+ Component.translatable(formItem2.toString() + ".form").getString()));
+					+ Component.translatable(formItem.toString() + ".form").getString()
+					+ Component.translatable(formItem2.toString() + ".form").getString()));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
+
+	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+		if (currentSlot== EquipmentSlot.FEET) {
+			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+		}
+		if (isTransformed(livingEntity)){
+			switch (currentSlot) {
+				case HEAD, CHEST, LEGS ->{
+					return true;
+				}
+				default -> {}
+			}
+			return false;
+		}
+		return false;
+	}
+
+
 
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			
+
 			return "belts/"+get_Form_Item(itemstack,3).getBeltTex();
 		}
 		else if (isBestMatch(itemstack)&isLegend(itemstack)) return riderName+"_"+((FullBottleItem)get_Form_Item(itemstack,Legend_Slot(itemstack))).get_Is_Legend_Name();
@@ -108,7 +127,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form){
 			if (form.get_Is_Legend()){return true;}
 		}if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
-            return form.get_Is_Legend();
+			return form.get_Is_Legend();
 		}
 		return false;
 	}
@@ -129,7 +148,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form) {
 			if (form.get_Is_Legend())return false;
 		}
-				if (isBestMatch(itemstack)){
+		if (isBestMatch(itemstack)){
 			if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
 				if (!form.get_Is_Legend()){
 					return form.Get_Can_Hazard();
@@ -143,7 +162,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		int num = 1;
 		if (slot == EquipmentSlot.LEGS)num=2;
 
-	 if (isBestMatch(itemstack)&isLegend(itemstack)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
+		if (isBestMatch(itemstack)&isLegend(itemstack)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
 		else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
 		}
@@ -151,26 +170,26 @@ public class BuildDriverItem extends RiderDriverItem {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 	}
-	
+
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
 		switch (currentSlot) {
-		case HEAD ->{ 
-			if (Objects.equals(part, "head")) return true;
-			if (Objects.equals(part, "body")) return true;
-			if (Objects.equals(part, "rightArm")) return true;
-			if (Objects.equals(part, "leftLeg")) return true;
-		}
-		case CHEST -> {
-		}
-		case LEGS -> {
-			if (Objects.equals(part, "head")) return true;
-			if (Objects.equals(part, "body")) return true;
-			if (Objects.equals(part, "leftArm")) return true;
-			if (Objects.equals(part, "rightLeg")) return true;
-		}
-		default -> {}
+			case HEAD ->{
+				if (Objects.equals(part, "head")) return true;
+				if (Objects.equals(part, "body")) return true;
+				if (Objects.equals(part, "rightArm")) return true;
+				if (Objects.equals(part, "leftLeg")) return true;
+			}
+			case CHEST -> {
+			}
+			case LEGS -> {
+				if (Objects.equals(part, "head")) return true;
+				if (Objects.equals(part, "body")) return true;
+				if (Objects.equals(part, "leftArm")) return true;
+				if (Objects.equals(part, "rightLeg")) return true;
+			}
+			default -> {}
 		}
 		return false;
 	}

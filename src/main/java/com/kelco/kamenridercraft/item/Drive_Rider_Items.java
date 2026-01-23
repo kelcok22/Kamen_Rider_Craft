@@ -67,7 +67,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+			}.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("proto_speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED = ITEMS.register("proto_speedshift",
@@ -81,7 +81,7 @@ public class Drive_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.ChangeModel("drive.geo.json")
-					.alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASER.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASER.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED = ITEMS.register("speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","drive","drivedriver_belt",
@@ -93,7 +93,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeModel("drive.geo.json").AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).ChangeModel("drive.geo.json").IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,15).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_WILD = ITEMS.register("wildshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wild","drive","drivedriver_belt",
@@ -105,7 +105,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,6).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TECHNIC = ITEMS.register("technicshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_technic","drive","drivedriver_belt",
@@ -117,7 +117,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.DRIVE_CAR,5).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_CAR = ITEMS.register("deadheat_car",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(ShiftChassisAssembler.DRIVE_CAR,3).AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -140,7 +140,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("dead_heat").has_basic_model());
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().model_has_different_name("dead_heat").has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_MACH = ITEMS.register("deadheatshift_mach",
@@ -158,7 +158,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get())
+			}.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("dead_heat").has_basic_model());
 
 
@@ -177,7 +177,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.addAlternative(SHIFT_DEAD_HEAT_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.addAlternative(SHIFT_DEAD_HEAT_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_FORMULA= ITEMS.register("formulashift",
@@ -191,7 +191,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_CORE = ITEMS.register("tridoronshift_core",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).has_basic_model()
@@ -234,7 +234,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("tridoronshift").has_basic_model().AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().model_has_different_name("tridoronshift").has_basic_model().AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON = ITEMS.register("tridoronshift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_tridoron","drive","drivedriver_belt",
@@ -249,7 +249,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).AddNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).AddNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_HEARTRON = ITEMS.register("heartronshift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","heart","drivedriver_belt",
@@ -265,7 +265,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.ChangeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_HIGH_SPEED = ITEMS.register("high_speedshift",
@@ -278,7 +278,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_NEXT = ITEMS.register("nextshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_drive","drivedriver_belt",
@@ -294,7 +294,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 3, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.NEXT_CAR).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.NEXT_CAR).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_SPECIAL = ITEMS.register("specialshift",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_special","drive","drivedriver_belt",
@@ -310,7 +310,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 3, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.NEXT_CAR)
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(ShiftChassisAssembler.NEXT_CAR)
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
@@ -324,7 +324,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED_WILD_TECHNIC = ITEMS.register("speedwildtechnicshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_speed_wild_technic","drive","drivedriver_belt",
@@ -342,7 +342,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static List<Item> NEED_ITEM_ATTACK_123= new ArrayList<>();
@@ -711,7 +711,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,10).has_basic_model());
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,10).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_MAGARL = ITEMS.register("signal_magarl",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_magarl_tire","mach","mach_driver_honoh_belt",
@@ -773,7 +773,7 @@ public class Drive_Rider_Items {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}
-					.ChangeModel("mach.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("signal_chaser").has_basic_model());
+					.ChangeModel("mach.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("signal_chaser").has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_CHASER= ITEMS.register("signal_chaser",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt_chaser",
@@ -790,59 +790,59 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.addAlternative(SIGNAL_CHASER_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM)
+			}.addAlternative(SIGNAL_CHASER_MACH.get()).IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM)
 					.AddToList(ShiftChassisAssembler.NEXT_BIKE,3).has_basic_model());
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_1 = ITEMS.register("signal_legend_1",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_1 = ITEMS.register("signal_legend_1",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_KUUGA = ITEMS.register("signal_legend_kuuga",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_KUUGA = ITEMS.register("signal_legend_kuuga",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_AGITO = ITEMS.register("signal_legend_agito",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_AGITO = ITEMS.register("signal_legend_agito",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_RYUKI = ITEMS.register("signal_legend_ryuki",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_RYUKI = ITEMS.register("signal_legend_ryuki",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_FAIZ = ITEMS.register("signal_legend_faiz",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_FAIZ = ITEMS.register("signal_legend_faiz",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_BLADE = ITEMS.register("signal_legend_blade",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_BLADE = ITEMS.register("signal_legend_blade",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_HIBIKI = ITEMS.register("signal_legend_hibiki",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_HIBIKI = ITEMS.register("signal_legend_hibiki",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_KABUTO = ITEMS.register("signal_legend_kabuto",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_KABUTO = ITEMS.register("signal_legend_kabuto",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_DEN_O = ITEMS.register("signal_legend_den_o",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_DEN_O = ITEMS.register("signal_legend_den_o",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_KIVA = ITEMS.register("signal_legend_kiva",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_KIVA = ITEMS.register("signal_legend_kiva",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_DECADE = ITEMS.register("signal_legend_decade",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_DECADE = ITEMS.register("signal_legend_decade",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_W = ITEMS.register("signal_legend_w",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_W = ITEMS.register("signal_legend_w",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_OOO = ITEMS.register("signal_legend_ooo",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_OOO = ITEMS.register("signal_legend_ooo",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_FOURZE = ITEMS.register("signal_legend_fourze",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_FOURZE = ITEMS.register("signal_legend_fourze",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_WIZARD = ITEMS.register("signal_legend_wizard",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_WIZARD = ITEMS.register("signal_legend_wizard",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> SIGNAL_LEGEND_GAIM = ITEMS.register("signal_legend_gaim",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+	public static final DeferredItem<Item> SIGNAL_LEGEND_GAIM = ITEMS.register("signal_legend_gaim",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
-    public static final DeferredItem<Item> SHIFT_RIDE_CROSSER= ITEMS.register("shift_ride_crosser",
+	public static final DeferredItem<Item> SHIFT_RIDE_CROSSER= ITEMS.register("shift_ride_crosser",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_mach_chaser","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
@@ -858,7 +858,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeModel("mach.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+			}.ChangeModel("mach.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TRIDORON_KEY= ITEMS.register("tridoron_key",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_super","drive_dead_heat","mach_driver_honoh_belt",
@@ -874,7 +874,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeModel("default.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
+			}.ChangeModel("default.geo.json").IsGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 
@@ -921,7 +921,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+			}.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.model_has_different_name("rhino_super_viral_core").has_basic_model());
 
 	public static final DeferredItem<Item> RHINO_SUPER_VIRAL_CORE = ITEMS.register("rhino_super_viral_core",
@@ -939,30 +939,30 @@ public class Drive_Rider_Items {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}
-					.addAlternative(SHIFT_VIRAL_CORE.get()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.addAlternative(SHIFT_VIRAL_CORE.get()).IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-    public static final DeferredItem<Item> MEGAHEX_VIRAL_CORE  = ITEMS.register("megahex_viral_core",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_zzz","megahex","blank",
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+	public static final DeferredItem<Item> MEGAHEX_VIRAL_CORE  = ITEMS.register("megahex_viral_core",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_zzz","megahex","blank",
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
 
 				}
 			}.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -978,7 +978,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(BASIC_TIRE.get()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BANNO_TABLET = ITEMS.register("banno_tablet",
@@ -996,7 +996,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROIDMUDE_CORE_002 = ITEMS.register("roidmude_core_002",
@@ -1016,7 +1016,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+			}.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).IsGlowing()
 					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROIDMUDE_CORE_009 = ITEMS.register("roidmude_core_009",
@@ -1034,8 +1034,8 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}
-                    .has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.IsGlowing()
+					.IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CYBEROID_ZZZ_CORE = ITEMS.register("cyberoid_zzz_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","lupin","lupin_belt",
@@ -1051,7 +1051,7 @@ public class Drive_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			}.IsGlowing().has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROIDMUDE_CORE_108 = ITEMS.register("roidmude_core_108",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -1121,39 +1121,39 @@ public class Drive_Rider_Items {
 
 
 	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON))
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON))
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BREAK_GUNNER_BELT.get())
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BREAK_GUNNER_BELT.get())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get())
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_GUNNER = ITEMS.register("blade_gunner",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRAIN_MEGANE_BLADE = ITEMS.register("brain_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> JUSTICE_CAGE = ITEMS.register("justice_cage",

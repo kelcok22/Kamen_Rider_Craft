@@ -39,7 +39,7 @@ public class OOODriverItem extends RiderDriverItem {
 		Item formItem2 = get_Form_Item(stack, 2);
 		Item formItem3 = get_Form_Item(stack, 3);
 
-	if (!Objects.equals(getCombo(formItem, formItem2, formItem3), "false"))tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
+		if (!Objects.equals(getCombo(formItem, formItem2, formItem3), "false"))tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
 		else if (!OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem2) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem3)) {
 			tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
@@ -47,9 +47,9 @@ public class OOODriverItem extends RiderDriverItem {
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
 		} else {
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft:false.form_special").getString()
-			+ Component.translatable(formItem.toString() + ".form_special").getString()
-			+ (formItem3 == OOO_Rider_Items.CHEETAH_MEDAL.get() ? Component.translatable(formItem2.toString() + ".form_cheetah").getString() : Component.translatable(formItem2.toString() + ".form_special").getString())
-			+ Component.translatable(formItem3.toString() + ".form_special").getString()));
+					+ Component.translatable(formItem.toString() + ".form_special").getString()
+					+ (formItem3 == OOO_Rider_Items.CHEETAH_MEDAL.get() ? Component.translatable(formItem2.toString() + ".form_cheetah").getString() : Component.translatable(formItem2.toString() + ".form_special").getString())
+					+ Component.translatable(formItem3.toString() + ".form_special").getString()));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
@@ -89,22 +89,22 @@ public class OOODriverItem extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			
-			
-				String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
-				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
-				}
-				return "belts/"+belt;
-			
+
+
+			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
+			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+				belt = get_Form_Item(itemstack,1).getBeltTex();
+			}
+			return "belts/"+belt;
+
 		}
-	
+
 		else if (equipmentSlot == EquipmentSlot.HEAD& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka") & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_kujaku") & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_condor")) return riderName+ "_taka_tajado";
 		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOO_Rider_Items.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()==OOO_Rider_Items.OOODRIVER.get()& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka") & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_tora") & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_batta")) return riderName+ "_taka_purple";
-		
+
 		else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) return riderName+ get_Form_Item(itemstack,1).getFormName(fly)+ "_greeed_absorption";
 		else if (equipmentSlot == EquipmentSlot.LEGS&get_Form_Item(itemstack,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) return riderName+ get_Form_Item(itemstack,3).getFormName(fly)+ "_greeed_absorption";
-		
+
 		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
 		else if (equipmentSlot == EquipmentSlot.CHEST) return riderName+ get_Form_Item(itemstack,2).getFormName(fly);
 		else return riderName+ get_Form_Item(itemstack,3).getFormName(fly);
@@ -115,43 +115,66 @@ public class OOODriverItem extends RiderDriverItem {
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_belt.geo.json");
 	}
 
+	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+		if (currentSlot== EquipmentSlot.FEET) {
+			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+		}
+		if (isTransformed(livingEntity)){
+			switch (currentSlot) {
+				case HEAD ->{
+					return true;
+				}
+				case CHEST -> {
+					return get_Form_Item(itemstack, 2).get_Is_Glowing();
+				}
+				case LEGS -> {
+					return false;
+				}
+				default -> {}
+			}
+			return false;
+		}
+		return false;
+	}
+
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		int num = 1;
-		if (slot == EquipmentSlot.CHEST)num=2; 
+		if (slot == EquipmentSlot.CHEST)num=2;
 		if (slot == EquipmentSlot.LEGS)num=3;
-		
+
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
-	 }else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
+		}else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo.geo.json");
-		 }else   
-			 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
+		}else
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 
 	}
-	
+
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
 		switch (currentSlot) {
-		case HEAD ->{ 
-			if (Objects.equals(part, "head")) return true;
-			if (Objects.equals(part, "body")) return true;
-			
-		}
-		case CHEST -> {
-			if (Objects.equals(part, "body")) return true;
-			if (Objects.equals(part, "rightArm")) return true;
-			if (Objects.equals(part, "leftArm")) return true;
-			
-		}
-		case LEGS -> {
-			if (Objects.equals(part, "body")) return true;
-			if (Objects.equals(part, "leftLeg")) return true;
-			if (Objects.equals(part, "rightLeg")) return true;
-			
-		
-		}
-		default -> {}
+			case HEAD ->{
+				if (Objects.equals(part, "head")) return true;
+				if (Objects.equals(part, "body")) return true;
+
+			}
+			case CHEST -> {
+				if (Objects.equals(part, "body")) return true;
+				if (Objects.equals(part, "rightArm")) return true;
+				if (Objects.equals(part, "leftArm")) return true;
+
+			}
+			case LEGS -> {
+				if (Objects.equals(part, "body")) return true;
+				if (Objects.equals(part, "leftLeg")) return true;
+				if (Objects.equals(part, "rightLeg")) return true;
+
+
+			}
+			default -> {}
 		}
 		return false;
 	}

@@ -45,9 +45,9 @@ public class BikeModel<T extends baseBikeEntity> extends GeoModel<T> {
         baseBikeEntity  animatable= state.getAnimatable();
         if (front_fork != null) front_fork.setRotY(entityData.headPitch());
             if (front_fork2 != null) front_fork2.setRotY(entityData.headPitch());
-        if (f_wheel2 != null) f_wheel2.setRotX((float) entityData2.getWheelRotation());
-            if (f_wheel != null) f_wheel.setRotX((float) entityData2.getWheelRotation());
-            if (b_wheel != null) b_wheel.setRotX((float) entityData2.getWheelRotation());
-            if (pedals != null) pedals.setRotX((float) entityData2.getWheelRotation());
+        if (f_wheel2 != null) f_wheel2.setRotX(entityData2.getWheelRotation());
+            if (f_wheel != null) f_wheel.setRotX(entityData2.getWheelRotation());
+            if (b_wheel != null) b_wheel.setRotX(entityData2.getWheelRotation());
+            if (pedals != null) pedals.setRotX(entityData2.getWheelRotation());
         }
 }

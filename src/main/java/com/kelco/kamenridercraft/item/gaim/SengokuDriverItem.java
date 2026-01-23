@@ -30,14 +30,14 @@ public class SengokuDriverItem extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-            if (Objects.equals(riderName, "baron") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.LORD_BARON.get()) return "belts/blank";
-            if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "belts/sengoku_driver_belt_zangetsu_w";
+			if (Objects.equals(riderName, "baron") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.LORD_BARON.get()) return "belts/blank";
+			if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "belts/sengoku_driver_belt_zangetsu_w";
 			if (Objects.equals(riderName, "ryugen") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "belts/sengoku_driver_belt_ryugen_y";
 			return "belts/"+get_Form_Item(itemstack,2).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD) {
 			if (Objects.equals(riderName, "baron") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.LORD_BARON.get()) return "baron_lord_baron";
-           else if (Objects.equals(riderName, "ryugen") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "ryugen_yomi";
+			else if (Objects.equals(riderName, "ryugen") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "ryugen_yomi";
 			else if (Objects.equals(riderName, "duke") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get()) return "duke_hex";
 			else if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "zangetsu_watermelon";
 			else if (Objects.equals(riderName, "zangetsu") &get_Form_Item(itemstack,1)== Gaim_Rider_Items.ZANGETSU_KACHIDOKI_LOCKSEED.get()) return "zangetsu_kachidoki";
@@ -58,6 +58,26 @@ public class SengokuDriverItem extends RiderDriverItem {
 		else return get_Form_Item(itemstack,1).getFormName(fly);
 	}
 
+	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+		if (currentSlot== EquipmentSlot.FEET) {
+			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+		}
+		if (isTransformed(livingEntity)){
+			switch (currentSlot) {
+				case HEAD->{
+					return false;
+				}
+				case LEGS, CHEST -> {
+					return true;
+				}
+				default -> {}
+			}
+			return false;
+		}
+		return false;
+	}
+
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
@@ -66,8 +86,8 @@ public class SengokuDriverItem extends RiderDriverItem {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gaim_kachidoki_arms.geo.json");
 			}
 			else if (Objects.equals(get_Form_Item(itemstack, 1).get_Model(this.Rider), "default.geo.json")) {
-				 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
- 			}
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
+			}
 		}
 		return super.getModelResource(itemstack, animatable, slot,rider);
 	}
@@ -77,13 +97,13 @@ public class SengokuDriverItem extends RiderDriverItem {
 
 		switch (currentSlot) {
 			case HEAD, LEGS ->{
-			 return true;
+				return true;
 			}
 			case CHEST -> {
 				if (Objects.equals(part, "head")) return true;
 				if (Objects.equals(part, "body")) return true;
 			}
-            default -> {}
+			default -> {}
 		}
 		return false;
 	}

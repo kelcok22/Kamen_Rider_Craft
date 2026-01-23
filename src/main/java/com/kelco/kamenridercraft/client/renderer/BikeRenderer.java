@@ -10,7 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class BikeRenderer<T extends baseBikeEntity> extends GeoEntityRenderer<T> {
 	public BikeRenderer(EntityRendererProvider.Context renderManager) {
-        super(renderManager, new BikeModel());
+        super(renderManager, new BikeModel<>());
     	this.scaleWidth = 1.1f;
 		this.scaleHeight = 1.1f;
 

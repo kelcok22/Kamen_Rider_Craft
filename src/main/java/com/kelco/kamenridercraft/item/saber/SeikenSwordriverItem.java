@@ -41,23 +41,23 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         Has_Inventory=true;
     }
 
-        @Override
-        public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
-            player.openMenu(new MenuProvider() {
-                @Override
-                public Component getDisplayName() {
-                    return Component.translatable("hissatsuholder.text");
-                }
+    @Override
+    public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+        player.openMenu(new MenuProvider() {
+            @Override
+            public Component getDisplayName() {
+                return Component.translatable("hissatsuholder.text");
+            }
 
-                @Override
-                public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-                    FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-                    packetBuffer.writeBlockPos(player.blockPosition());
-                    packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-                    return new HissatsuHolderGuiMenu(id, inventory, packetBuffer,itemstack);
-                }
-            });
-        }
+            @Override
+            public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+                FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+                packetBuffer.writeBlockPos(player.blockPosition());
+                packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+                return new HissatsuHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+            }
+        });
+    }
 
 
     @Override
@@ -89,9 +89,9 @@ public class SeikenSwordriverItem extends RiderDriverItem {
                     else if (formItem2==Saber_Rider_Items.SABER_BLANK_2.get()&&formItem3==Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem + ".form_saiyuu"));
                     else if (formItem2==Saber_Rider_Items.STORM_EAGLE_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem + ".form_combo"));
                     else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
-                    + Component.translatable(formItem + ".form").getString()
-                    + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? " " + Component.translatable(formItem2.toString() + ".form").getString() : "")
-                    + (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get() ? " " + Component.translatable(formItem3.toString() + ".form").getString() : "")));
+                                + Component.translatable(formItem + ".form").getString()
+                                + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? " " + Component.translatable(formItem2.toString() + ".form").getString() : "")
+                                + (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get() ? " " + Component.translatable(formItem3.toString() + ".form").getString() : "")));
                 } else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
             } else if (stack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_BLADES.get()) {
                 if (formItem2==Saber_Rider_Items.LION_SENKI_WONDER_RIDE_BOOK.get()) {
@@ -101,9 +101,9 @@ public class SeikenSwordriverItem extends RiderDriverItem {
                     else if (formItem==Saber_Rider_Items.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.PETER_FANTASISTA_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem2 + ".form_combo"));
                     else if (formItem==Saber_Rider_Items.KING_LION_DAISENKI_WONDER_RIDE_BOOK.get()||formItem==Saber_Rider_Items.TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem + ".form"));
                     else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
-                    + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
-                    + Component.translatable(formItem2 + ".form").getString()
-                    + (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get() ? " " + Component.translatable(formItem3.toString() + ".form").getString() : "")));
+                                + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
+                                + Component.translatable(formItem2 + ".form").getString()
+                                + (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get() ? " " + Component.translatable(formItem3.toString() + ".form").getString() : "")));
                 } else tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
             } else if (stack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_ESPADA.get()) {
                 if (formItem3==Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get()) {
@@ -113,9 +113,9 @@ public class SeikenSwordriverItem extends RiderDriverItem {
                     else if (formItem==Saber_Rider_Items.TRI_CERBERUS_WONDER_RIDE_BOOK.get()&&formItem2==Saber_Rider_Items.NEEDLE_HEDGEHOG_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem3 + ".form_combo"));
                     else if (formItem==Saber_Rider_Items.ARABIANA_NIGHT_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem + ".form"));
                     else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
-                    + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
-                    + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? Component.translatable(formItem2.toString() + ".form").getString() + " " : "")
-                    + Component.translatable(formItem3 + ".form").getString()));
+                                + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
+                                + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? Component.translatable(formItem2.toString() + ".form").getString() + " " : "")
+                                + Component.translatable(formItem3 + ".form").getString()));
                 } else tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
             }
         }
@@ -123,7 +123,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName, int num)
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num)
     {
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
 
@@ -145,7 +145,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
             if (get_Form_Item(belt, 1).get_Stored_num()==2 && (get_Form_Item(belt, 2)!= Saber_Rider_Items.SABER_BLANK_2.get() || get_Form_Item(belt, 3)!= Saber_Rider_Items.SABER_BLANK_3.get())) {
                 set_Form_Item(belt, Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK.asItem(), 1);
             } else if (get_Form_Item(belt, 1).get_Stored_num()==3 && ((get_Form_Item(belt, 2)!= Saber_Rider_Items.SABER_BLANK_2.get() && get_Form_Item(belt, 2)!= Saber_Rider_Items.LION_SENKI_WONDER_RIDE_BOOK_XROSS.get() && get_Form_Item(belt, 2)!= Saber_Rider_Items.STORM_EAGLE_WONDER_RIDE_BOOK_XROSS.get())
-            || (get_Form_Item(belt, 3)!= Saber_Rider_Items.SABER_BLANK_3.get() && get_Form_Item(belt, 3)!= Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK_XROSS.get() && get_Form_Item(belt, 3)!= Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK_XROSS.get()))) {
+                    || (get_Form_Item(belt, 3)!= Saber_Rider_Items.SABER_BLANK_3.get() && get_Form_Item(belt, 3)!= Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK_XROSS.get() && get_Form_Item(belt, 3)!= Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK_XROSS.get()))) {
                 set_Form_Item(belt, Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK.asItem(), 1);
             }
         } else if (belt.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_BLADES.get()){
@@ -163,7 +163,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         if (itemstack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get() && get_Form_Item(itemstack, 1) == Saber_Rider_Items.WONDER_ALMIGHTY_WONDER_RIDE_BOOK.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/saber_wonder_almighty.geo.json");
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
     }
 
 
@@ -177,7 +177,27 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack, 1).get_Stored_num()==2) return get_Form_Item(itemstack,1).getFormName(fly);
         else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack, 1).get_Stored_num()==3) return riderName+"_face_xross";
         else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+"_face";
-           else return "blank";
+        else return "blank";
+    }
+
+    public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+        if (currentSlot== EquipmentSlot.FEET) {
+            return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+        }
+        if (isTransformed(livingEntity)){
+            switch (currentSlot) {
+                case LEGS ->{
+                    return false;
+                }
+                case  CHEST,HEAD-> {
+                    return true;
+                }
+                default -> {}
+            }
+            return false;
+        }
+        return false;
     }
 
     @Override

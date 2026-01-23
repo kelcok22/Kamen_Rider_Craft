@@ -28,7 +28,7 @@ public class MuezDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName ,int num) {
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
         if ((rider instanceof Player || rider instanceof Mob) && rider.getMainArm() == HumanoidArm.LEFT) {
             if (num==1&&rider.getOffhandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_l";
             else if (num==2&&rider.getMainHandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_r";

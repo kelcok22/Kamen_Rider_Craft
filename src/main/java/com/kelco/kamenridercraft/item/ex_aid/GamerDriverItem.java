@@ -29,7 +29,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class GamerDriverItem extends RiderDriverItem {
 
-    public GamerDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
+	public GamerDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 
@@ -45,7 +45,7 @@ public class GamerDriverItem extends RiderDriverItem {
 		Num_Base_Form_Item=2;
 	}
 
-    public void summonParaDX(Player player) {
+	public void summonParaDX(Player player) {
 		ParaDXSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(player.level());
 		if (paradx != null) {
 			paradx.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
@@ -56,33 +56,33 @@ public class GamerDriverItem extends RiderDriverItem {
 			player.level().addFreshEntity(paradx);
 			paradx.bindToPlayer(player);
 		}
-    }
+	}
 
-    public static boolean paradxSummoned(Player player) {
+	public static boolean paradxSummoned(Player player) {
 		for (ParaDXSummonEntity entity : player.level().getEntitiesOfClass(ParaDXSummonEntity.class,
-						player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player)) {
+				player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player)) {
 			if (entity != null) return true;
 		}
-        return false;
-    }
+		return false;
+	}
 
 	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
-		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
-		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
-		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
-		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
+				&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
+				&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
+				|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
+				|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
 			summonParaDX(player);
 		super.OnTransformation(itemstack, entity);
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
-		&& ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
-		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
-		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
-		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
-		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get())) 
+				&& ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
+				&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
+				&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
+				|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
+				|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
 			summonParaDX(player);
 		super.OnformChange(itemstack, entity, tag);
 	}
@@ -110,18 +110,18 @@ public class GamerDriverItem extends RiderDriverItem {
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
-			 belt = get_Form_Item(itemstack,1).getBeltTex();
+				belt = get_Form_Item(itemstack,1).getBeltTex();
 			}
-		
+
 			if (itemstack.getItem()== Ex_Aid_Rider_Items.GASHACON_BUGVISOR_GENM.get() && rider.isHolding(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get())) belt="bugster_buckle";
 			if ((itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()
-				||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_POPPY.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_LAZER.get())
-				&& rider.isHolding(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get())) belt="bugster_buckle";
-			
+					||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_POPPY.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_LAZER.get())
+					&& rider.isHolding(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get())) belt="bugster_buckle";
+
 			if(Objects.equals(get_Form_Item(itemstack, 1).get_Belt_Model(), "geo/lv_1_belt.geo.json")) {
 				if (!isTransformed(rider)) belt = get_Form_Item(itemstack,1).getBeltTex()+"_un";
 			}
-			
+
 			return "belts/"+belt;
 		}
 		else if (equipmentSlot == EquipmentSlot.CHEST){
@@ -135,7 +135,7 @@ public class GamerDriverItem extends RiderDriverItem {
 		else {
 			RiderDriverItem belt = ((RiderDriverItem)itemstack.getItem());
 			if (belt==Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()&get_Form_Item(itemstack,1)==Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT_LV_1.get()
-			&rider.hasEffect(Effect_core.CHRISTMAS)) {
+					&rider.hasEffect(Effect_core.CHRISTMAS)) {
 				return riderName+"_lv1_christmas";
 			}
 
@@ -146,7 +146,7 @@ public class GamerDriverItem extends RiderDriverItem {
 					return riderName+"_jet";
 				}else 	if (get_Form_Item(itemstack,2)==Ex_Aid_Rider_Items.BANG_BANG_SIMULATION_GASHAT.get()) {
 					return riderName+"_nocape";
-				} 
+				}
 
 			}
 		}
@@ -156,12 +156,25 @@ public class GamerDriverItem extends RiderDriverItem {
 	}
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		
+
 		if(Objects.equals(get_Form_Item(itemstack, 1).get_Belt_Model(), "geo/lv_1_belt.geo.json") && !isTransformed(rider)) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/riderbelt.geo.json");
 		}
-		
+
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Belt_Model());
+	}
+
+	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+		if (currentSlot== EquipmentSlot.FEET) {
+			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+		} else if (isTransformed(livingEntity)){
+			if (Objects.requireNonNull(currentSlot) == EquipmentSlot.CHEST) {
+				return get_Form_Item(itemstack, 2).get_Is_Glowing();
+			}
+			return get_Form_Item(itemstack, 1).get_Is_Glowing();
+		}
+		return false;
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
@@ -182,13 +195,13 @@ public class GamerDriverItem extends RiderDriverItem {
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
 		switch (currentSlot) {
-		case HEAD ->{ 
-			return true;
-		}
-		case CHEST -> {
-			if (get_Form_Item(itemstack, 2)!=Modded_item_core.BLANK_FORM.get()) return true;
-		}
-		default -> {}
+			case HEAD ->{
+				return true;
+			}
+			case CHEST -> {
+				if (get_Form_Item(itemstack, 2)!=Modded_item_core.BLANK_FORM.get()) return true;
+			}
+			default -> {}
 		}
 		return false;
 	}

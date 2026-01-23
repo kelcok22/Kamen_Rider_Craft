@@ -32,7 +32,7 @@ public class DemonsDriverItem extends RiderDriverItem {
 	public DemonsDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
- 
+
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
 		Num_Base_Form_Item=5;
 	}
@@ -90,14 +90,33 @@ public class DemonsDriverItem extends RiderDriverItem {
 				return "_genomix_2";
 			default:
 				return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
-		}	
+		}
 
+	}
+	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+
+		if (currentSlot== EquipmentSlot.FEET) {
+			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+		}
+		if (isTransformed(livingEntity)){
+			switch (currentSlot) {
+				case LEGS, CHEST ->{
+					return false;
+				}
+				case  HEAD-> {
+					return true;
+				}
+				default -> {}
+			}
+			return false;
+		}
+		return false;
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		int num = 1;
 		if (slot == EquipmentSlot.CHEST||slot == EquipmentSlot.LEGS) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/default_wings_armor.geo.json");
-		
+
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}
@@ -143,14 +162,14 @@ public class DemonsDriverItem extends RiderDriverItem {
 	}
 
 	@Override
-    public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
-    {
+	public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+	{
 		if (((RiderFormChangeItem) ITEM).getSlot()==1&Modded_item_core.BLANK_FORM.get()!=ITEM) {
-            Consumer<CompoundTag> data = form -> {
+			Consumer<CompoundTag> data = form -> {
 				for (int n = 2; n < 6; n++) form.putString("slot_tex" + n, (Modded_item_core.BLANK_FORM.get()).toString());
-            };
+			};
 
-            CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
+			CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 		}
 	}
 }

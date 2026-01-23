@@ -44,7 +44,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","nigo","typhoon_belt",
@@ -56,7 +56,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE_NIGO = ITEMS.register("original_typhoon_core_nigo",
@@ -69,7 +69,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick());
+            }.allowRiderKick().IsGlowing());
 
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE = ITEMS.register("original_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_original","ichigo","typhoon_belt_original",
@@ -81,7 +81,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().addAlternative(ORIGINAL_TYPHOON_CORE_NIGO.get()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().addAlternative(ORIGINAL_TYPHOON_CORE_NIGO.get()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SAKURAJIMA_TYPHOON_CORE = ITEMS.register("sakurajima_typhoon_core",
@@ -94,7 +94,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-                }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_SANGO = ITEMS.register("typhoon_core_sango",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","sango","typhoon_belt_sango",
@@ -106,7 +106,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_CORE_YONGO = ITEMS.register("typhoon_core_yongo",
@@ -119,7 +119,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NEW_TYPHOON_CORE = ITEMS.register("new_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_new","ichigo","new_typhoon_belt",
@@ -134,7 +134,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 150, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ULTRAMAN_TYPHOON_CORE = ITEMS.register("ultraman_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","ichigo","typhoon_belt",
@@ -149,7 +149,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TAKI_VAMPIRE_CORE = ITEMS.register("taki_vampire_core",
@@ -170,7 +170,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CYBORG_SUPER_ENERGY_CONVERTER_CORE = ITEMS.register("cyborg_super_energy_converter_core",
@@ -187,7 +187,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.ChangeBeltModel("geo/eins_belt.geo.json").has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.ChangeBeltModel("geo/eins_belt.geo.json").IsGlowing().IsBeltGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
@@ -200,7 +200,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NOPHOON_CORE = ITEMS.register("nophoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kamen_norider","nophoon_belt",
@@ -315,7 +315,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK = ITEMS.register("rider3_vs_the_demon_of_general_black",
@@ -328,7 +328,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     //V3
 
@@ -349,7 +349,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.V3_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> BLUE_DOUBLE_TYPHOON_CORE = ITEMS.register("blue_double_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_blue","v3","double_typhoon_belt",
@@ -368,7 +368,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.V3_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_BELT_CORE = ITEMS.register("riderman_belt_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","riderman","riderman_belt",
@@ -384,7 +384,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.SetShowFace().AddToList(RiderTabs.V3_TAB_ITEM));
+            }.IsGlowing().SetShowFace().AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> V3HELMET = ITEMS.register("v3head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
@@ -450,7 +450,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.X_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> PREFECTER = ITEMS.register("perfecter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_perfector","riderman","tackle_belt",
@@ -467,7 +467,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.SetShowUnder().AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
+            }.IsGlowing().SetShowUnder().AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_CORE = ITEMS.register("apollogeist_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","apollogeist","apollogeist_belt",
@@ -554,7 +554,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.AMAZON_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
@@ -597,7 +597,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_charge_up","stronger","electrer_belt",
@@ -619,13 +619,13 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_CORE = ITEMS.register("tackle_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+                    .IsGlowing().SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
 
@@ -673,7 +673,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> ORIGINAL_TORNADO_CORE = ITEMS.register("original_tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_original","skyrider","tornado_belt",
@@ -693,7 +693,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.SKYRIDER_TAB_ITEM).has_basic_model());
+            }.IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gangan_g","gangan_g_belt_belt")
@@ -745,7 +745,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.SUPER1_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUPER1HELMET = ITEMS.register("super_1head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
@@ -776,7 +776,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.ZX_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZXHELMET = ITEMS.register("zxhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
@@ -819,7 +819,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BATTA_MAN_KING_STONE = ITEMS.register("batta_man_king_stone",
@@ -836,7 +836,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  GREEN_KING_STONE = ITEMS.register("green_king_stone",
@@ -853,7 +853,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  CREATION_KING_STONE = ITEMS.register("creation_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_red","shadow_moon","shadow_charger_belt",
@@ -868,7 +868,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  ANOTHER_KING_STONE = ITEMS.register("another_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_another","shadow_moon","shadow_charger_another_belt",
@@ -884,7 +884,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.HasCape().has_basic_model().AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().HasCape().has_basic_model().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_hajime_sorayama","shadow_moon","shadow_charger_belt",
@@ -900,7 +900,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.BLACK_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BLACKHELMET = ITEMS.register("blackhead",
@@ -942,7 +942,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  ROBO_CORE = ITEMS.register("robo_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_robo","black_rx","sun_riser_belt_robo",
@@ -959,7 +959,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  BIO_CORE = ITEMS.register("bio_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_bio","black_rx","sun_riser_belt_bio",
@@ -976,7 +976,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().IsA1().AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  MOON_RX_CORE = ITEMS.register("moon_rx_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","white_rx","moon_riser",
@@ -993,7 +993,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.RX_TAB_ITEM));
+            }.IsGlowing().AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RXHELMET = ITEMS.register("rxhead",
@@ -1041,7 +1041,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
+            }.IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
@@ -1071,7 +1071,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
+            }.IsGlowing().AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",
@@ -1095,7 +1095,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
-                    .model_has_different_name("j_stone").has_basic_model());
+                    .IsGlowing().model_has_different_name("j_stone").has_basic_model());
 
     public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",
@@ -1110,7 +1110,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
+            }.IsGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
@@ -1125,8 +1125,8 @@ public class Ichigo_Rider_Items {
 
 
 
-public static void register(IEventBus eventBus) {
-    ITEMS.register(eventBus);
-}
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 
 }
