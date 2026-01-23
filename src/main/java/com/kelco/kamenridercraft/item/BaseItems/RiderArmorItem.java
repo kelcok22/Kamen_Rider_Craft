@@ -123,6 +123,25 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         }
     }
 
+    public static void setTransforming(ItemStack itemstack,Float num)
+    {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> form.putFloat("is_transforming", num);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
+    }
+
+    public static Float GetTransforming(ItemStack itemstack)
+    {
+        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            return tag.getFloat("is_transforming");
+        }
+        return 0f;
+    }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
@@ -163,7 +182,14 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                        player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().z != 0)
                    IsWaking = RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_Walk();
 
-                if (this instanceof RiderDriverItem) {
+                if (this instanceof RiderDriverItem belt) {
+
+
+                    if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) > 0)setTransforming(player.getItemBySlot(EquipmentSlot.FEET),GetTransforming(player.getItemBySlot(EquipmentSlot.FEET))-0.2f);
+                    if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) < 0) setTransforming(player.getItemBySlot(EquipmentSlot.FEET),0f);
+
+
+
 
                     if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_has_cape()) {
                         float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));

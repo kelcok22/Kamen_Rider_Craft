@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.entities.allies.*;
 import com.kelco.kamenridercraft.entities.bikes.*;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
+import com.kelco.kamenridercraft.entities.projectile.LaserProjectileEntity;
 import com.kelco.kamenridercraft.entities.projectile.ShurikenProjectileEntity;
 import com.kelco.kamenridercraft.entities.projectile.WeaponProjectileEntity;
 import com.kelco.kamenridercraft.entities.summons.*;
@@ -1691,6 +1692,11 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<ShurikenProjectileEntity>> SHURIKEN_PROJECTILE =
             MOBLIST.register("shuriken_projectile",() -> EntityType.Builder.<ShurikenProjectileEntity>of(ShurikenProjectileEntity::new, MobCategory.MISC)
                     .sized(1F, 1F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":shuriken_projectile"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<LaserProjectileEntity>> LASER_PROJECTILE =
+            MOBLIST.register("laser_projectile",() -> EntityType.Builder.<LaserProjectileEntity>of(LaserProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.3F, 0.3F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":laser_projectile"));
+
 
 
     public static void register(IEventBus eventBus) {

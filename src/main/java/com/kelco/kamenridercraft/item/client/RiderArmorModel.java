@@ -59,7 +59,6 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
         GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
         GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
-        GeoBone pedals = this.getAnimationProcessor().getBone("pedals");
         GeoBone b_wheel= this.getAnimationProcessor().getBone("b_wheel");
         GeoBone f_wheel = this.getAnimationProcessor().getBone("f_wheel");
         GeoBone f_wheel2 = this.getAnimationProcessor().getBone("f_wheel2");
@@ -76,23 +75,25 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             belt.setCustomAnimations(an,instanceId,state);
 
             if (tire != null){
-                if(RiderDriverItem.isTransforming(RIDER))tire.setRotX((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                if(RiderDriverItem.isTransforming(RIDER))tire.setPosX((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                if(RiderDriverItem.isTransforming(RIDER))tire.setPosY((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                if(RiderDriverItem.isTransforming(RIDER))tire.setPosZ((-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick()));
+                if(RiderDriverItem.isTransforming(RIDER))tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                if(RiderDriverItem.isTransforming(RIDER))tire.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
+                if(RiderDriverItem.isTransforming(RIDER))tire.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
+                if(RiderDriverItem.isTransforming(RIDER))tire.setPosZ(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+
+                //tire.setHidden(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) == 0);
             }
             if (tire2 != null){
-                if(RiderDriverItem.isTransforming(RIDER))tire2.setRotX((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                if(RiderDriverItem.isTransforming(RIDER))tire2.setPosX((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                if(RiderDriverItem.isTransforming(RIDER))tire2.setPosY((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                if(RiderDriverItem.isTransforming(RIDER))tire2.setPosZ(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick());
+                if(RiderDriverItem.isTransforming(RIDER))tire2.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                if(RiderDriverItem.isTransforming(RIDER))tire2.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
+                if(RiderDriverItem.isTransforming(RIDER))tire2.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
+                if(RiderDriverItem.isTransforming(RIDER))tire2.setPosZ(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
             }
             if (tire3 != null){
                 if (RiderDriverItem.get_Form_Item(RIDER.getItemBySlot(EquipmentSlot.FEET),1)!= Drive_Rider_Items.SHIFT_PROTO_SPEED_CHASER.asItem()){
-                    if(RiderDriverItem.isTransforming(RIDER))tire3.setRotZ((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                    if(RiderDriverItem.isTransforming(RIDER))tire3.setPosX((RiderDriverItem.GetTransforming((RIDER.getItemBySlot(EquipmentSlot.FEET)))-state.getPartialTick())/2);
-                    if(RiderDriverItem.isTransforming(RIDER))tire3.setPosY((RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick())/2);
-                    if(RiderDriverItem.isTransforming(RIDER))tire3.setPosZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-state.getPartialTick());
+                    if(RiderDriverItem.isTransforming(RIDER))tire3.setRotZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                    if(RiderDriverItem.isTransforming(RIDER))tire3.setPosX(RiderDriverItem.GetTransforming((RIDER.getItemBySlot(EquipmentSlot.FEET)))/2);
+                    if(RiderDriverItem.isTransforming(RIDER))tire3.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
+                    if(RiderDriverItem.isTransforming(RIDER))tire3.setPosZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
                 }else {
                     tire3.setRotZ(state.getPartialTick());
                 }
@@ -112,6 +113,6 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
         //if (b_wheel != null) b_wheel.setRotX((float) entityData2.getWheelRotation());
         //if (pedals != null) pedals.setRotX((float) entityData2.getWheelRotation());
-    }
 
+    }
 }
