@@ -65,6 +65,7 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.EntityEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
@@ -134,6 +135,19 @@ public class ModCommonEvents {
 			}
 		}
 
+        @SubscribeEvent
+        public void TransformingEvent(LivingEvent.LivingVisibilityEvent event) {
+/**
+            if (event.getEntity() instanceof LivingEntity player) {
+                if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                    if (belt.GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) > 0)
+                        belt.setTransforming(player.getItemBySlot(EquipmentSlot.FEET), belt.GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) - 0.2f);
+                    if (belt.GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) < 0)
+                        belt.setTransforming(player.getItemBySlot(EquipmentSlot.FEET), 0f);
+                }
+            }
+ **/
+        }
 
 		private Item getGochizoDrop(ItemStack itemstack,Level level) {
 			Random generator = new Random();

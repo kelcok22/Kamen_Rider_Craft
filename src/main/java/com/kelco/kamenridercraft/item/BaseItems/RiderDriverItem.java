@@ -144,6 +144,11 @@ public class RiderDriverItem extends RiderArmorItem {
             if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
             if (!isTransformed(player)) tag.putDouble("render_type", 0);
 
+            if (!level.isClientSide) {
+                if (tag.getDouble("is_transforming") != 0)
+                    tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
+                if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
+            }
             if (tag.getDouble("use_ability") != 0) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
