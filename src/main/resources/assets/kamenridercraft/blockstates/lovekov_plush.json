@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "kamenridercraft:block/lovekov_plush" },
+        "facing=south": { "model": "kamenridercraft:block/lovekov_plush", "y": 180 },
+        "facing=west":  { "model": "kamenridercraft:block/lovekov_plush", "y": 270 },
+        "facing=east":  { "model": "kamenridercraft:block/lovekov_plush", "y": 90 }
+    }
+}
