@@ -42,6 +42,8 @@ public class BaseBlasterItem extends BowItem {
 	private Item HenshinBeltItem = null;
 	private static int LFBB = 1;
 	private Item craftingRemainingItem = null;
+	private int cooldown = 5;
+	private float laserDamage = 4;
 
 	public enum BlasterProjectile {
 		ARROW,
@@ -59,13 +61,7 @@ public class BaseBlasterItem extends BowItem {
 				user.level().addFreshEntity(largefireball);
 			}
 		},
-		LASER {
-			public void fire(LivingEntity user, Vec3 movement) {
-			LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
-			laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
-			user.level().addFreshEntity(laserProjectile);
-			}
-		},
+		LASER,
 		ENDER_PEARL {
 			public void fire(LivingEntity user, Vec3 movement) {
 				ThrownEnderpearl fireball = new ThrownEnderpearl(user.level(),user);
@@ -143,6 +139,15 @@ public class BaseBlasterItem extends BowItem {
 		return ((BaseBlasterItem)stack.getItem()).craftingRemainingItem!=null;
 	}
 
+	public BaseBlasterItem setCooldown(int cd) {
+		this.cooldown = cd;
+		return this;
+	}
+
+	public BaseBlasterItem setDamage(float damageChange) {
+		this.laserDamage = damageChange;
+		return this;
+	}
 
 	@Override
     public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
@@ -157,7 +162,11 @@ public class BaseBlasterItem extends BowItem {
 			}
 			if (FormChangeItem != null && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
 			if (projectile != BlasterProjectile.ARROW) {
-				projectile.fire(player, player.getLookAngle());
+				if (projectile == BlasterProjectile.LASER) {
+					laserFire(player, player.getDeltaMovement());
+				} else {
+					projectile.fire(player, player.getLookAngle());
+				}
 				stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 			}
             else if (entityLiving.hasEffect(Effect_core.SHOT_BOOST)) {
@@ -172,7 +181,7 @@ public class BaseBlasterItem extends BowItem {
 			}
 			level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
 			player.awardStat(Stats.ITEM_USED.get(this));
-			player.getCooldowns().addCooldown(this, 5);
+			player.getCooldowns().addCooldown(this, this.cooldown);
 		}
 
 	}
@@ -195,12 +204,17 @@ public class BaseBlasterItem extends BowItem {
 		}
 	}
 
+	public void laserFire(LivingEntity user, Vec3 movement) {
+		LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
+		laserProjectile.setNoGravity(true);
+		laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 0F);
+		laserProjectile.setDamage(this.laserDamage);
+		user.level().addFreshEntity(laserProjectile);
+	}
 
 	public int getDefaultProjectileRange() {
 		return 30;
 	}
-
-
 
 	public BaseBlasterItem ChangeRepairItem(Item item) {
 		RepairItem = item;

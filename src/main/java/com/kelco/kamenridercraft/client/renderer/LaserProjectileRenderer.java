@@ -8,10 +8,10 @@ import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.Mth;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class LaserProjectileRenderer extends GeoEntityRenderer<LaserProjectileEntity> {
+    public String currentColor;
 
 	public LaserProjectileRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new LaserModel());
@@ -19,8 +19,8 @@ public class LaserProjectileRenderer extends GeoEntityRenderer<LaserProjectileEn
 
     public void render(LaserProjectileEntity entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight) {
         poseStack.pushPose();
-        poseStack.mulPose(Axis.YP.rotationDegrees(Mth.lerp(partialTick, entity.yRotO, entity.getYRot())));
-        poseStack.mulPose(Axis.XP.rotationDegrees(Mth.lerp(partialTick, entity.xRotO, entity.getXRot())));
+        poseStack.mulPose(Axis.YP.rotationDegrees(entity.getYRot()));
+        poseStack.mulPose(Axis.XP.rotationDegrees(-entity.getXRot()));
 
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
         poseStack.popPose();
@@ -30,5 +30,4 @@ public class LaserProjectileRenderer extends GeoEntityRenderer<LaserProjectileEn
     public ResourceLocation getTextureLocation(LaserProjectileEntity animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/laser.png");
     }
-
 }
