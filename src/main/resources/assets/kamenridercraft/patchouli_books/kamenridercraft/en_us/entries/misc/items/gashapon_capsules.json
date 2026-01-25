@@ -28,6 +28,19 @@
         "item": "kamenridercraft:halloween_gashapon_capsule",
         "title": " ",
         "text": "$(li)$(l:zeztz/items/capsems#sweets_capsem)Zeztz Capsem (Sweets ver.)$(/l) (11.1%)$(li)$(l:misc/blocks/ferbus)Ferbus$(/l) (11.1%)$(br2)Obtained by using emeralds on the $(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l) during the week of October 24-31"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "valentine_gashapon_capsule",
+        "title": "Valentine Gashapon Capsule",
+        "text": "Gives random items when opened$(br2)Drops:$(li)$(l:zi_o/items/ridewatches#manhole_cover)Manhole Cover$(/l) (11.1%)$(li)$(l:decade/items/final_formride_cards#chalice_choco)Final FormRide Chalice Choco$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core_medal)Love Core Medal (Head)$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core2_medal)Love Core Medal (Torso)$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core3_medal)Love Core Medal (Legs)$(/l) (11.1%)$(li)$(l:misc/blocks/lovekov_plush)Lovekov Plush$(/l) (11.1%)$(li)$(l:ex_aid/items/rider_gashats#toki_meki_bridal_gashat)Toki Meki Bridal Gashat$(/l) (11.1%)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:valentine_gashapon_capsule",
+        "title": " ",
+        "text": "$(li)$(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card_televikun)Firemars Ride Chemy Card (Televi-Kun ver.) (11.1%)$(li)$(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card_televikun)Inphoenix Ride Chemy Card (Televi-Kun ver.) (11.1%)$(br2)Obtained by using emeralds on the $(l:misc/blocks/machine_blocks#gashapon_machine)Gashapon Machine$(/l) during February 13-18"
       }
 	]
 }

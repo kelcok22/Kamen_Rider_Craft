@@ -2,7 +2,7 @@
 	"name": "Ferbus",
 	"icon": "kamenridercraft:ferbus",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 53,
+	"sortnum": 54,
 	"pages": [
 		{
 			"type": "patchouli:text",

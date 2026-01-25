@@ -1862,6 +1862,7 @@
   "item.kamenridercraft.gift": "Gift",
   "item.kamenridercraft.gashapon_capsule": "Gashapon Capsule",
   "item.kamenridercraft.halloween_gashapon_capsule": "Gashapon Capsule",
+  "item.kamenridercraft.valentine_gashapon_capsule": "Gashapon Capsule",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
 
@@ -2742,6 +2743,7 @@
   "kamenridercraft:silver_evolution_caucasus.form": "Form: Silver King Form",
   "kamenridercraft:evolution_giraffa.form": "Form: King Form",
   "kamenridercraft:evolution_paradoxa.form": "Form: Wild Form",
+  "kamenridercraft:final_form_ride_chalice_choco.form": "Form: Chalice Choco",
   "kamenridercraft:evolution_tarantula.form": "Form: King Form",
   "kamenridercraft:taiyaki_masterform": "Form: Ultimate Form",
 
@@ -3453,6 +3455,7 @@
 "item.kamenridercraft.black_rx_biorider_card": "FormRide Black RX Bio Rider",
 "item.kamenridercraft.kuuga_ball": "Final FormRide Kuuga Ball",
   "item.kamenridercraft.decade_ooo_armor_card": "Final FormRide OOO Armor",
+  "item.kamenridercraft.final_form_ride_chalice_choco": "Final FormRide Chalice Choco",
 
   "kamenridercraft:kuuga_growing_card.form": "Form: Kuuga Growing Form",
   "kamenridercraft:kuuga_dragon_card.form": "Form: Kuuga Dragon Form",
@@ -6324,6 +6327,7 @@
   "item.kamenridercraft.woz_time_majin_ridewatch": "White Woz Time Mazine Ridewatch",
   "item.kamenridercraft.questionable_watch": "Questionable Watch",
   "item.kamenridercraft.toy_robot": "Toy Robot",
+  "item.kamenridercraft.manhole_cover": "Manhole Cover",
 
   "item.kamenridercraft.ridestriker_spawn_egg": "Ridestriker",
 

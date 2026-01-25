@@ -1862,6 +1862,7 @@
   "item.kamenridercraft.gift": "プレゼント",
   "item.kamenridercraft.gashapon_capsule": "ガシャポンカプセル",
   "item.kamenridercraft.halloween_gashapon_capsule": "ガシャポンカプセル",
+  "item.kamenridercraft.valentine_gashapon_capsule": "ガシャポンカプセル",
   "item.kamenridercraft.rider_case": "ライダーケース",
 
 
@@ -2741,6 +2742,7 @@
   "kamenridercraft:silver_evolution_caucasus.form": "フォーム: キングフォームシルバーバージョン",
   "kamenridercraft:evolution_giraffa.form": "フォーム: キングフォーム",
   "kamenridercraft:evolution_paradoxa.form": "フォーム: ワイルドフォーム",
+  "kamenridercraft:final_form_ride_chalice_choco.form": "フォーム: カリスチョコ",
   "kamenridercraft:evolution_tarantula.form": "フォーム: キングフォーム",
   "kamenridercraft:taiyaki_masterform": "フォーム: アルティメットフォーム",
 
@@ -3446,6 +3448,7 @@
 "item.kamenridercraft.black_rx_biorider_card": "フォームライド BLACK RX バイオライダー",
 "item.kamenridercraft.kuuga_ball": "ファイナルフォームライド クウガボール",
   "item.kamenridercraft.decade_ooo_armor_card": "ファイナルフォームライド オーズアーマー",
+  "item.kamenridercraft.final_form_ride_chalice_choco": "ファイナルフォームライド カリスチョコ",
 
   "kamenridercraft:kuuga_growing_card.form": "フォーム: クウガ グローイングフォーム",
   "kamenridercraft:kuuga_dragon_card.form": "フォーム: クウガ ドラゴンフォーム",
@@ -6318,6 +6321,7 @@
   "item.kamenridercraft.woz_time_majin_ridewatch": "白ウォズタイムマジーンライドウォッチ",
   "item.kamenridercraft.questionable_watch": "堂安家の時計",
   "item.kamenridercraft.toy_robot": "ロボット玩具",
+  "item.kamenridercraft.manhole_cover": "マンホールの蓋",
 
   "item.kamenridercraft.ridestriker_spawn_egg": "ライドストライカー",
 
@@ -9233,6 +9237,7 @@
   "block.kamenridercraft.castle_doran_logo": "キャッスルドランクレスト",
   "block.kamenridercraft.drive_pit_logo": "ドライブピットクレスト",
   "block.kamenridercraft.punkjackolantern": "パンクジャック・オ・ランタン",
+  "block.kamenridercraft.lovekov_plush": "ラブコブのぬいぐるみ",
   "block.kamenridercraft.vice_ducky": "バイスラバー・ダック",
   "block.kamenridercraft.ferbus": "ファーバス",
 

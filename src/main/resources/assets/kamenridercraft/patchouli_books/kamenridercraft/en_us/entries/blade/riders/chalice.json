@@ -45,6 +45,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Chalice",
 			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:blade/devices/chalice_rouzer)Chalice Rouzer$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed II$(li)Resistance II$(li)Strength III"
-		}
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "chalice_choco",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chalice_rouzer\",components:{custom_data:{slot_tex1:\"kamenridercraft:final_form_ride_chalice_choco\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Chalice Choco",
+        "text": "Accessed with the $(l:decade/items/final_formride_cards#chalice_choco)Final FormRide Chalice Choco$(/l) card"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Chalice",
+        "text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders: ~Let's Look! Only Your 48 Riders~ (2011, Net Movie)$(br2)Transforms with the $(l:blade/devices/chalice_rouzer)Chalice Rouzer$(/l)$(br2)Status Effects:$(li)Shrink VI$(li)Slowness III$(li)Saturation"
+      }
 	]
 }
