@@ -2494,6 +2494,9 @@ public class Zi_O_Rider_Items {
     public static final DeferredItem<Item> TOY_ROBOT = ITEMS.register("toy_robot",
             () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
+    public static final DeferredItem<SwordItem> MANHOLE_COVER = ITEMS.register("manhole_cover",
+            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -4.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(Items.IRON_INGOT));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

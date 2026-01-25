@@ -1445,7 +1445,21 @@ public class Decade_Rider_Items {
 				}
 			}.IsBike().IsGlowing().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
+    public static final DeferredItem<Item> CHALICE_FINAL_FORM_RIDE = ITEMS.register("final_form_ride_chalice_choco",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_final_form_ride","chalice","blank",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)
+            ,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 2,true,false)
+                    ,new MobEffectInstance(Effect_core.SMALL, 40, 5,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
+                            player.getX(), player.getY(),
+                            player.getZ(), 200, 0, 0, 0, 1);
+                }
+            }.HasCape().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 	public static final DeferredItem<Item> DECADECHESTPLATE = ITEMS.register("decadetroso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));

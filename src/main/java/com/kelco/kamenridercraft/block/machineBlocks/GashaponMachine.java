@@ -69,6 +69,8 @@ public class GashaponMachine extends MachineBlock {
           if (player.getItemInHand(hand).getItem() == Items.EMERALD){
               if (localdate.getMonthValue() == 10 && day >= 24) {
                   process(player, level, pos, hand, Miscellaneous_Rider_Items.HALLOWEEN_GASHAPON_CAPSULE.asItem());
+              }else if (localdate.getMonthValue() == 2 && day >= 13&& day <= 18) {
+                  process(player, level, pos, hand, Miscellaneous_Rider_Items.VALENTINE_GASHAPON_CAPSULE.asItem());
               }else {
                   process(player, level, pos, hand, Miscellaneous_Rider_Items.GASHAPON_CAPSULE.asItem());
               }

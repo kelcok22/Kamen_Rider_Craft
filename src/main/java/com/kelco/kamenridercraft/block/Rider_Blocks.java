@@ -1045,6 +1045,9 @@ public class Rider_Blocks {
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
                     .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1),Block.box(3, 0, 3, 13,7, 13)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<Block> LOVEKOV_PLUSH = registerBlock("lovekov_plush",
+			() -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL),Block.box(4, 0, 4, 18,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
+
     public static final DeferredBlock<Block> VICE_DUCKY = registerBlock("vice_ducky",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).sound(new SoundType(1.0F, 1.0F, SoundEvents.BAT_DEATH, SoundEvents.BAT_AMBIENT, SoundEvents.BAT_HURT, SoundEvents.BAT_HURT, SoundEvents.BAT_DEATH)),Block.box(4, 0, 4, 18,10, 12)).AddToTabList(RiderTabs.RIDER_DECOR));
 
