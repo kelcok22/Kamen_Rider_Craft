@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-17T23:22:31.5304654	Item Models: kamenridercraft
+// 1.21.1	2026-01-25T01:07:03.5966723	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -212,6 +212,7 @@ d952db9f3479b5a555833205978e358eb7056cdd assets/kamenridercraft/models/item/fake
 55a3eaa2337e76bd60f4218b1b6df60f447bf655 assets/kamenridercraft/models/item/fakegarulufuestle.json
 a14c95391c809d2b9c8295605cf00d92c7b0a3d1 assets/kamenridercraft/models/item/fake_double_typhoon.json
 3774060ae4a752684b486148143783bd26689b9b assets/kamenridercraft/models/item/fake_tornado.json
+1fff0e950a26e677a3719982708aa5e4cb12dfc3 assets/kamenridercraft/models/item/final_form_ride_chalice_choco.json
 b03c37f222b4e4051a21ca0b92e3d7bc952fcb9c assets/kamenridercraft/models/item/firemars_ride_chemy_card.json
 61f7f4b4dd3c6acc743be297edd5f33f82cee957 assets/kamenridercraft/models/item/firemars_ride_chemy_card_televikun.json
 62a810d150d7feb262c06ab7280fc38f94c1cd14 assets/kamenridercraft/models/item/fire_wall_vent.json
@@ -679,6 +680,7 @@ d854c86053b53d41e71f2d5b20307d42940d1c62 assets/kamenridercraft/models/item/umai
 8d83a17a078e587b2659b175f4b2659188abbac9 assets/kamenridercraft/models/item/utsubocchama_ride_chemy_card.json
 56682ea032b686bebcbcac5d0d671a55598a2133 assets/kamenridercraft/models/item/uzai_belt.json
 6b80ed0d3fcd5dc7a51fc9f25000af9271b132da assets/kamenridercraft/models/item/v3_gochizo.json
+7ad6b8dab422d4b7216de031074513623b9d6c55 assets/kamenridercraft/models/item/valentine_gashapon_capsule.json
 b93a732569da35ffdff76cc151eb41a508cd654a assets/kamenridercraft/models/item/valen_gochizo.json
 c19a0f725e304e48d94731f7601028278a872c68 assets/kamenridercraft/models/item/valvaradriver.json
 81077fc8124e784b6122aee503daa9549ba843a7 assets/kamenridercraft/models/item/vanfenrir_ride_chemy_card.json

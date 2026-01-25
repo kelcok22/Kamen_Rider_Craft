@@ -182,9 +182,7 @@ public class RiderFormChangeItem extends BaseItem {
     public Boolean get_Walk() {
         return USE_WALK;
     }
-    public Boolean get_is_Bike() {
-        return USE_BIKE;
-    }
+    public Boolean get_is_Bike() {return USE_BIKE;}
 
     public Boolean get_Is_Belt_Glowing() {
         return IS_BELT_GLOWING;
