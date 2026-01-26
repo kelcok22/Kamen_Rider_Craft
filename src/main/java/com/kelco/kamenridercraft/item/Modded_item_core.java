@@ -188,7 +188,7 @@ public class Modded_item_core {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_exbeeter","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOSDILE = ITEMS.register("chaosdile",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_chaosdile","kaixa","kaixa_driver_belt",
@@ -233,7 +233,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> AKANETAKA = ITEMS.register("akanetaka",
@@ -344,7 +344,7 @@ public class Modded_item_core {
                         }
                     }
                 }
-            }.hasStaticWings());
+            }.IsGlowing());
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI_BLADE = ITEMS.register("jinrai_no_senshi_blade",
