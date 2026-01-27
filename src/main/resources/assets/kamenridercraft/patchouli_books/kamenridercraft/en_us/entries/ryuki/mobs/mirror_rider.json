@@ -180,7 +180,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Femme",
-        "text": "Spawn locations: Basalt Deltas, Crimson Forest, Nether Wastes, Soul Sand Valley, Warped Forest$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#blancwing_advent)Blancwing Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#wing_slasher_vent)Wingslasher Sword Vent Cards$(/l) or $(l:ryuki/arsenal/guard_vent_cards#wing_shield_vent)Wingshield Guard Vent Cards$(/l)"
+        "text": "Spawn locations: Basalt Deltas, Crimson Forest, Nether Wastes, Soul Sand Valley, Warped Forest$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#blancwing_advent)Blancwing Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#wing_slasher_vent)Wingslasher Sword Vent Cards$(/l) or $(l:ryuki/arsenal/guard_vent_cards#wing_shield_vent)Wingshield Guard Vent Cards$(/l)"
       },
       {
         "type": "patchouli:entity",
@@ -191,7 +191,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Verde",
-        "text": "Spawn locations: Basalt Deltas, Crimson Forest, Nether Wastes, Soul Sand Valley, Warped Forest$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#biogreeza_advent)Biogreeza Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/bio_winder_vent)Biowinder Hold Vent Cards$(/l) or $(l:ryuki/arsenal/clear_vent)Clear Vent Cards$(/l)"
+        "text": "Spawn locations: Basalt Deltas, Crimson Forest, Nether Wastes, Soul Sand Valley, Warped Forest$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#biogreeza_advent)Biogreeza Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/bio_winder_vent)Biowinder Hold Vent Cards$(/l) or $(l:ryuki/arsenal/clear_vent)Clear Vent Cards$(/l)"
       },
       {
         "type": "patchouli:entity",
@@ -202,7 +202,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Abyss",
-        "text": "Spawn locations: City Dimension$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#abysslasher_advent)Abysslasher Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#abyss_saber_vent)Abysssaber Sword Vent Cards$(/l) or $(l:ryuki/arsenal/strike_vent_cards)Abyssclaw Strike Vent Cards$(/l)"
+        "text": "Spawn locations: City Dimension$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#abysslasher_advent)Abysslasher Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#abyss_saber_vent)Abysssaber Sword Vent Cards$(/l) or $(l:ryuki/arsenal/strike_vent_cards)Abyssclaw Strike Vent Cards$(/l)"
       },
       {
         "type": "patchouli:entity",
@@ -213,7 +213,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Zi-O (Mirror World version)",
-        "text": "Spawn locations: City Dimension$(br2)$(li)Drops$(li)1 $(l:zi_o/items/ridewatches#zi_o_mirror_ridewatch)Mirror Zi-O Ridewatch$(/l)$(li)2-3 $(l:zi_o/items/blank_watch)Blank Watches$(/l)"
+        "text": "Spawn locations: City Dimension$(br2)Drops$(li)1 $(l:zi_o/items/ridewatches#zi_o_mirror_ridewatch)Mirror Zi-O Ridewatch$(/l)$(li)2-3 $(l:zi_o/items/blank_watch)Blank Watches$(/l)"
       },
       {
         "type": "patchouli:entity",
@@ -236,6 +236,17 @@
         "type": "patchouli:text",
         "title": "Kamen Rider Alternative Zero",
         "text": "Spawn locations: End Barrens, End Highlands, End Midlands, Small End Islands, The End$(br2)Special moves:$(li)Uses Advent Cards to gain weapons$(li)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#psycorogue_advent)Psycorogue Advent Card$(/l)$(li)1-2 $(l:ryuki/arsenal/sword_vent_cards#slash_dagger_vent)Slashdagger Sword Vent Cards$(/l) or $(l:ryuki/arsenal/accele_vent)Accele Vent Cards$(/l)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "blade",
+        "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_blade\",components:{custom_data:{slot_tex1:\"kamenridercraft:guldthunder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+        "text": "Appears in:$(li)ICON: Tamotsu Shinohara Character Art Works (2006, art book)$(br)Health: 40"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Blade",
+        "text": "Spawn locations: $(l:den_o/dimensions/sands_of_time)Sands of Time$(br2)Drops$(li)1 $(l:ryuki/items/contract_advent_cards#guldthunder_advent)Guldthunder Advent Card"
       }
     ]
 }

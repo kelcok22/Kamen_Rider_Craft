@@ -2371,6 +2371,7 @@
 "item.kamenridercraft.dragblacker_advent": "Dragblacker Advent Card",
 "item.kamenridercraft.biogreeza_advent": "Biogreeza Advent Card",
 "item.kamenridercraft.abysslasher_advent": "Abysslasher Advent Card",
+  "item.kamenridercraft.guldthunder_advent": "Guldthunder Advent Card",
 "item.kamenridercraft.psycorogue_advent": "Psycorogue Advent Card",
 "item.kamenridercraft.survive_rekka": "Survive Card (Rekka)",
 "item.kamenridercraft.survive_shippu": "Survive Card (Shippu)",
@@ -2394,6 +2395,7 @@
   "item.kamenridercraft.advent_deck_abyss": "Advent Deck (Abyss)",
   "item.kamenridercraft.advent_deck_fatale": "Advent Deck (Fatale)",
   "item.kamenridercraft.advent_deck_alternative": "Advent Deck (Alternative)",
+  "item.kamenridercraft.advent_deck_blade": "Advent Deck (Blade)",
   "item.kamenridercraft.advent_deck_ryuki_survive": "Advent Deck (Ryuki Survive)",
   "item.kamenridercraft.advent_deck_knight_survive": "Advent Deck (Knight Survive)",
   "item.kamenridercraft.advent_deck_ouja_survive": "Advent Deck (Ouja Survive)",
@@ -2434,6 +2436,8 @@
 "kamenridercraft.name.alternative": "Debatable Rider: Alternative",
 "item.kamenridercraft.alternative_zero_v_buckle": "V Buckle Alternative",
 "kamenridercraft.name.alternative_zero": "Debatable Rider: Alternative Zero",
+  "item.kamenridercraft.v_buckle_blade": "V Buckle",
+  "kamenridercraft.name.blade_mirror": "Rider: Kamen Rider Blade",
 
 "item.kamenridercraft.ride_visor": "Ridevisor",
 "item.kamenridercraft.ride_saber": "Ridesaber",
@@ -2486,6 +2490,7 @@
 "item.kamenridercraft.abyss_visor": "Abyssvisor",
 "item.kamenridercraft.abyss_saber": "Abysssaber",
 "item.kamenridercraft.abyss_claw": "Abyssclaw",
+  "item.kamenridercraft.guld_visor": "Guldvisor",
 
 "item.kamenridercraft.ride_saber_vent": "Ridesaber Sword Vent Card",
 "item.kamenridercraft.drag_saber_vent": "Dragsaber Sword Vent Card",

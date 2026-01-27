@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "dragreder_advent",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Ryuki's $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Used to access Ryuki's $(l:ryuki/riders/ryuki#ryuki)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Ryuki's $(l:ryuki/arsenal/advent_decks#advent_deck_ryuki)Advent Deck$(/l)$(br2)Used to access Ryuki's $(l:ryuki/riders/ryuki#ryuki)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "darkwing_advent",
 			"title": "Darkwing Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Knight's $(l:ryuki/devices/v_buckle#v_buckle_knight)V Buckle (Knight)$(/l)$(br2)Used to access Knight's $(l:ryuki/riders/knight#knight)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Knight's $(l:ryuki/arsenal/advent_decks#advent_deck_knight)Advent Deck$(/l)$(br2)Used to access Knight's $(l:ryuki/riders/knight#knight)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 			"type": "patchouli:text",
 			"anchor": "volcancer_advent",
 			"title": "Volcancer Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Scissors's $(l:ryuki/devices/v_buckle#v_buckle_scissors)V Buckle (Scissors)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Scissors's $(l:ryuki/arsenal/advent_decks#advent_deck_scissors)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -45,7 +45,7 @@
 			"type": "patchouli:text",
 			"anchor": "magnugiga_advent",
 			"title": "Magnugiga Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Zolda's $(l:ryuki/devices/v_buckle#v_buckle_zolda)V Buckle (Zolda)$(/l)$(br2)Used to access Zolda's $(l:ryuki/riders/zolda#zolda)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Zolda's $(l:ryuki/arsenal/advent_decks#advent_deck_zolda)Advent Deck$(/l)$(br2)Used to access Zolda's $(l:ryuki/riders/zolda#zolda)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"anchor": "evildiver_advent",
 			"title": "Evildiver Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Raia's $(l:ryuki/devices/v_buckle#v_buckle_raia)V Buckle (Raia)$(/l)$(br2)Used to access Raia's $(l:ryuki/riders/raia#raia)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Raia's $(l:ryuki/arsenal/advent_decks#advent_deck_raia)Advent Deck$(/l)$(br2)Used to access Raia's $(l:ryuki/riders/raia#raia)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -71,7 +71,7 @@
 			"type": "patchouli:text",
 			"anchor": "metalgelas_advent",
 			"title": "Metalgelas Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Gai's $(l:ryuki/devices/v_buckle#v_buckle_gai)V Buckle (Gai)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Gai's $(l:ryuki/arsenal/advent_decks#advent_deck_gai)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "venosnaker_advent",
 			"title": "Venosnaker Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Ouja's $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle (Ouja)$(/l)$(br2)Used to access Ouja's $(l:ryuki/riders/ouja#ouja)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Ouja's $(l:ryuki/arsenal/advent_decks#advent_deck_ouja)Advent Deck$(/l)$(br2)Used to access Ouja's $(l:ryuki/riders/ouja#ouja)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -97,7 +97,7 @@
 			"type": "patchouli:text",
 			"anchor": "goldphoenix_advent",
 			"title": "Goldphoenix Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Odin's $(l:ryuki/devices/v_buckle#v_buckle_odin)V Buckle (Odin)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Odin's $(l:ryuki/arsenal/advent_decks#advent_deck_odin)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "destwilder_advent",
 			"title": "Destwilder Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Tiger's $(l:ryuki/devices/v_buckle#v_buckle_tiger)V Buckle (Tiger)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Tiger's $(l:ryuki/arsenal/advent_decks#advent_deck_tiger)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "gigazelle_advent",
 			"title": "Gigazelle Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Imperer's $(l:ryuki/devices/v_buckle#v_buckle_imperer)V Buckle (Imperer)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2000, TV show)$(br2)Used to craft Imperer's $(l:ryuki/arsenal/advent_decks#advent_deck_imperer)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -136,7 +136,7 @@
 			"type": "patchouli:text",
 			"anchor": "blancwing_advent",
 			"title": "Blancwing Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used to craft Femme's $(l:ryuki/devices/v_buckle#v_buckle_femme)V Buckle (Femme)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used to craft Femme's $(l:ryuki/arsenal/advent_decks#advent_deck_femme)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -149,7 +149,7 @@
 			"type": "patchouli:text",
 			"anchor": "dragblacker_advent",
 			"title": "Dragblacker Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used to craft Ryuga's $(l:ryuki/devices/v_buckle#v_buckle_ryuga)V Buckle (Ryuga)$(/l)$(br2)Used to access Ryuga's $(l:ryuki/riders/ryuga#ryuga)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used to craft Ryuga's $(l:ryuki/arsenal/advent_decks#advent_deck_ryuga)Advent Deck$(/l)$(br2)Used to access Ryuga's $(l:ryuki/riders/ryuga#ryuga)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -162,7 +162,7 @@
 			"type": "patchouli:text",
 			"anchor": "biogreeza_advent",
 			"title": "Biogreeza Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki Special: 13 Riders (2002, TV special)$(br2)Used to craft Verde's $(l:ryuki/devices/v_buckle#v_buckle_verde)V Buckle (Verde)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki Special: 13 Riders (2002, TV special)$(br2)Used to craft Verde's $(l:ryuki/arsenal/advent_decks#advent_deck_verde)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -175,7 +175,7 @@
 			"type": "patchouli:text",
 			"anchor": "abysslasher_advent",
 			"title": "Abysslasher Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Abyss's $(l:ryuki/devices/v_buckle#v_buckle_abyss)V Buckle (Abyss)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Abyss's $(l:ryuki/arsenal/advent_decks#advent_deck_abyss)Advent Deck$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -188,7 +188,7 @@
 			"type": "patchouli:text",
 			"anchor": "psycorogue_advent",
 			"title": "Psycorogue Advent Card",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used to craft Alternative's $(l:ryuki/devices/v_buckle_alternative#alternative_v_buckle)V Buckle Alternative$(/l)$(br2)Used to craft Alternative Zero's $(l:ryuki/devices/v_buckle_alternative#alternative_zero_v_buckle)V Buckle Alternative (Alternative Zero)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used to craft Alternative's $(l:ryuki/arsenal/advent_decks#advent_deck_alternative)Advent Deck"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -196,6 +196,19 @@
 			"item": "kamenridercraft:psycorogue_advent",
 			"title": " ",
 			"text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#alternative)Alternative$(/l)$(li)$(l:ryuki/mobs/mirror_rider#alternative_zero)Alternative Zero$(/l)"
-		}
-	]
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "guldthunder_advent",
+        "title": "Guldthunder Advent Card",
+        "text": "Appears in:$(li)ICON: Tamotsu Shinohara Character Art Works (2006, art book)$(br2)Used to craft Blade's $(l:ryuki/arsenal/advent_decks#advent_deck_abyss)Advent Deck$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:guldthunder_advent",
+        "title": " ",
+        "text": "Drops from $(li)$(l:ryuki/mobs/mirror_rider#blade)Kamen Rider Blade$(/l)"
+      }
+    ]
 }

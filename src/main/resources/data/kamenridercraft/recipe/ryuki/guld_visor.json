@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "blade",
+  "pattern": [
+	"XCX",
+	"XZX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:advent_card"
+	}, "C": {
+	  "item": "kamenridercraft:guldthunder_advent"
+	}, "Z": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:guld_visor"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "blade",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:advent_card"
+	},
+	"M": {
+	  "item": "kamenridercraft:advent_deck_blade"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:v_buckle_blade"
+  }	
+}

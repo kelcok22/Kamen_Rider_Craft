@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "ryuki",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:advent_deck_blank"
+    },
+    {
+      "item": "kamenridercraft:guldthunder_advent"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:advent_deck_blade"
+  }
+}

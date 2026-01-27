@@ -110,6 +110,13 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34297_, DifficultyInstance p_34298_, MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_) {
         p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
 
+
+        ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
+     if (p_34297_.getLevel().dimension() == SANDS_OF_TIME) {
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.BLADEDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GULD_VISOR.get()));
+        }
+
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
         if (p_34297_.getLevel().dimension() == CITY) {
 

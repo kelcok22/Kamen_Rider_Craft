@@ -235,6 +235,19 @@ public class Ryuki_Rider_Items {
 				}
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
+    public static final DeferredItem<Item> GULDTHUNDER_ADVENT = ITEMS.register("guldthunder_advent",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","blade","v_buckle_belt_blade",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.RYUKI_TAB_ITEM));
+
 	public static final DeferredItem<Item> SURVIVE_REKKA_RYUGA = ITEMS.register("survive_rekka_ryuga",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive","ryuga","v_buckle_belt_ryuga_s",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
@@ -430,13 +443,17 @@ public class Ryuki_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fatale",BLANCWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().Override_belt_text("v_buckle_belt_fatale").ChangeRepairItem(ADVENT_CARD.get()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM)); //TODO: Add a new card and remove Override_belt_text
 
-	public static final DeferredItem<Item> ALTERNATIVEDRIVER = ITEMS.register("alternative_v_buckle",
+    public static final DeferredItem<Item> ALTERNATIVEDRIVER = ITEMS.register("alternative_v_buckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alternative",PSYCOROGUE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().ChangeRepairItem(ADVENT_CARD.get()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ALTERNATIVEZERODRIVER = ITEMS.register("alternative_zero_v_buckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alternative_zero",PSYCOROGUE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().ChangeRepairItem(ADVENT_CARD.get()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+
+    public static final DeferredItem<Item> BLADEDRIVER = ITEMS.register("v_buckle_blade",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blade_mirror",GULDTHUNDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().ChangeRepairItem(ADVENT_CARD.get()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> RIDE_VISOR = ITEMS.register("ride_visor",
@@ -591,6 +608,9 @@ public class Ryuki_Rider_Items {
 
 	public static final DeferredItem<Item> ABYSS_CLAW = ITEMS.register("abyss_claw",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+
+    public static final DeferredItem<Item> GULD_VISOR = ITEMS.register("guld_visor",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> RIDE_SABER_VENT = ITEMS.register("ride_saber_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", RIDE_VISOR.get(), RIDE_SABER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -808,6 +828,8 @@ public class Ryuki_Rider_Items {
 			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ALTERNATIVE_DECK = ITEMS.register("advent_deck_alternative",
 			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+    public static final DeferredItem<Item> BLADE_DECK = ITEMS.register("advent_deck_blade",
+            () -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUKI_SURVIVE_DECK = ITEMS.register("advent_deck_ryuki_survive",
 			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_SURVIVE_DECK = ITEMS.register("advent_deck_knight_survive",
