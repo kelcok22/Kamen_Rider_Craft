@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:manhole_cover",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:final_form_ride_chalice_choco",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:love_core_medal",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:love_core2_medal",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:love_core3_medal",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:lovekov_plush",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:firemars_ride_chemy_card_televikun",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:inphoenix_ride_chemy_card_televikun",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:toki_meki_bridal_gashat",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:gashapon_capsule"
+}

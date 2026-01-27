@@ -63,11 +63,12 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
         GeoBone f_wheel = this.getAnimationProcessor().getBone("f_wheel");
         GeoBone f_wheel2 = this.getAnimationProcessor().getBone("f_wheel2");
         GeoBone poop_ball_vice = this.getAnimationProcessor().getBone("poop_ball_vice");
+        GeoBone cape = this.getAnimationProcessor().getBone("cape");
+
         GeoBone tire = this.getAnimationProcessor().getBone("tire");
         GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
         GeoBone tire3 = this.getAnimationProcessor().getBone("tire3");
 
-        GeoBone cape = this.getAnimationProcessor().getBone("cape");
         if (cape!= null&RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET))<0) cape.setRotX(RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
         if (cape!= null&RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET))!=0) cape.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
 
@@ -110,9 +111,5 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             poop_ball_vice.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
             poop_ball_vice.setRotZ(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
         }
-
-        //if (b_wheel != null) b_wheel.setRotX((float) entityData2.getWheelRotation());
-        //if (pedals != null) pedals.setRotX((float) entityData2.getWheelRotation());
-
     }
 }

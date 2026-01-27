@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zeztz",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:code_capsem"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:shock_capsem"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:breakam_breaker_knuckle"
+  }    
+}
+

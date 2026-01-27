@@ -716,7 +716,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:love_core_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -729,7 +729,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:love_core2_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -742,7 +742,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:love_core3_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",

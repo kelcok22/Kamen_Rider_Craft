@@ -1,0 +1,19 @@
+{
+	"name": "Lovekov Plush",
+	"icon": "kamenridercraft:lovekov_plush",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Can be worn on the head armor slot"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lovekov_plush",
+        "title": " ",
+        "text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
+      }
+    ]
+}

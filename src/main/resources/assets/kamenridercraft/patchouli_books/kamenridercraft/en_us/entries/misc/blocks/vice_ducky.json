@@ -2,7 +2,7 @@
   "name": "Vice Rubber Ducky",
   "icon": "kamenridercraft:vice_ducky",
   "category": "kamenridercraft:misc/blocks",
-  "sortnum": 52,
+  "sortnum": 53,
   "pages": [
     {
       "type": "patchouli:text",

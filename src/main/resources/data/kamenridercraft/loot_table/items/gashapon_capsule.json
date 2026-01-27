@@ -39,11 +39,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:ichigo_chair",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
           "name": "kamenridercraft:red_ichigo_chair",
           "weight": 1
         },
@@ -106,6 +101,21 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:gumgumgum_gochizo",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:vice_ducky",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:akari_cannon",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:roulette_lockseed",
           "weight": 1
         }
       ]

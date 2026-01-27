@@ -1459,7 +1459,7 @@
         "type": "patchouli:text",
         "anchor": "gigantliner_ride_chemy_card_fs",
         "title": "Gigantliner Ride Chemy Card (Final Stage ver.)",
-        "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#legendliner)Legendliner$(/l) form"
+        "text": "Appears in:$(li)Kamen Rider Gotchard: Final Stage (2024, stage show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#legendliner)Legendliner$(/l) form$(br2)"
       },
       {
         "type": "patchouli:crafting",
@@ -1483,7 +1483,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gotchard/firemars_ride_chemy_card_televikun"
+			"recipe": "kamenridercraft:gotchard/firemars_ride_chemy_card_televikun",
+          "text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1493,7 +1494,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gotchard/inphoenix_ride_chemy_card_televikun"
+			"recipe": "kamenridercraft:gotchard/inphoenix_ride_chemy_card_televikun",
+          "text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
 		},
       {
         "type": "patchouli:text",

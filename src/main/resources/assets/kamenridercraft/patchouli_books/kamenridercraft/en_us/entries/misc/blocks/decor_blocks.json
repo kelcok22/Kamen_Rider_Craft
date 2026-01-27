@@ -29,6 +29,16 @@
 			"item": "kamenridercraft:overlord_oopart2",
 			"text": "Found inside an $(l:agito/structures/overlord_oopart)Overlord's Out-of-place Artifact$(/l)"
 		},
+      {
+        "type": "patchouli:crafting",
+        "anchor": "glass_ryuki",
+        "recipe": "kamenridercraft:ryuki/glass_ryuki"
+      },
+      {
+        "type": "patchouli:crafting",
+        "anchor": "deepslate_glass_ryuki",
+        "recipe": "kamenridercraft:ryuki/deepslate_glass_ryuki"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "taddle_brick",

@@ -1862,6 +1862,7 @@
   "item.kamenridercraft.gift": "Gift",
   "item.kamenridercraft.gashapon_capsule": "Gashapon Capsule",
   "item.kamenridercraft.halloween_gashapon_capsule": "Gashapon Capsule",
+  "item.kamenridercraft.valentine_gashapon_capsule": "Gashapon Capsule",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
 
@@ -2742,6 +2743,7 @@
   "kamenridercraft:silver_evolution_caucasus.form": "Form: Silver King Form",
   "kamenridercraft:evolution_giraffa.form": "Form: King Form",
   "kamenridercraft:evolution_paradoxa.form": "Form: Wild Form",
+  "kamenridercraft:final_form_ride_chalice_choco.form": "Form: Chalice Choco",
   "kamenridercraft:evolution_tarantula.form": "Form: King Form",
   "kamenridercraft:taiyaki_masterform": "Form: Ultimate Form",
 
@@ -3453,6 +3455,7 @@
 "item.kamenridercraft.black_rx_biorider_card": "FormRide Black RX Bio Rider",
 "item.kamenridercraft.kuuga_ball": "Final FormRide Kuuga Ball",
   "item.kamenridercraft.decade_ooo_armor_card": "Final FormRide OOO Armor",
+  "item.kamenridercraft.final_form_ride_chalice_choco": "Final FormRide Chalice Choco",
 
   "kamenridercraft:kuuga_growing_card.form": "Form: Kuuga Growing Form",
   "kamenridercraft:kuuga_dragon_card.form": "Form: Kuuga Dragon Form",
@@ -6324,6 +6327,7 @@
   "item.kamenridercraft.woz_time_majin_ridewatch": "White Woz Time Mazine Ridewatch",
   "item.kamenridercraft.questionable_watch": "Questionable Watch",
   "item.kamenridercraft.toy_robot": "Toy Robot",
+  "item.kamenridercraft.manhole_cover": "Manhole Cover",
 
   "item.kamenridercraft.ridestriker_spawn_egg": "Ridestriker",
 
@@ -8444,6 +8448,9 @@
   "item.kamenridercraft.inazuma_blaster": "Inazuma Blaster",
   "item.kamenridercraft.inazuma_blaster_greatsword": "Inazuma Blaster (Greatsword Mode)",
   "item.kamenridercraft.breakam_buster": "Breakam Buster",
+  "item.kamenridercraft.breakam_breaker_blade": "Breakam Breaker (Blade Mode)",
+  "item.kamenridercraft.breakam_breaker_knuckle": "Breakam Breaker (Knuckle Mode)",
+  "item.kamenridercraft.breakam_breaker_shoot": "Breakam Breaker (Shoot Mode)",
 
   "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
 
@@ -9249,7 +9256,7 @@
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",
 "block.kamenridercraft.deepslate_stone_kuuga": "Deepslate Kuuga Ore",
 "block.kamenridercraft.glass_ryuki": "Advent Glass",
-"block.kamenridercraft.deepslate_glass_ryuki": "Deepslate Advent Glass",
+"block.kamenridercraft.deepslate_glass_ryuki": "Black Advent Glass",
 "block.kamenridercraft.stone_blade": "Blade Ore",
 "block.kamenridercraft.deepslate_stone_blade": "Deepslate Blade Ore",
 "block.kamenridercraft.stone_hibiki": "Oni Ore",
@@ -10613,7 +10620,7 @@
   "advancements.kamenridercraft.ghost.zero_specter.description": "Transform into Kamen Rider Zero Specter",
   "advancements.kamenridercraft.ghost.zero_specter.title": "I will guide him",
   "advancements.kamenridercraft.girls_remix.eins.description": "Transform into Kamen Rider Eins",
-  "advancements.kamenridercraft.girls_remix.eins.title": "Red Re-born",
+  "advancements.kamenridercraft.girls_remix.eins.title": "German science is the world's finest!",
   "advancements.kamenridercraft.gotchard.101_chemy.description": "Obtain all 100 main Chemies + Machwheel, Tenliner, Crosshopper, and Nijigon",
   "advancements.kamenridercraft.gotchard.101_chemy.title": "Gotcha! 101 Chemies",
   "advancements.kamenridercraft.gotchard.ancient_chemy.description": "Obtain all the Ancient Chemy Cards",

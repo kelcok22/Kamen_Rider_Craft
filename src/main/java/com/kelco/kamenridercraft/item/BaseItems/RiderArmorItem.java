@@ -148,13 +148,11 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
         RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
-        RawAnimation HENSHIN = RawAnimation.begin().thenLoop("henshin_pose");
 
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
             boolean IsWaking = false;
             boolean IsKicking = false;
-            boolean isTransforming = false;
             if (entity instanceof LivingEntity player) {
 
                 float X =0;
@@ -183,13 +181,8 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                    IsWaking = RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_Walk();
 
                 if (this instanceof RiderDriverItem belt) {
-
-
                     if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) > 0)setTransforming(player.getItemBySlot(EquipmentSlot.FEET),GetTransforming(player.getItemBySlot(EquipmentSlot.FEET))-0.2f);
                     if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) < 0) setTransforming(player.getItemBySlot(EquipmentSlot.FEET),0f);
-
-
-
 
                     if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_has_cape()) {
                         float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
@@ -230,17 +223,10 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                         setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
                     }
                 }
-                if (RiderDriverItem.isTransforming(player)) {
-                     isTransforming = true;
-                }
                 if (RiderDriverItem.isKicking(player)) IsKicking = true;
 
-
-
             }
-            /*if (isTransforming) {
-                state.setAndContinue(HENSHIN);
-            }else*/if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
+            if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
                 state.setAndContinue(KICK);
             } else state.setAndContinue(IsWaking ? WALK : IDLE);
             return PlayState.CONTINUE;

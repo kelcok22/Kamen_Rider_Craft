@@ -28,6 +28,19 @@
 			"item": "kamenridercraft:kuuga_ball",
 			"title": " ",
 			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "chalice_choco",
+        "title": "Final FormRide Chalice Choco",
+        "text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders: ~Let's Look! Only Your 48 Riders~ (2011, Net Movie)$(br2)Used to access Chalice's $(l:blade/riders/chalice#chalice_choco)Chalice Choco$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:final_form_ride_chalice_choco",
+        "title": " ",
+        "text": "Obtained by opening Valentine $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)Gashapon Capsules$(/l)"
+      }
 	]
 }
