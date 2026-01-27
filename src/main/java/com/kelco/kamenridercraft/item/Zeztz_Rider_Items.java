@@ -253,7 +253,7 @@ public class Zeztz_Rider_Items {
 
 
     public static final DeferredItem<Item> EXTRA_CAPSEM = ITEMS.register("extra_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","lord_three","lord_invoker_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","lord_three","lord_invoker_three_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -462,15 +462,15 @@ public class Zeztz_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> LORD_INVOKER_THREE = ITEMS.register("lord_invoker",
+    public static final DeferredItem<Item> lord_invoker_three_THREE = ITEMS.register("lord_invoker_three",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_three", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> LORD_INVOKER_FIVE = ITEMS.register("lord_invoker_five",
+    public static final DeferredItem<Item> lord_invoker_five = ITEMS.register("lord_invoker_five",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_five", SHOCK_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> LORD_INVOKER_SIX = ITEMS.register("lord_invoker_six",
+    public static final DeferredItem<Item> lord_invoker_six = ITEMS.register("lord_invoker_six",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_six", PANIC_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
