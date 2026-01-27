@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "lord_six",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:code_capsem"
+	},
+	"M": {
+	  "item": "kamenridercraft:panic_capsem"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:lord_invoker_six"
+  }	
+}

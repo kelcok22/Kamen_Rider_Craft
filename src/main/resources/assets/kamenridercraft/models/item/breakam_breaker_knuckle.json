@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/breakam_breaker_knuckle"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-180, 90, 38],
+			"translation": [0, -4, -1],
+			"scale": [0.75, 0.75, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-90, -90, 38],
+			"translation": [0, -4, -1],
+			"scale": [0.75, 0.75, 1]
+		}
+	}
+}
