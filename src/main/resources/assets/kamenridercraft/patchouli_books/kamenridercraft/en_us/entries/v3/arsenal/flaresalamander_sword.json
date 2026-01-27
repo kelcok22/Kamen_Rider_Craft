@@ -1,12 +1,12 @@
 {
-	"name": "Flaresalamander Sword",
+	"name": "Flarecalibur",
 	"icon": "kamenridercraft:flaresalamander_sword",
 	"category": "kamenridercraft:v3/arsenal",
 	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Used by V3 $(l:v3/riders/v3#flaresalamander_v3)Flaresalamander$(/l)"
+			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Used by V3's $(l:v3/riders/v3#super_mode)Super Mode$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

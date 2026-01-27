@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
@@ -23,9 +23,9 @@
 		},
 		{
 			"name": "HeadUpper",
-			"from": [5, 8.5, 4.5],
-			"to": [11, 10.5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 9.75, 6.75]},
+			"from": [5, 9, 4.5],
+			"to": [11, 11, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 10.25, 6.75]},
 			"faces": {
 				"north": {"uv": [7, 3.5, 8.5, 4], "texture": "#0"},
 				"east": {"uv": [6, 3.5, 7, 4], "texture": "#0"},
@@ -108,28 +108,28 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, 130, 0],
-			"translation": [1.75, 2.5, 0]
+			"rotation": [160, 50, -180],
+			"translation": [1.75, 1.75, -2.5]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, 130, 0],
-			"translation": [1.75, 2.5, 0]
+			"rotation": [160, 50, -180],
+			"translation": [1.75, 1.75, -2.5]
 		},
 		"firstperson_righthand": {
 			"rotation": [-24, 134, 12],
-			"translation": [0, 5.75, -0.5]
+			"translation": [1, 4.75, -2]
 		},
 		"firstperson_lefthand": {
 			"rotation": [-24, 134, 12],
-			"translation": [0, 5.75, -0.5]
+			"translation": [1, 4.75, -2]
 		},
 		"ground": {
 			"rotation": [90, -180, 0],
-			"translation": [0, 3, 0]
+			"translation": [0, 0, 2.5]
 		},
 		"gui": {
-			"rotation": [30, 135, 0],
-			"translation": [-0.75, 2.75, 0]
+			"rotation": [30, -135, 0],
+			"translation": [0.75, 2.75, 0]
 		},
 		"head": {
 			"translation": [0, 14.25, -1.75]

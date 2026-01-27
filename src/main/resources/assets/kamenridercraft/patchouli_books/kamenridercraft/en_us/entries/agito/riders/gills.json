@@ -52,8 +52,8 @@
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:leatheraider\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Leatheraider",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#leatheraider)Leatheraider Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#leatheraider)Leatheraider Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

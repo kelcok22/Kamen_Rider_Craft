@@ -34,12 +34,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "shadowmantis",
+			"anchor": "super_mode",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chalice_rouzer\",components:{custom_data:{slot_tex1:\"kamenridercraft:shadowmantis\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Shadowmantis",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#shadowmantis)Shadowmantis Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#shadowmantis)Shadowmantis Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

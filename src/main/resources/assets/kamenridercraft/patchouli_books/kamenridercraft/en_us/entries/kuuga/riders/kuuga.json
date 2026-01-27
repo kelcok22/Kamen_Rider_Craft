@@ -230,12 +230,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "jinrai_no_senshi",
+			"anchor": "jinrai_no_warrior",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Rising Mighty (Jinrai no Senshi)",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
+			"name": "Jinrai no Warrior",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#jinrai_no_senshi)Jinrai no Survive Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -258,12 +258,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "grandgouram",
+			"anchor": "super_mode",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:grandgouram\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Amazing Mighty w/ GrandGouram",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#grandgouram)GrandGouram Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#grandgouram)GrandGouram Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

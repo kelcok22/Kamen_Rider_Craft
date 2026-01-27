@@ -191,9 +191,9 @@ public class KamenRiderCraftCore
     }
 
     @SubscribeEvent
-    public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
+    public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
-        if (event.getRenderer().getModel()instanceof PlayerModel model) {
+        if (event.getRenderer().getModel()instanceof PlayerModel<?> model) {
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
                     && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
                 double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");

@@ -76,12 +76,12 @@
       },
 		{
 			"type": "patchouli:entity",
-			"anchor": "cyclonehopper_ichigo",
+			"anchor": "super_mode",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclonehopper\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Cyclonehopper",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#cyclonehopper)Cyclonehopper Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#cyclonehopper)Cyclonehopper Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
