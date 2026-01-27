@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-25T23:12:43.6309033	Item Models: kamenridercraft
+// 1.21.1	2026-01-27T17:16:15.2623291	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -196,6 +196,7 @@ d198a9fb1c4edd8ffbdb6d721a1fe1fd02e56bea assets/kamenridercraft/models/item/eldr
 d7980eee4186c04607c7bbedf7c44cfb15d059bd assets/kamenridercraft/models/item/eternal_ride_chemy_card.json
 b1f2db05f3dde80bb56b7108e7ce45b34f9c9e58 assets/kamenridercraft/models/item/evol_trigger_kaijin.json
 3857ec454154ff3b1f3ec7679ff3d4e532259d1b assets/kamenridercraft/models/item/evol_x_full_bottle.json
+87cd3c4f65090b1679873d35aa4c78c9d99187fc assets/kamenridercraft/models/item/extra_capsem.json
 793ee052b2e77a04f05fcc13f66d0563398573eb assets/kamenridercraft/models/item/ex_aid_capsem.json
 26658d18be3506f769879eb838bc3370a2f7472b assets/kamenridercraft/models/item/ex_aid_full_bottle.json
 c630174706759fafdc1d8ece3dbe3a368ebd1b79 assets/kamenridercraft/models/item/ex_aid_gochizo.json
@@ -422,6 +423,7 @@ df3cab92f918c11d717031b7abce4b2ddcf02cd5 assets/kamenridercraft/models/item/lang
 3fcf0340b09025e6cd3d3fb496e5668e1e9274c7 assets/kamenridercraft/models/item/light_blue_wallplate_wall.json
 8dae7fdc8aaa0760a698d1938256a136826cd641 assets/kamenridercraft/models/item/lion_senki_wonder_ride_book_xross.json
 c1a9772272e509ab06aff9def156d2bd5f2407b5 assets/kamenridercraft/models/item/lord_baron.json
+c0ed9e7f2d1412073a1e2c442fa270126d405a91 assets/kamenridercraft/models/item/lord_invoker.json
 55a534df216578fcc8bb7c8bbb1d59a335eb443b assets/kamenridercraft/models/item/lord_invoker_five.json
 035ee8b07b4cb34a15b669c2e742caaf7361d495 assets/kamenridercraft/models/item/lord_invoker_six.json
 0394f6bbfd94c70a04bd1cd1bf29b55070291d23 assets/kamenridercraft/models/item/lovekov_belt.json
