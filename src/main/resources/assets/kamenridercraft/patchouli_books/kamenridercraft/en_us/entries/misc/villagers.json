@@ -79,7 +79,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)$(l:ichigo/items/rider3_vs_the_demon_of_general_black)Rider 3 vs. The Demon of General Black Manga$(/l) for 2 emeralds$(li)$(l:kuuga/items/kuuga_manga)Kuuga Manga$(/l) for 2 emeralds$(br2)Apprentice Trades:$(li)$(l:misc/items/card_warrior_kamen_rider_manga)Card Warrior Kamen Rider Manga$(/l) for 2 emeralds"
+			"text": "Novice Trades:$(li)$(l:ichigo/items/rider3_vs_the_demon_of_general_black)Rider 3 vs. The Demon of General Black Manga$(/l) for 2 emeralds$(li)$(l:kuuga/items/kuuga_manga)Kuuga Manga$(/l) for 2 emeralds$(br2)Apprentice Trades:$(li)$(l:misc/items/card_warrior_kamen_rider_manga)Card Warrior Kamen Riders Manga$(/l) for 2 emeralds"
 		},
 		{
 			"type": "patchouli:entity",

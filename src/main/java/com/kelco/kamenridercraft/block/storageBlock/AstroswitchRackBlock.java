@@ -60,7 +60,7 @@ public class AstroswitchRackBlock extends ChestBlock {
 
     @Nullable
     public static Container getContainer(AstroswitchRackBlock chest, BlockState state, Level level, BlockPos pos, boolean override) {
-        return (Container)((Optional)chest.combine(state, level, pos, override).apply(CHEST_COMBINER)).orElse(null);
+        return (Container) chest.combine(state, level, pos, override).apply(CHEST_COMBINER).orElse(null);
     }
     public DoubleBlockCombiner.NeighborCombineResult<? extends AstroswitchRackBlockEntity> combine(BlockState state, Level level, BlockPos pos, boolean override) {
         BiPredicate bipredicate = null;
@@ -68,7 +68,7 @@ public class AstroswitchRackBlock extends ChestBlock {
             bipredicate = (p_51578_, p_51579_) -> false;
         }
 
-        return DoubleBlockCombiner.combineWithNeigbour((BlockEntityType)this.blockEntityType.get(), AstroswitchRackBlock::getBlockType, AstroswitchRackBlock::getConnectedDirection, FACING, state, level, pos, bipredicate);
+        return DoubleBlockCombiner.combineWithNeigbour(this.blockEntityType.get(), AstroswitchRackBlock::getBlockType, AstroswitchRackBlock::getConnectedDirection, FACING, state, level, pos, bipredicate);
     }
 
     protected BlockState rotate(BlockState state, Rotation rotation) {

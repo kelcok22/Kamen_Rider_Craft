@@ -62,12 +62,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "herculespader",
+			"anchor": "super_mode",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:herculespader\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Herculespader",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#herculespader)Herculespader Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#herculespader)Herculespader Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -76,12 +76,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "jinrai_no_senshi",
+			"anchor": "jinrai_no_warrior",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi_blade\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Jack Form (Jinrai no Senshi)",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
+			"name": "Jinrai no Warrior",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#jinrai_no_senshi)Jinrai no Survive Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

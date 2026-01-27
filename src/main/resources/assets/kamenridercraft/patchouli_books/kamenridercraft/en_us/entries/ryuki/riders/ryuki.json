@@ -76,12 +76,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragreder",
+			"anchor": "super_mode",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Dragreder",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#dragreder)Dragreder Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#dragreder)Dragreder Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -90,12 +90,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragranzer",
+			"anchor": "super_mode_survive",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragranzer\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Survive w/ Dragranzer",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#dragranzer)Dragranzer Card Warrior Card$(/l)"
+			"name": "Super Mode (Survive)",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#dragranzer)Dragranzer Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

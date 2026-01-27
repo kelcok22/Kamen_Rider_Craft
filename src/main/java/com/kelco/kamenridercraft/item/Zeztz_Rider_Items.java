@@ -291,7 +291,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_CAPSEM = ITEMS.register("gun_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_gun","nox","nox_driver_belt_gun",
@@ -304,7 +304,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WOLF_CAPSEM = ITEMS.register("wolf_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_wolf","nox","nox_driver_belt_wolf",
@@ -317,7 +317,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> VOID_CAPSEM = ITEMS.register("void_capsem",

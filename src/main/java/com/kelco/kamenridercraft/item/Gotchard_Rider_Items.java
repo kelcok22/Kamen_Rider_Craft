@@ -1983,7 +1983,7 @@ public class Gotchard_Rider_Items {
 					.setBaseSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get())
 					.setSuperSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get(), (RiderFormChangeItem) Faiz_Rider_Items.FAIZ_AXEL_MISSION_MEMORY.get())
 					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2).IsGlowing()
-					.ChangeRiderName("faiz_blaster").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					.ChangeRiderName("faiz_blaster").ChangeModel("faiz.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BLADE_KING_RIDE_CHEMY_CARD = ITEMS.register("blade_king_ride_chemy_card",
 			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),0,"","legend","legendriver_belt_l",

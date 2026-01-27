@@ -48,12 +48,12 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "flaresalamander_v3",
+			"anchor": "super_mode",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaresalamander\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Flaresalamander",
-			"text": "Accessed with the $(l:misc/items/card_warrior_cards#flaresalamander)Flaresalamander Card Warrior Card$(/l)"
+			"name": "Super Mode",
+			"text": "Accessed with the $(l:misc/items/ride_monster_cards#flaresalamander)Flaresalamander Ride Monster Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

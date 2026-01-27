@@ -23,9 +23,9 @@
 		},
 		{
 			"name": "HeadUpper",
-			"from": [5, 8.5, 4.5],
-			"to": [11, 10.5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 9.75, 6.75]},
+			"from": [5, 9, 4.5],
+			"to": [11, 11, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 10.25, 6.75]},
 			"faces": {
 				"north": {"uv": [7, 3.5, 8.5, 4], "texture": "#0"},
 				"east": {"uv": [6, 3.5, 7, 4], "texture": "#0"},
