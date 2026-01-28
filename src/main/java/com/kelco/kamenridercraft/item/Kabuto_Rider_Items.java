@@ -409,6 +409,24 @@ public class Kabuto_Rider_Items {
                 }
             }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
+    public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper_clock_up","kabuto","kabuto_rider_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 30,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 500, 0, 0, 0, 1);
+                }
+            }.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)KABUTO_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+
+
     public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -426,7 +444,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+            }.IsGlowing().addSwitchForm(HYPER_ZECTER_CLOCK_UP.asItem()).addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zectrooper","zectrooper_belt",
