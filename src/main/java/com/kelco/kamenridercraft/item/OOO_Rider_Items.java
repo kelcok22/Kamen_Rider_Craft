@@ -1357,7 +1357,7 @@ public class OOO_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> MEDAGABURYU = ITEMS.register("medagaburyu",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.WITHER_SKULL).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.CELL_MEDAL).setDamage(14).setCooldown(20).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> TAJASPINNER_ETERNITY = ITEMS.register("tajaspinner_eternity",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
@@ -1370,7 +1370,7 @@ public class OOO_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> BIRTH_BUSTER = ITEMS.register("birth_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).setCooldown(1).setProjectile(BaseBlasterItem.BlasterProjectile.CELL_MEDAL).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
 
 
 	public static final DeferredItem<Item> O_SCANNER = ITEMS.register("o_scanner",

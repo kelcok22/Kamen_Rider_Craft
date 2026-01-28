@@ -707,6 +707,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.WEAPON_PROJECTILE.get(), ThrownWeaponRenderer::new);
             event.registerEntityRenderer(MobsCore.SHURIKEN_PROJECTILE.get(), ThrownShurikenRenderer::new);
             event.registerEntityRenderer(MobsCore.LASER_PROJECTILE.get(), LaserProjectileRenderer::new);
+            event.registerEntityRenderer(MobsCore.CELL_MEDAL_PROJECTILE.get(), CellMedalProjectileRenderer::new);
 
         }
 

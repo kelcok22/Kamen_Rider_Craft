@@ -11300,5 +11300,8 @@
   "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe",
 
   "death.attack.rider_kick": "%1$s received a Rider Kick to the face",
-  "death.attack.rider_kick.player": "%1$s was defeated by %2$ using a Rider Kick"
+  "death.attack.rider_kick.player": "%1$s was defeated by %2$ using a Rider Kick",
+
+  "death.attack.medal": "%1$s kept the change",
+  "death.attack.medal.player": "%2$  kindly lent %1$s some silver"
 }

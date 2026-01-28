@@ -1,12 +1,10 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
 
-import java.util.List;
-
 import com.google.common.collect.ImmutableMultimap;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.projectile.CellMedalProjectileEntity;
 import com.kelco.kamenridercraft.entities.projectile.LaserProjectileEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.BlockPos;
@@ -35,6 +33,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.event.EventHooks;
 
 import javax.annotation.Nullable;
+import java.util.List;
 
 public class BaseBlasterItem extends BowItem {
 	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
@@ -43,7 +42,7 @@ public class BaseBlasterItem extends BowItem {
 	private static int LFBB = 1;
 	private Item craftingRemainingItem = null;
 	private int cooldown = 5;
-	private float laserDamage = 4;
+	private float weaponDamage = 4;
 
 	public enum BlasterProjectile {
 		ARROW,
@@ -62,6 +61,7 @@ public class BaseBlasterItem extends BowItem {
 			}
 		},
 		LASER,
+		CELL_MEDAL,
 		ENDER_PEARL {
 			public void fire(LivingEntity user, Vec3 movement) {
 				ThrownEnderpearl fireball = new ThrownEnderpearl(user.level(),user);
@@ -145,7 +145,7 @@ public class BaseBlasterItem extends BowItem {
 	}
 
 	public BaseBlasterItem setDamage(float damageChange) {
-		this.laserDamage = damageChange;
+		this.weaponDamage = damageChange;
 		return this;
 	}
 
@@ -162,10 +162,15 @@ public class BaseBlasterItem extends BowItem {
 			}
 			if (FormChangeItem != null && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
 			if (projectile != BlasterProjectile.ARROW) {
-				if (projectile == BlasterProjectile.LASER) {
-					laserFire(player, player.getDeltaMovement());
-				} else {
-					projectile.fire(player, player.getLookAngle());
+				switch (projectile) {
+					case LASER:
+						laserFire(player, player.getDeltaMovement());
+						break;
+					case CELL_MEDAL:
+						cellFire(player, player.getDeltaMovement());
+						break;
+					default:
+						projectile.fire(player, player.getLookAngle());
 				}
 				stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 			}
@@ -208,8 +213,15 @@ public class BaseBlasterItem extends BowItem {
 		LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
 		laserProjectile.setNoGravity(true);
 		laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 0F);
-		laserProjectile.setDamage(this.laserDamage);
+		laserProjectile.damageValue = this.weaponDamage;
 		user.level().addFreshEntity(laserProjectile);
+	}
+
+	public void cellFire(LivingEntity user, Vec3 movement) {
+		CellMedalProjectileEntity cellProjectile = new CellMedalProjectileEntity(user, user.level());
+		cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
+		cellProjectile.damageValue = this.weaponDamage;
+		user.level().addFreshEntity(cellProjectile);
 	}
 
 	public int getDefaultProjectileRange() {
