@@ -28,7 +28,6 @@ public class BasePickaxeItem extends PickaxeItem {
 
 	public BasePickaxeItem(Tier toolTier, int Atk, float Spd, Properties prop) {
 		super(toolTier, prop.attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
-
 	}
 
 	public BasePickaxeItem ChangeRepairItem(Item item) {
