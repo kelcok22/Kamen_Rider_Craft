@@ -1,12 +1,16 @@
 
 package com.kelco.kamenridercraft.item.decade;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.world.inventory.DiendriverGuiMenu;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
@@ -89,7 +93,28 @@ public class DiendriverItem extends BaseBlasterItem {
 		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem)player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
 			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
-			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))) {
+			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderSummonCardItem && item.is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/rider_cards/kaijinride")))))) {
+				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)).count());
+				List<String> cardNames = new ArrayList<>();
+
+				contents.nonEmptyItems().forEach(card -> {
+					if (card.getItem() instanceof RiderSummonCardItem summonCard && card.is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/rider_cards/kaijinride")))) {
+						cardNames.add(Component.translatable(card.getItem() + ".name").getString());
+						summonCard.summon(card, level, player);
+					}
+				});
+
+				switch (cardNames.size()) {
+					case 1: 
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kaijinride", cardNames.getFirst()), true);
+						break;
+					case 2: 
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kaijinride_2", cardNames.get(0), cardNames.get(1)), true);
+						break;
+					default: 
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kaijinride_3", cardNames.get(0), cardNames.get(1), cardNames.get(2)), true);
+				}
+			} else if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))) {
 				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)).count());
 				List<String> cardNames = new ArrayList<>();
 
@@ -104,13 +129,13 @@ public class DiendriverItem extends BaseBlasterItem {
 				});
 
 				switch (cardNames.size()) {
-					case 1: 
+					case 1:
 						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride", cardNames.getFirst()), true);
 						break;
-					case 2: 
+					case 2:
 						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_2", cardNames.get(0), cardNames.get(1)), true);
 						break;
-					default: 
+					default:
 						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_3", cardNames.get(0), cardNames.get(1), cardNames.get(2)), true);
 				}
 			} else {
