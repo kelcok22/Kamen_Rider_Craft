@@ -43,6 +43,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -89,6 +90,8 @@ public class KamenRiderCraftCore
 
     public static List<Item> KUUGA_CHANGING_ITEM= new ArrayList<>();
     public static List<Item> KUUGA_PHONE= new ArrayList<>();
+
+    public static List<Item> CLOCK_UP_ITEM= new ArrayList<>();
 
     public static List<Item> RAISE_RISER_ITEM= new ArrayList<>();
 
@@ -302,6 +305,27 @@ public class KamenRiderCraftCore
                                 return 0;
                             }
                             //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+                        }
+                );
+            }
+            for (Item item : CLOCK_UP_ITEM) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else {
+                                if (p_174637_ instanceof Player player) {
+                                    if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)) {
+                                        if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))) {
+                                            return 1;
+                                        } else {
+                                            return 0;
+                                        }
+                                    }
+
+                                    return 0;
+                                }
+                                return 0;
+                            }
                         }
                 );
             }
