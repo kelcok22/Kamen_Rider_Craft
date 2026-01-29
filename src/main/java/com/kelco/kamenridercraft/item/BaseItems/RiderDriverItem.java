@@ -69,7 +69,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties);
+        super(material, BasicArmorItem.Type.BOOTS, properties);
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -82,7 +82,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider,DeferredItem<Item> baseFormItem,DeferredItem<Item> armorFormItem,DeferredItem<Item> head,DeferredItem<Item>torso,DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties);
+        super(material, BasicArmorItem.Type.BOOTS, properties);
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)armorFormItem.get());

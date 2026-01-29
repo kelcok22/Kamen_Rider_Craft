@@ -194,7 +194,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(GATACK_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_HYPER_ZECTER = ITEMS.register("gatack_hyper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","gatack","gatack_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),1,"_hyper","gatack","gatack_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -409,26 +409,8 @@ public class Kabuto_Rider_Items {
                 }
             }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
-    public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper_clock_up","kabuto","kabuto_rider_belt",
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 30,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 500, 0, 0, 0, 1);
-                }
-            }.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)KABUTO_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
-
-
     public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper","kabuto","kabuto_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),1,"_hyper","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -444,7 +426,45 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addSwitchForm(HYPER_ZECTER_CLOCK_UP.asItem()).addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+            }.IsGlowing().addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+
+    public static final DeferredItem<Item> GATACK_HYPER_ZECTER_CLOCK_UP = ITEMS.register("gatack_hyper_zecter_clock_up",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper_clock_up","gatack","gatack_rider_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 30, 0, 0, 0, 1);
+                }
+            }.IsGlowing());
+
+
+    public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper_clock_up","kabuto","kabuto_rider_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 30,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 500, 0, 0, 0, 1);
+                }
+            }.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()));
+
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zectrooper","zectrooper_belt",
@@ -522,34 +542,34 @@ public class Kabuto_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> KABUTO_KUNAI_KUNAI = ITEMS.register("kabuto_kunai_kunai",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECT_MIZER = ITEMS.register("zect_mizer",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> PERFECT_ZECTER = ITEMS.register("perfect_zecter",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> DRAKE_GLIP = ITEMS.register("drake_grip",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                     .IsHenshinItem(DRAKE_RIDER_BELT.get()).ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> SASWORD_YAIVER = ITEMS.register("sasword_yaiver",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .IsHenshinItem(SASWORD_RIDER_BELT.get()).ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> GATACK_DOUBLE_CALIBUR = ITEMS.register("gatack_double_calibur",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> GATACK_DOUBLE_CALIBUR_MINUS = ITEMS.register("gatack_double_calibur_minus",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> GATACK_DOUBLE_CALIBUR_TWIN = ITEMS.register("gatack_double_calibur_twin",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECT_KUNAI = ITEMS.register("zect_kunai",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECT_KUNAI_KUNAI = ITEMS.register("zect_kunai_kunai",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> MACHINEGUN_BLADE = ITEMS.register("machinegun_blade",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -3F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)

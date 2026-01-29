@@ -413,10 +413,10 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.V3_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> ROPE_ARM = ITEMS.register("rope_arm",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.6F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.6F, new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> POWER_ARM = ITEMS.register("power_arm",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DRILL_ARM = ITEMS.register("drill_arm",
             () -> new DrillArmItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
@@ -425,7 +425,7 @@ public class Ichigo_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> CUTTER_ARM = ITEMS.register("cutter_arm",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
 
 
     public static final DeferredItem<Item> V3_HOPPER = ITEMS.register("v3_hopper",
@@ -526,7 +526,7 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLO_SHOT = ITEMS.register("apollo_shot",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
@@ -918,7 +918,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_moon",GREEN_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item> SATANSABER = ITEMS.register("satansaber",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     //Black RX
@@ -1013,16 +1013,16 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item>REVOLCANE = ITEMS.register("revolcane",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item> VORTECHSHOOTER = ITEMS.register("vortech_shooter",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item> BIOBLADE = ITEMS.register("bio_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOWSABER = ITEMS.register("shadow_saber",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     // Shin
 

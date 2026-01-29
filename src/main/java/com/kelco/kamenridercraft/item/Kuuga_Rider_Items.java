@@ -330,11 +330,11 @@ public class Kuuga_Rider_Items {
 
 
 	public static final DeferredItem<Item> DRAGON_ROD = ITEMS.register("dragon_rod",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToTabList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
 	public static final DeferredItem<Item> PEGASUS_BOWGUN = ITEMS.register("pegasus_bowgun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToTabList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
 	public static final DeferredItem<Item> TITAN_SWORD = ITEMS.register("titan_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToTabList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
 
 	public static final DeferredItem<Item> KUUGA_PHONE = ITEMS.register("kuuga_phone",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.KUUGA_PHONE).AddToList(RiderTabs.KUUGA_TAB_ITEM));

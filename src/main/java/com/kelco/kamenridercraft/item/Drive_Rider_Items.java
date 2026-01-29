@@ -1122,7 +1122,7 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(GordDriveEntity.THINGS_AND_STUFF).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
@@ -1142,7 +1142,7 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(GordDriveEntity.THINGS_AND_STUFF).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get())
@@ -1154,39 +1154,39 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> BRAIN_MEGANE_BLADE = ITEMS.register("brain_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> JUSTICE_CAGE = ITEMS.register("justice_cage",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRUM_SHIELD_RED = ITEMS.register("drum_shield_red",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRUM_SHIELD_GREEN = ITEMS.register("drum_shield_green",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MONSTER_TOP = ITEMS.register("monster_top",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MONSTER_BOTTOM = ITEMS.register("monster_bottom",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> RUMBLE_SMASHER = ITEMS.register("rumble_smasher",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CURE_QUICKER = ITEMS.register("cure_quicker",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TEN_TON_WEIGHT = ITEMS.register("ten_ton_weight",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

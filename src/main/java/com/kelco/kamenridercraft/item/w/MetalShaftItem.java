@@ -35,7 +35,7 @@ public class MetalShaftItem extends BaseSwordItem {
 			}return true;
 		   }
 	
-	public MetalShaftItem AddToTabList(List<Item> TabList) {
+	public MetalShaftItem AddToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}
