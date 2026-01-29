@@ -425,19 +425,19 @@ public class Modded_item_core {
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.Misc_TAB_ITEM)
                     .ChangeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> HERCULESPADER_SWORD = ITEMS.register("herculespader_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM)
                     .ChangeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> DARKWING_SWORD = ITEMS.register("darkwing_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM)
                     .ChangeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> FLARESALAMANDER_SWORD = ITEMS.register("flaresalamander_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM)
                     .ChangeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<SignItem> HELHEIM_SIGN_ITEM = ITEMS.register("helheim_sign_item",

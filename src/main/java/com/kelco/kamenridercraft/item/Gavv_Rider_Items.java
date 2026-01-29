@@ -1532,15 +1532,15 @@ public class Gavv_Rider_Items {
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> ZAKUZAKUCHIPSLASHER = ITEMS.register("zakuzakuchipslasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> ZAKUZAKUCHIPSLASHER_CHOCO = ITEMS.register("zakuzakuchipslasher_choco",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 
@@ -1553,7 +1553,7 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> XMAX_GAVV = ITEMS.register("xmax_gavv",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SHIELD_SNACK_SHIELD = ITEMS.register("shield_snack_shield",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
@@ -1562,11 +1562,11 @@ public class Gavv_Rider_Items {
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVWHIPIR = ITEMS.register("gavvwhipir",
-			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> HEXEN_BLADE = ITEMS.register("hexen_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VALENBUSTER = ITEMS.register("valenbuster",
@@ -1574,7 +1574,7 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> XMAX_VALEN = ITEMS.register("xmax_valen",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRAMBREAKER = ITEMS.register("vrambreaker",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GAVV_TAB_ITEM)
@@ -1584,7 +1584,7 @@ public class Gavv_Rider_Items {
 			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BITTER_GAVVGABLADE = ITEMS.register("bitter_gavvgablade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BAKEMAGNUM = ITEMS.register("bakemagnum",
@@ -1592,11 +1592,11 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> JEEB_DAGGER = ITEMS.register("jeeb_dagger",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> JEEB_SWORD = ITEMS.register("jeeb_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SHIITA_GUN = ITEMS.register("shiita_gun",
@@ -1608,11 +1608,11 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GLOTTA_SCYTHE = ITEMS.register("glotta_scythe",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> LANGO_SWORD = ITEMS.register("lango_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 
@@ -1621,23 +1621,23 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(HEATPRESS.get()));
 
 	public static final DeferredItem<Item> WHIPPED_ROD = ITEMS.register("whipped_rod",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> NINGYO_SWORD = ITEMS.register("ningyo_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> MENSEN_KANABO = ITEMS.register("mensen_kanabo",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> UIROU_TONFA_1 = ITEMS.register("uirou_tonfa_1",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> UIROU_TONFA_2 = ITEMS.register("uirou_tonfa_2",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

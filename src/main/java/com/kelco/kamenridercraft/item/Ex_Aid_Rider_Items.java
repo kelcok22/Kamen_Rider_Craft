@@ -1887,7 +1887,7 @@ public class Ex_Aid_Rider_Items {
 
 
     public static final DeferredItem<Item> GASHACON_BREAKER = ITEMS.register("gashacon_breaker",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsChangeSword().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_KEY_SLASHER = ITEMS.register("gashacon_key_slasher",
@@ -1895,7 +1895,7 @@ public class Ex_Aid_Rider_Items {
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SWORD = ITEMS.register("gashacon_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsChangeSword().AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_MAGNUM = ITEMS.register("gashacon_magnum_gun",
@@ -1903,11 +1903,11 @@ public class Ex_Aid_Rider_Items {
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_A = ITEMS.register("gashacon_sparrow_sickle_a",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_B = ITEMS.register("gashacon_sparrow_sickle_b",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_ARROW = ITEMS.register("gashacon_sparrow_arrow",
@@ -1935,28 +1935,28 @@ public class Ex_Aid_Rider_Items {
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> TRUE_BRAVE_SWORD = ITEMS.register("true_brave_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> FUUMA_SWORD = ITEMS.register("fuuma_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GENIN_WEAPON = ITEMS.register("genin_weapon",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> BUGSTER_TRIDENT = ITEMS.register("bugster_trident",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GRAPHITE_FANG = ITEMS.register("graphite_fang",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> DEUS_RUSHER = ITEMS.register("deus_rusher",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> DEUS_RAMPART = ITEMS.register("deus_rampart",
@@ -1964,7 +1964,7 @@ public class Ex_Aid_Rider_Items {
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> DEUS_RUSHER_RED = ITEMS.register("deus_rusher_red",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 15, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 15, -2.4F, new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM)
                     .ChangeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> MACHINA_RAMPART = ITEMS.register("machina_rampart",

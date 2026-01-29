@@ -263,11 +263,11 @@ public class Reboot_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadowmoon",KING_STONE_MOON ,BLACKSUNHELMET,BLACKSUNCHESTPLATE,BLACKSUNLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BLACK_SUN_TAB_ITEM));
 
 	public static final DeferredItem<Item> CENTURY_KING_BLACK_BLADE = ITEMS.register("century_king_black_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_SUN_TAB_ITEM));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLACK_SUN_TAB_ITEM));
 	public static final DeferredItem<Item> CENTURY_KING_SHADOW_BLADE = ITEMS.register("century_king_shadow_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_SUN_TAB_ITEM));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLACK_SUN_TAB_ITEM));
 	public static final DeferredItem<Item> SATANSABRE = ITEMS.register("satansabre",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_SUN_TAB_ITEM));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLACK_SUN_TAB_ITEM));
 
 
 	//Kamen Rider the First

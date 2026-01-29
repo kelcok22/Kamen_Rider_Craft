@@ -767,11 +767,11 @@ public class W_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item>METAL_SHAFT = ITEMS.register("metal_shaft",
-			() -> new MetalShaftItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new MetalShaftItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> PRISM_BICKER = ITEMS.register("prism_bicker",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> SHIELD_PRISM_BICKER = ITEMS.register("shield_prism_bicker",
@@ -779,19 +779,19 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> ETERNAL_EDGE = ITEMS.register("eternal_edge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> SKILL_MAGNUM = ITEMS.register("skull_magnum",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> ENGINE_BLADE = ITEMS.register("engine_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> BOMB_MAGNUM = ITEMS.register("bomb_magnum",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> NASCA_BLADE = ITEMS.register("nasca_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> T2_MEMORY_CASE = ITEMS.register("t2_memory_case",
 			() -> new T2MemoryCaseItem().has_basic_model().model_has_different_name("rider_case").AddToList(RiderTabs.W_TAB_ITEM));

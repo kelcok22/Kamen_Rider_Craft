@@ -747,20 +747,20 @@ public class Fourze_Rider_Items {
 
 
 	public static final DeferredItem<Item> BILLY_THE_ROD = ITEMS.register("billy_the_rod",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> HEE_HACKGUN = ITEMS.register("hee_hackgun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> BARIZUN_SWORD = ITEMS.register("barizun_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> SHIELD_MODULE = ITEMS.register("shield_module",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM)
 					.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> METEOR_STORM_SHAFT = ITEMS.register("meteor_storm_shaft",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

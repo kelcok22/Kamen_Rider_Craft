@@ -1700,22 +1700,22 @@ public class Gaim_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> MUSOU_SABER_NAGINATA = ITEMS.register("musou_saber_naginata",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> BLOOD_MUSOU_SABER_NAGINATA = ITEMS.register("blood_musou_saber_naginata",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> MUSOU_SABER_KUSARIGAMA = ITEMS.register("musou_saber_kusarigama",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DJ_GUN = ITEMS.register("dj_gun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DJ_GUN_TAIKEN_MODE = ITEMS.register("dj_gun_taiken_mode",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> KACHIDOKI_BATA = ITEMS.register("kachidoki_bata",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	// public static final DeferredItem<Item> DJ_GUN_SOJINTO_MODE = ITEMS.register("dj_gun_sojinto_mode",
 	// 		() -> new BaseSwordItem(Tiers.DIAMOND, 22, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
@@ -1724,106 +1724,106 @@ public class Gaim_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> ZANGETSU_DJ_GUN_TAIKEN_MODE = ITEMS.register("zangetsu_dj_gun_taiken_mode",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> ZANGETSU_KACHIDOKI_BATA = ITEMS.register("zangetsu_kachidoki_bata",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> JOESHUIMU = ITEMS.register("joeshuimu",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SHEIMU = ITEMS.register("sheimu",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DAU = ITEMS.register("dau",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DIMUBU = ITEMS.register("dimubu",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> GURONBARYAMU = ITEMS.register("guronbaryamu",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SHINE_DONKACHI = ITEMS.register("shine_donkachi",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SHINE_LYCHEE_SWORD = ITEMS.register("shine_lychee_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> HELLS_CANE = ITEMS.register("hells_cane",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> KAGEMATSU = ITEMS.register("kagematsu",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DONKACHI = ITEMS.register("donkachi",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> MELON_DEFENDER = ITEMS.register("melon_defender",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> PINE_IRON = ITEMS.register("pine_iron",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<SwordItem> ICHIGO_KUNAI = ITEMS.register("ichigo_kunai",
 			() -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DAIDAIMARU = ITEMS.register("daidaimaru",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> BANA_SPEAR = ITEMS.register("banana_spear",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> BUDOU_RYUHOU = ITEMS.register("budou_ryuhou",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> MANGO_PUNISHER = ITEMS.register("mango_punisher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DURI_NOKO = ITEMS.register("duri_noko",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> KIWI_GEKIRIN = ITEMS.register("kiwi_gekirin",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SONIC_ARROW = ITEMS.register("sonic_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> KAGEMATSU_SHIN = ITEMS.register("kagematsu_shin",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SUIKA_SOJINTO = ITEMS.register("suika_sojinto",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SUIKA_SOJINTO_BARON_VER = ITEMS.register("suika_sojinto_baron_ver",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SUIKA_SOJINTO_KNUCKLE_VER = ITEMS.register("suika_sojinto_knuckle_ver",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> GIGA_DURI_NOKO = ITEMS.register("king_duri_noko",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> BLOOD_DAIDAIMARU = ITEMS.register("blood_daidaimaru",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> YOMIMARU = ITEMS.register("yomimaru",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SWORD_BRINGER = ITEMS.register("sword_bringer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> APPLE_REFLECTER = ITEMS.register("apple_reflecter",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> LEMON_RAPIER = ITEMS.register("lemon_rapier",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> SOUGINJOU = ITEMS.register("souginjou",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> DARK_DAIDAIMARU = ITEMS.register("dark_daidaimaru",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> WATERMELON_DEFENDER = ITEMS.register("watermelon_defender",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
@@ -1832,10 +1832,10 @@ public class Gaim_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> KABI_DAIDAIMARU = ITEMS.register("kabi_daidaimaru",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> MAJAS_SWORD = ITEMS.register("maja_yomimaru",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> LORD_BARON_FRAGMENT = ITEMS.register("lord_baron_fragment",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));

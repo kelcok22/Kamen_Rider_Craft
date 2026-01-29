@@ -41,7 +41,7 @@ public class BaseSwordItem extends SwordItem {
 		return p_40393_.getItem()== RepairItem;
 	}
 
-	public BaseSwordItem AddToTabList(List<Item> TabList) {
+	public BaseSwordItem AddToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}

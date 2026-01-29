@@ -36,8 +36,11 @@ public class Miscellaneous_Rider_Items {
 	public static final DeferredItem<Item> V3_MASK = ITEMS.register("v3_mask",
 			() -> new MaskItem(new Item.Properties().stacksTo(1)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> RIDERMAN_HELMET = ITEMS.register("riderman_helmet",
+            () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(),"riderman","riderman").isGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
-	//G
+
+    //G
 	public static final DeferredItem<Item> G_LOGO = ITEMS.register("g_logo",
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/g")), new Item.Properties()).AddToList(RiderTabs.G_TAB_ITEM));
 
@@ -66,7 +69,7 @@ public class Miscellaneous_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_rider_g",GORO_WINE_BOTTLE ,GHELMET,GCHESTPLATE,GLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.G_TAB_ITEM));
 
 	public static final DeferredItem<Item> G_SOMMELIER_KNIFE = ITEMS.register("g_sommelier_knife",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.G_TAB_ITEM));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.G_TAB_ITEM));
 
 	//Gorider
 	public static final DeferredItem<Item> AKARIDER_CARD = ITEMS.register("akarider_card",

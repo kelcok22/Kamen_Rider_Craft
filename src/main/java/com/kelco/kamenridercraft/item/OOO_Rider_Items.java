@@ -1351,7 +1351,7 @@ public class OOO_Rider_Items {
 					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(TRICERA_MEDAL,TYRANNO_MEDAL).Override_belt_text("kyoryu_belt").ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> TAJASPINNER = ITEMS.register("tajaspinner",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
@@ -1364,10 +1364,10 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> DEEPEST_HARPOON = ITEMS.register("deepest_harpoon",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> ANICENT_OOO_GREEED_SWORD = ITEMS.register("ancient_ooo_greeed_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> BIRTH_BUSTER = ITEMS.register("birth_buster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).setCooldown(1).setProjectile(BaseBlasterItem.BlasterProjectile.CELL_MEDAL).AddToTabList(RiderTabs.OOO_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));

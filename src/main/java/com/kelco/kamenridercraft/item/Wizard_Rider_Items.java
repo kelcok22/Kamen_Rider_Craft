@@ -1101,11 +1101,11 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToList(RiderTabs.WIZARD_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DICE_SABER = ITEMS.register("dice_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> MIRAGE_MAGNUM = ITEMS.register("mirage_magnum",
@@ -1117,11 +1117,11 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> HAMMELCANE = ITEMS.register("hammelcane",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DIS_HALBERD = ITEMS.register("dis_halberd",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 

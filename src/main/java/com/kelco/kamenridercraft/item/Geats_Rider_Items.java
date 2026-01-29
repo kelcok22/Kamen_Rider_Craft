@@ -1898,31 +1898,31 @@ public class 	Geats_Rider_Items {
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER = ITEMS.register("zombie_breaker",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER_POISON_CHARGE = ITEMS.register("zombie_breaker_poison_charge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BEAT_AXE = ITEMS.register("beat_axe",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER_TWIN_BLADE_MODE = ITEMS.register("ninja_dueler_twin_blade_mode",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER_TWIN_BLADE_MODE2 = ITEMS.register("ninja_dueler_twin_blade_mode2",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER = ITEMS.register("ninja_dueler",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISING_SWORD = ITEMS.register("raising_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_BUSTER_QB9 = ITEMS.register("geats_buster_qb9",
@@ -1934,7 +1934,7 @@ public class 	Geats_Rider_Items {
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> X_RAISING_SWORD = ITEMS.register("x_raising_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_BUSTER = ITEMS.register("dooms_geats_buster",
@@ -1942,7 +1942,7 @@ public class 	Geats_Rider_Items {
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BUJIN = ITEMS.register("bujin",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> PLOSION_RAGE_SHIELD = ITEMS.register("plosion_rage_shield",
@@ -1950,11 +1950,11 @@ public class 	Geats_Rider_Items {
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_SWORD = ITEMS.register("gigant_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_HAMMER = ITEMS.register("gigant_hammer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_BLASTER = ITEMS.register("gigant_blaster",
@@ -1962,7 +1962,7 @@ public class 	Geats_Rider_Items {
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_HAMMER = ITEMS.register("raise_hammer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_ARROW = ITEMS.register("raise_arrow",
@@ -1978,15 +1978,15 @@ public class 	Geats_Rider_Items {
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_CHAIN_ARRAY = ITEMS.register("raise_chain_array",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_CLAW = ITEMS.register("raise_claw",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_PROPELLER = ITEMS.register("raise_propeller",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RAISE_RISER = ITEMS.register("laser_raise_riser",
@@ -1998,7 +1998,7 @@ public class 	Geats_Rider_Items {
 					.AddToTabList(RiderTabs.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> JYAMATO_RIDER_SCYTHE = ITEMS.register("jyamato_rider_scythe",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2F, new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM)
 					.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_OSAKA = ITEMS.register("geats_rider_core_id_osaka",

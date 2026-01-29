@@ -476,7 +476,7 @@ public class Zeztz_Rider_Items {
 
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_GUN = ITEMS.register("breakam_zeztzer_gun",
@@ -484,11 +484,11 @@ public class Zeztz_Rider_Items {
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_AXE = ITEMS.register("breakam_zeztzer_axe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -3.0F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -3.0F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SCYTHE = ITEMS.register("breakam_zeztzer_scythe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> INAZUMA_BLASTER = ITEMS.register("inazuma_blaster",
@@ -496,7 +496,7 @@ public class Zeztz_Rider_Items {
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> INAZUMA_BLASTER_GREATSWORD = ITEMS.register("inazuma_blaster_greatsword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BUSTER = ITEMS.register("breakam_buster",
@@ -504,11 +504,11 @@ public class Zeztz_Rider_Items {
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_BLADE = ITEMS.register("breakam_breaker_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_KNUCKLE = ITEMS.register("breakam_breaker_knuckle",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -3.0F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -3.0F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_SHOOT = ITEMS.register("breakam_breaker_shoot",

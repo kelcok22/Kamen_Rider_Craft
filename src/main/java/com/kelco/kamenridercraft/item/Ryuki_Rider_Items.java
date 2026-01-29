@@ -460,13 +460,13 @@ public class Ryuki_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDE_SABER = ITEMS.register("ride_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DRAG_VISOR = ITEMS.register("drag_visor",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_SABER = ITEMS.register("drag_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DRAG_CLAW = ITEMS.register("drag_claw",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -478,16 +478,16 @@ public class Ryuki_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DRAG_BLADE = ITEMS.register("drag_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DARK_VISOR = ITEMS.register("dark_visor",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> WING_LANCER = ITEMS.register("wing_lancer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DARK_BLADE = ITEMS.register("dark_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DARK_SHIELD = ITEMS.register("dark_visor_zwei",
 			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.DARK_SHIELD_ITEM).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -496,10 +496,10 @@ public class Ryuki_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> SCISSORS_VISOR = ITEMS.register("scissors_visor",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> SCISSORS_PINCH = ITEMS.register("scissors_pinch",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> SHELL_DEFENSE = ITEMS.register("shell_defense",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -508,7 +508,7 @@ public class Ryuki_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GIGA_HORN = ITEMS.register("giga_horn",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GIGA_LAUNCHER = ITEMS.register("giga_launcher",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -3F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(3).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -520,7 +520,7 @@ public class Ryuki_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVIL_WHIP = ITEMS.register("evil_whip",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> EVIL_VISOR_ZWEI = ITEMS.register("evil_visor_zwei",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -529,46 +529,46 @@ public class Ryuki_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_HORN = ITEMS.register("metal_horn",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -3.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -3.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> VENO_VISOR = ITEMS.register("veno_visor",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> VENO_SABER = ITEMS.register("veno_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> VENO_VISOR_ZWEI = ITEMS.register("veno_visor_zwei",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GOLD_VISOR = ITEMS.register("gold_visor",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 10, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 10, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GOLD_SABER = ITEMS.register("gold_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GOLD_SHIELD = ITEMS.register("gold_shield",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DEST_VISOR = ITEMS.register("dest_visor",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DEST_CLAW = ITEMS.register("dest_claw",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DEST_CLAW1 = ITEMS.register("dest_claw1",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GAZELLE_VISOR = ITEMS.register("gazelle_visor",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAZELLE_STAB = ITEMS.register("gazelle_stab",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> BLANC_VISOR = ITEMS.register("blanc_visor",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> WING_SLASHER = ITEMS.register("wing_slasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND,  6, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND,  6, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> WING_SHIELD = ITEMS.register("wing_shield",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -577,7 +577,7 @@ public class Ryuki_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_SABER_RYUGA = ITEMS.register("drag_saber_ryuga",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DRAG_CLAW_RYUGA = ITEMS.register("drag_claw_ryuga",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -592,25 +592,25 @@ public class Ryuki_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIO_WINDER = ITEMS.register("bio_winder",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> SLASH_VISOR = ITEMS.register("slash_visor",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SLASH_DAGGER = ITEMS.register("slash_dagger",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> ABYSS_VISOR = ITEMS.register("abyss_visor",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABYSS_SABER = ITEMS.register("abyss_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> ABYSS_CLAW = ITEMS.register("abyss_claw",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -3F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
     public static final DeferredItem<Item> GULD_VISOR = ITEMS.register("guld_visor",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> RIDE_SABER_VENT = ITEMS.register("ride_saber_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", RIDE_VISOR.get(), RIDE_SABER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));

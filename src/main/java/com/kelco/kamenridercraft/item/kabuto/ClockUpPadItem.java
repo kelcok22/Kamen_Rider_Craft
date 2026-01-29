@@ -1,7 +1,11 @@
 package com.kelco.kamenridercraft.item.kabuto;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import org.apache.commons.lang3.ArrayUtils;
 
 import net.minecraft.stats.Stats;
@@ -25,22 +29,28 @@ public class ClockUpPadItem extends BaseItem {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
+	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
+		ItemStack itemstack = player.getItemInHand(usedHand);
 
 		String[] ClockUpUsers = new String[] {"kabuto","thebee","drake","sasword","gatack","dark_kabuto","kickhopper","punchhopper","ketaros","hercus","caucasus","lady"};
-		
-		if (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(p_41129_)){
-			if (!Objects.equals(RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
-                if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !p_41128_.isClientSide()) {
-                	p_41129_.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
-                	p_41129_.getCooldowns().addCooldown(this, 500);
-					p_41129_.awardStat(Stats.ITEM_USED.get(this));
+
+
+		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)){
+            if(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))){
+                Kabuto_Rider_Items.HYPER_ZECTER_CLOCK_UP.asItem().use(level,player,usedHand);
+            }
+			if (!Objects.equals(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
+                if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !level.isClientSide()) {
+                	player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
+                    if (!player.isCreative()) {
+                        player.getCooldowns().addCooldown(this, 500);
+                    }
+					player.awardStat(Stats.ITEM_USED.get(this));
                 }
 			}
 		}
 		
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
+		return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
 	}
 }
