@@ -39,7 +39,7 @@
 					]
 				},
 				{
-					"name": "armorLeftChest",
+					"name": "armorleftchest",
 					"parent": "armorBody",
 					"pivot": [5.25, 24.5, -2.5],
 					"rotation": [90, 0, -180],
@@ -48,7 +48,7 @@
 					]
 				},
 				{
-					"name": "armorRightChest",
+					"name": "armorrightchest",
 					"parent": "armorBody",
 					"pivot": [-5.25, 24.5, -2.5],
 					"rotation": [90, 0, 180],
