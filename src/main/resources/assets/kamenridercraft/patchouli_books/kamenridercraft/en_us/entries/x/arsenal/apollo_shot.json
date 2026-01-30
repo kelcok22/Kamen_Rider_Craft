@@ -1,0 +1,16 @@
+{
+  "name": "Apollo Shot",
+	"icon": "kamenridercraft:apollo_shot",
+	"category": "kamenridercraft:x/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used by $(l:x/riders/apollogeist#apollogeist)Apollogeist$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/apollo_shot"
+		}
+	]
+}
