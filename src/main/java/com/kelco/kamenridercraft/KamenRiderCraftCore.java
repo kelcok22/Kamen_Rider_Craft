@@ -76,40 +76,39 @@ import java.util.Objects;
 
 
 @Mod(KamenRiderCraftCore.MOD_ID)
-public class KamenRiderCraftCore
-{
-     public static final String MOD_ID = "kamenridercraft";
+public class KamenRiderCraftCore {
+    public static final String MOD_ID = "kamenridercraft";
 
     public static final int NEW_STRUCTURE_SIZE = 512;
 
-    private static final ResourceLocation BLOCKING_PROPERTY_RESLOC =  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
+    private static final ResourceLocation BLOCKING_PROPERTY_RESLOC = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
 
-    public static List<Item> CHANGE_SWORD_ITEM= new ArrayList<>();
+    public static List<Item> CHANGE_SWORD_ITEM = new ArrayList<>();
 
-    public static List<Item> SWORD_GUN_ITEM= new ArrayList<>();
+    public static List<Item> SWORD_GUN_ITEM = new ArrayList<>();
 
-    public static List<Item> KUUGA_CHANGING_ITEM= new ArrayList<>();
-    public static List<Item> KUUGA_PHONE= new ArrayList<>();
+    public static List<Item> KUUGA_CHANGING_ITEM = new ArrayList<>();
+    public static List<Item> KUUGA_PHONE = new ArrayList<>();
+    public static List<Item> BLADE_CHANGING_ITEM = new ArrayList<>();
 
-    public static List<Item> CLOCK_UP_ITEM= new ArrayList<>();
+    public static List<Item> CLOCK_UP_ITEM = new ArrayList<>();
 
-    public static List<Item> RAISE_RISER_ITEM= new ArrayList<>();
+    public static List<Item> RAISE_RISER_ITEM = new ArrayList<>();
 
-    public static List<Item> SHIELD_ITEM= new ArrayList<>();
+    public static List<Item> SHIELD_ITEM = new ArrayList<>();
 
-    public static List<Item> DARK_SHIELD_ITEM= new ArrayList<>();
+    public static List<Item> DARK_SHIELD_ITEM = new ArrayList<>();
 
-    public static List<Item> CHEMY_CARD= new ArrayList<>();
+    public static List<Item> CHEMY_CARD = new ArrayList<>();
 
-    public static List<Item> ONGEKIFLUTE_ITEM= new ArrayList<>();
+    public static List<Item> ONGEKIFLUTE_ITEM = new ArrayList<>();
 
-    public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer)
-    {
+    public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer) {
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-       NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
-       NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
+        NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
+        NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -175,28 +174,25 @@ public class KamenRiderCraftCore
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event) {
     }
 
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
         RiderTabs.AddItemsToTabs(event);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
+    public void onServerStarting(ServerStartingEvent event) {
         NeoForge.EVENT_BUS.register(new ModServerEvents.ServerEvents());
     }
 
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
-        if (event.getRenderer().getModel()instanceof PlayerModel<?> model) {
+        if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
                     && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
                 double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
@@ -224,7 +220,7 @@ public class KamenRiderCraftCore
         float size = 1;
 
         if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
-            size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) +1f);
+            size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) + 1f);
         }
 
         float size2 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
@@ -242,19 +238,16 @@ public class KamenRiderCraftCore
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
 
         @SubscribeEvent
         public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
-            event.register(custom_dimension_effect.MOON_EFFECTS,new custom_dimension_effect.MoonEffects());
+            event.register(custom_dimension_effect.MOON_EFFECTS, new custom_dimension_effect.MoonEffects());
         }
 
 
-
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
 
 
             for (Item value : SHIELD_ITEM) {
@@ -270,8 +263,10 @@ public class KamenRiderCraftCore
                                 p_174637_.getItemBySlot(EquipmentSlot.FEET);
                                 if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Kuuga_Rider_Items.ARCLE.get()) {
                                     ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_r")) return 1;
-                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_u")) return 2;
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_r"))
+                                        return 1;
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_u"))
+                                        return 2;
                                     if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_ru"))
                                         return 2;
                                 } else {
@@ -282,7 +277,7 @@ public class KamenRiderCraftCore
                             //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
                         }
                 );
-                }
+            }
             for (Item item : KUUGA_PHONE) {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
@@ -308,6 +303,26 @@ public class KamenRiderCraftCore
                         }
                 );
             }
+
+            for (Item value : BLADE_CHANGING_ITEM) {
+                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else {
+                                if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.BLAYBUCKLE.get()) {
+                                    ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
+                                        return 1;
+                                    } else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_king") || Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_silver_king")) {
+                                        return 2;
+                                    }
+                                }
+                                return 0;
+                            }
+                        }
+                );
+            }
+
             for (Item item : CLOCK_UP_ITEM) {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
@@ -336,14 +351,14 @@ public class KamenRiderCraftCore
                                 return 0.0F;
                             } else if (p_174637_ instanceof Player player) {
                                 ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-                                if (player.level().dimension() == CITY){
+                                if (player.level().dimension() == CITY) {
                                     return 1;
-                                }else if (player.level().getBiome(player.blockPosition()).is(BiomeTags.IS_NETHER)){
+                                } else if (player.level().getBiome(player.blockPosition()).is(BiomeTags.IS_NETHER)) {
                                     return 2;
-                                }else return 0;
-                                }
-                                return 0;
-                }
+                                } else return 0;
+                            }
+                            return 0;
+                        }
                 );
             }
 
@@ -520,7 +535,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.PHOENIX_PHANTOM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GREMLIN_PHANTOM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MAGE_FOOTSOLDIER.get(), BasicEntityRenderer::new);
-            event.registerEntityRenderer(MobsCore.MAGE_CAPTAIN .get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MAGE_CAPTAIN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SORCERER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WISEMAN.get(), BasicEntityRenderer::new);
 
@@ -723,7 +738,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.TECHNOLOM_PROJECTION.get(), MetamateriamRenderer::new);
             event.registerEntityRenderer(MobsCore.APOLLO.get(), ApolloRenderer::new);
             event.registerEntityRenderer(MobsCore.LIBRA.get(), LibraRenderer::new);
-            
+
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
@@ -790,7 +805,7 @@ public class KamenRiderCraftCore
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), realizingParticles.Provider::new);
 
         }
-        
+
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
@@ -830,36 +845,36 @@ public class KamenRiderCraftCore
             event.register(ModMenus.LEGEND_RIDE_MAGNUM_GUI.get(), LegendRideMagnumGuiScreen::new);
             event.register(ModMenus.CAPSEM_CYLINDER_GUI.get(), CapsemCylinderGuiScreen::new);
             event.register(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), IxaMachineBlockGuiScreen::new);
-           // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
+            // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }
     }
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD)
     public static class CommonModEvents {
-		@SubscribeEvent
-		public static void register(final RegisterPayloadHandlersEvent event) {
-		    PayloadRegistrar registrar = event.registrar("kamenridercraft");
-			registrar = registrar.executesOn(HandlerThread.MAIN);
-		    registrar.playBidirectional(
-		        CompleteSwingPayload.TYPE,
-		        CompleteSwingPayload.STREAM_CODEC,
-		        new DirectionalPayloadHandler<>(
-		            ClientPayloadHandler::handleCompleteSwing,
-		            ServerPayloadHandler::handleCompleteSwing
-		        )
-		    );
-		    registrar.playToServer(
-		        BeltKeyPayload.TYPE,
-		        BeltKeyPayload.STREAM_CODEC,
-		        ServerPayloadHandler::handleBeltKeyPress
-		    );
+        @SubscribeEvent
+        public static void register(final RegisterPayloadHandlersEvent event) {
+            PayloadRegistrar registrar = event.registrar("kamenridercraft");
+            registrar = registrar.executesOn(HandlerThread.MAIN);
+            registrar.playBidirectional(
+                    CompleteSwingPayload.TYPE,
+                    CompleteSwingPayload.STREAM_CODEC,
+                    new DirectionalPayloadHandler<>(
+                            ClientPayloadHandler::handleCompleteSwing,
+                            ServerPayloadHandler::handleCompleteSwing
+                    )
+            );
+            registrar.playToServer(
+                    BeltKeyPayload.TYPE,
+                    BeltKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleBeltKeyPress
+            );
 
             registrar.playToServer(
                     AbilityKeyPayload.TYPE,
                     AbilityKeyPayload.STREAM_CODEC,
                     ServerPayloadHandler::handleAbilityKeyPress
             );
-		}
+        }
     }
 }
 

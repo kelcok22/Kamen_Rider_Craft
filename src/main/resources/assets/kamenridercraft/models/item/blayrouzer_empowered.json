@@ -2,7 +2,7 @@
 	"format_version": "1.21.11",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "kamenridercraft:item/blayrouzer"
+		"layer0": "kamenridercraft:item/blayrouzer_empowered"
 	},
 	"gui_light": "front",
 	"display": {
@@ -30,8 +30,8 @@
 			"translation": [0, 4.5, 0]
 		},
 		"gui": {
-			"translation": [2.66, 2.66, 0],
-			"scale": [1.33, 1.33, 1.33]
+			"translation": [0.77, 0.77, 0],
+			"scale": [1.09, 1.09, 1.09]
 		},
 		"head": {
 			"rotation": [0, -90, 0],
@@ -39,16 +39,8 @@
 		},
 		"fixed": {
 			"rotation": [0, -180, 0],
-			"translation": [-1, 0.75, 0],
-			"scale": [1.31, 1.31, 1.31]
+			"translation": [0.77, 0.77, 0],
+			"scale": [1.09, 1.09, 1.09]
 		}
-	},
-	"overrides": [
-		{
-			"predicate": {
-				"pull": 1
-			},
-			"model": "kamenridercraft:item/blayrouzer_empowered"
-		}
-	]
+	}
 }

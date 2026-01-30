@@ -54,7 +54,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SLASH_LIZARD = ITEMS.register("slash_lizard",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -83,6 +83,36 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> TIME_SCARAB = ITEMS.register("time_scarab",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SEALABLE_FUSION_EAGLE= ITEMS.register("sealable_fusion_eagle",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_eagle, ", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			});
+
+	public static final DeferredItem<Item> FUSION_EAGLE_UNDEAD = ITEMS.register("fusion_eagle_undead",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_eagle, ", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_FUSION_EAGLE.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+
 	public static final DeferredItem<Item> FUSION_EAGLE = ITEMS.register("fusion_eagle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "blade", "blay_buckle_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
@@ -97,7 +127,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addAlternative(FUSION_EAGLE_UNDEAD.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -115,7 +145,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
@@ -131,7 +161,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
@@ -146,7 +176,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BULLET_ARMADILLO = ITEMS.register("bullet_armadillo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -189,7 +219,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -207,23 +237,36 @@ public class Blade_Rider_Items {
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate_form","taiyaki_master","blank",
-					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
+	public static final DeferredItem<Item> ULTIMATE_SPECIAL_TURBO = ITEMS.register("ultimate_turbo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate_form_special_turbo","taiyaki_master","blank",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FIRE_SLASH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.SetShowUnder());
+
+	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate_form","taiyaki_master","blank",
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ParticleTypes.RAIN,
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().SetShowUnder());
+			}.addSwitchForm(ULTIMATE_SPECIAL_TURBO.get()).SetShowUnder());
 
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "chalice", "chalice_rouzer_belt",
@@ -236,8 +279,41 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}
-					.addAlternative(TAIYAKI_MASTER.get()).IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.addAlternative(TAIYAKI_MASTER.get()).addAlternative(ULTIMATE_SPECIAL_TURBO.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHALICE_ROUZE_SPIRIT = ITEMS.register("chalice_rouze_spirit",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_human", "chalice", "chalice_rouzer_belt",
+					new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 40, 0, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			});
+
+	public static final DeferredItem<Item> SEALABLE_ROUZE_SPIRIT = ITEMS.register("sealable_rouze_spirit",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_human", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 40, 4, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			});
+
+
+	public static final DeferredItem<Item> ROUZE_SPIRIT = ITEMS.register("rouze_spirit",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_human", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 40, 4, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_ROUZE_SPIRIT.get()).addAlternative(CHALICE_ROUZE_SPIRIT.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHOP_HEAD = ITEMS.register("chop_head",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -282,7 +358,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_SPIDER = ITEMS.register("change_spider",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "leangle", "leangle_buckle_belt",
@@ -295,7 +371,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_SPIDER_PROPER_SEAL = ITEMS.register("change_spider_proper_seal",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "leangle", "leangle_buckle_belt",
@@ -349,7 +425,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addNeedItem(ROUZE_ABSORBER.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_TIGER = ITEMS.register("absorb_tiger",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -367,7 +443,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_GLAIVE = ITEMS.register("change_kerberos_glaive",
@@ -381,7 +457,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_LANCE = ITEMS.register("change_kerberos_lance",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "lance", "lance_buckle_belt",
@@ -396,7 +472,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_LARC = ITEMS.register("change_kerberos_larc",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "larc", "larc_buckle_belt",
@@ -410,7 +486,7 @@ public class Blade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MIGHTY_GRAVITY = ITEMS.register("mighty_gravity",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -424,10 +500,30 @@ public class Blade_Rider_Items {
 
 
 	public static final DeferredItem<Item> BLACK_JOKER_SEALED = ITEMS.register("black_joker_sealed",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), 0, "", "black_joker", "black_joker_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 300, 0, 0, 0, 1);
+				}
+			}
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ALBINO_JOKER_SEALED = ITEMS.register("albino_joker_sealed",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), 0, "", "albino_joker", "albino_joker_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 300, 0, 0, 0, 1);
+				}
+			}
+					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> VANITY_SEALED = ITEMS.register("vanity_sealed",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -458,6 +554,14 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> LARCBUCKLE = ITEMS.register("larc_buckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
+
+
+	public static final DeferredItem<Item> UNDEAD_ROUZER = ITEMS.register("undead_buckle",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+	public static final DeferredItem<Item> BLACK_JOKER_UNDEAD_ROUZER = ITEMS.register("black_joker_undead_rouzer",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "black_joker", BLACK_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+	public static final DeferredItem<Item> ALBINO_JOKER_UNDEAD_ROUZER = ITEMS.register("albino_joker_undead_rouzer",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "albino_joker", ALBINO_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> BLAYBUCKLE_FAKE = ITEMS.register("blay_buckle_fake",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "fake_blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
@@ -468,7 +572,7 @@ public class Blade_Rider_Items {
 
 
 	public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.BLADE_CHANGING_ITEM).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> KINGROUZER = ITEMS.register("kingrouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GARRENROUZER = ITEMS.register("garrenrouzer",
@@ -505,8 +609,8 @@ public class Blade_Rider_Items {
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> PEACOCK_SWORTHER = ITEMS.register("peacock_sworther",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> SERPENT_EVASISC = ITEMS.register("serpent_evasisc",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> SERPENT_EVASISC = ITEMS.register("serpent_evasisc",
+//			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GIRAFFA_HELLTAR = ITEMS.register("giraffa_helltar",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GIRAFFA_SKELTAR = ITEMS.register("giraffa_skeltar",
@@ -515,21 +619,21 @@ public class Blade_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> ALBINO_JOKER_DEATH_SCYTHE = ITEMS.register("albino_joker_death_scythe",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> SPIDER_THREAD = ITEMS.register("spider_thread",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
+//			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
+//			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> SPIDER_THREAD = ITEMS.register("spider_thread",
+//			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
-	public static final DeferredItem<Item> JASHIN_SPADE_VLADE = ITEMS.register("jashin_spade_vlade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> JASHIN_DIA_SHIELD = ITEMS.register("jashin_dia_shield",
-			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> JASHIN_HEART_THUNDER = ITEMS.register("jashin_heart_thunder",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-	public static final DeferredItem<Item> JASHIN_CLOVER_CLUB = ITEMS.register("jashin_clover_club",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> JASHIN_SPADE_VLADE = ITEMS.register("jashin_spade_vlade",
+//			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> JASHIN_DIA_SHIELD = ITEMS.register("jashin_dia_shield",
+//			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> JASHIN_HEART_THUNDER = ITEMS.register("jashin_heart_thunder",
+//			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//	public static final DeferredItem<Item> JASHIN_CLOVER_CLUB = ITEMS.register("jashin_clover_club",
+//			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
 
 	public static final DeferredItem<Item> TAIYAKI_MOLD = ITEMS.register("taiyaki_mold",
