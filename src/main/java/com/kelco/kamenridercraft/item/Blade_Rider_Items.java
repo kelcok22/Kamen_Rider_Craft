@@ -418,7 +418,7 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> MIGHTY_IMPACT = ITEMS.register("mighty_impact",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> MIGHTY_RAM = ITEMS.register("mighty_ram",
+	public static final DeferredItem<Item> MIGHTY_RAY = ITEMS.register("mighty_ray",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
