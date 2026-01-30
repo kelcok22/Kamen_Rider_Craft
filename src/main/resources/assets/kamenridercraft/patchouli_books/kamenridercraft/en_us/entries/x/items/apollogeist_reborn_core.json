@@ -1,0 +1,19 @@
+{
+	"name": "Apollogeist Reborn Core",
+	"icon": "kamenridercraft:apollogeist_reborn_core",
+	"category": "kamenridercraft:x/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used to access Apollogeist $(l:x/riders/apollogeist#apollogeist_reborn)Reborn$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:apollogeist_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:x/mobs/apollogeist)Apollogeist$(/l)"
+		}
+	]
+}

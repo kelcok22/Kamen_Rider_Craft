@@ -1,0 +1,19 @@
+{
+	"name": "Apollogeist Core",
+	"icon": "kamenridercraft:apollogeist_core",
+	"category": "kamenridercraft:x/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used to craft Apollogeist's $(l:x/devices/apollogeist_belt)Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:apollogeist_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:x/mobs/apollogeist)Apollogeist$(/l)"
+		}
+	]
+}
