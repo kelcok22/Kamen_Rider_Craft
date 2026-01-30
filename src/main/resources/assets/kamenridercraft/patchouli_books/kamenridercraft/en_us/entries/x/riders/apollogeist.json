@@ -1,0 +1,34 @@
+{
+	"name": "Apollogeist",
+	"icon": "kamenridercraft:apollogeist_core",
+	"category": "kamenridercraft:x/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Apollogeist"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Apollogeist",
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Transforms with the $(l:x/devices/apollogeist_belt)Apollogeist Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Jump Boost III$(li)Fire Resistance"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "apollogeist_reborn",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:apollogeist_reborn_core\"}},Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Apollogeist Reborn",
+        "text": "Accessed with the $(l:x/items/apollogeist_reborn_core)Apollogeist Reborn Core$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Apollogeist Reborn",
+        "text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Transforms with the $(l:x/devices/apollogeist_belt)Apollogeist Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Flame Body III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength II"
+      }
+    ]
+}
