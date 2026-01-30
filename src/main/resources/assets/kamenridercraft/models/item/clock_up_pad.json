@@ -2,5 +2,14 @@
     "parent": "item/generated",
     "textures": {
         "layer0": "kamenridercraft:item/clock_up_pad"
+    },
+  "overrides": [
+
+    {
+      "predicate": {
+        "pull": 1
+      },
+      "model": "kamenridercraft:item/clock_up_pad_hyper"
     }
+  ]
 }

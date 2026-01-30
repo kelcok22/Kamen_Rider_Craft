@@ -463,7 +463,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 500, 0, 0, 0, 1);
                 }
-            }.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()));
+            }.IsGlowing().allowRiderKick().hasTimeout(400, 1200, (RiderFormChangeItem)HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()));
 
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
@@ -536,7 +536,7 @@ public class Kabuto_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chophopper",CHOPHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()).has_basic_model());
 
     public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
-            () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+            () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CLOCK_UP_ITEM).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_KUNAI = ITEMS.register("kabuto_kunai",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
