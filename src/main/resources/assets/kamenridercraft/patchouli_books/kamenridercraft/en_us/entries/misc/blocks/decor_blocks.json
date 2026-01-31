@@ -30,14 +30,18 @@
 			"text": "Found inside an $(l:agito/structures/overlord_oopart)Overlord's Out-of-place Artifact$(/l)"
 		},
       {
-        "type": "patchouli:crafting",
+        "type": "patchouli:spotlight",
         "anchor": "glass_ryuki",
-        "recipe": "kamenridercraft:ryuki/glass_ryuki"
+        "link_recipe": true,
+        "item": "kamenridercraft:glass_ryuki",
+        "text": "Obtained by smelting $(l:ryuki/items/advent_card)Contract Cards$(/l)"
       },
       {
-        "type": "patchouli:crafting",
+        "type": "patchouli:spotlight",
         "anchor": "deepslate_glass_ryuki",
-        "recipe": "kamenridercraft:ryuki/deepslate_glass_ryuki"
+        "link_recipe": true,
+        "item": "kamenridercraft:deepslate_glass_ryuki",
+        "text": "Obtained by smelting $(l:misc/blocks/decor_blocks#glass_ryuki)Advent Glass$(/l)"
       },
 		{
 			"type": "patchouli:spotlight",

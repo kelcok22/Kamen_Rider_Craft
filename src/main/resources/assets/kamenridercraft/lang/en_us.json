@@ -2688,8 +2688,10 @@
   "kamenridercraft.name.fake_blade": "Rider: Kamen Rider Fake Blade",
   "item.kamenridercraft.taiyaki_secret_weapon": "Taiyaki Secret Weapon",
   "kamenridercraft.name.taiyaki_master": "Debatable Rider: Taiyaki Master Ultimate Form",
+  "item.kamenridercraft.undead_buckle": "Undead Buckle",
+  "kamenridercraft.name.undead": "Kaijin: Undead",
 
-"item.kamenridercraft.rouze_absorber": "Rouze Absorber",
+  "item.kamenridercraft.rouze_absorber": "Rouze Absorber",
 
   "item.kamenridercraft.card_deck_chalice": "Chalice Card Deck",
   "item.kamenridercraft.card_deck_leangle": "Leangle Card Deck",
@@ -2761,7 +2763,7 @@
   "item.kamenridercraft.absorb_serpent": "Absorb Serpent Rouze Card",
   "item.kamenridercraft.evolution_giraffa": "Evolution Giraffa Rouze Card",
 "item.kamenridercraft.change_mantis": "Change Mantis Rouze Card",
-  "item.kamenridercraft.spirit": "Spirit Rouze Card",
+  "item.kamenridercraft.rouze_spirit": "Spirit Rouze Card",
   "item.kamenridercraft.chop_head": "Chop Head Rouze Card",
   "item.kamenridercraft.float_dragonfly": "Float Dragonfly Rouze Card",
   "item.kamenridercraft.drill_shell": "Drill Shell Rouze Card",
@@ -2810,9 +2812,16 @@
   "kamenridercraft:silver_evolution_caucasus.form": "Form: Silver King Form",
   "kamenridercraft:evolution_giraffa.form": "Form: King Form",
   "kamenridercraft:evolution_paradoxa.form": "Form: Wild Form",
+  "kamenridercraft:chalice_rouze_spirit.form": "Form: Hajime Aikawa",
+  "kamenridercraft:chalice_rouze_spirit_steve.form": "Form: Human Undead",
   "kamenridercraft:final_form_ride_chalice_choco.form": "Form: Chalice Choco",
   "kamenridercraft:evolution_tarantula.form": "Form: King Form",
   "kamenridercraft:taiyaki_masterform": "Form: Ultimate Form",
+  "kamenridercraft:rouze_spirit.form": "Form: Human Undead",
+  "kamenridercraft:sealable_rouze_spirit.form": "Form: Human Undead",
+  "kamenridercraft:fusion_eagle_undead.form": "Form: Eagle Undead",
+  "kamenridercraft:sealable_fusion_eagle_undead.form": "Form: Eagle Undead",
+
 
 "item.kamenridercraft.hibiki_logo": "Hibiki Logo",
 "item.kamenridercraft.hibikihead": "Hibiki Helmet",
