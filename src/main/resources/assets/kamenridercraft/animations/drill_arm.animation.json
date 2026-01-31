@@ -34,6 +34,10 @@
 					}
 				}
 			}
+		},
+		"idle": {
+			"loop": true,
+			"override_previous_animation": true
 		}
 	},
 	"geckolib_format_version": 2

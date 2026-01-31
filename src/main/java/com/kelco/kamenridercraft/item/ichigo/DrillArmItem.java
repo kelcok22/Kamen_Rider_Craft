@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.item.ichigo;
 import com.kelco.kamenridercraft.client.renderer.DrillArmItemRenderer;
 import com.kelco.kamenridercraft.item.BaseItems.BasePickaxeItem;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -24,8 +23,9 @@ import java.util.function.Consumer;
 
 
 public class DrillArmItem extends BasePickaxeItem implements GeoItem {
-	private static final RawAnimation ACTIVATE_ANIM = RawAnimation.begin().thenPlay("drilling");
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+	private boolean triggered = false;
+	private static final RawAnimation ACTIVATE_ANIM = RawAnimation.begin().thenPlay("drilling");
 
 	public DrillArmItem(Tier toolTier, int Atk, float Spd, Properties prop) {
 		super(toolTier, Atk, Spd, prop);
@@ -54,9 +54,10 @@ public class DrillArmItem extends BasePickaxeItem implements GeoItem {
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-		if (level instanceof ServerLevel serverLevel) {
-			triggerAnim(player, GeoItem.getOrAssignId(player.getItemInHand(hand), serverLevel), "Drilling", "drilling");
-		}
+//		if (level instanceof ServerLevel serverLevel) {
+//			if (!triggered) {
+//				triggerAnim(player, GeoItem.getOrAssignId(player.getItemInHand(hand), serverLevel), "Drilling", "drilling");
+//			}
 		return super.use(level, player, hand);
 	}
 
