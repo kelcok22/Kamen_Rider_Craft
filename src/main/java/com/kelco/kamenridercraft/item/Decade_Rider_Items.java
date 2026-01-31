@@ -1,15 +1,11 @@
 package com.kelco.kamenridercraft.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.decade.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -23,6 +19,9 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Decade_Rider_Items {
 
@@ -1396,7 +1395,7 @@ public class Decade_Rider_Items {
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(2).addSummonWeapon(0).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EAGLE_UNDEAD_CARD = ITEMS.register("eagle_undead_card",
-			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE_FAKE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Blade_Rider_Items.UNDEAD_ROUZER.get()).setSummonForm((RiderFormChangeItem)Blade_Rider_Items.FUSION_EAGLE_UNDEAD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> MOOSE_FANGIRE_CARD = ITEMS.register("moose_fangire_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.MOOSE_FANGIRE_BELT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 

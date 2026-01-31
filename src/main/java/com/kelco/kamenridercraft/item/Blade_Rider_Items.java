@@ -111,7 +111,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(SEALABLE_FUSION_EAGLE.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.addSwitchForm(SEALABLE_FUSION_EAGLE.get()));
 
 	public static final DeferredItem<Item> FUSION_EAGLE = ITEMS.register("fusion_eagle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "blade", "blay_buckle_belt",
