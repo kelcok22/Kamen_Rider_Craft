@@ -1049,7 +1049,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.ChangeModel("damashii.geo.json").ChangeSlot(2));
+			}.ChangeModel("damashii.geo.json").ChangeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon"));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gamma_superior","gamma_superior_belt",

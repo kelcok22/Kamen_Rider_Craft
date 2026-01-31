@@ -96,7 +96,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.model_has_different_name("fusion_eagle"));
+			}.has_basic_model().model_has_different_name("fusion_eagle"));
 
 	public static final DeferredItem<Item> FUSION_EAGLE_UNDEAD = ITEMS.register("fusion_eagle_undead",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_eagle", "undead", "unsealed_undead_buckle_royal_belt",
@@ -111,7 +111,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(SEALABLE_FUSION_EAGLE.get()).model_has_different_name("fusion_eagle"));
+			}.addSwitchForm(SEALABLE_FUSION_EAGLE.get()).has_basic_model().model_has_different_name("fusion_eagle"));
 
 	public static final DeferredItem<Item> FUSION_EAGLE = ITEMS.register("fusion_eagle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "blade", "blay_buckle_belt",
@@ -292,7 +292,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.SetShowUnder().model_has_different_name("taiyaki_secret_weapon"));
+			}.SetShowUnder().has_basic_model().model_has_different_name("taiyaki_secret_weapon"));
 
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "", "chalice", "chalice_rouzer_belt",
@@ -316,7 +316,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.model_has_different_name("rouze_spirit"));
+			}.has_basic_model().model_has_different_name("rouze_spirit"));
 
 	public static final DeferredItem<Item> CHALICE_ROUZE_SPIRIT = ITEMS.register("chalice_rouze_spirit",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_human", "chalice", "chalice_rouzer_belt",
@@ -327,7 +327,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(CHALICE_ROUZE_SPIRIT_STEVE.get()).model_has_different_name("rouze_spirit"));
+			}.addSwitchForm(CHALICE_ROUZE_SPIRIT_STEVE.get()).has_basic_model().model_has_different_name("rouze_spirit"));
 
 	public static final DeferredItem<Item> SEALABLE_ROUZE_SPIRIT = ITEMS.register("sealable_rouze_spirit",
 			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_human", "undead", "sealable_undead_buckle_belt",
@@ -338,7 +338,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.model_has_different_name("rouze_spirit"));
+			}.has_basic_model().model_has_different_name("rouze_spirit"));
 
 
 	public static final DeferredItem<Item> ROUZE_SPIRIT = ITEMS.register("rouze_spirit",

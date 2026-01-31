@@ -393,7 +393,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			});
+			}.has_basic_model().model_has_different_name("moose_fangire_belt"));
 
 	public static final DeferredItem<Item> KIVAHELMET = ITEMS.register("kivahead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));

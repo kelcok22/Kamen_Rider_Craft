@@ -43,7 +43,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.ChangeModel("dan_o.geo.json"));
+			}.ChangeModel("dan_o.geo.json").has_basic_model().model_has_different_name("rider_ticket"));
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEW_DEN_O = ITEMS.register("rider_ticket_new_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plat","new_den_o","new_den_o_belt_p",

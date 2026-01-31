@@ -445,7 +445,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.IsGlowing());
+            }.IsGlowing().has_basic_model().model_has_different_name("hyper_zecter"));
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
@@ -463,7 +463,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 500, 0, 0, 0, 1);
                 }
-            }.IsGlowing().allowRiderKick().hasTimeout(400, 1200, (RiderFormChangeItem)HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()));
+            }.IsGlowing().allowRiderKick().hasTimeout(400, 1200, (RiderFormChangeItem)HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).has_basic_model().model_has_different_name("hyper_zecter"));
 
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",

@@ -258,7 +258,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("gold_spino_vistamp"));
 
 
 	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP = ITEMS.register("gold_spino_vistamp",
@@ -863,7 +863,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("cobra_vistamp"));
 
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","jeanne","libera_driver_belt",
@@ -1093,7 +1093,7 @@ public class Revice_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing());
+			}.IsGlowing().has_basic_model().model_has_different_name("cobra_vistamp"));
 
 	public static final DeferredItem<Item> TRI_CHIMERA_VISTAMP = ITEMS.register("tri_chimera_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","daimon","chimera_driver_daimon_belt",

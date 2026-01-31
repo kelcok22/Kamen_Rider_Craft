@@ -888,7 +888,7 @@ public class Gavv_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.IsGlowing().ChangeModel("default_cape.geo.json").HasCape());
+			}.IsGlowing().ChangeModel("default_cape.geo.json").HasCape().has_basic_model().model_has_different_name("terror_gochizo"));
 
 	public static final DeferredItem<Item> TERROR_GOCHIZO = ITEMS.register("terror_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_caries_gavv_belt",
