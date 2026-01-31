@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_sign",
+  "key": {
+    "H": {
+      "item": "kamenridercraft:helheim_planks"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "HHH",
+    " C "
+  ],
+  "result": {
+    "count": 3,
+    "id": "kamenridercraft:helheim_sign_item"
+  }
+}
