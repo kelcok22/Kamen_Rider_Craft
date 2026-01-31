@@ -780,7 +780,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:popburn_gochizo_caramel",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",

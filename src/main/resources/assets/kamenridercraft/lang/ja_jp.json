@@ -2688,6 +2688,8 @@
   "kamenridercraft.name.fake_blade": "ライダー: 仮面ライダー偽ブレイド",
   "item.kamenridercraft.taiyaki_secret_weapon": "タイ焼き秘密兵器",
   "kamenridercraft.name.taiyaki_master": "疑似ライダー: タイ焼き名人、アルティメット・フォーム",
+  "item.kamenridercraft.undead_buckle": "アンデッドバックル",
+  "kamenridercraft.name.undead": "怪人: アンデッド",
 
 "item.kamenridercraft.rouze_absorber": "ラウズアブゾーバー",
 
@@ -2761,7 +2763,7 @@
 "item.kamenridercraft.absorb_serpent": "アブゾーブサーペント",
 "item.kamenridercraft.evolution_giraffa": "エボリューションギラファ",
 "item.kamenridercraft.change_mantis": "チェンジマンティス",
-"item.kamenridercraft.spirit": "スピリット",
+"item.kamenridercraft.rouze_spirit": "スピリット",
 "item.kamenridercraft.chop_head": "チョップヘッド",
 "item.kamenridercraft.float_dragonfly": "フロートドラゴンフライ",
 "item.kamenridercraft.drill_shell": "ドリルシェル",
@@ -2810,9 +2812,15 @@
   "kamenridercraft:silver_evolution_caucasus.form": "フォーム: キングフォームシルバーバージョン",
   "kamenridercraft:evolution_giraffa.form": "フォーム: キングフォーム",
   "kamenridercraft:evolution_paradoxa.form": "フォーム: ワイルドフォーム",
+  "kamenridercraft:chalice_rouze_spirit.form": "フォーム: 相川始",
+  "kamenridercraft:chalice_rouze_spirit_steve.form": "フォーム: ヒューマンアンデッド",
   "kamenridercraft:final_form_ride_chalice_choco.form": "フォーム: カリスチョコ",
   "kamenridercraft:evolution_tarantula.form": "フォーム: キングフォーム",
   "kamenridercraft:taiyaki_masterform": "フォーム: アルティメットフォーム",
+  "kamenridercraft:rouze_spirit.form": "フォーム: ヒューマンアンデッド",
+  "kamenridercraft:sealable_rouze_spirit.form": "フォーム: ヒューマンアンデッド",
+  "kamenridercraft:fusion_eagle_undead.form": "フォーム: イーグルアンデッド",
+  "kamenridercraft:sealable_fusion_eagle_undead.form": "フォーム: イーグルアンデッド",
 
 "item.kamenridercraft.hibiki_logo": "響鬼クレスト",
 "item.kamenridercraft.hibikihead": "響鬼のヘルメット",

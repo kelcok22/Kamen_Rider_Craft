@@ -599,7 +599,7 @@ public class Blade_Rider_Items {
 
 
 	public static final DeferredItem<Item> UNDEAD_ROUZER = ITEMS.register("undead_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> BLACK_JOKER_UNDEAD_ROUZER = ITEMS.register("black_joker_undead_rouzer",
 //			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "black_joker", BLACK_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> ALBINO_JOKER_UNDEAD_ROUZER = ITEMS.register("albino_joker_undead_rouzer",
