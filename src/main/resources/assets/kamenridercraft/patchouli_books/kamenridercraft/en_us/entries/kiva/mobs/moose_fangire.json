@@ -1,0 +1,17 @@
+{
+  "name": "Moose Fangire",
+  "icon": "kamenridercraft:moose_fangire_belt",
+  "category": "kamenridercraft:kiva/mobs",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:moose_fangire",
+      "text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br)Health: 10"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Spawn locations: $(l:kiva/structures/castle_doran)Castle Doran, $(l:kiva/structures/shoodoran)Shoodoran$(/l)$(br2)Drops$(li)2-4 $(l:kiva/items/fuestle)Fuestle$(/l)$(li)1 $(l:kiva/items/fuestle)Fuestle$(/l) (20%)$(li)1 $(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestle$(/l) (20%)$(li)1 $(l:kiva/items/fuestles#garulufuestle)Garulu Fuestle$(/l) (20%)$(li)1 $(l:kiva/items/fuestles#basshaafuestle)Basshaa Fuestle$(/l) (20%)$(li)1 $(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) (20%)"
+    }
+  ]
+}

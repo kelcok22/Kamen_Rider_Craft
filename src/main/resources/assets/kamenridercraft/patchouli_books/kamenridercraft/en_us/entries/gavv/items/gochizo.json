@@ -15,6 +15,45 @@
 			"item": "kamenridercraft:poppingummy_gochizo",
 			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "poppingummy_gochizo_peach",
+        "title": "Poppingummy Gochizo Peach Flavor",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:poppingummy_gochizo_peach",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "poppingummy_gochizo_honey",
+        "title": "Poppingummy Gochizo Honey Flavor",
+        "text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:poppingummy_gochizo_honey",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "poppingummy_gochizo_muscat",
+        "title": "Poppingummy Gochizo Muscat Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:poppingummy_gochizo_muscat",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "punchingummy_gochizo",
@@ -67,6 +106,32 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "zakuzakuchips_gochizo_garlic",
+        "title": "Zakuzakuchips Gochizo Garlic Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zakuzakuchips_gochizo_garlic",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zakuzakuchips_gochizo_barbecue",
+        "title": "Zakuzakuchips Gochizo Barbecue Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.03 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zakuzakuchips_gochizo_barbecue",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "hirihirichips_gochizo",
@@ -93,6 +158,19 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "fuwamallow_gochizo_lemon",
+        "title": "Fuwamallow Gochizo Lemon Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fuwamallow_gochizo_lemon",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "marumallow_gochizo",
@@ -119,6 +197,32 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "chocodan_gochizo_strawberry",
+        "title": "Chocodan Gochizo Strawberry Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:chocodan_gochizo_strawberry",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "chocodan_gochizo_matcha",
+        "title": "Chocodan Gochizo Matcha Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:chocodan_gochizo_matcha",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "chocodon_gochizo",
@@ -151,13 +255,39 @@
 			"title": "Gurucan Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#gurucan)Gurucan Form$(/l)$(br2)Used to equip Valen Frappe Custom with the $(l:gavv/riders/valen#frappe_gurucan)Gurucan Legs$(/l)"
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:gurucan_gochizo",
-			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
-		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gurucan_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gurucan_gochizo_matcha_milk",
+        "title": "Gurucan Gochizo Matcha Milk Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gurucan_gochizo_matcha_milk",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gurucan_gochizo_orange",
+        "title": "Gurucan Gochizo Orange Flavor",
+        "text": "Appears in:$(li)DX Rider Gochizo Set New Variety Discovery! ver.02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gurucan_gochizo_orange",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "vrocan_gochizo",
@@ -639,6 +769,19 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#corn_snack)Corn Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "popburn_gochizo_caramel",
+        "title": "Popburn Gochizo Caramel Flavor",
+        "text": "Appears in:$(li)DX Popburn Gochizo Caramel Flavor (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:popburn_gochizo_caramel",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "oshiruko_gochizo",
@@ -730,6 +873,32 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "happimuffi_gochizo",
+        "title": "Happimuffi Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#caking)Caking Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:happimuffi_gochizo",
+        "title": " ",
+        "text": "Obtained by eating cake with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "konpeiton_gochizo",
+        "title": "Konpeiton Gochizo",
+        "text": "Appears in:$(li)Gochizo Party (2025, web series)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#caking)Caking Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:konpeiton_gochizo",
+        "title": " ",
+        "text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "crepuna_gochizo",
@@ -1214,7 +1383,7 @@
       {
         "type": "patchouli:text",
         "anchor": "teriyaki_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Teriyaki Flavour)",
+        "title": "Umaibo Gochizo (Teriyaki Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1227,7 +1396,7 @@
       {
         "type": "patchouli:text",
         "anchor": "salad_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Salad Flavour)",
+        "title": "Umaibo Gochizo (Salad Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1240,7 +1409,7 @@
       {
         "type": "patchouli:text",
         "anchor": "tonkatsu_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Tonkatsu Flavour)",
+        "title": "Umaibo Gochizo (Tonkatsu Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1253,7 +1422,7 @@
       {
         "type": "patchouli:text",
         "anchor": "potage_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Potage Flavour)",
+        "title": "Umaibo Gochizo (Potage Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1266,7 +1435,7 @@
       {
         "type": "patchouli:text",
         "anchor": "natto_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Natto Flavour)",
+        "title": "Umaibo Gochizo (Natto Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1279,7 +1448,7 @@
       {
         "type": "patchouli:text",
         "anchor": "salami_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Salami Flavour)",
+        "title": "Umaibo Gochizo (Salami Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1292,7 +1461,7 @@
       {
         "type": "patchouli:text",
         "anchor": "takoyaki_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Takoyaki Flavour)",
+        "title": "Umaibo Gochizo (Takoyaki Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {
@@ -1305,7 +1474,7 @@
       {
         "type": "patchouli:text",
         "anchor": "mentaiko_umaibo_gochizo",
-        "title": "Umaibo Gochizo (Mentaiko Flavour)",
+        "title": "Umaibo Gochizo (Mentaiko Flavor)",
         "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)"
       },
       {

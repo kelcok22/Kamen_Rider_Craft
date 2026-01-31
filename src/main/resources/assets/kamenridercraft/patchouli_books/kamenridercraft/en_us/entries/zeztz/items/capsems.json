@@ -326,6 +326,344 @@
         "item": "kamenridercraft:wing_capsem_gold",
         "title": " ",
         "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_capsem",
+        "title": "Kuuga Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kuuga_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "agito_capsem",
+        "title": "Agito Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:agito_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ryuki_capsem",
+        "title": "Ryuki Capsem",
+        "text": "Appears in:$(li)GP Rider Capsem 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ryuki_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "faiz_capsem",
+        "title": "Faiz Capsem",
+        "text": "Appears in:$(li)DX Zeztz Phone (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:faiz_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blade_capsem",
+        "title": "Blade Capsem",
+        "text": "Appears in:$(li)GP Rider Capsem 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blade_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "hibiki_capsem",
+        "title": "Hibiki Capsem",
+        "text": "Appears in:$(li)SG Rider Capsem 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hibiki_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kabuto_capsem",
+        "title": "Kabuto Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 04 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kabuto_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "den_o_capsem",
+        "title": "Den-O Capsem",
+        "text": "Appears in:$(li)DX Zeztz License (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:den_o_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_capsem",
+        "title": "Kiva Capsem",
+        "text": "Appears in:$(li)GP Rider Capsem 02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "decade_capsem",
+        "title": "Decade Capsem",
+        "text": "Appears in:$(li)DX Zeztz Camera (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:decade_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "w_capsem",
+        "title": "W Capsem",
+        "text": "Appears in:$(li)DX Zeztz Sensor (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:w_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ooo_capsem",
+        "title": "OOO Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ooo_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fourze_capsem",
+        "title": "Fourze Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fourze_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wizard_capsem",
+        "title": "Wizard Capsem",
+        "text": "Appears in:$(li)SG Rider Capsem 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wizard_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gaim_capsem",
+        "title": "Gaim Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 04 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gaim_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "drive_capsem",
+        "title": "Drive Capsem",
+        "text": "Appears in:$(li)Hero Pattern T Shirt (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:drive_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ghost_capsem",
+        "title": "Ghost Capsem",
+        "text": "Appears in:$(li)Televi Magazine (November 2025, magazine)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ghost_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ex_aid_capsem",
+        "title": "Ex-Aid Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 03 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ex_aid_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "build_capsem",
+        "title": "Build Capsem",
+        "text": "Appears in:$(li)DX Capsule Cylinder (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:build_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zi_o_capsem",
+        "title": "Zi-O Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 03 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zi_o_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zero_one_capsem",
+        "title": "Zero-One Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 04 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zero_one_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "saber_capsem",
+        "title": "Saber Capsem",
+        "text": "Appears in:$(li)Televi-Kun (November 2025, magazine)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:saber_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "revice_capsem",
+        "title": "Revice Capsem",
+        "text": "Appears in:$(li)Televi-Kun (September 2025, magazine)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:revice_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "geats_capsem",
+        "title": "Geats Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 04 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:geats_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gotchard_capsem",
+        "title": "Gotchard Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 02 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gotchard_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gavv_capsem",
+        "title": "Gavv Capsem",
+        "text": "Appears in:$(li)DX Legend Rider Capsem Set 01 (2025, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gavv_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
       }
     ]
 }

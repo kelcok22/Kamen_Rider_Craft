@@ -95,6 +95,52 @@
 		},
       {
         "type": "patchouli:text",
+        "anchor": "signal_legend_1",
+        "title": "Signal Legend 1",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_1",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_kuuga",
+        "title": "Signal Legend Kuuga",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_kuuga",
+        "text": "Item is currently unobtainable"
+      },     {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_agito",
+        "title": "Signal Legend Agito",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_agito",
+        "text": "Item is currently unobtainable"
+      },     {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_ryuki",
+        "title": "Signal Legend Ryuki",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_ryuki",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "signal_legend_faiz",
         "title": "Signal Legend Faiz",
         "text": "Appears in:$(li)D-Video Special: Kamen Rider 4 (2015, web series)$(br2)Used to craft Faiz's $(l:faiz/devices/faiz_driver)Faiz Driver$(/l)"
@@ -104,6 +150,138 @@
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_faiz",
         "text": "Drops from:$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_blade",
+        "title": "Signal Legend Blade",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_blade",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_hibiki",
+        "title": "Signal Legend Hibiki",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_hibiki",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_kabuto",
+        "title": "Signal Legend Kabuto",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_kabuto",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_den_o",
+        "title": "Signal Legend Den-O",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_den_o",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_kiva",
+        "title": "Signal Legend Kiva",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_kiva",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_decade",
+        "title": "Signal Legend Decade",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_decade",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_w",
+        "title": "Signal Legend W",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_w",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_ooo",
+        "title": "Signal Legend OOO",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_ooo",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_fourze",
+        "title": "Signal Legend Fourze",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_fourze",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_wizard",
+        "title": "Signal Legend Wizard",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_wizard",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "signal_legend_gaim",
+        "title": "Signal Legend Gaim",
+        "text": "Appears in:$(li)Signal Legend Bike Set Complete Box (2015, toyline)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:signal_legend_gaim",
+        "text": "Item is currently unobtainable"
       }
     ]
 }

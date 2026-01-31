@@ -105,6 +105,19 @@
 			"item": "kamenridercraft:shocker_rider_typhoon_core",
 			"title": " ",
 			"text": "Item is currently unobtainable"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "ultraman_typhoon_core",
+        "title": "Ultraman Typhoon Core",
+        "text": "Appears in:$(li)Ultraman vs. Kamen Rider (1993, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ultraman_typhoon_core",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
 	]
 }

@@ -1,0 +1,16 @@
+{
+	"name": "G Sommelier Knife",
+	"icon": "kamenridercraft:g_sommelier_knife",
+	"category": "kamenridercraft:g/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider G (2009, TV special)$(br2)Used by $(l:g/riders/g)Kamen Rider G(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/g_sommelier_knife"
+		}
+	]
+}

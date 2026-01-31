@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Build",
-			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength V$(li)Speed V$(li)Resistance V$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation II$(li)Jump Boost VI$(li)Fire Resistance$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength V$(li)Speed V$(li)Resistance III$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation II$(li)Jump Boost VI$(li)Fire Resistance$(li)Flying"
 		},
         {
             "type": "patchouli:entity",

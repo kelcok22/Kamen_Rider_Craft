@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:g/main",
+    "name": "G Arsenal",
+    "description": "Every weapon and tool used by Kamen Rider G. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
+    "icon": "kamenridercraft:g_sommelier_knife",
+    "sortnum": 4
+}
