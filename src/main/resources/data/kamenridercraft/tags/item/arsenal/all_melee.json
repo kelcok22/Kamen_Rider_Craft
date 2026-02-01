@@ -79,6 +79,8 @@
 	"kamenridercraft:jaguar_claws",
 	"kamenridercraft:peacock_sworther",
 	"kamenridercraft:caucasus_all_over",
+	"kamenridercraft:capricorn_crescent_edge",
+	"kamenridercraft:albino_joker_death_scythe",
 	"kamenridercraft:giraffa_helltar",
 	"kamenridercraft:giraffa_skeltar",
 	"kamenridercraft:joker_mantis",
@@ -241,6 +243,7 @@
     "kamenridercraft:zikan_despear_tsue",
     "kamenridercraft:barlckxs_sword",
     "kamenridercraft:kasshine_trident",
+	"kamenridercraft:manhole_cover",
 	"kamenridercraft:attache_calibur",
 	"kamenridercraft:progrise_hopper_blade",
 	"kamenridercraft:progrise_hopper_blade_naginata",
@@ -321,6 +324,8 @@
     "kamenridercraft:breakam_zeztzer_sword",
     "kamenridercraft:breakam_zeztzer_axe",
     "kamenridercraft:breakam_zeztzer_scythe",
-	"kamenridercraft:inazuma_blaster_greatsword"
+	"kamenridercraft:inazuma_blaster_greatsword",
+	"kamenridercraft:breakam_breaker_blade",
+	"kamenridercraft:breakam_breaker_knuckle"
   ]
 }
