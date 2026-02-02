@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shadow",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book_shadow\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book_shadow\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Saikou Shadow",
@@ -33,7 +33,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "x_swordman",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book_colorful\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book_colorful\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X-Swordman",
@@ -47,7 +47,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "x_swordman_powerful",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book_powerful\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book_powerful\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X-Swordman Powerful",
@@ -61,7 +61,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "x_swordman_wonderful",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X-Swordman Wonderful",

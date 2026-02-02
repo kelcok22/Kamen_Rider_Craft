@@ -225,6 +225,58 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "extra_capsem",
+        "title": "Extra Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Lord Three's $(l:zeztz/devices/lord_invoker#lord_invoker_three)Lord Invoker$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:extra_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shock_capsem",
+        "title": "Shock Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Lord Five's $(l:zeztz/devices/lord_invoker#lord_invoker_five)Lord Invoker$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shock_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "panic_capsem",
+        "title": "Panic Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Lord Six's $(l:zeztz/devices/lord_invoker#lord_invoker_six)Lord Invoker$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:panic_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "clear_capsem",
+        "title": "Clear Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:clear_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "void_capsem",
         "title": "Void Capsem",
         "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)"

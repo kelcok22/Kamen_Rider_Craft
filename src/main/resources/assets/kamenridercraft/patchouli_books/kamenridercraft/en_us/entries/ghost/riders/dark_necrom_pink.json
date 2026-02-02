@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dark_necrom_pink",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_pink\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_pink_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_pink\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_pink_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dark Necrom Pink Damashii",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
           "anchor": "megahex",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "kiwami",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_kiwami\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_kiwami\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Megahex w/ Kiwami Lockseed",
@@ -35,7 +35,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "zzz",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_viral_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_viral_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "ZZZ Megahex",

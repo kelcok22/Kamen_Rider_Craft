@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "faiz",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "axel",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_axel_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_axel_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Axel Form",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blaster",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_blaster_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_blaster_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blaster Form",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gold_blaster",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_gold_blaster_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_gold_blaster_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blaster Form (Gold Version)",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_mode",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:greywolch\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:greywolch\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mode",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "bakuen_no_warrior",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bakuen no Warrior",

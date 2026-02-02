@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "entry",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_brali\",components:{custom_data:{slot_tex1:\"kamenridercraft:brali_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_brali\",components:{custom_data:{slot_tex1:\"kamenridercraft:brali_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hammer",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_brali\",components:{custom_data:{slot_tex1:\"kamenridercraft:brali_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_brali\",components:{custom_data:{slot_tex1:\"kamenridercraft:brali_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Hammer",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blank",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:advent_card\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:advent_card\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blank Form",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryuki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dragshield",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:drag_shield_vent_form\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:drag_shield_vent_form\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki w/ Dragshields",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "survive",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki Survive",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "survive_black",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_black\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_black\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki Survive (Black Version)",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_mode",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mode",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_mode_survive",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragranzer\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragranzer\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mode (Survive)",

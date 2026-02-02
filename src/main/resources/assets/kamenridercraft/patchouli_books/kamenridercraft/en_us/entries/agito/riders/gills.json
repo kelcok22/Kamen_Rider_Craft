@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gills",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:gills\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:gills\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "exceed_gills",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:exceed_gills\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:exceed_gills\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Exceed Gills",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gold_exceed_gills",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_exceed_gills\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_exceed_gills\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gold Exceed Gills",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "leatheraider",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:leatheraider\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meta_factor\",components:{custom_data:{slot_tex1:\"kamenridercraft:leatheraider\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mode",

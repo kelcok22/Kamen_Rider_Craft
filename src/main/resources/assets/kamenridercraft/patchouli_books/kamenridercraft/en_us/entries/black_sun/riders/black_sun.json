@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "black_sun",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:century_king_sun_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_stone_sun\"}},Count:1b},{id:\"kamenridercraft:blacksunlegs\",Count:1b},{id:\"kamenridercraft:blacksuntroso\",Count:1b},{id:\"kamenridercraft:blacksunhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:century_king_sun_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_stone_sun\"}},Count:1b},{id:\"kamenridercraft:blacksunlegs\",Count:1b},{id:\"kamenridercraft:blacksuntroso\",Count:1b},{id:\"kamenridercraft:blacksunhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "glowing_eyes",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:century_king_sun_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:glowing_king_stone_sun\"}},Count:1b},{id:\"kamenridercraft:blacksunlegs\",Count:1b},{id:\"kamenridercraft:blacksuntroso\",Count:1b},{id:\"kamenridercraft:blacksunhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:century_king_sun_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:glowing_king_stone_sun\"}},Count:1b},{id:\"kamenridercraft:blacksunlegs\",Count:1b},{id:\"kamenridercraft:blacksuntroso\",Count:1b},{id:\"kamenridercraft:blacksunhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Glowing Eyes",

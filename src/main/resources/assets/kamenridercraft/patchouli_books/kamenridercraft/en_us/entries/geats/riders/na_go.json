@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "entry",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beat",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Form",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beatboost",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BeatBoost Form",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hammer",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Hammer",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "claw",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Claw",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "propeller",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Propeller",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zombiebeat",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "ZombieBeat Form",
@@ -105,7 +105,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fever_beat",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle_fever\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle_fever\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fever Beat Form",
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fantasy",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:fantasy_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:fantasy_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fantasy Form",

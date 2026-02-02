@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "red_flare",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Red Flare",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blue_flare",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blue Flare",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "strengthening_armament",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:zone_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:zone_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Strengthening Armament",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "yellowed",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blue Flare (Yellowed Suit)",

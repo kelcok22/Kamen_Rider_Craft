@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chaser",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_chaser\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_chaser\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_chaser\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_chaser\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hayai",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_chaser\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift_chaser\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_chaser\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift_chaser\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chaser Hayai",

@@ -1,0 +1,40 @@
+{
+	"name": "Lord Invoker",
+	"icon": "kamenridercraft:lord_invoker_three",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_three",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/lord_three)Lord Three"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_three"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_five",
+			"title": "Lord Invoker (Lord Five)",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/lord_five)Lord Five"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_five"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_six",
+			"title": "Lord Invoker (Lord Six)",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/lord_six)Lord Six"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_six"
+		}
+	]
+}

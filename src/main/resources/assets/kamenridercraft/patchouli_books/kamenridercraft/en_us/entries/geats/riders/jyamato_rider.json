@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jyamato",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "boost",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BoostJyamato Form",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "monster",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MonsterJyamato Form",

@@ -1,0 +1,16 @@
+{
+	"name": "Breakam Breaker (Knuckle Mode)",
+	"icon": "kamenridercraft:breakam_breaker_knuckle",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used by $(l:zeztz/riders/lord_five)Lord Five$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_breaker_knuckle"
+		}
+	]
+}

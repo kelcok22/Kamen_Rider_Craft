@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chaos_driver_shion\",Count:1b},{id:\"kamenridercraft:ride_kamens_legs\",Count:1b},{id:\"kamenridercraft:ride_kamens_troso\",Count:1b},{id:\"kamenridercraft:ride_kamens_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chaos_driver_shion\",Count:1b},{id:\"kamenridercraft:ride_kamens_legs\",Count:1b},{id:\"kamenridercraft:ride_kamens_troso\",Count:1b},{id:\"kamenridercraft:ride_kamens_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",

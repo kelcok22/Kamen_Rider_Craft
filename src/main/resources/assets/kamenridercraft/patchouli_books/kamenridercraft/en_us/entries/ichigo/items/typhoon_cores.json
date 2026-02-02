@@ -97,6 +97,32 @@
 			"type": "patchouli:text",
 			"anchor": "shocker_rider_typhoon_core",
 			"title": "Shocker Rider Typhoon Core",
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used to access Shocker Rider No.1's $(l:ichigo/riders/shocker_riders#shocker_rider_no_1)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shocker_rider_typhoon_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saikyo_kaijin_typhoon_core",
+			"title": "???",
+			"text": "Appears in:$(li)Kamen Rider (1998, PS1 game)$(br2)Used to access Shocker Rider No.1's $(l:ichigo/riders/shocker_riders#saikyo_kaijin)???$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:saikyo_kaijin_typhoon_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saikyo_kaijin_typhoon_core",
+			"title": "???",
 			"text": "Appears in:$(li)Kamen Rider (1971, TV show)"
 		},
 		{

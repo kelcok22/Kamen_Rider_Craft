@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "stronger",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "charge_up",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:charge_up\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:charge_up\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Charge Up",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "white_color",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "White Color",

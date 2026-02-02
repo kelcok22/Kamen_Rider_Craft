@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "the_first",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:the_typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:the_ichigo_legs\",Count:1b},{id:\"kamenridercraft:the_ichigo_troso\",Count:1b},{id:\"kamenridercraft:the_ichigo_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:the_typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:the_ichigo_legs\",Count:1b},{id:\"kamenridercraft:the_ichigo_troso\",Count:1b},{id:\"kamenridercraft:the_ichigo_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "The First",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "the_next",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:the_typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_next_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:the_ichigo_legs\",Count:1b},{id:\"kamenridercraft:the_ichigo_troso\",Count:1b},{id:\"kamenridercraft:the_ichigo_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:the_typhoon_ichigo\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_next_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:the_ichigo_legs\",Count:1b},{id:\"kamenridercraft:the_ichigo_troso\",Count:1b},{id:\"kamenridercraft:the_ichigo_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "The Next",

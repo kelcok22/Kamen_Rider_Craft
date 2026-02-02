@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
           "anchor": "perfect",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:gamma_superior_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:gamma_superior_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gamma Superior Perfect",
@@ -21,7 +21,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "knife",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:knife_gamma_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:knife_gamma_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gamma Superior Knife",
@@ -35,7 +35,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "grimm",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:grimm_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:grimm_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gamma Superior Grimm",
@@ -49,7 +49,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "perfect_camille",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:transform_gamma_eyecon_camille\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_gamma_superior\",components:{custom_data:{slot_tex2:\"kamenridercraft:transform_gamma_eyecon_camille\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gamma Superior Perfect (Camille)",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lemon_energy",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Lemon Energy Arms",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dragon_energy",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_fruits_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_fruits_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Energy Arms",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lemon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_lockseed\",slot_tex2:\"kamenridercraft:basic_duke_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_lockseed\",slot_tex2:\"kamenridercraft:basic_duke_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Lemon Arms",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wizard Arms",

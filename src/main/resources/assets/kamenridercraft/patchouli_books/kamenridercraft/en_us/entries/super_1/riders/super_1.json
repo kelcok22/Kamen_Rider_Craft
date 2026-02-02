@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:cyclode\",Count:1b},{id:\"kamenridercraft:super_1legs\",Count:1b},{id:\"kamenridercraft:super_1troso\",Count:1b},{id:\"kamenridercraft:super_1head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:cyclode\",Count:1b},{id:\"kamenridercraft:super_1legs\",Count:1b},{id:\"kamenridercraft:super_1troso\",Count:1b},{id:\"kamenridercraft:super_1head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",

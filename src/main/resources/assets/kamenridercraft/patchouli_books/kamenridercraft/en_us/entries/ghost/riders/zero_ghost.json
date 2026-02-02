@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zero_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:proto_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zero_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:proto_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Ore Damashii",

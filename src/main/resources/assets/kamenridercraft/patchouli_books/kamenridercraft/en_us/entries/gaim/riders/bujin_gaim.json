@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blood_orange",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blood Orange Arms",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ochimusha",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed_ochimusha\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed_ochimusha\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ochimusha Arms",

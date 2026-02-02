@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_midorider\",Count:1b},{id:\"kamenridercraft:akariderlegs\",Count:1b},{id:\"kamenridercraft:akaridertroso\",Count:1b},{id:\"kamenridercraft:akariderhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_midorider\",Count:1b},{id:\"kamenridercraft:akariderlegs\",Count:1b},{id:\"kamenridercraft:akaridertroso\",Count:1b},{id:\"kamenridercraft:akariderhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",

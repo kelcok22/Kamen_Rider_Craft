@@ -7,7 +7,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "c1",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_caries_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:terror_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_caries_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:terror_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "C1",
@@ -21,7 +21,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "c3",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_caries_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:terror_gochizo_c3\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_caries_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:terror_gochizo_c3\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "C3",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flame",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Style",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "water",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Style",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hurricane",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hurricane Style",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "land",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Land Style",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flame_dragon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Dragon",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "water_dragon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Dragon",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hurricane_dragon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hurricane Dragon",
@@ -105,7 +105,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "land_dragon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Land Dragon",
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flame_dragon_special",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Dragon w/ Drago Skull",
@@ -133,7 +133,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "water_dragon_special",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Dragon w/ Drago Tail",
@@ -147,7 +147,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hurricane_dragon_special",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hurricane Dragon w/ Drago Wings",
@@ -161,7 +161,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "land_dragon_special",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Land Dragon w/ Drago Hell Claws",
@@ -175,7 +175,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "all_dragon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drago_timer\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drago_timer\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "All Dragon",
@@ -189,7 +189,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "special_rush",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_rush_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_rush_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Special Rush",
@@ -203,7 +203,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "infinity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:infinity_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:infinity_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Infinity Style",
@@ -217,7 +217,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "infinity_dragon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring_no_hope\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring_no_hope\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Infinity Dragon",
@@ -231,7 +231,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "infinity_dragon_gold",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Infinity Dragon Gold",
@@ -245,7 +245,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "falco",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Falco Mantle",
@@ -259,7 +259,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beast",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beast Mantle",
@@ -273,7 +273,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dress_up",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dress_up_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dress_up_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Style (Dress Up)",
@@ -287,7 +287,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "garuda",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:garuda_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:garuda_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Garuda Style",
@@ -301,7 +301,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kraken",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kraken_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kraken_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kraken Style",

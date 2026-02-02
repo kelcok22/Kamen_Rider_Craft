@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-02T03:03:03.0476747	Item Models: kamenridercraft
+// 1.21.1	2026-02-01T21:57:28.3482477	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -125,6 +125,7 @@ ad99ea7902362c5a0b6e6e1df29e456894e87498 assets/kamenridercraft/models/item/choc
 9b14d9ce129403d0e2f2dfd83650c0e480cc2e63 assets/kamenridercraft/models/item/chophopper_rider_belt.json
 b633714faa1f27889324a0c2163486dc0bbb6795 assets/kamenridercraft/models/item/chophopper_zecter.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/circle_astroswitch.json
+b8f319581ac8e7c125b13d0eceb2f9067f5ed23a assets/kamenridercraft/models/item/clear_capsem.json
 edf5bb8933373ba3aae76b6fe8dab70cc3e35e47 assets/kamenridercraft/models/item/clear_vent.json
 a378d0bb30b37b4ad33c3c9ae236d872d89873a2 assets/kamenridercraft/models/item/cobra_vistamp_lovekov.json
 17eaeb2c7f47828705a485219626e45b74ac3fff assets/kamenridercraft/models/item/code_capsem.json

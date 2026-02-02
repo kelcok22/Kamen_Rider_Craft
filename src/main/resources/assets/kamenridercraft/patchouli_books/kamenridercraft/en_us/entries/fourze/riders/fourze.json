@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "basestates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Basestates",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "elekstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:elek_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_elekstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:elek_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_elekstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Elekstates",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "firestates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fire_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_firestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fire_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_firestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Firestates",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "magnetstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnet_switch_n\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:magnet_switch_s\",slot_tex5:\"kamenridercraft:fourze_magnetstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnet_switch_n\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:magnet_switch_s\",slot_tex5:\"kamenridercraft:fourze_magnetstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magnetstates",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cosmicstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cosmic_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_cosmicstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cosmic_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_cosmicstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cosmicstates",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rocketstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_rocket_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_rocket_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocketstates",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rocket_drill_states",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:clear_drill_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketdrillstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:clear_drill_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketdrillstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocket Drill States",
@@ -105,7 +105,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "launcherstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:super_launcher_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_launcherstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:super_launcher_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_launcherstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Launcherstates",
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "meteor_fusionstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:fusion_switch_og\",slot_tex5:\"kamenridercraft:fourze_meteor_fusionstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:fusion_switch_og\",slot_tex5:\"kamenridercraft:fourze_meteor_fusionstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Fusionstates",
@@ -133,7 +133,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "meteor_nadeshiko_fusionstates",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:fusion_switch\",slot_tex5:\"kamenridercraft:fourze_meteor_nadeshiko_fusionstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:fusion_switch\",slot_tex5:\"kamenridercraft:fourze_meteor_nadeshiko_fusionstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Nadeshiko Fusionstates",
@@ -147,7 +147,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shin-chan",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:shin_chan_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:shin_chan_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Basestates (Shin-chan Ver.)",
@@ -161,7 +161,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rocket",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rocket_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rocket_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocket Module",
@@ -175,7 +175,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "launcher",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:launcher_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:launcher_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Launcher Module",
@@ -189,7 +189,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "drill",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:drill_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:drill_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Drill Module",
@@ -203,7 +203,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "radar",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:radar_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:radar_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Radar Module",
@@ -217,7 +217,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "magichand",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magic_hand_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magic_hand_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magichand Module",
@@ -231,7 +231,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "camera",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:camera_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:camera_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Camera Module",
@@ -245,7 +245,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "parachute",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:parachute_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:parachute_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Parachute Module",
@@ -259,7 +259,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chainsaw",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:chainsaw_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:chainsaw_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chainsaw Module",
@@ -273,7 +273,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hopping",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:hopping_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:hopping_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hopping Module",
@@ -287,7 +287,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "scissors",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:scissors_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:scissors_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Scissors Module",
@@ -301,7 +301,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beat",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:beat_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:beat_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Module",
@@ -315,7 +315,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chain_array",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chain_array_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chain_array_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chain Array Module",
@@ -329,7 +329,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "smoke",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:smoke_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:smoke_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Smoke Module",
@@ -343,7 +343,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "spike",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:spike_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:spike_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Spike Module",
@@ -357,7 +357,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "winch",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:winch_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:winch_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Winch Module",
@@ -371,7 +371,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flash",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flash_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flash_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flash Module",
@@ -385,7 +385,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shield",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:shield_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:shield_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shield Module",
@@ -399,7 +399,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gatling",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:gatling_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:gatling_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gatling Module",
@@ -413,7 +413,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "stealth",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:stealth_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:stealth_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Stealth Module",
@@ -427,7 +427,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hammer",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:hammer_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:hammer_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hammer Module",
@@ -441,7 +441,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "water",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:water_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:water_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Module",
@@ -455,7 +455,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "medical",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:medical_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:medical_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Medical Module",
@@ -469,7 +469,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "pen",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:pen_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:pen_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Pen Module",
@@ -483,7 +483,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wheel",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:wheel_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:wheel_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wheel Module",
@@ -497,7 +497,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "screw",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:screw_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:screw_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Screw Module",
@@ -511,7 +511,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hand",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:hand_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:hand_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hand Module",
@@ -525,7 +525,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "scoop",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scoop_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scoop_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Scoop Module",
@@ -539,7 +539,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "n_magnet",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnet_switch_n\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnet_switch_n\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "N Magnet Module",
@@ -553,7 +553,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "s_magnet",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:magnet_switch_s\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:magnet_switch_s\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "S Magnet Module",
@@ -567,7 +567,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "freeze",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:freeze_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:freeze_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Freeze Module",
@@ -581,7 +581,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "claw",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:claw_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:claw_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Claw Module",
@@ -595,7 +595,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "board",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:board_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:board_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Board Module",
@@ -609,7 +609,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "giantfoot",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:giantfoot_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:giantfoot_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Giantfoot Module",
@@ -623,7 +623,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "aero",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:aero_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:aero_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Aero Module",
@@ -637,7 +637,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gyro",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:gyro_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:gyro_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gyro Module",
@@ -651,7 +651,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "net",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:net_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:net_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Net Module",
@@ -665,7 +665,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "stamper",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:stamper_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:stamper_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Stamper Module",
@@ -679,7 +679,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ichigo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:rider1_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:rider1_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ichigo Module",
@@ -693,7 +693,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "nigo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:rider2_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:rider2_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Nigo Module",
@@ -707,7 +707,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "v3",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:v3_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:v3_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "V3 Module",
@@ -721,7 +721,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "riderman",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Riderman Module",
@@ -735,7 +735,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "x",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:x_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:x_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X Module",
@@ -749,7 +749,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "amazon",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:amazon_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:amazon_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazon Module",
@@ -763,7 +763,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "stronger",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stronger_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stronger_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Stronger Module",
@@ -777,7 +777,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "skyrider",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:skyrider_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:skyrider_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Skyrider Module",
@@ -791,7 +791,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_1",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:super_1_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:super_1_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super-1 Module",
@@ -805,7 +805,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zx",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zx_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zx_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "ZX Module",
@@ -819,7 +819,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "black",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:black_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:black_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Black Module",
@@ -833,7 +833,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rx",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rx_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rx_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Black RX Module",
@@ -847,7 +847,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kuuga",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:kuuga_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:kuuga_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kuuga Module",
@@ -861,7 +861,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "agito",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:agito_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:agito_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Agito Module",
@@ -875,7 +875,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryuki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki Module",
@@ -889,7 +889,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "faiz",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:faiz_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:faiz_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Faiz Module",
@@ -903,7 +903,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:blade_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:blade_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blade Module",
@@ -917,7 +917,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:hibiki_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:hibiki_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hibiki Module",
@@ -931,7 +931,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kabuto",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:kabuto_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:kabuto_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kabuto Module",
@@ -945,7 +945,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "den_o",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Den-O Module",
@@ -959,7 +959,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:kiva_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:kiva_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kiva Module",
@@ -973,7 +973,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:decade_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:decade_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Module",
@@ -987,7 +987,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "w",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:double_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:double_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "W Module",
@@ -1001,7 +1001,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:ooo_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:ooo_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OOO Module",

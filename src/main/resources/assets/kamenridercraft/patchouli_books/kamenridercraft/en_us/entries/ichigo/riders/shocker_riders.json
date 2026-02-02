@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_1",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_1\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_1\",components:{custom_data:{slot_tex1:\"kamenridercraft:shocker_rider_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.1"
@@ -19,8 +19,21 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "saikyo_kaijin",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_1\",components:{custom_data:{slot_tex1:\"kamenridercraft:saikyo_kaijin_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "???"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Shocker Riders",
+			"text": "Appears in:$(li)Kamen Rider (1998, PS1 game)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_1)Typhoon$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost V$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_2",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_2\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_2\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.2"
@@ -33,7 +46,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_3",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_3\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_3\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.3"
@@ -46,7 +59,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_4",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_4\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_4\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.4"
@@ -59,7 +72,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_5",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_5\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_5\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.5"
@@ -72,7 +85,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_6",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_6\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_6\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.6"
@@ -85,7 +98,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_7",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_7\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_7\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.7"
@@ -98,7 +111,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_8",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_8\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_8\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.8"
@@ -111,7 +124,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_9",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_9\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_9\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.9"
@@ -124,7 +137,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_10",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_10\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_10\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.10"
@@ -137,7 +150,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_11",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_11\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_11\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.11"
@@ -150,7 +163,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shocker_rider_no_12",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_12\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_12\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shocker Rider No.12"

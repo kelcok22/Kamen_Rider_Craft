@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "masked",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Masked Form",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rider",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rider Form",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hyper",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_hyper_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_hyper_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hyper Form",
@@ -49,7 +49,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "hyper",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_hyper_zecter_clock_up\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_hyper_zecter_clock_up\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Hyper Clock Form",
@@ -63,7 +63,7 @@
       {
 			"type": "patchouli:entity",
 			"anchor": "super_mode",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:scissorbeeter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:scissorbeeter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mode",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cherry_energy",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_sigurd\",components:{custom_data:{slot_tex1:\"kamenridercraft:cherry_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_sigurd\",components:{custom_data:{slot_tex1:\"kamenridercraft:cherry_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cherry Energy Arms",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_sigurd\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_sigurd\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kiva Arms",

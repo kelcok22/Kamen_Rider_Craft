@@ -2,7 +2,7 @@
 	"name": "Zeztz Horse Armor",
 	"icon": "kamenridercraft:zeztz_horse_armor",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 7,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

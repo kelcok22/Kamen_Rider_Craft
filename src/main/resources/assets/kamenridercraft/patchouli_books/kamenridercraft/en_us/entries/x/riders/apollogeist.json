@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Apollogeist"
@@ -19,7 +19,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "apollogeist_reborn",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:apollogeist_reborn_core\"}},Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:apollogeist_reborn_core\"}},Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Apollogeist Reborn",

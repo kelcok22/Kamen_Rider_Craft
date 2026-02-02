@@ -2,7 +2,7 @@
 	"name": "Capsem Cylinder",
 	"icon": "kamenridercraft:capsem_cylinder",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 8,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

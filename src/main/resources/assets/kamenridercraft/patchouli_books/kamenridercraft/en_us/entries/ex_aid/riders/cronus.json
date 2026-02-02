@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chronicle",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronos\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronos\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chronicle Gamer",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gamedeus",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronos\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat_gamedeus\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronos\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat_gamedeus\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gamedeus Cronus",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chronicle_gamer_driver",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chronicle Gamer",

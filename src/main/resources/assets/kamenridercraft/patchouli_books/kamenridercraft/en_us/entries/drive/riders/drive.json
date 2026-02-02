@@ -7,7 +7,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "speed",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed",
@@ -21,7 +21,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "max_flare",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Flare",
@@ -35,7 +35,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "funky_spike",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:funkyspike\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:funkyspike\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Spike",
@@ -49,7 +49,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "midnight_shadow",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:midnightshadow\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:midnightshadow\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Shadow",
@@ -63,7 +63,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "justice_hunter",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:justice_hunter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:justice_hunter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Hunter",
@@ -77,7 +77,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "dream_vegas",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dream_vegas\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dream_vegas\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Vegas",
@@ -91,7 +91,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "spin_mixer",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:spin_mixer\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:spin_mixer\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Mixer",
@@ -105,7 +105,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "massive_monster",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:massive_monster\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:massive_monster\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Monster",
@@ -119,7 +119,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "dimension_cab",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dimension_cab\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dimension_cab\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Cab",
@@ -133,7 +133,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "wild",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild",
@@ -147,7 +147,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "rumble_dump",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild Dump",
@@ -161,7 +161,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "hooking_wrecker",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:hooking_wrecker\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:hooking_wrecker\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild Wrecker",
@@ -175,7 +175,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "mad_doctor",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild Doctor",
@@ -189,7 +189,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "technic",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic",
@@ -203,7 +203,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "fire_braver",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:fire_braver\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:fire_braver\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic Braver",
@@ -217,7 +217,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "rolling_gravity",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:rolling_gravity\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:rolling_gravity\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic Gravity",
@@ -231,7 +231,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "road_winter",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:road_winter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:road_winter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic Winter",
@@ -245,7 +245,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "dead_heat",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Dead Heat",
@@ -259,7 +259,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "formula",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula",
@@ -273,7 +273,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "mantarn_f01",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:mantarn_f01\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:mantarn_f01\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula Mantarn",
@@ -287,7 +287,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "jacky_f02",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:jacky_f02\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:jacky_f02\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula Jacky",
@@ -301,7 +301,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "sparner_f03",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:sparner_f03\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:sparner_f03\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula Sparner",
@@ -315,7 +315,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "tridoron",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron",
@@ -329,7 +329,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "attack_123",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:attack123_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:attack123_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron Attack 1.2.3",
@@ -343,7 +343,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "people_saver",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:people_saver_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:people_saver_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron People Saver",
@@ -357,7 +357,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "kouji_genbar",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:kouji_genbar_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:kouji_genbar_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron Kouji Genbar",
@@ -371,7 +371,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "all_kakimazerl",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:tridoron_all_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:tridoron_all_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron Tire All Kakimazerl",
@@ -385,7 +385,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "chou_dead_heat",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoron_key\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoron_key\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Super Dead Heat",
@@ -399,7 +399,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "dead_heat_mach",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_drive_mach\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_drive_mach\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Dead Heat",
@@ -413,7 +413,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "fruits",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fruitsshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fruitsshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Fruits",
@@ -427,7 +427,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "high_speed",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type High Speed",
@@ -441,7 +441,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "mega_max_flare",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\",slot_tex2:\"kamenridercraft:mega_maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\",slot_tex2:\"kamenridercraft:mega_maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type High Speed Flare",
@@ -455,7 +455,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "special",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specialshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specialshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Special",
@@ -469,7 +469,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "zero_drive",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed",
@@ -483,7 +483,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "speed_wild_technic",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedwildtechnicshift\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedwildtechnicshift\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Wild Technic",

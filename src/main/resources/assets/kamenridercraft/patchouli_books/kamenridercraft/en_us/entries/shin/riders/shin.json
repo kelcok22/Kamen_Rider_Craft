@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:grasshopper_dna\",Count:1b},{id:\"kamenridercraft:shinlegs\",Count:1b},{id:\"kamenridercraft:shintroso\",Count:1b},{id:\"kamenridercraft:shinhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:grasshopper_dna\",Count:1b},{id:\"kamenridercraft:shinlegs\",Count:1b},{id:\"kamenridercraft:shintroso\",Count:1b},{id:\"kamenridercraft:shinhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",

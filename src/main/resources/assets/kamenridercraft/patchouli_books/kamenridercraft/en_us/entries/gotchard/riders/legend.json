@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "legend",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legend_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legend_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kuuga",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Kuuga",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "agito",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Agito",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryuki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Ryuki",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "faiz",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Faiz",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Blade",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Hibiki",
@@ -105,7 +105,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kabuto",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Kabuto",
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "den-o",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Den-O",
@@ -133,7 +133,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Kiva",
@@ -147,7 +147,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Decade",
@@ -161,7 +161,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "double",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Double",
@@ -175,7 +175,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous OOO",
@@ -189,7 +189,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fourze",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Fourze",
@@ -203,7 +203,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Wizard",
@@ -217,7 +217,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Gaim",
@@ -231,7 +231,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "drive",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Drive",
@@ -245,7 +245,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ghost",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Ghost",
@@ -259,7 +259,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ex-aid",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Ex-Aid",
@@ -273,7 +273,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "build",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Build",
@@ -287,7 +287,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zi-o",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Zi-O",
@@ -301,7 +301,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zero-one",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_one_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_one_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Zero-One",
@@ -315,7 +315,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "saber",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Saber",
@@ -329,7 +329,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "revi",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Revi",
@@ -343,7 +343,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "vice",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Vice",
@@ -357,7 +357,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "geats",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Geats",
@@ -371,7 +371,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gotchard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchard_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchard_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Gotchard",
@@ -385,7 +385,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "legendary",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legendary_legend_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legendary_legend_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Legendary Legend",
@@ -399,7 +399,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "kuuga_ultimate",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Kuuga Ultimate Form",
@@ -413,7 +413,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "agito_shining",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_shining_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_shining_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Agito Shining Form",
@@ -427,7 +427,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ryuki_survive",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_survive_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_survive_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Ryuki Survive",
@@ -441,7 +441,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "faiz_blaster",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_blaster_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_blaster_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Faiz Blaster Form",
@@ -455,7 +455,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "blade_king",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_king_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_king_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Blade King Form",
@@ -469,7 +469,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "armed_hibiki",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:armed_hibiki_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:armed_hibiki_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Armed Hibiki",
@@ -483,7 +483,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "kabuto_hyper",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_hyper_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_hyper_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Kabuto Hyper Form",
@@ -497,7 +497,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "den_o_liner",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_liner_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_liner_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Den-O Liner Form",
@@ -511,7 +511,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "kiva_emperor",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_emperor_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_emperor_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Kiva Emperor Form",
@@ -525,7 +525,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "decade_complete",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_complete_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_complete_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Decade Complete Form",
@@ -539,7 +539,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "double_cyclonejokerxtreme",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_cyclone_joker_xtreme_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_cyclone_joker_xtreme_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Double CycloneJokerXtreme",
@@ -553,7 +553,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ooo_putotyra",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_putotyra_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_putotyra_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous OOO Putotyra Combo",
@@ -567,7 +567,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "fourze_cosmic",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_cosmic_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_cosmic_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Fourze Cosmicstates",
@@ -581,7 +581,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "wizard_infinity",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_infinity_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_infinity_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Wizard Infinity Style",
@@ -595,7 +595,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "gaim_kiwami",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_kiwami_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_kiwami_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Gaim Kiwami Arms",
@@ -609,7 +609,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "drive_tridoron",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_tridoron_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_tridoron_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Drive type Tridoron",
@@ -623,7 +623,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ghost_mugen",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_mugen_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_mugen_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Ghost Mugen Damashii",
@@ -637,7 +637,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ex_aid_muteki",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_muteki_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_muteki_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Ex-Aid Muteki Gamer",
@@ -651,7 +651,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "build_genius",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_genius_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_genius_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Build Genius Form",
@@ -665,7 +665,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "grandzi_o",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:grand_zi_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:grand_zi_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous GrandZi-O",
@@ -679,7 +679,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "zero_two",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_two_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_two_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Zero-Two",
@@ -693,7 +693,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "xross_saber",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xross_saber_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xross_saber_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Xross Saber",
@@ -707,7 +707,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ultimate_revi",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_revi_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_revi_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Ultimate Revi",
@@ -721,7 +721,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "ultimate_vice",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_vice_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_vice_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous Ultimate Vice",
@@ -735,7 +735,7 @@
       {
         "type": "patchouli:entity",
         "anchor": "geatsix",
-        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ix_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ix_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
         "name": "Gorgeous GeatsIX",

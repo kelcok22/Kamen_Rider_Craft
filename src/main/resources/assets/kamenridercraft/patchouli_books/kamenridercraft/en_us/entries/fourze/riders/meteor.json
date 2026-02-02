@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "meteor",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meteor_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:meteor_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meteor_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:meteor_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "meteor_storm",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meteor_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:meteor_storm_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meteor_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:meteor_storm_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Storm",

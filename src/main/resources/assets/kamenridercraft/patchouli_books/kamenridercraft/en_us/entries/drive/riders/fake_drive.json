@@ -7,7 +7,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "speed",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed",
@@ -21,7 +21,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "max_flare",
-      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Flare",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fifteen",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fifteen_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fifteen_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fifteen Arms",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Arms",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fourze",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fourze Arms",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wizard Arms",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gaim Arms",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim_special",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:heisei_rider_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:heisei_rider_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gaim Arms",

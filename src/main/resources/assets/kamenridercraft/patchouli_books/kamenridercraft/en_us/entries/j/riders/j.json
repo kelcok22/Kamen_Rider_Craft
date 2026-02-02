@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "j",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jumbo_formation",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone_jumbo_formation\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone_jumbo_formation\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jumbo Formation",

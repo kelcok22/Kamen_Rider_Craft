@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "skull",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",components:{custom_data:{slot_tex1:\"kamenridercraft:skull_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",components:{custom_data:{slot_tex1:\"kamenridercraft:skull_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "skull_crystal",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",components:{custom_data:{slot_tex1:\"kamenridercraft:skull_memory_crystal\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",components:{custom_data:{slot_tex1:\"kamenridercraft:skull_memory_crystal\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Skull Crystal",

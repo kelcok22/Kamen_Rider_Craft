@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "black_rx",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:rx_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:rx_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "roborider",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:robo_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:robo_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Roborider",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "biorider",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:bio_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:bio_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Biorider",

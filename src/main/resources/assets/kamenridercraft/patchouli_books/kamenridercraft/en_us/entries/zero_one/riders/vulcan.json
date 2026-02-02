@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shooting_wolf",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shooting Wolf",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "punching_kong",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Punching Kong",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_hopper",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey_vulcan\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey_vulcan\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Hopper",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "assault_wolf",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:assault_wolf_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:assault_wolf_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Assault Wolf",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rampage_gatling",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:rampage_gatling_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:rampage_gatling_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "RampageVulcan",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "orthros",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:japanese_wolf_zetsumerisekey_vulcan\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:japanese_wolf_zetsumerisekey_vulcan\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Orthros Vulcan",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lone_wolf",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver_vulcan\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver_vulcan\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Lone Wolf",

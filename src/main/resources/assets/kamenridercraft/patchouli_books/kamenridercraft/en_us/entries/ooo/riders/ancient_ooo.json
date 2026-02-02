@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tatoba",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ancient_taka_medal\",slot_tex2:\"kamenridercraft:ancient_tora_medal\",slot_tex3:\"kamenridercraft:ancient_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ancient_taka_medal\",slot_tex2:\"kamenridercraft:ancient_tora_medal\",slot_tex3:\"kamenridercraft:ancient_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tatoba Combo",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ancient_tatoba",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:ancient_tora_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:ancient_tora_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "greeed_absorption",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:greeed_absorption_core\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:greeed_absorption_core\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Greeed Absorption",

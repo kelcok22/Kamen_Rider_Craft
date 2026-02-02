@@ -7,7 +7,7 @@
         {
             "type": "patchouli:entity",
             "anchor": "dragon",
-            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
             "name": "Cross-Z",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
             "anchor": "charge",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_sclash_jelly\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_sclash_jelly\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cross-Z Charge",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
             "anchor": "taka",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle_cross_z\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle_cross_z\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cross-Z Charge with Celestial Wings",
@@ -49,7 +49,7 @@
         {
             "type": "patchouli:entity",
             "anchor": "magma",
-            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_magma_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_magma_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
             "name": "Cross-Z Magma",
@@ -63,7 +63,7 @@
         {
             "type": "patchouli:entity",
             "anchor": "great",
-            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:great_dragon_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:great_dragon_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
             "name": "Great Cross-Z",
@@ -77,7 +77,7 @@
         {
             "type": "patchouli:entity",
             "anchor": "cross_zevol",
-            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:muscle_galaxy_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:muscle_galaxy_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
             "name": "Cross-ZEvol",

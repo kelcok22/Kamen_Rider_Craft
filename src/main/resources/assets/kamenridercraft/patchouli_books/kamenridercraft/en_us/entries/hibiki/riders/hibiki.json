@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kurenai",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_kurenai\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_kurenai\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hibiki Kurenai",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "armed",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_armed\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_armed\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Hibiki",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_mode",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:akanetaka\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:akanetaka\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mode",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "bakuen_no_warrior",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi_hibiki\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi_hibiki\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bakuen no Warrior",
