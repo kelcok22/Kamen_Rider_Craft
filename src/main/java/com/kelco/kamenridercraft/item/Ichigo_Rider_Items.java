@@ -192,8 +192,9 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_rider","typhoon_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_rider_1","typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -202,6 +203,23 @@ public class Ichigo_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> SAIKYO_KAIJIN_TYPHOON_CORE = ITEMS.register("saikyo_kaijin_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_saikyo_kaijin","shocker_rider_1","typhoon_belt_saikyo_kaijin",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)) {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 0.1);
+                }
+            }.allowRiderKick().IsGlowing().has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> NOPHOON_CORE = ITEMS.register("nophoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kamen_norider","nophoon_belt",

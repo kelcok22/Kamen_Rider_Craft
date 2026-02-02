@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-31T23:15:33.0370494	Item Models: kamenridercraft
+// 1.21.1	2026-02-02T03:03:03.0476747	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -569,6 +569,7 @@ c1759c3c2d5fe66d5800fc3dd456b726b5ff59ba assets/kamenridercraft/models/item/ryuk
 b7896a879042a8bc4bcb383599a7d3dfca206859 assets/kamenridercraft/models/item/saber_capsem.json
 1daf0d0835c01998899d9992dea43a91538a5251 assets/kamenridercraft/models/item/saber_gochizo.json
 3aa8a49ebedc6adcc02e8b498d4ef2fc8c37528b assets/kamenridercraft/models/item/saber_ride_chemy_card.json
+d92d6e955233d7bd0dc13aff8025ad4e8a56b8da assets/kamenridercraft/models/item/saikyo_kaijin_typhoon_core.json
 250c240d0cea5d63b411829a82c0834c3e97a787 assets/kamenridercraft/models/item/saiyuu_journey_wonder_ride_book_xross.json
 6978027b5b9fbf84cb77d24d754430bf65d8f3e2 assets/kamenridercraft/models/item/sakura_hurricane.json
 77536c9fcd7cbfa2b243d528294cadec1e370559 assets/kamenridercraft/models/item/salad_umaibo_gochizo.json
