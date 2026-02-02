@@ -15,8 +15,9 @@
       },
       {
         "type": "patchouli:crafting",
+		"anchor": "odin_boss_block",
         "recipe": "kamenridercraft:ryuki/odin_boss_block",
-        "text": "Mine this block to summon $(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+        "text": "Mine this block to summon $(l:ryuki/mobs/odin)Kamen Rider Odin$(/l)"
       },
       {
         "type": "patchouli:spotlight",

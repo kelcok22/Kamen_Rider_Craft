@@ -409,11 +409,9 @@
 			"recipe": "kamenridercraft:den_o/zero_liner_green"
         },
       {
-        "type": "patchouli:spotlight",
+		"type": "patchouli:crafting",
         "anchor": "window_planks",
-        "link_recipe": true,
-        "item": "kamenridercraft:window_planks",
-        "text": "Block is currently unobtainable"
+		 "recipe": "kamenridercraft:misc/block/window_planks"
       },
       {
         "type": "patchouli:spotlight",

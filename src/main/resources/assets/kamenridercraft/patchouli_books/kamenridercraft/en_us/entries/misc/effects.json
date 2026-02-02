@@ -407,6 +407,12 @@
         },
 		{
 			"type": "patchouli:text",
+			"anchor": "mirror_noises",
+			"title": "Mirror Noises",
+			"text": "This effect causes a $(l:ryuki/mobs/mirror_rider)Mirror Rider$(/l) to spawn once the effect has worn off.$(br2)Examples for how to get this effect:$(li)Break a glass block with a $(l:ryuki/arsenal/advent_decks#advent_deck_blank)Blank Advent Deck$(/l)  in your hand"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "wonder",
 			"title": "Wonder",
 			"text": "This effect allows you to alter your size by pressing the ability key. You can grow while standing and shrink while sneaking.$(br2)Examples for how to get this effect:$(li)Transform into $(l:zeztz/riders/zeztz#wonder)Kamen Rider Zeztz Paradigm Wonder$(/l)"
