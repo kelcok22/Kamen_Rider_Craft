@@ -23,12 +23,13 @@
 			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_1\",components:{custom_data:{slot_tex1:\"kamenridercraft:saikyo_kaijin_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "???"
+			"name": "Greatest Kaijin",
+			"text": "Accessed with the $(l:ichigo/items/typhoon_cores#saikyo_kaijin_typhoon_core)Greatest Kaijin Typhoon Core$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Shocker Riders",
-			"text": "Appears in:$(li)Kamen Rider (1998, PS1 game)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_1)Typhoon$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost V$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider (1998, PS1 game)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_shocker_rider_1)Shocker Rider No.1 Typhoon$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost V$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",
