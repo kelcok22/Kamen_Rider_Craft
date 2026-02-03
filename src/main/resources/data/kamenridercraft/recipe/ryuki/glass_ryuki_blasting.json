@@ -1,11 +1,11 @@
 {
   "type": "minecraft:blasting",
-  "group": "purple_medals",
+  "group": "glass_ryuki",
   "ingredient": {
-	  "item": "kamenridercraft:cellmedal"
+    "item": "kamenridercraft:advent_card"
   },
   "result": {
-    "id": "kamenridercraft:cell_alloy_ingot"
+    "id": "kamenridercraft:glass_ryuki"
   },
   "experience": 1,
   "cookingtime": 200
