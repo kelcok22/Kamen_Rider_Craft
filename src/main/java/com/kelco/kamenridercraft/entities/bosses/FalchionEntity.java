@@ -49,6 +49,7 @@ public class FalchionEntity extends BaseHenchmenEntity {
     			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
     	        RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1);
                 this.moveControl = new MoveControl(this);
+				this.setNoGravity(false);
 			}
     	}
     }
