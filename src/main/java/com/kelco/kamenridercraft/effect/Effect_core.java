@@ -13,6 +13,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.NeoForgeMod;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.xml.sax.ext.Attributes2;
 
 public class Effect_core {
 
@@ -180,6 +181,10 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  THUNDER_SHOT= EFFECT.register("thunder_shot",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
+
+    public static final Holder<MobEffect> CLIMBING= EFFECT.register("climbing",
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xffffff));
+
 
     public static final Holder<MobEffect>  FORM_TIMEOUT= EFFECT.register("form_timeout",
             () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));

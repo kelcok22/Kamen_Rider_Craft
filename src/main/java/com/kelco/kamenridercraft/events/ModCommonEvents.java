@@ -27,6 +27,7 @@ import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -34,6 +35,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -48,10 +50,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.enchantment.effects.AllOf;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -59,16 +63,21 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.shapes.EntityCollisionContext;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.EntityEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
@@ -124,8 +133,19 @@ public class ModCommonEvents {
             }
 		}
 
-		@SubscribeEvent
+        public void onEntityTick(BlockEvent event) {
+        }
+
+
+            @SubscribeEvent
 		public void onEntityTick(EntityTickEvent.Post event) {
+
+            if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(Effect_core.CLIMBING)) {
+                                if ( entity.horizontalCollision) {
+                                    entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
+                }
+            }
+
 			if (event.getEntity()instanceof LivingEntity entity && !(event.getEntity() instanceof Player)){
 				if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
 					belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);

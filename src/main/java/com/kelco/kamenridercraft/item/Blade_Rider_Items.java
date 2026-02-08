@@ -14,7 +14,9 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -564,7 +566,16 @@ public class Blade_Rider_Items {
 
 
 	public static final DeferredItem<Item> BLAYBUCKLE = ITEMS.register("blay_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()){
+                public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
+                {
+                    boolean fly = rider instanceof Player player && player.getAbilities().flying;
+                    if (equipmentSlot != EquipmentSlot.FEET&&get_Form_Item(itemstack,1)==CHANGE_BEETLE.asItem()&&rider.hasEffect(Effect_core.TIME)) {
+                        return "blade_yellowed";
+                    } else return super.GET_TEXT(itemstack,equipmentSlot,rider,riderName);
+                }
+            }.AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+
 	public static final DeferredItem<Item> GARRENBUCKLE = ITEMS.register("garren_buckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> CHALICEROUZER = ITEMS.register("chalice_rouzer",
