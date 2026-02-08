@@ -8653,6 +8653,11 @@
 "item.kamenridercraft.sigma_amazon_cell_vial": "アマゾン細胞瓶(シグマ)",
 "item.kamenridercraft.neo_amazon_cell_vial": "アマゾン細胞瓶(ネオ)",
 
+  "item.kamenridercraft.amazon_blade": "アマゾンブレイド",
+  "item.kamenridercraft.amazon_scythe": "アマゾンサイズ",
+  "item.kamenridercraft.amazon_whip": "アマゾンウィップ",
+  "item.kamenridercraft.amazon_spear": "アマゾンスピア",
+
 "item.kamenridercraft.blacksun_logo": "BLACK SUNクレスト",
 "item.kamenridercraft.blacksunhead": "BLACK SUNのヘルメット",
 "item.kamenridercraft.blacksuntroso": "BLACK SUNの胸当て",
@@ -9644,6 +9649,7 @@
   "tag.item.kamenridercraft.arsenal.all_throwables": "ライダー投げ武器",
   "tag.item.kamenridercraft.arsenal.by_series.555": "ファイズ武器",
   "tag.item.kamenridercraft.arsenal.by_series.agito": "アギト武器",
+  "tag.item.kamenridercraft.arsenal.by_series.agito": "アマゾンズ武器",
   "tag.item.kamenridercraft.arsenal.by_series.black_rx": "RX武器",
   "tag.item.kamenridercraft.arsenal.by_series.black_sun": "BLACK SUN武器",
   "tag.item.kamenridercraft.arsenal.by_series.blade": "ブレイド武器",

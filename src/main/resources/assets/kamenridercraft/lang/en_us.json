@@ -8660,6 +8660,11 @@
 "item.kamenridercraft.sigma_amazon_cell_vial": "Amazon Cell Vial (Sigma)",
 "item.kamenridercraft.neo_amazon_cell_vial": "Amazon Cell Vial (Neo)",
 
+  "item.kamenridercraft.amazon_blade": "Amazon Blade",
+  "item.kamenridercraft.amazon_scythe": "Amazon Scythe",
+  "item.kamenridercraft.amazon_whip": "Amazon Whip",
+  "item.kamenridercraft.amazon_spear": "Amazon Spear",
+
 "item.kamenridercraft.blacksun_logo": "Black Sun Logo",
 "item.kamenridercraft.blacksunhead": "Black Sun Helmet",
 "item.kamenridercraft.blacksuntroso": "Black Sun Chestplate",
@@ -9649,6 +9654,7 @@
   "tag.item.kamenridercraft.arsenal.all_throwables": "Rider Throwable Weapons",
   "tag.item.kamenridercraft.arsenal.by_series.555": "Faiz Weapons",
   "tag.item.kamenridercraft.arsenal.by_series.agito": "Agito Weapons",
+  "tag.item.kamenridercraft.arsenal.by_series.amazons": "Amazons Weapons",
   "tag.item.kamenridercraft.arsenal.by_series.black_rx": "RX Weapons",
   "tag.item.kamenridercraft.arsenal.by_series.black_sun": "Black Sun Weapons",
   "tag.item.kamenridercraft.arsenal.by_series.blade": "Blade Weapons",

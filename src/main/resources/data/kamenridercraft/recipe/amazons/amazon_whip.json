@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "amazons",
+  "pattern": [
+	"XOX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:amazon_cell_vial"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"O": {
+	  "item": "kamenridercraft:omega_amazon_cell_vial"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:amazon_whip"
+  }	
+}
+

@@ -174,7 +174,14 @@ public class Reboot_Rider_Items {
 	public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_NEO_ALPHA = ITEMS.register("neo_amazons_driver_neo_alpha",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo_alpha",AMAZON_INJECTOR_NEO_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
-
+    public static final DeferredItem<Item> AMAZON_BLADE = ITEMS.register("amazon_blade",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+    public static final DeferredItem<Item> AMAZON_SCYTHE = ITEMS.register("amazon_scythe",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+    public static final DeferredItem<Item> AMAZON_WHIP = ITEMS.register("amazon_whip",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+    public static final DeferredItem<Item> AMAZON_SPEAR = ITEMS.register("amazon_spear",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
 	// BLack Sun
 
 	public static final DeferredItem<Item> KAIJIN_STONE = ITEMS.register("kaijin_stone",

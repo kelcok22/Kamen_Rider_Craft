@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "amazons",
+  "pattern": [
+    "XAX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:amazon_cell_vial"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "A": {
+      "item": "kamenridercraft:alpha_amazon_cell_vial"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:amazon_blade"
+  }
+}
