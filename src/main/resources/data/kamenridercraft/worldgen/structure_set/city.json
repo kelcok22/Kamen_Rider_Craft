@@ -31,7 +31,11 @@
 	  {
 		  "structure": "kamenridercraft:toriizaka",
 		  "weight": 1
-	  }
+	  },
+    {
+      "structure": "kamenridercraft:shocker_base",
+      "weight": 1
+    }
   ],
   "placement": {
 	"type": "minecraft:random_spread",
