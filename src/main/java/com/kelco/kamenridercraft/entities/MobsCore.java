@@ -6,10 +6,7 @@ import com.kelco.kamenridercraft.entities.allies.*;
 import com.kelco.kamenridercraft.entities.bikes.*;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
-import com.kelco.kamenridercraft.entities.projectile.CellMedalProjectileEntity;
-import com.kelco.kamenridercraft.entities.projectile.LaserProjectileEntity;
-import com.kelco.kamenridercraft.entities.projectile.ShurikenProjectileEntity;
-import com.kelco.kamenridercraft.entities.projectile.WeaponProjectileEntity;
+import com.kelco.kamenridercraft.entities.projectile.*;
 import com.kelco.kamenridercraft.entities.summons.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
@@ -1699,6 +1696,10 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<CellMedalProjectileEntity>> CELL_MEDAL_PROJECTILE =
             MOBLIST.register("cell_medal_projectile",() -> EntityType.Builder.<CellMedalProjectileEntity>of(CellMedalProjectileEntity::new, MobCategory.MISC)
                     .sized(0.2F, 0.2F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":cell_medal_projectile"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<RocketProjectileEntity>> ROCKET_PROJECTILE =
+            MOBLIST.register("rocket_projectile",() -> EntityType.Builder.<RocketProjectileEntity>of(RocketProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.2F, 0.2F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":rocket_projectile"));
 
 
 

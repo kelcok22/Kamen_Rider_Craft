@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.projectile.CellMedalProjectileEntity;
 import com.kelco.kamenridercraft.entities.projectile.LaserProjectileEntity;
+import com.kelco.kamenridercraft.entities.projectile.RocketProjectileEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
@@ -43,6 +44,7 @@ public class BaseBlasterItem extends BowItem {
 	private Item craftingRemainingItem = null;
 	private int cooldown = 5;
 	private float weaponDamage = 4;
+	private float blastRadius = 4;
 
 	public enum BlasterProjectile {
 		ARROW,
@@ -62,6 +64,7 @@ public class BaseBlasterItem extends BowItem {
 		},
 		LASER,
 		CELL_MEDAL,
+		ROCKET,
 		ENDER_PEARL {
 			public void fire(LivingEntity user, Vec3 movement) {
 				ThrownEnderpearl fireball = new ThrownEnderpearl(user.level(),user);
@@ -149,6 +152,11 @@ public class BaseBlasterItem extends BowItem {
 		return this;
 	}
 
+	public BaseBlasterItem setBlastRadius(float radiusChange) {
+		this.blastRadius = radiusChange;
+		return this;
+	}
+
 	@Override
     public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
         return !player.isCreative();
@@ -168,6 +176,9 @@ public class BaseBlasterItem extends BowItem {
 						break;
 					case CELL_MEDAL:
 						cellFire(player, player.getDeltaMovement());
+						break;
+					case ROCKET:
+						rocketFire(player, player.getDeltaMovement());
 						break;
 					default:
 						projectile.fire(player, player.getLookAngle());
@@ -222,6 +233,13 @@ public class BaseBlasterItem extends BowItem {
 		cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
 		cellProjectile.damageValue = this.weaponDamage;
 		user.level().addFreshEntity(cellProjectile);
+	}
+
+	public void rocketFire(LivingEntity user, Vec3 movement) {
+		RocketProjectileEntity rocketProjectile = new RocketProjectileEntity(user, user.level());
+		rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
+		rocketProjectile.blastRadius = this.blastRadius;
+		user.level().addFreshEntity(rocketProjectile);
 	}
 
 	public int getDefaultProjectileRange() {

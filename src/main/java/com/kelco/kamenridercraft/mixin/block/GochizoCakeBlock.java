@@ -25,8 +25,11 @@ public class GochizoCakeBlock {
         if (!player.level().isClientSide && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
             if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
             else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
-
             player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
+        }else  if (!player.level().isClientSide && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
+            if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
+            else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get())), 1);
+            player.drop(new ItemStack(Gavv_Rider_Items.UEHOUSE_GOCHIZO.asItem()), false);
         }
     }
 }
