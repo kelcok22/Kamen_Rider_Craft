@@ -176,6 +176,22 @@ public class Faiz_Rider_Items {
 				}
 			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> FLYING_ATTACKER = ITEMS.register("flying_attacker",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_flying_attacker","psyga","psyga_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.FLYING, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.CANNON, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+
 	public static final DeferredItem<Item> ORGA_MISSION_MEMORY = ITEMS.register("orga_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","orga","orga_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
