@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.blade.BlayBuckleItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -127,7 +128,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.IsGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).HasCape().hasFlyingWings("blade_jack_wing.geo.json").AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -213,7 +214,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).HasCape().hasFlyingWings("garren_jack_wing.geo.json").AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -566,7 +567,7 @@ public class Blade_Rider_Items {
 
 
 	public static final DeferredItem<Item> BLAYBUCKLE = ITEMS.register("blay_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()){
+			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()){
                 public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
                 {
                     boolean fly = rider instanceof Player player && player.getAbilities().flying;
@@ -577,11 +578,11 @@ public class Blade_Rider_Items {
             }.AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
 	public static final DeferredItem<Item> GARRENBUCKLE = ITEMS.register("garren_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> CHALICEROUZER = ITEMS.register("chalice_rouzer",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chalice", CHANGE_MANTIS, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LEANGLEBUCKLE = ITEMS.register("leangle_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GLAIVEBUCKLE = ITEMS.register("glaive_buckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LANCEBUCKLE = ITEMS.register("lance_buckle",

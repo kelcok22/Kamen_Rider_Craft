@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "kamenridercraft:item/caucasus_solid_shield",
-		"particle":"kamenridercraft:item/caucasus_solid_shield"
+		"particle": "kamenridercraft:item/caucasus_solid_shield"
 	},
 	"elements": [
 		{
@@ -187,8 +187,9 @@
 			"translation": [0, 3.75, -1]
 		},
 		"gui": {
-			"rotation": [0, 120, -19],
-			"translation": [1, 0.5, 0]
+			"rotation": [39, 62, -46],
+			"translation": [1, 0.5, 0],
+			"scale": [1.16, 1.16, 1.16]
 		},
 		"fixed": {
 			"rotation": [0, -90, 0],

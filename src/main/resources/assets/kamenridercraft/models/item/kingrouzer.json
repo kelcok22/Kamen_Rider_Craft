@@ -1,6 +1,38 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "kamenridercraft:item/kingrouzer"
-    }
+	"format_version": "1.21.11",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/kingrouzer"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 8.5, 0],
+			"scale": [1.31, 1.31, 1.31]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, -90, 0],
+			"translation": [0, 8.5, 0],
+			"scale": [1.31, 1.31, 1.31]
+		},
+		"firstperson_righthand": {
+			"rotation": [58, 90, 0],
+			"translation": [0, 6.25, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [58, -90, 0],
+			"translation": [0, 6.25, 0]
+		},
+		"ground": {
+			"translation": [0, 4.25, 0]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 8, -11.5]
+		},
+		"on_shelf": {
+			"rotation": [45, 90, 0],
+			"scale": [1.31, 1.31, 1.31]
+		}
+	}
 }

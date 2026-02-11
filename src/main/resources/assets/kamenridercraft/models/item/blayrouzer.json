@@ -1,6 +1,5 @@
 {
 	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
 		"layer0": "kamenridercraft:item/blayrouzer"
@@ -11,22 +10,22 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, -90, 48],
-			"translation": [0, 7.5, -1],
+			"rotation": [0, 89, 48],
+			"translation": [0, 7.5, -0.5],
 			"scale": [1.31, 1.31, 1.31]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, 90, -48],
-			"translation": [0, 7.5, -1],
+			"rotation": [0, -90, -48],
+			"translation": [0, 7.5, -0.5],
 			"scale": [1.31, 1.31, 1.31]
 		},
 		"firstperson_righthand": {
-			"rotation": [-35, -90, 0],
+			"rotation": [35, 90, 0],
 			"translation": [0, 9.5, 0],
 			"scale": [1.2, 1.2, 1.2]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-35, 90, 0],
+			"rotation": [35, -90, 0],
 			"translation": [0, 9.5, 0],
 			"scale": [1.2, 1.2, 1.2]
 		},
@@ -38,8 +37,8 @@
 			"scale": [1.33, 1.33, 1.33]
 		},
 		"head": {
-			"rotation": [0, -90, 0],
-			"translation": [0, 9.75, 1.75]
+			"rotation": [0, 90, 0],
+			"translation": [0, 9.75, -9.5]
 		},
 		"fixed": {
 			"rotation": [0, -180, 0],

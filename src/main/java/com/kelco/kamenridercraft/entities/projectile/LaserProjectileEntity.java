@@ -19,7 +19,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class LaserProjectileEntity extends AbstractArrow implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    public static float damageValue = 4F;
+    public  float damageValue = 4F;
 
     public LaserProjectileEntity(EntityType<? extends AbstractArrow> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
