@@ -116,7 +116,7 @@ public class Blade_Rider_Items {
 			}.addSwitchForm(SEALABLE_FUSION_EAGLE.get()).has_basic_model().model_has_different_name("fusion_eagle"));
 
 	public static final DeferredItem<Item> FUSION_EAGLE = ITEMS.register("fusion_eagle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "blade", "blay_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "blade", "blay_buckle_jack_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
@@ -202,7 +202,7 @@ public class Blade_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_PEACOCK = ITEMS.register("fusion_peacock",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "garren", "garren_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "garren", "garren_buckle_jack_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
