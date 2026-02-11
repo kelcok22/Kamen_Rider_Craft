@@ -704,6 +704,8 @@ public class RiderTabs {
             event.accept(MobsCore.ARC_SPAWN_EGG);
             event.accept(MobsCore.MOOSE_FANGIRE_SPAWN_EGG);
 
+            event.accept(MobsCore.DECADE_VIOLENT_SPAWN_EGG);
+
             event.accept(MobsCore.MASQUERADE_SPAWN_EGG);
             event.accept(MobsCore.CLAYDOLL_DOPANT_SPAWN_EGG);
             event.accept(MobsCore.TERROR_DOPANT_SPAWN_EGG);

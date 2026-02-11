@@ -317,6 +317,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> MOOSE_FANGIRE_SPAWN_EGG = ITEMS.register("moose_fangire_spawn_egg",
             () -> new DeferredSpawnEggItem(MOOSE_FANGIRE,  0xAE1414,0xE3C72B, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<DecadeViolentEntity>> DECADE_VIOLENT = MOBLIST.register("decade_violent",
+            () -> EntityType.Builder.of(DecadeViolentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":decade_violent"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DECADE_VIOLENT_SPAWN_EGG = ITEMS.register("decade_violent_spawn_egg",
+            () -> new DeferredSpawnEggItem(DECADE_VIOLENT,  0xf74675,0x38a227, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<MasqueradeEntity>> MASQUERADE = MOBLIST.register("masquerade",
              () -> EntityType.Builder.of(MasqueradeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));

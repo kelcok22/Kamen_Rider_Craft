@@ -489,6 +489,8 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.DOGGA.get(), DoggaRenderer::new);
             event.registerEntityRenderer(MobsCore.MOOSE_FANGIRE.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.DECADE_VIOLENT.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.MASQUERADE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WEATHER_DOPANT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CLAYDOLL_DOPANT.get(), BasicEntityRenderer::new);
