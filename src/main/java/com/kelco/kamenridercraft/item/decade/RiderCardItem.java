@@ -26,8 +26,8 @@ public class RiderCardItem extends RiderFormChangeItem {
     private Integer summonNeoForm = null;
     private List<Object> summonWeapons = new ArrayList<>(2);
 
-    public RiderCardItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public RiderCardItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public RiderCardItem setSummonBelt(RiderDriverItem belt) {

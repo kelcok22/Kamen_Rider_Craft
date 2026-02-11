@@ -45,7 +45,7 @@ public class Miscellaneous_Rider_Items {
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/g")), new Item.Properties()).AddToList(RiderTabs.G_TAB_ITEM));
 
 	public static final DeferredItem<Item> GORO_WINE_BOTTLE = ITEMS.register("goro_wine_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kamen_rider_g","g_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","kamen_rider_g","g_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
@@ -73,7 +73,7 @@ public class Miscellaneous_Rider_Items {
 
 	//Gorider
 	public static final DeferredItem<Item> AKARIDER_CARD = ITEMS.register("akarider_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","aka_rider","typhoon_belt_akarider",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","aka_rider","typhoon_belt_akarider",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -87,7 +87,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.GORIDER_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> AORIDER_CARD = ITEMS.register("aorider_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ao_rider","typhoon_belt_aorider",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ao_rider","typhoon_belt_aorider",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -101,7 +101,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.GORIDER_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> KIRIDER_CARD = ITEMS.register("kirider_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ki_rider","typhoon_belt_kirider",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ki_rider","typhoon_belt_kirider",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -115,7 +115,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.GORIDER_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> MOMORIDER_CARD = ITEMS.register("momorider_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","momo_rider","typhoon_belt_momorider",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","momo_rider","typhoon_belt_momorider",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -129,7 +129,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.GORIDER_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> MIDORIDER_CARD = ITEMS.register("midorider_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mido_rider","typhoon_belt_midorider",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","mido_rider","typhoon_belt_midorider",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -165,12 +165,12 @@ public class Miscellaneous_Rider_Items {
 	//SIC artist
 
 	public static final DeferredItem<Item> TYPHOON_CORE_ARTIST = ITEMS.register("typhoon_core_artist",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","ichigo","typhoon_belt_artist",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","ichigo","typhoon_belt_artist",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).allowRiderKick().IsGlowing());
 
 	public static final DeferredItem<Item> DOUBLE_TYPHOON_CORE_ARTIST = ITEMS.register("double_typhoon_core_artist",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","v3","double_typhoon_belt_artist",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","v3","double_typhoon_belt_artist",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
@@ -178,20 +178,20 @@ public class Miscellaneous_Rider_Items {
 					.IsGlowing().addAlternative(TYPHOON_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> RIDERMAN_BELT_CORE_ARTIST = ITEMS.register("riderman_belt_core_artist",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","riderman","riderman_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","riderman","riderman_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 					.IsGlowing().SetShowFace().addAlternative(DOUBLE_TYPHOON_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> CONDORER_WHEEL_PRE_AMAZON = ITEMS.register("condorer_wheel_pre_amazon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_pre","amazon","condorer_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_pre","amazon","condorer_belt",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.IsGlowing().addAlternative(RIDERMAN_BELT_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> ELECTRER_CORE_ARTIST = ITEMS.register("electrer_core_artist",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","stronger","electrer_belt_artist",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","stronger","electrer_belt_artist",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
@@ -199,7 +199,7 @@ public class Miscellaneous_Rider_Items {
 					.IsGlowing().addAlternative(CONDORER_WHEEL_PRE_AMAZON.get()));
 
 	public static final DeferredItem<Item> TACKLE_CORE_ARTIST = ITEMS.register("tackle_core_artist",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","tackle","tackle_belt_artist",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","tackle","tackle_belt_artist",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
@@ -207,7 +207,7 @@ public class Miscellaneous_Rider_Items {
 					.IsGlowing().SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_artist","kuuga","arcle_belt_r",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -228,7 +228,7 @@ public class Miscellaneous_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHAOS_RING_SAIGO = ITEMS.register("chaos_ring_saigo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saigo","chaos_driver_saigo_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","saigo","chaos_driver_saigo_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -240,7 +240,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_HARUMA = ITEMS.register("chaos_ring_haruma",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","haruma","chaos_driver_haruma_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","haruma","chaos_driver_haruma_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -255,7 +255,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_SHION = ITEMS.register("chaos_ring_shion",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shion","chaos_driver_shion_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","shion","chaos_driver_shion_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -267,7 +267,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_JIGEN = ITEMS.register("chaos_ring_jigen",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","jigen","chaos_driver_jigen_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","jigen","chaos_driver_jigen_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -282,7 +282,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().ChangeModel("haruma.geo.json").IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_ARAKI = ITEMS.register("chaos_ring_araki",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","araki","chaos_driver_araki_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","araki","chaos_driver_araki_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -297,7 +297,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_KAMUI = ITEMS.register("chaos_ring_kamui",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kamui","chaos_driver_kamui_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","kamui","chaos_driver_kamui_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -312,7 +312,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_AGATA = ITEMS.register("chaos_ring_agata",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","agata","chaos_driver_agata_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","agata","chaos_driver_agata_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -324,7 +324,7 @@ public class Miscellaneous_Rider_Items {
 			}.IsBeltGlowing().SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_LOQ_Q = ITEMS.register("chaos_ring_loq_q",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_q","loq","chaos_driver_loq_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_q","loq","chaos_driver_loq_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -339,7 +339,7 @@ public class Miscellaneous_Rider_Items {
 			}.SetShowFace().IsGlowing().IsBeltGlowing().has_basic_model().model_has_different_name("chaos_ring_loq"));
 
 	public static final DeferredItem<Item> CHAOS_RING_LOQ = ITEMS.register("chaos_ring_loq",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","loq","chaos_driver_loq_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","loq","chaos_driver_loq_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {

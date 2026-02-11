@@ -20,8 +20,8 @@ public class ShowaSwitchItem extends RiderFormChangeItem {
     private RiderDriverItem summonBelt;
     private RiderFormChangeItem summonForm = null;
 
-    public ShowaSwitchItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public ShowaSwitchItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public ShowaSwitchItem setSummonBelt(RiderDriverItem belt) {

@@ -30,8 +30,8 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
     private Map<String, String[]> summonAltForms = new HashMap<>();
     private Map<String, String[]> summonAltWeapons = new HashMap<>();
 
-    public SaberRidewatchItem(Properties properties, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public SaberRidewatchItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public SaberRidewatchItem addAltForm(String item, String... forms) {

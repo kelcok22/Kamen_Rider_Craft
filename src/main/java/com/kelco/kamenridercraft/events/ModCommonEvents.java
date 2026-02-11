@@ -27,7 +27,6 @@ import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -35,7 +34,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -50,12 +48,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.enchantment.effects.AllOf;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -63,16 +59,12 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.shapes.EntityCollisionContext;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.neoforged.neoforge.event.entity.EntityEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
@@ -156,7 +148,7 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void TransformingEvent(LivingEvent.LivingVisibilityEvent event) {
-/**
+/*
             if (event.getEntity() instanceof LivingEntity player) {
                 if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                     if (belt.GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) > 0)
@@ -165,7 +157,7 @@ public class ModCommonEvents {
                         belt.setTransforming(player.getItemBySlot(EquipmentSlot.FEET), 0f);
                 }
             }
- **/
+ */
         }
 
 		private Item getGochizoDrop(ItemStack itemstack,Level level) {
@@ -478,10 +470,7 @@ public class ModCommonEvents {
 			
 			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT
 			&& belt.getItem() instanceof RiderDriverItem driver && driver.isTransformed(entity)) {
-                for (int n = 1; n == driver.Num_Base_Form_Item; n++) {
-                    RiderFormChangeItem form = RiderDriverItem.get_Form_Item(belt, n);
-					if (form.getTimeoutDuration() != 0) RiderDriverItem.set_Form_Item(belt, form.getRevertForm(), n);
-                }
+                driver.timeoutForms(entity, belt);
 			}
 		}
 

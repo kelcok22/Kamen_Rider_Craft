@@ -13,8 +13,8 @@ import net.minecraft.world.item.ItemStack;
 public class RiderCoreIDItem extends RiderFormChangeItem {
     private String riderLogo;
 
-    public RiderCoreIDItem(Properties properties, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public RiderCoreIDItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public RiderCoreIDItem setRiderLogo(String logo) {

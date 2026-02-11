@@ -40,7 +40,6 @@ public class RiderFormChangeItem extends BaseItem {
     private Boolean Offhand = false;
 
     private List<MobEffectInstance> potionEffectList;
-    private int BELT;
     private List<Item> NEEDITEM = new ArrayList<>();
     protected String RIDER_NAME;
     protected String OVERRIDE_RIDER_NAME;
@@ -100,13 +99,12 @@ public class RiderFormChangeItem extends BaseItem {
 
     private int Store_num =1;
 
-    public RiderFormChangeItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
+    public RiderFormChangeItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
         super( properties);
 
         potionEffectList = Lists.newArrayList(effects);
         FORM_NAME = formName;
         BELT_TEX = beltTex;
-        BELT = belt;
         RIDER_NAME = ridername;
     }
 
@@ -117,10 +115,6 @@ public class RiderFormChangeItem extends BaseItem {
 
     public int getSlot() {
         return Slot;
-    }
-
-    public int getBelt() {
-        return BELT;
     }
 
     public String getFormName(Boolean isFlaying) {

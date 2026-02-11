@@ -20,8 +20,8 @@ import net.minecraft.world.level.Level;
 
 
 public class BlizzardsorbeiItem extends RiderFormChangeItem {
-    public BlizzardsorbeiItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public BlizzardsorbeiItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     @Override

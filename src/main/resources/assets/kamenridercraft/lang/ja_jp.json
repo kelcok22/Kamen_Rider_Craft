@@ -9298,7 +9298,7 @@
   "item.kamenridercraft.lango_stomach_spawn_egg": "ランゴ・ストマックスポーンエッグ",
   "item.kamenridercraft.bocca_jaldak_spawn_egg": "ボッカ・ジャルダックスポーンエッグ",
 
-  "item.kamenridercraft.nox_mob_spawn_egg": "ノクスナイトスポーンエッグ",
+  "item.kamenridercraft.nox_spawn_egg": "ノクスナイトスポーンエッグ",
 
   "item.kamenridercraft.bicycle_spawn_egg": "自転車",
 	"item.kamenridercraft.acrobatter_spawn_egg": "アクロバッター",
@@ -9649,7 +9649,7 @@
   "tag.item.kamenridercraft.arsenal.all_throwables": "ライダー投げ武器",
   "tag.item.kamenridercraft.arsenal.by_series.555": "ファイズ武器",
   "tag.item.kamenridercraft.arsenal.by_series.agito": "アギト武器",
-  "tag.item.kamenridercraft.arsenal.by_series.agito": "アマゾンズ武器",
+  "tag.item.kamenridercraft.arsenal.by_series.amazons": "アマゾンズ武器",
   "tag.item.kamenridercraft.arsenal.by_series.black_rx": "RX武器",
   "tag.item.kamenridercraft.arsenal.by_series.black_sun": "BLACK SUN武器",
   "tag.item.kamenridercraft.arsenal.by_series.blade": "ブレイド武器",

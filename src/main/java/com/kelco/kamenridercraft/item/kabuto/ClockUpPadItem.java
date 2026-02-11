@@ -39,8 +39,11 @@ public class ClockUpPadItem extends BaseItem {
 		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)){
             if(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))){
                 Kabuto_Rider_Items.HYPER_ZECTER_CLOCK_UP.asItem().use(level,player,usedHand);
-            }
-			if (!Objects.equals(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
+				if (!player.isCreative()) {
+					player.getCooldowns().addCooldown(this, 500);
+				}
+				player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (!Objects.equals(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
                 if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !level.isClientSide()) {
                 	player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
                     if (!player.isCreative()) {

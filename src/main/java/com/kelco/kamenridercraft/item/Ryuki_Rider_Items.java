@@ -29,11 +29,11 @@ public class Ryuki_Rider_Items {
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ryuki")), new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ADVENT_CARD = ITEMS.register("advent_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_blank","ryuki","v_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_blank","ryuki","v_buckle_belt",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGREDER_ADVENT = ITEMS.register("dragreder_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ryuki","v_buckle_belt_ryuki",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ryuki","v_buckle_belt_ryuki",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
@@ -46,7 +46,7 @@ public class Ryuki_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARKWING_ADVENT = ITEMS.register("darkwing_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","knight","v_buckle_belt_knight",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","knight","v_buckle_belt_knight",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
@@ -59,7 +59,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> VOLCANCER_ADVENT = ITEMS.register("volcancer_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","scissors","v_buckle_belt_scissors",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","scissors","v_buckle_belt_scissors",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
@@ -73,7 +73,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGNUGIGA_ADVENT = ITEMS.register("magnugiga_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zolda","v_buckle_belt_zolda",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","zolda","v_buckle_belt_zolda",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
@@ -86,7 +86,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVILDIVER_ADVENT = ITEMS.register("evildiver_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","raia","v_buckle_belt_raia",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","raia","v_buckle_belt_raia",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -99,7 +99,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> METALGELAS_ADVENT = ITEMS.register("metalgelas_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gai","v_buckle_belt_gai",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","gai","v_buckle_belt_gai",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -111,7 +111,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> VENOSNAKER_ADVENT = ITEMS.register("venosnaker_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ouja","v_buckle_belt_ouja",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ouja","v_buckle_belt_ouja",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
 			{
@@ -124,7 +124,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT = ITEMS.register("goldphoenix_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","odin","v_buckle_belt_odin",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","odin","v_buckle_belt_odin",
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
@@ -142,7 +142,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DESTWILDER_ADVENT = ITEMS.register("destwilder_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","tiger","v_buckle_belt_tiger",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","tiger","v_buckle_belt_tiger",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
@@ -155,7 +155,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGAZELLE_ADVENT = ITEMS.register("gigazelle_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","imperer","v_buckle_belt_imperer",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","imperer","v_buckle_belt_imperer",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -168,7 +168,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANCWING_ADVENT = ITEMS.register("blancwing_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","femme","v_buckle_belt_femme",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","femme","v_buckle_belt_femme",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -182,7 +182,7 @@ public class Ryuki_Rider_Items {
 			}.ChangeModel("femme.geo.json").HasCape().AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGBLACKER_ADVENT = ITEMS.register("dragblacker_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ryuga","v_buckle_belt_ryuga",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ryuga","v_buckle_belt_ryuga",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
@@ -196,7 +196,7 @@ public class Ryuki_Rider_Items {
 					.IsGlowing().AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIOGREEZA_ADVENT = ITEMS.register("biogreeza_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","verde","v_buckle_belt_verde",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","verde","v_buckle_belt_verde",
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -209,7 +209,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABYSSLASHER_ADVENT = ITEMS.register("abysslasher_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","abyss","v_buckle_belt_abyss",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","abyss","v_buckle_belt_abyss",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
@@ -223,7 +223,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> PSYCOROGUE_ADVENT = ITEMS.register("psycorogue_advent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","alternative","v_buckle_alternative_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","alternative","v_buckle_alternative_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
@@ -236,7 +236,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
     public static final DeferredItem<Item> GULDTHUNDER_ADVENT = ITEMS.register("guldthunder_advent",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","blade","v_buckle_belt_blade",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","blade","v_buckle_belt_blade",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -249,7 +249,7 @@ public class Ryuki_Rider_Items {
             }.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA_RYUGA = ITEMS.register("survive_rekka_ryuga",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive","ryuga","v_buckle_belt_ryuga_s",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_survive","ryuga","v_buckle_belt_ryuga_s",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -265,7 +265,7 @@ public class Ryuki_Rider_Items {
 					.IsGlowing().ChangeModel("ryuki_survive.geo.json"));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA = ITEMS.register("survive_rekka",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive","ryuki","v_buckle_belt_ryuki_s",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive","ryuki","v_buckle_belt_ryuki_s",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -285,7 +285,7 @@ public class Ryuki_Rider_Items {
 
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU_RAIA = ITEMS.register("survive_shippu_raia",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive","raia","v_buckle_belt_raia_s",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_survive","raia","v_buckle_belt_raia_s",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -303,7 +303,7 @@ public class Ryuki_Rider_Items {
 			});
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU_OUJA = ITEMS.register("survive_shippu_ouja",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive","ouja","v_buckle_belt_ouja",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_survive","ouja","v_buckle_belt_ouja",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -321,7 +321,7 @@ public class Ryuki_Rider_Items {
 			}.addAlternative(SURVIVE_SHIPPU_RAIA.get()));
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU = ITEMS.register("survive_shippu",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive","knight","v_buckle_belt_knight_s",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive","knight","v_buckle_belt_knight_s",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -339,7 +339,7 @@ public class Ryuki_Rider_Items {
 			}.addAlternative(SURVIVE_SHIPPU_OUJA.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_MUGEN = ITEMS.register("survive_mugen",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive_mugen","ouja","v_buckle_belt_ouja_s",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive_mugen","ouja","v_buckle_belt_ouja_s",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -357,7 +357,7 @@ public class Ryuki_Rider_Items {
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_BLACK = ITEMS.register("survive_black",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive_black","ryuki","v_buckle_belt_ryuki",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive_black","ryuki","v_buckle_belt_ryuki",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -625,7 +625,7 @@ public class Ryuki_Rider_Items {
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), DRAG_SHIELD.get(), DRAG_SHIELD.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_SHIELD_VENT_FORM = ITEMS.register("drag_shield_vent_form",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drag_shield","ryuki","v_buckle_belt_ryuki",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_drag_shield","ryuki","v_buckle_belt_ryuki",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
@@ -653,7 +653,7 @@ public class Ryuki_Rider_Items {
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), WING_LANCER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> WING_WALL_VENT = ITEMS.register("wing_wall_vent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wing_wall","knight","v_buckle_belt_knight",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_wing_wall","knight","v_buckle_belt_knight",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -693,7 +693,7 @@ public class Ryuki_Rider_Items {
 			() -> new AdventCardItem(new Item.Properties(), "zolda", MAGNA_VISOR.get(), GIGA_LAUNCHER.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGA_CANNON_VENT = ITEMS.register("giga_cannon_vent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_giga_cannon","zolda","v_buckle_belt_zolda",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_giga_cannon","zolda","v_buckle_belt_zolda",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
@@ -703,7 +703,7 @@ public class Ryuki_Rider_Items {
 			() -> new AdventCardItem(new Item.Properties(), "zolda", MAGNA_VISOR.get(), GIGA_ARMOR.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGA_TECTOR_VENT = ITEMS.register("giga_tector_vent",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_giga_tector","zolda","v_buckle_belt_zolda",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_giga_tector","zolda","v_buckle_belt_zolda",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -760,7 +760,7 @@ public class Ryuki_Rider_Items {
 			() -> new AdventCardItem(new Item.Properties(), "ryuga", BLACK_DRAG_VISOR.get(), DRAG_SHIELD_RYUGA.get(), DRAG_SHIELD_RYUGA.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_SHIELD_VENT_FORM_RYUGA = ITEMS.register("drag_shield_vent_form_ryuga",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drag_shield","ryuga","v_buckle_belt_ryuga",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_drag_shield","ryuga","v_buckle_belt_ryuga",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),

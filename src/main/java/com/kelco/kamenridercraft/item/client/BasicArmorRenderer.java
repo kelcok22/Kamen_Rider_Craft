@@ -1,15 +1,11 @@
 package com.kelco.kamenridercraft.item.client;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.BasicArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;

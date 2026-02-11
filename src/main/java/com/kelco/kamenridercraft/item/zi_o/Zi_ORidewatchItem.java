@@ -30,8 +30,8 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
     private Map<String, String[]> summonAltWeapons = new HashMap<>();
     private List<String> summonWeapons = new ArrayList<>(2);
 
-    public Zi_ORidewatchItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public Zi_ORidewatchItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public Zi_ORidewatchItem addAltForm(String item, String... forms) {

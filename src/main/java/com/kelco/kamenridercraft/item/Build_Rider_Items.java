@@ -55,7 +55,7 @@ public class Build_Rider_Items {
 					.SetItemAnimation(UseAnim.DRINK).KeepDifItem(Reboot_Rider_Items.EMPTY_VIAL.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FULL_BOTTLE= ITEMS.register("full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","build_driver_belt")
+			() -> new RiderFormChangeItem(new Item.Properties(),"","","build_driver_belt")
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SCLASH_JELLY= ITEMS.register("sclash_jelly",
@@ -75,7 +75,7 @@ public class Build_Rider_Items {
 
 
 	public static final DeferredItem<Item> RABBIT_FULL_BOTTLE = ITEMS.register("rabbit_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_rabbit","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_rabbit","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -87,7 +87,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TANK_FULL_BOTTLE = ITEMS.register("tank_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_tank","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_tank","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -99,7 +99,7 @@ public class Build_Rider_Items {
 			}.CanHazard().BestMatch(RABBIT_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> GORILLA_FULL_BOTTLE = ITEMS.register("gorilla_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_gorilla","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_gorilla","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -111,7 +111,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DIAMOND_FULL_BOTTLE = ITEMS.register("diamond_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_diamond","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_diamond","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -122,7 +122,7 @@ public class Build_Rider_Items {
 			}.BestMatch(GORILLA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TAKA_FULL_BOTTLE_CROSS_Z = ITEMS.register("taka_full_bottle_cross_z",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_taka","cross_z_charge","sclash_driver_belt_taka",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_taka","cross_z_charge","sclash_driver_belt_taka",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -138,7 +138,7 @@ public class Build_Rider_Items {
 			}.ChangeModel("default_wings_armor.geo.json").model_has_different_name("taka_full_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> TAKA_FULL_BOTTLE = ITEMS.register("taka_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_taka","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_taka","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -152,7 +152,7 @@ public class Build_Rider_Items {
 			}.addAlternative(TAKA_FULL_BOTTLE_CROSS_Z.get()).ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> GATLING_FULL_BOTTLE = ITEMS.register("gatling_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_gatling","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_gatling","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -163,7 +163,7 @@ public class Build_Rider_Items {
 			}.CanHazard().BestMatch(TAKA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> NINJA_FULL_BOTTLE = ITEMS.register("ninja_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_ninja","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_ninja","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.STEALTH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -175,7 +175,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> COMIC_FULL_BOTTLE = ITEMS.register("comic_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_comic","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_comic","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -186,7 +186,7 @@ public class Build_Rider_Items {
 			}.BestMatch(NINJA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PANDA_FULL_BOTTLE = ITEMS.register("panda_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_panda","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_panda","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -198,7 +198,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> ROCKET_FULL_BOTTLE = ITEMS.register("rocket_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_rocket","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_rocket","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -209,7 +209,7 @@ public class Build_Rider_Items {
 			}.BestMatch(PANDA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> HARINEZUMI_FULL_BOTTLE = ITEMS.register("harinezumi_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_harinezumi","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_harinezumi","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -221,7 +221,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SHOUBOUSHA_FULL_BOTTLE = ITEMS.register("shoubousha_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_shoubousha","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_shoubousha","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -232,7 +232,7 @@ public class Build_Rider_Items {
 			}.BestMatch(HARINEZUMI_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> LION_FULL_BOTTLE = ITEMS.register("lion_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_lion","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_lion","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -245,7 +245,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SOUJIKI_FULL_BOTTLE = ITEMS.register("soujiki_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_soujiki","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_soujiki","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -256,7 +256,7 @@ public class Build_Rider_Items {
 			}.BestMatch(LION_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE_BUILD = ITEMS.register("dragon_full_bottle_build",
-			() -> new FullBottleItem(new Item.Properties(),0,"_dragon","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_dragon","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false),
@@ -270,7 +270,7 @@ public class Build_Rider_Items {
 			}.model_has_different_name("dragon_full_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE = ITEMS.register("dragon_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","cross_z","build_driver_belt_cross_z",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","cross_z","build_driver_belt_cross_z",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
@@ -283,7 +283,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().addAlternative(DRAGON_FULL_BOTTLE_BUILD.get()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> LOCK_FULL_BOTTLE = ITEMS.register("lock_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_lock","build","build_driver_belt"){
+			() -> new FullBottleItem(new Item.Properties(),"_lock","build","build_driver_belt"){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
@@ -293,7 +293,7 @@ public class Build_Rider_Items {
 			}.CanHazard().BestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KAIZOKU_FULL_BOTTLE = ITEMS.register("kaizoku_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_kaizoku","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_kaizoku","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)){
@@ -306,7 +306,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DENSHA_FULL_BOTTLE = ITEMS.register("densha_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_densha","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_densha","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -317,7 +317,7 @@ public class Build_Rider_Items {
 			}.CanHazard().BestMatch(KAIZOKU_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> OCTOPUS_FULL_BOTTLE = ITEMS.register("octopus_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_octopus","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_octopus","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -329,7 +329,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> LIGHT_FULL_BOTTLE = ITEMS.register("light_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_light","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_light","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -340,7 +340,7 @@ public class Build_Rider_Items {
 			}.BestMatch(OCTOPUS_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PHOENIX_FULL_BOTTLE = ITEMS.register("phoenix_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_phoenix","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_phoenix","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
@@ -353,7 +353,7 @@ public class Build_Rider_Items {
 			}.ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> ROBOT_FULL_BOTTLE = ITEMS.register("robot_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_robot","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_robot","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -364,7 +364,7 @@ public class Build_Rider_Items {
 			}.BestMatch(PHOENIX_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> WOLF_FULL_BOTTLE = ITEMS.register("wolf_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_wolf","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_wolf","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -376,7 +376,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SMAPHO_FULL_BOTTLE = ITEMS.register("smapho_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_smapho","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_smapho","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -387,7 +387,7 @@ public class Build_Rider_Items {
 			}.CanHazard().BestMatch(WOLF_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> UNICORN_FULL_BOTTLE = ITEMS.register("unicorn_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_unicorn","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_unicorn","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -401,7 +401,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KESHIGOMU_FULL_BOTTLE = ITEMS.register("keshigomu_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_keshigomu","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_keshigomu","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -412,7 +412,7 @@ public class Build_Rider_Items {
 			}.BestMatch(UNICORN_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> ROSE_FULL_BOTTLE = ITEMS.register("rose_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_rose","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_rose","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -424,7 +424,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> HELICOPTER_FULL_BOTTLE = ITEMS.register("helicopter_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_helicopter","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_helicopter","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -436,7 +436,7 @@ public class Build_Rider_Items {
 			}.BestMatch(ROSE_FULL_BOTTLE.get()).ChangeModel("default_rider_plusbelt_and_wings.geo.json").ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TURTLE_FULL_BOTTLE = ITEMS.register("turtle_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_turtle","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_turtle","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
@@ -449,7 +449,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> WATCH_FULL_BOTTLE = ITEMS.register("watch_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_watch","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_watch","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -460,7 +460,7 @@ public class Build_Rider_Items {
 			}.BestMatch(TURTLE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KUMA_FULL_BOTTLE = ITEMS.register("kuma_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_kuma","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_kuma","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -472,7 +472,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TELEVI_FULL_BOTTLE = ITEMS.register("televi_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_televi","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_televi","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -483,7 +483,7 @@ public class Build_Rider_Items {
 			}.BestMatch(KUMA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KABUTOMUSHI_FULL_BOTTLE = ITEMS.register("kabutomushi_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_kabutomushi","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_kabutomushi","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -495,7 +495,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> CAMERA_FULL_BOTTLE = ITEMS.register("camera_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_camera","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_camera","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -506,7 +506,7 @@ public class Build_Rider_Items {
 			}.BestMatch(KABUTOMUSHI_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SPIDER_FULL_BOTTLE = ITEMS.register("spider_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_spider","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_spider","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -518,7 +518,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> REIZOUKO_FULL_BOTTLE = ITEMS.register("reizouko_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_reizouko","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_reizouko","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -529,7 +529,7 @@ public class Build_Rider_Items {
 			}.BestMatch(SPIDER_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DOG_FULL_BOTTLE = ITEMS.register("dog_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_dog","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_dog","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -542,7 +542,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> MIC_FULL_BOTTLE = ITEMS.register("mic_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_mic","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_mic","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -553,7 +553,7 @@ public class Build_Rider_Items {
 			}.BestMatch(DOG_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SANTA_CLAUS_FULL_BOTTLE = ITEMS.register("santa_claus_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_santa_claus","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_santa_claus","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -565,7 +565,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> CAKE_FULL_BOTTLE = ITEMS.register("cake_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_cake","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_cake","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -576,7 +576,7 @@ public class Build_Rider_Items {
 			}.BestMatch(SANTA_CLAUS_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TORA_FULL_BOTTLE = ITEMS.register("tora_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_tora","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_tora","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -588,7 +588,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> UFO_FULL_BOTTLE = ITEMS.register("ufo_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_ufo","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_ufo","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -599,7 +599,7 @@ public class Build_Rider_Items {
 			}.BestMatch(TORA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KUJIRA_FULL_BOTTLE = ITEMS.register("kujira_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_kujira","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_kujira","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -611,7 +611,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> JET_FULL_BOTTLE = ITEMS.register("jet_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_jet","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_jet","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -622,7 +622,7 @@ public class Build_Rider_Items {
 			}.BestMatch(KUJIRA_FULL_BOTTLE.get()).ChangeModel("default_rider_plusbelt_and_wings.geo.json").ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SHIKA_FULL_BOTTLE = ITEMS.register("shika_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_shika","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_shika","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -634,7 +634,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PYRAMID_FULL_BOTTLE = ITEMS.register("pyramid_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_pyramid","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_pyramid","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -645,7 +645,7 @@ public class Build_Rider_Items {
 			}.BestMatch(SHIKA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KIRIN_FULL_BOTTLE = ITEMS.register("kirin_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_kirin","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_kirin","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -656,7 +656,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SENPUUKI_FULL_BOTTLE = ITEMS.register("senpuuki_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_senpuuki","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_senpuuki","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -668,7 +668,7 @@ public class Build_Rider_Items {
 			}.BestMatch(KIRIN_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PENGUIN_FULL_BOTTLE = ITEMS.register("penguin_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_penguin","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_penguin","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -680,7 +680,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SKEBO_FULL_BOTTLE = ITEMS.register("skebo_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_skebo","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_skebo","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -691,7 +691,7 @@ public class Build_Rider_Items {
 			}.BestMatch(PENGUIN_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SAME_FULL_BOTTLE = ITEMS.register("same_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_same","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_same","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -703,7 +703,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> BIKE_FULL_BOTTLE = ITEMS.register("bike_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_bike","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_bike","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -714,7 +714,7 @@ public class Build_Rider_Items {
 			}.BestMatch(SAME_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> HACHI_FULL_BOTTLE = ITEMS.register("hachi_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_hachi","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_hachi","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -726,7 +726,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SENSUIKAN_FULL_BOTTLE = ITEMS.register("sensuikan_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_sensuikan","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_sensuikan","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -738,7 +738,7 @@ public class Build_Rider_Items {
 			}.BestMatch(HACHI_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SAI_FULL_BOTTLE = ITEMS.register("sai_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_sai","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_sai","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -750,7 +750,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DRYER_FULL_BOTTLE = ITEMS.register("dryer_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_dryer","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_dryer","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -761,7 +761,7 @@ public class Build_Rider_Items {
 			}.BestMatch(SAI_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> BAT_FULL_BOTTLE = ITEMS.register("bat_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_bat","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_bat","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -773,7 +773,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> ENGINE_FULL_BOTTLE = ITEMS.register("engine_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_engine","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_engine","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -784,7 +784,7 @@ public class Build_Rider_Items {
 			}.BestMatch(BAT_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> OBAKE_FULL_BOTTLE = ITEMS.register("obake_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_obake","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_obake","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.STEALTH, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -796,7 +796,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> MAGNET_FULL_BOTTLE = ITEMS.register("magnet_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_magnet","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_magnet","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -807,7 +807,7 @@ public class Build_Rider_Items {
 			}.BestMatch(OBAKE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SCORPION_FULL_BOTTLE = ITEMS.register("scorpion_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_scorpion","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_scorpion","build","build_driver_belt",
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -819,7 +819,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> GOLD_FULL_BOTTLE = ITEMS.register("gold_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_gold","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_gold","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -834,7 +834,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(PandoraBox.PANDORA_BOTTLE).has_basic_model());
 
 	public static final DeferredItem<Item> RABBIT_TANK_SPARKLING = ITEMS.register("rabbittank_sparkling_full_bottle",
-			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_sparkling","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_sparkling","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -854,7 +854,7 @@ public class Build_Rider_Items {
 			}.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAZARD_TRIGGER = ITEMS.register("hazard_trigger",
-			() -> new HazardTriggerItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_hazard","build","build_driver_belt_hazard",
+			() -> new HazardTriggerItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_hazard","build","build_driver_belt_hazard",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -873,7 +873,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.BANGLE_REFINED));
 
 	public static final DeferredItem<Item> FULLFULL_TANK_BOTTLE = ITEMS.register("fullfull_tank_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_tank","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_tank","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
@@ -889,7 +889,7 @@ public class Build_Rider_Items {
 					.model_has_different_name("fullfull_rabbit_tank_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> FULLFULL_RABBIT_TANK_BOTTLE = ITEMS.register("fullfull_rabbit_tank_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rabbit","build","build_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_rabbit","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
@@ -907,7 +907,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GENIUS_FULL_BOTTLE = ITEMS.register("genius_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_genius","build","build_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_genius","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -929,7 +929,7 @@ public class Build_Rider_Items {
 					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_RABBIT_FULL_BOTTLE = ITEMS.register("gold_rabbit_full_bottle",
-			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_gold_rabbit","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_gold_rabbit","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -941,7 +941,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_DRAGON_FULL_BOTTLE = ITEMS.register("silver_dragon_full_bottle",
-			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_silver_dragon","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_silver_dragon","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -953,7 +953,7 @@ public class Build_Rider_Items {
 			}.BestMatch(GOLD_RABBIT_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROSS_Z_BUILD_CAN = ITEMS.register("cross_z_build_can",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_cross_z","build","build_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_cross_z","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -980,7 +980,7 @@ public class Build_Rider_Items {
 			}.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MOMOTAROS_FULL_BOTTLE = ITEMS.register("momotaros_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_momotaros","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_momotaros","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -992,7 +992,7 @@ public class Build_Rider_Items {
 			}.IsLegend("den_o").BestMatch(DENSHA_FULL_BOTTLE.get()).ChangeSlot(1).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_CARD_FULL_BOTTLE = ITEMS.register("rider_card_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_rider_card","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_rider_card","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1004,7 +1004,7 @@ public class Build_Rider_Items {
 			}.IsLegend("decade").BestMatch(CAMERA_FULL_BOTTLE.get()).ChangeSlot(1).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TANTEI_FULL_BOTTLE = ITEMS.register("tantei_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_tantei","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_tantei","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1016,7 +1016,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> USB_MEMORY_FULL_BOTTLE = ITEMS.register("usb_memory_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_usb_memory","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_usb_memory","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1028,7 +1028,7 @@ public class Build_Rider_Items {
 			}.IsLegend("w").BestMatch(TANTEI_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_medal","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_medal","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
@@ -1041,7 +1041,7 @@ public class Build_Rider_Items {
 			}.IsLegend("ooo").BestMatch(TAKA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> YUUJOU_FULL_BOTTLE = ITEMS.register("yuujou_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_yuujou","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_yuujou","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1053,7 +1053,7 @@ public class Build_Rider_Items {
 			}.IsLegend("fourze").BestMatch(ROCKET_FULL_BOTTLE.get()).ChangeSlot(1).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAHOUTSUKAI_FULL_BOTTLE = ITEMS.register("mahoutsukai_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_mahoutsukai","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_mahoutsukai","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1065,7 +1065,7 @@ public class Build_Rider_Items {
 			}.IsLegend("wizard").BestMatch(DIAMOND_FULL_BOTTLE.get()).ChangeSlot(1).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORANGE_FULL_BOTTLE = ITEMS.register("orange_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_orange","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_orange","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1077,7 +1077,7 @@ public class Build_Rider_Items {
 			}.IsLegend("gaim").BestMatch(LOCK_FULL_BOTTLE.get()).ChangeSlot(1).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PARKA_FULL_BOTTLE = ITEMS.register("parka_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_parka","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_parka","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -1088,7 +1088,7 @@ public class Build_Rider_Items {
 			}.IsLegend("ghost").BestMatch(OBAKE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOCTOR_FULL_BOTTLE = ITEMS.register("doctor_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_doctor","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_doctor","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -1099,7 +1099,7 @@ public class Build_Rider_Items {
 			}.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAME_FULL_BOTTLE = ITEMS.register("game_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_game","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),"_game","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1111,7 +1111,7 @@ public class Build_Rider_Items {
 			}.IsLegend("ex_aid").BestMatch(DOCTOR_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_SCLASH_JELLY = ITEMS.register("dragon_sclash_jelly",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","cross_z_charge","sclash_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","cross_z_charge","sclash_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -1129,7 +1129,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_MAGMA_FULL_BOTTLE = ITEMS.register("dragon_magma_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_magma","cross_z","build_driver_belt_magma",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_magma","cross_z","build_driver_belt_magma",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -1148,7 +1148,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREAT_DRAGON_EVOL_BOTTLE = ITEMS.register("great_dragon_evol_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_great","cross_z","build_driver_belt_great",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_great","cross_z","build_driver_belt_great",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -1166,7 +1166,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUSCLE_GALAXY_FULL_BOTTLE = ITEMS.register("muscle_galaxy_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_evol","cross_z","build_driver_belt_evol",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_evol","cross_z","build_driver_belt_evol",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -1186,7 +1186,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROBOT_SCLASH_JELLY = ITEMS.register("robot_sclash_jelly",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","grease","sclash_driver_belt_grease",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","grease","sclash_driver_belt_grease",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -1204,7 +1204,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NORTH_BLIZZARD_FULL_BOTTLE = ITEMS.register("north_blizzard_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","grease_blizzard","build_driver_belt_blizzard",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","grease_blizzard","build_driver_belt_blizzard",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -1224,7 +1224,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREASE_FULL_BOTTLE = ITEMS.register("grease_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_perfect_kingdom","grease_blizzard","build_driver_belt_perfect_kingdom",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_perfect_kingdom","grease_blizzard","build_driver_belt_perfect_kingdom",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -1245,7 +1245,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROCODILE_CRACK_FULL_BOTTLE = ITEMS.register("crocodile_crack_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","rogue","sclash_driver_belt_rogue",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","rogue","sclash_driver_belt_rogue",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -1263,7 +1263,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PRIME_ROGUE_FULL_BOTTLE = ITEMS.register("prime_rogue_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","prime_rogue","build_driver_belt_prime",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","prime_rogue","build_driver_belt_prime",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -1282,7 +1282,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> COBRA_EVOL_BOTTLE = ITEMS.register("cobra_evol_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","evol","evol_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","evol","evol_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -1302,7 +1302,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_EVOL_BOTTLE = ITEMS.register("dragon_evol_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_dragon","evol","evol_driver_belt_d",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_dragon","evol","evol_driver_belt_d",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -1319,7 +1319,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RABBIT_EVOL_BOTTLE = ITEMS.register("rabbit_evol_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rabbit","evol","evol_driver_belt_r",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_rabbit","evol","evol_driver_belt_r",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
@@ -1336,7 +1336,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOL_TRIGGER_KAIJIN = ITEMS.register("evol_trigger_kaijin",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kaijin","evol","evol_driver_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kaijin","evol","evol_driver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -1356,7 +1356,7 @@ public class Build_Rider_Items {
 			}.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).AddNeedItemList(NEED_ITEM_EVOLTO).model_has_different_name("evol_trigger").has_basic_model());
 
 	public static final DeferredItem<Item> EVOL_TRIGGER = ITEMS.register("evol_trigger",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_black_hole","evol","evol_driver_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_black_hole","evol","evol_driver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -1376,7 +1376,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().addShiftForm(EVOL_TRIGGER_KAIJIN.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOL_X_FULL_BOTTLE = ITEMS.register("evol_x_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_x","evol","evol_driver_belt_evol_x",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_x","evol","evol_driver_belt_evol_x",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -1396,7 +1396,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAD_ROGUE_BOTTLES = ITEMS.register("mad_rogue_bottles",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mad_rogue","evol_driver_belt_mad_rogue",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","mad_rogue","evol_driver_belt_mad_rogue",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1415,7 +1415,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().hasFlyingWings(null));
 
 	public static final DeferredItem<Item> KILLBUS_SPIDER_FULL_BOTTLE = ITEMS.register("killbus_spider_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","killbus","build_driver_belt_killbus",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","killbus","build_driver_belt_killbus",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -1434,7 +1434,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_TANK_TANK_FULL_BOTTLE = ITEMS.register("metal_tank_tank_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","metal_build","build_driver_belt_metal",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","metal_build","build_driver_belt_metal",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
@@ -1448,7 +1448,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_FULL_BOTTLE = ITEMS.register("metal_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","phantom_build","build_driver_belt_metal",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","phantom_build","build_driver_belt_metal",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1466,7 +1466,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOST_BAT_FULL_BOTTLE = ITEMS.register("lost_bat_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"","night_rogue","blank",
+			() -> new FullBottleItem(new Item.Properties(),"","night_rogue","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -1485,7 +1485,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().hasFlyingWings(null).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOST_COBRA_FULL_BOTTLE = ITEMS.register("lost_cobra_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"","blood_stalk","blank",
+			() -> new FullBottleItem(new Item.Properties(),"","blood_stalk","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
@@ -1502,7 +1502,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_LOST_COBRA_FULL_BOTTLE = ITEMS.register("black_lost_cobra_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","blood","build_driver_belt_blood",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","blood","build_driver_belt_blood",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -1558,7 +1558,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_BI_KAISER = ITEMS.register("gear_bi_kaiser",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bi","kaiser","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_bi","kaiser","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -1578,7 +1578,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddNeedItemList(NEED_ITEM_BI_KAISER).model_has_different_name("gear_engine_red").has_basic_model());
 
 	public static final DeferredItem<Item> GEAR_ENGINE_RED = ITEMS.register("gear_engine_red",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_reverse","kaiser","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_reverse","kaiser","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -1593,7 +1593,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_REMOCON_BLUE = ITEMS.register("gear_remocon_blue",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kaiser","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","kaiser","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
@@ -1608,7 +1608,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_HELL_BROS = ITEMS.register("gear_hell_bros",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","hell_bros","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","hell_bros","blank",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -1626,7 +1626,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().AddNeedItemList(NEED_ITEM_HELL_BROS).model_has_different_name("gear_engine").has_basic_model());
 
 	public static final DeferredItem<Item> GEAR_ENGINE = ITEMS.register("gear_engine",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_engine","hell_bros","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_engine","hell_bros","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -1640,7 +1640,7 @@ public class Build_Rider_Items {
 			}.IsGlowing().addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_REMOCON = ITEMS.register("gear_remocon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_remocon","hell_bros","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_remocon","hell_bros","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),

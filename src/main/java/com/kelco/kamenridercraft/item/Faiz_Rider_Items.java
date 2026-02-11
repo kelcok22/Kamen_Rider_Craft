@@ -29,7 +29,7 @@ public class Faiz_Rider_Items {
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/faiz")), new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANK_MISSION_MEMORY = ITEMS.register("blank_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","riotrooper","smart_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","riotrooper","smart_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -43,7 +43,7 @@ public class Faiz_Rider_Items {
 
 
 	public static final DeferredItem<Item> FAIZ_MISSION_MEMORY = ITEMS.register("faiz_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","faiz","faiz_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","faiz","faiz_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -56,7 +56,7 @@ public class Faiz_Rider_Items {
 			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axel","next_kaixa","next_kaixa_driver_belt_a",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_kaixa","next_kaixa_driver_belt_a",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
@@ -71,7 +71,7 @@ public class Faiz_Rider_Items {
 			}.IsBeltGlowing().IsGlowing().ChangeModel("next_kaixa.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> NEXT_FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("next_faiz_axel_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axel","next_faiz","faiz_driver_next_belt_a",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_faiz","faiz_driver_next_belt_a",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
@@ -86,7 +86,7 @@ public class Faiz_Rider_Items {
 			}.IsBeltGlowing().IsGlowing().ChangeModel("next_faiz.geo.json").addAlternative(NEXT_KAIXA_AXEL_MISSION_MEMORY.get()).has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("faiz_axel_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_axel","faiz","faiz_driver_belt_a",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_axel","faiz","faiz_driver_belt_a",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
@@ -101,7 +101,7 @@ public class Faiz_Rider_Items {
 			}.IsBeltGlowing().IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()).addAlternative(NEXT_FAIZ_AXEL_MISSION_MEMORY.get()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_blaster_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_blaster","faiz","faiz_driver_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_blaster","faiz","faiz_driver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -118,7 +118,7 @@ public class Faiz_Rider_Items {
 			}.ChangeModel("faiz.geo.json").IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_GOLD_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_gold_blaster_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_gold_blaster","faiz","faiz_driver_belt_g_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_gold_blaster","faiz","faiz_driver_belt_g_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -136,7 +136,7 @@ public class Faiz_Rider_Items {
 
 
 	public static final DeferredItem<Item> KAIXA_MISSION_MEMORY = ITEMS.register("kaixa_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kaixa","kaixa_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","kaixa","kaixa_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)) {
@@ -149,7 +149,7 @@ public class Faiz_Rider_Items {
 			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> DELTA_MISSION_MEMORY = ITEMS.register("delta_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","delta","delta_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","delta","delta_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -163,7 +163,7 @@ public class Faiz_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> PSYGA_MISSION_MEMORY = ITEMS.register("psyga_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","psyga","psyga_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","psyga","psyga_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -177,7 +177,7 @@ public class Faiz_Rider_Items {
 			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
     public static final DeferredItem<Item> FLYING_ATTACKER = ITEMS.register("flying_attacker",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_flying_attacker","psyga","psyga_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_flying_attacker","psyga","psyga_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -193,7 +193,7 @@ public class Faiz_Rider_Items {
             }.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORGA_MISSION_MEMORY = ITEMS.register("orga_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","orga","orga_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","orga","orga_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -210,7 +210,7 @@ public class Faiz_Rider_Items {
 
 
 	public static final DeferredItem<Item> NEXT_FAIZ_MISSION_MEMORY = ITEMS.register("next_faiz_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","next_faiz","faiz_driver_next_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","next_faiz","faiz_driver_next_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -224,7 +224,7 @@ public class Faiz_Rider_Items {
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_MISSION_MEMORY = ITEMS.register("next_kaixa_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","next_kaixa","next_kaixa_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","next_kaixa","next_kaixa_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -238,7 +238,7 @@ public class Faiz_Rider_Items {
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUEZ_MISSION_MEMORY = ITEMS.register("muez_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","muez","muez_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","muez","muez_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -254,19 +254,19 @@ public class Faiz_Rider_Items {
 
 
 	public static final DeferredItem<Item> NEO_ALPA_MISSION_MEMORY = ITEMS.register("neo_alpa_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","neo_alpa","neo_alpa_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","neo_alpa","neo_alpa_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> PYRON_MISSION_MEMORY = ITEMS.register("pyron_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","pyron","pyron_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","pyron","pyron_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> SEEDA_MISSION_MEMORY = ITEMS.register("seeda_mission_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","seeda","seeda_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","seeda","seeda_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.FAIZ_TAB_ITEM));

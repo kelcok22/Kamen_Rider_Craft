@@ -41,7 +41,7 @@ public class Kabuto_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_ZECTER_MASK = ITEMS.register("kabuto_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","kabuto","kabuto_rider_belt_m",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","kabuto","kabuto_rider_belt_m",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -56,7 +56,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> KABUTO_ZECTER = ITEMS.register("kabuto_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","kabuto","kabuto_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -71,7 +71,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> THEBEE_ZECTER_MASK = ITEMS.register("thebee_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","thebee","zect_buckle_thebee_belt_masked",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","thebee","zect_buckle_thebee_belt_masked",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -86,7 +86,7 @@ public class Kabuto_Rider_Items {
             });
 
     public static final DeferredItem<Item> THEBEE_ZECTER = ITEMS.register("thebee_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","thebee","zect_buckle_thebee_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","thebee","zect_buckle_thebee_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)){
@@ -102,7 +102,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(THEBEE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DRAKE_ZECTER_MASK = ITEMS.register("drake_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","drake","zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","drake","zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -117,7 +117,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> DRAKE_ZECTER = ITEMS.register("drake_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","drake","zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","drake","zect_buckle_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -133,7 +133,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(DRAKE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> SASWORD_ZECTER_MASK = ITEMS.register("sasword_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","sasword","zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","sasword","zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -148,7 +148,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> SASWORD_ZECTER = ITEMS.register("sasword_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","sasword","zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","sasword","zect_buckle_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
@@ -164,7 +164,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(SASWORD_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_ZECTER_MASK = ITEMS.register("gatack_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","gatack","gatack_rider_belt_m",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","gatack","gatack_rider_belt_m",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -179,7 +179,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> GATACK_ZECTER = ITEMS.register("gatack_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","gatack","gatack_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","gatack","gatack_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -195,7 +195,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(GATACK_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_HYPER_ZECTER = ITEMS.register("gatack_hyper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),1,"_hyper","gatack","gatack_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_hyper","gatack","gatack_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -214,7 +214,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> KICKHOPPER_ZECTER = ITEMS.register("kickhopper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","kickhopper","kickhopper_zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","kickhopper","kickhopper_zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -232,7 +232,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> PUNCHHOPPER_ZECTER = ITEMS.register("punchhopper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","punchhopper","punchhopper_zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","punchhopper","punchhopper_zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -250,7 +250,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_KABUTO_ZECTER_MASK = ITEMS.register("dark_kabuto_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","dark_kabuto","dark_kabuto_rider_belt_m",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","dark_kabuto","dark_kabuto_rider_belt_m",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -265,7 +265,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> DARK_KABUTO_ZECTER = ITEMS.register("dark_kabuto_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_kabuto","dark_kabuto_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","dark_kabuto","dark_kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -280,7 +280,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_HYPER_ZECTER = ITEMS.register("dark_hyper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","dark_kabuto","dark_kabuto_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_hyper","dark_kabuto","dark_kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -299,7 +299,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addAlternative(GATACK_HYPER_ZECTER.get()));
 
     public static final DeferredItem<Item> CAUCASUS_ZECTER_MASK = ITEMS.register("caucasus_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","caucasus","zect_buckle_caucasus_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","caucasus","zect_buckle_caucasus_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -314,7 +314,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> CAUCASUS_ZECTER = ITEMS.register("caucasus_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","caucasus","zect_buckle_caucasus_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","caucasus","zect_buckle_caucasus_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -333,7 +333,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(CAUCASUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> HERCUS_ZECTER_MASK = ITEMS.register("hercus_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","hercus","zect_buckle_hercus_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","hercus","zect_buckle_hercus_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -348,7 +348,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> HERCUS_ZECTER = ITEMS.register("hercus_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","hercus","zect_buckle_hercus_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","hercus","zect_buckle_hercus_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
@@ -364,7 +364,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(HERCUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> KETAROS_ZECTER_MASK = ITEMS.register("ketaros_zecter_mask",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","ketaros","zect_buckle_ketaros_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_masked","ketaros","zect_buckle_ketaros_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -379,7 +379,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing());
 
     public static final DeferredItem<Item> KETAROS_ZECTER = ITEMS.register("ketaros_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","ketaros","zect_buckle_ketaros_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","ketaros","zect_buckle_ketaros_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
@@ -395,7 +395,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addSwitchForm(KETAROS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> LADY_ZECTER = ITEMS.register("lady_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","lady","zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","lady","zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
@@ -411,7 +411,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),1,"_hyper","kabuto","kabuto_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_hyper","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -430,7 +430,7 @@ public class Kabuto_Rider_Items {
             }.IsGlowing().addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_HYPER_ZECTER_CLOCK_UP = ITEMS.register("gatack_hyper_zecter_clock_up",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper_clock_up","gatack","gatack_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_hyper_clock_up","gatack","gatack_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -450,7 +450,7 @@ public class Kabuto_Rider_Items {
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper_clock_up","kabuto","kabuto_rider_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_hyper_clock_up","kabuto","kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 30,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -468,25 +468,25 @@ public class Kabuto_Rider_Items {
 
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","zectrooper","zectrooper_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","zectrooper","zectrooper_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
 
     public static final DeferredItem<Item> BRIGHTROOPER_ZECTER = ITEMS.register("brightrooper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","brightrooper","brightrooper_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","brightrooper","brightrooper_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
 
     public static final DeferredItem<Item> NEOTROOPER_ZECTER = ITEMS.register("neotrooper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","neotrooper","neotrooper_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","neotrooper","neotrooper_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
 
     public static final DeferredItem<Item> CHOPHOPPER_ZECTER = ITEMS.register("chophopper_zecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","chophopper","chophopper_zect_buckle_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","chophopper","chophopper_zect_buckle_belt",
                     new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))

@@ -16,8 +16,8 @@ import net.minecraft.world.level.Level;
 
 
 public class BoostBuckleItem extends RiderFormChangeItem {
-	public BoostBuckleItem(Properties properties, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-		super(properties, belt, formName, ridername, beltTex, effects);
+	public BoostBuckleItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+		super(properties, formName, ridername, beltTex, effects);
 	}
 
 	public InteractionResult useOn(UseOnContext context) {

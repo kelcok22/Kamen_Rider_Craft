@@ -76,7 +76,6 @@ public class RiderDriverItem extends RiderArmorItem {
      * @param torso A chestplate required to henshin, typically from a corresponding series
      * @param legs A pair of leggings required to henshin, typically from a corresponding series
      * @param properties The default {@link net.minecraft.world.item.Item.Properties} of the item
-     * @return An item of a Rider's henshin device
      * @author Kelco
     **/
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
@@ -263,12 +262,24 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+    public void timeoutForms(LivingEntity entity, ItemStack stack) {
+        for (int n = 1; n == this.Num_Base_Form_Item; n++) {
+            RiderFormChangeItem form = RiderDriverItem.get_Form_Item(stack, n);
+            if (form.getTimeoutDuration() != 0) {
+                RiderDriverItem.set_Form_Item(stack, form.getRevertForm(), n);
+                entity.addEffect(new MobEffectInstance(Effect_core.FORM_LOCK, form.getLockDuration(), 0, false, false));
+            }
+        }
+        entity.removeEffect(Effect_core.FORM_TIMEOUT);
+    }
+
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player && stack == player.getItemBySlot(EquipmentSlot.FEET)) {
             this.beltTick(stack,level,player,slotId);
             this.giveEffects(player);
-        }else if (entity instanceof LivingEntity player) {
+            if (player.hasEffect(Effect_core.FORM_TIMEOUT) && !isTransformed(player)) this.timeoutForms(player, stack);
+        } else if (entity instanceof LivingEntity player) {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 if (!isTransformed(player)||slotId!=36) {
                     Consumer<CompoundTag> data = form -> {
@@ -280,6 +291,7 @@ public class RiderDriverItem extends RiderArmorItem {
                     CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                 }
             }
+            if (player.hasEffect(Effect_core.FORM_TIMEOUT)) this.timeoutForms(player, stack);
         }
     }
 

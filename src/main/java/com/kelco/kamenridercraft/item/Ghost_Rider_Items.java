@@ -35,7 +35,7 @@ public class Ghost_Rider_Items {
 
 
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -46,7 +46,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> ORE_GHOST_EYECON = ITEMS.register("ore_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ghost","ghostdriver_belt",
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -57,7 +57,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(ORE_DAMASHII.get()).alsoChange2ndSlot(ORE_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_DAMASHII = ITEMS.register("boost_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"boost_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"boost_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -68,7 +68,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> BOOST_GHOST_EYECON = ITEMS.register("boost_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_boost","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_boost","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -82,7 +82,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(BOOST_DAMASHII.get()).alsoChange2ndSlot(BOOST_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUGEN_DAMASHII = ITEMS.register("mugen_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"mugen_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"mugen_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -93,7 +93,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> MUGEN_GHOST_EYECON = ITEMS.register("mugen_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_mugen","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_mugen","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -108,7 +108,7 @@ public class Ghost_Rider_Items {
 
 
 	public static final DeferredItem<Item> SPECTER_DAMASHII = ITEMS.register("specter_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"specter_damashii","specter","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"specter_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -119,7 +119,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(2).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> SPECTER_GHOST_EYECON = ITEMS.register("specter_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","specter","ghostdriver_belt_specter",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","specter","ghostdriver_belt_specter",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -130,7 +130,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(SPECTER_DAMASHII.get()).alsoChange2ndSlot(SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEEP_SPECTER_DAMASHII = ITEMS.register("deep_specter_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"deep_damashii","specter","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"deep_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -141,7 +141,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> DEEP_SPECTER_GHOST_EYECON = ITEMS.register("deep_specter_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_deep","specter","ghostdriver_belt_specter",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_deep","specter","ghostdriver_belt_specter",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -154,7 +154,7 @@ public class Ghost_Rider_Items {
 			}.alsoChange2ndSlot(DEEP_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIN_SPECTER_DAMASHII = ITEMS.register("sin_specter_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"sin_damashii","specter","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"sin_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -166,7 +166,7 @@ public class Ghost_Rider_Items {
 					.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> SIN_SPECTER_GHOST_EYECON = ITEMS.register("sin_specter_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_sin","specter","ghostdriver_belt_specter",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_sin","specter","ghostdriver_belt_specter",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
@@ -179,7 +179,7 @@ public class Ghost_Rider_Items {
 			}.alsoChange2ndSlot(SIN_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NECROM_DAMASHII = ITEMS.register("necrom_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"necrom_damashii","necrom","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"necrom_damashii","necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -190,7 +190,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> NECROM_GHOST_EYECON = ITEMS.register("necrom_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","necrom","necrom_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","necrom","necrom_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
@@ -203,7 +203,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> YUJOU_BURST_DAMASHII = ITEMS.register("yujou_burst_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"yujou_burst_necrom_damashii","necrom","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"yujou_burst_necrom_damashii","necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -214,7 +214,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> YUJOU_BURST_GHOST_EYECON = ITEMS.register("yujou_burst_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_yujou_burst","necrom","necrom_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_yujou_burst","necrom","necrom_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -227,7 +227,7 @@ public class Ghost_Rider_Items {
 			}.alsoChange2ndSlot(YUJOU_BURST_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_DAMASHII = ITEMS.register("dark_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"dark_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"dark_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -238,7 +238,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> DARK_GHOST_EYECON = ITEMS.register("dark_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","dark_ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
@@ -251,7 +251,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(DARK_DAMASHII.get()).alsoChange2ndSlot(DARK_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_SPECTER_DAMASHII = ITEMS.register("zero_specter_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"zero_specter_damashii","specter","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"zero_specter_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -262,7 +262,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(2).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> ZERO_SPECTER_GHOST_EYECON = ITEMS.register("zero_specter_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zero_specter","ghostdriver_belt_specter",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","zero_specter","ghostdriver_belt_specter",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
@@ -275,7 +275,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(ZERO_SPECTER_DAMASHII.get()).alsoChange2ndSlot(ZERO_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_ORE_DAMASHII = ITEMS.register("proto_ore_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_ore_damashii","zero_ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"proto_ore_damashii","zero_ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -286,7 +286,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> PROTO_ORE_GHOST_EYECON = ITEMS.register("proto_ore_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zero_ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","zero_ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
@@ -300,7 +300,7 @@ public class Ghost_Rider_Items {
 
 
 	public static final DeferredItem<Item> KANON_SPECTER_DAMASHII = ITEMS.register("kanon_specter_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"kanon_specter_damashii","specter","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"kanon_specter_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -311,7 +311,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(2).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> KANON_SPECTER_GHOST_EYECON = ITEMS.register("kanon_specter_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kanon_specter","ghostdriver_belt_specter",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","kanon_specter","ghostdriver_belt_specter",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -322,7 +322,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(KANON_SPECTER_DAMASHII.get()).alsoChange2ndSlot(KANON_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_RED_GHOST_EYECON = ITEMS.register("dark_necrom_red_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"dark_necrom_red_damashii","dark_necrom","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_red_damashii","dark_necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -333,7 +333,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_BLUE_GHOST_EYECON = ITEMS.register("dark_necrom_blue_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"dark_necrom_blue_damashii","dark_necrom","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_blue_damashii","dark_necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -344,7 +344,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_YELLOW_GHOST_EYECON = ITEMS.register("dark_necrom_yellow_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"dark_necrom_yellow_damashii","dark_necrom","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_yellow_damashii","dark_necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -355,7 +355,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_PINK_GHOST_EYECON = ITEMS.register("dark_necrom_pink_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"dark_necrom_pink_damashii","dark_necrom","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_pink_damashii","dark_necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -366,7 +366,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEW_ORE_GHOST_EYECON = ITEMS.register("new_ore_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"new_ore_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"new_ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -377,7 +377,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUSASHI_GHOST_EYECON = ITEMS.register("musashi_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"musashi_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"musashi_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -388,7 +388,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,5).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EDISON_GHOST_EYECON = ITEMS.register("edison_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"edison_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"edison_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -399,7 +399,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,5).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROBIN_GHOST_EYECON = ITEMS.register("robin_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"robin_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"robin_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -411,7 +411,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,4).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEWTON_GHOST_EYECON = ITEMS.register("newton_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"newton_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"newton_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(Effect_core.LOW_GRAVITY, 40, 7,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -422,7 +422,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,4).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BILLY_THE_KID_GHOST_EYECON = ITEMS.register("billy_the_kid_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"billy_the_kid_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"billy_the_kid_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -434,7 +434,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,3).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEETHOVEN_GHOST_EYECON = ITEMS.register("beethoven_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"beethoven_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"beethoven_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -446,7 +446,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,3).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BENKEI_GHOST_EYECON = ITEMS.register("benkei_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"benkei_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"benkei_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -458,7 +458,7 @@ public class Ghost_Rider_Items {
 
 
 	public static final DeferredItem<Item> GOEMON_GHOST_EYECON = ITEMS.register("goemon_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"goemon_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"goemon_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -471,7 +471,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYOMA_GHOST_EYECON = ITEMS.register("ryoma_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ryoma_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ryoma_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -484,7 +484,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIMIKO_GHOST_EYECON = ITEMS.register("himiko_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"himiko_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"himiko_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -497,7 +497,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TUTANKHAMUN_GHOST_EYECON = ITEMS.register("tutankhamun_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"tutankhamun_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"tutankhamun_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -509,7 +509,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(2).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,3).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NOBUNAGA_GHOST_EYECON = ITEMS.register("nobunaga_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"nobunaga_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"nobunaga_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -521,7 +521,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(2).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,3).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOUDINI_GHOST_EYECON = ITEMS.register("houdini_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"houdini_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"houdini_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -536,7 +536,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(2).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRIMM_GHOST_EYECON = ITEMS.register("grimm_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"grimm_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"grimm_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
@@ -549,7 +549,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SANZO_GHOST_EYECON = ITEMS.register("sanzo_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"sanzo_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"sanzo_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
@@ -562,7 +562,7 @@ public class Ghost_Rider_Items {
 			}.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NAPOLEON_GHOST_EYECON = ITEMS.register("napoleon_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"napoleon_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"napoleon_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -574,7 +574,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARWIN_GHOST_EYECON = ITEMS.register("darwin_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"darwin_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"darwin_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -586,7 +586,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> IKKYU_GHOST_EYECON = ITEMS.register("ikkyu_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ikkyu_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ikkyu_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -598,7 +598,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> PYTHAGORAS_GHOST_EYECON = ITEMS.register("pythagoras_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"pythagoras_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"pythagoras_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -610,7 +610,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SANTA_GHOST_EYECON = ITEMS.register("santa_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"santa_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"santa_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -625,7 +625,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NIGHTINGALE_GHOST_EYECON = ITEMS.register("nightingale_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"nightingale_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"nightingale_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -636,7 +636,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECIAL_ORE_GHOST_EYECON = ITEMS.register("special_ore_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"special_ore_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"special_ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -648,7 +648,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORE_SPECTER_GHOST_EYECON = ITEMS.register("ore_specter_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_specter_damashii","chair_is_no_fun","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ore_specter_damashii","chair_is_no_fun","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
@@ -658,7 +658,7 @@ public class Ghost_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> COLUMBUS_GHOST_EYECON = ITEMS.register("columbus_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"columbus_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"columbus_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -669,7 +669,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHAKEPEARE_GHOST_EYECON = ITEMS.register("shakespeare_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"shakespeare_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"shakespeare_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.CONFUSION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -681,7 +681,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAMEHAMEHA_GHOST_EYECON = ITEMS.register("kamehameha_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"kamehameha_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"kamehameha_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -693,7 +693,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GALILEO_GHOST_EYECON = ITEMS.register("galileo_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"galileo_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"galileo_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -705,7 +705,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DA_VINCI_GHOST_EYECON = ITEMS.register("da_vinci_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"da_vinci_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"da_vinci_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -717,7 +717,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TENKATOITSU_GHOST_EYECON = ITEMS.register("tenkatoitsu_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"tenkatoitsu_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"tenkatoitsu_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -732,7 +732,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINSENGUMI_GHOST_EYECON = ITEMS.register("shinsengumi_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"shinsengumi_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"shinsengumi_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
@@ -745,7 +745,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOWA_GHOST_EYECON = ITEMS.register("showa_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"showa_rider_45_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"showa_rider_45_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
@@ -758,7 +758,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_GHOST_EYECON = ITEMS.register("kuuga_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"kuuga_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"kuuga_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -769,7 +769,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_GHOST_EYECON = ITEMS.register("agito_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"agito_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"agito_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -781,7 +781,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUKI_GHOST_EYECON = ITEMS.register("ryuki_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ryuki_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ryuki_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
@@ -794,7 +794,7 @@ public class Ghost_Rider_Items {
 			}	.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_GHOST_EYECON = ITEMS.register("faiz_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"faiz_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"faiz_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
@@ -807,7 +807,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_GHOST_EYECON = ITEMS.register("blade_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"blade_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"blade_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -819,7 +819,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_GHOST_EYECON = ITEMS.register("hibiki_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"hibiki_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"hibiki_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
@@ -832,7 +832,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_GHOST_EYECON = ITEMS.register("kabuto_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"kabuto_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"kabuto_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -844,7 +844,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_GHOST_EYECON = ITEMS.register("den_o_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"den_o_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"den_o_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -856,7 +856,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVA_GHOST_EYECON = ITEMS.register("kiva_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"kiva_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"kiva_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
@@ -869,7 +869,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_GHOST_EYECON = ITEMS.register("decade_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"decade_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"decade_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -881,7 +881,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUBLE_GHOST_EYECON = ITEMS.register("double_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"double_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"double_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -895,7 +895,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_GHOST_EYECON = ITEMS.register("ooo_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ooo_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ooo_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
@@ -908,7 +908,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_GHOST_EYECON = ITEMS.register("fourze_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"fourze_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"fourze_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -920,7 +920,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GHOST_EYECON = ITEMS.register("wizard_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"wizard_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"wizard_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -932,7 +932,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIM_GHOST_EYECON = ITEMS.register("gaim_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"gaim_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"gaim_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -944,7 +944,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_GHOST_EYECON = ITEMS.register("drive_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"drive_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"drive_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -956,7 +956,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_GHOST_EYECON = ITEMS.register("ghost_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -968,7 +968,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EX_AID_GHOST_EYECON = ITEMS.register("ex_aid_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"ex_aid_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"ex_aid_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -983,7 +983,7 @@ public class Ghost_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURTYFIVE_HEISEI_DAMASHII = ITEMS.register("fourtyfive_heisei_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"fourtyfive_heisei_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"fourtyfive_heisei_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -994,7 +994,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> FOURTYFIVE_HEISEI_GHOST_EYECON = ITEMS.register("fourtyfive_heisei_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_heisei","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_heisei","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -1015,7 +1015,7 @@ public class Ghost_Rider_Items {
 			}.alsoChange2ndSlot(FOURTYFIVE_HEISEI_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURTYFIVE_SHOWA_GHOST_EYECON = ITEMS.register("fourtyfive_showa_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"ichigou_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"ichigou_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
@@ -1041,7 +1041,7 @@ public class Ghost_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAMMA_SUPERIOR_DAMASHII = ITEMS.register("gamma_superior_damashii",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_superior_damashii","gamma_superior","gamma_superior_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_superior_damashii","gamma_superior","gamma_superior_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -1052,7 +1052,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon"));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gamma_superior","gamma_superior_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","gamma_superior","gamma_superior_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
@@ -1065,7 +1065,7 @@ public class Ghost_Rider_Items {
 			}.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON_CAMILLE = ITEMS.register("transform_gamma_eyecon_camille",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_superior_damashii_gold","gamma_superior","gamma_superior_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_superior_damashii_gold","gamma_superior","gamma_superior_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -1076,7 +1076,7 @@ public class Ghost_Rider_Items {
 			}.ChangeModel("damashii.geo.json").ChangeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon").AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"gamma_knife_damashii","gamma_superior","gamma_superior_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_knife_damashii","gamma_superior","gamma_superior_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
@@ -1106,7 +1106,7 @@ public class Ghost_Rider_Items {
 					.Add_Extra_Base_Form_Items(ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> UNFINISHED_EYECON_DRIVER_G = ITEMS.register("unfinished_eyecon_driver_g",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ghost_grateful","eyecon_driver_g_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","ghost_grateful","eyecon_driver_g_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1147,7 +1147,7 @@ public class Ghost_Rider_Items {
 					.Add_Extra_Base_Form_Items(DARK_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> UNFINISHED_EXTREMER_DRIVER = ITEMS.register("unfinished_extremer_driver",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","extremer","extremer_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","extremer","extremer_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),

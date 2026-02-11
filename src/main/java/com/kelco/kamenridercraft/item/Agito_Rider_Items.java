@@ -29,7 +29,7 @@ public class Agito_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_GROUND = ITEMS.register("agito_ground",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","agito","alter_ring_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","agito","alter_ring_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -42,7 +42,7 @@ public class Agito_Rider_Items {
 
 
 	public static final DeferredItem<Item> AGITO_STORM = ITEMS.register("agito_storm",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","agito","alter_ring_belt_s",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_storm","agito","alter_ring_belt_s",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -54,7 +54,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_FLAME = ITEMS.register("agito_flame",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame","agito","alter_ring_belt_f",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_flame","agito","alter_ring_belt_f",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -66,7 +66,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_TRINITY = ITEMS.register("agito_trinity",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trinity","agito","alter_ring_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_trinity","agito","alter_ring_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -86,7 +86,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_BURNING = ITEMS.register("agito_burning",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_burning","agito","alter_ring_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_burning","agito","alter_ring_belt_b",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -104,7 +104,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_SHINING = ITEMS.register("agito_shining",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_shining","agito","alter_ring_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_shining","agito","alter_ring_belt_b",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -122,7 +122,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ICONGA_NO_AKAI_AGITO= ITEMS.register("iconga_no_akai_agito",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_iconga_no_akai","agito","alter_ring_belt_f",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_iconga_no_akai","agito","alter_ring_belt_f",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -135,7 +135,7 @@ public class Agito_Rider_Items {
 
 
 	public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gills","meta_factor_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","gills","meta_factor_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
@@ -148,7 +148,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXCEED_GILLS = ITEMS.register("exceed_gills",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_exceed","gills","meta_factor_belt_e",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_exceed","gills","meta_factor_belt_e",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
@@ -166,7 +166,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_EXCEED_GILLS = ITEMS.register("gold_exceed_gills",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_gold_exceed","gills","meta_factor_belt_g",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_gold_exceed","gills","meta_factor_belt_g",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
@@ -185,7 +185,7 @@ public class Agito_Rider_Items {
 
 
 	public static final DeferredItem<Item> ANOTHER_AGITO = ITEMS.register("another_agito",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_agito","ank_point_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","another_agito","ank_point_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
@@ -198,7 +198,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> MIRAGE_AGITO = ITEMS.register("agito_miracle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"","mirage_agito","alter_ring_mirage_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"","mirage_agito","alter_ring_mirage_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -214,7 +214,7 @@ public class Agito_Rider_Items {
 
 
 	public static final DeferredItem<Item> ANOTHER_AGITO_KOJI = ITEMS.register("another_agito_koji",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","another_agito_koji","ank_point_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","another_agito_koji","ank_point_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)) {
@@ -227,7 +227,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_AGITO_BURNING = ITEMS.register("another_agito_burning_form",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_burning","another_agito_koji","ank_point_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_burning","another_agito_koji","ank_point_belt_b",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
@@ -248,7 +248,7 @@ public class Agito_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> G3_CHIP = ITEMS.register("g3",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","g3","g_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","g3","g_buckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -263,7 +263,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> G3_X_CHIP = ITEMS.register("g3x",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","g3_x","g_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","g3_x","g_buckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -279,7 +279,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> G3_MILD_CHIP = ITEMS.register("g3mild",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_mild","g_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","g3_mild","g_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -293,7 +293,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> G4_CHIP = ITEMS.register("g4",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","g4","g_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","g4","g_buckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.POISON, 40, 0,true,false)){
@@ -309,7 +309,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> G4_X_CHIP = ITEMS.register("g4x",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","g4_x","g_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","g4_x","g_buckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
@@ -325,7 +325,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","g1","g_buckle_belt_1",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","g1","g_buckle_belt_1",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -339,7 +339,7 @@ public class Agito_Rider_Items {
 			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> V1_CHIP = ITEMS.register("v1",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","v1","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","v1","blank",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {

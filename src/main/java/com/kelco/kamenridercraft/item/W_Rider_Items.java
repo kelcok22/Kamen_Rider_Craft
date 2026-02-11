@@ -44,7 +44,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> CYCLONE_MEMORY = ITEMS.register("cyclone_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyclone","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_cyclone","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 0,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -56,7 +56,7 @@ public class W_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
 
 	public static final DeferredItem<Item> HEAT_MEMORY = ITEMS.register("heat_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_heat","w","wdriver_belt_hj",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_heat","w","wdriver_belt_hj",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -68,7 +68,7 @@ public class W_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> LUNA_MEMORY = ITEMS.register("luna_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_luna","w","wdriver_belt_lj",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_luna","w","wdriver_belt_lj",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.LONG_ARM, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -80,7 +80,7 @@ public class W_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> FANG_MEMORY = ITEMS.register("fang_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_fang","w","wdriver_belt_fj",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_fang","w","wdriver_belt_fj",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -94,7 +94,7 @@ public class W_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> JOKER_JOKER_MEMORY = ITEMS.register("joker_joker_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker_joker","w","wdriver_belt_jj",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_joker_joker","w","wdriver_belt_jj",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -106,7 +106,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> JOKER_MEMORY = ITEMS.register("joker_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_joker","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_joker","w","wdriver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -117,7 +117,7 @@ public class W_Rider_Items {
 			}.allowRiderKick().IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
 
 	public static final DeferredItem<Item> METAL_MEMORY = ITEMS.register("metal_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_metal","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_metal","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -128,7 +128,7 @@ public class W_Rider_Items {
 			}.IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
 
 	public static final DeferredItem<Item> TRIGGER_MEMORY = ITEMS.register("trigger_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_trigger","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_trigger","w","wdriver_belt",
 					new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -139,7 +139,7 @@ public class W_Rider_Items {
 			}.IsGlowing().ChangeSlot(2).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
 
 	public static final DeferredItem<Item> CYCLONE_CYCLONE_MEMORY = ITEMS.register("cyclone_cyclone_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyclone_cyclone","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_cyclone_cyclone","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 1,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -152,7 +152,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> XTREME_MEMORY = ITEMS.register("xtreme_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_cyclone_xtreme","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -172,7 +172,7 @@ public class W_Rider_Items {
 			}.IsGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> XTREME_GOLD_MEMORY = ITEMS.register("xtreme_gold_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_cyclone_xtreme_gold","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_cyclone_xtreme_gold","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -193,7 +193,7 @@ public class W_Rider_Items {
 			}.IsGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme_accel","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_cyclone_xtreme_accel","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -214,7 +214,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> ACCEL_MEMORY_BIKE = ITEMS.register("accel_memory_bike",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bike_form","accel","blank",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_bike_form","accel","blank",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 50,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 9,true,false),
@@ -228,7 +228,7 @@ public class W_Rider_Items {
 			}.ChangeModel("accel_bike.geo.json").IsBike().IsGlowing().has_basic_model().model_has_different_name("accel_memory"));
 
 	public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","accel","acceldriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","accel","acceldriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -243,7 +243,7 @@ public class W_Rider_Items {
 			}.addSwitchForm(ACCEL_MEMORY_BIKE.get()).IsGlowing().AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trial","accel","acceldriver_belt_t",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_trial","accel","acceldriver_belt_t",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -262,7 +262,7 @@ public class W_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_BOOSTER_MEMORY = ITEMS.register("accel_booster_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_booster","accel","acceldriver_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_booster","accel","acceldriver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -282,7 +282,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> CYCLONE_SKULL_MEMORY = ITEMS.register("skull_cyclone_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_skull","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_skull","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -297,7 +297,7 @@ public class W_Rider_Items {
 					.model_has_different_name("skull_memory").has_basic_model());
 
 	public static final DeferredItem<Item> SKULL_MEMORY_CRYSTAL = ITEMS.register("skull_memory_crystal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_crystal","skulll_crystal","lostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_crystal","skulll_crystal","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -312,7 +312,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","skull","lostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","skull","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -327,7 +327,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> ETERNAL_MEMORY = ITEMS.register("eternal_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_red","eternal","lostdriver_belt_e",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_red","eternal","lostdriver_belt_e",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 1,true,false)) {
@@ -385,7 +385,7 @@ public class W_Rider_Items {
 					.AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
 	public static final DeferredItem<Item> CYCLONE_T2_MEMORY = ITEMS.register("cyclone_t2_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","cyclone","lostdriver_belt_c",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","cyclone","lostdriver_belt_c",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)){
@@ -402,7 +402,7 @@ public class W_Rider_Items {
 					.AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
 	public static final DeferredItem<Item> ETERNAL_T2_MEMORY = ITEMS.register("eternal_t2_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","eternal","lostdriver_belt_e",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","eternal","lostdriver_belt_e",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -434,7 +434,7 @@ public class W_Rider_Items {
 					.AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
 	public static final DeferredItem<Item> JOKER_T2_MEMORY = ITEMS.register("joker_t2_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","joker","lostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","joker","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
@@ -508,7 +508,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> T2_ZONE_MEMORY = ITEMS.register("zone_t2_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_strengthening_armament","eternal","lostdriver_belt_e",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_strengthening_armament","eternal","lostdriver_belt_e",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -564,7 +564,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","terror_dopant","gaia_driver_belt_terror",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","terror_dopant","gaia_driver_belt_terror",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -577,7 +577,7 @@ public class W_Rider_Items {
 			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> TABOO_MEMORY = ITEMS.register("taboo_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","terror_dopant","gaia_driver_belt_taboo",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","terror_dopant","gaia_driver_belt_taboo",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false),
@@ -591,7 +591,7 @@ public class W_Rider_Items {
 			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> CLAYDOLL_MEMORY = ITEMS.register("claydoll_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","claydoll_dopant","gaia_driver_belt_taboo",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","claydoll_dopant","gaia_driver_belt_taboo",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)){
@@ -604,7 +604,7 @@ public class W_Rider_Items {
 			}.ChangeBeltModel("geo/claydoll_riderbelt.geo.json").AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> NASCA_MEMORY = ITEMS.register("nasca_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","nazca_dopant","gaia_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","nazca_dopant","gaia_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false),
@@ -619,7 +619,7 @@ public class W_Rider_Items {
 			}.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMILODON_MEMORY = ITEMS.register("smilodon_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","smilodon_dopant","gaia_driver_belt_smilodon",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","smilodon_dopant","gaia_driver_belt_smilodon",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -661,7 +661,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> MEMORY_MEMORY = ITEMS.register("memory_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","core","core_driver_belt",
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);

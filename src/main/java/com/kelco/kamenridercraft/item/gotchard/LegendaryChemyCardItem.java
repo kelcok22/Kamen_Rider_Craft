@@ -22,8 +22,8 @@ public class LegendaryChemyCardItem extends RiderFormChangeItem {
     private final List<RiderFormChangeItem> baseFormItems = new ArrayList<>();
     private RiderDriverItem superForm;
     private final List<RiderFormChangeItem> superFormItems = new ArrayList<>();
-    public LegendaryChemyCardItem(Properties properties, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public LegendaryChemyCardItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public LegendaryChemyCardItem setBaseSummon(RiderDriverItem belt) {

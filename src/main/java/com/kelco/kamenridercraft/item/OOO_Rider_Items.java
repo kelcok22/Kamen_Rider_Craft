@@ -56,7 +56,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> TAKA_MEDAL = ITEMS.register("taka_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_taka","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -67,7 +67,7 @@ public class OOO_Rider_Items {
 			}.AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KUJAKU_MEDAL = ITEMS.register("kujaku_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujaku","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kujaku","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -78,7 +78,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CONDOR_MEDAL = ITEMS.register("condor_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_condor","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -89,7 +89,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TAKA_ANKH_MEDAL = ITEMS.register("taka_ankh_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_taka","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
@@ -103,7 +103,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> LION_MEDAL = ITEMS.register("lion_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lion","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_lion","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -115,7 +115,7 @@ public class OOO_Rider_Items {
 			}.AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TORA_MEDAL = ITEMS.register("tora_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tora","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_tora","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -126,7 +126,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CHEETAH_MEDAL = ITEMS.register("cheetah_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cheetah","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_cheetah","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -138,7 +138,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> KUWAGATA_MEDAL = ITEMS.register("kuwagata_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kuwagata","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kuwagata","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -150,7 +150,7 @@ public class OOO_Rider_Items {
 			}.AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KAMAKIRI_MEDAL = ITEMS.register("kamakiri_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kamakiri","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kamakiri","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -161,7 +161,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BATTA_MEDAL = ITEMS.register("batta_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_batta","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_batta","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -173,7 +173,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SAI_MEDAL = ITEMS.register("sai_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_sai","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_sai","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -184,7 +184,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> GORILLA_MEDAL = ITEMS.register("gorilla_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gorilla","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_gorilla","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -196,7 +196,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> ZOU_MEDAL = ITEMS.register("zou_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zou","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_zou","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -209,7 +209,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SHACHI_MEDAL = ITEMS.register("shachi_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shachi","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_shachi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -220,7 +220,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> UNAGI_MEDAL = ITEMS.register("unagi_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_unagi","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_unagi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -231,7 +231,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TAKO_MEDAL = ITEMS.register("tako_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tako","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_tako","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -243,7 +243,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> PTERA_MEDAL = ITEMS.register("ptera_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_ptera","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_ptera","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -254,7 +254,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TRICERA_MEDAL = ITEMS.register("tricera_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_tricera","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_tricera","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40	, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -265,7 +265,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TYRANNO_MEDAL = ITEMS.register("tyranno_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_tyranno","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_tyranno","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -277,7 +277,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> COBRA_MEDAL = ITEMS.register("cobra_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cobra","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_cobra","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -288,7 +288,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KAME_MEDAL = ITEMS.register("kame_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kame","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kame","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -300,7 +300,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> WANI_MEDAL = ITEMS.register("wani_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wani","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_wani","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -312,7 +312,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SASORI_MEDAL = ITEMS.register("sasori_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","core","core_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -323,7 +323,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_MEDAL = ITEMS.register("kani_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","core","core_driver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -334,7 +334,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> EBI_MEDAL = ITEMS.register("ebi_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","core","core_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -346,7 +346,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> MUKADE_MEDAL = ITEMS.register("mukade_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mukade","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_mukade","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -358,7 +358,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> HACHI_MEDAL = ITEMS.register("hachi_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hachi","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_hachi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -370,7 +370,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> ARI_MEDAL = ITEMS.register("ari_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ari","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_ari","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -383,7 +383,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> EBI_NEW_MEDAL = ITEMS.register("ebi_new_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ebi","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_ebi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -394,7 +394,7 @@ public class OOO_Rider_Items {
 			}.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_NEW_MEDAL = ITEMS.register("kani_new_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kani","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kani","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -405,7 +405,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> SASORI_NEW_MEDAL = ITEMS.register("sasori_new_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_sasori","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_sasori","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -418,7 +418,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SAME_MEDAL = ITEMS.register("same_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_same","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_same","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -429,7 +429,7 @@ public class OOO_Rider_Items {
 			}.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KUJIRA_MEDAL = ITEMS.register("kujira_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujira","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kujira","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -440,7 +440,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> OOKAMIUO_MEDAL = ITEMS.register("ookamiuo_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ookamiuo","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_ookamiuo","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -452,7 +452,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SHIKA_MEDAL = ITEMS.register("shika_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shika","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_shika","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -463,7 +463,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> GAZELLE_MEDAL = ITEMS.register("gazelle_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gazelle","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_gazelle","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -474,7 +474,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> USHI_MEDAL = ITEMS.register("ushi_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ushi","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_ushi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -486,7 +486,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SEIUCHI_MEDAL = ITEMS.register("seiuchi_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_seiuchi","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_seiuchi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -497,7 +497,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> SHIROKUMA_MEDAL = ITEMS.register("shirokuma_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shirokuma","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_shirokuma","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -508,7 +508,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> PENGUIN_MEDAL = ITEMS.register("penguin_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_penguin","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_penguin","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -520,7 +520,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> PANDA_MEDAL = ITEMS.register("panda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_panda","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_panda","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -533,7 +533,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> KANGAROO_MEDAL_LEG = ITEMS.register("kangaroo_medal_leg",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo_leg","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kangaroo_leg","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -545,7 +545,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> KANGAROO_MEDAL = ITEMS.register("kangaroo_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_kangaroo","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -557,7 +557,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> YADOKARI_MEDAL = ITEMS.register("yadokari_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yadokari","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_yadokari","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -569,7 +569,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> SUPER_TAKA_MEDAL = ITEMS.register("super_taka_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_super_taka","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_super_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false),
@@ -587,7 +587,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_TORA_MEDAL = ITEMS.register("super_tora_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_super_tora","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_super_tora","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
@@ -603,7 +603,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_BATTA_MEDAL = ITEMS.register("super_batta_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_super_batta","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_super_batta","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)){
@@ -620,7 +620,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> TAKA_ETERNITY_MEDAL = ITEMS.register("taka_eternity_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_taka_eternity","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_taka_eternity","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -643,7 +643,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUJAKU_ETERNITY_MEDAL = ITEMS.register("kujaku_eternity_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_kujaku_eternity","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_kujaku_eternity","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -666,7 +666,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_ETERNITY_MEDAL = ITEMS.register("condor_eternity_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_condor_eternity","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_condor_eternity","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -690,7 +690,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> ANCIENT_TAKA_MEDAL = ITEMS.register("ancient_taka_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_taka","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 6,true,false)) {
@@ -704,7 +704,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANCIENT_TORA_MEDAL = ITEMS.register("ancient_tora_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_tora","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_tora","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -716,7 +716,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddCompatibilityList(new String[] {"ooo_ancient"}).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANCIENT_BATTA_MEDAL = ITEMS.register("ancient_batta_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_batta","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_batta","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -729,7 +729,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> MUKADE_GODA_MEDAL = ITEMS.register("mukade_goda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_mukade","goda","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_mukade","goda","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
@@ -746,7 +746,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> HACHI_GODA_MEDAL = ITEMS.register("hachi_goda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hachi","goda","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_hachi","goda","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)){
@@ -762,7 +762,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).ChangeModel("ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARI_GODA_MEDAL = ITEMS.register("ari_goda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_ari","goda","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_ari","goda","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)){
@@ -780,7 +780,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> LOVE_CORE_MEDAL = ITEMS.register("love_core_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_love_1","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_love_1","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -791,7 +791,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> LOVE_CORE2_MEDAL = ITEMS.register("love_core2_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_love_2","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_love_2","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -802,7 +802,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> LOVE_CORE3_MEDAL = ITEMS.register("love_core3_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_love_3","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_love_3","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -941,7 +941,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> HABATAKI_MEDAL = ITEMS.register("habataki_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_habataki","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_habataki","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -952,7 +952,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAIGA_MEDAL = ITEMS.register("taiga_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tiger","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_tiger","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -963,7 +963,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ICHIGO_MEDAL = ITEMS.register("ichigo_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ichigo","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_ichigo","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -975,7 +975,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> IMAGIN_MEDAL = ITEMS.register("imagin_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_imagin","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_imagin","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -987,7 +987,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> SHOCKER_MEDAL = ITEMS.register("shocker_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shocker","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_shocker","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -998,7 +998,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> GEL_SHOCKER_MEDAL = ITEMS.register("gel_shocker_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gel_shocker","shocker_ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_gel_shocker","shocker_ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
@@ -1010,7 +1010,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> DESTRON_MEDAL = ITEMS.register("destron_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_destron","shocker_ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_destron","shocker_ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
 
@@ -1033,7 +1033,7 @@ public class OOO_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> HEXA_OOOOOO = ITEMS.register("hexa_oooooo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","oooooo","oooooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","oooooo","oooooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1053,7 +1053,7 @@ public class OOO_Rider_Items {
 			}.IsGlowing().ChangeBeltModel("geo/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
 
 	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","birth_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","birth_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1065,7 +1065,7 @@ public class OOO_Rider_Items {
 			}.AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_BIRTH_CORE = ITEMS.register("proto_birth_core",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth_prototype","birth_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth_prototype","birth_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -1077,7 +1077,7 @@ public class OOO_Rider_Items {
 			}.AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_EYES = ITEMS.register("birth_core_eyes",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_eyes","birth","birth_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_eyes","birth","birth_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
@@ -1092,31 +1092,31 @@ public class OOO_Rider_Items {
 					.IsGlowing().AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_BREAST_CANNON = ITEMS.register("birth_core_breast_cannon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false))
 					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddCompatibilityList(new String[] {"birth_prototype"}).AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_CRANE_ARM = ITEMS.register("birth_core_crane_arm",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 					.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddCompatibilityList(new String[] {"birth_prototype"}).AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_SHOVEL_ARM = ITEMS.register("birth_core_shovel_arm",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 					.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_CATERPILLAR_LEG = ITEMS.register("birth_core_catepillar_leg",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
 					.ChangeSlot(5).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_DRILL_ARM = ITEMS.register("birth_core_drill_arm",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.DRILL, 40, 0,true,false))
 					.ChangeSlot(6).addSwitchForm(Modded_item_core.BLANK_FORM.get())
@@ -1124,19 +1124,19 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> BIRTH_CORE_CUTTER_WING = ITEMS.register("birth_core_cutter_wing",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.ChangeSlot(7).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddCompatibilityList(new String[] {"birth_prototype"}).AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_ABSORPTION_CORE = ITEMS.register("greeed_absorption_core",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_tora_greeed_absorption","ooo_ancient","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_tora_greeed_absorption","ooo_ancient","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.ChangeSlot(2).ChangeModel("ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> AQUA_CORE = ITEMS.register("aqua_core",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","aqua","aqua_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","aqua","aqua_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2,true,false))
 					.IsGlowing().AddToList(RiderTabs.OOO_TAB_ITEM));

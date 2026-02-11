@@ -23,8 +23,8 @@ public class LegendChemyCardItem extends RiderFormChangeItem {
     private RiderFormChangeItem summonForm = null;
     private List<Item> summonWeapons = new ArrayList<>(2);
 
-    public LegendChemyCardItem(Properties properties, int belt, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, belt, formName, ridername, beltTex, effects);
+    public LegendChemyCardItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     public LegendChemyCardItem setSummonBelt(RiderDriverItem belt) {
