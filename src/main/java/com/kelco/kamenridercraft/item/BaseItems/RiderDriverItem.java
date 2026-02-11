@@ -66,7 +66,19 @@ public class RiderDriverItem extends RiderArmorItem {
     public Boolean Has_basic_belt_info = true;
     public Boolean Show_belt_form_info = true;
 
-
+    /**
+     * Constructor for the main armor piece used by a Kamen Rider, kaijin, or other transforming character. This item uses the foot armor slot in all cases.
+     *
+     * @param material The {@link net.minecraft.world.item.ArmorMaterial} for the device (typically diamond)
+     * @param rider The name of the Rider that uses this device. A {@link com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem} compares its {@code ridername} with this value to determine if the Rider can use the form attached to the item
+     * @param baseFormItem The {@link com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem} containing the Rider's base form
+     * @param head A helmet required to henshin, typically from a corresponding series
+     * @param torso A chestplate required to henshin, typically from a corresponding series
+     * @param legs A pair of leggings required to henshin, typically from a corresponding series
+     * @param properties The default {@link net.minecraft.world.item.Item.Properties} of the item
+     * @return An item of a Rider's henshin device
+     * @author Kelco
+    **/
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
         super(material, BasicArmorItem.Type.BOOTS, properties);
@@ -92,6 +104,13 @@ public class RiderDriverItem extends RiderArmorItem {
 
     }
 
+    /**
+     * Checks if a {@link net.minecraft.world.entity.LivingEntity} has transformed by equipping this item and its associated armor set.
+     *
+     * @param player The {@link net.minecraft.world.entity.LivingEntity} using the device
+     * @return {@code true} if the entity is transformed, otherwise {@code false}
+     * @author Chair
+    **/
     public boolean isTransformed(LivingEntity player) {
         if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem))return false;
         return player.getItemBySlot(EquipmentSlot.HEAD).getItem()==HEAD.asItem()
