@@ -176,6 +176,17 @@
 			"item": "kamenridercraft:round_zero_blade_brave_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "elements_music_disc",
+        "text": "Song:$(li)HosephHoestar - ELEMENTS$(br2)Based on:$(li)Rider Chips ft. Ricky - ELEMENTS$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Blade (2004, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:elements_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "rebirth_music_disc",
