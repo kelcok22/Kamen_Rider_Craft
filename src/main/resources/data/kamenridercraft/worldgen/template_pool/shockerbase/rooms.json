@@ -22,7 +22,7 @@
         "element_type": "minecraft:single_pool_element"
       }
     },{
-	  "weight": 1,
+	  "weight": 2,
 	  "element": {
 		"location": "kamenridercraft:shockerbase/rooms/room_1",
 
@@ -40,7 +40,7 @@
         "element_type": "minecraft:single_pool_element"
       }
     },{
-      "weight": 1,
+      "weight": 3,
       "element": {
         "location": "kamenridercraft:shockerbase/rooms/room_diner",
 
@@ -49,9 +49,36 @@
         "element_type": "minecraft:single_pool_element"
       }
     },{
-      "weight": 1,
+      "weight": 2,
       "element": {
         "location": "kamenridercraft:shockerbase/rooms/room_shin_kamen_rider",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 2,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_yongo_hangar",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 4,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_hangar",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 3,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_drivepit",
 
         "processors": "minecraft:empty",
         "projection": "rigid",

@@ -1,0 +1,107 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:rider_circuit",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 4.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:drive_system_car",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:rider3_vs_the_demon_of_general_black",
+          "weight": 1
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 2.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:typhoon_core_yongo",
+          "weight": 6
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 1.0
+      }
+    },
+    {"bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:signal_legend_1",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:signal_legend_w",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:signal_legend_ooo",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:signal_legend_fourze",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:signal_legend_wizard",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:signal_legend_gaim",
+          "weight": 6
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3.0,
+        "min": 0.0
+      }
+    }
+  ]
+}
