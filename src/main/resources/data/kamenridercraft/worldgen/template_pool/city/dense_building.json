@@ -191,6 +191,15 @@
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kamenridercraft:city/dense_building/kikuchi_cleaners",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
     }
   ]
 }

@@ -22,7 +22,7 @@
         "element_type": "minecraft:single_pool_element"
       }
     },{
-	  "weight": 2,
+	  "weight": 1,
 	  "element": {
 		"location": "kamenridercraft:shockerbase/rooms/room_1",
 
@@ -31,7 +31,7 @@
 		"element_type": "minecraft:single_pool_element"
 	  }
 	},{
-      "weight": 1,
+      "weight": 2,
       "element": {
         "location": "kamenridercraft:shockerbase/rooms/room_megabloks",
 
@@ -67,7 +67,7 @@
         "element_type": "minecraft:single_pool_element"
       }
     },{
-      "weight": 4,
+      "weight": 2,
       "element": {
         "location": "kamenridercraft:shockerbase/rooms/room_hangar",
 
@@ -76,9 +76,27 @@
         "element_type": "minecraft:single_pool_element"
       }
     },{
-      "weight": 3,
+      "weight": 2,
       "element": {
         "location": "kamenridercraft:shockerbase/rooms/room_drivepit",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 3,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_barracks",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 3,
+      "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_jail",
 
         "processors": "minecraft:empty",
         "projection": "rigid",
