@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kamenridercraft:block/decade_violent_emotion_boss_block"
+  }
+}

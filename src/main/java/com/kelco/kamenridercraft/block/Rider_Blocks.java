@@ -1075,6 +1075,11 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ARC).addLine(Component.translatable("henshin.kamenridercraft.arc")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> DECADE_VIOLENT_BLOCK = registerBlock("decade_violent_emotion_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    ,MobsCore.DECADE_VIOLENT).addLine(Component.translatable("henshin.kamenridercraft.decade_violent_emotion")).is_basic_cube().AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
     public static final DeferredBlock<Block> TABOO_BOSS_BLOCK = registerBlock("taboo_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     ,MobsCore.TABOO_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.taboo")).AddToTabList(RiderTabs.RIDER_BLOCK));
