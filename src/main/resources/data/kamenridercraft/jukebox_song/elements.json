@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.elements.desc"
+  },
+  "length_in_seconds": 73,
+  "sound_event": "kamenridercraft:elements"
+}

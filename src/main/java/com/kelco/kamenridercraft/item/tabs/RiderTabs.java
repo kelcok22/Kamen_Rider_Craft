@@ -936,6 +936,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.ALIVE_A_LIFE_MUSIC_DISC);
             event.accept(Modded_item_core.JUSTIFAIZ_MUSIC_DISC);
             event.accept(Modded_item_core.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
+            event.accept(Modded_item_core.ELEMENTS_MUSIC_DISC);
             event.accept(Modded_item_core.REBIRTH_MUSIC_DISC);
             event.accept(Modded_item_core.KAGAYAKI_MUSIC_DISC);
             event.accept(Modded_item_core.NEXT_LEVEL_MUSIC_DISC);

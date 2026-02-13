@@ -490,6 +490,9 @@ public class Modded_item_core {
     public static final DeferredItem<Item> ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC = ITEMS.register("round_zero_blade_brave_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ROUND_ZERO_BLADE_BRAVE_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> ELEMENTS_MUSIC_DISC = ITEMS.register("elements_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ELEMENTS_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> REBIRTH_MUSIC_DISC = ITEMS.register("rebirth_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.REBIRTH_KEY).stacksTo(1)));
 

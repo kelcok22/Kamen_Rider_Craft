@@ -62,6 +62,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> ROUND_ZERO_BLADE_BRAVE= registerSoundEvent("round_zero_blade_brave");
     public static final ResourceKey<JukeboxSong> ROUND_ZERO_BLADE_BRAVE_KEY = createSong("round_zero_blade_brave");
 
+    public static final Supplier<SoundEvent> ELEMENTS= registerSoundEvent("elements");
+    public static final ResourceKey<JukeboxSong> ELEMENTS_KEY = createSong("elements");
+
     public static final Supplier<SoundEvent> REBIRTH= registerSoundEvent("rebirth");
     public static final ResourceKey<JukeboxSong> REBIRTH_KEY = createSong("rebirth");
 

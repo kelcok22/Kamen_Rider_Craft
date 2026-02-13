@@ -211,6 +211,10 @@
   "item.kamenridercraft.round_zero_blade_brave.desc": "ホセフホースター - 『Round ZERO~BLADE BRAVE』",
   "item.kamenridercraft.round_zero_blade_brave_music_disc.desc": "ホセフホースター - 『Round ZERO~BLADE BRAVE』",
 
+  "item.kamenridercraft.elements_music_disc": "『ELEMENTS』レコード",
+  "item.kamenridercraft.elements.desc": "ホセフホースター - 『ELEMENTS』",
+  "item.kamenridercraft.elements_music_disc.desc": "ホセフホースター - 『ELEMENTS』",
+
   "item.kamenridercraft.rebirth_music_disc": "『rebirth』レコード",
   "item.kamenridercraft.rebirth.desc": "ホセフホースター - 『rebirth』",
   "item.kamenridercraft.rebirth_music_disc.desc": "ホセフホースター - 『rebirth』",
@@ -2639,6 +2643,7 @@
 "item.kamenridercraft.kaixa_mission_memory": "カイザミッションメモリー",
 "item.kamenridercraft.delta_mission_memory": "デルタミッションメモリー",
 "item.kamenridercraft.psyga_mission_memory": "サイガミッションメモリー",
+  "item.kamenridercraft.flying_attacker": "フライングアタッカー",
 "item.kamenridercraft.orga_mission_memory": "オーガミッションメモリー",
 "item.kamenridercraft.next_faiz_mission_memory": "ネクストファイズミッションメモリー",
 "item.kamenridercraft.next_kaixa_mission_memory": "ネクストカイザミッションメモリー",
@@ -2655,6 +2660,7 @@
   "kamenridercraft:kaixa_mission_memory.form": "フォーム: 基本フォーム",
   "kamenridercraft:delta_mission_memory.form": "フォーム: 基本フォーム",
   "kamenridercraft:psyga_mission_memory.form": "フォーム: 基本フォーム",
+  "kamenridercraft:flying_attacker.form": "フォーム: フライングアタッカー",
   "kamenridercraft:orga_mission_memory.form": "フォーム: 基本フォーム",
   "kamenridercraft:neo_alpa_mission_memory.form": "フォーム: 基本フォーム",
   "kamenridercraft:pyron_mission_memory.form": "フォーム: 基本フォーム",
@@ -4260,7 +4266,7 @@
 
   "item.kamenridercraft.solu_switch": "SOLUスイッチ",
   "item.kamenridercraft.core_switch": "コアスイッチ",
-  "item.kamenridercraft.rocket_switch_christmas_ver": "ロケットスイッチ(Christmas Ver.)",
+  "item.kamenridercraft.rocket_switch_christmas_ver": "No.1 ロケットスイッチクリアーバージョン",
   "item.kamenridercraft.super_rocket_switch": "ロケットスイッチスーパーワン",
   "item.kamenridercraft.super_drill_switch": "ドリルスイッチスーパースリー",
   "item.kamenridercraft.super_launcher_switch": "ランチャースイッチスーパーツー",
@@ -4549,8 +4555,8 @@
 	"item.kamenridercraft.golem_ring": "ゴーレムウィザードリング",
 	"item.kamenridercraft.white_garuda_ring": "ホワイトガルーダウィザードリング",
 	"item.kamenridercraft.cerberus_ring": "ケルベロスウィザードリング",
-	"item.kamenridercraft.garuda_ring_color_ver": "ガルーダウィザードリング(オリジナルカラーVer.)",
-	"item.kamenridercraft.kraken_ring_color_ver": "クラーケンウィザードリング(オリジナルカラーVer.)",
+	"item.kamenridercraft.garuda_ring_color_ver": "ガルーダウィザードリング(オリジナルカラーver.)",
+	"item.kamenridercraft.kraken_ring_color_ver": "クラーケンウィザードリング(オリジナルカラーver.)",
   "item.kamenridercraft.beast_engage_ring": "エンゲージウィザードリング(ビースト)",
   "item.kamenridercraft.chimarise_ring": "キマイライズウィザードリング",
   "item.kamenridercraft.beast_driver_on_ring": "ドライバーオンウィザードリング (ビースト)",
@@ -10590,7 +10596,7 @@
   "advancements.kamenridercraft.gavv.bake.description": "仮面ライダーベイクに変身",
   "advancements.kamenridercraft.gavv.bake.title": "「体なんなんだ？調べさせろ！」",
   "advancements.kamenridercraft.gavv.bitter_gavv.description": "仮面ライダービターガヴを倒す",
-  "advancements.kamenridercraft.gavv.bitter_gavv.title": "「この世で最強の生物を目指す者……らしいぜ！」",
+  "advancements.kamenridercraft.gavv.bitter_gavv.title": "「この世で最強の生物を目指す者…」",
   "advancements.kamenridercraft.gavv.blizzardsorbet.description": "ガヴ ブリザードソルベエフォームに変身",
   "advancements.kamenridercraft.gavv.blizzardsorbet.title": "愛♡スクリ～ム！",
   "advancements.kamenridercraft.gavv.caking.description": "ガヴ ケーキングフォームに変身",
@@ -11330,7 +11336,7 @@
   "advancements.kamenridercraft.zero_one.lucifer.description": "仮面ライダールシファーに変身",
   "advancements.kamenridercraft.zero_one.lucifer.title": "「ここからは私が楽園の創造主となる」",
   "advancements.kamenridercraft.zero_one.metalcluster_hopper.description": "ゼロワン メタルクラスターホッパーに変身",
-  "advancements.kamenridercraft.zero_one.metalcluster_hopper.title": "秘密資料",
+  "advancements.kamenridercraft.zero_one.metalcluster_hopper.title": "蝗害",
   "advancements.kamenridercraft.zero_one.metsuboujinrai.description": "仮面ライダー滅亡迅雷に変身",
   "advancements.kamenridercraft.zero_one.metsuboujinrai.title": "Your opinion has been Accepted",
   "advancements.kamenridercraft.zero_one.naki.description": "仮面ライダー亡を倒す",
@@ -11421,5 +11427,8 @@
   "advancements.kamenridercraft.zi-o.zonjis.title": "「令和は俺が作る」",
 
   "death.attack.rider_kick": "%1$sはライダーキックされた",
-  "death.attack.rider_kick.player": "%1$sは%2$と戦いながらライダーキックされた"
+  "death.attack.rider_kick.player": "%1$sは%2$と戦いながらライダーキックされた",
+
+  "death.attack.medal": "%1$sはおつりをもらっておいた",
+  "death.attack.medal.player": "%2$は%1$sに金を貸した"
 }
