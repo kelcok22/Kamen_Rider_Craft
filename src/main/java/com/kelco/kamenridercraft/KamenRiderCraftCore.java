@@ -90,6 +90,8 @@ public class KamenRiderCraftCore {
     public static List<Item> KUUGA_CHANGING_ITEM = new ArrayList<>();
     public static List<Item> KUUGA_PHONE = new ArrayList<>();
     public static List<Item> BLADE_CHANGING_ITEM = new ArrayList<>();
+    public static List<Item> GARREN_CHANGING_ITEM = new ArrayList<>();
+    public static List<Item> LEANGLE_CHANGING_ITEM = new ArrayList<>();
 
     public static List<Item> CLOCK_UP_ITEM = new ArrayList<>();
 
@@ -313,8 +315,40 @@ public class KamenRiderCraftCore {
                                     ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
                                     if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
                                         return 1;
-                                    } else if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_king") || Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_silver_king")) {
-                                        return 2;
+                                    }
+                                }
+                                return 0;
+                            }
+                        }
+                );
+            }
+
+            for (Item value : GARREN_CHANGING_ITEM) {
+                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else {
+                                if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.GARRENBUCKLE.get()) {
+                                    ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
+                                        return 1;
+                                    }
+                                }
+                                return 0;
+                            }
+                        }
+                );
+            }
+
+            for (Item value : LEANGLE_CHANGING_ITEM) {
+                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else {
+                                if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.LEANGLEBUCKLE.get()) {
+                                    ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
+                                        return 1;
                                     }
                                 }
                                 return 0;
