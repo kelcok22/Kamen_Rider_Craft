@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "caries",
+  "pattern": [
+	"XXX",
+	"CMY",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:granute_tooth"
+	},
+	"M": {
+	  "item": "kamenridercraft:uehouse_gochizo"
+	},
+    "Y": {
+		  "item": "kamenridercraft:poppingummy_gochizo_honey"
+    },
+    "C": {
+		  "item": "kamenridercraft:poppingummy_gochizo_peach"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:caries_boss_block"
+  }	
+}

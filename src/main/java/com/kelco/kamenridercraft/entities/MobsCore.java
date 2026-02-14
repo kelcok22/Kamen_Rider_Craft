@@ -1462,6 +1462,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> BOCCA_JALDAK_SPAWN_EGG = ITEMS.register("bocca_jaldak_spawn_egg",
             () -> new DeferredSpawnEggItem(BOCCA_JALDAK, 0xEDE7DA, 0x42E4ED, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<CariesEntity>> CARIES = MOBLIST.register("caries",
+            () -> EntityType.Builder.of(CariesEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":caries"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> CARIES_SPAWN_EGG = ITEMS.register("caries_spawn_egg",
+            () -> new DeferredSpawnEggItem(CARIES, 0xF1F1F1, 0x9500A2, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<NoxEntity>> NOX = MOBLIST.register("nox_mob",
             () -> EntityType.Builder.of(NoxEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":nox_mob"));
 

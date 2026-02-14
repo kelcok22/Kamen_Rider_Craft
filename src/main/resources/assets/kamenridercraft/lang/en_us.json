@@ -668,6 +668,8 @@
   "henshin.kamenridercraft.shiita":"<Shiita Stomach> Jeeb, will you stay with me?\n<Jeeb Stomach>§1 I won't ever leave you, Shiita",
   "henshin.kamenridercraft.lango":"<Lango Stomach> §4Don't get in my way",
   "henshin.kamenridercraft.bocca_jaldak":"<Bocca Jaldak> §bSo you are the remaining Granute Hunter?",
+  "henshin.kamenridercraft.caries":"Horror! Zuki!",
+  "henshin.kamenridercraft.caries_c3":"§5Horror! Destroy!",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
   "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up!",
@@ -9022,6 +9024,7 @@
   "entity.kamenridercraft.shiita_stomach": "Shiita Stomach",
   "entity.kamenridercraft.lango_stomach": "Lango Stomach",
   "entity.kamenridercraft.bocca_jaldak": "Bocca Jaldak",
+  "entity.kamenridercraft.caries": "Kamen Rider Caries",
 
   "entity.kamenridercraft.nox_mob": "Nox Knight",
 
@@ -9310,6 +9313,7 @@
   "item.kamenridercraft.shiita_stomach_spawn_egg": "Shiita Stomach Spawn Egg",
   "item.kamenridercraft.lango_stomach_spawn_egg": "Lango Stomach Spawn Egg",
   "item.kamenridercraft.bocca_jaldak_spawn_egg": "Bocca Jaldak Spawn Egg",
+  "item.kamenridercraft.caries_spawn_egg": "Kamen Rider Caries Spawn Egg",
 
   "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
 	"item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",
@@ -9651,6 +9655,7 @@
 "block.kamenridercraft.storious_boss_block": "Storious Boss Block",
   "block.kamenridercraft.eld_boss_block": "Eld Boss Block",
   "block.kamenridercraft.bocca_boss_block": "Bocca Jaldak Boss Block",
+  "block.kamenridercraft.caries_boss_block": "Caries Boss Block",
   "container.astroswitchPanel": "Astroswitch Rack",
 
   "tag.item.kamenridercraft.arsenal.all_melee": "Rider Melee Weapons",

@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Caries",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:caries",
+			"text": "Appears in:$Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br)Health: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#caries_boss_block)Caries Boss Block$(/l)$(br2)Special moves:$(li)Uses his $(l:gavv/riders/caries#c3)C3$(/l) form at under 100 health$(br2)Drops$(li)4-7 $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l)$(li)1 $(l:gavv/items/gochizo#terror_gochizo)Terror Gochizo$(/l)$(li)1 $(l:gavv/items/gochizo#hexenheim_gochizo)Hexenheim Gochizo"
+		}
+	]
+}

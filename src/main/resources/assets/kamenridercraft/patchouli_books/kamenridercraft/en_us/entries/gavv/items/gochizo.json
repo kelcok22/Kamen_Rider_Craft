@@ -494,7 +494,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:hexenheim_gochizo",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:gavv/mobs/caries)Kamen Rider Caries"
       },
       {
         "type": "patchouli:text",
@@ -702,7 +702,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:terror_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gavv/mobs/caries)Kamen Rider Caries"
 		},
 		{
 			"type": "patchouli:text",

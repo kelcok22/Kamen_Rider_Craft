@@ -1,0 +1,42 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:terror_gochizo"
+				}
+			]
+		},
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:hexenheim_gochizo"
+          }
+        ]
+      },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:blank_gochizo",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": {
+				  "min": 4,
+				  "max": 7
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

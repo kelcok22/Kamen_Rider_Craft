@@ -884,6 +884,7 @@ public class RiderTabs {
             event.accept(MobsCore.GLOTTA_STOMACH_SPAWN_EGG);
             event.accept(MobsCore.LANGO_STOMACH_SPAWN_EGG);
             event.accept(MobsCore.BOCCA_JALDAK_SPAWN_EGG);
+            event.accept(MobsCore.CARIES_SPAWN_EGG);
 
             event.accept(MobsCore.NOX_SPAWN_EGG);
 
