@@ -530,6 +530,10 @@ public class Zeztz_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
+    public static final DeferredItem<Item> TRIPLE_ZEZTZER = ITEMS.register("triple_zeztzer",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
+                    .ChangeRepairItem(CODE_CAPSEM.get()));
+
     public static final DeferredItem<Item> BREAKAM_BUSTER = ITEMS.register("breakam_buster",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
