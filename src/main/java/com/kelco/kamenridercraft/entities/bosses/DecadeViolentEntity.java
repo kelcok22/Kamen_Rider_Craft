@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.entities.bosses;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;

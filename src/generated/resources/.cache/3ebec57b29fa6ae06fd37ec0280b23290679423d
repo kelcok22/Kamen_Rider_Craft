@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-01T21:57:28.3482477	Item Models: kamenridercraft
+// 1.21.1	2026-02-14T22:31:16.0392498	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -191,6 +191,7 @@ dfd3d930ccdc038fdb5bd1893a7181932ffe6468 assets/kamenridercraft/models/item/driv
 2f18e6dd28a6a855060ae0c7c02f4b96c4b1ad92 assets/kamenridercraft/models/item/drive_ride_chemy_card.json
 426b4fcdb718ca395876918bfef9c122203c5e71 assets/kamenridercraft/models/item/drive_system_car.json
 abb6e2b1747cc1e8b83b123b134e5200f3bf0b82 assets/kamenridercraft/models/item/drive_tridoron_ride_chemy_card.json
+78c4c5c881189031615ecf4af61cc9215d6ad2e6 assets/kamenridercraft/models/item/dualmare_capsem.json
 b3d8611ef8a7262b6462b15ec0fa086b1b59d68c assets/kamenridercraft/models/item/eldoradriver.json
 6ff23ed0ddc47cc189f2e2d0d5d5628cb81864a7 assets/kamenridercraft/models/item/eldoradriver_eld.json
 d198a9fb1c4edd8ffbdb6d721a1fe1fd02e56bea assets/kamenridercraft/models/item/eldragon_chemy_card.json
