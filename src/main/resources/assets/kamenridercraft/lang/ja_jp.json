@@ -668,6 +668,8 @@
   "henshin.kamenridercraft.shiita":"<シータ・ストマック> ジープ、一緒にいてね？\n<ジープ・ストマック>§1 私たちが赤ガヴなんかに…",
   "henshin.kamenridercraft.lango":"<ランゴ・ストマック> §4邪魔をするな",
   "henshin.kamenridercraft.bocca_jaldak":"<ボッカ・ジャルダック> §b最後のグラニュートハンターはお前か？",
+  "henshin.kamenridercraft.caries":"ホラー！ズキー！",
+  "henshin.kamenridercraft.caries_c3":"§5ホラー！デストロイ！",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
   "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up！",
@@ -8529,6 +8531,7 @@
   "item.kamenridercraft.breakam_zeztzer_scythe": "ブレイカムゼッツァー(サイスモード)",
   "item.kamenridercraft.inazuma_blaster": "イナズマブラスター",
   "item.kamenridercraft.inazuma_blaster_greatsword": "イナズマブラスター(グレートソードモード)",
+  "item.kamenridercraft.triple_zeztzer": "トリプルゼッツァー",
   "item.kamenridercraft.breakam_buster": "ブレイカムバスター",
   "item.kamenridercraft.breakam_breaker_blade": "ブレイカムブレイカー(ブレードモード)",
   "item.kamenridercraft.breakam_breaker_knuckle": "ブレイカムブレイカー(ナックルモード)",
@@ -9018,6 +9021,7 @@
   "entity.kamenridercraft.shiita_stomach": "シータ・ストマック",
   "entity.kamenridercraft.lango_stomach": "ランゴ・ストマック",
   "entity.kamenridercraft.bocca_jaldak": "ボッカ・ジャルダック",
+  "entity.kamenridercraft.caries": "仮面ライダーカリエス",
 
   "entity.kamenridercraft.nox_mob": "ノクスナイト",
 
@@ -9306,6 +9310,7 @@
   "item.kamenridercraft.shiita_stomach_spawn_egg": "シータ・ストマックスポーンエッグ",
   "item.kamenridercraft.lango_stomach_spawn_egg": "ランゴ・ストマックスポーンエッグ",
   "item.kamenridercraft.bocca_jaldak_spawn_egg": "ボッカ・ジャルダックスポーンエッグ",
+  "item.kamenridercraft.caries_spawn_egg": "仮面ライダーカリエススポーンエッグ",
 
   "item.kamenridercraft.nox_spawn_egg": "ノクスナイトスポーンエッグ",
 
@@ -9649,6 +9654,7 @@
 "block.kamenridercraft.storious_boss_block": "仮面ライダーストリウスボスブロック",
   "block.kamenridercraft.eld_boss_block": "仮面ライダーエルドボスブロック",
   "block.kamenridercraft.bocca_boss_block": "ボッカ・ジャルダックボスブロック",
+  "block.kamenridercraft.caries_boss_block": "仮面ライダーカリエスボスブロック",
   "container.astroswitchPanel": "アストロスイッチパネル",
 
   "tag.item.kamenridercraft.arsenal.all_melee": "ライダー近距離武器",

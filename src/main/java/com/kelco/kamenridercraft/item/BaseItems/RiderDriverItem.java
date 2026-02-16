@@ -152,9 +152,19 @@ public class RiderDriverItem extends RiderArmorItem {
 
             if (tag.getDouble("rider_kick_cooldown") >= 1) {
                 //this.riderKickCooldown--;
-                tag.putDouble("rider_kick_cooldown",tag.getDouble("rider_kick_cooldown")-1);
-                if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
-                    play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
+                boolean canRiderKick = false;
+                for (int n = 0; n < Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                    if (isTransformed(player) && form.allowsRiderKick()) {
+                        canRiderKick = true;
+                        break;
+                    }
+                }
+                if (canRiderKick) {
+                    tag.putDouble("rider_kick_cooldown", tag.getDouble("rider_kick_cooldown") - 1);
+                    if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
+                        play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
+                }
             }
 
             if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
