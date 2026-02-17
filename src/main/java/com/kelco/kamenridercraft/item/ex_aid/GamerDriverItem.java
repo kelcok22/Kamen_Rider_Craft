@@ -152,7 +152,6 @@ public class GamerDriverItem extends RiderDriverItem {
 		}
 		return riderName+get_Form_Item(itemstack,1).getFormName(false);
 
-
 	}
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {

@@ -68,7 +68,7 @@ public class GhostDriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
 			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
@@ -121,7 +121,7 @@ public class GhostDriverItem extends RiderDriverItem {
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot== EquipmentSlot.HEAD) {
-			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
+			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_FlyingModel(this.Rider));
 			}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model(this.Rider));
 

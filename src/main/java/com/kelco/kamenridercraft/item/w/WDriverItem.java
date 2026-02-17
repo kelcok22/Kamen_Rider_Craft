@@ -90,7 +90,7 @@ public class WDriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			
 			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();

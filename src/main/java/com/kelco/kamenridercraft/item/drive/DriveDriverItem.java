@@ -87,7 +87,7 @@ public class DriveDriverItem extends RiderDriverItem {
 	@Override
 	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num)
 	{
-		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 
 		if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()
 		|| Objects.equals(riderName, "drive") &get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT.get()){

@@ -85,7 +85,7 @@ public class FourzeDriverItem extends RiderDriverItem {
 	@Override
 	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num)
 	{
-		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 		if (num == 1){
 			if (get_Form_Item(itemstack,1)!= Fourze_Rider_Items.BLANK_CIRCLE_ASTROSWITCH.get()&get_Form_Item(itemstack,1)!=null){
 				return riderName + get_Form_Item(itemstack, 1).getFormName(fly);
@@ -188,7 +188,7 @@ public class FourzeDriverItem extends RiderDriverItem {
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot==EquipmentSlot.CHEST){
-			if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
+			if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 5).get_FlyingModel(this.Rider));
 			}
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 5).get_Model(this.Rider));

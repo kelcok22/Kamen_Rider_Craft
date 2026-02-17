@@ -27,7 +27,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 	{
 		String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 
-		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
@@ -63,7 +63,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
             }
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers.geo.json");
         }
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying) {
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel("gotchard"));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model("gotchard"));
