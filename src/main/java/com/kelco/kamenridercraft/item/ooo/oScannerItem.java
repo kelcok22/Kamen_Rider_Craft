@@ -48,7 +48,7 @@ public class oScannerItem extends BaseItem {
 				if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_taka") &
                         Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_kujaku") &
                         Objects.equals(RiderDriverItem.get_Form_Item(Belt, 3).getFormName(false), "_condor")) {
-					player.addEffect(new MobEffectInstance(Effect_core.FLYING,400,0,true,false));
+					player.addEffect(new MobEffectInstance(Effect_core.GLIDE,40,0,true,false));
 
 				} else  if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_lion") &
                         Objects.equals(RiderDriverItem.get_Form_Item(Belt, 2).getFormName(false), "_tora") &

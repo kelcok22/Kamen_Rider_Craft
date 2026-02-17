@@ -144,38 +144,25 @@ public class RiderDriverItem extends RiderArmorItem {
         return form_double ;
     }
 
-    public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-
-        // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
+    public void riderKickTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
         if (stack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-
+            boolean canRiderKick = false;
+            for (int n = 0; n < Num_Base_Form_Item; n++) {
+                RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                if (isTransformed(player) && form.allowsRiderKick()) {
+                    player.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK,10,0,true,false));
+                    canRiderKick = true;
+                    break;
+                }
+            }
             if (tag.getDouble("rider_kick_cooldown") >= 1) {
                 //this.riderKickCooldown--;
-                boolean canRiderKick = false;
-                for (int n = 0; n < Num_Base_Form_Item; n++) {
-                    RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                    if (isTransformed(player) && form.allowsRiderKick()) {
-                        canRiderKick = true;
-                        break;
-                    }
-                }
                 if (canRiderKick) {
                     tag.putDouble("rider_kick_cooldown", tag.getDouble("rider_kick_cooldown") - 1);
                     if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
                         play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
                 }
-            }
-
-            if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
-            if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
-            if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
-            if (!isTransformed(player)) tag.putDouble("render_type", 0);
-
-            if (!level.isClientSide) {
-                if (tag.getDouble("is_transforming") != 0)
-                    tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
-                if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
             }
             if (tag.getDouble("use_ability") != 0) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
@@ -193,13 +180,18 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getBoolean("rider_kicking")) {
                 tag.putDouble("rider_kick_tick",tag.getDouble("rider_kick_tick")+1);
                 if (tag.getDouble("rider_kick_tick") == 1) {
-                    player.push(0, 1.25, 0);
+                    Vec3 initialVec = player.getDeltaMovement();
+                    Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
+                    player.setDeltaMovement(climbVec.scale(0.97D));
+                   // player.push(0, 1.25, 0);
                     player.hurtMarked = true;
                     level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
                 } else if (tag.getDouble("rider_kick_tick") == 21) {
-                 player.setDeltaMovement(0, 0, 0);
-                    Vec3 look = new Vec3(player.getLookAngle().x * 0.1, player.getLookAngle().y * 0.04, player.getLookAngle().z * 0.1).scale(20);
-                    player.push(look);
+                    player.setDeltaMovement(0, 0, 0);
+                    Double y =player.getLookAngle().y;
+                    if (y<0.5)y=0.05d;
+                    Vec3 look = new Vec3(player.getLookAngle().x * 0.1, y*0.04, player.getLookAngle().z * 0.1).scale(20);
+                    player.setDeltaMovement(look.scale(0.97D));
                     player.hurtMarked = true;
                 }
                 if (tag.getDouble("rider_kick_tick") >= 21) {
@@ -225,15 +217,37 @@ public class RiderDriverItem extends RiderArmorItem {
                         if (stack.getItem() instanceof RiderDriverItem) {
                             Consumer<CompoundTag> data = form -> {
                                 form.putBoolean("rider_kicking", false);
-                                form.putDouble("rider_kick_cooldown",200);
+                                form.putDouble("rider_kick_cooldown", 200);
                                 form.putDouble("rider_kick_tick", 0);
                             };
                             CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                         }
-
                     }
                 }
+                    }
+        }
+    }
+
+
+    public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
+
+        // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
+        if (stack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+
+            if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
+            if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
+            if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
+            if (!isTransformed(player)) tag.putDouble("render_type", 0);
+
+            if (!level.isClientSide) {
+                if (tag.getDouble("is_transforming") != 0)
+                    tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
+                if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
             }
+
+
+
 
         } else {
             set_Upadete_Form(stack);
@@ -432,7 +446,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));

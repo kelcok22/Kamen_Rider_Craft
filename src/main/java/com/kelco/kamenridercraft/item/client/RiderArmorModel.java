@@ -57,6 +57,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     @Override
     public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
 
+
         GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
         GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
         GeoBone b_wheel= this.getAnimationProcessor().getBone("b_wheel");

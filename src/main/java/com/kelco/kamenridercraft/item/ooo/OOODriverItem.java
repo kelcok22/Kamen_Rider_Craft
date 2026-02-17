@@ -87,7 +87,7 @@ public class OOODriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
 
@@ -143,7 +143,7 @@ public class OOODriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST)num=2;
 		if (slot == EquipmentSlot.LEGS)num=3;
 
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo.geo.json");

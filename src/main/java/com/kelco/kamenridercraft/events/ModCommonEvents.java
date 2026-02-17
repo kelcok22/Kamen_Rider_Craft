@@ -59,6 +59,7 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
@@ -134,13 +135,22 @@ public class ModCommonEvents {
 
             if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(Effect_core.CLIMBING)) {
                                 if ( entity.horizontalCollision) {
-                                    entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
-                }
+                                  //  entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
+                                    Vec3 initialVec = entity.getDeltaMovement();
+                                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(1+entity.getEffect(Effect_core.CLIMBING).getAmplifier()), initialVec.z);
+                                    entity.setDeltaMovement(climbVec.scale(0.97D));
+                                }
             }
+                if (event.getEntity()instanceof LivingEntity entity && event.getEntity() instanceof Player){
+                    if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
+                        belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
+                    }
+                }
 
 			if (event.getEntity()instanceof LivingEntity entity && !(event.getEntity() instanceof Player)){
 				if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
 					belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
+                    belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
 					belt.giveEffects(entity);
 				}
 			}

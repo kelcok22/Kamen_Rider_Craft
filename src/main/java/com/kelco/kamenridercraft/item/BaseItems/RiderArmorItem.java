@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -41,6 +42,22 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     public RiderArmorItem(Holder<ArmorMaterial> armorMaterial, Type type, Properties properties) {
         super(armorMaterial, type, properties.stacksTo(1).durability(type ==Type.BOOTS?600:500));
        // ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
+    }
+
+    @Override
+    public boolean canElytraFly(ItemStack stack, net.minecraft.world.entity.LivingEntity entity) {
+        return entity.hasEffect(Effect_core.GLIDE);
+    }
+
+    @Override
+    public boolean elytraFlightTick(ItemStack stack, net.minecraft.world.entity.LivingEntity entity, int flightTicks) {
+        if (!entity.level().isClientSide) {
+            int nextFlightTick = flightTicks + 1;
+            if (nextFlightTick % 10 == 0) {
+                entity.gameEvent(net.minecraft.world.level.gameevent.GameEvent.ELYTRA_GLIDE);
+            }
+        }
+        return true;
     }
 
     @Override
