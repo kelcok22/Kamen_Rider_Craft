@@ -26,7 +26,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:poppingummy_gochizo_peach",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -39,7 +39,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:poppingummy_gochizo_honey",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -52,7 +52,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:poppingummy_gochizo_muscat",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:zakuzakuchips_gochizo_garlic",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -130,7 +130,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:zakuzakuchips_gochizo_barbecue",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:fuwamallow_gochizo_lemon",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -208,7 +208,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:chocodan_gochizo_strawberry",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -221,7 +221,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:chocodan_gochizo_matcha",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -273,7 +273,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gurucan_gochizo_matcha_milk",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
       {
         "type": "patchouli:text",
@@ -286,7 +286,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gurucan_gochizo_orange",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",
@@ -507,7 +507,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:uehouse_gochizo",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by eating cake with a $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizo$(/l) in your inventory"
       },
 		{
 			"type": "patchouli:text",

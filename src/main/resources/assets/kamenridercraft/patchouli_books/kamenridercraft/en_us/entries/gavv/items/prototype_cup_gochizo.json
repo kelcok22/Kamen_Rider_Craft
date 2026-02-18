@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Converts into a $(l:gavv/items/gochizo#blizzardsorbei_gochizo)Blizzardsorbei Gochizo$(/l) after eating $(l:misc/items/foods#icepop)Ice Pops$(/l)$(br2)Converts into a $(l:gavv/items/gochizo#frappeis_gochizo)Frappeis Gochizo$(/l) after drinking $(l:misc/items/foods#coffee)Coffee$(/l) or eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l)$(br2)Converts into a $(l:gavv/items/gochizo#puddinte_gochizo)Puddinte Gochizo$(/l) after eating $(l:misc/items/foods#pudding)Pudding$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Converts into a $(l:gavv/items/gochizo#blizzardsorbei_gochizo)Blizzardsorbei Gochizo$(/l) after eating $(l:misc/items/foods#icepop)Ice Pops$(/l)$(br2)Converts into a $(l:gavv/items/gochizo#frappeis_gochizo)Frappeis Gochizo$(/l) after drinking $(l:misc/items/foods#coffee)Coffee$(/l) or eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l)$(br2)Converts into a $(l:gavv/items/gochizo#puddinte_gochizo)Puddinte Gochizo$(/l) after eating $(l:misc/items/foods#pudding)Pudding$(/l)$(br2)Converts into a $(l:gavv/items/gochizo#uehouse_gochizo)Uehouse Gochizo$(/l) after eating cake"
 		},
 		{
 			"type": "patchouli:crafting",

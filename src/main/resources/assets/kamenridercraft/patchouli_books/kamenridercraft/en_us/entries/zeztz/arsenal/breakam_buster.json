@@ -2,7 +2,7 @@
 	"name": "Breakam Buster",
 	"icon": "kamenridercraft:breakam_buster",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

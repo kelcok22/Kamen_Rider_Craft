@@ -259,6 +259,12 @@
         "anchor": "bocca_boss_block",
         "recipe": "kamenridercraft:gavv/bocca_boss_block",
         "text": "Mine this block to summon $(l:gavv/mobs/bocca_jaldak)Bocca Jaldak$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "anchor": "caries_boss_block",
+        "recipe": "kamenridercraft:gavv/caries_boss_block",
+        "text": "Mine this block to summon $(l:gavv/mobs/caries)Kamen Rider Caries$(/l)"
       }
 	]
 }
