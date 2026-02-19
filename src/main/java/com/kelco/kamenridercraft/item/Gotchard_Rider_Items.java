@@ -1,8 +1,5 @@
 package com.kelco.kamenridercraft.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
@@ -33,6 +30,9 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Gotchard_Rider_Items {
 
@@ -1972,7 +1972,7 @@ public class Gotchard_Rider_Items {
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_RIDE_CHEMY_CARD = ITEMS.register("faiz_blaster_ride_chemy_card",
-			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),"","legend","legendriver_belt_l",
+			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),"_faiz_blaster","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -1983,7 +1983,7 @@ public class Gotchard_Rider_Items {
 					.setBaseSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get())
 					.setSuperSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get(), (RiderFormChangeItem) Faiz_Rider_Items.FAIZ_AXEL_MISSION_MEMORY.get())
 					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2).IsGlowing()
-					.ChangeRiderName("faiz_blaster").ChangeModel("faiz.geo.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BLADE_KING_RIDE_CHEMY_CARD = ITEMS.register("blade_king_ride_chemy_card",
 			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),"","legend","legendriver_belt_l",
