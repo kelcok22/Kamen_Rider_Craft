@@ -60,6 +60,7 @@ public class RiderDriverItem extends RiderArmorItem {
     private Boolean A1 = false;
 
     public int Unlimited_Textures = 0;
+    public int Unlimited_Belt_Textures = 0;
 
     public Boolean Has_Inventory = false;
 

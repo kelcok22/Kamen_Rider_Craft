@@ -34,6 +34,12 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                         belt.getUnlimitedTextures(livingEntity.getItemBySlot(EquipmentSlot.FEET), RIDER, belt.Rider, n + 1)+".png")));
                 }
             }
+            if (belt.Unlimited_Belt_Textures !=0&equipmentSlot==EquipmentSlot.FEET){
+                for (int n = 0; n < belt.Unlimited_Belt_Textures; n++) {
+                    addRenderLayer(new RiderRenderLayer<>(this, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/armor/belts/"+
+                            belt.getUnlimitedTextures(livingEntity.getItemBySlot(EquipmentSlot.FEET), RIDER, belt.Rider, n + 1)+".png")));
+                }
+            }
 
         }
         RIDER =  livingEntity;
