@@ -1,13 +1,12 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.faiz.FaizAxelItem;
 import com.kelco.kamenridercraft.item.faiz.FaizDriverItem;
 import com.kelco.kamenridercraft.item.faiz.MuezDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -53,7 +52,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+			}.IsBeltGlowing().IsGlowing().ChangeBeltModel("geo/faiz_belt.geo.json").AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_kaixa","next_kaixa_driver_belt_a",
@@ -98,7 +97,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()).addAlternative(NEXT_FAIZ_AXEL_MISSION_MEMORY.get()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
+			}.IsBeltGlowing().IsGlowing().ChangeBeltModel("geo/faiz_axel_belt.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()).addAlternative(NEXT_FAIZ_AXEL_MISSION_MEMORY.get()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_blaster","faiz","faiz_driver_belt_b",
@@ -115,7 +114,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.ChangeModel("faiz.geo.json").IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+			}.ChangeModel("faiz.geo.json").ChangeBeltModel("geo/faiz_belt.geo.json").IsBeltGlowing().IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_GOLD_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_gold_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_gold_blaster","faiz","faiz_driver_belt_g_b",
@@ -132,7 +131,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.ChangeModel("faiz.geo.json").IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+			}.ChangeModel("faiz.geo.json").ChangeBeltModel("geo/faiz_belt.geo.json").IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KAIXA_MISSION_MEMORY = ITEMS.register("kaixa_mission_memory",
@@ -351,6 +350,8 @@ public class Faiz_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_SHOT = ITEMS.register("faiz_shot",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+	public static final DeferredItem<Item> FAIZ_AXEL = ITEMS.register("faiz_axel",
+			() -> new FaizAxelItem(new Item.Properties()).AddToList(KamenRiderCraftCore.FAIZ_AXEL).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 	public static final DeferredItem<Item> FAIZ_BLASTER = ITEMS.register("faiz_blaster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 

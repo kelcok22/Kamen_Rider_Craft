@@ -18,7 +18,8 @@ import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
-import com.kelco.kamenridercraft.init.*;
+import com.kelco.kamenridercraft.init.ModMenus;
+import com.kelco.kamenridercraft.init.RiderPotPattern;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -27,13 +28,14 @@ import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
-import com.kelco.kamenridercraft.network.payload.*;
+import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
+import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
+import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.world.attributeGenerator;
-
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -47,11 +49,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.client.event.*;
-
-import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -62,6 +62,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -89,6 +90,7 @@ public class KamenRiderCraftCore {
 
     public static List<Item> KUUGA_CHANGING_ITEM = new ArrayList<>();
     public static List<Item> KUUGA_PHONE = new ArrayList<>();
+    public static List<Item> FAIZ_AXEL = new ArrayList<>();
     public static List<Item> BLADE_CHANGING_ITEM = new ArrayList<>();
     public static List<Item> GARREN_CHANGING_ITEM = new ArrayList<>();
     public static List<Item> LEANGLE_CHANGING_ITEM = new ArrayList<>();
@@ -297,6 +299,25 @@ public class KamenRiderCraftCore {
                                         }
                                     }
 
+                                    return 0;
+                                }
+                                return 0;
+                            }
+                            //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+                        }
+                );
+            }
+            for (Item item : FAIZ_AXEL) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else {
+                                p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                                if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER.get()) {
+                                    ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                                    if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "faiz_driver_belt_a"))
+                                        return 1;
+                                } else {
                                     return 0;
                                 }
                                 return 0;

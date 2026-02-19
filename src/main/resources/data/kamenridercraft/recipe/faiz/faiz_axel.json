@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "faiz_gear",
+  "pattern": [
+	"RRI",
+	"XIC",
+	"RRI"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:faiz_axel_mission_memory"
+	},
+	"R": {
+	  "item": "minecraft:redstone"
+	},
+	  "I": {
+		  "item": "minecraft:iron_ingot"
+	  },
+	"C": {
+	  "item": "kamenridercraft:rider_circuit"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:faiz_axel"
+  }	
+}

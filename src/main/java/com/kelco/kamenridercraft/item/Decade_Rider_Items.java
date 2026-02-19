@@ -812,7 +812,7 @@ public class Decade_Rider_Items {
 
 
 	public static final DeferredItem<Item> FAIZ_AXEL_CARD = ITEMS.register("faiz_axel_card",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_axel","decade","decadriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_axel","decade","decadriver_belt_faiz_axel",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
@@ -824,7 +824,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/decadriver_belt_faiz_axel.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BLADE_JACK_CARD = ITEMS.register("blade_jack_card",

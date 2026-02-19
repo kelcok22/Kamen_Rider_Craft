@@ -4,8 +4,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.MiridewatchHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RidewatchHolderGuiMenu;
@@ -471,7 +471,7 @@ public class Zi_O_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .IsGlowing().IsBeltGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .IsGlowing().IsBeltGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt_faiz_axel.geo.json"));
 
     public static final DeferredItem<Item> FAIZ_RIDEWATCH = ITEMS.register("faiz_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_faiz", "geiz", "ziku_driver_geiz_belt_faiz",
