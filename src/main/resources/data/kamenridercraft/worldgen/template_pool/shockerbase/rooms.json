@@ -15,6 +15,15 @@
     },{
       "weight": 1,
       "element": {
+        "location": "kamenridercraft:shockerbase/rooms/room_bath",
+
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },{
+      "weight": 1,
+      "element": {
         "location": "kamenridercraft:shockerbase/rooms/room_555",
 
         "processors": "minecraft:empty",
