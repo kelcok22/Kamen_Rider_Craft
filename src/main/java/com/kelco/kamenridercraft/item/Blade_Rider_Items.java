@@ -148,7 +148,7 @@ public class Blade_Rider_Items {
 			}.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_silver_king", "blade", "blay_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_silver_king", "blade", "blay_buckle_king_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
@@ -159,7 +159,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).ChangeModel("blade_king.geo.json").addNeedItem(ABSORB_CAPRICORN.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CHANGE_STAG = ITEMS.register("change_stag",
@@ -232,47 +232,6 @@ public class Blade_Rider_Items {
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
 			}.IsGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
-
-//	public static final DeferredItem<Item> ULTIMATE_SPECIAL_TURBO = ITEMS.register("ultimate_turbo",
-//			() -> new RiderFormChangeItem(new Item.Properties(),"_ultimate_form_special_turbo","taiyaki_master","blank",
-//					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-//					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-//					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
-//					,new MobEffectInstance(Effect_core.FIRE_SLASH, 40, 1,true,false)
-//					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-//				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-//					super.OnTransformation(itemstack, player);
-//					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-//							player.getX(), player.getY()+1,
-//							player.getZ(), 100, 0, 0, 0, 1);
-//				}
-//			}.SetShowUnder());
-//
-//	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
-//			() -> new RiderFormChangeItem(new Item.Properties(),"_ultimate_form","taiyaki_master","blank",
-//					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
-//					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-//					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-//				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-//					super.OnTransformation(itemstack, player);
-//					((ServerLevel) player.level()).sendParticles(ParticleTypes.RAIN,
-//							player.getX(), player.getY()+1,
-//							player.getZ(), 100, 0, 0, 0, 1);
-//				}
-//			}.addSwitchForm(ULTIMATE_SPECIAL_TURBO.get()).SetShowUnder());
-//
-//	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
-//			() -> new RiderFormChangeItem(new Item.Properties(), "", "chalice", "chalice_rouzer_belt",
-//					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-//					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
-//					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)){
-//				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-//					super.OnTransformation(itemstack, player);
-//					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-//							player.getX(), player.getY()+1,
-//							player.getZ(), 100, 0, 0, 0, 1);
-//				}
-//			}.addAlternative(TAIYAKI_MASTER.get()).addAlternative(ULTIMATE_SPECIAL_TURBO.get()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ultimate_form","taiyaki_master","blank",
@@ -402,7 +361,7 @@ public class Blade_Rider_Items {
 			}.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_SPIDER_PROPER_SEAL = ITEMS.register("change_spider_proper_seal",
-			() -> new RiderFormChangeItem(new Item.Properties(), "", "leangle", "leangle_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(), "_proper_seal", "leangle", "leangle_buckle_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -411,7 +370,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.IsGlowing().ChangeModel("leangle.geo.json").AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> STAB_BEE = ITEMS.register("stab_bee",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
