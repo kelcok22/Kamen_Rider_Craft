@@ -2819,7 +2819,8 @@
 
   "kamenridercraft:change_beetle.form": "Form: Base Form",
   "kamenridercraft:change_stag.form": "Form: Base Form",
-  "kamenridercraft:change_spider.form": "Form: Base Form",
+  "kamenridercraft:change_spider.form": "Form: Base Form (Spider Undead Possessed)",
+  "kamenridercraft:change_spider_proper_seal.form": "Form: Base Form",
   "kamenridercraft:change_mantis.form": "Form: Base Form",
 
   "kamenridercraft:fusion_eagle.form": "Form: Jack Form",
