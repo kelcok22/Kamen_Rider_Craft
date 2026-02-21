@@ -111,6 +111,11 @@
                     "type": "minecraft:item",
                     "name": "kamenridercraft:laser_raise_bazooka",
                     "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:laser_raise_bazooka",
+                    "weight": 1
                   }
                 ]
               }
@@ -223,7 +228,100 @@
                   {
                     "type": "minecraft:item",
                     "name": "kamenridercraft:dark_ring",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:uzai_belt",
                     "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "max": 7.0,
+                          "min": 3.0
+                        },
+                        "function": "minecraft:set_count"
+                      }
+                    ],
+                    "name": "kamenridercraft:proto_vistamp",
+                    "weight": 10
+                  }
+                ],
+                "rolls": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:blood_vade_vistamp",
+                    "weight": 5
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "max": 7.0,
+                          "min": 3.0
+                        },
+                        "function": "minecraft:set_count"
+                      }
+                    ],
+                    "name": "kamenridercraft:blank_ghost_eyecon",
+                    "weight": 10
+                  }
+                ],
+                "rolls": {
+                  "type": "minecraft:uniform",
+                  "max": 2.0,
+                  "min": 1.0
+                }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "kamenridercraft:new_ore_ghost_eyecon",
+                    "weight": 5
                   }
                 ]
               }

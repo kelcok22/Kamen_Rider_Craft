@@ -1,0 +1,17 @@
+{
+  "name": "kamenridercraft:city/castle_doran_hidden",
+  
+  "fallback": "minecraft:empty",
+  "elements": [
+
+    {
+      "weight": 8,
+      "element": {
+        "location": "kamenridercraft:city/decor/castle_doran_hidden",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
