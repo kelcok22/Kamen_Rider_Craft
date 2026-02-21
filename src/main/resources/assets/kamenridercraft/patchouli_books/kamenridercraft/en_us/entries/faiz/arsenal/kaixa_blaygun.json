@@ -2,7 +2,7 @@
 	"name": "Kaixa Blaygun",
 	"icon": "kamenridercraft:kaixa_blaygun",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

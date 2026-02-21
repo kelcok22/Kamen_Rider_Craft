@@ -2,7 +2,7 @@
 	"name": "Axel Ray Gun",
 	"icon": "kamenridercraft:axel_ray_gun",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 13,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",

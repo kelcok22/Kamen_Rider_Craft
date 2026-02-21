@@ -2,7 +2,7 @@
 	"name": "Delta Blaster",
 	"icon": "kamenridercraft:delta_blaster",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Kaixa Shot",
 	"icon": "kamenridercraft:kaixa_shot",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Faiz Blaster",
 	"icon": "kamenridercraft:faiz_blaster",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

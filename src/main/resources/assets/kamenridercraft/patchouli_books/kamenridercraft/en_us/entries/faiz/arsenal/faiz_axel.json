@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Axel",
+	"icon": "kamenridercraft:faiz_axel",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Used to access Faiz's $(l:faiz/riders/faiz#axel)Axel Form$(/l)$(br2)Used to access Next Faiz's $(l:faiz/riders/next_faiz#axel)Axel Form$(/l)$(br2)Used to access Next Kaixa's $(l:faiz/riders/next_kaixa#axel)Axel Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_axel"
+		}
+	]
+}

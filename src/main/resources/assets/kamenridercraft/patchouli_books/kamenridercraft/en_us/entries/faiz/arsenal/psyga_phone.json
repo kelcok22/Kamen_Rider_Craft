@@ -1,8 +1,8 @@
 {
-	"name": "Psyga Tonfa Edge",
-	"icon": "kamenridercraft:psyga_tonfa_edge",
+	"name": "Psyga Phone",
+	"icon": "kamenridercraft:psyga_phone",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:faiz/psyga_tonfa_edge"
+			"recipe": "kamenridercraft:faiz/psyga_phone"
 		}
 	]
 }

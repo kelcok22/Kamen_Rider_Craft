@@ -2,7 +2,7 @@
 	"name": "Kaixa Phone",
 	"icon": "kamenridercraft:kaixa_phone",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

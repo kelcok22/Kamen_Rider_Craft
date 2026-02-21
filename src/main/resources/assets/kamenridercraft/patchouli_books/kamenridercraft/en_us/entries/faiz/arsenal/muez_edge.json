@@ -2,7 +2,7 @@
 	"name": "Muez Edge",
 	"icon": "kamenridercraft:muez_edge",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 12,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",
