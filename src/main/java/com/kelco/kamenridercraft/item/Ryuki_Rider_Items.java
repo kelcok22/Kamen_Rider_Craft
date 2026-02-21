@@ -1,12 +1,11 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ryuki.AdventCardItem;
 import com.kelco.kamenridercraft.item.ryuki.AdventDeckItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -123,6 +122,25 @@ public class Ryuki_Rider_Items {
 				}
 			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
+	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT_SIC = ITEMS.register("goldphoenix_advent_sic",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_sic","odin","v_buckle_belt_odin",
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
+					new MobEffectInstance (MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 200, 0, 0, 0, 0.1);
+				}
+			}.has_basic_model().model_has_different_name("goldpheonix_advent"));
+
 	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT = ITEMS.register("goldphoenix_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","odin","v_buckle_belt_odin",
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
@@ -139,7 +157,7 @@ public class Ryuki_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			}.addSwitchForm(GOLDPHOENIX_ADVENT_SIC.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DESTWILDER_ADVENT = ITEMS.register("destwilder_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","tiger","v_buckle_belt_tiger",
