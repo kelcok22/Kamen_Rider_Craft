@@ -1,7 +1,7 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:faiz_axel_mission_memory"
+	  "id": "kamenridercraft:faiz_axel"
 	},
 	"title": {
       "translate": "advancements.kamenridercraft.555.faiz_axel.title"
@@ -41,7 +41,7 @@
 				"kamenridercraft:faiz_driver"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_axel_mission_memory\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_axel_form\"}"
               }
 			}
 		  }

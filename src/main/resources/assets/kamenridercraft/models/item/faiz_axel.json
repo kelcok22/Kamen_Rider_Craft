@@ -5,12 +5,23 @@
   }
 ,
   "overrides": [
-
     {
       "predicate": {
         "pull": 1
       },
       "model": "kamenridercraft:item/faiz_axel_empty"
+    },
+    {
+      "predicate": {
+        "pull": 2
+      },
+      "model": "kamenridercraft:item/faiz_axel_next"
+    },
+    {
+      "predicate": {
+        "pull": 3
+      },
+      "model": "kamenridercraft:item/kaixa_axel_next"
     }
   ]
 }

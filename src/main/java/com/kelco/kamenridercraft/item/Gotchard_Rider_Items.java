@@ -1981,7 +1981,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
 					.setBaseSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get())
-					.setSuperSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get(), (RiderFormChangeItem) Faiz_Rider_Items.FAIZ_AXEL_MISSION_MEMORY.get())
+					.setSuperSummon((RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get(), (RiderFormChangeItem) Faiz_Rider_Items.FAIZ_AXEL_FORM.get())
 					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2).IsGlowing()
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 

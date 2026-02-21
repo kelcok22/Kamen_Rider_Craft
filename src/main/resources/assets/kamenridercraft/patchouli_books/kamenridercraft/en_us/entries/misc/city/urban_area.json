@@ -29,6 +29,22 @@
 			],
 			"title": " "
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kikuchi_cleaners",
+        "title": "West Washing Shop Kikuchi",
+        "text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Loot:$(li)5 $(l:misc/items/foods#transform_one_shot)Transform One-Shots$(/l) (in a chest in the upstairs bedroom)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners_3.png"
+        ],
+        "title": " "
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "narumi_detective_office",

@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
@@ -54,6 +53,10 @@ public class Modded_item_core {
 
     public static final DeferredItem<Item> ICE_POP3 = ITEMS.register("icepop3",
             () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item> TRANSFORM_ONE_SHOT = ITEMS.register("transform_one_shot",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 3), 1.0F).build()))
+                    .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> MILK_BOTTLE = ITEMS.register("milk_bottle",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 500, 4), 1.0F).build()))

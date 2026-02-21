@@ -15,24 +15,32 @@ import net.minecraft.world.level.Level;
 
 
 public class FaizAxelItem extends BaseItem {
-
 	public FaizAxelItem(Properties properties)
 	{
 		super(properties);
 	}
 
+	public void startCooldown(Player player) {
+		if (!player.isCreative()) player.getCooldowns().addCooldown(this, 1600);
+		player.awardStat(Stats.ITEM_USED.get(this));
+	}
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-
 		ItemStack itemstack = player.getItemInHand(usedHand);
 
-		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)){
-            if(player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.DELTA_DRIVER.get()){
+		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER.get()) {
+				Faiz_Rider_Items.FAIZ_AXEL_FORM.asItem().use(level,player,usedHand);
+				startCooldown(player);
+			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER_NEXT.get()) {
+				Faiz_Rider_Items.NEXT_FAIZ_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
+				startCooldown(player);
+			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.NEXT_KAIXA_DRIVER.get()) {
+				Faiz_Rider_Items.NEXT_KAIXA_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
+				startCooldown(player);
+			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.DELTA_DRIVER.get() && belt.isTransformed(player)){
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 5,true,false));
-				if (!player.isCreative()) {
-					player.getCooldowns().addCooldown(this, 1600);
-				}
-				player.awardStat(Stats.ITEM_USED.get(this));
+				startCooldown(player);
 			}
 		}
 		

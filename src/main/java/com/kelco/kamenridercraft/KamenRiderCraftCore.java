@@ -317,6 +317,10 @@ public class KamenRiderCraftCore {
                                     ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
                                     if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "faiz_driver_belt_a"))
                                         return 1;
+                                } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER_NEXT.get()) {
+                                    return 2;
+                                } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.NEXT_KAIXA_DRIVER.get()) {
+                                    return 3;
                                 } else {
                                     return 0;
                                 }

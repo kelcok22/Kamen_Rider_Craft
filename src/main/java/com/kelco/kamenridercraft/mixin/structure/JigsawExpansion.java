@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(value = JigsawStructure.class, priority = 999)
-public abstract class JigsawExpansion {
+public abstract class JigsawExpansion extends Structure {
 
 
     @WrapOperation(method = {"lambda$static$10"}, at = @At(value = "INVOKE", target = "Lcom/mojang/serialization/Codec;intRange(II)Lcom/mojang/serialization/Codec;"))
@@ -20,7 +20,7 @@ public abstract class JigsawExpansion {
     }
 
     protected JigsawExpansion(Structure.StructureSettings config) {
-        super();
+        super(config);
     }
 
     //    @ModifyConstant(method = "<init>(Lnet/minecraft/world/level/levelgen/structure/Structure$StructureSettings;Lnet/minecraft/core/Holder;ILnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;Z)V", constant = @Constant(intValue = 80), require = 0, remap = false)
