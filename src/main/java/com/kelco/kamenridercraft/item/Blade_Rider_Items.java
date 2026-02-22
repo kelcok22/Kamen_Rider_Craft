@@ -128,7 +128,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).HasCape().hasFlyingWings("blade_jack_wing.geo.json").AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.IsGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).HasCape().hasFlyingWings("blade_jack_wing.geo.json").AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
