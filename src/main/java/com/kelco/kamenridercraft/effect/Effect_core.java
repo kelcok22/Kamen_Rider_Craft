@@ -45,7 +45,7 @@ public class Effect_core {
             () -> new BoostEffect(MobEffectCategory.BENEFICIAL, 0xd368fa));
 
     public static final Holder<MobEffect>RIDER_KICK = EFFECT.register("rider_kick",
-            () -> new BoostEffect(MobEffectCategory.BENEFICIAL, 0x0e4f00));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x0e4f00));
 
 
     public static final Holder<MobEffect> PULL= EFFECT.register("pull",
