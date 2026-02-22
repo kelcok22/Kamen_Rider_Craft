@@ -56,7 +56,7 @@ public class Blade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
+			}.ChangeModel("blade.geo.json").IsGlowing().AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SLASH_LIZARD = ITEMS.register("slash_lizard",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
