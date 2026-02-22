@@ -8555,9 +8555,6 @@
   "item.kamenridercraft.breakam_breaker_knuckle": "Breakam Breaker (Knuckle Mode)",
   "item.kamenridercraft.breakam_breaker_shoot": "Breakam Breaker (Shoot Mode)",
 
-  "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
-
-
 "item.kamenridercraft.g_logo": "G Logo",
 "item.kamenridercraft.ghead": "G Helmet",
 "item.kamenridercraft.gtroso": "G Chestplate",
@@ -8848,6 +8845,7 @@
 "entity.kamenridercraft.garulu": "Garulu",
 "entity.kamenridercraft.basshaa": "Basshaa",
 "entity.kamenridercraft.dogga": "Dogga",
+"entity.kamenridercraft.decade_violent": "Kamen Rider Decade Violent Emotion",
 "entity.kamenridercraft.masquerade": "Masquerade",
 "entity.kamenridercraft.foundation_x_masquerade": "Foundation X Masquerade",
 "entity.kamenridercraft.eternal_mob": "Kamen Rider Eternal",
@@ -9117,7 +9115,7 @@
 "item.kamenridercraft.anguis_masculus_spawn_egg": "Anguis Masculus Spawn Egg",
 "item.kamenridercraft.another_agito_spawn_egg": "Another Agito Spawn Egg",
   "item.kamenridercraft.mirror_rider_spawn_egg": "Mirror Rider Spawn Egg",
-  "item.kamenridercraft.odin_spawn_egg": "Odin Spawn Egg",
+  "item.kamenridercraft.odin_spawn_egg": "Kamen Rider Odin Spawn Egg",
 "item.kamenridercraft.riotrooper_spawn_egg": "Riotrooper Spawn Egg",
 "item.kamenridercraft.orga_spawn_egg": "Kamen Rider Orga Spawn Egg",
 "item.kamenridercraft.muez_spawn_egg": "Kamen Rider Muez Spawn Egg",
@@ -9139,6 +9137,7 @@
 "item.kamenridercraft.ryutaros_spawn_egg": "Ryutaros Spawn Egg",
   "item.kamenridercraft.moose_fangire_spawn_egg": "Moose Fangire Spawn Egg",
   "item.kamenridercraft.arc_spawn_egg": "Kamen Rider Arc Spawn Egg",
+"item.kamenridercraft.decade_violent_spawn_egg": "Kamen Rider Decade Violent Emotion Spawn Egg",
 "item.kamenridercraft.masquerade_spawn_egg": "Masquerade Spawn Egg",
 "item.kamenridercraft.foundation_x_masquerade_spawn_egg": "Foundation X Masquerade Spawn Egg",
 "item.kamenridercraft.eternal_spawn_egg": "Kamen Rider Eternal Spawn Egg",
@@ -9329,6 +9328,8 @@
   "item.kamenridercraft.lango_stomach_spawn_egg": "Lango Stomach Spawn Egg",
   "item.kamenridercraft.bocca_jaldak_spawn_egg": "Bocca Jaldak Spawn Egg",
   "item.kamenridercraft.caries_spawn_egg": "Kamen Rider Caries Spawn Egg",
+
+  "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
 
   "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
 	"item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",
@@ -9635,6 +9636,7 @@
   "block.kamenridercraft.odin_boss_block": "Odin Boss Block",
   "block.kamenridercraft.faiz_boss_block": "Faiz Boss Block",
   "block.kamenridercraft.arc_boss_block": "Arc Boss Block",
+  "block.kamenridercraft.decade_violent_emotion_boss_block": "Decade Violent Emotion Boss Block",
 "block.kamenridercraft.taboo_boss_block": "Taboo Dopant Boss Block",
 "block.kamenridercraft.terror_boss_block": "Terror Dopant Boss Block",
   "block.kamenridercraft.gaoh_boss_block": "Gaoh Boss Block",
