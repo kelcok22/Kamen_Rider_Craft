@@ -33,7 +33,7 @@
         "type": "patchouli:text",
         "anchor": "kikuchi_cleaners",
         "title": "West Washing Shop Kikuchi",
-        "text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Loot:$(li)5 $(l:misc/items/foods#transform_one_shot)Transform One-Shots$(/l) (in a chest in the upstairs bedroom)"
+        "text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Loot:$(li)2-6 leather (60% x2) (in 3 double chests)$(li)1 leather cap, leather tunic, leather pants, or leather boots (10% x2) (in 3 double chests)$(br)$(li)1-2 $(l:misc/items/foods#transform_one_shot)Transform One-Shots$(/l) (60% x2) (in 3 double chests)$(li)1 $(l:faiz/items/mission_memories#faiz_mission_memory_toy)Faiz Mission Memory (Toy)$(/l) or $(l:faiz/items/mission_memories#kaixa_mission_memory_toy)Kaixa Mission Memory (Toy)$(/l) (20% x2) (in 3 double chests)"
       },
       {
         "type": "patchouli:image",
@@ -43,7 +43,8 @@
           "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners_2.png",
           "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners_3.png"
         ],
-        "title": " "
+        "title": " ",
+        "text": "$(li)1 $(l:misc/items/music_discs#justifaiz_music_disc)Justiφ's Music Disc$(/l) (in a chest in the upstairs bedroom)"
       },
 		{
 			"type": "patchouli:text",

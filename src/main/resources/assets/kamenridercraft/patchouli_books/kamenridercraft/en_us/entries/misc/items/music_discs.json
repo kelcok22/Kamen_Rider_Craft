@@ -163,7 +163,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:justifaiz_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside $(l:misc/city/urban_area#kikuchi_cleaners)West Washing Shop Kikuchi$(/l)"
 		},
 		{
 			"type": "patchouli:text",

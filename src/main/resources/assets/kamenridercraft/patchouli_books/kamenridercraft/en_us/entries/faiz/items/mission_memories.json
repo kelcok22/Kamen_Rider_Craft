@@ -189,7 +189,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:faiz_mission_memory_toy",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside $(l:misc/city/urban_area#kikuchi_cleaners)West Washing Shop Kikuchi$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -202,7 +202,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:kaixa_mission_memory_toy",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside $(l:misc/city/urban_area#kikuchi_cleaners)West Washing Shop Kikuchi$(/l)"
       }
     ]
 }
