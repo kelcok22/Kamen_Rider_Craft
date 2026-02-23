@@ -324,7 +324,24 @@ public class Agito_Rider_Items {
 				}
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
-	public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
+    public static final DeferredItem<Item> G6_CHIP = ITEMS.register("g6",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","g6","g_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().IsBeltGlowing().has_basic_model().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","g1","g_buckle_belt_1",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -395,7 +412,11 @@ public class Agito_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
-	public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
+    public static final DeferredItem<Item> G_BUCKLE_G6 = ITEMS.register("g6_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g6",G6_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+
+    public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g1",G1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 

@@ -139,7 +139,7 @@ public class Ryuki_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.has_basic_model().model_has_different_name("goldpheonix_advent"));
+			}.has_basic_model().model_has_different_name("goldphoenix_advent"));
 
 	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT = ITEMS.register("goldphoenix_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","odin","v_buckle_belt_odin",

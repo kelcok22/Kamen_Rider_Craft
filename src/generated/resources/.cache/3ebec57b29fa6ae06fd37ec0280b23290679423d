@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-14T22:31:16.0392498	Item Models: kamenridercraft
+// 1.21.1	2026-02-23T01:49:00.1110216	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -249,6 +249,7 @@ fc989a7da2361aa925334eccd9d1f5622d8c3ea4 assets/kamenridercraft/models/item/full
 84f8e0e7a608ecc45c8e586c4e1acd589bd6e544 assets/kamenridercraft/models/item/fusion_eagle_undead.json
 e33c8e730e575e0bffc587414cd2b904de330af3 assets/kamenridercraft/models/item/fusion_switch_og.json
 0926fe847c52312fb2c87e5642e9f55b2c691bee assets/kamenridercraft/models/item/fuwamallow_gochizo_lemon.json
+cfcd3eba4c644b0f7e91ab6fb068eaf5cc200b27 assets/kamenridercraft/models/item/g6.json
 49246ecb60192f8297094ebfe1fa963251c49178 assets/kamenridercraft/models/item/gackt_card.json
 fd7533820b275b5082d41bcf045d7f6416a318a7 assets/kamenridercraft/models/item/gaiard_ride_chemy_card.json
 5aea0959da8314fd68ec2456b11a70dea585b32b assets/kamenridercraft/models/item/gaia_belt.json
@@ -303,6 +304,7 @@ b8d949d116611ad97f369d64a4d838ae786bca5f assets/kamenridercraft/models/item/goch
 551317b552ec7e8a03755b1389bda3ec0cbea69f assets/kamenridercraft/models/item/gochizo_capsem.json
 4e76e2f2d24558a9156e20686a5f35dd955ec0b2 assets/kamenridercraft/models/item/gokigenmeteon_ride_chemy_card.json
 11baaf3cba0d071c51998f867703df8d9756ecc2 assets/kamenridercraft/models/item/golddash_daybreak_chemy_card.json
+261612a94aa6937cd0925b986b74b7230cd9e0c5 assets/kamenridercraft/models/item/goldphoenix_advent_sic.json
 e0e14ffea5fa38435db20022031af93a01b7c8ae assets/kamenridercraft/models/item/gold_door.json
 0eeb856b34359706a68a799a981ba0dbfa5778d8 assets/kamenridercraft/models/item/gold_spino_vistamp_vice.json
 bfedf19b3676885ca5ec0820b22abb5a2884aec8 assets/kamenridercraft/models/item/gotchancollection_panel.json
