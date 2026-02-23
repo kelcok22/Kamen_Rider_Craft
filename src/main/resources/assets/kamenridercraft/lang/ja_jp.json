@@ -2269,6 +2269,7 @@
 "item.kamenridercraft.g3_mild_belt": "Gバックル",
 "item.kamenridercraft.g4_belt": "Gバックル",
 "item.kamenridercraft.g4_x_belt": "Gバックル",
+"item.kamenridercraft.g6_belt": "Gバックル",
 "item.kamenridercraft.g1_belt": "Gバックル",
 "item.kamenridercraft.v1_belt": "V-1ベルト",
 
@@ -2277,6 +2278,7 @@
   "kamenridercraft.name.g3_mild":"ライダー: 仮面ライダーG3マイルド",
   "kamenridercraft.name.g4":"ライダー: 仮面ライダーG4",
   "kamenridercraft.name.g4_x":"ライダー: 仮面ライダーG4-X",
+  "kamenridercraft.name.g6":"ライダー: 仮面ライダーG6",
   "kamenridercraft.name.g1":"ライダー: 仮面ライダーG1",
   "kamenridercraft.name.v1":"疑似ライダー: V1",
 
@@ -2348,6 +2350,7 @@
 "item.kamenridercraft.g3mild": "G3マイルドチップ",
 "item.kamenridercraft.g4": "G4チップ",
 "item.kamenridercraft.g4x": "G4-Xチップ",
+"item.kamenridercraft.g6": "G6チップ",
 "item.kamenridercraft.g1": "G1チップ",
 "item.kamenridercraft.v1": "V1チップ",
 
@@ -9945,10 +9948,12 @@
   "tag.item.kamenridercraft.gear.form_items.ouja": "王蛇のフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.over_demons": "オーバーデモンズのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.para-dx": "パラドクスのフォームアイテム",
+  "tag.item.kamenridercraft.gear.form_items.psyga": "サイガのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.ragnarok": "ラグナロクのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.raia": "ライアのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.revi": "リバイのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.riderman": "ライダーマンのフォームアイテム",
+  "tag.item.kamenridercraft.gear.form_items.riotrooper": "ライオトルーパーのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.ryuga": "リュウガのフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.ryugen": "龍玄のフォームアイテム",
   "tag.item.kamenridercraft.gear.form_items.ryuki": "龍騎のフォームアイテム",

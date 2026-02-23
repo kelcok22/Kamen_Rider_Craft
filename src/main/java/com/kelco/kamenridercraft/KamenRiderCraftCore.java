@@ -61,7 +61,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -82,35 +81,15 @@ public class KamenRiderCraftCore {
 
     public static final int NEW_STRUCTURE_SIZE = 512;
 
-    private static final ResourceLocation BLOCKING_PROPERTY_RESLOC = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
-
     public static List<Item> CHANGE_SWORD_ITEM = new ArrayList<>();
-
     public static List<Item> SWORD_GUN_ITEM = new ArrayList<>();
-
     public static List<Item> KUUGA_CHANGING_ITEM = new ArrayList<>();
-    public static List<Item> KUUGA_PHONE = new ArrayList<>();
-    public static List<Item> FAIZ_AXEL = new ArrayList<>();
-    public static List<Item> BLADE_CHANGING_ITEM = new ArrayList<>();
-    public static List<Item> GARREN_CHANGING_ITEM = new ArrayList<>();
-    public static List<Item> LEANGLE_CHANGING_ITEM = new ArrayList<>();
-
-    public static List<Item> CLOCK_UP_ITEM = new ArrayList<>();
-
-    public static List<Item> RAISE_RISER_ITEM = new ArrayList<>();
-
     public static List<Item> SHIELD_ITEM = new ArrayList<>();
-
-    public static List<Item> DARK_SHIELD_ITEM = new ArrayList<>();
-
-    public static List<Item> CHEMY_CARD = new ArrayList<>();
-
-    public static List<Item> ONGEKIFLUTE_ITEM = new ArrayList<>();
 
     public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer) {
 
         // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
+        //modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
         NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
 
@@ -178,9 +157,8 @@ public class KamenRiderCraftCore {
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-    }
-
+    //private void commonSetup(final FMLCommonSetupEvent event) {
+    //}
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -252,10 +230,9 @@ public class KamenRiderCraftCore {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ResourceLocation BLOCKING_PROPERTY_RESLOC = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
 
             for (Item value : SHIELD_ITEM) {
-
                 ItemProperties.register(value, BLOCKING_PROPERTY_RESLOC, ($itemStack, $level, $entity, $seed) -> $entity != null && $entity.isUsingItem() && $entity.getUseItem() == $itemStack ? 1.0F : 0.0F);
             }
 
@@ -282,8 +259,8 @@ public class KamenRiderCraftCore {
                         }
                 );
             }
-            for (Item item : KUUGA_PHONE) {
-                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+
+                ItemProperties.register(Kuuga_Rider_Items.KUUGA_PHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -306,9 +283,8 @@ public class KamenRiderCraftCore {
                             //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
                         }
                 );
-            }
-            for (Item item : FAIZ_AXEL) {
-                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+
+                ItemProperties.register(Faiz_Rider_Items.FAIZ_AXEL.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -329,10 +305,23 @@ public class KamenRiderCraftCore {
                             //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
                         }
                 );
-            }
 
-            for (Item value : BLADE_CHANGING_ITEM) {
-                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+            ItemProperties.register(Faiz_Rider_Items.FAIZ_BLASTER.get(), ResourceLocation.parse("gold"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174637_ == null) {
+                        return 0.0F;
+                    } else {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER.get()) {
+                            ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                            if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_gold_blaster")) {
+                                return 1;
+                            }
+                        }
+                        return 0;
+                    }
+                }
+            );
+
+            ItemProperties.register(Blade_Rider_Items.BLAYROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -346,10 +335,8 @@ public class KamenRiderCraftCore {
                             }
                         }
                 );
-            }
 
-            for (Item value : GARREN_CHANGING_ITEM) {
-                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Blade_Rider_Items.GARRENROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -363,10 +350,8 @@ public class KamenRiderCraftCore {
                             }
                         }
                 );
-            }
 
-            for (Item value : LEANGLE_CHANGING_ITEM) {
-                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Blade_Rider_Items.LEANGLEROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -380,10 +365,8 @@ public class KamenRiderCraftCore {
                             }
                         }
                 );
-            }
 
-            for (Item item : CLOCK_UP_ITEM) {
-                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Kabuto_Rider_Items.CLOCK_UP_PAD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -402,10 +385,8 @@ public class KamenRiderCraftCore {
                             }
                         }
                 );
-            }
 
-            for (Item item : CHEMY_CARD) {
-                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else if (p_174637_ instanceof Player player) {
@@ -419,11 +400,8 @@ public class KamenRiderCraftCore {
                             return 0;
                         }
                 );
-            }
 
-
-            for (Item value : RAISE_RISER_ITEM) {
-                ItemProperties.register(value, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Geats_Rider_Items.LASER_RAISE_RISER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
                                 return 0.0F;
                             } else {
@@ -440,8 +418,6 @@ public class KamenRiderCraftCore {
                             }
                         }
                 );
-            }
-
 
             for (Item item : SWORD_GUN_ITEM) {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
@@ -457,8 +433,7 @@ public class KamenRiderCraftCore {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> BaseSwordItem.Get_Mode(p_174635_));
             }
 
-            for (Item item : DARK_SHIELD_ITEM) {
-                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Ryuki_Rider_Items.DARK_SHIELD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
@@ -469,17 +444,14 @@ public class KamenRiderCraftCore {
                         }
                     }
                 });
-            }
 
-            for (Item item : ONGEKIFLUTE_ITEM) {
-                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                ItemProperties.register(Hibiki_Rider_Items.ONGEKIFLUTE_REKKU.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
                         return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float) (p_174635_.getUseDuration(p_174637_) - p_174637_.getUseItemRemainingTicks());
                     }
                 });
-            }
 
             if (ModList.get().isLoaded("bettercombat")) BetterCombatAttackListener.register();
         }

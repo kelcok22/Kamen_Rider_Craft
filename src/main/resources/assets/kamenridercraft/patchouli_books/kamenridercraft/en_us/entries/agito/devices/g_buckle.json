@@ -62,7 +62,7 @@
         "type": "patchouli:text",
         "anchor": "g6_belt",
         "title": "G-Buckle (G6)",
-        "text": "Appears in:$(li)Agito: Supernatural Power War$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g6)Kamen Rider G6$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+        "text": "Appears in:$(li)Agito: Supernatural Power War (2026, movie)$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g6)Kamen Rider G6$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
       },
       {
         "type": "patchouli:crafting",

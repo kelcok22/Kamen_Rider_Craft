@@ -1,12 +1,13 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.gavv.*;
+import com.kelco.kamenridercraft.item.gavv.BlizzardsorbeiItem;
+import com.kelco.kamenridercraft.item.gavv.GavvwhipirItem;
+import com.kelco.kamenridercraft.item.gavv.GochipodItem;
+import com.kelco.kamenridercraft.item.gavv.HitpressItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -1545,11 +1546,11 @@ public class Gavv_Rider_Items {
 
 
 	public static final DeferredItem<Item> CHOCODANGUN = ITEMS.register("chocodangun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> CHOCODONGUN = ITEMS.register("chocodongun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> XMAX_GAVV = ITEMS.register("xmax_gavv",
@@ -1570,14 +1571,14 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VALENBUSTER = ITEMS.register("valenbuster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(VALENBUCKLE.get()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(VALENBUCKLE.get()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> XMAX_VALEN = ITEMS.register("xmax_valen",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRAMBREAKER = ITEMS.register("vrambreaker",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SILVER_DEFENSER = ITEMS.register("silver_defenser",
@@ -1588,7 +1589,7 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BAKEMAGNUM = ITEMS.register("bakemagnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BAKEBUCKLE.get()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BAKEBUCKLE.get()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> JEEB_DAGGER = ITEMS.register("jeeb_dagger",
@@ -1600,11 +1601,11 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SHIITA_GUN = ITEMS.register("shiita_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> NYELV_BOW = ITEMS.register("nyelv_bow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GLOTTA_SCYTHE = ITEMS.register("glotta_scythe",
@@ -1617,7 +1618,7 @@ public class Gavv_Rider_Items {
 
 
 	public static final DeferredItem<Item> AGENT_BLASTER = ITEMS.register("agent_blaster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -1.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -1.4F, new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(HEATPRESS.get()));
 
 	public static final DeferredItem<Item> WHIPPED_ROD = ITEMS.register("whipped_rod",

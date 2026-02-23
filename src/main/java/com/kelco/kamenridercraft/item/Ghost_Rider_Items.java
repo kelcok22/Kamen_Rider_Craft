@@ -8,7 +8,6 @@ import com.kelco.kamenridercraft.item.ghost.AkariCannonItem;
 import com.kelco.kamenridercraft.item.ghost.BlankGhostEyeconItem;
 import com.kelco.kamenridercraft.item.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -1217,34 +1216,34 @@ public class Ghost_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_GUN = ITEMS.register("gan_gun_saber_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_NAGINATA = ITEMS.register("gan_gun_saber_naginata",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_CONDOR_DENWOR = ITEMS.register("gan_gun_saber_condor_denwor",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_RIFLE = ITEMS.register("gan_gun_saber_rifle",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_HAMMER = ITEMS.register("gan_gun_saber_hammer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> SUNGLASSESLASHER = ITEMS.register("sunglasseslasher_sword",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_HAND_ROD = ITEMS.register("gan_gun_hand_rod",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.GHOST_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_HAND_KAMA = ITEMS.register("gan_gun_hand_kama",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> DEEP_SLASHER_SWORD = ITEMS.register("deep_slasher_sword",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_CATCHER_ROD = ITEMS.register("gan_gun_catcher_rod",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> AKARI_CANNON = ITEMS.register("akari_cannon",
 			() -> new AkariCannonItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GHOST_TAB_ITEM));

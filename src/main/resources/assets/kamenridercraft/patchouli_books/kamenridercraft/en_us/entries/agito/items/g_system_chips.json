@@ -67,7 +67,7 @@
 		},	{
         "type": "patchouli:text",
         "anchor": "g6",
-        "text": "Appears in:$(li)Agito: Supernatural Power War$(br2)Used to craft G6's $(l:agito/devices/g_buckle#g6_belt)G-Buckle$(/l)"
+        "text": "Appears in:$(li)Agito: Supernatural Power War (2026, movie)$(br2)Used to craft G6's $(l:agito/devices/g_buckle#g6_belt)G-Buckle$(/l)"
       },
       {
         "type": "patchouli:spotlight",

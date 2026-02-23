@@ -7,7 +7,6 @@ import com.kelco.kamenridercraft.entities.bosses.GordDriveEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -1126,19 +1125,19 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(GordDriveEntity.THINGS_AND_STUFF).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON))
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(GordDriveEntity.THINGS_AND_STUFF).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BREAK_GUNNER_BELT.get())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(GordDriveEntity.THINGS_AND_STUFF).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
@@ -1146,11 +1145,11 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_GUNNER = ITEMS.register("blade_gunner",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRAIN_MEGANE_BLADE = ITEMS.register("brain_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())

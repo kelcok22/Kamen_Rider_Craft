@@ -1,12 +1,10 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.blade.BlayBuckleItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -561,21 +559,21 @@ public class Blade_Rider_Items {
 
 
 	public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.BLADE_CHANGING_ITEM).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> KINGROUZER = ITEMS.register("kingrouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GARRENROUZER = ITEMS.register("garrenrouzer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.GARREN_CHANGING_ITEM).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GARREN_KINGROUZER = ITEMS.register("garren_kingrouzer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> CHALICE_ARROW = ITEMS.register("chalice_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_SLASHER = ITEMS.register("wild_slasher",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LEANGLEROUZER = ITEMS.register("leanglerouzer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.LEANGLE_CHANGING_ITEM).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LEANGLE_KINGROUZER = ITEMS.register("leangle_kingrouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GLAIVEROUZER = ITEMS.register("glaiverouzer",
@@ -583,7 +581,7 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> LANCEROUZER = ITEMS.register("lancerouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LARCROUZER = ITEMS.register("larcrouzer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
 
 	public static final DeferredItem<Item> DRAGONFLY_SOMERSAULT = ITEMS.register("dragonfly_somersault",
@@ -609,7 +607,7 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> ALBINO_JOKER_DEATH_SCYTHE = ITEMS.register("albino_joker_death_scythe",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
-//			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//			() -> new BaseShieldItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
 //			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> SPIDER_THREAD = ITEMS.register("spider_thread",
@@ -618,9 +616,9 @@ public class Blade_Rider_Items {
 //	public static final DeferredItem<Item> JASHIN_SPADE_VLADE = ITEMS.register("jashin_spade_vlade",
 //			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> JASHIN_DIA_SHIELD = ITEMS.register("jashin_dia_shield",
-//			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> JASHIN_HEART_THUNDER = ITEMS.register("jashin_heart_thunder",
-//			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+//			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> JASHIN_CLOVER_CLUB = ITEMS.register("jashin_clover_club",
 //			() -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 

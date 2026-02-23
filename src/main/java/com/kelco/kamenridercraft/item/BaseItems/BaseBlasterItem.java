@@ -110,7 +110,7 @@ public class BaseBlasterItem extends BowItem {
 		super(prop.durability(toolTier.getUses()).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
 		ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 	}
-	public BaseBlasterItem AddToTabList(List<Item> TabList) {
+	public BaseBlasterItem AddToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}

@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider G6",
-          "text": "Appears in:$(li)Agito: Supernatural Power War$(br2)Transforms with the $(l:agito/devices/g_buckle#g6_belt)G-Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Strength II"
+          "text": "Appears in:$(li)Agito: Supernatural Power War (2026, movie)$(br2)Transforms with the $(l:agito/devices/g_buckle#g6_belt)G-Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Strength II"
         }
 	]
 }

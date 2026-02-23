@@ -4,7 +4,9 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.item.wizard.*;
+import com.kelco.kamenridercraft.item.wizard.LegendWizardRingItem;
+import com.kelco.kamenridercraft.item.wizard.UnknownWizardRingItem;
+import com.kelco.kamenridercraft.item.wizard.WizardRingItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenuBeast;
@@ -1097,7 +1099,7 @@ public class Wizard_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).KeepItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN = ITEMS.register("wizarswordgun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.WIZARD_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
@@ -1109,11 +1111,11 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> MIRAGE_MAGNUM = ITEMS.register("mirage_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN_MAGE = ITEMS.register("wizarswordgun_mage",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> HAMMELCANE = ITEMS.register("hammelcane",

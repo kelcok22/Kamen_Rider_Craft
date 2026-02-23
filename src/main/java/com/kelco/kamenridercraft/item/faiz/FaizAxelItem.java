@@ -21,7 +21,7 @@ public class FaizAxelItem extends BaseItem {
 	}
 
 	public void startCooldown(Player player) {
-		if (!player.isCreative()) player.getCooldowns().addCooldown(this, 1600);
+		if (!player.isCreative()) player.getCooldowns().addCooldown(this, 1400);
 		player.awardStat(Stats.ITEM_USED.get(this));
 	}
 	@Override
@@ -39,7 +39,7 @@ public class FaizAxelItem extends BaseItem {
 				Faiz_Rider_Items.NEXT_KAIXA_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
 				startCooldown(player);
 			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.DELTA_DRIVER.get() && belt.isTransformed(player)){
-                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 5,true,false));
+                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 5,true,false));
 				startCooldown(player);
 			}
 		}

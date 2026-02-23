@@ -1,12 +1,10 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.den_o.RiderPassItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -488,7 +486,7 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> DEN_GASHER_AX = ITEMS.register("den_gasher_ax",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_GUN = ITEMS.register("den_gasher_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item>DENKAMEN_SWORD = ITEMS.register("denkamen_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DEN_O_TAB_ITEM).IsFormItem(DEN_O_LINER_FORM.get()).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_HANDAX = ITEMS.register("den_gasher_handax",
@@ -508,7 +506,7 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> MACHETEDDY = ITEMS.register("macheteddy",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> G_DEN_GASHER_GUN = ITEMS.register("g_den_gasher_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> NEGA_DEN_GASHER = ITEMS.register("nega_den_gasher",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
@@ -526,7 +524,7 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> KINTAROS_AX = ITEMS.register("kintaros_ax",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> RYUVOLVER = ITEMS.register("ryuvolver",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_MOMOTAROSWORD = ITEMS.register("nega_momotarosword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_URATAROD = ITEMS.register("nega_uratarod",
@@ -534,13 +532,13 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> NEGA_KINTAROS_AX = ITEMS.register("nega_kintaros_ax",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_RYUVOLVER = ITEMS.register("nega_ryuvolver",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> ZEROGASHER = ITEMS.register("zerogasher",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DENEBIC_BUSTER = ITEMS.register("denebic_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

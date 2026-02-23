@@ -9,7 +9,6 @@ import com.kelco.kamenridercraft.item.Fourze.FourzeDriverItem;
 import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
 import com.kelco.kamenridercraft.item.Fourze.ShowaSwitchItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -750,7 +749,7 @@ public class Fourze_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> HEE_HACKGUN = ITEMS.register("hee_hackgun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> BARIZUN_SWORD = ITEMS.register("barizun_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));

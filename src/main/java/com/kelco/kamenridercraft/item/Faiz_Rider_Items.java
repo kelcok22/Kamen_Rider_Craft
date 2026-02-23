@@ -65,7 +65,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().ChangeBeltModel("geo/faiz_belt.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()));
+			}.IsBeltGlowing().IsGlowing().ChangeBeltModel("geo/faiz_belt.geo.json").hasTimeout(200, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("faiz_axel_mission_memory",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.FAIZ_TAB_ITEM));
@@ -260,7 +260,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)NEXT_FAIZ_MISSION_MEMORY.get()).ChangeModel("next_faiz.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
+			}.IsBeltGlowing().IsGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_FAIZ_MISSION_MEMORY.get()).ChangeModel("next_faiz.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_kaixa","next_kaixa_driver_belt_a",
@@ -275,7 +275,7 @@ public class Faiz_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).ChangeModel("next_kaixa.geo.json").ChangeBeltModel("geo/faiz_belt.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
+			}.IsBeltGlowing().IsGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).ChangeModel("next_kaixa.geo.json").ChangeBeltModel("geo/faiz_belt.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> MUEZ_MISSION_MEMORY = ITEMS.register("muez_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","muez","muez_driver_belt",
@@ -386,44 +386,44 @@ public class Faiz_Rider_Items {
 	public static final DeferredItem<Item> FAIZ_EDGE = ITEMS.register("faiz_edge",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_PHONE = ITEMS.register("faiz_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_PHONE_POINTER = ITEMS.register("faiz_phone_pointer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_SHOT = ITEMS.register("faiz_shot",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_AXEL = ITEMS.register("faiz_axel",
-			() -> new FaizAxelItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.FAIZ_AXEL).AddToList(RiderTabs.FAIZ_TAB_ITEM));
+			() -> new FaizAxelItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 	public static final DeferredItem<Item> FAIZ_BLASTER = ITEMS.register("faiz_blaster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> KAIXA_BLAYGUN = ITEMS.register("kaixa_blaygun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> KAIXA_PHONE = ITEMS.register("kaixa_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> KAIXA_SHOT = ITEMS.register("kaixa_shot",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> KAIXA_CROSSLASHER = ITEMS.register("kaixa_crosslasher",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> DELTA_BLASTER = ITEMS.register("delta_blaster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> PSYGA_TONFA_EDGE = ITEMS.register("psyga_tonfa_edge",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> PSYGA_PHONE = ITEMS.register("psyga_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> ORGA_STLANZER = ITEMS.register("orga_stlanzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> ORGA_PHONE = ITEMS.register("orga_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> MUEZ_EDGE = ITEMS.register("muez_edge",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> AXEL_RAY_GUN = ITEMS.register("axel_ray_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 	public static void register(IEventBus eventBus) {

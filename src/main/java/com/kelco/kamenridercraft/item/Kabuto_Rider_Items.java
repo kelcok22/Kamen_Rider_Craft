@@ -1,14 +1,12 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.kabuto.ClockUpPadItem;
 import com.kelco.kamenridercraft.item.kabuto.HyperZecterBeltItem;
 import com.kelco.kamenridercraft.item.kabuto.WristZecterBeltItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -538,22 +536,22 @@ public class Kabuto_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chophopper",CHOPHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()).has_basic_model());
 
     public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
-            () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CLOCK_UP_ITEM).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+            () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_KUNAI = ITEMS.register("kabuto_kunai",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> KABUTO_KUNAI_KUNAI = ITEMS.register("kabuto_kunai_kunai",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECT_MIZER = ITEMS.register("zect_mizer",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> PERFECT_ZECTER = ITEMS.register("perfect_zecter",
             () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> DRAKE_GLIP = ITEMS.register("drake_grip",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .IsHenshinItem(DRAKE_RIDER_BELT.get()).ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> SASWORD_YAIVER = ITEMS.register("sasword_yaiver",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
@@ -568,13 +566,13 @@ public class Kabuto_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECT_KUNAI = ITEMS.register("zect_kunai",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECT_KUNAI_KUNAI = ITEMS.register("zect_kunai_kunai",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> MACHINEGUN_BLADE = ITEMS.register("machinegun_blade",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -3F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -3F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

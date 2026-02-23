@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ichigo.DrillArmItem;
 import com.kelco.kamenridercraft.item.ichigo.V3HopperItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -19,9 +18,9 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
-import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static com.kelco.kamenridercraft.item.Modded_item_core.SHOCKER_EMBLEM;
 
@@ -440,7 +439,7 @@ public class Ichigo_Rider_Items {
             () -> new DrillArmItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> MACHINE_GUN_ARM = ITEMS.register("machine_gun_arm",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> CUTTER_ARM = ITEMS.register("cutter_arm",
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
@@ -547,7 +546,7 @@ public class Ichigo_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLO_SHOT = ITEMS.register("apollo_shot",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIST_CUTTER = ITEMS.register("geist_cutter",
             () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
@@ -1034,7 +1033,7 @@ public class Ichigo_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item> VORTECHSHOOTER = ITEMS.register("vortech_shooter",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item> BIOBLADE = ITEMS.register("bio_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));

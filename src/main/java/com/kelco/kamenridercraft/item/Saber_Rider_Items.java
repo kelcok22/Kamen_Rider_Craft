@@ -5,7 +5,10 @@ import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.saber.*;
+import com.kelco.kamenridercraft.item.saber.BookGateItem;
+import com.kelco.kamenridercraft.item.saber.BookOfRuinItem;
+import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
+import com.kelco.kamenridercraft.item.saber.SwordOfLogosBuckleItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.HissatsuHolderGuiMenu;
@@ -20,8 +23,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -1216,7 +1219,7 @@ public class Saber_Rider_Items {
 
 	public static final DeferredItem<Item> ONJUUKEN_SUZUNE = ITEMS.register("onjuuken_suzune",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties())
-					.IsSwordGun().AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.IsSwordGun().AddToList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> ANKOKUKEN_KURAYAMI = ITEMS.register("ankokuken_kurayami",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM)

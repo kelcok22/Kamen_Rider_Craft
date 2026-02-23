@@ -1,10 +1,6 @@
 package com.kelco.kamenridercraft.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.block.machineBlocks.ProgrisekeyPrinter;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -14,7 +10,6 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.zero_one.ProgriseHolderItem;
 import com.kelco.kamenridercraft.item.zero_one.ShotriserItem;
 import com.kelco.kamenridercraft.item.zero_one.ThousandriverItem;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -31,6 +26,9 @@ import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Zero_One_Rider_Items {
 
@@ -1468,17 +1466,17 @@ public class Zero_One_Rider_Items {
 
 	/*
 	public static final DeferredItem<Item> PROGRISE_HOLDER = ITEMS.register("progrise_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	 */
 
 	public static final DeferredItem<Item> ATTACHE_CALIBUR = ITEMS.register("attache_calibur",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(ArkZeroEntity.THINGS_AND_STUFF).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ATTACHE_SHOTGUN = ITEMS.register("attache_shotgun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(ArkZeroEntity.THINGS_AND_STUFF).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ATTACHE_ARROW = ITEMS.register("attache_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(ArkZeroEntity.THINGS_AND_STUFF).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> AUTHORISE_BUSTER = ITEMS.register("authorise_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> PROGRISE_HOPPER_BLADE = ITEMS.register("progrise_hopper_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> PROGRISE_HOPPER_BLADE_NAGINATA = ITEMS.register("progrise_hopper_blade_naginata",
@@ -1487,11 +1485,11 @@ public class Zero_One_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(ArkZeroEntity.THINGS_AND_STUFF).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> SHOTRISER = ITEMS.register("shot_riser_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(ArkZeroEntity.THINGS_AND_STUFF).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SLASHRISER = ITEMS.register("zaia_slashriser_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(ArkZeroEntity.THINGS_AND_STUFF).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SHOTABADDORISER_GUN = ITEMS.register("shot_abaddo_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SLASHABADDORISER_SWORD = ITEMS.register("slash_abaddo_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
