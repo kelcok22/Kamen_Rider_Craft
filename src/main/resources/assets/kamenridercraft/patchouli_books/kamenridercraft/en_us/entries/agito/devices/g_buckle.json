@@ -58,6 +58,17 @@
 			"title": " ",
 			"recipe": "kamenridercraft:agito/g4_x_belt"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "g6_belt",
+        "title": "G-Buckle (G6)",
+        "text": "Appears in:$(li)Agito: Supernatural Power War$(br2)Equipped alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/g6)Kamen Rider G6$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:agito/g6_belt"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "g1_belt",

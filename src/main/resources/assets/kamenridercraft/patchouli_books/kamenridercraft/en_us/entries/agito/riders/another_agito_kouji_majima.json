@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Another Agito (Kouji Majima)",
 	"icon": "kamenridercraft:another_agito_koji",
 	"category": "kamenridercraft:agito/riders",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:entity",

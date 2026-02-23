@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "g6",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:g3core"
+	},
+	"M": {
+	  "item": "kamenridercraft:g6"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:g6_belt"
+  }	
+}

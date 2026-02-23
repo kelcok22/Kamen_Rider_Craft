@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Agito (Reiko Takano)",
 	"icon": "kamenridercraft:agito_trinity",
 	"category": "kamenridercraft:agito/riders",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:entity",
