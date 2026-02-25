@@ -1,9 +1,6 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
 
-import java.util.List;
-
-
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -12,6 +9,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
+
+import java.util.List;
 
 public class BaseItem extends Item  {
 
@@ -60,7 +59,9 @@ public class BaseItem extends Item  {
             {
                 return ItemStack.EMPTY;
             }
-            return new ItemStack(craftingRemainingItem);
+            ItemStack save =  new ItemStack(craftingRemainingItem);
+            save.applyComponents(stack.getComponents());
+            return save;
         } else  return new ItemStack(this.getCraftingRemainingItem());
     }
 
