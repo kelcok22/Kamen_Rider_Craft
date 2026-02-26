@@ -7,8 +7,6 @@ import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
 public class LaserModel extends GeoModel<LaserProjectileEntity> {
-    public String textureChoice;
-
     @Override
     public ResourceLocation getModelResource(LaserProjectileEntity animatable) {
         return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/laser.geo.json");

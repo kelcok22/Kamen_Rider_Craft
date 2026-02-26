@@ -22,6 +22,9 @@ public class Effect_core {
     public static final Holder<MobEffect>BOOST = EFFECT.register("boost",
             () -> new BoostEffect(MobEffectCategory.BENEFICIAL, 0xff0015));
 
+    public static final Holder<MobEffect>RAM = EFFECT.register("ram",
+            () -> new RamEffect(MobEffectCategory.BENEFICIAL, 0xff0015));
+
     public static final Holder<MobEffect>SWIFT_SWIM = EFFECT.register("swift_swim",
             () -> new SwiftSwimEffect(MobEffectCategory.BENEFICIAL, 0x00ffff));
 

@@ -389,6 +389,8 @@
   "effect.kamenridercraft.happy_mode":"§dハッピーモード",
   "effect.kamenridercraft.wonder":"ワンダー",
   "effect.kamenridercraft.mirror_noises":"§7 鏡の音",
+  "effect.kamenridercraft.glide":"グライド  ",
+  "effect.kamenridercraft.ram":"体当たり",
 
   "effect.kamenridercraft.boost.desc": "スニークをする時、地面から進める.",
   "effect.kamenridercraft.boost.description": "スニークをする時、地面から進める.",

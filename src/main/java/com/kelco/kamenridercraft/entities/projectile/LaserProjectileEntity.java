@@ -20,6 +20,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 public class LaserProjectileEntity extends AbstractArrow implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     public  float damageValue = 4F;
+    public String color = "blue";
 
     public LaserProjectileEntity(EntityType<? extends AbstractArrow> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -27,7 +28,14 @@ public class LaserProjectileEntity extends AbstractArrow implements GeoEntity {
 
     public LaserProjectileEntity(LivingEntity shooter, Level level) {
         super(MobsCore.LASER_PROJECTILE.get(), shooter, level, new ItemStack(Items.APPLE), new ItemStack(Items.BOW));
+    }
 
+@Override
+    public void tick() {
+        super.tick();
+        if (this.isInLiquid() || this.isInPowderSnow){
+            this.discard();
+        }
     }
 
     @Override

@@ -1,13 +1,9 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import java.time.LocalDate;
-import javax.annotation.Nullable;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.ai.RangedSwordgunAttackGoal;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
@@ -35,6 +31,9 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
+
+import javax.annotation.Nullable;
+import java.time.LocalDate;
 
 public abstract class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
 
@@ -201,7 +200,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
        ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
        ItemStack itemstack1 = this.getProjectile(weapon);
 	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
-	   	blaster.getProjectile().fire(this, this.getLookAngle());
+	   	blaster.fire(this, this.getLookAngle());
        } else {
         AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
         Item var7 = weapon.getItem();

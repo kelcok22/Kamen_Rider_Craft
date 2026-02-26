@@ -125,7 +125,7 @@ public class LegendarySummonEntity extends BaseSummonEntity {
     public void performRangedAttack(float distanceFactor) {
        ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
 	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
-	   	blaster.getProjectile().fire(this, this.getLookAngle());
+	   	blaster.fire(this, this.getLookAngle());
        } else {
         ItemStack itemstack1 = this.getProjectile(weapon);
         AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);

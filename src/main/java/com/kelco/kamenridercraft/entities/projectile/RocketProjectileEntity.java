@@ -29,7 +29,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class RocketProjectileEntity extends AbstractArrow implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    public float blastRadius = 4F;
+    public float explosionPower = 4F;
 
     public RocketProjectileEntity(EntityType<? extends AbstractArrow> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -44,7 +44,7 @@ public class RocketProjectileEntity extends AbstractArrow implements GeoEntity {
         super.onHitEntity(result);
         boolean flag = this.level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
         Vec3 look = this.getLookAngle();
-        this.level().explode(null, this.getX(), this.getY(), this.getZ(), blastRadius, flag, Level.ExplosionInteraction.MOB);
+        this.level().explode(null, this.getX(), this.getY(), this.getZ(), explosionPower, flag, Level.ExplosionInteraction.MOB);
         this.discard();
     }
 
@@ -63,7 +63,7 @@ public class RocketProjectileEntity extends AbstractArrow implements GeoEntity {
         super.onHitBlock(result);
         boolean flag = this.level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
         Vec3 look = this.getLookAngle();
-        this.level().explode(null, this.getX(), this.getY(), this.getZ(), blastRadius, flag, Level.ExplosionInteraction.MOB);
+        this.level().explode(null, this.getX(), this.getY(), this.getZ(), explosionPower, flag, Level.ExplosionInteraction.MOB);
         this.discard();
     }
 

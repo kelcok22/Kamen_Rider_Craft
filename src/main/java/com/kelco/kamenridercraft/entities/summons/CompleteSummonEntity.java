@@ -1,13 +1,8 @@
 package com.kelco.kamenridercraft.entities.summons;
 
-import java.util.EnumSet;
-
-import javax.annotation.Nullable;
-
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-
+import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -17,12 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.Goal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.monster.Creeper;
@@ -35,6 +25,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.pathfinder.PathType;
+
+import javax.annotation.Nullable;
+import java.util.EnumSet;
 
 public class CompleteSummonEntity extends BaseSummonEntity {
 
@@ -132,7 +125,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
     public void performRangedAttack(float distanceFactor) {
        ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
 	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
-	   	blaster.getProjectile().fire(this, this.getLookAngle());
+	   	blaster.fire(this, this.getLookAngle());
        } else {
         ItemStack itemstack1 = this.getProjectile(weapon);
         AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
