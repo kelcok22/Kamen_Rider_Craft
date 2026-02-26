@@ -173,7 +173,7 @@ public class Faiz_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.BOOST, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.CANNON, 40, 3,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -191,7 +191,7 @@ public class Faiz_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 3,true,false),
+                    new MobEffectInstance(Effect_core.BOOST, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.CANNON, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
