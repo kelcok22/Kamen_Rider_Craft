@@ -26,17 +26,20 @@ public class RamEffect extends InstantenousMobEffect {
             if (pLivingEntity.level() instanceof ServerLevel level) {
                 if (pLivingEntity instanceof Player player) {
                     if (player.isSprinting() || player.isFallFlying() || player.isPassenger()) {
+                        double bound = 3.5;
+                        if (player.isFallFlying() || player.isPassenger()) {
+                            bound = 5;
+                        }
+                        level.sendParticles(ParticleTypes.CLOUD,  player.getX(), player.getY()+1.25, player.getZ(), 2, 0, 0, 0, 0.15);
 
-                        level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, player.getX(), player.getY()+1.25, player.getZ(), 2, 0, 0, 0, 0.15);
-
-                        List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(3.5), entity ->
+                        List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(bound), entity ->
                                 (entity instanceof Player && entity != player)
                                         || (entity instanceof Mob));
                         for (LivingEntity enemy : nearbyEnemies) {
                             if (!enemy.isPassengerOfSameVehicle(player) && !enemy.isVehicle() && !enemy.isAlliedTo(player) && !(enemy instanceof baseBikeEntity)) {
                                 int mod = 3;
                                 if (enemy.distanceTo(player) < 10 ) {
-                                    mod = 25;
+                                    mod = 15;
                                 }
                                 enemy.push((enemy.getX() - player.getX())/mod, (enemy.getY() - player.getY())/mod, (enemy.getZ() - player.getZ())/mod);
                                 enemy.hurt(player.damageSources().playerAttack(player), 5.0F);
