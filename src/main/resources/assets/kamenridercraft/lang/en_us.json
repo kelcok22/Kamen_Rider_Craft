@@ -518,6 +518,12 @@
   "effect.kamenridercraft.rider_poison_hand.description": "Poisons any mob you hit with an empty hand.",
   "effect.kamenridercraft.mirror_noises.desc": "Causes Mirror Riders to spawn around you.",
   "effect.kamenridercraft.mirror_noises.description": "Causes Mirror Riders to spawn around you.",
+  "effect.kamenridercraft.glide.desc":"Allows you to fly as if wearing elytra",
+  "effect.kamenridercraft.glide.description":"Allows you to fly as if wearing elytra",
+  "effect.kamenridercraft.ram.desc": "Causes you to damage mobs you ride into on bikes",
+  "effect.kamenridercraft.ram.description": "Causes you to damage mobs you ride into on bikes",
+
+
 
   "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 
@@ -8027,6 +8033,7 @@
   "kamenridercraft:gutsshovel_ride_chemy_card.form": "Form: Gutsshovel Custom",
   "kamenridercraft:hawkstar_ride_chemy_card.form": "Form: Needlehawk",
   "kamenridercraft:gorillasensei_ride_chemy_card.form": "Form: Burninggorilla",
+  "kamenridercraft:doctorkozo_ride_chemy_card.form": "Form: Doctorhebi",
   "kamenridercraft:raidenji_ride_chemy_card.form": "Form: Lightningjungle",
   "kamenridercraft:ufo_x_ride_chemy_card.form": "Form: Super Cross UFO-X",
   "kamenridercraft:x_rex_ride_chemy_card.form": "Form: Super Cross X-Rex",
