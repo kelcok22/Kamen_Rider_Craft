@@ -71,6 +71,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_GreatSasorry= new ArrayList<>();
 	public static List<Item> NEED_ITEM_BunnyParka= new ArrayList<>();
 	public static List<Item> NEED_ITEM_DoctorHebi= new ArrayList<>();
+	public static List<Item> NEED_ITEM_BakuonTelevi= new ArrayList<>();
 
 	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<>();
 	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<>();
@@ -168,8 +169,22 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.Insect_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BAKUONZEMI_RIDE_CHEMY_CARD = ITEMS.register("bakuonzemi_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
-					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Insect_CHEMY).has_basic_model());
+			() -> new RideChemyCardItem(new Item.Properties(),"_bakuon_televi","gotchard","gotchardriver_belt",
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_BakuonTelevi).AddToList(NEED_ITEM_BakuonTelevi)
+					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Insect_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> ANTROOPER_RIDE_CHEMY_CARD = ITEMS.register("antrooper_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),"_ant_wrestler","gotchard","gotchardriver_belt",
@@ -713,8 +728,8 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Artifact_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TELEVI_RIDE_CHEMY_CARD = ITEMS.register("televi_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
-					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Artifact_CHEMY).has_basic_model());
+			() -> new CopyChemyCardItem(new Item.Properties(),BAKUONZEMI_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_BakuonTelevi)
+					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Artifact_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TIMELORD_RIDE_CHEMY_CARD = ITEMS.register("timelord_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","","").IsGlowing().AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
