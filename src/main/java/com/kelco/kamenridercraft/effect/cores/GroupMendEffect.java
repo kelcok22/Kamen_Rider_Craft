@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.effect.cores;
 
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.effect.InstantenousMobEffect;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,13 +13,17 @@ import java.util.List;
 import java.util.Random;
 
 
-public class GroupMendEffect extends InstantenousMobEffect {
+public class GroupMendEffect extends MobEffect {
 
 
     public GroupMendEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
 
+    @Override
+    public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
+        return true;
+    }
 
     @Override
     public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
