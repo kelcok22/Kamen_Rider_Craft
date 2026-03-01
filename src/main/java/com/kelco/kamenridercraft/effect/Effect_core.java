@@ -50,6 +50,12 @@ public class Effect_core {
     public static final Holder<MobEffect>RIDER_KICK = EFFECT.register("rider_kick",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x0e4f00));
 
+    public static final Holder<MobEffect>SELF_MENDING = EFFECT.register("self_mending",
+            () -> new SelfMendEffect(MobEffectCategory.BENEFICIAL, 0xFFAEC9));
+
+    public static final Holder<MobEffect>GROUP_MENDING = EFFECT.register("group_mending",
+            () -> new GroupMendEffect(MobEffectCategory.BENEFICIAL, 0xFF4281));
+
 
     public static final Holder<MobEffect> PULL= EFFECT.register("pull",
             () -> new 	PullEffect(MobEffectCategory.BENEFICIAL, 0xcb3e3e) );

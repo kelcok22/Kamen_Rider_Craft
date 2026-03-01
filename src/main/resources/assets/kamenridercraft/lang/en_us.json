@@ -391,6 +391,8 @@
   "effect.kamenridercraft.mirror_noises":"§7Mirror Noises",
   "effect.kamenridercraft.glide":"Glide ",
   "effect.kamenridercraft.ram":"Ram",
+  "effect.kamenridercraft.self_mending":"Self Mending",
+  "effect.kamenridercraft.group_mending":"Group Mending",
 
   "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
   "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",

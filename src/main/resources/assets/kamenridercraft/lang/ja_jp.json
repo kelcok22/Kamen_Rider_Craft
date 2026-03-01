@@ -391,6 +391,8 @@
   "effect.kamenridercraft.mirror_noises":"§7 鏡の音",
   "effect.kamenridercraft.glide":"滑空",
   "effect.kamenridercraft.ram":"激突",
+  "effect.kamenridercraft.self_mending":"己修繕",
+  "effect.kamenridercraft.group_mending":"団修繕",
 
   "effect.kamenridercraft.boost.desc": "スニークをする時、地面から進める",
   "effect.kamenridercraft.boost.description": "スニークをする時、地面から進める",
