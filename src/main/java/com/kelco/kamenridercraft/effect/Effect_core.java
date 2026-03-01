@@ -45,7 +45,7 @@ public class Effect_core {
             .addAttributeModifier(NeoForgeMod.CREATIVE_FLIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flying"), 1F, AttributeModifier.Operation.ADD_VALUE) );
 
     public static final Holder<MobEffect>GLIDE = EFFECT.register("glide",
-            () -> new BoostEffect(MobEffectCategory.BENEFICIAL, 0xd368fa));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd368fa));
 
     public static final Holder<MobEffect>RIDER_KICK = EFFECT.register("rider_kick",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x0e4f00));

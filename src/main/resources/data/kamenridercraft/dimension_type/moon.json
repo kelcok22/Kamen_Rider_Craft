@@ -1,5 +1,5 @@
 {
-    "ambient_light": 0.7,
+    "ambient_light": 0.4,
     "bed_works": true,
     "coordinate_scale": 1,
     "effects": "kamenridercraft:moon",
