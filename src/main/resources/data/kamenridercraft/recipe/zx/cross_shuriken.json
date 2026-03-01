@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zx",
+  "pattern": [
+	" C ",
+	"XZX",
+	" X "
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:rider_circuit"
+	}, "C": {
+	  "item": "kamenridercraft:zx_belt_core"
+	}, "Z": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:cross_shuriken"
+  }
+}

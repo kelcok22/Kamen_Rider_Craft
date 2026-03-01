@@ -1,0 +1,16 @@
+{
+  "name": "Micro Chain",
+  "icon": "kamenridercraft:micro_chain",
+  "category": "kamenridercraft:zx/arsenal",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:Appears in:$(li)Birth of the 10th! Kamen Riders All Together!! (1984, TV special)$(br2)Used by $(l:zx/riders/zx)Kamen Rider ZX$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zx/micro_chain"
+    }
+  ]
+}

@@ -352,7 +352,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> V1_CHIP = ITEMS.register("v1",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","v1","blank",
@@ -367,7 +367,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+			}.AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITOHELMET = ITEMS.register("agitohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));

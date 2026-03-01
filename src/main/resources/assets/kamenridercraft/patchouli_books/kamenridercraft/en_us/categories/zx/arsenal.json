@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zx/main",
+    "name": "ZX Arsenal",
+    "description": "These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
+    "icon": "kamenridercraft:cross_shuriken",
+    "sortnum": 3
+}

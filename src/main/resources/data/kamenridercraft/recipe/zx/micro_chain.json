@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zx",
+  "pattern": [
+	"MCM",
+	"XZX",
+	"MXM"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:rider_circuit"
+	}, "C": {
+	  "item": "kamenridercraft:zx_belt_core"
+	}, "Z": {
+	  "item": "kamenridercraft:base_sword"
+	}, "M": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:micro_chain"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Cross Shuriken",
+  "icon": "kamenridercraft:cross_shuriken",
+  "category": "kamenridercraft:zx/arsenal",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:Appears in:$(li)Birth of the 10th! Kamen Riders All Together!! (1984, TV special)$(br2)Used by $(l:zx/riders/zx)Kamen Rider ZX$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zx/cross_shuriken"
+    }
+  ]
+}
