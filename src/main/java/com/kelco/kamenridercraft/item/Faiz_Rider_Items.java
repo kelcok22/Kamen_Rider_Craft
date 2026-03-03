@@ -309,7 +309,8 @@ public class Faiz_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","seeda","seeda_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.FAIZ_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .ChangeModel("seeda.geo.json").AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_MISSION_MEMORY_TOY = ITEMS.register("faiz_mission_memory_toy",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.FAIZ_TAB_ITEM));
