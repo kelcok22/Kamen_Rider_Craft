@@ -1430,7 +1430,10 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon("kamenridercraft:recovery_capsem", "kamenridercraft:breakam_zeztzer_axe")
                     .addAltWeapon("kamenridercraft:barrier_capsem", "kamenridercraft:breakam_zeztzer_axe")
                     .addAltWeapon("kamenridercraft:wonder_capsem", "kamenridercraft:breakam_zeztzer_scythe")
-                    .addAltWeapon("kamenridercraft:gravity_capsem", "kamenridercraft:breakam_zeztzer_scythe").AddToList(RiderTabs.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:gravity_capsem", "kamenridercraft:breakam_zeztzer_scythe")
+                    .addAltWeapon("kamenridercraft:plasma_capsem", "kamenridercraft:inazuma_blaster")
+                    .addAltWeapon("kamenridercraft:booster_capsem", "kamenridercraft:inazuma_blaster_greatsword")
+                    .addAltWeapon("kamenridercraft:dualmare_capsem", "kamenridercraft:triple_zeztzer").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) Reboot_Rider_Items.AMAZONS_DRIVER_ALPHA.get())
