@@ -72,6 +72,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_BunnyParka= new ArrayList<>();
 	public static List<Item> NEED_ITEM_DoctorHebi= new ArrayList<>();
 	public static List<Item> NEED_ITEM_BakuonTelevi= new ArrayList<>();
+	public static List<Item> NEED_ITEM_OniCopter= new ArrayList<>();
 
 	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<>();
 	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<>();
@@ -442,6 +443,25 @@ public class Gotchard_Rider_Items {
 			}.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_HiikesuRose).AddToList(NEED_ITEM_HiikesuRose).AddToList(ChemyRiserItem.ALL_CHEMY)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
+	public static final DeferredItem<Item> GEKIOCOPTER_RIDE_CHEMY_CARD_G = ITEMS.register("gekiocopter_ride_chemy_card_g",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_oni_copter","gotchard","gotchardriver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.IsGlowing().AddNeedItemList(NEED_ITEM_OniCopter).model_has_different_name("gekiocopter_ride_chemy_card"));
+
 	public static final DeferredItem<Item> GEKIOCOPTER_RIDE_CHEMY_CARD_V = ITEMS.register("gekiocopter_ride_chemy_card_v",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ange_copter","valvarad_rider","valvaradriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -459,7 +479,7 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddNeedItemList(NEED_ITEM_AngeCopter).has_basic_model().model_has_different_name("gekiocopter_ride_chemy_card"));
+			}.IsGlowing().addAlternative(GEKIOCOPTER_RIDE_CHEMY_CARD_G.get()).AddNeedItemList(NEED_ITEM_AngeCopter).has_basic_model().model_has_different_name("gekiocopter_ride_chemy_card"));
 
 	public static final DeferredItem<Item> GEKIOCOPTER_RIDE_CHEMY_CARD = ITEMS.register("gekiocopter_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","valvarad","",
@@ -471,7 +491,8 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeSlot(2).addAlternative(GEKIOCOPTER_RIDE_CHEMY_CARD_V.get()).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddToList(NEED_ITEM_AngeCopter)
+			}.IsGlowing().ChangeSlot(2).addAlternative(GEKIOCOPTER_RIDE_CHEMY_CARD_V.get()).addSwitchForm(Modded_item_core.BLANK_FORM.get())
+					.AddToList(NEED_ITEM_AngeCopter).AddToList(NEED_ITEM_OniCopter)
 					.AddToList(ChemyRiserItem.Vehicle_CHEMY).AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEEPMARINER_RIDE_CHEMY_CARD = ITEMS.register("deepmariner_ride_chemy_card",
@@ -523,7 +544,8 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddNeedItemList(NEED_ITEM_Valvarad).AddToList(NEED_ITEM_Valvarad).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+			}.IsGlowing().addAlternative(GEKIOCOPTER_RIDE_CHEMY_CARD_G.get())
+					.AddNeedItemList(NEED_ITEM_Valvarad).AddToList(NEED_ITEM_Valvarad).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GOLDDASH_RIDE_CHEMY_CARD = ITEMS.register("golddash_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),"_gold_mechanichor","gotchard","gotchardriver_belt_big",
@@ -806,7 +828,7 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Occult_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> DAIOHNI_RIDE_CHEMY_CARD = ITEMS.register("daiohni_ride_chemy_card",
-			() -> new CopyChemyCardItem(new Item.Properties(),MACHWHEEL_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Valvarad)
+			() -> new CopyChemyCardItem(new Item.Properties(),MACHWHEEL_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_Valvarad).AddToList(NEED_ITEM_OniCopter)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Occult_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> MACKRAKEN_RIDE_CHEMY_CARD = ITEMS.register("mackraken_ride_chemy_card",
