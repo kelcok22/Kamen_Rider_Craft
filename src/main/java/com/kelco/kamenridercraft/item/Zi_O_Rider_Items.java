@@ -491,6 +491,7 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Faiz_Rider_Items.FAIZ_PHONE.get(), Faiz_Rider_Items.FAIZ_PHONE.get())
                     .addAltWeapon(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get(), Faiz_Rider_Items.FAIZ_PHONE_POINTER.get())
                     .addAltWeapon(Faiz_Rider_Items.FAIZ_SHOT.get(), Faiz_Rider_Items.FAIZ_SHOT.get())
+                    .addAltForm(Faiz_Rider_Items.FAIZ_AXEL.get(), (RiderFormChangeItem)Faiz_Rider_Items.FAIZ_AXEL_FORM.get())
                     .addAltWeapon(Faiz_Rider_Items.FAIZ_AXEL.get(), Items.AIR)
                     .addAltWeapon(Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
                     .addAltWeapon(Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
@@ -597,6 +598,7 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Kiva_Rider_Items.DOGGA_FUESTLE.get(), Kiva_Rider_Items.DOGGA_HAMMER.get())
                     .addAltWeapon(Kiva_Rider_Items.TATSULOT.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
                     .addAltWeapon(Kiva_Rider_Items.KIVATTE_FUESTLE.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
+                    .addAltForm(Kiva_Rider_Items.WAKE_UP_FUESTLE_REY.get(), (RiderFormChangeItem)Kiva_Rider_Items.FLIGHT_STYLE_FUESTLE.get())
                     .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> W_RIDEWATCH = ITEMS.register("w_ridewatch",
@@ -819,6 +821,8 @@ public class Zi_O_Rider_Items {
             }
                     .setSummonBelt((RiderDriverItem) Wizard_Rider_Items.WIZARDRIVER.get())
                     .addSummonWeapon(Wizard_Rider_Items.WIZARSWORDSGUN.get())
+                    .addAltForm(Wizard_Rider_Items.DRAGO_TIMER.get(), (RiderFormChangeItem) Wizard_Rider_Items.DRAGO_TIMER.get())
+                    .addAltForm(Wizard_Rider_Items.SPECIAL_RUSH_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.SPECIAL_RUSH_RING.get())
                     .addAltForm(Wizard_Rider_Items.FINISH_STRIKE_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.FINISH_STRIKE_RING_NO_HOPE.get())
                     .addAltForm(Wizard_Rider_Items.HOPE_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.FINISH_STRIKE_RING.get())
                     .addAltForm(Wizard_Rider_Items.FALCO_RING.get(), (RiderFormChangeItem) Wizard_Rider_Items.FALCO_RING_WIZARD.get())
@@ -862,6 +866,7 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon(Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
                     .addAltWeapon(Gaim_Rider_Items.MARRON_ENERGY_LOCKSEED.get(), Items.AIR)
                     .addAltWeapon(Gaim_Rider_Items.KACHIDOKI_LOCKSEED.get(), Gaim_Rider_Items.DJ_GUN.get())
+                    .addAltForm(Gaim_Rider_Items.KIWAMI_LOCKSEED.get(), (RiderFormChangeItem) Gaim_Rider_Items.KIWAMI_LOCKSEED.get())
                     .addAltWeapon(Gaim_Rider_Items.KIWAMI_LOCKSEED.get(), Gaim_Rider_Items.DJ_GUN_TAIKEN_MODE.get())
                     .addAltWeapon(Gaim_Rider_Items.BLOOD_ORANGE_LOCKSEED.get(), Gaim_Rider_Items.BLOOD_DAIDAIMARU.get())
                     .addAltWeapon(Gaim_Rider_Items.FIFTEEN_LOCKSEED.get(), Gaim_Rider_Items.YOMIMARU.get())
@@ -1100,7 +1105,12 @@ public class Zi_O_Rider_Items {
                     .addAltForm(Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
                     .addAltForm(Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get())
+                    .addAltForm(Ex_Aid_Rider_Items.PERFECT_PUZZLE_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get())
+                    .addAltWeapon(Ex_Aid_Rider_Items.PERFECT_PUZZLE_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
+                    .addAltForm(Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get())
+                    .addAltWeapon(Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.MAXIMUM_MIGHTY_X_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
+                    .addAltForm(Ex_Aid_Rider_Items.HYPER_MUTEKI_GASHAT.get(), (RiderFormChangeItem) Ex_Aid_Rider_Items.HYPER_MUTEKI_GASHAT.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.HYPER_MUTEKI_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.KAIGEN_GHOST_GASHAT.get(), Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
                     .addAltWeapon(Ex_Aid_Rider_Items.FULL_THROTTLE_DRIVE_GASHAT.get(), Drive_Rider_Items.HANDLE_KEN.get())
@@ -1287,6 +1297,7 @@ public class Zi_O_Rider_Items {
             }.addAltWeapon("kamenridercraft:king_of_arthur_wonder_ride_book", "kamenridercraft:kingexcalibur", "kamenridercraft:kaenken_rekka")
                     .addAltForm("kamenridercraft:storm_eagle_wonder_ride_book", "kamenridercraft:saiyuu_journey_wonder_ride_book")
                     .addAltForm("kamenridercraft:saiyuu_journey_wonder_ride_book", "kamenridercraft:storm_eagle_wonder_ride_book")
+                    .addAltForm("kamenridercraft:elemental_dragon_wonder_ride_book", "kamenridercraft:elemental_dragon_wonder_ride_book")
                     .addAltForm("kamenridercraft:haouken_xross_saber", "kamenridercraft:brave_dragon_wonder_ride_book_xross")
                     .addAltWeapon("kamenridercraft:haouken_xross_saber", "kamenridercraft:haouken_xross_saber").IsGlowing().IsBeltGlowing().ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
