@@ -1,0 +1,19 @@
+{
+	"name": "Metamateriam Belt",
+	"icon": "kamenridercraft:metamateriam_belt",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into a $(l:zeztz/riders/metamateriam)Metamateriam"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metamateriam_belt",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

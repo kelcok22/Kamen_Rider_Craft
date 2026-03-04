@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.CapsemDropper;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.summons.TechnolomProjectionEntity;
+import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.zeztz.CapsemCylinderItem;
@@ -17,6 +17,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -100,6 +101,18 @@ public class Zeztz_Rider_Items {
                 }
             } .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> PROJECTION_CAPSEM_METAMATERIAM = ITEMS.register("projection_capsem_metamateriam",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","metamateriam","metamateriam_belt",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing());
+
     public static final DeferredItem<Item> PROJECTION_CAPSEM = ITEMS.register("projection_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_projection","zeztz","zeztz_driver_belt_technolom_projection",
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -111,16 +124,21 @@ public class Zeztz_Rider_Items {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                     if (player instanceof Player play) {
-                        TechnolomProjectionEntity projection = MobsCore.TECHNOLOM_PROJECTION.get().create(player.level());
-                        if (projection != null) {
-                            projection.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-                            player.level().addFreshEntity(projection);
-                            projection.bindToPlayer(play);
-                            projection.addRequiredForm(this, 1);
+                        RiderSummonEntity meta = MobsCore.RIDER_SUMMON.get().create(player.level());
+                        if (meta != null) {
+                            meta.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+                            meta.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get()));
+                            meta.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zeztz_Rider_Items.ZEZTZ_CHESTPLATE.get()));
+                            meta.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zeztz_Rider_Items.ZEZTZ_LEGGINGS.get()));
+                            meta.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zeztz_Rider_Items.METAMATERIAM_BELT.get()));
+                            meta.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zeztz_Rider_Items.BREAKAM_ZEZTZER_GUN.get()));
+                            player.level().addFreshEntity(meta);
+                            meta.bindToPlayer(play);
+                            meta.addRequiredForm(this, 1);
                         }
                     }
                 }
-            }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            }.addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
@@ -172,6 +190,24 @@ public class Zeztz_Rider_Items {
                 }
             }.ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(CapsemDropper.CAPSEM,5).AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> PLASMA_CAPSEM_METAMATERIAM = ITEMS.register("plasma_capsem_metamateriam",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_inazuma_plasma","metamateriam","metamateriam_belt_inazuma_plasma",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.THUNDER_PUNCH, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsGlowing());
+
     public static final DeferredItem<Item> PLASMA_CAPSEM = ITEMS.register("plasma_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_inazuma_plasma","zeztz","zeztz_driver_belt_inazuma_plasma",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -188,7 +224,7 @@ public class Zeztz_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+            }.addAlternative(PLASMA_CAPSEM_METAMATERIAM.get()).ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BOOSTER_CAPSEM = ITEMS.register("booster_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_plasma_booster","zeztz","zeztz_driver_belt_plasma_booster",
@@ -529,6 +565,10 @@ public class Zeztz_Rider_Items {
     public static final DeferredItem<Item> LORD_INVOKER_SIX = ITEMS.register("lord_invoker_six",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_six", PANIC_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> METAMATERIAM_BELT = ITEMS.register("metamateriam_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metamateriam", PROJECTION_CAPSEM_METAMATERIAM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",

@@ -1,12 +1,11 @@
 package com.kelco.kamenridercraft.events;
 
-import java.time.LocalDate;
-import java.util.*;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.KeyBindings;
-import com.kelco.kamenridercraft.client.models.*;
+import com.kelco.kamenridercraft.client.models.DoggaModel;
+import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
+import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
@@ -16,10 +15,10 @@ import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import com.kelco.kamenridercraft.entities.summons.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
-import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.gavv.GochipodItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
@@ -76,6 +75,11 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Objects;
+import java.util.Random;
 
 
 public class ModCommonEvents {
@@ -659,7 +663,6 @@ public class ModCommonEvents {
 	public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ElementaryInvesModel.LAYER_LOCATION, ElementaryInvesModel::createBodyLayer);
 		event.registerLayerDefinition(HeartRoidmudeModel.LAYER_LOCATION, HeartRoidmudeModel::createBodyLayer);
-		event.registerLayerDefinition(MetamateriamModel.LAYER_LOCATION, MetamateriamModel::createBodyLayer);
         event.registerLayerDefinition(DoggaModel.LAYER_LOCATION, DoggaModel::createBodyLayer);
 	}
 
@@ -967,7 +970,6 @@ public class ModCommonEvents {
 		event.put(MobsCore.VICE.get(), ViceEntity.setAttributes().build());
 		event.put(MobsCore.LOVEKOV.get(), LovekovEntity.setAttributes().build());
         event.put(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierEntity.setAttributes().build());
-        event.put(MobsCore.TECHNOLOM_PROJECTION.get(), TechnolomProjectionEntity.setAttributes().build());
         event.put(MobsCore.APOLLO.get(), ApolloEntity.setAttributes().build());
         event.put(MobsCore.LIBRA.get(), LibraEntity.setAttributes().build());
 

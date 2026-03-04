@@ -1681,9 +1681,6 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<WhippedSoldierEntity>> WHIPPED_SOLDIER = MOBLIST.register("whipped_soldier",
             () -> EntityType.Builder.of(WhippedSoldierEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":whipped_soldier"));
 
-    public static final DeferredHolder<EntityType<?>, EntityType<TechnolomProjectionEntity>> TECHNOLOM_PROJECTION = MOBLIST.register("technolom_projection",
-            () -> EntityType.Builder.of(TechnolomProjectionEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":technolom_projection"));
-
     public static final DeferredHolder<EntityType<?>, EntityType<ApolloEntity>> APOLLO = MOBLIST.register("apollo",
                 () -> EntityType.Builder.of(ApolloEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":apollo"));
 

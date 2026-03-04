@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-23T01:49:00.1110216	Item Models: kamenridercraft
+// 1.21.1	2026-03-04T01:25:37.4121613	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -461,6 +461,7 @@ df985e5c1e35bc3d5354b0e7486c2f6434e40592 assets/kamenridercraft/models/item/mens
 fe2633c3aca22effa19dc2b35d3200aeae7a1d12 assets/kamenridercraft/models/item/merrychristmas_gochizo.json
 81fa44f23f2941a5f2f622c9892fb60f1304f596 assets/kamenridercraft/models/item/metal_daiohni_ride_chemy_card.json
 33b5e6c5f1bf045f9aaacae2f02c2b335debe8f4 assets/kamenridercraft/models/item/metal_machwheel_ride_chemy_card.json
+f870d2082c182829ec7a660eee24f7e6b4771f17 assets/kamenridercraft/models/item/metamateriam_belt.json
 1ea1a832d57d7a1844fa965430015e8c057ed3e1 assets/kamenridercraft/models/item/meteor_bullet_vent.json
 61f64ad4b25fbab114c6ccfbbc37172050ff5dfc assets/kamenridercraft/models/item/milktirol_gochizo.json
 559c16ab7c8226862aeb63ffc33f08fbe67fa3ee assets/kamenridercraft/models/item/mitaramotti_gochizo.json

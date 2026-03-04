@@ -1,0 +1,36 @@
+{
+	"name": "Metamateriam",
+	"icon": "kamenridercraft:projection_capsem",
+	"category": "kamenridercraft:zeztz/riders",
+	"sortnum": 6,
+	"pages": [
+      {
+        "type": "patchouli:entity",
+        "anchor": "projection",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:metamateriam_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:projection_capsem_metamateriam\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Technolom Projection",
+        "text": "Accessed with the $(l:zeztz/items/capsems#projection_capsem)Projection Capsem$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Metamateriam",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/metamateriam_belt)Metamateriam Belt$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "plasma",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:metamateriam_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:plasma_capsem_metamateriam\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Inazuma Plasma",
+        "text": "Accessed with the $(l:zeztz/items/capsems#plasma_capsem)Plasma Capsem$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Metamateriam",
+        "text": "Appears in:$(li)Kamen Rider Nox: Transformation Classroom (2026, web special)$(br2)Transforms with the $(l:zeztz/devices/metamateriam_belt)Metamateriam Belt$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Strength VII (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Thunder Punch"
+      }
+    ]
+}
