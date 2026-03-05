@@ -266,9 +266,6 @@ public class Zeztz_Rider_Items {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 200, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
@@ -293,9 +290,6 @@ public class Zeztz_Rider_Items {
                     new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 200, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
