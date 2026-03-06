@@ -51,8 +51,8 @@ public class BaseBlasterItem extends BowItem {
     private int cooldown = 5;
     private float projDamage = 4;
     private int explosionPower = 4;
-    private String projShape = "long";
-    private String projColor = "red";
+    private String projShape = "";
+    private String projColor = "";
 
     private String fireType = "single";
     private int fireRate = 5;
@@ -95,8 +95,10 @@ public class BaseBlasterItem extends BowItem {
             case LASER:
                 LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
                 laserProjectile.setNoGravity(true);
-                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 5F);
+                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 1f, 5F);
                 laserProjectile.damageValue = this.projDamage;
+                laserProjectile.setColor(projColor);
+                laserProjectile.setShape(projShape);
                 user.level().addFreshEntity(laserProjectile);
                 break;
 
@@ -129,13 +131,11 @@ public class BaseBlasterItem extends BowItem {
 
             case ROCKET:
                 RocketProjectileEntity rocketProjectile = new RocketProjectileEntity(user, user.level());
-                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
+                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 0F);
                 rocketProjectile.explosionPower = this.explosionPower;
+                rocketProjectile.setColor(projColor);
+                rocketProjectile.setShape(projShape);
                 user.level().addFreshEntity(rocketProjectile);
-                break;
-
-            case ROUZE_CARD:
-                System.out.println("Next update :3");
                 break;
 
             case WIND_CHARGE:
@@ -216,6 +216,16 @@ public class BaseBlasterItem extends BowItem {
 
     public BaseBlasterItem setCooldown(int cd) {
         this.cooldown = cd;
+        return this;
+    }
+
+    public BaseBlasterItem setProjColor(String color) {
+        this.projColor = color.toLowerCase();
+        return this;
+    }
+
+    public BaseBlasterItem setProjShape(String shape) {
+        this.projShape = shape.toLowerCase();
         return this;
     }
 

@@ -9,12 +9,16 @@ import software.bernie.geckolib.model.GeoModel;
 public class LaserModel extends GeoModel<LaserProjectileEntity> {
     @Override
     public ResourceLocation getModelResource(LaserProjectileEntity animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/laser.geo.json");
+        if (animatable.getShape().isEmpty()) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/laser.geo.json");
+        } else {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + animatable.getShape() + "_laser.geo.json");
+        }
     }
 
     @Override
     public ResourceLocation getTextureResource(LaserProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/laser.png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/"  +animatable.getColor() + "_laser.png");
     }
 
     @Override

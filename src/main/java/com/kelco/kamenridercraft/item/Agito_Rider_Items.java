@@ -463,7 +463,7 @@ public class Agito_Rider_Items {
 
 
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setCooldown(60).setExplosionPower(3).AddToList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("g4").setProjShape("g4").setCooldown(60).setExplosionPower(3).AddToList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item>V1_SHOT = ITEMS.register("v1_shot",

@@ -3,6 +3,9 @@ package com.kelco.kamenridercraft.entities.projectile;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -29,7 +32,20 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class RocketProjectileEntity extends AbstractArrow implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
     public float explosionPower = 4F;
+
+    private static final EntityDataAccessor<String> COLOR_DATA =
+            SynchedEntityData.defineId(RocketProjectileEntity.class, EntityDataSerializers.STRING);
+
+    private static final EntityDataAccessor<String> SHAPE_DATA =
+            SynchedEntityData.defineId(RocketProjectileEntity.class, EntityDataSerializers.STRING);
+
+    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(COLOR_DATA, "");
+        builder.define(SHAPE_DATA, "");
+    }
 
     public RocketProjectileEntity(EntityType<? extends AbstractArrow> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -37,6 +53,22 @@ public class RocketProjectileEntity extends AbstractArrow implements GeoEntity {
 
     public RocketProjectileEntity(LivingEntity shooter, Level level) {
         super(MobsCore.ROCKET_PROJECTILE.get(), shooter, level, new ItemStack(Items.APPLE), new ItemStack(Items.BOW));
+    }
+
+    public void setColor(String color) {
+        this.entityData.set(COLOR_DATA, color);
+    }
+
+    public String getColor() {
+        return this.entityData.get(COLOR_DATA);
+    }
+
+    public void setShape(String shape) {
+        this.entityData.set(SHAPE_DATA, shape);
+    }
+
+    public String getShape() {
+        return this.entityData.get(SHAPE_DATA);
     }
 
     @Override

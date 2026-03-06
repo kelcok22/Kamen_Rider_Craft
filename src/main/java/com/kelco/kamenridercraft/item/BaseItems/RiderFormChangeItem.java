@@ -1,18 +1,11 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
-import javax.annotation.Nullable;
-
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
-
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -31,6 +24,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib.cache.GeckoLibCache;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class RiderFormChangeItem extends BaseItem {
 
@@ -541,6 +539,10 @@ public class RiderFormChangeItem extends BaseItem {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
                 if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown()) STIFT_ITEM.use(level, player, usedHand);
                 else if (CanChange(player,belt,BELT)) {
+                    if (!player.isCreative()) {
+                        player.getCooldowns().addCooldown(this, 60);
+                        player.addEffect(new MobEffectInstance(Effect_core.FORM_LOCK, 60, 0,true,false));
+                    }
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (RESET_FORM_MAIN& Objects.equals(belt.Rider, RIDER_NAME))RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);

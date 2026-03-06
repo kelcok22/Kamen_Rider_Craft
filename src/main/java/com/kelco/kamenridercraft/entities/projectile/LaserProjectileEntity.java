@@ -1,6 +1,9 @@
 package com.kelco.kamenridercraft.entities.projectile;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -19,8 +22,21 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class LaserProjectileEntity extends AbstractArrow implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
     public  float damageValue = 4F;
-    public String color = "blue";
+    public  int timer = 0;
+
+    private static final EntityDataAccessor<String> COLOR_DATA =
+            SynchedEntityData.defineId(LaserProjectileEntity.class, EntityDataSerializers.STRING);
+
+    private static final EntityDataAccessor<String> SHAPE_DATA =
+            SynchedEntityData.defineId(LaserProjectileEntity.class, EntityDataSerializers.STRING);
+
+    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(COLOR_DATA, "");
+        builder.define(SHAPE_DATA, "");
+    }
 
     public LaserProjectileEntity(EntityType<? extends AbstractArrow> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -30,9 +46,29 @@ public class LaserProjectileEntity extends AbstractArrow implements GeoEntity {
         super(MobsCore.LASER_PROJECTILE.get(), shooter, level, new ItemStack(Items.APPLE), new ItemStack(Items.BOW));
     }
 
+    public void setColor(String color) {
+        this.entityData.set(COLOR_DATA, color);
+    }
+
+    public String getColor() {
+       return this.entityData.get(COLOR_DATA);
+    }
+
+    public void setShape(String shape) {
+        this.entityData.set(SHAPE_DATA, shape);
+    }
+
+    public String getShape() {
+        return this.entityData.get(SHAPE_DATA);
+    }
+
 @Override
     public void tick() {
         super.tick();
+        if (timer == 240) {
+            this.discard();
+        }
+        timer += 1;
         if (this.isInLiquid() || this.isInPowderSnow){
             this.discard();
         }
