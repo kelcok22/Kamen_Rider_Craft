@@ -17,6 +17,7 @@ import net.minecraft.stats.Stats;
 import net.minecraft.util.Unit;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
@@ -37,12 +38,6 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class BaseBlasterItem extends BowItem {
-
-    public BaseBlasterItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-        super(prop.durability(toolTier.getUses()).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
-        ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-    }
-
     private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
     private Item FormChangeItem = null;
     private Item HenshinBeltItem = null;
@@ -54,9 +49,12 @@ public class BaseBlasterItem extends BowItem {
     private String projShape = "";
     private String projColor = "";
 
-    private String fireType = "single";
-    private int fireRate = 5;
-    private int shots = 3;
+    private String firetype = "";
+    private int shots;
+    private int tickCount = 0;
+    private Boolean canReload = true;
+    float accuracyMod = 0F;
+    private BlasterProjectile projectile = BlasterProjectile.ARROW;
 
     public enum BlasterProjectile {
         ARROW,
@@ -73,7 +71,26 @@ public class BaseBlasterItem extends BowItem {
         WITHER_SKULL,
         FIREWORK
     };
-    private BlasterProjectile projectile = BlasterProjectile.ARROW;
+
+
+    public BaseBlasterItem(Tier toolTier, int Atk, float Spd, Properties prop) {
+        super(prop.durability(toolTier.getUses()).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
+        ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+        if (this.firetype.equals("burst")) {
+            this.shots = 2;
+        } else {
+            this.shots = 9;
+        }
+    }
+
+    public static ItemAttributeModifiers createAttributes(Tier tier, int attackDamage, float attackSpeed) {
+        return createAttributes(tier, (float) attackDamage, attackSpeed);
+    }
+
+    public static ItemAttributeModifiers createAttributes(Tier p_330371_, float p_331976_, float p_332104_) {
+        return ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, p_331976_ + p_330371_.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, p_332104_, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build();
+    }
+
 
     public void fire(LivingEntity user, Vec3 vec3) {
         switch (projectile) {
@@ -95,7 +112,7 @@ public class BaseBlasterItem extends BowItem {
             case LASER:
                 LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
                 laserProjectile.setNoGravity(true);
-                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 1f, 0F);
+                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 0F + accuracyMod);
                 laserProjectile.damageValue = this.projDamage;
                 laserProjectile.setColor(projColor);
                 laserProjectile.setShape(projShape);
@@ -104,7 +121,7 @@ public class BaseBlasterItem extends BowItem {
 
             case CELL_MEDAL:
                 CellMedalProjectileEntity cellProjectile = new CellMedalProjectileEntity(user, user.level());
-                cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 3.5f, 0F);
+                cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 3.5f, 0F + accuracyMod);
                 cellProjectile.damageValue = this.projDamage;
                 user.level().addFreshEntity(cellProjectile);
                 break;
@@ -131,7 +148,7 @@ public class BaseBlasterItem extends BowItem {
 
             case ROCKET:
                 RocketProjectileEntity rocketProjectile = new RocketProjectileEntity(user, user.level());
-                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F);
+                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + accuracyMod);
                 rocketProjectile.explosionPower = this.explosionPower;
                 rocketProjectile.setColor(projColor);
                 rocketProjectile.setShape(projShape);
@@ -151,15 +168,15 @@ public class BaseBlasterItem extends BowItem {
 
             case FIREWORK:
                 ItemStack rocket = new ItemStack(Items.FIREWORK_ROCKET);
-                FireworkRocketEntity firework = new FireworkRocketEntity(user.level(), rocket ,user);
+                FireworkRocketEntity firework = new FireworkRocketEntity(user.level(), rocket, user);
                 firework.setPos(firework.getX(), user.getY(0.5D) + 0.5D, firework.getZ());
                 user.level().addFreshEntity(firework);
                 break;
         }
     }
 
-    public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
-        if (entityLiving instanceof Player player && level instanceof ServerLevel serverlevel) {
+    public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeLeft) {
+        if (livingEntity instanceof Player player && level instanceof ServerLevel serverlevel) {
             if (HenshinBeltItem != null && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
                 if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem formItem)
@@ -171,77 +188,25 @@ public class BaseBlasterItem extends BowItem {
 
             if (projectile != BlasterProjectile.ARROW) {
                 fire(player, player.getLookAngle());
-            } else if (entityLiving.hasEffect(Effect_core.SHOT_BOOST)) {
+            } else if (livingEntity.hasEffect(Effect_core.SHOT_BOOST)) {
                 ItemStack arrow = new ItemStack(Items.ARROW, 1);
                 arrow.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
-                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 2 * (entityLiving.getEffect(Effect_core.SHOT_BOOST).getAmplifier() + 1), 1.0F, true, null);
+                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 2 * (livingEntity.getEffect(Effect_core.SHOT_BOOST).getAmplifier() + 1), 1.0F + accuracyMod + accuracyMod, true, null);
             } else {
                 ItemStack arrow = new ItemStack(Items.ARROW, 1);
                 arrow.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
-                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 3, 1.0F, true, null);
+                this.shoot(serverlevel, player, player.getUsedItemHand(), stack, List.of(arrow), 3, 1.0F + accuracyMod + accuracyMod, true, null);
             }
 
             level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+            if (this.firetype.equals("burst") || this.firetype.equals("hold")) {
+                serverlevel.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.CHAIN_BREAK, SoundSource.PLAYERS, 3.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+            }
             stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
             player.awardStat(Stats.ITEM_USED.get(this));
             player.getCooldowns().addCooldown(this, this.cooldown);
+            canReload = true;
         }
-    }
-
-    public BaseBlasterItem AddToList(List<Item> TabList) {
-        TabList.add(this);
-        return this;
-    }
-
-    public BaseBlasterItem KeepItem() {
-        craftingRemainingItem = this;
-        return this;
-    }
-
-    public ItemStack getCraftingRemainingItem(ItemStack stack) {
-        if (stack.getItem() instanceof BaseItem) {
-            if (!hasCraftingRemainingItem(stack)) {
-                return ItemStack.EMPTY;
-            }
-            ItemStack save = new ItemStack(craftingRemainingItem);
-            save.applyComponents(stack.getComponents());
-            return save;
-        } else return new ItemStack(this.getCraftingRemainingItem());
-    }
-
-
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return ((BaseBlasterItem) stack.getItem()).craftingRemainingItem != null;
-    }
-
-    public BaseBlasterItem setCooldown(int cd) {
-        this.cooldown = cd;
-        return this;
-    }
-
-    public BaseBlasterItem setProjColor(String color) {
-        this.projColor = color.toLowerCase();
-        return this;
-    }
-
-    public BaseBlasterItem setProjShape(String shape) {
-        this.projShape = shape.toLowerCase();
-        return this;
-    }
-
-    public BaseBlasterItem setDamage(float damageChange) {
-        this.projDamage = damageChange;
-        return this;
-    }
-
-    @Override
-    public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
-        return !player.isCreative();
-    }
-
-    @Override
-    protected void shootProjectile(LivingEntity shooter, Projectile projectile, int index, float velocity, float inaccuracy, float angle, @Nullable LivingEntity target) {
-        projectile.shootFromRotation(shooter, shooter.getXRot(), shooter.getYRot() + angle, 0.0F, velocity, inaccuracy);
     }
 
     @Override
@@ -257,17 +222,67 @@ public class BaseBlasterItem extends BowItem {
         }
     }
 
-    public int getDefaultProjectileRange() {
-        return 30;
+    @Override
+    public void onUseTick(Level level, LivingEntity livingEntity, ItemStack stack, int remainingUseDuration) {
+        super.onUseTick(level, livingEntity, stack, remainingUseDuration);
+        if (livingEntity instanceof Player player && level instanceof ServerLevel serverlevel) {
+            if (this.firetype.equals("burst") || this.firetype.equals("hold")) {
+                if (this.shots > 0) {
+                    if (this.tickCount >= 3) {
+                        this.canReload = false;
+                        if (this.projectile != BlasterProjectile.ARROW) {
+                            this.fire(livingEntity, livingEntity.getDeltaMovement());
+                        } else {
+                            ItemStack arrow = new ItemStack(Items.ARROW, 1);
+                            arrow.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
+                            this.shoot(serverlevel, livingEntity, player.getUsedItemHand(), stack, List.of(arrow), 3, 1.0F + accuracyMod + accuracyMod, true, null);
+                            stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+                            player.awardStat(Stats.ITEM_USED.get(this));
+                        }
+                        serverlevel.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+                        this.shots -= 1;
+                        this.tickCount = 0;
+                    } else {
+                        this.tickCount += 1;
+                    }
+                } else {
+                    player.releaseUsingItem();
+                }
+            }
+        }
     }
 
-    public BaseBlasterItem ChangeRepairItem(Item item) {
-        RepairItem = item;
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        if (entity instanceof Player player) {
+            if (isSelected) {
+                if (this.canReload) {
+                    if (this.firetype.equals("burst")) {
+                        this.shots = 2;
+                    } else if (this.firetype.equals("hold")) {
+                        this.shots = 9;
+                    }
+                }
+            }
+            if (!isSelected && this.canReload == false) {
+                this.canReload = true;
+                if (this.firetype.equals("burst")) {
+                    this.shots = 2;
+                } else if (this.firetype.equals("hold")) {
+                    this.shots = 9;
+                }
+                player.getCooldowns().addCooldown(this, this.cooldown);
+            }
+        }
+    }
+
+    public BaseBlasterItem AddToList(List<Item> TabList) {
+        TabList.add(this);
         return this;
     }
 
-    public boolean isValidRepairItem(ItemStack p_40392_, ItemStack p_40393_) {
-        return p_40393_.getItem() == RepairItem;
+    @Override
+    public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
+        return !player.isCreative();
     }
 
     public BaseBlasterItem IsFormItem(Item item) {
@@ -285,14 +300,77 @@ public class BaseBlasterItem extends BowItem {
         return this;
     }
 
+
+    public BaseBlasterItem KeepItem() {
+        craftingRemainingItem = this;
+        return this;
+    }
+
+    public ItemStack getCraftingRemainingItem(ItemStack stack) {
+        if (stack.getItem() instanceof BaseItem) {
+            if (!hasCraftingRemainingItem(stack)) {
+                return ItemStack.EMPTY;
+            }
+            ItemStack save = new ItemStack(craftingRemainingItem);
+            save.applyComponents(stack.getComponents());
+            return save;
+        } else return new ItemStack(this.getCraftingRemainingItem());
+    }
+
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return ((BaseBlasterItem) stack.getItem()).craftingRemainingItem != null;
+    }
+
+    public BaseBlasterItem ChangeRepairItem(Item item) {
+        RepairItem = item;
+        return this;
+    }
+
+    public boolean isValidRepairItem(ItemStack p_40392_, ItemStack p_40393_) {
+        return p_40393_.getItem() == RepairItem;
+    }
+
+
+    public BlasterProjectile getProjectile() {
+        return this.projectile;
+    }
+
+    public BaseBlasterItem setCooldown(int cd) {
+        this.cooldown = cd;
+        return this;
+    }
+
+    public BaseBlasterItem setProjColor(String color) {
+        this.projColor = color.toLowerCase();
+        if (this.projColor.equals("red")) {
+            this.projColor = "";
+        }
+        return this;
+    }
+
+    public BaseBlasterItem setProjShape(String shape) {
+        this.projShape = shape.toLowerCase();
+        if (this.projShape.equals("long")) {
+            this.projShape = "";
+        }
+        return this;
+    }
+
+    public BaseBlasterItem setDamage(float damageChange) {
+        this.projDamage = damageChange;
+        return this;
+    }
+
     public BaseBlasterItem setProjectile(BlasterProjectile type) {
         projectile = type;
         return this;
     }
 
-    public BaseBlasterItem setFireTypeData(String type, int rate) {
-        fireType = type;
-        fireRate = rate;
+    public BaseBlasterItem setFiretype(String type) {
+        firetype = type.toLowerCase();
+        if (this.firetype.equals("single")) {
+            this.firetype = "";
+        }
         return this;
     }
 
@@ -301,10 +379,15 @@ public class BaseBlasterItem extends BowItem {
         return this;
     }
 
-    public BlasterProjectile getProjectile() {
-        return this.projectile;
+
+    @Override
+    protected void shootProjectile(LivingEntity shooter, Projectile projectile, int index, float velocity, float inaccuracy, float angle, @Nullable LivingEntity target) {
+        projectile.shootFromRotation(shooter, shooter.getXRot(), shooter.getYRot() + angle, 0.0F, velocity, inaccuracy);
     }
 
+    public int getDefaultProjectileRange() {
+        return 30;
+    }
 
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         return true;
@@ -313,13 +396,5 @@ public class BaseBlasterItem extends BowItem {
     @Override
     public void postHurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         stack.hurtAndBreak(1, attacker, EquipmentSlot.MAINHAND);
-    }
-
-    public static ItemAttributeModifiers createAttributes(Tier tier, int attackDamage, float attackSpeed) {
-        return createAttributes(tier, (float) attackDamage, attackSpeed);
-    }
-
-    public static ItemAttributeModifiers createAttributes(Tier p_330371_, float p_331976_, float p_332104_) {
-        return ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, p_331976_ + p_330371_.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, p_332104_, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build();
     }
 }
