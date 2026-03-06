@@ -715,7 +715,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddCompatibilityList(new String[] {"ooo_ancient"}).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANCIENT_BATTA_MEDAL = ITEMS.register("ancient_batta_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_batta","ooo","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_batta","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
