@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.faiz;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
 import net.minecraft.core.Holder;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
@@ -25,5 +26,14 @@ public class KaixaDriverItem extends RiderDriverItem {
 		}
         return "blank";
     }
+
+	@Override
+	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
+	{
+		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.KAIXA_DRIVER.get()
+			&&rider.isHolding(Faiz_Rider_Items.KAIXA_PHONE.get())) return "belts/kaixa_driver_belt_empty";
+
+		return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+	}
 
 }

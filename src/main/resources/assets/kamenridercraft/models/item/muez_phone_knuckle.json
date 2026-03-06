@@ -1,0 +1,19 @@
+{
+	"parent": "minecraft:builtin/entity",
+	"gui_light": "front",
+	"loader": "neoforge:separate_transforms",
+	"base": {
+		"parent": "kamenridercraft:item/muez_phone_knuckle_in_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "kamenridercraft:item/muez_phone_knuckle_in_gui"
+		},
+		"ground": {
+			"parent": "kamenridercraft:item/muez_phone_knuckle_in_gui"
+		},
+		"fixed": {
+			"parent": "kamenridercraft:item/muez_phone_knuckle_in_gui"
+		}
+	}
+}

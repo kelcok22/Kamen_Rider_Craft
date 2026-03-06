@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Phone 20 Plus Knuckle Mode",
+	"icon": "kamenridercraft:faiz_phone_20_plus_knuckle",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Used by $(l:faiz/riders/next_faiz)Kamen Rider Next Faiz$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_phone_20_plus_knuckle"
+		}
+	]
+}

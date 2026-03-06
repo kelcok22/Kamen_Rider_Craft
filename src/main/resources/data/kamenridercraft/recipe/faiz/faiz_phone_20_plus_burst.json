@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "next_faiz",
+  "pattern": [
+	"RXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_mission_memory"
+	},
+	"M": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"R": {
+	  "item": "kamenridercraft:next_faiz_mission_memory"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:faiz_phone_20_plus_burst"
+  }	
+}

@@ -1,8 +1,8 @@
 {
-	"name": "Muez Edge",
-	"icon": "kamenridercraft:muez_edge",
+	"name": "Muez Phone Burst Mode",
+	"icon": "kamenridercraft:muez_phone_burst",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -10,8 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:faiz/muez_edge",
-          "text": "Drops from:$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l)'s equipment"
+			"recipe": "kamenridercraft:faiz/muez_phone_burst"
 		}
 	]
 }

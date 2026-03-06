@@ -23,6 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:faiz/muez_driver",
 	  "kamenridercraft:faiz/muez_edge",
+	  "kamenridercraft:faiz/muez_phone_burst",
+	  "kamenridercraft:faiz/muez_phone_knuckle",
 	  "kamenridercraft:faiz/next_faiz_mission_memory",
 	  "kamenridercraft:faiz/next_kaixa_mission_memory"
 	]
