@@ -95,7 +95,7 @@ public class BaseBlasterItem extends BowItem {
             case LASER:
                 LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
                 laserProjectile.setNoGravity(true);
-                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 1f, 5F);
+                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 1f, 0F);
                 laserProjectile.damageValue = this.projDamage;
                 laserProjectile.setColor(projColor);
                 laserProjectile.setShape(projShape);
@@ -104,7 +104,7 @@ public class BaseBlasterItem extends BowItem {
 
             case CELL_MEDAL:
                 CellMedalProjectileEntity cellProjectile = new CellMedalProjectileEntity(user, user.level());
-                cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 4f, 0F);
+                cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 3.5f, 0F);
                 cellProjectile.damageValue = this.projDamage;
                 user.level().addFreshEntity(cellProjectile);
                 break;
@@ -131,7 +131,7 @@ public class BaseBlasterItem extends BowItem {
 
             case ROCKET:
                 RocketProjectileEntity rocketProjectile = new RocketProjectileEntity(user, user.level());
-                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 0F);
+                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F);
                 rocketProjectile.explosionPower = this.explosionPower;
                 rocketProjectile.setColor(projColor);
                 rocketProjectile.setShape(projShape);

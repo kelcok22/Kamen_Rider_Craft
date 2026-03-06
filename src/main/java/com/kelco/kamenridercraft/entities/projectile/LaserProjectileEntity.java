@@ -4,6 +4,8 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -91,6 +93,10 @@ public class LaserProjectileEntity extends AbstractArrow implements GeoEntity {
     protected void onHitBlock(BlockHitResult result) {
         super.onHitBlock(result);
         this.discard();
+    }
+
+    protected SoundEvent getDefaultHitGroundSoundEvent() {
+        return SoundEvents.BLAZE_BURN;
     }
 
     @Override

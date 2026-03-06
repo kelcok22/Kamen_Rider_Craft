@@ -18,7 +18,12 @@ public class LaserModel extends GeoModel<LaserProjectileEntity> {
 
     @Override
     public ResourceLocation getTextureResource(LaserProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/"  +animatable.getColor() + "_laser.png");
+        if (animatable.getShape().isEmpty()) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/laser.png");
+        } else {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/"  +animatable.getColor() + "_laser.png");
+        }
+
     }
 
     @Override
