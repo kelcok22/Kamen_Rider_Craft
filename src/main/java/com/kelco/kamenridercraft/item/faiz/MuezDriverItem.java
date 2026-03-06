@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
-
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -37,6 +36,16 @@ public class MuezDriverItem extends RiderDriverItem {
             else if (num==2&&rider.getOffhandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_r";
         }
         return "blank";
+    }
+
+    @Override
+    public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+    {
+        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.MUEZ_DRIVER.get()
+                &&(rider.isHolding(Faiz_Rider_Items.MUEZ_PHONE_BURST_MODE.get())||(rider.isHolding(Faiz_Rider_Items.MUEZ_PHONE_KNUCKLE_MODE.get())))) return "belts/muez_driver_belt_empty";
+
+        return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+
     }
 
 

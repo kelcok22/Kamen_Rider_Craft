@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:faiz/next_kaixa_driver",
-	  "kamenridercraft:faiz/kaixa_crosslasher"
+	  "kamenridercraft:faiz/kaixa_crosslasher",
+	  "kamenridercraft:faiz/kaixa_phone_xx"
 	]
   },
   "sends_telemetry_event": false

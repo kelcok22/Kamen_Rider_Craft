@@ -21,7 +21,9 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:faiz/faiz_driver_next"
+	  "kamenridercraft:faiz/faiz_driver_next",
+	  "kamenridercraft:faiz/faiz_phone_20_plus_burst",
+	  "kamenridercraft:faiz/faiz_phone_20_plus_knuckle"
 	]
   },
   "sends_telemetry_event": false
