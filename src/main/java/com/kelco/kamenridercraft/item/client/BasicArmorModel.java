@@ -38,7 +38,7 @@ public class BasicArmorModel extends GeoModel<BasicArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(BasicArmorItem animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/ichigo.animation.json");
+        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_rider.animation.json");
     }
 
     @Override

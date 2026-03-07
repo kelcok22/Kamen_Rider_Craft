@@ -441,6 +441,7 @@ public class RiderDriverItem extends RiderArmorItem {
         return "blank";
     }
 
+
     public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Belt_Model());
     }
@@ -453,11 +454,6 @@ public class RiderDriverItem extends RiderArmorItem {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
     }
 
-    public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
-
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation(this.Rider));
-
-    }
 
     public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
 
@@ -623,7 +619,13 @@ public class RiderDriverItem extends RiderArmorItem {
             return Base_Form_Item;
     }
 
+    public boolean HasCpae(ItemStack itemstack) {
+            for (int n = 0; n < Num_Base_Form_Item; n++) {
+                if(get_Form_Item(itemstack, n + 1).get_has_cape())return true;
+            }
+            return false;
     }
+}
 
 
 

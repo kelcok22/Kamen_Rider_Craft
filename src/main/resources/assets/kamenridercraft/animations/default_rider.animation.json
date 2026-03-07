@@ -1,9 +1,25 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"idle": {
-			"loop": true
-		},
+      "idle": {
+        "loop": true,
+        "animation_length": 5,
+        "bones": {
+          "cape": {
+            "rotation": {
+              "0.0": {
+                "post": [0, 0, 0],
+                "lerp_mode": "catmullrom"
+              },
+              "2.5": {
+                "post": [5, 0, 0],
+                "lerp_mode": "catmullrom"
+              },
+              "5.0": [0, 0, 0]
+            }
+          }
+        }
+      },
 		"walk": {
 			"loop": true
 		},

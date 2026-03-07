@@ -49,7 +49,6 @@ public class RiderFormChangeItem extends BaseItem {
     private String UPDATED_BELT_MODEL;
     private String UPDATED_MODEL;
     private String FLYING_MODEL;
-    private String UPDATED_MODEL_ANIMATION;
     private Boolean SET_SHOW_FACE = false;
     private Boolean SET_SHOW_UNDER = false;
 
@@ -145,12 +144,6 @@ public class RiderFormChangeItem extends BaseItem {
         if (UPDATED_MODEL!=null) return UPDATED_MODEL;
         ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+getRiderName(riderName)+FORM_NAME+".geo.json");
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? getRiderName(riderName)+FORM_NAME+".geo.json" : (get_Has_Static_Wings() ? "default_wings_armor.geo.json" : "default.geo.json"));
-    }
-
-    public String get_Animation(String riderName) {
-        if (UPDATED_MODEL_ANIMATION!=null) return "animations/"+UPDATED_MODEL_ANIMATION;
-        ResourceLocation FORM_ANIM = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/"+getRiderName(riderName)+FORM_NAME+".animation.json");
-        return (GeckoLibCache.getBakedAnimations().get(FORM_ANIM)!=null ? "animations/"+getRiderName(riderName)+FORM_NAME+".animation.json" : "animations/ichigo.animation.json");
     }
 
     public Boolean get_Show_Face() {
@@ -255,11 +248,6 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem ChangeAnimation(String animation) {
-        UPDATED_MODEL_ANIMATION=animation;
-        return this;
-    }
-
     public RiderFormChangeItem SetShowFace() {
         SET_SHOW_FACE = true;
         return this;
@@ -338,7 +326,6 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem HasCape() {
-        ChangeAnimation("default_cape.animation.json");
         HAS_CAPE=true;
         return this;
     }

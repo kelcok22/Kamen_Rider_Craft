@@ -381,12 +381,6 @@ public class DesireDriverItem  extends RiderDriverItem {
 		else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 	}
 
-	public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
-		if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_BUFFA.asItem()||itemstack.getItem()==Geats_Rider_Items.DESIRE_DRIVER_PUNKJACK.asItem()&slot == EquipmentSlot.HEAD) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_cape.animation.json");
-
-		else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation(this.Rider));
-
-	}
 
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {

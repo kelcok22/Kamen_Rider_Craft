@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -66,8 +67,10 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
             private RiderArmorRenderer renderer;
             @Override
             public <T extends LivingEntity> HumanoidModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack, @Nullable EquipmentSlot equipmentSlot, @Nullable HumanoidModel<T> original) {
-                //if(this.renderer == null)
+                if(this.renderer == null)
                     this.renderer = new RiderArmorRenderer(livingEntity, equipmentSlot);
+                final Minecraft mc = Minecraft.getInstance();
+                this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original, mc.renderBuffers().bufferSource(), mc.getTimer().getGameTimeDeltaPartialTick(true), 0, 0, 0, 0);
 
                 return this.renderer;
             }
@@ -165,6 +168,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
         RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
+        RawAnimation IDLE_CAPE = RawAnimation.begin().thenLoop("idle_cape");
 
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
@@ -201,7 +205,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                     if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) > 0)setTransforming(player.getItemBySlot(EquipmentSlot.FEET),GetTransforming(player.getItemBySlot(EquipmentSlot.FEET))-0.2f);
                     if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) < 0) setTransforming(player.getItemBySlot(EquipmentSlot.FEET),0f);
 
-                    if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_has_cape()) {
+                    if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
                         float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
                         float ball = 0;
 
