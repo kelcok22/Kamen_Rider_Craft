@@ -3,9 +3,10 @@ package com.kelco.kamenridercraft.item.ichigo;
 import com.kelco.kamenridercraft.client.renderer.DrillArmItemRenderer;
 import com.kelco.kamenridercraft.item.BaseItems.BasePickaxeItem;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
@@ -24,7 +25,8 @@ import java.util.function.Consumer;
 
 public class DrillArmItem extends BasePickaxeItem implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-	private boolean triggered = false;
+	private int swingTimer = 0;
+	private boolean animationOn = false;
 	private static final RawAnimation ACTIVATE_ANIM = RawAnimation.begin().thenPlay("drilling");
 
 	public DrillArmItem(Tier toolTier, int Atk, float Spd, Properties prop) {
@@ -53,12 +55,33 @@ public class DrillArmItem extends BasePickaxeItem implements GeoItem {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-//		if (level instanceof ServerLevel serverLevel) {
-//			if (!triggered) {
-//				triggerAnim(player, GeoItem.getOrAssignId(player.getItemInHand(hand), serverLevel), "Drilling", "drilling");
-//			}
-		return super.use(level, player, hand);
+	public boolean onEntitySwing(ItemStack stack, LivingEntity entity, InteractionHand hand) {
+		if (entity.level() instanceof ServerLevel serverLevel) {
+			triggerAnim(entity, GeoItem.getOrAssignId(stack, serverLevel), "Drilling", "drilling");
+			swingTimer = 0;
+			animationOn = true;
+		}
+		return super.onEntitySwing(stack, entity, hand);
+	}
+
+	@Override
+	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+		super.inventoryTick(stack, level, entity, slotId, isSelected);
+		if (entity.level() instanceof ServerLevel serverLevel){
+			if (!isSelected) {
+				animationOn = false;
+				swingTimer = 0;
+			}
+			if (animationOn) {
+				if (swingTimer >= 20) {
+					animationOn = false;
+					swingTimer = 0;
+				}
+				swingTimer +=1;
+			} else{
+				stopTriggeredAnim(entity, GeoItem.getOrAssignId(stack, (ServerLevel) entity.level()), "Drilling", "drilling");
+			}
+		}
 	}
 
 	@Override
