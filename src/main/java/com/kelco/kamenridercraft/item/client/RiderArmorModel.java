@@ -84,7 +84,7 @@ if (entity instanceof LivingEntity RIDER) {
     GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
     GeoBone tire3 = this.getAnimationProcessor().getBone("tire3");
 
-    GeoBone bipedHead = this.getAnimationProcessor().getBone("poop_ball_vice");
+
 
     if (cape != null & RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)) < 0)
         cape.setRotX(RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
@@ -93,7 +93,8 @@ if (entity instanceof LivingEntity RIDER) {
 
     if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
         belt.setCustomAnimations(an, instanceId, state);
-
+        /**
+        GeoBone bipedHead = this.getAnimationProcessor().getBone("poop_ball_vice");
         if (bipedHead != null) {
             if (RiderDriverItem.isTransforming(RIDER)) {
                 bipedHead.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
@@ -105,7 +106,7 @@ if (entity instanceof LivingEntity RIDER) {
                 bipedHead.setPosZ(0);
             }
         }
-
+**/
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
                 tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
