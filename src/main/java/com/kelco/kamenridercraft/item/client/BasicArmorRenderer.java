@@ -14,16 +14,14 @@ import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.util.RenderUtil;
 
 public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
-    private static LivingEntity RIDER;
 
     public BasicArmorRenderer(LivingEntity livingEntity, EquipmentSlot equipmentSlot) {
 
-        super(new BasicArmorModel(livingEntity, equipmentSlot));
+        super(new BasicArmorModel());
 
         if (livingEntity.getItemBySlot(equipmentSlot).getItem() instanceof BasicArmorItem belt) {
             if (belt.Glow)addRenderLayer(new AutoGlowingGeoLayer<>(this));
         }
-        RIDER =  livingEntity;
     }
 
     @Override

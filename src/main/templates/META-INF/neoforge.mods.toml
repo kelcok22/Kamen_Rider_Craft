@@ -89,7 +89,7 @@ side="BOTH"
 modId="geckolib"
 type="required"
 reason = "GeckoLib is used for rendering the armor and some of the mobs."
-versionRange="[4.6.6,)"
+versionRange="[4.8.4,)"
 ordering="AFTER"
 side="BOTH"
 

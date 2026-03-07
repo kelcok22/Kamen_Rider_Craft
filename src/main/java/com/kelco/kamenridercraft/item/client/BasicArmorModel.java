@@ -11,28 +11,19 @@ import software.bernie.geckolib.model.GeoModel;
 
 public class BasicArmorModel extends GeoModel<BasicArmorItem> {
 
-    private static LivingEntity RIDER;
-    private final EquipmentSlot slot;
 
-    public BasicArmorModel(LivingEntity livingEntity, EquipmentSlot equipmentSlot) {
-        RIDER =  livingEntity;
-        slot =  equipmentSlot;
+    public BasicArmorModel() {
     }
 
     @Override
     public ResourceLocation getModelResource(BasicArmorItem animatable) {
-        if (RIDER.getItemBySlot(slot).getItem() instanceof BasicArmorItem BELT) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+BELT.MODEL+".geo.json");
-        }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
+
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ animatable.MODEL+".geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(BasicArmorItem animatable) {
-        if (RIDER.getItemBySlot(slot).getItem() instanceof BasicArmorItem BELT) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+BELT.NAME+".png");
-        }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+animatable.MODEL+".png");
     }
 
 
