@@ -163,6 +163,26 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         return 0f;
     }
 
+    public static void setSD(ItemStack itemstack,Float num)
+    {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> form.putFloat("sd", num);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
+    }
+
+    public static Float GetSD(ItemStack itemstack)
+    {
+        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            return tag.getFloat("sd");
+        }
+        return 0f;
+    }
+
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
@@ -171,6 +191,8 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         RawAnimation IDLE_CAPE = RawAnimation.begin().thenLoop("idle_cape");
 
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
+
+
             Entity entity = state.getData(DataTickets.ENTITY);
             boolean IsWaking = false;
             boolean IsKicking = false;
@@ -202,6 +224,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                    IsWaking = RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_Walk();
 
                 if (this instanceof RiderDriverItem belt) {
+
                     if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) > 0)setTransforming(player.getItemBySlot(EquipmentSlot.FEET),GetTransforming(player.getItemBySlot(EquipmentSlot.FEET))-0.2f);
                     if (GetTransforming(player.getItemBySlot(EquipmentSlot.FEET)) < 0) setTransforming(player.getItemBySlot(EquipmentSlot.FEET),0f);
 

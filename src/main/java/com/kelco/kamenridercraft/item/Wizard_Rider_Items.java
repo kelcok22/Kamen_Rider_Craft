@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.client.RiderArmorRenderer;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.wizard.LegendWizardRingItem;
 import com.kelco.kamenridercraft.item.wizard.UnknownWizardRingItem;
@@ -23,6 +24,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -32,6 +34,10 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.renderer.GeoRenderer;
+
+import java.util.Objects;
 
 public class Wizard_Rider_Items {
 
@@ -74,6 +80,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
+
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_WIZARD_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 1, 0, 0, 0, 1);
@@ -1003,6 +1010,40 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS,
 					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+/**
+                @Override
+                public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
+                    switch (currentSlot) {
+                        case  HEAD->{
+                            return true;
+                        }
+                        case CHEST -> {
+                            if (Objects.equals(part, "body")) return true;
+                        }
+                        default -> {}
+                    }
+                    return false;
+                }
+
+                @Override
+                public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+                {
+                        if (equipmentSlot == EquipmentSlot.CHEST) {
+                                  return "wizard_circle";
+                        }
+                        return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+                }
+
+                @Override
+                public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+
+                    if (slot==EquipmentSlot.CHEST)return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/wizard_circle.geo.json");
+                    if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
+                        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
+                    }
+                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
+                }
+**/
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {

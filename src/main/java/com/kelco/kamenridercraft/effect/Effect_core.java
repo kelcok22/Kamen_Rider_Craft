@@ -200,7 +200,6 @@ public class Effect_core {
     public static final Holder<MobEffect> CLIMBING= EFFECT.register("climbing",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xffffff));
 
-
     public static final Holder<MobEffect>  FORM_TIMEOUT= EFFECT.register("form_timeout",
             () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
@@ -215,6 +214,9 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  HAPPY_MODE= EFFECT.register("happy_mode",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
+
+    public static final Holder<MobEffect>SD = EFFECT.register("sd", () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x77b72e)
+                    .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.small"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));

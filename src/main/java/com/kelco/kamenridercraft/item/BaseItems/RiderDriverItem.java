@@ -231,11 +231,14 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-
+        if (!level.isClientSide) {
+            if (player.hasEffect(Effect_core.SD))
+                setSD(player.getItemBySlot(EquipmentSlot.FEET), player.getEffect(Effect_core.SD).getAmplifier() + 2f);
+            else setSD(player.getItemBySlot(EquipmentSlot.FEET), 1f);
+        }
         // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
         if (stack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-
             if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
             if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
             if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
@@ -246,9 +249,6 @@ public class RiderDriverItem extends RiderArmorItem {
                     tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
                 if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
             }
-
-
-
 
         } else {
             set_Upadete_Form(stack);

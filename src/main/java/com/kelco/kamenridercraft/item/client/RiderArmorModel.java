@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.client;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
@@ -70,6 +71,8 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     @Override
     public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
 
+
+
         Entity entity = state.getData(DataTickets.ENTITY);
 if (entity instanceof LivingEntity RIDER) {
     GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
@@ -84,7 +87,12 @@ if (entity instanceof LivingEntity RIDER) {
     GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
     GeoBone tire3 = this.getAnimationProcessor().getBone("tire3");
 
-
+    GeoBone bipedHead = this.getAnimationProcessor().getBone("bipedHead");
+    if (bipedHead != null) {
+        bipedHead.setScaleX(RiderArmorItem.GetSD(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        bipedHead.setScaleY(RiderArmorItem.GetSD(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        bipedHead.setScaleZ(RiderArmorItem.GetSD(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+    }
 
     if (cape != null & RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)) < 0)
         cape.setRotX(RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
@@ -93,20 +101,18 @@ if (entity instanceof LivingEntity RIDER) {
 
     if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
         belt.setCustomAnimations(an, instanceId, state);
-        /**
-        GeoBone bipedHead = this.getAnimationProcessor().getBone("poop_ball_vice");
-        if (bipedHead != null) {
+
+        GeoBone wizard_circle = this.getAnimationProcessor().getBone("wizard_circle");
+        if (wizard_circle != null) {
             if (RiderDriverItem.isTransforming(RIDER)) {
-                bipedHead.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
-                bipedHead.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
-                bipedHead.setPosZ(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle.setHidden(false);
             }else {
-                bipedHead.setPosX(0);
-                bipedHead.setPosY(0);
-                bipedHead.setPosZ(0);
+                wizard_circle.setHidden(true);
+                wizard_circle.setPosX(0);
             }
         }
-**/
+
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
                 tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));

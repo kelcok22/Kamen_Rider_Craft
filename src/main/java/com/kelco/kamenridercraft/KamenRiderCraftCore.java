@@ -36,6 +36,7 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.world.attributeGenerator;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -175,9 +176,27 @@ public class KamenRiderCraftCore {
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
         if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
+            if(event.getEntity().hasEffect(Effect_core.SD)){
+                float sd = event.getEntity().getEffect(Effect_core.SD).getAmplifier() + 2f;
+                model.head.xScale = sd;
+                model.head.yScale = sd;
+                model.head.zScale = sd;
+                model.hat.xScale = sd;
+                model.hat.yScale = sd;
+                model.hat.zScale = sd;
+            }else{
+                model.head.xScale = 1;
+                model.head.yScale = 1;
+                model.head.zScale = 1;
+                model.hat.xScale = 1;
+                model.hat.yScale = 1;
+                model.hat.zScale = 1;
+            }
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
                     && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
                 double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
+
+
                 if (tag != 0) {
                     model.setAllVisible(false);
                     if (tag != 1) model.head.visible = true;
@@ -198,6 +217,8 @@ public class KamenRiderCraftCore {
                 } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(false);
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
+
+
 
         float size = 1;
 
