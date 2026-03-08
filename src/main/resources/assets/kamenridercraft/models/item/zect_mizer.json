@@ -1,6 +1,20 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "kamenridercraft:item/zect_mizer"
-    }
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/zect_mizer"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, -1.75, -1.75],
+			"scale": [0.6, 0.6, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 135],
+			"translation": [0, -1.75, -1.75],
+			"scale": [0.6, 0.6, 1]
+		}
+	}
 }
