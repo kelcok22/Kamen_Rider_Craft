@@ -81,9 +81,6 @@ public class Wizard_Rider_Items {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 
-					((ServerLevel) player.level()).sendParticles(ModParticles.RED_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -662,9 +659,6 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -677,9 +671,6 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -1010,40 +1001,6 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS,
 					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
-/**
-                @Override
-                public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
-                    switch (currentSlot) {
-                        case  HEAD->{
-                            return true;
-                        }
-                        case CHEST -> {
-                            if (Objects.equals(part, "body")) return true;
-                        }
-                        default -> {}
-                    }
-                    return false;
-                }
-
-                @Override
-                public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
-                {
-                        if (equipmentSlot == EquipmentSlot.CHEST) {
-                                  return "wizard_circle";
-                        }
-                        return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
-                }
-
-                @Override
-                public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-
-                    if (slot==EquipmentSlot.CHEST)return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/wizard_circle.geo.json");
-                    if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
-                        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
-                    }
-                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
-                }
-**/
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
