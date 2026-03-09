@@ -616,7 +616,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            }.IsGlowing().HasCape().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_charge_up","stronger","electrer_belt",
@@ -638,7 +638,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            }.ChangeModel("stronger.geo.json").HasCape().IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_CORE = ITEMS.register("tackle_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","tackle","tackle_belt",
