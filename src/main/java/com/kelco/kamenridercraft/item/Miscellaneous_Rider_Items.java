@@ -202,7 +202,7 @@ public class Miscellaneous_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.IsGlowing().SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
+					.ChangeModel("tackle.geo.json").HasCape().IsGlowing().SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
