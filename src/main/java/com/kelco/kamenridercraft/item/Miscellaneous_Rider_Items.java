@@ -186,7 +186,7 @@ public class Miscellaneous_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_pre","amazon","condorer_belt",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.IsGlowing().addAlternative(RIDERMAN_BELT_CORE_ARTIST.get()));
+					.ChangeModel("amazon.geo.json").IsGlowing().addAlternative(RIDERMAN_BELT_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> ELECTRER_CORE_ARTIST = ITEMS.register("electrer_core_artist",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","stronger","electrer_belt_artist",

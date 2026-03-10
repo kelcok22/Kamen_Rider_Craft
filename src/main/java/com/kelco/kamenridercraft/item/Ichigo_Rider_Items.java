@@ -573,7 +573,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.AMAZON_TAB_ITEM));
+            }.ChangeModel("amazon.geo.json").IsGlowing().AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
