@@ -547,7 +547,7 @@ public class ModCommonEvents {
 			else if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
-						new ItemStack(Ichigo_Rider_Items.PREFECTER.get(), 1), 10, 8, 0.02F));
+						new ItemStack(Ichigo_Rider_Items.PERFECTER.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
 						new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));

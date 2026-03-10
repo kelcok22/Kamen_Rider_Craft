@@ -105,7 +105,11 @@ if (entity instanceof LivingEntity RIDER) {
         GeoBone wizard_circle = this.getAnimationProcessor().getBone("wizard_circle");
         if (wizard_circle != null) {
             if (RiderDriverItem.isTransforming(RIDER)) {
-                wizard_circle.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                    wizard_circle.setScaleX(1.1f);
+                    wizard_circle.setScaleY(1.1f);
+                    wizard_circle.setScaleZ(1.1f);
+
+                wizard_circle.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-10);
                 wizard_circle.setHidden(false);
             }else {
                 wizard_circle.setHidden(true);

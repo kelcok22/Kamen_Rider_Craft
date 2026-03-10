@@ -471,8 +471,8 @@ public class Ichigo_Rider_Items {
                 }
             }.IsGlowing().AddToList(RiderTabs.X_TAB_ITEM));
 
-    public static final DeferredItem<Item> PREFECTER = ITEMS.register("perfecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_perfector","riderman","tackle_belt",
+    public static final DeferredItem<Item> PERFECTER_TACKLE = ITEMS.register("perfecter_tackle",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_perfector","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
@@ -486,7 +486,24 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().SetShowUnder().AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
+            }.ChangeModel("tackle.geo.json").HasCape().IsGlowing().SetShowUnder());
+
+    public static final DeferredItem<Item> PERFECTER = ITEMS.register("perfecter",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_perfector","riderman","riderman_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                }
+            }.addAlternative(PERFECTER_TACKLE.get()).IsGlowing().SetShowUnder().AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_CORE = ITEMS.register("apollogeist_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","apollogeist","apollogeist_belt",
@@ -573,7 +590,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.AMAZON_TAB_ITEM));
+            }.ChangeModel("amazon.geo.json").IsGlowing().AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
@@ -616,7 +633,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            }.IsGlowing().HasCape().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_charge_up","stronger","electrer_belt",
@@ -638,13 +655,13 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            }.ChangeModel("stronger.geo.json").HasCape().IsGlowing().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_CORE = ITEMS.register("tackle_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .IsGlowing().SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+                    .HasCape().IsGlowing().SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
 

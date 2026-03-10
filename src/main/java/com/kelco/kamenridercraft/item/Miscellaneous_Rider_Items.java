@@ -1,14 +1,12 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.ApolloEntity;
 import com.kelco.kamenridercraft.entities.summons.LibraEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -188,7 +186,7 @@ public class Miscellaneous_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_pre","amazon","condorer_belt",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.IsGlowing().addAlternative(RIDERMAN_BELT_CORE_ARTIST.get()));
+					.ChangeModel("amazon.geo.json").IsGlowing().addAlternative(RIDERMAN_BELT_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> ELECTRER_CORE_ARTIST = ITEMS.register("electrer_core_artist",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","stronger","electrer_belt_artist",
@@ -196,7 +194,7 @@ public class Miscellaneous_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.IsGlowing().addAlternative(CONDORER_WHEEL_PRE_AMAZON.get()));
+					.ChangeModel("stronger.geo.json").HasCape().IsGlowing().addAlternative(CONDORER_WHEEL_PRE_AMAZON.get()));
 
 	public static final DeferredItem<Item> TACKLE_CORE_ARTIST = ITEMS.register("tackle_core_artist",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_artist","tackle","tackle_belt_artist",
@@ -204,7 +202,7 @@ public class Miscellaneous_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.IsGlowing().SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
+					.ChangeModel("tackle.geo.json").HasCape().IsGlowing().SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
 
 	public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
