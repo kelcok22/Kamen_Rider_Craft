@@ -70,7 +70,7 @@ public class Reboot_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
+			}.ChangeModel("amazon_alpha.geo.json").IsBeltGlowing().IsGlowing().AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDORER_CORE_OMEGA = ITEMS.register("condorer_core_omega",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","amazon_omega","amazons_driver_omega_belt",
