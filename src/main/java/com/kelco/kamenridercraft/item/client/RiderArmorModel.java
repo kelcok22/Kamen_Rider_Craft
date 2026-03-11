@@ -116,7 +116,48 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle.setPosX(0);
             }
         }
+        GeoBone wizard_circle2 = this.getAnimationProcessor().getBone("wizard_circle2");
+        if (wizard_circle2 != null) {
+            if (RiderDriverItem.isTransforming(RIDER)) {
+                wizard_circle2.setScaleX(1.1f);
+                wizard_circle2.setScaleY(1.1f);
+                wizard_circle2.setScaleZ(1.1f);
 
+                wizard_circle2.setPosX(30-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle2.setHidden(false);
+            }else {
+                wizard_circle2.setHidden(true);
+                wizard_circle2.setPosX(0);
+            }
+        }
+        GeoBone wizard_circle3 = this.getAnimationProcessor().getBone("wizard_circle3");
+        if (wizard_circle3 != null) {
+            if (RiderDriverItem.isTransforming(RIDER)) {
+                wizard_circle3.setScaleX(1.1f);
+                wizard_circle3.setScaleY(1.1f);
+                wizard_circle3.setScaleZ(1.1f);
+
+                wizard_circle3.setPosY(35-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle3.setHidden(false);
+            }else {
+                wizard_circle3.setHidden(true);
+                wizard_circle3.setPosY(0);
+            }
+        }
+        GeoBone wizard_circle4 = this.getAnimationProcessor().getBone("wizard_circle4");
+        if (wizard_circle4 != null) {
+            if (RiderDriverItem.isTransforming(RIDER)) {
+                wizard_circle4.setScaleX(1.1f);
+                wizard_circle4.setScaleY(1.1f);
+                wizard_circle4.setScaleZ(1.1f);
+
+                wizard_circle4.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle4.setHidden(false);
+            }else {
+                wizard_circle4.setHidden(true);
+                wizard_circle4.setPosY(0);
+            }
+        }
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
                 tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
