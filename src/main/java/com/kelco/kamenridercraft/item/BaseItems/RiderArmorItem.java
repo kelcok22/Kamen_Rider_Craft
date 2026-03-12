@@ -68,7 +68,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
             @Override
             public <T extends LivingEntity> HumanoidModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack, @Nullable EquipmentSlot equipmentSlot, @Nullable HumanoidModel<T> original) {
                 if(this.renderer == null)
-                    this.renderer = new RiderArmorRenderer(livingEntity, equipmentSlot);
+                    this.renderer = new RiderArmorRenderer(equipmentSlot);
                 final Minecraft mc = Minecraft.getInstance();
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original, mc.renderBuffers().bufferSource(), mc.getTimer().getGameTimeDeltaPartialTick(true), 0, 0, 0, 0);
 

@@ -25,7 +25,7 @@ import software.bernie.geckolib.util.RenderUtil;
 
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
 
-    public RiderArmorRenderer(LivingEntity entity, EquipmentSlot equipmentSlot) {
+    public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
 
         super(new RiderArmorModel());
         addRenderLayer(new AutoGlowingGeoLayer<>(this){
@@ -39,11 +39,9 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                 return null;
             }});
 
-        if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (belt.Unlimited_Textures != 0 & equipmentSlot == EquipmentSlot.HEAD
-            ||belt.Unlimited_Belt_Textures != 0 & equipmentSlot == EquipmentSlot.FEET) {
+
+            if (equipmentSlot == EquipmentSlot.HEAD||equipmentSlot == EquipmentSlot.FEET) {
                     addRenderLayer(new RiderRenderLayer<>(this));
-            }
         }
     }
 
