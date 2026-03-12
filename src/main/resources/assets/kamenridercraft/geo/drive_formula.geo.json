@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.0",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -131,7 +131,7 @@
 				},
 				{
 					"name": "bipedRightArm",
-					"pivot":  [-5, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "armorRightArm",
@@ -145,10 +145,23 @@
 				{
 					"name": "tire",
 					"parent": "armorRightArm",
-					"pivot": [-5, 22, 0],
+					"pivot": [-6, 17.5, 0],
+					"rotation": [0, 0, 90],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-9, 16, -3], "size": [6, 3, 6], "inflate": 0.2, "uv": [104, 44]}
+						{
+							"origin": [-7.5, 14.5, -3],
+							"size": [3, 6, 6],
+							"inflate": 0.2,
+							"uv": {
+								"north": {"uv": [110, 53], "uv_size": [6, -3], "uv_rotation": 270},
+								"east": {"uv": [116, 44], "uv_size": [-6, 6]},
+								"south": {"uv": [122, 53], "uv_size": [6, -3], "uv_rotation": 90},
+								"west": {"uv": [122, 44], "uv_size": [-6, 6]},
+								"up": {"uv": [122, 53], "uv_size": [-6, -3], "uv_rotation": 90},
+								"down": {"uv": [110, 53], "uv_size": [-6, -3], "uv_rotation": 90}
+							}
+						}
 					]
 				},
 				{
@@ -167,10 +180,23 @@
 				{
 					"name": "tire2",
 					"parent": "armorLeftArm",
-					"pivot": [5, 22, 0],
+					"pivot": [6, 17.5, 0],
+					"rotation": [0, 0, -90],
 					"mirror": true,
 					"cubes": [
-						{"origin": [3, 16, -3], "size": [6, 3, 6], "inflate": 0.2, "uv": [104, 54]}
+						{
+							"origin": [4.5, 14.5, -3],
+							"size": [3, 6, 6],
+							"inflate": 0.2,
+							"uv": {
+								"north": {"uv": [110, 60], "uv_size": [6, 3], "uv_rotation": 270},
+								"east": {"uv": [116, 54], "uv_size": [6, 6]},
+								"south": {"uv": [122, 60], "uv_size": [6, 3], "uv_rotation": 90},
+								"west": {"uv": [110, 54], "uv_size": [6, 6]},
+								"up": {"uv": [122, 60], "uv_size": [-6, 3], "uv_rotation": 90},
+								"down": {"uv": [110, 60], "uv_size": [-6, 3], "uv_rotation": 90}
+							}
+						}
 					]
 				},
 				{

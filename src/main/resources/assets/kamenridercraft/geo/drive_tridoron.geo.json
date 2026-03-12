@@ -40,16 +40,16 @@
 				{
 					"name": "tire",
 					"parent": "armorBody",
-					"pivot": [4, 23.5, -2],
+					"pivot": [5.375, 20.925, 0.125],
 					"rotation": [45, 0, 15],
 					"mirror": true,
 					"cubes": [
-						{"origin": [4, 15.5, -7], "size": [4, 10, 10], "uv": [100, 44]}
+						{"origin": [3.375, 15.9302, -4.875], "size": [4, 10, 10], "uv": [100, 44]}
 					]
 				},
 				{
 					"name": "bipedRightArm",
-					"pivot":  [-5, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "armorRightArm",
