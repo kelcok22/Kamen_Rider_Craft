@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.effect;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.cores.*;
+import com.kelco.kamenridercraft.world.attributeGenerator;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -216,7 +217,7 @@ public class Effect_core {
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
 
     public static final Holder<MobEffect>SD = EFFECT.register("sd", () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x77b72e)
-                    .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.small"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(attributeGenerator.HEAD_SIZE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.sd"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));

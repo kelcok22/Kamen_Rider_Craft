@@ -231,11 +231,6 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-        if (!level.isClientSide) {
-            if (player.hasEffect(Effect_core.SD))
-                setSD(player.getItemBySlot(EquipmentSlot.FEET), player.getEffect(Effect_core.SD).getAmplifier() + 2f);
-            else setSD(player.getItemBySlot(EquipmentSlot.FEET), 1f);
-        }
         // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
         if (stack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();

@@ -175,23 +175,17 @@ public class KamenRiderCraftCore {
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
+
         if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
-            if(event.getEntity().hasEffect(Effect_core.SD)){
-                float sd = event.getEntity().getEffect(Effect_core.SD).getAmplifier() + 2f;
+
+                float sd = (float) event.getEntity().getAttribute(attributeGenerator.HEAD_SIZE).getValue();
                 model.head.xScale = sd;
                 model.head.yScale = sd;
                 model.head.zScale = sd;
                 model.hat.xScale = sd;
                 model.hat.yScale = sd;
                 model.hat.zScale = sd;
-            }else{
-                model.head.xScale = 1;
-                model.head.yScale = 1;
-                model.head.zScale = 1;
-                model.hat.xScale = 1;
-                model.hat.yScale = 1;
-                model.hat.zScale = 1;
-            }
+
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
                     && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
                 double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");

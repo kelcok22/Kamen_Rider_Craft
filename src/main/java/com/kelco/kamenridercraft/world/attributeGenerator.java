@@ -20,6 +20,14 @@ public class attributeGenerator extends Event implements IModBusEvent {
 
     public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
+    public static final DeferredHolder<Attribute, Attribute> HEAD_SIZE = ATTRIBUTES.register("head_size",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.head_size",
+                    1,
+                    0,
+                    255
+            ).setSyncable(true)
+    );
 
     public static final DeferredHolder<Attribute, Attribute> ABILITY_ONE_CD = ATTRIBUTES.register("ability_one_cd",
             () -> new RangedAttribute(
@@ -91,13 +99,17 @@ public class attributeGenerator extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-//    @SubscribeEvent
-//    public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
-//        eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
-//    }
+
+   @SubscribeEvent
+    public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
+        //eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
+           eMod.getTypes().forEach(entity -> eMod.add(entity, HEAD_SIZE));
+       }
+
 
     @SubscribeEvent
     public static void addAttributes(EntityAttributeModificationEvent event) {
+
         event.add(EntityType.PLAYER, ABILITY_ONE_TOGGLE);
         event.add(EntityType.PLAYER, ABILITY_ONE_CD);
         event.add(EntityType.PLAYER, ABILITY_TWO_TOGGLE);
