@@ -367,7 +367,7 @@
 			"type": "patchouli:text",
 			"anchor": "bugster_virus",
 			"title": "Bugster Virus",
-			"text": "This effect causes $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn. If you have the Hazard Level effect as well, $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l) will spawn instead.$(br2)Examples for how to get this effect:$(li)Use a $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Gashat$(/l)"
+			"text": "This effect causes $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l) to spawn around you and prevents $(l:ex_aid/arsenal/energy_items)Energy Items$(/l) from being used when picked up. Higher amplifiers increase the rate at which they spawn. If you have the Hazard Level effect as well, $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l) will spawn instead.$(br2)Examples for how to get this effect:$(li)Use a $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -1110,13 +1110,11 @@
 			"title": "Evol-X Fullbottle",
 			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Evol's $(l:build/riders/evol#x)Evol-X$(/l) form"
 		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:evol_x_full_bottle",
-			"title": " ",
-			"text": "Item is currently unobtainable"
-		},
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:build/evol_x_full_bottle"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "killbus_spider_full_bottle",

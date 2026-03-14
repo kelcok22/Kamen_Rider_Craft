@@ -686,6 +686,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.ZAIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZEIN.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.SHIMI.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CALIBUR.get(), BasicEntityRenderer::new);

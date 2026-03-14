@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Zein",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zein",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#zein_boss_block)Zein Boss Block$(/l)$(br2)Special moves:$(li)Summons random final form weapons at under 100 health (93.3%) $(li)Activates Hyper Clock Up at under 100 health (7.69%)$(br2)Drops$(li)5-10 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1-3 $(l:decade/items/blank_card)Blank Rider Cards$(/l)$(li)1 $(l:zero_one/items/progrisekeys#zein_progrisekey)Zein Progrisekey$(/l)"
+		}
+	]
+}

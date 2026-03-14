@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "evol",
+  "pattern": [
+    "CBS",
+    "RGD",
+    "NZN"
+  ],
+  "key": {
+    "C": {
+      "item": "kamenridercraft:cobra_evol_bottle"
+    },"B": {
+      "item": "kamenridercraft:evol_trigger"
+    },"S": {
+      "item": "kamenridercraft:rider_system_evol_bottle"
+    },"R": {
+      "item": "kamenridercraft:rabbit_evol_bottle"
+    }, "G": {
+      "item": "kamenridercraft:unfinished_genius_full_bottle"
+    }, "D": {
+      "item": "kamenridercraft:dragon_evol_bottle"
+    }, "N": {
+      "item": "kamenridercraft:nebula_gas_sample"
+    }, "Z": {
+      "item": "kamenridercraft:zein_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:evol_x_full_bottle"
+  }
+}

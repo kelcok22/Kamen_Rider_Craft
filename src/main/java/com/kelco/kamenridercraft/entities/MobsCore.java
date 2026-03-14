@@ -1164,8 +1164,17 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> ARK_ZERO_SPAWN_EGG = ITEMS.register("ark_zero_spawn_egg",
                   () -> new DeferredSpawnEggItem(ARK_ZERO, 0x161616, 0xC40000, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<ZeinEntity>> ZEIN = MOBLIST.register("zein",
+            () -> EntityType.Builder.of(ZeinEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zein"));
 
-          public static final DeferredHolder<EntityType<?>, EntityType<ShimiEntity>> SHIMI = MOBLIST.register("shimi",
+    public static final DeferredItem<DeferredSpawnEggItem> ZEIN_SPAWN_EGG = ITEMS.register("zein_spawn_egg",
+            () -> new DeferredSpawnEggItem(ZEIN, 0xfafafa, 0x2db8fe, new Item.Properties()));
+
+
+
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ShimiEntity>> SHIMI = MOBLIST.register("shimi",
                   () -> EntityType.Builder.of(ShimiEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shimi"));
           
           public static final DeferredItem<DeferredSpawnEggItem> SHIMI_SPAWN_EGG = ITEMS.register("shimi_spawn_egg",

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zein",
+  "pattern": [
+    "SBW",
+    "ULG",
+    "RDZ"
+  ],
+  "key": {
+    "S": {
+      "item": "kamenridercraft:thousand_ark_progrisekey"
+    },"B": {
+      "item": "kamenridercraft:sting_scorpion_progrisekey"
+    },"W": {
+      "item": "kamenridercraft:president_dan_kuroto_progrisekey"
+    },"U": {
+      "item": "kamenridercraft:diend_power_up_card"
+    }, "L": {
+      "item": "kamenridercraft:zeronos_altair_card"
+    }, "G": {
+      "item": "kamenridercraft:kamen_rider_chronicle_gashat"
+    }, "R": {
+      "item": "kamenridercraft:toki_meki_bridal_gashat"
+    }, "D": {
+      "item": "kamenridercraft:evolution_giraffa"
+    }, "Z": {
+      "item": "kamenridercraft:roidmude_core_003"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zein_boss_block"
+  }
+}

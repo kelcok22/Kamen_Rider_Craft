@@ -224,6 +224,12 @@
 			"recipe": "kamenridercraft:zero_one/ark_one_boss_block",
 			"text": "Mine this block to summon $(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)"
 		},
+      {
+        "type": "patchouli:crafting",
+        "anchor": "zein_boss_block",
+        "recipe": "kamenridercraft:zero_one/zein_boss_block",
+        "text": "Mine this block to summon $(l:zero_one/mobs/zein)Kamen Rider Zein$(/l)"
+      },
 		{
 			"type": "patchouli:crafting",
 			"anchor": "sabela_boss_block",

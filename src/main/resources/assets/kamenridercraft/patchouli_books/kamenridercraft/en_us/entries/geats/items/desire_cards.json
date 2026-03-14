@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuroto_dan_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l) (with a $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper Fumetsu Gashat$(/l) in your inventory)"
 		}
 	]
 }

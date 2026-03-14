@@ -874,6 +874,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.ZAIA.get(), ZaiaEntity.setAttributes().build());
 		event.put(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), DireWolfSoldMagiaEntity.setAttributes().build());
 		event.put(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), ServalTigerSoldMagiaEntity.setAttributes().build());
+        event.put(MobsCore.ZEIN.get(), ZeinEntity.setAttributes().build());
 
 		event.put(MobsCore.SHIMI.get(), ShimiEntity.setAttributes().build());
 		event.put(MobsCore.CALIBUR.get(), CaliburEntity.setAttributes().build());

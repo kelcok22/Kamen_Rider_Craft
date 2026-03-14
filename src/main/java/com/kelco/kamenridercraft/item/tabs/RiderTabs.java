@@ -833,6 +833,7 @@ public class RiderTabs {
             event.accept(MobsCore.ZAIA_SPAWN_EGG);
             event.accept(MobsCore.DIRE_WOLF_SOLD_MAGIA_SPAWN_EGG);
             event.accept(MobsCore.SERVAL_TIGER_SOLD_MAGIA_SPAWN_EGG);
+            event.accept(MobsCore.ZEIN_SPAWN_EGG);
 
             event.accept(MobsCore.SHIMI_SPAWN_EGG);
             event.accept(MobsCore.CALIBUR_SPAWN_EGG);

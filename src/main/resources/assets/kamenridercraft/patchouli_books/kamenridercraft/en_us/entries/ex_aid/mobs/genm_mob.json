@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)Shakariki Sports Gasha Trophy$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) (with a $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory)"
+			"text": "$(li)1 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)Shakariki Sports Gasha Trophy$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) (with a $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) in your inventory)$(li)1 $(l:geats/items/desire_cards#kuroto_dan_card)Dan Kuroto Desire Card$(/l) (with a $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper Fumetsu Gashat$(/l) in your inventory)"
 		}
 	]
 }

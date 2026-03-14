@@ -532,7 +532,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zein_progrisekey",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zero_one/mobs/zein)Kamen Rider Zein$(/l)"
 		},
 		{
 			"type": "patchouli:text",

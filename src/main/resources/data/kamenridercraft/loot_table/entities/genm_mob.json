@@ -74,6 +74,28 @@
 		  ]
 		}
 	  ]
-	}
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:kuroto_dan_card"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "attacking_player",
+				  "predicate": {
+					  "slots": {
+						  "container.*": {
+							  "items": "kamenridercraft:hyper_fumetsu_gashat"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  }
   ]
 }

@@ -1,0 +1,24 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+      "particle": "kamenridercraft:block/zein_boss_block_top",
+        "0": "kamenridercraft:block/zein_boss_block_side",
+        "1": "kamenridercraft:block/zein_boss_block_top"
+    },
+
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 16.0, 16.0, 0.0, 0.0 ] , "rotation": 180},
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}
