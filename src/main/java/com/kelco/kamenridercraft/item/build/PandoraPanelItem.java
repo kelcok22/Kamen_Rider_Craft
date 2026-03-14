@@ -127,7 +127,7 @@ public InteractionResult place(BlockPlaceContext context) {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new PandoraPanelGuiMenu(id, inventory, packetBuffer,itemstack);
+					return new PandoraPanelGuiMenu(id, inventory, packetBuffer,itemstack, null);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());

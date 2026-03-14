@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.build.PandoraPanelItem;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -13,18 +14,20 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.entity.BlockEntity;
 
 public class PandoraPanelGuiMenu extends AbstractContainerMenu {
 	private static final int CONTAINER_SIZE = 10;
 	private final Container container;
+	private BlockPos blockPos;
 
 	public PandoraPanelGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
 		this(containerId, playerInventory,new ItemStack(Build_Rider_Items.PANDORA_PANEL_TOUTO.get()));
 	}
 
-	public PandoraPanelGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
-
+	public PandoraPanelGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack, BlockPos pos) {
 		this(containerId, playerInventory,itemstack);
+		blockPos = pos;
 	}
 
 	public PandoraPanelGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
@@ -98,9 +101,12 @@ public class PandoraPanelGuiMenu extends AbstractContainerMenu {
 				slot.setByPlayer(ItemStack.EMPTY);
 			} else {
 				slot.setChanged();
+				if (blockPos != null){
+					BlockEntity blockentity = player.level().getBlockEntity(blockPos);
+					blockentity.setChanged();
+				}
 			}
 		}
-
 		return itemstack;
 	}
 
@@ -109,6 +115,10 @@ public class PandoraPanelGuiMenu extends AbstractContainerMenu {
 	 */
 	@Override
 	public void removed(Player player) {
+		if (blockPos != null){
+			BlockEntity blockentity = player.level().getBlockEntity(blockPos);
+			blockentity.setChanged();
+		}
 		super.removed(player);
 		this.container.stopOpen(player);
 	}
