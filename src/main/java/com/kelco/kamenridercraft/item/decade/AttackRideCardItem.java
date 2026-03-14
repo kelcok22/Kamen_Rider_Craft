@@ -1,25 +1,23 @@
 package com.kelco.kamenridercraft.item.decade;
 
-import java.util.List;
-
-import com.kelco.kamenridercraft.level.ModGameRules;
-import net.minecraft.client.Minecraft;
-import org.apache.commons.lang3.ArrayUtils;
-
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-
+import com.kelco.kamenridercraft.item.Decade_Rider_Items;
+import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -36,13 +34,17 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.fml.ModList;
-import net.minecraft.server.level.ServerLevel;
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.util.List;
 
 
 public class AttackRideCardItem extends BaseItem {
@@ -81,10 +83,13 @@ public class AttackRideCardItem extends BaseItem {
 			for (MobEffectInstance effect : EFFECTS) player.addEffect(effect);
 		}
 		if (!ITEMS.isEmpty()) {
+			HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+
 			for (Item item : ITEMS) {
 				ItemStack stack = new ItemStack(item, 1);
 				stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getHoverName()));
 				if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+				stack.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
 
 				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 				entity.setPickUpDelay(0);

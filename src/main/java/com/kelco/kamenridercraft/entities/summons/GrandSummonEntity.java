@@ -1,11 +1,12 @@
 package com.kelco.kamenridercraft.entities.summons;
 
+import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-
 import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -15,6 +16,8 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 
 public class GrandSummonEntity extends RiderSummonEntity {
@@ -41,6 +44,10 @@ public class GrandSummonEntity extends RiderSummonEntity {
     @Override
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		if (!this.level().isClientSide && this.isOwnedBy(player) && this.getHealth() == this.getMaxHealth() && !this.getMainHandItem().isEmpty() && player.getMainHandItem().isEmpty()) {
+            HolderLookup.RegistryLookup<Enchantment> lookup = this.level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+
+            this.getMainHandItem().enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
+            this.getOffhandItem().enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
             this.spawnAtLocation(this.getMainHandItem());
             this.spawnAtLocation(this.getOffhandItem());
 			this.discard();

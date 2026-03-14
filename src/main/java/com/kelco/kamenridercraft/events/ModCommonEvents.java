@@ -19,6 +19,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.*;
+import com.kelco.kamenridercraft.item.decade.ZeinCardItem;
 import com.kelco.kamenridercraft.item.gavv.GochipodItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
@@ -63,6 +64,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
@@ -304,6 +306,16 @@ public class ModCommonEvents {
 
 					player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
 				}
+			}
+		}
+
+		@SubscribeEvent
+		public void anvilUpdateEvent(AnvilUpdateEvent event) {
+			if (event.getLeft().isDamaged() && event.getLeft().getItem() instanceof ZeinCardItem zein && zein.isValidRepairItem(event.getLeft(), event.getRight())) {
+				ItemStack result = event.getLeft().copy();
+				result.setDamageValue(0);
+				event.setOutput(result);
+				event.setCost(5);
 			}
 		}
 
