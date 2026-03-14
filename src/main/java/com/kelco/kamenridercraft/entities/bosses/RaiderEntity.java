@@ -22,7 +22,7 @@ public class RaiderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_BUFFALO.get()));
-		switch (this.getRandom().nextInt(5)) {
+		switch (this.getRandom().nextInt(6)) {
 			case 0:
 				NAME="raider_whale";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_WHALE.get()));
