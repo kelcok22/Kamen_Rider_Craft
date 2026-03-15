@@ -117,7 +117,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
     }
 
     @Override
-    public void bindToPlayer(Player player) {
+    public void bindToPlayer(LivingEntity player) {
       if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, this);
       super.bindToPlayer(player);
     }

@@ -239,7 +239,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		 this.reassessWeaponGoal();
 	  }
    
-	  public void setRequiredArmor(Player player) {
+	  public void setRequiredArmor(LivingEntity player) {
 	  	if (this.getOwner() == player) {	
 			this.REQUIRED_ARMOR.set(EquipmentSlot.HEAD.getIndex(), player.getItemBySlot(EquipmentSlot.HEAD));
 			this.REQUIRED_ARMOR.set(EquipmentSlot.CHEST.getIndex(), player.getItemBySlot(EquipmentSlot.CHEST));
@@ -270,7 +270,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
       return this.REQUIRED_ARMOR.get(p_21467_.getIndex());
    }
 
-   public void bindToPlayer(Player player) {
+   public void bindToPlayer(LivingEntity player) {
 	  this.setTame(true, false);
 	  this.setOwnerUUID(player.getUUID());
 	  this.setRequiredArmor(player);

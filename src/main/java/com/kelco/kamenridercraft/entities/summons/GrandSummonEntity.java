@@ -47,7 +47,9 @@ public class GrandSummonEntity extends RiderSummonEntity {
             HolderLookup.RegistryLookup<Enchantment> lookup = this.level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
             this.getMainHandItem().enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
+            this.getMainHandItem().set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
             this.getOffhandItem().enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
+            this.getOffhandItem().set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
             this.spawnAtLocation(this.getMainHandItem());
             this.spawnAtLocation(this.getOffhandItem());
 			this.discard();

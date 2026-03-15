@@ -1,36 +1,30 @@
 package com.kelco.kamenridercraft.item.decade;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.level.Level;
 
-import java.util.ArrayList;
-import java.util.List;
 
-
-public class ZeinRiderCardItem extends RiderCardItem implements ZeinCard {
-    private List<MobEffectInstance> zeinEffectList = new ArrayList<>();
-
-    public ZeinRiderCardItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties.durability(1), formName, ridername, beltTex, effects);
-        zeinEffectList.addAll(List.of(effects));
+public class UltimateViceCardItem extends BaseItem implements ZeinCard {
+    public UltimateViceCardItem(Properties properties) {
+        super(properties.durability(1));
     }
 
     @Override
@@ -40,12 +34,21 @@ public class ZeinRiderCardItem extends RiderCardItem implements ZeinCard {
 
     @Override
     public void activateCard(Level level, LivingEntity living, ItemStack stack) {
-        HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+        RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+        if (summon != null) {
+            summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
+            summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Revice_Rider_Items.REVICE_HELMET.get()));
+            summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Revice_Rider_Items.REVICE_CHESTPLATE.get()));
+            summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Revice_Rider_Items.REVICE_LEGGINGS.get()));
+            summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(Revice_Rider_Items.BUDDY_BUCKLE.get()));
+            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GIFFARD_REX_VISTAMP_VICE.get(), 1);
 
-        for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
+            level.addFreshEntity(summon);
+            summon.bindToPlayer(living);
+        }
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
-            living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
+                living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
     }
 
     @Override
@@ -62,7 +65,6 @@ public class ZeinRiderCardItem extends RiderCardItem implements ZeinCard {
 
                 return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
             }
-            else return super.use(level, player, usedHand);
         }
         return InteractionResultHolder.fail(player.getItemInHand(usedHand));
     }

@@ -88,6 +88,7 @@ public class AttackRideCardItem extends BaseItem {
 			for (Item item : ITEMS) {
 				ItemStack stack = new ItemStack(item, 1);
 				stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getHoverName()));
+				stack.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
 				if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
 				stack.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
 
@@ -202,8 +203,13 @@ public class AttackRideCardItem extends BaseItem {
 					break;
 				case "rekka_daizantou":
 					if (ModList.get().isLoaded("supersentaicraft")) {
+						HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+
 						ItemStack stack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou")));
 						stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getDisplayName().getString()));
+						stack.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
+						if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+						stack.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
 						
 						ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 						entity.setPickUpDelay(0);

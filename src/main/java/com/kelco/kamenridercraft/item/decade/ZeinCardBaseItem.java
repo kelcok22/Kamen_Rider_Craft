@@ -60,9 +60,11 @@ public class ZeinCardBaseItem extends BaseItem implements ZeinCard {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
         for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
-        for (String string : zeinItemList) {
+        if (zeinItemList.isEmpty()) living.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
+        else for (String string : zeinItemList) {
             ItemStack weapon = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(string)), 1);
             weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
+            weapon.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
             if (weapon.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0)
                 weapon.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
             weapon.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
@@ -76,7 +78,7 @@ public class ZeinCardBaseItem extends BaseItem implements ZeinCard {
         }
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
-                living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.2);
+                living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
     }
 
     @Override
