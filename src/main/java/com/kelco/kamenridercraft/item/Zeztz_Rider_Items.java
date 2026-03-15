@@ -381,6 +381,21 @@ public class Zeztz_Rider_Items {
     public static final DeferredItem<Item> CLEAR_CAPSEM = ITEMS.register("clear_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> PUNISH_CAPSEM = ITEMS.register("punish_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .ChangeBeltModel("geo/dawn_riderbelt.geo.json").IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> SHADOW_CAPSEM = ITEMS.register("shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nox","nox_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -544,6 +559,10 @@ public class Zeztz_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> DAWN_BELT = ITEMS.register("dawn_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dawn", PUNISH_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> KIGHT_INVOKER = ITEMS.register("knight_invoker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
@@ -595,6 +614,18 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> BREAKAM_BUSTER = ITEMS.register("breakam_buster",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
+                    .ChangeRepairItem(CODE_CAPSEM.get()));
+
+    public static final DeferredItem<Item> BREAKAM_DAWN_TAIKEN = ITEMS.register("breakam_dawn_taiken",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
+                    .IsHenshinItem(DAWN_BELT.get()).ChangeRepairItem(CODE_CAPSEM.get()));
+
+    public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_L = ITEMS.register("breakam_dawn_souken_l",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
+                    .ChangeRepairItem(CODE_CAPSEM.get()));
+
+    public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_R = ITEMS.register("breakam_dawn_souken_r",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.2F, new Item.Properties()).AddToList(RiderTabs.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_BLADE = ITEMS.register("breakam_breaker_blade",

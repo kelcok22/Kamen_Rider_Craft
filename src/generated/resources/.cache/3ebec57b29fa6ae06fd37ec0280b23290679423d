@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-04T01:25:37.4121613	Item Models: kamenridercraft
+// 1.21.1	2026-03-14T21:20:52.794037	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -154,6 +154,7 @@ ca3d4ad27297f54c3cf488810aa1a52c33dff33b assets/kamenridercraft/models/item/dang
 e04b1507db659e1de377184dede795670d27afc2 assets/kamenridercraft/models/item/dango.json
 bee274a3b67d96fb929fcb52af7fbb444b43131e assets/kamenridercraft/models/item/dan_o_belt.json
 60e221263b134875ff9d9cab18255f3a307dba4f assets/kamenridercraft/models/item/dark_ether_chemy_card.json
+0a41244f96df5a8fbd0833787ec66b2c1cd202b5 assets/kamenridercraft/models/item/dawn_belt.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_drive_mach.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_mach.json
 7d163395d25fb9622ac7cdb5dceb6da1fb0a9bd4 assets/kamenridercraft/models/item/deadheat_bike.json
@@ -537,6 +538,7 @@ a0b2ad303869724616966c8436e6fc28a600a8e1 assets/kamenridercraft/models/item/pudd
 129f007fb3ce3d4aaa9f4aea3ea2a289fafcb20f assets/kamenridercraft/models/item/pukupukutai_gochizo.json
 09b56e5df59c658151af40946c2dde56aa3ab47d assets/kamenridercraft/models/item/pumpkin_gochizo.json
 d21cf7b33a992cfdacaf779a6c24dc87bdd803e5 assets/kamenridercraft/models/item/punchingummy_gochizo_valen.json
+58a0e38a7f4ccb7c47b9337a8dc1d3d64272c916 assets/kamenridercraft/models/item/punish_capsem.json
 5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
 8ea5e60ae0d19c359f84cc51cc2c0260e5db0b56 assets/kamenridercraft/models/item/purujelly_noir_gochizo.json
 3ec6c960e798b05a85f85fc3e0088a77bfe0f129 assets/kamenridercraft/models/item/puzzle_piece.json
