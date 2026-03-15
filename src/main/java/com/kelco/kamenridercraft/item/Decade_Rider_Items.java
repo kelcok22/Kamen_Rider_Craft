@@ -1166,7 +1166,7 @@ public class Decade_Rider_Items {
 					.IsBeltGlowing().IsGlowing().ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_1_CARD = ITEMS.register("super_1_card",
-			() -> new RiderCardItem(new Item.Properties(),"","decade","decadriver_belt",
+			() -> new ZeinRiderCardItem(new Item.Properties(),"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -1190,7 +1190,7 @@ public class Decade_Rider_Items {
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
 			}.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CYCLODE.get()).AddCompatibilityList(BaseDecadeUsers)
-					.IsBeltGlowing().IsGlowing().ChangeRiderName("super_1").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsBeltGlowing().IsGlowing().ChangeRiderName("super_1").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZX_CARD = ITEMS.register("zx_card",
 			() -> new RiderCardItem(new Item.Properties(),"","decade","decadriver_belt",
@@ -1363,10 +1363,10 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> BLADE_KING_CARD = ITEMS.register("blade_king_card",
 			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get()).setSummonForm((RiderFormChangeItem)Blade_Rider_Items.EVOLUTION_CAUCASUS.get()).addSummonWeapon(Blade_Rider_Items.KINGROUZER.get()))
 					.setZeinEffects(
-							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3, true, false),
-							new MobEffectInstance(MobEffects.JUMP, 9600, 2, true, false),
-							new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 9600, 0, true, false),
-							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 4, true, false)
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3, true, true),
+							new MobEffectInstance(MobEffects.JUMP, 9600, 2, true, true),
+							new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 9600, 0, true, true),
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 4, true, true)
 					).setZeinItems("kamenridercraft:kingrouzer").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ARMED_HIBIKI_CARD = ITEMS.register("armed_hibiki_card",
 			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get()).setSummonForm((RiderFormChangeItem)Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get()).addSummonWeapon(Hibiki_Rider_Items.ARMED_SABER.get()))
@@ -1419,35 +1419,148 @@ public class Decade_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true)
 					).setZeinItems("kamenridercraft:ride_booker").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> W_XTREME_CARD = ITEMS.register("w_xtreme_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(0).setSummonForm(0, 1).addSummonWeapon(0).addSummonWeapon(1).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(0).setSummonForm(0, 1).addSummonWeapon(0).addSummonWeapon(1))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 1,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true),
+							new MobEffectInstance(Effect_core.PUNCH, 9600, 3,true,true)
+					).setZeinItems("kamenridercraft:prism_bicker", "kamenridercraft:shield_prism_bicker").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> OOO_PUTOTYRA_CARD = ITEMS.register("ooo_putotyra_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(3).setSummonForm(1, 1).addSummonWeapon(2).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(3).setSummonForm(1, 1).addSummonWeapon(2))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.JUMP, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 2,true,true),
+							new MobEffectInstance(Effect_core.FLYING, 9600, 0,true,true)
+					).setZeinItems("kamenridercraft:medagaburyu").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> FOURZE_COSMIC_CARD = ITEMS.register("fourze_cosmic_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(5).setSummonForm(2, 1).addSummonWeapon(3).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(5).setSummonForm(2, 1).addSummonWeapon(3))
+					.setZeinEffects(
+							new MobEffectInstance(Effect_core.SLASH, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 1,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 3,true,true)
+					).setZeinItems("kamenridercraft:barizun_sword").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> WIZARD_INFINITY_CARD = ITEMS.register("wizard_infinity_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(7).setSummonForm(3, 1).addSummonWeapon(4).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(7).setSummonForm(3, 1).addSummonWeapon(4))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 3,true,true)
+							,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true)
+							,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 4,true,true)
+							,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true)
+							,new MobEffectInstance(Effect_core.PUNCH, 9600, 5,true,true),
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true)
+					).setZeinItems("kamenridercraft:axcalibur").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GAIM_KIWAMI_CARD = ITEMS.register("gaim_kiwami_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(9).setSummonForm(4, 1).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(9).setSummonForm(4, 1))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.WATER_BREATHING, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.REGENERATION, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true)
+					).setZeinItems("kamenridercraft:dj_gun").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DRIVE_TRIDORON_CARD = ITEMS.register("drive_tridoron_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(11).setSummonForm(5, 1).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(11).setSummonForm(5, 1))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true)
+							,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 2,true,true)
+							,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 4,true,true)
+							,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true)
+							,new MobEffectInstance(MobEffects.JUMP, 9600, 3,true,true)
+					).setZeinItems("kamenridercraft:trailer_hou").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GHOST_MUGEN_CARD = ITEMS.register("ghost_mugen_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(13).setSummonForm(6, 2).addSummonWeapon(16).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(13).setSummonForm(6, 2).addSummonWeapon(16))
+					.setZeinEffects(
+						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,true)
+						,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,true)
+						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,true),
+						new MobEffectInstance(Effect_core.GHOST, 40, 0,true,true)
+					).setZeinItems("kamenridercraft:sunglasseslasher_sword").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> EX_AID_MUTEKI_CARD = ITEMS.register("ex_aid_muteki_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(15).setSummonForm(7, 1).addSummonWeapon(17).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(15).setSummonForm(7, 1).addSummonWeapon(17))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 4,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 4,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 6,true,true),
+							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.SATURATION, 9600, 2,true,true),
+							new MobEffectInstance(MobEffects.JUMP, 9600, 3,true,true),
+							new MobEffectInstance(Effect_core.MUTEKI, 9600, 0,true,true)
+					).AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> BUILD_GENIUS_CARD = ITEMS.register("build_genius_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(17).setSummonForm(8, 3).addSummonWeapon(18).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(17).setSummonForm(8, 3).addSummonWeapon(18))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.REGENERATION, 9600, 1,true,true),
+							new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.JUMP, 9600, 4,true,true),
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.WATER_BREATHING, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.SATURATION, 9600, 0,true,true),
+							new MobEffectInstance(Effect_core.FLYING, 9600, 0, true, true)
+					).AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GRAND_ZI_O_CARD = ITEMS.register("grand_zi_o_card",
 			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(19).setSummonForm(9, 1).addSummonWeapon(19).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ZERO_TWO_CARD = ITEMS.register("zero_two_card",
-			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(21).addSummonWeapon(20).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> ((ZeinCardItem) new ZeinCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt(21).addSummonWeapon(20))
+					.setZeinEffects(
+							new MobEffectInstance(MobEffects.JUMP, 9600, 6,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true),
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 4,true,true),
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 4,true,true),
+							new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true),
+							new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 3,true,true),
+							new MobEffectInstance(Effect_core.PUNCH, 9600, 8,true,true),
+							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true)
+					).AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> XROSS_SABER_CARD = ITEMS.register("xross_saber_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new ZeinCardBaseItem(new Item.Properties().rarity(Rarity.RARE)).setZeinEffects(
+						new MobEffectInstance(Effect_core.SLASH, 9600, 0,true,true)
+						,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 4,true,true)
+						,new MobEffectInstance(MobEffects.JUMP, 9600, 4,true,true)
+						,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 5,true,true)
+						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 3,true,true)
+						,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0,true,true)
+						,new MobEffectInstance(MobEffects.WATER_BREATHING, 9600, 0,true,true)
+						,new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 3,true,true)
+					).setZeinItems("kamenridercraft:haouken_xross_saber").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ULTIMATE_REVI_CARD = ITEMS.register("ultimate_revi_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new ZeinCardBaseItem(new Item.Properties().rarity(Rarity.RARE)).setZeinEffects(
+						new MobEffectInstance(MobEffects.JUMP, 40, 6,true,true),
+						new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,true),
+						new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,true),
+						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,true),
+						new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,true),
+						new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,true),
+						new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,true),
+						new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,true)
+					).setZeinItems("kamenridercraft:revice_lasher").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ULTIMATE_VICE_CARD = ITEMS.register("ultimate_vice_card",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GEATS_IX_CARD = ITEMS.register("geats_ix_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new ZeinCardBaseItem(new Item.Properties().rarity(Rarity.RARE)).setZeinEffects(
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9600, 6,true,true),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 6,true,true),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 9600, 5,true,true),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 4,true,true),
+					new MobEffectInstance(MobEffects.JUMP, 9600, 7,true,true),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 2,true,true),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 9600, 0,true,true),
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 9600, 6,true,true),
+					new MobEffectInstance(Effect_core.BOOST, 9600, 6,true,true)
+					).setZeinItems("kamenridercraft:geats_buster_qb9").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> KUUGA_RISING_ULTIMATE_CARD = ITEMS.register("kuuga_rising_ultimate_card",
 			() -> new FinalKamenRideCardItem(new Item.Properties().rarity(Rarity.RARE)).setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).setSummonForm((RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_RISING_ULTIMATE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DEN_O_CHOU_CLIMAX_CARD = ITEMS.register("den_o_chou_climax_card",
@@ -1483,11 +1596,9 @@ public class Decade_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDE_PLAYER_CARD = ITEMS.register("rideplayer_card",
-			() -> new RidePlayerCardItem(new Item.Properties()).AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
-	/*
+			() -> new RidePlayerCardItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DIMENSION_CARD = ITEMS.register("dimension_card",
-			() -> new ZeinCardItem(new Item.Properties()).AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
-	*/
+			() -> new BaseItem(new Item.Properties()).AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DECADE_OOO_CARD = ITEMS.register("decade_ooo_armor_card",

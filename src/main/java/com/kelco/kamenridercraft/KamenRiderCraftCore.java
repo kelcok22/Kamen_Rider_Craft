@@ -36,7 +36,6 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.world.attributeGenerator;
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -467,6 +466,13 @@ public class KamenRiderCraftCore {
                         return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float) (p_174635_.getUseDuration(p_174637_) - p_174637_.getUseItemRemainingTicks());
                     }
                 });
+
+            for (Item item : Decade_Rider_Items.ZEIN_CARDS) {
+                ItemProperties.register(item, ResourceLocation.parse("shredded"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174635_.isDamaged()) return 1;
+                    return 0;
+                });
+            }
 
             if (ModList.get().isLoaded("bettercombat")) BetterCombatAttackListener.register();
         }
