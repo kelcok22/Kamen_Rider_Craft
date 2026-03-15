@@ -526,8 +526,14 @@
   "effect.kamenridercraft.glide.description":"Allows you to fly as if wearing elytra",
   "effect.kamenridercraft.ram.desc": "Causes you to damage mobs you ride into on bikes",
   "effect.kamenridercraft.ram.description": "Causes you to damage mobs you ride into on bikes",
-
-
+  "effect.kamenridercraft.self_mending.desc":"Mends your armor",
+  "effect.kamenridercraft.self_mending.description":"Mends your armor",
+  "effect.kamenridercraft.group_mending.desc":"Mends other players' armor",
+  "effect.kamenridercraft.group_mending.description":"Mends other players' armor",
+  "effect.kamenridercraft.sd.desc":"Causes your head to grow in size",
+  "effect.kamenridercraft.sd.description":"Causes your head to grow in size",
+  "effect.kamenridercraft.rider_kick.desc":"Causes you to Rider Kick",
+  "effect.kamenridercraft.rider_kick.description":"Causes you to Rider Kick",
 
   "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 
