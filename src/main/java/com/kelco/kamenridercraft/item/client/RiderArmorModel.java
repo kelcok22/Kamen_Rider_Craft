@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.world.attributeGenerator;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -71,7 +72,6 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
     @Override
     public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
-
 
 
         Entity entity = state.getData(DataTickets.ENTITY);
