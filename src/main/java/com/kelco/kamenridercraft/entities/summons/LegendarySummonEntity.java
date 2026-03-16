@@ -117,7 +117,7 @@ public class LegendarySummonEntity extends BaseSummonEntity {
     }
 
     @Override
-    public void bindToPlayer(LivingEntity player) {
+    public void bindToPlayer(Player player) {
       if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, this);
       super.bindToPlayer(player);
     }

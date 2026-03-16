@@ -76,7 +76,7 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
             zio.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_GIRADE.get()));
 
             level.addFreshEntity(zio);
-            zio.bindToPlayer(living);
+            if (living instanceof Player player) zio.bindToPlayer(player);
         }
         Random rand = new Random();
         for (int i = 0; i < 2; i++) {
@@ -167,7 +167,7 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
                 else if (summonBelt == Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Kabuto_Rider_Items.KABUTO_ZECTER.get(), 1);
 
                 level.addFreshEntity(summon);
-                summon.bindToPlayer(living);
+                if (living instanceof Player player) summon.bindToPlayer(player);
             }
         }
 

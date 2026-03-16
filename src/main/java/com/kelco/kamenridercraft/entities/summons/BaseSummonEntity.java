@@ -77,10 +77,6 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	
 	public String NAME = "rider_summon";
    
-	public int Scale=1;
-   
-	public double BOW_DISTANCE = 40.0D;
-   
 	public BaseSummonEntity(EntityType<? extends BaseSummonEntity> entityType, Level level) {
 		super(entityType, level);
 		this.setDropChance(EquipmentSlot.HEAD, 0.0f);
@@ -133,27 +129,27 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		Level level = this.level();
 		if (!level.isClientSide) {
 		   this.updatePersistentAnger((ServerLevel)this.level(), true);
-			if ( this.getOwner() instanceof Player owner && this.isAlive()) {
-				if(!owner.isAlive()
-				||owner.getItemBySlot(EquipmentSlot.HEAD).getItem()!=this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
-				||owner.getItemBySlot(EquipmentSlot.CHEST).getItem()!=this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
-				||owner.getItemBySlot(EquipmentSlot.LEGS).getItem()!=this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
-				||owner.getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) {
+			if (this.isAlive() && this.getOwner() != null) {
+				if(!this.getOwner().isAlive()
+				||this.getOwner().getItemBySlot(EquipmentSlot.HEAD).getItem()!=this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
+				||this.getOwner().getItemBySlot(EquipmentSlot.CHEST).getItem()!=this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
+				||this.getOwner().getItemBySlot(EquipmentSlot.LEGS).getItem()!=this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
+				||this.getOwner().getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) {
 					this.despawn();
 				} else {
-					if (!this.REQUIRED_FORMS.isEmpty() && owner.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+					if (!this.REQUIRED_FORMS.isEmpty() && this.getOwner().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 						boolean formFound = false;
 						if (!this.matchAllForms) for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
 							CompoundTag tag = new CompoundTag();
 							tag.putInt("Slot", i + 1);
-							tag.putString("Form", RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
+							tag.putString("Form", RiderDriverItem.get_Form_Item(this.getOwner().getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
 							if (this.REQUIRED_FORMS.contains(tag)) formFound = true;
 						} else {
 							ListTag OWNER_FORMS = new ListTag();
 							for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
 								CompoundTag tag = new CompoundTag();
 								tag.putInt("Slot", i + 1);
-								tag.putString("Form", RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
+								tag.putString("Form", RiderDriverItem.get_Form_Item(this.getOwner().getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
 								OWNER_FORMS.add(tag);
 							}
 							if (this.REQUIRED_FORMS.equals(OWNER_FORMS)) formFound = true;
@@ -270,7 +266,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
       return this.REQUIRED_ARMOR.get(p_21467_.getIndex());
    }
 
-   public void bindToPlayer(LivingEntity player) {
+   public void bindToPlayer(Player player) {
 	  this.setTame(true, false);
 	  this.setOwnerUUID(player.getUUID());
 	  this.setRequiredArmor(player);

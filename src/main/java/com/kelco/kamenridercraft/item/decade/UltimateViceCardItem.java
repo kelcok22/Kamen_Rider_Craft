@@ -44,7 +44,7 @@ public class UltimateViceCardItem extends BaseItem implements ZeinCard {
             RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GIFFARD_REX_VISTAMP_VICE.get(), 1);
 
             level.addFreshEntity(summon);
-            summon.bindToPlayer(living);
+            if (living instanceof Player player) summon.bindToPlayer(player);
         }
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),

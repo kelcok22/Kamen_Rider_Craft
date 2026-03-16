@@ -38,7 +38,7 @@ public class DimensionCardItem extends BaseItem implements ZeinCard {
             if (summon != null) {
                 summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
                 level.addFreshEntity(summon);
-                summon.bindToPlayer(living);
+                if (living instanceof Player player) summon.bindToPlayer(player);
             }
         }
 
