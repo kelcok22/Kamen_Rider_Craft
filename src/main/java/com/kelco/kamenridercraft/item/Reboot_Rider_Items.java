@@ -32,13 +32,43 @@ public class Reboot_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).KeepDifItem(EMPTY_VIAL.get()));
 
 	public static final DeferredItem<Item> OMEGA_AMAZON_CELL_VIAL = ITEMS.register("omega_amazon_cell_vial",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_omega","blank",
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeModel("amazon_sigma.geo.json").AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
 
 	public static final DeferredItem<Item> ALPHA_AMAZON_CELL_VIAL = ITEMS.register("alpha_amazon_cell_vial",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_alpha","blank",
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeModel("amazon_alpha.geo.json").AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
 
 	public static final DeferredItem<Item> SIGMA_AMAZON_CELL_VIAL = ITEMS.register("sigma_amazon_cell_vial",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 2).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_sigma","blank",
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeModel("amazon_sigma.geo.json").AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 2).KeepDifItem(EMPTY_VIAL.get()));
 
 	public static final DeferredItem<Item> NEO_AMAZON_CELL_VIAL = ITEMS.register("neo_amazon_cell_vial",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 1).KeepDifItem(EMPTY_VIAL.get()));
