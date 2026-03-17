@@ -36,7 +36,6 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.world.attributeGenerator;
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -468,6 +467,13 @@ public class KamenRiderCraftCore {
                     }
                 });
 
+            for (Item item : Decade_Rider_Items.ZEIN_CARDS) {
+                ItemProperties.register(item, ResourceLocation.parse("shredded"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174635_.isDamaged()) return 1;
+                    return 0;
+                });
+            }
+
             if (ModList.get().isLoaded("bettercombat")) BetterCombatAttackListener.register();
         }
 
@@ -780,6 +786,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.COMPLETE_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GRAND_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LEGENDARY_SUMMON.get(), SummonedEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZEIN_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DECADE_ARMOR_EX_AID.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);

@@ -2,5 +2,13 @@
     "parent": "item/generated",
     "textures": {
         "layer0": "kamenridercraft:item/fourze_cosmic_card"
-    }
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "shredded": 1
+            },
+            "model": "kamenridercraft:item/zein_card_shredded"
+        }
+    ]
 }

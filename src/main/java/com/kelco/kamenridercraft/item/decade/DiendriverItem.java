@@ -2,43 +2,41 @@
 package com.kelco.kamenridercraft.item.decade;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.world.inventory.DiendriverGuiMenu;
+import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.component.ItemContainerContents;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
-
-import io.netty.buffer.Unpooled;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.ItemContainerContents;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-
-import org.jetbrains.annotations.Nullable;
 
 public class DiendriverItem extends BaseBlasterItem {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
@@ -94,7 +92,7 @@ public class DiendriverItem extends BaseBlasterItem {
 			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
 			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderSummonCardItem && item.is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/rider_cards/kaijinride")))))) {
-				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)).count());
+				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (!item.isDamaged() && (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))).count());
 				List<String> cardNames = new ArrayList<>();
 
 				contents.nonEmptyItems().forEach(card -> {
@@ -114,12 +112,12 @@ public class DiendriverItem extends BaseBlasterItem {
 					default: 
 						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kaijinride_3", cardNames.get(0), cardNames.get(1), cardNames.get(2)), true);
 				}
-			} else if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))) {
-				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)).count());
+			} else if (contents.nonEmptyStream().anyMatch(item -> (!item.isDamaged() && (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)))) {
+				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (!item.isDamaged() && (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))).count());
 				List<String> cardNames = new ArrayList<>();
 
 				contents.nonEmptyItems().forEach(card -> {
-					if (card.getItem() instanceof RiderCardItem summonCard) {
+					if (card.getItem() instanceof RiderCardItem summonCard && !card.isDamaged()) {
 						cardNames.add(Component.translatable(card.getItem() + ".name").getString());
 						summonCard.summon(card, level, player);
 					} else if (card.getItem() instanceof RiderSummonCardItem summonCard) {
