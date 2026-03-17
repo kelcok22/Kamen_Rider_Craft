@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamenridercraft:item/auto_vajin_spawn_egg"
+    }
+}

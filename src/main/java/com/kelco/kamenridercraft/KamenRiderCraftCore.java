@@ -516,6 +516,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.ORGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MUEZ.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.FAIZ.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.AUTO_VAJIN_ROBO.get(), AutoVajinRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BAKENEKO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MIDAREDOUJI.get(), BasicEntityRenderer::new);
@@ -758,6 +759,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.RIDORON.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.AUTO_VAJIN.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_DENBIRD.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SKULLBOILER.get(), BikeRenderer::new);

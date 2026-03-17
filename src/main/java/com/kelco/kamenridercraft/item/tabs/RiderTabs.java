@@ -896,6 +896,7 @@ public class RiderTabs {
             event.accept(MobsCore.ACROBATTER_SPAWN_EGG);
             event.accept(MobsCore.RIDORON_SPAWN_EGG);
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
+            event.accept(MobsCore.AUTO_VAJIN_SPAWN_EGG);
             event.accept(MobsCore.MACEHINE_DENBIRD_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);
             event.accept(MobsCore.SKULLBOILER_SPAWN_EGG);

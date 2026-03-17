@@ -190,8 +190,7 @@ public class BaseAllyEntity extends TamableAnimal implements NeutralMob {
             };
         }
     }
-
-   class AllyPanicGoal extends PanicGoal {
+	class AllyPanicGoal extends PanicGoal {
       public AllyPanicGoal(double p_203124_) {
          super(BaseAllyEntity.this, p_203124_);
       }

@@ -709,6 +709,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
 		event.put(MobsCore.MUEZ.get(), MuezEntity.setAttributes().build());
         event.put(MobsCore.FAIZ.get(), FaizEntity.setAttributes().build());
+		event.put(MobsCore.AUTO_VAJIN_ROBO.get(), AutoVajinRoboEntity.setAttributes().build());
 
         event.put(MobsCore.BAKENEKO.get(), BakenekoEntity.setAttributes().build());
         event.put(MobsCore.MIDAREDOUJI.get(), MidaredoujiEntity.setAttributes().build());
@@ -950,6 +951,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.RIDORON.get(), RidoronEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.AUTO_VAJIN.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_DENBIRD.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());

@@ -1,0 +1,98 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.auto_vajin.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"bipedRightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, -5],
+						"2.0": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"bipedLeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 2.5],
+						"2.0": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.auto_vajin.walk": {
+			"animation_length": 1,
+			"bones": {
+				"bipedRightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3333": [50, 0, 0],
+						"0.6667": [0, 0, 0],
+						"1.0": [-25, 0, 0]
+					}
+				},
+				"bipedLeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3333": [-25, 0, 0],
+						"0.6667": [0, 0, 0],
+						"1.0": [47.5, 0, 0]
+					}
+				},
+				"bipedLeftLeg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3333": [-30, 0, 0],
+						"0.6667": [0, 0, 0],
+						"1.0": [30, 0, 0]
+					}
+				},
+				"bipedRightLeg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3333": [30, 0, 0],
+						"0.6667": [0, 0, 0],
+						"1.0": [-30, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.auto_vajin.sit": {
+			"loop": true,
+			"bones": {
+				"right_arm": {
+					"rotation": [0.0269, -5.42936, -9.77519]
+				},
+				"bipedLeftArm": {
+					"rotation": [0, -7.5, -7.5]
+				},
+				"f_wheel": {
+					"position": [-0.38935, 1.84096, 1.208]
+				},
+				"Shape9": {
+					"position": [-0.88083, 1.7847, 1.13533]
+				},
+				"bipedLeftLeg": {
+					"rotation": [50, 0, 0]
+				},
+				"Shape32": {
+					"rotation": [-140, 0, 0],
+					"position": [0, -0.30438, 0.39668]
+				},
+				"bipedRightLeg": {
+					"rotation": [57.52472, -1.34295, -2.10886]
+				},
+				"Shape60": {
+					"rotation": [-147.50928, -0.18745, 2.08719],
+					"position": [0.00586, 0.17665, 0.1768]
+				},
+				"bone": {
+					"position": [0, -11.25, 0]
+				}
+			}
+		}
+	}
+}

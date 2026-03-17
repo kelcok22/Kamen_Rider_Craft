@@ -1525,6 +1525,15 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<MachineDenbirdEntity>> MACEHINE_DENBIRD = MOBLIST.register("machine_denbird",
             () -> EntityType.Builder.of(MachineDenbirdEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_denbird"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<AutoVajinRoboEntity>> AUTO_VAJIN_ROBO = MOBLIST.register("auto_vajin_robo",
+            () -> EntityType.Builder.of(AutoVajinRoboEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":auto_vajon_robo"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<AutoVajinEntity>> AUTO_VAJIN = MOBLIST.register("auto_vajin",
+            () -> EntityType.Builder.of(AutoVajinEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":auto_vajin"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> AUTO_VAJIN_SPAWN_EGG = ITEMS.register("auto_vajin_spawn_egg",
+            () -> new DeferredSpawnEggItem(AUTO_VAJIN,  0xffffff, 0x222222, new Item.Properties()));
+
     public static final DeferredItem<DeferredSpawnEggItem> MACEHINE_DENBIRD_SPAWN_EGG = ITEMS.register("machine_denbird_spawn_egg",
             () -> new DeferredSpawnEggItem(MACEHINE_DENBIRD, 0xffffff, 0xffe300, new Item.Properties()));
 

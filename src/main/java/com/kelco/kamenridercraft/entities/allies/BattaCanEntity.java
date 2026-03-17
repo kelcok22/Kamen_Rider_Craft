@@ -83,6 +83,7 @@ public class BattaCanEntity extends BaseAllyEntity implements GeoEntity {
 							InteractionResult interactionresult = super.mobInteract(player, hand);
 							if (!interactionresult.consumesAction() && this.isOwnedBy(player)) {
 								this.setOrderedToSit(!this.isOrderedToSit());
+								System.out.println("Can Should Sit");
 								this.jumping = false;
 								this.navigation.stop();
 								this.setTarget(null);
