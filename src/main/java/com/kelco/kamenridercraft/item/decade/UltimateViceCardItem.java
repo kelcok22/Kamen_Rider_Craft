@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.decade;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.footSoldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -34,7 +35,10 @@ public class UltimateViceCardItem extends BaseItem implements ZeinCard {
 
     @Override
     public void activateCard(Level level, LivingEntity living, ItemStack stack) {
-        RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+        LivingEntity summon;
+        if (living instanceof Player) summon = MobsCore.RIDER_SUMMON.get().create(level);
+        else summon = MobsCore.ENEMY_SUMMON.get().create(level);
+
         if (summon != null) {
             summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
             summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Revice_Rider_Items.REVICE_HELMET.get()));
@@ -44,8 +48,10 @@ public class UltimateViceCardItem extends BaseItem implements ZeinCard {
             RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GIFFARD_REX_VISTAMP_VICE.get(), 1);
 
             level.addFreshEntity(summon);
-            if (living instanceof Player player) summon.bindToPlayer(player);
+            if (summon instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) living);
+            else ((EnemySummonEntity) summon).setOwnerUUID(living.getUUID());
         }
+
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
                 living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);

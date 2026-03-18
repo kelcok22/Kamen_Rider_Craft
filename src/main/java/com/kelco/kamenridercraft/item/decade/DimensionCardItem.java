@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.decade;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.footSoldiers.ZeinEnemySummonEntity;
 import com.kelco.kamenridercraft.entities.summons.ZeinSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -34,11 +35,15 @@ public class DimensionCardItem extends BaseItem implements ZeinCard {
     @Override
     public void activateCard(Level level, LivingEntity living, ItemStack stack) {
         for (int i = 0; i < 3; i++) {
-            ZeinSummonEntity summon = MobsCore.ZEIN_SUMMON.get().create(level);
+            LivingEntity summon;
+            if (living instanceof Player) summon = MobsCore.ZEIN_SUMMON.get().create(level);
+            else summon = MobsCore.ZEIN_ENEMY_SUMMON.get().create(level);
+
             if (summon != null) {
                 summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
                 level.addFreshEntity(summon);
-                if (living instanceof Player player) summon.bindToPlayer(player);
+                if (summon instanceof ZeinSummonEntity rider) rider.bindToPlayer((Player) living);
+                else ((ZeinEnemySummonEntity) summon).setOwnerUUID(living.getUUID());
             }
         }
 
