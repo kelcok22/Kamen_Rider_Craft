@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:drag_shield_vent_form",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from:$(li)$(l:ryuki/mobs/mirror_rider#ryuki)Kamen Rider Ryuki$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wing_wall_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from:$(li)$(l:ryuki/mobs/mirror_rider#knight)Kamen Rider Knight$(/l)"
 		},
 		{
 			"type": "patchouli:text",

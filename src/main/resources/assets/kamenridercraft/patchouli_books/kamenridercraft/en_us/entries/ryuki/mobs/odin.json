@@ -8,7 +8,7 @@
         "type": "patchouli:entity",
         "anchor": "odin",
         "entity": "kamenridercraft:odin",
-        "text": "Summoned from a $(l:misc/blocks/boss_blocks#odin_boss_block)Odin Boss Block$(/l)"
+        "text": "Summoned from an $(l:misc/blocks/boss_blocks#odin_boss_block)Odin Boss Block$(/l)"
       },
       {
         "type": "patchouli:text",

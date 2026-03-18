@@ -197,7 +197,7 @@
         "type": "patchouli:entity",
         "anchor": "abyss",
         "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_abyss\",components:{custom_data:{slot_tex1:\"kamenridercraft:abysslasher_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-        "text": "Appears in:$(li)Kamen Rider Ryuki Special: 13 Riders (2002, TV special)$(br)Health: 40"
+        "text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br)Health: 40"
       },
       {
         "type": "patchouli:text",
@@ -208,7 +208,7 @@
         "type": "patchouli:entity",
         "anchor": "mirror_zi_o",
         "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o_mirror\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_mirror_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
-        "text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br)Health: 40"
+        "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br)Health: 40"
       },
       {
         "type": "patchouli:text",
@@ -219,7 +219,7 @@
         "type": "patchouli:entity",
         "anchor": "alternative",
         "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:alternative_v_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:psycorogue_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
-        "text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br)Health: 40"
+        "text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br)Health: 40"
       },
       {
         "type": "patchouli:text",
