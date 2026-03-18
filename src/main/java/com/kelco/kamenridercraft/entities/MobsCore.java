@@ -1687,6 +1687,12 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<ZeinSummonEntity>> ZEIN_SUMMON = MOBLIST.register("zein_summon",
             () -> EntityType.Builder.of(ZeinSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zein_summon"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<EnemySummonEntity>> ENEMY_SUMMON = MOBLIST.register("enemy_summon",
+            () -> EntityType.Builder.of(EnemySummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":enemy_summon"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ZeinEnemySummonEntity>> ZEIN_ENEMY_SUMMON = MOBLIST.register("zein_enemy_summon",
+            () -> EntityType.Builder.of(ZeinEnemySummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zein_enemy_summon"));
+
     public static final DeferredHolder<EntityType<?>, EntityType<ParaDXSummonEntity>> PARADX_SUMMON = MOBLIST.register("paradx_summon",
                   () -> EntityType.Builder.of(ParaDXSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":paradx_summon"));
           

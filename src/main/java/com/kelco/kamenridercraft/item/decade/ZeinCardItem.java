@@ -71,7 +71,7 @@ public class ZeinCardItem extends FinalKamenRideCardItem implements ZeinCard {
                 ItemEntity entity = new ItemEntity(level, living.getX(), living.getY(), living.getZ(), weapon, 0, 0, 0);
                 entity.setPickUpDelay(0);
                 level.addFreshEntity(entity);
-            } else if (zeinItemList.size() == 2 && zeinItemList.get(1).equals(string)) living.setItemSlot(EquipmentSlot.OFFHAND, weapon);
+            } else if (living.getItemBySlot(EquipmentSlot.MAINHAND).getItem() == BuiltInRegistries.ITEM.get(ResourceLocation.parse(zeinItemList.getFirst()))) living.setItemSlot(EquipmentSlot.OFFHAND, weapon);
             else living.setItemSlot(EquipmentSlot.MAINHAND, weapon);
         }
         stack.setDamageValue(1);
