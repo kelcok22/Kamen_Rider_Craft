@@ -159,6 +159,35 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle4.setPosY(0);
             }
         }
+        GeoBone wizard_circle5 = this.getAnimationProcessor().getBone("wizard_circle5");
+        if (wizard_circle5 != null) {
+            if (RiderDriverItem.isTransforming(RIDER)) {
+                wizard_circle5.setScaleX(1.1f);
+                wizard_circle5.setScaleY(1.1f);
+                wizard_circle5.setScaleZ(1.1f);
+                wizard_circle5.setPosX(3);
+                wizard_circle5.setPosZ(35-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle5.setHidden(false);
+            }else {
+                wizard_circle5.setHidden(true);
+                wizard_circle5.setPosZ(0);
+            }
+        }
+
+        GeoBone wizard_circle6 = this.getAnimationProcessor().getBone("wizard_circle6");
+        if (wizard_circle6 != null) {
+            if (RiderDriverItem.isTransforming(RIDER)) {
+                wizard_circle6.setScaleX(1.1f);
+                wizard_circle6.setScaleY(1.1f);
+                wizard_circle6.setScaleZ(1.1f);
+                wizard_circle6.setPosZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle6.setHidden(false);
+            }else {
+                wizard_circle6.setHidden(true);
+                wizard_circle6.setPosY(0);
+            }
+        }
+
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
                 tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
