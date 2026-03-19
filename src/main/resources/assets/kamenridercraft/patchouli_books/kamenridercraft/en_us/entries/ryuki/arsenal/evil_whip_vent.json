@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evil_whip_vent",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+			"text": "Drops from:$(li)$(l:ryuki/mobs/mirror_rider#raia)Kamen Rider Raia$(/l)"
 		}
 	]
 }

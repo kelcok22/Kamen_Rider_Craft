@@ -981,6 +981,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.GRAND_SUMMON.get(), GrandSummonEntity.setAttributes().build());
         event.put(MobsCore.LEGENDARY_SUMMON.get(), LegendarySummonEntity.setAttributes().build());
 		event.put(MobsCore.ZEIN_SUMMON.get(), ZeinSummonEntity.setAttributes().build());
+		event.put(MobsCore.ENEMY_SUMMON.get(), EnemySummonEntity.setAttributes().build());
+		event.put(MobsCore.ZEIN_ENEMY_SUMMON.get(), ZeinEnemySummonEntity.setAttributes().build());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
 		event.put(MobsCore.DECADE_ARMOR_EX_AID.get(), DecadeArmorExAidEntity.setAttributes().build());
 		event.put(MobsCore.VICE.get(), ViceEntity.setAttributes().build());

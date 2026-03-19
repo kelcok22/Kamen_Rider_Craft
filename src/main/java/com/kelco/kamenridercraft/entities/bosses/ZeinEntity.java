@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entities.footSoldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.RideplayerEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
@@ -51,7 +52,7 @@ public class ZeinEntity extends BaseHenchmenEntity {
         this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D, 0.0F));
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-        this.targetSelector.addGoal(1, (new HurtByTargetGoal(this)).setAlertOthers());
+        this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, EnemySummonEntity.class)).setAlertOthers());
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, GenmEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, RideplayerEntity.class, true));
@@ -62,7 +63,7 @@ public class ZeinEntity extends BaseHenchmenEntity {
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, HorobiEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, ArkZeroEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, GlareEntity.class, true));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, MirrorRiderEntity.class, 5, false, false,
+        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, MirrorRiderEntity.class, 5, false, false,
                 (p_28879_) -> p_28879_.getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.OUJADRIVER.get()));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
@@ -138,11 +139,11 @@ public class ZeinEntity extends BaseHenchmenEntity {
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_ex_aid"), true);
                     }
-                    /*case 9 -> {
+                    case 9 -> {
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.GRAND_ZI_O_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_zi_o"), true);
-                    }*/
+                    }
                     case 10 -> {
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.ZERO_TWO_CARD.get()));
                         if (livingentity instanceof Player player)
@@ -158,27 +159,27 @@ public class ZeinEntity extends BaseHenchmenEntity {
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_revi"), true);
                     }
-                    /*case 13 -> {
+                    case 13 -> {
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.ULTIMATE_VICE_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_vice"), true);
-                    }*/
+                    }
                     case 14 -> {
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.GEATS_IX_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_geats"), true);
                     }
                     default -> {
-                        //if (this.getHealth()>this.getMaxHealth()/2) {
+                        if (this.getHealth()>this.getMaxHealth()/2) {
                             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.SUPER_1_CARD.get()));
                             if (livingentity instanceof Player player)
                                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_super_1"), true);
-                        /*} else {
+                        } else {
                             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.DIMENSION_CARD.get()));
                             if (livingentity instanceof Player player)
                                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_dimension"), true);
-                        }*/
-                    } //TODO: Grand Zi-O, Ultimate Vice, Dimension (monster summon)
+                        }
+                    }
                 }
                 this.removeAllEffects();
             }
