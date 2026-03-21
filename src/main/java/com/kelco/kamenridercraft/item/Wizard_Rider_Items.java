@@ -782,12 +782,9 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
-					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)){
+					,new MobEffectInstance(Effect_core.GLIDE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.RED_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
