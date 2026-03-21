@@ -574,6 +574,8 @@ public class Modded_item_core {
     public static final DeferredItem<Item> VISIONS_MUSIC_DISC = ITEMS.register("visions_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.VISIONS_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> PLAY_BACK_MUSIC_DISC = ITEMS.register("play_back_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.PLAY_BACK_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> MASKED_RIDER_MUSIC_DISC = ITEMS.register("masked_rider_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.MASKED_RIDER_KEY).stacksTo(1)));

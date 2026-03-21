@@ -319,6 +319,9 @@
   "item.kamenridercraft.visions.desc": "ホセフホースター - 『VISIONS』",
   "item.kamenridercraft.visions_music_disc.desc": "ホセフホースター - 『VISIONS』",
 
+  "item.kamenridercraft.play_back_music_disc": "『PLAY BACK』レコード",
+  "item.kamenridercraft.play_back.desc": "ホセフホースター - 『PLAY BACK』",
+  "item.kamenridercraft.play_back_music_disc.desc": "ホセフホースター - 『PLAY BACK』",
 
 
 
@@ -4577,6 +4580,7 @@
   "kamenridercraft:buffa_ring_wizard.form": "フォーム: ビーストスタイル",
   "kamenridercraft:chameleo_ring.form": "フォーム: カメレオマント",
   "kamenridercraft:dolphi_ring.form": "フォーム: ドルフィマント",
+  "kamenridercraft:land_ring_dragon_beast.form": "フォーム: ランドドラゴンスタイル",
   "kamenridercraft:hyper_ring.form": "フォーム: ハイパー",
 
   "item.kamenridercraft.wiseman_ring": "チェンジウィザードリング",

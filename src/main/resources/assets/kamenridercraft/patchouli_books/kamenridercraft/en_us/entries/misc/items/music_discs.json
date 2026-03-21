@@ -459,6 +459,17 @@
         "type": "patchouli:crafting",
         "recipe": "kamenridercraft:zeztz/visions_music_disc"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "play_back_music_disc",
+        "text": "Song:$(li)HosephHoestar - PLAY BACK$(br2)Based on:$(li)YUTA - PLAY BACK$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zeztz (2025, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:play_back_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "masked_rider_music_disc",

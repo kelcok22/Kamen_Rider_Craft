@@ -966,6 +966,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.CHEMY_X_STORY_FLOW_MUSIC_DISC);
             event.accept(Modded_item_core.GOT_BOOST_MUSIC_DISC);
             event.accept(Modded_item_core.VISIONS_MUSIC_DISC);
+            event.accept(Modded_item_core.PLAY_BACK_MUSIC_DISC);
 
             event.accept(Modded_item_core.MASKED_RIDER_MUSIC_DISC);
         }

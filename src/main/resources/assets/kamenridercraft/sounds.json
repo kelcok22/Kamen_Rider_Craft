@@ -335,6 +335,14 @@
       }
     ]
   },
+  "play_back": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:play_back",
+        "stream": true
+      }
+    ]
+  },
   "masked_rider": {
     "sounds": [
       {

@@ -143,6 +143,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> VISIONS= registerSoundEvent("visions");
     public static final ResourceKey<JukeboxSong> VISIONS_KEY = createSong("visions");
 
+    public static final Supplier<SoundEvent> PLAY_BACK= registerSoundEvent("play_back");
+    public static final ResourceKey<JukeboxSong> PLAY_BACK_KEY = createSong("play_back");
+
     public static final Supplier<SoundEvent> MASKED_RIDER= registerSoundEvent("masked_rider");
     public static final ResourceKey<JukeboxSong> MASKED_RIDER_KEY = createSong("masked_rider");
 
