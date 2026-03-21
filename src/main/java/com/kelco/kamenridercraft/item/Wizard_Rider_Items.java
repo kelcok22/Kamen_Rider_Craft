@@ -181,7 +181,7 @@ public class Wizard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
+			}.IsGlowing());
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING = ITEMS.register("land_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_land_dragon","wizard","wizardriver_belt",
