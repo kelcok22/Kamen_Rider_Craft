@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"parent": "builtin/generated",
 	"textures": {
@@ -17,7 +18,7 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [-20, -91, 19],
-			"translation": [0, 6, 3],
+			"translation": [2, 2, 3],
 			"scale": [2, 2, 3]
 		},
 		"firstperson_lefthand": {
@@ -37,7 +38,7 @@
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
-			"scale": [2, 2, 2]
+			"scale": [1.44, 1.44, 1.44]
 		}
 	}
 }
