@@ -1118,7 +1118,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
+            }.ChangeModel("ichigo.geo.json").IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
