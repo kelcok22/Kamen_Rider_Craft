@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "undead",
+  "pattern": [
+	"XPX",
+	"XMX",
+	"XCX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:bladecard"
+	},
+	  "P": {
+		  "item": "kamenridercraft:proper_blank_royal"
+	  },
+	"M": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	  "C": {
+		  "item": "kamenridercraft:fusion_peacock"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:peacock_sworther"
+  }	
+}

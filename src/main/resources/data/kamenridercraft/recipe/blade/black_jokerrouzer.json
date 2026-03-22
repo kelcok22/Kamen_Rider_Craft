@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chalice",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:bladecard"
+	},
+	"M": {
+	  "item": "kamenridercraft:black_joker_sealed"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:black_jokerrouzer"
+  }	
+}

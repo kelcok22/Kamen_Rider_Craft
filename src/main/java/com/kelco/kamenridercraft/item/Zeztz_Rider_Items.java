@@ -383,8 +383,11 @@ public class Zeztz_Rider_Items {
 
     public static final DeferredItem<Item> PUNISH_CAPSEM = ITEMS.register("punish_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false)){
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.SLASH, 40, 3,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
