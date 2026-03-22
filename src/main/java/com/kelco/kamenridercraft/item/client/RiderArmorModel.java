@@ -88,7 +88,7 @@ if (entity instanceof LivingEntity RIDER) {
     GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
     GeoBone tire3 = this.getAnimationProcessor().getBone("tire3");
 
-    GeoBone bipedHead = this.getAnimationProcessor().getBone("bipedHead");
+    GeoBone bipedHead = this.getAnimationProcessor().getBone("armorHead");
     if (bipedHead != null) {
         bipedHead.setScaleX((float) RIDER.getAttribute(attributeGenerator.HEAD_SIZE).getValue());
         bipedHead.setScaleY((float) RIDER.getAttribute(attributeGenerator.HEAD_SIZE).getValue());
@@ -165,8 +165,8 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle5.setScaleX(1.1f);
                 wizard_circle5.setScaleY(1.1f);
                 wizard_circle5.setScaleZ(1.1f);
-                wizard_circle5.setPosX(3);
-                wizard_circle5.setPosZ(35-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle5.setPosX(2.5f);
+                wizard_circle5.setPosZ(30-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
                 wizard_circle5.setHidden(false);
             }else {
                 wizard_circle5.setHidden(true);

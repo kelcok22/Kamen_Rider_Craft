@@ -209,9 +209,6 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
@@ -509,9 +506,6 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -566,9 +560,6 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
@@ -791,9 +782,6 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);

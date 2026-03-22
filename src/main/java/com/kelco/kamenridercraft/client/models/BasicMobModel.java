@@ -42,38 +42,10 @@ public class BasicMobModel<T extends Mob> extends PlayerModel<T> {
    }
    
    public void setupAnim(T p_103366_, float p_103367_, float p_103368_, float p_103369_, float p_103370_, float p_103371_) {
-		  this.body.loadPose(this.bodyDefault);
-	      this.head.loadPose(this.headDefault);
-		  this.leftArm.loadPose(this.leftArmDefault);
-		  this.rightArm.loadPose(this.rightArmDefault);
 	      super.setupAnim(p_103366_, p_103367_, p_103368_, p_103369_, p_103370_, p_103371_);
-	    
 	          if (p_103366_.isAggressive() && p_103366_.getMainHandItem().getItem() instanceof TieredItem) {
 	            this.holdWeaponHigh(p_103366_);
 	         }
-
-		  if (p_103366_.isPassenger()) {
-			this.head.y -= -10.0F;
-			for( ModelPart part : this.bodyParts() ) part.y -= -10.0F;
-		  } else if (p_103366_ instanceof TamableAnimal sittingMob && sittingMob.isInSittingPose()) {
-		  	this.rightArm.xRot += (-(float)Math.PI / 5F);
-		  	this.leftArm.xRot += (-(float)Math.PI / 5F);
-		  	this.rightLeg.xRot = -1.4137167F;
-		  	this.rightLeg.yRot = ((float)Math.PI / 10F);
-		  	this.rightLeg.zRot = 0.07853982F;
-		  	this.leftLeg.xRot = -1.4137167F;
-		  	this.leftLeg.yRot = (-(float)Math.PI / 10F);
-		  	this.leftLeg.zRot = -0.07853982F;
-			this.head.y -= -10.0F;
-			for( ModelPart part : this.bodyParts() ) part.y -= -10.0F;
-		  }
-
-	      this.leftPants.copyFrom(this.leftLeg);
-	      this.rightPants.copyFrom(this.rightLeg);
-	      this.leftSleeve.copyFrom(this.leftArm);
-	      this.rightSleeve.copyFrom(this.rightArm);
-	      this.jacket.copyFrom(this.body);
-	      this.hat.copyFrom(this.head);
 	   }
 
 	   private void holdWeaponHigh(T p_103361_) {

@@ -50,6 +50,7 @@ import java.util.function.Consumer;
 
 public class RiderDriverItem extends RiderArmorItem {
 
+
     public RiderFormChangeItem Base_Form_Item;
     public RiderFormChangeItem Armor_Form_Item;
     protected ArrayList<RiderFormChangeItem> Extra_Base_Form_Item;
@@ -69,29 +70,36 @@ public class RiderDriverItem extends RiderArmorItem {
     public Boolean Has_basic_belt_info = true;
     public Boolean Show_belt_form_info = true;
 
+
     /**
      * Constructor for the main armor piece used by a Kamen Rider, kaijin, or other transforming character. This item uses the foot armor slot in all cases.
      *
-     * @param material The {@link net.minecraft.world.item.ArmorMaterial} for the device (typically diamond)
-     * @param rider The name of the Rider that uses this device. A {@link com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem} compares its {@code ridername} with this value to determine if the Rider can use the form attached to the item
-     * @param baseFormItem The {@link com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem} containing the Rider's base form
+     * @param material The {@link ArmorMaterial} for the device (typically diamond)
+     * @param rider The name of the Rider that uses this device. A {@link RiderFormChangeItem} compares its {@code ridername} with this value to determine if the Rider can use the form attached to the item
+     * @param baseFormItem The {@link RiderFormChangeItem} containing the Rider's base form
      * @param head A helmet required to henshin, typically from a corresponding series
      * @param torso A chestplate required to henshin, typically from a corresponding series
      * @param legs A pair of leggings required to henshin, typically from a corresponding series
-     * @param properties The default {@link net.minecraft.world.item.Item.Properties} of the item
+     * @param properties The default {@link Properties} of the item
      * @author Kelco
     **/
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, BasicArmorItem.Type.BOOTS, properties);
+        super(material, Type.BOOTS, properties.component(DataComponents.CUSTOM_DATA, CustomData.EMPTY));
+
+
+
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         HEAD=head.get();
         TORSO=torso.get();
         LEGS=legs.get();
-        GeoItem.registerSyncedAnimatable(this);
 
+
+
+
+        GeoItem.registerSyncedAnimatable(this);
     }
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider,DeferredItem<Item> baseFormItem,DeferredItem<Item> armorFormItem,DeferredItem<Item> head,DeferredItem<Item>torso,DeferredItem<Item> legs, Properties properties)
@@ -103,7 +111,7 @@ public class RiderDriverItem extends RiderArmorItem {
         HEAD=head.get();
         TORSO=torso.get();
         LEGS=legs.get();
-
+        GeoItem.registerSyncedAnimatable(this);
     }
 
     /**
@@ -321,7 +329,6 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         if(isTransformed(player)) {
-            //if (player.level().isClientSide)player.sendSystemMessage(Component.literal("OnformChange"));
             OnTransformation(itemstack,player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
@@ -329,6 +336,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putFloat("wheel_rotation", 0f);
                 form.putFloat("ball_rotation", 0f);
                 form.putFloat("cape", 0f);
+                form.putDouble("render_type", getRenderType(itemstack));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
