@@ -525,14 +525,11 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.allowRiderKick().IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			}.ChangeModel("mage.geo.json").allowRiderKick().IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_B_RING = ITEMS.register("mage_b_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","mage_blue","wise_driver_belt",
@@ -541,15 +538,12 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.allowRiderKick().IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+                    .ChangeModel("mage.geo.json").allowRiderKick().IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_G_RING = ITEMS.register("mage_g_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","mage_green","wise_driver_belt",
@@ -558,14 +552,11 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_WIZARD_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 1, 0, 0, 0, 1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.allowRiderKick().IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			}.ChangeModel("mage.geo.json").allowRiderKick().IsGlowing().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_RING = ITEMS.register("sorcerer_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","sorcerer","wise_driver_belt",
