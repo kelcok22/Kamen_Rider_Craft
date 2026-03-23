@@ -36,6 +36,7 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.world.attributeGenerator;
+import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -174,16 +175,15 @@ public class KamenRiderCraftCore {
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
+        if (event.getRenderer().getModel() instanceof HeadedModel model) {
+            float sd = (float) event.getEntity().getAttribute(attributeGenerator.HEAD_SIZE).getValue();
+            model.getHead().xScale = sd;
+            model.getHead().yScale = sd;
+            model.getHead().zScale = sd;
+        }
 
         if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
 
-                float sd = (float) event.getEntity().getAttribute(attributeGenerator.HEAD_SIZE).getValue();
-                model.head.xScale = sd;
-                model.head.yScale = sd;
-                model.head.zScale = sd;
-                model.hat.xScale = sd;
-                model.hat.yScale = sd;
-                model.hat.zScale = sd;
 
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
                     && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {

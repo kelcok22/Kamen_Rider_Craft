@@ -709,7 +709,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
+            }.ChangeModel("skyrider.geo.json").HasCape().IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> ORIGINAL_TORNADO_CORE = ITEMS.register("original_tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_original","skyrider","tornado_belt",
@@ -729,7 +729,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM).has_basic_model());
+            }.ChangeModel("skyrider.geo.json").HasCape().IsGlowing().AddToList(RiderTabs.SKYRIDER_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","gangan_g","gangan_g_belt_belt")
