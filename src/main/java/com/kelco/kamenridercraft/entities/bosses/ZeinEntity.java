@@ -8,10 +8,14 @@ import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import com.kelco.kamenridercraft.item.decade.ZeinCard;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.BossEvent;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,11 +31,13 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import javax.annotation.Nullable;
 import java.util.EnumSet;
 import java.util.Random;
 
 public class ZeinEntity extends BaseHenchmenEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(ZeinEntity.class, EntityDataSerializers.BYTE);
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
 
     public ZeinEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -43,6 +49,32 @@ public class ZeinEntity extends BaseHenchmenEntity {
         this.setDropChance(EquipmentSlot.MAINHAND, 0.0f);
         this.setDropChance(EquipmentSlot.OFFHAND, 0.0f);
         this.xpReward = 50;
+    }
+    protected void customServerAiStep() {
+        super.customServerAiStep();
+        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+
+    public void readAdditionalSaveData(CompoundTag p_31474_) {
+        super.readAdditionalSaveData(p_31474_);
+        if (this.hasCustomName()) {
+            this.bossEvent.setName(this.getDisplayName());
+        }
+    }
+
+    public void setCustomName(@Nullable Component p_31476_) {
+        super.setCustomName(p_31476_);
+        this.bossEvent.setName(this.getDisplayName());
+    }
+
+    public void startSeenByPlayer(ServerPlayer p_31483_) {
+        super.startSeenByPlayer(p_31483_);
+        this.bossEvent.addPlayer(p_31483_);
+    }
+
+    public void stopSeenByPlayer(ServerPlayer p_31488_) {
+        super.stopSeenByPlayer(p_31488_);
+        this.bossEvent.removePlayer(p_31488_);
     }
 
     protected void addBehaviourGoals() {
