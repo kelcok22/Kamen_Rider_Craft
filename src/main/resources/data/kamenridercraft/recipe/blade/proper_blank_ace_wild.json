@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "kr_blade",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:bladecard"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+	"id": "kamenridercraft:proper_blank_ace_wild"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "kr_blade",
+  "pattern": [
+	"BCS",
+    "PNG",
+    "MTL"
+  ],
+  "key": {
+	"G": {
+	  "item": "kamenridercraft:evolution_giraffa"
+	},
+    "P": {
+      "item": "kamenridercraft:evolution_paradoxa"
+    },
+    "M": {
+      "item": "kamenridercraft:change_mantis"
+    },
+    "C": {
+      "item": "kamenridercraft:evolution_caucasus"
+    },
+    "B": {
+      "item": "kamenridercraft:change_beetle"
+    },
+    "S": {
+      "item": "kamenridercraft:change_stag"
+    },
+    "T": {
+      "item": "kamenridercraft:evolution_tarantula"
+    },
+    "L": {
+      "item": "kamenridercraft:change_spider"
+    },
+    "N": {
+      "item": "kamenridercraft:proper_blank_royal"
+    }
+  },
+  "result": {
+	"id": "kamenridercraft:vanity_blank"
+  }
+}

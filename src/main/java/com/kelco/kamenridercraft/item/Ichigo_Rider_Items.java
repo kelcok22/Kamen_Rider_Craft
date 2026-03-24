@@ -781,7 +781,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(RiderTabs.SUPER1_TAB_ITEM));
+            }.HasCape().IsGlowing().AddToList(RiderTabs.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUPER1HELMET = ITEMS.register("super_1head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
