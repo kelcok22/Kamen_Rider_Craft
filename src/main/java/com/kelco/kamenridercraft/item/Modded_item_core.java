@@ -123,7 +123,7 @@ public class Modded_item_core {
     public static final DeferredItem<Item>  SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shocker_combatman","shocker_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .SetShowFace().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .hasSD().SetShowFace().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));

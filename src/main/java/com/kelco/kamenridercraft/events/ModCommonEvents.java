@@ -363,6 +363,7 @@ public class ModCommonEvents {
             if (event.getSource().getEntity() instanceof Player player){
                 if (player.hasEffect(Effect_core.HAPPY_MODE)) {
                     player.sendSystemMessage(Component.literal(Component.translatable("happy_mode.kamenridercraft.sleep").getString()));
+					if (event.getEntity() instanceof ShadowmoonEntity) player.sendSystemMessage(Component.literal(Component.translatable("happy_mode.kamenridercraft.cheese_man").getString()));
                 }
             }
         }

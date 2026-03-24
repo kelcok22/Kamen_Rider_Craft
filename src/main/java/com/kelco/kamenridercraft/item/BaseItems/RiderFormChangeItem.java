@@ -58,6 +58,7 @@ public class RiderFormChangeItem extends BaseItem {
 
 
     private Boolean A1 = false;
+    private Boolean SD = false;
 
     private Boolean FLYING_TEXT = false;
     private Item STIFT_ITEM;
@@ -158,9 +159,9 @@ public class RiderFormChangeItem extends BaseItem {
         return IS_GLOWING;
     }
 
-    public Boolean get_a1() {
-        return A1;
-    }
+    public Boolean get_a1() { return A1; }
+    public Boolean get_SD() { return SD; }
+
     public Boolean get_has_cape() {
         return HAS_CAPE;
     }
@@ -343,6 +344,11 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem IsA1() {
         A1=true;
+        return this;
+    }
+
+    public RiderFormChangeItem hasSD() {
+        SD=true;
         return this;
     }
 

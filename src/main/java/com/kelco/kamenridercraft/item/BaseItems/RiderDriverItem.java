@@ -428,16 +428,17 @@ public class RiderDriverItem extends RiderArmorItem {
     {
 
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
+        boolean sd = rider.hasEffect(Effect_core.SD) && get_Form_Item(itemstack,1).get_SD();
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
             if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null||get_Form_Item(itemstack,1).getIgnoreOverrideBeltText()) {
-                belt = get_Form_Item(itemstack,1).getBeltTex();
+                belt = get_Form_Item(itemstack,1).getBeltTex()+(sd?"_sd":"");
             }
             return "belts/"+belt;
         }
 
-        else return get_Form_Item(itemstack,1).getRiderName(riderName)+get_Form_Item(itemstack,1).getFormName(fly);
+        else return get_Form_Item(itemstack,1).getRiderName(riderName)+get_Form_Item(itemstack,1).getFormName(fly)+(sd?"_sd":"");
 
     }
 
