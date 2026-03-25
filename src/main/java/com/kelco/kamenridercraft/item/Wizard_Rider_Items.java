@@ -324,7 +324,7 @@ public class Wizard_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 
 				}
-			}.allowRiderKick().IsGlowing().addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
+			}.allowRiderKick().IsGlowing().addNeedForm(INFINITY_WIZARD_RING.get(),1));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING  = ITEMS.register("finish_strike_ring",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_infinity_gold","wizard","wizardriver_belt",
@@ -347,7 +347,7 @@ public class Wizard_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 
 				}
-			}.allowRiderKick().IsGlowing().addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json")
+			}.allowRiderKick().IsGlowing().addNeedForm(INFINITY_WIZARD_RING.get(),1)
 					.addNeedItem(HOPE_RING.get()).addAlternative(FINISH_STRIKE_RING_NO_HOPE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECIAL_RUSH_RING = ITEMS.register("special_rush_ring",

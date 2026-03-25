@@ -203,6 +203,30 @@ if (entity instanceof LivingEntity RIDER) {
             }
         }
 
+        GeoBone wizard_circle8 = this.getAnimationProcessor().getBone("wizard_circle8");
+        if (wizard_circle8 != null) {
+            if (RiderDriverItem.isTransforming(RIDER)) {
+                wizard_circle8.setScaleX(1.1f);
+                wizard_circle8.setScaleY(1.1f);
+                wizard_circle8.setScaleZ(1.1f);
+                wizard_circle8.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
+                wizard_circle8.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle8.setHidden(false);
+            }else {
+                wizard_circle8.setHidden(true);
+                wizard_circle8.setPosY(0);
+            }
+        }
+
+        GeoBone rightLegkick= this.getAnimationProcessor().getBone("rightLegkick");
+        if (rightLegkick != null) {
+            if (RiderDriverItem.isKicking(RIDER)) {
+                rightLegkick.setHidden(false);
+            }else {
+                rightLegkick.setHidden(true);
+            }
+        }
+
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
                 tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
