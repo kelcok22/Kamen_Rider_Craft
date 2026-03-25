@@ -1255,7 +1255,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).AddCompatibilityList(BaseDecadeUsers)
+			}.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).ChangeModel("ichigo.geo.json").AddCompatibilityList(BaseDecadeUsers)
 					.IsBeltGlowing().IsGlowing().ChangeRiderName("shin").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZO_CARD = ITEMS.register("zo_card",

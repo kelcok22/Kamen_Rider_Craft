@@ -61,6 +61,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public int Num_Base_Form_Item = 1;
     public String BELT_TEXT;
     private Boolean A1 = false;
+    private Boolean SD = false;
 
     public int Unlimited_Textures = 0;
     public int Unlimited_Belt_Textures = 0;
@@ -402,6 +403,11 @@ public class RiderDriverItem extends RiderArmorItem {
         return this;
     }
 
+    public RiderDriverItem HasAnSDForm() {
+        SD=true;
+        return this;
+    }
+
     public RiderDriverItem IsA1() {
         A1=true;
         return this;
@@ -428,7 +434,7 @@ public class RiderDriverItem extends RiderArmorItem {
     {
 
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
-        boolean sd = rider.hasEffect(Effect_core.SD) && get_Form_Item(itemstack,1).get_SD();
+        boolean sd = rider.hasEffect(Effect_core.SD) && get_Form_Item(itemstack,1).get_SD()&SD;
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
