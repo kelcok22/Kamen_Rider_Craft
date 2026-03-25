@@ -202,7 +202,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("ichigo.geo.json").allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            }.hasSD().ChangeModel("ichigo.geo.json").allowRiderKick().IsGlowing().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SAIKYO_KAIJIN_TYPHOON_CORE = ITEMS.register("saikyo_kaijin_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_saikyo_kaijin","shocker_rider_1","typhoon_belt_saikyo_kaijin",
@@ -251,26 +251,26 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yongo",TYPHOON_CORE_YONGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_1 = ITEMS.register("typhoon_shocker_rider_1",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_2 = ITEMS.register("typhoon_shocker_rider_2",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_3 = ITEMS.register("typhoon_shocker_rider_3",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_3",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_3",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_4 = ITEMS.register("typhoon_shocker_rider_4",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_4",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_4",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_5 = ITEMS.register("typhoon_shocker_rider_5",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_5",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_5",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_6 = ITEMS.register("typhoon_shocker_rider_6",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_6",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_6",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_7 = ITEMS.register("typhoon_shocker_rider_7",
@@ -320,7 +320,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eins",CYBORG_SUPER_ENERGY_CONVERTER_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOCKER_BELT = ITEMS.register("shocker_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_MANGA = ITEMS.register("ichigo_manga",
             () -> new RiderFormChangeItem(new Item.Properties(),"_manga","ichigo","typhoon_belt",
@@ -518,7 +518,7 @@ public class Ichigo_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.HasCape().has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
+            }.hasSD().HasCape().has_basic_model().AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_REBORN_CORE = ITEMS.register("apollogeist_reborn_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_reborn","apollogeist","apollogeist_belt",
@@ -559,7 +559,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_BELT = ITEMS.register("apollogeist_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
