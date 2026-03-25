@@ -318,8 +318,22 @@ public class Faiz_Rider_Items {
 	public static final DeferredItem<Item> KAIXA_MISSION_MEMORY_TOY = ITEMS.register("kaixa_mission_memory_toy",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ALPHA_MISSION_MEMORY = ITEMS.register("alpha_mission_memory",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","alpha","alpha_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .IsGlowing().ChangeBeltModel("geo/faiz_belt.geo.json").has_basic_model().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
-	public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",
+    public static final DeferredItem<Item> BETA_MISSION_MEMORY = ITEMS.register("beta_mission_memory",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","beta","beta_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+                    .IsGlowing().ChangeBeltModel("geo/faiz_belt.geo.json").has_basic_model().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZCHESTPLATE = ITEMS.register("faiztroso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
@@ -382,9 +396,17 @@ public class Faiz_Rider_Items {
 	public static final DeferredItem<Item> SEEDA_DRIVER_UW = ITEMS.register("seeda_driver_uw",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_uw",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
+    public static final DeferredItem<Item> ALPHA_DRIVER = ITEMS.register("alpha_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alpha",ALPHA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).has_basic_model().ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+
+    public static final DeferredItem<Item> BETA_DRIVER = ITEMS.register("beta_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beta",BETA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).has_basic_model().ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
-	public static final DeferredItem<Item> FAIZ_EDGE = ITEMS.register("faiz_edge",
+
+    public static final DeferredItem<Item> FAIZ_EDGE = ITEMS.register("faiz_edge",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_PHONE = ITEMS.register("faiz_phone",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));

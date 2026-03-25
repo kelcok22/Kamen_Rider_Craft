@@ -86,7 +86,7 @@ public class RiderDriverItem extends RiderArmorItem {
     **/
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, Type.BOOTS, properties.component(DataComponents.CUSTOM_DATA, CustomData.EMPTY));
+        super(material, Type.BOOTS, properties);
 
 
 
@@ -594,7 +594,6 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
             }
         }
-            
 
 		int i = 0;
 		int j = 0;
