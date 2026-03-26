@@ -327,7 +327,7 @@ public class Wizard_Rider_Items {
 			}.allowRiderKick().IsGlowing().addNeedForm(INFINITY_WIZARD_RING.get(),1));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING  = ITEMS.register("finish_strike_ring",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_infinity_gold","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_infinity_gold","wizard","wizardriver_belt_gold",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
