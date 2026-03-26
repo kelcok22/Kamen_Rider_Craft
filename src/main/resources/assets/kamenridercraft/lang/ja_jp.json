@@ -2683,6 +2683,10 @@
 "kamenridercraft.name.seeda_gb": "ライダー: 仮面ライダーシーダ（ガーディアンブルー）",
 "kamenridercraft.name.seeda_ro": "ライダー: 仮面ライダーシーダ（レスキューオレンジ）",
 "kamenridercraft.name.seeda_uw": "ライダー: 仮面ライダーシーダ（アーバンホワイト）",
+"item.kamenridercraft.alpha_driver": "アルファドライバー",
+"kamenridercraft.name.alpha": "ライダー: 仮面ライダーアルファ",
+"item.kamenridercraft.beta_driver": "ベータドライバー",
+"kamenridercraft.name.beta": "ライダー: 仮面ライダーベータ",
 
 "item.kamenridercraft.faiz_edge": "ファイズエッジ",
 "item.kamenridercraft.faiz_phone": "ファイズフォン",
@@ -2715,7 +2719,7 @@
 "item.kamenridercraft.kaixa_mission_memory": "カイザミッションメモリー",
 "item.kamenridercraft.delta_mission_memory": "デルタミッションメモリー",
 "item.kamenridercraft.psyga_mission_memory": "サイガミッションメモリー",
-  "item.kamenridercraft.flying_attacker": "フライングアタッカー",
+"item.kamenridercraft.flying_attacker": "フライングアタッカー",
 "item.kamenridercraft.orga_mission_memory": "オーガミッションメモリー",
 "item.kamenridercraft.next_faiz_mission_memory": "ネクストファイズミッションメモリー",
 "item.kamenridercraft.next_kaixa_mission_memory": "ネクストカイザミッションメモリー",
@@ -2723,8 +2727,10 @@
 "item.kamenridercraft.neo_alpa_mission_memory": "ネオアルパミッションメモリー",
 "item.kamenridercraft.pyron_mission_memory": "白龍ミッションメモリー",
 "item.kamenridercraft.seeda_mission_memory": "シーダミッションメモリー",
-  "item.kamenridercraft.faiz_mission_memory_toy": "ファイズミッションメモリー（玩具版）",
-  "item.kamenridercraft.kaixa_mission_memory_toy": "カイザミッションメモリー（玩具版）",
+ "item.kamenridercraft.faiz_mission_memory_toy": "ファイズミッションメモリー（玩具版）",
+"item.kamenridercraft.kaixa_mission_memory_toy": "カイザミッションメモリー（玩具版）",
+"item.kamenridercraft.alpha_mission_memory": "アルファミッションメモリー",
+"item.kamenridercraft.beta_mission_memory": "ベータミッションメモリー",
 
 
   "kamenridercraft:blank_mission_memory.form": "フォーム: 基本フォーム",

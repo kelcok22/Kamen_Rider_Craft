@@ -1,0 +1,16 @@
+{
+	"name": "Beta Driver",
+	"icon": "kamenridercraft:beta_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle Stage: Faiz vs Delta (2003, stage show)$(br2)Equipped alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/alpha)Kamen Rider Beta"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:faiz/beta_driver"
+      }
+	]
+}

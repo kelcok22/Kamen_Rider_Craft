@@ -203,6 +203,32 @@
         "item": "kamenridercraft:kaixa_mission_memory_toy",
         "title": " ",
         "text": "Found inside $(l:misc/city/urban_area#kikuchi_cleaners)West Washing Shop Kikuchi$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "alpha_mission_memory",
+        "title": "Alpha Mission Memory",
+        "text": "Appears in:$(li)Kamen Rider Battle Stage: Faiz vs Delta (2003, stage show)$(br2)Used to craft Alpha's $(l:faiz/devices/alpha_driver)Alpha Driver$(/l)$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:alpha_mission_memory",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "beta_mission_memory",
+        "title": "Beta Mission Memory",
+        "text": "Appears in:$(li)Kamen Rider Battle Stage: Faiz vs Delta (2003, stage show)$(br2)Used to craft Beta's $(l:faiz/devices/beta_driver)Beta Driver$(/l)$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:beta_mission_memory",
+        "title": " ",
+        "text": "Item is currently unobtainable"
       }
     ]
 }
