@@ -153,7 +153,7 @@ public class Modded_item_core {
             () -> new RiderFormChangeItem(new Item.Properties(),"_herculespader","blade","blay_buckle_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DARKWING = ITEMS.register("darkwing",
@@ -255,7 +255,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .IsGlowing().hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
 
@@ -385,7 +385,7 @@ public class Modded_item_core {
                         }
                     }
                 }
-            }.hasStaticWings().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
+            }.IsGlowing().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI = ITEMS.register("jinrai_no_senshi",
