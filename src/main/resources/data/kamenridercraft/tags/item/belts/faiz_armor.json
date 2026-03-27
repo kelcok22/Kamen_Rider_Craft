@@ -17,6 +17,8 @@
 	"kamenridercraft:seeda_driver",
 	"kamenridercraft:seeda_driver_gb",
 	"kamenridercraft:seeda_driver_ro",
-	"kamenridercraft:seeda_driver_uw"
+	"kamenridercraft:seeda_driver_uw",
+	"kamenridercraft.alpha_driver",
+	"kamenridercraft.beta_driver"
   ]
 }
