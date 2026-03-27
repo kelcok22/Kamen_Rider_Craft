@@ -841,7 +841,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").hasFlyingWings("rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			}.HasCape().IsGlowing().IsBeltGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").hasFlyingWings("blade_jack_wing.geo.json").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> HIBIKI_KURENAI_CARD = ITEMS.register("hibiki_kurenai_card",
@@ -1142,7 +1142,7 @@ public class Decade_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ELECTRER.get()).AddCompatibilityList(BaseDecadeUsers)
-					.IsBeltGlowing().IsGlowing().ChangeRiderName("stronger").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsBeltGlowing().HasCape().IsGlowing().ChangeRiderName("stronger").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SKYRIDER_CARD = ITEMS.register("skyrider_card",
 			() -> new RiderCardItem(new Item.Properties(),"","decade","decadriver_belt",
@@ -1163,7 +1163,7 @@ public class Decade_Rider_Items {
 							player.getZ(), 34, 0, 0, 0, 1);
 				}
 			}.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TORNADO.get()).AddCompatibilityList(BaseDecadeUsers)
-					.IsBeltGlowing().IsGlowing().ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsBeltGlowing().HasCape().IsGlowing().ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_1_CARD = ITEMS.register("super_1_card",
 			() -> new ZeinRiderCardItem(new Item.Properties(),"","decade","decadriver_belt",
@@ -1190,7 +1190,7 @@ public class Decade_Rider_Items {
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
 			}.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CYCLODE.get()).AddCompatibilityList(BaseDecadeUsers)
-					.IsBeltGlowing().IsGlowing().ChangeRiderName("super_1").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsBeltGlowing().HasCape().IsGlowing().ChangeRiderName("super_1").AddToList(ZEIN_CARDS).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZX_CARD = ITEMS.register("zx_card",
 			() -> new RiderCardItem(new Item.Properties(),"","decade","decadriver_belt",
