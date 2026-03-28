@@ -24,7 +24,7 @@
         "link_recipe": true,
         "anchor": "faiz_boss_block",
         "item": "kamenridercraft:faiz_boss_block",
-        "text": "Block is currently unobtainable$(br2)Mine this block to summon $(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)$(br2)Mine this block to summon $(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
       },
       {
         "type": "patchouli:spotlight",
@@ -39,6 +39,13 @@
         "anchor": "arc_boss_block",
         "item": "kamenridercraft:arc_boss_block",
         "text": "Found inside a $(l:kiva/structures/kiva_crater)Kiva Crater$(/l)$(br2)Mine this block to summon $(l:kiva/mobs/arc)Kamen Rider Arc$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "anchor": "decade_violent_emotion_boss_block",
+        "item": "kamenridercraft:decade_violent_emotion_boss_block",
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)$(br2)Mine this block to summon $(l:decade/mobs/decade_violent)Kamen Rider Decade Violent Emotion$(/l)"
       },
       {
         "type": "patchouli:spotlight",

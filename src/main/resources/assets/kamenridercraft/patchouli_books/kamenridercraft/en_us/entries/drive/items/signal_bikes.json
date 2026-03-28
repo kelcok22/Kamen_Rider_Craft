@@ -103,7 +103,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_1",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -233,7 +233,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_w",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -245,7 +245,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_ooo",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -257,7 +257,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_fourze",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -269,7 +269,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_wizard",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -281,7 +281,7 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:signal_legend_gaim",
-        "text": "Item is currently unobtainable"
+        "text": "Found inside a $(l:misc/city/centers#shocker_base)Shocker Base$(/l)"
       }
     ]
 }

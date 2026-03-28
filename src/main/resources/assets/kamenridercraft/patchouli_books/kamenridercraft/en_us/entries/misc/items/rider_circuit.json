@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:misc/rider_circuit",
-          "text": "$(li)$(l:stronger/mobs/black_satan_soldier)Black Satan Soldier$(/l)$(li)$(l:skyrider/mobs/ari_commando)Ari Commando$(/l)$(li)$(l:super_1/mobs/dogma_fighter)Dogma Fighter$(/l)$(li)$(l:zx/mobs/combat_roid)Combat-Roid$(/l)$(li)$(l:black/mobs/shadow_moon)Shadow Moon$(/l)$(li)$(l:black_rx/mobs/chap)Chap$(/l)$(li)$(l:black_rx/mobs/grey_chap)Grey Chap$(/l)$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
+          "text": "$(li)$(l:stronger/mobs/black_satan_soldier)Black Satan Soldier$(/l)$(li)$(l:skyrider/mobs/ari_commando)Ari Commando$(/l)$(li)$(l:super_1/mobs/dogma_fighter)Dogma Fighter$(/l)$(li)$(l:zx/mobs/combat_roid)Combat-Roid$(/l)$(li)$(l:black/mobs/shadow_moon)Shadow Moon$(/l)$(li)$(l:black_rx/mobs/chap)Chap$(/l)$(li)$(l:black_rx/mobs/grey_chap)Grey Chap$(/l)$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)$(li)$(l:decade/mobs/decade_violent)Kamen Rider Decade Violent Emotion$(/l)"
 		}
 	]
 }

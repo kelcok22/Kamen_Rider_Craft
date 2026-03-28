@@ -24,7 +24,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:decade/decade_violent_emotion_card"
+			"recipe": "kamenridercraft:decade/decade_violent_emotion_card",
+          "text": "Drops from:$(li)$(l:decade/mobs/decade_violent)Kamen Rider Decade Violent Emotion(/l)"
 		},
 		{
 			"type": "patchouli:text",

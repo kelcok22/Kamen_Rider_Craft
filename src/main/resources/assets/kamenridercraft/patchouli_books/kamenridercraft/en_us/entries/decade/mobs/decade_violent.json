@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Decade Violent Emotion",
+	"icon": "kamenridercraft:decade_violent_emotion_boss_block",
+	"category": "kamenridercraft:decade/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:decade_violent",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Health: 50$(br2)Summoned from a $(l:misc/blocks/boss_blocks#decade_violent_emotion_boss_block)Decade Violent Emotion Boss Block$(/l)$(br2)Drops$(li)4-6 $(l:decade/items/blank_card)Blank Rider Cards$(/l)$(li)3-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:decade/items/kamenride_cards#decade_violent_emotion_card)KamenRide Decade Violent Emotion$(/l)$(li)1 $(l:decade/items/final_formride_cards#decade_ooo_armor_card)Final FormRide OOO Armor$(/l) (33.3%)$(li)1 $(l:w/items/gaia_memories#cyclone_cyclone_memory)Cyclone Cyclone Memory$(/l) (33.3%)$(li)1 $(l:w/items/gaia_memories#joker_joker_memory)Joker Joker Memory$(/l) (33.3%)"
+		}
+	]
+}

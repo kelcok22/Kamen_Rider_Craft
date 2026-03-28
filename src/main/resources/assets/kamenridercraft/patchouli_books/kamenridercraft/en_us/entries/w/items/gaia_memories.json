@@ -61,7 +61,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:w/joker_joker_memory"
+			"recipe": "kamenridercraft:w/joker_joker_memory",
+          "text": "Drops from:$(li)$(l:decade/mobs/decade_violent)Kamen Rider Decade Violent Emotion$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -111,7 +112,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:w/cyclone_cyclone_memory"
+			"recipe": "kamenridercraft:w/cyclone_cyclone_memory",
+          "text": "Drops from:$(li)$(l:decade/mobs/decade_violent)Kamen Rider Decade Violent Emotion$(/l)"
 		},
 		{
 			"type": "patchouli:text",

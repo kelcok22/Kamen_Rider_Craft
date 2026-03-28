@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "beta_gear",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_mission_memory"
+	}, "C": {
+	  "item": "kamenridercraft:beta_mission_memory"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:beta_driver"
+  }
+}

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Drops:$(li)1 $(l:zeztz/items/code_capsem)CODE Capsem$(/l) (50%)$(li)1 $(l:zeztz/items/capsems#void_capsem)Void Capsem$(/l) (50%)$(li)1 $(l:zeztz/items/capsems#erase_capsem)Erase Capsem$(/l)"
+			"text": "Drops:$(li)1 $(l:zeztz/items/code_capsem)CODE Capsem$(/l) (50%)$(li)1 $(l:zeztz/items/capsems#void_capsem)Void Capsem$(/l) (50%)$(li)1 $(l:zeztz/items/capsems#erase_capsem)Erase Capsem$(/l)$(li)1 $(l:zeztz/items/capsems#shadow_capsem)Shadow Capsem$(/l) (33.3%)$(li)1 $(l:zeztz/items/capsems#gun_capsem)Gun Capsem$(/l) (33.3%)$(li)1 $(l:zeztz/items/capsems#wolf_capsem)Wolf Capsem$(/l) (33.3%)"
       }
 	]
 }

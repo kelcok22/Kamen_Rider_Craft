@@ -14,7 +14,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:decade_ooo_armor_card",
         "title": "Final FormRide OOO Armor",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:decade/mobs/decade_violent)Kamen Rider Decade Violent Emotion(/l)"
       },
 		{
 			"type": "patchouli:text",

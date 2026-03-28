@@ -208,7 +208,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:shadow_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -221,7 +221,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gun_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
       },
       {
         "type": "patchouli:text",
@@ -234,7 +234,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:wolf_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
       },
       {
         "type": "patchouli:text",

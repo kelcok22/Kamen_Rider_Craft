@@ -1,7 +1,27 @@
 {
   "type": "minecraft:entity",
   "pools": [
-	{
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:shadow_capsem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gun_capsem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:wolf_capsem",
+          "weight": 1
+        }
+      ]
+    },
+    {
 	  "rolls": 1,
 	  "entries": [
 		{

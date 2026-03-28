@@ -53,6 +53,33 @@
 			],
 			"title": " "
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "shocker_base",
+        "title": "Shocker Base",
+        "text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Mobs: $(li)$(l:ichigo/mobs/shocker_combatman)Shocker Combatman$(/l)$(li)$(l:shin_kamen_rider/mobs/batta_augment)Phase Variation Batta Aug$(/l)$(br2)Cityscape: Suburban (low-rise)$(br2)Loot on next page"
+          },
+          {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_2.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_3.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_4.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_5.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_6.png"
+            ],
+            "title": " "
+          },
+      {
+        "type": "patchouli:text",
+        "text": "Barrel loot (found in Yongo's Hangar): $(li)$(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)$(l:drive/items/drive_system_car)Drive System Cars$(/l)$(li)$(l:ichigo/items/typhoon_cores#typhoon_core_yongo)Typhoon Core (Yongo)$(/l)$(li)$(l:ichigo/items/rider3_vs_the_demon_of_general_black)Rider 3 vs. The Demon of General Black Manga$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_1)Signal Legend 1$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_w)Signal Legend W$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_ooo)Signal Legend OOO$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_fourze)Signal Legend Fourze$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_wizard)Signal Legend Wizard$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_gaim)Signal Legend Gaim$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "May include a $(l:misc/blocks/boss_blocks#faiz_boss_block)Faiz Boss Block$(/l) or a $(l:misc/blocks/boss_blocks#decade_violent_emotion_boss_block)Decade Violent Emotion Boss Block$(/l)"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "fuuto_tower",
