@@ -1,11 +1,13 @@
 {
   "values": [
     "kamenridercraft:n_daguva_zeba_boss_block",
+    "kamenridercraft:odin_boss_block",
     "kamenridercraft:faiz_boss_block",
     "kamenridercraft:gaoh_boss_block",
     "kamenridercraft:arc_boss_block",
     "kamenridercraft:taboo_boss_block",
     "kamenridercraft:terror_boss_block",
+    "kamenridercraft:decade_violent_emotion_boss_block",
     "kamenridercraft:poseidon_boss_block",
     "kamenridercraft:core_boss_block",
     "kamenridercraft:powered_up_core_boss_block",
@@ -32,11 +34,13 @@
     "kamenridercraft:horobi_boss_block",
     "kamenridercraft:ikazuchi_boss_block",
     "kamenridercraft:ark_one_boss_block",
+    "kamenridercraft:zein_boss_block",
     "kamenridercraft:sabela_boss_block",
     "kamenridercraft:durendal_boss_block",
     "kamenridercraft:solomon_boss_block",
     "kamenridercraft:storious_boss_block",
     "kamenridercraft:eld_boss_block",
-    "kamenridercraft:bocca_boss_block"
+    "kamenridercraft:bocca_boss_block",
+    "kamenridercraft:caries_boss_block"
   ]
 }

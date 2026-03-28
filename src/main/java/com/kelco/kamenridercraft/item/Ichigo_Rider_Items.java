@@ -251,7 +251,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yongo",TYPHOON_CORE_YONGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_1 = ITEMS.register("typhoon_shocker_rider_1",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_2 = ITEMS.register("typhoon_shocker_rider_2",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
@@ -559,7 +559,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_BELT = ITEMS.register("apollogeist_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).HasAnSDForm().has_basic_model().AddToTabList(RiderTabs.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",

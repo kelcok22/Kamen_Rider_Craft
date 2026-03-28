@@ -286,7 +286,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.ChangeModel("den_o.geo.json").IsBeltGlowing().IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI_HIJACK = ITEMS.register("rider_ticket_yuuki_hijack",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hijack","yuuki","yuuki_belt",

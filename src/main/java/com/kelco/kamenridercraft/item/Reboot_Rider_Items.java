@@ -187,13 +187,13 @@ public class Reboot_Rider_Items {
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZONS_DRIVER_ALPHA = ITEMS.register("amazons_driver_alpha",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_alpha",CONDORER_CORE_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_alpha",CONDORER_CORE_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZONS_DRIVER_OMEGA = ITEMS.register("amazons_driver_omega",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_omega",CONDORER_CORE_OMEGA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_omega",CONDORER_CORE_OMEGA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZONS_DRIVER_SIGMA = ITEMS.register("amazons_driver_sigma",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_sigma",CONDORER_CORE_SIGMA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_sigma",CONDORER_CORE_SIGMA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_OMEGA = ITEMS.register("neo_amazons_driver_omega",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_new_omega",AMAZON_INJECTOR_NEW_OMEGA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));

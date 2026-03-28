@@ -10,7 +10,7 @@
 		  "children": [
 			{
 			  "type": "minecraft:item",
-			  "name": "kamenridercraft:faiz_boss_block",
+			  "name": "kamenridercraft:decade_violent_emotion_boss_block",
 			  "conditions": [
 				{
 				  "condition": "minecraft:match_tool",
@@ -34,5 +34,5 @@
 	  ]
 	}
   ],
-  "random_sequence": "kamenridercraft:faiz_boss_block"
+  "random_sequence": "kamenridercraft:decade_violent_emotion_boss_block"
 }

@@ -431,7 +431,7 @@ public class Ryuki_Rider_Items {
 
 	public static final DeferredItem<Item> ODINDRIVER = ITEMS.register("v_buckle_odin",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"odin",GOLDPHOENIX_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().ChangeRepairItem(ADVENT_CARD.get()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+					.ChangeRepairItem(ADVENT_CARD.get()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIGERDRIVER = ITEMS.register("v_buckle_tiger",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tiger",DESTWILDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())

@@ -460,7 +460,7 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddNeedItemList(NEED_ITEM_OniCopter).model_has_different_name("gekiocopter_ride_chemy_card"));
+			}.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_OniCopter).model_has_different_name("gekiocopter_ride_chemy_card"));
 
 	public static final DeferredItem<Item> GEKIOCOPTER_RIDE_CHEMY_CARD_V = ITEMS.register("gekiocopter_ride_chemy_card_v",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ange_copter","valvarad_rider","valvaradriver_belt",
@@ -946,7 +946,7 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddNeedItemList(NEED_ITEM_MoonCerberus).model_has_different_name("neminemoon_ride_chemy_card"));
+			}.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_MoonCerberus).model_has_different_name("neminemoon_ride_chemy_card"));
 
 	public static final DeferredItem<Item> NEMINEMOON_RIDE_CHEMY_CARD = ITEMS.register("neminemoon_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_moon_cerberus","majade","alchemisdriver_belt",
@@ -1008,7 +1008,7 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddNeedItemList(NEED_ITEM_SunUnicorn).model_has_different_name("the_sun_ride_chemy_card"));
+			}.IsGlowing().AddCompatibilityList(Gotchards).AddNeedItemList(NEED_ITEM_SunUnicorn).model_has_different_name("the_sun_ride_chemy_card"));
 
 	public static final DeferredItem<Item> THE_SUN_RIDE_CHEMY_CARD = ITEMS.register("the_sun_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","majade","alchemisdriver_belt",
