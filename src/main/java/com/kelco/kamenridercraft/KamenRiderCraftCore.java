@@ -244,10 +244,10 @@ public class KamenRiderCraftCore {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ResourceLocation BLOCKING_PROPERTY_RESLOC = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
-
+            event.enqueueWork(() -> {
+                ResourceLocation BLOCKING_PROPERTY_RESLOC = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
             for (Item value : SHIELD_ITEM) {
-                ItemProperties.register(value, BLOCKING_PROPERTY_RESLOC, ($itemStack, $level, $entity, $seed) -> $entity != null && $entity.isUsingItem() && $entity.getUseItem() == $itemStack ? 1.0F : 0.0F);
+               ItemProperties.register(value, BLOCKING_PROPERTY_RESLOC, ($itemStack, $level, $entity, $seed) -> $entity != null && $entity.isUsingItem() && $entity.getUseItem() == $itemStack ? 1.0F : 0.0F);
             }
 
             for (Item item : KUUGA_CHANGING_ITEM) {
@@ -473,7 +473,7 @@ public class KamenRiderCraftCore {
                     return 0;
                 });
             }
-
+ });
             if (ModList.get().isLoaded("bettercombat")) BetterCombatAttackListener.register();
         }
 
