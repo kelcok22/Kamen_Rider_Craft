@@ -112,16 +112,15 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing());
 
     static final DeferredItem<Item> KTAROS_KICK = ITEMS.register("ktaros_kick",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_kick","den_o","den_o_belt_c",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax","den_o","den_o_belt_c",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 1,true,false)){
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -137,7 +136,7 @@ public class Den_O_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.IsGlowing().allowRiderKick().model_has_different_name("ktaros"));
+            }.IsGlowing().model_has_different_name("ktaros").AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KTAROS_PUNCH = ITEMS.register("ktaros_punch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_punch","den_o","den_o_belt_c",
@@ -165,12 +164,13 @@ public class Den_O_Rider_Items {
                     .model_has_different_name("ktaros"));
 
 	public static final DeferredItem<Item> KTAROS = ITEMS.register("ktaros",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax","den_o","den_o_belt_c",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_kick","den_o","den_o_belt_c",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 1,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -186,7 +186,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 25, 0, 0, 0, 1);
 				}
-			}.IsGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.IsGlowing().allowRiderKick().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).model_has_different_name("ktaros").AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_KTAROS = ITEMS.register("super_ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_super_climax","den_o","den_o_belt_c",
