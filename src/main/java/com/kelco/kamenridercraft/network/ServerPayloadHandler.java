@@ -64,7 +64,7 @@ public class ServerPayloadHandler {
     private static void handleAbilityKeyPress(ServerPlayer player) {
 
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-        && !player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.parse("kamenridercraft:belts/wizard_armor")))) RiderDriverItem.setUseAbility(player.getItemBySlot(EquipmentSlot.FEET));
+        && !player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.parse("kamenridercraft:belts/blade_armor"))) && !player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.parse("kamenridercraft:belts/wizard_armor")))) RiderDriverItem.setUseAbility(player.getItemBySlot(EquipmentSlot.FEET));
     }
 
     private static void handleBeltKeyPress(ServerPlayer player) {
