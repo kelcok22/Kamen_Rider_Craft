@@ -1,38 +1,46 @@
 {
 	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
 		"layer0": "kamenridercraft:item/garren_kingrouzer"
 	},
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -90, 45],
-			"translation": [0, 0, -6.75],
-			"scale": [1.1, 1.1, 1.1]
+			"translation": [0, 0.5, -4.25],
+			"scale": [1.275, 1.275, 0.85]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [0, 90, -45],
-			"translation": [0, 0, -6.75],
-			"scale": [1.1, 1.1, 1.1]
+			"translation": [0, 0.5, -4.25],
+			"scale": [1.275, 1.275, 0.85]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -90, 25],
-			"translation": [1.13, 5.7, -3.87]
+			"translation": [1.13, 3.95, -1.87],
+			"scale": [0.68, 0.68, 0.68]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, 90, -25],
-			"translation": [1.13, 5.7, -3.87]
+			"translation": [1.13, 3.95, -1.87],
+			"scale": [0.68, 0.68, 0.68]
 		},
 		"ground": {
 			"translation": [-1.25, 2.75, 0],
-			"scale": [0.65, 0.65, 0.65]
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"translation": [-3, 0, 0]
 		},
 		"head": {
 			"rotation": [56, 90, 81],
 			"translation": [0, -2.25, -7.25]
 		},
 		"fixed": {
-			"translation": [0.25, -0.25, 0],
+			"rotation": [0, -180, 0],
+			"translation": [3.25, -0.25, 0],
 			"scale": [1.2, 1.2, 1]
 		}
 	}

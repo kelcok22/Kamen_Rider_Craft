@@ -5,48 +5,44 @@
 	"textures": {
 		"layer0": "kamenridercraft:item/wild_slasher"
 	},
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, -90, -95],
-			"translation": [0, -9, 6.75],
-			"scale": [1.1, 1.1, 1]
+			"rotation": [-90, -90, 0],
+			"translation": [0, 5, -6.75],
+			"scale": [1.275, 1.275, 0.85]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, 90, 95],
-			"translation": [0, -9, 6.75],
-			"scale": [1.1, 1.1, 1]
+			"rotation": [-90, 90, 0],
+			"translation": [0, 5, -6.75],
+			"scale": [1.275, 1.275, 0.85]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, 75, -106],
-			"translation": [1.13, 0.7, -1.12],
-			"scale": [1.1, 1.1, 1.1]
+			"rotation": [-90, -90, 0],
+			"translation": [1.13, 6.7, -2.87],
+			"scale": [1.02, 1.02, 0.68]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, -75, 106],
-			"translation": [-2.12, 0.75, -1.13],
-			"scale": [1.1, 1.1, 1.1]
+			"rotation": [-90, 90, 0],
+			"translation": [1.13, 6.7, -2.87],
+			"scale": [1.02, 1.02, 0.68]
 		},
 		"ground": {
-			"translation": [1.5, 2.5, 0],
-			"scale": [0.65, 0.65, 0.65]
+			"translation": [0, 3.5, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"translation": [3, 2.75, 0],
-			"scale": [1.33, 1.33, 1.33]
-		},
-		"head": {
-			"rotation": [0, 90, 0],
-			"translation": [0, 11.75, -10.25]
+			"translation": [3.25, 3.25, 0],
+			"scale": [1.40234, 1.40234, 1.40234]
 		},
 		"fixed": {
 			"rotation": [0, -180, 0],
-			"translation": [-4, 4.75, 0],
-			"scale": [1.73, 1.73, 1.73]
+			"translation": [-4, 4, 0],
+			"scale": [1.5, 1.5, 1]
 		},
 		"on_shelf": {
-			"rotation": [0, 90, 36],
-			"translation": [0, 3, 0],
-			"scale": [2.15, 2.15, 2.15]
+			"rotation": [45, 90, 0],
+			"scale": [1.31, 1.31, 1.31]
 		}
 	}
 }

@@ -1,17 +1,19 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"parent": "builtin/generated",
 	"textures": {
 		"layer0": "kamenridercraft:item/wild_chalice_arrow"
 	},
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, -90, 55],
+			"rotation": [0, -90, 45],
 			"translation": [0, -2, 0.25],
 			"scale": [1.7, 1.7, 0.85]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, 90, -55],
+			"rotation": [0, 90, -45],
 			"translation": [0, -2, 0.25],
 			"scale": [1.7, 1.7, 0.85]
 		},
@@ -31,6 +33,9 @@
 		},
 		"head": {
 			"translation": [0, 13, 7]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0]
 		}
 	}
 }
