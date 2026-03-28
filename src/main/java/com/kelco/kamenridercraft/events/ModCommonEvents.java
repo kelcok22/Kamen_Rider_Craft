@@ -380,12 +380,14 @@ public class ModCommonEvents {
             @SubscribeEvent
 		public void addLivingDamageEvent(LivingDamageEvent.Post event) {
 
-            if (event.getEntity() instanceof Player player && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)){
-                if (player.getInventory().countItem(Zeztz_Rider_Items.VOID_CAPSEM.get())!=0) {
-                    player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zeztz_Rider_Items.VOID_CAPSEM.get())), 1);
-                    player.getInventory().add(new ItemStack(Zeztz_Rider_Items.PLASMA_CAPSEM.get()));
-                }
-            }
+				if (event.getEntity() instanceof Player player && player.getInventory().countItem(Zeztz_Rider_Items.VOID_CAPSEM.get())!=0 && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)){
+					if (player.getOffhandItem().is(Zeztz_Rider_Items.VOID_CAPSEM.get())) {
+						player.getOffhandItem().shrink(1);
+					} else {
+						player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zeztz_Rider_Items.VOID_CAPSEM.get())), 1);
+					}
+					player.getInventory().add(new ItemStack(Zeztz_Rider_Items.PLASMA_CAPSEM.get()));
+				}
 
 			if (event.getSource().getEntity() instanceof LivingEntity _livEnt) {
 
