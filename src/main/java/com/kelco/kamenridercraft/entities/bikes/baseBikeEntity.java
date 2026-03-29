@@ -1,8 +1,6 @@
 package com.kelco.kamenridercraft.entities.bikes;
 
 
-import javax.annotation.Nullable;
-
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -31,10 +29,15 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animation.*;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.data.EntityModelData;
 import software.bernie.geckolib.util.GeckoLibUtil;
+
+import javax.annotation.Nullable;
 
 
 public class baseBikeEntity extends Mob implements GeoEntity {
@@ -51,6 +54,8 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
 	public RawAnimation DRIVE_BACKWARDS = RawAnimation.begin().thenLoop("animation.model.walk_backwards");
+	private static final RawAnimation TRANSFORM = RawAnimation.begin().thenPlay("animation.model.transform");
+
 
 	public Item VEHICLE_DROP;
 
@@ -279,6 +284,8 @@ protected SoundEvent getDeathSound() {
 	// Add our idle/moving animation controller
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+		controllers.add(new AnimationController<>(this, "Transform", 0, state -> PlayState.STOP)
+				.triggerableAnim("transform", TRANSFORM));
 
 		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
 			EntityModelData entityData = state.getData(DataTickets.ENTITY_MODEL_DATA);
