@@ -112,7 +112,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing());
+			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     static final DeferredItem<Item> KTAROS_KICK = ITEMS.register("ktaros_kick",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax","den_o","den_o_belt_c",
@@ -136,7 +136,7 @@ public class Den_O_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.IsGlowing().model_has_different_name("ktaros").AddToList(RiderTabs.DEN_O_TAB_ITEM));
+            }.IsGlowing().model_has_different_name("ktaros"));
 
     public static final DeferredItem<Item> KTAROS_PUNCH = ITEMS.register("ktaros_punch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_punch","den_o","den_o_belt_c",
