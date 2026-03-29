@@ -434,6 +434,9 @@ public class Den_O_Rider_Items {
 	public static final DeferredItem<Item> RIDER_TICKET_PUDDING = ITEMS.register("rider_ticket_pudding",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_pudding","den_o","den_o_belt_pu",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.SMALL, 40, 4,true,false),
+                    new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.SD, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
