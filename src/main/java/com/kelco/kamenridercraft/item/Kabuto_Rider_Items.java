@@ -431,7 +431,7 @@ public class Kabuto_Rider_Items {
     public static final DeferredItem<Item> GATACK_HYPER_ZECTER_CLOCK_UP = ITEMS.register("gatack_hyper_zecter_clock_up",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hyper_clock_up","gatack","gatack_rider_belt_hyper",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 30,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
@@ -445,7 +445,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.IsGlowing().has_basic_model().model_has_different_name("hyper_zecter"));
+            }.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)GATACK_HYPER_ZECTER.get()).has_basic_model().model_has_different_name("hyper_zecter"));
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
