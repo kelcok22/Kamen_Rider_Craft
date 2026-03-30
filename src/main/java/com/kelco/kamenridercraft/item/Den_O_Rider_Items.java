@@ -306,7 +306,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().addAlternative(NEW_DEN_O_VEGA_CARD.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.IsGlowing().HasCape().addAlternative(NEW_DEN_O_VEGA_CARD.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ZERO_CARD = ITEMS.register("zeronos_zero_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_zero","zeronos","zeronos_belt_z",
