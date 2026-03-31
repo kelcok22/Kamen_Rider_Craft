@@ -114,7 +114,7 @@ public class Den_O_Rider_Items {
 				}
 			}.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
-    static final DeferredItem<Item> KTAROS_KICK = ITEMS.register("ktaros_kick",
+    static final DeferredItem<Item> KTAROS_CLIMAX = ITEMS.register("ktaros_climax",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax","den_o","den_o_belt_c",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -160,7 +160,7 @@ public class Den_O_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addNeedForm(KTAROS_KICK.get(), 1).addAlternative(KTAROS_KICK.get())
+            }.IsGlowing().addNeedForm(KTAROS_CLIMAX.get(), 1).addAlternative(KTAROS_CLIMAX.get())
                     .model_has_different_name("ktaros"));
 
 	public static final DeferredItem<Item> KTAROS = ITEMS.register("ktaros",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to access Den-O's $(l:den_o/riders/den_o#climax)Climax$(/l) and $(l:den_o/riders/den_o#super_climax)Super Climax$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to access Den-O's $(l:den_o/riders/den_o#climax)Climax Form$(/l), $(l:den_o/riders/den_o#climax_punch)Climax Form (Punch Mode)$(/l), $(l:den_o/riders/den_o#climax_kick)Climax Form (Kick Mode)$(/l), and $(l:den_o/riders/den_o#super_climax)Super Climax Form$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
