@@ -260,7 +260,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ALTAIR_CARD = ITEMS.register("zeronos_altair_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","zeronos","zeronos_belt",
@@ -322,7 +322,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.ChangeModel("zeronos.geo.json").IsGlowing().AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEGA = ITEMS.register("rider_ticket_nega",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","nega_den_o","den_o_belt",
