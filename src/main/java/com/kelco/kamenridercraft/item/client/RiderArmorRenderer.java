@@ -39,7 +39,6 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                 return null;
             }});
 
-
             if (equipmentSlot == EquipmentSlot.HEAD||equipmentSlot == EquipmentSlot.FEET) {
                     addRenderLayer(new RiderRenderLayer<>(this));
         }

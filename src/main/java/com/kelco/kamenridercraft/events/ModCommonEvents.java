@@ -138,7 +138,7 @@ public class ModCommonEvents {
 
             @SubscribeEvent
 		public void onEntityTick(EntityTickEvent.Post event) {
-
+/**
                 if (event.getEntity()instanceof LivingEntity entity) {
                     LocalDate localdate = LocalDate.now();
                     int day = localdate.getDayOfMonth();
@@ -146,7 +146,7 @@ public class ModCommonEvents {
                         entity.addEffect(new MobEffectInstance(Effect_core.SD, 30, 0, false, false));
                    }
                 }
-
+**/
             if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(Effect_core.CLIMBING)) {
                                 if ( entity.horizontalCollision) {
                                   //  entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
