@@ -292,7 +292,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing());
+			}.IsGlowing().HasCape().IsBeltGlowing());
 
 	public static final DeferredItem<Item> ZERONOS_VEGA_CARD = ITEMS.register("zeronos_vega_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_vega","zeronos","zeronos_belt_v",
