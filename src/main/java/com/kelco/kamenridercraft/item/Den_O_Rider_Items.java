@@ -352,7 +352,7 @@ public class Den_O_Rider_Items {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsBeltGlowing());
+                    .IsGlowing().IsBeltGlowing());
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI = ITEMS.register("rider_ticket_yuuki",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_skull","yuuki","yuuki_belt",
@@ -367,7 +367,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_G = ITEMS.register("rider_ticket_g",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","g_den_o","g_den_o_belt",
