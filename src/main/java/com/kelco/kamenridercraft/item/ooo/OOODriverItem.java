@@ -145,8 +145,6 @@ public class OOODriverItem extends RiderDriverItem {
 
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
-		}else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo.geo.json");
 		}else
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 
