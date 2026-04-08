@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -27,6 +28,7 @@ public class OOODriverItem extends RiderDriverItem {
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 		Has_basic_belt_info=false;
+        Unlimited_Belt_Textures = 3;
 	}
 
 	@Override
@@ -84,7 +86,16 @@ public class OOODriverItem extends RiderDriverItem {
 		return "false";
 	}
 
-	@Override
+    @Override
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+        if (num ==1)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,1).getFormName(false);
+        else  if (num ==2)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,2).getFormName(false);
+        if (num ==3)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,3).getFormName(false);
+        return "blank";
+    }
+
+
+    @Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
 		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
