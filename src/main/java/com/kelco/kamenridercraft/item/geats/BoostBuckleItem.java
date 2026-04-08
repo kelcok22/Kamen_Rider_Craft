@@ -3,8 +3,10 @@ package com.kelco.kamenridercraft.item.geats;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -23,7 +25,7 @@ public class BoostBuckleItem extends RiderFormChangeItem {
 	public InteractionResult useOn(UseOnContext context) {
 		Player player = context.getPlayer();
 		ItemStack itemstack = player.getItemInHand(context.getHand());
-		Level level = player.level();
+		Level level = context.getLevel();
 
 		if (!level.isClientSide() && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof DesireDriverItem)||player.isShiftKeyDown())) {
 			BlockPos pos = context.getClickedPos();
@@ -33,6 +35,7 @@ public class BoostBuckleItem extends RiderFormChangeItem {
 				level.addFreshEntity(boss);
 				player.displayClientMessage(Component.translatable("bike.kamenridercraft.boostriker"), true);
 				itemstack.consume(1,player);
+				if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, boss);
 				player.awardStat(Stats.ITEM_USED.get(this));
 			}
 		}

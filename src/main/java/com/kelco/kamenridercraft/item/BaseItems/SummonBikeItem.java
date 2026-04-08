@@ -3,9 +3,11 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -31,22 +33,20 @@ public class SummonBikeItem extends BaseItem {
 	}
 
 	public InteractionResult useOn(UseOnContext context) {
-
 		Player player = context.getPlayer();
 		ItemStack itemstack = player.getItemInHand(context.getHand());
-		Level level = player.level();
+		Level level = context.getLevel();
 
-		if (!level.isClientSide()) {
-			if (level instanceof ServerLevel) {
-				BlockPos pos = context.getClickedPos();
-                baseBikeEntity boss = BOSS.get().create(level);
-				if (boss != null) {
-					boss.moveTo(pos.getX(), pos.getY()+1, pos.getZ(), 0, 0.0F);
-					level.addFreshEntity(boss);
-					if (!TEXT.isEmpty()) for (Component text : TEXT) player.displayClientMessage(text, true);
-					itemstack.consume(1,player);
-                    player.awardStat(Stats.ITEM_USED.get(this));
-				}
+		if (level instanceof ServerLevel) {
+			BlockPos pos = context.getClickedPos();
+            baseBikeEntity boss = BOSS.get().create(level);
+			if (boss != null) {
+				boss.moveTo(pos.getX(), pos.getY()+1, pos.getZ(), 0, 0.0F);
+				level.addFreshEntity(boss);
+				if (!TEXT.isEmpty()) for (Component text : TEXT) player.displayClientMessage(text, true);
+				itemstack.consume(1,player);
+				if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, boss);
+                player.awardStat(Stats.ITEM_USED.get(this));
 			}
 		}
 		return InteractionResult.PASS;
