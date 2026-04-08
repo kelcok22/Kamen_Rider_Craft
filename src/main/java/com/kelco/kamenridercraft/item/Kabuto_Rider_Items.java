@@ -261,7 +261,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.IsGlowing());
+            }.ChangeModel("kabuto_masked.geo.json").IsGlowing());
 
     public static final DeferredItem<Item> DARK_KABUTO_ZECTER = ITEMS.register("dark_kabuto_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(),"","dark_kabuto","dark_kabuto_rider_belt",
@@ -276,7 +276,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+            }.ChangeModel("kabuto.geo.json").IsGlowing().addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_HYPER_ZECTER = ITEMS.register("dark_hyper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hyper","dark_kabuto","dark_kabuto_rider_belt_hyper",
@@ -295,7 +295,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addAlternative(GATACK_HYPER_ZECTER.get()));
+            }.ChangeModel("kabuto_hyper.geo.json").IsGlowing().addAlternative(GATACK_HYPER_ZECTER.get()));
 
     public static final DeferredItem<Item> CAUCASUS_ZECTER_MASK = ITEMS.register("caucasus_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(),"_masked","caucasus","zect_buckle_caucasus_belt",
