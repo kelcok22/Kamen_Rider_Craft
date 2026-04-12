@@ -22,11 +22,12 @@ public class FaizDriverItem extends RiderDriverItem {
     public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
 		if((get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_MISSION_MEMORY.get()
 				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_AXEL_FORM.get()
-				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get())) {
+				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get()
+				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_BLASTER_BLOODY_CANNONS.get())) {
             if (num==1&&!rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get())) return "faiz_pointer";
             else if (num==2&&!rider.isHolding(Faiz_Rider_Items.FAIZ_SHOT.get())) return "faiz_shot";
 			else if (num==3&&get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_AXEL_FORM.get()&&isTransformed(rider)) return "faiz_axel";
-        } else if(get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get()) {
+        } else if(get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get()||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()) {
 			if (num==1&&!rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get())) return "faiz_pointer_g_b";
 			else if (num==2&&!rider.isHolding(Faiz_Rider_Items.FAIZ_SHOT.get())) return "faiz_shot_g_b";
 		}
