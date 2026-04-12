@@ -1881,7 +1881,17 @@ public class Zi_O_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KABUTO_WATCH = ITEMS.register("another_kabuto_watch",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "another_kabuto", "another_rider_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DEN_O_WATCH = ITEMS.register("another_den_o_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_den_o", "another_den_o_belt",
@@ -2412,6 +2422,10 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> ANOTHER_FAIZ_DRIVER = ITEMS.register("another_faiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_faiz", ANOTHER_FAIZ_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> ANOTHER_RIDER_BELT = ITEMS.register("another_rider_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_kabuto", ANOTHER_KABUTO_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_DEN_O_BELT = ITEMS.register("another_den_o_belt",
