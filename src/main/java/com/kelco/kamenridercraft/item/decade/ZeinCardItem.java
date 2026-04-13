@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ItemParticleOption;
@@ -13,6 +14,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -74,6 +76,7 @@ public class ZeinCardItem extends FinalKamenRideCardItem implements ZeinCard {
             } else if (living.getItemBySlot(EquipmentSlot.MAINHAND).getItem() == BuiltInRegistries.ITEM.get(ResourceLocation.parse(zeinItemList.getFirst()))) living.setItemSlot(EquipmentSlot.OFFHAND, weapon);
             else living.setItemSlot(EquipmentSlot.MAINHAND, weapon);
         }
+        if (living instanceof ServerPlayer player) CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue()+1);
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
             living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
