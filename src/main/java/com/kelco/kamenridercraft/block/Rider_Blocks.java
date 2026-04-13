@@ -304,6 +304,38 @@ public class Rider_Blocks {
     public static final DeferredBlock<LadderBlock> DRIVE_PIT_LOGO = registerBlock("drive_pit_logo",
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).lightLevel((p_152632_) -> 100)));
 
+	public static final DeferredBlock<Block> ORANGE_GEM_BLOCK = registerBlock("orange_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.ORANGE).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> RED_GEM_BLOCK = registerBlock("red_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.RED).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.BLUE).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> GREEN_GEM_BLOCK = registerBlock("green_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.GREEN).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> YELLOW_GEM_BLOCK = registerBlock("yellow_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> CYAN_GEM_BLOCK = registerBlock("cyan_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.CYAN).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> PURPLE_GEM_BLOCK = registerBlock("purple_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.PURPLE).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> BLACK_GEM_BLOCK = registerBlock("black_gem_block",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f), UniformInt.of(0,0),DyeColor.BLACK).AddToTabList(RiderTabs.RIDER_DECOR));
+
 
     public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
 			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
@@ -715,7 +747,12 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> MEGAHEX_LIGHT = registerBlock("megahex_light",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
-					
+
+
+	public static final DeferredBlock<Block> HIDEN_METAL_BLOCK = registerBlock("hiden_metal_block",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 	public static final DeferredBlock<Block> STONE_FLOORING = registerBlock("stone_flooring",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));

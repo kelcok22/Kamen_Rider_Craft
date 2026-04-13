@@ -149,6 +149,15 @@
     "kamenridercraft:megahex_light",
 	"kamenridercraft:gold_door",
 	  "kamenridercraft:doran_scale",
-	  "kamenridercraft:ixa_machine_block"
+	  "kamenridercraft:ixa_machine_block",
+	  "kamenridercraft:red_gem_block",
+	  "kamenridercraft:blue_gem_block",
+	  "kamenridercraft:yellow_gem_block",
+	  "kamenridercraft:green_gem_block",
+	  "kamenridercraft:cyan_gem_block",
+	  "kamenridercraft:black_gem_block",
+	  "kamenridercraft:purple_gem_block",
+	  "kamenridercraft:orange_gem_block",
+	  "kamenridercraft:hiden_metal_block"
   ]
 }

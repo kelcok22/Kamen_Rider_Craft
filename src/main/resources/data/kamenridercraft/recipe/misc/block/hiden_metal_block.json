@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "resource_block",
+  "key": {
+    "#": {
+      "item": "kamenridercraft:hiden_metal"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kamenridercraft:hiden_metal_block"
+  }
+}

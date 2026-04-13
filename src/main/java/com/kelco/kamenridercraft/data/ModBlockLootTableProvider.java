@@ -93,7 +93,24 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
        //         block -> createSingleItemTable(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM.get()));
         add(Rider_Blocks.YELLOW_WALLPLATE_WALL.get(),
                 block -> createSingleItemTable(Rider_Blocks.YELLOW_WALLPLATE_WALL.get()));
-
+        add(Rider_Blocks.RED_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.RED_GEM_BLOCK.get()));
+        add(Rider_Blocks.YELLOW_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.YELLOW_GEM_BLOCK.get()));
+        add(Rider_Blocks.BLUE_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.BLUE_GEM_BLOCK.get()));
+        add(Rider_Blocks.GREEN_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.GREEN_GEM_BLOCK.get()));
+        add(Rider_Blocks.ORANGE_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.ORANGE_GEM_BLOCK.get()));
+        add(Rider_Blocks.PURPLE_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.PURPLE_GEM_BLOCK.get()));
+        add(Rider_Blocks.CYAN_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.CYAN_GEM_BLOCK.get()));
+        add(Rider_Blocks.BLACK_GEM_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.BLACK_GEM_BLOCK.get()));
+        add(Rider_Blocks.HIDEN_METAL_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.HIDEN_METAL_BLOCK.get()));
     }
 
     @Override

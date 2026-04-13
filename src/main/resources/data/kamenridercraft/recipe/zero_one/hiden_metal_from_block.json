@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zeroone",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:hiden_metal_block"
+	}
+	],
+  "result": {
+	  "count": 9,
+	"id": "kamenridercraft:hiden_metal"
+  }
+}

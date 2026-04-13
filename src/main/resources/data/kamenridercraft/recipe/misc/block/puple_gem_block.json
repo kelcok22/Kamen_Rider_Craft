@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "resource_block",
+  "key": {
+    "#": {
+      "item": "kamenridercraft:wizardgem_violet"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kamenridercraft:purple_gem_block"
+  }
+}

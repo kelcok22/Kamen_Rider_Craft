@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "resource_block",
+  "key": {
+    "#": {
+      "item": "kamenridercraft:wizardgem_cyan"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kamenridercraft:cyan_gem_block"
+  }
+}

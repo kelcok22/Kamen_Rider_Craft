@@ -9577,6 +9577,15 @@
   "block.kamenridercraft.jail_door": "Jail Door",
   "block.kamenridercraft.pavement_roadline": "Painted Pavement",
 
+  "block.kamenridercraft.red_gem_block": "Red Magic Stone Block",
+  "block.kamenridercraft.blue_gem_block": "Blue Magic Stone Block",
+  "block.kamenridercraft.green_gem_block": "Green Magic Stone Block",
+  "block.kamenridercraft.yellow_gem_block": "Yellow Magic Stone Block",
+  "block.kamenridercraft.orange_gem_block": "Orange Magic Stone Block",
+  "block.kamenridercraft.cyan_gem_block": "Cyan Magic Stone Block",
+  "block.kamenridercraft.black_gem_block": "Black Magic Stone Block",
+  "block.kamenridercraft.purple_gem_block": "Purple Magic Stone Block",
+
   "block.kamenridercraft.helheim_leaves": "Helheim Leaves",
   "block.kamenridercraft.helheim_log": "Helheim Log",
   "block.kamenridercraft.stripped_helheim_log": "Stripped Helheim Log",
@@ -9609,6 +9618,8 @@
   "block.kamenridercraft.megahex_light": "Megahex Light",
   "block.kamenridercraft.megahex_matel": "Megahex Metal",
   "block.kamenridercraft.megahex_matel_lines": "Megahex Metal (Lined)",
+
+  "block.kamenridercraft.hiden_metal_block": "Hiden Metal Block",
 
   "block.kamenridercraft.wonderwood_door": "Wonderwood Door",
 
