@@ -33,21 +33,20 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
+import java.util.Random;
 
 public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     public final ItemStackHandler itemHandler = new ItemStackHandler(11) {
         @Override
         protected void onContentsChanged(int slot) {
-            setChanged();
             if (!level.isClientSide()) {
+                setChanged();
                 level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
             }
         }
     };
 
     public static void clientTick(Level level, BlockPos pos, BlockState state, IxaMachineBlockEntity be) {
-        if (!level.isClientSide) {
-        }
     }
 
     private static final int INPUT_SLOT = 0;
@@ -61,17 +60,13 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     private static final int OUTPUT_SLOT_7 = 8;
     private static final int OUTPUT_SLOT_8 = 9;
     private static final int OUTPUT_SLOT_9 = 10; //Output
-
-    private ItemStack lockedOutput = ItemStack.EMPTY;
-    private String lastInputSignature = "";
+    private String lastItem = "";
 
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 72;
-    private int outputSlot = 2;
 
     protected NonNullList<ItemStack> items = NonNullList.withSize(11, ItemStack.EMPTY);
-    private int rawIndex = -1;
 
 
     public IxaMachineBlockEntity(BlockPos pos, BlockState blockState) {
@@ -142,94 +137,61 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pos, BlockState state) {
-
-        Optional<RecipeHolder<IxaMachineRecipe>> recipeOpt = getCurrentRecipe();
-        if (recipeOpt.isEmpty()) {
-            resetProgress();
-            this.lockedOutput = ItemStack.EMPTY;
-            this.lastInputSignature = "";
-            return;
+        if (itemHandler.getStackInSlot(INPUT_SLOT).isEmpty() || !itemHandler.getStackInSlot(INPUT_SLOT).toString().equals(this.lastItem)) {
+            this.progress = 0;
+            this.lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
         }
-
-        String currentSignature = signatureOf(
-                itemHandler.getStackInSlot(INPUT_SLOT),
-                itemHandler.getStackInSlot(MODIFIER_SLOT)
-        );
-
-        if (progress == 0) {
-            if (lockedOutput.isEmpty() || !currentSignature.equals(lastInputSignature)) {
-                lockedOutput = determineOutputForCurrentInputs().copy();
-                lastInputSignature = currentSignature;
-            }
-        }
-
-        ItemStack prospectiveOutput = lockedOutput.isEmpty() ? determineOutputForCurrentInputs() : lockedOutput;
-        boolean canOutputNow = !prospectiveOutput.isEmpty()
-                && canInsertItemIntoOutput(prospectiveOutput)
-                && canInsertAmountIntoOutput(prospectiveOutput);
-
-        if (!prospectiveOutput.isEmpty() && canOutputNow) {
-
-            increaseCraftingProgress();
+        if (this.progress >= 72) {
+            this.progress = 0;
+            this.maxProgress = 72;
+            this.craftItem();
             setChanged(level, pos, state);
-
-            if (hasCraftingFinished()) {
-                craftItem();
-                resetProgress();
-                this.lockedOutput = ItemStack.EMPTY;
-                this.lastInputSignature = "";
-            }
+        } else if (this.hasRecipe() && this.isOutputSlotsEmptyorReceivable()) {
+            this.progress++;
+            this.lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
+            setChanged(level, pos, state);
         } else {
-            resetProgress();
+            this.progress = 0;
         }
     }
 
     private void craftItem() {
-        Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
-        if (recipe.isEmpty()) return;
-
-        ItemStack output = lockedOutput.isEmpty() ? recipe.get().value().output().copy() : lockedOutput.copy();
-        if (output.isEmpty()) return;
-
-        if (!canInsertItemIntoOutput(output) || !canInsertAmountIntoOutput(output)) {
-            return;
-        }
-
+        ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
+        ItemStack modifier = itemHandler.getStackInSlot(MODIFIER_SLOT);
+        ItemStack output = new ItemStack(Kiva_Rider_Items.FAKE_FUESTLE.get(), 1);
         int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
 
-        for (
-                int slot : slots) {
+        if (material.getItem() == Kiva_Rider_Items.FAKE_FUESTLE.get()) {
+            output = switch (modifier.getItem().toString()) {
+                case "kamenridercraft:doggafuestle" -> new ItemStack(Kiva_Rider_Items.FAKE_DOGGA_FUESTLE.get(), 1);
+                case "kamenridercraft:basshaafuestle" -> new ItemStack(Kiva_Rider_Items.FAKE_BASSHAA_FUESTLE.get(), 1);
+                case "kamenridercraft:garulufuestle" -> new ItemStack(Kiva_Rider_Items.FAKE_GARULU_FUESTLE.get(), 1);
+                default -> switch (new Random().nextInt(3)) {
+                    case 0 -> new ItemStack(Kiva_Rider_Items.KNUCKLE_FUESTLE.get(), 1);
+                    case 1 -> new ItemStack(Kiva_Rider_Items.CALIBUR_FUESTLE.get(), 1);
+                    case 2 -> new ItemStack(Kiva_Rider_Items.RISER_FUESTLE.get(), 1);
+                    default -> output;
+                };
+            };
+        }
+
+        for (int slot : slots) {
             ItemStack current = itemHandler.getStackInSlot(slot);
 
             if (current.isEmpty()) {
-                itemHandler.setStackInSlot(slot, output.copy());
+                itemHandler.setStackInSlot(slot, output);
                 itemHandler.extractItem(INPUT_SLOT, 1, false);
                 itemHandler.extractItem(MODIFIER_SLOT, 1, false);
                 return;
             }
 
-            if (current.getItem() == output.getItem()
-                    && current.getCount() + output.getCount() <= current.getMaxStackSize()) {
+            if (current.getItem() == output.getItem() && current.getCount() + output.getCount() <= current.getMaxStackSize()) {
                 itemHandler.setStackInSlot(slot, new ItemStack(current.getItem(), current.getCount() + output.getCount()));
                 itemHandler.extractItem(INPUT_SLOT, 1, false);
                 itemHandler.extractItem(MODIFIER_SLOT, 1, false);
                 return;
             }
         }
-    }
-
-
-    private void resetProgress() {
-        progress = 0;
-        maxProgress = 72;
-    }
-
-    private boolean hasCraftingFinished() {
-        return this.progress >= this.maxProgress;
-    }
-
-    private void increaseCraftingProgress() {
-        progress++;
     }
 
     private boolean isOutputSlotsEmptyorReceivable() {
@@ -239,124 +201,25 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
-        if(recipe.isEmpty()) {
-            return false;
+        ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
+        ItemStack modifier = itemHandler.getStackInSlot(MODIFIER_SLOT);
+        if (material.getItem() == Kiva_Rider_Items.FUESTLE.get() && modifier.isEmpty()) {
+            return true;
         }
-        ItemStack output = lockedOutput.isEmpty() ? recipe.get().value().output() : lockedOutput;
-        return !output.isEmpty() && canInsertAmountIntoOutput(output) && canInsertItemIntoOutput(output);
+        if (material.getItem() == Kiva_Rider_Items.FAKE_FUESTLE.get()) {
+            if (modifier.isEmpty() || modifier.getItem() == Kiva_Rider_Items.GARULU_FUESTLE.get() || modifier.getItem() == Kiva_Rider_Items.BASSHAA_FUESTLE.get() || modifier.getItem() == Kiva_Rider_Items.DOGGA_FUESTLE.get()) {
+                return true;
+            }
+            ;
+        }
+        return false;
     }
-
-//    public int getOutputSlot(ItemStack output) {
-//        for (int slot = 2; slot < 11; slot++){
-//            if (canInsertAmountIntoOutput(output.getCount(),slot) && canInsertItemIntoOutput(output,slot)) return slot;
-//        }
-//        return 2;
-//    }
 
     private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe() {
         assert this.level != null;
         return this.level.getRecipeManager()
                 .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), new IxaMachineRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT), itemHandler.getStackInSlot(MODIFIER_SLOT)), level);
     }
-
-
-    private boolean canInsertAmountIntoOutput(ItemStack output) {
-        int toInsert = output.getCount();
-        int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
-
-        for (int slot : slots) {
-            ItemStack stack = itemHandler.getStackInSlot(slot);
-
-            if (stack.isEmpty()) {
-                // Respect special cap for empty slots
-                if (toInsert <= 8) {
-                    return true;
-                }
-            } else if (stack.getItem() == output.getItem()) {
-                int space = stack.getMaxStackSize() - stack.getCount();
-                if (space >= toInsert) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    private ItemStack determineOutputForCurrentInputs() {
-        Optional<RecipeHolder<IxaMachineRecipe>> recipe = getCurrentRecipe();
-        if (recipe.isEmpty()) return ItemStack.EMPTY;
-
-        ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
-        if (material.getItem() == Kiva_Rider_Items.FAKE_FUESTLE.get()) {
-            ItemStack random = pickWeightedFromTag(recipe.get().value());
-            int count = Math.max(1, recipe.get().value().output().getCount());
-            if (!random.isEmpty()) {
-                random.setCount(count);
-            }
-            return random;
-        }
-
-        return recipe.get().value().output().copy();
-    }
-
-    private ItemStack pickWeightedFromTag(IxaMachineRecipe recipe) {
-        if (this.level == null) return ItemStack.EMPTY;
-
-        var registry = this.level.registryAccess().registryOrThrow(Registries.ITEM);
-        var tagged = registry.getTag(MachineBlockTags.Items.REPLICATOR_FROM_BLANK_FAKE);
-        if (tagged.isEmpty()) return ItemStack.EMPTY;
-
-        var holderSet = tagged.get();
-
-        int totalWeight = 0;
-
-        java.util.ArrayList<net.minecraft.world.item.Item> items = new java.util.ArrayList<>();
-        java.util.ArrayList<Integer> weights = new java.util.ArrayList<>();
-        for (var holder : holderSet) {
-            var item = holder.value();
-            int w = Math.max(0, recipe.getWeightFor(item));
-            if (w > 0) {
-                items.add(item);
-                weights.add(w);
-                totalWeight += w;
-            }
-        }
-        if (totalWeight <= 0) return ItemStack.EMPTY;
-
-        int roll = this.level.random.nextInt(totalWeight);
-        int acc = 0;
-        for (int i = 0; i < items.size(); i++) {
-            acc += weights.get(i);
-            if (roll < acc) {
-                return new ItemStack(items.get(i));
-            }
-        }
-        return ItemStack.EMPTY;
-    }
-
-    private static String signatureOf(ItemStack test_tube, ItemStack material) {
-        return stackSig(test_tube) + "#" + stackSig(material);
-    }
-
-    private static String stackSig(ItemStack s) {
-        if (s.isEmpty()) return "empty";
-        String id = s.getItem().builtInRegistryHolder().key().location().toString();
-        return id + "x" + s.getCount();
-    }
-
-    private boolean canInsertItemIntoOutput(ItemStack output) {
-        int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
-
-        for (int slot : slots) {
-            ItemStack stack = itemHandler.getStackInSlot(slot);
-            if (stack.isEmpty() || stack.getItem() == output.getItem()) {
-                return true;
-            }
-        }
-        return false;
-    }
-
 
     @Override
     public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
