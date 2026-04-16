@@ -370,7 +370,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.setSummonBelt(3).addSummonWeapon(2).IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			}.setSummonBelt(3).addSummonWeapon(2).ChangeModel("ooo_tora.geo.json").IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_CARD = ITEMS.register("fourze_card",
 			() -> new RiderCardItem(new Item.Properties(),"","neo_decade","neo_decadriver_belt",

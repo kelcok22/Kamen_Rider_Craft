@@ -1886,7 +1886,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.setSummonBelt((RiderDriverItem)OOO_Rider_Items.OOODRIVER.get()).addSummonWeapon(OOO_Rider_Items.MEDAJALIBUR.get())
-					.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("decade_ooo").addAlternative(W_RIDE_CHEMY_CARD_GOTCHARD.get())
+					.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).ChangeModel("ooo_tora.geo.json").IsGlowing().ChangeRiderName("decade_ooo").addAlternative(W_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.AddToList(NEED_ITEM_CycloneTaToBa).AddToList(ChemyRiserItem.Legend_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_RIDE_CHEMY_CARD_GOTCHARD = ITEMS.register("fourze_ride_chemy_card_gotchard",
