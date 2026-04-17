@@ -2,6 +2,7 @@
   "key.categories.kamenridercraft": "Kamen Rider Craft",
   "key.kamenridercraft.belt": "Open Belt Inventory",
   "key.kamenridercraft.ability": "Use an Ability",
+  "key.kamenridercraft.pose": "Do a Pose",
 
   "gamerule.reiwaRidewatches": "Enable Reiwa Ridewatches",
   "gamerule.reiwaRidewatches.description": "If enabled, Ohma Zi-O and Zi-O OhmaForm will be able to summon Riders and weapons from the Reiwa Era.",

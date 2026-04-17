@@ -627,6 +627,7 @@ public class KamenRiderCraftCore {
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
             event.register(KeyBindings.INSTANCE.AbilityKey);
+            event.register(KeyBindings.INSTANCE.PoseKey);
         }
 
 
