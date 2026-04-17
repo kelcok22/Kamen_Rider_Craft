@@ -13,7 +13,7 @@
       }
     },
     {
-      "weight": 4,
+      "weight": 3,
       "element": {
         "location": "kamenridercraft:city/suburban/house_2",
         "processors": "minecraft:empty",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "weight": 4,
+      "weight": 3,
       "element": {
         "location": "kamenridercraft:city/suburban/house_3",
         "processors": "minecraft:empty",
@@ -88,6 +88,15 @@
       "weight": 1,
       "element": {
         "location": "kamenridercraft:city/suburban/cous_coussier",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:city/suburban/9_5_do",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
