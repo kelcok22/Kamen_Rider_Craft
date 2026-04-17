@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"gotchard.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, -37.5, 0]
+				},
+				"torso": {
+					"rotation": [-5, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"left_leg": {
+					"rotation": [0, -7.5, -5]
+				},
+				"right_leg": {
+					"rotation": [2.5978, 27.3865, 5.6331]
+				},
+				"head": {
+					"rotation": [0, 22.5, 10],
+					"position": [-0.5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-26.5123, -10.0702, -11.175],
+					"position": [0, -1, 2]
+				},
+				"left_arm": {
+					"rotation": [-131.3421, 13.3179, -11.4569],
+					"position": [1, 0, 0]
+				}
+			}
+		}
+	}
+}

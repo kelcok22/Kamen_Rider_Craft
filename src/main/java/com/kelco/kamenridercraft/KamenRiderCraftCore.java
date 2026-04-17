@@ -28,6 +28,7 @@ import com.kelco.kamenridercraft.network.ServerPayloadHandler;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
+import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
@@ -689,6 +690,12 @@ public class KamenRiderCraftCore {
                     AbilityKeyPayload.TYPE,
                     AbilityKeyPayload.STREAM_CODEC,
                     ServerPayloadHandler::handleAbilityKeyPress
+            );
+
+            registrar.playToServer(
+                    PoseKeyPayload.TYPE,
+                    PoseKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handlePoseKeyPress
             );
         }
     }

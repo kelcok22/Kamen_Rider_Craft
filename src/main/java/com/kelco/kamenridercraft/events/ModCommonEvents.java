@@ -24,6 +24,7 @@ import com.kelco.kamenridercraft.item.gavv.GochipodItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
+import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
@@ -110,6 +111,8 @@ public class ModCommonEvents {
 			if (Minecraft.getInstance().player != null) {
 				while (KeyBindings.INSTANCE.BeltKey.consumeClick()) PacketDistributor.sendToServer(new BeltKeyPayload(0));
                 while (KeyBindings.INSTANCE.AbilityKey.consumeClick()) PacketDistributor.sendToServer(new AbilityKeyPayload(0));
+				while (KeyBindings.INSTANCE.PoseKey.consumeClick()) PacketDistributor.sendToServer(new PoseKeyPayload(0));
+
 			}
 		}
 

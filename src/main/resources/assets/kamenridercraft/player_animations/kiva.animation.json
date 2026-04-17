@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kiva.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [22.5, 45, 0],
+					"position": [0, -3, 0]
+				},
+				"torso": {
+					"rotation": [-5, 10, 0],
+					"position": [0, 0, 1]
+				},
+				"left_leg": {
+					"rotation": [-26.9296, -36.465, 15.6126],
+					"position": [1.59323, 2.92286, -0.87732]
+				},
+				"right_leg": {
+					"rotation": [15, 0, 22.5],
+					"position": [-0.48173, 1.45013, -3.41542]
+				},
+				"head": {
+					"rotation": [-24.5107, -43.0795, 20.7535]
+				},
+				"right_arm": {
+					"rotation": [-125, 20, 0]
+				},
+				"left_arm": {
+					"rotation": [11.7921, -16.2699, -36.6913]
+				}
+			}
+		}
+	}
+}

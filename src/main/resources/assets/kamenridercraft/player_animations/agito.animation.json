@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"agito.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, -82.5, 0],
+					"position": [-3, -3.25, 0]
+				},
+				"left_leg": {
+					"rotation": [-21.0293, -9.5441, -9.899],
+					"position": [0, 2, -5]
+				},
+				"right_leg": {
+					"rotation": [97.7416, 73.5451, 106.8263],
+					"position": [-1, 4, -1]
+				},
+				"right_arm": {
+					"rotation": [-49.4098, -13.8555, -23.4562],
+					"position": [0, 0, -1]
+				},
+				"left_arm": {
+					"rotation": [-42.5, 0, -15],
+					"position": [0, 0, -1]
+				},
+				"head": {
+					"rotation": [0, 87.5, 0],
+					"position": [0, 0, -4]
+				},
+				"torso": {
+					"rotation": [17.35, 19.9754, -1.1238],
+					"position": [0, 0, -4]
+				}
+			}
+		}
+	}
+}

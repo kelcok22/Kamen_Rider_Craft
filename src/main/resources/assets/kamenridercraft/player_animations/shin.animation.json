@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"shin.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [12.3347, -27.0478, 11.2432],
+					"position": [0, -5, 0]
+				},
+				"torso": {
+					"position": [0, 1, 0]
+				},
+				"left_leg": {
+					"rotation": [-10.9478, -7.3009, -23.9759],
+					"position": [1, 5, -4]
+				},
+				"right_leg": {
+					"rotation": [17.8117, 9.2318, 28.8602],
+					"position": [0, 2, -1]
+				},
+				"head": {
+					"rotation": [-19.9708, 16.7568, -15.3158],
+					"position": [0, 1, 0]
+				},
+				"right_arm": {
+					"rotation": [1.9302, 26.2095, 112.5676],
+					"position": [-1, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-87.5, -32.5, 0],
+					"position": [0, 1, 0]
+				}
+			}
+		}
+	}
+}

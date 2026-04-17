@@ -61,6 +61,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     private static final int OUTPUT_SLOT_8 = 9;
     private static final int OUTPUT_SLOT_9 = 10; //Output
     private String lastItem = "";
+    private String lastModifier = "";
 
     protected final ContainerData data;
     private int progress = 0;
@@ -137,9 +138,10 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pos, BlockState state) {
-        if (itemHandler.getStackInSlot(INPUT_SLOT).isEmpty() || !itemHandler.getStackInSlot(INPUT_SLOT).toString().equals(this.lastItem)) {
+        if (itemHandler.getStackInSlot(INPUT_SLOT).isEmpty() || !itemHandler.getStackInSlot(INPUT_SLOT).toString().equals(this.lastItem) || !itemHandler.getStackInSlot(MODIFIER_SLOT).toString().equals(this.lastModifier)) {
             this.progress = 0;
             this.lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
+            this.lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
         }
         if (this.progress >= 72) {
             this.progress = 0;
@@ -149,6 +151,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         } else if (this.hasRecipe() && this.isOutputSlotsEmptyorReceivable()) {
             this.progress++;
             this.lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
+            this.lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
             setChanged(level, pos, state);
         } else {
             this.progress = 0;

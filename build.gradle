@@ -25,6 +25,17 @@ repositories {
             includeGroup("software.bernie.geckolib")
         }
     }
+    maven {
+        name = 'Sherds API'
+        url = 'https://dl.cloudsmith.io/public/thomasglasser/sherdsapi/maven/'
+        content {
+            includeGroupAndSubgroups("dev.thomasglasser.sherdsapi")
+        }
+    }
+    maven {
+        name = "RedlanceMinecraft"
+        url = "https://repo.redlance.org/public"
+    }
     exclusiveContent {
         forRepository {
             maven {
@@ -129,8 +140,19 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+configurations.configureEach {
+    resolutionStrategy {
+        force 'com.google.code.gson:gson:2.10.1'
+        force 'org.slf4j:slf4j-api:2.0.16'
+        force 'it.unimi.dsi:fastutil:8.5.15'
+        force 'io.netty:netty-buffer:4.1.115.Final'
+        force 'io.netty:netty-common:4.1.115.Final'
+    }
+}
+
 dependencies {
     implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    implementation "com.zigythebird.playeranim:PlayerAnimationLibNeo:$pal_version"
     compileOnly "maven.modrinth:just-more-cakes:lnhTlZIP"
     compileOnly "maven.modrinth:better-combat:EtfeNxsw"
     // Example optional mod dependency with JEI

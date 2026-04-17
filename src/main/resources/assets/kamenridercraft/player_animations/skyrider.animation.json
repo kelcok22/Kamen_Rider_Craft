@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"skyrider.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, 32.5, 0]
+				},
+				"torso": {
+					"rotation": [2.4905, -0.0048, 0.2178]
+				},
+				"left_leg": {
+					"rotation": [19.8009, -12.2924, -16.8962],
+					"position": [1, 0, -1]
+				},
+				"right_leg": {
+					"rotation": [7.5641, -7.4355, 6.5156]
+				},
+				"head": {
+					"rotation": [-6.5805, -39.1702, 6.3994]
+				},
+				"right_arm": {
+					"rotation": [-38.1659, 9.8874, -7.6862],
+					"position": [0, 0, 2]
+				},
+				"left_arm": {
+					"rotation": [-70, -52.5, -52.5]
+				}
+			}
+		}
+	}
+}
