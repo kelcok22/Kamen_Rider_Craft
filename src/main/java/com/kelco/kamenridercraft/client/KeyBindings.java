@@ -28,7 +28,7 @@ public class KeyBindings {
     public final KeyMapping PoseKey = new KeyMapping(
             "key."+ KamenRiderCraftCore.MOD_ID +".pose",
             KeyConflictContext.IN_GAME,
-            InputConstants.getKey(InputConstants.KEY_O, -1),
+            InputConstants.getKey(InputConstants.KEY_G, -1),
             CATEGORY
     );
 }
