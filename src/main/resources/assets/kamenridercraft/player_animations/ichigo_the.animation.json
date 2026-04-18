@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ichigo_the.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [-10, -47.5, 0],
+					"position": [0, -1.25, 0]
+				},
+				"torso": {
+					"rotation": [10.4748, 17.2258, 3.1339],
+					"position": [0, 0, -2]
+				},
+				"left_leg": {
+					"rotation": [0, -5, -10],
+					"position": [0, 0, -3]
+				},
+				"right_leg": {
+					"rotation": [22.5613, 20.4011, 29.7431]
+				},
+				"head": {
+					"rotation": [14.3205, 42.0524, 10.1243],
+					"position": [0, 0, -2]
+				},
+				"right_arm": {
+					"rotation": [-97.6254, -31.2648, 9.363],
+					"position": [0, -1, -6]
+				},
+				"left_arm": {
+					"rotation": [-28.6271, 15.4699, -8.2833],
+					"position": [0, 0, -2]
+				}
+			}
+		}
+	}
+}

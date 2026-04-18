@@ -68,9 +68,10 @@ public class ServerPayloadHandler {
                 animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
             }
             try {
-                context.player().addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,60, 3,true,false));
+                context.player().addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,60, 2,true,false));
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(20, EasingType.EASE_IN_ELASTIC));
+                controller.addModifierBefore(AbstractFadeModifier.standardFadeOut(5, EasingType.EASE_OUT_ELASTIC));
                 controller.triggerAnimation(animation);
             } catch (Exception e) {
                 e.printStackTrace();

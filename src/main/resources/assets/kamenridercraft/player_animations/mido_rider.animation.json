@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"mido_rider.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, -27.5, 0],
+					"position": [0, -3.5, 0]
+				},
+				"left_leg": {
+					"rotation": [14.533, -14.141, -45.4162],
+					"position": [1.02541, 0.68293, -0.69436]
+				},
+				"right_leg": {
+					"rotation": [21.3925, 31.2997, 22.032],
+					"position": [0.18267, 2.35402, -5.43809]
+				},
+				"right_arm": {
+					"rotation": [-110.569, -51.8144, -19.4426],
+					"position": [1.5, -0.25, -3.75]
+				},
+				"left_arm": {
+					"rotation": [-53.475, -9.5767, 11.5994],
+					"position": [1, -1, 2]
+				},
+				"head": {
+					"rotation": [3.6607, 24.8656, 2.753]
+				},
+				"torso": {
+					"rotation": [-5, -17.5, -2.5]
+				}
+			}
+		}
+	}
+}

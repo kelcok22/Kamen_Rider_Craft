@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"shin_ichigo.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [-31.9991, -63.1762, 34.9991],
+					"position": [0, -2, 0]
+				},
+				"torso": {
+					"rotation": [0, 0, -7.5],
+					"position": [-1, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [-7.5, 12.5, -30],
+					"position": [0, 1, 0]
+				},
+				"right_leg": {
+					"rotation": [11.2543, 49.0981, 11.4877],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [-1.0203, 68.5906, -19.9395],
+					"position": [-1, 1, 0]
+				},
+				"right_arm": {
+					"rotation": [-112.5, 30, 0],
+					"position": [0, -3, 0]
+				},
+				"left_arm": {
+					"rotation": [-54.0218, 47.1028, 13.4156],
+					"position": [0, -2, -1]
+				}
+			}
+		}
+	}
+}

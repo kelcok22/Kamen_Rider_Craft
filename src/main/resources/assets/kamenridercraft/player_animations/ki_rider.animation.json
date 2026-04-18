@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ki_rider.pose": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 27.5],
+					"position": [0, -2, 0]
+				},
+				"left_leg": {
+					"rotation": [4.6653, -16.8854, -45.6929],
+					"position": [-0.16322, 3.96759, -3.41908]
+				},
+				"right_leg": {
+					"rotation": [15, 0, 15]
+				},
+				"head": {
+					"rotation": [0, 0, -27.5]
+				},
+				"right_arm": {
+					"rotation": [0, -10, 92.5],
+					"position": [-1.08629, -1.95448, 0]
+				},
+				"left_arm": {
+					"rotation": [-25, 55, 47.5],
+					"position": [0.77501, -0.84577, -1.6383]
+				}
+			}
+		}
+	}
+}
