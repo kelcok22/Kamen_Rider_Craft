@@ -74,7 +74,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
+			}.ChangeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CONDOR_MEDAL = ITEMS.register("condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor","ooo","ooodriver_belt",

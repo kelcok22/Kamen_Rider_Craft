@@ -297,6 +297,7 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+
     public RiderFormChangeItem hasFlyingWings(@Nullable String model) {
         FLYING_TEXT=true;
         if (model!=null) FLYING_MODEL=model;

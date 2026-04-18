@@ -154,6 +154,10 @@ public class OOODriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST)num=2;
 		if (slot == EquipmentSlot.LEGS)num=3;
 
+        if (slot == EquipmentSlot.HEAD& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka")
+                & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_kujaku")
+                & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_condor")) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
+
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}else
