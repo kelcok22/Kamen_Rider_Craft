@@ -70,8 +70,7 @@ public class ServerPayloadHandler {
             try {
                 context.player().addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,60, 2,true,false));
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
-                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(20, EasingType.EASE_IN_ELASTIC));
-                controller.addModifierBefore(AbstractFadeModifier.standardFadeOut(5, EasingType.EASE_OUT_ELASTIC));
+                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
             } catch (Exception e) {
                 e.printStackTrace();
