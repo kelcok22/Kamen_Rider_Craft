@@ -1,35 +1,79 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"kabuto.pose": {
-			"animation_length": 3,
-			"bones": {
-				"body": {
-					"rotation": [0, -37.5, 0]
-				},
-				"left_leg": {
-					"rotation": [3.2879, -17.4828, -2.6212],
-					"position": [0, 0, -0.75]
-				},
-				"right_leg": {
-					"rotation": [-1.5918, 32.4653, -2.9635],
-					"position": [-1.5, 0, -2]
-				},
-				"right_arm": {
-					"rotation": [-177.2417, 24.9746, 1.1652],
-					"position": [-2.5, 0, -2.75]
-				},
-				"left_arm": {
-					"rotation": [0, -12.5, -5]
-				},
-				"head": {
-					"rotation": [0, 40, 0],
-					"position": [0.5, 0, 0]
-				},
-				"torso": {
-					"rotation": [-5.0767, 9.9616, -0.8804]
-				}
-			}
-		}
-	}
+  "format_version": "1.8.0",
+  "animations": {
+    "kabuto.pose": {
+      "animation_length": 3,
+      "bones": {
+        "body": {
+          "rotation": [
+            0,
+            -37.5,
+            0
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            3.2879,
+            -17.4828,
+            -2.6212
+          ],
+          "position": [
+            0,
+            0,
+            0.25
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -1.5918,
+            32.4653,
+            -2.9635
+          ],
+          "position": [
+            -1.5,
+            0,
+            -1
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -176.0829,
+            24.829,
+            3.9168
+          ],
+          "position": [
+            -2.5,
+            0,
+            -1.75
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            0,
+            -12.5,
+            -5
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            40,
+            0
+          ],
+          "position": [
+            0.5,
+            0,
+            0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            -5.0767,
+            9.9616,
+            -0.8804
+          ]
+        }
+      }
+    }
+  }
 }

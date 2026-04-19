@@ -11,6 +11,7 @@ import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
+import com.kelco.kamenridercraft.util.ComplexFormCheck;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
@@ -58,15 +59,26 @@ public class ServerPayloadHandler {
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
         if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
 
-            RiderFormChangeItem formChangeItem = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
-            String formItemName = formChangeItem.toString().replace("kamenridercraft:", "");
+            RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
+
+            String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
             String riderName = driverItem.Rider.toLowerCase();
 
             Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
 
-            if (formChangeItem.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animation/form_specific_pose")))) {
+            if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animation/form_specific_pose")))) {
                 animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
             }
+
+            if (riderName.equals("ooo")) {
+                RiderFormChangeItem formChangeItemTwo = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 2);
+                RiderFormChangeItem formChangeItemThree = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 3);
+                String comboName = ComplexFormCheck.oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
+                if (!comboName.isEmpty()) {
+                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + comboName + ".pose"));
+                }
+            }
+
             try {
                 context.player().addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,60, 2,true,false));
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);

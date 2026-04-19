@@ -29,58 +29,47 @@ public class attributeGenerator extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_ONE_CD = ATTRIBUTES.register("ability_one_cd",
+    public static final DeferredHolder<Attribute, Attribute> ABILITY_METER = ATTRIBUTES.register("ability_meter",
             () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.ability_one_cd",
+                    "attribute.kamenridercraftcore.ability_meter",
                     0,
                     0,
-                    10000
+                    300
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_ONE_TOGGLE = ATTRIBUTES.register("ability_one_toggle",
+    public static final DeferredHolder<Attribute, Attribute> USING_ABILITY = ATTRIBUTES.register("using_ability",
             () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.ability_one_toggle",
+                    "attribute.kamenridercraftcore.using_ability",
                     false
 
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_TWO_CD = ATTRIBUTES.register("ability_two_cd",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.ability_two_cd",
-                    0,
-                    0,
-                    10000
-            ).setSyncable(true)
-    );
-
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_TWO_TOGGLE = ATTRIBUTES.register("ability_two_toggle",
+    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMED = ATTRIBUTES.register("is_transformed",
             () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.ability_two_toggle",
+                    "attribute.kamenridercraftcore.is_transformed",
                     false
 
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_THREE_CD = ATTRIBUTES.register("ability_three_cd",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.ability_three_cd",
-                    0,
-                    0,
-                    10000
-            ).setSyncable(true)
-    );
-
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_THREE_TOGGLE = ATTRIBUTES.register("ability_three_toggle",
+    public static final DeferredHolder<Attribute, Attribute> POSING = ATTRIBUTES.register("posing",
             () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.ability_three_toggle",
+                    "attribute.kamenridercraftcore.posing",
                     false
 
             ).setSyncable(true)
     );
 
-
+    public static final DeferredHolder<Attribute, Attribute> POSE_COOLDOWN = ATTRIBUTES.register("pose_cooldown",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.pose_cooldown",
+                    0,
+                    0,
+                    200
+            ).setSyncable(true)
+    );
 
     public static final DeferredHolder<Attribute, Attribute> HAZARD_LEVEL = ATTRIBUTES.register("hazard_level",
             () -> new RangedAttribute(
@@ -91,32 +80,18 @@ public class attributeGenerator extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> IS_REINFORCEMENT = ATTRIBUTES.register("is_reinforcement",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.is_reinforcement",
-                    false
-
-            ).setSyncable(true)
-    );
-
 
    @SubscribeEvent
     public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
-        //eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
-           eMod.getTypes().forEach(entity -> eMod.add(entity, HEAD_SIZE));
+           eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
+          // eMod.getTypes().forEach(entity -> eMod.add(entity, HEAD_SIZE));
        }
 
-
-    @SubscribeEvent
-    public static void addAttributes(EntityAttributeModificationEvent event) {
-
-        event.add(EntityType.PLAYER, ABILITY_ONE_TOGGLE);
-        event.add(EntityType.PLAYER, ABILITY_ONE_CD);
-        event.add(EntityType.PLAYER, ABILITY_TWO_TOGGLE);
-        event.add(EntityType.PLAYER, ABILITY_TWO_CD);
-        event.add(EntityType.PLAYER, ABILITY_THREE_TOGGLE);
-        event.add(EntityType.PLAYER, ABILITY_THREE_CD);
-        event.add(EntityType.PLAYER, HAZARD_LEVEL);
-    }
+//    @SubscribeEvent
+//    public static void addAttributes(EntityAttributeModificationEvent event) {
+//        event.add(EntityType.PLAYER, POSING);
+//        event.add(EntityType.PLAYER, POSE_COOLDOWN);
+//        event.add(EntityType.PLAYER, HAZARD_LEVEL);
+//    }
 
 }
