@@ -5,11 +5,40 @@
 {
 	
 	  "item": "kamenridercraft:zi_o_ride_chemy_card"
-	}, 
-	{
-	  "item": "kamenridercraft:grand_zi_o_ridewatch"
-	}
-	],
+	},
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:zi_o_ride_chemy_card"
+    }
+  ],
   "result": {
 	"id": "kamenridercraft:grand_zi_o_ride_chemy_card"
   }

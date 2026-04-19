@@ -2,13 +2,42 @@
   "type": "minecraft:crafting_shapeless",
   "group": "legendary_legend",
   "ingredients": [
-{
-	
-	  "item": "kamenridercraft:saber_ride_chemy_card"
-	}, 
-	{
-	  "item": "kamenridercraft:haouken_xross_saber"
-	}
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:saber_ride_chemy_card"
+    }
 	],
   "result": {
 	"id": "kamenridercraft:xross_saber_ride_chemy_card"

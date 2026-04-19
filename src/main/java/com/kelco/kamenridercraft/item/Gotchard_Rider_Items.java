@@ -1690,7 +1690,7 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).KeepItem().has_basic_model());
+			}.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> DARK_ETHER_CHEMY_CARD = ITEMS.register("dark_ether_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","dorado","eldoradriver_belt",

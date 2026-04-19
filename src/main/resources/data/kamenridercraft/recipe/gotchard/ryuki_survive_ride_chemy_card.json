@@ -2,13 +2,42 @@
   "type": "minecraft:crafting_shapeless",
   "group": "legendary_legend",
   "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ryuki_ride_chemy_card"
-	}, 
-	{
-	  "item": "kamenridercraft:survive_rekka"
-	}
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    },
+    {
+
+      "item": "kamenridercraft:ryuki_ride_chemy_card"
+    }
 	],
   "result": {
 	"id": "kamenridercraft:ryuki_survive_ride_chemy_card"
