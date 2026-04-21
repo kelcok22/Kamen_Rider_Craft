@@ -2332,6 +2332,7 @@
 "item.kamenridercraft.g4_belt": "G-Buckle",
 "item.kamenridercraft.g4_x_belt": "G-Buckle",
   "item.kamenridercraft.g6_belt": "G-Buckle",
+  "item.kamenridercraft.g7_belt": "G-Buckle mark 7",
 "item.kamenridercraft.g1_belt": "G-Buckle",
 "item.kamenridercraft.v1_belt": "V1 Belt",
 
@@ -2341,6 +2342,7 @@
   "kamenridercraft.name.g4":"Rider: Kamen Rider G4",
   "kamenridercraft.name.g4_x":"Rider: Kamen Rider G4-X",
   "kamenridercraft.name.g6":"Rider: Kamen Rider G6",
+  "kamenridercraft.name.g7":"Rider: Kamen Rider G7",
   "kamenridercraft.name.g1":"Rider: Kamen Rider G1",
   "kamenridercraft.name.v1":"Debatable Rider: V1",
 
@@ -2413,6 +2415,7 @@
 "item.kamenridercraft.g4": "G4 Chip",
 "item.kamenridercraft.g4x": "G4-X Chip",
   "item.kamenridercraft.g6": "G6 Chip",
+  "item.kamenridercraft.g7": "G7 Chip",
 "item.kamenridercraft.g1": "G1 Chip",
 "item.kamenridercraft.v1": "V1 Chip",
 

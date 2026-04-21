@@ -2331,6 +2331,7 @@
 "item.kamenridercraft.g4_belt": "Gバックル",
 "item.kamenridercraft.g4_x_belt": "Gバックル",
 "item.kamenridercraft.g6_belt": "Gバックル",
+  "item.kamenridercraft.g7_belt": "Gバックル mark 7",
 "item.kamenridercraft.g1_belt": "Gバックル",
 "item.kamenridercraft.v1_belt": "V-1ベルト",
 
@@ -2340,6 +2341,7 @@
   "kamenridercraft.name.g4":"ライダー: 仮面ライダーG4",
   "kamenridercraft.name.g4_x":"ライダー: 仮面ライダーG4-X",
   "kamenridercraft.name.g6":"ライダー: 仮面ライダーG6",
+  "kamenridercraft.name.g7":"ライダー: 仮面ライダーG7",
   "kamenridercraft.name.g1":"ライダー: 仮面ライダーG1",
   "kamenridercraft.name.v1":"疑似ライダー: V1",
 
@@ -2412,6 +2414,7 @@
 "item.kamenridercraft.g4": "G4チップ",
 "item.kamenridercraft.g4x": "G4-Xチップ",
 "item.kamenridercraft.g6": "G6チップ",
+  "item.kamenridercraft.g7": "G7チップ",
 "item.kamenridercraft.g1": "G1チップ",
 "item.kamenridercraft.v1": "V1チップ",
 
