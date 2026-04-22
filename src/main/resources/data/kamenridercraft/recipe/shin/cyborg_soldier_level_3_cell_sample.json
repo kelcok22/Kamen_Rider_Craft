@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "kr_shin",
+  "ingredients": [
+    {
+
+      "item": "kamenridercraft:empty_vial"
+    },
+    {
+      "item": "kamenridercraft:shin_stone"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:cyborg_soldier_level_3_cell_sample"
+  }
+}

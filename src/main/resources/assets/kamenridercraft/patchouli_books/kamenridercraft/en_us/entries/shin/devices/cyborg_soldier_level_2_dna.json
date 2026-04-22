@@ -1,0 +1,16 @@
+{
+	"name": "Cyborg Soldier Level 2 DNA",
+	"icon": "kamenridercraft:cyborg_soldier_level_2_dna",
+	"category": "kamenridercraft:shin/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Shin Kamen Rider: Prologue (1992, movie)$(br2)Equipped alongside the $(l:shin/devices/armor)Shin armor$(/l) to transform into $(l:shin/riders/cyborg_soldier_level_2)Cyborg Soldier Level 2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:shin/cyborg_soldier_level_2_dna"
+		}
+	]
+}

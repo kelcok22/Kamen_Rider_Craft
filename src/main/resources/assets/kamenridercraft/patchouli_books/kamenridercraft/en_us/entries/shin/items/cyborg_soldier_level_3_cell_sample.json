@@ -1,0 +1,16 @@
+{
+	"name": "Cyborg Soldier Level 3 Cell Sample",
+	"icon": "kamenridercraft:cyborg_soldier_level_3_cell_sample",
+	"category": "kamenridercraft:shin/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Shin Kamen Rider: Prologue (1992, movie)$(br2)Used to craft Cyborg Soldier Level 3's $(l:shin/devices/cyborg_soldier_level_3_dna)DNA$(/l)"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:shin/cyborg_soldier_level_3_cell_sample"
+      }
+	]
+}

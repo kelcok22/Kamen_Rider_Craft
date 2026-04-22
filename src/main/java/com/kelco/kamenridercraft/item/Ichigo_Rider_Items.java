@@ -24,6 +24,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static com.kelco.kamenridercraft.item.Modded_item_core.RIDER_CIRCUIT;
 import static com.kelco.kamenridercraft.item.Modded_item_core.SHOCKER_EMBLEM;
+import static com.kelco.kamenridercraft.item.Reboot_Rider_Items.EMPTY_VIAL;
 
 
 public class Ichigo_Rider_Items {
@@ -1130,6 +1131,36 @@ public class Ichigo_Rider_Items {
                 }
             }.hasSD().ChangeModel("ichigo.geo.json").IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
 
+    public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_3_CELL_SAMPLE = ITEMS.register("cyborg_soldier_level_3_cell_sample",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","cyborg_soldier_level_3","blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
+            {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.ChangeModel("ichigo.geo.json").IsGlowing().AddToList(RiderTabs.SHIN_TAB_ITEM).KeepDifItem(EMPTY_VIAL.get()));
+
+    public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_2_CORE = ITEMS.register("cyborg_soldier_level_2_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","cyborg_soldier_level_2","blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
+            {
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.SHIN_TAB_ITEM));
+
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SHIN_TAB_ITEM));
@@ -1141,6 +1172,12 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item>  GRASSHOPPER_DNA = ITEMS.register("grasshopper_dna",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin",SHIN_STONE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties())
                     .HasAnSDForm().Dont_show_belt_form_info().AddToTabList(RiderTabs.SHIN_TAB_ITEM));
+    public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_3_DNA = ITEMS.register("cyborg_soldier_level_3_dna",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cyborg_soldier_level_3",CYBORG_SOLDIER_LEVEL_3_CELL_SAMPLE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.SHIN_TAB_ITEM));
+    public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_2_DNA = ITEMS.register("cyborg_soldier_level_2_dna",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cyborg_soldier_level_2",CYBORG_SOLDIER_LEVEL_2_CORE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.SHIN_TAB_ITEM));
 
     // ZO
     public static final DeferredItem<Item>  ZO_LOGO = ITEMS.register("zo_logo",

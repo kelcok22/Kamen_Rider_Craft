@@ -2222,8 +2222,14 @@
 "item.kamenridercraft.shintroso": "真の胸当て",
 "item.kamenridercraft.shinlegs": "真のレギンス",
 "item.kamenridercraft.shin_stone": "真の石",
+"item.kamenridercraft.cyborg_soldier_level_3_cell_sample": "改造兵式レベル3細胞瓶",
+"item.kamenridercraft.cyborg_soldier_level_2_core": "改造兵式レベル2コア",
 "item.kamenridercraft.grasshopper_dna": "バッタDNA",
 "kamenridercraft.name.shin": "ライダー: 仮面ライダーシン",
+"item.kamenridercraft.cyborg_soldier_level_3_dna": "改造兵式レベル3のDNA",
+"kamenridercraft.name.cyborg_soldier_level_3": "怪人: 改造兵式レベル3",
+"item.kamenridercraft.cyborg_soldier_level_2_dna": "改造兵式レベル2のDNA",
+"kamenridercraft.name.cyborg_soldier_level_2": "怪人: 改造兵式レベル2",
 
 "item.kamenridercraft.zo_logo": "ZOクレスト",
 "item.kamenridercraft.zohead": "ZO のヘルメット",
@@ -7873,9 +7879,9 @@
   "item.kamenridercraft.unfinished_exgotchalibur": "未完成のエックスがっちゃリバー",
   "item.kamenridercraft.atropos_origami": "アトロポスの折紙",
   "item.kamenridercraft.philosophers_stone_fragment": "賢者の石の断片",
-  "item.kamenridercraft.kuuga_kiva_legend": "レジェンダリーレジェンドの断片（クウガ- キバ）",
-  "item.kamenridercraft.decade_ex_aid_legend": "レジェンダリーレジェンドの断片（ディケイド- エグゼイド）",
-  "item.kamenridercraft.build_gotchard_legend": "レジェンダリーレジェンドの断片（ビルド- ガッチャード）",
+  "item.kamenridercraft.kuuga_kiva_legend": "レジェンダリーレジェンドの断片（クウガ - キバ）",
+  "item.kamenridercraft.decade_ex_aid_legend": "レジェンダリーレジェンドの断片（ディケイド - エグゼイド）",
+  "item.kamenridercraft.build_gotchard_legend": "レジェンダリーレジェンドの断片（ビルド - ガッチャード）",
 
 "item.kamenridercraft.blank_ride_chemy_card": "ブランクカード",
 "item.kamenridercraft.hopper1_ride_chemy_card": "ホッパー1",
@@ -9621,6 +9627,8 @@
   "block.kamenridercraft.megahex_matel": "メガヘクス金属",
   "block.kamenridercraft.megahex_matel_lines": "メガヘクス金属（線）",
 
+"block.kamenridercraft.hiden_metal_block": "Hiden Metal Block（飛電メタルブロック）",
+
   "block.kamenridercraft.wonderwood_door": "ワンダーウッドドア",
 
   "block.kamenridercraft.white_fence": "白色のフェンス",
@@ -9870,6 +9878,7 @@
   "tag.item.kamenridercraft.belts.ride_kamens_armor": "ライドカメンズの変身ベルト",
   "tag.item.kamenridercraft.belts.ryuki_armor": "龍騎の変身ベルト",
   "tag.item.kamenridercraft.belts.saber_armor": "セイバーの変身ベルト",
+  "tag.item.kamenridercraft.belts.shin_armor": "真の変身ベルト",
   "tag.item.kamenridercraft.belts.shin_kamen_rider_armor": "シン・仮面ライダーの変身ベルト",
   "tag.item.kamenridercraft.belts.skyrider_armor": "スカイライダーの変身ベルト",
   "tag.item.kamenridercraft.belts.stronger_armor": "ストロンガーの変身ベルト",

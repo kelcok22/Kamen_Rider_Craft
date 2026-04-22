@@ -1,0 +1,21 @@
+{
+	"name": "Kamen Rider Shin",
+	"icon": "kamenridercraft:grasshopper_dna",
+	"category": "kamenridercraft:shin/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:cyborg_soldier_level_2_dna\",Count:1b},{id:\"kamenridercraft:shinlegs\",Count:1b},{id:\"kamenridercraft:shintroso\",Count:1b},{id:\"kamenridercraft:shinhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Cyborg Soldier Level 2",
+			"text": "Appears in:$(li)Shin Kamen Rider: Prologue (1992, movie)$(br2)Transforms with the $(l:shin/devices/cyborg_soldier_level_2_dna)Cyborg Soldier Level 2 DNA$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Haste$(li)Jump Boost II$(li)Strength VII (with empty hand)$(li)Strength II (with weapon)"
+		}
+	]
+}

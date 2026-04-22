@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "kr_shin",
+  "pattern": [
+    "XGX",
+    "IMI",
+    "XGX"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "kamenridercraft:cyborg_soldier_level_3_cell_sample"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "X": {
+      "item": "kamenridercraft:rider_circuit"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:cyborg_soldier_level_2_core"
+  }
+}
