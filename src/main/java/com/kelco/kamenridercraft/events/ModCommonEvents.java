@@ -682,6 +682,53 @@ public class ModCommonEvents {
 						new ItemCost(Items.EMERALD, 1),
 						new ItemStack(Modded_item_core.MAYO.get(), 1), 10, 8, 0.02F));
 		}
+			else if (event.getType() == RiderVillagers.COLLECTOR_VILLAGER.get()) {
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Miscellaneous_Rider_Items.GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Rider_Blocks.RED_ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Miscellaneous_Rider_Items.RIDERMAN_HELMET.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 2),
+						new ItemStack(Miscellaneous_Rider_Items.GIFT.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Revice_Rider_Items.TOYSAURUS_VISTAMP.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 3),
+						new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 2),
+						new ItemStack(MobsCore.BICYCLE_SPAWN_EGG.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Ghost_Rider_Items.ORE_SPECTER_GHOST_EYECON.get(), 1), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 3),
+						new ItemStack(Miscellaneous_Rider_Items.HALLOWEEN_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 3),
+						new ItemStack(Miscellaneous_Rider_Items.VALENTINE_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
+				trades.get(4).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Blade_Rider_Items.EVOLUTION_CAUCASUS, 1),
+						new ItemStack(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), 1), 10, 8, 0.02F));
+				trades.get(4).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Kiva_Rider_Items.TATSULOT, 1),
+						new ItemStack(Kiva_Rider_Items.KIVATTE_FUESTLE.get(), 1), 10, 8, 0.02F));
+				trades.get(4).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY, 1),
+						new ItemStack(Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), 1), 10, 8, 0.02F));
+				trades.get(4).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Agito_Rider_Items.EXCEED_GILLS, 1),
+						new ItemStack(Agito_Rider_Items.GOLD_EXCEED_GILLS.get(), 1), 10, 8, 0.02F));
+				trades.get(4).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Ryuki_Rider_Items.SURVIVE_REKKA, 1),
+						new ItemStack(Ryuki_Rider_Items.SURVIVE_BLACK.get(), 1), 10, 8, 0.02F));
+			}
 		}
 
 	}
