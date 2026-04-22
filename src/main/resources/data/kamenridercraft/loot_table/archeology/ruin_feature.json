@@ -18,6 +18,16 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:imagin_sand",
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:zo_stone",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:j_stone",
+          "weight": 2
         }
       ]
     }
