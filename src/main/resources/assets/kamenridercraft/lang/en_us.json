@@ -9581,6 +9581,8 @@
 
   "block.kamenridercraft.ixa_machine_block": "Fuestle Replicator",
 
+  "block.kamenridercraft.cell_alloy_block": "Cell Alloy Block",
+
   "block.kamenridercraft.rabbit_hutch_light": "Rabbit Hutch Light",
   "block.kamenridercraft.rabbit_hutch_cyan": "Rabbit Hutch Hull",
   "block.kamenridercraft.rabbit_hutch_cyan_light": "Rabbit Hutch Lamp",
@@ -9632,6 +9634,7 @@
   "item.kamenridercraft.helheim_hanging_sign": "Helheim Hanging Sign",
   "item.kamenridercraft.helheim_wall_hanging_sign": "Helheim Wall Hanging Sign",
 
+  "block.kamenridercraft.shift_alloy_block": "Shift Alloy Block",
   "block.kamenridercraft.megahex_light": "Megahex Light",
   "block.kamenridercraft.megahex_matel": "Megahex Metal",
   "block.kamenridercraft.megahex_matel_lines": "Megahex Metal (Lined)",

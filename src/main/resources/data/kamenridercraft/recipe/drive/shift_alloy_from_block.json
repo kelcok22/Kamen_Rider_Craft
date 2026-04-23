@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "drive",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:shift_alloy_block"
+	}
+	],
+  "result": {
+	  "count": 9,
+	"id": "kamenridercraft:shift_alloy"
+  }
+}

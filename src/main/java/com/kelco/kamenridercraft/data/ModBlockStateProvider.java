@@ -54,7 +54,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(Rider_Blocks.BLACK_GEM_BLOCK.get());
         simpleBlock(Rider_Blocks.ORANGE_GEM_BLOCK.get());
         simpleBlock(Rider_Blocks.PURPLE_GEM_BLOCK.get());
-
+        simpleBlock(Rider_Blocks.CELL_ALLOY_BLOCK.get());
+        simpleBlock(Rider_Blocks.SHIFT_ALLOY_BLOCK.get());
 
         stairsBlock(Rider_Blocks.HELHEIM_STAIRS.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         stairsBlock(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
@@ -128,6 +129,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.CYAN_GEM_BLOCK);
         blockItem(Rider_Blocks.ORANGE_GEM_BLOCK);
         blockItem(Rider_Blocks.HIDEN_METAL_BLOCK);
+        blockItem(Rider_Blocks.CELL_ALLOY_BLOCK);
+        blockItem(Rider_Blocks.SHIFT_ALLOY_BLOCK);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);

@@ -721,6 +721,10 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<Block> CELL_ALLOY_BLOCK = registerBlock("cell_alloy_block",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 	public static final DeferredBlock<Block> RABBIT_HUTCH_LIGHT = registerBlock("rabbit_hutch_light",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
@@ -743,6 +747,10 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<LadderBlock> RABBIT_HUTCH_LADDER = registerBlock("rabbit_hutch_ladder",
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
+
+	public static final DeferredBlock<Block> SHIFT_ALLOY_BLOCK = registerBlock("shift_alloy_block",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> MEGAHEX_LIGHT = registerBlock("megahex_light",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)

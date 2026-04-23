@@ -111,6 +111,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createSingleItemTable(Rider_Blocks.BLACK_GEM_BLOCK.get()));
         add(Rider_Blocks.HIDEN_METAL_BLOCK.get(),
                 block -> createSingleItemTable(Rider_Blocks.HIDEN_METAL_BLOCK.get()));
+        add(Rider_Blocks.CELL_ALLOY_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.CELL_ALLOY_BLOCK.get()));
+        add(Rider_Blocks.SHIFT_ALLOY_BLOCK.get(),
+                block -> createSingleItemTable(Rider_Blocks.SHIFT_ALLOY_BLOCK.get()));
     }
 
     @Override
