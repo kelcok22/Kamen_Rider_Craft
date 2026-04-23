@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"saber.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, -30, 0],
+					"position": [0, -0.25, 0]
+				},
+				"torso": {
+					"rotation": [-5, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [0.8805, -9.9616, -5.0767]
+				},
+				"right_leg": {
+					"rotation": [1.1069, 12.4517, 5.1207]
+				},
+				"head": {
+					"rotation": [0, 25, 0]
+				},
+				"right_arm": {
+					"rotation": [-85.2303, -1.5018, 17.4375]
+				},
+				"left_arm": {
+					"rotation": [-14.8774, -1.936, -7.2472],
+					"position": [0.5, 0, 0.86603]
+				}
+			}
+		}
+	}
+}

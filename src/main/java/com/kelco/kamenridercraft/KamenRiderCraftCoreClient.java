@@ -21,11 +21,32 @@ public class KamenRiderCraftCoreClient {
 
     @SubscribeEvent
     public static void registerPlayerAnimations( FMLClientSetupEvent event) {
-        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 15000,
+        // Rider Attacks
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 17500,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
+        /*
+        // Poses
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 20000,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        // Bike Riding
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 20000,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        // Flying
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 20000,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        */
     }
 }
 

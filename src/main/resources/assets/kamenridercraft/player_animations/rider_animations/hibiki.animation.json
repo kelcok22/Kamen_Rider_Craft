@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"hibiki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, -25, 0],
+					"position": [0, -1, 0]
+				},
+				"left_leg": {
+					"rotation": [26.2152, -15.5363, -24.7301],
+					"position": [0, 0, -2]
+				},
+				"right_leg": {
+					"rotation": [2.228, 11.8573, 11.8905],
+					"position": [0, 0, -1]
+				},
+				"right_arm": {
+					"rotation": [-69.4911, 46.7145, 25.1005]
+				},
+				"left_arm": {
+					"rotation": [-82.7347, -10.1524, -18.9289]
+				},
+				"head": {
+					"rotation": [0, 25, 0],
+					"position": [0, 0, 1]
+				},
+				"torso": {
+					"rotation": [-7.5, 0, 0],
+					"position": [0, 0, 1.75]
+				}
+			}
+		}
+	}
+}

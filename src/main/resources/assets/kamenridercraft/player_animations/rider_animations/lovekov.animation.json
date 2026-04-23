@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"lovekov.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"scale": 1
+				}
+			}
+		}
+	}
+}

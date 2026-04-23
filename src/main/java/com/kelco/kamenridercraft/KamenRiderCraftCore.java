@@ -34,7 +34,7 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
-import com.kelco.kamenridercraft.world.attributeGenerator;
+import com.kelco.kamenridercraft.world.AttributeGenerator;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
@@ -125,7 +125,7 @@ public class KamenRiderCraftCore {
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
-        attributeGenerator.ATTRIBUTES.register(modEventBus);
+        AttributeGenerator.ATTRIBUTES.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
@@ -163,7 +163,7 @@ public class KamenRiderCraftCore {
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
-            float sd = (float) event.getEntity().getAttribute(attributeGenerator.HEAD_SIZE).getValue();
+            float sd = (float) event.getEntity().getAttribute(AttributeGenerator.HEAD_SIZE).getValue();
             model.getHead().xScale = sd;
             model.getHead().yScale = sd;
             model.getHead().zScale = sd;

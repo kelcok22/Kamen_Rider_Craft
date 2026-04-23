@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"tackle.pose": {
+			"bones": {
+				"body": {
+					"rotation": [0, -35, 0]
+				},
+				"left_leg": {
+					"rotation": [15.3472, -12.0676, -3.2839]
+				},
+				"right_leg": {
+					"rotation": [0.2428, 4.3339, 3.5321],
+					"position": [0, 0, -3]
+				},
+				"right_arm": {
+					"rotation": [-174.2306, 11.082, -8.7828],
+					"position": [-1, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [-31.844, 15.3579, 23.0945]
+				},
+				"head": {
+					"rotation": [-1.5918, 32.4653, -0.4635],
+					"position": [1, 0, 0]
+				},
+				"torso": {
+					"rotation": [-2.5, 5, 5]
+				}
+			}
+		}
+	}
+}

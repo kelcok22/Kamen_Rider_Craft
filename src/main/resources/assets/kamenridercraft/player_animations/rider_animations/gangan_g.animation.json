@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"gangan_g.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [2.2046, -12.3071, -10.2377]
+				},
+				"torso": {
+					"rotation": [-10, -12.5, 7.5],
+					"position": [0, 0, 2]
+				},
+				"left_leg": {
+					"rotation": [5, 0, 32.5],
+					"position": [4, 3, -4]
+				},
+				"right_leg": {
+					"rotation": [-7.2154, 40.2891, -4.1001],
+					"position": [-2, 0, -1]
+				},
+				"head": {
+					"rotation": [3.904, 17.0722, 13.0863],
+					"position": [0, 0, 2]
+				},
+				"right_arm": {
+					"rotation": [246.8612, 77.0321, 5.1364],
+					"position": [-2, 1, 0]
+				},
+				"left_arm": {
+					"rotation": [-97.6055, -70.2873, -12.6777],
+					"position": [2, -1, 1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nigo.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [-3.483, -24.7717, 8.2652]
+				},
+				"torso": {
+					"rotation": [-5, 0, -5],
+					"position": [0, 0, 1]
+				},
+				"left_leg": {
+					"rotation": [10.1511, -9.8466, -31.7538],
+					"position": [2, 0, -4]
+				},
+				"right_leg": {
+					"rotation": [7.5, 57.5, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 25, -7.5]
+				},
+				"right_arm": {
+					"rotation": [-16.6212, -40.6871, -65.1233],
+					"position": [0, 0, -2]
+				},
+				"left_arm": {
+					"rotation": [-127.5, 0, 0]
+				}
+			}
+		}
+	}
+}

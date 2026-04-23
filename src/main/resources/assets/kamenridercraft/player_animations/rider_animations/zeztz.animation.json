@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"zeztz.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-10, 35, 0],
+					"position": [0, -0.5, 0]
+				},
+				"left_leg": {
+					"rotation": [24.5182, 4.7511, -11.5752],
+					"position": [1.18085, -1.0996, -0.56486]
+				},
+				"right_leg": {
+					"rotation": [11.2665, 25.2521, 25.0316]
+				},
+				"head": {
+					"rotation": [15.1436, -34.0547, -8.6178]
+				},
+				"right_arm": {
+					"rotation": [-129.4638, -26.4256, 35.719],
+					"position": [0, -3, -1]
+				},
+				"left_arm": {
+					"rotation": [-32.5, 20, 0]
+				}
+			}
+		}
+	}
+}

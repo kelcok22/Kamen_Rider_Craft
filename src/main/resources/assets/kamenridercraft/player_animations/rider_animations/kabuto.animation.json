@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kabuto.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [-2.5, -37.5, 0]
+				},
+				"left_leg": {
+					"rotation": [5.7879, -17.4828, -2.6212],
+					"position": [0, 0, 0.25]
+				},
+				"right_leg": {
+					"rotation": [-1.5918, 32.4653, -2.9635],
+					"position": [-1.5, 0, -1]
+				},
+				"right_arm": {
+					"rotation": [-176.0829, 24.829, 3.9168],
+					"position": [-2.5, 0, -1.75]
+				},
+				"left_arm": {
+					"rotation": [0, -12.5, -5]
+				},
+				"head": {
+					"rotation": [2.5, 40, 0],
+					"position": [0.5, 0, 0]
+				},
+				"torso": {
+					"rotation": [-5.0767, 9.9616, -0.8804]
+				}
+			}
+		}
+	}
+}

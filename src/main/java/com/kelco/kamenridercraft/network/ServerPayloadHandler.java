@@ -9,9 +9,9 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
-
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.util.ComplexFormCheck;
+import com.kelco.kamenridercraft.world.AttributeGenerator;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
@@ -24,7 +24,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -38,6 +37,18 @@ public class ServerPayloadHandler {
     public static void stopKickAnimation() {
         PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
         controller.stopTriggeredAnimation();
+    }
+
+    public static void stopPosing(Player player) {
+        try {
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
+            controller.stopTriggeredAnimation();
+            player.getAttribute(AttributeGenerator.POSING).setBaseValue(0);
+            player.addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 40, 0, true, false));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     // Decade Complete summon swing mimicry
@@ -57,7 +68,24 @@ public class ServerPayloadHandler {
     }
 
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
-        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
+        //add gamerule for allow particles, sounds, and cooldown length
+        if (context.player().getAttribute(AttributeGenerator.POSING).getValue() == 1 & !context.player().hasEffect(Effect_core.POSE_COOLDOWN)) {
+            context.player().getAttribute(AttributeGenerator.POSING).setBaseValue(0);
+            stopPosing(context.player());
+            return;
+        }
+        if (context.player().getItemBySlot(EquipmentSlot.HEAD).getItem().asItem().toString().equals("kamenridercraft:ferbus")) {
+            try {
+                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
+                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
+                controller.triggerAnimation(PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance")));
+                context.player().addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 60, 0, true, false));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return;
+        }
+        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && !context.player().hasEffect(Effect_core.POSE_COOLDOWN) && context.player().getAttribute(AttributeGenerator.POSING).getValue() == 0) {
 
             RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
 
@@ -79,11 +107,16 @@ public class ServerPayloadHandler {
                 }
             }
 
+            if (animation == null) {
+                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+            }
+
             try {
-                context.player().addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,60, 2,true,false));
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
+                context.player().getAttribute(AttributeGenerator.POSING).setBaseValue(1);
+                context.player().addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 60, 0, true, false));
             } catch (Exception e) {
                 e.printStackTrace();
             }

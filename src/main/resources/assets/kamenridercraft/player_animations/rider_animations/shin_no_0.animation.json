@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"shin_no_0.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, -30, 0]
+				},
+				"torso": {
+					"rotation": [-2.5, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [-7.1125, 3.4552, 2.4491]
+				},
+				"right_leg": {
+					"rotation": [10.1658, 19.1284, 2.486]
+				},
+				"head": {
+					"rotation": [0, 27.5, 0]
+				},
+				"right_arm": {
+					"rotation": [1.817, 19.9207, 7.8191]
+				},
+				"left_arm": {
+					"rotation": [0, -10, -10]
+				}
+			}
+		}
+	}
+}
