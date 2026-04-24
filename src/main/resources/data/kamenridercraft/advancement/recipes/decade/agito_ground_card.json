@@ -25,8 +25,7 @@
 	  "kamenridercraft:decade/agito_flame_card",
 	  "kamenridercraft:decade/agito_trinity_card",
 	  "kamenridercraft:decade/agito_burning_card",
-	  "kamenridercraft:decade/agito_shining_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/agito_shining_card"
 	]
   },
   "sends_telemetry_event": false

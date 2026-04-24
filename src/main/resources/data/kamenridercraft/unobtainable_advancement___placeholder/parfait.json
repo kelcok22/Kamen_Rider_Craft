@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:henshin_belt_caries_gavv"
+	  "id": "kamenridercraft:chocorappa_gochizo"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gavv.caries.title"
+      "translate": "advancements.kamenridercraft.gavv.chocorappa.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gavv.caries.description"
+      "translate": "advancements.kamenridercraft.gavv.chocorappa.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gavv/bake",
+  "parent": "kamenridercraft:gavv/frappe",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -38,8 +38,11 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:henshin_belt_caries_gavv"
-			  ]
+				"kamenridercraft:vrastumgear_valen"
+			  ],
+				"predicates": {
+					"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:chocorappa_gochizo\"}"
+				}
 			}
 		  }
 		}

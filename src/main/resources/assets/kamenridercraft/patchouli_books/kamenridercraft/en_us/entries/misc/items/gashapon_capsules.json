@@ -33,7 +33,7 @@
         "type": "patchouli:text",
         "anchor": "valentine_gashapon_capsule",
         "title": "Valentine Gashapon Capsule",
-        "text": "Gives random items when opened$(br2)Drops:$(li)$(l:zi_o/items/ridewatches#manhole_cover)Manhole Cover$(/l) (11.1%)$(li)$(l:decade/items/final_formride_cards#chalice_choco)Final FormRide Chalice Choco$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core_medal)Love Core Medal (Head)$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core2_medal)Love Core Medal (Torso)$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core3_medal)Love Core Medal (Legs)$(/l) (11.1%)$(li)$(l:misc/blocks/lovekov_plush)Lovekov Plush$(/l) (11.1%)$(li)$(l:ex_aid/items/rider_gashats#toki_meki_bridal_gashat)Toki Meki Bridal Gashat$(/l) (11.1%)"
+        "text": "Gives random items when opened$(br2)Drops:$(li)$(l:zi_o/items/manhole_cover)Manhole Cover$(/l) (11.1%)$(li)$(l:decade/items/final_formride_cards#chalice_choco)Final FormRide Chalice Choco$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core_medal)Love Core Medal (Head)$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core2_medal)Love Core Medal (Torso)$(/l) (11.1%)$(li)$(l:ooo/items/core_medals#love_core3_medal)Love Core Medal (Legs)$(/l) (11.1%)$(li)$(l:misc/blocks/lovekov_plush)Lovekov Plush$(/l) (11.1%)$(li)$(l:ex_aid/items/rider_gashats#toki_meki_bridal_gashat)Toki Meki Bridal Gashat$(/l) (11.1%)"
       },
       {
         "type": "patchouli:spotlight",

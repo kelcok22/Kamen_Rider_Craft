@@ -1,26 +1,26 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:henshin_belt_bitter_gavv"
+	  "id": "kamenridercraft:henshin_belt_caries_gavv"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gavv.bitter_gavv.title"
+      "translate": "advancements.kamenridercraft.gavv.caries.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gavv.bitter_gavv.description"
+      "translate": "advancements.kamenridercraft.gavv.caries.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gavv/vram",
+  "parent": "kamenridercraft:gavv/bake",
   "criteria": {
 	"requirement": {
 		"trigger": "minecraft:player_killed_entity",
 		"conditions": {
 			"entity": {
-				"type": "kamenridercraft:bitter_gavv"
+				"type": "kamenridercraft:caries"
 			}
 		}
 	}

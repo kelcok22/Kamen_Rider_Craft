@@ -30,8 +30,7 @@
 	  "kamenridercraft:decade/kuuga_rising_pegasus_card",
 	  "kamenridercraft:decade/kuuga_rising_titan_card",
 	  "kamenridercraft:decade/kuuga_amazing_mighty_card",
-	  "kamenridercraft:decade/kuuga_ultimate_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/kuuga_ultimate_card"
 	]
   },
   "sends_telemetry_event": false

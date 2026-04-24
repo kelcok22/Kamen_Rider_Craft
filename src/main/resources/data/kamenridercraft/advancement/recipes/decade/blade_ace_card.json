@@ -24,8 +24,7 @@
 	  "kamenridercraft:decade/blade_jack_card",
 	  "kamenridercraft:decade/blade_king_card",
 	  "kamenridercraft:decade/blade_metal_card",
-	  "kamenridercraft:decade/blade_mach_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/blade_mach_card"
 	]
   },
   "sends_telemetry_event": false

@@ -22,8 +22,7 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:decade/faiz_axel_card",
-	  "kamenridercraft:decade/faiz_blaster_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/faiz_blaster_card"
 	]
   },
   "sends_telemetry_event": false

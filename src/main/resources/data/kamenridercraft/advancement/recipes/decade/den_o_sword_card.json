@@ -28,8 +28,7 @@
 	  "kamenridercraft:decade/den_o_wing_card",
 	  "kamenridercraft:decade/den_o_climax_card",
 	  "kamenridercraft:decade/den_o_liner_card",
-	  "kamenridercraft:decade/den_o_ore_sanjou_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/den_o_ore_sanjou_card"
 	]
   },
   "sends_telemetry_event": false

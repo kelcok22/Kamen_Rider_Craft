@@ -22,8 +22,7 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:decade/kabuto_masked_card",
-	  "kamenridercraft:decade/kabuto_hyper_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/kabuto_hyper_card"
 	]
   },
   "sends_telemetry_event": false

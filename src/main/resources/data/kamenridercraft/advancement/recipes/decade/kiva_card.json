@@ -25,8 +25,7 @@
 	  "kamenridercraft:decade/kiva_basshaa_card",
 	  "kamenridercraft:decade/kiva_dogga_card",
 	  "kamenridercraft:decade/kiva_dogabaki_card",
-	  "kamenridercraft:decade/kiva_emperor_card",
-	  "kamenridercraft:decade/decade_violent_emotion_card"
+	  "kamenridercraft:decade/kiva_emperor_card"
 	]
   },
   "sends_telemetry_event": false

@@ -61,7 +61,7 @@ public class ZeinCardItem extends FinalKamenRideCardItem implements ZeinCard {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
         for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
-        if (zeinItemList.isEmpty()) living.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
+        if (zeinItemList.isEmpty() && !(living instanceof Player)) living.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
         else for (String string : zeinItemList) {
             ItemStack weapon = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(string)), 1);
             weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
