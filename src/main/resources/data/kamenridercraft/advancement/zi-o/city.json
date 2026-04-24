@@ -1,0 +1,27 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:woz_time_majin_ridewatch"
+	  },
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.city.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.city.description"
+    },
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:zi-o/woz",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:changed_dimension",
+		"conditions": {
+		  "to": "kamenridercraft:city"
+		}
+	  }
+	}
+  }
+  

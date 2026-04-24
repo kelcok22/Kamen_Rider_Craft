@@ -1,0 +1,26 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:book_gate_wonder_ride_book"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.northern_base.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.northern_base.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/saber",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "kamenridercraft:northern_base"
+      }
+    }
+  }
+}

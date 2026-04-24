@@ -1,0 +1,26 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:gate_switch"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.moon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.moon.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:heisei_p2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "kamenridercraft:moon"
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:heisei_p2",
+  "parent": "kamenridercraft:gaim/helheim",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

@@ -4,17 +4,17 @@
 	  "id": "kamenridercraft:fourze_driver"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.fourze.fourze.title"
+      "translate": "advancements.kamenridercraft.fourze.moon.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.fourze.fourze.description"
+      "translate": "advancements.kamenridercraft.fourze.moon.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:heisei_p2",
+  "parent": "kamenridercraft:fourze/moon",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

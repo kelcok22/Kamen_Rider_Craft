@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:helheim_fruit"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.gaim.helheim_fruit_eat.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.helheim_fruit_eat.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "kamenridercraft:gaim/helheim_fruit",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "kamenridercraft:helheim_fruit"
+        }
+      }
+    }
+  }
+}

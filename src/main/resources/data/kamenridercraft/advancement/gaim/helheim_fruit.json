@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:helheim_leaves"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.gaim.helheim_fruit.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.helheim_fruit.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:gaim/helheim",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kamenridercraft:helheim_fruit"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+

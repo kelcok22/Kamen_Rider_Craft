@@ -1,0 +1,27 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:helheim_crack"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.helheim.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.helheim.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:heisei_p2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "kamenridercraft:helheim"
+      }
+    }
+  }
+}
+
