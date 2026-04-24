@@ -1856,10 +1856,30 @@ public class Zi_O_Rider_Items {
             }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_RYUKI_WATCH = ITEMS.register("another_ryuki_watch",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ryuki", "another_v_buckle_belt_ryuki",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_RYUGA_WATCH = ITEMS.register("another_ryuga_watch",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ryuga", "another_v_buckle_belt_ryuga",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_FAIZ_WATCH = ITEMS.register("another_faiz_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_faiz", "another_faiz_driver_belt",
@@ -2420,6 +2440,14 @@ public class Zi_O_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_agito_zio", ANOTHER_AGITO_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
+    public static final DeferredItem<Item> ANOTHER_V_BUCKLE_RYUKI = ITEMS.register("another_v_buckle_ryuki",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ryuki", ANOTHER_RYUKI_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> ANOTHER_V_BUCKLE_RYUGA = ITEMS.register("another_v_buckle_ryuga",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ryuga", ANOTHER_RYUGA_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
     public static final DeferredItem<Item> ANOTHER_FAIZ_DRIVER = ITEMS.register("another_faiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_faiz", ANOTHER_FAIZ_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
@@ -2519,6 +2547,12 @@ public class Zi_O_Rider_Items {
 
     public static final DeferredItem<Item> BARLCKXS_SWORD = ITEMS.register("barlckxs_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> ANOTHER_DRAG_SABER = ITEMS.register("another_drag_saber",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> ANOTHER_DRAG_SABER_RYUGA = ITEMS.register("another_drag_saber_ryuga",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> KASSHINE_TRIDENT = ITEMS.register("kasshine_trident",
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM)
