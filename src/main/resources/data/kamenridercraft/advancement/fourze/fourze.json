@@ -4,10 +4,10 @@
 	  "id": "kamenridercraft:fourze_driver"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.fourze.moon.title"
+      "translate": "advancements.kamenridercraft.fourze.fourze.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.fourze.moon.description"
+      "translate": "advancements.kamenridercraft.fourze.fourze.description"
     },
     "frame": "task",
 	"show_toast": true,
