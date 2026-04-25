@@ -58,7 +58,6 @@ public class BaseItem extends Item  {
                 return ItemStack.EMPTY;
             }
             ItemStack save =  new ItemStack(craftingRemainingItem);
-            System.out.println(stack.getItem().toString());
             if (!stack.getItem().toString().contains("sample") || !stack.getItem().toString().contains("vial")) {
                 save.applyComponents(stack.getComponents());
             }

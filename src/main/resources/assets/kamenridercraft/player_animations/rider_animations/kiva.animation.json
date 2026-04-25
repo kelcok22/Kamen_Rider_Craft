@@ -6,28 +6,30 @@
 			"bones": {
 				"body": {
 					"rotation": [22.5, 45, 0],
-					"position": [0, -3, 0]
+					"position": [0, -6, 0]
 				},
 				"torso": {
 					"rotation": [-5, 10, 0],
 					"position": [0, 0, 1]
 				},
 				"left_leg": {
-					"rotation": [-26.9296, -36.465, 15.6126],
-					"position": [1.59323, 2.92286, -0.87732]
+					"rotation": [-7.4971, -4.8896, -13.541],
+					"position": [2.1034, 5.93953, -4.41381]
 				},
 				"right_leg": {
-					"rotation": [15, 0, 22.5],
+					"rotation": [40, 0, 22.5],
 					"position": [-0.48173, 1.45013, -3.41542]
 				},
 				"head": {
 					"rotation": [-24.5107, -43.0795, 20.7535]
 				},
 				"right_arm": {
-					"rotation": [-125, 20, 0]
+					"rotation": [-142.6331, 33.2746, -16.8143],
+					"position": [-0.46213, 2.47455, -1.26969]
 				},
 				"left_arm": {
-					"rotation": [11.7921, -16.2699, -36.6913]
+					"rotation": [13.5828, -33.351, -40.9102],
+					"position": [0.53898, -0.81915, 0.19617]
 				}
 			}
 		},
@@ -258,25 +260,36 @@
 		},
 		"kiva.basshaafuestle.pose": {
 			"loop": "hold_on_last_frame",
+			"animation_length": 0.4583,
 			"bones": {
 				"body": {
-					"rotation": [0, -25, 0]
+					"rotation": [0, -65, 0],
+					"position": [0, -1, 0]
 				},
 				"left_leg": {
-					"rotation": [3.4232, -7.0927, -7.2222]
+					"rotation": [23.2117, -21.6115, -10.9047]
 				},
 				"right_leg": {
-					"rotation": [-4.5928, 23.2631, 7.3877]
+					"rotation": [-22.2813, 6.4263, -1.9903]
 				},
 				"head": {
-					"rotation": [0, 25, 0]
+					"rotation": [0, 57.5, 0]
 				},
 				"right_arm": {
-					"rotation": [-164.3071, -16.8856, -4.6653],
-					"position": [-1, -6, -4]
+					"rotation": [-166.7406, -9.8622, -26.2748],
+					"position": [-0.4033, -2, 1.80034]
 				},
 				"left_arm": {
-					"rotation": [-14.9924, -13.5107, -12.257]
+					"rotation": [-58.7552, 4.0875, -82.531],
+					"position": [1.27213, -2, -2.71692]
+				},
+				"torso": {
+					"rotation": [-4.9944, 0, -4.9775],
+					"position": [-1.10328, 0, 0.58761]
+				},
+				"right_item": {
+					"rotation": [0, -90, 0],
+					"position": [0, -1, 2]
 				}
 			}
 		},

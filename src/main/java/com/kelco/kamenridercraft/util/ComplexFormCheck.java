@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.util;
 public class ComplexFormCheck {
     public static String oooComboCheck(String medalOne, String medalTwo, String medalThree) {
         String comboText = medalOne.replace("kamenridercraft:", "") + " " + medalTwo.replace("kamenridercraft:", "") + " " + medalThree.replace("kamenridercraft:", "");
-        System.out.println(comboText);
         return switch (comboText) {
             case "taka_medal tora_medal batta_medal" -> "tatoba";
             case "super_taka_medal super_tora_medal super_batta_medal" -> "super_tatoba";
