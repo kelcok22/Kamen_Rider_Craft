@@ -52,17 +52,21 @@ public class BaseItem extends Item  {
     }
 
 
-    public ItemStack getCraftingRemainingItem(ItemStack stack)
-    {
+    public ItemStack getCraftingRemainingItem(ItemStack stack) {
         if (stack.getItem() instanceof BaseItem) {
-            if (!hasCraftingRemainingItem(stack))
-            {
+            if (!hasCraftingRemainingItem(stack)) {
                 return ItemStack.EMPTY;
             }
             ItemStack save =  new ItemStack(craftingRemainingItem);
-            save.applyComponents(stack.getComponents());
+            System.out.println(stack.getItem().toString());
+            if (!stack.getItem().toString().contains("sample") || !stack.getItem().toString().contains("vial")) {
+                save.applyComponents(stack.getComponents());
+            }
             return save;
-        } else  return new ItemStack(this.getCraftingRemainingItem());
+
+        } else  {
+            return new ItemStack(this.getCraftingRemainingItem());
+        }
     }
 
     public BaseItem SetItemAnimation(UseAnim Anim) {
