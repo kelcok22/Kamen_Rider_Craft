@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "birth",
+	"pattern": [
+		"RKR",
+		"SCE",
+		"RWR"
+	],
+	"key": {
+		"C": {
+			"item": "kamenridercraft:birth_core"
+		},"R": {
+			"item": "kamenridercraft:rider_circuit"
+		},"W": {
+			"item": "kamenridercraft:wizardgem_red"
+		},"S": {
+			"item": "kamenridercraft:sasori_medal"
+		},"K": {
+			"item": "kamenridercraft:kani_medal"
+		},"E": {
+			"item": "kamenridercraft:ebi_medal"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:rebirth_core"
+	}
+}
