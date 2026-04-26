@@ -275,7 +275,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.AUTO_VAJIN_ROBO.get(), AutoVajinRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BAKENEKO.get(), BasicEntityRenderer::new);
-            event.registerEntityRenderer(MobsCore.MIDAREDOUJI.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MIDAREDOUJI.get(), MidaredoujiRenderer::new);
             event.registerEntityRenderer(MobsCore.MAKAMOU_NINJA_GROUP.get(), MakamouNinjaGroupRenderer::new);
             event.registerEntityRenderer(MobsCore.KABUKI.get(), BasicEntityRenderer::new);
 

@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.models.DoggaModel;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
+import com.kelco.kamenridercraft.client.models.MidaredoujiModel;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
@@ -15,10 +16,10 @@ import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import com.kelco.kamenridercraft.entities.summons.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
+import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.decade.ZeinCardItem;
 import com.kelco.kamenridercraft.item.gavv.GochipodItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -734,6 +735,7 @@ public class ModCommonEvents {
 	}
 	@SubscribeEvent
 	public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(MidaredoujiModel.LAYER_LOCATION, MidaredoujiModel::createBodyLayer);
 		event.registerLayerDefinition(ElementaryInvesModel.LAYER_LOCATION, ElementaryInvesModel::createBodyLayer);
 		event.registerLayerDefinition(HeartRoidmudeModel.LAYER_LOCATION, HeartRoidmudeModel::createBodyLayer);
         event.registerLayerDefinition(DoggaModel.LAYER_LOCATION, DoggaModel::createBodyLayer);

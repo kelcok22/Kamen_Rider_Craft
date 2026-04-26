@@ -1,0 +1,16 @@
+{
+	"name": "ReBirth Core",
+	"icon": "kamenridercraft:rebirth_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used to craft Birth's $(l:ooo/devices/birth_driver#rebirth_driver)ReBirth Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/rebirth_core"
+		}
+	]
+}

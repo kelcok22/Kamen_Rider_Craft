@@ -1063,6 +1063,18 @@ public class OOO_Rider_Items {
 				}
 			}.AddToList(RiderTabs.OOO_TAB_ITEM));
 
+	public static final DeferredItem<Item> REBIRTH_CORE = ITEMS.register("rebirth_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","re_birth","rebirth_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+				}
+			}.AddToList(RiderTabs.OOO_TAB_ITEM));
+
 	public static final DeferredItem<Item> PROTO_BIRTH_CORE = ITEMS.register("proto_birth_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","birth_prototype","birth_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -1203,7 +1215,7 @@ public class OOO_Rider_Items {
 			}.Add_Extra_Base_Form_Items(KANI_NEW_MEDAL, SASORI_NEW_MEDAL).Override_belt_text("birth_driver_x_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> REBIRTH_DRIVER_X = ITEMS.register("rebirth_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"re_birth",Modded_item_core.BLANK_FORM ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"re_birth",REBIRTH_CORE,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().Override_belt_text("rebirth_driver_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AQUA_DRIVER = ITEMS.register("aqua_driver",

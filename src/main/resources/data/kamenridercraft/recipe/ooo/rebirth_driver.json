@@ -1,26 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "birth",
-  "pattern": [
-	"XX3",
-	"XC2",
-	"XX1"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:cellmedal"
-	}, "C": {
-	  "item": "kamenridercraft:birth_driver"
-	}, "1": {
-	  "item": "kamenridercraft:sasori_medal"
-	}, "2": {
-	  "item": "kamenridercraft:kani_medal"
-	}, "3": {
-	  "item": "kamenridercraft:ebi_medal"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "birth",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:cellmedal"
+		}, "C": {
+			"item": "kamenridercraft:rebirth_core"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:rebirth_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:rebirth_driver"
-  }
 }
