@@ -20,11 +20,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "zeztz_driver",
+			"anchor": "powered_up",
 			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_darkness_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkness_capsem_driver\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "With Zeztz Driver",
+			"name": "Powered Up",
 			"text": "Accessed with the $(l:zeztz/items/capsems#darkness_capsem)Darkness Capsem$(/l)"
 		},
 		{
