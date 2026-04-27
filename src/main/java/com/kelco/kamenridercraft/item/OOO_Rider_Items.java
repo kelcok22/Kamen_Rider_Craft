@@ -599,7 +599,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeSlot(2).hasFlyingWings( "ooo_super_tora.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_BATTA_MEDAL = ITEMS.register("super_batta_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_super_batta","ooo","ooodriver_belt",
@@ -662,7 +662,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 0.1);
 				}
-			}.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_ETERNITY_MEDAL = ITEMS.register("condor_eternity_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_condor_eternity","ooo","ooodriver_belt",
