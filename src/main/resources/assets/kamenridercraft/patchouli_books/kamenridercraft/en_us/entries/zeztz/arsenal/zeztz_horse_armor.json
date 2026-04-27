@@ -2,7 +2,7 @@
 	"name": "Zeztz Horse Armor",
 	"icon": "kamenridercraft:zeztz_horse_armor",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 11,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -14,6 +14,10 @@
 			"item": "kamenridercraft:zeztz_horse_armor",
 			"title": " ",
 			"text": "Obtained by opening $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ZoRsE!? :kelco_bucket:"
 		}
 	]
 }

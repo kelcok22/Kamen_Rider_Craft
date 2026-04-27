@@ -2,7 +2,7 @@
 	"name": "Metamateriam Belt",
 	"icon": "kamenridercraft:metamateriam_belt",
 	"category": "kamenridercraft:zeztz/devices",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

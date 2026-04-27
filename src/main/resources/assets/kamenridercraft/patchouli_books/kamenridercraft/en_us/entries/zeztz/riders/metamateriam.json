@@ -2,7 +2,7 @@
 	"name": "Metamateriam",
 	"icon": "kamenridercraft:projection_capsem",
 	"category": "kamenridercraft:zeztz/riders",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
       {
         "type": "patchouli:entity",

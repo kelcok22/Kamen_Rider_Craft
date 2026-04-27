@@ -1,0 +1,19 @@
+{
+	"name": "Zeztz Darkness Belt",
+	"icon": "kamenridercraft:zeztz_darkness_belt",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into the $(l:zeztz/riders/zeztz_darkness)Zeztz Darkness Nightmare"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeztz_darkness_belt",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

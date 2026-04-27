@@ -2,7 +2,7 @@
 	"name": "Breakam Breaker (Blade Mode)",
 	"icon": "kamenridercraft:breakam_breaker_blade",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 8,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

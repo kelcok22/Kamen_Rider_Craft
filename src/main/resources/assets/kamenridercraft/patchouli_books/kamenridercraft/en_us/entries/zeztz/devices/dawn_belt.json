@@ -1,0 +1,19 @@
+{
+	"name": "Punishmenter",
+	"icon": "kamenridercraft:dawn_belt",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/dawn)Kamen Rider Dawn"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dawn_belt",
+			"title": " ",
+			"text": "Obtained by right-clicking the $(l:zeztz/arsenal/breakam_dawn_taiken)Breakam Dawn (Taiken Mode)$(/l) without any foot armor"
+		}
+	]
+}

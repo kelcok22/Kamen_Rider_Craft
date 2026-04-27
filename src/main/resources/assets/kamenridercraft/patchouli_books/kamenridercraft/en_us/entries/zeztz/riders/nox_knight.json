@@ -2,7 +2,7 @@
 	"name": "Nox Knight",
 	"icon": "kamenridercraft:erase_capsem",
 	"category": "kamenridercraft:zeztz/riders",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:entity",

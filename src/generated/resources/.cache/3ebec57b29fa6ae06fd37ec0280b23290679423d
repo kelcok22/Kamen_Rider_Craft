@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-25T23:26:39.8788379	Item Models: kamenridercraft
+// 1.21.1	2026-04-27T01:26:08.4275444	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -157,6 +157,7 @@ d98587fd3d27a942cc5b2f6100b3d1a48b87d9bd assets/kamenridercraft/models/item/dand
 ca3d4ad27297f54c3cf488810aa1a52c33dff33b assets/kamenridercraft/models/item/dangerous_zombie_gashat_lazer.json
 e04b1507db659e1de377184dede795670d27afc2 assets/kamenridercraft/models/item/dango.json
 bee274a3b67d96fb929fcb52af7fbb444b43131e assets/kamenridercraft/models/item/dan_o_belt.json
+a07d1332e62ae7481bcf359200bc837892684e5a assets/kamenridercraft/models/item/darkness_capsem.json
 60e221263b134875ff9d9cab18255f3a307dba4f assets/kamenridercraft/models/item/dark_ether_chemy_card.json
 0a41244f96df5a8fbd0833787ec66b2c1cd202b5 assets/kamenridercraft/models/item/dawn_belt.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_drive_mach.json
@@ -774,6 +775,7 @@ a37bd41b96bbf1ed4d027b316660c5d2fdd44ab4 assets/kamenridercraft/models/item/zero
 a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero_one_ride_chemy_card.json
 8c06f9a4950fcf3b5debf633a419756f26a38e6a assets/kamenridercraft/models/item/zero_two_ride_chemy_card.json
 526b224ae6019c9cd80b7afcec573d9b389c8ee3 assets/kamenridercraft/models/item/zeztz_and_code_zeroider_capsem.json
+3ed954f18f84603a6db0f3d7dcd4983ecfbaf2f3 assets/kamenridercraft/models/item/zeztz_darkness_belt.json
 23ed1a4a44583566ec5c1081af648359e8d030f5 assets/kamenridercraft/models/item/zeztz_driver.json
 d266db5f7b7cbc0f602fcaa71c10be3800463ab9 assets/kamenridercraft/models/item/zeztz_gochizo.json
 59d6af98d1118a96e4f72f598f60281b358b8ea9 assets/kamenridercraft/models/item/zeztz_head.json

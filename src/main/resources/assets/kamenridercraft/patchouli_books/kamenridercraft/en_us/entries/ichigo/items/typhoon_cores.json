@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_core_sango",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)"
+			"text": "Found inside the $(l:misc/city/city_centers#shocker_base)Shocker Base$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:typhoon_core_yongo",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_riders)Shocker Rider$(/l)$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
+			"text": "Found inside the $(l:misc/city/city_centers#shocker_base)Shocker Base$(/l)$(br2)Drops from:$(li)$(l:faiz/mobs/faiz)Kamen Rider Faiz$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Lord Six",
 	"icon": "kamenridercraft:panic_capsem",
 	"category": "kamenridercraft:zeztz/riders",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:entity",

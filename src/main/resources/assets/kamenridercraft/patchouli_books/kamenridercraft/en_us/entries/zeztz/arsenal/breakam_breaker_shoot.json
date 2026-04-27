@@ -2,7 +2,7 @@
 	"name": "Breakam Breaker (Shoot Mode)",
 	"icon": "kamenridercraft:breakam_breaker_shoot",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 10,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

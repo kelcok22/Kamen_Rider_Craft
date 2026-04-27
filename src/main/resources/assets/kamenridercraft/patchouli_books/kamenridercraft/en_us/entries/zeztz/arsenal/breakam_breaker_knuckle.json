@@ -2,7 +2,7 @@
 	"name": "Breakam Breaker (Knuckle Mode)",
 	"icon": "kamenridercraft:breakam_breaker_knuckle",
 	"category": "kamenridercraft:zeztz/arsenal",
-	"sortnum": 9,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",
