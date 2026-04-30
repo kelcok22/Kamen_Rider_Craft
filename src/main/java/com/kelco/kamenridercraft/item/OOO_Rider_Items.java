@@ -1061,7 +1061,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeModel("birth.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_BIRTH_CORE = ITEMS.register("proto_birth_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","birth_prototype","birth_driver_belt",
@@ -1073,7 +1073,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
-			}.AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeModel("birth.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> REBIRTH_CORE = ITEMS.register("rebirth_core",
@@ -1101,7 +1101,7 @@ public class OOO_Rider_Items {
 				}
 			}
 					.addSwitchForm(OOO_Rider_Items.BIRTH_CORE.get())
-					.IsGlowing().AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
+                    .ChangeModel("birth.geo.json").IsGlowing().AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CORE_BREAST_CANNON = ITEMS.register("birth_core_breast_cannon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","",
