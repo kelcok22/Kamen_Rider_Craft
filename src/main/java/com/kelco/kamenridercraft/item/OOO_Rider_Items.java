@@ -662,7 +662,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 0.1);
 				}
-			}.ChangeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeSlot(2).HasCape().hasFlyingWings( "ooo_kujaku.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_ETERNITY_MEDAL = ITEMS.register("condor_eternity_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_condor_eternity","ooo","ooodriver_belt",
