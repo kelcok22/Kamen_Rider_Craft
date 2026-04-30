@@ -712,7 +712,7 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.ChangeSlot(2).AddCompatibilityList(new String[] {"ooo_ancient"}).AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeSlot(2).HasCape().AddCompatibilityList(new String[] {"ooo_ancient"}).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANCIENT_BATTA_MEDAL = ITEMS.register("ancient_batta_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_batta","ooo","ooodriver_belt",
@@ -728,7 +728,7 @@ public class OOO_Rider_Items {
 
 
 	public static final DeferredItem<Item> MUKADE_GODA_MEDAL = ITEMS.register("mukade_goda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_mukade","goda","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_mukade","goda","goda_driver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)){
@@ -745,7 +745,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> HACHI_GODA_MEDAL = ITEMS.register("hachi_goda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_hachi","goda","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_hachi","goda","goda_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)){
@@ -758,10 +758,10 @@ public class OOO_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.ChangeSlot(2).ChangeModel("ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARI_GODA_MEDAL = ITEMS.register("ari_goda_medal",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_ari","goda","ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_ari","goda","goda_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)){
@@ -1144,7 +1144,7 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> GREEED_ABSORPTION_CORE = ITEMS.register("greeed_absorption_core",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_tora_greeed_absorption","ooo_ancient","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.ChangeSlot(2).ChangeModel("ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> AQUA_CORE = ITEMS.register("aqua_core",
