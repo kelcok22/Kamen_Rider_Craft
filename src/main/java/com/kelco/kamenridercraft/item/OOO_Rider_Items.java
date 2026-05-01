@@ -986,7 +986,7 @@ public class OOO_Rider_Items {
 			}.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> SHOCKER_MEDAL = ITEMS.register("shocker_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),"_shocker","ooo","shocker_ooodriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_shocker","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)) {
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
