@@ -2,6 +2,7 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"default.pose": {
+			"loop": true,
 			"animation_length": 3,
 			"bones": {
 				"body": {

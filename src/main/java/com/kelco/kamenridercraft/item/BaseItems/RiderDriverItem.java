@@ -314,7 +314,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 this.riderOldZ = livingEntity.getBlockZ();
             }
             if (entity instanceof Player player && player.getAttribute(AttributeGenerator.POSING).getValue() == 1) {
-                if (this.riderOldX != player.getBlockX() || this.riderOldZ != player.getBlockZ() || player.isCrouching() || player.isSleeping() || player.isSwimming() || player.isPassenger() || player.isFallFlying()) {
+                if (player.invulnerableTime > 0 ||this.riderOldX != player.getBlockX() || this.riderOldZ != player.getBlockZ() || player.isCrouching() || player.isSleeping() || player.isSwimming() || player.isPassenger() || player.isFallFlying()) {
                     player.getAttribute(AttributeGenerator.POSING).setBaseValue(0);
                     ServerPayloadHandler.stopPosing(player);
                 }

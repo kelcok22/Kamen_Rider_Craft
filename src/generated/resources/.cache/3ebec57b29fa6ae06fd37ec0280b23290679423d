@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-27T01:26:08.4275444	Item Models: kamenridercraft
+// 1.21.1	2026-05-01T12:43:00.7414667	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -208,6 +208,7 @@ d198a9fb1c4edd8ffbdb6d721a1fe1fd02e56bea assets/kamenridercraft/models/item/eldr
 d7980eee4186c04607c7bbedf7c44cfb15d059bd assets/kamenridercraft/models/item/eternal_ride_chemy_card.json
 b1f2db05f3dde80bb56b7108e7ce45b34f9c9e58 assets/kamenridercraft/models/item/evol_trigger_kaijin.json
 3857ec454154ff3b1f3ec7679ff3d4e532259d1b assets/kamenridercraft/models/item/evol_x_full_bottle.json
+59c1ca0b3493b1fe88211eed23baf15f01ba4f70 assets/kamenridercraft/models/item/exdreamrise_capsem.json
 87cd3c4f65090b1679873d35aa4c78c9d99187fc assets/kamenridercraft/models/item/extra_capsem.json
 793ee052b2e77a04f05fcc13f66d0563398573eb assets/kamenridercraft/models/item/ex_aid_capsem.json
 26658d18be3506f769879eb838bc3370a2f7472b assets/kamenridercraft/models/item/ex_aid_full_bottle.json

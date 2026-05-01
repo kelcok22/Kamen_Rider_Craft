@@ -19,8 +19,9 @@ public class ComplexFormCheck {
             case "shika_medal gazelle_medal ushi_medal" -> "shigazeshi";
             case "ebi_medal kani_medal sasori_medal" -> "bikaso";
             case "same_medal kujira_medal ookamiuo_medal" -> "saramiuo";
-            case "love_core_medal love_core2_medal love_core_3_medal" -> "renai";
+            case "love_core_medal love_core2_medal love_core3_medal" -> "renai";
             case "taka_medal imagin_medal shocker_medal" -> "tamashii";
+            case "habataki_medal taiga_medal ichigo_medal" -> "legend";
             default -> "";
         };
     }
