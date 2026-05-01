@@ -88,7 +88,7 @@ public class OOODriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-        if(riderName=="goda") return "blank";
+        if(riderName!="ooo") return "blank";
         if (num ==1)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,1).getFormName(false);
         else  if (num ==2)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,2).getFormName(false);
         if (num ==3)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,3).getFormName(false);
