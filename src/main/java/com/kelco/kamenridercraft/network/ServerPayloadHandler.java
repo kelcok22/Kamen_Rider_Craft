@@ -102,6 +102,9 @@ public class ServerPayloadHandler {
                 RiderFormChangeItem formChangeItemTwo = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 2);
                 RiderFormChangeItem formChangeItemThree = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 3);
                 String comboName = ComplexFormCheck.oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
+                if (comboName.equals("tajadol_eternity")) {
+                    comboName = "tajadol";
+                }
                 if (!comboName.isEmpty()) {
                     animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + comboName + ".pose"));
                 }

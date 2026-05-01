@@ -166,6 +166,34 @@
 					"position": [-1.95589, -0.17543, -4.01792]
 				}
 			}
+		},
+		"agito.iconga_no_akai_agito.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-2.5, 10, 0],
+					"position": [-0.00379, -0.49952, -0.02148]
+				},
+				"torso": {
+					"rotation": [-2.5, 0, 0],
+					"position": [0, -0.04362, 0.99905]
+				},
+				"left_leg": {
+					"rotation": [-7.5, -15, 0]
+				},
+				"right_leg": {
+					"rotation": [25.2467, 9.2186, 9.834]
+				},
+				"head": {
+					"rotation": [-5, 37.5, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 7.5, 7.5]
+				},
+				"left_arm": {
+					"rotation": [1.6575, -12.3914, -7.6799]
+				}
+			}
 		}
 	}
 }

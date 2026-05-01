@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"shocker_ooo.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [32.9247, -61.4845, -19.6118],
+					"position": [0, -6, 2]
+				},
+				"torso": {
+					"rotation": [0, 7.5, 2.5]
+				},
+				"left_leg": {
+					"rotation": [52.5, 0, 0],
+					"position": [1.6856, -0.53635, -2.42303]
+				},
+				"right_leg": {
+					"rotation": [7.4948, 30.2122, 35.7162],
+					"position": [0.65898, 4.49321, -3.52354]
+				},
+				"head": {
+					"rotation": [-26.8451, 63.1765, -24.2372]
+				},
+				"right_arm": {
+					"rotation": [-49.6704, 33.9379, 53.366],
+					"position": [-0.4497, -0.16816, 0.87721]
+				},
+				"left_arm": {
+					"rotation": [-67.0784, 52.2801, 37.9552],
+					"position": [0.67467, -1.24347, -1.73165]
+				}
+			}
+		}
+	}
+}
