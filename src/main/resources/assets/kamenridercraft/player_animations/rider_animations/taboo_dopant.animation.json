@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"taboo_dopant.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-10, 15, 0]
+				},
+				"head": {
+					"rotation": [13.8588, -13.9931, -3.8944]
+				},
+				"right_arm": {
+					"rotation": [-20.0568, 37.8936, 20.1349]
+				},
+				"left_arm": {
+					"rotation": [-110.7036, 25.6859, -3.7534],
+					"position": [1, -2, 0]
+				}
+			}
+		}
+	}
+}

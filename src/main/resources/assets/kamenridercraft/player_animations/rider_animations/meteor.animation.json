@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"meteor.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-7.5, -47.5, 0]
+				},
+				"torso": {
+					"rotation": [-2.4905, 0.2178, 4.9952]
+				},
+				"left_leg": {
+					"rotation": [40.2531, -19.5899, -15.8477]
+				},
+				"right_leg": {
+					"rotation": [0, 15, 0]
+				},
+				"head": {
+					"rotation": [9.972, 45.3541, 3.511],
+					"position": [0, 0, -1]
+				},
+				"right_arm": {
+					"rotation": [19.3657, 23.6948, 26.9174]
+				},
+				"left_arm": {
+					"rotation": [-29.1475, 7.4355, -66.9357]
+				}
+			}
+		}
+	}
+}

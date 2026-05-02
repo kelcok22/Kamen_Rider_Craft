@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nadeshiko.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 10],
+					"position": [0, -1.5, 0]
+				},
+				"torso": {
+					"rotation": [-7.5, 7.5, 0],
+					"position": [0, 0, 2]
+				},
+				"left_leg": {
+					"rotation": [8.4591, 29.3063, -22.7675]
+				},
+				"right_leg": {
+					"rotation": [-7.5, 5, 0]
+				},
+				"head": {
+					"rotation": [0, 0, -10],
+					"position": [0, 0, 1]
+				},
+				"right_arm": {
+					"rotation": [-123.172, -60.4824, -45.9404],
+					"position": [-2, -2, 0]
+				},
+				"left_arm": {
+					"rotation": [0, -22.5, -25]
+				}
+			}
+		}
+	}
+}
