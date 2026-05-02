@@ -2420,7 +2420,7 @@
 "kamenridercraft:agito_trinity.form": "フォーム: トリニティフォーム",
 "kamenridercraft:agito_burning.form": "フォーム: バーニングフォーム",
 "kamenridercraft:agito_shining.form": "フォーム: シャイニングフォーム",
-"kamenridercraft:iconga_no_akai_agito": "フォーム: イコンガの赤いアギト",
+"kamenridercraft:iconga_no_akai_agito.form": "フォーム: イコンガの赤いアギト",
 
 "kamenridercraft:gills.form": "フォーム: 基本フォーム",
 "kamenridercraft:exceed_gills.form": "フォーム: エクシード",
@@ -3982,6 +3982,8 @@
 "kamenridercraft.name.muchiri_complete": "怪人: ムチリ",
 "item.kamenridercraft.greeed_blet_kyoryu": "グリードベルト",
 "kamenridercraft.name.kyoryu_complete": "怪人: 恐竜グリード",
+"item.kamenridercraft.greeed_blet_shocker": "ショッカーグリードベルト",
+"kamenridercraft.name.shocker_complete": "怪人: ショッカーグリード",
 
 "item.kamenridercraft.medajalibur": "メダジャリバー",
 "item.kamenridercraft.tajaspinner": "タジャスピナー",
@@ -9021,6 +9023,7 @@
 "entity.kamenridercraft.gamel_mob": "ガメル",
 "entity.kamenridercraft.kyoryu_greeed_mob": "恐竜グリード",
 "entity.kamenridercraft.muchiri_mob": "ムチリ",
+"entity.kamenridercraft.shocker_greeed_mob": "ショッカーグリード",
 "entity.kamenridercraft.poseidon": "仮面ライダーポセイドン",
 "entity.kamenridercraft.core": "仮面ライダーコア",
 "entity.kamenridercraft.powered_up_core": "仮面ライダーコア（強化形態）",
@@ -9318,6 +9321,7 @@
 "item.kamenridercraft.gamel_spawn_egg": "ガメルスポーンエッグ",
 "item.kamenridercraft.kyoryu_greeed_spawn_egg": "恐竜グリードスポーンエッグ",
 "item.kamenridercraft.muchiri_spawn_egg": "ムチリスポーンエッグ",
+"item.kamenridercraft.shocker_greeed_spawn_egg": "ショッカーグリードスポーンエッグ",
 "item.kamenridercraft.poseidon_spawn_egg": "仮面ライダーポセイドンスポーンエッグ",
 "item.kamenridercraft.core_spawn_egg": "仮面ライダーコアスポーンエッグ",
 "item.kamenridercraft.powered_up_core_spawn_egg": "仮面ライダーコア（強化形態）スポーンエッグ",

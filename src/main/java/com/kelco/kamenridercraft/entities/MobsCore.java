@@ -468,6 +468,11 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> MUCHIRI_SPAWN_EGG = ITEMS.register("muchiri_spawn_egg",
                    () -> new DeferredSpawnEggItem(MUCHIRI, 0x000000, 0xFF9E00, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<ShockerGreeedEntity>> SHOCKER_GREEED = MOBLIST.register("shocker_greeed_mob",
+            () -> EntityType.Builder.of(ShockerGreeedEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shocker_greeed_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> SHOCKER_GREEED_SPAWN_EGG = ITEMS.register("shocker_greeed_spawn_egg",
+            () -> new DeferredSpawnEggItem(SHOCKER_GREEED, 0x675B2B, 0xCFA718, new Item.Properties()));
 
           public static final DeferredHolder<EntityType<?>, EntityType<PoseidonEntity>> POSEIDON = MOBLIST.register("poseidon",
                   () -> EntityType.Builder.of(PoseidonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":poseidon"));

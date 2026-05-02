@@ -324,6 +324,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.ANKH_LOST.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANKH.get(), AnkhRenderer::new);
             event.registerEntityRenderer(MobsCore.KYORYU_GREEED.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SHOCKER_GREEED.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POSEIDON.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CORE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POWERED_UP_CORE.get(), BasicEntityRenderer::new);

@@ -1362,6 +1362,10 @@ public class OOO_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyoryu_complete",PTERA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(TRICERA_MEDAL,TYRANNO_MEDAL).Override_belt_text("kyoryu_belt").ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
+    public static final DeferredItem<Item> GREEED_BLET_SHOCKER = ITEMS.register("greeed_blet_shocker",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_complete",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
+                    .Dont_show_belt_form_info().Add_Extra_Base_Form_Items(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).Override_belt_text("shocker_greeed_belt").ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
+
 	public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(CELL_MEDAL.get()));
 

@@ -825,81 +825,82 @@
 			"type": "patchouli:text",
 			"anchor": "shocker_medal",
 			"title": "Shocker Core Medal",
-			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Shocker$(/l) forms$(br2)Can be used as a leg medal by sneaking"
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l) and OOOOOO's $(l:ooo/devices/ooo_driver#oooooodriver)Six Group OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Shocker$(/l) forms$(br2)Can be used as a leg medal by sneaking"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ooo/shocker_medal"
+			"recipe": "kamenridercraft:ooo/shocker_medal",
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "gel_shocker_medal",
 			"title": "Gel Shocker Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l) and OOOOOO's $(l:ooo/devices/ooo_driver#oooooodriver)Six Group OOO Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:gel_shocker_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "destron_medal",
 			"title": "Destron Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l) and OOOOOO's $(l:ooo/devices/ooo_driver#oooooodriver)Six Group OOO Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:destron_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "god_medal",
 			"title": "G.O.D. Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft OOOOOO's $(l:ooo/devices/ooo_driver#oooooodriver)Six Group OOO Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:god_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "garanda_medal",
 			"title": "Garanda Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft OOOOOO's $(l:ooo/devices/ooo_driver#oooooodriver)Six Group OOO Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:garanda_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "delza_medal",
 			"title": "Delza Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft OOOOOO's $(l:ooo/devices/ooo_driver#oooooodriver)Six Group OOO Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:delza_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "neo_shocker medal",
+			"anchor": "neo_shocker_medal",
 			"title": "Neo Shocker Core Medal",
 			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
 		},
@@ -908,11 +909,11 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:neo_shocker_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "jin_dogma medal",
+			"anchor": "jin_dogma_medal",
 			"title": "Jin Dogma Core Medal",
 			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
 		},
@@ -921,11 +922,11 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jin_dogma_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "badan medal",
+			"anchor": "badan_medal",
 			"title": "Badan Core Medal",
 			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
 		},
@@ -934,7 +935,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:badan_medal",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:ooo/mobs/shocker_greeed_mob)Shocker Greeed$(/l)"
 		}
 	]
 }

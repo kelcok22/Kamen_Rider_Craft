@@ -2421,7 +2421,7 @@
 "kamenridercraft:agito_trinity.form": "Form: Trinity Form",
 "kamenridercraft:agito_burning.form": "Form: Burning Form",
 "kamenridercraft:agito_shining.form": "Form: Shining Form",
-"kamenridercraft:iconga_no_akai_agito": "Form: Iconga no Akai Agito",
+"kamenridercraft:iconga_no_akai_agito.form": "Form: Iconga no Akai Agito",
 
 "kamenridercraft:gills.form": "Form: Base Form",
 "kamenridercraft:exceed_gills.form": "Form: Exceed Form",
@@ -3988,6 +3988,8 @@
 "kamenridercraft.name.muchiri_complete": "Kaijin: Muchiri",
 "item.kamenridercraft.greeed_blet_kyoryu": "Greeed Belt",
 "kamenridercraft.name.kyoryu_complete": "Kaijin: Kyoryu Greeed",
+"item.kamenridercraft.greeed_blet_shocker": "Shocker Greeed Belt",
+"kamenridercraft.name.shocker_complete": "Kaijin: Shocker Greeed",
 
 "item.kamenridercraft.medajalibur": "Medajalibur",
 "item.kamenridercraft.tajaspinner": "Tajaspinner",
@@ -9027,6 +9029,7 @@
 "entity.kamenridercraft.gamel_mob": "Gamel",
 "entity.kamenridercraft.kyoryu_greeed_mob": "Kyoryu Greeed",
 "entity.kamenridercraft.muchiri_mob": "Muchiri",
+"entity.kamenridercraft.shocker_greeed_mob": "Shocker Greeed",
 "entity.kamenridercraft.poseidon": "Poseidon",
 "entity.kamenridercraft.core": "Kamen Rider Core",
 "entity.kamenridercraft.powered_up_core": "Powered Up Kamen Rider Core",
@@ -9324,6 +9327,7 @@
 "item.kamenridercraft.gamel_spawn_egg": "Gamel Spawn Egg",
 "item.kamenridercraft.kyoryu_greeed_spawn_egg": "Kyoryu Greeed Spawn Egg",
 "item.kamenridercraft.muchiri_spawn_egg": "Muchiri Spawn Egg",
+"item.kamenridercraft.shocker_greeed_spawn_egg": "Shocker Greeed Spawn Egg",
 "item.kamenridercraft.poseidon_spawn_egg": "Kamen Rider Poseidon Spawn Egg",
 "item.kamenridercraft.core_spawn_egg": "Kamen Rider Core Spawn Egg",
 "item.kamenridercraft.powered_up_core_spawn_egg": "Powered Up Core Spawn Egg",
