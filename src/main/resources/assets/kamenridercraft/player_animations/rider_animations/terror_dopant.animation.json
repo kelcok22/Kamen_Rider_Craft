@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"terror_dopant.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-10, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"left_leg": {
+					"rotation": [5.4161, -16.6657, -18.2939]
+				},
+				"right_leg": {
+					"rotation": [5.4161, 16.6657, 18.2939]
+				},
+				"head": {
+					"rotation": [12.5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [19.2557, 28.2682, 83.7014],
+					"position": [-1, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [19.2557, -28.2682, -83.7014],
+					"position": [1, 0, 0]
+				}
+			}
+		}
+	}
+}

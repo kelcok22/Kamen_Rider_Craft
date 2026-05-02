@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"eternal.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, -22.5, 0],
+					"position": [0, -0.25, 0]
+				},
+				"left_leg": {
+					"rotation": [5, -22.5, 0]
+				},
+				"right_leg": {
+					"rotation": [-6.8114, 15.6376, 2.5517]
+				},
+				"head": {
+					"rotation": [5, 20, 0]
+				},
+				"right_arm": {
+					"rotation": [-101.7376, -39.9541, -2.0962],
+					"position": [0, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-57.5794, 53.7902, 14.453]
+				}
+			}
+		}
+	}
+}

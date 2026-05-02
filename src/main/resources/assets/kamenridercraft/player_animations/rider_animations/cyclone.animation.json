@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"cyclone.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, -57.5, 0]
+				},
+				"torso": {
+					"rotation": [0, 5, 2.5]
+				},
+				"left_leg": {
+					"rotation": [0, -7.5, 0]
+				},
+				"right_leg": {
+					"rotation": [6.4801, 52.2168, 8.1783]
+				},
+				"head": {
+					"rotation": [0.8079, 48.9736, -15.3399]
+				},
+				"right_arm": {
+					"rotation": [-97.285, 38.8447, 21.1399],
+					"position": [0, -1, 1]
+				},
+				"left_arm": {
+					"rotation": [-10, -25, 0],
+					"position": [0, 0, 1]
+				}
+			}
+		}
+	}
+}

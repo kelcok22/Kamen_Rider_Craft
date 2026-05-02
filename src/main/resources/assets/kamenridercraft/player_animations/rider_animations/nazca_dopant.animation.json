@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nasca_dopant.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-2.5, 17.5, 0],
+					"position": [0, -0.25, 0]
+				},
+				"torso": {
+					"rotation": [2.5, 0, -2.5],
+					"position": [0.25, 0, -0.5]
+				},
+				"left_leg": {
+					"rotation": [0, -27.5, 0]
+				},
+				"right_leg": {
+					"rotation": [10, 5, 0]
+				},
+				"head": {
+					"rotation": [5, -17.5, 0]
+				},
+				"right_arm": {
+					"rotation": [0.9845, 7.4355, 7.5639]
+				},
+				"right_item": {
+					"rotation": [87.5, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [2.664, -14.7669, -10.3454]
+				}
+			}
+		},
+		"nazca_dopant.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-2.5, 17.5, 0],
+					"position": [0, -0.25, 0]
+				},
+				"torso": {
+					"rotation": [2.5, 0, -2.5],
+					"position": [0.25, 0, -0.5]
+				},
+				"left_leg": {
+					"rotation": [0, -27.5, 0]
+				},
+				"right_leg": {
+					"rotation": [10, 5, 0]
+				},
+				"head": {
+					"rotation": [5, -17.5, 0]
+				},
+				"right_arm": {
+					"rotation": [0.9845, 7.4355, 7.5639]
+				},
+				"right_item": {
+					"rotation": [87.5, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [2.664, -14.7669, -10.3454]
+				}
+			}
+		}
+	}
+}
