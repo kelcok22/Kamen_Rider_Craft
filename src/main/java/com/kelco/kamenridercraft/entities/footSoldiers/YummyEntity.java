@@ -3,6 +3,9 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 import com.kelco.kamenridercraft.entities.MobsCore;
 
 import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -24,7 +27,7 @@ public class YummyEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-
+            ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
 
 			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
 				if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA))boss = MobsCore.KAZARI.get().create(this.level());
@@ -36,6 +39,7 @@ public class YummyEntity extends BaseHenchmenEntity {
 				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS))boss = MobsCore.GAMEL.get().create(this.level());
 				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER))boss = MobsCore.MUCHIRI.get().create(this.level());
                 else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_END))boss = MobsCore.KYORYU_GREEED.get().create(this.level());
+                else if (this.level().dimension() == SANDS_OF_TIME)boss = MobsCore.SHOCKER_GREEED.get().create(this.level());
 				else {
 				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
