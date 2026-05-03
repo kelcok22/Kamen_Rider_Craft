@@ -82,6 +82,10 @@ public class Modded_item_core {
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
                     .has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> MY_TH_HEAD = ITEMS.register("my_th_head",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(Effect_core.CLIMBING, 500, 2555), 1.0F).build()))
+                    .has_basic_model().AddToList(RiderTabs.MY_TH_TAB_ITEM));
+
 
     public static final DeferredItem<Item>  CANDY_WRAPPER = ITEMS.register("candy_wrapper",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));

@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-01T12:43:00.7414667	Item Models: kamenridercraft
+// 1.21.1	2026-05-02T18:25:11.6309168	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -330,6 +330,7 @@ e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/gran
 7608288f708c160f223651069e7a3fe0483eedd5 assets/kamenridercraft/models/item/gravity_capsem.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
 922c1b4222deb2d2689c79f5c70c8bcdbbc7c477 assets/kamenridercraft/models/item/greeed_blet_kyoryu.json
+060ddd5f0fb8aec5265a65075d7cc49fb55eaaa6 assets/kamenridercraft/models/item/greeed_blet_shocker.json
 68a5c05aa01c0cd00ba0b6868e6f336cede6703c assets/kamenridercraft/models/item/gumgumgum_gochizo.json
 f12bebc3301a4c0a46ae0de7f98539f1d86382cf assets/kamenridercraft/models/item/gun_capsem.json
 9215724e6d600d6a36ad5245a4201c90bc5e8ef1 assets/kamenridercraft/models/item/gurucan_gochizo_matcha_milk.json
@@ -478,6 +479,7 @@ d371dec71f0b9becddd5b2e655dab2834e8b9b49 assets/kamenridercraft/models/item/mofu
 c43bc189ed2beb3db73b9ab5bd9ecf79cd604c2d assets/kamenridercraft/models/item/moonlightcookie_gochizo.json
 be7b63aa196fd83c84f9c65180fe50401dbe4669 assets/kamenridercraft/models/item/moose_fangire.json
 7954a579377eefc2a29ccb3370bee8f86f00fc24 assets/kamenridercraft/models/item/morinagaramune_gochizo.json
+cca1453fb32a74f4644c9a51ddd42633a087d025 assets/kamenridercraft/models/item/my_th_head.json
 2c7f94027fb541a477a3ef54b9d84ee53dac64a0 assets/kamenridercraft/models/item/nammonite_ride_chemy_card.json
 744fc6ff3cbf4a3dbe17f0ee58d069410fccd57f assets/kamenridercraft/models/item/nasty_vent.json
 7d68d762de43d926ba7ffdd02068411e75d9cefd assets/kamenridercraft/models/item/natto_umaibo_gochizo.json

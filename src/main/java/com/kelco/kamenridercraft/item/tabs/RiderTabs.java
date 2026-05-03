@@ -201,6 +201,10 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_zeztz_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.zeztz_items")).build());
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> My_thTab = CREATIVE_MODE_TABS.register("krc_480_my_th_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.MY_TH_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
+                    .title(Component.translatable("tab.kamenridercraft.my_th_items")).build());
+
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GTab = CREATIVE_MODE_TABS.register("krc_800_g_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.GHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_g_items.png"))
@@ -266,6 +270,7 @@ public class RiderTabs {
     public static List<Item> GOTCHARD_TAB_ITEM= new ArrayList<>();
     public static List<Item> GAVV_TAB_ITEM= new ArrayList<>();
     public static List<Item> ZEZTZ_TAB_ITEM= new ArrayList<>();
+    public static List<Item> MY_TH_TAB_ITEM= new ArrayList<>();
 
     public static List<Item> G_TAB_ITEM= new ArrayList<>();
     public static List<Item> GORIDER_TAB_ITEM= new ArrayList<>();
@@ -526,6 +531,12 @@ public class RiderTabs {
             for (int i = 0; i < RiderTabs.ZEZTZ_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.ZEZTZ_TAB_ITEM.get(i));
+            }
+
+        }else if(event.getTab() == RiderTabs.My_thTab.get()) {
+            for (int i = 0; i < RiderTabs.MY_TH_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.MY_TH_TAB_ITEM.get(i));
             }
 
         }else if(event.getTab() == RiderTabs.AMAZONSTab.get()) {
