@@ -400,6 +400,8 @@
 "effect.kamenridercraft.group_mending":"周り修繕",
 "effect.kamenridercraft.sd":"SD",
 "effect.kamenridercraft.rider_kick":"ライダーキック",
+"effect.kamenridercraft.rider_kick":"ライダーキック",
+"effect.kamenridercraft.climbing":"登",
 
 "effect.kamenridercraft.boost.desc": "スニークをする時、地面から進める",
 "effect.kamenridercraft.boost.description": "スニークをする時、地面から進める",
@@ -539,6 +541,8 @@
 "effect.kamenridercraft.sd.description":"プレイヤーの頭部を大きくなる",
 "effect.kamenridercraft.rider_kick.desc":"プレイヤーがライダーキックを行う",
 "effect.kamenridercraft.rider_kick.description":"プレイヤーがライダーキックを行う",
+"effect.kamenridercraft.climbing.desc":"ブロックの横面を登ることが出来る、はしごのように",
+"effect.kamenridercraft.climbing.description":"ブロックの横面を登ることが出来る、はしごのように",
 
 "happy_mode.kamenridercraft.sleep":"Mobは寝てる",
 "happy_mode.kamenridercraft.cheese_man":"§a君はチーズマンと友達が出来た！",
@@ -2030,7 +2034,7 @@
 "item.kamenridercraft.gaia_belt": "ガイアタイフーン",
 "kamenridercraft.name.gaia": "ライダー: 仮面ライダーガイア",
 "item.kamenridercraft.shocker_belt": "ショッカーベルト",
-"kamenridercraft.name.shocker_combatman": "手先",
+"kamenridercraft.name.shocker_combatman": "手先: ショッカー戦闘員",
 "item.kamenridercraft.cyborg_super_energy_converter": "ウィルベルウィンド",
 "kamenridercraft.name.eins": "ライダー: 仮面ライダーアインズ",
 

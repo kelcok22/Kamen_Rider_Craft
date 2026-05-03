@@ -16,6 +16,20 @@
 			"type": "patchouli:text",
 			"title": "Shocker Combatman",
 			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Transforms with the $(l:ichigo/devices/shocker_belt)Shocker Belt$(/l)$(br2)Status Effects:$(li)Strength II"
-		}
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "chinese_grasshopper_man",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shocker_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:grasshopper_man_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Chinese Grasshopper Man",
+        "text": "Accessed with the $(l:ichigo/items/typhoon_cores#typhoon_core)Typhoon Core$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Chinese Grasshopper Man",
+        "text": "Appears in:$(li)Kamen Rider: Sakusen File 1 (1997, video game)$(br2)Transforms with the $(l:ichigo/devices/shocker_belt)Shocker Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+      }
 	]
 }

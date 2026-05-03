@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "typhoon_core",
-			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used to craft Ichigo's $(l:ichigo/devices/typhoon#typhoon_ichigo)Typhoon$(/l)$(br2)Used to access Ichigo's $(l:ichigo/riders/ichigo#new_ichigo)New Ichigo$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used to craft Ichigo's $(l:ichigo/devices/typhoon#typhoon_ichigo)Typhoon$(/l)$(br2)Used to access Ichigo's $(l:ichigo/riders/ichigo#new_ichigo)New Ichigo$(/l) form and Shocker Combatman's $(l:ichigo/riders/shocker_combatman#chinese_grasshopper_man)Chinese Grasshopper Man$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

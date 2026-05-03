@@ -400,6 +400,7 @@
 "effect.kamenridercraft.group_mending":"Group Mending",
 "effect.kamenridercraft.sd":"SD",
 "effect.kamenridercraft.rider_kick":"Rider Kick",
+"effect.kamenridercraft.climbing":"Climbing",
 
 "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
 "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",
@@ -539,6 +540,8 @@
 "effect.kamenridercraft.sd.description":"Causes your head to grow in size",
 "effect.kamenridercraft.rider_kick.desc":"Causes you to Rider Kick",
 "effect.kamenridercraft.rider_kick.description":"Causes you to Rider Kick",
+"effect.kamenridercraft.climbing.desc":"Allows you to climb up block faces like a ladder",
+"effect.kamenridercraft.climbing.description":"Allows you to climb up block faces like a ladder",
 
 "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 "happy_mode.kamenridercraft.cheese_man":"§aYou've made friends with the Cheese Man!",
@@ -2030,7 +2033,7 @@
 "item.kamenridercraft.gaia_belt": "Gaia Typhoon",
 "kamenridercraft.name.gaia": "Rider: Kamen Rider Gaia",
 "item.kamenridercraft.shocker_belt": "Shocker Belt",
-"kamenridercraft.name.shocker_combatman": "Henchman",
+"kamenridercraft.name.shocker_combatman": "Henchman: Shocker Combatman",
 "item.kamenridercraft.cyborg_super_energy_converter": "Wirbelwind",
 "kamenridercraft.name.eins": "Rider: Kamen Rider Eins",
 
