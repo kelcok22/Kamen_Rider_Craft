@@ -31,6 +31,19 @@ public class IchigoRiderItems {
     public static final DeferredItem<Item> KAMEN_RIDER_LOGO = ITEMS.register("kamen_rider_logo",
             () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ichigo")), new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
+    public static final DeferredItem<Item> GRASSHOPPER_MAN_CORE = ITEMS.register("grasshopper_man_core",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_chinese_grasshopper_man", "shocker_combatman", "shocker_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().IsGlowing().has_basic_model().model_has_different_name("typhoon_core"));
+
     public static final DeferredItem<Item> TYPHOON_CORE = ITEMS.register("typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ichigo","typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
@@ -42,7 +55,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().allowRiderKick().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.addAlternative(GRASSHOPPER_MAN_CORE.get()).hasSD().allowRiderKick().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nigo","typhoon_belt",
@@ -317,7 +330,7 @@ public class IchigoRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eins",CYBORG_SUPER_ENERGY_CONVERTER_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOCKER_BELT = ITEMS.register("shocker_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().Dont_show_belt_form_info().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).HasAnSDForm().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_MANGA = ITEMS.register("ichigo_manga",
             () -> new RiderFormChangeItem(new Item.Properties(),"_manga","ichigo","typhoon_belt",

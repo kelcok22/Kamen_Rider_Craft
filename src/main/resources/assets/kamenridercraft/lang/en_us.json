@@ -1915,6 +1915,7 @@
 "item.kamenridercraft.base_sword": "Base Weapon",
 "item.kamenridercraft.base_bike": "Base Bike",
 "item.kamenridercraft.shocker_emblem": "Shocker Emblem",
+"kamenridercraft:shocker_emblem.form": "Form: Shocker Combatman",
 "item.kamenridercraft.transform_one_shot": "Transform One-Shot",
 "item.kamenridercraft.milk_bottle": "Milk Bottle",
 "item.kamenridercraft.puzzle_piece": "Puzzle Piece",
@@ -1951,6 +1952,7 @@
 
 "item.kamenridercraft.typhoon_core": "Typhoon Core",
 "kamenridercraft:typhoon_core.form": "Form: Base Form",
+"kamenridercraft:grasshopper_man_core.form": "Form: Chinese Grasshopper Man",
 "item.kamenridercraft.original_typhoon_core": "Typhoon Core (Original)",
 "kamenridercraft:original_typhoon_core.form": "Form: Original Edition",
 "kamenridercraft:original_typhoon_core_nigo.form": "Form: Original Edition",
@@ -2028,7 +2030,7 @@
 "item.kamenridercraft.gaia_belt": "Gaia Typhoon",
 "kamenridercraft.name.gaia": "Rider: Kamen Rider Gaia",
 "item.kamenridercraft.shocker_belt": "Shocker Belt",
-"kamenridercraft.name.shocker_combatman": "Henchman: Shocker Combatman",
+"kamenridercraft.name.shocker_combatman": "Henchman",
 "item.kamenridercraft.cyborg_super_energy_converter": "Wirbelwind",
 "kamenridercraft.name.eins": "Rider: Kamen Rider Eins",
 

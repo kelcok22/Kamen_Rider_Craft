@@ -1915,6 +1915,7 @@
 "item.kamenridercraft.base_sword": "ベースウェポン",
 "item.kamenridercraft.base_bike": "ベースマシン",
 "item.kamenridercraft.shocker_emblem": "ショッカーエンブレム",
+"kamenridercraft:shocker_emblem.form": "フォーム: ショッカー戦闘員",
 "item.kamenridercraft.transform_one_shot": "変身一発",
 "item.kamenridercraft.milk_bottle": "牛乳瓶",
 "item.kamenridercraft.puzzle_piece": "パズルピース",
@@ -1951,6 +1952,7 @@
 
 "item.kamenridercraft.typhoon_core": "タイフーンコア",
 "kamenridercraft:typhoon_core.form": "フォーム: 基本フォーム",
+"kamenridercraft:grasshopper_man_core.form": "フォーム:  ショウリョウバッタ男",
 "item.kamenridercraft.original_typhoon_core": "タイフーンコア（旧1号）",
 "kamenridercraft:original_typhoon_core.form": "フォーム: 旧1号",
 "kamenridercraft:original_typhoon_core_nigo.form": "フォーム: 旧2号",
@@ -2028,7 +2030,7 @@
 "item.kamenridercraft.gaia_belt": "ガイアタイフーン",
 "kamenridercraft.name.gaia": "ライダー: 仮面ライダーガイア",
 "item.kamenridercraft.shocker_belt": "ショッカーベルト",
-"kamenridercraft.name.shocker_combatman": "手先: ショッカー戦闘員",
+"kamenridercraft.name.shocker_combatman": "手先",
 "item.kamenridercraft.cyborg_super_energy_converter": "ウィルベルウィンド",
 "kamenridercraft.name.eins": "ライダー: 仮面ライダーアインズ",
 
