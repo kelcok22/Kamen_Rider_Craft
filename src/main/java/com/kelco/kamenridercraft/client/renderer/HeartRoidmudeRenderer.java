@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
-import com.kelco.kamenridercraft.entities.bosses.HeartRoidmudeEntity;
+import com.kelco.kamenridercraft.entity.mobs.bosses.HeartRoidmudeEntity;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

@@ -7,7 +7,7 @@ import java.util.List;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

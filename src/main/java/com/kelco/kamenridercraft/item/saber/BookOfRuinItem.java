@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.saber;
 
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.bosses.FalchionEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.bosses.FalchionEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;

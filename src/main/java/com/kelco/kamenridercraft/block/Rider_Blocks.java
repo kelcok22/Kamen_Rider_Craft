@@ -11,7 +11,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.*;
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
 import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import com.kelco.kamenridercraft.data.ModWoodTypes;
-import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.wordgen.tree.ModTreeGrowers;

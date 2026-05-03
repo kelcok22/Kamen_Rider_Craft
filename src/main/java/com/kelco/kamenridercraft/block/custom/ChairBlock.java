@@ -3,8 +3,8 @@ package com.kelco.kamenridercraft.block.custom;
 
 import java.util.List;
 
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.ChairEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

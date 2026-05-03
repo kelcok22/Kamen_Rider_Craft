@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

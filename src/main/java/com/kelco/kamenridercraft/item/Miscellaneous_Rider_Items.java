@@ -2,9 +2,9 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.summons.ApolloEntity;
-import com.kelco.kamenridercraft.entities.summons.LibraEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.summons.ApolloEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.LibraEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.particle.ModParticles;

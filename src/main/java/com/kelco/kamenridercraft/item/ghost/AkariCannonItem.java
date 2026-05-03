@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.ghost;
 
 
-import com.kelco.kamenridercraft.entities.footSoldiers.GammaCommandoEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.GammaCommandoEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.server.level.ServerLevel;

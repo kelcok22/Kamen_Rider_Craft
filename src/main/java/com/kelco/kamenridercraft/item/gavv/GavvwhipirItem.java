@@ -3,9 +3,9 @@ package com.kelco.kamenridercraft.item.gavv;
 
 import java.util.List;
 
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.summons.WhippedSoldierEntity;
-import com.kelco.kamenridercraft.entities.variants.WhippedSoldierVariant;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.summons.WhippedSoldierEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.WhippedSoldierVariant;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;

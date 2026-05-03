@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.saber.BookGateItem;
 import com.kelco.kamenridercraft.item.saber.BookOfRuinItem;

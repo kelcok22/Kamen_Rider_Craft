@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.KodamaSuikaArmsModel;
-import com.kelco.kamenridercraft.entities.allies.KodamaSuikaArmsEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.KodamaSuikaArmsEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.animation.AnimationState;

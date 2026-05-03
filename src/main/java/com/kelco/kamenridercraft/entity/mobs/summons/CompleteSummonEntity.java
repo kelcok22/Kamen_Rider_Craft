@@ -1,0 +1,162 @@
+package com.kelco.kamenridercraft.entity.mobs.summons;
+
+import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Decade_Rider_Items;
+import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.targeting.TargetingConditions;
+import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.ProjectileUtil;
+import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ProjectileWeaponItem;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.pathfinder.PathType;
+
+import javax.annotation.Nullable;
+import java.util.EnumSet;
+
+public class CompleteSummonEntity extends BaseSummonEntity {
+
+	public CompleteSummonEntity(EntityType<? extends CompleteSummonEntity> type, Level level) {
+		super(type, level);
+		NAME="rider_summon";
+        this.addRequiredForm((RiderFormChangeItem)Decade_Rider_Items.K_TOUCH_21.get(), 1);
+	}
+
+	public static AttributeSupplier.Builder setAttributes() {
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.2F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.ATTACK_DAMAGE, 1.0D);
+	}
+
+    public static class MimicPlayerGoal extends Goal {
+        private final CompleteSummonEntity tamable;
+        @Nullable
+        private LivingEntity owner;
+        private final double speedModifier;
+        private final PathNavigation navigation;
+        private int timeToRecalcPath;
+        private float oldWaterCost;
+
+        public MimicPlayerGoal(CompleteSummonEntity tamable, double speedModifier) {
+            this.tamable = tamable;
+            this.speedModifier = speedModifier;
+            this.navigation = tamable.getNavigation();
+            this.setFlags(EnumSet.of(Goal.Flag.MOVE, Goal.Flag.LOOK));
+        }
+
+        @Override
+        public boolean canUse() {
+            LivingEntity livingentity = this.tamable.getOwner();
+            if (livingentity == null) {
+                return false;
+            } else if (this.tamable.unableToMoveToOwner()) {
+                return false;
+            } else {
+                this.owner = livingentity;
+                return true;
+            }
+        }
+
+        @Override
+        public boolean canContinueToUse() {
+            return this.owner != null && !this.tamable.unableToMoveToOwner() && !(this.tamable.distanceToSqr(this.owner) <= 4);
+        }
+
+        @Override
+        public void start() {
+            this.timeToRecalcPath = 0;
+            this.oldWaterCost = this.tamable.getPathfindingMalus(PathType.WATER);
+            this.tamable.setPathfindingMalus(PathType.WATER, 0.0F);
+        }
+
+        @Override
+        public void stop() {
+            this.owner = null;
+            this.navigation.stop();
+            this.tamable.setPathfindingMalus(PathType.WATER, this.oldWaterCost);
+        }
+
+        @Override
+        public void tick() {
+            if (--this.timeToRecalcPath <= 0 && this.owner != null) {
+                this.timeToRecalcPath = this.adjustedTickDelay(10);
+                if (this.tamable.shouldTryTeleportToOwner()) this.tamable.tryToTeleportToOwner();
+                else this.navigation.moveTo(this.owner, this.speedModifier);
+            }
+
+            if (this.owner instanceof Player player) {
+                if (player.isUsingItem() && player.getUseItem().getItem() instanceof BowItem) this.tamable.startUsingItem(ProjectileUtil.getWeaponHoldingHand(this.tamable, item -> item instanceof BowItem));
+                else if (this.tamable.isUsingItem()) {
+                    if (this.tamable.useItem.getItem() instanceof BowItem) this.tamable.performRangedAttack(20);
+                    this.tamable.stopUsingItem();
+                }
+            }
+        }
+    }
+
+    public void mimicSwing(Player player, InteractionHand hand) {
+        final TargetingConditions targeting = TargetingConditions.forCombat().range(16).selector(entity ->
+        entity != this.getOwner() && !(entity instanceof CompleteSummonEntity) && (!(entity instanceof Player) || entity == this.getOwner().getLastHurtMob()));
+        LivingEntity target = this.level().getNearestEntity(LivingEntity.class, targeting, this, this.getX(), this.getY(), this.getZ(), this.getBoundingBox().inflate(1.0));
+
+        this.swing(hand);
+        if (target != null) this.doHurtTarget(target);
+    }
+
+    @Override
+    public void bindToPlayer(Player player) {
+      if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, this);
+      super.bindToPlayer(player);
+    }
+
+    public void performRangedAttack(float distanceFactor) {
+       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
+	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
+	   	blaster.fire(this, this.getLookAngle());
+       } else {
+        ItemStack itemstack1 = this.getProjectile(weapon);
+        AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
+        Item var7 = weapon.getItem();
+        if (var7 instanceof ProjectileWeaponItem weaponItem) {
+           abstractarrow = weaponItem.customArrow(abstractarrow, itemstack1, weapon);
+        }
+       
+        abstractarrow.shoot(this.getLookAngle().x, this.getLookAngle().y, this.getLookAngle().z, 2.0F, (float)(14 - this.level().getDifficulty().getId() * 4));
+        this.level().addFreshEntity(abstractarrow);
+       }
+       this.playSound(SoundEvents.BLAZE_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
+    }
+
+    @Override
+	protected void registerGoals() {
+		this.goalSelector.addGoal(1, new FloatGoal(this));
+		this.goalSelector.addGoal(2, new MimicPlayerGoal(this, 1.0D));
+		this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, Creeper.class, 24.0F, 1.5D, 1.5D));
+		this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+	}
+
+    @Override
+	public void tick() {
+		super.tick();
+        if (this.getOwner()!=null && this.distanceToSqr(this.getOwner()) <= 4 && !this.getNavigation().isInProgress()) {
+            this.setXRot(this.getOwner().getXRot());
+            this.setYRot(this.getOwner().getYRot());
+            this.setYHeadRot(this.getOwner().getYRot());
+        }
+	}
+}

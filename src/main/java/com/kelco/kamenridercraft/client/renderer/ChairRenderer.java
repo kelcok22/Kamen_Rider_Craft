@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.client.renderer;
 
-import com.kelco.kamenridercraft.entities.ChairEntity;
+import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

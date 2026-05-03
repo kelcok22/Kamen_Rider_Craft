@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.effect.cores;
 
-import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.InstantenousMobEffect;

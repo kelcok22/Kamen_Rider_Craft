@@ -3,10 +3,10 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.footSoldiers.EnemySummonEntity;
-import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
-import com.kelco.kamenridercraft.world.AttributeGenerator;
+import com.kelco.kamenridercraft.entity.AttributeRegistry;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
@@ -313,9 +313,9 @@ public class RiderDriverItem extends RiderArmorItem {
                 this.riderOldX = livingEntity.getBlockX();
                 this.riderOldZ = livingEntity.getBlockZ();
             }
-            if (entity instanceof Player player && player.getAttribute(AttributeGenerator.POSING).getValue() == 1) {
+            if (entity instanceof Player player && player.getAttribute(AttributeRegistry.POSING).getValue() == 1) {
                 if (player.invulnerableTime > 0 ||this.riderOldX != player.getBlockX() || this.riderOldZ != player.getBlockZ() || player.isCrouching() || player.isSleeping() || player.isSwimming() || player.isPassenger() || player.isFallFlying()) {
-                    player.getAttribute(AttributeGenerator.POSING).setBaseValue(0);
+                    player.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
                     ServerPayloadHandler.stopPosing(player);
                 }
             }

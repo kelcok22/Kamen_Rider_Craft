@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.item.decade;
 
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.footSoldiers.ZeinEnemySummonEntity;
-import com.kelco.kamenridercraft.entities.summons.ZeinSummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ZeinEnemySummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.ZeinSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;

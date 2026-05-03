@@ -3,9 +3,9 @@ package com.kelco.kamenridercraft.client.renderer;
 import com.google.common.collect.Maps;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
-import com.kelco.kamenridercraft.entities.variants.InvesVariant;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.InvesVariant;
 
-import com.kelco.kamenridercraft.entities.footSoldiers.ElementaryInvesRedEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ElementaryInvesRedEntity;
 import net.minecraft.Util;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;

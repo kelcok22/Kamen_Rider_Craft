@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.network;
 
-import com.kelco.kamenridercraft.entities.summons.CompleteSummonEntity;
-import com.kelco.kamenridercraft.entities.summons.LegendarySummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
 import net.minecraft.world.InteractionHand;

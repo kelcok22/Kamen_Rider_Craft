@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entities.allies.TakaWatchroidEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.TakaWatchroidEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

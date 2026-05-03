@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.client.models.BasicMobModel;
 
 import net.minecraft.client.model.HumanoidModel;

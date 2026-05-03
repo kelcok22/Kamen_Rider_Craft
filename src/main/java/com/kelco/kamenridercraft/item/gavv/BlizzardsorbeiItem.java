@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.gavv;
 
 import java.util.List;
 
-import com.kelco.kamenridercraft.entities.summons.WhippedSoldierEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.WhippedSoldierEntity;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;

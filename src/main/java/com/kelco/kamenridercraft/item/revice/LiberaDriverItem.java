@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.item.revice;
 
 import com.kelco.kamenridercraft.ServerConfig;
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.summons.LovekovEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.summons.LovekovEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import net.minecraft.core.Holder;

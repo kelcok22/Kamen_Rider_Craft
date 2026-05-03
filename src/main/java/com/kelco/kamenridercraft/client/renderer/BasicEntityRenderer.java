@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.BasicMobModel;
-import com.kelco.kamenridercraft.entities.FootSoldierModel;
-import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.client.models.FootSoldierModel;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;

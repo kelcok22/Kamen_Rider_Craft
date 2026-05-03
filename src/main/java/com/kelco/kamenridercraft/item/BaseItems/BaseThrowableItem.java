@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 import java.util.List;
 
-import com.kelco.kamenridercraft.entities.projectile.ShurikenProjectileEntity;
-import com.kelco.kamenridercraft.entities.projectile.WeaponProjectileEntity;
+import com.kelco.kamenridercraft.entity.projectiles.ShurikenProjectileEntity;
+import com.kelco.kamenridercraft.entity.projectiles.WeaponProjectileEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;

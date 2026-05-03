@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.TakaCanModel;
-import com.kelco.kamenridercraft.entities.allies.TakaCanEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.TakaCanEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;

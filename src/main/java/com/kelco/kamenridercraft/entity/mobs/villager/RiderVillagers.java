@@ -1,0 +1,103 @@
+package com.kelco.kamenridercraft.entity.mobs.villager;
+
+
+
+import com.google.common.collect.ImmutableSet;
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+
+import com.kelco.kamenridercraft.block.Rider_Blocks;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.ai.village.poi.PoiType;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.util.ObfuscationReflectionHelper;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.lang.reflect.InvocationTargetException;
+
+public class RiderVillagers {
+    public static final DeferredRegister<PoiType> POI_TYPES = DeferredRegister.create(Registries.POINT_OF_INTEREST_TYPE, KamenRiderCraftCore.MOD_ID);
+
+    public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS = DeferredRegister.create(Registries.VILLAGER_PROFESSION, KamenRiderCraftCore.MOD_ID);
+
+    public static final DeferredHolder<PoiType,PoiType> SHOCKER_MONITOR_POI = POI_TYPES.register("shocker_monitor_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.SHOCKER_MONITOR.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> SHOCKER_VILLAGER = VILLAGER_PROFESSIONS.register("shocker_villager",
+            () -> new VillagerProfession("shocker_villager",(X) -> X.is(SHOCKER_MONITOR_POI),
+                    (X) -> X.is(SHOCKER_MONITOR_POI), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_ARMORER));
+
+    public static final DeferredHolder<PoiType,PoiType> HIDEN_3D_PRINTER_POI = POI_TYPES.register("hiden_3d_printer_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.HIDEN_3D_PRINTER.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> HUMAGEAR_VILLAGER = VILLAGER_PROFESSIONS.register("humagear_villager",
+            () -> new VillagerProfession("humagear_villager", (X) -> X.is(HIDEN_3D_PRINTER_POI),
+                    (X) -> X.is(HIDEN_3D_PRINTER_POI), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_ARMORER));
+
+    public static final DeferredHolder<PoiType,PoiType> KAMEN_CAFE_COUNTER_POI = POI_TYPES.register("kamen_cafe_counter_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.KAMEN_CAFE_COUNTER.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> KAMEN_CAFE_BUTLER = VILLAGER_PROFESSIONS.register("kamen_cafe_butler",
+            () -> new VillagerProfession("kamen_cafe_butler",(X) -> X.is(KAMEN_CAFE_COUNTER_POI),
+                    (X) -> X.is(KAMEN_CAFE_COUNTER_POI), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_ARMORER));
+
+    public static final DeferredHolder<PoiType,PoiType> HEATPRESS_EXTRACTOR_POI = POI_TYPES.register("heatpress_extractor_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.HEATPRESS_EXTRACTOR.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> AGENT_VILLAGER = VILLAGER_PROFESSIONS.register("agent_villager",
+            () -> new VillagerProfession("agent_villager",(X) -> X.is(HEATPRESS_EXTRACTOR_POI),
+                    (X) -> X.is(HEATPRESS_EXTRACTOR_POI), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_ARMORER));
+
+    public static final DeferredHolder<PoiType,PoiType> CANDY_SHOP_POI = POI_TYPES.register("candy_shop_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.CANDY_SHOP.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> CANDYSHOP_VILLAGER = VILLAGER_PROFESSIONS.register("candyshop_villager",
+            () -> new VillagerProfession("candyshop_villager",(X) -> X.is(CANDY_SHOP_POI),
+                    (X) -> X.is(CANDY_SHOP_POI), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_FARMER));
+
+    public static final DeferredHolder<PoiType,PoiType> GACHAPON_POI = POI_TYPES.register("gachapon_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.GASHAPON_MACHINE.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> COLLECTOR_VILLAGER = VILLAGER_PROFESSIONS.register("collector_villager",
+            () -> new VillagerProfession("collector_villager",(X) -> X.is(GACHAPON_POI),
+                    (X) -> X.is(GACHAPON_POI), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_FARMER));
+    
+
+    public static void registerPOIs() {
+        try {
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, SHOCKER_MONITOR_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, HIDEN_3D_PRINTER_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, KAMEN_CAFE_COUNTER_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, HEATPRESS_EXTRACTOR_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, CANDY_SHOP_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, GACHAPON_POI.get());
+        } catch (InvocationTargetException | IllegalAccessException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void register(IEventBus eventBus) {
+        POI_TYPES.register(eventBus);
+        VILLAGER_PROFESSIONS.register(eventBus);
+    }
+}

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.client.models.RocketModel;
-import com.kelco.kamenridercraft.entities.projectile.RocketProjectileEntity;
+import com.kelco.kamenridercraft.entity.projectiles.RocketProjectileEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;

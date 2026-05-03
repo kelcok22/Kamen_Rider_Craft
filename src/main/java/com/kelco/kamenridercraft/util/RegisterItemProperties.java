@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.compat.BetterCombatAttackListener;
-import com.kelco.kamenridercraft.entities.footSoldiers.ZuGumunBaEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ZuGumunBaEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.*;

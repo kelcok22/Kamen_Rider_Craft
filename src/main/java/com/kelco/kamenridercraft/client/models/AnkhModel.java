@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.client.models;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
-import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.AnkhEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

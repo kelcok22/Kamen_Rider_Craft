@@ -2,13 +2,7 @@ package com.kelco.kamenridercraft.client.models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entities.allies.AutoVajinRoboEntity;
-import com.kelco.kamenridercraft.entities.bikes.AutoVajinEntity;
-import com.kelco.kamenridercraft.entities.summons.ApolloEntity;
-import com.kelco.kamenridercraft.entities.summons.LibraEntity;
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.minecraft.client.model.geom.ModelPart;
+import com.kelco.kamenridercraft.entity.mobs.allies.AutoVajinRoboEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;

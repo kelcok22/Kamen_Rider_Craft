@@ -2,13 +2,11 @@ package com.kelco.kamenridercraft.item.client;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import com.kelco.kamenridercraft.item.Drive_Rider_Items;
-import com.kelco.kamenridercraft.world.AttributeGenerator;
-import net.minecraft.client.model.HumanoidModel;
+import com.kelco.kamenridercraft.entity.AttributeRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -90,9 +88,9 @@ if (entity instanceof LivingEntity RIDER) {
 
     GeoBone bipedHead = this.getAnimationProcessor().getBone("armorHead");
     if (bipedHead != null) {
-        bipedHead.setScaleX((float) RIDER.getAttribute(AttributeGenerator.HEAD_SIZE).getValue());
-        bipedHead.setScaleY((float) RIDER.getAttribute(AttributeGenerator.HEAD_SIZE).getValue());
-        bipedHead.setScaleZ((float) RIDER.getAttribute(AttributeGenerator.HEAD_SIZE).getValue());
+        bipedHead.setScaleX((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
+        bipedHead.setScaleY((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
+        bipedHead.setScaleZ((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
     }
 
     if (cape != null & RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)) < 0)

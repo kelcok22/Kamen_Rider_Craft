@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.network;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.summons.CompleteSummonEntity;
-import com.kelco.kamenridercraft.entities.summons.LegendarySummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
@@ -11,7 +11,7 @@ import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.util.ComplexFormCheck;
-import com.kelco.kamenridercraft.world.AttributeGenerator;
+import com.kelco.kamenridercraft.entity.AttributeRegistry;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
@@ -41,7 +41,7 @@ public class ServerPayloadHandler {
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
             assert controller != null;
             controller.stopTriggeredAnimation();
-            player.getAttribute(AttributeGenerator.POSING).setBaseValue(0);
+            player.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
             player.addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 40, 0, true, false));
         } catch (Exception e) {
             e.printStackTrace();
@@ -67,8 +67,8 @@ public class ServerPayloadHandler {
 
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
         //add gamerule for allow particles, sounds, and cooldown length
-        if (context.player().getAttribute(AttributeGenerator.POSING).getValue() == 1 & !context.player().hasEffect(Effect_core.POSE_COOLDOWN)) {
-            context.player().getAttribute(AttributeGenerator.POSING).setBaseValue(0);
+        if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1 & !context.player().hasEffect(Effect_core.POSE_COOLDOWN)) {
+            context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(0);
             stopPosing(context.player());
             return;
         }
@@ -83,7 +83,7 @@ public class ServerPayloadHandler {
             }
             return;
         }
-        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && !context.player().hasEffect(Effect_core.POSE_COOLDOWN) && context.player().getAttribute(AttributeGenerator.POSING).getValue() == 0) {
+        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && !context.player().hasEffect(Effect_core.POSE_COOLDOWN) && context.player().getAttribute(AttributeRegistry.POSING).getValue() == 0) {
 
             RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
 
@@ -117,7 +117,7 @@ public class ServerPayloadHandler {
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
-                context.player().getAttribute(AttributeGenerator.POSING).setBaseValue(1);
+                context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
                 context.player().addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 60, 0, true, false));
             } catch (Exception e) {
                 e.printStackTrace();

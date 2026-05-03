@@ -10,9 +10,9 @@ import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entity.mobs.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
@@ -34,7 +34,7 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
-import com.kelco.kamenridercraft.world.AttributeGenerator;
+import com.kelco.kamenridercraft.entity.AttributeRegistry;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
@@ -125,7 +125,7 @@ public class KamenRiderCraftCore {
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
-        AttributeGenerator.ATTRIBUTES.register(modEventBus);
+        AttributeRegistry.ATTRIBUTES.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
@@ -163,7 +163,7 @@ public class KamenRiderCraftCore {
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
-            float sd = (float) event.getEntity().getAttribute(AttributeGenerator.HEAD_SIZE).getValue();
+            float sd = (float) event.getEntity().getAttribute(AttributeRegistry.HEAD_SIZE).getValue();
             model.getHead().xScale = sd;
             model.getHead().yScale = sd;
             model.getHead().zScale = sd;

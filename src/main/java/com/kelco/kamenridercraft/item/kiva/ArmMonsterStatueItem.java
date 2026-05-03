@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.kiva;
 
 
-import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

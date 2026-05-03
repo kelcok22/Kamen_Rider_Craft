@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;

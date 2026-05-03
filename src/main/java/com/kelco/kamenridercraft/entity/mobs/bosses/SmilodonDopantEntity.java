@@ -1,0 +1,38 @@
+package com.kelco.kamenridercraft.entity.mobs.bosses;
+
+
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+
+import com.kelco.kamenridercraft.item.W_Rider_Items;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+
+public class SmilodonDopantEntity extends BaseHenchmenEntity {
+
+
+	
+    public SmilodonDopantEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+        super(type, level);
+        NAME="smilodon_dopant";
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(W_Rider_Items.WHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(W_Rider_Items.WCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(W_Rider_Items.WLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(W_Rider_Items.GAIA_DRIVER_SMILODON.get()));
+    }
+
+
+    public static AttributeSupplier.Builder setAttributes() {
+
+        return Monster.createMonsterAttributes()
+        		.add(Attributes.FOLLOW_RANGE, 35.0D)
+        		.add(Attributes.MOVEMENT_SPEED, 0.2F)
+        		.add(Attributes.ATTACK_DAMAGE, 10.0D)
+        		.add(Attributes.ARMOR, 4.0D)
+        		.add(Attributes.MAX_HEALTH, 110.0D);
+     }
+}

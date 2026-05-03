@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.geats;
 
-import com.kelco.kamenridercraft.entities.bikes.BoostrikerEntity;
+import com.kelco.kamenridercraft.entity.vehicles.BoostrikerEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottlePurifier;
 import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;

@@ -1,0 +1,33 @@
+package com.kelco.kamenridercraft.entity.mobs.bosses;
+
+
+import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.level.Level;
+
+public class PhoenixPhantomEntity extends BaseHenchmenEntity {
+
+
+
+    public PhoenixPhantomEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+        super(type, level);
+        NAME="phoenix";
+        this.moveControl = new FlyingBossControl(this, 20);
+    }
+
+
+    public static AttributeSupplier.Builder setAttributes() {
+
+        return Monster.createMonsterAttributes()
+        		.add(Attributes.FOLLOW_RANGE, 40.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.4F)
+                .add(Attributes.FLYING_SPEED, 0.4F)
+        		.add(Attributes.ATTACK_DAMAGE, 12.0D)
+        		.add(Attributes.ARMOR, 3.0D)
+        		.add(Attributes.MAX_HEALTH, 90.0D);
+     }
+}

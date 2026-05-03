@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.DoggaModel;
-import com.kelco.kamenridercraft.entities.allies.DoggaEntity;
+import com.kelco.kamenridercraft.entity.mobs.allies.DoggaEntity;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

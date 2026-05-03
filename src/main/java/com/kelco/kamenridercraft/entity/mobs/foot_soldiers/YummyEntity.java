@@ -1,0 +1,82 @@
+package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
+
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+
+import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.level.Level;
+
+public class YummyEntity extends BaseHenchmenEntity {
+	
+	private BaseHenchmenEntity boss;
+
+    public YummyEntity(EntityType<? extends BaseHenchmenEntity > type, Level level) {
+        super(type, level);
+        NAME="yummy";
+    }
+
+
+    public void remove(Entity.RemovalReason p_149847_) {
+
+		if ( this.isDeadOrDying()) {
+            ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
+
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+				if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA))boss = MobsCore.KAZARI.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST))boss = MobsCore.UVA.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_MOUNTAIN))boss = MobsCore.ANKH_LOST.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_RIVER)
+				||this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_OCEAN)
+						||this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_DEEP_OCEAN))boss = MobsCore.MEZOOL.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS))boss = MobsCore.GAMEL.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER))boss = MobsCore.MUCHIRI.get().create(this.level());
+                else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_END))boss = MobsCore.KYORYU_GREEED.get().create(this.level());
+                else if (this.level().dimension() == SANDS_OF_TIME)boss = MobsCore.SHOCKER_GREEED.get().create(this.level());
+				else {
+				int bossChoice = this.random.nextInt(5);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.KAZARI.get().create(this.level());
+						break;
+					case 1:
+						boss = MobsCore.UVA.get().create(this.level());
+						break;
+					case 2:
+						boss = MobsCore.GAMEL.get().create(this.level());
+						break;
+					case 3:
+						boss = MobsCore.MEZOOL.get().create(this.level());
+						break;
+					case 4:
+						boss = MobsCore.ANKH_LOST.get().create(this.level());
+						break;
+					default:
+				}
+				}
+				if (boss != null) {
+					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+					this.level().addFreshEntity(boss);
+				}
+			}
+		}
+		super.remove(p_149847_);
+	}
+    
+    public static AttributeSupplier.Builder setAttributes() {
+    
+        return Monster.createMonsterAttributes()
+        		.add(Attributes.FOLLOW_RANGE, 35.0D)
+        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
+        		.add(Attributes.ATTACK_DAMAGE, 4.0D)
+        		.add(Attributes.ARMOR, 3.0D)
+        		.add(Attributes.MAX_HEALTH, 30.0D);
+     }
+}
