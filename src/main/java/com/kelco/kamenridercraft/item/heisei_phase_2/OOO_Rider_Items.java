@@ -358,7 +358,7 @@ public class OOO_Rider_Items {
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
 			}
-					.ChangeSlot(1).AddToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
+					.ChangeSlot(1).HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> HACHI_MEDAL = ITEMS.register("hachi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hachi","ooo","ooodriver_belt",

@@ -115,8 +115,8 @@ public class RiderFormChangeItem extends BaseItem {
         return Slot;
     }
 
-    public String getFormName(Boolean isFlaying) {
-        return (isFlaying&FLYING_TEXT ? FORM_NAME+"_wing" : FORM_NAME);
+    public String getFormName(Boolean isFlying) {
+        return (isFlying&FLYING_TEXT ? FORM_NAME+"_wing" : FORM_NAME);
     }
 
     public String getRiderName(String name) {
