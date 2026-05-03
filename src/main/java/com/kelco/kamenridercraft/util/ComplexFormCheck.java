@@ -33,7 +33,7 @@ public class ComplexFormCheck {
             case "seiuchi_medal shirokuma_medal penguin_medal" -> "seishirogin ";
             case "mukade_medal hachi_medal ari_medal" -> "mukachiri";
             case "shika_medal gazelle_medal ushi_medal" -> "shigazeshi";
-            case "ebi_medal kani_medal sasori_medal" -> "bikaso";
+            case "ebi_new_medal kani_new_medal sasori_new_medal" -> "bikaso";
             case "same_medal kujira_medal ookamiuo_medal" -> "saramiuo";
             case "love_core_medal love_core2_medal love_core3_medal" -> "renai";
             case "taka_medal imagin_medal shocker_medal" -> "tamashii";
