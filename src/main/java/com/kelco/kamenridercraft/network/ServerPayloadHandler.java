@@ -28,20 +28,18 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
+
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem.get_Form_Item;
+import static com.kelco.kamenridercraft.util.ComplexFormCheck.getAnimRiderName;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
 public class ServerPayloadHandler {
 
-    public static void stopKickAnimation() {
-        PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
-        controller.stopTriggeredAnimation();
-    }
-
     public static void stopPosing(Player player) {
         try {
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
+            assert controller != null;
             controller.stopTriggeredAnimation();
             player.getAttribute(AttributeGenerator.POSING).setBaseValue(0);
             player.addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 40, 0, true, false));
@@ -90,7 +88,7 @@ public class ServerPayloadHandler {
             RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
 
             String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
-            String riderName = driverItem.Rider.toLowerCase();
+            String riderName =  getAnimRiderName(driverItem);
 
             Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
 
@@ -102,6 +100,7 @@ public class ServerPayloadHandler {
                 RiderFormChangeItem formChangeItemTwo = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 2);
                 RiderFormChangeItem formChangeItemThree = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 3);
                 String comboName = ComplexFormCheck.oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
+
                 if (comboName.equals("tajadol_eternity")) {
                     comboName = "tajadol";
                 }

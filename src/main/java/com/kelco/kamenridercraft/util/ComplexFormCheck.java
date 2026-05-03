@@ -1,6 +1,22 @@
 package com.kelco.kamenridercraft.util;
 
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+
 public class ComplexFormCheck {
+    public static String getAnimRiderName(RiderDriverItem driverItem) {
+        String riderName = driverItem.Rider.toLowerCase();
+        return switch (riderName) {
+            case "neo_decade", "neo_diend" -> riderName.replace("neo_", "");
+            case "fake_ichigo", "fake_x", "fake_v3", "fake_skyrider", "fake_blade", "fake_drive" ->
+                    riderName.replace("fake_", "");
+            case "dark_ichigo", "dark_nigo", "dark_v3", "dark_riderman", "dark_x", "dark_amazon", "dark_stronger" ->
+                    riderName.replace("dark_", "");
+            case "robot_super_1" -> "super_1";
+            case "powered_up_core" -> "core";
+            default -> riderName;
+        };
+    }
+
     public static String oooComboCheck(String medalOne, String medalTwo, String medalThree) {
         String comboText = medalOne.replace("kamenridercraft:", "") + " " + medalTwo.replace("kamenridercraft:", "") + " " + medalThree.replace("kamenridercraft:", "");
         return switch (comboText) {
@@ -25,5 +41,4 @@ public class ComplexFormCheck {
             default -> "";
         };
     }
-
 }
