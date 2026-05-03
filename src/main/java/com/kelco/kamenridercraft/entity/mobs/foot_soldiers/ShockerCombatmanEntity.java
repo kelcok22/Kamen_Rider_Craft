@@ -1,12 +1,10 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
-
-import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -33,7 +31,7 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
             LocalDate localdate = LocalDate.now();
             int day = localdate.getDayOfMonth();
             if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28   && this.lastHurtByPlayer!=null){
-                ItemEntity key = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(Miscellaneous_Rider_Items.GIFT.get(), 1), 0, 0, 0);
+                ItemEntity key = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ExtraRiderItems.GIFT.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 level().addFreshEntity(key);
             }

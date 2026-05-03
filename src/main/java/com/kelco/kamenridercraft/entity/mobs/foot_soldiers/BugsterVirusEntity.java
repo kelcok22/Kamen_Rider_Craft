@@ -1,11 +1,8 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import java.util.Random;
-
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
-
+import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -18,6 +15,8 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import java.util.Random;
 
 public class BugsterVirusEntity extends BaseHenchmenEntity {
 	

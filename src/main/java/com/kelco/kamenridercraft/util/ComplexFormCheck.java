@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.util;
 
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 
 public class ComplexFormCheck {
     public static String getAnimRiderName(RiderDriverItem driverItem) {

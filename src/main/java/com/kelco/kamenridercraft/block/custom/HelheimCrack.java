@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.block.custom;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.baseBlocks.BaseBlock;
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -86,13 +86,13 @@ public class HelheimCrack extends BaseBlock {
 		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
 		while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
 
-		entity.addEffect(new MobEffectInstance(Effect_core.PORTAL_COOLDOWN, 200, 0, true, true));
+		entity.addEffect(new MobEffectInstance(EffectCore.PORTAL_COOLDOWN, 200, 0, true, true));
 		entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
 	}
 
 	@Override
 	protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-		if (entity.canUsePortal(false) && entity instanceof Player player && !player.hasEffect(Effect_core.PORTAL_COOLDOWN)){
+		if (entity.canUsePortal(false) && entity instanceof Player player && !player.hasEffect(EffectCore.PORTAL_COOLDOWN)){
 			ResourceKey<Level> HELHEIM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:helheim"));
 			MinecraftServer Server = player.getServer();
 

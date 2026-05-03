@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
-import com.kelco.kamenridercraft.item.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;

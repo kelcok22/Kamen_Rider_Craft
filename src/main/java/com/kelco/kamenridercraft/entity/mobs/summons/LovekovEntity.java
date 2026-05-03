@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.summons;
 
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;

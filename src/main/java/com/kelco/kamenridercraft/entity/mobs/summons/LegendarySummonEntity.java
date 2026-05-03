@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.summons;
 
 import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
-import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
+import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;

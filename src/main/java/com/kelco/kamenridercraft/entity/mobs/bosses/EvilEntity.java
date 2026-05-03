@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;

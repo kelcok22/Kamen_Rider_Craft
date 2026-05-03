@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.block.storageBlock;
 
 
 import com.kelco.kamenridercraft.block.entity.PandoraPanelBlockEntity;
-import com.kelco.kamenridercraft.item.build.PandoraPanelItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.build.PandoraPanelItem;
 import com.kelco.kamenridercraft.world.inventory.PandoraPanelGuiMenu;
 import com.mojang.serialization.MapCodec;
 import io.netty.buffer.Unpooled;

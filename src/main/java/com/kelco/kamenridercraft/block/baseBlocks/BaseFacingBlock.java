@@ -1,8 +1,6 @@
 package com.kelco.kamenridercraft.block.baseBlocks;
 
 
-import java.util.List;
-
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
@@ -12,6 +10,9 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.PushReaction;
+
+import java.util.List;
+
 public class BaseFacingBlock extends Block {
 
 

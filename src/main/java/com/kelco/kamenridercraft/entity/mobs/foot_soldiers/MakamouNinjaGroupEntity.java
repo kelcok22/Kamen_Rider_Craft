@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.MakamouNinjaGroupVariant;
-import com.kelco.kamenridercraft.item.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;

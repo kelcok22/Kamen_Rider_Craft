@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.ai.RangedSwordgunAttackGoal;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
+import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;

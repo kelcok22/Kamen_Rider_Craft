@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.projectiles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;

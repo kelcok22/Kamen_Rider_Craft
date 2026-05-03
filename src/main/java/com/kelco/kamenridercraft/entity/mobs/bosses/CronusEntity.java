@@ -1,14 +1,9 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import java.util.EnumSet;
-
-import javax.annotation.Nullable;
-
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -24,13 +19,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.Goal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.MoveThroughVillageGoal;
-import net.minecraft.world.entity.ai.goal.MoveTowardsRestrictionGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
@@ -39,6 +28,9 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import javax.annotation.Nullable;
+import java.util.EnumSet;
 
 public class CronusEntity extends BaseHenchmenEntity {
 
@@ -227,15 +219,15 @@ public class CronusEntity extends BaseHenchmenEntity {
 									if (this.Cronus.getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()) {
 
 										if (RiderDriverItem.get_Form_Item(this.Cronus.getItemBySlot(EquipmentSlot.FEET),1)!=Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
-											livingentity.addEffect(new MobEffectInstance(Effect_core.PAUSE,150,0));
+											livingentity.addEffect(new MobEffectInstance(EffectCore.PAUSE,150,0));
 											if (livingentity instanceof Player playerIn){
 												playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.pause"));
 											}
 
 										}
 										else {
-											livingentity.addEffect(new MobEffectInstance(Effect_core.RESET,30,0));
-											livingentity.addEffect(new MobEffectInstance(Effect_core.FORM_LOCK,600,0));
+											livingentity.addEffect(new MobEffectInstance(EffectCore.RESET,30,0));
+											livingentity.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK,600,0));
 											if (livingentity instanceof Player playerIn){
 												playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.reset"));
 											}

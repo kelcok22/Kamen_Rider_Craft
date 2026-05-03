@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -55,8 +55,8 @@ public class GingaEntity extends BaseHenchmenEntity {
 
 			if (!this.level().isDay()) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.PURPLE);
-				this.addEffect(new MobEffectInstance(Effect_core.GRAVITY, 70, 3, true, true));
-				this.addEffect(new MobEffectInstance(Effect_core.ANTIPOISON, 70, 3, true, true));
+				this.addEffect(new MobEffectInstance(EffectCore.GRAVITY, 70, 3, true, true));
+				this.addEffect(new MobEffectInstance(EffectCore.ANTIPOISON, 70, 3, true, true));
 				this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 70, 100, true, true));
 				this.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 100, true, true));
 				this.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 70, 100, true, true));

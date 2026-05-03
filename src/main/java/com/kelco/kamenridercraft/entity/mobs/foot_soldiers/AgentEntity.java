@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.AgentVariant;
-import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;

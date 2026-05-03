@@ -1,10 +1,5 @@
 package com.kelco.kamenridercraft.block.baseBlocks;
 
-import java.util.List;
-import java.util.Random;
-import java.util.function.Supplier;
-
-import javax.annotation.Nullable;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -17,6 +12,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+
+import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Supplier;
+
 public class BossBlock extends BaseBlock {
 
 	private List<Component> TEXT = Lists.newArrayList();

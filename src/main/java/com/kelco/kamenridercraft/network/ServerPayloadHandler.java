@@ -1,17 +1,17 @@
 package com.kelco.kamenridercraft.network;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.util.ComplexFormCheck;
-import com.kelco.kamenridercraft.entity.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
@@ -30,7 +30,7 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
-import static com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem.get_Form_Item;
+import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.get_Form_Item;
 import static com.kelco.kamenridercraft.util.ComplexFormCheck.getAnimRiderName;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
@@ -42,7 +42,7 @@ public class ServerPayloadHandler {
             assert controller != null;
             controller.stopTriggeredAnimation();
             player.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
-            player.addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 40, 0, true, false));
+            player.addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 40, 0, true, false));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -67,7 +67,7 @@ public class ServerPayloadHandler {
 
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
         //add gamerule for allow particles, sounds, and cooldown length
-        if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1 & !context.player().hasEffect(Effect_core.POSE_COOLDOWN)) {
+        if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1 & !context.player().hasEffect(EffectCore.POSE_COOLDOWN)) {
             context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(0);
             stopPosing(context.player());
             return;
@@ -77,13 +77,13 @@ public class ServerPayloadHandler {
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance")));
-                context.player().addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 60, 0, true, false));
+                context.player().addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 60, 0, true, false));
             } catch (Exception e) {
                 e.printStackTrace();
             }
             return;
         }
-        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && !context.player().hasEffect(Effect_core.POSE_COOLDOWN) && context.player().getAttribute(AttributeRegistry.POSING).getValue() == 0) {
+        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && !context.player().hasEffect(EffectCore.POSE_COOLDOWN) && context.player().getAttribute(AttributeRegistry.POSING).getValue() == 0) {
 
             RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
 
@@ -118,7 +118,7 @@ public class ServerPayloadHandler {
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
                 context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
-                context.player().addEffect(new MobEffectInstance(Effect_core.POSE_COOLDOWN, 60, 0, true, false));
+                context.player().addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 60, 0, true, false));
             } catch (Exception e) {
                 e.printStackTrace();
             }

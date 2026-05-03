@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.entity.mobs.summons;
 
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
-import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;

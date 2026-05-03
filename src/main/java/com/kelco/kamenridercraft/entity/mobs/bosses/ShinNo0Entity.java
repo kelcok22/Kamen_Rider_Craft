@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Reboot_Rider_Items;
+import com.kelco.kamenridercraft.item.reboots.ShinIchigoRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -15,10 +15,10 @@ public class ShinNo0Entity extends BaseHenchmenEntity {
     public ShinNo0Entity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="shin_no_0";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Reboot_Rider_Items.ULTIMATE_HALF_TYPHOON.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ShinIchigoRiderItems.ULTIMATE_HALF_TYPHOON.get()));
     }
     
 

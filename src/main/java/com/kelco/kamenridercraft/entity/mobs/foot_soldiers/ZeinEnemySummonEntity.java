@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
-import com.kelco.kamenridercraft.item.decade.ZeinCard;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCard;
+import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;

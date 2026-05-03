@@ -2,10 +2,10 @@
 package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.init.ModMenus;
-import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
-import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Zeztz_Rider_Items;
-import com.kelco.kamenridercraft.item.zeztz.CapsemCylinderItem;
+import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
+import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
+import com.kelco.kamenridercraft.item.reiwa.Zeztz_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
+import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -68,11 +68,11 @@ public class GashaponMachine extends MachineBlock {
             int day = localdate.getDayOfMonth();
           if (player.getItemInHand(hand).getItem() == Items.EMERALD){
               if (localdate.getMonthValue() == 10 && day >= 24) {
-                  process(player, level, pos, hand, Miscellaneous_Rider_Items.HALLOWEEN_GASHAPON_CAPSULE.asItem());
+                  process(player, level, pos, hand, ExtraRiderItems.HALLOWEEN_GASHAPON_CAPSULE.asItem());
               }else if (localdate.getMonthValue() == 2 && day >= 13&& day <= 18) {
-                  process(player, level, pos, hand, Miscellaneous_Rider_Items.VALENTINE_GASHAPON_CAPSULE.asItem());
+                  process(player, level, pos, hand, ExtraRiderItems.VALENTINE_GASHAPON_CAPSULE.asItem());
               }else {
-                  process(player, level, pos, hand, Miscellaneous_Rider_Items.GASHAPON_CAPSULE.asItem());
+                  process(player, level, pos, hand, ExtraRiderItems.GASHAPON_CAPSULE.asItem());
               }
               return ItemInteractionResult.SUCCESS;
           }

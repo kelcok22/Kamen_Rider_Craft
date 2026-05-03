@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
 
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;

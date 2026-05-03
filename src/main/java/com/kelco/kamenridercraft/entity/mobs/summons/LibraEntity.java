@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.summons;
 
 
 import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
+import com.kelco.kamenridercraft.item.extra_riders.RideKamensItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;
@@ -111,7 +111,7 @@ public class LibraEntity extends BaseSummonEntity implements GeoEntity , FlyingA
 								return interactionresult;
 						}
 				}
-			}else if (itemstack.is(Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get()) && !this.isAngry()) {
+			}else if (itemstack.is(RideKamensItems.CONTRACT_CHAOSTONE.get()) && !this.isAngry()) {
 			  itemstack.consume(1, player);
 			  this.tryToTame(player);
 			  return InteractionResult.SUCCESS;
@@ -180,7 +180,7 @@ public class LibraEntity extends BaseSummonEntity implements GeoEntity , FlyingA
 
     public boolean isFood(ItemStack p_30440_) {
 		      Item item = p_30440_.getItem();
-		      return item == Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get();
+		      return item == RideKamensItems.CONTRACT_CHAOSTONE.get();
 		   }
 
 	@Override

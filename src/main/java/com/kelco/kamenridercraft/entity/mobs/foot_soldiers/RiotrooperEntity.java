@@ -1,10 +1,9 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
+import com.kelco.kamenridercraft.item.extra_riders.CrossSeriesRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -38,7 +37,7 @@ public class RiotrooperEntity extends BaseHenchmenEntity{
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn
-                && playerIn.getInventory().countItem(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get())>0
+                && playerIn.getInventory().countItem(CrossSeriesRiderItems.KUUGA_AMAZING_MIGHTY_ARTIST.get())>0
                 && !this.getItemBySlot(EquipmentSlot.FEET).is(Faiz_Rider_Items.SMARTBUCKLE_V2.get())) {
             List<LivingEntity> nearbyAllies = this.level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(8), entity ->
                     (entity instanceof RiotrooperEntity));

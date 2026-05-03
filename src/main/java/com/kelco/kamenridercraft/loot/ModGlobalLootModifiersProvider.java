@@ -1,10 +1,10 @@
 package com.kelco.kamenridercraft.loot;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
-import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Wizard_Rider_Items;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

@@ -2,11 +2,11 @@ package com.kelco.kamenridercraft.entity.mobs;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
 import com.kelco.kamenridercraft.entity.mobs.allies.*;
 import com.kelco.kamenridercraft.entity.mobs.bosses.*;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.*;
 import com.kelco.kamenridercraft.entity.mobs.summons.*;
-import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
 import com.kelco.kamenridercraft.entity.projectiles.*;
 import com.kelco.kamenridercraft.entity.vehicles.*;
 import net.minecraft.core.registries.BuiltInRegistries;

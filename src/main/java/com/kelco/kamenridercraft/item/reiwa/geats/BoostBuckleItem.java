@@ -1,0 +1,44 @@
+package com.kelco.kamenridercraft.item.reiwa.geats;
+
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.Level;
+
+
+public class BoostBuckleItem extends RiderFormChangeItem {
+	public BoostBuckleItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+		super(properties, formName, ridername, beltTex, effects);
+	}
+
+	public InteractionResult useOn(UseOnContext context) {
+		Player player = context.getPlayer();
+		ItemStack itemstack = player.getItemInHand(context.getHand());
+		Level level = context.getLevel();
+
+		if (!level.isClientSide() && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof DesireDriverItem)||player.isShiftKeyDown())) {
+			BlockPos pos = context.getClickedPos();
+			baseBikeEntity boss = MobsCore.BOOSTRIKER.get().create(level);
+			if (boss != null) {
+				boss.moveTo(pos.getX(), pos.getY()+1, pos.getZ(), 0, 0.0F);
+				level.addFreshEntity(boss);
+				player.displayClientMessage(Component.translatable("bike.kamenridercraft.boostriker"), true);
+				itemstack.consume(1,player);
+				if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, boss);
+				player.awardStat(Stats.ITEM_USED.get(this));
+			}
+		}
+		return InteractionResult.SUCCESS;
+	}
+}

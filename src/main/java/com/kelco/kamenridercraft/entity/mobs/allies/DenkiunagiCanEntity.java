@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.allies;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.YummyEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;

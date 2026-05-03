@@ -1,7 +1,5 @@
 package com.kelco.kamenridercraft.block.baseBlocks;
 
-import java.util.OptionalInt;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -15,6 +13,9 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+
+import java.util.OptionalInt;
+
 public class DespawnBlock extends BaseBlock {
 
 	public static final int DECAY_DISTANCE = 7;

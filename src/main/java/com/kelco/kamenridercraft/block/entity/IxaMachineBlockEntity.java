@@ -1,8 +1,7 @@
 package com.kelco.kamenridercraft.block.entity;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.MachineBlockTags;
-import com.kelco.kamenridercraft.item.Kiva_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Kiva_Rider_Items;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipe;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipeInput;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
@@ -13,7 +12,6 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;

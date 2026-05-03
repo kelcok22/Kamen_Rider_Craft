@@ -9,9 +9,9 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
-import java.time.LocalDate;
-
 import net.minecraft.world.level.Level;
+
+import java.time.LocalDate;
 
 public class ChapEntity extends BaseHenchmenEntity {
 	

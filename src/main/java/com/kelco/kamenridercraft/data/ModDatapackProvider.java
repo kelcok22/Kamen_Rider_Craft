@@ -1,10 +1,10 @@
 package com.kelco.kamenridercraft.data;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.wordgen.ModBiomeModifiers;
-import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
-import com.kelco.kamenridercraft.wordgen.ModPlacedFeature;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
+import com.kelco.kamenridercraft.world.level.biome.ModBiomeModifiers;
+import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
+import com.kelco.kamenridercraft.world.level.levelgen.feature.ModPlacedFeature;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

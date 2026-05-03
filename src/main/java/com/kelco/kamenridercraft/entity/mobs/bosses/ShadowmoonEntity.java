@@ -1,9 +1,9 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
+import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
@@ -23,16 +23,16 @@ import java.util.Random;
 
 public class ShadowmoonEntity extends BaseHenchmenEntity {
 	
-	public static final Item[] belt = new Item[] {Ichigo_Rider_Items.SHADOW_CHARGER.get()};
+	public static final Item[] belt = new Item[] {BlackRiderItems.SHADOW_CHARGER.get()};
 
 	
     public ShadowmoonEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="shadow_moon";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ichigo_Rider_Items.BLACKHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ichigo_Rider_Items.BLACKCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ichigo_Rider_Items.BLACKLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ichigo_Rider_Items.SATANSABER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BlackRiderItems.BLACKHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BlackRiderItems.BLACKCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BlackRiderItems.BLACKLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BlackRiderItems.SATANSABER.get()));
         Random generator = new Random();
 		int rand = generator.nextInt(belt.length);
 	
@@ -53,8 +53,8 @@ public class ShadowmoonEntity extends BaseHenchmenEntity {
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if(!this.level().isClientSide() && source.getEntity() instanceof LivingEntity living && living.hasEffect(Effect_core.HAPPY_MODE) && !this.hasEffect(Effect_core.SD)) {
-            this.addEffect(new MobEffectInstance(Effect_core.SD, MobEffectInstance.INFINITE_DURATION, 0, true, false));
+        if(!this.level().isClientSide() && source.getEntity() instanceof LivingEntity living && living.hasEffect(EffectCore.HAPPY_MODE) && !this.hasEffect(EffectCore.SD)) {
+            this.addEffect(new MobEffectInstance(EffectCore.SD, MobEffectInstance.INFINITE_DURATION, 0, true, false));
             ((ServerLevel) this.level()).sendParticles(ParticleTypes.HAPPY_VILLAGER, this.getX(), this.getY() + 1, this.getZ(),
                 15, 0.2, 0.2, 0.2, 1);
         }
@@ -63,7 +63,7 @@ public class ShadowmoonEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason reason) {
         if (reason == RemovalReason.KILLED) {
             LocalDate localdate = LocalDate.now();
-            if (localdate.getMonthValue() == 4 && localdate.getDayOfMonth() == 1 && this.lastHurtByPlayer!=null) this.lastHurtByPlayer.drop(new ItemStack(Modded_item_core.MASKED_RIDER_MUSIC_DISC.get(), 1), false);
+            if (localdate.getMonthValue() == 4 && localdate.getDayOfMonth() == 1 && this.lastHurtByPlayer!=null) this.lastHurtByPlayer.drop(new ItemStack(MusicDiscItems.MASKED_RIDER_MUSIC_DISC.get(), 1), false);
         }
         super.remove(reason);
     }

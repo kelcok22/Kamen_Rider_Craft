@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.Reboot_Rider_Items;
+import com.kelco.kamenridercraft.item.reboots.ShinIchigoRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -18,10 +18,10 @@ public class BattaAugmentEntity extends BaseHenchmenEntity {
     public BattaAugmentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
 		NAME="batta_augment";
-	    this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_HELMET.get()));
-	    this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_CHESTPLATE.get()));
-	    this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Reboot_Rider_Items.SHIN_ICHIGO_LEGGINGS.get()));
-	    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Reboot_Rider_Items.SIMPLIFIED_TYPHOON.get()));
+	    this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_HELMET.get()));
+	    this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_CHESTPLATE.get()));
+	    this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_LEGGINGS.get()));
+	    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ShinIchigoRiderItems.SIMPLIFIED_TYPHOON.get()));
     }
 
 

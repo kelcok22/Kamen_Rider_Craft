@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.item_models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.ichigo.DrillArmItem;
+import com.kelco.kamenridercraft.item.showa.V3.DrillArmItem;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

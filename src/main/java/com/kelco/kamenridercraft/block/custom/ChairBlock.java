@@ -1,10 +1,8 @@
 package com.kelco.kamenridercraft.block.custom;
 
 
-import java.util.List;
-
-import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -28,6 +26,8 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.List;
 
 public class ChairBlock extends Block {
 

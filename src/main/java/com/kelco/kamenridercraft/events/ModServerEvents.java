@@ -1,9 +1,8 @@
 package com.kelco.kamenridercraft.events;
 
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;

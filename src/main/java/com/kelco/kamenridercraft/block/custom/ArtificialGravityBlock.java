@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.block.custom;
 
 
 import com.kelco.kamenridercraft.block.baseBlocks.BaseBlock;
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -55,7 +55,7 @@ public class ArtificialGravityBlock extends BaseBlock {
 						(entity instanceof Player)
 								|| (entity instanceof Mob mob));
 				for (LivingEntity enemy : nearbyEntities) {
-					enemy.addEffect(new MobEffectInstance(Effect_core.GRAVITY, 70, 3, true, true));
+					enemy.addEffect(new MobEffectInstance(EffectCore.GRAVITY, 70, 3, true, true));
 				}
 			}
 		}

@@ -8,8 +8,7 @@ import com.kelco.kamenridercraft.block.entity.renderer.PlinthBlockEntityRenderer
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
-import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.villager.RiderVillagers;
@@ -18,9 +17,18 @@ import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.init.RiderPotPattern;
-import com.kelco.kamenridercraft.item.*;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.extra_riders.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.*;
+import com.kelco.kamenridercraft.item.heisei_phase_2.*;
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
+import com.kelco.kamenridercraft.item.reboots.AmazonsRiderItems;
+import com.kelco.kamenridercraft.item.reboots.BlackSunRiderItems;
+import com.kelco.kamenridercraft.item.reboots.ShinIchigoRiderItems;
+import com.kelco.kamenridercraft.item.reboots.TheSeriesRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.*;
+import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
@@ -33,15 +41,22 @@ import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
-import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
-import com.kelco.kamenridercraft.entity.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
+import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -58,6 +73,8 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
 import net.neoforged.neoforge.network.registration.HandlerThread;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,14 +102,29 @@ public class KamenRiderCraftCore {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-        Effect_core.register(modEventBus);
+        EffectCore.register(modEventBus);
         ModMenus.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
         ModSounds.register(modEventBus);
         RiderPotPattern.register(modEventBus);
         Modded_item_core.register(modEventBus);
-        Reboot_Rider_Items.register(modEventBus);
-        Ichigo_Rider_Items.register(modEventBus);
+        TheSeriesRiderItems.register(modEventBus);
+        ShinIchigoRiderItems.register(modEventBus);
+        AmazonsRiderItems.register(modEventBus);
+        BlackSunRiderItems.register(modEventBus);
+        IchigoRiderItems.register(modEventBus);
+        V3RiderItems.register(modEventBus);
+        XRiderItems.register(modEventBus);
+        AmazonRiderItems.register(modEventBus);
+        StrongerRiderItems.register(modEventBus);
+        SkyriderItems.register(modEventBus);
+        Super1RiderItems.register(modEventBus);
+        ZXRiderItems.register(modEventBus);
+        BlackRiderItems.register(modEventBus);
+        BlackRXRiderItems.register(modEventBus);
+        ShinRiderItems.register(modEventBus);
+        ZORiderItems.register(modEventBus);
+        JRiderItems.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
         Agito_Rider_Items.register(modEventBus);
         Ryuki_Rider_Items.register(modEventBus);
@@ -120,13 +152,18 @@ public class KamenRiderCraftCore {
         Gotchard_Rider_Items.register(modEventBus);
         Gavv_Rider_Items.register(modEventBus);
         Zeztz_Rider_Items.register(modEventBus);
-        Miscellaneous_Rider_Items.register(modEventBus);
+        CrossSeriesRiderItems.register(modEventBus);
+        ExtraRiderItems.register(modEventBus);
+        GoriderItems.register(modEventBus);
+        GRiderItems.register(modEventBus);
+        RideKamensItems.register(modEventBus);
+        MusicDiscItems.register(modEventBus);
         Rider_Blocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
         AttributeRegistry.ATTRIBUTES.register(modEventBus);
-        RiderTabs.register(modEventBus);
+        CreativeTabRegistry.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
         ModGameRules.register(modEventBus);
@@ -150,7 +187,7 @@ public class KamenRiderCraftCore {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        RiderTabs.AddItemsToTabs(event);
+        CreativeTabRegistry.AddItemsToTabs(event);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -202,17 +239,17 @@ public class KamenRiderCraftCore {
 
         float size = 1;
 
-        if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
-            size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) + 1f);
+        if (event.getEntity().hasEffect(EffectCore.STRETCH)) {
+            size = size + ((event.getEntity().getEffect(EffectCore.STRETCH).getAmplifier()) + 1f);
         }
 
-        float size2 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
+        float size2 = event.getEntity().hasEffect(EffectCore.STRETCH) ? 1 : size;
 
-        if (event.getEntity().hasEffect(Effect_core.FLAT)) {
+        if (event.getEntity().hasEffect(EffectCore.FLAT)) {
             size2 = 0.04f;
         }
-        float size3 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
-        if (event.getEntity().hasEffect(Effect_core.WIDE)) {
+        float size3 = event.getEntity().hasEffect(EffectCore.STRETCH) ? 1 : size;
+        if (event.getEntity().hasEffect(EffectCore.WIDE)) {
             size2 = size2 * 3;
             size3 = size3 * 3;
         }
@@ -225,7 +262,7 @@ public class KamenRiderCraftCore {
 
         @SubscribeEvent
         public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
-            event.register(custom_dimension_effect.MOON_EFFECTS, new custom_dimension_effect.MoonEffects());
+            event.register(CustomDimensionEffect.MOON_EFFECTS, new CustomDimensionEffect.MoonEffects());
         }
 
         @SubscribeEvent
@@ -700,6 +737,921 @@ public class KamenRiderCraftCore {
                     ServerPayloadHandler::handlePoseKeyPress
             );
         }
+    }
+
+    public static class CreativeTabRegistry {
+
+        public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
+                MOD_ID);
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderEggTab = CREATIVE_MODE_TABS.register("krc_996_egg_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(MobsCore.SHOCKER_RIDER_SPAWN_EGG.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.egg_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderMiscTab = CREATIVE_MODE_TABS.register("krc_997_misc_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.RIDER_CIRCUIT.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.misc_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderblockTab = CREATIVE_MODE_TABS.register("krc_998_blocks_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.MONITOR.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.rider_blocks")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderdecorTab = CREATIVE_MODE_TABS.register("krc_999_blocks_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.PLANKS_LIGHT_BLUE.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.rider_blocks_decor")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> IchigoTab = CREATIVE_MODE_TABS.register("krc_010_ichigo_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(IchigoRiderItems.ICHIGOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.ichigo_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> TheIchigoTab = CREATIVE_MODE_TABS.register("krc_011_the_ichigo_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(TheSeriesRiderItems.THE_ICHIGO_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.the_ichigo_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> ShinIchigoTab = CREATIVE_MODE_TABS.register("krc_012_shin_ichigo_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(ShinIchigoRiderItems.SHIN_ICHIGO_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.shin_ichigo_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> V3Tab = CREATIVE_MODE_TABS.register("krc_020_v3_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(V3RiderItems.V3HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.v3_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> XTab = CREATIVE_MODE_TABS.register("krc_030_x_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(XRiderItems.XHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.x_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMAZONTab = CREATIVE_MODE_TABS.register("krc_040_amazon_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(AmazonRiderItems.AMAZONHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.amazon_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> STRONGERTab = CREATIVE_MODE_TABS.register("krc_050_stronger_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(StrongerRiderItems.STRONGERHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.stronger_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> SKYRIDERTab = CREATIVE_MODE_TABS.register("krc_060_skyrider_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(SkyriderItems.SKYRIDERHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.skyrider_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> SUPER1Tab = CREATIVE_MODE_TABS.register("krc_070_super_1_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Super1RiderItems.SUPER1HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.super_1_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZXTab = CREATIVE_MODE_TABS.register("krc_090_zx_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(ZXRiderItems.ZXHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.zx_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> BLACKTab = CREATIVE_MODE_TABS.register("krc_100_black_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(BlackRiderItems.BLACKHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.black_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RXTab = CREATIVE_MODE_TABS.register("krc_101_rx_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(BlackRXRiderItems.RXHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.rx_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> SHINTab = CREATIVE_MODE_TABS.register("krc_110_shin_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(ShinRiderItems.SHINHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.shin_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZOTab = CREATIVE_MODE_TABS.register("krc_120_zo_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(ZORiderItems.ZOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.zo_items")).build());
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> JTab = CREATIVE_MODE_TABS.register("krc_130_j_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(JRiderItems.JHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.j_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> KuugaTab = CREATIVE_MODE_TABS.register("krc_210_kuuga_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Kuuga_Rider_Items.KUUGAHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kuuga_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.kuuga_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> AgitoTab = CREATIVE_MODE_TABS.register("krc_220_agito_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Agito_Rider_Items.AGITOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_agito_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.agito_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RyukiTab = CREATIVE_MODE_TABS.register("krc_230_ryuki_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ryuki_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.ryuki_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> FaizTab = CREATIVE_MODE_TABS.register("krc_240_faiz_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Faiz_Rider_Items.FAIZHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_faiz_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.faiz_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> BladeTab = CREATIVE_MODE_TABS.register("krc_250_blade_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Blade_Rider_Items.BLADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_blade_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.blade_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> HibikiTab = CREATIVE_MODE_TABS.register("krc_260_hibiki_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Hibiki_Rider_Items.HIBIKIHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_hibiki_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.hibiki_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> KabutoTab = CREATIVE_MODE_TABS.register("krc_270_kabuto_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Kabuto_Rider_Items.KABUTOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kabuto_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.kabuto_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> DenOTab = CREATIVE_MODE_TABS.register("krc_280_den_o_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_den_o_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.den_o_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> KivaTab = CREATIVE_MODE_TABS.register("krc_290_kiva_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Kiva_Rider_Items.KIVAHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kiva_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.kiva_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> DecadeTab = CREATIVE_MODE_TABS.register("krc_300_decade_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Decade_Rider_Items.DECADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_decade_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.decade_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> WTab = CREATIVE_MODE_TABS.register("krc_310_w_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(W_Rider_Items.WHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_w_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.w_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> OOOTab = CREATIVE_MODE_TABS.register("krc_320_ooo_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(OOO_Rider_Items.OOOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ooo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.ooo_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> FOURZETab = CREATIVE_MODE_TABS.register("krc_330_fourze_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Fourze_Rider_Items.FOURZE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_fourze_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.fourze_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> WIZARDTab = CREATIVE_MODE_TABS.register("krc_340_wizard_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_wizard_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.wizard_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GAIMTab = CREATIVE_MODE_TABS.register("krc_350_gaim_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Gaim_Rider_Items.GAIM_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gaim_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.gaim_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> DRIVETab = CREATIVE_MODE_TABS.register("krc_360_drive_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_drive_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.drive_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GHOSTTab = CREATIVE_MODE_TABS.register("krc_370_ghost_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ghost_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.ghost_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> EX_AIDTab = CREATIVE_MODE_TABS.register("krc_380_exaid_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ex_aid_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.ex_aid_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> BUILDTab = CREATIVE_MODE_TABS.register("krc_390_build_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Build_Rider_Items.BUILD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_build_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.build_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZI_OTab = CREATIVE_MODE_TABS.register("krc_400_zi_o_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zi_o_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.zi_o_items")).build());
+
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> Zero_OneTab = CREATIVE_MODE_TABS.register("krc_410_zero_one_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zero_one_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.zero_one_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> SABERTab = CREATIVE_MODE_TABS.register("krc_420_saber_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Saber_Rider_Items.SABER_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_saber_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.saber_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> ReviceTab = CREATIVE_MODE_TABS.register("krc_430_geats_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Revice_Rider_Items.REVICE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_revice_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.revice_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GeatsTab = CREATIVE_MODE_TABS.register("krc_440_geats_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Geats_Rider_Items.GEATS_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_geats_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.geats_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GotchardTab = CREATIVE_MODE_TABS.register("krc_450_gotchard_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gotchard_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.gotchard_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GavvTab = CREATIVE_MODE_TABS.register("krc_460_gavv_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gavv_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.gavv_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZeztzTab = CREATIVE_MODE_TABS.register("krc_470_zeztz_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zeztz_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.zeztz_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> My_thTab = CREATIVE_MODE_TABS.register("krc_480_my_th_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.MY_TH_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.my_th_items")).build());
+
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GTab = CREATIVE_MODE_TABS.register("krc_800_g_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(GRiderItems.GHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_g_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.g_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> GoriderTab = CREATIVE_MODE_TABS.register("krc_810_gorider_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(GoriderItems.AKARIDERHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gorider_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.gorider_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> RideKamensTab = CREATIVE_MODE_TABS.register("krc_830_ride_kamens_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(RideKamensItems.RIDE_KAMENS_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ride_kamens_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.ride_kamens_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMAZONSTab = CREATIVE_MODE_TABS.register("krc_041_amazons_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(AmazonsRiderItems.AMAZONSHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_amazons_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.amazons_items")).build());
+
+        public static DeferredHolder<CreativeModeTab, CreativeModeTab> BLACKSUNTab = CREATIVE_MODE_TABS.register("krc_102_black_sun_tab", () ->
+                CreativeModeTab.builder().icon(() -> new ItemStack(BlackSunRiderItems.BLACKSUNHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_black_sun_items.png"))
+                        .title(Component.translatable("tab.kamenridercraft.black_sun_items")).build());
+
+        public static List<Item> ICHIGO_TAB_ITEM = new ArrayList<>();
+        public static List<Item> THE_TAB_ITEM = new ArrayList<>();
+
+        public static List<Item> V3_TAB_ITEM = new ArrayList<>();
+        public static List<Item> X_TAB_ITEM = new ArrayList<>();
+        public static List<Item> AMAZON_TAB_ITEM = new ArrayList<>();
+        public static List<Item> STRONGER_TAB_ITEM = new ArrayList<>();
+        public static List<Item> SKYRIDER_TAB_ITEM = new ArrayList<>();
+        public static List<Item> SUPER1_TAB_ITEM = new ArrayList<>();
+        public static List<Item> ZX_TAB_ITEM = new ArrayList<>();
+        public static List<Item> BLACK_TAB_ITEM = new ArrayList<>();
+        public static List<Item> RX_TAB_ITEM = new ArrayList<>();
+        public static List<Item> SHIN_TAB_ITEM = new ArrayList<>();
+        public static List<Item> ZO_TAB_ITEM = new ArrayList<>();
+        public static List<Item> J_TAB_ITEM = new ArrayList<>();
+
+        public static List<Item> KUUGA_TAB_ITEM = new ArrayList<>();
+        public static List<Item> AGITO_TAB_ITEM = new ArrayList<>();
+        public static List<Item> RYUKI_TAB_ITEM = new ArrayList<>();
+        public static List<Item> FAIZ_TAB_ITEM = new ArrayList<>();
+        public static List<Item> BLADE_TAB_ITEM = new ArrayList<>();
+        public static List<Item> HIBIKI_TAB_ITEM = new ArrayList<>();
+        public static List<Item> KABUTO_TAB_ITEM = new ArrayList<>();
+        public static List<Item> DEN_O_TAB_ITEM = new ArrayList<>();
+        public static List<Item> KIVA_TAB_ITEM = new ArrayList<>();
+        public static List<Item> DECADE_TAB_ITEM = new ArrayList<>();
+
+        public static List<Item> W_TAB_ITEM = new ArrayList<>();
+        public static List<Item> OOO_TAB_ITEM = new ArrayList<>();
+        public static List<Item> FOURZE_TAB_ITEM = new ArrayList<>();
+        public static List<Item> WIZARD_TAB_ITEM = new ArrayList<>();
+        public static List<Item> GAIM_TAB_ITEM = new ArrayList<>();
+        public static List<Item> DRIVE_TAB_ITEM = new ArrayList<>();
+        public static List<Item> EX_AID_TAB_ITEM = new ArrayList<>();
+        public static List<Item> GHOST_TAB_ITEM = new ArrayList<>();
+        public static List<Item> BUILD_TAB_ITEM = new ArrayList<>();
+        public static List<Item> ZI_O_TAB_ITEM = new ArrayList<>();
+        public static List<Item> ZERO_ONE_TAB_ITEM = new ArrayList<>();
+        public static List<Item> SABER_TAB_ITEM = new ArrayList<>();
+        public static List<Item> REVICE_TAB_ITEM = new ArrayList<>();
+        public static List<Item> GEATS_TAB_ITEM = new ArrayList<>();
+        public static List<Item> GOTCHARD_TAB_ITEM = new ArrayList<>();
+        public static List<Item> GAVV_TAB_ITEM = new ArrayList<>();
+        public static List<Item> ZEZTZ_TAB_ITEM = new ArrayList<>();
+        public static List<Item> MY_TH_TAB_ITEM = new ArrayList<>();
+
+        public static List<Item> G_TAB_ITEM = new ArrayList<>();
+        public static List<Item> GORIDER_TAB_ITEM = new ArrayList<>();
+        public static List<Item> RIDE_KAMENS_TAB_ITEM = new ArrayList<>();
+        public static List<Item> AMAZONS_TAB_ITEM = new ArrayList<>();
+        public static List<Item> BLACK_SUN_TAB_ITEM = new ArrayList<>();
+        public static List<Item> SHIN_ICHIGO_TAB_ITEM = new ArrayList<>();
+
+        public static List<Block> RIDER_BLOCK = new ArrayList<>();
+        public static List<Block> RIDER_DECOR = new ArrayList<>();
+
+
+        public static List<Item> Misc_TAB_ITEM = new ArrayList<>();
+
+        public static void register(IEventBus eventBus) {
+            CREATIVE_MODE_TABS.register(eventBus);
+        }
+
+        public static void AddItemsToTabs(BuildCreativeModeTabContentsEvent event) {
+
+            if (event.getTab() == CreativeTabRegistry.IchigoTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.ICHIGO_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.ICHIGO_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.TheIchigoTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.THE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.THE_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.ShinIchigoTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.V3Tab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.V3_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.V3_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.XTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.X_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.X_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.AMAZONTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.AMAZON_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.AMAZON_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.STRONGERTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.STRONGER_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.STRONGER_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.SKYRIDERTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.SKYRIDER_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.SKYRIDER_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.SUPER1Tab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.SUPER1_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.SUPER1_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.ZXTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.ZX_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.ZX_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.BLACKTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.BLACK_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.BLACK_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.RXTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.RX_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.RX_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.SHINTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.SHIN_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.SHIN_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.ZOTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.ZO_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.ZO_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.JTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.J_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.J_TAB_ITEM.get(i));
+                }
+
+
+            } else if (event.getTab() == CreativeTabRegistry.KuugaTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.KUUGA_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.KUUGA_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.AgitoTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.AGITO_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.AGITO_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.RyukiTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.RYUKI_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.RYUKI_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.FaizTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.FAIZ_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.FAIZ_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.BladeTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.BLADE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.BLADE_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.HibikiTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.HIBIKI_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.HIBIKI_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.KabutoTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.KABUTO_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.KABUTO_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.DenOTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.DEN_O_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.DEN_O_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.KivaTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.KIVA_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.KIVA_TAB_ITEM.get(i));
+                }
+            } else if (event.getTab() == CreativeTabRegistry.DecadeTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.DECADE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.DECADE_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.WTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.W_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.W_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.OOOTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.OOO_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.OOO_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.FOURZETab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.FOURZE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.FOURZE_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GHOSTTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.GHOST_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.GHOST_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.EX_AIDTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.EX_AID_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.EX_AID_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.WIZARDTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.WIZARD_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.WIZARD_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GAIMTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.GAIM_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.GAIM_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.DRIVETab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.DRIVE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.DRIVE_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.BUILDTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.BUILD_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.BUILD_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.ZI_OTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.ZI_O_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.ZI_O_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.Zero_OneTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.ZERO_ONE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.ZERO_ONE_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.SABERTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.SABER_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.SABER_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.ReviceTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.REVICE_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.REVICE_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GeatsTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.GEATS_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.GEATS_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GotchardTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.GOTCHARD_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.GOTCHARD_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GavvTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.GAVV_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.GAVV_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.ZeztzTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.ZEZTZ_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.ZEZTZ_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.My_thTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.MY_TH_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.MY_TH_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.AMAZONSTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.AMAZONS_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.AMAZONS_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.BLACKSUNTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.BLACK_SUN_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.BLACK_SUN_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.G_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.G_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.GoriderTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.GORIDER_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.GORIDER_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.RideKamensTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM.get(i));
+                }
+
+            } else if (event.getTab() == CreativeTabRegistry.RiderblockTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.RIDER_BLOCK.size(); i++) {
+                    event.accept(CreativeTabRegistry.RIDER_BLOCK.get(i));
+                }
+                event.accept(Rider_Blocks.RABBIT_HUTCH_DOOR);
+                // event.accept(Rider_Blocks.BLUE_ROSE.get());
+
+            } else if (event.getTab() == CreativeTabRegistry.RiderdecorTab.get()) {
+                for (int i = 0; i < CreativeTabRegistry.RIDER_DECOR.size(); i++) {
+                    event.accept(CreativeTabRegistry.RIDER_DECOR.get(i));
+                }
+                event.accept(Rider_Blocks.SHOCKER_LOGO);
+                event.accept(Rider_Blocks.BLUE_ROSE);
+
+                event.accept(Rider_Blocks.HELHEIM_PLANT);
+                event.accept(Rider_Blocks.HELHEIM_PLANT_2);
+                event.accept(Rider_Blocks.HELHEIM_PLANT_3);
+                event.accept(Rider_Blocks.HELHEIM_PLANT_4);
+                event.accept(Rider_Blocks.HELHEIM_STAIRS);
+                event.accept(Rider_Blocks.HELHEIM_SLAB);
+                event.accept(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
+                event.accept(Rider_Blocks.HELHEIM_BUTTON);
+                event.accept(Rider_Blocks.HELHEIM_FENCE);
+                event.accept(Rider_Blocks.HELHEIM_FENCE_GATE);
+                event.accept(Rider_Blocks.HELHEIM_DOOR);
+                event.accept(Rider_Blocks.HELHEIM_TRAPDOOR);
+                event.accept(Modded_item_core.HELHEIM_SIGN_ITEM);
+                event.accept(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM);
+                event.accept(Rider_Blocks.HELHEIM_SAPLING);
+                event.accept(Rider_Blocks.HELHEIM_LEAVES);
+                event.accept(Rider_Blocks.HELHEIM_VINE);
+
+                event.accept(Rider_Blocks.WONDERWOOD_DOOR);
+
+                event.accept(Rider_Blocks.WHITE_FENCE);
+
+                event.accept(Rider_Blocks.STEEL_LADDER);
+                event.accept(Rider_Blocks.RABBIT_HUTCH_LADDER);
+
+                event.accept(Rider_Blocks.JAIL_DOOR);
+                event.accept(Rider_Blocks.GOLD_DOOR);
+
+                event.accept(Rider_Blocks.WINDOW_PLANKS);
+                event.accept(Rider_Blocks.CASTLE_DORAN_LOGO);
+                event.accept(Rider_Blocks.DRIVE_PIT_LOGO);
+                event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
+
+                event.accept(Rider_Blocks.WHITEBOARD);
+
+                event.accept(Rider_Blocks.GRANUTE_GLASS_PANE);
+
+                event.accept(Rider_Blocks.WALLPLATE_GRATE);
+                event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.WHITE_WALLPLATE_WALL);
+                event.accept(Rider_Blocks.GREY_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.GREY_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.BLACK_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.BLACK_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.RED_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.RED_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.YELLOW_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.YELLOW_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.YELLOW_WALLPLATE_WALL);
+                event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.GREEN_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.GREEN_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.CYAN_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.CYAN_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.CYAN_WALLPLATE_WALL);
+                event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL);
+                event.accept(Rider_Blocks.BLUE_WALLPLATE_STAIRS);
+                event.accept(Rider_Blocks.BLUE_WALLPLATE_SLAB);
+                event.accept(Rider_Blocks.BLUE_WALLPLATE_WALL);
+                event.accept(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS);
+                event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB);
+
+
+                event.accept(Rider_Blocks.GLASS_DOOR);
+                event.accept(Rider_Blocks.PLINTH);
+
+
+            } else if (event.getTab() == CreativeTabRegistry.RiderEggTab.get()) {
+
+                event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
+                event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
+
+                event.accept(MobsCore.BATTA_AUGMENT_SPAWN_EGG);
+                event.accept(MobsCore.SHIN_NO_0_SPAWN_EGG);
+
+                event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
+                event.accept(MobsCore.GOD_WARFARE_AGENT_SPAWN_EGG);
+                event.accept(MobsCore.APOLLOGIST_SPAWN_EGG);
+                event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
+                event.accept(MobsCore.BLACK_SATAN_SOLDIER_SPAWN_EGG);
+                event.accept(MobsCore.ARI_COMMANDO_SPAWN_EGG);
+                event.accept(MobsCore.DOGMA_FIGHTER_SPAWN_EGG);
+                event.accept(MobsCore.COMBAT_ROID_SPAWN_EGG);
+                event.accept(MobsCore.CHAP_SPAWN_EGG);
+                event.accept(MobsCore.CHAP_GREY_SPAWN_EGG);
+                event.accept(MobsCore.SHADOWMOON_SPAWN_EGG);
+
+                event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
+                event.accept(MobsCore.N_DAGUVA_ZEBA_SPAWN_EGG);
+
+                event.accept(MobsCore.PANTHERAS_LUTEUS_SPAWN_EGG);
+                event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
+                event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
+                event.accept(MobsCore.ANOTHER_AGITO_SPAWN_EGG);
+
+                event.accept(MobsCore.MIRROR_RIDER_SPAWN_EGG);
+                event.accept(MobsCore.ODIN_SPAWN_EGG);
+
+                event.accept(MobsCore.RIOTROOPER_SPAWN_EGG);
+                event.accept(MobsCore.ORGA_SPAWN_EGG);
+                event.accept(MobsCore.MUEZ_SPAWN_EGG);
+                event.accept(MobsCore.FAIZ_SPAWN_EGG);
+
+                event.accept(MobsCore.BAKENEKO_SPAWN_EGG);
+                event.accept(MobsCore.MIDAREDOUJI_SPAWN_EGG);
+                event.accept(MobsCore.MAKAMOU_NINJA_GROUP_SPAWN_EGG);
+                event.accept(MobsCore.KABUKI_SPAWN_EGG);
+
+                event.accept(MobsCore.ZECTROOPER_SPAWN_EGG);
+                event.accept(MobsCore.SHADOW_TROOPER_SPAWN_EGG);
+                event.accept(MobsCore.NEOTROOPER_SPAWN_EGG);
+                event.accept(MobsCore.CAUCASUS_SPAWN_EGG);
+
+                event.accept(MobsCore.NEW_MOLE_IMAGIN_SPAWN_EGG);
+                event.accept(MobsCore.NEW_MOLE_IMAGIN_SAND_SPAWN_EGG);
+                event.accept(MobsCore.GAOH_SPAWN_EGG);
+                event.accept(MobsCore.MOMOTAROS_SPAWN_EGG);
+                event.accept(MobsCore.URATAROS_SPAWN_EGG);
+                event.accept(MobsCore.KINTAROS_SPAWN_EGG);
+                event.accept(MobsCore.RYUTAROS_SPAWN_EGG);
+
+                event.accept(MobsCore.ARC_SPAWN_EGG);
+                event.accept(MobsCore.MOOSE_FANGIRE_SPAWN_EGG);
+
+                event.accept(MobsCore.DECADE_VIOLENT_SPAWN_EGG);
+
+                event.accept(MobsCore.MASQUERADE_SPAWN_EGG);
+                event.accept(MobsCore.CLAYDOLL_DOPANT_SPAWN_EGG);
+                event.accept(MobsCore.TERROR_DOPANT_SPAWN_EGG);
+                event.accept(MobsCore.TABOO_DOPANT_SPAWN_EGG);
+                event.accept(MobsCore.NASCA_DOPANT_SPAWN_EGG);
+                //event.accept(MobsCore.RED_NASCA_DOPANT_SPAWN_EGG);
+                event.accept(MobsCore.SMILODON_DOPANT_SPAWN_EGG);
+                event.accept(MobsCore.WEATHER_DOPANT_SPAWN_EGG);
+
+                event.accept(MobsCore.FOUNDATION_X_MASQUERADE_SPAWN_EGG);
+                event.accept(MobsCore.COMMANDER_DOPANT_SPAWN_EGG);
+                event.accept(MobsCore.ETERNAL_SPAWN_EGG);
+
+                event.accept(MobsCore.YUMMY_SPAWN_EGG);
+                event.accept(MobsCore.KNIGHT_SOLDIER_SPAWN_EGG);
+                event.accept(MobsCore.ANKH_SPAWN_EGG);
+                event.accept(MobsCore.ANKH_COMPLETE_SPAWN_EGG);
+                event.accept(MobsCore.ANKH_LOST_SPAWN_EGG);
+                event.accept(MobsCore.UVA_SPAWN_EGG);
+                event.accept(MobsCore.KAZARI_SPAWN_EGG);
+                event.accept(MobsCore.MEZOOL_SPAWN_EGG);
+                event.accept(MobsCore.GAMEL_SPAWN_EGG);
+                event.accept(MobsCore.KYORYU_GREEED_SPAWN_EGG);
+                event.accept(MobsCore.MUCHIRI_SPAWN_EGG);
+                event.accept(MobsCore.SHOCKER_GREEED_SPAWN_EGG);
+                event.accept(MobsCore.POSEIDON_SPAWN_EGG);
+                event.accept(MobsCore.CORE_SPAWN_EGG);
+                event.accept(MobsCore.POWERED_UP_CORE_SPAWN_EGG);
+                event.accept(MobsCore.ANCIENT_OOO_SPAWN_EGG);
+                event.accept(MobsCore.GODA_SPAWN_EGG);
+
+                event.accept(MobsCore.SUPER_GINGAOH_SPAWN_EGG);
+
+                event.accept(MobsCore.GHOULS_SPAWN_EGG);
+                event.accept(MobsCore.MEDUSA_PHANTOM_SPAWN_EGG);
+                event.accept(MobsCore.PHOENIX_PHANTOM_SPAWN_EGG);
+                event.accept(MobsCore.GREMLIN_PHANTOM_SPAWN_EGG);
+                event.accept(MobsCore.MAGE_FOOTSOLDIER_SPAWN_EGG);
+                event.accept(MobsCore.MAGE_CAPTAIN_SPAWN_EGG);
+                event.accept(MobsCore.SORCERER_SPAWN_EGG);
+                event.accept(MobsCore.WISEMAN_SPAWN_EGG);
+
+                event.accept(MobsCore.ELEMENTARY_INVES_RED_SPAWN_EGG);
+                event.accept(MobsCore.KUROKAGE_TROOPER_SPAWN_EGG);
+                event.accept(MobsCore.ZANGETSU_SHIN_SPAWN_EGG);
+                event.accept(MobsCore.MARIKA_SPAWN_EGG);
+                event.accept(MobsCore.DUKE_SPAWN_EGG);
+                event.accept(MobsCore.SIGURD_SPAWN_EGG);
+                event.accept(MobsCore.ROSYUO_SPAWN_EGG);
+                event.accept(MobsCore.REDYUE_SPAWN_EGG);
+                event.accept(MobsCore.DEMUSHU_SPAWN_EGG);
+                event.accept(MobsCore.LORD_BARON_SPAWN_EGG);
+                event.accept(MobsCore.MEGAHEX_SPAWN_EGG);
+
+
+                event.accept(MobsCore.ROIDMUDE_SPAWN_EGG);
+                event.accept(MobsCore.MASHIN_CHASER_SPAWN_EGG);
+                event.accept(MobsCore.HEART_ROIDMUDE_SPAWN_EGG);
+                event.accept(MobsCore.BRAIN_ROIDMUDE_SPAWN_EGG);
+                event.accept(MobsCore.REAPER_LEGION_SPAWN_EGG);
+                event.accept(MobsCore.MEDIC_ROIDMUDE_SPAWN_EGG);
+                event.accept(MobsCore.GORD_DRIVE_SPAWN_EGG);
+                event.accept(MobsCore.DARK_DRIVE_SPAWN_EGG);
+
+                event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
+                event.accept(MobsCore.NECROM_SPAWN_EGG);
+                event.accept(MobsCore.IGOR_SPAWN_EGG);
+                event.accept(MobsCore.DARK_NECROM_SPAWN_EGG);
+                event.accept(MobsCore.DARK_GHOST_SPAWN_EGG);
+
+                event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
+                event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
+                //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
+                //event.accept(MobsCore.TADDLE_BUGSTER_SPAWN_EGG);
+                //event.accept(MobsCore.BANG_BANG_BUGSTER_SPAWN_EGG);
+                event.accept(MobsCore.RIDEPLAYER_SPAWN_EGG);
+                //event.accept(MobsCore.LOVELY_BUGSTER_SPAWN_EGG);
+                //event.accept(MobsCore.LOVELICA_BUGSTER_SPAWN_EGG);
+                event.accept(MobsCore.GENM_SPAWN_EGG);
+                event.accept(MobsCore.GRAPHITE_BUGSTER_SPAWN_EGG);
+                event.accept(MobsCore.POPPY_RED_SPAWN_EGG);
+                event.accept(MobsCore.PARADX_SPAWN_EGG);
+                event.accept(MobsCore.CRONUS_SPAWN_EGG);
+
+                event.accept(MobsCore.GUARDIAN_SPAWN_EGG);
+                event.accept(MobsCore.HOKUTO_GUARDIAN_SPAWN_EGG);
+                event.accept(MobsCore.SEITO_GUARDIAN_SPAWN_EGG);
+                event.accept(MobsCore.HARD_GUARDIAN_SPAWN_EGG);
+                event.accept(MobsCore.BLOOD_STALK_SPAWN_EGG);
+                event.accept(MobsCore.NIGHT_ROGUE_SPAWN_EGG);
+                event.accept(MobsCore.SMASH_SPAWN_EGG);
+                event.accept(MobsCore.GREASE_SPAWN_EGG);
+                event.accept(MobsCore.BUILD_SPAWN_EGG);
+                event.accept(MobsCore.EVOL_SPAWN_EGG);
+                event.accept(MobsCore.KILLBUS_SPAWN_EGG);
+                event.accept(MobsCore.DOWNFALL_GUARDIAN_SPAWN_EGG);
+                event.accept(MobsCore.PHANTOM_CRUSHER_SPAWN_EGG);
+                event.accept(MobsCore.STAG_LOST_SMASH_SPAWN_EGG);
+                event.accept(MobsCore.HELL_BROS_SPAWN_EGG);
+                event.accept(MobsCore.MAD_ROGUE_SPAWN_EGG);
+                event.accept(MobsCore.KAISER_SPAWN_EGG);
+                event.accept(MobsCore.KAISER_REVERSE_SPAWN_EGG);
+                event.accept(MobsCore.BIKAISER_SPAWN_EGG);
+
+                event.accept(MobsCore.KASSHINE_SPAWN_EGG);
+                event.accept(MobsCore.ANOTHER_ZI_O_SPAWN_EGG);
+                event.accept(MobsCore.WOZ_SPAWN_EGG);
+                event.accept(MobsCore.GINGA_SPAWN_EGG);
+                event.accept(MobsCore.YAMININ_SPAWN_EGG);
+
+                event.accept(MobsCore.TRILOBITE_MAGIA_SPAWN_EGG);
+                event.accept(MobsCore.DODO_MAGIA_CHICK_SPAWN_EGG);
+                event.accept(MobsCore.BATTLE_RAIDER_SPAWN_EGG);
+                event.accept(MobsCore.ABADDON_SPAWN_EGG);
+                event.accept(MobsCore.MAGIA_SPAWN_EGG);
+                event.accept(MobsCore.GIGER_SPAWN_EGG);
+                event.accept(MobsCore.HOROBI_SPAWN_EGG);
+                event.accept(MobsCore.JIN_SPAWN_EGG);
+                event.accept(MobsCore.IKAZUCHI_SPAWN_EGG);
+                event.accept(MobsCore.NAKI_SPAWN_EGG);
+                event.accept(MobsCore.DODO_MAGIA_SPAWN_EGG);
+                event.accept(MobsCore.RAIDER_SPAWN_EGG);
+                event.accept(MobsCore.ARK_ZERO_SPAWN_EGG);
+                event.accept(MobsCore.ABADDON_COMMANDER_SPAWN_EGG);
+                event.accept(MobsCore.EDEN_SPAWN_EGG);
+                event.accept(MobsCore.ZAIA_SPAWN_EGG);
+                event.accept(MobsCore.DIRE_WOLF_SOLD_MAGIA_SPAWN_EGG);
+                event.accept(MobsCore.SERVAL_TIGER_SOLD_MAGIA_SPAWN_EGG);
+                event.accept(MobsCore.ZEIN_SPAWN_EGG);
+
+                event.accept(MobsCore.SHIMI_SPAWN_EGG);
+                event.accept(MobsCore.CALIBUR_SPAWN_EGG);
+                event.accept(MobsCore.FALCHION_SPAWN_EGG);
+                event.accept(MobsCore.SABELA_SPAWN_EGG);
+                event.accept(MobsCore.DURENDAL_SPAWN_EGG);
+                event.accept(MobsCore.SOLOMON_SPAWN_EGG);
+                event.accept(MobsCore.STORIOUS_RIDER_SPAWN_EGG);
+                event.accept(MobsCore.LEGEIEL_SPAWN_EGG);
+                event.accept(MobsCore.LEGEIEL_FORBIDDEN_SPAWN_EGG);
+                event.accept(MobsCore.ZOOOUS_SPAWN_EGG);
+                event.accept(MobsCore.ZOOOUS_PREDATOR_SPAWN_EGG);
+                event.accept(MobsCore.STORIOUS_SPAWN_EGG);
+                event.accept(MobsCore.DESAST_SPAWN_EGG);
+                event.accept(MobsCore.CHARYBDIS_SPAWN_EGG);
+                event.accept(MobsCore.CHARYBDIS_HERCULES_SPAWN_EGG);
+
+                event.accept(MobsCore.GIFF_JUNIOR_SPAWN_EGG);
+                event.accept(MobsCore.EVIL_SPAWN_EGG);
+                event.accept(MobsCore.DAIOUIKA_DEADMAN_SPAWN_EGG);
+                event.accept(MobsCore.ANOMALOCARIS_DEADMAN_SPAWN_EGG);
+                event.accept(MobsCore.QUEEN_BEE_DEADMAN_SPAWN_EGG);
+                event.accept(MobsCore.WOLF_DEADMAN_SPAWN_EGG);
+                event.accept(MobsCore.VAIL_SPAWN_EGG);
+
+                event.accept(MobsCore.PAWN_JYAMATO_SPAWN_EGG);
+                event.accept(MobsCore.JYAMATO_RIDER_SPAWN_EGG);
+                event.accept(MobsCore.GM_RIDER_SPAWN_EGG);
+                event.accept(MobsCore.GLARE_SPAWN_EGG);
+                event.accept(MobsCore.GLARE2_SPAWN_EGG);
+                event.accept(MobsCore.GAZER_SPAWN_EGG);
+                event.accept(MobsCore.END_RIDER_SPAWN_EGG);
+                event.accept(MobsCore.PREMIUM_BEROBA_SPAWN_EGG);
+                event.accept(MobsCore.PREMIUM_KEKERA_SPAWN_EGG);
+
+                event.accept(MobsCore.MALGAM_SPAWN_EGG);
+                event.accept(MobsCore.DREAD_SPAWN_EGG);
+                event.accept(MobsCore.GOLEM_SPAWN_EGG);
+                event.accept(MobsCore.GIGIST_SPAWN_EGG);
+                event.accept(MobsCore.GERMAIN_SPAWN_EGG);
+                event.accept(MobsCore.GAELIJAH_SPAWN_EGG);
+                event.accept(MobsCore.ELD_SPAWN_EGG);
+
+                event.accept(MobsCore.AGENT_SPAWN_EGG);
+                event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);
+                event.accept(MobsCore.JEEB_STOMACH_SPAWN_EGG);
+                event.accept(MobsCore.SHIITA_STOMACH_SPAWN_EGG);
+                event.accept(MobsCore.NYELV_STOMACH_SPAWN_EGG);
+                event.accept(MobsCore.GLOTTA_STOMACH_SPAWN_EGG);
+                event.accept(MobsCore.LANGO_STOMACH_SPAWN_EGG);
+                event.accept(MobsCore.BOCCA_JALDAK_SPAWN_EGG);
+                event.accept(MobsCore.CARIES_SPAWN_EGG);
+
+                event.accept(MobsCore.NOX_SPAWN_EGG);
+
+
+            } else if (event.getTab() == CreativeTabRegistry.RiderMiscTab.get()) {
+
+                event.accept(MobsCore.BICYCLE_SPAWN_EGG);
+                event.accept(MobsCore.ACROBATTER_SPAWN_EGG);
+                event.accept(MobsCore.RIDORON_SPAWN_EGG);
+                event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
+                event.accept(MobsCore.AUTO_VAJIN_SPAWN_EGG);
+                event.accept(MobsCore.MACEHINE_DENBIRD_SPAWN_EGG);
+                event.accept(MobsCore.HARDBOILER_SPAWN_EGG);
+                event.accept(MobsCore.SKULLBOILER_SPAWN_EGG);
+                event.accept(MobsCore.ACCEL_BIKE_FORM_SPAWN_EGG);
+                event.accept(MobsCore.RIDEVENDOR_SPAWN_EGG);
+                event.accept(MobsCore.TORIDEVENDOR_SPAWN_EGG);
+                event.accept(MobsCore.MACEHINE_MASSIGLER_SPAWN_EGG);
+                event.accept(MobsCore.SAKURA_HURRICANE_SPAWN_EGG);
+                event.accept(MobsCore.ROSE_ATTACKER_SPAWN_EGG);
+                event.accept(MobsCore.BIKE_GAMER_SPAWN_EGG);
+                event.accept(MobsCore.SPORTS_GAMER_SPAWN_EGG);
+                event.accept(MobsCore.PROTO_SPORTS_GAMER_SPAWN_EGG);
+                event.accept(MobsCore.MACEHINE_BUILDER_SPAWN_EGG);
+                event.accept(MobsCore.RIDESTRIKER_SPAWN_EGG);
+                event.accept(MobsCore.RISEHOPPER_SPAWN_EGG);
+                event.accept(MobsCore.DIAGOSPEEDY_SPAWN_EGG);
+                event.accept(MobsCore.VICE_BIKE_SPAWN_EGG);
+                event.accept(MobsCore.BOOSTRIKER_SPAWN_EGG);
+                event.accept(MobsCore.BOOSTRIKER_GEATS_MODE_SPAWN_EGG);
+                event.accept(MobsCore.BOOSTRIKER_TYCOON_MODE_SPAWN_EGG);
+                event.accept(MobsCore.BOOSTRIKER_NA_GO_MODE_SPAWN_EGG);
+                event.accept(MobsCore.BOOSTRIKER_BUFFA_MODE_SPAWN_EGG);
+
+                for (int i = 0; i < CreativeTabRegistry.Misc_TAB_ITEM.size(); i++) {
+                    event.accept(CreativeTabRegistry.Misc_TAB_ITEM.get(i));
+                }
+                event.accept(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC);
+                event.accept(MusicDiscItems.TATAKAE_KAMEN_RIDER_V3_MUSIC_DISC);
+                event.accept(MusicDiscItems.AMAZON_RIDER_KOKO_NI_ARI_MUSIC_DISC);
+                event.accept(MusicDiscItems.SET_UP_KAMEN_RIDER_X_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAMEN_RIDER_STRONGER_NO_UTA_MUSIC_DISC);
+                event.accept(MusicDiscItems.MOERO_KAMEN_RIDER_MUSIC_DISC);
+                event.accept(MusicDiscItems.DRAGON_ROAD_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAMEN_RIDER_SUPER_1_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAMEN_RIDER_BLACK_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAMEN_RIDER_BLACK_RX_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAMEN_RIDER_KUUGA_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAMEN_RIDER_AGITO_MUSIC_DISC);
+                event.accept(MusicDiscItems.ALIVE_A_LIFE_MUSIC_DISC);
+                event.accept(MusicDiscItems.JUSTIFAIZ_MUSIC_DISC);
+                event.accept(MusicDiscItems.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
+                event.accept(MusicDiscItems.ELEMENTS_MUSIC_DISC);
+                event.accept(MusicDiscItems.REBIRTH_MUSIC_DISC);
+                event.accept(MusicDiscItems.KAGAYAKI_MUSIC_DISC);
+                event.accept(MusicDiscItems.NEXT_LEVEL_MUSIC_DISC);
+                event.accept(MusicDiscItems.CLIMAX_JUMP_MUSIC_DISC);
+                event.accept(MusicDiscItems.BREAK_THE_CHAIN_MUSIC_DISC);
+                event.accept(MusicDiscItems.JOURNEY_THROUGH_THE_DECADE_MUSIC_DISC);
+                event.accept(MusicDiscItems.WBX_MUSIC_DISC);
+                event.accept(MusicDiscItems.ANYTHING_GOES_MUSIC_DISC);
+                event.accept(MusicDiscItems.SWITCH_ON_MUSIC_DISC);
+                event.accept(MusicDiscItems.LIFE_IS_SHOWTIME_MUSIC_DISC);
+                event.accept(MusicDiscItems.JUST_LIVE_MORE_MUSIC_DISC);
+                event.accept(MusicDiscItems.SURPRISE_DRIVE_MUSIC_DISC);
+                event.accept(MusicDiscItems.WARERA_OMOU_YUE_NI_WARERA_ARI_MUSIC_DISC);
+                event.accept(MusicDiscItems.EXCITE_KEY_MUSIC_DISC);
+                event.accept(MusicDiscItems.BE_THE_ONE_MUSIC_DISC);
+                event.accept(MusicDiscItems.OVER_QUARTZER_MUSIC_DISC);
+                event.accept(MusicDiscItems.P_A_R_T_Y_UNIVERSE_FESTIVAL_MUSIC_DISC);
+                event.accept(MusicDiscItems.REAL_X_EYEZ_MUSIC_DISC);
+                event.accept(MusicDiscItems.ALMIGHTY_MUSIC_DISC);
+                event.accept(MusicDiscItems.LIVEDEVIL_MUSIC_DISC);
+                event.accept(MusicDiscItems.GEORGE_KARIZAKIS_RIDER_SYSTEM_MUSIC_DISC);
+                event.accept(MusicDiscItems.TRUST_LAST_MUSIC_DISC);
+                event.accept(MusicDiscItems.CHEMY_X_STORY_MUSIC_DISC);
+                event.accept(MusicDiscItems.CHEMY_X_STORY_FLOW_MUSIC_DISC);
+                event.accept(MusicDiscItems.GOT_BOOST_MUSIC_DISC);
+                event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
+                event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
+
+                event.accept(MusicDiscItems.MASKED_RIDER_MUSIC_DISC);
+            }
+        }
+
     }
 }
 

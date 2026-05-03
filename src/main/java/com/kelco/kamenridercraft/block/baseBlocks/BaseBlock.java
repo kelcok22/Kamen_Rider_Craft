@@ -1,10 +1,11 @@
 package com.kelco.kamenridercraft.block.baseBlocks;
 
 
-import java.util.List;
-
 import com.kelco.kamenridercraft.data.ModBlockStateProvider;
 import net.minecraft.world.level.block.Block;
+
+import java.util.List;
+
 public class BaseBlock extends Block {
 
 

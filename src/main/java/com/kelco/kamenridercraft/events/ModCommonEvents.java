@@ -7,21 +7,32 @@ import com.kelco.kamenridercraft.client.models.DoggaModel;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.client.models.MidaredoujiModel;
-import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.*;
-import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
-import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import com.kelco.kamenridercraft.entity.mobs.bosses.*;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.*;
 import com.kelco.kamenridercraft.entity.mobs.summons.*;
 import com.kelco.kamenridercraft.entity.mobs.villager.RiderVillagers;
-import com.kelco.kamenridercraft.item.*;
-import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.decade.ZeinCardItem;
-import com.kelco.kamenridercraft.item.gavv.GochipodItem;
+import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
+import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.extra_riders.CrossSeriesRiderItems;
+import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
+import com.kelco.kamenridercraft.item.extra_riders.GRiderItems;
+import com.kelco.kamenridercraft.item.extra_riders.RideKamensItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCardItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
+import com.kelco.kamenridercraft.item.reiwa.*;
+import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
+import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
@@ -101,7 +112,7 @@ public class ModCommonEvents {
               Inventory inventory = player.getInventory();
               boolean hasSURVIVE = inventory.countItem(Ryuki_Rider_Items.BLANK_DECK.get()) != 0;
               if (hasSURVIVE) {
-                    player.addEffect(new MobEffectInstance(Effect_core.MIRROR_NOISES, 300, 0,false,true));
+                    player.addEffect(new MobEffectInstance(EffectCore.MIRROR_NOISES, 300, 0,false,true));
               }
           }
           }
@@ -122,17 +133,17 @@ public class ModCommonEvents {
 
 			ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
 			if (event.getEntity().level().dimension() == MOON && event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_MOON_GRAVITY)) {
-				event.getEntity().addEffect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 30, 7, false, false));
+				event.getEntity().addEffect(new MobEffectInstance(EffectCore.LOW_GRAVITY, 30, 7, false, false));
 			}
 
 			LocalDate localdate = LocalDate.now();
 			int day = localdate.getDayOfMonth();
 			if (localdate.getMonthValue() == 12 && day >= 22 && day <= 28 ) {
-				event.getEntity().addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 30, 0, false, false));
+				event.getEntity().addEffect(new MobEffectInstance(EffectCore.CHRISTMAS, 30, 0, false, false));
 			}
 
             if (event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_HAPPY_MODE)) {
-                event.getEntity().addEffect(new MobEffectInstance(Effect_core.HAPPY_MODE, 30, 0, false, false));
+                event.getEntity().addEffect(new MobEffectInstance(EffectCore.HAPPY_MODE, 30, 0, false, false));
             }
 		}
 
@@ -151,11 +162,11 @@ public class ModCommonEvents {
                    }
                 }
 **/
-            if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(Effect_core.CLIMBING)) {
+            if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(EffectCore.CLIMBING)) {
                                 if ( entity.horizontalCollision) {
                                   //  entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
                                     Vec3 initialVec = entity.getDeltaMovement();
-                                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(1+entity.getEffect(Effect_core.CLIMBING).getAmplifier()), initialVec.z);
+                                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(1+entity.getEffect(EffectCore.CLIMBING).getAmplifier()), initialVec.z);
                                     entity.setDeltaMovement(climbVec.scale(0.97D));
                                 }
             }
@@ -279,7 +290,7 @@ public class ModCommonEvents {
 
 				 if (event.getEntity() instanceof Player player) {
 
-                     if (event.getItem().getItem()==Gaim_Rider_Items.HELHEIM_FRUIT.asItem()&player.getInventory().countItem(Gaim_Rider_Items.GURONBARYAMU.get()) > 0&player.getItemBySlot(EquipmentSlot.FEET).getItem()==Gaim_Rider_Items.SENGOKU_DRIVER_BARON.asItem()) {
+                     if (event.getItem().getItem()==Gaim_Rider_Items.HELHEIM_FRUIT.asItem()&player.getInventory().countItem(Gaim_Rider_Items.GURONBARYAMU.get()) > 0&player.getItemBySlot(EquipmentSlot.FEET).getItem()== Gaim_Rider_Items.SENGOKU_DRIVER_BARON.asItem()) {
                          RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem)Gaim_Rider_Items.LORD_BARON.get();
                          alternativeItem_form_change.use(event.getEntity().level(), player, InteractionHand.MAIN_HAND);
                      }
@@ -373,7 +384,7 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void addLivingDamageEvent(LivingDeathEvent event) {
             if (event.getSource().getEntity() instanceof Player player){
-                if (player.hasEffect(Effect_core.HAPPY_MODE)) {
+                if (player.hasEffect(EffectCore.HAPPY_MODE)) {
                     player.sendSystemMessage(Component.literal(Component.translatable("happy_mode.kamenridercraft.sleep").getString()));
 					if (event.getEntity() instanceof ShadowmoonEntity) player.sendSystemMessage(Component.literal(Component.translatable("happy_mode.kamenridercraft.cheese_man").getString()));
                 }
@@ -409,7 +420,7 @@ public class ModCommonEvents {
 									event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
 						}
 
-                        if (_livEnt.hasEffect(Effect_core.HAPPY_MODE)) {
+                        if (_livEnt.hasEffect(EffectCore.HAPPY_MODE)) {
                             ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                     event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
                                     event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
@@ -427,23 +438,23 @@ public class ModCommonEvents {
                                     event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
                         }
 
-						if (_livEnt.hasEffect(Effect_core.RIDER_POISON_HAND)) {
+						if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND)) {
 							if (_livEnt.getMainHandItem().isEmpty()) {
-								event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, _livEnt.getEffect(Effect_core.RIDER_POISON_HAND).getAmplifier(),true,true));
+								event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, _livEnt.getEffect(EffectCore.RIDER_POISON_HAND).getAmplifier(),true,true));
 							}
 						}
-					if (_livEnt.hasEffect(Effect_core.FIRE_PUNCH)) {
+					if (_livEnt.hasEffect(EffectCore.FIRE_PUNCH)) {
 						 if (_livEnt.getMainHandItem().isEmpty()) {
-							 event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_PUNCH).getAmplifier()+1);
+							 event.getEntity().igniteForSeconds(_livEnt.getEffect(EffectCore.FIRE_PUNCH).getAmplifier()+1);
 						}
 					}
-                        if (_livEnt.hasEffect(Effect_core.FIRE_SLASH)) {
+                        if (_livEnt.hasEffect(EffectCore.FIRE_SLASH)) {
                             if (_livEnt.getMainHandItem().getItem()instanceof SwordItem||_livEnt.getMainHandItem().getItem()instanceof BaseBlasterItem) {
-                                event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_SLASH).getAmplifier()+1);
+                                event.getEntity().igniteForSeconds(_livEnt.getEffect(EffectCore.FIRE_SLASH).getAmplifier()+1);
                             }
 
                         }
-					if (_livEnt.hasEffect(Effect_core.THUNDER_PUNCH)) {
+					if (_livEnt.hasEffect(EffectCore.THUNDER_PUNCH)) {
 						if (_livEnt.getMainHandItem().isEmpty()) {
 							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
 							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
@@ -451,7 +462,7 @@ public class ModCommonEvents {
 						}
 
 					}
-					if (_livEnt.hasEffect(Effect_core.THUNDER_SLASH)) {
+					if (_livEnt.hasEffect(EffectCore.THUNDER_SLASH)) {
 						if (_livEnt.getMainHandItem().getItem()instanceof SwordItem||_livEnt.getMainHandItem().getItem()instanceof BaseBlasterItem) {
 							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
 							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
@@ -460,38 +471,38 @@ public class ModCommonEvents {
 
 					}
 
-					if (event.getEntity().hasEffect(Effect_core.FIRE_ARMOR)) {
-						_livEnt.igniteForSeconds(event.getEntity().getEffect(Effect_core.FIRE_ARMOR).getAmplifier()+1);
+					if (event.getEntity().hasEffect(EffectCore.FIRE_ARMOR)) {
+						_livEnt.igniteForSeconds(event.getEntity().getEffect(EffectCore.FIRE_ARMOR).getAmplifier()+1);
 					}
 
 
-					if (_livEnt.hasEffect(Effect_core.EXPLOSION_PUNCH)) {
+					if (_livEnt.hasEffect(EffectCore.EXPLOSION_PUNCH)) {
 						if (_livEnt.getMainHandItem().isEmpty()) {
 							boolean flag = event.getEntity().level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
-							event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(Effect_core.EXPLOSION_PUNCH).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
+							event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(EffectCore.EXPLOSION_PUNCH).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
 						}
 						}
-					if (_livEnt.hasEffect(Effect_core.EXPLOSION_SLASH)) {
+					if (_livEnt.hasEffect(EffectCore.EXPLOSION_SLASH)) {
 						if (_livEnt.getMainHandItem().getItem()instanceof SwordItem||_livEnt.getMainHandItem().getItem()instanceof BaseBlasterItem) {
 							boolean flag = event.getEntity().level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
-							event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(Effect_core.EXPLOSION_SLASH).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
+							event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(EffectCore.EXPLOSION_SLASH).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
 						}
 					}
 
-					if (event.getEntity().hasEffect(Effect_core.REFLECT)) {
-						event.getSource().getEntity().hurt(event.getSource(), (event.getOriginalDamage()) * (1 + event.getEntity().getEffect(Effect_core.REFLECT).getAmplifier() + 1));
+					if (event.getEntity().hasEffect(EffectCore.REFLECT)) {
+						event.getSource().getEntity().hurt(event.getSource(), (event.getOriginalDamage()) * (1 + event.getEntity().getEffect(EffectCore.REFLECT).getAmplifier() + 1));
 					}
 
 				} else if (event.getSource().is(DamageTypes.ARROW) || event.getSource().is(DamageTypes.MOB_PROJECTILE)) {
-					if (_livEnt.hasEffect(Effect_core.FIRE_SHOT)) {
-						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(Effect_core.FIRE_SHOT)).getAmplifier() + 1));
+					if (_livEnt.hasEffect(EffectCore.FIRE_SHOT)) {
+						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(EffectCore.FIRE_SHOT)).getAmplifier() + 1));
 					}
 
-					if (_livEnt.hasEffect(Effect_core.EXPLOSION_SHOT)) {
+					if (_livEnt.hasEffect(EffectCore.EXPLOSION_SHOT)) {
 						boolean flag = event.getEntity().level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
-						event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(Effect_core.EXPLOSION_SHOT).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
+						event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(EffectCore.EXPLOSION_SHOT).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
 					}
-					if (_livEnt.hasEffect(Effect_core.THUNDER_SHOT)) {
+					if (_livEnt.hasEffect(EffectCore.THUNDER_SHOT)) {
 
 							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
 							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
@@ -509,7 +520,7 @@ public class ModCommonEvents {
 			LivingEntity entity = event.getEntity();
 			ItemStack belt = entity.getItemBySlot(EquipmentSlot.FEET);
 			
-			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT
+			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == EffectCore.FORM_TIMEOUT
 			&& belt.getItem() instanceof RiderDriverItem driver && driver.isTransformed(entity)) {
                 driver.timeoutForms(entity, belt);
 			}
@@ -537,7 +548,7 @@ public class ModCommonEvents {
                     new ItemStack(Rider_Blocks.GASHAPON_MACHINE.get(), 1), 10, 8, 0.02F));
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
-					new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
+					new ItemStack(CrossSeriesRiderItems.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
             trades.add((trader, rand) -> new MerchantOffer(
                     new ItemCost(Items.EMERALD, 3),
                     new ItemStack(Zi_O_Rider_Items.TOY_ROBOT.get(), 1), 10, 8, 0.02F));
@@ -559,7 +570,7 @@ public class ModCommonEvents {
 			if (event.getType() == VillagerProfession.LIBRARIAN) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Ichigo_Rider_Items.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1), 10, 8, 0.02F));
+						new ItemStack(IchigoRiderItems.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
 						new ItemStack(Kuuga_Rider_Items.KUUGA_MANGA.get(), 1), 10, 8, 0.02F));
@@ -573,23 +584,23 @@ public class ModCommonEvents {
 		}
 			else if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
-						new ItemCost(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
-						new ItemStack(Ichigo_Rider_Items.PERFECTER.get(), 1), 10, 8, 0.02F));
+						new ItemCost(XRiderItems.RIDOL_CORE.get(), 1),
+						new ItemStack(XRiderItems.PERFECTER.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
 						new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Ichigo_Rider_Items.SHIN_STONE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ShinRiderItems.SHIN_STONE.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Ichigo_Rider_Items.ZO_STONE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ZORiderItems.ZO_STONE.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Ichigo_Rider_Items.J_STONE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(JRiderItems.J_STONE.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Miscellaneous_Rider_Items.GORO_WINE_BOTTLE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(GRiderItems.GORO_WINE_BOTTLE.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 4),
 						new ItemStack(Modded_item_core.SINISTER_PACHINKO_BALL.get(), 1), 10, 8, 0.02F));
@@ -598,7 +609,7 @@ public class ModCommonEvents {
 						new ItemStack(Rider_Blocks.ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
 				trades.get(3).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Ichigo_Rider_Items.NOPHOON_CORE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(IchigoRiderItems.NOPHOON_CORE.get(), 1), 10, 8, 0.02F));
 			}
 			else if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
@@ -618,21 +629,21 @@ public class ModCommonEvents {
                         new ItemStack(Zero_One_Rider_Items.ZAIA_SPEC.get(), 1), 10, 8, 0.02F));
                 trades.get(5).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
-                        new ItemStack(Modded_item_core.REAL_X_EYEZ_MUSIC_DISC.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(MusicDiscItems.REAL_X_EYEZ_MUSIC_DISC.get(), 1), 10, 8, 0.02F));
 			}
 			else if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						new ItemStack(Miscellaneous_Rider_Items.CANDY.get(), 3), 10, 8, 0.02F));
+						new ItemStack(RideKamensItems.CANDY.get(), 3), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(RideKamensItems.CONTRACT_CHAOSTONE.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 6),
-						new ItemStack(Miscellaneous_Rider_Items.GASHA_TICKET.get(), 1), 10, 8, 0.02F));
+						new ItemStack(RideKamensItems.GASHA_TICKET.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Miscellaneous_Rider_Items.ENERGY_DRINK.get(), 1), 10, 8, 0.02F));
+						new ItemStack(RideKamensItems.ENERGY_DRINK.get(), 1), 10, 8, 0.02F));
 			}
 			else if (event.getType() == RiderVillagers.AGENT_VILLAGER.get()) {
 			trades.get(1).add((trader, rand) -> new MerchantOffer(
@@ -669,7 +680,7 @@ public class ModCommonEvents {
 						new ItemStack(Modded_item_core.LOLLIPOP.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						new ItemStack(Miscellaneous_Rider_Items.CANDY.get(), 1), 10, 8, 0.02F));
+						new ItemStack(RideKamensItems.CANDY.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
 						new ItemStack(Modded_item_core.MARSHMALLOW.get(), 1), 10, 8, 0.02F));
@@ -686,22 +697,22 @@ public class ModCommonEvents {
 			else if (event.getType() == RiderVillagers.COLLECTOR_VILLAGER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						new ItemStack(Miscellaneous_Rider_Items.GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ExtraRiderItems.GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
 						new ItemStack(Rider_Blocks.RED_ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						new ItemStack(Miscellaneous_Rider_Items.RIDERMAN_HELMET.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ExtraRiderItems.RIDERMAN_HELMET.get(), 1), 10, 8, 0.02F));
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Miscellaneous_Rider_Items.GIFT.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ExtraRiderItems.GIFT.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
 						new ItemStack(Revice_Rider_Items.TOYSAURUS_VISTAMP.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 3),
-						new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
+						new ItemStack(CrossSeriesRiderItems.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
 						new ItemStack(MobsCore.BICYCLE_SPAWN_EGG.get(), 1), 10, 8, 0.02F));
@@ -710,10 +721,10 @@ public class ModCommonEvents {
 						new ItemStack(Ghost_Rider_Items.ORE_SPECTER_GHOST_EYECON.get(), 1), 10, 8, 0.02F));
 				trades.get(3).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 3),
-						new ItemStack(Miscellaneous_Rider_Items.HALLOWEEN_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ExtraRiderItems.HALLOWEEN_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
 				trades.get(3).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 3),
-						new ItemStack(Miscellaneous_Rider_Items.VALENTINE_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
+						new ItemStack(ExtraRiderItems.VALENTINE_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
 				trades.get(4).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Blade_Rider_Items.EVOLUTION_CAUCASUS, 1),
 						new ItemStack(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), 1), 10, 8, 0.02F));

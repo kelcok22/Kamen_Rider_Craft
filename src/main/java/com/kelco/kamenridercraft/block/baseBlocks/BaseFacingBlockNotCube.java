@@ -1,8 +1,6 @@
 package com.kelco.kamenridercraft.block.baseBlocks;
 
 
-import java.util.List;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -17,6 +15,9 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.List;
+
 public class BaseFacingBlockNotCube extends Block {
 
 	public static VoxelShape SHAPE = Block.box(4, 0, 6, 12,16, 10);
