@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-02T18:25:11.6309168	Item Models: kamenridercraft
+// 1.21.1	2026-05-03T13:46:08.3921333	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -118,6 +118,7 @@ cd428ab5446f04fd981d9798c4650748e862686c assets/kamenridercraft/models/item/care
 55b088b8241201d26ac204aea4794215002503ba assets/kamenridercraft/models/item/chalice_rouze_spirit_steve.json
 5703c3e49182ecf645772120c10a35b2d83b5d8e assets/kamenridercraft/models/item/chaos_ring_loq_q.json
 e0e58137aa23426a3b8595ddf99e9c7e8517b289 assets/kamenridercraft/models/item/charadeco_capsem.json
+ccb37b425aa269f6e4bd359601237daeabd88e21 assets/kamenridercraft/models/item/charge_capsem.json
 fd6378e7aa4fe861bc5392d1559b991512c63532 assets/kamenridercraft/models/item/chocoball_gochizo.json
 391de3960109a68ff0512fccc6c253f8a92374cf assets/kamenridercraft/models/item/chocodan_gochizo_matcha.json
 da477f81135474e838e77b02c2a4341f5392ac74 assets/kamenridercraft/models/item/chocodan_gochizo_strawberry.json
@@ -327,6 +328,7 @@ b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotc
 1e682f9da7eda94647df9c2d5432b78550e56d20 assets/kamenridercraft/models/item/grand_zi_o_ride_chemy_card.json
 bc58ef73a50485581df0a6721eaaadef22d0c275 assets/kamenridercraft/models/item/granute_glass_pane.json
 e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/granute_tooth.json
+fb1272d5493192915dfff1e3a685e61d947bf4ab assets/kamenridercraft/models/item/grasshopper_man_core.json
 7608288f708c160f223651069e7a3fe0483eedd5 assets/kamenridercraft/models/item/gravity_capsem.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
 922c1b4222deb2d2689c79f5c70c8bcdbbc7c477 assets/kamenridercraft/models/item/greeed_blet_kyoryu.json

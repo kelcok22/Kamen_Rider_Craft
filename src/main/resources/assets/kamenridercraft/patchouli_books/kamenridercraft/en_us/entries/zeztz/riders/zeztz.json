@@ -227,6 +227,20 @@
         "type": "patchouli:text",
         "title": "Kamen Rider Zeztz",
         "text": "Appears in:$(li)Kamen Rider Zeztz: Knock 'Em Down! Giant Robot CODE Zeroider!! (2026, Hyper Battle Video)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Boost"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "charge",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:charge_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Full Charge",
+        "text": "Accessed with the $(l:zeztz/items/capsems#charge_capsem)Charge Capsem$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Zeztz",
+        "text": "Appears in:$(li)Kamen Rider Zeztz: Into the Dream (2026, stageshow)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste"
       }
     ]
 }

@@ -221,7 +221,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:new_ore_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l)"
+			"text": "Found inside a Ghost $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l)"
 		},
 		{
 			"type": "patchouli:text",

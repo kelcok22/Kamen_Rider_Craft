@@ -19,11 +19,15 @@
 		},
       {
         "type": "patchouli:text",
-        "text": "Wizard loot:$(li)3-7 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l) (x1-2)$(li)1 $(l:wizard/items/wizard_rings#dark_ring)Dark Wizard Ring$(/l)$(br2)Gaim loot:$(li)3-7 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l) (x1-2)$(li)1 $(l:gaim/items/lockseeds#maja_lockseed)Maja Lockseed$(/l) (83.3%)$(li)1 $(l:gaim/items/lockseeds#kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (16.7%)$(br2)Geats loot:$(li)3-7 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l) (x1-2)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)Kamen Rider Osaka Geats Core ID$(/l) (22.2%)"
+        "text": "Wizard loot:$(li)3-7 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l) (x1-2)$(li)1 $(l:wizard/items/wizard_rings#dark_ring)Dark Wizard Ring$(/l)$(br2)Gaim loot:$(li)3-7 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l) (x1-2)$(li)1 $(l:gaim/items/lockseeds#maja_lockseed)Maja Lockseed$(/l) (83.3%)$(li)1 $(l:gaim/items/lockseeds#kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (16.7%)$(br2)Ghost loot:$(li)3-7 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l) (x1-2)$(li)1 $(l:ghost/items/ghost_eyecons#new_ore_ghost_eyecon)New Ore Ghost Eyecon$(/l)"
       },
-      {
-        "type": "patchouli:text",
-        "text": "$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)Kamen Rider Fukuoka Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)Kamen Rider Nagoya Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)Kamen Rider Tokyo Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/arsenal/laser_raise_bazooka)Laser Raise Bazooka$(/l) (11.1%)$(br2)Gavv loot:$(li)3-7 $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) (x1-2)$(li)1 $(l:gavv/items/gochizo#partea_gochizo)Partea Scone Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#kinchoco_gochizo)Kin Choco Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#uirou_gochizo)Uirou Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#mensen_gochizo)Men Sen Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#takosen_gochizo)Tako Sen Gochizo$(/l) (10%)$(li)1 $(l:gavv/items/gochizo#ningyo_gochizo)Ningyo Gochizo$(/l) (10%)"
-      }
+		{
+			"type": "patchouli:text",
+			"text": "Revice loot:$(li)3-7 $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) (x1-2)$(li)1 $(l:revice/items/vistamps#blood_vade_vistamp)Blood Vade Vistamp$(/l)$(br2)Geats loot:$(li)3-7 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l) (x1-2)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)Kamen Rider Osaka Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)Kamen Rider Fukuoka Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)Kamen Rider Nagoya Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)Kamen Rider Tokyo Geats Core ID$(/l) (22.2%)$(li)1 $(l:geats/arsenal/laser_raise_bazooka)Laser Raise Bazooka$(/l) (11.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Gavv loot:$(li)3-7 $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) (x1-2)$(li)1 $(l:gavv/items/gochizo#partea_gochizo)Partea Scone Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#kinchoco_gochizo)Kin Choco Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#uirou_gochizo)Uirou Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#mensen_gochizo)Men Sen Gochizo$(/l) (20%)$(li)1 $(l:gavv/items/gochizo#takosen_gochizo)Tako Sen Gochizo$(/l) (10%)$(li)1 $(l:gavv/items/gochizo#ningyo_gochizo)Ningyo Gochizo$(/l) (10%)$(br2)Zeztz loot:$(li)3-7 $(l:zeztz/items/code_capsem)CODE Capsems$(/l) (x1-2)$(li)1 $(l:zeztz/items/capsems#charge_capsem)Charge Capsem$(/l)"
+		}
     ]
 }

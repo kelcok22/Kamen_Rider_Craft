@@ -615,7 +615,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blood_vade_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside a Revice $(l:misc/stageshow)Stageshow$(/l)"
 		},
 		{
 			"type": "patchouli:text",

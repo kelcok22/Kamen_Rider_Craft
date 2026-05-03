@@ -11,7 +11,7 @@
         {
           "type": "patchouli:crafting",
           "recipe": "kamenridercraft:zeztz/code_capsem",
-		  "text": "Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
+		  "text": "Found inside a Zeztz $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:zeztz/mobs/nox_mob)Nox Knight$(/l)"
         }
 	]
 }

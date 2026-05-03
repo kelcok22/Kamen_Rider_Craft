@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_vistamp",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+			"text": "Found inside a Revice $(l:misc/stageshow)Stageshow$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
 		}
 	]
 }
