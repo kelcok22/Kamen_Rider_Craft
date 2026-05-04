@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Barlckxs",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:barlckxs",
+			"text": "Health: 60$(br)Summoned from a $(l:misc/blocks/boss_blocks#quartzer_boss_block)Quartzer Boss Block$(/l)$(br)Special moves: Uses his $(l:zi_o/riders/barlckxs#giant)Giant$(/l) form if you have a $(l:zi_o/items/ridewatches#grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Health: 60$(br2)Drops$(li)4-6 $(l:zi_o/items/blank_watch)Blank Ridewatches$(/l)$(li)1 $(l:zi_o/items/ridewatches#barlckxs_ridewatch)Barlckxs Ridewatch$(/l)$(li)1 $(l:zi_o/items/ridewatches#black_rx_ridewatch)Black RX Ridewatch $(/l)(33%)$(li)1 $(l:zi_o/items/ridewatches#bio_rider_ridewatch)Bio Rider Ridewatch $(/l)(33%)$(li)1 $(l:zi_o/items/ridewatches#robo_rider_ridewatch)Robo Rider Ridewatch $(/l)(33%)$(li)1 $(l:zi_o/items/ridewatches#ohma_zi_o_ridewatch)Ohma Zi-O Ridewatch$(/l) (consumes a $(l:zi_o/items/ridewatches#grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l))"
+		}
+	]
+}

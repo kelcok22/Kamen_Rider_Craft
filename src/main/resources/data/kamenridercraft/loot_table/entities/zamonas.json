@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:zamonas_ridewatch"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:blank_watch",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:amazon_alpha_ridewatch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:amazon_omega_ridewatch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:amazon_neo_ridewatch"
+        }
+      ]
+    }
+  ]
+    }
+

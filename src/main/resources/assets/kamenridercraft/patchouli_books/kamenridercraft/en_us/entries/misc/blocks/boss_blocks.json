@@ -210,7 +210,12 @@
 			"anchor": "ginga_boss_block",
 			"item": "kamenridercraft:ginga_boss_block",
 			"text": "Found inside $(l:zi_o/structures/ginga_meteor)Ginga's Meteor$(/l)$(br2)Mine this block to summon $(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)"
-		},
+		},{
+        "type": "patchouli:crafting",
+        "anchor": "quartzer_boss_block",
+        "recipe": "kamenridercraft:zi_o/quartzer_boss_block",
+        "text": "Mine this block to summon $(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs$(/l), $(l:zi_o/mobs/zonjis)Kamen Rider Zonjis$(/l) and $(l:zi_o/mobs/zamonas)Kamen Rider Zamonas$(/l)"
+      },
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,

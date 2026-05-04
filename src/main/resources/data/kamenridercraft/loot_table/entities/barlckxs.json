@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:barlckxs_ridewatch"
+        }
+      ]
+    },
+
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:blank_watch",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:black_rx_ridewatch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:bio_rider_ridewatch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:robo_rider_ridewatch"
+        }
+      ]
+    }
+  ]
+    }
+

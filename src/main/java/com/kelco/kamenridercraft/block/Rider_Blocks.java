@@ -1160,7 +1160,7 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WISEMAN).addLine(Component.translatable("henshin.kamenridercraft.wiseman")).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
-	public static final DeferredBlock<Block> ROSYUO_BOSS_BLOCK = registerBlock("rosyuo_boss_block",
+    public static final DeferredBlock<Block> ROSYUO_BOSS_BLOCK = registerBlock("rosyuo_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ROSYUO).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
@@ -1223,6 +1223,9 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GINGA).addLine(Component.translatable("henshin.kamenridercraft.ginga")).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> QUARTZER_BOSS_BLOCK = registerBlock("quartzer_boss_block",
+            () -> new BossBlockQuartzer(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(1f)
+            ).addLine(Component.translatable("henshin.kamenridercraft.quartzer")).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)

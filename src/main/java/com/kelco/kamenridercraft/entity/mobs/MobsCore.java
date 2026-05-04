@@ -336,7 +336,6 @@ public class MobsCore {
 
      public static final DeferredItem<DeferredSpawnEggItem> FOUNDATION_X_MASQUERADE_SPAWN_EGG = ITEMS.register("foundation_x_masquerade_spawn_egg",
              () -> new DeferredSpawnEggItem(FOUNDATION_X_MASQUERADE,  0x000000,0xFFFFFF, new Item.Properties()));
-
    
      public static final DeferredHolder<EntityType<?>, EntityType<ClayDollDopantEntity>> CLAYDOLL_DOPANT = MOBLIST.register("claydoll_dopant",
             () -> EntityType.Builder.of(ClayDollDopantEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":claydoll_dopant"));
@@ -1047,6 +1046,24 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> YAMININ_SPAWN_EGG = ITEMS.register("yaminin_spawn_egg",
             () -> new DeferredSpawnEggItem(YAMININ, 0x282828, 0xb7b7b6, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BarlckxsEntity>> BARLCKXS = MOBLIST.register("barlckxs",
+            () -> EntityType.Builder.of(BarlckxsEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":barlckxs"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BARLCKXS_SPAWN_EGG = ITEMS.register("barlckxs_spawn_egg",
+            () -> new DeferredSpawnEggItem(BARLCKXS, 0xce9700, 0xae0000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ZonjisEntity>> ZONJIS = MOBLIST.register("zonjis",
+            () -> EntityType.Builder.of(ZonjisEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zonjis"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ZONJIS_SPAWN_EGG = ITEMS.register("zonjis_spawn_egg",
+            () -> new DeferredSpawnEggItem(ZONJIS, 0x008300, 0x6b0505, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ZamonasEntity>> ZAMONAS = MOBLIST.register("zamonas",
+            () -> EntityType.Builder.of(ZamonasEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zamonas"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ZAMONAS_SPAWN_EGG = ITEMS.register("zamonas_spawn_egg",
+            () -> new DeferredSpawnEggItem(ZAMONAS, 0x251363, 0xa57800, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<TakaWatchroidEntity>> TAKA_WATCHROID = MOBLIST.register("taka_watchroid",

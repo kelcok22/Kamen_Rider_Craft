@@ -1,0 +1,25 @@
+{
+  "parent": "block/orientable",
+    "render_type": "minecraft:translucent",
+  "textures": {
+    "particle": "kamenridercraft:block/quartzer_boss_block_top",
+    "0": "kamenridercraft:block/quartzer_boss_block_top",
+    "1": "kamenridercraft:block/quartzer_boss_block_side_1",
+    "2": "kamenridercraft:block/quartzer_boss_block_side_2"
+  },
+  "elements": [
+    {
+      "name": "Cube",
+      "from": [ 0.0, 0.0, 0.0 ],
+      "to": [ 16.0, 16.0, 16.0 ],
+      "faces": {
+        "north": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "east": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "south": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "west": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+      }
+    }
+  ]
+}

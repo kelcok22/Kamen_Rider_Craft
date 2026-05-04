@@ -70,7 +70,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ohma_zi_o_ridewatch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs"
 		},
 		{
 			"type": "patchouli:text",
@@ -144,7 +144,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:barlckxs_ridewatch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs"
 		},
 		{
 			"type": "patchouli:text",
@@ -157,7 +157,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zonjis_ridewatch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zonjis)Kamen Rider Zonjis"
 		},
 		{
 			"type": "patchouli:text",
@@ -170,7 +170,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zamonas_ridewatch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zamonas)Kamen Rider Zamonas"
 		},
 		{
 			"type": "patchouli:text",
@@ -467,7 +467,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/amazon_alpha_ridewatch"
+			"recipe": "kamenridercraft:zi_o/amazon_alpha_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zamonas)Kamen Rider Zamonas"
 		},
 		{
 			"type": "patchouli:text",
@@ -478,7 +479,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/amazon_omega_ridewatch"
+			"recipe": "kamenridercraft:zi_o/amazon_omega_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zamonas)Kamen Rider Zamonas"
 		},
 		{
 			"type": "patchouli:text",
@@ -489,7 +491,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/amazon_neo_ridewatch"
+			"recipe": "kamenridercraft:zi_o/amazon_neo_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zamonas)Kamen Rider Zamonas"
 		},
 		{
 			"type": "patchouli:text",
@@ -524,7 +527,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bibiru_geiz_ridewatch",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by opening Halloween $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)Gashapon Capsules$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -867,7 +870,8 @@
       {
         "type": "patchouli:crafting",
         "title": " ",
-        "recipe": "kamenridercraft:zi_o/black_ridewatch"
+        "recipe": "kamenridercraft:zi_o/black_ridewatch",
+        "text": "Drops from:$(li)$(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs"
       },
       {
         "type": "patchouli:text",
@@ -889,7 +893,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/black_rx_ridewatch"
+			"recipe": "kamenridercraft:zi_o/black_rx_ridewatch",
+             "text": "Drops from:$(li)$(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs"
 		},
 		{
 			"type": "patchouli:text",
@@ -900,7 +905,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/robo_rider_ridewatch"
+			"recipe": "kamenridercraft:zi_o/robo_rider_ridewatch",
+             "text": "Drops from:$(li)$(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs"
 		},
 		{
 			"type": "patchouli:text",
@@ -911,7 +917,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/bio_rider_ridewatch"
+			"recipe": "kamenridercraft:zi_o/bio_rider_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/barlckxs)Kamen Rider Barlckxs"
 		},
 		{
 			"type": "patchouli:text",
@@ -922,7 +929,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/shin_ridewatch"
+			"recipe": "kamenridercraft:zi_o/shin_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zonjis)Kamen Rider Zonjis"
 		},
 		{
 			"type": "patchouli:text",
@@ -933,7 +941,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/zo_ridewatch"
+			"recipe": "kamenridercraft:zi_o/zo_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zonjis)Kamen Rider Zonjis"
 		},
 		{
 			"type": "patchouli:text",
@@ -944,7 +953,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:zi_o/j_ridewatch"
+			"recipe": "kamenridercraft:zi_o/j_ridewatch",
+            "text": "Drops from:$(li)$(l:zi_o/mobs/zonjis)Kamen Rider Zonjis"
 		},
 		{
 			"type": "patchouli:text",

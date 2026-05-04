@@ -466,6 +466,9 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.YAMININ.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.BARLCKXS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZONJIS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZAMONAS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidRenderer::new);
             event.registerEntityRenderer(MobsCore.KODAMA_SUIKA_ARMS.get(), KodamaSuikaArmsRenderer::new);
 
@@ -1495,6 +1498,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.WOZ_SPAWN_EGG);
                 event.accept(MobsCore.GINGA_SPAWN_EGG);
                 event.accept(MobsCore.YAMININ_SPAWN_EGG);
+                event.accept(MobsCore.BARLCKXS_SPAWN_EGG);
+                event.accept(MobsCore.ZONJIS_SPAWN_EGG);
+                event.accept(MobsCore.ZAMONAS_SPAWN_EGG);
 
                 event.accept(MobsCore.TRILOBITE_MAGIA_SPAWN_EGG);
                 event.accept(MobsCore.DODO_MAGIA_CHICK_SPAWN_EGG);

@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Zamonas",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zamonas",
+			"text": "Health: 60$(br2)Summoned from a $(l:misc/blocks/boss_blocks#quartzer_boss_block)Quartzer Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Health: 60$(br2)Drops$(li)4-6 $(l:zi_o/items/blank_watch)Blank Ridewatches$(/l)$(li)1 $(l:zi_o/items/ridewatches#zamonas_ridewatch)Zamonas Ridewatch$(/l)$(li)1 $(l:zi_o/items/ridewatches#amazon_alpha_ridewatch)Amazon Alpha Ridewatch $(/l)(33%)$(li)1 $(l:zi_o/items/ridewatches#amazon_omega_ridewatch)Amazon Omega Ridewatch $(/l)(33%)$(li)1 $(l:zi_o/items/ridewatches#amazon_neo_ridewatch)Amazon Neo Ridewatch $(/l)(33%)"
+		}
+	]
+}
