@@ -95,6 +95,82 @@
         "max": 2.0,
         "min": 1.0
       }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "kamenridercraft:pandora_tower",
+              "decoration": "minecraft:red_x",
+              "zoom": 1,
+              "search_radius": 50,
+              "skip_existing_chunks": false
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "kamenridercraft:kuuga_ruin",
+              "decoration": "minecraft:red_x",
+              "zoom": 1,
+              "search_radius": 50,
+              "skip_existing_chunks": false
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "kamenridercraft:castle_doran",
+              "decoration": "minecraft:red_x",
+              "zoom": 1,
+              "search_radius": 50,
+              "skip_existing_chunks": false
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "kamenridercraft:overlord_oopart",
+              "decoration": "minecraft:red_x",
+              "zoom": 1,
+              "search_radius": 50,
+              "skip_existing_chunks": false
+            }
+          ]
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 1.0
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        }
+      ]
     }
   ]
 }
