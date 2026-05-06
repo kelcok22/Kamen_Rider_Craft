@@ -59,7 +59,7 @@ public class Hibiki_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeBeltModel("geo/hibiki_belt.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
+            }.ChangeModel("hibiki.geo.json").ChangeBeltModel("geo/hibiki_belt.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
     //:cryingummy:
 
     public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
