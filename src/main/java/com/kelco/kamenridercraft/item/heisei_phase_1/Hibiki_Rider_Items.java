@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.hibiki.HibikiEquipmentBeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -44,7 +45,7 @@ public class Hibiki_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN PUrpLE fIrE pARTIcLEs
+            }.ChangeBeltModel("geo/hibiki_belt.geo.json").IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN PUrpLE fIrE pARTIcLEs
 
     public static final DeferredItem<Item> HENSHIN_ONSA_KURENAI = ITEMS.register("henshin_onsa_kurenai",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_kurenai","hibiki","hibikidriver_belt",
@@ -58,7 +59,7 @@ public class Hibiki_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
+            }.ChangeBeltModel("geo/hibiki_belt.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
     //:cryingummy:
 
     public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
@@ -73,7 +74,7 @@ public class Hibiki_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);}
-            }.IsGlowing());
+            }.ChangeBeltModel("geo/hibiki_belt.geo.json").IsGlowing());
 
     public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","danki","dankidriver_belt",
@@ -388,7 +389,7 @@ public class Hibiki_Rider_Items {
 
 
     public static final DeferredItem<Item> HIBIKIDRIVER = ITEMS.register("hibikidriver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hibiki",HENSHIN_ONSA ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+            () -> new HibikiEquipmentBeltItem(ArmorMaterials.DIAMOND,"hibiki",HENSHIN_ONSA ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> IBUKIDRIVER = ITEMS.register("ibukidriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ibuki",HENSHIN_ONIBUE_IBUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> TODOROKIDRIVER = ITEMS.register("todorokidriver",
