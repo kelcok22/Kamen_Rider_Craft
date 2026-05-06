@@ -2175,7 +2175,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(EffectCore.FLYING,400,0,true,false))
 					.setBaseSummon((RiderDriverItem) OOO_Rider_Items.OOODRIVER.get())
 					.setSuperSummon((RiderDriverItem) OOO_Rider_Items.OOODRIVER.get(), (RiderFormChangeItem) OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem) OOO_Rider_Items.CONDOR_MEDAL.get())
-					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).IsGlowing().addNeedForm(LEGENDARY_LEGEND.get(),2)
+					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).HasCape().IsGlowing().addNeedForm(LEGENDARY_LEGEND.get(),2)
 					.AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_RIDE_CHEMY_CARD = ITEMS.register("fourze_cosmic_ride_chemy_card",
