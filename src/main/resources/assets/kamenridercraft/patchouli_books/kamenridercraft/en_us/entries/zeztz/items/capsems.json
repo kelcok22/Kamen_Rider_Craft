@@ -201,7 +201,7 @@
         "type": "patchouli:text",
         "anchor": "charge_capsem",
         "title": "Charge Capsem",
-        "text": "Appears in:$(li)Kamen Rider Zeztz: Into the Dream (2026, stageshow)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#charge)Full Charge$(/l) form"
+        "text": "Appears in:$(li)Kamen Rider Zeztz: Into the Dream (2026, stageshow)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#charge)Visions$(/l) form"
       },
       {
         "type": "patchouli:spotlight",

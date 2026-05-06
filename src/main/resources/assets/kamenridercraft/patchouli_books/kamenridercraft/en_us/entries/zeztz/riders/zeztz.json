@@ -234,7 +234,7 @@
         "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:charge_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,
-        "name": "Full Charge",
+        "name": "Visions",
         "text": "Accessed with the $(l:zeztz/items/capsems#charge_capsem)Charge Capsem$(/l)"
       },
       {
