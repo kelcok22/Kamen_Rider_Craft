@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -36,8 +37,12 @@ public class BugEffect extends MobEffect {
 
                 if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Zero_One_Rider_Items.ZAIA_THOUSANDRIVER.get()) {
                     if (player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) > 0) {
-                        player.getInventory().removeItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()));
-                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
+                        if ( player.getInventory().getItem(40).getItem()== Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()){
+                            player.getInventory().removeItem(40, 1);
+                        }else {
+                            player.getInventory().removeItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()));
+                            player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
+                        }
                         player.removeEffect(EffectCore.BUGSTER);
                         player.drop(new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()), false);
                     }

@@ -2,13 +2,13 @@
     "temperature": 10,
     "downfall": 0,
     "has_precipitation": true,
-  "temperature_modifier": "frozen",
+  "temperature_modifier": "none",
   "creature_spawn_probability": 0,
     "effects": {
-      "sky_color": 9822180,
-      "fog_color": 15005947,
-      "water_fog_color": 329011,
+      "sky_color": 8364543,
       "water_color": 4159204,
+      "water_fog_color": 329011,
+      "fog_color": 15005947,
       "grass_color": 7119193,
       "foliage_color": 7119193,
       "mood_sound": {
@@ -75,9 +75,6 @@
       "minecraft:patch_berry_common",
       "minecraft:forest_flowers",
       "minecraft:grass_bonemeal"
-    ],
-    [
-      "minecraft:freeze_top_layer"
     ]
   ]
 }
