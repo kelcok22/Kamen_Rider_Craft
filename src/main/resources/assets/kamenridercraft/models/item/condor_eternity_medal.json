@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "kamenridercraft:item/taka_eternity_medal"
+        "layer0": "kamenridercraft:item/condor_eternity_medal"
     }
 }
