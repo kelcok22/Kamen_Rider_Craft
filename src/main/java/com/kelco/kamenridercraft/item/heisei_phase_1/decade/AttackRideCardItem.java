@@ -50,7 +50,7 @@ import java.util.List;
 public class AttackRideCardItem extends BaseItem {
 
 	public String[] FORMS;
-	private List<MobEffectInstance> EFFECTS;
+	private List<MobEffectInstance> EFFECTS = Lists.newArrayList();
 	private List<Item> ITEMS = Lists.newArrayList();
 	public String SPECIAL;
 
@@ -79,23 +79,19 @@ public class AttackRideCardItem extends BaseItem {
 	}
 
 	public void attackride(Level level, Player player) {
-		if (EFFECTS != null) {
-			for (MobEffectInstance effect : EFFECTS) player.addEffect(effect);
-		}
-		if (!ITEMS.isEmpty()) {
-			HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+		HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-			for (Item item : ITEMS) {
-				ItemStack stack = new ItemStack(item, 1);
-				stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getHoverName()));
-				stack.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
-				if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
-				stack.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
+		for (MobEffectInstance effect : EFFECTS) player.addEffect(effect);
+		for (Item item : ITEMS) {
+			ItemStack stack = new ItemStack(item, 1);
+			stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getHoverName()));
+			stack.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
+			if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+			stack.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
 
-				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
-				entity.setPickUpDelay(0);
-				level.addFreshEntity(entity);
-			}
+			ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
+			entity.setPickUpDelay(0);
+			level.addFreshEntity(entity);
 		}
 		if (SPECIAL != null) {
 			Vec3 look = player.getLookAngle();
@@ -105,43 +101,22 @@ public class AttackRideCardItem extends BaseItem {
 						RiderSummonEntity illusion = MobsCore.RIDER_SUMMON.get().create(level);
 						if (illusion != null) {
 							illusion.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-							illusion.NAME = "decade_illusion";
-							illusion.setMeleeOnSpawn(100.0D);
-							illusion.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Decade_Rider_Items.DECADEHELMET.get()));
-							illusion.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Decade_Rider_Items.DECADECHESTPLATE.get()));
-							illusion.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Decade_Rider_Items.DECADELEGGINGS.get()));
-							illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.RIDE_BOOKER.get()));
-
-							if (player.getItemBySlot(EquipmentSlot.FEET).getItem()== Decade_Rider_Items.DARK_DECADRIVER.get()) {
-								illusion.setItemSlot(EquipmentSlot.FEET, new ItemStack(Decade_Rider_Items.DARK_DECADRIVER.get()));
+							illusion.setItemSlot(EquipmentSlot.HEAD, player.getItemBySlot(EquipmentSlot.HEAD));
+							illusion.setItemSlot(EquipmentSlot.CHEST, player.getItemBySlot(EquipmentSlot.CHEST));
+							illusion.setItemSlot(EquipmentSlot.LEGS, player.getItemBySlot(EquipmentSlot.LEGS));
+							illusion.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
+							if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get()) {
+								illusion.NAME = "diend_illusion";
+								illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.DIENDRIVER.get()));
 							} else {
-								illusion.setItemSlot(EquipmentSlot.FEET, new ItemStack(Decade_Rider_Items.DECADRIVER.get()));
-								RiderDriverItem.set_Form_Item(illusion.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+								illusion.NAME = "decade_illusion";
+								illusion.setMeleeOnSpawn(100.0D);
+								illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.RIDE_BOOKER.get()));
 							}
+							RiderDriverItem.set_Form_Item(illusion.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
 							
 							level.addFreshEntity(illusion);
 							illusion.bindToPlayer(player);
-                            if (!Minecraft.getInstance().isSingleplayer()){
-                                illusion.setCustomName(player.getDisplayName());
-                                illusion.setCustomNameVisible(true);
-                            }
-						}
-					}
-					break;
-				case "diend_illusion":
-					for (int i = 0; i < 2; i++)	{
-						RiderSummonEntity illusion = MobsCore.RIDER_SUMMON.get().create(level);
-						if (illusion != null) {
-                            illusion.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
-                            illusion.NAME = "diend_illusion";
-                            illusion.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Decade_Rider_Items.DECADEHELMET.get()));
-                            illusion.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Decade_Rider_Items.DECADECHESTPLATE.get()));
-                            illusion.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Decade_Rider_Items.DECADELEGGINGS.get()));
-                            illusion.setItemSlot(EquipmentSlot.FEET, new ItemStack(Decade_Rider_Items.DIEND_BELT.get()));
-                            illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.DIENDRIVER.get()));
-                            RiderDriverItem.set_Form_Item(illusion.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1), 1);
-                            level.addFreshEntity(illusion);
-                            illusion.bindToPlayer(player);
                             if (!Minecraft.getInstance().isSingleplayer()){
                                 illusion.setCustomName(player.getDisplayName());
                                 illusion.setCustomNameVisible(true);
@@ -203,8 +178,6 @@ public class AttackRideCardItem extends BaseItem {
 					break;
 				case "rekka_daizantou":
 					if (ModList.get().isLoaded("supersentaicraft")) {
-						HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
-
 						ItemStack stack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou")));
 						stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getDisplayName().getString()));
 						stack.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);

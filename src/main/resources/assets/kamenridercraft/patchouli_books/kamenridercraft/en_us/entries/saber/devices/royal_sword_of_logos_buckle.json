@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "royal_sword_of_logos_buckle_sabela",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/sabela)Kamen Rider Sabela"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/sabela)Kamen Rider Sabela$(br2)Can store 1 Seiken and 1 stack of Wonder Ride Books"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "royal_sword_of_logos_buckle_durendal",
 			"title": "Royal Sword of Logos Buckle (Durendal)",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/durendal)Kamen Rider Durendal"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Equipped alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/durendal)Kamen Rider Durendal$(br2)Can store 1 Seiken and 1 stack of Wonder Ride Books"
 		},
 		{
 			"type": "patchouli:spotlight",

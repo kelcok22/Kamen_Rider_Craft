@@ -856,7 +856,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("hibiki").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.AddCompatibilityList(BaseDecadeUsers).IsBeltGlowing().ChangeRiderName("hibiki").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KABUTO_MASKED_CARD = ITEMS.register("kabuto_masked_card",
@@ -1738,7 +1738,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> DIEND_ILLUSION_CARD = ITEMS.register("diend_illusion_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
-					.addSpecial("diend_illusion").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+					.addSpecial("illusion").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_NEO_BLAST_CARD = ITEMS.register("diend_neo_blast_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
@@ -1758,7 +1758,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> DIEND_NEO_ILLUSION_CARD = ITEMS.register("diend_neo_illusion_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
-					.addSpecial("diend_illusion").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+					.addSpecial("illusion").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> REKKA_DAIZANTOU_CARD = ITEMS.register("rekka_daizantou_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","neo_decade_complete_21"})

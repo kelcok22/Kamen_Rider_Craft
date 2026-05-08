@@ -11,6 +11,7 @@ import com.kelco.kamenridercraft.item.reiwa.saber.SeikenSwordriverItem;
 import com.kelco.kamenridercraft.item.reiwa.saber.SwordOfLogosBuckleItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.HissatsuHolderGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RoyalSwordOfLogosHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
@@ -1145,12 +1146,48 @@ public class Saber_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> ROYAL_SWORD_OF_LOGOS_BUCKLE_SABELA = ITEMS.register("royal_sword_of_logos_buckle_sabela",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sabela",KONCHUU_DAIHYAKKA_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sabela",KONCHUU_DAIHYAKKA_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS,
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("royal_sword_of_logos_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new RoyalSwordOfLogosHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> ROYAL_SWORD_OF_LOGOS_BUCKLE_DURENDAL = ITEMS.register("royal_sword_of_logos_buckle_durendal",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"durendal",OCEAN_HISTORY_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"durendal",OCEAN_HISTORY_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS,
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("royal_sword_of_logos_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new RoyalSwordOfLogosHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> HAKEN_BLADRIVER_TASSEL = ITEMS.register("haken_bladriver_tassel",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tassel",TASSEL_DARK_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())

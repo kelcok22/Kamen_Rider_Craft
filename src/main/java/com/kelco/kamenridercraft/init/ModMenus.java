@@ -41,6 +41,7 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<MiridewatchHolderGuiMenu>> MIRIDEWATCH_HOLDER_GUI = REGISTRY.register("miridewatch_holder_gui", () -> IMenuTypeExtension.create(MiridewatchHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ProgriseHolderGuiMenu>> PROGRISE_HOLDER_GUI = REGISTRY.register("progrise_holder_gui", () -> IMenuTypeExtension.create(ProgriseHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HissatsuHolderGuiMenu>> HISSATSU_HOLDER_GUI = REGISTRY.register("hissatsu_holder_gui", () -> IMenuTypeExtension.create(HissatsuHolderGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RoyalSwordOfLogosHolderGuiMenu>> ROYAL_SWORD_OF_LOGOS_HOLDER_GUI = REGISTRY.register("royal_sword_of_logos_holder_gui", () -> IMenuTypeExtension.create(RoyalSwordOfLogosHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<VistampHolderGuiMenu>> VISTAMP_HOLDER_GUI = REGISTRY.register("vistamp_holder_gui", () -> IMenuTypeExtension.create(VistampHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RaiseBuckleHolderGuiMenu>> RAISE_BUCKLE_HOLDER_GUI = REGISTRY.register("raise_buckle_holder_gui", () -> IMenuTypeExtension.create(RaiseBuckleHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchandrawHolderGuiMenu>> GOTCHANDRAW_HOLDER_GUI = REGISTRY.register("gotchandraw_holder_gui", () -> IMenuTypeExtension.create(GotchandrawHolderGuiMenu::new));

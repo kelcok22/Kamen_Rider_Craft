@@ -1,0 +1,44 @@
+{
+  "parent": "kamenridercraft:zi-o/woz",
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:ziku_driver_barlckxs"
+    },
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.quartzer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.quartzer.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:barlckxs"
+        }
+      }
+    },
+    "2": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:zonjis"
+        }
+      }
+    },
+    "3": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:zamonas"
+        }
+      }
+    }
+  }
+}
