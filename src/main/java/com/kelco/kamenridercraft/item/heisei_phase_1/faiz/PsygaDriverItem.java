@@ -12,10 +12,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class PsygaDriverItem extends RiderDriverItem {
 
-	public PsygaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
+	public PsygaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties) {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Unlimited_Belt_Textures = 3;
 	}
 
 	@Override

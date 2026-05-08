@@ -19,7 +19,7 @@ public class KaixaDriverItem extends RiderDriverItem {
 	}
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
 		if (get_Form_Item(itemstack, 1)==Faiz_Rider_Items.KAIXA_MISSION_MEMORY.get()) {
 			if (num==1&&!rider.isHolding(Faiz_Rider_Items.KAIXA_BLAYGUN.get())) return "kaixa_blaygun";
 			else if (num==2&&!rider.isHolding(Faiz_Rider_Items.KAIXA_SHOT.get())) return "faiz_shot";

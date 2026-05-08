@@ -19,7 +19,7 @@ public class FaizDriverItem extends RiderDriverItem {
 	}
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
 		if((get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_MISSION_MEMORY.get()
 				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_AXEL_FORM.get()
 				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get()

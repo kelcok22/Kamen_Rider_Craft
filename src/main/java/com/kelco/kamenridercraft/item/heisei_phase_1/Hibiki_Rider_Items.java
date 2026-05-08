@@ -63,7 +63,7 @@ public class Hibiki_Rider_Items {
     //:cryingummy:
 
     public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_armed","hibiki","hibikidriver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_armed","hibiki","hibikidriver_belt_armed",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -74,7 +74,7 @@ public class Hibiki_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);}
-            }.ChangeBeltModel("geo/hibiki_belt.geo.json").IsGlowing());
+            }.ChangeBeltModel("geo/hibiki_belt_armed.geo.json"));
 
     public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","danki","dankidriver_belt",

@@ -2097,7 +2097,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false))
 					.setBaseSummon((RiderDriverItem) Hibiki_Rider_Items.HIBIKIDRIVER.get())
 					.setSuperSummon((RiderDriverItem) Hibiki_Rider_Items.HIBIKIDRIVER.get(), (RiderFormChangeItem) Hibiki_Rider_Items.HENSHIN_ONSA_KURENAI.get())
-					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).IsGlowing().addNeedForm(LEGENDARY_LEGEND.get(),2)
+					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).addNeedForm(LEGENDARY_LEGEND.get(),2)
 					.ChangeRiderName("hibiki_armed").AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> KABUTO_HYPER_RIDE_CHEMY_CARD = ITEMS.register("kabuto_hyper_ride_chemy_card",

@@ -19,9 +19,8 @@ public class OrgaDriverItem extends RiderDriverItem {
 	}
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (num==1&&!rider.isHolding(Faiz_Rider_Items.ORGA_STLANZER.get())) return "orga_stlanzer";
-        return "blank";
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+        return rider.isHolding(Faiz_Rider_Items.ORGA_STLANZER.get())? "blank" : "orga_stlanzer";
     }
 
 	@Override

@@ -18,7 +18,7 @@ public class DeltaDriverItem extends RiderDriverItem {
 	}
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
 		if (num==1&&!rider.isHolding(Faiz_Rider_Items.DELTA_BLASTER.get())) return isTransformed(rider)?"delta_blaster":"delta_mover";
         return "blank";
     }
