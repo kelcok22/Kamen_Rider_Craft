@@ -892,7 +892,7 @@ public class ModCommonEvents {
         event.put(MobsCore.DARK_GHOST.get(), DarkGhostEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
-		event.put(MobsCore.NEBULA_BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
+		event.put(MobsCore.NEBULA_BUGSTERVIRUS.get(), NebulaBugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
 		//event.put(MobsCore.TADDLE_BUGSTER.get(), GodaEntity.setAttributes().build());
 		//event.put(MobsCore.BANG_BANG_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -925,7 +925,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.GREASE.get(), GreaseEntity.setAttributes().build());
 		event.put(MobsCore.BUILD.get(), BuildEntity.setAttributes().build());
 		event.put(MobsCore.EVOL.get(), EvolEntity.setAttributes().build());
-		event.put(MobsCore.KILLBUS.get(), EvolEntity.setAttributes().build());
+		event.put(MobsCore.KILLBUS.get(), KillbusEntity.setAttributes().build());
 		event.put(MobsCore.STAG_LOST_SMASH.get(), StagLostSmashEntity.setAttributes().build());
 		event.put(MobsCore.OWL_LOST_SMASH.get(), OwlLostSmashEntity.setAttributes().build());
 		event.put(MobsCore.CASTLE_LOST_SMASH.get(), CastleLostSmashEntity.setAttributes().build());
@@ -937,13 +937,13 @@ public class ModCommonEvents {
 		event.put(MobsCore.BIKAISER.get(), KaiserEntity.setAttributes().build());
 
         event.put(MobsCore.KASSHINE.get(), KasshineEntity.setAttributes().build());
-        event.put(MobsCore.ANOTHER_ZI_O.get(), KasshineEntity.setAttributes().build());
+        event.put(MobsCore.ANOTHER_ZI_O.get(), AnotherZiOEntity.setAttributes().build());
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
 		event.put(MobsCore.WOZ.get(), WozEntity.setAttributes().build());
         event.put(MobsCore.YAMININ.get(), YamininEntity.setAttributes().build());
-        event.put(MobsCore.BARLCKXS.get(), YamininEntity.setAttributes().build());
-        event.put(MobsCore.ZONJIS.get(), YamininEntity.setAttributes().build());
-        event.put(MobsCore.ZAMONAS.get(), YamininEntity.setAttributes().build());
+        event.put(MobsCore.BARLCKXS.get(), BarlckxsEntity.setAttributes().build());
+        event.put(MobsCore.ZONJIS.get(), ZonjisEntity.setAttributes().build());
+        event.put(MobsCore.ZAMONAS.get(), ZamonasEntity.setAttributes().build());
         event.put(MobsCore.TAKA_WATCHROID.get(), TakaWatchroidEntity.setAttributes().build());
         event.put(MobsCore.KODAMA_SUIKA_ARMS.get(), KodamaSuikaArmsEntity.setAttributes().build());
 
@@ -1020,7 +1020,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.SHIITA_STOMACH.get(), ShiitaEntity.setAttributes().build());
 		event.put(MobsCore.LANGO_STOMACH.get(), LangoEntity.setAttributes().build());
 		event.put(MobsCore.BOCCA_JALDAK.get(), BoccaEntity.setAttributes().build());
-        event.put(MobsCore.CARIES.get(), BoccaEntity.setAttributes().build());
+        event.put(MobsCore.CARIES.get(), CariesEntity.setAttributes().build());
 
         event.put(MobsCore.BATTA_AUGMENT.get(), BattaAugmentEntity.setAttributes().build());
         event.put(MobsCore.SHIN_NO_0.get(), ShinNo0Entity.setAttributes().build());
