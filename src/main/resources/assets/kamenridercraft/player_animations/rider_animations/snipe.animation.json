@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"snipe.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-7.5, -47.5, 0],
+					"position": [0, -0.75, 0]
+				},
+				"left_leg": {
+					"rotation": [17.1098, 3.7315, -11.9384]
+				},
+				"right_leg": {
+					"rotation": [9.3709, 34.6515, 10.0496]
+				},
+				"head": {
+					"rotation": [0.9199, 47.2175, -8.3092]
+				},
+				"right_arm": {
+					"rotation": [-76.0199, 52.2168, 8.1783],
+					"position": [-0.79896, -0.2726, -2.07059]
+				},
+				"left_arm": {
+					"rotation": [13.4845, -7.4355, -7.5639]
+				}
+			}
+		}
+	}
+}

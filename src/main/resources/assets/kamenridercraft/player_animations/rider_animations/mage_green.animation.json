@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"mage_green.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -0.5, 0]
+				},
+				"torso": {
+					"rotation": [-5, 5, 7.5],
+					"position": [0, 0, 1]
+				},
+				"left_leg": {
+					"rotation": [-5.1754, -25.2331, -10.2288],
+					"position": [-1, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [14.5285, 17.3672, 7.853],
+					"position": [-2, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-124.2267, -10.6985, 49.2728],
+					"position": [0, -2, 0]
+				},
+				"left_arm": {
+					"rotation": [-46.2898, 51.1787, 17.0088],
+					"position": [-1, -2, -3]
+				}
+			}
+		}
+	}
+}

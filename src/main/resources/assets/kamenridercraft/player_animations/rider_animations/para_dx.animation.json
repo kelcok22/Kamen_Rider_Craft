@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"para_dx.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-5, 17.5, 0]
+				},
+				"torso": {
+					"rotation": [-2.4976, 0.109, 2.4976]
+				},
+				"left_leg": {
+					"rotation": [0, -22.5, 0]
+				},
+				"right_leg": {
+					"rotation": [11.0381, 25.0281, 2.1792]
+				},
+				"head": {
+					"rotation": [7.5, -17.5, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 22.5, 77.5],
+					"position": [-1, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [0.8805, -9.9616, -5.0767]
+				}
+			}
+		}
+	}
+}

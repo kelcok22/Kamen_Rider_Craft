@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"chalice.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [52.3435, -31.4217, -34.0426],
+					"position": [0, -4, 0]
+				},
+				"torso": {
+					"rotation": [-13.1211, -6.0933, 0.1145]
+				},
+				"left_leg": {
+					"rotation": [-51.4386, -16.6365, -6.0343],
+					"position": [1.32845, -0.30566, -4.49997]
+				},
+				"right_leg": {
+					"rotation": [25.0229, 46.716, 71.952],
+					"position": [-1.6275, 2.28948, -3.45593]
+				},
+				"head": {
+					"rotation": [-40, 45, 0],
+					"position": [-0.99905, -0.06169, -0.99905]
+				},
+				"right_arm": {
+					"rotation": [-134.5458, 25.7288, -22.6438]
+				},
+				"left_arm": {
+					"rotation": [10.0093, -2.462, -100.4344],
+					"position": [2, 0, 0]
+				}
+			}
+		}
+	}
+}

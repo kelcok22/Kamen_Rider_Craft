@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ninja_player.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [15, -62.5, 0],
+					"position": [-0.85679, -0.74118, 0.44601]
+				},
+				"left_leg": {
+					"rotation": [-18.3356, -16.7002, -1.043]
+				},
+				"right_leg": {
+					"rotation": [-18.3356, 16.7002, 1.043]
+				},
+				"head": {
+					"rotation": [50, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-19.0148, 8.0505, 7.7675],
+					"position": [-0.34598, -1.86119, -0.6452]
+				},
+				"left_arm": {
+					"rotation": [-19.0148, -8.0505, -7.7675],
+					"position": [0.34598, -1.86119, -0.6452]
+				}
+			}
+		}
+	}
+}

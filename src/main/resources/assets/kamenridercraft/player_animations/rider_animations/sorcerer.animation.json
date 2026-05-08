@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"sorcerer.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [3.2535, -52.429, -4.1023]
+				},
+				"torso": {
+					"rotation": [2.5, 5, -2.5]
+				},
+				"left_leg": {
+					"rotation": [0, -15, 0]
+				},
+				"right_leg": {
+					"rotation": [-2.9128, 42.5181, 6.7844]
+				},
+				"head": {
+					"rotation": [3.5752, 55.1402, 4.3601]
+				},
+				"right_arm": {
+					"rotation": [-35.2466, -40.4348, -92.1275],
+					"position": [-1, -2, -1]
+				},
+				"left_arm": {
+					"rotation": [-24.6711, -3.7957, 19.0676],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

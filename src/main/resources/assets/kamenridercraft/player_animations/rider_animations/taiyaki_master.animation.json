@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"taiyaki_master.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-7.5, -45, 0]
+				},
+				"torso": {
+					"rotation": [2.5, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [9.1304, -34.6575, -15.2222]
+				},
+				"right_leg": {
+					"rotation": [10.7304, 46.5585, 14.6277],
+					"position": [-0.33266, 0.08682, 0.36304]
+				},
+				"head": {
+					"rotation": [9.1992, 40.0338, 6.5487]
+				},
+				"right_arm": {
+					"rotation": [-47.5666, 55.2224, 9.6178],
+					"position": [0.57259, -0.55658, 1.58427]
+				},
+				"left_arm": {
+					"rotation": [-37.651, -28.4804, -20.0053],
+					"position": [0.39878, -1.34748, 0.159]
+				}
+			}
+		}
+	}
+}

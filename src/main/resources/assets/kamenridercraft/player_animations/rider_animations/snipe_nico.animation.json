@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"snipe_nico.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-5, 22.5, 0],
+					"position": [-0.00834, -0.49905, -0.02013]
+				},
+				"left_leg": {
+					"rotation": [2.3567, -17.3455, -7.8596]
+				},
+				"right_leg": {
+					"rotation": [17.1327, 15.4213, 7.5151]
+				},
+				"head": {
+					"rotation": [3.6548, -12.2167, -5.665]
+				},
+				"right_arm": {
+					"rotation": [-144.0782, -25.352, 7.28],
+					"position": [-0.66898, -3.74988, -0.51279]
+				},
+				"left_arm": {
+					"rotation": [-144.0782, 25.352, -7.28],
+					"position": [0.66898, -3.74988, -0.51279]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"brave.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-15, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [15.8192, -14.6364, -12.9265]
+				},
+				"right_leg": {
+					"rotation": [15.8192, 14.6364, 12.9265]
+				},
+				"head": {
+					"rotation": [20, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-145.4401, -55.2001, -35.5002],
+					"position": [-2, -0.25882, -2.96593]
+				},
+				"left_arm": {
+					"rotation": [-145.4401, 55.2001, 35.5002],
+					"position": [2, -0.25882, -2.96593]
+				}
+			}
+		}
+	}
+}

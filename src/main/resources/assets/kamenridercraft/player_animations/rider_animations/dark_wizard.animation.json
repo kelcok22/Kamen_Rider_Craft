@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"dark_wizard.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 22.5, 0]
+				},
+				"torso": {
+					"rotation": [-2.4976, -0.109, -2.4976],
+					"position": [0, 0, 0.75]
+				},
+				"left_leg": {
+					"rotation": [-4.7079, -22.8985, 0.4689]
+				},
+				"right_leg": {
+					"rotation": [9.3877, 39.8777, 4.5609]
+				},
+				"head": {
+					"rotation": [1.4649, -22.4774, 2.7057]
+				},
+				"right_arm": {
+					"rotation": [-81.9168, -36.7846, 54.0643]
+				},
+				"left_arm": {
+					"rotation": [-74.2942, -5.127, -7.7587]
+				}
+			}
+		}
+	}
+}

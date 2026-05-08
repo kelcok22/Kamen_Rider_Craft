@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"wiseman.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-10, 0, 0],
+					"position": [0, -0.5, 0]
+				},
+				"left_leg": {
+					"rotation": [10.6339, -17.2257, -10.4749]
+				},
+				"right_leg": {
+					"rotation": [10.6339, 17.2257, 10.4749]
+				},
+				"head": {
+					"rotation": [15, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-99.9687, 25.2519, 16.2664],
+					"position": [0, -2, 0]
+				},
+				"left_arm": {
+					"rotation": [-99.9687, -25.2519, -16.2664],
+					"position": [0, -2, 0]
+				}
+			}
+		}
+	}
+}

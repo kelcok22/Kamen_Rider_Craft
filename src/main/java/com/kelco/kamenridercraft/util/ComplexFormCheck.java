@@ -13,6 +13,7 @@ public class ComplexFormCheck {
                     riderName.replace("dark_", "");
             case "robot_super_1" -> "super_1";
             case "powered_up_core" -> "core";
+            case "eins" , "sango" -> "ichigo";
             default -> riderName;
         };
     }
