@@ -120,7 +120,10 @@ public class ServerPayloadHandler {
             }
 
             try {
-                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
+                AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID());
+                System.out.println(Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()));
+                System.out.println(context.player().getUUID());
+                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
                 context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
