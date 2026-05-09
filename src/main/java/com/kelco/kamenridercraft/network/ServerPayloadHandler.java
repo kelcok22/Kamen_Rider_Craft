@@ -77,7 +77,8 @@ public class ServerPayloadHandler {
         if (context.player().getItemBySlot(EquipmentSlot.HEAD).getItem().asItem().toString().equals("kamenridercraft:ferbus")) {
             try {
                 AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID());
-                System.out.println(animationTarget);
+                System.out.println(Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()));
+                System.out.println(context.player().getUUID());
                 if (animationTarget == null) return;
                 PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer((AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()), ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
