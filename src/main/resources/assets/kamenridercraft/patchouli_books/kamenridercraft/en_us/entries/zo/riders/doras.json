@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:doras_core\",Count:1b},{id:\"kamenridercraft:zolegs\",Count:1b},{id:\"kamenridercraft:zotroso\",Count:1b},{id:\"kamenridercraft:\",Count:1b}]}",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:doras_core\",Count:1b},{id:\"kamenridercraft:zolegs\",Count:1b},{id:\"kamenridercraft:zotroso\",Count:1b},{id:\"kamenridercraft:zohead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -18,7 +18,7 @@
 			"text": "Appears in:$(li)Kamen Rider ZO (1993, movie)$(br2)Transforms with the $(l:zo/devices/doras_core)Doras Core$(/l)$(br2)Status Effects:$(li)Punch II$(li)Resistance II$(li)Haste$(li)Jump Boost II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)"
 		},{
         "type": "patchouli:entity",
-        "anchor": "transform",
+        "anchor": "doras_red",
         "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:doras_core\",components:{custom_data:{slot_tex1:\"kamenridercraft:power_up_neonoid_core\"}},Count:1b},{id:\"kamenridercraft:zolegs\",Count:1b},{id:\"kamenridercraft:zotroso\",Count:1b},{id:\"kamenridercraft:zohead\",Count:1b}]}",
         "scale": -1,
         "offset": 0.1,

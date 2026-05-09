@@ -75,7 +75,7 @@ public class ZORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            }.IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));

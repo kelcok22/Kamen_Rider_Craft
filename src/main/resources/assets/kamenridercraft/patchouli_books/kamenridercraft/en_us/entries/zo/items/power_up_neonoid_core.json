@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider ZO (1993, movie)$(br2)Used to craft Doras' $(l:zo/devices/doras_core)Doras Core$(/l)"
+			"text": "Appears in:$(li)Kamen Rider ZO (1993, movie)$(br2)Used to access Doras' $(l:zo/riders/doras#doras_red)Red Doras$(/l) form"
 		},
 		{
           "type": "patchouli:crafting",
-          "recipe": "kamenridercraft:power_up_neonoid_core"
+          "recipe": "kamenridercraft:zo/power_up_neonoid_core"
 		}
 	]
 }

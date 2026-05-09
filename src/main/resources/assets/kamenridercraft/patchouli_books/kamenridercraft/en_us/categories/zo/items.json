@@ -1,6 +1,6 @@
 {
 	"parent": "kamenridercraft:zo/main",
-    "name": "ZO Stone",
+    "name": "ZO Rider Items",
     "description": "",
     "icon": "kamenridercraft:zo_stone",
     "sortnum": 2
