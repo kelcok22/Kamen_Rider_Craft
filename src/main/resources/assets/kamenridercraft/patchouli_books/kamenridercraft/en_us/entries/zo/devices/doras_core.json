@@ -1,0 +1,16 @@
+{
+	"name": "Doras Core",
+	"icon": "kamenridercraft:doras_core",
+	"category": "kamenridercraft:zo/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider ZO (1993, movie)$(br2)Equipped alongside the $(l:zo/devices/armor)ZO armor$(/l) to transform into $(l:zo/riders/doras)Doras"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/doras_core"
+		}
+	]
+}

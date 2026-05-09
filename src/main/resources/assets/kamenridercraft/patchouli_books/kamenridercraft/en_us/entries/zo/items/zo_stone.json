@@ -2,7 +2,7 @@
 	"name": "ZO Stone",
 	"icon": "kamenridercraft:zo_stone",
 	"category": "kamenridercraft:zo/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

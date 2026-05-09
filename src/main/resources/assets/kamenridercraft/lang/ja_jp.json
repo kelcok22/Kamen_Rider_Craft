@@ -400,7 +400,6 @@
 "effect.kamenridercraft.group_mending":"周り修繕",
 "effect.kamenridercraft.sd":"SD",
 "effect.kamenridercraft.rider_kick":"ライダーキック",
-"effect.kamenridercraft.rider_kick":"ライダーキック",
 "effect.kamenridercraft.climbing":"登",
 
 "effect.kamenridercraft.boost.desc": "スニークをする時、地面から進める",
@@ -2266,6 +2265,12 @@
 "item.kamenridercraft.zo_stone": "ZOの石",
 "item.kamenridercraft.zo_core": "ZOコア",
 "kamenridercraft.name.zo": "ライダー: 仮面ライダーZO",
+"item.kamenridercraft.neonoid_core": "ネオ生命体核",
+"item.kamenridercraft.power_up_neonoid_core": "進化ネオ生命体核",
+"item.kamenridercraft.doras_core": "ドラスコア",
+"kamenridercraft.name.doras": "怪人: ドラス",
+"kamenridercraft:neonoid_core.form": "フォーム: 基本フォーム",
+"kamenridercraft:power_up_neonoid_core.form": "フォーム: 赤",
 
 "item.kamenridercraft.j_logo": "Jクレスト",
 "item.kamenridercraft.jhead": "Jのヘルメット",

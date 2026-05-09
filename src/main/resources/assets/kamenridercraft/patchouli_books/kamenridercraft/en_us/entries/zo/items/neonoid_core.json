@@ -1,0 +1,19 @@
+{
+	"name": "Neonoid Core",
+	"icon": "kamenridercraft:neonoid_core",
+	"category": "kamenridercraft:zo/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider ZO (1993, movie)$(br2)Used to access Doras' $(l:zo/riders/doras#doras_red)Red Doras Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neonoid_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
