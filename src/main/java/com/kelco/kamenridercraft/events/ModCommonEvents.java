@@ -38,6 +38,7 @@ import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -77,6 +78,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.common.damagesource.DamageContainer;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
@@ -90,6 +92,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -394,7 +397,9 @@ public class ModCommonEvents {
 
             @SubscribeEvent
 		public void addLivingDamageEvent(LivingDamageEvent.Post event) {
-
+				if (event.getSource().getEntity() instanceof  LivingEntity attacker && attacker.getItemBySlot(EquipmentSlot.FEET).getItem()  instanceof RiderDriverItem && attacker.getAttribute(AttributeRegistry.ABILITY_METER).getBaseValue() < 300) {
+					attacker.getAttribute(AttributeRegistry.ABILITY_METER).setBaseValue(attacker.getAttribute(AttributeRegistry.ABILITY_METER).getBaseValue() + 1);
+				}
 				if (event.getEntity() instanceof Player player && player.getInventory().countItem(Zeztz_Rider_Items.VOID_CAPSEM.get())!=0 && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)){
 					if (player.getOffhandItem().is(Zeztz_Rider_Items.VOID_CAPSEM.get())) {
 						player.getOffhandItem().shrink(1);

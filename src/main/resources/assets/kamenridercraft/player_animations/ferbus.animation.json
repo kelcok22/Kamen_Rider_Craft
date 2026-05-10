@@ -2,6 +2,7 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"ferbus.dance": {
+			"loop": true,
 			"animation_length": 3.5417,
 			"bones": {
 				"body": {
