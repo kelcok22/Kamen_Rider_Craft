@@ -16,6 +16,7 @@ import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
 import com.zigythebird.playeranimcore.animation.Animation;
+import com.zigythebird.playeranimcore.animation.layered.ModifierLayer;
 import com.zigythebird.playeranimcore.animation.layered.modifier.AbstractFadeModifier;
 import com.zigythebird.playeranimcore.easing.EasingType;
 import net.minecraft.client.Minecraft;
@@ -76,8 +77,10 @@ public class ServerPayloadHandler {
         if (context.player().getItemBySlot(EquipmentSlot.HEAD).getItem().asItem().toString().equals("kamenridercraft:ferbus")) {
             try {
                 AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID());
+                System.out.println(Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()));
+                System.out.println(context.player().getUUID());
                 if (animationTarget == null) return;
-                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer((AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()), ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance")));
                 context.player().addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 60, 0, true, false));
@@ -117,7 +120,10 @@ public class ServerPayloadHandler {
             }
 
             try {
-                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
+                AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID());
+                System.out.println(Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()));
+                System.out.println(context.player().getUUID());
+                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
                 context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
