@@ -168,10 +168,10 @@ public class ModCommonEvents {
  }
  }
  **/
-            if (event.getEntity() instanceof LivingEntity entity && entity.hasEffect(EffectCore.CLIMBING)) {
-                if (entity.horizontalCollision) {
+            if (event.getEntity()instanceof LivingEntity entity&& entity.getAttribute(AttributeRegistry.CLIMBING).getValue() !=0) {
+                if ( entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (1 + entity.getEffect(EffectCore.CLIMBING).getAmplifier()), initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
                     entity.setDeltaMovement(climbVec.scale(0.97D));
                 }
             }
