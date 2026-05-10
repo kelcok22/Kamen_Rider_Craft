@@ -30,7 +30,7 @@ public class ThousandriverItem extends RiderDriverItem {
 		super.inventoryTick(stack, level, entity,slotId, isSelected);
 
 		if (entity instanceof Player player && !level.isClientSide) {
-			if (isTransformed(player) &&  player.getAttribute(AttributeRegistry.HAS_TIME).getValue() !=0
+			if (isTransformed(player) && player.hasEffect(EffectCore.BUGSTER)
         	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())>0
         	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())>0) {
         	    if (player.getInventory().getItem(40).getItem()==Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) player.getInventory().removeItem(40, 1);
@@ -48,15 +48,16 @@ public class ThousandriverItem extends RiderDriverItem {
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
 		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
+        boolean bug = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 		if (equipmentSlot == EquipmentSlot.FEET) {
-				String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
+            String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
 					belt = get_Form_Item(itemstack,1).getBeltTex();
 				}
 				return "belts/"+belt;
+
 		}
-	
-		else if (rider.hasEffect(EffectCore.BUGSTER))return "zaia";
+		else if (bug)return "zaia";
 		else return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
 
 	}
