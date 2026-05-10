@@ -62,9 +62,11 @@ public class ClientPayloadHandler {
     }
 
     public static void startPoseAnimations(final StartPosePayload data, final IPayloadContext context) {
-        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem()  instanceof RiderDriverItem driverItem) {
+        LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
+        assert posingRider != null;
+        if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem()  instanceof RiderDriverItem driverItem) {
 
-            RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
+            RiderFormChangeItem formChangeItemOne = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
 
             String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
             String riderName =  getAnimRiderName(driverItem);
@@ -76,8 +78,8 @@ public class ClientPayloadHandler {
             }
 
             if (riderName.equals("ooo")) {
-                RiderFormChangeItem formChangeItemTwo = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 2);
-                RiderFormChangeItem formChangeItemThree = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 3);
+                RiderFormChangeItem formChangeItemTwo = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 2);
+                RiderFormChangeItem formChangeItemThree = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 3);
                 String comboName = oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
 
                 if (comboName.equals("tajadol_eternity")) {
@@ -105,10 +107,13 @@ public class ClientPayloadHandler {
 
     public static void endPoseAnimations(final EndPosePayload data, final IPayloadContext context) {
         try {
+            assert Minecraft.getInstance().level != null;
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+            assert animationTarget != null;
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
-            assert controller != null;
-            controller.stopTriggeredAnimation();
+            if (controller != null && controller.isPlayingTriggeredAnimation()) {
+                controller.stopTriggeredAnimation();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
