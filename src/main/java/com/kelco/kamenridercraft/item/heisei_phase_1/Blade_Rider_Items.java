@@ -521,7 +521,7 @@ public class Blade_Rider_Items {
 			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()){
                 public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
                 {
-                    boolean TIME = rider instanceof Player player && (player.getAttribute(AttributeRegistry.HAS_TIME).getValue() !=0);
+                    boolean TIME = rider.getAttribute(AttributeRegistry.HAS_TIME).getValue() !=0;
                     if (equipmentSlot != EquipmentSlot.FEET&&get_Form_Item(itemstack,1)==CHANGE_BEETLE.asItem()&TIME) {
                         return "blade_yellowed";
                     } else return super.GET_TEXT(itemstack,equipmentSlot,rider,riderName);
