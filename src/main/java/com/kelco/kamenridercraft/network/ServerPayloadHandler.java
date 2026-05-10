@@ -1,26 +1,11 @@
 package com.kelco.kamenridercraft.network;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
-import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
-import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
-import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
-import com.kelco.kamenridercraft.util.ComplexFormCheck;
+import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
-import com.zigythebird.playeranim.animation.PlayerAnimResources;
-import com.zigythebird.playeranim.animation.PlayerAnimationController;
-import com.zigythebird.playeranim.api.PlayerAnimationAccess;
-import com.zigythebird.playeranimcore.animation.Animation;
-import com.zigythebird.playeranimcore.animation.layered.ModifierLayer;
-import com.zigythebird.playeranimcore.animation.layered.modifier.AbstractFadeModifier;
-import com.zigythebird.playeranimcore.easing.EasingType;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
@@ -28,28 +13,15 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
-
-import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
-import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.get_Form_Item;
-import static com.kelco.kamenridercraft.util.ComplexFormCheck.getAnimRiderName;
-import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
+import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
+import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
 
 public class ServerPayloadHandler {
 
-    public static void stopPosing(Player player) {
-        try {
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(Minecraft.getInstance().player, ANIMATION_LAYER_ID);
-            assert controller != null;
-            controller.stopTriggeredAnimation();
-            player.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
-            player.addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 40, 0, true, false));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-    }
 
     // Decade Complete summon swing mimicry
     public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
@@ -68,68 +40,15 @@ public class ServerPayloadHandler {
     }
 
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
-        //add gamerule for allow particles, sounds, and cooldown length
+        //TODO add gamerule for allow particles, sounds, and cooldown length
         if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1 & !context.player().hasEffect(EffectCore.POSE_COOLDOWN)) {
             context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(0);
             stopPosing(context.player());
-            return;
-        }
-        if (context.player().getItemBySlot(EquipmentSlot.HEAD).getItem().asItem().toString().equals("kamenridercraft:ferbus")) {
-            try {
-                AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID());
-                System.out.println(Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()));
-                System.out.println(context.player().getUUID());
-                if (animationTarget == null) return;
-                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer((AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()), ANIMATION_LAYER_ID);
-                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
-                controller.triggerAnimation(PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance")));
-                context.player().addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 60, 0, true, false));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return;
-        }
-        if (context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && !context.player().hasEffect(EffectCore.POSE_COOLDOWN) && context.player().getAttribute(AttributeRegistry.POSING).getValue() == 0) {
-
-            RiderFormChangeItem formChangeItemOne = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 1);
-
-            String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
-            String riderName =  getAnimRiderName(driverItem);
-
-            Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
-
-            if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animation/form_specific_pose")))) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
-            }
-
-            if (riderName.equals("ooo")) {
-                RiderFormChangeItem formChangeItemTwo = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 2);
-                RiderFormChangeItem formChangeItemThree = get_Form_Item(context.player().getItemBySlot(EquipmentSlot.FEET), 3);
-                String comboName = ComplexFormCheck.oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
-
-                if (comboName.equals("tajadol_eternity")) {
-                    comboName = "tajadol";
-                }
-                if (!comboName.isEmpty()) {
-                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + comboName + ".pose"));
-                }
-            }
-
-            if (animation == null) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
-            }
-
-            try {
-                AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID());
-                System.out.println(Minecraft.getInstance().level.getPlayerByUUID(context.player().getUUID()));
-                System.out.println(context.player().getUUID());
-                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
-                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
-                controller.triggerAnimation(animation);
+        } else {
+            if (canPose(context.player()) && context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof  RiderDriverItem){
                 context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
                 context.player().addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 60, 0, true, false));
-            } catch (Exception e) {
-                e.printStackTrace();
+                PacketDistributor.sendToAllPlayers(new StartPosePayload(0, context.player().getStringUUID()));
             }
         }
     }

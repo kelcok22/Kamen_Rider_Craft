@@ -49,6 +49,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Consumer;
 
+import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
+
 
 public class RiderDriverItem extends RiderArmorItem {
 
@@ -316,7 +318,7 @@ public class RiderDriverItem extends RiderArmorItem {
             if (entity instanceof Player player && player.getAttribute(AttributeRegistry.POSING).getValue() == 1) {
                 if (player.invulnerableTime > 0 ||this.riderOldX != player.getBlockX() || this.riderOldZ != player.getBlockZ() || player.isCrouching() || player.isSleeping() || player.isSwimming() || player.isPassenger() || player.isFallFlying()) {
                     player.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
-                    ServerPayloadHandler.stopPosing(player);
+                    stopPosing(player);
                 }
             }
             this.riderOldX = livingEntity.getBlockX();
