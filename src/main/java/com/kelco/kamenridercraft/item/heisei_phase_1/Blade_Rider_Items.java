@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.blade.BlayBuckleItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -520,8 +521,8 @@ public class Blade_Rider_Items {
 			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()){
                 public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
                 {
-                    boolean fly = rider instanceof Player player && player.getAbilities().flying;
-                    if (equipmentSlot != EquipmentSlot.FEET&&get_Form_Item(itemstack,1)==CHANGE_BEETLE.asItem()&&rider.hasEffect(EffectCore.TIME)) {
+                    boolean TIME = rider instanceof Player player && (player.getAttribute(AttributeRegistry.HAS_TIME).getValue() !=0);
+                    if (equipmentSlot != EquipmentSlot.FEET&&get_Form_Item(itemstack,1)==CHANGE_BEETLE.asItem()&TIME) {
                         return "blade_yellowed";
                     } else return super.GET_TEXT(itemstack,equipmentSlot,rider,riderName);
                 }

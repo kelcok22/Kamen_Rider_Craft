@@ -19,6 +19,24 @@ public class AttributeRegistry extends Event implements IModBusEvent {
 
     public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
+
+    public static final DeferredHolder<Attribute, Attribute> HAS_TIME = ATTRIBUTES.register("has_time",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.has_time",
+                    0,
+                    0,
+                    1
+            ).setSyncable(true)
+    );
+    public static final DeferredHolder<Attribute, Attribute> HAS_BUG = ATTRIBUTES.register("has_bug",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.has_bug",
+                    0,
+                    0,
+                    1
+            ).setSyncable(true)
+    );
+
     public static final DeferredHolder<Attribute, Attribute> HEAD_SIZE = ATTRIBUTES.register("head_size",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.head_size",

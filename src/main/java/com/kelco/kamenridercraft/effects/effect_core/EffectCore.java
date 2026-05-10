@@ -181,7 +181,8 @@ public class EffectCore {
             () -> new 	NightEffect(MobEffectCategory.HARMFUL, 0xffed9e));
 
     public static final Holder<MobEffect>  TIME= EFFECT.register("time",
-            () -> new 	TimeEffect(MobEffectCategory.HARMFUL, 0xffed9e));
+            () -> new 	TimeEffect(MobEffectCategory.HARMFUL, 0xffed9e)
+            .addAttributeModifier(AttributeRegistry.HAS_TIME, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  BLIZZARD= EFFECT.register("blizzard",
             () -> new BlizzardEffect(MobEffectCategory.HARMFUL, 0x5feaff));
@@ -232,7 +233,9 @@ public class EffectCore {
             () -> new 	GhostEffect(MobEffectCategory.BENEFICIAL, 0xf59b14));
 
     public static final Holder<MobEffect>  BUGSTER= EFFECT.register("bug",
-            () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e));
+            () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e)
+                    .addAttributeModifier(AttributeRegistry.HAS_BUG, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.bug"), 1F, AttributeModifier.Operation.ADD_VALUE));
+
 
     public static final Holder<MobEffect>  HAZARD_LEVEL= EFFECT.register("hazard_level",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xff0000));

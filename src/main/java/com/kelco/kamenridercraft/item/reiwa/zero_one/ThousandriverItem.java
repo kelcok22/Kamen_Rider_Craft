@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.reiwa.zero_one;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -29,7 +30,7 @@ public class ThousandriverItem extends RiderDriverItem {
 		super.inventoryTick(stack, level, entity,slotId, isSelected);
 
 		if (entity instanceof Player player && !level.isClientSide) {
-			if (isTransformed(player) && player.hasEffect(EffectCore.BUGSTER)
+			if (isTransformed(player) &&  player.getAttribute(AttributeRegistry.HAS_TIME).getValue() !=0
         	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())>0
         	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())>0) {
         	    if (player.getInventory().getItem(40).getItem()==Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) player.getInventory().removeItem(40, 1);
@@ -48,14 +49,11 @@ public class ThousandriverItem extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			
-			
 				String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
 					belt = get_Form_Item(itemstack,1).getBeltTex();
 				}
 				return "belts/"+belt;
-			
 		}
 	
 		else if (rider.hasEffect(EffectCore.BUGSTER))return "zaia";
