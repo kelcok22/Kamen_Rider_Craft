@@ -81,7 +81,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
         setAllVisible(false);
         if (GetEntity()!=null){
-        if (!GetEntity().hasEffect(MobEffects.INVISIBILITY) || !GetEntity().isInvisible()) {
+        if (!GetEntity().isInvisible()) {
             if (currentSlot == EquipmentSlot.FEET) {
                 setBoneVisible(this.body, true);
                 setBoneVisible(this.leftArm, true);
