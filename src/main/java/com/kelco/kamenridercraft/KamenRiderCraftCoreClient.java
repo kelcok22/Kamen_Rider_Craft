@@ -28,7 +28,7 @@ public class KamenRiderCraftCoreClient {
     }
 
     @SubscribeEvent
-    public static void registerPlayerAnimations( FMLClientSetupEvent event) {
+    public static void registerPlayerAnimations() {
         // Rider Attacks
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 17500,
                 player -> new PlayerAnimationController(player,

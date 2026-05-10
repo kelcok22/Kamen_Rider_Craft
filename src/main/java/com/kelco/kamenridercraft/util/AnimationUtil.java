@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -18,9 +19,11 @@ public class AnimationUtil {
     }
 
     public static void stopPosing(LivingEntity poser) {
-        poser.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
-        poser.addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 40, 0, true, false));
-        PacketDistributor.sendToAllPlayers(new EndPosePayload(0, poser.getStringUUID()));
+        if (poser.level() instanceof ServerLevel) {
+            poser.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
+            poser.addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 40, 0, true, false));
+            PacketDistributor.sendToAllPlayers(new EndPosePayload(0, poser.getStringUUID()));
+        }
     }
 
     public static String getAnimRiderName(RiderDriverItem driverItem) {

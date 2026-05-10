@@ -265,6 +265,7 @@ public class KamenRiderCraftCore {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(RegisterItemProperties::addCustomItemProperties);
+            event.enqueueWork(KamenRiderCraftCoreClient::registerPlayerAnimations);
         }
 
         @SubscribeEvent
