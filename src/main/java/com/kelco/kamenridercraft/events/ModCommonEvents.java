@@ -165,9 +165,8 @@ public class ModCommonEvents {
                    }
                 }
 **/
-            if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(EffectCore.CLIMBING)) {
-                                if ( entity.horizontalCollision) {
-                                  //  entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
+            if (event.getEntity()instanceof LivingEntity entity && entity.hasEffect(EffectCore.CLIMBING)) {
+                                if (entity.level() instanceof ServerLevel && entity.horizontalCollision) {
                                     Vec3 initialVec = entity.getDeltaMovement();
                                     Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(1+entity.getEffect(EffectCore.CLIMBING).getAmplifier()), initialVec.z);
                                     entity.setDeltaMovement(climbVec.scale(0.97D));
