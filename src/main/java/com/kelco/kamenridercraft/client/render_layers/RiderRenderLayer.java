@@ -53,7 +53,7 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }
                     }
-                }else if (belt.Unlimited_Belt_Textures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.FEET) {
+                } if (belt.Unlimited_Belt_Textures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.FEET) {
                     for (int n = 0; n < belt.Unlimited_Belt_Textures; n++) {
                         renderType = getRenderType(animatable,n,RIDER,belt,EquipmentSlot.FEET);
 
