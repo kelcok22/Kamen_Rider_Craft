@@ -447,7 +447,8 @@ public class RiderDriverItem extends RiderArmorItem {
     public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
 
         boolean fly = rider instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
-        boolean sd = rider.hasEffect(EffectCore.SD) && get_Form_Item(itemstack, 1).get_SD() & SD;
+        boolean sd =  rider instanceof Player player && (player.isInPowderSnow);
+        //boolean sd = rider.hasEffect(EffectCore.SD) && get_Form_Item(itemstack, 1).get_SD() & SD;
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem) itemstack.getItem()).BELT_TEXT;
