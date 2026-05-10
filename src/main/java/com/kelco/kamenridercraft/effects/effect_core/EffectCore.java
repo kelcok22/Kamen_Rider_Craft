@@ -101,13 +101,18 @@ public class EffectCore {
                     .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.big"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> FLAT= EFFECT.register("flat",
-            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf7fada));
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf7fada)
+                    .addAttributeModifier(AttributeRegistry.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flat"), -0.96F, AttributeModifier.Operation.ADD_VALUE));
+
 
     public static final Holder<MobEffect>  STRETCH= EFFECT.register("stretch",
-            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf78d95));
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf78d95)
+                    .addAttributeModifier(AttributeRegistry.PLAYER_SIZE_Y, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.stretch"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  WIDE= EFFECT.register("wide",
-            () -> new 	WideEffect(MobEffectCategory.NEUTRAL, 0x87ce87));
+            () -> new 	WideEffect(MobEffectCategory.NEUTRAL, 0x87ce87)
+                    .addAttributeModifier(AttributeRegistry.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.wide"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
+
 
     public static final Holder<MobEffect>  EXPLODE= EFFECT.register("explode",
             () -> new 	ExplodeEffect(MobEffectCategory.HARMFUL, 0x565656));

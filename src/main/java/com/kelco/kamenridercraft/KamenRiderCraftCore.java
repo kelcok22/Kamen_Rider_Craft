@@ -232,25 +232,10 @@ public class KamenRiderCraftCore {
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 
-
-
-        float size = 1;
-
-        if (event.getEntity().hasEffect(EffectCore.STRETCH)) {
-            size = size + ((event.getEntity().getEffect(EffectCore.STRETCH).getAmplifier()) + 1f);
-        }
-
-        float size2 = event.getEntity().hasEffect(EffectCore.STRETCH) ? 1 : size;
-
-        if (event.getEntity().hasEffect(EffectCore.FLAT)) {
-            size2 = 0.04f;
-        }
-        float size3 = event.getEntity().hasEffect(EffectCore.STRETCH) ? 1 : size;
-        if (event.getEntity().hasEffect(EffectCore.WIDE)) {
-            size2 = size2 * 3;
-            size3 = size3 * 3;
-        }
-        event.getPoseStack().scale(size3, size, size2);
+        float sizeX= (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_X).getValue();
+        float sizeY = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_Y).getValue();
+        float sizeZ = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_Z).getValue();
+        event.getPoseStack().scale(sizeX, sizeY, sizeZ);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

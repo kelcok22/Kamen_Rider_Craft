@@ -46,6 +46,34 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_X = ATTRIBUTES.register("player_size_x",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.player_size",
+                    1,
+                    0,
+                    255
+            ).setSyncable(true)
+    );
+    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_Y = ATTRIBUTES.register("player_size_y",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.player_size",
+                    1,
+                    0,
+                    255
+            ).setSyncable(true)
+    );
+
+    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_Z = ATTRIBUTES.register("player_size_z",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.player_size",
+                    1,
+                    0,
+                    255
+            ).setSyncable(true)
+    );
+
+
+
     public static final DeferredHolder<Attribute, Attribute> ABILITY_METER = ATTRIBUTES.register("ability_meter",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.ability_meter",
