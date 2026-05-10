@@ -33,10 +33,7 @@ import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
-import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
-import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
-import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
-import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
+import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
@@ -723,6 +720,19 @@ public class KamenRiderCraftCore {
                             ServerPayloadHandler::handleCompleteSwing
                     )
             );
+
+            registrar.playToClient(
+                    EndPosePayload.TYPE,
+                    EndPosePayload.STREAM_CODEC,
+                    ClientPayloadHandler::endPoseAnimations
+            );
+
+            registrar.playToClient(
+                    StartPosePayload.TYPE,
+                    StartPosePayload.STREAM_CODEC,
+                    ClientPayloadHandler::startPoseAnimations
+            );
+
             registrar.playToServer(
                     BeltKeyPayload.TYPE,
                     BeltKeyPayload.STREAM_CODEC,

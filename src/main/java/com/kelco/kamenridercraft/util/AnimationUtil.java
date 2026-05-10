@@ -1,8 +1,28 @@
 package com.kelco.kamenridercraft.util;
 
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
+import net.neoforged.neoforge.network.PacketDistributor;
 
-public class ComplexFormCheck {
+public class AnimationUtil {
+    public static boolean canPose (LivingEntity poser) {
+        if (!poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving()  && poser.onGround()
+        && !poser.isCrouching() && !poser.onClimbable() && poser.getAttribute(AttributeRegistry.POSING).getValue() == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void stopPosing(LivingEntity poser) {
+        poser.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
+        poser.addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 40, 0, true, false));
+        PacketDistributor.sendToAllPlayers(new EndPosePayload(0, poser.getStringUUID()));
+    }
+
     public static String getAnimRiderName(RiderDriverItem driverItem) {
         String riderName = driverItem.Rider.toLowerCase();
         return switch (riderName) {
