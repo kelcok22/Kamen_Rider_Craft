@@ -694,7 +694,7 @@ public class Zeztz_Rider_Items {
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> INAZUMA_BLASTER_GREATSWORD = ITEMS.register("inazuma_blaster_greatsword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
                     .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> TRIPLE_ZEZTZER = ITEMS.register("triple_zeztzer",
