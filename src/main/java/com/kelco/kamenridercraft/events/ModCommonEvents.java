@@ -38,6 +38,7 @@ import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -162,11 +163,10 @@ public class ModCommonEvents {
                    }
                 }
 **/
-            if (event.getEntity()instanceof LivingEntity entity&& entity.hasEffect(EffectCore.CLIMBING)) {
+            if (event.getEntity()instanceof LivingEntity entity&& entity.getAttribute(AttributeRegistry.CLIMBING).getValue() !=0) {
                                 if ( entity.horizontalCollision) {
-                                  //  entity.push(0, 0.075+(0.025*entity.getEffect(Effect_core.CLIMBING).getAmplifier()), 0);
                                     Vec3 initialVec = entity.getDeltaMovement();
-                                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(1+entity.getEffect(EffectCore.CLIMBING).getAmplifier()), initialVec.z);
+                                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
                                     entity.setDeltaMovement(climbVec.scale(0.97D));
                                 }
             }

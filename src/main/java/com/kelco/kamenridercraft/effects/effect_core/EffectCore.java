@@ -205,7 +205,8 @@ public class EffectCore {
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
 
     public static final Holder<MobEffect> CLIMBING= EFFECT.register("climbing",
-            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xffffff));
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xffffff)
+                    .addAttributeModifier(AttributeRegistry.CLIMBING, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.climbing"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  FORM_TIMEOUT= EFFECT.register("form_timeout",
             () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));
