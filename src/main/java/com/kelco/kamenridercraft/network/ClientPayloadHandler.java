@@ -14,6 +14,8 @@ import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
 import com.zigythebird.playeranimcore.animation.Animation;
 import com.zigythebird.playeranimcore.animation.layered.modifier.AbstractFadeModifier;
+import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonConfiguration;
+import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonMode;
 import com.zigythebird.playeranimcore.easing.EasingType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.AbstractClientPlayer;
@@ -33,12 +35,12 @@ import static com.kelco.kamenridercraft.util.AnimationUtil.*;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
 public class ClientPayloadHandler {
-    
+
     // Decade Complete summon swing mimicry
     public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
         // Do something with the data, on the network thread
         handleCompleteSwing(data.hand(), context.player());
-        
+
         // Do something with the data, on the main thread
         //context.enqueueWork(() -> {
         //    handle(data.hand());
@@ -51,8 +53,8 @@ public class ClientPayloadHandler {
     }
 
     private static void handleCompleteSwing(int hand, Player player) {
-        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10), 
-                                            entity -> (entity.getOwner() == player))) {
+        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
+                entity -> (entity.getOwner() == player))) {
             complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
         }
         for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
@@ -64,14 +66,16 @@ public class ClientPayloadHandler {
     public static void startPoseAnimations(final StartPosePayload data, final IPayloadContext context) {
         LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
         assert posingRider != null;
-        if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem()  instanceof RiderDriverItem driverItem) {
+        Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+
+        if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
 
             RiderFormChangeItem formChangeItemOne = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
 
             String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
-            String riderName =  getAnimRiderName(driverItem);
+            String riderName = getAnimRiderName(driverItem);
 
-            Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
+            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
 
             if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "animation/form_specific_pose")))) {
                 animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
@@ -93,15 +97,17 @@ public class ClientPayloadHandler {
             if (animation == null) {
                 animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
             }
+        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().asItem().toString().equals("kamenridercraft:ferbus")) {
+            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance"));
+        }
+        try {
+            AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
 
-            try {
-                AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-                PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
-                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
-                controller.triggerAnimation(animation);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
+            controller.triggerAnimation(animation);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

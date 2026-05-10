@@ -41,13 +41,12 @@ public class ServerPayloadHandler {
 
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
         //TODO add gamerule for allow particles, sounds, and cooldown length
-        if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1 & !context.player().hasEffect(EffectCore.POSE_COOLDOWN)) {
+        if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1) {
             context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(0);
             stopPosing(context.player());
         } else {
-            if (canPose(context.player()) && context.player().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof  RiderDriverItem){
+            if (canPose(context.player())){
                 context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
-                context.player().addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 60, 0, true, false));
                 PacketDistributor.sendToAllPlayers(new StartPosePayload(0, context.player().getStringUUID()));
             }
         }

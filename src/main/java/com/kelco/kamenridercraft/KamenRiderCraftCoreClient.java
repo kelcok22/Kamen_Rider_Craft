@@ -29,14 +29,14 @@ public class KamenRiderCraftCoreClient {
 
     @SubscribeEvent
     public static void registerPlayerAnimations() {
-        // Rider Attacks
+        // Poses
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 17500,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
         /*
-        // Poses
+        // Rider Attacks
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 20000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
@@ -48,7 +48,7 @@ public class KamenRiderCraftCoreClient {
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
-        // Flying
+        // Flying/Gliding
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ANIMATION_LAYER_ID, 20000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP

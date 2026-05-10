@@ -66,9 +66,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public String BELT_TEXT;
     private Boolean A1 = false;
     private Boolean SD = false;
-    private double riderOldX = 999F;
-    private double riderOldZ = 999F;
-
     public int Unlimited_Textures = 0;
     public int Unlimited_Belt_Textures = 0;
 
@@ -311,18 +308,6 @@ public class RiderDriverItem extends RiderArmorItem {
         if (entity instanceof LivingEntity livingEntity && stack == livingEntity.getItemBySlot(EquipmentSlot.FEET)) {
             this.beltTick(stack, level, livingEntity, slotId);
             this.giveEffects(livingEntity);
-            if (this.riderOldX == 999F) {
-                this.riderOldX = livingEntity.getBlockX();
-                this.riderOldZ = livingEntity.getBlockZ();
-            }
-            if (entity instanceof Player player && player.getAttribute(AttributeRegistry.POSING).getValue() == 1) {
-                if (player.invulnerableTime > 0 ||this.riderOldX != player.getBlockX() || this.riderOldZ != player.getBlockZ() || player.isCrouching() || player.isSleeping() || player.isSwimming() || player.isPassenger() || player.isFallFlying()) {
-                    player.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
-                    stopPosing(player);
-                }
-            }
-            this.riderOldX = livingEntity.getBlockX();
-            this.riderOldZ = livingEntity.getBlockZ();
             if (livingEntity.hasEffect(EffectCore.FORM_TIMEOUT) && !isTransformed(livingEntity))
                 this.timeoutForms(livingEntity, stack);
         } else if (entity instanceof

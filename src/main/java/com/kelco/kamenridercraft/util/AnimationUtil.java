@@ -12,7 +12,8 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public class AnimationUtil {
     public static boolean canPose (LivingEntity poser) {
         if (!poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving()  && poser.onGround()
-        && !poser.isCrouching() && !poser.onClimbable() && poser.getAttribute(AttributeRegistry.POSING).getValue() == 0) {
+        && !poser.isCrouching() && !poser.onClimbable() && poser.getAttribute(AttributeRegistry.POSE_COOLDOWN).getValue() <= 0  &&
+                poser.getAttribute(AttributeRegistry.USING_ABILITY).getValue() == 0) {
             return true;
         }
         return false;
@@ -21,7 +22,7 @@ public class AnimationUtil {
     public static void stopPosing(LivingEntity poser) {
         if (poser.level() instanceof ServerLevel) {
             poser.getAttribute(AttributeRegistry.POSING).setBaseValue(0);
-            poser.addEffect(new MobEffectInstance(EffectCore.POSE_COOLDOWN, 40, 0, true, false));
+            poser.getAttribute(AttributeRegistry.POSE_COOLDOWN).setBaseValue(20);
             PacketDistributor.sendToAllPlayers(new EndPosePayload(0, poser.getStringUUID()));
         }
     }
