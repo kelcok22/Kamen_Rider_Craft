@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.GSystemChipProgrammer;
+import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
@@ -326,7 +327,8 @@ public class Agito_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","g6","g_buckle_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 1,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -336,7 +338,7 @@ public class Agito_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().IsBeltGlowing().has_basic_model().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+            }.hasFlyingWings("g6.geo.json").IsGlowing().IsBeltGlowing().has_basic_model().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
