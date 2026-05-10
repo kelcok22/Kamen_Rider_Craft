@@ -173,6 +173,7 @@ public class ModCommonEvents {
                     Vec3 initialVec = entity.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
                     entity.setDeltaMovement(climbVec.scale(0.97D));
+                    if ( entity instanceof Player player) player.hurtMarked=true;
                 }
             }
             if (event.getEntity() instanceof LivingEntity entity && event.getEntity() instanceof Player) {
