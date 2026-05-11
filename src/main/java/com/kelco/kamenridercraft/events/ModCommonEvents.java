@@ -170,9 +170,8 @@ public class ModCommonEvents {
  **/
             if (event.getEntity()instanceof LivingEntity entity&& entity.getAttribute(AttributeRegistry.CLIMBING).getValue() !=0) {
                 if ( entity.horizontalCollision) {
-                    Vec3 initialVec = entity.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D*(entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
-                    entity.setDeltaMovement(climbVec.scale(0.97D));
+                    Vec3 climbVec = new Vec3(0, 0.1D*(entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), 0);
+                    entity.push(climbVec.scale(0.97D));
                     if ( entity instanceof Player player) player.hurtMarked=true;
                 }
             }
