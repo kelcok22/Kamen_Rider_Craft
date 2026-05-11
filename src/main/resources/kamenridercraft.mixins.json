@@ -6,6 +6,7 @@
     "block.GochizoCakeBlock",
     "compat.JMCGochizoCakeBlock",
     "livingentity.LivingEntityMixin",
+    "client.AbstractClientPlayerMixin",
     "structure.JigsawPlacementExpansion",
     "structure.JigsawExpansion",
     "structure.PlaceCommandUnlimit",
