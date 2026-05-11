@@ -726,6 +726,12 @@ public class KamenRiderCraftCore {
             );
 
             registrar.playToServer(
+                    ClimbCollisionPayload.TYPE,
+                    ClimbCollisionPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleClimbing
+            );
+
+            registrar.playToServer(
                     AbilityKeyPayload.TYPE,
                     AbilityKeyPayload.STREAM_CODEC,
                     ServerPayloadHandler::handleAbilityKeyPress

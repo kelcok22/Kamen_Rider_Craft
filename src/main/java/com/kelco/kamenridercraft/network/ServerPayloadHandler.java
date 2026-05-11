@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
@@ -69,6 +70,13 @@ public class ServerPayloadHandler {
 
     public static void handleAbilityKeyPress(final AbilityKeyPayload data, final IPayloadContext context) {
         handleAbilityKeyPress((ServerPlayer) context.player());
+    }
+
+    public static void handleClimbing(final ClimbCollisionPayload data, final IPayloadContext context) {
+        Vec3 initialVec = context.player().getDeltaMovement();
+        Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (context.player().getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
+        context.player().setDeltaMovement(climbVec.scale(0.97D));
+        context.player().hurtMarked=true;
     }
 
     private static void handleCompleteSwing(int hand, Player player) {
