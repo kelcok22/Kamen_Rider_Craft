@@ -131,11 +131,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static boolean isTransforming(LivingEntity player) {
         if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        else if (player.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = player.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
-            return tag.getDouble("is_transforming") != 0;
-        }
-        return false;
+        return player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0;
     }
 
     public static boolean isKicking(LivingEntity player) {
@@ -249,12 +245,6 @@ public class RiderDriverItem extends RiderArmorItem {
             if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
             if (!isTransformed(player)) tag.putDouble("render_type", 0);
 
-            if (!level.isClientSide) {
-                if (tag.getDouble("is_transforming") != 0)
-                    tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
-                if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
-            }
-
         } else {
             set_Upadete_Form(stack);
         }
@@ -333,13 +323,13 @@ public class RiderDriverItem extends RiderArmorItem {
             OnTransformation(itemstack, player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
-                form.putDouble("is_transforming", 30);
                 form.putFloat("wheel_rotation", 0f);
                 form.putFloat("ball_rotation", 0f);
                 form.putFloat("cape", 0f);
                 form.putDouble("render_type", getRenderType(itemstack));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+            player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(30);
         }
 
     }

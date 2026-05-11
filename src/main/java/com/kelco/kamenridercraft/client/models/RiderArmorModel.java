@@ -74,7 +74,10 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
 
         Entity entity = state.getData(DataTickets.ENTITY);
+
 if (entity instanceof LivingEntity RIDER) {
+    Float GetTransforming = (float) RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue();
+
     GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
     GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
     GeoBone b_wheel = this.getAnimationProcessor().getBone("b_wheel");
@@ -109,7 +112,7 @@ if (entity instanceof LivingEntity RIDER) {
                     wizard_circle.setScaleY(1.1f);
                     wizard_circle.setScaleZ(1.1f);
 
-                wizard_circle.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))-10);
+                wizard_circle.setPosX(GetTransforming-10);
                 wizard_circle.setHidden(false);
             }else {
                 wizard_circle.setHidden(true);
@@ -123,7 +126,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle2.setScaleY(1.1f);
                 wizard_circle2.setScaleZ(1.1f);
 
-                wizard_circle2.setPosX(30-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle2.setPosX(30-GetTransforming);
                 wizard_circle2.setHidden(false);
             }else {
                 wizard_circle2.setHidden(true);
@@ -137,7 +140,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle3.setScaleY(1.1f);
                 wizard_circle3.setScaleZ(1.1f);
 
-                wizard_circle3.setPosY(35-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle3.setPosY(35-GetTransforming);
                 wizard_circle3.setHidden(false);
             }else {
                 wizard_circle3.setHidden(true);
@@ -151,7 +154,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle4.setScaleY(1.1f);
                 wizard_circle4.setScaleZ(1.1f);
 
-                wizard_circle4.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle4.setPosY(GetTransforming);
                 wizard_circle4.setHidden(false);
             }else {
                 wizard_circle4.setHidden(true);
@@ -165,7 +168,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle5.setScaleY(1.1f);
                 wizard_circle5.setScaleZ(1.1f);
                 wizard_circle5.setPosX(2.5f);
-                wizard_circle5.setPosZ(30-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle5.setPosZ(30-GetTransforming);
                 wizard_circle5.setHidden(false);
             }else {
                 wizard_circle5.setHidden(true);
@@ -179,7 +182,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle6.setScaleX(1.1f);
                 wizard_circle6.setScaleY(1.1f);
                 wizard_circle6.setScaleZ(1.1f);
-                wizard_circle6.setPosZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle6.setPosZ(GetTransforming);
                 wizard_circle6.setHidden(false);
             }else {
                 wizard_circle6.setHidden(true);
@@ -193,8 +196,8 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle7.setScaleX(1.1f);
                 wizard_circle7.setScaleY(1.1f);
                 wizard_circle7.setScaleZ(1.1f);
-                wizard_circle7.setPosZ(25-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
-                wizard_circle7.setRotY(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/3);
+                wizard_circle7.setPosZ(25-GetTransforming);
+                wizard_circle7.setRotY(-GetTransforming/3);
                 wizard_circle7.setHidden(false);
             }else {
                 wizard_circle7.setHidden(true);
@@ -208,8 +211,8 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle8.setScaleX(1.1f);
                 wizard_circle8.setScaleY(1.1f);
                 wizard_circle8.setScaleZ(1.1f);
-                wizard_circle8.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET))/2);
-                wizard_circle8.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                wizard_circle8.setRotX(GetTransforming/2);
+                wizard_circle8.setPosY(GetTransforming);
                 wizard_circle8.setHidden(false);
             }else {
                 wizard_circle8.setHidden(true);
@@ -228,36 +231,36 @@ if (entity instanceof LivingEntity RIDER) {
 
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                tire.setRotX(GetTransforming);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
+                tire.setPosX(GetTransforming / 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
+                tire.setPosY(GetTransforming / 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setPosZ(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                tire.setPosZ(-GetTransforming);
 
             //tire.setHidden(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) == 0);
         }
         if (tire2 != null) {
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setRotX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                tire2.setRotX(GetTransforming);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setPosX(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
+                tire2.setPosX(GetTransforming / 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
+                tire2.setPosY(GetTransforming/ 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setPosZ(-RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                tire2.setPosZ(-GetTransforming);
         }
         if (tire3 != null) {
             if (RiderDriverItem.get_Form_Item(RIDER.getItemBySlot(EquipmentSlot.FEET), 1) != Drive_Rider_Items.SHIFT_PROTO_SPEED_CHASER.asItem()) {
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setRotZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                    tire3.setRotZ(GetTransforming);
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setPosX(RiderDriverItem.GetTransforming((RIDER.getItemBySlot(EquipmentSlot.FEET))) / 2);
+                    tire3.setPosX(GetTransforming / 2);
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setPosY(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) / 2);
+                    tire3.setPosY(GetTransforming/ 2);
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setPosZ(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+                    tire3.setPosZ(GetTransforming);
             } else {
                 tire3.setRotZ(state.getPartialTick());
             }

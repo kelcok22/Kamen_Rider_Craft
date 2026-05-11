@@ -154,8 +154,21 @@ public class ModCommonEvents {
         }
 
         @SubscribeEvent
+        public void addLivingDamageEvent(LivingEvent.LivingVisibilityEvent event) {
+            if (event.getLookingEntity() instanceof LivingEntity entity) {
+                //if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.2);
+            }
+        }
+
+        @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
-            if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
+            if (event.getEntity() instanceof LivingEntity entity ) {
+                if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.2);
+                if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()<=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
+            }
+
+
+                if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
@@ -164,6 +177,7 @@ public class ModCommonEvents {
             }
 
             if (event.getEntity() instanceof LivingEntity entity && event.getEntity() instanceof Player) {
+
                 if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                     belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
                 }
