@@ -76,8 +76,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
         Entity entity = state.getData(DataTickets.ENTITY);
 
 if (entity instanceof LivingEntity RIDER) {
-    Float GetTransforming = (float) RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue();
-
+    Float GetTransforming = (float) RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-(state.getPartialTick()*0.2f);
     GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
     GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
     GeoBone b_wheel = this.getAnimationProcessor().getBone("b_wheel");
