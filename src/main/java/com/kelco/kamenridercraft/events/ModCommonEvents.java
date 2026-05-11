@@ -153,28 +153,35 @@ public class ModCommonEvents {
             }
         }
 
-        public void onEntityTick(BlockEvent event) {
+
+        @SubscribeEvent
+        public void onEntityTick(PlayerTickEvent.Post event) {
+            Player entity = event.getEntity();
+            if (entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
+                if (entity.horizontalCollision) {
+                    Vec3 initialVec = entity.getDeltaMovement();
+                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
+                    entity.setDeltaMovement(climbVec.scale(0.97D));
+                    entity.hurtMarked = true;
+                }
+            }
+
         }
 
 
         @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
-/**
- if (event.getEntity()instanceof LivingEntity entity) {
- LocalDate localdate = LocalDate.now();
- int day = localdate.getDayOfMonth();
- if (localdate.getMonthValue() == 4 && day == 1) {
- entity.addEffect(new MobEffectInstance(Effect_core.SD, 30, 0, false, false));
- }
- }
- **/
+
             if (event.getEntity()instanceof LivingEntity entity&& entity.getAttribute(AttributeRegistry.CLIMBING).getValue() !=0) {
-                if ( entity.horizontalCollision) {
-                    Vec3 climbVec = new Vec3(0, 0.1D*(entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), 0);
-                    entity.push(climbVec.scale(0.97D));
-                    if ( entity instanceof Player player) player.hurtMarked=true;
+                if (!entity.level().isClientSide){
+                    if (entity.horizontalCollision) {
+                        Vec3 initialVec = entity.getDeltaMovement();
+                        Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
+                        entity.setDeltaMovement(climbVec.scale(0.97D));
+                    }
                 }
             }
+
             if (event.getEntity() instanceof LivingEntity entity && event.getEntity() instanceof Player) {
                 if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                     belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
