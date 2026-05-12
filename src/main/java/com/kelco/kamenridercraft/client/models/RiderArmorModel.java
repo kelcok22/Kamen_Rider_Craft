@@ -85,11 +85,18 @@ if (entity instanceof LivingEntity RIDER) {
 
     double GetTransformingOld =  RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).getBaseValue();
     double GetTransforming = RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue();
-    boolean hasChanged = GetTransformingOld==GetTransforming;
 
-    //(float) (GetTransforming+((GetTransformingOld-GetTransforming)/2));
+    double GetBallOld =  RIDER.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue();
+    double GetBall = RIDER.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue();
+    double GetWheelOld =  RIDER.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue();
+    double GetWheel = RIDER.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue();
+    double GetCapeOld =  RIDER.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue();
+    double GetCape = RIDER.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue();
 
     Float  Transforming = (float) Mth.lerp(state.getPartialTick(),GetTransformingOld,GetTransforming);
+    Float  wheel= (float) Mth.lerp(state.getPartialTick(),GetWheelOld,GetWheel);
+    Float  ball = (float) Mth.lerp(state.getPartialTick(),GetBallOld,GetBall);
+    Float  Cape = (float) Mth.lerp(state.getPartialTick(),GetCapeOld,GetCape);
 
     GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
     GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
@@ -110,10 +117,10 @@ if (entity instanceof LivingEntity RIDER) {
         bipedHead.setScaleZ((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
     }
 
-    if (cape != null & RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)) < 0)
-        cape.setRotX(RiderArmorItem.GetCapeRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
-    if (cape != null & RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)) != 0)
-        cape.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+    if (cape != null & Cape< 0)
+        cape.setRotX(Cape);
+    if (cape != null & ball != 0)
+        cape.setRotY(ball);
 
     if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
         belt.setCustomAnimations(an, instanceId, state);
@@ -280,16 +287,16 @@ if (entity instanceof LivingEntity RIDER) {
         }
     }
 
-    if (front_fork != null) front_fork.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+    if (front_fork != null) front_fork.setRotY(ball);
     if (front_fork2 != null)
-        front_fork2.setRotY(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        front_fork2.setRotY(ball);
 
-    if (f_wheel != null) f_wheel.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
-    if (f_wheel2 != null) f_wheel2.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
-    if (b_wheel != null) b_wheel.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+    if (f_wheel != null) f_wheel.setRotX(wheel);
+    if (f_wheel2 != null) f_wheel2.setRotX(wheel);
+    if (b_wheel != null) b_wheel.setRotX(wheel);
     if (poop_ball_vice != null) {
-        poop_ball_vice.setRotX(RiderArmorItem.GetWheelRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
-        poop_ball_vice.setRotZ(RiderArmorItem.GetBallRotation(RIDER.getItemBySlot(EquipmentSlot.FEET)));
+        poop_ball_vice.setRotX(wheel);
+        poop_ball_vice.setRotZ(ball);
     }
 }
     }
