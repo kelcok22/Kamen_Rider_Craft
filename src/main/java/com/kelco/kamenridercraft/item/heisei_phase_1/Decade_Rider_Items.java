@@ -1667,11 +1667,11 @@ public class Decade_Rider_Items {
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> DECADRIVER = ITEMS.register("decadriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
+			() -> new DecadriverItem(ArmorMaterials.DIAMOND,"decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
 					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> NEO_DECADRIVER = ITEMS.register("neo_decadriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neo_decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
+			() -> new NeoDecadriverItem(ArmorMaterials.DIAMOND,"neo_decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Override_belt_text("neo_decadriver_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> DIEND_BELT= ITEMS.register("diend_belt",
@@ -1679,7 +1679,7 @@ public class Decade_Rider_Items {
 					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_DECADRIVER = ITEMS.register("dark_decadriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_decade",DARK_DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
+			() -> new DecadriverItem(ArmorMaterials.DIAMOND,"dark_decade",DARK_DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
 					.Override_belt_text("dark_decadriver_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> RIDE_BOOKER = ITEMS.register("ride_booker",
