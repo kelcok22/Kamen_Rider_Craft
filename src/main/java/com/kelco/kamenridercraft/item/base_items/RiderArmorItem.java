@@ -144,22 +144,13 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
 
 
 
-
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
-        RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
-        RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
-        RawAnimation IDLE_CAPE = RawAnimation.begin().thenLoop("idle_cape");
 
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
-
-
             Entity entity = state.getData(DataTickets.ENTITY);
-            boolean IsWaking = false;
-            boolean IsKicking = false;
             if (entity instanceof LivingEntity player) {
-
                 float X =0;
                 float Y =0;
                 float Z =0;
@@ -183,8 +174,6 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
 
                if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().x != 0 ||
                        player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().z != 0)
-                   IsWaking = RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_Walk();
-
                 if (this instanceof RiderDriverItem belt) {
 
                     if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
@@ -226,12 +215,10 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
                         setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
                     }
                 }
-                if (RiderDriverItem.isKicking(player)) IsKicking = true;
+
 
             }
-            if (entity instanceof LivingEntity player &&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && IsKicking) {
-                state.setAndContinue(KICK);
-            } else state.setAndContinue(IsWaking ? WALK : IDLE);
+           else state.setAndContinue(IDLE);
             return PlayState.CONTINUE;
         }));
     }

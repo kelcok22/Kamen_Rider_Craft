@@ -163,7 +163,8 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
             if (event.getEntity() instanceof LivingEntity entity ) {
-                if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.2);
+                entity.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).setBaseValue(entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue());
+                if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.5);
                 if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()<=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
             }
 

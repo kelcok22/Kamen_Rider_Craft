@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,8 +18,12 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.constant.dataticket.DataTicket;
 import software.bernie.geckolib.model.GeoModel;
+import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.GeoRenderer;
+
+import java.util.function.BiConsumer;
 
 public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
@@ -44,6 +49,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     public ResourceLocation getModelResource(RiderArmorItem animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
     }
+
 
     @Override
     public ResourceLocation getTextureResource(RiderArmorItem animatable, @Nullable GeoRenderer<RiderArmorItem> renderer) {
@@ -76,7 +82,15 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
         Entity entity = state.getData(DataTickets.ENTITY);
 
 if (entity instanceof LivingEntity RIDER) {
-    Float GetTransforming = (float) RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-(state.getPartialTick()*0.2f);
+
+    double GetTransformingOld =  RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).getBaseValue();
+    double GetTransforming = RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue();
+    boolean hasChanged = GetTransformingOld==GetTransforming;
+
+    //(float) (GetTransforming+((GetTransformingOld-GetTransforming)/2));
+
+    Float  Transforming = (float) Mth.lerp(state.getPartialTick(),GetTransformingOld,GetTransforming);
+
     GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
     GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
     GeoBone b_wheel = this.getAnimationProcessor().getBone("b_wheel");
@@ -111,7 +125,7 @@ if (entity instanceof LivingEntity RIDER) {
                     wizard_circle.setScaleY(1.1f);
                     wizard_circle.setScaleZ(1.1f);
 
-                wizard_circle.setPosX(GetTransforming-10);
+                wizard_circle.setPosX(Transforming-10);
                 wizard_circle.setHidden(false);
             }else {
                 wizard_circle.setHidden(true);
@@ -125,7 +139,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle2.setScaleY(1.1f);
                 wizard_circle2.setScaleZ(1.1f);
 
-                wizard_circle2.setPosX(30-GetTransforming);
+                wizard_circle2.setPosX(30-Transforming);
                 wizard_circle2.setHidden(false);
             }else {
                 wizard_circle2.setHidden(true);
@@ -139,7 +153,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle3.setScaleY(1.1f);
                 wizard_circle3.setScaleZ(1.1f);
 
-                wizard_circle3.setPosY(35-GetTransforming);
+                wizard_circle3.setPosY(35-Transforming);
                 wizard_circle3.setHidden(false);
             }else {
                 wizard_circle3.setHidden(true);
@@ -153,7 +167,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle4.setScaleY(1.1f);
                 wizard_circle4.setScaleZ(1.1f);
 
-                wizard_circle4.setPosY(GetTransforming);
+                wizard_circle4.setPosY(Transforming);
                 wizard_circle4.setHidden(false);
             }else {
                 wizard_circle4.setHidden(true);
@@ -167,7 +181,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle5.setScaleY(1.1f);
                 wizard_circle5.setScaleZ(1.1f);
                 wizard_circle5.setPosX(2.5f);
-                wizard_circle5.setPosZ(30-GetTransforming);
+                wizard_circle5.setPosZ(30-Transforming);
                 wizard_circle5.setHidden(false);
             }else {
                 wizard_circle5.setHidden(true);
@@ -181,7 +195,7 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle6.setScaleX(1.1f);
                 wizard_circle6.setScaleY(1.1f);
                 wizard_circle6.setScaleZ(1.1f);
-                wizard_circle6.setPosZ(GetTransforming);
+                wizard_circle6.setPosZ(Transforming);
                 wizard_circle6.setHidden(false);
             }else {
                 wizard_circle6.setHidden(true);
@@ -195,8 +209,8 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle7.setScaleX(1.1f);
                 wizard_circle7.setScaleY(1.1f);
                 wizard_circle7.setScaleZ(1.1f);
-                wizard_circle7.setPosZ(25-GetTransforming);
-                wizard_circle7.setRotY(-GetTransforming/3);
+                wizard_circle7.setPosZ(25-Transforming);
+                wizard_circle7.setRotY(-Transforming/3);
                 wizard_circle7.setHidden(false);
             }else {
                 wizard_circle7.setHidden(true);
@@ -210,8 +224,8 @@ if (entity instanceof LivingEntity RIDER) {
                 wizard_circle8.setScaleX(1.1f);
                 wizard_circle8.setScaleY(1.1f);
                 wizard_circle8.setScaleZ(1.1f);
-                wizard_circle8.setRotX(GetTransforming/2);
-                wizard_circle8.setPosY(GetTransforming);
+                wizard_circle8.setRotX(Transforming/2);
+                wizard_circle8.setPosY(Transforming);
                 wizard_circle8.setHidden(false);
             }else {
                 wizard_circle8.setHidden(true);
@@ -230,36 +244,36 @@ if (entity instanceof LivingEntity RIDER) {
 
         if (tire != null) {
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setRotX(GetTransforming);
+                tire.setRotX(Transforming);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setPosX(GetTransforming / 2);
+                tire.setPosX(Transforming / 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setPosY(GetTransforming / 2);
+                tire.setPosY(Transforming / 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire.setPosZ(-GetTransforming);
+                tire.setPosZ(-Transforming);
 
             //tire.setHidden(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) == 0);
         }
         if (tire2 != null) {
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setRotX(GetTransforming);
+                tire2.setRotX(Transforming);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setPosX(GetTransforming / 2);
+                tire2.setPosX(Transforming / 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setPosY(GetTransforming/ 2);
+                tire2.setPosY(Transforming/ 2);
             if (RiderDriverItem.isTransforming(RIDER))
-                tire2.setPosZ(-GetTransforming);
+                tire2.setPosZ(-Transforming);
         }
         if (tire3 != null) {
             if (RiderDriverItem.get_Form_Item(RIDER.getItemBySlot(EquipmentSlot.FEET), 1) != Drive_Rider_Items.SHIFT_PROTO_SPEED_CHASER.asItem()) {
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setRotZ(GetTransforming);
+                    tire3.setRotZ(Transforming);
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setPosX(GetTransforming / 2);
+                    tire3.setPosX(Transforming / 2);
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setPosY(GetTransforming/ 2);
+                    tire3.setPosY(Transforming/ 2);
                 if (RiderDriverItem.isTransforming(RIDER))
-                    tire3.setPosZ(GetTransforming);
+                    tire3.setPosZ(Transforming);
             } else {
                 tire3.setRotZ(state.getPartialTick());
             }

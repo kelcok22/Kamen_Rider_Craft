@@ -21,7 +21,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
 
 
 
-    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING = ATTRIBUTES.register("is_transforming",
+    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING_OLD = ATTRIBUTES.register("is_transforming_old",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.is_transforming",
                     0,
@@ -31,6 +31,14 @@ public class AttributeRegistry extends Event implements IModBusEvent {
     );
 
 
+    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING = ATTRIBUTES.register("is_transforming",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.is_transforming",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
 
     public static final DeferredHolder<Attribute, Attribute> CLIMBING = ATTRIBUTES.register("climbing",
             () -> new RangedAttribute(
