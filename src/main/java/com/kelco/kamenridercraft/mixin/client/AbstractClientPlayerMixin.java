@@ -21,8 +21,5 @@ public class AbstractClientPlayerMixin {
         if (player.horizontalCollision && player.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
             PacketDistributor.sendToServer(new ClimbCollisionPayload(0));
         }
-        if (player.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ichigo_mask") && player.hasEffect(EffectCore.RIDER_SPIRIT)){
-            player.level().addParticle(ParticleTypes.RAIN, player.getX(), player.getEyeY(), player.getZ(), 0, 1, 0);
-        }
     }
 }

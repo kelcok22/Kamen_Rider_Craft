@@ -53,7 +53,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> RIDER_SPIRIT = EFFECT.register("rider_spirit",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x9d3443)
-                    .addAttributeModifier(Attributes.ATTACK_KNOCKBACK, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.rider_spirit"), 0.3F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(Attributes.ATTACK_KNOCKBACK, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.rider_spirit"), 0.4F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>SELF_MENDING = EFFECT.register("self_mending",
             () -> new SelfMendEffect(MobEffectCategory.BENEFICIAL, 0xFFAEC9));
