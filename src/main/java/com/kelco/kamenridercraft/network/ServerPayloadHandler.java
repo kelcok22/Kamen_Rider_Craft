@@ -54,16 +54,15 @@ public class ServerPayloadHandler {
     }
 
     public static void handleAttributeChange(final AttributeChangePayload data, final IPayloadContext context) {
-        if (!data.valueChange().isNaN()) {
             switch (data.attributeName()) {
-            case "ball_rotation_old" -> context.player().getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(data.valueChange());
-            case "wheel_rotation_old" -> context.player().getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(data.valueChange());
-            case "cape_rotation_old" -> context.player().getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(data.valueChange());
-            case "ball_rotation" -> context.player().getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
-            case "wheel_rotation" -> context.player().getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
-            case "cape_rotation" -> context.player().getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
+            case "ball_rot_old" -> context.player().getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(data.valueChange());
+            case "wheel_rot_old" -> context.player().getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(data.valueChange());
+            case "cape_rot_old" -> context.player().getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(data.valueChange());
+            case "ball_rot" -> context.player().getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
+            case "wheel_rot" -> context.player().getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
+            case "cape_rot" -> context.player().getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
             case "wing_out" -> context.player().getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
-        }}
+        }
     }
 
     public static void handleBeltKeyPress(final BeltKeyPayload data, final IPayloadContext context) {
