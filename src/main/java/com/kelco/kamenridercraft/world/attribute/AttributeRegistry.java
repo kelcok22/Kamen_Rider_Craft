@@ -35,7 +35,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation_old",
                     0,
-                    0,
+                    -30,
                     30
             ).setSyncable(true)
     );
@@ -45,7 +45,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation",
                     0,
-                    0,
+                    -30,
                     30
             ).setSyncable(true)
     );
@@ -54,7 +54,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wheel_rotation_old",
                     0,
-                    0,
+                    -30,
                     30
             ).setSyncable(true)
     );
@@ -64,7 +64,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wheel_rotation",
                     0,
-                    0,
+                    -30,
                     30
             ).setSyncable(true)
     );
@@ -73,7 +73,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation_old",
                     0,
-                    0,
+                    -30,
                     30
             ).setSyncable(true)
     );
@@ -83,7 +83,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.ball_rotation",
                     0,
-                    0,
+                    -30,
                     30
             ).setSyncable(true)
     );
@@ -113,7 +113,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
                     "attribute.kamenridercraftcore.climbing",
                     0,
                     0,
-                    255
+                    1
             ).setSyncable(true)
     );
 
