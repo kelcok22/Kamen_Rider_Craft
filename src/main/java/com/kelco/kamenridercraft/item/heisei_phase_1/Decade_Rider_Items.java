@@ -468,8 +468,17 @@ public class Decade_Rider_Items {
 			() -> new RiderCardItem(new Item.Properties(),"_build","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.setSummonBelt(17).addSummonWeapon(15).IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+        super.OnTransformation(itemstack, player);
+        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                player.getX(), player.getY()+1,
+                player.getZ(), 100, 0, 0, 0, 1);
+        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                player.getX(), player.getY()+1,
+                player.getZ(), 100, 0, 0, 0, 1);
+    }
+}.setSummonBelt(17).addSummonWeapon(15).IsGlowing().IsBeltGlowing().ChangeRiderName("decade").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_CARD = ITEMS.register("zi_o_card",
 			() -> new RiderCardItem(new Item.Properties(),"","neo_decade","neo_decadriver_belt",
