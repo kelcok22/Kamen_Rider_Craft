@@ -97,8 +97,8 @@ public class RiderFormChangeItem extends BaseItem {
 
     private int Store_num =1;
 
-    private String abilityOneName = "none";
-    private String abilityTwoName = "none";
+    private String primaryAbility = "none";
+    private String secondaryAbility = "none";
 
     public RiderFormChangeItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
         super( properties);
@@ -165,8 +165,8 @@ public class RiderFormChangeItem extends BaseItem {
     public Boolean get_a1() { return A1; }
     public Boolean get_SD() { return SD; }
 
-    public String getAbilityOneName() { return abilityOneName; }
-    public String getAbilityTwoName() { return abilityOneName; }
+    public String getPrimaryAbility() { return primaryAbility; }
+    public String getSeondaryAbility() { return secondaryAbility; }
 
     public Boolean get_has_cape() {
         return HAS_CAPE;
@@ -264,13 +264,13 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem setAbilityOne(String changedNamed) {
-        abilityOneName = changedNamed.toLowerCase();
+    public RiderFormChangeItem setAbilityOne(String abilityChange) {
+        primaryAbility = abilityChange.toLowerCase();
         return this;
     }
 
-    public RiderFormChangeItem setAbilityTwo(String changedNamed) {
-        abilityTwoName = changedNamed.toLowerCase();
+    public RiderFormChangeItem setSecondaryAbility(String abilityChange) {
+        secondaryAbility = abilityChange.toLowerCase();
         return this;
     }
 
