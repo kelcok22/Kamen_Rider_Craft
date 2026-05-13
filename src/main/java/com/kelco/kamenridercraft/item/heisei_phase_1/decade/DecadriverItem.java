@@ -39,7 +39,8 @@ public class DecadriverItem extends RiderDriverItem {
     {
         if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Decade_Rider_Items.DECADRIVER.get()) {
             if((get_Form_Item(itemstack, 1)==Decade_Rider_Items.K_TOUCH.get()
-                    &&((rider.isHolding(Decade_Rider_Items.K_TOUCH.get()))))) return "belts/decadriver_belt_k_touch_empty";
+           ||get_Form_Item(itemstack, 1)==Decade_Rider_Items.K_TOUCH_STRONGEST.get())
+                    &&((rider.isHolding(Decade_Rider_Items.K_TOUCH.get())))) return "belts/decadriver_belt_k_touch_empty";
         }
         return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
     }

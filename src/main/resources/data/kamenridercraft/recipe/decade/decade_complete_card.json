@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:decade_card"
+	}, 
+	{
+	  "item": "kamenridercraft:k_touch"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:decade_complete_card"
+  }
+}

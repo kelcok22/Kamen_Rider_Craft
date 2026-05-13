@@ -83,30 +83,9 @@ public class Decade_Rider_Items {
 
     public static List<Item> NEED_ITEM_STRONGEST_COMPLETE= new ArrayList<>();
 
-	public static final DeferredItem<Item> K_TOUCH = ITEMS.register("k_touch",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_complete","decade","decadriver_belt_k_touch",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 50, 0, 0, 0, 1);
-					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 50, 0, 0, 0, 1);
-				}
-			}.IsBeltGlowing().IsGlowing().AddNeedItemList(NEED_ITEM_STRONGEST_COMPLETE).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
-
     public static final DeferredItem<Item> K_TOUCH_STRONGEST = ITEMS.register("k_touch_strongest",
             () -> new RiderFormChangeItem(new Item.Properties(),"_strongest_complete","decade","decadriver_belt_k_touch",
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 8,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
@@ -123,9 +102,27 @@ public class Decade_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.addAlternative(K_TOUCH.get()).IsBeltGlowing().IsGlowing()
-                    .model_has_different_name("decade_complete").has_basic_model());
+            }.AddNeedItemList(NEED_ITEM_STRONGEST_COMPLETE).IsBeltGlowing().IsGlowing());
 
+    public static final DeferredItem<Item> K_TOUCH = ITEMS.register("k_touch",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_complete","decade","decadriver_belt_k_touch",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.IsBeltGlowing().IsGlowing().addSwitchForm(K_TOUCH_STRONGEST.get()).AddIncompatibleForm(K_TOUCH_STRONGEST.asItem()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> K_TOUCH_21 = ITEMS.register("k_touch_21",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_complete_21","neo_decade","decadriver_belt_k_touch_21",
@@ -146,7 +143,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 25, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().ignoreOverrideBeltText().AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.IsBeltGlowing().IsGlowing().HasCape().ignoreOverrideBeltText().AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_VIOLENT_EMOTION_CARD = ITEMS.register("decade_violent_emotion_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_violent_emotion","decade","decadriver_belt",
@@ -190,7 +187,7 @@ public class Decade_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.has_basic_model().model_has_different_name("diend_card").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.IsBeltGlowing().has_basic_model().model_has_different_name("diend_card").AddToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_CARD_POWER_UP = ITEMS.register("diend_power_up_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","diend","diend_belt",
