@@ -695,6 +695,7 @@ public class KamenRiderCraftCore {
         public static void register(final RegisterPayloadHandlersEvent event) {
             PayloadRegistrar registrar = event.registrar("kamenridercraft");
             registrar = registrar.executesOn(HandlerThread.MAIN);
+
             registrar.playBidirectional(
                     CompleteSwingPayload.TYPE,
                     CompleteSwingPayload.STREAM_CODEC,
@@ -723,9 +724,9 @@ public class KamenRiderCraftCore {
             );
 
             registrar.playToServer(
-                    AttributeChangePayload.TYPE,
-                    AttributeChangePayload.STREAM_CODEC,
-                    ServerPayloadHandler::handleAttributeChange
+                    RotationPayload.TYPE,
+                    RotationPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handlePlayerRotations
             );
 
             registrar.playToServer(

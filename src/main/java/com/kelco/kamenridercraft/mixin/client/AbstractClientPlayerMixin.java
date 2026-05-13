@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.mixin.client;
 
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.network.payload.ClimbCollisionPayload;
+import com.kelco.kamenridercraft.network.payload.RotationPayload;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.core.particles.ParticleTypes;
@@ -21,5 +22,14 @@ public class AbstractClientPlayerMixin {
         if (player.horizontalCollision && player.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
             PacketDistributor.sendToServer(new ClimbCollisionPayload(0));
         }
+
+        if (player.isShiftKeyDown()) {
+            PacketDistributor.sendToServer(new RotationPayload(0, "cape_rot", -15F));
+            PacketDistributor.sendToServer(new RotationPayload(0, "old_cape_rot", -12.5F));
+        } else {
+            PacketDistributor.sendToServer(new RotationPayload(0, "cape_rot", -5F));
+            PacketDistributor.sendToServer(new RotationPayload(0, "old_cape_rot", -7.5F));
+        }
+
     }
 }

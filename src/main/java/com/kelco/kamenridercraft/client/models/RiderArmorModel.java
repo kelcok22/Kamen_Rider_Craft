@@ -18,12 +18,8 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.constant.DataTickets;
-import software.bernie.geckolib.constant.dataticket.DataTicket;
 import software.bernie.geckolib.model.GeoModel;
-import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.GeoRenderer;
-
-import java.util.function.BiConsumer;
 
 public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
@@ -81,22 +77,24 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
         Entity entity = state.getData(DataTickets.ENTITY);
 
-if (entity instanceof LivingEntity RIDER) {
+if (entity instanceof LivingEntity rider && rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof  RiderDriverItem driver) {
 
-    double GetTransformingOld =  RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).getBaseValue();
-    double GetTransforming = RIDER.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue();
+    double GetTransformingOld =  rider.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).getBaseValue();
+    double GetTransforming = rider.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue();
 
-    double GetBallOld =  RIDER.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue();
-    double GetBall = RIDER.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue();
-    double GetWheelOld =  RIDER.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue();
-    double GetWheel = RIDER.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue();
-    double GetCapeOld =  RIDER.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue();
-    double GetCape = RIDER.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue();
+    double oldBallPos =  driver.getOldBallPos();
+    double ballPos = driver.getBallPos();
+    double oldWheelPos =  driver.getOldWheelPos();
+    double wheelPos = driver.getWheelPos();
+    double oldCapePos =  driver.getOldCapePos();
+    double capePos = driver.getCapePos();
+
+    System.out.println(capePos);
 
     Float  Transforming = (float) Mth.lerp(state.getPartialTick(),GetTransformingOld,GetTransforming);
-    Float  wheel= (float) Mth.lerp(state.getPartialTick(),GetWheelOld,GetWheel);
-    Float  ball = (float) Mth.lerp(state.getPartialTick(),GetBallOld,GetBall);
-    Float  Cape = (float) Mth.lerp(state.getPartialTick(),GetCapeOld,GetCape);
+    Float  wheel= (float) Mth.lerp(state.getPartialTick(), oldWheelPos, wheelPos);
+    Float  ball = (float) Mth.lerp(state.getPartialTick(),oldBallPos,ballPos);
+    Float  Cape = (float) Mth.lerp(state.getPartialTick(),oldCapePos,capePos);
 
     GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
     GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
@@ -112,22 +110,22 @@ if (entity instanceof LivingEntity RIDER) {
 
     GeoBone bipedHead = this.getAnimationProcessor().getBone("armorHead");
     if (bipedHead != null) {
-        bipedHead.setScaleX((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
-        bipedHead.setScaleY((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
-        bipedHead.setScaleZ((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
+        bipedHead.setScaleX((float) rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
+        bipedHead.setScaleY((float) rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
+        bipedHead.setScaleZ((float) rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
     }
 
-    if (cape != null & Cape< 0)
-        cape.setRotX(Cape);
+    if (cape != null)
+        cape.setRotX((float)capePos);
     if (cape != null & ball != 0)
         cape.setRotY(ball);
 
-    if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+    if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
         belt.setCustomAnimations(an, instanceId, state);
 
         GeoBone wizard_circle = this.getAnimationProcessor().getBone("wizard_circle");
         if (wizard_circle != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                     wizard_circle.setScaleX(1.1f);
                     wizard_circle.setScaleY(1.1f);
                     wizard_circle.setScaleZ(1.1f);
@@ -141,7 +139,7 @@ if (entity instanceof LivingEntity RIDER) {
         }
         GeoBone wizard_circle2 = this.getAnimationProcessor().getBone("wizard_circle2");
         if (wizard_circle2 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle2.setScaleX(1.1f);
                 wizard_circle2.setScaleY(1.1f);
                 wizard_circle2.setScaleZ(1.1f);
@@ -155,7 +153,7 @@ if (entity instanceof LivingEntity RIDER) {
         }
         GeoBone wizard_circle3 = this.getAnimationProcessor().getBone("wizard_circle3");
         if (wizard_circle3 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle3.setScaleX(1.1f);
                 wizard_circle3.setScaleY(1.1f);
                 wizard_circle3.setScaleZ(1.1f);
@@ -169,7 +167,7 @@ if (entity instanceof LivingEntity RIDER) {
         }
         GeoBone wizard_circle4 = this.getAnimationProcessor().getBone("wizard_circle4");
         if (wizard_circle4 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle4.setScaleX(1.1f);
                 wizard_circle4.setScaleY(1.1f);
                 wizard_circle4.setScaleZ(1.1f);
@@ -183,7 +181,7 @@ if (entity instanceof LivingEntity RIDER) {
         }
         GeoBone wizard_circle5 = this.getAnimationProcessor().getBone("wizard_circle5");
         if (wizard_circle5 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle5.setScaleX(1.1f);
                 wizard_circle5.setScaleY(1.1f);
                 wizard_circle5.setScaleZ(1.1f);
@@ -198,7 +196,7 @@ if (entity instanceof LivingEntity RIDER) {
 
         GeoBone wizard_circle6 = this.getAnimationProcessor().getBone("wizard_circle6");
         if (wizard_circle6 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle6.setScaleX(1.1f);
                 wizard_circle6.setScaleY(1.1f);
                 wizard_circle6.setScaleZ(1.1f);
@@ -212,7 +210,7 @@ if (entity instanceof LivingEntity RIDER) {
 
         GeoBone wizard_circle7 = this.getAnimationProcessor().getBone("wizard_circle7");
         if (wizard_circle7 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle7.setScaleX(1.1f);
                 wizard_circle7.setScaleY(1.1f);
                 wizard_circle7.setScaleZ(1.1f);
@@ -227,7 +225,7 @@ if (entity instanceof LivingEntity RIDER) {
 
         GeoBone wizard_circle8 = this.getAnimationProcessor().getBone("wizard_circle8");
         if (wizard_circle8 != null) {
-            if (RiderDriverItem.isTransforming(RIDER)) {
+            if (RiderDriverItem.isTransforming(rider)) {
                 wizard_circle8.setScaleX(1.1f);
                 wizard_circle8.setScaleY(1.1f);
                 wizard_circle8.setScaleZ(1.1f);
@@ -242,7 +240,7 @@ if (entity instanceof LivingEntity RIDER) {
 
         GeoBone rightLegkick= this.getAnimationProcessor().getBone("rightLegkick");
         if (rightLegkick != null) {
-            if (RiderDriverItem.isKicking(RIDER)) {
+            if (RiderDriverItem.isKicking(rider)) {
                 rightLegkick.setHidden(false);
             }else {
                 rightLegkick.setHidden(true);
@@ -250,36 +248,36 @@ if (entity instanceof LivingEntity RIDER) {
         }
 
         if (tire != null) {
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire.setRotX(Transforming);
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire.setPosX(Transforming / 2);
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire.setPosY(Transforming / 2);
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire.setPosZ(-Transforming);
 
             //tire.setHidden(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) == 0);
         }
         if (tire2 != null) {
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire2.setRotX(Transforming);
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire2.setPosX(Transforming / 2);
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire2.setPosY(Transforming/ 2);
-            if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.isTransforming(rider))
                 tire2.setPosZ(-Transforming);
         }
         if (tire3 != null) {
-            if (RiderDriverItem.get_Form_Item(RIDER.getItemBySlot(EquipmentSlot.FEET), 1) != Drive_Rider_Items.SHIFT_PROTO_SPEED_CHASER.asItem()) {
-                if (RiderDriverItem.isTransforming(RIDER))
+            if (RiderDriverItem.get_Form_Item(rider.getItemBySlot(EquipmentSlot.FEET), 1) != Drive_Rider_Items.SHIFT_PROTO_SPEED_CHASER.asItem()) {
+                if (RiderDriverItem.isTransforming(rider))
                     tire3.setRotZ(Transforming);
-                if (RiderDriverItem.isTransforming(RIDER))
+                if (RiderDriverItem.isTransforming(rider))
                     tire3.setPosX(Transforming / 2);
-                if (RiderDriverItem.isTransforming(RIDER))
+                if (RiderDriverItem.isTransforming(rider))
                     tire3.setPosY(Transforming/ 2);
-                if (RiderDriverItem.isTransforming(RIDER))
+                if (RiderDriverItem.isTransforming(rider))
                     tire3.setPosZ(Transforming);
             } else {
                 tire3.setRotZ(state.getPartialTick());
