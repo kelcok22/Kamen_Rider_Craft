@@ -72,7 +72,7 @@ public class FinalKamenRideCardItem extends BaseItem {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (!level.isClientSide() && BELT.getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)
-        && ((this.summonNeoBelt == null && (RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH.get() || RiderDriverItem.get_Form_Item(BELT, 1) == Gotchard_Rider_Items.DECADE_COMPLETE_RIDE_CHEMY_CARD.get())) || RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH_21.get())) {
+        && ((this.summonNeoBelt == null && (RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH.get() || RiderDriverItem.get_Form_Item(BELT, 1) == Gotchard_Rider_Items.DECADE_COMPLETE_RIDE_CHEMY_CARD.get())) || RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH_STRONGEST.get())  || RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH_21.get()) {
             if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
             
 			CompleteSummonEntity summon = MobsCore.COMPLETE_SUMMON.get().create(level);
