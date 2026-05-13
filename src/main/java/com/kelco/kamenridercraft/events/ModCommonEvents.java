@@ -456,7 +456,7 @@ public class ModCommonEvents {
                     }
 
                     if (_livEnt.hasEffect(EffectCore.RIDER_SPIRIT) && _livEnt.getMainHandItem().isEmpty()) {
-                        ((ServerLevel)event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
+                        ((ServerLevel)event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getEyeY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
                     }
 
                     if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND)) {
