@@ -6,12 +6,13 @@ import com.kelco.kamenridercraft.network.payload.EndPosePayload;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.neoforge.network.PacketDistributor;
 
 public class AnimationUtil {
     public static boolean canPose (LivingEntity poser) {
-        if (!poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving()  && poser.onGround()
+        if (!poser.getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") && !poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving()  && poser.onGround()
         && !poser.isCrouching() && !poser.onClimbable() && poser.getAttribute(AttributeRegistry.POSE_COOLDOWN).getValue() <= 0  &&
                 poser.getAttribute(AttributeRegistry.USING_ABILITY).getValue() == 0) {
             return true;

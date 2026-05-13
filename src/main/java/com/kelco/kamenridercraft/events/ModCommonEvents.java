@@ -41,6 +41,7 @@ import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -452,6 +453,10 @@ public class ModCommonEvents {
                         ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                 event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
                                 event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.RIDER_SPIRIT) && _livEnt.getMainHandItem().isEmpty()) {
+                        ((ServerLevel)event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
                     }
 
                     if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND)) {
