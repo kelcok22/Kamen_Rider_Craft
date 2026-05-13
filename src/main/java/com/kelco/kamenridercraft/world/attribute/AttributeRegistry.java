@@ -31,6 +31,64 @@ public class AttributeRegistry extends Event implements IModBusEvent {
     );
 
 
+    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT_OLD = ATTRIBUTES.register("cape_rotation_old",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.cape_rotation_old",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
+
+
+    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT = ATTRIBUTES.register("cape_rotation",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.cape_rotation",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
+
+    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT_OLD = ATTRIBUTES.register("wheel_rotation_old",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.wheel_rotation_old",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
+
+
+    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT = ATTRIBUTES.register("wheel_rotation",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.wheel_rotation",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
+
+    public static final DeferredHolder<Attribute, Attribute> BALL_ROT_OLD = ATTRIBUTES.register("ball_rotation_old",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.cape_rotation_old",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
+
+
+    public static final DeferredHolder<Attribute, Attribute> BALL_ROT = ATTRIBUTES.register("ball_rotation",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.ball_rotation",
+                    0,
+                    0,
+                    30
+            ).setSyncable(true)
+    );
+
+
     public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING_OLD = ATTRIBUTES.register("is_transforming_old",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.is_transforming",

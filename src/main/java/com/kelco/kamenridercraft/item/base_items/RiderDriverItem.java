@@ -74,12 +74,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public Boolean Has_basic_belt_info = true;
     public Boolean Show_belt_form_info = true;
 
-    private float oldBallPos = 0F;
-    private float ballPos = 0F;
-    private float oldWheelPos = 0F;
-    private float wheelPos = 0F;
-    private float oldCapePos =  0F;
-    private float capePos = 0F;
 
     /**
      * Constructor for the main armor piece used by a Kamen Rider, kaijin, or other transforming character. This item uses the foot armor slot in all cases.
@@ -333,6 +327,9 @@ public class RiderDriverItem extends RiderArmorItem {
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
             player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(30);
+            player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(0);
+            player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(0);
+            player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(0);
         }
 
     }
@@ -461,25 +458,6 @@ public class RiderDriverItem extends RiderArmorItem {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));
     }
 
-    public float getOldBallPos() {
-        return this.oldBallPos;
-    }
-    public float getBallPos() {
-        return this.ballPos;
-    }
-    public float getOldWheelPos() {
-        return this.oldWheelPos;
-    }
-    public float getWheelPos() {
-        return this.wheelPos;
-    }
-    public float getOldCapePos() {
-        return this.oldCapePos;
-    }
-    public float getCapePos() {
-        return this.capePos;
-    }
-
 
     public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
 
@@ -543,31 +521,6 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void Extra_set_Form_Item(ItemStack itemstack, Item ITEM, int SLOT, CompoundTag tag) {
-    }
-
-    public RiderDriverItem setOldBallPos(float change) {
-        this.oldBallPos =  change;
-        return this;
-    }
-    public RiderDriverItem setBallPos(float change) {
-        this.ballPos =  change;
-        return this;
-    }
-    public RiderDriverItem setOldWheelPos(float change) {
-        this.oldWheelPos =  change;
-        return this;
-    }
-    public RiderDriverItem setWheelPos(float change) {
-        this.wheelPos =  change;
-        return this;
-    }
-    public RiderDriverItem setOldCapePos(float change) {
-        this.oldCapePos =  change;
-        return this;
-    }
-    public RiderDriverItem setCapePos(float change) {
-        this.capePos =  change;
-        return this;
     }
 
 

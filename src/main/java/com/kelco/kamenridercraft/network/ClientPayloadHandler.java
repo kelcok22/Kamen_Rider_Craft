@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.network;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -7,13 +8,14 @@ import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
-import com.kelco.kamenridercraft.network.payload.RotationPayload;
 import com.kelco.kamenridercraft.network.payload.StartPosePayload;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
 import com.zigythebird.playeranimcore.animation.Animation;
 import com.zigythebird.playeranimcore.animation.layered.modifier.AbstractFadeModifier;
+import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonConfiguration;
+import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonMode;
 import com.zigythebird.playeranimcore.easing.EasingType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.AbstractClientPlayer;
