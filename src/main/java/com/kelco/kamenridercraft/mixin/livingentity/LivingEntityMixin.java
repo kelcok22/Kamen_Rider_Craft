@@ -105,13 +105,14 @@ public class LivingEntityMixin {
                     }
                 }
 
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot_old", player.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot_old", player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot_old", player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot", player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot", player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()));
-
+                if(player.level().isClientSide) {
+                    PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot_old", player.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue()));
+                    PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot_old", player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue()));
+                    PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot_old", player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue()));
+                    PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot", player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue()));
+                    PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot", player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue()));
+                    PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()));
+                }
 
         }
 
