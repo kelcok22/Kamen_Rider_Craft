@@ -23,10 +23,7 @@ import com.kelco.kamenridercraft.item.extra_riders.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_2.*;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
-import com.kelco.kamenridercraft.item.reboots.AmazonsRiderItems;
-import com.kelco.kamenridercraft.item.reboots.BlackSunRiderItems;
-import com.kelco.kamenridercraft.item.reboots.ShinIchigoRiderItems;
-import com.kelco.kamenridercraft.item.reboots.TheSeriesRiderItems;
+import com.kelco.kamenridercraft.item.reboots.*;
 import com.kelco.kamenridercraft.item.reiwa.*;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -723,6 +720,12 @@ public class KamenRiderCraftCore {
                     BeltKeyPayload.TYPE,
                     BeltKeyPayload.STREAM_CODEC,
                     ServerPayloadHandler::handleBeltKeyPress
+            );
+
+            registrar.playToServer(
+                    AttributeChangePayload.TYPE,
+                    AttributeChangePayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleAttributeChange
             );
 
             registrar.playToServer(

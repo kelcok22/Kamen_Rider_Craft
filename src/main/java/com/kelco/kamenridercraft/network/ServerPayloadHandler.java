@@ -53,6 +53,9 @@ public class ServerPayloadHandler {
         }
     }
 
+    public static void handleAttributeChange(final AttributeChangePayload data, final IPayloadContext context) {
+    }
+
     public static void handleBeltKeyPress(final BeltKeyPayload data, final IPayloadContext context) {
         // Do something with the data, on the network thread
         handleBeltKeyPress((ServerPlayer) context.player());
