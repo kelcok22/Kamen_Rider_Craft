@@ -82,144 +82,14 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         return this;
     }
 
-    public static Float GetWheelRotation(ItemStack itemstack)
-    {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
-            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                return tag.getFloat("wheel_rotation");
-        }
-        return 0f;
-    }
-
-    public static void setWheelRotation(ItemStack itemstack,Float num)
-    {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
-        if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> form.putFloat("wheel_rotation", num);
-            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-        }
-    }
-
-    public static Float GetBallRotation(ItemStack itemstack)
-    {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
-            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            return tag.getFloat("ball_rotation");
-        }
-        return 0f;
-    }
-
-    public static void setBallRotation(ItemStack itemstack,Float num)
-    {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
-        if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> form.putFloat("ball_rotation", num);
-            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-        }
-    }
-
-    public static Float GetCapeRotation(ItemStack itemstack)
-    {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)&itemstack.getItem()instanceof RiderArmorItem) {
-            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            return tag.getFloat("cape_rotation");
-        }
-        return 0f;
-    }
-
-    public static void setCapeRotation(ItemStack itemstack,Float num)
-    {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
-        if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> form.putFloat("cape_rotation", num);
-            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-        }
-    }
-
-
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
-
         controllerRegistrar.add(new AnimationController<>(this, "riderAnim", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
-            if (entity instanceof LivingEntity player) {
-                float X =0;
-                float Y =0;
-                float Z =0;
-                boolean isPlayer =false;
-                if (player instanceof Player) {
-                    X =player.xxa;
-                    Y=player.yya;
-                    Z=player.zza;
-                    isPlayer=true;
-                }else if (player instanceof Mob mob) {
-                    if (player.getDeltaMovement().x != 0 ||player.getDeltaMovement().z != 0){
-                        X= mob.getViewXRot(state.getPartialTick());
-                        Vec3 look = player.getLookAngle();
-                        if (look.x>0&player.getDeltaMovement().x>0)Z= 1;
-                        else if (look.z>0&player.getDeltaMovement().z>0)Z= 1;
-                        else  if (look.x<0&player.getDeltaMovement().x<0)Z= 1;
-                        else if (look.z<0&player.getDeltaMovement().z<0)Z= 1;
-                        else Z= -1;
-                    }
-                }
-
-               if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().x != 0 ||
-                       player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem&&player.getDeltaMovement().z != 0)
-                if (this instanceof RiderDriverItem belt) {
-
-                    if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
-                        float cape = GetCapeRotation(player.getItemBySlot(EquipmentSlot.FEET));
-                        float ball = 0;
-
-                        if (Z > 0 & cape >-0.7&!player.isSwimming()) cape = cape-0.01f-(player.getSpeed()/10);
-                        else if (Z < 0&cape <0) cape = cape +0.1f;
-                        else if  (Z == 0&cape <0&X== 0||cape <-0.7||cape <0&player.isSwimming()) cape = cape +0.02f;
-                        if (X > 0) {
-                            ball = 0.2f;
-                            if (isPlayer&Z == 0& cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
-                        }
-                        if (X < 0) {
-                            ball = -0.2f;
-                            if (isPlayer&Z == 0& cape >-0.7) cape = cape-0.01f-(player.getSpeed()/10);
-                        }
-                        if (player.fallDistance>0&!player.isSwimming()& cape>-2.5)cape =cape -0.05f;
-
-                        setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
-                        setCapeRotation(player.getItemBySlot(EquipmentSlot.FEET), cape);
-                    }
-
-                    if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1).get_is_Bike()) {
-                        float wheel = 0;
-                        if (Z > 0) wheel = -0.05f;
-                        if (Z < 0) wheel = 0.05f;
-                        setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
-                        float ball = 0;
-                        if (X > 0) {
-                            ball = 0.5f;
-                            if (Z == 0) wheel = -0.05f;
-                        }
-                        if (player.xxa < 0) {
-                            ball = -0.5f;
-                            if (Z == 0) wheel = -0.05f;
-                        }
-                        setBallRotation(player.getItemBySlot(EquipmentSlot.FEET), ball);
-                        setWheelRotation(player.getItemBySlot(EquipmentSlot.FEET), GetWheelRotation(player.getItemBySlot(EquipmentSlot.FEET)) + wheel);
-                    }
-                }
-
-
-            }
-           else state.setAndContinue(IDLE);
-            return PlayState.CONTINUE;
+           state.setAndContinue(IDLE);
+           return PlayState.CONTINUE;
         }));
     }
 

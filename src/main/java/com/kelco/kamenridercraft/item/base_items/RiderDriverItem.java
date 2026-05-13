@@ -323,13 +323,13 @@ public class RiderDriverItem extends RiderArmorItem {
             OnTransformation(itemstack, player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
-                form.putFloat("wheel_rotation", 0f);
-                form.putFloat("ball_rotation", 0f);
-                form.putFloat("cape", 0f);
                 form.putDouble("render_type", getRenderType(itemstack));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
             player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(30);
+            player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(0);
+            player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(0);
+            player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(0);
         }
 
     }
