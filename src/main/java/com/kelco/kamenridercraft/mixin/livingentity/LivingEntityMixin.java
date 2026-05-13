@@ -59,9 +59,10 @@ public class LivingEntityMixin {
                     else Z= -1;
                 }
             }
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot_old", player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot_old", player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue()));
-            PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot_old", player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue()));
+            player.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
+            player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
+            player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
+
 
                 if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                     if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
@@ -81,15 +82,15 @@ public class LivingEntityMixin {
                         }
                         //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2.5) cape = cape - 0.05f;
 
-                        PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot", (double) ball));
-                        PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot", (double) cape));
+                        player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
+                        player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(cape);
                     }
                     if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
                         float wheel = 0;
                         if (Z > 0) wheel = -0.1f;
                         if (Z < 0) wheel = 0.1f;
 
-                        PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel));
+                        player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel);
                         float ball = 0;
                         if (X > 0) {
                             ball = 0.5f;
@@ -99,10 +100,19 @@ public class LivingEntityMixin {
                             ball = -0.5f;
                             if (Z == 0) wheel = -0.1f;
                         }
-                        PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot", (double) ball));
-                        PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel));
+                        player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
+                        player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel);
                     }
                 }
+
+            PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot_old", player.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue()));
+            PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot_old", player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue()));
+            PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot_old", player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue()));
+            PacketDistributor.sendToServer(new AttributeChangePayload(0, "ball_rot", player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue()));
+            PacketDistributor.sendToServer(new AttributeChangePayload(0, "cape_rot", player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue()));
+            PacketDistributor.sendToServer(new AttributeChangePayload(0, "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()));
+
+
         }
 
     }
