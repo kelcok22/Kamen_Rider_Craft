@@ -1,21 +1,17 @@
 package com.kelco.kamenridercraft.network;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
+import com.kelco.kamenridercraft.network.payload.*;
 
-import com.kelco.kamenridercraft.network.payload.EndPosePayload;
-import com.kelco.kamenridercraft.network.payload.StartPosePayload;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
 import com.zigythebird.playeranimcore.animation.Animation;
 import com.zigythebird.playeranimcore.animation.layered.modifier.AbstractFadeModifier;
-import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonConfiguration;
-import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonMode;
 import com.zigythebird.playeranimcore.easing.EasingType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.AbstractClientPlayer;
@@ -51,6 +47,21 @@ public class ClientPayloadHandler {
         //    return null;
         //});
     }
+
+    public static void handleAttributeCLientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
+
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity){
+            switch (data.attributeName()) {
+                case "ball_rot_old" -> entity.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(data.valueChange());
+                case "wheel_rot_old" -> entity.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(data.valueChange());
+                case "cape_rot_old" -> entity.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(data.valueChange());
+                case "ball_rot" -> entity.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
+                case "wheel_rot" -> entity.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
+                case "cape_rot" -> entity.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
+                case "wing_out" -> entity.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
+            }}
+    }
+
 
     private static void handleCompleteSwing(int hand, Player player) {
         for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
