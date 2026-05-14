@@ -220,15 +220,15 @@ public class ModCommonEvents {
 
                                 player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
                                 player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(cape);
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot", player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue()));
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "cape_rot", player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue()));
+                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot", (double) ball));
+                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "cape_rot", (double) cape));
                             }
                             if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
                                 float wheel = 0;
                                 if (Z > 0) wheel = -0.1f;
                                 if (Z < 0) wheel = 0.1f;
 
-                                player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel);
+                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()+ wheel));
                                 float ball = 0;
                                 if (X > 0) {
                                     ball = 0.5f;
@@ -238,11 +238,8 @@ public class ModCommonEvents {
                                     ball = -0.5f;
                                     if (Z == 0) wheel = -0.1f;
                                 }
-                                player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
-                                player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel);
-
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot", player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue()));
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()));
+                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot", (double) ball));
+                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()+ wheel));
 
                             }
                         }
