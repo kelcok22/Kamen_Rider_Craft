@@ -722,6 +722,12 @@ public class KamenRiderCraftCore {
                     ServerPayloadHandler::handleBeltKeyPress
             );
 
+            registrar.playToClient(
+                    AttributeChangeClientPayload.TYPE,
+                    AttributeChangeClientPayload.STREAM_CODEC,
+                    ClientPayloadHandler::handleAttributeCLientChange
+            );
+
             registrar.playToServer(
                     AttributeChangePayload.TYPE,
                     AttributeChangePayload.STREAM_CODEC,
