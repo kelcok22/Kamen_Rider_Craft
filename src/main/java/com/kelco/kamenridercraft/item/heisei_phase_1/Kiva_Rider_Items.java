@@ -168,7 +168,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 35, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
+			}.IsBeltGlowing().IsGlowing().HasCape().addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
 
 	public static final DeferredItem<Item> DORAN_FUESTLE = ITEMS.register("doranfuestle",
 			() -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
@@ -190,7 +190,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.IsBeltGlowing().IsGlowing().HasCape().addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KIVATTE_FUESTLE = ITEMS.register("kiva_says_fuestle",
