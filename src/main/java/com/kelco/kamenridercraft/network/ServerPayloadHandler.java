@@ -12,10 +12,13 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
+
+import java.util.UUID;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
@@ -54,16 +57,17 @@ public class ServerPayloadHandler {
     }
 
     public static void handleAttributeChange(final AttributeChangePayload data, final IPayloadContext context) {
-        if (!data.valueChange().isNaN()) {
+
+            if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity){
             System.err.println(data.attributeName()+data.valueChange());
             switch (data.attributeName()) {
-            case "ball_rot_old" -> context.player().getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(data.valueChange());
-            case "wheel_rot_old" -> context.player().getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(data.valueChange());
-            case "cape_rot_old" -> context.player().getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(data.valueChange());
-            case "ball_rot" -> context.player().getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
-            case "wheel_rot" -> context.player().getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
-            case "cape_rot" -> context.player().getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
-            case "wing_out" -> context.player().getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
+            case "ball_rot_old" -> entity.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(data.valueChange());
+            case "wheel_rot_old" -> entity.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(data.valueChange());
+            case "cape_rot_old" -> entity.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(data.valueChange());
+            case "ball_rot" -> entity.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
+            case "wheel_rot" -> entity.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
+            case "cape_rot" -> entity.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
+            case "wing_out" -> entity.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
         }}
     }
 
