@@ -207,7 +207,7 @@ public class Kiva_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().IsGlowing().addNeedItem(TATSULOT.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.HasCape().IsBeltGlowing().IsGlowing().ChangeModel("kiva_emperor.geo.json").addNeedItem(TATSULOT.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KNUCKLE_FUESTLE_BURST = ITEMS.register("knucklefuestle_burst",
