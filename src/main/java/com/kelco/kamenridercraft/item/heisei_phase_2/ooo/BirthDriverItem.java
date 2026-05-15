@@ -67,8 +67,6 @@ public class BirthDriverItem extends RiderDriverItem {
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
 		if (equipmentSlot == EquipmentSlot.FEET) {
-
-
 			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
 				belt = get_Form_Item(itemstack,1).getBeltTex();

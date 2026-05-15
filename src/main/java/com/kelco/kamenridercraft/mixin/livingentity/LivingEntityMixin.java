@@ -62,11 +62,21 @@ public class LivingEntityMixin {
                         else Z = -1;
                     }
                 }
-                    player.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
-                    player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
-                    player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
 
                  if (isPlayer||player instanceof Mob) {
+
+                     if (rider instanceof Player pl && (pl.getAbilities().flying || player.isFallFlying())){
+                         player.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(1);
+                         PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wing_out", 1.0));
+                     }else{
+                         player.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(0);
+                         PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wing_out", (double) 0));
+                     }
+
+                     player.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
+                     player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
+                     player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
+
                 if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
                     if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {

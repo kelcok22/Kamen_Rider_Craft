@@ -47,7 +47,7 @@ public class ThousandriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
+		boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
         boolean bug = rider.getAttribute(AttributeRegistry.HAS_BUG).getValue() !=0;
 		if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;

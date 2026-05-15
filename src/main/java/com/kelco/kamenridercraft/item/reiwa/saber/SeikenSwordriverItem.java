@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.kelco.kamenridercraft.world.inventory.HissatsuHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -170,7 +171,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     @Override
     public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
     {
-        boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
+        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
         if (equipmentSlot == EquipmentSlot.FEET) {
             return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
         }

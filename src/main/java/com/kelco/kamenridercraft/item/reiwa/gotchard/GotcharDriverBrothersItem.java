@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -27,7 +28,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 	{
 		String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 
-		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
+        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
 
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
@@ -63,7 +64,7 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
             }
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchar_brothers.geo.json");
         }
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying())) {
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel("gotchard"));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model("gotchard"));
