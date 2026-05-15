@@ -162,88 +162,13 @@ public class ModCommonEvents {
             }
         }
 
+
         @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
             if (event.getEntity() instanceof LivingEntity player ) {
                 player.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue());
                 if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.5);
                 if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()<=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
-
-                    if(player.level().isClientSide) {
-                        float X = 0;
-                        float Y = 0;
-                        float Z = 0;
-                        boolean isPlayer = false;
-                        if (player instanceof Player) {
-                            X = player.xxa;
-                            Y = player.yya;
-                            Z = player.zza;
-                            isPlayer = true;
-                        } else if (player instanceof Mob mob) {
-                            if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) {
-                                X = mob.getViewXRot(1);
-                                Vec3 look = player.getLookAngle();
-                                if (look.x > 0 & player.getDeltaMovement().x > 0) Z = 1;
-                                else if (look.z > 0 & player.getDeltaMovement().z > 0) Z = 1;
-                                else if (look.x < 0 & player.getDeltaMovement().x < 0) Z = 1;
-                                else if (look.z < 0 & player.getDeltaMovement().z < 0) Z = 1;
-                                else Z = -1;
-                            }
-                        }
-                        player.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
-                        player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
-                        player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
-                        PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot_old", player.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue()));
-                        PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "cape_rot_old", player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue()));
-                        PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot_old", player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue()));
-
-
-                        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                            if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
-
-                                float cape = (float) player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue();
-                                float ball = 0;
-                                if (Z > 0 & cape > -0.7 & !player.isSwimming())
-                                    cape = cape - 0.01f - (player.getSpeed() / 10);
-                                else if (X == 0&Z < 0 & cape < 0) cape = cape + 0.2f;
-                                else if (X == 0&Z == 0 & cape < 0 & X == 0 || X == 0&Z == 0 & cape < -0.7 || X == 0&cape < 0 & player.isSwimming())
-                                    cape = cape + 0.02f;
-                                if (X > 0) {
-                                    ball = 0.2f;
-                                    if (isPlayer & Z == 0 & cape > -0.7) cape = cape - 0.02f - (player.getSpeed() / 10);
-                                }
-                                if (X < 0) {
-                                    ball = -0.2f;
-                                    if (isPlayer & Z == 0 & cape > -0.7) cape = cape - 0.02f - (player.getSpeed() / 10);
-                                }
-                                //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2.5) cape = cape - 0.05f;
-
-                                player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
-                                player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(cape);
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot", (double) ball));
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "cape_rot", (double) cape));
-                            }
-                            if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
-                                float wheel = 0;
-                                if (Z > 0) wheel = -0.1f;
-                                if (Z < 0) wheel = 0.1f;
-
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()+ wheel));
-                                float ball = 0;
-                                if (X > 0) {
-                                    ball = 0.5f;
-                                    if (Z == 0) wheel = -0.1f;
-                                }
-                                if (X < 0) {
-                                    ball = -0.5f;
-                                    if (Z == 0) wheel = -0.1f;
-                                }
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot", (double) ball));
-                                PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot", player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue()+ wheel));
-
-                            }
-                        }
-                    }
                 }
 
 
