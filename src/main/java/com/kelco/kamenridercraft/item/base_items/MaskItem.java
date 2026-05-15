@@ -20,8 +20,9 @@ public class MaskItem extends BaseItem implements Equipable {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         super.inventoryTick(stack, level, entity, slotId, isSelected);
-        if (slotId == 39 && this.toString().equals("kamenridercraft:ichigo_mask") && ((LivingEntity) entity).hasEffect(EffectCore.RIDER_SPIRIT)) {
-            level.addParticle(ParticleTypes.RAIN, entity.getX(), entity.getEyeY(), entity.getZ(), 0, 1, 0);
+        if (slotId == 39 && this.toString().equals("kamenridercraft:ichigo_mask") && ((LivingEntity) entity).hasEffect(EffectCore.RIDER_SPIRIT) && level instanceof  ServerLevel serverLevel) {
+            serverLevel.sendParticles(ParticleTypes.RAIN, entity.getX(), entity.getEyeY(), entity.getZ(), 1, 0, 0, 0, 0.05);
+
         }
     }
 
