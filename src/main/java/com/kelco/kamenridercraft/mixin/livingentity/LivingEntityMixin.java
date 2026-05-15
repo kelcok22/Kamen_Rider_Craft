@@ -62,16 +62,11 @@ public class LivingEntityMixin {
                         else Z = -1;
                     }
                 }
-
-                if (isPlayer||player instanceof Mob) {
                     player.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
                     player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
                     player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
 
-                    PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "ball_rot_old", player.getAttribute(AttributeRegistry.BALL_ROT_OLD).getBaseValue()));
-                    PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "cape_rot_old", player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).getBaseValue()));
-                    PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wheel_rot_old", player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).getBaseValue()));
-
+                 if (isPlayer||player instanceof Mob) {
                 if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
                     if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
