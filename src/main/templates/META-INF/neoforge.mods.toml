@@ -5,12 +5,13 @@ issueTrackerURL="https://github.com/kelcok22/Kamen_Rider_Craft/issues/"
 
 [[mods]]
 modId="kamenridercraft" #mandatory
-version="1.0.9"
+version="1.1.0"
 displayName="Kamen Rider Craft"
 displayURL="https://discord.gg/3b37BRX/"
 logoFile="logo.png"
 authors="Kelco_K22, LiasDan, Axos, Chair, DocRider, HosephHoestar, AndrewBean, Blurtle, Trainfanz"
 description='''Kamen Rider Craft began as a small project I started in late 2012, and has since evolved into a massive mod with hundreds of items, weapons, and forms with multiple developers on board. Back at the start of 2023 I decided to start to recode this mod from scratch. With the goal to make the mod a lot more friendly to work on, now over a year later there is still a lot of work to do, but I want to share it.'''
+updateJSONURL="https://raw.githubusercontent.com/kelcok22/Kamen_Rider_Craft/refs/heads/main/update.json"
 
 [[mixins]]
 config="kamenridercraft.mixins.json"
