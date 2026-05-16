@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.network.ServerPayloadHandler;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
@@ -49,7 +48,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -423,7 +422,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
 
-        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
+        boolean fly = rider.getData(WINGS_OUT);
 
        boolean sd = rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue() !=1 && get_Form_Item(itemstack, 1).get_SD() & SD;
 
@@ -451,7 +450,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1) {
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getData(WINGS_OUT)) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));

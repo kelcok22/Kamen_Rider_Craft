@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.kelco.kamenridercraft.world.inventory.FullBottleHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -29,6 +28,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
+
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 
 public class BuildDriverItem extends RiderDriverItem {
 
@@ -104,7 +105,7 @@ public class BuildDriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
+        boolean fly = rider.getData(WINGS_OUT);
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
 			return "belts/"+get_Form_Item(itemstack,3).getBeltTex();
@@ -167,7 +168,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
 		}
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() &rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1){
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() & rider.getData(WINGS_OUT)){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 	}

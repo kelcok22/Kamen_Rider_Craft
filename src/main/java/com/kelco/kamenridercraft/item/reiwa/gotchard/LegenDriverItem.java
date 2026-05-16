@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
 import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,6 +18,8 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.Objects;
+
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 
 public class LegenDriverItem extends RiderDriverItem {
 
@@ -50,7 +51,7 @@ public class LegenDriverItem extends RiderDriverItem {
 	{
 		String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 
-        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
+        boolean fly = rider.getData(WINGS_OUT);
 
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {

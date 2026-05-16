@@ -4,8 +4,10 @@ import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.network.payload.*;
-
+import com.kelco.kamenridercraft.network.payload.AttributeChangeClientPayload;
+import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
+import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.network.payload.StartPosePayload;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
@@ -27,7 +29,9 @@ import java.util.UUID;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.get_Form_Item;
-import static com.kelco.kamenridercraft.util.AnimationUtil.*;
+import static com.kelco.kamenridercraft.util.AnimationUtil.getAnimRiderName;
+import static com.kelco.kamenridercraft.util.AnimationUtil.oooComboCheck;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
 public class ClientPayloadHandler {
@@ -64,7 +68,13 @@ public class ClientPayloadHandler {
                         entity.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
                         entity.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
                     }
-                    case "wing_out" -> entity.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
+                    case "wing_out" -> {
+                        if (data.valueChange() > 0) {
+                            context.player().setData(WINGS_OUT, true);
+                        } else {
+                            context.player().setData(WINGS_OUT, false);
+                        }
+                    }
                 }
             }
         }

@@ -17,6 +17,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
+
 public class ThousandriverItem extends RiderDriverItem {
 
 
@@ -47,7 +49,7 @@ public class ThousandriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-		boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
+		boolean fly = rider.getData(WINGS_OUT);
         boolean bug = rider.getAttribute(AttributeRegistry.HAS_BUG).getValue() !=0;
 		if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;

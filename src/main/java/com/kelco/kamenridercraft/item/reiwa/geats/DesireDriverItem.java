@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.kelco.kamenridercraft.world.inventory.RaiseBuckleHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -35,6 +34,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
+
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 
 public class DesireDriverItem  extends RiderDriverItem {
 
@@ -128,7 +129,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
+        boolean fly = rider.getData(WINGS_OUT);
 
 		boolean isBujin= get_Form_Item(itemstack, 2) == Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get() || get_Form_Item(itemstack, 2) == Geats_Rider_Items.BOOST_RAISE_BUCKLE.get() || get_Form_Item(itemstack, 2) == Modded_item_core.BLANK_FORM.get();
 
