@@ -23,6 +23,7 @@ import java.util.UUID;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.*;
 
 public class ServerPayloadHandler {
 
@@ -46,12 +47,12 @@ public class ServerPayloadHandler {
 
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
         //TODO add gamerule for allow particles, sounds, and cooldown length
-        if (context.player().getAttribute(AttributeRegistry.POSING).getValue() == 1) {
-            context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(0);
+        if (context.player().getData(IS_POSING)) {
+            context.player().setData(IS_POSING, false);
             stopPosing(context.player());
         } else {
             if (canPose(context.player())){
-                context.player().getAttribute(AttributeRegistry.POSING).setBaseValue(1);
+                context.player().setData(IS_POSING, true);
                 PacketDistributor.sendToAllPlayers(new StartPosePayload(0, context.player().getStringUUID()));
             }
         }

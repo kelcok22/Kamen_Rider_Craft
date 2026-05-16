@@ -205,15 +205,6 @@ public class AttributeRegistry extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> POSE_COOLDOWN = ATTRIBUTES.register("pose_cooldown",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.pose_cooldown",
-                    0,
-                    0,
-                    9999
-            ).setSyncable(true)
-    );
-
     public static final DeferredHolder<Attribute, Attribute> HAZARD_LEVEL = ATTRIBUTES.register("hazard_level",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.hazard_level",

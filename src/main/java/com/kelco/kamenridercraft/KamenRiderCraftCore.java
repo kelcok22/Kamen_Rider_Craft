@@ -36,6 +36,7 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
@@ -96,6 +97,7 @@ public class KamenRiderCraftCore {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        AttachmentTypeRegistry.register(modEventBus);
         EffectCore.register(modEventBus);
         ModMenus.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);

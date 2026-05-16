@@ -18,6 +18,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.IS_POSING;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.POSE_COOLDOWN;
 
 @Mixin(value = LivingEntity.class, priority = 899)
 public class LivingEntityMixin {
@@ -27,12 +29,13 @@ public class LivingEntityMixin {
     @Inject(method = "tick", at = @At("TAIL"))
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
-        if (rider.getAttribute(AttributeRegistry.POSING).getValue() == 1 && ((LivingEntity) (Object) this).level() instanceof ServerLevel) {
+        if (rider.getData(IS_POSING)  && ((LivingEntity) (Object) this).level() instanceof ServerLevel) {
             if (!canPose(rider) || this.oldBlockX != rider.getBlockX() || this.oldBlockZ != rider.getBlockZ()) {
+                System.out.println("CANCELED! The rider is_posing: " + rider.getData(IS_POSING));
                 stopPosing(rider);
             }
-        } else if (rider.getAttribute(AttributeRegistry.POSE_COOLDOWN).getValue() > 0) {
-            rider.getAttribute(AttributeRegistry.POSE_COOLDOWN).setBaseValue(rider.getAttribute(AttributeRegistry.POSE_COOLDOWN) .getBaseValue()- 1);
+        } else if (rider.getData(POSE_COOLDOWN) > 0 && ((LivingEntity) (Object) this).level() instanceof ServerLevel) {
+            rider.setData(POSE_COOLDOWN, rider.getData(POSE_COOLDOWN) - 1);
         }
         this.oldBlockX = rider.getBlockX();
         this.oldBlockZ = rider.getBlockZ();
