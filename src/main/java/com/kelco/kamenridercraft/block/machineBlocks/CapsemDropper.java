@@ -3,6 +3,9 @@ package com.kelco.kamenridercraft.block.machineBlocks;
 
 import com.kelco.kamenridercraft.item.reiwa.Zeztz_Rider_Items;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -28,7 +31,8 @@ import java.util.Random;
 
 public class CapsemDropper extends MachineBlock {
 
-	  public static List<Item> CAPSEM= new ArrayList<>();
+    public static List<Item> CAPSEM= new ArrayList<>();
+    public static List<Item> LEGEND_CAPSEM= new ArrayList<>();
     public static VoxelShape SHAPE = Block.box(1, 0, 1, 15,16, 15);
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -60,16 +64,14 @@ public class CapsemDropper extends MachineBlock {
 
     private Item getCapsemDrop(Player player) {
  		Random generator = new Random();
+        ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
+        int rand = generator.nextInt(CAPSEM.size());
 
-        List<Item> CAPSEM_PLUS = new ArrayList<>(CAPSEM);
-
-        if (player.getInventory().countItem(Zeztz_Rider_Items.PLASMA_CAPSEM.get())!=0){
-            for (int i = 0; i < 20; i++) {
-                CAPSEM_PLUS.add(Zeztz_Rider_Items.BOOSTER_CAPSEM.get());
-            }
+        if (player.level().dimension() == CITY) {
+            rand = generator.nextInt(LEGEND_CAPSEM.size());
+            return LEGEND_CAPSEM.get(rand);
         }
-        int rand = generator.nextInt(CAPSEM_PLUS.size());
-        return CAPSEM_PLUS.get(rand);
+        return CAPSEM.get(rand);
  	}
 
 

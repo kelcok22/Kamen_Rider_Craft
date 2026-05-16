@@ -2,8 +2,8 @@
 	"type": "minecraft:crafting_shaped",
 	"group": "music_disc",
 	"pattern": [
-		"S",
-		"D"
+		"D",
+		"S"
 	],
 	"key": {
 		"S": {
@@ -14,6 +14,6 @@
 		}
 	},
 	"result": {
-		"id": "kamenridercraft:visions_music_disc"
+		"id": "kamenridercraft:play_back_music_disc"
 	}
 }

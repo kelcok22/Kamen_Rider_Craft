@@ -7,7 +7,7 @@
         "items": [
           {
             "items": [
-              "kamenridercraft:song_capsem"
+              "kamenridercraft:booster_capsem"
             ]
           }
         ]
@@ -21,8 +21,8 @@
   ],
   "rewards": {
     "recipes": [
-      "kamenridercraft:zeztz/visions_music_disc",
-      "kamenridercraft:zeztz/play_back_music_disc"
+      "kamenridercraft:zeztz/dualmare_capsem",
+      "kamenridercraft:zeztz/zeztz_and_code_zeroider_capsem"
     ]
   },
   "sends_telemetry_event": false

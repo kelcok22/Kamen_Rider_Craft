@@ -701,6 +701,8 @@
 "henshin.kamenridercraft.bocca_jaldak":"<Bocca Jaldak> §bSo you are the remaining Granute Hunter?",
 "henshin.kamenridercraft.caries":"Horror! Zuki!",
 "henshin.kamenridercraft.caries_c3":"§5Horror! Destroy!",
+  "henshin.kamenridercraft.nox_knight":"<Nox Knight> §6Gisou.\n§fInvoke Knight System - §6Erase!",
+  "henshin.kamenridercraft.nox":"<Kamen Rider Nox> §9Henshin!\n§8Hahahahahaha! Rider! §9Nox! §6Nox! §fNox! §5Shadow!",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
 "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up!",
@@ -11666,7 +11668,7 @@
 "advancements.kamenridercraft.zeztz.lord_six.title": "GoldenEye",
 "advancements.kamenridercraft.zeztz.nox.description": "Transform into Kamen Rider Nox",
 "advancements.kamenridercraft.zeztz.nox.title": "Licence to Kill",
-"advancements.kamenridercraft.zeztz.nox_knight.description": "Transform into Nox Knight",
+"advancements.kamenridercraft.zeztz.nox_knight.description": "Defeat Nox Knight",
 "advancements.kamenridercraft.zeztz.nox_knight.title": "Dr. No",
 "advancements.kamenridercraft.zeztz.plasma_booster.description": "Transform into Zeztz Plasma Booster",
 "advancements.kamenridercraft.zeztz.plasma_booster.title": "You Only Live Twice",

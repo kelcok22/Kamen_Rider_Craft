@@ -6,45 +6,78 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:shadow_capsem",
-          "weight": 1
+          "name": "kamenridercraft:shadow_capsem"
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:gun_capsem",
-          "weight": 1
+          "name": "kamenridercraft:gun_capsem"
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:wolf_capsem",
-          "weight": 1
+          "name": "kamenridercraft:wolf_capsem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:void_capsem"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "kamenridercraft:nox_driver"
+              }
+            }
+          }
         }
       ]
     },
     {
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "weight": 50,
-		  "name": "kamenridercraft:code_capsem"
-		},
-		{
-		  "type": "minecraft:item",
-		  "weight": 50,
-		  "name": "kamenridercraft:void_capsem"
-		}
-	  ]
-	},
-	  {
-		  "rolls": 1,
-		  "entries": [
-			  {
-				  "type": "minecraft:item",
-				  "weight": 100,
-				  "name": "kamenridercraft:erase_capsem"
-			  }
-		  ]
-	  }
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:code_capsem",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:erase_capsem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:void_capsem"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "kamenridercraft:knight_invoker"
+              }
+            }
+          }
+        }
+      ]
+    }
   ]
 }
