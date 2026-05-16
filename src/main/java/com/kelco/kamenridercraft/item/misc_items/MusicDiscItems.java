@@ -65,6 +65,9 @@ public class MusicDiscItems {
     public static final DeferredItem<Item> KAGAYAKI_MUSIC_DISC = ITEMS.register("kagayaki_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.KAGAYAKI_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> HAJIMARI_NO_KIMI_E_MUSIC_DISC = ITEMS.register("hajimari_no_kimi_e_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.HAJIMARI_NO_KIMI_E_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> NEXT_LEVEL_MUSIC_DISC = ITEMS.register("next_level_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.NEXT_LEVEL_KEY).stacksTo(1)));
 

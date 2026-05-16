@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamenridercraft:item/hajimari_no_kimi_e_music_disc"
+    }
+}

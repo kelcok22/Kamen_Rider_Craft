@@ -23,10 +23,9 @@
         "text": "Use emeralds on this block to obtain $(l:misc/items/gashapon_capsules)Gashapon Capsules$(/l)"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:gashapon_machine",
+        "type": "patchouli:crafting",
         "title": " ",
+        "recipe": "kamenridercraft:misc/blocks/gashapon_machine",
         "text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)$(br2)Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
       },
 		{

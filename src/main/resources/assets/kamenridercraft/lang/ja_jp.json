@@ -225,6 +225,10 @@
 "item.kamenridercraft.kagayaki.desc": "ホセフホースター - 『輝』",
 "item.kamenridercraft.kagayaki_music_disc.desc": "ホセフホースター - 『輝』",
 
+"item.kamenridercraft.hajimari_no_kimi_e_music_disc": "『始まりの君へ』レコード",
+"item.kamenridercraft.hajimari_no_kimi_e.desc": "ホセフホースター - 『始まりの君へ』",
+"item.kamenridercraft.hajimari_no_kimi_e_music_disc.desc": "ホセフホースター - 『始まりの君へ』",
+
 "item.kamenridercraft.next_level_music_disc": "『NEXT LEVEL』レコード",
 "item.kamenridercraft.next_level.desc": "ホセフホースター - NEXT LEVEL",
 "item.kamenridercraft.next_level_music_disc.desc": "ホセフホースター - NEXT LEVEL",
@@ -11688,8 +11692,8 @@
 "advancements.kamenridercraft.zi-o.ohma_zi-o.title": "オーマの日",
 "advancements.kamenridercraft.zi-o.ohmaform.description": "ジオウオーマフォームに変身",
 "advancements.kamenridercraft.zi-o.ohmaform.title": "平成が終わらない",
-  "advancements.kamenridercraft.zi-o.quartzer.description": "クォーツァーライダーを倒す",
-  "advancements.kamenridercraft.zi-o.quartzer.title": "〜ユニバース・フェスティバル〜",
+"advancements.kamenridercraft.zi-o.quartzer.description": "クォーツァーライダーを倒す",
+"advancements.kamenridercraft.zi-o.quartzer.title": "〜ユニバース・フェスティバル〜",
 "advancements.kamenridercraft.zi-o.quiz.description": "仮面ライダークイズに変身",
 "advancements.kamenridercraft.zi-o.quiz.title": "はい、問題です",
 "advancements.kamenridercraft.zi-o.shinobi.description": "仮面ライダーシノビに変身",

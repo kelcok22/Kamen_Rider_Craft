@@ -207,6 +207,17 @@
         "type": "patchouli:crafting",
         "recipe": "kamenridercraft:hibiki/kagayaki_music_disc"
       },
+      {
+        "type": "patchouli:text",
+        "anchor": "hajimari_no_kimi_e_music_disc",
+        "text": "Song:$(li)HosephHoestar - Hajimari no Kimi e$(br2)Based on:$(li)Akira Fuse - Hajimari no Kimi e$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Hibiki (2005, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hajimari_no_kimi_e_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "next_level_music_disc",

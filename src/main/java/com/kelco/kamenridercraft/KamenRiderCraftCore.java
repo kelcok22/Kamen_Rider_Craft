@@ -1642,6 +1642,7 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.ELEMENTS_MUSIC_DISC);
                 event.accept(MusicDiscItems.REBIRTH_MUSIC_DISC);
                 event.accept(MusicDiscItems.KAGAYAKI_MUSIC_DISC);
+                event.accept(MusicDiscItems.HAJIMARI_NO_KIMI_E_MUSIC_DISC);
                 event.accept(MusicDiscItems.NEXT_LEVEL_MUSIC_DISC);
                 event.accept(MusicDiscItems.CLIMAX_JUMP_MUSIC_DISC);
                 event.accept(MusicDiscItems.BREAK_THE_CHAIN_MUSIC_DISC);

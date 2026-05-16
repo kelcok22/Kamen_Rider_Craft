@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:misc/base_sword",
       "kamenridercraft:misc/base_bike",
+      "kamenridercraft:misc/gashapon_machine",
 	  "kamenridercraft:misc/monitor",
 	  "kamenridercraft:misc/rider_case",
 	  "kamenridercraft:fourze/astroswitch",

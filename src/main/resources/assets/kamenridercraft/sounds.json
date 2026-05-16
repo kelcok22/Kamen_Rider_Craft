@@ -143,6 +143,14 @@
       }
     ]
   },
+  "hajimari_no_kimi_e": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:hajimari_no_kimi_e",
+        "stream": true
+      }
+    ]
+  },
   "next_level": {
     "sounds": [
       {

@@ -70,6 +70,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> KAGAYAKI= registerSoundEvent("kagayaki");
     public static final ResourceKey<JukeboxSong> KAGAYAKI_KEY = createSong("kagayaki");
 
+    public static final Supplier<SoundEvent> HAJIMARI_NO_KIMI_E= registerSoundEvent("hajimari_no_kimi_e");
+    public static final ResourceKey<JukeboxSong> HAJIMARI_NO_KIMI_E_KEY = createSong("hajimari_no_kimi_e");
+
     public static final Supplier<SoundEvent> NEXT_LEVEL= registerSoundEvent("next_level");
     public static final ResourceKey<JukeboxSong> NEXT_LEVEL_KEY = createSong("next_level");
 
