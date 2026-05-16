@@ -18,7 +18,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.*;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.IS_POSING;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.POSE_COOLDOWN;
 
 @Mixin(value = LivingEntity.class, priority = 899)
 public class LivingEntityMixin {
@@ -68,10 +69,10 @@ public class LivingEntityMixin {
                  if (isPlayer||player instanceof Mob) {
 
                      if (rider instanceof Player pl && (pl.getAbilities().flying || player.isFallFlying())){
-                         rider.setData(WINGS_OUT, true);
+                         player.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(1);
                          PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wing_out", 1.0));
                      }else{
-                         rider.setData(WINGS_OUT, false);
+                         player.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(0);
                          PacketDistributor.sendToServer(new AttributeChangePayload(player.getStringUUID(), "wing_out", (double) 0));
                      }
 

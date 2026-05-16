@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;

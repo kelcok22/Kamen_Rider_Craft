@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -12,6 +13,8 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.Objects;
 
 public class DecadriverItem extends RiderDriverItem {
 

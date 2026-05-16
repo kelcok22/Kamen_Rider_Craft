@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -9,8 +10,6 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
-
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 
 public class FaizDriverItem extends RiderDriverItem {
 
@@ -39,7 +38,7 @@ public class FaizDriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-        boolean fly = rider.getData(WINGS_OUT);
+        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
 
 		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.FAIZ_DRIVER.get()) {
 			if((get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_MISSION_MEMORY.get()

@@ -1,14 +1,17 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -17,8 +20,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
-
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.WINGS_OUT;
 
 public class OOODriverItem extends RiderDriverItem {
 
@@ -98,7 +99,7 @@ public class OOODriverItem extends RiderDriverItem {
     @Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-        boolean fly = rider.getData(WINGS_OUT);
+        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
 
@@ -158,7 +159,7 @@ public class OOODriverItem extends RiderDriverItem {
                 & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_kujaku")
                 & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_condor")) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
 
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider.getData(WINGS_OUT)){
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}else
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
