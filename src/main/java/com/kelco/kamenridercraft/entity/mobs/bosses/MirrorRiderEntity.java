@@ -60,7 +60,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
+        //this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
 
     }
 
@@ -192,6 +192,8 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
         } else if (!p_34297_.getLevel().isDay()) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.KNIGHTDRIVER.get()));
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
+        }else {
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
         }
         if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
             SetTypeVariant(belt.Rider);

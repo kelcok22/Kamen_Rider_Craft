@@ -203,13 +203,9 @@ public class KamenRiderCraftCore {
         }
 
         if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
-
-
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem
                     && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
                 double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
-
-
                 if (tag != 0) {
                     model.setAllVisible(false);
                     if (tag != 1) model.head.visible = true;
@@ -227,7 +223,7 @@ public class KamenRiderCraftCore {
                         model.rightArm.visible = false;
                         model.body.visible = false;
                     }
-                } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(false);
+                } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 

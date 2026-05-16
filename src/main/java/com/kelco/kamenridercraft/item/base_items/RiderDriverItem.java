@@ -237,8 +237,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-        // if (player.level().isClientSide)player.sendSystemMessage(Component.literal("beltTick"));
         if (stack.has(DataComponents.CUSTOM_DATA)) {
+            //System.err.println("beltTick");
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
             if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
             if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
@@ -300,8 +300,7 @@ public class RiderDriverItem extends RiderArmorItem {
             this.giveEffects(livingEntity);
             if (livingEntity.hasEffect(EffectCore.FORM_TIMEOUT) && !isTransformed(livingEntity))
                 this.timeoutForms(livingEntity, stack);
-        } else if (entity instanceof
-                LivingEntity player) {
+        } else if (entity instanceof LivingEntity player) {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 if (!isTransformed(player) || slotId != 36) {
                     Consumer<CompoundTag> data = form -> {
