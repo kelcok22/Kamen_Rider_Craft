@@ -40,6 +40,19 @@ public class LivingEntityMixin {
         this.oldBlockX = rider.getBlockX();
         this.oldBlockZ = rider.getBlockZ();
 
+        if (rider instanceof Player) {
+            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                belt.riderKickTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
+            }
+        }
+
+        if (!(rider instanceof Player)) {
+            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                belt.beltTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
+                belt.riderKickTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
+                belt.giveEffects(rider);
+            }
+        }
 
         if (rider instanceof LivingEntity player ) {
 
@@ -49,7 +62,6 @@ public class LivingEntityMixin {
                 float Z = 0;
                 boolean isPlayer = false;
                 if (player instanceof Player) {
-
                     X = player.xxa;
                     Y = player.yya;
                     Z = player.zza;
@@ -88,7 +100,9 @@ public class LivingEntityMixin {
                         float ball = 0;
                         if (Z > 0 & cape > -0.7 & !player.isSwimming())
                             cape = cape - 0.01f - (player.getSpeed() / 10);
-                        else if (X == 0 & Z < 0 & cape < 0) cape = cape + 0.2f;
+                        else  if (Z > 0 & cape > -0.7 & !player.isSwimming())
+                            cape = 0;
+                        else  if (X == 0 & Z < 0 & cape < 0) cape = cape + 0.2f;
                         else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & Z == 0 & cape < -0.7 || X == 0 & cape < 0 & player.isSwimming())
                             cape = cape + 0.02f;
                         if (X > 0) {
@@ -99,7 +113,7 @@ public class LivingEntityMixin {
                             ball = -0.2f;
                             if (isPlayer & Z == 0 & cape > -0.7) cape = cape - 0.02f - (player.getSpeed() / 10);
                         }
-                        if (player.fallDistance > 0 & !player.isSwimming() & cape > -2.5) cape = cape - 0.05f;
+                        if (player.fallDistance > 0 & !player.isSwimming() & cape > -2) cape = cape - 0.05f;
 
                         player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
                         player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(cape);

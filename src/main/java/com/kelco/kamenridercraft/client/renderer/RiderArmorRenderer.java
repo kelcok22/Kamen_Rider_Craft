@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
@@ -81,7 +82,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
         setAllVisible(false);
         if (GetEntity()!=null){
-        if (!GetEntity().isInvisible()) {
+        if (!GetEntity().isInvisible()||GetEntity() instanceof ArmorStand) {
             if (currentSlot == EquipmentSlot.FEET) {
                 setBoneVisible(this.body, true);
                 setBoneVisible(this.leftArm, true);

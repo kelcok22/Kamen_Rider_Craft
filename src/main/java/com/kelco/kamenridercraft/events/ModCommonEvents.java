@@ -171,8 +171,6 @@ public class ModCommonEvents {
                 if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()<=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
                 }
 
-
-
                 if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
@@ -181,20 +179,6 @@ public class ModCommonEvents {
                 }
             }
 
-            if (event.getEntity() instanceof LivingEntity entity && event.getEntity() instanceof Player) {
-
-                if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                    belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
-                }
-            }
-
-            if (event.getEntity() instanceof LivingEntity entity && !(event.getEntity() instanceof Player)) {
-                if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                    belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
-                    belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
-                    belt.giveEffects(entity);
-                }
-            }
         }
 
         @SubscribeEvent
