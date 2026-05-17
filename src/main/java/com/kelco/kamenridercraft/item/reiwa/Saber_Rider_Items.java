@@ -5,10 +5,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
-import com.kelco.kamenridercraft.item.reiwa.saber.BookGateItem;
-import com.kelco.kamenridercraft.item.reiwa.saber.BookOfRuinItem;
-import com.kelco.kamenridercraft.item.reiwa.saber.SeikenSwordriverItem;
-import com.kelco.kamenridercraft.item.reiwa.saber.SwordOfLogosBuckleItem;
+import com.kelco.kamenridercraft.item.reiwa.saber.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.HissatsuHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RoyalSwordOfLogosHolderGuiMenu;
@@ -500,7 +497,7 @@ public class Saber_Rider_Items {
 			} .IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book_shadow",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","saikou","seiken_saikou_driver_belt_saikou"
+			() -> new RiderFormChangeItem(new Item.Properties(),"_shadow","saikou","seiken_saikou_driver_belt_saikou"
 					,new MobEffectInstance(EffectCore.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
@@ -510,15 +507,13 @@ public class Saber_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}
-					.model_has_different_name("kin_no_buki_gin_no_buki_wonder_ride_book").has_basic_model());
+			}.IsGlowing().model_has_different_name("kin_no_buki_gin_no_buki_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","saikou","seiken_saikou_driver_belt_saikou"
 					,new MobEffectInstance(EffectCore.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.INVISIBILITY, 2, 0,true,false)){
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
 				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
 					super.OnTransformation(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
@@ -529,7 +524,7 @@ public class Saber_Rider_Items {
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
 			}
-					.addSwitchForm(KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
+					.addSwitchForm(KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW.get()).HasCape().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
 					.AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 3));
 
 	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL = ITEMS.register("x_swordman_wonder_ride_book_colorful",
@@ -1112,7 +1107,7 @@ public class Saber_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SAIKOU_DRIVER = ITEMS.register("seiken_saikou_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saikou",KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
+			() -> new SeikenSaikouDriverItem(ArmorMaterials.DIAMOND,"saikou",KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> DOOMS_DRIVER_BUCKLE_SOLOMON = ITEMS.register("dooms_driver_buckle_solomon",
