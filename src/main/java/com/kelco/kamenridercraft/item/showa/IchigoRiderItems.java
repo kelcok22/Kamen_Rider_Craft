@@ -2,10 +2,7 @@ package com.kelco.kamenridercraft.item.showa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
-import com.kelco.kamenridercraft.item.base_items.BaseBannerPatternItem;
-import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
-import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -56,6 +53,23 @@ public class IchigoRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addAlternative(GRASSHOPPER_MAN_CORE.get()).hasSD().allowRiderKick().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> TAKOYAKI_TYPHOON_CORE = ITEMS.register("takoyaki_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_takoyaki","ichigo","blank",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)
+                    ,new MobEffectInstance(EffectCore.FORM_LOCK, 40, 10,true,false)
+                    ,new MobEffectInstance(EffectCore.SMALL, 40, 10,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_GUST,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nigo","typhoon_belt",
