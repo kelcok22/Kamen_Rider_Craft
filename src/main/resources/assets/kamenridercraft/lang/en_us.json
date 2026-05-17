@@ -8622,6 +8622,8 @@
 "kamenridercraft.name.metamateriam": "Debatable Rider: Metamateriam",
 "item.kamenridercraft.zeztz_darkness_belt": "Zeztz Darkness Belt",
 "kamenridercraft.name.zeztz_darkness": "Kaijin: Zeztz Darkness Nightmare",
+"item.kamenridercraft.mugen_driver": "Mugen Driver",
+"kamenridercraft.name.mugen": "Rider: Kamen Rider Mugen",
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -8677,6 +8679,7 @@
 "item.kamenridercraft.darkness_capsem": "Darkness Capsem",
 "kamenridercraft:darkness_capsem.form": "Form: Base Form",
 "kamenridercraft:darkness_capsem_driver.form": "Form: Powered Up",
+"item.kamenridercraft.daydream_capsem": "Daydream Capsem",
 "item.kamenridercraft.song_capsem": "Song Capsem",
 "item.kamenridercraft.sweets_capsem": "Zeztz Capsem (Sweets ver.)",
 "item.kamenridercraft.charadeco_capsem": "Zeztz Capsem (Charadeco ver.)",

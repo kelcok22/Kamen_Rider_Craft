@@ -8615,6 +8615,8 @@
 "kamenridercraft.name.metamateriam": "疑似ライダー: メタマテリアム",
 "item.kamenridercraft.zeztz_darkness_belt": "ゼッツダークネスベルト",
 "kamenridercraft.name.zeztz_darkness": "怪人: ゼッツダークネスナイトメア",
+"item.kamenridercraft.mugen_driver": "夢現ドライバー",
+"kamenridercraft.name.mugen": "ライダー: 仮面ライダー夢現",
 
 "item.kamenridercraft.code_capsem": "コードカプセム",
 "item.kamenridercraft.impact_capsem": "インパクトカプセム",
@@ -8670,6 +8672,7 @@
 "kamenridercraft:darkness_capsem.form": "フォーム: 基本フォーム",
 "kamenridercraft:darkness_capsem_driver.form": "フォーム: 強化",
 "item.kamenridercraft.punish_capsem": "パニッシュカプセム",
+"item.kamenridercraft.daydream_capsem": "デイドリームカプセム",
 "item.kamenridercraft.song_capsem": "ゼッツカプセム（シンギングver.）",
 "item.kamenridercraft.sweets_capsem": "ゼッツカプセム（スイーツver.）",
 "item.kamenridercraft.charadeco_capsem": "ゼッツカプセム（キャラデコver.）",
