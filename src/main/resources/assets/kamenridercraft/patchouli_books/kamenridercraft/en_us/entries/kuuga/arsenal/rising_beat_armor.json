@@ -1,0 +1,16 @@
+{
+	"name": "Rising Beat Armor",
+	"icon": "kamenridercraft:rising_beat_armor",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Beat Gouram (2000, toyline)$(br2)Used by Kuuga's$(l:kuuga/riders/kuuga#mighty) Mighty$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/rising_beat_armor"
+		}
+	]
+}

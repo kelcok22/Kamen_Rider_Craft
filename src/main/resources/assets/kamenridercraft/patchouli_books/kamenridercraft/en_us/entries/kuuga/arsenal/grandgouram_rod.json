@@ -2,7 +2,7 @@
 	"name": "Gronginus",
 	"icon": "kamenridercraft:grandgouram_rod",
 	"category": "kamenridercraft:kuuga/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

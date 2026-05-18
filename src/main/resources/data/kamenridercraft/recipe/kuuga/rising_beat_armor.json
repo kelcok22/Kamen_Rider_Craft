@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "kuuga_mighty",
+  "pattern": [
+	"RGR",
+	"RCR",
+	"RRR"
+  ],
+  "key": {
+	"R": {
+	  "item": "kamenridercraft:kuuga_growing"
+	  },
+	 "G": {
+	  "item": "kamenridercraft:kuuga_mighty"
+	}, "C": {
+	  "item": "minecraft:shield"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:rising_beat_armor"
+  }
+}

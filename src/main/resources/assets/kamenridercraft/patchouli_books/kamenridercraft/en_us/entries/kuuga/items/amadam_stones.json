@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kuuga_mighty",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to craft Kuuga's $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to craft Kuuga's $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty Form$(/l)$(br2)Used to craft Kuuga's $(l:kuuga/arsenal/rising_beat_armor)Rising Beat Armor$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
