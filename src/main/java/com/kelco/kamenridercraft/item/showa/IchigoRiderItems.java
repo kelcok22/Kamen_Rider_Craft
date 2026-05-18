@@ -54,23 +54,6 @@ public class IchigoRiderItems {
                 }
             }.addAlternative(GRASSHOPPER_MAN_CORE.get()).hasSD().allowRiderKick().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
-    public static final DeferredItem<Item> TAKOYAKI_TYPHOON_CORE = ITEMS.register("takoyaki_typhoon_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_takoyaki","ichigo","blank",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
-                    ,new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)
-                    ,new MobEffectInstance(EffectCore.FORM_LOCK, 40, 10,true,false)
-                    ,new MobEffectInstance(EffectCore.SMALL, 40, 10,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_GUST,
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                }
-            }.allowRiderKick().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
-
-
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nigo","typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
@@ -120,6 +103,23 @@ public class IchigoRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.ChangeModel("ichigo.geo.json").allowRiderKick().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> TAKOYAKI_TYPHOON_CORE = ITEMS.register("takoyaki_typhoon_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_takoyaki","ichigo","blank",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
+                    ,new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)
+                    ,new MobEffectInstance(EffectCore.FORM_LOCK, 40, 10,true,false)
+                    ,new MobEffectInstance(EffectCore.SMALL, 40, 10,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_GUST,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.allowRiderKick().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> TYPHOON_CORE_SANGO = ITEMS.register("typhoon_core_sango",
             () -> new RiderFormChangeItem(new Item.Properties(),"","sango","typhoon_belt_sango",
