@@ -194,7 +194,7 @@ public class Kiva_Rider_Items {
 
 
 	public static final DeferredItem<Item> KIVATTE_FUESTLE = ITEMS.register("kiva_says_fuestle",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_red_emperor","kiva","kivat_belt_e",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_red_emperor","kiva","kivat_belt_r",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
