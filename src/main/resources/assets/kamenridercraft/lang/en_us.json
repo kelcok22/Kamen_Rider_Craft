@@ -1934,6 +1934,7 @@
 "item.kamenridercraft.puzzle_piece": "Puzzle Piece",
 "tooltip.kamenridercraft:puzzle_piece": "§4DO NOT EAT",
 "item.kamenridercraft.taiyaki": "Taiyaki",
+  "item.kamenridercraft.takoyaki": "Takoyaki",
 "item.kamenridercraft.donut": "Donut",
 "item.kamenridercraft.mayo": "Mayo",
 "item.kamenridercraft.mayo_donut": "Mayo Donut",
@@ -1972,6 +1973,8 @@
 "kamenridercraft:typhoon_core_artist.form": "Form: Base Form (S.I.C. Artist Series)",
 "item.kamenridercraft.ichigo_manga": "Kamen Rider Manga",
 "kamenridercraft:ichigo_manga.form": "Form: Base Form (Manga)",
+"item.kamenridercraft.takoyaki_typhoon_core": "Takoyaki Typhoon Core",
+"kamenridercraft:takoyaki_typhoon_core.form": "Form: Takoyaki Form",
 "item.kamenridercraft.typhoon_core_nigo": "Typhoon Core (Nigo)",
 "kamenridercraft:typhoon_core_nigo.form": "Form: Base Form",
 "item.kamenridercraft.sakurajima_typhoon_core": "Typhoon Core (Sakurajima)",
@@ -8939,6 +8942,7 @@
 "item.kamenridercraft.ichigo_mask": "Ichigo Mask",
 "item.kamenridercraft.v3_mask": "V3 Mask",
 "item.kamenridercraft.riderman_helmet": "Riderman Helmet",
+"item.kamenridercraft.tojima_takoyaki": "Tojima Takoyaki",
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
 

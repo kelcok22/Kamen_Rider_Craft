@@ -1934,6 +1934,7 @@
 "item.kamenridercraft.puzzle_piece": "パズルピース",
 "tooltip.kamenridercraft:puzzle_piece": "§4食べちゃダメ",
 "item.kamenridercraft.taiyaki": "タイ焼き",
+  "item.kamenridercraft.takoyaki": "たこ焼き",
 "item.kamenridercraft.donut": "ドーナツ",
 "item.kamenridercraft.mayo": "マヨネーズ",
 "item.kamenridercraft.mayo_donut": "マヨドーナツ",
@@ -1972,6 +1973,8 @@
 "kamenridercraft:typhoon_core_artist.form": "フォーム: 基本フォーム（S.I.C. アーティストシリーズ）",
 "item.kamenridercraft.ichigo_manga": "『仮面ライダー』漫画",
 "kamenridercraft:ichigo_manga.form": "フォーム: 基本フォーム（漫画）",
+  "item.kamenridercraft.takoyaki_typhoon_core": "タイフーンコア（たこ焼き）",
+  "kamenridercraft:takoyaki_typhoon_core.form": "フォーム: たこ焼きフォーム",
 "item.kamenridercraft.typhoon_core_nigo": "タイフーンコア（2号）",
 "kamenridercraft:typhoon_core_nigo.form": "フォーム: 基本フォーム",
 "item.kamenridercraft.sakurajima_typhoon_core": "タイフーンコア（桜島）",
@@ -8933,6 +8936,7 @@
 "item.kamenridercraft.ichigo_mask": "1号お面",
 "item.kamenridercraft.v3_mask": "V3お面",
 "item.kamenridercraft.riderman_helmet": "ライダーマンヘルメット",
+  "item.kamenridercraft.tojima_takoyaki": "東島たこ焼き",
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. ヒーローサーガ",
 
