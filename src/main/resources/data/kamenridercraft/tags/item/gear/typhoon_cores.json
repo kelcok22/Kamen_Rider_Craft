@@ -13,6 +13,8 @@
 	"kamenridercraft:gaia_core",
 	"kamenridercraft:ultraman_typhoon_core",
     "kamenridercraft:taki_vampire_core",
-    "kamenridercraft:cyborg_super_energy_converter_core"
+    "kamenridercraft:cyborg_super_energy_converter_core",
+	 "kamenridercraft:grasshopper_man_core",
+	  "kamenridercraft:takoyaki_typhoon_core"
   ]
 }
