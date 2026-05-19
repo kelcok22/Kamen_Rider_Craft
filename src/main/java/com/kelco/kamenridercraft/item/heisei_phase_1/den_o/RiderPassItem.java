@@ -14,6 +14,8 @@ import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.portal.PortalShape;
+import net.minecraft.world.phys.Vec3;
 
 import java.util.HashSet;
 import java.util.List;
@@ -31,9 +33,11 @@ public class RiderPassItem extends BaseItem {
 
 	public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity) {
 		if (entity.isPassenger()) entity.stopRiding();
-		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
-		while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
+		Vec3 position = PortalShape.findCollisionFreePosition(entity.getPosition(0), otherDim, entity, entity.getDimensions(entity.getPose()));
+
+		entity.teleportTo(otherDim, position.x, position.y, position.z, new HashSet<>(), 0, 0);
+		while (entity.isInWall()) entity.teleportRelative(0.0, 2.0, 0.0);
+		//entity.randomTeleport(position.x, position.y, position.z, false);
 	}
 
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
@@ -43,7 +47,7 @@ public class RiderPassItem extends BaseItem {
 		if (!p_41128_.isClientSide()) {
 			MinecraftServer Server = p_41129_.getServer();
 			List<TamableAnimal> nearbyAllies = p_41128_.getEntitiesOfClass(TamableAnimal.class, p_41129_.getBoundingBox().inflate(30), entity ->
-				(entity.getOwner() == p_41129_ && !entity.isOrderedToSit()));
+				(entity.getOwner() == p_41129_ && !entity.isOrderedToSit() && !entity.isSleeping()));
 			if (p_41128_.dimension() == SANDS_OF_TIME) {
 				for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.overworld(), ally);
 				teleportToDimension(Server.overworld(), p_41129_);
