@@ -6,7 +6,7 @@
 	},
 	  {
 		  "structure": "kamenridercraft:fuuto_city",
-		  "weight": 3
+		  "weight": 2
 	  },
 	  {
 		  "structure": "kamenridercraft:zawame_city",
@@ -35,7 +35,11 @@
     {
       "structure": "kamenridercraft:shocker_base",
       "weight": 1
-    }
+    },
+	  {
+		  "structure": "kamenridercraft:chiba_city",
+		  "weight": 2
+	  }
   ],
   "placement": {
 	"type": "minecraft:random_spread",
