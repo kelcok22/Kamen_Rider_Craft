@@ -35,7 +35,6 @@ import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
-import com.kelco.kamenridercraft.network.payload.AttributeChangePayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -80,7 +79,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.common.damagesource.DamageContainer;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
@@ -88,13 +86,11 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
-import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -595,9 +591,9 @@ public class ModCommonEvents {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
-                trades.get(1).add((trader, rand) -> new MerchantOffer(
+                /*trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));
+                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));*/
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(ShinRiderItems.SHIN_STONE.get(), 1), 10, 8, 0.02F));
