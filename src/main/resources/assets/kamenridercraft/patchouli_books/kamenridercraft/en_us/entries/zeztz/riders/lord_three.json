@@ -6,16 +6,31 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lord_invoker_three\",Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"anchor": "extra",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lord_invoker_three\",components:{custom_data:{slot_tex1:\"kamenridercraft:extra_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": ""
+			"text": "Accessed with the $(l:zeztz/items/capsems#extra_capsem)Extra Capsem$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Lord Three",
 			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/lord_invoker#lord_invoker_three)Lord Invoker$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "booster",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lord_invoker_three\",components:{custom_data:{slot_tex1:\"kamenridercraft:lord_booster_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Booster",
+			"text": "Accessed with the $(l:zeztz/items/capsems#lord_booster_capsem)Lord Booster Capsem$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Lord Three",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/lord_invoker#lord_invoker_three)Lord Invoker$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Strength VII (with empty hand)$(li)Strength III (with weapon)$(li)Speed III$(li)Boost"
 		}
 	]
 }

@@ -165,11 +165,8 @@
         "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#catastrom)Catastrom$(/l) and $(l:zeztz/riders/zeztz#orderm)Orderm$(/l) forms"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:dualmare_capsem",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:zeztz/dualmare_capsem"
       },
       {
         "type": "patchouli:text",
@@ -191,11 +188,8 @@
         "text": "Appears in:$(li)Kamen Rider Zeztz: Knock 'Em Down! Giant Robot CODE Zeroider!! (2026, Hyper Battle Video)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#zeroider)Impact Zeroider$(/l) form"
       },
       {
-        "type": "patchouli:spotlight",
-        "link_recipe": true,
-        "item": "kamenridercraft:zeztz_and_code_zeroider_capsem",
-        "title": " ",
-        "text": "Item is currently unobtainable"
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:zeztz/zeztz_and_code_zeroider_capsem"
       },
       {
         "type": "patchouli:text",
@@ -227,7 +221,7 @@
         "type": "patchouli:text",
         "anchor": "extra_capsem",
         "title": "Extra Capsem",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Lord Three's $(l:zeztz/devices/lord_invoker#lord_invoker_three)Lord Invoker$(/l)"
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Lord Three's $(l:zeztz/devices/lord_invoker#lord_invoker_three)Lord Invoker$(/l)$(br2)Used to access Lord Three's $(l:zeztz/riders/lord_three#extra)base$(/l) form"
       },
       {
         "type": "patchouli:spotlight",
@@ -272,6 +266,19 @@
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:clear_capsem",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "lord_booster_capsem",
+        "title": "Lord Booster Capsem",
+        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to access Lord Three's $(l:zeztz/riders/lord_three#booster)Booster$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lord_booster_capsem",
         "title": " ",
         "text": "Item is currently unobtainable"
       },
@@ -403,7 +410,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gochizo_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -455,7 +462,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:kuuga_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -468,7 +475,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:agito_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -481,7 +488,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:ryuki_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -494,7 +501,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:faiz_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -507,7 +514,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:blade_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -520,7 +527,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:hibiki_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -533,7 +540,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:kabuto_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -546,7 +553,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:den_o_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -559,7 +566,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:kiva_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -572,7 +579,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:decade_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -585,7 +592,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:w_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -598,7 +605,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:ooo_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -611,7 +618,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:fourze_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -624,7 +631,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:wizard_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -637,7 +644,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gaim_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -650,7 +657,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:drive_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -663,7 +670,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:ghost_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -676,20 +683,20 @@
         "link_recipe": true,
         "item": "kamenridercraft:ex_aid_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
         "anchor": "build_capsem",
         "title": "Build Capsem",
-        "text": "Appears in:$(li)DX Capsule Cylinder (2025, toyline)"
+        "text": "Appears in:$(li)DX Capsem Cylinder (2025, toyline)"
       },
       {
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:build_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -702,7 +709,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:zi_o_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -715,7 +722,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:zero_one_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -728,7 +735,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:saber_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -741,7 +748,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:revice_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -754,7 +761,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:geats_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -767,7 +774,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gotchard_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       },
       {
         "type": "patchouli:text",
@@ -780,7 +787,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:gavv_capsem",
         "title": " ",
-        "text": "Item is currently unobtainable"
+        "text": "Obtained by using $(l:zeztz/items/code_capsem)CODE Capsems$(/l) on the $(l:misc/blocks/machine_blocks#capsem_dropper)Capsem Dropper$(/l) in the City dimension"
       }
     ]
 }
