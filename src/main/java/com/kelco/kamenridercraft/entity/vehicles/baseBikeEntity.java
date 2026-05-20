@@ -238,14 +238,6 @@ if (this.onGround()){
 		return true;
 	}
 
-	@Override
-	public void tick() {
-		super.tick();
-		if(this.hasControllingPassenger()) {
-			this.hurtMarked = true;
-		}
-	}
-
 	// Adjust the rider's position while riding
 	@Override
 	public void positionRider(Entity entity, MoveFunction moveFunction) {
