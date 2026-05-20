@@ -19,6 +19,7 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.portal.DimensionTransition;
+
 import java.util.HashSet;
 import java.util.function.Consumer;
 
@@ -55,7 +56,7 @@ public class GateSwitchItem extends BaseItem {
 			 double X=blockpos.getX();
 			 double Y=blockpos.getY();
 			 double Z=blockpos.getZ();
-			 Save_XYZ(itemstack,X,Y,Z,1);
+			 Save_XYZ(itemstack,X,Y,Z,1, entity.level().dimension());
 			 }
 
 
@@ -76,21 +77,23 @@ public class GateSwitchItem extends BaseItem {
 
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
+		ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 
-		ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
 		if (p_41129_ instanceof ServerPlayer player && !p_41128_.isClientSide()) {
-			MinecraftServer Server = player.getServer();
+			MinecraftServer Server = p_41129_.getServer();
 			if (p_41128_.dimension() == MOON) {
-				teleportToDimension(itemstack,Server.overworld(), player,0);
+				if (player.isShiftKeyDown()) teleportToDimension(itemstack, Server.overworld(), player, 0);
+				else teleportToDimension(itemstack, Server.getLevel(getReturnDimension(itemstack)), player, 0);
 			} else {
 				double X=player.position().x;
 				double Y=player.position().y;
 				double Z=player.position().z;
-				Save_XYZ(itemstack,X,Y,Z,0);
+				Save_XYZ(itemstack,X,Y,Z,0, p_41128_.dimension());
 				teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
 			}
 			p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
+
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
 	}
 
@@ -110,7 +113,16 @@ public class GateSwitchItem extends BaseItem {
 		return respawn;
 	}
 
-	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,int num)
+	public static ResourceKey<Level> getReturnDimension(ItemStack itemstack) {
+		if (itemstack.has(DataComponents.CUSTOM_DATA)) {
+			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+			ResourceKey<Level> level = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse(tag.getString("return_dimension")));
+			return level;
+		}
+		return Level.OVERWORLD;
+	}
+
+	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,int num, ResourceKey<Level> dimension)
 	{
 		if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
 			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
@@ -122,6 +134,7 @@ public class GateSwitchItem extends BaseItem {
 				form.putDouble("y"+num, Y);
 				form.putDouble("z"+num, Z);
 				if(num==1)form.putBoolean("has_moon", true);
+				form.putString("return_dimension", dimension.location().toString());
 			};
 			data.accept(tag);
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);

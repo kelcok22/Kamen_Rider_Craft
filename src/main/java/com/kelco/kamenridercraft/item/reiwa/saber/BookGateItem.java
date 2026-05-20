@@ -13,6 +13,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
@@ -20,6 +22,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.portal.DimensionTransition;
 import java.util.HashSet;
+import java.util.List;
 import java.util.function.Consumer;
 
 
@@ -56,7 +59,7 @@ public class BookGateItem extends BaseItem {
 			 double X=blockpos.getX();
 			 double Y=blockpos.getY();
 			 double Z=blockpos.getZ();
-			 Save_XYZ(itemstack,X,Y,Z,1);
+			 Save_XYZ(itemstack,X,Y,Z,1, entity.level().dimension());
 			 }
 
 
@@ -77,21 +80,33 @@ public class BookGateItem extends BaseItem {
 
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-
 		ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:northern_base"));
+
 		if (p_41129_ instanceof ServerPlayer player && !p_41128_.isClientSide()) {
-			MinecraftServer Server = player.getServer();
+			MinecraftServer Server = p_41129_.getServer();
+			List<TamableAnimal> nearbyAllies = p_41128_.getEntitiesOfClass(TamableAnimal.class, p_41129_.getBoundingBox().inflate(30), entity ->
+					(entity.getOwner() == p_41129_ && !entity.isOrderedToSit() && !entity.isSleeping()));
 			if (p_41128_.dimension() == MOON) {
-				teleportToDimension(itemstack,Server.overworld(), player,0);
+				if (player.isShiftKeyDown()) {
+					teleportToDimension(itemstack, Server.overworld(), player, 0);
+					for (LivingEntity ally : nearbyAllies)
+						ally.teleportTo(Server.overworld(), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
+				} else {
+					teleportToDimension(itemstack, Server.getLevel(getReturnDimension(itemstack)), player, 0);
+					for (LivingEntity ally : nearbyAllies)
+						ally.teleportTo(Server.getLevel(getReturnDimension(itemstack)), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
+				}
 			} else {
 				double X=player.position().x;
 				double Y=player.position().y;
 				double Z=player.position().z;
-				Save_XYZ(itemstack,X,Y,Z,0);
+				Save_XYZ(itemstack,X,Y,Z,0, p_41128_.dimension());
 				teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
+				for (LivingEntity ally : nearbyAllies) ally.teleportTo(Server.getLevel(MOON), player.getX(), player.getY()+1, player.getZ(), new HashSet<>(), 0, 0);
 			}
 			p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
+
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
 	}
 
@@ -111,7 +126,16 @@ public class BookGateItem extends BaseItem {
 		return respawn;
 	}
 
-	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,int num)
+	public static ResourceKey<Level> getReturnDimension(ItemStack itemstack) {
+		if (itemstack.has(DataComponents.CUSTOM_DATA)) {
+			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+			ResourceKey<Level> level = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse(tag.getString("return_dimension")));
+			return level;
+		}
+		return Level.OVERWORLD;
+	}
+
+	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,int num, ResourceKey<Level> dimension)
 	{
 		if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
 			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
@@ -123,6 +147,7 @@ public class BookGateItem extends BaseItem {
 				form.putDouble("y"+num, Y);
 				form.putDouble("z"+num, Z);
 				if(num==1)form.putBoolean("has_base", true);
+				form.putString("return_dimension", dimension.location().toString());
 			};
 			data.accept(tag);
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
