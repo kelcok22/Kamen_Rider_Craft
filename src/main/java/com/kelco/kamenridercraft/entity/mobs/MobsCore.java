@@ -1521,6 +1521,10 @@ public class MobsCore {
 
 
 
+    public static final DeferredHolder<EntityType<?>, EntityType<CycloneEntity>> CYCLONE = MOBLIST.register("cyclone",
+            () -> EntityType.Builder.of(CycloneEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":cyclone"));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<BicycleEntity>> BICYCLE = MOBLIST.register("bicycle",
             () -> EntityType.Builder.of(BicycleEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":bicycle"));
 

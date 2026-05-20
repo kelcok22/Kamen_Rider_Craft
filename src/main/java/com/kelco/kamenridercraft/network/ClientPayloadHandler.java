@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.network;
 
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
+import com.kelco.kamenridercraft.entity.vehicles.NeoBaseBikeEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.*;
@@ -21,6 +22,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 import java.util.UUID;
@@ -49,22 +51,23 @@ public class ClientPayloadHandler {
     }
 
     public static void handleAttributeCLientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
-        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity){
-            if (entity instanceof Player&!context.player().getStringUUID().equals(data.id())||!(entity instanceof Player)) {
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
+            if (entity instanceof Player & !context.player().getStringUUID().equals(data.id()) || !(entity instanceof Player)) {
                 switch (data.attributeName()) {
-                    case "ball_rot" ->{
-                        entity.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
+                    case "ball_rot" -> {
+                        entity.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(entity.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
                         entity.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
                     }
-                    case "wheel_rot" ->{
-                        entity.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
+                    case "wheel_rot" -> {
+                        entity.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(entity.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
                         entity.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
                     }
-                    case "cape_rot" ->{
-                        entity.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
+                    case "cape_rot" -> {
+                        entity.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(entity.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
                         entity.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
                     }
-                    case "wing_out" -> entity.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
+                    case "wing_out" ->
+                            entity.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
                 }
             }
         }

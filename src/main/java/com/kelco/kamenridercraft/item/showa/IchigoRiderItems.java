@@ -111,7 +111,7 @@ public class IchigoRiderItems {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
                     ,new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)
                     ,new MobEffectInstance(EffectCore.FORM_LOCK, 40, 10,true,false)
-                    ,new MobEffectInstance(EffectCore.SMALL, 40, 10,true,false)){
+                    ,new MobEffectInstance(EffectCore.SMALL, 40, 6,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_GUST,

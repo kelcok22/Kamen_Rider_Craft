@@ -530,6 +530,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHIN_NO_0.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.CYCLONE.get(), NeoBikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BICYCLE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.RIDORON.get(), BikeRenderer::new);
@@ -645,8 +646,15 @@ public class KamenRiderCraftCore {
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
-            event.register(KeyBindings.INSTANCE.AbilityKey);
+            event.register(KeyBindings.INSTANCE.PrimaryAbilityKey);
+            event.register(KeyBindings.INSTANCE.SecondaryAbilityKey);
             event.register(KeyBindings.INSTANCE.PoseKey);
+            event.register(KeyBindings.INSTANCE.VehicleForwardsKey);
+            event.register(KeyBindings.INSTANCE.VehicleBackwardsKey);
+            event.register(KeyBindings.INSTANCE.VehicleLeftKey);
+            event.register(KeyBindings.INSTANCE.VehicleRightKey);
+            event.register(KeyBindings.INSTANCE.VehicleJumpKey);
+            event.register(KeyBindings.INSTANCE.VehicleDriftKey);
         }
 
 
@@ -700,6 +708,12 @@ public class KamenRiderCraftCore {
                             ClientPayloadHandler::handleCompleteSwing,
                             ServerPayloadHandler::handleCompleteSwing
                     )
+            );
+
+            registrar.playToServer(
+                    ServerVehicleControlPayload.TYPE,
+                    ServerVehicleControlPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleVehicleControlsServerSide
             );
 
             registrar.playToClient(
