@@ -5,7 +5,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.network.ServerPayloadHandler;
+import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.network.payload.StartKickPayload;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
@@ -37,6 +38,7 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
@@ -48,8 +50,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Consumer;
-
-import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -187,13 +187,16 @@ public class RiderDriverItem extends RiderArmorItem {
             if (tag.getBoolean("rider_kicking")) {
                 tag.putDouble("rider_kick_tick", tag.getDouble("rider_kick_tick") + 1);
                 if (tag.getDouble("rider_kick_tick") == 1) {
+                    PacketDistributor.sendToAllPlayers(new StartKickPayload(player.onGround() ? "floor_start" : "air_start", player.getStringUUID()));
                     Vec3 initialVec = player.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
                     player.setDeltaMovement(climbVec.scale(0.97D));
                     // player.push(0, 1.25, 0);
                     player.hurtMarked = true;
                     level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
-                } else if (tag.getDouble("rider_kick_tick") == 21) {
+                }else if (tag.getDouble("rider_kick_tick") == 17) {
+                    PacketDistributor.sendToAllPlayers(new StartKickPayload("kick", player.getStringUUID()));
+                }  else if (tag.getDouble("rider_kick_tick") == 21) {
                     player.setDeltaMovement(0, 0, 0);
                     Double y = player.getLookAngle().y;
                     if (y < 0.5) y = 0.05d;
@@ -228,6 +231,7 @@ public class RiderDriverItem extends RiderArmorItem {
                                 form.putDouble("rider_kick_tick", 0);
                             };
                             CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
+                            PacketDistributor.sendToAllPlayers(new EndPosePayload(0, player.getStringUUID()));
                         }
                     }
                 }
@@ -339,6 +343,9 @@ public class RiderDriverItem extends RiderArmorItem {
             for (int n = 0; n < Num_Base_Form_Item; n++) {
                 RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
                 form.OnTransformation(itemstack, player);
+                if (player instanceof Player player2 && !player2.isCreative()) {
+                    PacketDistributor.sendToAllPlayers(new EndPosePayload(0, player2.getStringUUID()));
+                }
             }
         }
     }
@@ -346,6 +353,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
         if (!pLivingEntity.level().isClientSide()) {
+            PacketDistributor.sendToAllPlayers(new EndPosePayload(0, pLivingEntity.getStringUUID()));
             DamageSource damageSource = new DamageSource(
                     pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), pLivingEntity, pLivingEntity, pLivingEntity.position());
             float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE) + pLivingEntity.fallDistance);

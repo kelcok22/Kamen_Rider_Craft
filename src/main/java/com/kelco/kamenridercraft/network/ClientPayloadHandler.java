@@ -130,6 +130,31 @@ public class ClientPayloadHandler {
         }
     }
 
+    public static void startKickAnimation(final StartKickPayload data, final IPayloadContext context) {
+        LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
+        assert posingRider != null;
+        Animation animation = switch (data.move()) {
+            case "air_start" ->
+                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.air_start_kick"));
+            case "floor_start" ->
+                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.floor_start_kick"));
+            case "kick" ->
+                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.kick"));
+            case "land" ->
+                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.land"));
+            default -> PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+        };
+        try {
+            AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+            controller.triggerAnimation(animation);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void endPoseAnimations(final EndPosePayload data, final IPayloadContext context) {
         try {
             assert Minecraft.getInstance().level != null;
