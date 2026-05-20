@@ -60,7 +60,7 @@ public class BlackSunRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
+            }.IsBeltGlowing().IsGlowing().ChangeModel("black_sun.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
 
     public static final DeferredItem<Item> KING_STONE_MOON = ITEMS.register("king_stone_moon",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shadowmoon","century_king_moon_driver_belt",
@@ -89,7 +89,7 @@ public class BlackSunRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
+            }.IsBeltGlowing().IsGlowing().ChangeModel("shadowmoon.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
 
 
     public static final DeferredItem<Item> BLACKSUNHELMET = ITEMS.register("blacksunhead",
