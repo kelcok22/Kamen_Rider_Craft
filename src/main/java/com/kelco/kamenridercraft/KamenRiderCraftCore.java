@@ -714,6 +714,12 @@ public class KamenRiderCraftCore {
                     ClientPayloadHandler::startPoseAnimations
             );
 
+            registrar.playToClient(
+                    StartKickPayload.TYPE,
+                    StartKickPayload.STREAM_CODEC,
+                    ClientPayloadHandler::startKickAnimation
+            );
+
             registrar.playToServer(
                     BeltKeyPayload.TYPE,
                     BeltKeyPayload.STREAM_CODEC,
