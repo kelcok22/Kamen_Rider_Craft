@@ -3,13 +3,14 @@
 	"animations": {
 		"g7.pose": {
 			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
 			"bones": {
 				"body": {
-					"rotation": [172.5, -47.5, -180],
+					"rotation": [-10, -120, 0],
 					"position": [0, -1.5, 0]
 				},
 				"left_leg": {
-					"rotation": [16.2667, -28.2146, -12.9947],
+					"rotation": [20.8438, -26.6538, -17.5678],
 					"position": [0, 0, 0.75]
 				},
 				"right_leg": {
@@ -22,7 +23,7 @@
 					"rotation": [9.4141, 13.8953, 7.661]
 				},
 				"left_arm": {
-					"rotation": [2.5, 2.5, 0],
+					"rotation": [6.8254, 3.0195, -2.2548],
 					"position": [0, 0, 0.5]
 				},
 				"right_item": {
