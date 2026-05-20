@@ -1856,7 +1856,7 @@ public class Zi_O_Rider_Items {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.ChangeModel("another_agito.geo.json").HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_RYUKI_WATCH = ITEMS.register("another_ryuki_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ryuki", "another_v_buckle_belt_ryuki",

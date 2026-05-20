@@ -194,7 +194,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			}.IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> MIRAGE_AGITO = ITEMS.register("agito_miracle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"","mirage_agito","alter_ring_mirage_belt",
@@ -223,7 +223,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			}.IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_AGITO_BURNING = ITEMS.register("another_agito_burning_form",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_burning","another_agito_koji","ank_point_belt_b",
@@ -240,7 +240,7 @@ public class Agito_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			}.IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BLANK_G_SYSTEM_CHIP = ITEMS.register("g3core",
