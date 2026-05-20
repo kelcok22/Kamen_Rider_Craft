@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "g7",
+  "pattern": [
+	"RIR",
+	"RGR",
+	"RCR"
+  ],
+  "key": {
+	"R": {
+	  "tag": "c:ingots/iron"
+	  }, "I": {
+	  "item": "kamenridercraft:g7"
+	}, "G": {
+	  "item": "kamenridercraft:base_sword"
+	}, "C": {
+	  "item": "kamenridercraft:rider_circuit"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:gz_10_orochi"
+  }
+}

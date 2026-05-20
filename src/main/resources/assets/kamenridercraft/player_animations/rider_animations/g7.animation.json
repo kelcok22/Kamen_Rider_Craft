@@ -27,7 +27,8 @@
 					"position": [0, 0, 0.5]
 				},
 				"right_item": {
-					"rotation": [30, 0, 0]
+					"rotation": [30, 0, 0],
+					"position": [0, -1, 0]
 				}
 			}
 		}

@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "G6",
+	"pattern": [
+		"RRR",
+		"CGI",
+		"RRR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		}, "I": {
+			"item": "kamenridercraft:g6"
+		}, "G": {
+			"item": "kamenridercraft:base_sword"
+		}, "C": {
+			"tag": "c:gunpowders"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gh_09_orthrus"
+	}
+}

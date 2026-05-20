@@ -479,6 +479,10 @@ public class Agito_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("gx").setCooldown(80).setExplosionPower(2).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GK_06_UNICORN = ITEMS.register("gk_06_unicorn",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+	public static final DeferredItem<Item> GH_09_ORTHRUS = ITEMS.register("gh_09_orthrus",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").ChangeRepairItem(SEED_OF_AGITO.get()));
+	public static final DeferredItem<Item> GZ_10_OROCHI = ITEMS.register("gz_10_orochi",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_SHIELD = ITEMS.register("g3_shield",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_X_SHIELD = ITEMS.register("g3x_shield",
