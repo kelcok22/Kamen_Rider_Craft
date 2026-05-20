@@ -340,6 +340,23 @@ public class Agito_Rider_Items {
                 }
             }.hasFlyingWings("g6.geo.json").IsGlowing().IsBeltGlowing().has_basic_model().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
+    public static final DeferredItem<Item> G7_CHIP = ITEMS.register("g7",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"","g7","g_buckle_belt_7",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.IsGlowing().IsBeltGlowing().has_basic_model().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","g1","g_buckle_belt_1",
@@ -415,6 +432,11 @@ public class Agito_Rider_Items {
     public static final DeferredItem<Item> G_BUCKLE_G6 = ITEMS.register("g6_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g6",G6_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
                     .Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+
+    public static final DeferredItem<Item> G_BUCKLE_G7 = ITEMS.register("g7_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g7",G7_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC))
+                    .Dont_show_belt_form_info().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+
 
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g1",G1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())

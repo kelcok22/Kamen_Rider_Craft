@@ -6,12 +6,14 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.levelgen.Heightmap;
 
 import java.util.Random;
 
@@ -57,7 +59,13 @@ public class BugEffect extends MobEffect {
             Random rand = new Random();
             if ((pAmplifier < 50 ? rand.nextInt(500 - (pAmplifier * 10)) : 0) == 0) {
                 if (boss != null&num1==0) {
-                    boss.moveTo(pLivingEntity.getX() + (rand.nextInt(8) - 4), pLivingEntity.getY(), pLivingEntity.getZ() + (rand.nextInt(8) - 4), 0.0f, 0.0F);
+                    int X= (int) (pLivingEntity.getX() + (rand.nextInt(8) - 4));
+                    int Y= (int) pLivingEntity.getY();
+                    int Z= (int) (pLivingEntity.getZ() + (rand.nextInt(8) - 4));
+                    BlockPos pos = new BlockPos(X,Y,Z);
+                    int i = pLivingEntity.level().getChunkAt(pos).getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, pos .getX(), pos.getZ()) + 1;
+                    if(i>0)boss.moveTo(X,i,Z);
+                    else boss.moveTo(X,Y,Z);
                     pLivingEntity.level().addFreshEntity(boss);
                 }
             }

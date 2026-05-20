@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-19T02:31:38.3235946	Item Models: kamenridercraft
+// 1.21.1	2026-05-20T22:41:35.1263411	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -258,6 +258,8 @@ fc989a7da2361aa925334eccd9d1f5622d8c3ea4 assets/kamenridercraft/models/item/full
 e33c8e730e575e0bffc587414cd2b904de330af3 assets/kamenridercraft/models/item/fusion_switch_og.json
 0926fe847c52312fb2c87e5642e9f55b2c691bee assets/kamenridercraft/models/item/fuwamallow_gochizo_lemon.json
 cfcd3eba4c644b0f7e91ab6fb068eaf5cc200b27 assets/kamenridercraft/models/item/g6.json
+ef8b0a0ccbf245089a523d8d8045b0ab42df744b assets/kamenridercraft/models/item/g7.json
+ffaeffba10ddce8c22fd314e613f61ab53459079 assets/kamenridercraft/models/item/g7_belt.json
 49246ecb60192f8297094ebfe1fa963251c49178 assets/kamenridercraft/models/item/gackt_card.json
 fd7533820b275b5082d41bcf045d7f6416a318a7 assets/kamenridercraft/models/item/gaiard_ride_chemy_card.json
 5aea0959da8314fd68ec2456b11a70dea585b32b assets/kamenridercraft/models/item/gaia_belt.json
