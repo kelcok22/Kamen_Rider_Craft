@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.item.extra_riders;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -18,9 +19,9 @@ import net.minecraft.world.level.Level;
 import static com.kelco.kamenridercraft.entity.mobs.MobsCore.RIDER_SUMMON;
 
 
-public class TojimaTakoyakiItem extends BaseItem {
+public class ToujimaTakoyakiItem extends BaseItem {
 
-	public TojimaTakoyakiItem(Properties prop) {
+	public ToujimaTakoyakiItem(Properties prop) {
 		super(prop);
 	}
 

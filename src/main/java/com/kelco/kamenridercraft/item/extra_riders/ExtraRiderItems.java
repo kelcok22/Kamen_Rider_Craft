@@ -27,7 +27,7 @@ public class ExtraRiderItems {
             () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(),"riderman","riderman").isGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOJIMA_TAKOYAKI = ITEMS.register("tojima_takoyaki",
-			() -> new TojimaTakoyakiItem(new Item.Properties().stacksTo(1)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+			() -> new ToujimaTakoyakiItem(new Item.Properties().stacksTo(1)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GIFT = ITEMS.register("gift",

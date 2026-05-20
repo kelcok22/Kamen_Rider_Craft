@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.events;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.KamenRiderCraftCoreClient;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.models.DoggaModel;
@@ -80,7 +79,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.client.event.InputEvent;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
@@ -122,52 +120,15 @@ public class ModCommonEvents {
         }
 
         @SubscribeEvent
-        public void onKeyInput(InputEvent.Key event) {
-            Minecraft minecraft = Minecraft.getInstance();
-
-            Player player = minecraft.player;
-
-            if (player == null) {
-                return;
-            }
-
-            boolean forwards = false;
-            boolean backwards = false;
-            boolean left = false;
-            boolean right = false;
-            boolean jumping = false;
-            boolean drifting = false;
-
-            if (KeyBindings.INSTANCE.VehicleForwardsKey.isDown()) {
-                forwards = true;
-            }
-            if (KeyBindings.INSTANCE.VehicleBackwardsKey.isDown()) {
-                backwards = true;
-            }
-            if (KeyBindings.INSTANCE.VehicleLeftKey.isDown()) {
-                left = true;
-            }
-            if (KeyBindings.INSTANCE.VehicleRightKey.isDown()) {
-                right = true;
-            }
-            if (KeyBindings.INSTANCE.VehicleJumpKey.isDown()) {
-                jumping = true;
-            }
-            if (KeyBindings.INSTANCE.VehicleDriftKey.isDown()) {
-                drifting = true;
-            }
-            KamenRiderCraftCoreClient.handleVehicleControlsClientside(player, forwards, backwards, left, right, jumping, drifting);
-        }
-
-        @SubscribeEvent
         public void clientTick(ClientTickEvent.Post event) {
             if (Minecraft.getInstance().player != null) {
                 while (KeyBindings.INSTANCE.BeltKey.consumeClick())
                     PacketDistributor.sendToServer(new BeltKeyPayload(0));
-                while (KeyBindings.INSTANCE.PrimaryAbilityKey.consumeClick())
+                while (KeyBindings.INSTANCE.AbilityKey.consumeClick())
                     PacketDistributor.sendToServer(new AbilityKeyPayload(0));
                 while (KeyBindings.INSTANCE.PoseKey.consumeClick())
                     PacketDistributor.sendToServer(new PoseKeyPayload(0));
+
             }
         }
 
@@ -200,16 +161,13 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
-            if (event.getEntity() instanceof LivingEntity player) {
+            if (event.getEntity() instanceof LivingEntity player ) {
                 player.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue());
-                if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue() != 0)
-                    player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue() - 0.5);
-                if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue() <= 0)
-                    player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
-            }
+                if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.5);
+                if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()<=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
+                }
 
-
-            if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
+                if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
@@ -217,20 +175,6 @@ public class ModCommonEvents {
                 }
             }
 
-            if (event.getEntity() instanceof LivingEntity entity && event.getEntity() instanceof Player) {
-
-                if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                    belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
-                }
-            }
-
-            if (event.getEntity() instanceof LivingEntity entity && !(event.getEntity() instanceof Player)) {
-                if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                    belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
-                    belt.riderKickTick(entity.getItemBySlot(EquipmentSlot.FEET), entity.level(), entity, 36);
-                    belt.giveEffects(entity);
-                }
-            }
         }
 
         @SubscribeEvent
@@ -495,7 +439,7 @@ public class ModCommonEvents {
                     }
 
                     if (_livEnt.hasEffect(EffectCore.RIDER_SPIRIT) && _livEnt.getMainHandItem().isEmpty()) {
-                        ((ServerLevel) event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getEyeY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
+                        ((ServerLevel)event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getEyeY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
                     }
 
                     if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND)) {
@@ -647,9 +591,9 @@ public class ModCommonEvents {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
-                trades.get(1).add((trader, rand) -> new MerchantOffer(
+                /*trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));
+                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));*/
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(ShinRiderItems.SHIN_STONE.get(), 1), 10, 8, 0.02F));

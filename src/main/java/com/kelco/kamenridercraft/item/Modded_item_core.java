@@ -33,10 +33,6 @@ public class Modded_item_core {
     public static final DeferredItem<Item> RIDER_CIRCUIT = ITEMS.register("rider_circuit",
             () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
-    public static final DeferredItem<Item> TAKOYAKI = ITEMS.register("takoyaki",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(3f).alwaysEdible().build()))
-                    .has_basic_model().AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
-
     public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 1), 1.0F).build()))
                     .SetItemAnimation(UseAnim.DRINK).has_basic_model().AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));

@@ -1,8 +1,6 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
-import com.kelco.kamenridercraft.entity.vehicles.NeoBaseBikeEntity;
-import com.kelco.kamenridercraft.network.payload.ServerVehicleControlPayload;
 import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
@@ -20,8 +18,6 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import net.neoforged.neoforge.network.PacketDistributor;
-import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
@@ -59,18 +55,6 @@ public class KamenRiderCraftCoreClient {
                 )
         );
         */
-    }
-
-    public static void handleVehicleControlsClientside(Player player, boolean forwards, boolean backwards, boolean left, boolean right, boolean jumping, boolean drifting) {
-        boolean changeControls = false;
-        if (player.getVehicle() != null && player.getVehicle() instanceof NeoBaseBikeEntity bike) {
-            if (!bike.getForwards() == forwards || !bike.getBackwards() == backwards || !bike.getLeft() == left || !bike.getRight() == right || !bike.getJumping() == jumping || !bike.getDrifting() == drifting) {
-                changeControls = true;
-            }
-            if (changeControls) {
-                PacketDistributor.sendToServer(new ServerVehicleControlPayload(forwards, backwards, left, right, jumping, drifting));
-            }
-        }
     }
 }
 
