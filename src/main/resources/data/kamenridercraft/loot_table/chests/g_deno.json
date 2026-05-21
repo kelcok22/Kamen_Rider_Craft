@@ -62,7 +62,20 @@
         "max": 1.0,
         "min": 1.0
       }
+      },
+    {"bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:g_den_o_rider_pass"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 1.0
       }
+    }
     
   ]
 }

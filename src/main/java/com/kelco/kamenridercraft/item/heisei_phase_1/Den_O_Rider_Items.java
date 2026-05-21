@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.den_o.GDenOPassItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.den_o.RiderPassItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
@@ -529,7 +530,7 @@ public class Den_O_Rider_Items {
 			() -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> G_DEN_O_RIDER_PASS = ITEMS.register("g_den_o_rider_pass",
-			() -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),300).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new GDenOPassItem(new Item.Properties().rarity(Rarity.UNCOMMON), 10).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item>DEN_GASHER_SWORD = ITEMS.register("den_gasher_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));

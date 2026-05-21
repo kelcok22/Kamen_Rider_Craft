@@ -36,12 +36,12 @@ public class BaseCityItem extends BaseItem {
 		TIME=time;
 	}
 
-	public static void teleportToDimension(ItemStack itemstack,ServerLevel otherDim, ServerPlayer entity,int dim) {
-
+	public void teleportToDimension(ItemStack itemstack,ServerLevel otherDim, ServerPlayer entity) {
+		ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 		DimensionTransition respawn = entity.findRespawnPositionAndUseSpawnBlock(false, DimensionTransition.DO_NOTHING);
 		if (entity.isPassenger()) entity.stopRiding();
 
-	 if (dim==1) {
+	 if (otherDim.dimension()==CITY) {
 
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 5.0, 0.0);
 		 BlockPos blockpos;
@@ -88,11 +88,11 @@ public class BaseCityItem extends BaseItem {
 					(entity.getOwner() == p_41129_ && !entity.isOrderedToSit() && !entity.isSleeping()));
 			if (p_41128_.dimension() == MOON) {
 				if (player.isShiftKeyDown()) {
-					teleportToDimension(itemstack, Server.overworld(), player, 0);
+					this.teleportToDimension(itemstack, Server.overworld(), player);
 					for (LivingEntity ally : nearbyAllies)
 						ally.teleportTo(Server.overworld(), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
 				} else {
-					teleportToDimension(itemstack, Server.getLevel(getReturnDimension(itemstack)), player, 0);
+					this.teleportToDimension(itemstack, Server.getLevel(getReturnDimension(itemstack)), player);
 					for (LivingEntity ally : nearbyAllies)
 						ally.teleportTo(Server.getLevel(getReturnDimension(itemstack)), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
 				}
@@ -101,10 +101,10 @@ public class BaseCityItem extends BaseItem {
 				double Y=player.position().y;
 				double Z=player.position().z;
 				Save_XYZ(itemstack,X,Y,Z,0, p_41128_.dimension());
-				teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
+				this.teleportToDimension(itemstack,Server.getLevel(MOON), player);
 				for (LivingEntity ally : nearbyAllies) ally.teleportTo(Server.getLevel(MOON), player.getX(), player.getY()+1, player.getZ(), new HashSet<>(), 0, 0);
 			}
-			p_41129_.getCooldowns().addCooldown(this, TIME);
+			if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
 
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());

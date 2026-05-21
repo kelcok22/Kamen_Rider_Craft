@@ -91,7 +91,7 @@ public class GateSwitchItem extends BaseItem {
 				Save_XYZ(itemstack,X,Y,Z,0, p_41128_.dimension());
 				teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
 			}
-			p_41129_.getCooldowns().addCooldown(this, TIME);
+			if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
 
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
