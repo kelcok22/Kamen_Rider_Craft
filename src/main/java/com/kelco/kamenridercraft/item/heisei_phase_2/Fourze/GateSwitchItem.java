@@ -77,7 +77,7 @@ public class GateSwitchItem extends BaseItem {
 
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-		ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
+		ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
 
 		if (p_41129_ instanceof ServerPlayer player && !p_41128_.isClientSide()) {
 			MinecraftServer Server = p_41129_.getServer();
