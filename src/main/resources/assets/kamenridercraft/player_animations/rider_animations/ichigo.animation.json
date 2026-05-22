@@ -1,6 +1,9 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.unknown.new": {
+			"loop": true
+		},
 		"ichigo.kick_ground_start": {
 			"loop": true
 		},
@@ -69,6 +72,39 @@
 					"rotation": [-5, -17.5, -2.5]
 				}
 			}
+		},
+		"ichigo.ichigo_manga.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [37.2366, -16.1292, 26.1759],
+					"position": [0, -3, 0]
+				},
+				"torso": {
+					"rotation": [2.5, -10, 0]
+				},
+				"left_leg": {
+					"rotation": [25, 0, 0],
+					"position": [0.80811, 7.10601, -3.53065]
+				},
+				"right_leg": {
+					"rotation": [12.4539, -1.0809, 4.882]
+				},
+				"head": {
+					"rotation": [-27.2181, 2.3242, -10.3362]
+				},
+				"right_arm": {
+					"rotation": [29.5869, -3.2114, 14.6598]
+				},
+				"left_arm": {
+					"rotation": [-112.1639, -2.0986, -2.4739],
+					"position": [0.07039, 1.51348, -3.70195],
+					"scale": [1.2, 1, 1.2]
+				}
+			}
+		},
+		"animation.unknown.new2": {
+			"loop": true
 		}
 	}
 }
