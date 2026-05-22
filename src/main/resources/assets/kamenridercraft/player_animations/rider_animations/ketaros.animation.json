@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ketaros.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [25.7959, 48.7313, 14.9403],
+					"position": [0, -5, 0]
+				},
+				"torso": {
+					"rotation": [-2.5, 0, 5],
+					"position": [0.08707, 0.99525, 0.04362]
+				},
+				"left_leg": {
+					"rotation": [-21.263, -39.5732, -40.7151],
+					"position": [-0.23808, 0.05279, -1.39303]
+				},
+				"right_leg": {
+					"rotation": [17.5, 15, 20],
+					"position": [-0.25306, 1.07718, -3.70954]
+				},
+				"head": {
+					"rotation": [6.378, -47.4345, 3.5788],
+					"position": [0.14369, 0.98677, -0.07514]
+				},
+				"right_arm": {
+					"rotation": [-115.3508, -28.8459, 58.9766],
+					"position": [-0.69808, 2.51848, -1.04358]
+				},
+				"left_arm": {
+					"rotation": [-8.8007, -21.4657, -24.1151],
+					"position": [0.1981, 0.36532, 0.31091]
+				}
+			}
+		}
+	}
+}

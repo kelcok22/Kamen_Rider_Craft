@@ -127,10 +127,13 @@ public class FourzeDriverItem extends RiderDriverItem {
 					||get_Form_Item(belt, 3) !=Fourze_Rider_Items.BLANK_TRIANGLE_ASTROSWITCH.get()){
 				set_Form_Item(belt,Fourze_Rider_Items.FOURZE_BASE_STATES.asItem(), 5);
 				set_Form_Item(belt,Fourze_Rider_Items.BLANK_SQUARE_ASTROSWITCH.asItem(),4);
+			}else if (get_Form_Item(belt, 4) !=Fourze_Rider_Items.FUSION_ASTROSWITCH.get()
+                        &get_Form_Item(belt, 4) !=Fourze_Rider_Items.FUSION_ASTROSWITCH_OG.get()){
+                    set_Form_Item(belt,Fourze_Rider_Items.FOURZE_BASE_STATES.asItem(), 5);
+            }
+        }
 
-			}
 
-		}
 		if (get_Form_Item(belt, 5) ==Fourze_Rider_Items.FOURZE_LAUNCHER_STATES.get()){
 			if (get_Form_Item(belt, 1) !=Fourze_Rider_Items.BLANK_CIRCLE_ASTROSWITCH.get()
 					||get_Form_Item(belt, 4) !=Fourze_Rider_Items.BLANK_SQUARE_ASTROSWITCH.get()
