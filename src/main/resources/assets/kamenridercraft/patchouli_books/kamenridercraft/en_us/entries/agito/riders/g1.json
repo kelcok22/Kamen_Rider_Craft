@@ -2,7 +2,7 @@
 	"name": "Generation 1",
 	"icon": "kamenridercraft:g1",
 	"category": "kamenridercraft:agito/riders",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:entity",

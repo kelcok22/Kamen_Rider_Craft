@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kamenridercraft:shock_capsem"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kamenridercraft:zeztz/lord_invoker_five",
+      "kamenridercraft:zeztz/breakam_breaker_knuckle"
+    ]
+  },
+  "sends_telemetry_event": false
+}

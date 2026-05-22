@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ouja.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [-17.5, 15, 0],
+					"position": [0, -3, 0]
+				},
+				"torso": {
+					"rotation": [10.0995, 1.9971, 3.1139]
+				},
+				"left_leg": {
+					"rotation": [57.2645, -20.0855, -20.2468],
+					"position": [-0.25882, 0.29046, 0.92122]
+				},
+				"right_leg": {
+					"rotation": [-12.6044, 7.3212, -11.6322],
+					"position": [-0.25882, 0.29046, 0.92122]
+				},
+				"head": {
+					"rotation": [22.5958, -12.0389, -3.493]
+				},
+				"right_arm": {
+					"rotation": [-35.1185, 60.3406, 25.2338]
+				},
+				"left_arm": {
+					"rotation": [-36.1033, -26.128, -19.5685]
+				}
+			}
+		}
+	}
+}

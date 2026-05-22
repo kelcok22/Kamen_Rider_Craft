@@ -2,7 +2,7 @@
 	"name": "V-1",
 	"icon": "kamenridercraft:v1",
 	"category": "kamenridercraft:agito/riders",
-	"sortnum": 9,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:entity",

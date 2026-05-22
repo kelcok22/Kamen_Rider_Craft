@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"hercus.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [5, -65, 0],
+					"position": [-0.31596, -3.98478, 0.14733]
+				},
+				"left_leg": {
+					"rotation": [18.8644, -33.3901, -36.5426],
+					"position": [-0.20486, 2.29503, -5.45764]
+				},
+				"right_leg": {
+					"rotation": [8.8644, 33.3901, 36.5426]
+				},
+				"head": {
+					"rotation": [-3.4244, 57.4263, -4.5764]
+				},
+				"right_arm": {
+					"rotation": [-25, 15, 0]
+				},
+				"left_arm": {
+					"rotation": [5.1653, -27.0478, -11.2432]
+				}
+			}
+		}
+	}
+}

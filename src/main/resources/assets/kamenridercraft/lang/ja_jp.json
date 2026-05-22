@@ -8609,6 +8609,8 @@
 
 "item.kamenridercraft.zeztz_driver": "ゼッツドライバー",
 "kamenridercraft.name.zeztz": "ライダー: 仮面ライダーゼッツ",
+"item.kamenridercraft.zeztz_exdream_driver": "ゼッツエクスドリームドライバー",
+"kamenridercraft.name.zeztz_exdream": "ライダー: 仮面ライダーゼッツエクスドリーム",
 "item.kamenridercraft.knight_invoker": "ナイトインヴォーカー",
 "kamenridercraft.name.nox_knight": "疑似ライダー: ノクスナイト",
 "item.kamenridercraft.nox_driver": "ノクスドライバー",
@@ -8671,6 +8673,8 @@
 "kamenridercraft:gun_capsem.form": "フォーム: ガンシャドー",
 "item.kamenridercraft.wolf_capsem": "ウルフカプセム",
 "kamenridercraft:wolf_capsem.form": "フォーム: ウルフシャドー",
+"item.kamenridercraft.midnight_shadow_capsem": "ミッドナイトシャドウカプセム",
+"kamenridercraft:midnight_shadow_capsem.form": "フォーム: ミッドナイトシャドウ",
 "item.kamenridercraft.extra_capsem": "エクストラカプセム",
 "kamenridercraft:extra_capsem.form": "フォーム: 基本フォーム",
 "item.kamenridercraft.shock_capsem": "ショックカプセム",
@@ -8720,6 +8724,7 @@
 "item.kamenridercraft.transform_capsem_gold": "トランスフォームカプセム（ゴールドver.）",
 "item.kamenridercraft.wing_capsem_gold": "ウイングカプセム（ゴールドver.）",
 
+"item.kamenridercraft.zeztz_exdream_driver_buckle": "ゼッツエクスドリームドライバーバックル",
 "item.kamenridercraft.capsem_cylinder": "カプセムシリンダー",
 
 "item.kamenridercraft.zeztz_horse_armor": "ゼッツ馬鎧",
@@ -11119,6 +11124,8 @@
 "advancements.kamenridercraft.hibiki.amaki.title": "Ms. Blue Sky",
 "advancements.kamenridercraft.hibiki.armed_saber.description": "装甲響鬼に変身",
 "advancements.kamenridercraft.hibiki.armed_saber.title": "Hibiki Armed",
+"advancements.kamenridercraft.hibiki.armor_of_the_ogre.description": "鬼の鎧を装着",
+"advancements.kamenridercraft.hibiki.armor_of_the_ogre.title": "Hey now, you're an All Star",
 "advancements.kamenridercraft.hibiki.banki.description": "仮面ライダー蛮鬼に変身",
 "advancements.kamenridercraft.hibiki.banki.title": "Demon Days",
 "advancements.kamenridercraft.hibiki.danki.description": "仮面ライダー弾鬼に変身",

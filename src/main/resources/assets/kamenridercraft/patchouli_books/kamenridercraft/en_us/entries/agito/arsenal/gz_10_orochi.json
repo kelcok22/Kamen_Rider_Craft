@@ -1,0 +1,16 @@
+{
+	"name": "GZ-10 Orochi",
+	"icon": "kamenridercraft:gz_10_orochi",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Agito: Psychic War (2026, movie)$(br2)Used by $(l:agito/riders/g7)Kamen Rider G7$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/gz_10_orochi"
+		}
+	]
+}

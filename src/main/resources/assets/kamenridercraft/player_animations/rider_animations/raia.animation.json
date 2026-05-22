@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"raia.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [20.2934, 38.8696, 16.1407],
+					"position": [0, -2, 0]
+				},
+				"torso": {
+					"rotation": [0.1091, 2.4976, 2.5024]
+				},
+				"left_leg": {
+					"rotation": [-12.5527, -5.8788, -33.0191]
+				},
+				"right_leg": {
+					"rotation": [0, 27.5, 0]
+				},
+				"head": {
+					"rotation": [-9.7594, -34.8286, -8.7227]
+				},
+				"right_arm": {
+					"rotation": [-94.933, -4.9007, 67.9917],
+					"position": [-1.06289, -2.02627, -1.66268]
+				},
+				"left_arm": {
+					"rotation": [-114.192, 35.0867, 17.5899],
+					"position": [0.86577, -3.84586, -0.67811]
+				}
+			}
+		}
+	}
+}

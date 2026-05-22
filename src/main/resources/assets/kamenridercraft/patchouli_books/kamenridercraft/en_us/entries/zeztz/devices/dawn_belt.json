@@ -2,7 +2,7 @@
 	"name": "Punishmenter",
 	"icon": "kamenridercraft:dawn_belt",
 	"category": "kamenridercraft:zeztz/devices",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

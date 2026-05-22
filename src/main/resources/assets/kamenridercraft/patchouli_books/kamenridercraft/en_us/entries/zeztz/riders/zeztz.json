@@ -202,20 +202,6 @@
       },
       {
         "type": "patchouli:entity",
-        "anchor": "exdream",
-        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:exdreamrise_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
-        "scale": -1,
-        "offset": 0.1,
-        "name": "Exdream",
-        "text": "Accessed with the $(l:zeztz/items/capsems#exdreamrise_capsem)Exdreamrise Capsem$(/l)"
-      },
-      {
-        "type": "patchouli:text",
-        "title": "Kamen Rider Zeztz",
-        "text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength IV (with weapon)$(li)Haste III$(li)Resistance IV$(li)Night Vision$(li)Boost III$(li)Jump Boost IV"
-      },
-      {
-        "type": "patchouli:entity",
         "anchor": "zeroider",
         "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeztz_and_code_zeroider_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
         "scale": -1,

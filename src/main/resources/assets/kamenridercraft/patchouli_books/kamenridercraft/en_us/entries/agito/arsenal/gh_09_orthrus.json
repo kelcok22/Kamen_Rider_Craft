@@ -1,0 +1,16 @@
+{
+	"name": "GH-09 Orthrus",
+	"icon": "kamenridercraft:gh_09_orthrus",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Agito: Psychic War (2026, movie)$(br2)Used by $(l:agito/riders/g6)Kamen Rider G6$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/gh_09_orthrus"
+		}
+	]
+}
