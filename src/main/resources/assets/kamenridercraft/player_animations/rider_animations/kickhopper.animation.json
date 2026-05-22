@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kickhopper.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [7.5, -35, 0],
+					"position": [-0.0996, -0.98481, 0.14224]
+				},
+				"torso": {
+					"rotation": [-5, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [-2.5767, -9.9616, 0.8804]
+				},
+				"right_leg": {
+					"rotation": [-14.5205, 18.8608, -3.1491]
+				},
+				"head": {
+					"rotation": [27.5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-5, 15, 0]
+				},
+				"left_arm": {
+					"rotation": [-7.5, 0, 0]
+				}
+			}
+		}
+	}
+}

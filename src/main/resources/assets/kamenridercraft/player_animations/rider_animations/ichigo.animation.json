@@ -102,9 +102,6 @@
 					"scale": [1.2, 1, 1.2]
 				}
 			}
-		},
-		"animation.unknown.new2": {
-			"loop": true
 		}
 	}
 }
