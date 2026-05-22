@@ -115,6 +115,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> OVER_QUARTZER= registerSoundEvent("over_quartzer");
     public static final ResourceKey<JukeboxSong> OVER_QUARTZER_KEY = createSong("over_quartzer");
 
+    public static final Supplier<SoundEvent> IZANAGI= registerSoundEvent("izanagi");
+    public static final ResourceKey<JukeboxSong> IZANAGI_KEY = createSong("izanagi");
+
     public static final Supplier<SoundEvent> P_A_R_T_Y_UNIVERSE_FESTIVAL= registerSoundEvent("p_a_r_t_y_universe_festival");
     public static final ResourceKey<JukeboxSong> P_A_R_T_Y_UNIVERSE_FESTIVAL_KEY = createSong("p_a_r_t_y_universe_festival");
 

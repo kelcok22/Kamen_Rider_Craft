@@ -285,6 +285,10 @@
 "item.kamenridercraft.over_quartzer.desc": "HosephHoestar - Over \"Quartzer\"",
 "item.kamenridercraft.over_quartzer_music_disc.desc": "HosephHoestar - Over \"Quartzer\"",
 
+"item.kamenridercraft.izanagi_music_disc": "IZANAGI Music Disc",
+"item.kamenridercraft.izanagi.desc": "HosephHoestar - IZANAGI",
+"item.kamenridercraft.izanagi_music_disc.desc": "HosephHoestar - IZANAGI",
+
 "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc": "P. A. R. T. Y. ~Universe Festival~ Music Disc",
 "item.kamenridercraft.p_a_r_t_y_universe_festival.desc": "HosephHoestar - P. A. R. T. Y. ~Universe Festival~",
 "item.kamenridercraft.p_a_r_t_y_universe_festival_music_disc.desc": "HosephHoestar - P. A. R. T. Y. ~Universe Festival~",
@@ -705,8 +709,8 @@
 "henshin.kamenridercraft.bocca_jaldak":"<Bocca Jaldak> §bSo you are the remaining Granute Hunter?",
 "henshin.kamenridercraft.caries":"Horror! Zuki!",
 "henshin.kamenridercraft.caries_c3":"§5Horror! Destroy!",
-  "henshin.kamenridercraft.nox_knight":"<Nox Knight> §6Gisou.\n§fInvoke Knight System - §6Erase!",
-  "henshin.kamenridercraft.nox":"<Kamen Rider Nox> §9Henshin!\n§8Hahahahahaha! Rider! §9Nox! §6Nox! §fNox! §5Shadow!",
+"henshin.kamenridercraft.nox_knight":"<Nox Knight> §6Gisou.\n§fInvoke Knight System - §6Erase!",
+"henshin.kamenridercraft.nox":"<Kamen Rider Nox> §9Henshin!\n§8Hahahahahaha! Rider! §9Nox! §6Nox! §fNox! §5Shadow!",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
 "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up!",
@@ -1934,7 +1938,7 @@
 "item.kamenridercraft.puzzle_piece": "Puzzle Piece",
 "tooltip.kamenridercraft:puzzle_piece": "§4DO NOT EAT",
 "item.kamenridercraft.taiyaki": "Taiyaki",
-  "item.kamenridercraft.takoyaki": "Takoyaki",
+"item.kamenridercraft.takoyaki": "Takoyaki",
 "item.kamenridercraft.donut": "Donut",
 "item.kamenridercraft.mayo": "Mayo",
 "item.kamenridercraft.mayo_donut": "Mayo Donut",

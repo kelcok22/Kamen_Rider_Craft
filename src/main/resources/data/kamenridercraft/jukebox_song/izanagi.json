@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.izanagi.desc"
+  },
+  "length_in_seconds": 81,
+  "sound_event": "kamenridercraft:izanagi"
+}

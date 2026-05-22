@@ -368,6 +368,17 @@
 		},
       {
         "type": "patchouli:text",
+        "anchor": "izanagi_music_disc",
+        "text": "Song:$(li)HosephHoestar - IZANAGI$(br2)Based on:$(li)Sakuramen feat. Hideya Tawada - IZANAGI$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Shinobi $(m)(2022, TV show)/$ (2019, web series)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:izanagi_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
         "anchor": "p_a_r_t_y_universe_festival_music_disc",
         "text": "Song:$(li)HosephHoestar - P. A. R. T. Y. ~Universe Festival~$(br2)Based on:$(li)DA PUMP - P. A. R. T. Y. ~Universe Festival~$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
       },
