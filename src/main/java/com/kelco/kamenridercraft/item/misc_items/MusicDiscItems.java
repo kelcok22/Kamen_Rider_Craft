@@ -110,6 +110,9 @@ public class MusicDiscItems {
     public static final DeferredItem<Item> OVER_QUARTZER_MUSIC_DISC = ITEMS.register("over_quartzer_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.OVER_QUARTZER_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> IZANAGI_MUSIC_DISC = ITEMS.register("izanagi_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.IZANAGI_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> P_A_R_T_Y_UNIVERSE_FESTIVAL_MUSIC_DISC = ITEMS.register("p_a_r_t_y_universe_festival_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.P_A_R_T_Y_UNIVERSE_FESTIVAL_KEY).stacksTo(1)));
 

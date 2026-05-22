@@ -1659,6 +1659,7 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.EXCITE_KEY_MUSIC_DISC);
                 event.accept(MusicDiscItems.BE_THE_ONE_MUSIC_DISC);
                 event.accept(MusicDiscItems.OVER_QUARTZER_MUSIC_DISC);
+                event.accept(MusicDiscItems.IZANAGI_MUSIC_DISC);
                 event.accept(MusicDiscItems.P_A_R_T_Y_UNIVERSE_FESTIVAL_MUSIC_DISC);
                 event.accept(MusicDiscItems.REAL_X_EYEZ_MUSIC_DISC);
                 event.accept(MusicDiscItems.ALMIGHTY_MUSIC_DISC);
