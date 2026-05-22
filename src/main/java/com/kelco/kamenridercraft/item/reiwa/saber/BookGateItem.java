@@ -104,7 +104,7 @@ public class BookGateItem extends BaseItem {
 				teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
 				for (LivingEntity ally : nearbyAllies) ally.teleportTo(Server.getLevel(MOON), player.getX(), player.getY()+1, player.getZ(), new HashSet<>(), 0, 0);
 			}
-			p_41129_.getCooldowns().addCooldown(this, TIME);
+			if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
 
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
