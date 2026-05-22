@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kaixa.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [-7.5, 30, 0],
+					"position": [0, -1.5, 0]
+				},
+				"torso": {
+					"rotation": [2.7254, -4.881, -2.7253]
+				},
+				"left_leg": {
+					"rotation": [15.4484, -18.5365, -17.9485],
+					"position": [0.21651, 0.01632, 0.12393]
+				},
+				"right_leg": {
+					"rotation": [15.4484, 18.5365, 17.9485],
+					"position": [0.43301, 0.03263, 0.24786]
+				},
+				"head": {
+					"rotation": [0, -15, 12.5],
+					"position": [0, 0.49572, -0.06526]
+				},
+				"right_arm": {
+					"rotation": [-127.3029, -63.9686, 15.638],
+					"position": [0, -2.97433, 0.39158]
+				},
+				"left_arm": {
+					"rotation": [18.4678, -40.4356, -19.1824]
+				}
+			}
+		}
+	}
+}
