@@ -307,7 +307,7 @@ public class Zeztz_Rider_Items {
             }.addSwitchForm(DUALMARE_CAPSEM_ORDERM.get()).ChangeModel("zeztz.geo.json").ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> EXDREAMRISE_CAPSEM = ITEMS.register("exdreamrise_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_exdream","zeztz","zeztz_exdream_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","zeztz_exdream","zeztz_exdream_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -646,6 +646,9 @@ public class Zeztz_Rider_Items {
     public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(CapsemDropper.LEGEND_CAPSEM).AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_exdream_driver_buckle",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
             () -> new CapsemCylinderItem().has_basic_model().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -660,6 +663,10 @@ public class Zeztz_Rider_Items {
     public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .Dont_show_belt_form_info().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())

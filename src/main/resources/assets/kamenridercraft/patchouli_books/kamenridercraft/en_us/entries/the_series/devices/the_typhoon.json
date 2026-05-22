@@ -13,6 +13,17 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:the_series/the_typhoon_ichigo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_nigo",
+			"title": "Typhoon (2)",
+			"text": "Appears in:$(li)Kamen Rider The First (2005, movie)$(br2)Equipped alongside $(l:the_series/devices/armor)The Series armor$(/l) to transform into $(l:the_series/riders/2)Kamen Rider 2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:the_series/the_typhoon_nigo"
 		}
 	]
 }

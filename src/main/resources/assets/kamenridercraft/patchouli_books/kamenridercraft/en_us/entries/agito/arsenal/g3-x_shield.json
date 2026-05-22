@@ -2,7 +2,7 @@
 	"name": "G3-X Shield",
 	"icon": "kamenridercraft:g3x_shield",
 	"category": "kamenridercraft:agito/arsenal",
-	"sortnum": 13,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Zeztz Darkness Nightmare",
 	"icon": "kamenridercraft:darkness_capsem",
 	"category": "kamenridercraft:zeztz/riders",
-	"sortnum": 8,
+	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:entity",

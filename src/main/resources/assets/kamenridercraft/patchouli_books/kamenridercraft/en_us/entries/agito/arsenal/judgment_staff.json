@@ -2,7 +2,7 @@
 	"name": "Judgement Staff",
 	"icon": "kamenridercraft:judgment_staff",
 	"category": "kamenridercraft:agito/arsenal",
-	"sortnum": 16,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

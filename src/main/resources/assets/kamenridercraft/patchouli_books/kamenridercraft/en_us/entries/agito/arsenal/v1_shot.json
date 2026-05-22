@@ -2,7 +2,7 @@
 	"name": "V1 Shot",
 	"icon": "kamenridercraft:v1_shot",
 	"category": "kamenridercraft:agito/arsenal",
-	"sortnum": 15,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-20T22:41:35.1263411	Item Models: kamenridercraft
+// 1.21.1	2026-05-22T10:58:23.7262658	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -785,6 +785,8 @@ a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero
 526b224ae6019c9cd80b7afcec573d9b389c8ee3 assets/kamenridercraft/models/item/zeztz_and_code_zeroider_capsem.json
 3ed954f18f84603a6db0f3d7dcd4983ecfbaf2f3 assets/kamenridercraft/models/item/zeztz_darkness_belt.json
 23ed1a4a44583566ec5c1081af648359e8d030f5 assets/kamenridercraft/models/item/zeztz_driver.json
+4bf1cca66da62b2e5680defa5ffa1f1919ec2be2 assets/kamenridercraft/models/item/zeztz_exdream_driver.json
+77c310f7cb94e2dd6e2cfe82b39f573186f2d5fd assets/kamenridercraft/models/item/zeztz_exdream_driver_buckle.json
 d266db5f7b7cbc0f602fcaa71c10be3800463ab9 assets/kamenridercraft/models/item/zeztz_gochizo.json
 59d6af98d1118a96e4f72f598f60281b358b8ea9 assets/kamenridercraft/models/item/zeztz_head.json
 c1b0fb4c4bf04054f4fd98eb574a72965b646b0e assets/kamenridercraft/models/item/zeztz_legs.json

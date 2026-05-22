@@ -1,0 +1,19 @@
+{
+	"name": "Zeztz Exdream Driver",
+	"icon": "kamenridercraft:zeztz_exdream_driver",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/zeztz_exdream)Kamen Rider Zeztz Exdream"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeztz_exdream_driver",
+			"title": " ",
+			"text": "Upgraded from the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l) by using the $(l:zeztz/items/zeztz_exdream_driver_buckle)Zeztz Exdream Driver Buckle$(/l) template and $(l:zeztz/items/capsems#exdreamrise_capsem)Exdreamrise Capsem$(/l) in a smithing table"
+		}
+	]
+}

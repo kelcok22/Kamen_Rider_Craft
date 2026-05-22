@@ -67,14 +67,29 @@
 		},	{
         "type": "patchouli:text",
         "anchor": "g6",
-        "text": "Appears in:$(li)Agito: Supernatural Power War (2026, movie)$(br2)Used to craft G6's $(l:agito/devices/g_buckle#g6_belt)G-Buckle$(/l)"
+			"title": "G6 Chip",
+        "text": "Appears in:$(li)Agito: Psychic War (2026, movie)$(br2)Used to craft G6's $(l:agito/devices/g_buckle#g6_belt)G-Buckle$(/l)"
       },
       {
         "type": "patchouli:spotlight",
         "link_recipe": true,
         "item": "kamenridercraft:g6",
+		  "title": " ",
         "text": "Obtained by using $(l:agito/items/g3core)Blank G-System Chips$(/l) on the $(l:misc/blocks/machine_blocks#g_chip_programer)G-Chip Programmer$(/l)"
       },
+		{
+			"type": "patchouli:text",
+			"anchor": "g7",
+			"title": "G7 Chip",
+			"text": "Appears in:$(li)Agito: Psychic War (2026, movie)$(br2)Used to craft G7's $(l:agito/devices/g_buckle#g7_belt)G-Buckle Mark 7$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:g7",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
 		{
 			"type": "patchouli:text",
 			"anchor": "g1",

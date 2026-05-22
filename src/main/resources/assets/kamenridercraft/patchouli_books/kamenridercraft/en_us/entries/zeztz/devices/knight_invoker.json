@@ -2,7 +2,7 @@
 	"name": "Knight Invoker",
 	"icon": "kamenridercraft:knight_invoker",
 	"category": "kamenridercraft:zeztz/devices",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

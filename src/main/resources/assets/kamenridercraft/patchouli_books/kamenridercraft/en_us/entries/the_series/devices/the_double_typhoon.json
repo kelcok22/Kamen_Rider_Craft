@@ -1,0 +1,17 @@
+{
+	"name": "Double Typhoon",
+	"icon": "kamenridercraft:the_double_typhoon",
+	"category": "kamenridercraft:the_series/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider The Next (2007, movie)$(br2)Equipped alongside $(l:the_series/devices/armor)The Series armor$(/l) to transform into $(l:the_series/riders/v3)Kamen Rider V3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:the_series/the_double_typhoon"
+		}
+	]
+}

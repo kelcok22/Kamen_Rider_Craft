@@ -402,7 +402,7 @@
 "effect.kamenridercraft.happy_mode":"§dHappy Mode",
 "effect.kamenridercraft.wonder":"Wonder",
 "effect.kamenridercraft.mirror_noises":"§7Mirror Noises",
-"effect.kamenridercraft.glide":"Glide ",
+"effect.kamenridercraft.glide":"Glide",
 "effect.kamenridercraft.ram":"Ram",
 "effect.kamenridercraft.self_mending":"Self Mending",
 "effect.kamenridercraft.group_mending":"Group Mending",
@@ -8616,6 +8616,8 @@
 
 "item.kamenridercraft.zeztz_driver": "Zeztz Driver",
 "kamenridercraft.name.zeztz": "Rider: Kamen Rider Zeztz",
+"item.kamenridercraft.zeztz_exdream_driver": "Zeztz Exdream Driver",
+"kamenridercraft.name.zeztz_exdream": "Rider: Kamen Rider Zeztz Exdream",
 "item.kamenridercraft.knight_invoker": "Knight Invoker",
 "kamenridercraft.name.nox_knight": "Debatable Rider: Nox Knight",
 "item.kamenridercraft.nox_driver": "Nox Driver",
@@ -8679,6 +8681,8 @@
 "kamenridercraft:gun_capsem.form": "Form: Gun Shadow",
 "item.kamenridercraft.wolf_capsem": "Wolf Capsem",
 "kamenridercraft:wolf_capsem.form": "Form: Wolf Shadow",
+  "item.kamenridercraft.midnight_shadow_capsem": "Midnight Shadow Capsem",
+  "kamenridercraft:midnight_shadow_capsem.form": "Form: Midnight Shadow",
 "item.kamenridercraft.extra_capsem": "Extra Capsem",
 "kamenridercraft:extra_capsem.form": "Form: Base Form",
 "item.kamenridercraft.shock_capsem": "Shock Capsem",
@@ -8726,6 +8730,7 @@
 "item.kamenridercraft.gotchard_capsem": "Gotchard Capsem",
 "item.kamenridercraft.gavv_capsem": "Gavv Capsem",
 
+"item.kamenridercraft.zeztz_exdream_driver_buckle": "Zeztz Exdream Driver Buckle",
 "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
 
 "item.kamenridercraft.zeztz_horse_armor": "Zeztz Horse Armor",

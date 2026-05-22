@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:smithing_transform",
+	"group": "zeztz",
+	"addition": {
+		"item": "kamenridercraft:exdreamrise_capsem"
+	},
+	"base": {
+		"item": "kamenridercraft:zeztz_driver"
+	},
+	"result": {
+		"count": 1,
+		"id": "kamenridercraft:zeztz_exdream_driver"
+	},
+	"template": {
+		"item": "kamenridercraft:zeztz_exdream_driver_buckle"
+	}
+}

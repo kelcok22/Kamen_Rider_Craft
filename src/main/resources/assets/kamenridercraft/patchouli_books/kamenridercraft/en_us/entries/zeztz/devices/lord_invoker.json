@@ -2,7 +2,7 @@
 	"name": "Lord Invoker",
 	"icon": "kamenridercraft:lord_invoker_three",
 	"category": "kamenridercraft:zeztz/devices",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",
