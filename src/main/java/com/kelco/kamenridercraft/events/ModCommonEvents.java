@@ -79,6 +79,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
@@ -108,6 +109,13 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void DropsEvent(BlockDropsEvent event) {
+
+            if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
+                if (event.getBreaker() instanceof Player player) {
+                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()&player.getAttribute(AttributeRegistry.TOJIMA).getValue()<100)player.getAttribute(AttributeRegistry.TOJIMA).setBaseValue(player.getAttribute(AttributeRegistry.TOJIMA).getValue()+1);
+                }
+            }
+
             if (event.getState() == Blocks.GLASS.defaultBlockState()) {
                 if (event.getBreaker() instanceof Player player) {
                     Inventory inventory = player.getInventory();
@@ -134,6 +142,9 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
+
+                if (event.getEntity().getAttribute(AttributeRegistry.TOJIMA).getValue()>99&event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem()==ExtraRiderItems.ICHIGO_MASK.asItem())event.getEntity().addEffect(new MobEffectInstance(EffectCore.RIDER_SPIRIT, 30, 0, false, false));
+
 
             ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
             if (event.getEntity().level().dimension() == MOON && event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_MOON_GRAVITY)) {

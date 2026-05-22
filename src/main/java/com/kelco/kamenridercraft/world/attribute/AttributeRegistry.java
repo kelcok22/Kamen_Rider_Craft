@@ -20,6 +20,14 @@ public class AttributeRegistry extends Event implements IModBusEvent {
     public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
 
+    public static final DeferredHolder<Attribute, Attribute> TOJIMA = ATTRIBUTES.register("tojima",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.tojima",
+                    0,
+                    0,
+                    100
+            ).setSyncable(true)
+    );
 
     public static final DeferredHolder<Attribute, Attribute> WINGS_OUT = ATTRIBUTES.register("wing_out",
             () -> new RangedAttribute(
