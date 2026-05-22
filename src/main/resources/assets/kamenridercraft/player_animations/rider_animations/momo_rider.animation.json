@@ -6,7 +6,7 @@
 			"bones": {
 				"body": {
 					"rotation": [0, 0, -27.5],
-					"position": [0, -3, 0]
+					"position": [0, -4, 0]
 				},
 				"left_leg": {
 					"rotation": [15, 0, -15]

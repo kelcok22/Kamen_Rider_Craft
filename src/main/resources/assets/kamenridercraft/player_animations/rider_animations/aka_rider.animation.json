@@ -5,7 +5,8 @@
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"body": {
-					"rotation": [-5, 0, 0]
+					"rotation": [-7.5, 0, 0],
+					"position": [0, -1.25, 0]
 				},
 				"torso": {
 					"rotation": [-5, 0, 0],
@@ -18,7 +19,7 @@
 					"rotation": [8.2839, 12.0676, 15.3472]
 				},
 				"head": {
-					"rotation": [5, 0, 0]
+					"rotation": [10, 0, 0]
 				},
 				"right_arm": {
 					"rotation": [-7.5, 15, 115],
