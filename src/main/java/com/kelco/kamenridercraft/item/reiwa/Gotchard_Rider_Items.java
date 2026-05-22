@@ -2351,15 +2351,15 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> GEATS_IX_RIDE_CHEMY_CARD = ITEMS.register("geats_ix_ride_chemy_card",
 			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),"_geats_ix","legend","legendriver_belt_l",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 4,true,false),
-					new MobEffectInstance(EffectCore.BOOST, 40, 4,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 7,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 2,true,false),
+					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 6,true,false),
+					new MobEffectInstance(EffectCore.BOOST, 40, 6,true,false))
 					.setBaseSummon((RiderDriverItem) Geats_Rider_Items.DESIRE_DRIVER_GEATS.get(), (RiderFormChangeItem) Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get())
 					.setSuperSummon((RiderDriverItem) Geats_Rider_Items.DESIRE_DRIVER_GEATS.get(), (RiderFormChangeItem) Geats_Rider_Items.UNITE_GRIP.get())
 					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).IsGlowing().hasStaticWings().addNeedForm(LEGENDARY_LEGEND.get(),2)

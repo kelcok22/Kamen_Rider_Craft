@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.den_o.GDenOPassItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.den_o.RiderPassItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
@@ -64,6 +65,20 @@ public class Den_O_Rider_Items {
 				}
 			}.IsBeltGlowing().addAlternative(RIDER_TICKET_NEW_DEN_O.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
+	public static final DeferredItem<Item> RIDER_TICKET_DAN_O = ITEMS.register("rider_ticket_dan_o",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","dan_o","dan_o_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SMALL, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 4,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("rider_ticket_sword"));
+
 	public static final DeferredItem<Item> RIDER_TICKET_SWORD = ITEMS.register("rider_ticket_sword",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","den_o","den_o_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -74,7 +89,7 @@ public class Den_O_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().IsBeltGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.IsGlowing().IsBeltGlowing().addAlternative(RIDER_TICKET_DAN_O.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_ROD = ITEMS.register("rider_ticket_rod",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rod","den_o","den_o_belt_r",
@@ -460,20 +475,6 @@ public class Den_O_Rider_Items {
 				}
 			}.ChangeBeltModel("geo/lv_1_belt.geo.json").has_basic_model().model_has_different_name("rider_ticket_sword"));
 
-	public static final DeferredItem<Item> RIDER_TICKET_DAN_O = ITEMS.register("rider_ticket_dan_o",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","dan_o","dan_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.SMALL, 40, 3,true,false),
-					new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 1);
-				}
-			}.has_basic_model().model_has_different_name("rider_ticket_sword"));
-
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
@@ -529,7 +530,7 @@ public class Den_O_Rider_Items {
 			() -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> G_DEN_O_RIDER_PASS = ITEMS.register("g_den_o_rider_pass",
-			() -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),300).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new GDenOPassItem(new Item.Properties().rarity(Rarity.UNCOMMON), 10).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item>DEN_GASHER_SWORD = ITEMS.register("den_gasher_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));

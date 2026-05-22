@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.den_o;
 
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
@@ -16,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.portal.PortalShape;
 import net.minecraft.world.phys.Vec3;
 
@@ -37,9 +39,10 @@ public class RiderPassItem extends BaseItem {
 	public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity) {
 		if (entity.isPassenger()) entity.stopRiding();
 		Vec3 position = PortalShape.findCollisionFreePosition(entity.getPosition(0), otherDim, entity, entity.getDimensions(entity.getPose()));
+		BlockPos pos = new BlockPos((int)position.x, (int)position.y, (int)position.z);
 
-		entity.teleportTo(otherDim, position.x, position.y, position.z, new HashSet<>(), 0, 0);
-		while (entity.isInWall()) entity.teleportRelative(0.0, 2.0, 0.0);
+		int y = otherDim.getChunkAt(pos).getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, pos.getX(), pos.getZ()) + 1;
+		entity.teleportTo(otherDim, position.x, y, position.z, new HashSet<>(), 0, 0);
 	}
 
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
@@ -63,7 +66,7 @@ public class RiderPassItem extends BaseItem {
 				teleportToDimension(Server.getLevel(SANDS_OF_TIME), p_41129_);
 				for (LivingEntity ally : nearbyAllies) ally.teleportTo(Server.getLevel(SANDS_OF_TIME), p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), new HashSet<>(), 0, 0);
 			}
-			p_41129_.getCooldowns().addCooldown(this, TIME);
+			if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
 		
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
