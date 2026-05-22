@@ -409,6 +409,7 @@
 "effect.kamenridercraft.sd":"SD",
 "effect.kamenridercraft.rider_kick":"ライダーキック",
 "effect.kamenridercraft.climbing":"登",
+"effect.kamenridercraft.rider_spirit":"ライダー魂",
 
 "effect.kamenridercraft.boost.desc": "スニークをする時、地面から進める",
 "effect.kamenridercraft.boost.description": "スニークをする時、地面から進める",
@@ -550,6 +551,8 @@
 "effect.kamenridercraft.rider_kick.description":"プレイヤーがライダーキックを行う",
 "effect.kamenridercraft.climbing.desc":"ブロックの横面を登ることが出来る、はしごのように",
 "effect.kamenridercraft.climbing.description":"ブロックの横面を登ることが出来る、はしごのように",
+"effect.kamenridercraft.rider_spirit.desc":"パンチはウィンドチャージを発生する、1号お面を着用時は泣きに見える",
+"effect.kamenridercraft.rider_spirit.description":"パンチはウィンドチャージを発生する、1号お面を着用時は泣きに見える",
 
 "happy_mode.kamenridercraft.sleep":"Mobは寝てる",
 "happy_mode.kamenridercraft.cheese_man":"§a君はチーズマンと友達が出来た！",

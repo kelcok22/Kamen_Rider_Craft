@@ -409,6 +409,7 @@
 "effect.kamenridercraft.sd":"SD",
 "effect.kamenridercraft.rider_kick":"Rider Kick",
 "effect.kamenridercraft.climbing":"Climbing",
+"effect.kamenridercraft.rider_spirit":"Rider Spirit",
 
 "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
 "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",
@@ -550,6 +551,8 @@
 "effect.kamenridercraft.rider_kick.description":"Causes you to Rider Kick",
 "effect.kamenridercraft.climbing.desc":"Allows you to climb up block faces like a ladder",
 "effect.kamenridercraft.climbing.description":"Allows you to climb up block faces like a ladder",
+"effect.kamenridercraft.rider_spirit.desc":"Adds wind charges to punches and causes you to cry when wearing an Ichigo Mask",
+"effect.kamenridercraft.rider_spirit.description":"Adds wind charges to punches and causes you to cry when wearing an Ichigo Mask",
 
 "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 "happy_mode.kamenridercraft.cheese_man":"§aYou've made friends with the Cheese Man!",
