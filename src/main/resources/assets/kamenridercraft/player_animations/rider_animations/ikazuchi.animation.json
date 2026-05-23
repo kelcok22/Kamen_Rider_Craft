@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ikazuchi.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 17.5, 0],
+					"position": [0, -0.75, 0]
+				},
+				"left_leg": {
+					"rotation": [-22.5, -37.5, 0],
+					"position": [0, -0.75, 0]
+				},
+				"right_leg": {
+					"rotation": [11.3378, 14.9416, 5.1755],
+					"position": [0, -0.25, 0]
+				},
+				"head": {
+					"rotation": [5, -22.5, 0]
+				},
+				"right_arm": {
+					"rotation": [-128.3753, 28.2179, 0.5252],
+					"position": [0, -3, 0]
+				},
+				"left_arm": {
+					"rotation": [1.3378, -14.9416, -5.1755]
+				}
+			}
+		}
+	}
+}

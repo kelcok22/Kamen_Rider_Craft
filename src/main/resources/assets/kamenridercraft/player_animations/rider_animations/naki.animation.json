@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"naki.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, 37.5, 0],
+					"position": [0, -0.5, 0]
+				},
+				"left_leg": {
+					"rotation": [-2.7111, -42.45, -3.389],
+					"position": [0.85325, 0, -0.29063]
+				},
+				"right_leg": {
+					"rotation": [8.8987, 23.9559, 10.5007]
+				},
+				"head": {
+					"rotation": [0, -40, 0]
+				},
+				"right_arm": {
+					"rotation": [1.7538, 9.8466, 10.151]
+				},
+				"left_arm": {
+					"rotation": [-108.8436, 21.4057, -7.0999],
+					"position": [0, -2, 0]
+				}
+			}
+		}
+	}
+}

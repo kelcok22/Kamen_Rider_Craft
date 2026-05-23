@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kabuki.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [9.4881, 52.6793, -3.5542],
+					"position": [0, -7, 0]
+				},
+				"left_leg": {
+					"rotation": [-23.4759, -16.1298, -48.1201],
+					"position": [-0.56752, 1.16828, -0.5595]
+				},
+				"right_leg": {
+					"rotation": [12.5, 0, 0],
+					"position": [-2.07995, 4.96505, -3.60861]
+				},
+				"head": {
+					"rotation": [-9.3153, -44.4257, 9.9795]
+				},
+				"right_arm": {
+					"rotation": [-96.1829, 59.0684, 39.5809]
+				},
+				"left_arm": {
+					"rotation": [-34.7691, -4.2935, -81.1552]
+				},
+				"left_item": {
+					"rotation": [89.8496, -12.8415, -7.027]
+				}
+			}
+		}
+	}
+}

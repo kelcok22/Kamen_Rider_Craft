@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"gotchard_daybreak.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [15, 42.5, 0],
+					"position": [0, -5, 0]
+				},
+				"torso": {
+					"rotation": [0, 10, -5]
+				},
+				"left_leg": {
+					"rotation": [23.1464, -22.3317, -21.8798],
+					"position": [2.09071, 3.50194, -3.84413]
+				},
+				"right_leg": {
+					"rotation": [-10.1212, 23.8533, 31.3667],
+					"position": [-0.6932, 2.21183, -1.90454]
+				},
+				"head": {
+					"rotation": [-15.8065, -37.98, 9.6272]
+				},
+				"right_arm": {
+					"rotation": [-102.3923, -51.7981, 31.6342],
+					"position": [0.79471, -2.27975, -1.47349]
+				},
+				"left_arm": {
+					"rotation": [-121.7672, 42.3006, -4.5661],
+					"position": [-0.57103, -1.75141, -0.77878]
+				}
+			}
+		}
+	}
+}

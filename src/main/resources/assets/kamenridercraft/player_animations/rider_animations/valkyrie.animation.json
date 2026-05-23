@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"valkyrie.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, -57.5, 0],
+					"position": [0, -1, 0]
+				},
+				"left_leg": {
+					"rotation": [2.0031, -14.8687, -7.7615]
+				},
+				"right_leg": {
+					"rotation": [1.5789, 56.7385, 13.7677],
+					"position": [-0.84339, 0, -0.5373]
+				},
+				"head": {
+					"rotation": [0, 60, 0]
+				},
+				"right_arm": {
+					"rotation": [-116.2864, -50.3526, 14.6682],
+					"position": [-0.30609, -2, -1.38069]
+				},
+				"left_arm": {
+					"rotation": [2.4226, -16.3102, -15.1619]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"vulcean.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [20.7015, 66.8237, 9.5189],
+					"position": [0, -3, 0]
+				},
+				"torso": {
+					"rotation": [0, -10, 5]
+				},
+				"left_leg": {
+					"rotation": [-14.0527, -60.872, -20.9003],
+					"position": [0.10701, -0.18389, -0.04629]
+				},
+				"right_leg": {
+					"rotation": [-7.5667, 9.3584, 22.2828],
+					"position": [0.18952, 1.24597, -3.28285]
+				},
+				"head": {
+					"rotation": [-27.3481, -63.676, 22.4701]
+				},
+				"right_arm": {
+					"rotation": [-143.1118, -58.4507, 61.0381],
+					"position": [-0.37502, -1.36699, -1.33085]
+				},
+				"left_arm": {
+					"rotation": [-100, -45, 0],
+					"position": [-2.30806, -2.58127, 1.94933]
+				},
+				"right_item": {
+					"rotation": [-25, 0, 0]
+				}
+			}
+		}
+	}
+}

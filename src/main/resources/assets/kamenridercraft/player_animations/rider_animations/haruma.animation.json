@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"haruma.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, -55, 0],
+					"position": [0, -3, 0]
+				},
+				"torso": {
+					"rotation": [0, 10, 2.5]
+				},
+				"left_leg": {
+					"rotation": [0, -25, -17.5],
+					"position": [0.328, 1, -2.21188]
+				},
+				"right_leg": {
+					"rotation": [0, 60, 17.5],
+					"position": [-1.39273, 1, 0.24558]
+				},
+				"head": {
+					"rotation": [0, 55, 0],
+					"position": [0.57358, 0, -0.81915]
+				},
+				"right_arm": {
+					"rotation": [-190, 0, 0],
+					"position": [-0.328, -1, 2.21188]
+				},
+				"left_arm": {
+					"rotation": [-45.0388, -18.9327, 2.4982],
+					"position": [0.08243, -1, 0.81915]
+				}
+			}
+		}
+	}
+}

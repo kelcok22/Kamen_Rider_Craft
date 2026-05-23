@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"agata.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, 35, 0],
+					"position": [0, -1, 0]
+				},
+				"left_leg": {
+					"rotation": [-5, -47.5, -15]
+				},
+				"right_leg": {
+					"rotation": [7.303, 10.8424, 12.6817]
+				},
+				"head": {
+					"rotation": [0, -32.5, 0]
+				},
+				"right_arm": {
+					"rotation": [-138.8491, -11.7214, 13.0867],
+					"position": [0, -4, 0]
+				},
+				"left_arm": {
+					"rotation": [-39.547, 60.2458, 46.4355]
+				}
+			}
+		}
+	}
+}

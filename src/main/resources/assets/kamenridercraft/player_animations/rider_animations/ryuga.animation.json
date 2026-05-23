@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ryuga.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [26.2836, 61.3027, 10.8543],
+					"position": [0, -6, 0]
+				},
+				"torso": {
+					"rotation": [2.5, 7.5, 0]
+				},
+				"left_leg": {
+					"rotation": [-4.9327, -45.8721, 0.0531],
+					"position": [2.53156, 5.34592, -4.12151]
+				},
+				"right_leg": {
+					"rotation": [18.2182, -1.8121, 32.0975],
+					"position": [-1.50464, 1.37898, -1.06197]
+				},
+				"head": {
+					"rotation": [-14.2356, -52.3172, 13.8971]
+				},
+				"right_arm": {
+					"rotation": [-112.7514, 14.26, 53.7143],
+					"position": [-0.35461, 0.02657, -0.90997]
+				},
+				"left_arm": {
+					"rotation": [-82.9117, 42.2791, -11.7272],
+					"position": [2.00664, 0.15947, 0.10236]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"baron.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, -57.5, 0],
+					"position": [0, -0.75, 0]
+				},
+				"torso": {
+					"rotation": [2.5, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [0.6574, -7.4713, -5.0429],
+					"position": [0.49384, 0.04358, 0.06501]
+				},
+				"right_leg": {
+					"rotation": [6.4801, 52.2168, 8.1783],
+					"position": [-0.39668, 0, -0.30438]
+				},
+				"head": {
+					"rotation": [0, 52.5, 0]
+				},
+				"right_arm": {
+					"rotation": [12.5, 7.5, 0]
+				},
+				"right_item": {
+					"rotation": [40, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [-4.9875, -2.9257, -4.7638]
+				}
+			}
+		}
+	}
+}

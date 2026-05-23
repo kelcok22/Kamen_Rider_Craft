@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"specter.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [27.5, 47.5, 0],
+					"position": [-0.28664, -3.58453, -0.26265]
+				},
+				"left_leg": {
+					"rotation": [-18.9403, -49.8512, 1.5462],
+					"position": [3.24866, 2.45467, -2.68349]
+				},
+				"right_leg": {
+					"rotation": [-19.3709, 27.0681, 23.0867],
+					"position": [-0.93242, 1.34129, -2.70768]
+				},
+				"head": {
+					"rotation": [-31.0128, -37.1586, 25.4138]
+				},
+				"right_arm": {
+					"rotation": [-164.3071, 16.8856, 4.6653]
+				},
+				"left_arm": {
+					"rotation": [-109.9727, 40.7358, -13.3421]
+				}
+			}
+		}
+	}
+}
