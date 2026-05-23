@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-22T10:58:23.7262658	Item Models: kamenridercraft
+// 1.21.1	2026-05-23T01:46:34.4395563	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -279,6 +279,7 @@ b013ca28370053181f981d844aad239fc7681e08 assets/kamenridercraft/models/item/garu
 eee6d4965b7da7f8b8371d6c3d120b83f37fa5a3 assets/kamenridercraft/models/item/gatack_hyper_zecter_clock_up.json
 25655e371ef0d213b24769092bbc662e2e97cf8c assets/kamenridercraft/models/item/gavv_capsem.json
 e3735b7c45033e4ad89130059358d6dca0ea8307 assets/kamenridercraft/models/item/gavv_gochizo.json
+3c483a0f577771e4cd44ed8777a3055ddb4395a6 assets/kamenridercraft/models/item/gavv_ride_chemy_card.json
 23d279ba3628582a41358d477db824b901995501 assets/kamenridercraft/models/item/gear_bi_kaiser.json
 bbdc5a221bf8ed96c2dde818348f80d8b90a9f17 assets/kamenridercraft/models/item/gear_hell_bros.json
 c2ffc1e1814429005178260a084faa52beb813dc assets/kamenridercraft/models/item/geats_capsem.json
@@ -786,10 +787,11 @@ a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero
 3ed954f18f84603a6db0f3d7dcd4983ecfbaf2f3 assets/kamenridercraft/models/item/zeztz_darkness_belt.json
 23ed1a4a44583566ec5c1081af648359e8d030f5 assets/kamenridercraft/models/item/zeztz_driver.json
 4bf1cca66da62b2e5680defa5ffa1f1919ec2be2 assets/kamenridercraft/models/item/zeztz_exdream_driver.json
-77c310f7cb94e2dd6e2cfe82b39f573186f2d5fd assets/kamenridercraft/models/item/zeztz_exdream_driver_buckle.json
+5f0b27c7515f6ad8043537c8d26f4c6ee7dca4a8 assets/kamenridercraft/models/item/zeztz_exdream_driver_buckle.json
 d266db5f7b7cbc0f602fcaa71c10be3800463ab9 assets/kamenridercraft/models/item/zeztz_gochizo.json
 59d6af98d1118a96e4f72f598f60281b358b8ea9 assets/kamenridercraft/models/item/zeztz_head.json
 c1b0fb4c4bf04054f4fd98eb574a72965b646b0e assets/kamenridercraft/models/item/zeztz_legs.json
+711b0d3e98eae8c738811e2a95f2e686671aac92 assets/kamenridercraft/models/item/zeztz_ride_chemy_card.json
 fb4e07085e463b3946ec6a837dbc46e42c30588d assets/kamenridercraft/models/item/zeztz_troso.json
 daf113a70f41d9682a6d61f01cf423a0424ecc54 assets/kamenridercraft/models/item/zi_o_capsem.json
 9a338769372039a871bbcd05d650987290a3b380 assets/kamenridercraft/models/item/zi_o_gochizo.json

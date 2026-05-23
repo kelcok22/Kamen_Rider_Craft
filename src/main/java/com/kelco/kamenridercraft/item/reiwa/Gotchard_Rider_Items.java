@@ -2025,8 +2025,22 @@ public class Gotchard_Rider_Items {
 					.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("gotchard").AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
+    public static final DeferredItem<Item> Gavv_RIDE_CHEMY_CARD = ITEMS.register("gavv_ride_chemy_card",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","legend","legendriver_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+                    .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("gavv").AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM)
+                    .AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
 
-	public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ultimate_ride_chemy_card",
+    public static final DeferredItem<Item> ZEZTZ_RIDE_CHEMY_CARD = ITEMS.register("zeztz_ride_chemy_card",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","legend","legendriver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false))
+                    .alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).IsGlowing().ChangeRiderName("zeztz").AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM)
+                    .AddToList(ChemyRiserItem.Legend_CHEMY).has_basic_model());
+
+
+    public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ultimate_ride_chemy_card",
 			() -> new LegendaryChemyCardItem(new Item.Properties().rarity(Rarity.RARE),"","legend","legendriver_belt_l",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
