@@ -674,9 +674,9 @@ public class ModCommonEvents {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
-                /*trades.get(1).add((trader, rand) -> new MerchantOffer(
+                trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));*/
+                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(ShinRiderItems.SHIN_STONE.get(), 1), 10, 8, 0.02F));
