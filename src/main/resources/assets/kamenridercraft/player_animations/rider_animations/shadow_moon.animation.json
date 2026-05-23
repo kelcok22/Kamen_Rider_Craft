@@ -2,11 +2,11 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"shadow_moon.pose": {
-			"loop": "hold_on_last_frame",
+			"loop": true,
 			"bones": {
 				"body": {
 					"rotation": [0, 30, 0],
-					"position": [0, -0.75, 0]
+					"position": [0, -1, 0]
 				},
 				"left_leg": {
 					"rotation": [0, -27.5, -12.5]

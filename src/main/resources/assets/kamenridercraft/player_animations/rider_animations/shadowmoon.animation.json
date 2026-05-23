@@ -2,31 +2,33 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"shadowmoon.pose": {
-			"loop": "hold_on_last_frame",
+			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [15, 20, 0]
+					"rotation": [20.596, 46.2608, 9.954],
+					"position": [0, -1.25, 0]
 				},
 				"torso": {
 					"rotation": [-5, 0, 0]
 				},
 				"left_leg": {
-					"rotation": [-22.5, -7.5, -10],
-					"position": [1.29061, 0.34217, -3.27494]
+					"rotation": [-18.8697, -42.0733, -9.9399],
+					"position": [1.29061, 0.34217, -1.27494]
 				},
 				"right_leg": {
-					"rotation": [-9.8627, 30.9614, 4.1058],
+					"rotation": [-12.3627, 30.9614, 4.1058],
 					"position": [-0.13128, 0.35288, -2.20414]
 				},
 				"head": {
-					"rotation": [-13.0862, -17.0723, 3.9041]
+					"rotation": [-16.0101, -47.3997, 6.2983],
+					"position": [-1, 0, 0]
 				},
 				"right_arm": {
-					"rotation": [-123.7758, -70.7799, 35.4036]
+					"rotation": [-10.6889, 11.4668, 3.5791]
 				},
 				"left_arm": {
-					"rotation": [14.1981, 20.8079, -104.8847],
-					"position": [2.20649, -0.24043, 0.27125]
+					"rotation": [-181.1789, -33.4705, 5.1752],
+					"position": [1.20649, -0.24043, -0.72875]
 				}
 			}
 		}

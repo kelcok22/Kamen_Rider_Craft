@@ -106,7 +106,7 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> CHAP_SPAWN_EGG = ITEMS.register("chap_spawn_egg",
            () -> new DeferredSpawnEggItem(CHAP,  0x000000,0xFFFFFF, new Item.Properties()));
  
-    public static final DeferredHolder<EntityType<?>, EntityType<ShadowmoonEntity>> SHADOWMOON = MOBLIST.register("shadowmoon",
+    public static final DeferredHolder<EntityType<?>, EntityType<ShadowmoonEntity>>     SHADOWMOON = MOBLIST.register("shadowmoon",
             () -> EntityType.Builder.of(ShadowmoonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shadowmoon"));
      
      public static final DeferredItem<DeferredSpawnEggItem> SHADOWMOON_SPAWN_EGG = ITEMS.register("shadowmoon_spawn_egg",
