@@ -22,7 +22,7 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:kuuga/titan_sword",
-	  "kamenridercraft:kuuga/rising_titan"
+	  "kamenridercraft:kuuga/kuuga_rising_titan"
 	]
   },
   "sends_telemetry_event": false
