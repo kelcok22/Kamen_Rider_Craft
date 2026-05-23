@@ -259,7 +259,7 @@ public class Hibiki_Rider_Items {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 0.1);}
-            }.IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            }.ChangeBeltModel("geo/ibuki_belt.geo.json").IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
 
     public static final DeferredItem<Item> HENSHIN_ONIBUE_FUBUKI = ITEMS.register("henshin_onibue_fubuki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","fubuki","fubukidriver_belt",
@@ -416,7 +416,7 @@ public class Hibiki_Rider_Items {
     public static final DeferredItem<Item> BANKIDRIVER = ITEMS.register("bankidriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"banki",HENSHIN_KIGEN_BANKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> AMAKIDRIVER = ITEMS.register("amakidriver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amaki",HENSHIN_ONIBUE_AMAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+            () -> new IbukiEquipmentBeltItem(ArmorMaterials.DIAMOND,"amaki",HENSHIN_ONIBUE_AMAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> KYOSUKEDRIVER = ITEMS.register("kyosukedriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyoki",HENSHIN_ONSA_KYOKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> KABUKIDRIVER = ITEMS.register("kabukidriver",

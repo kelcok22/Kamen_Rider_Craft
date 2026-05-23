@@ -18,7 +18,8 @@ public class IbukiEquipmentBeltItem extends RiderDriverItem {
 	}
 	@Override
 	public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (!rider.isHolding(Hibiki_Rider_Items.HENSHIN_ONIBUE_IBUKI.get())) return "henshin_onibue_ibuki";
+		if (this==Hibiki_Rider_Items.IBUKIDRIVER.get() && !rider.isHolding(Hibiki_Rider_Items.HENSHIN_ONIBUE_IBUKI.get())) return "henshin_onibue_ibuki";
+		else if (this==Hibiki_Rider_Items.AMAKIDRIVER.get() && !rider.isHolding(Hibiki_Rider_Items.HENSHIN_ONIBUE_AMAKI.get())) return "henshin_onibue_amaki";
 
 		return "blank";
 	}
