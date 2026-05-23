@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"dark_kabuto.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [10, 30, 0],
+					"position": [0, -0.75, 0]
+				},
+				"torso": {
+					"rotation": [3.8765, 12.8872, -5.1099]
+				},
+				"left_leg": {
+					"rotation": [-22.1194, -29.8742, -5.7686],
+					"position": [0.75, -0.75, -0.75]
+				},
+				"right_leg": {
+					"rotation": [5.1229, 21.9386, 13.4936],
+					"position": [0, -0.75, 0]
+				},
+				"head": {
+					"rotation": [-2.8806, -29.8742, 5.7686]
+				},
+				"right_arm": {
+					"rotation": [-1.8861, -17.2588, 15.3575],
+					"position": [0, -0.75, 1.25]
+				},
+				"left_arm": {
+					"rotation": [-7.1795, -9.4376, -12.2357],
+					"position": [0, -0.75, 0]
+				}
+			}
+		}
+	}
+}
