@@ -26,6 +26,7 @@
 		  // If set to 'terrain_matching', the house would be deformed to fit the change in land.
 		  // That's best for roads so lets stay 'rigid' for now.
 		"projection": "rigid",
+		  "override_liquid_settings": "ignore_waterlogging",
 
 		  // The kind of element we are spawning. This one is most likely what you want.
 		  // There's 'minecraft:legacy_single_pool_element' but that swaps the behavior of
