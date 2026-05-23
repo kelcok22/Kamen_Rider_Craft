@@ -35,7 +35,6 @@ import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
-import com.kelco.kamenridercraft.network.payload.AttributeChangePayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -80,7 +79,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
@@ -1152,6 +1150,7 @@ public class ModCommonEvents {
         event.put(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierEntity.setAttributes().build());
         event.put(MobsCore.APOLLO.get(), ApolloEntity.setAttributes().build());
         event.put(MobsCore.LIBRA.get(), LibraEntity.setAttributes().build());
+        event.put(MobsCore.TOJIMA_TAKOYAKI.get(), TojimaTakoyakiEntity.setAttributes().build());
 
         event.put(MobsCore.NOX.get(), NoxEntity.setAttributes().build());
 

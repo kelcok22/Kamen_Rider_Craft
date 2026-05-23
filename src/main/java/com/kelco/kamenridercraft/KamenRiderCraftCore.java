@@ -23,7 +23,10 @@ import com.kelco.kamenridercraft.item.extra_riders.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_2.*;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
-import com.kelco.kamenridercraft.item.reboots.*;
+import com.kelco.kamenridercraft.item.reboots.AmazonsRiderItems;
+import com.kelco.kamenridercraft.item.reboots.BlackSunRiderItems;
+import com.kelco.kamenridercraft.item.reboots.ShinIchigoRiderItems;
+import com.kelco.kamenridercraft.item.reboots.TheSeriesRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.*;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -573,6 +576,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierRenderer::new);
             event.registerEntityRenderer(MobsCore.APOLLO.get(), ApolloRenderer::new);
             event.registerEntityRenderer(MobsCore.LIBRA.get(), LibraRenderer::new);
+            event.registerEntityRenderer(MobsCore.TOJIMA_TAKOYAKI.get(), AllyEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
