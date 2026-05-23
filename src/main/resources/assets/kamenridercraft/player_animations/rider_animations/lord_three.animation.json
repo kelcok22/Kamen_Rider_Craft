@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"lord_three.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, 27.5, 0],
+					"position": [0, -0.75, 0]
+				},
+				"torso": {
+					"rotation": [-2.5, -10, 0],
+					"position": [-0.34631, 0, 0.66526]
+				},
+				"left_leg": {
+					"rotation": [-7.4192, -57.2918, -5.4725],
+					"position": [0, -0.25, 0]
+				},
+				"right_leg": {
+					"rotation": [9.851, -1.728, 9.8511]
+				},
+				"head": {
+					"rotation": [17.4116, -12.4484, 0.2319]
+				},
+				"right_arm": {
+					"rotation": [-94.4376, 2.3065, 27.4107],
+					"position": [-0.66526, -1.5, -0.34631]
+				},
+				"right_item": {
+					"rotation": [-87.5, -0.0003, 89.9999],
+					"position": [0.08724, 0, 1.9981]
+				},
+				"left_arm": {
+					"rotation": [10.884, -19.5468, -2.6127]
+				}
+			}
+		}
+	}
+}

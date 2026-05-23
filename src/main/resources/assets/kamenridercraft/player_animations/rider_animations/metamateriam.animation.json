@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"metamateriam.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [5, 27.5, 0],
+					"position": [0.08049, -1.99239, 0.15462]
+				},
+				"left_leg": {
+					"rotation": [-11.9053, -22.2971, -13.11],
+					"position": [0.92773, -0.36498, -2.00152]
+				},
+				"right_leg": {
+					"rotation": [8.9887, 14.7166, 22.0437]
+				},
+				"head": {
+					"rotation": [-6.1652, -24.9746, 2.7581]
+				},
+				"right_arm": {
+					"rotation": [-124.7129, 16.1362, 10.1542],
+					"position": [-0.33122, -1.04417, 1.67332]
+				},
+				"left_arm": {
+					"rotation": [-107.5, 0, 0],
+					"position": [0, -1.25442, 0.65301]
+				}
+			}
+		}
+	}
+}
