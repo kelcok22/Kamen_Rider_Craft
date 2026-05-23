@@ -86,6 +86,7 @@ public class FinalKamenRideCardItem extends BaseItem {
                 if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : Decade_Rider_Items.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(1))));
                 if (summonNeoBelt == null) {
                     summon.addRequiredForm((RiderFormChangeItem) Decade_Rider_Items.K_TOUCH.get(), 1);
+                    summon.addRequiredForm((RiderFormChangeItem)  Decade_Rider_Items.K_TOUCH_STRONGEST.get(), 1);
                     summon.addRequiredForm((RiderFormChangeItem) Gotchard_Rider_Items.DECADE_COMPLETE_RIDE_CHEMY_CARD.get(), 1);
                 }
                 if (summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
