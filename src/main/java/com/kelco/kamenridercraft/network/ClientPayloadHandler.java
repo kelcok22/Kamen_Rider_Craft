@@ -118,6 +118,12 @@ public class ClientPayloadHandler {
             }
         } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ferbus")) {
             animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance"));
+        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ichigo_mask")) {
+            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "tojima.pose"));
+        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:v3_mask")) {
+            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ichiyo.pose"));
+        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:riderman_helmet")) {
+            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "mitsuba.pose"));
         }
         try {
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));

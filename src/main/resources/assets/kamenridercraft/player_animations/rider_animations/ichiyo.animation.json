@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"ichiyo.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [0, 12.5, 0],
+					"position": [0, -0.75, 0]
+				},
+				"torso": {
+					"rotation": [0, 0, 5],
+					"position": [0.74715, -0.06537, 0]
+				},
+				"left_leg": {
+					"rotation": [3.3504, -39.7341, -11.809]
+				},
+				"right_leg": {
+					"rotation": [1.3185, 9.9136, 7.6143],
+					"position": [-0.73229, 0.09789, 0.12912]
+				},
+				"head": {
+					"rotation": [0, -15, 0]
+				},
+				"right_arm": {
+					"rotation": [-180, 0, -5],
+					"position": [0, -1, -2]
+				},
+				"left_arm": {
+					"rotation": [-74.319, 70.4232, 8.4687],
+					"position": [-1.46507, -2.38773, -0.39029]
+				}
+			}
+		}
+	}
+}

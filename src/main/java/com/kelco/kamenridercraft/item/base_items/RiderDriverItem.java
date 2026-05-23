@@ -131,7 +131,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static boolean isTransforming(LivingEntity player) {
         if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        return player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0;
+        return player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue() != 0;
     }
 
     public static boolean isKicking(LivingEntity player) {
@@ -152,86 +152,88 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void riderKickTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-        if (stack.has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            boolean canRiderKick = false;
-            for (int n = 0; n < Num_Base_Form_Item; n++) {
-                RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                if (isTransformed(player) && form.allowsRiderKick()) {
-                    player.addEffect(new MobEffectInstance(EffectCore.RIDER_KICK, 10, 0, true, false));
-                    canRiderKick = true;
-                    break;
-                }
-            }
-            if (tag.getDouble("rider_kick_cooldown") >= 1) {
-                //this.riderKickCooldown--;
-                if (canRiderKick) {
-                    tag.putDouble("rider_kick_cooldown", tag.getDouble("rider_kick_cooldown") - 1);
-                    if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
-                        play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
-                }
-            }
-            if (tag.getDouble("use_ability") != 0) {
+        if (player.level() instanceof ServerLevel) {
+            if (stack.has(DataComponents.CUSTOM_DATA)) {
+                CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+                boolean canRiderKick = false;
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                    if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getDouble("rider_kick_cooldown") == 0) {
-                        Consumer<CompoundTag> data = form2 -> form2.putBoolean("rider_kicking", true);
-                        CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
+                    if (isTransformed(player) && form.allowsRiderKick()) {
+                        player.addEffect(new MobEffectInstance(EffectCore.RIDER_KICK, 10, 0, true, false));
+                        canRiderKick = true;
                         break;
                     }
                 }
-                tag.putDouble("use_ability", tag.getDouble("use_ability") - 1);
-            }
-            if (tag.getDouble("use_ability") < 0) tag.putDouble("use_ability", 0);
-
-            if (tag.getBoolean("rider_kicking")) {
-                tag.putDouble("rider_kick_tick", tag.getDouble("rider_kick_tick") + 1);
-                if (tag.getDouble("rider_kick_tick") == 1) {
-                    PacketDistributor.sendToAllPlayers(new StartKickPayload(player.onGround() ? "floor_start" : "air_start", player.getStringUUID()));
-                    Vec3 initialVec = player.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
-                    player.setDeltaMovement(climbVec.scale(0.97D));
-                    // player.push(0, 1.25, 0);
-                    player.hurtMarked = true;
-                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
-                }else if (tag.getDouble("rider_kick_tick") == 17) {
-                    PacketDistributor.sendToAllPlayers(new StartKickPayload("kick", player.getStringUUID()));
-                }  else if (tag.getDouble("rider_kick_tick") == 21) {
-                    player.setDeltaMovement(0, 0, 0);
-                    Double y = player.getLookAngle().y;
-                    if (y < 0.5) y = 0.05d;
-                    Vec3 look = new Vec3(player.getLookAngle().x * 0.1, y * 0.04, player.getLookAngle().z * 0.1).scale(20);
-                    player.setDeltaMovement(look.scale(0.97D));
-                    player.hurtMarked = true;
+                if (tag.getDouble("rider_kick_cooldown") >= 1) {
+                    //this.riderKickCooldown--;
+                    if (canRiderKick) {
+                        tag.putDouble("rider_kick_cooldown", tag.getDouble("rider_kick_cooldown") - 1);
+                        if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
+                            play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
+                    }
                 }
-                if (tag.getDouble("rider_kick_tick") >= 21) {
-                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
-                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
-                    level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-
-                    List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
-                            (sentity instanceof Player && sentity != player)
-                                    || (sentity instanceof Mob));
-                    for (LivingEntity enemy : nearbyEnemies) {
-                        level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                        if (enemy.getHealth() < enemy.getMaxHealth() / 3)
-                            enemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
-                        if (stack.getItem() instanceof RiderDriverItem) {
-                            this.OnRiderKickHit(stack, player, enemy);
-                            Consumer<CompoundTag> data = form -> form.putDouble("rider_kick_tick", 41);
+                if (tag.getDouble("use_ability") != 0) {
+                    for (int n = 0; n < Num_Base_Form_Item; n++) {
+                        RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                        if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getDouble("rider_kick_cooldown") == 0) {
+                            Consumer<CompoundTag> data = form2 -> form2.putBoolean("rider_kicking", true);
                             CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
+                            break;
                         }
                     }
-                    if (player.onGround() || player.isInWater() || tag.getDouble("rider_kick_tick") >= 41) {
-                        level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                        if (stack.getItem() instanceof RiderDriverItem) {
-                            Consumer<CompoundTag> data = form -> {
-                                form.putBoolean("rider_kicking", false);
-                                form.putDouble("rider_kick_cooldown", 200);
-                                form.putDouble("rider_kick_tick", 0);
-                            };
-                            CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
-                            PacketDistributor.sendToAllPlayers(new EndPosePayload(0, player.getStringUUID()));
+                    tag.putDouble("use_ability", tag.getDouble("use_ability") - 1);
+                }
+                if (tag.getDouble("use_ability") < 0) tag.putDouble("use_ability", 0);
+
+                if (tag.getBoolean("rider_kicking")) {
+                    tag.putDouble("rider_kick_tick", tag.getDouble("rider_kick_tick") + 1);
+                    if (tag.getDouble("rider_kick_tick") == 1) {
+                        PacketDistributor.sendToAllPlayers(new StartKickPayload(player.onGround() ? "floor_start" : "air_start", player.getStringUUID()));
+                        Vec3 initialVec = player.getDeltaMovement();
+                        Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
+                        player.setDeltaMovement(climbVec.scale(0.97D));
+                        // player.push(0, 1.25, 0);
+                        player.hurtMarked = true;
+                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
+                    } else if (tag.getDouble("rider_kick_tick") == 17) {
+                        PacketDistributor.sendToAllPlayers(new StartKickPayload("kick", player.getStringUUID()));
+                    } else if (tag.getDouble("rider_kick_tick") == 21) {
+                        player.setDeltaMovement(0, 0, 0);
+                        Double y = player.getLookAngle().y;
+                        if (y < 0.5) y = 0.05d;
+                        Vec3 look = new Vec3(player.getLookAngle().x * 0.1, y * 0.04, player.getLookAngle().z * 0.1).scale(20);
+                        player.setDeltaMovement(look.scale(0.97D));
+                        player.hurtMarked = true;
+                    }
+                    if (tag.getDouble("rider_kick_tick") >= 21) {
+                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
+                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
+                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
+
+                        List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
+                                (sentity instanceof Player && sentity != player)
+                                        || (sentity instanceof Mob));
+                        for (LivingEntity enemy : nearbyEnemies) {
+                            level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
+                            if (enemy.getHealth() < enemy.getMaxHealth() / 3)
+                                enemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
+                            if (stack.getItem() instanceof RiderDriverItem) {
+                                this.OnRiderKickHit(stack, player, enemy);
+                                Consumer<CompoundTag> data = form -> form.putDouble("rider_kick_tick", 41);
+                                CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
+                            }
+                        }
+                        if (player.onGround() || player.isInWater() || tag.getDouble("rider_kick_tick") >= 41) {
+                            level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
+                            if (stack.getItem() instanceof RiderDriverItem) {
+                                Consumer<CompoundTag> data = form -> {
+                                    form.putBoolean("rider_kicking", false);
+                                    form.putDouble("rider_kick_cooldown", 200);
+                                    form.putDouble("rider_kick_tick", 0);
+                                };
+                                CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
+                                PacketDistributor.sendToAllPlayers(new EndPosePayload(0, player.getStringUUID()));
+                            }
                         }
                     }
                 }
@@ -430,9 +432,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
 
-        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
+        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue() == 1;
 
-       boolean sd = rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue() !=1 && get_Form_Item(itemstack, 1).get_SD() & SD;
+        boolean sd = rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue() != 1 && get_Form_Item(itemstack, 1).get_SD() & SD;
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem) itemstack.getItem()).BELT_TEXT;
@@ -458,7 +460,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1) {
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue() == 1) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));

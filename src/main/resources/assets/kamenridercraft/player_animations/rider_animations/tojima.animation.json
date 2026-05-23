@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"tojima.pose": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": [-10, 30, 0],
+					"position": [0.69238, -1.96962, -0.80077]
+				},
+				"left_leg": {
+					"rotation": [8.0633, -21.076, -21.5024]
+				},
+				"right_leg": {
+					"rotation": [30.0013, -13.1247, 21.4688],
+					"position": [-0.21131, -0.38219, 0.24348]
+				},
+				"head": {
+					"rotation": [12.9834, -29.81, -4.3314]
+				},
+				"right_arm": {
+					"rotation": [-11.7677, -4.2454, 70.4378],
+					"position": [-1.50093, -1.62373, -0.33274]
+				},
+				"left_arm": {
+					"rotation": [-73.6525, -23.9274, -27.0862]
+				}
+			}
+		}
+	}
+}
