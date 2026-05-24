@@ -1,0 +1,13 @@
+{
+   "parent": "block/orientable",
+   "render_type": "minecraft:translucent",
+    "textures": {
+      "particle": "kamenridercraft:block/another_denliner_windo",
+        "up": "kamenridercraft:block/king_liner_red",
+        "down": "kamenridercraft:block/king_liner_red",
+        "west": "kamenridercraft:block/king_liner_red",
+        "north": "kamenridercraft:block/another_denliner_windo",
+        "south": "kamenridercraft:block/another_denliner_windo",
+        "east": "kamenridercraft:block/king_liner_red"
+    }
+}

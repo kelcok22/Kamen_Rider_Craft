@@ -131,6 +131,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.HIDEN_METAL_BLOCK);
         blockItem(Rider_Blocks.CELL_ALLOY_BLOCK);
         blockItem(Rider_Blocks.SHIFT_ALLOY_BLOCK);
+        blockItem(Rider_Blocks.ANOTHER_DENLINER_SIDE_WITH_LINE);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);

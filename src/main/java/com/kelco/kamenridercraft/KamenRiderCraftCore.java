@@ -444,6 +444,7 @@ public class KamenRiderCraftCore {
 
             event.registerEntityRenderer(MobsCore.KASSHINE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANOTHER_ZI_O.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ANOTHER_DEN_O.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.YAMININ.get(), BasicEntityRenderer::new);
@@ -1515,6 +1516,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(MobsCore.KASSHINE_SPAWN_EGG);
                 event.accept(MobsCore.ANOTHER_ZI_O_SPAWN_EGG);
+                event.accept(MobsCore.ANOTHER_DEN_O_SPAWN_EGG);
                 event.accept(MobsCore.WOZ_SPAWN_EGG);
                 event.accept(MobsCore.GINGA_SPAWN_EGG);
                 event.accept(MobsCore.YAMININ_SPAWN_EGG);

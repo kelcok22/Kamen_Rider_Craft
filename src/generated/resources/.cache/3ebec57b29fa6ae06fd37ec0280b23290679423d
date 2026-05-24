@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-23T01:46:34.4395563	Item Models: kamenridercraft
+// 1.21.1	2026-05-24T20:36:47.1922604	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -677,6 +677,7 @@ c9587a99e2b758e900e1c7da079e801a3efcf4a4 assets/kamenridercraft/models/item/taka
 363e94f1ff42c46977b7df4e6a8008efd507e987 assets/kamenridercraft/models/item/taki_belt.json
 e8caf0b5617f99931cf5f663eba9befeffdd737b assets/kamenridercraft/models/item/taki_vampire_core.json
 b30599c424d7792483cdbf8e9e8b8ab3e58bdf19 assets/kamenridercraft/models/item/takosen_gochizo.json
+8f19b7c9a0c17ca4aefaa8d1470e1d213f486e92 assets/kamenridercraft/models/item/takoyaki.json
 2ac99bf701fd78e182d761ffd869174ad7a91c8c assets/kamenridercraft/models/item/takoyaki_umaibo_gochizo.json
 135885965bef4e15e0ed96ef66ee01a4a8e6044a assets/kamenridercraft/models/item/tamagon_ride_chemy_card.json
 ee8b5b9fc341db2190d84f3069a05b33e9b8daf2 assets/kamenridercraft/models/item/tarakomentaiko_gochizo.json

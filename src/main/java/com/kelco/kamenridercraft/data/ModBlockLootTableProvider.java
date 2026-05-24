@@ -69,6 +69,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         //dropSelf(Rider_Blocks.PLINTH.get());
         //dropSelf(Rider_Blocks.PAVEMENT_ROADLINE.get());
         dropSelf(Rider_Blocks.CAFE_COUNTER.get());
+        dropSelf(Rider_Blocks.ANOTHER_DENLINER_WINDOW.get());
+        dropSelf(Rider_Blocks.ANOTHER_DENLINER_SIDE_WITH_LINE.get());
 
         //add(Rider_Blocks.HELHEIM_DOOR.get(),
         //        block -> createDoorTable(Rider_Blocks.HELHEIM_DOOR.get()));

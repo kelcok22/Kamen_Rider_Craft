@@ -713,6 +713,16 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
 
+
+	public static final DeferredBlock<Block> ANOTHER_DENLINER_WINDOW = registerBlock("another_denliner_windo",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> ANOTHER_DENLINER_SIDE_WITH_LINE = registerBlock("another_denliner_side_with_line",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
+
+
 	public static final DeferredBlock<Block> DORAN_SCALE = registerBlock("doran_scale",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
 					.strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
@@ -863,6 +873,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> GHOST_LINER_WHEEL = registerBlock("ghostliner_wheel",
 			() -> new StairBlock(Rider_Blocks.WALLPLATE.get().defaultBlockState(),
 					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
 
 	public static final DeferredBlock<Block> BLACK_WALLPLATE = registerBlock("black_wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -1214,6 +1225,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> WOZ_BOSS_BLOCK = registerBlock("woz_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WOZ).addLine(Component.translatable("henshin.kamenridercraft.woz")).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> ANOTHER_DEN_O_BOSS_BLOCK = registerBlock("another_den_o_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.ANOTHER_DEN_O).addLine(Component.translatable("henshin.kamenridercraft.another_den_o")).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
     public static final DeferredBlock<Block> YAMININ_BOSS_BLOCK = registerBlock("yaminin_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)

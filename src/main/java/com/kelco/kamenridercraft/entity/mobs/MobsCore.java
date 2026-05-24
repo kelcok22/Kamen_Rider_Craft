@@ -1032,6 +1032,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> ANOTHER_ZI_O_SPAWN_EGG = ITEMS.register("another_zi_o_spawn_egg",
             () -> new DeferredSpawnEggItem(ANOTHER_ZI_O, 0xefeeec, 0xeb3992, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<AnotherDenOEntity>> ANOTHER_DEN_O = MOBLIST.register("another_den_o",
+            () -> EntityType.Builder.of(AnotherDenOEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":another_den_o_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ANOTHER_DEN_O_SPAWN_EGG = ITEMS.register("another_den_o_spawn_egg",
+            () -> new DeferredSpawnEggItem(ANOTHER_DEN_O, 0xefeeec, 0xC40E17, new Item.Properties()));
+
     public static final DeferredItem<DeferredSpawnEggItem> GINGA_SPAWN_EGG = ITEMS.register("ginga_spawn_egg",
             () -> new DeferredSpawnEggItem(GINGA, 0x5e36a3, 0x969696, new Item.Properties()));
 
