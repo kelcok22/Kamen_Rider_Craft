@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)DX Beat Gouram (2000, toyline)$(br2)Used by Kuuga's$(l:kuuga/riders/kuuga#mighty) Mighty$(/l) form"
+			"text": "Appears in:$(li)DX Beat Gouram (2000, toyline)$(br2)Used by Kuuga's$(l:kuuga/riders/kuuga#rising_mighty) Rising Mighty$(/l) form"
 		},
 		{
 			"type": "patchouli:crafting",
