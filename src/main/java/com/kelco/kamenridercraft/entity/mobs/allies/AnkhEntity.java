@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -89,7 +90,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 					return InteractionResult.sidedSuccess(this.level().isClientSide());
 				} else {
 
-					if (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get()) && this.isOwnedBy(player) &&!this.isBaby()) {
+					if (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get()) && this.isOwnedBy(player) &&!this.isBaby() && player.level().getDifficulty() != Difficulty.PEACEFUL) {
 						//player.sendSystemMessage(Component.translatable("TEST NOT FINISHED").withStyle(ChatFormatting.YELLOW));
 
 						BaseHenchmenEntity boss = MobsCore.ANKHCOMPLETE.get().create(this.level());
