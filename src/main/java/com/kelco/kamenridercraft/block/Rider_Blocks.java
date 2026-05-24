@@ -1037,7 +1037,7 @@ public class Rider_Blocks {
 					.strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
 
 	public static final DeferredBlock<DoorBlock> GLASS_DOOR = registerBlock("glass_door",
-			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+				() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
 	public static final DeferredBlock<DoorBlock> GOLD_DOOR = registerBlock("gold_door",
 			() -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
