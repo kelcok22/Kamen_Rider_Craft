@@ -190,9 +190,6 @@ public class Rider_Blocks {
 //	public static final DeferredBlock<AstroswitchRackBlock> ASTROSWITCH_RACK = registerBlock("astroswitch_rack", TODO: Make this work
 //			() -> new AstroswitchRackBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.PLING).strength(2.5F).sound(SoundType.METAL), ModBlockEntities.ASTROSWITCH_RACK_BE::get));
 
-	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
-			() -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
-
 	public static final DeferredBlock<Block> GINGA_METEOR = registerBlock("ginga_meteor",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)
 					.strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
@@ -417,7 +414,7 @@ public class Rider_Blocks {
 			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
 	public static final DeferredBlock<FenceBlock> WHITE_FENCE = registerBlock("white_fence",
-			() -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f)));
+			() -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_FENCE).strength(2f)));
 
 	public static final DeferredBlock<VineBlock> HELHEIM_VINE = registerBlock("helheim_vine",
 			() -> new VineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.VINE)
@@ -1041,6 +1038,9 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<DoorBlock> GOLD_DOOR = registerBlock("gold_door",
 			() -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
+	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
+			() -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
 	public static final DeferredBlock<Block> CORNERSTORE_SIGN = registerBlock("cornerstore_sign",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)

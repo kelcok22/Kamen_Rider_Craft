@@ -1267,7 +1267,6 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.RIDER_BLOCK.size(); i++) {
                     event.accept(CreativeTabRegistry.RIDER_BLOCK.get(i));
                 }
-                event.accept(Rider_Blocks.RABBIT_HUTCH_DOOR);
                 // event.accept(Rider_Blocks.BLUE_ROSE.get());
 
             } else if (event.getTab() == CreativeTabRegistry.RiderdecorTab.get()) {
@@ -1304,6 +1303,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(Rider_Blocks.JAIL_DOOR);
                 event.accept(Rider_Blocks.GOLD_DOOR);
+                event.accept(Rider_Blocks.RABBIT_HUTCH_DOOR);
 
                 event.accept(Rider_Blocks.WINDOW_PLANKS);
                 event.accept(Rider_Blocks.CASTLE_DORAN_LOGO);
