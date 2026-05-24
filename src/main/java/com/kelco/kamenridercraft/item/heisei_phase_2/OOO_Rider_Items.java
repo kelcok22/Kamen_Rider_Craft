@@ -1181,6 +1181,8 @@ public class OOO_Rider_Items {
 
 	public static final DeferredItem<Item> GREEED_ABSORPTION_CORE = ITEMS.register("greeed_absorption_core",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_tora_greeed_absorption","ooo_ancient","ooodriver_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 					.ChangeSlot(2).AddToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 

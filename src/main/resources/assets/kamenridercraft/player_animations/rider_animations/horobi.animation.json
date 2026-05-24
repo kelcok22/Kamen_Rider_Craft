@@ -6,7 +6,7 @@
 			"animation_length": 3,
 			"bones": {
 				"body": {
-					"rotation": [360, -72.5, -360],
+					"rotation": [0, -72.5, 0],
 					"position": [0, -0.5, 0]
 				},
 				"torso": {
