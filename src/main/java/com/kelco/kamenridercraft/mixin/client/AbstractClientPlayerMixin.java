@@ -25,7 +25,7 @@ public class AbstractClientPlayerMixin {
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
         if (rider.horizontalCollision && rider.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
-            PacketDistributor.sendToServer(new ClimbCollisionPayload(0));
+            PacketDistributor.sendToServer(new ClimbCollisionPayload(rider.getStringUUID()));
         }
 
         if (rider instanceof LivingEntity player ) {

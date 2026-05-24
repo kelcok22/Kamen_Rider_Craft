@@ -47,18 +47,12 @@ public class MirrorNoisesEffect extends MobEffect {
                 double d0 = (double) pos.getX() + (randomsource.nextDouble() - randomsource.nextDouble()) * 8 + (double) 0.5F;
                 double d1 = pos.getY() + randomsource.nextInt(3) - 1;
                 double d2 = (double) pos.getZ() + (randomsource.nextDouble() - randomsource.nextDouble()) * 8 + (double) 0.5F;
-                if (slevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(d0, d1, d2))) {
-                    if (d1 > 0) boss.moveTo(d0, d1, d2);
-                    else boss.moveTo(d0, pos.getY(), d2);
-                    boss.finalizeSpawn(slevel, slevel.getCurrentDifficultyAt(pLivingEntity.blockPosition()), MobSpawnType.MOB_SUMMONED, null);
-                    pLivingEntity.level().addFreshEntity(boss);
-                }else {
-                    int i = pLivingEntity.level().getChunkAt(pos).getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, pos .getX(), pos.getZ());
-                    if (d1 > 0) boss.moveTo(d0, i, d2);
+                    int i = pLivingEntity.level().getChunkAt(pos).getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) d0, (int) d2);
+                    if (slevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(d0, d1, d2)))  boss.moveTo(d0, d1, d2);
+                    else if (d1 > 0) boss.moveTo(d0, i, d2);
                     else boss.moveTo(d0, pos.getY(), d2);
                     boss.finalizeSpawn(slevel, slevel.getCurrentDifficultyAt(pLivingEntity.blockPosition()), MobSpawnType.MOB_SUMMONED,null);
                     pLivingEntity.level().addFreshEntity(boss);
-                }
             }
         }
 		return true;

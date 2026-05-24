@@ -121,7 +121,7 @@ public class AttributeRegistry extends Event implements IModBusEvent {
                     "attribute.kamenridercraftcore.climbing",
                     0,
                     0,
-                    1
+                    255
             ).setSyncable(true)
     );
 

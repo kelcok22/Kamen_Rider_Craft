@@ -86,10 +86,12 @@ public class ServerPayloadHandler {
     }
 
     public static void handleClimbing(final ClimbCollisionPayload data, final IPayloadContext context) {
-        Vec3 initialVec = context.player().getDeltaMovement();
-        Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (context.player().getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
-        context.player().setDeltaMovement(climbVec.scale(0.97D));
-        context.player().hurtMarked=true;
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
+            Vec3 initialVec = entity.getDeltaMovement();
+            Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
+            entity.setDeltaMovement(climbVec.scale(0.97D));
+            entity.hurtMarked = true;
+        }
     }
 
     private static void handleCompleteSwing(int hand, Player player) {

@@ -70,7 +70,6 @@ public class BugEffect extends MobEffect {
                         double d2 = (double) pos.getZ() + (randomsource.nextDouble() - randomsource.nextDouble()) * 8 + (double) 0.5F;
 
                         if (slevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(d0, d1, d2))) {
-
                             int Y2 = pLivingEntity.level().getChunkAt(pos).getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, pos.getX(), pos.getZ()) + 1;
                             if (d1 > 0) boss.moveTo(d0, d1, d2);
                             else boss.moveTo(d0, pos.getY(), d2);
