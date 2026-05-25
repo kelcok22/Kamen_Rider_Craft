@@ -445,7 +445,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)GATACK_HYPER_ZECTER.get()).has_basic_model().model_has_different_name("hyper_zecter"));
+            }.IsGlowing().ChangeModel("gatack_hyper.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)GATACK_HYPER_ZECTER.get()).has_basic_model().model_has_different_name("hyper_zecter"));
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
