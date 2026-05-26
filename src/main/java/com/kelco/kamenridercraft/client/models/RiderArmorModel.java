@@ -105,6 +105,7 @@ if (entity instanceof LivingEntity RIDER) {
     GeoBone f_wheel2 = this.getAnimationProcessor().getBone("f_wheel2");
     GeoBone poop_ball_vice = this.getAnimationProcessor().getBone("poop_ball_vice");
     GeoBone cape = this.getAnimationProcessor().getBone("cape");
+    GeoBone cape2 = this.getAnimationProcessor().getBone("cape2");
 
     GeoBone tire = this.getAnimationProcessor().getBone("tire");
     GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
@@ -117,10 +118,11 @@ if (entity instanceof LivingEntity RIDER) {
         bipedHead.setScaleZ((float) RIDER.getAttribute(AttributeRegistry.HEAD_SIZE).getValue());
     }
 
-    if (cape != null & Cape< 0)
-        cape.setRotX(Cape);
-    if (cape != null & ball != 0)
-        cape.setRotY(ball);
+    if (cape != null & Cape< 0) cape.setRotX(Cape);
+    if (cape != null & ball != 0) cape.setRotY(ball);
+
+    if (cape2 != null & Cape< 0) cape2.setRotX(Cape);
+    if (cape2 != null & ball != 0) cape2.setRotY(ball);
 
     if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
         belt.setCustomAnimations(an, instanceId, state);

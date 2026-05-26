@@ -113,13 +113,11 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
 
 
         ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
-     if (p_34297_.getLevel().dimension() == SANDS_OF_TIME) {
+        ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
+        if (p_34297_.getLevel().dimension() == SANDS_OF_TIME) {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.BLADEDRIVER.get()));
             this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GULD_VISOR.get()));
-        }
-
-        ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-        if (p_34297_.getLevel().dimension() == CITY) {
+        }else if (p_34297_.getLevel().dimension() == CITY) {
 
             int bossChoice = this.random.nextInt(2);
             switch (bossChoice) {
@@ -194,13 +192,12 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
         }else {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
         }
         if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
             SetTypeVariant(belt.Rider);
         }
-        if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()) {
-            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
-        }
+
 
         return p_34300_;
     }

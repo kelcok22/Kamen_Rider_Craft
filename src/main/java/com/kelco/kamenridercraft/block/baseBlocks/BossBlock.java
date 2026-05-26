@@ -71,7 +71,7 @@ public class BossBlock extends BaseBlock {
             }
             BaseHenchmenEntity boss = BOSS.get().create(wolrd);
             if (boss != null) {
-                boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
+                boss.moveTo(pos.getX()+0.5, pos.getY(), pos.getZ()+0.5, 0, 0.0F);
                 wolrd.addFreshEntity(boss);
                 if (!TEXT.isEmpty() && wolrd.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
                     for (Component text : TEXT) player.sendSystemMessage(text);
