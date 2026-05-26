@@ -21,13 +21,6 @@ repositories {
         }
     }
     maven {
-        name = 'Sherds API'
-        url = 'https://dl.cloudsmith.io/public/thomasglasser/sherdsapi/maven/'
-        content {
-            includeGroupAndSubgroups("dev.thomasglasser.sherdsapi")
-        }
-    }
-    maven {
         name = "RedlanceMinecraft"
         url = "https://repo.redlance.org/public"
     }

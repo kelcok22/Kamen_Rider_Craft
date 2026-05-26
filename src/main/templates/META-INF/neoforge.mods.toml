@@ -16,7 +16,7 @@ updateJSONURL="https://raw.githubusercontent.com/kelcok22/Kamen_Rider_Craft/refs
 [[mixins]]
 config="kamenridercraft.mixins.json"
 
-[[dependencies.kamenridercraft]] #optional
+[[dependencies.kamenridercraft]]
 modId="neoforge"
 type="required"
 versionRange="[21.1.0,)"
