@@ -81,7 +81,7 @@ public class Kabuto_Rider_Items {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            });
+            }.IsGlowing());
 
     public static final DeferredItem<Item> THEBEE_ZECTER = ITEMS.register("thebee_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(),"","thebee","zect_buckle_thebee_belt",
