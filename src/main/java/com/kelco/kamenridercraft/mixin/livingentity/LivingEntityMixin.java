@@ -31,7 +31,6 @@ public class LivingEntityMixin {
         var rider = ((LivingEntity) (Object) this);
         if (rider.getData(IS_POSING)  && ((LivingEntity) (Object) this).level() instanceof ServerLevel) {
             if (!canPose(rider) || this.oldBlockX != rider.getBlockX() || this.oldBlockZ != rider.getBlockZ()) {
-                System.out.println("CANCELED! The rider is_posing: " + rider.getData(IS_POSING));
                 stopPosing(rider);
             }
         } else if (rider.getData(POSE_COOLDOWN) > 0 && ((LivingEntity) (Object) this).level() instanceof ServerLevel) {

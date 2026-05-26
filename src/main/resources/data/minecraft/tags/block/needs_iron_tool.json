@@ -16,6 +16,15 @@
     "kamenridercraft:wizardgemblock",
     "kamenridercraft:deepslate_wizardgemblock",
     "kamenridercraft:ghost_eyecon_stone",
-    "kamenridercraft:deepslate_ghost_eyecon_stone"
+    "kamenridercraft:deepslate_ghost_eyecon_stone",
+    "kamenridercraft:red_gem_block",
+    "kamenridercraft:blue_gem_block",
+    "kamenridercraft:yellow_gem_block",
+    "kamenridercraft:green_gem_block",
+    "kamenridercraft:cyan_gem_block",
+    "kamenridercraft:black_gem_block",
+    "kamenridercraft:purple_gem_block",
+    "kamenridercraft:orange_gem_block",
+    "kamenridercraft:hiden_metal_block"
   ]
 }
