@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.loot;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
@@ -61,5 +62,10 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/simple_dungeon")).build(),
                 LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 Ryuki_Rider_Items.BLANK_DECK.get()));
+
+        add("mayo",new AddItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("gameplay/fishing")).build(),
+                LootItemRandomChanceCondition.randomChance(0.3f).build()},
+                Modded_item_core.MAYO.get()));
     }
 }

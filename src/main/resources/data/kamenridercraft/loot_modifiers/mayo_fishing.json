@@ -6,7 +6,7 @@
 			"loot_table_id": "minecraft:gameplay/fishing"
 		},{
 			"condition": "minecraft:random_chance",
-			"chance": 0.5
+			"chance": 2
 		}
 	],
 	"item": "kamenridercraft:mayo"

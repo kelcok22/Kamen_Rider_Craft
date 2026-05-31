@@ -44,16 +44,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(Rider_Blocks.CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.YELLOW_CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.LIME_CHECKERED_TILE.get());
-        simpleBlock(Rider_Blocks.GRANUTE_GLASS.get());
         simpleBlock(Rider_Blocks.DORAN_SCALE.get());
-        simpleBlock(Rider_Blocks.RED_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.BLUE_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.GREEN_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.YELLOW_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.CYAN_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.BLACK_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.ORANGE_GEM_BLOCK.get());
-        simpleBlock(Rider_Blocks.PURPLE_GEM_BLOCK.get());
         simpleBlock(Rider_Blocks.CELL_ALLOY_BLOCK.get());
         simpleBlock(Rider_Blocks.SHIFT_ALLOY_BLOCK.get());
 
@@ -86,8 +77,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         buttonBlock(Rider_Blocks.HELHEIM_BUTTON.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         pressurePlateBlock(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
-
-        paneBlock(Rider_Blocks.GRANUTE_GLASS_PANE.get(), blockTexture(Rider_Blocks.GRANUTE_GLASS.get()), blockTexture(Rider_Blocks.WALLPLATE.get()));
 
         fenceBlock(Rider_Blocks.HELHEIM_FENCE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         fenceGateBlock(Rider_Blocks.HELHEIM_FENCE_GATE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
