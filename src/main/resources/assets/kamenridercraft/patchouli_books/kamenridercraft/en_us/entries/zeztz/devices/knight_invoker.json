@@ -6,11 +6,24 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "knight_invoker",
 			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/nox_knight)Nox Knight"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:zeztz/knight_invoker"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knight_invoker_seventeen",
+			"title": "Knight Invoker (Knight Seventeen)",
+			"text": "Appears in:$(li)Kamen Rider Zeztz: Series of Sister's Substory Agent Minami (2025, web series)$(br2)Equipped alongside the $(l:zeztz/devices/armor)Zeztz armor$(/l) to transform into $(l:zeztz/riders/knight_seventeen)Knight Seventeen"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/knight_invoker_seventeen"
 		}
 	]
 }

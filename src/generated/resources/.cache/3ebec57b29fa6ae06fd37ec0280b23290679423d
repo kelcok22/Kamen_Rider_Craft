@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-24T20:36:47.1922604	Item Models: kamenridercraft
+// 1.21.1	2026-06-01T23:26:40.8103795	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -420,6 +420,7 @@ d63a709327579cc50f4cd01ff2a3ddbd75c12482 assets/kamenridercraft/models/item/kiva
 81b8e9695d5b96531ef5a33b87826bd11ff1dcd5 assets/kamenridercraft/models/item/kiva_ride_chemy_card.json
 ec097597f19034fda2cf26973944fdba5484a9fd assets/kamenridercraft/models/item/kiva_ring.json
 d11bb12c9b55037c062f4db2617ea2f8095571b3 assets/kamenridercraft/models/item/knight_invoker.json
+81f9d2a6fa8bc710f114639c181c6561659b8886 assets/kamenridercraft/models/item/knight_invoker_seventeen.json
 19346465fd8c8e36b2ecdc9773e044a17a1d0afe assets/kamenridercraft/models/item/koalamarch_gochizo.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_kenzan.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_slash.json
@@ -477,6 +478,7 @@ fe2633c3aca22effa19dc2b35d3200aeae7a1d12 assets/kamenridercraft/models/item/merr
 33b5e6c5f1bf045f9aaacae2f02c2b335debe8f4 assets/kamenridercraft/models/item/metal_machwheel_ride_chemy_card.json
 f870d2082c182829ec7a660eee24f7e6b4771f17 assets/kamenridercraft/models/item/metamateriam_belt.json
 1ea1a832d57d7a1844fa965430015e8c057ed3e1 assets/kamenridercraft/models/item/meteor_bullet_vent.json
+8569db304abb58e1ed18d1f4b36d567b2d34646b assets/kamenridercraft/models/item/midnight_shadow_capsem.json
 61f64ad4b25fbab114c6ccfbbc37172050ff5dfc assets/kamenridercraft/models/item/milktirol_gochizo.json
 559c16ab7c8226862aeb63ffc33f08fbe67fa3ee assets/kamenridercraft/models/item/mitaramotti_gochizo.json
 451a8e1447b65cba95c8f988bc34af31a8c08735 assets/kamenridercraft/models/item/mitemirror_ride_chemy_card.json

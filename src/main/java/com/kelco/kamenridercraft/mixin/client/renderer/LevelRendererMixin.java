@@ -19,7 +19,7 @@ public class LevelRendererMixin {
     @Shadow
     private ClientLevel level;
 
-    @WrapOperation(method = "renderSky", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V"))
+    @WrapOperation(method = "renderSky", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V", ordinal = 1))
     public void renderEarth(int shaderTexture, ResourceLocation textureId, Operation<Void> original) {
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
         if (this.level.dimension() == MOON) {

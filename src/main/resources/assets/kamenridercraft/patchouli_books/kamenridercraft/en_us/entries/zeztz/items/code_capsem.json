@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used as the base item and repair material for most Zeztz items"
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used as the base item and repair material for most Zeztz items$(br2)Used to craft Knight Seventeen's $(l:zeztz/devices/knight_invoker#knight_invoker_seventeen)Knight Invoker$(/l)"
 		},
         {
           "type": "patchouli:crafting",

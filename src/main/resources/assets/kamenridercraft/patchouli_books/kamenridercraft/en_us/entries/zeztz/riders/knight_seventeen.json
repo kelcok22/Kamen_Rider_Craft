@@ -1,0 +1,21 @@
+{
+	"name": "Knight Seventeen",
+	"icon": "kamenridercraft:code_capsem",
+	"category": "kamenridercraft:zeztz/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:knight_invoker_seventeen\",Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Knight Seventeen",
+			"text": "Appears in:$(li)Kamen Rider Zeztz: Series of Sister's Substory Agent Minami (2025, web series)$(br2)Transforms with the $(l:zeztz/devices/knight_invoker#knight_invoker_seventeen)Knight Invoker$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)"
+		}
+	]
+}
