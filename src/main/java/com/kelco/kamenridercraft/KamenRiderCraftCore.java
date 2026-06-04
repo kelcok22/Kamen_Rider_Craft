@@ -29,6 +29,7 @@ import com.kelco.kamenridercraft.item.reboots.ShinIchigoRiderItems;
 import com.kelco.kamenridercraft.item.reboots.TheSeriesRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.*;
 import com.kelco.kamenridercraft.item.showa.*;
+import com.kelco.kamenridercraft.level.AddStructuresToPools;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
@@ -191,7 +192,8 @@ public class KamenRiderCraftCore {
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public void onServerStarting(ServerStartingEvent event) throws NoSuchFieldException {
+        AddStructuresToPools.addModStructures(event.getServer());
         NeoForge.EVENT_BUS.register(new ModServerEvents.ServerEvents());
     }
 
