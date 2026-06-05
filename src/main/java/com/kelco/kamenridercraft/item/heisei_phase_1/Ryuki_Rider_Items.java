@@ -156,7 +156,7 @@ public class Ryuki_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.addSwitchForm(GOLDPHOENIX_ADVENT_SIC.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			}.isGold().addSwitchForm(GOLDPHOENIX_ADVENT_SIC.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DESTWILDER_ADVENT = ITEMS.register("destwilder_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","tiger","v_buckle_belt_tiger",

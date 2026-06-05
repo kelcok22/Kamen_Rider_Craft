@@ -66,6 +66,8 @@ public class RiderFormChangeItem extends BaseItem {
     private Boolean RESET_FORM = false;
     private Boolean RESET_FORM_MAIN = false;
 
+    private Boolean isGold = false;
+
     private Boolean SET_TO_ARMOR_FORM = false;
 
     private List<RiderFormChangeItem> alternative = new ArrayList<>();
@@ -264,6 +266,11 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem isGold() {
+        isGold = true;
+        return this;
+    }
+
     public RiderFormChangeItem setAbilityOne(String abilityChange) {
         primaryAbility = abilityChange.toLowerCase();
         return this;
@@ -444,6 +451,10 @@ public class RiderFormChangeItem extends BaseItem {
         }
         ItemStack itemstack=new ItemStack(belt);
         return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" +RIDER_NAME+FORM_NAME)));
+    }
+
+    public Boolean checkGold() {
+        return this.isGold;
     }
 
     public boolean inventoryOrHolderContains(Player player, Item item) {

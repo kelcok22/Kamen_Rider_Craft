@@ -471,6 +471,26 @@ public class RiderDriverItem extends RiderArmorItem {
 
     }
 
+    @Override
+    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity rider) {
+        if (!isTransformed(rider)) {
+            return false;
+        }
+        boolean isGold = false;
+        if (Num_Base_Form_Item != 1) {
+            for (int n = 0; n < Num_Base_Form_Item - 1; n++) {
+                System.out.println(n);
+                if (get_Form_Item(stack, n).checkGold()) {
+                    isGold = true;
+                }
+            }
+        }
+        if (get_Form_Item(stack, 1).checkGold()) {
+            return true;
+        }
+        return isGold;
+    }
+
 
     public static void reset_Form_Item(ItemStack itemstack) {
 
