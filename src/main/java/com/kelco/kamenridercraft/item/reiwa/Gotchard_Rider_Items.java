@@ -1666,11 +1666,11 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().ResetFormToBase().AddToList(ChemyRiserItem.Legend_CHEMY,10).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
+			}.IsGlowing().isGold().ResetFormToBase().AddToList(ChemyRiserItem.Legend_CHEMY,10).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LEGENDARY_LEGEND = ITEMS.register("legendary_legend",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_legendary","legend","legendriver_belt_l")
-					.IsGlowing().ChangeSlot(2).has_basic_model().model_has_different_name("legendary_legend_ride_chemy_card"));
+					.IsGlowing().isGold().ChangeSlot(2).has_basic_model().model_has_different_name("legendary_legend_ride_chemy_card"));
 
 	public static final DeferredItem<Item> LEGENDARY_LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legendary_legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_legendary","legend","legendriver_belt_l",
@@ -1692,7 +1692,7 @@ public class Gotchard_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsGlowing().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+			}.IsGlowing().isGold().alsoChange2ndSlot(LEGENDARY_LEGEND.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> DARK_ETHER_CHEMY_CARD = ITEMS.register("dark_ether_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","dorado","eldoradriver_belt",
