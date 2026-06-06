@@ -19,6 +19,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class RiotrooperEntity extends BaseHenchmenEntity{
 	
 	private BaseHenchmenEntity boss;
@@ -57,7 +59,7 @@ public class RiotrooperEntity extends BaseHenchmenEntity{
 				serverlevel.sendParticles(sand, this.getX(), this.getY(), this.getZ(), 30, 0, 0, 0, 0.05);
 				serverlevel.sendParticles(sand, this.getX(), this.getY()+1, this.getZ(), 30, 0, 0, 0, 0.05);
 			}
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:

@@ -18,6 +18,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.Random;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class BugsterVirusEntity extends BaseHenchmenEntity {
 	
 	private BaseHenchmenEntity boss;
@@ -33,7 +35,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
 	public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()&!(this instanceof NebulaBugsterVirusEntity)) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:

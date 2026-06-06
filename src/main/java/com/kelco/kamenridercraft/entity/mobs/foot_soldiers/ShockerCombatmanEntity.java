@@ -14,6 +14,8 @@ import net.minecraft.world.level.Level;
 
 import java.time.LocalDate;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class ShockerCombatmanEntity extends BaseHenchmenEntity {
 
 
@@ -39,7 +41,7 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
                     this.getX() + 0, this.getY(),
                     this.getZ() + 0, 100, 0, 0, 0, 0.1);
 
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 				BaseHenchmenEntity boss = MobsCore.SHOCKER_RIDER.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

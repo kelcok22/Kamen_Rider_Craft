@@ -3,7 +3,10 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class GolemEntity extends BaseHenchmenEntity {
 
@@ -18,7 +21,7 @@ public class GolemEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
                 int bossChoice = this.random.nextInt(3);
                 switch (bossChoice) {
                     case 0:

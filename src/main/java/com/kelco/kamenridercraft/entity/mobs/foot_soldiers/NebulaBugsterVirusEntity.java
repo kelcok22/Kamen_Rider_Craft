@@ -14,6 +14,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
 
 	private BaseHenchmenEntity boss;
@@ -34,7 +36,7 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
                     num=100-((playerIn.getEffect(EffectCore.HAZARD_LEVEL).getAmplifier()+1)*10);
                 }
             }
-            if (this.random.nextDouble() * num  <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+            if (this.random.nextDouble() * num  <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 				ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 				int bossChoice = 0;
 				if (this.level().dimension() == MOON)bossChoice=1;

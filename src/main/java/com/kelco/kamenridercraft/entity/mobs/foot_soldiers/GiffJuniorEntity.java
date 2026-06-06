@@ -15,6 +15,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class GiffJuniorEntity extends BaseHenchmenEntity {
 	
 	private BaseHenchmenEntity boss;
@@ -30,7 +32,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
 					case 0:

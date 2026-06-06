@@ -9,6 +9,8 @@ import net.minecraft.world.level.Level;
 
 import java.time.LocalDate;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class GODWarfareAgentEntity extends BaseHenchmenEntity {
 	
     public GODWarfareAgentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -17,7 +19,7 @@ public class GODWarfareAgentEntity extends BaseHenchmenEntity {
     }
     public void remove(RemovalReason reason) {
         if (reason == RemovalReason.KILLED) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
                 BaseHenchmenEntity boss = MobsCore.APOLLOGIST.get().create(this.level());
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

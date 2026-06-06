@@ -13,6 +13,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class BattaAugmentEntity extends BaseHenchmenEntity {
 
     public BattaAugmentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -28,7 +30,7 @@ public class BattaAugmentEntity extends BaseHenchmenEntity {
  public void remove(RemovalReason p_149847_) {
 
      if ( this.isDeadOrDying()) {
-         if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+         if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 
              BaseHenchmenEntity boss = MobsCore.SHIN_NO_0.get().create(this.level());
              if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {

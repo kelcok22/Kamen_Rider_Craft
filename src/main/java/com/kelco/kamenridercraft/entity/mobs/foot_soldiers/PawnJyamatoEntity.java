@@ -16,6 +16,8 @@ import net.minecraft.world.level.Level;
 
 import java.time.LocalDate;
 
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+
 public class PawnJyamatoEntity extends BaseHenchmenEntity {
 
 	public PawnJyamatoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -33,7 +35,7 @@ public class PawnJyamatoEntity extends BaseHenchmenEntity {
 	public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE)) {
+			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
 				BaseHenchmenEntity boss = MobsCore.JYAMATO_RIDER.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
