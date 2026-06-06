@@ -573,7 +573,10 @@ public class Kabuto_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> MACHINEGUN_BLADE = ITEMS.register("machinegun_blade",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -3F, new Item.Properties()).IsSwordGun().AddToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -3F, new Item.Properties()).IsSwordGun().AddToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM)
+                    .ChangeRepairItem(MINI_ZECTER.get()));
+    public static final DeferredItem<Item> POWER_ARM_UNIT = ITEMS.register("power_arm_unit",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -3F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM)
                     .ChangeRepairItem(MINI_ZECTER.get()));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

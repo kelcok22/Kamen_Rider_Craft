@@ -3152,6 +3152,7 @@
 "item.kamenridercraft.gatack_double_calibur_minus": "Gatack Double Calibur Minus",
 "item.kamenridercraft.gatack_double_calibur_twin": "Gatack Double Calibur",
 "item.kamenridercraft.machinegun_blade": "Machinegun Blade",
+"item.kamenridercraft.power_arm_unit": "Power Arm Unit",
 "item.kamenridercraft.zect_kunai": "ZECT Kunaigun",
 "item.kamenridercraft.zect_kunai_kunai": "ZECT Kunaigun (Kunai Mode)",
 
@@ -4879,6 +4880,8 @@
 "kamenridercraft.name.proto_gridon": "Rider: Kamen Rider Proto Gridon",
 "item.kamenridercraft.sengoku_driver_proto_bravo": "Sengoku Driver",
 "kamenridercraft.name.proto_bravo": "Rider: Kamen Rider Proto Bravo",
+"item.kamenridercraft.sengoku_driver_incomplete": "Incomplete Sengoku Driver",
+"kamenridercraft.name.incomplete_gaim": "",
 
 "item.kamenridercraft.genesis_driver_zangetsu_shin": "Genesis Driver",
 "kamenridercraft.name.zangetsu_shin": "Rider: Kamen Rider Zangetsu Shin",

@@ -292,6 +292,17 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:gaim/sengoku_driver_proto_bravo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_incomplete",
+			"title": "Incomplete Sengoku Driver",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_incomplete"
 		}
 	]
 }

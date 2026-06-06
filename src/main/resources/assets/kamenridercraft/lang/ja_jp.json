@@ -3147,6 +3147,7 @@
 "item.kamenridercraft.gatack_double_calibur_minus": "ガタックダブルカリバーマイナス",
 "item.kamenridercraft.gatack_double_calibur_twin": "ガタックダブルカリバー",
 "item.kamenridercraft.machinegun_blade": "マシンガンブレード",
+"item.kamenridercraft.power_arm_unit": "パワーアームユニット",
 "item.kamenridercraft.zect_kunai": "ZECTクナイガン ガンモード",
 "item.kamenridercraft.zect_kunai_kunai": "ZECTクナイガン クナイモード",
 
@@ -4871,8 +4872,11 @@
 "kamenridercraft.name.proto_gridon": "ライダー: アーマードライダープロトグリドン",
 "item.kamenridercraft.sengoku_driver_proto_bravo": "戦極ドライバー",
 "kamenridercraft.name.proto_bravo": "ライダー: アーマードライダープロトブラーボ",
+"item.kamenridercraft.sengoku_driver_incomplete": "未完成戦極ドライバー",
+"kamenridercraft.name.incomplete_gaim": "",
 
-"item.kamenridercraft.genesis_driver_zangetsu_shin": "ゲネシスドライバー",
+
+  "item.kamenridercraft.genesis_driver_zangetsu_shin": "ゲネシスドライバー",
 "kamenridercraft.name.zangetsu_shin": "ライダー: アーマードライダー斬月・真",
 "item.kamenridercraft.genesis_driver_duke": "ゲネシスドライバー",
 "kamenridercraft.name.duke": "ライダー: アーマードライダーデューク",
