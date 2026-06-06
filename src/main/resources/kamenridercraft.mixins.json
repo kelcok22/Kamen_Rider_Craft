@@ -13,7 +13,7 @@
   ],
   "client": [
     "client.renderer.LevelRendererMixin",
-    "client.AbstractClientPlayerMixin"
+    "client.LocalPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
