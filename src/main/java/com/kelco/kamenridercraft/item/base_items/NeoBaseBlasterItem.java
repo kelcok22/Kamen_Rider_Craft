@@ -5,14 +5,12 @@ import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.projectiles.BaseProjectileEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.Unit;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
@@ -26,10 +24,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.POSE_COOLDOWN;
-
 public class NeoBaseBlasterItem extends BaseItem {
-    private String firingType;
+    private boolean singleFire;
     private float projDamage;
     private int explosionPower = 0;
     private int accuracyMod = 0;
@@ -42,7 +38,7 @@ public class NeoBaseBlasterItem extends BaseItem {
     private int meterCost = 0;
     private boolean requireFullDraw = false;
 
-    private String projectile = "spectral_arrow";
+    private String projectile = "arrow";
     private String model = "";
     private String texture = "";
     private String chargingEffect = "";
@@ -57,16 +53,16 @@ public class NeoBaseBlasterItem extends BaseItem {
     private Item FormChangeItem = null;
     private Item HenshinBeltItem = null;
 
-    public NeoBaseBlasterItem(Properties prop, float Atk, float Spd, String fireType, Float projectileDamage, int fireRate, int totalAmmo, int reloadLength, int actionCost) {
+    public NeoBaseBlasterItem(Properties prop, float Atk, float Spd, boolean isSingleFire, Float projectileDamage, int fireRate, int totalAmmo, int reloadLength, int actionCost) {
         super(prop.durability(1000).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
-        this.firingType = fireType.toLowerCase();
+        this.singleFire = isSingleFire;
         this.projDamage = projectileDamage;
         this.firingRate = fireRate;
         this.maxAmmo = totalAmmo;
         tag.putInt("ammo", totalAmmo);
         this.reloadTime = reloadLength;
         this.meterCost = actionCost;
-        if (fireType.equals("burst") || fireType.equals("auto")) {
+        if (!singleFire) {
             this.accuracyMod = 2;
         }
     }
@@ -168,6 +164,14 @@ public class NeoBaseBlasterItem extends BaseItem {
                     break;
             }
             serverLevel.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (user.level().getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+            if (user instanceof Player player) {
+                ItemStack stack = player.getItemInHand(InteractionHand.MAIN_HAND);
+                stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+                player.awardStat(Stats.ITEM_USED.get(this));
+                this.tickCount = 0;
+                tag.putInt("ammo", tag.getInt("ammo") - 1);
+                this.tickCount = 0;
+            }
         }
     }
 
@@ -175,8 +179,6 @@ public class NeoBaseBlasterItem extends BaseItem {
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeLeft) {
         if (livingEntity instanceof Player player && level instanceof ServerLevel serverlevel) {
             if (!requireFullDraw && tag.getInt("ammo") > 0 || this.drawTick >= this.drawTime && tag.getInt("ammo") > 0) {
-                tag.putInt("ammo", tag.getInt("ammo") - 1);
-
                 if (HenshinBeltItem != null && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
                     player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
                     if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem formItem)
@@ -187,12 +189,9 @@ public class NeoBaseBlasterItem extends BaseItem {
                 }
 
                 fire(livingEntity, livingEntity.getDeltaMovement());
-                stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
-                player.awardStat(Stats.ITEM_USED.get(this));
-
                 if (tag.getInt("ammo") == 0) {
                     player.getCooldowns().addCooldown(this, this.reloadTime);
-                    if (this.firingType.equals("burst") || this.firingType.equals("auto")) {
+                    if (!this.singleFire) {
                         serverlevel.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.CHAIN_BREAK, SoundSource.PLAYERS, 3.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
                     }
                 } else {
@@ -229,20 +228,14 @@ public class NeoBaseBlasterItem extends BaseItem {
                 }
             }
             if (!requireFullDraw || this.drawTick >= this.drawTime) {
-                if (livingEntity instanceof Player player) {
-                    player.awardStat(Stats.ITEM_USED.get(this));
-                }
-                if (this.firingType.equals("burst") || this.firingType.equals("auto")) {
-                    if (tag.getInt("ammo") > 1) {
-                        if (this.tickCount >= this.firingRate) {
+                if (!this.singleFire) {
+                    if (tag.getInt("ammo") > 0) {
+                        if (this.tickCount >= this.firingRate && tag.getInt("ammo") > 1) {
                             fire(livingEntity, livingEntity.getDeltaMovement());
-                            tag.putInt("ammo", tag.getInt("ammo") - 1);
-                            this.tickCount = 0;
-                        } else {
-                            this.tickCount += 1;
+                        } else if (this.tickCount >= this.firingRate) {
+                            livingEntity.releaseUsingItem();
                         }
-                    } else {
-                        livingEntity.releaseUsingItem();
+                        this.tickCount += 1;
                     }
                 }
             }
