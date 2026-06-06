@@ -4,7 +4,6 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "block.GochizoCakeBlock",
-    "client.AbstractClientPlayerMixin",
     "compat.JMCGochizoCakeBlock",
     "livingentity.LivingEntityMixin",
     "structure.JigsawExpansion",
@@ -13,7 +12,8 @@
     "structure.packet.ClientUpdateStructureBlockExpansion"
   ],
   "client": [
-    "client.renderer.LevelRendererMixin"
+    "client.renderer.LevelRendererMixin",
+    "client.AbstractClientPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

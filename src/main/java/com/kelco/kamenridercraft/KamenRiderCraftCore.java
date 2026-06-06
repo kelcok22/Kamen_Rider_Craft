@@ -232,7 +232,7 @@ public class KamenRiderCraftCore {
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 
-        float sizeX= (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_X).getValue();
+        float sizeX = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_X).getValue();
         float sizeY = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_Y).getValue();
         float sizeZ = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_Z).getValue();
         event.getPoseStack().scale(sizeX, sizeY, sizeZ);

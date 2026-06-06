@@ -1769,6 +1769,9 @@ public class MobsCore {
             MOBLIST.register("rocket_projectile",() -> EntityType.Builder.<RocketProjectileEntity>of(RocketProjectileEntity::new, MobCategory.MISC)
                     .sized(0.2F, 0.2F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":rocket_projectile"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BaseProjectileEntity>> BASE_PROJECTILE =
+            MOBLIST.register("base_projectile",() -> EntityType.Builder.<BaseProjectileEntity>of(BaseProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.2F, 0.2F).noSave().noSummon().clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":base_projectile"));
 
 
     public static void register(IEventBus eventBus) {
