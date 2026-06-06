@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.entity.projectiles.BaseProjectileEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -39,9 +40,11 @@ public class NeoBaseBlasterItem extends BaseItem {
     private boolean requireFullDraw = false;
 
     private String projectile = "arrow";
+    private String[] effects;
     private String model = "";
     private String texture = "";
     private String chargingEffect = "";
+    private String firingParticle = "";
     private String useAnimation = "vanilla";
     private String holdAnimation = "";
 
@@ -69,6 +72,10 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     public void fire(LivingEntity user, Vec3 vec3) {
         if (user.level() instanceof ServerLevel serverLevel) {
+            switch (firingParticle) {
+                case "smoke":
+                    serverLevel.sendParticles(ParticleTypes.WHITE_SMOKE, user.getX() + user.getLookAngle().x * 0.5, user.getEyeY(), user.getZ() + user.getLookAngle().z * 0.5, 10, 0, 0, 0, 0.05);
+            }
             switch (projectile) {
                 case "arrow", "spectral_arrow":
                     ItemStack arrow;
@@ -140,7 +147,7 @@ public class NeoBaseBlasterItem extends BaseItem {
                     break;
 
                 case "rocket", "cell_medal", "laser", "effect_ball", "laser_beam":
-                    BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, model, texture, projDamage, explosionPower);
+                    BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, model, texture, projDamage, explosionPower, effects);
                     baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + this.accuracyMod);
                     user.level().addFreshEntity(baseProjectile);
                     break;
@@ -178,6 +185,10 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeLeft) {
         if (livingEntity instanceof Player player && level instanceof ServerLevel serverlevel) {
+            if (requireFullDraw && this.drawTick < this.drawTime) {
+                this.drawTick = 0;
+                return;
+            }
             if (!requireFullDraw && tag.getInt("ammo") > 0 || this.drawTick >= this.drawTime && tag.getInt("ammo") > 0) {
                 if (HenshinBeltItem != null && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
                     player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
@@ -220,12 +231,16 @@ public class NeoBaseBlasterItem extends BaseItem {
     @Override
     public void onUseTick(Level level, LivingEntity livingEntity, ItemStack stack, int remainingUseDuration) {
         super.onUseTick(level, livingEntity, stack, remainingUseDuration);
-        if (!livingEntity.level().isClientSide && this.gunMode) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && this.gunMode) {
             if (this.drawTick < this.drawTime) {
                 this.drawTick += 1;
                 if (this.drawTick == this.drawTime && livingEntity instanceof Player player) {
                     player.displayClientMessage(Component.translatable("message.kamenridercraft.weapon"), true);
                 }
+            }
+            switch (chargingEffect) {
+                case "warped":
+                    serverLevel.sendParticles(ParticleTypes.WARPED_SPORE, livingEntity.getX() + livingEntity.getLookAngle().x * 0.5, livingEntity.getEyeY(), livingEntity.getZ() + livingEntity.getLookAngle().z * 0.5, 1, 0, 0, 0, 0.05);
             }
             if (!requireFullDraw || this.drawTick >= this.drawTime) {
                 if (!this.singleFire) {
@@ -267,7 +282,7 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     @Override
     public UseAnim getUseAnimation(ItemStack stack) {
-        if (useAnimation.equals("vanilla")) {
+        if (useAnimation.equals("vanilla") || useAnimation.isEmpty()) {
             return UseAnim.BOW;
         } else return UseAnim.NONE;
     }
@@ -292,6 +307,32 @@ public class NeoBaseBlasterItem extends BaseItem {
         return this;
     }
 
+    public NeoBaseBlasterItem setProjectile(String projectileName) {
+        this.projectile = projectileName.toLowerCase();
+        return this;
+    }
+
+    public NeoBaseBlasterItem setModelAndTexture(String textureName, String modelName) {
+        this.texture = textureName.toLowerCase();
+        this.model = modelName.toLowerCase();
+        return this;
+    }
+
+    public NeoBaseBlasterItem setExplosivePower(int power) {
+        this.explosionPower = power;
+        return this;
+    }
+
+    public NeoBaseBlasterItem setEffects(String[] effects) {
+        this.effects = effects;
+        return this;
+    }
+
+    public NeoBaseBlasterItem setMeterCost(int cost) {
+        this.meterCost = cost;
+        return this;
+    }
+
     public NeoBaseBlasterItem setRequiresDraw(int drawingTime, boolean needFullDraw) {
         this.requireFullDraw = needFullDraw;
         this.drawTime = drawingTime;
@@ -310,6 +351,12 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     public NeoBaseBlasterItem setUseAnimation(String anim) {
         this.useAnimation = anim.toLowerCase();
+        return this;
+    }
+
+    public NeoBaseBlasterItem setParticles(String chargeEffect, String firingParticle) {
+        this.chargingEffect = chargeEffect.toLowerCase();
+        this.firingParticle = firingParticle.toLowerCase();
         return this;
     }
 

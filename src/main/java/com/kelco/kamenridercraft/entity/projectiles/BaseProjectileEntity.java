@@ -18,12 +18,13 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     private String texture;
     private float damage;
     private int explosionPower;
+    private String[] effects;
 
     public BaseProjectileEntity(EntityType<? extends BaseProjectileEntity> entityType, Level level) {
         super(entityType, level);
     }
 
-    public BaseProjectileEntity(Level level, LivingEntity shooter, String projectileName, String modelName, String textureName, float projDamage, int explosionStrength) {
+    public BaseProjectileEntity(Level level, LivingEntity shooter, String projectileName, String modelName, String textureName, float projDamage, int explosionStrength, String[] projectileEffects) {
         super(MobsCore.BASE_PROJECTILE.get(), level);
         this.setOwner(shooter);
         this.projectile = projectileName.toLowerCase();
@@ -31,6 +32,7 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
         this.texture = textureName.toLowerCase();
         this.damage = projDamage;
         this.explosionPower = explosionStrength;
+        this.effects = projectileEffects;
     }
 
 

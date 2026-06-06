@@ -23,7 +23,7 @@ public class ModGameRules {
                 "gordDriveWeaponYoink", GameRules.Category.MOBS, GameRules.BooleanValue.create(false));
 
         RULE_BOSS_SPAWN_PERCENTAGE = GameRules.register(
-                "bossSpawnPercentage", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(10));
+                "bossSpawnPercentage", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(20));
 
         RULE_BOSS_HENSHIN_ANNOUCEMENTS = GameRules.register(
                 "bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true));
