@@ -21,14 +21,14 @@ import javax.annotation.Nullable;
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class RideplayerEntity extends BaseHenchmenEntity {
-	
-	private BaseHenchmenEntity boss;
-	
+
+    private BaseHenchmenEntity boss;
+
     public RideplayerEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="rideplayer";
-        BOW_COOLDOWN=50;
-        HARD_BOW_COOLDOWN=30;
+        NAME = "rideplayer";
+        BOW_COOLDOWN = 50;
+        HARD_BOW_COOLDOWN = 30;
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()));
@@ -36,75 +36,78 @@ public class RideplayerEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.RIDE_WEAPON.get()));
         this.setMeleeOnSpawn(75.0D);
     }
-    
-	public void remove(Entity.RemovalReason p_149847_) {
 
-		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
-				int bossChoice = this.random.nextInt(2);
-				switch (bossChoice) {
-			   	case 0:
-                  boss = MobsCore.PARADX.get().create(this.level());
-                  if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-                     playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_1"));
-                  }
-			   		break;
-			   	case 1:
-			   	   boss = MobsCore.POPPY_RED.get().create(this.level());
-			   	   if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-			   	   	playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
-			   	   }
-			   		break;
-			   	default:
-			   }
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-				}
-			}
-		}
-		super.remove(p_149847_);
-	}
+    public void remove(Entity.RemovalReason p_149847_) {
+
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                int bossChoice = this.random.nextInt(2);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.PARADX.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_1"));
+                        }
+                        break;
+                    case 1:
+                        boss = MobsCore.POPPY_RED.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
+                        }
+                        break;
+                    default:
+                }
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                }
+            }
+        }
+        super.remove(p_149847_);
+    }
 
     public static AttributeSupplier.Builder setAttributes() {
-    
-    	//.add(ForgeMod.ATTACK_RANGE.get(),2)
-        return Monster.createMonsterAttributes()
-        		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
-        		.add(Attributes.ATTACK_DAMAGE, 4.0D)
-        		.add(Attributes.MAX_HEALTH, 30.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
-     }
 
-     protected void populateDefaultEquipmentSlots(RandomSource p_219165_, DifficultyInstance p_219166_) {
+        //.add(ForgeMod.ATTACK_RANGE.get(),2)
+        return Monster.createMonsterAttributes()
+                .add(Attributes.FOLLOW_RANGE, 35.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.23F)
+                .add(Attributes.ATTACK_DAMAGE, 4.0D)
+                .add(Attributes.MAX_HEALTH, 30.0D)
+                .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+    }
+
+    protected void populateDefaultEquipmentSlots(RandomSource p_219165_, DifficultyInstance p_219166_) {
         if (p_219165_.nextFloat() < (this.level().getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
-           switch (p_219165_.nextInt(8)) {
-              case 0:
-                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_BREAKER.get()));
-                 break;
-              case 1:
-                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_SWORD.get()));
-                 break;
-              case 2:
-                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_MAGNUM.get()));
-                 break;
-              case 3:
-                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_SPARROW_ARROW.get()));
-                 break;
-              case 4:
-                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
-                 break;
-           }
+            switch (p_219165_.nextInt(8)) {
+                case 0:
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_BREAKER.get()));
+                    break;
+                case 1:
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_SWORD.get()));
+                    break;
+                case 2:
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_MAGNUM.get()));
+                    break;
+                case 3:
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_SPARROW_ARROW.get()));
+                    break;
+                case 4:
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
+                    break;
+            }
         }
-  
-     }
-   
-   @Nullable
-   public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34297_, DifficultyInstance p_34298_, MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_) {
-      RandomSource randomsource = p_34297_.getRandom();
-      p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
-      this.populateDefaultEquipmentSlots(randomsource, p_34298_);
-      return p_34300_;
-   }
+
+    }
+
+    @Nullable
+    public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34297_, DifficultyInstance p_34298_, MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_) {
+        RandomSource randomsource = p_34297_.getRandom();
+        p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
+        this.populateDefaultEquipmentSlots(randomsource, p_34298_);
+        return p_34300_;
+    }
 }

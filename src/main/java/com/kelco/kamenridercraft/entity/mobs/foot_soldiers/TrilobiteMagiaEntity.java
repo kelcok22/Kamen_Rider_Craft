@@ -27,7 +27,10 @@ public class TrilobiteMagiaEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
         if (this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 int bossChoice = this.random.nextInt(3);
                 switch (bossChoice) {
                     case 0:

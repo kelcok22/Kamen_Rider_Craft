@@ -24,13 +24,12 @@ import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 public class MalgamEntity extends BaseHenchmenEntity {
 
     private static final EntityDataAccessor<Integer> VARIANT =
-        SynchedEntityData.defineId(MalgamEntity.class, EntityDataSerializers.INT);
+            SynchedEntityData.defineId(MalgamEntity.class, EntityDataSerializers.INT);
 
     public MalgamEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="malgam";
+        NAME = "malgam";
     }
-
 
 
     //variants below
@@ -38,7 +37,7 @@ public class MalgamEntity extends BaseHenchmenEntity {
     @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(VARIANT,0);
+        builder.define(VARIANT, 0);
     }
 
     private int getTypeVariant() {
@@ -75,13 +74,16 @@ public class MalgamEntity extends BaseHenchmenEntity {
     }
 
     public void remove(RemovalReason p_149847_) {
-        if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 BaseHenchmenEntity boss = MobsCore.DREAD.get().create(this.level());
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
-                    if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
+                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dread"));
                 }
             }

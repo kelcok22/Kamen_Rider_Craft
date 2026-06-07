@@ -64,7 +64,10 @@ public class RiotrooperEntity extends BaseHenchmenEntity {
                 serverlevel.sendParticles(sand, this.getX(), this.getY(), this.getZ(), 30, 0, 0, 0, 0.05);
                 serverlevel.sendParticles(sand, this.getX(), this.getY() + 1, this.getZ(), 30, 0, 0, 0, 0.05);
             }
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:

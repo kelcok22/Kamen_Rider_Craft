@@ -27,18 +27,18 @@ import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
 
     private static final EntityDataAccessor<Integer> VARIANT =
-        SynchedEntityData.defineId(MakamouNinjaGroupEntity.class, EntityDataSerializers.INT);
+            SynchedEntityData.defineId(MakamouNinjaGroupEntity.class, EntityDataSerializers.INT);
 
     public MakamouNinjaGroupEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="byakko";
+        NAME = "byakko";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Hibiki_Rider_Items.MAKAMOU_NINJA_SICKLE.get()));
     }
 
     @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(VARIANT,0);
+        builder.define(VARIANT, 0);
     }
 
     private int getTypeVariant() {
@@ -75,7 +75,10 @@ public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
     }
 
     public void remove(RemovalReason p_149847_) {
-        if (this.isDeadOrDying() && this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+        double chance = this.random.nextDouble();
+        int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+        if (this.isDeadOrDying() && chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
             BaseHenchmenEntity boss = MobsCore.KABUKI.get().create(this.level());
             if (boss != null) {
                 if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {

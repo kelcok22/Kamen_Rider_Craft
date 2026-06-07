@@ -26,34 +26,37 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
     private BaseHenchmenEntity boss;
 
     private static final EntityDataAccessor<Integer> VARIANT =
-        SynchedEntityData.defineId(RoidmudeEntity.class, EntityDataSerializers.INT);
+            SynchedEntityData.defineId(RoidmudeEntity.class, EntityDataSerializers.INT);
 
     public RoidmudeEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="roidmude";
+        NAME = "roidmude";
     }
 
     public void remove(RemovalReason p_149847_) {
 
-        if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 int bossChoice = this.random.nextInt(3);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.MASHIN_CHASER.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.mashin_chaser"));
                         }
                         break;
                     case 1:
                         boss = MobsCore.HEART_ROIDMUDE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.heart_roidmude"));
                         }
                         break;
                     case 2:
                         boss = MobsCore.BRAIN_ROIDMUDE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.brain_roidmude"));
                         }
                         break;
@@ -72,7 +75,7 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
     @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(VARIANT,0);
+        builder.define(VARIANT, 0);
     }
 
     private int getTypeVariant() {

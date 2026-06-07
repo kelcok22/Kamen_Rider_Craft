@@ -4,12 +4,15 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.ai.RangedSwordgunAttackGoal;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
+import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
@@ -28,22 +31,25 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.common.damagesource.DamageContainer;
 
 import javax.annotation.Nullable;
 import java.time.LocalDate;
 
-public abstract class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
+public abstract class BaseHenchmenEntity extends Monster implements RangedAttackMob {
 
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
     private boolean swordgunMeleeOnly = false;
+
     private final RangedSwordgunAttackGoal<BaseHenchmenEntity> swordgunGoal = new RangedSwordgunAttackGoal<>(this, 1.0D, 20, 15.0F, 40);
     private final RangedBowAttackGoal<BaseHenchmenEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
-    private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
+    private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 1.0D, false) {
         public void stop() {
             super.stop();
             BaseHenchmenEntity.this.setAggressive(false);
@@ -55,10 +61,9 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
         }
     };
 
-	public String NAME = "shocker_combatman";
+    public String NAME = "shocker_combatman";
 
 
-	
     public BaseHenchmenEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         this.goalSelector.addGoal(2, this.swordgunGoal);
@@ -68,15 +73,15 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     public void setMeleeOnSpawn(double chance) {
         if (this.random.nextDouble() * 100.0 <= chance) this.swordgunMeleeOnly = true;
     }
-    
+
     @Override
     protected void registerGoals() {
-    	 this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.goalSelector.addGoal(1, new FloatGoal(this));
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
         this.addBehaviourGoals();
-        
-           }
+
+    }
 
     protected void addBehaviourGoals() {
         this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
@@ -88,7 +93,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
-     }
+    }
 
     public boolean canBreakDoors() {
         return true;
@@ -96,68 +101,92 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
 
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()
-        		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
-        		.add(Attributes.ATTACK_DAMAGE, 4.0D)
-        		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 45.0D);
-     }
+                .add(Attributes.FOLLOW_RANGE, 35.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.23F)
+                .add(Attributes.ATTACK_DAMAGE, 4.0D)
+                .add(Attributes.ARMOR, 3.0D)
+                .add(Attributes.MAX_HEALTH, 45.0D);
+    }
 
     public int getMaxSpawnClusterSize() {
         return 2;
     }
 
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty, MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
-    	RandomSource randomsource = level.getRandom();
-    
-       float f = difficulty.getSpecialMultiplier();
-       this.setCanPickUpLoot(randomsource.nextFloat() < 0.55F * f);
+        RandomSource randomsource = level.getRandom();
 
-            spawnGroupData =  super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
-    if (this.getOffhandItem().isEmpty()) {
-       LocalDate localdate = LocalDate.now();
-       if (localdate.getMonthValue() == 6 && localdate.getDayOfMonth() == 22 && randomsource.nextFloat() < 0.25F) {
-          this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack( Items.APPLE));
-          this.armorDropChances[EquipmentSlot.HEAD.getIndex()] = 0.0F;
-       }
+        float f = difficulty.getSpecialMultiplier();
+        this.setCanPickUpLoot(randomsource.nextFloat() < 0.55F * f);
+
+        spawnGroupData = super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
+        if (this.getOffhandItem().isEmpty()) {
+            LocalDate localdate = LocalDate.now();
+            if (localdate.getMonthValue() == 6 && localdate.getDayOfMonth() == 22 && randomsource.nextFloat() < 0.25F) {
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.APPLE));
+                this.armorDropChances[EquipmentSlot.HEAD.getIndex()] = 0.0F;
+            }
+        }
+        return spawnGroupData;
     }
-    return spawnGroupData;
- }
 
 
-    
     public static boolean getSpawnAsBabyOdds(RandomSource p_219163_) {
         return false;
-     }
-    
+    }
+
     public boolean isBaby() {
         return false;
-     }
+    }
 
     protected boolean isSunSensitive() {
         return false;
-     }
+    }
 
-    
 
     protected SoundEvent getAmbientSound() {
-       return SoundEvents.PILLAGER_AMBIENT;
+        return SoundEvents.PILLAGER_AMBIENT;
     }
 
     protected SoundEvent getHurtSound(DamageSource p_34327_) {
-       return SoundEvents.PILLAGER_HURT;
+        return SoundEvents.PILLAGER_HURT;
     }
 
     protected SoundEvent getDeathSound() {
-       return SoundEvents.PILLAGER_DEATH;
+        return SoundEvents.PILLAGER_DEATH;
     }
 
     protected SoundEvent getStepSound() {
-       return SoundEvents.ZOMBIE_STEP;
+        return SoundEvents.ZOMBIE_STEP;
     }
 
     protected void playStepSound(BlockPos p_34316_, BlockState p_34317_) {
-       this.playSound(this.getStepSound(), 0.15F, 1.0F);
+        this.playSound(this.getStepSound(), 0.15F, 1.0F);
+    }
+
+    @Override
+    public void onDamageTaken(DamageContainer damageContainer) {
+        float reinforcementChance = (float) this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).getValue();
+
+        if (reinforcementChance > 0 && this.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD && serverLevel.getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)) {
+            if ((this.getTarget() != null && !(this.getLastAttacker() instanceof Monster) && this.getLastAttacker() == this.getTarget()) && this.random.nextFloat() * 100 <= reinforcementChance) {
+                LivingEntity reinforcement = (LivingEntity) this.getType().create(this.level());
+                int randX = this.getBlockX() + Mth.nextInt(this.random, 7, 30) * Mth.nextInt(this.random, -1, 1);
+                int randY = this.getBlockY() + Mth.nextInt(this.random, 1, 3) * Mth.nextInt(this.random, -1, 1);
+                int randZ = this.getBlockZ() + Mth.nextInt(this.random, 7, 30) * Mth.nextInt(this.random, -1, 1);
+
+                if (level().noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
+                    if (randY > 0) reinforcement.setPos(randX, randY, randZ);
+                    else reinforcement.setPos(randX, this.getY(), randZ);
+                    this.level().addFreshEntity(reinforcement);
+                    reinforcement.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(0);
+                    this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
+                    if (reinforcement instanceof Monster monster) {
+                        monster.setTarget(this.getLastAttacker());
+                    }
+                }
+            }
+        }
+        super.onDamageTaken(damageContainer);
     }
 
     public void reassessWeaponGoal() {
@@ -176,13 +205,13 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     }
 
     public boolean getMeleeOnly() {
-       return this.swordgunMeleeOnly;
+        return this.swordgunMeleeOnly;
     }
 
-   public void addAdditionalSaveData(CompoundTag p_30418_) {
-      super.addAdditionalSaveData(p_30418_);
-	  p_30418_.putBoolean("SwordgunMeleeOnly", this.swordgunMeleeOnly);
-   }
+    public void addAdditionalSaveData(CompoundTag p_30418_) {
+        super.addAdditionalSaveData(p_30418_);
+        p_30418_.putBoolean("SwordgunMeleeOnly", this.swordgunMeleeOnly);
+    }
 
     public void readAdditionalSaveData(CompoundTag p_32152_) {
         super.readAdditionalSaveData(p_32152_);
@@ -197,25 +226,25 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     }
 
     public void performRangedAttack(LivingEntity target, float distanceFactor) {
-       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
-       ItemStack itemstack1 = this.getProjectile(weapon);
-	   if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
-	   	blaster.fire(this, this.getLookAngle());
-       } else {
-        AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
-        Item var7 = weapon.getItem();
-        if (var7 instanceof ProjectileWeaponItem weaponItem) {
-           abstractarrow = weaponItem.customArrow(abstractarrow, itemstack1, weapon);
+        ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> item instanceof BowItem));
+        ItemStack itemstack1 = this.getProjectile(weapon);
+        if (weapon.getItem() instanceof BaseBlasterItem blaster && blaster.getProjectile() != BaseBlasterItem.BlasterProjectile.ARROW) {
+            blaster.fire(this, this.getLookAngle());
+        } else {
+            AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
+            Item var7 = weapon.getItem();
+            if (var7 instanceof ProjectileWeaponItem weaponItem) {
+                abstractarrow = weaponItem.customArrow(abstractarrow, itemstack1, weapon);
+            }
+
+            double d0 = target.getX() - this.getX();
+            double d1 = target.getY(0.3333333333333333) - abstractarrow.getY();
+            double d2 = target.getZ() - this.getZ();
+            double d3 = Math.sqrt(d0 * d0 + d2 * d2);
+            abstractarrow.shoot(d0, d1 + d3 * 0.20000000298023224, d2, 1.6F, (float) (14 - this.level().getDifficulty().getId() * 4));
+            this.level().addFreshEntity(abstractarrow);
         }
-       
-        double d0 = target.getX() - this.getX();
-        double d1 = target.getY(0.3333333333333333) - abstractarrow.getY();
-        double d2 = target.getZ() - this.getZ();
-        double d3 = Math.sqrt(d0 * d0 + d2 * d2);
-        abstractarrow.shoot(d0, d1 + d3 * 0.20000000298023224, d2, 1.6F, (float)(14 - this.level().getDifficulty().getId() * 4));
-        this.level().addFreshEntity(abstractarrow);
-       }
-       this.playSound(SoundEvents.BLAZE_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
+        this.playSound(SoundEvents.BLAZE_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
     }
 
     protected AbstractArrow getArrow(ItemStack arrow, float velocity, @Nullable ItemStack weapon) {

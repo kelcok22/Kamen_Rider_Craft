@@ -17,24 +17,27 @@ import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class KasshineEntity extends BaseHenchmenEntity {
 
-	private BaseHenchmenEntity boss;
+    private BaseHenchmenEntity boss;
 
     public KasshineEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="kasshine";
+        NAME = "kasshine";
 
 
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.KASSHINE_TRIDENT.get()));
     }
 
     public void remove(RemovalReason p_149847_) {
-        if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 BaseHenchmenEntity boss = MobsCore.ANOTHER_ZI_O.get().create(this.level());
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
-                    if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_zi_o"));
                     }
                 }
@@ -44,15 +47,14 @@ public class KasshineEntity extends BaseHenchmenEntity {
     }
 
 
-
     public static AttributeSupplier.Builder setAttributes() {
-    
+
         return Monster.createMonsterAttributes()
-        		.add(Attributes.FOLLOW_RANGE, 35.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.23F)
-        		.add(Attributes.ATTACK_DAMAGE, 4.0D)
-        		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 30.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
-     }
+                .add(Attributes.FOLLOW_RANGE, 35.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.23F)
+                .add(Attributes.ATTACK_DAMAGE, 4.0D)
+                .add(Attributes.ARMOR, 3.0D)
+                .add(Attributes.MAX_HEALTH, 30.0D)
+                .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+    }
 }

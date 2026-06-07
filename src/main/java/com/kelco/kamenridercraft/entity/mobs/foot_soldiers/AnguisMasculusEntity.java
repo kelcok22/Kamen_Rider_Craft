@@ -13,27 +13,30 @@ import net.minecraft.world.level.Level;
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class AnguisMasculusEntity extends BaseHenchmenEntity {
-	
+
     public AnguisMasculusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="anguis_masculus";
+        NAME = "anguis_masculus";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Agito_Rider_Items.JUDGEMENT_STAFF.get()));
     }
 
     public void remove(RemovalReason p_149847_) {
-		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
-				BaseHenchmenEntity boss = MobsCore.ANOTHER_AGITO.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
-					if (this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_agito"));
-					}
-				}
-			}
-		}
-		super.remove(p_149847_);
-	}
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                BaseHenchmenEntity boss = MobsCore.ANOTHER_AGITO.get().create(this.level());
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+
+                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_agito"));
+                    }
+                }
+            }
+        }
+        super.remove(p_149847_);
+    }
 }

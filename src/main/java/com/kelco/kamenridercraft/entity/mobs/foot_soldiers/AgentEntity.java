@@ -27,14 +27,13 @@ public class AgentEntity extends BaseHenchmenEntity {
     private BaseHenchmenEntity boss;
 
     private static final EntityDataAccessor<Integer> VARIANT =
-        SynchedEntityData.defineId(AgentEntity.class, EntityDataSerializers.INT);
+            SynchedEntityData.defineId(AgentEntity.class, EntityDataSerializers.INT);
 
     public AgentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="agent";
+        NAME = "agent";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.AGENT_BLASTER.get()));
     }
-
 
 
     //variants below
@@ -42,7 +41,7 @@ public class AgentEntity extends BaseHenchmenEntity {
     @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(VARIANT,0);
+        builder.define(VARIANT, 0);
     }
 
     private int getTypeVariant() {
@@ -79,35 +78,38 @@ public class AgentEntity extends BaseHenchmenEntity {
     }
 
     public void remove(Entity.RemovalReason p_149847_) {
-        if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.BITTER_GAVV.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_gavv"));
                         }
                         break;
                     case 1:
                         if (getVariant() == ORANGE_A || getVariant() == ORANGE_B) {
                             boss = MobsCore.NYELV_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nyelv"));
                             }
                         } else if (getVariant() == PINK_A || getVariant() == PINK_B) {
                             boss = MobsCore.GLOTTA_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.glotta"));
                             }
                         } else if (getVariant() == BLUE_A || getVariant() == BLUE_B) {
                             boss = MobsCore.JEEB_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.jeeb"));
                             }
                         } else if (getVariant() == WHITE_A || getVariant() == WHITE_B) {
                             boss = MobsCore.SHIITA_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shiita"));
                             }
                         } else if (getVariant() == RED_A || getVariant() == RED_B) {

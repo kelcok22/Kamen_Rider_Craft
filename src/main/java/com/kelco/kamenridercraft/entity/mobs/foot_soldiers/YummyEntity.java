@@ -31,8 +31,10 @@ public class YummyEntity extends BaseHenchmenEntity {
 
         if (this.isDeadOrDying()) {
             ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA))
                     boss = MobsCore.KAZARI.get().create(this.level());
                 else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST))

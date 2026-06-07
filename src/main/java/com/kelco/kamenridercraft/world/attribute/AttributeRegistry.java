@@ -116,6 +116,15 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> KRC_REINFORCEMENT_CHANCE = ATTRIBUTES.register("krc_reinforcement_chance",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.krc_reinforcement_chance",
+                    0,
+                    0,
+                    100
+            ).setSyncable(true)
+    );
+
     public static final DeferredHolder<Attribute, Attribute> CLIMBING = ATTRIBUTES.register("climbing",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.climbing",

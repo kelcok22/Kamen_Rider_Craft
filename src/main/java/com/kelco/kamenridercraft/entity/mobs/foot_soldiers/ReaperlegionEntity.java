@@ -26,29 +26,32 @@ public class ReaperlegionEntity extends BaseHenchmenEntity {
     private BaseHenchmenEntity boss;
 
     private static final EntityDataAccessor<Integer> VARIANT =
-        SynchedEntityData.defineId(ReaperlegionEntity.class, EntityDataSerializers.INT);
+            SynchedEntityData.defineId(ReaperlegionEntity.class, EntityDataSerializers.INT);
 
     public ReaperlegionEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="reaper_legion";
+        NAME = "reaper_legion";
     }
 
     public void remove(RemovalReason p_149847_) {
 
-        if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
                 int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.MEDIC_ROIDMUDE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.medic_roidmude"));
                         }
                         break;
 
                     case 1:
                         boss = MobsCore.DARK_DRIVE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_drive"));
                         }
                         break;
@@ -68,7 +71,7 @@ public class ReaperlegionEntity extends BaseHenchmenEntity {
     @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(VARIANT,0);
+        builder.define(VARIANT, 0);
     }
 
     private int getTypeVariant() {

@@ -14,62 +14,65 @@ import net.minecraft.world.level.Level;
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class ShimiEntity extends BaseHenchmenEntity {
-	
-	private BaseHenchmenEntity boss;
-	
+
+    private BaseHenchmenEntity boss;
+
     public ShimiEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="shimi";
+        NAME = "shimi";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.SHIMI_LOT.get()));
     }
 
 
-	public void remove(RemovalReason p_149847_) {
+    public void remove(RemovalReason p_149847_) {
 
-		if ( this.isDeadOrDying()) {
-			if (this.random.nextDouble() * 100.0 <= this.level().getGameRules() .getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE) && (this.getLastAttacker() instanceof Player player && canSpawnBoss(player) || !(this.getLastAttacker() instanceof Player))) {
-				int bossChoice = this.random.nextInt(5);
-				switch (bossChoice) {
-					case 0:
-						boss = MobsCore.CALIBUR.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.calibur"));
-						}
-						break;
-					case 1:
-						boss = MobsCore.LEGEIEL.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.legeiel"));
-						}
-						break;
-					case 2:
-						boss = MobsCore.ZOOOUS.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zooous"));
-						}
-						break;
-					case 3:
-						boss = MobsCore.STORIOUS.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.storious"));
-						}
-						break;
-					case 4:
-						boss = MobsCore.DESAST.get().create(this.level());
-						if (boss != null && this.getLastAttacker()instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.desast"));
-						}
-						break;
-					default:
-				}
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-				}
-			}
-		}
-		super.remove(p_149847_);
-	}
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                int bossChoice = this.random.nextInt(5);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.CALIBUR.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.calibur"));
+                        }
+                        break;
+                    case 1:
+                        boss = MobsCore.LEGEIEL.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.legeiel"));
+                        }
+                        break;
+                    case 2:
+                        boss = MobsCore.ZOOOUS.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zooous"));
+                        }
+                        break;
+                    case 3:
+                        boss = MobsCore.STORIOUS.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.storious"));
+                        }
+                        break;
+                    case 4:
+                        boss = MobsCore.DESAST.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.desast"));
+                        }
+                        break;
+                    default:
+                }
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                }
+            }
+        }
+        super.remove(p_149847_);
+    }
 
 
 }
