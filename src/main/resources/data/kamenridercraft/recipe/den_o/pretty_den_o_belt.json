@@ -3,7 +3,7 @@
   "category": "equipment",
   "group": "pretty_den_o",
   "pattern": [
-    "XXX",
+    "XWX",
     "XCX",
     "XXX"
   ],
@@ -12,6 +12,8 @@
       "item": "kamenridercraft:imagin_sand"
     }, "C": {
       "item": "kamenridercraft:rider_ticket_sword"
+    }, "W": {
+      "item": "minecraft:yellow_wool"
     }
   },
   "result": {
