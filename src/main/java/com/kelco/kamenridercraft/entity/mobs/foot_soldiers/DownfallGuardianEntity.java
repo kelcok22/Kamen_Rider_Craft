@@ -36,7 +36,7 @@ public class DownfallGuardianEntity extends BaseHenchmenEntity {
             double chance = this.random.nextDouble();
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
-            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+            if (chance * num <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * num * 2 <= gamerule)) {
                 int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:

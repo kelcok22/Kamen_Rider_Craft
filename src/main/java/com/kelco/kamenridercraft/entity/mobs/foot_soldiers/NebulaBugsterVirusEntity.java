@@ -39,7 +39,7 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
             double chance = this.random.nextDouble();
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
-            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+            if (chance * num <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && num * 2 <= gamerule)) {
                 ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
                 int bossChoice = 0;
                 if (this.level().dimension() == MOON) bossChoice = 1;
