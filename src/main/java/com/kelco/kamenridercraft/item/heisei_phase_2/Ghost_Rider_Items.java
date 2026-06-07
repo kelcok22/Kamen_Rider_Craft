@@ -383,7 +383,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,5).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.ChangeModel("musashi_damashii.geo.json").HasCape().ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,5).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EDISON_GHOST_EYECON = ITEMS.register("edison_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"edison_damashii","ghost","ghostdriver_belt",
@@ -394,7 +394,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,5).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.ChangeModel("edison_damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,5).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROBIN_GHOST_EYECON = ITEMS.register("robin_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"robin_damashii","ghost","ghostdriver_belt",
@@ -406,7 +406,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,4).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.ChangeModel("robin_damashii.geo.json").ChangeSlot(2).AddToList(Monolith.GHOST_EYECONS,4).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEWTON_GHOST_EYECON = ITEMS.register("newton_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"newton_damashii","ghost","ghostdriver_belt",
