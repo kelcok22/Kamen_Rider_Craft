@@ -58,7 +58,7 @@
       }
     },
     {
-      "weight": 5,
+      "weight": 1,
       "element": {
         "location": "kamenridercraft:city/roads/road_extension_vehicle",
         "processors": "minecraft:empty",
