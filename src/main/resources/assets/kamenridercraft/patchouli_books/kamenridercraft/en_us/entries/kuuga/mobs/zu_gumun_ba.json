@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:zu_gumun_ba",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br)Health: 30"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br)Health: 45"
 		},
 		{
 			"type": "patchouli:text",
