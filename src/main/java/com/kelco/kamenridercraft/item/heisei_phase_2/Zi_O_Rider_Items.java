@@ -643,7 +643,7 @@ public class Zi_O_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 800, 0,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
@@ -658,7 +658,7 @@ public class Zi_O_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 800, 0,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)) {
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
