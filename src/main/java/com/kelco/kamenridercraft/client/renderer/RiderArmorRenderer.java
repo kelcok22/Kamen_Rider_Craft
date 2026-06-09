@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.client.models.RiderArmorModel;
 import com.kelco.kamenridercraft.client.render_layers.RiderRenderLayer;
-import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import net.minecraft.client.model.HumanoidModel;
@@ -10,6 +9,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.decoration.ArmorStand;
@@ -82,7 +82,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
         setAllVisible(false);
         if (GetEntity()!=null){
-        if (!GetEntity().isInvisible() && !(GetEntity().getVehicle()!= null && GetEntity().getVehicle() instanceof RidoronEntity) || GetEntity() instanceof ArmorStand) {
+        if (!GetEntity().isInvisible()||GetEntity() instanceof ArmorStand) {
             if (currentSlot == EquipmentSlot.FEET) {
                 setBoneVisible(this.body, true);
                 setBoneVisible(this.leftArm, true);

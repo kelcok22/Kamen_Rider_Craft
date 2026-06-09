@@ -166,30 +166,24 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
     @Override
     public void onDamageTaken(DamageContainer damageContainer) {
         float reinforcementChance = (float) this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).getValue();
+
         if (reinforcementChance > 0 && this.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD && serverLevel.getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)) {
             if ((this.getTarget() != null && !(this.getLastAttacker() instanceof Monster) && this.getLastAttacker() == this.getTarget()) && this.random.nextFloat() * 100 <= reinforcementChance) {
                 LivingEntity reinforcement = (LivingEntity) this.getType().create(this.level());
-                reinforcement.setPos(this.getX() - 10, this.getY(), this.getZ() + 10);
+                int randX = this.getBlockX() + Mth.nextInt(this.random, 7, 30) * Mth.nextInt(this.random, -1, 1);
+                int randY = this.getBlockY() + Mth.nextInt(this.random, 1, 3) * Mth.nextInt(this.random, -1, 1);
+                int randZ = this.getBlockZ() + Mth.nextInt(this.random, 7, 30) * Mth.nextInt(this.random, -1, 1);
 
-                for (int i = 0; i < 50; ++i){
-                    int randX = Mth.floor(this.getX()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
-                    int randY = Mth.floor(this.getY()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
-                    int randZ = Mth.floor(this.getZ()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
-
-                    BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
-                    if (!SpawnPlacements.isSpawnPositionOk(this.getType(), serverLevel, potentialPosition)) {
-                        reinforcement.setPos(randX, this.getY(), randZ);
-                        continue;
+                if (level().noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
+                    if (randY > 0) reinforcement.setPos(randX, randY, randZ);
+                    else reinforcement.setPos(randX, this.getY(), randZ);
+                    this.level().addFreshEntity(reinforcement);
+                    reinforcement.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(0);
+                    this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
+                    if (reinforcement instanceof Monster monster) {
+                        monster.setTarget(this.getLastAttacker());
                     }
-                    reinforcement.setPos(randX, randY, randZ);
                 }
-
-                reinforcement.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(0);
-                this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
-                if (reinforcement instanceof Monster monster) {
-                    monster.setTarget(this.getLastAttacker());
-                }
-                this.level().addFreshEntity(reinforcement);
             }
         }
         super.onDamageTaken(damageContainer);

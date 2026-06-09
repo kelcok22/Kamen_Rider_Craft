@@ -15,6 +15,15 @@
 		"entries": [
 		  {
 			"type": "minecraft:item",
+			"name": "kamenridercraft:kiwami_lockseed"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
 			"name": "kamenridercraft:lord_baron_fragment"
 		  }
 		]

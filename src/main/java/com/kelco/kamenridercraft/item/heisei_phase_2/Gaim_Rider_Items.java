@@ -1739,16 +1739,16 @@ public class Gaim_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> JOESHUIMU = ITEMS.register("joeshuimu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SHEIMU = ITEMS.register("sheimu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DAU = ITEMS.register("dau",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DIMUBU = ITEMS.register("dimubu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GURONBARYAMU = ITEMS.register("guronbaryamu",
             () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
