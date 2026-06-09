@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -24,7 +24,7 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
         int day = localdate.getDayOfMonth();
         if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) NAME = "shocker_combatman_christmas";
         else NAME = "shocker_combatman";
-        this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(12D);
+        this.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
 
     }
 

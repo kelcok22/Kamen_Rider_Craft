@@ -3,14 +3,13 @@ package com.kelco.kamenridercraft.effects.effect_core;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effects.*;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.NeoForgeMod;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -53,7 +52,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> RIDER_SPIRIT = EFFECT.register("rider_spirit",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x9d3443)
-                    .addAttributeModifier(Attributes.ATTACK_KNOCKBACK, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.rider_spirit"), 0.4F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.rider_spirit"), 0.4F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>SELF_MENDING = EFFECT.register("self_mending",
             () -> new SelfMendEffect(MobEffectCategory.BENEFICIAL, 0xFFAEC9));
@@ -76,19 +75,19 @@ public class EffectCore {
 
     public static final Holder<MobEffect> STEP= EFFECT.register("step",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x9d3443)
-                    .addAttributeModifier(Attributes.STEP_HEIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.step"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.STEP_HEIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.step"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
-                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.gravity"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.gravity"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> LOW_GRAVITY= EFFECT.register("low_gravity",
             () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
-                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.low_gravity"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.low_gravity"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> LONG_ARM= EFFECT.register("long_arm",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xe60052)
-                    .addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.long_arm"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.long_arm"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> RADAR= EFFECT.register("radar",
             () -> new RadarEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
@@ -98,23 +97,23 @@ public class EffectCore {
 
     public static final Holder<MobEffect> SMALL= EFFECT.register("small",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
-                    .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.small"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.small"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> BIG= EFFECT.register("big",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
-                    .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.big"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.big"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> FLAT= EFFECT.register("flat",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf7fada)
-                    .addAttributeModifier(AttributeRegistry.PLAYER_SIZE_Z, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flat"), -0.96F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(Attributes.PLAYER_SIZE_Z, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flat"), -0.96F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  STRETCH= EFFECT.register("stretch",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf78d95)
-                    .addAttributeModifier(AttributeRegistry.PLAYER_SIZE_Y, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.stretch"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(Attributes.PLAYER_SIZE_Y, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.stretch"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  WIDE= EFFECT.register("wide",
             () -> new 	WideEffect(MobEffectCategory.NEUTRAL, 0x87ce87)
-                    .addAttributeModifier(AttributeRegistry.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.wide"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(Attributes.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.wide"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  EXPLODE= EFFECT.register("explode",
             () -> new 	ExplodeEffect(MobEffectCategory.HARMFUL, 0x565656));
@@ -189,7 +188,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect>  TIME= EFFECT.register("time",
             () -> new 	TimeEffect(MobEffectCategory.HARMFUL, 0xffed9e)
-            .addAttributeModifier(AttributeRegistry.HAS_TIME, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
+            .addAttributeModifier(Attributes.HAS_TIME, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  BLIZZARD= EFFECT.register("blizzard",
             () -> new BlizzardEffect(MobEffectCategory.HARMFUL, 0x5feaff));
@@ -208,7 +207,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> CLIMBING= EFFECT.register("climbing",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xffffff)
-                    .addAttributeModifier(AttributeRegistry.CLIMBING, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.climbing"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(Attributes.CLIMBING, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.climbing"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect>  FORM_TIMEOUT= EFFECT.register("form_timeout",
             () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));
@@ -226,7 +225,7 @@ public class EffectCore {
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
 
     public static final Holder<MobEffect>SD = EFFECT.register("sd", () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x77b72e)
-                    .addAttributeModifier(AttributeRegistry.HEAD_SIZE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.sd"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+                    .addAttributeModifier(Attributes.HEAD_SIZE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.sd"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));
@@ -242,7 +241,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect>  BUGSTER= EFFECT.register("bug",
             () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e)
-                    .addAttributeModifier(AttributeRegistry.HAS_BUG, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.bug"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(Attributes.HAS_BUG, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.bug"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
 
     public static final Holder<MobEffect>  HAZARD_LEVEL= EFFECT.register("hazard_level",
@@ -259,8 +258,8 @@ public class EffectCore {
 
     public static final Holder<MobEffect>  PAUSE= EFFECT.register("pause",
             () -> new BasicEffect(MobEffectCategory.HARMFUL, 0x4eff00)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), -100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
-                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), 100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), -100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), 100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
     public static final Holder<MobEffect> WONDER = EFFECT.register("wonder",

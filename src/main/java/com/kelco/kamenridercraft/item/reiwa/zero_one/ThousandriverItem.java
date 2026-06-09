@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.reiwa.zero_one;
 import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -47,8 +47,8 @@ public class ThousandriverItem extends RiderDriverItem {
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
-		boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1;
-        boolean bug = rider.getAttribute(AttributeRegistry.HAS_BUG).getValue() !=0;
+		boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
+        boolean bug = rider.getAttribute(Attributes.HAS_BUG).getValue() !=0;
 		if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {

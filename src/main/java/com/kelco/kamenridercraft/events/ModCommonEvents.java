@@ -35,7 +35,7 @@ import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleTypes;
@@ -108,7 +108,7 @@ public class ModCommonEvents {
 
             if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
                 if (event.getBreaker() instanceof Player player) {
-                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()&player.getAttribute(AttributeRegistry.TOJIMA).getValue()<100)player.getAttribute(AttributeRegistry.TOJIMA).setBaseValue(player.getAttribute(AttributeRegistry.TOJIMA).getValue()+1);
+                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()&player.getAttribute(Attributes.TOJIMA).getValue()<100)player.getAttribute(Attributes.TOJIMA).setBaseValue(player.getAttribute(Attributes.TOJIMA).getValue()+1);
                 }
             }
 
@@ -139,7 +139,7 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
 
-                if (event.getEntity().getAttribute(AttributeRegistry.TOJIMA).getValue()>99&event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem()==ExtraRiderItems.ICHIGO_MASK.asItem())event.getEntity().addEffect(new MobEffectInstance(EffectCore.RIDER_SPIRIT, 30, 0, false, false));
+                if (event.getEntity().getAttribute(Attributes.TOJIMA).getValue()>99&event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem()==ExtraRiderItems.ICHIGO_MASK.asItem())event.getEntity().addEffect(new MobEffectInstance(EffectCore.RIDER_SPIRIT, 30, 0, false, false));
 
 
             ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
@@ -188,15 +188,15 @@ public class ModCommonEvents {
                            else if (look.z < 0 & player.getDeltaMovement().z < 0) Z = 1;
                            else Z = -1;
                        }
-                       player.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
-                       player.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
-                       player.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue(player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
+                       player.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.BALL_ROT).getBaseValue());
+                       player.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+                       player.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue(player.getAttribute(Attributes.CAPE_ROT).getBaseValue());
 
                        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
                            if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
 
-                               float cape = (float) player.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue();
+                               float cape = (float) player.getAttribute(Attributes.CAPE_ROT).getBaseValue();
                                float ball = 0;
                                if (Z > 0 & cape > -0.7 & !player.isSwimming())
                                    cape = cape - 0.01f - (player.getSpeed() / 10);
@@ -217,14 +217,14 @@ public class ModCommonEvents {
                                }
                                //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2) cape = cape - 0.05f;
 
-                               player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
-                               player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(cape);
+                               player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
+                               player.getAttribute(Attributes.CAPE_ROT).setBaseValue(cape);
                            }
                            if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
                                float wheel = 0;
                                if (Z > 0) wheel = -0.1f;
                                if (Z < 0) wheel = 0.1f;
-                               player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel);
+                               player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
                                float ball = 0;
                                if (X > 0) {
                                    ball = 0.5f;
@@ -234,21 +234,20 @@ public class ModCommonEvents {
                                    ball = -0.5f;
                                    if (Z == 0) wheel = -0.1f;
                                }
-                               player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(ball);
-                               player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(player.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue() + wheel);
+                               player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
+                               player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
                            }
                        }
                    }
                }
-                player.getAttribute(AttributeRegistry.IS_TRANSFORMING_OLD).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue());
-                if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-1);
-                if (player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()<=0)player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(0);
+                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0)player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()-1);
+                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<=0)player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(0);
                 }
 
-                if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(AttributeRegistry.CLIMBING).getValue() != 0) {
+                if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(Attributes.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(AttributeRegistry.CLIMBING).getValue()), initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(Attributes.CLIMBING).getValue()), initialVec.z);
                     entity.setDeltaMovement(climbVec.scale(0.97D));
                 }
             }
@@ -441,8 +440,8 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void addLivingDamageEvent(LivingDamageEvent.Post event) {
-            if (event.getSource().getEntity() instanceof LivingEntity attacker && attacker.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && attacker.getAttribute(AttributeRegistry.ABILITY_METER).getBaseValue() < 300) {
-                attacker.getAttribute(AttributeRegistry.ABILITY_METER).setBaseValue(attacker.getAttribute(AttributeRegistry.ABILITY_METER).getBaseValue() + 1);
+            if (event.getSource().getEntity() instanceof LivingEntity attacker && attacker.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && attacker.getAttribute(Attributes.ABILITY_METER).getBaseValue() < 300) {
+                attacker.getAttribute(Attributes.ABILITY_METER).setBaseValue(attacker.getAttribute(Attributes.ABILITY_METER).getBaseValue() + 1);
             }
             if (event.getEntity() instanceof Player player && player.getInventory().countItem(Zeztz_Rider_Items.VOID_CAPSEM.get()) != 0 && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)) {
                 if (player.getOffhandItem().is(Zeztz_Rider_Items.VOID_CAPSEM.get())) {

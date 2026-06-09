@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.ai.RangedSwordgunAttackGoal;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
@@ -19,7 +19,6 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -101,11 +100,11 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
 
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.FOLLOW_RANGE, 35.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.23F)
-                .add(Attributes.ATTACK_DAMAGE, 4.0D)
-                .add(Attributes.ARMOR, 3.0D)
-                .add(Attributes.MAX_HEALTH, 45.0D);
+                .add(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE, 35.0D)
+                .add(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED, 0.23F)
+                .add(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE, 4.0D)
+                .add(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR, 3.0D)
+                .add(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH, 45.0D);
     }
 
     public int getMaxSpawnClusterSize() {
@@ -165,7 +164,7 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
 
     @Override
     public void onDamageTaken(DamageContainer damageContainer) {
-        float reinforcementChance = (float) this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).getValue();
+        float reinforcementChance = (float) this.getAttribute(Attributes.REINFORCEMENT_CHANCE).getValue();
         if (reinforcementChance > 0 && this.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD && serverLevel.getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)) {
             if ((this.getTarget() != null && !(this.getLastAttacker() instanceof Monster) && this.getLastAttacker() == this.getTarget()) && this.random.nextFloat() * 100 <= reinforcementChance) {
                 LivingEntity reinforcement = (LivingEntity) this.getType().create(this.level());
@@ -184,8 +183,8 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
                     reinforcement.setPos(randX, randY, randZ);
                 }
 
-                reinforcement.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(0);
-                this.getAttribute(AttributeRegistry.KRC_REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
+                reinforcement.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(0);
+                this.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
                 if (reinforcement instanceof Monster monster) {
                     monster.setTarget(this.getLastAttacker());
                 }

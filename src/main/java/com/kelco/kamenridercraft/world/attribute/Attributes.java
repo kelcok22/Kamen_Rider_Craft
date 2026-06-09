@@ -15,7 +15,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 @EventBusSubscriber(modid = KamenRiderCraftCore.MOD_ID, bus=EventBusSubscriber.Bus.MOD)
-public class AttributeRegistry extends Event implements IModBusEvent {
+public class Attributes extends Event implements IModBusEvent {
 
     public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
@@ -97,16 +97,6 @@ public class AttributeRegistry extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING_OLD = ATTRIBUTES.register("is_transforming_old",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.is_transforming",
-                    0,
-                    0,
-                    30
-            ).setSyncable(true)
-    );
-
-
     public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING = ATTRIBUTES.register("is_transforming",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.is_transforming",
@@ -116,9 +106,9 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> KRC_REINFORCEMENT_CHANCE = ATTRIBUTES.register("krc_reinforcement_chance",
+    public static final DeferredHolder<Attribute, Attribute> REINFORCEMENT_CHANCE = ATTRIBUTES.register("reinforcement_chance",
             () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.krc_reinforcement_chance",
+                    "attribute.kamenridercraftcore.reinforcement_chance",
                     0,
                     0,
                     100
@@ -205,23 +195,6 @@ public class AttributeRegistry extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMED = ATTRIBUTES.register("is_transformed",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.is_transformed",
-                    false
-
-            ).setSyncable(true)
-    );
-
-    public static final DeferredHolder<Attribute, Attribute> POSING = ATTRIBUTES.register("posing",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.posing",
-                    false
-
-            ).setSyncable(true)
-    );
-
-
     public static final DeferredHolder<Attribute, Attribute> HAZARD_LEVEL = ATTRIBUTES.register("hazard_level",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.hazard_level",
@@ -230,7 +203,6 @@ public class AttributeRegistry extends Event implements IModBusEvent {
                     10
             ).setSyncable(true)
     );
-
 
    @SubscribeEvent
     public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {

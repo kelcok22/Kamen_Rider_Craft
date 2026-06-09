@@ -7,7 +7,7 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
 import com.kelco.kamenridercraft.network.payload.StartKickPayload;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
@@ -28,7 +28,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
@@ -131,7 +130,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static boolean isTransforming(LivingEntity player) {
         if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        return player.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue() != 0;
+        return player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() != 0;
     }
 
     public static boolean isKicking(LivingEntity player) {
@@ -331,10 +330,10 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putDouble("render_type", getRenderType(itemstack));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-            player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(30);
-            player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(0);
-            player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(0);
-            player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(0);
+            player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(30);
+            player.getAttribute(Attributes.CAPE_ROT).setBaseValue(0);
+            player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(0);
+            player.getAttribute(Attributes.BALL_ROT).setBaseValue(0);
         }
 
     }
@@ -358,7 +357,7 @@ public class RiderDriverItem extends RiderArmorItem {
             PacketDistributor.sendToAllPlayers(new EndPosePayload(0, pLivingEntity.getStringUUID()));
             DamageSource damageSource = new DamageSource(
                     pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), pLivingEntity, pLivingEntity, pLivingEntity.position());
-            float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE) + pLivingEntity.fallDistance);
+            float at = (float) (pLivingEntity.getAttributes().getValue(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE) + pLivingEntity.fallDistance);
             enemy.hurt(damageSource, at);
             pLivingEntity.fallDistance = 0.0f;
             for (int n = 0; n < Num_Base_Form_Item; n++) {
@@ -432,9 +431,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
 
-        boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue() == 1;
+        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
 
-        boolean sd = rider.getAttribute(AttributeRegistry.HEAD_SIZE).getValue() != 1 && get_Form_Item(itemstack, 1).get_SD() & SD;
+        boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && get_Form_Item(itemstack, 1).get_SD() & SD;
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem) itemstack.getItem()).BELT_TEXT;
@@ -460,7 +459,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue() == 1) {
+        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));

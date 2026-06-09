@@ -39,7 +39,7 @@ import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
@@ -162,7 +162,7 @@ public class KamenRiderCraftCore {
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
-        AttributeRegistry.ATTRIBUTES.register(modEventBus);
+        Attributes.ATTRIBUTES.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
@@ -201,7 +201,7 @@ public class KamenRiderCraftCore {
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
 
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
-            float sd = (float) event.getEntity().getAttribute(AttributeRegistry.HEAD_SIZE).getValue();
+            float sd = (float) event.getEntity().getAttribute(Attributes.HEAD_SIZE).getValue();
             model.getHead().xScale = sd;
             model.getHead().yScale = sd;
             model.getHead().zScale = sd;
@@ -232,9 +232,9 @@ public class KamenRiderCraftCore {
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 
-        float sizeX = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_X).getValue();
-        float sizeY = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_Y).getValue();
-        float sizeZ = (float) event.getEntity().getAttribute(AttributeRegistry.PLAYER_SIZE_Z).getValue();
+        float sizeX = (float) event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X).getValue();
+        float sizeY = (float) event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y).getValue();
+        float sizeZ = (float) event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z).getValue();
         event.getPoseStack().scale(sizeX, sizeY, sizeZ);
     }
 

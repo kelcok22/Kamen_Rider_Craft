@@ -1,17 +1,9 @@
 package com.kelco.kamenridercraft.events;
 
-import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.network.payload.AttributeChangePayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.InputEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent;

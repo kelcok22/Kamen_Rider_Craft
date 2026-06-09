@@ -6,7 +6,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.*;
 
-import com.kelco.kamenridercraft.world.attribute.AttributeRegistry;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
@@ -53,18 +53,18 @@ public class ClientPayloadHandler {
             if (entity instanceof Player&!context.player().getStringUUID().equals(data.id())||!(entity instanceof Player)) {
                 switch (data.attributeName()) {
                     case "ball_rot" ->{
-                        entity.getAttribute(AttributeRegistry.BALL_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.BALL_ROT).getBaseValue());
-                        entity.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(data.valueChange());
+                        entity.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue( entity.getAttribute(Attributes.BALL_ROT).getBaseValue());
+                        entity.getAttribute(Attributes.BALL_ROT).setBaseValue(data.valueChange());
                     }
                     case "wheel_rot" ->{
-                        entity.getAttribute(AttributeRegistry.WHEEL_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.WHEEL_ROT).getBaseValue());
-                        entity.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(data.valueChange());
+                        entity.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue( entity.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+                        entity.getAttribute(Attributes.WHEEL_ROT).setBaseValue(data.valueChange());
                     }
                     case "cape_rot" ->{
-                        entity.getAttribute(AttributeRegistry.CAPE_ROT_OLD).setBaseValue( entity.getAttribute(AttributeRegistry.CAPE_ROT).getBaseValue());
-                        entity.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(data.valueChange());
+                        entity.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue( entity.getAttribute(Attributes.CAPE_ROT).getBaseValue());
+                        entity.getAttribute(Attributes.CAPE_ROT).setBaseValue(data.valueChange());
                     }
-                    case "wing_out" -> entity.getAttribute(AttributeRegistry.WINGS_OUT).setBaseValue(data.valueChange());
+                    case "wing_out" -> entity.getAttribute(Attributes.WINGS_OUT).setBaseValue(data.valueChange());
                 }
             }
         }
