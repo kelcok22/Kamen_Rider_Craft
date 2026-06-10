@@ -8,6 +8,11 @@
 		"item": "kamenridercraft:zeztz_driver"
 	},
 	"result": {
+		"components": {
+			"minecraft:custom_data": {
+				"slot_tex1": "kamenridercraft:exdreamrise_capsem"
+			}
+		},
 		"count": 1,
 		"id": "kamenridercraft:zeztz_exdream_driver"
 	},
