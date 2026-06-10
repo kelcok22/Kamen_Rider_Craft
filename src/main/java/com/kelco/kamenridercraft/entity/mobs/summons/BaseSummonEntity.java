@@ -126,15 +126,10 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	}
    
 	public void aiStep() {
-		Level level = this.level();
-		if (!level.isClientSide) {
-		   this.updatePersistentAnger((ServerLevel)this.level(), true);
+		if (this.level() instanceof ServerLevel server) {
+		   this.updatePersistentAnger(server, true);
 			if (this.isAlive() && this.getOwner() != null) {
-				if(!this.getOwner().isAlive()
-				||this.getOwner().getItemBySlot(EquipmentSlot.HEAD).getItem()!=this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
-				||this.getOwner().getItemBySlot(EquipmentSlot.CHEST).getItem()!=this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
-				||this.getOwner().getItemBySlot(EquipmentSlot.LEGS).getItem()!=this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
-				||this.getOwner().getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) {
+				if(!this.getOwner().isAlive() || !this.armorMatches(this.getOwner())) {
 					this.despawn();
 				} else {
 					if (!this.REQUIRED_FORMS.isEmpty() && this.getOwner().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
@@ -264,6 +259,13 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 
    public ItemStack getRequiredArmor(EquipmentSlot p_21467_) {
       return this.REQUIRED_ARMOR.get(p_21467_.getIndex());
+   }
+
+   public boolean armorMatches(LivingEntity owner) {
+	   return (owner.getItemBySlot(EquipmentSlot.HEAD).getItem()==this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
+			   &&owner.getItemBySlot(EquipmentSlot.CHEST).getItem()==this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
+			   &&owner.getItemBySlot(EquipmentSlot.LEGS).getItem()==this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
+			   &&owner.getItemBySlot(EquipmentSlot.FEET).getItem()==this.getRequiredArmor(EquipmentSlot.FEET).getItem());
    }
 
    public void bindToPlayer(Player player) {

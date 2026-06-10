@@ -6,7 +6,6 @@
 package com.kelco.kamenridercraft.client.models;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -17,15 +16,13 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class DoggaModel<T extends Mob> extends PlayerModel<T> {
+public class DoggaModel<T extends Mob> extends BasicMobModel<T> {
 	public static final ModelLayerLocation LAYER_LOCATION =
 			new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "dogga"), "main");
 
 
 	public DoggaModel(ModelPart p_170810_) {
-		super(p_170810_,false);
-
-
+		super(p_170810_);
 	}
 
     public static LayerDefinition createBodyLayer() {
@@ -62,16 +59,6 @@ public class DoggaModel<T extends Mob> extends PlayerModel<T> {
 
         return LayerDefinition.create(meshdefinition, 64, 80);
     }
-
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
-		this.leftPants.copyFrom(this.leftLeg);
-		this.rightPants.copyFrom(this.rightLeg);
-		this.leftSleeve.copyFrom(this.leftArm);
-		this.rightSleeve.copyFrom(this.rightArm);
-		this.jacket.copyFrom(this.body);
-	}
 
 	public static void addHead(MeshDefinition mesh) {
 		PartDefinition partdefinition = mesh.getRoot();

@@ -1398,6 +1398,19 @@ public class Zi_O_Rider_Items {
                     .addAltForm("kamenridercraft:saboneedle_ride_chemy_card", "kamenridercraft:hawkstar_ride_chemy_card")
                     .addAltForm("kamenridercraft:burningnero_ride_chemy_card", "kamenridercraft:gorillasensei_ride_chemy_card")
                     .addAltForm("kamenridercraft:junglejan_ride_chemy_card", "kamenridercraft:raidenji_ride_chemy_card")
+                    .addAltForm("kamenridercraft:ganvhale_ride_chemy_card", "kamenridercraft:spicle_ride_chemy_card")
+                    .addAltForm("kamenridercraft:renkingrobo_ride_chemy_card", "kamenridercraft:yamibat_ride_chemy_card")
+                    .addAltForm("kamenridercraft:mitemirror_ride_chemy_card", "kamenridercraft:stagvine_ride_chemy_card")
+                    .addAltForm("kamenridercraft:bussasorry_ride_chemy_card", "kamenridercraft:greatonbo_ride_chemy_card")
+                    .addAltForm("kamenridercraft:panpakaparka_ride_chemy_card", "kamenridercraft:bountybunny_ride_chemy_card")
+                    .addAltForm("kamenridercraft:tsupparihebi_ride_chemy_card", "kamenridercraft:doctorkozo_ride_chemy_card")
+                    .addAltForm("kamenridercraft:televi_ride_chemy_card", "kamenridercraft:bakuonzemi_ride_chemy_card")
+                    .addAltForm("kamenridercraft:daiohni_ride_chemy_card", "kamenridercraft:gekiocopter_ride_chemy_card_g")
+                    .addAltForm("kamenridercraft:gekiocopter_ride_chemy_card", "kamenridercraft:gekiocopter_ride_chemy_card_g")
+                    .addAltForm("kamenridercraft:unicon_ride_chemy_card", "kamenridercraft:the_sun_ride_chemy_card_g")
+                    .addAltForm("kamenridercraft:the_sun_ride_chemy_card", "kamenridercraft:the_sun_ride_chemy_card_g")
+                    .addAltForm("kamenridercraft:yoacerberus_ride_chemy_card", "kamenridercraft:neminemoon_ride_chemy_card_g")
+                    .addAltForm("kamenridercraft:neminemoon_ride_chemy_card", "kamenridercraft:neminemoon_ride_chemy_card_g")
                     .addAltForm("kamenridercraft:inphoenix_ride_chemy_card", "kamenridercraft:firemars_ride_chemy_card")
                     .addAltForm("kamenridercraft:nijigon_ride_chemy_card_special", "kamenridercraft:nijigon_ride_chemy_card_extra")
                     .addAltForm("kamenridercraft:steamliner_ride_chemy_card_ultima", "kamenridercraft:hopper1_ride_chemy_card_ultima")
@@ -1447,7 +1460,8 @@ public class Zi_O_Rider_Items {
                     .addAltWeapon("kamenridercraft:gravity_capsem", "kamenridercraft:breakam_zeztzer_scythe")
                     .addAltWeapon("kamenridercraft:plasma_capsem", "kamenridercraft:inazuma_blaster")
                     .addAltWeapon("kamenridercraft:booster_capsem", "kamenridercraft:inazuma_blaster_greatsword")
-                    .addAltWeapon("kamenridercraft:dualmare_capsem", "kamenridercraft:triple_zeztzer").AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:dualmare_capsem", "kamenridercraft:triple_zeztzer")
+                    .addAltBelt("kamenridercraft:exdreamrise_capsem", "kamenridercraft:zeztz_exdream_driver").AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonsRiderItems.AMAZONS_DRIVER_ALPHA.get())

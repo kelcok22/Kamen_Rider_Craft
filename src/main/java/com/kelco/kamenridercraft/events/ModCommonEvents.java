@@ -12,6 +12,7 @@ import com.kelco.kamenridercraft.entity.EntityAttributes;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.AnkhEntity;
 import com.kelco.kamenridercraft.entity.mobs.bosses.ShadowmoonEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
@@ -44,6 +45,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
@@ -81,6 +83,7 @@ import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
@@ -102,6 +105,15 @@ public class ModCommonEvents {
 
         private static ResourceLocation lootTable;
         private static final ResourceLocation LOOT_TABLE_PATH = lootTable;
+
+        @SubscribeEvent
+        public void onPlayerDisconnect(PlayerEvent.PlayerLoggedOutEvent event) {
+            if (event.getEntity() instanceof ServerPlayer player) {
+                player.serverLevel().getAllEntities().forEach(entity -> {
+                    if (entity instanceof BaseSummonEntity summon) summon.despawn();
+                });
+            }
+        }
 
         @SubscribeEvent
         public void DropsEvent(BlockDropsEvent event) {

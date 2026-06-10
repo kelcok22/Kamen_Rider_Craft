@@ -6,7 +6,6 @@
 package com.kelco.kamenridercraft.client.models;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -17,13 +16,13 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class ElementaryInvesModel<T extends Mob> extends PlayerModel<T> {
+public class ElementaryInvesModel<T extends Mob> extends BasicMobModel<T> {
 	public static final ModelLayerLocation LAYER_LOCATION =
 			new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "elementary_inves_red"), "main");
 
 
 	public ElementaryInvesModel(ModelPart p_170810_) {
-		super(p_170810_,false);
+		super(p_170810_);
 
 
 	}
@@ -58,22 +57,8 @@ public class ElementaryInvesModel<T extends Mob> extends PlayerModel<T> {
 		return LayerDefinition.create(meshdefinition, 128, 64);
 	}
 
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
-		this.leftPants.copyFrom(this.leftLeg);
-		this.rightPants.copyFrom(this.rightLeg);
-		this.leftSleeve.copyFrom(this.leftArm);
-		this.rightSleeve.copyFrom(this.rightArm);
-		this.jacket.copyFrom(this.body);
-	}
 	public static void addHead(MeshDefinition mesh) {
 		PartDefinition partdefinition = mesh.getRoot();
 		PartDefinition partdefinition1 = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-4.0F, -6.0F, -6.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
 	}
-
-
-
-
-
 }

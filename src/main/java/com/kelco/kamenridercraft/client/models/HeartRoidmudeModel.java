@@ -6,7 +6,6 @@
 package com.kelco.kamenridercraft.client.models;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -17,13 +16,13 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class HeartRoidmudeModel<T extends Mob> extends PlayerModel<T> {
+public class HeartRoidmudeModel<T extends Mob> extends BasicMobModel<T> {
 	public static final ModelLayerLocation LAYER_LOCATION =
 			new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "heart_roidmude"), "main");
 
 
 	public HeartRoidmudeModel(ModelPart p_170810_) {
-		super(p_170810_,false);
+		super(p_170810_);
 
 
 	}
