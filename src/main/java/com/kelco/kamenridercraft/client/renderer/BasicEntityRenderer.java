@@ -24,7 +24,11 @@ public class BasicEntityRenderer  extends  HumanoidMobRenderer<BaseHenchmenEntit
 	public BasicEntityRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
 		super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)),1,1,1,1);
 		this.addLayer(new HumanoidArmorLayer<>(this, new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
+	}
 
+	@Override
+	protected float getShadowRadius(BaseHenchmenEntity entity) {
+		return this.shadowRadius/2;
 	}
 
 	@Override

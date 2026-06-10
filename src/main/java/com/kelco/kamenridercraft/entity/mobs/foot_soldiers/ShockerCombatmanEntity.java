@@ -2,12 +2,14 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
+import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +27,10 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
         if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) NAME = "shocker_combatman_christmas";
         else NAME = "shocker_combatman";
         this.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
-
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGOCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(IchigoRiderItems.SHOCKER_BELT.get()));
     }
 
 
