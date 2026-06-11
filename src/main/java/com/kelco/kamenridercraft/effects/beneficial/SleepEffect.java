@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.effects.neutral;
+package com.kelco.kamenridercraft.effects.beneficial;
 
 import net.minecraft.world.effect.InstantenousMobEffect;
 import net.minecraft.world.effect.MobEffectCategory;

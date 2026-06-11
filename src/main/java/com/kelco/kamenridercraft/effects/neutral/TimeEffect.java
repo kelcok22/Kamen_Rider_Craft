@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.effects.harmful;
+package com.kelco.kamenridercraft.effects.neutral;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.InstantenousMobEffect;
