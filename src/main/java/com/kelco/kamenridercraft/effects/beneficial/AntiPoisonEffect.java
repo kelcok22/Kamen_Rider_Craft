@@ -1,0 +1,29 @@
+package com.kelco.kamenridercraft.effects.beneficial;
+
+
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+
+
+public class AntiPoisonEffect extends MobEffect {
+
+
+    public AntiPoisonEffect(MobEffectCategory mobEffectCategory, int color) {
+        super(mobEffectCategory, color);
+    }
+
+    @Override
+    public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
+        return true;
+    }
+
+    @Override
+    public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
+        if (!livingEntity.level().isClientSide()) {
+            livingEntity.removeEffect(MobEffects.POISON);
+        }
+        return true;
+    }
+}

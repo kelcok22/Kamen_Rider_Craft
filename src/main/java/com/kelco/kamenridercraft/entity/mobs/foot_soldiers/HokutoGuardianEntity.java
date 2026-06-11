@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;

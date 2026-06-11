@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.ryuki;
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;

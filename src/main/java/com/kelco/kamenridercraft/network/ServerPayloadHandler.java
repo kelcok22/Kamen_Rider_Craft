@@ -20,7 +20,7 @@ import java.util.UUID;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.*;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class ServerPayloadHandler {
 

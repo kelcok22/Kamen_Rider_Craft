@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.reiwa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.VistampBar;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.revice.CyclotronDriverItem;

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.ArmMonsterStatueItem;

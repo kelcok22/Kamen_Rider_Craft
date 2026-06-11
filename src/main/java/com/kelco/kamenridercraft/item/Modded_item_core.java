@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.BaseSwordItem;

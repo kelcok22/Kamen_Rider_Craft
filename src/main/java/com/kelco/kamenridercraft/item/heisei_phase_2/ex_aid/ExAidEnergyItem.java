@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid;
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
 import net.minecraft.stats.Stats;

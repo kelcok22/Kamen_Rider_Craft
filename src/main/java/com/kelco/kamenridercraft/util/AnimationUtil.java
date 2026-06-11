@@ -7,7 +7,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.neoforge.network.PacketDistributor;
 
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.*;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class AnimationUtil {
     public static boolean canPose (LivingEntity poser) {

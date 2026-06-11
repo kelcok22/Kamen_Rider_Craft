@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.reiwa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.CapsemDropper;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.*;

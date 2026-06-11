@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.build;
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;

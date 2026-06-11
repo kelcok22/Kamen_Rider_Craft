@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;

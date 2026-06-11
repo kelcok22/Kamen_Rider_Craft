@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.item.showa.BlackRiderItems;

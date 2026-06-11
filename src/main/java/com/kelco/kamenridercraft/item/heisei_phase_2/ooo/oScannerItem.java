@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;

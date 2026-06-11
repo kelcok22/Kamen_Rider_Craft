@@ -7,7 +7,7 @@ import com.kelco.kamenridercraft.client.models.DoggaModel;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.client.models.MidaredoujiModel;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.EntityAttributes;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.AnkhEntity;
@@ -120,7 +120,8 @@ public class ModCommonEvents {
 
             if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
                 if (event.getBreaker() instanceof Player player) {
-                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()&player.getAttribute(Attributes.TOJIMA).getValue()<100)player.getAttribute(Attributes.TOJIMA).setBaseValue(player.getAttribute(Attributes.TOJIMA).getValue()+1);
+                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() & player.getAttribute(Attributes.TOJIMA).getValue() < 100)
+                        player.getAttribute(Attributes.TOJIMA).setBaseValue(player.getAttribute(Attributes.TOJIMA).getValue() + 1);
                 }
             }
 
@@ -151,7 +152,8 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
 
-                if (event.getEntity().getAttribute(Attributes.TOJIMA).getValue()>99&event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem()==ExtraRiderItems.ICHIGO_MASK.asItem())event.getEntity().addEffect(new MobEffectInstance(EffectCore.RIDER_SPIRIT, 30, 0, false, false));
+            if (event.getEntity().getAttribute(Attributes.TOJIMA).getValue() > 99 & event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem())
+                event.getEntity().addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 30, 0, false, false));
 
 
             ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
@@ -183,80 +185,82 @@ public class ModCommonEvents {
         public void onEntityTick(EntityTickEvent.Post event) {
 
 
-            if (event.getEntity() instanceof LivingEntity player ) {
+            if (event.getEntity() instanceof LivingEntity player) {
 
-               if (player.level().isClientSide()) {
-                   float X = 0;
-                   float Y = 0;
-                   float Z = 0;
-                   boolean isPlayer = false;
-                   if (player instanceof Mob mob) {
-                       if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) {
-                           X = mob.getViewXRot(1);
-                           Vec3 look = player.getLookAngle();
-                           if (look.x > 0 & player.getDeltaMovement().x > 0) Z = 1;
-                           else if (look.z > 0 & player.getDeltaMovement().z > 0) Z = 1;
-                           else if (look.x < 0 & player.getDeltaMovement().x < 0) Z = 1;
-                           else if (look.z < 0 & player.getDeltaMovement().z < 0) Z = 1;
-                           else Z = -1;
-                       }
-                       player.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.BALL_ROT).getBaseValue());
-                       player.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
-                       player.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue(player.getAttribute(Attributes.CAPE_ROT).getBaseValue());
+                if (player.level().isClientSide()) {
+                    float X = 0;
+                    float Y = 0;
+                    float Z = 0;
+                    boolean isPlayer = false;
+                    if (player instanceof Mob mob) {
+                        if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) {
+                            X = mob.getViewXRot(1);
+                            Vec3 look = player.getLookAngle();
+                            if (look.x > 0 & player.getDeltaMovement().x > 0) Z = 1;
+                            else if (look.z > 0 & player.getDeltaMovement().z > 0) Z = 1;
+                            else if (look.x < 0 & player.getDeltaMovement().x < 0) Z = 1;
+                            else if (look.z < 0 & player.getDeltaMovement().z < 0) Z = 1;
+                            else Z = -1;
+                        }
+                        player.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.BALL_ROT).getBaseValue());
+                        player.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+                        player.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue(player.getAttribute(Attributes.CAPE_ROT).getBaseValue());
 
-                       if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
-                           if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
+                            if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
 
-                               float cape = (float) player.getAttribute(Attributes.CAPE_ROT).getBaseValue();
-                               float ball = 0;
-                               if (Z > 0 & cape > -0.7 & !player.isSwimming())
-                                   cape = cape - 0.01f - (player.getSpeed() / 10);
-                               else if (Z > 0 & cape > -0.7 & !player.isSwimming())
-                                   cape = 0;
-                               else if (X == 0 & Z < 0 & cape < 0) cape = cape + 0.2f;
-                               else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & Z == 0 & cape < -0.7 || X == 0 & cape < 0 & player.isSwimming())
-                                   cape = cape + 0.02f;
-                               if (X > 0) {
-                                   ball = 0.2f;
-                                   if (isPlayer & Z == 0 & cape > -0.7)
-                                       cape = cape - 0.02f - (player.getSpeed() / 10);
-                               }
-                               if (X < 0) {
-                                   ball = -0.2f;
-                                   if (isPlayer & Z == 0 & cape > -0.7)
-                                       cape = cape - 0.02f - (player.getSpeed() / 10);
-                               }
-                               //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2) cape = cape - 0.05f;
+                                float cape = (float) player.getAttribute(Attributes.CAPE_ROT).getBaseValue();
+                                float ball = 0;
+                                if (Z > 0 & cape > -0.7 & !player.isSwimming())
+                                    cape = cape - 0.01f - (player.getSpeed() / 10);
+                                else if (Z > 0 & cape > -0.7 & !player.isSwimming())
+                                    cape = 0;
+                                else if (X == 0 & Z < 0 & cape < 0) cape = cape + 0.2f;
+                                else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & Z == 0 & cape < -0.7 || X == 0 & cape < 0 & player.isSwimming())
+                                    cape = cape + 0.02f;
+                                if (X > 0) {
+                                    ball = 0.2f;
+                                    if (isPlayer & Z == 0 & cape > -0.7)
+                                        cape = cape - 0.02f - (player.getSpeed() / 10);
+                                }
+                                if (X < 0) {
+                                    ball = -0.2f;
+                                    if (isPlayer & Z == 0 & cape > -0.7)
+                                        cape = cape - 0.02f - (player.getSpeed() / 10);
+                                }
+                                //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2) cape = cape - 0.05f;
 
-                               player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
-                               player.getAttribute(Attributes.CAPE_ROT).setBaseValue(cape);
-                           }
-                           if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
-                               float wheel = 0;
-                               if (Z > 0) wheel = -0.1f;
-                               if (Z < 0) wheel = 0.1f;
-                               player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
-                               float ball = 0;
-                               if (X > 0) {
-                                   ball = 0.5f;
-                                   if (Z == 0) wheel = -0.1f;
-                               }
-                               if (X < 0) {
-                                   ball = -0.5f;
-                                   if (Z == 0) wheel = -0.1f;
-                               }
-                               player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
-                               player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
-                           }
-                       }
-                   }
-               }
-                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0)player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()-1);
-                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<=0)player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(0);
+                                player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
+                                player.getAttribute(Attributes.CAPE_ROT).setBaseValue(cape);
+                            }
+                            if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
+                                float wheel = 0;
+                                if (Z > 0) wheel = -0.1f;
+                                if (Z < 0) wheel = 0.1f;
+                                player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
+                                float ball = 0;
+                                if (X > 0) {
+                                    ball = 0.5f;
+                                    if (Z == 0) wheel = -0.1f;
+                                }
+                                if (X < 0) {
+                                    ball = -0.5f;
+                                    if (Z == 0) wheel = -0.1f;
+                                }
+                                player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
+                                player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
+                            }
+                        }
+                    }
                 }
+                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() != 0)
+                    player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() - 1);
+                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() <= 0)
+                    player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(0);
+            }
 
-                if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(Attributes.CLIMBING).getValue() != 0) {
+            if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(Attributes.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(Attributes.CLIMBING).getValue()), initialVec.z);
@@ -437,7 +441,6 @@ public class ModCommonEvents {
         }
 
 
-
         @SubscribeEvent
         public void addLivingDamageEvent(LivingDeathEvent event) {
             if (event.getSource().getEntity() instanceof Player player) {
@@ -498,8 +501,8 @@ public class ModCommonEvents {
                                 event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
                     }
 
-                    if (_livEnt.hasEffect(EffectCore.RIDER_SPIRIT) && _livEnt.getMainHandItem().isEmpty()) {
-                        ((ServerLevel)event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getEyeY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
+                    if (_livEnt.hasEffect(EffectCore.KNOCKBACK_BOOST) && _livEnt.getMainHandItem().isEmpty()) {
+                        ((ServerLevel) event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getEyeY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
                     }
 
                     if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND)) {

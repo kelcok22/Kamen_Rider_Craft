@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.base_items;
 
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
@@ -20,7 +20,7 @@ public class MaskItem extends BaseItem implements Equipable {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         super.inventoryTick(stack, level, entity, slotId, isSelected);
-        if (slotId == 39 && this.toString().equals("kamenridercraft:ichigo_mask") && ((LivingEntity) entity).hasEffect(EffectCore.RIDER_SPIRIT) && level instanceof  ServerLevel serverLevel) {
+        if (slotId == 39 && this.toString().equals("kamenridercraft:ichigo_mask") && ((LivingEntity) entity).hasEffect(EffectCore.KNOCKBACK_BOOST) && level instanceof  ServerLevel serverLevel) {
             serverLevel.sendParticles(ParticleTypes.RAIN, entity.getX(), entity.getEyeY(), entity.getZ(), 1, 0, 0, 0, 0.05);
 
         }

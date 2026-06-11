@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.IS_POSING;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypeRegistry.POSE_COOLDOWN;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.IS_POSING;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.POSE_COOLDOWN;
 
 @Mixin(value = LivingEntity.class, priority = 899)
 public class LivingEntityMixin {

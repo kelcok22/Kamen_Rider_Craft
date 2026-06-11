@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.reiwa.zero_one;
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
 import com.kelco.kamenridercraft.world.attribute.Attributes;

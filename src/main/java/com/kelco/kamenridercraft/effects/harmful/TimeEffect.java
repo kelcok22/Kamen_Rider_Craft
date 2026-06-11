@@ -1,0 +1,21 @@
+package com.kelco.kamenridercraft.effects.harmful;
+
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.effect.InstantenousMobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.LivingEntity;
+
+public class TimeEffect extends InstantenousMobEffect {
+
+    public TimeEffect(MobEffectCategory mobEffectCategory, int color) {
+        super(mobEffectCategory, color);
+    }
+
+    @Override
+    public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
+        if (livingEntity.level() instanceof ServerLevel level) {
+            level.setDayTime(level.dayTime() + 10);
+        }
+        return true;
+    }
+}

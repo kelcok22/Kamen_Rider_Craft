@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.ServerConfig;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;

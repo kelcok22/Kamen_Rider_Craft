@@ -13,27 +13,26 @@ import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
 import net.minecraft.resources.ResourceLocation;
 
 
-public class BasicEntityRenderer  extends  HumanoidMobRenderer<BaseHenchmenEntity, BasicMobModel<BaseHenchmenEntity>>  {
+public class BasicEntityRenderer extends HumanoidMobRenderer<BaseHenchmenEntity, BasicMobModel<BaseHenchmenEntity>> {
 
 
-	public BasicEntityRenderer(EntityRendererProvider.Context ctx) {
-		this(ctx, ModelLayers.PLAYER);
-	}
+    public BasicEntityRenderer(EntityRendererProvider.Context ctx) {
+        this(ctx, ModelLayers.PLAYER);
+    }
 
-	
-	public BasicEntityRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
-		super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)),1,1,1,1);
-		this.addLayer(new HumanoidArmorLayer<>(this, new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
-	}
 
-	@Override
-	protected float getShadowRadius(BaseHenchmenEntity entity) {
-		return this.shadowRadius/2;
-	}
+    public BasicEntityRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation modelLayer) {
+        super(ctx, new BasicMobModel<>(ctx.bakeLayer(modelLayer)), 1, 1, 1, 1);
+        this.addLayer(new HumanoidArmorLayer<>(this, new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
+    }
 
-	@Override
-	public ResourceLocation getTextureLocation(BaseHenchmenEntity p_114482_) {
-		
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/"+p_114482_.NAME+".png");
-	}
+    @Override
+    protected float getShadowRadius(BaseHenchmenEntity baseHenchmenEntity) {
+        return this.shadowRadius / 2;
+    }
+
+    @Override
+    public ResourceLocation getTextureLocation(BaseHenchmenEntity baseHenchmenEntity) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/" + baseHenchmenEntity.NAME + ".png");
+    }
 }

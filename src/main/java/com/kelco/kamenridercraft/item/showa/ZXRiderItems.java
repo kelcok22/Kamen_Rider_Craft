@@ -37,7 +37,7 @@ public class ZXRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            }.hasSD().allowRiderKick().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUSANOO_BELT_CORE = ITEMS.register("susanoo_belt_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","susunaoo_zx","susanoo_belt_belt",

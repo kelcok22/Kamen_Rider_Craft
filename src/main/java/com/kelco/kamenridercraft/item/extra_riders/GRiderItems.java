@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.extra_riders;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;

@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import com.kelco.kamenridercraft.effects.effect_core.EffectCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
 import net.minecraft.ChatFormatting;
