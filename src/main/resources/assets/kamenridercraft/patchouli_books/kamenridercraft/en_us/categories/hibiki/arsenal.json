@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:hibiki/main",
     "name": "Hibiki Arsenal",
-    "description": "Every weapon and tool used by the Hibiki Riders. These can be repaired in an anvil using $(l:hibiki/items/oni_ore)Akane Taka Disk Animals$(/l).",
+    "description": "Every weapon and tool used by the Hibiki Riders. These can be repaired in an anvil using $(l:hibiki/items/oni_ore)Red Onishi$(/l).",
     "icon": "kamenridercraft:ongekibo_rekka",
     "sortnum": 3
 }

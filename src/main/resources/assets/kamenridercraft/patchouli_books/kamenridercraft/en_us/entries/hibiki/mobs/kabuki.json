@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 10% chance to spawn from a $(l:hibiki/mobs/makamou_ninja_group)Makamou Ninja Group$(/l)$(br2)Drops$(li)2-4 $(l:hibiki/items/oni_orehell)Asagi Washi Disk Animals$(/l)$(li)1 $(l:hibiki/items/henshin_onsa#henshin_onsa_kabuki)Henshin Onsa (Kabuki)$(/l)"
+			"text": "Has a 10% chance to spawn from a $(l:hibiki/mobs/makamou_ninja_group)Makamou Ninja Group$(/l)$(br2)Drops$(li)2-4 $(l:hibiki/items/oni_orehell)Cyan Onishi$(/l)$(li)1 $(l:hibiki/items/henshin_onsa#henshin_onsa_kabuki)Henshin Onsa (Kabuki)$(/l)"
 		}
 	]
 }

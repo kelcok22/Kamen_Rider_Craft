@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to obtain Disk Animals$(br2)Requires an iron pickaxe or better$(br2)$(l)No longer spawns naturally as of the 2025 Halloween update"
+			"text": "Mine this block to obtain Disk Animals$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:deepslate_stone_hibiki",
 			"title": " ",
-            "text": "Drops:$(li)$(l:hibiki/items/oni_ore)Akane Taka Disk Animal$(/l) (60%)$(li)$(l:hibiki/items/oni_orehell)Asagi Washi Disk Animal$(/l) (40%)"
+            "text": "Drops:$(li)$(l:hibiki/items/oni_ore)Red Onishi$(/l) (60%)$(li)$(l:hibiki/items/oni_orehell)Cyan Onishi$(/l) (40%)"
 		}
 	]
 }
