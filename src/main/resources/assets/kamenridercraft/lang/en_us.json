@@ -845,7 +845,11 @@
 "loot.kamenridercraft.holy_wing":"§bHoly Wing!",
 "loot.kamenridercraft.crosshopper":"§6Crosshopper!",
 
-"message.kamenridercraft.woz_shinobi":"§aAction! Touei! Future Time! §5Dare ja? Ore ja? Ninja! Futurering Shinobi! Shinobi!",
+"message.kamenridercraft.wiseman_explode":"Explode, now.",
+"message.kamenridercraft.wiseman_teleport":"Teleport, now.",
+
+
+  "message.kamenridercraft.woz_shinobi":"§aAction! Touei! Future Time! §5Dare ja? Ore ja? Ninja! Futurering Shinobi! Shinobi!",
 "message.kamenridercraft.woz_quiz":"§aAction! Touei! Future Time! §4Fashion! Passion! Question! §9Futurering Quiz! Quiz!",
 "message.kamenridercraft.woz_kikai":"§aAction! Touei! Future Time! §6Dekai! Hakai! Gōkai! Futurering Kikai! Kikai!",
 
