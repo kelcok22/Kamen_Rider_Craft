@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.effects.neutral;
+package com.kelco.kamenridercraft.effects.beneficial;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;

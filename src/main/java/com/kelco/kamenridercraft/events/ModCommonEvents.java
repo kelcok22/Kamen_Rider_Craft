@@ -505,37 +505,64 @@ public class ModCommonEvents {
                         ((ServerLevel) event.getEntity().level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL, event.getEntity().getX(), event.getEntity().getEyeY(), event.getEntity().getZ(), 1, 0, 0, 0, 0.05);
                     }
 
-                    if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND)) {
-                        if (_livEnt.getMainHandItem().isEmpty()) {
-                            event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, _livEnt.getEffect(EffectCore.RIDER_POISON_HAND).getAmplifier(), true, true));
-                        }
-                    }
-                    if (_livEnt.hasEffect(EffectCore.FIRE_PUNCH)) {
-                        if (_livEnt.getMainHandItem().isEmpty()) {
-                            event.getEntity().igniteForSeconds(_livEnt.getEffect(EffectCore.FIRE_PUNCH).getAmplifier() + 1);
-                        }
-                    }
-                    if (_livEnt.hasEffect(EffectCore.FIRE_SLASH)) {
-                        if (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem) {
-                            event.getEntity().igniteForSeconds(_livEnt.getEffect(EffectCore.FIRE_SLASH).getAmplifier() + 1);
-                        }
-
-                    }
                     if (_livEnt.hasEffect(EffectCore.THUNDER_PUNCH)) {
                         if (_livEnt.getMainHandItem().isEmpty()) {
                             LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, _livEnt.level());
                             thunder.setPos(event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
                             event.getEntity().level().addFreshEntity(thunder);
                         }
-
                     }
+
                     if (_livEnt.hasEffect(EffectCore.THUNDER_SLASH)) {
                         if (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem) {
                             LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, _livEnt.level());
                             thunder.setPos(event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
                             event.getEntity().level().addFreshEntity(thunder);
                         }
+                    }
 
+
+                    if (_livEnt.hasEffect(EffectCore.ELECTRIC_PUNCH) && _livEnt.getMainHandItem().isEmpty()) {
+                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_SHOCK).getAmplifier(), false, false));
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.ELECTRIC_SLASH) && (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem)) {
+                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_SHOCK).getAmplifier(), false, false));
+                    }
+
+
+                    if (_livEnt.hasEffect(EffectCore.RIDER_POISON_HAND) || _livEnt.hasEffect(EffectCore.POISON_PUNCH)) {
+                        if (_livEnt.getMainHandItem().isEmpty()) {
+                            event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, 1, true, true));
+                        }
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.POISON_SLASH) && (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem)) {
+                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, 1, true, true));
+                    }
+
+
+                    if (_livEnt.hasEffect(EffectCore.WITHER_PUNCH)) {
+                        if (_livEnt.getMainHandItem().isEmpty()) {
+                            event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SHOT).getAmplifier(), false, true));
+                        }
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.WITHER_SLASH) && (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem)) {
+                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SHOT).getAmplifier(), false, true));
+                    }
+
+
+                    if (_livEnt.hasEffect(EffectCore.FIRE_PUNCH)) {
+                        if (_livEnt.getMainHandItem().isEmpty()) {
+                            event.getEntity().igniteForSeconds(_livEnt.getEffect(EffectCore.FIRE_PUNCH).getAmplifier() + 1);
+                        }
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.FIRE_SLASH)) {
+                        if (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem) {
+                            event.getEntity().igniteForSeconds(_livEnt.getEffect(EffectCore.FIRE_SLASH).getAmplifier() + 1);
+                        }
                     }
 
                     if (event.getEntity().hasEffect(EffectCore.FIRE_ARMOR)) {
@@ -549,6 +576,7 @@ public class ModCommonEvents {
                             event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(EffectCore.EXPLOSION_PUNCH).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
                         }
                     }
+
                     if (_livEnt.hasEffect(EffectCore.EXPLOSION_SLASH)) {
                         if (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem) {
                             boolean flag = event.getEntity().level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
@@ -556,11 +584,30 @@ public class ModCommonEvents {
                         }
                     }
 
+
                     if (event.getEntity().hasEffect(EffectCore.REFLECT)) {
                         event.getSource().getEntity().hurt(event.getSource(), (event.getOriginalDamage()) * (1 + event.getEntity().getEffect(EffectCore.REFLECT).getAmplifier() + 1));
                     }
 
                 } else if (event.getSource().is(DamageTypes.ARROW) || event.getSource().is(DamageTypes.MOB_PROJECTILE)) {
+                    if (_livEnt.hasEffect(EffectCore.THUNDER_SHOT)) {
+                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, _livEnt.level());
+                        thunder.setPos(event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
+                        event.getEntity().level().addFreshEntity(thunder);
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.ELECTRIC_SHOT)) {
+                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_SHOCK).getAmplifier(), false, false));
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.POISON_SHOT)) {
+                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, 1, false, true));
+                    }
+
+                    if (_livEnt.hasEffect(EffectCore.WITHER_SHOT)) {
+                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SHOT).getAmplifier(), false, true));
+                    }
+
                     if (_livEnt.hasEffect(EffectCore.FIRE_SHOT)) {
                         event.getEntity().setRemainingFireTicks(25 * (Objects.requireNonNull(_livEnt.getEffect(EffectCore.FIRE_SHOT)).getAmplifier() + 1));
                     }
@@ -569,14 +616,6 @@ public class ModCommonEvents {
                         boolean flag = event.getEntity().level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
                         event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(EffectCore.EXPLOSION_SHOT).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
                     }
-                    if (_livEnt.hasEffect(EffectCore.THUNDER_SHOT)) {
-
-                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, _livEnt.level());
-                        thunder.setPos(event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
-                        event.getEntity().level().addFreshEntity(thunder);
-                    }
-
-
                 }
             }
         }

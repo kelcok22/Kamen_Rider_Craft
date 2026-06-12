@@ -360,11 +360,6 @@ public class NeoBaseBlasterItem extends BaseItem {
         return this;
     }
 
-    public NeoBaseBlasterItem setChargeEffect(String chargeEffect) {
-        this.chargingEffect = chargeEffect;
-        return this;
-    }
-
     public NeoBaseBlasterItem setRequiresActionMeter(int actionCost) {
         this.meterCost = actionCost;
         return this;

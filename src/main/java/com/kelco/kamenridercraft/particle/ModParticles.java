@@ -64,6 +64,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> RANDOM_SPARK_PARTICLES =
             PARTICLE_TYPES.register("random_spark_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> ELECTRIC_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("electric_spark_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> GLASS_PARTICLES =
             PARTICLE_TYPES.register("glass_particles", () -> new SimpleParticleType(true));
 
