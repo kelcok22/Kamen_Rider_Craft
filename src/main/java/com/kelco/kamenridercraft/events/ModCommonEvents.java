@@ -523,11 +523,11 @@ public class ModCommonEvents {
 
 
                     if (_livEnt.hasEffect(EffectCore.ELECTRIC_PUNCH) && _livEnt.getMainHandItem().isEmpty()) {
-                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_SHOCK).getAmplifier(), false, false));
+                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_PUNCH).getAmplifier(), false, false));
                     }
 
                     if (_livEnt.hasEffect(EffectCore.ELECTRIC_SLASH) && (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem)) {
-                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_SHOCK).getAmplifier(), false, false));
+                        event.getEntity().addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 500, _livEnt.getEffect(EffectCore.ELECTRIC_SLASH).getAmplifier(), false, false));
                     }
 
 
@@ -544,7 +544,7 @@ public class ModCommonEvents {
 
                     if (_livEnt.hasEffect(EffectCore.WITHER_PUNCH)) {
                         if (_livEnt.getMainHandItem().isEmpty()) {
-                            event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SHOT).getAmplifier(), false, true));
+                            event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_PUNCH).getAmplifier(), false, true));
                         }
                     }
 

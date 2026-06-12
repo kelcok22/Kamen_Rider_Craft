@@ -73,7 +73,7 @@ public class WisemanEntity extends BaseHenchmenEntity {
             }
 
             if (attackChance == 3 && this.timeSinceLastAttack >= 200 && this.distanceTo(player) < 10) {
-                player.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 2, 1, true, true));
+                player.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 20, 1, true, true));
                 player.displayClientMessage(Component.translatable("message.kamenridercraft.wiseman_explode"), true);
                 this.timeSinceLastAttack = 0;
             } else if (attackChance == 3 && this.timeSinceLastAttack >= 200) {
