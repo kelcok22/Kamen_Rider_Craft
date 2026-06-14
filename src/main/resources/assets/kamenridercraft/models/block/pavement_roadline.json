@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "kamenridercraft:block/pavement_roadline",
+    "bottom": "block/blackstone",
     "side": "block/blackstone",
     "top": "kamenridercraft:block/pavement_roadline"
   }
