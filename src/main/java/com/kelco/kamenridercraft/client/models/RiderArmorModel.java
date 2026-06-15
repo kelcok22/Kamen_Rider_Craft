@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 
+import com.kelco.kamenridercraft.item.heisei_phase_1.Kiva_Rider_Items;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.resources.ResourceLocation;
@@ -238,9 +239,14 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 }
 
                 GeoBone rightLegkick = this.getAnimationProcessor().getBone("rightLegkick");
+                GeoBone armorRightLeg = this.getAnimationProcessor().getBone("armorRightLeg");
                 if (rightLegkick != null) {
                     if (RiderDriverItem.isKicking(RIDER)) {
-                        rightLegkick.setHidden(false);
+                        if (belt == Kiva_Rider_Items.KIVAT_BELT.get()) {
+                            rightLegkick.setHidden(false);
+                            armorRightLeg.setHidden(true);
+                        }
+                        else rightLegkick.setHidden(false);
                     } else {
                         rightLegkick.setHidden(true);
                     }
