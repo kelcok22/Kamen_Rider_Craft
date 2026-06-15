@@ -289,7 +289,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addAlternative(DARK_DAMASHII.get()).alsoChange2ndSlot(DARK_DAMASHII.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addAlternative(DARK_DAMASHII.get()).alsoChange2ndSlot(DARK_DAMASHII.get()).ChangeModel("ghost.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_SPECTER_DAMASHII = ITEMS.register("zero_specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"zero_specter_damashii","specter","ghostdriver_belt",
