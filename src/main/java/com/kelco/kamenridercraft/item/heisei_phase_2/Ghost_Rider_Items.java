@@ -110,7 +110,7 @@ public class Ghost_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
+			}.AddNum(3).ChangeModel("mugen_damashii.geo.json").ChangeSlot(2).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> MUGEN_GHOST_EYECON = ITEMS.register("mugen_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_mugen","ghost","ghostdriver_belt",
