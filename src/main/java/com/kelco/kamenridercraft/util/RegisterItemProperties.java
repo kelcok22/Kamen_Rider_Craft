@@ -2,12 +2,15 @@ package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.compat.BetterCombatAttackListener;
+import com.kelco.kamenridercraft.entity.mobs.bosses.MagiaEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.TrilobiteMagiaEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ZuGumunBaEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseSwordItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
 import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -36,6 +39,7 @@ public class RegisterItemProperties {
         registerBladeItems();
         registerHibikiItems();
         registerKabutoItems();
+        registerZeroOneItems();
         registerGeatsItems();
         registerGotchardItems();
         registerOutsidersItems();
@@ -237,6 +241,28 @@ public class RegisterItemProperties {
         );
     }
 
+    public static void registerZeroOneItems() {
+        ItemProperties.register(Zero_One_Rider_Items.AIMS_RISEPHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174637_ == null) {
+                        return 0.0F;
+                    } else {
+                        if (p_174637_ instanceof Player player) {
+
+                            List<LivingEntity> nearbyEnemies = player.level().getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(15), entity ->
+                                    (entity instanceof TrilobiteMagiaEntity));
+                            for (LivingEntity enemy : nearbyEnemies) {
+                                if (enemy != null) {
+                                    return 1;
+                                }
+                            }
+                        }
+                        return 0;
+                    }
+                    //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+                }
+        );
+
+    }
     public static void registerGeatsItems() {
         ItemProperties.register(Geats_Rider_Items.LASER_RAISE_RISER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {

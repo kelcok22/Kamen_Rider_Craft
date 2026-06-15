@@ -282,6 +282,9 @@ public class Rider_Blocks {
     public static final DeferredBlock<Block> DARK_TREAT_GLASS = registerBlock("dark_treat",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0, 0), DyeColor.BROWN).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
+    public static final DeferredBlock<GochizoJarBlock> GOCHIZO_JAR = registerBlock("gochizo_jar",
+            () -> new GochizoJarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).noOcclusion()));
+
     public static final DeferredBlock<Block> CAPSEM_DROPPER = registerBlock("capsem_dropper",
             () -> new CapsemDropper(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));

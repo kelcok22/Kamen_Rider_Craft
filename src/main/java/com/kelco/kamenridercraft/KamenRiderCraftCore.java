@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
+import com.kelco.kamenridercraft.block.entity.renderer.GochizoJarBlockEntityRenderer;
 import com.kelco.kamenridercraft.block.entity.renderer.PandoraPanelBlockEntityRenderer;
 import com.kelco.kamenridercraft.block.entity.renderer.PlinthBlockEntityRenderer;
 import com.kelco.kamenridercraft.client.KeyBindings;
@@ -257,6 +258,7 @@ public class KamenRiderCraftCore {
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
             event.registerBlockEntityRenderer(ModBlockEntities.PANDORA_PANEL_BE.get(), PandoraPanelBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.PLINTH_BE.get(), PlinthBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GOCHIZO_JAR_BE.get(), GochizoJarBlockEntityRenderer::new);
         }
 
         @SubscribeEvent
@@ -1356,6 +1358,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(Rider_Blocks.GLASS_DOOR);
                 event.accept(Rider_Blocks.PLINTH);
+                event.accept(Rider_Blocks.GOCHIZO_JAR);
 
 
             } else if (event.getTab() == CreativeTabRegistry.RiderEggTab.get()) {

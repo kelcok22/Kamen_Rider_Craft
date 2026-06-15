@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/gochizo_jar" },
+    "facing=south": { "model": "kamenridercraft:block/gochizo_jar", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/gochizo_jar", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/gochizo_jar", "y": 90 }
+  }
+ }

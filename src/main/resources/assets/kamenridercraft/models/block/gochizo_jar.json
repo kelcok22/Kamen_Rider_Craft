@@ -1,0 +1,51 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "kamenridercraft:block/gochizo_jar",
+		"particle": "kamenridercraft:block/gochizo_jar"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 7, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 7], "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 7], "texture": "#0"},
+				"south": {"uv": [0, 0, 6, 7], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 7], "texture": "#0"},
+				"up": {"uv": [0, 7, 6, 13], "texture": "#0"},
+				"down": {"uv": [0, 7, 6, 13], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 7, 6],
+			"to": [10, 10, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 7, 6]},
+			"faces": {
+				"north": {"uv": [6, 0, 10, 3], "texture": "#0"},
+				"east": {"uv": [6, 0, 10, 3], "texture": "#0"},
+				"south": {"uv": [6, 0, 10, 3], "texture": "#0"},
+				"west": {"uv": [6, 0, 10, 3], "texture": "#0"},
+				"up": {"uv": [10, 0, 14, 4], "texture": "#0"},
+				"down": {"uv": [6, 3, 10, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 8, 5],
+			"to": [11, 9, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 8, 5]},
+			"faces": {
+				"north": {"uv": [10, 4, 16, 5], "texture": "#0"},
+				"east": {"uv": [10, 4, 16, 5], "texture": "#0"},
+				"south": {"uv": [10, 4, 16, 5], "texture": "#0"},
+				"west": {"uv": [10, 4, 16, 5], "texture": "#0"},
+				"up": {"uv": [10, 5, 16, 11], "texture": "#0"},
+				"down": {"uv": [10, 5, 16, 11], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

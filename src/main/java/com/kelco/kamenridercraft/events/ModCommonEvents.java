@@ -697,24 +697,27 @@ public class ModCommonEvents {
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Modded_item_core.RIDER_CIRCUIT.get(), 5),
+                        new ItemStack(Items.EMERALD, 1), 10, 8, 0.02F));
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(ShinRiderItems.SHIN_STONE.get(), 1), 10, 8, 0.02F));
-                trades.get(1).add((trader, rand) -> new MerchantOffer(
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(ZORiderItems.ZO_STONE.get(), 1), 10, 8, 0.02F));
-                trades.get(1).add((trader, rand) -> new MerchantOffer(
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(JRiderItems.J_STONE.get(), 1), 10, 8, 0.02F));
-                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(GRiderItems.GORO_WINE_BOTTLE.get(), 1), 10, 8, 0.02F));
-                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
                         new ItemStack(Modded_item_core.SINISTER_PACHINKO_BALL.get(), 1), 10, 8, 0.02F));
-                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                trades.get(4).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(Rider_Blocks.ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
-                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                trades.get(4).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(IchigoRiderItems.NOPHOON_CORE.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
@@ -733,6 +736,9 @@ public class ModCommonEvents {
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 30),
                         new ItemStack(Zero_One_Rider_Items.ZAIA_SPEC.get(), 1), 10, 8, 0.02F));
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 4),
+                        new ItemStack(Zero_One_Rider_Items.AIMS_RISEPHONE.get(), 1), 10, 8, 0.02F));
                 trades.get(5).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
                         new ItemStack(MusicDiscItems.REAL_X_EYEZ_MUSIC_DISC.get(), 1), 10, 8, 0.02F));
@@ -759,6 +765,9 @@ public class ModCommonEvents {
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Gavv_Rider_Items.HEATPRESS, 3),
                         new ItemStack(Rider_Blocks.DARK_TREAT_GLASS.get(), 1), 10, 8, 0.02F));
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 3),
+                        new ItemStack(Rider_Blocks.GOCHIZO_JAR.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Gavv_Rider_Items.HEATPRESS, 5),
                         new ItemStack(Gavv_Rider_Items.PURUJELLY_NOIR_GOCHIZO.get(), 1), 10, 8, 0.02F));
