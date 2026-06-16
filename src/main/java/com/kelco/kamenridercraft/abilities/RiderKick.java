@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.abilities;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -20,6 +21,28 @@ import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.A
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.ABILITY_TICK;
 
 public class RiderKick {
+    public static void kabutoKick(LivingEntity user) {
+        if (user.getData(ABILITY_TICK) == 0) {
+            user.setData(ABILITY_COOLDOWN, 100);
+            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("kabuto.rider_kick_wait", user.getStringUUID()));
+            user.setInvulnerable(true);
+        }
+        if (user.getData(ABILITY_TICK) > 10 && user.getData(ABILITY_TICK) < 60) {
+            ((ServerLevel) user.level()).sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(), user.getX(), user.getEyeY() - user.getScale() * 0.75, user.getZ(), 5, 0, 0, 0, 0);
+        }
+        if (user.getData(ABILITY_TICK) == 60) {
+            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("kabuto.rider_kick", user.getStringUUID()));
+        }
+        if (user.getData(ABILITY_TICK) > 60 && user.getData(ABILITY_TICK) < 70) {
+            detectHit(user);
+        }
+        if (user.getData(ABILITY_TICK) >= 70) {
+            cancelAbility(user);
+            return;
+        }
+        user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+    }
+
     public static void genericRiderKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
@@ -94,6 +117,30 @@ public class RiderKick {
             hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
         }
         user.resetFallDistance();
+        user.hurtMarked = true;
+        cancelAbility(user);
+    }
+
+    public static void kabutoKickHit(LivingEntity user, LivingEntity hitEnemy) {
+        float damageModifier = 15;
+
+        if (user.hasEffect(EffectCore.PUNCH)) {
+            damageModifier = damageModifier + user.getEffect(EffectCore.PUNCH).getAmplifier() + 1;
+        }
+
+        if (user.hasEffect(MobEffects.DAMAGE_BOOST)) {
+            damageModifier = damageModifier + (user.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() + 1) * 3;
+        }
+        DamageSource damageSource = new DamageSource(
+                user.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), user, user, user.position());
+
+        hitEnemy.hurt(damageSource, damageModifier);
+        hitEnemy.push(user.getLookAngle().scale(3));
+        ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION, user.getX(), user.getY() + 0.5, user.getZ(), 1, 0, 0, 0, 0);
+
+        if (hitEnemy.getHealth() < hitEnemy.getMaxHealth() / 3) {
+            hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
+        }
         user.hurtMarked = true;
         cancelAbility(user);
     }

@@ -67,7 +67,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(KABUTO_ZECTER_MASK.get()).setSlotOneAbility("clock_up", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.isGlowing().addSwitchForm(KABUTO_ZECTER_MASK.get()).setSlotOneAbility("clock_up", 1).setSlotTwoAbility("kabuto_rider_kick", 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> THEBEE_ZECTER_MASK = ITEMS.register("thebee_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(),"_masked","thebee","zect_buckle_thebee_belt_masked",

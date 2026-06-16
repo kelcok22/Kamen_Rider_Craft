@@ -61,6 +61,16 @@ public class AbilityUtil {
                         }
                     }
                     break;
+                case "kabuto_rider_kick":
+                    if (!user.isFallFlying()) {
+                        if (costMeter && abilityMeter.getValue() >= 150) {
+                            abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
+                            user.setData(USED_ABILITY, "kabuto_rider_kick");
+                        } else if (!costMeter) {
+                            user.setData(USED_ABILITY, "kabuto_rider_kick");
+                        }
+                    }
+                    break;
                 case "flight_boost":
                     if (costMeter && abilityMeter.getValue() >= 30) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() - 30);
@@ -93,6 +103,9 @@ public class AbilityUtil {
                     break;
                 case "rider_kick":
                     RiderKick.genericRiderKick(user);
+                    break;
+                case "kabuto_rider_kick":
+                    RiderKick.kabutoKick(user);
                     break;
                 case "flight_boost":
                     MiscAbilities.flightBoost(user);
