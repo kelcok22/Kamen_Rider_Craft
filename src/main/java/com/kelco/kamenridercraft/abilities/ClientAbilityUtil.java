@@ -76,6 +76,7 @@ public class ClientAbilityUtil {
             case "rider_punch", "tojima_punch" ->
                     ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/punch.png");
             case "rider_kick" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/rider_kick.png");
+            case "flight_boost" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/glide.png");
             case "clock_up" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/clock_up_pad.png");
             default -> null;
         };
