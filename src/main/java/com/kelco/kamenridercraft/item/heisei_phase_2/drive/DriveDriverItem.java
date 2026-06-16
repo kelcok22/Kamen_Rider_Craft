@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.drive;
 
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import com.kelco.kamenridercraft.world.inventory.ShiftCarHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -61,47 +61,47 @@ public class DriveDriverItem extends RiderDriverItem {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 		Item belt= stack.getItem();
-		if (belt!=Drive_Rider_Items.BANNO_DRIVER_BRONZE_DRIVE.get()&
-				belt!=Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()&
-				belt!=Drive_Rider_Items.METRO_PD_DRIVER_HONOH.get()&
-				belt!=Drive_Rider_Items.BRAIN_DRIVER.get()) {
+		if (belt!= DriveRiderItems.BANNO_DRIVER_BRONZE_DRIVE.get()&
+				belt!= DriveRiderItems.BANNO_DRIVER_GORD_DRIVE.get()&
+				belt!= DriveRiderItems.METRO_PD_DRIVER_HONOH.get()&
+				belt!= DriveRiderItems.BRAIN_DRIVER.get()) {
 
 			this.Has_basic_belt_info = false;
-			Item formItem = get_Form_Item(stack, 1);
-			Item formItem2 = get_Form_Item(stack, 2);
+			Item formItem = getFormItem(stack, 1);
+			Item formItem2 = getFormItem(stack, 2);
 
-			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
+			if (formItem == DriveRiderItems.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
 				tooltipComponents.add(Component.translatable("kamenridercraft.name.zero_drive"));
 			else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
-			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
+			if (formItem == DriveRiderItems.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
 				tooltipComponents.add(Component.translatable(formItem + ".zero_drive.form"));
 			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 
-			if (formItem2 == Drive_Rider_Items.BASIC_TIRE.get())
+			if (formItem2 == DriveRiderItems.BASIC_TIRE.get())
 				tooltipComponents.add(Component.translatable(formItem + ".tire.form"));
 			else tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 	@Override
-	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num)
+	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num)
 	{
-		boolean fly = rider instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
+		boolean fly = livingEntity instanceof Player player && (player.getAbilities().flying||player.isFallFlying());
 
-		if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()
-		|| Objects.equals(riderName, "drive") &get_Form_Item(itemstack,2)== Drive_Rider_Items.BASIC_TIRE.get()&&get_Form_Item(itemstack,1)== Drive_Rider_Items.SHIFT_DEAD_HEAT.get()){
-			if(rider.getHealth()<7) {
+		if (Objects.equals(riderName, "mach") & getFormItem(itemstack,2)== DriveRiderItems.BASIC_TIRE.get()&& getFormItem(itemstack,1)== DriveRiderItems.SHIFT_DEAD_HEAT_MACH.get()
+		|| Objects.equals(riderName, "drive") & getFormItem(itemstack,2)== DriveRiderItems.BASIC_TIRE.get()&& getFormItem(itemstack,1)== DriveRiderItems.SHIFT_DEAD_HEAT.get()){
+			if(livingEntity.getHealth()<7) {
 				return "tire/dead_heat_burst_tire";
 			}
-		}else if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_MAX_FLARE.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
+		}else if (Objects.equals(riderName, "mach") & getFormItem(itemstack,2)== DriveRiderItems.SHIFT_MAX_FLARE.get()&& getFormItem(itemstack,1)!= DriveRiderItems.SHIFT_DEAD_HEAT_MACH.get()){
 			return "tire/kourin_moerl_tire";
-		}else if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
+		}else if (Objects.equals(riderName, "mach") & getFormItem(itemstack,2)== DriveRiderItems.SHIFT_RUMBLE_DUMP.get()&& getFormItem(itemstack,1)!= DriveRiderItems.SHIFT_DEAD_HEAT_MACH.get()){
 			return "tire/kourin_arabull_tire";
-		}else if (Objects.equals(riderName, "mach") &get_Form_Item(itemstack,2)== Drive_Rider_Items.SHIFT_SPIN_MIXER.get()&&get_Form_Item(itemstack,1)!= Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get()){
+		}else if (Objects.equals(riderName, "mach") & getFormItem(itemstack,2)== DriveRiderItems.SHIFT_SPIN_MIXER.get()&& getFormItem(itemstack,1)!= DriveRiderItems.SHIFT_DEAD_HEAT_MACH.get()){
 			return "tire/kourin_mazerl_tire";
 		}
-		return "tire/"+get_Form_Item(itemstack,2).getFormName(fly);
+		return "tire/"+ getFormItem(itemstack,2).getFormName(fly);
 	}
 
 	@Override
@@ -111,12 +111,12 @@ public class DriveDriverItem extends RiderDriverItem {
 	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
 		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+			return getFormItem(itemstack, 1).getIsBeltGlowing();
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
 				case HEAD, CHEST ->{
-					return get_Form_Item(itemstack, 1).get_Is_Glowing();
+					return getFormItem(itemstack, 1).getIsGlowing();
 				}
 				case LEGS -> {
 					return false;

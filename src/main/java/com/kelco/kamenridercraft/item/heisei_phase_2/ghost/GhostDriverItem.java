@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -37,10 +37,10 @@ public class GhostDriverItem extends RiderDriverItem {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 		this.Has_basic_belt_info = false;
-		Item formItem = get_Form_Item(stack, 1);
-		Item formItem2 = get_Form_Item(stack, 2);
+		Item formItem = getFormItem(stack, 1);
+		Item formItem2 = getFormItem(stack, 2);
 		String rider=Rider;
-		if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
+		if (stack.getItem()== GhostRiderItems.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		tooltipComponents.add(Component.translatable("kamenridercraft.name." + rider));
 		if (Objects.equals(Rider, "ghost") || Objects.equals(Rider, "specter") || Objects.equals(Rider, "necrom")) {
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
@@ -53,11 +53,11 @@ public class GhostDriverItem extends RiderDriverItem {
 
 
 	@Override
-	public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+	public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag  tag)
 	{
-		if (get_Form_Item(belt, 1)==Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.FOURTYFIVE_HEISEI_DAMASHII.get()
-				||get_Form_Item(belt, 1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.MUGEN_DAMASHII.get()
-				||get_Form_Item(belt, 1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.SIN_SPECTER_DAMASHII.get()
+		if (getFormItem(belt, 1)== GhostRiderItems.FOURTYFIVE_HEISEI_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.FOURTYFIVE_HEISEI_DAMASHII.get()
+				|| getFormItem(belt, 1)== GhostRiderItems.MUGEN_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.MUGEN_DAMASHII.get()
+				|| getFormItem(belt, 1)== GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.SIN_SPECTER_DAMASHII.get()
 		) {
 			Consumer<CompoundTag> data = form -> form.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
 
@@ -66,25 +66,25 @@ public class GhostDriverItem extends RiderDriverItem {
 	}
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
-			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
+			return "belts/"+ getFormItem(itemstack,1).getBeltTex();
 		}
-		else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()==Ghost_Rider_Items.PROTO_MEGA_ULORDER_IGOR.asItem()) return get_Form_Item(itemstack,2).getFormName(fly)+"_igor";
-		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,2).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()== GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.asItem()) return getFormItem(itemstack,2).getFormName(fly)+"_igor";
+		else if (equipmentSlot == EquipmentSlot.HEAD) return getFormItem(itemstack,2).getFormName(fly);
 
 		else {
-			return riderName + get_Form_Item(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(get_Form_Item(itemstack, 2),itemstack);
+			return riderName + getFormItem(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(getFormItem(itemstack, 2),itemstack);
 		}
 	}
 
 	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
 		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+			return getFormItem(itemstack, 1).getIsBeltGlowing();
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
@@ -102,28 +102,28 @@ public class GhostDriverItem extends RiderDriverItem {
 	{
 		String rider = ((GhostDriverItem) itemstack.getItem()).Rider;
 
-		if (Wisp_Horn==item.get_Stored_num()){
+		if (Wisp_Horn==item.getStoredNum()){
 			return "_base";
 		}else if (Objects.equals(rider, "gamma_superior")){
 			return "_base";
-		}else if (Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2||
-				Objects.equals(rider, "ghost") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()
-				|| Objects.equals(rider, "specter") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()
-				|| Objects.equals(rider, "necrom") &get_Form_Item(itemstack,1)==Ghost_Rider_Items.YUJOU_BURST_GHOST_EYECON.get()
-				|| Objects.equals(rider, "specter") &item.get_Stored_num()!=0|| Objects.equals(rider, "zero_specter") &item.get_Stored_num()!=0
-				|| Objects.equals(rider, "kanon_specter") &item.get_Stored_num()!=0||Objects.equals(rider, "zero_ghost") &item.get_Stored_num()!=0){
+		}else if (Objects.equals(rider, "ghost") & getFormItem(itemstack,1)== GhostRiderItems.ORE_GHOST_EYECON.get()&item.getStoredNum()==2||
+				Objects.equals(rider, "ghost") & getFormItem(itemstack,1)== GhostRiderItems.MUGEN_GHOST_EYECON.get()
+				|| Objects.equals(rider, "specter") & getFormItem(itemstack,1)== GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()
+				|| Objects.equals(rider, "necrom") & getFormItem(itemstack,1)== GhostRiderItems.YUJOU_BURST_GHOST_EYECON.get()
+				|| Objects.equals(rider, "specter") &item.getStoredNum()!=0|| Objects.equals(rider, "zero_specter") &item.getStoredNum()!=0
+				|| Objects.equals(rider, "kanon_specter") &item.getStoredNum()!=0||Objects.equals(rider, "zero_ghost") &item.getStoredNum()!=0){
 			return "_base";
 		}
 
-		return "_base_"+item.get_Stored_num();
+		return "_base_"+item.getStoredNum();
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot== EquipmentSlot.HEAD) {
-			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_FlyingModel(this.Rider));
-			}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model(this.Rider));
+			if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getFlyingModel(this.Rider));
+			}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getModel(this.Rider));
 
 		}else
 			return super.getModelResource(itemstack, animatable, slot,rider);

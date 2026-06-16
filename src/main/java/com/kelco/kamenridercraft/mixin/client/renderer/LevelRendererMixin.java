@@ -23,7 +23,7 @@ public class LevelRendererMixin {
     public void renderEarth(int shaderTexture, ResourceLocation textureId, Operation<Void> original) {
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
         if (this.level.dimension() == MOON) {
-            RenderSystem.setShaderTexture(shaderTexture, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/environment/earth_phases.png"));
+            RenderSystem.setShaderTexture(shaderTexture, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/environment/earth_phases.png"));
         } else original.call(shaderTexture, textureId);
     }
 }

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.summons;
 
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -34,7 +34,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
 	public CompleteSummonEntity(EntityType<? extends CompleteSummonEntity> type, Level level) {
 		super(type, level);
 		NAME="rider_summon";
-        this.addRequiredForm((RiderFormChangeItem) Decade_Rider_Items.K_TOUCH_21.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem) DecadeRiderItems.K_TOUCH_21.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {

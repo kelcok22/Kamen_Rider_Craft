@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -63,9 +63,9 @@ public class VistampBar extends MachineBlock {
 
         List<Item> PROTO_VISTAMP_PLUS = new ArrayList<>(PROTO_VISTAMP);
 
-         if (player.getInventory().countItem(Revice_Rider_Items.BARID_REX_VISTAMP.get())!=0){
+         if (player.getInventory().countItem(ReviceRiderItems.BARID_REX_VISTAMP.get())!=0){
              for (int i = 0; i < 20; i++) {
-                 PROTO_VISTAMP_PLUS.add(Revice_Rider_Items.VOLCANO_VISTAMP.get());
+                 PROTO_VISTAMP_PLUS.add(ReviceRiderItems.VOLCANO_VISTAMP.get());
              }
          }
  			int rand = generator.nextInt(PROTO_VISTAMP_PLUS.size());
@@ -77,24 +77,24 @@ public class VistampBar extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_VISTAMP.get()){
+            if (player.getItemInHand(hand).getItem() == ReviceRiderItems.PROTO_VISTAMP.get()){
                 process(player, level, pos, hand, getgashatDrop( player));
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_QUEEN_BEE_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.QUEEN_BEE_VISTAMP.get());
+            else if (player.getItemInHand(hand).getItem() == ReviceRiderItems.PROTO_QUEEN_BEE_VISTAMP.get()) {
+                process(player, level, pos, hand,  ReviceRiderItems.QUEEN_BEE_VISTAMP.get());
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_PLANARIAN_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.PLANARIAN_VISTAMP.get());
+            else if (player.getItemInHand(hand).getItem() == ReviceRiderItems.PROTO_PLANARIAN_VISTAMP.get()) {
+                process(player, level, pos, hand,  ReviceRiderItems.PLANARIAN_VISTAMP.get());
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_CHAMELEON_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.CHAMELEON_VISTAMP.get());
+            else if (player.getItemInHand(hand).getItem() == ReviceRiderItems.PROTO_CHAMELEON_VISTAMP.get()) {
+                process(player, level, pos, hand,  ReviceRiderItems.CHAMELEON_VISTAMP.get());
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.DAIOUIKA_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.KRAKEN_VISTAMP.get());
+            else if (player.getItemInHand(hand).getItem() == ReviceRiderItems.DAIOUIKA_VISTAMP.get()) {
+                process(player, level, pos, hand,  ReviceRiderItems.KRAKEN_VISTAMP.get());
                 return ItemInteractionResult.SUCCESS;
             }
         }

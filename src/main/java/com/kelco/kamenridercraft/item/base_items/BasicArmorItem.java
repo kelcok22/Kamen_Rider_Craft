@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.kelco.kamenridercraft.client.renderer.BasicArmorRenderer;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.Entity;
@@ -28,7 +28,7 @@ import java.util.function.Consumer;
 
 public class BasicArmorItem extends net.minecraft.world.item.ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+    private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 
     public String NAME ="";
     public String MODEL ="default";
@@ -59,7 +59,7 @@ public class BasicArmorItem extends net.minecraft.world.item.ArmorItem implement
         });
     }
 
-    public BasicArmorItem AddToList(List<Item> TabList) {
+    public BasicArmorItem addToList(List<Item> TabList) {
         TabList.add(this);
         return this;
     }

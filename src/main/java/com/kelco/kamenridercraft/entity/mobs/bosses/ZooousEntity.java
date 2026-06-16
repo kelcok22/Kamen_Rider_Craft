@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -24,17 +24,17 @@ public class ZooousEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying() && this.getLastAttacker() instanceof Player playerIn) {
-            if (playerIn.getInventory().countItem(Saber_Rider_Items.TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK.get())!=0){
+            if (playerIn.getInventory().countItem(SaberRiderItems.TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK.get())!=0){
                 BaseHenchmenEntity boss = MobsCore.ZOOOUS_PREDATOR.get().create(this.level());
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
                 }
             }
-            if (playerIn.getInventory().countItem(Saber_Rider_Items.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get())!=0
-            &&playerIn.getInventory().countItem(Saber_Rider_Items.LION_SENKI_WONDER_RIDE_BOOK.get())!=0
-            &&playerIn.getInventory().countItem(Saber_Rider_Items.PETER_FANTASISTA_WONDER_RIDE_BOOK.get())!=0){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.KING_LION_DAISENKI_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+            if (playerIn.getInventory().countItem(SaberRiderItems.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get())!=0
+            &&playerIn.getInventory().countItem(SaberRiderItems.LION_SENKI_WONDER_RIDE_BOOK.get())!=0
+            &&playerIn.getInventory().countItem(SaberRiderItems.PETER_FANTASISTA_WONDER_RIDE_BOOK.get())!=0){
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(SaberRiderItems.KING_LION_DAISENKI_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
 			    key.setPickUpDelay(0);
 			    playerIn.level().addFreshEntity(key);
 		        playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.king_lion_daisenki"));

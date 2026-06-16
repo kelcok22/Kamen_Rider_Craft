@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.allies;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.YummyEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;
@@ -91,7 +91,7 @@ public class TorikeraCanEntity extends BaseAllyEntity implements GeoEntity {
 								return interactionresult;
 						}
 				}
-			}else if (itemstack.is(OOO_Rider_Items.CELL_MEDAL.get()) && !this.isAngry()) {
+			}else if (itemstack.is(OOORiderItems.CELL_MEDAL.get()) && !this.isAngry()) {
 			  itemstack.consume(1, player);
 			  this.tryToTame(player);
 			  return InteractionResult.SUCCESS;
@@ -145,7 +145,7 @@ public class TorikeraCanEntity extends BaseAllyEntity implements GeoEntity {
 	   
 	   public boolean isFood(ItemStack p_30440_) {
 		      Item item = p_30440_.getItem();
-		      return item == OOO_Rider_Items.CELL_MEDAL.get();
+		      return item == OOORiderItems.CELL_MEDAL.get();
 		   }
 
 

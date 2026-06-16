@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.build;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.kelco.kamenridercraft.world.inventory.FullBottleHolderGuiMenu;
 import io.netty.buffer.Unpooled;
@@ -59,21 +59,21 @@ public class BuildDriverItem extends RiderDriverItem {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 		this.Has_basic_belt_info = false;
-		Item formItem = get_Form_Item(stack, 1);
-		Item formItem2 = get_Form_Item(stack, 2);
-		Item formItem3 = get_Form_Item(stack, 3);
+		Item formItem = getFormItem(stack, 1);
+		Item formItem2 = getFormItem(stack, 2);
+		Item formItem3 = getFormItem(stack, 3);
 
 		tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
 
-		if(formItem3!= Build_Rider_Items.HAZARD_TRIGGER.get()&&formItem3!= Build_Rider_Items.FULL_BOTTLE.get()){
+		if(formItem3!= BuildRiderItems.HAZARD_TRIGGER.get()&&formItem3!= BuildRiderItems.FULL_BOTTLE.get()){
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
 		}else if (isBestMatch(stack)) {
 			tooltipComponents.add(Component.literal(
-					(get_Form_Item(stack, 2) == Build_Rider_Items.MEDAL_FULL_BOTTLE.get() || get_Form_Item(stack, 2) == Build_Rider_Items.PARKA_FULL_BOTTLE.get() ? Component.translatable(formItem.toString() + ".form_legend").getString() : Component.translatable(formItem.toString() + ".form_match").getString())
+					(getFormItem(stack, 2) == BuildRiderItems.MEDAL_FULL_BOTTLE.get() || getFormItem(stack, 2) == BuildRiderItems.PARKA_FULL_BOTTLE.get() ? Component.translatable(formItem.toString() + ".form_legend").getString() : Component.translatable(formItem.toString() + ".form_match").getString())
 
-							+ (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
-			tooltipComponents.add(formItem3== Build_Rider_Items.HAZARD_TRIGGER.get() ? Component.translatable("kamenridercraft.name.best_match_hazard") : Component.translatable("kamenridercraft.name.best_match"));
+							+ (getFormItem(stack, 3) == BuildRiderItems.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
+			tooltipComponents.add(formItem3== BuildRiderItems.HAZARD_TRIGGER.get() ? Component.translatable("kamenridercraft.name.best_match_hazard") : Component.translatable("kamenridercraft.name.best_match"));
 		} else {
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 					+ Component.translatable(formItem.toString() + ".form").getString()
@@ -85,7 +85,7 @@ public class BuildDriverItem extends RiderDriverItem {
 	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
 		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+			return getFormItem(itemstack, 1).getIsBeltGlowing();
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
@@ -102,22 +102,22 @@ public class BuildDriverItem extends RiderDriverItem {
 
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
-			return "belts/"+get_Form_Item(itemstack,3).getBeltTex();
+			return "belts/"+ getFormItem(itemstack,3).getBeltTex();
 		}
-		else if (isBestMatch(itemstack)&isLegend(itemstack)) return riderName+"_"+((FullBottleItem)get_Form_Item(itemstack,Legend_Slot(itemstack))).get_Is_Legend_Name();
-		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+get_Form_Item(itemstack,1).getFormName(fly)+get_Form_Item(itemstack,3).getFormName(fly);
-		else { return riderName+get_Form_Item(itemstack,2).getFormName(fly)+get_Form_Item(itemstack,3).getFormName(fly);
+		else if (isBestMatch(itemstack)&isLegend(itemstack)) return riderName+"_"+((FullBottleItem) getFormItem(itemstack,Legend_Slot(itemstack))).get_Is_Legend_Name();
+		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+ getFormItem(itemstack,1).getFormName(fly)+ getFormItem(itemstack,3).getFormName(fly);
+		else { return riderName+ getFormItem(itemstack,2).getFormName(fly)+ getFormItem(itemstack,3).getFormName(fly);
 		}
 	}
 
 	public int Legend_Slot(ItemStack itemstack) {
 
-		if (get_Form_Item(itemstack, 1) instanceof FullBottleItem form) {
+		if (getFormItem(itemstack, 1) instanceof FullBottleItem form) {
 			if (form.get_Is_Legend()) return 1;
 		}
 		return 2;
@@ -125,32 +125,32 @@ public class BuildDriverItem extends RiderDriverItem {
 
 	public boolean isLegend(ItemStack itemstack) {
 
-		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form){
+		if (getFormItem(itemstack,1) instanceof FullBottleItem form){
 			if (form.get_Is_Legend()){return true;}
-		}if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
+		}if (getFormItem(itemstack,2) instanceof FullBottleItem form){
 			return form.get_Is_Legend();
 		}
 		return false;
 	}
 	public static boolean isBestMatch(ItemStack itemstack) {
 
-		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form){
+		if (getFormItem(itemstack,1) instanceof FullBottleItem form){
 			if (form.get_Is_Legend()){
-				return form.get_Best_Match()==get_Form_Item(itemstack,2);
+				return form.get_Best_Match()== getFormItem(itemstack,2);
 			}
 
-		}if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
-			return form.get_Best_Match()==get_Form_Item(itemstack,1);
+		}if (getFormItem(itemstack,2) instanceof FullBottleItem form){
+			return form.get_Best_Match()== getFormItem(itemstack,1);
 		}
 		return false;
 	}
 
 	public static boolean CanHazard(ItemStack itemstack) {
-		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form) {
+		if (getFormItem(itemstack,1) instanceof FullBottleItem form) {
 			if (form.get_Is_Legend())return false;
 		}
 		if (isBestMatch(itemstack)){
-			if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
+			if (getFormItem(itemstack,2) instanceof FullBottleItem form){
 				if (!form.get_Is_Legend()){
 					return form.Get_Can_Hazard();
 				}
@@ -164,12 +164,12 @@ public class BuildDriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.LEGS)num=2;
 
 		if (isBestMatch(itemstack)&isLegend(itemstack)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
-		else if (Objects.equals(get_Form_Item(itemstack, num).get_Model(this.Rider), "default.geo.json")) {
+		else if (Objects.equals(getFormItem(itemstack, num).getModel(this.Rider), "default.geo.json")) {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
 		}
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() &rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
-		}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
+		if (getFormItem(itemstack, num).hasWingsIfFlying() &rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getFlyingModel(this.Rider));
+		}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getModel(this.Rider));
 	}
 
 	@Override

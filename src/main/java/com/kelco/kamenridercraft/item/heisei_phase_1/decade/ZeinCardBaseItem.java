@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.decade;
 
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.HolderLookup;
@@ -54,7 +54,7 @@ public class ZeinCardBaseItem extends BaseItem implements ZeinCard {
 
     @Override
     public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
-        return repair.is(Zero_One_Rider_Items.ZEIN_PROGRISEKEY.get()) || super.isValidRepairItem(toRepair, repair);
+        return repair.is(ZeroOneRiderItems.ZEIN_PROGRISEKEY.get()) || super.isValidRepairItem(toRepair, repair);
     }
 
     @Override
@@ -90,10 +90,10 @@ public class ZeinCardBaseItem extends BaseItem implements ZeinCard {
         if (!CARD.isDamaged()) {
             ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-            if (!level.isClientSide() && BELT.getItem() == Zero_One_Rider_Items.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
+            if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
                 activateCard(level, player, CARD);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.justice_order"), true);
-                if (!player.isCreative()) for (Item item : Decade_Rider_Items.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
+                if (!player.isCreative()) for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 
                 return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());

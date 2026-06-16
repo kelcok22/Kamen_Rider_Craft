@@ -1,11 +1,11 @@
 package com.kelco.kamenridercraft.loot;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Wizard_Rider_Items;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -27,45 +27,45 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
         add("egg_chicken_memory",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("entities/chicken")).build(),
                 LootItemRandomChanceCondition.randomChance(0.1f).build()},
-                W_Rider_Items.EGG_CHICKEN_MEMORY.get()));
+                WRiderItems.EGG_CHICKEN_MEMORY.get()));
 
         add("wizard_stone",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("entities/phantom")).build(),
                 LootItemRandomChanceCondition.randomChance(0.1f).build()},
-                Wizard_Rider_Items.WIZARD_GEM.get()));
+                WizardRiderItems.WIZARD_GEM.get()));
 
         add("purple_medals_nether",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/nether_bridge")).build(),
                 LootItemRandomChanceCondition.randomChance(0.2f).build()},
-                OOO_Rider_Items.PURPLE_MEDALS_SEALED.get()));
+                OOORiderItems.PURPLE_MEDALS_SEALED.get()));
 
         add("beast_rings_pyramid",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/desert_pyramid")).build(),
                 LootItemRandomChanceCondition.randomChance(0.5f).build()},
-                Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
+                WizardRiderItems.UNKNOWN_BEAST_RING.get()));
 
         add("beast_rings_jungle",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/jungle_temple")).build(),
                 LootItemRandomChanceCondition.randomChance(0.5f).build()},
-                Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
+                WizardRiderItems.UNKNOWN_BEAST_RING.get()));
 
         add("beast_rings_pyramid_archeology",new AddSusSandItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("archaeology/desert_pyramid")).build()},
-                Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
+                WizardRiderItems.UNKNOWN_BEAST_RING.get()));
 
         add("blank_deck_ruined_portal",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/ruined_portal")).build(),
                 LootItemRandomChanceCondition.randomChance(0.5f).build()},
-                Ryuki_Rider_Items.BLANK_DECK.get()));
+                RyukiRiderItems.BLANK_DECK.get()));
 
         add("blank_deck_simple_dungeon",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/simple_dungeon")).build(),
                 LootItemRandomChanceCondition.randomChance(0.5f).build()},
-                Ryuki_Rider_Items.BLANK_DECK.get()));
+                RyukiRiderItems.BLANK_DECK.get()));
 
         add("mayo",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("gameplay/fishing")).build(),
                 LootItemRandomChanceCondition.randomChance(0.3f).build()},
-                Modded_item_core.MAYO.get()));
+                ModdedItemCore.MAYO.get()));
     }
 }

@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventDeckItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -19,7 +19,7 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Ryuki_Rider_Items.BLANK_DECK.get()));
+		this(containerId, playerInventory,new ItemStack(RyukiRiderItems.BLANK_DECK.get()));
 	}
 
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

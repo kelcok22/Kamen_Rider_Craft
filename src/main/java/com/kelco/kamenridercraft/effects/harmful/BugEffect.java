@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.effects.harmful;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -34,16 +34,16 @@ public class BugEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         if (livingEntity instanceof Player player && player.level() instanceof ServerLevel serverLevel) {
-            if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Zero_One_Rider_Items.ZAIA_THOUSANDRIVER.get()) {
-                if (player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) > 0) {
-                    if (player.getInventory().getItem(40).getItem() == Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) {
+            if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeroOneRiderItems.ZAIA_THOUSANDRIVER.get()) {
+                if (player.getInventory().countItem(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) > 0) {
+                    if (player.getInventory().getItem(40).getItem() == ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) {
                         player.getInventory().removeItem(40, 1);
                     } else {
-                        player.getInventory().removeItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()));
-                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
+                        player.getInventory().removeItem(new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()));
+                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get())), 1);
                     }
                     player.removeEffect(EffectCore.BUGSTER);
-                    player.drop(new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()), false);
+                    player.drop(new ItemStack(ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()), false);
                 }
             }
 

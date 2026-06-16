@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,11 +28,11 @@ public class DurendalEntity extends BaseHenchmenEntity {
     public DurendalEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="durendal";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Saber_Rider_Items.SABER_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Saber_Rider_Items.SABER_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Saber_Rider_Items.SABER_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Saber_Rider_Items.ROYAL_SWORD_OF_LOGOS_BUCKLE_DURENDAL.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.JIKOKUKEN_KAIJI.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(SaberRiderItems.SABER_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.ROYAL_SWORD_OF_LOGOS_BUCKLE_DURENDAL.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.JIKOKUKEN_KAIJI.get()));
     }
 
     void teleportTowards(Entity target) {

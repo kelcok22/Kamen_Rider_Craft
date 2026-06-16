@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
@@ -19,7 +19,7 @@ public class DeltaDriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (num==1&&!rider.isHolding(Faiz_Rider_Items.DELTA_BLASTER.get())) return isTransformed(rider)?"delta_blaster":"delta_mover";
+		if (num==1&&!rider.isHolding(FaizRiderItems.DELTA_BLASTER.get())) return isTransformed(rider)?"delta_blaster":"delta_mover";
         return "blank";
     }
 

@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.item.base_items;
 import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import com.kelco.kamenridercraft.effects.EffectCore;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
@@ -31,7 +31,7 @@ import java.util.function.Consumer;
 
 public class RiderArmorItem extends ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+    private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 
     public RiderArmorItem(Holder<ArmorMaterial> armorMaterial, Type type, Properties properties) {
         super(armorMaterial, type, properties.stacksTo(1).durability(type ==Type.BOOTS?600:500));

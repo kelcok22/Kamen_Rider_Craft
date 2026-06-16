@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -44,9 +44,9 @@ public class WDriverItem extends RiderDriverItem {
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
 
-		Item formItem = get_Form_Item(stack, 1);
-		Item formItem2 = get_Form_Item(stack, 2);
-		if(formItem==W_Rider_Items.XTREME_MEMORY.get()||formItem==W_Rider_Items.XTREME_GOLD_MEMORY.get()||formItem==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem + ".form"));
+		Item formItem = getFormItem(stack, 1);
+		Item formItem2 = getFormItem(stack, 2);
+		if(formItem== WRiderItems.XTREME_MEMORY.get()||formItem== WRiderItems.XTREME_GOLD_MEMORY.get()||formItem== WRiderItems.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem + ".form"));
 		else{
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 			+ Component.translatable(formItem.toString() + ".form").getString()
@@ -60,26 +60,26 @@ public class WDriverItem extends RiderDriverItem {
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 		super.inventoryTick(stack,level,entity,slotId,isSelected);
 		if (entity instanceof Player player) {
-		if (RiderDriverItem.get_Form_Item(stack, 1)== W_Rider_Items.XTREME_MEMORY.get()&player.fallDistance>10) {
-			RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) W_Rider_Items.XTREME_GOLD_MEMORY.get();
+		if (RiderDriverItem.getFormItem(stack, 1)== WRiderItems.XTREME_MEMORY.get()&player.fallDistance>10) {
+			RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) WRiderItems.XTREME_GOLD_MEMORY.get();
 			alternativeItem_form_change.use(level, player, InteractionHand.MAIN_HAND);
 		}
 			}
 	}
 
 	@Override
-    public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+    public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag  tag)
     {
-		if (get_Form_Item(belt, 1)==W_Rider_Items.XTREME_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_GOLD_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) {
-			if (get_Form_Item(belt, 2)!=W_Rider_Items.JOKER_MEMORY.get()) {
-            	Consumer<CompoundTag> data = form -> form.putString("slot_tex1", (W_Rider_Items.CYCLONE_MEMORY.get()).toString());
+		if (getFormItem(belt, 1)== WRiderItems.XTREME_MEMORY.get()|| getFormItem(belt, 1)== WRiderItems.XTREME_GOLD_MEMORY.get()|| getFormItem(belt, 1)== WRiderItems.XTREME_ACCEL_MEMORY.get()) {
+			if (getFormItem(belt, 2)!= WRiderItems.JOKER_MEMORY.get()) {
+            	Consumer<CompoundTag> data = form -> form.putString("slot_tex1", (WRiderItems.CYCLONE_MEMORY.get()).toString());
 
             	CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 			}
 		}
-		if (get_Form_Item(belt, 2)==W_Rider_Items.CYCLONE_SKULL_MEMORY.get() && get_Form_Item(belt, 1)!=W_Rider_Items.CYCLONE_MEMORY.get()) {
+		if (getFormItem(belt, 2)== WRiderItems.CYCLONE_SKULL_MEMORY.get() && getFormItem(belt, 1)!= WRiderItems.CYCLONE_MEMORY.get()) {
             Consumer<CompoundTag> data = form -> {
-				form.putString("slot_tex2", (W_Rider_Items.JOKER_MEMORY.get()).toString());
+				form.putString("slot_tex2", (WRiderItems.JOKER_MEMORY.get()).toString());
             	form.putBoolean("Update_form", true);
             	form.putDouble("render_type", getRenderType(belt));
             };
@@ -89,25 +89,25 @@ public class WDriverItem extends RiderDriverItem {
 	}
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			
-			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
+			return "belts/"+ getFormItem(itemstack,1).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD){
-			if (Objects.equals(get_Form_Item(itemstack, 2).getFormName(fly), "_skull")) return riderName+get_Form_Item(itemstack,1).getFormName(fly)+"_skull";
-			else return riderName+get_Form_Item(itemstack,1).getFormName(fly);
+			if (Objects.equals(getFormItem(itemstack, 2).getFormName(fly), "_skull")) return riderName+ getFormItem(itemstack,1).getFormName(fly)+"_skull";
+			else return riderName+ getFormItem(itemstack,1).getFormName(fly);
 		}
 			
 		
 		else {
-			if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_fang")) return riderName+"_fang"+get_Form_Item(itemstack,2).getFormName(fly);
-			else if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_cyclone_xtreme")) return riderName+get_Form_Item(itemstack,2).getFormName(fly)+"_xtreme";
-			else if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_cyclone_xtreme_gold")) return riderName+get_Form_Item(itemstack,2).getFormName(fly)+"_xtreme_gold";
-			else if (Objects.equals(get_Form_Item(itemstack, 1).getFormName(fly), "_cyclone_xtreme_accel")) return riderName+"_accel_xtreme";
-			else return riderName+get_Form_Item(itemstack,2).getFormName(fly);
+			if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_fang")) return riderName+"_fang"+ getFormItem(itemstack,2).getFormName(fly);
+			else if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_cyclone_xtreme")) return riderName+ getFormItem(itemstack,2).getFormName(fly)+"_xtreme";
+			else if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_cyclone_xtreme_gold")) return riderName+ getFormItem(itemstack,2).getFormName(fly)+"_xtreme_gold";
+			else if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_cyclone_xtreme_accel")) return riderName+"_accel_xtreme";
+			else return riderName+ getFormItem(itemstack,2).getFormName(fly);
 		}
 	}
 

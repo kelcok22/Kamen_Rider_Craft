@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -15,11 +15,11 @@ public class KabukiEntity extends BaseHenchmenEntity {
 	public KabukiEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="kabuki";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Hibiki_Rider_Items.HIBIKIHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Hibiki_Rider_Items.HIBIKICHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Hibiki_Rider_Items.HIBIKILEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Hibiki_Rider_Items.KABUKIDRIVER.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Hibiki_Rider_Items.ECHO_SWORD_ONSAKEN.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(HibikiRiderItems.HIBIKIHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(HibikiRiderItems.HIBIKICHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(HibikiRiderItems.HIBIKILEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(HibikiRiderItems.KABUKIDRIVER.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(HibikiRiderItems.ECHO_SWORD_ONSAKEN.get()));
     }
 
 	public static AttributeSupplier.Builder setAttributes() {

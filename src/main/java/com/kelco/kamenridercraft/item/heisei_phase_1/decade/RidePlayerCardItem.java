@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.decade;
 
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -27,13 +27,13 @@ public class RidePlayerCardItem extends BaseItem {
         ItemStack CARD = player.getItemInHand(usedHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (!level.isClientSide() && BELT.getItem() == Zero_One_Rider_Items.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
+        if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
             CARD.shrink(1);
             player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 2, true, true));
             player.displayClientMessage(Component.translatable("attack.kamenridercraft.shikkou"), true);
             player.awardStat(Stats.ITEM_USED.get(this));
             if (!player.isCreative()) {
-                for (Item item : Decade_Rider_Items.ZEIN_CARDS)
+                for (Item item : DecadeRiderItems.ZEIN_CARDS)
                     if (!player.getCooldowns().isOnCooldown(item)) player.getCooldowns().addCooldown(item, 60);
                 player.getCooldowns().addCooldown(this, 60);
             }

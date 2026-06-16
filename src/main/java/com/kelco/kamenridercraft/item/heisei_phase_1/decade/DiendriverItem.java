@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.decade;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.world.inventory.DiendriverGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -88,7 +88,7 @@ public class DiendriverItem extends BaseBlasterItem {
 	@Override
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
 		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().findAny().isPresent()
-		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem)player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
+		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == DecadeRiderItems.DIEND_BELT.get() && ((RiderDriverItem)player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
 			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
 			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderSummonCardItem && item.is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/rider_cards/kaijinride")))))) {

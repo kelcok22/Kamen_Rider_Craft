@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.EnergyItemHolderItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -18,7 +18,7 @@ public class EnergyItemHolderGuiMenu extends AbstractContainerMenu {
     private final Container container;
 
     public EnergyItemHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(Ex_Aid_Rider_Items.ENERGY_ITEM_HOLDER.get()));
+        this(containerId, playerInventory,new ItemStack(ExAidRiderItems.ENERGY_ITEM_HOLDER.get()));
     }
 
     public EnergyItemHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

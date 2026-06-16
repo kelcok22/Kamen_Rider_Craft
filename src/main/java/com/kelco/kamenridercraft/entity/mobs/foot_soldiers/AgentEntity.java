@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.AgentVariant;
-import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
@@ -32,7 +32,7 @@ public class AgentEntity extends BaseHenchmenEntity {
     public AgentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "agent";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.AGENT_BLASTER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GavvRiderItems.AGENT_BLASTER.get()));
     }
 
 

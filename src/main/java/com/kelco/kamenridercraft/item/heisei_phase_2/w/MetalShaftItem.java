@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.w;
 
 import com.kelco.kamenridercraft.item.base_items.BaseSwordItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -25,18 +25,18 @@ public class MetalShaftItem extends BaseSwordItem {
 	   public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		  	ItemStack belt = attacker.getItemBySlot(EquipmentSlot.FEET);
 			if (belt.getItem() instanceof RiderDriverItem) {
-				if (belt.getItem() == W_Rider_Items.WDRIVER.get()) {
-					if (RiderDriverItem.get_Form_Item(belt, 1)==W_Rider_Items.HEAT_MEMORY.get()) {
+				if (belt.getItem() == WRiderItems.WDRIVER.get()) {
+					if (RiderDriverItem.getFormItem(belt, 1)== WRiderItems.HEAT_MEMORY.get()) {
 						target.setSharedFlagOnFire(true);
 						target.setRemainingFireTicks(200);
-					} else if (RiderDriverItem.get_Form_Item(belt, 1)==W_Rider_Items.CYCLONE_MEMORY.get()) {
+					} else if (RiderDriverItem.getFormItem(belt, 1)== WRiderItems.CYCLONE_MEMORY.get()) {
 						target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 80, 0,true,false));
 						}
 				}
 			}return true;
 		   }
 	
-	public MetalShaftItem AddToList(List<Item> TabList) {
+	public MetalShaftItem addToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}

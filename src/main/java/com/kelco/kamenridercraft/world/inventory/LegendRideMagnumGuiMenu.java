@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.SingleItemContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -17,7 +17,7 @@ public class LegendRideMagnumGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public LegendRideMagnumGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Gotchard_Rider_Items.LEGEND_RIDE_MAGNUM.get()));
+		this(containerId, playerInventory,new ItemStack(GotchardRiderItems.LEGEND_RIDE_MAGNUM.get()));
 	}
 
 	public LegendRideMagnumGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

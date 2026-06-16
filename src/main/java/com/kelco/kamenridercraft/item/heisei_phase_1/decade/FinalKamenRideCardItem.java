@@ -5,11 +5,11 @@ import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -72,8 +72,8 @@ public class FinalKamenRideCardItem extends BaseItem {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (!level.isClientSide() && BELT.getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)
-        && ((this.summonNeoBelt == null && (RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH.get() || RiderDriverItem.get_Form_Item(BELT, 1) == Gotchard_Rider_Items.DECADE_COMPLETE_RIDE_CHEMY_CARD.get())) || RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH_STRONGEST.get())  || RiderDriverItem.get_Form_Item(BELT, 1) == Decade_Rider_Items.K_TOUCH_21.get()) {
-            if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
+        && ((this.summonNeoBelt == null && (RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH.get() || RiderDriverItem.getFormItem(BELT, 1) == GotchardRiderItems.DECADE_COMPLETE_RIDE_CHEMY_CARD.get())) || RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH_STRONGEST.get())  || RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH_21.get()) {
+            if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) DecadeRiderItems.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
             
 			CompleteSummonEntity summon = MobsCore.COMPLETE_SUMMON.get().create(level);
 			if (summon != null) {
@@ -82,29 +82,29 @@ public class FinalKamenRideCardItem extends BaseItem {
 				summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
 				summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
 				summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
-                if (!summonWeapons.isEmpty()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0) instanceof Item item ? item : Decade_Rider_Items.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(0))));
-                if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : Decade_Rider_Items.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(1))));
+                if (!summonWeapons.isEmpty()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0) instanceof Item item ? item : DecadeRiderItems.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(0))));
+                if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : DecadeRiderItems.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(1))));
                 if (summonNeoBelt == null) {
-                    summon.addRequiredForm((RiderFormChangeItem) Decade_Rider_Items.K_TOUCH.get(), 1);
-                    summon.addRequiredForm((RiderFormChangeItem)  Decade_Rider_Items.K_TOUCH_STRONGEST.get(), 1);
-                    summon.addRequiredForm((RiderFormChangeItem) Gotchard_Rider_Items.DECADE_COMPLETE_RIDE_CHEMY_CARD.get(), 1);
+                    summon.addRequiredForm((RiderFormChangeItem) DecadeRiderItems.K_TOUCH.get(), 1);
+                    summon.addRequiredForm((RiderFormChangeItem)  DecadeRiderItems.K_TOUCH_STRONGEST.get(), 1);
+                    summon.addRequiredForm((RiderFormChangeItem) GotchardRiderItems.DECADE_COMPLETE_RIDE_CHEMY_CARD.get(), 1);
                 }
-                if (summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+                if (summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
                 else if (summonNeoForm != null) {
-                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Decade_Rider_Items.COMPLETE_21_FORMS.get(summonNeoForm), summonNeoSlot);
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), DecadeRiderItems.COMPLETE_21_FORMS.get(summonNeoForm), summonNeoSlot);
                     switch (summonNeoForm) {
                         case 1:
-                            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), OOO_Rider_Items.TRICERA_MEDAL.get(), 2);
-                            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), OOO_Rider_Items.TYRANNO_MEDAL.get(), 3);
+                            RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TRICERA_MEDAL.get(), 2);
+                            RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TYRANNO_MEDAL.get(), 3);
                             break;
                         case 2:
-                            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Fourze_Rider_Items.FOURZE_COSMIC_STATES.get(), 5);
+                            RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), FourzeRiderItems.FOURZE_COSMIC_STATES.get(), 5);
                             break;
                         case 4:
-                            summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.COMPLETE_21_WEAPONS.get(summon.getRandom().nextInt(5, 15))));
+                            summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.COMPLETE_21_WEAPONS.get(summon.getRandom().nextInt(5, 15))));
                             break;
                         case 6:
-                            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Ghost_Rider_Items.MUGEN_GHOST_EYECON.get(), 1);
+                            RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GhostRiderItems.MUGEN_GHOST_EYECON.get(), 1);
                             break;
                     }
                 }

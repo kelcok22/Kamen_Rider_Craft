@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kabuto_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -40,7 +40,7 @@ public class LegendWizardRingItem extends BaseItem {
                     copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
                     copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
                     copy.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
-                    if (summonBelt == Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()) RiderDriverItem.set_Form_Item(copy.getItemBySlot(EquipmentSlot.FEET), Kabuto_Rider_Items.KABUTO_ZECTER.get(), 1);
+                    if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get()) RiderDriverItem.setFormItem(copy.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
 
                     level.addFreshEntity(copy);
                     copy.bindToPlayer(player);

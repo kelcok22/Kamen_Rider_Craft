@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class ToraCanRenderer extends GeoEntityRenderer<ToraCanEntity> {
 
 
-
-
-	public ToraCanRenderer(EntityRendererProvider.Context renderManager) {
+    public ToraCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new ToraCanModel());
     }
 

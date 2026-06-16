@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class DenkiunagiCanRenderer extends GeoEntityRenderer<DenkiunagiCanEntity> {
 
 
-
-
-	public DenkiunagiCanRenderer(EntityRendererProvider.Context renderManager) {
+    public DenkiunagiCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new DenkiunagiCanModel());
     }
 

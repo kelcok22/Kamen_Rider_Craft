@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -12,7 +12,7 @@ public class SakuraHurricaneEntity extends baseBikeEntity {
 
 
 	public SakuraHurricaneEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, Gaim_Rider_Items.SAKURA_HURRICANE.get());
+		super(entityType, level, GaimRiderItems.SAKURA_HURRICANE.get());
 		NAME ="sakura_hurricane";
 		NAME_MODEL ="sakura_hurricane";
 		}

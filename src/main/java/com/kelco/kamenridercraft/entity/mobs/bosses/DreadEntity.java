@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
@@ -27,22 +27,22 @@ public class DreadEntity extends BaseHenchmenEntity {
 		public DreadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="dread";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gotchard_Rider_Items.GOTCHARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gotchard_Rider_Items.GOTCHARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gotchard_Rider_Items.DREADRIVER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_AB.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GotchardRiderItems.GOTCHARD_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GotchardRiderItems.GOTCHARD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GotchardRiderItems.GOTCHARD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.DREADRIVER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_AB.get()));
     }
 
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
-            if (this.getHealth()<75 && playerIn.getInventory().countItem(Gotchard_Rider_Items.TENLINER_RIDE_CHEMY_CARD.get().asItem())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Gotchard_Rider_Items.DREAD_TYPE_THREE_CARDS.get()) {
+            if (this.getHealth()<75 && playerIn.getInventory().countItem(GotchardRiderItems.TENLINER_RIDE_CHEMY_CARD.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= GotchardRiderItems.DREAD_TYPE_THREE_CARDS.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dread_type_three"));
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gotchard_Rider_Items.DREAD_TYPE_THREE_CARDS.get(), 1);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_UC.get()));
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_DO.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GotchardRiderItems.DREAD_TYPE_THREE_CARDS.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_UC.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(GotchardRiderItems.BLOODY_DO.get()));
             }
         }
     }
@@ -50,8 +50,8 @@ public class DreadEntity extends BaseHenchmenEntity {
     public void remove(RemovalReason p_149847_) {
 
         if ( this.isDeadOrDying()) {
-            if(this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(Gotchard_Rider_Items.TENLINER_RIDE_CHEMY_CARD.get())!=0){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Gotchard_Rider_Items.CROSSHOPPER_RIDE_CHEMY_CARD.get(), 1), 0, 0, 0);
+            if(this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(GotchardRiderItems.TENLINER_RIDE_CHEMY_CARD.get())!=0){
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(GotchardRiderItems.CROSSHOPPER_RIDE_CHEMY_CARD.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 playerIn.level().addFreshEntity(key);
                 playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.crosshopper"));
@@ -73,7 +73,7 @@ public class DreadEntity extends BaseHenchmenEntity {
         p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
 
         if (p_34297_.getRandom().nextInt(2) == 1) {
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_BB.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_BB.get()));
         }
         return p_34300_;
     }

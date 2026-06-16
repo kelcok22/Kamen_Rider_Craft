@@ -28,7 +28,7 @@ public class StrongerRiderItems {
 
     //Stronger
     public static final DeferredItem<Item> STRONGER_LOGO = ITEMS.register("stronger_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/stronger")), new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/stronger")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ELECTRER_CORE = ITEMS.register("electrer_core",
@@ -46,7 +46,7 @@ public class StrongerRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+            }.hasSD().isGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_charge_up","stronger","electrer_belt",
@@ -68,13 +68,13 @@ public class StrongerRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().ChangeModel("stronger.geo.json").HasCape().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+            }.hasSD().changeModel("stronger.geo.json").hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_CORE = ITEMS.register("tackle_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .hasSD().HasCape().IsGlowing().SetShowUnder().AddToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+                    .hasSD().hasCape().isGlowing().setShowUnder().addToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
 
 
@@ -87,19 +87,19 @@ public class StrongerRiderItems {
 
     public static final DeferredItem<Item> ELECTRER = ITEMS.register("electrer",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"stronger",ELECTRER_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
-                    .HasAnSDForm().IsA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_ELECTRER = ITEMS.register("dark_electrer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_stronger",ELECTRER_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
-                    .Override_belt_text("dark_electrer_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_stronger",ELECTRER_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties()).hideBeltFormInfo()
+                    .overrideBeltText("dark_electrer_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_BELT = ITEMS.register("tackle_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
-                    .HasAnSDForm().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+                    .hasSDForm().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_TACKLE_BELT = ITEMS.register("black_tackle_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
-                    .Override_belt_text("black_tackle_belt").Dont_show_belt_form_info().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+                    .overrideBeltText("black_tackle_belt").hideBeltFormInfo().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {

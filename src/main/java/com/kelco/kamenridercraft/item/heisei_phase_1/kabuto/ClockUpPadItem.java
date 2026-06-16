@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.kabuto;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kabuto_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.Stats;
 import net.minecraft.tags.ItemTags;
@@ -36,13 +36,13 @@ public class ClockUpPadItem extends BaseItem {
 
 
 		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)){
-            if(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))){
-                Kabuto_Rider_Items.HYPER_ZECTER_CLOCK_UP.asItem().use(level,player,usedHand);
+            if(RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))){
+                KabutoRiderItems.HYPER_ZECTER_CLOCK_UP.asItem().use(level,player,usedHand);
 				if (!player.isCreative()) {
 					player.getCooldowns().addCooldown(this, 500);
 				}
 				player.awardStat(Stats.ITEM_USED.get(this));
-            } else if (!Objects.equals(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
+            } else if (!Objects.equals(RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
                 if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !level.isClientSide()) {
                 	player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
                     if (!player.isCreative()) {

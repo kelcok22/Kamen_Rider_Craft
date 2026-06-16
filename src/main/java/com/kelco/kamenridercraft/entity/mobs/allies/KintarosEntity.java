@@ -4,9 +4,9 @@ package com.kelco.kamenridercraft.entity.mobs.allies;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Den_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DenORiderItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -79,7 +79,7 @@ public class KintarosEntity extends BaseAllyEntity {
 	   super.tame(p_21829_);
 	   this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(40.0D);
 	   this.setHealth(40.0F);
-	   this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Den_O_Rider_Items.KINTAROS_AX.get()));
+	   this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DenORiderItems.KINTAROS_AX.get()));
     }
 
     @Override
@@ -95,16 +95,16 @@ public class KintarosEntity extends BaseAllyEntity {
                     this.gameEvent(GameEvent.EAT);
                     return InteractionResult.sidedSuccess(this.level().isClientSide());
                 } else {
-					if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
+					if (itemstack.is(DenORiderItems.RIDER_PASS.get())) {
 						player.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
 						player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_ax_1"));
 						player.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_ax_2").getString()));
-						this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
-						this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
-						this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));
-						this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Den_O_Rider_Items.DEN_O_BELT.get()));
-						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Den_O_Rider_Items.DEN_GASHER_AX.get()));
-						RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Den_O_Rider_Items.RIDER_TICKET_AX.get(), 1);
+						this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DenORiderItems.DEN_OHELMET.get()));
+						this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DenORiderItems.DEN_OCHESTPLATE.get()));
+						this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DenORiderItems.DEN_OLEGGINGS.get()));
+						this.setItemSlot(EquipmentSlot.FEET, new ItemStack(DenORiderItems.DEN_O_BELT.get()));
+						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DenORiderItems.DEN_GASHER_AX.get()));
+						RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), DenORiderItems.RIDER_TICKET_AX.get(), 1);
 						if (!player.getAbilities().instabuild) {
 						   itemstack.shrink(1);
 						}
@@ -128,7 +128,7 @@ public class KintarosEntity extends BaseAllyEntity {
                         return interactionresult;
                     }
                 }
-            } else if (itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isAngry()) {
+            } else if (itemstack.is(ModdedItemCore.VIENNA_COFFEE) && !this.isAngry()) {
                 itemstack.consume(1, player);
                 this.tryToTame(player);
                 return InteractionResult.SUCCESS;
@@ -136,7 +136,7 @@ public class KintarosEntity extends BaseAllyEntity {
                 return super.mobInteract(player, hand);
             }
         } else {
-            boolean flag = this.isOwnedBy(player) || this.isTame() || itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isTame() && !this.isAngry();
+            boolean flag = this.isOwnedBy(player) || this.isTame() || itemstack.is(ModdedItemCore.VIENNA_COFFEE) && !this.isTame() && !this.isAngry();
             return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
         }
     }

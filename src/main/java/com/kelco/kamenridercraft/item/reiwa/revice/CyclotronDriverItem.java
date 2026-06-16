@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.reiwa.revice;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ArmorMaterial;
@@ -24,9 +24,9 @@ public class CyclotronDriverItem  extends RiderDriverItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         Has_basic_belt_info=false;
-        Item formItem = get_Form_Item(stack, 1);
+        Item formItem = getFormItem(stack, 1);
 
-        if(formItem==Revice_Rider_Items.CYCLOTRON_DRIVER_CORE.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.century"));
+        if(formItem== ReviceRiderItems.CYCLOTRON_DRIVER_CORE.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.century"));
         else tooltipComponents.add(Component.translatable("kamenridercraft.name.century_break"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

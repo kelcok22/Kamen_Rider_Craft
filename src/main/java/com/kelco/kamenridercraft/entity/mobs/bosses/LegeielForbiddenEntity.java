@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -23,8 +23,8 @@ public class LegeielForbiddenEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-    		if(this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(Saber_Rider_Items.PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get())!=0){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.ELEMENTAL_DRAGON_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+    		if(this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(SaberRiderItems.PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get())!=0){
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(SaberRiderItems.ELEMENTAL_DRAGON_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
 			    key.setPickUpDelay(0);
 			    playerIn.level().addFreshEntity(key);
 		        playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.elemental_dragon"));

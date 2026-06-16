@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.CopyFormChangeItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.stats.Stats;
@@ -51,7 +51,7 @@ public class CopyChemyCardItem extends CopyFormChangeItem {
             }
         }
         return player.isShiftKeyDown() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GotcharDriverItem driver && driver.isTransformed(player)
-                && RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Gotchard_Rider_Items.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get();
+                && RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get();
     }
 
 	@Override
@@ -63,15 +63,15 @@ public class CopyChemyCardItem extends CopyFormChangeItem {
             RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
             if (summon != null) {
                 summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
-                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get()));
-                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gotchard_Rider_Items.GOTCHARD_CHESTPLATE.get()));
-                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gotchard_Rider_Items.GOTCHARD_LEGGINGS.get()));
-                summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gotchard_Rider_Items.GOTCHARDRIVER_BROTHER.get()));
-                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), FORM_ITEM, 1);
+                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GotchardRiderItems.GOTCHARD_HELMET.get()));
+                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GotchardRiderItems.GOTCHARD_CHESTPLATE.get()));
+                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GotchardRiderItems.GOTCHARD_LEGGINGS.get()));
+                summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.GOTCHARDRIVER_BROTHER.get()));
+                RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), FORM_ITEM, 1);
 
                 level.addFreshEntity(summon);
                 summon.bindToPlayer(player);
-                summon.addRequiredForm((RiderFormChangeItem)Gotchard_Rider_Items.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(), 1);
+                summon.addRequiredForm((RiderFormChangeItem) GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(), 1);
                 if (!player.isCreative()) {
                     summon.takeSummonItem(itemstack);
                     for (Item item : FORM_ITEM.needItemList) player.getCooldowns().addCooldown(item, 750);

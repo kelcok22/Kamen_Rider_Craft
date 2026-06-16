@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class KodamaSuikaArmsRenderer extends GeoEntityRenderer<KodamaSuikaArmsEntity> {
 
 
-
-
-	public KodamaSuikaArmsRenderer(EntityRendererProvider.Context renderManager) {
+    public KodamaSuikaArmsRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new KodamaSuikaArmsModel());
     }
 

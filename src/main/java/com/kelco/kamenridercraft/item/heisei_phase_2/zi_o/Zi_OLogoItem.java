@@ -4,8 +4,8 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.GrandSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseBannerPatternItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.Stats;
@@ -56,7 +56,7 @@ public class Zi_OLogoItem extends BaseBannerPatternItem {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(weapons[0]))));
                 if (this.summonWeapons.get(key.toString()).length > 1) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(weapons[1]))));
             }
-            if (belt == Gaim_Rider_Items.SENGOKU_DRIVER_ZENGETSU.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Gaim_Rider_Items.ZANGETSU_KACHIDOKI_LOCKSEED.get(), 1);
+            if (belt == GaimRiderItems.SENGOKU_DRIVER_ZENGETSU.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GaimRiderItems.ZANGETSU_KACHIDOKI_LOCKSEED.get(), 1);
         
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);
@@ -71,8 +71,8 @@ public class Zi_OLogoItem extends BaseBannerPatternItem {
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())
+        && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+        || RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())
         && this.summonBelts.containsKey(player.getOffhandItem().getItem().toString())) {
             summon(itemstack, level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());

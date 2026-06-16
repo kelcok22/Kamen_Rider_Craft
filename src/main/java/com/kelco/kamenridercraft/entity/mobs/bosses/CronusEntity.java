@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -41,11 +41,11 @@ public class CronusEntity extends BaseHenchmenEntity {
 	public CronusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
 		NAME="cronus";
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get()));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.FEET,new ItemStack(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.FEET,new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II.get()));
 	}
 
 	protected void addBehaviourGoals() {
@@ -66,13 +66,13 @@ public class CronusEntity extends BaseHenchmenEntity {
 
 	public void tick() {
 		if (this.getHealth()<100) {
-			if(getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()){
+			if(getItemBySlot(EquipmentSlot.FEET).getItem()== ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()){
 				ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 
-				if (RiderDriverItem.get_Form_Item(belt,1)!=Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
-					RiderDriverItem.set_Form_Item(belt, Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get(), 1);
-					this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(Ex_Aid_Rider_Items.DEUS_RUSHER.get()));
-					this.setItemSlot(EquipmentSlot.OFFHAND,new ItemStack(Ex_Aid_Rider_Items.DEUS_RAMPART.get()));
+				if (RiderDriverItem.getFormItem(belt,1)!= ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
+					RiderDriverItem.setFormItem(belt, ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get(), 1);
+					this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ExAidRiderItems.DEUS_RUSHER.get()));
+					this.setItemSlot(EquipmentSlot.OFFHAND,new ItemStack(ExAidRiderItems.DEUS_RAMPART.get()));
 				}
 
 
@@ -84,9 +84,9 @@ public class CronusEntity extends BaseHenchmenEntity {
 	protected void customServerAiStep() {
 		super.customServerAiStep();
 		
-		if(getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()){
+		if(getItemBySlot(EquipmentSlot.FEET).getItem()== ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()){
 			ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-			if (RiderDriverItem.get_Form_Item(belt,1)==Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
+			if (RiderDriverItem.getFormItem(belt,1)== ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.RED);
 				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.cronus_gamedeus").withStyle(ChatFormatting.GOLD));
             }
@@ -216,9 +216,9 @@ public class CronusEntity extends BaseHenchmenEntity {
 								if (!this.Cronus.isSilent()) {
 									this.Cronus.level().levelEvent(null, 1018, this.Cronus.blockPosition(), 0);
 								}
-									if (this.Cronus.getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()) {
+									if (this.Cronus.getItemBySlot(EquipmentSlot.FEET).getItem()== ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()) {
 
-										if (RiderDriverItem.get_Form_Item(this.Cronus.getItemBySlot(EquipmentSlot.FEET),1)!=Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
+										if (RiderDriverItem.getFormItem(this.Cronus.getItemBySlot(EquipmentSlot.FEET),1)!= ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
 											livingentity.addEffect(new MobEffectInstance(EffectCore.PAUSE,150,0));
 											if (livingentity instanceof Player playerIn){
 												playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.pause"));

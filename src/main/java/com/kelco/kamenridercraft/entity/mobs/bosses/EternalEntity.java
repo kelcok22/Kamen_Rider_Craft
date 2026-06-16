@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,24 +17,24 @@ import java.util.Random;
 
 public class EternalEntity extends BaseHenchmenEntity {
 	
-	public static final Item[] belt = new Item[] {W_Rider_Items.ETERNAL_MEMORY.get(),W_Rider_Items.ETERNAL_T2_MEMORY.get()};
+	public static final Item[] belt = new Item[] {WRiderItems.ETERNAL_MEMORY.get(), WRiderItems.ETERNAL_T2_MEMORY.get()};
 
 	
     public EternalEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="eternal";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(W_Rider_Items.WHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(W_Rider_Items.WCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(W_Rider_Items.WLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(W_Rider_Items.ETERNAL_EDGE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WRiderItems.WHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WRiderItems.WCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WRiderItems.WLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(WRiderItems.ETERNAL_EDGE.get()));
         Random generator = new Random();
 		int rand = generator.nextInt(belt.length);
 		
 		RiderFormChangeItem Gimmick = ((RiderFormChangeItem)belt[rand]);
 				
-		ItemStack LOST_DRIVER = new ItemStack(W_Rider_Items.LOSTDRIVER_ETERNAL.get());
+		ItemStack LOST_DRIVER = new ItemStack(WRiderItems.LOSTDRIVER_ETERNAL.get());
 		
-		RiderDriverItem.set_Form_Item(LOST_DRIVER,Gimmick, 1);
+		RiderDriverItem.setFormItem(LOST_DRIVER,Gimmick, 1);
 		
         this.setItemSlot(EquipmentSlot.FEET, LOST_DRIVER );
     }

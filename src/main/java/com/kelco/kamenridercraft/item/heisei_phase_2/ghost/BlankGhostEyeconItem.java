@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ghost;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -34,39 +34,39 @@ public class BlankGhostEyeconItem extends BaseItem {
     public void dropItem(ServerLevel world, Player player) {
 
         Inventory Inventory = player.getInventory();
-        boolean hasEyecons = Inventory.countItem(Ghost_Rider_Items.MUSASHI_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.EDISON_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.ROBIN_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.NEWTON_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BILLY_THE_KID_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BENKEI_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.TUTANKHAMUN_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.HOUDINI_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.RYOMA_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.GOEMON_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.HIMIKO_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.GRIMM_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BEETHOVEN_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.SANZO_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.NOBUNAGA_GHOST_EYECON.get()) != 0;
+        boolean hasEyecons = Inventory.countItem(GhostRiderItems.MUSASHI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.EDISON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.ROBIN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.NEWTON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BILLY_THE_KID_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BENKEI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.TUTANKHAMUN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.HOUDINI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.RYOMA_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.GOEMON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.HIMIKO_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.GRIMM_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BEETHOVEN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.SANZO_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.NOBUNAGA_GHOST_EYECON.get()) != 0;
 
-        boolean hasAllEyecons = Inventory.countItem(Ghost_Rider_Items.MUSASHI_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.EDISON_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.ROBIN_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.NEWTON_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BILLY_THE_KID_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BENKEI_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.TUTANKHAMUN_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.HOUDINI_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.RYOMA_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.GOEMON_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.HIMIKO_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.GRIMM_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BEETHOVEN_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.SANZO_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.NOBUNAGA_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.BOOST_GHOST_EYECON.get()) != 0
-                & Inventory.countItem(Ghost_Rider_Items.EYECON_DRIVER_G.get()) != 0;
+        boolean hasAllEyecons = Inventory.countItem(GhostRiderItems.MUSASHI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.EDISON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.ROBIN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.NEWTON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BILLY_THE_KID_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BENKEI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.TUTANKHAMUN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.HOUDINI_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.RYOMA_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.GOEMON_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.HIMIKO_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.GRIMM_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BEETHOVEN_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.SANZO_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.NOBUNAGA_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.BOOST_GHOST_EYECON.get()) != 0
+                & Inventory.countItem(GhostRiderItems.EYECON_DRIVER_G.get()) != 0;
 
         ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE,hasAllEyecons ? LOOT_TABLE_PATH3 : hasEyecons ? LOOT_TABLE_PATH2 : LOOT_TABLE_PATH);
         LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);

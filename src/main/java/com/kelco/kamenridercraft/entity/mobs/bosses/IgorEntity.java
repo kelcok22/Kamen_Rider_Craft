@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,10 +17,10 @@ public class IgorEntity extends BaseHenchmenEntity {
     public IgorEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="igor";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ghost_Rider_Items.GHOST_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ghost_Rider_Items.GHOST_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ghost_Rider_Items.PROTO_MEGA_ULORDER_IGOR.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GhostRiderItems.GHOST_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GhostRiderItems.GHOST_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GhostRiderItems.GHOST_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.get()));
     }
     
     public static AttributeSupplier.Builder setAttributes() {

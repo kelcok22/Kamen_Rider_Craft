@@ -1,13 +1,12 @@
 package com.kelco.kamenridercraft.network;
 
+import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -23,7 +22,6 @@ import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class ServerPayloadHandler {
-
 
 
     // Decade Complete summon swing mimicry
@@ -48,7 +46,7 @@ public class ServerPayloadHandler {
             context.player().setData(IS_POSING, false);
             stopPosing(context.player());
         } else {
-            if (canPose(context.player())){
+            if (canPose(context.player())) {
                 context.player().setData(IS_POSING, true);
                 PacketDistributor.sendToAllPlayers(new StartPosePayload(0, context.player().getStringUUID()));
             }
@@ -56,11 +54,11 @@ public class ServerPayloadHandler {
     }
 
     public static void handleAttributeChange(final AttributeChangePayload data, final IPayloadContext context) {
-            if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
-                if (entity instanceof Player&context.player().getStringUUID().equals(data.id())) {
-                   PacketDistributor.sendToAllPlayers(new AttributeChangeClientPayload(data.id(), data.attributeName(), data.valueChange()));
-                }
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
+            if (entity instanceof Player & context.player().getStringUUID().equals(data.id())) {
+                PacketDistributor.sendToAllPlayers(new AttributeChangeClientPayload(data.id(), data.attributeName(), data.valueChange()));
             }
+        }
     }
 
     public static void handleBeltKeyPress(final BeltKeyPayload data, final IPayloadContext context) {
@@ -78,8 +76,12 @@ public class ServerPayloadHandler {
         //});
     }
 
-    public static void handleAbilityKeyPress(final AbilityKeyPayload data, final IPayloadContext context) {
-        handleAbilityKeyPress((ServerPlayer) context.player());
+    public static void handlePrimaryAbilityKeyPress(final PrimaryAbilityKeyPayload data, final IPayloadContext context) {
+        handleAbilityKeyPress((ServerPlayer) context.player(), 1);
+    }
+
+    public static void handleSecondaryAbilityKeyPress(final SecondaryAbilityKeyPayload data, final IPayloadContext context) {
+        handleAbilityKeyPress((ServerPlayer) context.player(), 2);
     }
 
     public static void handleClimbing(final ClimbCollisionPayload data, final IPayloadContext context) {
@@ -102,11 +104,15 @@ public class ServerPayloadHandler {
         }
     }
 
-    private static void handleAbilityKeyPress(ServerPlayer player) {
-
-        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-                && !player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.parse("kamenridercraft:belts/blade_armor"))) && !player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.parse("kamenridercraft:belts/wizard_armor"))))
-            RiderDriverItem.setUseAbility(player.getItemBySlot(EquipmentSlot.FEET));
+    private static void handleAbilityKeyPress(ServerPlayer player, int slot) {
+        boolean costMeter = (!player.isCreative()) && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(player) || !driverItem.Rider.toLowerCase().contains("ohma"));
+        if (!player.level().isClientSide() && player.getData(USED_ABILITY).isEmpty() && player.getData(ABILITY_COOLDOWN) < 1 && (player.getAttribute(Attributes.ABILITY_METER).getValue() > 0) || !costMeter) {
+            var abilityList = AbilityUtil.getAbility(player, slot);
+            if (abilityList.getFirst() != null) {
+                String ability = abilityList.getFirst().toLowerCase().substring(1);
+                AbilityUtil.calculateAbility(player, ability);
+            }
+        }
     }
 
     private static void handleBeltKeyPress(ServerPlayer player) {

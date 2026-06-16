@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class GorillaCanModel extends GeoModel<GorillaCanEntity> {
     @Override
     public ResourceLocation getModelResource(GorillaCanEntity animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gorilla_can.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gorilla_can.geo.json");
     }
 
     @Override

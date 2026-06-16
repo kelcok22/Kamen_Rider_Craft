@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -15,10 +15,10 @@ public class KillbusEntity extends BaseHenchmenEntity {
     public KillbusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="killbus";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Build_Rider_Items.BUILD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Build_Rider_Items.BUILD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Build_Rider_Items.BUILD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.BUILD_DRIVER_KILLBUS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuildRiderItems.BUILD_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuildRiderItems.BUILD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuildRiderItems.BUILD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.BUILD_DRIVER_KILLBUS.get()));
     }
 
 

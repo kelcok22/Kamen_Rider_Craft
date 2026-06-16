@@ -29,8 +29,16 @@ public class AttachmentTypes {
             "pose_cooldown", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
     );
 
-    public static final Supplier<AttachmentType<Boolean>> USING_ABILITY = REGISTRY.register(
-            "using_ability", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
+    public static final Supplier<AttachmentType<Integer>> ABILITY_COOLDOWN = REGISTRY.register(
+            "ability_cooldown", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
+    );
+
+    public static final Supplier<AttachmentType<Integer>> ABILITY_TICK = REGISTRY.register(
+            "ability_tick", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
+    );
+
+    public static final Supplier<AttachmentType<String>> USED_ABILITY = REGISTRY.register(
+            "used_ability", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
     );
 
     public static final Supplier<AttachmentType<Boolean>> MOB_TRANSFORMED = REGISTRY.register(

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -62,15 +62,15 @@ public class GaiaMemoryRefinerBlock extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == W_Rider_Items.UNREFINED_MEMORY_G.get()){
+            if (player.getItemInHand(hand).getItem() == WRiderItems.UNREFINED_MEMORY_G.get()){
                 process(player, level, pos, hand, getmemoryDrop(0));
                 return ItemInteractionResult.SUCCESS;
             }
-			else if (player.getItemInHand(hand).getItem() == W_Rider_Items.UNREFINED_MEMORY_S.get()){
+			else if (player.getItemInHand(hand).getItem() == WRiderItems.UNREFINED_MEMORY_S.get()){
                 process(player, level, pos, hand, getmemoryDrop(1));
                 return ItemInteractionResult.SUCCESS;
             }
-			else if (player.getItemInHand(hand).getItem() == W_Rider_Items.UNREFINED_MEMORY_T2.get()){
+			else if (player.getItemInHand(hand).getItem() == WRiderItems.UNREFINED_MEMORY_T2.get()){
                 process(player, level, pos, hand, getmemoryDrop(2));
                 return ItemInteractionResult.SUCCESS;
             }

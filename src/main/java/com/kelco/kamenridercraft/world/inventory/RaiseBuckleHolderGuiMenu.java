@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,7 +18,7 @@ public class RaiseBuckleHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public RaiseBuckleHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Geats_Rider_Items.DESIRE_DRIVER_GEATS.get()));
+		this(containerId, playerInventory,new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GEATS.get()));
 	}
 
 	public RaiseBuckleHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

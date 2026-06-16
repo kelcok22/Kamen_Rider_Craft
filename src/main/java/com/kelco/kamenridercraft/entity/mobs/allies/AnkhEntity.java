@@ -5,8 +5,8 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.YummyEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
@@ -90,7 +90,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 					return InteractionResult.sidedSuccess(this.level().isClientSide());
 				} else {
 
-					if (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get()) && this.isOwnedBy(player) &&!this.isBaby() && player.level().getDifficulty() != Difficulty.PEACEFUL) {
+					if (itemstack.is(OOORiderItems.GREEED_BLET_ANKH_LOST.get()) && this.isOwnedBy(player) &&!this.isBaby() && player.level().getDifficulty() != Difficulty.PEACEFUL) {
 						//player.sendSystemMessage(Component.translatable("TEST NOT FINISHED").withStyle(ChatFormatting.YELLOW));
 
 						BaseHenchmenEntity boss = MobsCore.ANKHCOMPLETE.get().create(this.level());
@@ -115,9 +115,9 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 						}
 					}
 				}
-			}else if ((itemstack.is(Modded_item_core.ICE_POP.get())
-	    		  ||itemstack.is(Modded_item_core.ICE_POP2.get())
-	    		  ||itemstack.is(Modded_item_core.ICE_POP3.get())) && !this.isAngry()) {
+			}else if ((itemstack.is(ModdedItemCore.ICE_POP.get())
+	    		  ||itemstack.is(ModdedItemCore.ICE_POP2.get())
+	    		  ||itemstack.is(ModdedItemCore.ICE_POP3.get())) && !this.isAngry()) {
 			  itemstack.consume(1, player);
 			  this.tryToTame(player);
 			  return InteractionResult.SUCCESS;
@@ -154,7 +154,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 	   
 	   public boolean isFood(ItemStack p_30440_) {
 		      Item item = p_30440_.getItem();
-		      return item ==Modded_item_core.ICE_POP.get()||item ==Modded_item_core.ICE_POP2.get()||item == Modded_item_core.ICE_POP3.get();
+		      return item == ModdedItemCore.ICE_POP.get()||item == ModdedItemCore.ICE_POP2.get()||item == ModdedItemCore.ICE_POP3.get();
 		   }
 
 

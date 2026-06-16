@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.gotchard.ValvaradItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -19,7 +19,7 @@ public class GotchandrawHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public GotchandrawHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Gotchard_Rider_Items.GOTCHARDRIVER.get()));
+		this(containerId, playerInventory,new ItemStack(GotchardRiderItems.GOTCHARDRIVER.get()));
 	}
 
 	public GotchandrawHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

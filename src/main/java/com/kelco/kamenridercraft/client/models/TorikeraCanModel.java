@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class TorikeraCanModel extends GeoModel<TorikeraCanEntity> {
     @Override
     public ResourceLocation getModelResource(TorikeraCanEntity animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/tricera_can.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/tricera_can.geo.json");
     }
 
     @Override

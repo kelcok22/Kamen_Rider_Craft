@@ -24,7 +24,7 @@ public class AmazonRiderItems {
 
 
     public static final DeferredItem<Item> AMAZON_LOGO = ITEMS.register("amazon_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/amazon")), new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/amazon")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CONDORER_WHEEL = ITEMS.register("condorer_wheel",
@@ -39,13 +39,13 @@ public class AmazonRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().ChangeModel("amazon.geo.json").IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            }.hasSD().changeModel("amazon.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
-            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GAGA_ARMLET = ITEMS.register("gaga_armlet",
-            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZONHELMET = ITEMS.register("amazonhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
@@ -56,11 +56,11 @@ public class AmazonRiderItems {
 
     public static final DeferredItem<Item> CONDORER = ITEMS.register("condorer",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties())
-                    .HasAnSDForm().IsA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_CONDORER = ITEMS.register("dark_condorer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
-                    .Override_belt_text("dark_condorer_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).hideBeltFormInfo()
+                    .overrideBeltText("dark_condorer_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -14,7 +14,7 @@ import javax.annotation.Nullable;
 
 public class LaserProjectileRenderer extends GeoEntityRenderer<LaserProjectileEntity> {
 
-	public LaserProjectileRenderer(EntityRendererProvider.Context renderManager) {
+    public LaserProjectileRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new LaserModel());
     }
 

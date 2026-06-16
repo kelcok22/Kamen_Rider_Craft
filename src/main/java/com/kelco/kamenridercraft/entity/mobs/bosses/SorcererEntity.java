@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Wizard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -15,11 +15,11 @@ public class SorcererEntity extends BaseHenchmenEntity {
 		public SorcererEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="sorcerer";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Wizard_Rider_Items.WIZARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Wizard_Rider_Items.SORCERER_DRIVER.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Wizard_Rider_Items.DIS_HALBERD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.SORCERER_DRIVER.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(WizardRiderItems.DIS_HALBERD.get()));
     }
 
 	public static AttributeSupplier.Builder setAttributes() {

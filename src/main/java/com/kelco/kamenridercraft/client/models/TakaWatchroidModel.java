@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class TakaWatchroidModel extends GeoModel<TakaWatchroidEntity> {
     @Override
     public ResourceLocation getModelResource(TakaWatchroidEntity animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/taka_watchroid.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/taka_watchroid.geo.json");
     }
 
     @Override

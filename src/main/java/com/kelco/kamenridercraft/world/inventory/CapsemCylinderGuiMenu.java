@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.reiwa.Zeztz_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -19,7 +19,7 @@ public class CapsemCylinderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public CapsemCylinderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Zeztz_Rider_Items.CAPSEM_CYLINDER.get()));
+		this(containerId, playerInventory,new ItemStack(ZeztzRiderItems.CAPSEM_CYLINDER.get()));
 	}
 
 	public CapsemCylinderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class TabooModel extends GeoModel<TabooDopantEntity> {
     @Override
     public ResourceLocation getModelResource(TabooDopantEntity animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/taboo.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/taboo.geo.json");
     }
 
     @Override

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,15 +20,15 @@ public class OrgaDriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-        return rider.isHolding(Faiz_Rider_Items.ORGA_STLANZER.get())? "blank" : "orga_stlanzer";
+        return rider.isHolding(FaizRiderItems.ORGA_STLANZER.get())? "blank" : "orga_stlanzer";
     }
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
-		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.ORGA_DRIVER.get()
-				&&rider.isHolding(Faiz_Rider_Items.ORGA_PHONE.get())) return "belts/orga_driver_belt_empty";
-		return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.ORGA_DRIVER.get()
+				&&rider.isHolding(FaizRiderItems.ORGA_PHONE.get())) return "belts/orga_driver_belt_empty";
+		return super.getText(itemstack, equipmentSlot, rider, riderName);
 	}
 
 }

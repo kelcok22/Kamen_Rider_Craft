@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.T2MemoryCaseItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -18,7 +18,7 @@ public class T2MemoryCaseGuiMenu extends AbstractContainerMenu {
     private final Container container;
 
     public T2MemoryCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(W_Rider_Items.T2_MEMORY_CASE.get()));
+        this(containerId, playerInventory,new ItemStack(WRiderItems.T2_MEMORY_CASE.get()));
     }
 
     public T2MemoryCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

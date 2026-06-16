@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -12,7 +12,7 @@ public class RisehopperEntity extends baseBikeEntity {
 
 
 	public RisehopperEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, Zero_One_Rider_Items.HIDEN_RISEPHONE.get());
+		super(entityType, level, ZeroOneRiderItems.HIDEN_RISEPHONE.get());
 		NAME ="rise_hopper_bike";
 		NAME_MODEL ="sakura_hurricane";
 		}

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kuuga_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KuugaRiderItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -28,10 +28,10 @@ public class NDaguvaZebaEntity extends BaseHenchmenEntity {
     public NDaguvaZebaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="n_daguva_zeba";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kuuga_Rider_Items.KUUGAHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kuuga_Rider_Items.KUUGACHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kuuga_Rider_Items.KUUGALEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kuuga_Rider_Items.N_DAGUVA_ZEBA_BELT.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(KuugaRiderItems.KUUGAHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(KuugaRiderItems.KUUGACHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(KuugaRiderItems.KUUGALEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(KuugaRiderItems.N_DAGUVA_ZEBA_BELT.get()));
     }
 
 

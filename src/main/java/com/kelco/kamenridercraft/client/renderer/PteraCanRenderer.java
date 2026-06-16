@@ -10,7 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class PteraCanRenderer extends GeoEntityRenderer<PteraCanEntity> {
 
 
-	public PteraCanRenderer(EntityRendererProvider.Context renderManager) {
+    public PteraCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new PteraCanModel());
     }
 

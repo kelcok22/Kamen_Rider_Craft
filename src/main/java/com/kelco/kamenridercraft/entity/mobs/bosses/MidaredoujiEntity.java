@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -26,9 +26,9 @@ public class MidaredoujiEntity extends BaseHenchmenEntity {
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
-            if (this.getHealth()<40 && playerIn.getInventory().countItem(Hibiki_Rider_Items.HENSHIN_ONSA_KURENAI.get().asItem())!=0 && this.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()) {
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Hibiki_Rider_Items.MIDAREDOUJI_BLADE.get()));
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Hibiki_Rider_Items.MIDAREDOUJI_BLADE.get()));
+            if (this.getHealth()<40 && playerIn.getInventory().countItem(HibikiRiderItems.HENSHIN_ONSA_KURENAI.get().asItem())!=0 && this.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()) {
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(HibikiRiderItems.MIDAREDOUJI_BLADE.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(HibikiRiderItems.MIDAREDOUJI_BLADE.get()));
             }
         }
     }

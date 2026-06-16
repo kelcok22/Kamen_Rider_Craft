@@ -24,7 +24,7 @@ public class SelfMendEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         Random rand = new Random();
-        if ((amplifier < 50 ? rand.nextInt(500 - (amplifier * 10)) : 0) == 0) {
+        if (!livingEntity.level().isClientSide() && (amplifier < 50 ? rand.nextInt(500 - (amplifier * 10)) : 0) == 0) {
             livingEntity.getItemBySlot(EquipmentSlot.HEAD).setDamageValue(livingEntity.getItemBySlot(EquipmentSlot.HEAD).getDamageValue() - 1);
             livingEntity.getItemBySlot(EquipmentSlot.CHEST).setDamageValue(livingEntity.getItemBySlot(EquipmentSlot.CHEST).getDamageValue() - 1);
             livingEntity.getItemBySlot(EquipmentSlot.LEGS).setDamageValue(livingEntity.getItemBySlot(EquipmentSlot.LEGS).getDamageValue() - 1);

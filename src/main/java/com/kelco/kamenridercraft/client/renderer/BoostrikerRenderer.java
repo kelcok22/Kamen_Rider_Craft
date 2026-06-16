@@ -18,7 +18,7 @@ public class BoostrikerRenderer extends BikeRenderer<BoostrikerEntity> {
         addRenderLayer(new GeoRenderLayer<>(this) {
             @Override
             protected ResourceLocation getTextureResource(BoostrikerEntity animatable) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/boostriker/logo_"+animatable.getRiderLogo()+".png");
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/boostriker/logo_" + animatable.getRiderLogo() + ".png");
             }
 
             @Override

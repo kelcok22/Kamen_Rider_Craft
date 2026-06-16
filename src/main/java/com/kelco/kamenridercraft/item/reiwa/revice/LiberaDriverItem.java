@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.LovekovEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
@@ -37,20 +37,20 @@ public class LiberaDriverItem extends RiderDriverItem {
 	
 	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.lovekovSpawning && !lovekovSummoned(player)
-		&& itemstack.getItem() == Revice_Rider_Items.LIBERA_DRIVER.get()
-		&& RiderDriverItem.get_Form_Item(itemstack, 1) == Revice_Rider_Items.COBRA_VISTAMP.get()
-		&& !(player.isHolding(Revice_Rider_Items.LOVEKOV_KUJAKU.get()) || player.isHolding(Revice_Rider_Items.LOVEKOV_TURTLE.get()) || player.isHolding(Revice_Rider_Items.LOVEKOV_HASHIBIROKO.get()) || player.isHolding(Revice_Rider_Items.LOVEKOV_TRICERA.get())))
+		&& itemstack.getItem() == ReviceRiderItems.LIBERA_DRIVER.get()
+		&& RiderDriverItem.getFormItem(itemstack, 1) == ReviceRiderItems.COBRA_VISTAMP.get()
+		&& !(player.isHolding(ReviceRiderItems.LOVEKOV_KUJAKU.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_TURTLE.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_HASHIBIROKO.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_TRICERA.get())))
 			summonLovekov(player);
 		super.OnTransformation(itemstack, entity);
 	}
 	
-	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
 		&& ServerConfig.lovekovSpawning && !lovekovSummoned(player)
-		&& itemstack.getItem() == Revice_Rider_Items.LIBERA_DRIVER.get()
-		&& RiderDriverItem.get_Form_Item(itemstack, 1) == Revice_Rider_Items.COBRA_VISTAMP.get()
-		&& !(player.isHolding(Revice_Rider_Items.LOVEKOV_KUJAKU.get()) || player.isHolding(Revice_Rider_Items.LOVEKOV_TURTLE.get()) || player.isHolding(Revice_Rider_Items.LOVEKOV_HASHIBIROKO.get()) || player.isHolding(Revice_Rider_Items.LOVEKOV_TRICERA.get())))
+		&& itemstack.getItem() == ReviceRiderItems.LIBERA_DRIVER.get()
+		&& RiderDriverItem.getFormItem(itemstack, 1) == ReviceRiderItems.COBRA_VISTAMP.get()
+		&& !(player.isHolding(ReviceRiderItems.LOVEKOV_KUJAKU.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_TURTLE.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_HASHIBIROKO.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_TRICERA.get())))
 			summonLovekov(player);
-		super.OnformChange(itemstack, entity, tag);
+		super.onFormChange(itemstack, entity, tag);
 	}
 }

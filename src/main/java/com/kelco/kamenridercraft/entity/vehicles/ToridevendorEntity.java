@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -44,7 +44,7 @@ public class ToridevendorEntity extends baseBikeEntity {
 									boss.getX(), boss.getY() + 1.0,
 									boss.getZ(), 1, 0, 0, 0, 1);
 						}
-						ItemStack itemstack = new ItemStack(OOO_Rider_Items.TORA_CANDROID.get());
+						ItemStack itemstack = new ItemStack(OOORiderItems.TORA_CANDROID.get());
 						player.drop(itemstack,true);
 						this.level().addFreshEntity(boss);
 						this.remove(RemovalReason.DISCARDED);
@@ -61,7 +61,7 @@ public class ToridevendorEntity extends baseBikeEntity {
 	@Override
 	public void die(DamageSource p_21809_) {
 		super.die(p_21809_);
-		this.spawnAtLocation(OOO_Rider_Items.TORA_CANDROID.get());
+		this.spawnAtLocation(OOORiderItems.TORA_CANDROID.get());
 
 	}
 

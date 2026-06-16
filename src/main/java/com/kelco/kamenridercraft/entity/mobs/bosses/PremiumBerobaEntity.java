@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerBossEvent;
@@ -23,11 +23,11 @@ public class PremiumBerobaEntity extends BaseHenchmenEntity {
     public PremiumBerobaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "beroba_premium";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Geats_Rider_Items.GEATS_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Geats_Rider_Items.GEATS_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Geats_Rider_Items.GEATS_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.RAISE_RISER_BELT_BEROBA.get()));
-        RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BEROBA_BLACK_RAISE_RISER_CARD.get(), 1);
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GeatsRiderItems.GEATS_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GeatsRiderItems.GEATS_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GeatsRiderItems.GEATS_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.RAISE_RISER_BELT_BEROBA.get()));
+        RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BEROBA_BLACK_RAISE_RISER_CARD.get(), 1);
     }
 
  

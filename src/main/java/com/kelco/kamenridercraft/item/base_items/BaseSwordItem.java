@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
@@ -19,7 +19,7 @@ import java.util.List;
 
 public class BaseSwordItem extends SwordItem {
 
-	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+	private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 	private Item FormChangeItem;
 	private Item HenshinBeltItem;
 	private Boolean Change_sword = false;
@@ -42,7 +42,7 @@ public class BaseSwordItem extends SwordItem {
 		return p_40393_.getItem()== RepairItem;
 	}
 
-	public BaseSwordItem AddToList(List<Item> TabList) {
+	public BaseSwordItem addToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}

@@ -6,8 +6,8 @@ import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kiva_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -55,7 +55,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
             ItemStack BELT = RIDER.getItemBySlot(EquipmentSlot.FEET);
             if (BELT.getItem() instanceof RiderDriverItem DRIVER && (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER))) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + DRIVER.GET_TEXT(BELT, slot, RIDER, DRIVER.Rider) + ".png");
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + DRIVER.getText(BELT, slot, RIDER, DRIVER.Rider) + ".png");
             }
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");
@@ -242,11 +242,10 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 GeoBone armorRightLeg = this.getAnimationProcessor().getBone("armorRightLeg");
                 if (rightLegkick != null) {
                     if (RiderDriverItem.isKicking(RIDER)) {
-                        if (belt == Kiva_Rider_Items.KIVAT_BELT.get()) {
+                        if (belt == KivaRiderItems.KIVAT_BELT.get()) {
                             rightLegkick.setHidden(false);
                             armorRightLeg.setHidden(true);
-                        }
-                        else rightLegkick.setHidden(false);
+                        } else rightLegkick.setHidden(false);
                     } else {
                         rightLegkick.setHidden(true);
                     }
@@ -275,7 +274,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                         tire2.setPosZ(-Transforming);
                 }
                 if (tire3 != null) {
-                    if (RiderDriverItem.get_Form_Item(RIDER.getItemBySlot(EquipmentSlot.FEET), 1) != Drive_Rider_Items.SHIFT_PROTO_SPEED_CHASER.asItem()) {
+                    if (RiderDriverItem.getFormItem(RIDER.getItemBySlot(EquipmentSlot.FEET), 1) != DriveRiderItems.SHIFT_PROTO_SPEED_CHASER.asItem()) {
                         if (RiderDriverItem.isTransforming(RIDER))
                             tire3.setRotZ(Transforming);
                         if (RiderDriverItem.isTransforming(RIDER))

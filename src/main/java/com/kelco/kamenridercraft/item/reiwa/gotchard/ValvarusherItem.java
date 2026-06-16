@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.reiwa.gotchard;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -17,9 +17,9 @@ public class ValvarusherItem extends BaseBlasterItem {
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
         super.releaseUsing(stack, level, entityLiving, timeLeft);
 		if (entityLiving instanceof Player player && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
-			if (player.getOffhandItem().getItem() == Gotchard_Rider_Items.MADWHEEL_REPLI_CHEMY_CARD.get())
-                player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gotchard_Rider_Items.VALVARADRAW_BUCKLE_LACHESIS.get(), 1));
-            else player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gotchard_Rider_Items.VALVARADRAW_BUCKLE.get(), 1));
+			if (player.getOffhandItem().getItem() == GotchardRiderItems.MADWHEEL_REPLI_CHEMY_CARD.get())
+                player.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.VALVARADRAW_BUCKLE_LACHESIS.get(), 1));
+            else player.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.VALVARADRAW_BUCKLE.get(), 1));
 		}
 	}
 }

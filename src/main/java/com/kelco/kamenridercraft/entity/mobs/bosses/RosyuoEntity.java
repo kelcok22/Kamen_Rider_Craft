@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -35,7 +35,7 @@ public class RosyuoEntity extends BaseHenchmenEntity {
     public RosyuoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "rosyuo";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gaim_Rider_Items.JOESHUIMU.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GaimRiderItems.JOESHUIMU.get()));
     }
 
     protected void customServerAiStep() {
@@ -75,8 +75,8 @@ public class RosyuoEntity extends BaseHenchmenEntity {
             ItemStack attackerBelt;
             if (!this.level().isClientSide() && this.getLastAttacker() != null && this.getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
                 attackerBelt = this.getLastAttacker().getItemBySlot(EquipmentSlot.FEET);
-                if (RiderDriverItem.get_Form_Item(attackerBelt, 1).is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lockseeds/kachidoki")))) {
-                    ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(Gaim_Rider_Items.KIWAMI_LOCKSEED.get(), 1), 0, 0, 0);
+                if (RiderDriverItem.getFormItem(attackerBelt, 1).is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lockseeds/kachidoki")))) {
+                    ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(GaimRiderItems.KIWAMI_LOCKSEED.get(), 1), 0, 0, 0);
                     kiwamiLockseed.setPickUpDelay(0);
                     level().addFreshEntity(kiwamiLockseed);
                     if (this.getLastAttacker() != null) {

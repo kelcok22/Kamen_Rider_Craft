@@ -12,7 +12,7 @@ import net.minecraft.world.item.UseAnim;
 
 import java.util.List;
 
-public class BaseItem extends Item  {
+public class BaseItem extends Item {
 
     public UseAnim Animation;
     private Item craftingRemainingItem = null;
@@ -25,25 +25,27 @@ public class BaseItem extends Item  {
     }
 
     public BaseItem KeepDifItem(Item Dif) {
-        craftingRemainingItem=Dif;
+        craftingRemainingItem = Dif;
         return this;
     }
 
     public BaseItem KeepItem() {
-        craftingRemainingItem=this;
+        craftingRemainingItem = this;
         return this;
     }
 
     public BaseItem HasHoverTex() {
-        hasHoverText=true;
+        hasHoverText = true;
         return this;
     }
+
     public BaseItem has_basic_model() {
         ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
         return this;
     }
+
     public BaseItem model_has_different_name(String Name) {
-        Model_Name=Name;
+        Model_Name = Name;
         return this;
     }
 
@@ -57,43 +59,41 @@ public class BaseItem extends Item  {
             if (!hasCraftingRemainingItem(stack)) {
                 return ItemStack.EMPTY;
             }
-            ItemStack save =  new ItemStack(craftingRemainingItem);
+            ItemStack save = new ItemStack(craftingRemainingItem);
             if (!stack.getItem().toString().contains("sample") || !stack.getItem().toString().contains("vial")) {
                 save.applyComponents(stack.getComponents());
             }
             return save;
 
-        } else  {
+        } else {
             return new ItemStack(this.getCraftingRemainingItem());
         }
     }
 
     public BaseItem SetItemAnimation(UseAnim Anim) {
-        Animation=Anim;
+        Animation = Anim;
         return this;
     }
 
 
-    public boolean hasCraftingRemainingItem(ItemStack stack)
-    {
-        return ((BaseItem)stack.getItem()).craftingRemainingItem!=null;
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return ((BaseItem) stack.getItem()).craftingRemainingItem != null;
     }
 
     @Override
     public UseAnim getUseAnimation(ItemStack stack) {
-        if (Animation != null)  return Animation;
+        if (Animation != null) return Animation;
         else return stack.has(DataComponents.FOOD) ? UseAnim.EAT : UseAnim.NONE;
     }
 
-    public BaseItem AddToList(List<Item> TabList, int num) {
-        for (int i = 0; i < num; i++)
-        {
+    public BaseItem addToList(List<Item> TabList, int num) {
+        for (int i = 0; i < num; i++) {
             TabList.add(this);
         }
         return this;
     }
 
-    public BaseItem AddToList(List<Item> TabList) {
+    public BaseItem addToList(List<Item> TabList) {
         TabList.add(this);
         return this;
     }
@@ -101,7 +101,7 @@ public class BaseItem extends Item  {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         if (hasHoverText) {
-            tooltipComponents.add(Component.translatable("tooltip."+ stack.getItem()));
+            tooltipComponents.add(Component.translatable("tooltip." + stack.getItem()));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

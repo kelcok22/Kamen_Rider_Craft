@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.init.ModMenus;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.CaseArmorSlot;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
@@ -39,7 +39,7 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
             EMPTY_ARMOR_SLOT_HELMET
     );
     public RiderCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(Modded_item_core.GENERIC_RIDER_CASE.get()));
+        this(containerId, playerInventory,new ItemStack(ModdedItemCore.GENERIC_RIDER_CASE.get()));
     }
 
     public RiderCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
@@ -101,7 +101,7 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
                 this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18){
                     @Override
                     public boolean mayPickup(Player player) {
-                        return this.getItem().getItem() != Modded_item_core.GENERIC_RIDER_CASE.get();
+                        return this.getItem().getItem() != ModdedItemCore.GENERIC_RIDER_CASE.get();
                     }
                 });
             }
@@ -111,7 +111,7 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142){
                 @Override
                 public boolean mayPickup(Player player) {
-                    return this.getItem().getItem() != Modded_item_core.GENERIC_RIDER_CASE.get();
+                    return this.getItem().getItem() != ModdedItemCore.GENERIC_RIDER_CASE.get();
                 }
             });
         }

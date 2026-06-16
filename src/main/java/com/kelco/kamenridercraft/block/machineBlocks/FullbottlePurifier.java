@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -58,11 +58,11 @@ public class FullbottlePurifier extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Build_Rider_Items.GOLDEN_BANGLE.get()){
+            if (player.getItemInHand(hand).getItem() == BuildRiderItems.GOLDEN_BANGLE.get()){
                 process(player, level, pos, hand, getBottleDrop(0));
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.SMASH_BOTTLE.get()){
+            else if (player.getItemInHand(hand).getItem() == BuildRiderItems.SMASH_BOTTLE.get()){
                 process(player, level, pos, hand, getBottleDrop(1));
                 return ItemInteractionResult.SUCCESS;
             }

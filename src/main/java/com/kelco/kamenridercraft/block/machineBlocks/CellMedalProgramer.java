@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -60,7 +60,7 @@ public class CellMedalProgramer extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == OOO_Rider_Items.CELL_MEDAL.get()) {
+            if (player.getItemInHand(hand).getItem() == OOORiderItems.CELL_MEDAL.get()) {
                 process(player, level, pos, hand, getCellMedalDrop());
                 return ItemInteractionResult.SUCCESS;
             } else if (player.getItemInHand(hand).getItem() == Items.PACKED_ICE) {

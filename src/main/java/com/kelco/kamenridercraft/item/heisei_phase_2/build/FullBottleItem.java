@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.build;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -19,7 +19,7 @@ public class FullBottleItem extends RiderFormChangeItem {
   private Boolean HAZARD = false;
     private Boolean LEGEND = false;
     private String LEGEND_NAME;
-    private Item Best_MATCH= Build_Rider_Items.FULL_BOTTLE.get();
+    private Item Best_MATCH= BuildRiderItems.FULL_BOTTLE.get();
 
     public FullBottleItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
         super(properties, formName,  ridername, beltTex, effects);
@@ -60,8 +60,8 @@ public class FullBottleItem extends RiderFormChangeItem {
 
         if(!player.hasEffect(EffectCore.FORM_LOCK)) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-              if (CanChange(player,belt,BELT)) {
-                 RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),Build_Rider_Items.FULL_BOTTLE.get(), 3);
+              if (canChange(player,belt,BELT)) {
+                 RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.FULL_BOTTLE.get(), 3);
                  super.use(level, player, usedHand);
                 }else if(!getAlternative().isEmpty()){
                   super.use(level, player, usedHand);

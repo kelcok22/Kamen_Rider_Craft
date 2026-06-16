@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.reiwa.gavv;
 
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
-import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -30,7 +30,7 @@ public class GochipodItem extends BaseItem {
 	public void inventoryTick(ItemStack itemStack, Level level, Entity entity, int slotId, boolean isSelected) {
 		if (entity instanceof Player player)
 		if (get_store_Item(itemStack)==100){
-			player.getInventory().setItem(slotId, new ItemStack(Gavv_Rider_Items.GOCHIPOD.asItem()));
+			player.getInventory().setItem(slotId, new ItemStack(GavvRiderItems.GOCHIPOD.asItem()));
 		}
 	}
 

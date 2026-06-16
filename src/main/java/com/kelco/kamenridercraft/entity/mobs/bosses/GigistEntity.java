@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -21,15 +21,15 @@ public class GigistEntity extends BaseHenchmenEntity {
 
     public void remove(Entity.RemovalReason p_149847_) {
         if ( this.isDeadOrDying() && !this.level().isClientSide && this.getLastAttacker() instanceof Player player) {
-            if (player.getInventory().countItem(Gotchard_Rider_Items.MACHWHEEL_RIDE_CHEMY_CARD.get()) != 0
-                && player.getInventory().countItem(Gotchard_Rider_Items.DAIOHNI_RIDE_CHEMY_CARD.get()) != 0) {
-                if (player.getInventory().getItem(40).getItem() == Gotchard_Rider_Items.MACHWHEEL_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
-                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gotchard_Rider_Items.MACHWHEEL_RIDE_CHEMY_CARD.get())), 1);
-                if (player.getInventory().getItem(40).getItem() == Gotchard_Rider_Items.DAIOHNI_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
-                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gotchard_Rider_Items.DAIOHNI_RIDE_CHEMY_CARD.get())), 1);
-                ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Gotchard_Rider_Items.METAL_MACHWHEEL_RIDE_CHEMY_CARD.get(), 1), 0, 0, 0);
+            if (player.getInventory().countItem(GotchardRiderItems.MACHWHEEL_RIDE_CHEMY_CARD.get()) != 0
+                && player.getInventory().countItem(GotchardRiderItems.DAIOHNI_RIDE_CHEMY_CARD.get()) != 0) {
+                if (player.getInventory().getItem(40).getItem() == GotchardRiderItems.MACHWHEEL_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
+                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GotchardRiderItems.MACHWHEEL_RIDE_CHEMY_CARD.get())), 1);
+                if (player.getInventory().getItem(40).getItem() == GotchardRiderItems.DAIOHNI_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
+                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GotchardRiderItems.DAIOHNI_RIDE_CHEMY_CARD.get())), 1);
+                ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(GotchardRiderItems.METAL_MACHWHEEL_RIDE_CHEMY_CARD.get(), 1), 0, 0, 0);
                 stamp.setPickUpDelay(0);
-                ItemEntity stamp1 = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Gotchard_Rider_Items.METAL_DAIOHNI_RIDE_CHEMY_CARD.get(), 1), 0, 0, 0);
+                ItemEntity stamp1 = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(GotchardRiderItems.METAL_DAIOHNI_RIDE_CHEMY_CARD.get(), 1), 0, 0, 0);
                 stamp1.setPickUpDelay(0);
                 this.level().addFreshEntity(stamp);
                 this.level().addFreshEntity(stamp1);

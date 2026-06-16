@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -70,7 +70,7 @@ public class Monolith extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Ghost_Rider_Items.BLANK_GHOST_EYECON.get()){
+            if (player.getItemInHand(hand).getItem() == GhostRiderItems.BLANK_GHOST_EYECON.get()){
                 process(player, level, pos, hand, getEyeconDrop());
                 return ItemInteractionResult.SUCCESS;
             }

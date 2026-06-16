@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
@@ -20,20 +20,20 @@ public class BitterGavvEntity extends BaseHenchmenEntity {
 		public BitterGavvEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="bitter_gavv";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gavv_Rider_Items.GAVV_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gavv_Rider_Items.GAVV_LEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.BITTER_GAVVGABLADE.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gavv_Rider_Items.HENSHIN_BELT_BITTER_GAVV.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GavvRiderItems.GAVV_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GavvRiderItems.GAVV_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GavvRiderItems.GAVV_LEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GavvRiderItems.BITTER_GAVVGABLADE.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GavvRiderItems.HENSHIN_BELT_BITTER_GAVV.get()));
     }
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
-            if (this.getHealth()<75 && playerIn.getInventory().countItem(Gavv_Rider_Items.NYELV_MIMIC_KEY.get().asItem())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Gavv_Rider_Items.MARBLEBREACOOKIE_GOCHIZO.get()) {
+            if (this.getHealth()<75 && playerIn.getInventory().countItem(GavvRiderItems.NYELV_MIMIC_KEY.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= GavvRiderItems.MARBLEBREACOOKIE_GOCHIZO.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.marble_breacookie"));
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.BAKEMAGNUM.get()));
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gavv_Rider_Items.MARBLEBREACOOKIE_GOCHIZO.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GavvRiderItems.BAKEMAGNUM.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GavvRiderItems.MARBLEBREACOOKIE_GOCHIZO.get(), 1);
             }
         }
     }

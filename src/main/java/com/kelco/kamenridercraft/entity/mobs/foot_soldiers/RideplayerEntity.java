@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.RandomSource;
@@ -29,11 +29,11 @@ public class RideplayerEntity extends BaseHenchmenEntity {
         NAME = "rideplayer";
         BOW_COOLDOWN = 50;
         HARD_BOW_COOLDOWN = 30;
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.RIDE_PLAYER_BELT.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.RIDE_WEAPON.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.RIDE_PLAYER_BELT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.RIDE_WEAPON.get()));
         this.setMeleeOnSpawn(75.0D);
     }
 
@@ -84,19 +84,19 @@ public class RideplayerEntity extends BaseHenchmenEntity {
         if (p_219165_.nextFloat() < (this.level().getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
             switch (p_219165_.nextInt(8)) {
                 case 0:
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_BREAKER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GASHACON_BREAKER.get()));
                     break;
                 case 1:
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_SWORD.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GASHACON_SWORD.get()));
                     break;
                 case 2:
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_MAGNUM.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GASHACON_MAGNUM.get()));
                     break;
                 case 3:
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_SPARROW_ARROW.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GASHACON_SPARROW_ARROW.get()));
                     break;
                 case 4:
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GASHACON_KEY_SLASHER.get()));
                     break;
             }
         }

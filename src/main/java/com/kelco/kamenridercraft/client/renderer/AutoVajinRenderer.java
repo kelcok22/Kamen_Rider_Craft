@@ -10,12 +10,12 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class AutoVajinRenderer extends GeoEntityRenderer<AutoVajinRoboEntity> {
 
 
-	public AutoVajinRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new AutoVajinModel());
-	}
+    public AutoVajinRenderer(EntityRendererProvider.Context renderManager) {
+        super(renderManager, new AutoVajinModel());
+    }
 
-	@Override
-	public ResourceLocation getTextureLocation(AutoVajinRoboEntity animatable) {
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/auto_vajin.png");
-	}
+    @Override
+    public ResourceLocation getTextureLocation(AutoVajinRoboEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/auto_vajin.png");
+    }
 }

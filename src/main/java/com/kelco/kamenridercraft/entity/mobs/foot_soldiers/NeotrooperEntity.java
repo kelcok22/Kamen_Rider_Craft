@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kabuto_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -19,11 +19,11 @@ public class NeotrooperEntity extends BaseHenchmenEntity {
         NAME = "neotrooper";
         BOW_COOLDOWN = 35;
         HARD_BOW_COOLDOWN = 15;
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kabuto_Rider_Items.KABUTOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kabuto_Rider_Items.KABUTOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kabuto_Rider_Items.KABUTOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kabuto_Rider_Items.NEOTROOPER_BELT.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Kabuto_Rider_Items.MACHINEGUN_BLADE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTOHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTOCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(KabutoRiderItems.NEOTROOPER_BELT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(KabutoRiderItems.MACHINEGUN_BLADE.get()));
         this.setMeleeOnSpawn(50.0D);
     }
 

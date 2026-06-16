@@ -10,8 +10,8 @@ public record BeltKeyPayload(int hand) implements CustomPacketPayload {
     public static final CustomPacketPayload.Type<BeltKeyPayload> TYPE = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "belt_key"));
 
     public static final StreamCodec<ByteBuf, BeltKeyPayload> STREAM_CODEC = StreamCodec.composite(
-        ByteBufCodecs.VAR_INT, BeltKeyPayload::hand,
-        BeltKeyPayload::new
+            ByteBufCodecs.VAR_INT, BeltKeyPayload::hand,
+            BeltKeyPayload::new
     );
 
     @Override

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -16,11 +16,11 @@ public class MarikaEntity extends BaseHenchmenEntity {
     public MarikaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="marika";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gaim_Rider_Items.GAIM_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gaim_Rider_Items.GAIM_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gaim_Rider_Items.GAIM_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gaim_Rider_Items.GENESIS_DRIVER_MARIKA.get()));
-	     this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gaim_Rider_Items.SONIC_ARROW.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GaimRiderItems.GAIM_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GaimRiderItems.GAIM_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GaimRiderItems.GAIM_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GaimRiderItems.GENESIS_DRIVER_MARIKA.get()));
+	     this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GaimRiderItems.SONIC_ARROW.get()));
     }
     
 

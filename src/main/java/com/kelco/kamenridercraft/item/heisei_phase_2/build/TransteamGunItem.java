@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.build;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,9 +18,9 @@ public class TransteamGunItem extends BaseBlasterItem {
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
         super.releaseUsing(stack, level, entityLiving, timeLeft);
 		if (entityLiving instanceof Player player && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
-			if (player.getOffhandItem().getItem() == Build_Rider_Items.LOST_COBRA_FULL_BOTTLE.get())
-                player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.TRANSTEAM_GUN_BLOOD_STALK.get(), 1));
-			else player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.TRANSTEAM_GUN_NIGHT_ROGUE.get(), 1));
+			if (player.getOffhandItem().getItem() == BuildRiderItems.LOST_COBRA_FULL_BOTTLE.get())
+                player.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.TRANSTEAM_GUN_BLOOD_STALK.get(), 1));
+			else player.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.TRANSTEAM_GUN_NIGHT_ROGUE.get(), 1));
 		}
 	}
 }

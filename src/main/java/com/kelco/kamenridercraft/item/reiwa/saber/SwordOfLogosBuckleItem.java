@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.reiwa.saber;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
@@ -25,8 +25,8 @@ public class SwordOfLogosBuckleItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-        if (rider.isHolding(Saber_Rider_Items.DOGOUKEN_GEKIDO.get())) return "blank";
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName , int num) {
+        if (livingEntity.isHolding(SaberRiderItems.DOGOUKEN_GEKIDO.get())) return "blank";
         return "dogouken_gekido";
     }
 

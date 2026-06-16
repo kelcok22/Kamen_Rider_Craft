@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -25,14 +25,14 @@ public class JyamatoRiderEntity extends BaseHenchmenEntity {
     public JyamatoRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="pawnjyamato_mob";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Geats_Rider_Items.GEATS_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Geats_Rider_Items.GEATS_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Geats_Rider_Items.GEATS_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.DESIRE_DRIVER_JYAMATO.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GeatsRiderItems.GEATS_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GeatsRiderItems.GEATS_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GeatsRiderItems.GEATS_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_JYAMATO.get()));
 
         if (this.random.nextInt(4)==0) {
             NAME="gm_rider";
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.JYAMATO_RIDER_SCYTHE.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.JYAMATO_RIDER_SCYTHE.get()));
         }
 
     }
@@ -43,14 +43,14 @@ public class JyamatoRiderEntity extends BaseHenchmenEntity {
 
         switch (p_34297_.getRandom().nextInt(10)) {
             case 0:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MAGNUM_RAISE_BUCKLE_FEVER.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.MAGNUM_SHOOTER_40X.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.MAGNUM_RAISE_BUCKLE_FEVER.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.MAGNUM_SHOOTER_40X.get()));
                 break;
             case 1:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_RAISE_BUCKLE_FEVER.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_RAISE_BUCKLE_FEVER.get(), 2);
                 break;
             case 2:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MONSTER_RAISE_BUCKLE_FEVER.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.MONSTER_RAISE_BUCKLE_FEVER.get(), 2);
                 break;
         }
         return p_34300_;

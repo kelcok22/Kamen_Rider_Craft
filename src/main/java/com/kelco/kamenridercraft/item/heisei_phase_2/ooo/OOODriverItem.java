@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -36,12 +36,12 @@ public class OOODriverItem extends RiderDriverItem {
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
 
-		Item formItem = get_Form_Item(stack, 1);
-		Item formItem2 = get_Form_Item(stack, 2);
-		Item formItem3 = get_Form_Item(stack, 3);
+		Item formItem = getFormItem(stack, 1);
+		Item formItem2 = getFormItem(stack, 2);
+		Item formItem3 = getFormItem(stack, 3);
 
 		if (!Objects.equals(getCombo(formItem, formItem2, formItem3), "false"))tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
-		else if (!OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem2) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem3)) {
+		else if (!OOORiderItems.SPECIAL_NAME_MEDALS.contains(formItem) || !OOORiderItems.SPECIAL_NAME_MEDALS.contains(formItem2) || !OOORiderItems.SPECIAL_NAME_MEDALS.contains(formItem3)) {
 			tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 			tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
@@ -49,38 +49,38 @@ public class OOODriverItem extends RiderDriverItem {
 		} else {
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft:false.form_special").getString()
 					+ Component.translatable(formItem.toString() + ".form_special").getString()
-					+ (formItem3 == OOO_Rider_Items.CHEETAH_MEDAL.get() ? Component.translatable(formItem2.toString() + ".form_cheetah").getString() : Component.translatable(formItem2.toString() + ".form_special").getString())
+					+ (formItem3 == OOORiderItems.CHEETAH_MEDAL.get() ? Component.translatable(formItem2.toString() + ".form_cheetah").getString() : Component.translatable(formItem2.toString() + ".form_special").getString())
 					+ Component.translatable(formItem3.toString() + ".form_special").getString()));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
 	public String getCombo (Item formItem,Item formItem2,Item formItem3) {
-		if (formItem==OOO_Rider_Items.TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "tatoba";
-		if (formItem==OOO_Rider_Items.SUPER_TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.SUPER_TORA_MEDAL.get()&formItem3==OOO_Rider_Items.SUPER_BATTA_MEDAL.get() )return "super_tatoba";
-		if (formItem==OOO_Rider_Items.TAKA_ANKH_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "tatoba";
-		if (formItem==OOO_Rider_Items.TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_MEDAL.get() )return "tajadol";
-		if (formItem==OOO_Rider_Items.TAKA_ANKH_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_MEDAL.get() )return "tajadol_fe";
-		if (formItem==OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get() )return "tajadol_eternity";
-		if (formItem==OOO_Rider_Items.LION_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.CHEETAH_MEDAL.get() )return "latorartar";
-		if (formItem==OOO_Rider_Items.KUWAGATA_MEDAL.get()&formItem2==OOO_Rider_Items.KAMAKIRI_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "gatakiriba";
-		if (formItem==OOO_Rider_Items.SAI_MEDAL.get()&formItem2==OOO_Rider_Items.GORILLA_MEDAL.get()&formItem3==OOO_Rider_Items.ZOU_MEDAL.get() )return "sagohzo";
-		if (formItem==OOO_Rider_Items.SHACHI_MEDAL.get()&formItem2==OOO_Rider_Items.UNAGI_MEDAL.get()&formItem3==OOO_Rider_Items.TAKO_MEDAL.get() )return "shauta";
-		if (formItem==OOO_Rider_Items.PTERA_MEDAL.get()&formItem2==OOO_Rider_Items.TRICERA_MEDAL.get()&formItem3==OOO_Rider_Items.TYRANNO_MEDAL.get() )return "putotyra";
-		if (formItem==OOO_Rider_Items.COBRA_MEDAL.get()&formItem2==OOO_Rider_Items.KAME_MEDAL.get()&formItem3==OOO_Rider_Items.WANI_MEDAL.get() )return "burakawani";
-		if (formItem==OOO_Rider_Items.LOVE_CORE_MEDAL.get()&formItem2==OOO_Rider_Items.LOVE_CORE2_MEDAL.get()&formItem3==OOO_Rider_Items.LOVE_CORE3_MEDAL.get() )return "love";
-		if (formItem==OOO_Rider_Items.SAME_MEDAL.get()&formItem2==OOO_Rider_Items.KUJIRA_MEDAL.get()&formItem3==OOO_Rider_Items.OOKAMIUO_MEDAL.get() )return "saramiuo";
-		if (formItem==OOO_Rider_Items.EBI_NEW_MEDAL.get()&formItem2==OOO_Rider_Items.KANI_NEW_MEDAL.get()&formItem3==OOO_Rider_Items.SASORI_NEW_MEDAL.get() )return "bikaso";
-		if (formItem==OOO_Rider_Items.SHIKA_MEDAL.get()&formItem2==OOO_Rider_Items.GAZELLE_MEDAL.get()&formItem3==OOO_Rider_Items.USHI_MEDAL.get() )return "shigazeshi";
-		if (formItem==OOO_Rider_Items.MUKADE_MEDAL.get()&formItem2==OOO_Rider_Items.HACHI_MEDAL.get()&formItem3==OOO_Rider_Items.ARI_MEDAL.get() )return "mukachiri";
-		if (formItem==OOO_Rider_Items.SEIUCHI_MEDAL.get()&formItem2==OOO_Rider_Items.SHIROKUMA_MEDAL.get()&formItem3==OOO_Rider_Items.PENGUIN_MEDAL.get() )return "seishirogin";
-		if (formItem==OOO_Rider_Items.TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.IMAGIN_MEDAL.get()&formItem3==OOO_Rider_Items.SHOCKER_MEDAL.get() )return "tamashiy";
-		if (formItem==OOO_Rider_Items.TAKA_ANKH_MEDAL.get()&formItem2==OOO_Rider_Items.IMAGIN_MEDAL.get()&formItem3==OOO_Rider_Items.SHOCKER_MEDAL.get() )return "tamashiy";
-		if (formItem==OOO_Rider_Items.HABATAKI_MEDAL.get()&formItem2==OOO_Rider_Items.TAIGA_MEDAL.get()&formItem3==OOO_Rider_Items.ICHIGO_MEDAL.get() )return "legend_tatoba";
-		if (formItem==OOO_Rider_Items.MUKADE_GODA_MEDAL.get()&formItem2==OOO_Rider_Items.HACHI_GODA_MEDAL.get()&formItem3==OOO_Rider_Items.ARI_GODA_MEDAL.get() )return "goda";
+		if (formItem== OOORiderItems.TAKA_MEDAL.get()&formItem2== OOORiderItems.TORA_MEDAL.get()&formItem3== OOORiderItems.BATTA_MEDAL.get() )return "tatoba";
+		if (formItem== OOORiderItems.SUPER_TAKA_MEDAL.get()&formItem2== OOORiderItems.SUPER_TORA_MEDAL.get()&formItem3== OOORiderItems.SUPER_BATTA_MEDAL.get() )return "super_tatoba";
+		if (formItem== OOORiderItems.TAKA_ANKH_MEDAL.get()&formItem2== OOORiderItems.TORA_MEDAL.get()&formItem3== OOORiderItems.BATTA_MEDAL.get() )return "tatoba";
+		if (formItem== OOORiderItems.TAKA_MEDAL.get()&formItem2== OOORiderItems.KUJAKU_MEDAL.get()&formItem3== OOORiderItems.CONDOR_MEDAL.get() )return "tajadol";
+		if (formItem== OOORiderItems.TAKA_ANKH_MEDAL.get()&formItem2== OOORiderItems.KUJAKU_MEDAL.get()&formItem3== OOORiderItems.CONDOR_MEDAL.get() )return "tajadol_fe";
+		if (formItem== OOORiderItems.TAKA_ETERNITY_MEDAL.get()&formItem2== OOORiderItems.KUJAKU_ETERNITY_MEDAL.get()&formItem3== OOORiderItems.CONDOR_ETERNITY_MEDAL.get() )return "tajadol_eternity";
+		if (formItem== OOORiderItems.LION_MEDAL.get()&formItem2== OOORiderItems.TORA_MEDAL.get()&formItem3== OOORiderItems.CHEETAH_MEDAL.get() )return "latorartar";
+		if (formItem== OOORiderItems.KUWAGATA_MEDAL.get()&formItem2== OOORiderItems.KAMAKIRI_MEDAL.get()&formItem3== OOORiderItems.BATTA_MEDAL.get() )return "gatakiriba";
+		if (formItem== OOORiderItems.SAI_MEDAL.get()&formItem2== OOORiderItems.GORILLA_MEDAL.get()&formItem3== OOORiderItems.ZOU_MEDAL.get() )return "sagohzo";
+		if (formItem== OOORiderItems.SHACHI_MEDAL.get()&formItem2== OOORiderItems.UNAGI_MEDAL.get()&formItem3== OOORiderItems.TAKO_MEDAL.get() )return "shauta";
+		if (formItem== OOORiderItems.PTERA_MEDAL.get()&formItem2== OOORiderItems.TRICERA_MEDAL.get()&formItem3== OOORiderItems.TYRANNO_MEDAL.get() )return "putotyra";
+		if (formItem== OOORiderItems.COBRA_MEDAL.get()&formItem2== OOORiderItems.KAME_MEDAL.get()&formItem3== OOORiderItems.WANI_MEDAL.get() )return "burakawani";
+		if (formItem== OOORiderItems.LOVE_CORE_MEDAL.get()&formItem2== OOORiderItems.LOVE_CORE2_MEDAL.get()&formItem3== OOORiderItems.LOVE_CORE3_MEDAL.get() )return "love";
+		if (formItem== OOORiderItems.SAME_MEDAL.get()&formItem2== OOORiderItems.KUJIRA_MEDAL.get()&formItem3== OOORiderItems.OOKAMIUO_MEDAL.get() )return "saramiuo";
+		if (formItem== OOORiderItems.EBI_NEW_MEDAL.get()&formItem2== OOORiderItems.KANI_NEW_MEDAL.get()&formItem3== OOORiderItems.SASORI_NEW_MEDAL.get() )return "bikaso";
+		if (formItem== OOORiderItems.SHIKA_MEDAL.get()&formItem2== OOORiderItems.GAZELLE_MEDAL.get()&formItem3== OOORiderItems.USHI_MEDAL.get() )return "shigazeshi";
+		if (formItem== OOORiderItems.MUKADE_MEDAL.get()&formItem2== OOORiderItems.HACHI_MEDAL.get()&formItem3== OOORiderItems.ARI_MEDAL.get() )return "mukachiri";
+		if (formItem== OOORiderItems.SEIUCHI_MEDAL.get()&formItem2== OOORiderItems.SHIROKUMA_MEDAL.get()&formItem3== OOORiderItems.PENGUIN_MEDAL.get() )return "seishirogin";
+		if (formItem== OOORiderItems.TAKA_MEDAL.get()&formItem2== OOORiderItems.IMAGIN_MEDAL.get()&formItem3== OOORiderItems.SHOCKER_MEDAL.get() )return "tamashiy";
+		if (formItem== OOORiderItems.TAKA_ANKH_MEDAL.get()&formItem2== OOORiderItems.IMAGIN_MEDAL.get()&formItem3== OOORiderItems.SHOCKER_MEDAL.get() )return "tamashiy";
+		if (formItem== OOORiderItems.HABATAKI_MEDAL.get()&formItem2== OOORiderItems.TAIGA_MEDAL.get()&formItem3== OOORiderItems.ICHIGO_MEDAL.get() )return "legend_tatoba";
+		if (formItem== OOORiderItems.MUKADE_GODA_MEDAL.get()&formItem2== OOORiderItems.HACHI_GODA_MEDAL.get()&formItem3== OOORiderItems.ARI_GODA_MEDAL.get() )return "goda";
 
-		if (formItem==OOO_Rider_Items.ANCIENT_TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.ANCIENT_TORA_MEDAL.get()&formItem3==OOO_Rider_Items.ANCIENT_BATTA_MEDAL.get() )return "ancient_tatoba";
-		if (formItem==OOO_Rider_Items.ANCIENT_TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()&formItem3==OOO_Rider_Items.ANCIENT_BATTA_MEDAL.get() )return "ancient_tatoba_greed";
+		if (formItem== OOORiderItems.ANCIENT_TAKA_MEDAL.get()&formItem2== OOORiderItems.ANCIENT_TORA_MEDAL.get()&formItem3== OOORiderItems.ANCIENT_BATTA_MEDAL.get() )return "ancient_tatoba";
+		if (formItem== OOORiderItems.ANCIENT_TAKA_MEDAL.get()&formItem2== OOORiderItems.GREEED_ABSORPTION_CORE.get()&formItem3== OOORiderItems.ANCIENT_BATTA_MEDAL.get() )return "ancient_tatoba_greed";
 
 		return "false";
 	}
@@ -88,15 +88,15 @@ public class OOODriverItem extends RiderDriverItem {
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
         if(riderName!="ooo") return "blank";
-        if (num ==1)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,1).getFormName(false);
-        else  if (num ==2)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,2).getFormName(false);
-        if (num ==3)return get_Form_Item(itemstack,1).getBeltTex()+get_Form_Item(itemstack,3).getFormName(false);
+        if (num ==1)return getFormItem(itemstack,1).getBeltTex()+ getFormItem(itemstack,1).getFormName(false);
+        else  if (num ==2)return getFormItem(itemstack,1).getBeltTex()+ getFormItem(itemstack,2).getFormName(false);
+        if (num ==3)return getFormItem(itemstack,1).getBeltTex()+ getFormItem(itemstack,3).getFormName(false);
         return "blank";
     }
 
 
     @Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
@@ -104,21 +104,21 @@ public class OOODriverItem extends RiderDriverItem {
 
 			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
-				belt = get_Form_Item(itemstack,1).getBeltTex();
+				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 			return "belts/"+belt;
 
 		}
 
-		else if (equipmentSlot == EquipmentSlot.HEAD& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka") & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_kujaku") & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_condor")) return riderName+ "_taka_tajado";
-		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOO_Rider_Items.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()==OOO_Rider_Items.OOODRIVER.get()& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka") & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_tora") & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_batta")) return riderName+ "_taka_purple";
+		else if (equipmentSlot == EquipmentSlot.HEAD& Objects.equals(getFormItem(itemstack, 1).getFormName(false), "_taka") & Objects.equals(getFormItem(itemstack, 2).getFormName(false), "_kujaku") & Objects.equals(getFormItem(itemstack, 3).getFormName(false), "_condor")) return riderName+ "_taka_tajado";
+		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOORiderItems.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()== OOORiderItems.OOODRIVER.get()& Objects.equals(getFormItem(itemstack, 1).getFormName(false), "_taka") & Objects.equals(getFormItem(itemstack, 2).getFormName(false), "_tora") & Objects.equals(getFormItem(itemstack, 3).getFormName(false), "_batta")) return riderName+ "_taka_purple";
 
-		else if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) return riderName+ get_Form_Item(itemstack,1).getFormName(fly)+ "_greeed_absorption";
-		else if (equipmentSlot == EquipmentSlot.LEGS&get_Form_Item(itemstack,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) return riderName+ get_Form_Item(itemstack,3).getFormName(fly)+ "_greeed_absorption";
+		else if (equipmentSlot == EquipmentSlot.HEAD& getFormItem(itemstack,2)== OOORiderItems.GREEED_ABSORPTION_CORE.get()) return riderName+ getFormItem(itemstack,1).getFormName(fly)+ "_greeed_absorption";
+		else if (equipmentSlot == EquipmentSlot.LEGS& getFormItem(itemstack,2)== OOORiderItems.GREEED_ABSORPTION_CORE.get()) return riderName+ getFormItem(itemstack,3).getFormName(fly)+ "_greeed_absorption";
 
-		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
-		else if (equipmentSlot == EquipmentSlot.CHEST) return riderName+ get_Form_Item(itemstack,2).getFormName(fly);
-		else return riderName+ get_Form_Item(itemstack,3).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+ getFormItem(itemstack,1).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.CHEST) return riderName+ getFormItem(itemstack,2).getFormName(fly);
+		else return riderName+ getFormItem(itemstack,3).getFormName(fly);
 
 	}
 
@@ -129,7 +129,7 @@ public class OOODriverItem extends RiderDriverItem {
 	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
 		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+			return getFormItem(itemstack, 1).getIsBeltGlowing();
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
@@ -137,7 +137,7 @@ public class OOODriverItem extends RiderDriverItem {
 					return true;
 				}
 				case CHEST -> {
-					return get_Form_Item(itemstack, 2).get_Is_Glowing();
+					return getFormItem(itemstack, 2).getIsGlowing();
 				}
 				case LEGS -> {
 					return false;
@@ -154,14 +154,14 @@ public class OOODriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST)num=2;
 		if (slot == EquipmentSlot.LEGS)num=3;
 
-        if (slot == EquipmentSlot.HEAD& Objects.equals(get_Form_Item(itemstack, 1).getFormName(false), "_taka")
-                & Objects.equals(get_Form_Item(itemstack, 2).getFormName(false), "_kujaku")
-                & Objects.equals(get_Form_Item(itemstack, 3).getFormName(false), "_condor")) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
+        if (slot == EquipmentSlot.HEAD& Objects.equals(getFormItem(itemstack, 1).getFormName(false), "_taka")
+                & Objects.equals(getFormItem(itemstack, 2).getFormName(false), "_kujaku")
+                & Objects.equals(getFormItem(itemstack, 3).getFormName(false), "_condor")) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
 
-		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
+		if (getFormItem(itemstack, num).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getFlyingModel(this.Rider));
 		}else
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getModel(this.Rider));
 
 	}
 

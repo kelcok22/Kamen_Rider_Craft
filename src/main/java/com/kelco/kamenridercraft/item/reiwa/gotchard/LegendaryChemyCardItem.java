@@ -4,8 +4,8 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -49,7 +49,7 @@ public class LegendaryChemyCardItem extends RiderFormChangeItem {
 
     public boolean canSummonLegends(Player player) {
         return player.isShiftKeyDown() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof LegenDriverItem driver && driver.isTransformed(player)
-                && RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == this;
+                && RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == this;
     }
 
     @Override
@@ -63,8 +63,8 @@ public class LegendaryChemyCardItem extends RiderFormChangeItem {
                 summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(baseForm.LEGS));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(baseForm));
                 if (!baseFormItems.isEmpty())
-                    for (RiderFormChangeItem form : baseFormItems) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
-                if (this == Gotchard_Rider_Items.GEATS_IX_RIDE_CHEMY_CARD.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_RAISE_BUCKLE.get(), 3);
+                    for (RiderFormChangeItem form : baseFormItems) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
+                if (this == GotchardRiderItems.GEATS_IX_RIDE_CHEMY_CARD.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_RAISE_BUCKLE.get(), 3);
 
                 level.addFreshEntity(summon);
                 summon.bindToPlayer(player);
@@ -79,8 +79,8 @@ public class LegendaryChemyCardItem extends RiderFormChangeItem {
                 summon2.setItemSlot(EquipmentSlot.LEGS, new ItemStack(superForm.LEGS));
                 summon2.setItemSlot(EquipmentSlot.FEET, new ItemStack(superForm));
                 if (!superFormItems.isEmpty())
-                    for (RiderFormChangeItem form : superFormItems) RiderDriverItem.set_Form_Item(summon2.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
-                if (this == Gotchard_Rider_Items.GEATS_IX_RIDE_CHEMY_CARD.get()) RiderDriverItem.set_Form_Item(summon2.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get(), 3);
+                    for (RiderFormChangeItem form : superFormItems) RiderDriverItem.setFormItem(summon2.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
+                if (this == GotchardRiderItems.GEATS_IX_RIDE_CHEMY_CARD.get()) RiderDriverItem.setFormItem(summon2.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_MKII_RAISE_BUCKLE.get(), 3);
 
                 level.addFreshEntity(summon2);
                 summon2.bindToPlayer(player);

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.block.machineBlocks;
 
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -64,16 +64,16 @@ public class ProgrisekeyPrinter extends MachineBlock {
 
         if (!level.isClientSide()) {
             if (this.asBlock() == Rider_Blocks.ZAIA_3D_PRINTER.get()) {
-                if (player.getItemInHand(hand).getItem() == Zero_One_Rider_Items.BLANK_PROGRISEKEY.get()){
+                if (player.getItemInHand(hand).getItem() == ZeroOneRiderItems.BLANK_PROGRISEKEY.get()){
                     process(player, level, pos, hand, getProgrisekeyDrop(0));
                     return ItemInteractionResult.SUCCESS;
                 }
             } else {
-                if (player.getItemInHand(hand).getItem() == Zero_One_Rider_Items.BLANK_PROGRISEKEY.get()) {
+                if (player.getItemInHand(hand).getItem() == ZeroOneRiderItems.BLANK_PROGRISEKEY.get()) {
                     process(player, level, pos, hand, getProgrisekeyDrop(1));
                     return ItemInteractionResult.SUCCESS;
                 }
-			    else if (player.getItemInHand(hand).getItem() == Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()){
+			    else if (player.getItemInHand(hand).getItem() == ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()){
                     process(player, level, pos, hand, getProgrisekeyDrop(2));
                     return ItemInteractionResult.SUCCESS;
                 }

@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,7 +18,7 @@ public class RidewatchHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public RidewatchHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()));
+		this(containerId, playerInventory,new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
 	}
 
 	public RidewatchHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

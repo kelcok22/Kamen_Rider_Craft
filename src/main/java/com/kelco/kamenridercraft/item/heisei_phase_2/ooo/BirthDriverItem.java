@@ -2,11 +2,11 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -28,7 +28,7 @@ public class BirthDriverItem extends RiderDriverItem {
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 
-		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
+		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
 		Num_Base_Form_Item=7;
 	}
 
@@ -37,39 +37,39 @@ public class BirthDriverItem extends RiderDriverItem {
 		Has_basic_belt_info=false;
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
-		if (get_Form_Item(stack, 2)== OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get()&get_Form_Item(stack, 3)
-				==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get()&get_Form_Item(stack, 4)
-				==OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get()&get_Form_Item(stack, 5)
-				==OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get()&get_Form_Item(stack, 6)
-				==OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get()&get_Form_Item(stack, 7)
-				==OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get()) tooltipComponents.add(Component.translatable( "kamenridercraft:birthday.form"));
+		if (getFormItem(stack, 2)== OOORiderItems.BIRTH_CORE_BREAST_CANNON.get()& getFormItem(stack, 3)
+				== OOORiderItems.BIRTH_CORE_CRANE_ARM.get()& getFormItem(stack, 4)
+				== OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get()& getFormItem(stack, 5)
+				== OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get()& getFormItem(stack, 6)
+				== OOORiderItems.BIRTH_CORE_DRILL_ARM.get()& getFormItem(stack, 7)
+				== OOORiderItems.BIRTH_CORE_CUTTER_WING.get()) tooltipComponents.add(Component.translatable( "kamenridercraft:birthday.form"));
 
 		else {
 			tooltipComponents.add(Component.translatable( "kamenridercraft:claws.form"));
 
-			if (get_Form_Item(stack, 2) == OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get())
+			if (getFormItem(stack, 2) == OOORiderItems.BIRTH_CORE_BREAST_CANNON.get())
 				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_breast_cannon.form"));
-			if (get_Form_Item(stack, 3) == OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get())
+			if (getFormItem(stack, 3) == OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
 				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_crane_arm.form"));
-			if (get_Form_Item(stack, 4) == OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get())
+			if (getFormItem(stack, 4) == OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get())
 				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_shovel_arm.form"));
-			if (get_Form_Item(stack, 5) == OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get())
+			if (getFormItem(stack, 5) == OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get())
 				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_catepillar_leg.form"));
-			if (get_Form_Item(stack, 6) == OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get())
+			if (getFormItem(stack, 6) == OOORiderItems.BIRTH_CORE_DRILL_ARM.get())
 				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_drill_arm.form"));
-			if (get_Form_Item(stack, 7) == OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get())
+			if (getFormItem(stack, 7) == OOORiderItems.BIRTH_CORE_CUTTER_WING.get())
 				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_cutter_wing.form"));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
-				belt = get_Form_Item(itemstack,1).getBeltTex();
+				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 			return "belts/"+belt;
 
@@ -77,16 +77,16 @@ public class BirthDriverItem extends RiderDriverItem {
 
 		else if (equipmentSlot == EquipmentSlot.CHEST) return "birth_claws_1";
 		else if (equipmentSlot == EquipmentSlot.LEGS) return "birth_claws_2";
-		else return riderName+get_Form_Item(itemstack,1).getFormName(false);
+		else return riderName+ getFormItem(itemstack,1).getFormName(false);
 
 	}
 
 	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
 		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+			return getFormItem(itemstack, 1).getIsBeltGlowing();
 		}
-		if (isTransformed(livingEntity) && currentSlot==EquipmentSlot.HEAD) return get_Form_Item(itemstack, 1).get_Is_Glowing();
+		if (isTransformed(livingEntity) && currentSlot==EquipmentSlot.HEAD) return getFormItem(itemstack, 1).getIsGlowing();
 		return false;
 	}
 
@@ -96,12 +96,12 @@ public class BirthDriverItem extends RiderDriverItem {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_1.geo.json");
 			}
 			case LEGS -> {
-				if (get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get())
+				if (getFormItem(itemstack, 3)== OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
 					return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2_crane.geo.json");
 				else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2.geo.json");
 			}
 			default -> {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 1).getModel(this.Rider));
 			}
 		}
 	}
@@ -120,15 +120,15 @@ public class BirthDriverItem extends RiderDriverItem {
 
 			}
 			case CHEST -> {
-				if (Objects.equals(part, "body")) return get_Form_Item(itemstack, 2)== OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get();
-				if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get();
-				if (Objects.equals(part, "leftArm")) return get_Form_Item(itemstack, 4)==OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get();
-				if (Objects.equals(part, "leftLeg") || Objects.equals(part, "rightLeg")) return get_Form_Item(itemstack, 5)==OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get();
+				if (Objects.equals(part, "body")) return getFormItem(itemstack, 2)== OOORiderItems.BIRTH_CORE_BREAST_CANNON.get();
+				if (Objects.equals(part, "rightArm")) return getFormItem(itemstack, 3)== OOORiderItems.BIRTH_CORE_CRANE_ARM.get();
+				if (Objects.equals(part, "leftArm")) return getFormItem(itemstack, 4)== OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get();
+				if (Objects.equals(part, "leftLeg") || Objects.equals(part, "rightLeg")) return getFormItem(itemstack, 5)== OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get();
 
 			}
 			case LEGS -> {
-				if (Objects.equals(part, "rightArm")) return get_Form_Item(itemstack, 6)==OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get();
-				if (Objects.equals(part, "body")) return get_Form_Item(itemstack, 7)==OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get();
+				if (Objects.equals(part, "rightArm")) return getFormItem(itemstack, 6)== OOORiderItems.BIRTH_CORE_DRILL_ARM.get();
+				if (Objects.equals(part, "body")) return getFormItem(itemstack, 7)== OOORiderItems.BIRTH_CORE_CUTTER_WING.get();
 			}
 			default -> {}
 		}

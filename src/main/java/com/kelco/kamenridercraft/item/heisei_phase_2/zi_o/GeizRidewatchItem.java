@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.zi_o;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -24,8 +24,8 @@ public class GeizRidewatchItem extends RiderFormChangeItem {
     }
 
     public void summonWeapon(Level level, Player player) {
-        ItemStack stack = new ItemStack(Zi_O_Rider_Items.ZIKAN_ZAX.get());
-        if (player.getOffhandItem().getItem() == Zi_O_Rider_Items.GEIZ_REVIVE_RIDEWATCH.get()) stack = new ItemStack(Zi_O_Rider_Items.ZIKAN_JACLAW.get());
+        ItemStack stack = new ItemStack(ZiORiderItems.ZIKAN_ZAX.get());
+        if (player.getOffhandItem().getItem() == ZiORiderItems.GEIZ_REVIVE_RIDEWATCH.get()) stack = new ItemStack(ZiORiderItems.ZIKAN_JACLAW.get());
         
 		stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
 		if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
@@ -44,7 +44,7 @@ public class GeizRidewatchItem extends RiderFormChangeItem {
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.GEIZ_MAJESTY_RIDEWATCH.get())) {
+        && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.GEIZ_MAJESTY_RIDEWATCH.get())) {
             summonWeapon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }

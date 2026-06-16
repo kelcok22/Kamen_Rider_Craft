@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Zeztz_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
@@ -19,21 +19,21 @@ public class NoxEntity extends BaseHenchmenEntity {
 		public NoxEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="nox_knight";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zeztz_Rider_Items.ZEZTZ_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zeztz_Rider_Items.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zeztz_Rider_Items.KIGHT_INVOKER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zeztz_Rider_Items.BREAKAM_BUSTER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.KIGHT_INVOKER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeztzRiderItems.BREAKAM_BUSTER.get()));
     }
 
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<30
-                && playerIn.getInventory().countItem(Zeztz_Rider_Items.PLASMA_CAPSEM.get().asItem())!=0 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= Zeztz_Rider_Items.NOX_DRIVER.get()) {
+                && playerIn.getInventory().countItem(ZeztzRiderItems.PLASMA_CAPSEM.get().asItem())!=0 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= ZeztzRiderItems.NOX_DRIVER.get()) {
             if(this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox"));
 
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zeztz_Rider_Items.NOX_DRIVER.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.NOX_DRIVER.get()));
         }
     }
 

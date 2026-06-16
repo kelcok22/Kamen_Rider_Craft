@@ -10,22 +10,22 @@ import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class BikeRenderer<T extends baseBikeEntity> extends GeoEntityRenderer<T> {
-	public BikeRenderer(EntityRendererProvider.Context renderManager) {
+    public BikeRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new BikeModel<>());
-    	this.scaleWidth = 1.1f;
-		this.scaleHeight = 1.1f;
+        this.scaleWidth = 1.1f;
+        this.scaleHeight = 1.1f;
 
     }
 
-	@Override
-	public ResourceLocation getTextureLocation(T animatable) {
-		 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/"+animatable.NAME+".png");
-	}
-	
+    @Override
+    public ResourceLocation getTextureLocation(T animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/" + animatable.NAME + ".png");
+    }
+
     @Override
     public void render(T entity, float entityYaw, float partialTick, PoseStack poseStack,
                        MultiBufferSource bufferSource, int packedLight) {
-    	poseStack.translate(0, -0.15, 0);
+        poseStack.translate(0, -0.15, 0);
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
     }
 }

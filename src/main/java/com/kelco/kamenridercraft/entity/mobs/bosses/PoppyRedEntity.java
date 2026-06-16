@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -18,12 +18,12 @@ public class PoppyRedEntity extends BaseHenchmenEntity {
     public PoppyRedEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="poppy";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
 
-		ItemStack belt = new ItemStack(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_POPPY.get());
-		RiderDriverItem.set_Form_Item(belt, Ex_Aid_Rider_Items.TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get(), 1);
+		ItemStack belt = new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II_POPPY.get());
+		RiderDriverItem.setFormItem(belt, ExAidRiderItems.TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get(), 1);
 	
         this.setItemSlot(EquipmentSlot.FEET,belt);
     }
@@ -32,7 +32,7 @@ public class PoppyRedEntity extends BaseHenchmenEntity {
     public void tick() {
 		if (this.getHealth()<20) {
 			
-	        this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get()));
+	        this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II.get()));
 
 		}
 		super.tick();

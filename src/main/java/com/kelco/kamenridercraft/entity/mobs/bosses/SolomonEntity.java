@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,11 +17,11 @@ public class SolomonEntity extends BaseHenchmenEntity {
     public SolomonEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="solomon";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Saber_Rider_Items.SABER_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Saber_Rider_Items.SABER_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Saber_Rider_Items.SABER_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Saber_Rider_Items.DOOMS_DRIVER_BUCKLE_SOLOMON.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.CALADBOLG.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(SaberRiderItems.SABER_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.DOOMS_DRIVER_BUCKLE_SOLOMON.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.CALADBOLG.get()));
     }
     
 

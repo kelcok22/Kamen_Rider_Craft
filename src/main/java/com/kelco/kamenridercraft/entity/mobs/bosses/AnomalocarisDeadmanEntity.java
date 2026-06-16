@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -18,7 +18,7 @@ public class AnomalocarisDeadmanEntity extends BaseHenchmenEntity {
     public AnomalocarisDeadmanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="anomalocaris_deadman";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Revice_Rider_Items.PARANEGRO.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ReviceRiderItems.PARANEGRO.get()));
     }
 
  

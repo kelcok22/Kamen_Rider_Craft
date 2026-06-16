@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
@@ -25,7 +25,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "giff_junior";
 
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Revice_Rider_Items.GIFF_JUNIOR_SWORD.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ReviceRiderItems.GIFF_JUNIOR_SWORD.get()));
     }
 
 

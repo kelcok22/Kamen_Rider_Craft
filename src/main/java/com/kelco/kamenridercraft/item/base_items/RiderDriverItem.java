@@ -6,28 +6,21 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
-import com.kelco.kamenridercraft.network.payload.StartKickPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
-import com.kelco.kamenridercraft.world.damagesource.RiderDamageTypes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
@@ -36,7 +29,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.Nullable;
@@ -67,6 +59,10 @@ public class RiderDriverItem extends RiderArmorItem {
     private Boolean SD = false;
     public int Unlimited_Textures = 0;
     public int Unlimited_Belt_Textures = 0;
+    public int abilityMultiplier = 1;
+
+    public ResourceLocation abilitySlotOne = null;
+    public ResourceLocation abilitySlotTwo = null;
 
     public Boolean Has_Inventory = false;
 
@@ -117,26 +113,28 @@ public class RiderDriverItem extends RiderArmorItem {
      *
      * @param player The {@link net.minecraft.world.entity.LivingEntity} using the device
      * @return {@code true} if the entity is transformed, otherwise {@code false}
+     *
      * @author Chair
      **/
-    public boolean isTransformed(LivingEntity player) {
-        if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        return player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD.asItem()
-                && player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO.asItem()
-                && player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS.asItem()
-                && player.getItemBySlot(EquipmentSlot.FEET).getItem() == this;
+
+    public boolean isTransformed(LivingEntity rider) {
+        if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
+        return rider.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD.asItem()
+                && rider.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO.asItem()
+                && rider.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS.asItem()
+                && rider.getItemBySlot(EquipmentSlot.FEET).getItem() == this;
     }
 
 
-    public static boolean isTransforming(LivingEntity player) {
-        if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        return player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() != 0;
+    public static boolean isTransforming(LivingEntity rider) {
+        if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
+        return rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() != 0;
     }
 
-    public static boolean isKicking(LivingEntity player) {
-        if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        else if (player.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = player.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
+    public static boolean isKicking(LivingEntity rider) {
+        if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
+        else if (rider.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = rider.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
             return tag.getBoolean("rider_kicking");
         }
         return false;
@@ -144,125 +142,31 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static double getRenderType(ItemStack stack) {
         double form_double = 1;
-        RiderFormChangeItem form = get_Form_Item(stack, 1);
-        if (form.get_Show_Face()) form_double = 2;
-        if (form.get_Show_under()) form_double = 3;
+        RiderFormChangeItem form = getFormItem(stack, 1);
+        if (form.getShowFace()) form_double = 2;
+        if (form.getShowUnder()) form_double = 3;
         return form_double;
     }
 
-    public void riderKickTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
-        if (player.level() instanceof ServerLevel) {
-            if (stack.has(DataComponents.CUSTOM_DATA)) {
-                CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                boolean canRiderKick = false;
-                for (int n = 0; n < Num_Base_Form_Item; n++) {
-                    RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                    if (isTransformed(player) && form.allowsRiderKick()) {
-                        player.addEffect(new MobEffectInstance(EffectCore.RIDER_KICK, 10, 0, true, false));
-                        canRiderKick = true;
-                        break;
-                    }
-                }
-                if (tag.getDouble("rider_kick_cooldown") >= 1) {
-                    //this.riderKickCooldown--;
-                    if (canRiderKick) {
-                        tag.putDouble("rider_kick_cooldown", tag.getDouble("rider_kick_cooldown") - 1);
-                        if (tag.getDouble("rider_kick_cooldown") == 0 && player instanceof Player play)
-                            play.displayClientMessage(Component.translatable("message.kamenridercraft.rider_kick"), true);
-                    }
-                }
-                if (tag.getDouble("use_ability") != 0) {
-                    for (int n = 0; n < Num_Base_Form_Item; n++) {
-                        RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                        if (isTransformed(player) && form.allowsRiderKick() && !player.isPassenger() && !tag.getBoolean("rider_kicking") && tag.getDouble("rider_kick_cooldown") == 0) {
-                            Consumer<CompoundTag> data = form2 -> form2.putBoolean("rider_kicking", true);
-                            CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
-                            break;
-                        }
-                    }
-                    tag.putDouble("use_ability", tag.getDouble("use_ability") - 1);
-                }
-                if (tag.getDouble("use_ability") < 0) tag.putDouble("use_ability", 0);
 
-                if (tag.getBoolean("rider_kicking")) {
-                    tag.putDouble("rider_kick_tick", tag.getDouble("rider_kick_tick") + 1);
-                    if (tag.getDouble("rider_kick_tick") == 1) {
-                        PacketDistributor.sendToAllPlayers(new StartKickPayload(player.onGround() ? "floor_start" : "air_start", player.getStringUUID()));
-                        Vec3 initialVec = player.getDeltaMovement();
-                        Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
-                        player.setDeltaMovement(climbVec.scale(0.97D));
-                        // player.push(0, 1.25, 0);
-                        player.hurtMarked = true;
-                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1.0, player.getZ(), 0, 0, 0);
-                    } else if (tag.getDouble("rider_kick_tick") == 17) {
-                        PacketDistributor.sendToAllPlayers(new StartKickPayload("kick", player.getStringUUID()));
-                    } else if (tag.getDouble("rider_kick_tick") == 21) {
-                        player.setDeltaMovement(0, 0, 0);
-                        Double y = player.getLookAngle().y;
-                        if (y < 0.5) y = 0.05d;
-                        Vec3 look = new Vec3(player.getLookAngle().x * 0.1, y * 0.04, player.getLookAngle().z * 0.1).scale(20);
-                        player.setDeltaMovement(look.scale(0.97D));
-                        player.hurtMarked = true;
-                    }
-                    if (tag.getDouble("rider_kick_tick") >= 21) {
-                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY(), player.getZ(), 0.0D, 0.0D, 0.0D);
-                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 1, player.getZ(), 0.0D, 0.0D, 0.0D);
-                        level.addParticle(ParticleTypes.GUST, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-
-                        List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
-                                (sentity instanceof Player && sentity != player)
-                                        || (sentity instanceof Mob));
-                        for (LivingEntity enemy : nearbyEnemies) {
-                            level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                            if (enemy.getHealth() < enemy.getMaxHealth() / 3)
-                                enemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
-                            if (stack.getItem() instanceof RiderDriverItem) {
-                                this.OnRiderKickHit(stack, player, enemy);
-                                Consumer<CompoundTag> data = form -> form.putDouble("rider_kick_tick", 41);
-                                CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
-                            }
-                        }
-                        if (player.onGround() || player.isInWater() || tag.getDouble("rider_kick_tick") >= 41) {
-                            level.addParticle(ParticleTypes.EXPLOSION, player.getX(), player.getY() + 0.5, player.getZ(), 0.0D, 0.0D, 0.0D);
-                            if (stack.getItem() instanceof RiderDriverItem) {
-                                Consumer<CompoundTag> data = form -> {
-                                    form.putBoolean("rider_kicking", false);
-                                    form.putDouble("rider_kick_cooldown", 200);
-                                    form.putDouble("rider_kick_tick", 0);
-                                };
-                                CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
-                                PacketDistributor.sendToAllPlayers(new EndPosePayload(0, player.getStringUUID()));
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-    public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
+    public void beltTick(ItemStack stack, Level level, LivingEntity rider, int slotId) {
         if (stack.has(DataComponents.CUSTOM_DATA)) {
-            //System.err.println("beltTick");
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
-            if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
-            if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
-            if (!isTransformed(player)) tag.putDouble("render_type", 0);
+            if (tag.getBoolean("Update_form") && slotId == 36) onFormChange(stack, rider, tag);
+            if (!isTransformed(rider) || slotId != 36) tag.putBoolean("Update_form", true);
+            if (isTransformed(rider)) tag.putDouble("render_type", getRenderType(stack));
+            if (!isTransformed(rider)) tag.putDouble("render_type", 0);
 
         } else {
-            set_Upadete_Form(stack);
+            setUpdateForm(stack);
         }
-
-
     }
 
 
-    public void giveEffects(LivingEntity player) {
-
-        if (isTransformed(player)) {
+    public void giveEffects(LivingEntity rider) {
+        if (isTransformed(rider)) {
             for (int n = 0; n < Num_Base_Form_Item; n++) {
-                RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1);
                 List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
                 for (MobEffectInstance effect : potionEffectList) {
                     if ((effect.getEffect() != MobEffects.DAMAGE_BOOST &&
@@ -275,36 +179,36 @@ public class RiderDriverItem extends RiderArmorItem {
                             effect.getEffect() != EffectCore.PUNCH &&
                             effect.getEffect() != EffectCore.GREEED &&
                             effect.getEffect() != EffectCore.BUGSTER)
-                            || ((player instanceof BaseSummonEntity || player instanceof EnemySummonEntity)
+                            || ((rider instanceof BaseSummonEntity || rider instanceof EnemySummonEntity)
                             && (effect.getEffect() != MobEffects.DAMAGE_RESISTANCE || effect.getAmplifier() < 3)
                             && effect.getEffect() != EffectCore.GREEED &&
                             effect.getEffect() != EffectCore.BUGSTER)
-                            || player instanceof Player) {
-                        player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
+                            || rider instanceof Player) {
+                        rider.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
                     }
                 }
             }
         }
     }
 
-    public void timeoutForms(LivingEntity entity, ItemStack stack) {
+    public void timeoutForms(LivingEntity rider, ItemStack stack) {
         for (int n = 1; n == this.Num_Base_Form_Item; n++) {
-            RiderFormChangeItem form = RiderDriverItem.get_Form_Item(stack, n);
+            RiderFormChangeItem form = RiderDriverItem.getFormItem(stack, n);
             if (form.getTimeoutDuration() != 0) {
-                RiderDriverItem.set_Form_Item(stack, form.getRevertForm(), n);
-                entity.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK, form.getLockDuration(), 0, false, false));
+                RiderDriverItem.setFormItem(stack, form.getRevertForm(), n);
+                rider.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK, form.getLockDuration(), 0, false, false));
             }
         }
-        entity.removeEffect(EffectCore.FORM_TIMEOUT);
+        rider.removeEffect(EffectCore.FORM_TIMEOUT);
     }
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        if (entity instanceof LivingEntity livingEntity && stack == livingEntity.getItemBySlot(EquipmentSlot.FEET)) {
-            this.beltTick(stack, level, livingEntity, slotId);
-            this.giveEffects(livingEntity);
-            if (livingEntity.hasEffect(EffectCore.FORM_TIMEOUT) && !isTransformed(livingEntity))
-                this.timeoutForms(livingEntity, stack);
+        if (entity instanceof LivingEntity rider && stack == rider.getItemBySlot(EquipmentSlot.FEET)) {
+            this.beltTick(stack, level, rider, slotId);
+            this.giveEffects(rider);
+            if (rider.hasEffect(EffectCore.FORM_TIMEOUT) && !isTransformed(rider))
+                this.timeoutForms(rider, stack);
         } else if (entity instanceof LivingEntity player) {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 if (!isTransformed(player) || slotId != 36) {
@@ -322,128 +226,98 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
-    public void OnformChange(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
-        if (isTransformed(player)) {
-            OnTransformation(itemstack, player);
+    public void onFormChange(ItemStack itemstack, LivingEntity rider, CompoundTag tag) {
+        if (isTransformed(rider)) {
+            OnTransformation(itemstack, rider);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
                 form.putDouble("render_type", getRenderType(itemstack));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-            player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(30);
-            player.getAttribute(Attributes.CAPE_ROT).setBaseValue(0);
-            player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(0);
-            player.getAttribute(Attributes.BALL_ROT).setBaseValue(0);
+            rider.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(30);
+            rider.getAttribute(Attributes.CAPE_ROT).setBaseValue(0);
+            rider.getAttribute(Attributes.WHEEL_ROT).setBaseValue(0);
+            rider.getAttribute(Attributes.BALL_ROT).setBaseValue(0);
         }
 
     }
 
-    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-        if (isTransformed(player) && !player.level().isClientSide()) {
-            //if (player.level().isClientSide)player.sendSystemMessage(Component.literal("OnTransformation"));
+    public void OnTransformation(ItemStack itemstack, LivingEntity rider) {
+        if (isTransformed(rider) && !rider.level().isClientSide()) {
+            abilitySlotOne = null;
+            abilitySlotTwo = null;
             for (int n = 0; n < Num_Base_Form_Item; n++) {
-                RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
-                form.OnTransformation(itemstack, player);
-                if (player instanceof Player player2 && !player2.isCreative()) {
-                    PacketDistributor.sendToAllPlayers(new EndPosePayload(0, player2.getStringUUID()));
+                RiderFormChangeItem form = getFormItem(itemstack, n + 1);
+                form.OnTransformation(itemstack, rider);
+                if (rider instanceof Player player && !player.isCreative()) {
+                    PacketDistributor.sendToAllPlayers(new EndPosePayload(player.getStringUUID()));
                 }
             }
         }
     }
 
-
-    public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
-        if (!pLivingEntity.level().isClientSide()) {
-            PacketDistributor.sendToAllPlayers(new EndPosePayload(0, pLivingEntity.getStringUUID()));
-            DamageSource damageSource = new DamageSource(
-                    pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), pLivingEntity, pLivingEntity, pLivingEntity.position());
-            float at = (float) (pLivingEntity.getAttributes().getValue(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE) + pLivingEntity.fallDistance);
-            enemy.hurt(damageSource, at);
-            pLivingEntity.fallDistance = 0.0f;
-            for (int n = 0; n < Num_Base_Form_Item; n++) {
-                RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
-                form.OnRiderKickHit(itemstack, pLivingEntity, enemy);
-            }
-            //pLivingEntity.sendSystemMessage(Component.literal("power=" + at));
-            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
-                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-                    pLivingEntity.getZ(), 1, 0, 0, 0, 1);
-            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.FLAME,
-                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-                    pLivingEntity.getZ(), 500, 0, 0, 0, 1);
-        }
-        if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> form.putDouble("rider_kick_tick", 41);
-            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-        }
-    }
-
-
-    public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item) {
+    public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item) {
         Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get());
         Num_Base_Form_Item = 2;
         return this;
     }
 
-    public RiderDriverItem Dont_show_belt_form_info() {
+    public RiderDriverItem hideBeltFormInfo() {
         Show_belt_form_info = false;
         return this;
     }
 
-    public RiderDriverItem Has_Inventory_Gui() {
+    public RiderDriverItem hasInventoryGui() {
         Has_Inventory = true;
         return this;
     }
 
-    public RiderDriverItem Override_belt_text(String belt) {
+    public RiderDriverItem overrideBeltText(String belt) {
         BELT_TEXT = belt;
         return this;
     }
 
-    public RiderDriverItem HasAnSDForm() {
+    public RiderDriverItem hasSDForm() {
         SD = true;
         return this;
     }
 
-    public RiderDriverItem IsA1() {
+    public RiderDriverItem isA1() {
         A1 = true;
         return this;
     }
 
-    public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item, DeferredItem<Item> item2) {
+    public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item, DeferredItem<Item> item2) {
         Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get());
         Num_Base_Form_Item = 3;
         return this;
     }
 
-    public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item, DeferredItem<Item> item2, DeferredItem<Item> item3) {
+    public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item, DeferredItem<Item> item2, DeferredItem<Item> item3) {
         Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get(), (RiderFormChangeItem) item3.get());
         Num_Base_Form_Item = 4;
         return this;
     }
 
-    public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item, DeferredItem<Item> item2, DeferredItem<Item> item3, DeferredItem<Item> item4) {
+    public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item, DeferredItem<Item> item2, DeferredItem<Item> item3, DeferredItem<Item> item4) {
         Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get(), (RiderFormChangeItem) item3.get(), (RiderFormChangeItem) item4.get());
         Num_Base_Form_Item = 5;
         return this;
     }
 
 
-    public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
-
-        boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && get_Form_Item(itemstack, 1).get_SD() & SD;
+        boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && getFormItem(itemstack, 1).getSD() & SD;
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem) itemstack.getItem()).BELT_TEXT;
-            if (((RiderDriverItem) itemstack.getItem()).BELT_TEXT == null || get_Form_Item(itemstack, 1).getIgnoreOverrideBeltText()) {
-                belt = get_Form_Item(itemstack, 1).getBeltTex() + (sd ? "_sd" : "");
+            if (((RiderDriverItem) itemstack.getItem()).BELT_TEXT == null || getFormItem(itemstack, 1).getIgnoreOverrideBeltText()) {
+                belt = getFormItem(itemstack, 1).getBeltTex() + (sd ? "_sd" : "");
             }
             return "belts/" + belt;
         } else
-            return get_Form_Item(itemstack, 1).getRiderName(riderName) + get_Form_Item(itemstack, 1).getFormName(fly) + (sd ? "_sd" : "");
-
+            return getFormItem(itemstack, 1).getRiderName(riderName) + getFormItem(itemstack, 1).getFormName(fly) + (sd ? "_sd" : "");
     }
 
     public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num) {
@@ -455,14 +329,14 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Belt_Model());
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, getFormItem(itemstack, 1).getBeltModel());
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
+        if (getFormItem(itemstack, 1).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getFlyingModel(this.Rider));
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.Rider));
     }
 
 
@@ -478,34 +352,33 @@ public class RiderDriverItem extends RiderArmorItem {
         boolean isGold = false;
         if (Num_Base_Form_Item != 1) {
             for (int n = 0; n < Num_Base_Form_Item - 1; n++) {
-                System.out.println(n);
-                if (get_Form_Item(stack, n).checkGold()) {
+                if (getFormItem(stack, n).checkGold()) {
                     isGold = true;
                 }
             }
         }
-        if (get_Form_Item(stack, 1).checkGold()) {
+        if (getFormItem(stack, 1).checkGold()) {
             return true;
         }
         return isGold;
     }
 
 
-    public static void reset_Form_Item(ItemStack itemstack) {
+    public static void resetFormItem(ItemStack itemstack) {
 
         if (itemstack.getItem() instanceof RiderDriverItem belt) {
 
             if (belt.Num_Base_Form_Item != 1) {
                 for (int n = 0; n < belt.Num_Base_Form_Item - 1; n++) {
-                    set_Form_Item(itemstack, belt.Extra_Base_Form_Item.get(n), 2 + n);
+                    setFormItem(itemstack, belt.Extra_Base_Form_Item.get(n), 2 + n);
                 }
             }
-            set_Form_Item(itemstack, belt.Base_Form_Item, 1);
+            setFormItem(itemstack, belt.Base_Form_Item, 1);
 
         }
     }
 
-    public static void set_Upadete_Form(ItemStack itemstack) {
+    public static void setUpdateForm(ItemStack itemstack) {
         if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
             itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
@@ -519,18 +392,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
-    public static void setUseAbility(ItemStack itemstack) {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
-        if (itemstack.getItem() instanceof RiderDriverItem) {
-            Consumer<CompoundTag> data = form -> form.putDouble("use_ability", 5);
-            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-        }
-    }
-
-
-    public static void set_Form_Item(ItemStack itemstack, Item ITEM, int SLOT) {
+    public static void setFormItem(ItemStack itemstack, Item ITEM, int SLOT) {
         if (!itemstack.has(DataComponents.CUSTOM_DATA)) itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         if (itemstack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
@@ -542,18 +404,18 @@ public class RiderDriverItem extends RiderArmorItem {
             };
 
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-            driver.Extra_set_Form_Item(itemstack, ITEM, SLOT, itemstack.get(DataComponents.CUSTOM_DATA).copyTag());
+            driver.setExtraFormItem(itemstack, ITEM, SLOT, itemstack.get(DataComponents.CUSTOM_DATA).copyTag());
         }
     }
 
 
-    public void Extra_set_Form_Item(ItemStack itemstack, Item ITEM, int SLOT, CompoundTag tag) {
+    public void setExtraFormItem(ItemStack itemstack, Item ITEM, int SLOT, CompoundTag tag) {
     }
 
 
-    public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
-        if (currentSlot == EquipmentSlot.FEET) return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-        else if (isTransformed(livingEntity)) return get_Form_Item(itemstack, 1).get_Is_Glowing();
+    public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity rider) {
+        if (currentSlot == EquipmentSlot.FEET) return getFormItem(itemstack, 1).getIsBeltGlowing();
+        else if (isTransformed(rider)) return getFormItem(itemstack, 1).getIsGlowing();
         return false;
     }
 
@@ -561,10 +423,10 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     @Override
-    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
+    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T rider, Consumer<Item> onBroken) {
         if (stack.has(DataComponents.CONTAINER) && stack.getDamageValue() == stack.getMaxDamage() - 1) {
-            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) entity.spawnAtLocation(card);
-            if (entity instanceof ServerPlayer player) player.closeContainer();
+            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) rider.spawnAtLocation(card);
+            if (rider instanceof ServerPlayer player) player.closeContainer();
             stack.set(DataComponents.CONTAINER, ItemContainerContents.EMPTY);
         }
         return amount;
@@ -602,8 +464,8 @@ public class RiderDriverItem extends RiderArmorItem {
             else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
             if (Show_belt_form_info) {
                 {
-                    RiderFormChangeItem formItem = get_Form_Item(stack, 1);
-                    if (formItem.get_a1() & isDateA1)
+                    RiderFormChangeItem formItem = getFormItem(stack, 1);
+                    if (formItem.getA1() & isDateA1)
                         tooltipComponents.add(Component.translatable(formItem + ".form.a1"));
                     else tooltipComponents.add(Component.translatable(formItem + ".form"));
                 }
@@ -631,7 +493,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
-    public static RiderFormChangeItem get_Form_Item(ItemStack itemstack, int SLOT) {
+    public static RiderFormChangeItem getFormItem(ItemStack itemstack, int SLOT) {
 
         RiderDriverItem belt = (RiderDriverItem) itemstack.getItem();
         RiderFormChangeItem Base_Form_Item = (SLOT >= 2 ? belt.Extra_Base_Form_Item.get(SLOT - 2) : belt.Base_Form_Item);
@@ -646,14 +508,10 @@ public class RiderDriverItem extends RiderArmorItem {
         return Base_Form_Item;
     }
 
-    public boolean HasCpae(ItemStack itemstack) {
+    public boolean hasCape(ItemStack itemstack) {
         for (int n = 0; n < Num_Base_Form_Item; n++) {
-            if (get_Form_Item(itemstack, n + 1).get_has_cape()) return true;
+            if (getFormItem(itemstack, n + 1).getHasCape()) return true;
         }
         return false;
     }
 }
-
-
-
-

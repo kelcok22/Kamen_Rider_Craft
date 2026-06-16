@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -18,18 +18,18 @@ public class DodoMagiaEntity extends BaseHenchmenEntity {
     public DodoMagiaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="dodo_magia";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ZETSUMERISER_DODO.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeroOneRiderItems.ZERO_ONE_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeroOneRiderItems.ZERO_ONE_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeroOneRiderItems.ZERO_ONE_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.ZETSUMERISER_DODO.get()));
 		switch (this.getRandom().nextInt(3)) {
 		  case 0:
 		  	  NAME="dodo_magia_custom";
-			  this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ZETSUMERISER_DODO_CUSTOM.get()));
+			  this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.ZETSUMERISER_DODO_CUSTOM.get()));
 			  break;
 		  case 1:
 		  	  NAME="dodo_magia_custom_two";
-			  this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ZETSUMERISER_DODO_CUSTOM_TWO.get()));
+			  this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.ZETSUMERISER_DODO_CUSTOM_TWO.get()));
 			  break;
 		}
     }

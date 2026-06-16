@@ -40,7 +40,7 @@ public class LocalPlayerMixin {
 
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
-                if (belt.HasCpae(rider.getItemBySlot(EquipmentSlot.FEET))) {
+                if (belt.hasCape(rider.getItemBySlot(EquipmentSlot.FEET))) {
 
                     float cape = (float) rider.getAttribute(Attributes.CAPE_ROT).getBaseValue();
                     float ball = 0;
@@ -66,7 +66,7 @@ public class LocalPlayerMixin {
                     PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "ball_rot", rider.getAttribute(Attributes.BALL_ROT).getBaseValue()));
                     PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "cape_rot", rider.getAttribute(Attributes.CAPE_ROT).getBaseValue()));
                 }
-                if (RiderDriverItem.get_Form_Item(rider.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
+                if (RiderDriverItem.getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 1).getIsBike()) {
                     float wheel = 0;
                     if (Z > 0) wheel = -0.1f;
                     if (Z < 0) wheel = 0.1f;

@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class ApolloRenderer extends GeoEntityRenderer<ApolloEntity> {
 
 
-
-
-	public ApolloRenderer(EntityRendererProvider.Context renderManager) {
+    public ApolloRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new ApolloModel());
     }
 

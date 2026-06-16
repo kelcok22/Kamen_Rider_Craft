@@ -10,7 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class CellMedalProjectileRenderer extends GeoEntityRenderer<CellMedalProjectileEntity> {
 
-	public CellMedalProjectileRenderer(EntityRendererProvider.Context renderManager) {
+    public CellMedalProjectileRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new CellMedalModel());
     }
 

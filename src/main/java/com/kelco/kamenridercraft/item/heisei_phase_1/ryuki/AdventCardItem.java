@@ -4,10 +4,10 @@ import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -61,7 +61,7 @@ public class AdventCardItem extends BaseItem {
 		if (player.getInventory().countItem(VISOR)!=0) {
 			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
 			&& belt.isTransformed(player)){
-				if (Objects.equals(RIDER, ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider) | (player.getInventory().countItem(Ryuki_Rider_Items.SLASH_VISOR.get())!=0 && Objects.equals(((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider, "alternative_zero"))) {
+				if (Objects.equals(RIDER, ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider) | (player.getInventory().countItem(RyukiRiderItems.SLASH_VISOR.get())!=0 && Objects.equals(((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider, "alternative_zero"))) {
 					if (!level.isClientSide()) {
 						if (WEAPONS != null) {
                             for (Item weapon : WEAPONS) {
@@ -84,23 +84,23 @@ public class AdventCardItem extends BaseItem {
 											trick.getAttribute(Attributes.MAX_HEALTH).setBaseValue(10.0D);
 											trick.setHealth(10.0F);
 											trick.NAME = "ryuki_trick_vent";
-											trick.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get()));
-											trick.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
-											trick.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
-											trick.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
+											trick.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RyukiRiderItems.RYUKIHELMET.get()));
+											trick.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RyukiRiderItems.RYUKICHESTPLATE.get()));
+											trick.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RyukiRiderItems.RYUKILEGGINGS.get()));
+											trick.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.RYUKIDRIVER.get()));
 
-											RiderDriverItem.set_Form_Item(trick.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
-											if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1) == Ryuki_Rider_Items.ADVENT_CARD.get()) {
-												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.RIDE_SABER.get()));
-												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.RIDE_VISOR.get()));
+											RiderDriverItem.setFormItem(trick.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+											if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1) == RyukiRiderItems.ADVENT_CARD.get()) {
+												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.RIDE_SABER.get()));
+												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.RIDE_VISOR.get()));
 											}
-											else if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1) == Ryuki_Rider_Items.SURVIVE_REKKA.get()
-												||RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1) == Ryuki_Rider_Items.SURVIVE_BLACK.get()
-												||RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1) == Modded_item_core.DRAGRANZER.get()) {
-												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_BLADE.get()));
+											else if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1) == RyukiRiderItems.SURVIVE_REKKA.get()
+												||RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1) == RyukiRiderItems.SURVIVE_BLACK.get()
+												||RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1) == ModdedItemCore.DRAGRANZER.get()) {
+												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_BLADE.get()));
 											} else {
-												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SABER.get()));
-												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
+												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_SABER.get()));
+												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DRAG_VISOR.get()));
 											}
 
 											level.addFreshEntity(trick);
@@ -120,20 +120,20 @@ public class AdventCardItem extends BaseItem {
 											trick.getAttribute(Attributes.MAX_HEALTH).setBaseValue(10.0D);
 											trick.setHealth(10.0F);
 											trick.NAME = "knight_trick_vent";
-											trick.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get()));
-											trick.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
-											trick.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
-											trick.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.KNIGHTDRIVER.get()));
+											trick.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RyukiRiderItems.RYUKIHELMET.get()));
+											trick.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RyukiRiderItems.RYUKICHESTPLATE.get()));
+											trick.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RyukiRiderItems.RYUKILEGGINGS.get()));
+											trick.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.KNIGHTDRIVER.get()));
 
-											RiderDriverItem.set_Form_Item(trick.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
-											if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1) == Ryuki_Rider_Items.ADVENT_CARD.get()) {
-												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.RIDE_SABER.get()));
-												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.RIDE_VISOR.get()));
+											RiderDriverItem.setFormItem(trick.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+											if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1) == RyukiRiderItems.ADVENT_CARD.get()) {
+												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.RIDE_SABER.get()));
+												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.RIDE_VISOR.get()));
 											}
-											else if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1) == Ryuki_Rider_Items.SURVIVE_SHIPPU.get()) {
-												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_BLADE.get()));
-												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DARK_SHIELD.get()));
-											} else trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
+											else if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1) == RyukiRiderItems.SURVIVE_SHIPPU.get()) {
+												trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DARK_BLADE.get()));
+												trick.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DARK_SHIELD.get()));
+											} else trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DARK_VISOR.get()));
 
 											level.addFreshEntity(trick);
 											trick.bindToPlayer(player);

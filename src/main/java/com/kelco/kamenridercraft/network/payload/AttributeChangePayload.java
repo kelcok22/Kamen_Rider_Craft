@@ -6,7 +6,8 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 
-public record AttributeChangePayload(String id, String attributeName, Double valueChange) implements CustomPacketPayload {
+public record AttributeChangePayload(String id, String attributeName,
+                                     Double valueChange) implements CustomPacketPayload {
     public static final Type<AttributeChangePayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "attribute_change"));
 
     public static final StreamCodec<ByteBuf, AttributeChangePayload> STREAM_CODEC = StreamCodec.composite(

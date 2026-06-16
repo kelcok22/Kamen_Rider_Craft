@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 
 import com.google.common.collect.ImmutableMultimap;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import java.util.List;
 
 public class BaseRodItem extends FishingRodItem {
-	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+	private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 	private Item craftingRemainingItem = null;
 
 	public BaseRodItem(Tier toolTier, int Atk, float Spd, Properties prop) {

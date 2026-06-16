@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Agito_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.AgitoRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,7 +17,7 @@ public class ElOfTheWaterEntity extends BaseHenchmenEntity {
     public ElOfTheWaterEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="el_of_the_water";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Agito_Rider_Items.RESENTMENT_DU_SANGA.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(AgitoRiderItems.RESENTMENT_DU_SANGA.get()));
     }
 
 

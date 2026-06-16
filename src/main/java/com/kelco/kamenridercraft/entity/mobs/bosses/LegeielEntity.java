@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -21,7 +21,7 @@ public class LegeielEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-            if(this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(Saber_Rider_Items.PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get())!=0){
+            if(this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(SaberRiderItems.PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get())!=0){
                 BaseHenchmenEntity boss = MobsCore.LEGEIEL_FORBIDDEN.get().create(this.level());
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

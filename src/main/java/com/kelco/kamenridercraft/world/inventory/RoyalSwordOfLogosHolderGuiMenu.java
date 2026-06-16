@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -21,7 +21,7 @@ public class RoyalSwordOfLogosHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public RoyalSwordOfLogosHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Saber_Rider_Items.ROYAL_SWORD_OF_LOGOS_BUCKLE_SABELA.get()));
+		this(containerId, playerInventory,new ItemStack(SaberRiderItems.ROYAL_SWORD_OF_LOGOS_BUCKLE_SABELA.get()));
 	}
 
 	public RoyalSwordOfLogosHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

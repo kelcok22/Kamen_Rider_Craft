@@ -28,7 +28,7 @@ public class ZORiderItems {
 
 
     public static final DeferredItem<Item>  ZO_LOGO = ITEMS.register("zo_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zo")), new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zo")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZO_STONE = ITEMS.register("zo_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zo","blank",
@@ -43,7 +43,7 @@ public class ZORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM).KeepItem());
+            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM).KeepItem());
 
     public static final DeferredItem<Item>  NEONOID_CORE = ITEMS.register("neonoid_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","doras","doras_core",
@@ -59,7 +59,7 @@ public class ZORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            }.isGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  POWER_UP_NEONOID_CORE = ITEMS.register("power_up_neonoid_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_red","doras","red_doras_core",
@@ -75,7 +75,7 @@ public class ZORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().HasCape().AddToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            }.isGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
@@ -86,7 +86,7 @@ public class ZORiderItems {
 
     public static final DeferredItem<Item>  ZO_CORE = ITEMS.register("zo_core",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zo",ZO_STONE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties())
-                    .HasAnSDForm().Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+                    .hasSDForm().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
     public static final DeferredItem<Item>  DORAS_CORE = ITEMS.register("doras_core",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"doras",NEONOID_CORE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties())
                     .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));

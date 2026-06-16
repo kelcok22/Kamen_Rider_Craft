@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.hibiki;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
@@ -18,8 +18,8 @@ public class IbukiEquipmentBeltItem extends RiderDriverItem {
 	}
 	@Override
 	public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (this==Hibiki_Rider_Items.IBUKIDRIVER.get() && !rider.isHolding(Hibiki_Rider_Items.HENSHIN_ONIBUE_IBUKI.get())) return "henshin_onibue_ibuki";
-		else if (this==Hibiki_Rider_Items.AMAKIDRIVER.get() && !rider.isHolding(Hibiki_Rider_Items.HENSHIN_ONIBUE_AMAKI.get())) return "henshin_onibue_amaki";
+		if (this== HibikiRiderItems.IBUKIDRIVER.get() && !rider.isHolding(HibikiRiderItems.HENSHIN_ONIBUE_IBUKI.get())) return "henshin_onibue_ibuki";
+		else if (this== HibikiRiderItems.AMAKIDRIVER.get() && !rider.isHolding(HibikiRiderItems.HENSHIN_ONIBUE_AMAKI.get())) return "henshin_onibue_amaki";
 
 		return "blank";
 	}

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -16,7 +16,7 @@ public class DesastEntity extends BaseHenchmenEntity {
     public DesastEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="desast";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.GRUDGE_DENT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.GRUDGE_DENT.get()));
     }
     
 

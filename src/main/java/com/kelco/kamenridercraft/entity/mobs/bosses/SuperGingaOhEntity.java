@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -16,10 +16,10 @@ public class SuperGingaOhEntity extends BaseHenchmenEntity {
     public SuperGingaOhEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="super_gingaoh";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Fourze_Rider_Items.FOURZE_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Fourze_Rider_Items.FOURZE_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Fourze_Rider_Items.FOURZE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Fourze_Rider_Items.GINGA_OH_DRIVER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FourzeRiderItems.FOURZE_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FourzeRiderItems.FOURZE_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FourzeRiderItems.FOURZE_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(FourzeRiderItems.GINGA_OH_DRIVER.get()));
         this.moveControl = new FlyingBossControl(this, 20);
     }
     

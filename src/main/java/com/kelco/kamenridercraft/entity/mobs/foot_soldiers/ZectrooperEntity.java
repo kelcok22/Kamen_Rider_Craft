@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kabuto_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -18,10 +18,10 @@ public class ZectrooperEntity extends BaseHenchmenEntity {
     public ZectrooperEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "zectrooper";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kabuto_Rider_Items.KABUTOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kabuto_Rider_Items.KABUTOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kabuto_Rider_Items.KABUTOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kabuto_Rider_Items.ZECTROOPER_BELT.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTOHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTOCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(KabutoRiderItems.ZECTROOPER_BELT.get()));
     }
 
     @Nullable
@@ -30,14 +30,14 @@ public class ZectrooperEntity extends BaseHenchmenEntity {
 
         switch (p_34297_.getRandom().nextInt(7)) {
             case 0:
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Kabuto_Rider_Items.MACHINEGUN_BLADE.get()));
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(KabutoRiderItems.MACHINEGUN_BLADE.get()));
                 this.setMeleeOnSpawn(100.0D);
                 break;
             case 1:
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Kabuto_Rider_Items.POWER_ARM_UNIT.get()));
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(KabutoRiderItems.POWER_ARM_UNIT.get()));
                 break;
             case 2:
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Kabuto_Rider_Items.MACHINEGUN_BLADE.get()));
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(KabutoRiderItems.MACHINEGUN_BLADE.get()));
                 break;
             case 3:
 

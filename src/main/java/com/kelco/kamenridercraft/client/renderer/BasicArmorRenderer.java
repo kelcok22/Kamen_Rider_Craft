@@ -21,7 +21,7 @@ public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
         super(new BasicArmorModel());
 
         if (livingEntity.getItemBySlot(equipmentSlot).getItem() instanceof BasicArmorItem belt) {
-            if (belt.Glow)addRenderLayer(new AutoGlowingGeoLayer<>(this));
+            if (belt.Glow) addRenderLayer(new AutoGlowingGeoLayer<>(this));
         }
     }
 
@@ -30,19 +30,19 @@ public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
         return RenderType.entityTranslucent(texture);
     }
 
-@Override
+    @Override
     protected void applyBaseTransformations(HumanoidModel<?> baseModel) {
         super.applyBaseTransformations(baseModel);
-    if (this.body != null) {
-        ModelPart bodyPart = baseModel.body;
+        if (this.body != null) {
+            ModelPart bodyPart = baseModel.body;
 
-        RenderUtil.matchModelPartRot(bodyPart, this.body);
-        this.body.updatePosition(bodyPart.x, -bodyPart.y, bodyPart.z);
-    }
+            RenderUtil.matchModelPartRot(bodyPart, this.body);
+            this.body.updatePosition(bodyPart.x, -bodyPart.y, bodyPart.z);
+        }
     }
 
     protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
         setAllVisible(false);
-                setBoneVisible(this.head, true);
+        setBoneVisible(this.head, true);
     }
 }

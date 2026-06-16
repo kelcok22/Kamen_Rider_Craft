@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -21,18 +21,18 @@ public class StoriousRiderEntity extends BaseHenchmenEntity {
     public StoriousRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="storious";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Saber_Rider_Items.SABER_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Saber_Rider_Items.SABER_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Saber_Rider_Items.SABER_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Saber_Rider_Items.DOOMS_DRIVER_BUCKLE_STORIOUS.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.BILGAMED.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(SaberRiderItems.SABER_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.DOOMS_DRIVER_BUCKLE_STORIOUS.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.BILGAMED.get()));
     }
 
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
     		if(this.getLastAttacker() instanceof Player playerIn){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.WONDER_ALMIGHTY_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(SaberRiderItems.WONDER_ALMIGHTY_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
 			    key.setPickUpDelay(0);
 			    playerIn.level().addFreshEntity(key);
 		        playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.wonder_almighty"));

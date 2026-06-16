@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.reiwa.zero_one;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -31,11 +31,11 @@ public class ThousandriverItem extends RiderDriverItem {
 
 		if (entity instanceof Player player && !level.isClientSide) {
 			if (isTransformed(player) && player.hasEffect(EffectCore.BUGSTER)
-        	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())>0
-        	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())>0) {
-        	    if (player.getInventory().getItem(40).getItem()==Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) player.getInventory().removeItem(40, 1);
-				else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
-				ItemEntity key = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get(), 1), 0, 0, 0);
+        	&& player.getInventory().countItem(ZeroOneRiderItems.ARK_ONE_PROGRISEKEY.get())>0
+        	&& player.getInventory().countItem(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get())>0) {
+        	    if (player.getInventory().getItem(40).getItem()== ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) player.getInventory().removeItem(40, 1);
+				else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get())), 1);
+				ItemEntity key = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), new ItemStack(ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get(), 1), 0, 0, 0);
 				key.setPickUpDelay(0);
 				level.addFreshEntity(key);
         	    player.sendSystemMessage(Component.translatable("loot.kamenridercraft.dan_kuroto_progrisekey"));
@@ -45,20 +45,20 @@ public class ThousandriverItem extends RiderDriverItem {
 	}
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
 		boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
         boolean bug = rider.getAttribute(Attributes.HAS_BUG).getValue() !=0;
 		if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
+					belt = getFormItem(itemstack,1).getBeltTex();
 				}
 				return "belts/"+belt;
 
 		}
 		else if (bug)return "zaia";
-		else return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
+		else return riderName+ getFormItem(itemstack,1).getFormName(fly);
 
 	}
 

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -16,23 +16,23 @@ public class AbaddonCommanderEntity extends BaseHenchmenEntity {
     public AbaddonCommanderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="abaddon_commander";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.SLASH_ABADDO_RISER_R.get()));
-	    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeroOneRiderItems.ZERO_ONE_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeroOneRiderItems.ZERO_ONE_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeroOneRiderItems.ZERO_ONE_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.SLASH_ABADDO_RISER_R.get()));
+	    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeroOneRiderItems.SLASHABADDORISER_SWORD.get()));
        switch (this.getRandom().nextInt(4)) {
          case 0:
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.SHOT_ABADDO_RISER_G.get()));
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zero_One_Rider_Items.SHOTABADDORISER_GUN.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.SHOT_ABADDO_RISER_G.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeroOneRiderItems.SHOTABADDORISER_GUN.get()));
             break;
          case 1:
-             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.SHOT_ABADDO_RISER_B.get()));
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zero_One_Rider_Items.SHOTABADDORISER_GUN.get()));
+             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.SHOT_ABADDO_RISER_B.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeroOneRiderItems.SHOTABADDORISER_GUN.get()));
             break;
          case 2:
-               this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.SLASH_ABADDO_RISER_O.get()));
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get()));
+               this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.SLASH_ABADDO_RISER_O.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeroOneRiderItems.SLASHABADDORISER_SWORD.get()));
             break;
        }
     }

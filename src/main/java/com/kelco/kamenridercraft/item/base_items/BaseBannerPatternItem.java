@@ -13,7 +13,7 @@ public class BaseBannerPatternItem extends BannerPatternItem {
         super(bannerPattern, properties);
     }
 
-    public BaseBannerPatternItem AddToList(List<Item> TabList) {
+    public BaseBannerPatternItem addToList(List<Item> TabList) {
         TabList.add(this);
         return this;
     }

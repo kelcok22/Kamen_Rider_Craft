@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -27,7 +27,7 @@ public class BicycleEntity extends baseBikeEntity {
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		ItemStack itemstack = player.getItemInHand(hand);
 		if (!level().isClientSide()) {
-			if (itemstack.getItem() == Revice_Rider_Items.REX_VISTAMP.get()) {
+			if (itemstack.getItem() == ReviceRiderItems.REX_VISTAMP.get()) {
 				BlockPos pos = this.blockPosition();
 				baseBikeEntity boss = MobsCore.VICE_BIKE.get().create(this.level());
 				if (boss != null) {

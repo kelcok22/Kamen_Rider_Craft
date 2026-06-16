@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.build.PandoraPanelItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
@@ -22,7 +22,7 @@ public class PandoraPanelGuiMenu extends AbstractContainerMenu {
 	private BlockPos blockPos;
 
 	public PandoraPanelGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Build_Rider_Items.PANDORA_PANEL_TOUTO.get()));
+		this(containerId, playerInventory,new ItemStack(BuildRiderItems.PANDORA_PANEL_TOUTO.get()));
 	}
 
 	public PandoraPanelGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack, BlockPos pos) {

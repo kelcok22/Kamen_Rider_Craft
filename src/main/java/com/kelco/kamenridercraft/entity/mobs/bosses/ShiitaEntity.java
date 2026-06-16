@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -25,10 +25,10 @@ public class ShiitaEntity extends BaseHenchmenEntity {
     public ShiitaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="shiita_stomach";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gavv_Rider_Items.GAVV_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gavv_Rider_Items.GAVV_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gavv_Rider_Items.SHIITA_MIMICDEVISER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GavvRiderItems.GAVV_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GavvRiderItems.GAVV_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GavvRiderItems.GAVV_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GavvRiderItems.SHIITA_MIMICDEVISER.get()));
      //   this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.GLOTTA_SCYTHE.get()));
     }
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty, MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {

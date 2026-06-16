@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -50,12 +50,12 @@ public class PandoraBox extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Build_Rider_Items.FULL_BOTTLE.get()){
-                process(player, level, pos, hand, Build_Rider_Items.PANDORA_BOTTLE.get());
+            if (player.getItemInHand(hand).getItem() == BuildRiderItems.FULL_BOTTLE.get()){
+                process(player, level, pos, hand, BuildRiderItems.PANDORA_BOTTLE.get());
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.HAZARD_TRIGGER.get()){
-                process(player, level, pos, hand, Build_Rider_Items.LAST_PANDORA_PANEL_WHITE.get());
+            else if (player.getItemInHand(hand).getItem() == BuildRiderItems.HAZARD_TRIGGER.get()){
+                process(player, level, pos, hand, BuildRiderItems.LAST_PANDORA_PANEL_WHITE.get());
                 return ItemInteractionResult.SUCCESS;
             }
         }

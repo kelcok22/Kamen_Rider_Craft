@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Den_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DenORiderItems;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -16,11 +16,11 @@ public class GaohEntity extends BaseHenchmenEntity {
 		public GaohEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="gaoh";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Den_O_Rider_Items.GAOH_BELT.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Den_O_Rider_Items.GAOH_GASHER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DenORiderItems.DEN_OHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DenORiderItems.DEN_OCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DenORiderItems.DEN_OLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(DenORiderItems.GAOH_BELT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DenORiderItems.GAOH_GASHER.get()));
     }
  
     public static AttributeSupplier.Builder setAttributes() {

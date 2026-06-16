@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -52,7 +52,7 @@ public class RidevendorVendingModeEntity extends baseBikeEntity {
 						this.remove(RemovalReason.DISCARDED);
 					}
 				}
-			}else if (player.getItemInHand(hand).getItem()== OOO_Rider_Items.CELL_MEDAL.asItem()){
+			}else if (player.getItemInHand(hand).getItem()== OOORiderItems.CELL_MEDAL.asItem()){
 			 process(player, player.level(), hand,  getCanDrop(0));
 		 }else return InteractionResult.PASS;
 		}

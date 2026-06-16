@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,7 +19,7 @@ public class GraphiteBugsterEntity extends BaseHenchmenEntity {
     public GraphiteBugsterEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="graphite_bugster";
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GRAPHITE_FANG.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GRAPHITE_FANG.get()));
     }
 
 

@@ -8,6 +8,7 @@ import software.bernie.geckolib.model.GeoModel;
 
 public class RocketModel extends GeoModel<RocketProjectileEntity> {
     public String textureChoice;
+
     @Override
     public ResourceLocation getModelResource(RocketProjectileEntity animatable) {
         if (animatable.getShape().isEmpty()) {
@@ -23,10 +24,10 @@ public class RocketModel extends GeoModel<RocketProjectileEntity> {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/rocket.png");
 
         } else {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/"  +animatable.getColor() + "_rocket.png");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/" + animatable.getColor() + "_rocket.png");
 
         }
-        }
+    }
 
     @Override
     public ResourceLocation getAnimationResource(RocketProjectileEntity animatable) {

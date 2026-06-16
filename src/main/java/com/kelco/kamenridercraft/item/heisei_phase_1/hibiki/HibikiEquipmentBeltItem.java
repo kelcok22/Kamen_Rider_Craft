@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.hibiki;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.HumanoidArm;
@@ -23,17 +23,17 @@ public class HibikiEquipmentBeltItem extends RiderDriverItem {
 	}
 
 	@Override
-	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (get_Form_Item(itemstack, 1) == Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get()) {
-            if ((rider instanceof Player || rider instanceof Mob) && rider.getMainArm() == HumanoidArm.LEFT) {
-                if (num == 1 && rider.getMainHandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName , int num) {
+		if (getFormItem(itemstack, 1) == HibikiRiderItems.HENSHIN_ONSA_ARMED.get()) {
+            if ((livingEntity instanceof Player || livingEntity instanceof Mob) && livingEntity.getMainArm() == HumanoidArm.LEFT) {
+                if (num == 1 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
                     return "ongekibo_rekka_l";
-                else if (num == 2 && rider.getOffhandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+                else if (num == 2 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
                     return "ongekibo_rekka_r";
             } else {
-                if (num == 1 && rider.getOffhandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+                if (num == 1 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
                     return "ongekibo_rekka_l";
-                else if (num == 2 && rider.getMainHandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+                else if (num == 2 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
                     return "ongekibo_rekka_r";
             }
         }
@@ -42,16 +42,16 @@ public class HibikiEquipmentBeltItem extends RiderDriverItem {
 
 	@Override
 	public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (num == 1 && !rider.isHolding(Hibiki_Rider_Items.HENSHIN_ONSA.get())) return "henshin_onsa";
-		else if (get_Form_Item(itemstack, 1) != Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get()) {
+		if (num == 1 && !rider.isHolding(HibikiRiderItems.HENSHIN_ONSA.get())) return "henshin_onsa";
+		else if (getFormItem(itemstack, 1) != HibikiRiderItems.HENSHIN_ONSA_ARMED.get()) {
 			if ((rider instanceof Player || rider instanceof Mob) && rider.getMainArm() == HumanoidArm.LEFT) {
-				if (num==2&&rider.getMainHandItem().getItem()!=Hibiki_Rider_Items.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_l";
-				else if (num==3&&rider.getOffhandItem().getItem()!=Hibiki_Rider_Items.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_r";
+				if (num==2&&rider.getMainHandItem().getItem()!= HibikiRiderItems.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_l";
+				else if (num==3&&rider.getOffhandItem().getItem()!= HibikiRiderItems.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_r";
 			} else {
-				if (num==2&&rider.getOffhandItem().getItem()!=Hibiki_Rider_Items.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_l";
-				else if (num==3&&rider.getMainHandItem().getItem()!=Hibiki_Rider_Items.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_r";
+				if (num==2&&rider.getOffhandItem().getItem()!= HibikiRiderItems.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_l";
+				else if (num==3&&rider.getMainHandItem().getItem()!= HibikiRiderItems.ONGEKIBO_REKKA.get()) return "ongekibo_rekka_r";
 			}
-		} else if (num == 2 && !rider.isHolding(Hibiki_Rider_Items.ARMED_SABER.get())) return "armed_saber";
+		} else if (num == 2 && !rider.isHolding(HibikiRiderItems.ARMED_SABER.get())) return "armed_saber";
 
 		return "blank";
 	}

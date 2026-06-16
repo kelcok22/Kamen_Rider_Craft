@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,11 +17,11 @@ public class PoseidonEntity extends BaseHenchmenEntity {
     public PoseidonEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="poseidon";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOO_Rider_Items.OOOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOO_Rider_Items.OOOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.POSEIDONDRIVER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOO_Rider_Items.DEEPEST_HARPOON.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.POSEIDONDRIVER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOORiderItems.DEEPEST_HARPOON.get()));
     }
 
  

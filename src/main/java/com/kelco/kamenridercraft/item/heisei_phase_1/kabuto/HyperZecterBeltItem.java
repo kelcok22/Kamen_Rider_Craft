@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.kabuto;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kabuto_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,9 +20,9 @@ public class HyperZecterBeltItem extends RiderDriverItem {
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1) == Kabuto_Rider_Items.HYPER_ZECTER.get() | get_Form_Item(itemstack, 1) == Kabuto_Rider_Items.HYPER_ZECTER_CLOCK_UP.get() |
-                get_Form_Item(itemstack, 1) == Kabuto_Rider_Items.GATACK_HYPER_ZECTER.get() | get_Form_Item(itemstack, 1) == Kabuto_Rider_Items.GATACK_HYPER_ZECTER_CLOCK_UP.get() |
-                get_Form_Item(itemstack, 1) == Kabuto_Rider_Items.DARK_HYPER_ZECTER.get()) {
+        if (getFormItem(itemstack, 1) == KabutoRiderItems.HYPER_ZECTER.get() | getFormItem(itemstack, 1) == KabutoRiderItems.HYPER_ZECTER_CLOCK_UP.get() |
+                getFormItem(itemstack, 1) == KabutoRiderItems.GATACK_HYPER_ZECTER.get() | getFormItem(itemstack, 1) == KabutoRiderItems.GATACK_HYPER_ZECTER_CLOCK_UP.get() |
+                getFormItem(itemstack, 1) == KabutoRiderItems.DARK_HYPER_ZECTER.get()) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belt_with_hyper.geo.json");
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/riderbelt.geo.json");

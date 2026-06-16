@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
@@ -23,13 +23,13 @@ public class DaiouikaDeadmanEntity extends BaseHenchmenEntity {
     public DaiouikaDeadmanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="daiouika_deadman";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Revice_Rider_Items.PARANEGRO.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ReviceRiderItems.PARANEGRO.get()));
     }
     public void remove(RemovalReason reason) {
         if (reason == RemovalReason.KILLED) {
             BaseHenchmenEntity boss = MobsCore.ANOMALOCARIS_DEADMAN.get().create(this.level());
             if (this.getLastAttacker()instanceof Player playerIn){
-                if (playerIn.getInventory().countItem(Revice_Rider_Items.ROLLING_VISTAMP.asItem())!=0) {
+                if (playerIn.getInventory().countItem(ReviceRiderItems.ROLLING_VISTAMP.asItem())!=0) {
 
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);

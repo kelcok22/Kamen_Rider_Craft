@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
@@ -17,7 +17,7 @@ import net.minecraft.world.level.Level;
 
 public class BoostrikerNaGoModeEntity extends baseBikeEntity {
 	public BoostrikerNaGoModeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, Geats_Rider_Items.BOOST_RAISE_BUCKLE.get());
+		super(entityType, level, GeatsRiderItems.BOOST_RAISE_BUCKLE.get());
 		NAME ="boostriker_na_go_mode";
 		NAME_MODEL ="boostriker_na_go_mode";
 		NAME_ANIMATIONS ="boostriker_geats_mode";

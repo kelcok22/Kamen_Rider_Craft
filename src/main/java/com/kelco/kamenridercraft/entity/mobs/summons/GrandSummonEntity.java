@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.entity.mobs.summons;
 
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
@@ -25,10 +25,10 @@ public class GrandSummonEntity extends RiderSummonEntity {
 	public GrandSummonEntity(EntityType<? extends GrandSummonEntity> type, Level level) {
 		super(type, level);
 		NAME="rider_summon";
-        this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get(), 1);
-        this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get(), 1);
-        this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get(), 1);
-        this.addRequiredForm((RiderFormChangeItem)Gotchard_Rider_Items.GRAND_ZI_O_RIDE_CHEMY_CARD.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem) ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem) ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem) ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem) GotchardRiderItems.GRAND_ZI_O_RIDE_CHEMY_CARD.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {

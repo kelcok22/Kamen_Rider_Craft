@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.item.showa.V3.DrillArmItem;
 import software.bernie.geckolib.renderer.GeoItemRenderer;
 
 public class DrillArmItemRenderer extends GeoItemRenderer<DrillArmItem> {
-	public DrillArmItemRenderer() {
+    public DrillArmItemRenderer() {
         super(new DrillArmModel());
     }
 }

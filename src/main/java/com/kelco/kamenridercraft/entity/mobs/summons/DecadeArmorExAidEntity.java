@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EntityType;
@@ -30,14 +30,14 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 	public DecadeArmorExAidEntity(EntityType<? extends DecadeArmorExAidEntity> type, Level level) {
 		super(type, level);
 		NAME="decade_armor_ex_aid";
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get()));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.RIDE_HEISABER.get()));
-		RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
-		this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
-		this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.RIDE_HEISABER.get()));
+		RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem) ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem) ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -75,16 +75,16 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 		super.aiStep();
 
 		if (!this.level().isClientSide()) {
-			if ( this.getOwner() instanceof Player owner && owner.getItemBySlot(EquipmentSlot.FEET).getItem()==Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()) {			
-				if (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1)==Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get()) {
-					if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1)!=Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get()) {
-						RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
-						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.RIDE_HEISABER.get()));
+			if ( this.getOwner() instanceof Player owner && owner.getItemBySlot(EquipmentSlot.FEET).getItem()== ZiORiderItems.ZIKU_DRIVER_ZI_O.get()) {
+				if (RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1)== ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get()) {
+					if (RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1)!= ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get()) {
+						RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
+						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.RIDE_HEISABER.get()));
 					}
-				} else if(RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1)==Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get()) {
-					if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1)!=Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get()) {
-						RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
-						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_GIRADE.get()));
+				} else if(RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1)== ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get()) {
+					if (RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1)!= ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get()) {
+						RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
+						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.ZIKAN_GIRADE.get()));
 					}
 				}
 			}

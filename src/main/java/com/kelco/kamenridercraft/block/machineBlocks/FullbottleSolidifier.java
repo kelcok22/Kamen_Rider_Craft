@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -41,20 +41,20 @@ public class FullbottleSolidifier extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-           if (player.getItemInHand(hand).getItem() == Build_Rider_Items.FULL_BOTTLE.get()){
-                process(player, level, pos, hand, Build_Rider_Items.SCLASH_JELLY.get());
+           if (player.getItemInHand(hand).getItem() == BuildRiderItems.FULL_BOTTLE.get()){
+                process(player, level, pos, hand, BuildRiderItems.SCLASH_JELLY.get());
                 return ItemInteractionResult.SUCCESS;
             }
-           else  if (player.getItemInHand(hand).getItem() == Build_Rider_Items.ROBOT_FULL_BOTTLE.get()){
-                process(player, level, pos, hand, Build_Rider_Items.ROBOT_SCLASH_JELLY.get());
+           else  if (player.getItemInHand(hand).getItem() == BuildRiderItems.ROBOT_FULL_BOTTLE.get()){
+                process(player, level, pos, hand, BuildRiderItems.ROBOT_SCLASH_JELLY.get());
                 return ItemInteractionResult.SUCCESS;
             }
-			else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.DRAGON_FULL_BOTTLE.get()){
-                process(player, level, pos, hand, Build_Rider_Items.DRAGON_SCLASH_JELLY.get());
+			else if (player.getItemInHand(hand).getItem() == BuildRiderItems.DRAGON_FULL_BOTTLE.get()){
+                process(player, level, pos, hand, BuildRiderItems.DRAGON_SCLASH_JELLY.get());
                 return ItemInteractionResult.SUCCESS;
             }
-            else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.LOST_BAT_FULL_BOTTLE.get()){
-                process(player, level, pos, hand, Build_Rider_Items.CROCODILE_CRACK_FULL_BOTTLE.get());
+            else if (player.getItemInHand(hand).getItem() == BuildRiderItems.LOST_BAT_FULL_BOTTLE.get()){
+                process(player, level, pos, hand, BuildRiderItems.CROCODILE_CRACK_FULL_BOTTLE.get());
                 return ItemInteractionResult.SUCCESS;
             }
 

@@ -10,7 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class RocketProjectileRenderer extends GeoEntityRenderer<RocketProjectileEntity> {
 
-	public RocketProjectileRenderer(EntityRendererProvider.Context renderManager) {
+    public RocketProjectileRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new RocketModel());
     }
 

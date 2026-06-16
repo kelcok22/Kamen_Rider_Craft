@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.reiwa.saber;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -18,11 +18,11 @@ public class SeikenSaikouDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-        if (isTransformed(rider) && get_Form_Item(itemstack, 1) == Saber_Rider_Items.KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK.get()) {
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (isTransformed(rider) && getFormItem(itemstack, 1) == SaberRiderItems.KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK.get()) {
             if (equipmentSlot == EquipmentSlot.FEET) return "belts/blank";
-            else if (rider.isHolding(Saber_Rider_Items.KOUGOUKEN_SAIKOU.get())) return "blank";
+            else if (rider.isHolding(SaberRiderItems.KOUGOUKEN_SAIKOU.get())) return "blank";
         }
-        return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+        return super.getText(itemstack, equipmentSlot, rider, riderName);
     }
 }

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
@@ -24,17 +24,17 @@ public class DarkGhostEntity extends BaseHenchmenEntity {
     public DarkGhostEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="dark_ghost";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ghost_Rider_Items.GHOST_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ghost_Rider_Items.GHOST_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ghost_Rider_Items.DARK_GHOST_DRIVER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GhostRiderItems.GHOST_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GhostRiderItems.GHOST_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GhostRiderItems.GHOST_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.DARK_GHOST_DRIVER.get()));
     }
 
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<60
-		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()==Ghost_Rider_Items.DARK_GHOST_DRIVER.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),2)==Ghost_Rider_Items.DARK_DAMASHII.get()) {
+		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()== GhostRiderItems.DARK_GHOST_DRIVER.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),2)== GhostRiderItems.DARK_DAMASHII.get()) {
 			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(8.0D);
 			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
@@ -43,17 +43,17 @@ public class DarkGhostEntity extends BaseHenchmenEntity {
             int rand = generator.nextInt(3);
             if (rand==1) {
                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_ghost_napoleon"));
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ghost_Rider_Items.NAPOLEON_GHOST_EYECON.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GhostRiderItems.NAPOLEON_GHOST_EYECON.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GhostRiderItems.GAN_GUN_SABER_BLADE.get()));
             }else if (rand==2) {
                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_ghost_ikkyu"));
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ghost_Rider_Items.IKKYU_GHOST_EYECON.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GhostRiderItems.IKKYU_GHOST_EYECON.get(), 2);
             }else {
                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_ghost_pythagoras"));
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ghost_Rider_Items.PYTHAGORAS_GHOST_EYECON.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GhostRiderItems.PYTHAGORAS_GHOST_EYECON.get(), 2);
             }
-            if (playerIn.getItemBySlot(EquipmentSlot.FEET).getItem()== Ghost_Rider_Items.GHOST_DRIVER.asItem()){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Ghost_Rider_Items.DARWIN_GHOST_EYECON.get(), 1), 0, 0, 0);
+            if (playerIn.getItemBySlot(EquipmentSlot.FEET).getItem()== GhostRiderItems.GHOST_DRIVER.asItem()){
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(GhostRiderItems.DARWIN_GHOST_EYECON.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 playerIn.level().addFreshEntity(key);
             }

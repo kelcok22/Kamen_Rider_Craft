@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -21,18 +21,18 @@ public class ParaDxEntity extends BaseHenchmenEntity {
     public ParaDxEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="para-dx";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.PARA_DX_BELT.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.PARA_DX_BELT.get()));
     }
 
     public void tick() {
 		if (this.getHealth()<20) {
-			if(getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.PARA_DX_BELT.get()){
+			if(getItemBySlot(EquipmentSlot.FEET).getItem()== ExAidRiderItems.PARA_DX_BELT.get()){
 				ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-				if (RiderDriverItem.get_Form_Item(belt,1)!=Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get()) {
-					RiderDriverItem.set_Form_Item(belt, Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get(), 1);
+				if (RiderDriverItem.getFormItem(belt,1)!= ExAidRiderItems.KNOCK_OUT_FIGHTER_GASHAT.get()) {
+					RiderDriverItem.setFormItem(belt, ExAidRiderItems.KNOCK_OUT_FIGHTER_GASHAT.get(), 1);
 					if (this.getTarget() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)){
 						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_2"));
 					}

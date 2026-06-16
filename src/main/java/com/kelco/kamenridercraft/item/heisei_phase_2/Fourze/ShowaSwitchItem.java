@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -37,7 +37,7 @@ public class ShowaSwitchItem extends RiderFormChangeItem {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (player.isShiftKeyDown() && BELT.getItem() == Fourze_Rider_Items.FOURZE_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
+        if (player.isShiftKeyDown() && BELT.getItem() == FourzeRiderItems.FOURZE_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
             
 		    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
 		    if (summon != null) {
@@ -46,7 +46,7 @@ public class ShowaSwitchItem extends RiderFormChangeItem {
 		    	summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
 		    	summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
 		    	summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
-                if (summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+                if (summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
 
 		    	level.addFreshEntity(summon);
 		    	summon.bindToPlayer(player);

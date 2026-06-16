@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.kelco.kamenridercraft.entity.projectiles.ShurikenProjectileEntity;
 import com.kelco.kamenridercraft.entity.projectiles.WeaponProjectileEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class BaseThrowableItem extends SwordItem {
 
-	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+	private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 	private boolean Shuriken = false;
 
 	public BaseThrowableItem(Tier toolTier, int Atk, float Spd, Properties prop) {

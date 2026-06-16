@@ -5,8 +5,8 @@ import com.kelco.kamenridercraft.entity.mobs.summons.GrandSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.CopyFormChangeItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -48,7 +48,7 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
             summon.allowFormChanges(true);
-            RiderDriverItem belt = (RiderDriverItem) Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get();
+            RiderDriverItem belt = (RiderDriverItem) SaberRiderItems.SEIKEN_SWORDRIVER_DRIVER_SABER.get();
             summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
             summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));
             summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.TORSO));
@@ -59,14 +59,14 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
             if (this.summonAltWeapons.containsKey(key.toString())) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[0]))));
                 if (this.summonAltWeapons.get(key.toString()).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[1]))));
-            } else summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.KAENKEN_REKKA.get()));
+            } else summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.KAENKEN_REKKA.get()));
             for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
             if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem) key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
                     RiderFormChangeItem form = (RiderFormChangeItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(str));
-                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
                 }
             }
         
@@ -84,8 +84,8 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (level.getGameRules().getBoolean(ModGameRules.RULE_REIWA_RIDEWATCHES) && player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())) {
+        && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+        || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }

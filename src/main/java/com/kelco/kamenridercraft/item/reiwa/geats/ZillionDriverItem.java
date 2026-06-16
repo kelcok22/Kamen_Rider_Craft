@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.reiwa.geats;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ArmorMaterial;
@@ -24,9 +24,9 @@ public class ZillionDriverItem  extends RiderDriverItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         Has_basic_belt_info=false;
-        Item formItem = get_Form_Item(stack, 1);
+        Item formItem = getFormItem(stack, 1);
 
-        if(formItem==Geats_Rider_Items.SIRIUS_CARD.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.regad"));
+        if(formItem== GeatsRiderItems.SIRIUS_CARD.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.regad"));
         else tooltipComponents.add(Component.translatable("kamenridercraft.name.regad_omega"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

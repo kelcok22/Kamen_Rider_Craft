@@ -18,5 +18,7 @@ public class RiderEyesLayer<T extends BaseSummonEntity, M extends HumanoidModel<
         super(p_117507_);
     }
 
-    public RenderType renderType() { return RIDER_EYES; }
+    public RenderType renderType() {
+        return RIDER_EYES;
+    }
 }

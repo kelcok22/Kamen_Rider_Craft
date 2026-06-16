@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Agito_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.AgitoRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -17,7 +17,7 @@ public class AnguisMasculusEntity extends BaseHenchmenEntity {
     public AnguisMasculusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "anguis_masculus";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Agito_Rider_Items.JUDGEMENT_STAFF.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(AgitoRiderItems.JUDGEMENT_STAFF.get()));
     }
 
     public void remove(RemovalReason p_149847_) {

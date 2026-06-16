@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -28,7 +28,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "bugstervirus";
 
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.BUGSTER_TRIDENT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.BUGSTER_TRIDENT.get()));
     }
 
 

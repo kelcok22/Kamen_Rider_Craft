@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Wizard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -45,11 +45,11 @@ public class WisemanEntity extends BaseHenchmenEntity {
     public WisemanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "wiseman";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Wizard_Rider_Items.WIZARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Wizard_Rider_Items.WHITE_WIZARD_DRIVER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Wizard_Rider_Items.HAMMELCANE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.WHITE_WIZARD_DRIVER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(WizardRiderItems.HAMMELCANE.get()));
     }
 
     @Override
@@ -91,9 +91,8 @@ public class WisemanEntity extends BaseHenchmenEntity {
             double d1 = this.getY() + (double) (this.random.nextInt(64) - 32);
             double d2 = this.getZ() + (this.random.nextDouble() - (double) 0.5F) * (double) 64.0F;
             return this.teleport(d0, d1, d2);
-        } else {
-            return false;
         }
+        return  false;
     }
 
     private boolean teleport(double x, double y, double z) {

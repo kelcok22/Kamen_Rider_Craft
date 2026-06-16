@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -63,15 +63,15 @@ public class ShiftChassisAssembler extends MachineBlock {
 
         if (!level.isClientSide()) {
 
-                if (player.getItemInHand(hand).getItem() == Drive_Rider_Items.DRIVE_SYSTEM_CAR.get()){
+                if (player.getItemInHand(hand).getItem() == DriveRiderItems.DRIVE_SYSTEM_CAR.get()){
                     process(player, level, pos, hand, getCarDrop(1));
                     return ItemInteractionResult.SUCCESS;
                 }
-                if (player.getItemInHand(hand).getItem() == Drive_Rider_Items.NEXT_SYSTEM_BIKE.get()) {
+                if (player.getItemInHand(hand).getItem() == DriveRiderItems.NEXT_SYSTEM_BIKE.get()) {
                     process(player, level, pos, hand, getCarDrop(2));
                     return ItemInteractionResult.SUCCESS;
                 }
-			    else if (player.getItemInHand(hand).getItem() ==  Drive_Rider_Items.NEXT_SYSTEM_CAR.get()){
+			    else if (player.getItemInHand(hand).getItem() ==  DriveRiderItems.NEXT_SYSTEM_CAR.get()){
                     process(player, level, pos, hand, getCarDrop(0));
                     return ItemInteractionResult.SUCCESS;
                 }

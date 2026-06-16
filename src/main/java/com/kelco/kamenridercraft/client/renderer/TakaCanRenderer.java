@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class TakaCanRenderer extends GeoEntityRenderer<TakaCanEntity> {
 
 
-
-
-	public TakaCanRenderer(EntityRendererProvider.Context renderManager) {
+    public TakaCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new TakaCanModel());
     }
 

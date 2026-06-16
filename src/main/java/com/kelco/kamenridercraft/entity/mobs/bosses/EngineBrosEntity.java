@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
@@ -27,23 +27,23 @@ public class EngineBrosEntity extends BaseHenchmenEntity {
 		public EngineBrosEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="hell_bros_engine";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Build_Rider_Items.BUILD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Build_Rider_Items.BUILD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Build_Rider_Items.BUILD_LEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Build_Rider_Items.NEBULASTEAM_GUN.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.NEBULA_STEAM_GUN_HELL_BROS.get()));
-            RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.GEAR_ENGINE.get(), 1);
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuildRiderItems.BUILD_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuildRiderItems.BUILD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuildRiderItems.BUILD_LEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuildRiderItems.NEBULASTEAM_GUN.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.NEBULA_STEAM_GUN_HELL_BROS.get()));
+            RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.GEAR_ENGINE.get(), 1);
     }
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
-            if (playerIn.getInventory().countItem(Build_Rider_Items.GEAR_REMOCON.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.GEAR_HELL_BROS.get()) {
+            if (playerIn.getInventory().countItem(BuildRiderItems.GEAR_REMOCON.get())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.GEAR_HELL_BROS.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.hell_bros2"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.GEAR_HELL_BROS.get(), 1);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.GEAR_HELL_BROS.get(), 1);
             }
         }
     }

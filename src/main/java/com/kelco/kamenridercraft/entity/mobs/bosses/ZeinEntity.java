@@ -4,10 +4,10 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.RideplayerEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCard;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -42,10 +42,10 @@ public class ZeinEntity extends BaseHenchmenEntity {
     public ZeinEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="zein";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ZEIN_DRIVER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeroOneRiderItems.ZERO_ONE_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeroOneRiderItems.ZERO_ONE_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeroOneRiderItems.ZERO_ONE_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.ZEIN_DRIVER.get()));
         this.setDropChance(EquipmentSlot.MAINHAND, 0.0f);
         this.setDropChance(EquipmentSlot.OFFHAND, 0.0f);
         this.xpReward = 50;
@@ -96,7 +96,7 @@ public class ZeinEntity extends BaseHenchmenEntity {
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, ArkZeroEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, GlareEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, MirrorRiderEntity.class, 5, false, false,
-                (p_28879_) -> p_28879_.getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.OUJADRIVER.get()));
+                (p_28879_) -> p_28879_.getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.OUJADRIVER.get()));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
@@ -127,87 +127,87 @@ public class ZeinEntity extends BaseHenchmenEntity {
                 Random rand = new Random();
                 switch (rand.nextInt(16)) {
                     case 0 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.RYUKI_SURVIVE_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.RYUKI_SURVIVE_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_ryuki"), true);
                     }
                     case 1 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.FAIZ_BLASTER_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.FAIZ_BLASTER_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_faiz"), true);
                     }
                     case 2 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.BLADE_KING_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.BLADE_KING_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_blade"), true);
                     }
                     case 3 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.KABUTO_HYPER_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.KABUTO_HYPER_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_kabuto"), true);
                     }
                     case 4 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.KIVA_EMPEROR_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.KIVA_EMPEROR_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_kiva"), true);
                     }
                     case 5 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.OOO_PUTOTYRA_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.OOO_PUTOTYRA_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_ooo"), true);
                     }
                     case 6 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.FOURZE_COSMIC_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.FOURZE_COSMIC_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_fourze"), true);
                     }
                     case 7 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.WIZARD_INFINITY_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.WIZARD_INFINITY_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_wizard"), true);
                     }
                     case 8 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.EX_AID_MUTEKI_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.EX_AID_MUTEKI_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_ex_aid"), true);
                     }
                     case 9 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.GRAND_ZI_O_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.GRAND_ZI_O_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_zi_o"), true);
                     }
                     case 10 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.ZERO_TWO_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.ZERO_TWO_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_zero_one"), true);
                     }
                     case 11 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.XROSS_SABER_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.XROSS_SABER_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_saber"), true);
                     }
                     case 12 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.ULTIMATE_REVI_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.ULTIMATE_REVI_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_revi"), true);
                     }
                     case 13 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.ULTIMATE_VICE_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.ULTIMATE_VICE_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_vice"), true);
                     }
                     case 14 -> {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.GEATS_IX_CARD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.GEATS_IX_CARD.get()));
                         if (livingentity instanceof Player player)
                             player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_geats"), true);
                     }
                     default -> {
                         if (this.getHealth()>this.getMaxHealth()/2) {
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.SUPER_1_CARD.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.SUPER_1_CARD.get()));
                             if (livingentity instanceof Player player)
                                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_super_1"), true);
                         } else {
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.DIMENSION_CARD.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.DIMENSION_CARD.get()));
                             if (livingentity instanceof Player player)
                                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.zein_dimension"), true);
                         }

@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class TakaWatchroidRenderer extends GeoEntityRenderer<TakaWatchroidEntity> {
 
 
-
-
-	public TakaWatchroidRenderer(EntityRendererProvider.Context renderManager) {
+    public TakaWatchroidRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new TakaWatchroidModel());
     }
 

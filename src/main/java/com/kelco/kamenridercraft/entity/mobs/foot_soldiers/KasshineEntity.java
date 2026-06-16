@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
@@ -24,7 +24,7 @@ public class KasshineEntity extends BaseHenchmenEntity {
         NAME = "kasshine";
 
 
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.KASSHINE_TRIDENT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.KASSHINE_TRIDENT.get()));
     }
 
     public void remove(RemovalReason p_149847_) {

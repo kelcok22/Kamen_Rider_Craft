@@ -6,7 +6,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_2.*;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.HolderLookup;
@@ -51,7 +51,7 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
 
     @Override
     public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
-        return repair.is(Decade_Rider_Items.BLANK_CARD.get()) || super.isValidRepairItem(toRepair, repair);
+        return repair.is(DecadeRiderItems.BLANK_CARD.get()) || super.isValidRepairItem(toRepair, repair);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
         for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
-        ItemStack weapon = new ItemStack(Zi_O_Rider_Items.SAIKYO_ZIKAN_GIRADE.get(), 1);
+        ItemStack weapon = new ItemStack(ZiORiderItems.SAIKYO_ZIKAN_GIRADE.get(), 1);
         weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
         weapon.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
         if (weapon.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) weapon.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
@@ -77,11 +77,11 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
 
         if (zio != null) {
             zio.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
-            zio.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get()));
-            zio.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
-            zio.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
-            zio.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()));
-            zio.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_GIRADE.get()));
+            zio.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
+            zio.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
+            zio.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
+            zio.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
+            zio.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.ZIKAN_GIRADE.get()));
 
             level.addFreshEntity(zio);
             if (zio instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) living);
@@ -94,73 +94,73 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
             Item summonOffWeapon = Items.AIR;
             RiderDriverItem summonBelt;
             switch (rand.nextInt(19)) {
-                case 0 -> summonBelt = (RiderDriverItem) Kuuga_Rider_Items.ARCLE.get();
-                case 1 -> summonBelt = (RiderDriverItem) Agito_Rider_Items.ALTERING.get();
+                case 0 -> summonBelt = (RiderDriverItem) KuugaRiderItems.ARCLE.get();
+                case 1 -> summonBelt = (RiderDriverItem) AgitoRiderItems.ALTERING.get();
                 case 2 -> {
-                    summonBelt = (RiderDriverItem) Ryuki_Rider_Items.RYUKIDRIVER.get();
-                    summonMainWeapon = Ryuki_Rider_Items.DRAG_CLAW.get();
+                    summonBelt = (RiderDriverItem) RyukiRiderItems.RYUKIDRIVER.get();
+                    summonMainWeapon = RyukiRiderItems.DRAG_CLAW.get();
                 }
                 case 3 -> {
-                    summonBelt = (RiderDriverItem) Faiz_Rider_Items.FAIZ_DRIVER.get();
-                    summonMainWeapon = Faiz_Rider_Items.FAIZ_EDGE.get();
+                    summonBelt = (RiderDriverItem) FaizRiderItems.FAIZ_DRIVER.get();
+                    summonMainWeapon = FaizRiderItems.FAIZ_EDGE.get();
                 }
                 case 4 -> {
-                    summonBelt = (RiderDriverItem) Blade_Rider_Items.BLAYBUCKLE.get();
-                    summonMainWeapon = Blade_Rider_Items.BLAYROUZER.get();
+                    summonBelt = (RiderDriverItem) BladeRiderItems.BLAYBUCKLE.get();
+                    summonMainWeapon = BladeRiderItems.BLAYROUZER.get();
                 }
                 case 5 -> {
-                    summonBelt = (RiderDriverItem) Hibiki_Rider_Items.HIBIKIDRIVER.get();
-                    summonMainWeapon = Hibiki_Rider_Items.ONGEKIBO_REKKA.get();
-                    summonOffWeapon = Hibiki_Rider_Items.ONGEKIBO_REKKA.get();
+                    summonBelt = (RiderDriverItem) HibikiRiderItems.HIBIKIDRIVER.get();
+                    summonMainWeapon = HibikiRiderItems.ONGEKIBO_REKKA.get();
+                    summonOffWeapon = HibikiRiderItems.ONGEKIBO_REKKA.get();
                 }
                 case 6 -> {
-                    summonBelt = (RiderDriverItem) Kabuto_Rider_Items.KABUTO_RIDER_BELT.get();
-                    summonMainWeapon = Kabuto_Rider_Items.KABUTO_KUNAI.get();
+                    summonBelt = (RiderDriverItem) KabutoRiderItems.KABUTO_RIDER_BELT.get();
+                    summonMainWeapon = KabutoRiderItems.KABUTO_KUNAI.get();
                 }
                 case 7 -> {
-                    summonBelt = (RiderDriverItem) Den_O_Rider_Items.DEN_O_BELT.get();
-                    summonMainWeapon = Den_O_Rider_Items.DEN_GASHER_SWORD.get();
+                    summonBelt = (RiderDriverItem) DenORiderItems.DEN_O_BELT.get();
+                    summonMainWeapon = DenORiderItems.DEN_GASHER_SWORD.get();
                 }
                 case 8 -> {
-                    summonBelt = (RiderDriverItem) Kiva_Rider_Items.KIVAT_BELT.get();
+                    summonBelt = (RiderDriverItem) KivaRiderItems.KIVAT_BELT.get();
                 }
                 case 9 -> {
-                    summonBelt = (RiderDriverItem) Decade_Rider_Items.DECADRIVER.get();
-                    summonMainWeapon = Decade_Rider_Items.RIDE_BOOKER.get();
+                    summonBelt = (RiderDriverItem) DecadeRiderItems.DECADRIVER.get();
+                    summonMainWeapon = DecadeRiderItems.RIDE_BOOKER.get();
                 }
                 case 10 -> {
-                    summonBelt = (RiderDriverItem) W_Rider_Items.WDRIVER.get();
+                    summonBelt = (RiderDriverItem) WRiderItems.WDRIVER.get();
                 }
                 case 11 -> {
-                    summonBelt = (RiderDriverItem) OOO_Rider_Items.OOODRIVER.get();
-                    summonMainWeapon = OOO_Rider_Items.MEDAJALIBUR.get();
+                    summonBelt = (RiderDriverItem) OOORiderItems.OOODRIVER.get();
+                    summonMainWeapon = OOORiderItems.MEDAJALIBUR.get();
                 }
                 case 12 -> {
-                    summonBelt = (RiderDriverItem) Fourze_Rider_Items.FOURZE_DRIVER.get();
+                    summonBelt = (RiderDriverItem) FourzeRiderItems.FOURZE_DRIVER.get();
                 }
                 case 13 -> {
-                    summonBelt = (RiderDriverItem) Wizard_Rider_Items.WIZARDRIVER.get();
-                    summonMainWeapon = Wizard_Rider_Items.WIZARSWORDSGUN.get();
+                    summonBelt = (RiderDriverItem) WizardRiderItems.WIZARDRIVER.get();
+                    summonMainWeapon = WizardRiderItems.WIZARSWORDSGUN.get();
                 }
                 case 14 -> {
-                    summonBelt = (RiderDriverItem) Gaim_Rider_Items.SENGOKU_DRIVER_GAIM.get();
-                    summonMainWeapon = Gaim_Rider_Items.DAIDAIMARU.get();
-                    summonOffWeapon = Gaim_Rider_Items.MUSOU_SABER.get();
+                    summonBelt = (RiderDriverItem) GaimRiderItems.SENGOKU_DRIVER_GAIM.get();
+                    summonMainWeapon = GaimRiderItems.DAIDAIMARU.get();
+                    summonOffWeapon = GaimRiderItems.MUSOU_SABER.get();
                 }
                 case 15 -> {
-                    summonBelt = (RiderDriverItem) Drive_Rider_Items.DRIVE_DRIVER.get();
+                    summonBelt = (RiderDriverItem) DriveRiderItems.DRIVE_DRIVER.get();
                 }
                 case 16 -> {
-                    summonBelt = (RiderDriverItem) Ghost_Rider_Items.GHOST_DRIVER.get();
-                    summonMainWeapon = Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get();
+                    summonBelt = (RiderDriverItem) GhostRiderItems.GHOST_DRIVER.get();
+                    summonMainWeapon = GhostRiderItems.GAN_GUN_SABER_BLADE.get();
                 }
                 case 17 -> {
-                    summonBelt = (RiderDriverItem) Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get();
-                    summonMainWeapon = Ex_Aid_Rider_Items.GASHACON_BREAKER.get();
+                    summonBelt = (RiderDriverItem) ExAidRiderItems.GAMER_DRIVER_EX_AID.get();
+                    summonMainWeapon = ExAidRiderItems.GASHACON_BREAKER.get();
                 }
                 default -> {
-                    summonBelt = (RiderDriverItem) Build_Rider_Items.BUILD_DRIVER.get();
-                    summonMainWeapon = Build_Rider_Items.DRILL_CRUSHER.get();
+                    summonBelt = (RiderDriverItem) BuildRiderItems.BUILD_DRIVER.get();
+                    summonMainWeapon = BuildRiderItems.DRILL_CRUSHER.get();
                 }
             };
 
@@ -176,8 +176,8 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonMainWeapon));
                 summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonOffWeapon));
-                if (summonBelt == Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Kabuto_Rider_Items.KABUTO_ZECTER.get(), 1);
-                else if (summonBelt == Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Kabuto_Rider_Items.KABUTO_ZECTER.get(), 1);
+                if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
+                else if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
 
                 level.addFreshEntity(summon);
                 if (summon instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) living);
@@ -197,10 +197,10 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
         if (!CARD.isDamaged()) {
             ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-            if (!level.isClientSide() && BELT.getItem() == Zero_One_Rider_Items.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
+            if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
                 activateCard(level, player, CARD);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.justice_order"), true);
-                if (!player.isCreative()) for (Item item : Decade_Rider_Items.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
+                if (!player.isCreative()) for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 
                 return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());

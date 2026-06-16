@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
@@ -26,10 +26,10 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
     public DarkNecromEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "dark_necrom";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ghost_Rider_Items.GHOST_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ghost_Rider_Items.GHOST_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ghost_Rider_Items.PROTO_MEGA_ULORDER_RED.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GhostRiderItems.GHOST_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GhostRiderItems.GHOST_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GhostRiderItems.GHOST_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.PROTO_MEGA_ULORDER_RED.get()));
     }
 
 
@@ -72,9 +72,9 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
         p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
 
         if (p_34297_.getRandom().nextInt(3) == 1) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ghost_Rider_Items.PROTO_MEGA_ULORDER_BLUE.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.PROTO_MEGA_ULORDER_BLUE.get()));
         } else if (p_34297_.getRandom().nextInt(3) == 2) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ghost_Rider_Items.PROTO_MEGA_ULORDER_YELLOW.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.PROTO_MEGA_ULORDER_YELLOW.get()));
         }
         return p_34300_;
     }

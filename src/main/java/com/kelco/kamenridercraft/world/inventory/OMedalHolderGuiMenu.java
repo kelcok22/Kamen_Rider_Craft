@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ooo.OMedalHolderItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -18,7 +18,7 @@ public class OMedalHolderGuiMenu extends AbstractContainerMenu {
     private final Container container;
 
     public OMedalHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(OOO_Rider_Items.O_MEDAL_HOLDER.get()));
+        this(containerId, playerInventory,new ItemStack(OOORiderItems.O_MEDAL_HOLDER.get()));
     }
 
     public OMedalHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

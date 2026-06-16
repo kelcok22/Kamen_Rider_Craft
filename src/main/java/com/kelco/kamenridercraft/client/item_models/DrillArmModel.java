@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class DrillArmModel extends GeoModel<DrillArmItem> {
     @Override
     public ResourceLocation getModelResource(DrillArmItem animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/drill_arm.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/drill_arm.geo.json");
     }
 
     @Override

@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -36,22 +36,22 @@ public class MegahexEntity extends BaseHenchmenEntity {
     public MegahexEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="megahex";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gaim_Rider_Items.GAIM_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gaim_Rider_Items.GAIM_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gaim_Rider_Items.GAIM_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gaim_Rider_Items.MEGAHEX.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GaimRiderItems.GAIM_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GaimRiderItems.GAIM_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GaimRiderItems.GAIM_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GaimRiderItems.MEGAHEX.get()));
     }
 
     protected void customServerAiStep() {
         super.customServerAiStep();
 
-        if(getItemBySlot(EquipmentSlot.FEET).getItem()== Gaim_Rider_Items.MEGAHEX.get()){
+        if(getItemBySlot(EquipmentSlot.FEET).getItem()== GaimRiderItems.MEGAHEX.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.get_Form_Item(belt,1)==Gaim_Rider_Items.MEGAHEX_KIWAMI.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.YELLOW) {
+            if (RiderDriverItem.getFormItem(belt,1)== GaimRiderItems.MEGAHEX_KIWAMI.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.YELLOW) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.BLUE);
                 this.bossEvent.setName(Component.translatable("entity.kamenridercraft.megahex_kiwami").withStyle(ChatFormatting.GOLD));
             }
-            if (RiderDriverItem.get_Form_Item(belt,1)==Drive_Rider_Items.MEGAHEX_VIRAL_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.YELLOW) {
+            if (RiderDriverItem.getFormItem(belt,1)== DriveRiderItems.MEGAHEX_VIRAL_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.YELLOW) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.YELLOW);
                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.megahex_zzz").withStyle(ChatFormatting.GOLD));
             }
@@ -104,23 +104,23 @@ public class MegahexEntity extends BaseHenchmenEntity {
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<80
-                && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Gaim_Rider_Items.MEGAHEX.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)==Gaim_Rider_Items.MEGAHEX_CORE.get()) {
+                && this.getItemBySlot(EquipmentSlot.FEET).getItem()== GaimRiderItems.MEGAHEX.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)== GaimRiderItems.MEGAHEX_CORE.get()) {
            // if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.megahex_kiwami"));
             this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.3);
             this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
             this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-            RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gaim_Rider_Items.MEGAHEX_KIWAMI.get(), 1);
+            RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GaimRiderItems.MEGAHEX_KIWAMI.get(), 1);
         }else if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<30
-                && this.getItemBySlot(EquipmentSlot.FEET).getItem()== Gaim_Rider_Items.MEGAHEX.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)==Gaim_Rider_Items.MEGAHEX_KIWAMI.get()) {
+                && this.getItemBySlot(EquipmentSlot.FEET).getItem()== GaimRiderItems.MEGAHEX.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)== GaimRiderItems.MEGAHEX_KIWAMI.get()) {
             //if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.megahex_zzz"));
             this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
             this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
             this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-            RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Drive_Rider_Items.MEGAHEX_VIRAL_CORE.get(), 1);
+            RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), DriveRiderItems.MEGAHEX_VIRAL_CORE.get(), 1);
 
-            if (playerIn.getItemBySlot(EquipmentSlot.FEET).getItem()==Drive_Rider_Items.DRIVE_DRIVER.asItem()||playerIn.getItemBySlot(EquipmentSlot.FEET).getItem()==Gaim_Rider_Items.SENGOKU_DRIVER_GAIM.asItem()){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Drive_Rider_Items.SHIFT_FRUITS.get(), 1), 0, 0, 0);
-                ItemEntity key2 = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Gaim_Rider_Items.DRIVE_LOCKSEED.get(), 1), 0, 0, 0);
+            if (playerIn.getItemBySlot(EquipmentSlot.FEET).getItem()== DriveRiderItems.DRIVE_DRIVER.asItem()||playerIn.getItemBySlot(EquipmentSlot.FEET).getItem()== GaimRiderItems.SENGOKU_DRIVER_GAIM.asItem()){
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(DriveRiderItems.SHIFT_FRUITS.get(), 1), 0, 0, 0);
+                ItemEntity key2 = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(GaimRiderItems.DRIVE_LOCKSEED.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 playerIn.level().addFreshEntity(key);
                 key2.setPickUpDelay(0);

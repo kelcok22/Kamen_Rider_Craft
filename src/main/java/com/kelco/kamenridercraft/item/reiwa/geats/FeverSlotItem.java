@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.reiwa.geats;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -40,7 +40,7 @@ public class FeverSlotItem extends BaseItem {
 
 		ItemStack itemstack = player.getItemInHand(hand);
 
-		String[] ClockUpUsers = Geats_Rider_Items.BaseDesireDriverUsers;
+		String[] ClockUpUsers = GeatsRiderItems.BaseDesireDriverUsers;
 
 
 		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof  DesireDriverItem){

@@ -4,8 +4,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -57,9 +57,9 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     public MirrorRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "rider_summon";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RyukiRiderItems.RYUKIHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RyukiRiderItems.RYUKICHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RyukiRiderItems.RYUKILEGGINGS.get()));
         //this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
 
     }
@@ -115,61 +115,61 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
         ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
         if (p_34297_.getLevel().dimension() == SANDS_OF_TIME) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.BLADEDRIVER.get()));
-            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GULD_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.BLADEDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.GULD_VISOR.get()));
         }else if (p_34297_.getLevel().dimension() == CITY) {
 
             int bossChoice = this.random.nextInt(2);
             switch (bossChoice) {
                 case 0:
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ABYSSDRIVER.get()));
-                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.ABYSS_VISOR.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.ABYSSDRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.ABYSS_VISOR.get()));
                     break;
                 case 1:
-                    this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get()));
-                    this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
-                    this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O_MIRROR.get()));
-                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_GIRADE.get()));
+                    this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
+                    this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
+                    this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O_MIRROR.get()));
+                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ZiORiderItems.ZIKAN_GIRADE.get()));
                     break;
                 default:
                     //this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.FATALEDRIVER.get()));
             }
         } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.IMPERERDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.IMPERERDRIVER.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ZOLDADRIVER.get()));
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.MAGNA_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.ZOLDADRIVER.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.MAGNA_VISOR.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_SWAMP)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.OUJADRIVER.get()));
-            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.VENO_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.OUJADRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.VENO_VISOR.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_OCEAN) ||
                 p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_DEEP_OCEAN)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RAIADRIVER.get()));
-            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.EVIL_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.RAIADRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.EVIL_VISOR.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_BEACH) ||
                 p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_MOUNTAIN)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.SCISSORSDRIVER.get()));
-            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.SCISSORS_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.SCISSORSDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.SCISSORS_VISOR.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_TAIGA)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.TIGERDRIVER.get()));
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DEST_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.TIGERDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_VISOR.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS) ||
                 p_34297_.getBiome(this.blockPosition()).is(Tags.Biomes.IS_DESERT)) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.GAIDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.GAIDRIVER.get()));
         } else if (p_34297_.getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER)) {
             int bossChoice = this.random.nextInt(3);
             switch (bossChoice) {
                 case 0:
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.FEMMEDRIVER.get()));
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.BLANC_VISOR.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.FEMMEDRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.BLANC_VISOR.get()));
                     break;
                 case 1:
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.VERDEDRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.VERDEDRIVER.get()));
                     break;
                 case 2:
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUGADRIVER.get()));
-                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.BLACK_DRAG_VISOR.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.RYUGADRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.BLACK_DRAG_VISOR.get()));
                     break;
                 default:
             }
@@ -177,22 +177,22 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
             int bossChoice = this.random.nextInt(2);
             switch (bossChoice) {
                 case 0:
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ALTERNATIVEDRIVER.get()));
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SLASH_VISOR.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.ALTERNATIVEDRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.SLASH_VISOR.get()));
                     break;
                 case 1:
-                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ALTERNATIVEZERODRIVER.get()));
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SLASH_VISOR.get()));
+                    this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.ALTERNATIVEZERODRIVER.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.SLASH_VISOR.get()));
                     break;
                 default:
             }
 
         } else if (!p_34297_.getLevel().isDay()) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.KNIGHTDRIVER.get()));
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.KNIGHTDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DARK_VISOR.get()));
         }else {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
-            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.RYUKIDRIVER.get()));
+            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DRAG_VISOR.get()));
         }
         if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
             SetTypeVariant(belt.Rider);
@@ -236,199 +236,199 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
         boolean hasSURVIVE =false;
         if(source.getEntity() instanceof Player player) {
             Inventory inventory = player.getInventory();
-            hasSURVIVE = inventory.countItem(Ryuki_Rider_Items.SURVIVE_REKKA.get()) != 0||inventory.countItem(Ryuki_Rider_Items.SURVIVE_MUGEN.get()) != 0||inventory.countItem(Ryuki_Rider_Items.SURVIVE_SHIPPU.get()) != 0;
+            hasSURVIVE = inventory.countItem(RyukiRiderItems.SURVIVE_REKKA.get()) != 0||inventory.countItem(RyukiRiderItems.SURVIVE_MUGEN.get()) != 0||inventory.countItem(RyukiRiderItems.SURVIVE_SHIPPU.get()) != 0;
         }
 
         if(hasSURVIVE) {
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_REKKA.asItem()) {
-                RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_REKKA.get(), 1);
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.RYUKIDRIVER.get()&RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_REKKA.asItem()) {
+                RiderDriverItem.setFormItem(belt, RyukiRiderItems.SURVIVE_REKKA.get(), 1);
                 SetIsSurive();
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR_ZWEI.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DRAG_VISOR_ZWEI.get()));
                 this.getItemBySlot(EquipmentSlot.MAINHAND).consume(1, this);
             }
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RAIADRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_SHIPPU_RAIA.asItem()) {
-                RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_SHIPPU_RAIA.get(), 1);
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.RAIADRIVER.get()&RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_SHIPPU_RAIA.asItem()) {
+                RiderDriverItem.setFormItem(belt, RyukiRiderItems.SURVIVE_SHIPPU_RAIA.get(), 1);
                 SetIsSurive();
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.EVIL_VISOR_ZWEI.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.EVIL_VISOR_ZWEI.get()));
             }
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.KNIGHTDRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_SHIPPU.asItem()) {
-                RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_SHIPPU.get(), 1);
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.KNIGHTDRIVER.get()&RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_SHIPPU.asItem()) {
+                RiderDriverItem.setFormItem(belt, RyukiRiderItems.SURVIVE_SHIPPU.get(), 1);
                 SetIsSurive();
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DARK_SHIELD.get()));
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_BLADE.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DARK_SHIELD.get()));
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DARK_BLADE.get()));
             }
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUGADRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_REKKA_RYUGA.asItem()) {
-                RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_REKKA_RYUGA.get(), 1);
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.RYUGADRIVER.get()&RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_REKKA_RYUGA.asItem()) {
+                RiderDriverItem.setFormItem(belt, RyukiRiderItems.SURVIVE_REKKA_RYUGA.get(), 1);
                 SetIsSurive();
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.BLACK_DRAG_VISOR_ZWEI.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.BLACK_DRAG_VISOR_ZWEI.get()));
                 this.getItemBySlot(EquipmentSlot.MAINHAND).consume(1, this);
             }
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.OUJADRIVER.get()&RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_MUGEN.asItem()) {
-                RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.SURVIVE_MUGEN.get(), 1);
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.OUJADRIVER.get()&RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_MUGEN.asItem()) {
+                RiderDriverItem.setFormItem(belt, RyukiRiderItems.SURVIVE_MUGEN.get(), 1);
                 SetIsSurive();
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.VENO_VISOR_ZWEI.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.VENO_VISOR_ZWEI.get()));
                 this.getItemBySlot(EquipmentSlot.MAINHAND).consume(1, this);
             }
         }
 
         if (rand2 == 2) {
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUKIDRIVER.get()) {
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.RYUKIDRIVER.get()) {
                     ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-                    if (RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_REKKA.asItem()) {
+                    if (RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_REKKA.asItem()) {
                         int rand = this.random.nextInt(3);
                         switch (rand) {
                             case 1:
-                                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SABER.get()));
+                                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_SABER.get()));
                                 break;
                             case 2:
-                                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_CLAW.get()));
+                                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_CLAW.get()));
                                 break;
                             default:
-                                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SHIELD.get()));
+                                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_SHIELD.get()));
                                 break;
                         }
-                    }else  if (RiderDriverItem.get_Form_Item(belt,1)==Ryuki_Rider_Items.SURVIVE_REKKA.asItem()) {
+                    }else  if (RiderDriverItem.getFormItem(belt,1)== RyukiRiderItems.SURVIVE_REKKA.asItem()) {
                         int rand = this.random.nextInt(2);
                         if (rand == 1) {
-                            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_VISOR_ZWEI.get()));
+                            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DRAG_VISOR_ZWEI.get()));
                         } else {
-                            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DRAG_BLADE.get()));
+                            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DRAG_BLADE.get()));
                         }
                     }
-                }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.KNIGHTDRIVER.get()) {
+                }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.KNIGHTDRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-                if (RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_SHIPPU.asItem()) {
+                if (RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_SHIPPU.asItem()) {
                 int rand = this.random.nextInt(3);
                 switch (rand) {
                     case 1:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.WING_LANCER.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.WING_LANCER.get()));
                         break;
                     case 2:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DARK_VISOR.get()));
                         break;
                     default:
-                        RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.WING_WALL_VENT.get(), 1);
+                        RiderDriverItem.setFormItem(belt, RyukiRiderItems.WING_WALL_VENT.get(), 1);
                         break;
                 }
                 }
-            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.ZOLDADRIVER.get()) {
+            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.ZOLDADRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                 int rand = this.random.nextInt(5);
                 switch (rand) {
                     case 1:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GIGA_LAUNCHER.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.GIGA_LAUNCHER.get()));
                         break;
                     case 2:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GIGA_ARMOR.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.GIGA_ARMOR.get()));
                         break;
                     case 3:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GIGA_HORN.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.GIGA_HORN.get()));
                         break;
                     default:
-                        RiderDriverItem.set_Form_Item(belt, Ryuki_Rider_Items.GIGA_CANNON_VENT.get(), 1);
+                        RiderDriverItem.setFormItem(belt, RyukiRiderItems.GIGA_CANNON_VENT.get(), 1);
                         break;
                 }
-            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.SCISSORSDRIVER.get()) {
+            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.SCISSORSDRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                 int rand = this.random.nextInt(2);
                     if (rand == 1) {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SHELL_DEFENSE.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.SHELL_DEFENSE.get()));
                     } else {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.SCISSORS_PINCH.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.SCISSORS_PINCH.get()));
                     }
 
 
-            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.TIGERDRIVER.get()) {
+            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.TIGERDRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                 int rand = this.random.nextInt(3);
                 if (rand == 1) {
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DEST_CLAW.get()));
-                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.DEST_CLAW1.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_CLAW.get()));
+                    this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DEST_CLAW1.get()));
                 } else {
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DEST_VISOR.get()));
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_VISOR.get()));
                     this.getItemBySlot(EquipmentSlot.OFFHAND).consume(1, this);
                 }
-            } else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.OUJADRIVER.get()) {
+            } else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.OUJADRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-                if (RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_MUGEN.asItem()) {
+                if (RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_MUGEN.asItem()) {
                 int rand = this.random.nextInt(5);
                     switch (rand) {
                         case 1:
-                          this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.EVIL_WHIP.get()));
+                          this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.EVIL_WHIP.get()));
                             break;
                         case 2:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.METAL_HORN.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.METAL_HORN.get()));
                             break;
                         default:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.VENO_SABER.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.VENO_SABER.get()));
                             break;
                     }
                 }
-            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.IMPERERDRIVER.get()) {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GAZELLE_STAB.get()));
-            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.GAIDRIVER.get()) {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.METAL_HORN.get()));
-            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RAIADRIVER.get()) {
-                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.EVIL_WHIP.get()));
-                }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.VERDEDRIVER.get()) {
+            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.IMPERERDRIVER.get()) {
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.GAZELLE_STAB.get()));
+            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.GAIDRIVER.get()) {
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.METAL_HORN.get()));
+            }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.RAIADRIVER.get()) {
+                    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.EVIL_WHIP.get()));
+                }else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.VERDEDRIVER.get()) {
                     ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                     int rand = this.random.nextInt(3);
                     if (rand == 1) {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.BIO_WINDER.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.BIO_WINDER.get()));
                     } else {
                         this.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, true, true));
                     }
-                } else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.RYUGADRIVER.get()) {
+                } else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.RYUGADRIVER.get()) {
                     ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-                if (RiderDriverItem.get_Form_Item(belt,1)!=Ryuki_Rider_Items.SURVIVE_REKKA_RYUGA.asItem()) {
+                if (RiderDriverItem.getFormItem(belt,1)!= RyukiRiderItems.SURVIVE_REKKA_RYUGA.asItem()) {
                     int rand = this.random.nextInt(3);
                     switch (rand) {
                         case 1:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SABER_RYUGA.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_SABER_RYUGA.get()));
                             break;
                         case 2:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_CLAW_RYUGA.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_CLAW_RYUGA.get()));
                             break;
                         default:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DRAG_SHIELD_RYUGA.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DRAG_SHIELD_RYUGA.get()));
                             break;
                     }
             }
             }
-                    else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.FEMMEDRIVER.get()) {
+                    else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.FEMMEDRIVER.get()) {
                     ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                     int rand = this.random.nextInt(3);
                     switch (rand) {
                         case 1:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.WING_SHIELD.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.WING_SHIELD.get()));
                             break;
                         case 2:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.WING_SLASHER.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.WING_SLASHER.get()));
                             break;
                         default:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.BLANC_VISOR.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.BLANC_VISOR.get()));
                             break;
                     }
-                }   else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.ABYSSDRIVER.get()) {
+                }   else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.ABYSSDRIVER.get()) {
                     ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                     int rand = this.random.nextInt(3);
                     switch (rand) {
                         case 1:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.ABYSS_SABER.get()));
-                            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.ABYSS_SABER.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.ABYSS_SABER.get()));
+                            this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.ABYSS_SABER.get()));
                             break;
                         case 2:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.ABYSS_VISOR.get()));
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.ABYSS_CLAW.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.ABYSS_VISOR.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.ABYSS_CLAW.get()));
                             break;
                         default:
-                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.ABYSS_VISOR.get()));
+                            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.ABYSS_VISOR.get()));
                             break;
                     }
-                } else if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.ALTERNATIVEDRIVER.get()||
-            getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.ALTERNATIVEZERODRIVER.get()) {
-                        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.SLASH_DAGGER.get()));
+                } else if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.ALTERNATIVEDRIVER.get()||
+            getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.ALTERNATIVEZERODRIVER.get()) {
+                        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.SLASH_DAGGER.get()));
                 }
         }
     }

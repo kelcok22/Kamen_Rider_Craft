@@ -6,7 +6,7 @@ import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.CopyFormChangeItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -70,7 +70,7 @@ public class OhmaRidewatchItem extends BaseItem {
     }
 
     public void summon(Level level, Player player) {
-        if (!level.isClientSide() && this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get() && !ModList.get().isLoaded("supersentaicraft")) {
+        if (!level.isClientSide() && this == ZiORiderItems.RYUSOULGER_RIDEWATCH.get() && !ModList.get().isLoaded("supersentaicraft")) {
             player.sendSystemMessage(Component.translatable("message.kamenridercraft.ryusoul_red_fail"));
 	    player.awardStat(Stats.ITEM_USED.get(this));
         } else {
@@ -78,7 +78,7 @@ public class OhmaRidewatchItem extends BaseItem {
 		    if (summon != null) {
                 summon.allowFormChanges(true);
 		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-                if (this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get()) {
+                if (this == ZiORiderItems.RYUSOULGER_RIDEWATCH.get()) {
 		    	    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_head"))));
 		    	    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_torso"))));
 		    	    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_legs"))));
@@ -104,11 +104,11 @@ public class OhmaRidewatchItem extends BaseItem {
 
                     for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
-                    if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
+                    if (this.summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
                     if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem) key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
                     if (this.summonAltForms.containsKey(key)) {
                         for (RiderFormChangeItem item : this.summonAltForms.get(key)) {
-                            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
+                            RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
                         }
                     }
                 }
@@ -128,8 +128,8 @@ public class OhmaRidewatchItem extends BaseItem {
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())) {
+        && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+        || RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }

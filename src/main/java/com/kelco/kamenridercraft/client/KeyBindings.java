@@ -12,21 +12,28 @@ public class KeyBindings {
     private static final String CATEGORY = "key.categories." + KamenRiderCraftCore.MOD_ID;
 
     public final KeyMapping BeltKey = new KeyMapping(
-            "key."+ KamenRiderCraftCore.MOD_ID +".belt",
+            "key." + KamenRiderCraftCore.MOD_ID + ".belt",
             KeyConflictContext.IN_GAME,
             InputConstants.getKey(InputConstants.KEY_B, -1),
             CATEGORY
     );
 
-    public final KeyMapping AbilityKey = new KeyMapping(
-            "key."+ KamenRiderCraftCore.MOD_ID +".ability",
+    public final KeyMapping PrimaryAbilityKey = new KeyMapping(
+            "key." + KamenRiderCraftCore.MOD_ID + ".primary_ability",
+            KeyConflictContext.IN_GAME,
+            InputConstants.getKey(InputConstants.KEY_C, -1),
+            CATEGORY
+    );
+
+    public final KeyMapping SecondaryAbilityKey = new KeyMapping(
+            "key." + KamenRiderCraftCore.MOD_ID + ".secondary_ability",
             KeyConflictContext.IN_GAME,
             InputConstants.getKey(InputConstants.KEY_V, -1),
             CATEGORY
     );
 
     public final KeyMapping PoseKey = new KeyMapping(
-            "key."+ KamenRiderCraftCore.MOD_ID +".pose",
+            "key." + KamenRiderCraftCore.MOD_ID + ".pose",
             KeyConflictContext.IN_GAME,
             InputConstants.getKey(InputConstants.KEY_G, -1),
             CATEGORY

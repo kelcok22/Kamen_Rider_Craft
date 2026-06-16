@@ -187,11 +187,12 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> USING_ABILITY = ATTRIBUTES.register("using_ability",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.using_ability",
-                    false
-
+    public static final DeferredHolder<Attribute, Attribute> MAX_ABILITY_METER = ATTRIBUTES.register("max_ability_meter",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore._max_ability_meter",
+                    300,
+                    0,
+                    1000
             ).setSyncable(true)
     );
 

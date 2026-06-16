@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.CrossSeriesRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -34,21 +34,21 @@ public class RiotrooperEntity extends BaseHenchmenEntity {
     public RiotrooperEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "riotrooper";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Faiz_Rider_Items.FAIZHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Faiz_Rider_Items.FAIZCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Faiz_Rider_Items.FAIZLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.SMARTBUCKLE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.SMARTBUCKLE.get()));
     }
 
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn
                 && playerIn.getInventory().countItem(CrossSeriesRiderItems.KUUGA_AMAZING_MIGHTY_ARTIST.get()) > 0
-                && !this.getItemBySlot(EquipmentSlot.FEET).is(Faiz_Rider_Items.SMARTBUCKLE_V2.get())) {
+                && !this.getItemBySlot(EquipmentSlot.FEET).is(FaizRiderItems.SMARTBUCKLE_V2.get())) {
             List<LivingEntity> nearbyAllies = this.level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(8), entity ->
                     (entity instanceof RiotrooperEntity));
             for (LivingEntity ally : nearbyAllies)
-                ally.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.SMARTBUCKLE_V2.get()));
+                ally.setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.SMARTBUCKLE_V2.get()));
         }
         super.actuallyHurt(source, amount);
     }
@@ -99,15 +99,15 @@ public class RiotrooperEntity extends BaseHenchmenEntity {
 
         switch (p_34297_.getRandom().nextInt(7)) {
             case 0, 1:
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Faiz_Rider_Items.AXEL_RAY_GUN.get()));
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FaizRiderItems.AXEL_RAY_GUN.get()));
                 this.setMeleeOnSpawn(100.0D);
                 break;
             case 2:
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Faiz_Rider_Items.AXEL_RAY_GUN.get()));
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FaizRiderItems.AXEL_RAY_GUN.get()));
                 break;
             case 3:
                 if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver) {
-                    driver.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Faiz_Rider_Items.FLYING_ATTACKER_RIOTROOPER.get(), 1);
+                    driver.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), FaizRiderItems.FLYING_ATTACKER_RIOTROOPER.get(), 1);
                     this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.5);
                     this.moveControl = new FlyingBossControl(this, 20);
                 }

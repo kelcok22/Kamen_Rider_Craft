@@ -39,7 +39,7 @@ public class PandoraPanelItem extends BlockItem {
 		super(block,new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 	}
 
-	public PandoraPanelItem AddToList(List<Item> TabList) {
+	public PandoraPanelItem addToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}

@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.build;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -28,8 +28,8 @@ public class HazardTriggerItem extends RiderFormChangeItem {
 
         if(!player.hasEffect(EffectCore.FORM_LOCK)) {
             if (BELT.getItem() instanceof BuildDriverItem belt) {
-              if (CanChange(player,belt,BELT)) {
-                 RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),Build_Rider_Items.FULL_BOTTLE.get(), 3);
+              if (canChange(player,belt,BELT)) {
+                 RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.FULL_BOTTLE.get(), 3);
                 if ( BuildDriverItem.CanHazard(BELT)){ super.use(level, player, usedHand);}
                 }
             }

@@ -5,9 +5,9 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -32,7 +32,7 @@ public class UltimateViceCardItem extends BaseItem implements ZeinCard {
 
     @Override
     public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
-        return repair.is(Decade_Rider_Items.BLANK_CARD.get()) || super.isValidRepairItem(toRepair, repair);
+        return repair.is(DecadeRiderItems.BLANK_CARD.get()) || super.isValidRepairItem(toRepair, repair);
     }
 
     @Override
@@ -43,11 +43,11 @@ public class UltimateViceCardItem extends BaseItem implements ZeinCard {
 
         if (summon != null) {
             summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
-            summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Revice_Rider_Items.REVICE_HELMET.get()));
-            summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Revice_Rider_Items.REVICE_CHESTPLATE.get()));
-            summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Revice_Rider_Items.REVICE_LEGGINGS.get()));
-            summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(Revice_Rider_Items.BUDDY_BUCKLE.get()));
-            RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GIFFARD_REX_VISTAMP_VICE.get(), 1);
+            summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ReviceRiderItems.REVICE_HELMET.get()));
+            summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ReviceRiderItems.REVICE_CHESTPLATE.get()));
+            summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ReviceRiderItems.REVICE_LEGGINGS.get()));
+            summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(ReviceRiderItems.BUDDY_BUCKLE.get()));
+            RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), ReviceRiderItems.GIFFARD_REX_VISTAMP_VICE.get(), 1);
 
             level.addFreshEntity(summon);
             if (summon instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) living);
@@ -66,10 +66,10 @@ public class UltimateViceCardItem extends BaseItem implements ZeinCard {
         if (!CARD.isDamaged()) {
             ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-            if (!level.isClientSide() && BELT.getItem() == Zero_One_Rider_Items.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
+            if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
                 activateCard(level, player, CARD);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.justice_order"), true);
-                if (!player.isCreative()) for (Item item : Decade_Rider_Items.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
+                if (!player.isCreative()) for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 
                 return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());

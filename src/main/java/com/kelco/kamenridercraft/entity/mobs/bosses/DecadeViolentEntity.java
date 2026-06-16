@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -18,12 +18,12 @@ public class DecadeViolentEntity extends BaseHenchmenEntity {
     public DecadeViolentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="decade_violent_emotion";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Decade_Rider_Items.DECADEHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Decade_Rider_Items.DECADECHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Decade_Rider_Items.DECADELEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DecadeRiderItems.DECADEHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DecadeRiderItems.DECADECHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DecadeRiderItems.DECADELEGGINGS.get()));
 
-		ItemStack belt = new ItemStack(Decade_Rider_Items.DECADRIVER.get());
-		RiderDriverItem.set_Form_Item(belt, Decade_Rider_Items.DECADE_VIOLENT_EMOTION_CARD.get(), 1);
+		ItemStack belt = new ItemStack(DecadeRiderItems.DECADRIVER.get());
+		RiderDriverItem.setFormItem(belt, DecadeRiderItems.DECADE_VIOLENT_EMOTION_CARD.get(), 1);
 	
         this.setItemSlot(EquipmentSlot.FEET,belt);
     }
@@ -31,7 +31,7 @@ public class DecadeViolentEntity extends BaseHenchmenEntity {
  
     public void tick() {
 		if (this.getHealth()<40) {
-	        this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(Decade_Rider_Items.RIDE_BOOKER.get()));
+	        this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(DecadeRiderItems.RIDE_BOOKER.get()));
 		}
 		super.tick();
 	}

@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,7 +18,7 @@ public class ShiftCarHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public ShiftCarHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Drive_Rider_Items.DRIVE_DRIVER.get()));
+		this(containerId, playerInventory,new ItemStack(DriveRiderItems.DRIVE_DRIVER.get()));
 	}
 
 	public ShiftCarHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

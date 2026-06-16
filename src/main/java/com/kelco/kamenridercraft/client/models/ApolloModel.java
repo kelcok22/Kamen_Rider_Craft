@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class ApolloModel extends GeoModel<ApolloEntity> {
     @Override
     public ResourceLocation getModelResource(ApolloEntity animatable) {
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/catboy_double_robot_dude.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/catboy_double_robot_dude.geo.json");
     }
 
     @Override

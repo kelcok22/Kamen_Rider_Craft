@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -47,9 +47,9 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
  		Random generator = new Random();
 
         List<Item> BLANK_BOOK_PLUS = new ArrayList<>(BLANK_BOOK);
-         if (player.getInventory().countItem(Saber_Rider_Items.TASSEL_DARK_WONDER_RIDE_BOOK.get())!=0){
+         if (player.getInventory().countItem(SaberRiderItems.TASSEL_DARK_WONDER_RIDE_BOOK.get())!=0){
              for (int i = 0; i < 2; i++) {
-                 BLANK_BOOK_PLUS.add(Saber_Rider_Items.ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK.get());
+                 BLANK_BOOK_PLUS.add(SaberRiderItems.ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK.get());
              }
          }
  		if (num==1){
@@ -66,11 +66,11 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_WORLD_STORY_WONDER_RIDE_BOOK.get()) {
+            if (player.getItemInHand(hand).getItem() == SaberRiderItems.BLANK_WONDER_WORLD_STORY_WONDER_RIDE_BOOK.get()) {
                 process(player, level, pos, hand, getBookDrop(0, player));
                 return ItemInteractionResult.SUCCESS;
             }
-            if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_RIDE_BOOK.get()) {
+            if (player.getItemInHand(hand).getItem() == SaberRiderItems.BLANK_WONDER_RIDE_BOOK.get()) {
                 process(player, level, pos, hand, getBookDrop(1, player));
                 return ItemInteractionResult.SUCCESS;
             }

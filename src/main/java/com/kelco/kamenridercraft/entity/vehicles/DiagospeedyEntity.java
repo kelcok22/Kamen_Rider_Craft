@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -12,7 +12,7 @@ public class DiagospeedyEntity extends baseBikeEntity {
 
 
 	public DiagospeedyEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, Saber_Rider_Items.DIAGOSPEEDY_WONDER_RIDE_BOOK.get());
+		super(entityType, level, SaberRiderItems.DIAGOSPEEDY_WONDER_RIDE_BOOK.get());
 		NAME ="diagospeedy";
 		NAME_MODEL ="diagospeedy";
 		}

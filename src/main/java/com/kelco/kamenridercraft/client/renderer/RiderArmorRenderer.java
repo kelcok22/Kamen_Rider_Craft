@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.client.models.RiderArmorModel;
 import com.kelco.kamenridercraft.client.render_layers.RiderRenderLayer;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -20,25 +21,35 @@ import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import software.bernie.geckolib.util.RenderUtil;
 
+import static com.kelco.kamenridercraft.client.ModRenderTypes.mutekiGlint;
+
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
-
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
-
         super(new RiderArmorModel());
-        addRenderLayer(new AutoGlowingGeoLayer<>(this){
+        addRenderLayer(new AutoGlowingGeoLayer<>(this) {
             @Nullable
             protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
                 if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
-                   LivingEntity RIDER = renderer2.GetEntity();
-                    if (RIDER!=null&&RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                        return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot,RIDER)? AutoGlowingTexture.getRenderType(getTextureResource(animatable)): null;
-                        }}
+                    LivingEntity RIDER = renderer2.GetEntity();
+                    if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                        return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER) ? AutoGlowingTexture.getRenderType(getTextureResource(animatable)) : null;
+                    }
+                }
                 return null;
-            }});
-
-            if (equipmentSlot == EquipmentSlot.HEAD||equipmentSlot == EquipmentSlot.FEET) {
-                   addRenderLayer(new RiderRenderLayer<>(this));
+            }
+        });
+        if (equipmentSlot == EquipmentSlot.HEAD || equipmentSlot == EquipmentSlot.FEET) {
+            addRenderLayer(new RiderRenderLayer<>(this));
         }
+        addRenderLayer(new AutoGlowingGeoLayer<>(this) {
+            @Nullable
+            protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
+                if (getCurrentEntity() instanceof LivingEntity rider && rider.invulnerableTime > 0 && rider.hasEffect(EffectCore.MUTEKI)) {
+                    return mutekiGlint();
+                }
+                return null;
+            }
+        });
     }
 
     public GeoArmorRenderer<RiderArmorItem> addRenderLayer(GeoRenderLayer<RiderArmorItem> renderLayer) {
@@ -47,7 +58,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         return this;
     }
 
-    public LivingEntity GetEntity(){
+    public LivingEntity GetEntity() {
         if (getCurrentEntity() instanceof LivingEntity entity) return entity;
         else return null;
     }
@@ -68,34 +79,34 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         return RenderType.entityTranslucent(texture);
     }
 
-@Override
+    @Override
     protected void applyBaseTransformations(HumanoidModel<?> baseModel) {
         super.applyBaseTransformations(baseModel);
-    if (this.body != null) {
-        ModelPart bodyPart = baseModel.body;
+        if (this.body != null) {
+            ModelPart bodyPart = baseModel.body;
 
-        RenderUtil.matchModelPartRot(bodyPart, this.body);
-        this.body.updatePosition(bodyPart.x, -bodyPart.y, bodyPart.z);
-    }
+            RenderUtil.matchModelPartRot(bodyPart, this.body);
+            this.body.updatePosition(bodyPart.x, -bodyPart.y, bodyPart.z);
+        }
     }
 
     protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
         setAllVisible(false);
-        if (GetEntity()!=null){
-        if (!GetEntity().isInvisible() && !(GetEntity().getVehicle()!= null && GetEntity().getVehicle() instanceof RidoronEntity) || GetEntity() instanceof ArmorStand) {
-            if (currentSlot == EquipmentSlot.FEET) {
-                setBoneVisible(this.body, true);
-                setBoneVisible(this.leftArm, true);
-                setBoneVisible(this.rightArm, true);
-            } else if (GetEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT && BELT.isTransformed(GetEntity())) {
-                setBoneVisible(this.head, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"head"));
-                setBoneVisible(this.body, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"body"));
-                setBoneVisible(this.rightArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"rightArm"));
-                setBoneVisible(this.leftArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"leftArm"));
-                setBoneVisible(this.rightLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"rightLeg"));
-                setBoneVisible(this.leftLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"leftLeg"));
+        if (GetEntity() != null) {
+            if (!GetEntity().isInvisible() && !(GetEntity().getVehicle() != null && GetEntity().getVehicle() instanceof RidoronEntity) || GetEntity() instanceof ArmorStand) {
+                if (currentSlot == EquipmentSlot.FEET) {
+                    setBoneVisible(this.body, true);
+                    setBoneVisible(this.leftArm, true);
+                    setBoneVisible(this.rightArm, true);
+                } else if (GetEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT && BELT.isTransformed(GetEntity())) {
+                    setBoneVisible(this.head, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET), currentSlot, "head"));
+                    setBoneVisible(this.body, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET), currentSlot, "body"));
+                    setBoneVisible(this.rightArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET), currentSlot, "rightArm"));
+                    setBoneVisible(this.leftArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET), currentSlot, "leftArm"));
+                    setBoneVisible(this.rightLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET), currentSlot, "rightLeg"));
+                    setBoneVisible(this.leftLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET), currentSlot, "leftLeg"));
+                }
             }
-        }
         }
     }
 

@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class TabooRenderer extends GeoEntityRenderer<TabooDopantEntity> {
 
 
-
-
-	public TabooRenderer(EntityRendererProvider.Context renderManager) {
+    public TabooRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new TabooModel());
     }
 

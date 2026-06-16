@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -16,32 +16,32 @@ public class DreaTrooperCommanderEntity extends BaseHenchmenEntity {
     public DreaTrooperCommanderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="dread";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gotchard_Rider_Items.GOTCHARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gotchard_Rider_Items.GOTCHARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gotchard_Rider_Items.DREADRIVER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GotchardRiderItems.GOTCHARD_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GotchardRiderItems.GOTCHARD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GotchardRiderItems.GOTCHARD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.DREADRIVER.get()));
 
         switch (this.getRandom().nextInt(5)) {
             case 0:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gotchard_Rider_Items.STEAMLINER_REPLI_CHEMY_CARD.get(), 1);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_AB.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GotchardRiderItems.STEAMLINER_REPLI_CHEMY_CARD.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_AB.get()));
                 break;
             case 1:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gotchard_Rider_Items.STEAMLINER_REPLI_CHEMY_CARD.get(), 1);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_BB.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GotchardRiderItems.STEAMLINER_REPLI_CHEMY_CARD.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_BB.get()));
                 break;
             case 2:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gotchard_Rider_Items.UNICON_REPLI_CHEMY_CARD.get(), 1);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_UC.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GotchardRiderItems.UNICON_REPLI_CHEMY_CARD.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_UC.get()));
                 break;
             case 3:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gotchard_Rider_Items.DAIOHNI_REPLI_CHEMY_CARD.get(), 1);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_DO.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GotchardRiderItems.DAIOHNI_REPLI_CHEMY_CARD.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_DO.get()));
                 break;
             case 4:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Gotchard_Rider_Items.DREAD_TYPE_THREE_CARDS.get(), 1);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_UC.get()));
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Gotchard_Rider_Items.BLOODY_DO.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GotchardRiderItems.DREAD_TYPE_THREE_CARDS.get(), 1);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GotchardRiderItems.BLOODY_UC.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(GotchardRiderItems.BLOODY_DO.get()));
                 break;
         }
     }

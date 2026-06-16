@@ -28,7 +28,7 @@ public class JRiderItems {
 
 
     public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/j")), new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/j")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
 
     public static final DeferredItem<Item>  J_STONE_JUMBO_FORMATION = ITEMS.register("j_stone_jumbo_formation",
             () -> new RiderFormChangeItem(new Item.Properties(),"","j","blank",
@@ -37,7 +37,7 @@ public class JRiderItems {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)
                     ,new MobEffectInstance(EffectCore.BIG, 40, 2,true,false))
-                    .IsGlowing().model_has_different_name("j_stone").has_basic_model());
+                    .isGlowing().model_has_different_name("j_stone").has_basic_model());
 
     public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),"","j","blank",
@@ -52,7 +52,7 @@ public class JRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).KeepItem());
+            }.isGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",

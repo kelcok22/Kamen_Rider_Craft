@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Wizard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -58,11 +58,11 @@ public class WizardRingItem extends BaseItem {
 					if (copy != null) {
 						copy.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
 						copy.NAME = "wizard_copy";
-						copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
-						copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
-						copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Wizard_Rider_Items.WIZARD_LEGGINGS.get()));
+						copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+						copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
+						copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
 						copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
-						RiderDriverItem.set_Form_Item(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+						RiderDriverItem.setFormItem(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
 
 						level.addFreshEntity(copy);
 						copy.bindToPlayer(player);

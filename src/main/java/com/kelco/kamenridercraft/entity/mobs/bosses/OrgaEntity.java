@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -24,9 +24,9 @@ public class OrgaEntity extends BaseHenchmenEntity {
 		public OrgaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="horse_orpnoch";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Faiz_Rider_Items.FAIZHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Faiz_Rider_Items.FAIZCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Faiz_Rider_Items.FAIZLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZLEGGINGS.get()));
     }
 
 
@@ -48,14 +48,14 @@ public class OrgaEntity extends BaseHenchmenEntity {
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide()  && this.getHealth()<50
-		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()!=Faiz_Rider_Items.ORGA_DRIVER.get()) {
+		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()!= FaizRiderItems.ORGA_DRIVER.get()) {
 			if(source.getEntity() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga"));
 			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
 			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
 			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
 
-			this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Faiz_Rider_Items.ORGA_STLANZER.get()));
-			this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.ORGA_DRIVER.get()));
+			this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FaizRiderItems.ORGA_STLANZER.get()));
+			this.setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.ORGA_DRIVER.get()));
     	}
     }
 

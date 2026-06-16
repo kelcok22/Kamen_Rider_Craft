@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -38,11 +38,11 @@ public class OdinEntity extends BaseHenchmenEntity {
     public OdinEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="rider_summon";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Ryuki_Rider_Items.RYUKICHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ryuki_Rider_Items.RYUKILEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.ODINDRIVER.get()));
-        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GOLD_VISOR.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RyukiRiderItems.RYUKIHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RyukiRiderItems.RYUKICHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RyukiRiderItems.RYUKILEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.ODINDRIVER.get()));
+        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.GOLD_VISOR.get()));
     }
     protected void addBehaviourGoals() {
         this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
@@ -61,20 +61,20 @@ public class OdinEntity extends BaseHenchmenEntity {
         int rand2 = this.random.nextInt(10);
         if (rand2 == 2) {
 
-            if (getItemBySlot(EquipmentSlot.FEET).getItem() == Ryuki_Rider_Items.ODINDRIVER.get()) {
+            if (getItemBySlot(EquipmentSlot.FEET).getItem() == RyukiRiderItems.ODINDRIVER.get()) {
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
                 int rand = this.random.nextInt(3);
                 switch (rand) {
                     case 1:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GOLD_SABER.get()));
-                        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GOLD_SABER.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.GOLD_SABER.get()));
+                        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.GOLD_SABER.get()));
                         break;
                     case 2:
-                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.GOLD_SHIELD.get()));
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.GOLD_SHIELD.get()));
                         this.getItemBySlot(EquipmentSlot.OFFHAND).consume(1, this);
                         break;
                     default:
-                        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Ryuki_Rider_Items.GOLD_VISOR.get()));
+                        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.GOLD_VISOR.get()));
                         break;
                 }
             }

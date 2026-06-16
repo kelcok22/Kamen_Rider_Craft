@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -30,10 +30,10 @@ public class AnkhCompleteEntity extends BaseHenchmenEntity {
 	public AnkhCompleteEntity(EntityType<? extends BaseHenchmenEntity > type, Level level) {
         super(type, level);
         NAME="ankh_complete";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOO_Rider_Items.OOOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOO_Rider_Items.OOOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.GREEED_BLET_ANKH.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.GREEED_BLET_ANKH.get()));
         this.moveControl = new FlyingBossControl(this, 20);
         }
   

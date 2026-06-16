@@ -6,8 +6,15 @@ import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.block.entity.renderer.GochizoJarBlockEntityRenderer;
 import com.kelco.kamenridercraft.block.entity.renderer.PandoraPanelBlockEntityRenderer;
 import com.kelco.kamenridercraft.block.entity.renderer.PlinthBlockEntityRenderer;
+import com.kelco.kamenridercraft.client.KamenRiderCraftClient;
 import com.kelco.kamenridercraft.client.KeyBindings;
-import com.kelco.kamenridercraft.client.gui.*;
+import com.kelco.kamenridercraft.client.gui.driver.*;
+import com.kelco.kamenridercraft.client.gui.item.LegendRideMagnumGuiScreen;
+import com.kelco.kamenridercraft.client.gui.item.NeoDiendriverGuiScreen;
+import com.kelco.kamenridercraft.client.gui.item.RideBookerGuiScreen;
+import com.kelco.kamenridercraft.client.gui.machine_block.IxaMachineBlockGuiScreen;
+import com.kelco.kamenridercraft.client.gui.overlays.AbilityHudOverlay;
+import com.kelco.kamenridercraft.client.gui.storage_item.*;
 import com.kelco.kamenridercraft.client.renderer.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
@@ -18,7 +25,7 @@ import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.init.RiderPotPattern;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
@@ -66,6 +73,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.*;
+import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -108,7 +116,7 @@ public class KamenRiderCraftCore {
         ModConfiguredFeatures.register(modEventBus);
         ModSounds.register(modEventBus);
         RiderPotPattern.register(modEventBus);
-        Modded_item_core.register(modEventBus);
+        ModdedItemCore.register(modEventBus);
         TheSeriesRiderItems.register(modEventBus);
         ShinIchigoRiderItems.register(modEventBus);
         AmazonsRiderItems.register(modEventBus);
@@ -126,33 +134,33 @@ public class KamenRiderCraftCore {
         ShinRiderItems.register(modEventBus);
         ZORiderItems.register(modEventBus);
         JRiderItems.register(modEventBus);
-        Kuuga_Rider_Items.register(modEventBus);
-        Agito_Rider_Items.register(modEventBus);
-        Ryuki_Rider_Items.register(modEventBus);
-        Faiz_Rider_Items.register(modEventBus);
-        Blade_Rider_Items.register(modEventBus);
-        Hibiki_Rider_Items.register(modEventBus);
-        Kabuto_Rider_Items.register(modEventBus);
-        Den_O_Rider_Items.register(modEventBus);
-        Kiva_Rider_Items.register(modEventBus);
-        Decade_Rider_Items.register(modEventBus);
-        W_Rider_Items.register(modEventBus);
-        OOO_Rider_Items.register(modEventBus);
-        Fourze_Rider_Items.register(modEventBus);
-        Wizard_Rider_Items.register(modEventBus);
-        Gaim_Rider_Items.register(modEventBus);
-        Drive_Rider_Items.register(modEventBus);
-        Ghost_Rider_Items.register(modEventBus);
-        Ex_Aid_Rider_Items.register(modEventBus);
-        Build_Rider_Items.register(modEventBus);
-        Zi_O_Rider_Items.register(modEventBus);
-        Zero_One_Rider_Items.register(modEventBus);
-        Saber_Rider_Items.register(modEventBus);
-        Revice_Rider_Items.register(modEventBus);
-        Geats_Rider_Items.register(modEventBus);
-        Gotchard_Rider_Items.register(modEventBus);
-        Gavv_Rider_Items.register(modEventBus);
-        Zeztz_Rider_Items.register(modEventBus);
+        KuugaRiderItems.register(modEventBus);
+        AgitoRiderItems.register(modEventBus);
+        RyukiRiderItems.register(modEventBus);
+        FaizRiderItems.register(modEventBus);
+        BladeRiderItems.register(modEventBus);
+        HibikiRiderItems.register(modEventBus);
+        KabutoRiderItems.register(modEventBus);
+        DenORiderItems.register(modEventBus);
+        KivaRiderItems.register(modEventBus);
+        DecadeRiderItems.register(modEventBus);
+        WRiderItems.register(modEventBus);
+        OOORiderItems.register(modEventBus);
+        FourzeRiderItems.register(modEventBus);
+        WizardRiderItems.register(modEventBus);
+        GaimRiderItems.register(modEventBus);
+        DriveRiderItems.register(modEventBus);
+        GhostRiderItems.register(modEventBus);
+        ExAidRiderItems.register(modEventBus);
+        BuildRiderItems.register(modEventBus);
+        ZiORiderItems.register(modEventBus);
+        ZeroOneRiderItems.register(modEventBus);
+        SaberRiderItems.register(modEventBus);
+        ReviceRiderItems.register(modEventBus);
+        GeatsRiderItems.register(modEventBus);
+        GotchardRiderItems.register(modEventBus);
+        GavvRiderItems.register(modEventBus);
+        ZeztzRiderItems.register(modEventBus);
         CrossSeriesRiderItems.register(modEventBus);
         ExtraRiderItems.register(modEventBus);
         GoriderItems.register(modEventBus);
@@ -249,9 +257,14 @@ public class KamenRiderCraftCore {
         }
 
         @SubscribeEvent
+        public static void registerOverlays(RegisterGuiLayersEvent event) {
+            event.registerAbove(VanillaGuiLayers.AIR_LEVEL, ResourceLocation.fromNamespaceAndPath(MOD_ID, "ability_hud"), AbilityHudOverlay.instance);
+        }
+
+        @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(RegisterItemProperties::addCustomItemProperties);
-            event.enqueueWork(KamenRiderCraftCoreClient::registerPlayerAnimations);
+            event.enqueueWork(KamenRiderCraftClient::registerPlayerAnimations);
         }
 
         @SubscribeEvent
@@ -641,6 +654,7 @@ public class KamenRiderCraftCore {
             event.registerSpriteSet(ModParticles.PURPLE_BEAST_PARTICLES.get(), PurpleWizardParticles.Provider::new);
 
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MISS_PARTICLES.get(), MissParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES2.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.GUMMI_PARTICLES3.get(), GummiParticles.Provider::new);
@@ -659,7 +673,8 @@ public class KamenRiderCraftCore {
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
-            event.register(KeyBindings.INSTANCE.AbilityKey);
+            event.register(KeyBindings.INSTANCE.PrimaryAbilityKey);
+            event.register(KeyBindings.INSTANCE.SecondaryAbilityKey);
             event.register(KeyBindings.INSTANCE.PoseKey);
         }
 
@@ -723,15 +738,21 @@ public class KamenRiderCraftCore {
             );
 
             registrar.playToClient(
+                    EndAttackAnimationPayload.TYPE,
+                    EndAttackAnimationPayload.STREAM_CODEC,
+                    ClientPayloadHandler::endAttackAnimations
+            );
+
+            registrar.playToClient(
                     StartPosePayload.TYPE,
                     StartPosePayload.STREAM_CODEC,
                     ClientPayloadHandler::startPoseAnimations
             );
 
             registrar.playToClient(
-                    StartKickPayload.TYPE,
-                    StartKickPayload.STREAM_CODEC,
-                    ClientPayloadHandler::startKickAnimation
+                    AttackAnimPayload.TYPE,
+                    AttackAnimPayload.STREAM_CODEC,
+                    ClientPayloadHandler::startAttackAnim
             );
 
             registrar.playToServer(
@@ -759,9 +780,15 @@ public class KamenRiderCraftCore {
             );
 
             registrar.playToServer(
-                    AbilityKeyPayload.TYPE,
-                    AbilityKeyPayload.STREAM_CODEC,
-                    ServerPayloadHandler::handleAbilityKeyPress
+                    PrimaryAbilityKeyPayload.TYPE,
+                    PrimaryAbilityKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handlePrimaryAbilityKeyPress
+            );
+
+            registrar.playToServer(
+                    SecondaryAbilityKeyPayload.TYPE,
+                    SecondaryAbilityKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleSecondaryAbilityKeyPress
             );
 
             registrar.playToServer(
@@ -782,7 +809,7 @@ public class KamenRiderCraftCore {
                         .title(Component.translatable("tab.kamenridercraft.egg_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderMiscTab = CREATIVE_MODE_TABS.register("krc_997_misc_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.RIDER_CIRCUIT.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ModdedItemCore.RIDER_CIRCUIT.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.misc_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderblockTab = CREATIVE_MODE_TABS.register("krc_998_blocks_tab", () ->
@@ -843,116 +870,116 @@ public class KamenRiderCraftCore {
                         .title(Component.translatable("tab.kamenridercraft.j_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> KuugaTab = CREATIVE_MODE_TABS.register("krc_210_kuuga_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Kuuga_Rider_Items.KUUGAHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kuuga_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(KuugaRiderItems.KUUGAHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kuuga_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.kuuga_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> AgitoTab = CREATIVE_MODE_TABS.register("krc_220_agito_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Agito_Rider_Items.AGITOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_agito_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(AgitoRiderItems.AGITOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_agito_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.agito_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> RyukiTab = CREATIVE_MODE_TABS.register("krc_230_ryuki_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Ryuki_Rider_Items.RYUKIHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ryuki_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(RyukiRiderItems.RYUKIHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ryuki_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.ryuki_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> FaizTab = CREATIVE_MODE_TABS.register("krc_240_faiz_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Faiz_Rider_Items.FAIZHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_faiz_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(FaizRiderItems.FAIZHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_faiz_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.faiz_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> BladeTab = CREATIVE_MODE_TABS.register("krc_250_blade_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Blade_Rider_Items.BLADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_blade_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(BladeRiderItems.BLADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_blade_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.blade_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> HibikiTab = CREATIVE_MODE_TABS.register("krc_260_hibiki_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Hibiki_Rider_Items.HIBIKIHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_hibiki_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(HibikiRiderItems.HIBIKIHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_hibiki_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.hibiki_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> KabutoTab = CREATIVE_MODE_TABS.register("krc_270_kabuto_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Kabuto_Rider_Items.KABUTOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kabuto_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(KabutoRiderItems.KABUTOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kabuto_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.kabuto_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> DenOTab = CREATIVE_MODE_TABS.register("krc_280_den_o_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_den_o_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(DenORiderItems.DEN_OHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_den_o_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.den_o_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> KivaTab = CREATIVE_MODE_TABS.register("krc_290_kiva_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Kiva_Rider_Items.KIVAHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kiva_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(KivaRiderItems.KIVAHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kiva_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.kiva_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> DecadeTab = CREATIVE_MODE_TABS.register("krc_300_decade_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Decade_Rider_Items.DECADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_decade_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(DecadeRiderItems.DECADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_decade_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.decade_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> WTab = CREATIVE_MODE_TABS.register("krc_310_w_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(W_Rider_Items.WHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_w_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(WRiderItems.WHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_w_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.w_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> OOOTab = CREATIVE_MODE_TABS.register("krc_320_ooo_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(OOO_Rider_Items.OOOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ooo_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(OOORiderItems.OOOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ooo_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.ooo_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> FOURZETab = CREATIVE_MODE_TABS.register("krc_330_fourze_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Fourze_Rider_Items.FOURZE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_fourze_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(FourzeRiderItems.FOURZE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_fourze_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.fourze_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> WIZARDTab = CREATIVE_MODE_TABS.register("krc_340_wizard_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_wizard_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(WizardRiderItems.WIZARD_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_wizard_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.wizard_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> GAIMTab = CREATIVE_MODE_TABS.register("krc_350_gaim_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Gaim_Rider_Items.GAIM_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gaim_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(GaimRiderItems.GAIM_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gaim_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.gaim_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> DRIVETab = CREATIVE_MODE_TABS.register("krc_360_drive_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_drive_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(DriveRiderItems.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_drive_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.drive_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> GHOSTTab = CREATIVE_MODE_TABS.register("krc_370_ghost_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ghost_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(GhostRiderItems.GHOST_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ghost_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.ghost_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> EX_AIDTab = CREATIVE_MODE_TABS.register("krc_380_exaid_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ex_aid_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ExAidRiderItems.EX_AIDHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_ex_aid_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.ex_aid_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> BUILDTab = CREATIVE_MODE_TABS.register("krc_390_build_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Build_Rider_Items.BUILD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_build_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(BuildRiderItems.BUILD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_build_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.build_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZI_OTab = CREATIVE_MODE_TABS.register("krc_400_zi_o_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zi_o_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ZiORiderItems.ZI_O_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zi_o_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.zi_o_items")).build());
 
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> Zero_OneTab = CREATIVE_MODE_TABS.register("krc_410_zero_one_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zero_one_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ZeroOneRiderItems.ZERO_ONE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zero_one_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.zero_one_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> SABERTab = CREATIVE_MODE_TABS.register("krc_420_saber_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Saber_Rider_Items.SABER_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_saber_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(SaberRiderItems.SABER_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_saber_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.saber_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> ReviceTab = CREATIVE_MODE_TABS.register("krc_430_geats_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Revice_Rider_Items.REVICE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_revice_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ReviceRiderItems.REVICE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_revice_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.revice_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> GeatsTab = CREATIVE_MODE_TABS.register("krc_440_geats_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Geats_Rider_Items.GEATS_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_geats_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(GeatsRiderItems.GEATS_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_geats_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.geats_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> GotchardTab = CREATIVE_MODE_TABS.register("krc_450_gotchard_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gotchard_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(GotchardRiderItems.GOTCHARD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gotchard_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.gotchard_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> GavvTab = CREATIVE_MODE_TABS.register("krc_460_gavv_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gavv_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(GavvRiderItems.GAVV_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_gavv_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.gavv_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZeztzTab = CREATIVE_MODE_TABS.register("krc_470_zeztz_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Zeztz_Rider_Items.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zeztz_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_zeztz_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.zeztz_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> My_thTab = CREATIVE_MODE_TABS.register("krc_480_my_th_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.MY_TH_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(ModdedItemCore.MY_TH_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.my_th_items")).build());
 
 
@@ -1298,8 +1325,8 @@ public class KamenRiderCraftCore {
                 event.accept(Rider_Blocks.HELHEIM_FENCE_GATE);
                 event.accept(Rider_Blocks.HELHEIM_DOOR);
                 event.accept(Rider_Blocks.HELHEIM_TRAPDOOR);
-                event.accept(Modded_item_core.HELHEIM_SIGN_ITEM);
-                event.accept(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM);
+                event.accept(ModdedItemCore.HELHEIM_SIGN_ITEM);
+                event.accept(ModdedItemCore.HELHEIM_HANGING_SIGN_ITEM);
                 event.accept(Rider_Blocks.HELHEIM_SAPLING);
                 event.accept(Rider_Blocks.HELHEIM_LEAVES);
                 event.accept(Rider_Blocks.HELHEIM_VINE);
@@ -1687,7 +1714,6 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.GOT_BOOST_MUSIC_DISC);
                 event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
-
                 event.accept(MusicDiscItems.MASKED_RIDER_MUSIC_DISC);
             }
         }

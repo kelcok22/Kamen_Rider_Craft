@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.nbt.CompoundTag;
@@ -56,10 +56,10 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
     }
 
     public void remove(Entity.RemovalReason p_149847_) {
-        if (this.isDeadOrDying() && this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(Saber_Rider_Items.DESAST_ALTER_RIDE_BOOK.get()) > 0) {
-            if (playerIn.getInventory().getItem(40).getItem() == Saber_Rider_Items.DESAST_ALTER_RIDE_BOOK.get()) playerIn.getInventory().removeItem(40, 1);
-            else playerIn.getInventory().removeItem(playerIn.getInventory().findSlotMatchingItem(new ItemStack(Saber_Rider_Items.DESAST_ALTER_RIDE_BOOK.get())), 1);
-            ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+        if (this.isDeadOrDying() && this.getLastAttacker() instanceof Player playerIn && playerIn.getInventory().countItem(SaberRiderItems.DESAST_ALTER_RIDE_BOOK.get()) > 0) {
+            if (playerIn.getInventory().getItem(40).getItem() == SaberRiderItems.DESAST_ALTER_RIDE_BOOK.get()) playerIn.getInventory().removeItem(40, 1);
+            else playerIn.getInventory().removeItem(playerIn.getInventory().findSlotMatchingItem(new ItemStack(SaberRiderItems.DESAST_ALTER_RIDE_BOOK.get())), 1);
+            ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(SaberRiderItems.GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
             key.setPickUpDelay(0);
             playerIn.level().addFreshEntity(key);
             playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.gaikotsu_ninjaden"));
@@ -77,13 +77,13 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<100
-		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()==Zero_One_Rider_Items.ARK_DRIVER_ZERO.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get()) {
+		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()== ZeroOneRiderItems.ARK_DRIVER_ZERO.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= ZeroOneRiderItems.ARK_ONE_PROGRISEKEY.get()) {
 			playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.ark_one"));
     				
     		this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
     		this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
     		this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-    	    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get(), 1);
+    	    RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeroOneRiderItems.ARK_ONE_PROGRISEKEY.get(), 1);
         }
     }
 
@@ -124,10 +124,10 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
             this.setInvulnerableTicks(j);
             if (this.tickCount % 10 == 0) this.heal(10.0F);
             if (this.getInvulnerableTicks() == 0) {
-                this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get()));
-                this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
-                this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
-                this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ARK_DRIVER_ZERO.get()));
+                this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeroOneRiderItems.ZERO_ONE_HELMET.get()));
+                this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeroOneRiderItems.ZERO_ONE_CHESTPLATE.get()));
+                this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeroOneRiderItems.ZERO_ONE_LEGGINGS.get()));
+                this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.ARK_DRIVER_ZERO.get()));
             }
 
         } else {
@@ -190,7 +190,7 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
 
     public void tick() {
         if (this.getHealth()<150 && this.getInvulnerableTicks() == 0) {
-            if(getItemBySlot(EquipmentSlot.FEET).getItem()==Zero_One_Rider_Items.ARK_DRIVER_ZERO.get()){
+            if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeroOneRiderItems.ARK_DRIVER_ZERO.get()){
                 Random generator = new Random();
                 int rand = generator.nextInt(THINGS_AND_STUFF.size());
                 int rand2 = generator.nextInt(200);

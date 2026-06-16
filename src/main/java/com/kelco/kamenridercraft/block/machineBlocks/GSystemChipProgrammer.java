@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_1.Agito_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.AgitoRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -53,7 +53,7 @@ public class GSystemChipProgrammer extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Agito_Rider_Items.BLANK_G_SYSTEM_CHIP.get()) {
+            if (player.getItemInHand(hand).getItem() == AgitoRiderItems.BLANK_G_SYSTEM_CHIP.get()) {
                 process(player, level, pos, hand, getChipDrop());
                 return ItemInteractionResult.SUCCESS;
             }

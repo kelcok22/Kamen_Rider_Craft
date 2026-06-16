@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Agito_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.AgitoRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -15,10 +15,10 @@ public class AnotherAgitoEntity extends BaseHenchmenEntity {
     public AnotherAgitoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="another_agito";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Agito_Rider_Items.AGITOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Agito_Rider_Items.AGITOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Agito_Rider_Items.AGITOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Agito_Rider_Items.ANK_POINT.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(AgitoRiderItems.AGITOHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(AgitoRiderItems.AGITOCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(AgitoRiderItems.AGITOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.ANK_POINT.get()));
     }
 
 

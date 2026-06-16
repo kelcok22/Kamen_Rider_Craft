@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kiva_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -18,10 +18,10 @@ public class ArcEntity extends BaseHenchmenEntity {
     public ArcEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="arc";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kiva_Rider_Items.KIVAHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kiva_Rider_Items.KIVACHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kiva_Rider_Items.KIVALEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kiva_Rider_Items.ARC_KIVAT_BELT.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(KivaRiderItems.KIVAHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(KivaRiderItems.KIVACHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(KivaRiderItems.KIVALEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(KivaRiderItems.ARC_KIVAT_BELT.get()));
     }
 
 

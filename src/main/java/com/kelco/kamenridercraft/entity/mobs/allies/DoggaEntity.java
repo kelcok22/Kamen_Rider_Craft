@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.allies;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -95,7 +95,7 @@ public class DoggaEntity extends BaseAllyEntity {
                         return interactionresult;
                     }
                 }
-            } else if (itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isAngry()) {
+            } else if (itemstack.is(ModdedItemCore.VIENNA_COFFEE) && !this.isAngry()) {
                 itemstack.consume(1, player);
                 this.tryToTame(player, 3);
                 return InteractionResult.SUCCESS;
@@ -103,7 +103,7 @@ public class DoggaEntity extends BaseAllyEntity {
                 return super.mobInteract(player, hand);
             }
         } else {
-            boolean flag = this.isOwnedBy(player) || this.isTame() || (itemstack.is(Modded_item_core.VIENNA_COFFEE)) && !this.isTame() && !this.isAngry();
+            boolean flag = this.isOwnedBy(player) || this.isTame() || (itemstack.is(ModdedItemCore.VIENNA_COFFEE)) && !this.isTame() && !this.isAngry();
             return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
         }
     }

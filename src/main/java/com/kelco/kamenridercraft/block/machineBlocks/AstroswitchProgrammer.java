@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -69,7 +69,7 @@ public class AstroswitchProgrammer extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Fourze_Rider_Items.BLANK_ASTROSWITCH.get()){
+            if (player.getItemInHand(hand).getItem() == FourzeRiderItems.BLANK_ASTROSWITCH.get()){
                 process(player, level, pos, hand, getSwitchDrop( player));
                 return ItemInteractionResult.SUCCESS;
             }

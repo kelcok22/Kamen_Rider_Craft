@@ -7,7 +7,7 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.projectiles.CellMedalProjectileEntity;
 import com.kelco.kamenridercraft.entity.projectiles.LaserProjectileEntity;
 import com.kelco.kamenridercraft.entity.projectiles.RocketProjectileEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
@@ -38,7 +38,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class BaseBlasterItem extends BowItem {
-    private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+    private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
     private Item FormChangeItem = null;
     private Item HenshinBeltItem = null;
     private Item craftingRemainingItem = null;
@@ -275,7 +275,7 @@ public class BaseBlasterItem extends BowItem {
         }
     }
 
-    public BaseBlasterItem AddToList(List<Item> TabList) {
+    public BaseBlasterItem addToList(List<Item> TabList) {
         TabList.add(this);
         return this;
     }

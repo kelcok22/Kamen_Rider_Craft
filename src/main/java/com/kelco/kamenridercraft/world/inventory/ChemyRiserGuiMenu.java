@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.base_items.component.BasicContainer;
 import com.kelco.kamenridercraft.item.base_items.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.gotchard.ChemyRiserItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -19,7 +19,7 @@ public class ChemyRiserGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public ChemyRiserGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Gotchard_Rider_Items.CHEMY_RISER.get()));
+		this(containerId, playerInventory,new ItemStack(GotchardRiderItems.CHEMY_RISER.get()));
 	}
 
 	public ChemyRiserGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
@@ -38,9 +38,9 @@ public class ChemyRiserGuiMenu extends AbstractContainerMenu {
 		this.addSlot(new Slot(container,0,116,35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (stack.getItem()==Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get()|
-                        stack.getItem()==Gotchard_Rider_Items.UFO_X_RIDE_CHEMY_CARD.get()|
-                        stack.getItem()==Gotchard_Rider_Items.TAMAGON_RIDE_CHEMY_CARD.get());
+				return (stack.getItem()== GotchardRiderItems.BLANK_RIDE_CHEMY_CARD.get()|
+                        stack.getItem()== GotchardRiderItems.UFO_X_RIDE_CHEMY_CARD.get()|
+                        stack.getItem()== GotchardRiderItems.TAMAGON_RIDE_CHEMY_CARD.get());
 			}
 		});
 		this.addSlot(new SlotByTag(container,1,44,35,"gear/alchemist_rings"));

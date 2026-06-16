@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -19,11 +19,11 @@ public class LangoEntity extends BaseHenchmenEntity {
     public LangoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="lango_stomach";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gavv_Rider_Items.GAVV_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gavv_Rider_Items.GAVV_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gavv_Rider_Items.LANGO_MIMICDEVISER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.LANGO_SWORD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GavvRiderItems.GAVV_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GavvRiderItems.GAVV_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GavvRiderItems.GAVV_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GavvRiderItems.LANGO_MIMICDEVISER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GavvRiderItems.LANGO_SWORD.get()));
         this.moveControl = new FlyingBossControl(this, 20);
     }
 

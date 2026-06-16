@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.reiwa.Zeztz_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -79,7 +79,7 @@ public class CapsemDropper extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Zeztz_Rider_Items.CODE_CAPSEM.get()){
+            if (player.getItemInHand(hand).getItem() == ZeztzRiderItems.CODE_CAPSEM.get()){
                 process(player, level, pos, hand, getCapsemDrop(player));
                 return ItemInteractionResult.SUCCESS;
             }

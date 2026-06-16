@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.SaberRiderItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
@@ -22,30 +22,30 @@ public class CaliburEntity extends BaseHenchmenEntity {
     public CaliburEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="calibur";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Saber_Rider_Items.SABER_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Saber_Rider_Items.SABER_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Saber_Rider_Items.SABER_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Saber_Rider_Items.JAKEN_CALIBURDRIVER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.ANKOKUKEN_KURAYAMI.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(SaberRiderItems.SABER_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.JAKEN_CALIBURDRIVER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.ANKOKUKEN_KURAYAMI.get()));
     }
 
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<30
-		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()==Saber_Rider_Items.JAKEN_CALIBURDRIVER.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Saber_Rider_Items.JAOU_DRAGON_WONDER_RIDE_BOOK.get()) {
+		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()== SaberRiderItems.JAKEN_CALIBURDRIVER.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= SaberRiderItems.JAOU_DRAGON_WONDER_RIDE_BOOK.get()) {
 			playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.calibur_jaou"));
 			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
 			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
 
-			if (playerIn.getInventory().countItem(Saber_Rider_Items.KING_OF_ARTHUR_WONDER_RIDE_BOOK.get())!=0){
-				ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.DRAGONIC_KNIGHT_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+			if (playerIn.getInventory().countItem(SaberRiderItems.KING_OF_ARTHUR_WONDER_RIDE_BOOK.get())!=0){
+				ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(SaberRiderItems.DRAGONIC_KNIGHT_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
 				key.setPickUpDelay(0);
 				playerIn.level().addFreshEntity(key);
 				playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.dragonic_knight"));
 			}
-			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Saber_Rider_Items.JAOU_DRAGON_WONDER_RIDE_BOOK.get(), 1);
+			RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), SaberRiderItems.JAOU_DRAGON_WONDER_RIDE_BOOK.get(), 1);
     	}
     }
     

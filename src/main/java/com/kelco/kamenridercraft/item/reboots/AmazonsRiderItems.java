@@ -21,10 +21,10 @@ public class AmazonsRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> EMPTY_VIAL = ITEMS.register("empty_vial",
-            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_CELL_VIAL = ITEMS.register("amazon_cell_vial",
-            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).AddToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).KeepDifItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> OMEGA_AMAZON_CELL_VIAL = ITEMS.register("omega_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_omega","blank",
@@ -37,7 +37,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("amazon_sigma.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
+            }.changeModel("amazon_sigma.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> ALPHA_AMAZON_CELL_VIAL = ITEMS.register("alpha_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_alpha","blank",
@@ -50,7 +50,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("amazon_alpha.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
+            }.changeModel("amazon_alpha.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> SIGMA_AMAZON_CELL_VIAL = ITEMS.register("sigma_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_sigma","blank",
@@ -63,10 +63,10 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("amazon_sigma.geo.json").AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 2).KeepDifItem(EMPTY_VIAL.get()));
+            }.changeModel("amazon_sigma.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 2).KeepDifItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> NEO_AMAZON_CELL_VIAL = ITEMS.register("neo_amazon_cell_vial",
-            () -> new BaseItem(new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).AddToList(AmazonCellMutator.AMAZON_CELL, 1).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 1).KeepDifItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> CONDORER_CORE_ALPHA = ITEMS.register("condorer_core_alpha",
             () -> new RiderFormChangeItem(new Item.Properties(),"","amazon_alpha","amazons_driver_alpha_belt",
@@ -80,7 +80,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> CONDORER_CORE_ALPHA_BLIND = ITEMS.register("condorer_core_alpha_blind",
             () -> new RiderFormChangeItem(new Item.Properties(),"_blind","amazon_alpha","amazons_driver_alpha_belt",
@@ -95,7 +95,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.ChangeModel("amazon_alpha.geo.json").IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.changeModel("amazon_alpha.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> CONDORER_CORE_OMEGA = ITEMS.register("condorer_core_omega",
             () -> new RiderFormChangeItem(new Item.Properties(),"","amazon_omega","amazons_driver_omega_belt",
@@ -109,7 +109,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> CONDORER_CORE_SIGMA = ITEMS.register("condorer_core_sigma",
             () -> new RiderFormChangeItem(new Item.Properties(),"","amazon_sigma","amazons_driver_sigma_belt",
@@ -123,7 +123,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_INJECTOR_NEO = ITEMS.register("amazon_injector_neo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","amazon_neo","neo_amazons_driver_neo_belt",
@@ -138,7 +138,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_INJECTOR_NEW_OMEGA = ITEMS.register("amazon_injector_new_omega",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","amazon_alpha","neo_amazons_driver_omega_belt",
@@ -156,7 +156,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 70, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_INJECTOR_NEO_ALPHA = ITEMS.register("amazon_injector_neo_alpha",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","amazon_neo_alpha","neo_amazons_driver_neo_belt",
@@ -171,7 +171,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().IsGlowing().AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
 
     public static final DeferredItem<Item> AMAZONSHELMET = ITEMS.register("amazonshead",
@@ -191,22 +191,22 @@ public class AmazonsRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_sigma",CONDORER_CORE_SIGMA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_OMEGA = ITEMS.register("neo_amazons_driver_omega",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_new_omega",AMAZON_INJECTOR_NEW_OMEGA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_new_omega",AMAZON_INJECTOR_NEW_OMEGA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_NEO = ITEMS.register("neo_amazons_driver_neo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo",AMAZON_INJECTOR_NEO ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo",AMAZON_INJECTOR_NEO ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_NEO_ALPHA = ITEMS.register("neo_amazons_driver_neo_alpha",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo_alpha",AMAZON_INJECTOR_NEO_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo_alpha",AMAZON_INJECTOR_NEO_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_BLADE = ITEMS.register("amazon_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
     public static final DeferredItem<Item> AMAZON_SCYTHE = ITEMS.register("amazon_scythe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
     public static final DeferredItem<Item> AMAZON_WHIP = ITEMS.register("amazon_whip",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
     public static final DeferredItem<Item> AMAZON_SPEAR = ITEMS.register("amazon_spear",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

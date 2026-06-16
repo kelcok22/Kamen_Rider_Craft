@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.summons;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -21,10 +21,10 @@ public class LovekovEntity extends BaseSummonEntity {
 	public LovekovEntity(EntityType<? extends LovekovEntity> type, Level level) {
 		super(type, level);
 		NAME="lovekov";
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Revice_Rider_Items.REVICE_HELMET.get()));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Revice_Rider_Items.REVICE_CHESTPLATE.get()));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Revice_Rider_Items.REVICE_LEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Revice_Rider_Items.LOVEKOV_BELT.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ReviceRiderItems.REVICE_HELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ReviceRiderItems.REVICE_CHESTPLATE.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ReviceRiderItems.REVICE_LEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ReviceRiderItems.LOVEKOV_BELT.get()));
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -51,9 +51,9 @@ public class LovekovEntity extends BaseSummonEntity {
 	public void aiStep() {
 		super.aiStep();
 
-		if (this.getOwner() instanceof Player owner && (!(owner.getItemBySlot(EquipmentSlot.FEET).getItem()==Revice_Rider_Items.LIBERA_DRIVER.get())
-		|| RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.KING_COBRA_VISTAMP.get()
-		|| (owner.isHolding(Revice_Rider_Items.LOVEKOV_KUJAKU.get()) || owner.isHolding(Revice_Rider_Items.LOVEKOV_TURTLE.get()) || owner.isHolding(Revice_Rider_Items.LOVEKOV_HASHIBIROKO.get()) || owner.isHolding(Revice_Rider_Items.LOVEKOV_TRICERA.get())))) {
+		if (this.getOwner() instanceof Player owner && (!(owner.getItemBySlot(EquipmentSlot.FEET).getItem()== ReviceRiderItems.LIBERA_DRIVER.get())
+		|| RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1) == ReviceRiderItems.KING_COBRA_VISTAMP.get()
+		|| (owner.isHolding(ReviceRiderItems.LOVEKOV_KUJAKU.get()) || owner.isHolding(ReviceRiderItems.LOVEKOV_TURTLE.get()) || owner.isHolding(ReviceRiderItems.LOVEKOV_HASHIBIROKO.get()) || owner.isHolding(ReviceRiderItems.LOVEKOV_TRICERA.get())))) {
 			owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.6f, 0.9f), 4f), this.getX(), this.getY()+0.5, this.getZ(), 0.0D, 0.0D, 0.0D);
 			owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.6f, 0.9f), 4f), this.getX(), this.getY()+1.0, this.getZ(), 0.0D, 0.0D, 0.0D);
 			owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.6f, 0.9f), 4f), this.getX(), this.getY()+1.5, this.getZ(), 0.0D, 0.0D, 0.0D);

@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.W_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -19,10 +19,10 @@ public class SmilodonDopantEntity extends BaseHenchmenEntity {
     public SmilodonDopantEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="smilodon_dopant";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(W_Rider_Items.WHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(W_Rider_Items.WCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(W_Rider_Items.WLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(W_Rider_Items.GAIA_DRIVER_SMILODON.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WRiderItems.WHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WRiderItems.WCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WRiderItems.WLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(WRiderItems.GAIA_DRIVER_SMILODON.get()));
     }
 
 

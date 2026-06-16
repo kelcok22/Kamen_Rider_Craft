@@ -10,8 +10,8 @@ public record CompleteSwingPayload(int hand) implements CustomPacketPayload {
     public static final CustomPacketPayload.Type<CompleteSwingPayload> TYPE = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "complete_swing"));
 
     public static final StreamCodec<ByteBuf, CompleteSwingPayload> STREAM_CODEC = StreamCodec.composite(
-        ByteBufCodecs.VAR_INT, CompleteSwingPayload::hand,
-        CompleteSwingPayload::new
+            ByteBufCodecs.VAR_INT, CompleteSwingPayload::hand,
+            CompleteSwingPayload::new
     );
 
     @Override

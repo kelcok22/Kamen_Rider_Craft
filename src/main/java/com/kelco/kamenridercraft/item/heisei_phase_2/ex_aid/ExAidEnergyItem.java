@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -43,7 +43,7 @@ public class ExAidEnergyItem extends BaseItem {
 		//&playerIn.getInventory().countItem(Ex_Aid_Rider_Items.ENERGY_ITEM_HOLDER.get())!=0
 		if (entity instanceof Player playerIn
 		&& !playerIn.hasEffect(EffectCore.BUGSTER)
-		&& playerIn.getInventory().countItem(Ex_Aid_Rider_Items.ENERGY_ITEM_HOLDER.get())==0) this.useEnergyItem(itemstack,world, playerIn);
+		&& playerIn.getInventory().countItem(ExAidRiderItems.ENERGY_ITEM_HOLDER.get())==0) this.useEnergyItem(itemstack,world, playerIn);
 	}
 
 	@Override

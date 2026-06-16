@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
@@ -25,15 +25,15 @@ public class GmRiderEntity extends BaseHenchmenEntity {
 
     public GmRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Geats_Rider_Items.GEATS_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Geats_Rider_Items.GEATS_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Geats_Rider_Items.GEATS_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GeatsRiderItems.GEATS_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GeatsRiderItems.GEATS_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GeatsRiderItems.GEATS_LEGGINGS.get()));
         if (this.random.nextInt(2) == 0) {
             NAME = "gm_rider";
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.DESIRE_DRIVER_GM.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GM.get()));
         } else {
             NAME = "gm_rider_chirami";
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.DESIRE_DRIVER_GM_CHIRAMI.get()));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GM_CHIRAMI.get()));
         }
     }
 
@@ -93,58 +93,58 @@ public class GmRiderEntity extends BaseHenchmenEntity {
 
         switch (p_34297_.getRandom().nextInt(16)) {
             case 0:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.MAGNUM_SHOOTER_40X.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.MAGNUM_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.MAGNUM_SHOOTER_40X.get()));
                 break;
             case 1:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_RAISE_BUCKLE.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_RAISE_BUCKLE.get(), 2);
                 break;
             case 2:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.ZOMBIE_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.ZOMBIE_BREAKER.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.ZOMBIE_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.ZOMBIE_BREAKER.get()));
                 break;
             case 3:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.NINJA_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.NINJA_DUELER_TWIN_BLADE_MODE.get()));
-                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Geats_Rider_Items.NINJA_DUELER_TWIN_BLADE_MODE2.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.NINJA_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.NINJA_DUELER_TWIN_BLADE_MODE.get()));
+                this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(GeatsRiderItems.NINJA_DUELER_TWIN_BLADE_MODE2.get()));
                 break;
             case 4:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.MONSTER_RAISE_BUCKLE.get(), 2);
                 break;
             case 5:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BEAT_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.BEAT_AXE.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BEAT_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.BEAT_AXE.get()));
                 break;
             case 6:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.ARROW_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_ARROW.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.ARROW_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_ARROW.get()));
                 break;
             case 7:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.WATER_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_WATER.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.WATER_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_WATER.get()));
                 break;
             case 8:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.HAMMER_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_HAMMER.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.HAMMER_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_HAMMER.get()));
                 break;
             case 9:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.SHIELD_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_SHIELD.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.SHIELD_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_SHIELD.get()));
                 break;
             case 10:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_CHAIN_ARRAY.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.CHAIN_ARRAY_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_CHAIN_ARRAY.get()));
                 break;
             case 11:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.CLAW_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_CLAW.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.CLAW_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_CLAW.get()));
                 break;
             case 12:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.DRILL_RAISE_BUCKLE.get(), 2);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.DRILL_RAISE_BUCKLE.get(), 2);
                 break;
             case 13:
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get(), 2);
-                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_PROPELLER.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.PROPELLER_RAISE_BUCKLE.get(), 2);
+                this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GeatsRiderItems.RAISE_PROPELLER.get()));
                 break;
         }
         return p_34300_;

@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class LibraRenderer extends GeoEntityRenderer<LibraEntity> {
 
 
-
-
-	public LibraRenderer(EntityRendererProvider.Context renderManager) {
+    public LibraRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new LibraModel());
     }
 

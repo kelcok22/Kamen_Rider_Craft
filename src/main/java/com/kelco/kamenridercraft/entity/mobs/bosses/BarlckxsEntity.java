@@ -2,14 +2,10 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Saber_Rider_Items;
-import com.kelco.kamenridercraft.item.showa.XRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -25,24 +21,24 @@ public class BarlckxsEntity extends BaseHenchmenEntity {
     public BarlckxsEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="barlckxs";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_BARLCKXS.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.BARLCKXS_SWORD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_BARLCKXS.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.BARLCKXS_SWORD.get()));
     }
 
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth() < 30 && playerIn.getInventory().countItem(Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()) >= 1) {
-            if (playerIn.getInventory().countItem(Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()) != 0) {
-                if (playerIn.getInventory().countItem(Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()) != 0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Zi_O_Rider_Items.BIO_RIDER_RIDEWATCH.get()) {
-                    if (playerIn.getInventory().getItem(40).getItem() == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get())
+        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth() < 30 && playerIn.getInventory().countItem(ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get()) >= 1) {
+            if (playerIn.getInventory().countItem(ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get()) != 0) {
+                if (playerIn.getInventory().countItem(ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get()) != 0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ZiORiderItems.BIO_RIDER_RIDEWATCH.get()) {
+                    if (playerIn.getInventory().getItem(40).getItem() == ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get())
                         playerIn.getInventory().removeItem(40, 1);
                     else
-                        playerIn.getInventory().removeItem(playerIn.getInventory().findSlotMatchingItem(new ItemStack(Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get())), 1);
-                    ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get(), 1), 0, 0, 0);
+                        playerIn.getInventory().removeItem(playerIn.getInventory().findSlotMatchingItem(new ItemStack(ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get())), 1);
+                    ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get(), 1), 0, 0, 0);
                     key.setPickUpDelay(0);
                     playerIn.level().addFreshEntity(key);
                     playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.ohma_zi_o_ridewatch"));
@@ -50,7 +46,7 @@ public class BarlckxsEntity extends BaseHenchmenEntity {
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.barlckxs_bio_rider"));
                     this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
                     this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-                    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.BIO_RIDER_RIDEWATCH.get(), 1);
+                    RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.BIO_RIDER_RIDEWATCH.get(), 1);
                     this.moveControl = new MoveControl(this);
                     this.setNoGravity(false);
                 }

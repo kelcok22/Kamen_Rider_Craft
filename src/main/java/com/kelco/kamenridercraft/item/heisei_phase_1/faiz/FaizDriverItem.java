@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -21,31 +21,31 @@ public class FaizDriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if((get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_MISSION_MEMORY.get()
-				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_AXEL_FORM.get()
-				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get()
-				||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_BLASTER_BLOODY_CANNONS.get())) {
-            if (num==1&&!rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get())) return "faiz_pointer";
-            else if (num==2&&!rider.isHolding(Faiz_Rider_Items.FAIZ_SHOT.get())) return "faiz_shot";
-			else if (num==3&&get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_AXEL_FORM.get()&&isTransformed(rider)) return "faiz_axel";
-        } else if(get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get()||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()) {
-			if (num==1&&!rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get())) return "faiz_pointer_g_b";
-			else if (num==2&&!rider.isHolding(Faiz_Rider_Items.FAIZ_SHOT.get())) return "faiz_shot_g_b";
+		if((getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_MISSION_MEMORY.get()
+				|| getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_AXEL_FORM.get()
+				|| getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_BLASTER_MISSION_MEMORY.get()
+				|| getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_BLASTER_BLOODY_CANNONS.get())) {
+            if (num==1&&!rider.isHolding(FaizRiderItems.FAIZ_PHONE_POINTER.get())) return "faiz_pointer";
+            else if (num==2&&!rider.isHolding(FaizRiderItems.FAIZ_SHOT.get())) return "faiz_shot";
+			else if (num==3&& getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_AXEL_FORM.get()&&isTransformed(rider)) return "faiz_axel";
+        } else if(getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get()|| getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()) {
+			if (num==1&&!rider.isHolding(FaizRiderItems.FAIZ_PHONE_POINTER.get())) return "faiz_pointer_g_b";
+			else if (num==2&&!rider.isHolding(FaizRiderItems.FAIZ_SHOT.get())) return "faiz_shot_g_b";
 		}
         return "blank";
     }
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 
-		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.FAIZ_DRIVER.get()) {
-			if((get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_MISSION_MEMORY.get()
-			||get_Form_Item(itemstack, 1)==Faiz_Rider_Items.FAIZ_AXEL_FORM.get())
-				&&((rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE.get())||(rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()))))) return "belts/faiz_driver_belt_b";
+		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.FAIZ_DRIVER.get()) {
+			if((getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_MISSION_MEMORY.get()
+			|| getFormItem(itemstack, 1)== FaizRiderItems.FAIZ_AXEL_FORM.get())
+				&&((rider.isHolding(FaizRiderItems.FAIZ_PHONE.get())||(rider.isHolding(FaizRiderItems.FAIZ_PHONE_POINTER.get()))))) return "belts/faiz_driver_belt_b";
 		}
-		return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+		return super.getText(itemstack, equipmentSlot, rider, riderName);
 
 	}
 

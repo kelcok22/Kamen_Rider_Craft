@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -26,7 +26,7 @@ public class RidevendorEntity extends baseBikeEntity {
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		ItemStack itemstack = player.getItemInHand(hand);
 		if (!level().isClientSide()) {
-			if (itemstack.getItem() == OOO_Rider_Items.TORA_CANDROID.get()) {
+			if (itemstack.getItem() == OOORiderItems.TORA_CANDROID.get()) {
 				if (this.level() instanceof ServerLevel) {
 					BlockPos pos = this.blockPosition();
 					baseBikeEntity boss = MobsCore.TORIDEVENDOR.get().create(this.level());

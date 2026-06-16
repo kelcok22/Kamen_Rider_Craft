@@ -8,7 +8,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.*;
 import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.world.level.levelgen.ModTreeGrowers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -1302,7 +1302,7 @@ public class Rider_Blocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        Modded_item_core.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModdedItemCore.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

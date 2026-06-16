@@ -10,7 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class KujakuCanRenderer extends GeoEntityRenderer<KujakuCanEntity> {
 
 
-	public KujakuCanRenderer(EntityRendererProvider.Context renderManager) {
+    public KujakuCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new KujakuCanModel());
     }
 

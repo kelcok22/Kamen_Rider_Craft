@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.*;
-
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
@@ -26,9 +25,11 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 import java.util.UUID;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
-import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.get_Form_Item;
-import static com.kelco.kamenridercraft.util.AnimationUtil.*;
-import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
+import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.ATTACK_LAYER_ID;
+import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.POSE_LAYER_ID;
+import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
+import static com.kelco.kamenridercraft.util.AnimationUtil.getAnimRiderName;
+import static com.kelco.kamenridercraft.util.AnimationUtil.oooComboCheck;
 
 public class ClientPayloadHandler {
 
@@ -49,19 +50,19 @@ public class ClientPayloadHandler {
     }
 
     public static void handleAttributeCLientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
-        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity){
-            if (entity instanceof Player&!context.player().getStringUUID().equals(data.id())||!(entity instanceof Player)) {
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
+            if (entity instanceof Player & !context.player().getStringUUID().equals(data.id()) || !(entity instanceof Player)) {
                 switch (data.attributeName()) {
-                    case "ball_rot" ->{
-                        entity.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue( entity.getAttribute(Attributes.BALL_ROT).getBaseValue());
+                    case "ball_rot" -> {
+                        entity.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.BALL_ROT).getBaseValue());
                         entity.getAttribute(Attributes.BALL_ROT).setBaseValue(data.valueChange());
                     }
-                    case "wheel_rot" ->{
-                        entity.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue( entity.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+                    case "wheel_rot" -> {
+                        entity.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
                         entity.getAttribute(Attributes.WHEEL_ROT).setBaseValue(data.valueChange());
                     }
-                    case "cape_rot" ->{
-                        entity.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue( entity.getAttribute(Attributes.CAPE_ROT).getBaseValue());
+                    case "cape_rot" -> {
+                        entity.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.CAPE_ROT).getBaseValue());
                         entity.getAttribute(Attributes.CAPE_ROT).setBaseValue(data.valueChange());
                     }
                     case "wing_out" -> entity.getAttribute(Attributes.WINGS_OUT).setBaseValue(data.valueChange());
@@ -89,7 +90,7 @@ public class ClientPayloadHandler {
 
         if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
 
-            RiderFormChangeItem formChangeItemOne = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
+            RiderFormChangeItem formChangeItemOne = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
 
             String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
             String riderName = getAnimRiderName(driverItem);
@@ -101,8 +102,8 @@ public class ClientPayloadHandler {
             }
 
             if (riderName.equals("ooo")) {
-                RiderFormChangeItem formChangeItemTwo = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 2);
-                RiderFormChangeItem formChangeItemThree = get_Form_Item(posingRider.getItemBySlot(EquipmentSlot.FEET), 3);
+                RiderFormChangeItem formChangeItemTwo = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 2);
+                RiderFormChangeItem formChangeItemThree = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 3);
                 String comboName = oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
 
                 if (comboName.equals("tajadol_eternity")) {
@@ -127,7 +128,7 @@ public class ClientPayloadHandler {
         }
         try {
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
             controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
             controller.triggerAnimation(animation);
@@ -136,25 +137,15 @@ public class ClientPayloadHandler {
         }
     }
 
-    public static void startKickAnimation(final StartKickPayload data, final IPayloadContext context) {
+    public static void startAttackAnim(final AttackAnimPayload data, final IPayloadContext context) {
         LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
         assert posingRider != null;
-        Animation animation = switch (data.move()) {
-            case "air_start" ->
-                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.air_start_kick"));
-            case "floor_start" ->
-                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.floor_start_kick"));
-            case "kick" ->
-                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.kick"));
-            case "land" ->
-                    PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.land"));
-            default -> PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
-        };
+        Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.move()));
         try {
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
 
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(3, EasingType.EASE_IN_ELASTIC));
             controller.triggerAnimation(animation);
         } catch (Exception e) {
             e.printStackTrace();
@@ -163,10 +154,20 @@ public class ClientPayloadHandler {
 
     public static void endPoseAnimations(final EndPosePayload data, final IPayloadContext context) {
         try {
-            assert Minecraft.getInstance().level != null;
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-            assert animationTarget != null;
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
+            if (controller != null && controller.isPlayingTriggeredAnimation()) {
+                controller.stopTriggeredAnimation();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void endAttackAnimations(final EndAttackAnimationPayload data, final IPayloadContext context) {
+        try {
+            AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
             if (controller != null && controller.isPlayingTriggeredAnimation()) {
                 controller.stopTriggeredAnimation();
             }

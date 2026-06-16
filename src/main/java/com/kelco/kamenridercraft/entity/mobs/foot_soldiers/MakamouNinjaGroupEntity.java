@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.MakamouNinjaGroupVariant;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
@@ -32,7 +32,7 @@ public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
     public MakamouNinjaGroupEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "byakko";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Hibiki_Rider_Items.MAKAMOU_NINJA_SICKLE.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(HibikiRiderItems.MAKAMOU_NINJA_SICKLE.get()));
     }
 
     @Override

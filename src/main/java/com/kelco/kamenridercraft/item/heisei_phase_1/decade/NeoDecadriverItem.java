@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.decade;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -23,7 +23,7 @@ public class NeoDecadriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-			if (num==1&&!rider.isHolding(Decade_Rider_Items.RIDE_BOOKER.get())) return "decadriver_belt_rb";
+			if (num==1&&!rider.isHolding(DecadeRiderItems.RIDE_BOOKER.get())) return "decadriver_belt_rb";
         return "blank";
 
     }
@@ -31,13 +31,13 @@ public class NeoDecadriverItem extends RiderDriverItem {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/decade_belt.geo.json");
     }
     @Override
-    public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
     {
-        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Decade_Rider_Items.NEO_DECADRIVER.get()) {
-            if((get_Form_Item(itemstack, 1)==Decade_Rider_Items.K_TOUCH_21.get()
-                    &&((rider.isHolding(Decade_Rider_Items.K_TOUCH_21.get()))))) return "belts/decadriver_belt_k_touch_21_empty";
+        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== DecadeRiderItems.NEO_DECADRIVER.get()) {
+            if((getFormItem(itemstack, 1)== DecadeRiderItems.K_TOUCH_21.get()
+                    &&((rider.isHolding(DecadeRiderItems.K_TOUCH_21.get()))))) return "belts/decadriver_belt_k_touch_21_empty";
         }
-        return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+        return super.getText(itemstack, equipmentSlot, rider, riderName);
     }
 }
 

@@ -20,7 +20,7 @@ public class BaseAnimalArmorItem extends AnimalArmorItem {
 
     public ResourceLocation getTexture() {return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/entity/horse/armor/"+Name+".png");}
 
-    public BaseAnimalArmorItem AddToList(List<Item> TabList) {
+    public BaseAnimalArmorItem addToList(List<Item> TabList) {
         TabList.add(this);
         return this;
     }

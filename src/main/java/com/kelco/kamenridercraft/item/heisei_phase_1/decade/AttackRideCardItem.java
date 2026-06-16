@@ -6,7 +6,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -105,15 +105,15 @@ public class AttackRideCardItem extends BaseItem {
 							illusion.setItemSlot(EquipmentSlot.CHEST, player.getItemBySlot(EquipmentSlot.CHEST));
 							illusion.setItemSlot(EquipmentSlot.LEGS, player.getItemBySlot(EquipmentSlot.LEGS));
 							illusion.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
-							if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get()) {
+							if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == DecadeRiderItems.DIEND_BELT.get()) {
 								illusion.NAME = "diend_illusion";
-								illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.DIENDRIVER.get()));
+								illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.DIENDRIVER.get()));
 							} else {
 								illusion.NAME = "decade_illusion";
 								illusion.setMeleeOnSpawn(100.0D);
-								illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.RIDE_BOOKER.get()));
+								illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.RIDE_BOOKER.get()));
 							}
-							RiderDriverItem.set_Form_Item(illusion.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+							RiderDriverItem.setFormItem(illusion.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
 							
 							level.addFreshEntity(illusion);
 							illusion.bindToPlayer(player);
@@ -161,19 +161,19 @@ public class AttackRideCardItem extends BaseItem {
 					level.playSound(null, new BlockPos((int) player.getX(), (int) player.getY(), (int) player.getZ()), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, 1.0F, (level.getRandom().nextFloat() - level.getRandom().nextFloat()) * 0.2F + 1.0F);
 					break;
 				case "ore_sanjou":
-					Decade_Rider_Items.DEN_O_SWORD_CARD.get().use(level, player, player.getUsedItemHand());
+					DecadeRiderItems.DEN_O_SWORD_CARD.get().use(level, player, player.getUsedItemHand());
 					player.sendSystemMessage(Component.translatable("attack.kamenridercraft.ore_sanjou"));
 					break;
 				case "bokuni_tsurarete_miru":
-					Decade_Rider_Items.DEN_O_ROD_CARD.get().use(level, player, player.getUsedItemHand());
+					DecadeRiderItems.DEN_O_ROD_CARD.get().use(level, player, player.getUsedItemHand());
 					player.sendSystemMessage(Component.translatable("attack.kamenridercraft.bokuni_tsurarete_miru"));
 					break;
 				case "nakerude":
-					Decade_Rider_Items.DEN_O_AX_CARD.get().use(level, player, player.getUsedItemHand());
+					DecadeRiderItems.DEN_O_AX_CARD.get().use(level, player, player.getUsedItemHand());
 					player.sendSystemMessage(Component.translatable("attack.kamenridercraft.nakerude"));
 					break;
 				case "kotaewa_kiite_nai":
-					Decade_Rider_Items.DEN_O_GUN_CARD.get().use(level, player, player.getUsedItemHand());
+					DecadeRiderItems.DEN_O_GUN_CARD.get().use(level, player, player.getUsedItemHand());
 					player.sendSystemMessage(Component.translatable("attack.kamenridercraft.kotaewa_kiite_nai"));
 					break;
 				case "rekka_daizantou":
@@ -199,8 +199,8 @@ public class AttackRideCardItem extends BaseItem {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 		
 		if (!p_41128_.isClientSide() && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(p_41129_)){
-			if ((belt == Decade_Rider_Items.DECADRIVER.get() || belt == Decade_Rider_Items.NEO_DECADRIVER.get() || belt == Decade_Rider_Items.DARK_DECADRIVER.get())
-				&& ArrayUtils.contains(FORMS, belt.GET_TEXT(p_41129_.getItemBySlot(EquipmentSlot.FEET), null, p_41129_, belt.Rider))) {
+			if ((belt == DecadeRiderItems.DECADRIVER.get() || belt == DecadeRiderItems.NEO_DECADRIVER.get() || belt == DecadeRiderItems.DARK_DECADRIVER.get())
+				&& ArrayUtils.contains(FORMS, belt.getText(p_41129_.getItemBySlot(EquipmentSlot.FEET), null, p_41129_, belt.Rider))) {
 				attackride(p_41128_, p_41129_);
 
 				if (!p_41129_.isCreative()) {

@@ -50,7 +50,7 @@ public class LegendSummonCardItem extends BaseItem {
 			summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
             if (!summonWeapons.isEmpty()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0)));
             if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1)));
-            if (summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+            if (summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
 
 			level.addFreshEntity(summon);
 			summon.bindToPlayer(player);

@@ -24,7 +24,7 @@ public class DarkAuraEffect extends InstantenousMobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity.level() instanceof ServerLevel serverLevel && livingEntity instanceof Player player) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && livingEntity instanceof Player player && !(player.isCreative() || player.isSpectator())) {
 
             List<LivingEntity> nearbyEnemies = serverLevel.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(10), entity ->
                     (entity instanceof Player && entity != player)

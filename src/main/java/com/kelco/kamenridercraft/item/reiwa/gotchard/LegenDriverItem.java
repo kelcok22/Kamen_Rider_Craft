@@ -3,8 +3,8 @@ package com.kelco.kamenridercraft.item.reiwa.gotchard;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
@@ -28,17 +28,17 @@ public class LegenDriverItem extends RiderDriverItem {
 	}
 
 	@Override
-	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (get_Form_Item(itemstack, 1) == Gotchard_Rider_Items.ARMED_HIBIKI_RIDE_CHEMY_CARD.get()) {
-			if ((rider instanceof Player || rider instanceof Mob) && rider.getMainArm() == HumanoidArm.LEFT) {
-				if (num == 1 && rider.getMainHandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+	public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName , int num) {
+		if (getFormItem(itemstack, 1) == GotchardRiderItems.ARMED_HIBIKI_RIDE_CHEMY_CARD.get()) {
+			if ((livingEntity instanceof Player || livingEntity instanceof Mob) && livingEntity.getMainArm() == HumanoidArm.LEFT) {
+				if (num == 1 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
 					return "ongekibo_rekka_l";
-				else if (num == 2 && rider.getOffhandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+				else if (num == 2 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
 					return "ongekibo_rekka_r";
 			} else {
-				if (num == 1 && rider.getOffhandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+				if (num == 1 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
 					return "ongekibo_rekka_l";
-				else if (num == 2 && rider.getMainHandItem().getItem() != Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+				else if (num == 2 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
 					return "ongekibo_rekka_r";
 			}
 		}
@@ -46,7 +46,7 @@ public class LegenDriverItem extends RiderDriverItem {
 	}
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
 		String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
 
@@ -54,18 +54,18 @@ public class LegenDriverItem extends RiderDriverItem {
 
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
-				belt = get_Form_Item(itemstack,1).getBeltTex();
+				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 			return "belts/"+belt;
 		}
 		else if (equipmentSlot == EquipmentSlot.CHEST) {
-			if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGEND_RIDE_CHEMY_CARD.get()) return "blank";
-			else if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGENDARY_LEGEND_RIDE_CHEMY_CARD.get()||get_Form_Item(itemstack,1)==Gotchard_Rider_Items.RYUKI_SURVIVE_RIDE_CHEMY_CARD.get()) return "blank";
-			else if (Objects.equals(get_Form_Item(itemstack, 1).getBeltTex(), "legendriver_belt_l")) return "legend_ride_final";
+			if (getFormItem(itemstack,1)== GotchardRiderItems.LEGEND_RIDE_CHEMY_CARD.get()) return "blank";
+			else if (getFormItem(itemstack,1)== GotchardRiderItems.LEGENDARY_LEGEND_RIDE_CHEMY_CARD.get()|| getFormItem(itemstack,1)== GotchardRiderItems.RYUKI_SURVIVE_RIDE_CHEMY_CARD.get()) return "blank";
+			else if (Objects.equals(getFormItem(itemstack, 1).getBeltTex(), "legendriver_belt_l")) return "legend_ride_final";
 			else return "legend_ride";
 		}
 
-		else return get_Form_Item(itemstack,1).getRiderName(riderName)+get_Form_Item(itemstack,1).getFormName(fly);
+		else return getFormItem(itemstack,1).getRiderName(riderName)+ getFormItem(itemstack,1).getFormName(fly);
 	}
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
@@ -76,7 +76,7 @@ public class LegenDriverItem extends RiderDriverItem {
         if (Objects.requireNonNull(slot) == EquipmentSlot.CHEST) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/legend_ride.geo.json");
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + get_Form_Item(itemstack, 1).get_Model(this.Rider));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.Rider));
     }
 
 

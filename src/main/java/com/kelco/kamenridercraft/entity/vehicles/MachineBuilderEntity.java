@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -12,7 +12,7 @@ public class MachineBuilderEntity extends baseBikeEntity {
 
 
 	public MachineBuilderEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, Build_Rider_Items.BUILD_PHONE.get());
+		super(entityType, level, BuildRiderItems.BUILD_PHONE.get());
 		NAME ="machine_builder";
 		NAME_MODEL ="machine_builder";
 		}

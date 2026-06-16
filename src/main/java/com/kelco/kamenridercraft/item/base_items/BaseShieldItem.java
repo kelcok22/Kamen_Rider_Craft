@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShieldItem;
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class BaseShieldItem extends ShieldItem {
 
-	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+	private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 	
 	public BaseShieldItem(Properties prop) {
 		super(prop.durability(336));

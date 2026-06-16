@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class BattaCanRenderer extends GeoEntityRenderer<BattaCanEntity> {
 
 
-
-
-	public BattaCanRenderer(EntityRendererProvider.Context renderManager) {
+    public BattaCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new BattaCanModel());
     }
 

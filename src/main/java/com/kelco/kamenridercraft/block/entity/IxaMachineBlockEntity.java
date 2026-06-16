@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.entity;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Kiva_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipe;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipeInput;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
@@ -159,18 +159,18 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     private void craftItem() {
         ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
         ItemStack modifier = itemHandler.getStackInSlot(MODIFIER_SLOT);
-        ItemStack output = new ItemStack(Kiva_Rider_Items.FAKE_FUESTLE.get(), 1);
+        ItemStack output = new ItemStack(KivaRiderItems.FAKE_FUESTLE.get(), 1);
         int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
 
-        if (material.getItem() == Kiva_Rider_Items.FAKE_FUESTLE.get()) {
+        if (material.getItem() == KivaRiderItems.FAKE_FUESTLE.get()) {
             output = switch (modifier.getItem().toString()) {
-                case "kamenridercraft:doggafuestle" -> new ItemStack(Kiva_Rider_Items.FAKE_DOGGA_FUESTLE.get(), 1);
-                case "kamenridercraft:basshaafuestle" -> new ItemStack(Kiva_Rider_Items.FAKE_BASSHAA_FUESTLE.get(), 1);
-                case "kamenridercraft:garulufuestle" -> new ItemStack(Kiva_Rider_Items.FAKE_GARULU_FUESTLE.get(), 1);
+                case "kamenridercraft:doggafuestle" -> new ItemStack(KivaRiderItems.FAKE_DOGGA_FUESTLE.get(), 1);
+                case "kamenridercraft:basshaafuestle" -> new ItemStack(KivaRiderItems.FAKE_BASSHAA_FUESTLE.get(), 1);
+                case "kamenridercraft:garulufuestle" -> new ItemStack(KivaRiderItems.FAKE_GARULU_FUESTLE.get(), 1);
                 default -> switch (new Random().nextInt(3)) {
-                    case 0 -> new ItemStack(Kiva_Rider_Items.KNUCKLE_FUESTLE.get(), 1);
-                    case 1 -> new ItemStack(Kiva_Rider_Items.CALIBUR_FUESTLE.get(), 1);
-                    case 2 -> new ItemStack(Kiva_Rider_Items.RISER_FUESTLE.get(), 1);
+                    case 0 -> new ItemStack(KivaRiderItems.KNUCKLE_FUESTLE.get(), 1);
+                    case 1 -> new ItemStack(KivaRiderItems.CALIBUR_FUESTLE.get(), 1);
+                    case 2 -> new ItemStack(KivaRiderItems.RISER_FUESTLE.get(), 1);
                     default -> output;
                 };
             };
@@ -204,11 +204,11 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     private boolean hasRecipe() {
         ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
         ItemStack modifier = itemHandler.getStackInSlot(MODIFIER_SLOT);
-        if (material.getItem() == Kiva_Rider_Items.FUESTLE.get() && modifier.isEmpty()) {
+        if (material.getItem() == KivaRiderItems.FUESTLE.get() && modifier.isEmpty()) {
             return true;
         }
-        if (material.getItem() == Kiva_Rider_Items.FAKE_FUESTLE.get()) {
-            if (modifier.isEmpty() || modifier.getItem() == Kiva_Rider_Items.GARULU_FUESTLE.get() || modifier.getItem() == Kiva_Rider_Items.BASSHAA_FUESTLE.get() || modifier.getItem() == Kiva_Rider_Items.DOGGA_FUESTLE.get()) {
+        if (material.getItem() == KivaRiderItems.FAKE_FUESTLE.get()) {
+            if (modifier.isEmpty() || modifier.getItem() == KivaRiderItems.GARULU_FUESTLE.get() || modifier.getItem() == KivaRiderItems.BASSHAA_FUESTLE.get() || modifier.getItem() == KivaRiderItems.DOGGA_FUESTLE.get()) {
                 return true;
             }
             ;

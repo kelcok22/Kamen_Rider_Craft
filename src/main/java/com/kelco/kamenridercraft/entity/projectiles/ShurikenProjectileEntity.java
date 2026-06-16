@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.projectiles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,7 +27,7 @@ public class ShurikenProjectileEntity extends ThrowableItemProjectile{
 
 	@Override
 	protected Item getDefaultItem() {
-		return Gaim_Rider_Items.ICHIGO_KUNAI.get();
+		return GaimRiderItems.ICHIGO_KUNAI.get();
 	}
 	
 	protected void onHitEntity(EntityHitResult p_37404_) {

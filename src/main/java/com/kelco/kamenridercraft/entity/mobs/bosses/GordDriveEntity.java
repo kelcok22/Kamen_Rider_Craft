@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Drive_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -35,10 +35,10 @@ public class GordDriveEntity extends BaseHenchmenEntity {
     public GordDriveEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="gold_drive";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Drive_Rider_Items.DRIVE_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Drive_Rider_Items.DRIVE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DriveRiderItems.DRIVE_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DriveRiderItems.DRIVE_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DriveRiderItems.DRIVE_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(DriveRiderItems.BANNO_DRIVER_GORD_DRIVE.get()));
     }
     protected void customServerAiStep() {
         super.customServerAiStep();
@@ -90,7 +90,7 @@ public class GordDriveEntity extends BaseHenchmenEntity {
                 this.getTarget().setItemSlot(EquipmentSlot.OFFHAND, ItemStack.EMPTY);
             }
         } else if (this.getHealth()<130) {
-            if(getItemBySlot(EquipmentSlot.FEET).getItem()==Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()){
+            if(getItemBySlot(EquipmentSlot.FEET).getItem()== DriveRiderItems.BANNO_DRIVER_GORD_DRIVE.get()){
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 
                 Random generator = new Random();

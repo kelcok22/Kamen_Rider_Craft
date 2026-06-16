@@ -1,7 +1,9 @@
 package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -11,21 +13,19 @@ import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*
 
 public class AnimationUtil {
     public static boolean canPose (LivingEntity poser) {
-        if (!poser.getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") && !poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving()  && poser.onGround()
-        && !poser.isCrouching() && !poser.onClimbable() && poser.getData(POSE_COOLDOWN) <= 0  &&
-                !poser.getData(USING_ABILITY)) {
-            return true;
-        }
-        return false;
+        return !poser.getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") && !poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving() && poser.onGround()
+                && !poser.isCrouching() && !poser.onClimbable() && poser.getData(POSE_COOLDOWN) <= 0 &&
+                poser.getData(USED_ABILITY).isEmpty();
     }
 
     public static void stopPosing(LivingEntity poser) {
         if (poser.level() instanceof ServerLevel) {
             poser.setData(IS_POSING, false);
             poser.setData(POSE_COOLDOWN, 20);
-            PacketDistributor.sendToAllPlayers(new EndPosePayload(0, poser.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new EndPosePayload(poser.getStringUUID()));
         }
     }
+
 
     public static String getAnimRiderName(RiderDriverItem driverItem) {
         String riderName = driverItem.Rider.toLowerCase();

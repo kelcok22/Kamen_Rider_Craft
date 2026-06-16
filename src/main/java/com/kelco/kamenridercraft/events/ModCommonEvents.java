@@ -14,7 +14,7 @@ import com.kelco.kamenridercraft.entity.mobs.allies.AnkhEntity;
 import com.kelco.kamenridercraft.entity.mobs.bosses.ShadowmoonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.villager.RiderVillagers;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
@@ -24,17 +24,15 @@ import com.kelco.kamenridercraft.item.extra_riders.GRiderItems;
 import com.kelco.kamenridercraft.item.extra_riders.RideKamensItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCardItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Gaim_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ghost_Rider_Items;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.item.reiwa.*;
 import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
-import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
-import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
-import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
+import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -53,6 +51,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
@@ -97,6 +96,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.USED_ABILITY;
+
 
 public class ModCommonEvents {
 
@@ -128,7 +129,7 @@ public class ModCommonEvents {
             if (event.getState() == Blocks.GLASS.defaultBlockState()) {
                 if (event.getBreaker() instanceof Player player) {
                     Inventory inventory = player.getInventory();
-                    boolean hasSURVIVE = inventory.countItem(Ryuki_Rider_Items.BLANK_DECK.get()) != 0;
+                    boolean hasSURVIVE = inventory.countItem(RyukiRiderItems.BLANK_DECK.get()) != 0;
                     if (hasSURVIVE) {
                         player.addEffect(new MobEffectInstance(EffectCore.MIRROR_NOISES, 300, 0, false, true));
                     }
@@ -139,13 +140,15 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void clientTick(ClientTickEvent.Post event) {
             if (Minecraft.getInstance().player != null) {
-                while (KeyBindings.INSTANCE.BeltKey.consumeClick())
+                if (KeyBindings.INSTANCE.BeltKey.consumeClick())
                     PacketDistributor.sendToServer(new BeltKeyPayload(0));
-                while (KeyBindings.INSTANCE.AbilityKey.consumeClick())
-                    PacketDistributor.sendToServer(new AbilityKeyPayload(0));
-                while (KeyBindings.INSTANCE.PoseKey.consumeClick())
+                if (KeyBindings.INSTANCE.PrimaryAbilityKey.consumeClick()) {
+                    PacketDistributor.sendToServer(new PrimaryAbilityKeyPayload(0));
+                } else if (KeyBindings.INSTANCE.SecondaryAbilityKey.consumeClick()) {
+                    PacketDistributor.sendToServer(new SecondaryAbilityKeyPayload(0));
+                }
+                if (KeyBindings.INSTANCE.PoseKey.consumeClick())
                     PacketDistributor.sendToServer(new PoseKeyPayload(0));
-
             }
         }
 
@@ -153,7 +156,7 @@ public class ModCommonEvents {
         public void onPlayerTick(PlayerTickEvent.Post event) {
 
             if (event.getEntity().getAttribute(Attributes.TOJIMA).getValue() > 99 & event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem())
-                event.getEntity().addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 30, 0, false, false));
+                event.getEntity().addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 30, 3, false, false));
 
 
             ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
@@ -208,7 +211,7 @@ public class ModCommonEvents {
 
                         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
-                            if (belt.HasCpae(player.getItemBySlot(EquipmentSlot.FEET))) {
+                            if (belt.hasCape(player.getItemBySlot(EquipmentSlot.FEET))) {
 
                                 float cape = (float) player.getAttribute(Attributes.CAPE_ROT).getBaseValue();
                                 float ball = 0;
@@ -234,7 +237,7 @@ public class ModCommonEvents {
                                 player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
                                 player.getAttribute(Attributes.CAPE_ROT).setBaseValue(cape);
                             }
-                            if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).get_is_Bike()) {
+                            if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).getIsBike()) {
                                 float wheel = 0;
                                 if (Z > 0) wheel = -0.1f;
                                 if (Z < 0) wheel = 0.1f;
@@ -275,47 +278,47 @@ public class ModCommonEvents {
             ResourceKey<Level> SUPER_SENTAI_TOPIA = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("supersentaicraft:super_sentai_topia"));
             ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 
-            int legend_rand = generator.nextInt(Gavv_Rider_Items.LEGEND.size());
-            int sentai_rand = generator.nextInt(Gavv_Rider_Items.SENTAI.size());
-            if (level.dimension() == CITY) return Gavv_Rider_Items.LEGEND.get(legend_rand);
-            else if (level.dimension() == SUPER_SENTAI_TOPIA) return Gavv_Rider_Items.SENTAI.get(sentai_rand);
+            int legend_rand = generator.nextInt(GavvRiderItems.LEGEND.size());
+            int sentai_rand = generator.nextInt(GavvRiderItems.SENTAI.size());
+            if (level.dimension() == CITY) return GavvRiderItems.LEGEND.get(legend_rand);
+            else if (level.dimension() == SUPER_SENTAI_TOPIA) return GavvRiderItems.SENTAI.get(sentai_rand);
             else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/gummy_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.GUMMY.size());
-                return Gavv_Rider_Items.GUMMY.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.GUMMY.size());
+                return GavvRiderItems.GUMMY.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/marshmallow_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.MARSHMALLOW.size());
-                return Gavv_Rider_Items.MARSHMALLOW.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.MARSHMALLOW.size());
+                return GavvRiderItems.MARSHMALLOW.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/snack_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.SNACK.size());
-                return Gavv_Rider_Items.SNACK.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.SNACK.size());
+                return GavvRiderItems.SNACK.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/chocolate_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.CHOCO.size());
-                return Gavv_Rider_Items.CHOCO.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.CHOCO.size());
+                return GavvRiderItems.CHOCO.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cookie_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.COOKIE.size());
-                return Gavv_Rider_Items.COOKIE.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.COOKIE.size());
+                return GavvRiderItems.COOKIE.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/doughnut_gochizo")))) {
-                return Gavv_Rider_Items.DOUMARU_GOCHIZO.get();
+                return GavvRiderItems.DOUMARU_GOCHIZO.get();
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/tarakomentaiko_gochizo")))) {
-                return Gavv_Rider_Items.TARAKOMENTAIKO_GOCHIZO.get();
+                return GavvRiderItems.TARAKOMENTAIKO_GOCHIZO.get();
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/candy_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.CANDY.size());
-                return Gavv_Rider_Items.CANDY.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.CANDY.size());
+                return GavvRiderItems.CANDY.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.CAKE.size());
-                return Gavv_Rider_Items.CAKE.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.CAKE.size());
+                return GavvRiderItems.CAKE.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pancake_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.PANCAKE.size());
-                return Gavv_Rider_Items.PANCAKE.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.PANCAKE.size());
+                return GavvRiderItems.PANCAKE.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/mochi_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.MOCHI.size());
-                return Gavv_Rider_Items.MOCHI.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.MOCHI.size());
+                return GavvRiderItems.MOCHI.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pudding_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.PUDDING.size());
-                return Gavv_Rider_Items.PUDDING.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.PUDDING.size());
+                return GavvRiderItems.PUDDING.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/corn_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.CORN.size());
-                return Gavv_Rider_Items.CORN.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.CORN.size());
+                return GavvRiderItems.CORN.get(rand);
             }
             return Items.APPLE;
         }
@@ -339,16 +342,16 @@ public class ModCommonEvents {
         private Item getCupGochizoDrop(ItemStack itemstack) {
             Random generator = new Random();
             if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/frappeis_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.COFFEE.size());
-                return Gavv_Rider_Items.COFFEE.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.COFFEE.size());
+                return GavvRiderItems.COFFEE.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/ala_mode_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.ALA_MODE.size());
-                return Gavv_Rider_Items.ALA_MODE.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.ALA_MODE.size());
+                return GavvRiderItems.ALA_MODE.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/sorbei_gochizo")))) {
-                int rand = generator.nextInt(Gavv_Rider_Items.ICE_CREAM.size());
-                return Gavv_Rider_Items.ICE_CREAM.get(rand);
+                int rand = generator.nextInt(GavvRiderItems.ICE_CREAM.size());
+                return GavvRiderItems.ICE_CREAM.get(rand);
             } else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))) {
-                return Gavv_Rider_Items.UEHOUSE_GOCHIZO.asItem();
+                return GavvRiderItems.UEHOUSE_GOCHIZO.asItem();
             }
             return Items.APPLE;
         }
@@ -361,27 +364,27 @@ public class ModCommonEvents {
 
             if (event.getEntity() instanceof Player player) {
 
-                if (event.getItem().getItem() == Gaim_Rider_Items.HELHEIM_FRUIT.asItem() & player.getInventory().countItem(Gaim_Rider_Items.GURONBARYAMU.get()) > 0 & player.getItemBySlot(EquipmentSlot.FEET).getItem() == Gaim_Rider_Items.SENGOKU_DRIVER_BARON.asItem()) {
-                    RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) Gaim_Rider_Items.LORD_BARON.get();
+                if (event.getItem().getItem() == GaimRiderItems.HELHEIM_FRUIT.asItem() & player.getInventory().countItem(GaimRiderItems.GURONBARYAMU.get()) > 0 & player.getItemBySlot(EquipmentSlot.FEET).getItem() == GaimRiderItems.SENGOKU_DRIVER_BARON.asItem()) {
+                    RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) GaimRiderItems.LORD_BARON.get();
                     alternativeItem_form_change.use(event.getEntity().level(), player, InteractionHand.MAIN_HAND);
                 }
 
-                if (GOCHIZO != Items.APPLE & player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
+                if (GOCHIZO != Items.APPLE & player.getInventory().countItem(GavvRiderItems.BLANK_GOCHIZO.get()) > 0) {
 
-                    if (player.getInventory().getItem(40).getItem() == Gavv_Rider_Items.BLANK_GOCHIZO.get()) {
+                    if (player.getInventory().getItem(40).getItem() == GavvRiderItems.BLANK_GOCHIZO.get()) {
                         player.getInventory().removeItem(40, 1);
                     } else
-                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
+                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GavvRiderItems.BLANK_GOCHIZO.get())), 1);
 
                     player.drop(new ItemStack(GOCHIZO), false);
 
                 }
-                if (CUP_GOCHIZO != Items.APPLE & player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
+                if (CUP_GOCHIZO != Items.APPLE & player.getInventory().countItem(GavvRiderItems.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
 
-                    if (player.getInventory().getItem(40).getItem() == Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) {
+                    if (player.getInventory().getItem(40).getItem() == GavvRiderItems.PROTOTYPE_CUP_GOCHIZO.get()) {
                         player.getInventory().removeItem(40, 1);
                     } else
-                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get())), 1);
+                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GavvRiderItems.PROTOTYPE_CUP_GOCHIZO.get())), 1);
 
                     player.drop(new ItemStack(CUP_GOCHIZO), false);
                 }
@@ -396,13 +399,13 @@ public class ModCommonEvents {
                 Player player = event.getEntity();
 
                 if (state.is(BlockTags.create(ResourceLocation.parse("kamenridercraft:fd_cakes_for_gochizo"))) && !event.getItemStack().is(ItemTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", "tools/knives")))
-                        && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
-                    if (player.getInventory().getItem(40).getItem() == Gavv_Rider_Items.BLANK_GOCHIZO.get())
+                        && player.canEat(false) && player.getInventory().countItem(GavvRiderItems.BLANK_GOCHIZO.get()) > 0) {
+                    if (player.getInventory().getItem(40).getItem() == GavvRiderItems.BLANK_GOCHIZO.get())
                         player.getInventory().removeItem(40, 1);
                     else
-                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
+                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GavvRiderItems.BLANK_GOCHIZO.get())), 1);
 
-                    player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
+                    player.drop(new ItemStack(GavvRiderItems.CAKE.get(new Random().nextInt(GavvRiderItems.CAKE.size()))), false);
                 }
             }
         }
@@ -419,7 +422,7 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void addLivingDamageEvent(ItemStackedOnOtherEvent event) {
-            if (event.getCarriedItem().is(Gavv_Rider_Items.GOCHIPOD_EMPTY)) {
+            if (event.getCarriedItem().is(GavvRiderItems.GOCHIPOD_EMPTY)) {
 
                 ItemStack stack = event.getCarriedItem();
                 ItemStack other = event.getStackedOnItem();
@@ -455,16 +458,29 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void addLivingDamageEvent(LivingDamageEvent.Post event) {
-            if (event.getSource().getEntity() instanceof LivingEntity attacker && attacker.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && attacker.getAttribute(Attributes.ABILITY_METER).getBaseValue() < 300) {
-                attacker.getAttribute(Attributes.ABILITY_METER).setBaseValue(attacker.getAttribute(Attributes.ABILITY_METER).getBaseValue() + 1);
+            Entity sourceEntity = event.getSource().getEntity();
+            if (sourceEntity instanceof LivingEntity livingEntity) {
+                AttributeInstance abilityMeter = livingEntity.getAttribute(Attributes.ABILITY_METER);
+                AttributeInstance maxAbilityMeter = livingEntity.getAttribute(Attributes.MAX_ABILITY_METER);
+                if (livingEntity.getData(USED_ABILITY).isEmpty() && !(event.getSource().is(DamageTypes.ARROW) || event.getSource().is(DamageTypes.MOB_PROJECTILE) || event.getSource().is(DamageTypes.FIREBALL)) && abilityMeter.getValue() < maxAbilityMeter.getValue()) {
+                    if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && driverItem.isTransformed(livingEntity)) {
+                        abilityMeter.setBaseValue(abilityMeter.getValue() + 1 * driverItem.abilityMultiplier);
+                    } else {
+                        abilityMeter.setBaseValue(abilityMeter.getValue() + 1);
+                    }
+                    if (abilityMeter.getValue() > maxAbilityMeter.getValue()) {
+                        abilityMeter.setBaseValue(maxAbilityMeter.getValue());
+                    }
+                }
             }
-            if (event.getEntity() instanceof Player player && player.getInventory().countItem(Zeztz_Rider_Items.VOID_CAPSEM.get()) != 0 && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)) {
-                if (player.getOffhandItem().is(Zeztz_Rider_Items.VOID_CAPSEM.get())) {
+
+            if (event.getEntity() instanceof Player player && player.getInventory().countItem(ZeztzRiderItems.VOID_CAPSEM.get()) != 0 && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)) {
+                if (player.getOffhandItem().is(ZeztzRiderItems.VOID_CAPSEM.get())) {
                     player.getOffhandItem().shrink(1);
                 } else {
-                    player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zeztz_Rider_Items.VOID_CAPSEM.get())), 1);
+                    player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(ZeztzRiderItems.VOID_CAPSEM.get())), 1);
                 }
-                player.getInventory().add(new ItemStack(Zeztz_Rider_Items.PLASMA_CAPSEM.get()));
+                player.getInventory().add(new ItemStack(ZeztzRiderItems.PLASMA_CAPSEM.get()));
             }
 
             if (event.getSource().getEntity() instanceof LivingEntity _livEnt) {
@@ -477,7 +493,17 @@ public class ModCommonEvents {
                                 event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
                                 event.getEntity().getZ() + 0.5, 1, 0, 0, 0, 3);
                     }
-                    if (_livEnt.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && RiderDriverItem.get_Form_Item(_livEnt.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/gochizo/puchingummy")))) {
+
+                    if (event.getEntity().hasEffect(EffectCore.MUTEKI)) {
+                        ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.MISS_PARTICLES.get(),
+                                event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+                                event.getEntity().getZ() + 0.5, 1, 0, 0, 0, 3);
+                        ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                event.getEntity().getX(), event.getEntity().getY() + 1,
+                                event.getEntity().getZ(), 10, 0, 0, 0, 1);
+                    }
+
+                    if (_livEnt.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && RiderDriverItem.getFormItem(_livEnt.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/gochizo/puchingummy")))) {
                         ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
                                 event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
                                 event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
@@ -656,16 +682,16 @@ public class ModCommonEvents {
                     new ItemStack(CrossSeriesRiderItems.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
             trades.add((trader, rand) -> new MerchantOffer(
                     new ItemCost(Items.EMERALD, 3),
-                    new ItemStack(Zi_O_Rider_Items.TOY_ROBOT.get(), 1), 10, 8, 0.02F));
+                    new ItemStack(ZiORiderItems.TOY_ROBOT.get(), 1), 10, 8, 0.02F));
             trades.add((trader, rand) -> new MerchantOffer(
                     new ItemCost(Items.EMERALD, 3),
-                    new ItemStack(Zi_O_Rider_Items.QUESTIOABLE_WATCH.get(), 1), 10, 8, 0.02F));
+                    new ItemStack(ZiORiderItems.QUESTIOABLE_WATCH.get(), 1), 10, 8, 0.02F));
             trades.add((trader, rand) -> new MerchantOffer(
                     new ItemCost(Items.EMERALD, 5),
                     new ItemStack(Rider_Blocks.YAMININ_BOSS_BLOCK.get(), 1), 10, 8, 0.02F));
             trades.add((trader, rand) -> new MerchantOffer(
                     new ItemCost(Items.EMERALD, 3),
-                    new ItemStack(Ryuki_Rider_Items.BLANK_DECK.get(), 1), 10, 8, 0.02F));
+                    new ItemStack(RyukiRiderItems.BLANK_DECK.get(), 1), 10, 8, 0.02F));
         }
 
 
@@ -678,26 +704,26 @@ public class ModCommonEvents {
                         new ItemStack(IchigoRiderItems.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Kuuga_Rider_Items.KUUGA_MANGA.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(KuugaRiderItems.KUUGA_MANGA.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Modded_item_core.CARD_WARRIOR_KAMEN_RIDER_MANGA.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.CARD_WARRIOR_KAMEN_RIDER_MANGA.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == VillagerProfession.CLERIC) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 5),
-                        new ItemStack(Gotchard_Rider_Items.ALCHEMIST_RING_NO_GEM.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(GotchardRiderItems.ALCHEMIST_RING_NO_GEM.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(XRiderItems.RIDOL_CORE.get(), 1),
                         new ItemStack(XRiderItems.PERFECTER.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Modded_item_core.TAKOYAKI.get(), 4), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.TAKOYAKI.get(), 4), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Modded_item_core.RIDER_CIRCUIT.get(), 5),
+                        new ItemCost(ModdedItemCore.RIDER_CIRCUIT.get(), 5),
                         new ItemStack(Items.EMERALD, 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
@@ -713,7 +739,7 @@ public class ModCommonEvents {
                         new ItemStack(GRiderItems.GORO_WINE_BOTTLE.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
-                        new ItemStack(Modded_item_core.SINISTER_PACHINKO_BALL.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.SINISTER_PACHINKO_BALL.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(Rider_Blocks.ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
@@ -723,22 +749,22 @@ public class ModCommonEvents {
             } else if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Zero_One_Rider_Items.BLANK_PROGRISEKEY.get(), 3), 10, 8, 0.02F));
+                        new ItemStack(ZeroOneRiderItems.BLANK_PROGRISEKEY.get(), 3), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Zero_One_Rider_Items.HIDEN_METAL.get(), 3),
+                        new ItemCost(ZeroOneRiderItems.HIDEN_METAL.get(), 3),
                         new ItemStack(Items.EMERALD, 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
-                        new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 3), 10, 8, 0.02F));
+                        new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get(), 3), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 12),
-                        new ItemStack(Zero_One_Rider_Items.THOUSAND_KEY.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ZeroOneRiderItems.THOUSAND_KEY.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 30),
-                        new ItemStack(Zero_One_Rider_Items.ZAIA_SPEC.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ZeroOneRiderItems.ZAIA_SPEC.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
-                        new ItemStack(Zero_One_Rider_Items.AIMS_RISEPHONE.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ZeroOneRiderItems.AIMS_RISEPHONE.get(), 1), 10, 8, 0.02F));
                 trades.get(5).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
                         new ItemStack(MusicDiscItems.REAL_X_EYEZ_MUSIC_DISC.get(), 1), 10, 8, 0.02F));
@@ -757,54 +783,54 @@ public class ModCommonEvents {
                         new ItemStack(RideKamensItems.ENERGY_DRINK.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.AGENT_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Gavv_Rider_Items.HEATPRESS, 1),
-                        new ItemStack(Gavv_Rider_Items.DOPPUDDING_GOCHIZO.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(GavvRiderItems.HEATPRESS, 1),
+                        new ItemStack(GavvRiderItems.DOPPUDDING_GOCHIZO.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Gavv_Rider_Items.HEATPRESS, 2),
-                        new ItemStack(Gavv_Rider_Items.PURUJELLY_GOCHIZO.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(GavvRiderItems.HEATPRESS, 2),
+                        new ItemStack(GavvRiderItems.PURUJELLY_GOCHIZO.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Gavv_Rider_Items.HEATPRESS, 3),
+                        new ItemCost(GavvRiderItems.HEATPRESS, 3),
                         new ItemStack(Rider_Blocks.DARK_TREAT_GLASS.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 3),
                         new ItemStack(Rider_Blocks.GOCHIZO_JAR.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Gavv_Rider_Items.HEATPRESS, 5),
-                        new ItemStack(Gavv_Rider_Items.PURUJELLY_NOIR_GOCHIZO.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(GavvRiderItems.HEATPRESS, 5),
+                        new ItemStack(GavvRiderItems.PURUJELLY_NOIR_GOCHIZO.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.CANDYSHOP_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.DANGO.get(), 2), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.DANGO.get(), 2), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.PUDDING.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.PUDDING.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.GUMMI_CANDY.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.GUMMI_CANDY.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.POTATO_SNACKS.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.POTATO_SNACKS.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.CHOCOLATE_BAR.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.CHOCOLATE_BAR.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.LOLLIPOP.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.LOLLIPOP.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
                         new ItemStack(RideKamensItems.CANDY.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.MARSHMALLOW.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.MARSHMALLOW.get(), 1), 10, 8, 0.02F));
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
                         new ItemStack(Items.COOKIE, 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.CORN_SNACK.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.CORN_SNACK.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Modded_item_core.MAYO.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ModdedItemCore.MAYO.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.COLLECTOR_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
@@ -820,7 +846,7 @@ public class ModCommonEvents {
                         new ItemStack(ExtraRiderItems.GIFT.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Revice_Rider_Items.TOYSAURUS_VISTAMP.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(ReviceRiderItems.TOYSAURUS_VISTAMP.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 3),
                         new ItemStack(CrossSeriesRiderItems.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
@@ -829,7 +855,7 @@ public class ModCommonEvents {
                         new ItemStack(MobsCore.BICYCLE_SPAWN_EGG.get(), 1), 10, 8, 0.02F));
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),
-                        new ItemStack(Ghost_Rider_Items.ORE_SPECTER_GHOST_EYECON.get(), 1), 10, 8, 0.02F));
+                        new ItemStack(GhostRiderItems.ORE_SPECTER_GHOST_EYECON.get(), 1), 10, 8, 0.02F));
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 3),
                         new ItemStack(ExtraRiderItems.HALLOWEEN_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
@@ -837,24 +863,24 @@ public class ModCommonEvents {
                         new ItemCost(Items.EMERALD, 3),
                         new ItemStack(ExtraRiderItems.VALENTINE_GASHAPON_CAPSULE.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Blade_Rider_Items.EVOLUTION_CAUCASUS, 1),
-                        new ItemStack(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(BladeRiderItems.EVOLUTION_CAUCASUS, 1),
+                        new ItemStack(BladeRiderItems.SILVER_EVOLUTION_CAUCASUS.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Kiva_Rider_Items.TATSULOT, 1),
-                        new ItemStack(Kiva_Rider_Items.KIVATTE_FUESTLE.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(KivaRiderItems.TATSULOT, 1),
+                        new ItemStack(KivaRiderItems.KIVATTE_FUESTLE.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY, 1),
-                        new ItemStack(Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(FaizRiderItems.FAIZ_BLASTER_MISSION_MEMORY, 1),
+                        new ItemStack(FaizRiderItems.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Agito_Rider_Items.EXCEED_GILLS, 1),
-                        new ItemStack(Agito_Rider_Items.GOLD_EXCEED_GILLS.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(AgitoRiderItems.EXCEED_GILLS, 1),
+                        new ItemStack(AgitoRiderItems.GOLD_EXCEED_GILLS.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
-                        new ItemCost(Ryuki_Rider_Items.SURVIVE_REKKA, 1),
-                        new ItemStack(Ryuki_Rider_Items.SURVIVE_BLACK.get(), 1), 10, 8, 0.02F));
+                        new ItemCost(RyukiRiderItems.SURVIVE_REKKA, 1),
+                        new ItemStack(RyukiRiderItems.SURVIVE_BLACK.get(), 1), 10, 8, 0.02F));
             }
         }
-
     }
+
 
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {

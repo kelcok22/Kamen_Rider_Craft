@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.DecadeArmorExAidEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Zi_O_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
@@ -40,19 +40,19 @@ public class ZikuDriverItem extends RiderDriverItem {
 
 	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
-		&& itemstack.getItem() == Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()
-		&& (RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get()
-		|| RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get()))
+		&& itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
+		&& (RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get()
+		|| RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get()))
 			summonDecadeExAid(player);
 		super.OnTransformation(itemstack, entity);
 	}
 
-	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
 		&& ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
-		&& itemstack.getItem() == Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()
-		&& RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get())
+		&& itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
+		&& RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get())
 			summonDecadeExAid(player);
-		super.OnformChange(itemstack, entity, tag);
+		super.onFormChange(itemstack, entity, tag);
 	}
 }

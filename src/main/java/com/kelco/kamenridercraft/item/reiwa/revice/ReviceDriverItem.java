@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.ViceEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -32,11 +32,11 @@ public class ReviceDriverItem extends RiderDriverItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         Has_basic_belt_info = false;
-        Item formItem = get_Form_Item(stack, 1);
+        Item formItem = getFormItem(stack, 1);
 
-        if (formItem == Revice_Rider_Items.ROLLING_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.jack_revice"));
-        else if (formItem == Revice_Rider_Items.THUNDER_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.revice"));
-        else if (formItem == Revice_Rider_Items.FIFTY_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.igarashi"));
+        if (formItem == ReviceRiderItems.ROLLING_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.jack_revice"));
+        else if (formItem == ReviceRiderItems.THUNDER_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.revice"));
+        else if (formItem == ReviceRiderItems.FIFTY_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.igarashi"));
         else {
             tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
             tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
@@ -48,10 +48,10 @@ public class ReviceDriverItem extends RiderDriverItem {
 		ViceEntity vice = MobsCore.VICE.get().create(player.level());
 		if (vice != null) {
 			vice.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-			if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1)==Revice_Rider_Items.BARID_REX_VISTAMP.get()) {
-				vice.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Revice_Rider_Items.BARID_SHIELD.get()));
-			} else if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1)==Revice_Rider_Items.VOLCANO_VISTAMP.get()) {
-				RiderDriverItem.set_Form_Item(vice.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get(), 1);
+			if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1)== ReviceRiderItems.BARID_REX_VISTAMP.get()) {
+				vice.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ReviceRiderItems.BARID_SHIELD.get()));
+			} else if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1)== ReviceRiderItems.VOLCANO_VISTAMP.get()) {
+				RiderDriverItem.setFormItem(vice.getItemBySlot(EquipmentSlot.FEET), ReviceRiderItems.VOLCANO_VISTAMP_VICE.get(), 1);
 			}
 			player.level().addFreshEntity(vice);
 			vice.bindToPlayer(player);
@@ -64,22 +64,22 @@ public class ReviceDriverItem extends RiderDriverItem {
     }
 	
 	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
-		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
+		ItemStack form = new ItemStack(RiderDriverItem.getFormItem(itemstack, 1));
 
 		if (entity instanceof Player player && ServerConfig.viceSpawning && !viceSummoned(player)
-		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
+		&& itemstack.getItem() == ReviceRiderItems.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);
 		super.OnTransformation(itemstack, entity);
 	}
 	
-	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
+	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+		ItemStack form = new ItemStack(RiderDriverItem.getFormItem(itemstack, 1));
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
 		&& ServerConfig.viceSpawning && !viceSummoned(player)
-		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
+		&& itemstack.getItem() == ReviceRiderItems.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);
-		super.OnformChange(itemstack, entity, tag);
+		super.onFormChange(itemstack, entity, tag);
 	}
 }

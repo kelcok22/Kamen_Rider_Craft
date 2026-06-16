@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.blade;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Blade_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,9 +20,9 @@ public class BlayBuckleItem extends RiderDriverItem {
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (get_Form_Item(itemstack, 1) == Blade_Rider_Items.FUSION_EAGLE.get() | get_Form_Item(itemstack, 1) == Blade_Rider_Items.FUSION_PEACOCK.get() |
-                get_Form_Item(itemstack, 1) == Blade_Rider_Items.EVOLUTION_CAUCASUS.get() | get_Form_Item(itemstack, 1) == Blade_Rider_Items.EVOLUTION_GIRAFFA.get() |
-                get_Form_Item(itemstack, 1) == Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get() | get_Form_Item(itemstack, 1) == Blade_Rider_Items.EVOLUTION_TARANTULA.get()) {
+        if (getFormItem(itemstack, 1) == BladeRiderItems.FUSION_EAGLE.get() | getFormItem(itemstack, 1) == BladeRiderItems.FUSION_PEACOCK.get() |
+                getFormItem(itemstack, 1) == BladeRiderItems.EVOLUTION_CAUCASUS.get() | getFormItem(itemstack, 1) == BladeRiderItems.EVOLUTION_GIRAFFA.get() |
+                getFormItem(itemstack, 1) == BladeRiderItems.SILVER_EVOLUTION_CAUCASUS.get() | getFormItem(itemstack, 1) == BladeRiderItems.EVOLUTION_TARANTULA.get()) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belt_with_brace.geo.json");
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/riderbelt.geo.json");

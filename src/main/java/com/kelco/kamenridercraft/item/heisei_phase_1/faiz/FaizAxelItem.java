@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -29,16 +29,16 @@ public class FaizAxelItem extends BaseItem {
 		ItemStack itemstack = player.getItemInHand(usedHand);
 
 		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER.get()) {
-				Faiz_Rider_Items.FAIZ_AXEL_FORM.asItem().use(level,player,usedHand);
+			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.FAIZ_DRIVER.get()) {
+				FaizRiderItems.FAIZ_AXEL_FORM.asItem().use(level,player,usedHand);
 				startCooldown(player);
-			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER_NEXT.get()) {
-				Faiz_Rider_Items.NEXT_FAIZ_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
+			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.FAIZ_DRIVER_NEXT.get()) {
+				FaizRiderItems.NEXT_FAIZ_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
 				startCooldown(player);
-			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.NEXT_KAIXA_DRIVER.get()) {
-				Faiz_Rider_Items.NEXT_KAIXA_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
+			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.NEXT_KAIXA_DRIVER.get()) {
+				FaizRiderItems.NEXT_KAIXA_AXEL_MISSION_MEMORY.asItem().use(level,player,usedHand);
 				startCooldown(player);
-			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.DELTA_DRIVER.get() && belt.isTransformed(player)){
+			} else if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.DELTA_DRIVER.get() && belt.isTransformed(player)){
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 5,true,false));
 				startCooldown(player);
 			}

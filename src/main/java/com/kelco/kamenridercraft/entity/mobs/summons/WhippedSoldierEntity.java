@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.variants.WhippedSoldierVariant;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.reiwa.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -44,10 +44,10 @@ public class WhippedSoldierEntity extends BaseSummonEntity {
 		super(type, level);
 		NAME="whipped_soldier";
         this.setVariant(WhippedSoldierVariant.NORMAL);
-		this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Gavv_Rider_Items.WHIPPED_ROD.get()));
+		this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(GavvRiderItems.WHIPPED_ROD.get()));
         this.reassessWeaponGoal();
-		this.addRequiredForm((RiderFormChangeItem)Gavv_Rider_Items.CAKING_GOCHIZO.get(), 1);
-		this.addRequiredForm((RiderFormChangeItem)Gavv_Rider_Items.BLIZZARDSORBEI_GOCHIZO.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem) GavvRiderItems.CAKING_GOCHIZO.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem) GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get(), 1);
 	}
 
     @Override
@@ -121,19 +121,19 @@ public class WhippedSoldierEntity extends BaseSummonEntity {
 		ItemStack itemstack = player.getItemInHand(hand);
 		if (this.isTame() && this.isOwnedBy(player) && this.getVariant() == WhippedSoldierVariant.NORMAL) {
 			if (!this.level().isClientSide()) {
-				if (itemstack.is(Gavv_Rider_Items.ZAKUZAKUCHIPS_GOCHIZO.get())) {
+				if (itemstack.is(GavvRiderItems.ZAKUZAKUCHIPS_GOCHIZO.get())) {
 					player.displayClientMessage(Component.translatable("attack.kamenridercraft.zaku_decoration"), true);
 					this.setVariant(WhippedSoldierVariant.ZAKU);
-					this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Gavv_Rider_Items.ZAKUZAKUCHIPSLASHER.get()));
-					this.setItemInHand(InteractionHand.OFF_HAND, new ItemStack(Gavv_Rider_Items.ZAKUZAKUCHIPSLASHER.get()));
+					this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(GavvRiderItems.ZAKUZAKUCHIPSLASHER.get()));
+					this.setItemInHand(InteractionHand.OFF_HAND, new ItemStack(GavvRiderItems.ZAKUZAKUCHIPSLASHER.get()));
 					if (!player.isCreative()) {
 						this.ABSORBED_GOCHIZO = itemstack.copyWithCount(1);
 						itemstack.shrink(1);
 					}
-				} else if (itemstack.is(Gavv_Rider_Items.CHOCODAN_GOCHIZO.get())) {
+				} else if (itemstack.is(GavvRiderItems.CHOCODAN_GOCHIZO.get())) {
 					player.displayClientMessage(Component.translatable("attack.kamenridercraft.choco_decoration"), true);
 					this.setVariant(WhippedSoldierVariant.CHOCO);
-					this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Gavv_Rider_Items.CHOCODANGUN.get()));
+					this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(GavvRiderItems.CHOCODANGUN.get()));
 					this.setItemInHand(InteractionHand.OFF_HAND, ItemStack.EMPTY);
 					if (!player.isCreative()) {
 						this.ABSORBED_GOCHIZO = itemstack.copyWithCount(1);

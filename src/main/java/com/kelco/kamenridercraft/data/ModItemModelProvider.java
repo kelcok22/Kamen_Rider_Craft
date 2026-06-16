@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.data;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -64,8 +64,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(Rider_Blocks.GRANUTE_GLASS_PANE.asItem());
 
-        basicItem(Modded_item_core.HELHEIM_SIGN_ITEM.asItem());
-        basicItem(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM.asItem());
+        basicItem(ModdedItemCore.HELHEIM_SIGN_ITEM.asItem());
+        basicItem(ModdedItemCore.HELHEIM_HANGING_SIGN_ITEM.asItem());
 
 
     }

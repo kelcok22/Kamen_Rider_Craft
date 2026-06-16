@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -23,11 +23,11 @@ public class EvilEntity extends BaseHenchmenEntity {
     public EvilEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="evil";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Revice_Rider_Items.REVICE_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Revice_Rider_Items.REVICE_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Revice_Rider_Items.REVICE_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Revice_Rider_Items.TWO_SIDRIVER_EVIL.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Revice_Rider_Items.EVILBLADE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ReviceRiderItems.REVICE_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ReviceRiderItems.REVICE_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ReviceRiderItems.REVICE_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ReviceRiderItems.TWO_SIDRIVER_EVIL.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ReviceRiderItems.EVILBLADE.get()));
     }
 
 
@@ -35,10 +35,10 @@ public class EvilEntity extends BaseHenchmenEntity {
 
 		if ( this.isDeadOrDying() && !this.level().isClientSide
             && this.getLastAttacker() instanceof Player player
-            && player.getInventory().countItem(Revice_Rider_Items.CROW_VISTAMP.get())!=0) {
-        	    if (player.getInventory().getItem(40).getItem()==Revice_Rider_Items.CROW_VISTAMP.get()) player.getInventory().removeItem(40, 1);
-				else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Revice_Rider_Items.CROW_VISTAMP.get())), 1);
-                ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Revice_Rider_Items.HOLY_WING_VISTAMP.get(), 1), 0, 0, 0);
+            && player.getInventory().countItem(ReviceRiderItems.CROW_VISTAMP.get())!=0) {
+        	    if (player.getInventory().getItem(40).getItem()== ReviceRiderItems.CROW_VISTAMP.get()) player.getInventory().removeItem(40, 1);
+				else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(ReviceRiderItems.CROW_VISTAMP.get())), 1);
+                ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(ReviceRiderItems.HOLY_WING_VISTAMP.get(), 1), 0, 0, 0);
                 stamp.setPickUpDelay(0);
                 this.level().addFreshEntity(stamp);
                 player.sendSystemMessage(Component.translatable("loot.kamenridercraft.holy_wing"));

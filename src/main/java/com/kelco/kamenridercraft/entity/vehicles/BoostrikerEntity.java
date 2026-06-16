@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.geats.RiderCoreIDItem;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -27,7 +27,7 @@ public class BoostrikerEntity extends baseBikeEntity {
 	private static final EntityDataAccessor<String> DATA_RIDER_LOGO = SynchedEntityData.defineId(BoostrikerEntity.class, EntityDataSerializers.STRING);
 
 	public BoostrikerEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
-		super(entityType, level, Geats_Rider_Items.BOOST_RAISE_BUCKLE.get());
+		super(entityType, level, GeatsRiderItems.BOOST_RAISE_BUCKLE.get());
 		NAME ="boostriker";
 		NAME_MODEL ="boostriker";
 		}
@@ -79,7 +79,7 @@ public class BoostrikerEntity extends baseBikeEntity {
 					this.level().addFreshEntity(boss);
 					this.remove(RemovalReason.DISCARDED);
 				}
-			} else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.REX_VISTAMP.get() && (Objects.equals(this.getRiderLogo(), "revi")||Objects.equals(this.getRiderLogo(), "vice"))) {
+			} else if (player.getItemInHand(hand).getItem() == ReviceRiderItems.REX_VISTAMP.get() && (Objects.equals(this.getRiderLogo(), "revi")||Objects.equals(this.getRiderLogo(), "vice"))) {
 				if (Objects.equals(this.getRiderLogo(), "revi")) this.setRiderLogo("revi_vicetriker");
 				else this.setRiderLogo("vice_vicetriker");
 				if (this.level() instanceof ServerLevel sl) {

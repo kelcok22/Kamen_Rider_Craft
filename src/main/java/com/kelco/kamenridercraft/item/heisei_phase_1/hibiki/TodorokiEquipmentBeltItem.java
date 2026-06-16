@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.hibiki;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Hibiki_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
@@ -18,7 +18,7 @@ public class TodorokiEquipmentBeltItem extends RiderDriverItem {
 	}
 	@Override
 	public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (!rider.isHolding(Hibiki_Rider_Items.HENSHIN_KIGEN_TODOROKI.get())) return "henshin_kigen";
+		if (!rider.isHolding(HibikiRiderItems.HENSHIN_KIGEN_TODOROKI.get())) return "henshin_kigen";
 
 		return "blank";
 	}

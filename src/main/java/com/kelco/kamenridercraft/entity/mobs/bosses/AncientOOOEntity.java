@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -41,19 +41,19 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 	public AncientOOOEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
 		NAME="ancientooo";
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOO_Rider_Items.OOOHELMET.get()));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOO_Rider_Items.OOOCHESTPLATE.get()));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.ANCIENT_OOODRIVER.get()));
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOO_Rider_Items.MEDAJALIBUR.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.ANCIENT_OOODRIVER.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOORiderItems.MEDAJALIBUR.get()));
 	}
 
 	protected void customServerAiStep() {
 		super.customServerAiStep();
 		
-		if(getItemBySlot(EquipmentSlot.FEET).getItem()==OOO_Rider_Items.ANCIENT_OOODRIVER.get()){
+		if(getItemBySlot(EquipmentSlot.FEET).getItem()== OOORiderItems.ANCIENT_OOODRIVER.get()){
 			ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-			if (RiderDriverItem.get_Form_Item(belt,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
+			if (RiderDriverItem.getFormItem(belt,2)== OOORiderItems.GREEED_ABSORPTION_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.RED);
 				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.ancient_ooo_greeed_absorption").withStyle(ChatFormatting.GOLD));
             }
@@ -89,11 +89,11 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 	
 	public void tick() {
 		if (this.getHealth()<150) {
-			if(getItemBySlot(EquipmentSlot.FEET).getItem()==OOO_Rider_Items.ANCIENT_OOODRIVER.get()){
+			if(getItemBySlot(EquipmentSlot.FEET).getItem()== OOORiderItems.ANCIENT_OOODRIVER.get()){
 				ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-				if (RiderDriverItem.get_Form_Item(belt,2)!=OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()) {
-					RiderDriverItem.set_Form_Item(belt, OOO_Rider_Items.GREEED_ABSORPTION_CORE.get(), 2);
-					this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOO_Rider_Items.ANICENT_OOO_GREEED_SWORD.get()));
+				if (RiderDriverItem.getFormItem(belt,2)!= OOORiderItems.GREEED_ABSORPTION_CORE.get()) {
+					RiderDriverItem.setFormItem(belt, OOORiderItems.GREEED_ABSORPTION_CORE.get(), 2);
+					this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOORiderItems.ANICENT_OOO_GREEED_SWORD.get()));
 				}
 			}
 		}

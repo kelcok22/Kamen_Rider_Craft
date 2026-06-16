@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.base_items;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.projectiles.BaseProjectileEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -52,7 +52,7 @@ public class NeoBaseBlasterItem extends BaseItem {
     private int drawTick = 0;
     private boolean gunMode = true;
 
-    private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+    private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
     private Item FormChangeItem = null;
     private Item HenshinBeltItem = null;
 

@@ -10,9 +10,9 @@ public record StartPosePayload(int hand, String UUID) implements CustomPacketPay
     public static final Type<StartPosePayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "start_pose"));
 
     public static final StreamCodec<ByteBuf, StartPosePayload> STREAM_CODEC = StreamCodec.composite(
-        ByteBufCodecs.VAR_INT, StartPosePayload::hand,
-        ByteBufCodecs.STRING_UTF8, StartPosePayload::UUID,
-        StartPosePayload::new
+            ByteBufCodecs.VAR_INT, StartPosePayload::hand,
+            ByteBufCodecs.STRING_UTF8, StartPosePayload::UUID,
+            StartPosePayload::new
     );
 
     @Override

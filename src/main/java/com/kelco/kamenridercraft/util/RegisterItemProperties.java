@@ -2,15 +2,14 @@ package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.compat.BetterCombatAttackListener;
-import com.kelco.kamenridercraft.entity.mobs.bosses.MagiaEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.TrilobiteMagiaEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ZuGumunBaEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseSwordItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
-import com.kelco.kamenridercraft.item.reiwa.Geats_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
-import com.kelco.kamenridercraft.item.reiwa.Zero_One_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -56,11 +55,11 @@ public class RegisterItemProperties {
             ItemProperties.register(item, BLOCKING_PROPERTY_RESLOC, ($itemStack, $level, $entity, $seed) -> $entity != null && $entity.isUsingItem() && $entity.getUseItem() == $itemStack ? 1.0F : 0.0F);
         }
 
-        ItemProperties.register(Ryuki_Rider_Items.DARK_SHIELD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(RyukiRiderItems.DARK_SHIELD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
             if (p_174637_ == null) {
                 return 0.0F;
             } else {
-                if (p_174637_.getMainHandItem().getItem() == Ryuki_Rider_Items.DARK_BLADE.get()) {
+                if (p_174637_.getMainHandItem().getItem() == RyukiRiderItems.DARK_BLADE.get()) {
                     return 1;
                 }
                 return 0;
@@ -91,13 +90,13 @@ public class RegisterItemProperties {
                             return 0.0F;
                         } else {
                             p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                            if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Kuuga_Rider_Items.ARCLE.get()) {
+                            if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == KuugaRiderItems.ARCLE.get()) {
                                 ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                                if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_r"))
+                                if (Objects.equals(RiderDriverItem.getFormItem(belt, 1).getBeltTex(), "arcle_belt_r"))
                                     return 1;
-                                if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_u"))
+                                if (Objects.equals(RiderDriverItem.getFormItem(belt, 1).getBeltTex(), "arcle_belt_u"))
                                     return 2;
-                                if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "arcle_belt_ru"))
+                                if (Objects.equals(RiderDriverItem.getFormItem(belt, 1).getBeltTex(), "arcle_belt_ru"))
                                     return 2;
                             }
                             return 0;
@@ -107,7 +106,7 @@ public class RegisterItemProperties {
             );
         }
 
-        ItemProperties.register(Kuuga_Rider_Items.KUUGA_PHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(KuugaRiderItems.KUUGA_PHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
@@ -130,18 +129,18 @@ public class RegisterItemProperties {
     }
 
     public static void registerFaizItems() {
-        ItemProperties.register(Faiz_Rider_Items.FAIZ_AXEL.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(FaizRiderItems.FAIZ_AXEL.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
                         p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER.get()) {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.FAIZ_DRIVER.get()) {
                             ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                            if (Objects.equals(RiderDriverItem.get_Form_Item(belt, 1).getBeltTex(), "faiz_driver_belt_a"))
+                            if (Objects.equals(RiderDriverItem.getFormItem(belt, 1).getBeltTex(), "faiz_driver_belt_a"))
                                 return 1;
-                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER_NEXT.get()) {
+                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.FAIZ_DRIVER_NEXT.get()) {
                             return 2;
-                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.NEXT_KAIXA_DRIVER.get()) {
+                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.NEXT_KAIXA_DRIVER.get()) {
                             return 3;
                         }
                         return 0;
@@ -150,13 +149,13 @@ public class RegisterItemProperties {
                 }
         );
 
-        ItemProperties.register(Faiz_Rider_Items.FAIZ_BLASTER.get(), ResourceLocation.parse("gold"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(FaizRiderItems.FAIZ_BLASTER.get(), ResourceLocation.parse("gold"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
-                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Faiz_Rider_Items.FAIZ_DRIVER.get()) {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == FaizRiderItems.FAIZ_DRIVER.get()) {
                             ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                            if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_gold_blaster")) {
+                            if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_gold_blaster")) {
                                 return 1;
                             }
                         }
@@ -167,13 +166,13 @@ public class RegisterItemProperties {
     }
 
     public static void registerBladeItems() {
-        ItemProperties.register(Blade_Rider_Items.BLAYROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(BladeRiderItems.BLAYROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
-                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.BLAYBUCKLE.get()) {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == BladeRiderItems.BLAYBUCKLE.get()) {
                             ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                            if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
+                            if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_jack")) {
                                 return 1;
                             }
                         }
@@ -182,13 +181,13 @@ public class RegisterItemProperties {
                 }
         );
 
-        ItemProperties.register(Blade_Rider_Items.GARRENROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(BladeRiderItems.GARRENROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
-                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.GARRENBUCKLE.get() || p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.GARRENBUCKLE.get()) {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == BladeRiderItems.GARRENBUCKLE.get() || p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == BladeRiderItems.GARRENBUCKLE.get()) {
                             ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                            if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
+                            if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_jack")) {
                                 return 1;
                             }
                         }
@@ -197,13 +196,13 @@ public class RegisterItemProperties {
                 }
         );
 
-        ItemProperties.register(Blade_Rider_Items.LEANGLEROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(BladeRiderItems.LEANGLEROUZER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
-                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Blade_Rider_Items.LEANGLEBUCKLE.get()) {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == BladeRiderItems.LEANGLEBUCKLE.get()) {
                             ItemStack Belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
-                            if (Objects.equals(RiderDriverItem.get_Form_Item(Belt, 1).getFormName(false), "_jack")) {
+                            if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_jack")) {
                                 return 1;
                             }
                         }
@@ -214,7 +213,7 @@ public class RegisterItemProperties {
     }
 
     public static void registerHibikiItems() {
-        ItemProperties.register(Hibiki_Rider_Items.ONGEKIFLUTE_REKKU.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(HibikiRiderItems.ONGEKIFLUTE_REKKU.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
             if (p_174637_ == null) {
                 return 0.0F;
             } else {
@@ -224,13 +223,13 @@ public class RegisterItemProperties {
     }
 
     public static void registerKabutoItems() {
-        ItemProperties.register(Kabuto_Rider_Items.CLOCK_UP_PAD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(KabutoRiderItems.CLOCK_UP_PAD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
                         if (p_174637_ instanceof Player player) {
                             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)) {
-                                if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))) {
+                                if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/hyper_zecters")))) {
                                     return 1;
                                 }
                             }
@@ -242,7 +241,7 @@ public class RegisterItemProperties {
     }
 
     public static void registerZeroOneItems() {
-        ItemProperties.register(Zero_One_Rider_Items.AIMS_RISEPHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(ZeroOneRiderItems.AIMS_RISEPHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
@@ -264,17 +263,17 @@ public class RegisterItemProperties {
 
     }
     public static void registerGeatsItems() {
-        ItemProperties.register(Geats_Rider_Items.LASER_RAISE_RISER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(GeatsRiderItems.LASER_RAISE_RISER.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
-                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get() || p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.LASER_RISE_DRIVER_GAZER_ZERO.get()) {
+                        if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == GeatsRiderItems.RAISE_RISER_BELT_ZIIN.get() || p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == GeatsRiderItems.LASER_RISE_DRIVER_GAZER_ZERO.get()) {
                             return 1;
-                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KEKERA.get()) {
+                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == GeatsRiderItems.RAISE_RISER_BELT_KEKERA.get()) {
                             return 2;
-                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KYUUN.get()) {
+                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == GeatsRiderItems.RAISE_RISER_BELT_KYUUN.get()) {
                             return 3;
-                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_BEROBA.get()) {
+                        } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == GeatsRiderItems.RAISE_RISER_BELT_BEROBA.get()) {
                             return 4;
                         }
                         return 0;
@@ -284,7 +283,7 @@ public class RegisterItemProperties {
     }
 
     public static void registerGotchardItems() {
-        ItemProperties.register(Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+        ItemProperties.register(GotchardRiderItems.BLANK_RIDE_CHEMY_CARD.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else if (p_174637_ instanceof Player player) {
@@ -301,7 +300,7 @@ public class RegisterItemProperties {
     }
 
     public static void registerOutsidersItems() {
-        for (Item item : Decade_Rider_Items.ZEIN_CARDS) {
+        for (Item item : DecadeRiderItems.ZEIN_CARDS) {
             ItemProperties.register(item, ResourceLocation.parse("shredded"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                 if (p_174635_.isDamaged()) return 1;
                 return 0;

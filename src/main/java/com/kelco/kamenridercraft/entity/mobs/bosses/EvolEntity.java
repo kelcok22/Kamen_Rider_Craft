@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
@@ -24,32 +24,32 @@ public class EvolEntity extends BaseHenchmenEntity {
     public EvolEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="evol";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Build_Rider_Items.BUILD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Build_Rider_Items.BUILD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Build_Rider_Items.BUILD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.EVOL_DRIVER.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuildRiderItems.BUILD_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuildRiderItems.BUILD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuildRiderItems.BUILD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.EVOL_DRIVER.get()));
     }
 
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
-            if (this.getHealth()<100 && playerIn.getInventory().countItem(Rider_Blocks.PANDORA_BOX.get().asItem())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER.get()
-            && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
+            if (this.getHealth()<100 && playerIn.getInventory().countItem(Rider_Blocks.PANDORA_BOX.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER.get()
+            && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER_KAIJIN.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
 		    	this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
 		    	this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.5);
 		    	this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
 		    	this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-		    	RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER.get(), 1);
+		    	RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.EVOL_TRIGGER.get(), 1);
                 this.moveControl = new FlyingBossControl(this, 20);
-    	    } else if(this.getHealth()<50 && playerIn.getInventory().countItem(Build_Rider_Items.LAST_PANDORA_PANEL_BLACK.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
+    	    } else if(this.getHealth()<50 && playerIn.getInventory().countItem(BuildRiderItems.LAST_PANDORA_PANEL_BLACK.get())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER_KAIJIN.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evolto"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
                 this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(1);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(15.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get(), 1);
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.EVOL_TRIGGER_KAIJIN.get(), 1);
                 this.moveControl = new FlyingBossControl(this, 20);
             }
         }

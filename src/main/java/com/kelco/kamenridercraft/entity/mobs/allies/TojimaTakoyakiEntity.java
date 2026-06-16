@@ -33,7 +33,7 @@ public class TojimaTakoyakiEntity extends BaseAllyEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));
         ItemStack belt = new ItemStack(IchigoRiderItems.TYPHOON_ICHIGO.get());
-        RiderDriverItem.set_Form_Item(belt, IchigoRiderItems.TAKOYAKI_TYPHOON_CORE.get(), 1);
+        RiderDriverItem.setFormItem(belt, IchigoRiderItems.TAKOYAKI_TYPHOON_CORE.get(), 1);
         this.setItemSlot(EquipmentSlot.FEET,belt);
 		this.setPersistenceRequired();
 		

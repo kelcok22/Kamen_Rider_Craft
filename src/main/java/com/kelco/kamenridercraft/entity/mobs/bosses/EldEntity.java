@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.reiwa.Gotchard_Rider_Items;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,25 +20,25 @@ public class EldEntity extends BaseHenchmenEntity {
     public EldEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="eld";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gotchard_Rider_Items.GOTCHARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gotchard_Rider_Items.GOTCHARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gotchard_Rider_Items.ELDORADRIVER_ELD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GotchardRiderItems.GOTCHARD_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GotchardRiderItems.GOTCHARD_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GotchardRiderItems.GOTCHARD_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.ELDORADRIVER_ELD.get()));
     }
 
     public void remove(Entity.RemovalReason p_149847_) {
         if ( this.isDeadOrDying() && !this.level().isClientSide && this.getLastAttacker() instanceof Player player) {
-            if (player.getInventory().countItem(Gotchard_Rider_Items.HOPPER1_RIDE_CHEMY_CARD.get()) != 0
-                    && player.getInventory().countItem(Gotchard_Rider_Items.STEAMLINER_RIDE_CHEMY_CARD.get()) != 0) {
-                if (player.getInventory().getItem(40).getItem() == Gotchard_Rider_Items.HOPPER1_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
-                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gotchard_Rider_Items.HOPPER1_RIDE_CHEMY_CARD.get())), 1);
+            if (player.getInventory().countItem(GotchardRiderItems.HOPPER1_RIDE_CHEMY_CARD.get()) != 0
+                    && player.getInventory().countItem(GotchardRiderItems.STEAMLINER_RIDE_CHEMY_CARD.get()) != 0) {
+                if (player.getInventory().getItem(40).getItem() == GotchardRiderItems.HOPPER1_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
+                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GotchardRiderItems.HOPPER1_RIDE_CHEMY_CARD.get())), 1);
 
-                if (player.getInventory().getItem(40).getItem() == Gotchard_Rider_Items.STEAMLINER_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
-                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gotchard_Rider_Items.STEAMLINER_RIDE_CHEMY_CARD.get())), 1);
+                if (player.getInventory().getItem(40).getItem() == GotchardRiderItems.STEAMLINER_RIDE_CHEMY_CARD.get()) player.getInventory().removeItem(40, 1);
+                else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(GotchardRiderItems.STEAMLINER_RIDE_CHEMY_CARD.get())), 1);
 
-                ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Gotchard_Rider_Items.HOPPER1_RIDE_CHEMY_CARD_ULTIMA.get(), 1), 0, 0, 0);
+                ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(GotchardRiderItems.HOPPER1_RIDE_CHEMY_CARD_ULTIMA.get(), 1), 0, 0, 0);
                 stamp.setPickUpDelay(0);
-                ItemEntity stamp1 = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Gotchard_Rider_Items.STEAMLINER_RIDE_CHEMY_CARD_ULTIMA.get(), 1), 0, 0, 0);
+                ItemEntity stamp1 = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(GotchardRiderItems.STEAMLINER_RIDE_CHEMY_CARD_ULTIMA.get(), 1), 0, 0, 0);
                 stamp1.setPickUpDelay(0);
 
                 this.level().addFreshEntity(stamp);

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -28,11 +28,11 @@ public class FaizEntity extends BaseHenchmenEntity {
     public FaizEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="faiz";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Faiz_Rider_Items.FAIZHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Faiz_Rider_Items.FAIZCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Faiz_Rider_Items.FAIZLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.FAIZ_DRIVER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Faiz_Rider_Items.FAIZ_EDGE.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZHELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZCHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.FAIZ_DRIVER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FaizRiderItems.FAIZ_EDGE.get()));
     }
 
 

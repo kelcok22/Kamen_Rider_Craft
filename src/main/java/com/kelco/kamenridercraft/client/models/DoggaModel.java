@@ -17,13 +17,13 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class DoggaModel<T extends Mob> extends BasicMobModel<T> {
-	public static final ModelLayerLocation LAYER_LOCATION =
-			new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "dogga"), "main");
+    public static final ModelLayerLocation LAYER_LOCATION =
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "dogga"), "main");
 
 
-	public DoggaModel(ModelPart p_170810_) {
-		super(p_170810_);
-	}
+    public DoggaModel(ModelPart p_170810_) {
+        super(p_170810_);
+    }
 
     public static LayerDefinition createBodyLayer() {
         MeshDefinition meshdefinition = new MeshDefinition();
@@ -31,7 +31,8 @@ public class DoggaModel<T extends Mob> extends BasicMobModel<T> {
         PartDefinition partdefinition1 = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, 0.0F));
 
         partdefinition.addOrReplaceChild("ear", CubeListBuilder.create().texOffs(24, 0).addBox(-3.0F, -6.0F, -1.0F, 6.0F, 6.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.ZERO);
-        partdefinition.addOrReplaceChild("cloak", CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, 0.0F, -1.0F, 10.0F, 16.0F, 1.0F, new CubeDeformation(0.0F), 1.0F, 0.5F), PartPose.offset(0.0F, 0.0F, 0.0F));float f = 0.25F;
+        partdefinition.addOrReplaceChild("cloak", CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, 0.0F, -1.0F, 10.0F, 16.0F, 1.0F, new CubeDeformation(0.0F), 1.0F, 0.5F), PartPose.offset(0.0F, 0.0F, 0.0F));
+        float f = 0.25F;
 
 
         partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create(), PartPose.offset(-5.0F, 0.5F, 0.0F));
@@ -60,8 +61,8 @@ public class DoggaModel<T extends Mob> extends BasicMobModel<T> {
         return LayerDefinition.create(meshdefinition, 64, 80);
     }
 
-	public static void addHead(MeshDefinition mesh) {
-		PartDefinition partdefinition = mesh.getRoot();
+    public static void addHead(MeshDefinition mesh) {
+        PartDefinition partdefinition = mesh.getRoot();
         PartDefinition partdefinition1 = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, 0.0F));
-	}
+    }
 }

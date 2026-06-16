@@ -10,9 +10,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class GorillaCanRenderer extends GeoEntityRenderer<GorillaCanEntity> {
 
 
-
-
-	public GorillaCanRenderer(EntityRendererProvider.Context renderManager) {
+    public GorillaCanRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new GorillaCanModel());
     }
 

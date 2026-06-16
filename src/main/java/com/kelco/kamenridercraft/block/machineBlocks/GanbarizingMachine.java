@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -75,7 +75,7 @@ public class GanbarizingMachine extends MachineBlock {
 	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
 		if (!level.isClientSide()) {
-			if (player.getItemInHand(hand).getItem() == Ex_Aid_Rider_Items.BLANK_GASHAT.get()) {
+			if (player.getItemInHand(hand).getItem() == ExAidRiderItems.BLANK_GASHAT.get()) {
 				process(player, level, pos, hand,  getgashatDrop());
 				return ItemInteractionResult.SUCCESS;
 			}

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,20 +20,20 @@ public class KaixaDriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (get_Form_Item(itemstack, 1)==Faiz_Rider_Items.KAIXA_MISSION_MEMORY.get()) {
-			if (num==1&&!rider.isHolding(Faiz_Rider_Items.KAIXA_BLAYGUN.get())) return "kaixa_blaygun";
-			else if (num==2&&!rider.isHolding(Faiz_Rider_Items.KAIXA_SHOT.get())) return "faiz_shot";
+		if (getFormItem(itemstack, 1)== FaizRiderItems.KAIXA_MISSION_MEMORY.get()) {
+			if (num==1&&!rider.isHolding(FaizRiderItems.KAIXA_BLAYGUN.get())) return "kaixa_blaygun";
+			else if (num==2&&!rider.isHolding(FaizRiderItems.KAIXA_SHOT.get())) return "faiz_shot";
 		}
         return "blank";
     }
 
 	@Override
-	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
+	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
-		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.KAIXA_DRIVER.get()
-			&&rider.isHolding(Faiz_Rider_Items.KAIXA_PHONE.get())) return "belts/kaixa_driver_belt_empty";
+		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.KAIXA_DRIVER.get()
+			&&rider.isHolding(FaizRiderItems.KAIXA_PHONE.get())) return "belts/kaixa_driver_belt_empty";
 
-		return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+		return super.getText(itemstack, equipmentSlot, rider, riderName);
 	}
 
 }

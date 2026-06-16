@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.faiz;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.Faiz_Rider_Items;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -27,24 +27,24 @@ public class MuezDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-        if ((rider instanceof Player || rider instanceof Mob) && rider.getMainArm() == HumanoidArm.LEFT) {
-            if (num==1&&rider.getOffhandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_l";
-            else if (num==2&&rider.getMainHandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_r";
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName , int num) {
+        if ((livingEntity instanceof Player || livingEntity instanceof Mob) && livingEntity.getMainArm() == HumanoidArm.LEFT) {
+            if (num==1&& livingEntity.getOffhandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_l";
+            else if (num==2&& livingEntity.getMainHandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_r";
         } else {
-            if (num==1&&rider.getMainHandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_l";
-            else if (num==2&&rider.getOffhandItem().getItem()!=Faiz_Rider_Items.MUEZ_EDGE.get()) return "muez_edge_r";
+            if (num==1&& livingEntity.getMainHandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_l";
+            else if (num==2&& livingEntity.getOffhandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_r";
         }
         return "blank";
     }
 
     @Override
-    public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
     {
-        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.MUEZ_DRIVER.get()
-                &&(rider.isHolding(Faiz_Rider_Items.MUEZ_PHONE_BURST_MODE.get())||(rider.isHolding(Faiz_Rider_Items.MUEZ_PHONE_KNUCKLE_MODE.get())))) return "belts/muez_driver_belt_empty";
+        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.MUEZ_DRIVER.get()
+                &&(rider.isHolding(FaizRiderItems.MUEZ_PHONE_BURST_MODE.get())||(rider.isHolding(FaizRiderItems.MUEZ_PHONE_KNUCKLE_MODE.get())))) return "belts/muez_driver_belt_empty";
 
-        return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
+        return super.getText(itemstack, equipmentSlot, rider, riderName);
 
     }
 
