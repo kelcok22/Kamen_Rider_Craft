@@ -1,18 +1,6 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.unknown.new": {
-			"loop": true
-		},
-		"ichigo.kick_ground_start": {
-			"loop": true
-		},
-		"ichigo.kick_air_start": {
-			"loop": true
-		},
-		"ichigo.kick": {
-			"loop": true
-		},
 		"ichigo.pose": {
 			"loop": "hold_on_last_frame",
 			"bones": {

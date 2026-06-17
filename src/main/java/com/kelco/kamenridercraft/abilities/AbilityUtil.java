@@ -39,7 +39,7 @@ public class AbilityUtil {
                     case "land":
                         PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
                         PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.land", user.getStringUUID()));
-                        user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 5, true, false));
+                        user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
                         break;
 
                 }

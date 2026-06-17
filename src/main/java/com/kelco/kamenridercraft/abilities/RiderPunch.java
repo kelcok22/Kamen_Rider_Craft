@@ -19,7 +19,7 @@ public class RiderPunch {
     public static void tojimaPunch(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.tojima_punch2", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.tojima_punch", user.getStringUUID()));
             user.push(user.getLookAngle().scale(1.3));
             user.hurtMarked = true;
             user.setInvulnerable(true);
@@ -33,6 +33,8 @@ public class RiderPunch {
         }
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
     }
+
+
 
     public static void genericRiderPunch(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
@@ -52,6 +54,8 @@ public class RiderPunch {
         }
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
     }
+
+
 
     public static void punchHit(LivingEntity user, LivingEntity hitEnemy) {
         user.hurtMarked = true;
@@ -77,6 +81,8 @@ public class RiderPunch {
             hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
         }
     }
+
+
 
     public static void detectHit(LivingEntity user) {
         boolean enemyDetected = false;

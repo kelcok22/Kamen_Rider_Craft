@@ -19,6 +19,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.List;
+import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
@@ -41,10 +42,6 @@ public class RiderKick {
             user.hurtMarked = true;
         }
 
-        if (user.isUnderWater() || user.isFallFlying()) {
-            cancelAbility(user, "", 0);
-        }
-
         if (user.onGround() && user.getData(ABILITY_TICK) == 3) {
             Vec3 initialVec = user.getDeltaMovement();
             Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
@@ -58,29 +55,41 @@ public class RiderKick {
             PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.kick", user.getStringUUID()));
         }
 
-        if (user.getData(ABILITY_TICK) > 17) {
-            if (user.getData(ABILITY_TICK) >= 60 || user.onGround()) {
-                cancelAbility(user, "land", 0);
-                user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
-                return;
-            }
-            detectHit(user);
-            if (user.getData(ABILITY_TICK) == 21) {
-                user.setDeltaMovement(0, 0, 0);
-                Double y = user.getLookAngle().y;
-                if (y < 0.5) y = 0.05d;
-                Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(20);
-                user.setDeltaMovement(look.scale(0.97D));
-                user.hurtMarked = true;
-            }
-            if (user.getData(ABILITY_TICK) > 22) {
-                ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 0, user.getZ(), 1, 0, 0, 0, 0);
-                ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 1.0, user.getZ(), 1, 0, 0, 0, 0);
-                ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 0.5, user.getZ(), 1, 0, 0, 0, 0);
-            }
+        if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 180 ) {
+            cancelAbility(user, "", 0);
         }
+
+        if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
+            cancelAbility(user, "land", 0);
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            return;
+        }
+
+        if (user.getData(ABILITY_TICK) == 21) {
+            user.setDeltaMovement(0, 0, 0);
+            Double y = user.getLookAngle().y;
+            if (y < 0.5) y = 0.05d;
+            Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(20);
+            user.setDeltaMovement(look.scale(0.97D));
+            user.hurtMarked = true;
+        }
+
+        if (user.getData(ABILITY_TICK) > 22) {
+            detectHit(user);
+            Random rand = new Random();
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + (rand.nextFloat(0.33F) * rand.nextInt(-1, 1)), user.getZ(), 1, 0, 0, 0, 0);
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + (rand.nextFloat(0.66F) * rand.nextInt(-1, 1)), user.getZ(), 1, 0, 0, 0, 0);
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + (rand.nextFloat(1) * rand.nextInt(-1, 1)), user.getZ(), 1, 0, 0, 0, 0);
+        }
+
+        if (user.getData(ABILITY_TICK) == 36) {
+            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.kick_loop", user.getStringUUID()));
+        }
+
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
     }
+
+
 
     public static void kabutoKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
@@ -89,7 +98,7 @@ public class RiderKick {
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 20, true, false));
             user.setInvulnerable(true);
         }
-        if(!user.onGround() || user.isInWater()) {
+        if (!user.onGround() || user.isInWater()) {
             cancelAbility(user, "", 0);
             user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
             return;
@@ -112,8 +121,23 @@ public class RiderKick {
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
     }
 
-    public static void normalKickHit(LivingEntity user, LivingEntity hitEnemy) {
-        float damageModifier = 5 + user.fallDistance;
+
+
+    public static void kickHit(LivingEntity user, LivingEntity hitEnemy, String kickType) {
+        float damageModifier = 5;
+        float pushFactor = 1.5F;
+        switch (kickType){
+            case "kabuto":
+                damageModifier += 5;
+                pushFactor = 2;
+            default:
+                damageModifier = damageModifier + user.fallDistance;
+                user.resetFallDistance();
+            break;
+        }
+
+        hitEnemy.push(user.getLookAngle().scale(pushFactor));
+        user.hurtMarked = true;
 
         if (user.hasEffect(EffectCore.PUNCH)) {
             damageModifier = damageModifier + user.getEffect(EffectCore.PUNCH).getAmplifier() + 1;
@@ -131,70 +155,14 @@ public class RiderKick {
                 user.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), user, user, user.position());
 
         hitEnemy.hurt(damageSource, damageModifier);
-        hitEnemy.push(user.getLookAngle().scale(3));
         ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION, user.getX(), user.getY() + 0.5, user.getZ(), 1, 0, 0, 0, 0);
 
         if (hitEnemy.getHealth() < hitEnemy.getMaxHealth() / 3) {
             hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
         }
-        user.resetFallDistance();
-        user.hurtMarked = true;
     }
 
-    public static void logoKickHit(LivingEntity user, LivingEntity hitEnemy) {
-        float damageModifier = 5 + user.fallDistance;
 
-        if (user.hasEffect(EffectCore.PUNCH)) {
-            damageModifier = damageModifier + user.getEffect(EffectCore.PUNCH).getAmplifier() + 1;
-        }
-
-        if (user.hasEffect(MobEffects.DAMAGE_BOOST)) {
-            damageModifier = damageModifier + (user.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() + 1) * 3;
-        }
-        DamageSource damageSource = new DamageSource(
-                user.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), user, user, user.position());
-
-        if (user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue() > 0) {
-            damageModifier = (float) (damageModifier * user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue());
-        }
-
-        hitEnemy.hurt(damageSource, damageModifier);
-        hitEnemy.push(user.getLookAngle().scale(3));
-        ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION, user.getX(), user.getY() + 0.5, user.getZ(), 1, 0, 0, 0, 0);
-
-        if (hitEnemy.getHealth() < hitEnemy.getMaxHealth() / 3) {
-            hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
-        }
-        user.resetFallDistance();
-        user.hurtMarked = true;}
-
-    public static void groundKickHit(LivingEntity user, LivingEntity hitEnemy) {
-        float damageModifier = 15;
-
-        if (user.hasEffect(EffectCore.PUNCH)) {
-            damageModifier = damageModifier + user.getEffect(EffectCore.PUNCH).getAmplifier() + 1;
-        }
-
-        if (user.hasEffect(MobEffects.DAMAGE_BOOST)) {
-            damageModifier = damageModifier + (user.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() + 1) * 3;
-        }
-
-        if (user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue() > 0) {
-            damageModifier = (float) (damageModifier * user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue());
-        }
-
-        DamageSource damageSource = new DamageSource(
-                user.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(RiderDamageTypes.RIDER_KICK), user, user, user.position());
-
-        hitEnemy.hurt(damageSource, damageModifier);
-        hitEnemy.push(user.getLookAngle().scale(3));
-        ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION, user.getX(), user.getY() + 0.5, user.getZ(), 1, 0, 0, 0, 0);
-
-        if (hitEnemy.getHealth() < hitEnemy.getMaxHealth() / 3) {
-            hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
-        }
-        user.hurtMarked = true;
-    }
 
     public static void detectHit(LivingEntity user) {
         List<LivingEntity> nearbyEnemies = user.level().getEntitiesOfClass(LivingEntity.class, user.getBoundingBox().inflate(0.5 + user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue()), enemy -> (enemy != user));
@@ -203,12 +171,12 @@ public class RiderKick {
             enemyDetected = true;
             switch (user.getData(USED_ABILITY)) {
                 case "kabuto_rider_kick":
-                    groundKickHit(user, enemy);
+                    kickHit(user, enemy, "kabuto");
                     break;
                 case "kiva_rider_kick":
-                    logoKickHit(user, enemy);
+                    kickHit(user, enemy, "kiva_logo");
                 default:
-                    normalKickHit(user, enemy);
+                    kickHit(user, enemy, "normal");
             }
         }
         if (enemyDetected && !user.getData(USED_ABILITY).equals("kabuto_rider_kick")) {
