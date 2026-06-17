@@ -64,6 +64,12 @@ public class RiderDriverItem extends RiderArmorItem {
     public ResourceLocation abilitySlotOne = null;
     public ResourceLocation abilitySlotTwo = null;
 
+    public String abilityEffectStateOne = "";
+    public String abilityEffectStateTwo = "";
+    public String abilityEffectStateThree = "";
+    public String abilityEffectStateFour = "";
+    public boolean kickModelModifier = false;
+
     public Boolean Has_Inventory = false;
 
     public Boolean Has_basic_belt_info = true;
@@ -244,8 +250,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void OnTransformation(ItemStack itemstack, LivingEntity rider) {
         if (isTransformed(rider) && !rider.level().isClientSide()) {
-            abilitySlotOne = null;
-            abilitySlotTwo = null;
+            this.abilitySlotOne = null;
+            this.abilitySlotTwo = null;
+            this.kickModelModifier = false;
             for (int n = 0; n < Num_Base_Form_Item; n++) {
                 RiderFormChangeItem form = getFormItem(itemstack, n + 1);
                 form.OnTransformation(itemstack, rider);

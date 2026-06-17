@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.abilities;
 
+import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -21,7 +22,7 @@ public class MiscAbilities {
             }
             user.setDeltaMovement(user.getDeltaMovement().add(user.getLookAngle().scale(2)));
             user.hurtMarked = true;
-            AbilityUtil.cancelAbility(user);
+            AbilityUtil.cancelAbility(user, "", 0);
         }
     }
 
@@ -38,7 +39,20 @@ public class MiscAbilities {
                 if (user instanceof Player player) {
                     player.displayClientMessage(Component.translatable("attack.kamenridercraft.clock_over"), true);
                 }
-                AbilityUtil.cancelAbility(user);
+                AbilityUtil.cancelAbility(user, "", 0);
+            }
+            user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+        }
+    }
+
+    public static void grow(LivingEntity user) {
+        if (!user.level().isClientSide()) {
+            user.setData(ABILITY_COOLDOWN, 50);
+            if (user.getData(ABILITY_TICK) == 0) {
+                user.addEffect(new MobEffectInstance(EffectCore.BIG, 300, 2, true, false));
+            }
+            if (user.getData(ABILITY_TICK) >= 50) {
+                AbilityUtil.cancelAbility(user, "", 0);
             }
             user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
         }

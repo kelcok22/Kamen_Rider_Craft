@@ -49,5 +49,13 @@ public class AttachmentTypes {
             "wings_out", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
     );
 
+    public static final Supplier<AttachmentType<Boolean>> DELAY_ANIMATION_END = REGISTRY.register(
+            "delay_animation_end", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
+    );
+
+    public static final Supplier<AttachmentType<Integer>> DELAY_ANIMATION_END_TICKS = REGISTRY.register(
+            "delay_animation_end_ticks", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
+    );
+
     public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
 }

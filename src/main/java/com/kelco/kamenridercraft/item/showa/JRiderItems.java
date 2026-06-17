@@ -52,7 +52,7 @@ public class JRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(J_STONE_JUMBO_FORMATION.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).KeepItem());
+            }.isGlowing().setSlotOneAbility("grow", 2).setSlotTwoAbility("rider_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
