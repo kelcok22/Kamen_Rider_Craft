@@ -2,9 +2,11 @@ package com.kelco.kamenridercraft.mixin.livingentity;
 
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.neoforged.neoforge.network.PacketDistributor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -40,6 +42,15 @@ public class LivingEntityMixin {
             AbilityUtil.useAbility(rider);
         } else if (rider.getData(ABILITY_TICK) > 0) {
             rider.setData(ABILITY_TICK, 0);
+        }
+
+        if(rider.getData(DELAY_ANIMATION_END)) {
+            if(!(rider.getData(DELAY_ANIMATION_END_TICKS) > 1)) {
+                rider.setData(DELAY_ANIMATION_END, false);
+                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(rider.getStringUUID()));
+            } else {
+                rider.setData(DELAY_ANIMATION_END_TICKS, rider.getData(DELAY_ANIMATION_END_TICKS) - 1);
+            }
         }
 
         this.oldBlockX = rider.getBlockX();

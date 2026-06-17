@@ -28,7 +28,7 @@ public class RiderPunch {
             detectHit(user);
         }
         if (user.getData(ABILITY_TICK) >= 24) {
-            cancelAbility(user);
+            cancelAbility(user, "", 0);
             return;
         }
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
@@ -47,7 +47,7 @@ public class RiderPunch {
             detectHit(user);
         }
         if (user.getData(ABILITY_TICK) >= 40) {
-            cancelAbility(user);
+            cancelAbility(user, "", 0);
             return;
         }
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
@@ -64,6 +64,11 @@ public class RiderPunch {
         if (user.hasEffect(MobEffects.DAMAGE_BOOST)) {
             damageModifier = damageModifier + (user.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() + 1) * 3;
         }
+
+        if (user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue() > 0) {
+            damageModifier = (float) (damageModifier * user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue());
+        }
+
         hitEnemy.hurt(user.damageSources().mobAttack(user), damageModifier);
         hitEnemy.push(user.getLookAngle().scale(3));
         user.push(user.getLookAngle().scale(-1.1));
@@ -71,13 +76,17 @@ public class RiderPunch {
         if (hitEnemy.getHealth() < hitEnemy.getMaxHealth() / 3) {
             hitEnemy.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 40, 3, false, true));
         }
-        cancelAbility(user);
     }
 
     public static void detectHit(LivingEntity user) {
-        List<LivingEntity> nearbyEnemies = user.level().getEntitiesOfClass(LivingEntity.class, user.getBoundingBox().inflate(1.5), enemy -> (enemy != user));
+        boolean enemyDetected = false;
+        List<LivingEntity> nearbyEnemies = user.level().getEntitiesOfClass(LivingEntity.class, user.getBoundingBox().inflate(0.5 + user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue()), enemy -> (enemy != user));
         for (LivingEntity enemy : nearbyEnemies) {
+            enemyDetected = true;
             punchHit(user, enemy);
+        }
+        if (enemyDetected) {
+            cancelAbility(user, "", 10);
         }
     }
 }

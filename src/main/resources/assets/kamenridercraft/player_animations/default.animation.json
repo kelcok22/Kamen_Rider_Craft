@@ -118,7 +118,7 @@
 					"rotation": {
 						"0.0": [30, 0, 0],
 						"0.1667": [30, 0, 0],
-						"0.3333": [-18.32163, 0, 0],
+						"0.3333": [-0.82163, 0, 0],
 						"0.375": [-15, 0, 0]
 					},
 					"position": {
@@ -504,7 +504,32 @@
 			}
 		},
 		"default.land": {
-			"loop": true
+			"animation_length": 1,
+			"bones": {
+				"body": {
+					"rotation": [35.9079, 42.2303, -9.1163],
+					"position": [0, -8, 0]
+				},
+				"left_leg": {
+					"rotation": [33.702, -51.3742, 23.2412],
+					"position": [4, 1, -4]
+				},
+				"right_leg": {
+					"rotation": [-40.2058, -3.5122, 26.1185],
+					"position": [1, 10, -4]
+				},
+				"head": {
+					"rotation": [-24.1199, -29.3102, 38.4463]
+				},
+				"right_arm": {
+					"rotation": [-16.7365, 5.1879, 116.7363],
+					"position": [-3, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [-78.7673, 36.0165, 18.6621],
+					"position": [0, -1, -2]
+				}
+			}
 		},
 		"default.air_punch": {
 			"animation_length": 0.375,

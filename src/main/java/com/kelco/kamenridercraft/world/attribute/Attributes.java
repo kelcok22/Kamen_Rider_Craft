@@ -30,11 +30,33 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
     public static final DeferredHolder<Attribute, Attribute> WINGS_OUT = ATTRIBUTES.register("wing_out",
-            () -> new RangedAttribute(
+            () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.wings_out",
-                    0,
-                    0,
-                    1
+                    false
+            ).setSyncable(true)
+    );
+
+
+    public static final DeferredHolder<Attribute, Attribute> OVERWRITE_HELD_ITEM = ATTRIBUTES.register("overwrite_held_item",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.force_held_item",
+                    false
+            ).setSyncable(true)
+    );
+
+
+    public static final DeferredHolder<Attribute, Attribute> DISABLE_HELD_ITEM = ATTRIBUTES.register("disable_held_item",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.disable_held_item",
+                    false
+            ).setSyncable(true)
+    );
+
+
+    public static final DeferredHolder<Attribute, Attribute> DISABLE_CROUCH_ANIMATION = ATTRIBUTES.register("disable_crouch_animation",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.disable_crouch_animation",
+                    false
             ).setSyncable(true)
     );
 

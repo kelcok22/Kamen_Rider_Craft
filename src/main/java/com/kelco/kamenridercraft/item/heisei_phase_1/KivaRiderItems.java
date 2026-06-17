@@ -90,7 +90,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.allowRiderKick().addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.setSlotOneAbility("rider_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARULU_FUESTLE = ITEMS.register("garulufuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_garulu","kiva","kivat_belt_g",

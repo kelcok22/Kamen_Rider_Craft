@@ -1,8 +1,11 @@
 package com.kelco.kamenridercraft.abilities;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
@@ -17,17 +20,35 @@ import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormI
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class AbilityUtil {
-    public static void cancelAbility(LivingEntity user) {
+    public static void cancelAbility(LivingEntity user, String afterAnimation, int delayAnimationEndTicks) {
         if (!user.level().isClientSide()) {
             user.setData(USED_ABILITY, "");
             user.setData(ABILITY_TICK, 0);
             user.setInvulnerable(false);
-            PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
+                driverItem.kickModelModifier = false;
+            }
+            if (delayAnimationEndTicks == 0) {
+                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+            } else {
+                user.setData(DELAY_ANIMATION_END, true);
+                user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
+            }
+            if (!afterAnimation.isEmpty()){
+                switch (afterAnimation) {
+                    case "land":
+                        PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+                        PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.land", user.getStringUUID()));
+                        user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 5, true, false));
+                        break;
+
+                }
+            }
         }
     }
 
     public static void calculateAbility(LivingEntity user, String ability) {
-        if (!user.level().isClientSide() && user.getData(ABILITY_TICK) == 0 && user.getData(ABILITY_COOLDOWN) == 0) {
+        if (!user.level().isClientSide() && user.getData(ABILITY_TICK) == 0 && user.getData(ABILITY_COOLDOWN) == 0 && !user.isSleeping()) {
             AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
             boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.Rider.toLowerCase().contains("ohma"));
             switch (ability) {
@@ -62,7 +83,7 @@ public class AbilityUtil {
                     }
                     break;
                 case "kabuto_rider_kick":
-                    if (!user.isFallFlying()) {
+                    if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
                             user.setData(USED_ABILITY, "kabuto_rider_kick");
@@ -85,6 +106,14 @@ public class AbilityUtil {
                         user.setData(USED_ABILITY, "clock_up");
                     } else if (!costMeter) {
                         user.setData(USED_ABILITY, "clock_up");
+                    }
+                    break;
+                case "grow":
+                    if (costMeter && abilityMeter.getValue() >= 100) {
+                        abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
+                        user.setData(USED_ABILITY, "grow");
+                    } else if (!costMeter) {
+                        user.setData(USED_ABILITY, "grow");
                     }
                     break;
             }
@@ -112,6 +141,9 @@ public class AbilityUtil {
                     break;
                 case "clock_up":
                     MiscAbilities.clockUp(user);
+                    break;
+                case "grow":
+                    MiscAbilities.grow(user);
                     break;
             }
         }
