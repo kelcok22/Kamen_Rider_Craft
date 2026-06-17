@@ -62,6 +62,9 @@ public class RiderKick {
         if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
             cancelAbility(user, "land", 0);
             user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            if (user.fallDistance != 0) {
+                user.fallDistance = user.fallDistance * 0.9F;
+            }
             return;
         }
 
