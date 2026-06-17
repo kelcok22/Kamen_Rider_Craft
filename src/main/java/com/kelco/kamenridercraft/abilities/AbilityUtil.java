@@ -61,7 +61,7 @@ public class AbilityUtil {
                         }
                     }
                     break;
-                case "rider)kick", "kiva_kick", "kabuto_kick":
+                case "rider_kick", "kiva_kick", "kabuto_kick":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
