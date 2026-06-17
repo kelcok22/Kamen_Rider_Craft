@@ -26,7 +26,7 @@ public class LivingEntityMixin {
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
 
-        if (!rider.level().isClientSide() && !(rider instanceof ArmorStand)) {
+        if (!(rider instanceof ArmorStand) && !rider.level().isClientSide()) {
             if (rider.getData(USED_ABILITY).isEmpty() && rider.getData(ABILITY_COOLDOWN) > 0) {
                 rider.setData(ABILITY_COOLDOWN, rider.getData(ABILITY_COOLDOWN) - 1);
             }

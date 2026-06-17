@@ -764,7 +764,7 @@ public class KamenRiderCraftCore {
             registrar.playToClient(
                     AttributeChangeClientPayload.TYPE,
                     AttributeChangeClientPayload.STREAM_CODEC,
-                    ClientPayloadHandler::handleAttributeCLientChange
+                    ClientPayloadHandler::handleAttributeClientChange
             );
 
             registrar.playToServer(
