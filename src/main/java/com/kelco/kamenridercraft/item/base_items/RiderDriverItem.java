@@ -253,6 +253,7 @@ public class RiderDriverItem extends RiderArmorItem {
             this.abilitySlotOne = null;
             this.abilitySlotTwo = null;
             this.kickModelModifier = false;
+            rider.getAttribute(Attributes.ABILITY_METER).setBaseValue(0);
             for (int n = 0; n < Num_Base_Form_Item; n++) {
                 RiderFormChangeItem form = getFormItem(itemstack, n + 1);
                 form.OnTransformation(itemstack, rider);

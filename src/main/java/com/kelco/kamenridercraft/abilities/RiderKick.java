@@ -100,6 +100,9 @@ public class RiderKick {
         }
         if (!user.onGround() || user.isInWater()) {
             cancelAbility(user, "", 0);
+            if (user.fallDistance != 0) {
+                user.fallDistance = user.fallDistance * 0.9F;
+            }
             user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
             return;
         }
