@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.network;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -20,6 +21,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 import java.util.UUID;
@@ -31,6 +34,7 @@ import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormI
 import static com.kelco.kamenridercraft.util.AnimationUtil.getAnimRiderName;
 import static com.kelco.kamenridercraft.util.AnimationUtil.oooComboCheck;
 
+@Mod(value = KamenRiderCraftCore.MOD_ID, dist = Dist.CLIENT)
 public class ClientPayloadHandler {
 
     // Decade Complete summon swing mimicry
@@ -49,9 +53,9 @@ public class ClientPayloadHandler {
         //});
     }
 
-    public static void handleAttributeCLientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
+    public static void handleAttributeClientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
         if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
-            if (entity instanceof Player & !context.player().getStringUUID().equals(data.id()) || !(entity instanceof Player)) {
+            if (!context.player().getStringUUID().equals(data.id())) {
                 switch (data.attributeName()) {
                     case "ball_rot" -> {
                         entity.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.BALL_ROT).getBaseValue());
