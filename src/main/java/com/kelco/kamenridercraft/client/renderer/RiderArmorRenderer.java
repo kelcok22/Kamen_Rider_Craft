@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.client.renderer;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.RiderArmorModel;
 import com.kelco.kamenridercraft.client.render_layers.RiderRenderLayer;
 import com.kelco.kamenridercraft.effects.EffectCore;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
@@ -32,13 +34,11 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                 if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
                     LivingEntity RIDER = renderer2.GetEntity();
                     if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-
-                        ResourceLocation path = appendToPath(getTextureResource(animatable), "_glowmask");
-
-                        return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER) ? RenderType.breezeEyes(path) : null;
+                        ResourceLocation path = appendToPath(model.getTextureResource(animatable,renderer2), "_glowmask");
+                        return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER) ? AutoGlowingTexture.getRenderType(getTextureResource(animatable)) : null;
+                        //return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), renderer2.getCurrentSlot(), RIDER) ? RenderType.entityTranslucentEmissive(path): null;
                     }
-                }
-                return null;
+                }return null;
             }
         });
         if (equipmentSlot == EquipmentSlot.HEAD || equipmentSlot == EquipmentSlot.FEET) {
