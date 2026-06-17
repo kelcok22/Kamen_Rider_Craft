@@ -77,7 +77,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 35, 0, 0, 0, 1);
 				}
-			}.allowRiderKick().IsBeltGlowing().isGlowing().addNeedItemList(NEED_ITEM_DOGABAKI));
+			}.setSlotOneAbility("rider_kick", 1).IsBeltGlowing().isGlowing().addNeedItemList(NEED_ITEM_DOGABAKI));
 
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE = ITEMS.register("wakeupfuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","kiva","kivat_belt",
@@ -293,7 +293,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.hasCape().IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE_NEW_KIVA = ITEMS.register("newwakeupfuestle",
