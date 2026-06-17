@@ -4,7 +4,7 @@
 		{
 			"description": {
 				"identifier": "geometry.unknown",
-"texture_width": 128,
+				"texture_width": 128,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 3.5,
@@ -38,19 +38,18 @@
 					]
 				},
 				{
-					"name": "bone",
+					"name": "cape",
 					"parent": "armorBody",
-					"pivot": [9, 28, 10],
+					"pivot": [-2.05995, 23.46787, 4.8688],
 					"rotation": [0, 10, 110],
 					"cubes": [
-						{"origin": [16.5, 20, 3], "size": [0, 7, 12], "pivot": [16, 25, 3], "rotation": [-7.2273, 59.46687, 18.30432], "uv": [100, 44]},
-						{"origin": [33, 24, 9.5], "size": [0, 7, 12], "pivot": [32, 29, 9], "rotation": [107.5395, -72.84927, -171.06994], "uv": [100, 36]}
-				
+						{"origin": [-2.77367, 22.57458, 2.22024], "size": [0, 7, 12], "pivot": [-3.27367, 27.57458, 2.22024], "rotation": [-7.2273, 59.46687, 18.30432], "uv": [100, 44]},
+						{"origin": [13.72633, 26.57458, 8.72024], "size": [0, 7, 12], "pivot": [12.72633, 31.57458, 8.22024], "rotation": [107.5395, -72.84927, -171.06994], "uv": [100, 36]}
 					]
 				},
 				{
 					"name": "bipedRightArm",
-					"pivot":  [-5, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "armorRightArm",

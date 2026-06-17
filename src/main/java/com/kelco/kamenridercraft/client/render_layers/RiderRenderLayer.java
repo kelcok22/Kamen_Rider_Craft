@@ -31,6 +31,8 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
 
     @Nullable
     protected RenderType getRenderType(T animatable, int run, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
+        if (getTextureResource(animatable, run, entity, belt, slot).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))return null;
+        if (getTextureResource(animatable, run, entity, belt, slot).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))return null;
         return RenderType.entityTranslucent(getTextureResource(animatable, run, entity, belt, slot));
     }
 

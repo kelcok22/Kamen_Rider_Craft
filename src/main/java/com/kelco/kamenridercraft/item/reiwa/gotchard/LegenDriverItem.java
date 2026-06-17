@@ -83,11 +83,12 @@ public class LegenDriverItem extends RiderDriverItem {
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
-		switch (currentSlot) {
-			case HEAD,LEGS,CHEST ->{
-				return true;
-
-			}
+        switch (currentSlot) {
+            case HEAD,CHEST ->{
+                return true;
+            }case LEGS ->{
+                return false;
+            }
 
 			default -> {}
 		}
