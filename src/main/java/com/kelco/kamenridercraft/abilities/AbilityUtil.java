@@ -41,7 +41,6 @@ public class AbilityUtil {
                         PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
                         user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
                         break;
-
                 }
             }
         }
