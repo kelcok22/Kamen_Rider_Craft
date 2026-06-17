@@ -409,7 +409,7 @@
 			"type": "patchouli:text",
 			"anchor": "televi_full_bottle",
 			"title": "Televi Fullbottle",
-			"text": "Appears in:$(li)Kamen Rider Build: Birth! TeleviTV!! VS Kamen Rider Grease (2017, Hyper Battle Video)$(br2)Used to access Build's $(l:build/riders/build#kumatv)Televi$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Build: Birth! KumaTV!! VS Kamen Rider Grease (2017, Hyper Battle Video)$(br2)Used to access Build's $(l:build/riders/build#kumatv)Televi$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
