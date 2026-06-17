@@ -60,7 +60,7 @@ public class RiderKick {
         }
 
         if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
-            cancelAbility(user, "land", 0);
+            cancelAbility(user, "default.land", 0);
             user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
@@ -87,6 +87,70 @@ public class RiderKick {
 
         if (user.getData(ABILITY_TICK) == 36) {
             PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.kick_loop", user.getStringUUID()));
+        }
+
+        user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+    }
+
+
+
+    public static void kivaKick(LivingEntity user) {
+        if (user.getData(ABILITY_TICK) == 0) {
+            user.setData(ABILITY_COOLDOWN, 100);
+            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("kiva.start_kick", user.getStringUUID()));
+            user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 3, true, false));
+        }
+
+        if (user.getData(ABILITY_TICK) == 45) {
+            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
+                driverItem.kickModelModifier = true;
+                ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION, user.getX() + user.getLookAngle().x * 0.75, user.getY() + 1, user.getZ() + user.getLookAngle().x * 0.75, 1, 0, 0, 0, 0);
+            }
+        }
+
+        if (user.getData(ABILITY_TICK) == 60) {
+            if (user.onGround()) {
+                Vec3 initialVec = user.getDeltaMovement();
+                Vec3 climbVec = new Vec3(initialVec.x, 1.35D, initialVec.z);
+                user.setDeltaMovement(climbVec.scale(0.97D));
+            }
+            user.hurtMarked = true;
+        }
+
+        if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 400) {
+            cancelAbility(user, "", 0);
+        }
+
+        if (user.getData(ABILITY_TICK) > 80 && user.onGround()) {
+            cancelAbility(user, "kiva.land", 0);
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            if (user.fallDistance != 0) {
+                user.fallDistance = user.fallDistance * 0.9F;
+            }
+            return;
+        } else if (user.getData(ABILITY_TICK) < 55 && !user.onGround()) {
+            cancelAbility(user, "", 0);
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            return;
+        }
+
+        if (user.getData(ABILITY_TICK) == 80) {
+            PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("kiva.kick", user.getStringUUID()));
+            user.setDeltaMovement(0, 0, 0);
+            Double y = user.getLookAngle().y;
+            if (y < 0.5) y = 0.05d;
+            Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(30);
+            user.setDeltaMovement(look.scale(0.97D));
+            user.hurtMarked = true;
+        }
+
+        if (user.getData(ABILITY_TICK) > 80) {
+            detectHit(user);
+            Random rand = new Random();
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + (rand.nextFloat(0.33F) * rand.nextInt(-1, 1)), user.getZ(), 1, 0, 0, 0, 0);
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + (rand.nextFloat(0.66F) * rand.nextInt(-1, 1)), user.getZ(), 1, 0, 0, 0, 0);
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + (rand.nextFloat(1) * rand.nextInt(-1, 1)), user.getZ(), 1, 0, 0, 0, 0);
         }
 
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
@@ -176,7 +240,7 @@ public class RiderKick {
         for (LivingEntity enemy : nearbyEnemies) {
             enemyDetected = true;
             switch (user.getData(USED_ABILITY)) {
-                case "kabuto_rider_kick":
+                case "kabuto_kick":
                     kickHit(user, enemy, "kabuto");
                     break;
                 case "kiva_rider_kick":
@@ -185,10 +249,17 @@ public class RiderKick {
                     kickHit(user, enemy, "normal");
             }
         }
-        if (enemyDetected && !user.getData(USED_ABILITY).equals("kabuto_rider_kick")) {
-            cancelAbility(user, "land", 10);
-        } else if (enemyDetected) {
-            cancelAbility(user, "", 10);
+        if (enemyDetected) {
+            switch (user.getData(USED_ABILITY)) {
+                case "kiva_kick":
+                    cancelAbility(user, "kiva.land", 10);
+                case "kabuto_kick":
+                    cancelAbility(user, "", 10);
+                    break;
+                default:
+                    cancelAbility(user, "default.land", 10);
+                    break;
+            }
         }
     }
 }
