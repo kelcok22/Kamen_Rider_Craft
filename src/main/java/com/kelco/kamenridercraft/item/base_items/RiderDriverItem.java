@@ -64,10 +64,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public ResourceLocation abilitySlotOne = null;
     public ResourceLocation abilitySlotTwo = null;
 
-    public String abilityEffectStateOne = "";
-    public String abilityEffectStateTwo = "";
-    public String abilityEffectStateThree = "";
-    public String abilityEffectStateFour = "";
     public boolean kickModelModifier = false;
 
     public Boolean Has_Inventory = false;
@@ -253,7 +249,6 @@ public class RiderDriverItem extends RiderArmorItem {
             this.abilitySlotOne = null;
             this.abilitySlotTwo = null;
             this.kickModelModifier = false;
-            rider.getAttribute(Attributes.ABILITY_METER).setBaseValue(0);
             for (int n = 0; n < Num_Base_Form_Item; n++) {
                 RiderFormChangeItem form = getFormItem(itemstack, n + 1);
                 form.OnTransformation(itemstack, rider);

@@ -165,6 +165,9 @@
 					}
 				}
 			}
+		},
+		"kabuto.new": {
+			"loop": true
 		}
 	}
 }

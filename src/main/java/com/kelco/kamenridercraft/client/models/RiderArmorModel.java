@@ -238,13 +238,16 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                     }
                 }
 
-                GeoBone rightLegkick = this.getAnimationProcessor().getBone("rightLegkick");
-                GeoBone armorRightLeg = this.getAnimationProcessor().getBone("armorRightLeg");
+                GeoBone rightLegkick = this.getAnimationProcessor().getBone("rightLegKick");
+                GeoBone armorRightLeg = this.getAnimationProcessor().getBone("rightLegKickRemove");
                 if (rightLegkick != null) {
                     if (belt.kickModelModifier && belt == KivaRiderItems.KIVAT_BELT.get()) {
                         rightLegkick.setHidden(false);
                         armorRightLeg.setHidden(true);
-                    } else rightLegkick.setHidden(true);
+                    } else {
+                        rightLegkick.setHidden(true);
+                        armorRightLeg.setHidden(false);
+                    }
                 }
 
                 if (tire != null) {

@@ -36,35 +36,36 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
+import software.bernie.geckolib.animatable.GeoEntity;
 
 import javax.annotation.Nullable;
 import java.time.LocalDate;
 
-public abstract class NeoBaseHenchmenEntity extends Monster implements RangedAttackMob {
+public abstract class BasicMonsterEntity extends Monster implements RangedAttackMob, NeutralMob, GeoEntity {
 
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
     private boolean swordgunMeleeOnly = false;
 
-    private final RangedSwordgunAttackGoal<NeoBaseHenchmenEntity> swordgunGoal = new RangedSwordgunAttackGoal<>(this, 1.0D, 20, 15.0F, 40);
-    private final RangedBowAttackGoal<NeoBaseHenchmenEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
+    private final RangedSwordgunAttackGoal<BasicMonsterEntity> swordgunGoal = new RangedSwordgunAttackGoal<>(this, 1.0D, 20, 15.0F, 40);
+    private final RangedBowAttackGoal<BasicMonsterEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 1.0D, false) {
         public void stop() {
             super.stop();
-            NeoBaseHenchmenEntity.this.setAggressive(false);
+            BasicMonsterEntity.this.setAggressive(false);
         }
 
         public void start() {
             super.start();
-            NeoBaseHenchmenEntity.this.setAggressive(true);
+            BasicMonsterEntity.this.setAggressive(true);
         }
     };
 
     public String NAME = "shocker_combatman";
 
 
-    public NeoBaseHenchmenEntity(EntityType<? extends NeoBaseHenchmenEntity> type, Level level) {
+    public BasicMonsterEntity(EntityType<? extends BasicMonsterEntity> type, Level level) {
         super(type, level);
         this.goalSelector.addGoal(2, this.swordgunGoal);
         this.reassessWeaponGoal();

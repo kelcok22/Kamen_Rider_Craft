@@ -77,7 +77,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 35, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_kick", 1).IsBeltGlowing().isGlowing().addNeedItemList(NEED_ITEM_DOGABAKI));
+			}.setSlotTwoAbility("kiva_kick", 1).IsBeltGlowing().isGlowing().addNeedItemList(NEED_ITEM_DOGABAKI));
 
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE = ITEMS.register("wakeupfuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","kiva","kivat_belt",
@@ -90,7 +90,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.setSlotTwoAbility("kiva_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARULU_FUESTLE = ITEMS.register("garulufuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_garulu","kiva","kivat_belt_g",

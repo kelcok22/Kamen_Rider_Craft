@@ -36,9 +36,9 @@ public class AbilityUtil {
             }
             if (!afterAnimation.isEmpty()){
                 switch (afterAnimation) {
-                    case "land":
+                    case "default.land", "kiva.land":
                         PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
-                        PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.land", user.getStringUUID()));
+                        PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
                         user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
                         break;
 
@@ -52,43 +52,23 @@ public class AbilityUtil {
             AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
             boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.Rider.toLowerCase().contains("ohma"));
             switch (ability) {
-                case "rider_punch":
+                case "rider_punch", "tojima_punch":
                     if (!user.isFallFlying()) {
                         if (costMeter && abilityMeter.getValue() >= 100) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
-                            user.setData(USED_ABILITY, "rider_punch");
+                            user.setData(USED_ABILITY, ability);
                         } else if (!costMeter) {
-                            user.setData(USED_ABILITY, "rider_punch");
+                            user.setData(USED_ABILITY, ability);
                         }
                     }
                     break;
-                case "tojima_punch":
-                    if (!user.isFallFlying()) {
-                        if (costMeter && abilityMeter.getValue() >= 100) {
-                            abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
-                            user.setData(USED_ABILITY, "tojima_punch");
-                        } else if (!costMeter) {
-                            user.setData(USED_ABILITY, "tojima_punch");
-                        }
-                    }
-                    break;
-                case "rider_kick":
-                    if (!user.isFallFlying()) {
-                        if (costMeter && abilityMeter.getValue() >= 150) {
-                            abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
-                            user.setData(USED_ABILITY, "rider_kick");
-                        } else if (!costMeter) {
-                            user.setData(USED_ABILITY, "rider_kick");
-                        }
-                    }
-                    break;
-                case "kabuto_rider_kick":
+                case "rider)kick", "kiva_kick", "kabuto_kick":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
-                            user.setData(USED_ABILITY, "kabuto_rider_kick");
+                            user.setData(USED_ABILITY, ability);
                         } else if (!costMeter) {
-                            user.setData(USED_ABILITY, "kabuto_rider_kick");
+                            user.setData(USED_ABILITY, ability);
                         }
                     }
                     break;
@@ -100,20 +80,12 @@ public class AbilityUtil {
                         user.setData(USED_ABILITY, "flight_boost");
                     }
                     break;
-                case "clock_up":
+                case "clock_up", "grow":
                     if (costMeter && abilityMeter.getValue() >= 100) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
-                        user.setData(USED_ABILITY, "clock_up");
+                        user.setData(USED_ABILITY, ability);
                     } else if (!costMeter) {
-                        user.setData(USED_ABILITY, "clock_up");
-                    }
-                    break;
-                case "grow":
-                    if (costMeter && abilityMeter.getValue() >= 100) {
-                        abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
-                        user.setData(USED_ABILITY, "grow");
-                    } else if (!costMeter) {
-                        user.setData(USED_ABILITY, "grow");
+                        user.setData(USED_ABILITY, ability);
                     }
                     break;
             }
@@ -133,8 +105,11 @@ public class AbilityUtil {
                 case "rider_kick":
                     RiderKick.genericRiderKick(user);
                     break;
-                case "kabuto_rider_kick":
+                case "kabuto_kick":
                     RiderKick.kabutoKick(user);
+                    break;
+                case "kiva_kick":
+                    RiderKick.kivaKick(user);
                     break;
                 case "flight_boost":
                     MiscAbilities.flightBoost(user);

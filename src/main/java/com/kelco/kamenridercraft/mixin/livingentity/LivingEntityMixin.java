@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,7 +26,7 @@ public class LivingEntityMixin {
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
 
-        if (!rider.level().isClientSide()) {
+        if (!rider.level().isClientSide() && !(rider instanceof ArmorStand)) {
             if (rider.getData(USED_ABILITY).isEmpty() && rider.getData(ABILITY_COOLDOWN) > 0) {
                 rider.setData(ABILITY_COOLDOWN, rider.getData(ABILITY_COOLDOWN) - 1);
             }
