@@ -79,7 +79,7 @@ public class ClientAbilityUtil {
             case "rider_kick", "kabuto_kick", "secondary_rider_kick" ->
                     ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/rider_kick.png");
             case "kiva_kick" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/wakeupfuestle.png");
-            case "wizard_kick" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/kick_strike_ring.png");
+            case "flame_wizard_kick" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/kick_strike_ring.png");
             case "flight_boost" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/glide.png");
             case "clock_up" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/clock_up_pad.png");
             case "grow" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/big.png");

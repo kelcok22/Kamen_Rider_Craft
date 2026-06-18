@@ -283,8 +283,10 @@ public class RiderKick {
         }
 
 
-        if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 400) {
+        if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 400 || (user.getData(ABILITY_TICK) <= 41 && user.fallDistance > 1.5)) {
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
             cancelAbility(user, "", 0);
+            return;
         }
 
         if (user.getData(ABILITY_TICK) > 45 && user.onGround()) {
