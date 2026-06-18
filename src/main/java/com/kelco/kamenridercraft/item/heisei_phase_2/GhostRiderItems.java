@@ -241,7 +241,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/belt_with_brace.geo.json").addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).addShiftForm(NECROM_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeBeltModel("geo/belt_with_brace.geo.json").changeModel("necrom.geo.json").addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).addShiftForm(NECROM_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> YUJOU_BURST_DAMASHII = ITEMS.register("yujou_burst_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"yujou_burst_necrom_damashii","necrom","ghostdriver_belt",
@@ -362,6 +362,20 @@ public class GhostRiderItems {
 				}
 			}.addAlternative(KANON_SPECTER_DAMASHII.get()).alsoChange2ndSlot(KANON_SPECTER_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
+
+    public static final DeferredItem<Item> DARK_NECROM_GHOST_EYECON = ITEMS.register("dark_necrom_ghost_eyecon",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","dark_necrom","dark_necrom_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 70, 0, 0, 0, 1);
+                }
+            }.changeBeltModel("geo/belt_with_brace.geo.json").changeModel("necrom.geo.json"));
+
 	public static final DeferredItem<Item> DARK_NECROM_RED_GHOST_EYECON = ITEMS.register("dark_necrom_red_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_red_damashii","dark_necrom","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
@@ -371,7 +385,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(0).changeModel("damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(0).changeModel("dark_necrom_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_BLUE_GHOST_EYECON = ITEMS.register("dark_necrom_blue_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_blue_damashii","dark_necrom","ghostdriver_belt",
@@ -382,7 +396,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(0).changeModel("damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(0).changeModel("dark_necrom_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_YELLOW_GHOST_EYECON = ITEMS.register("dark_necrom_yellow_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_yellow_damashii","dark_necrom","ghostdriver_belt",
@@ -393,7 +407,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(0).changeModel("damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(0).changeModel("dark_necrom_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_NECROM_PINK_GHOST_EYECON = ITEMS.register("dark_necrom_pink_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_pink_damashii","dark_necrom","ghostdriver_belt",
@@ -404,7 +418,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(0).changeModel("damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(0).changeModel("dark_necrom_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEW_ORE_GHOST_EYECON = ITEMS.register("new_ore_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"new_ore_damashii","ghost","ghostdriver_belt",
@@ -1220,19 +1234,19 @@ public class GhostRiderItems {
 					.addExtraBaseFormItems(KANON_SPECTER_DAMASHII).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_RED = ITEMS.register("proto_mega_ulorder_red",
-			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",DARK_NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.addExtraBaseFormItems(DARK_NECROM_RED_GHOST_EYECON).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_BLUE = ITEMS.register("proto_mega_ulorder_blue",
-			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",DARK_NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.addExtraBaseFormItems(DARK_NECROM_BLUE_GHOST_EYECON).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_YELLOW = ITEMS.register("proto_mega_ulorder_yellow",
-			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",DARK_NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.addExtraBaseFormItems(DARK_NECROM_YELLOW_GHOST_EYECON).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_PINK = ITEMS.register("proto_mega_ulorder_pink",
-			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",DARK_NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.addExtraBaseFormItems(DARK_NECROM_PINK_GHOST_EYECON).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> NEW_GHOST_DRIVER = ITEMS.register("new_ghost_driver",

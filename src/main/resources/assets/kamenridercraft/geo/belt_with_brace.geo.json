@@ -63,21 +63,21 @@
 				},
 				{
 					"name": "bipedRightArm",
-					"pivot": [-4, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "armorRightArm",
 					"parent": "bipedRightArm",
-					"pivot": [-4, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "bipedLeftArm",
-					"pivot": [4, 22, 0]
+					"pivot": [5, 22, 0]
 				},
 				{
 					"name": "armorLeftArm",
 					"parent": "bipedLeftArm",
-					"pivot": [4, 22, 0],
+					"pivot": [5, 22, 0],
 					"cubes": [
 						{
 							"origin": [3.65, 8, -8],
