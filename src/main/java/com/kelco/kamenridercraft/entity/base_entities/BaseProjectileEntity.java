@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.entity.projectiles;
+package com.kelco.kamenridercraft.entity.base_entities;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import net.minecraft.core.BlockPos;

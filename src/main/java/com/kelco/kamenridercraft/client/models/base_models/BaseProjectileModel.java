@@ -1,26 +1,24 @@
-package com.kelco.kamenridercraft.client.models;
+package com.kelco.kamenridercraft.client.models.base_models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entity.projectiles.CellMedalProjectileEntity;
+import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
-public class CellMedalModel extends GeoModel<CellMedalProjectileEntity> {
-    public String textureChoice;
-
+public class BaseProjectileModel extends GeoModel<BaseProjectileEntity> {
     @Override
-    public ResourceLocation getModelResource(CellMedalProjectileEntity animatable) {
+    public ResourceLocation getModelResource(BaseProjectileEntity animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/cell_medal.geo.json");
     }
 
     @Override
-    public ResourceLocation getTextureResource(CellMedalProjectileEntity animatable) {
+    public ResourceLocation getTextureResource(BaseProjectileEntity animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/cell_medal.png");
     }
 
     @Override
-    public ResourceLocation getAnimationResource(CellMedalProjectileEntity animatable) {
+    public ResourceLocation getAnimationResource(BaseProjectileEntity animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/cell_medal.animation.json");
     }
 

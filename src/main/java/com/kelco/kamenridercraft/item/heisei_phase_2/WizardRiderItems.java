@@ -79,7 +79,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.allowRiderKick().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.setSlotTwoAbility("flame_wizard_kick", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING = ITEMS.register("water_ring",

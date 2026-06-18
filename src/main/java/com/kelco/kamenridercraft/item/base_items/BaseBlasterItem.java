@@ -4,9 +4,6 @@ package com.kelco.kamenridercraft.item.base_items;
 import com.google.common.collect.ImmutableMultimap;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
-import com.kelco.kamenridercraft.entity.projectiles.CellMedalProjectileEntity;
-import com.kelco.kamenridercraft.entity.projectiles.LaserProjectileEntity;
-import com.kelco.kamenridercraft.entity.projectiles.RocketProjectileEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
@@ -109,23 +106,6 @@ public class BaseBlasterItem extends BowItem {
                 user.level().addFreshEntity(largefireball);
                 break;
 
-            case LASER:
-                LaserProjectileEntity laserProjectile = new LaserProjectileEntity(user, user.level());
-                laserProjectile.setNoGravity(true);
-                laserProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 0F + accuracyMod);
-                laserProjectile.damageValue = this.projDamage;
-                laserProjectile.setColor(projColor);
-                laserProjectile.setShape(projShape);
-                user.level().addFreshEntity(laserProjectile);
-                break;
-
-            case CELL_MEDAL:
-                CellMedalProjectileEntity cellProjectile = new CellMedalProjectileEntity(user, user.level());
-                cellProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 3.5f, 0F + accuracyMod);
-                cellProjectile.damageValue = this.projDamage;
-                user.level().addFreshEntity(cellProjectile);
-                break;
-
             case DRAGON_FIREBALL:
                 DragonFireball dragonfireball = new DragonFireball(user.level(), user, vec3.normalize());
                 dragonfireball.setPos(dragonfireball.getX(), user.getY(0.5D) + 0.5D, dragonfireball.getZ());
@@ -144,15 +124,6 @@ public class BaseBlasterItem extends BowItem {
                 pearl.setPos(pearl.getX(), user.getY(0.5D) + 0.5D, pearl.getZ());
                 pearl.addDeltaMovement(vec3.scale(3));
                 user.level().addFreshEntity(pearl);
-                break;
-
-            case ROCKET:
-                RocketProjectileEntity rocketProjectile = new RocketProjectileEntity(user, user.level());
-                rocketProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + accuracyMod);
-                rocketProjectile.explosionPower = this.explosionPower;
-                rocketProjectile.setColor(projColor);
-                rocketProjectile.setShape(projShape);
-                user.level().addFreshEntity(rocketProjectile);
                 break;
 
             case WIND_CHARGE:

@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
-import com.kelco.kamenridercraft.entity.projectiles.BaseProjectileEntity;
+import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

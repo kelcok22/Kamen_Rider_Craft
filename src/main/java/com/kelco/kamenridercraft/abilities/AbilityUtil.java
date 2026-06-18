@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
+import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class AbilityUtil {
@@ -26,7 +27,7 @@ public class AbilityUtil {
             user.setData(ABILITY_TICK, 0);
             user.setInvulnerable(false);
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
-                driverItem.kickModelModifier = false;
+                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
             }
             if (delayAnimationEndTicks == 0) {
                 PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
@@ -36,7 +37,7 @@ public class AbilityUtil {
             }
             if (!afterAnimation.isEmpty()){
                 switch (afterAnimation) {
-                    case "default.land", "kiva.land":
+                    case "default.land", "kiva.land", "wizard.land", "default.flipped_land":
                         PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
                         PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
                         user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
@@ -61,7 +62,7 @@ public class AbilityUtil {
                         }
                     }
                     break;
-                case "rider_kick", "kiva_kick", "kabuto_kick":
+                case "rider_kick", "kiva_kick", "kabuto_kick", "flame_wizard_kick", "secondary_rider_kick":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
@@ -104,11 +105,17 @@ public class AbilityUtil {
                 case "rider_kick":
                     RiderKick.genericRiderKick(user);
                     break;
+                case "secondary_rider_kick":
+                    RiderKick.secondaryRiderKick(user);
+                    break;
                 case "kabuto_kick":
                     RiderKick.kabutoKick(user);
                     break;
                 case "kiva_kick":
                     RiderKick.kivaKick(user);
+                    break;
+                case "flame_wizard_kick":
+                    RiderKick.flameWizardKick(user);
                     break;
                 case "flight_boost":
                     MiscAbilities.flightBoost(user);

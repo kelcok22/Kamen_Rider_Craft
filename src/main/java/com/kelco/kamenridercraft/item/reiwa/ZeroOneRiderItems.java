@@ -55,7 +55,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 5, 0, 0, 0, 1);
 				}
-			});
+			}.isGlowing());
 
 
 	public static final DeferredItem<Item> RISING_HOPPER_PROGRISEKEY = ITEMS.register("rising_hopper_progrisekey",

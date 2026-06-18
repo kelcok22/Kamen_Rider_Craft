@@ -16,6 +16,8 @@ import com.kelco.kamenridercraft.client.gui.machine_block.IxaMachineBlockGuiScre
 import com.kelco.kamenridercraft.client.gui.overlays.AbilityHudOverlay;
 import com.kelco.kamenridercraft.client.gui.storage_item.*;
 import com.kelco.kamenridercraft.client.renderer.*;
+import com.kelco.kamenridercraft.client.renderer.base_renderers.BaseEffectRenderer;
+import com.kelco.kamenridercraft.client.renderer.base_renderers.BaseProjectileRenderer;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
@@ -602,10 +604,9 @@ public class KamenRiderCraftCore {
 
             event.registerEntityRenderer(MobsCore.WEAPON_PROJECTILE.get(), ThrownWeaponRenderer::new);
             event.registerEntityRenderer(MobsCore.SHURIKEN_PROJECTILE.get(), ThrownShurikenRenderer::new);
-            event.registerEntityRenderer(MobsCore.LASER_PROJECTILE.get(), LaserProjectileRenderer::new);
-            event.registerEntityRenderer(MobsCore.CELL_MEDAL_PROJECTILE.get(), CellMedalProjectileRenderer::new);
-            event.registerEntityRenderer(MobsCore.ROCKET_PROJECTILE.get(), RocketProjectileRenderer::new);
             event.registerEntityRenderer(MobsCore.BASE_PROJECTILE.get(), BaseProjectileRenderer::new);
+
+            event.registerEntityRenderer(MobsCore.BASE_EFFECT.get(), BaseEffectRenderer::new);
 
 
         }

@@ -1,7 +1,7 @@
-package com.kelco.kamenridercraft.client.renderer;
+package com.kelco.kamenridercraft.client.renderer.base_renderers;
 
-import com.kelco.kamenridercraft.client.models.LaserModel;
-import com.kelco.kamenridercraft.entity.projectiles.LaserProjectileEntity;
+import com.kelco.kamenridercraft.client.models.base_models.BaseProjectileModel;
+import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -12,13 +12,13 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 import javax.annotation.Nullable;
 
-public class LaserProjectileRenderer extends GeoEntityRenderer<LaserProjectileEntity> {
+public class BaseProjectileRenderer extends GeoEntityRenderer<BaseProjectileEntity> {
 
-    public LaserProjectileRenderer(EntityRendererProvider.Context renderManager) {
-        super(renderManager, new LaserModel());
+    public BaseProjectileRenderer(EntityRendererProvider.Context renderManager) {
+        super(renderManager, new BaseProjectileModel());
     }
 
-    public void render(LaserProjectileEntity entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight) {
+    public void render(BaseProjectileEntity entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight) {
         poseStack.pushPose();
         poseStack.mulPose(Axis.YP.rotationDegrees(entity.getYRot()));
         poseStack.mulPose(Axis.XP.rotationDegrees(-entity.getXRot()));
@@ -27,9 +27,7 @@ public class LaserProjectileRenderer extends GeoEntityRenderer<LaserProjectileEn
         poseStack.popPose();
     }
 
-    @Override
-    public RenderType getRenderType(LaserProjectileEntity animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
+    public RenderType getRenderType(BaseProjectileRenderer animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
         return RenderType.entityTranslucentEmissive(texture, true);
     }
-
 }
