@@ -334,7 +334,7 @@ public class RiderKick {
         if (user.getData(ABILITY_TICK) > 65 && user.getData(ABILITY_TICK) < 70) {
             detectHit(user);
         }
-        if (user.getData(ABILITY_TICK) >= 70) {
+        if (user.getData(ABILITY_TICK) >= 90) {
             cancelAbility(user, "", 0);
             return;
         }
@@ -402,7 +402,7 @@ public class RiderKick {
                 case "kiva_kick":
                     cancelAbility(user, "kiva.land", 10);
                 case "kabuto_kick":
-                    cancelAbility(user, "", 10);
+                    cancelAbility(user, "", 30);
                     break;
                 case "secondary_rider_kick":
                     cancelAbility(user, "default.flipped_land", 10);
