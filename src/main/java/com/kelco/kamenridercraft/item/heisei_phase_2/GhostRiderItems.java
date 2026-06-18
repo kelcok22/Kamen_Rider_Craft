@@ -1117,7 +1117,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).changeModel("gamma_superior.geo.json").changeBeltModel("geo/belt_with_brace.geo.json").alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON_CAMILLE = ITEMS.register("transform_gamma_eyecon_camille",
 			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_superior_damashii_gold","gamma_superior","gamma_superior_belt",
