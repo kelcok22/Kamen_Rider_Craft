@@ -193,6 +193,14 @@
 "item.kamenridercraft.masked_rider.desc": "HosephHoestar - Masked Rider",
 "item.kamenridercraft.masked_rider_music_disc.desc": "HosephHoestar - Masked Rider",
 
+"item.kamenridercraft.ai_ga_tomaranai_music_disc": "Ai ga Tomaranai Music Disc",
+"item.kamenridercraft.ai_ga_tomaranai.desc": "HosephHoestar - Ai ga Tomaranai",
+"item.kamenridercraft.ai_ga_tomaranai_music_disc.desc": "HosephHoestar - Ai ga Tomaranai",
+
+"item.kamenridercraft.kokoro_tsunagu_ai_music_disc": "Kokoro Tsunagu Ai Music Disc",
+"item.kamenridercraft.kokoro_tsunagu_ai.desc": "HosephHoestar - Kokoro Tsunagu Ai",
+"item.kamenridercraft.kokoro_tsunagu_ai_music_disc.desc": "HosephHoestar - Kokoro Tsunagu Ai",
+
 "item.kamenridercraft.kamen_rider_kuuga_music_disc": "Kamen Rider Kuuga! Music Disc",
 "item.kamenridercraft.kamen_rider_kuuga.desc": "HosephHoestar - Kamen Rider Kuuga!",
 "item.kamenridercraft.kamen_rider_kuuga_music_disc.desc": "HosephHoestar - Kamen Rider Kuuga!",
@@ -547,6 +555,8 @@
 "effect.kamenridercraft.portal_cooldown.description": "Prevents you from using a portal.",
 "effect.kamenridercraft.rider_poison_hand.desc": "Poisons any mob you hit with an empty hand.",
 "effect.kamenridercraft.rider_poison_hand.description": "Poisons any mob you hit with an empty hand.",
+"effect.kamenridercraft.hazard_level.desc": "Causes Nebula Bugsters to spawn with the Bugster Virus effect.",
+"effect.kamenridercraft.hazard_level.description": "Causes Nebula Bugsters to spawn with the Bugster Virus effect.",
 "effect.kamenridercraft.mirror_noises.desc": "Causes Mirror Riders to spawn around you.",
 "effect.kamenridercraft.mirror_noises.description": "Causes Mirror Riders to spawn around you.",
 "effect.kamenridercraft.glide.desc":"Allows you to fly as if wearing elytra",
@@ -664,7 +674,7 @@
 "henshin.kamenridercraft.another_zi_o": "§dZi-O!",
 "henshin.kamenridercraft.another_zi_o_ii": "§gZi-O II!",
 "henshin.kamenridercraft.woz": "Woz! Action! Toei Future Time!",
-  "henshin.kamenridercraft.another_den_o": "<Another Den-O>§cOre, Sanjou...",
+"henshin.kamenridercraft.another_den_o": "<Another Den-O>§cOre, Sanjou...",
 "henshin.kamenridercraft.ginga": "<§5Kamen Rider Ginga§f> I have come to destroy everything you hold dear.",
 "henshin.kamenridercraft.yaminin": "§4<Yaminin> §cI won't lose to a rookie like you!",
 "henshin.kamenridercraft.quartzer": "<§6Kamen Rider Barlckxs§f> §6Henshin!§f\nRider Time! §6Kamen Rider Barlckxs!§f\n<§2Kamen Rider Zonjis§f> §6Henshin!§f\nRider Time! §2Kamen Rider Zonjis!§f\n<§1Kamen Rider Zamonas§f> §6Henshin!§f\nRider Time! §1Kamen Rider Zamonas!§f",
@@ -851,7 +861,7 @@
 "message.kamenridercraft.wiseman_teleport":"Teleport, now.",
 
 
-  "message.kamenridercraft.woz_shinobi":"§aAction! Touei! Future Time! §5Dare ja? Ore ja? Ninja! Futurering Shinobi! Shinobi!",
+"message.kamenridercraft.woz_shinobi":"§aAction! Touei! Future Time! §5Dare ja? Ore ja? Ninja! Futurering Shinobi! Shinobi!",
 "message.kamenridercraft.woz_quiz":"§aAction! Touei! Future Time! §4Fashion! Passion! Question! §9Futurering Quiz! Quiz!",
 "message.kamenridercraft.woz_kikai":"§aAction! Touei! Future Time! §6Dekai! Hakai! Gōkai! Futurering Kikai! Kikai!",
 
@@ -6920,7 +6930,7 @@
 
 "item.kamenridercraft.hiden_risephone": "Hiden Risephone",
 "item.kamenridercraft.risehopper_spawn_egg": "Risehopper",
-  "item.kamenridercraft.aims_risephone": "A.I.M.S Risephone",
+"item.kamenridercraft.aims_risephone": "A.I.M.S Risephone",
 
 "item.kamenridercraft.progrise_holder": "Progrise Holder",
 "item.kamenridercraft.ikazuchi_progrise_holder": "Ikazuchi's Progrise Holder",
@@ -8711,8 +8721,8 @@
 "kamenridercraft:gun_capsem.form": "Form: Gun Shadow",
 "item.kamenridercraft.wolf_capsem": "Wolf Capsem",
 "kamenridercraft:wolf_capsem.form": "Form: Wolf Shadow",
-  "item.kamenridercraft.midnight_shadow_capsem": "Midnight Shadow Capsem",
-  "kamenridercraft:midnight_shadow_capsem.form": "Form: Midnight Shadow",
+"item.kamenridercraft.midnight_shadow_capsem": "Midnight Shadow Capsem",
+"kamenridercraft:midnight_shadow_capsem.form": "Form: Midnight Shadow",
 "item.kamenridercraft.extra_capsem": "Extra Capsem",
 "kamenridercraft:extra_capsem.form": "Form: Base Form",
 "item.kamenridercraft.shock_capsem": "Shock Capsem",
@@ -9209,7 +9219,7 @@
 "entity.kamenridercraft.woz": "Kamen Rider Woz (White Woz)",
 "entity.kamenridercraft.kasshine": "Kasshine",
 "entity.kamenridercraft.another_zi_o": "Another Zi-O",
-  "entity.kamenridercraft.another_den_o": "Another Den-O",
+"entity.kamenridercraft.another_den_o": "Another Den-O",
 "entity.kamenridercraft.yaminin": "Yaminin",
 "entity.kamenridercraft.barlckxs": "Kamen Rider Barlckxs",
 "entity.kamenridercraft.zonjis": "Kamen Rider Zonjis",
@@ -9509,7 +9519,7 @@
 "item.kamenridercraft.woz_spawn_egg": "Kamen Rider Woz Spawn Egg",
 "item.kamenridercraft.kasshine_spawn_egg": "Kasshine Spawn Egg",
 "item.kamenridercraft.another_zi_o_spawn_egg": "Another Zi-O Spawn Egg",
-  "item.kamenridercraft.another_den_o_spawn_egg": "Another Den-O Spawn Egg",
+"item.kamenridercraft.another_den_o_spawn_egg": "Another Den-O Spawn Egg",
 "item.kamenridercraft.yaminin_spawn_egg": "Yaminin Spawn Egg",
 "item.kamenridercraft.barlckxs_spawn_egg": "Kamen Rider Barlckxs Spawn Egg",
 "item.kamenridercraft.zonjis_spawn_egg": "Kamen Rider Zonjis Spawn Egg",
@@ -9711,8 +9721,8 @@
 "block.kamenridercraft.gaohliner_logo_sider": "GaohLiner Logo (Right Side)",
 "block.kamenridercraft.zero_liner_green": "ZeroLiner Green",
 "block.kamenridercraft.ghostliner_wheel": "GhostLiner Wheel",
-  "block.kamenridercraft.another_denliner_windo": "Another DenLiner Window",
-  "block.kamenridercraft.another_denliner_side_with_line": "Another DenLiner Side (Line)",
+"block.kamenridercraft.another_denliner_windo": "Another DenLiner Window",
+"block.kamenridercraft.another_denliner_side_with_line": "Another DenLiner Side (Line)",
 
 "block.kamenridercraft.ixa_machine_block": "Fuestle Replicator",
 
@@ -9880,7 +9890,7 @@
 "block.kamenridercraft.sword_of_logos_wood2": "Sword of Logos Wood Block",
 "block.kamenridercraft.sword_of_logos_arch": "Sword of Logos Arch Block",
 
-  "block.kamenridercraft.gochizo_jar": "Gochizo Jar",
+"block.kamenridercraft.gochizo_jar": "Gochizo Jar",
 "block.kamenridercraft.granute_glass": "Granute Glass",
 "block.kamenridercraft.granute_glass_pane": "Granute Glass Pane",
 
@@ -9944,7 +9954,7 @@
 "block.kamenridercraft.yaminin_boss_block": "Yaminin Boss Block",
 "block.kamenridercraft.ginga_boss_block": "Ginga Boss Block",
 "block.kamenridercraft.quartzer_boss_block": "Quartzer Boss Block",
-  "block.kamenridercraft.another_den_o_boss_block": "Another Den-O Boss Block",
+"block.kamenridercraft.another_den_o_boss_block": "Another Den-O Boss Block",
 "block.kamenridercraft.horobi_boss_block": "Horobi Boss Block",
 "block.kamenridercraft.ikazuchi_boss_block": "Ikazuchi Boss Block",
 "block.kamenridercraft.ark_one_boss_block": "Ark-One Boss Block",

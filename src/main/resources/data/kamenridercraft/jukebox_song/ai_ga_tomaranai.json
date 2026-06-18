@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.ai_ga_tomaranai.desc"
+  },
+  "length_in_seconds": 226,
+  "sound_event": "kamenridercraft:ai_ga_tomaranai"
+}

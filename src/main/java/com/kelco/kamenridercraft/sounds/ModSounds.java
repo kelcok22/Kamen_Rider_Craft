@@ -46,6 +46,12 @@ public class ModSounds {
     public static final Supplier<SoundEvent> KAMEN_RIDER_BLACK_RX= registerSoundEvent("kamen_rider_black_rx");
     public static final ResourceKey<JukeboxSong> KAMEN_RIDER_BLACK_RX_KEY = createSong("kamen_rider_black_rx");
 
+    public static final Supplier<SoundEvent> AI_GA_TOMARANAI= registerSoundEvent("ai_ga_tomaranai");
+    public static final ResourceKey<JukeboxSong> AI_GA_TOMARANAI_KEY = createSong("ai_ga_tomaranai");
+
+    public static final Supplier<SoundEvent> KOKORO_TSUNAGU_AI= registerSoundEvent("kokoro_tsunagu_ai");
+    public static final ResourceKey<JukeboxSong> KOKORO_TSUNAGU_AI_KEY = createSong("kokoro_tsunagu_ai");
+
     public static final Supplier<SoundEvent> KAMEN_RIDER_KUUGA= registerSoundEvent("kamen_rider_kuuga");
     public static final ResourceKey<JukeboxSong> KAMEN_RIDER_KUUGA_KEY = createSong("kamen_rider_kuuga");
 

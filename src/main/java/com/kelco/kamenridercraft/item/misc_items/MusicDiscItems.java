@@ -41,6 +41,12 @@ public class MusicDiscItems {
     public static final DeferredItem<Item> KAMEN_RIDER_BLACK_RX_MUSIC_DISC = ITEMS.register("kamen_rider_black_rx_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.KAMEN_RIDER_BLACK_RX_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> AI_GA_TOMARANAI_MUSIC_DISC = ITEMS.register("ai_ga_tomaranai_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.AI_GA_TOMARANAI_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> KOKORO_TSUNAGU_AI_MUSIC_DISC = ITEMS.register("kokoro_tsunagu_ai_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.KOKORO_TSUNAGU_AI_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> KAMEN_RIDER_KUUGA_MUSIC_DISC = ITEMS.register("kamen_rider_kuuga_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.KAMEN_RIDER_KUUGA_KEY).stacksTo(1)));
 

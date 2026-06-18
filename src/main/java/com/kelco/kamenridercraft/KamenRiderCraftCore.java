@@ -1679,6 +1679,8 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.KAMEN_RIDER_SUPER_1_MUSIC_DISC);
                 event.accept(MusicDiscItems.KAMEN_RIDER_BLACK_MUSIC_DISC);
                 event.accept(MusicDiscItems.KAMEN_RIDER_BLACK_RX_MUSIC_DISC);
+                event.accept(MusicDiscItems.AI_GA_TOMARANAI_MUSIC_DISC);
+                event.accept(MusicDiscItems.KOKORO_TSUNAGU_AI_MUSIC_DISC);
                 event.accept(MusicDiscItems.KAMEN_RIDER_KUUGA_MUSIC_DISC);
                 event.accept(MusicDiscItems.KAMEN_RIDER_AGITO_MUSIC_DISC);
                 event.accept(MusicDiscItems.ALIVE_A_LIFE_MUSIC_DISC);

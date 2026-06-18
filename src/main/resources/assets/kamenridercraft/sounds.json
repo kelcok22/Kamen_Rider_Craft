@@ -79,6 +79,22 @@
       }
     ]
   },
+  "ai_ga_tomaranai": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:ai_ga_tomaranai",
+        "stream": true
+      }
+    ]
+  },
+  "kokoro_tsunagu_ai": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kokoro_tsunagu_ai",
+        "stream": true
+      }
+    ]
+  },
   "kamen_rider_kuuga": {
     "sounds": [
       {

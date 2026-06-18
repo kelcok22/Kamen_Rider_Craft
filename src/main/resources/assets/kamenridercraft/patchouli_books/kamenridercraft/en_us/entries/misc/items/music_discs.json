@@ -121,6 +121,28 @@
 			"item": "kamenridercraft:kamen_rider_black_rx_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "ai_ga_tomaranai_music_disc",
+        "text": "Song:$(li)HosephHoestar - Ai ga Tomaranai$(br2)Based on:$(li)INFIX - Ai ga Tomaranai$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider ZO (1994, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ai_ga_tomaranai_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kokoro_tsunagu_ai_music_disc",
+        "text": "Song:$(li)HosephHoestar - Kokoro Tsunagu Ai$(br2)Based on:$(li)BYUE - Kokoro Tsunagu Ai$(br)Type:$(li)Ending theme$(br)Appears in:$(li)Kamen Rider J (1993, movie)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kokoro_tsunagu_ai_music_disc",
+        "text": "Disc is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "kamen_rider_kuuga_music_disc",
