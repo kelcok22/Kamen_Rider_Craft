@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.entity.mobs;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
+import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
 import com.kelco.kamenridercraft.entity.mobs.allies.*;
 import com.kelco.kamenridercraft.entity.mobs.bosses.*;
@@ -10,6 +12,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.*;
 import com.kelco.kamenridercraft.entity.projectiles.*;
 import com.kelco.kamenridercraft.entity.vehicles.*;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
@@ -1757,21 +1760,15 @@ public class MobsCore {
             MOBLIST.register("shuriken_projectile",() -> EntityType.Builder.<ShurikenProjectileEntity>of(ShurikenProjectileEntity::new, MobCategory.MISC)
                     .sized(1F, 1F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":shuriken_projectile"));
 
-    public static final DeferredHolder<EntityType<?>, EntityType<LaserProjectileEntity>> LASER_PROJECTILE =
-            MOBLIST.register("laser_projectile",() -> EntityType.Builder.<LaserProjectileEntity>of(LaserProjectileEntity::new, MobCategory.MISC)
-                    .sized(0.2F, 0.2F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":laser_projectile"));
-
-    public static final DeferredHolder<EntityType<?>, EntityType<CellMedalProjectileEntity>> CELL_MEDAL_PROJECTILE =
-            MOBLIST.register("cell_medal_projectile",() -> EntityType.Builder.<CellMedalProjectileEntity>of(CellMedalProjectileEntity::new, MobCategory.MISC)
-                    .sized(0.2F, 0.2F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":cell_medal_projectile"));
-
-    public static final DeferredHolder<EntityType<?>, EntityType<RocketProjectileEntity>> ROCKET_PROJECTILE =
-            MOBLIST.register("rocket_projectile",() -> EntityType.Builder.<RocketProjectileEntity>of(RocketProjectileEntity::new, MobCategory.MISC)
-                    .sized(0.2F, 0.2F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":rocket_projectile"));
-
     public static final DeferredHolder<EntityType<?>, EntityType<BaseProjectileEntity>> BASE_PROJECTILE =
             MOBLIST.register("base_projectile",() -> EntityType.Builder.<BaseProjectileEntity>of(BaseProjectileEntity::new, MobCategory.MISC)
                     .sized(0.2F, 0.2F).noSave().clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":base_projectile"));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BaseEffectEntity>> BASE_EFFECT =
+            MOBLIST.register("base_effect",() -> EntityType.Builder.<BaseEffectEntity>of(BaseEffectEntity::new, MobCategory.MISC)
+                    .sized(0.2F, 0.2F).noSave().clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":base_effect"));
+
 
 
     public static void register(IEventBus eventBus) {

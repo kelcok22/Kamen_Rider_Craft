@@ -22,6 +22,8 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 
+import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+
 public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
 
@@ -238,15 +240,19 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                     }
                 }
 
-                GeoBone rightLegkick = this.getAnimationProcessor().getBone("rightLegKick");
-                GeoBone armorRightLeg = this.getAnimationProcessor().getBone("rightLegKickRemove");
-                if (rightLegkick != null) {
-                    if (belt.kickModelModifier && belt == KivaRiderItems.KIVAT_BELT.get()) {
-                        rightLegkick.setHidden(false);
-                        armorRightLeg.setHidden(true);
+                GeoBone kickModelChange = this.getAnimationProcessor().getBone("rightLegKick");
+                GeoBone originalLeg = this.getAnimationProcessor().getBone("rightLegKickRemove");
+                if (kickModelChange != null) {
+                    if (RIDER.getAttribute(CHANGE_KICK_MODEL).getValue() == 1 && belt == KivaRiderItems.KIVAT_BELT.get()) {
+                        kickModelChange.setHidden(false);
+                        if (originalLeg != null) {
+                            originalLeg.setHidden(true);
+                        }
                     } else {
-                        rightLegkick.setHidden(true);
-                        armorRightLeg.setHidden(false);
+                        kickModelChange.setHidden(true);
+                        if (originalLeg != null) {
+                            originalLeg.setHidden(false);
+                        }
                     }
                 }
 

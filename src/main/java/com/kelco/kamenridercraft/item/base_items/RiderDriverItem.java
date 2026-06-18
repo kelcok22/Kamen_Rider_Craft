@@ -42,6 +42,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Consumer;
 
+import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
+import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.USED_ABILITY;
+
 
 public class RiderDriverItem extends RiderArmorItem {
 
@@ -64,7 +68,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public ResourceLocation abilitySlotOne = null;
     public ResourceLocation abilitySlotTwo = null;
 
-    public boolean kickModelModifier = false;
 
     public Boolean Has_Inventory = false;
 
@@ -133,14 +136,6 @@ public class RiderDriverItem extends RiderArmorItem {
         return rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() != 0;
     }
 
-    public static boolean isKicking(LivingEntity rider) {
-        if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem)) return false;
-        else if (rider.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = rider.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
-            return tag.getBoolean("rider_kicking");
-        }
-        return false;
-    }
 
     public static double getRenderType(ItemStack stack) {
         double form_double = 1;
@@ -248,7 +243,10 @@ public class RiderDriverItem extends RiderArmorItem {
         if (isTransformed(rider) && !rider.level().isClientSide()) {
             this.abilitySlotOne = null;
             this.abilitySlotTwo = null;
-            this.kickModelModifier = false;
+            rider.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
+            if (!rider.getData(USED_ABILITY).isEmpty()) {
+                cancelAbility(rider, "", 0);
+            }
             for (int n = 0; n < Num_Base_Form_Item; n++) {
                 RiderFormChangeItem form = getFormItem(itemstack, n + 1);
                 form.OnTransformation(itemstack, rider);
