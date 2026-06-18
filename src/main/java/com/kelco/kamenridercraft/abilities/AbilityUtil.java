@@ -26,7 +26,7 @@ public class AbilityUtil {
             user.setData(USED_ABILITY, "");
             user.setData(ABILITY_TICK, 0);
             user.setInvulnerable(false);
-            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
+            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
                 user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
             }
             if (delayAnimationEndTicks == 0) {
