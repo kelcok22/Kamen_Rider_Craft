@@ -1,5 +1,6 @@
-package com.kelco.kamenridercraft.abilities;
+package com.kelco.kamenridercraft.abilities.misc_abilities;
 
+import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;

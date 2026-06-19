@@ -39,11 +39,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Objects;
 import java.util.function.Consumer;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.USED_ABILITY;
 
 
@@ -63,7 +61,7 @@ public class RiderDriverItem extends RiderArmorItem {
     private Boolean SD = false;
     public int Unlimited_Textures = 0;
     public int Unlimited_Belt_Textures = 0;
-    public int abilityMultiplier = 1;
+    public float abilityMultiplier = 2.5F;
 
     public ResourceLocation abilitySlotOne = null;
     public ResourceLocation abilitySlotTwo = null;
@@ -243,7 +241,7 @@ public class RiderDriverItem extends RiderArmorItem {
         if (isTransformed(rider) && !rider.level().isClientSide()) {
             this.abilitySlotOne = null;
             this.abilitySlotTwo = null;
-            rider.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
+            cancelAbility(rider, "", 0);
             if (!rider.getData(USED_ABILITY).isEmpty()) {
                 cancelAbility(rider, "", 0);
             }
@@ -433,16 +431,18 @@ public class RiderDriverItem extends RiderArmorItem {
         return amount;
     }
 
-    public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
+    public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
 
         switch (currentSlot) {
-            case HEAD ->{
+            case HEAD -> {
                 return true;
-            }case LEGS,CHEST ->{
+            }
+            case LEGS, CHEST -> {
                 return false;
             }
 
-            default -> {}
+            default -> {
+            }
         }
         return false;
     }

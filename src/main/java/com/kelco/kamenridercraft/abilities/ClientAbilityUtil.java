@@ -74,12 +74,12 @@ public class ClientAbilityUtil {
 
     public static ResourceLocation returnAbilityIcon(String returnedAbility) {
         return switch (returnedAbility) {
-            case "rider_punch", "tojima_punch" ->
+            case "rider_punch", "ground_rider_punch" ->
                     ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/punch.png");
-            case "rider_kick", "kabuto_kick", "secondary_rider_kick" ->
+            case "rider_kick", "kabuto_kick", "flipped_rider_kick" ->
                     ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/rider_kick.png");
             case "kiva_kick" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/wakeupfuestle.png");
-            case "flame_wizard_kick" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/kick_strike_ring.png");
+            case "wizard_kick_flame" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/kick_strike_ring.png");
             case "flight_boost" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/glide.png");
             case "clock_up" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/clock_up_pad.png");
             case "grow" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/big.png");

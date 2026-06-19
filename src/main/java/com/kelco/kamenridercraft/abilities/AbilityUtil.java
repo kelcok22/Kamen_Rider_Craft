@@ -1,5 +1,11 @@
 package com.kelco.kamenridercraft.abilities;
 
+import com.kelco.kamenridercraft.abilities.kicks.GenericRiderKicks;
+import com.kelco.kamenridercraft.abilities.kicks.KabutoRiderKicks;
+import com.kelco.kamenridercraft.abilities.kicks.KivaRiderKicks;
+import com.kelco.kamenridercraft.abilities.kicks.WizardRiderKicks;
+import com.kelco.kamenridercraft.abilities.misc_abilities.MiscAbilities;
+import com.kelco.kamenridercraft.abilities.punches.GenericRiderPunches;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
@@ -21,38 +27,12 @@ import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_M
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class AbilityUtil {
-    public static void cancelAbility(LivingEntity user, String afterAnimation, int delayAnimationEndTicks) {
-        if (!user.level().isClientSide()) {
-            user.setData(USED_ABILITY, "");
-            user.setData(ABILITY_TICK, 0);
-            user.setInvulnerable(false);
-            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
-                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
-            }
-            if (delayAnimationEndTicks == 0) {
-                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
-            } else {
-                user.setData(DELAY_ANIMATION_END, true);
-                user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
-            }
-            if (!afterAnimation.isEmpty()){
-                switch (afterAnimation) {
-                    case "default.land", "kiva.land", "wizard.land", "default.flipped_land":
-                        PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
-                        PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
-                        user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
-                        break;
-                }
-            }
-        }
-    }
-
     public static void calculateAbility(LivingEntity user, String ability) {
         if (!user.level().isClientSide() && user.getData(ABILITY_TICK) == 0 && user.getData(ABILITY_COOLDOWN) == 0 && !user.isSleeping()) {
             AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
             boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.Rider.toLowerCase().contains("ohma"));
             switch (ability) {
-                case "rider_punch", "tojima_punch":
+                case "rider_punch", "ground_rider_punch":
                     if (!user.isFallFlying()) {
                         if (costMeter && abilityMeter.getValue() >= 100) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
@@ -62,7 +42,7 @@ public class AbilityUtil {
                         }
                     }
                     break;
-                case "rider_kick", "kiva_kick", "kabuto_kick", "flame_wizard_kick", "secondary_rider_kick":
+                case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
@@ -97,25 +77,22 @@ public class AbilityUtil {
         if (!user.level().isClientSide()) {
             switch (user.getData(USED_ABILITY).toLowerCase()) {
                 case "rider_punch":
-                    RiderPunch.genericRiderPunch(user);
+                    GenericRiderPunches.genericRiderPunch(user);
                     break;
-                case "tojima_punch":
-                    RiderPunch.tojimaPunch(user);
+                case "ground_rider_punch":
+                    GenericRiderPunches.groundRiderPunch(user);
                     break;
-                case "rider_kick":
-                    RiderKick.genericRiderKick(user);
-                    break;
-                case "secondary_rider_kick":
-                    RiderKick.secondaryRiderKick(user);
+                case "rider_kick", "flipped_rider_kick":
+                    GenericRiderKicks.genericRiderKick(user);
                     break;
                 case "kabuto_kick":
-                    RiderKick.kabutoKick(user);
+                    KabutoRiderKicks.kabutoKick(user);
                     break;
                 case "kiva_kick":
-                    RiderKick.kivaKick(user);
+                    KivaRiderKicks.kivaRiderKick(user);
                     break;
-                case "flame_wizard_kick":
-                    RiderKick.flameWizardKick(user);
+                case "wizard_kick_flame":
+                    WizardRiderKicks.flameWizardKick(user);
                     break;
                 case "flight_boost":
                     MiscAbilities.flightBoost(user);
@@ -138,7 +115,6 @@ public class AbilityUtil {
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(user)) {
                 belt = user.getItemBySlot(EquipmentSlot.FEET);
             }
-            if (true) {
                 if (belt != null) {
                     var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
                     switch (abilitySlot) {
@@ -174,8 +150,29 @@ public class AbilityUtil {
                     }
                     return returnedAbility;
                 }
-            }
         }
         return returnedAbility;
+    }
+
+    public static void cancelAbility(LivingEntity user, String afterAnimation, int delayAnimationEndTicks) {
+        if (!user.level().isClientSide()) {
+            user.setData(USED_ABILITY, "");
+            user.setData(ABILITY_TICK, 0);
+            user.setInvulnerable(false);
+            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
+            }
+            if (delayAnimationEndTicks == 0) {
+                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+            } else {
+                user.setData(DELAY_ANIMATION_END, true);
+                user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
+            }
+            if (!afterAnimation.isEmpty()) {
+                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
+                user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
+            }
+        }
     }
 }

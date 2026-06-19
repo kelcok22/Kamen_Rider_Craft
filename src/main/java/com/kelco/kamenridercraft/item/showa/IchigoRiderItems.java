@@ -39,7 +39,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("secondary_rider_kick", 1).isGlowing().has_basic_model().model_has_different_name("typhoon_core"));
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).isGlowing().has_basic_model().model_has_different_name("typhoon_core"));
 
     public static final DeferredItem<Item> TYPHOON_CORE = ITEMS.register("typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ichigo","typhoon_belt",
@@ -64,7 +64,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("secondary_rider_kick", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.hasSD().setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE_NIGO = ITEMS.register("original_typhoon_core_nigo",
@@ -77,7 +77,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("secondary_rider_kick", 1).isGlowing());
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).isGlowing());
 
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE = ITEMS.register("original_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_original","ichigo","typhoon_belt_original",
@@ -119,7 +119,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("tojima_punch", 1).setSlotTwoAbility("rider_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.setSlotOneAbility("ground_rider_punch", 1).setSlotTwoAbility("rider_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_CORE_SANGO = ITEMS.register("typhoon_core_sango",
@@ -146,7 +146,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("secondary_rider_kick", 1).changeModel("ichigo.geo.json").allowRiderKick().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("flipped_rider_kick", 1).changeModel("ichigo.geo.json").allowRiderKick().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NEW_TYPHOON_CORE = ITEMS.register("new_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_new","ichigo","new_typhoon_belt",
@@ -178,7 +178,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("secondary_rider_kick", 1).hasSD().changeModel("ichigo.geo.json").allowRiderKick().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).hasSD().changeModel("ichigo.geo.json").allowRiderKick().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TAKI_VAMPIRE_CORE = ITEMS.register("taki_vampire_core",
@@ -269,7 +269,7 @@ public class IchigoRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_NIGO = ITEMS.register("typhoon_nigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo",TYPHOON_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo",TYPHOON_CORE_NIGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SANGO = ITEMS.register("typhoon_sango",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sango",TYPHOON_CORE_SANGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
