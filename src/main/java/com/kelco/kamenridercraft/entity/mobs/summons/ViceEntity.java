@@ -80,7 +80,8 @@ public class ViceEntity extends BaseSummonEntity {
 			if (!Objects.equals(RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false))
 			|| (RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1) == ReviceRiderItems.BARID_REX_VISTAMP.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ReviceRiderItems.BARID_REX_VISTAMP_VICE.get())
 			|| (RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1) == ReviceRiderItems.VOLCANO_VISTAMP.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ReviceRiderItems.VOLCANO_VISTAMP_VICE.get())) {
-	        	switch (RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)) {
+				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ReviceRiderItems.BUDDY_BUCKLE.get()));
+				switch (RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)) {
 	        	    case "":
 						RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ReviceRiderItems.REX_VISTAMP_VICE.get(), 1);
 	        	        break;

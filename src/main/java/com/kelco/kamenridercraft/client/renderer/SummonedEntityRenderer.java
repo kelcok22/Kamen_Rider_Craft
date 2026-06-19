@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.BasicMobModel;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
@@ -23,6 +24,11 @@ public class SummonedEntityRenderer extends HumanoidMobRenderer<BaseSummonEntity
     public SummonedEntityRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
         super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)), 1, 1, 1, 1);
         this.addLayer(new HumanoidArmorLayer<>(this, new HumanoidModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
+    }
+
+    @Override
+    protected float getShadowRadius(BaseSummonEntity baseSummonEntity) {
+        return this.shadowRadius / 2;
     }
 
     @Override
