@@ -193,7 +193,7 @@ public class GhostRiderItems {
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
 			}
-					.addNum(0).changeModel("damashii.geo.json").changeSlot(2));
+					.addNum(0).changeModel("mugen_damashii.geo.json").changeSlot(2));
 
 	public static final DeferredItem<Item> SIN_SPECTER_GHOST_EYECON = ITEMS.register("sin_specter_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_sin","specter","ghostdriver_belt_specter",
