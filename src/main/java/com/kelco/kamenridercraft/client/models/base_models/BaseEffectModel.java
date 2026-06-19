@@ -35,6 +35,6 @@ public class BaseEffectModel extends GeoModel<BaseEffectEntity> {
 
     @Override
     public ResourceLocation getAnimationResource(BaseEffectEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/effect.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/effects.animation.json");
     }
 }

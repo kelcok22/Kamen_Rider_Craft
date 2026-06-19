@@ -15,6 +15,9 @@ import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
@@ -26,16 +29,19 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
     private String model = "";
     private String texture = "";
     private boolean glowing = false;
+    private boolean startAnimation = false;
+
+    private static final RawAnimation LOGO_SPIN = RawAnimation.begin().thenPlay("effects.logo_spin");
+    private static final RawAnimation LOGO_GROW = RawAnimation.begin().thenPlay("logo_grow");
+    private static final RawAnimation EXCEED_CHARGE = RawAnimation.begin().thenPlay("exceed_charge");
 
     private LivingEntity owner;
     private UUID ownerUUID;
 
     private static final EntityDataAccessor<String> TEXTURE =
             SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.STRING);
-
     private static final EntityDataAccessor<String> MODEL =
             SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.STRING);
-
     private static final EntityDataAccessor<Boolean> GLOWING =
             SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.BOOLEAN);
 
@@ -94,10 +100,19 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
 
     public void tick() {
         super.tick();
-        if (this.timeToLive <= 0) {
-            this.discard();
+        if (!this.level().isClientSide()) {
+            if (!this.startAnimation && this.getTexture().contains("wizard_circle")) {
+                System.out.println("play");
+                triggerAnim("effect", "logo_spin");
+                this.startAnimation = true;
+            }
+
+            if (this.timeToLive <= 0) {
+                this.discard();
+            }
+            this.timeToLive--;
         }
-        this.timeToLive--;
+
 
         Vec3 vec3 = this.getDeltaMovement();
         if (this.xRotO == 0.0F && this.yRotO == 0.0F) {
@@ -156,8 +171,8 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-//        RawAnimation BLAST = RawAnimation.begin().thenLoop("blast");
-//        controllers.add(new AnimationController<>(this, "blast", 0, state -> state.setAndContinue(BLAST)));
+        controllers.add(new AnimationController<>(this, "effect", 0, state -> PlayState.STOP)
+                .triggerableAnim("logo_spin", LOGO_SPIN));
     }
 
     @Override
@@ -181,4 +196,5 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
 
         return this.owner;
     }
+
 }
