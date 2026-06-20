@@ -2,7 +2,9 @@ package com.kelco.kamenridercraft.abilities.misc_abilities;
 
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -53,6 +55,31 @@ public class MiscAbilities {
                 user.addEffect(new MobEffectInstance(EffectCore.BIG, 300, 2, true, false));
             }
             if (user.getData(ABILITY_TICK) >= 50) {
+                AbilityUtil.cancelAbility(user, "", 0);
+            }
+            user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+        }
+    }
+
+
+    public static void specialTurbo(LivingEntity user) {
+        if (!user.level().isClientSide()) {
+            user.setData(ABILITY_COOLDOWN, 300);
+            if (user.getData(ABILITY_TICK) == 0) {
+                if (user instanceof Player player) {
+                    player.displayClientMessage(Component.translatable("attack.kamenridercraft.special_turbo"), true);
+                }
+                user.addEffect(new MobEffectInstance(EffectCore.FIRE_SLASH, 200, 0, true, false));
+                user.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1, true, false));
+                user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2, true, false));
+                user.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1, true, false));
+            }
+
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.FLAME, user.getX(), user.getY() + 1, user.getZ(), 10, 0, 0, 0, 0.05);
+            ((ServerLevel) user.level()).sendParticles(ParticleTypes.WHITE_SMOKE, user.getX(), user.getY() + 1, user.getZ(), 2, 0, 0, 0, 0.05);
+
+
+            if (user.getData(ABILITY_TICK) >= 200) {
                 AbilityUtil.cancelAbility(user, "", 0);
             }
             user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);

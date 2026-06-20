@@ -76,7 +76,7 @@ public class ReviceRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BARID_REX_VISTAMP_VICE = ITEMS.register("barid_rex_vistamp_vice",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","vice","buddy_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_barid_rex","vice","buddy_buckle_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),

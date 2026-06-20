@@ -42,7 +42,7 @@ public class AbilityUtil {
                         }
                     }
                     break;
-                case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick":
+                case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick", "special_turbo":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
@@ -103,6 +103,9 @@ public class AbilityUtil {
                 case "grow":
                     MiscAbilities.grow(user);
                     break;
+                case "special_turbo":
+                    MiscAbilities.specialTurbo(user);
+                    break;
             }
         }
     }
@@ -162,13 +165,13 @@ public class AbilityUtil {
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
                 user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
             }
-            if (delayAnimationEndTicks == 0) {
+            if (delayAnimationEndTicks == 0 && user instanceof Player) {
                 PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
             } else {
                 user.setData(DELAY_ANIMATION_END, true);
                 user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
             }
-            if (!afterAnimation.isEmpty()) {
+            if (!afterAnimation.isEmpty() && user instanceof Player) {
                 PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
                 PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
                 user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));

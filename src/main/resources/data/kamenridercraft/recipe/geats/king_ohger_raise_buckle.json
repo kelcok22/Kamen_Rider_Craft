@@ -1,15 +1,20 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supersentaicraft"
+    }
+  ],
   "type": "minecraft:crafting_shapeless",
   "group": "legend_rider_buckles",
   "ingredients": [
-{
-    
+    {
       "item": "kamenridercraft:hatena_mission_box"
-    }, 
+    },
     {
       "item": "supersentaicraft:god_kuwagata_soul"
-    } 
-    ],
+    }
+  ],
   "result": {
     "id": "kamenridercraft:king_ohger_raise_buckle"
   }

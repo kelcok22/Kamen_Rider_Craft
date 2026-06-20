@@ -82,6 +82,7 @@ public class ClientAbilityUtil {
             case "wizard_kick_flame" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/kick_strike_ring.png");
             case "flight_boost" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/glide.png");
             case "clock_up" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/clock_up_pad.png");
+            case "special_turbo" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/taiyaki_secret_weapon.png");
             case "grow" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/big.png");
             default -> null;
         };
