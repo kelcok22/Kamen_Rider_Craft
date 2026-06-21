@@ -23,6 +23,7 @@ import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 
 import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.Attributes.WINGS_OUT;
 
 public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
@@ -240,21 +241,38 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                     }
                 }
 
-                GeoBone kickModelChange = this.getAnimationProcessor().getBone("rightLegKick");
-                GeoBone originalLeg = this.getAnimationProcessor().getBone("rightLegKickRemove");
-                if (kickModelChange != null) {
-                    if (RIDER.getAttribute(CHANGE_KICK_MODEL).getValue() == 1 && belt == KivaRiderItems.KIVAT_BELT.get()) {
-                        kickModelChange.setHidden(false);
-                        if (originalLeg != null) {
-                            originalLeg.setHidden(true);
-                        }
-                    } else {
-                        kickModelChange.setHidden(true);
-                        if (originalLeg != null) {
-                            originalLeg.setHidden(false);
-                        }
-                    }
-                }
+                GeoBone headKick = this.getAnimationProcessor().getBone("headArmKick");
+                GeoBone headKickRemove = this.getAnimationProcessor().getBone("headArmKickRemove");
+                GeoBone rightArmKick = this.getAnimationProcessor().getBone("rightArmKick");
+                GeoBone rightArmKickRemove = this.getAnimationProcessor().getBone("rightArmKickRemove");
+                GeoBone leftArmKick = this.getAnimationProcessor().getBone("leftArmKick");
+                GeoBone leftArmKickRemove = this.getAnimationProcessor().getBone("leftArmKickRemove");
+                GeoBone rightLegKick = this.getAnimationProcessor().getBone("rightLegKick");
+                GeoBone rightLegKickRemove = this.getAnimationProcessor().getBone("rightLegKickRemove");
+                GeoBone leftLegKick = this.getAnimationProcessor().getBone("leftLegKick");
+                GeoBone leftLegKickRemove = this.getAnimationProcessor().getBone("leftLegKickRemove");
+
+                boolean isKicking = RIDER.getAttribute(CHANGE_KICK_MODEL).getValue() == 1;
+                        if (headKick != null) headKick.setHidden(!isKicking );
+                        if (headKickRemove != null) headKickRemove.setHidden(isKicking);
+                        if (rightArmKick != null) rightArmKick.setHidden(!isKicking);
+                        if (rightArmKickRemove != null) rightArmKickRemove.setHidden(isKicking );
+                        if (leftArmKick != null) leftArmKick.setHidden(!isKicking);
+                        if (leftArmKickRemove != null) leftArmKickRemove.setHidden(isKicking );
+                        if (leftLegKick != null) leftLegKick.setHidden(!isKicking);
+                        if (leftLegKickRemove != null) leftLegKickRemove.setHidden(isKicking );
+                        if (rightLegKick != null) rightLegKick.setHidden(!isKicking);
+                        if (rightLegKickRemove != null) rightLegKickRemove.setHidden(isKicking );
+
+                GeoBone WingsOut = this.getAnimationProcessor().getBone("WingsOut");
+                GeoBone WingsOutRemove = this.getAnimationProcessor().getBone("WingsOutRemove");
+
+                boolean areWingsOut = RIDER.getAttribute(WINGS_OUT).getValue() == 1;
+
+                if (WingsOut != null) WingsOut.setHidden(!areWingsOut);
+                if (WingsOutRemove != null) WingsOutRemove.setHidden(areWingsOut);
+
+
 
                 if (tire != null) {
                     if (RiderDriverItem.isTransforming(RIDER))
@@ -265,8 +283,6 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                         tire.setPosY(Transforming / 2);
                     if (RiderDriverItem.isTransforming(RIDER))
                         tire.setPosZ(-Transforming);
-
-                    //tire.setHidden(RiderDriverItem.GetTransforming(RIDER.getItemBySlot(EquipmentSlot.FEET)) == 0);
                 }
                 if (tire2 != null) {
                     if (RiderDriverItem.isTransforming(RIDER))
