@@ -7,8 +7,8 @@
 				"texture_width": 64,
 				"texture_height": 96,
 				"visible_bounds_width": 3,
-				"visible_bounds_height": 4.5,
-				"visible_bounds_offset": [0, 1.75, 0]
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
 			},
 			"bones": [
 				{
@@ -21,7 +21,7 @@
 					"pivot": [0, 24, 0],
 					"cubes": [
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.1, "uv": [0, 0]},
-						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [32, 0]}
+						{"origin": [-4, 28.13039, -4.45247], "size": [8, 8, 3], "inflate": 0.5, "pivot": [0, 29, -2], "rotation": [-12.5, 0, 0], "uv": [37, 1]}
 					]
 				},
 				{
@@ -561,7 +561,8 @@
 					"pivot": [-5, 22, 0],
 					"cubes": [
 						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [40, 32]},
-						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [40, 16]}
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [40, 16]},
+						{"origin": [-8, 14, 2], "size": [1, 7, 3], "uv": [56, 17]}
 					]
 				},
 				{
@@ -574,7 +575,8 @@
 					"pivot": [5, 22, 0],
 					"cubes": [
 						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [32, 48]},
-						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [48, 48]}
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [48, 48]},
+						{"origin": [7, 14, 2], "size": [1, 7, 3], "uv": [56, 17], "mirror": true}
 					]
 				},
 				{
@@ -587,7 +589,7 @@
 					"pivot": [2, 12, 0],
 					"cubes": [
 						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [16, 48]},
-						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [0, 48]}
+						{"origin": [0, 0, 1], "size": [4, 12, 4], "inflate": 0.2, "uv": [0, 48]}
 					]
 				},
 				{
@@ -605,7 +607,7 @@
 					"pivot": [-2, 12, 0],
 					"cubes": [
 						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [0, 16]},
-						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [0, 32]}
+						{"origin": [-4, 0, 1], "size": [4, 12, 4], "inflate": 0.2, "uv": [0, 32]}
 					]
 				},
 				{
