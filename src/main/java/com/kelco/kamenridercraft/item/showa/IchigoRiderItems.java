@@ -43,9 +43,9 @@ public class IchigoRiderItems {
 
     public static final DeferredItem<Item> TYPHOON_CORE = ITEMS.register("typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ichigo","typhoon_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -82,7 +82,7 @@ public class IchigoRiderItems {
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE = ITEMS.register("original_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_original","ichigo","typhoon_belt_original",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -94,9 +94,9 @@ public class IchigoRiderItems {
 
     public static final DeferredItem<Item> SAKURAJIMA_TYPHOON_CORE = ITEMS.register("sakurajima_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_sakurajima","ichigo","typhoon_belt_original",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
@@ -150,10 +150,11 @@ public class IchigoRiderItems {
 
     public static final DeferredItem<Item> NEW_TYPHOON_CORE = ITEMS.register("new_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_new","ichigo","new_typhoon_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)){
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)){
                 public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -163,7 +164,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 150, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.setSlotOneAbility("rider_kick", 1).changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ULTRAMAN_TYPHOON_CORE = ITEMS.register("ultraman_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","ichigo","typhoon_belt",
