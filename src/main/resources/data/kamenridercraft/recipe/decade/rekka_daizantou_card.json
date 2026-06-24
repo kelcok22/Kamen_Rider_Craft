@@ -1,16 +1,21 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supersentaicraft"
+    }
+  ],
   "type": "minecraft:crafting_shapeless",
   "group": "attack_ride_card",
   "ingredients": [
-{
-	
-	  "item": "kamenridercraft:decade_card"
-	}, 
-	{
-	  "item": "supersentaicraft:shishi_disk"
-	}
-	],
+    {
+      "item": "kamenridercraft:decade_card"
+    },
+    {
+      "item": "supersentaicraft:shishi_disk"
+    }
+  ],
   "result": {
-	"id": "kamenridercraft:rekka_daizantou_card"
+    "id": "kamenridercraft:rekka_daizantou_card"
   }
 }

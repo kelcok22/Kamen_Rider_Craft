@@ -241,7 +241,7 @@ public class BladeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setShowUnder().has_basic_model().model_has_different_name("taiyaki_secret_weapon"));
+			}.setSlotTwoAbility("special_turbo", 0).setShowUnder().has_basic_model().model_has_different_name("taiyaki_secret_weapon"));
 
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
 			() -> new RiderFormChangeItem(new Item.Properties(), "", "chalice", "chalice_rouzer_belt",
