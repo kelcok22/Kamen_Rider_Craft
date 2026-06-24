@@ -393,7 +393,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MOOSE_FANGIRE_CORE = ITEMS.register("moose_fangire",
