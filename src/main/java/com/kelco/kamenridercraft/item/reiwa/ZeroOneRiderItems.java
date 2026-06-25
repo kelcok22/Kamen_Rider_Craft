@@ -1336,7 +1336,7 @@ public class ZeroOneRiderItems {
 
 	public static final DeferredItem<Item> AIMS_RISEPHONE = ITEMS.register("aims_risephone",
 			() -> new SummonBikeItem(new Item.Properties(), MobsCore.RISEHOPPER)
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_HELMET = ITEMS.register("zero_onehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));

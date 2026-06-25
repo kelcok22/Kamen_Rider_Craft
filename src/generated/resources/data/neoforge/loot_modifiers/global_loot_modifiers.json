@@ -1,14 +1,14 @@
 {
   "entries": [
-    "kamenridercraft:beast_rings_pyramid_archeology",
     "kamenridercraft:egg_chicken_memory",
-    "kamenridercraft:beast_rings_pyramid",
-    "kamenridercraft:beast_rings_jungle",
-    "kamenridercraft:blank_deck_ruined_portal",
-    "kamenridercraft:mayo",
     "kamenridercraft:wizard_stone",
     "kamenridercraft:purple_medals_nether",
-    "kamenridercraft:blank_deck_simple_dungeon"
+    "kamenridercraft:beast_rings_pyramid",
+    "kamenridercraft:beast_rings_jungle",
+    "kamenridercraft:beast_rings_pyramid_archeology",
+    "kamenridercraft:blank_deck_ruined_portal",
+    "kamenridercraft:blank_deck_simple_dungeon",
+    "kamenridercraft:mayo"
   ],
   "replace": false
 }

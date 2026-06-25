@@ -30,6 +30,7 @@ public class JRiderItems {
     public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
             () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/j")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
 
+
     public static final DeferredItem<Item>  J_STONE_JUMBO_FORMATION = ITEMS.register("j_stone_jumbo_formation",
             () -> new RiderFormChangeItem(new Item.Properties(),"","j","blank",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)

@@ -95,6 +95,26 @@ public class BlackRXRiderItems {
                 }
             }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
 
+    public static final DeferredItem<Item>  GREEN_KING_STONE = ITEMS.register("green_king_stone_revived",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_revived","shadow_moon","shadow_charger_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+                    ,new MobEffectInstance(EffectCore.DARK_AURA,40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.isGlowing().has_basic_model().model_has_different_name("green_king_stone").addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+
 
     public static final DeferredItem<Item> RXHELMET = ITEMS.register("rxhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));

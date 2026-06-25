@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-01T23:26:40.8103795	Item Models: kamenridercraft
+// 1.21.1	2026-06-25T03:44:21.9769148	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -336,6 +336,8 @@ fb1272d5493192915dfff1e3a685e61d947bf4ab assets/kamenridercraft/models/item/gras
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
 922c1b4222deb2d2689c79f5c70c8bcdbbc7c477 assets/kamenridercraft/models/item/greeed_blet_kyoryu.json
 060ddd5f0fb8aec5265a65075d7cc49fb55eaaa6 assets/kamenridercraft/models/item/greeed_blet_shocker.json
+022e2a4c277a18cc06a9fcf74633e96081b1ab12 assets/kamenridercraft/models/item/green_king_stone_artist.json
+022e2a4c277a18cc06a9fcf74633e96081b1ab12 assets/kamenridercraft/models/item/green_king_stone_revived.json
 68a5c05aa01c0cd00ba0b6868e6f336cede6703c assets/kamenridercraft/models/item/gumgumgum_gochizo.json
 f12bebc3301a4c0a46ae0de7f98539f1d86382cf assets/kamenridercraft/models/item/gun_capsem.json
 9215724e6d600d6a36ad5245a4201c90bc5e8ef1 assets/kamenridercraft/models/item/gurucan_gochizo_matcha_milk.json
@@ -374,6 +376,7 @@ e0156cd444772933aeaa35073d49d687f5591d97 assets/kamenridercraft/models/item/ichi
 58561a2e8057d53ffdaca03b935ecd59747d7eaa assets/kamenridercraft/models/item/iconga_no_akai_agito.json
 0cc52e10e76ad344a52028e033ec9f37efb680b5 assets/kamenridercraft/models/item/impact_capsem.json
 4d1cbe9721b141db0217f8682ab6f4a78ed075e4 assets/kamenridercraft/models/item/impact_capsem_gold.json
+70fff411d889e89b8e513e61aee086da00b89f61 assets/kamenridercraft/models/item/impact_capsem_shock.json
 8b5d75860f71750d3905a3d57c74a2b704970ef2 assets/kamenridercraft/models/item/inphoenix_ride_chemy_card.json
 938ca676afbf13a42dcf6a44e7202d7838cab86e assets/kamenridercraft/models/item/inphoenix_ride_chemy_card_televikun.json
 e72208f2f83c837b0292277d7d4a845d0c834b56 assets/kamenridercraft/models/item/jaaku_dragon_wonder_ride_book_calibur.json

@@ -416,6 +416,19 @@ public class ZeztzRiderItems {
 
 
 
+
+    public static final DeferredItem<Item> IMPACT_CAPSEM_SHOCK = ITEMS.register("impact_capsem_shock",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt_shock",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 2,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .changeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("shock_capsem"));
+
     public static final DeferredItem<Item> SHOCK_CAPSEM = ITEMS.register("shock_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","lord_five","lord_invoker_five_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -426,7 +439,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.addAlternative(IMPACT_CAPSEM_SHOCK.asItem()).changeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PANIC_CAPSEM = ITEMS.register("panic_capsem",

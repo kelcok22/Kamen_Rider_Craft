@@ -19,10 +19,29 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class CrossSeriesRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
+
+    public static final DeferredItem<Item>  GREEN_KING_STONE_ARTIST = ITEMS.register("green_king_stone_artist",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_artist","shadow_moon","shadow_charger_belt_artist",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+                    ,new MobEffectInstance(EffectCore.DARK_AURA,40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.hasSD().isGlowing().hasCape().has_basic_model().model_has_different_name("green_king_stone"));
+
+
     public static final DeferredItem<Item> TYPHOON_CORE_ARTIST = ITEMS.register("typhoon_core_artist",
             () -> new RiderFormChangeItem(new Item.Properties(),"_artist","ichigo","typhoon_belt_artist",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).allowRiderKick().isGlowing());
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).addAlternative(GREEN_KING_STONE_ARTIST.get()).allowRiderKick().isGlowing());
 
     public static final DeferredItem<Item> DOUBLE_TYPHOON_CORE_ARTIST = ITEMS.register("double_typhoon_core_artist",
             () -> new RiderFormChangeItem(new Item.Properties(),"_artist","v3","double_typhoon_belt_artist",
