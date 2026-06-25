@@ -252,10 +252,10 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.changeModel("damashii.geo.json").changeSlot(2));
+			}.changeModel("yujou_burst_necrom_damashii.geo.json").changeSlot(2));
 
 	public static final DeferredItem<Item> YUJOU_BURST_GHOST_EYECON = ITEMS.register("yujou_burst_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_yujou_burst","necrom","necrom_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_yujou_burst","necrom","necrom_belt_yujou",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
@@ -265,7 +265,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(YUJOU_BURST_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.alsoChange2ndSlot(YUJOU_BURST_DAMASHII.get()).changeModel("necrom.geo.json").changeBeltModel("geo/belt_with_brace.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_DAMASHII = ITEMS.register("dark_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_damashii","ghost","ghostdriver_belt",
