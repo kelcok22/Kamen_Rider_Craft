@@ -75,8 +75,9 @@ public class GhostDriverItem extends RiderDriverItem {
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()== GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.asItem()) return getFormItem(itemstack,2).getFormName(fly)+"_igor";
 		else if (equipmentSlot == EquipmentSlot.HEAD) {
-            if (isTransforming(rider)) return "transient_damashii";
-            else  return getFormItem(itemstack,2).getFormName(fly);
+
+           if (isTransforming(rider)) return getFormItem(itemstack,2).getFormName(fly)+"_parka_ghost";
+           else return getFormItem(itemstack,2).getFormName(fly);
 }
 		else {
             if (isTransforming(rider)) return riderName + getFormItem(itemstack, 1).getFormName(fly)+"_transient";

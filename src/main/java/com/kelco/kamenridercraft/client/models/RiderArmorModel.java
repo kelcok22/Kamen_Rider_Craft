@@ -106,7 +106,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             GeoBone cape = this.getAnimationProcessor().getBone("cape");
             GeoBone cape2 = this.getAnimationProcessor().getBone("cape2");
 
-            GeoBone tire = this.getAnimationProcessor().getBone("tire");
+            GeoBone tire = this.getAnimationProcessor().getBone("parkaGhost");
             GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
             GeoBone tire3 = this.getAnimationProcessor().getBone("tire3");
 

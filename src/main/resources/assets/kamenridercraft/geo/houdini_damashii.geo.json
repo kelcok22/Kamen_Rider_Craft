@@ -12,7 +12,12 @@
 			},
 			"bones": [
 				{
+					"name": "parkaGhost",
+					"pivot": [-0.16667, 19.33333, 0]
+				},
+				{
 					"name": "bipedHead",
+					"parent": "parkaGhost",
 					"pivot": [0, 24, 0]
 				},
 				{
@@ -27,6 +32,7 @@
 				},
 				{
 					"name": "bipedBody",
+					"parent": "parkaGhost",
 					"pivot": [0, 24, 0]
 				},
 				{
@@ -53,6 +59,7 @@
 				},
 				{
 					"name": "bipedRightArm",
+					"parent": "parkaGhost",
 					"pivot": [-5, 22, 0]
 				},
 				{
@@ -66,6 +73,7 @@
 				},
 				{
 					"name": "bipedLeftArm",
+					"parent": "parkaGhost",
 					"pivot": [4, 22, 0]
 				},
 				{
@@ -79,6 +87,7 @@
 				},
 				{
 					"name": "bipedLeftLeg",
+					"parent": "parkaGhost",
 					"pivot": [2, 12, 0]
 				},
 				{
@@ -97,6 +106,7 @@
 				},
 				{
 					"name": "bipedRightLeg",
+					"parent": "parkaGhost",
 					"pivot": [-2, 12, 0]
 				},
 				{
@@ -112,10 +122,6 @@
 					"name": "armorRightBoot",
 					"parent": "bipedRightLeg",
 					"pivot": [2, 12, 0]
-				},
-				{
-					"name": "bipedRightArm2",
-					"pivot": [-4, 22, 0]
 				}
 			]
 		}
