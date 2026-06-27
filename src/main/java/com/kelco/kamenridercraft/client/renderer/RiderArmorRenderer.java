@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.RiderArmorModel;
-import com.kelco.kamenridercraft.client.render_layers.RiderRenderLayer;
+import com.kelco.kamenridercraft.client.renderer.layers.RiderRenderLayer;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;

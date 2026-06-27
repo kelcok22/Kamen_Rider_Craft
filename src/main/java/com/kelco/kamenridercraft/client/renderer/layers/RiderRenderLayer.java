@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.client.render_layers;
+package com.kelco.kamenridercraft.client.renderer.layers;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
