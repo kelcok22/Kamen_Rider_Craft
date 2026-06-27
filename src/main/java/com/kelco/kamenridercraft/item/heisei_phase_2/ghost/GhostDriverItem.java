@@ -71,7 +71,7 @@ public class GhostDriverItem extends RiderDriverItem {
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
-			return "belts/"+ getFormItem(itemstack,1).getBeltTex();
+			return "belts/"+ getFormItem(itemstack,1).getBeltTex()+"_"+getFormItem(itemstack,2).getFormName(false);
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()== GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.asItem()) return getFormItem(itemstack,2).getFormName(fly)+"_igor";
 		else if (equipmentSlot == EquipmentSlot.HEAD) return getFormItem(itemstack,2).getFormName(fly);
