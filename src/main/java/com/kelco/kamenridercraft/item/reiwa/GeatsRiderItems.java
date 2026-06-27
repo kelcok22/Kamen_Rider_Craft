@@ -49,8 +49,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> BLANK_CORE_ID = ITEMS.register("blank_rider_core_id",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","keibi_riders","desire_driver_belt_keibi",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -60,8 +60,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GEATS_CORE_ID = ITEMS.register("geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -75,8 +75,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> TYCOON_CORE_ID = ITEMS.register("tycoon_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","tycoon","desire_driver_belt_tycoon",
 					new MobEffectInstance(MobEffects.LUCK, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -86,8 +86,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> NA_GO_CORE_ID = ITEMS.register("na_go_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","na_go","desire_driver_belt_na_go",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -97,8 +97,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> BUFFA_CORE_ID = ITEMS.register("buffa_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","buffa","desire_driver_belt_buffa",
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -110,8 +110,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -122,8 +122,8 @@ public class GeatsRiderItems {
 			() -> new RiderCoreIDItem(new Item.Properties(),"","punkjack","desire_driver_belt_punkjack",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -133,8 +133,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> NUGE_SPARROW_CORE_ID = ITEMS.register("nudge_sparrow_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","nudge_sparrow","desire_driver_belt_nadge_sparrow",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -144,8 +144,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> SHIROWE_CORE_ID = ITEMS.register("shirowe_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","shirowe","desire_driver_belt_shirowe",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -155,8 +155,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GINPEN_CORE_ID = ITEMS.register("ginpen_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","ginpen","desire_driver_belt_ginpen",
 					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -166,8 +166,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> MARY_CORE_ID = ITEMS.register("mary_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","mary","desire_driver_belt_mary",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -177,8 +177,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> DA_PAAN_CORE_ID = ITEMS.register("da_paan_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","da_paan","desire_driver_belt_da_paan",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -188,8 +188,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> KEIROU_CORE_ID = ITEMS.register("keirou_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","keirou","desire_driver_belt_keilow",
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -200,8 +200,8 @@ public class GeatsRiderItems {
 			() -> new RiderCoreIDItem(new Item.Properties(),"","letter","desire_driver_belt_letter",
 					new MobEffectInstance(MobEffects.UNLUCK, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -211,8 +211,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> LOPO_CORE_ID = ITEMS.register("lopo_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","lopo","desire_driver_belt_lopo",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -222,8 +222,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GROOVY_CORE_ID = ITEMS.register("groovy_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","groovy","desire_driver_belt_groovy",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -233,8 +233,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> HAKUBI_CORE_ID = ITEMS.register("hakubi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","hakubi","desire_driver_belt_ginpen",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -244,8 +244,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> TURBON_CORE_ID = ITEMS.register("turbon_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","turbon","desire_driver_belt_turbon",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -255,8 +255,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> BRALI_CORE_ID = ITEMS.register("brali_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","brali","desire_driver_belt_brali",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -266,8 +266,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GYA_GO_CORE_ID = ITEMS.register("gya_go_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","gya_go","desire_driver_belt_gya_go",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -277,8 +277,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> SEEKER_CORE_ID = ITEMS.register("seeker_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","seeker","desire_driver_belt_seeker",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -288,8 +288,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> BUTCHI_CORE_ID = ITEMS.register("butchi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","butchi","desire_driver_belt_da_paan",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -299,8 +299,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> REVI_CORE_ID = ITEMS.register("revi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","geats_revi","desire_driver_belt_revi",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -310,8 +310,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> VICE_CORE_ID = ITEMS.register("vice_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","geats_vice","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -321,8 +321,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> CHUTA_CORE_ID = ITEMS.register("chuta_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","gm","desire_driver_belt_keibi",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -332,8 +332,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GESSY_CORE_ID = ITEMS.register("gesshi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","gm_chirami","desire_driver_belt_keibi",
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -343,8 +343,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> X_GEATS_CORE_ID = ITEMS.register("x_geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),"","x_geats","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -354,8 +354,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> DOOMS_GEATS_CORE_ID = ITEMS.register("dooms_geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),"","dooms_geats","desire_driver_belt_dooms_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -365,8 +365,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> DISCORE_ID = ITEMS.register("discore_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","jyamato","desire_driver_belt_jyamato",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -403,8 +403,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_magnum","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.FIRE_SHOT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -414,8 +414,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> BOOST_RAISE_BUCKLE = ITEMS.register("boost_raise_buckle",
 			() -> new BoostBuckleItem(new Item.Properties(),"_boost","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -426,8 +426,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zombie","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -439,8 +439,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -451,8 +451,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_monster","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -464,8 +464,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -479,8 +479,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -493,8 +493,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -506,8 +506,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(EffectCore.REFLECT, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -519,8 +519,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(EffectCore.REFLECT, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -531,8 +531,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shark","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.FISH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -544,8 +544,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_magnum_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.FIRE_SHOT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -555,8 +555,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> BOOST_RAISE_BUCKLE_FEVER = ITEMS.register("boost_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_boost_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -567,8 +567,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zombie_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -580,8 +580,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -592,8 +592,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_monster_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -605,8 +605,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -616,8 +616,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> ARROW_RAISE_BUCKLE_FEVER = ITEMS.register("arrow_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_arrow_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.EXPLOSION_SHOT, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -627,8 +627,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> WATER_RAISE_BUCKLE_FEVER = ITEMS.register("water_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_water_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -638,8 +638,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> HAMMER_RAISE_BUCKLE_FEVER = ITEMS.register("hammer_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hammer_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -649,8 +649,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> SHIELD_RAISE_BUCKLE_FEVER = ITEMS.register("shield_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shield_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -661,8 +661,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_chain_array_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -672,8 +672,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> CLAW_RAISE_BUCKLE_FEVER = ITEMS.register("claw_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_claw_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.SLASH, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -683,8 +683,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> DRILL_RAISE_BUCKLE_FEVER = ITEMS.register("drill_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_drill_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.DRILL, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -696,8 +696,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_propeller_slot","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 6,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -714,8 +714,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> COMMAND_TWIN_BUCKLE_JET = ITEMS.register("command_twin_buckle_jet",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_raising","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -730,8 +730,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -747,8 +747,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -767,8 +767,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 3,true,false),
 					new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -782,8 +782,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FIRE_SHOT, 40, 3,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -801,8 +801,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.BOOST, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -823,8 +823,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.BOOST, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 1);
@@ -860,8 +860,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.LUCK, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.BOOST, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 80, 0, 0, 0, 1);
@@ -882,8 +882,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.BOOST, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -897,8 +897,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 80, 0, 0, 0, 1);
@@ -915,8 +915,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 80, 0, 0, 0, 1);
@@ -930,8 +930,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_jyamato","buffa","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -943,8 +943,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_jyamato","jyamato","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -957,8 +957,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_arrow","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.EXPLOSION_SHOT, 40, 0,true,false))
 			{
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -968,8 +968,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> WATER_RAISE_BUCKLE = ITEMS.register("water_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_water","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -979,8 +979,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> HAMMER_RAISE_BUCKLE = ITEMS.register("hammer_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hammer","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -990,8 +990,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> SHIELD_RAISE_BUCKLE = ITEMS.register("shield_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shield","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1002,8 +1002,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_chain_array","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1013,8 +1013,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> CLAW_RAISE_BUCKLE = ITEMS.register("claw_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_claw","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.SLASH, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1024,8 +1024,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> DRILL_RAISE_BUCKLE = ITEMS.register("drill_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_drill","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.DRILL, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1036,8 +1036,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_propeller","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 6,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1047,8 +1047,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GIGANT_CONTAINER_BUCKLE = ITEMS.register("gigant_container_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gigant_container","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1096,8 +1096,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1109,8 +1109,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_revice","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1121,8 +1121,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","geats_vice","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1133,8 +1133,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","geats_revi","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1146,8 +1146,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1160,8 +1160,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1174,8 +1174,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1186,8 +1186,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_saber","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.2);
@@ -1197,8 +1197,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> ZERO_ONE_DRIVER_RAISE_BUCKLE = ITEMS.register("zero_one_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zero_one","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.REALIZING_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 5, 0, 0, 0, 1);
@@ -1210,8 +1210,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1223,8 +1223,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1235,8 +1235,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ex_aid","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.HIT_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 1);
@@ -1246,8 +1246,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> GHOST_DRIVER_RAISE_BUCKLE = ITEMS.register("ghost_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ghost","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1259,8 +1259,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1271,8 +1271,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gaim","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1283,8 +1283,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_wizard","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1296,8 +1296,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1309,8 +1309,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1322,8 +1322,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1335,8 +1335,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1348,8 +1348,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1360,8 +1360,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_den_o","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1372,8 +1372,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kabuto","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1385,8 +1385,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1397,8 +1397,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_blade","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1410,8 +1410,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1423,8 +1423,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1435,8 +1435,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_agito","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1446,8 +1446,8 @@ public class GeatsRiderItems {
 	public static final DeferredItem<Item> ARCLE_RAISE_BUCKLE = ITEMS.register("arcle_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kuuga","geats","desire_driver_belt_geats",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1459,8 +1459,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1474,8 +1474,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1488,8 +1488,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST,
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1500,8 +1500,8 @@ public class GeatsRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ouja","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1518,8 +1518,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1533,8 +1533,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.BIG, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1547,8 +1547,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1562,8 +1562,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.BIG, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 8,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1576,8 +1576,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 8,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1591,8 +1591,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.BIG, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1607,8 +1607,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1623,8 +1623,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1638,8 +1638,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1655,8 +1655,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1672,8 +1672,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1687,8 +1687,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.RADAR, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
@@ -1703,8 +1703,8 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(EffectCore.RADAR, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);

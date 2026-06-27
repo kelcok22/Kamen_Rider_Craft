@@ -68,8 +68,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -102,8 +102,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -123,8 +123,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kickin_punchin","gavv","henshin_belt_gavv_belt_kickin",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -143,8 +143,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -161,8 +161,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_punchin","gavv","henshin_belt_gavv_belt_punchin",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -178,8 +178,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -196,8 +196,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kickin","gavv","henshin_belt_gavv_belt_kickin",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -210,8 +210,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(EffectCore.FISH, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -228,8 +228,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_zakuzaku",
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -249,8 +249,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_hirihiri",
 					new MobEffectInstance(EffectCore.FIRE_SLASH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -264,8 +264,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fuwamallow","gavv","henshin_belt_gavv_belt_fuwamallow",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.MARSHMALLOW_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -280,8 +280,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fuwamallow","gavv","henshin_belt_gavv_belt_marumallow",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.BIG, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.MARSHMALLOW_PARTICLES.get(),
 							player.getX(), player.getY()+2,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -292,8 +292,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_chocodan","gavv","henshin_belt_gavv_belt_chocodan",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -312,8 +312,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","valen","valenbuckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -328,8 +328,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -347,8 +347,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES.get(),
 							player.getX(), player.getY() + 1,
 							player.getZ(), 20, 0, 0, 0, 1);
@@ -377,8 +377,8 @@ public class GavvRiderItems {
 					,new MobEffectInstance(EffectCore.GRAVITY, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES.get(),
 							player.getX(), player.getY() + 2,
 							player.getZ(), 20, 0, 0, 0, 1);
@@ -413,8 +413,8 @@ public class GavvRiderItems {
 					,new MobEffectInstance(EffectCore.CANNON, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CANDY_PARTICLES.get(),
 							player.getX(), player.getY() + 2,
 							player.getZ(), 20, 0, 0, 0, 1);
@@ -434,8 +434,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_partea","gavv","henshin_belt_gavv_belt_partea",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -446,8 +446,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kinchoco","gavv","henshin_belt_gavv_belt_kinchoco",
 					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -458,8 +458,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_uirou","gavv","henshin_belt_gavv_belt_uirou",
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -470,8 +470,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_mensen","gavv","henshin_belt_gavv_belt_mensen",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -482,8 +482,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_takosen","gavv","henshin_belt_gavv_belt_takosen",
 					new MobEffectInstance(EffectCore.LONG_ARM, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -494,8 +494,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ningyo","gavv","henshin_belt_gavv_belt_ningyo",
 					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -507,8 +507,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.EXPLOSION_SLASH, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.CHRISTMAS, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -519,8 +519,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shieldsnack","gavv","henshin_belt_gavv_belt_shieldsnack",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -531,8 +531,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shieldsnack","gavv","henshin_belt_gavv_belt_choco_treasure",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -547,8 +547,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shot_snack","gavv","henshin_belt_gavv_belt_shot_snack",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -561,8 +561,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -578,8 +578,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -595,8 +595,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
@@ -613,8 +613,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
@@ -636,8 +636,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 0.2);
@@ -650,8 +650,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(EffectCore.SLASH, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
@@ -694,8 +694,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_doumaru","valen","valenbuckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -717,8 +717,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -734,8 +734,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -754,8 +754,8 @@ public class GavvRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PUDDING_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -768,8 +768,8 @@ public class GavvRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(EffectCore.STEALTH, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -782,8 +782,8 @@ public class GavvRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(EffectCore.STEALTH, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -797,8 +797,8 @@ public class GavvRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PUDDING_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
@@ -821,8 +821,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","bitter_gavv","henshin_belt_bitter_gavv_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)) {
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
@@ -833,8 +833,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cookie","bitter_gavv","henshin_belt_bitter_gavv_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(Items.COOKIE)),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 0.2);
@@ -846,8 +846,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -858,8 +858,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_marblebreacookie","bitter_gavv","henshin_belt_bitter_gavv_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(Items.COOKIE)),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 0.2);
@@ -876,8 +876,8 @@ public class GavvRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY() + 1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
@@ -894,8 +894,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","caries","henshin_belt_caries_gavv_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY() + 1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
@@ -1085,8 +1085,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_tirolchocolate","valen","henshin_belt_gavv_belt_chocodan",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -1161,8 +1161,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_charapaki","gavv","henshin_belt_gavv_belt_charapaki",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -1173,8 +1173,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_charapaki_special","gavv","henshin_belt_gavv_belt_charapaki_special",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.CHOCO_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 40, 0, 0, 0, 1);
@@ -1405,8 +1405,8 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_boonboomger","gavv","henshin_belt_gavv_belt_boonboomger",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-					super.OnTransformation(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 1);
@@ -1485,7 +1485,7 @@ public class GavvRiderItems {
 
 	public static final DeferredItem<Item> VALENBUCKLE = ITEMS.register("valenbuckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",CHOCODON_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.overrideBeltText("valenbuckle_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+                    .overrideBeltText("valenbuckle_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR_VALEN = ITEMS.register("vrastumgear_valen",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen_frappe_custom",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))

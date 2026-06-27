@@ -35,8 +35,8 @@ public class V3RiderItems {
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)) {
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
@@ -49,8 +49,8 @@ public class V3RiderItems {
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
                     thunder.setVisualOnly(true);
                     thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
@@ -66,12 +66,12 @@ public class V3RiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"","riderman","riderman_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)) {
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
-                    super.OnTransformation(itemstack, player);
+                    super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);

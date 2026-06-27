@@ -630,6 +630,9 @@ public class RiderFormChangeItem extends BaseItem {
             if (entity instanceof Player player && !player.isCreative())
                 player.getCooldowns().addCooldown(this, this.lockDuration);
         }
+    }
+
+    public void transformationEffect(ItemStack itemstack, LivingEntity entity) {
         if (entity.level() instanceof ServerLevel sl) {
             sl.sendParticles(ParticleTypes.GUST,
                     entity.getX(), entity.getY() + 1.0,

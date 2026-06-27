@@ -185,8 +185,8 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 8, true, false)) {
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
@@ -325,8 +325,8 @@ public class ModdedItemCore {
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)
             ) {
 
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
                     thunder.setVisualOnly(true);
                     thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
@@ -363,8 +363,8 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
 
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
                     thunder.setVisualOnly(true);
                     thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
@@ -402,8 +402,8 @@ public class ModdedItemCore {
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)
             ) {
 
-                public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-                    super.OnTransformation(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
                     LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
                     thunder.setVisualOnly(true);
                     thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());

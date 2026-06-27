@@ -74,10 +74,13 @@ public class GhostDriverItem extends RiderDriverItem {
 			return "belts/"+ getFormItem(itemstack,1).getBeltTex()+"_"+getFormItem(itemstack,2).getFormName(false);
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()== GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.asItem()) return getFormItem(itemstack,2).getFormName(fly)+"_igor";
-		else if (equipmentSlot == EquipmentSlot.HEAD) return getFormItem(itemstack,2).getFormName(fly);
-
+		else if (equipmentSlot == EquipmentSlot.HEAD) {
+            if (isTransforming(rider)) return "transient_damashii";
+            else  return getFormItem(itemstack,2).getFormName(fly);
+}
 		else {
-			return riderName + getFormItem(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(getFormItem(itemstack, 2),itemstack);
+            if (isTransforming(rider)) return riderName + getFormItem(itemstack, 1).getFormName(fly)+"_transient";
+            else return riderName + getFormItem(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(getFormItem(itemstack, 2),itemstack);
 		}
 	}
 
@@ -88,7 +91,7 @@ public class GhostDriverItem extends RiderDriverItem {
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
-				case HEAD,CHEST, LEGS ->{
+				case CHEST, LEGS ->{
 					return true;
 				}
 				default -> {}
