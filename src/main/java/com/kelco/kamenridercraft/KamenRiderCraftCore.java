@@ -568,6 +568,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.MACEHINE_MASSIGLER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SAKURA_HURRICANE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.ROSE_ATTACKER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.MACHINE_HOODIE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BIKE_GAMER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SPORTS_GAMER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.PROTO_SPORTS_GAMER.get(), BikeRenderer::new);
@@ -1653,6 +1654,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.MACEHINE_MASSIGLER_SPAWN_EGG);
                 event.accept(MobsCore.SAKURA_HURRICANE_SPAWN_EGG);
                 event.accept(MobsCore.ROSE_ATTACKER_SPAWN_EGG);
+                event.accept(MobsCore.MACHINE_HOODIE_SPAWN_EGG);
                 event.accept(MobsCore.BIKE_GAMER_SPAWN_EGG);
                 event.accept(MobsCore.SPORTS_GAMER_SPAWN_EGG);
                 event.accept(MobsCore.PROTO_SPORTS_GAMER_SPAWN_EGG);

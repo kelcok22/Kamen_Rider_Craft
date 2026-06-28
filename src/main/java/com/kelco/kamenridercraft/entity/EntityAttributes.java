@@ -300,6 +300,7 @@ public class EntityAttributes {
         event.put(MobsCore.PROTO_SPORTS_GAMER.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.SAKURA_HURRICANE.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.ROSE_ATTACKER.get(), baseBikeEntity.setAttributes().build());
+        event.put(MobsCore.MACHINE_HOODIE.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.MACEHINE_BUILDER.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.RIDESTRIKER.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.RISEHOPPER.get(), baseBikeEntity.setAttributes().build());

@@ -25,7 +25,7 @@ public class BikeRenderer<T extends baseBikeEntity> extends GeoEntityRenderer<T>
     @Override
     public void render(T entity, float entityYaw, float partialTick, PoseStack poseStack,
                        MultiBufferSource bufferSource, int packedLight) {
-        poseStack.translate(0, -0.15, 0);
+        poseStack.translate(0, 0, 0);
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
     }
 }
