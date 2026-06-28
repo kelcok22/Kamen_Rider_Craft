@@ -3,10 +3,12 @@ package com.kelco.kamenridercraft.util;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.network.payload.StartPosePayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.network.PacketDistributor;
 
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
@@ -26,6 +28,12 @@ public class AnimationUtil {
         }
     }
 
+    public static void playPose(LivingEntity poser, String poseName) {
+        if (poser instanceof Player && poser.level() instanceof ServerLevel) {
+            PacketDistributor.sendToAllPlayers(new StartPosePayload(poseName.toLowerCase(), poser.getStringUUID()));
+            poser.setData(IS_POSING, true);
+        }
+    }
 
     public static String getAnimRiderName(RiderDriverItem driverItem) {
         String riderName = driverItem.Rider.toLowerCase();
