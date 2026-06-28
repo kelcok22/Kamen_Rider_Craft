@@ -1,31 +1,29 @@
 package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
 import com.kelco.kamenridercraft.network.payload.EndPosePayload;
 import com.kelco.kamenridercraft.network.payload.StartPosePayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.zigythebird.playeranim.animation.PlayerAnimResources;
+import com.zigythebird.playeranimcore.animation.Animation;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.network.PacketDistributor;
+import org.jetbrains.annotations.Nullable;
 
+import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
+import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
+import static com.kelco.kamenridercraft.util.MiscUtil.oooComboCheck;
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class AnimationUtil {
-    public static boolean canPose (LivingEntity poser) {
+    public static boolean canPose(LivingEntity poser) {
         return !poser.getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") && !poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving() && poser.onGround()
                 && !poser.isCrouching() && !poser.onClimbable() && poser.getData(POSE_COOLDOWN) <= 0 &&
                 poser.getData(USED_ABILITY).isEmpty();
-    }
-
-    public static void stopPosing(LivingEntity poser) {
-        if (poser.level() instanceof ServerLevel) {
-            poser.setData(IS_POSING, false);
-            poser.setData(POSE_COOLDOWN, 20);
-            PacketDistributor.sendToAllPlayers(new EndPosePayload(poser.getStringUUID()));
-        }
     }
 
     public static void playPose(LivingEntity poser, String poseName) {
@@ -33,6 +31,18 @@ public class AnimationUtil {
             PacketDistributor.sendToAllPlayers(new StartPosePayload(poseName.toLowerCase(), poser.getStringUUID()));
             poser.setData(IS_POSING, true);
         }
+    }
+
+    public static void stopPosing(LivingEntity poser) {
+        if (poser instanceof Player && poser.level() instanceof ServerLevel) {
+            poser.setData(IS_POSING, false);
+            poser.setData(POSE_COOLDOWN, 20);
+            PacketDistributor.sendToAllPlayers(new EndPosePayload(poser.getStringUUID()));
+        }
+    }
+
+    public static @Nullable Animation getAnim(String poseName) {
+        return PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, poseName.toLowerCase()));
     }
 
     public static String getAnimRiderName(RiderDriverItem driverItem) {
@@ -45,33 +55,35 @@ public class AnimationUtil {
                     riderName.replace("dark_", "");
             case "robot_super_1" -> "super_1";
             case "powered_up_core" -> "core";
-            case "eins" , "sango" -> "ichigo";
+            case "eins", "sango" -> "ichigo";
             default -> riderName;
         };
     }
 
-    public static String oooComboCheck(String medalOne, String medalTwo, String medalThree) {
-        String comboText = medalOne.replace("kamenridercraft:", "") + " " + medalTwo.replace("kamenridercraft:", "") + " " + medalThree.replace("kamenridercraft:", "");
-        return switch (comboText) {
-            case "taka_medal tora_medal batta_medal" -> "tatoba";
-            case "super_taka_medal super_tora_medal super_batta_medal" -> "super_tatoba";
-            case "kuwagata_medal kamakiri_medal batta_medal" -> "gatakiriba";
-            case "lion_medal tora_medal cheetah_medal" -> "latorartar";
-            case "taka_medal kujaku_medal condor_medal" -> "tajadol";
-            case "taka_eternity_medal kujaku_eternity_medal condor_eternity_medal" -> "tajadol_eternity";
-            case "shachi_medal unagi_medal tako_medal" -> "shauta";
-            case "sai_medal gorilla_medal zou_medal" -> "sagohzo";
-            case "ptera_medal tricera_medal tyranno_medal" -> "putotyra";
-            case "cobra_medal kame_medal wani_medal" -> "burakawani";
-            case "seiuchi_medal shirokuma_medal penguin_medal" -> "seishirogin";
-            case "mukade_medal hachi_medal ari_medal" -> "mukachiri";
-            case "shika_medal gazelle_medal ushi_medal" -> "shigazeshi";
-            case "ebi_new_medal kani_new_medal sasori_new_medal" -> "bikaso";
-            case "same_medal kujira_medal ookamiuo_medal" -> "saramiuo";
-            case "love_core_medal love_core2_medal love_core3_medal" -> "renai";
-            case "taka_medal imagin_medal shocker_medal" -> "tamashii";
-            case "habataki_medal taiga_medal ichigo_medal" -> "legend";
-            default -> "";
+    public static @Nullable Animation getMaskPose(LivingEntity posingRider) {
+        String helmet = posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString();
+        return switch (helmet) {
+            case "kamenridercraft:ferbus" -> getAnim("ferbus.dance");
+            case "kamenridercraft:ichigo_mask" -> getAnim("tojima.pose");
+            case "kamenridercraft:v3_mask" -> getAnim("ichiyo.pose");
+            case "kamenridercraft:riderman_helmet" -> getAnim("mitsuba.pose");
+            default -> null;
         };
+    }
+
+    public static @Nullable Animation oooAnimCheck(LivingEntity posingRider) {
+        ItemStack belt = posingRider.getItemBySlot(EquipmentSlot.FEET);
+        String medalOne = getFormItem(belt, 1).toString();
+        String medalTwo = getFormItem(belt, 2).toString();
+        String medalThree = getFormItem(belt, 3).toString();
+
+        String pose = oooComboCheck(medalOne, medalTwo, medalThree);
+        if (pose.isEmpty()) {
+            pose = "pose";
+        }
+        if (pose.contains("eternity")) {
+            pose = "tajadol";
+        }
+        return getAnim("ooo." + pose);
     }
 }

@@ -31,26 +31,14 @@ import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.ATTACK_LAYER_ID;
 import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.POSE_LAYER_ID;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
-import static com.kelco.kamenridercraft.util.AnimationUtil.getAnimRiderName;
-import static com.kelco.kamenridercraft.util.AnimationUtil.oooComboCheck;
+import static com.kelco.kamenridercraft.util.AnimationUtil.*;
 
 @Mod(value = KamenRiderCraftCore.MOD_ID, dist = Dist.CLIENT)
 public class ClientPayloadHandler {
 
     // Decade Complete summon swing mimicry
     public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
-        // Do something with the data, on the network thread
         handleCompleteSwing(data.hand(), context.player());
-
-        // Do something with the data, on the main thread
-        //context.enqueueWork(() -> {
-        //    handle(data.hand());
-        //})
-        //.exceptionally(e -> {
-        //    // Handle exception
-        //    context.disconnect(Component.translatable("kamenridercraft.networking.failed", e.getMessage()));
-        //    return null;
-        //});
     }
 
     public static void handleAttributeClientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
@@ -90,55 +78,37 @@ public class ClientPayloadHandler {
     public static void startPoseAnimations(final StartPosePayload data, final IPayloadContext context) {
         LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
         assert posingRider != null;
-        Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+        Animation animation = getAnim("default.pose");
         if (data.poseName().isEmpty()) {
             if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
 
                 RiderFormChangeItem formChangeItemOne = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
-
                 String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
                 String riderName = getAnimRiderName(driverItem);
 
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
+                if (getAnim(riderName + ".pose") != null) {
+                    animation = getAnim(riderName + ".pose");
+                }
 
                 if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "animation/form_specific_pose")))) {
-                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
+                    animation = getAnim(riderName + "." + formItemName + ".pose");
                 }
 
                 if (riderName.equals("ooo")) {
-                    RiderFormChangeItem formChangeItemTwo = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 2);
-                    RiderFormChangeItem formChangeItemThree = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 3);
-                    String comboName = oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
-
-                    if (comboName.equals("tajadol_eternity")) {
-                        comboName = "tajadol";
-                    }
-                    if (!comboName.isEmpty()) {
-                        animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + comboName + ".pose"));
-                    }
+                    animation = oooAnimCheck(posingRider);
                 }
 
-                if (animation == null) {
-                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
-                }
-            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ferbus")) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance"));
-            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ichigo_mask")) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "tojima.pose"));
-            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:v3_mask")) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ichiyo.pose"));
-            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:riderman_helmet")) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "mitsuba.pose"));
+            } else if (getMaskPose(posingRider) != null) {
+                animation = getMaskPose(posingRider);
             }
         } else {
             animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.poseName()));
-            System.out.println(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.poseName()));
         }
-        System.out.println("come on!");
         try {
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
+            assert controller != null;
             controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
             controller.triggerAnimation(animation);
         } catch (Exception e) {
