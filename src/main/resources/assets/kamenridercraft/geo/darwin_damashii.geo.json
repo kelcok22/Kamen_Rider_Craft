@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "parkaGhost",
-					"pivot": [-0.16667, 19.33333, 0]
+					"pivot": [34.8333, 19.33333, 0]
 				},
 				{
 					"name": "bipedHead",
@@ -43,6 +43,14 @@
 					"cubes": [
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.1, "uv": [16, 16]},
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.5, "uv": [16, 32]}
+					]
+				},
+				{
+					"name": "cape",
+					"parent": "armorBody",
+					"pivot": [0, 16, 2],
+					"cubes": [
+						{"origin": [-4, 4, -2], "size": [8, 12, 4], "inflate": 0.75, "uv": [72, 32]}
 					]
 				},
 				{

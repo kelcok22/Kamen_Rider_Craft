@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "parkaGhost",
-					"pivot": [-0.16667, 19.33333, 0]
+					"pivot": [34.8333, 19.33333, 0]
 				},
 				{
 					"name": "bipedHead",
@@ -42,7 +42,7 @@
 					"pivot": [0, 24, 0],
 					"cubes": [
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.1, "uv": [16, 16]},
-						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.5, "uv": [16, 32]}
+						{"origin": [-4, 10, -2], "size": [8, 14, 4], "inflate": 0.5, "uv": [16, 32]}
 					]
 				},
 				{
@@ -56,7 +56,6 @@
 					"pivot": [-5, 22, 0],
 					"cubes": [
 						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [40, 32]},
-						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [40, 16]},
 						{"origin": [-10.7, 22.6, -1], "size": [3, 2, 2], "pivot": [-9.2, 25.1, 0], "rotation": [0, 0, -45], "uv": [86, 0], "mirror": true},
 						{"origin": [-10.7, 24.6, 0], "size": [3, 4, 1], "pivot": [-9.2, 25.1, 0], "rotation": [0, 0, -45], "uv": [88, 4], "mirror": true},
 						{"origin": [-10.5, 17, 0.1], "size": [2, 8, 1], "uv": [90, 9], "mirror": true}
@@ -72,7 +71,6 @@
 					"parent": "bipedLeftArm",
 					"pivot": [5, 22, 0],
 					"cubes": [
-						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [32, 48]},
 						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [48, 48]},
 						{"origin": [7.7, 22.6, -1], "size": [3, 2, 2], "pivot": [9.2, 25.1, 0], "rotation": [0, 0, 45], "uv": [86, 0]},
 						{"origin": [7.7, 24.6, 0], "size": [3, 4, 1], "pivot": [9.2, 25.1, 0], "rotation": [0, 0, 45], "uv": [88, 4]},
@@ -89,7 +87,6 @@
 					"parent": "bipedLeftLeg",
 					"pivot": [2, 12, 0],
 					"cubes": [
-						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [16, 48]},
 						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [0, 48]}
 					]
 				},
@@ -108,7 +105,6 @@
 					"parent": "bipedRightLeg",
 					"pivot": [-2, 12, 0],
 					"cubes": [
-						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [0, 16]},
 						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [0, 32]}
 					]
 				},

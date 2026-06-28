@@ -110,7 +110,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.addNum(3).changeModel("mugen_damashii.geo.json").changeSlot(2).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
+			}.addNum(3).changeModel("mugen_damashii.geo.json").changeSlot(2).hasCape().addToList(DecadeRiderItems.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> MUGEN_GHOST_EYECON = ITEMS.register("mugen_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_mugen","ghost","ghostdriver_belt",
@@ -193,7 +193,7 @@ public class GhostRiderItems {
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
 			}
-					.addNum(0).changeModel("mugen_damashii.geo.json").changeSlot(2));
+					.addNum(0).changeModel("mugen_damashii.geo.json").hasCape().changeSlot(2));
 
 	public static final DeferredItem<Item> SIN_SPECTER_GHOST_EYECON = ITEMS.register("sin_specter_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_sin","specter","ghostdriver_belt",
@@ -523,7 +523,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(3).changeModel("goemon_damashii.geo.json").changeSlot(2).addToList(Monolith.GHOST_EYECONS,2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(3).changeModel("goemon_damashii.geo.json").changeSlot(2).hasCape().addToList(Monolith.GHOST_EYECONS,2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYOMA_GHOST_EYECON = ITEMS.register("ryoma_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"ryoma_damashii","ghost","ghostdriver_belt",
@@ -536,7 +536,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(3).changeModel("ryoma_damashii.geo.json").changeSlot(2).addToList(Monolith.GHOST_EYECONS,2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(3).changeModel("ryoma_damashii.geo.json").changeSlot(2).hasCape().addToList(Monolith.GHOST_EYECONS,2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIMIKO_GHOST_EYECON = ITEMS.register("himiko_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"himiko_damashii","ghost","ghostdriver_belt",
@@ -549,7 +549,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addNum(3).changeModel("himiko_damashii.geo.json").changeSlot(2).addToList(Monolith.GHOST_EYECONS,2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(3).changeModel("himiko_damashii.geo.json").hasCape().changeSlot(2).addToList(Monolith.GHOST_EYECONS,2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TUTANKHAMUN_GHOST_EYECON = ITEMS.register("tutankhamun_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"tutankhamun_damashii","ghost","ghostdriver_belt",
@@ -638,7 +638,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.changeModel("darwin_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeModel("darwin_damashii.geo.json").changeSlot(2).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> IKKYU_GHOST_EYECON = ITEMS.register("ikkyu_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"ikkyu_damashii","ghost","ghostdriver_belt",
@@ -662,7 +662,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.changeModel("pythagoras_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeModel("pythagoras_damashii.geo.json").changeSlot(2).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SANTA_GHOST_EYECON = ITEMS.register("santa_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"santa_damashii","ghost","ghostdriver_belt",
