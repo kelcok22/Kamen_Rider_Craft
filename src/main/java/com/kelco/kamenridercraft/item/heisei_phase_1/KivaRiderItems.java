@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.ArmMonsterStatueItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.IxabeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import io.netty.buffer.Unpooled;
@@ -436,7 +437,7 @@ public class KivaRiderItems {
 			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> IXA_BELT = ITEMS.register("ixa_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+			() -> new IxabeltItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -460,7 +461,7 @@ public class KivaRiderItems {
 			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> PROTO_IXA_BELT = ITEMS.register("proto_ixa_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"proto_ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+			() -> new IxabeltItem(ArmorMaterials.DIAMOND,"proto_ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
