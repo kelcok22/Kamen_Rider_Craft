@@ -36,6 +36,13 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> POSE_MODEL_MODIFIER = ATTRIBUTES.register("pose_model_modifier",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.pose_model_modifier",
+                    false
+            ).setSyncable(true)
+    );
+
 
     public static final DeferredHolder<Attribute, Attribute> CHANGE_KICK_MODEL = ATTRIBUTES.register("change_kick_model",
             () -> new BooleanAttribute(

@@ -48,6 +48,11 @@ public class ServerPayloadHandler {
         } else {
             if (canPose(context.player())) {
                 context.player().setData(IS_POSING, true);
+                if (context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() < 1) {
+                    context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).setBaseValue(1);
+                } else {
+                    context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).setBaseValue(0);
+                }
                 PacketDistributor.sendToAllPlayers(new StartPosePayload(0, context.player().getStringUUID()));
             }
         }
