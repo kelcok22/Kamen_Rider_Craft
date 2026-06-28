@@ -281,8 +281,10 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                     }
                 }
 
-                GeoBone headKick = this.getAnimationProcessor().getBone("headArmKick");
-                GeoBone headKickRemove = this.getAnimationProcessor().getBone("headArmKickRemove");
+                GeoBone headKick = this.getAnimationProcessor().getBone("headKick");
+                GeoBone headKickRemove = this.getAnimationProcessor().getBone("headKickRemove");
+                GeoBone bodyKick = this.getAnimationProcessor().getBone("bodyKick");
+                GeoBone bodyKickRemove = this.getAnimationProcessor().getBone("bodyKickRemove");
                 GeoBone rightArmKick = this.getAnimationProcessor().getBone("rightArmKick");
                 GeoBone rightArmKickRemove = this.getAnimationProcessor().getBone("rightArmKickRemove");
                 GeoBone leftArmKick = this.getAnimationProcessor().getBone("leftArmKick");
