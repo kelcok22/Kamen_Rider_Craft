@@ -106,7 +106,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             GeoBone cape = this.getAnimationProcessor().getBone("cape");
             GeoBone cape2 = this.getAnimationProcessor().getBone("cape2");
 
-            GeoBone tire = this.getAnimationProcessor().getBone("parkaGhost");
+            GeoBone tire = this.getAnimationProcessor().getBone("tire");
             GeoBone tire2 = this.getAnimationProcessor().getBone("tire2");
             GeoBone tire3 = this.getAnimationProcessor().getBone("tire3");
 
@@ -125,6 +125,46 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
             if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                 belt.setCustomAnimations(an, instanceId, state);
+
+                GeoBone parkaGhost = this.getAnimationProcessor().getBone("parkaGhost");
+                if (parkaGhost != null) {
+                    if (RiderDriverItem.isTransforming(RIDER)) {
+                        float X =-Transforming-1;
+                            if (Transforming>20) {
+                                X = X -((Transforming-20)-1);
+                            }
+                        parkaGhost.setPosX(X);
+                        if (Transforming>5) {
+                            float Y = (10-(Transforming-10)/2);
+                            parkaGhost.setPosY(Y);
+                        }else parkaGhost.setPosY((Transforming+1)*2);
+
+
+                        if (Transforming>20) {
+                            float size = 1-((Transforming-20)/10);
+                            parkaGhost.setScaleX(size);
+                            parkaGhost.setScaleY(size);
+                            parkaGhost.setScaleZ(size);
+                        }else {
+                            parkaGhost.setScaleX(1f);
+                            parkaGhost.setScaleY(1f);
+                            parkaGhost.setScaleZ(1f);
+                        }
+                        parkaGhost.setRotY((-Transforming-1) / 6);
+                        parkaGhost.setRotX((-Transforming-1) / 15);
+
+                    } else {
+                        parkaGhost.setRotX(0);
+                        parkaGhost.setRotY(0);
+                        parkaGhost.setScaleX(1f);
+                        parkaGhost.setScaleY(1f);
+                        parkaGhost.setScaleZ(1f);
+                        parkaGhost.setPosZ(0);
+                        parkaGhost.setPosX(0);
+                        parkaGhost.setPosY(0);
+                    }
+                }
+
 
                 GeoBone wizard_circle = this.getAnimationProcessor().getBone("wizard_circle");
                 if (wizard_circle != null) {

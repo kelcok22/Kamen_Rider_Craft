@@ -63,7 +63,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addAlternative(ORE_DAMASHII.get()).alsoChange2ndSlot(ORE_DAMASHII.get()).addShiftForm(ORE_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.IsBeltGlowing().addAlternative(ORE_DAMASHII.get()).alsoChange2ndSlot(ORE_DAMASHII.get()).addShiftForm(ORE_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
     public static final DeferredItem<Item> BOOST_DAMASHII_HOOD = ITEMS.register("boost_damashii_hood",
             () -> new RiderFormChangeItem(new Item.Properties(),"boost_damashii_hood","ghost","ghostdriver_belt",

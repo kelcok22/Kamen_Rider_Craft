@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "parkaGhost",
-					"pivot": [-0.16667, 19.33333, 0]
+					"pivot": [34.83333, 19.33333, 0]
 				},
 				{
 					"name": "bipedHead",

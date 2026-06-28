@@ -92,7 +92,7 @@ public class GhostDriverItem extends RiderDriverItem {
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
-				case CHEST, LEGS ->{
+                case HEAD,CHEST,LEGS ->{
 					return true;
 				}
 				default -> {}
