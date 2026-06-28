@@ -53,7 +53,7 @@ public class ServerPayloadHandler {
                 } else {
                     context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).setBaseValue(0);
                 }
-                PacketDistributor.sendToAllPlayers(new StartPosePayload(0, context.player().getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new StartPosePayload("", context.player().getStringUUID()));
             }
         }
     }

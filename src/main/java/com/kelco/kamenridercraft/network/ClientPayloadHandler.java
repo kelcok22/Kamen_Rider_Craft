@@ -91,45 +91,50 @@ public class ClientPayloadHandler {
         LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
         assert posingRider != null;
         Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+        if (data.poseName().isEmpty()) {
+            if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
 
-        if (posingRider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
+                RiderFormChangeItem formChangeItemOne = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
 
-            RiderFormChangeItem formChangeItemOne = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 1);
+                String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
+                String riderName = getAnimRiderName(driverItem);
 
-            String formItemName = formChangeItemOne.toString().replace("kamenridercraft:", "");
-            String riderName = getAnimRiderName(driverItem);
+                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
 
-            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + ".pose"));
-
-            if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "animation/form_specific_pose")))) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
-            }
-
-            if (riderName.equals("ooo")) {
-                RiderFormChangeItem formChangeItemTwo = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 2);
-                RiderFormChangeItem formChangeItemThree = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 3);
-                String comboName = oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
-
-                if (comboName.equals("tajadol_eternity")) {
-                    comboName = "tajadol";
+                if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "animation/form_specific_pose")))) {
+                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + formItemName + ".pose"));
                 }
-                if (!comboName.isEmpty()) {
-                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + comboName + ".pose"));
-                }
-            }
 
-            if (animation == null) {
-                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+                if (riderName.equals("ooo")) {
+                    RiderFormChangeItem formChangeItemTwo = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 2);
+                    RiderFormChangeItem formChangeItemThree = getFormItem(posingRider.getItemBySlot(EquipmentSlot.FEET), 3);
+                    String comboName = oooComboCheck(formChangeItemOne.toString(), formChangeItemTwo.toString(), formChangeItemThree.toString());
+
+                    if (comboName.equals("tajadol_eternity")) {
+                        comboName = "tajadol";
+                    }
+                    if (!comboName.isEmpty()) {
+                        animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, riderName + "." + comboName + ".pose"));
+                    }
+                }
+
+                if (animation == null) {
+                    animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.pose"));
+                }
+            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ferbus")) {
+                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance"));
+            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ichigo_mask")) {
+                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "tojima.pose"));
+            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:v3_mask")) {
+                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ichiyo.pose"));
+            } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:riderman_helmet")) {
+                animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "mitsuba.pose"));
             }
-        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ferbus")) {
-            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ferbus.dance"));
-        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:ichigo_mask")) {
-            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "tojima.pose"));
-        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:v3_mask")) {
-            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "ichiyo.pose"));
-        } else if (posingRider.getItemBySlot(EquipmentSlot.HEAD).getItem().toString().equals("kamenridercraft:riderman_helmet")) {
-            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "mitsuba.pose"));
+        } else {
+            animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.poseName()));
+            System.out.println(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.poseName()));
         }
+        System.out.println("come on!");
         try {
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
