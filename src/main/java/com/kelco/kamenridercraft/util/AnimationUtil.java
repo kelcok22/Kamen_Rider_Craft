@@ -80,9 +80,10 @@ public class AnimationUtil {
         String pose = oooComboCheck(medalOne, medalTwo, medalThree);
         if (pose.isEmpty()) {
             pose = "pose";
-        }
-        if (pose.contains("eternity")) {
-            pose = "tajadol";
+        } else if (pose.contains("eternity")) {
+            pose = "tajadol.pose";
+        } else {
+            pose = pose + ".pose";
         }
         return getAnim("ooo." + pose);
     }
