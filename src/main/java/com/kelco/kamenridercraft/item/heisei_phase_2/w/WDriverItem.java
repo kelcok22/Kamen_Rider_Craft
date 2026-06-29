@@ -67,6 +67,9 @@ public class WDriverItem extends RiderDriverItem {
 			}
 	}
 
+    public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/w_riderbelt.geo.json");
+    }
 	@Override
     public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag  tag)
     {
