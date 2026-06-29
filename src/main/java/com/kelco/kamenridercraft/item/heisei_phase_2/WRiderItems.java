@@ -54,7 +54,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
+			}.hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
 
 	public static final DeferredItem<Item> HEAT_MEMORY = ITEMS.register("heat_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_heat","w","wdriver_belt_hj",
@@ -149,7 +149,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.hasCape().isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> XTREME_MEMORY = ITEMS.register("xtreme_memory",

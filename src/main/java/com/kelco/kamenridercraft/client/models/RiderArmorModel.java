@@ -306,6 +306,17 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                         if (rightLegKick != null) rightLegKick.setHidden(!isKicking);
                         if (rightLegKickRemove != null) rightLegKickRemove.setHidden(isKicking );
 
+                GeoBone joker = this.getAnimationProcessor().getBone("joker");
+                if (joker != null) {
+                    if (isKicking){
+                        joker.setPosY(-10);
+                        joker.setPosX(5);
+                    }
+                    else{
+                        joker.setPosY(0);
+                        joker.setPosX(0);
+                    }
+                }
                 GeoBone WingsOut = this.getAnimationProcessor().getBone("WingsOut");
                 GeoBone WingsOutRemove = this.getAnimationProcessor().getBone("WingsOutRemove");
 

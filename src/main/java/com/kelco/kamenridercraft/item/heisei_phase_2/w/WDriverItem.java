@@ -114,7 +114,7 @@ public class WDriverItem extends RiderDriverItem {
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		
 		if (slot!= EquipmentSlot.HEAD) {
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/w_joker.geo.json");
 		}else return super.getModelResource(itemstack, animatable, slot,rider);
 	}
 	
