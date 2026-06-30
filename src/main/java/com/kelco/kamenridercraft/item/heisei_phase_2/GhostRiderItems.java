@@ -32,17 +32,6 @@ public class GhostRiderItems {
 	public static final DeferredItem<Item> BLANK_GHOST_EYECON = ITEMS.register("blank_ghost_eyecon",
 			() -> new BlankGhostEyeconItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
-	public static final DeferredItem<Item> ORE_DAMASHII_HOOD = ITEMS.register("ore_damashii_hood",
-			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii_hood","ghost","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 30, 0, 0, 0, 1);
-				}
-			}.changeModel("damashii.geo.json").changeSlot(2));
-
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
@@ -63,18 +52,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addAlternative(ORE_DAMASHII.get()).alsoChange2ndSlot(ORE_DAMASHII.get()).addShiftForm(ORE_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
-
-    public static final DeferredItem<Item> BOOST_DAMASHII_HOOD = ITEMS.register("boost_damashii_hood",
-            () -> new RiderFormChangeItem(new Item.Properties(),"boost_damashii_hood","ghost","ghostdriver_belt",
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 30, 0, 0, 0, 1);
-                }
-            }.addNum(3).changeModel("damashii.geo.json").changeSlot(2));
+			}.IsBeltGlowing().addAlternative(ORE_DAMASHII.get()).alsoChange2ndSlot(ORE_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_DAMASHII = ITEMS.register("boost_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"boost_damashii","ghost","ghostdriver_belt",
@@ -99,7 +77,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addAlternative(BOOST_DAMASHII.get()).changeModel("ghost.geo.json").alsoChange2ndSlot(BOOST_DAMASHII.get()).addShiftForm(BOOST_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addAlternative(BOOST_DAMASHII.get()).changeModel("ghost.geo.json").alsoChange2ndSlot(BOOST_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUGEN_DAMASHII = ITEMS.register("mugen_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"mugen_damashii","ghost","ghostdriver_belt",
@@ -126,17 +104,6 @@ public class GhostRiderItems {
 				}
 			}.alsoChange2ndSlot(MUGEN_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
-    public static final DeferredItem<Item> SPECTER_DAMASHII_HOOD = ITEMS.register("specter_damashii_hood",
-            () -> new RiderFormChangeItem(new Item.Properties(),"specter_damashii_hood","specter","ghostdriver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 30, 0, 0, 0, 1);
-                }
-            }.addNum(2).changeModel("damashii.geo.json").changeSlot(2));
-
 	public static final DeferredItem<Item> SPECTER_DAMASHII = ITEMS.register("specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"specter_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
@@ -157,7 +124,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addAlternative(SPECTER_DAMASHII.get()).alsoChange2ndSlot(SPECTER_DAMASHII.get()).addShiftForm(SPECTER_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addAlternative(SPECTER_DAMASHII.get()).alsoChange2ndSlot(SPECTER_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEEP_SPECTER_DAMASHII = ITEMS.register("deep_specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"deep_damashii","specter","ghostdriver_belt",
@@ -208,16 +175,6 @@ public class GhostRiderItems {
 				}
 			}.alsoChange2ndSlot(SIN_SPECTER_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
-    public static final DeferredItem<Item> NECROM_DAMASHII_HOOD = ITEMS.register("necrom_damashii_hood",
-            () -> new RiderFormChangeItem(new Item.Properties(),"necrom_damashii_hood","necrom","ghostdriver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 30, 0, 0, 0, 1);
-                }
-            }.addNum(0).changeModel("necrom_damashii.geo.json").changeSlot(2));
 
 	public static final DeferredItem<Item> NECROM_DAMASHII = ITEMS.register("necrom_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"necrom_damashii","necrom","ghostdriver_belt",
@@ -241,7 +198,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/belt_with_brace.geo.json").changeModel("necrom.geo.json").addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).addShiftForm(NECROM_DAMASHII_HOOD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeBeltModel("geo/belt_with_brace.geo.json").changeModel("necrom.geo.json").addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> YUJOU_BURST_DAMASHII = ITEMS.register("yujou_burst_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"yujou_burst_necrom_damashii","necrom","ghostdriver_belt",

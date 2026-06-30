@@ -77,6 +77,10 @@ public class GhostDriverItem extends RiderDriverItem {
 		else if (equipmentSlot == EquipmentSlot.HEAD) {
 
            if (isTransforming(rider)) return getFormItem(itemstack,2).getFormName(fly)+"_parka_ghost";
+           if (getFormItem(itemstack,2)==GhostRiderItems.ORE_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1
+                   ||getFormItem(itemstack,2)==GhostRiderItems.SPECTER_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1
+                   ||getFormItem(itemstack,2)==GhostRiderItems.NECROM_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1
+                   ||getFormItem(itemstack,2)==GhostRiderItems.BOOST_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1)return getFormItem(itemstack,2).getFormName(fly)+"_hood";
            else return getFormItem(itemstack,2).getFormName(fly);
 }
 		else {
