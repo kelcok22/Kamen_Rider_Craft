@@ -65,17 +65,15 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
                 if (!(driverItem.abilitySlotOne == null)) {
                     ABILITY_ONE = driverItem.abilitySlotOne;
                 } else {
-                    var abilityList = clientGetAbility(1);
-                    if (abilityList.getFirst() != null) {
-                        driverItem.abilitySlotOne = returnAbilityIcon(abilityList.getFirst().toLowerCase().substring(1));
+                    if (!clientGetAbility(1).isEmpty()) {
+                        driverItem.abilitySlotOne = returnAbilityIcon(clientGetAbility(1).getFirst().toLowerCase().substring(1));
                     }
                 }
                 if (!(driverItem.abilitySlotTwo == null)) {
                     ABILITY_TWO = driverItem.abilitySlotTwo;
                 } else {
-                    var abilityList = clientGetAbility(2);
-                    if (abilityList.getFirst() != null) {
-                        driverItem.abilitySlotTwo = returnAbilityIcon(abilityList.getFirst().toLowerCase().substring(1));
+                    if (!clientGetAbility(2).isEmpty()) {
+                        driverItem.abilitySlotTwo = returnAbilityIcon(clientGetAbility(2).getFirst().toLowerCase().substring(1));
                     }
                 }
             }

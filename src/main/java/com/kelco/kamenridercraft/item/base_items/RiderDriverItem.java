@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
@@ -153,11 +153,11 @@ public class RiderDriverItem extends RiderArmorItem {
             if (isTransformed(rider)) tag.putDouble("render_type", getRenderType(stack));
             if (!isTransformed(rider)) tag.putDouble("render_type", 0);
 
-            if(!rider.level().isClientSide()) {
-                    for (int n = 0; n < Num_Base_Form_Item; n++) {
-                        RiderFormChangeItem form = getFormItem(stack, n + 1);
-                        form.transformationEffect(stack, rider,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
-                    }
+            if (!rider.level().isClientSide()) {
+                for (int n = 0; n < Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = getFormItem(stack, n + 1);
+                    form.transformationEffect(stack, rider, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
+                }
             }
         } else {
             setUpdateForm(stack);
@@ -256,7 +256,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 RiderFormChangeItem form = getFormItem(itemstack, n + 1);
                 form.OnTransformation(itemstack, rider);
                 if (rider instanceof Player player && !player.isCreative()) {
-                    PacketDistributor.sendToAllPlayers(new EndPosePayload(player.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "pose"));
                 }
             }
         }
@@ -312,9 +312,6 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
-
-
-
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
         boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && getFormItem(itemstack, 1).getSD() & SD;
@@ -359,15 +356,15 @@ public class RiderDriverItem extends RiderArmorItem {
             return false;
         }
         boolean isGold = false;
+        if (getFormItem(stack, 1).checkGold()) {
+            return true;
+        }
         if (Num_Base_Form_Item != 1) {
-            for (int n = 0; n < Num_Base_Form_Item - 1; n++) {
+            for (int n = 2; n < Num_Base_Form_Item; n++) {
                 if (getFormItem(stack, n).checkGold()) {
                     isGold = true;
                 }
             }
-        }
-        if (getFormItem(stack, 1).checkGold()) {
-            return true;
         }
         return isGold;
     }

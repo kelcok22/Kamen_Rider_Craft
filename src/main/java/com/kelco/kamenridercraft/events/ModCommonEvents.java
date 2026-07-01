@@ -139,13 +139,22 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void clientTick(ClientTickEvent.Post event) {
-            if (Minecraft.getInstance().player != null) {
+            Player player = Minecraft.getInstance().player;
+            if (player != null) {
+                AttributeInstance heldKeyOne = player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE);
+                AttributeInstance heldKeyTwo = player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO);
+
                 if (KeyBindings.INSTANCE.BeltKey.consumeClick())
                     PacketDistributor.sendToServer(new BeltKeyPayload(0));
-                if (KeyBindings.INSTANCE.PrimaryAbilityKey.consumeClick()) {
-                    PacketDistributor.sendToServer(new PrimaryAbilityKeyPayload(0));
-                } else if (KeyBindings.INSTANCE.SecondaryAbilityKey.consumeClick()) {
-                    PacketDistributor.sendToServer(new SecondaryAbilityKeyPayload(0));
+                if (KeyBindings.INSTANCE.AbilityKeyOne.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyTwo.isDown() && heldKeyOne.getValue() <= 0) {
+                    PacketDistributor.sendToServer(new AbilityKeyPayload(1));
+                } else if (!KeyBindings.INSTANCE.AbilityKeyOne.isDown() && heldKeyOne.getValue() >= 1) {
+                    PacketDistributor.sendToServer(new AbilityKeyPayload(3));
+                }
+                if (KeyBindings.INSTANCE.AbilityKeyTwo.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyOne.isDown() && heldKeyTwo.getValue() <= 0) {
+                    PacketDistributor.sendToServer(new AbilityKeyPayload(2));
+                } else if (!KeyBindings.INSTANCE.AbilityKeyTwo.isDown() && heldKeyTwo.getValue() >= 1) {
+                    PacketDistributor.sendToServer(new AbilityKeyPayload(4));
                 }
                 if (KeyBindings.INSTANCE.PoseKey.consumeClick())
                     PacketDistributor.sendToServer(new PoseKeyPayload(0));

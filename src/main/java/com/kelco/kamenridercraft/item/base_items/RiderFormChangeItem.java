@@ -151,7 +151,7 @@ public class RiderFormChangeItem extends BaseItem {
     public String getModel(String riderName) {
         if (UPDATED_MODEL != null) return UPDATED_MODEL;
         ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + FORM_NAME + ".geo.json");
-        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + FORM_NAME + ".geo.json" : (get_Has_SgetHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + FORM_NAME + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
     public Boolean getShowFace() {
@@ -202,7 +202,7 @@ public class RiderFormChangeItem extends BaseItem {
         return IS_BELT_GLOWING;
     }
 
-    public Boolean get_Has_SgetHasStaticWings() {
+    public Boolean getHasStaticWings() {
         return HAS_STATIC_WINGS;
     }
 

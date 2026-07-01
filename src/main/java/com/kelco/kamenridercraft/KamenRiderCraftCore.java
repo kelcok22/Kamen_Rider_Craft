@@ -675,8 +675,8 @@ public class KamenRiderCraftCore {
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
-            event.register(KeyBindings.INSTANCE.PrimaryAbilityKey);
-            event.register(KeyBindings.INSTANCE.SecondaryAbilityKey);
+            event.register(KeyBindings.INSTANCE.AbilityKeyOne);
+            event.register(KeyBindings.INSTANCE.AbilityKeyTwo);
             event.register(KeyBindings.INSTANCE.PoseKey);
         }
 
@@ -731,18 +731,12 @@ public class KamenRiderCraftCore {
                             ClientPayloadHandler::handleCompleteSwing,
                             ServerPayloadHandler::handleCompleteSwing
                     )
-            );
+            );;
 
             registrar.playToClient(
-                    EndPosePayload.TYPE,
-                    EndPosePayload.STREAM_CODEC,
-                    ClientPayloadHandler::endPoseAnimations
-            );
-
-            registrar.playToClient(
-                    EndAttackAnimationPayload.TYPE,
-                    EndAttackAnimationPayload.STREAM_CODEC,
-                    ClientPayloadHandler::endAttackAnimations
+                    EndAnimationPayload.TYPE,
+                    EndAnimationPayload.STREAM_CODEC,
+                    ClientPayloadHandler::endAnimations
             );
 
             registrar.playToClient(
@@ -752,9 +746,9 @@ public class KamenRiderCraftCore {
             );
 
             registrar.playToClient(
-                    AttackAnimPayload.TYPE,
-                    AttackAnimPayload.STREAM_CODEC,
-                    ClientPayloadHandler::startAttackAnim
+                    AnimPayload.TYPE,
+                    AnimPayload.STREAM_CODEC,
+                    ClientPayloadHandler::startAnim
             );
 
             registrar.playToServer(
@@ -782,15 +776,9 @@ public class KamenRiderCraftCore {
             );
 
             registrar.playToServer(
-                    PrimaryAbilityKeyPayload.TYPE,
-                    PrimaryAbilityKeyPayload.STREAM_CODEC,
-                    ServerPayloadHandler::handlePrimaryAbilityKeyPress
-            );
-
-            registrar.playToServer(
-                    SecondaryAbilityKeyPayload.TYPE,
-                    SecondaryAbilityKeyPayload.STREAM_CODEC,
-                    ServerPayloadHandler::handleSecondaryAbilityKeyPress
+                    AbilityKeyPayload.TYPE,
+                    AbilityKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleAbilityKeyPress
             );
 
             registrar.playToServer(

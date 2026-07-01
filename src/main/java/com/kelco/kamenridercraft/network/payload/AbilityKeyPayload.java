@@ -6,12 +6,12 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 
-public record EndPosePayload(String UUID) implements CustomPacketPayload {
-    public static final Type<EndPosePayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "end_pose"));
+public record AbilityKeyPayload(int key) implements CustomPacketPayload {
+    public static final Type<AbilityKeyPayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "ability_key"));
 
-    public static final StreamCodec<ByteBuf, EndPosePayload> STREAM_CODEC = StreamCodec.composite(
-            ByteBufCodecs.STRING_UTF8, EndPosePayload::UUID,
-            EndPosePayload::new
+    public static final StreamCodec<ByteBuf, AbilityKeyPayload> STREAM_CODEC = StreamCodec.composite(
+            ByteBufCodecs.VAR_INT, AbilityKeyPayload::key,
+            AbilityKeyPayload::new
     );
 
     @Override

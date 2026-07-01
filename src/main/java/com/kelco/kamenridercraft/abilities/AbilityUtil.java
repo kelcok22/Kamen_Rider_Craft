@@ -7,8 +7,9 @@ import com.kelco.kamenridercraft.abilities.kicks.WizardRiderKicks;
 import com.kelco.kamenridercraft.abilities.misc_abilities.MiscAbilities;
 import com.kelco.kamenridercraft.abilities.punches.GenericRiderPunches;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
-import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -42,7 +43,8 @@ public class AbilityUtil {
                         }
                     }
                     break;
-                case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick", "special_turbo":
+                case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick",
+                     "special_turbo":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
@@ -118,41 +120,41 @@ public class AbilityUtil {
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(user)) {
                 belt = user.getItemBySlot(EquipmentSlot.FEET);
             }
-                if (belt != null) {
-                    var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
-                    switch (abilitySlot) {
-                        case 1:
-                            if (beltCheck.Num_Base_Form_Item != 1) {
-                                for (int n = 0; n < beltCheck.Num_Base_Form_Item - 1; n++) {
-                                    if (getFormItem(belt, n).getSlotOneAbility().isEmpty()) {
-                                        String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
-                                        returnedAbility.add(priority + getFormItem(belt, n).getSlotOneAbility());
-                                    }
+            if (belt != null) {
+                var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
+                switch (abilitySlot) {
+                    case 1:
+                        if (beltCheck.Num_Base_Form_Item != 1) {
+                            for (int n = 1; n <= beltCheck.Num_Base_Form_Item - 1; n++) {
+                                if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
+                                    String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
+                                    returnedAbility.add(priority + getFormItem(belt, n).getSlotOneAbility());
                                 }
-                            } else {
-                                String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
-                                returnedAbility.add(priority + getFormItem(belt, 1).getSlotOneAbility());
                             }
-                            break;
-                        case 2:
-                            if (beltCheck.Num_Base_Form_Item != 1) {
-                                for (int n = 0; n < beltCheck.Num_Base_Form_Item - 1; n++) {
-                                    if (getFormItem(belt, n).getSlotOneAbility().isEmpty()) {
-                                        String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
-                                        returnedAbility.add(priority + getFormItem(belt, n).getSlotTwoAbility());
-                                    }
+                        } else {
+                            String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
+                            returnedAbility.add(priority + getFormItem(belt, 1).getSlotOneAbility());
+                        }
+                        break;
+                    case 2:
+                        if (beltCheck.Num_Base_Form_Item != 1) {
+                            for (int n = 1; n <= beltCheck.Num_Base_Form_Item; n++) {
+                                if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotTwoAbility().isEmpty()) {
+                                    String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
+                                    returnedAbility.add(priority + getFormItem(belt, n).getSlotTwoAbility());
                                 }
-                            } else {
-                                String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
-                                returnedAbility.add(priority + getFormItem(belt, 1).getSlotTwoAbility());
                             }
-                            break;
-                    }
-                    if (returnedAbility.getFirst() != null) {
-                        returnedAbility.sort(Comparator.naturalOrder());
-                    }
-                    return returnedAbility;
+                        } else {
+                            String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
+                            returnedAbility.add(priority + getFormItem(belt, 1).getSlotTwoAbility());
+                        }
+                        break;
                 }
+                if (!returnedAbility.isEmpty()) {
+                    returnedAbility.sort(Comparator.naturalOrder());
+                }
+                return returnedAbility;
+            }
         }
         return returnedAbility;
     }
@@ -166,14 +168,14 @@ public class AbilityUtil {
                 user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
             }
             if (delayAnimationEndTicks == 0 && user instanceof Player) {
-                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
             } else {
                 user.setData(DELAY_ANIMATION_END, true);
                 user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
             }
             if (!afterAnimation.isEmpty() && user instanceof Player) {
-                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
-                PacketDistributor.sendToAllPlayers(new AttackAnimPayload(afterAnimation, user.getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
+                PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", user.getStringUUID()));
                 user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
             }
         }

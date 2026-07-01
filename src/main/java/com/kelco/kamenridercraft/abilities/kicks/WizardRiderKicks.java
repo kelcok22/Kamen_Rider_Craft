@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
-import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -22,7 +22,7 @@ public class WizardRiderKicks {
     public static void flameWizardKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("wizard.kick", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload("wizard.kick", "attack", user.getStringUUID()));
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 3, true, false));
 
             BaseEffectEntity magicCircle = new BaseEffectEntity(user.level(), 32, user);

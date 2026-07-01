@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.network.payload.EndPosePayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.network.payload.StartPosePayload;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
 import com.zigythebird.playeranimcore.animation.Animation;
@@ -37,7 +37,7 @@ public class AnimationUtil {
         if (poser instanceof Player && poser.level() instanceof ServerLevel) {
             poser.setData(IS_POSING, false);
             poser.setData(POSE_COOLDOWN, 20);
-            PacketDistributor.sendToAllPlayers(new EndPosePayload(poser.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new EndAnimationPayload(poser.getStringUUID(), "pose"));
         }
     }
 

@@ -22,24 +22,6 @@ import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
 import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
 
 public class ServerPayloadHandler {
-
-
-    // Decade Complete summon swing mimicry
-    public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
-        // Do something with the data, on the network thread
-        handleCompleteSwing(data.hand(), context.player());
-
-        // Do something with the data, on the main thread
-        //context.enqueueWork(() -> {
-        //    handle(data.hand());
-        //})
-        //.exceptionally(e -> {
-        //    // Handle exception
-        //    context.disconnect(Component.translatable("kamenridercraft.networking.failed", e.getMessage()));
-        //    return null;
-        //});
-    }
-
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
         //TODO add gamerule for allow particles, sounds, and cooldown length
         if (context.player().getData(IS_POSING)) {
@@ -59,34 +41,46 @@ public class ServerPayloadHandler {
     }
 
     public static void handleAttributeChange(final AttributeChangePayload data, final IPayloadContext context) {
-        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
-            if (entity instanceof Player & context.player().getStringUUID().equals(data.id())) {
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) != null) {
+            if (context.player().getStringUUID().equals(data.id())) {
                 PacketDistributor.sendToAllPlayers(new AttributeChangeClientPayload(data.id(), data.attributeName(), data.valueChange()));
             }
         }
     }
 
     public static void handleBeltKeyPress(final BeltKeyPayload data, final IPayloadContext context) {
-        // Do something with the data, on the network thread
-        handleBeltKeyPress((ServerPlayer) context.player());
-
-        // Do something with the data, on the main thread
-        //context.enqueueWork(() -> {
-        //    handle(data.hand());
-        //})
-        //.exceptionally(e -> {
-        //    // Handle exception
-        //    context.disconnect(Component.translatable("kamenridercraft.networking.failed", e.getMessage()));
-        //    return null;
-        //});
+        Player player = context.player();
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            if (belt.Has_Inventory && player.getItemBySlot(EquipmentSlot.FEET).getDamageValue() != player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage() - 1)
+                belt.openInventory((ServerPlayer) player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
+        }
     }
 
-    public static void handlePrimaryAbilityKeyPress(final PrimaryAbilityKeyPayload data, final IPayloadContext context) {
-        handleAbilityKeyPress((ServerPlayer) context.player(), 1);
-    }
+    public static void handleAbilityKeyPress(final AbilityKeyPayload data, final IPayloadContext context) {
+        Player player = context.player();
+        switch (data.key()) {
+            case 1:
+                player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE).setBaseValue(1);
+                break;
+            case 2:
+                player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO).setBaseValue(1);
+                break;
+            case 3:
+                player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE).setBaseValue(0);
+                return;
+            case 4:
+                player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO).setBaseValue(0);
+                return;
+        }
 
-    public static void handleSecondaryAbilityKeyPress(final SecondaryAbilityKeyPayload data, final IPayloadContext context) {
-        handleAbilityKeyPress((ServerPlayer) context.player(), 2);
+        boolean costMeter = (!player.isCreative()) && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(player) || !driverItem.Rider.toLowerCase().contains("ohma"));
+        if (!player.level().isClientSide() && player.getData(USED_ABILITY).isEmpty() && player.getData(ABILITY_COOLDOWN) < 1 && (player.getAttribute(Attributes.ABILITY_METER).getValue() > 0) || !costMeter) {
+            var abilityList = AbilityUtil.getAbility(player, data.key());
+            if (!abilityList.isEmpty()) {
+                String ability = abilityList.getFirst().toLowerCase().substring(1);
+                AbilityUtil.calculateAbility(player, ability);
+            }
+        }
     }
 
     public static void handleClimbing(final ClimbCollisionPayload data, final IPayloadContext context) {
@@ -98,7 +92,10 @@ public class ServerPayloadHandler {
         }
     }
 
-    private static void handleCompleteSwing(int hand, Player player) {
+    // Decade Complete summon swing mimicry
+    public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
+        Player player = context.player();
+        int hand = data.hand();
         for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
                 entity -> (entity.getOwner() == player))) {
             complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
@@ -106,25 +103,6 @@ public class ServerPayloadHandler {
         for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
                 entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
             legend.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
-        }
-    }
-
-    private static void handleAbilityKeyPress(ServerPlayer player, int slot) {
-        boolean costMeter = (!player.isCreative()) && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(player) || !driverItem.Rider.toLowerCase().contains("ohma"));
-        if (!player.level().isClientSide() && player.getData(USED_ABILITY).isEmpty() && player.getData(ABILITY_COOLDOWN) < 1 && (player.getAttribute(Attributes.ABILITY_METER).getValue() > 0) || !costMeter) {
-            var abilityList = AbilityUtil.getAbility(player, slot);
-            if (abilityList.getFirst() != null) {
-                String ability = abilityList.getFirst().toLowerCase().substring(1);
-                AbilityUtil.calculateAbility(player, ability);
-            }
-        }
-    }
-
-    private static void handleBeltKeyPress(ServerPlayer player) {
-
-        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (belt.Has_Inventory && player.getItemBySlot(EquipmentSlot.FEET).getDamageValue() != player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage() - 1)
-                belt.openInventory(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
         }
     }
 }

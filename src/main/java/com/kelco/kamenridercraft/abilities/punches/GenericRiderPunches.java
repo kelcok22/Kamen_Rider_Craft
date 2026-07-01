@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.punches;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -22,7 +22,7 @@ public class GenericRiderPunches {
     public static void groundRiderPunch(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.tojima_punch", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload("default.tojima_punch", "attack", user.getStringUUID()));
             user.push(user.getLookAngle().scale(1.3));
             user.hurtMarked = true;
             user.setInvulnerable(true);
@@ -46,7 +46,7 @@ public class GenericRiderPunches {
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
                 user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
             }
-            PacketDistributor.sendToAllPlayers(new AttackAnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
+            //PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
 
             if (!user.onGround()) {
                 Vec3 initialVec = user.getDeltaMovement();
@@ -83,7 +83,7 @@ public class GenericRiderPunches {
                 }
                 break;
             case 17:
-                PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.punch", user.getStringUUID()));
+                //PacketDistributor.sendToAllPlayers(new AnimPayload("default.punch", user.getStringUUID()));
                 break;
             case 21:
                 user.setDeltaMovement(0, 0, 0);

@@ -55,7 +55,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                                 if (renderer.getTextureLocation(animatable).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))
                                     return null;
                                 ResourceLocation path = appendToPath(model.getTextureResource(animatable, renderer2), "_glowmask");
-                                return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), renderer2.getCurrentSlot(), RIDER) ? (RenderType) ENTITY_TRANSLUCENT_EMISSIVE.apply(path, false) : null;
+                                return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), renderer2.getCurrentSlot(), RIDER) ? RenderType.breezeEyes(path) : null;
                             }
                         }
                         return null;

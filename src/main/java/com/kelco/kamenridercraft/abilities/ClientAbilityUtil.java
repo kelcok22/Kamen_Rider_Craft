@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.abilities;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationFactory;
 import com.zigythebird.playeranimcore.enums.PlayState;
@@ -39,8 +40,8 @@ public class ClientAbilityUtil {
             switch (abilitySlot) {
                 case 1:
                     if (beltCheck.Num_Base_Form_Item != 1) {
-                        for (int n = 0; n < beltCheck.Num_Base_Form_Item - 1; n++) {
-                            if (getFormItem(belt, n).getSlotOneAbility().isEmpty()) {
+                        for (int n = 1; n <= beltCheck.Num_Base_Form_Item; n++) {
+                            if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
                                 String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
                                 returnedAbility.add(priority + getFormItem(belt, n).getSlotOneAbility());
                             }
@@ -52,8 +53,8 @@ public class ClientAbilityUtil {
                     break;
                 case 2:
                     if (beltCheck.Num_Base_Form_Item != 1) {
-                        for (int n = 0; n < beltCheck.Num_Base_Form_Item - 1; n++) {
-                            if (getFormItem(belt, n).getSlotOneAbility().isEmpty()) {
+                        for (int n = 1; n <= beltCheck.Num_Base_Form_Item; n++) {
+                            if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotTwoAbility().isEmpty()) {
                                 String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
                                 returnedAbility.add(priority + getFormItem(belt, n).getSlotTwoAbility());
                             }
@@ -64,7 +65,7 @@ public class ClientAbilityUtil {
                     }
                     break;
             }
-            if (returnedAbility.getFirst() != null) {
+            if (!returnedAbility.isEmpty()) {
                 returnedAbility.sort(Comparator.naturalOrder());
             }
             return returnedAbility;

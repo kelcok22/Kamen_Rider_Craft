@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
-import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
-import com.kelco.kamenridercraft.network.payload.EndAttackAnimationPayload;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.server.level.ServerLevel;
@@ -19,7 +19,7 @@ public class KabutoRiderKicks {
     public static void kabutoKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AttackAnimPayload("kabuto.rider_kick_wait", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload("kabuto.rider_kick_wait", "attack", user.getStringUUID()));
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 20, true, false));
             user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
             return;
@@ -41,8 +41,8 @@ public class KabutoRiderKicks {
                 user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
                 return;
             case 60:
-                PacketDistributor.sendToAllPlayers(new EndAttackAnimationPayload(user.getStringUUID()));
-                PacketDistributor.sendToAllPlayers(new AttackAnimPayload("kabuto.rider_kick", user.getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
+                PacketDistributor.sendToAllPlayers(new AnimPayload("kabuto.rider_kick", "attack", user.getStringUUID()));
                 user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
                 return;
         }

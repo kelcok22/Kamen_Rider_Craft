@@ -18,15 +18,15 @@ public class KeyBindings {
             CATEGORY
     );
 
-    public final KeyMapping PrimaryAbilityKey = new KeyMapping(
-            "key." + KamenRiderCraftCore.MOD_ID + ".primary_ability",
+    public final KeyMapping AbilityKeyOne = new KeyMapping(
+            "key." + KamenRiderCraftCore.MOD_ID + ".ability_one",
             KeyConflictContext.IN_GAME,
             InputConstants.getKey(InputConstants.KEY_C, -1),
             CATEGORY
     );
 
-    public final KeyMapping SecondaryAbilityKey = new KeyMapping(
-            "key." + KamenRiderCraftCore.MOD_ID + ".secondary_ability",
+    public final KeyMapping AbilityKeyTwo = new KeyMapping(
+            "key." + KamenRiderCraftCore.MOD_ID + ".ability_two",
             KeyConflictContext.IN_GAME,
             InputConstants.getKey(InputConstants.KEY_V, -1),
             CATEGORY
