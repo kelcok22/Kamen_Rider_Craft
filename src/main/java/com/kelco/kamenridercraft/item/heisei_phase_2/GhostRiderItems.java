@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.AkariCannonItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.BlankGhostEyeconItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -726,7 +727,7 @@ public class GhostRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
-				}
+				}}
 			}.changeModel("columbus_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHAKEPEARE_GHOST_EYECON = ITEMS.register("shakespeare_ghost_eyecon",
@@ -739,7 +740,7 @@ public class GhostRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
-				}
+				}}
 			}.changeModel("shakespeare_damashii.geo.json").hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAMEHAMEHA_GHOST_EYECON = ITEMS.register("kamehameha_ghost_eyecon",
@@ -778,7 +779,7 @@ public class GhostRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
-				}
+				}}
 			}.changeModel("da_vinci_damashii.geo.json").hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TENKATOITSU_GHOST_EYECON = ITEMS.register("tenkatoitsu_ghost_eyecon",
@@ -808,7 +809,7 @@ public class GhostRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
-				}
+				}}
 			}.changeModel("shinsegumi_damashii.geo.json").hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOWA_GHOST_EYECON = ITEMS.register("showa_ghost_eyecon",
