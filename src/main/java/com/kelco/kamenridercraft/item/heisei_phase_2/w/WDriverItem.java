@@ -36,7 +36,14 @@ public class WDriverItem extends RiderDriverItem {
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 		Has_basic_belt_info=false;
+        Unlimited_Belt_Textures = 1;
 	}
+
+    @Override
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+        if(riderName!="w") return "blank";
+        else  return "wdriver_belt"+ getFormItem(itemstack,2).getFormName(false);
+    }
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
