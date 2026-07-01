@@ -331,7 +331,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.addNum(2).changeModel("damashii.geo.json").changeSlot(2));
+			}.addNum(2).changeModel("mugen_damashii.geo.json").hasCape().changeSlot(2));
 
 	public static final DeferredItem<Item> KANON_SPECTER_GHOST_EYECON = ITEMS.register("kanon_specter_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","kanon_specter","ghostdriver_belt",
@@ -342,7 +342,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.addAlternative(KANON_SPECTER_DAMASHII.get()).alsoChange2ndSlot(KANON_SPECTER_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addAlternative(KANON_SPECTER_DAMASHII.get()).changeModel("specter.geo.json").alsoChange2ndSlot(KANON_SPECTER_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DARK_NECROM_GHOST_EYECON = ITEMS.register("dark_necrom_ghost_eyecon",
