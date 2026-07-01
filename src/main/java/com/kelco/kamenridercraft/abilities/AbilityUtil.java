@@ -1,9 +1,6 @@
 package com.kelco.kamenridercraft.abilities;
 
-import com.kelco.kamenridercraft.abilities.kicks.GenericRiderKicks;
-import com.kelco.kamenridercraft.abilities.kicks.KabutoRiderKicks;
-import com.kelco.kamenridercraft.abilities.kicks.KivaRiderKicks;
-import com.kelco.kamenridercraft.abilities.kicks.WizardRiderKicks;
+import com.kelco.kamenridercraft.abilities.kicks.*;
 import com.kelco.kamenridercraft.abilities.misc_abilities.MiscAbilities;
 import com.kelco.kamenridercraft.abilities.punches.GenericRiderPunches;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -44,7 +41,7 @@ public class AbilityUtil {
                     }
                     break;
                 case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick",
-                     "special_turbo":
+                     "special_turbo", "joker_memory_kick":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
@@ -92,6 +89,9 @@ public class AbilityUtil {
                     break;
                 case "kiva_kick":
                     KivaRiderKicks.kivaRiderKick(user);
+                    break;
+                case "joker_memory_kick":
+                    WRiderKicks.jokerMemoryKick(user);
                     break;
                 case "wizard_kick_flame":
                     WizardRiderKicks.flameWizardKick(user);

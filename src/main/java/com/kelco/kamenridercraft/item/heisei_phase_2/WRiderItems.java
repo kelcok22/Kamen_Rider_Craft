@@ -115,7 +115,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().changeSlot(2).setSlotTwoAbility("kiva_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
+			}.isGlowing().changeSlot(2).setSlotTwoAbility("joker_memory_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
 
 	public static final DeferredItem<Item> METAL_MEMORY = ITEMS.register("metal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_metal","w","wdriver_belt",
