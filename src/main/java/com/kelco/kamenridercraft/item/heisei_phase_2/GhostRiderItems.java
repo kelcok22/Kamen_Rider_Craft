@@ -54,6 +54,7 @@ public class GhostRiderItems {
 					new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"ghost.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -83,6 +84,7 @@ public class GhostRiderItems {
 					new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"ghost.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
@@ -112,6 +114,7 @@ public class GhostRiderItems {
 					new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"ghost.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -934,7 +937,7 @@ public class GhostRiderItems {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==1d) {
-                        AnimationUtil.playPose(player,"den_o.rider_ticket.pose");
+                        AnimationUtil.playPose(player,"den_o.pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -1129,6 +1132,7 @@ public class GhostRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
+
                     if (tick==1d) {
                         AnimationUtil.playPose(player,"ichigo.pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
@@ -1141,7 +1145,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.changeModel("ichigo_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).changeModel("ichigo_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOUSAN_GHOST_EYECON = ITEMS.register("tousan_ghost_eyecon",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),BOOST_GHOST_EYECON.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
