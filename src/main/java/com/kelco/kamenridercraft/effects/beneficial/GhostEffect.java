@@ -23,12 +23,13 @@ public class GhostEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity instanceof Player player && !livingEntity.level().isClientSide()) {
-            player.getFoodData().setFoodLevel(20);
+        if (!livingEntity.level().isClientSide()) {
             livingEntity.fallDistance = 0.0f;
-
-            if (livingEntity.isShiftKeyDown()) {
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 5, amplifier, false, false));
+            if (livingEntity instanceof Player player) {
+                player.getFoodData().setFoodLevel(20);
+                if (player.isShiftKeyDown()) {
+                    player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 5, amplifier, false, false));
+                }
             }
         }
         return true;

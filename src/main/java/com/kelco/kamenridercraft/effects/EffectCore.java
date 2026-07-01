@@ -222,6 +222,9 @@ public class EffectCore {
     public static final Holder<MobEffect> FALL = EFFECT.register("fall",
             () -> new FallEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
+    public static final Holder<MobEffect> INSOMNIA = EFFECT.register("insomnia",
+            () -> new InsomniaEffect(MobEffectCategory.HARMFUL, 0xffffff));
+
 
 
     public static final Holder<MobEffect> GATLING = EFFECT.register("gatling",

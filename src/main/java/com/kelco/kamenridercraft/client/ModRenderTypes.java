@@ -12,8 +12,14 @@ import static net.minecraft.client.renderer.RenderStateShard.*;
 public class ModRenderTypes {
     private static final ResourceLocation MUTEKI_TEXT = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/render_layer/muteki.png");
     public static final RenderType MUTEKI_GLINT = RenderType.create("cool_glint", DefaultVertexFormat.POSITION_TEX, VertexFormat.Mode.QUADS, 1536, RenderType.CompositeState.builder().setShaderState(RENDERTYPE_GLINT_TRANSLUCENT_SHADER).setTextureState(new RenderStateShard.TextureStateShard(MUTEKI_TEXT, true, true)).setWriteMaskState(COLOR_WRITE).setCullState(NO_CULL).setDepthTestState(EQUAL_DEPTH_TEST).setTransparencyState(GLINT_TRANSPARENCY).setTexturingState(GLINT_TEXTURING).setOutputState(ITEM_ENTITY_TARGET).createCompositeState(false));
+    private static final ResourceLocation SHIMMER_TEXT = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/render_layer/shimmer.png");
+    public static final RenderType SHIMMER_GLINT = RenderType.create("shimmer_glint", DefaultVertexFormat.POSITION_TEX, VertexFormat.Mode.QUADS, 1536, RenderType.CompositeState.builder().setShaderState(RENDERTYPE_GLINT_TRANSLUCENT_SHADER).setTextureState(new RenderStateShard.TextureStateShard(SHIMMER_TEXT, true, true)).setWriteMaskState(COLOR_WRITE).setCullState(NO_CULL).setDepthTestState(EQUAL_DEPTH_TEST).setTransparencyState(GLINT_TRANSPARENCY).setTexturingState(GLINT_TEXTURING).setOutputState(ITEM_ENTITY_TARGET).createCompositeState(false));
 
     public static RenderType mutekiGlint() {
         return MUTEKI_GLINT;
+    }
+
+    public static RenderType shimmerGlint() {
+        return SHIMMER_GLINT;
     }
 }

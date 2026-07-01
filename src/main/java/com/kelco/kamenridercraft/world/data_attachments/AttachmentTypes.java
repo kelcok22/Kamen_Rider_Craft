@@ -41,6 +41,14 @@ public class AttachmentTypes {
             "used_ability", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
     );
 
+    public static final Supplier<AttachmentType<String>> ACTIVE_ABILITY = REGISTRY.register(
+            "active_ability", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
+    );
+
+    public static final Supplier<AttachmentType<String>> PASSIVE_ABILITY = REGISTRY.register(
+            "passive_ability", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
+    );
+
     public static final Supplier<AttachmentType<Boolean>> MOB_TRANSFORMED = REGISTRY.register(
             "mob_transformed", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
     );
