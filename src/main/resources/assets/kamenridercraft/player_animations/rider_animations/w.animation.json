@@ -617,7 +617,7 @@
 				}
 			}
 		},
-		"w.belt_pose": {
+		"w.henshin_pose": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 1.5,
 			"bones": {
