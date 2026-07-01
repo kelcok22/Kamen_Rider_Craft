@@ -52,8 +52,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public RiderFormChangeItem Armor_Form_Item;
     protected ArrayList<RiderFormChangeItem> Extra_Base_Form_Item;
 
-    protected ArrayList<Double> OnTransformationTiming  = Lists.newArrayList(30d);;
-
     public String Rider;
     public Item HEAD;
     public Item TORSO;
@@ -156,12 +154,10 @@ public class RiderDriverItem extends RiderArmorItem {
             if (!isTransformed(rider)) tag.putDouble("render_type", 0);
 
             if(!rider.level().isClientSide()) {
-                if (isTransforming(rider)&OnTransformationTiming.contains(rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())) {
                     for (int n = 0; n < Num_Base_Form_Item; n++) {
                         RiderFormChangeItem form = getFormItem(stack, n + 1);
-                        form.transformationEffect(stack, rider);
+                        form.transformationEffect(stack, rider,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
                     }
-                }
             }
         } else {
             setUpdateForm(stack);
@@ -315,10 +311,7 @@ public class RiderDriverItem extends RiderArmorItem {
         return this;
     }
 
-    public RiderDriverItem addOnTransformationTiming(Double... timing) {
-        OnTransformationTiming = Lists.newArrayList(timing);
-        return this;
-    }
+
 
 
 

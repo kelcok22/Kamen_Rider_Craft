@@ -631,12 +631,15 @@ public class RiderFormChangeItem extends BaseItem {
                 player.getCooldowns().addCooldown(this, this.lockDuration);
         }
     }
-
     public void transformationEffect(ItemStack itemstack, LivingEntity entity) {
         if (entity.level() instanceof ServerLevel sl) {
             sl.sendParticles(ParticleTypes.GUST,
                     entity.getX(), entity.getY() + 1.0,
                     entity.getZ(), 1, 0, 0, 0, 1);
         }
+    }
+
+    public void transformationEffect(ItemStack itemstack, LivingEntity entity, Double tick) {
+     if (tick==30)transformationEffect(itemstack, entity);
     }
 }
