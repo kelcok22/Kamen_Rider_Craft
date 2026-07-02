@@ -2,11 +2,14 @@ package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 
@@ -33,11 +36,22 @@ public class KivaRiderKicks {
         }
 
         if (user.getData(ABILITY_TICK) > 80 && user.onGround()) {
-            cancelAbility(user, "kiva.land", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }
+
+            double d0 = user.getX() + (double) Mth.randomBetween(user.level().random, -0.7F, 0.7F);
+            double d1 = user.getY();
+            double d2 = user.getZ() + (double) Mth.randomBetween(user.level().random, -0.7F, 0.7F);
+
+            BlockState blockstate = user.getBlockStateOn();
+            ((ServerLevel) user.level()).sendParticles(new BlockParticleOption(ParticleTypes.BLOCK, blockstate), d0, d1, d2, 25, 0, 0, 0, 0);
+            Vec3 look = new Vec3(user.getLookAngle().x * 0.05, 0, user.getLookAngle().z * 0.05).scale(20);
+            user.setDeltaMovement(look.scale(0.97D));
+            user.hurtMarked = true;
+
+            cancelAbility(user, "kiva.land", 0);
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
             return;
         } else if (user.getData(ABILITY_TICK) < 55 && !user.onGround()) {
             cancelAbility(user, "", 0);
