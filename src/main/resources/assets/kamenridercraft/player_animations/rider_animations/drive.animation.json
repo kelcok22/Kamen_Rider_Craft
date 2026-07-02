@@ -260,7 +260,7 @@
 							"lerp_mode": "catmullrom"
 						},
 						"1.5": {
-							"post": [-27.228, 67.0444, -3.0194],
+							"post": [-10.4552, -10.4651, 24.252],
 							"lerp_mode": "catmullrom"
 						}
 					},
@@ -310,7 +310,7 @@
 							"lerp_mode": "catmullrom"
 						},
 						"1.5": {
-							"post": [-0.25829, 0.99465, -3.90322],
+							"post": [0.74171, 0.99465, -2.40322],
 							"lerp_mode": "catmullrom"
 						}
 					}
@@ -354,7 +354,7 @@
 							"lerp_mode": "catmullrom"
 						},
 						"1.5": {
-							"post": [-199.5086, -59.8136, 185.6385],
+							"post": [-191.5757, 33.1945, 162.2132],
 							"lerp_mode": "catmullrom"
 						}
 					},
@@ -396,7 +396,7 @@
 							"lerp_mode": "catmullrom"
 						},
 						"1.5": {
-							"post": [1.05587, 0.12232, 1.83452],
+							"post": [1.05587, 0.62232, 2.08452],
 							"lerp_mode": "catmullrom"
 						}
 					}
