@@ -86,12 +86,19 @@ public class ClientPayloadHandler {
                     animation = getAnim(riderName + ".pose");
                 }
 
+
                 if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "animation/form_specific_pose")))) {
                     animation = getAnim(riderName + "." + formItemName + ".pose");
                 }
 
                 if (riderName.equals("ooo")) {
                     animation = oooAnimCheck(posingRider);
+                } else if (riderName.equals("ghost") || riderName.equals("specter") || riderName.equals("necrom")) {
+                    if(posingRider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() >= 1) {
+                        animation = getAnim("default.hoodie_off");
+                    } else {
+                        animation = getAnim("default.hoodie_on");
+                    }
                 }
 
             } else if (getMaskPose(posingRider) != null) {
@@ -105,7 +112,7 @@ public class ClientPayloadHandler {
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
             assert controller != null;
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(8, EasingType.EASE_IN_ELASTIC));
             controller.triggerAnimation(animation);
         } catch (Exception e) {
             e.printStackTrace();
