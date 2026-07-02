@@ -581,6 +581,20 @@ public class ZeztzRiderItems {
                 }
             }.changeModel("zeztz.geo.json").changeBeltModel("geo/zeztz_riderbelt.geo.json").addSwitchForm(DARKNESS_CAPSEM_DRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> DAYDREAM_CAPSEM = ITEMS.register("daydream_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","mugen","mugen_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.changeModel("mugen.geo.json").changeBeltModel("geo/zeztz_riderbelt.geo.json").addSwitchForm(DARKNESS_CAPSEM_DRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> VOID_CAPSEM = ITEMS.register("void_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
@@ -738,6 +752,10 @@ public class ZeztzRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_darkness", DARKNESS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> MUGEN_DRIVER = ITEMS.register("mugen_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mugen", DAYDREAM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> KIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight_seventeen", CODE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().ChangeRepairItem(CODE_CAPSEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
@@ -803,6 +821,9 @@ public class ZeztzRiderItems {
             () -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1),"zeztz_horse_armor").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> MUGEN_SWORD = ITEMS.register("mugen_sword",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+                    .ChangeRepairItem(CODE_CAPSEM.get()));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 

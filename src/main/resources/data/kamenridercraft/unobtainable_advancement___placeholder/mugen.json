@@ -1,0 +1,50 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:mugen_driver"
+	  },
+	"title": {
+      "translate": "advancements.kamenridercraft.zeztz.mugen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zeztz.mugen.description"
+    },
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:zeztz/zeztz",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "player": {
+			"equipment": {
+			  "head": {
+				"items": [
+				  "kamenridercraft:zeztzhead"
+				]
+			  },
+			  "chest": {
+				"items": [
+				  "kamenridercraft:zeztztroso"
+				]
+			  },
+			  "legs": {
+				"items": [
+				  "kamenridercraft:zeztzlegs"
+				]
+			  },
+			  "feet": {
+				"items": [
+				  "kamenridercraft:mugen_driver"
+				]
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  
