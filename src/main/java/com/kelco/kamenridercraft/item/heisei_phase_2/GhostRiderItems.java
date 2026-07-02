@@ -138,6 +138,7 @@ public class GhostRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+					AnimationUtil.playPose(player,"specter.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -163,6 +164,7 @@ public class GhostRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+					AnimationUtil.playPose(player,"specter.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -188,6 +190,7 @@ public class GhostRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+					AnimationUtil.playPose(player,"specter.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -214,6 +217,7 @@ public class GhostRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+					AnimationUtil.playPose(player,"necrom.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
@@ -239,6 +243,7 @@ public class GhostRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+					AnimationUtil.playPose(player,"necrom.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
