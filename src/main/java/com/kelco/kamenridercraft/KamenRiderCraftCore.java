@@ -1063,9 +1063,18 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.ICHIGO_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.ICHIGO_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.CYCLONEHOPPER);
+                event.accept(ExtraRiderItems.ICHIGO_MASK);
+                event.accept(ModdedItemCore.SINISTER_PACHINKO_BALL);
+                event.accept(ModdedItemCore.TAKOYAKI);
+                event.accept(ExtraRiderItems.TOJIMA_TAKOYAKI);
                 event.accept(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC);
                 event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
                 event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
+                event.accept(Rider_Blocks.ICHIGO_CHAIR);
+                event.accept(Rider_Blocks.RED_ICHIGO_CHAIR);
+                event.accept(Rider_Blocks.SHOCKER_LOGO);
+                event.accept(Rider_Blocks.SHOCKER_MONITOR);
 
             } else if (event.getTab() == CreativeTabRegistry.TheIchigoTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.THE_TAB_ITEM.size(); i++) {
@@ -1083,8 +1092,13 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.V3_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.V3_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.FLARESALAMANDER);
+                event.accept(ModdedItemCore.FLARESALAMANDER_SWORD);
+                event.accept(ExtraRiderItems.V3_MASK);
+                event.accept(ExtraRiderItems.RIDERMAN_HELMET);
                 event.accept(MusicDiscItems.TATAKAE_KAMEN_RIDER_V3_MUSIC_DISC);
                 event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
+
             } else if (event.getTab() == CreativeTabRegistry.XTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.X_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.X_TAB_ITEM.get(i));
@@ -1168,6 +1182,9 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.KUUGA_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.KUUGA_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.GRANDGOURAM);
+                event.accept(ModdedItemCore.GRANDGOURAM_ROD);
+                event.accept(ModdedItemCore.JINRAI_NO_SENSHI);
                 event.accept(MusicDiscItems.KAMEN_RIDER_KUUGA_MUSIC_DISC);
                 event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
                 event.accept(MobsCore.N_DAGUVA_ZEBA_SPAWN_EGG);
@@ -1180,6 +1197,8 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.AGITO_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.AGITO_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.STAGTORNADOR);
+                event.accept(ModdedItemCore.LEATHERAIDER);
                 event.accept(MusicDiscItems.KAMEN_RIDER_AGITO_MUSIC_DISC);
                 event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
                 event.accept(MobsCore.PANTHERAS_LUTEUS_SPAWN_EGG);
@@ -1192,6 +1211,11 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.RYUKI_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.RYUKI_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.DRAGREDER);
+                event.accept(ModdedItemCore.DRAGRANZER);
+                event.accept(ModdedItemCore.BAKUEN_NO_SENSHI);
+                event.accept(ModdedItemCore.DARKWING);
+                event.accept(ModdedItemCore.DARKWING_SWORD);
                 event.accept(MusicDiscItems.ALIVE_A_LIFE_MUSIC_DISC);
                 event.accept(MobsCore.MIRROR_RIDER_SPAWN_EGG);
                 event.accept(MobsCore.ODIN_SPAWN_EGG);
@@ -1203,6 +1227,10 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.FAIZ_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.FAIZ_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.GREYWOLCH);
+                event.accept(ModdedItemCore.BAKUEN_NO_SENSHI);
+                event.accept(ModdedItemCore.CHAOSDILE);
+                event.accept(ModdedItemCore.TRANSFORM_ONE_SHOT);
                 event.accept(MusicDiscItems.JUSTIFAIZ_MUSIC_DISC);
                 event.accept(MobsCore.AUTO_VAJIN_SPAWN_EGG);
                 event.accept(MobsCore.RIOTROOPER_SPAWN_EGG);
@@ -1215,6 +1243,13 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.BLADE_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.BLADE_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.HERCULESPADER);
+                event.accept(ModdedItemCore.HERCULESPADER_SWORD);
+                event.accept(ModdedItemCore.SHADOWMANTIS);
+                event.accept(ModdedItemCore.JINRAI_NO_SENSHI);
+                event.accept(ModdedItemCore.TAIYAKI);
+                event.accept(ModdedItemCore.MILK_BOTTLE);
+                event.accept(ModdedItemCore.PUZZLE_PIECE);
                 event.accept(MusicDiscItems.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
                 event.accept(MusicDiscItems.ELEMENTS_MUSIC_DISC);
                 event.accept(MusicDiscItems.REBIRTH_MUSIC_DISC);
@@ -1225,6 +1260,8 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.HIBIKI_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.HIBIKI_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.AKANETAKA);
+                event.accept(ModdedItemCore.BAKUEN_NO_SENSHI);
                 event.accept(MusicDiscItems.KAGAYAKI_MUSIC_DISC);
                 event.accept(MusicDiscItems.HAJIMARI_NO_KIMI_E_MUSIC_DISC);
                 event.accept(MobsCore.BAKENEKO_SPAWN_EGG);
@@ -1238,6 +1275,9 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.KABUTO_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.KABUTO_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.EXBEETER);
+                event.accept(ModdedItemCore.JINRAI_NO_SENSHI);
+                event.accept(ModdedItemCore.SCISSORBEETER);
                 event.accept(MusicDiscItems.NEXT_LEVEL_MUSIC_DISC);
                 event.accept(MobsCore.ZECTROOPER_SPAWN_EGG);
                 event.accept(MobsCore.SHADOW_TROOPER_SPAWN_EGG);
@@ -1248,6 +1288,9 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.DEN_O_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.DEN_O_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.COFFEE);
+                event.accept(ModdedItemCore.VIENNA_COFFEE);
+                event.accept(ModdedItemCore.PUDDING);
                 event.accept(MusicDiscItems.CLIMAX_JUMP_MUSIC_DISC);
                 event.accept(MobsCore.MACEHINE_DENBIRD_SPAWN_EGG);
                 event.accept(MobsCore.NEW_MOLE_IMAGIN_SPAWN_EGG);
@@ -1304,12 +1347,16 @@ public class KamenRiderCraftCore {
                 event.accept(Rider_Blocks.TERROR_BOSS_BLOCK);
                 event.accept(Rider_Blocks.PURE_GAIA_MEMORY_BLOCK);
                 event.accept(Rider_Blocks.GAIA_MEMORY_ORE);
+                event.accept(Rider_Blocks.DEEPSLATE_GAIA_MEMORY_ORE);
                 event.accept(Rider_Blocks.GAIA_MEMORY_REFINER);
 
             } else if (event.getTab() == CreativeTabRegistry.OOOTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.OOO_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.OOO_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.ICE_POP);
+                event.accept(ModdedItemCore.ICE_POP2);
+                event.accept(ModdedItemCore.ICE_POP3);
                 event.accept(MusicDiscItems.ANYTHING_GOES_MUSIC_DISC);
                 event.accept(MobsCore.RIDEVENDOR_SPAWN_EGG);
                 event.accept(MobsCore.TORIDEVENDOR_SPAWN_EGG);
@@ -1355,6 +1402,9 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.WIZARD_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.WIZARD_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.DONUT);
+                event.accept(ModdedItemCore.MAYO);
+                event.accept(ModdedItemCore.MAYO_DONUT);
                 event.accept(MusicDiscItems.LIFE_IS_SHOWTIME_MUSIC_DISC);
                 event.accept(MobsCore.GHOULS_SPAWN_EGG);
                 event.accept(MobsCore.MEDUSA_PHANTOM_SPAWN_EGG);
@@ -1391,6 +1441,7 @@ public class KamenRiderCraftCore {
                 event.accept(Rider_Blocks.DEMUSHU_BOSS_BLOCK);
                 event.accept(Rider_Blocks.LORD_BARON_BOSS_BLOCK);
                 event.accept(Rider_Blocks.MEGAHEX_BOSS_BLOCK);
+                event.accept(Rider_Blocks.HELHEIM_CRACK);
 
             } else if (event.getTab() == CreativeTabRegistry.DRIVETab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.DRIVE_TAB_ITEM.size(); i++) {
@@ -1625,6 +1676,22 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.GAVV_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.GAVV_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.CANDY_WRAPPER);
+                event.accept(ModdedItemCore.GUMMI_CANDY);
+                event.accept(ModdedItemCore.POTATO_SNACKS);
+                event.accept(ModdedItemCore.LOLLIPOP);
+                event.accept(ModdedItemCore.CHOCOLATE_BAR);
+                event.accept(ModdedItemCore.MARSHMALLOW);
+                event.accept(ModdedItemCore.ICE_POP);
+                event.accept(ModdedItemCore.ICE_POP2);
+                event.accept(ModdedItemCore.ICE_POP3);
+                event.accept(ModdedItemCore.PUDDING);
+                event.accept(ModdedItemCore.PANCAKE);
+                event.accept(ModdedItemCore.CORN_SNACK);
+                event.accept(ModdedItemCore.DANGO);
+                event.accept(ModdedItemCore.COFFEE);
+                event.accept(ModdedItemCore.VIENNA_COFFEE);
+                event.accept(ModdedItemCore.PUDDING);
                 event.accept(MusicDiscItems.GOT_BOOST_MUSIC_DISC);
                 event.accept(MobsCore.AGENT_SPAWN_EGG);
                 event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);
@@ -1657,6 +1724,7 @@ public class KamenRiderCraftCore {
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.AMAZONSTab.get()) {
+                event.accept(AmazonsRiderItems.EMPTY_VIAL);
                 for (int i = 0; i < CreativeTabRegistry.AMAZONS_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.AMAZONS_TAB_ITEM.get(i));
                 }
@@ -1903,12 +1971,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
                 event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
-                //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
-                //event.accept(MobsCore.TADDLE_BUGSTER_SPAWN_EGG);
-                //event.accept(MobsCore.BANG_BANG_BUGSTER_SPAWN_EGG);
                 event.accept(MobsCore.RIDEPLAYER_SPAWN_EGG);
-                //event.accept(MobsCore.LOVELY_BUGSTER_SPAWN_EGG);
-                //event.accept(MobsCore.LOVELICA_BUGSTER_SPAWN_EGG);
                 event.accept(MobsCore.GENM_SPAWN_EGG);
                 event.accept(MobsCore.GRAPHITE_BUGSTER_SPAWN_EGG);
                 event.accept(MobsCore.POPPY_RED_SPAWN_EGG);
