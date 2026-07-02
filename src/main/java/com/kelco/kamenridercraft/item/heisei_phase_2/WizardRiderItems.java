@@ -147,7 +147,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
-                    AnimationUtil.playPose(player,"wizard.water_dragon_henshin_pose");
+                    AnimationUtil.playPose(player,"wizard.water_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -162,7 +162,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
-                    AnimationUtil.playPose(player,"wizard.hurricane_dragon_henshin_pose");
+                    AnimationUtil.playPose(player,"wizard.hurricane_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -211,7 +211,7 @@ public class WizardRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
-                    AnimationUtil.playPose(player,"wizard.hurricane_dragon_henshin_pose");
+                    AnimationUtil.playPose(player,"wizard.infinity_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
