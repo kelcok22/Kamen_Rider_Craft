@@ -12,6 +12,26 @@
 			},
 			"bones": [
 				{
+					"name": "wizard_circle4",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{
+							"origin": [-16, -17, -1],
+							"size": [32, 32, 0],
+							"pivot": [15, -1, 0],
+							"rotation": [-90, 0, 0],
+							"uv": {
+								"north": {"uv": [96, 32], "uv_size": [32, 32]},
+								"east": {"uv": [124, 30], "uv_size": [0, 4]},
+								"south": {"uv": [96, 32], "uv_size": [32, 32]},
+								"west": {"uv": [7, 3], "uv_size": [0, 4]},
+								"up": {"uv": [124, 30], "uv_size": [2, 0]},
+								"down": {"uv": [7, 3], "uv_size": [2, 0]}
+							}
+						}
+					]
+				},
+				{
 					"name": "bipedHead",
 					"pivot": [0, 24, 0]
 				},
@@ -40,27 +60,6 @@
 					"cubes": [
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.1, "uv": [16, 16]},
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.5, "uv": [16, 32]}
-					]
-				},
-				{
-					"name": "wizard_circle4",
-					"parent": "armorBody",
-					"pivot": [0, 24, 0],
-					"cubes": [
-						{
-							"origin": [-16, -17, -1],
-							"size": [32, 32, 0],
-							"pivot": [15, -1, 0],
-							"rotation": [-90, 0, 0],
-							"uv": {
-								"north": {"uv": [96, 32], "uv_size": [32, 32]},
-								"east": {"uv": [124, 30], "uv_size": [0, 4]},
-								"south": {"uv": [96, 32], "uv_size": [32, 32]},
-								"west": {"uv": [7, 3], "uv_size": [0, 4]},
-								"up": {"uv": [124, 30], "uv_size": [2, 0]},
-								"down": {"uv": [7, 3], "uv_size": [2, 0]}
-							}
-						}
 					]
 				},
 				{
