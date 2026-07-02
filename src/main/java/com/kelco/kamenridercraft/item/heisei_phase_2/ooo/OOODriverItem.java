@@ -110,15 +110,15 @@ public class OOODriverItem extends RiderDriverItem {
 
 		}
 
-		else if (equipmentSlot == EquipmentSlot.HEAD& Objects.equals(getFormItem(itemstack, 1).getFormName(false), "_taka") & Objects.equals(getFormItem(itemstack, 2).getFormName(false), "_kujaku") & Objects.equals(getFormItem(itemstack, 3).getFormName(false), "_condor")) return riderName+ "_taka_tajado";
-		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOORiderItems.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()== OOORiderItems.OOODRIVER.get()& Objects.equals(getFormItem(itemstack, 1).getFormName(false), "_taka") & Objects.equals(getFormItem(itemstack, 2).getFormName(false), "_tora") & Objects.equals(getFormItem(itemstack, 3).getFormName(false), "_batta")) return riderName+ "_taka_purple";
+		else if (equipmentSlot == EquipmentSlot.HEAD& Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_taka") & Objects.equals(getFormItem(itemstack, 2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_kujaku") & Objects.equals(getFormItem(itemstack, 3,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_condor")) return riderName+ "_taka_tajado";
+		else if (equipmentSlot == EquipmentSlot.HEAD&rider.getMainHandItem().getItem()== OOORiderItems.MEDAGABURYU.get()&rider.getItemBySlot(EquipmentSlot.FEET).getItem()== OOORiderItems.OOODRIVER.get()& Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_taka") & Objects.equals(getFormItem(itemstack, 2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_tora") & Objects.equals(getFormItem(itemstack, 3,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_batta")) return riderName+ "_taka_purple";
 
-		else if (equipmentSlot == EquipmentSlot.HEAD& getFormItem(itemstack,2)== OOORiderItems.GREEED_ABSORPTION_CORE.get()) return riderName+ getFormItem(itemstack,1).getFormName(fly)+ "_greeed_absorption";
-		else if (equipmentSlot == EquipmentSlot.LEGS& getFormItem(itemstack,2)== OOORiderItems.GREEED_ABSORPTION_CORE.get()) return riderName+ getFormItem(itemstack,3).getFormName(fly)+ "_greeed_absorption";
+		else if (equipmentSlot == EquipmentSlot.HEAD& getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())== OOORiderItems.GREEED_ABSORPTION_CORE.get()) return riderName+ getFormItem(itemstack,1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+ "_greeed_absorption";
+		else if (equipmentSlot == EquipmentSlot.LEGS& getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())== OOORiderItems.GREEED_ABSORPTION_CORE.get()) return riderName+ getFormItem(itemstack,3,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+ "_greeed_absorption";
 
-		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+ getFormItem(itemstack,1).getFormName(fly);
-		else if (equipmentSlot == EquipmentSlot.CHEST) return riderName+ getFormItem(itemstack,2).getFormName(fly);
-		else return riderName+ getFormItem(itemstack,3).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+ getFormItem(itemstack,1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.CHEST) return riderName+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
+		else return riderName+ getFormItem(itemstack,3,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
 
 	}
 
@@ -129,7 +129,7 @@ public class OOODriverItem extends RiderDriverItem {
 	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
 		if (currentSlot== EquipmentSlot.FEET) {
-			return getFormItem(itemstack, 1).getIsBeltGlowing();
+			return getFormItem(itemstack, 1,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsBeltGlowing();
 		}
 		if (isTransformed(livingEntity)){
 			switch (currentSlot) {
@@ -137,7 +137,7 @@ public class OOODriverItem extends RiderDriverItem {
 					return true;
 				}
 				case CHEST -> {
-					return getFormItem(itemstack, 2).getIsGlowing();
+					return getFormItem(itemstack, 2,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
 				}
 				case LEGS -> {
 					return false;
@@ -154,14 +154,14 @@ public class OOODriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST)num=2;
 		if (slot == EquipmentSlot.LEGS)num=3;
 
-        if (slot == EquipmentSlot.HEAD& Objects.equals(getFormItem(itemstack, 1).getFormName(false), "_taka")
-                & Objects.equals(getFormItem(itemstack, 2).getFormName(false), "_kujaku")
-                & Objects.equals(getFormItem(itemstack, 3).getFormName(false), "_condor")) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
+        if (slot == EquipmentSlot.HEAD& Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_taka")
+                & Objects.equals(getFormItem(itemstack, 2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_kujaku")
+                & Objects.equals(getFormItem(itemstack, 3,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(false), "_condor")) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
 
-		if (getFormItem(itemstack, num).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getFlyingModel(this.Rider));
+		if (getFormItem(itemstack, num,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFlyingModel(this.Rider));
 		}else
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getModel(this.Rider));
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getModel(this.Rider));
 
 	}
 

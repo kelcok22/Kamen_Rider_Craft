@@ -419,7 +419,7 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemstack.getItem() instanceof RiderDriverItem driver) {
                     Consumer<CompoundTag> data = form -> {
                         form.putString("slot_tex_old" + 1, form.getString("slot_tex" + 1));
-                        for (int n = 0; n < driver.Num_Base_Form_Item; n++) {
+                        for (int n = 1; n < driver.Num_Base_Form_Item; n++) {
                             form.putString("slot_tex_old" + n, form.getString("slot_tex" + n));
                         }
                     };

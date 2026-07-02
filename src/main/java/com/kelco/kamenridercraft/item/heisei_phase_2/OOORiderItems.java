@@ -13,6 +13,7 @@ import com.kelco.kamenridercraft.item.showa.AmazonRiderItems;
 import com.kelco.kamenridercraft.item.showa.StrongerRiderItems;
 import com.kelco.kamenridercraft.item.showa.XRiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.inventory.OMedalNestGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
@@ -61,222 +62,250 @@ public class OOORiderItems {
 	public static final DeferredItem<Item> TAKA_MEDAL = ITEMS.register("taka_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                        super.transformationEffect(itemstack, player,tick);
+                        if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                        if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KUJAKU_MEDAL = ITEMS.register("kujaku_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kujaku","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CONDOR_MEDAL = ITEMS.register("condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TAKA_ANKH_MEDAL = ITEMS.register("taka_ankh_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+				}}
+			}.setFormDelay(1d).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> LION_MEDAL = ITEMS.register("lion_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_lion","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TORA_MEDAL = ITEMS.register("tora_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_tora","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CHEETAH_MEDAL = ITEMS.register("cheetah_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cheetah","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> KUWAGATA_MEDAL = ITEMS.register("kuwagata_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kuwagata","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KAMAKIRI_MEDAL = ITEMS.register("kamakiri_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kamakiri","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BATTA_MEDAL = ITEMS.register("batta_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_batta","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SAI_MEDAL = ITEMS.register("sai_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_sai","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> GORILLA_MEDAL = ITEMS.register("gorilla_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gorilla","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> ZOU_MEDAL = ITEMS.register("zou_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zou","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SHACHI_MEDAL = ITEMS.register("shachi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shachi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> UNAGI_MEDAL = ITEMS.register("unagi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_unagi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TAKO_MEDAL = ITEMS.register("tako_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_tako","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> PTERA_MEDAL = ITEMS.register("ptera_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_ptera","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TRICERA_MEDAL = ITEMS.register("tricera_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_tricera","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40	, 3,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(2).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(2).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TYRANNO_MEDAL = ITEMS.register("tyranno_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_tyranno","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.changeSlot(3).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+				}}
+			}.setFormDelay(1d).changeSlot(3).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> COBRA_MEDAL = ITEMS.register("cobra_medal",
