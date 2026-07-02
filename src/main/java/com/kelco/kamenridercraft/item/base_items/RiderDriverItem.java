@@ -403,7 +403,7 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemstack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
                 if (!form.getString("slot_tex" + SLOT).equals(ITEM.toString())) {
-                    if (form.getString("slot_tex" + SLOT).isEmpty()||form.getString("slot_tex" + SLOT).equals(form.getString("slot_tex_old" + SLOT))) form.putString("slot_tex_old" + SLOT, form.getString("slot_tex" + SLOT));
+                    if (!form.getString("slot_tex" + SLOT).equals(form.getString("slot_tex_old" + SLOT))) form.putString("slot_tex_old" + SLOT, form.getString("slot_tex" + SLOT));
                     form.putString("slot_tex" + SLOT, ITEM.toString());
                     form.putBoolean("Update_form", true);
                     form.putDouble("render_type", getRenderType(itemstack));
@@ -517,6 +517,7 @@ public class RiderDriverItem extends RiderArmorItem {
             ResourceLocation UsedFormItemOld = ResourceLocation.parse(tag.getString("slot_tex_old" + SLOT));
             if (BuiltInRegistries.ITEM.get(UsedFormItem) instanceof RiderFormChangeItem formItem) {
                 if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && num>formItem.getFormDelay()) return formItem2;
+                else if (num>formItem.getFormDelay())return Base_Form_Item;
                 return formItem;
             }
         }
