@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.wizard.LegendWizardRingItem
 import com.kelco.kamenridercraft.item.heisei_phase_2.wizard.UnknownWizardRingItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.wizard.WizardRingItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenuBeast;
 import io.netty.buffer.Unpooled;
@@ -74,7 +75,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
-
+                    AnimationUtil.playPose(player,"wizard.flame_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -87,6 +88,7 @@ public class WizardRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    AnimationUtil.playPose(player,"wizard.water_henshin_pose");
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -101,6 +103,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.hurricane_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -114,6 +117,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.land_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -128,6 +132,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.flame_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -142,6 +147,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.water_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -156,6 +162,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.hurricane_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -186,6 +193,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(EffectCore.PUNCH, 40, 5,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.land_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -203,6 +211,7 @@ public class WizardRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.hurricane_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
@@ -226,6 +235,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(EffectCore.PUNCH, 40, 5,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.all_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -310,6 +320,7 @@ public class WizardRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.infinity_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
@@ -333,6 +344,7 @@ public class WizardRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
+                    AnimationUtil.playPose(player,"wizard.infinity_dragon_henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);

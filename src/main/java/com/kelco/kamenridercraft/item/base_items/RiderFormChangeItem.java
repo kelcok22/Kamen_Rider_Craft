@@ -104,6 +104,9 @@ public class RiderFormChangeItem extends BaseItem {
     private String slotTwoAbility = "";
     private int slotTwoAbilityPriority = 0;
 
+    private Double FormDelay = 30d;
+
+
     public RiderFormChangeItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
         super(properties);
 
@@ -134,6 +137,9 @@ public class RiderFormChangeItem extends BaseItem {
     public String getBeltTex() {
         return BELT_TEX;
     }
+
+    public Double getFormDelay() {return FormDelay;}
+
 
     public List<RiderFormChangeItem> getAlternative() {
         return alternative;
@@ -279,10 +285,9 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem setShowUnder() {
-        SET_SHOW_UNDER = true;
-        return this;
-    }
+    public RiderFormChangeItem setShowUnder() {SET_SHOW_UNDER = true;return this;}
+
+    public RiderFormChangeItem setFormDelay(double num) {FormDelay = num;return this;}
 
     public RiderFormChangeItem isGold() {
         isGold = true;
@@ -641,5 +646,7 @@ public class RiderFormChangeItem extends BaseItem {
 
     public void transformationEffect(ItemStack itemstack, LivingEntity entity, Double tick) {
      if (tick==30)transformationEffect(itemstack, entity);
+     if (tick==1)RiderDriverItem.UpdateOldFormItem(itemstack);
+
     }
 }

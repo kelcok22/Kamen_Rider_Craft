@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.w.MetalShaftItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.T2MemoryCaseItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.WDriverItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -48,37 +49,44 @@ public class WRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cyclone","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 0,true,false)) {
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
+
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
+				}}
+			}.setFormDelay(1d).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 20));
 
 	public static final DeferredItem<Item> HEAT_MEMORY = ITEMS.register("heat_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_heat","w","wdriver_belt_hj",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FIRE_ARMOR, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
+				}}
+			}.setFormDelay(1d).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> LUNA_MEMORY = ITEMS.register("luna_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_luna","w","wdriver_belt_lj",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.LONG_ARM, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
+				}}
+			}.setFormDelay(1d).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> FANG_MEMORY = ITEMS.register("fang_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_fang","w","wdriver_belt_fj",
@@ -86,70 +94,78 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.CONFUSION, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 150, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				}}
+			}.setFormDelay(1d).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> JOKER_JOKER_MEMORY = ITEMS.register("joker_joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_joker_joker","w","wdriver_belt_jj",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				}}
+			}.setFormDelay(1d).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> JOKER_MEMORY = ITEMS.register("joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_joker","w","wdriver_belt",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().changeSlot(2).setSlotTwoAbility("joker_memory_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
+				}}
+			}.setFormDelay(1d).isGlowing().changeSlot(2).setSlotTwoAbility("joker_memory_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 20));
 
 	public static final DeferredItem<Item> METAL_MEMORY = ITEMS.register("metal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_metal","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
+				}}
+			}.setFormDelay(1d).isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
 
 	public static final DeferredItem<Item> TRIGGER_MEMORY = ITEMS.register("trigger_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_trigger","w","wdriver_belt",
 					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
+				}}
+			}.setFormDelay(1d).isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 10));
 
 	public static final DeferredItem<Item> CYCLONE_CYCLONE_MEMORY = ITEMS.register("cyclone_cyclone_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cyclone_cyclone","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 1,true,false)) {
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.hasCape().isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				}}
+			}.setFormDelay(1d).hasCape().isGlowing().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> XTREME_MEMORY = ITEMS.register("xtreme_memory",
@@ -160,8 +176,10 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
@@ -169,8 +187,8 @@ public class WRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
+				}}
+			}.setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> XTREME_GOLD_MEMORY = ITEMS.register("xtreme_gold_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_cyclone_xtreme_gold","w","wdriver_belt",
@@ -181,8 +199,10 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 4,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 240, 0, 0, 0, 0.1);
@@ -190,8 +210,8 @@ public class WRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				}}
+			}.setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_cyclone_xtreme_accel","w","wdriver_belt",
@@ -201,8 +221,10 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 240, 0, 0, 0, 0.1);
@@ -210,8 +232,8 @@ public class WRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				}}
+			}.setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> ACCEL_MEMORY_BIKE = ITEMS.register("accel_memory_bike",
@@ -288,13 +310,14 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().addNeedForm(CYCLONE_MEMORY.get(),1).changeSlot(2)
+				}}
+			}.setFormDelay(1d).isGlowing().addNeedForm(CYCLONE_MEMORY.get(),1).changeSlot(2)
 					.model_has_different_name("skull_memory").has_basic_model());
 
 	public static final DeferredItem<Item> SKULL_MEMORY_CRYSTAL = ITEMS.register("skull_memory_crystal",
