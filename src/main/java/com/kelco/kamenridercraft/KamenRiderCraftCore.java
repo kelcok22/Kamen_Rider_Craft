@@ -1691,7 +1691,6 @@ public class KamenRiderCraftCore {
                 event.accept(ModdedItemCore.DANGO);
                 event.accept(ModdedItemCore.COFFEE);
                 event.accept(ModdedItemCore.VIENNA_COFFEE);
-                event.accept(ModdedItemCore.PUDDING);
                 event.accept(MusicDiscItems.GOT_BOOST_MUSIC_DISC);
                 event.accept(MobsCore.AGENT_SPAWN_EGG);
                 event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);
