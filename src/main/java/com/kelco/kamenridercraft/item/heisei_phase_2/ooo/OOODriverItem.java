@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
@@ -18,7 +17,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
-import java.util.Objects;
 
 public class OOODriverItem extends RiderDriverItem {
 
@@ -37,10 +35,12 @@ public class OOODriverItem extends RiderDriverItem {
         Item formItem2 = getFormItem(stack, 2);
         Item formItem3 = getFormItem(stack, 3);
 
-        if (!Objects.equals(getCombo(formItem, formItem2, formItem3), "false"))
-            tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
+        String combo = getCombo(formItem, formItem2, formItem3);
+
+        if (!combo.equals("false"))
+            tooltipComponents.add(Component.translatable("kamenridercraft:" + combo + ".form"));
         else if (!OOORiderItems.SPECIAL_NAME_MEDALS.contains(formItem) || !OOORiderItems.SPECIAL_NAME_MEDALS.contains(formItem2) || !OOORiderItems.SPECIAL_NAME_MEDALS.contains(formItem3)) {
-            tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
+            tooltipComponents.add(Component.translatable("kamenridercraft:" + combo + ".form"));
             tooltipComponents.add(Component.translatable(formItem + ".form"));
             tooltipComponents.add(Component.translatable(formItem2 + ".form"));
             tooltipComponents.add(Component.translatable(formItem3 + ".form"));
@@ -160,9 +160,9 @@ public class OOODriverItem extends RiderDriverItem {
             num = 3;
         }
 
-        if (slot == EquipmentSlot.HEAD & Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(false), "_taka")
-                & Objects.equals(getFormItem(itemstack, 2, henshinTick).getFormName(false), "_kujaku")
-                & Objects.equals(getFormItem(itemstack, 3, henshinTick).getFormName(false), "_condor"))
+        if (slot == EquipmentSlot.HEAD & getFormItem(itemstack, 1, henshinTick).getFormName(false).equals("_taka")
+                & getFormItem(itemstack, 2, henshinTick).getFormName(false).equals("_kujaku")
+                & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_condor"))
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
 
         if (getFormItem(itemstack, num, henshinTick).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
@@ -175,17 +175,17 @@ public class OOODriverItem extends RiderDriverItem {
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
         switch (currentSlot) {
             case HEAD -> {
-                if (Objects.equals(part, "head") || Objects.equals(part, "body")) {
+                if (part.equals("head") || part.equals("body")) {
                     return true;
                 }
             }
             case CHEST -> {
-                if (Objects.equals(part, "body") || Objects.equals(part, "rightArm") || Objects.equals(part, "leftArm")) {
+                if (part.equals("body") || part.equals("rightArm") || part.equals("leftArm")) {
                     return true;
                 }
             }
             case LEGS -> {
-                if (Objects.equals(part, "body") || Objects.equals(part, "leftLeg") || Objects.equals(part, "rightLeg")) {
+                if (part.equals("body") || part.equals("rightLeg") || part.equals("leftLeg")) {
                     return true;
                 }
             }
