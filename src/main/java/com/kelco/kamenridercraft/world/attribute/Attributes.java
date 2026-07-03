@@ -52,30 +52,6 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> OVERWRITE_HELD_ITEM = ATTRIBUTES.register("overwrite_held_item",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.force_held_item",
-                    false
-            ).setSyncable(true)
-    );
-
-
-    public static final DeferredHolder<Attribute, Attribute> DISABLE_HELD_ITEM = ATTRIBUTES.register("disable_held_item",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.disable_held_item",
-                    false
-            ).setSyncable(true)
-    );
-
-
-    public static final DeferredHolder<Attribute, Attribute> DISABLE_CROUCH_ANIMATION = ATTRIBUTES.register("disable_crouch_animation",
-            () -> new BooleanAttribute(
-                    "attribute.kamenridercraftcore.disable_crouch_animation",
-                    false
-            ).setSyncable(true)
-    );
-
-
     public static final DeferredHolder<Attribute, Attribute> CAPE_ROT_OLD = ATTRIBUTES.register("cape_rotation_old",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation_old",
@@ -214,7 +190,6 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-
     public static final DeferredHolder<Attribute, Attribute> ABILITY_METER = ATTRIBUTES.register("ability_meter",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.ability_meter",
@@ -233,6 +208,20 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> HELD_ABILITY_KEY_ONE = ATTRIBUTES.register("held_ability_key_one",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.held_ability_key_one",
+                    false
+            ).setSyncable(true)
+    );
+
+    public static final DeferredHolder<Attribute, Attribute> HELD_ABILITY_KEY_TWO = ATTRIBUTES.register("held_ability_key_two",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.held_ability_key_two",
+                    false
+            ).setSyncable(true)
+    );
+
     public static final DeferredHolder<Attribute, Attribute> HAZARD_LEVEL = ATTRIBUTES.register("hazard_level",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.hazard_level",
@@ -242,11 +231,11 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-   @SubscribeEvent
+    @SubscribeEvent
     public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
-           eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
-          // eMod.getTypes().forEach(entity -> eMod.add(entity, HEAD_SIZE));
-       }
+        eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
+        // eMod.getTypes().forEach(entity -> eMod.add(entity, HEAD_SIZE));
+    }
 
 //    @SubscribeEvent
 //    public static void addAttributes(EntityAttributeModificationEvent event) {

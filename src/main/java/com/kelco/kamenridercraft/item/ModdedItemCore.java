@@ -70,7 +70,7 @@ public class ModdedItemCore {
                     .HasHoverTex().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIYAKI = ITEMS.register("taiyaki",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(3f).alwaysEdible().build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(1.2f).alwaysEdible().build()))
                     .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 

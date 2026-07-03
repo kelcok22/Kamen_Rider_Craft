@@ -77,7 +77,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).isGlowing());
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).changeModel("ichigo.geo.json").isGlowing());
 
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE = ITEMS.register("original_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_original","ichigo","typhoon_belt_original",
@@ -89,7 +89,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGlowing().addAlternative(ORIGINAL_TYPHOON_CORE_NIGO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).changeModel("ichigo.geo.json").isGlowing().addAlternative(ORIGINAL_TYPHOON_CORE_NIGO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SAKURAJIMA_TYPHOON_CORE = ITEMS.register("sakurajima_typhoon_core",
@@ -103,7 +103,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").allowRiderKick().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TAKOYAKI_TYPHOON_CORE = ITEMS.register("takoyaki_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_takoyaki","ichigo","blank",

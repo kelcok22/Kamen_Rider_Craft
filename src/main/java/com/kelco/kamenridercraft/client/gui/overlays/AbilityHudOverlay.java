@@ -35,15 +35,8 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
             return;
         }
 
-        int barX = (int) (guiGraphics.guiWidth() * 0.09);
-        int barY = (int) (guiGraphics.guiHeight() * 0.8);
-
-        int abilityX = (int) (guiGraphics.guiWidth() * 0.1);
-        int abilityY = (int) (guiGraphics.guiHeight() * 0.835);
-        int altAbilityX = (int) (guiGraphics.guiWidth() * 0.149);
-
-        int singularAbilityX = (int) (guiGraphics.guiWidth() * 0.1255);
-
+        int screenXCenter = (int) (guiGraphics.guiWidth() * 0.5);
+        int screenYCenter = (int) (guiGraphics.guiHeight() * 0.5);
 
         int maxActionMeter = (int) player.getAttribute(Attributes.MAX_ABILITY_METER).getValue();
         int actionProgress = (int) player.getAttribute(Attributes.ABILITY_METER).getValue();
@@ -52,9 +45,9 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
         RenderSystem.enableBlend();
 
         if (shouldShowAbilityMeter(player)) {
-            guiGraphics.blit(UNFILLED_ACTION_BAR, barX, barY, 0, 0, 51, 5, 51, 5);
+            guiGraphics.blit(UNFILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 51, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, 51, 5, 51, 5);
             if (actionProgress > 0) {
-                guiGraphics.blit(FILLED_ACTION_BAR, barX, barY, 0, 0, meterDisplay, 5, 51, 5);
+                guiGraphics.blit(FILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 51, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, meterDisplay, 5, 51, 5);
             }
         }
 
@@ -65,17 +58,15 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
                 if (!(driverItem.abilitySlotOne == null)) {
                     ABILITY_ONE = driverItem.abilitySlotOne;
                 } else {
-                    var abilityList = clientGetAbility(1);
-                    if (abilityList.getFirst() != null) {
-                        driverItem.abilitySlotOne = returnAbilityIcon(abilityList.getFirst().toLowerCase().substring(1));
+                    if (!clientGetAbility(1).isEmpty()) {
+                        driverItem.abilitySlotOne = returnAbilityIcon(clientGetAbility(1).getFirst().toLowerCase().substring(1));
                     }
                 }
                 if (!(driverItem.abilitySlotTwo == null)) {
                     ABILITY_TWO = driverItem.abilitySlotTwo;
                 } else {
-                    var abilityList = clientGetAbility(2);
-                    if (abilityList.getFirst() != null) {
-                        driverItem.abilitySlotTwo = returnAbilityIcon(abilityList.getFirst().toLowerCase().substring(1));
+                    if (!clientGetAbility(2).isEmpty()) {
+                        driverItem.abilitySlotTwo = returnAbilityIcon(clientGetAbility(2).getFirst().toLowerCase().substring(1));
                     }
                 }
             }
@@ -83,17 +74,18 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
 
         if (shouldShowIcons(player)) {
             if (ABILITY_ONE != null && ABILITY_TWO != null) {
-                guiGraphics.blit(ABILITY_HOLDER, abilityX, abilityY, 0, 0, 18, 18, 18, 18);
-                guiGraphics.blit(ABILITY_ONE, (int) (abilityX * 1.032), (int) (abilityY * 1.014), 0, 0, 14, 14, 14, 14);
+                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.35)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
+                guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.35)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
 
-                guiGraphics.blit(ABILITY_HOLDER, altAbilityX, abilityY, 0, 0, 18, 18, 18, 18);
-                guiGraphics.blit(ABILITY_TWO, (int) (altAbilityX * 1.032), (int) (abilityY * 1.014), 0, 0, 14, 14, 14, 14);
-            } else if (ABILITY_ONE == null && ABILITY_TWO != null) {
-                guiGraphics.blit(ABILITY_HOLDER, singularAbilityX, abilityY, 0, 0, 18, 18, 18, 18);
-                guiGraphics.blit(ABILITY_TWO, (int) (singularAbilityX * 1.035), (int) (abilityY * 1.014), 0, 0, 14, 14, 14, 14);
-            } else if (ABILITY_ONE != null) {
-                guiGraphics.blit(ABILITY_HOLDER, singularAbilityX, abilityY, 0, 0, 18, 18, 18, 18);
-                guiGraphics.blit(ABILITY_ONE, (int) (singularAbilityX * 1.035), (int) (abilityY * 1.014), 0, 0, 14, 14, 14, 14);
+                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.25)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
+                guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.25)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+            } else {
+                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.3)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
+                if (ABILITY_ONE != null) {
+                    guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.3)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+                } else if (ABILITY_TWO != null) {
+                    guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.3)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+                }
             }
         }
     }

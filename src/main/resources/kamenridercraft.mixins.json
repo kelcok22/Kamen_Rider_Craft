@@ -13,7 +13,8 @@
   ],
   "client": [
     "client.renderer.LevelRendererMixin",
-    "client.LocalPlayerMixin"
+    "client.LocalPlayerMixin",
+    "client.renderer.ItemInHandLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

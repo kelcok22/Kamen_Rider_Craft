@@ -908,6 +908,11 @@ public class Rider_Blocks {
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
 
+    public static final DeferredBlock<Block> WALLPLATE_GRATE = registerBlock("wallplate_grate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
+                    .requiresCorrectToolForDrops().strength(2f)));
+
     public static final DeferredBlock<WallBlock> WHITE_WALLPLATE_WALL = registerBlock("white_wallplate_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
 
@@ -930,6 +935,11 @@ public class Rider_Blocks {
     public static final DeferredBlock<StairBlock> YELLOW_WALLPLATE_STAIRS = registerBlock("yellow_wallplate_stairs",
             () -> new StairBlock(Rider_Blocks.YELLOW_WALLPLATE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<StairBlock> YELLOW_WALLPLATE_GRATE_STAIRS = registerBlock("yellow_wallplate_grate_stairs",
+            () -> new StairBlock(Rider_Blocks.YELLOW_WALLPLATE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
+
 
     public static final DeferredBlock<SlabBlock> YELLOW_WALLPLATE_SLAB = registerBlock("yellow_wallplate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -975,6 +985,11 @@ public class Rider_Blocks {
 
     public static final DeferredBlock<SlabBlock> LIGHT_GREEN_WALLPLATE_SLAB = registerBlock("light_green_wallplate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
+                    .requiresCorrectToolForDrops().strength(2f)));
+
+    public static final DeferredBlock<SlabBlock> LIGHT_GREEN_WALLPLATE_GRATE_SLAB = registerBlock("light_green_wallplate_grate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
 
@@ -1026,19 +1041,6 @@ public class Rider_Blocks {
     public static final DeferredBlock<WallBlock> BLUE_WALLPLATE_WALL = registerBlock("blue_wallplate_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
 
-    public static final DeferredBlock<Block> WALLPLATE_GRATE = registerBlock("wallplate_grate_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
-                    .requiresCorrectToolForDrops().strength(2f)));
-
-    public static final DeferredBlock<StairBlock> YELLOW_WALLPLATE_GRATE_STAIRS = registerBlock("yellow_wallplate_grate_stairs",
-            () -> new StairBlock(Rider_Blocks.YELLOW_WALLPLATE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<SlabBlock> LIGHT_GREEN_WALLPLATE_GRATE_SLAB = registerBlock("light_green_wallplate_grate_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
-                    .requiresCorrectToolForDrops().strength(2f)));
 
     public static final DeferredBlock<Block> WOODEN_PANEL = registerBlock("wooden_panel",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)

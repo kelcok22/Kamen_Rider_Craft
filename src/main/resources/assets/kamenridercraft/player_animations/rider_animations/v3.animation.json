@@ -2,9 +2,11 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"v3.pose": {
+			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [0, -7.5, 0]
+					"rotation": [0, -7.5, 0],
+					"position": [0, -1.25, 0]
 				},
 				"torso": {
 					"rotation": [-5, 0, 2.5],

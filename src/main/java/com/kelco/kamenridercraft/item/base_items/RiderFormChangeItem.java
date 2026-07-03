@@ -104,6 +104,9 @@ public class RiderFormChangeItem extends BaseItem {
     private String slotTwoAbility = "";
     private int slotTwoAbilityPriority = 0;
 
+    private Double FormDelay = 30d;
+
+
     public RiderFormChangeItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
         super(properties);
 
@@ -135,6 +138,9 @@ public class RiderFormChangeItem extends BaseItem {
         return BELT_TEX;
     }
 
+    public Double getFormDelay() {return FormDelay;}
+
+
     public List<RiderFormChangeItem> getAlternative() {
         return alternative;
     }
@@ -151,7 +157,7 @@ public class RiderFormChangeItem extends BaseItem {
     public String getModel(String riderName) {
         if (UPDATED_MODEL != null) return UPDATED_MODEL;
         ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + FORM_NAME + ".geo.json");
-        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + FORM_NAME + ".geo.json" : (get_Has_SgetHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + FORM_NAME + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
     public Boolean getShowFace() {
@@ -202,7 +208,7 @@ public class RiderFormChangeItem extends BaseItem {
         return IS_BELT_GLOWING;
     }
 
-    public Boolean get_Has_SgetHasStaticWings() {
+    public Boolean getHasStaticWings() {
         return HAS_STATIC_WINGS;
     }
 
@@ -279,10 +285,9 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem setShowUnder() {
-        SET_SHOW_UNDER = true;
-        return this;
-    }
+    public RiderFormChangeItem setShowUnder() {SET_SHOW_UNDER = true;return this;}
+
+    public RiderFormChangeItem setFormDelay(double num) {FormDelay = num;return this;}
 
     public RiderFormChangeItem isGold() {
         isGold = true;
@@ -631,12 +636,17 @@ public class RiderFormChangeItem extends BaseItem {
                 player.getCooldowns().addCooldown(this, this.lockDuration);
         }
     }
-
     public void transformationEffect(ItemStack itemstack, LivingEntity entity) {
         if (entity.level() instanceof ServerLevel sl) {
             sl.sendParticles(ParticleTypes.GUST,
                     entity.getX(), entity.getY() + 1.0,
                     entity.getZ(), 1, 0, 0, 0, 1);
         }
+    }
+
+    public void transformationEffect(ItemStack itemstack, LivingEntity entity, Double tick) {
+     if (tick==30)transformationEffect(itemstack, entity);
+     if (tick==1)RiderDriverItem.UpdateOldFormItem(itemstack);
+
     }
 }

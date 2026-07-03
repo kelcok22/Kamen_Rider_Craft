@@ -1,9 +1,7 @@
 package com.kelco.kamenridercraft.client.renderer.base_renderers;
 
 import com.kelco.kamenridercraft.client.models.base_models.BaseEffectModel;
-import com.kelco.kamenridercraft.client.models.base_models.BaseProjectileModel;
 import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
-import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -24,7 +22,6 @@ public class BaseEffectRenderer extends GeoEntityRenderer<BaseEffectEntity> {
         poseStack.pushPose();
         poseStack.mulPose(Axis.YP.rotationDegrees(entity.getYRot()));
         poseStack.mulPose(Axis.XP.rotationDegrees(-entity.getXRot()));
-
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
         poseStack.popPose();
     }

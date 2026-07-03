@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -27,6 +28,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.network.PacketDistributor;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -50,6 +52,8 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public String NAME_MODEL ="hardboilder";
 	public String NAME_ANIMATIONS ="hardboilder";
 	public float MAX_SPEED = 0.01f;
+
+	private boolean animationStarted = false;
 
 	public RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
@@ -104,11 +108,22 @@ public class baseBikeEntity extends Mob implements GeoEntity {
         return p_34300_;
     }
 
+	@Override
+	public void tick() {
+		if (getControllingPassenger() != null && !this.animationStarted && getControllingPassenger() instanceof Player player) {
+			PacketDistributor.sendToAllPlayers(new AnimPayload("default.riding", "position", player.getStringUUID()));
+			this.animationStarted = true;
+		} else if (this.animationStarted && getControllingPassenger() == null) {
+			this.animationStarted = false;
+		}
+		super.tick();
+	}
 
-    // Let the player ride the entity
+	// Let the player ride the entity
 	@Override
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		if (!this.isVehicle()) player.startRiding(this);
+		PacketDistributor.sendToAllPlayers(new AnimPayload("default.riding", "position", player.getStringUUID()));
 		return super.mobInteract(player, hand);
 	}
 
@@ -243,20 +258,20 @@ if (this.onGround()){
 	public void positionRider(Entity entity, MoveFunction moveFunction) {
 		if (entity instanceof LivingEntity passenger) {
 			moveFunction.accept(entity, getX(), getY() + 0.3f, getZ());
-
+            passenger.setYBodyRot(this.getXRot()	);
 			this.xRotO = passenger.xRotO;
 		}
 	}
 
 	@Override
-	public void die(DamageSource p_21809_) {
-		super.die(p_21809_);
+	public void die(DamageSource damageSource) {
+		super.die(damageSource);
 		if (!this.level().isClientSide()) this.spawnAtLocation(this.VEHICLE_DROP);
 
 	}
 
 
-protected SoundEvent getHurtSound(DamageSource p_30424_) {
+protected SoundEvent getHurtSound(DamageSource damageSource) {
 	return SoundEvents.METAL_BREAK;
 }
 
@@ -267,12 +282,12 @@ protected SoundEvent getDeathSound() {
 	protected float getStandingEyeHeight(Pose pose, EntityDimensions dimensions) {
 		return 0.5F;
 	}
-	
+
 		@Override
 		public AnimatableInstanceCache getAnimatableInstanceCache() {
 			return this.cache;
 		}
-	
+
 		@Override
 		public boolean shouldDropExperience() {
 			return false;
@@ -287,7 +302,6 @@ protected SoundEvent getDeathSound() {
 
 		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
 			EntityModelData entityData = state.getData(DataTickets.ENTITY_MODEL_DATA);
-			Entity entityData2 = state.getData(DataTickets.ENTITY);
 			float front_fork=0;
 			float wheel=0;
 			if (this.getControllingPassenger() != null) {

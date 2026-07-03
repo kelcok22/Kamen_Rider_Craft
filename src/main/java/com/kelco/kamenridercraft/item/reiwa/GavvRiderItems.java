@@ -44,6 +44,7 @@ public class GavvRiderItems {
 	public static List<Item> ALA_MODE= new ArrayList<>();
 	public static List<Item> ICE_CREAM= new ArrayList<>();
 	public static List<Item> LEGEND= new ArrayList<>();
+	public static List<Item> SHOWA_LEGEND= new ArrayList<>();
 	public static List<Item> HALLOWEEN= new ArrayList<>();
 	public static List<Item> SENTAI= new ArrayList<>();
 
@@ -1339,67 +1340,67 @@ public class GavvRiderItems {
 
 	public static final DeferredItem<Item> J_GOCHIZO = ITEMS.register("j_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZO_GOCHIZO = ITEMS.register("zo_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_GOCHIZO = ITEMS.register("shin_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_RX_GOCHIZO = ITEMS.register("black_rx_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> SHADOWMOON_GOCHIZO = ITEMS.register("shadowmoon_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> BLACK_GOCHIZO = ITEMS.register("black_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> ZX_GOCHIZO = ITEMS.register("zx_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> SUPER_1_GOCHIZO = ITEMS.register("super_1_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> SKYRIDER_GOCHIZO = ITEMS.register("skyrider_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> STRONGER_GOCHIZO = ITEMS.register("stronger_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> AMAZON_GOCHIZO = ITEMS.register("amazon_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> X_GOCHIZO = ITEMS.register("x_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> RIDERMAN_GOCHIZO = ITEMS.register("riderman_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> V3_GOCHIZO = ITEMS.register("v3_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> NIGO_GOCHIZO = ITEMS.register("nigo_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	static final DeferredItem<Item> ICHIGO_GOCHIZO = ITEMS.register("ichigo_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","do_not_work","henshin_belt_gavv_belt")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+					.has_basic_model().addToList(SHOWA_LEGEND).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOONBOOMGER_GOCHIZO = ITEMS.register("boonboomger_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_boonboomger","gavv","henshin_belt_gavv_belt_boonboomger",

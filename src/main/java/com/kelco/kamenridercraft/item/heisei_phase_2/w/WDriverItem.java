@@ -36,7 +36,14 @@ public class WDriverItem extends RiderDriverItem {
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 		Has_basic_belt_info=false;
+        Unlimited_Belt_Textures = 1;
 	}
+
+    @Override
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+        if(riderName!="w") return "blank";
+        else  return "wdriver_belt"+ getFormItem(itemstack,2).getFormName(false);
+    }
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
@@ -100,17 +107,17 @@ public class WDriverItem extends RiderDriverItem {
 			return "belts/"+ getFormItem(itemstack,1).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD){
-			if (Objects.equals(getFormItem(itemstack, 2).getFormName(fly), "_skull")) return riderName+ getFormItem(itemstack,1).getFormName(fly)+"_skull";
-			else return riderName+ getFormItem(itemstack,1).getFormName(fly);
+			if (Objects.equals(getFormItem(itemstack, 2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_skull")) return riderName+ getFormItem(itemstack,1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+"_skull";
+			else return riderName+ getFormItem(itemstack,1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
 		}
 			
 		
 		else {
-			if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_fang")) return riderName+"_fang"+ getFormItem(itemstack,2).getFormName(fly);
-			else if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_cyclone_xtreme")) return riderName+ getFormItem(itemstack,2).getFormName(fly)+"_xtreme";
-			else if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_cyclone_xtreme_gold")) return riderName+ getFormItem(itemstack,2).getFormName(fly)+"_xtreme_gold";
-			else if (Objects.equals(getFormItem(itemstack, 1).getFormName(fly), "_cyclone_xtreme_accel")) return riderName+"_accel_xtreme";
-			else return riderName+ getFormItem(itemstack,2).getFormName(fly);
+			if (Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_fang")) return riderName+"_fang"+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
+			else if (Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme")) return riderName+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+"_xtreme";
+			else if (Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme_gold")) return riderName+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+"_xtreme_gold";
+			else if (Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme_accel")) return riderName+"_accel_xtreme";
+			else return riderName+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
 		}
 	}
 

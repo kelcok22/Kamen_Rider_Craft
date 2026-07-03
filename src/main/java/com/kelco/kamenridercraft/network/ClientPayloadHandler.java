@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft.network;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -28,17 +27,26 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 import java.util.UUID;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
-import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.ATTACK_LAYER_ID;
-import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.POSE_LAYER_ID;
+import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.util.AnimationUtil.*;
+import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
-@Mod(value = KamenRiderCraftCore.MOD_ID, dist = Dist.CLIENT)
+@Mod(value = MOD_ID, dist = Dist.CLIENT)
 public class ClientPayloadHandler {
 
     // Decade Complete summon swing mimicry
     public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
-        handleCompleteSwing(data.hand(), context.player());
+        Player player = context.player();
+        int hand = data.hand();
+        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
+                entity -> (entity.getOwner() == player))) {
+            complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
+        }
+        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
+                entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
+            legend.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
+        }
     }
 
     public static void handleAttributeClientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
@@ -63,18 +71,6 @@ public class ClientPayloadHandler {
         }
     }
 
-
-    private static void handleCompleteSwing(int hand, Player player) {
-        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
-                entity -> (entity.getOwner() == player))) {
-            complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
-        }
-        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
-                entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
-            legend.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
-        }
-    }
-
     public static void startPoseAnimations(final StartPosePayload data, final IPayloadContext context) {
         LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
         assert posingRider != null;
@@ -90,12 +86,19 @@ public class ClientPayloadHandler {
                     animation = getAnim(riderName + ".pose");
                 }
 
+
                 if (formChangeItemOne.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "animation/form_specific_pose")))) {
                     animation = getAnim(riderName + "." + formItemName + ".pose");
                 }
 
                 if (riderName.equals("ooo")) {
                     animation = oooAnimCheck(posingRider);
+                } else if (riderName.equals("ghost") || riderName.equals("specter") || riderName.equals("necrom")) {
+                    if(posingRider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() >= 1) {
+                        animation = getAnim("default.hoodie_off");
+                    } else {
+                        animation = getAnim("default.hoodie_on");
+                    }
                 }
 
             } else if (getMaskPose(posingRider) != null) {
@@ -109,46 +112,56 @@ public class ClientPayloadHandler {
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
             assert controller != null;
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(15, EasingType.EASE_IN_ELASTIC));
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(8, EasingType.EASE_IN_ELASTIC));
             controller.triggerAnimation(animation);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static void startAttackAnim(final AttackAnimPayload data, final IPayloadContext context) {
+    public static void startAnim(final AnimPayload data, final IPayloadContext context) {
         LivingEntity posingRider = context.player().level().getPlayerByUUID(UUID.fromString(data.UUID()));
-        assert posingRider != null;
-        Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.move()));
-        try {
-            AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
-
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(3, EasingType.EASE_IN_ELASTIC));
-            controller.triggerAnimation(animation);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void endPoseAnimations(final EndPosePayload data, final IPayloadContext context) {
-        try {
-            AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
-            if (controller != null && controller.isPlayingTriggeredAnimation()) {
-                controller.stopTriggeredAnimation();
+        if (posingRider != null) {
+            Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.move()));
+            try {
+                AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+                PlayerAnimationController controller = switch (data.controller()) {
+                    case "attack" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
+                    case "pose" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
+                    case "position" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID);
+                    default ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+                };
+                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(3, EasingType.EASE_IN_ELASTIC));
+                controller.triggerAnimation(animation);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
-    public static void endAttackAnimations(final EndAttackAnimationPayload data, final IPayloadContext context) {
+    public static void endAnimations(final EndAnimationPayload data, final IPayloadContext context) {
         try {
+            assert Minecraft.getInstance().level != null;
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
-            PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
-            if (controller != null && controller.isPlayingTriggeredAnimation()) {
-                controller.stopTriggeredAnimation();
+            if (animationTarget != null) {
+                PlayerAnimationController controller = switch (data.controller()) {
+                    case "attack" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
+                    case "pose" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
+                    case "position" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID);
+                    default ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
+                };
+
+                if (controller != null && controller.isPlayingTriggeredAnimation()) {
+                    controller.stopTriggeredAnimation();
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();

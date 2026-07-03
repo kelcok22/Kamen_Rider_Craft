@@ -92,10 +92,10 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             double GetCapeOld = RIDER.getAttribute(Attributes.CAPE_ROT_OLD).getBaseValue();
             double GetCape = RIDER.getAttribute(Attributes.CAPE_ROT).getBaseValue();
 
-            Float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - state.getPartialTick());
-            Float wheel = (float) Mth.lerp(state.getPartialTick(), GetWheelOld, GetWheel);
-            Float ball = (float) Mth.lerp(state.getPartialTick(), GetBallOld, GetBall);
-            Float Cape = (float) Mth.lerp(state.getPartialTick(), GetCapeOld, GetCape);
+            float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - state.getPartialTick());
+            float wheel = (float) Mth.lerp(state.getPartialTick(), GetWheelOld, GetWheel);
+            float ball = (float) Mth.lerp(state.getPartialTick(), GetBallOld, GetBall);
+            float Cape = (float) Mth.lerp(state.getPartialTick(), GetCapeOld, GetCape);
 
             GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
             GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
@@ -283,8 +283,6 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
                 GeoBone headKick = this.getAnimationProcessor().getBone("headKick");
                 GeoBone headKickRemove = this.getAnimationProcessor().getBone("headKickRemove");
-                GeoBone bodyKick = this.getAnimationProcessor().getBone("bodyKick");
-                GeoBone bodyKickRemove = this.getAnimationProcessor().getBone("bodyKickRemove");
                 GeoBone rightArmKick = this.getAnimationProcessor().getBone("rightArmKick");
                 GeoBone rightArmKickRemove = this.getAnimationProcessor().getBone("rightArmKickRemove");
                 GeoBone leftArmKick = this.getAnimationProcessor().getBone("leftArmKick");
@@ -317,7 +315,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                         joker.setPosX(0);
                     }
                 }
-                GeoBone cyclone = this.getAnimationProcessor().getBone("cyclone");
+
                 if (joker != null) {
                     if (isKicking){
                         joker.setPosY(-5);

@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
-import com.kelco.kamenridercraft.network.payload.AttackAnimPayload;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -18,7 +18,7 @@ public class GenericRiderKicks {
     public static void genericRiderKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AttackAnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
+            //PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
 
             if (!user.onGround()) {
                 Vec3 initialVec = user.getDeltaMovement();
@@ -63,9 +63,9 @@ public class GenericRiderKicks {
                 break;
             case 17:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_rider_kick")) {
-                    PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.flipped_kick", user.getStringUUID()));
+                    //PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", user.getStringUUID()));
                 } else {
-                    PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.kick", user.getStringUUID()));
+                   // PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", user.getStringUUID()));
                 }
                 break;
             case 21:
@@ -78,9 +78,9 @@ public class GenericRiderKicks {
                 break;
             case 36:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_kick")) {
-                    PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.kick_loop", user.getStringUUID()));
+                   // PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick_loop", user.getStringUUID()));
                 } else {
-                    PacketDistributor.sendToAllPlayers(new AttackAnimPayload("default.flipped_kick_loop", user.getStringUUID()));
+                    //PacketDistributor.sendToAllPlayers(new AnimPayload("default.k ick_loop", user.getStringUUID()));
                 }
                 break;
         }
