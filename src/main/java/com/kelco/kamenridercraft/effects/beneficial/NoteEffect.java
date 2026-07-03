@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.effects.beneficial;
 
+import com.kelco.kamenridercraft.sounds.ModMusic;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -21,7 +22,7 @@ public class NoteEffect extends InstantenousMobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         Random rand = new Random();
-        livingEntity.level().playLocalSound(livingEntity, ModSounds.MASKED_RIDER.get(), SoundSource.RECORDS, 1, rand.nextInt(10));
+        livingEntity.level().playLocalSound(livingEntity, ModMusic.MASKED_RIDER.get(), SoundSource.RECORDS, 1, rand.nextInt(10));
 
         if (livingEntity.level() instanceof ServerLevel serverLevel) {
             serverLevel.sendParticles(ParticleTypes.NOTE, livingEntity.getX() + rand.nextFloat(.3F), livingEntity.getEyeY(), livingEntity.getZ() + rand.nextFloat(.4F), 1, 0, 0, 0, 0.1);

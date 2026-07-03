@@ -47,6 +47,7 @@ import com.kelco.kamenridercraft.network.ServerPayloadHandler;
 import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
+import com.kelco.kamenridercraft.sounds.ModMusic;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -112,11 +113,9 @@ public class KamenRiderCraftCore {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-        AttachmentTypes.register(modEventBus);
-        EffectCore.register(modEventBus);
-        ModMenus.register(modEventBus);
-        ModConfiguredFeatures.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModMusic.register(modEventBus);
+
         RiderPotPattern.register(modEventBus);
         ModdedItemCore.register(modEventBus);
         TheSeriesRiderItems.register(modEventBus);
@@ -168,17 +167,24 @@ public class KamenRiderCraftCore {
         GoriderItems.register(modEventBus);
         GRiderItems.register(modEventBus);
         RideKamensItems.register(modEventBus);
+        CreativeTabRegistry.register(modEventBus);
+
         MusicDiscItems.register(modEventBus);
         Rider_Blocks.register(modEventBus);
+
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
+
         Attributes.ATTRIBUTES.register(modEventBus);
-        CreativeTabRegistry.register(modEventBus);
+        AttachmentTypes.register(modEventBus);
+        EffectCore.register(modEventBus);
+
+        ModMenus.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
         RiderVillagers.register(modEventBus);
         ModParticles.register(modEventBus);
         ModGameRules.register(modEventBus);
-        /*ModBlockEntities.REGISTRY.register(modEventBus);*/
         ModRecipes.register(modEventBus);
 
         LootModifierCore.register(modEventBus);
@@ -193,10 +199,6 @@ public class KamenRiderCraftCore {
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
     }
 
-    //private void commonSetup(final FMLCommonSetupEvent event) {
-    //}
-
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         CreativeTabRegistry.AddItemsToTabs(event);
     }
@@ -210,7 +212,6 @@ public class KamenRiderCraftCore {
 
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
-
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
             float sd = (float) event.getEntity().getAttribute(Attributes.HEAD_SIZE).getValue();
             model.getHead().xScale = sd;
