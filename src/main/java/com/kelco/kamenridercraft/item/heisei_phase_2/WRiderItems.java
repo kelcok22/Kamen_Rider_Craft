@@ -46,8 +46,7 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> CYCLONE_MEMORY = ITEMS.register("cyclone_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cyclone","w","wdriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 0,true,false)) {
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -70,7 +69,6 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> LUNA_MEMORY = ITEMS.register("luna_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_luna","w","wdriver_belt_lj",
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.LONG_ARM, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -96,7 +94,7 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> JOKER_JOKER_MEMORY = ITEMS.register("joker_joker_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_joker_joker","w","wdriver_belt_jj",
-					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)){
+					new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -119,7 +117,7 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> METAL_MEMORY = ITEMS.register("metal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_metal","w","wdriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
@@ -130,7 +128,8 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> TRIGGER_MEMORY = ITEMS.register("trigger_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_trigger","w","wdriver_belt",
-					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false)){
+					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -141,8 +140,7 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> CYCLONE_CYCLONE_MEMORY = ITEMS.register("cyclone_cyclone_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cyclone_cyclone","w","wdriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 1,true,false)) {
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)) {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -159,7 +157,9 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
+					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.REFLECT, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -179,8 +179,9 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false),
-					new MobEffectInstance(EffectCore.FLYING, 40, 4,true,false)){
+					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
@@ -198,9 +199,10 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
+					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 4,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -216,9 +218,9 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> ACCEL_MEMORY_BIKE = ITEMS.register("accel_memory_bike",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_bike_form","accel","blank",
-					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 50,true,false),
+					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 9,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.STEP, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -230,11 +232,9 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","accel","acceldriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -265,11 +265,11 @@ public class WRiderItems {
 	public static final DeferredItem<Item> ACCEL_BOOSTER_MEMORY = ITEMS.register("accel_booster_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_booster","accel","acceldriver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
@@ -284,10 +284,7 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> CYCLONE_SKULL_MEMORY = ITEMS.register("skull_cyclone_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_skull","w","wdriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -299,10 +296,8 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> SKULL_MEMORY_CRYSTAL = ITEMS.register("skull_memory_crystal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_crystal","skulll_crystal","lostdriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -314,10 +309,8 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","skull","lostdriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -329,9 +322,9 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> ETERNAL_MEMORY = ITEMS.register("eternal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_red","eternal","lostdriver_belt_e",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 1,true,false)) {
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)) {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
@@ -388,8 +381,7 @@ public class WRiderItems {
 	public static final DeferredItem<Item> CYCLONE_T2_MEMORY = ITEMS.register("cyclone_t2_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","cyclone","lostdriver_belt_c",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -406,9 +398,7 @@ public class WRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","eternal","lostdriver_belt_e",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
@@ -436,9 +426,8 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> JOKER_T2_MEMORY = ITEMS.register("joker_t2_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","joker","lostdriver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
+					new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -510,7 +499,7 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> T2_ZONE_MEMORY = ITEMS.register("zone_t2_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_strengthening_armament","eternal","lostdriver_belt_e",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
@@ -566,8 +555,9 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","terror_dopant","gaia_driver_belt_terror",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.CANNON, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -593,9 +583,9 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> CLAYDOLL_MEMORY = ITEMS.register("claydoll_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","claydoll_dopant","gaia_driver_belt_taboo",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)){
+					new MobEffectInstance(MobEffects.REGENERATION,200, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
@@ -608,9 +598,9 @@ public class WRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","nazca_dopant","gaia_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -663,7 +653,11 @@ public class WRiderItems {
 
 	public static final DeferredItem<Item> MEMORY_MEMORY = ITEMS.register("memory_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","core","core_driver_belt",
-					new MobEffectInstance(EffectCore.BIG, 40, 2,true,false)){
+					new MobEffectInstance(EffectCore.BIG, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.FIRE_ARMOR, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
