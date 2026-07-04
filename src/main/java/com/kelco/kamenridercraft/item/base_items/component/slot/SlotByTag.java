@@ -8,16 +8,14 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class SlotByTag extends Slot {
-
-
-    private static String TAG = "";
+    private static String tag = "";
 
     public SlotByTag(Container container, int slot, int x, int y, String tag) {
         super(container, slot, x, y);
-        TAG=tag;
+        SlotByTag.tag = tag;
     }
 
     public boolean mayPlace(ItemStack stack) {
-        return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, TAG)));
- }
+        return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, SlotByTag.tag)));
+    }
 }

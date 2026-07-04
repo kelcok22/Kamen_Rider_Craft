@@ -33,7 +33,7 @@ public class BaseSwordItem extends SwordItem {
 
 	}
 
-	public BaseSwordItem ChangeRepairItem(Item item) {
+	public BaseSwordItem changeRepairItem(Item item) {
 		RepairItem = item;
 		return this;
 	}
@@ -56,13 +56,13 @@ public class BaseSwordItem extends SwordItem {
 		}
 	}
 
-	public BaseSwordItem IsFormItem(Item item) {
+	public BaseSwordItem isFormItem(Item item) {
 		Form_item=true;
 		FormChangeItem=item;
 		return this;
 	}
 
-	public BaseSwordItem IsHenshinItem(Item item) {
+	public BaseSwordItem isHenshinItem(Item item) {
 		Henshin_item=true;
 		HenshinBeltItem=item;
 		return this;

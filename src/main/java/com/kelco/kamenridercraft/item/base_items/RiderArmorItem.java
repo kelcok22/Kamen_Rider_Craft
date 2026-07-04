@@ -87,7 +87,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         }));
     }
 
-    public RiderArmorItem ChangeRepairItem(Item item) {
+    public RiderArmorItem changeRepairItem(Item item) {
         RepairItem = item;
         return this;
     }

@@ -1092,136 +1092,136 @@ public class DriveRiderItems {
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
     public static final DeferredItem<Item> DRIVE_CHESTPLATE = ITEMS.register("drive_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
     public static final DeferredItem<Item> DRIVE_LEGGINGS = ITEMS.register("drive_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER = ITEMS.register("drivedriver",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "drive", SHIFT_SPEED, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
     public static final DeferredItem<Item> MACH_DRIVER_HONOH = ITEMS.register("mach_driver_honoh",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "mach", SIGNAL_MACH, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
     public static final DeferredItem<Item> MACH_DRIVER_HONOH_CHASER = ITEMS.register("mach_driver_honoh_chaser",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chaser", SIGNAL_CHASER, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MACH_DRIVER_HONOH_DRIVE = ITEMS.register("mach_driver_honoh_drive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "drive_dead_heat", SHIFT_DEAD_HEAT_DRIVE_MACH, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER_PROTO_DRIVE = ITEMS.register("drivedriver_protodrive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "protodrive", SHIFT_PROTO_SPEED, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAK_GUNNER_BELT = ITEMS.register("break_gunner_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mashin_chaser", PROTOZERO_CORE, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> LUPIN_BELT = ITEMS.register("lupin_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lupin", CYBEROID_ZZZ_CORE, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER_HEART = ITEMS.register("drivedriver_heart",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "heart", SHIFT_HEARTRON, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties().rarity(Rarity.RARE))
-                    .addExtraBaseFormItems(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER_DARK_DRIVE = ITEMS.register("drivedriver_darkdrive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "dark_drive", SHIFT_NEXT, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BANNO_DRIVER_GORD_DRIVE = ITEMS.register("banno_driver_gord_drive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "gold_drive", BANNO_TABLET, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .isA1().addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .isA1().addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BANNO_DRIVER_BRONZE_DRIVE = ITEMS.register("banno_driver_bronze_drive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "bronze_drive", BANNO_TABLET, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> METRO_PD_DRIVER_HONOH = ITEMS.register("metro_pd_driver_honoh",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "mach_metro_pd", TOKUJOKA_KEY, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BRAIN_DRIVER = ITEMS.register("brain_driver",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "brain", ROIDMUDE_CORE_003, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_DRIVE_DRIVER = ITEMS.register("fake_drivedriver",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "fake_drive", SHIFT_SPEED, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
 
     public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
 
     public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BREAK_GUNNER_BELT.get())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).isHenshinItem(BREAK_GUNNER_BELT.get())
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).isHenshinItem(LUPIN_BELT.get())
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_GUNNER = ITEMS.register("blade_gunner",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BRAIN_MEGANE_BLADE = ITEMS.register("brain_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> JUSTICE_CAGE = ITEMS.register("justice_cage",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRUM_SHIELD_RED = ITEMS.register("drum_shield_red",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRUM_SHIELD_GREEN = ITEMS.register("drum_shield_green",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MONSTER_TOP = ITEMS.register("monster_top",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MONSTER_BOTTOM = ITEMS.register("monster_bottom",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> RUMBLE_SMASHER = ITEMS.register("rumble_smasher",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> CURE_QUICKER = ITEMS.register("cure_quicker",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> TEN_TON_WEIGHT = ITEMS.register("ten_ton_weight",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .ChangeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {

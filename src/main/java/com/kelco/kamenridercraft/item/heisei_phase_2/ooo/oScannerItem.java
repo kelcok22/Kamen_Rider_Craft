@@ -29,68 +29,56 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
-import java.util.Objects;
+
+import static com.kelco.kamenridercraft.util.MiscUtil.oooComboCheck;
 
 public class oScannerItem extends BaseItem {
 
-	public oScannerItem(Properties prop) {
-		super(prop);
-	}
+    public oScannerItem(Properties prop) {
+        super(prop);
+    }
 
-	public void inventoryTick(ItemStack p_41404_, Level p_41405_, Entity p_41406_, int p_41407_, boolean p_41408_) {
+    public void inventoryTick(ItemStack itemStack, Level level, Entity entity, int slotId, boolean isSelected) {
+        if (entity instanceof Player player) {
+            if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+                    && belt == OOORiderItems.OOODRIVER.get() && belt.isTransformed(player)) {
+                ItemStack Belt = player.getItemBySlot(EquipmentSlot.FEET);
+                String medalOne = RiderDriverItem.getFormItem(Belt, 1).getFormName(false);
+                String medalTwo = RiderDriverItem.getFormItem(Belt, 2).getFormName(false);
+                String medalThree = RiderDriverItem.getFormItem(Belt, 3).getFormName(false);
 
-		if (p_41406_ instanceof Player player){
-			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-			&& belt == OOORiderItems.OOODRIVER.get() && belt.isTransformed(player)){
-				ItemStack Belt = player.getItemBySlot(EquipmentSlot.FEET);
+                switch (oooComboCheck(medalOne, medalTwo, medalThree)) {
+                    case "tajadol":
+                        player.addEffect(new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false));
+                        break;
+                    case "tajadol_eternity", "putotyra":
+                        player.addEffect(new MobEffectInstance(EffectCore.FLYING, 400, 0, true, false));
+                        break;
+                    case "gatakiriba":
+                        player.addEffect(new MobEffectInstance(MobEffects.JUMP, 40, 6, true, false));
+                        break;
+                    case "latorartar":
+                        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6, true, false));
+                        break;
+                    case "sagohzo":
+                        player.addEffect(new MobEffectInstance(EffectCore.PUNCH, 40, 5, true, false));
+                        break;
+                    case "shauta":
+                        player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0, true, false));
+                        break;
+                }
+            }
+        }
+    }
 
-				if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_taka") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_kujaku") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_condor")) {
-					player.addEffect(new MobEffectInstance(EffectCore.GLIDE,40,0,true,false));
+    public boolean inventoryOrHolderContains(Player player, Item item) {
+        NonNullList<ItemStack> inv = NonNullList.create();
+        inv.addAll(player.getInventory().items);
+        inv.addAll(player.getInventory().armor);
+        inv.add(player.getInventory().offhand.getFirst());
 
-				} else  if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_lion") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_tora") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_cheetah")) {
-					player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,40,6,true,false));	
-
-				} else  if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_kuwagata") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_kamakiri") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_batta")) {
-					player.addEffect(new MobEffectInstance(MobEffects.JUMP,40,6,true,false));	
-
-				}  else  if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_sai") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_gorilla") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_zou")) {
-					player.addEffect(new MobEffectInstance(EffectCore.PUNCH,40,5,true,false));
-
-				}  else  if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_shachi") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_unagi") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_tako")) {
-					player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE,40,0,true,false));	
-
-				}  else  if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_ptera") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_tricera") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_tyranno")) {
-					player.addEffect(new MobEffectInstance(EffectCore.FLYING,400,0,true,false));
-
-				} else if (Objects.equals(RiderDriverItem.getFormItem(Belt, 1).getFormName(false), "_taka_eternity") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 2).getFormName(false), "_kujaku_eternity") &
-                        Objects.equals(RiderDriverItem.getFormItem(Belt, 3).getFormName(false), "_condor_eternity")) {
-					player.addEffect(new MobEffectInstance(EffectCore.FLYING,400,0,true,false));
-				}
-			}
-		}
-	}
-
-	public boolean inventoryOrHolderContains(Player player, Item item) {
-		NonNullList<ItemStack> inv = NonNullList.create();
-		inv.addAll(player.getInventory().items);
-		inv.addAll(player.getInventory().armor);
-		inv.add(player.getInventory().offhand.getFirst());
-
-		if (player.getInventory().countItem(item)!=0) return true;
-		else for (ItemStack itemStack : inv) {
+        if (player.getInventory().countItem(item) != 0) return true;
+        else for (ItemStack itemStack : inv) {
             if (itemStack.has(DataComponents.CONTAINER)) {
                 for (ItemStack stack : itemStack.getComponents().get(DataComponents.CONTAINER).nonEmptyItems())
                     if (stack.getItem() == item) return true;
@@ -98,188 +86,187 @@ public class oScannerItem extends BaseItem {
                 for (ItemStack stack : itemStack.getComponents().get(DataComponents.BUNDLE_CONTENTS).items())
                     if (stack.getItem() == item) return true;
         }
-		return false;
-	}
+        return false;
+    }
 
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-		
-		if (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-		&& belt == OOORiderItems.OOODRIVER.get() && belt.isTransformed(p_41129_)){
-			ItemStack Belt = p_41129_.getItemBySlot(EquipmentSlot.FEET);
-			
-			if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.KUWAGATA_MEDAL.get() &&
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
+
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+                && belt == OOORiderItems.OOODRIVER.get() && belt.isTransformed(player) && player.level() instanceof ServerLevel serverLevel) {
+            ItemStack Belt = player.getItemBySlot(EquipmentSlot.FEET);
+
+            if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.KUWAGATA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.KAMAKIRI_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.BATTA_MEDAL.get()) {
-				if (!p_41129_.isShiftKeyDown()) {
-					RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(p_41128_);
-					if (summon != null) {
-						summon.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
-						summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
-						summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
-						summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
-						summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.OOODRIVER.get()));
-						RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KUWAGATA_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KAMAKIRI_MEDAL.get(), 2);
+                if (!player.isShiftKeyDown()) {
+                    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+                    if (summon != null) {
+                        summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                        summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
+                        summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
+                        summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
+                        summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.OOODRIVER.get()));
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KUWAGATA_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KAMAKIRI_MEDAL.get(), 2);
 
-						p_41128_.addFreshEntity(summon);
-						summon.bindToPlayer(p_41129_);
-						summon.setRequiredForms(p_41129_);
-						summon.mustMatchAllForms(true);
-						if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-						p_41129_.awardStat(Stats.ITEM_USED.get(this));
-					}
-				} else if (inventoryOrHolderContains(p_41129_, OOORiderItems.TAKA_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.KUJAKU_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.CONDOR_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.LION_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.TORA_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.CHEETAH_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.SAI_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.GORILLA_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.ZOU_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.SHACHI_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.UNAGI_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.TAKO_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.PTERA_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.TRICERA_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.TYRANNO_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.COBRA_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.KAME_MEDAL.get())
-				&&inventoryOrHolderContains(p_41129_, OOORiderItems.WANI_MEDAL.get())) {
-					List<RiderSummonEntity> clones = p_41128_.getEntitiesOfClass(RiderSummonEntity.class, p_41129_.getBoundingBox().inflate(10), entity ->
-						(entity.getOwner() == p_41129_ && RiderDriverItem.getFormItem(entity.getItemBySlot(EquipmentSlot.FEET), 1) == OOORiderItems.KUWAGATA_MEDAL.get()));
-					if (clones.size() >= 7) {
-						RiderDriverItem.setFormItem(clones.getFirst().getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TAKA_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(0).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KUJAKU_MEDAL.get(), 2);
-						RiderDriverItem.setFormItem(clones.get(0).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.CONDOR_MEDAL.get(), 3);
-						RiderDriverItem.setFormItem(clones.get(1).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.LION_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(1).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TORA_MEDAL.get(), 2);
-						RiderDriverItem.setFormItem(clones.get(1).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.CHEETAH_MEDAL.get(), 3);
-						RiderDriverItem.setFormItem(clones.get(2).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.SAI_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(2).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.GORILLA_MEDAL.get(), 2);
-						RiderDriverItem.setFormItem(clones.get(2).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.ZOU_MEDAL.get(), 3);
-						RiderDriverItem.setFormItem(clones.get(3).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.SHACHI_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(3).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.UNAGI_MEDAL.get(), 2);
-						RiderDriverItem.setFormItem(clones.get(3).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TAKO_MEDAL.get(), 3);
-						RiderDriverItem.setFormItem(clones.get(4).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.PTERA_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(4).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TRICERA_MEDAL.get(), 2);
-						RiderDriverItem.setFormItem(clones.get(4).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TYRANNO_MEDAL.get(), 3);
-						RiderDriverItem.setFormItem(clones.get(5).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.COBRA_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(5).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KAME_MEDAL.get(), 2);
-						RiderDriverItem.setFormItem(clones.get(5).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.WANI_MEDAL.get(), 3);
-						RiderDriverItem.setFormItem(clones.get(6).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TAKA_MEDAL.get(), 1);
-						RiderDriverItem.setFormItem(clones.get(6).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TORA_MEDAL.get(), 2);
-						p_41129_.playSound(SoundEvents.PLAYER_LEVELUP, 1.0F, 1.35F);
-						if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-						p_41129_.awardStat(Stats.ITEM_USED.get(this));
-					}
-				}
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.LION_MEDAL.get() &&
+                        level.addFreshEntity(summon);
+                        summon.bindToPlayer(player);
+                        summon.setRequiredForms(player);
+                        summon.mustMatchAllForms(true);
+                        if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                        player.awardStat(Stats.ITEM_USED.get(this));
+                    }
+                } else if (inventoryOrHolderContains(player, OOORiderItems.TAKA_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.KUJAKU_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.CONDOR_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.LION_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.TORA_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.CHEETAH_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.SAI_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.GORILLA_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.ZOU_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.SHACHI_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.UNAGI_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.TAKO_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.PTERA_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.TRICERA_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.TYRANNO_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.COBRA_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.KAME_MEDAL.get())
+                        && inventoryOrHolderContains(player, OOORiderItems.WANI_MEDAL.get())) {
+                    List<RiderSummonEntity> clones = level.getEntitiesOfClass(RiderSummonEntity.class, player.getBoundingBox().inflate(10), entity ->
+                            (entity.getOwner() == player && RiderDriverItem.getFormItem(entity.getItemBySlot(EquipmentSlot.FEET), 1) == OOORiderItems.KUWAGATA_MEDAL.get()));
+                    if (clones.size() >= 7) {
+                        RiderDriverItem.setFormItem(clones.getFirst().getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TAKA_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(0).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KUJAKU_MEDAL.get(), 2);
+                        RiderDriverItem.setFormItem(clones.get(0).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.CONDOR_MEDAL.get(), 3);
+                        RiderDriverItem.setFormItem(clones.get(1).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.LION_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(1).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TORA_MEDAL.get(), 2);
+                        RiderDriverItem.setFormItem(clones.get(1).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.CHEETAH_MEDAL.get(), 3);
+                        RiderDriverItem.setFormItem(clones.get(2).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.SAI_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(2).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.GORILLA_MEDAL.get(), 2);
+                        RiderDriverItem.setFormItem(clones.get(2).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.ZOU_MEDAL.get(), 3);
+                        RiderDriverItem.setFormItem(clones.get(3).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.SHACHI_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(3).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.UNAGI_MEDAL.get(), 2);
+                        RiderDriverItem.setFormItem(clones.get(3).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TAKO_MEDAL.get(), 3);
+                        RiderDriverItem.setFormItem(clones.get(4).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.PTERA_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(4).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TRICERA_MEDAL.get(), 2);
+                        RiderDriverItem.setFormItem(clones.get(4).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TYRANNO_MEDAL.get(), 3);
+                        RiderDriverItem.setFormItem(clones.get(5).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.COBRA_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(5).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KAME_MEDAL.get(), 2);
+                        RiderDriverItem.setFormItem(clones.get(5).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.WANI_MEDAL.get(), 3);
+                        RiderDriverItem.setFormItem(clones.get(6).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TAKA_MEDAL.get(), 1);
+                        RiderDriverItem.setFormItem(clones.get(6).getItemBySlot(EquipmentSlot.FEET), OOORiderItems.TORA_MEDAL.get(), 2);
+                        player.playSound(SoundEvents.PLAYER_LEVELUP, 1.0F, 1.35F);
+                        if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                        player.awardStat(Stats.ITEM_USED.get(this));
+                    }
+                }
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.LION_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.TORA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.CHEETAH_MEDAL.get()) {
-        		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
-				List<LivingEntity> toIgnite = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(3), entity ->
-																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
-				List<LivingEntity> toBlind = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(6), entity ->
-																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
-				for (Entity target : toIgnite) {
-					target.hurt(p_41129_.damageSources().playerAttack(p_41129_), 10.0F);
-					target.setRemainingFireTicks(200);
-				}
-				for (LivingEntity target : toBlind) target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100,0,true,true));
-				
-				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.FLAME, playerPos.x, playerPos.y, playerPos.z, 100, 1.5, 1.5, 1.5, 0.01);
-				p_41129_.playSound(SoundEvents.FIRECHARGE_USE, 1.0F, (p_41128_.getRandom().nextFloat() - p_41128_.getRandom().nextFloat()) * 0.2F + 1.0F);
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.SAI_MEDAL.get() &&
+                Vec3 playerPos = player.getEyePosition(1.0f);
+                List<LivingEntity> toIgnite = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(3), entity ->
+                        entity != player && !(entity instanceof OwnableEntity owned && owned.getOwner() == player));
+                List<LivingEntity> toBlind = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(6), entity ->
+                        entity != player && !(entity instanceof OwnableEntity owned && owned.getOwner() == player));
+                for (Entity target : toIgnite) {
+                    target.hurt(player.damageSources().playerAttack(player), 10.0F);
+                    target.setRemainingFireTicks(200);
+                }
+                for (LivingEntity target : toBlind)
+                    target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 0, true, true));
+
+                serverLevel.sendParticles(ParticleTypes.FLAME, playerPos.x, playerPos.y, playerPos.z, 100, 1.5, 1.5, 1.5, 0.01);
+                player.playSound(SoundEvents.FIRECHARGE_USE, 1.0F, (level.getRandom().nextFloat() - level.getRandom().nextFloat()) * 0.2F + 1.0F);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.SAI_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.GORILLA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.ZOU_MEDAL.get()) {
-        		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
-				List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(5), entity ->
-																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
-				for (LivingEntity target : nearbyTargets) {
-					target.hurt(p_41129_.damageSources().playerAttack(p_41129_), 10.0F);
-					target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40,0,true,false));
-				}
-
-				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.GUST_EMITTER_LARGE, playerPos.x, playerPos.y, playerPos.z, 2, 1.5, 0.5, 1.5, 0.01);
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.SHACHI_MEDAL.get() &&
+                Vec3 playerPos = player.getEyePosition(1.0f);
+                List<LivingEntity> nearbyTargets = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(5), entity ->
+                        entity != player && !(entity instanceof OwnableEntity owned && owned.getOwner() == player));
+                for (LivingEntity target : nearbyTargets) {
+                    target.hurt(player.damageSources().playerAttack(player), 10.0F);
+                    target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 0, true, false));
+                }
+                serverLevel.sendParticles(ParticleTypes.GUST_EMITTER_LARGE, playerPos.x, playerPos.y, playerPos.z, 2, 1.5, 0.5, 1.5, 0.01);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.SHACHI_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.UNAGI_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.TAKO_MEDAL.get()) {
-        		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
-				List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(5), entity ->
-																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
-				for (LivingEntity target : nearbyTargets) {
-					target.hurt(p_41129_.damageSources().playerAttack(p_41129_), 10.0F);
-					target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100,9,true,true));
-				}
+                Vec3 playerPos = player.getEyePosition(1.0f);
+                List<LivingEntity> nearbyTargets = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(5), entity ->
+                        entity != player && !(entity instanceof OwnableEntity owned && owned.getOwner() == player));
+                for (LivingEntity target : nearbyTargets) {
+                    target.hurt(player.damageSources().playerAttack(player), 10.0F);
+                    target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 9, true, true));
+                }
 
-				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.ELECTRIC_SPARK, playerPos.x, playerPos.y, playerPos.z, 200, 1.5, 1.5, 1.5, 0.01);
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.TAKA_MEDAL.get() &&
+                serverLevel.sendParticles(ParticleTypes.ELECTRIC_SPARK, playerPos.x, playerPos.y, playerPos.z, 200, 1.5, 1.5, 1.5, 0.01);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.TAKA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.KUJAKU_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.CONDOR_MEDAL.get()) {
 
-				LargeFireball largefireball = new LargeFireball(p_41129_.level(), p_41129_, p_41129_.getLookAngle().normalize(), 1);
-				largefireball.setPos(largefireball.getX(), p_41129_.getY(0.5) + 0.5, largefireball.getZ());
-				p_41129_.level().addFreshEntity(largefireball);
+                LargeFireball largefireball = new LargeFireball(player.level(), player, player.getLookAngle().normalize(), 1);
+                largefireball.setPos(largefireball.getX(), player.getY(0.5) + 0.5, largefireball.getZ());
+                player.level().addFreshEntity(largefireball);
 
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.PTERA_MEDAL.get() &&
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.PTERA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.TRICERA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.TYRANNO_MEDAL.get()) {
-        		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
-				List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(5), entity ->
-																  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
-				for (LivingEntity target : nearbyTargets) {
-					target.hurt(p_41129_.damageSources().playerAttack(p_41129_), 10.0F);
-					target.setTicksFrozen(340);
-					target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100,3,true,false));
-				}
-				p_41129_.addEffect(new MobEffectInstance(EffectCore.BLIZZARD, 10, 0, true,false));
-				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.SNOWFLAKE, playerPos.x, playerPos.y, playerPos.z, 50, 1.5, 0.5, 1.5, 0.01);
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.COBRA_MEDAL.get() &&
+                Vec3 playerPos = player.getEyePosition(1.0f);
+                List<LivingEntity> nearbyTargets = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(5), entity ->
+                        entity != player && !(entity instanceof OwnableEntity owned && owned.getOwner() == player));
+                for (LivingEntity target : nearbyTargets) {
+                    target.hurt(player.damageSources().playerAttack(player), 10.0F);
+                    target.setTicksFrozen(340);
+                    target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 3, true, false));
+                }
+                player.addEffect(new MobEffectInstance(EffectCore.BLIZZARD, 10, 0, true, false));
+                serverLevel.sendParticles(ParticleTypes.SNOWFLAKE, playerPos.x, playerPos.y, playerPos.z, 50, 1.5, 0.5, 1.5, 0.01);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.COBRA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.KAME_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.WANI_MEDAL.get()) {
-        		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
+                Vec3 playerPos = player.getEyePosition(1.0f);
 
-				p_41129_.removeEffect(MobEffects.POISON);
-				p_41129_.removeEffect(MobEffects.WITHER);
-				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ColorParticleOption.create(ParticleTypes.ENTITY_EFFECT, 1.0F, 0.8F, 0.5F), playerPos.x, playerPos.y, playerPos.z, 25, 0.5, 0.5, 0.5, 0.01);
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.SUPER_TAKA_MEDAL.get() &&
+                player.removeEffect(MobEffects.POISON);
+                player.removeEffect(MobEffects.WITHER);
+                serverLevel.sendParticles(ColorParticleOption.create(ParticleTypes.ENTITY_EFFECT, 1.0F, 0.8F, 0.5F), playerPos.x, playerPos.y, playerPos.z, 25, 0.5, 0.5, 0.5, 0.01);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.SUPER_TAKA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.SUPER_TORA_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.SUPER_BATTA_MEDAL.get()) {
-        		Vec3 playerPos = p_41129_.getEyePosition(1.0f);
+                Vec3 playerPos = player.getEyePosition(1.0f);
 
-				p_41129_.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
-				p_41129_.removeEffect(MobEffects.DIG_SLOWDOWN);
-				p_41129_.removeEffect(EffectCore.PAUSE);
-				if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.ELECTRIC_SPARK, playerPos.x, playerPos.y, playerPos.z, 25, 0.5, 0.5, 0.5, 0.01);
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.TAKA_ETERNITY_MEDAL.get() &&
+                player.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
+                player.removeEffect(MobEffects.DIG_SLOWDOWN);
+                player.removeEffect(EffectCore.PAUSE);
+                serverLevel.sendParticles(ParticleTypes.ELECTRIC_SPARK, playerPos.x, playerPos.y, playerPos.z, 25, 0.5, 0.5, 0.5, 0.01);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            } else if (RiderDriverItem.getFormItem(Belt, 1) == OOORiderItems.TAKA_ETERNITY_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 2) == OOORiderItems.KUJAKU_ETERNITY_MEDAL.get() &&
                     RiderDriverItem.getFormItem(Belt, 3) == OOORiderItems.CONDOR_ETERNITY_MEDAL.get()) {
 
-				LargeFireball largefireball = new LargeFireball(p_41129_.level(), p_41129_, p_41129_.getLookAngle().normalize(), 3);
-				largefireball.setPos(largefireball.getX(), p_41129_.getY(0.5) + 0.5, largefireball.getZ());
-				p_41129_.level().addFreshEntity(largefireball);
+                LargeFireball largefireball = new LargeFireball(player.level(), player, player.getLookAngle().normalize(), 3);
+                largefireball.setPos(largefireball.getX(), player.getY(0.5) + 0.5, largefireball.getZ());
+                player.level().addFreshEntity(largefireball);
 
-				if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			} 
-		}
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
-	}
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+                player.awardStat(Stats.ITEM_USED.get(this));
+            }
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }
-

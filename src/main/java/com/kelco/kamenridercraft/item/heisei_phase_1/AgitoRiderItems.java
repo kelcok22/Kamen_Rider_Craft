@@ -388,119 +388,119 @@ public class AgitoRiderItems {
 			}.addToList(GSystemChipProgrammer.G_CHIP, 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITOHELMET = ITEMS.register("agitohead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> AGITOCHESTPLATE = ITEMS.register("agitotroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> AGITOLEGGINGS = ITEMS.register("agitolegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> ALTERING = ITEMS.register("alter_ring",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agito",AGITO_GROUND ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agito",AGITO_GROUND ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> ALTERING_REIKO = ITEMS.register("alter_ring_reiko",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"female_agito",AGITO_TRINITY ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"female_agito",AGITO_TRINITY ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> META_FACTOR = ITEMS.register("meta_factor",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gills",GILLS ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gills",GILLS ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> ANK_POINT = ITEMS.register("ank_point",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito",ANOTHER_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G3 = ITEMS.register("g3_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3",G3_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G3_X = ITEMS.register("g3_x_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_x",G3_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G3_MILD = ITEMS.register("g3_mild_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_mild",G3_MILD_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G4 = ITEMS.register("g4_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4",G4_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G4_X = ITEMS.register("g4_x_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G6 = ITEMS.register("g6_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g6",G6_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G7 = ITEMS.register("g7_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g7",G7_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC))
-                    .hideBeltFormInfo().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+                    .hideBeltFormInfo().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g1",G1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> V1_BELT = ITEMS.register("v1_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v1",V1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> ALTERING_MIRAGE = ITEMS.register("alter_ring_miracle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> ANK_POINT_BURNING = ITEMS.register("ank_point_burning",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito_koji",ANOTHER_AGITO_KOJI ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito_koji",ANOTHER_AGITO_KOJI ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> FLAME_SABER = ITEMS.register("flame_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> STORM_HALBERD = ITEMS.register("storm_halberd",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> SHINING_CALIBER = ITEMS.register("shining_caliber_summoned",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> SHINING_CALIBER_TWIN = ITEMS.register("shining_caliber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> GUARD_ACCELLER = ITEMS.register("guard_acceller",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GM_01_SCORPION = ITEMS.register("gm_01_scorpion",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).setProjColor("yellow").setProjShape("medium").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).setProjColor("yellow").setProjShape("medium").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GG_02_SALAMANDER = ITEMS.register("gg_02_salamander",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setCooldown(20).setExplosionPower(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setCooldown(20).setExplosionPower(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GS_03_DESTROYER = ITEMS.register("gs_03_destroyer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GA_04_ANTARES = ITEMS.register("ga_04_antares",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GX_05_KERBEROS = ITEMS.register("gx_05_kerberos",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).setFiretype("hold").setProjColor("yellow").setProjShape("medium").setCooldown(60).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).setFiretype("hold").setProjColor("yellow").setProjShape("medium").setCooldown(60).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GX_LAUNCHER = ITEMS.register("gx_launcher",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("gx").setCooldown(80).setExplosionPower(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("gx").setCooldown(80).setExplosionPower(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GK_06_UNICORN = ITEMS.register("gk_06_unicorn",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GH_09_ORTHRUS = ITEMS.register("gh_09_orthrus",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GZ_10_OROCHI = ITEMS.register("gz_10_orochi",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_SHIELD = ITEMS.register("g3_shield",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_X_SHIELD = ITEMS.register("g3x_shield",
-			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("g4").setProjShape("g4").setCooldown(60).setExplosionPower(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("g4").setProjShape("g4").setCooldown(60).setExplosionPower(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item>V1_SHOT = ITEMS.register("v1_shot",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> JUDGEMENT_STAFF = ITEMS.register("judgment_staff",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> RESENTMENT_DU_SANGA = ITEMS.register("el_of_the_water_staff",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

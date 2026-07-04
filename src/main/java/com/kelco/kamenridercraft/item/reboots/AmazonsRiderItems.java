@@ -200,13 +200,13 @@ public class AmazonsRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo_alpha",AMAZON_INJECTOR_NEO_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_BLADE = ITEMS.register("amazon_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).changeRepairItem(AMAZON_CELL_VIAL.get()));
     public static final DeferredItem<Item> AMAZON_SCYTHE = ITEMS.register("amazon_scythe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).changeRepairItem(AMAZON_CELL_VIAL.get()));
     public static final DeferredItem<Item> AMAZON_WHIP = ITEMS.register("amazon_whip",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).changeRepairItem(AMAZON_CELL_VIAL.get()));
     public static final DeferredItem<Item> AMAZON_SPEAR = ITEMS.register("amazon_spear",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).ChangeRepairItem(AMAZON_CELL_VIAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).changeRepairItem(AMAZON_CELL_VIAL.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

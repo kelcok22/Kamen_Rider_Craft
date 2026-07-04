@@ -1390,11 +1390,11 @@ public class ReviceRiderItems {
 
 
 	public static final DeferredItem<Item> REVICE_HELMET = ITEMS.register("revice_head",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 	public static final DeferredItem<Item> REVICE_CHESTPLATE = ITEMS.register("revice_troso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 	public static final DeferredItem<Item> REVICE_LEGGINGS = ITEMS.register("revice_legs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER = ITEMS.register("revice_driver",
 			() -> new ReviceDriverItem(ArmorMaterials.DIAMOND,"revi",REX_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -1415,7 +1415,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> BUDDY_BUCKLE = ITEMS.register("vice_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vice",REX_VISTAMP_VICE ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1437,7 +1437,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> TWO_SIDRIVER_LIVE = ITEMS.register("two_sidriver_live",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"live",BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1459,7 +1459,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> TWO_SIDRIVER_EVIL = ITEMS.register("two_sidriver_evil",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"evil",BAT_VISTAMP_EVIL ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,  new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -1480,7 +1480,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LIBERA_DRIVER = ITEMS.register("libera_driver",
 			() -> new LiberaDriverItem(ArmorMaterials.DIAMOND,"jeanne",COBRA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,  new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -1501,11 +1501,11 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LOVEKOV_BELT = ITEMS.register("lovekov_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lovekov",COBRA_VISTAMP_LOVEKOV ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).has_basic_model().ChangeRepairItem(PROTO_VISTAMP.get()));
+					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).has_basic_model().changeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> DEMONS_DRIVER = ITEMS.register("demons_driver",
@@ -1527,7 +1527,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> OVER_DEMONS_DRIVER = ITEMS.register("over_demons_driver",
 			() -> new DemonsDriverItem(ArmorMaterials.DIAMOND,"over_demons",KUWAGATA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,  new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -1548,7 +1548,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> GET_OVER_DEMONS_DRIVER = ITEMS.register("get_over_demons_driver",
 			() -> new DemonsDriverItem(ArmorMaterials.DIAMOND,"over_demons_get",GIRAFFA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1570,16 +1570,16 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_DEMONS_TROOPER_A = ITEMS.register("demons_driver_demons_trooper_a",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"demons_trooper_alpha",TROOPER_SPIDER_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_DEMONS_TROOPER_B = ITEMS.register("demons_driver_demons_trooper_b",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"demons_trooper_beta",TROOPER_KUWAGATA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VAIL_DRIVER = ITEMS.register("vail_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vail",KABUTO_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1601,7 +1601,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DESTREAM_DRIVER = ITEMS.register("destream_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"destream",HERCULES_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1623,15 +1623,15 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VAIL_BELT = ITEMS.register("vail_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"crimson_vail",CRIMSON_VAIL_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VADE_BELT = ITEMS.register("vade_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_vade",BLOOD_VADE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> WEEK_ENDRIVER = ITEMS.register("week_endriver",
@@ -1654,7 +1654,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DARK_WEEK_ENDRIVER = ITEMS.register("dark_week_endriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_aguilera",QUEEN_BEE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1676,7 +1676,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER = ITEMS.register("chimera_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chimera",TWIN_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1698,7 +1698,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER_DAIMON = ITEMS.register("chimera_driver_daimon",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"daimon",TRI_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1720,7 +1720,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> JUUGA_DRIVER = ITEMS.register("juuga_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"juuga",JUUGA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1742,11 +1742,11 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CYCLOTRON_DRIVER = ITEMS.register("cyclotron_driver",
 			() -> new CyclotronDriverItem(ArmorMaterials.DIAMOND,"century",CYCLOTRON_DRIVER_CORE ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER_LIVE = ITEMS.register("revice_driver_live",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"live_marvelous",MEGA_BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1768,7 +1768,7 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER_EVIL = ITEMS.register("revice_driver_evil",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"evil_marvelous",MEGA_BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
@@ -1790,62 +1790,62 @@ public class ReviceRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_ORTECA = ITEMS.register("demons_driver_orteca",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"orteca",KRAKEN_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> OHINBUSTER_50 = ITEMS.register("ohin_buster_50",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> GUNDEPHONE_50 = ITEMS.register("gun_de_phone_50",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> OSUTODERUHAMMER_50 = ITEMS.register("osutoderu_hammer_50",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICELASHER = ITEMS.register("revice_lasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> BARID_SHIELD = ITEMS.register("egg_shield",
-			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> MAMMOTH_GASHER  = ITEMS.register("mammoth_gasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> KAMAKIRIC_ARROW = ITEMS.register("kamakiric_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> EVILBLADE = ITEMS.register("evil_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LIVEGUN = ITEMS.register("live_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LOVEKOV_KUJAKU = ITEMS.register("lovekov_kujaku",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LOVEKOV_TURTLE = ITEMS.register("lovekov_turtle",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LOVEKOV_HASHIBIROKO = ITEMS.register("lovekov_hashibiroko",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LOVEKOV_TRICERA = ITEMS.register("lovekov_tricera",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> NEEDLE_KUNAI = ITEMS.register("needle_kunai",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> GIFF_JUNIOR_SWORD = ITEMS.register("giff_junior_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> PARANEGRO = ITEMS.register("paranegro",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> BUFFALO_GEKIRIN = ITEMS.register("buffalo_disks",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).changeRepairItem(PROTO_VISTAMP.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

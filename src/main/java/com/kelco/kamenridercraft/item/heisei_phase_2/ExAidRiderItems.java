@@ -1800,178 +1800,178 @@ public class ExAidRiderItems {
 
 
     public static final DeferredItem<Item>EX_AIDHELMET = ITEMS.register("ex_aidhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
     public static final DeferredItem<Item> EX_AIDCHESTPLATE = ITEMS.register("ex_aidtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
     public static final DeferredItem<Item> EX_AIDLEGGINGS = ITEMS.register("ex_aidlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_EX_AID = ITEMS.register("gamer_driver_ex_aid",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ex_aid",MIGHTY_ACTION_X_GASHAT_LV_1,MIGHTY_ACTION_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_BRAVE = ITEMS.register("gamer_driver_brave",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"brave",TADDLE_QUEST_GASHAT_LV_1,TADDLE_QUEST_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_SNIPE = ITEMS.register("gamer_driver_snipe",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"snipe",BANG_BANG_SHOOTING_GASHAT_LV_1,BANG_BANG_SHOOTING_GASHAT,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_LAZER = ITEMS.register("gamer_driver_lazer",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"lazer",BAKUSOU_BIKE_GASHAT_LV_1, BAKUSOU_BIKE_GASHAT,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_GENM = ITEMS.register("gamer_driver_genmu",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"genm",PROTO_MIGHTY_ACTION_X_GASHAT_LV_1,PROTO_MIGHTY_ACTION_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_PARA_DX = ITEMS.register("gamer_driver_paradx",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"para_dx_lv99",GASHAT_GEAR_DUAL ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_TRUE_BRAVE = ITEMS.register("gamer_driver_truebrave",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"truebrave",TADDLE_LEGACY_GASHAT_TRUE ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_FUMA = ITEMS.register("gamer_driver_fuuma",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"fuma",HURRICANE_NINJA_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_ANOTHER_PARA_DX = ITEMS.register("gamer_driver_anotherparadox",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"another_para_dx",GASHAT_GEAR_DUAL_ANOTHER ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_SNIPE_NICO = ITEMS.register("gamer_driver_nico_snipe",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"snipe_nico",BANG_BANG_SHOOTING_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_GEMEDEUS_MUTEKI = ITEMS.register("gamer_driver_gamedeus_muteki",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"gamedeus_muteki",GEMEDEUS_HYPER_MUTEKI_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_GENM = ITEMS.register("gashacon_bugvisor_genmu",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"genm_bugvisor",DANGEROUS_ZOBIE_GASHAT_BD ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .overrideBeltText("gashacon_bugvisor").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .overrideBeltText("gashacon_bugvisor").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONOS = ITEMS.register("gashacon_bugvisor_ii_chronos",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronos",KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .overrideBeltText("gashacon_bugvisor_ii").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .overrideBeltText("gashacon_bugvisor_ii").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_POPPY = ITEMS.register("gashacon_bugvisor_ii_poppy",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"poppy",TOKI_MEKI_CRISIS_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_LAZER = ITEMS.register("gashacon_bugvisor_ii_lazer",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"lazer_lvx_",GIRI_GIRI_CHAMBARA_GASHAT_X ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_lazer").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_lazer").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONICLE_BUGTER = ITEMS.register("gashacon_bugvisor_ii_chronicle_bugster",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronicle_bugster",KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_chronicle_bugster_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_chronicle_bugster_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> PARA_DX_BELT = ITEMS.register("paradoxbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"para_dx",PERFECT_PUZZLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_PLAYER_BELT = ITEMS.register("rideplayerbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ride_player",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_PLAYER_BELT_NICO = ITEMS.register("rideplayerbelt_nico",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ride_player_nico",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> NINjA_PLAYER_BELT = ITEMS.register("ninjaplayerbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ninja_player",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("ninja_player_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().overrideBeltText("ninja_player_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> GASHACON_BREAKER = ITEMS.register("gashacon_breaker",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_KEY_SLASHER = ITEMS.register("gashacon_key_slasher",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SWORD = ITEMS.register("gashacon_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_MAGNUM = ITEMS.register("gashacon_magnum_gun",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_A = ITEMS.register("gashacon_sparrow_sickle_a",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_B = ITEMS.register("gashacon_sparrow_sickle_b",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_ARROW = ITEMS.register("gashacon_sparrow_arrow",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR = ITEMS.register("gashacon_bugvisor",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II = ITEMS.register("gashacon_bugvisor_ii",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_G = ITEMS.register("gashacon_bugvisor_g",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> PARABRAGUN = ITEMS.register("parabragun_axe",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 13, -3F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_WEAPON = ITEMS.register("ride_weapon",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> TRUE_BRAVE_SWORD = ITEMS.register("true_brave_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> FUUMA_SWORD = ITEMS.register("fuuma_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GENIN_WEAPON = ITEMS.register("genin_weapon",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> BUGSTER_TRIDENT = ITEMS.register("bugster_trident",
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GRAPHITE_FANG = ITEMS.register("graphite_fang",
             () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> DEUS_RUSHER = ITEMS.register("deus_rusher",
             () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> DEUS_RAMPART = ITEMS.register("deus_rampart",
-            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> DEUS_RUSHER_RED = ITEMS.register("deus_rusher_red",
             () -> new BaseSwordItem(Tiers.DIAMOND, 15, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> MACHINA_RAMPART = ITEMS.register("machina_rampart",
-            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
-                    .ChangeRepairItem(BLANK_GASHAT.get()));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+                    .changeRepairItem(BLANK_GASHAT.get()));
 
 
 

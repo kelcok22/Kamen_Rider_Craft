@@ -1714,128 +1714,128 @@ public class GeatsRiderItems {
 
 
 	public static final DeferredItem<Item> GEATS_HELMET = ITEMS.register("geatshead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 	public static final DeferredItem<Item> GEATS_CHESTPLATE = ITEMS.register("geatstroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 	public static final DeferredItem<Item> GEATS_LEGGINGS = ITEMS.register("geatslegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GEATS = ITEMS.register("desire_driver_geats",
 			() -> new DesireDriverItem(ArmorMaterials.DIAMOND,"geats",GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_TYCOON = ITEMS.register("desire_driver_tycoon",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"tycoon",TYCOON_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_NA_GO = ITEMS.register("desire_driver_na_go",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"na_go",NA_GO_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_BUFFA = ITEMS.register("desire_driver_buffa",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"buffa",BUFFA_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_PUNKJACK = ITEMS.register("desire_driver_punkjack",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"punkjack",PUNKJACK_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_NUGE_SPARROW = ITEMS.register("desire_driver_nudge_sparrow",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"nudge_sparrow",NUGE_SPARROW_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_SHIROWE = ITEMS.register("desire_driver_shirowe",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"shirowe",SHIROWE_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GINPEN = ITEMS.register("desire_driver_ginpen",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"ginpen",GINPEN_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_MARY = ITEMS.register("desire_driver_mary",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"mary",MARY_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_DA_PAAN = ITEMS.register("desire_driver_da_paan",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"da_paan",DA_PAAN_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_KEIROU = ITEMS.register("desire_driver_keirou",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"keirou",KEIROU_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_LETTER = ITEMS.register("desire_driver_letter",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"letter",LETTER_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_LOPO = ITEMS.register("desire_driver_lopo",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"lopo",LOPO_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GROOVY = ITEMS.register("desire_driver_groovy",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"groovy",GROOVY_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_HAKUBI = ITEMS.register("desire_driver_hakubi",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"hakubi",HAKUBI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_TURBON = ITEMS.register("desire_driver_turbon",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"turbon",TURBON_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_BRALI = ITEMS.register("desire_driver_brali",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"brali",BRALI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GYA_GO = ITEMS.register("desire_driver_gya_go",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"gya_go",GYA_GO_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_SEEKER = ITEMS.register("desire_driver_seeker",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"seeker",SEEKER_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_BUTCHI = ITEMS.register("desire_driver_butchi",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"butchi",BUTCHI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_REVI = ITEMS.register("desire_driver_revi",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"geats_revi",REVI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_VICE = ITEMS.register("desire_driver_vice",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"geats_vice",VICE_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_JYAMATO = ITEMS.register("desire_driver_jyamato",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"jyamato",DISCORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM,JYAMATO_BUCKLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM,JYAMATO_BUCKLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GM= ITEMS.register("desire_driver_gm",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"gm",CHUTA_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GM_CHIRAMI= ITEMS.register("desire_driver_gm_chirami",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"gm_chirami",GESSY_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_KEIDI_RIDER = ITEMS.register("desire_driver_keibi_riders",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"keibi_riders",BLANK_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_THE_END_RIDER = ITEMS.register("desire_driver_the_end_riders",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"the_end_riders",BLANK_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_X_GEATS = ITEMS.register("desire_driver_x_geats",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"x_geats",X_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().addExtraBaseFormItems(XGEATS_RAISE_BUCKLE,XGEATS_RAISE_BUCKLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.hideBeltFormInfo().addExtraBaseFormItems(XGEATS_RAISE_BUCKLE,XGEATS_RAISE_BUCKLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_DOOMS_GEATS = ITEMS.register("desire_driver_dooms_geats",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"dooms_geats",DOOMS_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().addExtraBaseFormItems(DOOMS_GEATS_RAISE_BUCKLE,DOOMS_GEATS_RAISE_BUCKLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.hideBeltFormInfo().addExtraBaseFormItems(DOOMS_GEATS_RAISE_BUCKLE,DOOMS_GEATS_RAISE_BUCKLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_ZIIN = ITEMS.register("raise_riser_belt_ziin",
@@ -1889,114 +1889,114 @@ public class GeatsRiderItems {
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X_RIFLE = ITEMS.register("magnum_shooter_40x_rifle",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER = ITEMS.register("zombie_breaker",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER_POISON_CHARGE = ITEMS.register("zombie_breaker_poison_charge",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BEAT_AXE = ITEMS.register("beat_axe",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER_TWIN_BLADE_MODE = ITEMS.register("ninja_dueler_twin_blade_mode",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER_TWIN_BLADE_MODE2 = ITEMS.register("ninja_dueler_twin_blade_mode2",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER = ITEMS.register("ninja_dueler",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISING_SWORD = ITEMS.register("raising_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_BUSTER_QB9 = ITEMS.register("geats_buster_qb9",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_BUSTER_X = ITEMS.register("geats_buster_x",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> X_RAISING_SWORD = ITEMS.register("x_raising_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_BUSTER = ITEMS.register("dooms_geats_buster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BUJIN = ITEMS.register("bujin",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> PLOSION_RAGE_SHIELD = ITEMS.register("plosion_rage_shield",
-			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_SWORD = ITEMS.register("gigant_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_HAMMER = ITEMS.register("gigant_hammer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_BLASTER = ITEMS.register("gigant_blaster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_HAMMER = ITEMS.register("raise_hammer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_ARROW = ITEMS.register("raise_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_WATER = ITEMS.register("raise_water",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_SHIELD = ITEMS.register("raise_shield",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+			() -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_CHAIN_ARRAY = ITEMS.register("raise_chain_array",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_CLAW = ITEMS.register("raise_claw",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_PROPELLER = ITEMS.register("raise_propeller",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RAISE_RISER = ITEMS.register("laser_raise_riser",
-			() -> new LaserRaiseRiserItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+			() -> new LaserRaiseRiserItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RAISE_BAZOOKA = ITEMS.register("laser_raise_bazooka",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL)
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> JYAMATO_RIDER_SCYTHE = ITEMS.register("jyamato_rider_scythe",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
-					.ChangeRepairItem(BLANK_CORE_ID.get()));
+					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_OSAKA = ITEMS.register("geats_rider_core_id_osaka",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_osaka","geats","desire_driver_belt_geats",

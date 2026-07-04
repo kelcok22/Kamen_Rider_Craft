@@ -37,7 +37,7 @@ public class ZXRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().allowRiderKick().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUSANOO_BELT_CORE = ITEMS.register("susanoo_belt_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","susunaoo_zx","susanoo_belt_belt",
@@ -98,9 +98,9 @@ public class ZXRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amaterasu_zx",AMATERASU_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item> MICRO_CHAIN = ITEMS.register("micro_chain",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).ChangeRepairItem(RIDER_CIRCUIT.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).changeRepairItem(RIDER_CIRCUIT.get()));
     public static final DeferredItem<SwordItem> CROSS_SHURIKEN = ITEMS.register("cross_shuriken",
-            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).ChangeRepairItem(RIDER_CIRCUIT.get()));
+            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

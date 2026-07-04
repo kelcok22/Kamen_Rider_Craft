@@ -11,12 +11,14 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
 public class CaseArmorSlot extends Slot {
     private final LivingEntity owner;
     private final EquipmentSlot slot;
+
     @Nullable
     private final ResourceLocation emptyIcon;
 
@@ -30,7 +32,7 @@ public class CaseArmorSlot extends Slot {
     }
 
     @Override
-    public void setByPlayer(ItemStack newStack, ItemStack oldStack) {
+    public void setByPlayer(@NotNull ItemStack newStack, @NotNull ItemStack oldStack) {
         this.owner.onEquipItem(this.slot, oldStack, newStack);
         super.setByPlayer(newStack, oldStack);
     }
@@ -52,7 +54,7 @@ public class CaseArmorSlot extends Slot {
      * Return whether this slot's stack can be taken from this slot.
      */
     @Override
-    public boolean mayPickup(Player player) {
+    public boolean mayPickup(@NotNull Player player) {
         ItemStack itemstack = this.getItem();
         return (itemstack.isEmpty() || player.isCreative() || !EnchantmentHelper.has(itemstack, EnchantmentEffectComponents.PREVENT_ARMOR_CHANGE)) && super.mayPickup(player);
     }

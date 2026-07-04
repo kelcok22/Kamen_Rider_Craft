@@ -271,7 +271,7 @@ public class NeoBaseBlasterItem extends BaseItem {
         return !player.isCreative();
     }
 
-    public NeoBaseBlasterItem ChangeRepairItem(Item item) {
+    public NeoBaseBlasterItem changeRepairItem(Item item) {
         RepairItem = item;
         return this;
     }
@@ -287,12 +287,12 @@ public class NeoBaseBlasterItem extends BaseItem {
         } else return UseAnim.NONE;
     }
 
-    public NeoBaseBlasterItem IsFormItem(Item item) {
+    public NeoBaseBlasterItem isFormItem(Item item) {
         FormChangeItem = item;
         return this;
     }
 
-    public NeoBaseBlasterItem IsHenshinItem(Item item) {
+    public NeoBaseBlasterItem isHenshinItem(Item item) {
         HenshinBeltItem = item;
         return this;
     }

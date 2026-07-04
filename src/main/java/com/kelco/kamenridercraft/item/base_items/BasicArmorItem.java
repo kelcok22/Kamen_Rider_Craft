@@ -74,7 +74,7 @@ public class BasicArmorItem extends net.minecraft.world.item.ArmorItem implement
         }));
     }
 
-    public BasicArmorItem ChangeRepairItem(Item item) {
+    public BasicArmorItem changeRepairItem(Item item) {
         RepairItem = item;
         return this;
     }

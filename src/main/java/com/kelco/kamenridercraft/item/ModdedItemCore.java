@@ -191,7 +191,7 @@ public class ModdedItemCore {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> EXBEETER = ITEMS.register("exbeeter",
             () -> new RiderFormChangeItem(new Item.Properties(), "_exbeeter", "kabuto", "kabuto_rider_belt",
@@ -276,7 +276,7 @@ public class ModdedItemCore {
                     if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
                         enemy.spawnAtLocation(new ItemStack(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC.get()));
                 }
-            }.allowRiderKick().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     //Bakuen no senshi
 
@@ -428,24 +428,24 @@ public class ModdedItemCore {
                         }
                     }
                 }
-            }.allowRiderKick().IsBeltGlowing().isGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
-                    .ChangeRepairItem(RIDER_CIRCUIT.get()));
+                    .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> HERCULESPADER_SWORD = ITEMS.register("herculespader_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
-                    .ChangeRepairItem(RIDER_CIRCUIT.get()));
+                    .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> DARKWING_SWORD = ITEMS.register("darkwing_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
-                    .ChangeRepairItem(RIDER_CIRCUIT.get()));
+                    .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> FLARESALAMANDER_SWORD = ITEMS.register("flaresalamander_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
-                    .ChangeRepairItem(RIDER_CIRCUIT.get()));
+                    .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<SignItem> HELHEIM_SIGN_ITEM = ITEMS.register("helheim_sign_item",
             () -> new SignItem(new Item.Properties().stacksTo(16), Rider_Blocks.HELHEIM_SIGN.get(), Rider_Blocks.HELHEIM_WALL_SIGN.get()));

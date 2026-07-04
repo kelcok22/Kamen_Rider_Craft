@@ -51,7 +51,7 @@ public class BaseThrowableItem extends SwordItem {
 		return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
 	}
 
-	public BaseThrowableItem ChangeRepairItem(Item item) {
+	public BaseThrowableItem changeRepairItem(Item item) {
 		RepairItem = item;
 		return this;
 	}

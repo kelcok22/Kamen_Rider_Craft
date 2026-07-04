@@ -12,126 +12,124 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Objects;
 
 public class BasePickaxeItem extends PickaxeItem {
 
-	private Item RepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
-	private Item FormChangeItem;
-	private Item HenshinBeltItem;
-	private Boolean Change_pick = false;
-	private Boolean Form_item = false;
-	private Boolean Henshin_item = false;
+    private Item changedRepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
+    private Item formChangeItem;
+    private Item henshinBeltItem;
+    private Boolean changePick = false;
+    private Boolean formItem = false;
+    private Boolean henshinItem = false;
     private Item craftingRemainingItem = null;
 
 
-	public BasePickaxeItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-		super(toolTier, prop.attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
-	}
+    public BasePickaxeItem(Tier toolTier, int Atk, float Spd, Properties prop) {
+        super(toolTier, prop.attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
+    }
 
-	public BasePickaxeItem ChangeRepairItem(Item item) {
-		RepairItem = item;
-		return this;
-	}
-
-	public boolean isValidRepairItem(ItemStack p_40392_, ItemStack p_40393_) {
-		return p_40393_.getItem()== RepairItem;
-	}
-
-	public BasePickaxeItem addToList(List<Item> TabList, int num) {
-		for (int i = 0; i < num; i++) {
-			TabList.add(this);
-		}
-		return this;
-	}
-
-	public BasePickaxeItem addToList(List<Item> TabList) {
-		TabList.add(this);
-		return this;
-	}
-
-	public static int Get_Mode (ItemStack itemstack)
-	{
-		if (!itemstack.has(DataComponents.CUSTOM_DATA)) return  0;
-		else{
-			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-			return tag.getInt("item_mode");
-		}
-	}
-
-	public BasePickaxeItem IsFormItem(Item item) {
-		Form_item=true;
-		FormChangeItem=item;
-		return this;
-	}
-
-	public BasePickaxeItem IsHenshinItem(Item item) {
-		Henshin_item=true;
-		HenshinBeltItem=item;
-		return this;
-	}
-
-	public static void Set_Mode(ItemStack itemstack)
-	{
-		if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-		}
-		CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-		tag.putInt("item_mode", Get_Mode(itemstack)==0? 1:0);
-	}
-
-    public BasePickaxeItem KeepDifItem(Item Dif) {
-        craftingRemainingItem=Dif;
+    public BasePickaxeItem changeRepairItem(Item newRepairItem) {
+        changedRepairItem = newRepairItem;
         return this;
     }
 
-    public BasePickaxeItem KeepItem() {
-        craftingRemainingItem=this;
+    public boolean isValidRepairItem(@NotNull ItemStack itemStackOne, ItemStack repairItem) {
+        return repairItem.getItem() == changedRepairItem;
+    }
+
+    public BasePickaxeItem addToList(List<Item> TabList, int num) {
+        for (int i = 0; i < num; i++) {
+            TabList.add(this);
+        }
         return this;
     }
 
-    public ItemStack getCraftingRemainingItem(ItemStack stack)
-    {
+    public BasePickaxeItem addToList(List<Item> TabList) {
+        TabList.add(this);
+        return this;
+    }
+
+    public static int getMode(ItemStack itemstack) {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            return 0;
+        }
+        CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+        return tag.getInt("item_mode");
+    }
+
+    public BasePickaxeItem isFormItem(Item item) {
+        formItem = true;
+        formChangeItem = item;
+        return this;
+    }
+
+    public BasePickaxeItem isHenshinItem(Item item) {
+        henshinItem = true;
+        henshinBeltItem = item;
+        return this;
+    }
+
+    public static void setMode(ItemStack itemstack) {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+        tag.putInt("item_mode", getMode(itemstack) == 0 ? 1 : 0);
+    }
+
+    public BasePickaxeItem keepDiffItem(Item item) {
+        craftingRemainingItem = item;
+        return this;
+    }
+
+    public BasePickaxeItem keepItem() {
+        craftingRemainingItem = this;
+        return this;
+    }
+
+    public @NotNull ItemStack getCraftingRemainingItem(ItemStack stack) {
         if (stack.getItem() instanceof BasePickaxeItem) {
-            if (!hasCraftingRemainingItem(stack))
-            {
+            if (!hasCraftingRemainingItem(stack)) {
                 return ItemStack.EMPTY;
             }
             return new ItemStack(craftingRemainingItem);
-        } else  return new ItemStack(this.getCraftingRemainingItem());
+        }
+        return new ItemStack(this.getCraftingRemainingItem());
     }
 
 
-    public boolean hasCraftingRemainingItem(ItemStack stack)
-    {
-        return ((BasePickaxeItem)stack.getItem()).craftingRemainingItem!=null;
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return ((BasePickaxeItem) stack.getItem()).craftingRemainingItem != null;
     }
 
     @Override
-    public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand) {
-        if (Form_item) FormChangeItem.interactLivingEntity(stack, player, interactionTarget, usedHand);
+    public @NotNull InteractionResult interactLivingEntity(@NotNull ItemStack stack, @NotNull Player player, @NotNull LivingEntity interactionTarget, @NotNull InteractionHand usedHand) {
+        if (formItem) formChangeItem.interactLivingEntity(stack, player, interactionTarget, usedHand);
         return InteractionResult.PASS;
     }
 
-	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand p_41130_) {
-		ItemStack itemstack = player.getItemInHand(p_41130_);
-		if (Henshin_item && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
-			player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
-			if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem form) form.use(level, player, InteractionHand.OFF_HAND);
-		}	
-		if (Form_item && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
-			FormChangeItem.use(level, player, p_41130_);
-		}
-		if (Change_pick) {
-			if (player.isShiftKeyDown()) {
-				Set_Mode(itemstack);
-			}
-
-            Get_Mode(itemstack);
+    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, Player player, @NotNull InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
+        if (!level.isClientSide()) {
+            if (henshinItem && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
+                player.setItemSlot(EquipmentSlot.FEET, new ItemStack(henshinBeltItem));
+                if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem form)
+                    form.use(level, player, InteractionHand.OFF_HAND);
+            }
+            if (formItem && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+                formChangeItem.use(level, player, interactionHand);
+            }
+            if (changePick) {
+                if (player.isShiftKeyDown()) {
+                    setMode(itemstack);
+                }
+                getMode(itemstack);
+            }
         }
-		   return InteractionResultHolder.pass(player.getItemInHand( p_41130_));
-	}
-
-
+        return InteractionResultHolder.pass(itemstack);
+    }
 }

@@ -41,7 +41,7 @@ public class CrossSeriesRiderItems {
     public static final DeferredItem<Item> TYPHOON_CORE_ARTIST = ITEMS.register("typhoon_core_artist",
             () -> new RiderFormChangeItem(new Item.Properties(),"_artist","ichigo","typhoon_belt_artist",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).addAlternative(GREEN_KING_STONE_ARTIST.get()).allowRiderKick().isGlowing());
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).addAlternative(GREEN_KING_STONE_ARTIST.get()).isGlowing());
 
     public static final DeferredItem<Item> DOUBLE_TYPHOON_CORE_ARTIST = ITEMS.register("double_typhoon_core_artist",
             () -> new RiderFormChangeItem(new Item.Properties(),"_artist","v3","double_typhoon_belt_artist",
@@ -93,7 +93,7 @@ public class CrossSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.allowRiderKick().IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(TACKLE_CORE_ARTIST.get())
+            }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(TACKLE_CORE_ARTIST.get())
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {

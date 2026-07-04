@@ -139,10 +139,10 @@ public class XRiderItems {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIST_CUTTER = ITEMS.register("geist_cutter",
-            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIST_DOUBLE_CUTTER = ITEMS.register("geist_double_cutter",
-            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {

@@ -13,34 +13,37 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import org.jetbrains.annotations.NotNull;
 
 
 public class BaseDropItem extends BaseItem {
-	public ResourceLocation LOOT_TABLE_PATH;
-	public BaseDropItem(Properties properties, ResourceLocation lootTable)
-	{
-		super(properties);
-		LOOT_TABLE_PATH = lootTable;
-	}
-    
+    public ResourceLocation lootTablePath;
+
+    public BaseDropItem(Properties properties, ResourceLocation lootTable) {
+        super(properties);
+        lootTablePath = lootTable;
+    }
+
     public void dropItem(ServerLevel world, Player player) {
-		ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, LOOT_TABLE_PATH);
+        ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, lootTablePath);
         LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);
         LootParams.Builder lootparams$builder = new LootParams.Builder(world)
-        	.withParameter(LootContextParams.THIS_ENTITY, player)
-        	.withParameter(LootContextParams.ORIGIN, player.position());
+                .withParameter(LootContextParams.THIS_ENTITY, player)
+                .withParameter(LootContextParams.ORIGIN, player.position());
 
         LootParams lootparams = lootparams$builder.create(LootContextParamSets.EQUIPMENT);
         loottable.getRandomItems(lootparams, 0L, player::spawnAtLocation);
     }
 
-	@Override
-		public InteractionResultHolder<ItemStack> use(Level world, Player playerIn, InteractionHand p_41434_) {
-			ItemStack itemstack = playerIn.getItemInHand(p_41434_);
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
-			if (world instanceof ServerLevel server) this.dropItem(server, playerIn);
-			if (!playerIn.hasInfiniteMaterials()) itemstack.shrink(1);
-			return InteractionResultHolder.consume(itemstack);
-		}
+        if (world instanceof ServerLevel server) {
+            this.dropItem(server, player);
+            if (!player.hasInfiniteMaterials()) itemstack.shrink(1);
 
-	}
+        }
+        return InteractionResultHolder.consume(itemstack);
+    }
+}

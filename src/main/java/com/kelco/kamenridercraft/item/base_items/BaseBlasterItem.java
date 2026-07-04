@@ -256,12 +256,12 @@ public class BaseBlasterItem extends BowItem {
         return !player.isCreative();
     }
 
-    public BaseBlasterItem IsFormItem(Item item) {
+    public BaseBlasterItem isFormItem(Item item) {
         FormChangeItem = item;
         return this;
     }
 
-    public BaseBlasterItem IsHenshinItem(Item item) {
+    public BaseBlasterItem isHenshinItem(Item item) {
         HenshinBeltItem = item;
         return this;
     }
@@ -292,7 +292,7 @@ public class BaseBlasterItem extends BowItem {
         return ((BaseBlasterItem) stack.getItem()).craftingRemainingItem != null;
     }
 
-    public BaseBlasterItem ChangeRepairItem(Item item) {
+    public BaseBlasterItem changeRepairItem(Item item) {
         RepairItem = item;
         return this;
     }

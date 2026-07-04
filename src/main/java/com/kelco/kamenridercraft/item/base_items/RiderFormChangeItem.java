@@ -32,43 +32,43 @@ import java.util.Objects;
 
 public class RiderFormChangeItem extends BaseItem {
 
-    private String FORM_NAME;
-    private int Slot = 1;
-    private int OffhandSlot = 10;
-    private Boolean Offhand = false;
+    private String formName;
+    private int slot = 1;
+    private int offhandSlot = 10;
+    private Boolean offhand = false;
 
     private List<MobEffectInstance> potionEffectList;
-    private List<Item> NEEDITEM = new ArrayList<>();
-    protected String RIDER_NAME;
-    protected String OVERRIDE_RIDER_NAME;
+    private List<Item> needItem = new ArrayList<>();
+    protected String riderName;
+    protected String overrideRiderName;
 
-    private String BELT_TEX;
-    private Boolean IS_GLOWING = false;
-    private Boolean IS_BELT_GLOWING = false;
-    private Boolean HAS_STATIC_WINGS = false;
-    private String UPDATED_BELT_MODEL;
-    private String UPDATED_MODEL;
-    private String FLYING_MODEL;
-    private Boolean SET_SHOW_FACE = false;
-    private Boolean SET_SHOW_UNDER = false;
+    private String beltTex;
+    private Boolean isGlowing = false;
+    private Boolean isBeltGlowing = false;
+    private Boolean hasStaticWings = false;
+    private String updatedBeltModel;
+    private String updatedModel;
+    private String flyingModel;
+    private Boolean setShowFace = false;
+    private Boolean setShowUnder = false;
 
-    private Boolean USE_WALK = false;
-    private Boolean USE_BIKE = false;
-    private Boolean HAS_CAPE = false;
+    private Boolean useWalk = false;
+    private Boolean useBike = false;
+    private Boolean hasCape = false;
 
 
     private Boolean A1 = false;
     private Boolean SD = false;
 
-    private Boolean FLYING_TEXT = false;
-    private Item STIFT_ITEM;
-    private Item SWITCH_ITEM;
-    private Boolean RESET_FORM = false;
-    private Boolean RESET_FORM_MAIN = false;
+    private Boolean flyingText = false;
+    private Item shiftItem;
+    private Item switchItem;
+    private Boolean resetForm = false;
+    private Boolean resetToMainForm = false;
 
     private Boolean isGold = false;
 
-    private Boolean SET_TO_ARMOR_FORM = false;
+    private Boolean setToArmorForm = false;
 
     private List<RiderFormChangeItem> alternative = new ArrayList<>();
     private RiderFormChangeItem alsoChange1stSlot;
@@ -83,37 +83,35 @@ public class RiderFormChangeItem extends BaseItem {
     public String[] compatibilityList = new String[]{""};
     public List<Item> needItemList = new ArrayList<>();
 
-    private Boolean NEED_BASE_FORM = false;
-    private RiderFormChangeItem NEED_FORM_SLOT_1;
-    private RiderFormChangeItem NEED_FORM_SLOT_2;
-    private RiderFormChangeItem NEED_FORM_SLOT_3;
-    private RiderFormChangeItem NEED_FORM_SLOT_4;
+    private Boolean needBaseForm = false;
+    private RiderFormChangeItem needFormSlot1;
+    private RiderFormChangeItem needFormSlot2;
+    private RiderFormChangeItem needFormSlot3;
+    private RiderFormChangeItem needFormSlot4;
 
     private int timeoutDuration = 0;
     private int lockDuration = 0;
-    private RiderFormChangeItem REVERT_FORM;
+    private RiderFormChangeItem revertForm;
 
-    private Boolean IGNORE_BELT_TEXT = false;
+    private Boolean ignoreBeltText = false;
 
-    private boolean allowsRiderKick = false;
-
-    private int Store_num = 1;
+    private int storeNum = 1;
 
     private String slotOneAbility = "";
     private int slotOneAbilityPriority = 0;
     private String slotTwoAbility = "";
     private int slotTwoAbilityPriority = 0;
 
-    private Double FormDelay = 30d;
+    private Double formDelay = 30d;
 
 
-    public RiderFormChangeItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+    public RiderFormChangeItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
         super(properties);
 
         potionEffectList = Lists.newArrayList(effects);
-        FORM_NAME = formName;
-        BELT_TEX = beltTex;
-        RIDER_NAME = ridername;
+        this.formName = formName;
+        this.beltTex = beltTex;
+        this.riderName = riderName;
     }
 
 
@@ -122,23 +120,25 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public int getSlot() {
-        return Slot;
+        return slot;
     }
 
     public String getFormName(Boolean isFlying) {
-        return (isFlying & FLYING_TEXT ? FORM_NAME + "_wing" : FORM_NAME);
+        return (isFlying & flyingText ? formName + "_wing" : formName);
     }
 
     public String getRiderName(String name) {
-        return (OVERRIDE_RIDER_NAME != null ? OVERRIDE_RIDER_NAME : name);
+        return (overrideRiderName != null ? overrideRiderName : name);
     }
 
 
     public String getBeltTex() {
-        return BELT_TEX;
+        return beltTex;
     }
 
-    public Double getFormDelay() {return FormDelay;}
+    public Double getFormDelay() {
+        return formDelay;
+    }
 
 
     public List<RiderFormChangeItem> getAlternative() {
@@ -147,29 +147,29 @@ public class RiderFormChangeItem extends BaseItem {
 
 
     public Boolean getIgnoreOverrideBeltText() {
-        return IGNORE_BELT_TEXT;
+        return ignoreBeltText;
     }
 
     public String getBeltModel() {
-        return (UPDATED_BELT_MODEL != null ? UPDATED_BELT_MODEL : "geo/riderbelt.geo.json");
+        return (updatedBeltModel != null ? updatedBeltModel : "geo/riderbelt.geo.json");
     }
 
     public String getModel(String riderName) {
-        if (UPDATED_MODEL != null) return UPDATED_MODEL;
-        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + FORM_NAME + ".geo.json");
-        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + FORM_NAME + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
+        if (updatedModel != null) return updatedModel;
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + formName + ".geo.json");
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
     public Boolean getShowFace() {
-        return SET_SHOW_FACE;
+        return setShowFace;
     }
 
     public Boolean getShowUnder() {
-        return SET_SHOW_UNDER;
+        return setShowUnder;
     }
 
     public Boolean getIsGlowing() {
-        return IS_GLOWING;
+        return isGlowing;
     }
 
     public Boolean getA1() {
@@ -197,46 +197,46 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public Boolean getHasCape() {
-        return HAS_CAPE;
+        return hasCape;
     }
 
     public Boolean getIsBike() {
-        return USE_BIKE;
+        return useBike;
     }
 
     public Boolean getIsBeltGlowing() {
-        return IS_BELT_GLOWING;
+        return isBeltGlowing;
     }
 
     public Boolean getHasStaticWings() {
-        return HAS_STATIC_WINGS;
+        return hasStaticWings;
     }
 
     public Boolean getIsResetForm() {
-        return RESET_FORM;
+        return resetForm;
     }
 
     public Boolean getIsResetFormMain() {
-        return RESET_FORM_MAIN;
+        return resetToMainForm;
     }
 
     public Item getStiftItem() {
-        return STIFT_ITEM;
+        return shiftItem;
     }
 
 
     public int getStoredNum() {
-        return Store_num;
+        return storeNum;
     }
 
     public String getFlyingModel(String riderName) {
-        if (FLYING_MODEL != null) return FLYING_MODEL;
-        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + FORM_NAME + "_wing.geo.json");
-        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + FORM_NAME + "_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
+        if (flyingModel != null) return flyingModel;
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + formName + "_wing.geo.json");
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + "_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
     }
 
     public Boolean hasWingsIfFlying() {
-        return FLYING_TEXT;
+        return flyingText;
     }
 
     public RiderFormChangeItem addIncompatibleForm(Item item) {
@@ -271,23 +271,29 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem changeRiderName(String name) {
-        OVERRIDE_RIDER_NAME = name;
+        overrideRiderName = name;
         return this;
     }
 
     public RiderFormChangeItem changeModel(String model) {
-        UPDATED_MODEL = model;
+        updatedModel = model;
         return this;
     }
 
     public RiderFormChangeItem setShowFace() {
-        SET_SHOW_FACE = true;
+        setShowFace = true;
         return this;
     }
 
-    public RiderFormChangeItem setShowUnder() {SET_SHOW_UNDER = true;return this;}
+    public RiderFormChangeItem setShowUnder() {
+        setShowUnder = true;
+        return this;
+    }
 
-    public RiderFormChangeItem setFormDelay(double num) {FormDelay = num;return this;}
+    public RiderFormChangeItem setFormDelay(double num) {
+        formDelay = num;
+        return this;
+    }
 
     public RiderFormChangeItem isGold() {
         isGold = true;
@@ -307,12 +313,12 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem changeBeltModel(String model) {
-        UPDATED_BELT_MODEL = model;
+        updatedBeltModel = model;
         return this;
     }
 
     public RiderFormChangeItem changeSlot(int slot) {
-        Slot = slot;
+        this.slot = slot;
         return this;
     }
 
@@ -325,31 +331,31 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem getRevertForm() {
-        return this.REVERT_FORM;
+        return this.revertForm;
     }
 
     public RiderFormChangeItem hasTimeout(int timeout, int lock, RiderFormChangeItem revertsTo) {
         timeoutDuration = timeout;
         lockDuration = lock;
-        REVERT_FORM = revertsTo;
+        revertForm = revertsTo;
         return this;
     }
 
     public RiderFormChangeItem addNum(int num) {
-        Store_num = num;
+        storeNum = num;
         return this;
     }
 
     public RiderFormChangeItem setOffhandSlot(int slot) {
-        OffhandSlot = slot;
-        Offhand = true;
+        offhandSlot = slot;
+        offhand = true;
         return this;
     }
 
 
     public RiderFormChangeItem hasFlyingWings(@Nullable String model) {
-        FLYING_TEXT = true;
-        if (model != null) FLYING_MODEL = model;
+        flyingText = true;
+        if (model != null) flyingModel = model;
         return this;
     }
 
@@ -359,32 +365,32 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem resetFormToBase() {
-        RESET_FORM = true;
+        resetForm = true;
         return this;
     }
 
     public RiderFormChangeItem resetFormToBaseIfMain() {
-        RESET_FORM_MAIN = true;
+        resetToMainForm = true;
         return this;
     }
 
     public RiderFormChangeItem setFormToArmor() {
-        SET_TO_ARMOR_FORM = true;
+        setToArmorForm = true;
         return this;
     }
 
     public RiderFormChangeItem isGlowing() {
-        IS_GLOWING = true;
+        isGlowing = true;
         return this;
     }
 
     public RiderFormChangeItem hasCape() {
-        HAS_CAPE = true;
+        hasCape = true;
         return this;
     }
 
     public RiderFormChangeItem isBike() {
-        USE_BIKE = true;
+        useBike = true;
         return this;
     }
 
@@ -400,56 +406,51 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem IsBeltGlowing() {
-        IS_BELT_GLOWING = true;
+        isBeltGlowing = true;
         return this;
     }
 
     public RiderFormChangeItem hasStaticWings() {
-        HAS_STATIC_WINGS = true;
+        hasStaticWings = true;
         return this;
     }
 
     public RiderFormChangeItem needBaseForm() {
-        NEED_BASE_FORM = true;
+        needBaseForm = true;
         return this;
     }
 
     public RiderFormChangeItem ignoreOverrideBeltText() {
-        IGNORE_BELT_TEXT = true;
-        return this;
-    }
-
-    public RiderFormChangeItem allowRiderKick() {
-        this.allowsRiderKick = true;
+        ignoreBeltText = true;
         return this;
     }
 
     public RiderFormChangeItem addNeedForm(Item item) {
-        NEED_FORM_SLOT_1 = ((RiderFormChangeItem) item);
+        needFormSlot1 = ((RiderFormChangeItem) item);
         return this;
     }
 
     public RiderFormChangeItem addNeedForm(Item item, int slot) {
 
-        if (slot == 1) NEED_FORM_SLOT_1 = ((RiderFormChangeItem) item);
-        else if (slot == 2) NEED_FORM_SLOT_2 = ((RiderFormChangeItem) item);
-        else if (slot == 3) NEED_FORM_SLOT_3 = ((RiderFormChangeItem) item);
-        else if (slot == 4) NEED_FORM_SLOT_4 = ((RiderFormChangeItem) item);
+        if (slot == 1) needFormSlot1 = ((RiderFormChangeItem) item);
+        else if (slot == 2) needFormSlot2 = ((RiderFormChangeItem) item);
+        else if (slot == 3) needFormSlot3 = ((RiderFormChangeItem) item);
+        else if (slot == 4) needFormSlot4 = ((RiderFormChangeItem) item);
         return this;
     }
 
     public RiderFormChangeItem addNeedItem(Item item) {
-        NEEDITEM.add(item);
+        needItem.add(item);
         return this;
     }
 
     public RiderFormChangeItem addShiftForm(Item item) {
-        STIFT_ITEM = item;
+        shiftItem = item;
         return this;
     }
 
     public RiderFormChangeItem addSwitchForm(Item item) {
-        SWITCH_ITEM = item;
+        switchItem = item;
         return this;
     }
 
@@ -465,12 +466,12 @@ public class RiderFormChangeItem extends BaseItem {
 
 
     public Boolean isCompatible(RiderDriverItem belt) {
-        if (Objects.equals(belt.Rider, RIDER_NAME)) return true;
+        if (Objects.equals(belt.Rider, riderName)) return true;
         for (String str : compatibilityList) {
             if (Objects.equals(str, belt.Rider)) return true;
         }
         ItemStack itemstack = new ItemStack(belt);
-        return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" + RIDER_NAME + FORM_NAME)));
+        return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" + riderName + formName)));
     }
 
     public Boolean checkGold() {
@@ -513,16 +514,16 @@ public class RiderFormChangeItem extends BaseItem {
         if (!isCompatible(belt)) {
             return false;
         }
-        if (!NEEDITEM.isEmpty()) {
-            for (Item item : NEEDITEM) {
+        if (!needItem.isEmpty()) {
+            for (Item item : needItem) {
                 if (!inventoryOrHolderContains(player, item)) return false;
             }
         }
-        if (NEED_BASE_FORM) if (RiderDriverItem.getFormItem(stack, 1) != belt.Base_Form_Item) return false;
-        if (NEED_FORM_SLOT_1 != null) if (RiderDriverItem.getFormItem(stack, 1) != NEED_FORM_SLOT_1) return false;
-        if (NEED_FORM_SLOT_2 != null) if (RiderDriverItem.getFormItem(stack, 2) != NEED_FORM_SLOT_2) return false;
-        if (NEED_FORM_SLOT_3 != null) if (RiderDriverItem.getFormItem(stack, 3) != NEED_FORM_SLOT_3) return false;
-        if (NEED_FORM_SLOT_4 != null) if (RiderDriverItem.getFormItem(stack, 4) != NEED_FORM_SLOT_4) return false;
+        if (needBaseForm) if (RiderDriverItem.getFormItem(stack, 1) != belt.Base_Form_Item) return false;
+        if (needFormSlot1 != null) if (RiderDriverItem.getFormItem(stack, 1) != needFormSlot1) return false;
+        if (needFormSlot2 != null) if (RiderDriverItem.getFormItem(stack, 2) != needFormSlot2) return false;
+        if (needFormSlot3 != null) if (RiderDriverItem.getFormItem(stack, 3) != needFormSlot3) return false;
+        if (needFormSlot4 != null) if (RiderDriverItem.getFormItem(stack, 4) != needFormSlot4) return false;
 
         if (!needItemList.isEmpty()) {
             for (Item item : needItemList) {
@@ -538,11 +539,11 @@ public class RiderFormChangeItem extends BaseItem {
             ItemStack BELT = interactionTarget.getItemBySlot(EquipmentSlot.FEET);
 
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-                if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.canChange(player, belt, BELT))
-                    STIFT_ITEM.interactLivingEntity(new ItemStack(form), player, summon, usedHand);
+                if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.canChange(player, belt, BELT))
+                    shiftItem.interactLivingEntity(new ItemStack(form), player, summon, usedHand);
                 else if (canChange(player, belt, BELT)) {
-                    if (RESET_FORM) RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
-                    if (RESET_FORM_MAIN & Objects.equals(belt.Rider, RIDER_NAME))
+                    if (resetForm) RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
+                    if (resetToMainForm & Objects.equals(belt.Rider, riderName))
                         RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange1stSlot, 1);
@@ -553,14 +554,14 @@ public class RiderFormChangeItem extends BaseItem {
                     if (alsoChange4thSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
 
-                    if (SET_TO_ARMOR_FORM)
+                    if (setToArmorForm)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), belt.Armor_Form_Item, 1);
 
-                    int SLOT = Slot;
-                    if (usedHand == InteractionHand.OFF_HAND & Offhand) SLOT = OffhandSlot;
+                    int SLOT = slot;
+                    if (usedHand == InteractionHand.OFF_HAND & offhand) SLOT = offhandSlot;
 
-                    if (SWITCH_ITEM != null & RiderDriverItem.getFormItem(summon.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
-                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), SWITCH_ITEM, SLOT);
+                    if (switchItem != null & RiderDriverItem.getFormItem(summon.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), switchItem, SLOT);
                     else RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), this, SLOT);
                     if (alsoChange5thSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange5thSlot, 5);
@@ -585,15 +586,15 @@ public class RiderFormChangeItem extends BaseItem {
 
         if (!player.hasEffect(EffectCore.FORM_LOCK)) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-                if (STIFT_ITEM instanceof RiderFormChangeItem form && player.isShiftKeyDown())
-                    STIFT_ITEM.use(level, player, usedHand);
+                if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown())
+                    shiftItem.use(level, player, usedHand);
                 else if (canChange(player, belt, BELT)) {
                     if (!player.isCreative()) {
                         player.getCooldowns().addCooldown(this, 60);
                         player.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK, 20, 0, true, false));
                     }
-                    if (RESET_FORM) RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (RESET_FORM_MAIN & Objects.equals(belt.Rider, RIDER_NAME))
+                    if (resetForm) RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
+                    if (resetToMainForm & Objects.equals(belt.Rider, riderName))
                         RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot != null)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange1stSlot, 1);
@@ -604,14 +605,14 @@ public class RiderFormChangeItem extends BaseItem {
                     if (alsoChange4thSlot != null)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
 
-                    if (SET_TO_ARMOR_FORM)
+                    if (setToArmorForm)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), belt.Armor_Form_Item, 1);
 
-                    int SLOT = Slot;
-                    if (usedHand == InteractionHand.OFF_HAND & Offhand) SLOT = OffhandSlot;
+                    int SLOT = slot;
+                    if (usedHand == InteractionHand.OFF_HAND & offhand) SLOT = offhandSlot;
 
-                    if (SWITCH_ITEM != null & RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
-                        RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), SWITCH_ITEM, SLOT);
+                    if (switchItem != null & RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
+                        RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), switchItem, SLOT);
                     else RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), this, SLOT);
                     if (alsoChange5thSlot != null)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange5thSlot, 5);
@@ -636,6 +637,7 @@ public class RiderFormChangeItem extends BaseItem {
                 player.getCooldowns().addCooldown(this, this.lockDuration);
         }
     }
+
     public void transformationEffect(ItemStack itemstack, LivingEntity entity) {
         if (entity.level() instanceof ServerLevel sl) {
             sl.sendParticles(ParticleTypes.GUST,
@@ -645,8 +647,8 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public void transformationEffect(ItemStack itemstack, LivingEntity entity, Double tick) {
-     if (tick==30)transformationEffect(itemstack, entity);
-     if (tick==1)RiderDriverItem.UpdateOldFormItem(itemstack);
+        if (tick == 30) transformationEffect(itemstack, entity);
+        if (tick == 1) RiderDriverItem.UpdateOldFormItem(itemstack);
 
     }
 }

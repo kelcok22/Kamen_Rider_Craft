@@ -333,131 +333,131 @@ public class FaizRiderItems {
 
 
     public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZCHESTPLATE = ITEMS.register("faiztroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZLEGGINGS = ITEMS.register("faizlegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> FAIZ_DRIVER = ITEMS.register("faiz_driver",
-			() -> new FaizDriverItem(ArmorMaterials.DIAMOND,"faiz",FAIZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new FaizDriverItem(ArmorMaterials.DIAMOND,"faiz",FAIZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> KAIXA_DRIVER = ITEMS.register("kaixa_driver",
-			() -> new KaixaDriverItem(ArmorMaterials.DIAMOND,"kaixa",KAIXA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new KaixaDriverItem(ArmorMaterials.DIAMOND,"kaixa",KAIXA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> DELTA_DRIVER = ITEMS.register("delta_driver",
-			() -> new DeltaDriverItem(ArmorMaterials.DIAMOND,"delta",DELTA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new DeltaDriverItem(ArmorMaterials.DIAMOND,"delta",DELTA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> PSYGA_DRIVER = ITEMS.register("psyga_driver",
-			() -> new PsygaDriverItem(ArmorMaterials.DIAMOND,"psyga",PSYGA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new PsygaDriverItem(ArmorMaterials.DIAMOND,"psyga",PSYGA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> ORGA_DRIVER = ITEMS.register("orga_driver",
-			() -> new OrgaDriverItem(ArmorMaterials.DIAMOND,"orga",ORGA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new OrgaDriverItem(ArmorMaterials.DIAMOND,"orga",ORGA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> SMARTBUCKLE = ITEMS.register("smartbuckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riotrooper",BLANK_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riotrooper",BLANK_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> SMARTBUCKLE_V2 = ITEMS.register("smartbuckle_v2",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riotrooper_v2",BLANK_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
-					.overrideBeltText("smart_buckle_v2_belt").hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+					.overrideBeltText("smart_buckle_v2_belt").hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> FAIZ_DRIVER_NEXT = ITEMS.register("faiz_driver_next",
-			() -> new FaizDriverNextItem(ArmorMaterials.DIAMOND,"next_faiz",NEXT_FAIZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new FaizDriverNextItem(ArmorMaterials.DIAMOND,"next_faiz",NEXT_FAIZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_DRIVER = ITEMS.register("next_kaixa_driver",
-			() -> new NextKaixaDriverItem(ArmorMaterials.DIAMOND,"next_kaixa",NEXT_KAIXA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new NextKaixaDriverItem(ArmorMaterials.DIAMOND,"next_kaixa",NEXT_KAIXA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> MUEZ_DRIVER = ITEMS.register("muez_driver",
-			() -> new MuezDriverItem(ArmorMaterials.DIAMOND,"muez",MUEZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new MuezDriverItem(ArmorMaterials.DIAMOND,"muez",MUEZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> NEO_ALPA_DRIVER = ITEMS.register("neo_alpa_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neo_alpa",NEO_ALPA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neo_alpa",NEO_ALPA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> PYRON_DRIVER = ITEMS.register("pyron_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pyron",PYRON_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pyron",PYRON_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> PYRON_DRIVER_SR = ITEMS.register("pyron_driver_sr",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pyron_sonia_red",PYRON_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pyron_sonia_red",PYRON_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> PYRON_DRIVER_MB = ITEMS.register("pyron_driver_mb",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pyron_midnight_black",PYRON_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pyron_midnight_black",PYRON_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> SEEDA_DRIVER = ITEMS.register("seeda_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> SEEDA_DRIVER_GB = ITEMS.register("seeda_driver_gb",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_gb",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_gb",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> SEEDA_DRIVER_RO = ITEMS.register("seeda_driver_ro",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_ro",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_ro",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> SEEDA_DRIVER_UW = ITEMS.register("seeda_driver_uw",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_uw",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"seeda_uw",SEEDA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
     public static final DeferredItem<Item> ALPHA_DRIVER = ITEMS.register("alpha_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alpha",ALPHA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).has_basic_model().ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).has_basic_model().changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
     public static final DeferredItem<Item> BETA_DRIVER = ITEMS.register("beta_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beta",BETA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).has_basic_model().ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).has_basic_model().changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 
     public static final DeferredItem<Item> FAIZ_EDGE = ITEMS.register("faiz_edge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_PHONE = ITEMS.register("faiz_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_PHONE_POINTER = ITEMS.register("faiz_phone_pointer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_SHOT = ITEMS.register("faiz_shot",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_AXEL = ITEMS.register("faiz_axel",
 			() -> new FaizAxelItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 	public static final DeferredItem<Item> FAIZ_BLASTER = ITEMS.register("faiz_blaster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> KAIXA_BLAYGUN = ITEMS.register("kaixa_blaygun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> KAIXA_PHONE = ITEMS.register("kaixa_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> KAIXA_SHOT = ITEMS.register("kaixa_shot",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> KAIXA_CROSSLASHER = ITEMS.register("kaixa_crosslasher",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> DELTA_BLASTER = ITEMS.register("delta_blaster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> PSYGA_TONFA_EDGE = ITEMS.register("psyga_tonfa_edge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> PSYGA_PHONE = ITEMS.register("psyga_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> ORGA_STLANZER = ITEMS.register("orga_stlanzer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> ORGA_PHONE = ITEMS.register("orga_phone",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> FAIZ_PHONE_20_PLUS_BURST_MODE = ITEMS.register("faiz_phone_20_plus_burst",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> FAIZ_PHONE_20_PLUS_KNUCKLE_MODE = ITEMS.register("faiz_phone_20_plus_knuckle",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> KAIXA_PHONE_XX = ITEMS.register("kaixa_phone_xx",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> MUEZ_EDGE = ITEMS.register("muez_edge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> MUEZ_PHONE_BURST_MODE = ITEMS.register("muez_phone_burst",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 	public static final DeferredItem<Item> MUEZ_PHONE_KNUCKLE_MODE = ITEMS.register("muez_phone_knuckle",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> AXEL_RAY_GUN = ITEMS.register("axel_ray_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 	public static void register(IEventBus eventBus) {

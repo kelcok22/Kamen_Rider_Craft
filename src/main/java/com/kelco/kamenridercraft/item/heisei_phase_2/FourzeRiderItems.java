@@ -712,34 +712,34 @@ public class FourzeRiderItems {
 
 	public static final DeferredItem<Item> FOURZE_HELMET = ITEMS.register("fourze_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
-					.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					.changeRepairItem(BLANK_ASTROSWITCH.get()));
 	public static final DeferredItem<Item> FOURZE_CHESTPLATE = ITEMS.register("fourze_troso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
-					.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					.changeRepairItem(BLANK_ASTROSWITCH.get()));
 	public static final DeferredItem<Item> FOURZE_LEGGINGS = ITEMS.register("fourze_legs",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
-					.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					.changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> FOURZE_DRIVER = ITEMS.register("fourze_driver",
 			() -> new FourzeDriverItem(ArmorMaterials.DIAMOND,"fourze",BLANK_CIRCLE_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(BLANK_CROSS_ASTROSWITCH,BLANK_TRIANGLE_ASTROSWITCH,BLANK_SQUARE_ASTROSWITCH,FOURZE_BASE_STATES).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					.addExtraBaseFormItems(BLANK_CROSS_ASTROSWITCH,BLANK_TRIANGLE_ASTROSWITCH,BLANK_SQUARE_ASTROSWITCH,FOURZE_BASE_STATES).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> METEOR_DRIVER = ITEMS.register("meteor_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"meteor",METEOR_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
-					new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> NADESHIKO_DRIVER = ITEMS.register("nadeshiko_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nadeshiko",NADESHIKO_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
-					new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> IKAROS_DRIVER = ITEMS.register("ikaros_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ikaros",IKAROS_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
-					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
 	public static final DeferredItem<Item> GINGA_OH_DRIVER = ITEMS.register("ginga_oh_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_gingaoh",SOLU_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
-					new Item.Properties()).hideBeltFormInfo().addExtraBaseFormItems(OOORiderItems.SAME_MEDAL, OOORiderItems.KUJIRA_MEDAL, OOORiderItems.OOKAMIUO_MEDAL).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					new Item.Properties()).hideBeltFormInfo().addExtraBaseFormItems(OOORiderItems.SAME_MEDAL, OOORiderItems.KUJIRA_MEDAL, OOORiderItems.OOKAMIUO_MEDAL).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
 	public static final DeferredItem<Item> ASTROSWITCH_CASE = ITEMS.register("astroswitch_case",
@@ -748,20 +748,20 @@ public class FourzeRiderItems {
 
 
 	public static final DeferredItem<Item> BILLY_THE_ROD = ITEMS.register("billy_the_rod",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> HEE_HACKGUN = ITEMS.register("hee_hackgun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> BARIZUN_SWORD = ITEMS.register("barizun_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> SHIELD_MODULE = ITEMS.register("shield_module",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
-					.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
+					.changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> METEOR_STORM_SHAFT = ITEMS.register("meteor_storm_shaft",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

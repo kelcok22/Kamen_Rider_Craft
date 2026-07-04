@@ -6,11 +6,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemContainerContents;
 
 public class BasicContainer extends SimpleContainer {
-
-    // The item stack this container is for. Passed into and set in the constructor.
     private final ItemStack stack;
+    // The item stack this container is for. Passed into and set in the constructor.
 
-    public BasicContainer(ItemStack stack,int slot) {
+    public BasicContainer(ItemStack stack, int slot) {
         super(slot);
         this.stack = stack;
         ItemContainerContents contents = stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY);

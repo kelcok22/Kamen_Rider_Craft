@@ -409,11 +409,11 @@ public class KivaRiderItems {
 			}.has_basic_model().model_has_different_name("moose_fangire_belt"));
 
 	public static final DeferredItem<Item> KIVAHELMET = ITEMS.register("kivahead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 	public static final DeferredItem<Item> KIVACHESTPLATE = ITEMS.register("kivatroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 	public static final DeferredItem<Item> KIVALEGGINGS = ITEMS.register("kivalegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> KIVAT_BELT = ITEMS.register("kivadriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -434,7 +434,7 @@ public class KivaRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> IXA_BELT = ITEMS.register("ixa_belt",
 			() -> new IxabeltItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -458,7 +458,7 @@ public class KivaRiderItems {
 						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> PROTO_IXA_BELT = ITEMS.register("proto_ixa_belt",
 			() -> new IxabeltItem(ArmorMaterials.DIAMOND,"proto_ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -482,15 +482,15 @@ public class KivaRiderItems {
 						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> PROTO_IXA_BELT_FIRST = ITEMS.register("proto_ixa_belt_first",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa_first", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
-					.hasInventoryGui().overrideBeltText("ixa_buckle").hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+					.hasInventoryGui().overrideBeltText("ixa_buckle").hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 
 	public static final DeferredItem<Item> SAGARC_BELT = ITEMS.register("sagarc_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saga", WAKE_UP_FUESTLE_SAGA, KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saga", WAKE_UP_FUESTLE_SAGA, KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> DARK_KIVAT_BELT = ITEMS.register("darkkivadriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_kiva", WAKE_UP_FUESTLE_DARK_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -514,7 +514,7 @@ public class KivaRiderItems {
 						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> NEW_KIVAT_BELT = ITEMS.register("newkivadriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"new_kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -538,10 +538,10 @@ public class KivaRiderItems {
 						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> REY_KIVAT_BELT = ITEMS.register("reydriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rey", WAKE_UP_FUESTLE_REY,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rey", WAKE_UP_FUESTLE_REY,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> ARC_KIVAT_BELT = ITEMS.register("arcdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"arc", WAKE_UP_FUESTLE_ARC,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
@@ -556,62 +556,62 @@ public class KivaRiderItems {
 						}
 					}
 				}
-			}.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			}.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> KIVALA_BELT = ITEMS.register("kivaladriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kivala", WAKE_UP_FUESTLE_KIVALA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kivala", WAKE_UP_FUESTLE_KIVALA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 	public static final DeferredItem<Item> MOOSE_FANGIRE_BELT = ITEMS.register("moose_fangire_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"moose_fangire", MOOSE_FANGIRE_CORE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"moose_fangire", MOOSE_FANGIRE_CORE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 
 
 	public static final DeferredItem<Item> GARULU_SABER = ITEMS.register("garulu_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> BASSHAA_MAGNUM = ITEMS.register("basshaamagnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> DOGGA_HAMMER = ITEMS.register("dogga_hammer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> GARULU_SABER_TATSULOT = ITEMS.register("garulu_saber_tatsulot",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> BASSHAA_MAGNUM_TATSULOT = ITEMS.register("basshaa_magnum_tatsulot",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> DOGGA_HAMMER_TATSULOT = ITEMS.register("dogga_hammer_tatsulot",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> ZANVAT_SWORD = ITEMS.register("zanbatsword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> ZANVAT_SWORD_PAST = ITEMS.register("zanbatsword_core",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item>IXA_KNUCKLE = ITEMS.register("ixa_knuckle",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> IXA_CALIBER = ITEMS.register("ixa_caliber",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> IXA_RISER = ITEMS.register("ixariser",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> JACORDER = ITEMS.register("jacorder",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> ARC_TRIDENT = ITEMS.register("arc_trident",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> KIVALA_SABER = ITEMS.register("kivala_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> FANGIRE_SLAYER = ITEMS.register("fangire_slayer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> FANGIRE_BUSTER = ITEMS.register("fangire_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> BLOODY_ROSE = ITEMS.register("bloody_rose",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));

@@ -6,16 +6,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class SlotByItem extends Slot {
-
-
     private static Item ITEM;
 
     public SlotByItem(Container container, int slot, int x, int y, Item item) {
         super(container, slot, x, y);
-        ITEM=item;
+        ITEM = item;
     }
 
-    public boolean mayPlace(ItemStack stack) {
-        return stack.getItem()==ITEM;
- }
+    public boolean mayPlace(ItemStack itemStack) {
+        return itemStack.getItem() == ITEM;
+    }
 }
