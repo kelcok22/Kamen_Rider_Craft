@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "builtin/generated",
 	"textures": {
 		"layer0": "kamenridercraft:item/magma_knuckle"

@@ -632,7 +632,7 @@ public class GavvRiderItems {
 	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_amazingummy","gavv","henshin_belt_gavv_belt_amazingummy",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 5,true,false),
-					new MobEffectInstance(EffectCore.FIRE_SLASH, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.RADAR, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1554,7 +1554,7 @@ public class GavvRiderItems {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> XMAX_GAVV = ITEMS.register("xmax_gavv",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+			() -> new BaseAxeItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SHIELD_SNACK_SHIELD = ITEMS.register("shield_snack_shield",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
@@ -1575,7 +1575,7 @@ public class GavvRiderItems {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> XMAX_VALEN = ITEMS.register("xmax_valen",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+			() -> new BaseAxeItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRAMBREAKER = ITEMS.register("vrambreaker",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)

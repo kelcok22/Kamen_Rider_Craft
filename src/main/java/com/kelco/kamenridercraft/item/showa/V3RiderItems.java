@@ -111,7 +111,7 @@ public class V3RiderItems {
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DRILL_ARM = ITEMS.register("drill_arm",
-            () -> new DrillArmItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+            () -> new DrillArmItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> MACHINE_GUN_ARM = ITEMS.register("machine_gun_arm",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));

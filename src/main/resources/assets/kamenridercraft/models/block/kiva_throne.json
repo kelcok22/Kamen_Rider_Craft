@@ -1,6 +1,5 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "kamenridercraft:block/kiva_throne",
 		"particle": "kamenridercraft:block/kiva_throne"

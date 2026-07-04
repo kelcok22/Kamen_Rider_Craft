@@ -39,7 +39,14 @@ public class BasePickaxeItem extends PickaxeItem {
 		return p_40393_.getItem()== RepairItem;
 	}
 
-	public BasePickaxeItem AddToTabList(List<Item> TabList) {
+	public BasePickaxeItem addToList(List<Item> TabList, int num) {
+		for (int i = 0; i < num; i++) {
+			TabList.add(this);
+		}
+		return this;
+	}
+
+	public BasePickaxeItem addToList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}

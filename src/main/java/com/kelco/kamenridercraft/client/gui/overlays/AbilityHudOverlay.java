@@ -79,7 +79,7 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
 
                 guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.25)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
                 guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.25)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
-            } else {
+            } else if (ABILITY_ONE != null || ABILITY_TWO != null) {
                 guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.3)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
                 if (ABILITY_ONE != null) {
                     guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.3)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);

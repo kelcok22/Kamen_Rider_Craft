@@ -1,6 +1,5 @@
 {
 	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
 	"render_type": "minecraft:translucent",
 	"textures": {
 		"0": "kamenridercraft:block/vistamp_bar_1",

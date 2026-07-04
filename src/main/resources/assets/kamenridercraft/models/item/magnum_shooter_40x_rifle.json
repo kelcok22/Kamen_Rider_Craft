@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "builtin/generated",
 	"textures": {
 		"1": "kamenridercraft:item/magnum_raise_buckle",

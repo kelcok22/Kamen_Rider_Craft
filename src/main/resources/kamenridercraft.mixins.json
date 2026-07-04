@@ -3,6 +3,9 @@
   "package": "com.kelco.kamenridercraft.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "items.ItemMixin",
+    "items.PotionItemMixin",
+    "items.MilkBucketItemMixin",
     "block.GochizoCakeBlock",
     "compat.JMCGochizoCakeBlock",
     "livingentity.LivingEntityMixin",

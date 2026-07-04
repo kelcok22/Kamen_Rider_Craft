@@ -1,14 +1,24 @@
 package com.kelco.kamenridercraft.item.base_items;
 
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.level.Level;
 
 import java.util.List;
 
@@ -47,6 +57,23 @@ public class BaseItem extends Item {
     public BaseItem model_has_different_name(String Name) {
         Model_Name = Name;
         return this;
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+        ItemStack itemstack = player.getItemInHand(usedHand);
+        FoodProperties foodproperties = itemstack.getFoodProperties(player);
+
+        ResourceLocation potions = ResourceLocation.fromNamespaceAndPath("c", "potions");
+        ResourceLocation drinks = ResourceLocation.fromNamespaceAndPath("c", "drinks");
+
+        boolean isPotion = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, potions)).stream().anyMatch(e -> e == itemstack.getItem());
+        boolean isDrink = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, drinks)).stream().anyMatch(e -> e == itemstack.getItem());
+
+        if ((foodproperties != null || isDrink || isPotion) && player.hasEffect(EffectCore.GHOST)) {
+            return InteractionResultHolder.fail(itemstack);
+        }
+        return super.use(level, player, usedHand);
     }
 
     public boolean is(TagKey<Item> tag) {

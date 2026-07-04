@@ -1,6 +1,5 @@
 {
 	"format_version": "1.9.0",
-	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "kamenridercraft:item/power_arm",
 		"particle": "kamenridercraft:item/power_arm"

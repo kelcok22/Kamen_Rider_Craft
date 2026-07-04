@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench",
+	"format_version": "1.21.11",
 	"textures": {
 		"0": "kamenridercraft:item/akariderhead",
 		"1": "kamenridercraft:block/red_ichigo_chair_seat",
@@ -308,6 +308,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [75, 45, 0],
@@ -324,7 +325,7 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 225, 0],
+			"rotation": [0, -135, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
@@ -332,8 +333,9 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, 225, 0],
-			"scale": [0.625, 0.625, 0.625]
+			"rotation": [30, -135, 0],
+			"translation": [0, -2, 0],
+			"scale": [0.43, 0.43, 0.43]
 		},
 		"fixed": {
 			"translation": [0, -2, -2.5],
