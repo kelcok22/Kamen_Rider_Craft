@@ -11,19 +11,15 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class NextKaixaDriverItem extends RiderDriverItem {
+    public NextKaixaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+    }
 
-	public NextKaixaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-	}
+    @Override
+    public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET && itemStack.getItem() == FaizRiderItems.NEXT_KAIXA_DRIVER.get()
+                && rider.isHolding(FaizRiderItems.KAIXA_PHONE_XX.get())) return "belts/next_kaixa_driver_belt_empty";
 
-	@Override
-	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-	{
-		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.NEXT_KAIXA_DRIVER.get()
-			&&rider.isHolding(FaizRiderItems.KAIXA_PHONE_XX.get())) return "belts/next_kaixa_driver_belt_empty";
-
-		return super.getText(itemstack, equipmentSlot, rider, riderName);
-	}
-
+        return super.getText(itemStack, equipmentSlot, rider, riderName);
+    }
 }

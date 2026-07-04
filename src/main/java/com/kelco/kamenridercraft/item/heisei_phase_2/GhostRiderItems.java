@@ -36,7 +36,7 @@ public class GhostRiderItems {
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
 					super.transformationEffect(itemstack, player,tick);
                     if (tick==1d) {
@@ -316,7 +316,7 @@ public class GhostRiderItems {
 	public static final DeferredItem<Item> PROTO_ORE_DAMASHII = ITEMS.register("proto_ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"proto_ore_damashii","zero_ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==1d) {
@@ -456,7 +456,7 @@ public class GhostRiderItems {
 	public static final DeferredItem<Item> EDISON_GHOST_EYECON = ITEMS.register("edison_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"edison_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==1d) {
@@ -718,7 +718,7 @@ public class GhostRiderItems {
 	public static final DeferredItem<Item> SPECIAL_ORE_GHOST_EYECON = ITEMS.register("special_ore_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"special_ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==1d) {
@@ -1080,7 +1080,7 @@ public class GhostRiderItems {
 	public static final DeferredItem<Item> GHOST_GHOST_EYECON = ITEMS.register("ghost_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);

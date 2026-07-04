@@ -17,54 +17,43 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class MuezDriverItem extends RiderDriverItem {
-
-
-
-    public MuezDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-    {
+    public MuezDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties);
-        unlimitedTextures =2;
+        unlimitedTextures = 2;
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName , int num) {
+    public String getUnlimitedTextures(ItemStack itemStack, LivingEntity livingEntity, String riderName, int num) {
         if ((livingEntity instanceof Player || livingEntity instanceof Mob) && livingEntity.getMainArm() == HumanoidArm.LEFT) {
-            if (num==1&& livingEntity.getOffhandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_l";
-            else if (num==2&& livingEntity.getMainHandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_r";
+            if (num == 1 && livingEntity.getOffhandItem().getItem() != FaizRiderItems.MUEZ_EDGE.get())
+                return "muez_edge_l";
+            else if (num == 2 && livingEntity.getMainHandItem().getItem() != FaizRiderItems.MUEZ_EDGE.get())
+                return "muez_edge_r";
         } else {
-            if (num==1&& livingEntity.getMainHandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_l";
-            else if (num==2&& livingEntity.getOffhandItem().getItem()!= FaizRiderItems.MUEZ_EDGE.get()) return "muez_edge_r";
+            if (num == 1 && livingEntity.getMainHandItem().getItem() != FaizRiderItems.MUEZ_EDGE.get())
+                return "muez_edge_l";
+            else if (num == 2 && livingEntity.getOffhandItem().getItem() != FaizRiderItems.MUEZ_EDGE.get())
+                return "muez_edge_r";
         }
         return "blank";
     }
 
     @Override
-    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-    {
-        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.MUEZ_DRIVER.get()
-                &&(rider.isHolding(FaizRiderItems.MUEZ_PHONE_BURST_MODE.get())||(rider.isHolding(FaizRiderItems.MUEZ_PHONE_KNUCKLE_MODE.get())))) return "belts/muez_driver_belt_empty";
-
-        return super.getText(itemstack, equipmentSlot, rider, riderName);
-
+    public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET && itemStack.getItem() == FaizRiderItems.MUEZ_DRIVER.get()
+                && (rider.isHolding(FaizRiderItems.MUEZ_PHONE_BURST_MODE.get()) || (rider.isHolding(FaizRiderItems.MUEZ_PHONE_KNUCKLE_MODE.get()))))
+            return "belts/muez_driver_belt_empty";
+        return super.getText(itemStack, equipmentSlot, rider, riderName);
     }
 
 
-    public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+    public ResourceLocation getModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/muez.geo.json");
     }
 
 
     @Override
-    public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
-
-        switch (currentSlot) {
-            case HEAD,LEGS,CHEST ->{
-                return true;
-
-            }
-
-            default -> {}
-        }
-        return false;
+    public boolean getPartsForSlot(ItemStack itemStack, EquipmentSlot currentSlot, String part) {
+        return currentSlot != EquipmentSlot.FEET;
     }
 }

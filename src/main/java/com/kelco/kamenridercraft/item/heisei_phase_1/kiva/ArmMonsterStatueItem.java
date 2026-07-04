@@ -12,47 +12,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
 
 public class ArmMonsterStatueItem extends BaseItem {
+    private Supplier<? extends EntityType<? extends BaseAllyEntity>> armStatueMonster;
 
+    public ArmMonsterStatueItem(Properties properties, Supplier<? extends EntityType<? extends BaseAllyEntity>> armStatueMonster) {
+        super(properties);
+        this.armStatueMonster = armStatueMonster;
+    }
 
-	private Supplier<? extends EntityType<? extends BaseAllyEntity>> BOSS;
+    public @NotNull InteractionResult useOn(UseOnContext context) {
+        Player player = context.getPlayer();
+        assert player != null;
+        ItemStack itemstack = player.getItemInHand(context.getHand());
+        Level level = player.level();
 
-	public ArmMonsterStatueItem(Properties properties, Supplier<? extends EntityType<? extends BaseAllyEntity>> boss)
-	{super(properties);
-		BOSS =boss;
-	}
-
-	/**
-	 * Called when this item is used when targeting a Block
-	 */
-	public InteractionResult useOn(UseOnContext context) {
-
-		Player player = context.getPlayer();
-		ItemStack itemstack = player.getItemInHand(context.getHand());
-		Level level = player.level();
-
-		if (!level.isClientSide()) {
-			if (level instanceof ServerLevel) {
-				BlockPos pos = context.getClickedPos();
-				BaseAllyEntity boss = BOSS.get().create(level);
-				if (boss != null) {
-                    boss.setTame(true, false);
-                    boss.setOwnerUUID(player.getUUID());
-					boss.moveTo(pos.getX(), pos.getY()+1, pos.getZ(), 0, 0.0F);
-					level.addFreshEntity(boss);
-					itemstack.consume(1,player);
-					player.awardStat(Stats.ITEM_USED.get(this));
-				}
-			}
-		}
-		return InteractionResult.PASS;
-	}
-
-
-
-
+        if (!level.isClientSide()) {
+            if (level instanceof ServerLevel) {
+                BlockPos pos = context.getClickedPos();
+                BaseAllyEntity statueMonster = armStatueMonster.get().create(level);
+                if (statueMonster != null) {
+                    statueMonster.setTame(true, false);
+                    statueMonster.setOwnerUUID(player.getUUID());
+                    statueMonster.moveTo(pos.getX(), pos.getY() + 1, pos.getZ(), 0, 0.0F);
+                    level.addFreshEntity(statueMonster);
+                    itemstack.consume(1, player);
+                    player.awardStat(Stats.ITEM_USED.get(this));
+                }
+            }
+        }
+        return InteractionResult.PASS;
+    }
 }

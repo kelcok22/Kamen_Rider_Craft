@@ -18,7 +18,7 @@ public class WristZecterRBeltItem extends RiderDriverItem {
         super(material, rider, baseFormItem, head, torso, legs, properties);
     }
 
-    public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+    public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belt_with_brace_r.geo.json");
     }
-    }
+}

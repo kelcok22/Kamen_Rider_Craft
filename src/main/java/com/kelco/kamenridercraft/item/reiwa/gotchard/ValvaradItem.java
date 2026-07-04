@@ -38,7 +38,7 @@ public class ValvaradItem extends RiderDriverItem {
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties.stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 
-		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
+		extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
 		hasInventory =true;
 		numBaseFormItems =3;
 	}

@@ -11,17 +11,14 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class PsygaDriverItem extends RiderDriverItem {
+    public PsygaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+    }
 
-	public PsygaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties) {
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-	}
-
-	@Override
-	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-	{
-		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.PSYGA_DRIVER.get()
-			&&rider.isHolding(FaizRiderItems.PSYGA_PHONE.get())) return "belts/psyga_driver_belt_empty";
-		return super.getText(itemstack, equipmentSlot, rider, riderName);
-	}
-
+    @Override
+    public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET && itemStack.getItem() == FaizRiderItems.PSYGA_DRIVER.get()
+                && rider.isHolding(FaizRiderItems.PSYGA_PHONE.get())) return "belts/psyga_driver_belt_empty";
+        return super.getText(itemStack, equipmentSlot, rider, riderName);
+    }
 }

@@ -24,46 +24,46 @@ import net.minecraft.world.level.Level;
 import java.util.List;
 
 public class AdventDeckItem extends BaseItem {
-	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
+    private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-	public AdventDeckItem(Properties prop) {
-		super(prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-	}
+    public AdventDeckItem(Properties prop) {
+        super(prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
+    }
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		ItemStack itemstack = entity.getItemInHand(hand);
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
 
-		if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
-			serverPlayer.openMenu(new MenuProvider() {
-				@Override
-				public Component getDisplayName() {
-					return Component.translatable("advent_deck_blank.text");
-				}
+        if (player instanceof ServerPlayer serverPlayer) {
+            serverPlayer.openMenu(new MenuProvider() {
+                @Override
+                public Component getDisplayName() {
+                    return Component.translatable("advent_deck_blank.text");
+                }
 
-				@Override
-				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-					packetBuffer.writeBlockPos(entity.blockPosition());
-					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new AdventDeckGuiMenu(id, inventory, packetBuffer,itemstack);
-				}
-			}, buf -> {
-				buf.writeBlockPos(entity.blockPosition());
-				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-			});
-		}
-		return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
-	}
+                @Override
+                public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+                    FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+                    packetBuffer.writeBlockPos(player.blockPosition());
+                    packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+                    return new AdventDeckGuiMenu(id, inventory, packetBuffer, itemstack);
+                }
+            }, buf -> {
+                buf.writeBlockPos(player.blockPosition());
+                buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+            });
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
+    }
 
-	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-		if (stack.has(DataComponents.CONTAINER_LOOT)) {
-			tooltipComponents.add(UNKNOWN_CONTENTS);
-		}
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+        if (stack.has(DataComponents.CONTAINER_LOOT)) {
+            tooltipComponents.add(UNKNOWN_CONTENTS);
+        }
 
-		int i = 0;
-		int j = 0;
+        int i = 0;
+        int j = 0;
 
         for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
             ++j;
@@ -73,9 +73,8 @@ public class AdventDeckItem extends BaseItem {
             }
         }
 
-		if (j - i > 0) {
-			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
-		}
-
-	}
+        if (j - i > 0) {
+            tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
+        }
+    }
 }

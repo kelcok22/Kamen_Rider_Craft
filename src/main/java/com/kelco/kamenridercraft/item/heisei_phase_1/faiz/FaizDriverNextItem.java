@@ -11,20 +11,16 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class FaizDriverNextItem extends RiderDriverItem {
+    public FaizDriverNextItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+    }
 
-	public FaizDriverNextItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-	}
+    @Override
+    public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET && itemStack.getItem() == FaizRiderItems.FAIZ_DRIVER_NEXT.get()
+                && (rider.isHolding(FaizRiderItems.FAIZ_PHONE_20_PLUS_BURST_MODE.get()) || (rider.isHolding(FaizRiderItems.FAIZ_PHONE_20_PLUS_KNUCKLE_MODE.get()))))
+            return "belts/faiz_driver_next_belt_empty";
 
-	@Override
-	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-	{
-		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== FaizRiderItems.FAIZ_DRIVER_NEXT.get()
-			&&(rider.isHolding(FaizRiderItems.FAIZ_PHONE_20_PLUS_BURST_MODE.get())||(rider.isHolding(FaizRiderItems.FAIZ_PHONE_20_PLUS_KNUCKLE_MODE.get())))) return "belts/faiz_driver_next_belt_empty";
-
-		return super.getText(itemstack, equipmentSlot, rider, riderName);
-
-	}
-
+        return super.getText(itemStack, equipmentSlot, rider, riderName);
+    }
 }

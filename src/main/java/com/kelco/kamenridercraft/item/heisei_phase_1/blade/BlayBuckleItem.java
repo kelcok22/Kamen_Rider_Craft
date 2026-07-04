@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
@@ -20,9 +21,7 @@ public class BlayBuckleItem extends RiderDriverItem {
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (getFormItem(itemstack, 1) == BladeRiderItems.FUSION_EAGLE.get() | getFormItem(itemstack, 1) == BladeRiderItems.FUSION_PEACOCK.get() |
-                getFormItem(itemstack, 1) == BladeRiderItems.EVOLUTION_CAUCASUS.get() | getFormItem(itemstack, 1) == BladeRiderItems.EVOLUTION_GIRAFFA.get() |
-                getFormItem(itemstack, 1) == BladeRiderItems.SILVER_EVOLUTION_CAUCASUS.get() | getFormItem(itemstack, 1) == BladeRiderItems.EVOLUTION_TARANTULA.get()) {
+        if (getFormItem(itemstack, 1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/rouze_cards/change_buckle")))) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belt_with_brace.geo.json");
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/riderbelt.geo.json");

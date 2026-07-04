@@ -19,27 +19,25 @@ import java.util.List;
 
 
 public class V3HopperItem extends BaseItem {
+    public V3HopperItem(Properties properties) {
+        super(properties);
+    }
 
-	public V3HopperItem(Properties properties)
-	{
-		super(properties);
-	}
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-		
-		if (!p_41128_.isClientSide() && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() == V3RiderItems.DOUBLE_TYPHOON.get()
-                && ((RiderDriverItem) p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(p_41129_)) {
-            List<LivingEntity> nearbyAllies = p_41128_.getEntitiesOfClass(LivingEntity.class, p_41129_.getBoundingBox().inflate(15), entity ->
-                    (entity instanceof Player && entity != p_41129_)
-                            || (entity instanceof Mob mob));
+        if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).getItem() == V3RiderItems.DOUBLE_TYPHOON.get()
+                && ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
+            List<LivingEntity> nearbyAllies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(15), entity ->
+                    (entity instanceof Player && entity != player)
+                            || (entity instanceof Mob));
             for (LivingEntity ally : nearbyAllies) {
-                ally.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0,false,true));
+                ally.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0, false, true));
             }
-            p_41129_.getCooldowns().addCooldown(this, 400);
-			p_41129_.awardStat(Stats.ITEM_USED.get(this));
-		}
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
-	}
+            player.getCooldowns().addCooldown(this, 400);
+            player.awardStat(Stats.ITEM_USED.get(this));
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }

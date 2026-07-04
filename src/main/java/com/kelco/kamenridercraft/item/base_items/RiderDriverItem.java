@@ -50,7 +50,7 @@ import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.U
 public class RiderDriverItem extends RiderArmorItem {
     public RiderFormChangeItem baseFormItem;
     public RiderFormChangeItem armorFormItem;
-    protected ArrayList<RiderFormChangeItem> Extra_Base_Form_Item;
+    protected ArrayList<RiderFormChangeItem> extraBaseFormItem;
 
     public String riderName;
     public Item helmet;
@@ -261,7 +261,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item) {
-        Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get());
+        extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) item.get());
         numBaseFormItems = 2;
         return this;
     }
@@ -292,19 +292,19 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item, DeferredItem<Item> item2) {
-        Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get());
+        extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get());
         numBaseFormItems = 3;
         return this;
     }
 
     public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item, DeferredItem<Item> item2, DeferredItem<Item> item3) {
-        Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get(), (RiderFormChangeItem) item3.get());
+        extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get(), (RiderFormChangeItem) item3.get());
         numBaseFormItems = 4;
         return this;
     }
 
     public RiderDriverItem addExtraBaseFormItems(DeferredItem<Item> item, DeferredItem<Item> item2, DeferredItem<Item> item3, DeferredItem<Item> item4) {
-        Extra_Base_Form_Item = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get(), (RiderFormChangeItem) item3.get(), (RiderFormChangeItem) item4.get());
+        extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) item.get(), (RiderFormChangeItem) item2.get(), (RiderFormChangeItem) item3.get(), (RiderFormChangeItem) item4.get());
         numBaseFormItems = 5;
         return this;
     }
@@ -372,7 +372,7 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemStack.getItem() instanceof RiderDriverItem belt) {
             if (belt.numBaseFormItems != 1) {
                 for (int n = 0; n < belt.numBaseFormItems - 1; n++) {
-                    setFormItem(itemStack, belt.Extra_Base_Form_Item.get(n), 2 + n);
+                    setFormItem(itemStack, belt.extraBaseFormItem.get(n), 2 + n);
                 }
             }
             setFormItem(itemStack, belt.baseFormItem, 1);
@@ -507,7 +507,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static RiderFormChangeItem getFormItem(ItemStack itemStack, int slot, double num) {
         RiderDriverItem belt = (RiderDriverItem) itemStack.getItem();
-        RiderFormChangeItem baseFormItem = (slot >= 2 ? belt.Extra_Base_Form_Item.get(slot - 2) : belt.baseFormItem);
+        RiderFormChangeItem baseFormItem = (slot >= 2 ? belt.extraBaseFormItem.get(slot - 2) : belt.baseFormItem);
 
         if (itemStack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();

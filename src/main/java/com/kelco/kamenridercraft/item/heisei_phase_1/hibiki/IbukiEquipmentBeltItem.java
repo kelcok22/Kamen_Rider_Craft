@@ -10,17 +10,18 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class IbukiEquipmentBeltItem extends RiderDriverItem {
+    public IbukiEquipmentBeltItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+        unlimitedBeltTextures = 1;
+    }
 
-	public IbukiEquipmentBeltItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-		unlimitedBeltTextures = 1;
-	}
-	@Override
-	public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-		if (this== HibikiRiderItems.IBUKIDRIVER.get() && !rider.isHolding(HibikiRiderItems.HENSHIN_ONIBUE_IBUKI.get())) return "henshin_onibue_ibuki";
-		else if (this== HibikiRiderItems.AMAKIDRIVER.get() && !rider.isHolding(HibikiRiderItems.HENSHIN_ONIBUE_AMAKI.get())) return "henshin_onibue_amaki";
-
-		return "blank";
-	}
+    @Override
+    public String getUnlimitedBeltTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
+        if (this == HibikiRiderItems.IBUKIDRIVER.get() && !rider.isHolding(HibikiRiderItems.HENSHIN_ONIBUE_IBUKI.get())) {
+            return "henshin_onibue_ibuki";
+        } else if (this == HibikiRiderItems.AMAKIDRIVER.get() && !rider.isHolding(HibikiRiderItems.HENSHIN_ONIBUE_AMAKI.get())) {
+            return "henshin_onibue_amaki";
+        }
+        return "blank";
+    }
 }

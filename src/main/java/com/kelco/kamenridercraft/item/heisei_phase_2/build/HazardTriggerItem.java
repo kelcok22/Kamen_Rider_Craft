@@ -15,26 +15,23 @@ import net.minecraft.world.level.Level;
 public class HazardTriggerItem extends RiderFormChangeItem {
 
 
-    public HazardTriggerItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, formName,  ridername, beltTex, effects);
+    public HazardTriggerItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, ridername, beltTex, effects);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-
         ItemStack itemstack = player.getItemInHand(usedHand);
-
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if(!player.hasEffect(EffectCore.FORM_LOCK)) {
-            if (BELT.getItem() instanceof BuildDriverItem belt) {
-              if (canChange(player,belt,BELT)) {
-                 RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.FULL_BOTTLE.get(), 3);
-                if ( BuildDriverItem.CanHazard(BELT)){ super.use(level, player, usedHand);}
+        if (!level.isClientSide()) {
+            if (!player.hasEffect(EffectCore.FORM_LOCK) && BELT.getItem() instanceof BuildDriverItem belt && canChange(player, belt, BELT)) {
+                RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.FULL_BOTTLE.get(), 3);
+                if (BuildDriverItem.CanHazard(BELT)) {
+                    super.use(level, player, usedHand);
                 }
             }
         }
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
-
     }
 }

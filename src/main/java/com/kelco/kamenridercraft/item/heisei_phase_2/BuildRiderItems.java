@@ -97,7 +97,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.CanHazard().BestMatch(RABBIT_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.canUseHazard().bestMatch(RABBIT_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> GORILLA_FULL_BOTTLE = ITEMS.register("gorilla_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_gorilla","build","build_driver_belt",
@@ -120,7 +120,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(GORILLA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(GORILLA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TAKA_FULL_BOTTLE_CROSS_Z = ITEMS.register("taka_full_bottle_cross_z",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_taka","cross_z_charge","sclash_driver_belt_taka",
@@ -161,7 +161,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.CanHazard().BestMatch(TAKA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.canUseHazard().bestMatch(TAKA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> NINJA_FULL_BOTTLE = ITEMS.register("ninja_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_ninja","build","build_driver_belt",
@@ -184,7 +184,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(NINJA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(NINJA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PANDA_FULL_BOTTLE = ITEMS.register("panda_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_panda","build","build_driver_belt",
@@ -207,7 +207,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(PANDA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(PANDA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> HARINEZUMI_FULL_BOTTLE = ITEMS.register("harinezumi_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_harinezumi","build","build_driver_belt",
@@ -230,7 +230,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(HARINEZUMI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(HARINEZUMI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> LION_FULL_BOTTLE = ITEMS.register("lion_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_lion","build","build_driver_belt",
@@ -254,7 +254,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(LION_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(LION_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE_BUILD = ITEMS.register("dragon_full_bottle_build",
 			() -> new FullBottleItem(new Item.Properties(),"_dragon","build","build_driver_belt",
@@ -291,7 +291,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.CanHazard().BestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.canUseHazard().bestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KAIZOKU_FULL_BOTTLE = ITEMS.register("kaizoku_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_kaizoku","build","build_driver_belt",
@@ -315,7 +315,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.CanHazard().BestMatch(KAIZOKU_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.canUseHazard().bestMatch(KAIZOKU_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> OCTOPUS_FULL_BOTTLE = ITEMS.register("octopus_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_octopus","build","build_driver_belt",
@@ -338,7 +338,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(OCTOPUS_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(OCTOPUS_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PHOENIX_FULL_BOTTLE = ITEMS.register("phoenix_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_phoenix","build","build_driver_belt",
@@ -362,7 +362,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(PHOENIX_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(PHOENIX_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> WOLF_FULL_BOTTLE = ITEMS.register("wolf_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_wolf","build","build_driver_belt",
@@ -385,7 +385,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.CanHazard().BestMatch(WOLF_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.canUseHazard().bestMatch(WOLF_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> UNICORN_FULL_BOTTLE = ITEMS.register("unicorn_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_unicorn","build","build_driver_belt",
@@ -410,7 +410,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(UNICORN_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(UNICORN_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> ROSE_FULL_BOTTLE = ITEMS.register("rose_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_rose","build","build_driver_belt",
@@ -434,7 +434,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(ROSE_FULL_BOTTLE.get()).changeModel("default_rider_plusbelt_and_wings.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(ROSE_FULL_BOTTLE.get()).changeModel("default_rider_plusbelt_and_wings.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TURTLE_FULL_BOTTLE = ITEMS.register("turtle_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_turtle","build","build_driver_belt",
@@ -458,7 +458,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(TURTLE_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(TURTLE_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KUMA_FULL_BOTTLE = ITEMS.register("kuma_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_kuma","build","build_driver_belt",
@@ -481,7 +481,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(KUMA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(KUMA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KABUTOMUSHI_FULL_BOTTLE = ITEMS.register("kabutomushi_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_kabutomushi","build","build_driver_belt",
@@ -504,7 +504,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(KABUTOMUSHI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(KABUTOMUSHI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SPIDER_FULL_BOTTLE = ITEMS.register("spider_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_spider","build","build_driver_belt",
@@ -527,7 +527,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(SPIDER_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SPIDER_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> DOG_FULL_BOTTLE = ITEMS.register("dog_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_dog","build","build_driver_belt",
@@ -551,7 +551,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(DOG_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(DOG_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SANTA_CLAUS_FULL_BOTTLE = ITEMS.register("santa_claus_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_santa_claus","build","build_driver_belt",
@@ -574,7 +574,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(SANTA_CLAUS_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SANTA_CLAUS_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> TORA_FULL_BOTTLE = ITEMS.register("tora_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_tora","build","build_driver_belt",
@@ -597,7 +597,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(TORA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(TORA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KUJIRA_FULL_BOTTLE = ITEMS.register("kujira_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_kujira","build","build_driver_belt",
@@ -620,7 +620,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(KUJIRA_FULL_BOTTLE.get()).changeModel("default_rider_plusbelt_and_wings.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(KUJIRA_FULL_BOTTLE.get()).changeModel("default_rider_plusbelt_and_wings.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SHIKA_FULL_BOTTLE = ITEMS.register("shika_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_shika","build","build_driver_belt",
@@ -643,7 +643,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(SHIKA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SHIKA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KIRIN_FULL_BOTTLE = ITEMS.register("kirin_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_kirin","build","build_driver_belt",
@@ -666,7 +666,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(KIRIN_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(KIRIN_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PENGUIN_FULL_BOTTLE = ITEMS.register("penguin_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_penguin","build","build_driver_belt",
@@ -689,7 +689,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(PENGUIN_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(PENGUIN_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SAME_FULL_BOTTLE = ITEMS.register("same_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_same","build","build_driver_belt",
@@ -712,7 +712,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(SAME_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SAME_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> HACHI_FULL_BOTTLE = ITEMS.register("hachi_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_hachi","build","build_driver_belt",
@@ -736,7 +736,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(HACHI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(HACHI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SAI_FULL_BOTTLE = ITEMS.register("sai_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_sai","build","build_driver_belt",
@@ -759,7 +759,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(SAI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SAI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> BAT_FULL_BOTTLE = ITEMS.register("bat_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_bat","build","build_driver_belt",
@@ -782,7 +782,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(BAT_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(BAT_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> OBAKE_FULL_BOTTLE = ITEMS.register("obake_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_obake","build","build_driver_belt",
@@ -805,7 +805,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(OBAKE_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(OBAKE_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> SCORPION_FULL_BOTTLE = ITEMS.register("scorpion_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_scorpion","build","build_driver_belt",
@@ -829,7 +829,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(SCORPION_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SCORPION_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PANDORA_BOTTLE = ITEMS.register("pandora_bottle",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(PandoraBox.PANDORA_BOTTLE).has_basic_model());
@@ -951,7 +951,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.BestMatch(GOLD_RABBIT_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.bestMatch(GOLD_RABBIT_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROSS_Z_BUILD_CAN = ITEMS.register("cross_z_build_can",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_cross_z","build","build_driver_belt",
@@ -990,7 +990,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("den_o").BestMatch(DENSHA_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("den_o").bestMatch(DENSHA_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_CARD_FULL_BOTTLE = ITEMS.register("rider_card_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_rider_card","build","build_driver_belt",
@@ -1002,7 +1002,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("decade").BestMatch(CAMERA_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("decade").bestMatch(CAMERA_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TANTEI_FULL_BOTTLE = ITEMS.register("tantei_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_tantei","build","build_driver_belt",
@@ -1026,7 +1026,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("w").BestMatch(TANTEI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("w").bestMatch(TANTEI_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_medal","build","build_driver_belt",
@@ -1039,7 +1039,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("ooo").BestMatch(TAKA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("ooo").bestMatch(TAKA_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> YUUJOU_FULL_BOTTLE = ITEMS.register("yuujou_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_yuujou","build","build_driver_belt",
@@ -1051,7 +1051,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("fourze").BestMatch(ROCKET_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("fourze").bestMatch(ROCKET_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAHOUTSUKAI_FULL_BOTTLE = ITEMS.register("mahoutsukai_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_mahoutsukai","build","build_driver_belt",
@@ -1063,7 +1063,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("wizard").BestMatch(DIAMOND_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("wizard").bestMatch(DIAMOND_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORANGE_FULL_BOTTLE = ITEMS.register("orange_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_orange","build","build_driver_belt",
@@ -1075,7 +1075,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("gaim").BestMatch(LOCK_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("gaim").bestMatch(LOCK_FULL_BOTTLE.get()).changeSlot(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PARKA_FULL_BOTTLE = ITEMS.register("parka_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_parka","build","build_driver_belt",
@@ -1086,7 +1086,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("ghost").BestMatch(OBAKE_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("ghost").bestMatch(OBAKE_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOCTOR_FULL_BOTTLE = ITEMS.register("doctor_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_doctor","build","build_driver_belt",
@@ -1109,7 +1109,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsLegend("ex_aid").BestMatch(DOCTOR_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isLegend("ex_aid").bestMatch(DOCTOR_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_SCLASH_JELLY = ITEMS.register("dragon_sclash_jelly",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","cross_z_charge","sclash_driver_belt",

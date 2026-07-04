@@ -27,8 +27,12 @@ public class GhostEffect extends MobEffect {
             livingEntity.fallDistance = 0.0f;
             if (livingEntity instanceof Player player) {
                 player.getFoodData().setFoodLevel(20);
+                player.getFoodData().setSaturation(0);
                 if (player.isShiftKeyDown()) {
                     player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 5, amplifier, false, false));
+                }
+                if (player.isSleeping()) {
+                    player.stopSleeping();
                 }
             }
         }

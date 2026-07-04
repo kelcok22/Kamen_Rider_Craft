@@ -75,8 +75,8 @@ public class BaseCityItem extends BaseItem {
     }
 
 
-    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand p_41130_) {
-        ItemStack itemStack = player.getItemInHand(p_41130_);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemStack = player.getItemInHand(interactionHand);
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 
         if (player instanceof ServerPlayer serverPlayer) {

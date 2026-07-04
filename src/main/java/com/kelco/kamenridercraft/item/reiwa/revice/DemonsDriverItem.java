@@ -33,7 +33,7 @@ public class DemonsDriverItem extends RiderDriverItem {
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 
-		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
+		extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
 		numBaseFormItems =5;
 	}
 	@Override
