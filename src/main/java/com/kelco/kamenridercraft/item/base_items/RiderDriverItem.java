@@ -358,7 +358,7 @@ public class RiderDriverItem extends RiderArmorItem {
             return true;
         }
         if (numBaseFormItems != 1) {
-            for (int n = 2; n <= numBaseFormItems; n++) {
+            for (int n = 2; n < numBaseFormItems; n++) {
                 if (getFormItem(stack, n, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).checkGold()) {
                     isGold = true;
                 }
@@ -417,7 +417,7 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         if (itemStack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
-                for (int n = 1; n <= driver.numBaseFormItems; n++) {
+                for (int n = 1; n < driver.numBaseFormItems; n++) {
                     form.putString("slot_tex_old" + n, form.getString("slot_tex" + n));
                 }
             };
@@ -528,7 +528,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public boolean hasCape(ItemStack itemStack) {
-        for (int n = 0; n <= numBaseFormItems; n++) {
+        for (int n = 0; n < numBaseFormItems; n++) {
             if (getFormItem(itemStack, n + 1).getHasCape()) {
                 return true;
             }
