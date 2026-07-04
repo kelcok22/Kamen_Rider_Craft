@@ -73,7 +73,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public Boolean hasBasicBeltInfo = true;
     public Boolean showBeltFormInfo = true;
 
-
     /**
      * Constructor for the main armor piece used by a Kamen Rider, kaijin, or other transforming character. This item uses the foot armor slot in all cases.
      *
@@ -86,6 +85,7 @@ public class RiderDriverItem extends RiderArmorItem {
      * @param properties   The default {@link Properties} of the item
      * @author Kelco
      **/
+
     public RiderDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, Type.BOOTS, properties);
 
