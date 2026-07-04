@@ -2557,11 +2557,11 @@ public class GotchardRiderItems {
 			}.addAlternative(GOTCHAR_IGNITER_AS.get()).addNeedForm(HOPPER1_RIDE_CHEMY_CARD.get(),1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHARD_HELMET = ITEMS.register("gotchard_head",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 	public static final DeferredItem<Item> GOTCHARD_CHESTPLATE = ITEMS.register("gotchard_torso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 	public static final DeferredItem<Item> GOTCHARD_LEGGINGS = ITEMS.register("gotchard_legs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 
 	public static final DeferredItem<Item> GOTCHARDRIVER = ITEMS.register("gotchardriver",
@@ -2584,7 +2584,7 @@ public class GotchardRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> GOTCHARDRIVER_DAYBREAK = ITEMS.register("gotchardriver_daybreak",
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"gotchard_daybreak", HOPPER1_RIDE_CHEMY_CARD_DAYBREAK ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -2605,7 +2605,7 @@ public class GotchardRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> GOTCHARDRIVER_BROTHER = ITEMS.register("gotchardriver_brother",
 			() -> new GotcharDriverBrothersItem(ArmorMaterials.DIAMOND,"gotchar_brother", HOPPER1_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS
@@ -2627,7 +2627,7 @@ public class GotchardRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> ALCHEMISDRIVER = ITEMS.register("alchemisdriver",
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"majade", THE_SUN_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -2648,7 +2648,7 @@ public class GotchardRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> ALCHEMISDRIVER_WIND = ITEMS.register("alchemisdriver_wind",
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"wind", KUROANA_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
@@ -2669,39 +2669,39 @@ public class GotchardRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item> VALVARADRIVER = ITEMS.register("valvaradriver",
 			() -> new ValvaraDriverItem(ArmorMaterials.DIAMOND,"valvarad_rider", MACHWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item>  DREADRIVER = ITEMS.register("dreadriver",
-			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dread", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dread", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item>  DREADRIVER_TROOPER = ITEMS.register("dreadriver_trooper",
-			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dreatrooper", ANTROOPER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dreatrooper", ANTROOPER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item>  DREADRIVER_MEIKOKU_NO_SANSHIMAI = ITEMS.register("dreadriver_meikoku_no_sanshimai",
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"meikoku_no_sanshimai", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS ,
-					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> LEGENDRIVER = ITEMS.register("legendriver",
 			() -> new LegenDriverItem(ArmorMaterials.DIAMOND,"legend", LEGEND_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item>  ELDORADRIVER = ITEMS.register("eldoradriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dorado", DARK_ETHER_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dorado", DARK_ETHER_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item>  ELDORADRIVER_ELD = ITEMS.register("eldoradriver_eld",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eld", ELDRAGON_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eld", ELDRAGON_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item> VALVARADRAW_BUCKLE = ITEMS.register("valvaradraw_buckle",
 			() -> new ValvaradItem(ArmorMaterials.DIAMOND,"valvarad", MADWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> VALVARADRAW_BUCKLE_LACHESIS = ITEMS.register("valvaradraw_buckle_lachesis",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valvarad_lachesis", MADWHEEL_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).changeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 
 

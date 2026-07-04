@@ -32,14 +32,14 @@ public class FourzeDriverItem extends RiderDriverItem {
 	public FourzeDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Unlimited_Textures=4;
+		unlimitedTextures =4;
 	}
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
-		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
-		this.Has_basic_belt_info=false;
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
+		this.hasBasicBeltInfo =false;
 
 		Item formItem = getFormItem(stack, 1);
 		Item formItem2 = getFormItem(stack, 2);
@@ -71,7 +71,7 @@ public class FourzeDriverItem extends RiderDriverItem {
 
 		if (entity instanceof LivingEntity player) {
 			if (isTransformed(player)) {
-				for (int n = 0; n < Num_Base_Form_Item; n++) {
+				for (int n = 0; n < numBaseFormItems; n++) {
 					List<MobEffectInstance> potionEffectList = getFormItem(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
 					for (MobEffectInstance effect : potionEffectList) {
 						player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier() + (player.hasEffect(EffectCore.COSMIC_ENERGY) && !effect.is(EffectCore.COSMIC_ENERGY) ? 1 : 0), true, false));
@@ -191,9 +191,9 @@ public class FourzeDriverItem extends RiderDriverItem {
 
 		if (slot==EquipmentSlot.CHEST){
 			if (getFormItem(itemstack, 1).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 5).getFlyingModel(this.Rider));
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 5).getFlyingModel(this.riderName));
 			}
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 5).getModel(this.Rider));
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 5).getModel(this.riderName));
 		}
 		return super.getModelResource(itemstack, animatable, slot,rider);
 	}

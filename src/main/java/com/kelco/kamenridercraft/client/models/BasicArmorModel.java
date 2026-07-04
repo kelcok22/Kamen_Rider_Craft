@@ -16,12 +16,12 @@ public class BasicArmorModel extends GeoModel<BasicArmorItem> {
     @Override
     public ResourceLocation getModelResource(BasicArmorItem animatable) {
 
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + animatable.MODEL + ".geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + animatable.model + ".geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(BasicArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + animatable.MODEL + ".png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + animatable.model + ".png");
     }
 
 

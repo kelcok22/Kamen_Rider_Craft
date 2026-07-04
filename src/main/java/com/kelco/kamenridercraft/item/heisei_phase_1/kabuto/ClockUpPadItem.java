@@ -43,7 +43,7 @@ public class ClockUpPadItem extends BaseItem {
 				}
 				player.awardStat(Stats.ITEM_USED.get(this));
             } else if (!Objects.equals(RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false), "_masked")){
-                if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !level.isClientSide()) {
+                if (ArrayUtils.contains(ClockUpUsers, belt.riderName) && !level.isClientSide()) {
                 	player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
                     if (!player.isCreative()) {
                         player.getCooldowns().addCooldown(this, 500);

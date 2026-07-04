@@ -48,19 +48,19 @@ public class AmazonRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZONHELMET = ITEMS.register("amazonhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
     public static final DeferredItem<Item> AMAZONCHESTPLATE = ITEMS.register("amazontroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
     public static final DeferredItem<Item> AMAZONLEGGINGS = ITEMS.register("amazonlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> CONDORER = ITEMS.register("condorer",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_CONDORER = ITEMS.register("dark_condorer",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).hideBeltFormInfo()
-                    .overrideBeltText("dark_condorer_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
+                    .overrideBeltText("dark_condorer_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZON_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

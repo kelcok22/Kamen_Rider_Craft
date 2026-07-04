@@ -466,12 +466,12 @@ public class RiderFormChangeItem extends BaseItem {
 
 
     public Boolean isCompatible(RiderDriverItem belt) {
-        if (Objects.equals(belt.Rider, riderName)) return true;
+        if (Objects.equals(belt.riderName, riderName)) return true;
         for (String str : compatibilityList) {
-            if (Objects.equals(str, belt.Rider)) return true;
+            if (Objects.equals(str, belt.riderName)) return true;
         }
-        ItemStack itemstack = new ItemStack(belt);
-        return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" + riderName + formName)));
+        ItemStack itemStack = new ItemStack(belt);
+        return itemStack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" + riderName + formName)));
     }
 
     public Boolean checkGold() {
@@ -503,7 +503,7 @@ public class RiderFormChangeItem extends BaseItem {
         }
         if (hasIncompatibleForms) {
             for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
-                int num_forms = belt.Num_Base_Form_Item;
+                int num_forms = belt.numBaseFormItems;
                 for (int n = 0; n < num_forms; n++) {
                     if (incompatibleForm == RiderDriverItem.getFormItem(stack, n + 1)) {
                         return false;
@@ -519,7 +519,7 @@ public class RiderFormChangeItem extends BaseItem {
                 if (!inventoryOrHolderContains(player, item)) return false;
             }
         }
-        if (needBaseForm) if (RiderDriverItem.getFormItem(stack, 1) != belt.Base_Form_Item) return false;
+        if (needBaseForm) if (RiderDriverItem.getFormItem(stack, 1) != belt.baseFormItem) return false;
         if (needFormSlot1 != null) if (RiderDriverItem.getFormItem(stack, 1) != needFormSlot1) return false;
         if (needFormSlot2 != null) if (RiderDriverItem.getFormItem(stack, 2) != needFormSlot2) return false;
         if (needFormSlot3 != null) if (RiderDriverItem.getFormItem(stack, 3) != needFormSlot3) return false;
@@ -543,7 +543,7 @@ public class RiderFormChangeItem extends BaseItem {
                     shiftItem.interactLivingEntity(new ItemStack(form), player, summon, usedHand);
                 else if (canChange(player, belt, BELT)) {
                     if (resetForm) RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
-                    if (resetToMainForm & Objects.equals(belt.Rider, riderName))
+                    if (resetToMainForm & Objects.equals(belt.riderName, riderName))
                         RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange1stSlot, 1);
@@ -555,7 +555,7 @@ public class RiderFormChangeItem extends BaseItem {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
 
                     if (setToArmorForm)
-                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), belt.Armor_Form_Item, 1);
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
 
                     int SLOT = slot;
                     if (usedHand == InteractionHand.OFF_HAND & offhand) SLOT = offhandSlot;
@@ -580,7 +580,7 @@ public class RiderFormChangeItem extends BaseItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 
-        ItemStack itemstack = player.getItemInHand(usedHand);
+        ItemStack itemStack = player.getItemInHand(usedHand);
 
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
@@ -594,7 +594,7 @@ public class RiderFormChangeItem extends BaseItem {
                         player.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK, 20, 0, true, false));
                     }
                     if (resetForm) RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (resetToMainForm & Objects.equals(belt.Rider, riderName))
+                    if (resetToMainForm & Objects.equals(belt.riderName, riderName))
                         RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot != null)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange1stSlot, 1);
@@ -606,7 +606,7 @@ public class RiderFormChangeItem extends BaseItem {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
 
                     if (setToArmorForm)
-                        RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), belt.Armor_Form_Item, 1);
+                        RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
 
                     int SLOT = slot;
                     if (usedHand == InteractionHand.OFF_HAND & offhand) SLOT = offhandSlot;
@@ -625,11 +625,11 @@ public class RiderFormChangeItem extends BaseItem {
                 }
             }
         }
-        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+        return InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide());
 
     }
 
-    public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
+    public void OnTransformation(ItemStack itemStack, LivingEntity entity) {
         if (timeoutDuration != 0) {
             if (!(entity instanceof ArmorStand))
                 entity.addEffect(new MobEffectInstance(EffectCore.FORM_TIMEOUT, this.timeoutDuration, 0, true, false));
@@ -638,7 +638,7 @@ public class RiderFormChangeItem extends BaseItem {
         }
     }
 
-    public void transformationEffect(ItemStack itemstack, LivingEntity entity) {
+    public void transformationEffect(ItemStack itemStack, LivingEntity entity) {
         if (entity.level() instanceof ServerLevel sl) {
             sl.sendParticles(ParticleTypes.GUST,
                     entity.getX(), entity.getY() + 1.0,
@@ -646,9 +646,9 @@ public class RiderFormChangeItem extends BaseItem {
         }
     }
 
-    public void transformationEffect(ItemStack itemstack, LivingEntity entity, Double tick) {
-        if (tick == 30) transformationEffect(itemstack, entity);
-        if (tick == 1) RiderDriverItem.UpdateOldFormItem(itemstack);
+    public void transformationEffect(ItemStack itemStack, LivingEntity entity, Double tick) {
+        if (tick == 30) transformationEffect(itemStack, entity);
+        if (tick == 1) RiderDriverItem.UpdateOldFormItem(itemStack);
 
     }
 }

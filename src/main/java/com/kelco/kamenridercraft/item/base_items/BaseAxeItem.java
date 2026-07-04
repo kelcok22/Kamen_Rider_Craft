@@ -52,11 +52,11 @@ public class BaseAxeItem extends AxeItem {
         return this;
     }
 
-    public static int getMode(ItemStack itemstack) {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+    public static int getMode(ItemStack itemStack) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
             return 0;
         }
-        CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+        CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
         return tag.getInt("item_mode");
     }
 
@@ -72,12 +72,12 @@ public class BaseAxeItem extends AxeItem {
         return this;
     }
 
-    public static void setMode(ItemStack itemstack) {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+    public static void setMode(ItemStack itemStack) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
+            itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
-        CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
-        tag.putInt("item_mode", getMode(itemstack) == 0 ? 1 : 0);
+        CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+        tag.putInt("item_mode", getMode(itemStack) == 0 ? 1 : 0);
     }
 
     public BaseAxeItem keepDiffItem(Item item) {
@@ -112,7 +112,7 @@ public class BaseAxeItem extends AxeItem {
     }
 
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, Player player, @NotNull InteractionHand interactionHand) {
-        ItemStack itemstack = player.getItemInHand(interactionHand);
+        ItemStack itemStack = player.getItemInHand(interactionHand);
         if (!level.isClientSide()) {
             if (henshinItem && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(henshinBeltItem));
@@ -125,11 +125,11 @@ public class BaseAxeItem extends AxeItem {
             }
             if (changeAxe) {
                 if (player.isShiftKeyDown()) {
-                    setMode(itemstack);
+                    setMode(itemStack);
                 }
-                getMode(itemstack);
+                getMode(itemStack);
             }
         }
-        return InteractionResultHolder.pass(itemstack);
+        return InteractionResultHolder.pass(itemStack);
     }
 }

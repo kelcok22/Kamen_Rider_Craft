@@ -219,12 +219,12 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        ItemStack itemstack = player.getItemInHand(hand);
+        ItemStack itemStack = player.getItemInHand(hand);
         if (hand == InteractionHand.MAIN_HAND && tag.getInt("ammo") > 0 && !player.getCooldowns().isOnCooldown(this)) {
             player.startUsingItem(hand);
-            return InteractionResultHolder.consume(itemstack);
+            return InteractionResultHolder.consume(itemStack);
         }
-        return InteractionResultHolder.fail(itemstack);
+        return InteractionResultHolder.fail(itemStack);
     }
 
 

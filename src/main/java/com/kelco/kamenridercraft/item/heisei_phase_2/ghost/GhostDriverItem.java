@@ -36,13 +36,13 @@ public class GhostDriverItem extends RiderDriverItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		this.Has_basic_belt_info = false;
+		this.hasBasicBeltInfo = false;
 		Item formItem = getFormItem(stack, 1);
 		Item formItem2 = getFormItem(stack, 2);
-		String rider=Rider;
+		String rider= this.riderName;
 		if (stack.getItem()== GhostRiderItems.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		tooltipComponents.add(Component.translatable("kamenridercraft.name." + rider));
-		if (Objects.equals(Rider, "ghost") || Objects.equals(Rider, "specter") || Objects.equals(Rider, "necrom")) {
+		if (Objects.equals(this.riderName, "ghost") || Objects.equals(this.riderName, "specter") || Objects.equals(this.riderName, "necrom")) {
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 		}
 
@@ -59,7 +59,7 @@ public class GhostDriverItem extends RiderDriverItem {
 				|| getFormItem(belt, 1)== GhostRiderItems.MUGEN_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.MUGEN_DAMASHII.get()
 				|| getFormItem(belt, 1)== GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.SIN_SPECTER_DAMASHII.get()
 		) {
-			Consumer<CompoundTag> data = form -> form.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
+			Consumer<CompoundTag> data = form -> form.putString("slot_tex" + 1, (this.baseFormItem).toString());
 
 			CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 		}
@@ -108,7 +108,7 @@ public class GhostDriverItem extends RiderDriverItem {
 
 	public String Get_Wisp_Horn(RiderFormChangeItem item,ItemStack itemstack)
 	{
-		String rider = ((GhostDriverItem) itemstack.getItem()).Rider;
+		String rider = ((GhostDriverItem) itemstack.getItem()).riderName;
 
 		if (Wisp_Horn==item.getStoredNum()){
 			return "_base";
@@ -130,8 +130,8 @@ public class GhostDriverItem extends RiderDriverItem {
 
 		if (slot== EquipmentSlot.HEAD) {
 			if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getFlyingModel(this.Rider));
-			}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getModel(this.Rider));
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getFlyingModel(this.riderName));
+			}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getModel(this.riderName));
 
 		}else
 			return super.getModelResource(itemstack, animatable, slot,rider);

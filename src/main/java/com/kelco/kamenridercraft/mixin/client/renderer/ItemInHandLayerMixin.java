@@ -29,7 +29,7 @@ public class ItemInHandLayerMixin {
             if (livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getValue() > 0) {
                 boolean replaceRender = false;
                 ItemStack tango = new ItemStack(Items.APPLE);
-                if (riderDriverItem.Rider.equals("ooo")) {
+                if (riderDriverItem.riderName.equals("ooo")) {
                     if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(OOORiderItems.O_SCANNER.get());
                     } else {

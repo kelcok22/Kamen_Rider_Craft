@@ -35,8 +35,8 @@ public class WDriverItem extends RiderDriverItem {
 	public WDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Has_basic_belt_info=false;
-        Unlimited_Belt_Textures = 1;
+		hasBasicBeltInfo =false;
+        unlimitedBeltTextures = 1;
 	}
 
     @Override
@@ -48,7 +48,7 @@ public class WDriverItem extends RiderDriverItem {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
-		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
 
 
 		Item formItem = getFormItem(stack, 1);

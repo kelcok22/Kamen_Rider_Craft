@@ -509,11 +509,11 @@ public class BladeRiderItems {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADEHELMET = ITEMS.register("bladehead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> BLADECHESTPLATE = ITEMS.register("bladetroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> BLADELEGGINGS = ITEMS.register("bladelegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 
 
 	public static final DeferredItem<Item> BLAYBUCKLE = ITEMS.register("blay_buckle",
@@ -525,36 +525,36 @@ public class BladeRiderItems {
                         return "blade_yellowed";
                     } else return super.getText(itemstack,equipmentSlot,rider,riderName);
                 }
-            }.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 
 	public static final DeferredItem<Item> GARRENBUCKLE = ITEMS.register("garren_buckle",
-			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> CHALICEROUZER = ITEMS.register("chalice_rouzer",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chalice", CHANGE_MANTIS, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chalice", CHANGE_MANTIS, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LEANGLEBUCKLE = ITEMS.register("leangle_buckle",
-			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GLAIVEBUCKLE = ITEMS.register("glaive_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LANCEBUCKLE = ITEMS.register("lance_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lance", CHANGE_KERBEROS_LANCE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lance", CHANGE_KERBEROS_LANCE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LARCBUCKLE = ITEMS.register("larc_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 
 
 
 	public static final DeferredItem<Item> UNDEAD_ROUZER = ITEMS.register("undead_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> BLACK_JOKERROUZER = ITEMS.register("black_jokerrouzer",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "black_joker", BLACK_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "black_joker", BLACK_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> ALBINO_JOKERROUZER = ITEMS.register("albino_jokerrouzer",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "albino_joker", ALBINO_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "albino_joker", ALBINO_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> BLAYBUCKLE_FAKE = ITEMS.register("blay_buckle_fake",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "fake_blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 
 	public static final DeferredItem<Item> TAIYAKI_SECRET_WEAPON = ITEMS.register("taiyaki_secret_weapon",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "taiyaki_master" ,TAIYAKI_MASTER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 
 
 	public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",

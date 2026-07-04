@@ -46,7 +46,7 @@ public class AnimationUtil {
     }
 
     public static String getAnimRiderName(RiderDriverItem driverItem) {
-        String riderName = driverItem.Rider.toLowerCase();
+        String riderName = driverItem.riderName.toLowerCase();
         return switch (riderName) {
             case "neo_decade", "neo_diend" -> riderName.replace("neo_", "");
             case "fake_ichigo", "fake_x", "fake_v3", "fake_skyrider", "fake_blade", "fake_drive" ->

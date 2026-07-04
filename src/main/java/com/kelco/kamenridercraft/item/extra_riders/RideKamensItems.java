@@ -171,43 +171,43 @@ public class RideKamensItems {
 
 
     public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
     public static final DeferredItem<Item> RIDE_KAMENS_CHESTPLATE = ITEMS.register("ride_kamens_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
     public static final DeferredItem<Item> RIDE_KAMENS_LEGGINGS = ITEMS.register("ride_kamens_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_SAIGO = ITEMS.register("chaos_driver_saigo",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saigo",CHAOS_RING_SAIGO ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_HARUMA = ITEMS.register("chaos_driver_haruma",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"haruma",CHAOS_RING_HARUMA ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_SHION = ITEMS.register("chaos_driver_shion",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shion",CHAOS_RING_SHION ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_JIGEN = ITEMS.register("chaos_driver_jigen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jigen",CHAOS_RING_JIGEN ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_ARAKI = ITEMS.register("chaos_driver_araki",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"araki",CHAOS_RING_ARAKI ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_KAMUI = ITEMS.register("chaos_driver_kamui",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamui",CHAOS_RING_KAMUI ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_AGATA = ITEMS.register("chaos_driver_agata",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agata",CHAOS_RING_AGATA ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DRIVER_LOQ = ITEMS.register("chaos_driver_loq",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"loq",CHAOS_RING_LOQ ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> GASHA_TICKET = ITEMS.register("gasha_ticket",
             () -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gasha_ticket")).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));

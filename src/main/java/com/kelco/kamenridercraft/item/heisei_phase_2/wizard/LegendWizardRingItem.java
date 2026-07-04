@@ -32,13 +32,13 @@ public class LegendWizardRingItem extends BaseItem {
 		if (!level.isClientSide()
 		&&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
 		&&belt.isTransformed(player)){
-			if (ArrayUtils.contains(FORMS, belt.Rider)) {
+			if (ArrayUtils.contains(FORMS, belt.riderName)) {
 				RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
 				if (copy != null) {
                     copy.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
-                    copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.HEAD));
-                    copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
-                    copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
+                    copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
+                    copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
+                    copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
                     copy.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
                     if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get()) RiderDriverItem.setFormItem(copy.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
 

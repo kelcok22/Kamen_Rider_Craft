@@ -78,18 +78,18 @@ public class ZORiderItems {
             }.isGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
     public static final DeferredItem<Item>  ZOCHESTPLATE = ITEMS.register("zotroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
     public static final DeferredItem<Item>  ZOLEGGINGS = ITEMS.register("zolegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZO_CORE = ITEMS.register("zo_core",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zo",ZO_STONE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties())
-                    .hasSDForm().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+                    .hasSDForm().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
     public static final DeferredItem<Item>  DORAS_CORE = ITEMS.register("doras_core",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"doras",NEONOID_CORE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties())
-                    .AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

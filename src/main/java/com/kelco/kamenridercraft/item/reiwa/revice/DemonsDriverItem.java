@@ -34,12 +34,12 @@ public class DemonsDriverItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
-		Num_Base_Form_Item=5;
+		numBaseFormItems =5;
 	}
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		Has_basic_belt_info=false;
-		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+		hasBasicBeltInfo =false;
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
 
 		if (getFormItem(stack, 2)== ReviceRiderItems.ANOMALOCARIS_VISTAMP.get()& getFormItem(stack, 5)
 				== ReviceRiderItems.BATTA_VISTAMP.get()& getFormItem(stack, 4)
@@ -79,8 +79,8 @@ public class DemonsDriverItem extends RiderDriverItem {
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		switch (equipmentSlot) {
 			case EquipmentSlot.FEET:
-				String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
-				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+				String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
+				if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
 					belt = getFormItem(itemstack,1).getBeltTex();
 				}
 				return "belts/"+belt;
@@ -118,9 +118,9 @@ public class DemonsDriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST||slot == EquipmentSlot.LEGS) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/default_wings_armor.geo.json");
 
 		if (getFormItem(itemstack, num).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getFlyingModel(this.Rider));
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getFlyingModel(this.riderName));
 		}
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getModel(this.Rider));
+		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, num).getModel(this.riderName));
 
 	}
 

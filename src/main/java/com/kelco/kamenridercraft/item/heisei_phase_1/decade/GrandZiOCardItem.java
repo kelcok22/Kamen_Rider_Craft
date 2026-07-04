@@ -170,9 +170,9 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
 
             if (summon != null) {
                 summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
-                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.HEAD));
-                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
-                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
+                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
+                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
+                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonMainWeapon));
                 summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonOffWeapon));

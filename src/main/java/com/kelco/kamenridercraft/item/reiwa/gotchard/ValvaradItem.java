@@ -39,8 +39,8 @@ public class ValvaradItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties.stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
-		Has_Inventory=true;
-		Num_Base_Form_Item=3;
+		hasInventory =true;
+		numBaseFormItems =3;
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class ValvaradItem extends RiderDriverItem {
 		Item formItem2 = getFormItem(stack, 2);
 		Item formItem3 = getFormItem(stack, 3);
 
-		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
 
 		if (formItem2!= GotchardRiderItems.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!= GotchardRiderItems.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 		else if (formItem2== GotchardRiderItems.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!= GotchardRiderItems.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem2 + ".form"));
@@ -91,8 +91,8 @@ public class ValvaradItem extends RiderDriverItem {
 	{
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
-			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
-			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+			String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
+			if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
 				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 			return "belts/"+belt;
@@ -108,7 +108,7 @@ public class ValvaradItem extends RiderDriverItem {
         if (Objects.requireNonNull(slot) == EquipmentSlot.CHEST) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_custom.geo.json");
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.Rider));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
     }
 
 	@Override

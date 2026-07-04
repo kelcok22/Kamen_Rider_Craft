@@ -1470,67 +1470,67 @@ public class GavvRiderItems {
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAVV_HELMET = ITEMS.register("gavv_head",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)
 					.changeRepairItem(BLANK_GOCHIZO.get()));
 	public static final DeferredItem<Item> GAVV_CHESTPLATE = ITEMS.register("gavv_troso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)
 					.changeRepairItem(BLANK_GOCHIZO.get()));
 	public static final DeferredItem<Item> GAVV_LEGGINGS = ITEMS.register("gavv_legs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)
 					.changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> HENSHIN_BELT_GAVV = ITEMS.register("henshin_belt_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gavv",POPPINGUMMY_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 
 	public static final DeferredItem<Item> VALENBUCKLE = ITEMS.register("valenbuckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",CHOCODON_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-                    .overrideBeltText("valenbuckle_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+                    .overrideBeltText("valenbuckle_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR_VALEN = ITEMS.register("vrastumgear_valen",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen_frappe_custom",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR = ITEMS.register("vrastumgear",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vram",DOPPUDDING_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> HENSHIN_BELT_BITTER_GAVV = ITEMS.register("henshin_belt_bitter_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"bitter_gavv",SPARKINGUMMY_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()).has_basic_model());
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()).has_basic_model());
 
 	public static final DeferredItem<Item> BAKEBUCKLE = ITEMS.register("bakebuckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"bake",BREACOOKIE_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.overrideBeltText("bakebuckle_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.overrideBeltText("bakebuckle_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> HENSHIN_BELT_CARIES_GAVV = ITEMS.register("henshin_belt_caries_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"caries",TERROR_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> JEEB_MIMICDEVISER = ITEMS.register("jeeb_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jeeb",JEEB_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SHIITA_MIMICDEVISER = ITEMS.register("shiita_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shiita",SHIITA_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> NYELV_MIMICDEVISER = ITEMS.register("nyelv_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nyelv",NYELV_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GLOTTA_MIMICDEVISER = ITEMS.register("glotta_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"glotta",GLOTTA_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> LANGO_MIMICDEVISER = ITEMS.register("lango_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lango",LANGO_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BOCCA_MIMICDEVISER = ITEMS.register("bocca_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"bocca",BOCCA_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM).changeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM)

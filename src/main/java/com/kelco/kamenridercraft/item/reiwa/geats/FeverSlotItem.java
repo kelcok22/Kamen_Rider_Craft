@@ -45,7 +45,7 @@ public class FeverSlotItem extends BaseItem {
 
 		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof  DesireDriverItem){
             for (String clockUpUser : ClockUpUsers) {
-                if (Objects.equals(clockUpUser, ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider)) {
+                if (Objects.equals(clockUpUser, ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).riderName)) {
                     if (!world.isClientSide()) {
                         RandomForm().use(world, player, hand);
                         player.getCooldowns().addCooldown(this, 50);

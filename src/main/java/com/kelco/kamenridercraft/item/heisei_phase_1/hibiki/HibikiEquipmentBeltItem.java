@@ -18,8 +18,8 @@ public class HibikiEquipmentBeltItem extends RiderDriverItem {
 	public HibikiEquipmentBeltItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Unlimited_Textures = 2;
-		Unlimited_Belt_Textures = 3;
+		unlimitedTextures = 2;
+		unlimitedBeltTextures = 3;
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public class LegenDriverItem extends RiderDriverItem {
 
 	public LegenDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Unlimited_Textures = 2;
+		unlimitedTextures = 2;
 	}
 
 	@Override
@@ -48,12 +48,12 @@ public class LegenDriverItem extends RiderDriverItem {
 	@Override
 	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
-		String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
+		String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
 
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+			if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
 				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 			return "belts/"+belt;
@@ -76,7 +76,7 @@ public class LegenDriverItem extends RiderDriverItem {
         if (Objects.requireNonNull(slot) == EquipmentSlot.CHEST) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/legend_ride.geo.json");
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.Rider));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
     }
 
 

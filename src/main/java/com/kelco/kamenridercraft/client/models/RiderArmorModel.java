@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 
-import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.resources.ResourceLocation;
@@ -58,7 +57,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
             ItemStack BELT = RIDER.getItemBySlot(EquipmentSlot.FEET);
             if (BELT.getItem() instanceof RiderDriverItem DRIVER && (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER))) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + DRIVER.getText(BELT, slot, RIDER, DRIVER.Rider) + ".png");
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + DRIVER.getText(BELT, slot, RIDER, DRIVER.riderName) + ".png");
             }
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");

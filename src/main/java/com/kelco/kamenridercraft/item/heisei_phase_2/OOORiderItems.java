@@ -1274,11 +1274,11 @@ public class OOORiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOOHELMET = ITEMS.register("ooohead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
 	public static final DeferredItem<Item> OOOCHESTPLATE = ITEMS.register("oootroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
 	public static final DeferredItem<Item> OOOLEGGINGS = ITEMS.register("ooolegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
 
 
 	public static final DeferredItem<Item> OOODRIVER = ITEMS.register("ooodriver",
@@ -1302,43 +1302,43 @@ public class OOORiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().addExtraBaseFormItems(TORA_MEDAL,BATTA_MEDAL).changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+			}.hasInventoryGui().addExtraBaseFormItems(TORA_MEDAL,BATTA_MEDAL).changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 
 	public static final DeferredItem<Item> BIRTH_DRIVER = ITEMS.register("birth_driver",
 			() -> new BirthDriverItem(ArmorMaterials.DIAMOND,"birth",BIRTH_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+					.changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> PROTO_BIRTH_DRIVER = ITEMS.register("proto_birth_driver",
 			() -> new BirthDriverItem(ArmorMaterials.DIAMOND,"birth_prototype",BIRTH_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_DRIVER_X = ITEMS.register("birth_driver_x",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"birth_x",EBI_NEW_MEDAL_BIRTH_X ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 			{
 				@Override
 				public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-					Has_basic_belt_info=false;
-					tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+					hasBasicBeltInfo =false;
+					tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
 					tooltipComponents.add(Component.translatable( "kamenridercraft:sokabi.form"));
 
 					super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 				}
 
-			}.changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+			}.changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> REBIRTH_DRIVER = ITEMS.register("rebirth_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"re_birth",REBIRTH_CORE,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().overrideBeltText("rebirth_driver_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().overrideBeltText("rebirth_driver_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AQUA_DRIVER = ITEMS.register("aqua_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aqua",AQUA_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> POSEIDONDRIVER = ITEMS.register("poseidon_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"poseidon",SAME_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().addExtraBaseFormItems(KUJIRA_MEDAL,OOKAMIUO_MEDAL).overrideBeltText("poseidon_driver_belt")
-					.changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANCIENT_OOODRIVER = ITEMS.register("ancient_ooodriver",
 			() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo_ancient",ANCIENT_TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
@@ -1361,7 +1361,7 @@ public class OOORiderItems {
 					});
 				}
 			}
-					.hasInventoryGui().addExtraBaseFormItems(ANCIENT_TORA_MEDAL,ANCIENT_BATTA_MEDAL).changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hasInventoryGui().addExtraBaseFormItems(ANCIENT_TORA_MEDAL,ANCIENT_BATTA_MEDAL).changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GODA_OOODRIVER = ITEMS.register("goda_ooodriver",
 			() -> new OOODriverItem(ArmorMaterials.DIAMOND,"goda",MUKADE_GODA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
@@ -1384,7 +1384,7 @@ public class OOORiderItems {
 					});
 				}
 			}
-					.hasInventoryGui().addExtraBaseFormItems(HACHI_GODA_MEDAL,ARI_GODA_MEDAL).changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hasInventoryGui().addExtraBaseFormItems(HACHI_GODA_MEDAL,ARI_GODA_MEDAL).changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOCKER_OOODRIVER = ITEMS.register("shocker_ooodriver",
 			() -> new OOODriverItem(ArmorMaterials.DIAMOND,"shocker_ooo",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
@@ -1407,7 +1407,7 @@ public class OOORiderItems {
 					});
 				}
 			}
-					.hasInventoryGui().addExtraBaseFormItems(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hasInventoryGui().addExtraBaseFormItems(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOOOOODRIVER = ITEMS.register("oooooodriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oooooo",HEXA_OOOOOO ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
@@ -1430,53 +1430,53 @@ public class OOORiderItems {
 					});
 				}
 			}
-					.hasInventoryGui().hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hasInventoryGui().hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"core",EBI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL,SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL,SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> POWERED_UP_CORE_DRIVER = ITEMS.register("powered_up_core_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"powered_up_core",EBI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL,SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL,SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GREEED_BLET_ANKH_LOST = ITEMS.register("greeed_blet_ankh_lost",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ankh_lost",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL,CONDOR_MEDAL).overrideBeltText("ankh_lost_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL,CONDOR_MEDAL).overrideBeltText("ankh_lost_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_ANKH = ITEMS.register("greeed_blet_ankh",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ankh_complete",TAKA_ANKH_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL,CONDOR_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL,CONDOR_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_UVA = ITEMS.register("greeed_blet_uva",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"uva_complete",KUWAGATA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(KAMAKIRI_MEDAL,BATTA_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(KAMAKIRI_MEDAL,BATTA_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_KAZARI = ITEMS.register("greeed_blet_kazari",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kazari_complete",LION_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(TORA_MEDAL,CHEETAH_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(TORA_MEDAL,CHEETAH_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_MEZOOL = ITEMS.register("greeed_blet_mezool",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mezool_complete",SHACHI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(UNAGI_MEDAL,TAKO_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(UNAGI_MEDAL,TAKO_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_GAMEL = ITEMS.register("greeed_blet_gamel",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gamel_complete",SAI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(GORILLA_MEDAL,ZOU_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(GORILLA_MEDAL,ZOU_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_MUCHIRI = ITEMS.register("greeed_blet_muchiri",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"muchiri_complete",MUKADE_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(HACHI_MEDAL,ARI_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(HACHI_MEDAL,ARI_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREEED_BLET_KYORYU = ITEMS.register("greeed_blet_kyoryu",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyoryu_complete",PTERA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(TRICERA_MEDAL,TYRANNO_MEDAL).overrideBeltText("kyoryu_belt").changeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(TRICERA_MEDAL,TYRANNO_MEDAL).overrideBeltText("kyoryu_belt").changeRepairItem(CELL_MEDAL.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_SHOCKER = ITEMS.register("greeed_blet_shocker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_complete",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).overrideBeltText("shocker_greeed_belt").changeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+                    .hideBeltFormInfo().addExtraBaseFormItems(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).overrideBeltText("shocker_greeed_belt").changeRepairItem(CELL_MEDAL.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(CELL_MEDAL.get()));

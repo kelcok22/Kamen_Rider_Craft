@@ -61,7 +61,7 @@ public class AdventCardItem extends BaseItem {
 		if (player.getInventory().countItem(VISOR)!=0) {
 			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
 			&& belt.isTransformed(player)){
-				if (Objects.equals(RIDER, ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider) | (player.getInventory().countItem(RyukiRiderItems.SLASH_VISOR.get())!=0 && Objects.equals(((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider, "alternative_zero"))) {
+				if (Objects.equals(RIDER, ((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).riderName) | (player.getInventory().countItem(RyukiRiderItems.SLASH_VISOR.get())!=0 && Objects.equals(((RiderDriverItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).riderName, "alternative_zero"))) {
 					if (!level.isClientSide()) {
 						if (WEAPONS != null) {
                             for (Item weapon : WEAPONS) {

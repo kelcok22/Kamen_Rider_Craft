@@ -134,14 +134,14 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 				} else {
 					if (!this.REQUIRED_FORMS.isEmpty() && this.getOwner().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 						boolean formFound = false;
-						if (!this.matchAllForms) for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
+						if (!this.matchAllForms) for (int i = 0; i < belt.numBaseFormItems; i++) {
 							CompoundTag tag = new CompoundTag();
 							tag.putInt("Slot", i + 1);
 							tag.putString("Form", RiderDriverItem.getFormItem(this.getOwner().getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
 							if (this.REQUIRED_FORMS.contains(tag)) formFound = true;
 						} else {
 							ListTag OWNER_FORMS = new ListTag();
-							for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
+							for (int i = 0; i < belt.numBaseFormItems; i++) {
 								CompoundTag tag = new CompoundTag();
 								tag.putInt("Slot", i + 1);
 								tag.putString("Form", RiderDriverItem.getFormItem(this.getOwner().getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
@@ -242,7 +242,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	public void setRequiredForms(Player player) {
 	  if (this.getOwner() == player && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {	
 		this.REQUIRED_FORMS.clear();
-		for (int n = 0; n < belt.Num_Base_Form_Item; n++) addRequiredForm(RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), n+1), n+1);
+		for (int n = 0; n < belt.numBaseFormItems; n++) addRequiredForm(RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), n+1), n+1);
 	  }
    }
    

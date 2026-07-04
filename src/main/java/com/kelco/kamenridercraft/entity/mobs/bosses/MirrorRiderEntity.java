@@ -195,7 +195,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
             this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DRAG_VISOR.get()));
         }
         if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            SetTypeVariant(belt.Rider);
+            SetTypeVariant(belt.riderName);
         }
 
 

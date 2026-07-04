@@ -35,13 +35,13 @@ public class LiberaDriverItem extends RiderDriverItem {
 				player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player).isEmpty();
     }
 	
-	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
+	public void onTransformation(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.lovekovSpawning && !lovekovSummoned(player)
 		&& itemstack.getItem() == ReviceRiderItems.LIBERA_DRIVER.get()
 		&& RiderDriverItem.getFormItem(itemstack, 1) == ReviceRiderItems.COBRA_VISTAMP.get()
 		&& !(player.isHolding(ReviceRiderItems.LOVEKOV_KUJAKU.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_TURTLE.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_HASHIBIROKO.get()) || player.isHolding(ReviceRiderItems.LOVEKOV_TRICERA.get())))
 			summonLovekov(player);
-		super.OnTransformation(itemstack, entity);
+		super.onTransformation(itemstack, entity);
 	}
 	
 	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {

@@ -38,9 +38,9 @@ public class ShowaMedalItem extends BaseItem {
             RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(p_41128_);
             if (summon != null) {
                 summon.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
-                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.HEAD));
-                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
-                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
+                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
+                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
+                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
                 if (summonWeapon != null) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapon, 1));
 

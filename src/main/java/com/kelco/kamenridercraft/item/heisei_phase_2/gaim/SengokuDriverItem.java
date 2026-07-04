@@ -85,7 +85,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 			if (getFormItem(itemstack, 1) == GaimRiderItems.KACHIDOKI_LOCKSEED.get() | getFormItem(itemstack, 1) == GaimRiderItems.ZANGETSU_KACHIDOKI_LOCKSEED.get()) {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gaim_kachidoki_arms.geo.json");
 			}
-			else if (Objects.equals(getFormItem(itemstack, 1).getModel(this.Rider), "default.geo.json")) {
+			else if (Objects.equals(getFormItem(itemstack, 1).getModel(this.riderName), "default.geo.json")) {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
 			}
 		}

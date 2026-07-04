@@ -3,21 +3,13 @@ package com.kelco.kamenridercraft.abilities;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
-import com.zigythebird.playeranim.animation.PlayerAnimationController;
-import com.zigythebird.playeranim.api.PlayerAnimationFactory;
-import com.zigythebird.playeranimcore.enums.PlayState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -39,8 +31,8 @@ public class ClientAbilityUtil {
             var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
             switch (abilitySlot) {
                 case 1:
-                    if (beltCheck.Num_Base_Form_Item != 1) {
-                        for (int n = 1; n <= beltCheck.Num_Base_Form_Item; n++) {
+                    if (beltCheck.numBaseFormItems != 1) {
+                        for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                             if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
                                 String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
                                 returnedAbility.add(priority + getFormItem(belt, n).getSlotOneAbility());
@@ -52,8 +44,8 @@ public class ClientAbilityUtil {
                     }
                     break;
                 case 2:
-                    if (beltCheck.Num_Base_Form_Item != 1) {
-                        for (int n = 1; n <= beltCheck.Num_Base_Form_Item; n++) {
+                    if (beltCheck.numBaseFormItems != 1) {
+                        for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                             if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotTwoAbility().isEmpty()) {
                                 String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
                                 returnedAbility.add(priority + getFormItem(belt, n).getSlotTwoAbility());

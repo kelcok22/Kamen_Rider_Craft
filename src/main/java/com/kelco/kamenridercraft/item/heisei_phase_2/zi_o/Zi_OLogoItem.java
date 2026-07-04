@@ -47,9 +47,9 @@ public class Zi_OLogoItem extends BaseBannerPatternItem {
             Item key = player.getOffhandItem().getItem();
             RiderDriverItem belt = (RiderDriverItem)BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelts.get(key.toString())));
             summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(belt));
-			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));
-			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.TORSO));
-			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.LEGS));
+			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.helmet));
+			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.chestplate));
+			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.leggings));
 
             if (this.summonWeapons.containsKey(key.toString())) {
                 String[] weapons = this.summonWeapons.get(key.toString());

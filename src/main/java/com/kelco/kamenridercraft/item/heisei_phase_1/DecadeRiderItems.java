@@ -1718,27 +1718,27 @@ public class DecadeRiderItems {
 
 
     public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
 	public static final DeferredItem<Item> DECADECHESTPLATE = ITEMS.register("decadetroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
 	public static final DeferredItem<Item> DECADELEGGINGS = ITEMS.register("decadelegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> DECADRIVER = ITEMS.register("decadriver",
 			() -> new DecadriverItem(ArmorMaterials.DIAMOND,"decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> NEO_DECADRIVER = ITEMS.register("neo_decadriver",
 			() -> new NeoDecadriverItem(ArmorMaterials.DIAMOND,"neo_decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.overrideBeltText("neo_decadriver_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+					.overrideBeltText("neo_decadriver_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> DIEND_BELT= ITEMS.register("diend_belt",
 			() -> new DiendBeltItem(ArmorMaterials.DIAMOND,"diend",DIEND_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_DECADRIVER = ITEMS.register("dark_decadriver",
 			() -> new DecadriverItem(ArmorMaterials.DIAMOND,"dark_decade",DARK_DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
-					.overrideBeltText("dark_decadriver_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+					.overrideBeltText("dark_decadriver_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> RIDE_BOOKER = ITEMS.register("ride_booker",
 			() -> new RideBookerItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM)

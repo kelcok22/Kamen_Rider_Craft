@@ -38,13 +38,13 @@ public class ZikuDriverItem extends RiderDriverItem {
         return false;
     }
 
-	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
+	public void onTransformation(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
 		&& itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
 		&& (RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get()
 		|| RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get()))
 			summonDecadeExAid(player);
-		super.OnTransformation(itemstack, entity);
+		super.onTransformation(itemstack, entity);
 	}
 
 	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {

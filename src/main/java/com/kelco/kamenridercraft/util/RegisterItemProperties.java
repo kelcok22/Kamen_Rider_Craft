@@ -79,7 +79,7 @@ public class RegisterItemProperties {
         }
 
         for (Item item : CHANGE_SWORD_ITEM) {
-            ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> BaseSwordItem.Get_Mode(p_174635_));
+            ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> BaseSwordItem.getMode(p_174635_));
         }
     }
 

@@ -997,26 +997,26 @@ public class SaberRiderItems {
 
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
 					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 	public static final DeferredItem<Item> SABER_CHESTPLATE = ITEMS.register("sabertroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
 					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 	public static final DeferredItem<Item> SABER_LEGGINGS = ITEMS.register("saberlegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
 					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_SABER = ITEMS.register("seiken_swordriver_saber",
 			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"saber",BRAVE_DRAGON_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(SABER_BLANK_2,SABER_BLANK_3).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.addExtraBaseFormItems(SABER_BLANK_2,SABER_BLANK_3).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_BLADES = ITEMS.register("seiken_swordriver_blades",
 			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"blades",SABER_BLANK_1 ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(LION_SENKI_WONDER_RIDE_BOOK,SABER_BLANK_3).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.addExtraBaseFormItems(LION_SENKI_WONDER_RIDE_BOOK,SABER_BLANK_3).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_ESPADA = ITEMS.register("seiken_swordriver_espada",
 			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"espada",SABER_BLANK_1 ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(SABER_BLANK_2,LAMP_DO_ALNGINA_WONDER_RIDE_BOOK).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.addExtraBaseFormItems(SABER_BLANK_2,LAMP_DO_ALNGINA_WONDER_RIDE_BOOK).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SWORD_OF_LOGOS_BUCKLE_BUSTER = ITEMS.register("sword_of_logos_buckle_buster",
 			() -> new SwordOfLogosBuckleItem(ArmorMaterials.DIAMOND,"buster",GENBU_SHINWA_WONDER_RIDE_BOOK_BUSTER ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
@@ -1038,7 +1038,7 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SWORD_OF_LOGOS_BUCKLE_KENZAN = ITEMS.register("sword_of_logos_buckle_kenzan",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kenzan",SARUTOBI_NINJADEN_WONDER_RIDE_BOOK_KENZAN ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
@@ -1060,7 +1060,7 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SWORD_OF_LOGOS_BUCKLE_SLASH = ITEMS.register("sword_of_logos_buckle_slash",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"slash",HANSELNUTS_TO_GRETEL_WONDER_RIDE_BOOK_SLASH ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
@@ -1082,7 +1082,7 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> JAKEN_CALIBURDRIVER = ITEMS.register("jaken_caliburdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"calibur",JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
@@ -1104,19 +1104,19 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SAIKOU_DRIVER = ITEMS.register("seiken_saikou_driver",
 			() -> new SeikenSaikouDriverItem(ArmorMaterials.DIAMOND,"saikou",KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> DOOMS_DRIVER_BUCKLE_SOLOMON = ITEMS.register("dooms_driver_buckle_solomon",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"solomon",OMNI_FORCE_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> DOOMS_DRIVER_BUCKLE_STORIOUS = ITEMS.register("dooms_driver_buckle_storious",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"storious",GRIMOIRE_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> HAKEN_BLADRIVER_FALCHION = ITEMS.register("haken_bladriver_falchion",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"falchion",ETERNAL_PHOENIX_WONDER_RIDE_BOOK_FALCHION ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
@@ -1138,7 +1138,7 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> ROYAL_SWORD_OF_LOGOS_BUCKLE_SABELA = ITEMS.register("royal_sword_of_logos_buckle_sabela",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sabela",KONCHUU_DAIHYAKKA_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS,
@@ -1160,7 +1160,7 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> ROYAL_SWORD_OF_LOGOS_BUCKLE_DURENDAL = ITEMS.register("royal_sword_of_logos_buckle_durendal",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"durendal",OCEAN_HISTORY_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS,
@@ -1182,11 +1182,11 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> HAKEN_BLADRIVER_TASSEL = ITEMS.register("haken_bladriver_tassel",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tassel",TASSEL_DARK_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_DESAST = ITEMS.register("seiken_swordriver_desast",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"desast",GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
@@ -1208,7 +1208,7 @@ public class SaberRiderItems {
 						}
 					});
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM).changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 
 
@@ -1242,11 +1242,11 @@ public class SaberRiderItems {
 
 	public static final DeferredItem<Item> FUUSOUKEN_HAYATE_SHURIKEN = ITEMS.register("fuusouken_hayate_shuriken",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
-					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()).KeepDifItem(FUUSOUKEN_HAYATE_NITOURYU_2.get()));
+					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()).keepDiffItem(FUUSOUKEN_HAYATE_NITOURYU_2.get()));
 
 	public static final DeferredItem<Item> FUUSOUKEN_HAYATE_ITTOURYU = ITEMS.register("fuusouken_hayate_ittouryu",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM)
-					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()).KeepDifItem(FUUSOUKEN_HAYATE_NITOURYU_2.get()));
+					.changeRepairItem(BLANK_WONDER_RIDE_BOOK.get()).keepDiffItem(FUUSOUKEN_HAYATE_NITOURYU_2.get()));
 
 	public static final DeferredItem<Item> ONJUUKEN_SUZUNE = ITEMS.register("onjuuken_suzune",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties())

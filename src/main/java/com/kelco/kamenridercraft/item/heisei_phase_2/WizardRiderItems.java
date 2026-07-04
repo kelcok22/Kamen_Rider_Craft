@@ -889,15 +889,15 @@ public class WizardRiderItems {
 
 	public static final DeferredItem<Item> WIZARD_HEAD = ITEMS.register("wizard_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties())
-					.changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_CHESTPLATE = ITEMS.register("wizard_troso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties())
-					.changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_LEGGINGS = ITEMS.register("wizard_legs",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties())
-					.changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS,
@@ -923,7 +923,7 @@ public class WizardRiderItems {
 					});
 				}
 
-			}.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+			}.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> BEAST_DRIVER = ITEMS.register("beastdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties()){
@@ -948,51 +948,51 @@ public class WizardRiderItems {
 					});
 				}
 			}
-					.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+					.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER = ITEMS.register("whitewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER = ITEMS.register("magewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_B = ITEMS.register("magewizardriver_b",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_blue",MAGE_B_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_G = ITEMS.register("magewizardriver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_green",MAGE_G_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_FOOT_SOLDIERS = ITEMS.register("magewizardriver_foot_soldiers",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_foot_soldiers",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_CAPTAIN = ITEMS.register("magewizardriver_captain",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_captain",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_DRIVER = ITEMS.register("sorcererdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sorcerer",SORCERER_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER_F = ITEMS.register("whitewizardriver_f",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman_female",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARDRIVER = ITEMS.register("dark_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_wizard",DARK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARDRIVER = ITEMS.register("black_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UZAI_BELT = ITEMS.register("uzai_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"uzai", FLAME_WIZARD_RING, WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.overrideBeltText("uzai_belt_belt").hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.overrideBeltText("uzai_belt_belt").hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
 			() -> new BaseItem(new Item.Properties()).KeepItem().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
@@ -1002,7 +1002,7 @@ public class WizardRiderItems {
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).isChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DICE_SABER = ITEMS.register("dice_saber",

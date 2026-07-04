@@ -8,31 +8,31 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class CopyFormChangeItem extends BaseItem {
+    private RiderFormChangeItem formItem;
 
-	private  RiderFormChangeItem FORM_ITEM;
-	
-	public CopyFormChangeItem( Properties properties, Item form_item) {
-		super( properties);
-		if ( form_item instanceof RiderFormChangeItem form) FORM_ITEM=form;
-	
-	}
+    public CopyFormChangeItem(Properties properties, Item form_item) {
+        super(properties);
+        if (form_item instanceof RiderFormChangeItem form) formItem = form;
+
+    }
 
     @Override
-    public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand) {
-        if (FORM_ITEM !=null)FORM_ITEM.interactLivingEntity(stack, player, interactionTarget, usedHand);
+    public @NotNull InteractionResult interactLivingEntity(@NotNull ItemStack stack, @NotNull Player player, @NotNull LivingEntity interactionTarget, @NotNull InteractionHand usedHand) {
+        if (formItem != null && !player.level().isClientSide()) {
+            formItem.interactLivingEntity(stack, player, interactionTarget, usedHand);
+        }
         return InteractionResult.PASS;
     }
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-
-		ItemStack itemstack = player.getItemInHand(usedHand);
-
-		if (FORM_ITEM !=null)FORM_ITEM.use(level, player, usedHand);
-		
-		return InteractionResultHolder.sidedSuccess(itemstack,level.isClientSide());
-
-	}
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+        ItemStack itemStack = player.getItemInHand(usedHand);
+        if (formItem != null && !level.isClientSide()) {
+            formItem.use(level, player, usedHand);
+        }
+        return InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide());
+    }
 }

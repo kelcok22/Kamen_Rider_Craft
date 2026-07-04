@@ -73,9 +73,9 @@ public class ReiwaRidewatchItem extends BaseItem {
             RiderDriverItem belt = (RiderDriverItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelt));
 
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));
-			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.TORSO));
-			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.LEGS));
+			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.helmet));
+			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.chestplate));
+			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.leggings));
             Item key = player.getOffhandItem().getItem();
 
             if (this.summonAltBelts.containsKey(key.toString())) {

@@ -1690,17 +1690,17 @@ public class BuildRiderItems {
 
 
 	public static final DeferredItem<Item> BUILD_HELMET = ITEMS.register("buildhead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> BUILD_CHESTPLATE = ITEMS.register("buildtroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> BUILD_LEGGINGS = ITEMS.register("buildlegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 
 	public static final DeferredItem<Item> BUILD_DRIVER = ITEMS.register("build_driver",
 			() -> new BuildDriverItem(ArmorMaterials.DIAMOND,"build",RABBIT_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS ,
-					new Item.Properties()).addExtraBaseFormItems(TANK_FULL_BOTTLE,FULL_BOTTLE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM)
-					.AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).addExtraBaseFormItems(TANK_FULL_BOTTLE,FULL_BOTTLE).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM)
+					.addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_CROSS_Z = ITEMS.register("build_driver_cross_z",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z", DRAGON_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1722,7 +1722,7 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS)
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS)
 					.changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_GREASE = ITEMS.register("build_driver_grease",
@@ -1745,7 +1745,7 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			}.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_ROGUE = ITEMS.register("build_driver_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "prime_rogue", PRIME_ROGUE_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1767,7 +1767,7 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_BLOOD = ITEMS.register("build_driver_blood",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "blood", BLACK_LOST_COBRA_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1789,7 +1789,7 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_KILLBUS = ITEMS.register("build_driver_killbus",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "killbus", KILLBUS_SPIDER_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1811,7 +1811,7 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_METAL = ITEMS.register("build_driver_metal",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "metal_build", METAL_TANK_TANK_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1833,7 +1833,7 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_PHANTOM = ITEMS.register("build_driver_phantom",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "phantom_build", METAL_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1855,43 +1855,43 @@ public class BuildRiderItems {
 						}
 					}, buf -> buf.writeBlockPos(player.blockPosition()));
 				}
-			}.hasInventoryGui().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER = ITEMS.register("sclash_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER_GREASE = ITEMS.register("sclash_driver_grease",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease", ROBOT_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER_ROGUE = ITEMS.register("sclash_driver_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "rogue", CROCODILE_CRACK_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> EVOL_DRIVER = ITEMS.register("evol_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "evol", COBRA_EVOL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> EVOL_DRIVER_MAD_ROGUE = ITEMS.register("evol_driver_mad_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mad_rogue", MAD_ROGUE_BOTTLES ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> TRANSTEAM_GUN_NIGHT_ROGUE = ITEMS.register("transteam_gun_night_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"night_rogue",LOST_BAT_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS ,
-					new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> TRANSTEAM_GUN_BLOOD_STALK = ITEMS.register("transteam_gun_blood_stalk",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_stalk",LOST_COBRA_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS
-					, new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> NEBULA_STEAM_GUN_KAISER = ITEMS.register("nebula_steam_gun_kaiser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kaiser",GEAR_REMOCON_BLUE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS ,
-					new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> NEBULA_STEAM_GUN_HELL_BROS = ITEMS.register("nebula_steam_gun_hell_bros",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS ,
-					new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).changeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> DRILL_CRUSHER = ITEMS.register("drill_crusher",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(FULL_BOTTLE.get()));

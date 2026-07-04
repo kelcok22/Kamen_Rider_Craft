@@ -49,7 +49,7 @@ public class GenmEntity extends BaseHenchmenEntity {
 
                 ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
                 if (this.level().dimension() == Level.OVERWORLD || this.level().dimension() == CITY) {
-                    if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && driverItem.isTransformed(player) && driverItem.Rider.toLowerCase().contains("lazer"))
+                    if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && driverItem.isTransformed(player) && driverItem.riderName.toLowerCase().contains("lazer"))
                     ServerLifecycleHooks.getCurrentServer().getLevel(this.level().dimension()).setWeatherParameters(10, 5000, true, false);
                 }
             }

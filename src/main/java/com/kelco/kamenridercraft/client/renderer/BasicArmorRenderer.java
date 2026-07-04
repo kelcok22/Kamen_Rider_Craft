@@ -21,7 +21,7 @@ public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
         super(new BasicArmorModel());
 
         if (livingEntity.getItemBySlot(equipmentSlot).getItem() instanceof BasicArmorItem belt) {
-            if (belt.Glow) addRenderLayer(new AutoGlowingGeoLayer<>(this));
+            if (belt.glowing) addRenderLayer(new AutoGlowingGeoLayer<>(this));
         }
     }
 

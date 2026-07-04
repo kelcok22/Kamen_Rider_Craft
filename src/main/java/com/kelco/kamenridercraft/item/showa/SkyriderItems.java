@@ -75,21 +75,21 @@ public class SkyriderItems {
                     .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  SKYRIDERHELMET = ITEMS.register("skyriderhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
     public static final DeferredItem<Item>  SKYRIDERCHESTPLATE = ITEMS.register("skyridertroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
     public static final DeferredItem<Item>  SKYRIDERLEGGINGS = ITEMS.register("skyriderlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  TORNADO = ITEMS.register("tornado",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  GANGAN_G_BELT = ITEMS.register("gangan_g_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gangan_g",GG_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gangan_g",GG_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  FAKE_TORNADO = ITEMS.register("fake_tornado",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).has_basic_model());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).has_basic_model());
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

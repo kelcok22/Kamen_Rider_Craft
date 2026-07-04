@@ -15,7 +15,7 @@ public class KaixaDriverItem extends RiderDriverItem {
 	public KaixaDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Unlimited_Belt_Textures = 2;
+		unlimitedBeltTextures = 2;
 	}
 
     @Override

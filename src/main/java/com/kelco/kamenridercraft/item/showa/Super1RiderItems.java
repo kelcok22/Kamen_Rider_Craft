@@ -56,18 +56,18 @@ public class Super1RiderItems {
             }.hasSD().hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUPER1HELMET = ITEMS.register("super_1head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
     public static final DeferredItem<Item>  SUPER1CHESTPLATE = ITEMS.register("super_1troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
     public static final DeferredItem<Item>  SUPER1LEGGINGS = ITEMS.register("super_1legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  CYCLODE = ITEMS.register("cyclode",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
+                    .hasSDForm().isA1().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  ROBOT_CYCLODE = ITEMS.register("robot_cyclode",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"robot_super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"robot_super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SUPER1_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

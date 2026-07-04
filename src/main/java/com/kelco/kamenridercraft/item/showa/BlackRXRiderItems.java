@@ -117,18 +117,18 @@ public class BlackRXRiderItems {
 
 
     public static final DeferredItem<Item> RXHELMET = ITEMS.register("rxhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
     public static final DeferredItem<Item>  RXCHESTPLATE = ITEMS.register("rxtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
     public static final DeferredItem<Item>  RXLEGGINGS = ITEMS.register("rxlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUN_RISER = ITEMS.register("sun_riser",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_rx",RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  MOON_RISER = ITEMS.register("moon_riser",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"white_rx",MOON_RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"white_rx",MOON_RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>REVOLCANE = ITEMS.register("revolcane",

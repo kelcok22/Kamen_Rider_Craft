@@ -19,7 +19,7 @@ public class DiendBeltItem extends RiderDriverItem {
 	public DiendBeltItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Unlimited_Belt_Textures = 1;
+		unlimitedBeltTextures = 1;
 	}
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {

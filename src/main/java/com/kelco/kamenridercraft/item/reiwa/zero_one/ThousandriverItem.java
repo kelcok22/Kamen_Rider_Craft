@@ -50,8 +50,8 @@ public class ThousandriverItem extends RiderDriverItem {
 		boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
         boolean bug = rider.getAttribute(Attributes.HAS_BUG).getValue() !=0;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-            String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
-				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+            String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
+				if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
 					belt = getFormItem(itemstack,1).getBeltTex();
 				}
 				return "belts/"+belt;

@@ -111,25 +111,25 @@ public class XRiderItems {
 
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
     public static final DeferredItem<Item> XCHESTPLATE = ITEMS.register("xtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
     public static final DeferredItem<Item> XLEGGINGS = ITEMS.register("xlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL = ITEMS.register("ridol",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+                    .hasSDForm().isA1().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_RIDOL = ITEMS.register("dark_ridol",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo()
-                    .overrideBeltText("dark_ridol_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+                    .overrideBeltText("dark_ridol_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_RIDOL = ITEMS.register("fake_ridol",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_BELT = ITEMS.register("apollogeist_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hasSDForm().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hasSDForm().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",

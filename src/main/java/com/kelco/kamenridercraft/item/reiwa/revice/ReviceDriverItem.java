@@ -31,14 +31,14 @@ public class ReviceDriverItem extends RiderDriverItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        Has_basic_belt_info = false;
+        hasBasicBeltInfo = false;
         Item formItem = getFormItem(stack, 1);
 
         if (formItem == ReviceRiderItems.ROLLING_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.jack_revice"));
         else if (formItem == ReviceRiderItems.THUNDER_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.revice"));
         else if (formItem == ReviceRiderItems.FIFTY_GALE_VISTAMP.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.igarashi"));
         else {
-            tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+            tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
             tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
@@ -63,14 +63,14 @@ public class ReviceDriverItem extends RiderDriverItem {
 				player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player).isEmpty();
     }
 	
-	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
+	public void onTransformation(ItemStack itemstack, LivingEntity entity) {
 		ItemStack form = new ItemStack(RiderDriverItem.getFormItem(itemstack, 1));
 
 		if (entity instanceof Player player && ServerConfig.viceSpawning && !viceSummoned(player)
 		&& itemstack.getItem() == ReviceRiderItems.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);
-		super.OnTransformation(itemstack, entity);
+		super.onTransformation(itemstack, entity);
 	}
 	
 	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {

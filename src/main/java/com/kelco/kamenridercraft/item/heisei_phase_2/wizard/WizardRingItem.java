@@ -44,7 +44,7 @@ public class WizardRingItem extends BaseItem {
 		ItemStack itemstack = player.getItemInHand(hand);
 		
 		if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-		&& belt.isTransformed(player) && ArrayUtils.contains(FORMS, belt.Rider)) {
+		&& belt.isTransformed(player) && ArrayUtils.contains(FORMS, belt.riderName)) {
 			if (EFFECTS != null) {
                 for (MobEffectInstance effect : EFFECTS) {
                     player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, true));

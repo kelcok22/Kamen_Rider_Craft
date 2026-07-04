@@ -388,69 +388,69 @@ public class AgitoRiderItems {
 			}.addToList(GSystemChipProgrammer.G_CHIP, 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITOHELMET = ITEMS.register("agitohead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> AGITOCHESTPLATE = ITEMS.register("agitotroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> AGITOLEGGINGS = ITEMS.register("agitolegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> ALTERING = ITEMS.register("alter_ring",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agito",AGITO_GROUND ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agito",AGITO_GROUND ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> ALTERING_REIKO = ITEMS.register("alter_ring_reiko",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"female_agito",AGITO_TRINITY ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"female_agito",AGITO_TRINITY ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 
 	public static final DeferredItem<Item> META_FACTOR = ITEMS.register("meta_factor",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gills",GILLS ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gills",GILLS ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> ANK_POINT = ITEMS.register("ank_point",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito",ANOTHER_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G3 = ITEMS.register("g3_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3",G3_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G3_X = ITEMS.register("g3_x_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_x",G3_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G3_MILD = ITEMS.register("g3_mild_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_mild",G3_MILD_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G4 = ITEMS.register("g4_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4",G4_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> G_BUCKLE_G4_X = ITEMS.register("g4_x_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G6 = ITEMS.register("g6_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g6",G6_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G7 = ITEMS.register("g7_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g7",G7_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC))
-                    .hideBeltFormInfo().has_basic_model().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+                    .hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g1",G1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> V1_BELT = ITEMS.register("v1_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v1",V1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 	public static final DeferredItem<Item> ALTERING_MIRAGE = ITEMS.register("alter_ring_miracle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> ANK_POINT_BURNING = ITEMS.register("ank_point_burning",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito_koji",ANOTHER_AGITO_KOJI ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito_koji",ANOTHER_AGITO_KOJI ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
 	public static final DeferredItem<Item> FLAME_SABER = ITEMS.register("flame_saber",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));

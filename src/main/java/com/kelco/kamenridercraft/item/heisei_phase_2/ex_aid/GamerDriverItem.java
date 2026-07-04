@@ -35,7 +35,7 @@ public class GamerDriverItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
-		Num_Base_Form_Item=2;
+		numBaseFormItems =2;
 	}
 
 	public GamerDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> armorFormItem,DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
@@ -43,7 +43,7 @@ public class GamerDriverItem extends RiderDriverItem {
 		super(material, rider, baseFormItem,armorFormItem, head, torso, legs, properties);
 
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
-		Num_Base_Form_Item=2;
+		numBaseFormItems =2;
 	}
 
 	public void summonParaDX(Player player) {
@@ -67,14 +67,14 @@ public class GamerDriverItem extends RiderDriverItem {
 		return false;
 	}
 
-	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
+	public void onTransformation(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
 				&& itemstack.getItem() == ExAidRiderItems.GAMER_DRIVER_EX_AID.get()
 				&& (RiderDriverItem.getFormItem(itemstack, 1)== ExAidRiderItems.MIGHTY_BROTHERS_XX_GASHAT_R.get()
 				|| RiderDriverItem.getFormItem(itemstack, 1)== ExAidRiderItems.MIGHTY_BROTHERS_XX_GASHAT_L.get()
 				|| RiderDriverItem.getFormItem(itemstack, 1)== ExAidRiderItems.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
 			summonParaDX(player);
-		super.OnTransformation(itemstack, entity);
+		super.onTransformation(itemstack, entity);
 	}
 
 	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
@@ -90,15 +90,15 @@ public class GamerDriverItem extends RiderDriverItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		this.Has_basic_belt_info = false;
+		this.hasBasicBeltInfo = false;
 		Item formItem = getFormItem(stack, 1);
 		Item formItem2 = getFormItem(stack, 2);
 
 		if (this == ExAidRiderItems.GAMER_DRIVER_SNIPE.get() && formItem == ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.chronos"));
 		else if (formItem == ExAidRiderItems.BAKUSOU_BIKE_GASHAT_TURBO.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.lazer_turbo"));
-		else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
+		else tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
 
-		if (this.Show_belt_form_info) {
+		if (this.showBeltFormInfo) {
 			if (formItem2!= ModdedItemCore.BLANK_FORM.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form", Component.translatable(formItem.toString() + ".form_base")));
 			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 		}
@@ -109,8 +109,8 @@ public class GamerDriverItem extends RiderDriverItem {
 	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
-			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+			String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
+			if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
 				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 
@@ -181,13 +181,13 @@ public class GamerDriverItem extends RiderDriverItem {
 
 		if (slot == EquipmentSlot.CHEST) {
 			if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getFlyingModel(this.Rider));
-			} else if (Objects.equals(getFormItem(itemstack, 2).getModel(this.Rider), "default.geo.json")) {
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getFlyingModel(this.riderName));
+			} else if (Objects.equals(getFormItem(itemstack, 2).getModel(this.riderName), "default.geo.json")) {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/bigger_rider_plusbelt.geo.json");
 			}
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getModel(this.Rider));
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getModel(this.riderName));
 		}
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 1).getModel(this.Rider));
+		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 1).getModel(this.riderName));
 
 	}
 

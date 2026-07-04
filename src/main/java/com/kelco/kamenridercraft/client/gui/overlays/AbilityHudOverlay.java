@@ -96,7 +96,7 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
             return false;
         }
         if (driverSlot instanceof RiderDriverItem && ((RiderDriverItem) driverSlot).isTransformed(player)) {
-            return !((RiderDriverItem) driverSlot).Rider.toLowerCase().contains("ohma");
+            return !((RiderDriverItem) driverSlot).riderName.toLowerCase().contains("ohma");
         }
         return true;
     }

@@ -200,7 +200,7 @@ public class AttackRideCardItem extends BaseItem {
 		
 		if (!p_41128_.isClientSide() && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(p_41129_)){
 			if ((belt == DecadeRiderItems.DECADRIVER.get() || belt == DecadeRiderItems.NEO_DECADRIVER.get() || belt == DecadeRiderItems.DARK_DECADRIVER.get())
-				&& ArrayUtils.contains(FORMS, belt.getText(p_41129_.getItemBySlot(EquipmentSlot.FEET), null, p_41129_, belt.Rider))) {
+				&& ArrayUtils.contains(FORMS, belt.getText(p_41129_.getItemBySlot(EquipmentSlot.FEET), null, p_41129_, belt.riderName))) {
 				attackride(p_41128_, p_41129_);
 
 				if (!p_41129_.isCreative()) {

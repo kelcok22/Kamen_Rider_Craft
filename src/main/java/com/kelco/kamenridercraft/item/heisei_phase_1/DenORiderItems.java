@@ -477,51 +477,51 @@ public class DenORiderItems {
 
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_OCHESTPLATE = ITEMS.register("den_otroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_OLEGGINGS = ITEMS.register("den_olegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DEN_O_BELT = ITEMS.register("den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"den_o",RIDER_TICKET_SWORD ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> ZERONOS_BELT = ITEMS.register("zeronos_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeronos",ZERONOS_ALTAIR_CARD ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> NEGA_DEN_O_BELT = ITEMS.register("nega_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nega_den_o",RIDER_TICKET_NEGA ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> NEW_DEN_O_BELT = ITEMS.register("new_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"new_den_o",RIDER_TICKET_STRIKE ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> GAOH_BELT = ITEMS.register("gaoh_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaoh",RIDER_TICKET_GAOH ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> YUUKI_BELT = ITEMS.register("yuuki_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yuuki",RIDER_TICKET_YUUKI ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> G_DEN_O_BELT = ITEMS.register("g_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g_den_o",RIDER_TICKET_G ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> PRETTY_DEN_O_BELT = ITEMS.register("pretty_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pretty_den_o",RIDER_TICKET_PRETTY_DEN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> SHIN_O_BELT = ITEMS.register("shin_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties()).hideBeltFormInfo()
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).has_basic_model().changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).has_basic_model().changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DAN_O_BELT = ITEMS.register("dan_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dan_o",RIDER_TICKET_DAN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).has_basic_model().changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).has_basic_model().changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
 			() -> new RiderPassItem(new Item.Properties(),500).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));

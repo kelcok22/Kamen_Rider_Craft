@@ -23,7 +23,7 @@ public class ZillionDriverItem  extends RiderDriverItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        Has_basic_belt_info=false;
+        hasBasicBeltInfo =false;
         Item formItem = getFormItem(stack, 1);
 
         if(formItem== GeatsRiderItems.SIRIUS_CARD.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.regad"));

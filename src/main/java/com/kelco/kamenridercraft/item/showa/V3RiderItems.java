@@ -79,30 +79,30 @@ public class V3RiderItems {
             }.hasSD().isGlowing().setShowFace().addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> V3HELMET = ITEMS.register("v3head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
     public static final DeferredItem<Item> V3CHESTPLATE = ITEMS.register("v3troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
     public static final DeferredItem<Item> V3LEGGINGS = ITEMS.register("v3legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DOUBLE_TYPHOON = ITEMS.register("double_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_BELT = ITEMS.register("riderman_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).isA1()
-                    .hasSDForm().overrideBeltText("riderman_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+                    .hasSDForm().overrideBeltText("riderman_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_DOUBLE_TYPHOON = ITEMS.register("dark_double_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).hideBeltFormInfo()
-                    .overrideBeltText("dark_double_typhoon_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+                    .overrideBeltText("dark_double_typhoon_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_RIDERMAN_BELT = ITEMS.register("dark_riderman_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).hideBeltFormInfo()
-                    .overrideBeltText("dark_riderman_belt").AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
+                    .overrideBeltText("dark_riderman_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_DOUBLE_TYPHOON = ITEMS.register("fake_double_typhoon",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM).has_basic_model());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> ROPE_ARM = ITEMS.register("rope_arm",
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.6F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.V3_TAB_ITEM));

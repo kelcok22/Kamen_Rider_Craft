@@ -93,18 +93,18 @@ public class BlackSunRiderItems {
 
 
     public static final DeferredItem<Item> BLACKSUNHELMET = ITEMS.register("blacksunhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
     public static final DeferredItem<Item> BLACKSUNCHESTPLATE = ITEMS.register("blacksuntroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
     public static final DeferredItem<Item> BLACKSUNLEGGINGS = ITEMS.register("blacksunlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CENTURY_KING_SUN_DRIVER = ITEMS.register("century_king_sun_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_sun",KING_STONE_SUN ,BLACKSUNHELMET,BLACKSUNCHESTPLATE,BLACKSUNLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_sun",KING_STONE_SUN ,BLACKSUNHELMET,BLACKSUNCHESTPLATE,BLACKSUNLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
 
     public static final DeferredItem<Item> CENTURY_KING_MOON_DRIVER = ITEMS.register("century_king_moon_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadowmoon",KING_STONE_MOON ,BLACKSUNHELMET,BLACKSUNCHESTPLATE,BLACKSUNLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadowmoon",KING_STONE_MOON ,BLACKSUNHELMET,BLACKSUNCHESTPLATE,BLACKSUNLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));
 
     public static final DeferredItem<Item> CENTURY_KING_BLACK_BLADE = ITEMS.register("century_king_black_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));

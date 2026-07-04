@@ -79,28 +79,28 @@ public class ZXRiderItems {
             }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZXHELMET = ITEMS.register("zxhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
     public static final DeferredItem<Item>  ZXCHESTPLATE = ITEMS.register("zxtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
     public static final DeferredItem<Item>  ZXLEGGINGS = ITEMS.register("zxlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  ZX_BELT = ITEMS.register("zx_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+                    .hasSDForm().isA1().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUSANOO_BELT = ITEMS.register("susanoo_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"susanoo_zx",SUSANOO_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"susanoo_zx",SUSANOO_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
     public static final DeferredItem<Item>  TSUKUYOMI_BELT = ITEMS.register("tsukuyomi_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tsukuyomi_zx",TSUKUYOMI_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tsukuyomi_zx",TSUKUYOMI_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
     public static final DeferredItem<Item>  AMATERASU_BELT = ITEMS.register("amaterasu_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amaterasu_zx",AMATERASU_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amaterasu_zx",AMATERASU_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item> MICRO_CHAIN = ITEMS.register("micro_chain",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).changeRepairItem(RIDER_CIRCUIT.get()));
     public static final DeferredItem<SwordItem> CROSS_SHURIKEN = ITEMS.register("cross_shuriken",
-            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).changeRepairItem(RIDER_CIRCUIT.get()));
+            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZX_TAB_ITEM).changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

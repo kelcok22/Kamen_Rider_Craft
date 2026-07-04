@@ -34,7 +34,7 @@ public class DriveDriverItem extends RiderDriverItem {
 	public DriveDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties.component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-		Unlimited_Textures=1;
+		unlimitedTextures =1;
 	}
 
 	@Override
@@ -66,15 +66,15 @@ public class DriveDriverItem extends RiderDriverItem {
 				belt!= DriveRiderItems.METRO_PD_DRIVER_HONOH.get()&
 				belt!= DriveRiderItems.BRAIN_DRIVER.get()) {
 
-			this.Has_basic_belt_info = false;
+			this.hasBasicBeltInfo = false;
 			Item formItem = getFormItem(stack, 1);
 			Item formItem2 = getFormItem(stack, 2);
 
-			if (formItem == DriveRiderItems.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
+			if (formItem == DriveRiderItems.SHIFT_PROTO_SPEED.get() & Objects.equals(riderName, "drive"))
 				tooltipComponents.add(Component.translatable("kamenridercraft.name.zero_drive"));
-			else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
+			else tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
 
-			if (formItem == DriveRiderItems.SHIFT_PROTO_SPEED.get() & Objects.equals(Rider, "drive"))
+			if (formItem == DriveRiderItems.SHIFT_PROTO_SPEED.get() & Objects.equals(riderName, "drive"))
 				tooltipComponents.add(Component.translatable(formItem + ".zero_drive.form"));
 			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 

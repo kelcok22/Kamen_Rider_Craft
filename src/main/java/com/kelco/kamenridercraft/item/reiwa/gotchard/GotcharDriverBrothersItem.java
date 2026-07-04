@@ -25,12 +25,12 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 	@Override
 	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
-		String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
+		String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
 
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+			if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
 				belt = getFormItem(itemstack,1).getBeltTex();
 			}
 			if(Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/gotchard_belt_big.geo.json")) {

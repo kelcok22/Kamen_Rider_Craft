@@ -58,9 +58,9 @@ public class LegendaryChemyCardItem extends RiderFormChangeItem {
             LegendarySummonEntity summon = MobsCore.LEGENDARY_SUMMON.get().create(level);
             if (summon != null) {
                 summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
-                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(baseForm.HEAD));
-                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(baseForm.TORSO));
-                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(baseForm.LEGS));
+                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(baseForm.helmet));
+                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(baseForm.chestplate));
+                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(baseForm.leggings));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(baseForm));
                 if (!baseFormItems.isEmpty())
                     for (RiderFormChangeItem form : baseFormItems) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
@@ -74,9 +74,9 @@ public class LegendaryChemyCardItem extends RiderFormChangeItem {
             LegendarySummonEntity summon2 = MobsCore.LEGENDARY_SUMMON.get().create(level);
             if (summon2 != null) {
                 summon2.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
-                summon2.setItemSlot(EquipmentSlot.HEAD, new ItemStack(superForm.HEAD));
-                summon2.setItemSlot(EquipmentSlot.CHEST, new ItemStack(superForm.TORSO));
-                summon2.setItemSlot(EquipmentSlot.LEGS, new ItemStack(superForm.LEGS));
+                summon2.setItemSlot(EquipmentSlot.HEAD, new ItemStack(superForm.helmet));
+                summon2.setItemSlot(EquipmentSlot.CHEST, new ItemStack(superForm.chestplate));
+                summon2.setItemSlot(EquipmentSlot.LEGS, new ItemStack(superForm.leggings));
                 summon2.setItemSlot(EquipmentSlot.FEET, new ItemStack(superForm));
                 if (!superFormItems.isEmpty())
                     for (RiderFormChangeItem form : superFormItems) RiderDriverItem.setFormItem(summon2.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());

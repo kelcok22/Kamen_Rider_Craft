@@ -33,7 +33,7 @@ public class BaseCityItem extends BaseItem {
         super(properties);
     }
 
-    public void teleportToDimension(ItemStack itemstack, ServerLevel otherDim, ServerPlayer entity) {
+    public void teleportToDimension(ItemStack itemStack, ServerLevel otherDim, ServerPlayer entity) {
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
         DimensionTransition respawn = entity.findRespawnPositionAndUseSpawnBlock(false, DimensionTransition.DO_NOTHING);
 
@@ -48,23 +48,23 @@ public class BaseCityItem extends BaseItem {
                 entity.teleportRelative(0.0, 5.0, 0.0);
             }
 
-            if (get_has_city(itemstack)) {
-                int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());
-                int Z = (int) get_XYZ(itemstack, "z1", respawn.pos().z());
+            if (getHasCity(itemStack)) {
+                int X = (int) getXYZ(itemStack, "x1", respawn.pos().x());
+                int Z = (int) getXYZ(itemStack, "z1", respawn.pos().z());
                 blockpos = new BlockPos(X, 70, Z);
             } else {
                 TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", "city"));
                 blockpos = otherDim.findNearestMapStructure(tag, entity.blockPosition(), 100, false);
 
                 assert blockpos != null;
-                saveXYZ(itemstack, blockpos.getX(), blockpos.getY(), blockpos.getZ(), 1, entity.level().dimension());
+                saveXYZ(itemStack, blockpos.getX(), blockpos.getY(), blockpos.getZ(), 1, entity.level().dimension());
             }
 
             entity.teleportTo(otherDim, blockpos.getX(), 64, blockpos.getZ(), new HashSet<>(), 0, 0);
         } else {
-            double X = get_XYZ(itemstack, "x0", respawn.pos().x());
-            double Y = get_XYZ(itemstack, "y0", respawn.pos().y());
-            double Z = get_XYZ(itemstack, "z0", respawn.pos().z());
+            double X = getXYZ(itemStack, "x0", respawn.pos().x());
+            double Y = getXYZ(itemStack, "y0", respawn.pos().y());
+            double Z = getXYZ(itemStack, "z0", respawn.pos().z());
 
             entity.teleportTo(otherDim, X, Y, Z, new HashSet<>(), 0, 0);
             while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {
@@ -76,7 +76,7 @@ public class BaseCityItem extends BaseItem {
 
 
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand p_41130_) {
-        ItemStack itemstack = player.getItemInHand(p_41130_);
+        ItemStack itemStack = player.getItemInHand(p_41130_);
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
 
         if (player instanceof ServerPlayer serverPlayer) {
@@ -88,57 +88,57 @@ public class BaseCityItem extends BaseItem {
                     (entity.getOwner() == player && !entity.isOrderedToSit() && !entity.isSleeping()));
             if (level.dimension() == MOON) {
                 if (player.isShiftKeyDown()) {
-                    this.teleportToDimension(itemstack, Server.overworld(), serverPlayer);
+                    this.teleportToDimension(itemStack, Server.overworld(), serverPlayer);
                     for (LivingEntity ally : nearbyAllies)
                         ally.teleportTo(Server.overworld(), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
                 } else {
 
-                    this.teleportToDimension(itemstack, Server.getLevel(getReturnDimension(itemstack)), serverPlayer);
+                    this.teleportToDimension(itemStack, Server.getLevel(getReturnDimension(itemStack)), serverPlayer);
                     for (LivingEntity ally : nearbyAllies)
-                        ally.teleportTo(Objects.requireNonNull(Server.getLevel(getReturnDimension(itemstack))), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
+                        ally.teleportTo(Objects.requireNonNull(Server.getLevel(getReturnDimension(itemStack))), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
                 }
             } else {
                 double X = player.position().x;
                 double Y = player.position().y;
                 double Z = player.position().z;
-                saveXYZ(itemstack, X, Y, Z, 0, level.dimension());
-                this.teleportToDimension(itemstack, Server.getLevel(MOON), serverPlayer);
+                saveXYZ(itemStack, X, Y, Z, 0, level.dimension());
+                this.teleportToDimension(itemStack, Server.getLevel(MOON), serverPlayer);
                 for (LivingEntity ally : nearbyAllies)
                     ally.teleportTo(Objects.requireNonNull(Server.getLevel(MOON)), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
             }
             if (!player.isCreative()) player.getCooldowns().addCooldown(this, 10);
         }
 
-        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+        return InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide());
     }
 
-    public static boolean get_has_city(ItemStack itemstack) {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+    public static boolean getHasCity(ItemStack itemStack) {
+        if (itemStack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             return tag.getBoolean("has_city");
         }
         return false;
     }
 
-    public static double get_XYZ(ItemStack itemstack, String slot, double respawn) {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+    public static double getXYZ(ItemStack itemStack, String slot, double respawn) {
+        if (itemStack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             return tag.getDouble(slot);
         }
         return respawn;
     }
 
-    public static ResourceKey<Level> getReturnDimension(ItemStack itemstack) {
-        if (itemstack.has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+    public static ResourceKey<Level> getReturnDimension(ItemStack itemStack) {
+        if (itemStack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             return ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse(tag.getString("return_dimension")));
         }
         return Level.OVERWORLD;
     }
 
-    public static void saveXYZ(ItemStack itemstack, double x, double y, double z, int num, ResourceKey<Level> dimension) {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+    public static void saveXYZ(ItemStack itemStack, double x, double y, double z, int num, ResourceKey<Level> dimension) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
+            itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         CompoundTag tag = new CompoundTag();
         Consumer<CompoundTag> data = form ->
@@ -152,6 +152,6 @@ public class BaseCityItem extends BaseItem {
             }
         };
         data.accept(tag);
-        CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
     }
 }

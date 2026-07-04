@@ -304,23 +304,23 @@ public class KuugaRiderItems {
 
 
 	public static final DeferredItem<Item> KUUGAHELMET = ITEMS.register("kuugahead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
 	public static final DeferredItem<Item> KUUGACHESTPLATE = ITEMS.register("kuugatroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
 	public static final DeferredItem<Item> KUUGALEGGINGS = ITEMS.register("kuugalegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
 
 	public static final DeferredItem<Item> ARCLE = ITEMS.register("arcle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kuuga",KUUGA_MIGHTY ,KUUGAHELMET, KUUGACHESTPLATE,KUUGALEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
 
 	public static final DeferredItem<Item> MANGA_ARCLE = ITEMS.register("manga_arcle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kuuga_manga",KUUGA_MANGA ,KUUGAHELMET, KUUGACHESTPLATE,KUUGALEGGINGS , new Item.Properties()
-					.rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
+					.rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
 
 	public static final DeferredItem<Item> N_DAGUVA_ZEBA_BELT = ITEMS.register("n_daguva_zeba_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"n_daguva_zeba",N_DAGUVA_ZEBA ,KUUGAHELMET, KUUGACHESTPLATE,KUUGALEGGINGS , new Item.Properties().rarity(Rarity.RARE)
-			).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).has_basic_model().changeRepairItem(KUUGA_GROWING.get()));
+			).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).has_basic_model().changeRepairItem(KUUGA_GROWING.get()));
 
 
 	public static final DeferredItem<Item> DRAGON_ROD = ITEMS.register("dragon_rod",

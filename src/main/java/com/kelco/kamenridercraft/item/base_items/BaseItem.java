@@ -61,17 +61,17 @@ public class BaseItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
-        FoodProperties foodproperties = itemstack.getFoodProperties(player);
+        ItemStack itemStack = player.getItemInHand(usedHand);
+        FoodProperties foodproperties = itemStack.getFoodProperties(player);
 
         ResourceLocation potions = ResourceLocation.fromNamespaceAndPath("c", "potions");
         ResourceLocation drinks = ResourceLocation.fromNamespaceAndPath("c", "drinks");
 
-        boolean isPotion = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, potions)).stream().anyMatch(e -> e == itemstack.getItem());
-        boolean isDrink = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, drinks)).stream().anyMatch(e -> e == itemstack.getItem());
+        boolean isPotion = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, potions)).stream().anyMatch(e -> e == itemStack.getItem());
+        boolean isDrink = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, drinks)).stream().anyMatch(e -> e == itemStack.getItem());
 
         if ((foodproperties != null || isDrink || isPotion) && player.hasEffect(EffectCore.GHOST)) {
-            return InteractionResultHolder.fail(itemstack);
+            return InteractionResultHolder.fail(itemStack);
         }
         return super.use(level, player, usedHand);
     }

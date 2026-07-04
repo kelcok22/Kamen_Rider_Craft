@@ -36,9 +36,9 @@ public class GDenOPassItem extends BaseCityItem {
                 entity.teleportRelative(0.0, 5.0, 0.0);
             }
 
-            if (get_has_city(itemstack)) {
-                int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());
-                int Z = (int) get_XYZ(itemstack, "z1", respawn.pos().z());
+            if (getHasCity(itemstack)) {
+                int X = (int) getXYZ(itemstack, "x1", respawn.pos().x());
+                int Z = (int) getXYZ(itemstack, "z1", respawn.pos().z());
                 blockpos = new BlockPos(X, 70, Z);
             } else {
                 TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", "chiba_city"));
@@ -50,9 +50,9 @@ public class GDenOPassItem extends BaseCityItem {
 
             entity.teleportTo(otherDim, blockpos.getX(), 64, blockpos.getZ(), new HashSet<>(), 0, 0);
         } else {
-            double X = get_XYZ(itemstack, "x0", respawn.pos().x());
-            double Y = get_XYZ(itemstack, "y0", respawn.pos().y());
-            double Z = get_XYZ(itemstack, "z0", respawn.pos().z());
+            double X = getXYZ(itemstack, "x0", respawn.pos().x());
+            double Y = getXYZ(itemstack, "y0", respawn.pos().y());
+            double Z = getXYZ(itemstack, "z0", respawn.pos().z());
 
             entity.teleportTo(otherDim, X, Y, Z, new HashSet<>(), 0, 0);
             while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {

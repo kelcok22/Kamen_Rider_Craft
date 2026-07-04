@@ -14,35 +14,37 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.function.Supplier;
 
 
 public class SummonBikeItem extends BaseItem {
-    private List<Component> TEXT = Lists.newArrayList();
-    private Supplier<? extends EntityType<? extends baseBikeEntity>> BOSS;
+    private List<Component> text = Lists.newArrayList();
+    private Supplier<? extends EntityType<? extends baseBikeEntity>> bike;
 
-    public SummonBikeItem(Properties properties, Supplier<? extends EntityType<? extends baseBikeEntity>> boss) {
+    public SummonBikeItem(Properties properties, Supplier<? extends EntityType<? extends baseBikeEntity>> bike) {
         super(properties);
-        BOSS = boss;
+        this.bike = bike;
     }
 
-    public InteractionResult useOn(UseOnContext context) {
+    public @NotNull InteractionResult useOn(UseOnContext context) {
         Player player = context.getPlayer();
-        ItemStack itemstack = player.getItemInHand(context.getHand());
+        assert player != null;
+        ItemStack itemStack = player.getItemInHand(context.getHand());
         Level level = context.getLevel();
 
         if (!level.isClientSide()) {
             BlockPos pos = context.getClickedPos();
-            baseBikeEntity boss = BOSS.get().create(level);
+            baseBikeEntity boss = bike.get().create(level);
             if (boss != null) {
                 boss.moveTo(pos.getX(), pos.getY() + 1, pos.getZ(), 0, 0.0F);
                 level.addFreshEntity(boss);
-                if (!TEXT.isEmpty()) for (Component text : TEXT) {
+                if (!text.isEmpty()) for (Component text : text) {
                     player.displayClientMessage(text, true);
                 }
-                itemstack.consume(1, player);
+                itemStack.consume(1, player);
                 CriteriaTriggers.SUMMONED_ENTITY.trigger((ServerPlayer) player, boss);
                 player.awardStat(Stats.ITEM_USED.get(this));
             }

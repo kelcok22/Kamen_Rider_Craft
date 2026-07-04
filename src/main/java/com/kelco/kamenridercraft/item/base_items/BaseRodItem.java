@@ -50,20 +50,20 @@ public class BaseRodItem extends FishingRodItem {
         return this;
     }
 
-    public static int getMode(ItemStack itemstack) {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+    public static int getMode(ItemStack itemStack) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
             return 0;
         }
-        CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+        CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
         return tag.getInt("item_mode");
     }
 
-    public static void setMode(ItemStack itemstack) {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+    public static void setMode(ItemStack itemStack) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
+            itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
-        CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
-        tag.putInt("item_mode", getMode(itemstack) == 0 ? 1 : 0);
+        CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+        tag.putInt("item_mode", getMode(itemStack) == 0 ? 1 : 0);
     }
 
     public BaseRodItem keepDiffItem(Item item) {

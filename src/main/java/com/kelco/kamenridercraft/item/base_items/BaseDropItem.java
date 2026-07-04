@@ -37,13 +37,13 @@ public class BaseDropItem extends BaseItem {
 
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand interactionHand) {
-        ItemStack itemstack = player.getItemInHand(interactionHand);
+        ItemStack itemStack = player.getItemInHand(interactionHand);
 
         if (world instanceof ServerLevel server) {
             this.dropItem(server, player);
-            if (!player.hasInfiniteMaterials()) itemstack.shrink(1);
+            if (!player.hasInfiniteMaterials()) itemStack.shrink(1);
 
         }
-        return InteractionResultHolder.consume(itemstack);
+        return InteractionResultHolder.consume(itemStack);
     }
 }

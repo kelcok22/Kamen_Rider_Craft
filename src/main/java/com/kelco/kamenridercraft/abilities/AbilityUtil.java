@@ -28,7 +28,7 @@ public class AbilityUtil {
     public static void calculateAbility(LivingEntity user, String ability) {
         if (!user.level().isClientSide() && user.getData(ABILITY_TICK) == 0 && user.getData(ABILITY_COOLDOWN) == 0 && !user.isSleeping()) {
             AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
-            boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.Rider.toLowerCase().contains("ohma"));
+            boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.riderName.toLowerCase().contains("ohma"));
             switch (ability) {
                 case "rider_punch", "ground_rider_punch":
                     if (!user.isFallFlying()) {
@@ -124,8 +124,8 @@ public class AbilityUtil {
                 var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
                 switch (abilitySlot) {
                     case 1:
-                        if (beltCheck.Num_Base_Form_Item != 1) {
-                            for (int n = 1; n <= beltCheck.Num_Base_Form_Item - 1; n++) {
+                        if (beltCheck.numBaseFormItems != 1) {
+                            for (int n = 1; n <= beltCheck.numBaseFormItems - 1; n++) {
                                 if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
                                     String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
                                     returnedAbility.add(priority + getFormItem(belt, n).getSlotOneAbility());
@@ -137,8 +137,8 @@ public class AbilityUtil {
                         }
                         break;
                     case 2:
-                        if (beltCheck.Num_Base_Form_Item != 1) {
-                            for (int n = 1; n <= beltCheck.Num_Base_Form_Item; n++) {
+                        if (beltCheck.numBaseFormItems != 1) {
+                            for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                                 if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotTwoAbility().isEmpty()) {
                                     String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotTwoAbilityPriority());
                                     returnedAbility.add(priority + getFormItem(belt, n).getSlotTwoAbility());

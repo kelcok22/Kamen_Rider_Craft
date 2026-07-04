@@ -1401,11 +1401,11 @@ public class GaimRiderItems {
 
 
     public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
     public static final DeferredItem<Item> GAIM_CHESTPLATE = ITEMS.register("gaimtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
     public static final DeferredItem<Item> GAIM_LEGGINGS = ITEMS.register("gaimlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_GAIM_CORE = ITEMS.register("basic_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gaim", "sengoku_driver_belt",
@@ -1435,7 +1435,7 @@ public class GaimRiderItems {
                         buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
                     });
                 }
-            }.hasInventoryGui().addExtraBaseFormItems(BASIC_GAIM_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            }.hasInventoryGui().addExtraBaseFormItems(BASIC_GAIM_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BARON_CORE = ITEMS.register("basic_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "baron", "sengoku_driver_belt_baron",
@@ -1444,7 +1444,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BARON = ITEMS.register("sengoku_driver_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BARON_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BARON_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_RYUGEN_CORE = ITEMS.register("basic_ryugen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ryugen", "sengoku_driver_belt_ryugen",
@@ -1453,7 +1453,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_RYUGEN = ITEMS.register("sengoku_driver_ryugen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "ryugen", BUDOU_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_RYUGEN_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_RYUGEN_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_ZENGETSU_CORE = ITEMS.register("basic_zangetsu_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "zangetsu", "sengoku_driver_belt_zangetsu",
@@ -1462,7 +1462,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_ZENGETSU = ITEMS.register("sengoku_driver_zangetsu",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "zangetsu", MELON_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_ZENGETSU_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_ZENGETSU_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_GRIDON_CORE = ITEMS.register("basic_gridon_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gridon", "sengoku_driver_belt_gridon",
@@ -1471,7 +1471,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GRIDON = ITEMS.register("sengoku_driver_gridon",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gridon", DONGURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_GRIDON_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_GRIDON_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KUROKAGE_CORE = ITEMS.register("basic_kurokage_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kurokage", "sengoku_driver_belt_kurokage",
@@ -1480,7 +1480,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KUROKAGE = ITEMS.register("sengoku_driver_kurokage",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage", MATSUBOKKURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KUROKAGE_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KUROKAGE_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BRAVO_CORE = ITEMS.register("basic_bravo_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "bravo", "sengoku_driver_belt_bravo",
@@ -1489,7 +1489,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BRAVO = ITEMS.register("sengoku_driver_bravo",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "bravo", DURIAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BRAVO_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BRAVO_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KNUCKLE_CORE = ITEMS.register("basic_knuckle_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "knuckle", "sengoku_driver_belt_knuckle",
@@ -1498,7 +1498,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KNUCKLE = ITEMS.register("sengoku_driver_knuckle",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "knuckle", KURUMI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KNUCKLE_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KNUCKLE_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BUJIN_GAIM_CORE = ITEMS.register("basic_bujin_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "bujin_gaim", "sengoku_driver_belt_bujin_gaim",
@@ -1507,7 +1507,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BUJIN_GAIM = ITEMS.register("sengoku_driver_bujin_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "bujin_gaim", BLOOD_ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BUJIN_GAIM_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BUJIN_GAIM_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_FIFTEEN_CORE = ITEMS.register("basic_fifteen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fifteen", "sengoku_driver_belt_fifteen",
@@ -1516,7 +1516,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_FIFTEEN = ITEMS.register("sengoku_driver_fifteen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_MARS_CORE = ITEMS.register("basic_mars_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "mars", "sengoku_driver_belt_mars",
@@ -1525,7 +1525,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_MARS = ITEMS.register("sengoku_driver_mars",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "mars", GOLDEN_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_MARS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_MARS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KAMURO_CORE = ITEMS.register("basic_kamuro_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kamuro", "sengoku_driver_belt_kamuro",
@@ -1534,7 +1534,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KAMURO = ITEMS.register("sengoku_driver_kamuro",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kamuro", SILVER_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KAMURO_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KAMURO_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_JAM_CORE = ITEMS.register("basic_jam_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "jam", "sengoku_driver_belt_jam",
@@ -1543,7 +1543,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_JAM = ITEMS.register("sengoku_driver_jam",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "jam", BLACK_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_JAM_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_JAM_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KUROKAGE_TOOPERS_CORE = ITEMS.register("basic_kurokage_troopers_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kurokage_troopers", "sengoku_driver_belt_kurokage_trooper",
@@ -1552,7 +1552,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KUROKAGE_TOOPERS = ITEMS.register("sengoku_driver_kurokage_troopers",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage_troopers", MATSUBOKKURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KUROKAGE_TOOPERS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KUROKAGE_TOOPERS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_IDUNN_CORE = ITEMS.register("basic_idunn_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "idunn", "sengoku_driver_belt_idunn",
@@ -1561,7 +1561,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_IDUNN = ITEMS.register("sengoku_driver_idunn",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "idunn", FORBIBBEN_LOCKSEED_BASE, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_IDUNN_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_IDUNN_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_DUKE_CORE = ITEMS.register("basic_duke_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "duke_sengoku", "sengoku_driver_belt_duke",
@@ -1570,7 +1570,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_DUKE = ITEMS.register("sengoku_driver_duke",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "duke_sengoku", LEMON_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_DUKE_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_DUKE_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BLACK_BARON_CORE = ITEMS.register("basic_black_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "black_baron", "sengoku_driver_belt_black_baron",
@@ -1579,7 +1579,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BLACK_BARON = ITEMS.register("sengoku_driver_black_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "black_baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BLACK_BARON_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BLACK_BARON_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_SAVER_CORE = ITEMS.register("basic_saver_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "saver", "sengoku_driver_belt_saver",
@@ -1588,7 +1588,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_SAVER = ITEMS.register("sengoku_driver_saver",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "saver", ZAKURO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_SAVER_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_SAVER_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_MAJA_CORE = ITEMS.register("basic_maja_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "maja", "sengoku_driver_belt_maja",
@@ -1597,7 +1597,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_MAJA = ITEMS.register("sengoku_driver_maja",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "maja", MAJA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_MAJA_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_MAJA_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_SYLPHI_CORE = ITEMS.register("basic_sylphi_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "sylphi", "sengoku_driver_belt_sylphi",
@@ -1606,11 +1606,11 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_SYLPHI = ITEMS.register("sengoku_driver_sylphi",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "sylphi", HELEIM_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_SYLPHI_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_SYLPHI_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GAIM_NATSUMIKAN = ITEMS.register("sengoku_driver_gaim_natsumikan",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gaim_natsumikan", NATSUMIKAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_GAIM_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_GAIM_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_GAIM_CORE = ITEMS.register("basic_proto_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_gaim", "sengoku_driver_belt_proto_gaim",
@@ -1619,7 +1619,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GAIM = ITEMS.register("sengoku_driver_proto_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_gaim", PROTO_ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_GAIM_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_GAIM_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_BARON_CORE = ITEMS.register("basic_proto_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_baron", "sengoku_driver_belt_proto_baron",
@@ -1628,7 +1628,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_BARON = ITEMS.register("sengoku_driver_proto_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_baron", PROTO_BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_BARON_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_BARON_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_RYUGEN_CORE = ITEMS.register("basic_proto_ryugen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_ryugen", "sengoku_driver_belt_proto_ryugen",
@@ -1637,7 +1637,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_RYUGEN = ITEMS.register("sengoku_driver_proto_ryugen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_ryugen", PROTO_BUDOU_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_RYUGEN_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_RYUGEN_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_GRIDON_CORE = ITEMS.register("basic_proto_gridon_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_gridon", "sengoku_driver_belt_proto_gridon",
@@ -1646,7 +1646,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GRIDON = ITEMS.register("sengoku_driver_proto_gridon",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_gridon", PROTO_DONGURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_GRIDON_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_GRIDON_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_BRAVO_CORE = ITEMS.register("basic_proto_bravo_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_bravo", "sengoku_driver_belt_proto_bravo",
@@ -1656,11 +1656,11 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_KUROKAGE = ITEMS.register("sengoku_driver_proto_bravo",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_bravo", PROTO_DURIAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_BRAVO_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_BRAVO_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_INCOMPLETE = ITEMS.register("sengoku_driver_incomplete",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "incomplete_gaim", INCOMPLETE_GAIM_FORM, GAIM_HELMET, GAIM_HELMET, GAIM_HELMET, new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
     public static final DeferredItem<Item> GENESIS_CORE = ITEMS.register("genesis_core",
@@ -1670,39 +1670,39 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> GENESIS_DRIVER_ZANGETSU_SHIN = ITEMS.register("genesis_driver_zangetsu_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "zangetsu_shin", MELON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_DUKE = ITEMS.register("genesis_driver_duke",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "duke", LEMON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_SIGURD = ITEMS.register("genesis_driver_sigurd",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "sigurd", CHERRY_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_MARIKA = ITEMS.register("genesis_driver_marika",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "marika", PEACH_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_BARON_SHIN = ITEMS.register("genesis_driver_baron_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "baron_shin", LEMON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_KUROKAGE_SHIN = ITEMS.register("genesis_driver_kurokage_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage_shin", MATSUBOKKURI_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_TYRANT = ITEMS.register("genesis_driver_tyrant",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "tyrant", PROTO_DRAGON_FRUITS_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_RYUGEN = ITEMS.register("genesis_driver_ryugen_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "ryugen_shin", MELON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MEGAHEX = ITEMS.register("megahex",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "megahex", MEGAHEX_CORE, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).has_basic_model().changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).has_basic_model().changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
     public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",
@@ -1775,7 +1775,7 @@ public class GaimRiderItems {
             () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<SwordItem> ICHIGO_KUNAI = ITEMS.register("ichigo_kunai",
-            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).AddToTabList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DAIDAIMARU = ITEMS.register("daidaimaru",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));

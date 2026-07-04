@@ -23,13 +23,13 @@ public class OOODriverItem extends RiderDriverItem {
 
     public OOODriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Item.Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties);
-        Has_basic_belt_info = false;
-        Unlimited_Belt_Textures = 3;
+        hasBasicBeltInfo = false;
+        unlimitedBeltTextures = 3;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
+        tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
 
         Item formItem = getFormItem(stack, 1);
         Item formItem2 = getFormItem(stack, 2);
@@ -105,7 +105,7 @@ public class OOODriverItem extends RiderDriverItem {
 
         switch (equipmentSlot) {
             case EquipmentSlot.FEET:
-                if (((RiderDriverItem) itemstack.getItem()).BELT_TEXT == null || !((RiderDriverItem) itemstack.getItem()).BELT_TEXT.isEmpty()) {
+                if (((RiderDriverItem) itemstack.getItem()).beltText == null || !((RiderDriverItem) itemstack.getItem()).beltText.isEmpty()) {
                     return "belts/" + getFormItem(itemstack, 1).getBeltTex();
                 }
                 break;
@@ -166,9 +166,9 @@ public class OOODriverItem extends RiderDriverItem {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo_taka_tajado.geo.json");
 
         if (getFormItem(itemstack, num, henshinTick).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num, henshinTick).getFlyingModel(this.Rider));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num, henshinTick).getFlyingModel(this.riderName));
         } else
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num, henshinTick).getModel(this.Rider));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num, henshinTick).getModel(this.riderName));
     }
 
     @Override

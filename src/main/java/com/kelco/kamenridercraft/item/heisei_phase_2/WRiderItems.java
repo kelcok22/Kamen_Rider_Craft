@@ -728,56 +728,56 @@ public class WRiderItems {
 
 
 	public static final DeferredItem<Item> WHELMET = ITEMS.register("whead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
 	public static final DeferredItem<Item> WCHESTPLATE = ITEMS.register("wtroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
 	public static final DeferredItem<Item> WLEGGINGS = ITEMS.register("wlegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> WDRIVER = ITEMS.register("wdriver",
 			() -> new WDriverItem(ArmorMaterials.DIAMOND,"w",CYCLONE_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(JOKER_MEMORY).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+					.addExtraBaseFormItems(JOKER_MEMORY).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> ACCELDRIVER = ITEMS.register("acceldriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"accel",ACCEL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties())
-					.AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> LOSTDRIVER_JOKER = ITEMS.register("lostdriver_joker",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"joker",JOKER_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"joker",JOKER_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> LOSTDRIVER_CYCLONE = ITEMS.register("lostdriver_cyclone",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cyclone",CYCLONE_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cyclone",CYCLONE_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> LOSTDRIVER_SKULL = ITEMS.register("lostdriver_skull",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skull",SKULL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).AddToTabList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skull",SKULL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> LOSTDRIVER_ETERNAL = ITEMS.register("lostdriver_eternal",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eternal",ETERNAL_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eternal",ETERNAL_T2_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> GAIA_DRIVER_TERROR = ITEMS.register("gaia_driver_terror",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"terror_dopant",TERROR_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"terror_dopant",TERROR_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> GAIA_DRIVER_TABOO = ITEMS.register("gaia_driver_taboo",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taboo_dopant",TABOO_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taboo_dopant",TABOO_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> GAIA_DRIVER_CLAYDOLL = ITEMS.register("gaia_driver_claydoll",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"claydoll_dopant",CLAYDOLL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"claydoll_dopant",CLAYDOLL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> GAIA_DRIVER_SMILODON = ITEMS.register("gaia_driver_smilodon",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"smilodon_dopant",SMILODON_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"smilodon_dopant",SMILODON_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> GAIA_DRIVER_NASCA = ITEMS.register("gaia_driver_nasca",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nazca_dopant",NASCA_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nazca_dopant",NASCA_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
 					.changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 

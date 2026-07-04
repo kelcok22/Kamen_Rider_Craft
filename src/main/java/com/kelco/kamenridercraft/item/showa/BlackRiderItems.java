@@ -126,19 +126,19 @@ public class BlackRiderItems {
 
 
     public static final DeferredItem<Item>  BLACKHELMET = ITEMS.register("blackhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
     public static final DeferredItem<Item>  BLACKCHESTPLATE = ITEMS.register("blacktorso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
     public static final DeferredItem<Item>  BLACKLEGGINGS = ITEMS.register("blacklegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  VITAL_CHARGER = ITEMS.register("vital_charger",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black",RED_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties())
-                    .hasSDForm().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+                    .hasSDForm().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_CHARGER = ITEMS.register("shadow_charger",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_moon",GREEN_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item> SATANSABER = ITEMS.register("satansaber",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));

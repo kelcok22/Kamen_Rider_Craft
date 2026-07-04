@@ -75,21 +75,21 @@ public class TheSeriesRiderItems {
             }.isGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_ICHIGO_HELMET = ITEMS.register("the_ichigo_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
     public static final DeferredItem<Item> THE_ICHIGO_CHESTPLATE = ITEMS.register("the_ichigo_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
     public static final DeferredItem<Item> THE_ICHIGO_LEGGINGS = ITEMS.register("the_ichigo_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> THE_TYPHOON_ICHIGO = ITEMS.register("the_typhoon_ichigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo_the",THE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo_the",THE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_TYPHOON_NIGO = ITEMS.register("the_typhoon_nigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo_the_first",THE_TYPHOON_CORE_NIGO ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo_the_first",THE_TYPHOON_CORE_NIGO ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_DOUBLE_TYPHOON = ITEMS.register("the_double_typhoon",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v3_the_next",THE_DOUBLE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v3_the_next",THE_DOUBLE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

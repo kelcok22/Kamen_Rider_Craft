@@ -78,21 +78,21 @@ public class ShinRiderItems {
 
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
     public static final DeferredItem<Item>  SHINCHESTPLATE = ITEMS.register("shintroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
     public static final DeferredItem<Item>  SHINLEGGINGS = ITEMS.register("shinlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
 
     public static final DeferredItem<Item>  GRASSHOPPER_DNA = ITEMS.register("grasshopper_dna",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin",SHIN_STONE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties())
-                    .hasSDForm().hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
+                    .hasSDForm().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
     public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_3_DNA = ITEMS.register("cyborg_soldier_level_3_dna",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cyborg_soldier_level_3",CYBORG_SOLDIER_LEVEL_3_CELL_SAMPLE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
     public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_2_DNA = ITEMS.register("cyborg_soldier_level_2_dna",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cyborg_soldier_level_2",CYBORG_SOLDIER_LEVEL_2_CORE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

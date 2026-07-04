@@ -85,9 +85,9 @@ public class OhmaRidewatchItem extends BaseItem {
 		    	    summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:red_ryusoul_changer"))));
 		    	    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoul_ken"))));
                 } else {
-		    	    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.HEAD));
-		    	    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.TORSO));
-		    	    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.LEGS));
+		    	    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.helmet));
+		    	    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.chestplate));
+		    	    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.leggings));
                     Item key = player.getOffhandItem().getItem();
 
 		    	    if (this.summonAltBelts.containsKey(key)) {

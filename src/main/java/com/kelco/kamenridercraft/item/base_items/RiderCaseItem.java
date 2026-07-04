@@ -31,7 +31,7 @@ public class RiderCaseItem extends BaseItem {
 
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-        ItemStack itemstack = entity.getItemInHand(hand);
+        ItemStack itemStack = entity.getItemInHand(hand);
 
         if (entity instanceof ServerPlayer serverPlayer) {
             serverPlayer.openMenu(new MenuProvider() {
@@ -45,14 +45,14 @@ public class RiderCaseItem extends BaseItem {
                     FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
                     packetBuffer.writeBlockPos(entity.blockPosition());
                     packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-                    return new RiderCaseGuiMenu(id, inventory, packetBuffer, itemstack);
+                    return new RiderCaseGuiMenu(id, inventory, packetBuffer, itemStack);
                 }
             }, buf -> {
                 buf.writeBlockPos(entity.blockPosition());
                 buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
             });
         }
-        return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
+        return InteractionResultHolder.sidedSuccess(itemStack, world.isClientSide());
     }
 
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
@@ -64,11 +64,11 @@ public class RiderCaseItem extends BaseItem {
         int i = 0;
         int j = 0;
 
-        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
+        for (ItemStack itemStack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
             ++j;
             if (i <= 4) {
                 ++i;
-                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemstack.getHoverName(), itemstack.getCount()));
+                tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", itemStack.getHoverName(), itemStack.getCount()));
             }
         }
 

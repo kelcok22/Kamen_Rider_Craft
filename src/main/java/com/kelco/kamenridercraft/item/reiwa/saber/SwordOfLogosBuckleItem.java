@@ -21,7 +21,7 @@ public class SwordOfLogosBuckleItem extends RiderDriverItem {
     public SwordOfLogosBuckleItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
         super(material, rider, baseFormItem, head, torso, legs, properties);
-        Unlimited_Textures=1;
+        unlimitedTextures =1;
     }
 
     @Override

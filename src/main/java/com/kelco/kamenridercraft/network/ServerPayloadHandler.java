@@ -51,7 +51,7 @@ public class ServerPayloadHandler {
     public static void handleBeltKeyPress(final BeltKeyPayload data, final IPayloadContext context) {
         Player player = context.player();
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (belt.Has_Inventory && player.getItemBySlot(EquipmentSlot.FEET).getDamageValue() != player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage() - 1)
+            if (belt.hasInventory && player.getItemBySlot(EquipmentSlot.FEET).getDamageValue() != player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage() - 1)
                 belt.openInventory((ServerPlayer) player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
         }
     }
@@ -73,7 +73,7 @@ public class ServerPayloadHandler {
                 return;
         }
 
-        boolean costMeter = (!player.isCreative()) && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(player) || !driverItem.Rider.toLowerCase().contains("ohma"));
+        boolean costMeter = (!player.isCreative()) && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(player) || !driverItem.riderName.toLowerCase().contains("ohma"));
         if (!player.level().isClientSide() && player.getData(USED_ABILITY).isEmpty() && player.getData(ABILITY_COOLDOWN) < 1 && (player.getAttribute(Attributes.ABILITY_METER).getValue() > 0) || !costMeter) {
             var abilityList = AbilityUtil.getAbility(player, data.key());
             if (!abilityList.isEmpty()) {

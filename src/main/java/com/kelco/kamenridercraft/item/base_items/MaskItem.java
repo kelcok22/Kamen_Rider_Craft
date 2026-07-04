@@ -10,6 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Equipable;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class MaskItem extends BaseItem implements Equipable {
 
@@ -20,14 +21,13 @@ public class MaskItem extends BaseItem implements Equipable {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         super.inventoryTick(stack, level, entity, slotId, isSelected);
-        if (slotId == 39 && this.toString().equals("kamenridercraft:ichigo_mask") && ((LivingEntity) entity).hasEffect(EffectCore.KNOCKBACK_BOOST) && level instanceof  ServerLevel serverLevel) {
+        if (slotId == 39 && this.toString().equals("kamenridercraft:ichigo_mask") && ((LivingEntity) entity).hasEffect(EffectCore.KNOCKBACK_BOOST) && level instanceof ServerLevel serverLevel) {
             serverLevel.sendParticles(ParticleTypes.RAIN, entity.getX(), entity.getEyeY(), entity.getZ(), 1, 0, 0, 0, 0.05);
-
         }
     }
 
     @Override
-    public EquipmentSlot getEquipmentSlot() {
+    public @NotNull EquipmentSlot getEquipmentSlot() {
         return EquipmentSlot.HEAD;
     }
 }
