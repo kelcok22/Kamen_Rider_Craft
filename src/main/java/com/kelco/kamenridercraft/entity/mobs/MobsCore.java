@@ -1626,7 +1626,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(MachineHoodieEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_hoodie"));
 
     public static final DeferredItem<DeferredSpawnEggItem> MACHINE_HOODIE_SPAWN_EGG = ITEMS.register("machine_hoodie_spawn_egg",
-            () -> new DeferredSpawnEggItem(MACHINE_HOODIE, 0x0843d3, 0xf7f7f7, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(MACHINE_HOODIE, 0xffffff, 0x151515, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<BikeGamerEntity>> BIKE_GAMER = MOBLIST.register("bike_gamer",
             () -> EntityType.Builder.of(BikeGamerEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":bike_gamer"));
