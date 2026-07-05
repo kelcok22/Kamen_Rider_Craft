@@ -6,23 +6,23 @@
 			"bones": {
 				"body": {
 					"rotation": [-10, 0, 0],
-					"position": [0, -0.5, 0]
+					"position": [0, -1, 0]
 				},
 				"left_leg": {
-					"rotation": [10.6339, -17.2257, -10.4749]
+					"rotation": [11, -17, -10]
 				},
 				"right_leg": {
-					"rotation": [10.6339, 17.2257, 10.4749]
+					"rotation": [11, 17, 10]
 				},
 				"head": {
 					"rotation": [15, 0, 0]
 				},
 				"right_arm": {
-					"rotation": [-99.9687, 25.2519, 16.2664],
+					"rotation": [-100, 25, 16],
 					"position": [0, -2, 0]
 				},
 				"left_arm": {
-					"rotation": [-99.9687, -25.2519, -16.2664],
+					"rotation": [-100, -25, -16],
 					"position": [0, -2, 0]
 				}
 			}

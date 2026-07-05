@@ -5,30 +5,30 @@
 			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [20.596, 46.2608, 9.954],
-					"position": [0, -1.25, 0]
+					"rotation": [21, 46, 10],
+					"position": [0, -1, 0]
 				},
 				"torso": {
 					"rotation": [-5, 0, 0]
 				},
 				"left_leg": {
-					"rotation": [-18.8697, -42.0733, -9.9399],
-					"position": [1.29061, 0.34217, -1.27494]
+					"rotation": [-19, -42, -10],
+					"position": [1, 0, -1]
 				},
 				"right_leg": {
-					"rotation": [-12.3627, 30.9614, 4.1058],
-					"position": [-0.13128, 0.35288, -2.20414]
+					"rotation": [-12, 31, 4],
+					"position": [0, 0, -2]
 				},
 				"head": {
-					"rotation": [-16.0101, -47.3997, 6.2983],
+					"rotation": [-16, -47, 6],
 					"position": [-1, 0, 0]
 				},
 				"right_arm": {
-					"rotation": [-10.6889, 11.4668, 3.5791]
+					"rotation": [-11, 11, 4]
 				},
 				"left_arm": {
-					"rotation": [-181.1789, -33.4705, 5.1752],
-					"position": [1.20649, -0.24043, -0.72875]
+					"rotation": [-181, -33, 5],
+					"position": [1, 0, -1]
 				}
 			}
 		}

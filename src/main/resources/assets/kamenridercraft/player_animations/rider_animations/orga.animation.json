@@ -6,23 +6,23 @@
 			"animation_length": 3,
 			"bones": {
 				"body": {
-					"rotation": [-12.5, 0, 0],
+					"rotation": [-13, 0, 0],
 					"position": [0, -1, 0]
 				},
 				"left_leg": {
-					"rotation": [14.5044, -19.5064, -13.2746]
+					"rotation": [15, -20, -13]
 				},
 				"right_leg": {
-					"rotation": [14.5044, 19.5064, 13.2746]
+					"rotation": [15, 20, 13]
 				},
 				"head": {
 					"rotation": [15, 0, 0]
 				},
 				"right_arm": {
-					"rotation": [-27.4115, 25.0296, 13.9403]
+					"rotation": [-27, 25, 14]
 				},
 				"left_arm": {
-					"rotation": [-27.4115, -25.0296, -13.9403]
+					"rotation": [-27, -25, -14]
 				}
 			}
 		}

@@ -9,20 +9,20 @@
 					"position": [0, -1, 0]
 				},
 				"left_leg": {
-					"rotation": [0, -27.5, -12.5]
+					"rotation": [0, -28, -13]
 				},
 				"right_leg": {
-					"rotation": [1.6575, 12.3914, 7.6799]
+					"rotation": [2, 12, 8]
 				},
 				"head": {
 					"rotation": [0, -30, 0]
 				},
 				"right_arm": {
-					"rotation": [-92.3789, 8.4842, 20.4346],
+					"rotation": [-92, 8, 20],
 					"position": [-1, 0, 2]
 				},
 				"left_arm": {
-					"rotation": [-89.4886, -39.8885, -21.2275],
+					"rotation": [-89, -40, -21],
 					"position": [1, 0, -1]
 				}
 			}

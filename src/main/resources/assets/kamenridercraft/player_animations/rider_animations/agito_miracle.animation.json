@@ -6,30 +6,30 @@
 			"animation_length": 3,
 			"bones": {
 				"body": {
-					"rotation": [-12.5, -47.5, 0],
-					"position": [0.47873, -0.92889, -0.43867]
+					"rotation": [-13, -48, 0],
+					"position": [0, -1, 0]
 				},
 				"torso": {
-					"rotation": [10.1058, 2.0253, 2.8979],
-					"position": [-0.04362, -0.17348, -0.98387]
+					"rotation": [10, 2, 3],
+					"position": [0, 0, -1]
 				},
 				"left_leg": {
-					"rotation": [26.941, 5.7358, -11.1249],
-					"position": [0.20726, -0.01379, -0.17674]
+					"rotation": [27, 6, -11],
+					"position": [0, 0, 0]
 				},
 				"right_leg": {
-					"rotation": [9.7729, 22.0504, 15.9091],
-					"position": [0.48069, 0.39978, 1.24338]
+					"rotation": [10, 22, 16],
+					"position": [0, 0, 1]
 				},
 				"head": {
-					"rotation": [16.375, 18.1362, 13.1456],
-					"position": [-0.70988, -0.41323, -1.82354]
+					"rotation": [16, 18, 13],
+					"position": [-1, 0, -2]
 				},
 				"right_arm": {
-					"rotation": [31.1973, 6.4217, 9.384]
+					"rotation": [31, 6, 9]
 				},
 				"left_arm": {
-					"rotation": [14.9455, 1.2926, -4.8304]
+					"rotation": [15, 1, -5]
 				}
 			}
 		}

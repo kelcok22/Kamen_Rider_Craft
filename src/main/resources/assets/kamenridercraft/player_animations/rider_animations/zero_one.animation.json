@@ -2,6 +2,7 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"zero_one.pose": {
+			"loop": true,
 			"bones": {
 				"body": {
 					"rotation": [0, -45, 0]
@@ -11,20 +12,20 @@
 					"position": [0, 0, 1]
 				},
 				"left_leg": {
-					"rotation": [7.5, -7.5, 0]
+					"rotation": [8, -8, 0]
 				},
 				"right_leg": {
-					"rotation": [-1.5918, 32.4653, -2.9635],
+					"rotation": [-2, 32, -3],
 					"position": [-1, 0, -1]
 				},
 				"head": {
 					"rotation": [0, 45, 0]
 				},
 				"right_arm": {
-					"rotation": [-67.5787, -55.4265, -18.7649]
+					"rotation": [-68, -55, -19]
 				},
 				"left_arm": {
-					"rotation": [-121.3515, 48.5905, -32.1552],
+					"rotation": [-121, 49, -32],
 					"position": [0, 0, -2]
 				}
 			}

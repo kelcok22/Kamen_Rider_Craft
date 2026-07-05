@@ -6,32 +6,32 @@
 			"animation_length": 8.6667,
 			"bones": {
 				"body": {
-					"rotation": [0, -47.5, 0],
-					"position": [0, -1.25, 0]
+					"rotation": [0, -48, 0],
+					"position": [0, -1, 0]
 				},
 				"torso": {
 					"rotation": [-5, -10, 0],
 					"position": [0, 0, 1]
 				},
 				"left_leg": {
-					"rotation": [1.3378, -14.9416, -12.6755]
+					"rotation": [1, -15, -13]
 				},
 				"right_leg": {
 					"rotation": {
-						"0.0": [7.9767, 25.4429, 21.9081],
-						"8.6667": [8.0167, 25.4429, 21.9081]
+						"0.0": [8, 25, 22],
+						"8.6667": [8, 25, 22]
 					},
 					"position": [0, -1, -2]
 				},
 				"head": {
-					"rotation": [0, 42.5, 0]
+					"rotation": [0, 43, 0]
 				},
 				"right_arm": {
-					"rotation": [0, 7.5, 120],
+					"rotation": [0, 8, 120],
 					"position": [-2, 0, 0]
 				},
 				"left_arm": {
-					"rotation": [-33.3402, -13.7076, -7.01],
+					"rotation": [-33, -14, -7],
 					"position": [-1, -1, 3]
 				}
 			}

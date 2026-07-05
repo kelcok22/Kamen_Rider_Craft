@@ -8,23 +8,23 @@
 					"rotation": [0, 50, 0]
 				},
 				"torso": {
-					"rotation": [2.4976, -0.109, 2.4976]
+					"rotation": [2, 0, 2]
 				},
 				"left_leg": {
-					"rotation": [0, -42.5, 0],
-					"position": [0.5, 0, -0.5]
+					"rotation": [0, -43, 0],
+					"position": [1, 0, -1]
 				},
 				"right_leg": {
-					"rotation": [7.5241, 6.7843, 5.9369]
+					"rotation": [8, 7, 6]
 				},
 				"head": {
-					"rotation": [14.6838, -32.9824, 4.45]
+					"rotation": [15, -33, 4]
 				},
 				"right_arm": {
-					"rotation": [21.6014, 5.5452, 11.7909]
+					"rotation": [22, 6, 12]
 				},
 				"left_arm": {
-					"rotation": [8.5667, -11.8008, -5.0644],
+					"rotation": [9, -12, -5],
 					"position": [0, 0, 0]
 				}
 			}

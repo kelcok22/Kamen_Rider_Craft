@@ -5,24 +5,25 @@
 			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [15, -42.5, 0]
+					"rotation": [15, -43, 0],
+					"position": [0, -0.75, 0]
 				},
 				"left_leg": {
-					"rotation": [7.5, -15, -17.5],
+					"rotation": [8, -15, -18],
 					"position": [0, 1, -5]
 				},
 				"right_leg": {
-					"rotation": [-7.4022, 27.3865, 5.6331],
+					"rotation": [-7, 27, 6],
 					"position": [-2, 0, -2]
 				},
 				"head": {
-					"rotation": [-21.0058, 36.76, -11.732]
+					"rotation": [-21, 37, -12]
 				},
 				"right_arm": {
-					"rotation": [-105, 17.5, 0]
+					"rotation": [-105, 18, 0]
 				},
 				"left_arm": {
-					"rotation": [0, -32.5, -85]
+					"rotation": [0, -33, -85]
 				}
 			}
 		}

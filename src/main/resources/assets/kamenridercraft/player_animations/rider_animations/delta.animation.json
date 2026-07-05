@@ -10,23 +10,23 @@
 					"position": [0, -1, 0]
 				},
 				"torso": {
-					"rotation": [2.5, 0, 0]
+					"rotation": [3, 0, 0]
 				},
 				"left_leg": {
-					"rotation": [2.72, -19.8217, -7.9753]
+					"rotation": [3, -20, -8]
 				},
 				"right_leg": {
-					"rotation": [5.0831, 59.744, 11.446],
-					"position": [-0.08682, 0, 0.4924]
+					"rotation": [5, 60, 11],
+					"position": [0, 0, 0]
 				},
 				"head": {
-					"rotation": [-6.452, 69.8602, -7.2155]
+					"rotation": [-6, 70, -7]
 				},
 				"right_arm": {
-					"rotation": [-92.5, 75, 0]
+					"rotation": [-93, 75, 0]
 				},
 				"left_arm": {
-					"rotation": [-2.7215, -26.7821, -7.3001]
+					"rotation": [-3, -27, -7]
 				}
 			}
 		}

@@ -5,17 +5,17 @@
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"torso": {
-					"rotation": [-2.5, 0, 0],
-					"position": [0, -0.02181, 0.49952]
+					"rotation": [-3, 0, 0],
+					"position": [0, 0, 0]
 				},
 				"left_leg": {
-					"rotation": [0.2187, -4.9952, -2.5095]
+					"rotation": [0, -5, -3]
 				},
 				"right_leg": {
-					"rotation": [0.2187, 4.9952, 2.5095]
+					"rotation": [0, 5, 3]
 				},
 				"right_arm": {
-					"rotation": [-145.656, -40.0728, 11.8197],
+					"rotation": [-146, -40, 12],
 					"position": [-1, 4, -2]
 				},
 				"left_arm": {

@@ -6,28 +6,28 @@
 			"bones": {
 				"body": {
 					"rotation": [0, 50, 0],
-					"position": [0, -0.5, 0]
+					"position": [0, -1, 0]
 				},
 				"torso": {
-					"rotation": [-7.5, 0, 0],
-					"position": [0.64279, 0, 0.76604]
+					"rotation": [-8, 0, 0],
+					"position": [1, 0, 1]
 				},
 				"left_leg": {
-					"rotation": [-17.8366, -52.061, 16.2485]
+					"rotation": [-18, -52, 16]
 				},
 				"right_leg": {
-					"rotation": [18.9354, 38.7389, 10.8248]
+					"rotation": [19, 39, 11]
 				},
 				"head": {
-					"rotation": [0, -47.5, 0]
+					"rotation": [0, -48, 0]
 				},
 				"right_arm": {
-					"rotation": [-28.8385, 8.6474, 90.2727],
-					"position": [-1.28558, 0, -1.53209]
+					"rotation": [-29, 9, 90],
+					"position": [-1, 0, -2]
 				},
 				"left_arm": {
-					"rotation": [-78.7922, -30.9932, 6.54],
-					"position": [-1.01442, 0, 3.46209]
+					"rotation": [-79, -31, 7],
+					"position": [-1, 0, 3]
 				}
 			}
 		}

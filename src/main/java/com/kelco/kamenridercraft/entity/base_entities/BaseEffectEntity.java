@@ -38,12 +38,9 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
     private LivingEntity owner;
     private UUID ownerUUID;
 
-    private static final EntityDataAccessor<String> TEXTURE =
-            SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.STRING);
-    private static final EntityDataAccessor<String> MODEL =
-            SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.STRING);
-    private static final EntityDataAccessor<Boolean> GLOWING =
-            SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.STRING);
+    private static final EntityDataAccessor<String> MODEL = SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.STRING);
+    private static final EntityDataAccessor<Boolean> GLOWING = SynchedEntityData.defineId(BaseEffectEntity.class, EntityDataSerializers.BOOLEAN);
 
     public BaseEffectEntity(EntityType<BaseEffectEntity> entityType, Level level) {
         super(entityType, level);
@@ -95,6 +92,22 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
 
     public boolean isGlowing() {
         return this.entityData.get(GLOWING);
+    }
+
+    public void setOwner(@javax.annotation.Nullable LivingEntity owner) {
+        this.owner = owner;
+        this.ownerUUID = owner == null ? null : owner.getUUID();
+    }
+
+    @Nullable
+    public LivingEntity getOwner() {
+        if (this.owner == null && this.ownerUUID != null && this.level() instanceof ServerLevel) {
+            Entity entity = ((ServerLevel) this.level()).getEntity(this.ownerUUID);
+            if (entity instanceof LivingEntity) {
+                this.owner = (LivingEntity) entity;
+            }
+        }
+        return this.owner;
     }
 
 
@@ -171,30 +184,11 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<>(this, "effect", 0, state -> PlayState.STOP)
-                .triggerableAnim("logo_spin", LOGO_SPIN));
+        controllers.add(new AnimationController<>(this, "effect", 0, state -> PlayState.STOP).triggerableAnim("logo_spin", LOGO_SPIN));
     }
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
     }
-
-    public void setOwner(@javax.annotation.Nullable LivingEntity owner) {
-        this.owner = owner;
-        this.ownerUUID = owner == null ? null : owner.getUUID();
-    }
-
-    @Nullable
-    public LivingEntity getOwner() {
-        if (this.owner == null && this.ownerUUID != null && this.level() instanceof ServerLevel) {
-            Entity entity = ((ServerLevel) this.level()).getEntity(this.ownerUUID);
-            if (entity instanceof LivingEntity) {
-                this.owner = (LivingEntity) entity;
-            }
-        }
-
-        return this.owner;
-    }
-
 }

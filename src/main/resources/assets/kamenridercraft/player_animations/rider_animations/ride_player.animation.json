@@ -10,25 +10,25 @@
 				},
 				"torso": {
 					"rotation": [15, 15, 0],
-					"position": [-0.375, -0.38823, -1.39952]
+					"position": [0, 0, -1]
 				},
 				"left_leg": {
 					"rotation": [25, -20, -15],
 					"position": [0, 5, -4]
 				},
 				"right_leg": {
-					"rotation": [75.7321, 4.2454, 19.5621],
-					"position": [-1.26647, -1.91502, -4.3703]
+					"rotation": [76, 4, 20],
+					"position": [-1, -2, -4]
 				},
 				"head": {
-					"rotation": [7.5, -35, 0],
-					"position": [-0.12524, -0.06526, -0.69286]
+					"rotation": [8, -35, 0],
+					"position": [0, 0, -1]
 				},
 				"right_arm": {
-					"rotation": [9.7046, 12.3071, 10.2377]
+					"rotation": [10, 12, 10]
 				},
 				"left_arm": {
-					"rotation": [7.6734, -26.4883, -16.8087]
+					"rotation": [8, -26, -17]
 				}
 			}
 		}
