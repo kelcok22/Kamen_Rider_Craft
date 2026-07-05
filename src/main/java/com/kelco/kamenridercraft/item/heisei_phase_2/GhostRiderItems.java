@@ -1019,7 +1019,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}}
-			}.changeModel("damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeModel("ooo_damashii.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_GHOST_EYECON = ITEMS.register("fourze_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"fourze_damashii","ghost","ghostdriver_belt",
