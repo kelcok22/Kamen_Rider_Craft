@@ -27,7 +27,7 @@ public class ModdedItemCore {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> BLANK_FORM = ITEMS.register("blank_form",
-            () -> new RiderFormChangeItem(new Item.Properties(), "", "", "").changeModel("default.geo.json"));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "", "").setShowPlayer().changeRiderName("blank").changeModel("default.geo.json"));
 
 
     public static final DeferredItem<Item> RIDER_CIRCUIT = ITEMS.register("rider_circuit",

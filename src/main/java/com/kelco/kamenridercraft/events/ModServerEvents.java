@@ -19,7 +19,7 @@ public class ModServerEvents {
 
 			ItemStack stack = event.getEntity().getItemBySlot(EquipmentSlot.FEET);
 			if (event.getSlot().isArmor() && stack.getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity()) && !stack.has(DataComponents.CUSTOM_DATA)) {
-				RiderDriverItem.setUpdateForm(event.getEntity().getItemBySlot(EquipmentSlot.FEET));
+				RiderDriverItem.setUpdateForm(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
 			}
 
 		}

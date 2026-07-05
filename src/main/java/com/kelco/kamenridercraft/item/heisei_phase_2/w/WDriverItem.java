@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.w;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
@@ -91,7 +92,6 @@ public class WDriverItem extends RiderDriverItem {
             Consumer<CompoundTag> data = form -> {
 				form.putString("slot_tex2", (WRiderItems.JOKER_MEMORY.get()).toString());
             	form.putBoolean("Update_form", true);
-            	form.putDouble("render_type", getRenderType(belt));
             };
 
             CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
@@ -106,12 +106,11 @@ public class WDriverItem extends RiderDriverItem {
 			
 			return "belts/"+ getFormItem(itemstack,1).getBeltTex();
 		}
+        if (getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())== ModdedItemCore.BLANK_FORM.asItem())return "blank";
 		else if (equipmentSlot == EquipmentSlot.HEAD){
 			if (Objects.equals(getFormItem(itemstack, 2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_skull")) return riderName+ getFormItem(itemstack,1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+"_skull";
 			else return riderName+ getFormItem(itemstack,1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
 		}
-			
-		
 		else {
 			if (Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_fang")) return riderName+"_fang"+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
 			else if (Objects.equals(getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme")) return riderName+ getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly)+"_xtreme";

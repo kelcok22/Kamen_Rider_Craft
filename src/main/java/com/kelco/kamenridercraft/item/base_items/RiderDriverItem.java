@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.ChatFormatting;
@@ -134,11 +135,12 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
-    public static double getRenderType(ItemStack stack) {
+    public static double getRenderType(ItemStack stack, double num) {
         double form_double = 1;
-        RiderFormChangeItem form = getFormItem(stack, 1);
+        RiderFormChangeItem form = getFormItem(stack, 1,num);
         if (form.getShowFace()) form_double = 2;
         if (form.getShowUnder()) form_double = 3;
+        if (form.getShowPlayer()) form_double = 0;
         return form_double;
     }
 
@@ -148,7 +150,7 @@ public class RiderDriverItem extends RiderArmorItem {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
             if (tag.getBoolean("Update_form") && slotId == 36) onFormChange(stack, rider, tag);
             if (!isTransformed(rider) || slotId != 36) tag.putBoolean("Update_form", true);
-            if (isTransformed(rider)) tag.putDouble("render_type", getRenderType(stack));
+            if (isTransformed(rider)) tag.putDouble("render_type", getRenderType(stack,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
             if (!isTransformed(rider)) tag.putDouble("render_type", 0);
 
             if (!rider.level().isClientSide()) {
@@ -158,7 +160,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
             }
         } else {
-            setUpdateForm(stack);
+            setUpdateForm(stack,rider);
         }
     }
 
@@ -217,6 +219,7 @@ public class RiderDriverItem extends RiderArmorItem {
                         form.putDouble("rider_kick_cooldown", 200);
                         form.putDouble("rider_kick_tick", 0);
                         form.putBoolean("Update_form", true);
+                        form.putString("slot_tex_old" + 1,ModdedItemCore.BLANK_FORM.asItem().toString());
                     };
                     CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                 }
@@ -231,7 +234,7 @@ public class RiderDriverItem extends RiderArmorItem {
             onTransformation(itemStack, rider);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
-                form.putDouble("render_type", getRenderType(itemStack));
+                form.putDouble("render_type", getRenderType(itemStack,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
             rider.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(30);
@@ -379,14 +382,14 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
-    public static void setUpdateForm(ItemStack itemStack) {
+    public static void setUpdateForm(ItemStack itemStack,LivingEntity rider) {
         if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
             itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         if (itemStack.getItem() instanceof RiderDriverItem) {
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", true);
-                form.putDouble("render_type", getRenderType(itemStack));
+                form.putDouble("render_type", getRenderType(itemStack,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
         }
@@ -398,11 +401,9 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemStack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
                 if (!form.getString("slot_tex" + slot).equals(item.toString())) {
-                    if (!form.getString("slot_tex" + slot).equals(form.getString("slot_tex_old" + slot)))
-                        form.putString("slot_tex_old" + slot, form.getString("slot_tex" + slot));
                     form.putString("slot_tex" + slot, item.toString());
                     form.putBoolean("Update_form", true);
-                    form.putDouble("render_type", getRenderType(itemStack));
+                    //form.putDouble("render_type", getRenderType(itemStack));
                 }
             };
 
@@ -411,13 +412,14 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+
     public static void UpdateOldFormItem(ItemStack itemStack) {
         if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
             itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         if (itemStack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
-                for (int n = 1; n < driver.numBaseFormItems; n++) {
+                for (int n = 1; n <= driver.numBaseFormItems; n++) {
                     form.putString("slot_tex_old" + n, form.getString("slot_tex" + n));
                 }
             };
@@ -516,7 +518,7 @@ public class RiderDriverItem extends RiderArmorItem {
             if (BuiltInRegistries.ITEM.get(UsedFormItem) instanceof RiderFormChangeItem formItem) {
                 if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && num > formItem.getFormDelay())
                     return formItem2;
-                else if (num > formItem.getFormDelay()) return baseFormItem;
+                else if (num > formItem.getFormDelay()) return (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.asItem();
                 return formItem;
             }
         }

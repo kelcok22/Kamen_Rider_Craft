@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
@@ -102,7 +103,7 @@ public class OOODriverItem extends RiderDriverItem {
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
         double henshinTick = rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
         String combo = getCombo(getFormItem(itemstack, 1, henshinTick), getFormItem(itemstack, 2, henshinTick), getFormItem(itemstack, 3, henshinTick));
-
+        if (equipmentSlot!=EquipmentSlot.FEET&getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())== ModdedItemCore.BLANK_FORM.asItem())return "blank";
         switch (equipmentSlot) {
             case EquipmentSlot.FEET:
                 if (((RiderDriverItem) itemstack.getItem()).beltText == null || !((RiderDriverItem) itemstack.getItem()).beltText.isEmpty()) {

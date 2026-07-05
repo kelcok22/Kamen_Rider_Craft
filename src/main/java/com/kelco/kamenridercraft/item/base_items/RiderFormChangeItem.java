@@ -51,6 +51,7 @@ public class RiderFormChangeItem extends BaseItem {
     private String flyingModel;
     private Boolean setShowFace = false;
     private Boolean setShowUnder = false;
+    private Boolean setShowPlayer = false;
 
     private Boolean useWalk = false;
     private Boolean useBike = false;
@@ -166,6 +167,10 @@ public class RiderFormChangeItem extends BaseItem {
 
     public Boolean getShowUnder() {
         return setShowUnder;
+    }
+
+    public Boolean getShowPlayer() {
+        return setShowPlayer;
     }
 
     public Boolean getIsGlowing() {
@@ -290,6 +295,10 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem setShowPlayer() {
+        setShowPlayer = true;
+        return this;
+    }
     public RiderFormChangeItem setFormDelay(double num) {
         formDelay = num;
         return this;
@@ -499,7 +508,7 @@ public class RiderFormChangeItem extends BaseItem {
     public Boolean canChange(Player player, RiderDriverItem belt, ItemStack stack) {
 
         if (this == ModdedItemCore.BLANK_FORM.get()) {
-            //return true;
+            return true;
         }
         if (hasIncompatibleForms) {
             for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
