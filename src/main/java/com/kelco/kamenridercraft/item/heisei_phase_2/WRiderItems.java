@@ -11,6 +11,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.w.T2MemoryCaseItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.WDriverItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -51,7 +52,9 @@ public class WRiderItems {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+
                     if (tick==1d) {
+                        player.getAttribute(Attributes.WIND).setBaseValue(30);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);

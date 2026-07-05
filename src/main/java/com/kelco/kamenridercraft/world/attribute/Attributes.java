@@ -29,6 +29,14 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> WIND = ATTRIBUTES.register("wind",
+            () -> new BooleanAttribute(
+                    "attribute.kamenridercraftcore.wind",
+                    false
+            ).setSyncable(true)
+    );
+
+
     public static final DeferredHolder<Attribute, Attribute> WINGS_OUT = ATTRIBUTES.register("wing_out",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.wings_out",

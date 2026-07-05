@@ -202,8 +202,10 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
 
-
             if (event.getEntity() instanceof LivingEntity player) {
+
+                if (player.getAttribute(Attributes.WIND).getBaseValue()>0)player.getAttribute(Attributes.WIND).setBaseValue(player.getAttribute(Attributes.WIND).getBaseValue()-1);
+                if (player.getAttribute(Attributes.WIND).getBaseValue()<0)player.getAttribute(Attributes.WIND).setBaseValue(0);
 
                 if (player.level().isClientSide()) {
                     float X = 0;

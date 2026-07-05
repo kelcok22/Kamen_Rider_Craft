@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.client.renderer;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.RiderArmorModel;
 import com.kelco.kamenridercraft.client.renderer.layers.RiderRenderLayer;
+import com.kelco.kamenridercraft.client.renderer.layers.WindRenderLayer;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
@@ -23,7 +24,6 @@ import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import software.bernie.geckolib.util.RenderUtil;
 
 import static com.kelco.kamenridercraft.client.ModRenderTypes.mutekiGlint;
-import static net.minecraft.client.renderer.RenderType.ENTITY_TRANSLUCENT_EMISSIVE;
 import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendToPath;
 
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
@@ -66,6 +66,8 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         if (equipmentSlot == EquipmentSlot.HEAD || equipmentSlot == EquipmentSlot.FEET) {
             addRenderLayer(new RiderRenderLayer<>(this));
         }
+        addRenderLayer(new WindRenderLayer<>(this));
+
         addRenderLayer(new AutoGlowingGeoLayer<>(this) {
             @Nullable
             protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
