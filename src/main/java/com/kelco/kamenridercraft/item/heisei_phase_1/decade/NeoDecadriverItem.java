@@ -15,29 +15,30 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class NeoDecadriverItem extends RiderDriverItem {
 
-	public NeoDecadriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-		unlimitedBeltTextures = 1;
-	}
+    public NeoDecadriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+        unlimitedBeltTextures = 1;
+    }
 
     @Override
-    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
-			if (num==1&&!rider.isHolding(DecadeRiderItems.RIDE_BOOKER.get())) return "decadriver_belt_rb";
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num) {
+        if (num == 1 && !rider.isHolding(DecadeRiderItems.RIDE_BOOKER.get())) return "decadriver_belt_rb";
         return "blank";
 
     }
+
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/decade_belt.geo.json");
     }
+
     @Override
-    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-    {
-        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== DecadeRiderItems.NEO_DECADRIVER.get()) {
-            if((getFormItem(itemstack, 1)== DecadeRiderItems.K_TOUCH_21.get()
-                    &&((rider.isHolding(DecadeRiderItems.K_TOUCH_21.get()))))) return "belts/decadriver_belt_k_touch_21_empty";
+    public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity livingEntity, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET && itemStack.getItem() == DecadeRiderItems.NEO_DECADRIVER.get()) {
+            if ((getFormItem(itemStack, 1) == DecadeRiderItems.K_TOUCH_21.get()
+                    && ((livingEntity.isHolding(DecadeRiderItems.K_TOUCH_21.get())))))
+                return "belts/decadriver_belt_k_touch_21_empty";
         }
-        return super.getText(itemstack, equipmentSlot, rider, riderName);
+        return super.getText(itemStack, equipmentSlot, livingEntity, riderName);
     }
 }
 

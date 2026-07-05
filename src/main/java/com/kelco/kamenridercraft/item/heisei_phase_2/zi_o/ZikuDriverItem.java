@@ -15,44 +15,42 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ZikuDriverItem extends RiderDriverItem {
-
-    public ZikuDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-	}
+    public ZikuDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+    }
 
     public void summonDecadeExAid(Player player) {
-		DecadeArmorExAidEntity decadeExAid = MobsCore.DECADE_ARMOR_EX_AID.get().create(player.level());
-		if (decadeExAid != null) {
-			decadeExAid.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-			player.level().addFreshEntity(decadeExAid);
-			decadeExAid.bindToPlayer(player);
-		}
+        DecadeArmorExAidEntity decadeExAid = MobsCore.DECADE_ARMOR_EX_AID.get().create(player.level());
+        if (decadeExAid != null) {
+            decadeExAid.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+            player.level().addFreshEntity(decadeExAid);
+            decadeExAid.bindToPlayer(player);
+        }
     }
 
     public static boolean decadeExAidSummoned(Player player) {
-		for (DecadeArmorExAidEntity entity : player.level().getEntitiesOfClass(DecadeArmorExAidEntity.class,
-						player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player)) {
-			if (entity != null) return true;
-		}
+        for (DecadeArmorExAidEntity entity : player.level().getEntitiesOfClass(DecadeArmorExAidEntity.class,
+                player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player)) {
+            if (entity != null) return true;
+        }
         return false;
     }
 
-	public void onTransformation(ItemStack itemstack, LivingEntity entity) {
-		if (entity instanceof Player player && ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
-		&& itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
-		&& (RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get()
-		|| RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get()))
-			summonDecadeExAid(player);
-		super.onTransformation(itemstack, entity);
-	}
+    public void onTransformation(ItemStack itemstack, LivingEntity entity) {
+        if (entity instanceof Player player && ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
+                && itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
+                && (RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get()
+                || RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get()))
+            summonDecadeExAid(player);
+        super.onTransformation(itemstack, entity);
+    }
 
-	public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
-		&& ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
-		&& itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
-		&& RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get())
-			summonDecadeExAid(player);
-		super.onFormChange(itemstack, entity, tag);
-	}
+    public void onFormChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+        if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
+                && ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
+                && itemstack.getItem() == ZiORiderItems.ZIKU_DRIVER_ZI_O.get()
+                && RiderDriverItem.getFormItem(itemstack, 1) == ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get())
+            summonDecadeExAid(player);
+        super.onFormChange(itemstack, entity, tag);
+    }
 }

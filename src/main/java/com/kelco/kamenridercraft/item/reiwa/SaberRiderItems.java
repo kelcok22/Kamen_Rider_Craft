@@ -989,7 +989,7 @@ public class SaberRiderItems {
 					.addNum(2).changeSlot(2).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOK_GATE_WONDER_RIDE_BOOK = ITEMS.register("book_gate_wonder_ride_book",
-			() -> new BookGateItem(new Item.Properties(),10).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
+			() -> new BookGateItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIAGOSPEEDY_WONDER_RIDE_BOOK = ITEMS.register("diago_speedy_wonder_ride_book",
 			() -> new SummonBikeItem(new Item.Properties(), MobsCore.DIAGOSPEEDY)

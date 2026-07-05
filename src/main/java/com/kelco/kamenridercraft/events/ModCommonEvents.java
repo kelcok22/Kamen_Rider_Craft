@@ -449,15 +449,15 @@ public class ModCommonEvents {
                 ItemStack stack = event.getCarriedItem();
                 ItemStack other = event.getStackedOnItem();
                 if (other.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "gear/gochizo/gochizo_for_gochipod")))) {
-                    int stored = GochipodItem.get_store_Item(stack);
+                    int stored = GochipodItem.getStoreItem(stack);
                     int need = 100 - stored;
                     int have = other.getCount();
                     if (need != 0) {
                         if (have > need) {
-                            GochipodItem.set_store_Item(stack, need);
+                            GochipodItem.setStoreItem(stack, need);
                             other.shrink(need);
                         } else {
-                            GochipodItem.set_store_Item(stack, have);
+                            GochipodItem.setStoreItem(stack, have);
                             other.shrink(have);
                         }
                     }

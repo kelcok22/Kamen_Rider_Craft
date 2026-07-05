@@ -12,21 +12,21 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 
-public class CyclotronDriverItem  extends RiderDriverItem {
+public class CyclotronDriverItem extends RiderDriverItem {
 
 
-	public CyclotronDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-		
-	}
+    public CyclotronDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Item.Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+
+    }
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        hasBasicBeltInfo =false;
+        hasBasicBeltInfo = false;
         Item formItem = getFormItem(stack, 1);
 
-        if(formItem== ReviceRiderItems.CYCLOTRON_DRIVER_CORE.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.century"));
+        if (formItem == ReviceRiderItems.CYCLOTRON_DRIVER_CORE.get())
+            tooltipComponents.add(Component.translatable("kamenridercraft.name.century"));
         else tooltipComponents.add(Component.translatable("kamenridercraft.name.century_break"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

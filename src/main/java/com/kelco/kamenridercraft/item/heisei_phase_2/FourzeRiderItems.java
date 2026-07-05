@@ -565,7 +565,7 @@ public class FourzeRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GATE_SWITCH = ITEMS.register("gate_switch",
-			() -> new GateSwitchItem(new Item.Properties(),10).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
+			() -> new GateSwitchItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> RIDER_1_ASTROSWITCH = ITEMS.register("rider1_switch",

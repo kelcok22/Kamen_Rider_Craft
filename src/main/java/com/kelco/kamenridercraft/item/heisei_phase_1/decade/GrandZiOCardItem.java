@@ -31,6 +31,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,33 +51,34 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
     }
 
     @Override
-    public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
+    public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
         return repair.is(DecadeRiderItems.BLANK_CARD.get()) || super.isValidRepairItem(toRepair, repair);
     }
 
     @Override
-    public void activateCard(Level level, LivingEntity living, ItemStack stack) {
+    public void activateCard(Level level, LivingEntity livingEntity, ItemStack stack) {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-        for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
+        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(effect);
         ItemStack weapon = new ItemStack(ZiORiderItems.SAIKYO_ZIKAN_GIRADE.get(), 1);
         weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
         weapon.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
-        if (weapon.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) weapon.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+        if (weapon.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0)
+            weapon.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
         weapon.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
 
-        if (living instanceof Player) {
-            ItemEntity entity = new ItemEntity(level, living.getX(), living.getY(), living.getZ(), weapon, 0, 0, 0);
+        if (livingEntity instanceof Player) {
+            ItemEntity entity = new ItemEntity(level, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), weapon, 0, 0, 0);
             entity.setPickUpDelay(0);
             level.addFreshEntity(entity);
-        } else living.setItemSlot(EquipmentSlot.MAINHAND, weapon);
+        } else livingEntity.setItemSlot(EquipmentSlot.MAINHAND, weapon);
 
         LivingEntity zio;
-        if (living instanceof Player) zio = MobsCore.RIDER_SUMMON.get().create(level);
+        if (livingEntity instanceof Player) zio = MobsCore.RIDER_SUMMON.get().create(level);
         else zio = MobsCore.ENEMY_SUMMON.get().create(level);
 
         if (zio != null) {
-            zio.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
+            zio.moveTo(livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), livingEntity.getYRot(), livingEntity.getXRot());
             zio.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
             zio.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
             zio.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
@@ -84,8 +86,8 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
             zio.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.ZIKAN_GIRADE.get()));
 
             level.addFreshEntity(zio);
-            if (zio instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) living);
-            else ((EnemySummonEntity) zio).setOwnerUUID(living.getUUID());
+            if (zio instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) livingEntity);
+            else ((EnemySummonEntity) zio).setOwnerUUID(livingEntity.getUUID());
         }
 
         Random rand = new Random();
@@ -162,51 +164,55 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
                     summonBelt = (RiderDriverItem) BuildRiderItems.BUILD_DRIVER.get();
                     summonMainWeapon = BuildRiderItems.DRILL_CRUSHER.get();
                 }
-            };
+            }
+            ;
 
             LivingEntity summon;
-            if (living instanceof Player) summon = MobsCore.RIDER_SUMMON.get().create(level);
+            if (livingEntity instanceof Player) summon = MobsCore.RIDER_SUMMON.get().create(level);
             else summon = MobsCore.ENEMY_SUMMON.get().create(level);
 
             if (summon != null) {
-                summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
+                summon.moveTo(livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), livingEntity.getYRot(), livingEntity.getXRot());
                 summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
                 summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
                 summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonMainWeapon));
                 summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonOffWeapon));
-                if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
-                else if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
+                if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get())
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
+                else if (summonBelt == KabutoRiderItems.KABUTO_RIDER_BELT.get())
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), KabutoRiderItems.KABUTO_ZECTER.get(), 1);
 
                 level.addFreshEntity(summon);
-                if (summon instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) living);
-                else ((EnemySummonEntity) summon).setOwnerUUID(living.getUUID());
+                if (summon instanceof RiderSummonEntity rider) rider.bindToPlayer((Player) livingEntity);
+                else ((EnemySummonEntity) summon).setOwnerUUID(livingEntity.getUUID());
             }
         }
 
-        if (living instanceof ServerPlayer player) CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue()+1);
+        if (livingEntity instanceof ServerPlayer player)
+            CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue() + 1);
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
-            living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
+                livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), 10, 0, 0, 0, 0.05);
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack CARD = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack CARD = player.getItemInHand(interactionHand);
         if (!CARD.isDamaged()) {
             ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
             if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
                 activateCard(level, player, CARD);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.justice_order"), true);
-                if (!player.isCreative()) for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
+                if (!player.isCreative())
+                    for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 
-                return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
-            }
-            else return super.use(level, player, usedHand);
+                return InteractionResultHolder.sidedSuccess(player.getItemInHand(interactionHand), level.isClientSide());
+            } else return super.use(level, player, interactionHand);
         }
-        return InteractionResultHolder.fail(player.getItemInHand(usedHand));
+        return InteractionResultHolder.fail(player.getItemInHand(interactionHand));
     }
 }

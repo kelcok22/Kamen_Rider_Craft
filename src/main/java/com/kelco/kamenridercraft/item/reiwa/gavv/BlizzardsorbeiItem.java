@@ -14,32 +14,33 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 
 public class BlizzardsorbeiItem extends RiderFormChangeItem {
-    public BlizzardsorbeiItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, formName, ridername, beltTex, effects);
+    public BlizzardsorbeiItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, riderName, beltTex, effects);
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
-        
+
         if (player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && RiderDriverItem.getFormItem(BELT, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get()) {
-			List<WhippedSoldierEntity> soldiers = level.getEntitiesOfClass(WhippedSoldierEntity.class, player.getBoundingBox().inflate(10), entity -> entity.getOwner() == player);
-			if (soldiers.size() == 2 && soldiers.get(0).getAttributeValue(Attributes.SCALE) == 1.0) {
+                && RiderDriverItem.getFormItem(BELT, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get()) {
+            List<WhippedSoldierEntity> soldiers = level.getEntitiesOfClass(WhippedSoldierEntity.class, player.getBoundingBox().inflate(10), entity -> entity.getOwner() == player);
+            if (soldiers.size() == 2 && soldiers.get(0).getAttributeValue(Attributes.SCALE) == 1.0) {
                 soldiers.get(0).getAttribute(Attributes.SCALE).setBaseValue(0.5);
                 soldiers.get(1).getAttribute(Attributes.SCALE).setBaseValue(2.0);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.atari"), true);
-		player.awardStat(Stats.ITEM_USED.get(this));
+                player.awardStat(Stats.ITEM_USED.get(this));
             }
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-        return super.use(level, player, usedHand);
+        return super.use(level, player, interactionHand);
 
     }
 }

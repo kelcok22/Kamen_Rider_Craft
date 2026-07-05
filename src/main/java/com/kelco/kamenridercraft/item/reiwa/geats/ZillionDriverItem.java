@@ -12,23 +12,22 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 
-public class ZillionDriverItem  extends RiderDriverItem {
+public class ZillionDriverItem extends RiderDriverItem {
 
 
-	public ZillionDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-		
-	}
+    public ZillionDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Item.Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+
+    }
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        hasBasicBeltInfo =false;
+        hasBasicBeltInfo = false;
         Item formItem = getFormItem(stack, 1);
 
-        if(formItem== GeatsRiderItems.SIRIUS_CARD.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.regad"));
+        if (formItem == GeatsRiderItems.SIRIUS_CARD.get())
+            tooltipComponents.add(Component.translatable("kamenridercraft.name.regad"));
         else tooltipComponents.add(Component.translatable("kamenridercraft.name.regad_omega"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
-
 }

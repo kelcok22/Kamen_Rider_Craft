@@ -26,21 +26,22 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.function.Consumer;
 
 public class LegendRideMagnumItem extends BaseBlasterItem {
-	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
+    private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-	public LegendRideMagnumItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-		super(toolTier, Atk, Spd, prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-	}
+    public LegendRideMagnumItem(Tier toolTier, int Atk, float Spd, Properties prop) {
+        super(toolTier, Atk, Spd, prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
+    }
 
     @Override
     public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
-        if (stack.has(DataComponents.CONTAINER) && stack.getDamageValue()==stack.getMaxDamage()-1) {
+        if (stack.has(DataComponents.CONTAINER) && stack.getDamageValue() == stack.getMaxDamage() - 1) {
             for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) entity.spawnAtLocation(card);
             if (entity instanceof ServerPlayer player) player.closeContainer();
             stack.set(DataComponents.CONTAINER, ItemContainerContents.EMPTY);
@@ -48,45 +49,44 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
         return amount;
     }
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		ItemStack itemstack = entity.getItemInHand(hand);
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
-		if (entity.isShiftKeyDown()) {
-			if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
-				serverPlayer.openMenu(new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.translatable("container.kamenridercraft.legend_ride_magnum");
-					}
+        if (player.isShiftKeyDown()) {
+            if (!world.isClientSide && player instanceof ServerPlayer serverPlayer) {
+                serverPlayer.openMenu(new MenuProvider() {
+                    @Override
+                    public Component getDisplayName() {
+                        return Component.translatable("container.kamenridercraft.legend_ride_magnum");
+                    }
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-						packetBuffer.writeBlockPos(entity.blockPosition());
-						packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-						return new LegendRideMagnumGuiMenu(id, inventory, packetBuffer,itemstack);
-					}
-				}, buf -> {
-					buf.writeBlockPos(entity.blockPosition());
-					buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-				});
-			}
-			/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
-			return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
-		}
-		return super.use(world, entity, hand);
-	}
+                    @Override
+                    public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+                        FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+                        packetBuffer.writeBlockPos(player.blockPosition());
+                        packetBuffer.writeByte(interactionHand == InteractionHand.MAIN_HAND ? 0 : 1);
+                        return new LegendRideMagnumGuiMenu(id, inventory, packetBuffer, itemstack);
+                    }
+                }, buf -> {
+                    buf.writeBlockPos(player.blockPosition());
+                    buf.writeByte(interactionHand == InteractionHand.MAIN_HAND ? 0 : 1);
+                });
+            }
+            return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
+        }
+        return super.use(world, player, interactionHand);
+    }
 
-	@Override
-	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
-		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().findAny().isPresent()
-		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof LegenDriverItem legend && legend.isTransformed(player)) {
-			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
+    @Override
+    public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
+        if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().findAny().isPresent()
+                && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof LegenDriverItem legend && legend.isTransformed(player)) {
+            ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
-			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof LegendChemyCardItem || item.getItem() instanceof LegendSummonCardItem))) {
-                int cardCount = (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof LegendChemyCardItem || item.getItem() instanceof LegendSummonCardItem)).count();
-				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200*cardCount);
+            if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof LegendChemyCardItem || item.getItem() instanceof LegendSummonCardItem))) {
+                int cardCount = (int) contents.nonEmptyStream().filter(item -> (item.getItem() instanceof LegendChemyCardItem || item.getItem() instanceof LegendSummonCardItem)).count();
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * cardCount);
                 switch (cardCount) {
                     case 1:
                         player.displayClientMessage(Component.translatable("attack.kamenridercraft.legendride_solo"), true);
@@ -102,27 +102,29 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
                 }
 
                 contents.nonEmptyItems().forEach(card -> {
-                    if (card.getItem() instanceof LegendChemyCardItem summonCard) summonCard.summon(card, level, player);
-                    else if (card.getItem() instanceof LegendSummonCardItem summonCard) summonCard.summon(card, level, player);
-				});
-			}
+                    if (card.getItem() instanceof LegendChemyCardItem summonCard)
+                        summonCard.summon(card, level, player);
+                    else if (card.getItem() instanceof LegendSummonCardItem summonCard)
+                        summonCard.summon(card, level, player);
+                });
+            }
 
-			stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
-			level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
-			player.awardStat(Stats.ITEM_USED.get(this));
-		} else super.releaseUsing(stack, level, entityLiving, timeLeft);
-	}
+            stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+            player.awardStat(Stats.ITEM_USED.get(this));
+        } else super.releaseUsing(stack, level, entityLiving, timeLeft);
+    }
 
-	public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-		if (stack.has(DataComponents.CONTAINER_LOOT)) {
-			tooltipComponents.add(UNKNOWN_CONTENTS);
-		}
+    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        super.appendHoverText(itemStack, tooltipContext, tooltipComponents, tooltipFlag);
+        if (itemStack.has(DataComponents.CONTAINER_LOOT)) {
+            tooltipComponents.add(UNKNOWN_CONTENTS);
+        }
 
-		int i = 0;
-		int j = 0;
+        int i = 0;
+        int j = 0;
 
-        for (ItemStack itemstack : stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
+        for (ItemStack itemstack : itemStack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).nonEmptyItems()) {
             ++j;
             if (i <= 4) {
                 ++i;
@@ -130,9 +132,9 @@ public class LegendRideMagnumItem extends BaseBlasterItem {
             }
         }
 
-		if (j - i > 0) {
-			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
-		}
+        if (j - i > 0) {
+            tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
+        }
 
-	}
+    }
 }

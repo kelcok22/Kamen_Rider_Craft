@@ -21,6 +21,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,27 +68,29 @@ public class ReiwaRidewatchItem extends BaseItem {
     }
 
     public void summon(Level level, Player player) {
-		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
-		if (summon != null) {
+        GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
+        if (summon != null) {
             summon.allowFormChanges(true);
             RiderDriverItem belt = (RiderDriverItem) BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelt));
 
-			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.helmet));
-			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.chestplate));
-			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.leggings));
+            summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+            summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.helmet));
+            summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(belt.chestplate));
+            summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(belt.leggings));
             Item key = player.getOffhandItem().getItem();
 
             if (this.summonAltBelts.containsKey(key.toString())) {
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltBelts.get(key.toString())))));
             } else summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(belt));
-            
+
             if (this.summonAltWeapons.containsKey(key.toString())) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[0]))));
-                if (this.summonAltWeapons.get(key.toString()).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[1]))));
+                if (this.summonAltWeapons.get(key.toString()).length > 1)
+                    summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[1]))));
             } else if (!this.summonWeapons.isEmpty()) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(0)))));
-                if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
+                if (this.summonWeapons.size() == 2)
+                    summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
             }
 
             if (this.summonForm != null) {
@@ -96,19 +99,28 @@ public class ReiwaRidewatchItem extends BaseItem {
             }
             if (key instanceof RiderFormChangeItem formItem) {
                 if (this == ZiORiderItems.GEATS_RIDEWATCH.get()) {
-                    if (key == GeatsRiderItems.GEATS_CORE_ID.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), ModdedItemCore.BLANK_FORM.get(), 2);
-                    else if (key == GeatsRiderItems.COMMAND_TWIN_BUCKLE_CANNON.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.COMMAND_TWIN_BUCKLE_JET.get(), 3);
-                    else if (key == GeatsRiderItems.UNITE_GRIP.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_MKII_RAISE_BUCKLE.get(), 3);
-                    else if (key == GeatsRiderItems.BOOST_MKIII_RAISE_BUCKLE.get()||key == GeatsRiderItems.ONENESS_RAISE_BUCKLE.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_MKIII_RAISE_BUCKLE.get(), 3);
+                    if (key == GeatsRiderItems.GEATS_CORE_ID.get())
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), ModdedItemCore.BLANK_FORM.get(), 2);
+                    else if (key == GeatsRiderItems.COMMAND_TWIN_BUCKLE_CANNON.get())
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.COMMAND_TWIN_BUCKLE_JET.get(), 3);
+                    else if (key == GeatsRiderItems.UNITE_GRIP.get())
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_MKII_RAISE_BUCKLE.get(), 3);
+                    else if (key == GeatsRiderItems.BOOST_MKIII_RAISE_BUCKLE.get() || key == GeatsRiderItems.ONENESS_RAISE_BUCKLE.get())
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_MKIII_RAISE_BUCKLE.get(), 3);
                     RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
                 } else formItem.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
             } else if (this == ZiORiderItems.GEATS_RIDEWATCH.get()) {
-                if (key == GeatsRiderItems.POWERED_BUILDER_RAISE_BUCKLE.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.GIGANT_CONTAINER_BUCKLE.get(), 3);
-                else if (key == GeatsRiderItems.FEVER_SLOT_RAISE_BUCKLE.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.MAGNUM_RAISE_BUCKLE.get(), 3);
-                else if (key == GeatsRiderItems.FANTASY_RAISE_BUCKLE.get()) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), ModdedItemCore.BLANK_FORM.get(), 3);
-                else RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_RAISE_BUCKLE.get(), 3);
+                if (key == GeatsRiderItems.POWERED_BUILDER_RAISE_BUCKLE.get())
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.GIGANT_CONTAINER_BUCKLE.get(), 3);
+                else if (key == GeatsRiderItems.FEVER_SLOT_RAISE_BUCKLE.get())
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.MAGNUM_RAISE_BUCKLE.get(), 3);
+                else if (key == GeatsRiderItems.FANTASY_RAISE_BUCKLE.get())
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), ModdedItemCore.BLANK_FORM.get(), 3);
+                else
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.BOOST_RAISE_BUCKLE.get(), 3);
             }
-            for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
+            for (ItemStack weapon : summon.getHandSlots())
+                weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
@@ -116,27 +128,26 @@ public class ReiwaRidewatchItem extends BaseItem {
                     RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), form, form.getSlot());
                 }
             }
-        
-			level.addFreshEntity(summon);
-			summon.bindToPlayer(player);
+
+            level.addFreshEntity(summon);
+            summon.bindToPlayer(player);
             summon.allowFormChanges(false);
             if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
             player.awardStat(Stats.ITEM_USED.get(this));
-		}
+        }
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (level.getGameRules().getBoolean(ModGameRules.RULE_REIWA_RIDEWATCHES) && player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
+                && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+                || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-        return super.use(level, player, usedHand);
-
+        return super.use(level, player, interactionHand);
     }
 }

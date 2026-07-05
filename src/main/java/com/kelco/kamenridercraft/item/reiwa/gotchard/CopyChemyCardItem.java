@@ -16,15 +16,17 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
 
 public class CopyChemyCardItem extends CopyFormChangeItem {
+    private RiderFormChangeItem formItem = null;
 
-	private RiderFormChangeItem FORM_ITEM = null;
-
-	public CopyChemyCardItem(Properties properties, Item form_item) {
-		super( properties, form_item);
-        if ( form_item instanceof RiderFormChangeItem form) FORM_ITEM=form;
-	}
+    public CopyChemyCardItem(Properties properties, Item form_item) {
+        super(properties, form_item);
+        if (form_item instanceof RiderFormChangeItem form) formItem = form;
+    }
 
     public boolean inventoryOrHolderContains(Player player, Item item) {
         NonNullList<ItemStack> inv = NonNullList.create();
@@ -32,21 +34,21 @@ public class CopyChemyCardItem extends CopyFormChangeItem {
         inv.addAll(player.getInventory().armor);
         inv.add(player.getInventory().offhand.getFirst());
 
-        if (player.getInventory().countItem(item)!=0) return true;
+        if (player.getInventory().countItem(item) != 0) return true;
         else for (ItemStack itemStack : inv) {
             if (itemStack.has(DataComponents.CONTAINER)) {
-                for (ItemStack stack : itemStack.getComponents().get(DataComponents.CONTAINER).nonEmptyItems())
+                for (ItemStack stack : Objects.requireNonNull(itemStack.getComponents().get(DataComponents.CONTAINER)).nonEmptyItems())
                     if (stack.getItem() == item) return true;
             } else if (itemStack.has(DataComponents.BUNDLE_CONTENTS))
-                for (ItemStack stack : itemStack.getComponents().get(DataComponents.BUNDLE_CONTENTS).items())
+                for (ItemStack stack : Objects.requireNonNull(itemStack.getComponents().get(DataComponents.BUNDLE_CONTENTS)).items())
                     if (stack.getItem() == item) return true;
         }
         return false;
     }
 
     public boolean canSummonGotcharbrothers(Player player) {
-        if (!FORM_ITEM.needItemList.isEmpty()) {
-            for (Item item : FORM_ITEM.needItemList) {
+        if (!formItem.needItemList.isEmpty()) {
+            for (Item item : formItem.needItemList) {
                 if (!inventoryOrHolderContains(player, item)) return false;
             }
         }
@@ -54,12 +56,12 @@ public class CopyChemyCardItem extends CopyFormChangeItem {
                 && RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get();
     }
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 
-		ItemStack itemstack = player.getItemInHand(usedHand);
+        ItemStack itemstack = player.getItemInHand(usedHand);
 
-        if (canSummonGotcharbrothers(player) && FORM_ITEM != null) {
+        if (canSummonGotcharbrothers(player) && formItem != null) {
             RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
             if (summon != null) {
                 summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
@@ -67,22 +69,20 @@ public class CopyChemyCardItem extends CopyFormChangeItem {
                 summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GotchardRiderItems.GOTCHARD_CHESTPLATE.get()));
                 summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GotchardRiderItems.GOTCHARD_LEGGINGS.get()));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.GOTCHARDRIVER_BROTHER.get()));
-                RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), FORM_ITEM, 1);
+                RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), formItem, 1);
 
                 level.addFreshEntity(summon);
                 summon.bindToPlayer(player);
                 summon.addRequiredForm((RiderFormChangeItem) GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(), 1);
                 if (!player.isCreative()) {
                     summon.takeSummonItem(itemstack);
-                    for (Item item : FORM_ITEM.needItemList) player.getCooldowns().addCooldown(item, 750);
+                    for (Item item : formItem.needItemList) player.getCooldowns().addCooldown(item, 750);
                 }
                 player.awardStat(Stats.ITEM_USED.get(this));
             }
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-		if (FORM_ITEM !=null)FORM_ITEM.use(level, player, usedHand);
-		
-		return InteractionResultHolder.sidedSuccess(itemstack,level.isClientSide());
-
-	}
+        if (formItem != null) formItem.use(level, player, usedHand);
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }

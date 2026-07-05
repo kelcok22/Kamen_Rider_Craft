@@ -17,15 +17,13 @@ import net.neoforged.neoforge.registries.DeferredItem;
 public class SwordOfLogosBuckleItem extends RiderDriverItem {
 
 
-
-    public SwordOfLogosBuckleItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-    {
+    public SwordOfLogosBuckleItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties);
-        unlimitedTextures =1;
+        unlimitedTextures = 1;
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName , int num) {
+    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
         if (livingEntity.isHolding(SaberRiderItems.DOGOUKEN_GEKIDO.get())) return "blank";
         return "dogouken_gekido";
     }
@@ -37,15 +35,11 @@ public class SwordOfLogosBuckleItem extends RiderDriverItem {
 
 
     @Override
-    public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
-
+    public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
         switch (currentSlot) {
-            case HEAD,LEGS,CHEST ->{
+            case HEAD, LEGS, CHEST -> {
                 return true;
-
             }
-
-            default -> {}
         }
         return false;
     }

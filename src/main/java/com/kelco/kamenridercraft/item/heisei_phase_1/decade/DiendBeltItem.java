@@ -16,24 +16,23 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class DiendBeltItem extends RiderDriverItem {
 
-	public DiendBeltItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-		unlimitedBeltTextures = 1;
-	}
+    public DiendBeltItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+        unlimitedBeltTextures = 1;
+    }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/diend_belt.geo.json");
 
     }
+
     @Override
-    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-    {
-        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()== DecadeRiderItems.DIEND_BELT.get()) {
-            if((getFormItem(itemstack, 1)== DecadeRiderItems.K_TOUCH_DIEND.get()
-                    &&((rider.isHolding(DecadeRiderItems.K_TOUCH_DIEND.get()))))) return "belts/diend_belt_k_touch_empty";
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity livingEntity, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem() == DecadeRiderItems.DIEND_BELT.get()) {
+            if ((getFormItem(itemstack, 1) == DecadeRiderItems.K_TOUCH_DIEND.get()
+                    && ((livingEntity.isHolding(DecadeRiderItems.K_TOUCH_DIEND.get())))))
+                return "belts/diend_belt_k_touch_empty";
         }
-        return super.getText(itemstack, equipmentSlot, rider, riderName);
+        return super.getText(itemstack, equipmentSlot, livingEntity, riderName);
     }
 }
-

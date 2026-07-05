@@ -17,64 +17,61 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import org.apache.commons.lang3.ArrayUtils;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 
 public class WizardRingItem extends BaseItem {
+    private List<MobEffectInstance> EFFECTS;
+    public String SPECIAL;
+    public String[] FORMS = new String[]{"wizard", "wiseman", "mage", "mage_blue", "mage_green", "mage_foot_soldiers", "mage_captain", "sorcerer", "wiseman_female", "dark_wizard", "black_wizard"};
 
-	private List<MobEffectInstance> EFFECTS;
-	public String SPECIAL;
-	public String[] FORMS = new String[] {"wizard","wiseman","mage","mage_blue","mage_green","mage_foot_soldiers","mage_captain","sorcerer","wiseman_female","dark_wizard","black_wizard"};
+    public WizardRingItem(Properties properties, MobEffectInstance... effects) {
+        super(properties);
+        EFFECTS = Lists.newArrayList(effects);
+    }
 
-	public WizardRingItem (Properties properties, MobEffectInstance... effects)
-	{
-		super(properties);
-		EFFECTS = Lists.newArrayList(effects);
-	}
-
-	public WizardRingItem (Properties properties, String special)
-	{
-		super(properties);
-		SPECIAL = special;
-	}
+    public WizardRingItem(Properties properties, String special) {
+        super(properties);
+        SPECIAL = special;
+    }
 
 
-	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-		ItemStack itemstack = player.getItemInHand(hand);
-		
-		if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-		&& belt.isTransformed(player) && ArrayUtils.contains(FORMS, belt.riderName)) {
-			if (EFFECTS != null) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
+
+        if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+                && belt.isTransformed(player) && ArrayUtils.contains(FORMS, belt.riderName)) {
+            if (EFFECTS != null) {
                 for (MobEffectInstance effect : EFFECTS) {
                     player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, true));
                 }
-			} else switch (SPECIAL) {
+            } else switch (SPECIAL) {
                 case "kick_strike":
                     CustomData.update(DataComponents.CUSTOM_DATA, player.getItemBySlot(EquipmentSlot.FEET), tag -> tag.putDouble("use_ability", 5));
                     break;
-				case "copy":
-					RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
-					if (copy != null) {
-						copy.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-						copy.NAME = "wizard_copy";
-						copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
-						copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
-						copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
-						copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
-						RiderDriverItem.setFormItem(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+                case "copy":
+                    RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
+                    if (copy != null) {
+                        copy.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                        copy.NAME = "wizard_copy";
+                        copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+                        copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
+                        copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
+                        copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
+                        RiderDriverItem.setFormItem(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1), 1);
 
-						level.addFreshEntity(copy);
-						copy.bindToPlayer(player);
-					}
-					break;
-			}
-			if (!player.isCreative()) {
-				player.getCooldowns().addCooldown(this, 500);
-			}
-			player.awardStat(Stats.ITEM_USED.get(this));
-		}
-		
-		return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
-	}
+                        level.addFreshEntity(copy);
+                        copy.bindToPlayer(player);
+                    }
+                    break;
+            }
+            if (!player.isCreative()) {
+                player.getCooldowns().addCooldown(this, 500);
+            }
+            player.awardStat(Stats.ITEM_USED.get(this));
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }

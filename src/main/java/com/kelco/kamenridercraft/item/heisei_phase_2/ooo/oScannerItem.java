@@ -27,6 +27,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -38,7 +39,7 @@ public class oScannerItem extends BaseItem {
         super(prop);
     }
 
-    public void inventoryTick(ItemStack itemStack, Level level, Entity entity, int slotId, boolean isSelected) {
+    public void inventoryTick(@NotNull ItemStack itemStack, @NotNull Level level, @NotNull Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof Player player) {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
                     && belt == OOORiderItems.OOODRIVER.get() && belt.isTransformed(player)) {
@@ -89,7 +90,7 @@ public class oScannerItem extends BaseItem {
         return false;
     }
 
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         ItemStack itemstack = player.getItemInHand(interactionHand);
 
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt

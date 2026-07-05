@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,8 +30,8 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
     private Map<String, String[]> summonAltWeapons = new HashMap<>();
     private List<String> summonWeapons = new ArrayList<>(2);
 
-    public Zi_ORidewatchItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, formName, ridername, beltTex, effects);
+    public Zi_ORidewatchItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, riderName, beltTex, effects);
     }
 
     public Zi_ORidewatchItem addAltForm(String item, String... forms) {
@@ -49,70 +50,72 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
     }
 
     public void summon(Level level, Player player) {
-		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
-		if (summon != null) {
+        GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
+        if (summon != null) {
             summon.allowFormChanges(true);
-			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
-			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
-			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
-			summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
+            summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+            summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
+            summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
+            summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
+            summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
             Item key = player.getOffhandItem().getItem();
-            
+
             if (this.summonAltWeapons.containsKey(key.toString())) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[0]))));
-                if (this.summonAltWeapons.get(key.toString()).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[1]))));
+                if (this.summonAltWeapons.get(key.toString()).length > 1)
+                    summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[1]))));
             } else if (!this.summonWeapons.isEmpty()) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(0)))));
-                if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
+                if (this.summonWeapons.size() == 2)
+                    summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonWeapons.get(1)))));
             }
 
             if (key instanceof RiderFormChangeItem formItem && formItem != ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get() && formItem != ZiORiderItems.WOZ_RIDEWATCH.get()
-            && formItem != ZiORiderItems.SABER_RIDEWATCH.get() && (formItem != ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get() || player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZiORiderItems.OHMA_ZI_O_DRIVER.get())) {
+                    && formItem != ZiORiderItems.SABER_RIDEWATCH.get() && (formItem != ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get() || player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZiORiderItems.OHMA_ZI_O_DRIVER.get())) {
                 formItem.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
-                if (formItem == ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.SAIKYO_ZIKAN_GIRADE.get()));
+                if (formItem == ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get())
+                    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.SAIKYO_ZIKAN_GIRADE.get()));
             }
             if (this.summonAltForms.containsKey(key.toString())) {
                 for (String str : this.summonAltForms.get(key.toString())) {
                     RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), BuiltInRegistries.ITEM.get(ResourceLocation.parse(str)), 1);
                 }
             }
-        
-			level.addFreshEntity(summon);
-			summon.bindToPlayer(player);
+
+            level.addFreshEntity(summon);
+            summon.bindToPlayer(player);
             if (key == ExAidRiderItems.MIGHTY_BROTHERS_XX_GASHAT.get()) {
-		        GrandSummonEntity summon2 = MobsCore.GRAND_SUMMON.get().create(level);
-		        if (summon2 != null) {
-		        	summon2.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-		        	summon2.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
-		        	summon2.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
-		        	summon2.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
-		        	summon2.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
-		        	summon2.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.ZIKAN_GIRADE.get()));
+                GrandSummonEntity summon2 = MobsCore.GRAND_SUMMON.get().create(level);
+                if (summon2 != null) {
+                    summon2.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                    summon2.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZiORiderItems.ZI_O_HELMET.get()));
+                    summon2.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
+                    summon2.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
+                    summon2.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
+                    summon2.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.ZIKAN_GIRADE.get()));
                     RiderDriverItem.setFormItem(summon2.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
-		        	level.addFreshEntity(summon2);
-		        	summon2.bindToPlayer(player);
-		        }
+                    level.addFreshEntity(summon2);
+                    summon2.bindToPlayer(player);
+                }
             }
             summon.allowFormChanges(false);
             if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
             player.awardStat(Stats.ITEM_USED.get(this));
-		}
+        }
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get()
-        || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
+                && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get()
+                || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+                || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-        return super.use(level, player, usedHand);
-
+        return super.use(level, player, interactionHand);
     }
 }

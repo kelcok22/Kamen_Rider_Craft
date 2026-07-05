@@ -29,6 +29,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,52 +54,58 @@ public class ZeinCardBaseItem extends BaseItem implements ZeinCard {
     }
 
     @Override
-    public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
+    public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
         return repair.is(ZeroOneRiderItems.ZEIN_PROGRISEKEY.get()) || super.isValidRepairItem(toRepair, repair);
     }
 
     @Override
-    public void activateCard(Level level, LivingEntity living, ItemStack stack) {
+    public void activateCard(Level level, LivingEntity livingEntity, ItemStack stack) {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-        for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
-        if (zeinItemList.isEmpty() && !(living instanceof Player)) living.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
-        else for (String string : zeinItemList) {
-            ItemStack weapon = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(string)), 1);
-            weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
-            weapon.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
-            if (weapon.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0)
-                weapon.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
-            weapon.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
+        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(effect);
+        if (zeinItemList.isEmpty() && !(livingEntity instanceof Player)) {
+            livingEntity.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
+        } else {
+            for (String string : zeinItemList) {
+                ItemStack weapon = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(string)), 1);
+                weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
+                weapon.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);
+                if (weapon.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0)
+                    weapon.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+                weapon.enchant(lookup.get(Enchantments.VANISHING_CURSE).get(), 1);
 
-            if (living instanceof Player) {
-                ItemEntity entity = new ItemEntity(level, living.getX(), living.getY(), living.getZ(), weapon, 0, 0, 0);
-                entity.setPickUpDelay(0);
-                level.addFreshEntity(entity);
-            } else if (zeinItemList.size() == 2 && zeinItemList.get(1).equals(string)) living.setItemSlot(EquipmentSlot.OFFHAND, weapon);
-            else living.setItemSlot(EquipmentSlot.MAINHAND, weapon);
+                if (livingEntity instanceof Player) {
+                    ItemEntity entity = new ItemEntity(level, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), weapon, 0, 0, 0);
+                    entity.setPickUpDelay(0);
+                    level.addFreshEntity(entity);
+                } else if (zeinItemList.size() == 2 && zeinItemList.get(1).equals(string))
+                    livingEntity.setItemSlot(EquipmentSlot.OFFHAND, weapon);
+                else livingEntity.setItemSlot(EquipmentSlot.MAINHAND, weapon);
+            }
         }
-        if (living instanceof ServerPlayer player) CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue()+1);
+        if (livingEntity instanceof ServerPlayer player)
+            CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue() + 1);
         stack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
-                living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
+                livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), 10, 0, 0, 0, 0.05);
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack CARD = player.getItemInHand(usedHand);
-        if (!CARD.isDamaged()) {
-            ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack card = player.getItemInHand(interactionHand);
+        if (!card.isDamaged()) {
+            ItemStack belt = player.getItemBySlot(EquipmentSlot.FEET);
 
-            if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
-                activateCard(level, player, CARD);
+            if (!level.isClientSide() && belt.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) belt.getItem()).isTransformed(player)) {
+                activateCard(level, player, card);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.justice_order"), true);
-                if (!player.isCreative()) for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
+                if (!player.isCreative())
+                    for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 
-                return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
+                return InteractionResultHolder.sidedSuccess(player.getItemInHand(interactionHand), level.isClientSide());
             }
         }
-        return InteractionResultHolder.fail(player.getItemInHand(usedHand));
+        return InteractionResultHolder.fail(player.getItemInHand(interactionHand));
     }
 }

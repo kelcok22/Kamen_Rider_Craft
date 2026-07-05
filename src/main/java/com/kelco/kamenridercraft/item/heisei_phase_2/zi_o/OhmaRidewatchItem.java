@@ -20,6 +20,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.fml.ModList;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -72,68 +73,73 @@ public class OhmaRidewatchItem extends BaseItem {
     public void summon(Level level, Player player) {
         if (!level.isClientSide() && this == ZiORiderItems.RYUSOULGER_RIDEWATCH.get() && !ModList.get().isLoaded("supersentaicraft")) {
             player.sendSystemMessage(Component.translatable("message.kamenridercraft.ryusoul_red_fail"));
-	    player.awardStat(Stats.ITEM_USED.get(this));
+            player.awardStat(Stats.ITEM_USED.get(this));
         } else {
-		    GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
-		    if (summon != null) {
+            GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
+            if (summon != null) {
                 summon.allowFormChanges(true);
-		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+                summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
                 if (this == ZiORiderItems.RYUSOULGER_RIDEWATCH.get()) {
-		    	    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_head"))));
-		    	    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_torso"))));
-		    	    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_legs"))));
-		    	    summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:red_ryusoul_changer"))));
-		    	    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoul_ken"))));
+                    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_head"))));
+                    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_torso"))));
+                    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoulger_legs"))));
+                    summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:red_ryusoul_changer"))));
+                    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:ryusoul_ken"))));
                 } else {
-		    	    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.helmet));
-		    	    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.chestplate));
-		    	    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.leggings));
+                    summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.helmet));
+                    summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.chestplate));
+                    summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.leggings));
                     Item key = player.getOffhandItem().getItem();
 
-		    	    if (this.summonAltBelts.containsKey(key)) {
+                    if (this.summonAltBelts.containsKey(key)) {
                         summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonAltBelts.get(key)));
                     } else summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonBelt));
 
                     if (this.summonAltWeapons.containsKey(key)) {
                         summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(this.summonAltWeapons.get(key)[0]));
-                        if (this.summonAltWeapons.get(key).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(this.summonAltWeapons.get(key)[1]));
+                        if (this.summonAltWeapons.get(key).length > 1)
+                            summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(this.summonAltWeapons.get(key)[1]));
                     } else if (!summonWeapons.isEmpty()) {
                         summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(this.summonWeapons.get(0)));
-                        if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1)));
+                        if (this.summonWeapons.size() == 2)
+                            summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1)));
                     }
 
-                    for (ItemStack weapon : summon.getHandSlots()) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
+                    for (ItemStack weapon : summon.getHandSlots())
+                        weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
 
-                    if (this.summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
-                    if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem) key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
+                    if (this.summonForm != null)
+                        RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, this.summonForm.getSlot());
+                    if (key instanceof RiderFormChangeItem || key instanceof CopyFormChangeItem)
+                        key.interactLivingEntity(player.getOffhandItem(), player, summon, InteractionHand.OFF_HAND);
                     if (this.summonAltForms.containsKey(key)) {
                         for (RiderFormChangeItem item : this.summonAltForms.get(key)) {
                             RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
                         }
                     }
                 }
-            
-		    	level.addFreshEntity(summon);
-		    	summon.bindToPlayer(player);
+
+                level.addFreshEntity(summon);
+                summon.bindToPlayer(player);
                 summon.allowFormChanges(false);
                 if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
                 player.awardStat(Stats.ITEM_USED.get(this));
-		    }
+            }
         }
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
+                && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+                || RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-        return super.use(level, player, usedHand);
+        return super.use(level, player, interactionHand);
 
     }
 }

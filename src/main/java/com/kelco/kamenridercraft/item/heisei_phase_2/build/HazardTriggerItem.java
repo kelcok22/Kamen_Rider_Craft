@@ -15,8 +15,8 @@ import net.minecraft.world.level.Level;
 public class HazardTriggerItem extends RiderFormChangeItem {
 
 
-    public HazardTriggerItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, formName, ridername, beltTex, effects);
+    public HazardTriggerItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, riderName, beltTex, effects);
     }
 
     @Override

@@ -22,117 +22,115 @@ import java.util.List;
 import java.util.Objects;
 
 public class BirthDriverItem extends RiderDriverItem {
+    public BirthDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Item.Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
 
+        extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
+        numBaseFormItems = 7;
+    }
 
-	public BirthDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        hasBasicBeltInfo = false;
+        tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
 
-		extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(),(RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
-		numBaseFormItems =7;
-	}
+        if (getFormItem(stack, 2) == OOORiderItems.BIRTH_CORE_BREAST_CANNON.get() & getFormItem(stack, 3)
+                == OOORiderItems.BIRTH_CORE_CRANE_ARM.get() & getFormItem(stack, 4)
+                == OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get() & getFormItem(stack, 5)
+                == OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get() & getFormItem(stack, 6)
+                == OOORiderItems.BIRTH_CORE_DRILL_ARM.get() & getFormItem(stack, 7)
+                == OOORiderItems.BIRTH_CORE_CUTTER_WING.get())
+            tooltipComponents.add(Component.translatable("kamenridercraft:birthday.form"));
 
-	@Override
-	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		hasBasicBeltInfo =false;
-		tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
+        else {
+            tooltipComponents.add(Component.translatable("kamenridercraft:claws.form"));
 
-		if (getFormItem(stack, 2)== OOORiderItems.BIRTH_CORE_BREAST_CANNON.get()& getFormItem(stack, 3)
-				== OOORiderItems.BIRTH_CORE_CRANE_ARM.get()& getFormItem(stack, 4)
-				== OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get()& getFormItem(stack, 5)
-				== OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get()& getFormItem(stack, 6)
-				== OOORiderItems.BIRTH_CORE_DRILL_ARM.get()& getFormItem(stack, 7)
-				== OOORiderItems.BIRTH_CORE_CUTTER_WING.get()) tooltipComponents.add(Component.translatable( "kamenridercraft:birthday.form"));
+            if (getFormItem(stack, 2) == OOORiderItems.BIRTH_CORE_BREAST_CANNON.get())
+                tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_breast_cannon.form"));
+            if (getFormItem(stack, 3) == OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
+                tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_crane_arm.form"));
+            if (getFormItem(stack, 4) == OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get())
+                tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_shovel_arm.form"));
+            if (getFormItem(stack, 5) == OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get())
+                tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_catepillar_leg.form"));
+            if (getFormItem(stack, 6) == OOORiderItems.BIRTH_CORE_DRILL_ARM.get())
+                tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_drill_arm.form"));
+            if (getFormItem(stack, 7) == OOORiderItems.BIRTH_CORE_CUTTER_WING.get())
+                tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_cutter_wing.form"));
+        }
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 
-		else {
-			tooltipComponents.add(Component.translatable( "kamenridercraft:claws.form"));
+    @Override
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (equipmentSlot == EquipmentSlot.FEET) {
+            String belt = ((RiderDriverItem) itemstack.getItem()).beltText;
+            if (((RiderDriverItem) itemstack.getItem()).beltText == null) {
+                belt = getFormItem(itemstack, 1).getBeltTex();
+            }
+            return "belts/" + belt;
 
-			if (getFormItem(stack, 2) == OOORiderItems.BIRTH_CORE_BREAST_CANNON.get())
-				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_breast_cannon.form"));
-			if (getFormItem(stack, 3) == OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
-				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_crane_arm.form"));
-			if (getFormItem(stack, 4) == OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get())
-				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_shovel_arm.form"));
-			if (getFormItem(stack, 5) == OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get())
-				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_catepillar_leg.form"));
-			if (getFormItem(stack, 6) == OOORiderItems.BIRTH_CORE_DRILL_ARM.get())
-				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_drill_arm.form"));
-			if (getFormItem(stack, 7) == OOORiderItems.BIRTH_CORE_CUTTER_WING.get())
-				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_cutter_wing.form"));
-		}
-		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-	}
+        } else if (equipmentSlot == EquipmentSlot.CHEST) return "birth_claws_1";
+        else if (equipmentSlot == EquipmentSlot.LEGS) return "birth_claws_2";
+        else return riderName + getFormItem(itemstack, 1).getFormName(false);
 
-	@Override
-	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-	{
-		if (equipmentSlot == EquipmentSlot.FEET) {
-			String belt = ((RiderDriverItem)itemstack.getItem()).beltText;
-			if (((RiderDriverItem)itemstack.getItem()).beltText ==null) {
-				belt = getFormItem(itemstack,1).getBeltTex();
-			}
-			return "belts/"+belt;
+    }
 
-		}
+    public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
+        if (currentSlot == EquipmentSlot.FEET) {
+            return getFormItem(itemstack, 1).getIsBeltGlowing();
+        }
+        if (isTransformed(livingEntity) && currentSlot == EquipmentSlot.HEAD)
+            return getFormItem(itemstack, 1).getIsGlowing();
+        return false;
+    }
 
-		else if (equipmentSlot == EquipmentSlot.CHEST) return "birth_claws_1";
-		else if (equipmentSlot == EquipmentSlot.LEGS) return "birth_claws_2";
-		else return riderName+ getFormItem(itemstack,1).getFormName(false);
+    public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+        switch (slot) {
+            case CHEST -> {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_1.geo.json");
+            }
+            case LEGS -> {
+                if (getFormItem(itemstack, 3) == OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
+                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2_crane.geo.json");
+                else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2.geo.json");
+            }
+            default -> {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
+            }
+        }
+    }
 
-	}
+    @Override
+    public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
+        switch (currentSlot) {
+            case HEAD -> {
+                if (Objects.equals(part, "head")) return true;
+                if (Objects.equals(part, "body")) return true;
+                if (Objects.equals(part, "rightArm")) return true;
+                if (Objects.equals(part, "leftArm")) return true;
+                if (Objects.equals(part, "leftLeg")) return true;
+                if (Objects.equals(part, "rightLeg")) return true;
 
-	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+            }
+            case CHEST -> {
+                if (Objects.equals(part, "body"))
+                    return getFormItem(itemstack, 2) == OOORiderItems.BIRTH_CORE_BREAST_CANNON.get();
+                if (Objects.equals(part, "rightArm"))
+                    return getFormItem(itemstack, 3) == OOORiderItems.BIRTH_CORE_CRANE_ARM.get();
+                if (Objects.equals(part, "leftArm"))
+                    return getFormItem(itemstack, 4) == OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get();
+                if (Objects.equals(part, "leftLeg") || Objects.equals(part, "rightLeg"))
+                    return getFormItem(itemstack, 5) == OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get();
 
-		if (currentSlot== EquipmentSlot.FEET) {
-			return getFormItem(itemstack, 1).getIsBeltGlowing();
-		}
-		if (isTransformed(livingEntity) && currentSlot==EquipmentSlot.HEAD) return getFormItem(itemstack, 1).getIsGlowing();
-		return false;
-	}
-
-	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		switch (slot) {
-			case CHEST -> {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_1.geo.json");
-			}
-			case LEGS -> {
-				if (getFormItem(itemstack, 3)== OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
-					return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2_crane.geo.json");
-				else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2.geo.json");
-			}
-			default -> {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 1).getModel(this.riderName));
-			}
-		}
-	}
-
-	@Override
-	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
-
-		switch (currentSlot) {
-			case HEAD ->{
-				if (Objects.equals(part, "head")) return true;
-				if (Objects.equals(part, "body")) return true;
-				if (Objects.equals(part, "rightArm")) return true;
-				if (Objects.equals(part, "leftArm")) return true;
-				if (Objects.equals(part, "leftLeg")) return true;
-				if (Objects.equals(part, "rightLeg")) return true;
-
-			}
-			case CHEST -> {
-				if (Objects.equals(part, "body")) return getFormItem(itemstack, 2)== OOORiderItems.BIRTH_CORE_BREAST_CANNON.get();
-				if (Objects.equals(part, "rightArm")) return getFormItem(itemstack, 3)== OOORiderItems.BIRTH_CORE_CRANE_ARM.get();
-				if (Objects.equals(part, "leftArm")) return getFormItem(itemstack, 4)== OOORiderItems.BIRTH_CORE_SHOVEL_ARM.get();
-				if (Objects.equals(part, "leftLeg") || Objects.equals(part, "rightLeg")) return getFormItem(itemstack, 5)== OOORiderItems.BIRTH_CORE_CATERPILLAR_LEG.get();
-
-			}
-			case LEGS -> {
-				if (Objects.equals(part, "rightArm")) return getFormItem(itemstack, 6)== OOORiderItems.BIRTH_CORE_DRILL_ARM.get();
-				if (Objects.equals(part, "body")) return getFormItem(itemstack, 7)== OOORiderItems.BIRTH_CORE_CUTTER_WING.get();
-			}
-			default -> {}
-		}
-		return false;
-	}
-
+            }
+            case LEGS -> {
+                if (Objects.equals(part, "rightArm"))
+                    return getFormItem(itemstack, 6) == OOORiderItems.BIRTH_CORE_DRILL_ARM.get();
+                if (Objects.equals(part, "body"))
+                    return getFormItem(itemstack, 7) == OOORiderItems.BIRTH_CORE_CUTTER_WING.get();
+            }
+        }
+        return false;
+    }
 }

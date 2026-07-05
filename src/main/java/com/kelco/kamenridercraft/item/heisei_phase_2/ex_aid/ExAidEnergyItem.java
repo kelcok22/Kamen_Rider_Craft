@@ -12,46 +12,43 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 
 public class ExAidEnergyItem extends BaseItem {
+    private List<MobEffectInstance> potionEffectList;
 
-	private List<MobEffectInstance> potionEffectList;
-
-	public ExAidEnergyItem (Properties properties, MobEffectInstance... effects)
-	{
-		super(properties);
-		potionEffectList = Lists.newArrayList(effects);
-	}
+    public ExAidEnergyItem(Properties properties, MobEffectInstance... effects) {
+        super(properties);
+        potionEffectList = Lists.newArrayList(effects);
+    }
 
 
-	public void  useEnergyItem (ItemStack itemstack, Level world,Player playerIn) {
-		if (!world.isClientSide()) {
-			for (MobEffectInstance effect : potionEffectList)
-			{
-				playerIn.addEffect(new MobEffectInstance(effect.getEffect(),effect.getDuration(),effect.getAmplifier(),true,false));
-			}
-			itemstack.shrink(1);	
-			playerIn.awardStat(Stats.ITEM_USED.get(this));
-		}
-	}
+    public void useEnergyItem(ItemStack itemstack, Level level, Player player) {
+        if (!level.isClientSide()) {
+            for (MobEffectInstance effect : potionEffectList) {
+				player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
+            }
+            itemstack.shrink(1);
+			player.awardStat(Stats.ITEM_USED.get(this));
+        }
+    }
 
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int num, boolean flag) {
-		//&playerIn.getInventory().countItem(Ex_Aid_Rider_Items.ENERGY_ITEM_HOLDER.get())!=0
-		if (entity instanceof Player playerIn
-		&& !playerIn.hasEffect(EffectCore.BUGSTER)
-		&& playerIn.getInventory().countItem(ExAidRiderItems.ENERGY_ITEM_HOLDER.get())==0) this.useEnergyItem(itemstack,world, playerIn);
-	}
+    @Override
+    public void inventoryTick(@NotNull ItemStack itemStack, @NotNull Level level, @NotNull Entity entity, int num, boolean flag) {
+        if (entity instanceof Player player
+                && !player.hasEffect(EffectCore.BUGSTER)
+                && player.getInventory().countItem(ExAidRiderItems.ENERGY_ITEM_HOLDER.get()) == 0)
+            this.useEnergyItem(itemStack, level, player);
+    }
 
-	@Override
-		public InteractionResultHolder<ItemStack> use(Level world, Player playerIn, InteractionHand p_41434_) {
-			ItemStack itemstack = playerIn.getItemInHand(p_41434_);
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
-			this.useEnergyItem(itemstack,world, playerIn);
-			return InteractionResultHolder.consume(itemstack);
-		}
-
-	}
+        this.useEnergyItem(itemstack, level, player);
+        return InteractionResultHolder.consume(itemstack);
+    }
+}

@@ -16,11 +16,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 
 public class GeizRidewatchItem extends RiderFormChangeItem {
-    public GeizRidewatchItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, formName, ridername, beltTex, effects);
+    public GeizRidewatchItem( Properties properties,String formName,String riderName,String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, riderName, beltTex, effects);
     }
 
     public void summonWeapon(Level level, Player player) {
@@ -39,8 +40,8 @@ public class GeizRidewatchItem extends RiderFormChangeItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
@@ -48,7 +49,6 @@ public class GeizRidewatchItem extends RiderFormChangeItem {
             summonWeapon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-        return super.use(level, player, usedHand);
-
+        return super.use(level, player, interactionHand);
     }
 }

@@ -19,6 +19,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ public class FinalKamenRideCardItem extends BaseItem {
     private Integer summonNeoSlot = null;
     private List<Object> summonWeapons = new ArrayList<>(2);
 
-    public FinalKamenRideCardItem( Properties properties) {
+    public FinalKamenRideCardItem(Properties properties) {
         super(properties);
     }
 
@@ -68,28 +69,32 @@ public class FinalKamenRideCardItem extends BaseItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (!level.isClientSide() && BELT.getItem() instanceof RiderDriverItem belt && belt.isTransformed(player)
-        && ((this.summonNeoBelt == null && (RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH.get() || RiderDriverItem.getFormItem(BELT, 1) == GotchardRiderItems.DECADE_COMPLETE_RIDE_CHEMY_CARD.get())) || RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH_STRONGEST.get())  || RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH_21.get()) {
-            if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) DecadeRiderItems.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
-            
-			CompleteSummonEntity summon = MobsCore.COMPLETE_SUMMON.get().create(level);
-			if (summon != null) {
-				summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-				summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
-				summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
-				summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
-				summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
-                if (!summonWeapons.isEmpty()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0) instanceof Item item ? item : DecadeRiderItems.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(0))));
-                if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : DecadeRiderItems.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(1))));
+                && ((this.summonNeoBelt == null && (RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH.get() || RiderDriverItem.getFormItem(BELT, 1) == GotchardRiderItems.DECADE_COMPLETE_RIDE_CHEMY_CARD.get())) || RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH_STRONGEST.get()) || RiderDriverItem.getFormItem(BELT, 1) == DecadeRiderItems.K_TOUCH_21.get()) {
+            if (this.summonNeoBelt != null)
+                summonBelt = (RiderDriverItem) DecadeRiderItems.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
+
+            CompleteSummonEntity summon = MobsCore.COMPLETE_SUMMON.get().create(level);
+            if (summon != null) {
+                summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
+                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
+                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
+                summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
+                if (!summonWeapons.isEmpty())
+                    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0) instanceof Item item ? item : DecadeRiderItems.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(0))));
+                if (summonWeapons.size() == 2)
+                    summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : DecadeRiderItems.COMPLETE_21_WEAPONS.get((int) summonWeapons.get(1))));
                 if (summonNeoBelt == null) {
                     summon.addRequiredForm((RiderFormChangeItem) DecadeRiderItems.K_TOUCH.get(), 1);
-                    summon.addRequiredForm((RiderFormChangeItem)  DecadeRiderItems.K_TOUCH_STRONGEST.get(), 1);
+                    summon.addRequiredForm((RiderFormChangeItem) DecadeRiderItems.K_TOUCH_STRONGEST.get(), 1);
                     summon.addRequiredForm((RiderFormChangeItem) GotchardRiderItems.DECADE_COMPLETE_RIDE_CHEMY_CARD.get(), 1);
                 }
-                if (summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+                if (summonForm != null)
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
                 else if (summonNeoForm != null) {
                     RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), DecadeRiderItems.COMPLETE_21_FORMS.get(summonNeoForm), summonNeoSlot);
                     switch (summonNeoForm) {
@@ -108,14 +113,14 @@ public class FinalKamenRideCardItem extends BaseItem {
                             break;
                     }
                 }
-            
-				level.addFreshEntity(summon);
-				summon.bindToPlayer(player);
-				player.displayClientMessage(Component.translatable(this + ".name"), true);
-				if (!player.isCreative()) player.getCooldowns().addCooldown(this, 1000);
+
+                level.addFreshEntity(summon);
+                summon.bindToPlayer(player);
+                player.displayClientMessage(Component.translatable(this + ".name"), true);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 1000);
                 player.awardStat(Stats.ITEM_USED.get(this));
-			}
+            }
         }
-        return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
+        return InteractionResultHolder.sidedSuccess(player.getItemInHand(interactionHand), level.isClientSide());
     }
 }

@@ -22,6 +22,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 
 public class DimensionCardItem extends BaseItem implements ZeinCard {
@@ -30,29 +31,30 @@ public class DimensionCardItem extends BaseItem implements ZeinCard {
     }
 
     @Override
-    public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
+    public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
         return repair.is(DecadeRiderItems.BLANK_CARD.get()) || super.isValidRepairItem(toRepair, repair);
     }
 
     @Override
-    public void activateCard(Level level, LivingEntity living, ItemStack stack) {
+    public void activateCard(Level level, LivingEntity livingEntity, ItemStack itemStack) {
         for (int i = 0; i < 3; i++) {
             LivingEntity summon;
-            if (living instanceof Player) summon = MobsCore.ZEIN_SUMMON.get().create(level);
+            if (livingEntity instanceof Player) summon = MobsCore.ZEIN_SUMMON.get().create(level);
             else summon = MobsCore.ZEIN_ENEMY_SUMMON.get().create(level);
 
             if (summon != null) {
-                summon.moveTo(living.getX(), living.getY()+1, living.getZ(), living.getYRot(), living.getXRot());
+                summon.moveTo(livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), livingEntity.getYRot(), livingEntity.getXRot());
                 level.addFreshEntity(summon);
-                if (summon instanceof ZeinSummonEntity rider) rider.bindToPlayer((Player) living);
-                else ((ZeinEnemySummonEntity) summon).setOwnerUUID(living.getUUID());
+                if (summon instanceof ZeinSummonEntity rider) rider.bindToPlayer((Player) livingEntity);
+                else ((ZeinEnemySummonEntity) summon).setOwnerUUID(livingEntity.getUUID());
             }
         }
 
-        if (living instanceof ServerPlayer player) CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue()+1);
-        stack.setDamageValue(1);
+        if (livingEntity instanceof ServerPlayer player)
+            CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, itemStack, itemStack.getDamageValue() + 1);
+        itemStack.setDamageValue(1);
         ((ServerLevel) level).sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(this)),
-            living.getX(), living.getY()+1, living.getZ(), 10, 0, 0, 0, 0.05);
+                livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), 10, 0, 0, 0, 0.05);
     }
 
     @Override
@@ -64,12 +66,12 @@ public class DimensionCardItem extends BaseItem implements ZeinCard {
             if (!level.isClientSide() && BELT.getItem() == ZeroOneRiderItems.ZEIN_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
                 activateCard(level, player, CARD);
                 player.displayClientMessage(Component.translatable("attack.kamenridercraft.justice_order"), true);
-                if (!player.isCreative()) for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
+                if (!player.isCreative())
+                    for (Item item : DecadeRiderItems.ZEIN_CARDS) player.getCooldowns().addCooldown(item, 2400);
                 player.awardStat(Stats.ITEM_USED.get(this));
 
                 return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
-            }
-            else return super.use(level, player, usedHand);
+            } else return super.use(level, player, usedHand);
         }
         return InteractionResultHolder.fail(player.getItemInHand(usedHand));
     }

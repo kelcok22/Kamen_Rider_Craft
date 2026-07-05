@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 
 public class RidePlayerCardItem extends BaseItem {
@@ -23,7 +24,7 @@ public class RidePlayerCardItem extends BaseItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         ItemStack CARD = player.getItemInHand(usedHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 

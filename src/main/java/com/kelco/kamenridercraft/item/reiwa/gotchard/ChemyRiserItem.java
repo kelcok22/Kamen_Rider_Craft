@@ -26,6 +26,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,113 +35,113 @@ import java.util.Random;
 public class ChemyRiserItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-    public static List<Item> ALL_CHEMY= new ArrayList<>();
-    public static List<Item> Insect_CHEMY= new ArrayList<>();
-    public static List<Item> Job_CHEMY= new ArrayList<>();
-    public static List<Item> Vehicle_CHEMY= new ArrayList<>();
-    public static List<Item> Animal_CHEMY= new ArrayList<>();
-    public static List<Item> Artifact_CHEMY= new ArrayList<>();
-    public static List<Item> Plant_CHEMY= new ArrayList<>();
-    public static List<Item> Occult_CHEMY= new ArrayList<>();
-    public static List<Item> Ancient_CHEMY= new ArrayList<>();
-    public static List<Item> Cosmic_CHEMY= new ArrayList<>();
-    public static List<Item> Fantastic_CHEMY= new ArrayList<>();
-    public static List<Item> Repli_CHEMY= new ArrayList<>();
-    public static List<Item> Legend_CHEMY= new ArrayList<>();
-    public static List<Item> Daybreak_CHEMY= new ArrayList<>();
+    public static List<Item> allChemy = new ArrayList<>();
+    public static List<Item> insectChemy = new ArrayList<>();
+    public static List<Item> jobChemy = new ArrayList<>();
+    public static List<Item> vehicleChemy = new ArrayList<>();
+    public static List<Item> animalChemy = new ArrayList<>();
+    public static List<Item> artifactChemy = new ArrayList<>();
+    public static List<Item> plantChemy = new ArrayList<>();
+    public static List<Item> occultChemy = new ArrayList<>();
+    public static List<Item> ancientChemy = new ArrayList<>();
+    public static List<Item> cosmicCHEMY = new ArrayList<>();
+    public static List<Item> fantasticChemy = new ArrayList<>();
+    public static List<Item> repliChemy = new ArrayList<>();
+    public static List<Item> legendChemy = new ArrayList<>();
+    public static List<Item> daybreakChemy = new ArrayList<>();
 
 
     public ChemyRiserItem() {
         super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
     }
 
-    private Item ChemyDrop(Item ring,Level world,Player entity) {
+    private Item ChemyDrop(Item ring, Level world, Player entity) {
         Random generator = new Random();
 
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-        if (world.dimension() == CITY){
-            int rand = generator.nextInt(Legend_CHEMY.size());
-            return Legend_CHEMY.get(rand);
-        }else if (world.getBiome(entity.blockPosition()).is(BiomeTags.IS_NETHER)){
-            int rand = generator.nextInt(Daybreak_CHEMY.size());
-            return Daybreak_CHEMY.get(rand);
-        }else if (ring== GotchardRiderItems.ALCHEMIST_RING_BLUE.asItem()&&this == GotchardRiderItems.CHEMY_RISER.get()){
-            int rand = generator.nextInt(Insect_CHEMY.size());
-            return Insect_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_GREEN.asItem()&&this == GotchardRiderItems.CHEMY_RISER.get()){
-            int rand = generator.nextInt(Plant_CHEMY.size());
-            return Plant_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_RED.asItem()&&this == GotchardRiderItems.CHEMY_RISER.get()){
-            int rand = generator.nextInt(Animal_CHEMY.size());
-            return Animal_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_PURPLE.asItem()&&this == GotchardRiderItems.CHEMY_RISER.get()){
-            int rand = generator.nextInt(Artifact_CHEMY.size());
-            return Artifact_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_ORANGE.asItem()&&this == GotchardRiderItems.CHEMY_RISER.get()){
-            int rand = generator.nextInt(Fantastic_CHEMY.size());
-            return Fantastic_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_BLUE.asItem()&&this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()){
-            int rand = generator.nextInt(Vehicle_CHEMY.size());
-            return Vehicle_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_GREEN.asItem()&&this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()){
-            int rand = generator.nextInt(Job_CHEMY.size());
-            return Job_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_RED.asItem()&&this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()){
-            int rand = generator.nextInt(Ancient_CHEMY.size());
-            return Ancient_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_PURPLE.asItem()&&this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()){
-            int rand = generator.nextInt(Occult_CHEMY.size());
-            return Occult_CHEMY.get(rand);
-        }else  if (ring== GotchardRiderItems.ALCHEMIST_RING_ORANGE.asItem()&&this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()){
-            int rand = generator.nextInt(Cosmic_CHEMY.size());
-            return Cosmic_CHEMY.get(rand);
-        }else {
-            int rand = generator.nextInt(ALL_CHEMY.size());
-            return ALL_CHEMY.get(rand);
+        if (world.dimension() == CITY) {
+            int rand = generator.nextInt(legendChemy.size());
+            return legendChemy.get(rand);
+        } else if (world.getBiome(entity.blockPosition()).is(BiomeTags.IS_NETHER)) {
+            int rand = generator.nextInt(daybreakChemy.size());
+            return daybreakChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_BLUE.asItem() && this == GotchardRiderItems.CHEMY_RISER.get()) {
+            int rand = generator.nextInt(insectChemy.size());
+            return insectChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_GREEN.asItem() && this == GotchardRiderItems.CHEMY_RISER.get()) {
+            int rand = generator.nextInt(plantChemy.size());
+            return plantChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_RED.asItem() && this == GotchardRiderItems.CHEMY_RISER.get()) {
+            int rand = generator.nextInt(animalChemy.size());
+            return animalChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_PURPLE.asItem() && this == GotchardRiderItems.CHEMY_RISER.get()) {
+            int rand = generator.nextInt(artifactChemy.size());
+            return artifactChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_ORANGE.asItem() && this == GotchardRiderItems.CHEMY_RISER.get()) {
+            int rand = generator.nextInt(fantasticChemy.size());
+            return fantasticChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_BLUE.asItem() && this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()) {
+            int rand = generator.nextInt(vehicleChemy.size());
+            return vehicleChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_GREEN.asItem() && this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()) {
+            int rand = generator.nextInt(jobChemy.size());
+            return jobChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_RED.asItem() && this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()) {
+            int rand = generator.nextInt(ancientChemy.size());
+            return ancientChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_PURPLE.asItem() && this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()) {
+            int rand = generator.nextInt(occultChemy.size());
+            return occultChemy.get(rand);
+        } else if (ring == GotchardRiderItems.ALCHEMIST_RING_ORANGE.asItem() && this == GotchardRiderItems.CHEMY_RISER_SUPANA.get()) {
+            int rand = generator.nextInt(cosmicCHEMY.size());
+            return cosmicCHEMY.get(rand);
+        } else {
+            int rand = generator.nextInt(allChemy.size());
+            return allChemy.get(rand);
         }
     }
 
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
         ItemStack itemstack = entity.getItemInHand(hand);
 
         if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
-            if ( itemstack.has(DataComponents.CONTAINER) ) {
+            if (itemstack.has(DataComponents.CONTAINER)) {
 
-                if (!entity.isShiftKeyDown()){
+                if (!entity.isShiftKeyDown()) {
                     ItemContainerContents contents = itemstack.get(DataComponents.CONTAINER);
+                    assert contents != null;
                     ItemStack card = contents.nonEmptyItems().iterator().next();
                     ItemStack ring = contents.getStackInSlot(1);
-                        if( card.getItem() == GotchardRiderItems.BLANK_RIDE_CHEMY_CARD.get()) {
-                            serverPlayer.drop(new ItemStack(ChemyDrop(ring.getItem(),world,serverPlayer), 1), false);
-                            card.shrink(1);
-                            if (!serverPlayer.isCreative()) {
-                                serverPlayer.getCooldowns().addCooldown(this, 10);
-                            }
+                    if (card.getItem() == GotchardRiderItems.BLANK_RIDE_CHEMY_CARD.get()) {
+                        serverPlayer.drop(new ItemStack(ChemyDrop(ring.getItem(), world, serverPlayer), 1), false);
+                        card.shrink(1);
+                        if (!serverPlayer.isCreative()) {
+                            serverPlayer.getCooldowns().addCooldown(this, 10);
                         }
-                        else if(card.getItem() == GotchardRiderItems.UFO_X_RIDE_CHEMY_CARD.get()) {
-                            serverPlayer.drop(new ItemStack(GotchardRiderItems.UNFINISHED_EXGOTCHALIBUR.get(),1), false);
-                            card.shrink(1);
-                            if (!serverPlayer.isCreative()) {
-                                serverPlayer.getCooldowns().addCooldown(this, 10);
-                            }
+                    } else if (card.getItem() == GotchardRiderItems.UFO_X_RIDE_CHEMY_CARD.get()) {
+                        serverPlayer.drop(new ItemStack(GotchardRiderItems.UNFINISHED_EXGOTCHALIBUR.get(), 1), false);
+                        card.shrink(1);
+                        if (!serverPlayer.isCreative()) {
+                            serverPlayer.getCooldowns().addCooldown(this, 10);
                         }
-                        else if(card.getItem() == GotchardRiderItems.TAMAGON_RIDE_CHEMY_CARD.get()) {
-                            serverPlayer.drop(new ItemStack(GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(),1), false);
-                            serverPlayer.drop(new ItemStack(GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_SPECIAL.get(),1), false);
-                            card.shrink(1);
-                            if (!serverPlayer.isCreative()) {
-                                serverPlayer.getCooldowns().addCooldown(this, 10);
-                            }
+                    } else if (card.getItem() == GotchardRiderItems.TAMAGON_RIDE_CHEMY_CARD.get()) {
+                        serverPlayer.drop(new ItemStack(GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_EXTRA.get(), 1), false);
+                        serverPlayer.drop(new ItemStack(GotchardRiderItems.NIJIGON_RIDE_CHEMY_CARD_SPECIAL.get(), 1), false);
+                        card.shrink(1);
+                        if (!serverPlayer.isCreative()) {
+                            serverPlayer.getCooldowns().addCooldown(this, 10);
                         }
+                    }
 
 
                 } else {
                     serverPlayer.openMenu(new MenuProvider() {
                         @Override
-                        public Component getDisplayName() {
-                            if (itemstack.getItem()== GotchardRiderItems.CHEMY_RISER_SUPANA.get()) return Component.translatable("chemyriser_supana_gui.text");
+                        public @NotNull Component getDisplayName() {
+                            if (itemstack.getItem() == GotchardRiderItems.CHEMY_RISER_SUPANA.get())
+                                return Component.translatable("chemyriser_supana_gui.text");
                             else return Component.translatable("chemyriser_gui.text");
                         }
 
@@ -163,8 +164,6 @@ public class ChemyRiserItem extends BaseItem {
     }
 
 
-
-
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
         if (stack.has(DataComponents.CONTAINER_LOOT)) {
@@ -185,6 +184,5 @@ public class ChemyRiserItem extends BaseItem {
         if (j - i > 0) {
             tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
         }
-
     }
 }

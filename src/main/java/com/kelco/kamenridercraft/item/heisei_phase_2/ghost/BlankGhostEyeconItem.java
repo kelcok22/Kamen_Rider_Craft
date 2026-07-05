@@ -20,6 +20,7 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import org.jetbrains.annotations.NotNull;
 
 
 public class BlankGhostEyeconItem extends BaseItem {
@@ -68,7 +69,7 @@ public class BlankGhostEyeconItem extends BaseItem {
                 & Inventory.countItem(GhostRiderItems.BOOST_GHOST_EYECON.get()) != 0
                 & Inventory.countItem(GhostRiderItems.EYECON_DRIVER_G.get()) != 0;
 
-        ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE,hasAllEyecons ? LOOT_TABLE_PATH3 : hasEyecons ? LOOT_TABLE_PATH2 : LOOT_TABLE_PATH);
+        ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, hasAllEyecons ? LOOT_TABLE_PATH3 : hasEyecons ? LOOT_TABLE_PATH2 : LOOT_TABLE_PATH);
         LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);
         LootParams.Builder lootparams$builder = new LootParams.Builder(world)
                 .withParameter(LootContextParams.THIS_ENTITY, player)
@@ -79,21 +80,21 @@ public class BlankGhostEyeconItem extends BaseItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level world, Player playerIn, InteractionHand p_41434_) {
-        ItemStack itemstack = playerIn.getItemInHand(p_41434_);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         return InteractionResultHolder.consume(itemstack);
     }
 
 
-    public InteractionResult useOn(UseOnContext context) {
+    public @NotNull InteractionResult useOn(UseOnContext context) {
+        Player player = context.getPlayer();
+        if (context.getLevel().getBlockState(context.getClickedPos()) != Rider_Blocks.MONOLITH.get().defaultBlockState()) {
+            ItemStack itemstack = context.getItemInHand();
+            if (context.getLevel() instanceof ServerLevel server) this.dropItem(server, player);
+            assert player != null;
+            if (!player.hasInfiniteMaterials()) itemstack.shrink(1);
 
-        Player playerIn = context.getPlayer();
-if (context.getLevel().getBlockState(context.getClickedPos())!= Rider_Blocks.MONOLITH.get().defaultBlockState()) {
-    ItemStack itemstack = context.getItemInHand();
-    if (context.getLevel() instanceof ServerLevel server) this.dropItem(server, playerIn);
-    if (!playerIn.hasInfiniteMaterials()) itemstack.shrink(1);
-
-    return InteractionResult.PASS;
-}else return InteractionResult.FAIL;
+            return InteractionResult.PASS;
+        } else return InteractionResult.FAIL;
     }
 }

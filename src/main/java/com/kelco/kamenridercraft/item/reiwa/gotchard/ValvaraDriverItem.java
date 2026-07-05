@@ -15,20 +15,21 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ValvaraDriverItem extends RiderDriverItem {
 
-	public ValvaraDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-	}
+    public ValvaraDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+    }
 
-	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		if (getFormItem(itemstack,1) == GotchardRiderItems.DAIOHNI_GT_RIDE_CHEMY_CARD.get())
-		{
-			if (!rider.getMainHandItem().isEmpty()|!rider.getOffhandItem().isEmpty()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_rider_gt_off.geo.json");
-			else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 1).getModel(this.riderName));
-		}
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 1).getModel(this.riderName));
-	}
+    public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot equipmentSlot, LivingEntity rider) {
+        if (getFormItem(itemstack, 1) == GotchardRiderItems.DAIOHNI_GT_RIDE_CHEMY_CARD.get()) {
+            if (!rider.getMainHandItem().isEmpty() | !rider.getOffhandItem().isEmpty())
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_rider_gt_off.geo.json");
+            else
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
+        }
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
+    }
 
-    public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+    public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot equipmentSlot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchard_belt.geo.json");
     }
 }

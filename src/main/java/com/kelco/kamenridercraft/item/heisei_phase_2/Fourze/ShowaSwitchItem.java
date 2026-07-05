@@ -13,14 +13,15 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 
 public class ShowaSwitchItem extends RiderFormChangeItem {
     private RiderDriverItem summonBelt;
     private RiderFormChangeItem summonForm = null;
 
-    public ShowaSwitchItem( Properties properties,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
-        super(properties, formName, ridername, beltTex, effects);
+    public ShowaSwitchItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, riderName, beltTex, effects);
     }
 
     public ShowaSwitchItem setSummonBelt(RiderDriverItem belt) {
@@ -34,29 +35,30 @@ public class ShowaSwitchItem extends RiderFormChangeItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (player.isShiftKeyDown() && BELT.getItem() == FourzeRiderItems.FOURZE_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
-            
-		    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
-		    if (summon != null) {
-		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-		    	summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
-		    	summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
-		    	summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
-		    	summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
-                if (summonForm != null) RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+        if (!level.isClientSide() && player.isShiftKeyDown() && BELT.getItem() == FourzeRiderItems.FOURZE_DRIVER.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)) {
 
-		    	level.addFreshEntity(summon);
-		    	summon.bindToPlayer(player);
+            RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+            if (summon != null) {
+                summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
+                summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
+                summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
+                summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
+                if (summonForm != null)
+                    RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+
+                level.addFreshEntity(summon);
+                summon.bindToPlayer(player);
                 if (!player.isCreative()) {
-                    summon.takeSummonItem(player.getItemInHand(usedHand));
+                    summon.takeSummonItem(player.getItemInHand(interactionHand));
                     player.getCooldowns().addCooldown(this, 750);
                 }
                 player.awardStat(Stats.ITEM_USED.get(this));
-		    }
-            return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
-        } else return super.use(level, player, usedHand);
+            }
+            return InteractionResultHolder.sidedSuccess(player.getItemInHand(interactionHand), level.isClientSide());
+        } else return super.use(level, player, interactionHand);
     }
 }

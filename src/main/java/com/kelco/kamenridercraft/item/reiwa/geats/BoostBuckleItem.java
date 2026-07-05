@@ -15,16 +15,18 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 
 public class BoostBuckleItem extends RiderFormChangeItem {
-	public BoostBuckleItem(Properties properties,  String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-		super(properties, formName, ridername, beltTex, effects);
+	public BoostBuckleItem(Properties properties,  String formName, String riderName, String beltTex, MobEffectInstance... effects) {
+		super(properties, formName, riderName, beltTex, effects);
 	}
 
-	public InteractionResult useOn(UseOnContext context) {
+	public @NotNull InteractionResult useOn(UseOnContext context) {
 		Player player = context.getPlayer();
-		ItemStack itemstack = player.getItemInHand(context.getHand());
+        assert player != null;
+        ItemStack itemstack = player.getItemInHand(context.getHand());
 		Level level = context.getLevel();
 
 		if (!level.isClientSide() && (!(player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof DesireDriverItem)||player.isShiftKeyDown())) {

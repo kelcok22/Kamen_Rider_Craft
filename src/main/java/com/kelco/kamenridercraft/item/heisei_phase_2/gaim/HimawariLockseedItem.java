@@ -14,6 +14,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 
 public class HimawariLockseedItem extends BaseItem {
@@ -21,7 +22,7 @@ public class HimawariLockseedItem extends BaseItem {
         super(properties);
     }
 
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         super.use(level, player, interactionHand);
         ItemStack itemstack = player.getItemInHand(interactionHand);
         if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "belts/gaim_armor")))) {
@@ -32,8 +33,6 @@ public class HimawariLockseedItem extends BaseItem {
             }
             player.awardStat(Stats.ITEM_USED.get(this));
         }
-
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
     }
-
 }

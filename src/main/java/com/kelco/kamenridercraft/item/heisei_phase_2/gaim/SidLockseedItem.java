@@ -6,42 +6,35 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 
 
 public class SidLockseedItem extends BaseItem {
+    public SidLockseedItem(Properties properties) {
+        super(properties);
+    }
 
-	private int TIME;
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
-	public SidLockseedItem (Properties properties, int time)
-	{
-		super(properties);
-		TIME=time;
-	}
+        ResourceKey<Level> HELHEIM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:helheim"));
 
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
+        if (!level.isClientSide() && (level.dimension() == HELHEIM || level.dimension() == Level.OVERWORLD)) {
+            Vec3 look = player.getLookAngle().scale(3);
+            BlockPos pos = new BlockPos((int) (Math.floor(player.getX() + look.x)), (int) (player.getY()), (int) (Math.floor(player.getZ() + look.z)));
 
-		ResourceKey<Level> HELHEIM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:helheim"));
-
-		if (!p_41128_.isClientSide() && p_41129_.level() instanceof ServerLevel level && (p_41128_.dimension()==HELHEIM||p_41128_.dimension()==Level.OVERWORLD)){
-			Vec3 look = p_41129_.getLookAngle().scale(3);
-			BlockPos pos = new BlockPos((int)(Math.floor(p_41129_.getX()+ look.x)), (int)(p_41129_.getY()), (int)(Math.floor(p_41129_.getZ() + look.z)));
-			
-			if (p_41128_.getBlockState(pos).getDestroySpeed(p_41128_, pos) < 0.2) p_41128_.destroyBlock(pos, true);
-			if (p_41129_.level().isEmptyBlock(pos)) {
-				p_41129_.level().setBlockAndUpdate(pos, Rider_Blocks.HELHEIM_CRACK.get().defaultBlockState());
-				p_41129_.getCooldowns().addCooldown(this, TIME);
-			}
-		}
-
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
-	}
-
+            if (level.getBlockState(pos).getDestroySpeed(level, pos) < 0.2) level.destroyBlock(pos, true);
+            if (player.level().isEmptyBlock(pos)) {
+                player.level().setBlockAndUpdate(pos, Rider_Blocks.HELHEIM_CRACK.get().defaultBlockState());
+                player.getCooldowns().addCooldown(this, 500);
+            }
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }

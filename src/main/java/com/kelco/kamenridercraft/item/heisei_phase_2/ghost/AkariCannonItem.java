@@ -14,6 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -21,29 +22,28 @@ import java.util.List;
 public class AkariCannonItem extends BaseItem {
 
 
-	public AkariCannonItem(Properties properties)
-	{
-		super(properties);
-	}
+    public AkariCannonItem(Properties properties) {
+        super(properties);
+    }
 
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
 
-            if (level instanceof ServerLevel Slevel) {
-                Slevel.sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                        player.getX() + 0, player.getY() + 1,
-                        player.getZ() + 0, 200, 0, 0, 0, 4);
+        if (level instanceof ServerLevel serverLevel) {
+            serverLevel.sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                    player.getX() + 0, player.getY() + 1,
+                    player.getZ() + 0, 200, 0, 0, 0, 4);
 
-                    List<LivingEntity> nearbyEnemies = Slevel.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(50), entity ->
-                            (entity instanceof GammaCommandoEntity));
-                    for (LivingEntity enemy : nearbyEnemies) {
-                        enemy.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0,true,true));
-                    }
-        if (!player.isCreative()) {
-            player.getCooldowns().addCooldown(this, 500);
+            List<LivingEntity> nearbyEnemies = serverLevel.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(50), entity ->
+                    (entity instanceof GammaCommandoEntity));
+            for (LivingEntity enemy : nearbyEnemies) {
+                enemy.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0, true, true));
+            }
+            if (!player.isCreative()) {
+                player.getCooldowns().addCooldown(this, 500);
+            }
+            player.awardStat(Stats.ITEM_USED.get(this));
         }
-        player.awardStat(Stats.ITEM_USED.get(this));
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
     }
-		return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
-}
 }

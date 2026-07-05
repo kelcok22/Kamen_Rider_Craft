@@ -13,16 +13,16 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class SeikenSaikouDriverItem extends RiderDriverItem {
-    public SeikenSaikouDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties) {
+    public SeikenSaikouDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties.component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
     }
 
     @Override
-    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-        if (isTransformed(rider) && getFormItem(itemstack, 1) == SaberRiderItems.KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK.get()) {
+    public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        if (isTransformed(rider) && getFormItem(itemStack, 1) == SaberRiderItems.KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK.get()) {
             if (equipmentSlot == EquipmentSlot.FEET) return "belts/blank";
             else if (rider.isHolding(SaberRiderItems.KOUGOUKEN_SAIKOU.get())) return "blank";
         }
-        return super.getText(itemstack, equipmentSlot, rider, riderName);
+        return super.getText(itemStack, equipmentSlot, rider, riderName);
     }
 }

@@ -13,36 +13,30 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 
 
 public class FakeLockseedItem extends BaseItem {
+    public FakeLockseedItem(Properties properties) {
+        super(properties);
+    }
 
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
+        if (!level.isClientSide()) {
+            if (player.level() instanceof ServerLevel) {
+                Vec3 look = player.getLookAngle();
+                BlockPos pos = new BlockPos((int) (player.getX() + look.x), (int) (player.getY() + 5), (int) (player.getZ() + look.z));
 
-	public FakeLockseedItem(Properties properties)
-	{
-		super(properties);
-	}
-
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-
-		if (!p_41128_.isClientSide()) {
-			if (p_41129_.level() instanceof ServerLevel) {
-				Vec3 look = p_41129_.getLookAngle();
-				BlockPos pos = new BlockPos((int) (p_41129_.getX()+ look.x), (int) (p_41129_.getY() +5), (int) (p_41129_.getZ() + look.z));
-
-				if (p_41129_.level().isEmptyBlock(pos)) {
-					p_41129_.level().setBlockAndUpdate(pos, Blocks.ANVIL.defaultBlockState());
-					p_41129_.sendSystemMessage(Component.translatable("message.kamenridercraft.fake"));
-					itemstack.consume(1,p_41129_);
-				}
-				p_41129_.awardStat(Stats.ITEM_USED.get(this));
-			}
-
-		}
-
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
-	}
-
+                if (player.level().isEmptyBlock(pos)) {
+                    player.level().setBlockAndUpdate(pos, Blocks.ANVIL.defaultBlockState());
+                    player.sendSystemMessage(Component.translatable("message.kamenridercraft.fake"));
+                    itemstack.consume(1, player);
+                }
+                player.awardStat(Stats.ITEM_USED.get(this));
+            }
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }

@@ -25,131 +25,122 @@ import java.util.Objects;
 import java.util.function.Consumer;
 
 public class GhostDriverItem extends RiderDriverItem {
+    private int wispHorn = 1;
 
-	private int Wisp_Horn =1;
+    public GhostDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, int wispHorn, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
+        super(material, rider, baseFormItem, head, torso, legs, properties);
+        this.wispHorn = wispHorn;
+    }
 
-	public GhostDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem,int wisp_horn, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
-	{
-		super(material, rider, baseFormItem, head, torso, legs, properties);
-		Wisp_Horn=wisp_horn;
-	}
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        this.hasBasicBeltInfo = false;
+        Item formItem = getFormItem(stack, 1);
+        Item formItem2 = getFormItem(stack, 2);
+        String rider = this.riderName;
+        if (stack.getItem() == GhostRiderItems.NEW_GHOST_DRIVER.get()) rider = "new_ghost";
+        tooltipComponents.add(Component.translatable("kamenridercraft.name." + rider));
+        if (Objects.equals(this.riderName, "ghost") || Objects.equals(this.riderName, "specter") || Objects.equals(this.riderName, "necrom")) {
+            tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+        }
 
-	@Override
-	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		this.hasBasicBeltInfo = false;
-		Item formItem = getFormItem(stack, 1);
-		Item formItem2 = getFormItem(stack, 2);
-		String rider= this.riderName;
-		if (stack.getItem()== GhostRiderItems.NEW_GHOST_DRIVER.get())rider="new_ghost";
-		tooltipComponents.add(Component.translatable("kamenridercraft.name." + rider));
-		if (Objects.equals(this.riderName, "ghost") || Objects.equals(this.riderName, "specter") || Objects.equals(this.riderName, "necrom")) {
-			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-		}
+        tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
 
-		tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
-
-		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-	}
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 
 
-	@Override
-	public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag  tag)
-	{
-		if (getFormItem(belt, 1)== GhostRiderItems.FOURTYFIVE_HEISEI_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.FOURTYFIVE_HEISEI_DAMASHII.get()
-				|| getFormItem(belt, 1)== GhostRiderItems.MUGEN_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.MUGEN_DAMASHII.get()
-				|| getFormItem(belt, 1)== GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()& getFormItem(belt, 2)!= GhostRiderItems.SIN_SPECTER_DAMASHII.get()
-		) {
-			Consumer<CompoundTag> data = form -> form.putString("slot_tex" + 1, (this.baseFormItem).toString());
+    @Override
+    public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag tag) {
+        if (getFormItem(belt, 1) == GhostRiderItems.FOURTYFIVE_HEISEI_GHOST_EYECON.get() & getFormItem(belt, 2) != GhostRiderItems.FOURTYFIVE_HEISEI_DAMASHII.get()
+                || getFormItem(belt, 1) == GhostRiderItems.MUGEN_GHOST_EYECON.get() & getFormItem(belt, 2) != GhostRiderItems.MUGEN_DAMASHII.get()
+                || getFormItem(belt, 1) == GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get() & getFormItem(belt, 2) != GhostRiderItems.SIN_SPECTER_DAMASHII.get()
+        ) {
+            Consumer<CompoundTag> data = form -> form.putString("slot_tex" + 1, (this.baseFormItem).toString());
 
-			CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
-		}
-	}
+            CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
+        }
+    }
 
-	@Override
-	public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
-	{
-        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
-		if (equipmentSlot == EquipmentSlot.FEET) {
 
-			return "belts/"+ getFormItem(itemstack,1).getBeltTex()+"_"+getFormItem(itemstack,2).getFormName(false);
-		}
-		else if (equipmentSlot == EquipmentSlot.HEAD&itemstack.getItem()== GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.asItem()) return getFormItem(itemstack,2).getFormName(fly)+"_igor";
-		else if (equipmentSlot == EquipmentSlot.HEAD) {
+    @Override
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
+        if (equipmentSlot == EquipmentSlot.FEET) {
 
-           if (isTransforming(rider)) return getFormItem(itemstack,2).getFormName(fly)+"_parka_ghost";
-           if (getFormItem(itemstack,2)==GhostRiderItems.ORE_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1
-                   ||getFormItem(itemstack,2)==GhostRiderItems.SPECTER_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1
-                   ||getFormItem(itemstack,2)==GhostRiderItems.NECROM_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1
-                   ||getFormItem(itemstack,2)==GhostRiderItems.BOOST_DAMASHII.asItem()&rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue()==1)return getFormItem(itemstack,2).getFormName(fly)+"_hood";
-           else return getFormItem(itemstack,2).getFormName(fly);
-}
-		else {
-            if (isTransforming(rider)) return riderName + getFormItem(itemstack, 1).getFormName(fly)+"_transient";
-            else return riderName + getFormItem(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(getFormItem(itemstack, 2),itemstack);
-		}
-	}
+            return "belts/" + getFormItem(itemstack, 1).getBeltTex() + "_" + getFormItem(itemstack, 2).getFormName(false);
+        } else if (equipmentSlot == EquipmentSlot.HEAD & itemstack.getItem() == GhostRiderItems.PROTO_MEGA_ULORDER_IGOR.asItem())
+            return getFormItem(itemstack, 2).getFormName(fly) + "_igor";
+        else if (equipmentSlot == EquipmentSlot.HEAD) {
 
-	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
+            if (isTransforming(rider)) return getFormItem(itemstack, 2).getFormName(fly) + "_parka_ghost";
+            if (getFormItem(itemstack, 2) == GhostRiderItems.ORE_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
+                    || getFormItem(itemstack, 2) == GhostRiderItems.SPECTER_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
+                    || getFormItem(itemstack, 2) == GhostRiderItems.NECROM_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
+                    || getFormItem(itemstack, 2) == GhostRiderItems.BOOST_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1)
+                return getFormItem(itemstack, 2).getFormName(fly) + "_hood";
+            else return getFormItem(itemstack, 2).getFormName(fly);
+        } else {
+            if (isTransforming(rider)) return riderName + getFormItem(itemstack, 1).getFormName(fly) + "_transient";
+            else
+                return riderName + getFormItem(itemstack, 1).getFormName(fly) + getWispHorn(getFormItem(itemstack, 2), itemstack);
+        }
+    }
 
-		if (currentSlot== EquipmentSlot.FEET) {
-			return getFormItem(itemstack, 1).getIsBeltGlowing();
-		}
-		if (isTransformed(livingEntity)){
-			switch (currentSlot) {
-                case HEAD,CHEST,LEGS ->{
-					return true;
-				}
-				default -> {}
-			}
-			return false;
-		}
-		return false;
-	}
 
-	public String Get_Wisp_Horn(RiderFormChangeItem item,ItemStack itemstack)
-	{
-		String rider = ((GhostDriverItem) itemstack.getItem()).riderName;
+    public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
+        if (currentSlot == EquipmentSlot.FEET) {
+            return getFormItem(itemstack, 1).getIsBeltGlowing();
+        }
+        if (isTransformed(livingEntity)) {
+            switch (currentSlot) {
+                case HEAD, CHEST, LEGS -> {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
-		if (Wisp_Horn==item.getStoredNum()){
-			return "_base";
-		}else if (Objects.equals(rider, "gamma_superior")){
-			return "_base";
-		}else if (Objects.equals(rider, "ghost") & getFormItem(itemstack,1)== GhostRiderItems.ORE_GHOST_EYECON.get()&item.getStoredNum()==2||
-				Objects.equals(rider, "ghost") & getFormItem(itemstack,1)== GhostRiderItems.MUGEN_GHOST_EYECON.get()
-				|| Objects.equals(rider, "specter") & getFormItem(itemstack,1)== GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()
-				|| Objects.equals(rider, "necrom") & getFormItem(itemstack,1)== GhostRiderItems.YUJOU_BURST_GHOST_EYECON.get()
-				|| Objects.equals(rider, "specter") &item.getStoredNum()!=0|| Objects.equals(rider, "zero_specter") &item.getStoredNum()!=0
-				|| Objects.equals(rider, "kanon_specter") &item.getStoredNum()!=0||Objects.equals(rider, "zero_ghost") &item.getStoredNum()!=0){
-			return "_base";
-		}
+    public String getWispHorn(RiderFormChangeItem item, ItemStack itemstack) {
+        String rider = ((GhostDriverItem) itemstack.getItem()).riderName;
 
-		return "_base_"+item.getStoredNum();
-	}
+        if (wispHorn == item.getStoredNum()) {
+            return "_base";
+        } else if (Objects.equals(rider, "gamma_superior")) {
+            return "_base";
+        } else if (Objects.equals(rider, "ghost") & getFormItem(itemstack, 1) == GhostRiderItems.ORE_GHOST_EYECON.get() & item.getStoredNum() == 2 ||
+                Objects.equals(rider, "ghost") & getFormItem(itemstack, 1) == GhostRiderItems.MUGEN_GHOST_EYECON.get()
+                || Objects.equals(rider, "specter") & getFormItem(itemstack, 1) == GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()
+                || Objects.equals(rider, "necrom") & getFormItem(itemstack, 1) == GhostRiderItems.YUJOU_BURST_GHOST_EYECON.get()
+                || Objects.equals(rider, "specter") & item.getStoredNum() != 0 || Objects.equals(rider, "zero_specter") & item.getStoredNum() != 0
+                || Objects.equals(rider, "kanon_specter") & item.getStoredNum() != 0 || Objects.equals(rider, "zero_ghost") & item.getStoredNum() != 0) {
+            return "_base";
+        }
 
-	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+        return "_base_" + item.getStoredNum();
+    }
 
-		if (slot== EquipmentSlot.HEAD) {
-			if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1){
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getFlyingModel(this.riderName));
-			}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+ getFormItem(itemstack, 2).getModel(this.riderName));
+    public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-		}else
-			return super.getModelResource(itemstack, animatable, slot,rider);
-	}
+        if (slot == EquipmentSlot.HEAD) {
+            if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getFlyingModel(this.riderName));
+            } else
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getModel(this.riderName));
 
-	@Override
-	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
+        } else
+            return super.getModelResource(itemstack, animatable, slot, rider);
+    }
 
-		switch (currentSlot) {
-			case HEAD, LEGS ->{
-				return true;
+    @Override
+    public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
 
-			}
-			case CHEST -> {
-
-			}
-			default -> {}
-		}
-		return false;
-	}
+        switch (currentSlot) {
+            case HEAD, LEGS -> {
+                return true;
+            }
+        }
+        return false;
+    }
 }

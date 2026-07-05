@@ -20,8 +20,8 @@ public class FullBottleItem extends RiderFormChangeItem {
     private String legendName;
     private Item bestMatch = BuildRiderItems.FULL_BOTTLE.get();
 
-    public FullBottleItem(Properties properties, String formName, String ridername, String beltTex, MobEffectInstance... effects) {
-        super(properties, formName, ridername, beltTex, effects);
+    public FullBottleItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
+        super(properties, formName, riderName, beltTex, effects);
     }
 
     public RiderFormChangeItem getBestMatch() {

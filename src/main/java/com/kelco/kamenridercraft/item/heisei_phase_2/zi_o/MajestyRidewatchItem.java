@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,22 +44,24 @@ public class MajestyRidewatchItem extends OhmaRidewatchItem {
         if (this.summonAltMajestyWeapons.containsKey(player.getOffhandItem().getItem())) {
             for (Item item : this.summonAltMajestyWeapons.get(player.getOffhandItem().getItem())) {
                 ItemStack stack = new ItemStack(item);
-			    stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
-			    if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+                stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
+                if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0)
+                    stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
 
-				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
-				entity.setPickUpDelay(0);
-				level.addFreshEntity(entity);
+                ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
+                entity.setPickUpDelay(0);
+                level.addFreshEntity(entity);
             }
         } else if (!summonMajestyWeapons.isEmpty()) {
             for (Item item : this.summonMajestyWeapons) {
                 ItemStack stack = new ItemStack(item);
-			    stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
-			    if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0) stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
-                
-				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
-				entity.setPickUpDelay(0);
-				level.addFreshEntity(entity);
+                stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.geiz", stack.getHoverName()));
+                if (stack.isDamageableItem() && level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY) > 0)
+                    stack.set(DataComponents.MAX_DAMAGE, level.getGameRules().getInt(ModGameRules.RULE_SUMMONED_ITEM_DURABILITY));
+
+                ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
+                entity.setPickUpDelay(0);
+                level.addFreshEntity(entity);
             }
         }
         if (!player.isCreative()) player.getCooldowns().addCooldown(this, 400);
@@ -66,16 +69,15 @@ public class MajestyRidewatchItem extends OhmaRidewatchItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemstack = player.getItemInHand(usedHand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
         if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.GEIZ_MAJESTY_RIDEWATCH.get())) {
+                && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.GEIZ_MAJESTY_RIDEWATCH.get())) {
             summonWeapon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
-        return super.use(level, player, usedHand);
-
+        return super.use(level, player, interactionHand);
     }
 }

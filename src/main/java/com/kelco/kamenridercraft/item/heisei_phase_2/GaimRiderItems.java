@@ -1012,7 +1012,7 @@ public class GaimRiderItems {
             () -> new FakeLockseedItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SID_LOCKSEED = ITEMS.register("sid_lockseed",
-            () -> new SidLockseedItem(new Item.Properties(), 500).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+            () -> new SidLockseedItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> XIAOLONGBAO_LOCKSEED = ITEMS.register("xiaolongbao_lockseed",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));

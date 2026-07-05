@@ -19,6 +19,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -30,30 +31,29 @@ public class ProgriseHolderItem extends BaseItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-        ItemStack itemstack = entity.getItemInHand(hand);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
 
-        if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
+        if (!level.isClientSide && player instanceof ServerPlayer serverPlayer) {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
-                public Component getDisplayName() {
+                public @NotNull Component getDisplayName() {
                     return Component.translatable("container.kamenridercraft.progrise_holder");
                 }
 
                 @Override
                 public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
                     FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-                    packetBuffer.writeBlockPos(entity.blockPosition());
-                    packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-                    return new ProgriseHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+                    packetBuffer.writeBlockPos(player.blockPosition());
+                    packetBuffer.writeByte(interactionHand == InteractionHand.MAIN_HAND ? 0 : 1);
+                    return new ProgriseHolderGuiMenu(id, inventory, packetBuffer, itemstack);
                 }
             }, buf -> {
-                buf.writeBlockPos(entity.blockPosition());
-                buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+                buf.writeBlockPos(player.blockPosition());
+                buf.writeByte(interactionHand == InteractionHand.MAIN_HAND ? 0 : 1);
             });
         }
-        /*OpenLockseedHolderProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
-        return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
     }
 
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
@@ -76,6 +76,5 @@ public class ProgriseHolderItem extends BaseItem {
         if (j - i > 0) {
             tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
         }
-
     }
 }

@@ -13,46 +13,45 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
 
 public class ShowaMedalItem extends BaseItem {
-
     private RiderDriverItem summonBelt;
     private Item summonWeapon;
 
-	public ShowaMedalItem (Properties properties, RiderDriverItem belt, @Nullable Item weapon)
-	{
-		super(properties);
+    public ShowaMedalItem(Properties properties, RiderDriverItem belt, @Nullable Item weapon) {
+        super(properties);
         summonBelt = belt;
         summonWeapon = weapon;
     }
 
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-		
-		if (!p_41128_.isClientSide() && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-        && belt.isTransformed(p_41129_) && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() == OOORiderItems.OOODRIVER.get()
-        && p_41129_.getInventory().countItem(OOORiderItems.O_SCANNER.get()) != 0) {
-            RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(p_41128_);
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
+
+        if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+                && belt.isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET).getItem() == OOORiderItems.OOODRIVER.get()
+                && player.getInventory().countItem(OOORiderItems.O_SCANNER.get()) != 0) {
+            RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
             if (summon != null) {
-                summon.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
+                summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
                 summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.helmet));
                 summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.chestplate));
                 summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.leggings));
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
                 if (summonWeapon != null) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapon, 1));
 
-                p_41128_.addFreshEntity(summon);
-                summon.bindToPlayer(p_41129_);
-                if (!p_41129_.isCreative()) {
-					itemstack.shrink(1);
-                    p_41129_.getCooldowns().addCooldown(this, 500);
+                level.addFreshEntity(summon);
+                summon.bindToPlayer(player);
+                if (!player.isCreative()) {
+                    itemstack.shrink(1);
+                    player.getCooldowns().addCooldown(this, 500);
                 }
-                p_41129_.awardStat(Stats.ITEM_USED.get(this));
+                player.awardStat(Stats.ITEM_USED.get(this));
             }
-		}
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
-	}
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+    }
 }

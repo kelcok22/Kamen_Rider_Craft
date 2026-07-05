@@ -15,34 +15,34 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 public class GavvwhipirItem extends BaseSwordItem {
+    public GavvwhipirItem(Tier toolTier, int Atk, float Spd, Properties prop) {
+        super(toolTier, Atk, Spd, prop);
+    }
 
-
-	public GavvwhipirItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-		super(toolTier, Atk, Spd, prop);
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-        ItemStack belt = entity.getItemBySlot(EquipmentSlot.FEET);
-		if (!world.isClientSide() && belt.getItem() == GavvRiderItems.HENSHIN_BELT_GAVV.get() && ((RiderDriverItem)belt.getItem()).isTransformed(entity)
-        && (RiderDriverItem.getFormItem(belt, 1) == GavvRiderItems.CAKING_GOCHIZO.get() || RiderDriverItem.getFormItem(belt, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get())) {
-			List<WhippedSoldierEntity> soldiers = world.getEntitiesOfClass(WhippedSoldierEntity.class, entity.getBoundingBox().inflate(50), whip -> (whip.getOwner() == entity));
-			if (soldiers.size() < 2) {
-                WhippedSoldierEntity whip = MobsCore.WHIPPED_SOLDIER.get().create(world);
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemStack belt = player.getItemBySlot(EquipmentSlot.FEET);
+        if (!level.isClientSide() && belt.getItem() == GavvRiderItems.HENSHIN_BELT_GAVV.get() && ((RiderDriverItem) belt.getItem()).isTransformed(player)
+                && (RiderDriverItem.getFormItem(belt, 1) == GavvRiderItems.CAKING_GOCHIZO.get() || RiderDriverItem.getFormItem(belt, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get())) {
+            List<WhippedSoldierEntity> soldiers = level.getEntitiesOfClass(WhippedSoldierEntity.class, player.getBoundingBox().inflate(50), whip -> (whip.getOwner() == player));
+            if (soldiers.size() < 2) {
+                WhippedSoldierEntity whip = MobsCore.WHIPPED_SOLDIER.get().create(level);
                 if (whip != null) {
-                    whip.moveTo(entity.getX(), entity.getY()+1, entity.getZ(), entity.getYRot(), entity.getXRot());				
-                    world.addFreshEntity(whip);
-                    whip.bindToPlayer(entity);
-					if (RiderDriverItem.getFormItem(belt, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get()) whip.setVariant(WhippedSoldierVariant.ICE);
+                    whip.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                    level.addFreshEntity(whip);
+                    whip.bindToPlayer(player);
+                    if (RiderDriverItem.getFormItem(belt, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get())
+                        whip.setVariant(WhippedSoldierVariant.ICE);
                 }
-                entity.displayClientMessage(Component.translatable("attack.kamenridercraft.whip_party"), true);
-				if (!entity.isCreative()) entity.getCooldowns().addCooldown(this, 80);
-			}
-		}
-		return super.use(world, entity, hand);
-	}
+                player.displayClientMessage(Component.translatable("attack.kamenridercraft.whip_party"), true);
+                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 80);
+            }
+        }
+        return super.use(level, player, hand);
+    }
 }

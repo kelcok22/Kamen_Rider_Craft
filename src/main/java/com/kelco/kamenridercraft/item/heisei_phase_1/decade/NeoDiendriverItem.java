@@ -17,39 +17,39 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class NeoDiendriverItem extends DiendriverItem {
-	public NeoDiendriverItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-		super(toolTier, Atk, Spd, prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-	}
+    public NeoDiendriverItem(Tier toolTier, int Atk, float Spd, Properties prop) {
+        super(toolTier, Atk, Spd, prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
+    }
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		ItemStack itemstack = entity.getItemInHand(hand);
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player entity, InteractionHand hand) {
+        ItemStack itemstack = entity.getItemInHand(hand);
 
-		if (entity.isShiftKeyDown()) {
-			if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
-				serverPlayer.openMenu(new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
+        if (entity.isShiftKeyDown()) {
+            if (!level.isClientSide && entity instanceof ServerPlayer serverPlayer) {
+                serverPlayer.openMenu(new MenuProvider() {
+                    @Override
+                    public @NotNull Component getDisplayName() {
                         return Component.translatable("container.kamenridercraft.neo_diendriver");
-					}
+                    }
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-						packetBuffer.writeBlockPos(entity.blockPosition());
-						packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-						return new NeoDiendriverGuiMenu(id, inventory, packetBuffer,itemstack);
-					}
-				}, buf -> {
-					buf.writeBlockPos(entity.blockPosition());
-					buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-				});
-			}
-			/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
-			return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
-		}
-		return super.use(world, entity, hand);
-	}
+                    @Override
+                    public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+                        FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+                        packetBuffer.writeBlockPos(entity.blockPosition());
+                        packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+                        return new NeoDiendriverGuiMenu(id, inventory, packetBuffer, itemstack);
+                    }
+                }, buf -> {
+                    buf.writeBlockPos(entity.blockPosition());
+                    buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+                });
+            }
+            return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+        }
+        return super.use(level, entity, hand);
+    }
 }

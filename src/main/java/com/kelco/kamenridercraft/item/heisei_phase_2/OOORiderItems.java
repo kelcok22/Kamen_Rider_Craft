@@ -1269,7 +1269,7 @@ public class OOORiderItems {
 	public static final DeferredItem<Item> PURPLE_MEDALS_SEALED = ITEMS.register("purple_medals_sealed",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 	public static final DeferredItem<Item> PURPLE_MEDALS_OPENED = ITEMS.register("purple_medals_opened",
-			() -> new Item_Purple_Medals(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+			() -> new PurpleMedalItems(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 	public static final DeferredItem<Item> PURPLE_MEDALS_EMPTY = ITEMS.register("purple_medals_empty",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 

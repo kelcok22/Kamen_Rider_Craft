@@ -20,6 +20,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -31,29 +32,28 @@ public class GotchancollectionPanelItem extends BaseItem {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		ItemStack itemstack = entity.getItemInHand(hand);
+	public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
+		ItemStack itemstack = player.getItemInHand(hand);
 
-		if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
+		if (!world.isClientSide && player instanceof ServerPlayer serverPlayer) {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
-				public Component getDisplayName() {
+				public @NotNull Component getDisplayName() {
 					return Component.translatable("gotchancollection_panel.text");
 				}
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-					packetBuffer.writeBlockPos(entity.blockPosition());
+					packetBuffer.writeBlockPos(player.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					return new GotchancollectionPanelGuiMenu(id, inventory, packetBuffer,itemstack);
 				}
 			}, buf -> {
-				buf.writeBlockPos(entity.blockPosition());
+				buf.writeBlockPos(player.blockPosition());
 				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 			});
 		}
-		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
 		return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
 	}
 
@@ -77,6 +77,5 @@ public class GotchancollectionPanelItem extends BaseItem {
 		if (j - i > 0) {
 			tooltipComponents.add(Component.translatable("container.shulkerBox.more", j - i).withStyle(ChatFormatting.ITALIC));
 		}
-
 	}
 }

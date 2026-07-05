@@ -10,17 +10,15 @@ import net.minecraft.world.level.Level;
 
 
 public class UnknownWizardRingItem extends BaseDropItem {
-	public UnknownWizardRingItem(Properties properties, ResourceLocation lootTable)
-	{
-		super(properties, lootTable);
-	}
+    public UnknownWizardRingItem(Properties properties, ResourceLocation lootTable) {
+        super(properties, lootTable);
+    }
 
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int num, boolean flag) {
-		if (entity instanceof Player playerIn) {
-			if (world instanceof ServerLevel server) this.dropItem(server, playerIn);
-			itemstack.shrink(1);
-		}
-	}
-
-	}
+    @Override
+    public void inventoryTick(ItemStack itemStack, Level level, Entity entity, int num, boolean flag) {
+        if (entity instanceof Player player && level instanceof ServerLevel server) {
+            this.dropItem(server, player);
+            itemStack.shrink(1);
+        }
+    }
+}
