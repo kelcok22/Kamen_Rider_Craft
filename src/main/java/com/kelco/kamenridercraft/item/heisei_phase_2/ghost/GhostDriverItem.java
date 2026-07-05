@@ -94,8 +94,10 @@ public class GhostDriverItem extends RiderDriverItem {
         }
         if (isTransformed(livingEntity)) {
             switch (currentSlot) {
-                case HEAD, CHEST, LEGS -> {
-                    return true;
+                case HEAD -> {
+                    getFormItem(itemstack, 2,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
+                }  case LEGS -> {
+                    getFormItem(itemstack, 1,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
                 }
             }
         }

@@ -160,7 +160,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
             }
         } else {
-            setUpdateForm(stack,rider);
+            setUpdateForm(stack);
         }
     }
 
@@ -218,11 +218,14 @@ public class RiderDriverItem extends RiderArmorItem {
                         form.putBoolean("rider_kicking", false);
                         form.putDouble("rider_kick_cooldown", 200);
                         form.putDouble("rider_kick_tick", 0);
+                        form.putDouble("render_type", 0);
                         form.putBoolean("Update_form", true);
                         form.putString("slot_tex_old" + 1,ModdedItemCore.BLANK_FORM.asItem().toString());
                     };
                     CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                 }
+            }else{
+                setUpdateForm(stack);
             }
             if (player.hasEffect(EffectCore.FORM_TIMEOUT)) this.timeoutForms(player, stack);
         }
@@ -234,7 +237,6 @@ public class RiderDriverItem extends RiderArmorItem {
             onTransformation(itemStack, rider);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
-                form.putDouble("render_type", getRenderType(itemStack,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
             rider.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(30);
@@ -382,14 +384,21 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
-    public static void setUpdateForm(ItemStack itemStack,LivingEntity rider) {
+    public static void setUpdateForm(ItemStack itemStack) {
         if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
             itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
-        if (itemStack.getItem() instanceof RiderDriverItem) {
+        if (itemStack.getItem() instanceof RiderDriverItem belt) {
             Consumer<CompoundTag> data = form -> {
+                form.putBoolean("rider_kicking", false);
+                form.putDouble("rider_kick_cooldown", 200);
+                form.putDouble("rider_kick_tick", 0);
                 form.putBoolean("Update_form", true);
-                form.putDouble("render_type", getRenderType(itemStack,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
+                form.putDouble("render_type", 0);
+                form.putString("slot_tex_old" + 1,ModdedItemCore.BLANK_FORM.asItem().toString());
+                    for (int n = 1; n <= belt.numBaseFormItems; n++) {
+                        form.putString("slot_tex" + n, getFormItem(itemStack,n).toString());
+                    }
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
         }
@@ -403,7 +412,6 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (!form.getString("slot_tex" + slot).equals(item.toString())) {
                     form.putString("slot_tex" + slot, item.toString());
                     form.putBoolean("Update_form", true);
-                    //form.putDouble("render_type", getRenderType(itemStack));
                 }
             };
 
