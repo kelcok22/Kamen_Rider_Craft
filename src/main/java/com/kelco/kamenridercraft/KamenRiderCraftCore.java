@@ -1803,6 +1803,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(Rider_Blocks.GRANUTE_GLASS_PANE);
 
+                event.accept(Rider_Blocks.GHOST_LINER_WHEEL);
                 event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
                 event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);
                 event.accept(Rider_Blocks.WALLPLATE_GRATE);
