@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.custom;
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.block.baseBlocks.BaseBlock;
+import com.kelco.kamenridercraft.block.base_blocks.BaseBlock;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import net.minecraft.core.BlockPos;

@@ -7,13 +7,12 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 
 public class MiscUtil {
-    public static boolean canSpawnBoss (Player player) {
-       return (player.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD) || (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player));
+    public static boolean canSpawnBoss(Player player) {
+        return (player.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD) || (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player));
     }
 
     public static String oooComboCheck(String medalOne, String medalTwo, String medalThree) {
-        String comboText = medalOne.replace("kamenridercraft:", "") + " " + medalTwo.replace("kamenridercraft:", "") + " " + medalThree.replace("kamenridercraft:", "");
-        return switch (comboText) {
+        return switch ((medalOne + " " + medalTwo + " " + medalThree).replace("kamenridercraft:", "")) {
             case "taka_medal tora_medal batta_medal", "taka_ankh_medal tora_medal batta_medal" -> "tatoba";
             case "super_taka_medal super_tora_medal super_batta_medal" -> "super_tatoba";
             case "kuwagata_medal kamakiri_medal batta_medal" -> "gatakiriba";

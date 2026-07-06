@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.world.level.levelgen.feature;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -23,7 +23,7 @@ public class ModPlacedFeature {
 
         register(context, HELHEIM_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HELHEIM_TREE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f, 2),
-                        Rider_Blocks.HELHEIM_SAPLING.get()));
+                        RiderBlocks.HELHEIM_SAPLING.get()));
 
     }
 

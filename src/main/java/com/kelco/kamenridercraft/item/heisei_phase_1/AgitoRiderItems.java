@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.GSystemChipProgrammer;
+import com.kelco.kamenridercraft.block.machine.GSystemChipProgrammer;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;

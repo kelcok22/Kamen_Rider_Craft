@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.item.reboots;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.AmazonCellExtractor;
-import com.kelco.kamenridercraft.block.machineBlocks.AmazonCellMutator;
+import com.kelco.kamenridercraft.block.machine.AmazonCellExtractor;
+import com.kelco.kamenridercraft.block.machine.AmazonCellMutator;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;

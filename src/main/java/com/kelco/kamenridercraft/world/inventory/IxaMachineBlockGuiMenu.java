@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.world.inventory;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.block.entity.IxaMachineBlockEntity;
+import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.blockentity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.init.ModMenus;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -109,7 +109,7 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player player) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                player, Rider_Blocks.IXA_MACHINE_BLOCK.get());
+                player, RiderBlocks.IXA_MACHINE_BLOCK.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

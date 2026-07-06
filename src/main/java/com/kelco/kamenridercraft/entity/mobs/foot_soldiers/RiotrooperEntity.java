@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -58,7 +58,7 @@ public class RiotrooperEntity extends BaseHenchmenEntity {
 
         if (this.isDeadOrDying()) {
             if (this.level() instanceof ServerLevel serverlevel) {
-                BlockParticleOption sand = new BlockParticleOption(ParticleTypes.BLOCK, Rider_Blocks.IMAGIN_SAND_BLOCK.get().defaultBlockState());
+                BlockParticleOption sand = new BlockParticleOption(ParticleTypes.BLOCK, RiderBlocks.IMAGIN_SAND_BLOCK.get().defaultBlockState());
                 serverlevel.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, this.getX(), this.getY(), this.getZ(), 20, 0, 0, 0, 0.05);
                 serverlevel.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, this.getX(), this.getY() + 1, this.getZ(), 20, 0, 0, 0, 0.05);
                 serverlevel.sendParticles(sand, this.getX(), this.getY(), this.getZ(), 30, 0, 0, 0, 0.05);

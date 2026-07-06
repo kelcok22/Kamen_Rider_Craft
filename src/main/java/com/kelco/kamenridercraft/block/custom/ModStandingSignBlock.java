@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.block.custom;
 
-import com.kelco.kamenridercraft.block.entity.ModSignBlockEntity;
+import com.kelco.kamenridercraft.blockentity.ModSignBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;

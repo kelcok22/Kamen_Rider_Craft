@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.block.custom;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
@@ -37,10 +37,10 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem){
-            if(state.is(Rider_Blocks.HELHEIM_LOG.get())){
-                return Rider_Blocks.STRIPPED_HELHEIM_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }      if(state.is(Rider_Blocks.HELHEIM_WOOD.get())) {
-                return Rider_Blocks.STRIPPED_HELHEIM_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(RiderBlocks.HELHEIM_LOG.get())){
+                return RiderBlocks.STRIPPED_HELHEIM_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }      if(state.is(RiderBlocks.HELHEIM_WOOD.get())) {
+                return RiderBlocks.STRIPPED_HELHEIM_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
         return super.getToolModifiedState(state, context, itemAbility, simulate);

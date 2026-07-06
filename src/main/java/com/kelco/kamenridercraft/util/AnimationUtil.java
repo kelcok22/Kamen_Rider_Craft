@@ -17,7 +17,7 @@ import org.jetbrains.annotations.Nullable;
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.util.MiscUtil.oooComboCheck;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class AnimationUtil {
     public static boolean canPose(LivingEntity poser) {

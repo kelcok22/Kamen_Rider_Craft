@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.mixin.livingentity;
 
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
-import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -16,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 @Mixin(value = LivingEntity.class, priority = 899)
 public class LivingEntityMixin {

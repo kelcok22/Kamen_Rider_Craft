@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
@@ -17,7 +17,7 @@ public class ChapGreyEntity extends BaseHenchmenEntity {
         LocalDate localdate = LocalDate.now();
         int day = localdate.getDayOfMonth();
         if (localdate.getMonthValue() == 10 && day >= 24) {
-            this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Rider_Blocks.FERBUS.get()));
+            this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RiderBlocks.FERBUS.get()));
         }
     }
 

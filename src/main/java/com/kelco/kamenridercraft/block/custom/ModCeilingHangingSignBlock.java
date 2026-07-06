@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.block.custom;
 
-import com.kelco.kamenridercraft.block.entity.ModHangingSignBlockEntity;
+import com.kelco.kamenridercraft.blockentity.ModHangingSignBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.CeilingHangingSignBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;

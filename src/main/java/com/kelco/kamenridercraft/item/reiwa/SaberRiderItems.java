@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.reiwa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
+import com.kelco.kamenridercraft.block.machine.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;

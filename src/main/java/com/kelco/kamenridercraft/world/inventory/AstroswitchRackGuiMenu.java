@@ -18,7 +18,7 @@ public class AstroswitchRackGuiMenu extends AbstractContainerMenu {
     private final Container container;
 
  //   public AstroswitchRackGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
- //       this(containerId, playerInventory,new ItemStack(Rider_Blocks.ASTROSWITCH_RACK.get()));
+ //       this(containerId, playerInventory,new ItemStack(RiderBlocks.ASTROSWITCH_RACK.get()));
  //   }
 
     public AstroswitchRackGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

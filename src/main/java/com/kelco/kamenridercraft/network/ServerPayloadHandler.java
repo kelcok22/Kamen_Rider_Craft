@@ -19,7 +19,7 @@ import java.util.UUID;
 
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class ServerPayloadHandler {
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {

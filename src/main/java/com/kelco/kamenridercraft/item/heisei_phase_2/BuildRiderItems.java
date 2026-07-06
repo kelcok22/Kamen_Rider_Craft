@@ -1,9 +1,9 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.block.machineBlocks.FullbottlePurifier;
-import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
+import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.block.machine.FullbottlePurifier;
+import com.kelco.kamenridercraft.block.machine.PandoraBox;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
@@ -68,11 +68,11 @@ public class BuildRiderItems {
 	public static final DeferredItem<Item> GOLDEN_BANGLE= ITEMS.register("golden_bangle",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
-	public static final DeferredItem<Item> PANDORA_PANEL_TOUTO = ITEMS.register("pandora_panel_touto", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> PANDORA_PANEL_HOKUTO = ITEMS.register("pandora_panel_hokuto", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> PANDORA_PANEL_SEITO = ITEMS.register("pandora_panel_seito", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> LAST_PANDORA_PANEL_BLACK = ITEMS.register("last_pandora_panel_black", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> LAST_PANDORA_PANEL_WHITE = ITEMS.register("last_pandora_panel_white", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_TOUTO = ITEMS.register("pandora_panel_touto", () -> new PandoraPanelItem(RiderBlocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_HOKUTO = ITEMS.register("pandora_panel_hokuto", () -> new PandoraPanelItem(RiderBlocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_SEITO = ITEMS.register("pandora_panel_seito", () -> new PandoraPanelItem(RiderBlocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> LAST_PANDORA_PANEL_BLACK = ITEMS.register("last_pandora_panel_black", () -> new PandoraPanelItem(RiderBlocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> LAST_PANDORA_PANEL_WHITE = ITEMS.register("last_pandora_panel_white", () -> new PandoraPanelItem(RiderBlocks.PANDORA_PANEL_BLOCK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> RABBIT_FULL_BOTTLE = ITEMS.register("rabbit_full_bottle",

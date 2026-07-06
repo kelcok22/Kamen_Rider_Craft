@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.custom;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.block.entity.ModSignBlockEntity;
+import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.blockentity.ModSignBlockEntity;
 
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
@@ -17,7 +17,7 @@ public class ModWallSignBlock extends WallSignBlock {
 
     @Override
     public String getDescriptionId() {
-        return Util.makeDescriptionId("item", Rider_Blocks.HELHEIM_WALL_SIGN.getId());
+        return Util.makeDescriptionId("item", RiderBlocks.HELHEIM_WALL_SIGN.getId());
     }
 
     @Override

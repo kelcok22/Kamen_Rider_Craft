@@ -5,7 +5,7 @@
 
 package com.kelco.kamenridercraft.world.level.levelgen.feature;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -32,7 +32,7 @@ public class HelheimVineFeature extends Feature<NoneFeatureConfiguration> {
 
             for (Direction direction : var4) {
                 if (direction != Direction.DOWN && VineBlock.isAcceptableNeighbour(worldgenlevel, blockpos.relative(direction), direction)) {
-                    worldgenlevel.setBlock(blockpos, Rider_Blocks.HELHEIM_VINE.get().defaultBlockState().setValue(VineBlock.getPropertyForFace(direction), true), 2);
+                    worldgenlevel.setBlock(blockpos, RiderBlocks.HELHEIM_VINE.get().defaultBlockState().setValue(VineBlock.getPropertyForFace(direction), true), 2);
                     return true;
                 }
             }

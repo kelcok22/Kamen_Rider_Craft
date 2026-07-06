@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.entity.ai.FlyingBossControl;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -34,7 +34,7 @@ public class EvolEntity extends BaseHenchmenEntity {
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
-            if (this.getHealth()<100 && playerIn.getInventory().countItem(Rider_Blocks.PANDORA_BOX.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER.get()
+            if (this.getHealth()<100 && playerIn.getInventory().countItem(RiderBlocks.PANDORA_BOX.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER.get()
             && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER_KAIJIN.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
 		    	this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);

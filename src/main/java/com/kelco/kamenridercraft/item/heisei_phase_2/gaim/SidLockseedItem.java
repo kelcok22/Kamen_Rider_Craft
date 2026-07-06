@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.gaim;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -31,7 +31,7 @@ public class SidLockseedItem extends BaseItem {
 
             if (level.getBlockState(pos).getDestroySpeed(level, pos) < 0.2) level.destroyBlock(pos, true);
             if (player.level().isEmptyBlock(pos)) {
-                player.level().setBlockAndUpdate(pos, Rider_Blocks.HELHEIM_CRACK.get().defaultBlockState());
+                player.level().setBlockAndUpdate(pos, RiderBlocks.HELHEIM_CRACK.get().defaultBlockState());
                 player.getCooldowns().addCooldown(this, 500);
             }
         }

@@ -12,8 +12,8 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.ABILITY_COOLDOWN;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.ABILITY_TICK;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
 
 public class KabutoRiderKicks {
     public static void kabutoKick(LivingEntity user) {

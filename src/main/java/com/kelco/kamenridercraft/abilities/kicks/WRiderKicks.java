@@ -16,7 +16,7 @@ import java.util.Random;
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class WRiderKicks {
     public static void jokerMemoryKick(LivingEntity user) {
@@ -55,7 +55,7 @@ public class WRiderKicks {
                 BlockState blockstate = user.getBlockStateOn();
                 ((ServerLevel)user.level()).sendParticles(new BlockParticleOption(ParticleTypes.BLOCK, blockstate), d0, d1, d2, 25, 0, 0, 0, 0);
             }
-            Vec3 look = new Vec3(user.getLookAngle().x * 0.05, 0, user.getLookAngle().z * 0.05).scale(20);
+            Vec3 look = new Vec3(user.getLookAngle().x * 0.075, 0, user.getLookAngle().z * 0.075).scale(20);
             user.setDeltaMovement(look.scale(0.97D));
             user.hurtMarked = true;
             cancelAbility(user, "w.joker_extreme_land", 0);
@@ -67,7 +67,7 @@ public class WRiderKicks {
                 if (user.onGround()) {
                     PacketDistributor.sendToAllPlayers(new AnimPayload("w.joker_extreme_kick_start", "attack", user.getStringUUID()));
                     Vec3 initialVec = user.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 1.45D, initialVec.z);
                     user.setDeltaMovement(climbVec.scale(0.97D));
                     ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 1.0, user.getZ(), 1, 0, 0, 0, 0);
                     user.hurtMarked = true;

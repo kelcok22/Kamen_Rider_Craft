@@ -13,7 +13,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.MOB_TRANSFORMED;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_TRANSFORMED;
 
 public class CaucasusEntity extends BaseHenchmenEntity {
     public CaucasusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {

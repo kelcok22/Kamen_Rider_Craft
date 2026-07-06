@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
@@ -27,7 +27,7 @@ public class PawnJyamatoEntity extends BaseHenchmenEntity {
         LocalDate localdate = LocalDate.now();
         int day = localdate.getDayOfMonth();
         if (localdate.getMonthValue() == 10 && day >= 24) {
-            this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Rider_Blocks.PUNKJACKOLANTERN.get()));
+            this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RiderBlocks.PUNKJACKOLANTERN.get()));
         }
     }
 

@@ -1,18 +1,16 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
-import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class GenericRiderKicks {
     public static void genericRiderKick(LivingEntity user) {

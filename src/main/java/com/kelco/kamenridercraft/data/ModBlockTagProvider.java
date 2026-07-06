@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.data;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -20,34 +20,34 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         /*
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(Rider_Blocks.HELHEIM_DOOR.get())
-                .add(Rider_Blocks.HELHEIM_SLAB.get())
-                .add(Rider_Blocks.HELHEIM_STAIRS.get())
-                .add(Rider_Blocks.HELHEIM_BUTTON.get())
-                .add(Rider_Blocks.HELHEIM_PLANKS.get())
-                .add(Rider_Blocks.HELHEIM_FENCE_GATE.get())
-                .add(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get())
-                .add(Rider_Blocks.HELHEIM_FENCE.get())
-                .add(Rider_Blocks.HELHEIM_WOOD.get())
-                .add(Rider_Blocks.STRIPPED_HELHEIM_WOOD.get())
-                .add(Rider_Blocks.STRIPPED_HELHEIM_LOG.get())
-                .add(Rider_Blocks.HELHEIM_LOG.get())
-                .add(Rider_Blocks.HELHEIM_TRAPDOOR.get());
+                .add(RiderBlocks.HELHEIM_DOOR.get())
+                .add(RiderBlocks.HELHEIM_SLAB.get())
+                .add(RiderBlocks.HELHEIM_STAIRS.get())
+                .add(RiderBlocks.HELHEIM_BUTTON.get())
+                .add(RiderBlocks.HELHEIM_PLANKS.get())
+                .add(RiderBlocks.HELHEIM_FENCE_GATE.get())
+                .add(RiderBlocks.HELHEIM_PRESSURE_PLATE.get())
+                .add(RiderBlocks.HELHEIM_FENCE.get())
+                .add(RiderBlocks.HELHEIM_WOOD.get())
+                .add(RiderBlocks.STRIPPED_HELHEIM_WOOD.get())
+                .add(RiderBlocks.STRIPPED_HELHEIM_LOG.get())
+                .add(RiderBlocks.HELHEIM_LOG.get())
+                .add(RiderBlocks.HELHEIM_TRAPDOOR.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(Rider_Blocks.GHOST_LINER_WHEEL.get());
-                .add(Rider_Blocks.RABBIT_HUTCH_DOOR.get())
+                .add(RiderBlocks.GHOST_LINER_WHEEL.get());
+                .add(RiderBlocks.RABBIT_HUTCH_DOOR.get())
 */
 
 
-        tag(BlockTags.FENCES).add(Rider_Blocks.HELHEIM_FENCE.get());
-        tag(BlockTags.FENCE_GATES).add(Rider_Blocks.HELHEIM_FENCE_GATE.get());
+        tag(BlockTags.FENCES).add(RiderBlocks.HELHEIM_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(RiderBlocks.HELHEIM_FENCE_GATE.get());
 
-        tag(BlockTags.WALLS).add(Rider_Blocks.YELLOW_WALLPLATE_WALL.get());
-        tag(BlockTags.WALLS).add(Rider_Blocks.CYAN_WALLPLATE_WALL.get());
-        tag(BlockTags.WALLS).add(Rider_Blocks.BLUE_WALLPLATE_WALL.get());
-        tag(BlockTags.WALLS).add(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL.get());
-        tag(BlockTags.WALLS).add(Rider_Blocks.WHITE_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.YELLOW_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.CYAN_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.BLUE_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.LIGHT_BLUE_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.WHITE_WALLPLATE_WALL.get());
 
     }
 }

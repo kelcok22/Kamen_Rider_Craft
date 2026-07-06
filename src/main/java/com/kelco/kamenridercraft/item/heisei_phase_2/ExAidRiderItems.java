@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.GameCreator;
-import com.kelco.kamenridercraft.block.machineBlocks.GanbarizingMachine;
+import com.kelco.kamenridercraft.block.machine.GameCreator;
+import com.kelco.kamenridercraft.block.machine.GanbarizingMachine;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;

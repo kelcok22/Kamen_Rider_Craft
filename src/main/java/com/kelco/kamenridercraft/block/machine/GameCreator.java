@@ -1,0 +1,119 @@
+package com.kelco.kamenridercraft.block.machine;
+
+
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.ItemInteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.phys.BlockHitResult;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+
+public class GameCreator extends MachineBlock {
+	
+	  public static List<Item> BLANK_GASHAT= new ArrayList<>();
+	  public static List<Item> BLANK_DOUBLE_GASHAT= new ArrayList<>();
+	  public static List<Item> BLANK_MAXIMUM_GASHAT= new ArrayList<>();
+	  public static List<Item> BLANK_HYPER_GASHAT= new ArrayList<>();
+		 
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+
+    public GameCreator(Properties properties) {
+        super(properties);
+    }
+
+
+
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_53681_) {
+        p_53681_.add(FACING);
+     }
+
+     public BlockState getStateForPlacement(BlockPlaceContext p_53679_) {
+        return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
+     }
+
+    private Item getgashatDrop(int num, Player player) {
+ 		Random generator = new Random();
+
+        List<Item> BLANK_GASHAT_PLUS = new ArrayList<>(BLANK_GASHAT);
+
+		 if (player.getInventory().countItem(ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get())!=0){
+			 for (int i = 0; i < 20; i++) {
+				 BLANK_GASHAT_PLUS.add(ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get());
+				 BLANK_GASHAT_PLUS.add(ExAidRiderItems.TOKI_MEKTI_BRIDAL_GASHAT.get());
+			 }
+			 	 }
+
+ 		if (num==1){
+ 			int rand = generator.nextInt(BLANK_GASHAT_PLUS.size());
+ 			return BLANK_GASHAT_PLUS.get(rand);
+ 		} else if (num==2){
+ 			int rand = generator.nextInt(BLANK_DOUBLE_GASHAT.size());
+ 			return BLANK_DOUBLE_GASHAT.get(rand);
+ 		} else if (num==3){
+            if (player.getInventory().countItem(ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get())!=0){
+                return ExAidRiderItems.HYPER_FUMESTU_GASHAT.get();
+            }
+ 			int rand = generator.nextInt(BLANK_HYPER_GASHAT.size());
+ 			return BLANK_HYPER_GASHAT.get(rand);
+ 		}  else{
+            if (player.getInventory().countItem(ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get())!=0){
+                return ExAidRiderItems.MAXIMUM_ZOMBIE_GASHAT.get();
+            }
+ 			int rand = generator.nextInt(BLANK_MAXIMUM_GASHAT.size());
+ 			return BLANK_MAXIMUM_GASHAT.get(rand);
+ 		}
+ 	}
+
+
+	@Override
+	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+
+		if (!level.isClientSide()) {
+            if (player.getItemInHand(hand).getItem() == ExAidRiderItems.UNFINISHED_MAXIMUM_MIGHTY_X_GASHAT.get()) {
+				process(player, level, pos, hand, getgashatDrop(0, player));
+				return ItemInteractionResult.SUCCESS;
+			}
+			else if (player.getItemInHand(hand).getItem() == ExAidRiderItems.BLANK_GASHAT.get()) {
+				process(player, level, pos, hand, getgashatDrop(1, player));
+				return ItemInteractionResult.SUCCESS;
+			}
+			else if (player.getItemInHand(hand).getItem() == ExAidRiderItems.MIGHTY_BROTHERS_XX_UNFINISHED_GASHAT.get()){
+				process(player, level, pos, hand, getgashatDrop(2, player));
+				return ItemInteractionResult.SUCCESS;
+			}
+			else if (player.getItemInHand(hand).getItem() == ExAidRiderItems.UNFINISHED_HYPER_MUTEKI_GASHAT.get()){
+				process(player, level, pos, hand, getgashatDrop(3, player));
+				return ItemInteractionResult.SUCCESS;
+			}
+			else if (player.getItemInHand(hand).getItem() == ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()) {
+				process(player, level, pos, hand, ExAidRiderItems.GENM_MUSOU_GASHAT.get());
+				return ItemInteractionResult.SUCCESS;
+			}
+
+        }
+		return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+
+
+
+	public GameCreator AddToTabList(List<Block> TabList) {
+		TabList.add(this);
+		return this;
+	}
+
+}

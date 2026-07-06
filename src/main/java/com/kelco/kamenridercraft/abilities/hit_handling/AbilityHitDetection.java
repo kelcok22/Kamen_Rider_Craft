@@ -6,7 +6,7 @@ import java.util.List;
 
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitProcessing.kickHit;
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.USED_ABILITY;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.USED_ABILITY;
 
 public class AbilityHitDetection {
     public static void standardHitDetection(LivingEntity user, String hitType) {

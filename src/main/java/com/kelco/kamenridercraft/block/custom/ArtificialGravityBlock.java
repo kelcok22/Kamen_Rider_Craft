@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.custom;
 
 
-import com.kelco.kamenridercraft.block.baseBlocks.BaseBlock;
+import com.kelco.kamenridercraft.block.base_blocks.BaseBlock;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

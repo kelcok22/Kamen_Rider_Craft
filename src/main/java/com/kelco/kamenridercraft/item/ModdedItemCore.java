@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
@@ -448,9 +448,9 @@ public class ModdedItemCore {
                     .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<SignItem> HELHEIM_SIGN_ITEM = ITEMS.register("helheim_sign_item",
-            () -> new SignItem(new Item.Properties().stacksTo(16), Rider_Blocks.HELHEIM_SIGN.get(), Rider_Blocks.HELHEIM_WALL_SIGN.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), RiderBlocks.HELHEIM_SIGN.get(), RiderBlocks.HELHEIM_WALL_SIGN.get()));
     public static final DeferredItem<SignItem> HELHEIM_HANGING_SIGN_ITEM = ITEMS.register("helheim_hanging_sign_item",
-            () -> new SignItem(new Item.Properties().stacksTo(16), Rider_Blocks.HELHEIM_HANGING_SIGN.get(), Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), RiderBlocks.HELHEIM_HANGING_SIGN.get(), RiderBlocks.HELHEIM_WALL_HANGING_SIGN.get()));
 
     // public static final DeferredItem<Item> WARRIOR_POTTERY_SHERD = ITEMS.register("warrior_pottery_sherd",
     //      () -> new Item(new Item.Properties().stacksTo(1)));

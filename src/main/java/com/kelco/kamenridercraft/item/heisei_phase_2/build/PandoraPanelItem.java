@@ -1,7 +1,7 @@
 
 package com.kelco.kamenridercraft.item.heisei_phase_2.build;
 
-import com.kelco.kamenridercraft.block.entity.PandoraPanelBlockEntity;
+import com.kelco.kamenridercraft.blockentity.PandoraPanelBlockEntity;
 import com.kelco.kamenridercraft.world.inventory.PandoraPanelGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;

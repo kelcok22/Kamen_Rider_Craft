@@ -22,7 +22,7 @@ import java.util.Comparator;
 
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.*;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class AbilityUtil {
     public static void calculateAbility(LivingEntity user, String ability) {

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.data;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -45,24 +45,24 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
 
-        buttonItem(Rider_Blocks.HELHEIM_BUTTON, Rider_Blocks.HELHEIM_PLANKS);
-        fenceItem(Rider_Blocks.HELHEIM_FENCE, Rider_Blocks.HELHEIM_PLANKS);
-        fenceItem(Rider_Blocks.WHITE_FENCE, Rider_Blocks.PLANKS_WHITE);
+        buttonItem(RiderBlocks.HELHEIM_BUTTON, RiderBlocks.HELHEIM_PLANKS);
+        fenceItem(RiderBlocks.HELHEIM_FENCE, RiderBlocks.HELHEIM_PLANKS);
+        fenceItem(RiderBlocks.WHITE_FENCE, RiderBlocks.PLANKS_WHITE);
 
-        wallItem(Rider_Blocks.YELLOW_WALLPLATE_WALL, Rider_Blocks.YELLOW_WALLPLATE);
-        wallItem(Rider_Blocks.WHITE_WALLPLATE_WALL, Rider_Blocks.WHITE_WALLPLATE);
-        wallItem(Rider_Blocks.CYAN_WALLPLATE_WALL, Rider_Blocks.CYAN_WALLPLATE);
-        wallItem(Rider_Blocks.BLUE_WALLPLATE_WALL, Rider_Blocks.BLUE_WALLPLATE);
-        wallItem(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL, Rider_Blocks.LIGHT_BLUE_WALLPLATE);
+        wallItem(RiderBlocks.YELLOW_WALLPLATE_WALL, RiderBlocks.YELLOW_WALLPLATE);
+        wallItem(RiderBlocks.WHITE_WALLPLATE_WALL, RiderBlocks.WHITE_WALLPLATE);
+        wallItem(RiderBlocks.CYAN_WALLPLATE_WALL, RiderBlocks.CYAN_WALLPLATE);
+        wallItem(RiderBlocks.BLUE_WALLPLATE_WALL, RiderBlocks.BLUE_WALLPLATE);
+        wallItem(RiderBlocks.LIGHT_BLUE_WALLPLATE_WALL, RiderBlocks.LIGHT_BLUE_WALLPLATE);
 
-        basicItem(Rider_Blocks.HELHEIM_DOOR.asItem());
-        basicItem(Rider_Blocks.WONDERWOOD_DOOR.asItem());
-        basicItem(Rider_Blocks.RABBIT_HUTCH_DOOR.asItem());
-        basicItem(Rider_Blocks.GLASS_DOOR.asItem());
-        basicItem(Rider_Blocks.JAIL_DOOR.asItem());
-        basicItem(Rider_Blocks.GOLD_DOOR.asItem());
+        basicItem(RiderBlocks.HELHEIM_DOOR.asItem());
+        basicItem(RiderBlocks.WONDERWOOD_DOOR.asItem());
+        basicItem(RiderBlocks.RABBIT_HUTCH_DOOR.asItem());
+        basicItem(RiderBlocks.GLASS_DOOR.asItem());
+        basicItem(RiderBlocks.JAIL_DOOR.asItem());
+        basicItem(RiderBlocks.GOLD_DOOR.asItem());
 
-        basicItem(Rider_Blocks.GRANUTE_GLASS_PANE.asItem());
+        basicItem(RiderBlocks.GRANUTE_GLASS_PANE.asItem());
 
         basicItem(ModdedItemCore.HELHEIM_SIGN_ITEM.asItem());
         basicItem(ModdedItemCore.HELHEIM_HANGING_SIGN_ITEM.asItem());

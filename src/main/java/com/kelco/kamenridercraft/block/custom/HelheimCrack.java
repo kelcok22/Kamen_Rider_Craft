@@ -1,8 +1,8 @@
 package com.kelco.kamenridercraft.block.custom;
 
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.block.baseBlocks.BaseBlock;
+import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.block.base_blocks.BaseBlock;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -79,8 +79,8 @@ public class HelheimCrack extends BaseBlock {
 
 	public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity, BlockPos pos) {
 
-		if (otherDim.getBlockState(pos)!= Rider_Blocks.HELHEIM_CRACK.get().defaultBlockState()){
-			otherDim.setBlockAndUpdate(pos,Rider_Blocks.HELHEIM_CRACK.get().defaultBlockState());
+		if (otherDim.getBlockState(pos)!= RiderBlocks.HELHEIM_CRACK.get().defaultBlockState()){
+			otherDim.setBlockAndUpdate(pos, RiderBlocks.HELHEIM_CRACK.get().defaultBlockState());
 		}
 
 		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);

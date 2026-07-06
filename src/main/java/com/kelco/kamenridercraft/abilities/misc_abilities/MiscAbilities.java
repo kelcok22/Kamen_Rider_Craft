@@ -10,8 +10,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.ABILITY_COOLDOWN;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.ABILITY_TICK;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
 
 public class MiscAbilities {
     public static void flightBoost(LivingEntity user) {

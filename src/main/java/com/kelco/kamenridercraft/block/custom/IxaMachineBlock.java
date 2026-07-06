@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.custom;
 
-import com.kelco.kamenridercraft.block.entity.IxaMachineBlockEntity;
-import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
+import com.kelco.kamenridercraft.blockentity.IxaMachineBlockEntity;
+import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

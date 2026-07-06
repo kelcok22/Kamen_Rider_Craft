@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.ShiftChassisAssembler;
+import com.kelco.kamenridercraft.block.machine.ShiftChassisAssembler;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.bosses.GordDriveEntity;
 import com.kelco.kamenridercraft.item.base_items.*;

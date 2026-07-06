@@ -5,7 +5,7 @@ package com.kelco.kamenridercraft.entity.mobs.villager;
 import com.google.common.collect.ImmutableSet;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
@@ -23,7 +23,7 @@ public class RiderVillagers {
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS = DeferredRegister.create(Registries.VILLAGER_PROFESSION, KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredHolder<PoiType,PoiType> SHOCKER_MONITOR_POI = POI_TYPES.register("shocker_monitor_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.SHOCKER_MONITOR.get().getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(RiderBlocks.SHOCKER_MONITOR.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> SHOCKER_VILLAGER = VILLAGER_PROFESSIONS.register("shocker_villager",
@@ -32,7 +32,7 @@ public class RiderVillagers {
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> HIDEN_3D_PRINTER_POI = POI_TYPES.register("hiden_3d_printer_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.HIDEN_3D_PRINTER.get().getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(RiderBlocks.HIDEN_3D_PRINTER.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> HUMAGEAR_VILLAGER = VILLAGER_PROFESSIONS.register("humagear_villager",
@@ -41,7 +41,7 @@ public class RiderVillagers {
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> KAMEN_CAFE_COUNTER_POI = POI_TYPES.register("kamen_cafe_counter_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.KAMEN_CAFE_COUNTER.get().getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(RiderBlocks.KAMEN_CAFE_COUNTER.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> KAMEN_CAFE_BUTLER = VILLAGER_PROFESSIONS.register("kamen_cafe_butler",
@@ -50,7 +50,7 @@ public class RiderVillagers {
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> HEATPRESS_EXTRACTOR_POI = POI_TYPES.register("heatpress_extractor_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.HEATPRESS_EXTRACTOR.get().getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(RiderBlocks.HEATPRESS_EXTRACTOR.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> AGENT_VILLAGER = VILLAGER_PROFESSIONS.register("agent_villager",
@@ -59,7 +59,7 @@ public class RiderVillagers {
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
     public static final DeferredHolder<PoiType,PoiType> CANDY_SHOP_POI = POI_TYPES.register("candy_shop_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.CANDY_SHOP.get().getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(RiderBlocks.CANDY_SHOP.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> CANDYSHOP_VILLAGER = VILLAGER_PROFESSIONS.register("candyshop_villager",
@@ -68,7 +68,7 @@ public class RiderVillagers {
                     SoundEvents.VILLAGER_WORK_FARMER));
 
     public static final DeferredHolder<PoiType,PoiType> GACHAPON_POI = POI_TYPES.register("gachapon_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.GASHAPON_MACHINE.get().getStateDefinition().getPossibleStates()),
+            () -> new PoiType(ImmutableSet.copyOf(RiderBlocks.GASHAPON_MACHINE.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final DeferredHolder<VillagerProfession,VillagerProfession> COLLECTOR_VILLAGER = VILLAGER_PROFESSIONS.register("collector_villager",

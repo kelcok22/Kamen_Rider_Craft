@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.*;
@@ -1648,7 +1648,7 @@ public class DecadeRiderItems {
 	public static final DeferredItem<Item> KABUKI_CARD = ITEMS.register("kabuki_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) HibikiRiderItems.KABUKIDRIVER.get()).addSummonWeapon(HibikiRiderItems.ECHO_SWORD_ONSAKEN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> CAUCASUS_CARD = ITEMS.register("caucasus_card",
-			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) KabutoRiderItems.CAUCASUS_RIDER_BELT.get()).addSummonWeapon(Rider_Blocks.BLUE_ROSE.asItem()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) KabutoRiderItems.CAUCASUS_RIDER_BELT.get()).addSummonWeapon(RiderBlocks.BLUE_ROSE.asItem()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ARC_CARD = ITEMS.register("arc_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) KivaRiderItems.ARC_KIVAT_BELT.get()).addSummonWeapon(KivaRiderItems.ARC_TRIDENT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> SKULL_CARD = ITEMS.register("skull_card",

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.block.custom;
 
 
-import com.kelco.kamenridercraft.block.entity.PlinthBlockEntity;
+import com.kelco.kamenridercraft.blockentity.PlinthBlockEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;

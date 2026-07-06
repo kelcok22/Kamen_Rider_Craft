@@ -45,7 +45,7 @@ import java.util.Objects;
 import java.util.function.Consumer;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
-import static com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes.USED_ABILITY;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.USED_ABILITY;
 
 
 public class RiderDriverItem extends RiderArmorItem {

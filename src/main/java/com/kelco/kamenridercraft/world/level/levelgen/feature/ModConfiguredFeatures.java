@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.world.level.levelgen.feature;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -43,10 +43,10 @@ public class ModConfiguredFeatures {
 
 
         register(context, HELHEIM_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(Rider_Blocks.HELHEIM_LOG.get()),
+                BlockStateProvider.simple(RiderBlocks.HELHEIM_LOG.get()),
                 new StraightTrunkPlacer(7, 4, 3),
 
-                BlockStateProvider.simple(Rider_Blocks.HELHEIM_LEAVES.get()),
+                BlockStateProvider.simple(RiderBlocks.HELHEIM_LEAVES.get()),
                 new SpruceFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), UniformInt.of(3, 4)),
                 new TwoLayersFeatureSize(2, 0, 4))
                 .build());

@@ -1,11 +1,11 @@
 // TODO: Re-balancing for all Riders
 package com.kelco.kamenridercraft;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
-import com.kelco.kamenridercraft.block.entity.renderer.GochizoJarBlockEntityRenderer;
-import com.kelco.kamenridercraft.block.entity.renderer.PandoraPanelBlockEntityRenderer;
-import com.kelco.kamenridercraft.block.entity.renderer.PlinthBlockEntityRenderer;
+import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
+import com.kelco.kamenridercraft.client.renderer.GochizoJarBlockEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.PandoraPanelBlockEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.PlinthBlockEntityRenderer;
 import com.kelco.kamenridercraft.client.KamenRiderCraftClient;
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.gui.driver.*;
@@ -51,7 +51,7 @@ import com.kelco.kamenridercraft.sounds.ModMusic;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
-import com.kelco.kamenridercraft.world.data_attachments.AttachmentTypes;
+import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
@@ -170,7 +170,7 @@ public class KamenRiderCraftCore {
         CreativeTabRegistry.register(modEventBus);
 
         MusicDiscItems.register(modEventBus);
-        Rider_Blocks.register(modEventBus);
+        RiderBlocks.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
@@ -805,11 +805,11 @@ public class KamenRiderCraftCore {
                         .title(Component.translatable("tab.kamenridercraft.misc_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderblockTab = CREATIVE_MODE_TABS.register("krc_998_blocks_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.MONITOR.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(RiderBlocks.MONITOR.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.rider_blocks")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderdecorTab = CREATIVE_MODE_TABS.register("krc_999_blocks_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.PLANKS_LIGHT_BLUE.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(RiderBlocks.PLANKS_LIGHT_BLUE.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.rider_blocks_decor")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> IchigoTab = CREATIVE_MODE_TABS.register("krc_010_ichigo_tab", () ->
@@ -1072,10 +1072,10 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC);
                 event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
                 event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
-                event.accept(Rider_Blocks.ICHIGO_CHAIR);
-                event.accept(Rider_Blocks.RED_ICHIGO_CHAIR);
-                event.accept(Rider_Blocks.SHOCKER_LOGO);
-                event.accept(Rider_Blocks.SHOCKER_MONITOR);
+                event.accept(RiderBlocks.ICHIGO_CHAIR);
+                event.accept(RiderBlocks.RED_ICHIGO_CHAIR);
+                event.accept(RiderBlocks.SHOCKER_LOGO);
+                event.accept(RiderBlocks.SHOCKER_MONITOR);
 
             } else if (event.getTab() == CreativeTabRegistry.TheIchigoTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.THE_TAB_ITEM.size(); i++) {
@@ -1160,7 +1160,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.ACROBATTER_SPAWN_EGG);
                 event.accept(MobsCore.RIDORON_SPAWN_EGG);
                 event.accept(MobsCore.CHAP_GREY_SPAWN_EGG);
-                event.accept(Rider_Blocks.FERBUS);
+                event.accept(RiderBlocks.FERBUS);
 
             } else if (event.getTab() == CreativeTabRegistry.SHINTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.SHIN_TAB_ITEM.size(); i++) {
@@ -1189,10 +1189,10 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.KAMEN_RIDER_KUUGA_MUSIC_DISC);
                 event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
                 event.accept(MobsCore.N_DAGUVA_ZEBA_SPAWN_EGG);
-                event.accept(Rider_Blocks.N_DAGUVA_ZEBA_BOSS_BLOCK);
-                event.accept(Rider_Blocks.KUUGA_TOMB);
-                event.accept(Rider_Blocks.KUUGA_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_KUUGA_ORE);
+                event.accept(RiderBlocks.N_DAGUVA_ZEBA_BOSS_BLOCK);
+                event.accept(RiderBlocks.KUUGA_TOMB);
+                event.accept(RiderBlocks.KUUGA_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_KUUGA_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.AgitoTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.AGITO_TAB_ITEM.size(); i++) {
@@ -1206,7 +1206,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
                 event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
                 event.accept(MobsCore.ANOTHER_AGITO_SPAWN_EGG);
-                event.accept(Rider_Blocks.G_SYSTEM_CHIP_PROGRAMMER);
+                event.accept(RiderBlocks.G_SYSTEM_CHIP_PROGRAMMER);
 
             } else if (event.getTab() == CreativeTabRegistry.RyukiTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.RYUKI_TAB_ITEM.size(); i++) {
@@ -1220,9 +1220,9 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.ALIVE_A_LIFE_MUSIC_DISC);
                 event.accept(MobsCore.MIRROR_RIDER_SPAWN_EGG);
                 event.accept(MobsCore.ODIN_SPAWN_EGG);
-                event.accept(Rider_Blocks.ODIN_BOSS_BLOCK);
-                event.accept(Rider_Blocks.GLASS_RYUKI);
-                event.accept(Rider_Blocks.DEEPSLATE_GLASS_RYUKI);
+                event.accept(RiderBlocks.ODIN_BOSS_BLOCK);
+                event.accept(RiderBlocks.GLASS_RYUKI);
+                event.accept(RiderBlocks.DEEPSLATE_GLASS_RYUKI);
 
             } else if (event.getTab() == CreativeTabRegistry.FaizTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.FAIZ_TAB_ITEM.size(); i++) {
@@ -1238,7 +1238,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.ORGA_SPAWN_EGG);
                 event.accept(MobsCore.MUEZ_SPAWN_EGG);
                 event.accept(MobsCore.FAIZ_SPAWN_EGG);
-                event.accept(Rider_Blocks.FAIZ_BOSS_BLOCK);
+                event.accept(RiderBlocks.FAIZ_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.BladeTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.BLADE_TAB_ITEM.size(); i++) {
@@ -1254,8 +1254,8 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
                 event.accept(MusicDiscItems.ELEMENTS_MUSIC_DISC);
                 event.accept(MusicDiscItems.REBIRTH_MUSIC_DISC);
-                event.accept(Rider_Blocks.BLADE_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_BLADE_ORE);
+                event.accept(RiderBlocks.BLADE_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_BLADE_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.HibikiTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.HIBIKI_TAB_ITEM.size(); i++) {
@@ -1269,8 +1269,8 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.MIDAREDOUJI_SPAWN_EGG);
                 event.accept(MobsCore.MAKAMOU_NINJA_GROUP_SPAWN_EGG);
                 event.accept(MobsCore.KABUKI_SPAWN_EGG);
-                event.accept(Rider_Blocks.HIBIKI_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_HIBIKI_ORE);
+                event.accept(RiderBlocks.HIBIKI_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_HIBIKI_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.KabutoTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.KABUTO_TAB_ITEM.size(); i++) {
@@ -1301,8 +1301,8 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.URATAROS_SPAWN_EGG);
                 event.accept(MobsCore.KINTAROS_SPAWN_EGG);
                 event.accept(MobsCore.RYUTAROS_SPAWN_EGG);
-                event.accept(Rider_Blocks.GAOH_BOSS_BLOCK);
-                event.accept(Rider_Blocks.ANOTHER_DEN_O_BOSS_BLOCK);
+                event.accept(RiderBlocks.GAOH_BOSS_BLOCK);
+                event.accept(RiderBlocks.ANOTHER_DEN_O_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.KivaTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.KIVA_TAB_ITEM.size(); i++) {
@@ -1311,11 +1311,11 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.BREAK_THE_CHAIN_MUSIC_DISC);
                 event.accept(MobsCore.ARC_SPAWN_EGG);
                 event.accept(MobsCore.MOOSE_FANGIRE_SPAWN_EGG);
-                event.accept(Rider_Blocks.ARC_BOSS_BLOCK);
-                event.accept(Rider_Blocks.KIVA_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_KIVA_ORE);
-                event.accept(Rider_Blocks.FANGIRE_GLASS);
-                event.accept(Rider_Blocks.IXA_MACHINE_BLOCK);
+                event.accept(RiderBlocks.ARC_BOSS_BLOCK);
+                event.accept(RiderBlocks.KIVA_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_KIVA_ORE);
+                event.accept(RiderBlocks.FANGIRE_GLASS);
+                event.accept(RiderBlocks.IXA_MACHINE_BLOCK);
 
 
             } else if (event.getTab() == CreativeTabRegistry.DecadeTab.get()) {
@@ -1324,7 +1324,7 @@ public class KamenRiderCraftCore {
                 }
                 event.accept(MusicDiscItems.JOURNEY_THROUGH_THE_DECADE_MUSIC_DISC);
                 event.accept(MobsCore.DECADE_VIOLENT_SPAWN_EGG);
-                event.accept(Rider_Blocks.DECADE_VIOLENT_BLOCK);
+                event.accept(RiderBlocks.DECADE_VIOLENT_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.WTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.W_TAB_ITEM.size(); i++) {
@@ -1344,12 +1344,12 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.FOUNDATION_X_MASQUERADE_SPAWN_EGG);
                 event.accept(MobsCore.COMMANDER_DOPANT_SPAWN_EGG);
                 event.accept(MobsCore.ETERNAL_SPAWN_EGG);
-                event.accept(Rider_Blocks.TABOO_BOSS_BLOCK);
-                event.accept(Rider_Blocks.TERROR_BOSS_BLOCK);
-                event.accept(Rider_Blocks.PURE_GAIA_MEMORY_BLOCK);
-                event.accept(Rider_Blocks.GAIA_MEMORY_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_GAIA_MEMORY_ORE);
-                event.accept(Rider_Blocks.GAIA_MEMORY_REFINER);
+                event.accept(RiderBlocks.TABOO_BOSS_BLOCK);
+                event.accept(RiderBlocks.TERROR_BOSS_BLOCK);
+                event.accept(RiderBlocks.PURE_GAIA_MEMORY_BLOCK);
+                event.accept(RiderBlocks.GAIA_MEMORY_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_GAIA_MEMORY_ORE);
+                event.accept(RiderBlocks.GAIA_MEMORY_REFINER);
 
             } else if (event.getTab() == CreativeTabRegistry.OOOTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.OOO_TAB_ITEM.size(); i++) {
@@ -1378,13 +1378,13 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.POWERED_UP_CORE_SPAWN_EGG);
                 event.accept(MobsCore.ANCIENT_OOO_SPAWN_EGG);
                 event.accept(MobsCore.GODA_SPAWN_EGG);
-                event.accept(Rider_Blocks.POSEIDON_BOSS_BLOCK);
-                event.accept(Rider_Blocks.CORE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.POWERED_UP_CORE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.ANCIENT_OOO_BOSS_BLOCK);
-                event.accept(Rider_Blocks.GODA_BOSS_BLOCK);
-                event.accept(Rider_Blocks.CELL_ALLOY_BLOCK);
-                event.accept(Rider_Blocks.CELL_MEDAL_PROGRAMMER);
+                event.accept(RiderBlocks.POSEIDON_BOSS_BLOCK);
+                event.accept(RiderBlocks.CORE_BOSS_BLOCK);
+                event.accept(RiderBlocks.POWERED_UP_CORE_BOSS_BLOCK);
+                event.accept(RiderBlocks.ANCIENT_OOO_BOSS_BLOCK);
+                event.accept(RiderBlocks.GODA_BOSS_BLOCK);
+                event.accept(RiderBlocks.CELL_ALLOY_BLOCK);
+                event.accept(RiderBlocks.CELL_MEDAL_PROGRAMMER);
 
             } else if (event.getTab() == CreativeTabRegistry.FOURZETab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.FOURZE_TAB_ITEM.size(); i++) {
@@ -1393,11 +1393,11 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.SWITCH_ON_MUSIC_DISC);
                 event.accept(MobsCore.MACEHINE_MASSIGLER_SPAWN_EGG);
                 event.accept(MobsCore.SUPER_GINGAOH_SPAWN_EGG);
-                event.accept(Rider_Blocks.SUPER_GINGAOH_BOSS_BLOCK);
-                event.accept(Rider_Blocks.HAYABUSA_KUN);
-                event.accept(Rider_Blocks.ARTIFICIAL_GRAVITY_BLOCK);
-                event.accept(Rider_Blocks.GINGA_METEOR);
-                event.accept(Rider_Blocks.ASTROSWITCH_PROGRAMMER);
+                event.accept(RiderBlocks.SUPER_GINGAOH_BOSS_BLOCK);
+                event.accept(RiderBlocks.HAYABUSA_KUN);
+                event.accept(RiderBlocks.ARTIFICIAL_GRAVITY_BLOCK);
+                event.accept(RiderBlocks.GINGA_METEOR);
+                event.accept(RiderBlocks.ASTROSWITCH_PROGRAMMER);
 
             } else if (event.getTab() == CreativeTabRegistry.WIZARDTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.WIZARD_TAB_ITEM.size(); i++) {
@@ -1415,9 +1415,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.MAGE_CAPTAIN_SPAWN_EGG);
                 event.accept(MobsCore.SORCERER_SPAWN_EGG);
                 event.accept(MobsCore.WISEMAN_SPAWN_EGG);
-                event.accept(Rider_Blocks.WISEMAN_BOSS_BLOCK);
-                event.accept(Rider_Blocks.WIZARD_GEM_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_WIZARD_GEM_ORE);
+                event.accept(RiderBlocks.WISEMAN_BOSS_BLOCK);
+                event.accept(RiderBlocks.WIZARD_GEM_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_WIZARD_GEM_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.GAIMTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.GAIM_TAB_ITEM.size(); i++) {
@@ -1437,12 +1437,12 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.DEMUSHU_SPAWN_EGG);
                 event.accept(MobsCore.LORD_BARON_SPAWN_EGG);
                 event.accept(MobsCore.MEGAHEX_SPAWN_EGG);
-                event.accept(Rider_Blocks.ROSYUO_BOSS_BLOCK);
-                event.accept(Rider_Blocks.REDYUE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.DEMUSHU_BOSS_BLOCK);
-                event.accept(Rider_Blocks.LORD_BARON_BOSS_BLOCK);
-                event.accept(Rider_Blocks.MEGAHEX_BOSS_BLOCK);
-                event.accept(Rider_Blocks.HELHEIM_CRACK);
+                event.accept(RiderBlocks.ROSYUO_BOSS_BLOCK);
+                event.accept(RiderBlocks.REDYUE_BOSS_BLOCK);
+                event.accept(RiderBlocks.DEMUSHU_BOSS_BLOCK);
+                event.accept(RiderBlocks.LORD_BARON_BOSS_BLOCK);
+                event.accept(RiderBlocks.MEGAHEX_BOSS_BLOCK);
+                event.accept(RiderBlocks.HELHEIM_CRACK);
 
             } else if (event.getTab() == CreativeTabRegistry.DRIVETab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.DRIVE_TAB_ITEM.size(); i++) {
@@ -1457,9 +1457,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.MEDIC_ROIDMUDE_SPAWN_EGG);
                 event.accept(MobsCore.GORD_DRIVE_SPAWN_EGG);
                 event.accept(MobsCore.DARK_DRIVE_SPAWN_EGG);
-                event.accept(Rider_Blocks.GORD_DRIVE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.MEGAHEX_BOSS_BLOCK);
-                event.accept(Rider_Blocks.SHIFT_CHASSIS_ASSEMBLER);
+                event.accept(RiderBlocks.GORD_DRIVE_BOSS_BLOCK);
+                event.accept(RiderBlocks.MEGAHEX_BOSS_BLOCK);
+                event.accept(RiderBlocks.SHIFT_CHASSIS_ASSEMBLER);
 
             } else if (event.getTab() == CreativeTabRegistry.GHOSTTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.GHOST_TAB_ITEM.size(); i++) {
@@ -1472,9 +1472,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.IGOR_SPAWN_EGG);
                 event.accept(MobsCore.DARK_NECROM_SPAWN_EGG);
                 event.accept(MobsCore.DARK_GHOST_SPAWN_EGG);
-                event.accept(Rider_Blocks.GHOST_ORE);
-                event.accept(Rider_Blocks.DEEPSLATE_GHOST_ORE);
-                event.accept(Rider_Blocks.MONOLITH);
+                event.accept(RiderBlocks.GHOST_ORE);
+                event.accept(RiderBlocks.DEEPSLATE_GHOST_ORE);
+                event.accept(RiderBlocks.MONOLITH);
 
             } else if (event.getTab() == CreativeTabRegistry.EX_AIDTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.EX_AID_TAB_ITEM.size(); i++) {
@@ -1492,13 +1492,13 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.POPPY_RED_SPAWN_EGG);
                 event.accept(MobsCore.PARADX_SPAWN_EGG);
                 event.accept(MobsCore.CRONUS_SPAWN_EGG);
-                event.accept(Rider_Blocks.CRONUS_BOSS_BLOCK);
-                event.accept(Rider_Blocks.MIGHTY_BLOCK);
-                event.accept(Rider_Blocks.BANG_BANG_DRUM);
-                event.accept(Rider_Blocks.BAKUSOU_TROPHY);
-                event.accept(Rider_Blocks.GENM_CONTINUE);
-                event.accept(Rider_Blocks.GAME_CREATOR);
-                event.accept(Rider_Blocks.GANBERIZING_MACHINE);
+                event.accept(RiderBlocks.CRONUS_BOSS_BLOCK);
+                event.accept(RiderBlocks.MIGHTY_BLOCK);
+                event.accept(RiderBlocks.BANG_BANG_DRUM);
+                event.accept(RiderBlocks.BAKUSOU_TROPHY);
+                event.accept(RiderBlocks.GENM_CONTINUE);
+                event.accept(RiderBlocks.GAME_CREATOR);
+                event.accept(RiderBlocks.GANBERIZING_MACHINE);
 
             } else if (event.getTab() == CreativeTabRegistry.BUILDTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.BUILD_TAB_ITEM.size(); i++) {
@@ -1525,16 +1525,16 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.KAISER_SPAWN_EGG);
                 event.accept(MobsCore.KAISER_REVERSE_SPAWN_EGG);
                 event.accept(MobsCore.BIKAISER_SPAWN_EGG);
-                event.accept(Rider_Blocks.NIGHT_ROGUE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.HOKUTO_TRIO_BOSS_BLOCK);
-                event.accept(Rider_Blocks.HELL_BROS_BOSS_BLOCK);
-                event.accept(Rider_Blocks.MAD_ROGUE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.EVOL_BOSS_BLOCK);
-                event.accept(Rider_Blocks.BIKAISER_BOSS_BLOCK);
-                event.accept(Rider_Blocks.UTAN);
-                event.accept(Rider_Blocks.PANDORA_BOX);
-                event.accept(Rider_Blocks.FULLBOTTLE_PURIFIER);
-                event.accept(Rider_Blocks.FULLBOTTLE_SOLIDIFIER);
+                event.accept(RiderBlocks.NIGHT_ROGUE_BOSS_BLOCK);
+                event.accept(RiderBlocks.HOKUTO_TRIO_BOSS_BLOCK);
+                event.accept(RiderBlocks.HELL_BROS_BOSS_BLOCK);
+                event.accept(RiderBlocks.MAD_ROGUE_BOSS_BLOCK);
+                event.accept(RiderBlocks.EVOL_BOSS_BLOCK);
+                event.accept(RiderBlocks.BIKAISER_BOSS_BLOCK);
+                event.accept(RiderBlocks.UTAN);
+                event.accept(RiderBlocks.PANDORA_BOX);
+                event.accept(RiderBlocks.FULLBOTTLE_PURIFIER);
+                event.accept(RiderBlocks.FULLBOTTLE_SOLIDIFIER);
 
             } else if (event.getTab() == CreativeTabRegistry.ZI_OTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.ZI_O_TAB_ITEM.size(); i++) {
@@ -1553,11 +1553,11 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.BARLCKXS_SPAWN_EGG);
                 event.accept(MobsCore.ZONJIS_SPAWN_EGG);
                 event.accept(MobsCore.ZAMONAS_SPAWN_EGG);
-                event.accept(Rider_Blocks.WOZ_BOSS_BLOCK);
-                event.accept(Rider_Blocks.ANOTHER_DEN_O_BOSS_BLOCK);
-                event.accept(Rider_Blocks.YAMININ_BOSS_BLOCK);
-                event.accept(Rider_Blocks.GINGA_BOSS_BLOCK);
-                event.accept(Rider_Blocks.QUARTZER_BOSS_BLOCK);
+                event.accept(RiderBlocks.WOZ_BOSS_BLOCK);
+                event.accept(RiderBlocks.ANOTHER_DEN_O_BOSS_BLOCK);
+                event.accept(RiderBlocks.YAMININ_BOSS_BLOCK);
+                event.accept(RiderBlocks.GINGA_BOSS_BLOCK);
+                event.accept(RiderBlocks.QUARTZER_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.Zero_OneTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.ZERO_ONE_TAB_ITEM.size(); i++) {
@@ -1584,13 +1584,13 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.DIRE_WOLF_SOLD_MAGIA_SPAWN_EGG);
                 event.accept(MobsCore.SERVAL_TIGER_SOLD_MAGIA_SPAWN_EGG);
                 event.accept(MobsCore.ZEIN_SPAWN_EGG);
-                event.accept(Rider_Blocks.HOROBI_BOSS_BLOCK);
-                event.accept(Rider_Blocks.IKAZUCHI_BOSS_BLOCK);
-                event.accept(Rider_Blocks.ARK_ONE_BOSS_BLOCK);
-                event.accept(Rider_Blocks.ZEIN_BOSS_BLOCK);
-                event.accept(Rider_Blocks.HIDEN_METAL_BLOCK);
-                event.accept(Rider_Blocks.HIDEN_3D_PRINTER);
-                event.accept(Rider_Blocks.ZAIA_3D_PRINTER);
+                event.accept(RiderBlocks.HOROBI_BOSS_BLOCK);
+                event.accept(RiderBlocks.IKAZUCHI_BOSS_BLOCK);
+                event.accept(RiderBlocks.ARK_ONE_BOSS_BLOCK);
+                event.accept(RiderBlocks.ZEIN_BOSS_BLOCK);
+                event.accept(RiderBlocks.HIDEN_METAL_BLOCK);
+                event.accept(RiderBlocks.HIDEN_3D_PRINTER);
+                event.accept(RiderBlocks.ZAIA_3D_PRINTER);
 
             } else if (event.getTab() == CreativeTabRegistry.SABERTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.SABER_TAB_ITEM.size(); i++) {
@@ -1613,11 +1613,11 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.DESAST_SPAWN_EGG);
                 event.accept(MobsCore.CHARYBDIS_SPAWN_EGG);
                 event.accept(MobsCore.CHARYBDIS_HERCULES_SPAWN_EGG);
-                event.accept(Rider_Blocks.SABELA_BOSS_BLOCK);
-                event.accept(Rider_Blocks.DURENDAL_BOSS_BLOCK);
-                event.accept(Rider_Blocks.SOLOMON_BOSS_BLOCK);
-                event.accept(Rider_Blocks.STORIOUS_BOSS_BLOCK);
-                event.accept(Rider_Blocks.SWORD_OF_LOGOS_BOOK_ANALYZER);
+                event.accept(RiderBlocks.SABELA_BOSS_BLOCK);
+                event.accept(RiderBlocks.DURENDAL_BOSS_BLOCK);
+                event.accept(RiderBlocks.SOLOMON_BOSS_BLOCK);
+                event.accept(RiderBlocks.STORIOUS_BOSS_BLOCK);
+                event.accept(RiderBlocks.SWORD_OF_LOGOS_BOOK_ANALYZER);
 
             } else if (event.getTab() == CreativeTabRegistry.ReviceTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.REVICE_TAB_ITEM.size(); i++) {
@@ -1633,9 +1633,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.QUEEN_BEE_DEADMAN_SPAWN_EGG);
                 event.accept(MobsCore.WOLF_DEADMAN_SPAWN_EGG);
                 event.accept(MobsCore.VAIL_SPAWN_EGG);
-                event.accept(Rider_Blocks.VICE_DUCKY);
-                event.accept(Rider_Blocks.LOVEKOV_PLUSH);
-                event.accept(Rider_Blocks.VISTAMP_BAR);
+                event.accept(RiderBlocks.VICE_DUCKY);
+                event.accept(RiderBlocks.LOVEKOV_PLUSH);
+                event.accept(RiderBlocks.VISTAMP_BAR);
 
             } else if (event.getTab() == CreativeTabRegistry.GeatsTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.GEATS_TAB_ITEM.size(); i++) {
@@ -1656,7 +1656,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.END_RIDER_SPAWN_EGG);
                 event.accept(MobsCore.PREMIUM_BEROBA_SPAWN_EGG);
                 event.accept(MobsCore.PREMIUM_KEKERA_SPAWN_EGG);
-                event.accept(Rider_Blocks.PUNKJACKOLANTERN);
+                event.accept(RiderBlocks.PUNKJACKOLANTERN);
 
             } else if (event.getTab() == CreativeTabRegistry.GotchardTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.GOTCHARD_TAB_ITEM.size(); i++) {
@@ -1671,7 +1671,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.GERMAIN_SPAWN_EGG);
                 event.accept(MobsCore.GAELIJAH_SPAWN_EGG);
                 event.accept(MobsCore.ELD_SPAWN_EGG);
-                event.accept(Rider_Blocks.ELD_BOSS_BLOCK);
+                event.accept(RiderBlocks.ELD_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.GavvTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.GAVV_TAB_ITEM.size(); i++) {
@@ -1702,12 +1702,12 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.LANGO_STOMACH_SPAWN_EGG);
                 event.accept(MobsCore.BOCCA_JALDAK_SPAWN_EGG);
                 event.accept(MobsCore.CARIES_SPAWN_EGG);
-                event.accept(Rider_Blocks.BOCCA_BOSS_BLOCK);
-                event.accept(Rider_Blocks.CARIES_BOSS_BLOCK);
-                event.accept(Rider_Blocks.GOCHIZO_JAR);
-                event.accept(Rider_Blocks.DARK_TREAT_GLASS);
-                event.accept(Rider_Blocks.CANDY_SHOP);
-                event.accept(Rider_Blocks.HEATPRESS_EXTRACTOR);
+                event.accept(RiderBlocks.BOCCA_BOSS_BLOCK);
+                event.accept(RiderBlocks.CARIES_BOSS_BLOCK);
+                event.accept(RiderBlocks.GOCHIZO_JAR);
+                event.accept(RiderBlocks.DARK_TREAT_GLASS);
+                event.accept(RiderBlocks.CANDY_SHOP);
+                event.accept(RiderBlocks.HEATPRESS_EXTRACTOR);
 
             } else if (event.getTab() == CreativeTabRegistry.ZeztzTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.ZEZTZ_TAB_ITEM.size(); i++) {
@@ -1716,7 +1716,7 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
                 event.accept(MobsCore.NOX_SPAWN_EGG);
-                event.accept(Rider_Blocks.CAPSEM_DROPPER);
+                event.accept(RiderBlocks.CAPSEM_DROPPER);
 
             } else if (event.getTab() == CreativeTabRegistry.My_thTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.MY_TH_TAB_ITEM.size(); i++) {
@@ -1728,14 +1728,14 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.AMAZONS_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.AMAZONS_TAB_ITEM.get(i));
                 }
-                event.accept(Rider_Blocks.AMAZON_CELL_EXTRACTOR);
-                event.accept(Rider_Blocks.AMAZON_CELL_MUTATOR);
+                event.accept(RiderBlocks.AMAZON_CELL_EXTRACTOR);
+                event.accept(RiderBlocks.AMAZON_CELL_MUTATOR);
 
             } else if (event.getTab() == CreativeTabRegistry.BLACKSUNTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.BLACK_SUN_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.BLACK_SUN_TAB_ITEM.get(i));
                 }
-                event.accept(Rider_Blocks.AMAZON_CELL_EXTRACTOR);
+                event.accept(RiderBlocks.AMAZON_CELL_EXTRACTOR);
 
             } else if (event.getTab() == CreativeTabRegistry.GTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.G_TAB_ITEM.size(); i++) {
@@ -1756,89 +1756,89 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.RIDER_BLOCK.size(); i++) {
                     event.accept(CreativeTabRegistry.RIDER_BLOCK.get(i));
                 }
-                // event.accept(Rider_Blocks.BLUE_ROSE.get());
+                // event.accept(RiderBlocks.BLUE_ROSE.get());
 
             } else if (event.getTab() == CreativeTabRegistry.RiderdecorTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.RIDER_DECOR.size(); i++) {
                     event.accept(CreativeTabRegistry.RIDER_DECOR.get(i));
                 }
-                event.accept(Rider_Blocks.SHOCKER_LOGO);
-                event.accept(Rider_Blocks.BLUE_ROSE);
+                event.accept(RiderBlocks.SHOCKER_LOGO);
+                event.accept(RiderBlocks.BLUE_ROSE);
 
-                event.accept(Rider_Blocks.HELHEIM_PLANT);
-                event.accept(Rider_Blocks.HELHEIM_PLANT_2);
-                event.accept(Rider_Blocks.HELHEIM_PLANT_3);
-                event.accept(Rider_Blocks.HELHEIM_PLANT_4);
-                event.accept(Rider_Blocks.HELHEIM_STAIRS);
-                event.accept(Rider_Blocks.HELHEIM_SLAB);
-                event.accept(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
-                event.accept(Rider_Blocks.HELHEIM_BUTTON);
-                event.accept(Rider_Blocks.HELHEIM_FENCE);
-                event.accept(Rider_Blocks.HELHEIM_FENCE_GATE);
-                event.accept(Rider_Blocks.HELHEIM_DOOR);
-                event.accept(Rider_Blocks.HELHEIM_TRAPDOOR);
+                event.accept(RiderBlocks.HELHEIM_PLANT);
+                event.accept(RiderBlocks.HELHEIM_PLANT_2);
+                event.accept(RiderBlocks.HELHEIM_PLANT_3);
+                event.accept(RiderBlocks.HELHEIM_PLANT_4);
+                event.accept(RiderBlocks.HELHEIM_STAIRS);
+                event.accept(RiderBlocks.HELHEIM_SLAB);
+                event.accept(RiderBlocks.HELHEIM_PRESSURE_PLATE);
+                event.accept(RiderBlocks.HELHEIM_BUTTON);
+                event.accept(RiderBlocks.HELHEIM_FENCE);
+                event.accept(RiderBlocks.HELHEIM_FENCE_GATE);
+                event.accept(RiderBlocks.HELHEIM_DOOR);
+                event.accept(RiderBlocks.HELHEIM_TRAPDOOR);
                 event.accept(ModdedItemCore.HELHEIM_SIGN_ITEM);
                 event.accept(ModdedItemCore.HELHEIM_HANGING_SIGN_ITEM);
-                event.accept(Rider_Blocks.HELHEIM_SAPLING);
-                event.accept(Rider_Blocks.HELHEIM_LEAVES);
-                event.accept(Rider_Blocks.HELHEIM_VINE);
+                event.accept(RiderBlocks.HELHEIM_SAPLING);
+                event.accept(RiderBlocks.HELHEIM_LEAVES);
+                event.accept(RiderBlocks.HELHEIM_VINE);
 
-                event.accept(Rider_Blocks.WONDERWOOD_DOOR);
+                event.accept(RiderBlocks.WONDERWOOD_DOOR);
 
-                event.accept(Rider_Blocks.WHITE_FENCE);
+                event.accept(RiderBlocks.WHITE_FENCE);
 
-                event.accept(Rider_Blocks.STEEL_LADDER);
-                event.accept(Rider_Blocks.RABBIT_HUTCH_LADDER);
+                event.accept(RiderBlocks.STEEL_LADDER);
+                event.accept(RiderBlocks.RABBIT_HUTCH_LADDER);
 
-                event.accept(Rider_Blocks.JAIL_DOOR);
-                event.accept(Rider_Blocks.GOLD_DOOR);
-                event.accept(Rider_Blocks.RABBIT_HUTCH_DOOR);
+                event.accept(RiderBlocks.JAIL_DOOR);
+                event.accept(RiderBlocks.GOLD_DOOR);
+                event.accept(RiderBlocks.RABBIT_HUTCH_DOOR);
 
-                event.accept(Rider_Blocks.WINDOW_PLANKS);
-                event.accept(Rider_Blocks.CASTLE_DORAN_LOGO);
-                event.accept(Rider_Blocks.DRIVE_PIT_LOGO);
-                event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
+                event.accept(RiderBlocks.WINDOW_PLANKS);
+                event.accept(RiderBlocks.CASTLE_DORAN_LOGO);
+                event.accept(RiderBlocks.DRIVE_PIT_LOGO);
+                event.accept(RiderBlocks.DRIVE_PIT_LADDER);
 
-                event.accept(Rider_Blocks.WHITEBOARD);
+                event.accept(RiderBlocks.WHITEBOARD);
 
-                event.accept(Rider_Blocks.GRANUTE_GLASS_PANE);
+                event.accept(RiderBlocks.GRANUTE_GLASS_PANE);
 
-                event.accept(Rider_Blocks.GHOST_LINER_WHEEL);
-                event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.WALLPLATE_GRATE);
-                event.accept(Rider_Blocks.WHITE_WALLPLATE_WALL);
-                event.accept(Rider_Blocks.GREY_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.GREY_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.BLACK_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.BLACK_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.RED_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.RED_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.YELLOW_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS);
-                event.accept(Rider_Blocks.YELLOW_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.YELLOW_WALLPLATE_WALL);
-                event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB);
-                event.accept(Rider_Blocks.GREEN_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.GREEN_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.CYAN_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.CYAN_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.CYAN_WALLPLATE_WALL);
-                event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL);
-                event.accept(Rider_Blocks.BLUE_WALLPLATE_STAIRS);
-                event.accept(Rider_Blocks.BLUE_WALLPLATE_SLAB);
-                event.accept(Rider_Blocks.BLUE_WALLPLATE_WALL);
+                event.accept(RiderBlocks.GHOST_LINER_WHEEL);
+                event.accept(RiderBlocks.WHITE_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.WHITE_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.WALLPLATE_GRATE);
+                event.accept(RiderBlocks.WHITE_WALLPLATE_WALL);
+                event.accept(RiderBlocks.GREY_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.GREY_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.WALLPLATE_SLAB);
+                event.accept(RiderBlocks.BLACK_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.BLACK_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.RED_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.RED_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.YELLOW_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.YELLOW_WALLPLATE_GRATE_STAIRS);
+                event.accept(RiderBlocks.YELLOW_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.YELLOW_WALLPLATE_WALL);
+                event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB);
+                event.accept(RiderBlocks.GREEN_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.GREEN_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.CYAN_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.CYAN_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.CYAN_WALLPLATE_WALL);
+                event.accept(RiderBlocks.LIGHT_BLUE_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.LIGHT_BLUE_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.LIGHT_BLUE_WALLPLATE_WALL);
+                event.accept(RiderBlocks.BLUE_WALLPLATE_STAIRS);
+                event.accept(RiderBlocks.BLUE_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.BLUE_WALLPLATE_WALL);
 
 
-                event.accept(Rider_Blocks.GLASS_DOOR);
-                event.accept(Rider_Blocks.PLINTH);
-                event.accept(Rider_Blocks.GOCHIZO_JAR);
+                event.accept(RiderBlocks.GLASS_DOOR);
+                event.accept(RiderBlocks.PLINTH);
+                event.accept(RiderBlocks.GOCHIZO_JAR);
 
 
             } else if (event.getTab() == CreativeTabRegistry.RiderEggTab.get()) {

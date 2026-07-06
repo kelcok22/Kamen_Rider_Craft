@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -52,7 +52,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
                                 int posZ = (this.blockPosition().getZ() - 10) + generator.nextInt(20);
                                 BlockPos pos1 = new BlockPos(posX, posY, posZ);
                                 if (this.level().isEmptyBlock(pos1))
-                                    this.level().setBlockAndUpdate(pos1, Rider_Blocks.MIGHTY_BLOCK.get().defaultBlockState());
+                                    this.level().setBlockAndUpdate(pos1, RiderBlocks.MIGHTY_BLOCK.get().defaultBlockState());
                             }
 
                             if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {

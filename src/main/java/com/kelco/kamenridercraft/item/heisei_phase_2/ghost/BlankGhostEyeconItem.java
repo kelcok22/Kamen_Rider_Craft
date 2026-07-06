@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ghost;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import net.minecraft.core.registries.Registries;
@@ -88,7 +88,7 @@ public class BlankGhostEyeconItem extends BaseItem {
 
     public @NotNull InteractionResult useOn(UseOnContext context) {
         Player player = context.getPlayer();
-        if (context.getLevel().getBlockState(context.getClickedPos()) != Rider_Blocks.MONOLITH.get().defaultBlockState()) {
+        if (context.getLevel().getBlockState(context.getClickedPos()) != RiderBlocks.MONOLITH.get().defaultBlockState()) {
             ItemStack itemstack = context.getItemInHand();
             if (context.getLevel() instanceof ServerLevel server) this.dropItem(server, player);
             assert player != null;
