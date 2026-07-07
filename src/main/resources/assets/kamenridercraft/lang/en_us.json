@@ -8796,9 +8796,14 @@
 "item.kamenridercraft.mugen_sword": "Mugen's Sword",
 
 "item.kamenridercraft.my_th_logo": "My-th Logo",
-"item.kamenridercraft.my_th_head": "My-th Helmet............Why did you think this was real? We haven't even seen what My-Th is meant to look like, I literally just edited Ichigo to have big front teeth and Micky mouse ears. You might be wondering why? Well as soon as any new show is revealed we always get asked WeN iN MoD? So I started doing this every year. A random 0 effort edit with a stupidly long name as a troll. Don't worry, we are going to add My-Th, we just need time. Also it is food. Oh and if you are reading this in one of my Dev logs you have to subscribe and hit like if you haven't.",
-"item.kamenridercraft.my_th_torso": "My-th Chestplate",
+"item.kamenridercraft.my_th_head": "My-th Helmet",
+"item.kamenridercraft.my_th_troso": "My-th Chestplate",
 "item.kamenridercraft.my_th_legs": "My-th Leggings",
+
+  "item.kamenridercraft.my_th_driver": "My-th Driver",
+  "kamenridercraft.name.my_th": "Rider: Kamen Rider My-th",
+
+  "item.kamenridercraft.ridegg_1": "Ridegg 1",
 
 "item.kamenridercraft.g_logo": "G Logo",
 "item.kamenridercraft.ghead": "G Helmet",

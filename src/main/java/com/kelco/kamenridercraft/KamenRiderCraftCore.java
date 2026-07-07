@@ -162,6 +162,7 @@ public class KamenRiderCraftCore {
         GotchardRiderItems.register(modEventBus);
         GavvRiderItems.register(modEventBus);
         ZeztzRiderItems.register(modEventBus);
+        MyThRiderItems.register(modEventBus);
         CrossSeriesRiderItems.register(modEventBus);
         ExtraRiderItems.register(modEventBus);
         GoriderItems.register(modEventBus);
@@ -971,7 +972,7 @@ public class KamenRiderCraftCore {
                         .title(Component.translatable("tab.kamenridercraft.zeztz_items")).build());
 
         public static DeferredHolder<CreativeModeTab, CreativeModeTab> My_thTab = CREATIVE_MODE_TABS.register("krc_480_my_th_tab", () ->
-                CreativeModeTab.builder().icon(() -> new ItemStack(ModdedItemCore.MY_TH_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                CreativeModeTab.builder().icon(() -> new ItemStack(MyThRiderItems.MY_TH_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                         .title(Component.translatable("tab.kamenridercraft.my_th_items")).build());
 
 
