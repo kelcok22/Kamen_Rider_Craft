@@ -42,7 +42,9 @@ public class WDriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName ,int num) {
+        Item formItem = getFormItem(itemstack, 1);
         if(riderName!="w") return "blank";
+        else if(formItem== WRiderItems.XTREME_MEMORY.get()||formItem== WRiderItems.XTREME_GOLD_MEMORY.get()||formItem== WRiderItems.XTREME_ACCEL_MEMORY.get())return "wdriver_belt_xtreme";
         else  return "wdriver_belt"+ getFormItem(itemstack,2).getFormName(false);
     }
 
@@ -50,8 +52,6 @@ public class WDriverItem extends RiderDriverItem {
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
 		tooltipComponents.add(Component.translatable("kamenridercraft.name."+ riderName));
-
-
 		Item formItem = getFormItem(stack, 1);
 		Item formItem2 = getFormItem(stack, 2);
 		if(formItem== WRiderItems.XTREME_MEMORY.get()||formItem== WRiderItems.XTREME_GOLD_MEMORY.get()||formItem== WRiderItems.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem + ".form"));
@@ -103,7 +103,7 @@ public class WDriverItem extends RiderDriverItem {
 	{
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue()==1;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			
+
 			return "belts/"+ getFormItem(itemstack,1).getBeltTex();
 		}
         if (getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())== ModdedItemCore.BLANK_FORM.asItem())return "blank";
@@ -121,8 +121,10 @@ public class WDriverItem extends RiderDriverItem {
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		
+
+        Item formItem = getFormItem(itemstack, 1);
 		if (slot!= EquipmentSlot.HEAD) {
+            if(formItem== WRiderItems.XTREME_MEMORY.get()||formItem== WRiderItems.XTREME_GOLD_MEMORY.get()||formItem== WRiderItems.XTREME_ACCEL_MEMORY.get())return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/w_joker_xtreme.geo.json");
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/w_joker.geo.json");
 		}else return super.getModelResource(itemstack, animatable, slot,rider);
 	}

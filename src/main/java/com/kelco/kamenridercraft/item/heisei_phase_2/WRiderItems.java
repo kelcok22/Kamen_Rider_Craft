@@ -215,7 +215,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}}
-			}.setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.hasCape().setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_cyclone_xtreme_accel","w","wdriver_belt",
@@ -330,7 +330,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
+			}.hasCape().isGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
 
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
@@ -343,7 +343,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
+			}.hasCape().addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
 
 
 	public static final DeferredItem<Item> ETERNAL_MEMORY = ITEMS.register("eternal_memory",
