@@ -1182,7 +1182,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.changeModel("damashii.geo.json").changeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon"));
+			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon"));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gamma_superior","gamma_superior_belt",
@@ -1210,7 +1210,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.changeModel("damashii.geo.json").changeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_knife_damashii","gamma_superior","gamma_superior_belt_knife_damashii",

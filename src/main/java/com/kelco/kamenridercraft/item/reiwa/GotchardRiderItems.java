@@ -2251,6 +2251,7 @@ public class GotchardRiderItems {
 					.setBaseSummon((RiderDriverItem) GhostRiderItems.GHOST_DRIVER.get())
 					.setSuperSummon((RiderDriverItem) GhostRiderItems.EYECON_DRIVER_G.get())
 					.alsoChange2ndSlot(LEGENDARY_LEGEND.get()).isGlowing().addNeedForm(LEGENDARY_LEGEND.get(),2)
+					.hasCape()
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> EX_AID_MUTEKI_RIDE_CHEMY_CARD = ITEMS.register("ex_aid_muteki_ride_chemy_card",
