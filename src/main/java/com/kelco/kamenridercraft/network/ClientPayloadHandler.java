@@ -112,7 +112,7 @@ public class ClientPayloadHandler {
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
             assert controller != null;
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(8, EasingType.EASE_IN_ELASTIC));
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(12, EasingType.EASE_IN_ELASTIC));
             controller.triggerAnimation(animation);
         } catch (Exception e) {
             e.printStackTrace();
