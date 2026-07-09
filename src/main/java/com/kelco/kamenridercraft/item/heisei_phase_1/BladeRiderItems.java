@@ -40,7 +40,7 @@ public class BladeRiderItems {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROUZE_ABSORBER = ITEMS.register("rouze_absorber",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CHANGE_BEETLE = ITEMS.register("change_beetle",

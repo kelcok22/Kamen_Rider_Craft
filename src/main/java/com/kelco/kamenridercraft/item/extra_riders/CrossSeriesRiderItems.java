@@ -16,6 +16,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.*;
+
 public class CrossSeriesRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
@@ -80,6 +82,21 @@ public class CrossSeriesRiderItems {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
                     .changeModel("tackle.geo.json").hasCape().isGlowing().setShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
 
+    public static final DeferredItem<Item> EVOLUTION_GIRAFFA_SIC = ITEMS.register("evolution_giraffa_sic",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_king_sic", "garren", "garren_buckle_king_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.FLYING, 40, 4, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 1);
+                }
+            }.isGlowing().addNeedForm(EVOLUTION_GIRAFFA.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_king_sic_wing.geo.json").addNeedItem(ABSORB_SERPENT.get()));
+
     public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -93,7 +110,7 @@ public class CrossSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(TACKLE_CORE_ARTIST.get())
+            }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(EVOLUTION_GIRAFFA_SIC.get()).addAlternative(TACKLE_CORE_ARTIST.get())
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
