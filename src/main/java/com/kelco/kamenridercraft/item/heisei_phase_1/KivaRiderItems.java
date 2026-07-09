@@ -383,6 +383,20 @@ public class KivaRiderItems {
 			}.IsBeltGlowing().isGlowing().addSwitchForm(WAKE_UP_FUESTLE_REY_WA.get()).addAlternative(WAKE_UP_FUESTLE_ARC.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 
+	public static final DeferredItem<Item> WAKE_UP_FUESTLE_KIVALA_P = ITEMS.register("kivalafuestle_p",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_p","kivala","kivala_belt_p",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GLASS_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 200, 0, 0, 0, 1);
+				}
+			}.IsBeltGlowing().isGlowing().changeModel("kivala.geo.json"));
+
+
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE_KIVALA = ITEMS.register("kivalafuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","kivala","kivala_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
@@ -394,7 +408,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			}.IsBeltGlowing().isGlowing().addSwitchForm(WAKE_UP_FUESTLE_KIVALA_P.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MOOSE_FANGIRE_CORE = ITEMS.register("moose_fangire",
