@@ -65,6 +65,7 @@ public class WRiderKicks {
         switch (user.getData(ABILITY_TICK)) {
             case 20:
                 if (user.onGround()) {
+                    user.getAttribute(Attributes.WIND).setBaseValue(30);
                     PacketDistributor.sendToAllPlayers(new AnimPayload("w.joker_extreme_kick_start", "attack", user.getStringUUID()));
                     Vec3 initialVec = user.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 1.45D, initialVec.z);

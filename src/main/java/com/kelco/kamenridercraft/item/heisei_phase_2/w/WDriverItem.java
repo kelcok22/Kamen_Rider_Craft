@@ -122,7 +122,7 @@ public class WDriverItem extends RiderDriverItem {
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-        Item formItem = getFormItem(itemstack, 1);
+        Item formItem = getFormItem(itemstack, 1,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
 		if (slot!= EquipmentSlot.HEAD) {
             if(formItem== WRiderItems.XTREME_MEMORY.get()||formItem== WRiderItems.XTREME_GOLD_MEMORY.get()||formItem== WRiderItems.XTREME_ACCEL_MEMORY.get())return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/w_joker_xtreme.geo.json");
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/w_joker.geo.json");
