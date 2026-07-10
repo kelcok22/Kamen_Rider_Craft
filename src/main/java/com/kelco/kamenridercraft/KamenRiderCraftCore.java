@@ -1672,6 +1672,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.GERMAIN_SPAWN_EGG);
                 event.accept(MobsCore.GAELIJAH_SPAWN_EGG);
                 event.accept(MobsCore.ELD_SPAWN_EGG);
+                event.accept(MobsCore.DREATROOPER_SPAWN_EGG);
+                event.accept(MobsCore.DREATROOPER_COMMANDER_SPAWN_EGG);
+                event.accept(MobsCore.DORADO_SPAWN_EGG);
                 event.accept(RiderBlocks.ELD_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.GavvTab.get()) {
@@ -2071,6 +2074,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.GERMAIN_SPAWN_EGG);
                 event.accept(MobsCore.GAELIJAH_SPAWN_EGG);
                 event.accept(MobsCore.ELD_SPAWN_EGG);
+                event.accept(MobsCore.DREATROOPER_SPAWN_EGG);
+                event.accept(MobsCore.DREATROOPER_COMMANDER_SPAWN_EGG);
+                event.accept(MobsCore.DORADO_SPAWN_EGG);
 
                 event.accept(MobsCore.AGENT_SPAWN_EGG);
                 event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);

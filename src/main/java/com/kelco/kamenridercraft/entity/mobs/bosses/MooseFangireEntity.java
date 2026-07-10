@@ -32,6 +32,6 @@ public class MooseFangireEntity extends BaseHenchmenEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.2F)
                 .add(Attributes.ATTACK_DAMAGE, 10.0D)
                 .add(Attributes.ARMOR, 0.0D)
-                .add(Attributes.MAX_HEALTH, 10.0D);
+                .add(Attributes.MAX_HEALTH, 100.0D);
     }
 }
