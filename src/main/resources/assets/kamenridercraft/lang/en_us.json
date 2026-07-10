@@ -3171,6 +3171,8 @@
 "kamenridercraft.name.lady": "Rider: Kamen Rider Lady",
 "item.kamenridercraft.chophopper_rider_belt": "ZECT Buckle",
 "kamenridercraft.name.chophopper": "Debatable Rider: ChopHopper",
+"item.kamenridercraft.giraffa_rider_belt": "Rider Belt",
+"kamenridercraft.name.giraffa": "Rider: Kamen Rider Giraffa",
 
 "item.kamenridercraft.clock_up_pad": "Clock Up Pad",
 
@@ -3206,6 +3208,7 @@
 "item.kamenridercraft.perfectdrake_zecter": "Perfect Drake Zecter",
 "item.kamenridercraft.perfectsasword_zecter": "Perfect Sasword Zecter",
 "item.kamenridercraft.lady_zecter": "Lady Zecter",
+"item.kamenridercraft.giraffa_zecter": "Giraffa Zecter",
 
 "kamenridercraft:kabuto_zecter.form": "Form: Rider Form",
 "kamenridercraft:gatack_zecter.form": "Form: Rider Form",
@@ -5390,6 +5393,8 @@
 "kamenridercraft.name.zero_ghost": "Rider: Kamen Rider Zero Ghost",
 "item.kamenridercraft.extremer_driver": "Extremer Driver",
 "kamenridercraft.name.extremer": "Rider: Kamen Rider Extremer",
+"item.kamenridercraft.great_eyezer_belt": "Great Eyezer Belt",
+"kamenridercraft.name.great_eyezer": "Kaijin: Great Eyezer",
 
 "item.kamenridercraft.ore_ghost_eyecon": "Ore Ghost Eyecon",
 "item.kamenridercraft.specter_ghost_eyecon": "Specter Ghost Eyecon",

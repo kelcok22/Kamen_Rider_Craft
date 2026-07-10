@@ -386,6 +386,21 @@ public class KabutoRiderItems {
                 }
             }.isGlowing().addSwitchForm(KETAROS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
+    public static final DeferredItem<Item> GIRAFFA_ZECTER = ITEMS.register("giraffa_zecter",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "giraffa", "giraffa_rider_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 80, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 20, 0, 0, 0, 1);
+                }
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+
     public static final DeferredItem<Item> LADY_ZECTER = ITEMS.register("lady_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "lady", "zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
@@ -506,6 +521,8 @@ public class KabutoRiderItems {
             () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "hercus", HERCUS_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> KETAROS_RIDER_BELT = ITEMS.register("ketaros_rider_belt",
             () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "ketaros", KETAROS_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+    public static final DeferredItem<Item> GIRAFFA_RIDER_BELT = ITEMS.register("giraffa_rider_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "giraffa", GIRAFFA_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> LADY_RIDER_BELT = ITEMS.register("lady_rider_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lady", LADY_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECTROOPER_BELT = ITEMS.register("zectrooper_belt",

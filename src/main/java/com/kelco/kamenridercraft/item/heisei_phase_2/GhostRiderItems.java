@@ -1343,6 +1343,29 @@ public class GhostRiderItems {
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"gamma_superior",TRANSFORM_GAMMA_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.addExtraBaseFormItems(GAMMA_SUPERIOR_DAMASHII).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).changeRepairItem(BLANK_GHOST_EYECON.get()));
 
+	public static final DeferredItem<Item> GREAT_EYEZER_EYECON = ITEMS.register("great_eyezer_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","great_eyezer","great_eyezer_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 1);
+				}
+			}.changeModel("extremer.geo.json"));
+
+	public static final DeferredItem<Item> GREAT_EYEZER_BELT = ITEMS.register("great_eyezer_belt",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"great_eyezer",GREAT_EYEZER_EYECON , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
+					.hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).changeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GAN_GUN_SABER_BLADE = ITEMS.register("gan_gun_saber_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(BLANK_GHOST_EYECON.get()));
