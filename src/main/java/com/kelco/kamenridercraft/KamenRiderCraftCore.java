@@ -1467,6 +1467,7 @@ public class KamenRiderCraftCore {
                     event.accept(CreativeTabRegistry.GHOST_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.WARERA_OMOU_YUE_NI_WARERA_ARI_MUSIC_DISC);
+                event.accept(ModdedItemCore.TAKOYAKI);
                 event.accept(MobsCore.MACHINE_HOODIE_SPAWN_EGG);
                 event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
                 event.accept(MobsCore.NECROM_SPAWN_EGG);
