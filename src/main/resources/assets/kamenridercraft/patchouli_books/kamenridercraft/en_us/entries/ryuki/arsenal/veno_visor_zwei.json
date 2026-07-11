@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:veno_visor_zwei",
 			"title": " ",
-			"text": "Obtained through the $(l:ryuki/arsenal/veno_visor_zwei_vent)Venovisorzwei Sword Vent Card$(/l)"
+			"text": "Obtained through the $(l:ryuki/arsenal/sword_vent_cards#veno_visor_zwei_vent)Venovisorzwei Sword Vent Card$(/l)"
 		}
 	]
 }
