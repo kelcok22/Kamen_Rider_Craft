@@ -304,7 +304,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.changeModel("accel.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CYCLONE_SKULL_MEMORY = ITEMS.register("skull_cyclone_memory",
