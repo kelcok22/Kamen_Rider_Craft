@@ -17,6 +17,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -153,7 +155,7 @@ public class GhostRiderItems {
 
 	public static final DeferredItem<Item> DEEP_SPECTER_DAMASHII = ITEMS.register("deep_specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"deep_damashii","specter","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
@@ -163,6 +165,23 @@ public class GhostRiderItems {
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
 			}.addNum(0).changeModel("deep_damashii.geo.json").changeSlot(2));
+
+	public static final DeferredItem<Item> DEEP_SPECTER_DAMASHII_GEKIKOU = ITEMS.register("deep_specter_damashii_gekikou",
+			() -> new RiderFormChangeItem(new Item.Properties(),"deep_damashii_gekikou","specter","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+					super.transformationEffect(itemstack, player,tick);
+					if (tick==1d) {
+						LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+						thunder.setVisualOnly(true);
+						thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+						player.level().addFreshEntity(thunder);
+						((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 30, 0, 0, 0, 1);
+					}}
+			}.addNum(0).setFormDelay(30).addNeedForm(DEEP_SPECTER_DAMASHII.get(),2).changeModel("deep_damashii_gekikou.geo.json").changeSlot(2));
 
 	public static final DeferredItem<Item> DEEP_SPECTER_GHOST_EYECON = ITEMS.register("deep_specter_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_deep","specter","ghostdriver_belt",
@@ -176,7 +195,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.alsoChange2ndSlot(DEEP_SPECTER_DAMASHII.get()).changeModel("deep_specter.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.alsoChange2ndSlot(DEEP_SPECTER_DAMASHII.get()).changeModel("deep_specter.geo.json").addShiftForm(DEEP_SPECTER_DAMASHII_GEKIKOU.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIN_SPECTER_DAMASHII = ITEMS.register("sin_specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"sin_damashii","specter","ghostdriver_belt",
