@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -276,16 +277,27 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==29d){
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
+                    if (tick==15d){
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
-				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				}}
+			}.setFormDelay(1).needBaseForm().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_BOOSTER_MEMORY = ITEMS.register("accel_booster_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_booster","accel","acceldriver_belt_b",
@@ -746,8 +758,16 @@ public class WRiderItems {
 					.addExtraBaseFormItems(JOKER_MEMORY).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> ACCELDRIVER = ITEMS.register("acceldriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"accel",ACCEL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"accel",ACCEL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()) {
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                   // getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())
+                    if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<15&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0){
+                        return "accel_yellow";
+                    }
+                    return super.getText(itemStack,equipmentSlot,rider,riderName);
+                }
+
+            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> LOSTDRIVER_JOKER = ITEMS.register("lostdriver_joker",
