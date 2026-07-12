@@ -431,7 +431,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+			}.hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 
 	public static final DeferredItem<Item> FANG_T2_MEMORY = ITEMS.register("fang_t2_memory",
