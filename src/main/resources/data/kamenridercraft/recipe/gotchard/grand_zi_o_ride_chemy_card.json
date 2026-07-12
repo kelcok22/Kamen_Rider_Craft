@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:zi_o_ride_chemy_card"
-	},
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:zi_o_ride_chemy_card"
-    }
-  ],
-  "result": {
-	"id": "kamenridercraft:grand_zi_o_ride_chemy_card"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:grand_zi_o_ride_chemy_card"
+	}
 }

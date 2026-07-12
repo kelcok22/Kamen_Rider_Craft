@@ -1,34 +1,34 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:mighty_action_x_gashat"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:mighty_action_x_gashat"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:exaid/gamer_driver_ex_aid",
-	  "kamenridercraft:exaid/gashacon_breaker",
-	  "kamenridercraft:exaid/ex_aid_logo",
-	  "kamenridercraft:decade/ex_aid_card",
-	  "kamenridercraft:ghost/ex_aid_ghost_eyecon",
-	  "kamenridercraft:zi_o/ex_aid_ridewatch",
-	  "kamenridercraft:geats/gamer_driver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:exaid/gamer_driver_ex_aid",
+			"kamenridercraft:exaid/gashacon_breaker",
+			"kamenridercraft:exaid/ex_aid_logo",
+			"kamenridercraft:decade/ex_aid_card",
+			"kamenridercraft:ghost/ex_aid_ghost_eyecon",
+			"kamenridercraft:zi_o/ex_aid_ridewatch",
+			"kamenridercraft:geats/gamer_driver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

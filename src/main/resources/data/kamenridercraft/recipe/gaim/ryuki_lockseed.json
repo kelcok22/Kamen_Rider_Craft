@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_lockseed",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:helheim_fruit"
-    }, 
-    {
-      "item": "kamenridercraft:dragreder_advent"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:ryuki_lockseed"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_lockseed",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:helheim_fruit"
+		},
+		{
+			"item": "kamenridercraft:dragreder_advent"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:ryuki_lockseed"
+	}
 }

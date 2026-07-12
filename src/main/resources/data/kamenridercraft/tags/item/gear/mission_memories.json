@@ -1,20 +1,20 @@
 {
-  "values": [
-	"kamenridercraft:faiz_mission_memory",
-	"kamenridercraft:faiz_axel_mission_memory",
-	"kamenridercraft:faiz_blaster_mission_memory",
-	"kamenridercraft:faiz_gold_blaster_mission_memory",
-	"kamenridercraft:kaixa_mission_memory",
-	"kamenridercraft:delta_mission_memory",
-	"kamenridercraft:psyga_mission_memory",
-	"kamenridercraft:orga_mission_memory",
-	"kamenridercraft:next_faiz_mission_memory",
-	"kamenridercraft:next_kaixa_mission_memory",
-	"kamenridercraft:muez_mission_memory",
-	"kamenridercraft:neo_alpa_mission_memory",
-	"kamenridercraft:pyron_mission_memory",
-	"kamenridercraft:seeda_mission_memory",
-    "kamenridercraft:faiz_mission_memory_toy",
-    "kamenridercraft:kaixa_mission_memory_toy"
-  ]
+	"values": [
+		"kamenridercraft:faiz_mission_memory",
+		"kamenridercraft:faiz_axel_mission_memory",
+		"kamenridercraft:faiz_blaster_mission_memory",
+		"kamenridercraft:faiz_gold_blaster_mission_memory",
+		"kamenridercraft:kaixa_mission_memory",
+		"kamenridercraft:delta_mission_memory",
+		"kamenridercraft:psyga_mission_memory",
+		"kamenridercraft:orga_mission_memory",
+		"kamenridercraft:next_faiz_mission_memory",
+		"kamenridercraft:next_kaixa_mission_memory",
+		"kamenridercraft:muez_mission_memory",
+		"kamenridercraft:neo_alpa_mission_memory",
+		"kamenridercraft:pyron_mission_memory",
+		"kamenridercraft:seeda_mission_memory",
+		"kamenridercraft:faiz_mission_memory_toy",
+		"kamenridercraft:kaixa_mission_memory_toy"
+	]
 }

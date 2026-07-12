@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_watch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:wizard_ridewatch"
-    }, 
-    {
-      "item": "kamenridercraft:infinity_ring"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:wizard_infinity_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_watch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:wizard_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:infinity_ring"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:wizard_infinity_ridewatch"
+	}
 }

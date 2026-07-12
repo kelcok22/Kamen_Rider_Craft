@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "brave",
-  "pattern": [
-	"XMX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "brave",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:taddle_quest_gashat"
+		}
 	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"M": {
-	  "item": "kamenridercraft:taddle_quest_gashat"
+	"result": {
+		"id": "kamenridercraft:gashacon_sword"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gashacon_sword"
-  }	
 }
 

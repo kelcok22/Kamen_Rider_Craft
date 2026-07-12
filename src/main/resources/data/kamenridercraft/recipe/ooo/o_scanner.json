@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ooo",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:cellmedal"
-	}, "C": {
-	  "tag": "c:ender_pearls"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ooo",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:cellmedal"
+		},
+		"C": {
+			"tag": "c:ender_pearls"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:o_scanner"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:o_scanner"
-  }
 }

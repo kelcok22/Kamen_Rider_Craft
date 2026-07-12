@@ -1,7 +1,7 @@
 {
-  "values": [
-    "#kamenridercraft:gear/vistamps/normal",
-    "#kamenridercraft:gear/vistamps/proto",
-    "#kamenridercraft:gear/vistamps/multi_animal"
-  ]
+	"values": [
+		"#kamenridercraft:gear/vistamps/normal",
+		"#kamenridercraft:gear/vistamps/proto",
+		"#kamenridercraft:gear/vistamps/multi_animal"
+	]
 }

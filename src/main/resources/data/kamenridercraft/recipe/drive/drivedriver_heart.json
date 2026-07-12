@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "heart",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
-	}, "C": {
-	  "item": "kamenridercraft:heartronshift"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "heart",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		},
+		"C": {
+			"item": "kamenridercraft:heartronshift"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:drivedriver_heart"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:drivedriver_heart"
-  }
 }

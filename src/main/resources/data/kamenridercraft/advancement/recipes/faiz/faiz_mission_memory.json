@@ -1,37 +1,37 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:faiz_mission_memory"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:faiz_mission_memory"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:faiz/faiz_driver",
-	  "kamenridercraft:faiz/faiz_phone",
-	  "kamenridercraft:faiz/faiz_edge",
-	  "kamenridercraft:faiz/faiz_shot",
-	  "kamenridercraft:faiz/faiz_logo",
-	  "kamenridercraft:fourze/faiz_switch",
-	  "kamenridercraft:gaim/faiz_lockseed",
-	  "kamenridercraft:ghost/faiz_ghost_eyecon",
-	  "kamenridercraft:zi_o/faiz_ridewatch",
-	  "kamenridercraft:geats/faiz_driver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:faiz/faiz_driver",
+			"kamenridercraft:faiz/faiz_phone",
+			"kamenridercraft:faiz/faiz_edge",
+			"kamenridercraft:faiz/faiz_shot",
+			"kamenridercraft:faiz/faiz_logo",
+			"kamenridercraft:fourze/faiz_switch",
+			"kamenridercraft:gaim/faiz_lockseed",
+			"kamenridercraft:ghost/faiz_ghost_eyecon",
+			"kamenridercraft:zi_o/faiz_ridewatch",
+			"kamenridercraft:geats/faiz_driver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

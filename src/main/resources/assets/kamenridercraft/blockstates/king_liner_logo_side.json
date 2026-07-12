@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/king_liner_logo_side"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/king_liner_logo_side"
+		}
+	}
+}

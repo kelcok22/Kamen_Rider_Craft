@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "riotrooper",
-  "pattern": [
-	"XCX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "riotrooper",
+	"pattern": [
+		"XCX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"item": "kamenridercraft:faiz_logo"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"C": {
-	  "item": "kamenridercraft:faiz_logo"
+	"result": {
+		"id": "kamenridercraft:axel_ray_gun"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:axel_ray_gun"
-  }	
 }

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "ridewatch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:blank_watch"
-    }, 
-    {
-      "item": "kamenridercraft:rabbit_full_bottle"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:build_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "ridewatch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_watch"
+		},
+		{
+			"item": "kamenridercraft:rabbit_full_bottle"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:build_ridewatch"
+	}
 }

@@ -1,33 +1,33 @@
 {
 	"display": {
-	  "icon": {
-		"id": "kamenridercraft:fever_slot_raise_buckle"
-	  },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.feverslot.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.feverslot.description"
-    },
-	  "frame": "task",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"id": "kamenridercraft:fever_slot_raise_buckle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.feverslot.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.feverslot.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"parent": "kamenridercraft:geats/geats",
 	"criteria": {
-	  "requirement": {
-		"trigger": "minecraft:inventory_changed",
-		"conditions": {
-		  "items": [
-			{
-			  "items": [
-				"kamenridercraft:fever_slot_raise_buckle"
-			  ]
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:fever_slot_raise_buckle"
+						]
+					}
+				]
 			}
-		  ]
 		}
-	  }
 	}
-  }
+}
   

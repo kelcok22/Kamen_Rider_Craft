@@ -4,10 +4,9 @@
 	"ingredients": [
 		{
 			"item": "kamenridercraft:alchemist_ring_purple"
-		} ,
+		},
 		{
 			"item": "kamenridercraft:madwheel_ride_chemy_card"
-
 		}
 	],
 	"result": {

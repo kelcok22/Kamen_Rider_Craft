@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g3",
-  "pattern": [
-	"RIR",
-	"RGR",
-	"RCR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:g3"
-	}, "G": {
-	  "item": "kamenridercraft:base_sword"
-	}, "C": {
-	  "item": "minecraft:shield"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g3",
+	"pattern": [
+		"RIR",
+		"RGR",
+		"RCR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:g3"
+		},
+		"G": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"item": "minecraft:shield"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:g3_shield"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:g3_shield"
-  }
 }

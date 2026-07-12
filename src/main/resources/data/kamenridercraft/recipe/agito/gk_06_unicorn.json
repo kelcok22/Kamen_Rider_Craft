@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g3_x",
-  "pattern": [
-	"RIR",
-	"RGR",
-	"RCR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:g3x"
-	}, "G": {
-	  "item": "kamenridercraft:base_sword"
-	}, "C": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g3_x",
+	"pattern": [
+		"RIR",
+		"RGR",
+		"RCR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:g3x"
+		},
+		"G": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"item": "kamenridercraft:rider_circuit"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gk_06_unicorn"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gk_06_unicorn"
-  }
 }

@@ -1,34 +1,34 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:typhoon_core"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:typhoon_core"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:ichigo/typhoon_ichigo",
-	  "kamenridercraft:ichigo/ichigo_logo",
-	  "kamenridercraft:decade/ichigo_card",
-	  "kamenridercraft:fourze/rider1_switch",
-	  "kamenridercraft:gaim/rider_ichigo_lockseed",
-	  "kamenridercraft:zi_o/ichigo_ridewatch",
-	  "kamenridercraft:geats/typhoon_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:ichigo/typhoon_ichigo",
+			"kamenridercraft:ichigo/ichigo_logo",
+			"kamenridercraft:decade/ichigo_card",
+			"kamenridercraft:fourze/rider1_switch",
+			"kamenridercraft:gaim/rider_ichigo_lockseed",
+			"kamenridercraft:zi_o/ichigo_ridewatch",
+			"kamenridercraft:geats/typhoon_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

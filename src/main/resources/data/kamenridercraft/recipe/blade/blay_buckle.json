@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "blade",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:bladecard"
-	}, "C": {
-	  "item": "kamenridercraft:change_beetle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "blade",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:bladecard"
+		},
+		"C": {
+			"item": "kamenridercraft:change_beetle"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:blay_buckle"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:blay_buckle"
-  }
 }

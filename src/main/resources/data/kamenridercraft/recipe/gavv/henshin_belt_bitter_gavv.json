@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "bitter_gavv",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gochizo"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "bitter_gavv",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"M": {
+			"item": "kamenridercraft:sparkingummy_gochizo"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:sparkingummy_gochizo"
+	"result": {
+		"id": "kamenridercraft:henshin_belt_bitter_gavv"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:henshin_belt_bitter_gavv"
-  }	
 }

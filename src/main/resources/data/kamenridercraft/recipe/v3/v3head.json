@@ -1,22 +1,21 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "kr_v3",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ichigohead"
-	}, 
-	[
-	  {
-		  "item": "kamenridercraft:double_typhoon_core"
-	  },
-	  {
-		  "item": "kamenridercraft:riderman_belt_core"
-	  }
-	]
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "kr_v3",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ichigohead"
+		},
+		[
+			{
+				"item": "kamenridercraft:double_typhoon_core"
+			},
+			{
+				"item": "kamenridercraft:riderman_belt_core"
+			}
+		]
 	],
-  "result": {
-	"id": "kamenridercraft:v3head"
-  }
+	"result": {
+		"id": "kamenridercraft:v3head"
+	}
 }

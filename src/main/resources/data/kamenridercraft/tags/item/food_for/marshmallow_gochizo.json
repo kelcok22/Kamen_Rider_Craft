@@ -1,9 +1,9 @@
 {
-  "values": [
-	  "kamenridercraft:marshmallow",
-    {
-        "id": "#c:marshmellows",
-        "required": false
-    }
-  ]
+	"values": [
+		"kamenridercraft:marshmallow",
+		{
+			"id": "#c:marshmellows",
+			"required": false
+		}
+	]
 }

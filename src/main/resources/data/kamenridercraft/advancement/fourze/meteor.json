@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:meteor_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:meteor_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.fourze.meteor.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.fourze.meteor.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.fourze.meteor.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.fourze.meteor.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:fourze/fourze",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:fourze_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:fourze_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:fourze_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:meteor_driver"
-			  ]
+	"parent": "kamenridercraft:fourze/fourze",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:fourze_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:fourze_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:fourze_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:meteor_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

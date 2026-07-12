@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_ghost",
-  "pattern": [
-	"X X",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ghost",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ghost_troso"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ghost_troso"
-  }
 }

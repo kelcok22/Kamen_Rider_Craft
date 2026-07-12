@@ -1,34 +1,34 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:flame_ring"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:flame_ring"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:wizard/wizard_logo",
-	  "kamenridercraft:wizard/wizardriver",
-	  "kamenridercraft:decade/wizard_card",
-	  "kamenridercraft:gaim/wizard_lockseed",
-	  "kamenridercraft:ghost/wizard_ghost_eyecon",
-	  "kamenridercraft:zi_o/wizard_ridewatch",
-	  "kamenridercraft:geats/wizardriver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:wizard/wizard_logo",
+			"kamenridercraft:wizard/wizardriver",
+			"kamenridercraft:decade/wizard_card",
+			"kamenridercraft:gaim/wizard_lockseed",
+			"kamenridercraft:ghost/wizard_ghost_eyecon",
+			"kamenridercraft:zi_o/wizard_ridewatch",
+			"kamenridercraft:geats/wizardriver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

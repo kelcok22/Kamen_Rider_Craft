@@ -1,16 +1,16 @@
 {
-  "variants": {
-    "axis=x": {
-      "model": "kamenridercraft:block/helheim_log",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
-      "model": "kamenridercraft:block/helheim_log"
-    },
-    "axis=z": {
-      "model": "kamenridercraft:block/helheim_log",
-      "x": 90
-    }
-  }
+	"variants": {
+		"axis=x": {
+			"model": "kamenridercraft:block/helheim_log",
+			"x": 90,
+			"y": 90
+		},
+		"axis=y": {
+			"model": "kamenridercraft:block/helheim_log"
+		},
+		"axis=z": {
+			"model": "kamenridercraft:block/helheim_log",
+			"x": 90
+		}
+	}
 }

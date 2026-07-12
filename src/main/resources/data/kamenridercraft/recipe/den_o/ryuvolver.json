@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ryutaros",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:rider_ticket_gun"
-    }, "C": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:ryuvolver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ryutaros",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_ticket_gun"
+		},
+		"C": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ryuvolver"
+	}
 }

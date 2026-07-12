@@ -2,17 +2,17 @@
 	"type": "minecraft:crafting_shapeless",
 	"group": "final_form_ride_card",
 	"ingredients": [
-	  {
-		  "item": "kamenridercraft:blank_card"
-	  }, 
-	  {
-		"item": "kamenridercraft:rex_vistamp"
-	  },
-	  {
-		"item": "kamenridercraft:giffard_rex_vistamp"
-	  }
-	  ],
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:rex_vistamp"
+		},
+		{
+			"item": "kamenridercraft:giffard_rex_vistamp"
+		}
+	],
 	"result": {
-	  "id": "kamenridercraft:ultimate_revi_card"
+		"id": "kamenridercraft:ultimate_revi_card"
 	}
-  }
+}

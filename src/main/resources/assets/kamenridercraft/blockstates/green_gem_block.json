@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/green_gem_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/green_gem_block"
+		}
+	}
+}

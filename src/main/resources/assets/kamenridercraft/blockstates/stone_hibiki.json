@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/stone_hibiki"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/stone_hibiki"
+		}
+	}
+}

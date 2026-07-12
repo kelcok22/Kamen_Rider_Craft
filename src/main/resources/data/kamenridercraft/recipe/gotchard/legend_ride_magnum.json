@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "legend",
-  "pattern": [
-    "XTX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_ride_chemy_card"
-    },
-    "T": {
-      "item": "kamenridercraft:legend_ride_chemy_card"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:legend_ride_magnum"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "legend",
+	"pattern": [
+		"XTX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ride_chemy_card"
+		},
+		"T": {
+			"item": "kamenridercraft:legend_ride_chemy_card"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:legend_ride_magnum"
+	}
 }
 

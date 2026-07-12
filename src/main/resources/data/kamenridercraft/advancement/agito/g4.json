@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:g4_belt"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:g4_belt"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.agito.g4.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.agito.g4.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.agito.g4.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.agito.g4.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:agito/g3_mild",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:agitohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:agitotroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:agitolegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:g4_belt"
-			  ]
+	"parent": "kamenridercraft:agito/g3_mild",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:agitohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:agitotroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:agitolegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:g4_belt"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

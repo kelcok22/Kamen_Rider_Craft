@@ -1,28 +1,28 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "negataros",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XCX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:rider_ticket_gun"
-    },
-    "C": {
-      "item": "kamenridercraft:rider_ticket_nega"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:nega_ryuvolver"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "negataros",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XCX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:rider_ticket_gun"
+		},
+		"C": {
+			"item": "kamenridercraft:rider_ticket_nega"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:nega_ryuvolver"
+	}
 }
 

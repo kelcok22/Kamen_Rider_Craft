@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "tassel",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    }, "C": {
-      "item": "kamenridercraft:tassel_dark_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:haken_bladriver_tassel"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "tassel",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"C": {
+			"item": "kamenridercraft:tassel_dark_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:haken_bladriver_tassel"
+	}
 }

@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fourze_shield",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:astroswitch"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:shield_switch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:shield_module"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fourze_shield",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:shield_switch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shield_module"
+	}
 }
 

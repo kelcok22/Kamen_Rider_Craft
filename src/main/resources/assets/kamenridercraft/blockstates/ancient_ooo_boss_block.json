@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/ancient_ooo_boss_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/ancient_ooo_boss_block"
+		}
+	}
+}

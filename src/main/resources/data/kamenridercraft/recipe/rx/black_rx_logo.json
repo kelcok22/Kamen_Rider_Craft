@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:rx_core"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:rx_core"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:black_rx_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:black_rx_logo"
+	}
 }

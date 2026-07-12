@@ -1,21 +1,23 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "kamen_rider",
-  "pattern": [
-	"ZXZ",
-	"XGX",
-	"ZXZ"
-  ],
-  "key": {
-	"X": {
-	  "tag": "c:dusts/redstone"
-	}, "Z": {
-	  "tag": "c:ingots/iron"
-	}, "G": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"group": "kamen_rider",
+	"pattern": [
+		"ZXZ",
+		"XGX",
+		"ZXZ"
+	],
+	"key": {
+		"X": {
+			"tag": "c:dusts/redstone"
+		},
+		"Z": {
+			"tag": "c:ingots/iron"
+		},
+		"G": {
+			"item": "kamenridercraft:rider_circuit"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:monitor"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:monitor"
-  }
 }

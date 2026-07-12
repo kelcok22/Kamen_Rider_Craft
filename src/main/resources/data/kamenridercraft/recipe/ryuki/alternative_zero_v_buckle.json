@@ -1,21 +1,21 @@
 {
 	"type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "alternative_zero",
-  "pattern": [
-	"XMX",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"category": "equipment",
+	"group": "alternative_zero",
+	"pattern": [
+		"XMX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		},
+		"M": {
+			"item": "kamenridercraft:advent_deck_alternative"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:advent_deck_alternative"
+	"result": {
+		"id": "kamenridercraft:alternative_zero_v_buckle"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:alternative_zero_v_buckle"
-  }	
 }

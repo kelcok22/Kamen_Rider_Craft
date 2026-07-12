@@ -1,37 +1,37 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:joker_memory"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:joker_memory"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:w/wdriver",
-	  "kamenridercraft:w/kirifuda_memory",
-	  "kamenridercraft:w/w_logo",
-      "kamenridercraft:w/hardboilder_spawn_egg",
-	  "kamenridercraft:decade/w_card",
-	  "kamenridercraft:fourze/double_switch",
-	  "kamenridercraft:gaim/w_lockseed",
-	  "kamenridercraft:ghost/double_ghost_eyecon",
-	  "kamenridercraft:zi_o/w_ridewatch",
-	  "kamenridercraft:geats/double_driver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:w/wdriver",
+			"kamenridercraft:w/kirifuda_memory",
+			"kamenridercraft:w/w_logo",
+			"kamenridercraft:w/hardboilder_spawn_egg",
+			"kamenridercraft:decade/w_card",
+			"kamenridercraft:fourze/double_switch",
+			"kamenridercraft:gaim/w_lockseed",
+			"kamenridercraft:ghost/double_ghost_eyecon",
+			"kamenridercraft:zi_o/w_ridewatch",
+			"kamenridercraft:geats/double_driver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

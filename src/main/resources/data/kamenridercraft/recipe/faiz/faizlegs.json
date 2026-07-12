@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "faiz",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "faiz",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:faizlegs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:faizlegs"
-  }
 }

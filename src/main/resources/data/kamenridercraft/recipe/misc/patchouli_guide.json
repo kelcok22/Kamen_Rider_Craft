@@ -1,27 +1,27 @@
 {
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
-    {
-      "item": "minecraft:paper"
-    },
-    {
-      "item": "minecraft:paper"
-    },
-    {
-      "item": "minecraft:paper"
-    },
-    {
-      "item": "minecraft:leather"
-    },
-    {
-      "item": "kamenridercraft:rider_circuit"
-    }
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "minecraft:leather"
+		},
+		{
+			"item": "kamenridercraft:rider_circuit"
+		}
 	],
 	"result": {
-	  "id": "patchouli:guide_book",
-	  "components": {
-		"patchouli:book": "kamenridercraft:kamenridercraft"
-	  }
+		"id": "patchouli:guide_book",
+		"components": {
+			"patchouli:book": "kamenridercraft:kamenridercraft"
+		}
 	}
-  }
+}
   

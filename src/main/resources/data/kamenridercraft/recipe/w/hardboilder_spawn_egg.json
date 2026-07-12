@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "w",
-  "pattern": [
-    "XXX",
-    "ABC",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:gaiamemory"
-    }, "A": {
-      "item": "kamenridercraft:cyclone_memory"
-    }, "B": {
-      "item": "kamenridercraft:base_bike"
-    }, "C": {
-      "item": "kamenridercraft:joker_memory"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:hardboilder_spawn_egg"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "w",
+	"pattern": [
+		"XXX",
+		"ABC",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:gaiamemory"
+		},
+		"A": {
+			"item": "kamenridercraft:cyclone_memory"
+		},
+		"B": {
+			"item": "kamenridercraft:base_bike"
+		},
+		"C": {
+			"item": "kamenridercraft:joker_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:hardboilder_spawn_egg"
+	}
 }

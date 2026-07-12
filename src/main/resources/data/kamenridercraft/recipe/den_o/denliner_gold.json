@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco",
-  "pattern": [
-    "RIR",
-    "IGI",
-    "RIR"
-  ],
-  "key": {
-    "R": {
-      "tag": "c:ingots/iron"
-    }, "I": {
-      "item": "kamenridercraft:imagin_sand"
-    }, "G": {
-      "tag": "c:dyes/yellow"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:denliner_gold"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco",
+	"pattern": [
+		"RIR",
+		"IGI",
+		"RIR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"G": {
+			"tag": "c:dyes/yellow"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:denliner_gold"
+	}
 }

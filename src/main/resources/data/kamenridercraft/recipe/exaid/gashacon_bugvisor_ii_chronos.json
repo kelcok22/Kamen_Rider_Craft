@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "cronus",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:kamen_rider_chronicle_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "cronus",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:kamen_rider_chronicle_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gashacon_bugvisor_ii_chronos"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gashacon_bugvisor_ii_chronos"
-  }
 }

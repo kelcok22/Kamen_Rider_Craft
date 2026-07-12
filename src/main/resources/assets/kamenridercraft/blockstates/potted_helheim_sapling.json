@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "kamenridercraft:block/potted_helheim_sapling"
-    }
-  }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/potted_helheim_sapling"
+		}
+	}
 }

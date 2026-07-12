@@ -1,52 +1,52 @@
 {
-  "display": {
-    "icon": {
-  	  "id": "kamenridercraft:unite_grip"
-    },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.laserboost.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.laserboost.description"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "parent": "kamenridercraft:geats/boost_markii",
-  "criteria": {
-    "requirement": {
-  	"trigger": "minecraft:inventory_changed",
-  	"conditions": {
-  	  "player": {
-  		"equipment": {
-  		  "head": {
-  			"items": [
-  			  "kamenridercraft:geatshead"
-  			]
-  		  },
-  		  "chest": {
-  			"items": [
-  			  "kamenridercraft:geatstroso"
-  			]
-  		  },
-  		  "legs": {
-  			"items": [
-  			  "kamenridercraft:geatslegs"
-  			]
-  		  },
-  		  "feet": {
-  			"items": [
-  			  "kamenridercraft:desire_driver_geats"
-  			],
-  		  "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:unite_grip\",slot_tex3:\"kamenridercraft:boost_mkii_raise_buckle\"}"
-              }
-  		  }
-  		}
-  	  }
-  	}
-    }
-  }
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:unite_grip"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.laserboost.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.laserboost.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:geats/boost_markii",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:desire_driver_geats"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex2:\"kamenridercraft:unite_grip\",slot_tex3:\"kamenridercraft:boost_mkii_raise_buckle\"}"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

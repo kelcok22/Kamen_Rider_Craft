@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "abaddon",
-  "pattern": [
-    "XXX",
-    "XDX",
-    "XCX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:crowding_hopper_progrisekey"
-    }, "D": {
-      "tag": "c:dyes/orange"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:slash_abaddo_riser_o"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "abaddon",
+	"pattern": [
+		"XXX",
+		"XDX",
+		"XCX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:crowding_hopper_progrisekey"
+		},
+		"D": {
+			"tag": "c:dyes/orange"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:slash_abaddo_riser_o"
+	}
 }

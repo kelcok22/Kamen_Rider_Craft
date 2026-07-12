@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "jin",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:flying_falcon_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:forceriser_jin"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "jin",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:flying_falcon_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:forceriser_jin"
+	}
 }

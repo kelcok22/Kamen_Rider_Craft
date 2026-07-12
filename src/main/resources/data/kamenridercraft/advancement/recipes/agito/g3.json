@@ -1,34 +1,34 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:g3"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:g3"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:agito/g3_belt",
-	  "kamenridercraft:agito/guard_acceller",
-	  "kamenridercraft:agito/gm_01_scorpion",
-	  "kamenridercraft:agito/gs_03_destroyer",
-	  "kamenridercraft:agito/ga_04_antares",
-	  "kamenridercraft:agito/g3_shield",
-	  "kamenridercraft:decade/g3_card"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:agito/g3_belt",
+			"kamenridercraft:agito/guard_acceller",
+			"kamenridercraft:agito/gm_01_scorpion",
+			"kamenridercraft:agito/gs_03_destroyer",
+			"kamenridercraft:agito/ga_04_antares",
+			"kamenridercraft:agito/g3_shield",
+			"kamenridercraft:decade/g3_card"
+		]
+	},
+	"sends_telemetry_event": false
 }

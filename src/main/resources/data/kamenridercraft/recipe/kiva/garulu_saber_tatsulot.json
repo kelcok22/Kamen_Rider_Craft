@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "garulu",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:garulu_saber"
-	}, 
-	{
-	  "item": "kamenridercraft:tatsulot"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "garulu",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:garulu_saber"
+		},
+		{
+			"item": "kamenridercraft:tatsulot"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:garulu_saber_tatsulot"
-  }
+	"result": {
+		"id": "kamenridercraft:garulu_saber_tatsulot"
+	}
 }

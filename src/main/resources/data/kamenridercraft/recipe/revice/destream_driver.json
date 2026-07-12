@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "vail",
-  "pattern": [
-    "XvX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    }, "v": {
-      "item": "kamenridercraft:hercules_vistamp"
-    }, "C": {
-      "item": "kamenridercraft:vail_driver"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:destream_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "vail",
+	"pattern": [
+		"XvX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"v": {
+			"item": "kamenridercraft:hercules_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:vail_driver"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:destream_driver"
+	}
 }

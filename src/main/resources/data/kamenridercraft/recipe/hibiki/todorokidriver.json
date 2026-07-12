@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "todoroki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_kigen_todoroki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "todoroki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_kigen_todoroki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:todorokidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:todorokidriver"
-  }
 }

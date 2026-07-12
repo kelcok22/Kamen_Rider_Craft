@@ -1,28 +1,28 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:goda_boss_block"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:goda_boss_block"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ooo.goda.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ooo.goda.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ooo.goda.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ooo.goda.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ooo/ancient_ooo",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:player_killed_entity",
-	  "conditions": {
-		"entity": {
-		  "type": "kamenridercraft:goda"
+	"parent": "kamenridercraft:ooo/ancient_ooo",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:goda"
+				}
+			}
 		}
-	  }
 	}
-  }
 }

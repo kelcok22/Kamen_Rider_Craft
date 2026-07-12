@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_shin",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_shin",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:shin_stone"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:shin_stone"
+	"result": {
+		"id": "kamenridercraft:grasshopper_dna"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:grasshopper_dna"
-  }	
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:sclash_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:sclash_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.cross-z_charge.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.cross-z_charge.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.cross-z_charge.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.cross-z_charge.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/cross-z",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:sclash_driver"
-			  ]
+	"parent": "kamenridercraft:build/cross-z",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:buildhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:buildtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:buildlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:sclash_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

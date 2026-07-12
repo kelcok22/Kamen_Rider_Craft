@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "zi_o_ii",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:zikan_girade"
-    }, 
-    {
-      "item": "kamenridercraft:saikyo_girade"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:saikyo_zikan_girade"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "zi_o_ii",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:zikan_girade"
+		},
+		{
+			"item": "kamenridercraft:saikyo_girade"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:saikyo_zikan_girade"
+	}
 }

@@ -1,14 +1,13 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "wizard",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:green_gem_block"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "wizard",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:green_gem_block"
+		}
 	],
-  "result": {
-	  "count": 9,
-	"id": "kamenridercraft:wizardgem_green"
-  }
+	"result": {
+		"count": 9,
+		"id": "kamenridercraft:wizardgem_green"
+	}
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "eden",
-  "pattern": [
-    "XCX",
-    "XXX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:eden_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:eden_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "eden",
+	"pattern": [
+		"XCX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:eden_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:eden_driver"
+	}
 }

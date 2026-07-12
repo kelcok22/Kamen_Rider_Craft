@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:proto_mega_ulorder_yellow"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:proto_mega_ulorder_yellow"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ghost.dark_necrom_yellow.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ghost.dark_necrom_yellow.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ghost.dark_necrom_yellow.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ghost.dark_necrom_yellow.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ghost/dark_necrom_blue",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ghost_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ghost_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ghost_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:proto_mega_ulorder_yellow"
-			  ]
+	"parent": "kamenridercraft:ghost/dark_necrom_blue",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ghost_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ghost_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ghost_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:proto_mega_ulorder_yellow"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

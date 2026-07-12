@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rampage_vulcan",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:assault_wolf_progrisekey"
-    }, 
-    {
-      "item": "kamenridercraft:naki_progrisekey"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:rampage_gatling_progrisekey"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "rampage_vulcan",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:assault_wolf_progrisekey"
+		},
+		{
+			"item": "kamenridercraft:naki_progrisekey"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:rampage_gatling_progrisekey"
+	}
 }

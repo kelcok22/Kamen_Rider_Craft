@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco_gun",
-  "pattern": [
-    "###",
-    "ddd",
-    "aaa"
-  ],
-  "key": {
-    "a": {
-	  "item": "kamenridercraft:denliner_interior"
-    },
-	"d": {
-	  "item": "kamenridercraft:denliner_glass_ikazuchi"
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco_gun",
+	"pattern": [
+		"###",
+		"ddd",
+		"aaa"
+	],
+	"key": {
+		"a": {
+			"item": "kamenridercraft:denliner_interior"
+		},
+		"d": {
+			"item": "kamenridercraft:denliner_glass_ikazuchi"
+		},
+		"#": {
+			"item": "kamenridercraft:denliner_roof"
+		}
 	},
-	"#": {
-	  "item": "kamenridercraft:denliner_roof"
+	"result": {
+		"id": "kamenridercraft:denliner_side_with_line_ikazuchi",
+		"count": 9
 	}
-  },
-  "result": {
-    "id": "kamenridercraft:denliner_side_with_line_ikazuchi",
-	"count": 9
-  }
 }

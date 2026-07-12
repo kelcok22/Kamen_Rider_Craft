@@ -1,7 +1,5 @@
 {
-  "values": [
-	  "kamenridercraft:rabbit_hutch_door",
-	  "kamenridercraft:glass_door",
-    "kamenridercraft:jail_door"
-  ]
+	"values": [
+		"#kamenridercraft:doors"
+	]
 }

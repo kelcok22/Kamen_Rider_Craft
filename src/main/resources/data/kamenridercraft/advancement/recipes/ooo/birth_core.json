@@ -1,31 +1,31 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:birth_core"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:birth_core"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:ooo/birth_driver",
-	  "kamenridercraft:ooo/birth_buster",
-	  "kamenridercraft:ooo/proto_birth_core",
-	  "kamenridercraft:decade/birth_card"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:ooo/birth_driver",
+			"kamenridercraft:ooo/birth_buster",
+			"kamenridercraft:ooo/proto_birth_core",
+			"kamenridercraft:decade/birth_card"
+		]
+	},
+	"sends_telemetry_event": false
 }

@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "rogue",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:nebulasteam_gun"
-    }, 
-    {
-      "item": "kamenridercraft:steam_blade"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:nebulasteam_gun_rifle"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "rogue",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:nebulasteam_gun"
+		},
+		{
+			"item": "kamenridercraft:steam_blade"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:nebulasteam_gun_rifle"
+	}
 }

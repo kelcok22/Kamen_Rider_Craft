@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "den_o",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    },
-    "C": {
-      "tag": "minecraft:doors"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:rider_pass"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "den_o",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"C": {
+			"tag": "minecraft:doors"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:rider_pass"
+	}
 }

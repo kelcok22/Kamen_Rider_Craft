@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:goro_wine_bottle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:goro_wine_bottle"
+	"result": {
+		"id": "kamenridercraft:g_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:g_belt"
-  }	
 }

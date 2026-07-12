@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "abyss",
-  "pattern": [
-	"XCX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
-	}, "C": {
-	  "item": "kamenridercraft:abysslasher_advent"
-	}, "Z": {
-	  "item": "kamenridercraft:base_sword"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "abyss",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		},
+		"C": {
+			"item": "kamenridercraft:abysslasher_advent"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:abyss_visor"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:abyss_visor"
-  }
 }

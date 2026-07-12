@@ -1,10 +1,10 @@
 {
-  "values": [
-    "#kamenridercraft:gear/wonder_ride_books/god_beast",
-    "#kamenridercraft:gear/wonder_ride_books/animal",
-    "#kamenridercraft:gear/wonder_ride_books/story",
-    "#kamenridercraft:gear/wonder_ride_books/almighty_book",
-    "#kamenridercraft:gear/wonder_ride_books/wonder_world_story",
-    "kamenridercraft:book_gate_wonder_ride_book"
-  ]
+	"values": [
+		"#kamenridercraft:gear/wonder_ride_books/god_beast",
+		"#kamenridercraft:gear/wonder_ride_books/animal",
+		"#kamenridercraft:gear/wonder_ride_books/story",
+		"#kamenridercraft:gear/wonder_ride_books/almighty_book",
+		"#kamenridercraft:gear/wonder_ride_books/wonder_world_story",
+		"kamenridercraft:book_gate_wonder_ride_book"
+	]
 }

@@ -1,13 +1,13 @@
 {
-  "values": [
-    "kamenridercraft:giff_junior",
-    "kamenridercraft:evil",
-    "kamenridercraft:daiouika_deadman",
-    "kamenridercraft:anomalocaris_deadman",
-    "kamenridercraft:queen_bee_deadman",
-    "kamenridercraft:wolf_deadman",
-    "kamenridercraft:vail",
-    "kamenridercraft:vice",
-    "kamenridercraft:lovekov"
-  ]
+	"values": [
+		"kamenridercraft:giff_junior",
+		"kamenridercraft:evil",
+		"kamenridercraft:daiouika_deadman",
+		"kamenridercraft:anomalocaris_deadman",
+		"kamenridercraft:queen_bee_deadman",
+		"kamenridercraft:wolf_deadman",
+		"kamenridercraft:vail",
+		"kamenridercraft:vice",
+		"kamenridercraft:lovekov"
+	]
 }

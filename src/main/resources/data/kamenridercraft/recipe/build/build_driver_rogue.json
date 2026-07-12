@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "rogue",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:full_bottle"
-    }, "C": {
-      "item": "kamenridercraft:prime_rogue_full_bottle"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:build_driver_rogue"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "rogue",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:full_bottle"
+		},
+		"C": {
+			"item": "kamenridercraft:prime_rogue_full_bottle"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:build_driver_rogue"
+	}
 }

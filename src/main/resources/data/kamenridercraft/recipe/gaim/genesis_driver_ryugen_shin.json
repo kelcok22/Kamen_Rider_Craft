@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ryugen_shin",
-  "pattern": [
-    "XXX",
-    "XBC",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:budou_lockseed"
-    }, "B": {
-      "item": "kamenridercraft:melon_energy_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:genesis_driver_ryugen_shin"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ryugen_shin",
+	"pattern": [
+		"XXX",
+		"XBC",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:budou_lockseed"
+		},
+		"B": {
+			"item": "kamenridercraft:melon_energy_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:genesis_driver_ryugen_shin"
+	}
 }

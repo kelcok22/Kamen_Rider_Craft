@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "dark_decade",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_card"
-    }, "C": {
-      "item": "kamenridercraft:dark_decade_card"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:dark_decadriver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "dark_decade",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_card"
+		},
+		"C": {
+			"item": "kamenridercraft:dark_decade_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:dark_decadriver"
+	}
 }

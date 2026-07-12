@@ -1,23 +1,23 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "faiz_gear",
-  "pattern": [
-	"XXX",
-	" MR"
-  ],
-  "key": {
-	"R": {
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "faiz_gear",
+	"pattern": [
+		"XXX",
+		" MR"
+	],
+	"key": {
+		"R": {
 			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"M": {
+			"item": "kamenridercraft:faiz_phone"
+		},
+		"X": {
+			"tag": "c:ingots/iron"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:faiz_phone"
-	},
-	"X": {
-	  "tag": "c:ingots/iron"
+	"result": {
+		"id": "kamenridercraft:faiz_phone_pointer"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:faiz_phone_pointer"
-  }
 }

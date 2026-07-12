@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/ginga_meteor"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/ginga_meteor"
+		}
+	}
+}

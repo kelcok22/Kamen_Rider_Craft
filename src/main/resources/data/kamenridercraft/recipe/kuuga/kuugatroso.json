@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kuuga",
-  "pattern": [
-	"X X",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:kuuga_growing"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kuuga",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:kuuga_growing"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kuugatroso"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kuugatroso"
-  }
 }

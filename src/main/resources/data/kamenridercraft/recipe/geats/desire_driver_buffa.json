@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "desire_driver",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_rider_core_id"
-    }, "C": {
-      "item": "kamenridercraft:buffa_rider_core_id"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:desire_driver_buffa"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "desire_driver",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_rider_core_id"
+		},
+		"C": {
+			"item": "kamenridercraft:buffa_rider_core_id"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:desire_driver_buffa"
+	}
 }

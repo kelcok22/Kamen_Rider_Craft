@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zeronos",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    }, "C": {
-      "item": "kamenridercraft:zeronos_plat_card"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zeronos_belt"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zeronos",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"C": {
+			"item": "kamenridercraft:zeronos_plat_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zeronos_belt"
+	}
 }

@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "dread",
-  "pattern": [
-	"XXX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ride_chemy_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "dread",
+	"pattern": [
+		"XXX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ride_chemy_card"
+		},
+		"S": {
+			"item": "kamenridercraft:steamliner_repli_chemy_card"
+		}
 	},
-	"S": {
-	  "item": "kamenridercraft:steamliner_repli_chemy_card"
+	"result": {
+		"id": "kamenridercraft:dreadriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:dreadriver"
-  }
 }

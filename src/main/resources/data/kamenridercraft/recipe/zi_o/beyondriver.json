@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "woz",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:woz_miridewatch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:beyondriver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "woz",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:woz_miridewatch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:beyondriver"
+	}
 }

@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:evolution_paradoxa"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:evolution_paradoxa"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.blade.wild_chalice.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.blade.wild_chalice.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.blade.wild_chalice.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.blade.wild_chalice.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:blade/chalice",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:bladehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:bladetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:bladelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:chalice_rouzer"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_paradoxa\"}"
-              }
+	"parent": "kamenridercraft:blade/chalice",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:bladehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:bladetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:bladelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:chalice_rouzer"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_paradoxa\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

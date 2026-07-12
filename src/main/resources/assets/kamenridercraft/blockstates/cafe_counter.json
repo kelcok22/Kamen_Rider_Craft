@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/cafe_counter"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/cafe_counter"
+		}
+	}
+}

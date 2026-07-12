@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:shotriser_vulcan"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:shotriser_vulcan"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zero_one.vulcan.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zero_one.vulcan.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.zero_one.vulcan.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.zero_one.vulcan.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:zero_one/zero-one",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zero_onehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zero_onetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zero_onelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:shotriser_vulcan"
-			  ]
+	"parent": "kamenridercraft:zero_one/zero-one",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zero_onehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zero_onetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zero_onelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:shotriser_vulcan"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

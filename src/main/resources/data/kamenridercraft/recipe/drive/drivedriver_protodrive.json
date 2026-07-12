@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "protodrive",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
-	}, "C": {
-	  "item": "kamenridercraft:proto_speedshift"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "protodrive",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		},
+		"C": {
+			"item": "kamenridercraft:proto_speedshift"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:drivedriver_protodrive"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:drivedriver_protodrive"
-  }
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:sengoku_driver_gaim_natsumikan"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:sengoku_driver_gaim_natsumikan"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gaim.gaim_natsumikan.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gaim.gaim_natsumikan.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gaim.gaim_natsumikan.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gaim.gaim_natsumikan.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gaim/sylphi",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gaimhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gaimtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gaimlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:sengoku_driver_gaim_natsumikan"
-			  ]
+	"parent": "kamenridercraft:gaim/sylphi",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:gaimhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:gaimtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:gaimlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:sengoku_driver_gaim_natsumikan"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

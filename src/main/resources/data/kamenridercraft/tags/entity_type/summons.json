@@ -1,18 +1,18 @@
 {
-  "values": [
-	"kamenridercraft:rider_summon",
-	"kamenridercraft:complete_summon",
-	"kamenridercraft:grand_summon",
-    "kamenridercraft:legendary_summon",
-    "kamenridercraft:zein_summon",
-    "kamenridercraft:enemy_summon",
-    "kamenridercraft:zein_enemy_summon",
-	"kamenridercraft:paradx_summon",
-	"kamenridercraft:decade_armor_ex_aid",
-    "kamenridercraft:vice",
-    "kamenridercraft:lovekov",
-    "kamenridercraft:whipped_soldier",
-    "kamenridercraft:apollo",
-    "kamenridercraft:libra"
-  ]
+	"values": [
+		"kamenridercraft:rider_summon",
+		"kamenridercraft:complete_summon",
+		"kamenridercraft:grand_summon",
+		"kamenridercraft:legendary_summon",
+		"kamenridercraft:zein_summon",
+		"kamenridercraft:enemy_summon",
+		"kamenridercraft:zein_enemy_summon",
+		"kamenridercraft:paradx_summon",
+		"kamenridercraft:decade_armor_ex_aid",
+		"kamenridercraft:vice",
+		"kamenridercraft:lovekov",
+		"kamenridercraft:whipped_soldier",
+		"kamenridercraft:apollo",
+		"kamenridercraft:libra"
+	]
 }

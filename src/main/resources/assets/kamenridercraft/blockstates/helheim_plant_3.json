@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "": { "model": "kamenridercraft:block/helheim_plant_3" }
-    }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/helheim_plant_3"
+		}
+	}
 }

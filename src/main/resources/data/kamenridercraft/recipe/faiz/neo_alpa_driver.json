@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "neo_alpa_gear",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
-	}, "C": {
-	  "item": "kamenridercraft:neo_alpa_mission_memory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "neo_alpa_gear",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"C": {
+			"item": "kamenridercraft:neo_alpa_mission_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:neo_alpa_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:neo_alpa_driver"
-  }
 }

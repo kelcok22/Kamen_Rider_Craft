@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "next_kaixa",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:kaixa_mission_memory"
-	}, 
-	{
-	  "item": "kamenridercraft:muez_mission_memory"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "next_kaixa",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kaixa_mission_memory"
+		},
+		{
+			"item": "kamenridercraft:muez_mission_memory"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:next_kaixa_mission_memory"
-  }
+	"result": {
+		"id": "kamenridercraft:next_kaixa_mission_memory"
+	}
 }

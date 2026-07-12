@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "kr_g",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ichigolegs"
-	}, 
-	{
-	  "item": "kamenridercraft:goro_wine_bottle"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "kr_g",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ichigolegs"
+		},
+		{
+			"item": "kamenridercraft:goro_wine_bottle"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:glegs"
-  }
+	"result": {
+		"id": "kamenridercraft:glegs"
+	}
 }

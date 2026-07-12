@@ -1,36 +1,36 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:cellmedal"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:cellmedal"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:ooo/ooohead",
-	  "kamenridercraft:ooo/oootroso",
-	  "kamenridercraft:ooo/ooolegs",
-	  "kamenridercraft:ooo/o_scanner",
-	  "kamenridercraft:ooo/o_medal_holder",
-	  "kamenridercraft:ooo/medajalibur",
-      "kamenridercraft:ooo/ridevendor_spawn_egg",
-	  "kamenridercraft:ooo/cell_alloy_ingot",
-	  "kamenridercraft:ooo/cell_alloy_ingot_blasted"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:ooo/ooohead",
+			"kamenridercraft:ooo/oootroso",
+			"kamenridercraft:ooo/ooolegs",
+			"kamenridercraft:ooo/o_scanner",
+			"kamenridercraft:ooo/o_medal_holder",
+			"kamenridercraft:ooo/medajalibur",
+			"kamenridercraft:ooo/ridevendor_spawn_egg",
+			"kamenridercraft:ooo/cell_alloy_ingot",
+			"kamenridercraft:ooo/cell_alloy_ingot_blasted"
+		]
+	},
+	"sends_telemetry_event": false
 }

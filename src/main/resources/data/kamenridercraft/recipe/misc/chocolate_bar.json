@@ -1,19 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_food",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:candy_wrapper"
-	}, 
-	{
-	  "item": "minecraft:sugar"
-	} ,
-	  {
-		  "tag": "c:crops/cocoa_bean"
-	  }
-  ],
-  "result": {
-	"id": "kamenridercraft:chocolate_bar"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_food",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:candy_wrapper"
+		},
+		{
+			"item": "minecraft:sugar"
+		},
+		{
+			"tag": "c:crops/cocoa_bean"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:chocolate_bar"
+	}
 }

@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fourze_elek",
-  "pattern": [
-    "XCX",
-    "XZX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:astroswitch"
-    }, "C": {
-      "item": "kamenridercraft:elek_switch"
-    }, "Z": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:billy_the_rod"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fourze_elek",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		},
+		"C": {
+			"item": "kamenridercraft:elek_switch"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:billy_the_rod"
+	}
 }

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:shin_stone"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:shin_stone"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:shin_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:shin_logo"
+	}
 }

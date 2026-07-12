@@ -1,52 +1,52 @@
 {
-  "display": {
-    "icon": {
-      "id": "kamenridercraft:gigantliner_repli_chemy_card"
-    },
-    "title": {
-      "translate": "advancements.kamenridercraft.gotchard.type_final.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gotchard.type_final.description"
-    },
-    "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "parent": "kamenridercraft:gotchard/dread",
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "player": {
-          "equipment": {
-            "head": {
-              "items": [
-                "kamenridercraft:gotchard_head"
-              ]
-            },
-            "chest": {
-              "items": [
-                "kamenridercraft:gotchard_torso"
-              ]
-            },
-            "legs": {
-              "items": [
-                "kamenridercraft:gotchard_legs"
-              ]
-            },
-            "feet": {
-              "items": [
-                "kamenridercraft:dreadriver"
-              ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:gigantliner_repli_chemy_card\"}"
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:gigantliner_repli_chemy_card"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gotchard.type_final.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gotchard.type_final.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:gotchard/dread",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:gotchard_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:gotchard_torso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:gotchard_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:dreadriver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:gigantliner_repli_chemy_card\"}"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

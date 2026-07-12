@@ -1,9 +1,9 @@
 {
-  "values": [
-	  "minecraft:cod",
-    {
-        "id": "#c:foods/raw_cod",
-        "required": false
-    }
-  ]
+	"values": [
+		"minecraft:cod",
+		{
+			"id": "#c:foods/raw_cod",
+			"required": false
+		}
+	]
 }

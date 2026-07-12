@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kirameki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_orehell"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onsa_kirameki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kirameki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onsa_kirameki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kiramekidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kiramekidriver"
-  }
 }

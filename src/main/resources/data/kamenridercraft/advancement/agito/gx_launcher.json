@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:gx_launcher"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:gx_launcher"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.agito.gx_launcher.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.agito.gx_launcher.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.agito.gx_launcher.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.agito.gx_launcher.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:agito/g3x_weapons",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:gx_launcher"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:agito/g3x_weapons",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:gx_launcher"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

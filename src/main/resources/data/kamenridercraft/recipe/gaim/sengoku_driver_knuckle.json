@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "knuckle",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:kurumi_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:sengoku_driver_knuckle"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "knuckle",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:kurumi_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sengoku_driver_knuckle"
+	}
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "nadeshiko",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:astroswitch"
-    }, "C": {
-      "item": "kamenridercraft:nadeshiko_switch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:nadeshiko_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "nadeshiko",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		},
+		"C": {
+			"item": "kamenridercraft:nadeshiko_switch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:nadeshiko_driver"
+	}
 }

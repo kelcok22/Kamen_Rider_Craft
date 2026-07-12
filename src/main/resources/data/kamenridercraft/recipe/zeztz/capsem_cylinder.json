@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zeztz",
-  "pattern": [
-    "XXX",
-    "XZX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:code_capsem"
-    }, "Z": {
-      "item": "kamenridercraft:rider_case"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:capsem_cylinder"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zeztz",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:code_capsem"
+		},
+		"Z": {
+			"item": "kamenridercraft:rider_case"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:capsem_cylinder"
+	}
 }

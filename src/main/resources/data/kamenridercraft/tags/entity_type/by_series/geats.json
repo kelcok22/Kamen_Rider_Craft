@@ -1,13 +1,13 @@
 {
-  "values": [
-	  "kamenridercraft:pawnjyamato_mob",
-    "kamenridercraft:jyamatorider",
-    "kamenridercraft:gmrider",
-    "kamenridercraft:glare",
-    "kamenridercraft:gazer",
-    "kamenridercraft:glare2",
-    "kamenridercraft:end_rider",
-    "kamenridercraft:premium_kekera",
-    "kamenridercraft:premium_beroba"
-  ]
+	"values": [
+		"kamenridercraft:pawnjyamato_mob",
+		"kamenridercraft:jyamatorider",
+		"kamenridercraft:gmrider",
+		"kamenridercraft:glare",
+		"kamenridercraft:gazer",
+		"kamenridercraft:glare2",
+		"kamenridercraft:end_rider",
+		"kamenridercraft:premium_kekera",
+		"kamenridercraft:premium_beroba"
+	]
 }

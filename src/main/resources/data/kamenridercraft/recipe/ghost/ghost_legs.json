@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_ghost",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ghost",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ghost_legs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ghost_legs"
-  }
 }

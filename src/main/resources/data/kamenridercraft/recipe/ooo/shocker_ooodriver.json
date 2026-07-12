@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ooo",
-  "pattern": [
-	"XXX",
-	"CAB",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:cellmedal"
-	}, "C": {
-	  "item": "kamenridercraft:shocker_medal"
-	}, "A": {
-	  "item": "kamenridercraft:gel_shocker_medal"
-	}, "B": {
-	  "item": "kamenridercraft:destron_medal"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ooo",
+	"pattern": [
+		"XXX",
+		"CAB",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:cellmedal"
+		},
+		"C": {
+			"item": "kamenridercraft:shocker_medal"
+		},
+		"A": {
+			"item": "kamenridercraft:gel_shocker_medal"
+		},
+		"B": {
+			"item": "kamenridercraft:destron_medal"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shocker_ooodriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:shocker_ooodriver"
-  }
 }

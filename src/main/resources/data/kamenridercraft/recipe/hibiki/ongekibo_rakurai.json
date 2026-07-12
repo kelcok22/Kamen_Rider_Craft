@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "todoroki",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XRX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "todoroki",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XRX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:henshin_kigen_todoroki"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:henshin_kigen_todoroki"
+	"result": {
+		"id": "kamenridercraft:ongekibo_rakurai"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ongekibo_rakurai"
-  }	
 }

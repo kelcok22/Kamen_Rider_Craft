@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:ridol"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ridol"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.showa.x.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.showa.x.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.showa.x.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.showa.x.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:showa/v3",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:xhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:xtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:xlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:ridol"
-			  ]
+	"parent": "kamenridercraft:showa/v3",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:xhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:xtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:xlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:ridol"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

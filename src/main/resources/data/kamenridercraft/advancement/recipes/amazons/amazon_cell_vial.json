@@ -1,31 +1,31 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:amazon_cell_vial"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:amazon_cell_vial"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:amazons/amazonshead",
-	  "kamenridercraft:amazons/amazonstroso",
-	  "kamenridercraft:amazons/amazonslegs",
-	  "kamenridercraft:amazons/amazon_cell_mutator" 
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:amazons/amazonshead",
+			"kamenridercraft:amazons/amazonstroso",
+			"kamenridercraft:amazons/amazonslegs",
+			"kamenridercraft:amazons/amazon_cell_mutator"
+		]
+	},
+	"sends_telemetry_event": false
 }

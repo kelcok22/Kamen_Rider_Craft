@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "drive_mad_doctor",
-  "pattern": [
-	"XMX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "drive_mad_doctor",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:mad_doctor"
+		}
 	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"M": {
-	  "item": "kamenridercraft:mad_doctor"
+	"result": {
+		"id": "kamenridercraft:cure_quicker"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:cure_quicker"
-  }	
 }
 

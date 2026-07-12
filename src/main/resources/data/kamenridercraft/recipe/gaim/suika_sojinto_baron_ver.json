@@ -1,28 +1,28 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "suika_arms",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XBX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:suika_lockseed"
-    },
-    "B": {
-      "item": "kamenridercraft:banana_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:suika_sojinto_baron_ver"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "suika_arms",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XBX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:suika_lockseed"
+		},
+		"B": {
+			"item": "kamenridercraft:banana_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:suika_sojinto_baron_ver"
+	}
 }
 

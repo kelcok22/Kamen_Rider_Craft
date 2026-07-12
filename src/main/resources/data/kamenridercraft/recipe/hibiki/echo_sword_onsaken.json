@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kabuki",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XRX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kabuki",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XRX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:henshin_onsa_kabuki"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:henshin_onsa_kabuki"
+	"result": {
+		"id": "kamenridercraft:echo_sword_onsaken"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:echo_sword_onsaken"
-  }	
 }

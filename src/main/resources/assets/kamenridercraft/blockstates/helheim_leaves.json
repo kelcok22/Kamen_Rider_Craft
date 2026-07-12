@@ -1,8 +1,12 @@
 {
-  "variants": {
-    "": [
-      {"model": "kamenridercraft:block/helheim_leaves"},
-      {"model": "kamenridercraft:block/helheim_leaves1"}
-    ]
-  }
+	"variants": {
+		"": [
+			{
+				"model": "kamenridercraft:block/helheim_leaves"
+			},
+			{
+				"model": "kamenridercraft:block/helheim_leaves1"
+			}
+		]
+	}
 }

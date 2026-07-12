@@ -1,19 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "next_kaixa",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
-	}, "C": {
-	  "item": "kamenridercraft:next_kaixa_mission_memory"
+	"type": "minecraft:crafting_shaped",
+	"group": "next_kaixa",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"C": {
+			"item": "kamenridercraft:next_kaixa_mission_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:next_kaixa_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:next_kaixa_driver"
-  }
 }

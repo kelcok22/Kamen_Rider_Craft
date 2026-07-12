@@ -1,6 +1,6 @@
 {
-  "values": [
-    "#kamenridercraft:gear/id_cores/normal",
-    "#kamenridercraft:gear/id_cores/cracked"
-  ]
+	"values": [
+		"#kamenridercraft:gear/id_cores/normal",
+		"#kamenridercraft:gear/id_cores/cracked"
+	]
 }

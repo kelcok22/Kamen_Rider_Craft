@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "marika",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:peach_energy_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:genesis_driver_marika"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "marika",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:peach_energy_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:genesis_driver_marika"
+	}
 }

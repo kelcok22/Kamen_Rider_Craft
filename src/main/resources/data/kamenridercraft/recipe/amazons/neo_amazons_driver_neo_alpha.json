@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "amazon_neo_alpha",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:amazon_cell_vial"
-	}, "C": {
-	  "item": "kamenridercraft:amazon_injector_neo_alpha"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "amazon_neo_alpha",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:amazon_cell_vial"
+		},
+		"C": {
+			"item": "kamenridercraft:amazon_injector_neo_alpha"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:neo_amazons_driver_neo_alpha"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:neo_amazons_driver_neo_alpha"
-  }
 }

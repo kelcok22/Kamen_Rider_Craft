@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:v_buckle_abyss"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:v_buckle_abyss"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ryuki.abyss.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ryuki.abyss.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ryuki.abyss.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ryuki.abyss.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ryuki/verde",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ryukihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ryukitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ryukilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:v_buckle_abyss"
-			  ]
+	"parent": "kamenridercraft:ryuki/verde",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ryukihead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ryukitroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ryukilegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:v_buckle_abyss"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

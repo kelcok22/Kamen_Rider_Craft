@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fourze",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:astroswitch"
-    }, "C": {
-      "item": "kamenridercraft:rocket_switch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:fourze_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fourze",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		},
+		"C": {
+			"item": "kamenridercraft:rocket_switch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:fourze_driver"
+	}
 }

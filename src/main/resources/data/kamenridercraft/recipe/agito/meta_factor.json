@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "gills",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:agito_of_seed"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "gills",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:agito_of_seed"
+		},
+		"M": {
+			"item": "kamenridercraft:gills"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:gills"
+	"result": {
+		"id": "kamenridercraft:meta_factor"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:meta_factor"
-  }	
 }

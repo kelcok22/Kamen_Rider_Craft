@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "alpha_gear",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
-	}, "C": {
-	  "item": "kamenridercraft:alpha_mission_memory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "alpha_gear",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"C": {
+			"item": "kamenridercraft:alpha_mission_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:alpha_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:alpha_driver"
-  }
 }

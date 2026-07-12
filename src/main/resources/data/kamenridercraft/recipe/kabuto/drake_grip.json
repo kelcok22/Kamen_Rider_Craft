@@ -1,24 +1,24 @@
 {
 	"type": "minecraft:crafting_shaped",
-  "category": "equipment",
+	"category": "equipment",
 	"group": "drake",
 	"pattern": [
-	  "XRX",
-	  "XMX",
-	  "XXX"
+		"XRX",
+		"XMX",
+		"XXX"
 	],
 	"key": {
-	  "X": {
-		"item": "kamenridercraft:mini_zecter"
-	  },
-	  "M": {
-		"item": "kamenridercraft:base_sword"
-	  },
-	  "R": {
-		"item": "kamenridercraft:drake_zecter"
-	  }
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:drake_zecter"
+		}
 	},
 	"result": {
-	  "id": "kamenridercraft:drake_grip"
-	}	
-  }
+		"id": "kamenridercraft:drake_grip"
+	}
+}

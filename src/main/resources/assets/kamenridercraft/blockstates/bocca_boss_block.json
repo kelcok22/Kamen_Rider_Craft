@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/bocca_boss_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/bocca_boss_block"
+		}
+	}
+}

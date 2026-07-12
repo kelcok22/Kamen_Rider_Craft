@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "shinobi",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:shuriken_starter"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:shinobi_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "shinobi",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:shuriken_starter"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shinobi_driver"
+	}
 }

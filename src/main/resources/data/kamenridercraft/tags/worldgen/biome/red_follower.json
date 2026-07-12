@@ -1,9 +1,9 @@
 {
-  "values": [
-	"#c:is_desert",
-	"minecraft:jungle",
-	"#c:is_savanna",
-	"minecraft:beach",
-	"#c:is_badlands"
-  ]
+	"values": [
+		"#c:is_desert",
+		"minecraft:jungle",
+		"#c:is_savanna",
+		"minecraft:beach",
+		"#c:is_badlands"
+	]
 }

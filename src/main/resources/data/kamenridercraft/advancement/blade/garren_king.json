@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:evolution_giraffa"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:evolution_giraffa"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.blade.garren_king.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.blade.garren_king.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.blade.garren_king.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.blade.garren_king.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:blade/garren_jack",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:bladehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:bladetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:bladelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:garren_buckle"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_giraffa\"}"
-              }
+	"parent": "kamenridercraft:blade/garren_jack",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:bladehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:bladetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:bladelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:garren_buckle"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_giraffa\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

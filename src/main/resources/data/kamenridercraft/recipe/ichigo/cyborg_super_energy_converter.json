@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "eins",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "eins",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:cyborg_super_energy_converter_core"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:cyborg_super_energy_converter_core"
+	"result": {
+		"id": "kamenridercraft:cyborg_super_energy_converter"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:cyborg_super_energy_converter"
-  }	
 }

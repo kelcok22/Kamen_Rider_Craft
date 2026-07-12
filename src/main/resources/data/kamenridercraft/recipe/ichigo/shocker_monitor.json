@@ -1,23 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "amazons",
-  "pattern": [
-	"IXI",
-	"XCX",
-	"IMI"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
-	},"I": {
-	  "tag": "c:ingots/iron"
-	},"M": {
-	  "item": "kamenridercraft:monitor"
-	}, "C": {
-	  "item": "kamenridercraft:shocker_emblem"
+	"type": "minecraft:crafting_shaped",
+	"group": "amazons",
+	"pattern": [
+		"IXI",
+		"XCX",
+		"IMI"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"I": {
+			"tag": "c:ingots/iron"
+		},
+		"M": {
+			"item": "kamenridercraft:monitor"
+		},
+		"C": {
+			"item": "kamenridercraft:shocker_emblem"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shocker_monitor"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:shocker_monitor"
-  }
 }

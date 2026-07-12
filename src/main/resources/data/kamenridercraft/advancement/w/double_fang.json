@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:fang_memory"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:fang_memory"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.w.double_fang.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.w.double_fang.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.w.double_fang.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.w.double_fang.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:w/double_trigger",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:whead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:wdriver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fang_memory\"}"
-              }
+	"parent": "kamenridercraft:w/double_trigger",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:whead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:wdriver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fang_memory\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

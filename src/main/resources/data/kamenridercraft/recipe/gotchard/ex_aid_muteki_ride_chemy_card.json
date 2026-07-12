@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:ex_aid_ride_chemy_card"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ex_aid_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:ex_aid_muteki_ride_chemy_card"
-  }
+	"result": {
+		"id": "kamenridercraft:ex_aid_muteki_ride_chemy_card"
+	}
 }

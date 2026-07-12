@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco_zero",
-  "pattern": [
-    "RIR",
-    "IGI",
-    "RIR"
-  ],
-  "key": {
-    "R": {
-      "tag": "c:ingots/iron"
-    }, "I": {
-      "item": "kamenridercraft:imagin_sand"
-    }, "G": {
-      "tag": "c:dyes/green"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zero_liner_green"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco_zero",
+	"pattern": [
+		"RIR",
+		"IGI",
+		"RIR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"G": {
+			"tag": "c:dyes/green"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zero_liner_green"
+	}
 }

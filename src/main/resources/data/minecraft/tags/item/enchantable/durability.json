@@ -1,10 +1,10 @@
 {
-  "values": [
-    "#kamenridercraft:rider_head_armor",
-    "#kamenridercraft:rider_chest_armor",
-    "#kamenridercraft:rider_leg_armor",
-    "#kamenridercraft:rider_foot_armor",
-    "#kamenridercraft:arsenal/all_ranged",
-    "#kamenridercraft:arsenal/all_shields"
-  ]
+	"values": [
+		"#kamenridercraft:rider_head_armor",
+		"#kamenridercraft:rider_chest_armor",
+		"#kamenridercraft:rider_leg_armor",
+		"#kamenridercraft:rider_foot_armor",
+		"#kamenridercraft:arsenal/all_ranged",
+		"#kamenridercraft:arsenal/all_shields"
+	]
 }

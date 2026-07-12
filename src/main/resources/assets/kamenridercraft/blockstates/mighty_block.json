@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/mighty_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/mighty_block"
+		}
+	}
+}

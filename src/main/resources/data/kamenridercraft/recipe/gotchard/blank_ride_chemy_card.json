@@ -3,15 +3,13 @@
 	"group": "blank_ride_chemy_card",
 	"ingredients": [
 		{
-
 			"item": "minecraft:paper"
 		},
 		{
 			"item": "kamenridercraft:wizardgem"
-		} ,
+		},
 		{
 			"tag": "kamenridercraft:gear/alchemist_rings"
-
 		}
 	],
 	"result": {

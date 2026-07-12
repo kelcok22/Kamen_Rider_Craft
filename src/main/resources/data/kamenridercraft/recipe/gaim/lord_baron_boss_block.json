@@ -1,28 +1,27 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "lord_baron",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:lord_baron_fragment"
-    }, 
-    {
-      "item": "kamenridercraft:lord_baron_fragment_2"
-    }, 
-    {
-      "item": "kamenridercraft:lord_baron_fragment_3"
-    }, 
-    {
-      "item": "kamenridercraft:banana_lockseed"
-    } , 
-    {
-      "item": "kamenridercraft:mango_lockseed"
-    } , 
-    {
-      "item": "kamenridercraft:lemon_energy_lockseed"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:lord_baron_boss_block"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "lord_baron",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:lord_baron_fragment"
+		},
+		{
+			"item": "kamenridercraft:lord_baron_fragment_2"
+		},
+		{
+			"item": "kamenridercraft:lord_baron_fragment_3"
+		},
+		{
+			"item": "kamenridercraft:banana_lockseed"
+		},
+		{
+			"item": "kamenridercraft:mango_lockseed"
+		},
+		{
+			"item": "kamenridercraft:lemon_energy_lockseed"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:lord_baron_boss_block"
+	}
 }

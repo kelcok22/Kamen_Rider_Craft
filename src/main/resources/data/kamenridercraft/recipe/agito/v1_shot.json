@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "v1",
-  "pattern": [
-	"RRR",
-	"CGI",
-	"RRR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:v1"
-	}, "G": {
-	  "item": "kamenridercraft:base_sword"
-	}, "C": {
-	  "tag": "c:gunpowders"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "v1",
+	"pattern": [
+		"RRR",
+		"CGI",
+		"RRR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:v1"
+		},
+		"G": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"tag": "c:gunpowders"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:v1_shot"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:v1_shot"
-  }
 }

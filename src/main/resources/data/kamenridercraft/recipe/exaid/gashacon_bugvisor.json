@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "genm",
-  "pattern": [
-	"XMX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "genm",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:dangerous_zombie_gashat"
+		}
 	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"M": {
-	  "item": "kamenridercraft:dangerous_zombie_gashat"
+	"result": {
+		"id": "kamenridercraft:gashacon_bugvisor"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gashacon_bugvisor"
-  }	
 }
 

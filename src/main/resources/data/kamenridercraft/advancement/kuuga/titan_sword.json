@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:titan_sword"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:titan_sword"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.kuuga.titan_sword.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.kuuga.titan_sword.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.kuuga.titan_sword.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.kuuga.titan_sword.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:kuuga/pegasus_bowgun",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:titan_sword"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:kuuga/pegasus_bowgun",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:titan_sword"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

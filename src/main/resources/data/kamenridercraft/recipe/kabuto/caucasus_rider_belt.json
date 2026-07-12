@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "caucasus",
-  "pattern": [
-	"XXX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:unfinished_kabutick_zecter"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "caucasus",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:unfinished_kabutick_zecter"
+		},
+		"Z": {
+			"item": "kamenridercraft:caucasus_zecter"
+		}
 	},
-	"Z": {
-	  "item": "kamenridercraft:caucasus_zecter"
+	"result": {
+		"id": "kamenridercraft:caucasus_rider_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:caucasus_rider_belt"
-  }
 }

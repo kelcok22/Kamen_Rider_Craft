@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:den_o_sword_card"
-	}, 
-	{
-	  "item": "kamenridercraft:rider_ticket_rod"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:den_o_sword_card"
+		},
+		{
+			"item": "kamenridercraft:rider_ticket_rod"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:den_o_rod_card"
-  }
+	"result": {
+		"id": "kamenridercraft:den_o_rod_card"
+	}
 }

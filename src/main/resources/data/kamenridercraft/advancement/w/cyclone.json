@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:lostdriver_cyclone"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:lostdriver_cyclone"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.w.cyclone.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.w.cyclone.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.w.cyclone.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.w.cyclone.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:w/joker",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:whead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:lostdriver_cyclone"
-			  ]
+	"parent": "kamenridercraft:w/joker",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:whead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:lostdriver_cyclone"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

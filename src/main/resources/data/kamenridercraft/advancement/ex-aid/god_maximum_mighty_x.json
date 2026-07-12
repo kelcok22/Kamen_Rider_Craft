@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:god_maximum_mighty_x_gashat"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:god_maximum_mighty_x_gashat"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ex-aid.god_maximum_mighty_x.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ex-aid.god_maximum_mighty_x.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ex-aid.god_maximum_mighty_x.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ex-aid.god_maximum_mighty_x.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ex-aid/genm_zombie",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ex_aidhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ex_aidtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ex_aidlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:gamer_driver_genmu"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:god_maximum_mighty_x_gashat\"}"
-              }
+	"parent": "kamenridercraft:ex-aid/genm_zombie",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ex_aidhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ex_aidtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ex_aidlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:gamer_driver_genmu"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:god_maximum_mighty_x_gashat\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

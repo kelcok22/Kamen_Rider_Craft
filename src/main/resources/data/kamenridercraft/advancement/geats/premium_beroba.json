@@ -1,28 +1,28 @@
 {
 	"display": {
-	  "icon": {
-		"id": "kamenridercraft:beroba_black_raise_riser_card"
-	  },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.premium_beroba.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.premium_beroba.description"
-    },
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"id": "kamenridercraft:beroba_black_raise_riser_card"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.premium_beroba.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.premium_beroba.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"parent": "kamenridercraft:geats/beroba",
 	"criteria": {
-	  "requirement": {
-        "trigger": "minecraft:player_killed_entity",
-        "conditions": {
-          "entity": {
-            "type": "kamenridercraft:premium_beroba"
-          }
-        }
-      }
-    }
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:premium_beroba"
+				}
+			}
+		}
+	}
 }

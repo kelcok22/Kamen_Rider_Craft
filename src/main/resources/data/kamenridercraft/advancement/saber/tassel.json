@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:haken_bladriver_tassel"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:haken_bladriver_tassel"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.saber.tassel.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.saber.tassel.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.saber.tassel.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.saber.tassel.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:saber/falchion",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:saberhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:sabertroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:saberlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:haken_bladriver_tassel"
-			  ]
+	"parent": "kamenridercraft:saber/falchion",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:saberhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:sabertroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:saberlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:haken_bladriver_tassel"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

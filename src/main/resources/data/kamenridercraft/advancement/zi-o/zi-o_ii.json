@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:zi_o_ii_ridewatch"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:zi_o_ii_ridewatch"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zi-o.zi-o_ii.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zi-o.zi-o_ii.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.zi-o.zi-o_ii.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.zi-o.zi-o_ii.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:zi-o/zi-o",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zi_o_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zi_o_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zi_o_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:ziku_driver_zi_o"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:zi_o_ii_ridewatch\"}"
-              }
+	"parent": "kamenridercraft:zi-o/zi-o",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zi_o_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zi_o_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zi_o_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:ziku_driver_zi_o"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:zi_o_ii_ridewatch\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

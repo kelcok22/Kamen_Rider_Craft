@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zero_zero_one",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XAX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:rising_hopper_progrisekey"
-    }, "A": {
-      "item": "kamenridercraft:rocking_hopper_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:forceriser_001"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zero_zero_one",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XAX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:rising_hopper_progrisekey"
+		},
+		"A": {
+			"item": "kamenridercraft:rocking_hopper_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:forceriser_001"
+	}
 }

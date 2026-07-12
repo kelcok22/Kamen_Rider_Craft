@@ -1,34 +1,34 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:candy_wrapper"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:candy_wrapper"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:gavv/blank_gochizo",
-	  "kamenridercraft:misc/block/candy_shop",
-	  "kamenridercraft:misc/gummi_candy",
-	  "kamenridercraft:misc/potato_snacks",
-	  "kamenridercraft:misc/marshmallow",
-	  "kamenridercraft:misc/lollipop",
-	  "kamenridercraft:misc/chocolate_bar"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:gavv/blank_gochizo",
+			"kamenridercraft:misc/block/candy_shop",
+			"kamenridercraft:misc/gummi_candy",
+			"kamenridercraft:misc/potato_snacks",
+			"kamenridercraft:misc/marshmallow",
+			"kamenridercraft:misc/lollipop",
+			"kamenridercraft:misc/chocolate_bar"
+		]
+	},
+	"sends_telemetry_event": false
 }

@@ -1,14 +1,14 @@
 {
-  "values": [
-	"kamenridercraft:zu_gumun_ba",
-	"kamenridercraft:anguis_masculus",
-	"kamenridercraft:pantheras_luteus",
-    "kamenridercraft:riotrooper",
-    "kamenridercraft:bakeneko",
-    "kamenridercraft:makamou_ninja_group",
-	"kamenridercraft:zectrooper",
-	"kamenridercraft:shadow_trooper",
-	"kamenridercraft:neotrooper",
-	"kamenridercraft:new_mole_imagin_sand"
-  ]
+	"values": [
+		"kamenridercraft:zu_gumun_ba",
+		"kamenridercraft:anguis_masculus",
+		"kamenridercraft:pantheras_luteus",
+		"kamenridercraft:riotrooper",
+		"kamenridercraft:bakeneko",
+		"kamenridercraft:makamou_ninja_group",
+		"kamenridercraft:zectrooper",
+		"kamenridercraft:shadow_trooper",
+		"kamenridercraft:neotrooper",
+		"kamenridercraft:new_mole_imagin_sand"
+	]
 }

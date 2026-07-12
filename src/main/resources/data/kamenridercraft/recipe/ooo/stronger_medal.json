@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_medal",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:cellmedal"
-	}, 
-	{
-	  "item": "kamenridercraft:electrer_core"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_medal",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:cellmedal"
+		},
+		{
+			"item": "kamenridercraft:electrer_core"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:stronger_medal"
-  }
+	"result": {
+		"id": "kamenridercraft:stronger_medal"
+	}
 }

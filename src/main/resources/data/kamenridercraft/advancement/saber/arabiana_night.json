@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:arabiana_night_wonder_ride_book"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:arabiana_night_wonder_ride_book"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.saber.arabiana_night.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.saber.arabiana_night.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.saber.arabiana_night.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.saber.arabiana_night.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:saber/espada",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:saberhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:sabertroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:saberlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:seiken_swordriver_espada"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:arabiana_night_wonder_ride_book\"}"
-              }
+	"parent": "kamenridercraft:saber/espada",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:saberhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:sabertroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:saberlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:seiken_swordriver_espada"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:arabiana_night_wonder_ride_book\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

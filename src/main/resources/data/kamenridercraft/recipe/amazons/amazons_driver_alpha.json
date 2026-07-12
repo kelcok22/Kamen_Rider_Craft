@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "amazon_alpha",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:amazon_cell_vial"
-	}, "C": {
-	  "item": "kamenridercraft:condorer_core_alpha"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "amazon_alpha",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:amazon_cell_vial"
+		},
+		"C": {
+			"item": "kamenridercraft:condorer_core_alpha"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:amazons_driver_alpha"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:amazons_driver_alpha"
-  }
 }

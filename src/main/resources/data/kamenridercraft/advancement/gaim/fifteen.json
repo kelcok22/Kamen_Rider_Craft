@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:sengoku_driver_fifteen"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:sengoku_driver_fifteen"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gaim.fifteen.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gaim.fifteen.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gaim.fifteen.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gaim.fifteen.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gaim/bujin_gaim",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gaimhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gaimtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gaimlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:sengoku_driver_fifteen"
-			  ]
+	"parent": "kamenridercraft:gaim/bujin_gaim",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:gaimhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:gaimtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:gaimlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:sengoku_driver_fifteen"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "snipe",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:bang_bang_shooting_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "snipe",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:bang_bang_shooting_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gamer_driver_snipe"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gamer_driver_snipe"
-  }
 }

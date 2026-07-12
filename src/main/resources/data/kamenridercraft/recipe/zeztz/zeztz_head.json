@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_zeztz",
-  "pattern": [
-	"XXX",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:code_capsem"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_zeztz",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:code_capsem"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zeztz_head"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:zeztz_head"
-  }
 }

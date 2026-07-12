@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "agito",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:agito_of_seed"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "agito",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:agito_of_seed"
+		},
+		"M": {
+			"item": "kamenridercraft:agito_trinity"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:agito_trinity"
+	"result": {
+		"id": "kamenridercraft:alter_ring_reiko"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:alter_ring_reiko"
-  }	
 }

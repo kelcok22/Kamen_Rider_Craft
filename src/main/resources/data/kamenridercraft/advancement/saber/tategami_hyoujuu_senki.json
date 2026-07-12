@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.saber.tategami_hyoujuu_senki.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.saber.tategami_hyoujuu_senki.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.saber.tategami_hyoujuu_senki.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.saber.tategami_hyoujuu_senki.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:saber/king_lion_daisenki",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:saberhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:sabertroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:saberlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:seiken_swordriver_blades"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\"}"
-              }
+	"parent": "kamenridercraft:saber/king_lion_daisenki",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:saberhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:sabertroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:saberlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:seiken_swordriver_blades"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

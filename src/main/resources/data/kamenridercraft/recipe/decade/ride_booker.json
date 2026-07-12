@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "decade",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_card"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:decade_card"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:ride_booker"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "decade",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_card"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:decade_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ride_booker"
+	}
 }
 

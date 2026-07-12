@@ -1,28 +1,28 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "gavv",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XAX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_gochizo"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:bushel_gochizo"
-    },
-    "A": {
-      "item": "kamenridercraft:chocodan_gochizo"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:xmax_valen"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "gavv",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XAX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:bushel_gochizo"
+		},
+		"A": {
+			"item": "kamenridercraft:chocodan_gochizo"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:xmax_valen"
+	}
 }
 

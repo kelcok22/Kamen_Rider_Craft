@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "quiz",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:quiz_topper"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:quiz_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "quiz",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:quiz_topper"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:quiz_driver"
+	}
 }

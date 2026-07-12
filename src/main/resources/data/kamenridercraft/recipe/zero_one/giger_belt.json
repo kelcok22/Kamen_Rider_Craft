@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "giger",
-  "pattern": [
-    "XCX",
-    "XXX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:mammoth_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:giger_belt"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "giger",
+	"pattern": [
+		"XCX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:mammoth_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:giger_belt"
+	}
 }

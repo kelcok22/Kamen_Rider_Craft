@@ -1,28 +1,28 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:eldoradriver_eld"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:eldoradriver_eld"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gotchard.eld.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gotchard.eld.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.eld.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gotchard.eld.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gotchard/legend",
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "kamenridercraft:eld"
-        }
-      }
-    }
-  }
+	"parent": "kamenridercraft:gotchard/legend",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:eld"
+				}
+			}
+		}
+	}
 }

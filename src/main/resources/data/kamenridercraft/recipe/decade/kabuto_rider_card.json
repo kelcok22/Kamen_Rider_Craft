@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "kamen_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:blank_card"
-	}, 
-	{
-	  "item": "kamenridercraft:kabuto_zecter"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "kamen_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:kabuto_zecter"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:kabuto_rider_card"
-  }
+	"result": {
+		"id": "kamenridercraft:kabuto_rider_card"
+	}
 }

@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fuuma",
-  "pattern": [
-	"XMX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fuuma",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:hurricane_ninja_gashat"
+		}
 	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"M": {
-	  "item": "kamenridercraft:hurricane_ninja_gashat"
+	"result": {
+		"id": "kamenridercraft:fuuma_sword"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:fuuma_sword"
-  }	
 }
 

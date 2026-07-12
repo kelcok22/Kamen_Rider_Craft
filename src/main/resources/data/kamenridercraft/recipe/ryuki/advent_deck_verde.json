@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "ryuki",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:advent_deck_blank"
-    },
-    {
-      "item": "kamenridercraft:biogreeza_advent"
-    }
-  ],
-  "result": {
-    "id": "kamenridercraft:advent_deck_verde"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "ryuki",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:advent_deck_blank"
+		},
+		{
+			"item": "kamenridercraft:biogreeza_advent"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:advent_deck_verde"
+	}
 }

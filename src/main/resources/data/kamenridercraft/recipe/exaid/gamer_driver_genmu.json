@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "genm",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:proto_mighty_action_x_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "genm",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:proto_mighty_action_x_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gamer_driver_genmu"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gamer_driver_genmu"
-  }
 }

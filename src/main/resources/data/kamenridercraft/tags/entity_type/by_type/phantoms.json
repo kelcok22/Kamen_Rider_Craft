@@ -1,8 +1,8 @@
 {
-  "values": [
-    "kamenridercraft:ghouls",
-    "kamenridercraft:medusa_phantom",
-    "kamenridercraft:phoenix_phantom",
-    "kamenridercraft:gremlin_phantom"
-  ]
+	"values": [
+		"kamenridercraft:ghouls",
+		"kamenridercraft:medusa_phantom",
+		"kamenridercraft:phoenix_phantom",
+		"kamenridercraft:gremlin_phantom"
+	]
 }

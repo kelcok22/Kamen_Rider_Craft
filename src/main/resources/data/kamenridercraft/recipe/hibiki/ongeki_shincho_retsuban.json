@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kirameki",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XRX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kirameki",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XRX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:henshin_onsa_kirameki"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:henshin_onsa_kirameki"
+	"result": {
+		"id": "kamenridercraft:ongeki_shincho_retsuban"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ongeki_shincho_retsuban"
-  }	
 }

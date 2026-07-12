@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_geats",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_rider_core_id"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:geatstroso"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_geats",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_rider_core_id"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:geatstroso"
+	}
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:brain_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:brain_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.drive.brain.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.drive.brain.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.drive.brain.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.drive.brain.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:drive/heart",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:drive_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:drive_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:drive_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:brain_driver"
-			  ]
+	"parent": "kamenridercraft:drive/heart",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:drive_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:drive_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:drive_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:brain_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

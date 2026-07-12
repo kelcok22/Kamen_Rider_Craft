@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/faiz_boss_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/faiz_boss_block"
+		}
+	}
+}

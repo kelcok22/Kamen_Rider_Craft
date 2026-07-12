@@ -1,19 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "diend",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:diend_card"
-    }, "C": {
-      "item": "minecraft:gold_block"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:diend_power_up_card"
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "diend",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:diend_card"
+		},
+		"C": {
+			"item": "minecraft:gold_block"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:diend_power_up_card"
+	}
 }

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ex_aid_card"
-	}, 
-	{
-	  "item": "kamenridercraft:hyper_muteki_gashat"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ex_aid_card"
+		},
+		{
+			"item": "kamenridercraft:hyper_muteki_gashat"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:ex_aid_muteki_card"
-  }
+	"result": {
+		"id": "kamenridercraft:ex_aid_muteki_card"
+	}
 }

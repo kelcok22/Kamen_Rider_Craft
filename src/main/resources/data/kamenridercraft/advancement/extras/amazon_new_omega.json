@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:neo_amazons_driver_omega"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:neo_amazons_driver_omega"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.extras.amazon_new_omega.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.extras.amazon_new_omega.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.extras.amazon_new_omega.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.extras.amazon_new_omega.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:extras/amazon_neo",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:amazonshead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:amazonstroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:amazonslegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:neo_amazons_driver_omega"
-			  ]
+	"parent": "kamenridercraft:extras/amazon_neo",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:amazonshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:amazonstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:amazonslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:neo_amazons_driver_omega"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

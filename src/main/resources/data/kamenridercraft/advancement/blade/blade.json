@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:blay_buckle"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:blay_buckle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.blade.blade.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.blade.blade.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.blade.blade.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.blade.blade.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:heisei_p1",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:bladehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:bladetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:bladelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:blay_buckle"
-			  ]
+	"parent": "kamenridercraft:heisei_p1",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:bladehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:bladetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:bladelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:blay_buckle"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

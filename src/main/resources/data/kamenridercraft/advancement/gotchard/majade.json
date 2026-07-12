@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:alchemisdriver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:alchemisdriver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gotchard.majade.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gotchard.majade.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.majade.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gotchard.majade.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gotchard/gotchard",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gotchard_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gotchard_torso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gotchard_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:alchemisdriver"
-			  ]
+	"parent": "kamenridercraft:gotchard/gotchard",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:gotchard_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:gotchard_torso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:gotchard_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:alchemisdriver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

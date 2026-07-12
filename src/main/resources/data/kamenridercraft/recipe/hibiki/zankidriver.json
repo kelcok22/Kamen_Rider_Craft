@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zanki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_kigen_zanki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zanki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_kigen_zanki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zankidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:zankidriver"
-  }
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "sabaki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_orehell"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_kigen_sabaki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "sabaki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_kigen_sabaki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sabakidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:sabakidriver"
-  }
 }

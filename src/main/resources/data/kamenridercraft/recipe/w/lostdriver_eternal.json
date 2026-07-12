@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "w",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:gaiamemory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "w",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:gaiamemory"
+		},
+		"M": {
+			"item": "kamenridercraft:eternal_t2_memory"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:eternal_t2_memory"
+	"result": {
+		"id": "kamenridercraft:lostdriver_eternal"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:lostdriver_eternal"
-  }	
 }

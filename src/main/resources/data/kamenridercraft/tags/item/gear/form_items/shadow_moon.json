@@ -1,9 +1,9 @@
 {
-  "values": [
-	"kamenridercraft:green_king_stone",
-    "kamenridercraft:green_king_stone_revived",
-	"kamenridercraft:creation_king_stone",
-    "kamenridercraft:another_king_stone",
-	"kamenridercraft:green_king_stone_hajime_sorayama"
-  ]
+	"values": [
+		"kamenridercraft:green_king_stone",
+		"kamenridercraft:green_king_stone_revived",
+		"kamenridercraft:creation_king_stone",
+		"kamenridercraft:another_king_stone",
+		"kamenridercraft:green_king_stone_hajime_sorayama"
+	]
 }

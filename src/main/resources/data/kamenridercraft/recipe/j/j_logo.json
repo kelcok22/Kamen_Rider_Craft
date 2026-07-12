@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:j_stone"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:j_stone"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:j_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:j_logo"
+	}
 }

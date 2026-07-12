@@ -1,25 +1,29 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "geiz_revive",
-  "pattern": [
-    "XCX",
-    "XBX",
-    "WXG"
-  ],
-  "key": {
-    "X": {
-      "tag": "c:ingots/iron"
-    }, "C": {
-      "item": "kamenridercraft:shinobi_miridewatch"
-    }, "W": {
-      "item": "kamenridercraft:kikai_miridewatch"
-    }, "G": {
-      "item": "kamenridercraft:quiz_miridewatch"
-    }, "B": {
-      "item": "kamenridercraft:blank_watch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:geiz_revive_ridewatch"
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "geiz_revive",
+	"pattern": [
+		"XCX",
+		"XBX",
+		"WXG"
+	],
+	"key": {
+		"X": {
+			"tag": "c:ingots/iron"
+		},
+		"C": {
+			"item": "kamenridercraft:shinobi_miridewatch"
+		},
+		"W": {
+			"item": "kamenridercraft:kikai_miridewatch"
+		},
+		"G": {
+			"item": "kamenridercraft:quiz_miridewatch"
+		},
+		"B": {
+			"item": "kamenridercraft:blank_watch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:geiz_revive_ridewatch"
+	}
 }

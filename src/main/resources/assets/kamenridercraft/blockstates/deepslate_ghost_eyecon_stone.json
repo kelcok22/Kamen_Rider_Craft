@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/deepslate_ghost_eyecon_stone"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/deepslate_ghost_eyecon_stone"
+		}
+	}
+}

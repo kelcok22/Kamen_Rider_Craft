@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_zero_one",
-  "pattern": [
-    "XXX",
-    "X X"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zero_onehead"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_zero_one",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zero_onehead"
+	}
 }

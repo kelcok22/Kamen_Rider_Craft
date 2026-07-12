@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "pine_arms",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:musou_saber"
-    }, 
-    {
-      "item": "kamenridercraft:pine_iron"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:musou_saber_kusarigama"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "pine_arms",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:musou_saber"
+		},
+		{
+			"item": "kamenridercraft:pine_iron"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:musou_saber_kusarigama"
+	}
 }

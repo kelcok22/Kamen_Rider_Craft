@@ -1,24 +1,24 @@
 {
 	"type": "minecraft:crafting_shaped",
-  "category": "equipment",
+	"category": "equipment",
 	"group": "gatack",
 	"pattern": [
-	  "XXX",
-	  "XMX",
-	  "XRX"
+		"XXX",
+		"XMX",
+		"XRX"
 	],
 	"key": {
-	  "X": {
-		"item": "kamenridercraft:mini_zecter"
-	  },
-	  "M": {
-		"item": "kamenridercraft:base_sword"
-	  },
-	  "R": {
-		"item": "kamenridercraft:gatack_zecter"
-	  }
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:gatack_zecter"
+		}
 	},
 	"result": {
-	  "id": "kamenridercraft:gatack_double_calibur_minus"
-	}	
-  }
+		"id": "kamenridercraft:gatack_double_calibur_minus"
+	}
+}

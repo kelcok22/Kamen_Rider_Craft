@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "grease_blizzard",
-  "pattern": [
-    "XCX",
-    "XZX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:full_bottle"
-    }, "C": {
-      "item": "kamenridercraft:north_blizzard_full_bottle"
-    }, "Z": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:blizzard_knuckle"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "grease_blizzard",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:full_bottle"
+		},
+		"C": {
+			"item": "kamenridercraft:north_blizzard_full_bottle"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:blizzard_knuckle"
+	}
 }

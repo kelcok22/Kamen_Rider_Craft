@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_kiva",
-   "pattern": [
-	"XXX",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_kiva",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kivahead"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kivahead"
-  }
 }

@@ -1,148 +1,148 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:kuuga_rising_mighty"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:kuuga_rising_mighty"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.kuuga.kuuga_rising.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.kuuga.kuuga_rising.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.kuuga.kuuga_rising.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.kuuga.kuuga_rising.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:kuuga/kuuga",
-  "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kuugahead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kuugatroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kuugalegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:arcle"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_mighty\"}"
-              }
+	"parent": "kamenridercraft:kuuga/kuuga",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:kuugahead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:kuugatroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:kuugalegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:arcle"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_mighty\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
-		}
-	  }
-	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kuugahead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kuugatroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kuugalegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:arcle"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_dragon\"}"
-              }
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:kuugahead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:kuugatroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:kuugalegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:arcle"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_dragon\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
-		}
-	  }
-	},
-	"3": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kuugahead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kuugatroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kuugalegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:arcle"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_pegasus\"}"
-              }
+		},
+		"3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:kuugahead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:kuugatroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:kuugalegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:arcle"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_pegasus\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
-		}
-	  }
-	},
-	"4": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kuugahead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kuugatroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kuugalegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:arcle"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_titan\"}"
-              }
+		},
+		"4": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:kuugahead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:kuugatroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:kuugalegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:arcle"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_titan\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

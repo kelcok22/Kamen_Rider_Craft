@@ -1,50 +1,50 @@
 {
-    "display": {
-      "icon": {
-        "id": "kamenridercraft:cyclotron_driver"
-      },
-      "title": {
-      "translate": "advancements.kamenridercraft.revice.century.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.revice.century.description"
-    },
-    "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "kamenridercraft:revice/demons",
-    "criteria": {
-      "1": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "player": {
-            "equipment": {
-              "head": {
-                "items": [
-                  "kamenridercraft:revice_head"
-                ]
-              },
-              "chest": {
-                "items": [
-                  "kamenridercraft:revice_troso"
-                ]
-              },
-              "legs": {
-                "items": [
-                  "kamenridercraft:revice_legs"
-                ]
-              },
-              "feet": {
-                "items": [
-                  "kamenridercraft:cyclotron_driver"
-                ]
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:cyclotron_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.revice.century.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.revice.century.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:revice/demons",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:revice_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:revice_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:revice_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:cyclotron_driver"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}
   

@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "dark_kabuto",
-  "pattern": [
-	"XXX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:mini_zecter"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "dark_kabuto",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"Z": {
+			"item": "kamenridercraft:dark_kabuto_zecter"
+		}
 	},
-	"Z": {
-	  "item": "kamenridercraft:dark_kabuto_zecter"
+	"result": {
+		"id": "kamenridercraft:dark_kabuto_rider_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:dark_kabuto_rider_belt"
-  }
 }

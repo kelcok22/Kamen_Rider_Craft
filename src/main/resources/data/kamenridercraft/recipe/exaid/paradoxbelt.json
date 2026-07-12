@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "para_dx",
-  "pattern": [
-	"a"
-  ],
-  "key": {
-	"a": [
-	{
-	  "item": "kamenridercraft:perfect_puzzle_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "para_dx",
+	"pattern": [
+		"a"
+	],
+	"key": {
+		"a": [
+			{
+				"item": "kamenridercraft:perfect_puzzle_gashat"
+			},
+			{
+				"item": "kamenridercraft:knock_out_fighter_gashat"
+			}
+		]
 	},
-	{
-	  "item": "kamenridercraft:knock_out_fighter_gashat"
+	"result": {
+		"id": "kamenridercraft:paradoxbelt"
 	}
-	]
-  },
-  "result": {
-	"id": "kamenridercraft:paradoxbelt"
-  }
 }

@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:hawk_gatlinger"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:hawk_gatlinger"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.hawk_gatlinger.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.hawk_gatlinger.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.hawk_gatlinger.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.hawk_gatlinger.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/build",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:hawk_gatlinger"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:build/build",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:hawk_gatlinger"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

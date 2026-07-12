@@ -1,24 +1,24 @@
 {
-  "values": [
-	"kamenridercraft:faiz_driver",
-	"kamenridercraft:kaixa_driver",
-	"kamenridercraft:delta_driver",
-	"kamenridercraft:psyga_driver",
-	"kamenridercraft:orga_driver",
-	"kamenridercraft:smartbuckle",
-	"kamenridercraft:smartbuckle_v2",
-	"kamenridercraft:faiz_driver_next",
-	"kamenridercraft:next_kaixa_driver",
-	"kamenridercraft:muez_driver",
-	"kamenridercraft:neo_alpa_driver",
-	"kamenridercraft:pyron_driver",
-	"kamenridercraft:pyron_driver_sr",
-	"kamenridercraft:pyron_driver_mb",
-	"kamenridercraft:seeda_driver",
-	"kamenridercraft:seeda_driver_gb",
-	"kamenridercraft:seeda_driver_ro",
-	"kamenridercraft:seeda_driver_uw",
-	"kamenridercraft:alpha_driver",
-	"kamenridercraft:beta_driver"
-  ]
+	"values": [
+		"kamenridercraft:faiz_driver",
+		"kamenridercraft:kaixa_driver",
+		"kamenridercraft:delta_driver",
+		"kamenridercraft:psyga_driver",
+		"kamenridercraft:orga_driver",
+		"kamenridercraft:smartbuckle",
+		"kamenridercraft:smartbuckle_v2",
+		"kamenridercraft:faiz_driver_next",
+		"kamenridercraft:next_kaixa_driver",
+		"kamenridercraft:muez_driver",
+		"kamenridercraft:neo_alpa_driver",
+		"kamenridercraft:pyron_driver",
+		"kamenridercraft:pyron_driver_sr",
+		"kamenridercraft:pyron_driver_mb",
+		"kamenridercraft:seeda_driver",
+		"kamenridercraft:seeda_driver_gb",
+		"kamenridercraft:seeda_driver_ro",
+		"kamenridercraft:seeda_driver_uw",
+		"kamenridercraft:alpha_driver",
+		"kamenridercraft:beta_driver"
+	]
 }

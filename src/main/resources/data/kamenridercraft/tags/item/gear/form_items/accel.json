@@ -1,7 +1,7 @@
 {
-  "values": [
-	"kamenridercraft:accel_memory",
-	"kamenridercraft:trial_memory",
-	"kamenridercraft:accel_booster_memory"
-  ]
+	"values": [
+		"kamenridercraft:accel_memory",
+		"kamenridercraft:trial_memory",
+		"kamenridercraft:accel_booster_memory"
+	]
 }

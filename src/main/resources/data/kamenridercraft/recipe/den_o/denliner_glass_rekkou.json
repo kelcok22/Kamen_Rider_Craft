@@ -1,22 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco_axe",
-  "pattern": [
-    "aaa",
-    "ddd",
-    "aaa"
-  ],
-  "key": {
-    "a": {
-	  "item": "kamenridercraft:denliner_gold"
-    },
-	"d": {
-	  "item": "kamenridercraft:denliner_roof"
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco_axe",
+	"pattern": [
+		"aaa",
+		"ddd",
+		"aaa"
+	],
+	"key": {
+		"a": {
+			"item": "kamenridercraft:denliner_gold"
+		},
+		"d": {
+			"item": "kamenridercraft:denliner_roof"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:denliner_glass_rekkou",
+		"count": 9
 	}
-  },
-  "result": {
-    "id": "kamenridercraft:denliner_glass_rekkou",
-	"count": 9
-  }
 }

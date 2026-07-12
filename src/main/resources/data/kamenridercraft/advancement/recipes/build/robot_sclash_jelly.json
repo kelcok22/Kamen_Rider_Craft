@@ -1,30 +1,30 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:robot_sclash_jelly"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:robot_sclash_jelly"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:build/twin_breaker",
-	  "kamenridercraft:build/sclash_driver_grease",
-	  "kamenridercraft:build/north_blizzard_full_bottle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:build/twin_breaker",
+			"kamenridercraft:build/sclash_driver_grease",
+			"kamenridercraft:build/north_blizzard_full_bottle"
+		]
+	},
+	"sends_telemetry_event": false
 }

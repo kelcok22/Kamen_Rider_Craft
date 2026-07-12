@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_fourze",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:astroswitch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:fourze_troso"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_fourze",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:fourze_troso"
+	}
 }

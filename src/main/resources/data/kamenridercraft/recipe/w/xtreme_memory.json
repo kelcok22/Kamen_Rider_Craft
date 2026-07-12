@@ -1,23 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "w_xtreme",
-  "pattern": [
-	"IEI",
-	"SIG",
-	"III"
-  ],
-  "key": {
-	"I": {
-	  "tag": "c:ingots/gold"
-	}, "E": {
-	  "item": "kamenridercraft:gaiamemory"
-	}, "S": {
-	  "item": "kamenridercraft:xtreme_memory_s"
-	}, "G": {
-	  "item": "kamenridercraft:xtreme_memory_g"
+	"type": "minecraft:crafting_shaped",
+	"group": "w_xtreme",
+	"pattern": [
+		"IEI",
+		"SIG",
+		"III"
+	],
+	"key": {
+		"I": {
+			"tag": "c:ingots/gold"
+		},
+		"E": {
+			"item": "kamenridercraft:gaiamemory"
+		},
+		"S": {
+			"item": "kamenridercraft:xtreme_memory_s"
+		},
+		"G": {
+			"item": "kamenridercraft:xtreme_memory_g"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:xtreme_memory"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:xtreme_memory"
-  }
 }

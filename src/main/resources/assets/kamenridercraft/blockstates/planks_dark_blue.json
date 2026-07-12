@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/planks_dark_blue"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/planks_dark_blue"
+		}
+	}
+}

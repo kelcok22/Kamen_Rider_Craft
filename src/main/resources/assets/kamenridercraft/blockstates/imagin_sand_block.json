@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/imagin_sand_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/imagin_sand_block"
+		}
+	}
+}

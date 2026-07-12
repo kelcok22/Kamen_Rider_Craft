@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_amazons",
-  "pattern": [
-	"X X",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:amazon_cell_vial"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_amazons",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:amazon_cell_vial"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:amazonstroso"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:amazonstroso"
-  }
 }

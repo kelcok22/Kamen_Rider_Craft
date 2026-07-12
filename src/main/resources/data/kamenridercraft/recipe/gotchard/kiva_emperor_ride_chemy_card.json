@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:kiva_ride_chemy_card"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kiva_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:kiva_emperor_ride_chemy_card"
-  }
+	"result": {
+		"id": "kamenridercraft:kiva_emperor_ride_chemy_card"
+	}
 }

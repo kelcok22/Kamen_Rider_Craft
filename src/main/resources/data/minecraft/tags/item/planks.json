@@ -1,10 +1,10 @@
 {
-  "values": [
-	"kamenridercraft:planks_big_oak_golden_trim",
-	"kamenridercraft:planks_brown",
-	"kamenridercraft:planks_dark_blue",
-	"kamenridercraft:planks_light_blue",
-	"kamenridercraft:planks_white",
-	  "kamenridercraft:helheim_planks"
-  ]
+	"values": [
+		"kamenridercraft:planks_big_oak_golden_trim",
+		"kamenridercraft:planks_brown",
+		"kamenridercraft:planks_dark_blue",
+		"kamenridercraft:planks_light_blue",
+		"kamenridercraft:planks_white",
+		"kamenridercraft:helheim_planks"
+	]
 }

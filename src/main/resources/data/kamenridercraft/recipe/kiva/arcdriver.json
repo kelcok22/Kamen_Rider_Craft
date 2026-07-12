@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "arc",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "arc",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		},
+		"M": {
+			"item": "kamenridercraft:keyfuestle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:keyfuestle"
+	"result": {
+		"id": "kamenridercraft:arcdriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:arcdriver"
-  }	
 }

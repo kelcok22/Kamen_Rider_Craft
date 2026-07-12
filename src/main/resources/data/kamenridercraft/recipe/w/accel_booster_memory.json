@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "accel_booster",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:accel_memory"
-	}, 
-	{
-	  "item": "kamenridercraft:commander_memory_enhancing_adapter"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "accel_booster",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:accel_memory"
+		},
+		{
+			"item": "kamenridercraft:commander_memory_enhancing_adapter"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:accel_booster_memory"
-  }
+	"result": {
+		"id": "kamenridercraft:accel_booster_memory"
+	}
 }

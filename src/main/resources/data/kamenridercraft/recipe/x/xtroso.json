@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "kr_x",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ichigotroso"
-	}, 
-	{
-	  "item": "kamenridercraft:ridol_core"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "kr_x",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ichigotroso"
+		},
+		{
+			"item": "kamenridercraft:ridol_core"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:xtroso"
-  }
+	"result": {
+		"id": "kamenridercraft:xtroso"
+	}
 }

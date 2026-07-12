@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "ridewatch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:blank_watch"
-    }, 
-    {
-      "item": "kamenridercraft:ore_ghost_eyecon"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:ghost_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "ridewatch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_watch"
+		},
+		{
+			"item": "kamenridercraft:ore_ghost_eyecon"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:ghost_ridewatch"
+	}
 }

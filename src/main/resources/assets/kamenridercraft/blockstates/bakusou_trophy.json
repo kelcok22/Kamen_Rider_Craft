@@ -1,6 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/bakusou_trophy"
-    }
-  }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/bakusou_trophy"
+		}
+	}
 }

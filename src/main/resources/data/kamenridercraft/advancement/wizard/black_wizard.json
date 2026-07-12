@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:black_ring"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:black_ring"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.wizard.black_wizard.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.wizard.black_wizard.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.wizard.black_wizard.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.wizard.black_wizard.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:wizard/dark_wizard",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:wizard_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wizard_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wizard_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:black_wizardriver"
-              ]
+	"parent": "kamenridercraft:wizard/dark_wizard",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:wizard_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wizard_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wizard_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:black_wizardriver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

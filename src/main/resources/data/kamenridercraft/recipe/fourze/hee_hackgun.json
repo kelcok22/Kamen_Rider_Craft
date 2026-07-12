@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fourze_fire",
-  "pattern": [
-    "XCX",
-    "XZX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:astroswitch"
-    }, "C": {
-      "item": "kamenridercraft:fire_switch"
-    }, "Z": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:hee_hackgun"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fourze_fire",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		},
+		"C": {
+			"item": "kamenridercraft:fire_switch"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:hee_hackgun"
+	}
 }

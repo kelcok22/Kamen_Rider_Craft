@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "chimera",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:proto_vistamp"
-	}, "C": {
-	  "item": "kamenridercraft:tri_chimera_vistamp"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "chimera",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:tri_chimera_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chimera_driver_daimon"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chimera_driver_daimon"
-  }
 }

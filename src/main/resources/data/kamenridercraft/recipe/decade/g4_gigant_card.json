@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "attack_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:g4_card"
-	}, 
-	{
-	  "item": "minecraft:tnt"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "attack_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:g4_card"
+		},
+		{
+			"item": "minecraft:tnt"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:g4_gigant_card"
-  }
+	"result": {
+		"id": "kamenridercraft:g4_gigant_card"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:beat_crosser"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:beat_crosser"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.beat_crosser.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.beat_crosser.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.beat_crosser.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.beat_crosser.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/cross-z",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:beat_crosser"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:build/cross-z",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:beat_crosser"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

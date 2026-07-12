@@ -1,9 +1,9 @@
 {
-  "values": [
-	"#kamenridercraft:by_type/phantoms",
-  "kamenridercraft:mage_captain",
-  "kamenridercraft:mage_footsoldier",
-  "kamenridercraft:sorcerer",
-  "kamenridercraft:wiseman"
-  ]
+	"values": [
+		"#kamenridercraft:by_type/phantoms",
+		"kamenridercraft:mage_captain",
+		"kamenridercraft:mage_footsoldier",
+		"kamenridercraft:sorcerer",
+		"kamenridercraft:wiseman"
+	]
 }

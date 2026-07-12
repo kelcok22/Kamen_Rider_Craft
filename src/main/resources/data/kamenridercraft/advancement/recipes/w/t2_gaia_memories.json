@@ -1,27 +1,27 @@
 {
 	"parent": "minecraft:recipes/root",
 	"criteria": {
-	  "has_item": {
-		"trigger": "minecraft:inventory_changed",
-		"conditions": {
-		  "items": [
-			{
-			  "items": "#kamenridercraft:gear/gaia_memories/t2"
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#kamenridercraft:gear/gaia_memories/t2"
+					}
+				]
 			}
-		  ]
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"has_item"
-	  ]
+		[
+			"has_item"
+		]
 	],
 	"rewards": {
-	  "recipes": [
-		"kamenridercraft:w/t2_memory_case"
-	  ]
+		"recipes": [
+			"kamenridercraft:w/t2_memory_case"
+		]
 	},
 	"sends_telemetry_event": false
-  }
+}
   

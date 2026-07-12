@@ -1,12 +1,11 @@
 {
-  "values": [
-	  "kamenridercraft:icepop1",
-    "kamenridercraft:icepop2",
-    "kamenridercraft:icepop3",
-
-    {
-        "id": "#c:ice_cream",
-        "required": false
-    }
-  ]
+	"values": [
+		"kamenridercraft:icepop1",
+		"kamenridercraft:icepop2",
+		"kamenridercraft:icepop3",
+		{
+			"id": "#c:ice_cream",
+			"required": false
+		}
+	]
 }

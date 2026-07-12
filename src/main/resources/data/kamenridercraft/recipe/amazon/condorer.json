@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "amazon",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "amazon",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:condorer_wheel"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:condorer_wheel"
+	"result": {
+		"id": "kamenridercraft:condorer"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:condorer"
-  }	
 }

@@ -1,90 +1,90 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:fullfull_rabbit_tank_bottle"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:fullfull_rabbit_tank_bottle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.rabbitrabbit.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.rabbitrabbit.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.rabbitrabbit.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.rabbitrabbit.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/hazard",
-  "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:build_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}"
-              }
+	"parent": "kamenridercraft:build/hazard",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:buildhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:buildtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:buildlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:build_driver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:buildhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:buildtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:buildlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:build_driver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}"
+							}
+						}
+					}
+				}
+			}
 		}
-	  }
 	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:build_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}"
-              }
-			}
-		  }
-		}
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "1",
-	  "2"
+	"requirements": [
+		[
+			"1",
+			"2"
+		]
 	]
-  ]
 }

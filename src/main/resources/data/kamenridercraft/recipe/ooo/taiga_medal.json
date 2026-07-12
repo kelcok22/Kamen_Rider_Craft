@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_medal",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:destwilder_advent"
-	}, 
-	{
-	  "item": "kamenridercraft:cellmedal"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_medal",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:destwilder_advent"
+		},
+		{
+			"item": "kamenridercraft:cellmedal"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:taiga_medal"
-  }
+	"result": {
+		"id": "kamenridercraft:taiga_medal"
+	}
 }

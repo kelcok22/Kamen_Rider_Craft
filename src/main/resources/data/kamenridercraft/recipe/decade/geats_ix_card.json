@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-	{
-		"item": "kamenridercraft:blank_card"
-	}, 
-	{
-	  "item": "kamenridercraft:geats_rider_core_id"
-	},
-	{
-	  "item": "kamenridercraft:boost_mkiii_raise_buckle"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:geats_rider_core_id"
+		},
+		{
+			"item": "kamenridercraft:boost_mkiii_raise_buckle"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:geats_ix_card"
-  }
+	"result": {
+		"id": "kamenridercraft:geats_ix_card"
+	}
 }

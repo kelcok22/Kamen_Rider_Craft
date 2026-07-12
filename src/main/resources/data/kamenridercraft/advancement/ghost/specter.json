@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:specter_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:specter_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ghost.specter.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ghost.specter.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ghost.specter.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ghost.specter.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ghost/ghost",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ghost_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ghost_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ghost_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:specter_driver"
-			  ]
+	"parent": "kamenridercraft:ghost/ghost",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ghost_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ghost_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ghost_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:specter_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zamonas",
-  "pattern": [
-    "XCX",
-    "XZX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:zamonas_ridewatch"
-    }, "Z": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zamonas_bow"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zamonas",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:zamonas_ridewatch"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zamonas_bow"
+	}
 }

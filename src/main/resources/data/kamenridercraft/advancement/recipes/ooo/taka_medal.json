@@ -1,36 +1,36 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:taka_medal"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:taka_medal"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:ooo/ooo_driver",
-	  "kamenridercraft:ooo/ooo_logo",
-	  "kamenridercraft:decade/ooo_card",
-	  "kamenridercraft:fourze/ooo_switch",
-	  "kamenridercraft:gaim/ooo_lockseed",
-	  "kamenridercraft:ghost/ooo_ghost_eyecon",
-	  "kamenridercraft:zi_o/ooo_ridewatch",
-      "kamenridercraft:zi_o/taka_ridewatch",
-	  "kamenridercraft:geats/ooo_driver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:ooo/ooo_driver",
+			"kamenridercraft:ooo/ooo_logo",
+			"kamenridercraft:decade/ooo_card",
+			"kamenridercraft:fourze/ooo_switch",
+			"kamenridercraft:gaim/ooo_lockseed",
+			"kamenridercraft:ghost/ooo_ghost_eyecon",
+			"kamenridercraft:zi_o/ooo_ridewatch",
+			"kamenridercraft:zi_o/taka_ridewatch",
+			"kamenridercraft:geats/ooo_driver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

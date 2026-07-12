@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "zangetsu_kachidoki",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:zangetsu_dj_gun"
-    }, 
-    {
-      "item": "kamenridercraft:musou_saber"
-    }
-    ],
-  "result": {
-    "id": "kamenridercraft:zangetsu_dj_gun_taiken_mode"
-  }    
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "zangetsu_kachidoki",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:zangetsu_dj_gun"
+		},
+		{
+			"item": "kamenridercraft:musou_saber"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:zangetsu_dj_gun_taiken_mode"
+	}
 }
 

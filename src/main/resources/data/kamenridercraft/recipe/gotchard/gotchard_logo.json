@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:hopper1_ride_chemy_card"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:hopper1_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:gotchard_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:gotchard_logo"
+	}
 }

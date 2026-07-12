@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:dj_gun"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:dj_gun"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gaim.dj_gun.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gaim.dj_gun.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gaim.dj_gun.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gaim.dj_gun.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gaim/kachidoki",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:dj_gun"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:gaim/kachidoki",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:dj_gun"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

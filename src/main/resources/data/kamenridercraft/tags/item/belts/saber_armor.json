@@ -1,19 +1,19 @@
 {
-  "values": [
-	"kamenridercraft:seiken_swordriver_saber",
-	"kamenridercraft:seiken_swordriver_blades",
-	"kamenridercraft:seiken_swordriver_espada",
-	"kamenridercraft:sword_of_logos_buckle_buster",
-	"kamenridercraft:sword_of_logos_buckle_kenzan",
-	"kamenridercraft:sword_of_logos_buckle_slash",
-	"kamenridercraft:jaken_caliburdriver",
-	"kamenridercraft:seiken_saikou_driver",
-	"kamenridercraft:dooms_driver_buckle_solomon",
-	"kamenridercraft:dooms_driver_buckle_storious",
-	"kamenridercraft:haken_bladriver_falchion",
-	"kamenridercraft:royal_sword_of_logos_buckle_sabela",
-	"kamenridercraft:royal_sword_of_logos_buckle_durendal",
-	"kamenridercraft:haken_bladriver_tassel",
-	"kamenridercraft:seiken_swordriver_desast"
-  ]
+	"values": [
+		"kamenridercraft:seiken_swordriver_saber",
+		"kamenridercraft:seiken_swordriver_blades",
+		"kamenridercraft:seiken_swordriver_espada",
+		"kamenridercraft:sword_of_logos_buckle_buster",
+		"kamenridercraft:sword_of_logos_buckle_kenzan",
+		"kamenridercraft:sword_of_logos_buckle_slash",
+		"kamenridercraft:jaken_caliburdriver",
+		"kamenridercraft:seiken_saikou_driver",
+		"kamenridercraft:dooms_driver_buckle_solomon",
+		"kamenridercraft:dooms_driver_buckle_storious",
+		"kamenridercraft:haken_bladriver_falchion",
+		"kamenridercraft:royal_sword_of_logos_buckle_sabela",
+		"kamenridercraft:royal_sword_of_logos_buckle_durendal",
+		"kamenridercraft:haken_bladriver_tassel",
+		"kamenridercraft:seiken_swordriver_desast"
+	]
 }

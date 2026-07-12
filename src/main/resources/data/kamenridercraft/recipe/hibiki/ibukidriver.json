@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ibuki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onibue_ibuki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ibuki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onibue_ibuki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ibukidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ibukidriver"
-  }
 }

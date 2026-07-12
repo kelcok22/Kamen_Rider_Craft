@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_watch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:ooo_ridewatch"
-    }, 
-    {
-      "item": "kamenridercraft:ptera_medal"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:ooo_putotyra_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_watch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ooo_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:ptera_medal"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:ooo_putotyra_ridewatch"
+	}
 }

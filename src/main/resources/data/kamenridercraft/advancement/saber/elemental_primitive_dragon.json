@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:elemental_dragon_wonder_ride_book"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:elemental_dragon_wonder_ride_book"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.saber.elemental_primitive_dragon.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.saber.elemental_primitive_dragon.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.saber.elemental_primitive_dragon.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.saber.elemental_primitive_dragon.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:saber/primitive_dragon",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:saberhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:sabertroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:saberlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:seiken_swordriver_saber"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:elemental_dragon_wonder_ride_book\"}"
-              }
+	"parent": "kamenridercraft:saber/primitive_dragon",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:saberhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:sabertroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:saberlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:seiken_swordriver_saber"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:elemental_dragon_wonder_ride_book\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

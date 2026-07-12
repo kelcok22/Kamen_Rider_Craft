@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "kamen_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:blank_card"
-	}, 
-	{
-	  "item": "kamenridercraft:rising_hopper_progrisekey"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "kamen_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:rising_hopper_progrisekey"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:zero_one_card"
-  }
+	"result": {
+		"id": "kamenridercraft:zero_one_card"
+	}
 }

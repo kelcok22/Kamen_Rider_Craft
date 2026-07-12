@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g3_x",
-  "pattern": [
-	"RCR",
-	"CGC",
-	"RIR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:gm_01_scorpion"
-	}, "G": {
-	  "item": "kamenridercraft:gx_05_kerberos"
-	}, "C": {
-	  "tag": "c:gunpowders"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g3_x",
+	"pattern": [
+		"RCR",
+		"CGC",
+		"RIR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:gm_01_scorpion"
+		},
+		"G": {
+			"item": "kamenridercraft:gx_05_kerberos"
+		},
+		"C": {
+			"tag": "c:gunpowders"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gx_launcher"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gx_launcher"
-  }
 }

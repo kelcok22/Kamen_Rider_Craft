@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "poppy",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:toki_meki_crisis_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "poppy",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:toki_meki_crisis_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gashacon_bugvisor_ii_poppy"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gashacon_bugvisor_ii_poppy"
-  }
 }

@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:magnet_switch_n"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:magnet_switch_n"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.fourze.magnetstates.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.fourze.magnetstates.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.fourze.magnetstates.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.fourze.magnetstates.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:fourze/hee_hackgun",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:fourze_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:fourze_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:fourze_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:fourze_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex5:\"kamenridercraft:fourze_magnetstates\"}"
-              }
+	"parent": "kamenridercraft:fourze/hee_hackgun",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:fourze_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:fourze_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:fourze_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:fourze_driver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex5:\"kamenridercraft:fourze_magnetstates\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

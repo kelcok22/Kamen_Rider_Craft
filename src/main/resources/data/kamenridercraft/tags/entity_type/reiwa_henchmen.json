@@ -1,19 +1,19 @@
 {
-  "values": [
-    "kamenridercraft:batta_augment",
-    "kamenridercraft:trilobite_magia",
-	"kamenridercraft:dodo_magia_chick",
-	"kamenridercraft:battle_raider",
-	"kamenridercraft:abaddon",
-	"kamenridercraft:shimi",
-	"kamenridercraft:charybdis",
-	"kamenridercraft:giff_junior",
-	"kamenridercraft:pawnjyamato_mob",
-	"kamenridercraft:gmrider",
-	"kamenridercraft:end_rider",
-    "kamenridercraft:malgam",
-    "kamenridercraft:golem",
-    "kamenridercraft:dreatrooper",
-	"kamenridercraft:agent"
-  ]
+	"values": [
+		"kamenridercraft:batta_augment",
+		"kamenridercraft:trilobite_magia",
+		"kamenridercraft:dodo_magia_chick",
+		"kamenridercraft:battle_raider",
+		"kamenridercraft:abaddon",
+		"kamenridercraft:shimi",
+		"kamenridercraft:charybdis",
+		"kamenridercraft:giff_junior",
+		"kamenridercraft:pawnjyamato_mob",
+		"kamenridercraft:gmrider",
+		"kamenridercraft:end_rider",
+		"kamenridercraft:malgam",
+		"kamenridercraft:golem",
+		"kamenridercraft:dreatrooper",
+		"kamenridercraft:agent"
+	]
 }

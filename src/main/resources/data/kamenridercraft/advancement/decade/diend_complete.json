@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:k_touch_diend"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:k_touch_diend"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.decade.diend_complete.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.decade.diend_complete.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.decade.diend_complete.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.decade.diend_complete.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:decade/diend",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:decadehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:decadetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:decadelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:diend_belt"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:k_touch_diend\"}"
-              }
+	"parent": "kamenridercraft:decade/diend",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:decadehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:decadetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:decadelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:diend_belt"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:k_touch_diend\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

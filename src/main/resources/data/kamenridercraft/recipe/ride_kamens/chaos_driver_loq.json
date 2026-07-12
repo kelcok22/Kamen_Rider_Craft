@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "loq",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:contract_chaostone"
-	}, "C": {
-	  "item": "kamenridercraft:chaos_ring_loq"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "loq",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:contract_chaostone"
+		},
+		"C": {
+			"item": "kamenridercraft:chaos_ring_loq"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chaos_driver_loq"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chaos_driver_loq"
-  }
 }

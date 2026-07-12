@@ -1,19 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "rider_food",
-  "pattern": [
-	" X ",
-	"XZX",
-	" X "
-  ],
-  "key": {
-	"X": {
-	  "item": "minecraft:paper"
-	}, "Z": {
-	  "item": "minecraft:sugar"
+	"type": "minecraft:crafting_shaped",
+	"group": "rider_food",
+	"pattern": [
+		" X ",
+		"XZX",
+		" X "
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:paper"
+		},
+		"Z": {
+			"item": "minecraft:sugar"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:candy_wrapper"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:candy_wrapper"
-  }
 }

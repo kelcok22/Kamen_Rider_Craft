@@ -1,19 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "birth_proto",
-  "pattern": [
-	"AAA",
-	"ACA",
-	"AAA"
-  ],
-  "key": {
-	 "A": {
-	  "tag": "c:dusts/redstone"
-	}, "C": {
-	  "item": "kamenridercraft:birth_core"
+	"type": "minecraft:crafting_shaped",
+	"group": "birth_proto",
+	"pattern": [
+		"AAA",
+		"ACA",
+		"AAA"
+	],
+	"key": {
+		"A": {
+			"tag": "c:dusts/redstone"
+		},
+		"C": {
+			"item": "kamenridercraft:birth_core"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:proto_birth_core"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:proto_birth_core"
-  }
 }

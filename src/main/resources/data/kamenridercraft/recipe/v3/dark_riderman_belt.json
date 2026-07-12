@@ -1,23 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ichigo",
-  "pattern": [
-	"XPX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	 "P": {
-	  "item": "kamenridercraft:sinister_pachinko_ball"
-	},"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ichigo",
+	"pattern": [
+		"XPX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"P": {
+			"item": "kamenridercraft:sinister_pachinko_ball"
+		},
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:riderman_belt_core"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:riderman_belt_core"
+	"result": {
+		"id": "kamenridercraft:dark_riderman_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:dark_riderman_belt"
-  }	
 }

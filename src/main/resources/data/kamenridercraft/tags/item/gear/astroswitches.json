@@ -1,17 +1,17 @@
 {
-  "values": [
-	"#kamenridercraft:gear/astroswitches/circle",
-	"#kamenridercraft:gear/astroswitches/cross",
-	"#kamenridercraft:gear/astroswitches/triangle",
-	"#kamenridercraft:gear/astroswitches/square",
-	"#kamenridercraft:gear/form_items/meteor",
-	"kamenridercraft:nadeshiko_switch",
-	"kamenridercraft:ikaros_switch",
-	"kamenridercraft:solu_switch",
-	"kamenridercraft:core_switch",
-	"kamenridercraft:rocket_switch_christmas_ver",
-	"kamenridercraft:gate_switch",
-	"kamenridercraft:zodiarts_switch",
-	"kamenridercraft:astroswitch"
-  ]
+	"values": [
+		"#kamenridercraft:gear/astroswitches/circle",
+		"#kamenridercraft:gear/astroswitches/cross",
+		"#kamenridercraft:gear/astroswitches/triangle",
+		"#kamenridercraft:gear/astroswitches/square",
+		"#kamenridercraft:gear/form_items/meteor",
+		"kamenridercraft:nadeshiko_switch",
+		"kamenridercraft:ikaros_switch",
+		"kamenridercraft:solu_switch",
+		"kamenridercraft:core_switch",
+		"kamenridercraft:rocket_switch_christmas_ver",
+		"kamenridercraft:gate_switch",
+		"kamenridercraft:zodiarts_switch",
+		"kamenridercraft:astroswitch"
+	]
 }

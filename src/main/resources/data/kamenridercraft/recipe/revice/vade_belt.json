@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "vade",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    }, "C": {
-      "item": "kamenridercraft:blood_vade_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:vade_belt"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "vade",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:blood_vade_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:vade_belt"
+	}
 }

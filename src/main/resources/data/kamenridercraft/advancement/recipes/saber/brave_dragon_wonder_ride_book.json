@@ -1,33 +1,33 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:brave_dragon_wonder_ride_book"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:brave_dragon_wonder_ride_book"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:saber/saber_logo",
-	  "kamenridercraft:saber/seiken_swordriver_saber",
-      "kamenridercraft:saber/kaenken_rekka",
-      "kamenridercraft:saber/diago_speedy_wonder_ride_book",
-	  "kamenridercraft:zi_o/saber_ridewatch",
-	  "kamenridercraft:geats/seiken_swordriver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:saber/saber_logo",
+			"kamenridercraft:saber/seiken_swordriver_saber",
+			"kamenridercraft:saber/kaenken_rekka",
+			"kamenridercraft:saber/diago_speedy_wonder_ride_book",
+			"kamenridercraft:zi_o/saber_ridewatch",
+			"kamenridercraft:geats/seiken_swordriver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

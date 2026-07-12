@@ -1,31 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "gotchard",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:hopper1_ride_chemy_card"
-    },
-    {
-      "item": "kamenridercraft:alchemist_ring_gold"
-    }
-  ],
-  "pattern": [
-    "bub",
-    "bwb",
-    "bbb"
-  ],
-  "key": {
-    "b": {
-      "item": "kamenridercraft:blank_ride_chemy_card"
-    },
-    "u": {
-      "item": "kamenridercraft:unfinished_exgotchalibur"
-    },
-    "w": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:exgotchalibur"
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "gotchard",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:hopper1_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:alchemist_ring_gold"
+		}
+	],
+	"pattern": [
+		"bub",
+		"bwb",
+		"bbb"
+	],
+	"key": {
+		"b": {
+			"item": "kamenridercraft:blank_ride_chemy_card"
+		},
+		"u": {
+			"item": "kamenridercraft:unfinished_exgotchalibur"
+		},
+		"w": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:exgotchalibur"
+	}
 }

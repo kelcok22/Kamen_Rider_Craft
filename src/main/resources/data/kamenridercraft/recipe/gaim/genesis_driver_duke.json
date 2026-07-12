@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "duke",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:lemon_energy_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:genesis_driver_duke"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "duke",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:lemon_energy_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:genesis_driver_duke"
+	}
 }

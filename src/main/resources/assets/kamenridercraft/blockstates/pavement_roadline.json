@@ -1,8 +1,19 @@
 {
-  "variants": {
-      "facing=north": { "model": "kamenridercraft:block/pavement_roadline" },
-      "facing=south": { "model": "kamenridercraft:block/pavement_roadline", "y": 180 },
-      "facing=west":  { "model": "kamenridercraft:block/pavement_roadline", "y": 270 },
-      "facing=east":  { "model": "kamenridercraft:block/pavement_roadline", "y": 90 }
-  }
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/pavement_roadline"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/pavement_roadline",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/pavement_roadline",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/pavement_roadline",
+			"y": 90
+		}
+	}
 }

@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kamakiri_genome",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:kamakiri_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:kamakiric_arrow"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kamakiri_genome",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:kamakiri_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kamakiric_arrow"
+	}
 }
 

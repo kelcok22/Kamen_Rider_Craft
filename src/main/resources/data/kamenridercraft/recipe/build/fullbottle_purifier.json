@@ -1,21 +1,23 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "build",
-  "pattern": [
-	"IXI",
-	"XMX",
-	"IXI"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:nebula_gas_sample"
-	},"I": {
-	  "tag": "c:ingots/iron"
-	},"M": {
-	  "item": "kamenridercraft:monitor"
+	"type": "minecraft:crafting_shaped",
+	"group": "build",
+	"pattern": [
+		"IXI",
+		"XMX",
+		"IXI"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:nebula_gas_sample"
+		},
+		"I": {
+			"tag": "c:ingots/iron"
+		},
+		"M": {
+			"item": "kamenridercraft:monitor"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:fullbottle_purifier"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:fullbottle_purifier"
-  }
 }

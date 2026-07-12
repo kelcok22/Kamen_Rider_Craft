@@ -1,6 +1,6 @@
 {
-  "type": "neoforge:add_features",
-  "biomes": "#is_overworld",
-  "features": "kamenridercraft:stone_hibiki_placed",
-  "step": "underground_ores"
+	"type": "neoforge:add_features",
+	"biomes": "#is_overworld",
+	"features": "kamenridercraft:stone_hibiki_placed",
+	"step": "underground_ores"
 }

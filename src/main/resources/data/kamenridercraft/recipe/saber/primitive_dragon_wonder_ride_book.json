@@ -2,15 +2,14 @@
 	"type": "minecraft:crafting_shapeless",
 	"group": "saber_primitive_dragon",
 	"ingredients": [
-  {
-	  
-	  "item": "kamenridercraft:wonder_world_story_of_kaenken_rekka_wonder_ride_book"
-	  }, 
-	  {
-		"item":  "kamenridercraft:forbidden_tome"
-	  } 
-	  ],
+		{
+			"item": "kamenridercraft:wonder_world_story_of_kaenken_rekka_wonder_ride_book"
+		},
+		{
+			"item": "kamenridercraft:forbidden_tome"
+		}
+	],
 	"result": {
-	  "id": "kamenridercraft:primitive_dragon_wonder_ride_book"
+		"id": "kamenridercraft:primitive_dragon_wonder_ride_book"
 	}
-  }
+}

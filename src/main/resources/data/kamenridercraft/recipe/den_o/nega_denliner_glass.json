@@ -1,22 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco_nega",
-  "pattern": [
-    "ada",
-    "dad",
-    "ada"
-  ],
-  "key": {
-    "a": {
-	  "item": "kamenridercraft:denliner_glass"
-    },
-	"d": {
-	  "item": "kamenridercraft:denliner_glass_ikazuchi"
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco_nega",
+	"pattern": [
+		"ada",
+		"dad",
+		"ada"
+	],
+	"key": {
+		"a": {
+			"item": "kamenridercraft:denliner_glass"
+		},
+		"d": {
+			"item": "kamenridercraft:denliner_glass_ikazuchi"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:nega_denliner_glass",
+		"count": 9
 	}
-  },
-  "result": {
-    "id": "kamenridercraft:nega_denliner_glass",
-	"count": 9
-  }
 }

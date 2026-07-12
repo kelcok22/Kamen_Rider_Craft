@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:build_driver_grease"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:build_driver_grease"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.grease_blizzard.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.grease_blizzard.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.grease_blizzard.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.grease_blizzard.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/grease",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:build_driver_grease"
-			  ]
+	"parent": "kamenridercraft:build/grease",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:buildhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:buildtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:buildlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:build_driver_grease"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

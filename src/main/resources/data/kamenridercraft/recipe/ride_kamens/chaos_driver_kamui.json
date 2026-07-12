@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kamui",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:contract_chaostone"
-	}, "C": {
-	  "item": "kamenridercraft:chaos_ring_kamui"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kamui",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:contract_chaostone"
+		},
+		"C": {
+			"item": "kamenridercraft:chaos_ring_kamui"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chaos_driver_kamui"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chaos_driver_kamui"
-  }
 }

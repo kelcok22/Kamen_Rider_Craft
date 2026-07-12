@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "ryuki",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:advent_deck_blank"
-    },
-    {
-      "item": "kamenridercraft:destwilder_advent"
-    }
-  ],
-  "result": {
-    "id": "kamenridercraft:advent_deck_tiger"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "ryuki",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:advent_deck_blank"
+		},
+		{
+			"item": "kamenridercraft:destwilder_advent"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:advent_deck_tiger"
+	}
 }

@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "w",
-  "pattern": [
-	"XCX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:gaiamemory"
-	}, "C": {
-	  "item": "kamenridercraft:prism_memory"
-	}, "Z": {
-	  "item": "minecraft:shield"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "w",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:gaiamemory"
+		},
+		"C": {
+			"item": "kamenridercraft:prism_memory"
+		},
+		"Z": {
+			"item": "minecraft:shield"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shield_prism_bicker"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:shield_prism_bicker"
-  }
 }

@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_w",
-  "pattern": [
-	"X X",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:gaiamemory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_w",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:gaiamemory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:wtroso"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:wtroso"
-  }
 }

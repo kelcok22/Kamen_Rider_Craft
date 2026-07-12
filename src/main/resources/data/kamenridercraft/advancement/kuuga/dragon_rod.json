@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:dragon_rod"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:dragon_rod"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.kuuga.dragon_rod.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.kuuga.dragon_rod.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.kuuga.dragon_rod.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.kuuga.dragon_rod.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:kuuga/kuuga",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:dragon_rod"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:kuuga/kuuga",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:dragon_rod"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

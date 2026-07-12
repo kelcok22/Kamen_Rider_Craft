@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "hibiki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onsa"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "hibiki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onsa"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:hibikidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:hibikidriver"
-  }
 }

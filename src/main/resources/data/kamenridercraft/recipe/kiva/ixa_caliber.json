@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ixa",
-  "pattern": [
-	"XRX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestlefake"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ixa",
+	"pattern": [
+		"XRX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestlefake"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:caliburfuestle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:caliburfuestle"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:ixa_caliber"
-  }	
+	"result": {
+		"id": "kamenridercraft:ixa_caliber"
+	}
 }

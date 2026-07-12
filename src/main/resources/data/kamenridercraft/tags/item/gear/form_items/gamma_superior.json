@@ -1,8 +1,8 @@
 {
-  "values": [
-    "kamenridercraft:transform_gamma_eyecon",
-    "kamenridercraft:transform_gamma_eyecon_camille",
-    "kamenridercraft:knife_gamma_eyecon",
-	"kamenridercraft:grimm_ghost_eyecon"
-  ]
+	"values": [
+		"kamenridercraft:transform_gamma_eyecon",
+		"kamenridercraft:transform_gamma_eyecon_camille",
+		"kamenridercraft:knife_gamma_eyecon",
+		"kamenridercraft:grimm_ghost_eyecon"
+	]
 }

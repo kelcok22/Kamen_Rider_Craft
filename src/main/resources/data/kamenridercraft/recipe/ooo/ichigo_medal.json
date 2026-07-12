@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_medal",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:typhoon_core"
-	}, 
-	{
-	  "item": "kamenridercraft:cellmedal"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_medal",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:typhoon_core"
+		},
+		{
+			"item": "kamenridercraft:cellmedal"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:ichigo_medal"
-  }
+	"result": {
+		"id": "kamenridercraft:ichigo_medal"
+	}
 }

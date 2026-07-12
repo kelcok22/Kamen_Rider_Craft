@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_ooo",
-  "pattern": [
-	"XXX",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:cellmedal"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ooo",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:cellmedal"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ooohead"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ooohead"
-  }
 }

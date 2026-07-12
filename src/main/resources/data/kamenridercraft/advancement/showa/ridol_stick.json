@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:ridol"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ridol"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.showa.ridol_stick.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.showa.ridol_stick.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.showa.ridol_stick.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.showa.ridol_stick.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:showa/x",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:ridol_stick"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:showa/x",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:ridol_stick"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

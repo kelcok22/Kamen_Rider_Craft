@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/artificial_gravity_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/artificial_gravity_block"
+		}
+	}
+}

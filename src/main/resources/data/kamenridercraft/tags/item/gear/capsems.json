@@ -1,21 +1,21 @@
 {
-  "values": [
-	"#kamenridercraft:gear/capsems/physicam",
-    "#kamenridercraft:gear/capsems/technolom",
-    "#kamenridercraft:gear/capsems/esprim",
-    "#kamenridercraft:gear/capsems/paradigm",
-    "kamenridercraft:plasma_capsem",
-    "kamenridercraft:booster_capsem",
-    "kamenridercraft:dualmare_capsem",
-    "kamenridercraft:exdreamrise_capsem",
-    "kamenridercraft:zeztz_and_code_zeroider_capsem",
-    "kamenridercraft:charge_capsem",
-    "kamenridercraft:erase_capsem",
-    "#kamenridercraft:gear/capsems/lord",
-    "#kamenridercraft:gear/capsems/nox",
-    "kamenridercraft:punish_capsem",
-    "kamenridercraft:darkness_capsem",
-    "kamenridercraft:daydream_capsem",
-    "#kamenridercraft:gear/legend_rider/capsems"
-  ]
+	"values": [
+		"#kamenridercraft:gear/capsems/physicam",
+		"#kamenridercraft:gear/capsems/technolom",
+		"#kamenridercraft:gear/capsems/esprim",
+		"#kamenridercraft:gear/capsems/paradigm",
+		"kamenridercraft:plasma_capsem",
+		"kamenridercraft:booster_capsem",
+		"kamenridercraft:dualmare_capsem",
+		"kamenridercraft:exdreamrise_capsem",
+		"kamenridercraft:zeztz_and_code_zeroider_capsem",
+		"kamenridercraft:charge_capsem",
+		"kamenridercraft:erase_capsem",
+		"#kamenridercraft:gear/capsems/lord",
+		"#kamenridercraft:gear/capsems/nox",
+		"kamenridercraft:punish_capsem",
+		"kamenridercraft:darkness_capsem",
+		"kamenridercraft:daydream_capsem",
+		"#kamenridercraft:gear/legend_rider/capsems"
+	]
 }

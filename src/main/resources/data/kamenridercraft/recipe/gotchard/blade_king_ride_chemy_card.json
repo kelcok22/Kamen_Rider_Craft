@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:blade_ride_chemy_card"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blade_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:blade_king_ride_chemy_card"
-  }
+	"result": {
+		"id": "kamenridercraft:blade_king_ride_chemy_card"
+	}
 }

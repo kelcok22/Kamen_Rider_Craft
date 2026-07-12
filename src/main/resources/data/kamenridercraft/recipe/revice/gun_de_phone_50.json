@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "revice",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:proto_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:gun_de_phone_50"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "revice",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:proto_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gun_de_phone_50"
+	}
 }
 

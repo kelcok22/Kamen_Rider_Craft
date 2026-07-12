@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "jackal_genome",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:jackal_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:osutoderu_hammer_50"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "jackal_genome",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:jackal_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:osutoderu_hammer_50"
+	}
 }
 

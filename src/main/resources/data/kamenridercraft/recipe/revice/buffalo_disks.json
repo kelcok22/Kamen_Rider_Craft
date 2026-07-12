@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "buffalo_genome",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:buffalo_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:buffalo_disks"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "buffalo_genome",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:buffalo_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:buffalo_disks"
+	}
 }
 

@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "gaim_kachidoki",
-  "pattern": [
-    "XXX",
-    "XSX",
-    "XMX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:kachidoki_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:kachidoki_bata"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "gaim_kachidoki",
+	"pattern": [
+		"XXX",
+		"XSX",
+		"XMX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:kachidoki_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kachidoki_bata"
+	}
 }
 

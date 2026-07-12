@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/gaohliner_logo_side"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/gaohliner_logo_side"
+		}
+	}
+}

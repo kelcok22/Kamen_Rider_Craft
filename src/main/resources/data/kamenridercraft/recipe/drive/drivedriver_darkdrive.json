@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "dark_drive",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
-	}, "C": {
-	  "item": "kamenridercraft:nextshift"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "dark_drive",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		},
+		"C": {
+			"item": "kamenridercraft:nextshift"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:drivedriver_darkdrive"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:drivedriver_darkdrive"
-  }
 }

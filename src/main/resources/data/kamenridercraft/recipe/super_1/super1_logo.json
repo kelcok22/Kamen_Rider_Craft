@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:cyclode_core"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:cyclode_core"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:super_1_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:super_1_logo"
+	}
 }

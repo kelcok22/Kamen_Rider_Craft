@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:agito_shining"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:agito_shining"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.agito.agito_shining.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.agito.agito_shining.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.agito.agito_shining.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.agito.agito_shining.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:agito/agito_burning",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:agitohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:agitotroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:agitolegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:alter_ring"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:agito_shining\"}"
-              }
+	"parent": "kamenridercraft:agito/agito_burning",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:agitohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:agitotroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:agitolegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:alter_ring"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:agito_shining\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

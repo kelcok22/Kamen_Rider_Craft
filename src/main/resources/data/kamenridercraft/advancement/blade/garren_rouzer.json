@@ -1,33 +1,33 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:garrenrouzer"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:garrenrouzer"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.blade.garren_rouzer.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.blade.garren_rouzer.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.blade.garren_rouzer.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.blade.garren_rouzer.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:blade/garren",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": [],
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:garrenrouzer"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:blade/garren",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": [],
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:garrenrouzer"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

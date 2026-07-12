@@ -1,19 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_food",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:candy_wrapper"
-	}, 
-	{
-	  "item": "minecraft:sugar"
-	} ,
-	  {
-		  "tag": "c:eggs"
-	  }
-  ],
-  "result": {
-	"id": "kamenridercraft:marshmallow"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_food",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:candy_wrapper"
+		},
+		{
+			"item": "minecraft:sugar"
+		},
+		{
+			"tag": "c:eggs"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:marshmallow"
+	}
 }

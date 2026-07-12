@@ -1,35 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "quartzer_boss_block",
-  "ingredients": [
-{
-      "item": "kamenridercraft:black_rx_ridewatch"
-    }, {
-      "item": "kamenridercraft:bio_rider_ridewatch"
-    }, {
-
-      "item": "kamenridercraft:robo_rider_ridewatch"
-    }, {
-
-      "item": "kamenridercraft:shin_ridewatch"
-    }, {
-
-      "item": "kamenridercraft:zo_ridewatch"
-    }, {
-
-      "item": "kamenridercraft:j_ridewatch"
-    }, {
-
-      "item": "kamenridercraft:amazon_omega_ridewatch"
-    },{
-
-      "item": "kamenridercraft:amazon_alpha_ridewatch"
-    },{
-
-      "item": "kamenridercraft:amazon_neo_ridewatch"
-    }
-    ],
-  "result": {
-    "id": "kamenridercraft:quartzer_boss_block"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "quartzer_boss_block",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:black_rx_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:bio_rider_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:robo_rider_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:shin_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:zo_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:j_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:amazon_omega_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:amazon_alpha_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:amazon_neo_ridewatch"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:quartzer_boss_block"
+	}
 }

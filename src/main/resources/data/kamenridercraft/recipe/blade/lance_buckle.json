@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "lance",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:bladecard"
-	}, "C": {
-	  "item": "kamenridercraft:change_kerberos_lance"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "lance",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:bladecard"
+		},
+		"C": {
+			"item": "kamenridercraft:change_kerberos_lance"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:lance_buckle"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:lance_buckle"
-  }
 }

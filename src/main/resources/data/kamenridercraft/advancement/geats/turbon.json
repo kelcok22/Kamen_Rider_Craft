@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:desire_driver_turbon"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:desire_driver_turbon"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.turbon.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.turbon.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.turbon.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.turbon.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:geats/hakubi",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:geatshead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:geatstroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:geatslegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:desire_driver_turbon"
-			  ]
+	"parent": "kamenridercraft:geats/hakubi",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:desire_driver_turbon"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

@@ -9,15 +9,20 @@
 	"key": {
 		"C": {
 			"item": "kamenridercraft:birth_core"
-		},"R": {
+		},
+		"R": {
 			"item": "kamenridercraft:rider_circuit"
-		},"W": {
+		},
+		"W": {
 			"item": "kamenridercraft:wizardgem_red"
-		},"S": {
+		},
+		"S": {
 			"item": "kamenridercraft:sasori_medal"
-		},"K": {
+		},
+		"K": {
 			"item": "kamenridercraft:kani_medal"
-		},"E": {
+		},
+		"E": {
 			"item": "kamenridercraft:ebi_medal"
 		}
 	},

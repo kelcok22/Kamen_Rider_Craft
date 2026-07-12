@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_ryuki",
- "pattern": [
-	"X X",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ryuki",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ryukitroso"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ryukitroso"
-  }
 }

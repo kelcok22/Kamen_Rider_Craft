@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/glass_ryuki"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/glass_ryuki"
+		}
+	}
+}

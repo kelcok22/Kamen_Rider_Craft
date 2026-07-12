@@ -1,8 +1,19 @@
 {
-    "variants":{   
-    "facing=north": { "model": "kamenridercraft:block/amazon_cell_mutator" },
-    "facing=south": { "model": "kamenridercraft:block/amazon_cell_mutator", "y": 180 },
-    "facing=west": { "model": "kamenridercraft:block/amazon_cell_mutator", "y": 270 },
-    "facing=east": { "model": "kamenridercraft:block/amazon_cell_mutator", "y": 90 }
-  }
- }
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/amazon_cell_mutator"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/amazon_cell_mutator",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/amazon_cell_mutator",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/amazon_cell_mutator",
+			"y": 90
+		}
+	}
+}

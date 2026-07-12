@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "shippu_memory",
-  "ingredients": [
-	{
-	  "item": "minecraft:birch_planks"
-	},
-	{
-	  "item": "kamenridercraft:cyclone_memory"
-	},
-	{
-	  "tag": "c:dyes/black"
+	"type": "minecraft:crafting_shapeless",
+	"group": "shippu_memory",
+	"ingredients": [
+		{
+			"item": "minecraft:birch_planks"
+		},
+		{
+			"item": "kamenridercraft:cyclone_memory"
+		},
+		{
+			"tag": "c:dyes/black"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:shippu_memory"
 	}
-  ],
-  "result": {
-	"id": "kamenridercraft:shippu_memory"
-  }
 }

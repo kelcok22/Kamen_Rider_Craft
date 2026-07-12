@@ -1,8 +1,19 @@
 {
-    "variants": {
-        "facing=north": { "model": "kamenridercraft:block/utan" },
-        "facing=south": { "model": "kamenridercraft:block/utan", "y": 180 },
-        "facing=west":  { "model": "kamenridercraft:block/utan", "y": 270 },
-        "facing=east":  { "model": "kamenridercraft:block/utan", "y": 90 }
-    }
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/utan"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/utan",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/utan",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/utan",
+			"y": 90
+		}
+	}
 }

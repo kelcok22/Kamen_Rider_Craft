@@ -1,20 +1,20 @@
 {
-  "values": [
-	"kamenridercraft:impact_capsem",
-    "kamenridercraft:transform_capsem",
-    "kamenridercraft:wing_capsem",
-    "kamenridercraft:stream_capsem",
-    "kamenridercraft:machinery_capsem",
-    "kamenridercraft:projection_capsem",
-    "kamenridercraft:recovery_capsem",
-    "kamenridercraft:barrier_capsem",
-	"kamenridercraft:wonder_capsem",
-    "kamenridercraft:gravity_capsem",
-    "kamenridercraft:plasma_capsem",
-    "kamenridercraft:booster_capsem",
-    "kamenridercraft:dualmare_capsem",
-    "kamenridercraft:exdreamrise_capsem",
-    "kamenridercraft:zeztz_and_code_zeroider_capsem",
-    "kamenridercraft:charge_capsem"
-  ]
+	"values": [
+		"kamenridercraft:impact_capsem",
+		"kamenridercraft:transform_capsem",
+		"kamenridercraft:wing_capsem",
+		"kamenridercraft:stream_capsem",
+		"kamenridercraft:machinery_capsem",
+		"kamenridercraft:projection_capsem",
+		"kamenridercraft:recovery_capsem",
+		"kamenridercraft:barrier_capsem",
+		"kamenridercraft:wonder_capsem",
+		"kamenridercraft:gravity_capsem",
+		"kamenridercraft:plasma_capsem",
+		"kamenridercraft:booster_capsem",
+		"kamenridercraft:dualmare_capsem",
+		"kamenridercraft:exdreamrise_capsem",
+		"kamenridercraft:zeztz_and_code_zeroider_capsem",
+		"kamenridercraft:charge_capsem"
+	]
 }

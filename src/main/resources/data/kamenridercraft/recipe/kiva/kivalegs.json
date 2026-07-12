@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kiva",
- "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kiva",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kivalegs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kivalegs"
-  }
 }

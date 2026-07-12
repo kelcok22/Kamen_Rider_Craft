@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "garulu",
-  "pattern": [
-	"XRX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "garulu",
+	"pattern": [
+		"XRX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:garulufuestle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:garulufuestle"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:garulu_saber"
-  }	
+	"result": {
+		"id": "kamenridercraft:garulu_saber"
+	}
 }

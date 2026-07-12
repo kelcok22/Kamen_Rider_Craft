@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/gaoh_liner_gold"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/gaoh_liner_gold"
+		}
+	}
+}

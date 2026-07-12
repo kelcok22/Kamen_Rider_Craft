@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_gaim",
-  "pattern": [
-    "XXX",
-    "X X"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:gaimhead"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_gaim",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gaimhead"
+	}
 }

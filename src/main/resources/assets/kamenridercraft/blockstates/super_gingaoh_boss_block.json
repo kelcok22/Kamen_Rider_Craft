@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/super_gingaoh_boss_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/super_gingaoh_boss_block"
+		}
+	}
+}

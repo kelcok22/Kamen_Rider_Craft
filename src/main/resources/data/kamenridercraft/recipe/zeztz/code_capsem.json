@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "code_capsem",
-  "ingredients": [
-	{ 
-	  "item": "kamenridercraft:rider_circuit"
-	}, 
-	{
-      "tag": "kamenridercraft:gear/gashapon_capsules"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "code_capsem",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:rider_circuit"
+		},
+		{
+			"tag": "kamenridercraft:gear/gashapon_capsules"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:code_capsem"
-  }
+	"result": {
+		"id": "kamenridercraft:code_capsem"
+	}
 }

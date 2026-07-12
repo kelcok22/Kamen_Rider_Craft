@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "w",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:gaiamemory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "w",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:gaiamemory"
+		},
+		"M": {
+			"item": "kamenridercraft:nasca_memory"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:nasca_memory"
+	"result": {
+		"id": "kamenridercraft:gaia_driver_nasca"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gaia_driver_nasca"
-  }	
 }

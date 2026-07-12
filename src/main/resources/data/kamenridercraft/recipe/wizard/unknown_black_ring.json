@@ -1,19 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "unknown_ring",
-  "ingredients": [
-{
-    
-      "tag": "c:ingots/iron"
-    }, 
-    {
-      "item": "kamenridercraft:wizardgem_black"
-    } , 
-    {
-      "item": "kamenridercraft:wizard_gem_crafting_chisel"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:unknown_black_ring"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "unknown_ring",
+	"ingredients": [
+		{
+			"tag": "c:ingots/iron"
+		},
+		{
+			"item": "kamenridercraft:wizardgem_black"
+		},
+		{
+			"item": "kamenridercraft:wizard_gem_crafting_chisel"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:unknown_black_ring"
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:dragreder_advent"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:dragreder_advent"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:ryuki/v_buckle_ryuki",
-	  "kamenridercraft:ryuki/drag_visor",
-	  "kamenridercraft:ryuki/ryuki_logo",
-	  "kamenridercraft:fourze/ryuki_switch",
-	  "kamenridercraft:gaim/ryuki_lockseed",
-	  "kamenridercraft:ghost/ryuki_ghost_eyecon",
-	  "kamenridercraft:zi_o/ryuki_ridewatch",
-	  "kamenridercraft:geats/v_buckle_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:ryuki/v_buckle_ryuki",
+			"kamenridercraft:ryuki/drag_visor",
+			"kamenridercraft:ryuki/ryuki_logo",
+			"kamenridercraft:fourze/ryuki_switch",
+			"kamenridercraft:gaim/ryuki_lockseed",
+			"kamenridercraft:ghost/ryuki_ghost_eyecon",
+			"kamenridercraft:zi_o/ryuki_ridewatch",
+			"kamenridercraft:geats/v_buckle_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

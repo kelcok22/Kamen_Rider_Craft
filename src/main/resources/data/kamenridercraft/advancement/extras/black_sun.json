@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:century_king_sun_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:century_king_sun_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.extras.black_sun.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.extras.black_sun.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.extras.black_sun.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.extras.black_sun.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:extras",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:blacksunhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:blacksuntroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:blacksunlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:century_king_sun_driver"
-			  ]
+	"parent": "kamenridercraft:extras",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:blacksunhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:blacksuntroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:blacksunlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:century_king_sun_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

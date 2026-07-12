@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kiva",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XRX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kiva",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XRX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:kiva_logo"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:kiva_logo"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:fangire_slayer"
-  }	
+	"result": {
+		"id": "kamenridercraft:fangire_slayer"
+	}
 }

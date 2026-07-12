@@ -1,25 +1,25 @@
 {
-  "values": [
-	"kamenridercraft:hibikidriver",
-	"kamenridercraft:ibukidriver",
-	"kamenridercraft:todorokidriver",
-	"kamenridercraft:zankidriver",
-	"kamenridercraft:kabukidriver",
-	"kamenridercraft:toukidriver",
-	"kamenridercraft:kiramekidriver",
-	"kamenridercraft:habatakidriver",
-	"kamenridercraft:nishikidriver",
-	"kamenridercraft:kyosukedriver",
-	"kamenridercraft:dankidriver",
-	"kamenridercraft:eikidriver",
-	"kamenridercraft:goukidriver",
-	"kamenridercraft:tokidriver",
-	"kamenridercraft:shoukidriver",
-	"kamenridercraft:amakidriver",
-	"kamenridercraft:shukidriver",
-	"kamenridercraft:bankidriver",
-	"kamenridercraft:sabakidriver",
-	"kamenridercraft:fubukidriver",
-	  "kamenridercraft:armor_of_the_ogre_belt"
-  ]
+	"values": [
+		"kamenridercraft:hibikidriver",
+		"kamenridercraft:ibukidriver",
+		"kamenridercraft:todorokidriver",
+		"kamenridercraft:zankidriver",
+		"kamenridercraft:kabukidriver",
+		"kamenridercraft:toukidriver",
+		"kamenridercraft:kiramekidriver",
+		"kamenridercraft:habatakidriver",
+		"kamenridercraft:nishikidriver",
+		"kamenridercraft:kyosukedriver",
+		"kamenridercraft:dankidriver",
+		"kamenridercraft:eikidriver",
+		"kamenridercraft:goukidriver",
+		"kamenridercraft:tokidriver",
+		"kamenridercraft:shoukidriver",
+		"kamenridercraft:amakidriver",
+		"kamenridercraft:shukidriver",
+		"kamenridercraft:bankidriver",
+		"kamenridercraft:sabakidriver",
+		"kamenridercraft:fubukidriver",
+		"kamenridercraft:armor_of_the_ogre_belt"
+	]
 }

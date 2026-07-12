@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "wind",
-  "pattern": [
-	"XXX",
-	"HXS",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ride_chemy_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "wind",
+	"pattern": [
+		"XXX",
+		"HXS",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ride_chemy_card"
+		},
+		"H": {
+			"item": "kamenridercraft:gigabaham_ride_chemy_card"
+		},
+		"S": {
+			"item": "kamenridercraft:kuroana_ride_chemy_card"
+		}
 	},
-	"H": {
-	  "item": "kamenridercraft:gigabaham_ride_chemy_card"
-	},
-	"S": {
-	  "item": "kamenridercraft:kuroana_ride_chemy_card"
+	"result": {
+		"id": "kamenridercraft:alchemisdriver_wind"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:alchemisdriver_wind"
-  }
 }

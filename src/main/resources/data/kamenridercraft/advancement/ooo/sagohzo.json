@@ -1,56 +1,56 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:sai_medal"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:sai_medal"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ooo.sagohzo.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ooo.sagohzo.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ooo.sagohzo.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ooo.sagohzo.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ooo/latorartar",
-  "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:sai_medal"
-			]
-		  }
-		]
-	  }
-	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:gorilla_medal"
-			]
-		  }
-		]
-	  }
-	},
-	"3": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:zou_medal"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:ooo/latorartar",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:sai_medal"
+						]
+					}
+				]
+			}
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:gorilla_medal"
+						]
+					}
+				]
+			}
+		},
+		"3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:zou_medal"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

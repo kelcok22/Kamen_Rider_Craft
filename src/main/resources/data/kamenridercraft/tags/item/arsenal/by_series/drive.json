@@ -1,21 +1,21 @@
 {
-  "values": [
-	"kamenridercraft:handle_sword",
-	"kamenridercraft:door_ju",
-	"kamenridercraft:trailer_hou",
-	"kamenridercraft:zenrin_shooter",
-	"kamenridercraft:break_gunner",
-	"kamenridercraft:shingouax",
-	"kamenridercraft:lupin_gunner",
-	"kamenridercraft:blade_gunner",
-	"kamenridercraft:brain_sword",
-	"kamenridercraft:justice_cage",
-	"kamenridercraft:drum_shield_red",
-	"kamenridercraft:drum_shield_green",
-	"kamenridercraft:monster_top",
-	"kamenridercraft:monster_bottom",
-	"kamenridercraft:rumble_smasher",
-	"kamenridercraft:cure_quicker",
-	"kamenridercraft:ten_ton_weight"
-  ]
+	"values": [
+		"kamenridercraft:handle_sword",
+		"kamenridercraft:door_ju",
+		"kamenridercraft:trailer_hou",
+		"kamenridercraft:zenrin_shooter",
+		"kamenridercraft:break_gunner",
+		"kamenridercraft:shingouax",
+		"kamenridercraft:lupin_gunner",
+		"kamenridercraft:blade_gunner",
+		"kamenridercraft:brain_sword",
+		"kamenridercraft:justice_cage",
+		"kamenridercraft:drum_shield_red",
+		"kamenridercraft:drum_shield_green",
+		"kamenridercraft:monster_top",
+		"kamenridercraft:monster_bottom",
+		"kamenridercraft:rumble_smasher",
+		"kamenridercraft:cure_quicker",
+		"kamenridercraft:ten_ton_weight"
+	]
 }

@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ixa",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestlefake"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ixa",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestlefake"
+		},
+		"M": {
+			"item": "kamenridercraft:knucklefuestle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:knucklefuestle"
+	"result": {
+		"id": "kamenridercraft:ixa_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ixa_belt"
-  }	
 }

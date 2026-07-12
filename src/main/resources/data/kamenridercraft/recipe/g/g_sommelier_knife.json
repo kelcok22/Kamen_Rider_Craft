@@ -1,7 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_g",
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_g",
 	"pattern": [
 		"XMX",
 		"XSX",
@@ -18,7 +18,7 @@
 			"item": "kamenridercraft:goro_wine_bottle"
 		}
 	},
-  "result": {
-	"id": "kamenridercraft:g_sommelier_knife"
-  }
+	"result": {
+		"id": "kamenridercraft:g_sommelier_knife"
+	}
 }

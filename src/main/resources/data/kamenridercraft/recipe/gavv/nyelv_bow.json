@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "stomach",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_gochizo"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:nyelv_mimic_key"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:nyelv_bow"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "stomach",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:nyelv_mimic_key"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:nyelv_bow"
+	}
 }
 

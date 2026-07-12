@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "verde",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "verde",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		},
+		"M": {
+			"item": "kamenridercraft:advent_deck_verde"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:advent_deck_verde"
+	"result": {
+		"id": "kamenridercraft:v_buckle_verde"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:v_buckle_verde"
-  }	
 }

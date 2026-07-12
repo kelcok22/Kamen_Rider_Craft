@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:vice_ride_chemy_card"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vice_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:ultimate_vice_ride_chemy_card"
-  }
+	"result": {
+		"id": "kamenridercraft:ultimate_vice_ride_chemy_card"
+	}
 }

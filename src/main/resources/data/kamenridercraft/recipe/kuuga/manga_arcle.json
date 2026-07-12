@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kuuga",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:kuuga_growing"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kuuga",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:kuuga_growing"
+		},
+		"M": {
+			"item": "kamenridercraft:kuuga_manga"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:kuuga_manga"
+	"result": {
+		"id": "kamenridercraft:manga_arcle"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:manga_arcle"
-  }	
 }

@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "chalice",
-  "ingredients": [
-	{ 
-	  "item": "kamenridercraft:wild_slasher"
-	},
-	{
-	  "item": "kamenridercraft:chalice_arrow"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "chalice",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:wild_slasher"
+		},
+		{
+			"item": "kamenridercraft:chalice_arrow"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:wild_chalice_arrow"
-  }
+	"result": {
+		"id": "kamenridercraft:wild_chalice_arrow"
+	}
 }

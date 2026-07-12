@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:ark_driver_zero_thousand_ark"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ark_driver_zero_thousand_ark"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zero_one.thousand_ark.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zero_one.thousand_ark.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.zero_one.thousand_ark.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.zero_one.thousand_ark.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:zero_one/thouser",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zero_onehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zero_onetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zero_onelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:ark_driver_zero_thousand_ark"
-			  ]
+	"parent": "kamenridercraft:zero_one/thouser",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zero_onehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zero_onetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zero_onelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:ark_driver_zero_thousand_ark"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

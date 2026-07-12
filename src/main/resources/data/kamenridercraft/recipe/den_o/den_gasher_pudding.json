@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "den_o_pudding",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:rider_ticket_pudding"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:den_gasher_pudding"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "den_o_pudding",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:rider_ticket_pudding"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:den_gasher_pudding"
+	}
 }
 

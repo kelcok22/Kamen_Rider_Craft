@@ -1,10 +1,10 @@
 {
-  "values": [
-    "kamenridercraft:kuwagata_vistamp",
-    "kamenridercraft:batta_vistamp",
-    "kamenridercraft:mogura_vistamp",
-    "kamenridercraft:scorpion_vistamp",
-    "kamenridercraft:anomalocaris_vistamp",
-    "kamenridercraft:condor_vistamp"
-  ]
+	"values": [
+		"kamenridercraft:kuwagata_vistamp",
+		"kamenridercraft:batta_vistamp",
+		"kamenridercraft:mogura_vistamp",
+		"kamenridercraft:scorpion_vistamp",
+		"kamenridercraft:anomalocaris_vistamp",
+		"kamenridercraft:condor_vistamp"
+	]
 }

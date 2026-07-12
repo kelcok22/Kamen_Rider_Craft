@@ -1,8 +1,8 @@
 {
-  "values": [
-	  "kamenridercraft:shadow_capsem",
-    "kamenridercraft:gun_capsem",
-    "kamenridercraft:wolf_capsem",
-    "kamenridercraft:midnight_shadow_capsem"
-  ]
+	"values": [
+		"kamenridercraft:shadow_capsem",
+		"kamenridercraft:gun_capsem",
+		"kamenridercraft:wolf_capsem",
+		"kamenridercraft:midnight_shadow_capsem"
+	]
 }

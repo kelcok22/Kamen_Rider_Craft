@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "scissors",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "scissors",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		},
+		"M": {
+			"item": "kamenridercraft:advent_deck_scissors"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:advent_deck_scissors"
+	"result": {
+		"id": "kamenridercraft:v_buckle_scissors"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:v_buckle_scissors"
-  }	
 }
