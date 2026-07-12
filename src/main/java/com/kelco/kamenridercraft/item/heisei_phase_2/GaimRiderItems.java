@@ -901,6 +901,9 @@ public class GaimRiderItems {
             }
                     .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
+    public static final DeferredItem<Item> BLACK_BANANA_LOCKSEED = ITEMS.register("black_banana_lockseed",
+            () -> new CopyFormChangeItem(new Item.Properties(),BANANA_LOCKSEED.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+
     public static final DeferredItem<Item> PROTO_DONGURI_LOCKSEED = ITEMS.register("proto_donguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_donguri_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
