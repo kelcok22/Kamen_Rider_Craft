@@ -661,7 +661,10 @@ public class WRiderItems {
 	public static final DeferredItem<Item> UTOPIA_MEMORY = ITEMS.register("utopia_memory",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
-	public static final DeferredItem<Item> UNICON_MEMORY = ITEMS.register("unicorn_memory",
+    public static final DeferredItem<Item> SHINIGAMI_HAKASE_MEMORY  = ITEMS.register("shinigami_hakase_dopant_memory",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+
+    public static final DeferredItem<Item> UNICON_MEMORY = ITEMS.register("unicorn_memory",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNICON_MEMORY_ENHANCING_ADAPTER = ITEMS.register("unicorn_memory_enhancing_adapter",
