@@ -761,8 +761,9 @@ public class WRiderItems {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"accel",ACCEL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()) {
                 public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
                    // getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())
-                    if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<15&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0){
-                        return "accel_yellow";
+                    if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0){
+                        if(rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<15)return "accel_yellow";
+                        return "accel";
                     }
                     return super.getText(itemStack,equipmentSlot,rider,riderName);
                 }
