@@ -1,25 +1,25 @@
 {
-  "values": [
-	"kamenridercraft:faiz_phone",
-	"kamenridercraft:faiz_phone_pointer",
-	"kamenridercraft:faiz_edge",
-	"kamenridercraft:faiz_shot",
-	"kamenridercraft:faiz_blaster",
-	"kamenridercraft:kaixa_phone",
-	"kamenridercraft:kaixa_blaygun",
-	"kamenridercraft:kaixa_shot",
-	"kamenridercraft:kaixa_crosslasher",
-	"kamenridercraft:delta_blaster",
-	"kamenridercraft:psyga_tonfa_edge",
-	"kamenridercraft:psyga_phone",
-	"kamenridercraft:orga_stlanzer",
-	"kamenridercraft:orga_phone",
-	"kamenridercraft:faiz_phone_20_plus_burst",
-	"kamenridercraft:faiz_phone_20_plus_knuckle",
-	"kamenridercraft:kaixa_phone_xx",
-	"kamenridercraft:muez_edge",
-	"kamenridercraft:muez_phone_burst",
-	"kamenridercraft:muez_phone_knuckle",
-	"kamenridercraft:axel_ray_gun"
-  ]
+	"values": [
+		"kamenridercraft:faiz_phone",
+		"kamenridercraft:faiz_phone_pointer",
+		"kamenridercraft:faiz_edge",
+		"kamenridercraft:faiz_shot",
+		"kamenridercraft:faiz_blaster",
+		"kamenridercraft:kaixa_phone",
+		"kamenridercraft:kaixa_blaygun",
+		"kamenridercraft:kaixa_shot",
+		"kamenridercraft:kaixa_crosslasher",
+		"kamenridercraft:delta_blaster",
+		"kamenridercraft:psyga_tonfa_edge",
+		"kamenridercraft:psyga_phone",
+		"kamenridercraft:orga_stlanzer",
+		"kamenridercraft:orga_phone",
+		"kamenridercraft:faiz_phone_20_plus_burst",
+		"kamenridercraft:faiz_phone_20_plus_knuckle",
+		"kamenridercraft:kaixa_phone_xx",
+		"kamenridercraft:muez_edge",
+		"kamenridercraft:muez_phone_burst",
+		"kamenridercraft:muez_phone_knuckle",
+		"kamenridercraft:axel_ray_gun"
+	]
 }

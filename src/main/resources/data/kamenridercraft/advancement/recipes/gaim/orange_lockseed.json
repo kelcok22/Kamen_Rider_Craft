@@ -1,38 +1,38 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:orange_lockseed"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:orange_lockseed"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:gaim/gaim_logo",
-	  "kamenridercraft:gaim/sengoku_driver_gaim",
-	  "kamenridercraft:gaim/daidaimaru",
-	  "kamenridercraft:gaim/kabi_orange_lockseed",
-	  "kamenridercraft:gaim/fresh_orange_lockseed",
-	  "kamenridercraft:gaim/dark_orange_lockseed",
-	  "kamenridercraft:gaim/gaim_lockseed",
-	  "kamenridercraft:decade/gaim_card",
-	  "kamenridercraft:ghost/gaim_ghost_eyecon",
-	  "kamenridercraft:zi_o/gaim_ridewatch",
-	  "kamenridercraft:geats/sengoku_driver_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:gaim/gaim_logo",
+			"kamenridercraft:gaim/sengoku_driver_gaim",
+			"kamenridercraft:gaim/daidaimaru",
+			"kamenridercraft:gaim/kabi_orange_lockseed",
+			"kamenridercraft:gaim/fresh_orange_lockseed",
+			"kamenridercraft:gaim/dark_orange_lockseed",
+			"kamenridercraft:gaim/gaim_lockseed",
+			"kamenridercraft:decade/gaim_card",
+			"kamenridercraft:ghost/gaim_ghost_eyecon",
+			"kamenridercraft:zi_o/gaim_ridewatch",
+			"kamenridercraft:geats/sengoku_driver_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

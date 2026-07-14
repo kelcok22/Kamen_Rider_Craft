@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "valvarad",
-  "pattern": [
-	"XTX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ride_chemy_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "valvarad",
+	"pattern": [
+		"XTX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ride_chemy_card"
+		},
+		"T": {
+			"item": "kamenridercraft:wizardgem_violet"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		}
 	},
-	"T": {
-	  "item": "kamenridercraft:wizardgem_violet"
-	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
+	"result": {
+		"id": "kamenridercraft:chemy_riser_supana"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chemy_riser_supana"
-  }	
 }
 

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "toki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_orehell"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onibue_toki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "toki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onibue_toki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:tokidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:tokidriver"
-  }
 }

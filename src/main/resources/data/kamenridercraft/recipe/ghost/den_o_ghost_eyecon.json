@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_rider_eyecons",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:blank_ghost_eyecon"
-    },
-    {
-	  "item": "kamenridercraft:rider_ticket_sword"
-    }
-  ],
-  "result": {
-    "id": "kamenridercraft:den_o_ghost_eyecon"
-  }	
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_rider_eyecons",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		},
+		{
+			"item": "kamenridercraft:rider_ticket_sword"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:den_o_ghost_eyecon"
+	}
 }

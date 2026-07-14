@@ -1,8 +1,8 @@
 {
-  "values": [
-    "kamenridercraft:touto_guardian",
-    "kamenridercraft:hokuto_guardian",
-    "kamenridercraft:seito_guardian",
-    "kamenridercraft:hard_guardian"
-  ]
+	"values": [
+		"kamenridercraft:touto_guardian",
+		"kamenridercraft:hokuto_guardian",
+		"kamenridercraft:seito_guardian",
+		"kamenridercraft:hard_guardian"
+	]
 }

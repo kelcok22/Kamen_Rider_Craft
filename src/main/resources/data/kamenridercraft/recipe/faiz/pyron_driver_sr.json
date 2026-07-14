@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "pyron_gear",
-  "pattern": [
-	"XDX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
-	}, "C": {
-	  "item": "kamenridercraft:pyron_mission_memory"
-	}, "D": {
-	  "tag": "c:dyes/red"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "pyron_gear",
+	"pattern": [
+		"XDX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"C": {
+			"item": "kamenridercraft:pyron_mission_memory"
+		},
+		"D": {
+			"tag": "c:dyes/red"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:pyron_driver_sr"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:pyron_driver_sr"
-  }
 }

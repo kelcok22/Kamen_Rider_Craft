@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:storm_halberd"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:storm_halberd"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.agito.storm_halberd.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.agito.storm_halberd.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.agito.storm_halberd.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.agito.storm_halberd.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:agito/flame_saber",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:storm_halberd"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:agito/flame_saber",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:storm_halberd"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

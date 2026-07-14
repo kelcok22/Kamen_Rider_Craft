@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "mugen",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:code_capsem"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "mugen",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:code_capsem"
+		},
+		"M": {
+			"item": "kamenridercraft:daydream_capsem"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:daydream_capsem"
+	"result": {
+		"id": "kamenridercraft:mugen_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:mugen_driver"
-  }	
 }

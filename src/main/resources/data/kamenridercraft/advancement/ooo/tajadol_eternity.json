@@ -1,56 +1,56 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:taka_eternity_medal"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:taka_eternity_medal"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ooo.tajadol_eternity.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ooo.tajadol_eternity.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ooo.tajadol_eternity.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ooo.tajadol_eternity.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ooo/tajadol",
-  "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:taka_eternity_medal"
-			]
-		  }
-		]
-	  }
-	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:kujaku_eternity_medal"
-			]
-		  }
-		]
-	  }
-	},
-	"3": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:condor_eternity_medal"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:ooo/tajadol",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:taka_eternity_medal"
+						]
+					}
+				]
+			}
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:kujaku_eternity_medal"
+						]
+					}
+				]
+			}
+		},
+		"3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:condor_eternity_medal"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "geiz",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:geiz_ridewatch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:ziku_driver_geiz"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "geiz",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:geiz_ridewatch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ziku_driver_geiz"
+	}
 }

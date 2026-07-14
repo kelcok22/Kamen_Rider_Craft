@@ -1,23 +1,23 @@
 {
-  "values": [
-	"kamenridercraft:terror_memory",
-	"kamenridercraft:taboo_memory",
-	"kamenridercraft:claydoll_memory",
-	"kamenridercraft:nasca_memory",
-	"kamenridercraft:smilodon_memory",
-	"kamenridercraft:weather_memory",
-	"kamenridercraft:quetzalcoatlus_memory",
-	"kamenridercraft:quetzalcoatlus_memory_prototype",
-	"kamenridercraft:utopia_memory",
-	"kamenridercraft:unicorn_memory",
-	"kamenridercraft:unicorn_memory_enhancing_adapter",
-	"kamenridercraft:magma_memory",
-	"kamenridercraft:commander_memory",
-	"kamenridercraft:commander_memory_enhancing_adapter",
-	"kamenridercraft:memory_memory",
-    "kamenridercraft:joker_dopant_memory_broken",
-    "kamenridercraft:joker_dopant_memory",
-    "kamenridercraft:egg_chicken_memory",
-	"kamenridercraft:masquerade_memory"
-  ]
+	"values": [
+		"kamenridercraft:terror_memory",
+		"kamenridercraft:taboo_memory",
+		"kamenridercraft:claydoll_memory",
+		"kamenridercraft:nasca_memory",
+		"kamenridercraft:smilodon_memory",
+		"kamenridercraft:weather_memory",
+		"kamenridercraft:quetzalcoatlus_memory",
+		"kamenridercraft:quetzalcoatlus_memory_prototype",
+		"kamenridercraft:utopia_memory",
+		"kamenridercraft:unicorn_memory",
+		"kamenridercraft:unicorn_memory_enhancing_adapter",
+		"kamenridercraft:magma_memory",
+		"kamenridercraft:commander_memory",
+		"kamenridercraft:commander_memory_enhancing_adapter",
+		"kamenridercraft:memory_memory",
+		"kamenridercraft:joker_dopant_memory_broken",
+		"kamenridercraft:joker_dopant_memory",
+		"kamenridercraft:egg_chicken_memory",
+		"kamenridercraft:masquerade_memory"
+	]
 }

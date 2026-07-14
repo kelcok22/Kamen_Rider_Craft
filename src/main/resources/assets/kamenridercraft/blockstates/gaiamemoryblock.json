@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/gaiamemoryblock"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/gaiamemoryblock"
+		}
+	}
+}

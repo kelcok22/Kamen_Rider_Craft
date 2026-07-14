@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/sword_of_logos_gold_trim"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/sword_of_logos_gold_trim"
+		}
+	}
+}

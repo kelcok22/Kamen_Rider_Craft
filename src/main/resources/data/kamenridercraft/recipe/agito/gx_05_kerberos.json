@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g3_x",
-  "pattern": [
-	"RCR",
-	"CGI",
-	"RCR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:g3x"
-	}, "G": {
-	  "item": "kamenridercraft:base_sword"
-	}, "C": {
-	  "tag": "c:gunpowders"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g3_x",
+	"pattern": [
+		"RCR",
+		"CGI",
+		"RCR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:g3x"
+		},
+		"G": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"tag": "c:gunpowders"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gx_05_kerberos"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gx_05_kerberos"
-  }
 }

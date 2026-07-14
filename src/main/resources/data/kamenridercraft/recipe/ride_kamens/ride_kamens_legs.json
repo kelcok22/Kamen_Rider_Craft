@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ride_kamens",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:contract_chaostone"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ride_kamens",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:contract_chaostone"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ride_kamens_legs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ride_kamens_legs"
-  }
 }

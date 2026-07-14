@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "kirifuda_memory",
-  "ingredients": [
-	{
-	  "item": "minecraft:birch_planks"
-	},
-	{
-	  "item": "kamenridercraft:joker_memory"
-	},
-	{
-	  "tag": "c:dyes/black"
+	"type": "minecraft:crafting_shapeless",
+	"group": "kirifuda_memory",
+	"ingredients": [
+		{
+			"item": "minecraft:birch_planks"
+		},
+		{
+			"item": "kamenridercraft:joker_memory"
+		},
+		{
+			"tag": "c:dyes/black"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:kirifuda_memory"
 	}
-  ],
-  "result": {
-	"id": "kamenridercraft:kirifuda_memory"
-  }
 }

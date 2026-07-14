@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "muez",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
-	}, "C": {
-	  "item": "kamenridercraft:muez_mission_memory"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "muez",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"C": {
+			"item": "kamenridercraft:muez_mission_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:muez_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:muez_driver"
-  }
 }

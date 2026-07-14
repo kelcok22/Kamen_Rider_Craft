@@ -1,6 +1,6 @@
 {
-  "values": [
-    "#kamenridercraft:gear/lockseeds/normal",
-    "#kamenridercraft:gear/lockseeds/energy"
-  ]
+	"values": [
+		"#kamenridercraft:gear/lockseeds/normal",
+		"#kamenridercraft:gear/lockseeds/energy"
+	]
 }

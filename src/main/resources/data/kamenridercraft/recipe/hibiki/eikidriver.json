@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "eiki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onsa_eiki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "eiki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onsa_eiki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:eikidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:eikidriver"
-  }
 }

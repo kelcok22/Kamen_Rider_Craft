@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "ridewatch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:blank_watch"
-    }, 
-    {
-      "item": "kamenridercraft:poppingummy_gochizo"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:gavv_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "ridewatch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_watch"
+		},
+		{
+			"item": "kamenridercraft:poppingummy_gochizo"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:gavv_ridewatch"
+	}
 }

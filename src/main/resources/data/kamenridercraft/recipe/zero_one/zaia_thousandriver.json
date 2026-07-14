@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "thouser",
-  "pattern": [
-    "XXX",
-    "CXA",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:amazing_caucasus_progrisekey"
-    }, "A": {
-      "item": "kamenridercraft:awaking_arsino_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zaia_thousandriver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "thouser",
+	"pattern": [
+		"XXX",
+		"CXA",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:amazing_caucasus_progrisekey"
+		},
+		"A": {
+			"item": "kamenridercraft:awaking_arsino_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zaia_thousandriver"
+	}
 }

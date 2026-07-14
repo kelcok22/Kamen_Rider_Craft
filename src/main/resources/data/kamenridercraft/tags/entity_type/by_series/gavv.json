@@ -1,14 +1,14 @@
 {
-  "values": [
-	"kamenridercraft:agent",
-  "kamenridercraft:bitter_gavv",
-  "kamenridercraft:jeeb_stomach",
-    "kamenridercraft:shiita_stomach",
-    "kamenridercraft:nyelv_stomach",
-  "kamenridercraft:glotta_stomach",
-    "kamenridercraft:lango_stomach",
-    "kamenridercraft:bocca_jaldak",
-    "kamenridercraft:caries",
-	"kamenridercraft:whipped_soldier"
-  ]
+	"values": [
+		"kamenridercraft:agent",
+		"kamenridercraft:bitter_gavv",
+		"kamenridercraft:jeeb_stomach",
+		"kamenridercraft:shiita_stomach",
+		"kamenridercraft:nyelv_stomach",
+		"kamenridercraft:glotta_stomach",
+		"kamenridercraft:lango_stomach",
+		"kamenridercraft:bocca_jaldak",
+		"kamenridercraft:caries",
+		"kamenridercraft:whipped_soldier"
+	]
 }

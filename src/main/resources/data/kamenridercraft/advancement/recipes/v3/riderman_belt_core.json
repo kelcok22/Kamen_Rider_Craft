@@ -1,37 +1,37 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:riderman_belt_core"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:riderman_belt_core"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:v3/riderman_belt",
-	  "kamenridercraft:v3/riderman_logo",
-	  "kamenridercraft:v3/rope_arm",
-	  "kamenridercraft:v3/power_arm",
-	  "kamenridercraft:v3/drill_arm",
-	  "kamenridercraft:v3/machine_gun_arm",
-	  "kamenridercraft:v3/cutter_arm",
-	  "kamenridercraft:decade/riderman_card",
-	  "kamenridercraft:fourze/riderman_switch",
-	  "kamenridercraft:zi_o/riderman_ridewatch"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:v3/riderman_belt",
+			"kamenridercraft:v3/riderman_logo",
+			"kamenridercraft:v3/rope_arm",
+			"kamenridercraft:v3/power_arm",
+			"kamenridercraft:v3/drill_arm",
+			"kamenridercraft:v3/machine_gun_arm",
+			"kamenridercraft:v3/cutter_arm",
+			"kamenridercraft:decade/riderman_card",
+			"kamenridercraft:fourze/riderman_switch",
+			"kamenridercraft:zi_o/riderman_ridewatch"
+		]
+	},
+	"sends_telemetry_event": false
 }

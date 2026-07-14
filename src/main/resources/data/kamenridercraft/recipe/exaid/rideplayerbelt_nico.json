@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "nico",
-  "ingredients": [
-	{
-	  "item": "kamenridercraft:kamen_rider_chronicle_gashat"
-	},
-	{
-	  "item": "kamenridercraft:bang_bang_shooting_gashat"
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "nico",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kamen_rider_chronicle_gashat"
+		},
+		{
+			"item": "kamenridercraft:bang_bang_shooting_gashat"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:rideplayerbelt_nico"
 	}
-  ],
-  "result": {
-	"id": "kamenridercraft:rideplayerbelt_nico"
-  }
 }

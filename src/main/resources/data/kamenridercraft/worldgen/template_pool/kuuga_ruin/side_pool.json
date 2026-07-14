@@ -1,27 +1,26 @@
 {
-  "name": "kamenridercraft:kuuga_ruin/side_pool",
-  
-  "fallback": "minecraft:empty",
-  "elements": [
-    {
-      "weight": 1,
-      "element": {
-        "location": "kamenridercraft:kuuga_ruin_tunnel",
-        "processors": "minecraft:empty",
-        "override_liquid_settings": "ignore_waterlogging",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 1,
-      "element": {
-        "location": "kamenridercraft:kuuga_ruin_tomb",
-        "processors": "minecraft:empty",
-        "override_liquid_settings": "ignore_waterlogging",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    }
-  ]
+	"name": "kamenridercraft:kuuga_ruin/side_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"location": "kamenridercraft:kuuga_ruin_tunnel",
+				"processors": "minecraft:empty",
+				"override_liquid_settings": "ignore_waterlogging",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "kamenridercraft:kuuga_ruin_tomb",
+				"processors": "minecraft:empty",
+				"override_liquid_settings": "ignore_waterlogging",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
 }

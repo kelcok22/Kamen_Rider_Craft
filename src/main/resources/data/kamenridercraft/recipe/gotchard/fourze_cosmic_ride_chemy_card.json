@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:fourze_ride_chemy_card"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:fourze_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:fourze_cosmic_ride_chemy_card"
-  }
+	"result": {
+		"id": "kamenridercraft:fourze_cosmic_ride_chemy_card"
+	}
 }

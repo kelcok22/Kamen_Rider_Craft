@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:desire_driver_lopo"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:desire_driver_lopo"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.lopo.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.lopo.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.lopo.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.lopo.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:geats/nadge-sparrow",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:geatshead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:geatstroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:geatslegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:desire_driver_lopo"
-			  ]
+	"parent": "kamenridercraft:geats/nadge-sparrow",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:desire_driver_lopo"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

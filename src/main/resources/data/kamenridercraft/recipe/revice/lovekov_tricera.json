@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "tricera_genome",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:tricera_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:lovekov_tricera"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "tricera_genome",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:tricera_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:lovekov_tricera"
+	}
 }
 

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kenzan",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    }, "C": {
-      "item": "kamenridercraft:sarutobi_ninjaden_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:sword_of_logos_buckle_kenzan"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kenzan",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"C": {
+			"item": "kamenridercraft:sarutobi_ninjaden_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sword_of_logos_buckle_kenzan"
+	}
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:bakebuckle"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:bakebuckle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gavv.bake.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gavv.bake.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gavv.bake.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gavv.bake.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gavv/bitter_gavv",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gavv_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gavv_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gavv_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:bakebuckle"
-			  ]
+	"parent": "kamenridercraft:gavv/bitter_gavv",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:gavv_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:gavv_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:gavv_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:bakebuckle"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

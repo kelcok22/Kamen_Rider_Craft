@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "gaia",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "gaia",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:gaia_core"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:gaia_core"
+	"result": {
+		"id": "kamenridercraft:gaia_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gaia_belt"
-  }	
 }

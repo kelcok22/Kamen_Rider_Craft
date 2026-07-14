@@ -1,6 +1,6 @@
 {
-  "values": [
-	"minecraft:beach",
-	"#c:is_badlands"
-  ]
+	"values": [
+		"minecraft:beach",
+		"#c:is_badlands"
+	]
 }

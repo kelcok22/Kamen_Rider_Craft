@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_ex_aid",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ex_aid",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ex_aidlegs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ex_aidlegs"
-  }
 }

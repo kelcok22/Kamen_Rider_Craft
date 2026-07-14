@@ -1,33 +1,33 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:ixariser"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ixariser"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.kiva.ixariser.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.kiva.ixariser.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.kiva.ixariser.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.kiva.ixariser.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:kiva/ixa",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": [],
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:ixariser"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:kiva/ixa",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": [],
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:ixariser"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

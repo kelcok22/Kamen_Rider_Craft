@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "valkyrie",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:rushing_cheetah_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:shot_riser_gun"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "valkyrie",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:rushing_cheetah_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shot_riser_gun"
+	}
 }
 

@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "lazer",
-  "pattern": [
-    "XAX",
-    "XBX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_gashat"
-    }, "A": {
-      "item": "kamenridercraft:bakusou_bike_gashat"
-    }, "B": {
-      "item": "kamenridercraft:base_bike"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:bike_gamer_spawn_egg"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "lazer",
+	"pattern": [
+		"XAX",
+		"XBX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"A": {
+			"item": "kamenridercraft:bakusou_bike_gashat"
+		},
+		"B": {
+			"item": "kamenridercraft:base_bike"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:bike_gamer_spawn_egg"
+	}
 }

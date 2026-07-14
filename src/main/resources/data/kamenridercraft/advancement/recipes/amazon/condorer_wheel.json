@@ -1,35 +1,35 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:condorer_wheel"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:condorer_wheel"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:amazon/amazonhead",
-	  "kamenridercraft:amazon/amazontroso",
-	  "kamenridercraft:amazon/amazonlegs",
-	  "kamenridercraft:amazon/condorer",
-	  "kamenridercraft:amazon/amazon_logo",
-	  "kamenridercraft:decade/amazon_card",
-	  "kamenridercraft:fourze/amazon_switch",
-	  "kamenridercraft:zi_o/amazon_ridewatch"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:amazon/amazonhead",
+			"kamenridercraft:amazon/amazontroso",
+			"kamenridercraft:amazon/amazonlegs",
+			"kamenridercraft:amazon/condorer",
+			"kamenridercraft:amazon/amazon_logo",
+			"kamenridercraft:decade/amazon_card",
+			"kamenridercraft:fourze/amazon_switch",
+			"kamenridercraft:zi_o/amazon_ridewatch"
+		]
+	},
+	"sends_telemetry_event": false
 }

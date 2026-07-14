@@ -1,38 +1,37 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "boss_blocks",
-  "group": "odin",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:dragreder_advent"
-    },
-    {
-      "item": "kamenridercraft:darkwing_advent"
-    },
-    {
-      "item": "kamenridercraft:magnugiga_advent"
-    },
-    {
-      "item": "kamenridercraft:venosnaker_advent"
-    },
-    {
-      "item": "kamenridercraft:volcancer_advent"
-    },
-    {
-      "item": "kamenridercraft:evildiver_advent"
-    },
-    {
-      "item": "kamenridercraft:metalgelas_advent"
-    },
-    {
-      "item": "kamenridercraft:destwilder_advent"
-    },
-    {
-      "item": "kamenridercraft:gigazelle_advent"
-    }
-  ],
-  "result": {
-    "id": "kamenridercraft:odin_boss_block"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "boss_blocks",
+	"group": "odin",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:dragreder_advent"
+		},
+		{
+			"item": "kamenridercraft:darkwing_advent"
+		},
+		{
+			"item": "kamenridercraft:magnugiga_advent"
+		},
+		{
+			"item": "kamenridercraft:venosnaker_advent"
+		},
+		{
+			"item": "kamenridercraft:volcancer_advent"
+		},
+		{
+			"item": "kamenridercraft:evildiver_advent"
+		},
+		{
+			"item": "kamenridercraft:metalgelas_advent"
+		},
+		{
+			"item": "kamenridercraft:destwilder_advent"
+		},
+		{
+			"item": "kamenridercraft:gigazelle_advent"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:odin_boss_block"
+	}
 }

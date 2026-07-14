@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:seiken_swordriver_blades"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:seiken_swordriver_blades"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.saber.blades.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.saber.blades.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.saber.blades.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.saber.blades.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:saber/saber",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:saberhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:sabertroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:saberlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:seiken_swordriver_blades"
-			  ]
+	"parent": "kamenridercraft:saber/saber",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:saberhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:sabertroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:saberlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:seiken_swordriver_blades"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

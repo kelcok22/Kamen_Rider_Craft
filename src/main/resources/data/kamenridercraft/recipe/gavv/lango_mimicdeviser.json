@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "stomach",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gochizo"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "stomach",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"M": {
+			"item": "kamenridercraft:lango_mimic_key"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:lango_mimic_key"
+	"result": {
+		"id": "kamenridercraft:lango_mimicdeviser"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:lango_mimicdeviser"
-  }	
 }

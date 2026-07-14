@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:revolcane"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:revolcane"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.showa.revolcane.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.showa.revolcane.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.showa.revolcane.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.showa.revolcane.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:showa/black_rx",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:revolcane"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:showa/black_rx",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:revolcane"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

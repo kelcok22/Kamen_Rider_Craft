@@ -1,36 +1,36 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:red_king_stone"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:red_king_stone"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:black/blackhead",
-	  "kamenridercraft:black/blacktroso",
-	  "kamenridercraft:black/blacklegs",
-	  "kamenridercraft:black/vital_charger",
-	  "kamenridercraft:black/black_logo",
-	  "kamenridercraft:decade/black_card",
-	  "kamenridercraft:fourze/black_switch",
-      "kamenridercraft:zi_o/black_ridewatch",
-	  "kamenridercraft:geats/king_stone_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:black/blackhead",
+			"kamenridercraft:black/blacktroso",
+			"kamenridercraft:black/blacklegs",
+			"kamenridercraft:black/vital_charger",
+			"kamenridercraft:black/black_logo",
+			"kamenridercraft:decade/black_card",
+			"kamenridercraft:fourze/black_switch",
+			"kamenridercraft:zi_o/black_ridewatch",
+			"kamenridercraft:geats/king_stone_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

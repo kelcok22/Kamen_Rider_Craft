@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "bronze_drive",
-  "pattern": [
-	"XHX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
-	}, "C": {
-		  "item": "kamenridercraft:banno_tablet"
-	  }, "H": {
-		  "item": "kamenridercraft:humagear_progrisekey"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:banno_driver_bronze_drive"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "bronze_drive",
+	"pattern": [
+		"XHX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		},
+		"C": {
+			"item": "kamenridercraft:banno_tablet"
+		},
+		"H": {
+			"item": "kamenridercraft:humagear_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:banno_driver_bronze_drive"
+	}
 }

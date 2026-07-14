@@ -1,4 +1,3 @@
-// TODO: Re-balancing for all Riders
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.RiderBlocks;
@@ -89,6 +88,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 @Mod(KamenRiderCraftCore.MOD_ID)
@@ -104,14 +104,9 @@ public class KamenRiderCraftCore {
 
     public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer) {
 
-        // Register the commonSetup method for modloading
-        //modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
         NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
 
-        // Register ourselves for server and other game events we are interested in.
-        // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
-        // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         ModSounds.register(modEventBus);
         ModMusic.register(modEventBus);
@@ -190,13 +185,11 @@ public class KamenRiderCraftCore {
 
         LootModifierCore.register(modEventBus);
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(ModCommonEvents::registerLayers);
         modEventBus.addListener(ModCommonEvents::entityAttributeEvent);
         modEventBus.addListener(ModCommonEvents::entitySpawnRestriction);
 
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
     }
 
@@ -204,7 +197,6 @@ public class KamenRiderCraftCore {
         CreativeTabRegistry.AddItemsToTabs(event);
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) throws NoSuchFieldException {
         AddStructuresToPools.addModStructures(event.getServer());
@@ -214,7 +206,7 @@ public class KamenRiderCraftCore {
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
-            float sd = (float) event.getEntity().getAttribute(Attributes.HEAD_SIZE).getValue();
+            float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.HEAD_SIZE)).getValue();
             model.getHead().xScale = sd;
             model.getHead().yScale = sd;
             model.getHead().zScale = sd;
@@ -245,13 +237,12 @@ public class KamenRiderCraftCore {
             } else if (event.getEntity() instanceof BaseHenchmenEntity) model.setAllVisible(true);
         }
 
-        float sizeX = (float) event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X).getValue();
-        float sizeY = (float) event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y).getValue();
-        float sizeZ = (float) event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z).getValue();
+        float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X)).getValue();
+        float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y)).getValue();
+        float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z)).getValue();
         event.getPoseStack().scale(sizeX, sizeY, sizeZ);
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
     public static class ClientModEvents {
 
@@ -420,20 +411,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEBULA_BUGSTERVIRUS.get(), BasicEntityRenderer::new);
 
-            //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.TADDLE_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.BANG_BANG_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.LOVELY_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.SALTY_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.CHARLIE_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.VERNIER_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.GATTON_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.KAIDEN_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.MOTORS_BUGSTER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GRAPHITE_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.ARANBURA_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.REVOL_BUGSTER.get(), BasicEntityRenderer::new);
-            //event.registerEntityRenderer(MobsCore.LOVELICA_BUGSTER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GENM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POPPY_RED.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.RIDEPLAYER.get(), BasicEntityRenderer::new);
@@ -610,8 +588,6 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BASE_PROJECTILE.get(), BaseProjectileRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BASE_EFFECT.get(), BaseEffectRenderer::new);
-
-
         }
 
         @SubscribeEvent
@@ -1065,6 +1041,7 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.ICHIGO_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.ICHIGO_TAB_ITEM.get(i));
                 }
+                event.accept(ModdedItemCore.RIDER_CIRCUIT);
                 event.accept(ModdedItemCore.CYCLONEHOPPER);
                 event.accept(ExtraRiderItems.ICHIGO_MASK);
                 event.accept(ModdedItemCore.SINISTER_PACHINKO_BALL);
@@ -1467,6 +1444,7 @@ public class KamenRiderCraftCore {
                     event.accept(CreativeTabRegistry.GHOST_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.WARERA_OMOU_YUE_NI_WARERA_ARI_MUSIC_DISC);
+                event.accept(ModdedItemCore.TAKOYAKI);
                 event.accept(MobsCore.MACHINE_HOODIE_SPAWN_EGG);
                 event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
                 event.accept(MobsCore.NECROM_SPAWN_EGG);

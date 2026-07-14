@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "mirage_agito",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:agito_of_seed"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "mirage_agito",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:agito_of_seed"
+		},
+		"M": {
+			"item": "kamenridercraft:agito_miracle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:agito_miracle"
+	"result": {
+		"id": "kamenridercraft:alter_ring_miracle"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:alter_ring_miracle"
-  }	
 }

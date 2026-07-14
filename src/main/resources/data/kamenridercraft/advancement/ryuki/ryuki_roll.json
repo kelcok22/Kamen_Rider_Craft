@@ -1,67 +1,67 @@
 {
-  "display": {
-	"icon": {
-	  "id": "minecraft:jukebox"
-	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ryuki.ryuki_roll.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ryuki.ryuki_roll.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": true
-  },
-  "parent": "kamenridercraft:ryuki/ryuki",
-  "criteria": {
-	"play_jukebox_in_meadows": {
-	  "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ryukihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ryukitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ryukilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:v_buckle_ryuki"
-			  ]
-			}
-		  }
+	"display": {
+		"icon": {
+			"id": "minecraft:jukebox"
 		},
-		"location": [
-		  {
-			"condition": "minecraft:location_check",
-			"predicate": {
-			  "block": {
-				"blocks": [
-				  "minecraft:jukebox"
+		"title": {
+			"translate": "advancements.kamenridercraft.ryuki.ryuki_roll.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ryuki.ryuki_roll.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "kamenridercraft:ryuki/ryuki",
+	"criteria": {
+		"play_jukebox_in_meadows": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ryukihead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ryukitroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ryukilegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:v_buckle_ryuki"
+							]
+						}
+					}
+				},
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": [
+									"minecraft:jukebox"
+								]
+							}
+						}
+					},
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"tag": "c:music_discs"
+						}
+					}
 				]
-			  }
 			}
-		  },
-		  {
-			"condition": "minecraft:match_tool",
-			"predicate": {
-			  "tag": "c:music_discs"
-			}
-		  }
-		]
-	  }
+		}
 	}
-  }
 }

@@ -1,8 +1,19 @@
 {
-    "variants":{   
-    "facing=north": { "model": "kamenridercraft:block/kiva_throne" },
-    "facing=south": { "model": "kamenridercraft:block/kiva_throne", "y": 180 },
-    "facing=west": { "model": "kamenridercraft:block/kiva_throne", "y": 270 },
-    "facing=east": { "model": "kamenridercraft:block/kiva_throne", "y": 90 }
-  }
- }
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/kiva_throne"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/kiva_throne",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/kiva_throne",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/kiva_throne",
+			"y": 90
+		}
+	}
+}

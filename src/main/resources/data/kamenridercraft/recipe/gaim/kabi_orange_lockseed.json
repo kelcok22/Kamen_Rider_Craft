@@ -1,19 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "gaim_kabi",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "minecraft:rotten_flesh"
-    }, "C": {
-      "item": "kamenridercraft:orange_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:kabi_orange_lockseed"
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "gaim_kabi",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:rotten_flesh"
+		},
+		"C": {
+			"item": "kamenridercraft:orange_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kabi_orange_lockseed"
+	}
 }

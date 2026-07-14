@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "vail",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    }, "C": {
-      "item": "kamenridercraft:crimson_vail_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:vail_belt"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "vail",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:crimson_vail_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:vail_belt"
+	}
 }

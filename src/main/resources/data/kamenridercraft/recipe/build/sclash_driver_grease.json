@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "grease",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:sclash_jelly"
-    }, "C": {
-      "item": "kamenridercraft:robot_sclash_jelly"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:sclash_driver_grease"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "grease",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:sclash_jelly"
+		},
+		"C": {
+			"item": "kamenridercraft:robot_sclash_jelly"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sclash_driver_grease"
+	}
 }

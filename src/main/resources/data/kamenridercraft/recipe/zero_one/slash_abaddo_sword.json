@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "abaddon",
-  "pattern": [
-    "XXX",
-    "XSX",
-    "XMX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:crowding_hopper_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:slash_abaddo_sword"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "abaddon",
+	"pattern": [
+		"XXX",
+		"XSX",
+		"XMX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:crowding_hopper_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:slash_abaddo_sword"
+	}
 }
 

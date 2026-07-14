@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "night_rogue",
-  "pattern": [
-    "XCX",
-    "XZX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:full_bottle"
-    }, "C": {
-      "item": "kamenridercraft:lost_bat_full_bottle"
-    }, "Z": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:transteam_gun"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "night_rogue",
+	"pattern": [
+		"XCX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:full_bottle"
+		},
+		"C": {
+			"item": "kamenridercraft:lost_bat_full_bottle"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:transteam_gun"
+	}
 }

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "attack_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ryuki_card"
-	}, 
-	{
-	  "item": "minecraft:fire_charge"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "attack_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ryuki_card"
+		},
+		{
+			"item": "minecraft:fire_charge"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:ryuki_strike_vent_card"
-  }
+	"result": {
+		"id": "kamenridercraft:ryuki_strike_vent_card"
+	}
 }

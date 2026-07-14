@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "tyrant",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:proto_dragon_fruits_energy_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:genesis_driver_tyrant"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "tyrant",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:proto_dragon_fruits_energy_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:genesis_driver_tyrant"
+	}
 }

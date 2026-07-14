@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:flame_saber"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:flame_saber"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.agito.flame_saber.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.agito.flame_saber.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.agito.flame_saber.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.agito.flame_saber.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:agito/agito",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:flame_saber"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:agito/agito",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:flame_saber"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

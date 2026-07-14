@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:wdriver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:wdriver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.w.double.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.w.double.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.w.double.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.w.double.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:heisei_p2",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:whead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:wdriver"
-			  ]
+	"parent": "kamenridercraft:heisei_p2",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:whead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:wdriver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

@@ -1,28 +1,28 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:banno_driver_gord_drive"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:banno_driver_gord_drive"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.drive.gold_drive.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.drive.gold_drive.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.drive.gold_drive.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.drive.gold_drive.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:drive/dark_drive",
-  "criteria": {
-	"requirement": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "kamenridercraft:gord_drive"
-        }
-      }
-    }
-  }
+	"parent": "kamenridercraft:drive/dark_drive",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:gord_drive"
+				}
+			}
+		}
+	}
 }

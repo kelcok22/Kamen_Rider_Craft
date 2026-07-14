@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "kamenridercraft:block/cornerstore_sign"
-    }
-  }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/cornerstore_sign"
+		}
+	}
 }

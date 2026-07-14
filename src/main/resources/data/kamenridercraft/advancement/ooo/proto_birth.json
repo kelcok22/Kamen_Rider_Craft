@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:proto_birth_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:proto_birth_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ooo.proto_birth.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ooo.proto_birth.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ooo.proto_birth.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ooo.proto_birth.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ooo/birth",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ooohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:oootroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ooolegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:proto_birth_driver"
-			  ]
+	"parent": "kamenridercraft:ooo/birth",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ooohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:oootroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ooolegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:proto_birth_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

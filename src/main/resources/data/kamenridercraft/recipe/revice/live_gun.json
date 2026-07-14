@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "live",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:proto_vistamp"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:bat_vistamp"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:live_gun"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "live",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:bat_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:live_gun"
+	}
 }
 

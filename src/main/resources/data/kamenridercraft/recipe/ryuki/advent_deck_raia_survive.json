@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "ryuki",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:advent_deck_raia"
-    },
-    {
-      "item": "kamenridercraft:survive_shippu"
-    }
-  ],
-  "result": {
-    "id": "kamenridercraft:advent_deck_raia_survive"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "ryuki",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:advent_deck_raia"
+		},
+		{
+			"item": "kamenridercraft:survive_shippu"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:advent_deck_raia_survive"
+	}
 }

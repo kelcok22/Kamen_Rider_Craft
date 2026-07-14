@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:shingouax"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:shingouax"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.drive.shingou-ax.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.drive.shingou-ax.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.drive.shingou-ax.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.drive.shingou-ax.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:drive/chaser",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:shingouax"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:drive/chaser",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:shingouax"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

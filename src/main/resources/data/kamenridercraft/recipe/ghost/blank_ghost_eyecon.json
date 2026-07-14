@@ -3,13 +3,13 @@
 	"group": "eyecons",
 	"ingredients": [
 		{
-          "item": "kamenridercraft:rider_circuit"
+			"item": "kamenridercraft:rider_circuit"
 		},
 		{
-	  "item": "minecraft:soul_lantern"
-  }
+			"item": "minecraft:soul_lantern"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:blank_ghost_eyecon"
-  }	
+	"result": {
+		"id": "kamenridercraft:blank_ghost_eyecon"
+	}
 }

@@ -1,30 +1,30 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:build_ridewatch"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:build_ridewatch"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:zi_o/build_genius_ridewatch",
-	  "kamenridercraft:zi_o/drill_crusher_crusher",
-	  "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_r"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:zi_o/build_genius_ridewatch",
+			"kamenridercraft:zi_o/drill_crusher_crusher",
+			"kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_r"
+		]
+	},
+	"sends_telemetry_event": false
 }

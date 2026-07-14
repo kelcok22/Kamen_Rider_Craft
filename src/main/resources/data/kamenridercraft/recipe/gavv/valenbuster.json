@@ -1,27 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "valen",
-  "pattern": [
-	"XMX",
-	"XOX",
-	"XDX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gochizo"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "valen",
+	"pattern": [
+		"XMX",
+		"XOX",
+		"XDX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"M": {
+			"item": "kamenridercraft:chocodon_gochizo"
+		},
+		"D": {
+			"item": "kamenridercraft:chocodan_gochizo"
+		},
+		"O": {
+			"item": "kamenridercraft:base_sword"
+		}
 	},
-    "M": {
-      "item": "kamenridercraft:chocodon_gochizo"
-    },
-    "D": {
-      "item": "kamenridercraft:chocodan_gochizo"
-    },
-	  "O": {
-		  "item": "kamenridercraft:base_sword"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:valenbuster"
-  }	
+	"result": {
+		"id": "kamenridercraft:valenbuster"
+	}
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "naki",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:japanese_wolf_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:forceriser_naki"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "naki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:japanese_wolf_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:forceriser_naki"
+	}
 }

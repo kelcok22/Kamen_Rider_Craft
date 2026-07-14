@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "pretty_den_o",
-  "pattern": [
-    "XWX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    }, "C": {
-      "item": "kamenridercraft:rider_ticket_sword"
-    }, "W": {
-      "item": "minecraft:yellow_wool"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:pretty_den_o_belt"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "pretty_den_o",
+	"pattern": [
+		"XWX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"C": {
+			"item": "kamenridercraft:rider_ticket_sword"
+		},
+		"W": {
+			"item": "minecraft:yellow_wool"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:pretty_den_o_belt"
+	}
 }

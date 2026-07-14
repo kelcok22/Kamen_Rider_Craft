@@ -1,19 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "over_demons_get",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:kuwagata_vistamp"
-	}, 
-	{
-	  "item": "kamenridercraft:kabuto_vistamp"
-	},
-    {
-      "item": "kamenridercraft:hercules_vistamp"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "over_demons_get",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kuwagata_vistamp"
+		},
+		{
+			"item": "kamenridercraft:kabuto_vistamp"
+		},
+		{
+			"item": "kamenridercraft:hercules_vistamp"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:giraffa_vistamp"
-  }
+	"result": {
+		"id": "kamenridercraft:giraffa_vistamp"
+	}
 }

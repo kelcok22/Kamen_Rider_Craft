@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_revice",
-  "pattern": [
-	"X X",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:proto_vistamp"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_revice",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:revice_troso"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:revice_troso"
-  }
 }

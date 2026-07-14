@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:gamer_driver_snipe"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:gamer_driver_snipe"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ex-aid.snipe.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ex-aid.snipe.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ex-aid.snipe.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ex-aid.snipe.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ex-aid/brave",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ex_aidhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ex_aidtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ex_aidlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:gamer_driver_snipe"
-			  ]
+	"parent": "kamenridercraft:ex-aid/brave",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ex_aidhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ex_aidtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ex_aidlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:gamer_driver_snipe"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

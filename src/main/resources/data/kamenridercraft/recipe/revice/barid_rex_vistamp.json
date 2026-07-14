@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "revice_barid_rex",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:rex_vistamp"
-    }, 
-    {
-      "item": "kamenridercraft:barid_rex_vistamp_closed"
-    }
-    ],
-  "result": {
-    "id": "kamenridercraft:barid_rex_vistamp"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "revice_barid_rex",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:rex_vistamp"
+		},
+		{
+			"item": "kamenridercraft:barid_rex_vistamp_closed"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:barid_rex_vistamp"
+	}
 }

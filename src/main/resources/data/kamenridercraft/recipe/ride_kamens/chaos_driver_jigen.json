@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "jigen",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:contract_chaostone"
-	}, "C": {
-	  "item": "kamenridercraft:chaos_ring_jigen"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "jigen",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:contract_chaostone"
+		},
+		"C": {
+			"item": "kamenridercraft:chaos_ring_jigen"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chaos_driver_jigen"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chaos_driver_jigen"
-  }
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "saigo",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:contract_chaostone"
-	}, "C": {
-	  "item": "kamenridercraft:chaos_ring_saigo"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "saigo",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:contract_chaostone"
+		},
+		"C": {
+			"item": "kamenridercraft:chaos_ring_saigo"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chaos_driver_saigo"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chaos_driver_saigo"
-  }
 }

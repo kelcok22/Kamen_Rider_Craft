@@ -1,11 +1,10 @@
 {
-  "replace": false,
-
-  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
-  "values": [
-    "#c:is_forest",
-	"#c:is_plains",
-	"#c:is_savanna",
-	"#c:is_swamp"
-  ]
+	"replace": false,
+	"_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+	"values": [
+		"#c:is_forest",
+		"#c:is_plains",
+		"#c:is_savanna",
+		"#c:is_swamp"
+	]
 }

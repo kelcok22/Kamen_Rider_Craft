@@ -1,50 +1,50 @@
 {
-  "structures": [
-	{
-	  "structure": "kamenridercraft:city",
-	  "weight": 3
-	},
-	  {
-		  "structure": "kamenridercraft:fuuto_city",
-		  "weight": 2
-	  },
-	  {
-		  "structure": "kamenridercraft:zawame_city",
-		  "weight": 2
-	  },
-	  {
-		  "structure": "kamenridercraft:kuruma_town",
-		  "weight": 2
-	  },
-	  {
-		  "structure": "kamenridercraft:touto",
-		  "weight": 1
-	  },
-	  {
-		  "structure": "kamenridercraft:seito_city",
-		  "weight": 2
-	  },
-	  {
-		  "structure": "kamenridercraft:hiden",
-		  "weight": 2
-	  },
-	  {
-		  "structure": "kamenridercraft:toriizaka",
-		  "weight": 1
-	  },
-    {
-      "structure": "kamenridercraft:shocker_base",
-      "weight": 1
-    },
-	  {
-		  "structure": "kamenridercraft:chiba_city",
-		  "weight": 2
-	  }
-  ],
-  "placement": {
-	"type": "minecraft:random_spread",
-	"salt": 98524,
-	"spacing": 25,
-	"separation": 20
-  }
+	"structures": [
+		{
+			"structure": "kamenridercraft:city",
+			"weight": 3
+		},
+		{
+			"structure": "kamenridercraft:fuuto_city",
+			"weight": 2
+		},
+		{
+			"structure": "kamenridercraft:zawame_city",
+			"weight": 2
+		},
+		{
+			"structure": "kamenridercraft:kuruma_town",
+			"weight": 2
+		},
+		{
+			"structure": "kamenridercraft:touto",
+			"weight": 1
+		},
+		{
+			"structure": "kamenridercraft:seito_city",
+			"weight": 2
+		},
+		{
+			"structure": "kamenridercraft:hiden",
+			"weight": 2
+		},
+		{
+			"structure": "kamenridercraft:toriizaka",
+			"weight": 1
+		},
+		{
+			"structure": "kamenridercraft:shocker_base",
+			"weight": 1
+		},
+		{
+			"structure": "kamenridercraft:chiba_city",
+			"weight": 2
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 98524,
+		"spacing": 25,
+		"separation": 20
+	}
 }

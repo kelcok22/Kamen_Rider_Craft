@@ -1,6 +1,6 @@
 {
-  "values": [
-    "#kamenridercraft:gear/progrisekeys/normal",
-    "#kamenridercraft:gear/progrisekeys/humagear"
-  ]
+	"values": [
+		"#kamenridercraft:gear/progrisekeys/normal",
+		"#kamenridercraft:gear/progrisekeys/humagear"
+	]
 }

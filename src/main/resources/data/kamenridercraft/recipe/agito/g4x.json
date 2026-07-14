@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "g4_x",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:g4"
-	}, 
-	{
-	  "item": "kamenridercraft:g3x"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "g4_x",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:g4"
+		},
+		{
+			"item": "kamenridercraft:g3x"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:g4x"
-  }
+	"result": {
+		"id": "kamenridercraft:g4x"
+	}
 }

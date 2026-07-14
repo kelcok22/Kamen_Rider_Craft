@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "saber_arthur",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:king_of_arthur_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:kingexcalibur"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "saber_arthur",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:king_of_arthur_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kingexcalibur"
+	}
 }
 

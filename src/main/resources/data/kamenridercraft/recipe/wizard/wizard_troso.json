@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_wizard",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:wizardgem"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:wizard_troso"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_wizard",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:wizardgem"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:wizard_troso"
+	}
 }

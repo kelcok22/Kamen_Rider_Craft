@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "magia",
-  "pattern": [
-    "XXX",
-    "MCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:dodo_zetsumerisekey"
-    }, "M": {
-      "item": "kamenridercraft:matsurida_z_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zetsumeriser_dodo_custom_two"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "magia",
+	"pattern": [
+		"XXX",
+		"MCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:dodo_zetsumerisekey"
+		},
+		"M": {
+			"item": "kamenridercraft:matsurida_z_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zetsumeriser_dodo_custom_two"
+	}
 }

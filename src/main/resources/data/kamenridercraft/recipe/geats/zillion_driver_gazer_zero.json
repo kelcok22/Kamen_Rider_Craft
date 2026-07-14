@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "desire_driver",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_rider_core_id"
-    }, "C": {
-      "item": "kamenridercraft:sirius_card_gazer_zero"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zillion_driver_gazer_zero"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "desire_driver",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_rider_core_id"
+		},
+		"C": {
+			"item": "kamenridercraft:sirius_card_gazer_zero"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zillion_driver_gazer_zero"
+	}
 }

@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g4",
-  "pattern": [
-	"CIC",
-	"RGR",
-	"CRC"
-  ],
-  "key": {
-	"R": {
-	  "item": "kamenridercraft:rider_circuit"
-	  }, "I": {
-	  "item": "kamenridercraft:g4"
-	}, "G": {
-	  "item": "kamenridercraft:base_sword"
-	}, "C": {
-	  "tag": "c:gunpowders"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g4",
+	"pattern": [
+		"CIC",
+		"RGR",
+		"CRC"
+	],
+	"key": {
+		"R": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"I": {
+			"item": "kamenridercraft:g4"
+		},
+		"G": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"tag": "c:gunpowders"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:g4_gigant"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:g4_gigant"
-  }
 }

@@ -1,22 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kenzan",
-  "pattern": [
-    "S",
-    "M"
-  ],
-  "key": {
-   
-    "S": {
-      "item": "kamenridercraft:fuusouken_hayate_nitouryu"
-    },
-    "M": {
-      "item": "kamenridercraft:fuusouken_hayate_nitouryu2"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:fuusouken_hayate_ittouryu"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kenzan",
+	"pattern": [
+		"S",
+		"M"
+	],
+	"key": {
+		"S": {
+			"item": "kamenridercraft:fuusouken_hayate_nitouryu"
+		},
+		"M": {
+			"item": "kamenridercraft:fuusouken_hayate_nitouryu2"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:fuusouken_hayate_ittouryu"
+	}
 }
 

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "kamen_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:blank_card"
-	}, 
-	{
-	  "item": "kamenridercraft:signal_mach"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "kamen_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:signal_mach"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:mach_card"
-  }
+	"result": {
+		"id": "kamenridercraft:mach_card"
+	}
 }

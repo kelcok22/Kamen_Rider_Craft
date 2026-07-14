@@ -1,36 +1,36 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:henshin_onsa"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:henshin_onsa"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:hibiki/hibikidriver",
-      "kamenridercraft:hibiki/ongekibo_rekka",
-      "kamenridercraft:hibiki/henshin_onsa_kurenai",
-	  "kamenridercraft:hibiki/hibiki_logo",
-	  "kamenridercraft:fourze/hibiki_switch",
-	  "kamenridercraft:gaim/hibiki_lockseed",
-	  "kamenridercraft:ghost/hibiki_ghost_eyecon",
-	  "kamenridercraft:zi_o/hibiki_ridewatch",
-	  "kamenridercraft:geats/ongekiko_kaentsuzumi_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:hibiki/hibikidriver",
+			"kamenridercraft:hibiki/ongekibo_rekka",
+			"kamenridercraft:hibiki/henshin_onsa_kurenai",
+			"kamenridercraft:hibiki/hibiki_logo",
+			"kamenridercraft:fourze/hibiki_switch",
+			"kamenridercraft:gaim/hibiki_lockseed",
+			"kamenridercraft:ghost/hibiki_ghost_eyecon",
+			"kamenridercraft:zi_o/hibiki_ridewatch",
+			"kamenridercraft:geats/ongekiko_kaentsuzumi_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

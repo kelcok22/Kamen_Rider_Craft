@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/gord_drive_boss_block"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/gord_drive_boss_block"
+		}
+	}
+}

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "kamen_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:blank_card"
-	}, 
-	{
-	  "item": "kamenridercraft:henshin_kigen_todoroki"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "kamen_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:henshin_kigen_todoroki"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:todoroki_card"
-  }
+	"result": {
+		"id": "kamenridercraft:todoroki_card"
+	}
 }

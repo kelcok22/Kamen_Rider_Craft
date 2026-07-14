@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "flaresalamander",
-  "pattern": [
-	"XDX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "flaresalamander",
+	"pattern": [
+		"XDX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"D": {
+			"item": "kamenridercraft:flaresalamander"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		}
 	},
-	"D": {
-	  "item": "kamenridercraft:flaresalamander"
-	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
+	"result": {
+		"id": "kamenridercraft:flaresalamander_sword"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:flaresalamander_sword"
-  }	
 }

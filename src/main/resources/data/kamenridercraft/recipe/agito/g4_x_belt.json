@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g4_x",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:g3core"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g4_x",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:g3core"
+		},
+		"M": {
+			"item": "kamenridercraft:g4x"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:g4x"
+	"result": {
+		"id": "kamenridercraft:g4_x_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:g4_x_belt"
-  }	
 }

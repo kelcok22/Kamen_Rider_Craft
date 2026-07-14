@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/wizardgemblock"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/wizardgemblock"
+		}
+	}
+}

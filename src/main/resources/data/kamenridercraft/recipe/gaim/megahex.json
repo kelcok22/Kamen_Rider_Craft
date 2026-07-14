@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "megahex",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:megahex_kiwami"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:megahex"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "megahex",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:megahex_kiwami"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:megahex"
+	}
 }

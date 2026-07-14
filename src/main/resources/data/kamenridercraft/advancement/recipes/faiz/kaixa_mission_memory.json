@@ -1,32 +1,32 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:kaixa_mission_memory"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:kaixa_mission_memory"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:faiz/kaixa_driver",
-	  "kamenridercraft:faiz/kaixa_phone",
-	  "kamenridercraft:faiz/kaixa_blaygun",
-	  "kamenridercraft:faiz/kaixa_shot",
-	  "kamenridercraft:decade/kaixa_card"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:faiz/kaixa_driver",
+			"kamenridercraft:faiz/kaixa_phone",
+			"kamenridercraft:faiz/kaixa_blaygun",
+			"kamenridercraft:faiz/kaixa_shot",
+			"kamenridercraft:decade/kaixa_card"
+		]
+	},
+	"sends_telemetry_event": false
 }

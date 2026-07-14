@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "bake",
-  "pattern": [
-	"XMX",
-	"XOX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gochizo"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "bake",
+	"pattern": [
+		"XMX",
+		"XOX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"M": {
+			"item": "kamenridercraft:breacookie_gochizo"
+		},
+		"O": {
+			"item": "kamenridercraft:base_sword"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:breacookie_gochizo"
-	},
-	  "O": {
-		  "item": "kamenridercraft:base_sword"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:bakemagnum"
-  }	
+	"result": {
+		"id": "kamenridercraft:bakemagnum"
+	}
 }

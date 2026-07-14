@@ -1,28 +1,28 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:genesis_driver_marika"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:genesis_driver_marika"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gaim.marika.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gaim.marika.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gaim.marika.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gaim.marika.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gaim/zangetsu_shin",
-  "criteria": {
-	"requirement": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "kamenridercraft:marika"
-        }
-      }
-    }
-  }
+	"parent": "kamenridercraft:gaim/zangetsu_shin",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:marika"
+				}
+			}
+		}
+	}
 }

@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g3",
-  "pattern": [
-	"CRC",
-	"RGR",
-	"RIR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:g3"
-	}, "G": {
-	  "item": "kamenridercraft:base_sword"
-	}, "C": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g3",
+	"pattern": [
+		"CRC",
+		"RGR",
+		"RIR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:g3"
+		},
+		"G": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"item": "kamenridercraft:rider_circuit"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gs_03_destroyer"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gs_03_destroyer"
-  }
 }

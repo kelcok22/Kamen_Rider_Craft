@@ -1,18 +1,18 @@
 {
-  "values": [
-	"kamenridercraft:gurucan_gochizo",
-	"kamenridercraft:vrocan_gochizo",
-	"kamenridercraft:bakucan_gochizo",
-	"kamenridercraft:vrocanspicy_gochizo",
-	"kamenridercraft:caramelmel_gochizo",
-	"kamenridercraft:bubbleramune_gochizo",
-	"kamenridercraft:bubbleramune_gochizo_peach",
-	"kamenridercraft:mofupachi_gochizo",
-	"kamenridercraft:morinagaramune_gochizo",
-	"kamenridercraft:artcandy_gochizo",
-    "kamenridercraft:doracan_gochizo",
-	"kamenridercraft:gurucan_gochizo_matcha_milk",
-	"kamenridercraft:gurucan_gochizo_orange",
-	"kamenridercraft:konpeiton_gochizo"
-  ]
+	"values": [
+		"kamenridercraft:gurucan_gochizo",
+		"kamenridercraft:vrocan_gochizo",
+		"kamenridercraft:bakucan_gochizo",
+		"kamenridercraft:vrocanspicy_gochizo",
+		"kamenridercraft:caramelmel_gochizo",
+		"kamenridercraft:bubbleramune_gochizo",
+		"kamenridercraft:bubbleramune_gochizo_peach",
+		"kamenridercraft:mofupachi_gochizo",
+		"kamenridercraft:morinagaramune_gochizo",
+		"kamenridercraft:artcandy_gochizo",
+		"kamenridercraft:doracan_gochizo",
+		"kamenridercraft:gurucan_gochizo_matcha_milk",
+		"kamenridercraft:gurucan_gochizo_orange",
+		"kamenridercraft:konpeiton_gochizo"
+	]
 }

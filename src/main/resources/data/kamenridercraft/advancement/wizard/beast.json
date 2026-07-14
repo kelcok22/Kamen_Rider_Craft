@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:beastdriver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:beastdriver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.wizard.beast.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.wizard.beast.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.wizard.beast.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.wizard.beast.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:wizard/wizard",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:wizard_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wizard_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wizard_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:beastdriver"
-			  ]
+	"parent": "kamenridercraft:wizard/wizard",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:wizard_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wizard_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wizard_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:beastdriver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

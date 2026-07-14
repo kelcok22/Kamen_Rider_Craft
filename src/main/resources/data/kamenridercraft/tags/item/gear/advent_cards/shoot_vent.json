@@ -1,10 +1,10 @@
 {
-  "values": [
-    "kamenridercraft:meteor_bullet_vent",
-    "kamenridercraft:drag_visor_zwei_vent",
-    "kamenridercraft:dark_arrow_vent",
-    "kamenridercraft:giga_launcher_vent",
-    "kamenridercraft:giga_cannon_vent",
-    "kamenridercraft:evil_visor_zwei_vent"
-  ]
+	"values": [
+		"kamenridercraft:meteor_bullet_vent",
+		"kamenridercraft:drag_visor_zwei_vent",
+		"kamenridercraft:dark_arrow_vent",
+		"kamenridercraft:giga_launcher_vent",
+		"kamenridercraft:giga_cannon_vent",
+		"kamenridercraft:evil_visor_zwei_vent"
+	]
 }

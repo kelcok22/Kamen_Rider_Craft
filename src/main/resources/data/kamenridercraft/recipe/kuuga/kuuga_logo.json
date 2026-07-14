@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:kuuga_mighty"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:kuuga_mighty"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:kuuga_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:kuuga_logo"
+	}
 }

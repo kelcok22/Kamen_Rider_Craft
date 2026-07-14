@@ -1,10 +1,10 @@
 {
-  "values": [
-    "kamenridercraft:impact_capsem",
-    "kamenridercraft:transform_capsem",
-    "kamenridercraft:wing_capsem",
-    "kamenridercraft:impact_capsem_gold",
-    "kamenridercraft:transform_capsem_gold",
-    "kamenridercraft:wing_capsem_gold"
-  ]
+	"values": [
+		"kamenridercraft:impact_capsem",
+		"kamenridercraft:transform_capsem",
+		"kamenridercraft:wing_capsem",
+		"kamenridercraft:impact_capsem_gold",
+		"kamenridercraft:transform_capsem_gold",
+		"kamenridercraft:wing_capsem_gold"
+	]
 }

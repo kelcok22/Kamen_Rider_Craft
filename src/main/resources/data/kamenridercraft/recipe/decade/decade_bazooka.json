@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "decade",
-  "pattern": [
-    "XXX",
-    "XSX",
-    "XMX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_card"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:decade_card"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:decade_bazooka"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "decade",
+	"pattern": [
+		"XXX",
+		"XSX",
+		"XMX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_card"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:decade_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:decade_bazooka"
+	}
 }

@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "build",
-  "pattern": [
-	"XXX",
-	"RXT",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:full_bottle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "build",
+	"pattern": [
+		"XXX",
+		"RXT",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:full_bottle"
+		},
+		"R": {
+			"item": "kamenridercraft:rabbit_full_bottle"
+		},
+		"T": {
+			"item": "kamenridercraft:tank_full_bottle"
+		}
 	},
-	"R": {
-	  "item": "kamenridercraft:rabbit_full_bottle"
-	},
-	"T": {
-	  "item": "kamenridercraft:tank_full_bottle"
+	"result": {
+		"id": "kamenridercraft:build_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:build_driver"
-  }	
 }

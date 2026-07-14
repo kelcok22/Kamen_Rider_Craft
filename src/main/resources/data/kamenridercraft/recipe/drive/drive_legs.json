@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_drive",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_drive",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:drive_legs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:drive_legs"
-  }
 }

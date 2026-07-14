@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "nishiki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_orehell"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onsa_nishiki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "nishiki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onsa_nishiki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:nishikidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:nishikidriver"
-  }
 }

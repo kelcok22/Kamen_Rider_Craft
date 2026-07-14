@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/helheim_planks"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/helheim_planks"
+		}
+	}
+}

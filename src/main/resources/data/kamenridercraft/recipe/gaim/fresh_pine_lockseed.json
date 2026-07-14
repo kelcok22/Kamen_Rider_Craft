@@ -1,19 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "gaim_fresh",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:pine_lockseed"
-    }, 
-    {
-      "item": "minecraft:wet_sponge"
-    },
-    {
-      "tag": "c:buckets/water"
-    }
-    ],
-  "result": {
-    "id": "kamenridercraft:fresh_pine_lockseed"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "gaim_fresh",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:pine_lockseed"
+		},
+		{
+			"item": "minecraft:wet_sponge"
+		},
+		{
+			"tag": "c:buckets/water"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:fresh_pine_lockseed"
+	}
 }

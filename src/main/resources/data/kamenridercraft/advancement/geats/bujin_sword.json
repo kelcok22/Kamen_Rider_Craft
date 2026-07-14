@@ -1,52 +1,52 @@
 {
-  "display": {
-    "icon": {
-  	  "id": "kamenridercraft:bujin_sword_raise_buckle"
-    },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.bujin_sword.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.bujin_sword.description"
-    },
-    "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "parent": "kamenridercraft:geats/tycoon",
-  "criteria": {
-    "requirement": {
-  	"trigger": "minecraft:inventory_changed",
-  	"conditions": {
-  	  "player": {
-  		"equipment": {
-  		  "head": {
-  			"items": [
-  			  "kamenridercraft:geatshead"
-  			]
-  		  },
-  		  "chest": {
-  			"items": [
-  			  "kamenridercraft:geatstroso"
-  			]
-  		  },
-  		  "legs": {
-  			"items": [
-  			  "kamenridercraft:geatslegs"
-  			]
-  		  },
-  		  "feet": {
-  			"items": [
-  			  "kamenridercraft:desire_driver_tycoon"
-  			],
-  		  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:bujin_sword_raise_buckle\"}"
-              }
-  		  }
-  		}
-  	  }
-  	}
-    }
-  }
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:bujin_sword_raise_buckle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.bujin_sword.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.bujin_sword.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:geats/tycoon",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:desire_driver_tycoon"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex3:\"kamenridercraft:bujin_sword_raise_buckle\"}"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

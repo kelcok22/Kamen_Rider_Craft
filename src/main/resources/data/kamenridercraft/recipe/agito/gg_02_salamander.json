@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "g3",
-  "pattern": [
-	"RRR",
-	"CGI",
-	"RRR"
-  ],
-  "key": {
-	"R": {
-	  "tag": "c:ingots/iron"
-	  }, "I": {
-	  "item": "kamenridercraft:g3"
-	}, "G": {
-	  "item": "kamenridercraft:gm_01_scorpion"
-	}, "C": {
-	  "item": "minecraft:blaze_powder"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "g3",
+	"pattern": [
+		"RRR",
+		"CGI",
+		"RRR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"item": "kamenridercraft:g3"
+		},
+		"G": {
+			"item": "kamenridercraft:gm_01_scorpion"
+		},
+		"C": {
+			"item": "minecraft:blaze_powder"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gg_02_salamander"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gg_02_salamander"
-  }
 }

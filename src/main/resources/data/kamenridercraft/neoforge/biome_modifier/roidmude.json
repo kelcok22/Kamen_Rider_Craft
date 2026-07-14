@@ -1,10 +1,10 @@
 {
-  "type": "neoforge:add_spawns",
-  "biomes": "#c:is_cold/overworld",
-  "spawners": {
-	"type": "kamenridercraft:roidmude",
-	"weight": 15,
-	"minCount": 1,
-	"maxCount": 4
-  }
+	"type": "neoforge:add_spawns",
+	"biomes": "#c:is_cold/overworld",
+	"spawners": {
+		"type": "kamenridercraft:roidmude",
+		"weight": 15,
+		"minCount": 1,
+		"maxCount": 4
+	}
 }

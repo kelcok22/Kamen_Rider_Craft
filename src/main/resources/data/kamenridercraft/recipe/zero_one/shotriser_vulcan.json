@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "vulcan",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:shooting_wolf_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:shotriser_vulcan"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "vulcan",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:shooting_wolf_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:shotriser_vulcan"
+	}
 }

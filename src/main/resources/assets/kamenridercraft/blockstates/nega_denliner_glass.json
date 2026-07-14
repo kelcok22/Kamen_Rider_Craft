@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/nega_denliner_glass"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/nega_denliner_glass"
+		}
+	}
+}

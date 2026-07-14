@@ -1,9 +1,9 @@
 {
-  "values": [
-	    "kamenridercraft:gummi_candy",
-      {
-          "id": "pamhc2foodcore:gummycreepersitem",
-          "required": false
-      }
-  ]
+	"values": [
+		"kamenridercraft:gummi_candy",
+		{
+			"id": "pamhc2foodcore:gummycreepersitem",
+			"required": false
+		}
+	]
 }

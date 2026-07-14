@@ -1,9 +1,9 @@
 {
-  "values": [
-	"kamenridercraft:boost_ghost_eyecon",
-	"kamenridercraft:tousan_ghost_eyecon",
-	"kamenridercraft:mugen_ghost_eyecon",
-	"kamenridercraft:fourtyfive_heisei_ghost_eyecon",
-	"#kamenridercraft:gear/form_items/ghost_driver"
-  ]
+	"values": [
+		"kamenridercraft:boost_ghost_eyecon",
+		"kamenridercraft:tousan_ghost_eyecon",
+		"kamenridercraft:mugen_ghost_eyecon",
+		"kamenridercraft:fourtyfive_heisei_ghost_eyecon",
+		"#kamenridercraft:gear/form_items/ghost_driver"
+	]
 }

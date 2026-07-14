@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "metsuboujinrai",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:massbrain_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:metsuboujinrai_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "metsuboujinrai",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:massbrain_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:metsuboujinrai_driver"
+	}
 }

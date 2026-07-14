@@ -1,24 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "build",
-  "pattern": [
-    "XXX",
-    "LZR",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:full_bottle"
-    }, "L": {
-      "item": "kamenridercraft:rabbit_full_bottle"
-    }, "R": {
-     "item": "kamenridercraft:tank_full_bottle"
-    }, "Z": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:drill_crusher"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "build",
+	"pattern": [
+		"XXX",
+		"LZR",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:full_bottle"
+		},
+		"L": {
+			"item": "kamenridercraft:rabbit_full_bottle"
+		},
+		"R": {
+			"item": "kamenridercraft:tank_full_bottle"
+		},
+		"Z": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:drill_crusher"
+	}
 }

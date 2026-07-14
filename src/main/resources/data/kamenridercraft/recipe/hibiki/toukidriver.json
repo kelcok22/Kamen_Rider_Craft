@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "touki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_orehell"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_onsa_touki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "touki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onsa_touki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:toukidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:toukidriver"
-  }
 }

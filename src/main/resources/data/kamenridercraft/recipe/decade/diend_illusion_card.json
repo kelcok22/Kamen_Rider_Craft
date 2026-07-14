@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "attack_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:diend_card"
-	}, 
-	{
-	  "tag": "minecraft:chest_armor"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "attack_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:diend_card"
+		},
+		{
+			"tag": "minecraft:chest_armor"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:diend_illusion_card"
-  }
+	"result": {
+		"id": "kamenridercraft:diend_illusion_card"
+	}
 }

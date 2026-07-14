@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_lockseed",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:helheim_fruit"
-    }, 
-    {
-      "item": "kamenridercraft:taka_medal"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:ooo_lockseed"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_lockseed",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:helheim_fruit"
+		},
+		{
+			"item": "kamenridercraft:taka_medal"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:ooo_lockseed"
+	}
 }

@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/rabbit_hutch_light"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/rabbit_hutch_light"
+		}
+	}
+}

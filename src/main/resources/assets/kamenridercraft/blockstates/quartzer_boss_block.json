@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "kamenridercraft:block/quartzer_boss_block"
-    }
-  }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/quartzer_boss_block"
+		}
+	}
 }

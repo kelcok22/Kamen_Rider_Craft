@@ -1,15 +1,15 @@
 {
-  "values": [
-	"#kamenridercraft:gear/core_medals/head",
-	"#kamenridercraft:gear/core_medals/torso",
-	"#kamenridercraft:gear/core_medals/legs",
-	"kamenridercraft:gel_shocker_medal",
-	"kamenridercraft:destron_medal",
-	"kamenridercraft:god_medal",
-	"kamenridercraft:garanda_medal",
-	"kamenridercraft:delza_medal",
-	"kamenridercraft:neo_shocker_medal",
-	"kamenridercraft:jin_dogma_medal",
-	"kamenridercraft:badan_medal"
-  ]
+	"values": [
+		"#kamenridercraft:gear/core_medals/head",
+		"#kamenridercraft:gear/core_medals/torso",
+		"#kamenridercraft:gear/core_medals/legs",
+		"kamenridercraft:gel_shocker_medal",
+		"kamenridercraft:destron_medal",
+		"kamenridercraft:god_medal",
+		"kamenridercraft:garanda_medal",
+		"kamenridercraft:delza_medal",
+		"kamenridercraft:neo_shocker_medal",
+		"kamenridercraft:jin_dogma_medal",
+		"kamenridercraft:badan_medal"
+	]
 }

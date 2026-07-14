@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "brave",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:taddle_quest_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "brave",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:taddle_quest_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gamer_driver_brave"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gamer_driver_brave"
-  }
 }

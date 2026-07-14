@@ -6,10 +6,10 @@
 			"item": "kamenridercraft:blank_ghost_eyecon"
 		},
 		{
-	  "item": "kamenridercraft:agito_ground"
-  }
+			"item": "kamenridercraft:agito_ground"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:agito_ghost_eyecon"
-  }	
+	"result": {
+		"id": "kamenridercraft:agito_ghost_eyecon"
+	}
 }

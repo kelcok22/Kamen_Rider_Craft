@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "rey",
-  "pattern": [
-	"XXX",
-	"MXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "rey",
+	"pattern": [
+		"XXX",
+		"MXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		},
+		"M": {
+			"item": "kamenridercraft:keyfuestle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:keyfuestle"
+	"result": {
+		"id": "kamenridercraft:reydriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:reydriver"
-  }	
 }

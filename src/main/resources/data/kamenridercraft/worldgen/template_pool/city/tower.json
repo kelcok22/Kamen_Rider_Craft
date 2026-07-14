@@ -1,32 +1,24 @@
 {
-
 	"name": "kamenridercraft:city/tower",
-	
-	// The template pool to refer to if the entries in 'elements' fails to generate.
-  "fallback": "minecraft:empty",
-
-	// Here you can list as many nbt files or placed features to spawn.
-	// Do note that placed features needs a special element entry stuff.
-  "elements": [
-
-	  {
-		  "weight": 4,
-		  "element": {
-			  "location": "kamenridercraft:city/origin/tokyo_tower",
-			  "processors": "minecraft:empty",
-			  "projection": "rigid",
-			  "element_type": "minecraft:single_pool_element"
-		  }
-	  },
-	  {
-		  "weight": 4,
-		  "element": {
-			  "location": "kamenridercraft:city/origin/toei_studios",
-			  "processors": "minecraft:empty",
-			  "projection": "rigid",
-			  "element_type": "minecraft:single_pool_element"
-		  }
-	  }
-
-  ]
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 4,
+			"element": {
+				"location": "kamenridercraft:city/origin/tokyo_tower",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"location": "kamenridercraft:city/origin/toei_studios",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
 }

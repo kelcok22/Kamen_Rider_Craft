@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_kabuto",
-  "pattern": [
-	"XXX",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:mini_zecter"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_kabuto",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kabutohead"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kabutohead"
-  }
 }

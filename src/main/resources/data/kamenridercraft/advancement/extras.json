@@ -1,23 +1,23 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:g_logo"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:g_logo"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.extras.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.extras.description"
+		},
+		"background": "kamenridercraft:textures/block/gaoh_liner_gold.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.extras.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.extras.description"
-    },
-    "background": "kamenridercraft:textures/block/gaoh_liner_gold.png",
-    "frame": "task",
-	"show_toast": false,
-	"announce_to_chat": false,
-	"hidden": false
-  },
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:tick"
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick"
+		}
 	}
-  }
 }

@@ -1,7 +1,7 @@
 {
-  "values": [
-	"minecraft:forest",
-	"#c:is_swamp",
-	"#c:is_birch_forest"
-  ]
+	"values": [
+		"minecraft:forest",
+		"#c:is_swamp",
+		"#c:is_birch_forest"
+	]
 }

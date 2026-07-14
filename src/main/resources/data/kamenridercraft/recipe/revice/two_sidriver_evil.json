@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "livevil",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:giff_junior_vistamp"
-	}, "C": {
-	  "item": "kamenridercraft:bat_vistamp"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "livevil",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:giff_junior_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:bat_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:two_sidriver_evil"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:two_sidriver_evil"
-  }
 }

@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_revice",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:proto_vistamp"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_revice",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:revice_legs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:revice_legs"
-  }
 }

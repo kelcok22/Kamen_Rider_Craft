@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_agito",
-  "pattern": [
-	"XXX",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:agito_of_seed"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_agito",
+	"pattern": [
+		"XXX",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:agito_of_seed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:agitohead"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:agitohead"
-  }
 }

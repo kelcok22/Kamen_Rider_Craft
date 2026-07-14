@@ -1,7 +1,7 @@
 {
-  "values": [
-	"#c:is_plains",
-	"minecraft:windswept_hills",
-	"minecraft:snowy_taiga"
-  ]
+	"values": [
+		"#c:is_plains",
+		"minecraft:windswept_hills",
+		"minecraft:snowy_taiga"
+	]
 }

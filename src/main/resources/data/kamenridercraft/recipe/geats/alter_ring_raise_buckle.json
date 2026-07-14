@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_rider_buckles",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:hatena_mission_box"
-    }, 
-    {
-      "item": "kamenridercraft:agito_ground"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:alter_ring_raise_buckle"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_rider_buckles",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:hatena_mission_box"
+		},
+		{
+			"item": "kamenridercraft:agito_ground"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:alter_ring_raise_buckle"
+	}
 }

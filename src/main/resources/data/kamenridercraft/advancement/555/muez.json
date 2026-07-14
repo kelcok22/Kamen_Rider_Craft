@@ -1,28 +1,28 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:muez_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:muez_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.555.muez.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.555.muez.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.555.muez.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.555.muez.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:555/orga",
-  "criteria": {
-	"requirement": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "kamenridercraft:muez"
-        }
-      }
-    }
-  }
+	"parent": "kamenridercraft:555/orga",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:muez"
+				}
+			}
+		}
+	}
 }

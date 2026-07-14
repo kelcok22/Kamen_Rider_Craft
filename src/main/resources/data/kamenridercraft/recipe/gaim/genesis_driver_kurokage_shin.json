@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kurokage_shin",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:matsubokkuri_energy_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:genesis_driver_kurokage_shin"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kurokage_shin",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:matsubokkuri_energy_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:genesis_driver_kurokage_shin"
+	}
 }

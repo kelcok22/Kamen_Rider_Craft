@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:kiva_card"
-	}, 
-	{
-	  "item": "kamenridercraft:garulufuestle"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kiva_card"
+		},
+		{
+			"item": "kamenridercraft:garulufuestle"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:kiva_garulu_card"
-  }
+	"result": {
+		"id": "kamenridercraft:kiva_garulu_card"
+	}
 }

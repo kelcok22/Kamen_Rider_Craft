@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "garren",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:bladecard"
-	}, "C": {
-	  "item": "kamenridercraft:change_stag"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "garren",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:bladecard"
+		},
+		"C": {
+			"item": "kamenridercraft:change_stag"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:garren_buckle"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:garren_buckle"
-  }
 }

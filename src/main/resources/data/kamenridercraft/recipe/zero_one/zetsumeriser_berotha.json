@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "magia",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:berotha_zetsumerisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:zetsumeriser_berotha"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "magia",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:berotha_zetsumerisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zetsumeriser_berotha"
+	}
 }

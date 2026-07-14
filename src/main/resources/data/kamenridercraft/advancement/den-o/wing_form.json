@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:rider_ticket_wing"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:rider_ticket_wing"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.den-o.wing_form.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.den-o.wing_form.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.den-o.wing_form.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.den-o.wing_form.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:den-o/gun_form",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:den_ohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:den_otroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:den_olegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:den_o_belt"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:rider_ticket_wing\"}"
-              }
+	"parent": "kamenridercraft:den-o/gun_form",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:den_ohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:den_otroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:den_olegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:den_o_belt"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:rider_ticket_wing\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

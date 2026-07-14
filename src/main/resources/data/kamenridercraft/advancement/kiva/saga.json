@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:sagarc_belt"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:sagarc_belt"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.kiva.saga.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.kiva.saga.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.kiva.saga.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.kiva.saga.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:kiva/ixa",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kivahead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kivatroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kivalegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:sagarc_belt"
-			  ]
+	"parent": "kamenridercraft:kiva/ixa",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:kivahead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:kivatroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:kivalegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:sagarc_belt"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

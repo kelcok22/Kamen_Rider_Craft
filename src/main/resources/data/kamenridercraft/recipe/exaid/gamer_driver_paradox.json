@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "para_dx",
-  "pattern": [
-	"XXX",
-	"CXP",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:perfect_puzzle_gashat"
-	}, "P": {
-	  "item": "kamenridercraft:knock_out_fighter_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "para_dx",
+	"pattern": [
+		"XXX",
+		"CXP",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:perfect_puzzle_gashat"
+		},
+		"P": {
+			"item": "kamenridercraft:knock_out_fighter_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gamer_driver_paradx"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gamer_driver_paradx"
-  }
 }

@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "wizard_sword",
-  "pattern": [
-    "XXX",
-    "XMX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:wizardgem"
-    },
-    "M": {
-      "item": "kamenridercraft:base_sword"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:wizarswordgun"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "wizard_sword",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:wizardgem"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:wizarswordgun"
+	}
 }

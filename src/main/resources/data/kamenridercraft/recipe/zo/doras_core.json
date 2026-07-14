@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_zo",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_zo",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:neonoid_core"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:neonoid_core"
+	"result": {
+		"id": "kamenridercraft:doras_core"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:doras_core"
-  }	
 }

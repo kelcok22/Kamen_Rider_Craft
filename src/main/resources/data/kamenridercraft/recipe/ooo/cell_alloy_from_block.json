@@ -1,14 +1,13 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "birth",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:cell_alloy_block"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "birth",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:cell_alloy_block"
+		}
 	],
-  "result": {
-	  "count": 9,
-	"id": "kamenridercraft:cell_alloy_ingot"
-  }
+	"result": {
+		"count": 9,
+		"id": "kamenridercraft:cell_alloy_ingot"
+	}
 }

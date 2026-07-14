@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fuuma",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:hurricane_ninja_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fuuma",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:hurricane_ninja_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gamer_driver_fuuma"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gamer_driver_fuuma"
-  }
 }

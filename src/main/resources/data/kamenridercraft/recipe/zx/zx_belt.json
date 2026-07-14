@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zx",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zx",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:zx_belt_core"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:zx_belt_core"
+	"result": {
+		"id": "kamenridercraft:zx_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:zx_belt"
-  }	
 }

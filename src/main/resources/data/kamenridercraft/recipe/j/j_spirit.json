@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_j",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_j",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"M": {
+			"item": "kamenridercraft:j_stone"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:j_stone"
+	"result": {
+		"id": "kamenridercraft:j_spirit"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:j_spirit"
-  }	
 }

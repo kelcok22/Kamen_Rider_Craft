@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:armed_saber"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:armed_saber"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.hibiki.armed_saber.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.hibiki.armed_saber.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.hibiki.armed_saber.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.hibiki.armed_saber.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:hibiki/henshin_onsa_kurenai",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:hibikihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:hibikitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:hibikilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:hibikidriver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:henshin_onsa_armed\"}"
-              }
+	"parent": "kamenridercraft:hibiki/henshin_onsa_kurenai",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:hibikihead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:hibikitroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:hibikilegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:hibikidriver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:henshin_onsa_armed\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zamonas",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:zamonas_ridewatch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:ziku_driver_zamonas"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zamonas",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:zamonas_ridewatch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ziku_driver_zamonas"
+	}
 }

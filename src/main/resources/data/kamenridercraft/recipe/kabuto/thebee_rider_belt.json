@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "thebee",
-  "pattern": [
-	"XXX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:mini_zecter"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "thebee",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"Z": {
+			"item": "kamenridercraft:thebee_zecter"
+		}
 	},
-	"Z": {
-	  "item": "kamenridercraft:thebee_zecter"
+	"result": {
+		"id": "kamenridercraft:thebee_rider_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:thebee_rider_belt"
-  }
 }

@@ -1,56 +1,56 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:super_taka_medal"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:super_taka_medal"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ooo.super_tatoba.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ooo.super_tatoba.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ooo.super_tatoba.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ooo.super_tatoba.description"
-    },
-    "frame": "challenge",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ooo/putotyra",
-  "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:super_taka_medal"
-			]
-		  }
-		]
-	  }
-	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:super_tora_medal"
-			]
-		  }
-		]
-	  }
-	},
-	"3": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:super_batta_medal"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:ooo/putotyra",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:super_taka_medal"
+						]
+					}
+				]
+			}
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:super_tora_medal"
+						]
+					}
+				]
+			}
+		},
+		"3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:super_batta_medal"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

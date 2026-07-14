@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "punchhopper",
-  "pattern": [
-	"XXX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:mini_zecter"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "punchhopper",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"Z": {
+			"item": "kamenridercraft:punchhopper_zecter"
+		}
 	},
-	"Z": {
-	  "item": "kamenridercraft:punchhopper_zecter"
+	"result": {
+		"id": "kamenridercraft:puchhopper_rider_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:puchhopper_rider_belt"
-  }
 }

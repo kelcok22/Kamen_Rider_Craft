@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:build_card"
-	}, 
-	{
-	  "item": "kamenridercraft:genius_full_bottle"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:build_card"
+		},
+		{
+			"item": "kamenridercraft:genius_full_bottle"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:build_genius_card"
-  }
+	"result": {
+		"id": "kamenridercraft:build_genius_card"
+	}
 }

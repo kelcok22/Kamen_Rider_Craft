@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:boost_mkii_raise_buckle"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:boost_mkii_raise_buckle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.boost_markii.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.boost_markii.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.boost_markii.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.boost_markii.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:geats/command",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:geatshead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:geatstroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:geatslegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:desire_driver_geats"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:boost_mkii_raise_buckle\"}"
-              }
+	"parent": "kamenridercraft:geats/command",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:desire_driver_geats"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex2:\"kamenridercraft:boost_mkii_raise_buckle\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

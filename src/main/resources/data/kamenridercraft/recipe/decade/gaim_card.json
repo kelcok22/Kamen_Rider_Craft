@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "kamen_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:blank_card"
-	}, 
-	{
-	  "item": "kamenridercraft:orange_lockseed"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "kamen_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:orange_lockseed"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:gaim_card"
-  }
+	"result": {
+		"id": "kamenridercraft:gaim_card"
+	}
 }

@@ -1,58 +1,58 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:evolution_tarantula"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:evolution_tarantula"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.blade.leangle_king.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.blade.leangle_king.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.blade.leangle_king.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.blade.leangle_king.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:blade/leangle_jack",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": [
-		  {
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-			  "equipment": {
-				"head": {
-				  "items": [
-					"kamenridercraft:bladehead"
-				  ]
-				},
-				"chest": {
-				  "items": [
-					"kamenridercraft:bladetroso"
-				  ]
-				},
-				"legs": {
-				  "items": [
-					"kamenridercraft:bladelegs"
-				  ]
-				},
-				"feet": {
-				  "items": [
-					"kamenridercraft:leangle_buckle"
-				  ],
-				  "predicates": {
-					"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_tarantula\"}"
-		 		  }
-				}
-			  }
+	"parent": "kamenridercraft:blade/leangle_jack",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"items": [
+										"kamenridercraft:bladehead"
+									]
+								},
+								"chest": {
+									"items": [
+										"kamenridercraft:bladetroso"
+									]
+								},
+								"legs": {
+									"items": [
+										"kamenridercraft:bladelegs"
+									]
+								},
+								"feet": {
+									"items": [
+										"kamenridercraft:leangle_buckle"
+									],
+									"predicates": {
+										"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_tarantula\"}"
+									}
+								}
+							}
+						}
+					}
+				]
 			}
-		  }
-		]
-	  }
+		}
 	}
-  }
 }

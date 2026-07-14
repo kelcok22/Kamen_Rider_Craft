@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:hee_hackgun"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:hee_hackgun"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.fourze.hee_hackgun.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.fourze.hee_hackgun.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.fourze.hee_hackgun.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.fourze.hee_hackgun.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:fourze/billy_the_rod",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:hee_hackgun"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:fourze/billy_the_rod",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:hee_hackgun"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

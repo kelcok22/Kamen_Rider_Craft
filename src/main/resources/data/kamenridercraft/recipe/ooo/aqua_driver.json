@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "aqua",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:cellmedal"
-	}, "C": {
-	  "item": "kamenridercraft:aqua_core"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "aqua",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:cellmedal"
+		},
+		"C": {
+			"item": "kamenridercraft:aqua_core"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:aqua_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:aqua_driver"
-  }
 }

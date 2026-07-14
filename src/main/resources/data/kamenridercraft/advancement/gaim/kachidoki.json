@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:kachidoki_lockseed"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:kachidoki_lockseed"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.gaim.kachidoki.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.gaim.kachidoki.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.gaim.kachidoki.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.gaim.kachidoki.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:gaim/jimber_arms",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:gaimhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:gaimtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:gaimlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:sengoku_driver_gaim"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kachidoki_lockseed\"}"
-              }
+	"parent": "kamenridercraft:gaim/jimber_arms",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:gaimhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:gaimtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:gaimlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:sengoku_driver_gaim"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kachidoki_lockseed\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

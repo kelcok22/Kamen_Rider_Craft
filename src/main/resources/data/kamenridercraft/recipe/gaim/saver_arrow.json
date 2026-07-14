@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "saver",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:zakuro_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:saver_arrow"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "saver",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:zakuro_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:saver_arrow"
+	}
 }
 

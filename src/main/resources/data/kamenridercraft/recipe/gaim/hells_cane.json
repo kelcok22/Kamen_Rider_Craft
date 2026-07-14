@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "sylphi",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:helheim_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:hells_cane"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "sylphi",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:helheim_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:hells_cane"
+	}
 }
 

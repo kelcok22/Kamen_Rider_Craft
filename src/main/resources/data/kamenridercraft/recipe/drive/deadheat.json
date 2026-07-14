@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "deadheat",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:deadheat_bike"
-	}, 
-	{
-	  "item": "kamenridercraft:deadheat_car"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "deadheat",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:deadheat_bike"
+		},
+		{
+			"item": "kamenridercraft:deadheat_car"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:deadheatshift"
-  }
+	"result": {
+		"id": "kamenridercraft:deadheatshift"
+	}
 }

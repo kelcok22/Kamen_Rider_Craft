@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:hiden_zero_one_driver_azu"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:hiden_zero_one_driver_azu"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zero_one.ark_zero_one.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zero_one.ark_zero_one.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.zero_one.ark_zero_one.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.zero_one.ark_zero_one.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:zero_one/ark_one",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zero_onehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zero_onetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zero_onelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:hiden_zero_one_driver_azu"
-			  ]
+	"parent": "kamenridercraft:zero_one/ark_one",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zero_onehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zero_onetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zero_onelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:hiden_zero_one_driver_azu"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

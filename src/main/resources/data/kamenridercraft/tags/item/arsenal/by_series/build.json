@@ -1,19 +1,19 @@
 {
-  "values": [
-    "kamenridercraft:drill_crusher",
-    "kamenridercraft:hawk_gatlinger",
-    "kamenridercraft:4koma_ninpoutou",
-    "kamenridercraft:kaizoku_hassyar",
-    "kamenridercraft:beat_crosser",
-    "kamenridercraft:twin_breaker",
-    "kamenridercraft:transteam_gun",
-    "kamenridercraft:nebulasteam_gun",
-    "kamenridercraft:steam_blade",
-    "kamenridercraft:transteam_gun_rifle",
-    "kamenridercraft:nebulasteam_gun_rifle",
-    "kamenridercraft:fullbottle_buster",
-    "kamenridercraft:magma_knuckle",  
-    "kamenridercraft:blizzard_knuckle",
-    "kamenridercraft:nanba_walking_stick"
-  ]
+	"values": [
+		"kamenridercraft:drill_crusher",
+		"kamenridercraft:hawk_gatlinger",
+		"kamenridercraft:4koma_ninpoutou",
+		"kamenridercraft:kaizoku_hassyar",
+		"kamenridercraft:beat_crosser",
+		"kamenridercraft:twin_breaker",
+		"kamenridercraft:transteam_gun",
+		"kamenridercraft:nebulasteam_gun",
+		"kamenridercraft:steam_blade",
+		"kamenridercraft:transteam_gun_rifle",
+		"kamenridercraft:nebulasteam_gun_rifle",
+		"kamenridercraft:fullbottle_buster",
+		"kamenridercraft:magma_knuckle",
+		"kamenridercraft:blizzard_knuckle",
+		"kamenridercraft:nanba_walking_stick"
+	]
 }

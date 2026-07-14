@@ -1,34 +1,34 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:wakeupfuestle"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:wakeupfuestle"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:kiva/kivadriver",
-	  "kamenridercraft:kiva/kiva_logo",
-	  "kamenridercraft:fourze/kiva_switch",
-	  "kamenridercraft:gaim/kiva_lockseed",
-	  "kamenridercraft:ghost/kiva_ghost_eyecon",
-	  "kamenridercraft:zi_o/kiva_ridewatch",
-	  "kamenridercraft:geats/kivat_belt_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:kiva/kivadriver",
+			"kamenridercraft:kiva/kiva_logo",
+			"kamenridercraft:fourze/kiva_switch",
+			"kamenridercraft:gaim/kiva_lockseed",
+			"kamenridercraft:ghost/kiva_ghost_eyecon",
+			"kamenridercraft:zi_o/kiva_ridewatch",
+			"kamenridercraft:geats/kivat_belt_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

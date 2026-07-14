@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "slash",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:onjuuken_suzune"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "slash",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:onjuuken_suzune"
+	}
 }
 

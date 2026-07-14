@@ -1,8 +1,8 @@
 {
-  "values": [
-    "kamenridercraft:steel_ladder",
-    "kamenridercraft:rabbit_hutch_ladder",
-    "kamenridercraft:helheim_vine",
-    "kamenridercraft:drive_pit_ladder"
-  ]
+	"values": [
+		"kamenridercraft:steel_ladder",
+		"kamenridercraft:rabbit_hutch_ladder",
+		"kamenridercraft:helheim_vine",
+		"kamenridercraft:drive_pit_ladder"
+	]
 }

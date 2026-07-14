@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "": { "model": "kamenridercraft:block/pandora_fire" }
-    }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/pandora_fire"
+		}
+	}
 }

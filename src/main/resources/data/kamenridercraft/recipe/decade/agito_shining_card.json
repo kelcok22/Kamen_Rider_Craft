@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:agito_ground_card"
-	}, 
-	{
-	  "item": "kamenridercraft:agito_shining"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:agito_ground_card"
+		},
+		{
+			"item": "kamenridercraft:agito_shining"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:agito_shining_card"
-  }
+	"result": {
+		"id": "kamenridercraft:agito_shining_card"
+	}
 }

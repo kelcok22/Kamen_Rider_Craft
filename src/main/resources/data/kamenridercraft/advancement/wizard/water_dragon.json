@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:water_ring_dragon"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:water_ring_dragon"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.wizard.water_dragon.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.wizard.water_dragon.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.wizard.water_dragon.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.wizard.water_dragon.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:wizard/wizard",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:wizard_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wizard_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wizard_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:wizardriver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:water_ring_dragon\"}"
-              }
+	"parent": "kamenridercraft:wizard/wizard",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:wizard_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wizard_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wizard_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:wizardriver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:water_ring_dragon\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

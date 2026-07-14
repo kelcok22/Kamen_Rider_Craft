@@ -1,19 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "group": "legend_book",
-    "pattern": [
-      "XXX",
-      "XCX",
-      "XXX"
-    ],
-    "key": {
-      "X": {
-        "item": "kamenridercraft:blank_wonder_ride_book"
-      }, "C": {
-        "item": "kamenridercraft:ore_ghost_eyecon"
-      }
-    },
-    "result": {
-      "id": "kamenridercraft:ghost_ijinroku_wonder_ride_book"
-    }
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "legend_book",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"C": {
+			"item": "kamenridercraft:ore_ghost_eyecon"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ghost_ijinroku_wonder_ride_book"
+	}
+}

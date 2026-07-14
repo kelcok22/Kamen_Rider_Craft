@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "century",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:proto_vistamp"
-	}, 
-	"C": {
-	  "item": "kamenridercraft:cyclotron_driver_core"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "century",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:cyclotron_driver_core"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:cyclotron_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:cyclotron_driver"
-  }
 }

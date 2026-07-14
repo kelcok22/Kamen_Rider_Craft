@@ -1,36 +1,36 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:kuuga_mighty"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:kuuga_mighty"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:kuuga/kuuga_arcle",
-	  "kamenridercraft:kuuga/kuuga_rising_mighty",
-	  "kamenridercraft:kuuga/kuuga_logo",
-      "kamenridercraft:kuuga/rising_beat_armor",
-	  "kamenridercraft:fourze/kuuga_switch",
-	  "kamenridercraft:gaim/kuuga_lockseed",
-	  "kamenridercraft:ghost/kuuga_ghost_eyecon",
-	  "kamenridercraft:zi_o/kuuga_ridewatch",
-	  "kamenridercraft:geats/arcle_raise_buckle"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:kuuga/kuuga_arcle",
+			"kamenridercraft:kuuga/kuuga_rising_mighty",
+			"kamenridercraft:kuuga/kuuga_logo",
+			"kamenridercraft:kuuga/rising_beat_armor",
+			"kamenridercraft:fourze/kuuga_switch",
+			"kamenridercraft:gaim/kuuga_lockseed",
+			"kamenridercraft:ghost/kuuga_ghost_eyecon",
+			"kamenridercraft:zi_o/kuuga_ridewatch",
+			"kamenridercraft:geats/arcle_raise_buckle"
+		]
+	},
+	"sends_telemetry_event": false
 }

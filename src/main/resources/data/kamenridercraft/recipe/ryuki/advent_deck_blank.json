@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ryuki",
-  "pattern": [
-	"XXX",
-	"X X",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ryuki",
+	"pattern": [
+		"XXX",
+		"X X",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:advent_deck_blank"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:advent_deck_blank"
-  }
 }

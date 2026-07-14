@@ -1,27 +1,27 @@
 {
 	"display": {
-	  "icon": {
-		"id": "kamenridercraft:rider_pass"
-	  },
-	"title": {
-      "translate": "advancements.kamenridercraft.den-o.sands_of_time.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.den-o.sands_of_time.description"
-    },
-	  "frame": "task",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"id": "kamenridercraft:rider_pass"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.den-o.sands_of_time.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.den-o.sands_of_time.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"parent": "kamenridercraft:heisei_p1",
 	"criteria": {
-	  "requirement": {
-		"trigger": "minecraft:changed_dimension",
-		"conditions": {
-		  "to": "kamenridercraft:sands_of_time"
+		"requirement": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "kamenridercraft:sands_of_time"
+			}
 		}
-	  }
 	}
-  }
+}
   

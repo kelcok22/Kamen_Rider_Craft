@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "baron_shin",
-  "pattern": [
-    "XXX",
-    "XBC",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    }, "C": {
-      "item": "kamenridercraft:banana_lockseed"
-    }, "B": {
-      "item": "kamenridercraft:lemon_energy_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:genesis_driver_baron_shin"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "baron_shin",
+	"pattern": [
+		"XXX",
+		"XBC",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"C": {
+			"item": "kamenridercraft:banana_lockseed"
+		},
+		"B": {
+			"item": "kamenridercraft:lemon_energy_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:genesis_driver_baron_shin"
+	}
 }

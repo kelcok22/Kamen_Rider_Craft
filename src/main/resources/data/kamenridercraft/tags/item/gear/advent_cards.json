@@ -1,20 +1,20 @@
 {
-  "values": [
-	"#kamenridercraft:gear/advent_cards/advent",
-	"#kamenridercraft:gear/advent_cards/sword_vent",
-	"#kamenridercraft:gear/advent_cards/strike_vent",
-	"#kamenridercraft:gear/advent_cards/guard_vent",
-	"#kamenridercraft:gear/advent_cards/shoot_vent",
-	"#kamenridercraft:gear/advent_cards/trick_vent",
-	"#kamenridercraft:gear/advent_cards/survive",
-    "kamenridercraft:nasty_vent",
-    "kamenridercraft:blust_vent",
-    "kamenridercraft:evil_whip_vent",
-    "kamenridercraft:time_vent",
-    "kamenridercraft:freeze_vent",
-	"kamenridercraft:gazelle_stab_vent",
-	"kamenridercraft:bio_winder_vent",
-    "kamenridercraft:clear_vent",
-	"kamenridercraft:accele_vent"
-  ]
+	"values": [
+		"#kamenridercraft:gear/advent_cards/advent",
+		"#kamenridercraft:gear/advent_cards/sword_vent",
+		"#kamenridercraft:gear/advent_cards/strike_vent",
+		"#kamenridercraft:gear/advent_cards/guard_vent",
+		"#kamenridercraft:gear/advent_cards/shoot_vent",
+		"#kamenridercraft:gear/advent_cards/trick_vent",
+		"#kamenridercraft:gear/advent_cards/survive",
+		"kamenridercraft:nasty_vent",
+		"kamenridercraft:blust_vent",
+		"kamenridercraft:evil_whip_vent",
+		"kamenridercraft:time_vent",
+		"kamenridercraft:freeze_vent",
+		"kamenridercraft:gazelle_stab_vent",
+		"kamenridercraft:bio_winder_vent",
+		"kamenridercraft:clear_vent",
+		"kamenridercraft:accele_vent"
+	]
 }

@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/granute_glass"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/granute_glass"
+		}
+	}
+}

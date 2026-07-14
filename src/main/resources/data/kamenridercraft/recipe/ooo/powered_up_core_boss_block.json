@@ -1,25 +1,29 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "core",
-  "pattern": [
-    "ACA",
-    "XYZ",
-    "AAA"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:sasori_medal"
-    }, "Y": {
-      "item": "kamenridercraft:kani_medal"
-    }, "Z": {
-      "item": "kamenridercraft:ebi_medal"
-    }, "A": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:red_king_stone"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:powered_up_core_boss_block"
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "core",
+	"pattern": [
+		"ACA",
+		"XYZ",
+		"AAA"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:sasori_medal"
+		},
+		"Y": {
+			"item": "kamenridercraft:kani_medal"
+		},
+		"Z": {
+			"item": "kamenridercraft:ebi_medal"
+		},
+		"A": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:red_king_stone"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:powered_up_core_boss_block"
+	}
 }

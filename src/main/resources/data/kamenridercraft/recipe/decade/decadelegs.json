@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_decade",
-  "pattern": [
-    "XXX",
-    "X X",
-    "X X"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_card"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:decadelegs"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_decade",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:decadelegs"
+	}
 }

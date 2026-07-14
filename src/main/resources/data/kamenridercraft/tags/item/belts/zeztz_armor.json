@@ -1,15 +1,15 @@
 {
-  "values": [
-    "kamenridercraft:zeztz_driver",
-    "kamenridercraft:zeztz_exdream_driver",
-    "kamenridercraft:nox_driver",
-    "kamenridercraft:dawn_belt",
-    "kamenridercraft:knight_invoker",
-    "kamenridercraft:lord_invoker_three",
-    "kamenridercraft:lord_invoker_five",
-    "kamenridercraft:lord_invoker_six",
-    "kamenridercraft:metamateriam_belt",
-    "kamenridercraft:zeztz_darkness_belt",
-    "kamenridercraft:mugen_driver"
-  ]
+	"values": [
+		"kamenridercraft:zeztz_driver",
+		"kamenridercraft:zeztz_exdream_driver",
+		"kamenridercraft:nox_driver",
+		"kamenridercraft:dawn_belt",
+		"kamenridercraft:knight_invoker",
+		"kamenridercraft:lord_invoker_three",
+		"kamenridercraft:lord_invoker_five",
+		"kamenridercraft:lord_invoker_six",
+		"kamenridercraft:metamateriam_belt",
+		"kamenridercraft:zeztz_darkness_belt",
+		"kamenridercraft:mugen_driver"
+	]
 }

@@ -1,31 +1,31 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:proto_vistamp"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:proto_vistamp"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:revice/revice_head",
-	  "kamenridercraft:revice/revice_troso",
-	  "kamenridercraft:revice/revice_legs",
-	  "kamenridercraft:revice/vistamp_holder"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:revice/revice_head",
+			"kamenridercraft:revice/revice_troso",
+			"kamenridercraft:revice/revice_legs",
+			"kamenridercraft:revice/vistamp_holder"
+		]
+	},
+	"sends_telemetry_event": false
 }

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "attack_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:diend_card"
-	}, 
-	{
-	  "tag": "c:glass_blocks"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "attack_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:diend_card"
+		},
+		{
+			"tag": "c:glass_blocks"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:diend_invisible_card"
-  }
+	"result": {
+		"id": "kamenridercraft:diend_invisible_card"
+	}
 }

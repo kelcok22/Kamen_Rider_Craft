@@ -1,35 +1,35 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:cyclode_core"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:cyclode_core"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:super_1/super_1head",
-	  "kamenridercraft:super_1/super_1troso",
-	  "kamenridercraft:super_1/super_1legs",
-	  "kamenridercraft:super_1/cyclode",
-	  "kamenridercraft:super_1/super1_logo",
-	  "kamenridercraft:decade/super_1_card",
-	  "kamenridercraft:fourze/super_1_switch",
-      "kamenridercraft:zi_o/super_1_ridewatch"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:super_1/super_1head",
+			"kamenridercraft:super_1/super_1troso",
+			"kamenridercraft:super_1/super_1legs",
+			"kamenridercraft:super_1/cyclode",
+			"kamenridercraft:super_1/super1_logo",
+			"kamenridercraft:decade/super_1_card",
+			"kamenridercraft:fourze/super_1_switch",
+			"kamenridercraft:zi_o/super_1_ridewatch"
+		]
+	},
+	"sends_telemetry_event": false
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:mage_b_ring"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:mage_b_ring"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.wizard.mage_b.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.wizard.mage_b.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.wizard.mage_b.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.wizard.mage_b.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:wizard/mage",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:wizard_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:wizard_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:wizard_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:magewizardriver_b"
-              ]
+	"parent": "kamenridercraft:wizard/mage",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:wizard_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:wizard_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:wizard_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:magewizardriver_b"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

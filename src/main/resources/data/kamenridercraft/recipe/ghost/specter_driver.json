@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "specter",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "specter",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		},
+		"M": {
+			"item": "kamenridercraft:specter_ghost_eyecon"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:specter_ghost_eyecon"
+	"result": {
+		"id": "kamenridercraft:specter_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:specter_driver"
-  }	
 }

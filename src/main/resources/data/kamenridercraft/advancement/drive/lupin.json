@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:lupin_belt"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:lupin_belt"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.drive.lupin.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.drive.lupin.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.drive.lupin.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.drive.lupin.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:drive/megahex",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:drive_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:drive_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:drive_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:lupin_belt"
-			  ]
+	"parent": "kamenridercraft:drive/megahex",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:drive_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:drive_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:drive_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:lupin_belt"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

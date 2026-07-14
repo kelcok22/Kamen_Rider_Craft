@@ -1,45 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legendary_legend",
-  "ingredients": [
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    },
-    {
-
-      "item": "kamenridercraft:gaim_ride_chemy_card"
-    }
+	"type": "minecraft:crafting_shapeless",
+	"group": "legendary_legend",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gaim_ride_chemy_card"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:gaim_kiwami_ride_chemy_card"
-  }
+	"result": {
+		"id": "kamenridercraft:gaim_kiwami_ride_chemy_card"
+	}
 }

@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/deepslate_stone_kuuga"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/deepslate_stone_kuuga"
+		}
+	}
+}

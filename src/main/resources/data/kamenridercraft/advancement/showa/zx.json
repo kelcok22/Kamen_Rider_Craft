@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:zx_belt"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:zx_belt"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.showa.zx.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.showa.zx.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.showa.zx.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.showa.zx.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:showa/super-1",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zxhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zxtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zxlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:zx_belt"
-			  ]
+	"parent": "kamenridercraft:showa/super-1",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zxhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zxtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zxlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:zx_belt"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

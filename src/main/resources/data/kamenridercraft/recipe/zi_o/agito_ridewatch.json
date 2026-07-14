@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "ridewatch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:blank_watch"
-    }, 
-    {
-      "item": "kamenridercraft:agito_ground"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:agito_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "ridewatch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_watch"
+		},
+		{
+			"item": "kamenridercraft:agito_ground"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:agito_ridewatch"
+	}
 }

@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "kr_black",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ichigohead"
-	}, 
-	{
-	  "item": "kamenridercraft:red_king_stone"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "kr_black",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ichigohead"
+		},
+		{
+			"item": "kamenridercraft:red_king_stone"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:blackhead"
-  }
+	"result": {
+		"id": "kamenridercraft:blackhead"
+	}
 }

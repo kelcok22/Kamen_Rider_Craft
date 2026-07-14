@@ -1,50 +1,50 @@
 {
 	"display": {
-	  "icon": {
-		"id": "kamenridercraft:zillion_driver"
-	  },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.regad.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.regad.description"
-    },
-	  "frame": "task",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"id": "kamenridercraft:zillion_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.regad.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.regad.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"parent": "kamenridercraft:geats/suel_gazer",
 	"criteria": {
-	  "requirement": {
-		"trigger": "minecraft:inventory_changed",
-		"conditions": {
-		  "player": {
-			"equipment": {
-			  "head": {
-				"items": [
-				  "kamenridercraft:geatshead"
-				]
-			  },
-			  "chest": {
-				"items": [
-				  "kamenridercraft:geatstroso"
-				]
-			  },
-			  "legs": {
-				"items": [
-				  "kamenridercraft:geatslegs"
-				]
-			  },
-			  "feet": {
-				"items": [
-				  "kamenridercraft:zillion_driver"
-				]
-			  }
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:zillion_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
+}
   

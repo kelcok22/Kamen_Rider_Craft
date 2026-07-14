@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "zolda",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zolda",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		},
+		"M": {
+			"item": "kamenridercraft:advent_deck_zolda"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:advent_deck_zolda"
+	"result": {
+		"id": "kamenridercraft:v_buckle_zolda"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:v_buckle_zolda"
-  }	
 }

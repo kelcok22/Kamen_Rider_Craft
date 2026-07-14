@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_food",
-  "ingredients": [
-{
-
-	"item": "kamenridercraft:mayo"
-	}, 
-	{
-	  "item": "kamenridercraft:donut"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_food",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:mayo"
+		},
+		{
+			"item": "kamenridercraft:donut"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:mayo_donut"
-  }
+	"result": {
+		"id": "kamenridercraft:mayo_donut"
+	}
 }

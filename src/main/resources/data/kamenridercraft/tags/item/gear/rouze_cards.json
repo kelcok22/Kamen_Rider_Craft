@@ -1,24 +1,24 @@
 {
-  "values": [
-	"#kamenridercraft:gear/rouze_cards/blank",
-	"#kamenridercraft:gear/rouze_cards/category_ace",
-	"#kamenridercraft:gear/rouze_cards/category_2",
-	"#kamenridercraft:gear/rouze_cards/category_3",
-	"#kamenridercraft:gear/rouze_cards/category_4",
-	"#kamenridercraft:gear/rouze_cards/category_5",
-	"#kamenridercraft:gear/rouze_cards/category_6",
-	"#kamenridercraft:gear/rouze_cards/category_7",
-	"#kamenridercraft:gear/rouze_cards/category_8",
-	"#kamenridercraft:gear/rouze_cards/category_9",
-	"#kamenridercraft:gear/rouze_cards/category_10",
-	"#kamenridercraft:gear/rouze_cards/category_jack",
-	"#kamenridercraft:gear/rouze_cards/category_queen",
-	"#kamenridercraft:gear/rouze_cards/category_king",
-	"kamenridercraft:mighty_gravity",
-	"kamenridercraft:mighty_impact",
-	"kamenridercraft:mighty_ray",
-	"#kamenridercraft:gear/rouze_cards/joker",
-	"kamenridercraft:vanity_sealed",
-	"kamenridercraft:jashin_fourteen_sealed"
-  ]
+	"values": [
+		"#kamenridercraft:gear/rouze_cards/blank",
+		"#kamenridercraft:gear/rouze_cards/category_ace",
+		"#kamenridercraft:gear/rouze_cards/category_2",
+		"#kamenridercraft:gear/rouze_cards/category_3",
+		"#kamenridercraft:gear/rouze_cards/category_4",
+		"#kamenridercraft:gear/rouze_cards/category_5",
+		"#kamenridercraft:gear/rouze_cards/category_6",
+		"#kamenridercraft:gear/rouze_cards/category_7",
+		"#kamenridercraft:gear/rouze_cards/category_8",
+		"#kamenridercraft:gear/rouze_cards/category_9",
+		"#kamenridercraft:gear/rouze_cards/category_10",
+		"#kamenridercraft:gear/rouze_cards/category_jack",
+		"#kamenridercraft:gear/rouze_cards/category_queen",
+		"#kamenridercraft:gear/rouze_cards/category_king",
+		"kamenridercraft:mighty_gravity",
+		"kamenridercraft:mighty_impact",
+		"kamenridercraft:mighty_ray",
+		"#kamenridercraft:gear/rouze_cards/joker",
+		"kamenridercraft:vanity_sealed",
+		"kamenridercraft:jashin_fourteen_sealed"
+	]
 }

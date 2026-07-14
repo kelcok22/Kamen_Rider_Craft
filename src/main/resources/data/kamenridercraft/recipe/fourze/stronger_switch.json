@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_rider_switches",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:astroswitch"
-	}, 
-	{
-	  "item": "kamenridercraft:electrer_core"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_rider_switches",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:astroswitch"
+		},
+		{
+			"item": "kamenridercraft:electrer_core"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:stronger_switch"
-  }
+	"result": {
+		"id": "kamenridercraft:stronger_switch"
+	}
 }

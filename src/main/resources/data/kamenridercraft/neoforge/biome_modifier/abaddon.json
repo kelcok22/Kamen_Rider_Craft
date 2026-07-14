@@ -1,10 +1,10 @@
 {
-  "type": "neoforge:add_spawns",
-  "biomes": "minecraft:basalt_deltas",
-  "spawners": {
-	"type": "kamenridercraft:abaddon",
-	"weight": 15,
-	"minCount": 1,
-	"maxCount": 4
-  }
+	"type": "neoforge:add_spawns",
+	"biomes": "minecraft:basalt_deltas",
+	"spawners": {
+		"type": "kamenridercraft:abaddon",
+		"weight": 15,
+		"minCount": 1,
+		"maxCount": 4
+	}
 }

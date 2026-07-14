@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_gavv",
-  "pattern": [
-	"XXX",
-	"X X",
-	"X X"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gochizo"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_gavv",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gavv_legs"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gavv_legs"
-  }
 }

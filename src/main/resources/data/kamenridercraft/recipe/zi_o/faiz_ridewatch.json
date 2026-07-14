@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "ridewatch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:blank_watch"
-    }, 
-    {
-      "item": "kamenridercraft:faiz_mission_memory"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:faiz_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "ridewatch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_watch"
+		},
+		{
+			"item": "kamenridercraft:faiz_mission_memory"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:faiz_ridewatch"
+	}
 }

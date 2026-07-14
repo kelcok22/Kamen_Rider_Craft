@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "den_o",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    }, "C": {
-      "item": "kamenridercraft:rider_ticket"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:den_o_belt"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "den_o",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"C": {
+			"item": "kamenridercraft:rider_ticket"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:den_o_belt"
+	}
 }

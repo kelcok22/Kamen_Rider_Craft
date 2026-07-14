@@ -2,17 +2,17 @@
 	"type": "minecraft:crafting_shapeless",
 	"group": "final_form_ride_card",
 	"ingredients": [
-	  {
-		  "item": "kamenridercraft:blank_card"
-	  }, 
-	  {
-		"item": "kamenridercraft:brave_dragon_wonder_ride_book"
-	  },
-	  {
-		"item": "kamenridercraft:haouken_xross_saber"
-	  }
-	  ],
+		{
+			"item": "kamenridercraft:blank_card"
+		},
+		{
+			"item": "kamenridercraft:brave_dragon_wonder_ride_book"
+		},
+		{
+			"item": "kamenridercraft:haouken_xross_saber"
+		}
+	],
 	"result": {
-	  "id": "kamenridercraft:xross_saber_card"
+		"id": "kamenridercraft:xross_saber_card"
 	}
-  }
+}

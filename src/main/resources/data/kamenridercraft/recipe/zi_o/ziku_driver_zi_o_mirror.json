@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "mirror_zi_o",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:zi_o_mirror_ridewatch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:ziku_driver_zi_o_mirror"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "mirror_zi_o",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:zi_o_mirror_ridewatch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ziku_driver_zi_o_mirror"
+	}
 }

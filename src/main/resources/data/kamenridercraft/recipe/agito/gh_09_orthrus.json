@@ -10,11 +10,14 @@
 	"key": {
 		"R": {
 			"tag": "c:ingots/iron"
-		}, "I": {
+		},
+		"I": {
 			"item": "kamenridercraft:g6"
-		}, "G": {
+		},
+		"G": {
 			"item": "kamenridercraft:base_sword"
-		}, "C": {
+		},
+		"C": {
 			"tag": "c:gunpowders"
 		}
 	},

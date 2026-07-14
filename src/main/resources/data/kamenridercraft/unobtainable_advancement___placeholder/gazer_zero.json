@@ -1,50 +1,50 @@
 {
 	"display": {
-	  "icon": {
-		"id": "kamenridercraft:zillion_driver_gazer_zero"
-	  },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.gazer_zero.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.gazer_zero.description"
-    },
-	  "frame": "task",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"id": "kamenridercraft:zillion_driver_gazer_zero"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.gazer_zero.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.gazer_zero.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"parent": "kamenridercraft:geats/dooms_geats",
 	"criteria": {
-	  "requirement": {
-		"trigger": "minecraft:inventory_changed",
-		"conditions": {
-		  "player": {
-			"equipment": {
-			  "head": {
-				"items": [
-				  "kamenridercraft:geatshead"
-				]
-			  },
-			  "chest": {
-				"items": [
-				  "kamenridercraft:geatstroso"
-				]
-			  },
-			  "legs": {
-				"items": [
-				  "kamenridercraft:geatslegs"
-				]
-			  },
-			  "feet": {
-				"items": [
-				  "kamenridercraft:zillion_driver_gazer_zero"
-				]
-			  }
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:zillion_driver_gazer_zero"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
+}
   

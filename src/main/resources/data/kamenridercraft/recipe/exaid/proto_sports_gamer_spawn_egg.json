@@ -1,24 +1,24 @@
-  {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kr_ex_aid",
-  "pattern": [
-    "GPG",
-    "GBG",
-    "GGG"
-  ],
-  "key": {
-    "G": {
-      "item": "kamenridercraft:blank_gashat"
-    },
-    "P": {
-      "item": "kamenridercraft:proto_shakariki_sports_gashat"
-    },
-    "B": {
-      "item": "kamenridercraft:bicycle_spawn_egg"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:proto_sports_gamer_spawn_egg"
-  }
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ex_aid",
+	"pattern": [
+		"GPG",
+		"GBG",
+		"GGG"
+	],
+	"key": {
+		"G": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"P": {
+			"item": "kamenridercraft:proto_shakariki_sports_gashat"
+		},
+		"B": {
+			"item": "kamenridercraft:bicycle_spawn_egg"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:proto_sports_gamer_spawn_egg"
+	}
 }

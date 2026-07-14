@@ -1,14 +1,14 @@
 {
-  "structures": [
-	{
-	  "structure": "kamenridercraft:m_bus",
-	  "weight": 1
+	"structures": [
+		{
+			"structure": "kamenridercraft:m_bus",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 4040,
+		"spacing": 32,
+		"separation": 16
 	}
-  ],
-  "placement": {
-	"type": "minecraft:random_spread",
-	"salt": 4040,
-	"spacing": 32,
-	"separation": 16
-  }
 }

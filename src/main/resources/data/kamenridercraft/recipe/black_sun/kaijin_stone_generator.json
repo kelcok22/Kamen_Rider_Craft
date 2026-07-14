@@ -1,21 +1,23 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "kaijin_stone",
-  "pattern": [
-	"RXR",
-	"XCX",
-	"RXR"
-  ],
-  "key": {
-	"X": {
-	  "tag": "c:ingots/iron"
-	}, "C": {
-	  "item": "kamenridercraft:creation_king_extract_vial"
-	}, "R": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"group": "kaijin_stone",
+	"pattern": [
+		"RXR",
+		"XCX",
+		"RXR"
+	],
+	"key": {
+		"X": {
+			"tag": "c:ingots/iron"
+		},
+		"C": {
+			"item": "kamenridercraft:creation_king_extract_vial"
+		},
+		"R": {
+			"item": "kamenridercraft:rider_circuit"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:kaijin_stone_generator"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kaijin_stone_generator"
-  }
 }

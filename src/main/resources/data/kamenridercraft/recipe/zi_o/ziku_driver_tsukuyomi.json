@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "tsukuyomi",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_watch"
-    }, "C": {
-      "item": "kamenridercraft:tsukuyomi_ridewatch"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:ziku_driver_tsukuyomi"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "tsukuyomi",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_watch"
+		},
+		"C": {
+			"item": "kamenridercraft:tsukuyomi_ridewatch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ziku_driver_tsukuyomi"
+	}
 }

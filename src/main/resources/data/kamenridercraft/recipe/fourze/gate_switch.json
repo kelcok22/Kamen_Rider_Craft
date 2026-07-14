@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "astro_switches",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:astroswitch"
-	}, 
-	{
-	  "tag": "c:ender_pearls"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "astro_switches",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:astroswitch"
+		},
+		{
+			"tag": "c:ender_pearls"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:gate_switch"
-  }
+	"result": {
+		"id": "kamenridercraft:gate_switch"
+	}
 }

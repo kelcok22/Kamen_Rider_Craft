@@ -4004,6 +4004,7 @@
 "item.kamenridercraft.joker_dopant_memory_broken": "Joker Dopant Memory (Damaged)",
 "item.kamenridercraft.road_memory": "Road Memory",
 "item.kamenridercraft.egg_chicken_memory": "Egg Chicken Memory",
+  "item.kamenridercraft.shinigami_hakase_dopant_memory": "Shinigami Hakase Memory",
 
 "item.kamenridercraft.stag_memory": "Stag Gadget Memory",
 "item.kamenridercraft.spider_memory": "Spider Gadget Memory",
@@ -5051,6 +5052,7 @@
 "kamenridercraft:proto_banana_lockseed.form": "Form: Proto Banana Arms",
 "kamenridercraft:proto_durian_lockseed.form": "Form: Proto Durian Arms",
 "kamenridercraft:dark_lemon_energy_lockseed.form": "Form: Black Jimber Arms",
+  "item.kamenridercraft.black_banana_lockseed": "Numberless Banana Lockseed",
 
 "item.kamenridercraft.xiaolongbao_lockseed": "Siu Ron Bou Lockseed",
 "item.kamenridercraft.hsiao_lung_pao_lockseed": "Hsiao Lung Pao Lockseed",

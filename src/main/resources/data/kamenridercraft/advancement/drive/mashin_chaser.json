@@ -1,29 +1,29 @@
 {
-    "display": {
-      "icon": {
-        "id": "kamenridercraft:break_gunner"
-      },
-	"title": {
-      "translate": "advancements.kamenridercraft.drive.mashin_chaser.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.drive.mashin_chaser.description"
-    },
-    "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "kamenridercraft:drive/mach",
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_killed_entity",
-        "conditions": {
-          "entity": {
-            "type": "kamenridercraft:mashin_chaser"
-          }
-        }
-      }
-    }
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:break_gunner"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.drive.mashin_chaser.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.drive.mashin_chaser.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:drive/mach",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "kamenridercraft:mashin_chaser"
+				}
+			}
+		}
+	}
 }
   

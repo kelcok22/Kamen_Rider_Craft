@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "seeda_gear",
-  "pattern": [
-	"XDX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_mission_memory"
-	}, "C": {
-	  "item": "kamenridercraft:seeda_mission_memory"
-	}, "D": {
-	  "tag": "c:dyes/white"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "seeda_gear",
+	"pattern": [
+		"XDX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"C": {
+			"item": "kamenridercraft:seeda_mission_memory"
+		},
+		"D": {
+			"tag": "c:dyes/white"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:seeda_driver_uw"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:seeda_driver_uw"
-  }
 }

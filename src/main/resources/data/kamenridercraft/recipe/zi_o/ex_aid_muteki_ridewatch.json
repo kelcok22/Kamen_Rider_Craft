@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_watch",
-  "ingredients": [
-{
-    
-      "item": "kamenridercraft:ex_aid_ridewatch"
-    }, 
-    {
-      "item": "kamenridercraft:hyper_muteki_gashat"
-    } 
-    ],
-  "result": {
-    "id": "kamenridercraft:ex_aid_muteki_ridewatch"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_watch",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ex_aid_ridewatch"
+		},
+		{
+			"item": "kamenridercraft:hyper_muteki_gashat"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:ex_aid_muteki_ridewatch"
+	}
 }

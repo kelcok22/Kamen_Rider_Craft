@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "banki",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_orehell"
-	}, "C": {
-	  "item": "kamenridercraft:henshin_kigen_banki"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "banki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_kigen_banki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:bankidriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:bankidriver"
-  }
 }

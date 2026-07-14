@@ -1,118 +1,118 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:ktaros"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ktaros"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.den-o.climax_form.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.den-o.climax_form.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.den-o.climax_form.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.den-o.climax_form.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:den-o/den-o",
-  "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:den_ohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:den_otroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:den_olegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:den_o_belt"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ktaros_climax\"}"
-              }
+	"parent": "kamenridercraft:den-o/den-o",
+	"criteria": {
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:den_ohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:den_otroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:den_olegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:den_o_belt"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ktaros_climax\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:den_ohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:den_otroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:den_olegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:den_o_belt"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ktaros_punch\"}"
+							}
+						}
+					}
+				}
+			}
+		},
+		"3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:den_ohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:den_otroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:den_olegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:den_o_belt"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ktaros\"}"
+							}
+						}
+					}
+				}
+			}
 		}
-	  }
 	},
-	  "2": {
-		  "trigger": "minecraft:inventory_changed",
-		  "conditions": {
-			  "player": {
-				  "equipment": {
-					  "head": {
-						  "items": [
-							  "kamenridercraft:den_ohead"
-						  ]
-					  },
-					  "chest": {
-						  "items": [
-							  "kamenridercraft:den_otroso"
-						  ]
-					  },
-					  "legs": {
-						  "items": [
-							  "kamenridercraft:den_olegs"
-						  ]
-					  },
-					  "feet": {
-						  "items": [
-							  "kamenridercraft:den_o_belt"
-						  ],
-						  "predicates": {
-							  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ktaros_punch\"}"
-						  }
-					  }
-				  }
-			  }
-		  }
-	  },
-	  "3": {
-		  "trigger": "minecraft:inventory_changed",
-		  "conditions": {
-			  "player": {
-				  "equipment": {
-					  "head": {
-						  "items": [
-							  "kamenridercraft:den_ohead"
-						  ]
-					  },
-					  "chest": {
-						  "items": [
-							  "kamenridercraft:den_otroso"
-						  ]
-					  },
-					  "legs": {
-						  "items": [
-							  "kamenridercraft:den_olegs"
-						  ]
-					  },
-					  "feet": {
-						  "items": [
-							  "kamenridercraft:den_o_belt"
-						  ],
-						  "predicates": {
-							  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ktaros\"}"
-						  }
-					  }
-				  }
-			  }
-		  }
-	  }
-  },
 	"requirements": [
 		[
 			"1",

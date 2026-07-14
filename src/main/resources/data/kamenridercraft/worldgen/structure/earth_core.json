@@ -1,17 +1,14 @@
 {
-
-  "type": "minecraft:jigsaw",
-  "start_pool": "kamenridercraft:earth_core/start_pool",
-  "size": 2,
-  "max_distance_from_center": 80,
-  "biomes": "#kamenridercraft:has_structure/earth_core",
-  "step": "underground_structures",
-  "terrain_adaptation": "beard_box",
-  "start_height": {
-	"absolute": 1
-  },
-
-  "use_expansion_hack": false,
-  
-  "spawn_overrides": {}
+	"type": "minecraft:jigsaw",
+	"start_pool": "kamenridercraft:earth_core/start_pool",
+	"size": 2,
+	"max_distance_from_center": 80,
+	"biomes": "#kamenridercraft:has_structure/earth_core",
+	"step": "underground_structures",
+	"terrain_adaptation": "beard_box",
+	"start_height": {
+		"absolute": 1
+	},
+	"use_expansion_hack": false,
+	"spawn_overrides": {}
 }

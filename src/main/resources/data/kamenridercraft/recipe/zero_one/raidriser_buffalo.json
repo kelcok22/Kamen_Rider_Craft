@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "raider",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:crushing_buffalo_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:raidriser_buffalo"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "raider",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:crushing_buffalo_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:raidriser_buffalo"
+	}
 }

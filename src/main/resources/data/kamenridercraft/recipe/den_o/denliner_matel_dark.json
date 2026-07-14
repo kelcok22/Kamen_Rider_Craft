@@ -1,22 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco",
-  "pattern": [
-    "###",
-    "#d#",
-    "###"
-  ],
-  "key": {
-    "#": {
-	  "item": "kamenridercraft:denliner_matel"
-    },
-	"d": {
-      "tag": "c:dyes/black"
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco",
+	"pattern": [
+		"###",
+		"#d#",
+		"###"
+	],
+	"key": {
+		"#": {
+			"item": "kamenridercraft:denliner_matel"
+		},
+		"d": {
+			"tag": "c:dyes/black"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:denliner_matel_dark",
+		"count": 8
 	}
-  },
-  "result": {
-    "id": "kamenridercraft:denliner_matel_dark",
-	"count": 8
-  }
 }

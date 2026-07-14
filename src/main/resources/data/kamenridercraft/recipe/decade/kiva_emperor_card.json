@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:kiva_card"
-	}, 
-	{
-	  "item": "kamenridercraft:tatsulot"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kiva_card"
+		},
+		{
+			"item": "kamenridercraft:tatsulot"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:kiva_emperor_card"
-  }
+	"result": {
+		"id": "kamenridercraft:kiva_emperor_card"
+	}
 }

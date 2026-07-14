@@ -1,21 +1,23 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wonder_ride_book",
-  "pattern": [
-    "RIR",
-    "IGI",
-    "RIR"
-  ],
-  "key": {
-    "R": {
-      "tag": "c:ingots/iron"
-    }, "I": {
-      "tag": "c:dusts/redstone"
-    }, "G": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:sword_of_logos_book_analyzer"
-  }
+	"type": "minecraft:crafting_shaped",
+	"group": "wonder_ride_book",
+	"pattern": [
+		"RIR",
+		"IGI",
+		"RIR"
+	],
+	"key": {
+		"R": {
+			"tag": "c:ingots/iron"
+		},
+		"I": {
+			"tag": "c:dusts/redstone"
+		},
+		"G": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sword_of_logos_book_analyzer"
+	}
 }

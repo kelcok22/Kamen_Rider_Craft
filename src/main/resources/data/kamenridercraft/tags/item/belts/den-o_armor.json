@@ -1,14 +1,14 @@
 {
-  "values": [
-	"kamenridercraft:den_o_belt",
-	"kamenridercraft:zeronos_belt",
-	"kamenridercraft:nega_den_o_belt",
-	"kamenridercraft:new_den_o_belt",
-	"kamenridercraft:gaoh_belt",
-	"kamenridercraft:yuuki_belt",
-	"kamenridercraft:g_den_o_belt",
-	"kamenridercraft:pretty_den_o_belt",
-	"kamenridercraft:shin_o_belt",
-	"kamenridercraft:dan_o_belt"
-  ]
+	"values": [
+		"kamenridercraft:den_o_belt",
+		"kamenridercraft:zeronos_belt",
+		"kamenridercraft:nega_den_o_belt",
+		"kamenridercraft:new_den_o_belt",
+		"kamenridercraft:gaoh_belt",
+		"kamenridercraft:yuuki_belt",
+		"kamenridercraft:g_den_o_belt",
+		"kamenridercraft:pretty_den_o_belt",
+		"kamenridercraft:shin_o_belt",
+		"kamenridercraft:dan_o_belt"
+	]
 }

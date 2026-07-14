@@ -1,20 +1,20 @@
 {
-  "values": [
-	"kamenridercraft:dragreder_advent",
-	"kamenridercraft:darkwing_advent",
-	"kamenridercraft:volcancer_advent",
-	"kamenridercraft:magnugiga_advent",
-	"kamenridercraft:evildiver_advent",
-	"kamenridercraft:metalgelas_advent",
-	"kamenridercraft:venosnaker_advent",
-	"kamenridercraft:goldphoenix_advent",
-	"kamenridercraft:destwilder_advent",
-	"kamenridercraft:gigazelle_advent",
-	"kamenridercraft:blancwing_advent",
-	"kamenridercraft:dragblacker_advent",
-	"kamenridercraft:biogreeza_advent",
-	"kamenridercraft:abysslasher_advent",
-	"kamenridercraft:psycorogue_advent",
-	"kamenridercraft:guldthunder_advent"
-  ]
+	"values": [
+		"kamenridercraft:dragreder_advent",
+		"kamenridercraft:darkwing_advent",
+		"kamenridercraft:volcancer_advent",
+		"kamenridercraft:magnugiga_advent",
+		"kamenridercraft:evildiver_advent",
+		"kamenridercraft:metalgelas_advent",
+		"kamenridercraft:venosnaker_advent",
+		"kamenridercraft:goldphoenix_advent",
+		"kamenridercraft:destwilder_advent",
+		"kamenridercraft:gigazelle_advent",
+		"kamenridercraft:blancwing_advent",
+		"kamenridercraft:dragblacker_advent",
+		"kamenridercraft:biogreeza_advent",
+		"kamenridercraft:abysslasher_advent",
+		"kamenridercraft:psycorogue_advent",
+		"kamenridercraft:guldthunder_advent"
+	]
 }

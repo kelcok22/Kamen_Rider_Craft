@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:zi_o_ridewatch"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:zi_o_ridewatch"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:zi_o_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:zi_o_logo"
+	}
 }

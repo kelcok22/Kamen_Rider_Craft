@@ -1,36 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "zeztz",
-  "ingredients": [
-    {
-      "item": "kamenridercraft:impact_capsem"
-    },
-    {
-      "item": "kamenridercraft:stream_capsem"
-    },
-    {
-      "item": "kamenridercraft:recovery_capsem"
-    },
-    {
-      "item": "kamenridercraft:wonder_capsem"
-    },
-    {
-      "item": "kamenridercraft:plasma_capsem"
-    },
-    {
-      "item": "kamenridercraft:booster_capsem"
-    },
-    {
-      "item": "kamenridercraft:erase_capsem"
-    },
-    {
-      "item": "kamenridercraft:shock_capsem"
-    },
-    {
-      "item": "kamenridercraft:panic_capsem"
-    }
-  ],
-  "result": {
-    "id": "kamenridercraft:dualmare_capsem"
-  }
+	"type": "minecraft:crafting_shapeless",
+	"group": "zeztz",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:impact_capsem"
+		},
+		{
+			"item": "kamenridercraft:stream_capsem"
+		},
+		{
+			"item": "kamenridercraft:recovery_capsem"
+		},
+		{
+			"item": "kamenridercraft:wonder_capsem"
+		},
+		{
+			"item": "kamenridercraft:plasma_capsem"
+		},
+		{
+			"item": "kamenridercraft:booster_capsem"
+		},
+		{
+			"item": "kamenridercraft:erase_capsem"
+		},
+		{
+			"item": "kamenridercraft:shock_capsem"
+		},
+		{
+			"item": "kamenridercraft:panic_capsem"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:dualmare_capsem"
+	}
 }

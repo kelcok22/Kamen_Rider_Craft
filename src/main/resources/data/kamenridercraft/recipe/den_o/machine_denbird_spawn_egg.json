@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "den_o",
-  "pattern": [
-    "XAX",
-    "XBX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:imagin_sand"
-    }, "A": {
-      "item": "kamenridercraft:rider_ticket"
-    }, "B": {
-      "item": "kamenridercraft:base_bike"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:machine_denbird_spawn_egg"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "den_o",
+	"pattern": [
+		"XAX",
+		"XBX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:imagin_sand"
+		},
+		"A": {
+			"item": "kamenridercraft:rider_ticket"
+		},
+		"B": {
+			"item": "kamenridercraft:base_bike"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:machine_denbird_spawn_egg"
+	}
 }

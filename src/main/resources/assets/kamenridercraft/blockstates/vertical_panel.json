@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "kamenridercraft:block/vertical_panel"
-    }
-  }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/vertical_panel"
+		}
+	}
 }

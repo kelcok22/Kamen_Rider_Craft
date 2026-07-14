@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "kr_v3",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ichigohead"
-	}, 
-	{
-	  "item": "kamenridercraft:electrer_core"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "kr_v3",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ichigohead"
+		},
+		{
+			"item": "kamenridercraft:electrer_core"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:strongerhead"
-  }
+	"result": {
+		"id": "kamenridercraft:strongerhead"
+	}
 }

@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:vortech_shooter"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:vortech_shooter"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.showa.vortech_shooter.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.showa.vortech_shooter.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.showa.vortech_shooter.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.showa.vortech_shooter.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:showa/roborider",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:vortech_shooter"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:showa/roborider",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:vortech_shooter"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

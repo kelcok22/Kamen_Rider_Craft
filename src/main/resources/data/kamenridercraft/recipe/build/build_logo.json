@@ -1,20 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "rider_logo",
-  "ingredients": [
-{
-	
-	  "item": "minecraft:paper"
-	}, 
-	{
-	  "item": "kamenridercraft:rabbit_full_bottle"
-	},
-	{
-	  "item": "kamenridercraft:tank_full_bottle"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "rider_logo",
+	"ingredients": [
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:rabbit_full_bottle"
+		},
+		{
+			"item": "kamenridercraft:tank_full_bottle"
+		}
 	],
-  "result": {
-
-	"id": "kamenridercraft:build_logo"
-  }
+	"result": {
+		"id": "kamenridercraft:build_logo"
+	}
 }

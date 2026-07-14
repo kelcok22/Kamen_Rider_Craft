@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "darkwing",
-  "pattern": [
-	"XDX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:rider_circuit"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "darkwing",
+	"pattern": [
+		"XDX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"D": {
+			"item": "kamenridercraft:darkwing"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		}
 	},
-	"D": {
-	  "item": "kamenridercraft:darkwing"
-	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
+	"result": {
+		"id": "kamenridercraft:darkwing_sword"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:darkwing_sword"
-  }
 }

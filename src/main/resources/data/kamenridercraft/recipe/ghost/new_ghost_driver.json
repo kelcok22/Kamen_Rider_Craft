@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "new_ghost",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "new_ghost",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		},
+		"M": {
+			"item": "kamenridercraft:new_ore_ghost_eyecon"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:new_ore_ghost_eyecon"
+	"result": {
+		"id": "kamenridercraft:new_ghost_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:new_ghost_driver"
-  }	
 }

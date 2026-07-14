@@ -10,7 +10,8 @@
 	"key": {
 		"X": {
 			"item": "kamenridercraft:cellmedal"
-		}, "C": {
+		},
+		"C": {
 			"item": "kamenridercraft:rebirth_core"
 		}
 	},

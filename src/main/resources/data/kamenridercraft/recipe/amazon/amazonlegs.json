@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "group": "amazon",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:ichigolegs"
-	}, 
-	{
-	  "item": "kamenridercraft:condorer_wheel"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "amazon",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:ichigolegs"
+		},
+		{
+			"item": "kamenridercraft:condorer_wheel"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:amazonlegs"
-  }
+	"result": {
+		"id": "kamenridercraft:amazonlegs"
+	}
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:ketaros_zecter"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ketaros_zecter"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.kabuto.ketaros.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.kabuto.ketaros.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.kabuto.ketaros.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.kabuto.ketaros.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:kabuto/hercus",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:kabutohead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:kabutotroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:kabutolegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:ketaros_rider_belt"
-			  ]
+	"parent": "kamenridercraft:kabuto/hercus",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:kabutohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:kabutotroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:kabutolegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:ketaros_rider_belt"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:v_buckle_scissors"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:v_buckle_scissors"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ryuki.scissors.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ryuki.scissors.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ryuki.scissors.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ryuki.scissors.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ryuki/knight",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ryukihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ryukitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ryukilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:v_buckle_scissors"
-			  ]
+	"parent": "kamenridercraft:ryuki/knight",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ryukihead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ryukitroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ryukilegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:v_buckle_scissors"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

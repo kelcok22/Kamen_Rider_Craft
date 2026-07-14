@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "slash",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    }, "C": {
-      "item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:sword_of_logos_buckle_slash"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "slash",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"C": {
+			"item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sword_of_logos_buckle_slash"
+	}
 }

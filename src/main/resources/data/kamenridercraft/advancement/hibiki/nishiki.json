@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:nishikidriver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:nishikidriver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.hibiki.nishiki.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.hibiki.nishiki.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.hibiki.nishiki.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.hibiki.nishiki.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:hibiki/kirameki",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:hibikihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:hibikitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:hibikilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:nishikidriver"
-			  ]
+	"parent": "kamenridercraft:hibiki/kirameki",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:hibikihead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:hibikitroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:hibikilegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:nishikidriver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

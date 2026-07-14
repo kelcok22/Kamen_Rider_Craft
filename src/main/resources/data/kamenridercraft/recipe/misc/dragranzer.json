@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "card_warrior_kamen_rider_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:survive_rekka"
-	}, 
-	{
-	  "item": "kamenridercraft:card_warrior_kamen_rider_manga"
-	} 
+	"type": "minecraft:crafting_shapeless",
+	"group": "card_warrior_kamen_rider_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:survive_rekka"
+		},
+		{
+			"item": "kamenridercraft:card_warrior_kamen_rider_manga"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:dragranzer"
-  }
+	"result": {
+		"id": "kamenridercraft:dragranzer"
+	}
 }

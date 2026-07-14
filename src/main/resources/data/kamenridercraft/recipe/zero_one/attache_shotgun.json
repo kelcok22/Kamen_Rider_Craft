@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "vulcan",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:shooting_wolf_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:attache_shotgun"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "vulcan",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:shooting_wolf_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:attache_shotgun"
+	}
 }
 

@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "attack_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:den_o_ax_card"
-	}, 
-	{
-	  "item": "minecraft:magma_cream"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "attack_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:den_o_ax_card"
+		},
+		{
+			"item": "minecraft:magma_cream"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:den_o_utchari_card"
-  }
+	"result": {
+		"id": "kamenridercraft:den_o_utchari_card"
+	}
 }

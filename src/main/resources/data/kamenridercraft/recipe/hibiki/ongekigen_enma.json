@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "sabaki",
-  "pattern": [
-	"XRX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:oni_ore"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "sabaki",
+	"pattern": [
+		"XRX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_ore"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:henshin_kigen_sabaki"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:henshin_kigen_sabaki"
+	"result": {
+		"id": "kamenridercraft:ongekigen_enma"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:ongekigen_enma"
-  }	
 }

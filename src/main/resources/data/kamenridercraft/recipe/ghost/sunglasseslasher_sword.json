@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "ghost_boost",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_ghost_eyecon"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:boost_ghost_eyecon"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:sunglasseslasher_sword"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ghost_boost",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:boost_ghost_eyecon"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:sunglasseslasher_sword"
+	}
 }
 

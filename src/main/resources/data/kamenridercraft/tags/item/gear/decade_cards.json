@@ -1,10 +1,10 @@
 {
-  "values": [
-    "#kamenridercraft:gear/rider_cards/kamenride",
-    "#kamenridercraft:gear/rider_cards/final_kamenride",
-    "#kamenridercraft:gear/rider_cards/formride",
-    "#kamenridercraft:gear/rider_cards/attackride",
-    "#kamenridercraft:gear/rider_cards/final_formride",
-    "#kamenridercraft:gear/rider_cards/kaijinride"
-  ]
+	"values": [
+		"#kamenridercraft:gear/rider_cards/kamenride",
+		"#kamenridercraft:gear/rider_cards/final_kamenride",
+		"#kamenridercraft:gear/rider_cards/formride",
+		"#kamenridercraft:gear/rider_cards/attackride",
+		"#kamenridercraft:gear/rider_cards/final_formride",
+		"#kamenridercraft:gear/rider_cards/kaijinride"
+	]
 }

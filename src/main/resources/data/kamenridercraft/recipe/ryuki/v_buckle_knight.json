@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "knight",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:advent_card"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "knight",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:advent_card"
+		},
+		"M": {
+			"item": "kamenridercraft:advent_deck_knight"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:advent_deck_knight"
+	"result": {
+		"id": "kamenridercraft:v_buckle_knight"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:v_buckle_knight"
-  }	
 }

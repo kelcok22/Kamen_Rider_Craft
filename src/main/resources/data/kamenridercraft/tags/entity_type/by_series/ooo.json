@@ -1,9 +1,9 @@
 {
-  "values": [
-	"#kamenridercraft:by_type/greeed",
-	"kamenridercraft:knight_soldier_mob",
-	"kamenridercraft:core",
-	"kamenridercraft:powered_up_core",
-    "#kamenridercraft:by_type/candroids"
-  ]
+	"values": [
+		"#kamenridercraft:by_type/greeed",
+		"kamenridercraft:knight_soldier_mob",
+		"kamenridercraft:core",
+		"kamenridercraft:powered_up_core",
+		"#kamenridercraft:by_type/candroids"
+	]
 }

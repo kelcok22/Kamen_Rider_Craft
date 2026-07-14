@@ -1,11 +1,11 @@
 {
-  "values": [
-	"#kamenridercraft:gear/gashats/normal",
-	"#kamenridercraft:gear/gashats/proto",
-	"#kamenridercraft:gear/gashats/dual",
-	"#kamenridercraft:gear/gashats/double",
-	"#kamenridercraft:gear/gashats/maximum",
-	"#kamenridercraft:gear/gashats/muteki",
-	"#kamenridercraft:gear/legend_rider/gashats"
-  ]
+	"values": [
+		"#kamenridercraft:gear/gashats/normal",
+		"#kamenridercraft:gear/gashats/proto",
+		"#kamenridercraft:gear/gashats/dual",
+		"#kamenridercraft:gear/gashats/double",
+		"#kamenridercraft:gear/gashats/maximum",
+		"#kamenridercraft:gear/gashats/muteki",
+		"#kamenridercraft:gear/legend_rider/gashats"
+	]
 }

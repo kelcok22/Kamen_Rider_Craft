@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "chronicle_bugster",
-  "pattern": [
-	"XXX",
-	"XXX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "chronicle_bugster",
+	"pattern": [
+		"XXX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gashacon_bugvisor_ii_chronicle_bugster"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gashacon_bugvisor_ii_chronicle_bugster"
-  }
 }

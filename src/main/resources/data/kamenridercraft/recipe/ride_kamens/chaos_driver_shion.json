@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "shion",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:contract_chaostone"
-	}, "C": {
-	  "item": "kamenridercraft:chaos_ring_shion"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "shion",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:contract_chaostone"
+		},
+		"C": {
+			"item": "kamenridercraft:chaos_ring_shion"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chaos_driver_shion"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:chaos_driver_shion"
-  }
 }

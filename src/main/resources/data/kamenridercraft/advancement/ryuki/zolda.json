@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:v_buckle_zolda"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:v_buckle_zolda"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ryuki.zolda.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ryuki.zolda.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.ryuki.zolda.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.ryuki.zolda.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:ryuki/scissors",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ryukihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ryukitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ryukilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:v_buckle_zolda"
-			  ]
+	"parent": "kamenridercraft:ryuki/scissors",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:ryukihead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:ryukitroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:ryukilegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:v_buckle_zolda"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

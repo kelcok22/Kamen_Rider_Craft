@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "raider",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:hiden_metal"
-    }, "C": {
-      "item": "kamenridercraft:fighting_jackal_progrisekey"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:raidriser_jackal"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "raider",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:hiden_metal"
+		},
+		"C": {
+			"item": "kamenridercraft:fighting_jackal_progrisekey"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:raidriser_jackal"
+	}
 }

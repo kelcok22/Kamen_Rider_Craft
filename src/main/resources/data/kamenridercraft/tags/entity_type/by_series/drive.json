@@ -1,12 +1,12 @@
 {
-  "values": [
-	"kamenridercraft:roidmude",
-	"kamenridercraft:mashin_chaser",
-	"kamenridercraft:heart_roidmude",
-	  "kamenridercraft:brain_roidmude",
-	  "kamenridercraft:medic_roidmude",
-	  "kamenridercraft:reaper_legion",
-	  "kamenridercraft:dark_drive",
-	  "kamenridercraft:gord_drive"
-  ]
+	"values": [
+		"kamenridercraft:roidmude",
+		"kamenridercraft:mashin_chaser",
+		"kamenridercraft:heart_roidmude",
+		"kamenridercraft:brain_roidmude",
+		"kamenridercraft:medic_roidmude",
+		"kamenridercraft:reaper_legion",
+		"kamenridercraft:dark_drive",
+		"kamenridercraft:gord_drive"
+	]
 }

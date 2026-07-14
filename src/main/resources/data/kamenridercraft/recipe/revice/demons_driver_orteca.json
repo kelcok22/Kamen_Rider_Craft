@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "demons",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:proto_vistamp"
-	}, "C": {
-	  "item": "kamenridercraft:kraken_vistamp"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "demons",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:proto_vistamp"
+		},
+		"C": {
+			"item": "kamenridercraft:kraken_vistamp"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:demons_driver_orteca"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:demons_driver_orteca"
-  }
 }

@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "specter_tutankhamun",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_ghost_eyecon"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:tutankhamun_ghost_eyecon"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:gan_gun_hand_kama"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "specter_tutankhamun",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:tutankhamun_ghost_eyecon"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gan_gun_hand_kama"
+	}
 }
 

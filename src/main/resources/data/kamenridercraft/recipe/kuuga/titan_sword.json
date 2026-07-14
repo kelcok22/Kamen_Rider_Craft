@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kuuga_titan",
-  "pattern": [
-	"XTX",
-	"XSX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:kuuga_growing"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kuuga_titan",
+	"pattern": [
+		"XTX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:kuuga_growing"
+		},
+		"T": {
+			"item": "kamenridercraft:kuuga_titan"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		}
 	},
-	"T": {
-	  "item": "kamenridercraft:kuuga_titan"
-	},
-	"S": {
-	  "item": "kamenridercraft:base_sword"
+	"result": {
+		"id": "kamenridercraft:titan_sword"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:titan_sword"
-  }	
 }
 

@@ -1,19 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "w",
-  "pattern": [
-	"XZX",
-	"ZZZ",
-	"XZX"
-  ],
-  "key": {
-	"X": {
-	  "tag": "c:ingots/iron"
-	},"Z": {
-	  "item": "kamenridercraft:gaiamemory"
+	"type": "minecraft:crafting_shaped",
+	"group": "w",
+	"pattern": [
+		"XZX",
+		"ZZZ",
+		"XZX"
+	],
+	"key": {
+		"X": {
+			"tag": "c:ingots/iron"
+		},
+		"Z": {
+			"item": "kamenridercraft:gaiamemory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gaia_memory_refiner"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gaia_memory_refiner"
-  }
 }

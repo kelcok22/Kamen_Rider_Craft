@@ -1,31 +1,31 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:blank_watch"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:blank_watch"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:zi_o/zi_o_head",
-	  "kamenridercraft:zi_o/zi_o_troso",
-	  "kamenridercraft:zi_o/zi_o_legs",
-	  "kamenridercraft:zi_o/ryusoulger_ridewatch"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:zi_o/zi_o_head",
+			"kamenridercraft:zi_o/zi_o_troso",
+			"kamenridercraft:zi_o/zi_o_legs",
+			"kamenridercraft:zi_o/ryusoulger_ridewatch"
+		]
+	},
+	"sends_telemetry_event": false
 }

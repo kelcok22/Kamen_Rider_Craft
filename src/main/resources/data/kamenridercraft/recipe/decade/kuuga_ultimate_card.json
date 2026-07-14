@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:kuuga_mighty_card"
-	}, 
-	{
-	  "item": "kamenridercraft:kuuga_ultimate"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:kuuga_mighty_card"
+		},
+		{
+			"item": "kamenridercraft:kuuga_ultimate"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:kuuga_ultimate_card"
-  }
+	"result": {
+		"id": "kamenridercraft:kuuga_ultimate_card"
+	}
 }

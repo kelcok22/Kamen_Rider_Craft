@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "legend_rider_switches",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:astroswitch"
-	}, 
-	{
-	  "item": "kamenridercraft:condorer_wheel"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_rider_switches",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:astroswitch"
+		},
+		{
+			"item": "kamenridercraft:condorer_wheel"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:amazon_switch"
-  }
+	"result": {
+		"id": "kamenridercraft:amazon_switch"
+	}
 }

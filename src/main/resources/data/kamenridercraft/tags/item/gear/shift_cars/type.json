@@ -1,20 +1,20 @@
 {
-  "values": [
-	"kamenridercraft:speedshift",
-	"kamenridercraft:wildshift",
-	"kamenridercraft:technicshift",
-	"kamenridercraft:deadheatshift",
-	"kamenridercraft:formulashift",
-	"kamenridercraft:tridoronshift",
-	"kamenridercraft:proto_speedshift",
-	"kamenridercraft:heartronshift",
-	"kamenridercraft:high_speedshift",
-	"kamenridercraft:nextshift",
-	"kamenridercraft:specialshift",
-	"kamenridercraft:fruitsshift",
-	"kamenridercraft:speedwildtechnicshift",
-	"kamenridercraft:speedshift_gold",
-	"kamenridercraft:wildshift_gold",
-	"kamenridercraft:shift_ride_crosser"
-  ]
+	"values": [
+		"kamenridercraft:speedshift",
+		"kamenridercraft:wildshift",
+		"kamenridercraft:technicshift",
+		"kamenridercraft:deadheatshift",
+		"kamenridercraft:formulashift",
+		"kamenridercraft:tridoronshift",
+		"kamenridercraft:proto_speedshift",
+		"kamenridercraft:heartronshift",
+		"kamenridercraft:high_speedshift",
+		"kamenridercraft:nextshift",
+		"kamenridercraft:specialshift",
+		"kamenridercraft:fruitsshift",
+		"kamenridercraft:speedwildtechnicshift",
+		"kamenridercraft:speedshift_gold",
+		"kamenridercraft:wildshift_gold",
+		"kamenridercraft:shift_ride_crosser"
+	]
 }

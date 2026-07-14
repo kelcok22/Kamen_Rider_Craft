@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "new_kiva",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:fuestle"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "new_kiva",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestle"
+		},
+		"M": {
+			"item": "kamenridercraft:newwakeupfuestle"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:newwakeupfuestle"
+	"result": {
+		"id": "kamenridercraft:newkivadriver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:newkivadriver"
-  }	
 }

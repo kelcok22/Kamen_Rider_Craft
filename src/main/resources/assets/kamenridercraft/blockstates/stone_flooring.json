@@ -1,5 +1,7 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/stone_flooring"}
-  }
- }
+	"variants": {
+		"": {
+			"model": "kamenridercraft:block/stone_flooring"
+		}
+	}
+}

@@ -1,49 +1,49 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:kikai_driver"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:kikai_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zi-o.kikai.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zi-o.kikai.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.zi-o.kikai.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.zi-o.kikai.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:zi-o/quiz",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:zi_o_head"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:zi_o_troso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:zi_o_legs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:kikai_driver"
-			  ]
+	"parent": "kamenridercraft:zi-o/quiz",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zi_o_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zi_o_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zi_o_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:kikai_driver"
+							]
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

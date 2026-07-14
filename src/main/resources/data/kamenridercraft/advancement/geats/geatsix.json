@@ -1,52 +1,52 @@
 {
-  "display": {
-    "icon": {
-  	  "id": "kamenridercraft:boost_mkiii_raise_buckle"
-    },
-	"title": {
-      "translate": "advancements.kamenridercraft.geats.geatsix.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.geats.geatsix.description"
-    },
-    "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "parent": "kamenridercraft:geats/laserboost",
-  "criteria": {
-    "requirement": {
-  	"trigger": "minecraft:inventory_changed",
-  	"conditions": {
-  	  "player": {
-  		"equipment": {
-  		  "head": {
-  			"items": [
-  			  "kamenridercraft:geatshead"
-  			]
-  		  },
-  		  "chest": {
-  			"items": [
-  			  "kamenridercraft:geatstroso"
-  			]
-  		  },
-  		  "legs": {
-  			"items": [
-  			  "kamenridercraft:geatslegs"
-  			]
-  		  },
-  		  "feet": {
-  			"items": [
-  			  "kamenridercraft:desire_driver_geats"
-  			],
-  		  "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}"
-              }
-  		  }
-  		}
-  	  }
-  	}
-    }
-  }
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:boost_mkiii_raise_buckle"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.geats.geatsix.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.geats.geatsix.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:geats/laserboost",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:geatshead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:geatstroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:geatslegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:desire_driver_geats"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

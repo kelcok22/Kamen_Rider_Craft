@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "kickhopper",
-  "pattern": [
-	"XXX",
-	"XZX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:mini_zecter"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kickhopper",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"Z": {
+			"item": "kamenridercraft:kickhopper_zecter"
+		}
 	},
-	"Z": {
-	  "item": "kamenridercraft:kickhopper_zecter"
+	"result": {
+		"id": "kamenridercraft:kickhopper_rider_belt"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:kickhopper_rider_belt"
-  }
 }

@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:crafting_shaped",
-  "category": "equipment",
+	"category": "equipment",
 	"group": "revice",
 	"pattern": [
 		"XXX",
@@ -10,7 +10,8 @@
 	"key": {
 		"X": {
 			"item": "kamenridercraft:giff_junior_vistamp"
-		}, "C": {
+		},
+		"C": {
 			"item": "kamenridercraft:rex_vistamp"
 		}
 	},

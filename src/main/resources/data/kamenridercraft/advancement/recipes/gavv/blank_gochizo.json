@@ -1,32 +1,32 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:blank_gochizo"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:blank_gochizo"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:gavv/gavv_head",
-	  "kamenridercraft:gavv/gavv_troso",
-	  "kamenridercraft:gavv/gavv_legs",
-	  "kamenridercraft:gavv/gochizo_holder",
-      "kamenridercraft:gavv/boonboomger_gochizo"
-    ]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:gavv/gavv_head",
+			"kamenridercraft:gavv/gavv_troso",
+			"kamenridercraft:gavv/gavv_legs",
+			"kamenridercraft:gavv/gochizo_holder",
+			"kamenridercraft:gavv/boonboomger_gochizo"
+		]
+	},
+	"sends_telemetry_event": false
 }

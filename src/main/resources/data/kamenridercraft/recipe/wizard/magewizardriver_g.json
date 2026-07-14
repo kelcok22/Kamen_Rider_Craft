@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "wizard_belt",
-  "pattern": [
-    "XXX",
-    "XMX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:wizardgem"
-    },
-    "M": {
-      "item": "kamenridercraft:mage_g_ring"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:magewizardriver_g"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "wizard_belt",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:wizardgem"
+		},
+		"M": {
+			"item": "kamenridercraft:mage_g_ring"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:magewizardriver_g"
+	}
 }

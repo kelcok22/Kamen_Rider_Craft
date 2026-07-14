@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:hazard_trigger"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:hazard_trigger"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.hazard.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.hazard.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.hazard.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.hazard.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/sparkling",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:build_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:hazard_trigger\"}"
-              }
+	"parent": "kamenridercraft:build/sparkling",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:buildhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:buildtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:buildlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:build_driver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex3:\"kamenridercraft:hazard_trigger\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

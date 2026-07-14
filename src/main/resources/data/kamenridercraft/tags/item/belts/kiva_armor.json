@@ -1,15 +1,15 @@
 {
-  "values": [
-	"kamenridercraft:kivadriver",
-	"kamenridercraft:ixa_belt",
-	  "kamenridercraft:proto_ixa_belt",
-	  "kamenridercraft:proto_ixa_belt_first",
-	"kamenridercraft:sagarc_belt",
-	"kamenridercraft:darkkivadriver",
-	"kamenridercraft:newkivadriver",
-	"kamenridercraft:reydriver",
-	"kamenridercraft:arcdriver",
-	"kamenridercraft:kivaladriver",
-	  "kamenridercraft:moose_fangire_belt"
-  ]
+	"values": [
+		"kamenridercraft:kivadriver",
+		"kamenridercraft:ixa_belt",
+		"kamenridercraft:proto_ixa_belt",
+		"kamenridercraft:proto_ixa_belt_first",
+		"kamenridercraft:sagarc_belt",
+		"kamenridercraft:darkkivadriver",
+		"kamenridercraft:newkivadriver",
+		"kamenridercraft:reydriver",
+		"kamenridercraft:arcdriver",
+		"kamenridercraft:kivaladriver",
+		"kamenridercraft:moose_fangire_belt"
+	]
 }

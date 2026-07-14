@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "another_para_dx",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_gashat"
-	}, "C": {
-	  "item": "kamenridercraft:gashat_gear_dual_another"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "another_para_dx",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:gashat_gear_dual_another"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gamer_driver_anotherparadox"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:gamer_driver_anotherparadox"
-  }
 }

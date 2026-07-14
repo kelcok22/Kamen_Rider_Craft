@@ -1,23 +1,23 @@
 {
-  "values": [
-	"kamenridercraft:zi_o_ridewatch",
-	"kamenridercraft:zi_o_ii_ridewatch",
-	"kamenridercraft:zi_o_trinity_ridewatch",
-	"kamenridercraft:grand_zi_o_ridewatch",
-	"kamenridercraft:ohma_zi_o_ridewatch",
-	"kamenridercraft:geiz_ridewatch",
-	"kamenridercraft:geiz_revive_ridewatch",
-	"kamenridercraft:geiz_majesty_ridewatch",
-	"kamenridercraft:tsukuyomi_ridewatch",
-	"kamenridercraft:zi_o_mirror_ridewatch",
-	"kamenridercraft:barlckxs_ridewatch",
-	"kamenridercraft:zonjis_ridewatch",
-	"kamenridercraft:zamonas_ridewatch",
-	"kamenridercraft:woz_ridewatch",
-	"#kamenridercraft:gear/legend_rider/ridewatches",
-	"kamenridercraft:bibiru_geiz_ridewatch",
-	"kamenridercraft:ryusoulger_ridewatch",
-	"kamenridercraft:christmas_ridewatch",
-	"kamenridercraft:woz_time_majin_ridewatch"
-  ]
+	"values": [
+		"kamenridercraft:zi_o_ridewatch",
+		"kamenridercraft:zi_o_ii_ridewatch",
+		"kamenridercraft:zi_o_trinity_ridewatch",
+		"kamenridercraft:grand_zi_o_ridewatch",
+		"kamenridercraft:ohma_zi_o_ridewatch",
+		"kamenridercraft:geiz_ridewatch",
+		"kamenridercraft:geiz_revive_ridewatch",
+		"kamenridercraft:geiz_majesty_ridewatch",
+		"kamenridercraft:tsukuyomi_ridewatch",
+		"kamenridercraft:zi_o_mirror_ridewatch",
+		"kamenridercraft:barlckxs_ridewatch",
+		"kamenridercraft:zonjis_ridewatch",
+		"kamenridercraft:zamonas_ridewatch",
+		"kamenridercraft:woz_ridewatch",
+		"#kamenridercraft:gear/legend_rider/ridewatches",
+		"kamenridercraft:bibiru_geiz_ridewatch",
+		"kamenridercraft:ryusoulger_ridewatch",
+		"kamenridercraft:christmas_ridewatch",
+		"kamenridercraft:woz_time_majin_ridewatch"
+	]
 }

@@ -1,36 +1,36 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:ridol_core"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:ridol_core"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:x/xhead",
-	  "kamenridercraft:x/xtroso",
-	  "kamenridercraft:x/xlegs",
-	  "kamenridercraft:x/ridol",
-	  "kamenridercraft:x/ridol_stick",
-	  "kamenridercraft:x/x_logo",
-	  "kamenridercraft:decade/x_card",
-	  "kamenridercraft:fourze/x_switch",
-	  "kamenridercraft:zi_o/x_ridewatch"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:x/xhead",
+			"kamenridercraft:x/xtroso",
+			"kamenridercraft:x/xlegs",
+			"kamenridercraft:x/ridol",
+			"kamenridercraft:x/ridol_stick",
+			"kamenridercraft:x/x_logo",
+			"kamenridercraft:decade/x_card",
+			"kamenridercraft:fourze/x_switch",
+			"kamenridercraft:zi_o/x_ridewatch"
+		]
+	},
+	"sends_telemetry_event": false
 }

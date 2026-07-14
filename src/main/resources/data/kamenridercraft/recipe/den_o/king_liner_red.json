@@ -1,22 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "liner_deco_king",
-  "pattern": [
-    "###",
-    "#d#",
-    "###"
-  ],
-  "key": {
-    "#": {
-	  "item": "kamenridercraft:denliner_glass"
-    },
-	"d": {
-      "tag": "c:dyes/black"
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "liner_deco_king",
+	"pattern": [
+		"###",
+		"#d#",
+		"###"
+	],
+	"key": {
+		"#": {
+			"item": "kamenridercraft:denliner_glass"
+		},
+		"d": {
+			"tag": "c:dyes/black"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:king_liner_red",
+		"count": 8
 	}
-  },
-  "result": {
-    "id": "kamenridercraft:king_liner_red",
-	"count": 8
-  }
 }

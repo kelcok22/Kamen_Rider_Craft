@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "diend",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_card"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:diend_card"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:diendriver"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "diend",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_card"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:diend_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:diendriver"
+	}
 }
 

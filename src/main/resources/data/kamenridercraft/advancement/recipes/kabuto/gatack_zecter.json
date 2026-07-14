@@ -1,31 +1,31 @@
 {
-  "parent": "minecraft:recipes/root",
-  "criteria": {
-	"has_item": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:gatack_zecter"
-			]
-		  }
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:gatack_zecter"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item"
 		]
-	  }
-	}
-  },
-  "requirements": [
-	[
-	  "has_item"
-	]
-  ],
-  "rewards": {
-	"recipes": [
-	  "kamenridercraft:kabuto/gatack_rider_belt",
-	  "kamenridercraft:kabuto/gatack_double_calibur",
-	  "kamenridercraft:kabuto/gatack_double_calibur_minus",
-	  "kamenridercraft:decade/gatack_card"
-	]
-  },
-  "sends_telemetry_event": false
+	],
+	"rewards": {
+		"recipes": [
+			"kamenridercraft:kabuto/gatack_rider_belt",
+			"kamenridercraft:kabuto/gatack_double_calibur",
+			"kamenridercraft:kabuto/gatack_double_calibur_minus",
+			"kamenridercraft:decade/gatack_card"
+		]
+	},
+	"sends_telemetry_event": false
 }

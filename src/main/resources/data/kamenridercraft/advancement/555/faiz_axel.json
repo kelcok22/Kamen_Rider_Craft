@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:faiz_axel"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:faiz_axel"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.555.faiz_axel.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.555.faiz_axel.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.555.faiz_axel.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.555.faiz_axel.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:555/faiz",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:faizhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:faiztroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:faizlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:faiz_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_axel_form\"}"
-              }
+	"parent": "kamenridercraft:555/faiz",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:faizhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:faiztroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:faizlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:faiz_driver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_axel_form\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

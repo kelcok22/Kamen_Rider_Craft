@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "birth_proto",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:cellmedal"
-	}, "C": {
-	  "item": "kamenridercraft:proto_birth_core"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "birth_proto",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:cellmedal"
+		},
+		"C": {
+			"item": "kamenridercraft:proto_birth_core"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:proto_birth_driver"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:proto_birth_driver"
-  }
 }

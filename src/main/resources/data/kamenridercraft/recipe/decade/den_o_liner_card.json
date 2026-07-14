@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "final_form_ride_card",
-  "ingredients": [
-{
-	
-	  "item": "kamenridercraft:den_o_sword_card"
-	}, 
-	{
-	  "item": "kamenridercraft:denkamen_sword"
-	}
+	"type": "minecraft:crafting_shapeless",
+	"group": "final_form_ride_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:den_o_sword_card"
+		},
+		{
+			"item": "kamenridercraft:denkamen_sword"
+		}
 	],
-  "result": {
-	"id": "kamenridercraft:den_o_liner_card"
-  }
+	"result": {
+		"id": "kamenridercraft:den_o_liner_card"
+	}
 }

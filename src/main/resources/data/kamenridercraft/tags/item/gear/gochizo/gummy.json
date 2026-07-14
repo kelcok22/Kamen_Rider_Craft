@@ -1,18 +1,18 @@
 {
-  "values": [
-	"kamenridercraft:poppingummy_gochizo",
-	"kamenridercraft:punchingummy_gochizo",
-	"kamenridercraft:kickingummy_gochizo",
-	"kamenridercraft:sparkingummy_gochizo",
-    "kamenridercraft:amazingummy_gochizo",
-	"kamenridercraft:tsurigummy_gochizo",
-	"kamenridercraft:hichew_gochizo",
-	"kamenridercraft:kamenridergummy_gochizo",
-    "kamenridercraft:poppingummy_gochizo_halloween",
-    "kamenridercraft:poppingummy_gochizo_charadeco_ver",
-    "kamenridercraft:merrychristmas_gochizo",
-	"kamenridercraft:poppingummy_gochizo_peach",
-	"kamenridercraft:poppingummy_gochizo_honey",
-	"kamenridercraft:poppingummy_gochizo_muscat"
-  ]
+	"values": [
+		"kamenridercraft:poppingummy_gochizo",
+		"kamenridercraft:punchingummy_gochizo",
+		"kamenridercraft:kickingummy_gochizo",
+		"kamenridercraft:sparkingummy_gochizo",
+		"kamenridercraft:amazingummy_gochizo",
+		"kamenridercraft:tsurigummy_gochizo",
+		"kamenridercraft:hichew_gochizo",
+		"kamenridercraft:kamenridergummy_gochizo",
+		"kamenridercraft:poppingummy_gochizo_halloween",
+		"kamenridercraft:poppingummy_gochizo_charadeco_ver",
+		"kamenridercraft:merrychristmas_gochizo",
+		"kamenridercraft:poppingummy_gochizo_peach",
+		"kamenridercraft:poppingummy_gochizo_honey",
+		"kamenridercraft:poppingummy_gochizo_muscat"
+	]
 }

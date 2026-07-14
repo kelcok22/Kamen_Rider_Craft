@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:k_touch_21"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:k_touch_21"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.decade.complete_21.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.decade.complete_21.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.decade.complete_21.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.decade.complete_21.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:decade/neodecadriver",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:decadehead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:decadetroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:decadelegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:neo_decadriver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:k_touch_21\"}"
-              }
+	"parent": "kamenridercraft:decade/neodecadriver",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:decadehead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:decadetroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:decadelegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:neo_decadriver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:k_touch_21\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }

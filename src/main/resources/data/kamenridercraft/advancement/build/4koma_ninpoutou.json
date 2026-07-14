@@ -1,32 +1,32 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:4koma_ninpoutou"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:4koma_ninpoutou"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.4koma_ninpoutou.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.4koma_ninpoutou.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.4koma_ninpoutou.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.4koma_ninpoutou.description"
-    },
-    "frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/hawk_gatlinger",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"items": [
-		  {
-			"items": [
-			  "kamenridercraft:4koma_ninpoutou"
-			]
-		  }
-		]
-	  }
+	"parent": "kamenridercraft:build/hawk_gatlinger",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:4koma_ninpoutou"
+						]
+					}
+				]
+			}
+		}
 	}
-  }
 }

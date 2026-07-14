@@ -1,27 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "century_king_blade",
-  "pattern": [
-	"XRX",
-	"XMX",
-	"XSX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:kaijin_stone"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "century_king_blade",
+	"pattern": [
+		"XRX",
+		"XMX",
+		"XSX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:kaijin_stone"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"R": {
+			"item": "kamenridercraft:king_stone_sun"
+		},
+		"S": {
+			"item": "kamenridercraft:king_stone_moon"
+		}
 	},
-	"M": {
-	  "item": "kamenridercraft:base_sword"
-	},
-	"R": {
-	  "item": "kamenridercraft:king_stone_sun"
-	},
-	"S": {
-	  "item": "kamenridercraft:king_stone_moon"
-	  }
-  },
-  "result": {
-	"id": "kamenridercraft:satansabre"
-  }	
+	"result": {
+		"id": "kamenridercraft:satansabre"
+	}
 }

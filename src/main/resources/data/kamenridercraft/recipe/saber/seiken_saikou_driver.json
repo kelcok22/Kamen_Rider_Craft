@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "saikou",
-  "pattern": [
-    "XXX",
-    "XCX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:blank_wonder_ride_book"
-    }, "C": {
-      "item": "kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:seiken_saikou_driver"
-  }
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "saikou",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_wonder_ride_book"
+		},
+		"C": {
+			"item": "kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:seiken_saikou_driver"
+	}
 }

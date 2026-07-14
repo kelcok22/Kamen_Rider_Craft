@@ -1,25 +1,25 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "fifteen",
-  "pattern": [
-    "XMX",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "kamenridercraft:himawari_lockseed"
-    },
-    "S": {
-      "item": "kamenridercraft:base_sword"
-    },
-    "M": {
-      "item": "kamenridercraft:fifteen_lockseed"
-    }
-  },
-  "result": {
-    "id": "kamenridercraft:yomimaru"
-  }    
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "fifteen",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:himawari_lockseed"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:fifteen_lockseed"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:yomimaru"
+	}
 }
 

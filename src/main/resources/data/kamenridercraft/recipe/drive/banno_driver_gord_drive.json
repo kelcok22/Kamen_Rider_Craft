@@ -1,20 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "gold_drive",
-  "pattern": [
-	"XXX",
-	"XCX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:shift_alloy"
-	}, "C": {
-	  "item": "kamenridercraft:banno_tablet"
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "gold_drive",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:shift_alloy"
+		},
+		"C": {
+			"item": "kamenridercraft:banno_tablet"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:banno_driver_gord_drive"
 	}
-  },
-  "result": {
-	"id": "kamenridercraft:banno_driver_gord_drive"
-  }
 }

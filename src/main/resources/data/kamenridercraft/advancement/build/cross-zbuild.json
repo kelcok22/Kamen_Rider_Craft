@@ -1,52 +1,52 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:cross_z_build_can"
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:cross_z_build_can"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.build.cross-zbuild.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.build.cross-zbuild.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
-	"title": {
-      "translate": "advancements.kamenridercraft.build.cross-zbuild.title"
-    },
-    "description": {
-      "translate": "advancements.kamenridercraft.build.cross-zbuild.description"
-    },
-    "frame": "goal",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
-  "parent": "kamenridercraft:build/genius",
-  "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:buildhead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:buildtroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:buildlegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:build_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:cross_z_build_can\"}"
-              }
+	"parent": "kamenridercraft:build/genius",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:buildhead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:buildtroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:buildlegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:build_driver"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex3:\"kamenridercraft:cross_z_build_can\"}"
+							}
+						}
+					}
+				}
 			}
-		  }
 		}
-	  }
 	}
-  }
 }
