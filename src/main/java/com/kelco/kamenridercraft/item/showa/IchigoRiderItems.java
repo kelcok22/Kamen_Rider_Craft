@@ -46,15 +46,13 @@ public class IchigoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
-                    super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
-                    if (tick==1d) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player)  {
+                    super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
-                }}
-            }.setFormDelay(1d).addAlternative(GRASSHOPPER_MAN_CORE.get()).hasSD().setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+                }
+            }.addAlternative(GRASSHOPPER_MAN_CORE.get()).hasSD().setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nigo","typhoon_belt",
