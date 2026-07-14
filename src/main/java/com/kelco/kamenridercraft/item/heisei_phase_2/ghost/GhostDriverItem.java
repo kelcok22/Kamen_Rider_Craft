@@ -97,7 +97,7 @@ public class GhostDriverItem extends RiderDriverItem {
                 case HEAD -> {
                     return true;
                 }  case LEGS -> {
-                    getFormItem(itemstack, 1,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
+                    return getFormItem(itemstack, 1,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
                 }
             }
         }
