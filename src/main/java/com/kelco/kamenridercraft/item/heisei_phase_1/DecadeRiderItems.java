@@ -374,7 +374,7 @@ public class DecadeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setSummonBelt(0).changeRiderName("decade").isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.setSummonBelt(0).changeModel("w_cyclone.geo.json").hasCape().changeRiderName("decade").isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_CARD = ITEMS.register("ooo_card",
 			() -> new RiderCardItem(new Item.Properties(),"_ooo","neo_decade","neo_decadriver_belt",

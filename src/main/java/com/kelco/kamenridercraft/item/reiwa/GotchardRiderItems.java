@@ -1879,7 +1879,7 @@ public class GotchardRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false))
 					.setSummonBelt((RiderDriverItem) WRiderItems.WDRIVER.get())
-					.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).isGlowing().changeRiderName("decade_w").addAlternative(W_RIDE_CHEMY_CARD_GOTCHARD.get())
+					.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).isGlowing().changeRiderName("decade_w").changeModel("w_cyclone.geo.json").hasCape().addAlternative(W_RIDE_CHEMY_CARD_GOTCHARD.get())
 					.addToList(NEED_ITEM_CycloneTaToBa).addToList(ChemyRiserItem.legendChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_RIDE_CHEMY_CARD = ITEMS.register("ooo_ride_chemy_card",
