@@ -78,6 +78,8 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem alsoChange4thSlot;
     private RiderFormChangeItem alsoChange5thSlot;
 
+    private RiderFormChangeItem alsoUpdateOld;
+
     private Boolean hasIncompatibleForms = false;
     private List<RiderFormChangeItem> incompatibleForms = new ArrayList<>();
 
@@ -272,6 +274,11 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem alsoChange5thSlot(Item item) {
         alsoChange5thSlot = (RiderFormChangeItem) item;
+        return this;
+    }
+
+    public RiderFormChangeItem getAlsoUpdateOld(Item item) {
+        alsoUpdateOld = (RiderFormChangeItem) item;
         return this;
     }
 
@@ -551,6 +558,8 @@ public class RiderFormChangeItem extends BaseItem {
                 if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.canChange(player, belt, BELT))
                     shiftItem.interactLivingEntity(new ItemStack(form), player, summon, usedHand);
                 else if (canChange(player, belt, BELT)) {
+                    int SLOT = slot;
+
                     if (resetForm) RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
                     if (resetToMainForm & Objects.equals(belt.riderName, riderName))
                         RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
@@ -562,11 +571,10 @@ public class RiderFormChangeItem extends BaseItem {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange3rdSlot, 3);
                     if (alsoChange4thSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
-
                     if (setToArmorForm)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
 
-                    int SLOT = slot;
+
                     if (usedHand == InteractionHand.OFF_HAND & offhand) SLOT = offhandSlot;
 
                     if (switchItem != null & RiderDriverItem.getFormItem(summon.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
@@ -574,6 +582,7 @@ public class RiderFormChangeItem extends BaseItem {
                     else RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), this, SLOT);
                     if (alsoChange5thSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange5thSlot, 5);
+                    if (alsoUpdateOld!= null) RiderDriverItem.SetOldFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
 
                 } else if (!alternative.isEmpty()) {
 
@@ -602,6 +611,7 @@ public class RiderFormChangeItem extends BaseItem {
                         player.getCooldowns().addCooldown(this, 60);
                         player.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK, 20, 0, true, false));
                     }
+                    int SLOT = slot;
                     if (resetForm) RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
                     if (resetToMainForm & Objects.equals(belt.riderName, riderName))
                         RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
@@ -613,11 +623,10 @@ public class RiderFormChangeItem extends BaseItem {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange3rdSlot, 3);
                     if (alsoChange4thSlot != null)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
-
+                    if (alsoUpdateOld!= null) RiderDriverItem.SetOldFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
                     if (setToArmorForm)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
 
-                    int SLOT = slot;
                     if (usedHand == InteractionHand.OFF_HAND & offhand) SLOT = offhandSlot;
 
                     if (switchItem != null & RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)

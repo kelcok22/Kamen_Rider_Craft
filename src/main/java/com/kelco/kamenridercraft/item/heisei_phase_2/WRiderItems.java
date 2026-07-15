@@ -289,7 +289,6 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==30d)RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.asItem());
                     if (tick==29d){
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.NOTE_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 0.595f);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -309,7 +308,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}}
-			}.setFormDelay(1).needBaseForm().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.getAlsoUpdateOld(ACCEL_MEMORY.get()).setFormDelay(1).needBaseForm().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_BOOSTER_MEMORY = ITEMS.register("accel_booster_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_booster","accel","acceldriver_belt_b",
@@ -566,7 +565,6 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==30d)RiderDriverItem.SetOldFormItem(itemstack,ETERNAL_T2_MEMORY.asItem());
                     if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
 
                     if (tick==1d) {
@@ -614,7 +612,7 @@ public class WRiderItems {
 							player.getZ(), 10, 0, 0, 0, 0.1);
 
 				}}
-			}.needBaseForm().hasCape().setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1) );
+			}.getAlsoUpdateOld(ETERNAL_T2_MEMORY.get()).needBaseForm().hasCape().setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1) );
 
 
 	public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",
