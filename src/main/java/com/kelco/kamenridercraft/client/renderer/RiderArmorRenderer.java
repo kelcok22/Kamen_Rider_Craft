@@ -30,6 +30,9 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
         super(new RiderArmorModel());
         if (equipmentSlot == EquipmentSlot.FEET) {
+            addRenderLayer(new WindRenderLayer<>(this));
+        }
+        if (equipmentSlot == EquipmentSlot.FEET) {
             addRenderLayer(new AutoGlowingGeoLayer<>(this) {
                 @Nullable
                 protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
@@ -79,7 +82,6 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                 return null;
             }
         });
-        if (equipmentSlot == EquipmentSlot.FEET) addRenderLayer(new WindRenderLayer<>(this));
     }
 
     public GeoArmorRenderer<RiderArmorItem> addRenderLayer(GeoRenderLayer<RiderArmorItem> renderLayer) {

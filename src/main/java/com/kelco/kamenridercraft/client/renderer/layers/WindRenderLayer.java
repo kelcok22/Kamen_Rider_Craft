@@ -15,7 +15,6 @@ import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
-import software.bernie.geckolib.model.DefaultedItemGeoModel;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
@@ -43,9 +42,10 @@ public class WindRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> 
             LivingEntity RIDER = renderer2.GetEntity();
             if (RIDER != null && Objects.requireNonNull(RIDER.getAttribute(Attributes.WIND)).getBaseValue() > 0) {
                 float f = (float) RIDER.tickCount + partialTick;
-                RenderType renderType2 = RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/render_layer/wind.png"), this.xOffset(f) % 1.0F, 0.0F);
+                RenderType renderType2 = RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/render_layer/wind.png"), this.xOffset(f) % 1.0F, 0.0F);
                 poseStack.mulPose(Axis.YP.rotationDegrees(-(f * 22 - 45.0F)));
                 getRenderer().reRender(getDefaultBakedModel(animatable), poseStack, bufferSource, animatable, renderType, bufferSource.getBuffer(renderType2), partialTick, packedLight, OverlayTexture.NO_OVERLAY, getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
+
                 poseStack.scale(1.3f, 1.3f, 1.3f);
                 poseStack.mulPose(Axis.YP.rotationDegrees(f * 24 - 45.0F));
                 getRenderer().reRender(getDefaultBakedModel(animatable), poseStack, bufferSource, animatable, renderType, bufferSource.getBuffer(renderType2), partialTick, packedLight, OverlayTexture.NO_OVERLAY, getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
