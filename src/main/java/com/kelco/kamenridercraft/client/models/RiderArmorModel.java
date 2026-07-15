@@ -36,9 +36,11 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             LivingEntity RIDER = riderRenderer.GetEntity();
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
             if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
-                if (slot == EquipmentSlot.FEET)
+                if (slot == EquipmentSlot.FEET) {
                     return BELT.getBeltModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET), animatable, slot, RIDER);
-                else return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET), animatable, slot, RIDER);
+                } else {
+                    return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET), animatable, slot, RIDER);
+                }
             }
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
@@ -116,11 +118,19 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 bipedHead.setScaleZ((float) RIDER.getAttribute(Attributes.HEAD_SIZE).getValue());
             }
 
-            if (cape != null & Cape < 0) cape.setRotX(Cape);
-            if (cape != null & ball != 0) cape.setRotY(ball);
+            if (cape != null & Cape < 0) {
+                cape.setRotX(Cape);
+            }
+            if (cape != null & ball != 0) {
+                cape.setRotY(ball);
+            }
 
-            if (cape2 != null & Cape < 0) cape2.setRotX(Cape);
-            if (cape2 != null & ball != 0) cape2.setRotY(ball);
+            if (cape2 != null & Cape < 0) {
+                cape2.setRotX(Cape);
+            }
+            if (cape2 != null & ball != 0) {
+                cape2.setRotY(ball);
+            }
 
             if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                 belt.setCustomAnimations(an, instanceId, state);
@@ -128,29 +138,31 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 GeoBone parkaGhost = this.getAnimationProcessor().getBone("parkaGhost");
                 if (parkaGhost != null) {
                     if (RiderDriverItem.isTransforming(RIDER)) {
-                        float X =-Transforming-1;
-                            if (Transforming>20) {
-                                X = X -((Transforming-20)-1);
-                            }
+                        float X = -Transforming - 1;
+                        if (Transforming > 20) {
+                            X = X - ((Transforming - 20) - 1);
+                        }
                         parkaGhost.setPosX(X);
-                        if (Transforming>5) {
-                            float Y = (10-(Transforming-10)/2);
+                        if (Transforming > 5) {
+                            float Y = (10 - (Transforming - 10) / 2);
                             parkaGhost.setPosY(Y);
-                        }else parkaGhost.setPosY((Transforming+1)*2);
+                        } else {
+                            parkaGhost.setPosY((Transforming + 1) * 2);
+                        }
 
 
-                        if (Transforming>20) {
-                            float size = 1-((Transforming-20)/10);
+                        if (Transforming > 20) {
+                            float size = 1 - ((Transforming - 20) / 10);
                             parkaGhost.setScaleX(size);
                             parkaGhost.setScaleY(size);
                             parkaGhost.setScaleZ(size);
-                        }else {
+                        } else {
                             parkaGhost.setScaleX(1f);
                             parkaGhost.setScaleY(1f);
                             parkaGhost.setScaleZ(1f);
                         }
-                        parkaGhost.setRotY((-Transforming-1) / 6);
-                        parkaGhost.setRotX((-Transforming-1) / 15);
+                        parkaGhost.setRotY((-Transforming - 1) / 6);
+                        parkaGhost.setRotX((-Transforming - 1) / 15);
 
                     } else {
                         parkaGhost.setRotX(0);
@@ -292,35 +304,53 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 GeoBone leftLegKickRemove = this.getAnimationProcessor().getBone("leftLegKickRemove");
 
                 boolean isKicking = RIDER.getAttribute(CHANGE_KICK_MODEL).getValue() == 1;
-                        if (headKick != null) headKick.setHidden(!isKicking );
-                        if (headKickRemove != null) headKickRemove.setHidden(isKicking);
-                        if (rightArmKick != null) rightArmKick.setHidden(!isKicking);
-                        if (rightArmKickRemove != null) rightArmKickRemove.setHidden(isKicking );
-                        if (leftArmKick != null) leftArmKick.setHidden(!isKicking);
-                        if (leftArmKickRemove != null) leftArmKickRemove.setHidden(isKicking );
-                        if (leftLegKick != null) leftLegKick.setHidden(!isKicking);
-                        if (leftLegKickRemove != null) leftLegKickRemove.setHidden(isKicking );
-                        if (rightLegKick != null) rightLegKick.setHidden(!isKicking);
-                        if (rightLegKickRemove != null) rightLegKickRemove.setHidden(isKicking );
+                if (headKick != null) {
+                    headKick.setHidden(!isKicking);
+                }
+                if (headKickRemove != null) {
+                    headKickRemove.setHidden(isKicking);
+                }
+                if (rightArmKick != null) {
+                    rightArmKick.setHidden(!isKicking);
+                }
+                if (rightArmKickRemove != null) {
+                    rightArmKickRemove.setHidden(isKicking);
+                }
+                if (leftArmKick != null) {
+                    leftArmKick.setHidden(!isKicking);
+                }
+                if (leftArmKickRemove != null) {
+                    leftArmKickRemove.setHidden(isKicking);
+                }
+                if (leftLegKick != null) {
+                    leftLegKick.setHidden(!isKicking);
+                }
+                if (leftLegKickRemove != null) {
+                    leftLegKickRemove.setHidden(isKicking);
+                }
+                if (rightLegKick != null) {
+                    rightLegKick.setHidden(!isKicking);
+                }
+                if (rightLegKickRemove != null) {
+                    rightLegKickRemove.setHidden(isKicking);
+                }
 
                 GeoBone joker = this.getAnimationProcessor().getBone("joker");
                 if (joker != null) {
-                    if (isKicking){
+                    if (isKicking) {
                         joker.setPosY(-5);
                         joker.setPosX(2);
-                    }
-                    else{
+                    } else {
                         joker.setPosY(0);
                         joker.setPosX(0);
                     }
                 }
 
                 if (joker != null) {
-                    if (isKicking){
+                    if (isKicking) {
                         joker.setPosY(-5);
                         joker.setPosX(2);
-                    }
-                    else{
+                    } else {
                         joker.setPosY(0);
                         joker.setPosX(0);
                     }
@@ -331,54 +361,78 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
                 boolean areWingsOut = RIDER.getAttribute(WINGS_OUT).getValue() == 1;
 
-                if (WingsOut != null) WingsOut.setHidden(!areWingsOut);
-                if (WingsOutRemove != null) WingsOutRemove.setHidden(areWingsOut);
-
+                if (WingsOut != null) {
+                    WingsOut.setHidden(!areWingsOut);
+                }
+                if (WingsOutRemove != null) {
+                    WingsOutRemove.setHidden(areWingsOut);
+                }
 
 
                 if (tire != null) {
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire.setRotX(Transforming);
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    }
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire.setPosX(Transforming / 2);
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    }
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire.setPosY(Transforming / 2);
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    }
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire.setPosZ(-Transforming);
+                    }
                 }
                 if (tire2 != null) {
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire2.setRotX(Transforming);
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    }
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire2.setPosX(Transforming / 2);
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    }
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire2.setPosY(Transforming / 2);
-                    if (RiderDriverItem.isTransforming(RIDER))
+                    }
+                    if (RiderDriverItem.isTransforming(RIDER)) {
                         tire2.setPosZ(-Transforming);
+                    }
                 }
                 if (tire3 != null) {
                     if (RiderDriverItem.getFormItem(RIDER.getItemBySlot(EquipmentSlot.FEET), 1) != DriveRiderItems.SHIFT_PROTO_SPEED_CHASER.asItem()) {
-                        if (RiderDriverItem.isTransforming(RIDER))
+                        if (RiderDriverItem.isTransforming(RIDER)) {
                             tire3.setRotZ(Transforming);
-                        if (RiderDriverItem.isTransforming(RIDER))
+                        }
+                        if (RiderDriverItem.isTransforming(RIDER)) {
                             tire3.setPosX(Transforming / 2);
-                        if (RiderDriverItem.isTransforming(RIDER))
+                        }
+                        if (RiderDriverItem.isTransforming(RIDER)) {
                             tire3.setPosY(Transforming / 2);
-                        if (RiderDriverItem.isTransforming(RIDER))
+                        }
+                        if (RiderDriverItem.isTransforming(RIDER)) {
                             tire3.setPosZ(Transforming);
+                        }
                     } else {
                         tire3.setRotZ(state.getPartialTick());
                     }
                 }
             }
 
-            if (front_fork != null) front_fork.setRotY(ball);
-            if (front_fork2 != null)
+            if (front_fork != null) {
+                front_fork.setRotY(ball);
+            }
+            if (front_fork2 != null) {
                 front_fork2.setRotY(ball);
+            }
 
-            if (f_wheel != null) f_wheel.setRotX(wheel);
-            if (f_wheel2 != null) f_wheel2.setRotX(wheel);
-            if (b_wheel != null) b_wheel.setRotX(wheel);
+            if (f_wheel != null) {
+                f_wheel.setRotX(wheel);
+            }
+            if (f_wheel2 != null) {
+                f_wheel2.setRotX(wheel);
+            }
+            if (b_wheel != null) {
+                b_wheel.setRotX(wheel);
+            }
             if (poop_ball_vice != null) {
                 poop_ball_vice.setRotX(wheel);
                 poop_ball_vice.setRotZ(ball);

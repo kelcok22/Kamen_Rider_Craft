@@ -30,37 +30,39 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
         super(new RiderArmorModel());
         if (equipmentSlot == EquipmentSlot.FEET) {
-        addRenderLayer(new AutoGlowingGeoLayer<>(this) {
-            @Nullable
-            protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
-                if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
-                    LivingEntity RIDER = renderer2.GetEntity();
-                    if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                        if (renderer.getTextureLocation(animatable).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))
-                            return null;
-                       return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER) ? AutoGlowingTexture.getRenderType(getTextureResource(animatable)) : null;
-
-                    }
-                }
-                return null;
-            }
-        });
-    }else{
             addRenderLayer(new AutoGlowingGeoLayer<>(this) {
-                    @Nullable
-                    protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
-                        if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
-                            LivingEntity RIDER = renderer2.GetEntity();
-                            if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                                if (renderer.getTextureLocation(animatable).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))
-                                    return null;
-                                ResourceLocation path = appendToPath(model.getTextureResource(animatable, renderer2), "_glowmask");
-                                return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), renderer2.getCurrentSlot(), RIDER) ? RenderType.breezeEyes(path) : null;
+                @Nullable
+                protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
+                    if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
+                        LivingEntity RIDER = renderer2.GetEntity();
+                        if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                            if (renderer.getTextureLocation(animatable).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath())) {
+                                return null;
                             }
+                            return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER) ? AutoGlowingTexture.getRenderType(getTextureResource(animatable)) : null;
+
                         }
-                        return null;
                     }
-                });
+                    return null;
+                }
+            });
+        } else {
+            addRenderLayer(new AutoGlowingGeoLayer<>(this) {
+                @Nullable
+                protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
+                    if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
+                        LivingEntity RIDER = renderer2.GetEntity();
+                        if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                            if (renderer.getTextureLocation(animatable).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath())) {
+                                return null;
+                            }
+                            ResourceLocation path = appendToPath(model.getTextureResource(animatable, renderer2), "_glowmask");
+                            return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), renderer2.getCurrentSlot(), RIDER) ? RenderType.breezeEyes(path) : null;
+                        }
+                    }
+                    return null;
+                }
+            });
         }
 
         if (equipmentSlot == EquipmentSlot.HEAD || equipmentSlot == EquipmentSlot.FEET) {
@@ -86,21 +88,13 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     }
 
     public LivingEntity GetEntity() {
-        if (getCurrentEntity() instanceof LivingEntity entity) return entity;
-        else return null;
+        if (getCurrentEntity() instanceof LivingEntity entity) {
+            return entity;
+        } else {
+            return null;
+        }
     }
 
-    /*
-    @Override
-	public GeoBone getRightBootBone(GeoModel<RiderArmorItem> model) {
-		return model.getBone("armorBody").orElse(super.getRightBootBone(model));
-	}
-    // We don't use the boot bones, so we better let other mods know
-	@Override
-	public GeoBone getLeftBootBone(GeoModel<RiderArmorItem> model) {
-		return model.getBone("armorBody").orElse(super.getLeftBootBone(model));
-	}
-    */
     @Override
     public RenderType getRenderType(RiderArmorItem animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
         return RenderType.entityTranslucent(texture);
@@ -136,5 +130,4 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
             }
         }
     }
-
 }

@@ -6,15 +6,15 @@ import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.model.GeoModel;
 
-public class TestEffectModel<T extends GeoAnimatable> extends GeoModel<T> {
+public class EffectModel<T extends GeoAnimatable> extends GeoModel<T> {
     @Override
     public ResourceLocation getModelResource(T animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/effects/wind.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(T animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/shocker_combatman.png");
+        return ResourceLocation.withDefaultNamespace("textures/entity/breeze/breeze_wind.png");
     }
 
     @Override

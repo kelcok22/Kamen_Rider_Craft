@@ -507,8 +507,8 @@
 		},
 		"gui": {
 			"rotation": [-150, -45, -180],
-			"translation": [0, 1, 0],
-			"scale": [0.75, 0.75, 0.75]
+			"translation": [0, -0.5, 0],
+			"scale": [0.63, 0.63, 0.63]
 		},
 		"fixed": {
 			"rotation": [-90, 0, 0],

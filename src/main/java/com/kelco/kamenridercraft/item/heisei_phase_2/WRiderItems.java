@@ -55,9 +55,12 @@ public class WRiderItems {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
-
-                    if (tick==1d) {
-                        player.getAttribute(Attributes.WIND).setBaseValue(30);
+					if (tick==6d) {
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BREEZE_IDLE_GROUND, SoundSource.PLAYERS, 1.0F, 1F);
+					}
+					if (tick==1d) {
+						player.getAttribute(Attributes.WIND).setBaseValue(30);
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);

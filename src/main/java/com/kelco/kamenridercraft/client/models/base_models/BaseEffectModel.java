@@ -20,7 +20,7 @@ public class BaseEffectModel extends GeoModel<BaseEffectEntity> {
         if (animatable.getModel().isEmpty()) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
         } else {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + animatable.getModel());
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/effects/" + animatable.getModel());
         }
     }
 

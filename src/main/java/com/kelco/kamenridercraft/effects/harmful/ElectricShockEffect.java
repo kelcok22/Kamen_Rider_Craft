@@ -27,6 +27,6 @@ public class ElectricShockEffect extends MobEffect {
 
 	public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
 		int i = 40 >> amplifier;
-		return i > 0 ? tickCount % i == 0 : true;
+		return i == 0 || tickCount % i == 0;
 	}
 }
