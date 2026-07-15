@@ -302,6 +302,8 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 GeoBone rightLegKickRemove = this.getAnimationProcessor().getBone("rightLegKickRemove");
                 GeoBone leftLegKick = this.getAnimationProcessor().getBone("leftLegKick");
                 GeoBone leftLegKickRemove = this.getAnimationProcessor().getBone("leftLegKickRemove");
+                GeoBone bodyKick = this.getAnimationProcessor().getBone("bodyKick");
+                GeoBone bodyKickRemove = this.getAnimationProcessor().getBone("bodyKickRemove");
 
                 boolean isKicking = RIDER.getAttribute(CHANGE_KICK_MODEL).getValue() == 1;
                 if (headKick != null) {
@@ -333,6 +335,12 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 }
                 if (rightLegKickRemove != null) {
                     rightLegKickRemove.setHidden(isKicking);
+                }
+                if (bodyKick != null) {
+                    bodyKick.setHidden(!isKicking);
+                }
+                if (bodyKickRemove != null) {
+                    bodyKickRemove.setHidden(isKicking);
                 }
 
                 GeoBone joker = this.getAnimationProcessor().getBone("joker");
