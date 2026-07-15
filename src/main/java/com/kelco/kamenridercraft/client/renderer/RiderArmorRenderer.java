@@ -68,7 +68,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         if (equipmentSlot == EquipmentSlot.HEAD || equipmentSlot == EquipmentSlot.FEET) {
             addRenderLayer(new RiderRenderLayer<>(this));
         }
-        addRenderLayer(new WindRenderLayer<>(this));
+
 
         addRenderLayer(new AutoGlowingGeoLayer<>(this) {
             @Nullable
@@ -79,6 +79,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
                 return null;
             }
         });
+        if (equipmentSlot == EquipmentSlot.FEET) addRenderLayer(new WindRenderLayer<>(this));
     }
 
     public GeoArmorRenderer<RiderArmorItem> addRenderLayer(GeoRenderLayer<RiderArmorItem> renderLayer) {

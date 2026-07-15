@@ -9,6 +9,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;
@@ -42,13 +43,12 @@ public class WindRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> 
             LivingEntity RIDER = renderer2.GetEntity();
             if (RIDER != null && Objects.requireNonNull(RIDER.getAttribute(Attributes.WIND)).getBaseValue() > 0) {
                 float f = (float) RIDER.tickCount + partialTick;
-                renderType = RenderType.breezeWind(ResourceLocation.withDefaultNamespace("textures/entity/breeze/breeze_wind.png"), this.xOffset(f) % 1.0F, 0.0F);
+                RenderType renderType2 = RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/render_layer/wind.png"), this.xOffset(f) % 1.0F, 0.0F);
                 poseStack.mulPose(Axis.YP.rotationDegrees(-(f * 22 - 45.0F)));
-
-                getRenderer().reRender(getDefaultBakedModel(animatable), poseStack, bufferSource, animatable, renderType, bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay, getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
+                getRenderer().reRender(getDefaultBakedModel(animatable), poseStack, bufferSource, animatable, renderType, bufferSource.getBuffer(renderType2), partialTick, packedLight, OverlayTexture.NO_OVERLAY, getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                 poseStack.scale(1.3f, 1.3f, 1.3f);
                 poseStack.mulPose(Axis.YP.rotationDegrees(f * 24 - 45.0F));
-                getRenderer().reRender(getDefaultBakedModel(animatable), poseStack, bufferSource, animatable, renderType, bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay, getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
+                getRenderer().reRender(getDefaultBakedModel(animatable), poseStack, bufferSource, animatable, renderType, bufferSource.getBuffer(renderType2), partialTick, packedLight, OverlayTexture.NO_OVERLAY, getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
             }
         }
     }
