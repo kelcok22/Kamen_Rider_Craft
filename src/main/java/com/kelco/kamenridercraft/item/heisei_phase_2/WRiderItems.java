@@ -286,10 +286,9 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
+                    if (tick==30d)RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.asItem());
                     if (tick==29d){
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.NOTE_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 0.595f);
-                        if (tick==30d)RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.asItem());
-
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);

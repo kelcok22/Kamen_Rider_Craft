@@ -2418,7 +2418,7 @@ public class GotchardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
 			}.setSummonBelt((RiderDriverItem) WRiderItems.LOSTDRIVER_ETERNAL.get()).addSummonWeapon(WRiderItems.ETERNAL_EDGE.get())
-                    .needBaseForm().changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+                    .hasCape().needBaseForm().changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",
