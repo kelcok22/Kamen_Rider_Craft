@@ -5,8 +5,11 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -48,7 +51,7 @@ public class BossBlock extends BaseBlock {
     @Override
     public void playerDestroy(Level wolrd, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity p_49831_, ItemStack stack) {
         if (player.level() instanceof ServerLevel serverLevel && !(serverLevel.getDifficulty() == Difficulty.PEACEFUL)) {
-            if ((serverLevel.getDifficulty() == Difficulty.HARD) || (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player))){
+            if ((serverLevel.getDifficulty() == Difficulty.HARD) || (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player))) {
                 if (BLOCK != null) {
                     if (NUM == 1) {
                         for (int n = 0; n < 40; n++) {
@@ -57,8 +60,9 @@ public class BossBlock extends BaseBlock {
                             int posY = pos.getY() + generator.nextInt(6);
                             int posZ = (pos.getZ() - 10) + generator.nextInt(20);
                             BlockPos pos1 = new BlockPos(posX, posY, posZ);
-                            if (wolrd.isEmptyBlock(pos1))
+                            if (wolrd.isEmptyBlock(pos1)) {
                                 wolrd.setBlockAndUpdate(pos1, BLOCK.get(generator.nextInt(BLOCK.size())).defaultBlockState());
+                            }
                         }
                     } else {
                         for (int n = 0; n < 40; n++) {
@@ -67,8 +71,10 @@ public class BossBlock extends BaseBlock {
                             int posY = pos.getY();
                             int posZ = (pos.getZ() - 10) + generator.nextInt(20);
                             BlockPos pos1 = new BlockPos(posX, posY, posZ);
-                            if (wolrd.isEmptyBlock(pos1))
+                            BlockState blockBelow = wolrd.getBlockState(new BlockPos(posX, posY - 1, posZ));
+                            if (wolrd.isEmptyBlock(pos1) && !(blockBelow.is(TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace("flowers"))) || blockBelow.is(TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace("replacable_by_trees"))))) {
                                 wolrd.setBlockAndUpdate(pos1, BLOCK.get(generator.nextInt(BLOCK.size())).defaultBlockState());
+                            }
                         }
                     }
                 }
@@ -76,8 +82,11 @@ public class BossBlock extends BaseBlock {
                 if (boss != null) {
                     boss.moveTo(pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, 0, 0.0F);
                     wolrd.addFreshEntity(boss);
-                    if (!TEXT.isEmpty() && wolrd.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
-                        for (Component text : TEXT) player.sendSystemMessage(text);
+                    if (!TEXT.isEmpty() && wolrd.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        for (Component text : TEXT) {
+                            player.sendSystemMessage(text);
+                        }
+                    }
                 }
             }
         }
