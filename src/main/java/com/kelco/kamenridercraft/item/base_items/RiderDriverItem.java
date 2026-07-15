@@ -63,7 +63,7 @@ public class RiderDriverItem extends RiderArmorItem {
     private Boolean SD = false;
     public int unlimitedTextures = 0;
     public int unlimitedBeltTextures = 0;
-    public float abilityMultiplier = 2.5F;
+    public float abilityMultiplier = 7.5F;
 
     public ResourceLocation abilitySlotOne = null;
     public ResourceLocation abilitySlotTwo = null;
