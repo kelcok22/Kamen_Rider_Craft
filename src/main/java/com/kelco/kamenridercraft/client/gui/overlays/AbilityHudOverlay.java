@@ -40,14 +40,14 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
 
         int maxActionMeter = (int) player.getAttribute(Attributes.MAX_ABILITY_METER).getValue();
         int actionProgress = (int) player.getAttribute(Attributes.ABILITY_METER).getValue();
-        int meterDisplay = (int) (51 * Math.min((actionProgress / (double) maxActionMeter), 1));
+        int meterDisplay = (int) (49 * Math.min((actionProgress / (double) maxActionMeter), 1));
 
         RenderSystem.enableBlend();
 
         if (shouldShowAbilityMeter(player)) {
-            guiGraphics.blit(UNFILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 51, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, 51, 5, 51, 5);
+            guiGraphics.blit(UNFILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 49, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, 49, 5, 49, 5);
             if (actionProgress > 0) {
-                guiGraphics.blit(FILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 51, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, meterDisplay, 5, 51, 5);
+                guiGraphics.blit(FILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 49, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, meterDisplay, 5, 49, 5);
             }
         }
 
