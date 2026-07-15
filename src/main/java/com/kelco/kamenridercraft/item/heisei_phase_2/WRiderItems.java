@@ -289,7 +289,9 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
+
                     if (tick==29d){
+                        RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.NOTE_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 0.595f);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
@@ -565,8 +567,8 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
+                    if (tick==30d) RiderDriverItem.SetOldFormItem(itemstack,ETERNAL_T2_MEMORY.get(),1);
                     if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
-
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -787,7 +789,6 @@ public class WRiderItems {
                    // getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())
                     if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0){
                         if(rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<15)return "accel_yellow";
-                        return "accel";
                     }
                     return super.getText(itemStack,equipmentSlot,rider,riderName);
                 }
