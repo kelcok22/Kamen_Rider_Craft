@@ -187,7 +187,7 @@ public class WRiderItems {
 		
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==12d) AnimationUtil.playPose(player,"w.xtreme_henshin_pose");
 
                     if (tick==28d)((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANT,
                             player.getX(), player.getY()+1.6,
@@ -349,8 +349,9 @@ public class WRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_crystal","skulll_crystal","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
 					super.transformationEffect(itemstack, player);
+					if (tick==12d) AnimationUtil.playPose(player,"skull.henshin_pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
@@ -364,7 +365,7 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"skull.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
@@ -380,7 +381,7 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)) {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+						if (tick==12d) AnimationUtil.playPose(player,"eternal.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
@@ -439,7 +440,7 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"cyclone.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
@@ -458,7 +459,7 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"eternal.henshin_pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -489,7 +490,7 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"joker.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,

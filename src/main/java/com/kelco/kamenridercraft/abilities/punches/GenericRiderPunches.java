@@ -1,11 +1,9 @@
 package com.kelco.kamenridercraft.abilities.punches;
 
-import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -14,9 +12,9 @@ import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
+import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 
 public class GenericRiderPunches {
     public static void groundRiderPunch(LivingEntity user) {
@@ -30,6 +28,7 @@ public class GenericRiderPunches {
 
         if (user.getData(ABILITY_TICK) >= 24) {
             cancelAbility(user, "", 0);
+            return;
         }
 
         if (user.getData(ABILITY_TICK) > 3 && user.getData(ABILITY_TICK) < 18) {
@@ -43,9 +42,7 @@ public class GenericRiderPunches {
     public static void genericRiderPunch(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) {
-                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
-            }
+            user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
             //PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
 
             if (!user.onGround()) {
@@ -88,7 +85,9 @@ public class GenericRiderPunches {
             case 21:
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
-                if (y < 0.5) y = 0.05d;
+                if (y < 0.5) {
+                    y = 0.05d;
+                }
                 Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(20);
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;
