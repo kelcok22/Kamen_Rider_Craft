@@ -31,13 +31,15 @@
 			"scale": [1, 1, 0.5]
 		},
 		"gui": {
-			"scale": [2, 2, 1]
+			"translation": [1.75, -0.6, 0],
+			"scale": [1.73, 1.73, 1.73]
 		},
 		"head": {
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
 			"rotation": [0, -180, 0],
+			"translation": [-2.25, 0, 0],
 			"scale": [2, 2, 1]
 		}
 	}
