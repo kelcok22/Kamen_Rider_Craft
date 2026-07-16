@@ -33,7 +33,7 @@ public class IchigoRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_chinese_grasshopper_man", "shocker_combatman", "shocker_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
