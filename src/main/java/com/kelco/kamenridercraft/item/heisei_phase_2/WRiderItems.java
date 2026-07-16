@@ -350,13 +350,13 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
-					super.transformationEffect(itemstack, player);
+					super.transformationEffect(itemstack, player,tick);
 					if (tick==12d) AnimationUtil.playPose(player,"skull.henshin_pose");
 					if (tick==1d) {
-					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 0.1);
-				}}
+						((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}}
 			}.hasCape().isGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
 
 
