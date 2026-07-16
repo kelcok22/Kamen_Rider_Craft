@@ -43,6 +43,18 @@ public class ZeztzRiderItems {
                 }
             } .changeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> CODE_CAPSEM_SEVENTEEN = ITEMS.register("code_capsem_seventeen",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_seventeen","lord_invoker_seventeen_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .changeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model());
+
 
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt",
@@ -413,7 +425,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            } .changeBeltModel("geo/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
 
@@ -762,6 +774,14 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> KIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight_seventeen", CODE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> LORD_INVOKER_SEVENTEEN = ITEMS.register("lord_invoker_seventeen",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_seventeen", CODE_CAPSEM_SEVENTEEN,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> LORD_INVOKER_THIRTEEN = ITEMS.register("lord_invoker_thirteen",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_thirteen", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
