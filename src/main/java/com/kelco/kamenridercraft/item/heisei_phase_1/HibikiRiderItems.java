@@ -48,7 +48,7 @@ public class HibikiRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/hibiki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN PUrpLE fIrE pARTIcLEs
+            }.changeBeltModel("geo/belts/hibiki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN PUrpLE fIrE pARTIcLEs
 
     public static final DeferredItem<Item> HENSHIN_ONSA_KURENAI = ITEMS.register("henshin_onsa_kurenai",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_kurenai","hibiki","hibikidriver_belt",
@@ -62,7 +62,7 @@ public class HibikiRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("hibiki.geo.json").changeBeltModel("geo/hibiki_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
+            }.changeModel("hibiki.geo.json").changeBeltModel("geo/belts/hibiki_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN RED FiRE pArTiClEs
     //:cryingummy:
 
     public static final DeferredItem<Item> HENSHIN_ONSA_ARMED = ITEMS.register("henshin_onsa_armed",
@@ -77,7 +77,7 @@ public class HibikiRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);}
-            }.changeBeltModel("geo/hibiki_belt_armed.geo.json"));
+            }.changeBeltModel("geo/belts/hibiki_belt_armed.geo.json"));
 
     public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","danki","dankidriver_belt",
@@ -221,7 +221,7 @@ public class HibikiRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 0.1);}
-            }.changeBeltModel("geo/ibuki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            }.changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
 
     public static final DeferredItem<Item> HENSHIN_ONIBUE_TOKI = ITEMS.register("henshin_onibue_toki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","touki","tokidriver_belt",
@@ -259,7 +259,7 @@ public class HibikiRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 0.1);}
-            }.changeBeltModel("geo/ibuki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            }.changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
 
     public static final DeferredItem<Item> HENSHIN_ONIBUE_FUBUKI = ITEMS.register("henshin_onibue_fubuki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","fubuki","fubukidriver_belt",
@@ -295,7 +295,7 @@ public class HibikiRiderItems {
                     thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                     player.level().addFreshEntity(thunder);
                 }
-            }.changeBeltModel("geo/todoroki_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            }.changeBeltModel("geo/belts/todoroki_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
 
     public static final DeferredItem<Item> HENSHIN_KIGEN_ZANKI = ITEMS.register("henshin_kigen_zanki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zanki","zankidriver_belt",
@@ -312,7 +312,7 @@ public class HibikiRiderItems {
                     thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                     player.level().addFreshEntity(thunder);
                 }
-            }.changeBeltModel("geo/todoroki_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            }.changeBeltModel("geo/belts/todoroki_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
 
     public static final DeferredItem<Item> HENSHIN_KIGEN_SHUKI = ITEMS.register("henshin_kigen_shuki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shuki","shukidriver_belt",

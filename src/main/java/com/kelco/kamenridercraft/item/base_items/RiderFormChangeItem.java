@@ -154,12 +154,12 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public String getBeltModel() {
-        return (updatedBeltModel != null ? updatedBeltModel : "geo/riderbelt.geo.json");
+        return (updatedBeltModel != null ? updatedBeltModel : "geo/belts/riderbelt.geo.json");
     }
 
     public String getModel(String riderName) {
         if (updatedModel != null) return updatedModel;
-        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + formName + ".geo.json");
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getRiderName(riderName) + formName + ".geo.json");
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 

@@ -512,7 +512,7 @@ public class FourzeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.05);
 				}
-			}.changeBeltModel("geo/eins_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
+			}.changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","ikaros","ikaros_driver_belt",

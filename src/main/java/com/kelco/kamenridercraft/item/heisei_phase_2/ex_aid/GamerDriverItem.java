@@ -157,8 +157,8 @@ public class GamerDriverItem extends RiderDriverItem {
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-        if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/lv_1_belt.geo.json") && !isTransformed(rider)) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/riderbelt.geo.json");
+        if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/riderbelt.geo.json");
         }
 
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, getFormItem(itemstack, 1).getBeltModel());
@@ -185,9 +185,9 @@ public class GamerDriverItem extends RiderDriverItem {
             } else if (Objects.equals(getFormItem(itemstack, 2).getModel(this.riderName), "default.geo.json")) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/bigger_rider_plusbelt.geo.json");
             }
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getModel(this.riderName));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 2).getModel(this.riderName));
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 1).getModel(this.riderName));
 
     }
 

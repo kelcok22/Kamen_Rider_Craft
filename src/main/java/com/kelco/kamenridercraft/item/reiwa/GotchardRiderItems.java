@@ -417,7 +417,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/gotchard_belt_big.geo.json")
+			}.isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_SpicleWhale).addToList(NEED_ITEM_SpicleWhale)
 					.has_basic_model().addToList(ChemyRiserItem.vehicleChemy).addToList(ChemyRiserItem.allChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
@@ -566,7 +566,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/gotchard_belt_big.geo.json")
+			}.isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_GoldMechanichor).addToList(NEED_ITEM_GoldMechanichor)
 					.addToList(ChemyRiserItem.vehicleChemy).addToList(ChemyRiserItem.allChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
@@ -629,7 +629,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/gotchard_belt_big.geo.json")
+			}.isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_BatKingRobo).addToList(NEED_ITEM_BatKingRobo)
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).addToList(ChemyRiserItem.allChemy).addToList(ChemyRiserItem.animalChemy).has_basic_model());
 
@@ -731,7 +731,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/gotchard_belt_big.geo.json")
+			}.isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_LightningJungle).addToList(NEED_ITEM_LightningJungle)
 					.addToList(ChemyRiserItem.allChemy).addToList(ChemyRiserItem.artifactChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
@@ -2418,7 +2418,7 @@ public class GotchardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
 			}.setSummonBelt((RiderDriverItem) WRiderItems.LOSTDRIVER_ETERNAL.get()).addSummonWeapon(WRiderItems.ETERNAL_EDGE.get())
-                    .hasCape().needBaseForm().changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+                    .hasCape().needBaseForm().changeBeltModel("geo/belts/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",

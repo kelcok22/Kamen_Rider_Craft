@@ -10,7 +10,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class AnkhModel extends GeoModel<AnkhEntity> {
     @Override
     public ResourceLocation getModelResource(AnkhEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ankh.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/entity/ankh.geo.json");
     }
 
     @Override

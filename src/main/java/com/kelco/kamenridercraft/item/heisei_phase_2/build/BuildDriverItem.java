@@ -158,14 +158,14 @@ public class BuildDriverItem extends RiderDriverItem {
         if (slot == EquipmentSlot.LEGS) num = 2;
 
         if (isBestMatch(itemstack) & isLegend(itemstack))
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/rider_plusbelt.geo.json");
         else if (Objects.equals(getFormItem(itemstack, num).getModel(this.riderName), "default.geo.json")) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/rider_plusbelt.geo.json");
         }
         if (getFormItem(itemstack, num).hasWingsIfFlying() & rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num).getFlyingModel(this.riderName));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num).getFlyingModel(this.riderName));
         } else
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num).getModel(this.riderName));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num).getModel(this.riderName));
     }
 
     @Override

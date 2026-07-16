@@ -145,7 +145,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.2);
 				}
-			}.isGlowing().changeBeltModel("geo/volcano_riderbelt.geo.json").addAlternative(VOLCANO_VISTAMP_VICE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
+			}.isGlowing().changeBeltModel("geo/belts/volcano_riderbelt.geo.json").addAlternative(VOLCANO_VISTAMP_VICE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROLLING_VISTAMP = ITEMS.register("rolling_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_jack_revice","revi","revice_driver_belt_r",
@@ -162,7 +162,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/volcano_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
+			}.isGlowing().changeBeltModel("geo/belts/volcano_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> THUNDER_GALE_VISTAMP = ITEMS.register("thunder_gale_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_revice","revi","revice_driver_belt_t",
@@ -481,7 +481,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeModel("lv_1.geo.json").changeBeltModel("geo/lv_1_belt.geo.json").addAlternative(KONG_VISTAMP_DESTREAM.get()));
+			}.isGlowing().changeModel("lv_1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").addAlternative(KONG_VISTAMP_DESTREAM.get()));
 
 	public static final DeferredItem<Item> KONG_VISTAMP = ITEMS.register("kong_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kong","revi","revice_driver_belt_k",
@@ -529,7 +529,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeModel("lv_1.geo.json").changeBeltModel("geo/lv_1_belt.geo.json"));
+			}.isGlowing().changeModel("lv_1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json"));
 
 	public static final DeferredItem<Item> BRACHIO_VISTAMP = ITEMS.register("brachio_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_brachio","revi","revice_driver_belt_br",

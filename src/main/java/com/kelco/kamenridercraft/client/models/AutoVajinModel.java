@@ -10,7 +10,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class AutoVajinModel extends GeoModel<AutoVajinRoboEntity> {
     @Override
     public ResourceLocation getModelResource(AutoVajinRoboEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/auto_vajin_robo.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/entity/auto_vajin_robo.geo.json");
     }
 
     @Override

@@ -33,22 +33,22 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     @Override
     public ResourceLocation getModelResource(RiderArmorItem animatable, @Nullable GeoRenderer<RiderArmorItem> renderer) {
         if (renderer instanceof RiderArmorRenderer riderRenderer) {
-            LivingEntity RIDER = riderRenderer.GetEntity();
+            LivingEntity rider = riderRenderer.GetEntity();
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
-            if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
+            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem) {
                 if (slot == EquipmentSlot.FEET) {
-                    return BELT.getBeltModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET), animatable, slot, RIDER);
+                    return riderDriverItem.getBeltModelResource(rider.getItemBySlot(EquipmentSlot.FEET), animatable, slot, rider);
                 } else {
-                    return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET), animatable, slot, RIDER);
+                    return riderDriverItem.getModelResource(rider.getItemBySlot(EquipmentSlot.FEET), animatable, slot, rider);
                 }
             }
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default.geo.json");
     }
 
     @Override
     public ResourceLocation getModelResource(RiderArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default.geo.json");
     }
 
 

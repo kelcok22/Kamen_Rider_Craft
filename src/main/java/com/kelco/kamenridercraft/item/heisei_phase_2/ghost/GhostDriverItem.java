@@ -127,9 +127,9 @@ public class GhostDriverItem extends RiderDriverItem {
 
         if (slot == EquipmentSlot.HEAD) {
             if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getFlyingModel(this.riderName));
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 2).getFlyingModel(this.riderName));
             } else
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getModel(this.riderName));
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 2).getModel(this.riderName));
 
         } else
             return super.getModelResource(itemstack, animatable, slot, rider);

@@ -343,9 +343,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public ResourceLocation getModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         if (getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFlyingModel(this.riderName));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFlyingModel(this.riderName));
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getModel(this.riderName));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getModel(this.riderName));
     }
 
 

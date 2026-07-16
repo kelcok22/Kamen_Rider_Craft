@@ -248,7 +248,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .changeBeltModel("geo/hibiki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .changeBeltModel("geo/belts/hibiki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHADOWMANTIS = ITEMS.register("shadowmantis",
@@ -286,7 +286,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)
-            ).changeBeltModel("geo/hibiki_belt.geo.json"));
+            ).changeBeltModel("geo/belts/hibiki_belt.geo.json"));
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI_RYUGA = ITEMS.register("bakuen_no_senshi_ryuga",
             () -> new RiderFormChangeItem(new Item.Properties(), "_bakuen_no_senshi", "ryuga", "v_buckle_belt_ryuga",
