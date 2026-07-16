@@ -34,10 +34,6 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> BUGSTER_VIRUS_DNA = ITEMS.register("bugster_virus_dna",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
-    //public static final RegistryObject<Item> GAMEDEUS_BUGSTER_VIRUS_DNA = ITEMS.register("gamedeus_bugster_virus_dna",
-    //		() -> new BaseItem(new Item.Properties()).addToList(RiderTabs.EX_AID_TAB_ITEM));
-
-
     public static final DeferredItem<Item> BLANK_GASHAT = ITEMS.register("blank_gashat",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
