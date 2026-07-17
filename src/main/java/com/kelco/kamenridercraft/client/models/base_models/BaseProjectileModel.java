@@ -9,17 +9,17 @@ import software.bernie.geckolib.model.GeoModel;
 public class BaseProjectileModel extends GeoModel<BaseProjectileEntity> {
     @Override
     public ResourceLocation getModelResource(BaseProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/cell_medal.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/projectiles/laser.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(BaseProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/cell_medal.png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/red_laser.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(BaseProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/cell_medal.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/projectile.animation.json");
     }
 
 }

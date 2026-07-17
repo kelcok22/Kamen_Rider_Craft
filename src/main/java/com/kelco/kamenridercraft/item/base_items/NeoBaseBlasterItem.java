@@ -153,6 +153,8 @@ public class NeoBaseBlasterItem extends BaseItem {
                     if (user.hasEffect(EffectCore.SHOT_BOOST)) {
                         modifiedDamage = modifiedDamage + user.getEffect(EffectCore.SHOT_BOOST).getAmplifier() + 1;
                     }
+                    this.model = "laser";
+                    this.texture = "red_laser";
                     BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, model, texture, modifiedDamage, explosionPower, effects);
                     baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + accuracyMod);
                     user.level().addFreshEntity(baseProjectile);

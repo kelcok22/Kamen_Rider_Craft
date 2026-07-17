@@ -27,6 +27,9 @@ import net.neoforged.neoforge.event.EventHooks;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
@@ -40,6 +43,11 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     private int explosionPower;
     private String[] effects;
     private boolean inGround = false;
+    private boolean animStarted = false;
+
+    private static final RawAnimation SKULL_ANIM = RawAnimation.begin().thenPlay("projectile.skull_jostle");
+    private static final RawAnimation SPIN_ANIM = RawAnimation.begin().thenPlay("projectile.spinning");
+    private static final RawAnimation MEDAL_ANIM = RawAnimation.begin().thenPlay("projectile.medal");
 
     public BaseProjectileEntity(EntityType<? extends BaseProjectileEntity> entityType, Level level) {
         super(entityType, level);
@@ -64,6 +72,9 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     public void tick() {
         super.tick();
         Vec3 vec3 = this.getDeltaMovement();
+        if (!animStarted) {
+            triggerAnim("projectile", "spin");
+        }
         if (this.xRotO == 0.0F && this.yRotO == 0.0F) {
             double d0 = vec3.horizontalDistance();
             this.setYRot((float) (Mth.atan2(vec3.x, vec3.z) * (double) 180.0F / (double) (float) Math.PI));
@@ -210,6 +221,10 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "projectile", 0, state -> PlayState.STOP)
+                .triggerableAnim("spin", SPIN_ANIM)
+                .triggerableAnim("medal", MEDAL_ANIM)
+                .triggerableAnim("skull_jostle", SKULL_ANIM));
 
     }
 

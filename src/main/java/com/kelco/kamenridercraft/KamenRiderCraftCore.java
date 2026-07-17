@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft;
 
+import com.kelco.kamenridercraft.attachments.AbilityAttachments;
 import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
@@ -174,6 +175,7 @@ public class KamenRiderCraftCore {
 
         Attributes.ATTRIBUTES.register(modEventBus);
         AttachmentTypes.register(modEventBus);
+        AbilityAttachments.register(modEventBus);
         EffectCore.register(modEventBus);
 
         ModMenus.register(modEventBus);

@@ -1,0 +1,78 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"projectile.skull_jostle": {
+			"loop": true,
+			"animation_length": 0.375,
+			"bones": {
+				"skull": {
+					"rotation": {
+						"0.0": {
+							"vector": [7.5, -15, 12.5]
+						},
+						"0.125": {
+							"vector": [-10.3981, 11.9128, -3.8139]
+						},
+						"0.25": {
+							"vector": [3.1329, 8.8842, -12.0972]
+						},
+						"0.375": {
+							"vector": [7.5, -15, 12.5]
+						}
+					}
+				}
+			}
+		},
+		"projectile.spinning": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"laser": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.0833": {
+							"vector": [0, 0, -90]
+						},
+						"0.1667": {
+							"vector": [0, 0, -180]
+						},
+						"0.25": {
+							"vector": [0, 0, -270]
+						},
+						"0.3333": {
+							"vector": [0, 0, -360]
+						}
+					}
+				}
+			}
+		},
+		"projectile.medal": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"laser": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.0833": {
+							"vector": [0, 0, -90]
+						},
+						"0.1667": {
+							"vector": [0, 0, -180]
+						},
+						"0.25": {
+							"vector": [0, 0, -270]
+						},
+						"0.3333": {
+							"vector": [0, 0, -360]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

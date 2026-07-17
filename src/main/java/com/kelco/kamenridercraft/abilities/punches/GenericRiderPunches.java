@@ -43,7 +43,7 @@ public class GenericRiderPunches {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
             user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
-            //PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.rider_floor_jump" : "default.rider_jump", "attack", false, user.getStringUUID()));
 
             if (!user.onGround()) {
                 Vec3 initialVec = user.getDeltaMovement();
@@ -80,7 +80,7 @@ public class GenericRiderPunches {
                 }
                 break;
             case 17:
-                //PacketDistributor.sendToAllPlayers(new AnimPayload("default.punch", user.getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new AnimPayload("default.punch", "attack", false, user.getStringUUID()));
                 break;
             case 21:
                 user.setDeltaMovement(0, 0, 0);

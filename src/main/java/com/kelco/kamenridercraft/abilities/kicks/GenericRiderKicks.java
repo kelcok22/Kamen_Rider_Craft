@@ -1,10 +1,12 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.Random;
 
@@ -16,7 +18,7 @@ public class GenericRiderKicks {
     public static void genericRiderKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            //PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.floor_start_kick" : "default.air_start_kick", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.rider_floor_jump" : "default.rider_jump", "attack", false, user.getStringUUID()));
 
             if (!user.onGround()) {
                 Vec3 initialVec = user.getDeltaMovement();
@@ -59,26 +61,31 @@ public class GenericRiderKicks {
                     user.hurtMarked = true;
                 }
                 break;
+            case 13:
+                PacketDistributor.sendToAllPlayers(new AnimPayload("default.flip", "attack", true, user.getStringUUID()));
+                break;
             case 17:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_rider_kick")) {
-                    //PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", "attack", true, user.getStringUUID()));
                 } else {
-                   // PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", "attack", true, user.getStringUUID()));
                 }
                 break;
             case 21:
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
-                if (y < 0.5) y = 0.05d;
+                if (y < 0.5) {
+                    y = 0.05d;
+                }
                 Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(20);
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;
                 break;
             case 36:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_kick")) {
-                   // PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick_loop", user.getStringUUID()));
+                     PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick_loop", "attack", true,user.getStringUUID()));
                 } else {
-                    //PacketDistributor.sendToAllPlayers(new AnimPayload("default.k ick_loop", user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick_loop", "attack", true,user.getStringUUID()));
                 }
                 break;
         }
