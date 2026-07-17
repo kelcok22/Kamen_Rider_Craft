@@ -462,7 +462,7 @@ public class DesireDriverItem extends RiderDriverItem {
         if (itemstack.getItem() == GeatsRiderItems.DESIRE_DRIVER_BUFFA.asItem())
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/buffa.geo.json");
         if (getFormItem(itemstack, 3) == GeatsRiderItems.BOOST_MKIII_RAISE_BUCKLE.get() && getFormItem(itemstack, 2) == GeatsRiderItems.BOOST_MKIII_RAISE_BUCKLE.get())
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/darmor/efault_wings_armor.geo.json");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default_wings_armor.geo.json");
         if (getFormItem(itemstack, 3) == GeatsRiderItems.BUJIN_SWORD_RAISE_BUCKLE.get())
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default_cape.geo.json");
 
