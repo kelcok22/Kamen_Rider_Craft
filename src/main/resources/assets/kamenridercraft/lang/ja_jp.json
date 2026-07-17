@@ -357,10 +357,21 @@
 "effect.kamenridercraft.stretch":"ストレッチ",
 "effect.kamenridercraft.wide":"ワイド",
 "effect.kamenridercraft.explode":"爆破",
-"effect.kamenridercraft.fire_punch":"ファイアパンチ",
 "effect.kamenridercraft.explosion_punch":"爆パンチ",
+"effect.kamenridercraft.fire_punch":"ファイアパンチ",
 "effect.kamenridercraft.fire_shot":"ファイアショット",
 "effect.kamenridercraft.fire_slash":"ファイアスラッシュ",
+"effect.kamenridercraft.poison_punch":"毒パンチ",
+"effect.kamenridercraft.poison_shot":"毒ショット",
+"effect.kamenridercraft.poison_slash":"毒スラッシュ",
+"effect.kamenridercraft.wither_punch":"衰弱パンチ",
+"effect.kamenridercraft.wither_shot":"衰弱ショット",
+"effect.kamenridercraft.wither_slash":"衰弱スラッシュ",
+"effect.kamenridercraft.electric_punch":"電気パンチ",
+"effect.kamenridercraft.electric_shot":"電気ショット",
+"effect.kamenridercraft.electric_slash":"電気スラッシュ",
+"effect.kamenridercraft.electric_shock":"電気ショック",
+"effect.kamenridercraft.knockback_boost":"ノックバック力上昇",
 "effect.kamenridercraft.explosion_shot":"爆ショット",
 "effect.kamenridercraft.thunder_shot":"サンダーショット",
 "effect.kamenridercraft.thunder_punch":"サンダーパンチ",
@@ -665,6 +676,7 @@
 "henshin.kamenridercraft.another_zi_o": "§dジオウ！",
 "henshin.kamenridercraft.another_zi_o_ii": "§gジオウII！",
 "henshin.kamenridercraft.woz": "ウォズ！アクション！投影！フューチャータイム！",
+"henshin.kamenridercraft.another_den_o": "<アナザー電王>§c俺、参上...",
 "henshin.kamenridercraft.ginga": "<§5仮面ライダーギンガ>§f 私は宇宙の者。この世界の法は通用しない。",
 "henshin.kamenridercraft.yaminin": "§4<闇忍> §c貴様のようなひよっこに負ける私ではない！",
 "henshin.kamenridercraft.quartzer": "<§6仮面ライダーバールクス§f> §6変身！§f\nライダータイム！§6仮面ライダーバールクス！§f\n<§2仮面ライダーゾンジス§f> §6変身！§f\nライダータイム！§2仮面ライダーゾンジス！§f\n<§1仮面ライダーザモナス§f> §6変身！§f\nライダータイム！§1仮面ライダーザモナス§f",
@@ -729,6 +741,9 @@
 "henshin.kamenridercraft.nox":"<仮面ライダーノクス> §9変身！\n§8ハッハッハッハッハッハッ！ライダー！§9ノクス！§6ノクス！§fノクス！§5シャドウ！",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
+"attack.kamenridercraft.special_turbo":"§Cアルティメットフォ～ム!!! スペシャルターボ!",
+"attack.kamenridercraft.clock_up":"Clock Up!",
+"attack.kamenridercraft.clock_over":"§RClock Over…",
 "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up！",
 "attack.kamenridercraft.kamenride":"§bカメンライド: %s",
 "attack.kamenridercraft.kamenride_2":"§bカメンライド: %s %s",
@@ -845,6 +860,9 @@
 "loot.kamenridercraft.holy_wing":"§bホーリーウィング！",
 "loot.kamenridercraft.crosshopper":"§6クロスホッパー！",
 
+"message.kamenridercraft.wiseman_explode":"エクスプロージョン！ナウ",
+"message.kamenridercraft.wiseman_teleport":"テレポート！ナウ",
+
 "message.kamenridercraft.woz_shinobi":"§aアクション！投影！フューチャータイム！§5誰じゃ？俺じゃ？忍者！フューチャーリングシノビ！シノビ！",
 "message.kamenridercraft.woz_quiz":"§aアクション！投影！フューチャータイム！§4ファッション！パッション！クエスチョン！§9フューチャーリングクイズ！クイズ！",
 "message.kamenridercraft.woz_kikai":"§aアクション！投影！フューチャータイム！§6デカイ！ハカイ！ゴーカイ！フューチャーリングキカイ！キカイ！",
@@ -901,6 +919,7 @@
 "message.kamenridercraft.fake":"§バッカモーン！恥を知りなっさぁ～い！§6ネバーギーブアーップ！",
 
 "message.kamenridercraft.rider_kick": "ライダーキック準備完了",
+"message.kamenridercraft.weapon": "武器必殺技準備完了",
 
 "kamenridercraft.name.form":"フォーム:",
 "kamenridercraft:base.form": "フォーム: 基本フォーム",
@@ -2770,7 +2789,7 @@
 
 "item.kamenridercraft.faiz_edge": "ファイズエッジ",
 "item.kamenridercraft.faiz_phone": "ファイズフォン",
-"item.kamenridercraft.faiz_phone_pointer": "ファイズフォーン フォンブラスター形態 ファイズポインター装着",
+"item.kamenridercraft.faiz_phone_pointer": "ファイズフォン フォンブラスター形態 ファイズポインター装着",
 "item.kamenridercraft.faiz_shot": "ファイズショット",
 "item.kamenridercraft.faiz_axel": "ファイズアクセル",
 "item.kamenridercraft.faiz_blaster": "ファイズブラスター",
@@ -3150,6 +3169,8 @@
 "kamenridercraft.name.lady": "ライダー: 仮面ライダーレディー",
 "item.kamenridercraft.chophopper_rider_belt": "ZECTバックル",
 "kamenridercraft.name.chophopper": "疑似ライダー: チョップホッパー",
+"item.kamenridercraft.giraffa_rider_belt": "ライダーベルト",
+"kamenridercraft.name.giraffa": "ライダー: 仮面ライダーギラファ",
 
 "item.kamenridercraft.clock_up_pad": "スラップスイッチ",
 
@@ -3185,6 +3206,7 @@
 "item.kamenridercraft.perfectdrake_zecter": "パーフェクトドレイクゼクター",
 "item.kamenridercraft.perfectsasword_zecter": "パーフェクトサソードゼクター",
 "item.kamenridercraft.lady_zecter": "レディーゼクター",
+"item.kamenridercraft.giraffa_zecter": "ギラファゼクター",
 "kamenridercraft:kabuto_zecter.form": "フォーム: マスクドフォーム",
 "kamenridercraft:gatack_zecter.form": "フォーム: マスクドフォーム",
 "kamenridercraft:drake_zecter.form": "フォーム: マスクドフォーム",
@@ -3977,6 +3999,7 @@
 "item.kamenridercraft.joker_dopant_memory_broken": "ジョーカーメモリ（破損状態）",
 "item.kamenridercraft.road_memory": "ロードメモリ",
 "item.kamenridercraft.egg_chicken_memory": "エッグアンドチキンメモリ",
+"item.kamenridercraft.shinigami_hakase_dopant_memory": "死神博士メモリ",
 
 "item.kamenridercraft.stag_memory": "ギジメモリ<スタッグ>",
 "item.kamenridercraft.spider_memory": "ギジメモリ<スパイダー>",
@@ -5025,6 +5048,7 @@
 "kamenridercraft:proto_banana_lockseed.form": "フォーム: プロトバナナアームズ",
 "kamenridercraft:proto_durian_lockseed.form": "フォーム: プロトドリアンアームズ",
 "kamenridercraft:dark_lemon_energy_lockseed.form": "フォーム: ブラックジンバーアームズ",
+"item.kamenridercraft.black_banana_lockseed": "バナナロックシード（ナンバー無し）",
 
 "item.kamenridercraft.xiaolongbao_lockseed": "小籠包ロックシード",
 "item.kamenridercraft.hsiao_lung_pao_lockseed": "小籠包ロックシード",
@@ -5367,6 +5391,8 @@
 "kamenridercraft.name.zero_ghost": "ライダー: 仮面ライダーゼロゴースト",
 "item.kamenridercraft.extremer_driver": "エクストリーマードライバー",
 "kamenridercraft.name.extremer": "ライダー: 仮面ライダーエクストリーマー",
+"item.kamenridercraft.great_eyezer_belt": "グレートアイザーベルト",
+"kamenridercraft.name.great_eyezer": "怪人: グレートアイザー",
 
 "item.kamenridercraft.ore_ghost_eyecon": "オレゴースト眼魂",
 "item.kamenridercraft.specter_ghost_eyecon": "スペクターゴースト眼魂",
@@ -6912,6 +6938,7 @@
 
 "item.kamenridercraft.hiden_risephone": "飛電ライズフォン",
 "item.kamenridercraft.risehopper_spawn_egg": "ライズホッパー",
+"item.kamenridercraft.aims_risephone": "エイムズライズフォン",
 
 "item.kamenridercraft.progrise_holder": "プログライズホルダー",
 "item.kamenridercraft.ikazuchi_progrise_holder": "雷のプログライズホルダー",
@@ -8644,7 +8671,7 @@
 "item.kamenridercraft.lord_invoker_five": "ロードインヴォーカー",
 "kamenridercraft.name.lord_five": "疑似ライダー: ロードファイブ",
 "item.kamenridercraft.lord_invoker_six": "ロードインヴォーカー",
-"kamenridercraft.name.lord_six": "疑似ライダー: ロードシクス",
+"kamenridercraft.name.lord_six": "疑似ライダー: ロードシックス",
 "item.kamenridercraft.dawn_belt": "パニッシュメンター",
 "kamenridercraft.name.dawn": "ライダー: 仮面ライダードォーン",
 "item.kamenridercraft.metamateriam_belt": "メタマテリアムベルト",
@@ -8663,7 +8690,7 @@
 "kamenridercraft:transform_capsem.form": "フォーム: フィジカムトランスフォーム",
 "item.kamenridercraft.wing_capsem": "ウイングカプセム",
 "kamenridercraft:wing_capsem.form": "フォーム: フィジカムウイング",
-"item.kamenridercraft.stream_capsem": "ストルームカプセム",
+"item.kamenridercraft.stream_capsem": "ストリームカプセム",
 "kamenridercraft:stream_capsem.form": "フォーム: テクノロムストリーム",
 "item.kamenridercraft.projection_capsem": "プロジェクションカプセム",
 "kamenridercraft:projection_capsem.form": "フォーム: テクノロムプロジェクション",
@@ -8775,6 +8802,11 @@
 "item.kamenridercraft.my_th_head": "マイスのヘルメット",
 "item.kamenridercraft.my_th_torso": "マイスの胸当て",
 "item.kamenridercraft.my_th_legs": "マイスのレギンス",
+
+"item.kamenridercraft.my_th_driver": "マイスドライバー",
+"kamenridercraft.name.my_th": "ライダー: 仮面ライダーマイス",
+
+"item.kamenridercraft.ridegg_1": "ライドエグ1",
 
 "item.kamenridercraft.g_logo": "Gクレスト",
 "item.kamenridercraft.ghead": "Gのヘルメット",
@@ -9200,6 +9232,7 @@
 "entity.kamenridercraft.woz": "仮面ライダーウォズ（白ウォズ）",
 "entity.kamenridercraft.kasshine": "カッシーン",
 "entity.kamenridercraft.another_zi_o": "アナザージオウ",
+"entity.kamenridercraft.another_den_o": "アナザー電王",
 "entity.kamenridercraft.yaminin": "闇忍",
 "entity.kamenridercraft.barlckxs": "仮面ライダーバールクス",
 "entity.kamenridercraft.zonjis": "仮面ライダーゾンジス",
@@ -9500,6 +9533,7 @@
 "item.kamenridercraft.woz_spawn_egg": "仮面ライダーウォズスポーンエッグ",
 "item.kamenridercraft.kasshine_spawn_egg": "カッシーンスポーンエッグ",
 "item.kamenridercraft.another_zi_o_spawn_egg": "アナザージオウスポーンエッグ",
+"item.kamenridercraft.another_den_o_spawn_egg": "アナザー電王スポーンエッグ",
 "item.kamenridercraft.yaminin_spawn_egg": "闇忍スポーンエッグ",
 "item.kamenridercraft.barlckxs_spawn_egg": "仮面ライダーバールクススポーンエッグ",
 "item.kamenridercraft.zonjis_spawn_egg": "仮面ライダーゾンジススポーンエッグ",
@@ -9702,6 +9736,8 @@
 "block.kamenridercraft.gaohliner_logo_sider": "ガオウライナークレスト（右）",
 "block.kamenridercraft.zero_liner_green": "ゼロライナーグリーン",
 "block.kamenridercraft.ghostliner_wheel": "ゴーストライナーホイール",
+"block.kamenridercraft.another_denliner_windo": "アナザーデンライナー窓",
+"block.kamenridercraft.another_denliner_side_with_line": "アナザーデンライナー側面（線）",
 
 "block.kamenridercraft.ixa_machine_block": "フェッスルレプリケーター",
 
@@ -9868,6 +9904,7 @@
 "block.kamenridercraft.sword_of_logos_wood2": "ソードオブロゴス木のロック",
 "block.kamenridercraft.sword_of_logos_arch": "ソードオブロゴスアーチブロック",
 
+"block.kamenridercraft.gochizo_jar": "ゴチゾウジャー",
 "block.kamenridercraft.granute_glass": "グラニュートガラス",
 "block.kamenridercraft.granute_glass_pane": "グラニュートガラス板",
 
@@ -9931,6 +9968,7 @@
 "block.kamenridercraft.yaminin_boss_block": "闇忍ボスブロック",
 "block.kamenridercraft.ginga_boss_block": "仮面ライダーギンガボスブロック",
 "block.kamenridercraft.quartzer_boss_block": "クォーツァーボスブロック",
+"block.kamenridercraft.another_den_o_boss_block": "アナザー電王ボスブロック",
 "block.kamenridercraft.horobi_boss_block": "仮面ライダー滅ボスブロック",
 "block.kamenridercraft.ikazuchi_boss_block": "仮面ライダー雷ボスブロック",
 "block.kamenridercraft.ark_one_boss_block": "仮面ライダーアークゼロ/アークワンボスブロック",
@@ -11712,7 +11750,7 @@
 "advancements.kamenridercraft.zeztz.lord_three.title": "危機一発",
 "advancements.kamenridercraft.zeztz.lord_five.description": "ロードファイブに変身",
 "advancements.kamenridercraft.zeztz.lord_five.title": "ダイ・アナザー・デイ",
-"advancements.kamenridercraft.zeztz.lord_six.description": "ロードシクスに変身",
+"advancements.kamenridercraft.zeztz.lord_six.description": "ロードシックスに変身",
 "advancements.kamenridercraft.zeztz.lord_six.title": "ゴールデンアイ",
 "advancements.kamenridercraft.zeztz.nox.description": "仮面ライダーノクスに変身",
 "advancements.kamenridercraft.zeztz.nox.title": "消されたライセンス",
