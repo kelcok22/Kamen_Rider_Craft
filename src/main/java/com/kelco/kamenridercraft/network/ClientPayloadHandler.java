@@ -39,12 +39,10 @@ public class ClientPayloadHandler {
     public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
         Player player = context.player();
         int hand = data.hand();
-        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
-                entity -> (entity.getOwner() == player))) {
+        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10), entity -> (entity.getOwner() == player))) {
             complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
         }
-        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
-                entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
+        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10), entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
             legend.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
         }
     }
@@ -94,7 +92,7 @@ public class ClientPayloadHandler {
                 if (riderName.equals("ooo")) {
                     animation = oooAnimCheck(posingRider);
                 } else if (riderName.equals("ghost") || riderName.equals("specter") || riderName.equals("necrom")) {
-                    if(posingRider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() >= 1) {
+                    if (posingRider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() >= 1) {
                         animation = getAnim("default.hoodie_off");
                     } else {
                         animation = getAnim("default.hoodie_on");
@@ -112,8 +110,12 @@ public class ClientPayloadHandler {
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
             assert controller != null;
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(12, EasingType.EASE_IN_ELASTIC));
-            controller.triggerAnimation(animation);
+            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC));
+            if (controller.getCurrentAnimation() != null) {
+                controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeOut(5, EasingType.EASE_IN_ELASTIC), animation);
+            } else {
+                controller.triggerAnimation(animation);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -135,8 +137,16 @@ public class ClientPayloadHandler {
                     default ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 };
-                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(3, EasingType.EASE_IN_ELASTIC));
-                controller.triggerAnimation(animation);
+                if (data.forceNextPose() && controller.getCurrentAnimation() != null) {
+                    controller.stopTriggeredAnimation();
+                }
+
+                if (controller.getCurrentAnimation() != null) {
+                    controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
+                } else {
+                    controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+                    controller.triggerAnimation(animation);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -160,7 +170,8 @@ public class ClientPayloadHandler {
                 };
 
                 if (controller != null && controller.isPlayingTriggeredAnimation()) {
-                    controller.stopTriggeredAnimation();
+                    Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.reset"));
+                    controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
                 }
             }
         } catch (Exception e) {

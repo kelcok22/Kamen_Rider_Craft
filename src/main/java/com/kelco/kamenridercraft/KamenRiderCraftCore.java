@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft;
 
+import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
 import com.kelco.kamenridercraft.client.renderer.GochizoJarBlockEntityRenderer;
@@ -50,7 +51,6 @@ import com.kelco.kamenridercraft.sounds.ModMusic;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
-import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;

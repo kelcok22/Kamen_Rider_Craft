@@ -20,7 +20,7 @@ public class GenericRiderPunches {
     public static void groundRiderPunch(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AnimPayload("default.tojima_punch", "attack", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload("default.tojima_punch", "attack", false, user.getStringUUID()));
             user.push(user.getLookAngle().scale(1.3));
             user.hurtMarked = true;
             user.setInvulnerable(true);
