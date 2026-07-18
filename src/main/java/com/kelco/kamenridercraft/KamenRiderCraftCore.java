@@ -767,6 +767,11 @@ public class KamenRiderCraftCore {
                     PoseKeyPayload.STREAM_CODEC,
                     ServerPayloadHandler::handlePoseKeyPress
             );
+            registrar.playToServer(
+                    BikeMovePayload.TYPE,
+                    BikeMovePayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleBikeMove
+            );
         }
     }
 

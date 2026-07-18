@@ -2,17 +2,22 @@ package com.kelco.kamenridercraft.entity.vehicles;
 
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
+import com.kelco.kamenridercraft.network.payload.BikeMovePayload;
+import com.kelco.kamenridercraft.network.payload.ClimbCollisionPayload;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket;
+import net.minecraft.network.protocol.game.ServerboundPaddleBoatPacket;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.util.Mth;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -21,6 +26,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.Item;
@@ -40,6 +46,7 @@ import software.bernie.geckolib.model.data.EntityModelData;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
+import java.util.List;
 
 
 public class baseBikeEntity extends Mob implements GeoEntity {
@@ -52,8 +59,19 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public String NAME_MODEL ="hardboilder";
 	public String NAME_ANIMATIONS ="hardboilder";
 	public float MAX_SPEED = 0.01f;
-
 	private boolean animationStarted = false;
+
+    private int lerpSteps;
+    private double lerpX;
+    private double lerpY;
+    private double lerpZ;
+    private double lerpYRot;
+    private double lerpXRot;
+    private boolean inputLeft;
+    private boolean inputRight;
+    private boolean inputUp;
+    private boolean inputDown;
+
 
 	public RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
@@ -81,7 +99,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
     public Float getWheelRotation() {
         return this.entityData.get(WHEEL_ROT);
     }
-    private void SetWheelRotation(Float Name) {this.entityData.set(WHEEL_ROT,Name+getWheelRotation());}
+    public void SetWheelRotation(Float Name) {this.entityData.set(WHEEL_ROT,Name+getWheelRotation());}
 
     @Override
     public void addAdditionalSaveData(CompoundTag compound) {
@@ -116,10 +134,102 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 		} else if (this.animationStarted && getControllingPassenger() == null) {
 			this.animationStarted = false;
 		}
-		super.tick();
+        super.tick();
+        this.tickLerp();
+        if (this.isControlledByLocalInstance()) {
+            this.move(MoverType.SELF, this.getDeltaMovement());
+        } else {
+            this.setDeltaMovement(Vec3.ZERO);
+        }
+
+        super.tick();
+
+        this.checkInsideBlocks();
+        List<Entity> list = this.level().getEntities(this, this.getBoundingBox().inflate((double)0.2F, (double)-0.01F, (double)0.2F), EntitySelector.pushableBy(this));
+        if (!list.isEmpty()) {
+            boolean flag = !this.level().isClientSide && !(this.getControllingPassenger() instanceof Player);
+
+            for(Entity entity : list) {
+                if (!entity.hasPassenger(this)) {
+                    if (flag && this.getPassengers().size() < 1 && !entity.isPassenger() && entity instanceof LivingEntity && !(entity instanceof WaterAnimal) && !(entity instanceof Player)) {
+                        entity.startRiding(this);
+                    } else {
+                        this.push(entity);
+                    }
+                }
+            }
+        }
 	}
 
-	// Let the player ride the entity
+    public double lerpTargetX() {
+        return this.lerpSteps > 0 ? this.lerpX : this.getX();
+    }
+
+    public double lerpTargetY() {
+        return this.lerpSteps > 0 ? this.lerpY : this.getY();
+    }
+
+    public double lerpTargetZ() {
+        return this.lerpSteps > 0 ? this.lerpZ : this.getZ();
+    }
+
+    public float lerpTargetXRot() {
+        return this.lerpSteps > 0 ? (float)this.lerpXRot : this.getXRot();
+    }
+
+    public float lerpTargetYRot() {
+        return this.lerpSteps > 0 ? (float)this.lerpYRot : this.getYRot();
+    }
+
+    public Direction getMotionDirection() {
+        return this.getDirection().getClockWise();
+    }
+
+
+
+    public void push(Entity entity) {
+        if (entity instanceof Boat) {
+            if (entity.getBoundingBox().minY < this.getBoundingBox().maxY) {
+                super.push(entity);
+            }
+        } else if (entity.getBoundingBox().minY <= this.getBoundingBox().minY) {
+            super.push(entity);
+        }
+
+    }
+
+    protected double getDefaultGravity() {
+        return 0.04;
+    }
+
+
+    private void tickLerp() {
+        if (this.isControlledByLocalInstance()) {
+            this.lerpSteps = 0;
+            this.syncPacketPositionCodec(this.getX(), this.getY(), this.getZ());
+        }
+
+        if (this.lerpSteps > 0) {
+            this.lerpPositionAndRotationStep(this.lerpSteps, this.lerpX, this.lerpY, this.lerpZ, this.lerpYRot, this.lerpXRot);
+            --this.lerpSteps;
+        }
+
+    }
+    protected void clampRotation(Entity entityToUpdate) {
+        entityToUpdate.setYBodyRot(this.getYRot());
+        float f = Mth.wrapDegrees(entityToUpdate.getYRot() - this.getYRot());
+        float f1 = Mth.clamp(f, -105.0F, 105.0F);
+        entityToUpdate.yRotO += f1 - f;
+        entityToUpdate.setYRot(entityToUpdate.getYRot() + f1 - f);
+        entityToUpdate.setYHeadRot(entityToUpdate.getYRot());
+    }
+
+    public void onPassengerTurned(Entity entityToUpdate) {
+        this.clampRotation(entityToUpdate);
+    }
+
+
+    // Let the player ride the entity
 	@Override
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		if (!this.isVehicle()) player.startRiding(this);
@@ -148,17 +258,6 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 		return LivingEntity.resetForwardDirectionOfRelativePortalPosition(super.getRelativePortalPosition(axis, portal));
 	}
 
-	public void push(Entity entity) {
-		if (entity instanceof Boat) {
-			if (entity.getBoundingBox().minY < this.getBoundingBox().maxY) {
-				super.push(entity);
-			}
-		} else if (entity.getBoundingBox().minY <= this.getBoundingBox().minY) {
-			super.push(entity);
-		}
-
-	}
-
 	@Override
     public boolean hurt(DamageSource source, float amount) {
 		return super.hurt(source, source.is(DamageTypes.PLAYER_ATTACK) && !this.hasControllingPassenger() ? this.getMaxHealth() : amount);
@@ -172,72 +271,83 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	// Apply player-controlled movement
 	@Override
 	public void travel(Vec3 pos) {
+if(this.level().isClientSide) {
+    if (this.isAlive()) {
+        float z = 0;
+        this.fallDistance = 0;
+        if (this.isVehicle()) {
 
-		if (this.isAlive()) {
-            float z = 0;
-			this.fallDistance=0;
-			if (this.isVehicle()) {
+            LivingEntity passenger = getControllingPassenger();
+            if (passenger != null) {
+                this.yRotO = getYRot();
+                this.xRotO = getXRot();
 
-				LivingEntity passenger = getControllingPassenger();
-				if (passenger!=null){
-				this.yRotO = getYRot();
-				this.xRotO = getXRot();
+                z = passenger.zza;
 
-				 z = passenger.zza;
+                if (z <= 0) z *= 0.25f;
+                if (this.onGround()) {
+                    if (z > 0) {
+                        this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume() / 4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
+                        if (this.getSpeed() < 0.2) {
+                            if (level() instanceof ServerLevel sl) {
+                                sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                        this.getX(), this.getY(),
+                                        this.getZ(), 10, 0, 0, 0, 0);
+                            }
 
-				if (z <= 0) z *= 0.25f;
-if (this.onGround()){
-				if (z>0) {
-					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
-					if (this.getSpeed() <0.2){
-						if (level() instanceof ServerLevel sl) {
-							sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
-									this.getX(), this.getY() ,
-									this.getZ(), 10, 0, 0, 0, 0);
-						}
+                            //this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+                        }
 
-						//this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
-					}
+                        if (this.getSpeed() < 0.6) this.setSpeed(this.getSpeed() + MAX_SPEED);
+                        setYRot(yRotO - passenger.xxa * 5F);
+                        setXRot(passenger.getXRot() * 3f);
 
-					if (this.getSpeed()<0.6) this.setSpeed(this.getSpeed()+MAX_SPEED);
-					setYRot(yRotO - passenger.xxa * 5F);
-					setXRot(passenger.getXRot() * 3f);
+                        setRot(getYRot(), getXRot());
+                        this.yBodyRot = this.getYRot();
+                        this.yHeadRot = this.yBodyRot;
 
-					setRot(getYRot(), getXRot());
-					this.yBodyRot = this.getYRot();
-					this.yHeadRot = this.yBodyRot;
+                    } else if (z < 0) {
+                        this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume() / 4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
 
-				}else if (z<0) {
-					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
+                        if (this.getSpeed() < 1) this.setSpeed(this.getSpeed() + MAX_SPEED);
+                        setYRot(yRotO + passenger.xxa * 5F);
+                        setXRot(-passenger.getXRot() * 3f);
 
-					if (this.getSpeed()<1) this.setSpeed(this.getSpeed()+MAX_SPEED);
-					setYRot(yRotO + passenger.xxa * 5F);
-					setXRot(-passenger.getXRot() * 3f);
+                        setRot(getYRot(), getXRot());
+                        this.yBodyRot = this.getYRot();
+                        this.yHeadRot = this.yBodyRot;
+                    } else {
+                        if (this.getSpeed() != 0) {
+                            if (this.getSpeed() > 0.6)
+                                this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+                            if (level() instanceof ServerLevel sl) {
+                                sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                        this.getX(), this.getY(),
+                                        this.getZ(), 10, 0, 0, 0, 0);
+                            }
 
-					setRot(getYRot(), getXRot());
-					this.yBodyRot = this.getYRot();
-					this.yHeadRot = this.yBodyRot;
-				}else{
-					if (this.getSpeed()!=0) {
-						if (this.getSpeed() >0.6)this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
-						if (level() instanceof ServerLevel sl) {
-							sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
-									this.getX(), this.getY() ,
-									this.getZ(), 10, 0, 0, 0, 0);
-						}
+                            this.setSpeed(0f);
+                        }
+                    }
+                }
 
-						this.setSpeed(0f);
-					}
-				}
+            }
+        }
+        super.travel(new Vec3(0, pos.y, z));
+        PacketDistributor.sendToServer(new BikeMovePayload(this.getId(),this.yBodyRot,this.yHeadRot,this.getWheelRotation()));
+    }
 }
-
-			}
-			}
-            super.travel(new Vec3(0, pos.y, z));
-		}
 	}
 
-	// Get the controlling passenger
+    public void setInput(boolean inputLeft, boolean inputRight, boolean inputUp, boolean inputDown) {
+        this.inputLeft = inputLeft;
+        this.inputRight = inputRight;
+        this.inputUp = inputUp;
+        this.inputDown = inputDown;
+    }
+
+
+    // Get the controlling passenger
 	@Nullable
 	@Override
 	public LivingEntity getControllingPassenger() {
@@ -248,10 +358,6 @@ if (this.onGround()){
 		return MovementEmission.EVENTS;
 	}
 
-	@Override
-	public boolean isControlledByLocalInstance() {
-		return true;
-	}
 
 	// Adjust the rider's position while riding
 	@Override

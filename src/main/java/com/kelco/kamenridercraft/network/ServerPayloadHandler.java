@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.network;
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.entity.mobs.summons.CompleteSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -37,6 +38,18 @@ public class ServerPayloadHandler {
                     Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).setBaseValue(0);
                 }
                 PacketDistributor.sendToAllPlayers(new StartPosePayload("", rider.getStringUUID()));
+            }
+        }
+    }
+
+    public static void handleBikeMove(final BikeMovePayload data, final IPayloadContext context) {
+
+        if (context.player().level().getEntity(data.id()) != null) {
+                if (context.player().level().getEntity(data.id())instanceof baseBikeEntity bike){
+                    bike.yRotO = bike.getYRot();
+                    bike.xRotO = bike.getXRot();
+                    bike.yBodyRot = data.yBody();
+                    bike.yHeadRot = data.yHead();
             }
         }
     }
