@@ -19,14 +19,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(value = LocalPlayer.class, priority = 899)
 public class LocalPlayerMixin {
 
-    @Inject(method = "rideTick", at = @At("TAIL"))
-    void postRideTick(CallbackInfo ci) {
-        var rider = ((LocalPlayer) (Object) this);
-        if (rider.getControlledVehicle() instanceof baseBikeEntity bike) {
-            bike.setInput(rider.input.left, rider.input.right, rider.input.up, rider.input.down);
-        }
-    }
-
     @Inject(method = "tick", at = @At("TAIL"))
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LocalPlayer) (Object) this);

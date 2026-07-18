@@ -339,13 +339,6 @@ if(this.level().isClientSide) {
 }
 	}
 
-    public void setInput(boolean inputLeft, boolean inputRight, boolean inputUp, boolean inputDown) {
-        this.inputLeft = inputLeft;
-        this.inputRight = inputRight;
-        this.inputUp = inputUp;
-        this.inputDown = inputDown;
-    }
-
 
     // Get the controlling passenger
 	@Nullable
