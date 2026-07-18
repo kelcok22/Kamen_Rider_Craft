@@ -3173,6 +3173,8 @@
 "kamenridercraft.name.chophopper": "Debatable Rider: ChopHopper",
 "item.kamenridercraft.giraffa_rider_belt": "Rider Belt",
 "kamenridercraft.name.giraffa": "Rider: Kamen Rider Giraffa",
+"item.kamenridercraft.atlas_rider_belt": "Rider Belt",
+"kamenridercraft.name.atlas": "Rider: Kamen Rider Atlas",
 
 "item.kamenridercraft.clock_up_pad": "Clock Up Pad",
 
@@ -3209,6 +3211,7 @@
 "item.kamenridercraft.perfectsasword_zecter": "Perfect Sasword Zecter",
 "item.kamenridercraft.lady_zecter": "Lady Zecter",
 "item.kamenridercraft.giraffa_zecter": "Giraffa Zecter",
+"item.kamenridercraft.atlas_zecter": "Atlas Zecter",
 
 "kamenridercraft:kabuto_zecter.form": "Form: Rider Form",
 "kamenridercraft:gatack_zecter.form": "Form: Rider Form",
@@ -8811,10 +8814,16 @@
 "item.kamenridercraft.my_th_troso": "My-th Chestplate",
 "item.kamenridercraft.my_th_legs": "My-th Leggings",
 
-  "item.kamenridercraft.my_th_driver": "My-th Driver",
-  "kamenridercraft.name.my_th": "Rider: Kamen Rider My-th",
+"item.kamenridercraft.my_th_driver": "My-th Driver",
+"kamenridercraft.name.my_th": "Rider: Kamen Rider My-th",
+"item.kamenridercraft.my_th_driver_rid": "My-th Driver",
+"kamenridercraft.name.rid": "Rider: Kamen Rider Rid",
+"item.kamenridercraft.maou_driver": "Maou Driver",
+"kamenridercraft.name.maou": "Rider: Kamen Rider Maou",
 
-  "item.kamenridercraft.ridegg_1": "Ridegg 1",
+"item.kamenridercraft.ridegg_1": "Ridegg 1",
+
+"item.kamenridercraft.my_th_edge": "My-Th Edge",
 
 "item.kamenridercraft.g_logo": "G Logo",
 "item.kamenridercraft.ghead": "G Helmet",
