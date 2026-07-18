@@ -129,7 +129,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	@Override
 	public void tick() {
 		if (getControllingPassenger() != null && !this.animationStarted && getControllingPassenger() instanceof Player player) {
-			//PacketDistributor.sendToAllPlayers(new AnimPayload("default.riding", "position", player.getStringUUID()));
+			PacketDistributor.sendToAllPlayers(new AnimPayload("default.riding", "position",false, player.getStringUUID()));
 			this.animationStarted = true;
 		} else if (this.animationStarted && getControllingPassenger() == null) {
 			this.animationStarted = false;
@@ -151,11 +151,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 
             for(Entity entity : list) {
                 if (!entity.hasPassenger(this)) {
-                    if (flag && this.getPassengers().size() < 1 && !entity.isPassenger() && entity instanceof LivingEntity && !(entity instanceof WaterAnimal) && !(entity instanceof Player)) {
-                        entity.startRiding(this);
-                    } else {
                         this.push(entity);
-                    }
                 }
             }
         }
