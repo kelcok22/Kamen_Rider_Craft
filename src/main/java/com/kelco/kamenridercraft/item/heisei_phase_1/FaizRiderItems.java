@@ -49,7 +49,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().changeBeltModel("geo/faiz_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.IsBeltGlowing().isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_AXEL_FORM = ITEMS.register("faiz_axel_form",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","faiz","faiz_driver_belt_a",
@@ -64,7 +64,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().changeBeltModel("geo/faiz_belt.geo.json").hasTimeout(200, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()));
+			}.IsBeltGlowing().isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").hasTimeout(200, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("faiz_axel_mission_memory",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
@@ -78,7 +78,7 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.GATLING, 40, 0,true,false))
-			.changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/faiz_belt.geo.json").IsBeltGlowing().isGlowing());
+			.changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").IsBeltGlowing().isGlowing());
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_blaster","faiz","faiz_driver_belt_b",
@@ -95,7 +95,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(FAIZ_BLASTER_BLOODY_CANNONS.get()).changeBeltModel("geo/faiz_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.addSwitchForm(FAIZ_BLASTER_BLOODY_CANNONS.get()).changeBeltModel("geo/belts/faiz_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_GOLD_BLASTER_BLOODY_CANNONS = ITEMS.register("faiz_gold_blaster_bloody_cannons",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gold_blaster","faiz","faiz_driver_belt_g_b",
@@ -106,7 +106,7 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(EffectCore.GATLING, 40, 0,true,false))
-			.changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/faiz_belt.geo.json").isGlowing());
+			.changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing());
 
 	public static final DeferredItem<Item> FAIZ_GOLD_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_gold_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_gold_blaster","faiz","faiz_driver_belt_g_b",
@@ -123,7 +123,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()).changeModel("faiz_blaster.geo.json").changeBeltModel("geo/faiz_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.addSwitchForm(FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()).changeModel("faiz_blaster.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KAIXA_MISSION_MEMORY = ITEMS.register("kaixa_mission_memory",
@@ -137,7 +137,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/kaixa_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.changeBeltModel("geo/belts/kaixa_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> DELTA_MISSION_MEMORY = ITEMS.register("delta_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","delta","delta_driver_belt",
@@ -151,7 +151,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/delta_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.changeBeltModel("geo/belts/delta_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> PSYGA_MISSION_MEMORY = ITEMS.register("psyga_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","psyga","psyga_driver_belt",
@@ -165,7 +165,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.changeBeltModel("geo/belts/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
     public static final DeferredItem<Item> FLYING_ATTACKER_RIOTROOPER = ITEMS.register("flying_attacker_riotrooper",
             () -> new RiderFormChangeItem(new Item.Properties(),"_flying_attacker","riotrooper","smart_buckle_belt",
@@ -199,7 +199,7 @@ public class FaizRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addAlternative(FLYING_ATTACKER_RIOTROOPER.get()).changeBeltModel("geo/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+            }.addAlternative(FLYING_ATTACKER_RIOTROOPER.get()).changeBeltModel("geo/belts/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORGA_MISSION_MEMORY = ITEMS.register("orga_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","orga","orga_driver_belt",
@@ -215,7 +215,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/orga_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.changeBeltModel("geo/belts/orga_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> NEXT_FAIZ_MISSION_MEMORY = ITEMS.register("next_faiz_mission_memory",
@@ -244,7 +244,7 @@ public class FaizRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.IsBeltGlowing().isGlowing().changeBeltModel("geo/faiz_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+					.IsBeltGlowing().isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEXT_FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("next_faiz_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_faiz","faiz_driver_next_belt_a",
@@ -274,7 +274,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).changeModel("next_kaixa.geo.json").changeBeltModel("geo/faiz_belt.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
+			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).changeModel("next_kaixa.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> MUEZ_MISSION_MEMORY = ITEMS.register("muez_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","muez","muez_driver_belt",
@@ -322,14 +322,14 @@ public class FaizRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .isGlowing().changeBeltModel("geo/faiz_belt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+                    .isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BETA_MISSION_MEMORY = ITEMS.register("beta_mission_memory",
             () -> new RiderFormChangeItem(new Item.Properties(),"","beta","beta_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .isGlowing().changeBeltModel("geo/faiz_belt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+                    .isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",

@@ -350,7 +350,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(CRUSHING_BUFFALO_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.addAlternative(CRUSHING_BUFFALO_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXCITING_STAG_PROGRISEKEY = ITEMS.register("exciting_stag_progrisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_stag","zero_one","hiden_zero_one_driver_belt",
@@ -411,7 +411,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(STORMING_PENGUIN_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.addAlternative(STORMING_PENGUIN_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOPPING_KANGAROO_PROGRISEKEY = ITEMS.register("hopping_kangaroo_progrisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kangaroo","zero_one","hiden_zero_one_driver_belt",
@@ -451,7 +451,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(SPLASHING_WHALE_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.isGlowing().addAlternative(SPLASHING_WHALE_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE = ITEMS.register("dynamaiting_lion_progrisekey_zero_one",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_lion","zero_one","hiden_zero_one_driver_belt",
@@ -477,7 +477,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.isGlowing().addAlternative(DYNAMAITING_LION_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE = ITEMS.register("scouting_panda_progrisekey_zero_one",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_panda","zero_one","hiden_zero_one_driver_belt",
@@ -501,7 +501,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.isGlowing().addAlternative(SCOUTING_PANDA_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE = ITEMS.register("invading_horseshoe_crab_progrisekey_zero_one",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_horseshoe_crab","zero_one","hiden_zero_one_driver_belt",
@@ -525,7 +525,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addAlternative(INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.addAlternative(INVADING_HORSESHOE_CRAB_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOOTING_WOLF_PROGRISEKEY_ZERO_ONE = ITEMS.register("shooting_wolf_progrisekey_zero_one",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_wolf","zero_one","hiden_zero_one_driver_belt",
@@ -708,7 +708,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.addAlternative(FIGHTING_JACKAL_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.addAlternative(FIGHTING_JACKAL_PROGRISEKEY_ZERO_ONE.get()).changeBeltModel("geo/belts/raider_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SERVAL_TIGER_ZETSUMERISEKEY = ITEMS.register("serval_tiger_zetsumerisekey",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_serval","valkyrie","aims_shot_riser_belt",

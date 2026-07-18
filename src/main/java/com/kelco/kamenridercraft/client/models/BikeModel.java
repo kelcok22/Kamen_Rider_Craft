@@ -16,7 +16,7 @@ public class BikeModel<T extends baseBikeEntity> extends GeoModel<T> {
 
     @Override
     public ResourceLocation getModelResource(T animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + animatable.NAME_MODEL + ".geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/bikes/" + animatable.NAME_MODEL + ".geo.json");
     }
 
     @Override

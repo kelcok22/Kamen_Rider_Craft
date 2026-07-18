@@ -88,15 +88,15 @@ public class BirthDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         switch (slot) {
             case CHEST -> {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_1.geo.json");
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/claws_1.geo.json");
             }
             case LEGS -> {
                 if (getFormItem(itemstack, 3) == OOORiderItems.BIRTH_CORE_CRANE_ARM.get())
-                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2_crane.geo.json");
-                else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2.geo.json");
+                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/claws_2_crane.geo.json");
+                else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/claws_2.geo.json");
             }
             default -> {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 1).getModel(this.riderName));
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 1).getModel(this.riderName));
             }
         }
     }

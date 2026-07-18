@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class KujakuCanModel extends GeoModel<KujakuCanEntity> {
     @Override
     public ResourceLocation getModelResource(KujakuCanEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/kujaku_can.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/entity/kujaku_can.geo.json");
     }
 
     @Override

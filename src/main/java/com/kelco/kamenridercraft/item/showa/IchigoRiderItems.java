@@ -33,7 +33,7 @@ public class IchigoRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_chinese_grasshopper_man", "shocker_combatman", "shocker_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
@@ -219,7 +219,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/eins_belt.geo.json").isGlowing().IsBeltGlowing().setShowFace().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().IsBeltGlowing().setShowFace().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",

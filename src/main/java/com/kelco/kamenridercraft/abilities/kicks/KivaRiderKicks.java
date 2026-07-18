@@ -17,15 +17,15 @@ import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
+import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 
 public class KivaRiderKicks {
     public static void kivaRiderKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AnimPayload("kiva.start_kick", "attack", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload("kiva.start_kick", "attack", false, user.getStringUUID()));
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 3, true, false));
             user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
             return;
@@ -73,12 +73,14 @@ public class KivaRiderKicks {
                 user.hurtMarked = true;
                 break;
             case 80:
-                PacketDistributor.sendToAllPlayers(new AnimPayload("kiva.kick", "attack", user.getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new AnimPayload("kiva.kick", "attack", true, user.getStringUUID()));
                 break;
             case 85:
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
-                if (y < 0.5) y = 0.05d;
+                if (y < 0.5) {
+                    y = 0.05d;
+                }
                 Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(30);
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;

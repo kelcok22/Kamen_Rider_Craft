@@ -9,7 +9,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class KodamaSuikaArmsModel extends GeoModel<KodamaSuikaArmsEntity> {
     @Override
     public ResourceLocation getModelResource(KodamaSuikaArmsEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/kodama_suika_arms.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/entity/kodama_suika_arms.geo.json");
     }
 
     @Override

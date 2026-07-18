@@ -187,7 +187,7 @@ public class WRiderItems {
 		
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.henshin_pose");
+                    if (tick==12d) AnimationUtil.playPose(player,"w.xtreme_henshin_pose");
 
                     if (tick==28d)((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANT,
                             player.getX(), player.getY()+1.6,
@@ -349,12 +349,14 @@ public class WRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_crystal","skulll_crystal","lostdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 0.1);
-				}
+				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
+					super.transformationEffect(itemstack, player,tick);
+					if (tick==12d) AnimationUtil.playPose(player,"skull.henshin_pose");
+					if (tick==1d) {
+						((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}}
 			}.hasCape().isGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
 
 
@@ -364,13 +366,13 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"skull.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }}
-            }.setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").hasCape().addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
+            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").hasCape().addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
 
 
 	public static final DeferredItem<Item> ETERNAL_MEMORY = ITEMS.register("eternal_memory",
@@ -380,13 +382,13 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)) {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+						if (tick==12d) AnimationUtil.playPose(player,"eternal.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }}
-            }.setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
+            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
 
 
 	public static final DeferredItem<Item> PRISM_MEMORY = ITEMS.register("prism_memory",
@@ -439,13 +441,13 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"cyclone.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }}
-            }.setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
+            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
 	public static final DeferredItem<Item> DUMMY_T2_MEMORY = ITEMS.register("dummy_t2_memory",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
@@ -458,13 +460,13 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"eternal.henshin_pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}}
-			}.setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+			}.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 
 	public static final DeferredItem<Item> FANG_T2_MEMORY = ITEMS.register("fang_t2_memory",
@@ -489,13 +491,13 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"w.maximum_drive_start");
+                    if (tick==12d) AnimationUtil.playPose(player,"joker.henshin_pose");
                     if (tick==1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }}
-            }.setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 	public static final DeferredItem<Item> KEY_T2_MEMORY = ITEMS.register("key_t2_memory",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM)
@@ -614,7 +616,7 @@ public class WRiderItems {
 							player.getZ(), 10, 0, 0, 0, 0.1);
 
 				}}
-			}.getAlsoUpdateOld(ETERNAL_T2_MEMORY.get()).needBaseForm().hasCape().setFormDelay(1d).changeBeltModel("geo/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1) );
+			}.getAlsoUpdateOld(ETERNAL_T2_MEMORY.get()).needBaseForm().hasCape().setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1) );
 
 
 	public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",
@@ -656,7 +658,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.changeBeltModel("geo/claydoll_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.changeBeltModel("geo/belts/claydoll_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> NASCA_MEMORY = ITEMS.register("nasca_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","nazca_dopant","gaia_driver_belt",

@@ -88,13 +88,13 @@ public class DemonsDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         int num = 1;
         if (slot == EquipmentSlot.CHEST || slot == EquipmentSlot.LEGS) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_wings_armor.geo.json");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default_wings_armor.geo.json");
         }
 
         if (getFormItem(itemstack, num).hasWingsIfFlying() && Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num).getFlyingModel(this.riderName));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num).getFlyingModel(this.riderName));
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, num).getModel(this.riderName));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num).getModel(this.riderName));
 
     }
 

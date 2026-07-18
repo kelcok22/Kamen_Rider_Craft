@@ -16,8 +16,8 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.Random;
 
-import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
+import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
 
@@ -25,7 +25,7 @@ public class WizardRiderKicks {
     public static void flameWizardKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            PacketDistributor.sendToAllPlayers(new AnimPayload("wizard.kick", "attack", user.getStringUUID()));
+            PacketDistributor.sendToAllPlayers(new AnimPayload("wizard.kick", "attack", false, user.getStringUUID()));
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 3, true, false));
 
             BaseEffectEntity magicCircle = new BaseEffectEntity(user.level(), 32, user);
@@ -103,7 +103,9 @@ public class WizardRiderKicks {
             case 56:
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
-                if (y < 0.5) y = 0.05d;
+                if (y < 0.5) {
+                    y = 0.05d;
+                }
                 Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(30);
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;

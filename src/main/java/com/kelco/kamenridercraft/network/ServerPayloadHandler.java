@@ -15,27 +15,28 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
+import java.util.Objects;
 import java.util.UUID;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class ServerPayloadHandler {
     public static void handlePoseKeyPress(final PoseKeyPayload data, final IPayloadContext context) {
-        //TODO add gamerule for allow particles, sounds, and cooldown length
-        if (context.player().getData(IS_POSING)) {
-            context.player().setData(IS_POSING, false);
-            stopPosing(context.player());
+        Player rider = context.player();
+        if (rider.getData(IS_POSING)) {
+            rider.setData(IS_POSING, false);
+            stopPosing(rider);
         } else {
-            if (canPose(context.player())) {
-                context.player().setData(IS_POSING, true);
-                if (context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() < 1) {
-                    context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).setBaseValue(1);
+            if (canPose(rider) && !(rider.walkAnimation.isMoving()) && !(Math.abs(rider.getX() - rider.xOld) > 0.05 || Math.abs(rider.getZ() - rider.zOld) > 0.05)) {
+                rider.setData(IS_POSING, true);
+                if (Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).getValue() < 1) {
+                    Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).setBaseValue(1);
                 } else {
-                    context.player().getAttribute(Attributes.POSE_MODEL_MODIFIER).setBaseValue(0);
+                    Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).setBaseValue(0);
                 }
-                PacketDistributor.sendToAllPlayers(new StartPosePayload("", context.player().getStringUUID()));
+                PacketDistributor.sendToAllPlayers(new StartPosePayload("", rider.getStringUUID()));
             }
         }
     }
@@ -51,8 +52,9 @@ public class ServerPayloadHandler {
     public static void handleBeltKeyPress(final BeltKeyPayload data, final IPayloadContext context) {
         Player player = context.player();
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (belt.hasInventory && player.getItemBySlot(EquipmentSlot.FEET).getDamageValue() != player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage() - 1)
+            if (belt.hasInventory && player.getItemBySlot(EquipmentSlot.FEET).getDamageValue() != player.getItemBySlot(EquipmentSlot.FEET).getMaxDamage() - 1) {
                 belt.openInventory((ServerPlayer) player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
+            }
         }
     }
 
@@ -96,12 +98,10 @@ public class ServerPayloadHandler {
     public static void handleCompleteSwing(final CompleteSwingPayload data, final IPayloadContext context) {
         Player player = context.player();
         int hand = data.hand();
-        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10),
-                entity -> (entity.getOwner() == player))) {
+        for (CompleteSummonEntity complete : player.level().getEntitiesOfClass(CompleteSummonEntity.class, player.getBoundingBox().inflate(10), entity -> (entity.getOwner() == player))) {
             complete.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
         }
-        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10),
-                entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
+        for (LegendarySummonEntity legend : player.level().getEntitiesOfClass(LegendarySummonEntity.class, player.getBoundingBox().inflate(10), entity -> (entity.getOwner() == player && entity.getTarget() == null))) {
             legend.mimicSwing(player, hand == 0 ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND);
         }
     }

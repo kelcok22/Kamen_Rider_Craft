@@ -251,7 +251,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/belt_with_brace.geo.json").changeModel("necrom.geo.json").addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.isGlowing().changeBeltModel("geo/belts/belt_with_brace.geo.json").changeModel("necrom.geo.json").addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> YUJOU_BURST_DAMASHII = ITEMS.register("yujou_burst_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"yujou_burst_necrom_damashii","necrom","ghostdriver_belt",
@@ -278,7 +278,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}
-			}.isGlowing().alsoChange2ndSlot(YUJOU_BURST_DAMASHII.get()).changeModel("necrom.geo.json").changeBeltModel("geo/belt_with_brace.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.isGlowing().alsoChange2ndSlot(YUJOU_BURST_DAMASHII.get()).changeModel("necrom.geo.json").changeBeltModel("geo/belts/belt_with_brace.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_DAMASHII = ITEMS.register("dark_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_damashii","ghost","ghostdriver_belt",
@@ -398,7 +398,7 @@ public class GhostRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 70, 0, 0, 0, 1);
                 }
-            }.isGlowing().changeBeltModel("geo/belt_with_brace.geo.json").changeModel("necrom.geo.json"));
+            }.isGlowing().changeBeltModel("geo/belts/belt_with_brace.geo.json").changeModel("necrom.geo.json"));
 
 	public static final DeferredItem<Item> DARK_NECROM_RED_GHOST_EYECON = ITEMS.register("dark_necrom_red_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"dark_necrom_red_damashii","dark_necrom","ghostdriver_belt",
@@ -1220,7 +1220,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}}
-			}.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).changeModel("gamma_superior.geo.json").changeBeltModel("geo/belt_with_brace.geo.json").alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addAlternative(GAMMA_SUPERIOR_DAMASHII.get()).changeModel("gamma_superior.geo.json").changeBeltModel("geo/belts/belt_with_brace.geo.json").alsoChange2ndSlot(GAMMA_SUPERIOR_DAMASHII.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON_CAMILLE = ITEMS.register("transform_gamma_eyecon_camille",
 			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_superior_damashii_gold","gamma_superior","gamma_superior_belt_gammma_superior_damashii",

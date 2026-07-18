@@ -180,9 +180,9 @@ public class FourzeDriverItem extends RiderDriverItem {
 
         if (slot == EquipmentSlot.CHEST) {
             if (getFormItem(itemstack, 1).hasWingsIfFlying() && livingEntity.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 5).getFlyingModel(this.riderName));
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 5).getFlyingModel(this.riderName));
             }
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 5).getModel(this.riderName));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 5).getModel(this.riderName));
         }
         return super.getModelResource(itemstack, animatable, slot, livingEntity);
     }

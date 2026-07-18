@@ -13,33 +13,33 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
 import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 @Mixin(value = LivingEntity.class, priority = 899)
 public class LivingEntityMixin {
-    int oldBlockX = ((LivingEntity) (Object) this).getBlockX();
-    int oldBlockZ = ((LivingEntity) (Object) this).getBlockZ();
+    double oldBlockX = ((LivingEntity) (Object) this).getX();
+    double oldBlockZ = ((LivingEntity) (Object) this).getZ();
     boolean wasSitting = false;
 
     @Inject(method = "tick", at = @At("TAIL"))
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
 
-        if (rider instanceof Player) {
-            if (this.wasSitting && rider.getControlledVehicle() == null) {
-                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(rider.getStringUUID(), "position"));
-            }
-            this.wasSitting = rider.getControlledVehicle() != null;
-        }
+//        if (rider instanceof Player) {
+//            if (this.wasSitting && rider.getControlledVehicle() == null) {
+//                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(rider.getStringUUID(), "position"));
+//            }
+//            this.wasSitting = rider.getControlledVehicle() != null;
+//        }
 
         if (!(rider instanceof ArmorStand) && !rider.level().isClientSide()) {
             if (rider.getData(USED_ABILITY).isEmpty() && rider.getData(ABILITY_COOLDOWN) > 0) {
                 rider.setData(ABILITY_COOLDOWN, rider.getData(ABILITY_COOLDOWN) - 1);
             }
             if (rider.getData(IS_POSING)) {
-                if (!canPose(rider) || this.oldBlockX != rider.getBlockX() || this.oldBlockZ != rider.getBlockZ()) {
+                if (!canPose(rider) || Math.abs(rider.getX() - this.oldBlockX) > 0.05 || Math.abs(rider.getZ() - this.oldBlockZ) > 0.05) {
                     stopPosing(rider);
                 }
             } else if (rider.getData(POSE_COOLDOWN) > 0) {
@@ -62,8 +62,8 @@ public class LivingEntityMixin {
             }
         }
 
-        this.oldBlockX = rider.getBlockX();
-        this.oldBlockZ = rider.getBlockZ();
+        this.oldBlockX = rider.getX();
+        this.oldBlockZ = rider.getZ();
 
         if (!(rider instanceof Player)) {
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {

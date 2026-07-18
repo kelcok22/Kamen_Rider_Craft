@@ -138,7 +138,7 @@ public class ZiORiderItems {
                     .addAltWeapon(DecadeRiderItems.G4_GIGANT_CARD.get(), AgitoRiderItems.G4_GIGANT.get())
                     .addAltWeapon(DecadeRiderItems.RYUKI_STRIKE_VENT_CARD.get(), RyukiRiderItems.DRAG_CLAW.get())
                     .addAltWeapon(DecadeRiderItems.HIBIKI_ONGEKIBOU_REKKA_CARD.get(), HibikiRiderItems.ONGEKIBO_REKKA.get(), HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    .isGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json").IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZI_O_II_RIDEWATCH = ITEMS.register("zi_o_ii_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_ii", "zi_o", "ziku_driver_zi_o_belt_zi_o_ii",
@@ -200,7 +200,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> OHMA_ZI_O_RIDEWATCH = ITEMS.register("ohma_zi_o_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), "_ohma", "zi_o", "ziku_driver_zi_o_belt_ohma",
@@ -293,7 +293,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> TSUKUYOMI_RIDEWATCH = ITEMS.register("tsukuyomi_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "tsukuyomi", "ziku_driver_tsukuyomi_belt",
@@ -432,7 +432,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json"));
 
     public static final DeferredItem<Item> RYUKI_RIDEWATCH = ITEMS.register("ryuki_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_ryuki", "zi_o", "ziku_driver_zi_o_belt_ryuki",
@@ -474,7 +474,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).changeBeltModel("geo/zi_o_decade_riderbelt_faiz_axel.geo.json"));
+                    .isGlowing().IsBeltGlowing().addNeedForm(DECADE_RIDEWATCH.asItem(), 1).changeBeltModel("geo/belts/zi_o_decade_riderbelt_faiz_axel.geo.json"));
 
     public static final DeferredItem<Item> FAIZ_RIDEWATCH = ITEMS.register("faiz_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_faiz", "geiz", "ziku_driver_geiz_belt_faiz",
@@ -651,7 +651,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json"));
 
     public static final DeferredItem<Item> OOO_RIDEWATCH = ITEMS.register("ooo_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_ooo", "zi_o", "ziku_driver_zi_o_belt_ooo",
@@ -976,7 +976,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json"));
 
     public static final DeferredItem<Item> GHOST_RIDEWATCH_ZI_O = ITEMS.register("ghost_ridewatch_zi_o",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ghost", "zi_o", "ziku_driver_zi_o_belt_ghost",
@@ -1054,7 +1054,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json"));
 
     public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_L = ITEMS.register("decade_ex_aid_ridewatch_l",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_ex_aid_l", "zi_o", "ziku_driver_zi_o_belt_decade_ex_aid",
@@ -1069,7 +1069,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addSwitchForm(DECADE_EX_AID_RIDEWATCH_R.get()).changeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+            }.isGlowing().IsBeltGlowing().addSwitchForm(DECADE_EX_AID_RIDEWATCH_R.get()).changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json"));
 
     public static final DeferredItem<Item> EX_AID_RIDEWATCH_GEIZ = ITEMS.register("ex_aid_ridewatch_geiz",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ex_aid", "geiz", "ziku_driver_geiz_belt_ex_aid",
@@ -1139,7 +1139,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json"));
 
     public static final DeferredItem<Item> BUILD_RIDEWATCH_GEIZ = ITEMS.register("build_ridewatch_geiz",
             () -> new RiderFormChangeItem(new Item.Properties(), "_build", "geiz", "ziku_driver_geiz_belt_build",
@@ -1302,7 +1302,7 @@ public class ZiORiderItems {
                     .addAltForm("kamenridercraft:saiyuu_journey_wonder_ride_book", "kamenridercraft:storm_eagle_wonder_ride_book")
                     .addAltForm("kamenridercraft:elemental_dragon_wonder_ride_book", "kamenridercraft:elemental_dragon_wonder_ride_book")
                     .addAltForm("kamenridercraft:haouken_xross_saber", "kamenridercraft:brave_dragon_wonder_ride_book_xross")
-                    .addAltWeapon("kamenridercraft:haouken_xross_saber", "kamenridercraft:haouken_xross_saber").isGlowing().IsBeltGlowing().changeBeltModel("geo/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:haouken_xross_saber", "kamenridercraft:haouken_xross_saber").isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> REVI_RIDEWATCH = ITEMS.register("revi_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:revice_driver").addSummonWeapon("kamenridercraft:ohin_buster_50")

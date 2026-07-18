@@ -857,7 +857,7 @@ public class DecadeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().changeBeltModel("geo/decadriver_belt_faiz_axel.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).addCompatibilityList(BaseDecadeUsers).changeRiderName("faiz").addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/decadriver_belt_faiz_axel.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).addCompatibilityList(BaseDecadeUsers).changeRiderName("faiz").addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BLADE_JACK_CARD = ITEMS.register("blade_jack_card",

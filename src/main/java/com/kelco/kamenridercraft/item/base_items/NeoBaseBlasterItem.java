@@ -56,17 +56,19 @@ public class NeoBaseBlasterItem extends BaseItem {
     private Item FormChangeItem = null;
     private Item HenshinBeltItem = null;
 
+    //setup not using ability meter cost
+
     public NeoBaseBlasterItem(Properties prop, float Atk, float Spd, boolean isSingleFire, Float projectileDamage, int fireRate, int totalAmmo, int reloadLength, int actionCost) {
         super(prop.durability(1000).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
-        this.singleFire = isSingleFire;
-        this.projDamage = projectileDamage;
-        this.firingRate = fireRate;
-        this.maxAmmo = totalAmmo;
+        singleFire = isSingleFire;
+        projDamage = projectileDamage;
+        firingRate = fireRate;
+        maxAmmo = totalAmmo;
         tag.putInt("ammo", totalAmmo);
-        this.reloadTime = reloadLength;
-        this.meterCost = actionCost;
+        reloadTime = reloadLength;
+        meterCost = actionCost;
         if (!singleFire) {
-            this.accuracyMod = 2;
+            accuracyMod = 2;
         }
     }
 
@@ -81,13 +83,13 @@ public class NeoBaseBlasterItem extends BaseItem {
                     ItemStack arrow;
                     if (projectile.contains("spectral_arrow")) {
                         arrow = new ItemStack(Items.SPECTRAL_ARROW, 1);
-                        SpectralArrow arrowEntity = new SpectralArrow(user.level(), user, arrow, this.getDefaultInstance());
+                        SpectralArrow arrowEntity = new SpectralArrow(user.level(), user, arrow, getDefaultInstance());
                         arrowEntity.pickup = AbstractArrow.Pickup.DISALLOWED;
                         arrowEntity.setPos(arrowEntity.getX(), user.getY(0.6) + 0.5, arrowEntity.getZ());
                         arrowEntity.setBaseDamage(projDamage / 2);
 
                         if (drawTime != 0) {
-                            arrowEntity.addDeltaMovement(user.getLookAngle().scale(((double) 3 / this.drawTime) * this.drawTick));
+                            arrowEntity.addDeltaMovement(user.getLookAngle().scale(((double) 3 / drawTime) * drawTick));
                         } else {
                             arrowEntity.addDeltaMovement(user.getLookAngle().scale(3));
                         }
@@ -97,13 +99,13 @@ public class NeoBaseBlasterItem extends BaseItem {
                         user.level().addFreshEntity(arrowEntity);
                     } else {
                         arrow = new ItemStack(Items.ARROW, 1);
-                        Arrow arrowEntity = new Arrow(user.level(), user, arrow, this.getDefaultInstance());
+                        Arrow arrowEntity = new Arrow(user.level(), user, arrow, getDefaultInstance());
                         arrowEntity.pickup = AbstractArrow.Pickup.DISALLOWED;
                         arrowEntity.setPos(arrowEntity.getX(), user.getY(0.6) + 0.5, arrowEntity.getZ());
                         arrowEntity.setBaseDamage(projDamage / 2);
 
                         if (drawTime != 0) {
-                            arrowEntity.addDeltaMovement(user.getLookAngle().scale(((double) 3 / this.drawTime) * this.drawTick));
+                            arrowEntity.addDeltaMovement(user.getLookAngle().scale(((double) 3 / drawTime) * drawTick));
                         } else {
                             arrowEntity.addDeltaMovement(user.getLookAngle().scale(3));
                         }
@@ -121,7 +123,7 @@ public class NeoBaseBlasterItem extends BaseItem {
                     break;
 
                 case "large_fireball":
-                    LargeFireball largefireball = new LargeFireball(user.level(), user, vec3.normalize(), this.explosionPower);
+                    LargeFireball largefireball = new LargeFireball(user.level(), user, vec3.normalize(), explosionPower);
                     largefireball.setPos(largefireball.getX(), user.getY(0.5) + 0.5, largefireball.getZ());
                     user.level().addFreshEntity(largefireball);
                     break;
@@ -147,8 +149,14 @@ public class NeoBaseBlasterItem extends BaseItem {
                     break;
 
                 case "rocket", "cell_medal", "laser", "effect_ball", "laser_beam":
-                    BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, model, texture, projDamage, explosionPower, effects);
-                    baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + this.accuracyMod);
+                    float modifiedDamage = this.projDamage;
+                    if (user.hasEffect(EffectCore.SHOT_BOOST)) {
+                        modifiedDamage = modifiedDamage + user.getEffect(EffectCore.SHOT_BOOST).getAmplifier() + 1;
+                    }
+                    this.model = "laser";
+                    this.texture = "red_laser";
+                    BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, model, texture, modifiedDamage, explosionPower, effects);
+                    baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + accuracyMod);
                     user.level().addFreshEntity(baseProjectile);
                     break;
 
@@ -171,13 +179,14 @@ public class NeoBaseBlasterItem extends BaseItem {
                     break;
             }
             serverLevel.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (user.level().getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+
             if (user instanceof Player player) {
                 ItemStack stack = player.getItemInHand(InteractionHand.MAIN_HAND);
                 stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
                 player.awardStat(Stats.ITEM_USED.get(this));
-                this.tickCount = 0;
+                tickCount = 0;
                 tag.putInt("ammo", tag.getInt("ammo") - 1);
-                this.tickCount = 0;
+                tickCount = 0;
             }
         }
     }
@@ -185,15 +194,16 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeLeft) {
         if (livingEntity instanceof Player player && level instanceof ServerLevel serverlevel) {
-            if (requireFullDraw && this.drawTick < this.drawTime) {
-                this.drawTick = 0;
+            if (requireFullDraw && drawTick < drawTime) {
+                drawTick = 0;
                 return;
             }
-            if (!requireFullDraw && tag.getInt("ammo") > 0 || this.drawTick >= this.drawTime && tag.getInt("ammo") > 0) {
+            if (!requireFullDraw && tag.getInt("ammo") > 0 || drawTick >= drawTime && tag.getInt("ammo") > 0) {
                 if (HenshinBeltItem != null && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
                     player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
-                    if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem formItem)
+                    if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem formItem) {
                         formItem.use(level, player, InteractionHand.OFF_HAND);
+                    }
                 }
                 if (FormChangeItem != null && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
                     FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
@@ -201,14 +211,14 @@ public class NeoBaseBlasterItem extends BaseItem {
 
                 fire(livingEntity, livingEntity.getDeltaMovement());
                 if (tag.getInt("ammo") == 0) {
-                    player.getCooldowns().addCooldown(this, this.reloadTime);
-                    if (!this.singleFire) {
+                    player.getCooldowns().addCooldown(this, reloadTime);
+                    if (!singleFire) {
                         serverlevel.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.CHAIN_BREAK, SoundSource.PLAYERS, 3.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
                     }
                 } else {
-                    player.getCooldowns().addCooldown(this, this.firingRate);
+                    player.getCooldowns().addCooldown(this, firingRate);
                 }
-                this.drawTick = 0;
+                drawTick = 0;
             }
         }
     }
@@ -231,26 +241,26 @@ public class NeoBaseBlasterItem extends BaseItem {
     @Override
     public void onUseTick(Level level, LivingEntity livingEntity, ItemStack stack, int remainingUseDuration) {
         super.onUseTick(level, livingEntity, stack, remainingUseDuration);
-        if (livingEntity.level() instanceof ServerLevel serverLevel && this.gunMode) {
-            if (this.drawTick < this.drawTime) {
-                this.drawTick += 1;
-                if (this.drawTick == this.drawTime && livingEntity instanceof Player player) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && gunMode) {
+            if (drawTick < drawTime) {
+                drawTick += 1;
+                if (drawTick == drawTime && livingEntity instanceof Player player) {
                     player.displayClientMessage(Component.translatable("message.kamenridercraft.weapon"), true);
                 }
             }
             switch (chargingEffect) {
                 case "warped":
-                    serverLevel.sendParticles(ParticleTypes.WARPED_SPORE, livingEntity.getX() + livingEntity.getLookAngle().x * 0.5, livingEntity.getEyeY(), livingEntity.getZ() + livingEntity.getLookAngle().z * 0.5, 1, 0, 0, 0, 0.05);
+                    serverLevel.sendParticles(ParticleTypes.WARPED_SPORE, livingEntity.getX() + livingEntity.getLookAngle().x * 0.5, livingEntity.getEyeY() + livingEntity.getLookAngle().y * 0.5, livingEntity.getZ() + livingEntity.getLookAngle().z * 0.5, 1, 0, 0, 0, 0.05);
             }
-            if (!requireFullDraw || this.drawTick >= this.drawTime) {
-                if (!this.singleFire) {
+            if (!requireFullDraw || drawTick >= drawTime) {
+                if (!singleFire) {
                     if (tag.getInt("ammo") > 0) {
-                        if (this.tickCount >= this.firingRate && tag.getInt("ammo") > 1) {
+                        if (tickCount >= firingRate && tag.getInt("ammo") > 1) {
                             fire(livingEntity, livingEntity.getDeltaMovement());
-                        } else if (this.tickCount >= this.firingRate) {
+                        } else if (tickCount >= firingRate) {
                             livingEntity.releaseUsingItem();
                         }
-                        this.tickCount += 1;
+                        tickCount += 1;
                     }
                 }
             }
@@ -260,8 +270,8 @@ public class NeoBaseBlasterItem extends BaseItem {
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof Player player && !level.isClientSide) {
             if (tag.getInt("ammo") == 0) {
-                tag.putInt("ammo", this.maxAmmo);
-                player.getCooldowns().addCooldown(this, this.reloadTime);
+                tag.putInt("ammo", maxAmmo);
+                player.getCooldowns().addCooldown(this, reloadTime);
             }
         }
     }
@@ -284,7 +294,9 @@ public class NeoBaseBlasterItem extends BaseItem {
     public UseAnim getUseAnimation(ItemStack stack) {
         if (useAnimation.equals("vanilla") || useAnimation.isEmpty()) {
             return UseAnim.BOW;
-        } else return UseAnim.NONE;
+        } else {
+            return UseAnim.NONE;
+        }
     }
 
     public NeoBaseBlasterItem isFormItem(Item item) {
@@ -303,65 +315,80 @@ public class NeoBaseBlasterItem extends BaseItem {
     }
 
     public NeoBaseBlasterItem setRepairItem(Item item) {
-        this.RepairItem = item;
+        RepairItem = item;
         return this;
     }
 
     public NeoBaseBlasterItem setProjectile(String projectileName) {
-        this.projectile = projectileName.toLowerCase();
+        projectile = projectileName.toLowerCase();
         return this;
     }
 
     public NeoBaseBlasterItem setModelAndTexture(String textureName, String modelName) {
-        this.texture = textureName.toLowerCase();
-        this.model = modelName.toLowerCase();
+        texture = textureName.toLowerCase();
+        model = modelName.toLowerCase();
         return this;
     }
 
     public NeoBaseBlasterItem setExplosivePower(int power) {
-        this.explosionPower = power;
+        explosionPower = power;
         return this;
     }
 
     public NeoBaseBlasterItem setEffects(String[] effects) {
-        this.effects = effects;
+        effects = effects;
         return this;
     }
 
     public NeoBaseBlasterItem setMeterCost(int cost) {
-        this.meterCost = cost;
+        meterCost = cost;
+        return this;
+    }
+
+    public NeoBaseBlasterItem setAbility(String abilityName) {
+        tag.putString("ability_name", abilityName.toLowerCase());
+        return this;
+    }
+
+    public NeoBaseBlasterItem setRequiredRider(String requiredRider) {
+        tag.putString("required_form", requiredRider.toLowerCase());
+        return this;
+    }
+
+    public NeoBaseBlasterItem setRequiredForm(String requiredForm) {
+        tag.putString("required_rider", requiredForm.toLowerCase());
         return this;
     }
 
     public NeoBaseBlasterItem setRequiresDraw(int drawingTime, boolean needFullDraw) {
-        this.requireFullDraw = needFullDraw;
-        this.drawTime = drawingTime;
+        requireFullDraw = needFullDraw;
+        drawTime = drawingTime;
         return this;
     }
 
     public NeoBaseBlasterItem setGunMode(boolean isGunMode) {
-        this.gunMode = isGunMode;
+        gunMode = isGunMode;
         return this;
     }
 
     public NeoBaseBlasterItem setHoldAnimation(String anim) {
-        this.holdAnimation = anim.toLowerCase();
+        holdAnimation = anim.toLowerCase();
         return this;
     }
 
     public NeoBaseBlasterItem setUseAnimation(String anim) {
-        this.useAnimation = anim.toLowerCase();
+        useAnimation = anim.toLowerCase();
         return this;
     }
 
     public NeoBaseBlasterItem setParticles(String chargeEffect, String firingParticle) {
-        this.chargingEffect = chargeEffect.toLowerCase();
-        this.firingParticle = firingParticle.toLowerCase();
+        chargingEffect = chargeEffect.toLowerCase();
+        firingParticle = firingParticle.toLowerCase();
         return this;
     }
 
     public NeoBaseBlasterItem setRequiresActionMeter(int actionCost) {
-        this.meterCost = actionCost;
+        meterCost = actionCost;
         return this;
     }
 }

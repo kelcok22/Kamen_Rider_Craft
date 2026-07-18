@@ -30,7 +30,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/zeztz_riderbelt.geo.json").hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_HELMET = ITEMS.register("my_th_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
