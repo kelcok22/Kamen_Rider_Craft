@@ -30,6 +30,9 @@ public class BaseProjectileRenderer extends GeoEntityRenderer<BaseProjectileEnti
 
     @Override
     public @Nullable RenderType getRenderType(BaseProjectileEntity animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.breezeEyes(texture);
+        if (animatable.isGlowing()) {
+            return RenderType.breezeEyes(texture);
+        }
+        return RenderType.entityTranslucent(texture);
     }
 }

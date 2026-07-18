@@ -32,13 +32,13 @@ public class GenericRiderKicks {
         }
 
         if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 180) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() + 100);
             cancelAbility(user, "", 0);
             return;
         }
 
         if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() + 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }
@@ -52,26 +52,26 @@ public class GenericRiderKicks {
         }
 
         switch (user.getData(ABILITY_TICK)) {
-            case 3:
+            case 2:
                 if (user.onGround()) {
                     Vec3 initialVec = user.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 1.3D, initialVec.z);
                     user.setDeltaMovement(climbVec.scale(0.97D));
                     ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 1.0, user.getZ(), 1, 0, 0, 0, 0);
                     user.hurtMarked = true;
                 }
                 break;
-            case 13:
+            case 16:
                 PacketDistributor.sendToAllPlayers(new AnimPayload("default.flip", "attack", true, user.getStringUUID()));
                 break;
-            case 17:
+            case 24:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_rider_kick")) {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", "attack", true, user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", "attack", false, user.getStringUUID()));
                 } else {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", "attack", true, user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", "attack", false, user.getStringUUID()));
                 }
                 break;
-            case 21:
+            case 25:
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
                 if (y < 0.5) {
@@ -81,11 +81,11 @@ public class GenericRiderKicks {
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;
                 break;
-            case 36:
+            case 40:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_kick")) {
-                     PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick_loop", "attack", true,user.getStringUUID()));
+                     PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick_loop", "attack", false,user.getStringUUID()));
                 } else {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick_loop", "attack", true,user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick_loop", "attack", false,user.getStringUUID()));
                 }
                 break;
         }

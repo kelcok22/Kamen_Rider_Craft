@@ -9,17 +9,24 @@ import software.bernie.geckolib.model.GeoModel;
 public class BaseProjectileModel extends GeoModel<BaseProjectileEntity> {
     @Override
     public ResourceLocation getModelResource(BaseProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/projectiles/laser.geo.json");
+        if (animatable.getModel().isEmpty()) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/projectiles/laser.geo.json");
+        } else {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/projectiles/" + animatable.getModel() + ".geo.json");
+        }
     }
 
     @Override
     public ResourceLocation getTextureResource(BaseProjectileEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/red_laser.png");
+        if (animatable.getTexture().isEmpty()) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/red_laser.png");
+        } else {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/projectiles/" + animatable.getTexture() + ".png");
+        }
     }
 
     @Override
     public ResourceLocation getAnimationResource(BaseProjectileEntity animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/projectile.animation.json");
     }
-
 }

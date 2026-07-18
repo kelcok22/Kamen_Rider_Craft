@@ -137,11 +137,8 @@ public class ClientPayloadHandler {
                     default ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 };
-                if (data.forceNextPose() && controller.getCurrentAnimation() != null) {
-                    controller.stopTriggeredAnimation();
-                }
 
-                if (controller.getCurrentAnimation() != null) {
+                if (!data.forceNextPose() && controller.getCurrentAnimation() != null) {
                     controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
                 } else {
                     controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));

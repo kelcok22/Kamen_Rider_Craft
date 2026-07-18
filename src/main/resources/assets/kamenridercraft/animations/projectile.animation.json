@@ -72,6 +72,48 @@
 					}
 				}
 			}
+		},
+		"projectile.effect_ball": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"effect_ball": {
+					"rotation": {
+						"0.0": {
+							"vector": [45, 0, 37.5]
+						},
+						"0.5": {
+							"vector": [405, 0, 218]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"inner_ball": {
+					"rotation": {
+						"0.0": {
+							"vector": [45, 0, 37.5]
+						},
+						"0.5": {
+							"vector": [405, 0, 218]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

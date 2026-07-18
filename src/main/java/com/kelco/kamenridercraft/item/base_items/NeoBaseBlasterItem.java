@@ -24,16 +24,17 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 
 public class NeoBaseBlasterItem extends BaseItem {
-    private boolean singleFire;
-    private float projDamage;
+    private boolean singleFire = false;
+    private float projDamage = 3;
     private int explosionPower = 0;
     private int accuracyMod = 0;
-    private int maxAmmo;
+    private int maxAmmo = 6;
     CompoundTag tag = new CompoundTag();
-    private int firingRate;
-    private int reloadTime;
+    private int firingRate = 12;
+    private int reloadTime = 60;
 
     private int drawTime = 0;
     private int meterCost = 0;
@@ -41,12 +42,13 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     private String projectile = "arrow";
     private String[] effects;
-    private String model = "";
-    private String texture = "";
+    private String model = "laser";
+    private String texture = "red_laser";
     private String chargingEffect = "";
     private String firingParticle = "";
     private String useAnimation = "vanilla";
     private String holdAnimation = "";
+    private NeoBaseBlasterItem.BlasterPreset preset;
 
     private int tickCount = 0;
     private int drawTick = 0;
@@ -56,20 +58,102 @@ public class NeoBaseBlasterItem extends BaseItem {
     private Item FormChangeItem = null;
     private Item HenshinBeltItem = null;
 
-    //setup not using ability meter cost
-
-    public NeoBaseBlasterItem(Properties prop, float Atk, float Spd, boolean isSingleFire, Float projectileDamage, int fireRate, int totalAmmo, int reloadLength, int actionCost) {
+    public NeoBaseBlasterItem(Properties prop, float Atk, float Spd) {
         super(prop.durability(1000).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
-        singleFire = isSingleFire;
-        projDamage = projectileDamage;
-        firingRate = fireRate;
-        maxAmmo = totalAmmo;
-        tag.putInt("ammo", totalAmmo);
-        reloadTime = reloadLength;
-        meterCost = actionCost;
-        if (!singleFire) {
-            accuracyMod = 2;
+    }
+
+    public enum BlasterPreset {
+        BLASTER,
+        AUTO_BLASTER,
+        BURST_BLASTER,
+        SWORD_GUN,
+        AUTO_SWORD_GUN,
+        BURST_SWORD_GUN,
+        ROCKET,
+        LIGHTNING_BALL,
+        FIREBALL,
+        VANILLA_FIREBALL,
+        LARGE_VANILLA_FIREBALL,
+        BOW_PRESET,
+        SPECTRAL_BOW_PRESET
+    }
+
+    public NeoBaseBlasterItem setPreset(BlasterPreset preset) {
+        switch (preset) {
+            case BLASTER, AUTO_BLASTER, BURST_BLASTER, SWORD_GUN, AUTO_SWORD_GUN, BURST_SWORD_GUN:
+                this.projectile = "laser";
+                if (preset.equals(BlasterPreset.AUTO_BLASTER) || preset.equals(BlasterPreset.AUTO_SWORD_GUN)) {
+                    this.projDamage = 2;
+                    this.firingRate = 3;
+                    this.reloadTime = 80;
+                    this.maxAmmo = 30;
+                    this.model = "short_laser";
+                    this.accuracyMod = 2;
+                } else if(preset.equals(BlasterPreset.BURST_BLASTER) || preset.equals(BlasterPreset.BURST_SWORD_GUN)) {
+                    this.projDamage = 2;
+                    this.firingRate = 3;
+                    this.reloadTime = 20;
+                    this.maxAmmo = 3;
+                    this.model = "laser";
+                    this.accuracyMod = 2;
+                } else {
+                    this.model = "laser";
+                }
+                if (preset.equals(BlasterPreset.SWORD_GUN) || preset.equals(BlasterPreset.AUTO_SWORD_GUN) || preset.equals(BlasterPreset.BURST_SWORD_GUN)) {
+                    this.isSwordGun();
+                }
+                this.singleFire = false;
+                this.firingParticle = "yellow_sparks";
+                this.texture = "yellow_laser";
+                break;
+            case ROCKET:
+                this.projectile = "rocket";
+                this.texture = "rocket";
+                this.model = "rocket";
+                this.explosionPower = 5;
+                this.maxAmmo = 1;
+                this.reloadTime = 100;
+                this.firingRate = 1;
+                this.singleFire = true;
+                this.firingParticle = "smoke";
+                break;
+            case LIGHTNING_BALL:
+                this.projectile = "effect_ball";
+                this.texture = "lightning_ball";
+                this.model = "effect_ball";
+                this.projDamage = 6;
+                this.maxAmmo = 1;
+                this.reloadTime = 100;
+                this.firingRate = 1;
+                this.singleFire = true;
+                break;
+            case FIREBALL:
+                this.projectile = "effect_ball";
+                this.texture = "fire_ball";
+                this.model = "effect_ball";
+                this.projDamage = 6;
+                this.maxAmmo = 1;
+                this.reloadTime = 100;
+                this.firingRate = 1;
+                this.singleFire = true;
+                break;
+            case VANILLA_FIREBALL:
+                this.projectile = "small_fireball";
+                this.explosionPower = 0;
+                break;
+            case LARGE_VANILLA_FIREBALL:
+                this.projectile = "small_fireball";
+                this.explosionPower = 3;
+                break;
+            case BOW_PRESET:
+                this.projectile = "arrow";
+                break;
+            case SPECTRAL_BOW_PRESET:
+                this.projectile = "spectral_arrow";
+                break;
         }
+        tag.putInt("ammo", maxAmmo);
+        return this;
     }
 
     public void fire(LivingEntity user, Vec3 vec3) {
@@ -77,6 +161,10 @@ public class NeoBaseBlasterItem extends BaseItem {
             switch (firingParticle) {
                 case "smoke":
                     serverLevel.sendParticles(ParticleTypes.WHITE_SMOKE, user.getX() + user.getLookAngle().x * 0.5, user.getEyeY(), user.getZ() + user.getLookAngle().z * 0.5, 10, 0, 0, 0, 0.05);
+                    break;
+                case "yellow_sparks":
+                    serverLevel.sendParticles(ParticleTypes.WHITE_ASH, user.getX() + user.getLookAngle().x * 0.5, user.getEyeY(), user.getZ() + user.getLookAngle().z * 0.5, 10, 0, 0, 0, 0.05);
+                    break;
             }
             switch (projectile) {
                 case "arrow", "spectral_arrow":
@@ -153,9 +241,16 @@ public class NeoBaseBlasterItem extends BaseItem {
                     if (user.hasEffect(EffectCore.SHOT_BOOST)) {
                         modifiedDamage = modifiedDamage + user.getEffect(EffectCore.SHOT_BOOST).getAmplifier() + 1;
                     }
-                    this.model = "laser";
-                    this.texture = "red_laser";
-                    BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, model, texture, modifiedDamage, explosionPower, effects);
+                    BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, projectile, modifiedDamage, explosionPower, effects);
+                    if(projectile.equalsIgnoreCase("cell_medal")) {
+                        baseProjectile.setModel("cell_medal");
+                        baseProjectile.setTexture("cell_medal");
+                    } else {
+                        baseProjectile.setTexture(texture.toLowerCase());
+                        baseProjectile.setModel(model.toLowerCase());
+                    }
+
+                    baseProjectile.setGlowing(true);
                     baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F + accuracyMod);
                     user.level().addFreshEntity(baseProjectile);
                     break;
@@ -277,7 +372,7 @@ public class NeoBaseBlasterItem extends BaseItem {
     }
 
     @Override
-    public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
+    public boolean canAttackBlock(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, Player player) {
         return !player.isCreative();
     }
 
@@ -286,8 +381,8 @@ public class NeoBaseBlasterItem extends BaseItem {
         return this;
     }
 
-    public boolean isValidRepairItem(ItemStack p_40392_, ItemStack p_40393_) {
-        return p_40393_.getItem() == RepairItem;
+    public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
+        return repair.getItem() == RepairItem;
     }
 
     @Override
@@ -309,7 +404,7 @@ public class NeoBaseBlasterItem extends BaseItem {
         return this;
     }
 
-    public NeoBaseBlasterItem IsSwordGun() {
+    public NeoBaseBlasterItem isSwordGun() {
         KamenRiderCraftCore.SWORD_GUN_ITEM.add(this);
         return this;
     }

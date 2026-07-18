@@ -169,7 +169,7 @@ public class AbilityUtil {
             }
             if (user instanceof Player) {
                 if (!afterAnimation.isEmpty()) {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", true, user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", false, user.getStringUUID()));
                     user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
                 } else if (delayAnimationEndTicks == 0) {
                     PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
