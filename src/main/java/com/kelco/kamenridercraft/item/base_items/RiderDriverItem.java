@@ -448,8 +448,6 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
-
-
     public void setExtraFormItem(ItemStack itemStack, Item ITEM, int SLOT, CompoundTag tag) {
     }
 
