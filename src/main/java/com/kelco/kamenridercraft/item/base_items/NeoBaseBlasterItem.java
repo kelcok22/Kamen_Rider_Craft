@@ -483,7 +483,7 @@ public class NeoBaseBlasterItem extends BaseItem {
     }
 
     public NeoBaseBlasterItem singleFire(boolean singleFire) {
-        this.singleFire = multiFire;
+        this.singleFire = singleFire;
         return this;
     }
 
