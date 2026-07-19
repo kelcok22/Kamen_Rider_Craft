@@ -145,7 +145,6 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void beltTick(ItemStack stack, Level level, LivingEntity rider, int slotId) {
-
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") && slotId == 36) onFormChange(stack, rider, tag);
@@ -458,7 +457,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
         var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
         if (currentSlot == EquipmentSlot.FEET)
-            return getFormItem(itemStack, 1, transformingTick).getIsBeltGlowing();
+            return getFormItem(itemStack, 1, 0).getIsBeltGlowing();
         else if (isTransformed(rider))
             return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
         return false;
