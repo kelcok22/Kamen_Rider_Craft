@@ -136,7 +136,7 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
         if (!blockstate.isAir() && !noPhysics) {
             if (projectile.equalsIgnoreCase("rocket")) {
                 boolean flag = level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
-                level().explode(null, getX() + getLookAngle().x * 8, getY() + 1, getZ() + getLookAngle().z * 8, explosionPower, flag, Level.ExplosionInteraction.MOB);
+                this.level().explode(null, this.getX(), this.getY(), this.getZ(), explosionPower, flag, Level.ExplosionInteraction.MOB);
             }
             discard();
 //            VoxelShape voxelshape = blockstate.getCollisionShape(level(), blockpos);

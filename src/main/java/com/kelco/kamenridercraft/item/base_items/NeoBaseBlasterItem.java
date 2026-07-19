@@ -28,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class NeoBaseBlasterItem extends BaseItem {
     private boolean singleFire = false;
-    private float projDamage = 3;
+    private float projDamage = 8;
     private int explosionPower = 0;
     private int accuracyMod = 0;
     private int maxAmmo = 6;
@@ -83,14 +83,14 @@ public class NeoBaseBlasterItem extends BaseItem {
             case BLASTER, AUTO_BLASTER, BURST_BLASTER, SWORD_GUN, AUTO_SWORD_GUN, BURST_SWORD_GUN:
                 this.projectile = "laser";
                 if (preset.equals(BlasterPreset.AUTO_BLASTER) || preset.equals(BlasterPreset.AUTO_SWORD_GUN)) {
-                    this.projDamage = 2;
+                    this.projDamage = 4;
                     this.firingRate = 3;
                     this.reloadTime = 80;
                     this.maxAmmo = 30;
                     this.model = "short_laser";
                     this.accuracyMod = 2;
                 } else if(preset.equals(BlasterPreset.BURST_BLASTER) || preset.equals(BlasterPreset.BURST_SWORD_GUN)) {
-                    this.projDamage = 2;
+                    this.projDamage = 4;
                     this.firingRate = 3;
                     this.reloadTime = 20;
                     this.maxAmmo = 3;
@@ -207,12 +207,14 @@ public class NeoBaseBlasterItem extends BaseItem {
                 case "small_fireball":
                     SmallFireball smallfireball = new SmallFireball(user.level(), user, vec3.normalize());
                     smallfireball.setPos(smallfireball.getX(), user.getY(0.5) + 0.5, smallfireball.getZ());
+                    smallfireball.shootFromRotation(user, user.getXRot(), user.getYRot(), 0, 3, 2);
                     user.level().addFreshEntity(smallfireball);
                     break;
 
                 case "large_fireball":
                     LargeFireball largefireball = new LargeFireball(user.level(), user, vec3.normalize(), explosionPower);
                     largefireball.setPos(largefireball.getX(), user.getY(0.5) + 0.5, largefireball.getZ());
+                    largefireball.shootFromRotation(user, user.getXRot(), user.getYRot(), 0, 3, 2);
                     user.level().addFreshEntity(largefireball);
                     break;
 
@@ -479,6 +481,11 @@ public class NeoBaseBlasterItem extends BaseItem {
 
     public NeoBaseBlasterItem setReloadTime(int reloadTime) {
         this.reloadTime = reloadTime;
+        return this;
+    }
+
+    public NeoBaseBlasterItem setProjDamage(int projDamage) {
+        this.projDamage = projDamage;
         return this;
     }
 

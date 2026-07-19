@@ -470,7 +470,7 @@ public class AgitoRiderItems {
 	public static final DeferredItem<Item> GM_01_SCORPION = ITEMS.register("gm_01_scorpion",
 			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GG_02_SALAMANDER = ITEMS.register("gg_02_salamander",
-			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.LARGE_VANILLA_FIREBALL).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GS_03_DESTROYER = ITEMS.register("gs_03_destroyer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GA_04_ANTARES = ITEMS.register("ga_04_antares",
@@ -492,7 +492,7 @@ public class AgitoRiderItems {
 
 
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
-			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.ROCKET).setMaxAmmo(4).setFireRate(15).setReloadTime(200).singleFire(false).setExplosivePower(2).setModelAndTexture("g4_rocket", "rocket").setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.ROCKET).setMaxAmmo(4).setFireRate(15).setReloadTime(200).singleFire(false).setExplosivePower(2).setModelAndTexture("g4_rocket", "g4_rocket").setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> V1_SHOT = ITEMS.register("v1_shot",
