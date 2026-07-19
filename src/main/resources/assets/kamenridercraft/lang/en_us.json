@@ -1,7 +1,8 @@
 {
 "key.categories.kamenridercraft": "Kamen Rider Craft",
 "key.kamenridercraft.belt": "Open Belt Inventory",
-"key.kamenridercraft.ability": "Use an Ability",
+"key.kamenridercraft.ability_one": "Use an Ability",
+"key.kamenridercraft.ability_two": "Use an Secondary Ability",
 "key.kamenridercraft.pose": "Do a Pose",
 
 "gamerule.reiwaRidewatches": "Enable Reiwa Ridewatches",
@@ -9389,6 +9390,8 @@
 "entity.kamenridercraft.tojima_takoyaki": "Tojima Takoyaki",
 "entity.kamenridercraft.batta_augment":"Phase Variation Batta Augment",
 "entity.kamenridercraft.shin_no_0":"Kamen Rider No.0",
+
+"entity.kamenridercraft.base_projectile":"KRC Projectile",
 
 "item.kamenridercraft.shocker_combatman_spawn_egg": "Shocker Combatman Spawn Egg",
 "item.kamenridercraft.shocker_riders_spawn_egg": "Shocker Rider Spawn Egg",

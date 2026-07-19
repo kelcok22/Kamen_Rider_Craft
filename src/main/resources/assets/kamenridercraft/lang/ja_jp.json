@@ -1,7 +1,8 @@
 {
 "key.categories.kamenridercraft": "仮面ライダークラフト",
 "key.kamenridercraft.belt": "ベルトインベントリを開く",
-"key.kamenridercraft.ability": "アビリティを使う",
+"key.kamenridercraft.ability_one": "アビリティを使う",
+"key.kamenridercraft.ability_two": "アビリティを使う",
 "key.kamenridercraft.pose": "ポーズ",
 
 "gamerule.reiwaRidewatches": "令和ライドウォッチ有効",
