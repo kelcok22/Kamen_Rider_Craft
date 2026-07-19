@@ -267,7 +267,7 @@ public class WRiderItems {
 					super.transformationEffect(itemstack, player,tick);
 
 					if (tick==30d){
-						if (player instanceof Player) {
+						if (player instanceof Player && player.onGround()) {
 							Vec3 initialVec = player.getDeltaMovement();
 							Vec3 climbVec = new Vec3(initialVec.x, 1, initialVec.z);
 							player.setDeltaMovement(climbVec.scale(0.97D));
