@@ -9,6 +9,8 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.MetalShaftItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.T2MemoryCaseItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.w.WDriverItem;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -23,8 +25,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -262,11 +267,19 @@ public class WRiderItems {
 					super.transformationEffect(itemstack, player,tick);
 
 					if (tick==30d){
+						if (player instanceof Player && player.onGround()) {
+							Vec3 initialVec = player.getDeltaMovement();
+							Vec3 climbVec = new Vec3(initialVec.x, 1, initialVec.z);
+							player.setDeltaMovement(climbVec.scale(0.97D));
+							player.hurtMarked = true;
+							PacketDistributor.sendToAllPlayers(new AnimPayload("accel.henshin_bike_pose", "attack", false, player.getStringUUID()));
+						}
 						RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
-						AnimationUtil.playPose(player,"accel.henshin_bike_pose");
 					}
 					if (tick==20d){
-						AnimationUtil.forceStopPosing(player);
+						if (player instanceof Player) {
+							PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "attack", true));
+						}
 						((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 0.1);
@@ -281,6 +294,9 @@ public class WRiderItems {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
 					super.transformationEffect(itemstack, player,tick);
 					if (tick==30d){
+						if (player instanceof Player) {
+							PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "attack", false));
+						}
 						RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
 						AnimationUtil.playPose(player,"accel.henshin_pose");
 						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
